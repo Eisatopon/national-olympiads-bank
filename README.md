@@ -1,200 +1,278 @@
-# 🌍 National Mathematical Olympiads - Problem Bank
+# Mathematical Olympiads Problem Bank 🌍
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://eisatopon.github.io/national-olympiads-bank/)
+Μια ολοκληρωμένη τράπεζα θεμάτων από Εθνικές Μαθηματικές Ολυμπιάδες παγκοσμίως (1985-2025).
 
-A comprehensive collection of mathematical olympiad problems from national competitions around the world, spanning from 1985 to 2025.
+## ✨ Χαρακτηριστικά
 
-## 🎯 Features
+### 🔍 Προηγμένη Αναζήτηση
+- **Αναζήτηση με λέξεις-κλειδιά** στο περιεχόμενο των προβλημάτων
+- Φίλτρα: Έτος, Χώρα, Τύπος Διαγωνισμού, Αριθμός Προβλήματος
+- **Φίλτρο Δυσκολίας**: Easy, Medium, Hard
+- **Κατηγορίες**: Algebra, Geometry, Combinatorics, Number Theory
 
-- 🔍 **Advanced Search & Filtering**: Filter problems by year, country, competition type, and problem number
-- 🌐 **Multiple Countries**: Problems from 11+ countries including China, Brazil, Iran, Philippines, Germany, Greece, India, Romania, Thailand, Turkey, and Vietnam
-- 📝 **My Selection**: Save and organize your favorite problems
-- 🖨️ **Print-Ready**: Export your problem sets for offline study
-- 📱 **QR Code Sharing**: Generate shareable links for problem collections
-- 📐 **LaTeX Support**: Full mathematical notation rendering with MathJax
-- 🎨 **Beautiful UI**: Modern, responsive design with country flags
+### 💾 Αποθήκευση & Εξαγωγή
+- **LocalStorage**: Αυτόματη αποθήκευση της επιλογής σου
+- **PDF Export**: Εξαγωγή επιλεγμένων προβλημάτων σε PDF
+- **Print**: Εκτύπωση με βελτιστοποιημένη μορφοποίηση
+- **QR Code**: Δημιουργία QR για κοινοποίηση
 
-## 🌍 Included Countries
+### 📊 Στατιστικά
+- Συνολικά προβλήματα
+- Αριθμός χωρών
+- Εύρος ετών
+- Επιλεγμένα προβλήματα
 
-| Country | Flag | Coverage |
-|---------|------|----------|
-| 🇨🇳 China | ⭐ | 1985-2025 |
-| 🇧🇷 Brazil | ⭐ | 1985-2025 |
-| 🇮🇷 Iran | ⭐ | 1985-2025 |
-| 🇵🇭 Philippines | ⭐ | 1985-2025 |
-| 🇩🇪 Germany | ⭐ | 1985-2025 |
-| 🇬🇷 Greece | ⭐ | 1985-2025 |
-| 🇮🇳 India | ⭐ | 1985-2025 |
-| 🇷🇴 Romania | ⭐ | 1985-2025 |
-| 🇹🇭 Thailand | ⭐ | 1985-2025 |
-| 🇹🇷 Turkey | ⭐ | 1985-2025 |
-| 🇻🇳 Vietnam | ⭐ | 1985-2025 |
+### 🎨 Χαρακτηριστικά Interface
+- Responsive design (mobile-friendly)
+- MathJax για απόδοση μαθηματικών τύπων
+- Σημαίες χωρών
+- Dark mode ready (προαιρετικό)
 
-*More countries will be added continuously*
+## 🚀 Εγκατάσταση
 
-## 🏆 Competition Types
+### Βήμα 1: Δημιουργία GitHub Repository
 
-### National Olympiads
-The primary national mathematics competition in each country, typically held annually to identify top mathematical talent.
+1. Δημιούργησε νέο repository στο GitHub:
+   - Όνομα: `olympiads-bank` (ή όποιο θέλεις)
+   - Public repository
+   - Πρόσθεσε README
 
-### Selection Team Test
-Advanced competitions used to select national teams for international competitions like IMO (International Mathematical Olympiad).
+### Βήμα 2: Προετοιμασία JSON Αρχείων
 
-## 📊 Data Structure
-
-Each year's problems are stored in JSON format:
+Κάθε έτος χρειάζεται ένα JSON αρχείο με τη δομή:
 
 ```json
 {
-  "year": "2025",
+  "year": "2024",
   "problems": {
     "National Olympiads": {
       "China": [
         {
           "id": 1,
           "number": "1",
-          "statement": "LaTeX formatted problem statement..."
+          "category": "Number Theory",
+          "difficulty": "Medium",
+          "statement": "Find all prime numbers $p$ such that..."
         }
       ],
-      "Brazil": [...]
+      "Greece": [...],
+      "Romania": [...]
     },
     "Selection Team Test": {
       "Iran": [...],
-      "Philippines": [...]
+      "Brazil": [...]
     }
   }
 }
 ```
 
-## 🚀 Live Demo
+**Υποχρεωτικά πεδία:**
+- `id`: Μοναδικός αριθμός (integer)
+- `number`: Αριθμός προβλήματος (string)
+- `statement`: Εκφώνηση προβλήματος (string με LaTeX)
 
-Visit the live application: **[https://eisatopon.github.io/national-olympiads-bank/](https://eisatopon.github.io/national-olympiads-bank/)**
+**Προαιρετικά πεδία:**
+- `category`: "Algebra" | "Geometry" | "Combinatorics" | "Number Theory"
+- `difficulty`: "Easy" | "Medium" | "Hard"
 
-## 💻 Local Development
+### Βήμα 3: Upload στο GitHub
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/Eisatopon/national-olympiads-bank.git
-cd national-olympiads-bank
+# Αρχεία που πρέπει να ανεβάσεις
+olympiads_1985.json
+olympiads_1986.json
+...
+olympiads_2025.json
 ```
 
-2. Open `index.html` in your browser:
-```bash
-# On macOS
-open index.html
+### Βήμα 4: Ενημέρωση HTML
 
-# On Linux
-xdg-open index.html
-
-# On Windows
-start index.html
-```
-
-That's it! No build process required - pure HTML/CSS/JavaScript.
-
-## 📁 Repository Structure
-
-```
-national-olympiads-bank/
-├── index.html              # Main application
-├── olympiads_2025.json     # Problems for 2025
-├── olympiads_2024.json     # Problems for 2024
-├── ...
-├── olympiads_1985.json     # Problems for 1985
-└── README.md               # This file
-```
-
-## 🔧 Configuration
-
-To add your own JSON files, update the `DATA_URLS` object in `index.html`:
+Στο αρχείο `olympiads_bank_enhanced.html`, άλλαξε το `YOUR_USERNAME`:
 
 ```javascript
 const DATA_URLS = {
-    "2025": "https://raw.githubusercontent.com/YOUR_USERNAME/national-olympiads-bank/main/olympiads_2025.json",
-    "2024": "https://raw.githubusercontent.com/YOUR_USERNAME/national-olympiads-bank/main/olympiads_2024.json",
-    // ... add more years
-};
+    "2025": "https://raw.githubusercontent.com/YOUR_USERNAME/olympiads-bank/main/olympiads_2025.json",
+    "2024": "https://raw.githubusercontent.com/YOUR_USERNAME/olympiads-bank/main/olympiads_2024.json",
+    // ...
+}
 ```
 
-## 📚 Problem Coverage
+### Βήμα 5: GitHub Pages (Προαιρετικό)
 
-| Year Range | Total Problems | Status |
-|------------|----------------|--------|
-| 2020-2025 | ~500 | ✅ Complete |
-| 2010-2019 | ~800 | 🟡 In Progress |
-| 2000-2009 | ~600 | 🟡 In Progress |
-| 1990-1999 | ~500 | 🔴 Planned |
-| 1985-1989 | ~300 | 🔴 Planned |
+1. Settings → Pages
+2. Source: Deploy from branch
+3. Branch: main, folder: / (root)
+4. Save
+
+Το site θα είναι διαθέσιμο στο:
+`https://YOUR_USERNAME.github.io/olympiads-bank/`
+
+## 📝 Χρήση
+
+### Αναζήτηση Προβλημάτων
+
+1. **Επίλεξε έτος** (υποχρεωτικό)
+2. Προαιρετικά φίλτρα:
+   - Λέξη-κλειδί
+   - Χώρα
+   - Κατηγορία
+   - Δυσκολία
+   - Τύπος διαγωνισμού
+   - Αριθμός προβλήματος
+3. Πάτα "🔍 Search"
+
+### Δημιουργία Επιλογής
+
+1. Πάτα "✅ Add" σε κάθε πρόβλημα που θέλεις
+2. Τα προβλήματα εμφανίζονται στο "📝 My Selection"
+3. **Αυτόματη αποθήκευση** στο localStorage
+
+### Εξαγωγή
+
+- **📄 Export PDF**: Εξαγωγή σε PDF (χωρίς LaTeX rendering)
+- **🖨️ Print**: Εκτύπωση (με LaTeX rendering)
+- **📱 QR Code**: Δημιουργία QR για sharing
+- **🗑️ Clear**: Καθαρισμός επιλογής
+
+## 🎯 Tips για JSON Creation
+
+### LaTeX Formatting
+
+```javascript
+// Inline math
+"Find $x$ such that $x^2 = 4$"
+
+// Display math
+"Prove that:\n\n$$\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$$"
+
+// Multiple lines
+"Given:\n\n$$a + b = c$$\n\n$$ab = 1$$"
+```
+
+### Difficulty Guidelines
+
+- **Easy**: Προβλήματα για αρχάριους (P1-P2 συνήθως)
+- **Medium**: Μέτρια δυσκολία (P3-P4)
+- **Hard**: Δύσκολα προβλήματα (P5-P6, Selection Tests)
+
+### Category Assignment
+
+- **Algebra**: Ανισότητες, εξισώσεις, πολυώνυμα
+- **Geometry**: Τρίγωνα, κύκλοι, γεωμετρικές ιδιότητες
+- **Combinatorics**: Μέτρηση, γραφήματα, αρχές
+- **Number Theory**: Πρώτοι, διαιρετότητα, modular arithmetic
+
+## 🛠️ Προσαρμογές
+
+### Προσθήκη Χωρών
+
+1. Πρόσθεσε στο `<select id="country">`:
+```html
+<option value="USA">USA</option>
+```
+
+2. Προαιρετικά: Πρόσθεσε σημαία στο `.flags-banner`
+
+### Προσθήκη Κατηγοριών
+
+```html
+<select id="category">
+    <option value="Functional Equations">Functional Equations</option>
+</select>
+```
+
+### Custom Styling
+
+Άλλαξε τα χρώματα στο CSS:
+
+```css
+.header {
+    background: linear-gradient(135deg, #your-color-1, #your-color-2);
+}
+```
+
+## 📱 Responsive Design
+
+- Desktop: Full grid layout
+- Tablet: 2-column layout
+- Mobile: Single column, optimized buttons
+
+## 🔧 Τεχνικές Λεπτομέρειες
+
+### Libraries Used
+
+- **MathJax 3**: Για rendering LaTeX
+- **jsPDF**: Για PDF generation
+- **QRCode.js**: Για QR code generation
+
+### Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+### LocalStorage Structure
+
+```javascript
+{
+  "olympiadsSelection": [
+    {
+      "id": 1,
+      "year": "2024",
+      "country": "China",
+      "type": "National Olympiads",
+      "problem_number": "1",
+      "content": "...",
+      "category": "Algebra",
+      "difficulty": "Medium"
+    }
+  ]
+}
+```
+
+## 📊 Example JSON Structure
+
+Δες το `olympiads_2024_example.json` για πλήρες παράδειγμα.
+
+## 🐛 Troubleshooting
+
+### Προβλήματα Loading
+
+1. **404 Error**: Έλεγξε ότι το URL είναι σωστό
+2. **CORS Error**: Χρησιμοποίησε GitHub Pages ή local server
+3. **Math not rendering**: Περίμενε λίγο, το MathJax φορτώνει
+
+### LocalStorage Issues
+
+```javascript
+// Clear cache
+localStorage.clear();
+location.reload();
+```
+
+## 🎓 Use Cases
+
+- Προετοιμασία για διαγωνισμούς
+- Δημιουργία εξετάσεων
+- Μελέτη ανά κατηγορία/δυσκολία
+- Σύγκριση προβλημάτων χωρών
+
+## 📄 License
+
+MIT License - Ελεύθερο για εκπαιδευτική χρήση
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Pull requests welcome! Προσθέστε:
+- Νέα έτη/χώρες
+- Βελτιώσεις UI
+- Bug fixes
 
-1. **Add Problems**: Submit problems from additional years or countries
-2. **Fix Errors**: Report or fix typos, formatting issues, or incorrect solutions
-3. **Translations**: Help translate problem statements
-4. **New Features**: Suggest or implement new features
+## 📞 Contact
 
-### How to Contribute
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Mathematical problems are sourced from official national olympiad competitions
-- Flag designs are simplified SVG representations
-- Special thanks to all mathematics educators and olympiad organizers worldwide
-
-## 📧 Contact
-
-**Eisatopon** - GitHub: [@Eisatopon](https://github.com/Eisatopon)
-
-Project Link: [https://github.com/Eisatopon/national-olympiads-bank](https://github.com/Eisatopon/national-olympiads-bank)
+Για ερωτήσεις ή προτάσεις, άνοιξε issue στο GitHub.
 
 ---
 
-<div align="center">
-
-### 🌟 If you find this project useful, please give it a star! 🌟
-
-**Made with ❤️ for the mathematical community**
-
-*Empowering students and educators worldwide through accessible olympiad resources*
-
-</div>
-
-## 🗺️ Roadmap
-
-- [x] Basic problem bank interface
-- [x] Search and filter functionality
-- [x] LaTeX rendering support
-- [x] QR code sharing
-- [ ] Add more countries (USA, Russia, South Korea, etc.)
-- [ ] Problem solutions and hints
-- [ ] Difficulty ratings
-- [ ] Topic tagging (Algebra, Geometry, Number Theory, Combinatorics)
-- [ ] User accounts and progress tracking
-- [ ] Mobile app version
-- [ ] API for programmatic access
-
-## 📈 Statistics
-
-- **Total Problems**: 2,700+ (and growing)
-- **Countries Covered**: 11
-- **Years Covered**: 41 (1985-2025)
-- **Competition Types**: 2
-- **Languages**: English (more coming soon)
-
----
-
-*Last Updated: January 2026*
+**Made with 💙 for Math Olympiad enthusiasts worldwide**
