@@ -27,6 +27,7 @@
 
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
     <style>
         * {
@@ -148,7 +149,7 @@
             display: block;
         }
 
-        select {
+        select, input[type="text"] {
             padding: 12px 16px;
             border: 2px solid #dee2e6;
             border-radius: 8px;
@@ -156,7 +157,7 @@
             width: 100%;
         }
 
-        select:focus {
+        select:focus, input[type="text"]:focus {
             outline: none;
             border-color: #1e40af;
             box-shadow: 0 0 0 4px rgba(30,64,175,0.15);
@@ -287,6 +288,31 @@
             color: #16a34a;
         }
 
+        .badge-difficulty {
+            background: #fce7f3;
+            color: #be185d;
+        }
+
+        .badge-category {
+            background: #e0e7ff;
+            color: #4f46e5;
+        }
+
+        .badge-easy {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-hard {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
         .card-title {
             font-size: 1.4em;
             color: #1e40af;
@@ -298,26 +324,6 @@
             font-size: 1.05em;
             color: #2c3e50;
             line-height: 1.9;
-        }
-
-        .MathJax {
-            margin: 0.3em 0 !important;
-        }
-
-        .mjx-chtml {
-            margin: 0.2em 0 !important;
-        }
-
-        mjx-container {
-            margin: 0.3em 0 !important;
-        }
-
-        .card-content p {
-            margin: 0.4em 0;
-        }
-
-        .card-content br + br {
-            display: none;
         }
 
         .empty-state {
@@ -349,6 +355,40 @@
             font-size: 0.95em;
         }
 
+        .stats-panel {
+            background: #f0f9ff;
+            border: 2px solid #0284c7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #1e40af;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
         @media (max-width: 768px) {
             .filter-grid {
                 grid-template-columns: 1fr;
@@ -365,6 +405,16 @@
             .flag-svg {
                 width: 40px;
                 height: 27px;
+            }
+        }
+
+        @media print {
+            .filters, .filter-actions, .btn, .header, .footer, .stats-panel {
+                display: none !important;
+            }
+            .question-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
             }
         }
     </style>
@@ -397,8 +447,8 @@
             <div class="flag-item">
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="6.67" fill="#239F40"/>
-                    <rect y="6.67" width="30" height="6.67" fill="#FFFFFF"/>
-                    <rect y="13.33" width="30" height="6.67" fill="#DA0000"/>
+                    <rect width="30" height="6.67" y="6.67" fill="#FFFFFF"/>
+                    <rect width="30" height="6.67" y="13.33" fill="#DA0000"/>
                 </svg>
                 <span class="flag-label">Iran</span>
             </div>
@@ -407,7 +457,7 @@
             <div class="flag-item">
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="10" fill="#0038A8"/>
-                    <rect y="10" width="30" height="10" fill="#CE1126"/>
+                    <rect width="30" height="10" y="10" fill="#CE1126"/>
                     <polygon points="0,0 12,10 0,20" fill="#FFFFFF"/>
                     <polygon points="6,10 7,12 9,12 7,13 8,15 6,14 4,15 5,13 3,12 5,12" fill="#FCD116"/>
                 </svg>
@@ -418,8 +468,8 @@
             <div class="flag-item">
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="6.67" fill="#000000"/>
-                    <rect y="6.67" width="30" height="6.67" fill="#DD0000"/>
-                    <rect y="13.33" width="30" height="6.67" fill="#FFCE00"/>
+                    <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
+                    <rect width="30" height="6.67" y="13.33" fill="#FFCE00"/>
                 </svg>
                 <span class="flag-label">Germany</span>
             </div>
@@ -429,13 +479,13 @@
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="20" fill="#0D5EAF"/>
                     <rect width="30" height="2.22" fill="#FFFFFF"/>
-                    <rect y="4.44" width="30" height="2.22" fill="#FFFFFF"/>
-                    <rect y="8.89" width="30" height="2.22" fill="#FFFFFF"/>
-                    <rect y="13.33" width="30" height="2.22" fill="#FFFFFF"/>
-                    <rect y="17.78" width="30" height="2.22" fill="#FFFFFF"/>
+                    <rect width="30" height="2.22" y="4.44" fill="#FFFFFF"/>
+                    <rect width="30" height="2.22" y="8.89" fill="#FFFFFF"/>
+                    <rect width="30" height="2.22" y="13.33" fill="#FFFFFF"/>
+                    <rect width="30" height="2.22" y="17.78" fill="#FFFFFF"/>
                     <rect width="12" height="12" fill="#0D5EAF"/>
-                    <rect x="5" width="2" height="12" fill="#FFFFFF"/>
-                    <rect width="12" y="5" height="2" fill="#FFFFFF"/>
+                    <rect width="2" height="12" x="5" fill="#FFFFFF"/>
+                    <rect width="12" height="2" y="5" fill="#FFFFFF"/>
                 </svg>
                 <span class="flag-label">Greece</span>
             </div>
@@ -444,8 +494,8 @@
             <div class="flag-item">
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="6.67" fill="#FF9933"/>
-                    <rect y="6.67" width="30" height="6.67" fill="#FFFFFF"/>
-                    <rect y="13.33" width="30" height="6.67" fill="#138808"/>
+                    <rect width="30" height="6.67" y="6.67" fill="#FFFFFF"/>
+                    <rect width="30" height="6.67" y="13.33" fill="#138808"/>
                     <circle cx="15" cy="10" r="2" fill="none" stroke="#000080" stroke-width="0.5"/>
                 </svg>
                 <span class="flag-label">India</span>
@@ -455,8 +505,8 @@
             <div class="flag-item">
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="10" height="20" fill="#002B7F"/>
-                    <rect x="10" width="10" height="20" fill="#FCD116"/>
-                    <rect x="20" width="10" height="20" fill="#CE1126"/>
+                    <rect width="10" height="20" x="10" fill="#FCD116"/>
+                    <rect width="10" height="20" x="20" fill="#CE1126"/>
                 </svg>
                 <span class="flag-label">Romania</span>
             </div>
@@ -466,8 +516,8 @@
                 <svg class="flag-svg" viewBox="0 0 30 20">
                     <rect width="30" height="20" fill="#FFFFFF"/>
                     <rect width="30" height="3.33" fill="#A51931"/>
-                    <rect y="16.67" width="30" height="3.33" fill="#A51931"/>
-                    <rect y="6.67" width="30" height="6.67" fill="#2D2A4A"/>
+                    <rect width="30" height="3.33" y="16.67" fill="#A51931"/>
+                    <rect width="30" height="6.67" y="6.67" fill="#2D2A4A"/>
                 </svg>
                 <span class="flag-label">Thailand</span>
             </div>
@@ -500,10 +550,37 @@
 
     <div class="content">
 
+        <div class="stats-panel" id="statsPanel" style="display: none;">
+            <h3 style="color: #1e40af; margin-bottom: 15px; text-align: center;">📊 Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value" id="statTotal">0</div>
+                    <div class="stat-label">Total Problems</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="statCountries">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="statYears">0</div>
+                    <div class="stat-label">Years</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="statSelected">0</div>
+                    <div class="stat-label">Selected</div>
+                </div>
+            </div>
+        </div>
+
         <div class="section-title">🔍 Search Problems</div>
 
         <div class="filters">
             <div class="filter-grid">
+
+                <div class="filter-item">
+                    <label>🔤 Keyword Search</label>
+                    <input type="text" id="keyword" placeholder="Search in problem text...">
+                </div>
 
                 <div class="filter-item">
                     <label>📅 Year</label>
@@ -572,6 +649,27 @@
                 </div>
 
                 <div class="filter-item">
+                    <label>📚 Category</label>
+                    <select id="category">
+                        <option value="">All categories</option>
+                        <option value="Algebra">Algebra</option>
+                        <option value="Geometry">Geometry</option>
+                        <option value="Combinatorics">Combinatorics</option>
+                        <option value="Number Theory">Number Theory</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <label>⚡ Difficulty</label>
+                    <select id="difficulty">
+                        <option value="">All difficulties</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
                     <label>🏅 Competition Type</label>
                     <select id="compType">
                         <option value="">All types</option>
@@ -632,13 +730,13 @@
         </div>
 
         <div class="filter-actions" style="margin-top: 15px;">
-            <button class="btn btn-success btn-sm" onclick="printMyExam()">🖨️ Print</button>
+            <button class="btn btn-success btn-sm" onclick="exportToPDF()">📄 Export PDF</button>
+            <button class="btn btn-primary btn-sm" onclick="printMyExam()">🖨️ Print</button>
             <button class="btn btn-danger btn-sm" onclick="clearMyExam()">🗑️ Clear</button>
             <button class="btn btn-primary btn-sm" onclick="generateQRCode()">📱 QR Code</button>
         </div>
 
-        <div class="my-exam-panel" id="qrPanel"
-             style="display: none; margin-top: 20px; text-align: center;">
+        <div class="my-exam-panel" id="qrPanel" style="display: none; margin-top: 20px; text-align: center;">
             <h4 style="color: #1e40af; margin-bottom: 15px;">
                 📱 QR Code for sharing
             </h4>
@@ -704,7 +802,26 @@
 
     let allProblems = [];
     let loadedYear = null;
-    const selectedProblems = [];
+    let selectedProblems = [];
+
+    // Load from localStorage on page load
+    function loadFromStorage() {
+        const stored = localStorage.getItem('olympiadsSelection');
+        if (stored) {
+            try {
+                selectedProblems = JSON.parse(stored);
+                renderMyExam();
+                updateStats();
+            } catch (e) {
+                console.error('Error loading from storage:', e);
+            }
+        }
+    }
+
+    // Save to localStorage
+    function saveToStorage() {
+        localStorage.setItem('olympiadsSelection', JSON.stringify(selectedProblems));
+    }
 
     function typesetMath(el = document.body) {
         if (!window.mathJaxReady) {
@@ -735,7 +852,7 @@
             const rawProblems = data["problems"] || {};
             const recordYear = data.year || year;
 
-            // Expected structure: { "National Olympiads": { "China": [...], ... }, "Selection Team Test": { ... } }
+            // Expected structure with new fields
             Object.entries(rawProblems).forEach(([compType, perTypeObj]) => {
                 Object.entries(perTypeObj || {}).forEach(([countryName, list]) => {
                     (list || []).forEach(p => {
@@ -745,13 +862,16 @@
                             country: countryName,
                             type: compType,
                             problem_number: String(p["number"] ?? ""),
-                            content: String(p["statement"] ?? "")
+                            content: String(p["statement"] ?? ""),
+                            category: p["category"] || "",
+                            difficulty: p["difficulty"] || ""
                         });
                     });
                 });
             });
 
             loadedYear = year;
+            updateStats();
             return true;
         } catch (e) {
             alert('❌ Loading error: ' + e.message);
@@ -764,12 +884,18 @@
         const c = document.getElementById("country").value;
         const t = document.getElementById("compType").value;
         const p = document.getElementById("problem").value;
+        const cat = document.getElementById("category").value;
+        const diff = document.getElementById("difficulty").value;
+        const keyword = document.getElementById("keyword").value.toLowerCase();
 
         return allProblems.filter(prob => {
             if (y && prob.year !== y) return false;
             if (c && prob.country !== c) return false;
             if (t && prob.type !== t) return false;
             if (p && prob.problem_number !== p) return false;
+            if (cat && prob.category !== cat) return false;
+            if (diff && prob.difficulty !== diff) return false;
+            if (keyword && !prob.content.toLowerCase().includes(keyword)) return false;
             return true;
         });
     }
@@ -804,20 +930,25 @@
         cnt.textContent = problems.length;
         info.style.display = "block";
 
-        grid.innerHTML = problems.map(p => `
-            <div class="question-card">
-                <div class="card-header">
-                    <div class="card-badges">
-                        <span class="badge badge-year">${p.year}</span>
-                        <span class="badge badge-country">${p.country}</span>
-                        <span class="badge badge-type">${p.type}</span>
+        grid.innerHTML = problems.map(p => {
+            const diffClass = p.difficulty ? `badge-${p.difficulty.toLowerCase()}` : 'badge-difficulty';
+            return `
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-year">${p.year}</span>
+                            <span class="badge badge-country">${p.country}</span>
+                            <span class="badge badge-type">${p.type}</span>
+                            ${p.category ? `<span class="badge badge-category">${p.category}</span>` : ''}
+                            ${p.difficulty ? `<span class="badge ${diffClass}">${p.difficulty}</span>` : ''}
+                        </div>
+                        <button class="btn btn-sm btn-outline" onclick="addToExam(${p.id})">✅ Add</button>
                     </div>
-                    <button class="btn btn-sm btn-outline" onclick="addToExam(${p.id})">✅ Add</button>
+                    <div class="card-title">Problem ${p.problem_number}</div>
+                    <div class="card-content">${p.content.replace(/\n\n/g, '<br><br>')}</div>
                 </div>
-                <div class="card-title">Problem ${p.problem_number}</div>
-                <div class="card-content">${p.content.replace(/\n\n/g, '<br><br>')}</div>
-            </div>
-        `).join("");
+            `;
+        }).join("");
 
         setTimeout(() => typesetMath(grid), 300);
     }
@@ -832,14 +963,18 @@
         }
 
         selectedProblems.push(p);
+        saveToStorage();
         renderMyExam();
+        updateStats();
     }
 
     function removeFromExam(id) {
         const i = selectedProblems.findIndex(x => x.id === id);
         if (i > -1) {
             selectedProblems.splice(i, 1);
+            saveToStorage();
             renderMyExam();
+            updateStats();
         }
     }
 
@@ -859,13 +994,20 @@
 
         let html = '<div style="padding:10px;">';
         selectedProblems.forEach((p, i) => {
+            const diffClass = p.difficulty ? `badge-${p.difficulty.toLowerCase()}` : 'badge-difficulty';
             html += `
                 <div style="margin:30px 0; padding-bottom:20px; border-bottom:1px solid #dee2e6;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
-                        <strong style="font-size:1.2em;">
-                            ${i + 1}. ${p.country} – ${p.type} – Problem ${p.problem_number}
-                        </strong>
-                        <span style="color:#666; font-size:0.9em;">(${p.year})</span>
+                        <div>
+                            <strong style="font-size:1.2em;">
+                                ${i + 1}. ${p.country} – ${p.type} – Problem ${p.problem_number}
+                            </strong>
+                            <div style="margin-top:8px;">
+                                <span class="badge badge-year">${p.year}</span>
+                                ${p.category ? `<span class="badge badge-category">${p.category}</span>` : ''}
+                                ${p.difficulty ? `<span class="badge ${diffClass}">${p.difficulty}</span>` : ''}
+                            </div>
+                        </div>
                         <button class="btn btn-sm btn-danger" onclick="removeFromExam(${p.id})">❌ Remove</button>
                     </div>
                     <div>${p.content.replace(/\n\n/g, '<br><br>')}</div>
@@ -876,6 +1018,85 @@
 
         panel.innerHTML = html;
         setTimeout(() => typesetMath(panel), 300);
+    }
+
+    function updateStats() {
+        const statsPanel = document.getElementById('statsPanel');
+        if (allProblems.length > 0) {
+            statsPanel.style.display = 'block';
+            
+            const uniqueCountries = new Set(allProblems.map(p => p.country)).size;
+            const uniqueYears = new Set(allProblems.map(p => p.year)).size;
+            
+            document.getElementById('statTotal').textContent = allProblems.length;
+            document.getElementById('statCountries').textContent = uniqueCountries;
+            document.getElementById('statYears').textContent = uniqueYears;
+        }
+        document.getElementById('statSelected').textContent = selectedProblems.length;
+    }
+
+    function exportToPDF() {
+        if (!selectedProblems.length) {
+            alert("⚠️ No problems selected");
+            return;
+        }
+
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        
+        let y = 20;
+        const pageHeight = doc.internal.pageSize.height;
+        const margin = 20;
+        const lineHeight = 7;
+
+        doc.setFontSize(16);
+        doc.text('Mathematical Olympiad Problems', margin, y);
+        y += 15;
+
+        selectedProblems.forEach((p, i) => {
+            if (y > pageHeight - 40) {
+                doc.addPage();
+                y = 20;
+            }
+
+            doc.setFontSize(12);
+            doc.setFont(undefined, 'bold');
+            doc.text(`${i + 1}. ${p.country} - ${p.year} - Problem ${p.problem_number}`, margin, y);
+            y += lineHeight;
+
+            if (p.category || p.difficulty) {
+                doc.setFontSize(10);
+                doc.setFont(undefined, 'normal');
+                let meta = [];
+                if (p.category) meta.push(`Category: ${p.category}`);
+                if (p.difficulty) meta.push(`Difficulty: ${p.difficulty}`);
+                doc.text(meta.join(' | '), margin, y);
+                y += lineHeight;
+            }
+
+            doc.setFontSize(11);
+            doc.setFont(undefined, 'normal');
+            
+            // Remove LaTeX and split text
+            const cleanText = p.content
+                .replace(/\$.*?\$/g, '[MATH]')
+                .replace(/\\[a-z]+{.*?}/g, '[MATH]');
+            
+            const lines = doc.splitTextToSize(cleanText, 170);
+            
+            lines.forEach(line => {
+                if (y > pageHeight - margin) {
+                    doc.addPage();
+                    y = 20;
+                }
+                doc.text(line, margin, y);
+                y += lineHeight;
+            });
+            
+            y += 10;
+        });
+
+        doc.save('olympiad_problems.pdf');
     }
 
     function printMyExam() {
@@ -889,7 +1110,9 @@
     function clearMyExam() {
         if (!confirm("Do you want to clear all selected problems?")) return;
         selectedProblems.length = 0;
+        saveToStorage();
         renderMyExam();
+        updateStats();
         document.getElementById("qrPanel").style.display = "none";
     }
 
@@ -921,10 +1144,18 @@
         document.getElementById("country").value = "";
         document.getElementById("compType").value = "";
         document.getElementById("problem").value = "";
+        document.getElementById("category").value = "";
+        document.getElementById("difficulty").value = "";
+        document.getElementById("keyword").value = "";
         document.getElementById("questionsGrid").innerHTML =
             '<div class="empty-state"><div class="empty-icon">📋</div><h3>Select filters to view problems</h3></div>';
         document.getElementById("resultsInfo").style.display = "none";
     }
+
+    // Initialize on page load
+    window.addEventListener('load', () => {
+        loadFromStorage();
+    });
 </script>
 
 </body>
