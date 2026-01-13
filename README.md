@@ -1,45 +1,45 @@
 # Mathematical Olympiads Problem Bank 🌍
 
-Μια ολοκληρωμένη τράπεζα θεμάτων από Εθνικές Μαθηματικές Ολυμπιάδες παγκοσμίως (1985-2025).
+A comprehensive problem database from National Mathematical Olympiads worldwide (1985-2025).
 
-## ✨ Χαρακτηριστικά
+## ✨ Features
 
-### 🔍 Προηγμένη Αναζήτηση
-- **Αναζήτηση με λέξεις-κλειδιά** στο περιεχόμενο των προβλημάτων
-- Φίλτρα: Έτος, Χώρα, Τύπος Διαγωνισμού, Αριθμός Προβλήματος
-- **Φίλτρο Δυσκολίας**: Easy, Medium, Hard
-- **Κατηγορίες**: Algebra, Geometry, Combinatorics, Number Theory
+### 🔍 Advanced Search
+- **Keyword search** in problem statements
+- Filters: Year, Country, Competition Type, Problem Number
+- **Difficulty Filter**: Easy, Medium, Hard
+- **Categories**: Algebra, Geometry, Combinatorics, Number Theory
 
-### 💾 Αποθήκευση & Εξαγωγή
-- **LocalStorage**: Αυτόματη αποθήκευση της επιλογής σου
-- **PDF Export**: Εξαγωγή επιλεγμένων προβλημάτων σε PDF
-- **Print**: Εκτύπωση με βελτιστοποιημένη μορφοποίηση
-- **QR Code**: Δημιουργία QR για κοινοποίηση
+### 💾 Save & Export
+- **LocalStorage**: Automatic saving of your selection
+- **PDF Export**: Export selected problems to PDF
+- **Print**: Print with optimized formatting
+- **QR Code**: Generate QR for sharing
 
-### 📊 Στατιστικά
-- Συνολικά προβλήματα
-- Αριθμός χωρών
-- Εύρος ετών
-- Επιλεγμένα προβλήματα
+### 📊 Statistics
+- Total problems
+- Number of countries
+- Year range
+- Selected problems count
 
-### 🎨 Χαρακτηριστικά Interface
+### 🎨 Interface Features
 - Responsive design (mobile-friendly)
-- MathJax για απόδοση μαθηματικών τύπων
-- Σημαίες χωρών
-- Dark mode ready (προαιρετικό)
+- MathJax for mathematical formula rendering
+- Country flags
+- Dark mode ready (optional)
 
-## 🚀 Εγκατάσταση
+## 🚀 Installation
 
-### Βήμα 1: Δημιουργία GitHub Repository
+### Step 1: Create GitHub Repository
 
-1. Δημιούργησε νέο repository στο GitHub:
-   - Όνομα: `olympiads-bank` (ή όποιο θέλεις)
+1. Create a new repository on GitHub:
+   - Name: `olympiads-bank` (or your choice)
    - Public repository
-   - Πρόσθεσε README
+   - Add README
 
-### Βήμα 2: Προετοιμασία JSON Αρχείων
+### Step 2: Prepare JSON Files
 
-Κάθε έτος χρειάζεται ένα JSON αρχείο με τη δομή:
+Each year needs a JSON file with this structure:
 
 ```json
 {
@@ -66,28 +66,28 @@
 }
 ```
 
-**Υποχρεωτικά πεδία:**
-- `id`: Μοναδικός αριθμός (integer)
-- `number`: Αριθμός προβλήματος (string)
-- `statement`: Εκφώνηση προβλήματος (string με LaTeX)
+**Required fields:**
+- `id`: Unique number (integer)
+- `number`: Problem number (string)
+- `statement`: Problem statement (string with LaTeX)
 
-**Προαιρετικά πεδία:**
+**Optional fields:**
 - `category`: "Algebra" | "Geometry" | "Combinatorics" | "Number Theory"
 - `difficulty`: "Easy" | "Medium" | "Hard"
 
-### Βήμα 3: Upload στο GitHub
+### Step 3: Upload to GitHub
 
 ```bash
-# Αρχεία που πρέπει να ανεβάσεις
+# Files to upload
 olympiads_1985.json
 olympiads_1986.json
 ...
 olympiads_2025.json
 ```
 
-### Βήμα 4: Ενημέρωση HTML
+### Step 4: Update HTML
 
-Στο αρχείο `olympiads_bank_enhanced.html`, άλλαξε το `YOUR_USERNAME`:
+In the `olympiads_bank_enhanced.html` file, change `YOUR_USERNAME`:
 
 ```javascript
 const DATA_URLS = {
@@ -97,44 +97,44 @@ const DATA_URLS = {
 }
 ```
 
-### Βήμα 5: GitHub Pages (Προαιρετικό)
+### Step 5: GitHub Pages (Optional)
 
 1. Settings → Pages
 2. Source: Deploy from branch
 3. Branch: main, folder: / (root)
 4. Save
 
-Το site θα είναι διαθέσιμο στο:
+Your site will be available at:
 `https://YOUR_USERNAME.github.io/olympiads-bank/`
 
-## 📝 Χρήση
+## 📝 Usage
 
-### Αναζήτηση Προβλημάτων
+### Search Problems
 
-1. **Επίλεξε έτος** (υποχρεωτικό)
-2. Προαιρετικά φίλτρα:
-   - Λέξη-κλειδί
-   - Χώρα
-   - Κατηγορία
-   - Δυσκολία
-   - Τύπος διαγωνισμού
-   - Αριθμός προβλήματος
-3. Πάτα "🔍 Search"
+1. **Select year** (required)
+2. Optional filters:
+   - Keyword
+   - Country
+   - Category
+   - Difficulty
+   - Competition type
+   - Problem number
+3. Click "🔍 Search"
 
-### Δημιουργία Επιλογής
+### Create Selection
 
-1. Πάτα "✅ Add" σε κάθε πρόβλημα που θέλεις
-2. Τα προβλήματα εμφανίζονται στο "📝 My Selection"
-3. **Αυτόματη αποθήκευση** στο localStorage
+1. Click "✅ Add" on each problem you want
+2. Problems appear in "📝 My Selection"
+3. **Automatic save** to localStorage
 
-### Εξαγωγή
+### Export
 
-- **📄 Export PDF**: Εξαγωγή σε PDF (χωρίς LaTeX rendering)
-- **🖨️ Print**: Εκτύπωση (με LaTeX rendering)
-- **📱 QR Code**: Δημιουργία QR για sharing
-- **🗑️ Clear**: Καθαρισμός επιλογής
+- **📄 Export PDF**: Export to PDF (without LaTeX rendering)
+- **🖨️ Print**: Print (with LaTeX rendering)
+- **📱 QR Code**: Generate QR for sharing
+- **🗑️ Clear**: Clear selection
 
-## 🎯 Tips για JSON Creation
+## 🎯 Tips for JSON Creation
 
 ### LaTeX Formatting
 
@@ -151,29 +151,29 @@ const DATA_URLS = {
 
 ### Difficulty Guidelines
 
-- **Easy**: Προβλήματα για αρχάριους (P1-P2 συνήθως)
-- **Medium**: Μέτρια δυσκολία (P3-P4)
-- **Hard**: Δύσκολα προβλήματα (P5-P6, Selection Tests)
+- **Easy**: Problems for beginners (usually P1-P2)
+- **Medium**: Moderate difficulty (P3-P4)
+- **Hard**: Difficult problems (P5-P6, Selection Tests)
 
 ### Category Assignment
 
-- **Algebra**: Ανισότητες, εξισώσεις, πολυώνυμα
-- **Geometry**: Τρίγωνα, κύκλοι, γεωμετρικές ιδιότητες
-- **Combinatorics**: Μέτρηση, γραφήματα, αρχές
-- **Number Theory**: Πρώτοι, διαιρετότητα, modular arithmetic
+- **Algebra**: Inequalities, equations, polynomials
+- **Geometry**: Triangles, circles, geometric properties
+- **Combinatorics**: Counting, graphs, principles
+- **Number Theory**: Primes, divisibility, modular arithmetic
 
-## 🛠️ Προσαρμογές
+## 🛠️ Customizations
 
-### Προσθήκη Χωρών
+### Add Countries
 
-1. Πρόσθεσε στο `<select id="country">`:
+1. Add to `<select id="country">`:
 ```html
 <option value="USA">USA</option>
 ```
 
-2. Προαιρετικά: Πρόσθεσε σημαία στο `.flags-banner`
+2. Optional: Add flag to `.flags-banner`
 
-### Προσθήκη Κατηγοριών
+### Add Categories
 
 ```html
 <select id="category">
@@ -183,7 +183,7 @@ const DATA_URLS = {
 
 ### Custom Styling
 
-Άλλαξε τα χρώματα στο CSS:
+Change colors in CSS:
 
 ```css
 .header {
@@ -197,13 +197,13 @@ const DATA_URLS = {
 - Tablet: 2-column layout
 - Mobile: Single column, optimized buttons
 
-## 🔧 Τεχνικές Λεπτομέρειες
+## 🔧 Technical Details
 
 ### Libraries Used
 
-- **MathJax 3**: Για rendering LaTeX
-- **jsPDF**: Για PDF generation
-- **QRCode.js**: Για QR code generation
+- **MathJax 3**: For LaTeX rendering
+- **jsPDF**: For PDF generation
+- **QRCode.js**: For QR code generation
 
 ### Browser Support
 
@@ -233,15 +233,15 @@ const DATA_URLS = {
 
 ## 📊 Example JSON Structure
 
-Δες το `olympiads_2024_example.json` για πλήρες παράδειγμα.
+See `olympiads_2024_example.json` for a complete example.
 
 ## 🐛 Troubleshooting
 
-### Προβλήματα Loading
+### Loading Issues
 
-1. **404 Error**: Έλεγξε ότι το URL είναι σωστό
-2. **CORS Error**: Χρησιμοποίησε GitHub Pages ή local server
-3. **Math not rendering**: Περίμενε λίγο, το MathJax φορτώνει
+1. **404 Error**: Check that the URL is correct
+2. **CORS Error**: Use GitHub Pages or local server
+3. **Math not rendering**: Wait a bit, MathJax is loading
 
 ### LocalStorage Issues
 
@@ -253,25 +253,25 @@ location.reload();
 
 ## 🎓 Use Cases
 
-- Προετοιμασία για διαγωνισμούς
-- Δημιουργία εξετάσεων
-- Μελέτη ανά κατηγορία/δυσκολία
-- Σύγκριση προβλημάτων χωρών
+- Preparation for competitions
+- Creating exams
+- Study by category/difficulty
+- Compare problems across countries
 
 ## 📄 License
 
-MIT License - Ελεύθερο για εκπαιδευτική χρήση
+MIT License - Free for educational use
 
 ## 🤝 Contributing
 
-Pull requests welcome! Προσθέστε:
-- Νέα έτη/χώρες
-- Βελτιώσεις UI
+Pull requests welcome! Add:
+- New years/countries
+- UI improvements
 - Bug fixes
 
 ## 📞 Contact
 
-Για ερωτήσεις ή προτάσεις, άνοιξε issue στο GitHub.
+For questions or suggestions, open an issue on GitHub.
 
 ---
 
