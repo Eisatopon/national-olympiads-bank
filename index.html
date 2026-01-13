@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"></meta>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
     <title>National Mathematical Olympiads - Problem Bank</title>
 
     <!-- MathJax -->
@@ -11,7 +11,13 @@
             tex: {
                 inlineMath: [['\\(', '\\)'], ['$', '$']],
                 displayMath: [['\\[', '\\]'], ['$$', '$$']],
-                processEscapes: true
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
             },
             startup: {
                 ready() {
@@ -25,7 +31,7 @@
         };
     </script>
 
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
@@ -364,35 +370,192 @@
 
         .scroll-nav {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 15px;
             margin-top: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .nav-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .nav-section-label {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .year-scroll-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+        }
+
+        .year-scroll {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            max-width: 500px;
+            padding: 5px;
+            scroll-behavior: smooth;
+        }
+
+        .year-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .year-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .year-scroll::-webkit-scrollbar-thumb {
+            background: #1e40af;
+            border-radius: 10px;
+        }
+
+        .year-btn {
+            background: white;
+            color: #1e40af;
+            border: 2px solid #1e40af;
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .year-btn:hover {
+            background: #1e40af;
+            color: white;
+        }
+
+        .year-btn.active {
+            background: #1e40af;
+            color: white;
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .difficulty-btn {
+            padding: 8px 16px;
+            border: 2px solid;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .difficulty-btn.easy {
+            border-color: #10b981;
+            color: #10b981;
+            background: white;
+        }
+
+        .difficulty-btn.easy:hover,
+        .difficulty-btn.easy.active {
+            background: #10b981;
+            color: white;
+        }
+
+        .difficulty-btn.medium {
+            border-color: #f59e0b;
+            color: #f59e0b;
+            background: white;
+        }
+
+        .difficulty-btn.medium:hover,
+        .difficulty-btn.medium.active {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .difficulty-btn.hard {
+            border-color: #ef4444;
+            color: #ef4444;
+            background: white;
+        }
+
+        .difficulty-btn.hard:hover,
+        .difficulty-btn.hard.active {
+            background: #ef4444;
+            color: white;
+        }
+
+        .nav-divider {
+            width: 100%;
+            height: 1px;
+            background: #dee2e6;
+            margin: 5px 0;
         }
 
         .scroll-btn {
             background: #1e40af;
             color: white;
             border: none;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            font-size: 1.5em;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 5px;
         }
 
-        .scroll-btn:hover {
+        .scroll-btn:hover:not(:disabled) {
             background: #1e3a8a;
-            transform: scale(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30,64,175,0.3);
         }
 
         .scroll-btn:disabled {
             background: #ccc;
             cursor: not-allowed;
             opacity: 0.5;
+        }
+
+        .problem-counter {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #1e40af;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #1e40af;
+        }
+
+        .nav-icon {
+            font-size: 1.2em;
         }
 
         .footer {
@@ -475,89 +638,89 @@
         <div class="flags-banner">
             <!-- USA Flag -->
             <div class="flag-item" onclick="selectCountry('USA')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="20" fill="#B22234"/>
-                    <rect width="30" height="1.54" y="1.54" fill="#FFFFFF"/>
-                    <rect width="30" height="1.54" y="4.62" fill="#FFFFFF"/>
-                    <rect width="30" height="1.54" y="7.69" fill="#FFFFFF"/>
-                    <rect width="30" height="1.54" y="10.77" fill="#FFFFFF"/>
-                    <rect width="30" height="1.54" y="13.85" fill="#FFFFFF"/>
-                    <rect width="30" height="1.54" y="16.92" fill="#FFFFFF"/>
-                    <rect width="12" height="10.77" fill="#3C3B6E"/>
-                    <text x="6" y="6" fill="#FFFFFF" font-size="3">★★★</text>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#B22234" height="20" width="30">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="1.54">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="4.62">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="7.69">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="10.77">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="13.85">
+                    <rect fill="#FFFFFF" height="1.54" width="30" y="16.92">
+                    <rect fill="#3C3B6E" height="10.77" width="12">
+                    <text fill="#FFFFFF" font-size="3" x="6" y="6">★★★</text>
+                </rect></rect></rect></rect></rect></rect></rect></rect></svg>
                 <span class="flag-label">USA</span>
             </div>
 
             <!-- China Flag -->
             <div class="flag-item" onclick="selectCountry('China')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="20" fill="#DE2910"/>
-                    <polygon points="5,3 6,6 9,6 7,8 8,11 5,9 2,11 3,8 1,6 4,6" fill="#FFDE00"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#DE2910" height="20" width="30">
+                    <polygon fill="#FFDE00" points="5,3 6,6 9,6 7,8 8,11 5,9 2,11 3,8 1,6 4,6">
+                </polygon></rect></svg>
                 <span class="flag-label">China</span>
             </div>
 
             <!-- Argentina Flag -->
             <div class="flag-item" onclick="selectCountry('Argentina')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="6.67" fill="#74ACDF"/>
-                    <rect width="30" height="6.67" y="6.67" fill="#FFFFFF"/>
-                    <rect width="30" height="6.67" y="13.33" fill="#74ACDF"/>
-                    <circle cx="15" cy="10" r="2" fill="none" stroke="#F6B40E" stroke-width="0.5"/>
-                    <circle cx="15" cy="10" r="0.3" fill="#F6B40E"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#74ACDF" height="6.67" width="30">
+                    <rect fill="#FFFFFF" height="6.67" width="30" y="6.67">
+                    <rect fill="#74ACDF" height="6.67" width="30" y="13.33">
+                    <circle cx="15" cy="10" fill="none" r="2" stroke-width="0.5" stroke="#F6B40E">
+                    <circle cx="15" cy="10" fill="#F6B40E" r="0.3">
+                </circle></circle></rect></rect></rect></svg>
                 <span class="flag-label">Argentina</span>
             </div>
 
             <!-- Greece Flag -->
             <div class="flag-item" onclick="selectCountry('Greece')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="20" fill="#0D5EAF"/>
-                    <rect width="30" height="2.22" fill="#FFFFFF"/>
-                    <rect width="30" height="2.22" y="4.44" fill="#FFFFFF"/>
-                    <rect width="30" height="2.22" y="8.89" fill="#FFFFFF"/>
-                    <rect width="30" height="2.22" y="13.33" fill="#FFFFFF"/>
-                    <rect width="30" height="2.22" y="17.78" fill="#FFFFFF"/>
-                    <rect width="12" height="12" fill="#0D5EAF"/>
-                    <rect width="2" height="12" x="5" fill="#FFFFFF"/>
-                    <rect width="12" height="2" y="5" fill="#FFFFFF"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#0D5EAF" height="20" width="30">
+                    <rect fill="#FFFFFF" height="2.22" width="30">
+                    <rect fill="#FFFFFF" height="2.22" width="30" y="4.44">
+                    <rect fill="#FFFFFF" height="2.22" width="30" y="8.89">
+                    <rect fill="#FFFFFF" height="2.22" width="30" y="13.33">
+                    <rect fill="#FFFFFF" height="2.22" width="30" y="17.78">
+                    <rect fill="#0D5EAF" height="12" width="12">
+                    <rect fill="#FFFFFF" height="12" width="2" x="5">
+                    <rect fill="#FFFFFF" height="2" width="12" y="5">
+                </rect></rect></rect></rect></rect></rect></rect></rect></rect></svg>
                 <span class="flag-label">Greece</span>
             </div>
 
             <!-- Singapore Flag -->
             <div class="flag-item" onclick="selectCountry('Singapore')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="10" fill="#ED2939"/>
-                    <rect width="30" height="10" y="10" fill="#FFFFFF"/>
-                    <circle cx="7" cy="5" r="2.5" fill="#FFFFFF"/>
-                    <circle cx="8" cy="5" r="2" fill="#ED2939"/>
-                    <polygon points="11,3 11.5,4.5 13,4.5 11.8,5.5 12.3,7 11,6 9.7,7 10.2,5.5 9,4.5 10.5,4.5" fill="#FFFFFF"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#ED2939" height="10" width="30">
+                    <rect fill="#FFFFFF" height="10" width="30" y="10">
+                    <circle cx="7" cy="5" fill="#FFFFFF" r="2.5">
+                    <circle cx="8" cy="5" fill="#ED2939" r="2">
+                    <polygon fill="#FFFFFF" points="11,3 11.5,4.5 13,4.5 11.8,5.5 12.3,7 11,6 9.7,7 10.2,5.5 9,4.5 10.5,4.5">
+                </polygon></circle></circle></rect></rect></svg>
                 <span class="flag-label">Singapore</span>
             </div>
 
             <!-- Romania Flag -->
             <div class="flag-item" onclick="selectCountry('Romania')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="10" height="20" fill="#002B7F"/>
-                    <rect width="10" height="20" x="10" fill="#FCD116"/>
-                    <rect width="10" height="20" x="20" fill="#CE1126"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#002B7F" height="20" width="10">
+                    <rect fill="#FCD116" height="20" width="10" x="10">
+                    <rect fill="#CE1126" height="20" width="10" x="20">
+                </rect></rect></rect></svg>
                 <span class="flag-label">Romania</span>
             </div>
 
             <!-- Azerbaijan Flag -->
             <div class="flag-item" onclick="selectCountry('Azerbaijan')">
-                <svg class="flag-svg" viewBox="0 0 30 20">
-                    <rect width="30" height="6.67" fill="#00B5E2"/>
-                    <rect width="30" height="6.67" y="6.67" fill="#EF3340"/>
-                    <rect width="30" height="6.67" y="13.33" fill="#00A550"/>
-                    <circle cx="15" cy="10" r="3" fill="#FFFFFF"/>
-                    <circle cx="16" cy="10" r="2.5" fill="#EF3340"/>
-                    <polygon points="18,10 19,11 20,10 19,11 19,12 18,11 17,12 17,11 16,10 17,11 18,10" fill="#FFFFFF"/>
-                </svg>
+                <svg class="flag-svg" viewbox="0 0 30 20">
+                    <rect fill="#00B5E2" height="6.67" width="30">
+                    <rect fill="#EF3340" height="6.67" width="30" y="6.67">
+                    <rect fill="#00A550" height="6.67" width="30" y="13.33">
+                    <circle cx="15" cy="10" fill="#FFFFFF" r="3">
+                    <circle cx="16" cy="10" fill="#EF3340" r="2.5">
+                    <polygon fill="#FFFFFF" points="18,10 19,11 20,10 19,11 19,12 18,11 17,12 17,11 16,10 17,11 18,10">
+                </polygon></circle></circle></rect></rect></rect></svg>
                 <span class="flag-label">Azerbaijan</span>
             </div>
         </div>
@@ -612,17 +775,33 @@
 
                 <div class="filter-item">
                     <label>📅 Year</label>
-                    <input type="number" id="year" placeholder="e.g. 2024" min="1985" max="2025">
+                    <select id="year">
+                        <option value="">All years</option>
+                    </select>
                 </div>
 
                 <div class="filter-item">
                     <label>🎯 Problem Number</label>
-                    <input type="number" id="problemNum" placeholder="e.g. 1" min="1" max="12">
+                    <select id="problemNum">
+                        <option value="">All problems</option>
+                        <option value="1">Problem 1</option>
+                        <option value="2">Problem 2</option>
+                        <option value="3">Problem 3</option>
+                        <option value="4">Problem 4</option>
+                        <option value="5">Problem 5</option>
+                        <option value="6">Problem 6</option>
+                        <option value="7">Problem 7</option>
+                        <option value="8">Problem 8</option>
+                        <option value="9">Problem 9</option>
+                        <option value="10">Problem 10</option>
+                        <option value="11">Problem 11</option>
+                        <option value="12">Problem 12</option>
+                    </select>
                 </div>
 
                 <div class="filter-item">
                     <label>🔤 Keyword Search</label>
-                    <input type="text" id="keyword" placeholder="Search in problem text...">
+                    <input id="keyword" placeholder="Search in problem text..." type="text" />
                 </div>
 
             </div>
@@ -638,9 +817,53 @@
         </div>
 
         <div class="scroll-nav" id="scrollNav" style="display: none;">
-            <button class="scroll-btn" onclick="scrollProblems('up')" title="Scroll Up">↑</button>
-            <button class="scroll-btn" onclick="scrollProblems('down')" title="Scroll Down">↓</button>
-            <button class="scroll-btn" onclick="scrollProblems('top')" title="Go to Top">⇈</button>
+            <!-- Year Navigation -->
+            <div class="nav-section">
+                <div class="nav-section-label">📅 Navigate by Year</div>
+                <div class="year-scroll-container">
+                    <button class="scroll-btn" onclick="scrollYears('left')" style="padding: 6px 10px;">◀</button>
+                    <div class="year-scroll" id="yearScroll"></div>
+                    <button class="scroll-btn" onclick="scrollYears('right')" style="padding: 6px 10px;">▶</button>
+                </div>
+            </div>
+
+            <div class="nav-divider"></div>
+
+            <!-- Difficulty Filter -->
+            <div class="nav-section">
+                <div class="nav-section-label">⚡ Filter by Difficulty</div>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn easy" onclick="filterByDifficulty('Easy')">Easy</button>
+                    <button class="difficulty-btn medium" onclick="filterByDifficulty('Medium')">Medium</button>
+                    <button class="difficulty-btn hard" onclick="filterByDifficulty('Hard')">Hard</button>
+                    <button class="difficulty-btn" onclick="filterByDifficulty(null)" style="border-color: #6c757d; color: #6c757d;">All</button>
+                </div>
+            </div>
+
+            <div class="nav-divider"></div>
+
+            <!-- Problem Navigation -->
+            <div class="nav-section">
+                <div class="nav-section-label">🎯 Navigate Problems</div>
+                <div class="nav-buttons">
+                    <button class="scroll-btn" id="btnFirst" onclick="navigateProblem('first')" title="First Problem (Home key)">
+                        <span class="nav-icon">⏮</span> First
+                    </button>
+                    <button class="scroll-btn" id="btnPrev" onclick="navigateProblem('prev')" title="Previous Problem (← Left Arrow)">
+                        <span class="nav-icon">◀</span> Previous
+                    </button>
+                    <span class="problem-counter" id="problemCounter">1 / 1</span>
+                    <button class="scroll-btn" id="btnNext" onclick="navigateProblem('next')" title="Next Problem (→ Right Arrow)">
+                        Next <span class="nav-icon">▶</span>
+                    </button>
+                    <button class="scroll-btn" id="btnLast" onclick="navigateProblem('last')" title="Last Problem (End key)">
+                        Last <span class="nav-icon">⏭</span>
+                    </button>
+                </div>
+                <div style="color: #666666; font-size: 0.85em; font-style: italic; margin-top: 5px;">
+                    💡 Tip: Use arrow keys (← →) or Home/End to navigate
+                </div>
+            </div>
         </div>
 
         <div class="questions-grid" id="questionsGrid">
@@ -683,8 +906,8 @@
     </div>
 
     <div class="footer">
-        National Mathematical Olympiads Problem Bank © 2025 – Worldwide Collection<br>
-        <small>Problems from USA, Argentina, Singapore, Greece, Romania, Azerbaijan, China & more</small>
+        National Mathematical Olympiads Problem Bank © 2025 – Worldwide Collection<br />
+        <small>Problems from USA, Argentina, Singapore, Greece, Romania, Azerbaijan, China &amp; more</small>
     </div>
 
 </div>
@@ -704,6 +927,10 @@
     let allProblems = [];
     let loadedCountry = null;
     let selectedProblems = [];
+    let currentProblemIndex = 0;
+    let displayedProblems = [];
+    let currentYearFilter = null;
+    let currentDifficultyFilter = null;
 
     // Load from localStorage on page load
     function loadFromStorage() {
@@ -726,11 +953,23 @@
 
     function typesetMath(el = document.body) {
         if (!window.mathJaxReady) {
-            setTimeout(() => typesetMath(el), 200);
+            setTimeout(() => typesetMath(el), 500);
             return;
         }
-        MathJax.typesetClear([el]);
-        MathJax.typesetPromise([el]).catch(err => console.error('MathJax error:', err));
+        try {
+            MathJax.typesetClear([el]);
+            MathJax.typesetPromise([el]).then(() => {
+                console.log('✅ Math typeset complete');
+            }).catch(err => {
+                console.error('❌ MathJax error:', err);
+                // Retry once on error
+                setTimeout(() => {
+                    MathJax.typesetPromise([el]).catch(e => console.error('Retry failed:', e));
+                }, 1000);
+            });
+        } catch (err) {
+            console.error('❌ Typeset error:', err);
+        }
     }
 
     function selectCountry(country) {
@@ -776,6 +1015,7 @@
 
             loadedCountry = country;
             updateStats();
+            populateYearFilter();
             return true;
         } catch (e) {
             alert('❌ Loading error: ' + e.message + '\n\nMake sure the file exists and has .json extension!');
@@ -826,45 +1066,82 @@
             return;
         }
 
+        displayedProblems = problems;
+        currentProblemIndex = 0;
+
         cnt.textContent = problems.length;
         info.style.display = "block";
-        scrollNav.style.display = problems.length > 3 ? "flex" : "none";
+        scrollNav.style.display = problems.length > 1 ? "flex" : "none";
 
-        grid.innerHTML = problems.map(p => {
-            return `
-                <div class="question-card">
-                    <div class="card-header">
-                        <div class="card-badges">
-                            <span class="badge badge-country">${p.country}</span>
-                            <span class="badge badge-year">${p.year}</span>
-                            <span class="badge badge-number">Problem ${p.number}</span>
-                        </div>
-                        <button class="btn btn-sm btn-outline" onclick='addToExam(\`${p.id}\`)'>✅ Add</button>
-                    </div>
-                    <div class="card-title">${p.competition} – Problem ${p.number}</div>
-                    <div class="card-content">${p.problem.replace(/\n\n/g, '<br><br>')}</div>
-                </div>
-            `;
-        }).join("");
-
-        setTimeout(() => typesetMath(grid), 300);
+        showCurrentProblem();
     }
 
-    function scrollProblems(direction) {
+    function showCurrentProblem() {
         const grid = document.getElementById("questionsGrid");
-        const scrollAmount = 400;
+        const counter = document.getElementById("problemCounter");
+        const btnFirst = document.getElementById("btnFirst");
+        const btnPrev = document.getElementById("btnPrev");
+        const btnNext = document.getElementById("btnNext");
+        const btnLast = document.getElementById("btnLast");
 
+        if (!displayedProblems.length) return;
+
+        const p = displayedProblems[currentProblemIndex];
+        
+        // Clean up the problem text - preserve double newlines (paragraphs) but remove single ones
+        let cleanProblem = p.problem
+            .replace(/\n\n\n+/g, '\n\n')  // Multiple newlines → double newline
+            .replace(/([^\n])\n([^\n])/g, '$1 $2')  // Single newlines → space
+            .replace(/\n\n/g, '<br><br>');  // Double newlines → paragraph breaks
+        
+        grid.innerHTML = `
+            <div class="question-card">
+                <div class="card-header">
+                    <div class="card-badges">
+                        <span class="badge badge-country">${p.country}</span>
+                        <span class="badge badge-year">${p.year}</span>
+                        <span class="badge badge-number">Problem ${p.number}</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline" onclick='addToExam(\`${p.id}\`)'>✅ Add</button>
+                </div>
+                <div class="card-title">${p.competition} – Problem ${p.number}</div>
+                <div class="card-content">${cleanProblem}</div>
+            </div>
+        `;
+
+        // Update counter
+        counter.textContent = `${currentProblemIndex + 1} / ${displayedProblems.length}`;
+
+        // Update button states
+        btnFirst.disabled = currentProblemIndex === 0;
+        btnPrev.disabled = currentProblemIndex === 0;
+        btnNext.disabled = currentProblemIndex === displayedProblems.length - 1;
+        btnLast.disabled = currentProblemIndex === displayedProblems.length - 1;
+
+        // Wait a bit for DOM to be ready, then render math
+        setTimeout(() => {
+            typesetMath(grid);
+        }, 500);
+        
+        grid.scrollTop = 0; // Scroll to top when changing problem
+    }
+
+    function navigateProblem(direction) {
         switch(direction) {
-            case 'up':
-                grid.scrollBy({ top: -scrollAmount, behavior: 'smooth' });
+            case 'first':
+                currentProblemIndex = 0;
                 break;
-            case 'down':
-                grid.scrollBy({ top: scrollAmount, behavior: 'smooth' });
+            case 'prev':
+                if (currentProblemIndex > 0) currentProblemIndex--;
                 break;
-            case 'top':
-                grid.scrollTo({ top: 0, behavior: 'smooth' });
+            case 'next':
+                if (currentProblemIndex < displayedProblems.length - 1) currentProblemIndex++;
+                break;
+            case 'last':
+                currentProblemIndex = displayedProblems.length - 1;
                 break;
         }
+        showCurrentProblem();
     }
 
     function addToExam(id) {
@@ -908,6 +1185,12 @@
 
         let html = '<div style="padding:10px;">';
         selectedProblems.forEach((p, i) => {
+            // Clean up problem text
+            let cleanProblem = p.problem
+                .replace(/\n\n\n+/g, '\n\n')
+                .replace(/([^\n])\n([^\n])/g, '$1 $2')
+                .replace(/\n\n/g, '<br><br>');
+            
             html += `
                 <div style="margin:30px 0; padding-bottom:20px; border-bottom:1px solid #dee2e6;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
@@ -922,7 +1205,7 @@
                         </div>
                         <button class="btn btn-sm btn-danger" onclick='removeFromExam(\`${p.id}\`)'>❌ Remove</button>
                     </div>
-                    <div>${p.problem.replace(/\n\n/g, '<br><br>')}</div>
+                    <div>${cleanProblem}</div>
                 </div>
             `;
         });
@@ -944,6 +1227,111 @@
             document.getElementById('statCountry').textContent = loadedCountry || '-';
         }
         document.getElementById('statSelected').textContent = selectedProblems.length;
+    }
+
+    function populateYearFilter() {
+        const yearSelect = document.getElementById('year');
+        const years = [...new Set(allProblems.map(p => p.year))].sort((a, b) => b - a);
+        
+        yearSelect.innerHTML = '<option value="">All years</option>';
+        years.forEach(year => {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            yearSelect.appendChild(option);
+        });
+
+        // Populate year scroll navigation
+        populateYearScroll(years);
+    }
+
+    function populateYearScroll(years) {
+        const yearScroll = document.getElementById('yearScroll');
+        yearScroll.innerHTML = '';
+        
+        years.forEach(year => {
+            const btn = document.createElement('button');
+            btn.className = 'year-btn';
+            btn.textContent = year;
+            btn.onclick = () => filterByYear(year);
+            yearScroll.appendChild(btn);
+        });
+    }
+
+    function scrollYears(direction) {
+        const container = document.getElementById('yearScroll');
+        const scrollAmount = 200;
+        
+        if (direction === 'left') {
+            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }
+
+    function filterByYear(year) {
+        currentYearFilter = currentYearFilter === year ? null : year;
+        
+        // Update active state
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            if (btn.textContent == year) {
+                btn.classList.toggle('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        applyFilters();
+    }
+
+    function filterByDifficulty(difficulty) {
+        currentDifficultyFilter = currentDifficultyFilter === difficulty ? null : difficulty;
+        
+        // Update active state
+        document.querySelectorAll('.difficulty-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        if (difficulty) {
+            const activeBtn = [...document.querySelectorAll('.difficulty-btn')].find(
+                btn => btn.textContent === difficulty
+            );
+            if (activeBtn) activeBtn.classList.add('active');
+        }
+
+        applyFilters();
+    }
+
+    function applyFilters() {
+        const year = document.getElementById("year").value;
+        const problemNum = document.getElementById("problemNum").value;
+        const keyword = document.getElementById("keyword").value.toLowerCase();
+
+        let filtered = allProblems.filter(prob => {
+            if (year && prob.year != year) return false;
+            if (currentYearFilter && prob.year != currentYearFilter) return false;
+            if (currentDifficultyFilter && prob.difficulty !== currentDifficultyFilter) return false;
+            if (problemNum && prob.number != problemNum) return false;
+            if (keyword && !prob.problem.toLowerCase().includes(keyword)) return false;
+            return true;
+        });
+
+        displayedProblems = filtered;
+        currentProblemIndex = 0;
+
+        const cnt = document.getElementById("resultsCount");
+        const info = document.getElementById("resultsInfo");
+        
+        cnt.textContent = filtered.length;
+        info.style.display = "block";
+
+        if (filtered.length > 0) {
+            showCurrentProblem();
+        } else {
+            document.getElementById("questionsGrid").innerHTML = 
+                '<div class="empty-state"><div class="empty-icon">❌</div><h3>No problems match the selected filters</h3></div>';
+            document.getElementById("scrollNav").style.display = "none";
+        }
     }
 
     function exportToPDF() {
@@ -1044,15 +1432,44 @@
         document.getElementById("year").value = "";
         document.getElementById("problemNum").value = "";
         document.getElementById("keyword").value = "";
+        
+        // Reset year dropdown to default
+        const yearSelect = document.getElementById("year");
+        yearSelect.innerHTML = '<option value="">All years</option>';
+        
         document.getElementById("questionsGrid").innerHTML =
             '<div class="empty-state"><div class="empty-icon">📋</div><h3>Select a country to view problems</h3></div>';
         document.getElementById("resultsInfo").style.display = "none";
         document.getElementById("scrollNav").style.display = "none";
+        
+        // Reset displayed problems
+        displayedProblems = [];
+        currentProblemIndex = 0;
     }
 
     // Initialize on page load
     window.addEventListener('load', () => {
         loadFromStorage();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (displayedProblems.length === 0) return;
+        
+        switch(e.key) {
+            case 'ArrowLeft':
+                navigateProblem('prev');
+                break;
+            case 'ArrowRight':
+                navigateProblem('next');
+                break;
+            case 'Home':
+                navigateProblem('first');
+                break;
+            case 'End':
+                navigateProblem('last');
+                break;
+        }
     });
 </script>
 
