@@ -1,0 +1,690 @@
+{
+  "competition": "Singapore Mathematical Olympiad (SMO) - Open Section, Round 2",
+  "years": [
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the triangle $ABC$, $\\angle B > 90^\\circ$, the incircle touches the sides $BC$ and $CA$ at $D$ and $E$, respectively. The lines $ED$ and $AB$ intersect at $P$. The incircle of the triangle $AEP$ touches the sides $PE$ and $AP$ at $D_1$ and $E_1$, respectively. The lines $E_1D_1$ and $AE$ intersect at $P_1$. Suppose $P$, $C$, $E$, $B$ are concyclic. Prove that $BE$ is parallel to $PP_1$."
+        },
+        {
+          "number": 2,
+          "problem": "Consider the polynomial $P(x) = x(x - 1)\\ldots(x - 2024)$. Show that $P^{(n)}(x) = 2025$ has $2025^n$ distinct real roots, where $n$ is any positive integer and $P^{(n)}(x) = P(P(\\ldots(P(x)\\ldots))$."
+        },
+        {
+          "number": 3,
+          "problem": "For any 4-digit positive integer $n$, define $f(n) = (a + b)^2$, where $a$, $b$ are the numbers formed by the first two and last two digits of $n$, respectively (leading zeros are allowed). For instance, $f(2025) = (20 + 25)^2 = 45^2 = 2025$. Find all 4-digit positive integers $n$ such that $f(n) = n$."
+        },
+        {
+          "number": 4,
+          "problem": "Find the smallest positive integer $n$ or show no such $n$ exists, with the following property: there are infinitely many distinct $n$-tuples of positive rational numbers $(a_1, a_2, \\ldots, a_n)$ such that both $a_1 + a_2 + \\cdots + a_n$ and $\\frac{1}{a_1} + \\frac{1}{a_2} + \\cdots + \\frac{1}{a_n}$ are integers."
+        },
+        {
+          "number": 5,
+          "problem": "Alice starts out with some coins in a box. On the $n$-th minute (for $n = 1, 2, 3, \\ldots$), she can choose to put an additional coin into the box or do nothing, and then she writes the number $2c^2 - n^2$ on the board where $c$ is the number of coins in the box. Show that for any positive integer $m$, there will eventually be two numbers on the board that sum to a multiple of $m$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In triangle $ABC$, $\\angle B = 90^\\circ$, $AB > BC$, and $P$ is the point such that $BP = BC$ and $\\angle APB = 90^\\circ$, where $P$ and $C$ lie on the same side of $AB$. Let $Q$ be the point on $AB$ such that $AP = AQ$, and let $M$ be the midpoint of $QC$. Prove that the line through $M$ parallel to $AP$ passes through the midpoint of $AB$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a fixed positive integer. Find the minimum value of $$\\frac{x_1^3 + \\cdots + x_n^3}{x_1 + \\cdots + x_n}$$ where $x_1, x_2, \\ldots, x_n$ are distinct positive integers."
+        },
+        {
+          "number": 3,
+          "problem": "Prove that for every positive integer $n$ there exists an $n$-digit number divisible by $5^n$ all of whose digits are odd."
+        },
+        {
+          "number": 4,
+          "problem": "Alice and Bob play a game. Bob starts by picking a set $S$ consisting of $M$ vectors of length $n$ with entries either 0 or 1. Alice picks a sequence of numbers $y_1 \\leq y_2 \\leq \\cdots \\leq y_n$ from the interval $[0, 1]$, and a choice of real numbers $x_1, x_2, \\ldots, x_n \\in \\mathbb{R}$. Bob wins if he can pick a vector $(z_1, z_2, \\ldots, z_n) \\in S$ such that $$\\sum_{i=1}^n x_iy_i \\leq \\sum_{i=1}^n x_iz_i,$$ otherwise Alice wins. Determine the minimum value of $M$ so that Bob can guarantee a win."
+        },
+        {
+          "number": 5,
+          "problem": "Let $p$ be a prime number. Determine the largest possible $n$ such that the following holds: it is possible to fill an $n \\times n$ table with integers $a_{ik}$ in the $i$-th row and $k$-th column, for $1 \\leq i, k \\leq n$, such that for any quadruple $i, j, k, l$ with $1 \\leq i < j \\leq n$ and $1 \\leq k < l \\leq n$, the number $a_{ik}a_{jl} - a_{il}a_{jk}$ is not divisible by $p$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a scalene triangle $ABC$ with centroid $G$ and circumcircle $\\omega$ centred at $O$, the extension of $AG$ meets $\\omega$ at $M$; lines $AB$ and $CM$ intersect at $P$; and lines $AC$ and $BM$ intersect at $Q$. Suppose the circumcentre $S$ of the triangle $APQ$ lies on $\\omega$ and $A$, $O$, $S$ are collinear. Prove that $\\angle AGO = 90^\\circ$."
+        },
+        {
+          "number": 2,
+          "problem": "A grid of cells is tiled with dominoes such that every cell is covered by exactly one domino. A subset $S$ of dominoes is chosen. Is it true that at least one of the following 2 statements is false?\n\n(1) There are 2022 more horizontal dominoes than vertical dominoes in $S$.\n\n(2) The cells covered by the dominoes in $S$ can be tiled completely and exactly by L-shaped tetrominoes."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\geq 2$ be a positive integer. For a positive integer $a$, let $Q_a(x) = x^n + ax$. Let $p$ be a prime and let $S_a = \\{b | 0 \\leq b \\leq p - 1, \\exists c \\in \\mathbb{Z}, Q_a(c) \\equiv b \\pmod{p}\\}$. Show that $\\frac{1}{p-1}\\sum_{a=1}^{p-1} |S_a|$ is an integer."
+        },
+        {
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{Z} \\to \\mathbb{Z}$, such that $$f(x + y)((f(x) - f(y))^2 + f(xy)) = f(x^3) + f(y^3)$$ for all integers $x$, $y$."
+        },
+        {
+          "number": 5,
+          "problem": "Determine all real numbers $x$ between 0 and 180 such that it is possible to partition an equilateral triangle into finitely many triangles, each of which has an angle of $x^\\circ$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For $\\triangle ABC$ and its circumcircle $\\omega$, draw the tangents at $B$, $C$ to $\\omega$ meeting at $D$. Let the line $AD$ meet the circle with center $D$ and radius $DB$ at $E$ inside $\\triangle ABC$. Let $F$ be the point on the extension of $EB$ and $G$ be the point on the segment $EC$ such that $\\angle AFB = \\angle AGE = \\angle A$. Prove that the tangent at $A$ to the circumcircle of $\\triangle AFG$ is parallel to $BC$."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that if the length and breadth of a rectangle are both odd integers, then there does not exist a point $P$ inside the rectangle such that each of the distances from $P$ to the 4 corners of the rectangle is an integer."
+        },
+        {
+          "number": 3,
+          "problem": "Find all functions $f : \\mathbb{Z}^+ \\to \\mathbb{Z}^+$ satisfying $$m!! + n!! \\mid f(m)!! + f(n)!!$$ for each $m, n \\in \\mathbb{Z}^+$, where $n!! = (n!)!$ for all $n \\in \\mathbb{Z}^+$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$, $k$, $1 \\leq k \\leq n$ be fixed integers. Alice has $n$ cards in a row, where the card at position $i$ has the label $i + k$ (or $i + k - n$ if $i + k > n$). Alice starts by colouring each card either red or blue. Afterwards, she is allowed to make several moves, where each move consists of choosing two cards of different colours and swapping them. Find the minimum number of moves she has to make (given that she chooses the colouring optimally) to put the cards in order (i.e. card $i$ is at position $i$)."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n \\geq 2$ be a positive integer. For any integer $a$, let $P_a(x)$ denote the polynomial $x^n + ax$. Let $p$ be a prime number and define the set $S_a$ as the set of residues mod $p$ that $P_a(x)$ attains. That is, $$S_a = \\{b \\mid 0 \\leq b \\leq p - 1, \\text{ and there is } c \\text{ such that } P_a(c) \\equiv b \\pmod{p}\\}.$$ Show that the expression $\\frac{1}{p-1}\\sum_{a=1}^{p-1} |S_a|$ is an integer."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the acute-angled triangle $ABC$ with circumcircle $\\omega$ and orthocenter $H$, points $D$ and $E$ are the feet of the perpendiculars from $A$ onto $BC$ and from $B$ onto $AC$ respectively. Let $P$ be a point on the minor arc $BC$ of $\\omega$. Points $M$ and $N$ are the feet of the perpendiculars from $P$ onto lines $BC$ and $AC$ respectively. Let $PH$ and $MN$ intersect at $R$. Prove that $\\angle DMR = \\angle MDR$."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f : \\mathbb{Z} \\to \\mathbb{Z}$ such that $$f(-f(x) - f(y)) = 1 - x - y \\quad \\forall x, y \\in \\mathbb{Z}$$"
+        },
+        {
+          "number": 3,
+          "problem": "A robot is placed at point $P$ on the $x$-axis but different from $(0, 0)$ and $(1, 0)$ and can only move along the axis either to the left or to the right. Two players play the following game. Player $A$ gives a distance and $B$ gives a direction and the robot will move the indicated distance along the indicated direction. Player $A$ aims to move the robot to either $(0, 0)$ or $(1, 0)$. Player $B$'s aim is to stop $A$ from achieving his aim. For which $P$ can $A$ win?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $p \\equiv 2 \\pmod{3}$ be a prime, $k$ a positive integer and $P(x) = 3x^{\\frac{2p-1}{3}} + 3x^{\\frac{p+1}{3}} + x + 1$. For any integer $n$, let $R(n)$ denote the remainder when $n$ is divided by $p$ and let $S = \\{0, 1, \\ldots, p - 1\\}$. At each step, you can either (a) replace every element $i$ of $S$ with $R(P(i))$ or (b) replace every element $i$ of $S$ with $R(i^k)$. Determine all $k$ such that there exists a finite sequence of steps that reduces $S$ to $\\{0\\}$."
+        },
+        {
+          "number": 5,
+          "problem": "In a $m \\times n$ chessboard $(m, n \\geq 2)$, some dominoes are placed (without overlap) with each domino covering exactly two adjacent cells. Show that if no more dominoes can be added to the grid, then at least $\\frac{2}{3}$ of the chessboard is covered by dominoes."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider a regular cube with side length 2. Let $A$ and $B$ be 2 vertices that are furthest apart. Construct a sequence of points on the surface of the cube $A_1, A_2, \\ldots, A_k$ so that $A_1 = A$, $A_k = B$ and for any $i = 1, \\ldots, k - 1$, the distance from $A_i$ to $A_{i+1}$ is 3. Find the minimum value of $k$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $O$ be a point inside triangle $ABC$ such that $\\angle BOC$ is $90^\\circ$ and $\\angle BAO = \\angle BCO$. Prove that $\\angle OMN$ is 90 degrees, where $M$ and $N$ are the midpoints of $AC$ and $BC$, respectively."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. Show that there exists an integer $m$ such that $$2018m^2 + 2018 \\cdot 2017m + 2017$$ is divisible by $2^n$."
+        },
+        {
+          "number": 4,
+          "problem": "Each of the squares in a $2 \\times 2018$ grid of squares is to be coloured black or white such that in any $2 \\times 2$ block, at least one of the 4 squares is white. Let $P$ be the number of ways of colouring the grid. Find the largest $k$ so that $3^k$ divides $P$."
+        },
+        {
+          "number": 5,
+          "problem": "Consider a polynomial $P(x, y, z)$ in three variables with integer coefficients such that for any real numbers $a$, $b$, $c$, $$P(a, b, c) = 0 \\Leftrightarrow a = b = c.$$ Find the largest integer $r$ such that for all such polynomials $P(x, y, z)$ and integers $m$, $n$, $$m^r \\mid P(n, n + m, n + 2m).$$"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The incircle of $\\triangle ABC$ touches the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively. A circle through $A$ and $B$ encloses $\\triangle ABC$ and intersects the line $DE$ at points $P$ and $Q$. Prove that the midpoint of $AB$ lies on the circumcircle of $\\triangle PQF$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1, a_2, \\ldots, a_n, b_1, b_2, \\ldots, b_n, p$ be real numbers with $p > -1$. Prove that $$\\sum_{i=1}^n (a_i - b_i)\\left(a_i(a_1^2 + a_2^2 + \\ldots + a_n^2)^{p/2} - b_i(b_1^2 + b_2^2 + \\ldots + b_n^2)^{p/2}\\right) \\geq 0$$"
+        },
+        {
+          "number": 3,
+          "problem": "Find the smallest positive integer $n$ so that $\\sqrt{\\frac{1^2+2^2+\\ldots+n^2}{n}}$ is an integer."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n > 3$ be an integer. Prove that there exist positive integers $x_1, \\ldots, x_n$ in geometric progression and positive integers $y_1, \\ldots, y_n$ in arithmetic progression such that $x_1 < y_1 < x_2 < y_2 < \\ldots < x_n < y_n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $A$ and $B$ be two $n \\times n$ square arrays. The cells of $A$ are labelled by the numbers from 1 to $n^2$ from left to right starting from the top row, whereas the cells of $B$ are labelled by the numbers from 1 to $n^2$ along rising north-easterly diagonals starting with the upper left-hand corner. Stack the array $B$ on top of the array $A$. If two overlapping cells have the same number, they are coloured red. Determine those $n$ for which there is at least one red cell other than the cells at top left corner, bottom right corner and the centre (when $n$ is odd)."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $D$ be a point in the interior of $\\triangle ABC$ such that $AB = ab$, $AC = ac$, $BC = bc$, $AD = ad$, $BD = bd$, $CD = cd$. Show that $\\angle ABD + \\angle ACD = 60^\\circ$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a$, $b$, $c$ be real numbers such that $0 < a, b, c < \\frac{1}{2}$ and $a + b + c = 1$. Prove that for all real numbers $x$, $y$, $z$, $$abc(x + y + z)^2 \\geq ayz(1 - 2a) + bxz(1 - 2b) + cxy(1 - 2c).$$ When does equality hold?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a prime number. Show that there is a permutation $a_1, a_2, \\ldots, a_n$ of $1, 2, \\ldots, n$ so that $a_1$, $a_1a_2$, $\\ldots$, $a_1a_2\\ldots a_n$ leave distinct remainders when divided by $n$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $b$ be a number with $-2 < b < 0$. Prove that there exists a positive integer $n$ such that all the coefficients of the polynomial $(x + 1)^n(x^2 + bx + 1)$ are positive."
+        },
+        {
+          "number": 5,
+          "problem": "A total of 731 objects are put into $n$ nonempty bags where $n$ is a positive integer. These bags can be distributed into 17 red boxes and also into 43 blue boxes so that each red and each blue box contain 43 and 17 objects, respectively. Find the minimum value of $n$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an acute-angled triangle $\\triangle ABC$, $D$ is the point on $BC$ such that $AD$ bisects $\\angle BAC$, $E$ and $F$ are the feet of the perpendiculars from $D$ onto $AB$ and $AC$ respectively. The segments $BF$ and $CE$ intersect at $K$. Prove that $AK$ is perpendicular to $BC$."
+        },
+        {
+          "number": 2,
+          "problem": "A boy lives in a small island in which there are three roads at every junction. He starts from his home and walks along the roads. At each junction he would choose to turn to the road on his right or left alternatively, i.e., his choices would be $\\ldots$, left, right, left, $\\ldots$ Prove that he will eventually return to his home."
+        },
+        {
+          "number": 3,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$, where $\\mathbb{R}$ is the set of real numbers, such that $f(x)f(yf(x) - 1) = x^2f(y) - f(x)$ for all $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f_0, f_1, \\ldots$ be the Fibonacci sequence: $f_0 = f_1 = 1$, $f_n = f_{n-1} + f_{n-2}$ if $n \\geq 2$. Determine all possible positive integers $n$ so that there is a positive integer $a$ such that $f_n \\leq a \\leq f_{n+1}$ and that $a\\left(\\frac{1}{f_1} + \\frac{1}{f_1f_2} + \\cdots + \\frac{1}{f_1f_2\\ldots f_n}\\right)$ is an integer."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n \\geq 3$ be a given integer. Find the largest integer $d$ (in terms of $n$) such that for any set $S$ of $n$ integers, there are four distinct (but not necessarily disjoint) nonempty subsets, the sum of the elements of each of which is divisible by $d$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The quadrilateral $ABCD$ is inscribed in a circle which has diameter $BD$. Points $A'$ and $B'$ are symmetric to $A$ and $B$ with respect to the line $BD$ and $AC$ respectively. If the lines $AC$, $BD$ intersect at $P$ and $A'C$, $B'D$ intersect at $Q$, prove that $PQ$ is perpendicular to $AC$."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions from the reals to the reals satisfying $$f(xf(y) + x) = xy + f(x)$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $0 < a_1 < a_2 < \\cdots < a_n$ be real numbers. Prove that $$\\left(\\frac{1}{1 + a_1} + \\frac{1}{1 + a_2} + \\cdots + \\frac{1}{1 + a_n}\\right)^2 \\leq \\frac{1}{a_1} + \\frac{1}{a_2 - a_1} + \\cdots + \\frac{1}{a_n - a_{n-1}}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Fill up each square of a $50 \\times 50$ grid with an integer. Let $G$ be the configuration of 8 squares obtained by taking a $3 \\times 3$ grid and removing the central square. Given that for any such $G$ in the $50 \\times 50$ grid, the sum of integers in its squares is positive, show there exists a $2 \\times 2$ square such that the sum of its entries is also positive."
+        },
+        {
+          "number": 5,
+          "problem": "Determine the largest odd positive integer $n$ such that every odd integer $k$ with $1 < k < n$ and $\\gcd(k, n) = 1$ is a prime."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\ldots$ be a sequence of integers defined recursively by $a_1 = 2013$ and for $n \\geq 1$, $a_{n+1}$ is the sum of the 2013-th powers of the digits of $a_n$. Do there exist distinct positive integers $i$, $j$ such that $a_i = a_j$?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be an acute-angled triangle and let $D$, $E$, and $F$ be the midpoints of $BC$, $CA$, and $AB$ respectively. Construct a circle, centered at the orthocenter of triangle $ABC$, such that triangle $ABC$ lies in the interior of the circle. Extend $EF$ to intersect the circle at $P$, $FD$ to intersect the circle at $Q$ and $DE$ to intersect the circle at $R$. Show that $AP = BQ = CR$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. Prove there exists a positive integer $n$ such that $n^{2013} - n^{20} + n^{13} - 2013$ has at least $N$ distinct prime factors."
+        },
+        {
+          "number": 4,
+          "problem": "Let $F$ be a finite non-empty set of integers and let $n$ be a positive integer. Suppose that\n\n• Any $x \\in F$ may be written as $x = y + z$ for some $y, z \\in F$;\n\n• If $1 \\leq k \\leq n$ and $x_1, \\ldots, x_k \\in F$, then $x_1 + \\cdots + x_k \\neq 0$.\n\nShow that $F$ has at least $2n + 2$ elements."
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle with integral side lengths such that $\\angle A = 3\\angle B$. Find the minimum value of its perimeter."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The incircle with centre $I$ of the triangle $ABC$ touches the sides $BC$, $CA$ and $AB$ at $D$, $E$, $F$ respectively. The line $ID$ intersects the segment $EF$ at $K$. Prove that $A$, $K$, $M$ are collinear, where $M$ is the midpoint of $BC$."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ so that $(x + y)(f(x) - f(y)) = (x - y)f(x + y)$ for all $x$, $y$ that belong to $\\mathbb{R}$."
+        },
+        {
+          "number": 3,
+          "problem": "For each $i = 1, 2, \\ldots, N$, let $a_i, b_i, c_i$ be integers such that at least one of them is odd. Show that one can find integers $x$, $y$, $z$ such that $xa_i + yb_i + zc_i$ is odd for at least $\\frac{4}{7}N$ different values of $i$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $p$ be an odd prime. Prove that $$1^{p-2} + 2^{p-2} + \\cdots + \\left(\\frac{p - 1}{2}\\right)^{p-2} \\equiv \\frac{2 - 2^p}{p} \\pmod{p}.$$"
+        },
+        {
+          "number": 5,
+          "problem": "There are 2012 distinct points in the plane, each of which is to be coloured using one of $n$ colours, so that the numbers of points of each colour are distinct. A set of $n$ points is said to be multi-coloured if their colours are distinct. Determine $n$ that maximizes the number of multi-coloured sets."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the acute-angled non-isosceles triangle $ABC$, $O$ is its circumcenter, $H$ is its orthocenter and $AB > AC$. Let $Q$ be a point on $AC$ such that the extension of $HQ$ meets the extension of $BC$ at the point $P$. Suppose $BD = DP$, where $D$ is the foot of the perpendicular from $A$ onto $BC$. Prove that $\\angle ODQ = 90^\\circ$."
+        },
+        {
+          "number": 2,
+          "problem": "If 46 squares are colored red in a $9 \\times 9$ board, show that there is a $2 \\times 2$ block on the board in which at least 3 of the squares are colored red."
+        },
+        {
+          "number": 3,
+          "problem": "Let $x, y, z > 0$ such that $\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} < \\frac{1}{xyz}$. Show that $$\\frac{2x}{\\sqrt{1 + x^2}} + \\frac{2y}{\\sqrt{1 + y^2}} + \\frac{2z}{\\sqrt{1 + z^2}} < 3.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Find all polynomials $P(x)$ with real coefficients such that $P(a) \\in \\mathbb{Z}$ implies that $a \\in \\mathbb{Z}$."
+        },
+        {
+          "number": 5,
+          "problem": "Find all pairs of positive integers $(m, n)$ such that $$m + n - \\frac{3mn}{m + n} = \\frac{2011}{3}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $CD$ be a chord of a circle $\\Gamma_1$ and $AB$ a diameter of $\\Gamma_1$ perpendicular to $CD$ at $N$ with $AN > NB$. A circle $\\Gamma_2$ centered at $C$ with radius $CN$ intersects $\\Gamma_1$ at points $P$ and $Q$. The line $PQ$ intersects $CD$ at $M$ and $AC$ at $K$; and the extension of $NK$ meets $\\Gamma_2$ at $L$. Prove that $PQ$ is perpendicular to $AL$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $(a_n)$, $(b_n)$, $n = 1, 2, \\ldots$ be two sequences of integers defined by $a_1 = 1$, $b_1 = 0$ and for $n \\geq 1$ $$a_{n+1} = 7a_n + 12b_n + 6 \\quad b_{n+1} = 4a_n + 7b_n + 3$$ Prove that $a_n^2$ is the difference of two consecutive cubes."
+        },
+        {
+          "number": 3,
+          "problem": "Suppose that $a_1, \\ldots, a_{15}$ are prime numbers forming an arithmetic progression with common difference $d > 0$. If $a_1 > 15$ show that $d > 30000$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Find the smallest positive integer $k$ with the property that for any colouring of the squares of a $2n \\times k$ chessboard with $n$ colours, there are 2 columns and 2 rows such that the 4 squares in their intersections have the same colour."
+        },
+        {
+          "number": 5,
+          "problem": "A prime number $p$ and integers $x$, $y$, $z$ with $0 < x < y < z < p$ are given. Show that if the numbers $x^3$, $y^3$, $z^3$ give the same remainder when divided by $p$, then $x^2 + y^2 + z^2$ is divisible by $x + y + z$."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $O$ be the center of the circle inscribed in a rhombus $ABCD$. Points $E$, $F$, $G$, $H$ are chosen on sides $AB$, $BC$, $CD$, $DA$ respectively so that $EF$ and $GH$ are tangent to inscribed circle. Show that $EH$ and $FG$ are parallel."
+        },
+        {
+          "number": 2,
+          "problem": "A palindromic number is a number which is unchanged when order of its digits is reversed. Prove that the arithmetic progression $18, 37, \\ldots$ contains infinitely many palindromic numbers."
+        },
+        {
+          "number": 3,
+          "problem": "For $k \\in \\mathbb{N}$, define $A_n$ for $n = 1, 2, \\ldots$ by $A_{n+1} = \\frac{nA_n+2(n+1)^{2k}}{n+2}$, $A_1 = 1$. Prove $A_n$ is integer for all $n \\geq 1$, and $A_n$ is odd if and only if $n \\equiv 1$ or $2 \\pmod{4}$."
+        },
+        {
+          "number": 4,
+          "problem": "Find largest constant $C$ such that $\\sum_{i=1}^4(x_i + 1/x_i)^3 \\geq C$ for all positive real numbers $x_1, \\ldots, x_4$ such that $x_1^3 + x_3^3 + 3x_1x_3 = x_2 + x_4 = 1$."
+        },
+        {
+          "number": 5,
+          "problem": "Find all integers $x, y, z$ with $2 \\leq x \\leq y \\leq z$ such that $xy \\equiv 1 \\pmod{z}$, $xz \\equiv 1 \\pmod{y}$, $yz \\equiv 1 \\pmod{x}$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all pairs of positive integers $(n, k)$ so that $(n + 1)^k - 1 = n!$."
+        },
+        {
+          "number": 2,
+          "problem": "In the acute triangle $\\triangle ABC$, $M$ is a point in the interior of the segment $AC$ and $N$ is a point on the extension of segment $AC$ such that $MN = AC$. Let $D$, $E$ be the feet of perpendiculars from $M$, $N$ onto lines $BC$, $AB$ respectively. Prove that the orthocenter of $\\triangle ABC$ lies on circumcircle of $\\triangle BED$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$, $m$ be positive integers such that $m > n \\geq 5$ with $m$ depending on $n$. Consider the sequence $a_1, a_2, \\ldots, a_m$ where $a_i = i$ for $i = 1, \\ldots, n$ and $a_{n+j} = a_{3j} + a_{3j-1} + a_{3j-2}$ for $j = 1, \\ldots, m - n$ with $m - 3(m - n) = 1$ or 2, i.e. $a_m = a_{m-k} + a_{m-k-1} + a_{m-k-2}$ where $k = 1$ or 2. Find $S = a_1 + \\ldots + a_m$ if (i) $n = 2007$ (ii) $n = 2008$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $0 < a, b < \\pi/2$. Show that $\\frac{5}{\\cos^2(a)} + \\frac{5}{\\sin^2(a)\\sin^2(b)\\cos^2(b)} \\geq 27\\cos(a) + 36\\sin(a)$."
+        },
+        {
+          "number": 5,
+          "problem": "Consider a $2008 \\times 2008$ chess board. Let $M$ be the smallest number of rectangles that can be drawn on the chess board so that sides of every cell of the board is contained in the sides of one of the rectangles. Find the value of $M$."
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $x_1, x_2, \\ldots, x_n$ be real numbers satisfying $x_1^2 + x_2^2 + \\ldots + x_n^2 = 1$. Prove that for every integer $k \\geq 2$ there are integers $a_1, a_2, \\ldots, a_n$, not all zero, such that $|a_i| \\leq k - 1$ for all $i$, and $|a_1x_1 + a_2x_2 + \\ldots + a_nx_n| \\leq \\frac{(k-1)\\sqrt{n}}{k^n-1}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n > 1$ be an integer and let $a_1, a_2, \\ldots, a_n$ be $n$ different integers. Show that the polynomial $f(x) = (x-a_1)(x-a_2)\\cdots(x-a_n)-1$ is not divisible by any polynomial with integer coefficients and of degree greater than zero but less than $n$ and such that the highest power of $x$ has coefficient 1."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A_1, B_1$ be two points on the base $AB$ of an isosceles triangle $ABC$, with $\\angle C > 60^\\circ$, such that $\\angle A_1CB_1 = \\angle ABC$. A circle externally tangent to the circumcircle of $\\triangle A_1B_1C$ is tangent to the rays $CA$ and $CB$ at points $A_2$ and $B_2$, respectively. Prove that $A_2B_2 = 2AB$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{N} \\to \\mathbb{N}$ such that $f(f(m) + f(n)) = m + n$ for all $m, n \\in \\mathbb{N}$."
+        },
+        {
+          "number": 5,
+          "problem": "Find the largest integer $n$ such that $n$ is divisible by all positive integers less than $\\sqrt[3]{n}$."
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the triangle $ABC$, $\\angle A = \\frac{\\pi}{3}$, $D$, $M$ are points on the line $AC$ and $E$, $N$ are points on the line $AB$ such that $DN$ and $EM$ are the perpendicular bisectors of $AC$ and $AB$ respectively. Let $L$ be the midpoint of $MN$. Prove that $\\angle EDL = \\angle ELD$."
+        },
+        {
+          "number": 2,
+          "problem": "Show that any representation of 1 as the sum of distinct reciprocals of numbers drawn from the arithmetic progression $\\{2, 5, 8, 11, \\ldots\\}$ such as given in the following example must have at least eight terms: $$1 = \\frac{1}{2} + \\frac{1}{5} + \\frac{1}{8} + \\frac{1}{11} + \\frac{1}{20} + \\frac{1}{41} + \\frac{1}{110} + \\frac{1}{1640}$$"
+        },
+        {
+          "number": 3,
+          "problem": "Consider the sequence $p_1, p_2, \\ldots$ of primes such that for each $i \\geq 2$, either $p_i = 2p_{i-1} - 1$ or $p_i = 2p_{i-1} + 1$. Show that any such sequence has a finite number of terms."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Let $S_1, S_2, \\cdots, S_k$ be a collection of $2n$-element subsets of $\\{1, 2, 3, 4, \\ldots, 4n-1, 4n\\}$ so that $S_i \\cap S_j$ contains at most $n$ elements for all $1 \\leq i < j \\leq k$. Show that $k \\leq 6^{(n+1)/2}$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a$, $b$, $n$ be positive integers. Prove that $n!$ divides $b^{n-1}a(a + b)(a + 2b)\\ldots(a + (n - 1)b)$."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "An integer is square-free if it is not divisible by $a^2$ for any integer $a > 1$. Let $S$ be the set of positive square-free integers. Determine, with justification, the value of $$\\sum_{k \\in S} \\left\\lfloor \\sqrt{\\frac{10^{10}}{k}} \\right\\rfloor$$ where $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $G$ be the centroid of triangle $ABC$. Through $G$ draw a line parallel to $BC$ and intersecting the sides $AB$ and $AC$ at $P$ and $Q$ respectively. Let $BQ$ intersect $GC$ at $E$ and $CP$ intersect $GB$ at $F$. If $D$ is midpoint of $BC$, prove that triangles $ABC$ and $DEF$ are similar."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a$, $b$, $c$ be real numbers satisfying $a < b < c$, $a + b + c = 6$, $ab + bc + ac = 9$. Prove that $0 < a < 1 < b < 3 < c < 4$."
+        },
+        {
+          "number": 4,
+          "problem": "Place 2005 points on the circumference of a circle. Two points $P$, $Q$ are said to form a pair of neighbours if the chord $PQ$ subtends an angle of at most 10 degrees at the centre. Find the smallest number of pairs of neighbours."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $m$, $n$ be integers so that $m \\geq n > 1$. Let $F_1, \\ldots, F_k$ be a collection of $n$-element subsets of $\\{1, \\ldots, m\\}$ so that $F_i \\cap F_j$ contains at most 1 element, $1 \\leq i < j \\leq k$. Show that $k \\leq \\frac{m(m-1)}{n(n-1)}$."
+        },
+        {
+          "number": 2,
+          "problem": "Find the number of ordered pairs $(a, b)$ of integers, where $1 \\leq a, b \\leq 2004$, such that $x^2+ax+b = 167y$ has integer solutions in $x$ and $y$. Justify your answer."
+        },
+        {
+          "number": 3,
+          "problem": "Let $AD$ be the common chord of two circles $\\Gamma_1$ and $\\Gamma_2$. A line through $D$ intersects $\\Gamma_1$ at $B$ and $\\Gamma_2$ at $C$. Let $E$ be a point on the segment $AD$, different from $A$ and $D$. The line $CE$ intersects $\\Gamma_1$ at $P$ and $Q$. The line $BE$ intersects $\\Gamma_2$ at $M$ and $N$. (i) Prove that $P$, $Q$, $M$, $N$ lie on the circumference of a circle $\\Gamma_3$. (ii) If the centre of $\\Gamma_3$ is $O$, prove that $OD$ is perpendicular to $BC$."
+        },
+        {
+          "number": 4,
+          "problem": "If $0 < x_1, x_2, \\ldots, x_n \\leq 1$, where $n \\geq 1$, show that $$\\frac{x_1}{1 + (n - 1)x_1} + \\frac{x_2}{1 + (n - 1)x_2} + \\ldots + \\frac{x_n}{1 + (n - 1)x_n} \\leq 1$$"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A sequence $(a_1, a_2, \\ldots, a_{675})$ is given so that each term is an alphabet in the English language (no distinction is made between lower and upper case letters). It is known that in the sequence $a$ is never followed by $b$ and $c$ is never followed by $d$. Show that there are integers $m$ and $n$ with $1 \\leq m < n \\leq 674$ such that $a_m = a_n$ and $a_{m+1} = a_{n+1}$."
+        },
+        {
+          "number": 2,
+          "problem": "Find the maximum value of $\\frac{xyz}{(1+5x)(4x+3y)(5y+6z)(z+18)}$ as $x$, $y$ and $z$ range over the set of all positive real numbers. Justify your answer."
+        },
+        {
+          "number": 3,
+          "problem": "For any given prime $p$, determine whether the equation $x^2 + y^2 + pz = 2003$ always has integer solutions in $x$, $y$, $z$. Justify your answer."
+        },
+        {
+          "number": 4,
+          "problem": "The pentagon $ABCDE$ which is inscribed in a circle with $AB < DE$ is the base of a pyramid with apex $S$. If the longest side from $S$ is $SA$, prove that $BS > CS$."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the plane, $\\Gamma$ is a circle with centre $O$ and radius $r$, $P$ and $Q$ are distinct points on $\\Gamma$, $A$ is a point outside $\\Gamma$, $M$ and $N$ are the midpoints of $PQ$ and $AO$ respectively. Suppose $OA = 2a$ and $\\angle PAQ$ is a right angle. Find the length of $MN$ in terms of $r$ and $a$. Express your answer in its simplest form, and justify your answer."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1, a_2, \\ldots, a_n$ and $b_1, b_2, \\ldots, b_n$ be real numbers between 1001 and 2002 inclusive. Suppose $\\sum_{i=1}^n a_i^2 = \\sum_{i=1}^n b_i^2$. Prove that $$\\sum_{i=1}^n \\frac{a_i^3}{b_i} \\leq \\frac{17}{10} \\sum_{i=1}^n a_i^2$$ Determine when equality holds."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. Determine the smallest value of the sum $a_1b_1+a_2b_2+\\ldots+a_{2n+2}b_{2n+2}$ where $(a_1, a_2, \\ldots, a_{2n+2})$ and $(b_1, b_2, \\ldots, b_{2n+2})$ are rearrangements of the binomial coefficients $\\binom{2n+1}{0}, \\binom{2n+1}{1}, \\ldots, \\binom{2n+1}{2n+1}$. Justify your answer."
+        },
+        {
+          "number": 4,
+          "problem": "Find all real-valued functions $f : \\mathbb{Q} \\to \\mathbb{R}$ defined on the set of all rational numbers $\\mathbb{Q}$ satisfying the conditions $f(x + y) = f(x) + f(y) + 2xy$ for all $x, y$ in $\\mathbb{Q}$ and $f(1) = 2002$. Justify your answers."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a parallelogram $ABCD$, the perpendiculars from $A$ to $BC$ and $CD$ meet the line segments $BC$ and $CD$ at the points $E$ and $F$ respectively. Suppose $AC = 37$ cm and $EF = 35$ cm. Let $H$ be the orthocenter of $\\triangle AEF$. Find the length of $AH$ in cm. Show the steps in your calculations."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a positive integer, and let $a_1, a_2, \\ldots, a_n$ be $n$ positive real numbers such that $a_1 + a_2 + \\ldots + a_n = 1$. Is it true that $\\frac{a_1^4}{a_1^2+a_2^2} + \\frac{a_2^4}{a_2^2+a_3^2} + \\frac{a_3^4}{a_3^2+a_4^2} + \\ldots + \\frac{a_{n-1}^4}{a_{n-1}^2+a_n^2} + \\frac{a_n^4}{a_n^2+a_1^2} \\geq \\frac{1}{2n}$? Justify your answer."
+        },
+        {
+          "number": 3,
+          "problem": "Suppose that there are 2001 golf balls which are numbered from 1 to 2001 respectively, and some of these golf balls are placed inside a box. It is known that the difference between the two numbers of any two golf balls inside the box is neither 5 nor 8. How many such golf balls can the box contain at most? Justify your answer."
+        },
+        {
+          "number": 4,
+          "problem": "A positive integer $n$ is said to possess Property $(A)$ if there exists a positive integer $N$ such that $N^2$ can be written as the sum of the squares of $n$ consecutive positive integers. Is it true that there are infinitely many positive integers which possess Property $(A)$? Justify your answer. (As an example, the number $n = 2$ possesses Property $(A)$ since $5^2 = 3^2 + 4^2$)."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Triangle $ABC$ is inscribed in a circle with center $O$. Let $D$ and $E$ be points on the respective sides $AB$ and $AC$ so that $DE$ is perpendicular to $AO$. Show that the four points $B$, $D$, $E$ and $C$ lie on a circle."
+        },
+        {
+          "number": 2,
+          "problem": "Show that 240 divides all numbers of the form $p^4-q^4$, where $p$ and $q$ are prime numbers strictly greater than 5. Show also that 240 is the greatest common divisor of all numbers of the form $p^4 - q^4$, with $p$ and $q$ prime numbers strictly greater than 5."
+        },
+        {
+          "number": 3,
+          "problem": "Is there a positive integer with at most four digits whose value is increased by exactly 60% when the first digit is moved to the end of the number? For example, when the first digit of 1234 is moved to the end of the number, the result is the integer 2341."
+        },
+        {
+          "number": 4,
+          "problem": "In a party of 1000 people, the number of people who have shaken hands with at most 962 people is less than or equal to 37. Show that one can find 27 people in the party who have all shaken hands with each other."
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. A square $ABCD$ is divided into $n^2$ identical small squares by drawing $(n-1)$ equally spaced lines parallel to the side $AB$ and another $(n-1)$ equally spaced lines parallel to $BC$, thus giving rise to $(n + 1)^2$ intersection points. The points $A$, $C$ are coloured red and the points $B$, $D$ are coloured blue. The rest of the intersection points are coloured either red or blue. Prove that the number of small squares having exactly 3 vertices of the same colour is even."
+        },
+        {
+          "number": 2,
+          "problem": "Call a natural number $n$ a magic number if the number obtained by putting $n$ on the right of any natural number is divisible by $n$. Find the number of magic numbers less than 500. Justify your answer."
+        },
+        {
+          "number": 3,
+          "problem": "For each positive integer $n$, let $f(n)$ be a positive integer. Show that if $f(n + 1) > f(f(n))$ for every positive integer $n$, then $f(x) = x$ for all positive integers $x$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABCD$ be a quadrilateral with each interior angle less than $180^\\circ$. Show that if $A$, $B$, $C$, $D$ do not lie on a circle, then $AB \\cdot CD + AD \\cdot BC > AC \\cdot BD$."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the figure, $PA$ and $QB$ are tangents to the circle at $A$ and $B$ respectively. The line $AB$ is extended to meet $PQ$ at $S$. Suppose that $PA = QB$. Prove that $QS = SP$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $\\mathbb{N}$ be the set of natural numbers, and let $f : \\mathbb{N} \\to \\mathbb{N}$ be a function satisfying $f(x)+f(x+2) < 2f(x + 1)$ for any $x \\in \\mathbb{N}$. Prove that there exists a straight line in the $xy$-plane which contains infinitely many points with coordinates $(n, f(n))$."
+        },
+        {
+          "number": 3,
+          "problem": "Do there exist integers $x$ and $y$ such that $1919 = x^3 + y^4$? Justify your answer."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be a fixed positive integer. Find all the positive integers $m$ such that $$\\frac{m^2 + 4m}{a_1} + \\frac{m^2 + 8m}{a_1 + a_2} + \\frac{m^2 + 12m}{a_1 + a_2 + a_3} + \\ldots + \\frac{m^2 + 4nm}{a_1 + a_2 + \\ldots + a_n} < 2500\\left(\\frac{1}{a_1} + \\frac{1}{a_2} + \\ldots + \\frac{1}{a_n}\\right)$$ for any positive numbers $a_1, a_2, \\ldots, a_n$. Justify your answer."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$\\triangle ABC$ is an equilateral triangle. $L$, $M$ and $N$ are points on $BC$, $CA$ and $AB$ respectively. Prove that $MA \\cdot AN + NB \\cdot BL + LC \\cdot CM < BC^2$."
+        },
+        {
+          "number": 2,
+          "problem": "Observe that the number 4 is such that $\\binom{4}{k} = \\frac{4!}{k!(4-k)!}$ is divisible by $k + 1$ for $k = 0, 1, 2, 3$. Find all the natural numbers $n$ between 50 and 90 such that $\\binom{n}{k}$ is divisible by $k+1$ for $k = 0, 1, 2, \\ldots, n-1$. Justify your answers."
+        },
+        {
+          "number": 3,
+          "problem": "Find all the natural numbers $N$ which satisfy the following properties: (i) $N$ has exactly 6 distinct factors $1, d_1, d_2, d_3, d_4, N$ and (ii) $1 + N = 5(d_1 + d_2 + d_3 + d_4)$. Justify your answers."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n \\geq 2$ be a positive integer. Suppose that $a_1, a_2, \\ldots, a_n$ and $b_1, b_2, \\ldots, b_n$ are $2n$ numbers such that $\\sum_{i=1}^n a_i = \\sum_{i=1}^n b_i = 1$ and $a_i \\geq 0$, $0 \\leq b_i \\leq \\frac{n-1}{n}$, $i = 1, 2, \\ldots, n$. Show that $$b_1a_2a_3\\ldots a_n + a_1b_2a_3\\ldots a_n + \\ldots + a_1a_2\\ldots a_{k-1}b_ka_{k+1}\\ldots a_n + \\ldots + a_1a_2\\ldots a_{n-1}b_n \\leq \\frac{1}{n(n - 1)^{n-2}}$$"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Three numbers are selected at random from the interval $[0, 1]$. What is the probability that they form the lengths of the sides of a triangle?"
+        },
+        {
+          "number": 2,
+          "problem": "In the following figure, $ABCD$ is a square of unit length and $P$, $Q$ are points on $AD$ and $AB$ respectively. Find $\\angle PCQ$ if $|AP| + |AQ| + |PQ| = 2$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. Prove that there is no positive integer solution to the equation $(x + 2)^n - x^n = 1 + 7^n$."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all the solutions of the equation $x^3+y^3+z^3 = wx^2y^2z^2$ in natural numbers $x$, $y$, $z$, $w$. Justify your answer."
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Suppose that the rational numbers $a$, $b$ and $c$ are the roots of the equation $x^3+ax^2+bx+c = 0$. Find all such rational numbers $a$, $b$ and $c$. Justify your answer."
+        },
+        {
+          "number": 2,
+          "problem": "Let $A_1A_2A_3$ be a triangle and $M$ an interior point. The straight lines $MA_1$, $MA_2$, $MA_3$ intersect the opposite sides at the points $B_1$, $B_2$, $B_3$ respectively. Show that if the areas of triangles $A_2B_1M$, $A_3B_2M$ and $A_1B_3M$ are equal, then $M$ coincides with the centroid of triangle $A_1A_2A_3$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $P$ be a point inside $\\triangle ABC$. Let $D$, $E$, $F$ be the feet of the perpendiculars from $P$ to the lines $BC$, $CA$ and $AB$, respectively. Show that (i) $EF = AP \\sin A$, (ii) $PA + PB + PC \\geq 2(PE + PD + PF)$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a$, $b$ and $c$ be positive integers such that $1 < a < b < c$. Suppose that $(ab − 1)(bc − 1)(ca − 1)$ is divisible by $abc$. Find the values of $a$, $b$ and $c$. Justify your answer."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a$, $b$, $c$, $d$ be four positive real numbers. Prove that $$a^{10}+b^{10}+c^{10}+d^{10} \\geq (0.1a+0.2b+0.3c+0.4d)^{10}+(0.4a+0.3b+0.2c+0.1d)^{10}+(0.2a+0.4b+0.1c+0.3d)^{10}+(0.3a+0.1b+0.4c+0.2d)^{10}$$"
+        }
+      ]
+    }
+  ]
+}
