@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 6 Countries, 1987–2025</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore and the USA. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 7 Countries, 1987–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore, the UK and the USA. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -308,8 +308,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>6</b><span>countries</span></div>
-            <div class="stat"><b>1987–2025</b><span>years</span></div>
+            <div class="stat"><b>7</b><span>countries</span></div>
+            <div class="stat"><b>1987–2026</b><span>years</span></div>
         </div>
     </div>
 
@@ -419,7 +419,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    Δεδομένα και σταθερές
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
-const FIRST = 1987, LAST = 2025;
+const FIRST = 1987, LAST = 2026;
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
 
@@ -429,6 +429,8 @@ const COUNTRIES = [
     { key: 'cn', name: 'China',      flag: '🇨🇳', file: 'China-olympiad-problems.json',   kind: 'years' },
     { key: 'az', name: 'Azerbaijan', flag: '🇦🇿', file: 'Azerbaijan-tst-problems.json',   kind: 'years' },
     { key: 'sg', name: 'Singapore',  flag: '🇸🇬', file: 'Singapore-mo-open-problems.json', kind: 'years' },
+    { key: 'uk1', name: 'UK BMO1',   flag: '🇬🇧', file: 'Uk-bmo1-problems.json',          kind: 'years' },
+    { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
     { key: 'us', name: 'USA',        flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
