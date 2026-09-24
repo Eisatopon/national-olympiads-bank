@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 7 Countries, 1987–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore, the UK and the USA. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 8 Countries, 1969–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore, the UK, Canada and the USA. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -52,6 +52,9 @@
     --az: #2e7d32; --az-ink: #1f5723; --az-tint: #e3f2e4;
     --sg: #b8590f; --sg-ink: #7c3c09; --sg-tint: #fbeadb;
     --us: #5b3fa0; --us-ink: #3f2b70; --us-tint: #ece6f7;
+    --uk1: #ad1457; --uk1-ink: #780e3c; --uk1-tint: #fbe4ee;
+    --uk2: #6d4c41; --uk2-ink: #4a332c; --uk2-tint: #f1e8e4;
+    --ca: #d84315; --ca-ink: #9a2f0e; --ca-tint: #fde9e2;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -59,6 +62,9 @@
 .f-az { --f: var(--az); --f-ink: var(--az-ink); --f-tint: var(--az-tint); }
 .f-sg { --f: var(--sg); --f-ink: var(--sg-ink); --f-tint: var(--sg-tint); }
 .f-us { --f: var(--us); --f-ink: var(--us-ink); --f-tint: var(--us-tint); }
+.f-uk1 { --f: var(--uk1); --f-ink: var(--uk1-ink); --f-tint: var(--uk1-tint); }
+.f-uk2 { --f: var(--uk2); --f-ink: var(--uk2-ink); --f-tint: var(--uk2-tint); }
+.f-ca { --f: var(--ca); --f-ink: var(--ca-ink); --f-tint: var(--ca-tint); }
 
 /* ==========================================================
    Base
@@ -308,8 +314,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>7</b><span>countries</span></div>
-            <div class="stat"><b>1987–2026</b><span>years</span></div>
+            <div class="stat"><b>8</b><span>countries</span></div>
+            <div class="stat"><b>1969–2026</b><span>years</span></div>
         </div>
     </div>
 
@@ -419,7 +425,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    Δεδομένα και σταθερές
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
-const FIRST = 1987, LAST = 2026;
+const FIRST = 1969, LAST = 2026;
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
 
@@ -431,6 +437,7 @@ const COUNTRIES = [
     { key: 'sg', name: 'Singapore',  flag: '🇸🇬', file: 'Singapore-mo-open-problems.json', kind: 'years' },
     { key: 'uk1', name: 'UK BMO1',   flag: '🇬🇧', file: 'Uk-bmo1-problems.json',          kind: 'years' },
     { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
+    { key: 'ca', name: 'Canada',     flag: '🇨🇦', file: 'Canada-cmo-problems.json',       kind: 'years' },
     { key: 'us', name: 'USA',        flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
