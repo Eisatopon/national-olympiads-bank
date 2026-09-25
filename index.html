@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 9 Countries, 1969–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore, the UK, Canada, Ireland and the USA. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 10 Countries, 1969–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, China, Azerbaijan, Singapore, the UK, Canada, Ireland, India and the USA. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -56,6 +56,7 @@
     --uk2: #6d4c41; --uk2-ink: #4a332c; --uk2-tint: #f1e8e4;
     --ca: #d84315; --ca-ink: #9a2f0e; --ca-tint: #fde9e2;
     --ie: #2e7d32; --ie-ink: #1b5e20; --ie-tint: #e3f1e4;
+    --in: #00838f; --in-ink: #005662; --in-tint: #e0f4f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -67,6 +68,7 @@
 .f-uk2 { --f: var(--uk2); --f-ink: var(--uk2-ink); --f-tint: var(--uk2-tint); }
 .f-ca { --f: var(--ca); --f-ink: var(--ca-ink); --f-tint: var(--ca-tint); }
 .f-ie { --f: var(--ie); --f-ink: var(--ie-ink); --f-tint: var(--ie-tint); }
+.f-in { --f: var(--in); --f-ink: var(--in-ink); --f-tint: var(--in-tint); }
 
 /* ==========================================================
    Base
@@ -316,7 +318,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>9</b><span>countries</span></div>
+            <div class="stat"><b>10</b><span>countries</span></div>
             <div class="stat"><b>1969–2026</b><span>years</span></div>
         </div>
     </div>
@@ -441,6 +443,7 @@ const COUNTRIES = [
     { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
     { key: 'ca', name: 'Canada',     flag: '🇨🇦', file: 'Canada-cmo-problems.json',       kind: 'years' },
     { key: 'ie', name: 'Ireland',    flag: '🇮🇪', file: 'Ireland-irmo-problems.json',     kind: 'years' },
+    { key: 'in', name: 'India',      flag: '🇮🇳', file: 'India-inmo-problems.json',       kind: 'years' },
     { key: 'us', name: 'USA',        flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
