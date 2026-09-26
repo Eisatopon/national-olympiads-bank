@@ -1,0 +1,588 @@
+{
+ "competition": "Korean Mathematical Olympiad, Final Round (FKMO)",
+ "years": [
+  {
+   "year": 2009,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Let $a$, $b$, $c$ be the side lengths of a triangle, and let $$A = \\frac{a^2+bc}{b+c}+\\frac{b^2+ca}{c+a}+\\frac{c^2+ab}{a+b},$$ $$B = \\frac{1}{\\sqrt{(a+b-c)(b+c-a)}}+\\frac{1}{\\sqrt{(b+c-a)(c+a-b)}}+\\frac{1}{\\sqrt{(c+a-b)(a+b-c)}}.$$ Prove that $AB \\ge 9$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Let $O$ be the circumcircle of a triangle $ABC$ whose angle $B$ is obtuse. The tangent to $O$ at $C$ meets line $AB$ at $B_1$, and $O_1$ is the circumcenter of triangle $AB_1C$. For a point $B_2$ in the interior of segment $BB_1$, let $C_1$ be the point of tangency, closer to $C$, of the two tangents from $B_2$ to $O$, and let $O_2$ be the circumcenter of triangle $AB_2C_1$. Prove that if lines $OO_2$ and $AO_1$ are perpendicular, then the five points $O$, $O_2$, $O_1$, $C_1$, $C$ are concyclic."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "White and black stones are placed in a row on a table (at least one of each color). An operation consists of choosing a black stone and flipping the color (white to black, black to white) of its two neighbors (only one neighbor if the chosen stone is at an end of the row). Now there are $2008$ white stones and one black stone in a row. Find all initial positions of the black stone for which, after finitely many operations, all $2009$ stones can be made black."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "In an acute triangle $ABC$, $\\angle B < \\angle C$. Let $O$ be the center of the circle tangent to line $AC$ at $C$ and passing through $B$, and let this circle meet segment $AB$ at $D$. Line $CO$ meets circle $O$ at $P$, the line through $P$ parallel to $AO$ meets line $AC$ at $E$, and line $EB$ meets circle $O$ at $L$ (assume $L \\ne B$). The perpendicular bisector of $BD$ meets line $AC$ at $F$, and lines $LF$ and $CD$ meet at $K$. Prove that lines $EK$ and $CL$ are parallel."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "A go board with $m+1$ horizontal lines and $m$ vertical lines, hence $m(m+1)$ intersection points, and a single stone are given. Two players take turns moving the stone one step from its current position to an adjacent intersection point (up, down, left or right). Visiting the same point twice is allowed, but a segment that has been used once cannot be used again. A player who cannot move the stone on his turn loses. Prove that if the stone is initially on an intersection point of the bottom horizontal line, the first player has a winning strategy."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Find all pairs $(m, n)$ of positive integers satisfying $3^m - 7^n = 2$."
+    }
+   ]
+  },
+  {
+   "year": 2010,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "The incircle of an arbitrary triangle $ABC$ touches $BC$, $CA$, $AB$ at $P$, $Q$, $R$, respectively. Let $T$ be the area and $L$ the perimeter of triangle $ABC$. Prove that $$\\left(\\frac{AB}{PQ}\\right)^3+\\left(\\frac{BC}{QR}\\right)^3+\\left(\\frac{CA}{RP}\\right)^3 \\ge \\frac{2}{\\sqrt{3}}\\cdot\\frac{L^2}{T}.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Let $I$, $O$, $H$ be the incenter, circumcenter and orthocenter of an acute triangle $ABC$, and let the incircle touch $BC$ at $D$. Suppose $\\angle B < \\angle C$ and segments $AO$ and $HD$ are parallel. Let $E$ be the intersection of lines $OD$ and $AH$, and $F$ the midpoint of segment $CI$. Prove that $E$, $F$, $I$, $O$ are concyclic."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "If there is a link from web page $i$ to web page $j$, one can move directly from page $i$ to page $j$ using it. There are $n \\ge 2$ web pages numbered $1$ to $n$, and for every $i \\in \\{1, 2, \\dots, n-1\\}$ there is a link from page $i$ to page $i+1$. Prove that by adding suitable links, at most $3(n-1)\\log_2(\\log_2 n)$ of them, one can ensure that for any two integers $1 \\le i < j \\le n$ it is possible to reach page $j$ from page $i$ using at most $3$ links, always moving toward larger numbers."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "The vertices $A$, $B$, $C$, $D$ of a trapezoid $ABCD$ with $AB \\parallel CD$ are arranged clockwise. Let $\\Gamma_1$ be the circle with center $A$ through $B$, and $\\Gamma_2$ the circle with center $C$ through $D$. Line $BD$ meets $\\Gamma_1$ at $P$ ($P \\ne B, D$). Let $\\Gamma$ be the circle with diameter $PD$; $\\Gamma$ and $\\Gamma_1$ meet at $X$ ($X \\ne P$), and $\\Gamma$ and $\\Gamma_2$ meet at $Y$ ($Y \\ne D$). If the circumcircle of triangle $XBY$ meets $\\Gamma_2$ at $Q$, prove that $B$, $D$, $Q$ are collinear."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "$2n$ people sit equally spaced around a round table. They hold $m$ cookies in total and pass cookies according to the following rules:\n\n- a cookie may only be passed to a neighbor;\n\n- a person can pass one cookie to one of his neighbors only by eating one cookie himself.\n\nLet $A$ be a particular person at the table. Find the smallest $m$ such that, regardless of the initial distribution of the cookies, there is a strategy of passing cookies so that $A$ ends up with at least one cookie."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Let $p$ be a prime. Call $p$ good if a sequence of positive integers $(n_1, n_2, \\dots, n_k)$ satisfying the conditions below does not exist for $k = 1$ but exists for some integer $k \\ge 2$:\n\n(1) $n_i \\ge \\dfrac{p+1}{2}$ for all $i = 1, 2, \\dots, k$;\n\n(2) for all $i = 1, 2, \\dots, k$, $p^{n_i} - 1$ is a multiple of $n_{i+1}$, and $\\dfrac{p^{n_i}-1}{n_{i+1}}$ is relatively prime to $n_{i+1}$, where $n_{k+1} = n_1$.\n\nProve that $2$ is not good, but every other prime is good."
+    }
+   ]
+  },
+  {
+   "year": 2011,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Prove that there are no positive integers $x$, $y$, $z$ satisfying $$x^2y^4 - x^4y^2 + 4x^2y^2z^2 + x^2z^4 - y^2z^4 = 0.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Let $P \\ne B, C$ be a point on side $BC$ of an acute triangle $ABC$. Let $D$ be the foot of the perpendicular from the orthocenter $H$ of $ABC$ to segment $AP$, and let $\\Gamma_1$, $\\Gamma_2$ be the circumcircles of triangles $ABD$ and $ACD$. The line through $D$ parallel to $BC$ meets $\\Gamma_1$ and $\\Gamma_2$ again at $X$ and $Y$, and meets $AB$ and $AC$ at $E$ and $F$, respectively. Let $Z$ be the intersection of lines $XB$ and $YC$. Prove that $BP = CP$ if and only if $ZE = ZF$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "There are boys $a_1, a_2, \\dots, a_n$ and girls $b_1, b_2, \\dots, b_n$. No two boys shook hands, no two girls shook hands, and $a_i$ and $b_i$ did not shake hands for any $i \\in \\{1, 2, \\dots, n\\}$. We want to divide all the students into small groups such that\n\n(1) each group has equally many boys and girls;\n\n(2) no two students in the same group shook hands.\n\nIf the number of pairs $(a_i, b_j)$ who shook hands is $m$, prove that this can be done with at most $\\max\\left\\{2, \\dfrac{2m}{n} + 1\\right\\}$ groups."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Nonnegative real numbers $a$, $b$, $c$ satisfy $a + b + c = 1$. Find the maximum value of $$\\frac{1}{a^2-4a+9}+\\frac{1}{b^2-4b+9}+\\frac{1}{c^2-4c+9}.$$"
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "In triangle $ABC$ with $AC < AB < BC$, let $D$ be the point on side $AB$ with $AC = AD$. The bisector of angle $A$ meets the circumcircle of $ABC$ again at $E \\ne A$, and line $CD$ meets the circumcircle again at $F \\ne C$. Let $K$ be the intersection of $BC$ and $DE$. Prove that $DK \\cdot EF = AC \\cdot DF$ if and only if $CK = AC$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Consider a rectangular board with $m$ columns and $n$ rows, $mn$ cells in total, and write an integer in each cell. A rectangle $R$ consisting of one or more cells (with no missing cells inside) is called a shelf if there exists an integer $h$ such that\n\n(1) every number written in a cell of $R$ is greater than $h$;\n\n(2) every number written in a cell outside $R$ that shares a vertex or a side with a cell of $R$ is at most $h$.\n\nIf the integers are written so that the number of shelves is as large as possible, how many shelves are there?"
+    }
+   ]
+  },
+  {
+   "year": 2012,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Prove that for all positive real numbers $x$, $y$, $z$, $$\\frac{2x^2+xy}{\\left(y+\\sqrt{zx}+z\\right)^2}+\\frac{2y^2+yz}{\\left(z+\\sqrt{xy}+x\\right)^2}+\\frac{2z^2+zx}{\\left(x+\\sqrt{yz}+y\\right)^2} \\ge 1.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "For a triangle $ABC$ in which angle $B$ is not a right angle and $AB \\ne AC$, define the point $P_{ABC}$ as follows. Let $D$, $E$, $F$ be the feet of the perpendiculars from the incenter $I$ to $BC$, $CA$, $AB$. Let $S$ be the intersection of lines $AB$ and $DI$, let $T$ be the intersection of line $DE$ with the line through $F$ perpendicular to $DF$, and let $R$ be the intersection of lines $ST$ and $EF$. The circle with diameter $IR$ meets the incircle of $ABC$ at two points; $P_{ABC}$ is the one lying on the opposite side of line $IR$ from $A$.\n\nNow let $XYZ$ be an isosceles triangle with $XZ = YZ > XY$, and let $W$ be a point on side $YZ$ with $WY < XY$. If $K = P_{YXW}$ and $L = P_{ZXW}$, prove that $2KL \\le XY$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "Sets $A_1, A_2, \\dots, A_n$ are given. For a subset $X$ of $\\{1, 2, \\dots, n\\}$, let $$N(X) = \\{i \\in \\{1, 2, \\dots, n\\} \\setminus X : A_i \\cap A_j \\ne \\emptyset \\text{ for all } j \\in X\\}.$$ Prove that if $m$ is an integer with $3 \\le m \\le n - 2$, then there always exists a subset $X$ of $\\{1, 2, \\dots, n\\}$ with $|X| = m$ and $|N(X)| \\ne 1$."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Let $H$ be the foot of the perpendicular from $A$ to side $BC$ of an acute triangle $ABC$. Points $D$ and $E$ lie in the interiors of sides $AB$ and $AC$, and $F$, $G$ are the feet of the perpendiculars from $D$ and $E$ to $BC$. Suppose the intersection of segments $DG$ and $EF$ lies on segment $AH$. If $P$ is the foot of the perpendicular from $E$ to line $DH$, prove that $\\angle APE = \\angle CPE$."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Let $n$ be a given positive integer. Prove that the equation $nx^2 + y^3 = z^4$ has infinitely many integer solutions $(x, y, z)$ in which any two of $x$, $y$, $z$ are relatively prime."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Let $M$ be the set of positive integers that have no prime divisor greater than $3$. Prove that for any subsets $A_1, A_2, A_3, \\dots$ of $M$, there exist distinct positive integers $i$ and $j$ such that for every element $x$ of $A_i$, the set $A_j$ contains some divisor of $x$."
+    }
+   ]
+  },
+  {
+   "year": 2013,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Triangle $ABC$ satisfies $\\angle B > \\angle C$, and the point $D$ on side $AC$ satisfies $\\angle ABD = \\angle C$. Let $I$ be the incenter of $ABC$. The circumcircle of triangle $CDI$ meets line $AI$ again at $E \\ne I$, and the line through $E$ parallel to $AB$ meets line $BD$ at $P$. Let $J$ be the incenter of triangle $ABD$, and $A'$ the reflection of $A$ in $I$. If lines $JP$ and $A'C$ meet at $Q$, prove that $QJ = QA'$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying both conditions:\n\n(i) $f(x) \\ge 0$ for all real $x$;\n\n(ii) for all real numbers $a$, $b$, $c$, $d$ with $ab + bc + cd = 0$, $$f(a-b) + f(c-d) = f(a) + f(b+c) + f(d).$$"
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "For a positive integer $n \\ge 2$, let $T$ be the set of all ordered pairs $(i, j)$ of integers with $1 \\le i < j \\le n$ such that $i$ divides $j$. For nonnegative real numbers $x_1, x_2, \\dots, x_n$ with $x_1 + x_2 + \\cdots + x_n = 1$, find, as a function of $n$, the maximum value of $$\\sum_{(i,j) \\in T} x_ix_j.$$"
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Let $B_1$ and $C_1$ be the excenters of triangle $ABC$ opposite $B$ and $C$, respectively. Line $B_1C_1$ meets the circumcircle of $ABC$ at $D \\ne A$. The perpendicular from $B_1$ to $CA$ and the perpendicular from $C_1$ to $AB$ meet at $E$. The tangent at $D$ to the circumcircle $w$ of triangle $ADE$ meets line $AE$ at $F$. Let $G$ be the foot of the perpendicular from $D$ to $AE$, and let this perpendicular meet $w$ again at $H \\ne D$. The circumcircle of triangle $HGF$ meets $w$ again at $I \\ne H$, and $J$ is the foot of the perpendicular from $D$ to line $AH$. Prove that $AI$ passes through the midpoint of segment $DJ$."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Let $a$ and $b$ be given relatively prime positive integers, and let the integer sequences $(a_n)$ and $(b_n)$ be defined by $$\\left(a + b\\sqrt{2}\\right)^{2n} = a_n + b_n\\sqrt{2}.$$ Find all primes $p$ for which there exists a positive integer $n \\le p$ such that $b_n$ is a multiple of $p$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "For any bijection $f : \\{1, 2, \\dots, n\\} \\to \\{1, 2, \\dots, n\\}$ ($n$ a positive integer), define the sets $$A = \\{i \\mid i > f(i)\\},$$ $$B = \\{(i, j) \\mid i < j \\le f(j) < f(i) \\text{ or } f(j) < f(i) < i < j\\},$$ $$C = \\{(i, j) \\mid i < j \\le f(i) < f(j) \\text{ or } f(i) < f(j) < i < j\\},$$ $$D = \\{(i, j) \\mid i < j \\text{ and } f(i) > f(j)\\}.$$ Prove that $$|A| + 2|B| + |C| = |D|,$$ where $|X|$ is the number of elements of $X$."
+    }
+   ]
+  },
+  {
+   "year": 2014,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Positive real numbers $x$, $y$, $z$ satisfy $x + y + z = 1$. Prove that $$\\frac{(1+xy+yz+zx)(1+3x^3+3y^3+3z^3)}{9(x+y)(y+z)(z+x)} \\ge \\left(\\frac{x\\sqrt{1+x}}{\\sqrt[4]{3+9x^2}}+\\frac{y\\sqrt{1+y}}{\\sqrt[4]{3+9y^2}}+\\frac{z\\sqrt{1+z}}{\\sqrt[4]{3+9z^2}}\\right)^2.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Triangle $ABC$ satisfies $AC = BC > AB$. Let $E$ and $F$ be the midpoints of sides $AC$ and $AB$, let the perpendicular bisector $\\ell$ of $AC$ meet $AB$ at $K$, let the line through $B$ parallel to $KC$ meet $AC$ at $L$, and let line $FL$ meet $\\ell$ at $W$. For a point $P$ on segment $BF$, let $H$ be the orthocenter of triangle $ACP$; segments $BH$ and $CP$ meet at $J$, and line $FJ$ meets $\\ell$ at $M$. Prove that $AW = PW$ if and only if $B$ lies on the circumcircle of triangle $EFM$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "$n$ students with distinct names stand in a circle. Their name tags are collected and redistributed at random, one to each student, and then the following operation is repeated: each student checks the tag he holds; a student holding his own tag leaves, and each remaining student passes the tag he holds to the next student clockwise. Find the number of ways to distribute the tags initially so that some student has still not left after $4$ operations."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "In an isosceles triangle $ABC$ with $AC = BC$, let $D$ be a point on the extension of segment $BA$ beyond $A$, and let the circumcircle $O_1$ of triangle $DAC$ meet line $BC$ at $E$. The tangent to $O_1$ at $D$ meets line $BC$ at $F$, and the circumcircle $O_2$ of triangle $DBF$ meets $O_1$ at $G$. Let $O$ be the circumcenter of triangle $BEG$. Prove that line $FG$ is tangent to the circumcircle of triangle $BEG$ if and only if lines $DG$ and $FO$ are perpendicular."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Let $p > 5$ be a prime. Prove that if there is an integer $k$ such that $k^2 + 5$ is a multiple of $p$, then there are positive integers $m$ and $n$ with $p^2 = m^2 + 5n^2$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "An island has $n$ castles, each belonging to one of two countries $A$ and $B$, and each castle has one general of its country. Two castles are called neighbors if there is a road between them that passes through no other castle. Prove that the following two statements are equivalent:\n\n1. Whenever some of the generals of $B$ simultaneously attack, each choosing one neighboring castle of $A$ at will, some generals of $A$ can simultaneously be moved to neighboring castles to defend, so that for every castle of $A$, the number of generals of $A$ defending it is at least the number of generals of $B$ attacking it.\n\n2. For every set $X$ of castles of $A$, the number of castles of $A$ that belong to $X$ or neighbor at least one castle of $X$ is at least the number of castles of $B$ that neighbor at least one castle of $X$."
+    }
+   ]
+  },
+  {
+   "year": 2015,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all real numbers $x$, $y$, $$f\\big(x^{2015} + f(y)^{2015}\\big) = f(x)^{2015} + y^{2015}.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "The incircle of triangle $ABC$ with incenter $I$ touches $BC$, $CA$, $AB$ at $D$, $E$, $F$, respectively. Let $O_1$ and $O_2$ be the circumcenters of triangles $IAB$ and $IAC$, and let $P$, $Q$ be the two intersections of the circumcircle of $ABC$ with line $EF$. Prove that the circumcenter of triangle $DPQ$ lies on line $O_1O_2$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "A city has at least $3$ subway stations, and trains run in both directions. Suppose there is a route in this city that passes through at least $L + 1$ stations without visiting any station twice. Prove that at least one of the following holds:\n\n(i) there exist three distinct stations $A$, $B$, $C$ such that there is no route from $A$ to $B$ avoiding $C$;\n\n(ii) there is a way to start at some station and return to it without visiting any station twice that passes through at least $\\lceil\\sqrt{2L}\\,\\rceil$ stations, where $\\lceil x \\rceil$ is the smallest integer not less than $x$."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "A circle $\\omega$ passing through the orthocenter $H$ and the vertices $A$, $B$ of an acute triangle $ABC$ meets side $BC$ at $D \\ne B$. Let $P$ be the intersection of line $DH$ and side $AC$, and let $Q$ be the circumcenter of triangle $ADP$. Prove that the center of $\\omega$ lies on the circumcircle of triangle $BDQ$."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "For a given positive integer $k$, sequences $\\{a_n\\}$ and $\\{b_n\\}$ are defined by $$a_1 = k,\\quad a_2 = k,\\quad a_{n+2} = a_na_{n+1} \\quad (n \\ge 1),$$ $$b_1 = 1,\\quad b_2 = k,\\quad b_{n+2} = \\frac{b_{n+1}^3 + 1}{b_n} \\quad (n \\ge 1).$$ Prove that $a_{2n}b_{n+3}$ is an integer for every positive integer $n$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "There are $2015$ circles of radius $1$ with distinct centers in the plane. Prove that one can choose $27$ of these circles forming a collection $C$ such that either every two circles of $C$ intersect, or no two circles of $C$ intersect."
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Let $D$ and $E$ be the feet of the altitudes from $B$ and $C$ of an acute triangle $ABC$, and let $S$ and $T$ be the reflections of $E$ in the sides $AC$ and $BC$. The circumcircle of triangle $CST$ meets line $AC$ again at $X \\ne C$. If $O$ is the circumcenter of triangle $CST$, prove that lines $XO$ and $DE$ are perpendicular."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Integers $n$ and $k$ satisfy $n \\ge 2$ and $k \\ge \\frac{5}{2}n - 1$. Prove that no matter how $k$ distinct points with both coordinates integers between $1$ and $n$ inclusive are chosen in the coordinate plane, there is a circle passing through at least four of them."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "Prove that there are no rational numbers $x$, $y$ satisfying $$x - \\frac{1}{x} + y - \\frac{1}{y} = 4.$$"
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Real numbers $x$, $y$, $z$ satisfy $x^2 + y^2 + z^2 = 1$. Find the maximum value of $$(x^2 - yz)(y^2 - zx)(z^2 - xy).$$"
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "The incircle of an acute triangle $ABC$ with incenter $I$ touches $BC$, $CA$, $AB$ at $D$, $E$, $F$. Lines $BI$, $CI$, $BC$, $DI$ meet line $EF$ at $K$, $L$, $M$, $Q$, respectively, and the line through $M$ and the midpoint of segment $CL$ meets segment $CK$ at $P$. Prove that $$PQ = \\frac{AB \\cdot KQ}{BI}.$$"
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Let $U$ be a set of $m$ triangles. Prove that there always exists a subset $W$ of $U$ satisfying both conditions:\n\n(i) $W$ contains at least $0.45\\,m^{4/5}$ triangles;\n\n(ii) there are no six distinct points $A$, $B$, $C$, $D$, $E$, $F$ such that the six triangles $ABC$, $BCD$, $CDE$, $DEF$, $EFA$, $FAB$ all belong to $W$."
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Let $O$ be the circumcenter of an acute triangle $ABC$. The circumcircle $O_1$ of triangle $OAB$ and the circumcircle $O_2$ of triangle $OAC$ meet side $BC$ again at $D \\ne B$ and $E \\ne C$, respectively, and the perpendicular bisector of $BC$ meets side $AC$ at $F \\ne A$. Prove that the circumcenter of triangle $ADE$ lies on line $AC$ if and only if $F$ lies on the line through the centers of $O_1$ and $O_2$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "For a positive integer $n$, let $(a_0, a_1, \\dots, a_n)$ be an ordered $(n+1)$-tuple of integers. For each $k = 0, 1, \\dots, n$, let $b_k$ be the number of occurrences of $k$ in $(a_0, a_1, \\dots, a_n)$, and let $c_k$ be the number of occurrences of $k$ in $(b_0, b_1, \\dots, b_n)$. Find all tuples $(a_0, a_1, \\dots, a_n)$ for which $a_0 = c_0$, $a_1 = c_1$, $\\dots$, $a_n = c_n$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "For a positive integer $n$, let $c_n = 2017^n$. A function $f : \\mathbb{N} \\to \\mathbb{R}$ satisfies both conditions:\n\n(i) $f(m+n) \\le 2017 \\cdot f(m) \\cdot f(n+325)$ for all positive integers $m$, $n$;\n\n(ii) $0 < f(c_{n+1}) < f(c_n)^{2017}$ for all positive integers $n$.\n\nProve that there exists a sequence $a_1, a_2, \\dots$ such that $f(n)^{c_k} < f(c_k)^n$ for all positive integers $n$, $k$ with $a_k < n$. (Here $\\mathbb{N}$ is the set of positive integers and $\\mathbb{R}$ the set of real numbers.)"
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "For an integer $n \\ge 2$, define $a_1, a_2, \\dots, a_n$ by $$a_1 = \\frac{n(2n-1)(2n+1)}{3}, \\qquad a_k = \\frac{(n+k-1)(n-k+1)}{2(k-1)(2k+1)}\\,a_{k-1} \\quad (k = 2, 3, \\dots, n).$$\n\n(a) Prove that $a_1, a_2, \\dots, a_n$ are all integers.\n\n(b) Prove that exactly one of $a_1, a_2, \\dots, a_n$ is not a multiple of $2n-1$ and exactly one is not a multiple of $2n+1$ if and only if $2n-1$ and $2n+1$ are both primes."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Let $L$ and $M$ be the midpoints of sides $AB$ and $CD$ of a cyclic quadrilateral $ABCD$, and let $E$ be the intersection of the diagonals $AC$ and $BD$. Rays $AB$ and $DC$ meet at $F$, and segment $LM$ meets segment $DE$ at $P$. Let $Q$ be the foot of the perpendicular from $P$ to segment $EM$. Prove that if $E$ is the orthocenter of triangle $FLM$, then $$\\frac{EP^2}{EQ} = \\frac{1}{2}\\left(\\frac{BD^2}{DF} - \\frac{BC^2}{CF}\\right).$$"
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "In a room, $2017$ boxes are arranged in a circle. A set of boxes is called harmonious if it contains at least $2$ boxes and, moving clockwise from each box of the set, the number of boxes passed before first reaching the next box of the set is $0$ or odd. $30$ students enter the room one after another; each chooses several boxes forming a harmonious set and puts a slip with his name into each chosen box. Suppose the set of all boxes containing $30$ slips is not harmonious. Prove that there exist students $A$, $B$ and boxes $a$, $b$ with both properties:\n\n(i) $A$ chose $a$ but not $b$, and $B$ chose $b$ but not $a$;\n\n(ii) the number of boxes other than $a$, $b$ passed when moving clockwise from $a$ to $b$ is not odd, and none of these boxes was chosen by $A$ or $B$."
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Nonzero rational numbers $m$ and $n$ satisfy $m^3 = (27n^2 + 1)(m + 2n)$. Find all integer values that $\\dfrac{m - 6n}{m + 2n}$ can take."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Triangle $ABC$ satisfies $\\angle ABC < \\angle BCA < \\angle CAB < 90^\\circ$. Let $K$ be the reflection of the circumcenter $O$ of $ABC$ in side $BC$, and let $D$, $E$ be the feet of the perpendiculars from $K$ to lines $AB$ and $AC$. Lines $DE$ and $BC$ meet at $P$, and the circle with diameter $AK$ meets the circumcircle of $ABC$ again at $Q \\ne A$. If line $PQ$ meets the perpendicular bisector of $BC$ at $S$, prove that $S$ lies on the circle with diameter $AK$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "An analysis of the matches played among $n \\ge 7$ tennis players over the last $31$ years shows that for any two players $X$ and $Y$ there is another player who has beaten both of them. Prove that if $2\\left(2^{(2^k)} - 1\\right) \\ge n$ for some integer $k$, then there exist distinct players $A_1, A_2, \\dots, A_\\ell$ such that $2 \\le \\ell \\le 2k$, $A_i$ has beaten $A_{i+1}$ for all $1 \\le i < \\ell$, and $A_\\ell$ has beaten $A_1$. (Two players may or may not have played each other.)"
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "$ABC$ is a right triangle with $\\angle C = 90^\\circ$. A circle through $A$ and $B$ meets side $AC$ at $G \\ne A, C$ and side $BC$ at $D \\ne B$. Let $H$ be the intersection of segments $AD$ and $BG$, and $E$ the intersection of the perpendicular bisector $\\ell$ of segment $AD$ with the perpendicular bisector of segment $AB$. The line through $D$ perpendicular to $DE$ meets $\\ell$ at $F$. The circumcircle of triangle $CFH$ meets lines $AC$ and $BC$ again at $P \\ne C$ and $Q \\ne C$. Prove that lines $PQ$ and $FH$ are perpendicular."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Do there exist two polynomials $P(x)$ and $Q(x)$ with integer coefficients, each of degree at least $2018$, such that $$P(Q(x)) - 3Q(P(x)) = 1$$ for every real number $x$?"
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "On each face of a regular icosahedron with edge length $1$ lives an ant. Each ant must walk counterclockwise along the edges of its face, at every moment with speed at least $1$. Two ants may not meet at a point that is not a vertex. A collision occurs when five ants meet simultaneously at a vertex. Is there a strategy for the ants to move so that no collision ever occurs?"
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "$n$ cards numbered $1$ to $n$ are stacked in a pile on a desk, with the numbers increasing from top to bottom. Let operation A be moving the top card to the bottom of the pile, and operation B be removing the top card from the desk. The operations are repeated in the order $$\\text{ABBABBABBABB}\\cdots$$ until only one card remains on the desk. Let $L(n)$ be the number on the last remaining card. Find all positive integers $k$ such that $L(3k) = k$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "$ABCD$ is a rectangle that is not a square. A circle centered at a point $O$ that lies on the perpendicular bisector of the diagonal $BD$ and inside triangle $BCD$ passes through $B$ and $D$, and meets segments $AB$ and $DA$ again at $E \\ne B$ and $F \\ne D$. Let $G$ be the intersection of segments $BF$ and $DE$, and let $X$, $Y$, $Z$ be the feet of the perpendiculars from $G$ to segments $AB$, $BD$, $DA$. Let $L$, $M$, $N$ be the feet of the perpendiculars from $O$ to segments $CD$, $BD$, $BC$. If $P$ is the intersection of lines $XY$ and $ML$, and $Q$ is the intersection of lines $YZ$ and $MN$, prove that lines $BP$ and $DQ$ are parallel."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "For a positive integer $k$, define the sequence $x_0, x_1, x_2, \\dots$ by $$x_0 = 1, \\quad x_1 = k + 2, \\quad x_{n+2} - (k+1)x_{n+1} + x_n = 0 \\quad (n \\ge 0).$$ Prove that there are infinitely many positive integers $k$ for which every term of the sequence is $1$ or a composite number."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Let $ABC$ be a non-isosceles acute triangle with orthocenter $H$, let $O$ be the foot of the perpendicular from $A$ to $BC$, and let $K$, $L$ be the midpoints of $AB$ and $AC$. For a point $D \\ne O, B, C$ on side $BC$, let $E$ and $F$ be the orthocenters of triangles $ABD$ and $ACD$, and let $M$, $N$ be the midpoints of segments $DE$ and $DF$. The line through $M$ perpendicular to $KH$ and the line through $N$ perpendicular to $LH$ meet at $P$. Let $Q$ be the midpoint of segment $EF$, and let $S$ be the orthocenter of triangle $HPQ$. Prove that the values of $\\dfrac{OS}{OH}$ and $\\dfrac{OQ}{OP}$ do not depend on the position of $D$."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "Find all ordered pairs $(p, q)$ for which the quartic equation $$x^4 + 2px^2 + qx + p^2 - 36 = 0$$ has $4$ integer roots (a double root counts twice and a triple root three times)."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "A sequence $\\{x_n\\} = x_0, x_1, x_2, \\dots$ satisfies $x_0 = a$ ($a$ real, $1 \\le a \\le 2019$) and, for every nonnegative integer $n$, $$x_{n+1} = \\begin{cases} 1 + 1009x_n & (x_n \\le 2) \\\\ 2021 - x_n & (2 < x_n \\le 1010) \\\\ 3031 - 2x_n & (1010 < x_n \\le 1011) \\\\ 2020 - x_n & (1011 < x_n). \\end{cases}$$ If there exists a positive integer $k > 1$ with $x_k = a$, the smallest such $k$ is called the fundamental period of $\\{x_n\\}$. Find all positive integers that can be the fundamental period of $\\{x_n\\}$, and, for the smallest possible odd fundamental period greater than $1$, find all values of the initial term $a$ of the sequences having that fundamental period."
+    }
+   ]
+  },
+  {
+   "year": 2020,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "$ABCD$ is an isosceles trapezoid with $AB \\parallel CD$, $AD = BC$ and $AB > CD$. On the line through $C$ perpendicular to side $BC$, take a point $E$ such that $EC = AC$ and $\\angle ACE < 90^\\circ$. The circle $\\Gamma$ with center $D$ and radius $DA$ meets the circumcircle $\\Omega$ of triangle $AEB$ again at $F \\ne A$, and $G \\ne F$ is the point on $\\Gamma$ with $BF = BG$. Prove that the intersection of lines $EG$ and $BD$ lies on $\\Omega$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "There are $2020$ groups, each consisting of one boy and one girl, and every student belongs to exactly one group. Students shake hands in pairs so that all four conditions hold:\n\n(i) no two students of the same sex shake hands;\n\n(ii) the boy and the girl of the same group shake hands exactly once;\n\n(iii) a boy and a girl from different groups shake hands at most once;\n\n(iv) among the $4$ students of any two groups, the total number of handshakes is at least $3$.\n\nProve that one can choose $4038$ students and arrange them in a circle so that any two neighbors have shaken hands."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "Find all functions $f : \\mathbb{Q}_+ \\to \\mathbb{R}$ such that $$f(x) + f(y) + f(z) = 1$$ whenever positive rationals $x$, $y$, $z$ satisfy $x + y + z + 1 = 4xyz$. (Here $\\mathbb{Q}_+$ is the set of positive rationals and $\\mathbb{R}$ the set of reals.)"
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Do there exist positive reals $\\alpha$, $\\beta$ such that every positive integer appears exactly once in the sequence $$2020,\\ [\\alpha],\\ [\\beta],\\ 4040,\\ [2\\alpha],\\ [2\\beta],\\ 6060,\\ [3\\alpha],\\ [3\\beta],\\ 8080,\\ [4\\alpha],\\ [4\\beta],\\ \\dots\\,?$$ If they exist, find all such ordered pairs $(\\alpha, \\beta)$; otherwise prove that none exist. (Here $[x]$ denotes the greatest integer not exceeding $x$.)"
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "An acute triangle $ABC$ satisfies $AB = AC$. Let $M$ be the midpoint of side $BC$, and $L$, $N$ the midpoints of segments $AM$ and $AC$. The circumcircle $\\Omega$ of triangle $AMC$ meets segment $AB$ again at $P \\ne A$ and segment $BL$ at $Q$. Let $O$ be the circumcenter of triangle $BQC$. If lines $AC$ and $PQ$ meet at $X$, lines $OB$ and $LN$ meet at $Y$, and lines $BQ$ and $CO$ meet at $Z$, prove that $X$, $Y$, $Z$ are collinear."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Find all positive integers $n$ such that $6(n^4 - 1)$ is a perfect square."
+    }
+   ]
+  },
+  {
+   "year": 2021,
+   "problems": [
+    {
+     "number": 1,
+     "problem": "The line through the incenter $I$ of an acute triangle $ABC$ perpendicular to $AI$ meets $AB$ and $AC$ at $D$ and $E$. The line through $D$ parallel to $BI$ and the line through $E$ parallel to $CI$ meet at $F$. Line $FI$ meets the circumcircle of triangle $DEF$ again at $P \\ne F$. Prove that the circumcenter of triangle $DEF$, the circumcenter of triangle $ABC$, and $P$ are collinear."
+    },
+    {
+     "number": 2,
+     "problem": "Let $k \\ge 8$ be a positive integer. Prove that if there exist positive integers $x$, $y$ satisfying the conditions below, then there are infinitely many such ordered pairs $(x, y)$:\n\n(1) $\\dfrac{x^2-2}{y}$ and $\\dfrac{y^2-3}{x}$ are positive integers;\n\n(2) $\\gcd\\left(3x + \\dfrac{2(y^2-3)}{x},\\ 2y + \\dfrac{3(x^2-2)}{y}\\right) = k$."
+    },
+    {
+     "number": 3,
+     "problem": "Let $P$ be a group of people in which acquaintance is mutual, and each person knows at most $2$ other people of $P$. A subset $S$ of $P$ with $k$ people is called $k$-independent if no two people in $S$ know each other. Let $X_1, X_2, \\dots, X_{4041}$ be $2021$-independent subsets of $P$ (not necessarily distinct). Prove that there exists a $2021$-independent set $\\{v_1, v_2, \\dots, v_{2021}\\}$ of $P$ such that, for some integers $1 \\le i_1 < i_2 < \\cdots < i_{2021} \\le 4041$, $$v_1 \\in X_{i_1},\\ v_2 \\in X_{i_2},\\ \\dots,\\ v_{2021} \\in X_{i_{2021}}.$$"
+    },
+    {
+     "number": 4,
+     "problem": "A high school has $n \\ge 2$ clubs $A_1, A_2, \\dots, A_n$. Prove that there exist $n - 1$ groups $B_1, B_2, \\dots, B_{n-1}$ such that\n\n(1) $A_1 \\cup A_2 \\cup \\cdots \\cup A_n = B_1 \\cup B_2 \\cup \\cdots \\cup B_{n-1}$;\n\n(2) for $1 \\le i < j \\le n-1$, $B_i \\cap B_j = \\emptyset$ and $-1 \\le |B_i| - |B_j| \\le 1$, where $|X|$ is the number of elements of $X$;\n\n(3) for each $1 \\le i \\le n-1$ there exist $1 \\le k \\le l \\le n$ with $B_i \\subseteq A_k \\cup A_l$."
+    },
+    {
+     "number": 5,
+     "problem": "Let $I$ be the incenter of a non-isosceles acute triangle $ABC$ and $O$ the center of its excircle $\\Omega$ opposite $A$. Let $D$, $E$ be the feet of the perpendiculars from $A$ and $I$ to side $BC$. Lines $OE$ and $AD$ meet at $X$, and $P$ is the circumcenter of triangle $BCX$. Prove that if $X$ lies on the incircle of $ABC$, then the circumcircle of triangle $BCP$ is tangent to $\\Omega$."
+    },
+    {
+     "number": 6,
+     "problem": "Find all functions $f, g : \\mathbb{R} \\to \\mathbb{R}$ such that for all real numbers $x$, $y$, $$f\\big(x^2 - g(y)\\big) = g(x)^2 - y.$$"
+    }
+   ]
+  },
+  {
+   "year": 2022,
+   "problems": [
+    {
+     "number": 1,
+     "problem": "Let $D$, $E$, $F$ be the feet of the altitudes from $A$, $B$, $C$ of an acute triangle $ABC$ with $AB < AC$. The tangents to the circumcircle of $ABC$ at $B$ and $C$ meet at $P$. The perpendicular from $P$ to line $EF$ meets line $AD$ at $Q$, $R$ is the foot of the perpendicular from $A$ to line $EF$, and $O$ is the circumcenter of $ABC$. Prove that lines $DR$ and $OQ$ are parallel."
+    },
+    {
+     "number": 2,
+     "problem": "For a positive integer $n \\ge 3$, there are boxes $A_1, A_2, \\dots, A_n$, each containing zero or more stones. An operation on the collection of boxes is:\n\nchoose one of $A_1, A_2, \\dots, A_n$, take out all the stones in it, and add them to the $n$ boxes so that the numbers of stones added to any two boxes differ by at most $1$.\n\nFor example, if $n = 4$ and $A_1, A_2, A_3, A_4$ contain $2, 6, 0, 4$ stones, one operation can take the $2$ stones out of $A_1$ and add $1, 0, 1, 0$ of them to $A_1, A_2, A_3, A_4$, leaving $1, 6, 1, 4$ stones.\n\nLet $a_i \\ge 0$ be the current number of stones in $A_i$ ($i = 1, 2, \\dots, n$), with $a_1 + a_2 + \\cdots + a_n = 3n$. Let $f(a_1, a_2, \\dots, a_n)$ be the minimum number of operations needed to put all the stones into a single box. Find the largest possible value $M$ of $f(a_1, a_2, \\dots, a_n)$, and find all ordered tuples $(a_1, a_2, \\dots, a_n)$ of nonnegative integers with $f(a_1, a_2, \\dots, a_n) = M$."
+    },
+    {
+     "number": 3,
+     "problem": "A function $g : \\mathbb{R} \\to \\mathbb{R}$ with finite range is given. Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all real numbers $x$, $y$, $$2f\\big(x + g(y)\\big) = f\\big(2g(x) + y\\big) + f\\big(x + 3g(y)\\big).$$"
+    },
+    {
+     "number": 4,
+     "problem": "The incircle $\\omega$ of a non-isosceles acute triangle $ABC$ touches sides $AB$ and $AC$ at $D$ and $E$. Of the two intersections of $\\omega$ with the perpendicular from $A$ to $BC$, let $L$ be the one closer to $A$. Let $I$ be the incenter of $ABC$, let line $AI$ meet the circumcircle of $ABC$ again at $M \\ne A$, and let the circle centered at the circumcenter $O$ of triangle $BDE$ and passing through $L$ meet line $AL$ again at $N \\ne L$. Prove that the intersection of lines $LD$ and $MB$ lies on the circumcircle of triangle $LNE$."
+    },
+    {
+     "number": 5,
+     "problem": "Find all positive integers $m$ for which there exist integers $x$, $y$ such that $x^2 + 11y^2 + 2022$ is a multiple of $m$."
+    },
+    {
+     "number": 6,
+     "problem": "A set $X$ is called good if it satisfies all three conditions:\n\n(i) $X$ has $2022$ elements;\n\n(ii) each element of $X$ is a closed interval contained in $[0, 1]$;\n\n(iii) for every real number $r$ with $0 \\le r \\le 1$, at most $1011$ elements of $X$ contain $r$.\n\nFor two good sets $A$ and $B$, let $n(A, B)$ be the number of ordered pairs $(I, J)$ with $I \\in A$, $J \\in B$ and $I \\cap J \\ne \\emptyset$. Find the largest possible value of $n(A, B)$."
+    }
+   ]
+  },
+  {
+   "year": 2023,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "In an acute triangle $ABC$ with $AB < AC$, points $D \\ne A, B$ and $E \\ne A, C$ lie on sides $AB$ and $AC$, and $P$ is the point with $PB = PD$ and $PC = PE$. Let $X \\ne A, C$ be a point on the arc $AC$ of the circumcircle of $ABC$ not containing $B$. If the circumcircle of triangle $ADE$ meets line $XA$ again at $Y \\ne A$, prove that $PX = PY$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "A function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ has the following property: for each positive real $x$ there exists a positive real $y$ with $$(x + f(y))(y + f(x)) \\le 4,$$ and the number of such $y$ is finite. Prove that $f(x) > f(y)$ for all positive reals $x < y$. (Here $\\mathbb{R}^+$ is the set of positive reals.)"
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "Let $p$ be an odd prime. For a positive integer $n$, let $A(n)$ be the number of subsets of $\\{1, 2, \\dots, n\\}$ whose sum of elements is a multiple of $p$ (the empty set has sum $0$). Prove that if $2^{p-1} - 1$ is not a multiple of $p^2$, then for every integer $k$ there are infinitely many positive integers $m$ such that $\\dfrac{A(m) - k}{p}$ is an integer."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Find all positive integers $n$ such that $2^n - 1$ has no prime divisor greater than $7$."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "For a given positive integer $n$ there are $n$ boxes $B_1, \\dots, B_n$. Balls can be added by repeating the following operation: choose positive integers $i \\le j$ with $1 \\le i \\le j \\le n$ and add one ball to each box $B_k$ with $i \\le k \\le j$. For positive integers $x_1, \\dots, x_n$, let $f(x_1, \\dots, x_n)$ be the minimum number of operations needed, starting with $x_i$ balls in box $B_i$ ($i = 1, \\dots, n$), to make the number of balls in every box a multiple of $3$ (with $f = 0$ if all $x_i$ are already multiples of $3$). Find the largest possible value of $f(x_1, \\dots, x_n)$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Prove that for every integer $n \\ge 3$ and all real numbers $a_1, \\dots, a_n, b_1, \\dots, b_n$, $$\\sum_{i=1}^{n} a_i(b_i - b_{i+3}) \\le \\frac{3n}{8}\\sum_{i=1}^{n}\\left((a_i - a_{i+1})^2 + (b_i - b_{i+1})^2\\right),$$ where $a_{n+1} = a_1$ and $b_{n+i} = b_i$ for $i = 1, 2, 3$."
+    }
+   ]
+  },
+  {
+   "year": 2024,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "Let $a$, $b$, $c$, $d$ be positive odd integers, any two of which are relatively prime. For a positive integer $n$, let $$f(n) = \\left[\\frac{n}{a}\\right] + \\left[\\frac{n}{b}\\right] + \\left[\\frac{n}{c}\\right] + \\left[\\frac{n}{d}\\right],$$ where $[x]$ is the greatest integer not exceeding $x$. Prove that $$\\sum_{n=1}^{abcd}(-1)^{f(n)} = 1.$$"
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "For a positive integer $n \\ge 2$ there are $2n$ candies. Player A distributes all $2n$ candies into $4n$ boxes $B_1, B_2, \\dots, B_{4n}$. After seeing how many candies are in each box, player B chooses exactly $2n$ boxes $B_{k_1}, B_{k_2}, \\dots, B_{k_{2n}}$ satisfying the condition below and takes all the candies in them:\n\nfor each $i = 1, 2, \\dots, 2n$, $k_i - k_{i-1}$ is $1$ or $3$, and $k_{2n} = 4n$ (where $k_0 = 0$).\n\nPlayer A takes all the candies in the $2n$ boxes not chosen by B. If both players play optimally to take as many candies as possible, how many candies does A get?"
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "Find the smallest positive real number $p \\le 1$ with the following property: for all real numbers $x_1, \\dots, x_{2024}$, $y_1, \\dots, y_{2024}$ with $$0 \\le x_1 \\le x_2 \\le \\cdots \\le x_{2024} \\le 1, \\qquad 0 \\le y_1 \\le y_2 \\le \\cdots \\le y_{2024} \\le 1, \\qquad \\sum_{i=1}^{2024} x_i = \\sum_{i=1}^{2024} y_i = 2024p,$$ the inequality $$\\sum_{i=1}^{2024} x_i\\left(y_{2025-i} - y_{2024-i}\\right) \\ge 1 - p$$ holds, where $y_0 = 0$."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Let $O$ be the circumcircle of triangle $ABC$, and let $D \\ne A$ be a point on the extension of segment $BA$ beyond $A$. Points $E$ and $F$ are distinct points of $O$ such that $DE$ and $DF$ are tangent to $O$, and segment $EF$ meets side $CA$ at $T \\ne C$. Let $P \\ne B, C$ be a point on the arc $BC$ of $O$ not containing $A$, and let line $DP$ meet $O$ again at $Q \\ne P$. Lines $BQ$ and $DT$ meet at a point $X \\ne Q$, and line $PT$ meets $O$ again at $Y \\ne P$. Prove that $C$, $X$, $Y$ are collinear."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "For a positive integer $n \\ge 4$, let $a_1, a_2, \\dots, a_n$ be distinct positive integers not exceeding $n$. Find the largest possible value of $$\\sum_{i=1}^{n}\\left|a_i - a_{i+1} + a_{i+2} - a_{i+3}\\right|,$$ where $a_{n+i} = a_i$ for $i = 1, 2, 3$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Prove that there exists a positive integer $K$ such that for every prime $p > K$, the number of positive integers $a \\le p$ for which $a^{p-1} - 1$ is a multiple of $p^2$ is at most $\\dfrac{p}{2^{2024}}$."
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "problems": [
+    {
+     "day": 1,
+     "number": 1,
+     "problem": "A sequence $a_1, a_2, a_3, \\dots$ satisfies, for every positive integer $n$, $$\\sum_{k=1}^{n}\\frac{1}{2}\\left(1 - (-1)^{\\left[\\frac{n}{k}\\right]}\\right)a_k = 1,$$ where $[x]$ is the greatest integer not exceeding $x$. For the positive integer $m = 1001 \\cdot 2^{2025}$, find the value of $a_m$."
+    },
+    {
+     "day": 1,
+     "number": 2,
+     "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all $x, y \\in \\mathbb{R}$, $$f\\big(x + f^{100}(y)\\big) = x + y \\quad \\text{or} \\quad f\\big(f^{100}(x) + y\\big) = x + y,$$ where $f^{100}$ denotes the composition of $f$ with itself $100$ times, $(f \\circ f \\circ \\cdots \\circ f)(x)$."
+    },
+    {
+     "day": 1,
+     "number": 3,
+     "problem": "An acute triangle $ABC$ satisfies $BC > CA > AB$. Let $I$ and $\\omega$ be its incenter and incircle, and let $\\omega$ touch $BC$, $CA$, $AB$ at $D$, $E$, $F$. Lines $AD$ and $BE$ meet at $P$. Let $\\ell_1$ be the tangent at $D$ to the circumcircle of triangle $DIP$, $\\ell_2$ the tangent at $E$ to the circumcircle of triangle $EIP$, and $\\ell_3$ the tangent at $F$ to the circumcircle of triangle $FIP$. Prove that $\\ell_1$, $\\ell_2$, $\\ell_3$ are concurrent."
+    },
+    {
+     "day": 2,
+     "number": 4,
+     "problem": "Triangle $ABC$ satisfies $CA > AB$. Its incircle $\\omega$ touches $BC$, $CA$, $AB$ at $D$, $E$, $F$, and $M$ is the midpoint of $BC$. The circle with center $M$ passing through $D$ meets lines $DE$ and $DF$ again at $P \\ne D$ and $Q \\ne D$. Let $N$ be the intersection of lines $AP$ and $BC$, and $L$ the intersection of lines $BP$ and $CA$. Prove that lines $EQ$, $FP$, $NL$ are concurrent."
+    },
+    {
+     "day": 2,
+     "number": 5,
+     "problem": "For a subset $T$ of $S = \\{1, 2, \\dots, 1000\\}$, define $\\widetilde{T} = \\{1001 - t \\mid t \\in T\\}$ (with $\\widetilde{T} = \\emptyset$ if $T$ is empty). Find the maximum number of elements of a family $\\mathcal{P}$ satisfying all three conditions:\n\n- every element of $\\mathcal{P}$ is a subset of $S$;\n\n- for any two elements $A$, $B$ of $\\mathcal{P}$, $A \\cap B$ is nonempty;\n\n- for every element $A$ of $\\mathcal{P}$, $\\widetilde{A} \\in \\mathcal{P}$."
+    },
+    {
+     "day": 2,
+     "number": 6,
+     "problem": "Positive integers $a$ and $b$ satisfy both conditions:\n\n- if $m^2 \\mid ab$ for a positive integer $m$, then $m = 1$;\n\n- there exist integers $x$, $y$, $z$, $w$ with $ax^2 + by^2 = z^2 + w^2$ and $z^2 + w^2 > 0$.\n\nProve that for every integer $n$ there exist integers $x$, $y$, $z$, $w$ satisfying $ax^2 + by^2 + n = z^2 + w^2$."
+    }
+   ]
+  }
+ ]
+}
