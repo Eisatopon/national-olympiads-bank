@@ -593,14 +593,14 @@ function buildMatrix() {
     const mx = $('#mx');
     mx.style.setProperty('--cols', LAST - FIRST + 1);
     let html = '<div class="mx-row"><span class="corner"></span>';
-    for (let y = FIRST; y <= LAST; y++) {
-        const dec = (y % 5 === 0 || y === FIRST) ? `<span class="dec" aria-hidden="true">${y}</span>` : '';
+    for (let y = LAST; y >= FIRST; y--) {
+        const dec = (y % 5 === 0) ? `<span class="dec" aria-hidden="true">${y}</span>` : '';
         html += `<button type="button" class="yh" data-yh="${y}" tabindex="-1" aria-label="Year ${y}, all countries">${dec}${String(y).slice(2)}</button>`;
     }
     html += '</div>';
     COUNTRIES.forEach(c => {
         html += `<div class="mx-row"><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years"><span class="flag" aria-hidden="true">${c.flag}</span>${c.name}</button>`;
-        for (let y = FIRST; y <= LAST; y++) {
+        for (let y = LAST; y >= FIRST; y--) {
             html += `<button type="button" class="cell pend" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-label="${c.name}, ${y}"></button>`;
         }
         html += '</div>';
@@ -615,7 +615,7 @@ function paintCountry(key) {
     const bad = failed.has(key);
     const c = CBY[key];
     if (bad) $(`.rl[data-rl="${key}"]`).title = 'This file did not load';
-    for (let y = FIRST; y <= LAST; y++) {
+    for (let y = LAST; y >= FIRST; y--) {
         const cell = $(`.cell[data-country="${key}"][data-year="${y}"]`);
         const n = list ? list.filter(p => p.year === y).length : 0;
         const was = cell.classList.contains('on');
