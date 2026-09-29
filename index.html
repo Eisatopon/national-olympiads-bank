@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 14 Countries, 1969–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Ireland, India, Indonesia, Mexico, South Korea and the USA. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 15 Countries, 1969–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Ireland, India, Indonesia, Mexico, South Korea, the USA and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -62,6 +62,7 @@
     --id: #827717; --id-ink: #524c00; --id-tint: #f4f3dc;
     --br: #558b2f; --br-ink: #33691e; --br-tint: #eef5e6;
     --mx: #00695c; --mx-ink: #004d40; --mx-tint: #e0f2f1;
+    --vn: #c79100; --vn-ink: #6d4c00; --vn-tint: #fff8e1;
     --um: #c62828; --um-ink: #8e0000; --um-tint: #fde7e7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -80,6 +81,7 @@
 .f-id { --f: var(--id); --f-ink: var(--id-ink); --f-tint: var(--id-tint); }
 .f-br { --f: var(--br); --f-ink: var(--br-ink); --f-tint: var(--br-tint); }
 .f-mx { --f: var(--mx); --f-ink: var(--mx-ink); --f-tint: var(--mx-tint); }
+.f-vn { --f: var(--vn); --f-ink: var(--vn-ink); --f-tint: var(--vn-tint); }
 .f-um { --f: var(--um); --f-ink: var(--um-ink); --f-tint: var(--um-tint); }
 
 /* ==========================================================
@@ -330,7 +332,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>14</b><span>countries</span></div>
+            <div class="stat"><b>15</b><span>countries</span></div>
             <div class="stat"><b>1969–2026</b><span>years</span></div>
         </div>
     </div>
@@ -461,6 +463,7 @@ const COUNTRIES = [
     { key: 'id', name: 'Indonesia', flag: '🇮🇩', file: 'Indonesia-osn-problems.json', kind: 'years' },
     { key: 'br', name: 'Brazil', flag: '🇧🇷', file: 'Brazil-obm-problems.json', kind: 'years' },
     { key: 'mx', name: 'Mexico', flag: '🇲🇽', file: 'Mexico-omm-problems.json', kind: 'years' },
+    { key: 'vn', name: 'Vietnam', flag: '🇻🇳', file: 'Vietnam-vmo-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
