@@ -1,0 +1,305 @@
+{
+  "competition": "Japan Mathematical Olympiad (JMO) Finals",
+  "years": [
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all positive integers $n$ such that $\\dfrac{10^n}{n^3+n^2+n+1}$ is an integer."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\ge 2$ be an integer. A regular hexagon $ABCDEF$ with side length $n$ is divided into equilateral triangles of side length $1$, as in the left figure. The vertices of these equilateral triangles are simply called vertices.\n\nA token is placed at the centre of the hexagon $ABCDEF$. As in the right figure, for every vertex $P$ in the interior of the hexagon (not on its boundary), arrows are drawn from $P$ towards $4$ of the $6$ vertices joined to $P$ by an edge of length $1$; when the token is at $P$, it may be moved to any one of these $4$ vertices. Note that for an edge $PQ$ of length $1$, even if the token can be moved from $P$ to $Q$, it cannot necessarily be moved from $Q$ to $P$.\n\nShow that there exists an integer $k$ such that, however the arrows are drawn, the token can be brought to a vertex on the boundary of the hexagon $ABCDEF$ in at most $k$ moves, and find the smallest possible value of such $k$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/japan_2015_p2_fig.png"
+        },
+        {
+          "number": 3,
+          "problem": "A sequence $\\{a_n\\}$ $(n = 1, 2, \\dots)$ of positive integers is called ascending if $a_n < a_{n+1}$ and $a_{2n} = 2a_n$ for every positive integer $n$.\n\n(1) Suppose that $\\{a_n\\}$ is ascending and that $p$ is a prime greater than $a_1$. Show that some term of the sequence is a multiple of $p$.\n\n(2) Let $p$ be an odd prime. Show that there exists an ascending sequence $\\{a_n\\}$ in which no term is a multiple of $p$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle that is not isosceles, with circumcircle $\\Gamma$ and incenter $I$. The incircle of $ABC$ touches the sides $AB$, $AC$ at $D$, $E$ respectively. Let $P$ be the second intersection of the circumcircle of triangle $BEI$ with $\\Gamma$ (other than $B$), and let $Q$ be the second intersection of the circumcircle of triangle $CDI$ with $\\Gamma$ (other than $C$). Prove that the four points $D$, $E$, $P$, $Q$ lie on a circle."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a$ be a positive integer. Show that the following statement holds for all sufficiently large integers $n$:\n\nChoose $n$ cells of an infinite grid and colour them black. Let $K$ be the number of $a \\times a$ subgrids that contain exactly $a$ black cells. Then the largest possible value of $K$ is $a(n + 1 - a)$.\n\nHere, holding for all sufficiently large integers $n$ means that there exists an integer $N$ such that the statement holds for every $n \\ge N$."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $p$ be an odd prime. For each integer $k$ with $1 \\le k \\le p-1$, let $a_k$ be the number of divisors of $kp+1$ that are at least $k$ and less than $p$. Find the value of $a_1 + a_2 + \\cdots + a_{p-1}$."
+        },
+        {
+          "number": 2,
+          "problem": "A quadrilateral $ABCD$ is inscribed in a circle and satisfies $AB : AD = CD : CB$. Lines $AD$ and $BC$ meet at $X$, and lines $AB$ and $CD$ meet at $Y$. Let $E$, $F$, $G$, $H$ be the midpoints of the sides $AB$, $BC$, $CD$, $DA$ respectively. Let $S$ be the intersection of the bisector of $\\angle AXB$ with segment $EG$, and let $T$ be the intersection of the bisector of $\\angle AYD$ with segment $FH$. Prove that the lines $ST$ and $BD$ are parallel."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. The Kingdom of JMO has $2^n$ citizens and one king. The currency of the kingdom consists of $2^a$-yen banknotes and $2^a$-yen coins $(a = 0, 1, 2, \\dots, n-1)$. Every citizen has as many banknotes as needed, and the total number of coins held by the citizens is $S$. From a certain day on, the kingdom performs every day the following operation, called taxation:\n\n• Every morning, each citizen chooses finitely many of the pieces of money they hold, and in the evening hands each of them to another citizen or to the king.\n\n• This is done so that, for every citizen, the amount handed over is exactly $1$ yen more than the amount received.\n\nIt turns out that the kingdom can continue the taxation forever. Find the smallest possible value of $S$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that\n$$f\\bigl(yf(x) - x\\bigr) = f(x)f(y) + 2x$$\nfor all real numbers $x$, $y$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $m$, $n$ be positive integers with $m \\ge 2$ and $n < \\dfrac{3}{2}(m-1)$. A country has $m$ cities and $n$ roads, each road joining two distinct cities; several roads may join the same pair of cities.\n\nThe cities are to be divided into two groups $\\alpha$ and $\\beta$, and every road joining a city of group $\\alpha$ with a city of group $\\beta$ becomes a highway. Prove that there is a division satisfying the following conditions:\n\n• each group contains at least one city;\n\n• for every city, at most one highway leaves that city."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a$, $b$, $c$ be positive integers. Prove that the least common multiple of $a$ and $b$ is not equal to the least common multiple of $a+c$ and $b+c$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $N$ be a positive integer. Positive integers $a_1, a_2, \\dots, a_N$ are given, none of which is a multiple of $2^{N+1}$. For integers $n \\ge N+1$, the numbers $a_n$ are defined successively as follows: among $k = 1, 2, \\dots, n-1$, choose the $k$ for which the remainder of $a_k$ upon division by $2^n$ is smallest, and set $a_n = 2a_k$; if there are several such $k$, choose the largest of them.\n\nProve that there exists a positive integer $M$ such that $a_n = a_M$ for all $n \\ge M$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with circumcenter $O$. Let $D$, $E$, $F$ be the feet of the perpendiculars from $A$, $B$, $C$ to the opposite sides, and let $M$ be the midpoint of side $BC$. Let $X$ be the intersection of lines $AD$ and $EF$, let $Y$ be the intersection of lines $AO$ and $BC$, and let $Z$ be the midpoint of segment $XY$. Prove that the three points $A$, $Z$, $M$ are collinear."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n \\ge 3$ be an integer. There are $n$ people, and every day a meeting is held that is attended by $3$ or more of them. At each meeting, every two of the attendees shake hands once. When the meeting of the $n$-th day ends, every two of the $n$ people have shaken hands exactly once. Prove that every meeting was attended by the same number of people."
+        },
+        {
+          "number": 5,
+          "problem": "Let $x_1, x_2, \\dots, x_{1000}$ be integers such that $\\displaystyle\\sum_{i=1}^{1000} x_i^k$ is a multiple of $2017$ for every positive integer $k \\le 672$. Prove that $x_1, x_2, \\dots, x_{1000}$ are all multiples of $2017$. (Note that $2017$ is a prime.)"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The integers from $1$ to $100$ are written on a blackboard, each exactly once. The following operation is repeated: choose two integers $a$, $b$ on the board, erase them, and write the greatest common divisor of $a^2b^2 + 3$ and $a^2 + b^2 + 2$. Prove that when only one integer remains on the board, it is not a perfect square."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with $AB < AC$. Points $D$, $E$ lie on the sides $AB$, $AC$ (not at the endpoints) such that $CA = CD$ and $BA = BE$. Let $\\omega$ be the circumcircle of triangle $ADE$, and let $P$ be the reflection of $A$ in the line $BC$. Let $X$ be the second intersection of line $PD$ with $\\omega$ and $Y$ the second intersection of line $PE$ with $\\omega$. Prove that the lines $BX$ and $CY$ meet on $\\omega$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $S = \\{1, 2, \\dots, 999\\}$. A function $f : S \\to S$ satisfies\n$$f^{\\,n+f(n)+1}(n) = f^{\\,nf(n)}(n) = n$$\nfor every $n \\in S$. Prove that there exists $a \\in S$ with $f(a) = a$. Here $f^k(n)$ denotes $f(f(\\cdots f(n) \\cdots))$, with $f$ applied $k$ times."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be an odd positive integer. Prove that it is impossible to write exactly one of the numbers $1$, $2$, $3$ in each cell of a grid extending infinitely in all directions so that all of the following conditions hold:\n\n(a) two cells sharing a side never contain the same number;\n\n(b) no $3 \\times 1$ or $1 \\times 3$ block of consecutive cells contains $1, 2, 3$ in this order read from top to bottom, from bottom to top, from left to right, or from right to left;\n\n(c) all $n \\times n$ blocks of cells have the same sum, regardless of their position."
+        },
+        {
+          "number": 5,
+          "problem": "Let $T$ be a positive integer. Find all functions $f$ defined on ordered pairs of positive integers and taking positive integer values, together with integers $C_0, C_1, \\dots, C_T$, such that:\n\n• for every positive integer $n$, there are exactly $n$ pairs $(k, l)$ of positive integers with $f(k, l) = n$;\n\n• for $t = 0, 1, \\dots, T$ and every pair $(k, l)$ of positive integers, $f(k + t,\\, l + T - t) - f(k, l) = C_t$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all triples $(a, b, c)$ of positive integers such that $a^2 + b + 3 = (b^2 - c^2)^2$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\ge 3$ be an odd integer. A game is played on an $n \\times n$ grid. The game consists of $n^2$ turns, and in each turn the following steps are carried out in order:\n\n• Choose a cell in which no integer has been written yet and write in it an integer from $1$ to $n^2$. Throughout the game, each integer may be written only once.\n\n• For each of the row and the column containing that cell, if the sum of the integers written in it is a multiple of $n$, gain $1$ point (so $2$ points if both sums are multiples of $n$).\n\nFind the largest possible total number of points obtained by the end of the game."
+        },
+        {
+          "number": 3,
+          "problem": "Find all functions $f$ defined on the positive reals and taking positive real values such that\n$$f\\left(\\frac{f(y)}{f(x)} + 1\\right) = f\\left(x + \\frac{y}{x} + 1\\right) - f(x)$$\nfor all positive reals $x$, $y$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $I$ be the incenter and $\\omega$ the incircle of triangle $ABC$, and let $M$ be the midpoint of side $BC$. Let $K$ be the intersection of the line through $A$ perpendicular to $BC$ and the line through $M$ perpendicular to $AI$. Prove that the circle with diameter $AK$ is tangent to $\\omega$."
+        },
+        {
+          "number": 5,
+          "problem": "A set $S$ of positive integers is called beautiful if, for any three distinct elements $x$, $y$, $z$ of $S$, at least one of them divides $x + y + z$. Show that there exists an integer $N$ satisfying the following condition, and find the smallest such $N$:\n\nFor every beautiful set $S$, there exists an integer $n_S \\ge 2$ such that the number of elements of $S$ that are not multiples of $n_S$ is at most $N$."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all pairs $(m, n)$ of positive integers such that both $\\dfrac{n^2+1}{2m}$ and $\\sqrt{2^{n-1} + m + 4}$ are integers."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with $BC < AB$ and $BC < AC$. Points $D$, $E$ lie on the sides $AB$, $AC$ respectively such that $BD = CE = BC$. Let $P$ be the intersection of lines $BE$ and $CD$, and let $Q$ be the second intersection (other than $A$) of the circumcircles of triangles $ABE$ and $ACD$. Prove that the lines $PQ$ and $BC$ are perpendicular."
+        },
+        {
+          "number": 3,
+          "problem": "Find all functions $f$ defined on the positive integers and taking positive integer values such that\n$$m^2 + f(n)^2 + \\bigl(m - f(n)\\bigr)^2 \\ge f(m)^2 + n^2$$\nfor all positive integers $m$, $n$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n \\ge 2$ be an integer. There are $3n$ distinct points on a circle, called special points. A and B perform the following operation $n$ times:\n\nFirst, A chooses two special points that are not yet joined by a segment and joins them with a segment. Then B chooses a special point on which no token has been placed and places a token on it.\n\nProve that, regardless of how B places the tokens, A can ensure that after the $n$ operations the number of segments joining a special point with a token to a special point without a token is at least $\\dfrac{n-1}{6}$."
+        },
+        {
+          "number": 5,
+          "problem": "Find all sequences $a_1, a_2, \\dots$ of positive integers for which there exists a positive real number $c$ such that\n$$\\gcd(a_m + n,\\ a_n + m) > c(m + n)$$\nfor all positive integers $m$, $n$. Here $\\gcd(x, y)$ denotes the greatest common divisor of the positive integers $x$ and $y$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all functions $f$ defined on the positive integers and taking positive integer values such that, for all positive integers $m$, $n$, the following two statements are equivalent:\n\n• $n$ divides $m$;\n\n• $f(n)$ divides $f(m) - n$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\ge 2$ be an integer. Taro and Jiro play the following game on a grid with $n$ rows and $2021$ columns. First, Taro colours each cell white or black. Then Jiro places a token on one cell of the top row and designates one cell of the bottom row as the goal. Taro then repeats the following operation $n-1$ times:\n\nIf the cell containing the token is white, move the token one cell down. Otherwise, move the token to a cell adjacent to it on the left or right, and then one cell down.\n\nFind the smallest possible value of $n$ for which Taro can always bring the token to the goal, regardless of Jiro's choices."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle, and let $D$, $E$ be points on the sides $AB$, $AC$ respectively such that $BD = CE$. A point $P$ lies on segment $DE$ and a point $Q$ lies on the arc $BC$ of the circumcircle of $ABC$ not containing $A$, such that $BP : PC = EQ : QD$. The points $A$, $B$, $C$, $D$, $E$, $P$, $Q$ are pairwise distinct. Prove that $\\angle BPC = \\angle BAC + \\angle EQD$."
+        },
+        {
+          "number": 4,
+          "problem": "The $2021$ integers $a_1, a_2, \\dots, a_{2021}$ satisfy\n$$a_{n+5} + a_n > a_{n+2} + a_{n+3}$$\nfor every integer $n$ with $1 \\le n \\le 2016$. Find the smallest possible value of the difference between the largest and the smallest of $a_1, a_2, \\dots, a_{2021}$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. Find all integers $k$ with $1 \\le k \\le 2n^2$ satisfying the following condition:\n\nIn a $2n \\times 2n$ grid, $k$ distinct cells are chosen and coloured black, and the remaining cells are coloured white. Then the smallest possible number of $2 \\times 2$ subgrids containing both a white cell and a black cell is $2n - 1$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A and B play a game on $2022$ cells arranged in a row. Initially, A's name is written in the odd-numbered cells counted from the left and B's name in the even-numbered cells. Starting with A, the players alternately perform the following operation:\n\nChoose two cells containing one's own name that are not adjacent and such that every cell strictly between them contains the opponent's name. Replace the opponent's name in all cells between the two chosen cells by one's own name.\n\nThe game ends when one of the players cannot perform the operation. Find the largest positive integer $m$ satisfying the following condition:\n\nRegardless of how B plays, A can ensure that when the game ends, at least $m$ cells contain A's name."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f$ defined on the positive integers and taking positive integer values such that\n$$f^{f(n)}(m) + mn = f(m)f(n)$$\nfor all positive integers $m$, $n$. Here $f^k(n)$ denotes $f(f(\\cdots f(n) \\cdots))$, with $f$ applied $k$ times."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an isosceles triangle with $AB = AC$. A circle $\\omega$ with center $O$ in the interior of the triangle (not on its boundary) passes through $C$ and meets the sides $BC$, $AC$ (not at their endpoints) at $D$, $E$ respectively. Let $F$ be the second intersection (other than $E$) of the circumcircle $\\Gamma$ of triangle $AEO$ with $\\omega$. Prove that the circumcenter of triangle $BDF$ lies on $\\Gamma$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all pairs $(x, y)$ of positive integers such that $3^x - 8^y = 2xy + 1$."
+        },
+        {
+          "number": 5,
+          "problem": "Find the smallest possible value of a positive integer $m$ for which the following statement holds:\n\n$999$ cells are arranged on a circle, and a real number is written in each cell so that, for every cell $A$ and every positive integer $k \\le m$, at least one of the following holds:\n\n• the difference between the number in the cell $k$ steps clockwise from $A$ and the number in $A$ is $k$;\n\n• the difference between the number in the cell $k$ steps counterclockwise from $A$ and the number in $A$ is $k$.\n\nThen there exists a cell $S$ such that, if $x$ is the number written in $S$, at least one of the following holds:\n\n• for every positive integer $k < 999$, the number in the cell $k$ steps clockwise from $S$ is $x + k$;\n\n• for every positive integer $k < 999$, the number in the cell $k$ steps counterclockwise from $S$ is $x + k$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Some tiles consisting of $4$ cells, as in the figure, are placed on a $5 \\times 5$ grid along the grid lines. Tiles may overlap, but they may not stick out of the grid. If every cell is covered by at most $2$ tiles, find the largest possible number of cells covered by at least one tile. Tiles may be rotated and reflected.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/japan_2023_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle, and let $D$, $E$, $F$ be the midpoints of the sides $BC$, $CA$, $AB$ respectively. Let $X$, $Y$ be the feet of the perpendiculars from $D$ to the sides $AB$, $AC$ respectively. The line through $F$ parallel to $XY$ and the line $DY$ meet at a point $P$ different from $E$. Prove that the lines $AD$ and $EP$ are perpendicular."
+        },
+        {
+          "number": 3,
+          "problem": "Let $c$ be a non-negative integer. Find all sequences $a_1, a_2, \\dots$ of positive integers such that for every positive integer $n$ the following condition holds:\n\nthere are exactly $a_n$ positive integers $i$ with $a_i \\le a_{n+1} + c$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all positive integers $n$ such that $\\dfrac{\\phi(n)^{d(n)} + 1}{n}$ is an integer and $\\dfrac{n^{\\phi(n)} - 1}{d(n)^5}$ is not an integer. Here $\\phi(n)$ denotes the number of integers from $1$ to $n$ that are relatively prime to $n$, and $d(n)$ denotes the number of positive divisors of $n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $S = \\{1, 2, \\dots, 3000\\}$. Find the largest possible value of an integer $X$ satisfying the following condition:\n\nFor every bijection $f : S \\to S$, one can choose a bijection $g : S \\to S$ such that\n$$\\sum_{k=1}^{3000} \\Bigl(\\max\\bigl\\{f(f(k)), f(g(k)), g(f(k)), g(g(k))\\bigr\\} - \\min\\bigl\\{f(f(k)), f(g(k)), g(f(k)), g(g(k))\\bigr\\}\\Bigr) \\ge X.$$\n\nHere a function $f : S \\to S$ is a bijection if for every $y \\in S$ there is exactly one $x \\in S$ with $f(x) = y$. For positive integers $x_1, x_2, x_3, x_4$, their maximum and minimum are denoted by $\\max\\{x_1, x_2, x_3, x_4\\}$ and $\\min\\{x_1, x_2, x_3, x_4\\}$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n \\ge 2$ be an integer. Find all $n$-tuples $(a_1, a_2, \\dots, a_n)$ of real numbers such that\n$$a_1 - 2a_2,\\ a_2 - 2a_3,\\ \\dots,\\ a_{n-1} - 2a_n,\\ a_n - 2a_1$$\nis a permutation of $a_1, a_2, \\dots, a_n$. (Here $a_1, a_2, \\dots, a_n$ itself also counts as a permutation of $a_1, a_2, \\dots, a_n$.)"
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f$ defined on the positive integers and taking positive integer values such that\n$$\\operatorname{lcm}\\bigl(m, f(m + f(n))\\bigr) = \\operatorname{lcm}\\bigl(f(m), f(m) + n\\bigr)$$\nfor all positive integers $m$, $n$. Here $\\operatorname{lcm}(x, y)$ denotes the least common multiple of the positive integers $x$ and $y$."
+        },
+        {
+          "number": 3,
+          "problem": "In the $xy$-plane, a point whose $x$- and $y$-coordinates are both integers from $1$ to $2000$ is called a good point. For four points $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, $D(x_4, y_4)$ satisfying all of the following conditions, the polyline $ABCD$ is called a Z-polyline:\n\n• $A$, $B$, $C$, $D$ are all good points;\n\n• $x_1 < x_2$ and $y_1 = y_2$;\n\n• $x_2 > x_3$ and $y_2 - x_2 = y_3 - x_3$;\n\n• $x_3 < x_4$ and $y_3 = y_4$.\n\nFind the smallest positive integer $n$ for which there exist $n$ Z-polylines $Z_1, Z_2, \\dots, Z_n$ satisfying the following condition:\n\nfor every good point $P$ there is an integer $i$ with $1 \\le i \\le n$ such that $P$ lies on $Z_i$.\n\nHere the polyline $ABCD$ is the union of the segments $AB$, $BC$, $CD$ (all including their endpoints)."
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$, let $O$ be its circumcenter, and let $M$ be the midpoint of the arc $BC$ of its circumcircle not containing $A$. A point $D$ on the extension of side $AB$ beyond $B$ satisfies $BD = BM$, and a point $E$ on side $AC$ (not at its endpoints) satisfies $CE = CM$. The circumcircles of triangles $ABE$ and $ACD$ meet at a point $X$ other than $A$. Prove that the perpendicular bisector of segment $DE$ is tangent to the circumcircle of triangle $AOX$."
+        },
+        {
+          "number": 5,
+          "problem": "Prove that there is no $5$-tuple $(a, b, c, d, n)$ of positive integers such that\n$$a^2 + b^2 + c^2 + d^2 - 4\\sqrt{abcd} = 7 \\cdot 2^{2n-1}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n \\ge 2$ be an integer. Real numbers $a_1, a_2, \\dots, a_{2n}$ satisfy $|a_k - a_{n+k}| \\ge 1$ for every integer $k$ with $1 \\le k \\le n$. Find the smallest possible value of\n$$(a_1 - a_2)^2 + (a_2 - a_3)^2 + \\cdots + (a_{2n-1} - a_{2n})^2 + (a_{2n} - a_1)^2.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle with circumcenter $O$, and let $O_1$, $O_2$ be the circumcenters of triangles $ABO$, $ACO$ respectively. The circumcircle of triangle $AO_1O_2$ meets side $BC$ (not at its endpoints) at two distinct points $P$, $Q$, and the four points $B$, $P$, $Q$, $C$ lie in this order. Let $O_3$ be the circumcenter of triangle $OPQ$. Prove that the three points $A$, $O$, $O_3$ are collinear."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer. Triples $(x_1, y_1, z_1), (x_2, y_2, z_2), \\dots, (x_n, y_n, z_n)$ of integers from $1$ to $100$ satisfy the following condition:\n\nfor every sequence $a_1, a_2, \\dots$ of integers from $1$ to $100$, there exist a positive integer $i$ and an integer $j$ with $1 \\le j \\le n$ such that $(a_i, a_{i+1}, a_{i+2}) = (x_j, y_j, z_j)$.\n\nFind the smallest possible value of $n$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all polynomials $f(x)$ with integer coefficients such that, for every integer $n \\ge 2$, both of the following hold:\n\n• $f(n) > 0$;\n\n• $f(n)$ divides $n^{f(n)} - 1$."
+        },
+        {
+          "number": 5,
+          "problem": "An acute triangle $ABC$ that is not isosceles contains three distinct points $A_1$, $B_1$, $C_1$ in its interior such that $AB_1 : CB_1 = AB : CB$ and $AC_1 : BC_1 = AC : BC$. Let $A_2$ be the reflection of $A_1$ in the line $BC$, $B_2$ the reflection of $B_1$ in the line $AC$, and $C_2$ the reflection of $C_1$ in the line $AB$. Suppose that all of the following hold:\n\n• the four points $A$, $A_2$, $B$, $C_2$ lie on a circle;\n\n• the four points $A$, $A_2$, $B_2$, $C$ lie on a circle;\n\n• the four points $B$, $B_2$, $C$, $C_2$ lie on a circle;\n\n• none of the three points $A_2$, $B_2$, $C_2$ lies on the circumcircle of triangle $ABC$.\n\nProve that triangles $A_1B_1C_1$ and $A_2B_2C_2$ are similar."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$, let $O$ be its circumcenter, and let $D$ be the intersection of the bisector of $\\angle BAC$ with side $BC$. Two distinct points $P$, $Q$ are taken on the ray $DO$; both lie on the opposite side of line $AC$ from $B$ and on the same side of line $AB$ as $C$, and the points $D$, $P$, $Q$ lie in this order. Moreover, $AB = BP$, $AC = CQ$ and $\\angle ABP = \\angle ACQ$. Find the measure of $\\angle BAC$."
+        },
+        {
+          "number": 2,
+          "problem": "A sequence $a_1, a_2, \\dots$ of positive odd integers satisfies the following condition for every positive integer $n$:\n\n$a_{n+2}$ is the smallest odd integer that is greater than $a_{n+1}$ and relatively prime to $a_n$.\n\nProve that there exists a positive integer $C$ such that $|a_n - 2n| \\le C$ for every positive integer $n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\ge 2$ be an integer and let $m \\ge 2n$ be an integer. From the vertices of a regular $m$-gon, $2n$ distinct vertices are chosen; $n$ of them are coloured red and the remaining $n$ blue, so that the following holds:\n\nhowever two distinct red points and two distinct blue points are chosen, the distance between the two red points is different from the distance between the two blue points.\n\nFind the smallest possible value of $m$ in terms of $n$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that\n$$f\\bigl(x^2 + f(y)^2\\bigr) + 2f(x)y = f\\bigl(x + f(y)\\bigr)^2$$\nfor all real numbers $x$, $y$."
+        },
+        {
+          "number": 5,
+          "problem": "In three-dimensional space there is a plane $\\pi$, and on $\\pi$ there is a triangle $ABC$ that is not isosceles, with incenter $I$. Prove that there exists a triangle $\\mathcal{T}$ such that the following holds for every point $P$ not on $\\pi$ satisfying\n$$AP \\cdot BC = BP \\cdot CA = CP \\cdot AB:$$\n\nLet $I_A$, $I_B$, $I_C$ be the incenters of triangles $BCP$, $CAP$, $ABP$ respectively. If the circumcircles of triangles $II_BI_C$, $II_CI_A$, $II_AI_B$ meet $\\pi$ again at points $X$, $Y$, $Z$ (other than $I$), then triangle $XYZ$ is similar to $\\mathcal{T}$."
+        }
+      ]
+    }
+  ]
+}
