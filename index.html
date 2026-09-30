@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 27 Countries, 1969–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Austria, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Croatia, the Czech Republic and Slovakia, Ireland, India, Indonesia, Italy, Japan, Mexico, Norway, the Philippines, Poland, Russia, Serbia, South Korea, Spain, Turkey, the USA and Vietnam. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 31 Countries, 1962–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Austria, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Croatia, the Czech Republic and Slovakia, Germany, Hong Kong, Ireland, India, Indonesia, Italy, Japan, Mexico, the Netherlands, Norway, the Philippines, Poland, Russia, Serbia, South Korea, Spain, Switzerland, Turkey, the USA and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -78,6 +78,15 @@
     --hr: #1e88e5; --hr-ink: #0d47a1; --hr-tint: #e3f0fc;
     --hrt: #3f51b5; --hrt-ink: #283593; --hrt-tint: #e8eaf8;
     --no: #00897b; --no-ink: #00574f; --no-tint: #e0f2ef;
+    --ukt: #5d4037; --ukt-ink: #3e2723; --ukt-tint: #efebe9;
+    --nl: #ff6f00; --nl-ink: #b34700; --nl-tint: #fff3e0;
+    --nlt: #ffa000; --nlt-ink: #b36b00; --nlt-tint: #fff7e0;
+    --ch: #e53935; --ch-ink: #9b1c1c; --ch-tint: #fdeaea;
+    --cht: #ef5350; --cht-ink: #a32f2d; --cht-tint: #fdeeee;
+    --de: #424242; --de-ink: #212121; --de-tint: #eeeeee;
+    --dem: #616161; --dem-ink: #303030; --dem-tint: #f2f2f2;
+    --hk: #ec407a; --hk-ink: #a3134d; --hk-tint: #fdebf2;
+    --hkt: #f06292; --hkt-ink: #a8325b; --hkt-tint: #fdeef4;
     --um: #c62828; --um-ink: #8e0000; --um-tint: #fde7e7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -112,6 +121,15 @@
 .f-hr { --f: var(--hr); --f-ink: var(--hr-ink); --f-tint: var(--hr-tint); }
 .f-hrt { --f: var(--hrt); --f-ink: var(--hrt-ink); --f-tint: var(--hrt-tint); }
 .f-no { --f: var(--no); --f-ink: var(--no-ink); --f-tint: var(--no-tint); }
+.f-ukt { --f: var(--ukt); --f-ink: var(--ukt-ink); --f-tint: var(--ukt-tint); }
+.f-nl { --f: var(--nl); --f-ink: var(--nl-ink); --f-tint: var(--nl-tint); }
+.f-nlt { --f: var(--nlt); --f-ink: var(--nlt-ink); --f-tint: var(--nlt-tint); }
+.f-ch { --f: var(--ch); --f-ink: var(--ch-ink); --f-tint: var(--ch-tint); }
+.f-cht { --f: var(--cht); --f-ink: var(--cht-ink); --f-tint: var(--cht-tint); }
+.f-de { --f: var(--de); --f-ink: var(--de-ink); --f-tint: var(--de-tint); }
+.f-dem { --f: var(--dem); --f-ink: var(--dem-ink); --f-tint: var(--dem-tint); }
+.f-hk { --f: var(--hk); --f-ink: var(--hk-ink); --f-tint: var(--hk-tint); }
+.f-hkt { --f: var(--hkt); --f-ink: var(--hkt-ink); --f-tint: var(--hkt-tint); }
 .f-um { --f: var(--um); --f-ink: var(--um-ink); --f-tint: var(--um-tint); }
 
 /* ==========================================================
@@ -372,8 +390,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>27</b><span>countries</span></div>
-            <div class="stat"><b>1969–2026</b><span>years</span></div>
+            <div class="stat"><b>31</b><span>countries</span></div>
+            <div class="stat"><b>1962–2026</b><span>years</span></div>
         </div>
     </div>
 
@@ -483,7 +501,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    Δεδομένα και σταθερές
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
-const FIRST = 1969, LAST = 2026;
+const FIRST = 1962, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
     gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
@@ -500,6 +518,15 @@ REGION_OF.rst = 'europe';
 REGION_OF.hr = 'europe';
 REGION_OF.hrt = 'europe';
 REGION_OF.no = 'europe';
+REGION_OF.ukt = 'europe';
+REGION_OF.nl = 'europe';
+REGION_OF.nlt = 'europe';
+REGION_OF.ch = 'europe';
+REGION_OF.cht = 'europe';
+REGION_OF.de = 'europe';
+REGION_OF.dem = 'europe';
+REGION_OF.hk = 'asia';
+REGION_OF.hkt = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -536,6 +563,15 @@ const COUNTRIES = [
     { key: 'hr', name: 'Croatia', flag: '🇭🇷', file: 'Croatia-drz-problems.json', kind: 'years' },
     { key: 'hrt', name: 'Croatia HMO', flag: '🇭🇷', file: 'Croatia-hmo-problems.json', kind: 'years' },
     { key: 'no', name: 'Norway', flag: '🇳🇴', file: 'Norway-abel-problems.json', kind: 'years' },
+    { key: 'ukt', name: 'UK TST', flag: '🇬🇧', file: 'Uk-tst-problems.json', kind: 'years' },
+    { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
+    { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
+    { key: 'ch', name: 'Switzerland', flag: '🇨🇭', file: 'Swiss-final-problems.json', kind: 'years' },
+    { key: 'cht', name: 'Switzerland TST', flag: '🇨🇭', file: 'Swiss-selection-problems.json', kind: 'years' },
+    { key: 'de', name: 'Germany BWM', flag: '🇩🇪', file: 'Germany-bwm-problems.json', kind: 'years' },
+    { key: 'dem', name: 'Germany MO', flag: '🇩🇪', file: 'Germany-mo-problems.json', kind: 'years' },
+    { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
+    { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
