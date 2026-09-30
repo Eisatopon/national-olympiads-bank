@@ -146,6 +146,16 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .rl { appearance: none; position: sticky; left: 0; z-index: 2; text-align: left; background: var(--ink); border: 0; padding: 4px 10px 4px 0; color: #eef2f6; font: 600 .86rem/1.2 var(--sans); cursor: pointer; height: 26px; white-space: nowrap; border-radius: 0 3px 3px 0; display: flex; align-items: center; gap: 8px; }
 .rl:hover { color: #fff; }
 .rl.sel { color: var(--accent); }
+.mx-row[hidden] { display: none; }
+.mx-grp { margin-top: 6px; }
+.mx-grp:first-of-type { margin-top: 0; }
+.grp { color: #aebccb; font: 700 .74rem/1.2 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.grp:hover { color: #fff; }
+.grp .car { display: inline-block; width: 12px; transition: transform .15s ease; }
+.grp[aria-expanded="true"] .car { transform: rotate(90deg); }
+.grp .gn { margin-left: 6px; font-weight: 600; letter-spacing: 0; color: #7f93a8; }
+.gcell { flex: 1 1 0; min-width: var(--cw); height: 6px; border-radius: 2px; background: rgba(255, 255, 255, .07); }
+.gcell.on { background: rgba(255, 255, 255, .32); }
 .flag { font-size: 1.05rem; }
 .cell { appearance: none; position: relative; height: 26px; border: 0; padding: 0; border-radius: 3px; background: transparent; }
 .cell::after { content: ""; position: absolute; inset: 0; margin: auto; width: 4px; height: 4px; border-radius: 50%; background: rgba(255, 255, 255, .13); }
@@ -454,6 +464,13 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 const FIRST = 1969, LAST = 2026;
+const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
+const REGION_OF = {
+    gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
+    az: 'asia', cn: 'asia', sg: 'asia', in: 'asia', kr: 'asia', kf: 'asia', id: 'asia', jp: 'asia', vn: 'asia', ph: 'asia',
+    ar: 'americas', br: 'americas', ca: 'americas', mx: 'americas', um: 'americas', us: 'americas'
+};
+const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
 
@@ -619,16 +636,48 @@ function buildMatrix() {
         html += `<button type="button" class="yh" data-yh="${y}" tabindex="-1" aria-label="Year ${y}, all countries">${dec}${String(y).slice(2)}</button>`;
     }
     html += '</div>';
-    COUNTRIES.forEach(c => {
-        html += `<div class="mx-row"><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years"><span class="flag" aria-hidden="true">${c.flag}</span>${c.name}</button>`;
-        for (let y = LAST; y >= FIRST; y--) {
-            html += `<button type="button" class="cell pend" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-label="${c.name}, ${y}"></button>`;
-        }
+    const closed = loadClosedGroups();
+    REGIONS.forEach(([rk, rname]) => {
+        const list = COUNTRIES.filter(c => regionOf(c.key) === rk);
+        if (!list.length) return;
+        const open = !closed.includes(rk);
+        html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${list.length}</span></button>`;
+        for (let y = LAST; y >= FIRST; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
         html += '</div>';
+        list.forEach(c => {
+            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years"><span class="flag" aria-hidden="true">${c.flag}</span>${c.name}</button>`;
+            for (let y = LAST; y >= FIRST; y--) {
+                html += `<button type="button" class="cell pend" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-label="${c.name}, ${y}"></button>`;
+            }
+            html += '</div>';
+        });
     });
     mx.innerHTML = html;
-    gridBtns = [...mx.children].map(row => [...row.children]);
+    mx.querySelectorAll('.grp').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); toggleGroup(b.dataset.grp); }));
+    refreshGrid();
     syncMatrix();
+}
+function refreshGrid() {
+    gridBtns = [...$('#mx').children].filter(row => !row.hidden && !row.classList.contains('mx-grp')).map(row => [...row.children]);
+}
+function loadClosedGroups() {
+    try { return JSON.parse(localStorage.getItem('nob-closed-groups') || '[]'); } catch (e) { return []; }
+}
+function toggleGroup(rk) {
+    const b = $(`.grp[data-grp="${rk}"]`);
+    const open = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', String(open));
+    $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open; });
+    const closed = [...$$('#mx .grp')].filter(g => g.getAttribute('aria-expanded') !== 'true').map(g => g.dataset.grp);
+    try { localStorage.setItem('nob-closed-groups', JSON.stringify(closed)); } catch (e) {}
+    refreshGrid();
+}
+function paintGroup(rk) {
+    const keys = COUNTRIES.filter(c => regionOf(c.key) === rk).map(c => c.key);
+    $$(`#mx .mx-grp[data-grp-row="${rk}"] .gcell`).forEach(g => {
+        const y = +g.dataset.gy;
+        g.classList.toggle('on', keys.some(k => cache.has(k) && cache.get(k).some(p => p.year === y)));
+    });
 }
 
 function paintCountry(key) {
@@ -650,7 +699,7 @@ function paintCountry(key) {
         }
     }
 }
-function onCountrySettled(key) { paintCountry(key); syncMatrix(); }
+function onCountrySettled(key) { paintCountry(key); paintGroup(regionOf(key)); syncMatrix(); }
 
 function syncMatrix() {
     $$('#mx .yh').forEach(b => b.classList.toggle('sel', state.country === null && +b.dataset.yh === state.year));
