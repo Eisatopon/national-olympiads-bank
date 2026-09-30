@@ -636,11 +636,11 @@ function buildMatrix() {
         html += `<button type="button" class="yh" data-yh="${y}" tabindex="-1" aria-label="Year ${y}, all countries">${dec}${String(y).slice(2)}</button>`;
     }
     html += '</div>';
-    const closed = loadClosedGroups();
+    const openG = loadOpenGroup();
     REGIONS.forEach(([rk, rname]) => {
         const list = COUNTRIES.filter(c => regionOf(c.key) === rk);
         if (!list.length) return;
-        const open = !closed.includes(rk);
+        const open = rk === openG;
         html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${list.length}</span></button>`;
         for (let y = LAST; y >= FIRST; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
         html += '</div>';
@@ -660,17 +660,27 @@ function buildMatrix() {
 function refreshGrid() {
     gridBtns = [...$('#mx').children].filter(row => !row.hidden && !row.classList.contains('mx-grp')).map(row => [...row.children]);
 }
-function loadClosedGroups() {
-    try { return JSON.parse(localStorage.getItem('nob-closed-groups') || '[]'); } catch (e) { return []; }
+function loadOpenGroup() {
+    try { return localStorage.getItem('nob-open-group') || ''; } catch (e) { return ''; }
+}
+function setGroupOpen(rk, open) {
+    const b = $(`.grp[data-grp="${rk}"]`);
+    if (!b) return;
+    b.setAttribute('aria-expanded', String(open));
+    $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open; });
 }
 function toggleGroup(rk) {
     const b = $(`.grp[data-grp="${rk}"]`);
     const open = b.getAttribute('aria-expanded') !== 'true';
-    b.setAttribute('aria-expanded', String(open));
-    $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open; });
-    const closed = [...$$('#mx .grp')].filter(g => g.getAttribute('aria-expanded') !== 'true').map(g => g.dataset.grp);
-    try { localStorage.setItem('nob-closed-groups', JSON.stringify(closed)); } catch (e) {}
+    $$('#mx .grp').forEach(g => setGroupOpen(g.dataset.grp, false));
+    if (open) setGroupOpen(rk, true);
+    try { localStorage.setItem('nob-open-group', open ? rk : ''); } catch (e) {}
     refreshGrid();
+}
+function revealCountry(key) {
+    const rk = regionOf(key);
+    const b = $(`.grp[data-grp="${rk}"]`);
+    if (b && b.getAttribute('aria-expanded') !== 'true') toggleGroup(rk);
 }
 function paintGroup(rk) {
     const keys = COUNTRIES.filter(c => regionOf(c.key) === rk).map(c => c.key);
@@ -702,6 +712,7 @@ function paintCountry(key) {
 function onCountrySettled(key) { paintCountry(key); paintGroup(regionOf(key)); syncMatrix(); }
 
 function syncMatrix() {
+    if (state.country) revealCountry(state.country);
     $$('#mx .yh').forEach(b => b.classList.toggle('sel', state.country === null && +b.dataset.yh === state.year));
     $$('#mx .rl').forEach(b => b.classList.toggle('sel', state.year === null && b.dataset.rl === state.country));
     $$('#mx .cell').forEach(c => {
