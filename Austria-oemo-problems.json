@@ -1,0 +1,425 @@
+{
+  "competition": "Austrian Mathematical Olympiad (Federal Competition, Final Round)",
+  "years": [
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $f\\colon \\mathbb{Z}_{>0} \\to \\mathbb{Z}$ be a function with the following properties:\n\n(i) $f(1) = 0$,\n(ii) $f(p) = 1$ for all prime numbers $p$,\n(iii) $f(xy) = y f(x) + x f(y)$ for all $x, y$ in $\\mathbb{Z}_{>0}$.\n\nDetermine the smallest integer $n \\ge 2015$ that satisfies $f(n) = n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle, and let $M$ be the midpoint of the side $AB$.\n\nLet $P$ be a point in the interior of the triangle. The reflection of $P$ in $M$ is the point $Q$.\n\nFurthermore, let $D$ and $E$ be the points of intersection of the lines $AP$ and $BP$ with the sides $BC$ and $AC$, respectively.\n\nProve that the points $A$, $B$, $D$ and $E$ lie on a circle if and only if $\\angle ACP = \\angle QCB$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "We consider the following operation, which produces a new number from a given natural number: The given number is written in an arbitrary integer base $b \\ge 2$ in which it is a two-digit number with both digits different from $0$. Then the two digits are swapped, and the result, read as a numeral in base $b$, is the new number.\n\nIs it possible, using possibly several of these operations, to change every number greater than ten into a number less than or equal to ten?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $x$, $y$, $z$ be positive real numbers with $x + y + z \\ge 3$. Prove that\n$$\\frac{1}{x+y+z^2} + \\frac{1}{y+z+x^2} + \\frac{1}{z+x+y^2} \\le 1.$$\nWhen does equality hold?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $I$ be the incentre of triangle $ABC$ and let $k$ be a circle through $A$ and $B$. This circle intersects\n\n• the line $AI$ at the points $A$ and $P$,\n• the line $BI$ at the points $B$ and $Q$,\n• the line $AC$ at the points $A$ and $R$, and\n• the line $BC$ at the points $B$ and $S$,\n\nwhere the points $A$, $B$, $P$, $Q$, $R$ and $S$ are pairwise distinct and $R$ and $S$ lie in the interior of the segments $AC$ and $BC$, respectively.\n\nProve that the lines $PS$, $QR$ and $CI$ meet in a single point."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Max has $2015$ jars, numbered from $1$ to $2015$, as well as an unlimited supply of coins.\n\nConsider the following starting configurations:\n\n(a) All jars are empty.\n(b) Jar number $1$ contains $1$ coin, jar number $2$ contains $2$ coins, and so on, up to jar number $2015$, which contains $2015$ coins.\n(c) Jar number $1$ contains $2015$ coins, jar number $2$ contains $2014$ coins, and so on, up to jar number $2015$, which contains $1$ coin.\n\nNow, in each step, Max chooses a number $n$ with $1 \\le n \\le 2015$ and adds $n$ coins to every jar except jar number $n$.\n\nFor each of the three starting configurations (a), (b) and (c), determine whether Max can achieve that, after finitely many steps, every jar contains the same number of coins and at least one step has been carried out."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\alpha \\in \\mathbb{Q}^+$. Determine all functions $f\\colon \\mathbb{Q}^+ \\to \\mathbb{Q}^+$ such that\n$$f\\left(\\frac{x}{y} + y\\right) = \\frac{f(x)}{f(y)} + f(y) + \\alpha x$$\nholds for all $x, y \\in \\mathbb{Q}^+$.\n\nHere $\\mathbb{Q}^+$ denotes the set of positive rational numbers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle. Its incircle touches the sides $BC$, $CA$ and $AB$ at the points $D$, $E$ and $F$, respectively. Let $P$ be the point of intersection of the line $ED$ with the perpendicular to $EF$ through $F$, and let $Q$ be the point of intersection of the line $EF$ with the perpendicular to $ED$ through $D$.\n\nProve that the point $B$ is the midpoint of the segment $PQ$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "We consider arrangements of the numbers $1$ to $64$ on the squares of an $8 \\times 8$ chessboard, where each square contains exactly one number and each number occurs exactly once.\n\nA number in such an arrangement is called super-plus-good if it is the largest number in its row and at the same time the smallest number in its column.\n\nProve or disprove each of the following statements:\n\n(a) Every such arrangement contains at least one super-plus-good number.\n(b) Every such arrangement contains at most one super-plus-good number."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a, b, c \\ge -1$ be real numbers with $a^3 + b^3 + c^3 = 1$.\n\nProve that\n$$a + b + c + a^2 + b^2 + c^2 \\le 4.$$\nWhen does equality hold?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A game board consists of $n \\times n$ square cells, where $n \\ge 2$. Cells that lie directly horizontally or vertically next to a cell are called its neighbours. At the beginning, $k$ tokens are distributed on the cells, where a cell may also contain several tokens or none.\n\nIn each move, one chooses a cell that contains at least as many tokens as it has neighbours and places one of these tokens on each neighbouring cell. The game ends when there is no such cell to choose.\n\n(a) Determine the smallest $k$ for which the game does not end for any possible initial arrangement and choice of moves.\n(b) Determine the largest $k$ for which the game ends for any possible initial arrangement and choice of moves."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a$, $b$, $c$ be integers for which\n$$\\frac{ab}{c} + \\frac{ac}{b} + \\frac{bc}{a}$$\nis an integer.\n\nProve that each of the numbers\n$$\\frac{ab}{c}, \\quad \\frac{ac}{b} \\quad \\text{and} \\quad \\frac{bc}{a}$$\nis an integer."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let a real number $\\alpha$ be given.\n\nDetermine, depending on $\\alpha$, all functions $f\\colon \\mathbb{R} \\to \\mathbb{R}$ with\n$$f\\bigl(f(x+y)\\,f(x-y)\\bigr) = x^2 + \\alpha y f(y)$$\nfor all $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "On a necklace, $2016$ beads are arranged in a circle, each of which has one of the colours black, blue or green. In each step, every bead is simultaneously replaced by a new bead, where the colour of the new bead is determined as follows: If the two original neighbours had the same colour, the new bead has their colour. If the neighbours had two different colours, the new bead has the third colour.\n\n(a) Is there such a necklace, on which half of the beads are black and the other half green, from which a necklace consisting only of blue beads can be obtained by such steps?\n(b) Is there such a necklace, on which one thousand beads are black and the remaining ones green, from which a necklace consisting only of blue beads can be obtained by such steps?\n(c) Is it possible, starting from a necklace containing exactly two adjacent black beads and otherwise only blue beads, to arrive by such steps at a necklace containing exactly one green bead and otherwise only blue beads?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $(a_n)_{n\\ge 0}$ be the sequence of rational numbers with $a_0 = 2016$ and\n$$a_{n+1} = a_n + \\frac{2}{a_n}$$\nfor all $n \\ge 0$.\n\nProve that this sequence does not contain the square of any rational number."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "(a) Determine the largest possible value $M$ that $x + y + z$ can take if $x$, $y$ and $z$ are positive real numbers with\n$$16xyz = (x+y)^2(x+z)^2.$$\n(b) Prove that there are infinitely many triples $(x, y, z)$ of positive rational numbers for which\n$$16xyz = (x+y)^2(x+z)^2 \\quad \\text{and} \\quad x + y + z = M$$\nhold."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute-angled triangle, $H$ its orthocenter, and $D$, $E$ and $F$ the feet of the altitudes from $A$, $B$ and $C$, respectively. Let $P$ be the point of intersection of $DF$ with the altitude from $B$. The perpendicular to $BC$ through $P$ intersects the side $AB$ at $Q$. Let $N$ be the point of intersection of $EQ$ with the altitude from $A$.\n\nProve that $N$ bisects the segment $AH$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $S = \\{1, 2, \\dots, 2017\\}$.\n\nDetermine the largest natural number $n$ for which there exist $n$ distinct subsets of $S$ such that for no two of these subsets their union is equal to $S$."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\alpha \\ne 0$ be a real number.\n\nDetermine all functions $f\\colon \\mathbb{R}_{>0} \\to \\mathbb{R}_{>0}$ with\n$$f\\bigl(f(x) + y\\bigr) = \\alpha x + \\frac{1}{f\\left(\\frac{1}{y}\\right)}$$\nfor all $x, y \\in \\mathbb{R}_{>0}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $A$, $B$, $C$ and $D$ be four distinct points on a circle, in this order. In the cyclic quadrilateral $ABCD$, let $AB$ be the (unique) longest side.\n\nProve that the inequality\n$$AB + BD > AC + CD$$\nholds."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "There are $n$ children in a room, each of whom has at least one sweet. In round $1$, round $2$, and so on, further sweets are distributed to these children according to the following rule:\n\nIn round $k$, every child whose number of sweets is coprime to $k$ receives one additional sweet.\n\nProve that after some rounds the children in the room have at most two different numbers of sweets."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle and $P$ a point in the interior of the triangle such that the centres $M_B$ and $M_A$ of the circumcircles $k_B$ and $k_A$ of $ACP$ and $BCP$, respectively, lie outside the triangle $ABC$. Furthermore, let the three points $A$, $P$ and $M_A$ be collinear, and likewise the three points $B$, $P$ and $M_B$. The line through $P$ parallel to the side $AB$ intersects the circles $k_A$ and $k_B$ at the points $D$ and $E$, respectively, with $D, E \\ne P$.\n\nProve that then $DE = AC + BC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "There are $2018$ points on a circle. Each of these points is labelled with an integer. Each number is greater than the sum of the two numbers that immediately precede it in the clockwise direction.\n\nDetermine the largest possible number of positive numbers that can be among the $2018$ numbers."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all digits $z$ such that for every integer $k \\ge 1$ there exists an integer $n \\ge 1$ with the property that the decimal representation of $n^9$ ends with at least $k$ digits $z$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all functions $f\\colon \\mathbb{R} \\to \\mathbb{R}$ for which\n$$f\\bigl(2x + f(y)\\bigr) = x + y + f(x)$$\nholds for all $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A (convex) trapezoid $ABCD$ is called good if it has a circumcircle, the sides $AB$ and $CD$ are the parallel sides, and $CD$ is shorter than $AB$. For a good trapezoid $ABCD$ the following notation is introduced.\n\n• The line through $B$ parallel to $AD$ intersects the extension of the side $CD$ at the point $S$.\n• The two tangents from $S$ to the circumcircle of the trapezoid touch it at $E$ and $F$, respectively, where $E$ lies on the same side of the line $CD$ as $A$.\n\nGive a condition, as simple as possible (expressed in terms of the side lengths and/or the angles of the trapezoid), that is equivalent to the two angles $\\angle BSE$ and $\\angle FSC$ of a good trapezoid $ABCD$ being equal."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In Oddland there are stamps with values of $1$ cent, $3$ cents, $5$ cents, and so on, with exactly one type of stamp for each odd number. The Oddland postal service prescribes: For any two different values, the number of stamps of the lower value on a letter must be at least as large as the number of stamps of the higher value.\n\nIn Squareland, on the other hand, there are stamps with values of $1$ cent, $4$ cents, $9$ cents, and so on, with exactly one type of stamp for each perfect square. In Squareland, stamps may be combined arbitrarily without any further rules.\n\nProve for every positive integer $n$: In the two countries, there are equally many ways to put stamps of total value $n$ cents on a letter in accordance with the regulations. Here, arranging the same stamps differently on a letter does not count as a different way."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a$, $b$ and $c$ be positive real numbers with $a + b + c + 2 = abc$.\n\nProve that\n$$(a+1)(b+1)(c+1) \\ge 27.$$\nWhen does equality hold?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute-angled triangle. Let $D$ and $E$ be the feet of the altitudes on the sides $BC$ and $AC$, respectively. The points $F$ and $G$ lie on the segments $AD$ and $BE$, respectively, such that\n$$\\frac{AF}{FD} = \\frac{BG}{GE}.$$\nThe line through $C$ and $F$ intersects $BE$ at the point $H$, and the line through $C$ and $G$ intersects $AD$ at the point $I$.\n\nProve that the points $F$, $G$, $H$ and $I$ lie on a circle."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine the smallest positive integer $n$ with the following property: For all positive integers $x$, $y$ and $z$ with $x \\mid y^3$ and $y \\mid z^3$ and $z \\mid x^3$, it always also holds that $xyz \\mid (x+y+z)^n$."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a convex cyclic quadrilateral whose diagonals intersect at $S$. Furthermore, let $P$ be the circumcentre of triangle $ABS$ and $Q$ the circumcentre of triangle $BCS$. The line through $P$ parallel to $AD$ and the line through $Q$ parallel to $CD$ intersect at the point $R$.\n\nProve that $R$ lies on $BD$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "There are $2020$ points in the plane, some of which are black and the rest green.\n\nFor every black point the following holds: There are exactly two green points at distance $2020$ from this black point.\n\nDetermine the smallest possible number of green points."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a$ be a fixed positive integer and let $(e_n)$ be the sequence defined by $e_0 = 1$ and\n$$e_n = a + \\prod_{k=0}^{n-1} e_k$$\nfor $n \\ge 1$.\n\n(a) Prove that there are infinitely many primes that divide some element of the sequence.\n(b) Prove that there is a prime that does not divide any element of the sequence."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all functions $f\\colon \\mathbb{R} \\to \\mathbb{R}$ such that\n$$f\\bigl(xf(y) + 1\\bigr) = y + f\\bigl(f(x)f(y)\\bigr)$$\nholds for all $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $h$ be a semicircle with diameter $AB$. An arbitrary point $P$ in the interior of the segment $AB$ is chosen. The perpendicular to $AB$ through $P$ intersects $h$ at the point $C$. The segment $PC$ divides the region of the semicircle into two parts. In each of them, the circle is inscribed that touches $AB$, $PC$ and $h$. The points where the two circles touch $AB$ are denoted by $D$ and $E$, where $D$ lies between $A$ and $P$.\n\nProve that the size of the angle $\\angle DCE$ does not depend on the choice of $P$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The players Alfred and Bertrand jointly determine a polynomial $x^n + a_{n-1}x^{n-1} + \\dots + a_0$ of the given degree $n \\ge 2$. To do so, they alternately choose, in $n$ moves, the value of one coefficient each, where all coefficients must be integers and $a_0 \\ne 0$ must hold. Alfred makes the first move. Alfred wins if the resulting polynomial has an integer root.\n\n(a) For which $n$ can Alfred force a win if the coefficients $a_j$ are determined from right to left, i.e. for $j = 0, 1, \\dots, n-1$?\n(b) For which $n$ can Alfred force a win if the coefficients $a_j$ are determined from left to right, i.e. for $j = n-1, n-2, \\dots, 0$?"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a$, $b$ and $c$ be pairwise distinct natural numbers. Prove that\n$$\\frac{a^3+b^3+c^3}{3}\\ge abc+a+b+c.$$\nWhen does equality hold?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Mr. Ganzgenau would like to take his tea mug out of the microwave exactly at the front. Mr. Ganzgenau's microwave, however, does not want to play along exactly like that.\n\nTo be exact, the two play the following game:\n\nLet $n$ be a positive integer. In $n$ seconds, the turntable of the microwave makes one complete revolution. Each time the microwave is switched on, it rotates for an integer number of seconds either clockwise or counterclockwise, so that there are $n$ possible positions at which the tea mug can come to rest. One of these positions is exactly at the front.\n\nAt the beginning, the microwave rotates the tea mug to one of the $n$ possible positions. After that, in each move Mr. Ganzgenau enters an integer number of seconds, and the microwave decides whether to rotate for this number of seconds clockwise or counterclockwise.\n\nFor which $n$ can Mr. Ganzgenau force that he is able to take the tea mug out of the microwave exactly at the front after finitely many moves?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all triples $(a,b,c)$ of natural numbers $a$, $b$ and $c$ for which\n$$a^{b+20}(c-1)=c^{b+21}-1$$\nholds."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\alpha$ be a real number. Determine all functions $f\\colon\\mathbb{R}\\to\\mathbb{R}$ such that\n$$f(f(x)+y)=f(x^2-y)+\\alpha f(x)y$$\nfor all $x,y\\in\\mathbb{R}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCD$ be a convex cyclic quadrilateral with diagonals $AC$ and $BD$. Each of the four vertices is reflected in the diagonal on which it does not lie.\n\n(a) Investigate when the four points obtained in this way lie on a straight line, and give an equivalent condition on the cyclic quadrilateral $ABCD$ for this that is as simple as possible.\n\n(b) Prove that in all other cases the four points obtained in this way lie on a circle."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $p$ be an odd prime and let $M$ be a set consisting of $\\frac{p^2+1}{2}$ perfect squares. Investigate whether it is possible to choose $p$ elements from this set whose arithmetic mean is an integer."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all functions $f\\colon\\mathbb{Z}_{>0}\\to\\mathbb{Z}_{>0}$ such that\n$$a-f(b)\\mid af(a)-bf(b)\\quad\\text{for all } a,b\\in\\mathbb{Z}_{>0}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute-angled, non-isosceles triangle with orthocenter $H$, midpoint $M$ of the side $AB$, and angle bisector $w$ of the angle $\\angle ACB$. Furthermore, let $S$ be the intersection point of the perpendicular bisector of the side $AB$ with $w$, and let $F$ be the foot of the perpendicular from $H$ to $w$.\n\nProve that the segments $MS$ and $MF$ are of equal length."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Lisa writes a positive integer in the decimal system on the board and then, in each move, does the following:\n\nThe last digit of the number on the board is erased, and then four times the erased digit is added to the remaining shorter number (or to $0$ if the number had only one digit). The number on the board is then replaced by the result of this computation.\n\nLisa repeats this until she obtains, for the first time, a number that has already been on the board before.\n\n(a) Prove that the sequence of moves always terminates.\n\n(b) Which number is on the board at the end if Lisa starts with the number $53^{2022}-1$?\n\nExample: If Lisa starts with the number $2022$, she obtains $202+4\\cdot 2=210$ in the first move and altogether the sequence\n$$2022\\mapsto 210\\mapsto 21\\mapsto 6\\mapsto 24\\mapsto 18\\mapsto 33\\mapsto 15\\mapsto 21.$$\nSince Lisa obtains $21$ for the second time, the sequence of moves terminates."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Decide whether for every polynomial $P$ of degree $\\ge 1$ with integer coefficients there exist infinitely many primes each of which divides at least one $P(n)$ for some positive integer $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an isosceles triangle with base $AB$.\n\nWe choose a point $P$ in the interior of the altitude of the triangle through $C$. The circle with diameter $CP$ intersects the line through $B$ and $P$ a second time at the point $D_P$ and the line through $A$ and $C$ a second time at the point $E_P$.\n\nProve that there exists a point $F$ such that for every choice of $P$ the points $D_P$, $E_P$ and $F$ lie on a straight line."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "(a) Prove that a square with side length $1000$ can be dissected into $31$ squares, at least one of which has side length less than $1$.\n\n(b) Prove that a corresponding dissection into $30$ squares is also possible."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\alpha$ be a nonzero real number. Determine all functions $f\\colon\\mathbb{R}\\to\\mathbb{R}$ such that\n$$f(f(x+y))=f(x+y)+f(x)f(y)+\\alpha xy$$\nfor all $x,y\\in\\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with circumcenter $O$. The circumcircle of triangle $AOC$ intersects the side $BC$ at the points $C$ and $D$, and the side $AB$ at the points $A$ and $E$.\n\nProve that the triangles $BDE$ and $AOC$ have circumcircles of equal radius."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Alice and Bob play a game in which they alternately draw segments of length $1$ in the Euclidean plane. Alice starts and draws the first segment; after that, each segment must start at the endpoint of the most recently drawn segment. It is not allowed to draw a segment that coincides with the previously drawn segment. If the new segment has at least one point in common with one of the previous segments, apart from the starting point of the new segment, then the player who drew it loses.\n\na) Prove that both Alice and Bob can force the game to end if it does not matter who wins.\n\nb) Does either of the two players have a winning strategy?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "The $2023$ numbers\n$$2023,2023,\\dots,2023$$\nare written on a board. The numbers on the board are changed by a sequence of moves. In each move, one chooses any two numbers on the board, call them $x$ and $y$, erases them and replaces them by the number $\\frac{x+y}{4}$. Such moves are carried out until only one number remains on the board.\n\nProve that this number is always greater than $1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute-angled triangle with $AC\\ne BC$, let $M$ be the midpoint of the side $AB$, $H$ the orthocenter, $D$ on $BC$ the foot of the altitude through $A$, and $E$ on $AC$ the foot of the altitude through $B$.\n\nProve that the lines $AB$, $DE$ and the line through $C$ perpendicular to $MH$ intersect in one point $S$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Investigate whether there exists a real number $r$ such that the equation\n$$x^3-2023x^2-2023x+r=0$$\nhas three distinct rational solutions."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine the smallest constant $C$ such that for all real numbers $X$ and $Y$ the inequality\n$$(X+Y)^2(X^2+Y^2+C)+(1-XY)^2\\ge 0$$\nholds.\n\nFor which values of $X$ and $Y$ does equality hold in the inequality with this smallest constant $C$?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute-angled triangle with $AB>AC$. Let $D$, $E$ and $F$ be the feet of the altitudes on $BC$, $AC$ and $AB$, respectively. Let $S$ be the intersection point of the lines $EF$ and $BC$.\n\nProve that the circumcircles $k_1$ and $k_2$ of the triangles $AEF$ and $DES$ are tangent to each other at $E$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Initially, the numbers $1,2,\\dots,2024$ are written on a board. Trixi and Nana play a game in which they take turns. Trixi begins.\n\nThe player whose turn it is chooses two numbers $a$ and $b$, erases both, and writes their (possibly negative) difference $a-b$ on the board. This is repeated until, after $2023$ steps, only a single number remains on the board. Trixi wins if this number is divisible by $3$; otherwise Nana wins.\n\nWhich of the two players has a winning strategy?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an obtuse-angled triangle with orthocenter $H$ and centroid $S$. Let $D$, $E$ and $F$ denote the midpoints of the sides $BC$, $AC$ and $AB$, respectively. Prove that the circumcircle of $ABC$, the circumcircle of $DEF$ and the circle with diameter $HS$ pass through two common points."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer and let $z_1,z_2,\\dots,z_n$ be positive integers such that for $j=1,2,\\dots,n$ the inequalities\n$$z_j\\le j$$\nhold and $z_1+\\dots+z_n$ is even.\n\nProve that the number $0$ occurs among the values\n$$z_1\\pm z_2\\pm\\dots\\pm z_n,$$\nwhere $+$ or $-$ can be chosen independently for each operation."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For each prime $p$, determine the number of residue classes modulo $p$ that can be represented as $a^2+b^2$ modulo $p$, where $a$ and $b$ are arbitrary integers."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $k$ and $n$ be positive integers. Determine all functions $f\\colon\\mathbb{R}\\to\\mathbb{R}$ such that\n$$x^kf(y)-y^nf(x)=f\\left(\\frac{y}{x}\\right)$$\nfor all real numbers $x$ and $y$ with $x\\ne 0$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with $AC<BC$. Let $L$ be the intersection point of the angle bisector of $\\angle ACB$ with the perpendicular bisector of $AC$, let $M$ be the midpoint of the side $BC$, and let $N$ be the midpoint of the arc $AB$ of the circumcircle that contains $C$.\n\nProve that $LMN$ is a right-angled triangle."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Anna and Bertha play two games on a regular $2025$-gon, the triangle game and the quadrilateral game. In both games, in each move a diagonal of the $2025$-gon is drawn that has not yet been drawn and that does not intersect any already drawn diagonal at an interior point. The two players alternate, with Anna starting. The game ends when no further permitted diagonal can be drawn.\n\n(a) Triangle game: If one or two triangles are created by drawing the diagonal, then the player marks these triangles with her initial. Whoever has marked the most triangles at the end wins. In case of a tie, the game ends in a draw. Does Anna or Bertha have a winning strategy, or does the game end in a draw with optimal play?\n\n(b) Quadrilateral game: If one or two quadrilaterals that are not subdivided are created by drawing the diagonal, then the player marks these quadrilaterals with her initial. Such quadrilaterals may not be subdivided by a diagonal afterwards. Whoever has marked the most quadrilaterals at the end wins. In case of a tie, the game ends in a draw. Does Anna or Bertha have a winning strategy, or does the game end in a draw with optimal play?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer and let $a_1,a_2,\\dots,a_n$ be positive real numbers with $a_1a_2\\cdots a_n=2^n$. Prove that\n$$a_1^2+a_1a_2^2+a_1a_2a_3^2+\\dots+a_1a_2\\cdots a_{n-1}a_n^2\\ge 4(2^n-1)$$\nholds, and determine when equality occurs."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle. For every integer $n\\ge 2$, let the point $D_n$ lie on the segment $CB$ with $CD_n=\\frac{1}{n}CB$, and let the point $E_n$ lie on the segment $CA$ with $CE_n=\\frac{1}{n+1}CA$.\n\nProve that the lines $D_nE_n$ all pass through a common point."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all positive integers $n$ for which there exist positive integers\n$$z_1<z_2<\\dots<z_n$$\nwith $\\gcd(z_j,z_k)=z_k-z_j$ for all $j$ and $k$ with $1\\le j<k\\le n$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute-angled triangle with orthocenter $H$ and circumcircle $k$. Let $S$ be the intersection point of the tangents to the circumcircle $k$ at $A$ and $B$, let $M$ be the midpoint of $AB$, and let $H'$ be the reflection of the point $H$ in $AB$. Let $P$ be the intersection point of the line $MH$ with the circumcircle $k$ such that $H$ lies between $M$ and $P$.\n\nProve that the points $S$, $H'$ and $P$ lie on a straight line."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Alice and Bob play a game. Initially, there is a pile of $n$ stones on the table, where $n$ is a positive integer. In each move, either one stone of any pile is removed from the table, or an existing pile is split into two new non-empty piles. The two players move alternately, with Alice starting. If a player has no valid move left, the other player has won.\n\nDetermine for each $n$ which of the two players has a winning strategy."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all values $a$ and $b$ for which there exists a sequence $(u_n)_{n\\ge 1}$ of positive integers with $u_1=a$, $u_2=b$ and\n$$u_{2n}=\\operatorname{GM}(u_{2n+1},u_{2n-1})\\quad\\text{and}\\quad u_{2n+1}=\\operatorname{AM}(u_{2n},u_{2n+2})\\quad\\text{for } n\\ge 1.$$\nHere $\\operatorname{AM}(x,y)$ denotes the arithmetic mean and $\\operatorname{GM}(x,y)$ the geometric mean of the two numbers $x$ and $y$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all real numbers $\\alpha$ for which there exists a function $f\\colon\\mathbb{R}\\to\\mathbb{R}$ such that\n$$f(f(x)+y)=\\alpha x+f(x+f(f(y)))$$\nholds for all real numbers $x$ and $y$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCDEF$ be a convex hexagon in which each of the three segments connecting the midpoints of opposite sides bisects the area of the hexagon.\n\nProve that the three connecting segments pass through a common point."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "On each of two strips with $100$ cells each, numbered from $1$ to $100$, there are $50$ tokens.\n\nOn the first strip, the tokens lie on the cells $1,3,5,\\dots,99$. Now each token is moved one or more cells to the right, onto a cell with a larger number. The tokens may not jump over each other in doing so, and no cell may end up with two or more tokens on it. Let $A$ be the number of possible configurations of the tokens that can be reached in this way.\n\nOn the second strip, the tokens lie on the cells $1,2,3,\\dots,50$. Again, each token is moved one or more cells to the right. The tokens may not jump over each other in doing so, and no cell may end up with two or more tokens on it. In addition, a token cannot be moved further than to twice its starting position. Let $B$ be the number of possible configurations of the tokens that can be reached in this way.\n\nProve that $A=B$."
+        }
+      ]
+    }
+  ]
+}
