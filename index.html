@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 34 Countries, 1962–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Austria, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Croatia, the Czech Republic and Slovakia, Germany, Hong Kong, Ireland, India, Indonesia, Italy, Japan, Lithuania, Mexico, the Netherlands, Norway, the Philippines, Poland, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Switzerland, Turkey, the USA and Vietnam. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 42 Countries, 1962–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Austria, Brazil, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Iceland, Ireland, India, Indonesia, Italy, Japan, Latvia, Lithuania, Mexico, the Netherlands, Norway, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Switzerland, Turkey, the USA and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -92,6 +92,14 @@
     --lt: #43a047; --lt-ink: #1b5e20; --lt-tint: #e8f5e9;
     --ltt: #66bb6a; --ltt-ink: #2e6b31; --ltt-tint: #edf7ee;
     --si: #29b6f6; --si-ink: #01579b; --si-tint: #e1f5fe;
+    --lv: #8e2430; --lv-ink: #5e1820; --lv-tint: #f7e9eb;
+    --eet: #0072ce; --eet-ink: #004b87; --eet-tint: #e5f1fb;
+    --pt: #2e7d32; --pt-ink: #1b4d1e; --pt-tint: #e8f3e8;
+    --dk: #c8102e; --dk-ink: #8a0b20; --dk-tint: #fbe7ea;
+    --fi: #1a5fb4; --fi-ink: #103d75; --fi-tint: #e6eef8;
+    --is: #02529c; --is-ink: #013566; --is-tint: #e5eef6;
+    --frt: #0055a4; --frt-ink: #003a70; --frt-tint: #e5eef7;
+    --cyt: #d57800; --cyt-ink: #8f5000; --cyt-tint: #fdf1e1;
     --um: #c62828; --um-ink: #8e0000; --um-tint: #fde7e7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -140,6 +148,14 @@
 .f-lt { --f: var(--lt); --f-ink: var(--lt-ink); --f-tint: var(--lt-tint); }
 .f-ltt { --f: var(--ltt); --f-ink: var(--ltt-ink); --f-tint: var(--ltt-tint); }
 .f-si { --f: var(--si); --f-ink: var(--si-ink); --f-tint: var(--si-tint); }
+.f-lv { --f: var(--lv); --f-ink: var(--lv-ink); --f-tint: var(--lv-tint); }
+.f-eet { --f: var(--eet); --f-ink: var(--eet-ink); --f-tint: var(--eet-tint); }
+.f-pt { --f: var(--pt); --f-ink: var(--pt-ink); --f-tint: var(--pt-tint); }
+.f-dk { --f: var(--dk); --f-ink: var(--dk-ink); --f-tint: var(--dk-tint); }
+.f-fi { --f: var(--fi); --f-ink: var(--fi-ink); --f-tint: var(--fi-tint); }
+.f-is { --f: var(--is); --f-ink: var(--is-ink); --f-tint: var(--is-tint); }
+.f-frt { --f: var(--frt); --f-ink: var(--frt-ink); --f-tint: var(--frt-tint); }
+.f-cyt { --f: var(--cyt); --f-ink: var(--cyt-ink); --f-tint: var(--cyt-tint); }
 .f-um { --f: var(--um); --f-ink: var(--um-ink); --f-tint: var(--um-tint); }
 
 /* ==========================================================
@@ -400,7 +416,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>34</b><span>countries</span></div>
+            <div class="stat"><b>42</b><span>countries</span></div>
             <div class="stat"><b>1962–2026</b><span>years</span></div>
         </div>
     </div>
@@ -542,6 +558,14 @@ REGION_OF.rot = 'europe';
 REGION_OF.lt = 'europe';
 REGION_OF.ltt = 'europe';
 REGION_OF.si = 'europe';
+REGION_OF.lv = 'europe';
+REGION_OF.eet = 'europe';
+REGION_OF.pt = 'europe';
+REGION_OF.dk = 'europe';
+REGION_OF.fi = 'europe';
+REGION_OF.is = 'europe';
+REGION_OF.frt = 'europe';
+REGION_OF.cyt = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -592,6 +616,14 @@ const COUNTRIES = [
     { key: 'lt', name: 'Lithuania', flag: '🇱🇹', file: 'Lithuania-lmmo-problems.json', kind: 'years' },
     { key: 'ltt', name: 'Lithuania TST', flag: '🇱🇹', file: 'Lithuania-tst-problems.json', kind: 'years' },
     { key: 'si', name: 'Slovenia', flag: '🇸🇮', file: 'Slovenia-national-problems.json', kind: 'years' },
+    { key: 'lv', name: 'Latvia', flag: '🇱🇻', file: 'Latvia-vol-problems.json', kind: 'years' },
+    { key: 'eet', name: 'Estonia TST', flag: '🇪🇪', file: 'Estonia-tst-problems.json', kind: 'years' },
+    { key: 'pt', name: 'Portugal', flag: '🇵🇹', file: 'Portugal-opm-problems.json', kind: 'years' },
+    { key: 'dk', name: 'Denmark', flag: '🇩🇰', file: 'Denmark-georgmohr-problems.json', kind: 'years' },
+    { key: 'fi', name: 'Finland', flag: '🇫🇮', file: 'Finland-maol-problems.json', kind: 'years' },
+    { key: 'is', name: 'Iceland', flag: '🇮🇸', file: 'Iceland-final-problems.json', kind: 'years' },
+    { key: 'frt', name: 'France TST', flag: '🇫🇷', file: 'France-tst-problems.json', kind: 'years' },
+    { key: 'cyt', name: 'Cyprus TST', flag: '🇨🇾', file: 'Cyprus-tst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
