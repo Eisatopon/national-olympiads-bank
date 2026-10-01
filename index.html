@@ -108,6 +108,7 @@
     --ua: #2d6fb5; --ua-ink: #1b4a7a; --ua-tint: #e3eef9;
     --bg: #00966e; --bg-ink: #005c43; --bg-tint: #dcf3ec;
     --kz: #00a3c4; --kz-ink: #006a80; --kz-tint: #dcf4f9;
+    --ee: #4891d9; --ee-ink: #2b5e94; --ee-tint: #e6f0fb;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -171,6 +172,7 @@
 .f-ua { --f: var(--ua); --f-ink: var(--ua-ink); --f-tint: var(--ua-tint); }
 .f-bg { --f: var(--bg); --f-ink: var(--bg-ink); --f-tint: var(--bg-tint); }
 .f-kz { --f: var(--kz); --f-ink: var(--kz-ink); --f-tint: var(--kz-tint); }
+.f-ee { --f: var(--ee); --f-ink: var(--ee-ink); --f-tint: var(--ee-tint); }
 
 /* ==========================================================
    Base
@@ -587,6 +589,7 @@ REGION_OF.mk = 'europe';
 REGION_OF.ua = 'europe';
 REGION_OF.bg = 'europe';
 REGION_OF.kz = 'asia';
+REGION_OF.ee = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -652,6 +655,7 @@ const COUNTRIES = [
     { key: 'ua', name: 'Ukraine', flag: '🇺🇦', file: 'Ukraine-umo-problems.json', kind: 'years' },
     { key: 'bg', name: 'Bulgaria', flag: '🇧🇬', file: 'Bulgaria-nmo-problems.json', kind: 'years' },
     { key: 'kz', name: 'Kazakhstan', flag: '🇰🇿', file: 'Kazakhstan-rmo-problems.json', kind: 'years' },
+    { key: 'ee', name: 'Estonia', flag: '🇪🇪', file: 'Estonia-final-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
