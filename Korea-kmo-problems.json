@@ -576,6 +576,43 @@
      "problem": "The ten numbers $1, 2, \\dots, 10$ are written on a blackboard, and Nahyun repeats the following operation: she chooses two of the ten numbers on the board, neither of which divides the other, erases them, and writes their greatest common divisor and least common multiple. The process stops when, among the ten numbers on the board, every two are such that one divides the other. What is the maximum number of operations Nahyun can perform?"
     }
    ]
+  },
+  {
+   "year": 2025,
+   "problems": [
+    {
+     "number": 1,
+     "problem": "Find all positive integers $n$ satisfying the following condition.\n\n(Condition) There exist distinct positive divisors $x, y, z, w$ of $n$ such that $x+y+z+w$ is a multiple of $n$."
+    },
+    {
+     "number": 2,
+     "problem": "Let $ABC$ be an acute triangle that is not isosceles, let $\\Gamma$ be its circumcircle, and let $D, E, F$ be the feet of the perpendiculars from $A, B, C$ to the opposite sides, respectively. Let $\\ell$ be the line tangent to $\\Gamma$ at $B$, let $P$ be the point where the perpendicular bisector of segment $BD$ meets $\\ell$, and let $Q\\ (\\neq A)$ be the point where line $AD$ meets $\\Gamma$. Let lines $BE$ and $PQ$ meet $\\Gamma$ again at $S\\ (\\neq B)$ and $T\\ (\\neq Q)$, respectively, and let $U$ be the intersection of lines $FE$ and $ST$. Prove that the circumcircle of triangle $FUS$ passes through the midpoint of segment $BE$."
+    },
+    {
+     "number": 3,
+     "problem": "For positive integers $n, k$, the $n$ sets $X_1, X_2, \\dots, X_n$ satisfy all three of the following conditions.\n- For any positive integers $i, j$ $(1 \\le i < j \\le n)$, $X_i \\cap X_j$ is the empty set.\n- For any positive integer $t$ $(1 \\le t \\le n)$, the number of elements of $X_t$ is $k$.\n- $X_1 \\cup X_2 \\cup \\cdots \\cup X_n = \\{1, 2, \\dots, nk\\}$.\n\nFor a positive integer $t$ $(1 \\le t \\le n)$, let $p_t$ be the number of ordered pairs $(i, j)$ with $i \\in X_t$, $j \\in X_{t+1}$ and $i < j$. (Here $X_{n+1} = X_1$.) Prove that if $p_1 = p_2 = \\cdots = p_n$, then $p_1 < \\frac{3k^2}{4}$."
+    },
+    {
+     "number": 4,
+     "problem": "Let $\\mathbb{N}_0$ be the set of nonnegative integers. Find all functions $f : \\mathbb{N}_0 \\to \\mathbb{N}_0$ satisfying the following condition. (Here $f^{(0)}(x) = x$, and for a positive integer $k$, $f^{(k)}(x)$ is the function obtained by composing $f(x)$ $k$ times, that is, $(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{k \\text{ copies of } f})(x)$.)\n\n(Condition) For all $a, b, c \\in \\mathbb{N}_0$, $$f^{(a)}(b) + f^{(b)}(c) + f^{(c)}(a) = f^{(a+b+c)}(a + b + c).$$"
+    },
+    {
+     "number": 5,
+     "problem": "A point $D$ on side $BC$ of triangle $ABC$ satisfies $\\overline{AD} = \\overline{BD} = \\frac{1}{2}\\overline{CD}$. For a point $P\\ (\\neq A, D)$ on segment $AD$, let $M$ be the midpoint of segment $PD$, and let $J$ be the incenter of triangle $MDC$. Suppose the circumcircle of triangle $MJC$ and the circumcircle of triangle $ABP$ meet at two distinct points $Q$ and $R$. Prove that the three points $D, Q, R$ are collinear."
+    },
+    {
+     "number": 6,
+     "problem": "Find the smallest positive real number $c$ such that for any real numbers $x_1, x_2, \\dots, x_{99}$ satisfying $0 < x_1 < x_2 < \\cdots < x_{99}$, the following inequality always holds: $$3\\sqrt{x_1} + 4\\left(\\sqrt{x_2 - x_1} + \\sqrt{x_3 - x_2} + \\cdots + \\sqrt{x_{99} - x_{98}}\\right) \\le c\\left(\\sqrt{x_2} + \\sqrt{x_3} + \\cdots + \\sqrt{x_{98}}\\right) + 5\\sqrt{x_{99}}.$$"
+    },
+    {
+     "number": 7,
+     "problem": "For positive integers $M\\ (\\ge 2)$ and $n$, a school has $M$ students and $6n$ clubs. Each student wants to choose some of these $6n$ clubs to join. Prove that if the inequality $$M \\cdot \\left(\\sum_{i=0}^{n-1} \\binom{6n}{i}\\right) \\le 2^{6n}$$ holds, then it is possible for each student to choose the clubs to join so that the following condition is satisfied.\n\n(Condition) For any two distinct students, the number of clubs joined by exactly one of the two students is at least $n$."
+    },
+    {
+     "number": 8,
+     "problem": "For a positive integer $n\\ (\\ge 3)$, define $f(n)$ to be the smallest positive integer $m$ greater than $n$ such that $m(m-1)$ is a multiple of $n(n-1)$. Prove that the following two statements (1) and (2) are equivalent.\n\n(1) $f(n) > \\frac{n(n-1)}{2}$\n\n(2) $n = 9$; or $n$ is a prime and $n = 2^k + 1$ for some positive integer $k$; or $n - 1$ is a prime and $n = 2^k$ for some positive integer $k$."
+    }
+   ]
   }
  ]
 }
