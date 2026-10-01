@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 48 Countries, 1962–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Brazil, Bulgaria, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Italy, Japan, Latvia, Lithuania, Mexico, the Netherlands, New Zealand, North Macedonia, Norway, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Switzerland, Turkey, Ukraine, the USA and Vietnam. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 49 Countries, 1962–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Brazil, Bulgaria, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Italy, Japan, Kazakhstan, Latvia, Lithuania, Mexico, the Netherlands, New Zealand, North Macedonia, Norway, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Switzerland, Turkey, Ukraine, the USA and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -107,6 +107,7 @@
     --mk: #b5651d; --mk-ink: #7a4210; --mk-tint: #f8ebdf;
     --ua: #2d6fb5; --ua-ink: #1b4a7a; --ua-tint: #e3eef9;
     --bg: #00966e; --bg-ink: #005c43; --bg-tint: #dcf3ec;
+    --kz: #00a3c4; --kz-ink: #006a80; --kz-tint: #dcf4f9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -169,6 +170,7 @@
 .f-mk { --f: var(--mk); --f-ink: var(--mk-ink); --f-tint: var(--mk-tint); }
 .f-ua { --f: var(--ua); --f-ink: var(--ua-ink); --f-tint: var(--ua-tint); }
 .f-bg { --f: var(--bg); --f-ink: var(--bg-ink); --f-tint: var(--bg-tint); }
+.f-kz { --f: var(--kz); --f-ink: var(--kz-ink); --f-tint: var(--kz-tint); }
 
 /* ==========================================================
    Base
@@ -428,7 +430,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>48</b><span>countries</span></div>
+            <div class="stat"><b>49</b><span>countries</span></div>
             <div class="stat"><b>1962–2026</b><span>years</span></div>
         </div>
     </div>
@@ -584,6 +586,7 @@ REGION_OF.nz = 'oceania';
 REGION_OF.mk = 'europe';
 REGION_OF.ua = 'europe';
 REGION_OF.bg = 'europe';
+REGION_OF.kz = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -648,6 +651,7 @@ const COUNTRIES = [
     { key: 'mk', name: 'North Macedonia', flag: '🇲🇰', file: 'NorthMacedonia-mmo-problems.json', kind: 'years' },
     { key: 'ua', name: 'Ukraine', flag: '🇺🇦', file: 'Ukraine-umo-problems.json', kind: 'years' },
     { key: 'bg', name: 'Bulgaria', flag: '🇧🇬', file: 'Bulgaria-nmo-problems.json', kind: 'years' },
+    { key: 'kz', name: 'Kazakhstan', flag: '🇰🇿', file: 'Kazakhstan-rmo-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
