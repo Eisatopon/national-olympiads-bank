@@ -1,9 +1,9 @@
 {
   "competition": "USA TSTST",
-  "years": "2011-2025",
-  "description": "USA Team Selection Test (TSTST) problems from 2011 to 2025",
-  "total_years": 15,
-  "total_problems": 123,
+  "years": "2011-2026",
+  "description": "USA Team Selection Test (TSTST) problems from 2011 to 2026",
+  "total_years": 16,
+  "total_problems": 132,
   "data": {
     "2011": {
       "year": "2011",
@@ -937,7 +937,7 @@
             {
               "id": 1401,
               "number": "1",
-              "statement": "In a finite group of people, some pairs are friends (friendship is mutual). Each person $p$ has a list $f_1(p), f_2(p), \\ldots, f_{d(p)}(p)$ of their friends, where $d(p)$ is the number of distinct friends $p$ has. Additionally, any two people are connected by a series of friendships. Each person also has a water balloon. The following game is played: on round $r$, each person $p$ throws the current water balloon they have to their friend $f_s(p)$ such that $d(p)$ divides $r - s$. Show that if the game never ends, then everyone has the same number of friends.",
+              "statement": "In a finite group of people, some pairs are friends (friendship is mutual). Each person $p$ has a list $f_1(p), f_2(p), \\ldots, f_{d(p)}(p)$ of their friends, where $d(p)$ is the number of distinct friends $p$ has. Additionally, any two people are connected by a series of friendships. Each person also has a water balloon. The following game is played until someone ends up with more than one water balloon: on round $r$, each person $p$ throws the current water balloon they have to their friend $f_s(p)$ such that $d(p)$ divides $r - s$. Show that if the game never ends, then everyone has the same number of friends.",
               "category": "Combinatorics",
               "difficulty": "Hard"
             },
@@ -979,14 +979,14 @@
             {
               "id": 1407,
               "number": "7",
-              "statement": "For a positive real number $c$, the sequence $a_1, a_2, \\ldots$ of real numbers is defined as follows. Let $a_1 = c$, and for $n \\geq 2$, let $a_n = \\sum_{i=1}^{n-1}(a_i)^{n-i+1}$. Find all positive real numbers $c$ such that $a_i > a_{i+1}$ for all positive integers $i$.",
+              "statement": "For a positive real number $c$, the sequence $a_1, a_2, \\ldots$ of real numbers is defined as follows. Let $a_1 = c$, and for $n \\geq 2$, let $$a_n = \\sum_{i=1}^{n-1}(a_i)^{n-i+1}.$$ Find all positive real numbers $c$ such that $a_i > a_{i+1}$ for all positive integers $i$.",
               "category": "Algebra",
               "difficulty": "Hard"
             },
             {
               "id": 1408,
               "number": "8",
-              "statement": "Find all polynomials $f$ with integer coefficients such that for all positive integers $n$, $n$ divides $f(f(\\ldots(f(0))\\ldots)) - 1$ (with $n+1$ applications of $f$).",
+              "statement": "Find all polynomials $f$ with integer coefficients such that for all positive integers $n$, $$n \\text{ divides } \\underbrace{f(f(\\ldots(f(0))\\ldots))}_{n+1\\ f\\text{'s}} - 1.$$",
               "category": "Algebra",
               "difficulty": "Hard"
             },
@@ -994,6 +994,78 @@
               "id": 1409,
               "number": "9",
               "statement": "Let acute triangle $ABC$ have orthocenter $H$. Let $B_1, C_1, B_2$, and $C_2$ be collinear points which lie on lines $AB, AC, BH$, and $CH$, respectively. Let $\\omega_B$ and $\\omega_C$ be the circumcircles of triangles $BB_1B_2$ and $CC_1C_2$, respectively. Prove that the radical axis of $\\omega_B$ and $\\omega_C$ intersects the line through their centers on the nine-point circle of triangle $ABC$.",
+              "category": "Geometry",
+              "difficulty": "Hard"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "year": "2026",
+      "problems": {
+        "Selection Team Test": {
+          "USA": [
+            {
+              "id": 1501,
+              "number": "1",
+              "statement": "Let $ABC$ be an acute scalene triangle. Let $O$ be the circumcenter of $ABC$, $D$ be the foot of the altitude from $A$ to $BC$, and $P$ be a point on line $AO$ not lying on the circumcircle of $ABC$. The circle with diameter $AP$ intersects the circumcircle of $BCP$ at $E \\neq P$, and the line through $A$ parallel to $BC$ at $F \\neq A$. Prove that $D$, $E$, and $F$ are collinear.",
+              "category": "Geometry",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1502,
+              "number": "2",
+              "statement": "Given a graph $G$ and a positive integer $\\ell$, an $\\ell$-coloring of $G$ is a function $\\sigma\\colon V(G) \\to \\{1, 2, 3, \\ldots, \\ell\\}$ such that for any edge $uv$ in $G$, $\\sigma(u) \\neq \\sigma(v)$. Two $\\ell$-colorings $\\sigma$ and $\\sigma'$ are close if $\\sigma(u) \\neq \\sigma'(u)$ for at most one $u \\in V(G)$.\n\nFind all pairs of positive integers $(k, m)$ with $k \\le m$ such that for all graphs $G$ and pairs $(\\tau, \\tau')$ of $k$-colorings of $G$, there exists a sequence $\\pi_0, \\pi_1, \\ldots, \\pi_n$ of $m$-colorings of $G$ such that $\\pi_0 = \\tau$, $\\pi_n = \\tau'$, and $\\pi_i$ and $\\pi_{i+1}$ are close for all $0 \\le i < n$.\n\nNote: $V(G)$ denotes the vertices of $G$. Since $k \\le m$, $\\tau$ and $\\tau'$ are also $m$-colorings of $G$.",
+              "category": "Combinatorics",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1503,
+              "number": "3",
+              "statement": "Suppose $f_1, f_2, \\ldots, f_{1000} \\in \\mathbb{C}[x]$ are single-variable polynomials with complex coefficients such that there do not exist distinct $i, j \\in \\{1, 2, \\ldots, 1000\\}$ and $a \\in \\mathbb{C}$ with $f_i = af_j$. Given that the degree of $f_1$ is $10$, find the minimum possible total degree of $$\\sum_{k=1}^{1000} f_k(x_1)f_k(x_2)\\cdots f_k(x_{2026}).$$\n\nNote: For example, the total degree of the polynomial $g(x, y) = 20x^3y^4 + 26x^6$ is $7$ because $7 = 3 + 4 > 6$.",
+              "category": "Algebra",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1504,
+              "number": "4",
+              "statement": "A beehive is a polygon with all internal angles being multiples of $60^\\circ$. Find the least positive integer $k$ for which every $2026$-sided beehive can be expressed as the union of at most $k$ convex beehives.\n\nNote: A polygon contains its interior and boundary. Its boundary must be a single loop that does not intersect itself. Internal angles of $180^\\circ$ are not allowed.",
+              "category": "Combinatorics",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1505,
+              "number": "5",
+              "statement": "Let $\\Omega(k)$ denote the number of prime factors of $k$, counted with multiplicity. For example, $\\Omega(20) = 3$, because $20 = 2 \\cdot 2 \\cdot 5$. Prove that for all positive integers $n$, there exists a positive integer $k$ strictly between $n^2$ and $(n + 1)^2$ such that $\\Omega(k)$ is odd.",
+              "category": "Number Theory",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1506,
+              "number": "6",
+              "statement": "Let $ABC$ be a triangle with circumcircle $\\Gamma$ and let $S$ be a point inside triangle $ABC$. Let $P \\neq S$ be the second intersection of line $AS$ with the circumcircle of $BCS$.\n\nLet $T \\neq A$ be a variable point on $\\Gamma$, and let $Q \\neq A$ and $R \\neq A$ be the second intersections of line $AT$ with the circumcircles of $ABP$ and $ACP$, respectively. Let $\\omega$ be the circumcircle of $PQR$. Show that, as $T$ varies along $\\Gamma$, the intersection(s) of line $ST$ with $\\omega$ lie on two fixed circles (excluding cases where $\\omega$ is undefined).",
+              "category": "Geometry",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1507,
+              "number": "7",
+              "statement": "Determine all ordered pairs of positive integers $(a, b)$ such that $n+1$ divides $\\binom{an+b}{n}$ for all positive integers $n$.",
+              "category": "Number Theory",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1508,
+              "number": "8",
+              "statement": "Let $A$ be a finite set of positive real numbers. Define $a_k$ to be the number of distinct positive real numbers that can be expressed as a sum of at most $k$ not necessarily distinct elements of $A$. Prove that $2025a_{2026} \\ge 2026a_{2025}$.",
+              "category": "Combinatorics",
+              "difficulty": "Hard"
+            },
+            {
+              "id": 1509,
+              "number": "9",
+              "statement": "In the plane, we say that a set of points $A = \\{A_1, A_2, \\ldots, A_k\\}$ demolishes a set of points $B = \\{B_1, B_2, \\ldots, B_\\ell\\}$ if, for all points $P$, $$PA_1 + PA_2 + \\cdots + PA_k \\ge PB_1 + PB_2 + \\cdots + PB_\\ell.$$ Let $S$ be a set of $n$ points in the plane. Show that we can partition $S$ into two sets $A$ and $B$ such that $A$ demolishes $B$ and $|A| \\le |B| + 100\\sqrt{n}$.",
               "category": "Geometry",
               "difficulty": "Hard"
             }
