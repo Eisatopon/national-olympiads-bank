@@ -59,3 +59,13 @@ Individual `statement_checks` records include the exact reviewed statement, its 
 The year denotes the selection cycle, which can begin in December of the previous year. The 2012 source PDF has an inconsistent IMO-edition header; its exam dates are recorded in the review notes without changing the bank's year labels.
 
 Generate the full 64-collection inventory with `python scripts/verification_progress.py`. The inventory counts stored records and explicitly separates checked and pending records, including the quarantined China data.
+
+## Personal collections and classroom printouts
+
+Save multiple named collections on the current browser/device, reopen them or delete a saved copy without clearing the current set. Sharing preserves ordered problem IDs, the title, source visibility and solution-space settings. Opening a shared link loads that exact set instead of merging it into the recipient's previous selection. Existing shared links still work, including competitions with longer identifiers. Collections stay local; keep a share link as a portable copy.
+
+Printouts offer no solution space, 4 cm or 8 cm per problem. Printing waits for typesetting and figure loading, keeps ordinary problem blocks together and constrains figure size. Very long problems may span pages.
+
+## Thematic browsing
+
+Topic filters work across countries and years, using Geometry, Number Theory, Combinatorics and Algebra. Existing editorial categories take precedence. Statements without a recorded category receive conservative keyword-based suggestions; a problem can belong to multiple topics. Ambiguous cases remain Unclassified. These browsing labels are not a reviewed mathematical classification and do not change source statements.
