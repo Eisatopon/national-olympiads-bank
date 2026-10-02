@@ -23,6 +23,12 @@ const greek=JSON.parse(fs.readFileSync('docs/topic-audit-greece-2026-10-02.json'
 assert.deepEqual(Object.keys(greek.reviews).sort(),Array.from(sourceRecords.keys()).filter(uid=>uid.startsWith('gr.')).sort());
 const bmo=JSON.parse(fs.readFileSync('docs/topic-audit-bmo1-2026-10-02.json','utf8'));
 assert.equal(Object.keys(bmo.reviews).length,132);
+const bmo2=JSON.parse(fs.readFileSync('docs/topic-audit-bmo2-2026-10-02.json','utf8'));
+assert.equal(Object.keys(bmo2.reviews).length,88);
+assert.deepEqual(Object.keys(bmo2.reviews).sort(),Array.from(sourceRecords.keys()).filter(uid=>uid.startsWith('uk2.')).sort());
+for(const [uid,expected] of [['uk2.2018.0.2',['Combinatorics','Number Theory']],['uk2.2019.0.2',['Combinatorics','Geometry','Number Theory']],['uk2.2017.0.4',['Combinatorics']]]) {
+  assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
+}
 assert.deepEqual(Object.keys(bmo.reviews).sort(),Array.from(sourceRecords.keys()).filter(uid=>uid.startsWith('uk1.')).sort());
 for(const [uid,expected] of [['uk1.2021.0.3',['Combinatorics','Geometry']],['uk1.2024.0.5',['Combinatorics']]]) {
   assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
