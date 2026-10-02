@@ -1,13 +1,17 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 683,
-  "not_statement_reviewed": 8775,
+  "distinct_statement_reviewed": 799,
+  "not_statement_reviewed": 8659,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": false,
   "complete_collection_reviews": {
     "Greece-tst-problems.json": {
       "stored_statements_reviewed": 72,
+      "source_fidelity_review_complete": false
+    },
+    "Uk-bmo1-problems.json": {
+      "stored_statements_reviewed": 132,
       "source_fidelity_review_complete": false
     }
   },
@@ -15,7 +19,9 @@
     "previous_unclassified_batch": 151,
     "mixed_geometry_and_cube_audit": 224,
     "remaining_unclassified_batch": 253,
-    "Greece_TST": 72
+    "Greece_TST": 72,
+    "BMO1": 132
   },
-  "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments."
+  "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
+  "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained."
 }
