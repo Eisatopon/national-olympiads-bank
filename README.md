@@ -69,3 +69,11 @@ Printouts offer no solution space, 4 cm or 8 cm per problem. Printing waits for 
 ## Thematic browsing
 
 Topic filters work across countries and years, using Geometry, Number Theory, Combinatorics and Algebra. Existing editorial categories take precedence. Statements without a recorded category receive conservative keyword-based suggestions; a problem can belong to multiple topics. Ambiguous cases remain Unclassified. These browsing labels are not a reviewed mathematical classification and do not change source statements.
+
+## Mathematical connections and Problem DNA
+
+Every problem offers mathematical connections through concepts in its statement. Related results require at least two shared concepts or a shared reviewed technique, exclude the source itself and identical statement copies, and prefer another competition when scores tie. Suggestions explain the matching concepts or techniques; concept overlap does not establish an equivalent solution.
+
+The initial Problem DNA pilot contains 13 records in `metadata/problem-dna.json`, each with an ordered technique sequence, exact statement snapshot/hash, concise mathematical solution derivation, review date/method and a relative practice level (1–3). Analysis is AI-assisted, not human certification. Techniques are hidden behind a reveal control to avoid immediate spoilers. Earlier practice and next challenges use levels only within this reviewed pilot; no difficulty is inferred from official problem numbers. This small pilot starts the longer-term 100–200 problem curation plan.
+
+The UI drops DNA when the statement changes, and `scripts/validate_dna.py` rejects stale or incomplete records in CI. Connections and concept browsing continue if DNA metadata is unavailable. Source statements and original identities are unchanged.
