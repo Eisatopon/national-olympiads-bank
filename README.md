@@ -81,3 +81,19 @@ The UI drops DNA when the statement changes, and `scripts/validate_dna.py` rejec
 ## Thematic corrections (2 October 2026)
 
 151 previously unclassified statements now have explicit full-statement topic reviews in `metadata/topic-overrides.json`, including mixed-topic cases. Existing recorded categories take precedence, then exact-text reviewed overrides, then the fallback classifier. The fallback now handles plural geometry terms, solid geometry, polynomial notation, mathematical inequality symbols, recurrences and common integer/combinatorial structures. Regression tests include real omitted geometry and algebra problems across several countries. These changes repair the earlier incomplete keyword classifier; they do not certify a reviewed classification for every bank record. CI rejects stale thematic snapshots.
+
+## Focused thematic audit (2 October 2026)
+
+A subsequent full-statement audit covers 224 active records in three risk groups: Geometry + Number Theory, Geometry + Algebra, and Geometry-only statements mentioning cubes. All 12 referenced figures were visually inspected. Topic sets changed for 168 records; some changes add a substantive subject rather than remove an error. There are now 374 distinct statement-reviewed overrides, including the previous batch and one overlapping record.
+
+`docs/topic-audit-2026-10-02.json` records each decision, rationale, statement hash, prior labels, reviewed labels, inspected figures and two source-follow-up items. This audit does **not** claim review of all 9,458 active records: 9,234 were outside this audit. It reviews thematic content of stored statements, not correctness of solutions or fidelity to original sources. CI checks audit/override consistency and exact statement snapshots.
+
+## Remaining unclassified statements and Greece TST review
+
+All 253 statements still labelled Unclassified after the focused audit have now been read and assigned explicit, individually justified topics. All five referenced figures were visually inspected. The infinite-series and definite-integral problems use the additional Analysis category, which the existing dynamic topic filters support. `docs/topic-audit-unclassified-2026-10-02.json` records the review and source evidence.
+
+All 72 stored Greece TST statements were then reviewed. Eleven topic sets changed; 56 records were newly reviewed, with 16 overlapping earlier batches. Polynomial-ring divisibility is Algebra; colour-only complete-graph problems and lattice path counts do not acquire Geometry merely from their drawing. `docs/topic-audit-greece-2026-10-02.json` records individual reasoning and five source-follow-up items in the stored Greek statements.
+
+One CHKMO 2015 problem had ambiguous plural wording inherited from its official compilation. Visual comparison of the official question and solution confirms that the **sum** of the radicals must be a positive integer. Its final phrase is clarified accordingly; the formula is unchanged. The source URLs and PDF page references are preserved in the review metadata. The earlier Indonesia 2011 and Vietnam 1971 source concerns remain open: no suitable official source was obtained, and those statements were not changed.
+
+There are now **683 distinct statement-reviewed records** out of 9,458 active records; **8,775 remain outside full-statement thematic review**. All previously Unclassified active statements have explicit reviews in this branch. This does not certify the remaining automatic labels. `docs/topic-review-progress.json` preserves non-additive, distinct coverage. All changes remain in the draft audit PR until the broader review is complete.
