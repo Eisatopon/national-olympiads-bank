@@ -40,7 +40,11 @@ def validate_topics(root=ROOT):
             record=document['records'][uid]
             assert review['statement_sha256']==record['statement_sha256'],f'{uid}: audit text mismatch'
             assert review['reviewed_topics']==record['topics'],f'{uid}: audit topics mismatch'
-            assert review['rationale']==record['rationale'] and review['rationale'].strip(),f'{uid}: missing audit rationale'
+            needs_rationale=set(review['previous_topics'])!=set(review['reviewed_topics']) or len(review['reviewed_topics'])>1
+            if needs_rationale:
+                assert review.get('rationale','').strip(),f'{uid}: correction/mixed review needs rationale'
+            if 'rationale' in review:
+                assert review['rationale']==record.get('rationale') and review['rationale'].strip(),f'{uid}: audit rationale mismatch'
         for figure in audit['figures_inspected']:
             assert (root/'images'/figure).is_file(),f'{figure}: audited figure missing'
     progress_path=root/'docs/topic-review-progress.json'

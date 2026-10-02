@@ -21,6 +21,12 @@ assert.equal(Object.keys(batch.reviews).length,253);
 for(const uid of Object.keys(batch.reviews)) assert.ok(!ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics.includes('Unclassified'),uid);
 const greek=JSON.parse(fs.readFileSync('docs/topic-audit-greece-2026-10-02.json','utf8'));
 assert.deepEqual(Object.keys(greek.reviews).sort(),Array.from(sourceRecords.keys()).filter(uid=>uid.startsWith('gr.')).sort());
+const bmo=JSON.parse(fs.readFileSync('docs/topic-audit-bmo1-2026-10-02.json','utf8'));
+assert.equal(Object.keys(bmo.reviews).length,132);
+assert.deepEqual(Object.keys(bmo.reviews).sort(),Array.from(sourceRecords.keys()).filter(uid=>uid.startsWith('uk1.')).sort());
+for(const [uid,expected] of [['uk1.2021.0.3',['Combinatorics','Geometry']],['uk1.2024.0.5',['Combinatorics']]]) {
+  assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
+}
 assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get('ee.1999.0.2').problem,null,'ee.1999.0.2').topics),['Analysis']);
 const actual=(file,year,number,day=0)=>{const d=JSON.parse(fs.readFileSync(file));return d.years.find(b=>b.year===year).problems.find(p=>p.number===number&&(p.day||0)===day).problem};
 for(const [file,year,day,number,expected] of [
