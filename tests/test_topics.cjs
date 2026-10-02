@@ -56,3 +56,9 @@ assert.equal(ctx.topicFields(record.reviewed_statement,'Geometry','au.2017.2.5')
 assert.ok(!ctx.classifyStatement('Find integers x,y with x^2+y^2=1.').includes('Geometry'));
 assert.ok(!ctx.classifyStatement('A regular 14-gon has marked vertices.').includes('Number Theory'));
 console.log(`Thematic checks passed: ${Object.keys(metadata.records).length} reviewed records, actual geometry/algebra omissions, stale overrides and category precedence.`);
+
+const thousand=JSON.parse(fs.readFileSync('docs/topic-audit-batch1000-2026-10-02.json'));
+assert.equal(Object.keys(thousand.reviews).length,1000);
+assert.equal(thousand.new_distinct_reviews,1000);
+for(const prefix of ['ukt.','nl.','nlt.','ch.']) for(const uid of sourceRecords.keys()) if(uid.startsWith(prefix)) assert.ok(metadata.records[uid],uid);
+for(const [uid,expected] of [['ukt.2011.1.2',['Combinatorics']],['ch.2012.2.8',['Combinatorics']],['nl.2010.0.3',['Geometry','Number Theory']],['nlt.2018.1.2',['Geometry']]]) assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
