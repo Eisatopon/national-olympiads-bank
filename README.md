@@ -49,3 +49,11 @@ Serve the repository using `python -m http.server`. The committed application lo
 `metadata/collections.json` records source research links separately from problem statements. Every collection has an explicit verification state. The initial links were carried over from `.dev/sources.json` through a manually selected competition-to-file mapping; they have not been certified as the source of an individual statement. The UI labels them as research links and does not claim source verification. Collections without recorded links say so explicitly.
 
 Known missing Argentina problem numbers are shown in problem cards and on printed sets when source notes are enabled. Metadata failures leave statements available with a warning. Future source verification must record the exact paper, page and reviewer before changing the verification status; the current UI intentionally makes no verified claims.
+
+## Statement comparison: first batch
+
+22 USA TST statements (2012: 8, 2013: 8, 2014: 6) were visually and textually compared with the published exam PDFs in Evan Chen's archive on 2026-10-02. These are source-copy fidelity checks performed with AI assistance, not a human certification or an independent review of solutions. No material statement discrepancies were found in this batch.
+
+Individual `statement_checks` records include the exact reviewed statement, its SHA-256, source PDF checksum, URL, page, original problem number, review method and date. The UI displays the checked status only when the current statement exactly matches the reviewed snapshot; CI rejects stale checks. A collection-wide unverified status does not override these granular checks or certify its remaining years.
+
+The year denotes the selection cycle, which can begin in December of the previous year. The 2012 source PDF has an inconsistent IMO-edition header; its exam dates are recorded in the review notes without changing the bank's year labels.

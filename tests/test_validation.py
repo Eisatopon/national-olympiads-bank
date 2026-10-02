@@ -1,5 +1,6 @@
 import unittest
-from scripts.validate_data import validate
+from scripts.validate_data import validate, validate_statement_checks
+import hashlib
 
 class ValidationTests(unittest.TestCase):
     def data(self, problems):
@@ -17,6 +18,24 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(any('numbering' in e for e in validate(self.data([{'number': 2, 'problem': 'Find x.'}]), 'Example.json')))
     def test_control_character(self):
         self.assertTrue(any('control character' in e for e in validate(self.data([{'number': 1, 'problem': 'Find\x00 x.'}]), 'Example.json')))
+
+class SourceCheckTests(unittest.TestCase):
+    def test_stale_statement_check_is_rejected(self):
+        text = 'Find $x$.'
+        check = {'status':'statement_checked_against_source','reviewed_statement':text,
+                 'statement_sha256':hashlib.sha256(text.encode()).hexdigest(),
+                 'source_url':'https://example.com/exam.pdf','source_document_sha256':'a'*64,
+                 'source_page':1,'source_problem_number':1,'checked_at':'2026-10-02',
+                 'review_method':'AI-assisted visual and textual comparison','scope':'Statement fidelity only'}
+        entry = {'statement_checks':{'test.2025.0.1':check}}
+        data = {'years':[{'year':2025,'problems':[{'number':1,'problem':text}]}]}
+        self.assertEqual(validate_statement_checks(entry,data,'test'), [])
+        data['years'][0]['problems'][0]['problem']='Find $y$.'
+        self.assertTrue(validate_statement_checks(entry,data,'test'))
+    def test_wrong_checksum_is_rejected(self):
+        entry = {'statement_checks':{'test.2025.0.1':{'reviewed_statement':'Find x.','statement_sha256':'bad'}}}
+        data = {'years':[{'year':2025,'problems':[{'number':1,'problem':'Find x.'}]}]}
+        self.assertTrue(any('checksum' in error for error in validate_statement_checks(entry,data,'test')))
 
 if __name__ == '__main__':
     unittest.main()

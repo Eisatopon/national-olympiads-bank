@@ -1,5 +1,6 @@
 """Validate every collection; explicitly quarantine the known damaged archive."""
 import json
+import hashlib
 import re
 from pathlib import Path
 
@@ -71,6 +72,28 @@ def validate(data, filename, root=ROOT):
     return errors
 
 
+def validate_statement_checks(entry, data, country_key):
+    records = {f"{country_key}.{b['year']}.{p.get('day', 0)}.{p['number']}": p['problem']
+               for b in data['years'] for p in b['problems']}
+    errors = []
+    for uid, check in entry.get('statement_checks', {}).items():
+        text = records.get(uid)
+        if text is None or text != check.get('reviewed_statement'):
+            errors.append(f'{uid}: checked statement changed or missing'); continue
+        if hashlib.sha256(text.encode()).hexdigest() != check.get('statement_sha256'):
+            errors.append(f'{uid}: statement checksum mismatch')
+        if (check.get('status') != 'statement_checked_against_source'
+                or not re.fullmatch(r'https?://[^\s{}<>]+', check.get('source_url', ''))
+                or type(check.get('source_page')) is not int or check['source_page'] < 1
+                or type(check.get('source_problem_number')) is not int or check['source_problem_number'] < 1
+                or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', check.get('checked_at', ''))
+                or not re.fullmatch(r'[0-9a-f]{64}', check.get('source_document_sha256', ''))
+                or check.get('review_method') != 'AI-assisted visual and textual comparison'
+                or not check.get('scope')):
+            errors.append(f'{uid}: incomplete source-check evidence')
+    return errors
+
+
 def main():
     failures = 0
     html = (ROOT / 'index.html').read_text()
@@ -84,6 +107,12 @@ def main():
         assert metadata['schema_version'] == 1 and set(collections) == files
         for name, entry in collections.items():
             assert entry['verification_status'] == ('quarantined' if name in QUARANTINED else 'not_verified_against_source')
+            if entry.get('statement_checks'):
+                country_key = next(re.search(r"key: '([^']+)'", line).group(1)
+                                   for line in html.splitlines() if "file: '" + name + "'" in line)
+                data = json.loads((ROOT / name).read_text())
+                for error in validate_statement_checks(entry, data, country_key):
+                    print('ERROR:', error); failures += 1
             for link in entry['source_links']:
                 assert re.fullmatch(r'https?://[^\s{}<>]+', link['url'])
                 assert link['verification'] == 'unverified'
