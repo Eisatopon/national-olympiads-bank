@@ -373,6 +373,9 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .ps-head p { font: 10pt var(--sans); color: #444; }
 .ps-item { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 4px; margin-bottom: 22px; }
 .ps-num { font: 700 12pt/1.7 var(--serif); }
+.provenance { margin-top: 16px; color: #4d5966; font-size: .85rem; }
+.provenance summary { cursor: pointer; }
+.provenance p, .provenance ul { margin-top: 8px; }
 .ps-src { font: 9pt var(--sans); color: #555; margin-bottom: 4px; }
 .ps-body .statement { font-size: 12pt; line-height: 1.65; max-width: none; }
 
@@ -681,6 +684,8 @@ const cache = new Map();      // country key -> records[]
 const inflight = new Map();
 const failed = new Map();
 const byUid = new Map();
+let collectionMetadata = {};
+let metadataUnavailable = false;
 let selected = [];
 let shownUids = [];
 let limit = PAGE;
@@ -1000,6 +1005,27 @@ function headHtml(count) {
     </div>`;
 }
 
+function safeSourceUrl(value) {
+    try { const url = new URL(value); return /^https?:$/.test(url.protocol) ? url.href : null; }
+    catch (e) { return null; }
+}
+function provenanceHtml(p, print = false) {
+    const meta = collectionMetadata[CBY[p.country].file];
+    const gaps = meta?.missing_problem_numbers?.[String(p.year)];
+    const status = 'Not yet verified against the original source';
+    const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
+    const links = (meta?.source_links || []).map(link => {
+        const url = safeSourceUrl(link.url);
+        return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
+    }).filter(Boolean);
+    if (print) return `<p class="ps-src">${status}.${note ? ' ' + esc(note) : ''}</p>`;
+    return `<details class="provenance"><summary>${status}${note ? ' · Incomplete year' : ''}</summary>
+        ${note ? `<p>${esc(note)}</p>` : ''}
+        <p>Archive links are research references; they do not certify the statement, translation or year. Structural validation is not source verification.</p>
+        ${links.length ? `<ul>${links.map(link => `<li>${link}</li>`).join('')}</ul>` : '<p>No source link has been recorded for this collection yet.</p>'}
+    </details>`;
+}
+
 function problemHtml(p) {
     const c = CBY[p.country];
     return `
@@ -1016,6 +1042,7 @@ function problemHtml(p) {
             </button>
         </div>
         <div class="statement">${bodyHtml(p.text)}</div>
+        ${provenanceHtml(p)}
     </article>`;
 }
 
@@ -1061,6 +1088,7 @@ function renderResults() {
 
     const shown = items.slice(0, limit);
     let html = headHtml(items.length);
+    if (metadataUnavailable) html += '<p class="note">Source notes could not be loaded. Statements remain available, but their sources have not been verified.</p>';
     if (!state.country && failed.size) {
         const names = [...failed.keys()].map(k => CBY[k].name).join(', ');
         html += `<p class="note">${failed.size === 1 ? 'One country' : failed.size + ' countries'} could not be loaded (${names}), so results may be incomplete.</p>`;
@@ -1163,6 +1191,7 @@ function renderPrintSheet() {
                 <div class="ps-body">
                     ${showSrc ? `<p class="ps-src">${CBY[p.country].name} ${p.year}${p.day ? `, Day ${p.day}` : ''}, Problem ${esc(p.num)}${p.topic ? ` (${esc(p.topic)})` : ''}</p>` : ''}
                     <div class="statement">${bodyHtml(p.text)}</div>
+                    ${showSrc ? provenanceHtml(p, true) : ''}
                 </div>
             </section>`).join('')
         : '';
@@ -1280,6 +1309,13 @@ function centerPick() {
 async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
+    try {
+        const response = await fetch('./metadata/collections.json');
+        if (!response.ok) throw new Error('Metadata unavailable');
+        const data = await response.json();
+        if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
+        collectionMetadata = data.collections;
+    } catch (e) { metadataUnavailable = true; }
     const incoming = parseIncoming();
     const merged = [...readSaved()];
     incoming.forEach(u => { if (!merged.includes(u)) merged.push(u); });
