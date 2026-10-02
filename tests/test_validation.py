@@ -32,6 +32,24 @@ class SourceCheckTests(unittest.TestCase):
         self.assertEqual(validate_statement_checks(entry,data,'test'), [])
         data['years'][0]['problems'][0]['problem']='Find $y$.'
         self.assertTrue(validate_statement_checks(entry,data,'test'))
+    def test_reviewed_figure_change_is_rejected(self):
+        from unittest.mock import patch
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        text = 'Figure: https://example.com/images/diagram.png'
+        check = {'reviewed_statement': text, 'statement_sha256': hashlib.sha256(text.encode()).hexdigest(),
+                 'figure_checks': [{'path':'images/diagram.png','sha256':hashlib.sha256(b'original').hexdigest()}]}
+        entry = {'statement_checks': {'test.2025.0.1': check}}
+        data = {'years':[{'year':2025,'problems':[{'number':1,'problem':text}]}]}
+        with TemporaryDirectory() as folder, patch('scripts.validate_data.ROOT', Path(folder)):
+            image = Path(folder) / 'images/diagram.png'
+            image.parent.mkdir(); image.write_bytes(b'original')
+            self.assertFalse(any('figure' in e for e in validate_statement_checks(entry,data,'test')))
+            image.write_bytes(b'changed')
+            self.assertTrue(any('figure changed' in e for e in validate_statement_checks(entry,data,'test')))
+            check['figure_checks'] = []
+            self.assertTrue(any('reviewed figure' in e for e in validate_statement_checks(entry,data,'test')))
+
     def test_wrong_checksum_is_rejected(self):
         entry = {'statement_checks':{'test.2025.0.1':{'reviewed_statement':'Find x.','statement_sha256':'bad'}}}
         data = {'years':[{'year':2025,'problems':[{'number':1,'problem':'Find x.'}]}]}
