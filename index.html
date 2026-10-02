@@ -344,7 +344,7 @@ mjx-container[display="true"] { margin: .6em 0 !important; overflow-x: auto; ove
 .icon-btn.rm:hover { color: #a4312a; border-color: #e0b1ac; }
 .icon-btn:disabled { opacity: .3; pointer-events: none; }
 .field { display: grid; gap: 4px; font-size: .85rem; color: var(--muted); }
-.field input[type="text"] { width: 100%; height: 38px; padding: 0 10px; border: 1px solid var(--line-strong); border-radius: 4px; font-size: .93rem; color: var(--text); background: var(--surface); }
+.field select, .field input[type="text"] { width: 100%; height: 38px; padding: 0 10px; border: 1px solid var(--line-strong); border-radius: 4px; font-size: .93rem; color: var(--text); background: var(--surface); }
 .check { display: flex; gap: 8px; align-items: center; font-size: .88rem; cursor: pointer; }
 .check input { width: 17px; height: 17px; accent-color: var(--ink); }
 .ex-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
@@ -372,6 +372,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .ps-head h1 { font: 700 18pt/1.2 var(--serif); }
 .ps-head p { font: 10pt var(--sans); color: #444; }
 .ps-item { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 4px; margin-bottom: 22px; }
+.solution-space { border-bottom: 1px solid #ddd; }
 .ps-num { font: 700 12pt/1.7 var(--serif); }
 .provenance { margin-top: 16px; color: #4d5966; font-size: .85rem; }
 .provenance summary { cursor: pointer; }
@@ -417,6 +418,11 @@ dialog p { color: var(--muted); font-size: .92rem; }
 @media print {
     body { background: #fff; }
     .skip, .hero, .layout, .footer, dialog, noscript { display: none !important; }
+    .ps-item { break-inside: avoid; page-break-inside: avoid; }
+    .ps-head { break-after: avoid; }
+    .ps-body .fig { break-inside: avoid; }
+    .ps-body img { max-width: 100%; max-height: 180mm; object-fit: contain; }
+    .ps-body .statement { overflow-wrap: anywhere; orphans: 3; widows: 3; }
     #printSheet { position: static; left: auto; width: auto; }
 }
 </style>
@@ -501,6 +507,20 @@ dialog p { color: var(--muted); font-size: .92rem; }
             </label>
             <label class="check"><input type="checkbox" id="showSource" checked> Show the source of each problem</label>
 
+            <label class="field">Space for solutions
+                <select id="solutionSpace"><option value="0">None</option><option value="40">Small (4 cm)</option><option value="80">Large (8 cm)</option></select>
+            </label>
+            <div class="ex-actions">
+                <button type="button" class="btn" id="saveSetBtn">Save collection</button>
+            </div>
+            <label class="field">Saved collections on this device
+                <select id="savedSets"><option value="">Choose a collection</option></select>
+            </label>
+            <div class="ex-actions">
+                <button type="button" class="btn" id="loadSetBtn" disabled>Open</button>
+                <button type="button" class="btn btn-quiet" id="deleteSetBtn" disabled>Delete saved collection</button>
+            </div>
+            <p id="collectionStatus" role="status" class="ex-empty"></p>
             <div class="ex-actions">
                 <button type="button" class="btn btn-primary" id="printBtn">
                     <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M7 14h10v7H7z"/></svg>
@@ -732,6 +752,20 @@ function bodyHtml(text) {
 /* ==========================================================
    Φόρτωση και ομαλοποίηση δεδομένων
    ========================================================== */
+function classifyStatement(text) {
+    const t = String(text).replace(/https?:\/\/\S+/g, '').toLowerCase();
+    const topics = [];
+    if (/\b(triangle|quadrilateral|circle|circumcircle|incircle|tangent|collinear|concurrent|perpendicular|parallel|angle|polygon|rectangle|rhombus|trapezium|tetrahedron|circumcentre|circumcenter|orthocentre|orthocenter)\b/.test(t)) topics.push('Geometry');
+    if (/\b(prime|primes|divisible|divisibility|divisor|divisors|coprime|gcd|lcm|congruent modulo|modulo|greatest common divisor|least common multiple|remainder when|remainders when)\b/.test(t)) topics.push('Number Theory');
+    if (/\b(game|players?|permutations?|combinations?|subsets?|colouring|coloring|coloured|colored|chessboard|pigeonhole|tournament|tiles?|tiling|graph|vertices and edges)\b/.test(t) || /\b(how many|number of ways)\b/.test(t)) topics.push('Combinatorics');
+    if (/\b(polynomial|polynomials|real numbers?|real-valued|functional equation|inequality|inequalities|positive reals|rational functions?|complex numbers?)\b/.test(t) || /\bf\s*\([^)]*\)/.test(t)) topics.push('Algebra');
+    return topics.length ? topics : ['Unclassified'];
+}
+function topicFields(text, category) {
+    const topics = category ? [category] : classifyStatement(text);
+    return {topics, topic: topics.filter(t => t !== 'Unclassified').join(' · ') || null};
+}
+
 function normalizeYears(country, raw) {
     const out = [];
     (raw.years || []).forEach(y => {
@@ -741,7 +775,7 @@ function normalizeYears(country, raw) {
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
-                topic: p.category || null, text: String(p.problem || '')
+                ...topicFields(p.problem, p.category), text: String(p.problem || '')
             });
         });
     });
@@ -757,7 +791,7 @@ function normalizeUsa(country, raw) {
                     out.push({
                         uid: `${country.key}.${year}.0.${p.number}`,
                         country: country.key, year, day: null, num: String(p.number),
-                        topic: p.category || null, text: String(p.statement || '')
+                        ...topicFields(p.statement, p.category), text: String(p.statement || '')
                     });
                 });
             });
@@ -950,7 +984,7 @@ function matchesQuery(p) {
     return state.q.toLowerCase().split(/\s+/).filter(Boolean).every(t => hay.includes(t));
 }
 const matchesDay = p => state.day === 'all' || String(p.day) === state.day;
-const matchesTopic = p => state.topic === 'all' || p.topic === state.topic;
+const matchesTopic = p => state.topic === 'all' || p.topics.includes(state.topic);
 const filtersOn = () => state.day !== 'all' || state.topic !== 'all' || state.q.trim() !== '';
 
 function compare(a, b) {
@@ -973,8 +1007,8 @@ function syncFilters() {
     $('#dayChips').closest('div').style.display = days.length ? '' : 'none';
     $('#dayChips').innerHTML = dayOpts.map(([v, l, n]) => `<button type="button" class="chip" data-day="${v}" aria-pressed="${state.day === v}">${l}<span class="n">${n}</span></button>`).join('');
 
-    const topics = [...new Set(list.map(p => p.topic).filter(Boolean))].sort();
-    const tcounts = {}; topics.forEach(t => tcounts[t] = base.filter(p => p.topic === t).length);
+    const topics = [...new Set(list.flatMap(p => p.topics))].sort();
+    const tcounts = {}; topics.forEach(t => tcounts[t] = base.filter(p => p.topics.includes(t)).length);
     $('#topicChips').closest('div').style.display = topics.length ? '' : 'none';
     const topicOpts = [['all', 'All', base.length]].concat(topics.map(t => [t, t, tcounts[t]]));
     $('#topicChips').innerHTML = topicOpts.map(([v, l, n]) => `<button type="button" class="chip" data-topic="${esc(v)}" aria-pressed="${state.topic === v}">${esc(l)}<span class="n">${n}</span></button>`).join('');
@@ -1170,7 +1204,7 @@ function renderExam() {
                 </div>
             </li>`).join('')}</ol>`
         : '<p class="ex-empty">Your set is empty. Press “Add” next to any problem to collect it here.</p>';
-    ['#printBtn', '#shareBtn', '#clearBtn'].forEach(s => { $(s).disabled = !items.length; });
+    ['#printBtn', '#shareBtn', '#clearBtn', '#saveSetBtn'].forEach(s => { $(s).disabled = !items.length; });
     syncAddButtons();
     renderPrintSheet();
 }
@@ -1190,6 +1224,69 @@ function move(uid, delta) {
     if (btn && !btn.disabled) btn.focus();
 }
 
+/* ---------- Named collections ---------- */
+const COLLECTIONS_KEY = STORAGE_KEY + ':collections';
+const OPTIONS_KEY = STORAGE_KEY + ':options';
+function currentOptions() {
+    return {title: $('#examTitle').value.trim(), showSource: $('#showSource').checked, space: $('#solutionSpace').value};
+}
+function applyOptions(options = {}) {
+    $('#examTitle').value = typeof options.title === 'string' ? options.title.slice(0, 200) : '';
+    $('#showSource').checked = options.showSource !== false;
+    $('#solutionSpace').value = ['0','40','80'].includes(String(options.space)) ? String(options.space) : '0';
+}
+function saveOptions() { try { localStorage.setItem(OPTIONS_KEY, JSON.stringify(currentOptions())); } catch (e) {} }
+function readCollections() {
+    try {
+        const value = JSON.parse(localStorage.getItem(COLLECTIONS_KEY) || '[]');
+        return Array.isArray(value) ? value.filter(x => x && typeof x.id === 'string' && typeof x.name === 'string' && Array.isArray(x.uids) && x.uids.every(u => typeof u === 'string')) : [];
+    } catch (e) { return []; }
+}
+function renderCollections() {
+    const list = readCollections();
+    const previous = $('#savedSets').value;
+    $('#savedSets').innerHTML = '<option value="">Choose a collection</option>' + list.map(x => `<option value="${esc(x.id)}">${esc(x.name)} (${x.uids.length})</option>`).join('');
+    $('#savedSets').value = list.some(x => x.id === previous) ? previous : '';
+    syncCollectionButtons();
+}
+function syncCollectionButtons() {
+    const chosen = !!$('#savedSets').value;
+    $('#loadSetBtn').disabled = !chosen;
+    $('#deleteSetBtn').disabled = !chosen;
+}
+function saveCollection() {
+    if (!selected.length) return;
+    const name = window.prompt('Name this collection:', $('#examTitle').value.trim() || 'My problem set');
+    if (!name || !name.trim()) return;
+    const list = readCollections();
+    const record = {id: Date.now().toString(36) + Math.random().toString(36).slice(2,8), name: name.trim().slice(0,200), uids: [...selected], options: currentOptions()};
+    list.push(record);
+    try { localStorage.setItem(COLLECTIONS_KEY, JSON.stringify(list)); }
+    catch (e) { $('#collectionStatus').textContent = 'Could not save. Allow browser storage or keep a share link.'; return; }
+    renderCollections(); $('#savedSets').value = record.id; syncCollectionButtons();
+    $('#collectionStatus').textContent = 'Collection saved on this device.';
+}
+async function openCollection() {
+    const record = readCollections().find(x => x.id === $('#savedSets').value);
+    if (!record) return;
+    if (selected.length && !window.confirm('Replace the current set with this saved collection?')) return;
+    $('#loadSetBtn').disabled = true;
+    try {
+        const uids = await hydrate(record.uids);
+        applyOptions(record.options); saveOptions();
+        changeSelection(() => { selected = [...new Set(uids)]; });
+        const unavailable = record.uids.filter(u => !byUid.has(u)).length;
+        $('#collectionStatus').textContent = unavailable ? `Collection opened; ${unavailable} problems are unavailable. The saved collection is retained.` : 'Collection opened.';
+    } finally { syncCollectionButtons(); }
+}
+function deleteCollection() {
+    const id = $('#savedSets').value;
+    if (!id || !window.confirm('Delete this saved collection? The current set will stay open.')) return;
+    try { localStorage.setItem(COLLECTIONS_KEY, JSON.stringify(readCollections().filter(x => x.id !== id))); }
+    catch (e) { $('#collectionStatus').textContent = 'Could not delete the saved collection.'; return; }
+    renderCollections(); $('#collectionStatus').textContent = 'Saved collection deleted.';
+}
+
 /* ---------- Print ---------- */
 function renderPrintSheet() {
     const items = getSelected();
@@ -1203,6 +1300,7 @@ function renderPrintSheet() {
                     ${showSrc ? `<p class="ps-src">${CBY[p.country].name} ${p.year}${p.day ? `, Day ${p.day}` : ''}, Problem ${esc(p.num)}${p.topic ? ` (${esc(p.topic)})` : ''}</p>` : ''}
                     <div class="statement">${bodyHtml(p.text)}</div>
                     ${showSrc ? provenanceHtml(p, true) : ''}
+                    ${$('#solutionSpace').value !== '0' ? `<div class="solution-space" style="height:${Number($('#solutionSpace').value)}mm" aria-label="Space for solution"></div>` : ''}
                 </div>
             </section>`).join('')
         : '';
@@ -1210,10 +1308,27 @@ function renderPrintSheet() {
     if (h1) h1.textContent = title;
     return typeset($('#printSheet'));
 }
-async function doPrint() { if (!selected.length) return; await renderPrintSheet(); window.print(); }
+async function doPrint() {
+    if (!getSelected().length) return;
+    await renderPrintSheet();
+    await Promise.all([...$('#printSheet').querySelectorAll('img')].map(img => {
+        img.loading = 'eager';
+        if (img.complete) return Promise.resolve();
+        return new Promise(resolve => { const timer = setTimeout(resolve, 8000); const done = () => { clearTimeout(timer); resolve(); }; img.addEventListener('load', done, {once:true}); img.addEventListener('error', done, {once:true}); });
+    }));
+    window.print();
+}
 
 /* ---------- Share ---------- */
-const shareUrl = () => location.href.split(/[?#]/)[0] + '?set=' + selected.join(',');
+function shareUrl() {
+    const url = new URL(location.href.split(/[?#]/)[0]);
+    const options = currentOptions();
+    url.searchParams.set('set', selected.join(','));
+    if (options.title) url.searchParams.set('title', options.title);
+    url.searchParams.set('sources', options.showSource ? '1' : '0');
+    url.searchParams.set('space', options.space);
+    return url.href;
+}
 function openShare() {
     if (!selected.length) return;
     const url = shareUrl();
@@ -1236,7 +1351,7 @@ async function copyLink() {
 function parseIncoming() {
     const set = new URLSearchParams(location.search).get('set');
     const out = [];
-    if (set) set.split(',').forEach(t => { if (/^[a-z]{2}\.\d+\.\S+\.\S+$/.test(t)) out.push(t); });
+    if (set) set.split(',').forEach(t => { if (/^[a-z][a-z0-9]*\.\d{4}\.\S+\.\S+$/.test(t) && CBY[t.split('.')[0]]) out.push(t); });
     return out;
 }
 async function hydrate(uids) {
@@ -1288,6 +1403,11 @@ $('#q').addEventListener('input', e => {
     }, 200);
 });
 
+$('#saveSetBtn').addEventListener('click', saveCollection);
+$('#savedSets').addEventListener('change', syncCollectionButtons);
+$('#loadSetBtn').addEventListener('click', openCollection);
+$('#deleteSetBtn').addEventListener('click', deleteCollection);
+['examTitle','showSource','solutionSpace'].forEach(id => $('#' + id).addEventListener('change', () => { saveOptions(); renderPrintSheet(); }));
 $('#printBtn').addEventListener('click', doPrint);
 $('#shareBtn').addEventListener('click', openShare);
 $('#copyBtn').addEventListener('click', copyLink);
@@ -1328,8 +1448,14 @@ async function init() {
         collectionMetadata = data.collections;
     } catch (e) { metadataUnavailable = true; }
     const incoming = parseIncoming();
-    const merged = [...readSaved()];
-    incoming.forEach(u => { if (!merged.includes(u)) merged.push(u); });
+    const merged = incoming.length ? [...new Set(incoming)] : [...readSaved()];
+    if (incoming.length) {
+        const params = new URLSearchParams(location.search);
+        applyOptions({title: params.get('title') || '', showSource: params.get('sources') !== '0', space: params.get('space') || '0'});
+    } else {
+        try { applyOptions(JSON.parse(localStorage.getItem(OPTIONS_KEY) || '{}')); } catch (e) { applyOptions(); }
+    }
+    saveOptions(); renderCollections();
     if (incoming.length) { const [k, y] = incoming[0].split('.'); state.country = k; state.year = +y; }
 
     buildMatrix();
@@ -1354,7 +1480,7 @@ async function init() {
         history.replaceState(null, '', location.href.split('?')[0]);
         examEl.classList.add('open');
         syncToggle();
-        say(`${countText(incoming.length)} from a shared set were added to your set.`);
+        say(`${countText(incoming.length)} from a shared set are ready.`);
     }
     await restDone;
     syncMatrix();
