@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "techniques": {
+    "modular-arithmetic": "Modular arithmetic",
+    "square-residues": "Square residues",
+    "factorization": "Factorization",
+    "case-splitting": "Case splitting",
+    "floor-blocks": "Floor-function blocks",
+    "counting": "Counting",
+    "two-adic-valuation": "Powers of two in divisibility",
+    "finite-cases": "Finite case analysis",
+    "partial-sums": "Partial sums",
+    "recurrence": "Recurrence transformation",
+    "factorial-form": "Factorial closed form",
+    "polynomial-identity": "Polynomial identity",
+    "substitution": "Substitution",
+    "congruence-shift": "Shifted congruences",
+    "lcm": "Least common multiple",
+    "am-gm": "AM–GM inequality",
+    "one-variable": "Reduction to one variable",
+    "interval-trapping": "Invariant interval",
+    "reflection": "Reflection map",
+    "linear-combination": "Linear combinations",
+    "prime-factors": "Prime factor constraints",
+    "parity": "Parity",
+    "integer-parametrization": "Integer parametrization",
+    "complementary-targets": "Complementary target configurations",
+    "extremal-example": "Extremal example",
+    "cyclic-quadrilateral": "Cyclic quadrilateral",
+    "ptolemy": "Ptolemy’s theorem",
+    "right-isosceles": "Isosceles right triangle"
+  },
+  "records": {
+    "au.2016.1.1": {
+      "reviewed_statement": "Find all positive integers $n$ such that $2^n + 7^n$ is a perfect square.",
+      "statement_sha256": "362c56ad5185a61ec2f84221694a33aad6cd045714d2533a15d34f8b51370164",
+      "techniques": [
+        "modular-arithmetic",
+        "square-residues"
+      ],
+      "concepts": [
+        "divisibility",
+        "squares"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "For even n, 2^n+7^n is 2 modulo 3, impossible for a square. For odd n>=3 it is 7 modulo 8, also impossible. n=1 gives 9. Thus n=1 is the only solution."
+    },
+    "au.2016.2.5": {
+      "reviewed_statement": "Find all triples $(x, y, z)$ of real numbers that simultaneously satisfy the equations\n$$xy + 1 = 2z, \\qquad yz + 1 = 2x, \\qquad zx + 1 = 2y.$$",
+      "statement_sha256": "f68af87a5f6f34321415e7b4d1ec1fb1d2342dd0db02c739c9ecb31383bb968d",
+      "techniques": [
+        "factorization",
+        "case-splitting"
+      ],
+      "concepts": [
+        "equations"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "Subtract pairs of equations to obtain (x-z)(y+2)=0 and its cyclic analogues. If all variables agree, t^2+1=2t gives t=1. Otherwise one variable is -2; the remaining two have sum 1/2 and product -5, hence are -2 and 5/2. Solutions are (1,1,1) and permutations of (-2,-2,5/2); substitution checks each."
+    },
+    "au.2017.2.5": {
+      "reviewed_statement": "Determine the number of positive integers $n$ less than $1\\,000\\,000$ for which the sum\n$$\\frac{1}{2 \\times \\lfloor \\sqrt{1} \\rfloor + 1} + \\frac{1}{2 \\times \\lfloor \\sqrt{2} \\rfloor + 1} + \\frac{1}{2 \\times \\lfloor \\sqrt{3} \\rfloor + 1} + \\dots + \\frac{1}{2 \\times \\lfloor \\sqrt{n} \\rfloor + 1}$$\nis an integer.\n\n(Note that $\\lfloor x \\rfloor$ denotes the largest integer that is less than or equal to $x$.)",
+      "statement_sha256": "467ede51c924fe9d545f26dd8c46c6497eb2f38dfc76d277ddade05c44e661b3",
+      "techniques": [
+        "floor-blocks",
+        "counting"
+      ],
+      "concepts": [
+        "floor",
+        "sums"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "For k>=1, indices k^2 through (k+1)^2-1 form a block of 2k+1 terms, each 1/(2k+1), so each full block sums to 1. A nonempty incomplete block contributes a proper fraction strictly between 0 and 1. Integral sums occur exactly at n=(k+1)^2-1. With n<1000000, k=1,...,999; answer 999."
+    },
+    "au.2018.1.1": {
+      "reviewed_statement": "Find all pairs of positive integers $(n, k)$ such that\n$$n! + 8 = 2^k.$$\n(If $n$ is a positive integer, then $n! = 1 \\times 2 \\times 3 \\times \\dots \\times (n-1) \\times n$.)",
+      "statement_sha256": "e2fda5792eb56df2746a1ed7d323252ce4abcc29aab0fc4c0d00555729e9e612",
+      "techniques": [
+        "two-adic-valuation",
+        "finite-cases"
+      ],
+      "concepts": [
+        "divisibility",
+        "factorials"
+      ],
+      "practice_level": 3,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "For n>=6, n! is divisible by 16, hence n!+8 has exactly three factors of 2. If it were 2^k then k=3, requiring n!=0, impossible. Testing n=1,...,5 gives only (n,k)=(4,5) and (5,7)."
+    },
+    "au.2018.2.5": {
+      "reviewed_statement": "The sequence $a_1, a_2, a_3, \\dots$ is defined by $a_1 = 1$ and, for $n \\ge 2$,\n$$a_n = (a_1 + a_2 + \\dots + a_{n-1}) \\times n.$$\nProve that $a_{2018}$ is divisible by $2018^2$.",
+      "statement_sha256": "ef32a77f38cea6af2fdaa63ce33e31f4e98c1bc5fead15f864cee2cb6909c8a2",
+      "techniques": [
+        "partial-sums",
+        "recurrence",
+        "factorial-form"
+      ],
+      "concepts": [
+        "sequences",
+        "sums",
+        "divisibility"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "Write S_n=sum_{j=1}^n a_j. Then S_1=1 and S_n=(n+1)S_{n-1}, hence S_n=(n+1)!/2. Therefore a_n=n*n!/2 for n>=2. For n>=3, a_n/n^2=(n-1)!/2 is an integer, in particular for n=2018."
+    },
+    "au.2020.1.1": {
+      "reviewed_statement": "Determine all pairs $(a, b)$ of non-negative integers such that\n$$\\frac{a+b}{2} - \\sqrt{ab} = 1.$$",
+      "statement_sha256": "fad1cbd168b3302e4f329fd40b5d60bae3eec661d54db645dbda19ef2f48d20e",
+      "techniques": [
+        "substitution",
+        "parity",
+        "integer-parametrization"
+      ],
+      "concepts": [
+        "equations",
+        "squares"
+      ],
+      "practice_level": 3,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "Isolate the square root and square: (a-b)^2=4(a+b-1). Thus a-b=2r for an integer r and a+b=r^2+1. This gives a=(r+1)^2/2 and b=(r-1)^2/2. Integrality forces r odd, r=2k+1. All solutions are (a,b)=(2(k+1)^2,2k^2), k an integer. These are nonnegative and substitution into the original equation gives 1, so squaring introduced no extras."
+    },
+    "nz.2020.0.1": {
+      "reviewed_statement": "Let $P(x) = x^3 - 2x + 1$ and let $Q(x) = x^3 - 4x^2 + 4x - 1$. Show that\n$$\\text{if } P(r) = 0 \\text{ then } Q(r^2) = 0.$$",
+      "statement_sha256": "d945cd93367c43312fa0191b89736a9cc3bd6858600ead4090e329379390c100",
+      "techniques": [
+        "polynomial-identity",
+        "substitution"
+      ],
+      "concepts": [
+        "polynomials",
+        "equations"
+      ],
+      "practice_level": 1,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "Expansion gives Q(x^2)=-P(x)P(-x). If P(r)=0, evaluation of this identity gives Q(r^2)=0."
+    },
+    "nz.2020.0.2": {
+      "reviewed_statement": "Find the smallest positive integer $N$ satisfying the following three properties.\n\n$N$ leaves a remainder of $5$ when divided by $7$.\n\n$N$ leaves a remainder of $6$ when divided by $8$.\n\n$N$ leaves a remainder of $7$ when divided by $9$.",
+      "statement_sha256": "9230ff6a11325cd90927807cd8dc30373eb7db095c595d0e52833c2de9f20550",
+      "techniques": [
+        "congruence-shift",
+        "lcm"
+      ],
+      "concepts": [
+        "divisibility",
+        "congruences"
+      ],
+      "practice_level": 1,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "The conditions are equivalent to N+2 being divisible by 7,8 and 9. Their least common multiple is 504. The smallest positive N is therefore 502, which has the stated three remainders."
+    },
+    "nz.2021.0.2": {
+      "reviewed_statement": "Prove that\n$$x^2 + \\frac{8}{xy} + y^2 \\ge 8$$\nfor all positive real numbers $x$ and $y$.",
+      "statement_sha256": "c9d1f70cc4dceb8ad6f7aaedd538649312fbca34e7ae13f014ef63912928054a",
+      "techniques": [
+        "one-variable",
+        "am-gm"
+      ],
+      "concepts": [
+        "inequalities"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "Since x^2+y^2>=2xy, setting t=xy>0 gives the lower bound 2t+8/t. AM–GM yields 2t+8/t>=2*sqrt(16)=8. Equality occurs at t=2 and x=y, hence x=y=sqrt(2)."
+    },
+    "nz.2024.0.2": {
+      "reviewed_statement": "Consider the sequence $a_1, a_2, a_3, \\dots$ defined by $a_1 = 2024^{2024}$ and for each positive integer $n$,\n$$a_{n+1} = \\left|a_n - \\sqrt{2}\\right|.$$\nProve that there exists an integer $k$ such that $a_{k+2} = a_k$.\n\nHere $|x|$ denotes the absolute value of $x$.",
+      "statement_sha256": "3e6420d95c6a6159369ebbc4d181ac7a66bfa7f6a9f27f1710dc72aa015f1cf3",
+      "techniques": [
+        "interval-trapping",
+        "reflection"
+      ],
+      "concepts": [
+        "sequences"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "For a_n>sqrt(2), the next term equals a_n-sqrt(2). After finitely many such subtractions the sequence enters [0,sqrt(2)]. On that interval the map is t->sqrt(2)-t, whose second iterate is the identity. Thus a_{k+2}=a_k for an index k after entry."
+    },
+    "nz.2024.0.4": {
+      "reviewed_statement": "Determine all positive integers $n$ less than $2024$ such that for all positive integers $x$, the greatest common divisor of $9x + 1$ and $nx + 1$ is $1$.",
+      "statement_sha256": "3837981e22ecd4814ff54b6f7707aac2054c86cec1990c7069ddbfd554425563",
+      "techniques": [
+        "linear-combination",
+        "modular-arithmetic",
+        "prime-factors"
+      ],
+      "concepts": [
+        "divisibility",
+        "congruences"
+      ],
+      "practice_level": 3,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "A common divisor of 9x+1 and nx+1 divides n-9. For n!=9, if every prime factor of |n-9| is 3, the gcd is always 1 since 9x+1 is coprime to 3. Conversely, if a prime p!=3 divides n-9, choose a positive x with 9x=-1 mod p; both expressions are divisible by p. n=9 fails. Thus n=9 plus or minus 3^k, k>=0, subject to 0<n<2024. This yields 6,8,10,12,18,36,90,252,738."
+    },
+    "nz.2024.0.1": {
+      "reviewed_statement": "At each vertex of a regular $14$-gon, lies a coin. Initially $7$ coins are heads, and $7$ coins are tails. Determine the minimum number $t$ such that it's always possible to turn over at most $t$ of the coins so that in the resulting $14$-gon, no two adjacent coins are both heads and no two adjacent coins are both tails.",
+      "statement_sha256": "7778a3f2ff62c8fdca3c1ee480cf7b5a50b9ed7e32dd184a0e601800d85157b5",
+      "techniques": [
+        "complementary-targets",
+        "parity",
+        "extremal-example"
+      ],
+      "concepts": [
+        "counting",
+        "parity"
+      ],
+      "practice_level": 2,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "There are exactly two alternating target patterns. If the Hamming distance to one is d, the distance to the other is 14-d. Because both the initial state and either target have seven heads, d is even. Consequently min(d,14-d)<=6. Seven consecutive heads followed by seven tails gives distances 6 and 8, so the bound is attained and t=6."
+    },
+    "nz.2021.0.1": {
+      "reviewed_statement": "Let $ABCD$ be a convex quadrilateral such that $AB + BC = 2021$ and $AD = CD$. We are also given that\n$$\\angle ABC = \\angle CDA = 90^\\circ.$$\nDetermine the length of the diagonal $BD$.",
+      "statement_sha256": "9e85cea248370bb1e1e24a5842f2d3c191d7f270632783076008019fa718e99c",
+      "techniques": [
+        "cyclic-quadrilateral",
+        "ptolemy",
+        "right-isosceles"
+      ],
+      "concepts": [
+        "cyclic",
+        "triangles"
+      ],
+      "practice_level": 3,
+      "review_method": "AI-assisted mathematical derivation",
+      "reviewed_at": "2026-10-02",
+      "solution_review": "The opposite right angles show ABCD is cyclic, with AC a diameter. Triangle ADC is right isosceles since AD=CD, so AC=sqrt(2)*AD. Ptolemy gives AC*BD=AB*CD+BC*AD=2021*AD. Thus BD=2021/sqrt(2)."
+    }
+  }
+}

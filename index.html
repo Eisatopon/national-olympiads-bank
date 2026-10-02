@@ -357,6 +357,9 @@ dialog h2 { font: 800 1.3rem/1.2 var(--serif); color: var(--ink); margin-bottom:
 dialog p { color: var(--muted); font-size: .92rem; }
 .qr-box { display: grid; place-items: center; padding: 18px 0; min-height: 240px; }
 .qr-box img, .qr-box canvas { max-width: 100%; height: auto; }
+.related-card { border-top: 1px solid var(--line-strong); padding: 18px 0; }
+#relatedDialog { width: min(850px, 94vw); max-height: 88vh; overflow-y: auto; }
+.math-profile .p-tag { display: inline-block; margin-bottom: 6px; }
 .share-url { width: 100%; height: 38px; padding: 0 10px; border: 1px solid var(--line-strong); border-radius: 4px; font-size: .82rem; color: var(--muted); }
 .dlg-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; flex-wrap: wrap; }
 .copy-status { font-size: .85rem; color: var(--az-ink); min-height: 1.4em; margin-top: 6px; }
@@ -555,6 +558,11 @@ dialog p { color: var(--muted); font-size: .92rem; }
     </div>
 </dialog>
 
+<dialog id="relatedDialog" aria-labelledby="relatedTitle">
+    <h2 id="relatedTitle">Mathematical connections</h2>
+    <div class="dlg-actions"><button type="button" class="btn" id="closeRelated">Close</button></div>
+    <div id="relatedContent" aria-live="polite"></div>
+</dialog>
 <div id="printSheet" aria-hidden="true"></div>
 <div class="sr-only" id="srStatus" role="status"></div>
 
@@ -705,6 +713,7 @@ const inflight = new Map();
 const failed = new Map();
 const byUid = new Map();
 let collectionMetadata = {};
+let problemDna = {records:{}, techniques:{}};
 let metadataUnavailable = false;
 let selected = [];
 let shownUids = [];
@@ -1071,6 +1080,98 @@ function provenanceHtml(p, print = false) {
     </details>`;
 }
 
+/* ---------- Mathematical connections and reviewed Problem DNA ---------- */
+const CONCEPTS = [
+    ['cyclic','Cyclic configurations', /\b(cyclic|concyclic|circumcircle)\b/i],
+    ['triangles','Triangles', /\btriangles?\b/i],
+    ['circles','Circles and tangency', /\b(circle|circles|tangent|incircle)\b/i],
+    ['angles','Angles', /\bangles?\b|\\angle/i],
+    ['divisibility','Divisibility', /\b(divisib\w*|divisors?|factors?|greatest common divisor|least common multiple|coprime|primes?)\b/i],
+    ['congruences','Remainders and congruences', /\b(remainders?|modulo|congruences?)\b/i],
+    ['squares','Integer squares', /\b(perfect square|square of the number|square integer)\b/i],
+    ['factorials','Factorials', /\bfactorial\b|[a-z0-9}]!/i],
+    ['equations','Equations', /\b(equations?|simultaneously satisfy|pairs.*such that|triples.*such that)\b/i],
+    ['polynomials','Polynomials', /\bpolynomials?\b|[PQ]\(x\).*x\^/],
+    ['inequalities','Inequalities', /\b(inequalit\w*|least real number|smallest possible value)\b|\\ge\b|\\le\b/i],
+    ['sequences','Sequences', /\bsequences?\b/i],
+    ['sums','Sums', /\b(sum|sums)\b|\\sum/i],
+    ['floor','Floor function', /\\lfloor|\bfloor\b/i],
+    ['counting','Counting', /\b(how many|number of ways|permutations?|subsets?)\b/i],
+    ['parity','Parity and binary configurations', /\b(odd|even|binary|heads|tails)\b/i],
+    ['games','Games and strategies', /\b(game|players?|strategy)\b/i],
+    ['functions','Functional equations', /\bfunctions?\b|f\([^)]*\)/i],
+    ['tilings','Tilings', /\b(tiles?|tiling|tetromino|domino)\b/i]
+];
+function reviewedDna(p) {
+    const record = problemDna.records?.[p.uid];
+    return record && record.reviewed_statement === p.text && Array.isArray(record.techniques)
+        && record.techniques.every(t => problemDna.techniques?.[t])
+        && Number.isInteger(record.practice_level) && record.practice_level >= 1 && record.practice_level <= 3 ? record : null;
+}
+function problemConcepts(p) {
+    const dna = reviewedDna(p);
+    const text = p.text.replace(/https?:\/\/\S+/g, '');
+    return [...new Set([...CONCEPTS.filter(([, , regex]) => regex.test(text)).map(([id]) => id), ...(dna?.concepts || [])])];
+}
+function conceptLabel(id) { return CONCEPTS.find(([key]) => key === id)?.[1] || id; }
+function dnaHtml(p) {
+    const dna = reviewedDna(p);
+    const concepts = problemConcepts(p);
+    return `<details class="provenance math-profile"><summary>Mathematical connections${dna ? ' · Problem DNA' : ''}</summary>
+        ${concepts.length ? `<p>${concepts.map(id => `<span class="p-tag">${esc(conceptLabel(id))}</span>`).join(' ')}</p>` : ''}
+        ${dna ? `<details><summary>Problem DNA — reveal techniques</summary><p>${dna.techniques.map(t => esc(problemDna.techniques[t])).join(' → ')}</p><p>Practice level ${dna.practice_level}/3 · AI-assisted solution analysis</p></details>` : ''}
+        <button type="button" class="btn btn-sm" data-related="${esc(p.uid)}">Explore related problems</button>
+    </details>`;
+}
+function relatedProblems(source, candidates) {
+    const sourceConcepts = new Set(problemConcepts(source));
+    const dna = reviewedDna(source);
+    const techniques = new Set(dna?.techniques || []);
+    return candidates.filter(p => p.uid !== source.uid && p.text.trim() !== source.text.trim()).map(p => {
+        const shared = problemConcepts(p).filter(t => sourceConcepts.has(t));
+        const other = reviewedDna(p);
+        const methods = (other?.techniques || []).filter(t => techniques.has(t));
+        return {problem:p, shared, methods, dna:other, score:shared.length + methods.length * 4};
+    }).filter(x => x.methods.length || x.shared.length >= 2).sort((a,b) => b.score-a.score || Number(a.problem.country === source.country)-Number(b.problem.country === source.country) || a.problem.uid.localeCompare(b.problem.uid));
+}
+function relatedCard(item) {
+    const p = item.problem, country = CBY[p.country];
+    const reason = item.methods.length ? 'Shared techniques: ' + item.methods.map(t => problemDna.techniques[t]).join(', ') : 'Shared concepts: ' + item.shared.map(conceptLabel).join(', ');
+    return `<article class="related-card"><h3>${esc(country.name)} ${p.year}${p.day ? `, Day ${p.day}` : ''}, #${esc(p.num)}</h3><p>${esc(reason)}</p>
+        <div class="statement">${bodyHtml(p.text)}</div><div class="ex-actions"><button type="button" class="btn btn-sm" data-open-problem="${esc(p.uid)}">Open problem</button><button type="button" class="btn btn-sm" data-toggle-uid="${esc(p.uid)}" aria-pressed="${selected.includes(p.uid)}">Add / remove from my set</button></div></article>`;
+}
+let relatedToken = 0;
+async function showRelated(uid) {
+    const source = byUid.get(uid); if (!source) return;
+    const token = ++relatedToken, dialog = $('#relatedDialog');
+    $('#relatedTitle').textContent = `${CBY[source.country].name} ${source.year}, #${source.num} — Connections`;
+    $('#relatedContent').textContent = 'Finding related problems…';
+    if (!dialog.open) dialog.showModal();
+    await loadAll();
+    if (token !== relatedToken || !dialog.open) return;
+    const related = relatedProblems(source, [...byUid.values()]);
+    const dna = reviewedDna(source);
+    const easier = dna ? related.filter(x => x.dna && x.dna.practice_level < dna.practice_level).slice(0,2) : [];
+    const harder = dna ? related.filter(x => x.dna && x.dna.practice_level > dna.practice_level).slice(0,2) : [];
+    const used = new Set([...easier,...harder].map(x => x.problem.uid));
+    const similar = related.filter(x => !used.has(x.problem.uid)).slice(0,5);
+    $('#relatedContent').innerHTML = '<p>Explore common concepts. Shared concepts suggest a connection; shared techniques come from the reviewed DNA sample.</p>'
+        + (failed.size ? '<p>Some collections are unavailable and are omitted from these suggestions.</p>' : '')
+        + (easier.length ? '<h3>Earlier practice step</h3>' + easier.map(relatedCard).join('') : '')
+        + (similar.length ? '<h3>Related problems</h3>' + similar.map(relatedCard).join('') : '')
+        + (harder.length ? '<h3>Next challenge</h3>' + harder.map(relatedCard).join('') : '')
+        + (!related.length ? '<p>No sufficiently close connection was found yet.</p>' : '');
+    await typeset($('#relatedContent'));
+}
+async function openRelatedProblem(uid) {
+    const p = byUid.get(uid); if (!p) return;
+    ++relatedToken; $('#relatedDialog').close();
+    state.country = p.country; state.year = p.year; state.day = 'all'; state.topic = 'all'; state.q = ''; $('#q').value = ''; limit = PAGE;
+    await refresh();
+    const card = document.getElementById('p-' + uid);
+    if (card) { card.tabIndex = -1; card.focus(); card.scrollIntoView({behavior:'smooth',block:'start'}); }
+}
+
 function problemHtml(p) {
     const c = CBY[p.country];
     return `
@@ -1088,6 +1189,7 @@ function problemHtml(p) {
         </div>
         <div class="statement">${bodyHtml(p.text)}</div>
         ${provenanceHtml(p)}
+        ${dnaHtml(p)}
     </article>`;
 }
 
@@ -1380,6 +1482,8 @@ document.addEventListener('click', e => {
     if (t.hasAttribute('data-retry')) { failed.clear(); refresh(); return; }
     if (t.hasAttribute('data-more')) { limit += PAGE; renderResults(); return; }
 
+    if (t.dataset.related) { showRelated(t.dataset.related); return; }
+    if (t.dataset.openProblem) { openRelatedProblem(t.dataset.openProblem); return; }
     if (t.dataset.toggleUid) { toggleUid(t.dataset.toggleUid); return; }
     if (t.hasAttribute('data-add-all')) {
         const missing = shownUids.filter(u => !selected.includes(u));
@@ -1403,6 +1507,7 @@ $('#q').addEventListener('input', e => {
     }, 200);
 });
 
+$('#closeRelated').addEventListener('click', () => { ++relatedToken; $('#relatedDialog').close(); });
 $('#saveSetBtn').addEventListener('click', saveCollection);
 $('#savedSets').addEventListener('change', syncCollectionButtons);
 $('#loadSetBtn').addEventListener('click', openCollection);
@@ -1447,6 +1552,13 @@ async function init() {
         if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
         collectionMetadata = data.collections;
     } catch (e) { metadataUnavailable = true; }
+    try {
+        const response = await fetch('./metadata/problem-dna.json');
+        if (!response.ok) throw new Error('DNA metadata unavailable');
+        const dna = await response.json();
+        if (dna.schema_version !== 1 || !dna.records || !dna.techniques) throw new Error('Invalid DNA metadata');
+        problemDna = dna;
+    } catch (e) { /* Concept-based connections remain available. */ }
     const incoming = parseIncoming();
     const merged = incoming.length ? [...new Set(incoming)] : [...readSaved()];
     if (incoming.length) {
