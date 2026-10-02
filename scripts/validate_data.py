@@ -78,6 +78,22 @@ def main():
     files = {p.name for p in ROOT.glob('*.json')}
     for missing in sorted(registered ^ files):
         print('ERROR: collection registration mismatch:', missing); failures += 1
+    try:
+        metadata = json.loads((ROOT / 'metadata/collections.json').read_text())
+        collections = metadata['collections']
+        assert metadata['schema_version'] == 1 and set(collections) == files
+        for name, entry in collections.items():
+            assert entry['verification_status'] == ('quarantined' if name in QUARANTINED else 'not_verified_against_source')
+            for link in entry['source_links']:
+                assert re.fullmatch(r'https?://[^\s{}<>]+', link['url'])
+                assert link['verification'] == 'unverified'
+            if name == 'Argentina-level3-problems.json':
+                data = json.loads((ROOT / name).read_text())
+                for year, missing in entry['missing_problem_numbers'].items():
+                    nums = {p['number'] for b in data['years'] if b['year'] == int(year) for p in b['problems']}
+                    assert not nums.intersection(missing)
+    except (ValueError, OSError, KeyError, TypeError, AssertionError):
+        print('ERROR: missing or invalid collection provenance metadata'); failures += 1
     for path in sorted(ROOT.glob('*.json')):
         try:
             data = json.loads(path.read_text())

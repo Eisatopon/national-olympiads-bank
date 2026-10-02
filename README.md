@@ -43,3 +43,9 @@ The loader also rejects duplicate identifiers before storing any records from a 
 ## Local preview
 
 Serve the repository using `python -m http.server`. The committed application loads published data from `main`. To inspect local data changes, replace `BASE` with `./` in a temporary copy; do not commit that preview-only change.
+
+## Source transparency
+
+`metadata/collections.json` records source research links separately from problem statements. Every collection has an explicit verification state. The initial links were carried over from `.dev/sources.json` through a manually selected competition-to-file mapping; they have not been certified as the source of an individual statement. The UI labels them as research links and does not claim source verification. Collections without recorded links say so explicitly.
+
+Known missing Argentina problem numbers are shown in problem cards and on printed sets when source notes are enabled. Metadata failures leave statements available with a warning. Future source verification must record the exact paper, page and reviewer before changing the verification status; the current UI intentionally makes no verified claims.
