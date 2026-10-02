@@ -21,6 +21,18 @@ def validate_topics(root=ROOT):
         assert hashlib.sha256(record['reviewed_statement'].encode()).hexdigest()==record['statement_sha256']
         assert record['topics'] and set(record['topics']) <= TOPICS and len(record['topics'])==len(set(record['topics']))
         assert record['review_method']=='AI-assisted full-statement thematic review'
+    audit_path=root/'docs/topic-audit-2026-10-02.json'
+    if audit_path.exists():
+        audit=json.loads(audit_path.read_text())
+        assert audit['reviewed_this_audit']==len(audit['reviews'])
+        assert audit['not_reviewed_this_audit']+len(audit['reviews'])==audit['active_records']
+        for uid,review in audit['reviews'].items():
+            record=document['records'][uid]
+            assert review['statement_sha256']==record['statement_sha256'],f'{uid}: audit text mismatch'
+            assert review['reviewed_topics']==record['topics'],f'{uid}: audit topics mismatch'
+            assert review['rationale']==record['rationale'] and review['rationale'].strip(),f'{uid}: missing audit rationale'
+        for figure in audit['figures_inspected']:
+            assert (root/'images'/figure).is_file(),f'{figure}: audited figure missing'
     return len(document['records'])
 
 if __name__=='__main__': print(f'Validated {validate_topics()} reviewed thematic records.')

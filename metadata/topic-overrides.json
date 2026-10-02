@@ -975,7 +975,8 @@
       "reviewed_statement": "A cube $w_2$ is completely contained in a cube $w_1$.\n\nSomeone claims: \"In order that at least one vertex of $w_2$ lies on each of the six faces of $w_1$, every vertex of $w_1$ must also be a vertex of $w_2$.\"\n\nDecide whether this claim is true.",
       "statement_sha256": "b3e6fce0ebd287fe95b0bea12a9f86ccb46dcca3cedfd62727abbd7187ec8c1c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-02",
+      "rationale": "Containment and face-contact constraints between geometric cubes."
     },
     "hkt.1997.3.13": {
       "topics": [
@@ -1375,6 +1376,2387 @@
       "statement_sha256": "b7c1109cafe39e4034de1c65adc44d264e947b215c69613c3c1b1820d68e52b9",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-02"
+    },
+    "gr.2010.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "In a blackboard there are K circles in a row such that one of the numbers 1, ..., K is assigned to each circle from the left to the right. Change of situation of a circle is to write in it or erase the number which is assigned to it. At the beginning no number is written in its own circle. For every positive divisor d of K, 1 ≤ d ≤ K we change the situation of the circles in which their assigned numbers are divisible by d, performing for each divisor d K changes of situation. Determine the value of K for which the following holds; when this procedure is applied once for all positive divisors of K, then all numbers 1, 2, 3, ..., K are written in the circles they were assigned in.",
+      "statement_sha256": "3258e45c4b358d4b92fe1cc95c4c5d3fa690e61589ba41a605db1e33de1c4e80",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Circles are containers for a divisor-toggle process; the arguments concern divisor parity, not circle geometry."
+    },
+    "ar.2017.0.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For a positive integer $n$ we denote by $D_2(n)$ the number of divisors of $n$ that are perfect squares and by $D_3(n)$ the number of divisors of $n$ that are perfect cubes. Prove that there exists $n$ such that $D_2(n) = 999D_3(n)$.\n\nNote. The perfect squares are $1^2, 2^2, 3^2, 4^2, \\dots$; the perfect cubes are $1^3, 2^3, 3^3, 4^3, \\dots$",
+      "statement_sha256": "6f26257772a9ee62b66f54decad08eeec2f0a68b8a973588e38d52222fd2be92",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Perfect squares and cubes are integer powers in a divisor-count problem, not geometric solids."
+    },
+    "ar.2023.0.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "We say that a (positive) prime is good if it equals the difference of two positive integer cubes. For example, $7$ is a good prime since $2^3 - 1^3 = 7$.\n\nDetermine what the last digit of a good prime can be. Give all possibilities.",
+      "statement_sha256": "40718638378a1d846efd9e9e45cbe9e77faa19b4363da0451b008b278ae20019",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Cubes are third powers of integers; the task concerns prime differences and final digits."
+    },
+    "az.2017.3.8": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n$ be a positive integer relatively prime to $6$. We paint the vertices of a regular $n$-gon with three colours so that there is an odd number of vertices of each colour. Show that there exists an isosceles triangle whose three vertices are of different colours.",
+      "statement_sha256": "c4ce70effd33126dd0d02d23ff14921650a6e203642e3dae13fe64491c031f69",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Colouring and cyclic vertex arithmetic constrain an isosceles triangle; all three aspects are mathematically active."
+    },
+    "uk2.2023.0.4": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The side lengths $a, b, c$ of a triangle $ABC$ are positive integers such that the highest common factor of $a$, $b$ and $c$ is 1. Given that $\\angle A = 3\\angle B$, prove that at least one of $a$, $b$ and $c$ is a cube.",
+      "statement_sha256": "0be818eae1fd25115a4eebca2e1b256d80ee6a63257db337b784cfd43c61bb35",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "ca.2007.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "You are given a pair of triangles for which (a) two sides of one triangle are equal in length to two sides of the second triangle, and (b) the triangles are similar, but not necessarily congruent. Prove that the ratio of the sides that correspond under the similarity is a number between $\\frac12(\\sqrt5 - 1)$ and $\\frac12(\\sqrt5 + 1)$.",
+      "statement_sha256": "6cd63e00d2ecb06095e2737e5c14c24578e5ea1177bc9421d5478a0bd483842d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Congruent means equal-shaped/equal-sized triangles. Similarity and side ratios are geometric; there is no modular congruence."
+    },
+    "ca.2018.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Two positive integers $a$ and $b$ are prime-related if $a = pb$ or $b = pa$ for some prime $p$. Find all positive integers $n$, such that $n$ has at least three divisors, and all the divisors can be arranged without repetition in a circle so that any two adjacent divisors are prime-related. Note that 1 and $n$ are included as divisors.",
+      "statement_sha256": "5c195bfd1155ca330387d7e0fb29f21ff123426217dc5b96d3e11278efadbca6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ca.2026.0.1": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $a, b \\ge 2$ be relatively prime integers. Let $S$ consist of the points in the plane with integer coordinates lying strictly inside the triangle with vertices $(0, 0)$, $(a, 0)$, $(0, b)$. Determine, with proof, $$\\sum_{(x, y) \\in S} (a - 2x)(b - 2y)$$ in terms of $a$ and $b$. (Here the summation denotes that we sum the value $(a-2x)(b-2y)$ over all points $(x, y)$ in $S$.)",
+      "statement_sha256": "d3aac91ce6cc386ee694d165939f099c93bb5cc7c7ad3694109b8872fe1cff3a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "ie.1993.0.10": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "(a) The rectangle $PQRS$ has $|PQ| = \\ell$ and $|QR| = m$, where $\\ell$, $m$ are positive integers. It is divided up into $\\ell m$ $1 \\times 1$ squares by drawing lines parallel to $PQ$ and $QR$. Prove that the diagonal $PR$ intersects $\\ell + m - d$ of these squares, where $d$ is the greatest common divisor $(\\ell, m)$ of $\\ell$ and $m$. (b) A cuboid (or box) with edges of lengths $\\ell$, $m$, $n$, where $\\ell$, $m$, $n$ are positive integers, is divided into $\\ell mn$ $1 \\times 1 \\times 1$ cubes by planes parallel to its faces. Consider a diagonal joining a vertex of the cuboid to the vertex furthest away from it. How many of the cubes does this diagonal intersect?",
+      "statement_sha256": "6efa84d007c7861a85b0be86895e7d1774cef3248083d2737bd4d9c056f131a7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "ie.2010.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The country of Harpland has three types of coin: green, white and orange. The unit of currency in Harpland is the shilling. Any coin is worth a positive integer number of shillings, but coins of the same colour may be worth different amounts. A set of coins is stacked in the form of an equilateral triangle of side $n$ coins (rows of $n, n-1, \\dots, 1$ coins). The stacking has the following properties: (a) no coin touches another coin of the same colour; (b) the total worth, in shillings, of the coins lying on any line parallel to one of the sides of the triangle is divisible by three. Prove that the total worth in shillings of the green coins in the triangle is divisible by three.",
+      "statement_sha256": "f61ce2c371d8ef0fddf1aaa639d5e9ddf6ff6b0df3168321a20e5b3a5ba2b5ae",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A triangular array combines proper colouring with sums modulo three; its Euclidean metric is irrelevant."
+    },
+    "ie.2012.0.4": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "There exists an infinite set of triangles with the following properties: (a) the lengths of the sides are integers with no common factors, and (b) one and only one angle is $60^\\circ$. One such triangle has side lengths 5, 7 and 8. Find two more.",
+      "statement_sha256": "8fc249b759aa6bdb2a8ce205c79cd776c18e085fa26d978f329f7a299479fc4a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "ie.2023.0.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "For $n \\ge 3$, a special $n$-triangle is a triangle with $n$ distinct numbers on each side such that the sum of the numbers on a side is the same for all sides. For instance, because $41 + 23 + 43 = 43 + 17 + 47 = 47 + 19 + 41$, the following is a special 3-triangle: $$\\begin{array}{ccccc} & & 41 & & \\\\ & 23 & & 19 & \\\\ 43 & & 17 & & 47 \\end{array}$$ Note that a special $n$-triangle contains $3(n-1)$ numbers. An infinite set $A$ of positive integers is a special set if, for each $n \\ge 3$, the smallest $3(n-1)$ numbers of $A$ can be used to form a special $n$-triangle. Show that the set of positive integers that are not multiples of 2023 is a special set.",
+      "statement_sha256": "d096a7ee84aa1af9134be19c9d46a8beafb20207b310d98229c0c4fa6bcb5e3f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Triangles represent positions for integer sums; the task concerns arrangements and multiples, not lengths or angles."
+    },
+    "in.2000.0.6": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "For any natural number $n$ $(n \\ge 3)$, let $f(n)$ denote the number of non-congruent integer-sided triangles with perimeter $n$ (e.g., $f(3) = 1$, $f(4) = 0$, $f(7) = 2$). Show that (a) $f(1999) > f(1996)$; (b) $f(2000) = f(1997)$.",
+      "statement_sha256": "0274f583c15c1d94199c96d742592953ec2cb6275cbe64d60bd73071333f7a35",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "in.2024.0.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let points $A_1$, $A_2$, and $A_3$ lie on the circle $\\Gamma$ in counter-clockwise order, and let $P$ be a point in the same plane. For $i \\in \\{1, 2, 3\\}$, let $\\tau_i$ denote the counter-clockwise rotation of the plane centred at $A_i$, where the angle of the rotation is equal to the angle at vertex $A_i$ in $\\triangle A_1A_2A_3$. Further, define $P_i$ to be the point $\\tau_{i+2}(\\tau_i(\\tau_{i+1}(P)))$, where indices are taken modulo 3 (i.e., $\\tau_4 = \\tau_1$ and $\\tau_5 = \\tau_2$). Prove that the radius of the circumcircle of $\\triangle P_1P_2P_3$ is at most the radius of $\\Gamma$.",
+      "statement_sha256": "eacb2ade7cf20f3cfd079d605ba196bb6a9a99c8bde2ef458091b243195127fc",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Modulo 3 only identifies cyclic subscripts. Rotations and circumradii determine the subject."
+    },
+    "id.2003.2.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "The hall of a palace has the shape of a regular hexagon with side $6$ meters. Its floor is covered with ceramic tiles shaped like equilateral triangles with side $50$ cm. Each tile is divided into $3$ congruent triangular regions, as in the figure. Each region is given one color so that every tile has three different colors. The king wants no two tiles to have the same color pattern. What is the least number of colors needed?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/indonesia_2003_p6_fig.png",
+      "statement_sha256": "ae3cc153146995308838de3cf3652fd3435265da791d7d6eb5af6772e9022623",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Congruent tile regions support a colour-pattern enumeration; congruent does not imply number theory."
+    },
+    "id.2005.1.1": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n$ be a positive integer. Find the number of pairwise non-congruent triangles whose side lengths are all integers and whose longest side has length $n$.",
+      "statement_sha256": "d672fa075875afcc9339b07228171fd259f34e75b37c6d2b59811c81ad249b4b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "br.1997.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $A$ be a set of $n$ nonneg­ative integers. Say $A$ has property $\\mathcal{P}$ if the set $\\{x + y \\mid x, y \\in A\\}$ has $\\binom{n}{2}$ elements. The diameter of $A$ is the largest element minus the smallest element. Let $f(n)$ be the smallest diameter of any set $A$ with property $\\mathcal{P}$. Show that $n^2 \\leq 4f(n) < 4n^3$.",
+      "statement_sha256": "b58bb34ce1f35489ba4908f4dffd1c8e6bbaa9de1581912623d4affb68c059c7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Diameter is explicitly defined as an integer-set range, not a geometric diameter; the task concerns additive sets."
+    },
+    "br.2006.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $P$ be a convex $2006$-gon. The $1003$ diagonals connecting opposite vertices and the $1003$ lines connecting the midpoints of opposite sides are all concurrent (all $2006$ lines share a common point). Prove that the opposite sides of $P$ are parallel and congruent.",
+      "statement_sha256": "0d06b80b73c13d97fd388f165ab8909f95b93684d2a029666f11bb07fa434036",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "br.2017.2.4": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A phone lock screen uses passwords drawn as polygonal lines with vertices on a $3 \\times 3$ lattice of points labeled $1$ to $9$. The rules are: (i) tracing starts at some point; (ii) each segment must end at a previously unused point; (iii) if a segment passes through a third (middle) point not yet used, that point is automatically included in the password; (iv) every password has at least four digits.\n\nDetermine the smallest $n$ ($n \\geq 4$) such that, given any subset of $n$ digits from $1$ to $9$, it is possible to construct a password that involves exactly those digits in some order.",
+      "statement_sha256": "053cd6a7ace3a5cc81819bfbd5391a85b8448eec458f8ca7747616c5040f3a6c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "br.2019.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $A_1A_2A_3A_4A_5$ be a convex cyclic pentagon with $\\angle A_i + \\angle A_{i+1} > 180^\\circ$ for all $i \\in \\{1,2,3,4,5\\}$ (all indices modulo $5$). Define $B_i$ as the intersection of lines $A_{i-1}A_i$ and $A_{i+1}A_{i+2}$, forming a star. The circumcircles of triangles $A_{i-1}B_{i-1}A_i$ and $A_iB_iA_{i+1}$ meet again at $C_i \\neq A_i$, and the circumcircles of triangles $B_{i-1}A_iB_i$ and $B_iA_{i+1}B_{i+1}$ meet again at $D_i \\neq B_i$. Prove that the ten lines $A_iC_i$, $B_iD_i$, for $i \\in \\{1,2,3,4,5\\}$, have a common point.",
+      "statement_sha256": "3309331a8252e8e194b4f7a7f0b16ee1b33472fdef3ddbacacdd35d29a47571f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Modulo 5 is a subscript convention in a concurrency/circumcircle theorem."
+    },
+    "br.2021.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $n \\geq 5$ be an integer. The convex polygon $P = A_1A_2\\cdots A_n$ is bicentric, that is, it has both an inscribed and a circumscribed circle. Set $A_{i+n} = A_i$ for every integer $i$ (all indices modulo $n$). Suppose that for all $i$ with $1 \\leq i \\leq n$, the rays $A_{i-1}A_i$ and $A_{i+2}A_{i+1}$ meet at the point $B_i$. Let $\\omega_i$ be the circumcircle of triangle $B_iA_iA_{i+1}$. Prove that there is a circle tangent to all $n$ circles $\\omega_i$, for $1 \\leq i \\leq n$.",
+      "statement_sha256": "f270aa84340b5cb94c2b9dd87b5e7f78cb83c79c7ebed5e9fe9c78d7b31cc353",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Modulo n is a subscript convention in a tangency theorem for a bicentric polygon."
+    },
+    "mx.2008.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "We place 8 distinct integers in the vertices of a cube and then write the greatest common divisor of each pair of adjacent vertices on the edge connecting them. Let $E$ be the sum of the numbers on the edges and $V$ the sum of the numbers on the vertices. (a) Prove that $\\frac{2}{3}E \\leq V$. (b) Can $E = V$?",
+      "statement_sha256": "5d5a70ce9594abc3e80d9ce225823a89d3d4099828a620f8daaf2189c5358868",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The cube provides an adjacency graph for gcd edge weights; geometric lengths and angles play no role."
+    },
+    "vn.1979.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "$ABCD$ is a rectangle with $BC/AB = \\sqrt{2}$. $ABEF$ is a congruent rectangle in a different plane. Find angle $DAF$ such that lines $CA$ and $BF$ are perpendicular. In this configuration, find two points on $CA$ and two on $BF$ forming a regular tetrahedron.",
+      "statement_sha256": "3647699c84b30c375163e9acc075a637c58b4dc6b61a2fe856b329d7f8f74546",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "vn.1988.1.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "The plane is partitioned into congruent equilateral triangles such that any two non-disjoint triangles share either a vertex or a side. Is there a circle containing exactly 1988 lattice points (triangle vertices) in its interior?",
+      "statement_sha256": "7c51cd0705a1c0b37597495f1b2dd6d879c7ac25103841ab693f9d076f66cff5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "vn.1996.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Given a trihedral angle $Sxyz$. A plane $(P)$ not through $S$ cuts $Sx, Sy, Sz$ at $A, B, C$. Outside triangle $ABC$ on plane $(P)$, construct triangles $DAB, EBC, FCA$ congruent to $\\triangle SAB, \\triangle SBC, \\triangle SCA$. Let $(T)$ be the sphere inside $Sxyz$ but not inside tetrahedron $SABC$, tangent to the faces containing $SABC$. Prove that $(T)$ touches plane $(P)$ at the circumcenter of $\\triangle DEF$.",
+      "statement_sha256": "749d2c73f90485e1c6fe4e91d52b51882566b935420136ea8c1929c09107fded",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "vn.2000.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Find all integers $n \\geq 3$ such that there exist $n$ points in space, with no three collinear and no four concyclic, such that all circles through any three of the points are congruent.",
+      "statement_sha256": "b98b4ebfd25c3ff0b805f3e0e06fb55e2072f88ea6b04fd17bbb65a3bf6c5879",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The integer n counts points; the classification concerns existence of equilateral/cyclic distance configurations, not divisibility."
+    },
+    "vn.2024.2.7": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "In space, there is a convex polyhedron $D$ such that every vertex has an even number of edges. Choose a face $F$ of $D$. Assign each edge a positive integer such that for every face other than $F$, the sum of the assigned numbers on its edges is divisible by $2024$. Prove that the sum of the assigned numbers on the edges of $F$ is also divisible by $2024$.",
+      "statement_sha256": "1e0300c264d2597f3c457343272188aa3d82d1d5b5d87b30092e14140a8c9979",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The proof uses even-degree incidence and divisibility on a polyhedral graph; metric geometry is not required."
+    },
+    "jp.1994.0.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $P_0$ be a point in the plane of triangle $A_0A_1A_2$. For $i = 1, \\dots, 6$, define $P_i$ to be the reflection of $P_{i-1}$ in the point $A_k$, where $k$ is the remainder of $i$ upon division by $3$.\n\n(a) Prove that $P_6 = P_0$.\n\n(b) Find the locus of points $P_0$ for which no segment $P_iP_{i+1}$ $(0 \\le i \\le 5)$ meets the interior of triangle $A_0A_1A_2$.",
+      "statement_sha256": "2366260d65bcf5edebbddc4b896543ed131b0ce33a3d7bb0a8a888d436a259fb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The remainder selects one of three reflection centres; reflections and loci are the substantive techniques."
+    },
+    "jp.1998.0.1": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $p \\ge 3$ be a prime, and let $A_0, A_1, \\dots, A_{p-1}$ be $p$ points on a circle in this order. For $k = 1, \\dots, p$, the number $k$ is written at the point $A_{1+2+\\cdots+(k-1)}$ (indices taken modulo $p$; so $1$ is written at $A_0$). How many points have at least one number written at them?",
+      "statement_sha256": "272f34711ea1929e7cca28af4e0a706af6f047556153a45191b6a6262cf50d0a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "jp.1998.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $P_1, \\dots, P_n$ be the vertices of a closed polygon whose sides may intersect each other at points other than the vertices. The exterior angle at $P_i$ is defined as $180^\\circ$ minus the angle of rotation about $P_i$ that brings the ray $P_iP_{i-1}$ onto the ray $P_iP_{i+1}$, taken in the range $(0^\\circ, 360^\\circ)$ (here $P_0 = P_n$ and $P_{n+1} = P_1$). Prove that if the sum of the exterior angles is a multiple of $720^\\circ$, then the number of self-intersection points is odd.",
+      "statement_sha256": "9b435ebabf15eb3b89cbdba0d7120815f1771955a33365980e1190892bc75a1c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "jp.2011.0.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Four distinct points are given in the plane, no three of them collinear. Prove that if the inradii of the four triangles whose vertices are three of these points are all equal, then the four triangles are all congruent.",
+      "statement_sha256": "1f32d2ad53b5a1d46033b939e2455e276264d4e9837b17d7f66720e1f869f33d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "it.2008.0.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCDEFGHILMN$ be a regular dodecagon. Let $P$ be the intersection of the diagonals $AF$ and $DH$. Let $S$ be the circle through $A$ and $H$ that is congruent to the circumcircle of the dodecagon and distinct from it. Prove that:\n\n(a) $P$ lies on $S$;\n\n(b) the center of $S$ lies on the diagonal $HN$;\n\n(c) the length of $PE$ equals the side of the dodecagon.",
+      "statement_sha256": "7c8174de9cbefca9680230030580181aca0a9d5bab37c1d4be7cf6a2a46c0f90",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "it.2009.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCD$ be a square with center $O$. Two congruent isosceles triangles $BCJ$ and $CDK$ are constructed outside the square, with bases $BC$ and $CD$ respectively. Let $M$ be the midpoint of $CJ$. Prove that the lines $OM$ and $BK$ are perpendicular.",
+      "statement_sha256": "15437216b345983dc6e4a13163fed908dc2782306378ea0761d9a78b8031956d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "it.2010.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In the trapezoid $ABCD$ the sides $AB$ and $CD$ are parallel, and the angles $\\angle ABC$ and $\\angle BAD$ are acute. Prove that it is possible to divide triangle $ABC$ into $4$ disjoint triangles $X_1, \\dots, X_4$ and triangle $ABD$ into $4$ disjoint triangles $Y_1, \\dots, Y_4$ so that the triangles $X_i$ and $Y_i$ are congruent for every $i$.",
+      "statement_sha256": "249bc647f514794c13f7042509159f867b78203e5229ea71d28d26d103a0cd79",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "ph.2022.1.3": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "A lattice point is called visible if the segment joining it to the origin passes through no other lattice point. For a positive integer $k$, let $S_k$ be the set of all visible lattice points $(x, y)$ with $x^2 + y^2 = k^2$. Let $D$ be the set of all positive divisors of $2021 \\cdot 2025$. Compute the sum\n$$\\sum_{d \\in D} |S_d|.$$\n(Here a lattice point is a point $(x, y)$ of the plane with both $x$ and $y$ integers, and $|A|$ denotes the number of elements of the set $A$.)",
+      "statement_sha256": "4fb5dbf00076bdf27a916f245ba7047147f3bc16e75c7bc45d950a5ddc0e6ac0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Visibility encodes coprimality and x^2+y^2=d^2; prime factorisation and primitive integer representations are central."
+    },
+    "ph.2026.2.7": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $A_1A_2A_3A_4$ be a square inscribed in a convex quadrilateral $B_1B_2B_3B_4$, such that for each $i \\in \\{1, 2, 3, 4\\}$ the point $A_i$ lies on $B_iB_{i+1}$, where $B_5 = B_1$. Let $m$ be an integer. Let $C_1C_2C_3C_4$ be the quadrilateral such that for each $i \\in \\{1, 2, 3, 4\\}$, $C_i$ is the foot of the perpendicular from $B_i$ to the line $A_{i+m}A_{i+m+1}$, with indices taken modulo $4$. Find all integers $m$ such that the following holds: if $C_1C_2C_3C_4$ is a square, then $B_1B_2B_3B_4$ is also a square.",
+      "statement_sha256": "880234b8eb2dbaba1f64f58d09f0ba8c0a92f15daca57ab2f8c92f794b50e3b4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Modulo 4 specifies which geometric side is used; it is a subscript convention, not an arithmetic technique."
+    },
+    "tr.2013.1.2": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $m$ be a positive integer.\n\n(a) Prove that there are infinitely many positive integers $k$ such that $1 + km^3$ is a perfect cube and none of the numbers $1 + kn^3$ with positive integers $n < m$ is a perfect cube.\n\n(b) For a prime $p \\equiv 2 \\pmod 3$ and a positive integer $r$, with $m = p^r$, find all positive integers $k$ satisfying the condition in part (a).",
+      "statement_sha256": "c231dfd1f2495b37f9f4d0a31955eacbfa761fe4eebe4d90a8f599ecbc5976f8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive constraints are integer powers, prime factors, divisibility or integer representations; geometric vocabulary is incidental."
+    },
+    "tr.2018.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The positive integers $a_1, a_2, a_3, a_4$ are arranged around a circle so that any two neighbours are relatively prime. At most how many ordered triples $(i, j, k)$ with $i, j, k \\in \\{1, 2, 3, 4\\}$, $i \\ne j$, $j \\ne k$, $k \\ne i$ can satisfy $\\left(\\gcd(a_i, a_j)\\right)^2 \\mid a_k$?",
+      "statement_sha256": "702b87d0f12b686e2c04db265d5d79b3014087a345b12b148a87f099e9c1af9b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ru.2003.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Is it possible to place positive integers in the cells of an infinite sheet of squared paper so that for any positive integers $m, n > 100$ the sum of the numbers in any $m \\times n$ rectangle of cells is divisible by $m + n$?",
+      "statement_sha256": "3ecee0228e1671516651df9e19fac6ede85d5714d1c0fa15b34d642a3f8bf090",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ru.2012.1.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A pyramid $SA_1A_2\\dots A_n$ whose base is a convex polygon $A_1\\dots A_n$ is given. For each $i = 1, 2, \\dots, n$, a triangle $X_iA_iA_{i+1}$ congruent to triangle $SA_iA_{i+1}$ is constructed in the plane of the base, on the same side of the line $A_iA_{i+1}$ as the base (with $A_{n+1} = A_1$). Prove that the constructed triangles cover the whole base.",
+      "statement_sha256": "9fb14105d6e03f8bc49b1ad897907e26b732ba0824c67f8c63051ae50bdc479b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "es.1993.1.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The following arithmetic triangle is written:\n$$\\begin{array}{ccccccccccccccccc}\n0 & & 1 & & 2 & & 3 & & 4 & & \\cdots & & 1991 & & 1992 & & 1993\\\\\n & 1 & & 3 & & 5 & & 7 & & \\cdots & & \\cdots & & 3983 & & 3985 & \\\\\n & & 4 & & 8 & & 12 & & \\cdots & & \\cdots & & \\cdots & & 7968 & & \\\\\n & & & & & & & & \\cdots & & & & & & & &\n\\end{array}$$\nwhere each number is the sum of the two numbers above it (each row has one number fewer than the previous one, and the last row has only one number). Prove that the last number is a multiple of $1993$.",
+      "statement_sha256": "c743ef1f70151835d2bae897d24c9008fd21fb2c2300bab11e35a13c5bf9837f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "es.2008.1.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $p\\ge 3$ be a prime number. Each side of a triangle is divided into $p$ equal parts, and each of the division points is joined to the opposite vertex. Compute the maximum number of pairwise disjoint regions into which the triangle is divided.",
+      "statement_sha256": "54412ebd494c14d4c7a9c3ff9443c92e96ec1ce25bac219fb69f9c286a2cbd37",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Counting regions from a geometric incidence arrangement is geometry/combinatorics; primality of p alone does not establish a number-theory method."
+    },
+    "es.2010.1.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "A *pucelana* sequence is an increasing sequence of sixteen consecutive positive odd numbers whose sum is a perfect cube. How many *pucelana* sequences consist only of three-digit numbers?",
+      "statement_sha256": "485166ef666738818f67228444929c9381fffb7191906c4074a1d6ef4386d252",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive constraints are integer powers, prime factors, divisibility or integer representations; geometric vocabulary is incidental."
+    },
+    "cz.2000.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "An isosceles triangle $ABC$ with base $AB$ is given. A point $P$ is chosen on its altitude $CD$ so that the incircles of the triangle $ABP$ and of the quadrilateral $PECF$ are congruent; here $E$ is the intersection of the line $AP$ with the side $BC$ and $F$ is the intersection of the line $BP$ with the side $AC$. Prove that the incircles of the triangles $ADP$ and $BCP$ are also congruent.",
+      "statement_sha256": "f5ec6641b6cddc32083d0ab87221adda9b5efa114f046f3a06918f549cee5ee5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "cz.2000.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In the plane, $2000$ congruent triangles of area $1$ are given, which are images of one and the same triangle under different translations. Each of these triangles contains the centroids of all the others. Prove that the area of the union of these triangles is less than $\\frac{22}{9}$.",
+      "statement_sha256": "d8a1291489c3dc448952f7cdf94d71ee1b3503dda1bfa59ca4e2df12c1a7ff5b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "cz.2011.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine the sizes of the interior angles of all triangles $ABC$ with the following property: there exist points $K$, $M$ in the interiors of the sides $AB$, $AC$, respectively, which together with the intersection $L$ of the lines $MB$ and $KC$ form cyclic quadrilaterals $AKLM$ and $KBCM$ with congruent circumcircles.",
+      "statement_sha256": "4cef3e13d70737dd248dda3cdb511408ef882370f2a9390402de268bbf76f07f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "cz.2014.1.3": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Consider an $8\\times 8$ chessboard, and next to each \\\"edge\\\" separating two of its squares write the positive integer equal to the number of ways in which the whole chessboard can be cut into $2\\times 1$ rectangles so that the edge in question is part of the cut. Determine the last digit of the sum of all numbers written in this way.",
+      "statement_sha256": "5b830055b8dcd7bbe8ee3a44820a8f4efb61851778ccb680e9814ab7eee5b9e1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The task counts domino matchings and asks a final digit; rectangles specify tiles rather than a metric geometry theorem."
+    },
+    "cz.2018.2.4": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Consider an arbitrary triple of integers $a$, $b$ and $c$ which are the side lengths of a triangle, have no common divisor greater than $1$, and for which the values of all three fractions $$\\frac{a^2+b^2-c^2}{a+b-c},\\quad \\frac{b^2+c^2-a^2}{b+c-a},\\quad \\frac{c^2+a^2-b^2}{c+a-b}$$ are integers. Prove that the product of the denominators of these three fractions or its double is the square of an integer.",
+      "statement_sha256": "d200318a898ea5cf1333702ac143b80b4cbbafab64926c3232541115dac26a12",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "cz.2024.2.6": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all right triangles with integer side lengths into which one can inscribe two congruent circles with a prime radius such that the circles are externally tangent to each other, both are tangent to the hypotenuse, and each of them is tangent to a different leg.",
+      "statement_sha256": "f7d119f3ca20f9eec430b6a8dda329393338864c616e2d5affce8cb93cb5afa3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "cz.2025.2.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "At least $3$ pairwise distinct primes are written around a circle. For every two adjacent primes we determine the largest prime dividing their sum. In this way we obtain, up to order, the same primes as those that were written. Find all possible initial sets of primes.\n(For example, the primes $2, 7, 3, 11, 17$ in this order do not work, since the corresponding sums $9, 10, 14, 28, 19$ have largest prime divisors $3, 5, 7, 7, 19$, respectively.)",
+      "statement_sha256": "d586b2118d0c5b84789616a40e55ea467d3ae78a7452652836d1eb9d2b8f92ed",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ut.2013.2.5": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Two incongruent triangles $ABC$ and $XYZ$ are called a pair of pals if they satisfy the following conditions:\n(a) the two triangles have the same area;\n(b) let $M$ and $W$ be the respective midpoints of sides $BC$ and $YZ$. The two sets of lengths $\\{AB, AM, AC\\}$ and $\\{XY, XW, XZ\\}$ are identical 3-element sets of pairwise relatively prime integers.\nDetermine if there are infinitely many pairs of triangles that are pals of each other.",
+      "statement_sha256": "69f5df60ff5c19b4708917e385e11a1cf9a971a8dd8d593a4bc7f77ad8cca09d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "rs.2012.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $\\mathcal{K}$ be the integer lattice. Does there exist a bijection $f : \\mathbb{N} \\to \\mathcal{K}$ such that for all pairwise distinct $a, b, c \\in \\mathbb{N}$\n$$\\gcd(a, b, c) > 1 \\implies f(a),\\ f(b),\\ f(c) \\text{ are not collinear?}$$\n(The integer lattice is the set of points in the plane with integer coordinates in a Cartesian coordinate system.)",
+      "statement_sha256": "940fe1de3867dc06eac3c820bd11cfe14da038d7445a36356aa9db265574f68e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "rs.2014.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A regular $n$-gon is divided into triangles by $n-3$ diagonals, no two of which have a common interior point. At most how many of these triangles can be pairwise non-congruent?",
+      "statement_sha256": "b9d31dc4184c6d04506caaf9d3695fe72ef10d0b61de3cef427316e9526f2cc6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "rst.2017.2.6": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For a given positive integer $k$, consider the smallest positive integer $n$ having exactly $k$ divisors. If $n$ is a perfect cube, can $k$ be divisible by some prime of the form $3j+2$?",
+      "statement_sha256": "6dbc80a7ea0f4b6cd9972c9f439d1d0d0222f4862b2b26b39bd54e5296f844b0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive constraints are integer powers, prime factors, divisibility or integer representations; geometric vocabulary is incidental."
+    },
+    "rst.2019.1.3": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "A positive integer $n$ and a circle of circumference $n$ are given. The numbers $0, 1, \\dots, n-1$ are written on the circle clockwise, in this order and equally spaced. Each number is colored red or blue, and there is at least one nonzero number of each color. It is known that there exists a set $S \\subsetneq \\{0, 1, \\dots, n-1\\}$, $|S| \\ge 2$, with the following property: if $(x, y)$ is an arc whose endpoints have different colors and whose length is in $S$ (where the arc is taken clockwise from $x$ to $y$), then $y \\in S$. Prove that there exists a divisor $d$ of $n$, different from $1$ and $n$, with the following property: if $(x, y)$ is an arc whose endpoints have different colors and whose length is divisible by $d$, then both $x$ and $y$ are divisible by $d$.",
+      "statement_sha256": "8205a86a4bed97ebb37d77d32ec47f7ba298d31f40c1a73e6e17ac6d09f68289",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "hrt.2014.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "A positive integer $M\\ge 3$ is given. We say that a regular polygon is brilliantly coloured if all its sides and diagonals are coloured in exactly $M$ colours so that there are no three vertices of the polygon determining a triangle whose sides are coloured in exactly two colours.\n\nLet $N$ be the largest positive integer such that there exists a brilliantly coloured regular polygon with exactly $N$ vertices.\n\na) Prove that $N\\le(M-1)^2$.\n\nb) If $M-1$ is a prime number, prove that there exists a brilliantly coloured regular polygon with exactly $(M-1)^2$ vertices.",
+      "statement_sha256": "e84b53f3fe28ba878b26a715f6b1d5c74afe3830881abf0614bee6b65184ec13",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "This is an edge-colouring extremal problem and a prime-order construction; the regular polygon visualises a complete graph."
+    },
+    "no.2005.0.1": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "a) A positive integer $m$ is called a triangular number if $m = 1 + 2 + \\dots + n$ for some integer $n$. Show that a positive integer $m$ is a triangular number if and only if $8m + 1$ is the square of an integer.\n\nb) In a pyramid the base is a right-angled triangle with integer sides. The height of the pyramid is also an integer. Show that the volume of the pyramid is an even number.",
+      "statement_sha256": "1e89dcdf10463b7c9b3e30027d57e830ff7cfc70e162228221d8ce2a7ef0341c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "no.2006.0.3": {
+      "topics": [
+        "Algebra",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "(a) Let $a$ and $b$ be rational numbers such that the line $y = ax + b$ intersects the circle $x^2 + y^2 = 5$ in two different points. Show that if one of the points of intersection has two rational coordinates, then the other point of intersection also has.\n\n(b) Show that there are infinitely many triples $(k, n, m)$ such that $k^2 + n^2 = 5m^2$, where $k$, $n$ and $m$ are integers, and the three do not all have a common prime factor.",
+      "statement_sha256": "3e10a5f1aa8a2331437df346207260fa8126799d0191e28647b0c9937793b6c9",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "no.2017.0.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "a. Nils has a telephone number with eight different digits. He has made $28$ cards with statements of the type \"The digit $a$ occurs earlier than the digit $b$ in my telephone number\" – one for each pair of digits appearing in his number.\n\nHow many cards can Nils show you without revealing his number?\n\nb. In an infinite grid of regular triangles, Niels and Henrik are playing a game they made up. Every other time, Niels picks a triangle and writes $\\times$ in it, and every other time, Henrik picks a triangle where he writes a $\\circ$. If one of the players gets four in a row in some direction (see figure), he wins the game.\n\nDetermine whether one of the players can force a victory, or if both players can stop the other from winning.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/norway_2017_p3_fig.png",
+      "statement_sha256": "4aae17c76bf6edb06c5fd8e0dba6102054f9368a82109c1eeeec9f2567157301",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Both parts are combinatorial: partial-order information from cards and a lattice placement game."
+    },
+    "ukt.1986.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find, with proof, the number of different (i.e. non-congruent) triangles with sides of integer length whose perimeter is $1986$ units.",
+      "statement_sha256": "d1c8a374bdfb42e21aa41bd27711c856d5b831375e775c7d323bd4ad1cdef12e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ukt.2010.5.13": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n \\ge 2$ be an integer. At every point of the co-ordinate plane with integral co-ordinates $(i, j)$ we write $i + j$ modulo $n$ (an integer in the range $[0, n-1]$). Find all pairs $(a, b)$ of positive integers such that the rectangle with vertices $(0,0)$, $(a,0)$, $(a,b)$ and $(0,b)$ has both the following properties.\n(a) The remainders $0, 1, \\dots, n-1$ are each written the same number of times in its interior.\n(b) The remainders $0, 1, \\dots, n-1$ are each written the same number of times on its boundary.",
+      "statement_sha256": "0771b26eada3e2b7ee6babddb3ffd36cca77c4299d11f64e229e432da5c288e1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ukt.2011.3.7": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Circles $\\Gamma_1$ and $\\Gamma_2$ meet at $M$ and $N$. Let $A$ be on $\\Gamma_1$ and $D$ on $\\Gamma_2$. The lines $AM$ and $AN$ meet $\\Gamma_2$ again at $B$ and $C$ respectively; the lines $DM$ and $DN$ meet $\\Gamma_1$ again at $E$ and $F$, respectively. Assume that $M, N, F, A, E$ are in cyclic order around $\\Gamma_1$, and that $AB$ and $DE$ are congruent. Prove that $A$, $F$, $C$ and $D$ lie on a circle whose centre does not depend on the position of $A$ and $D$ on the circles.",
+      "statement_sha256": "30e1415f21454b85ddad8d6260dbb18f261eba02c3db2b179664fcdf0ae20a0a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "ukt.2015.5.15": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $a_1 < a_2 < \\dots < a_n$ be pairwise coprime positive integers with $a_1$ being prime and $a_1 \\ge n + 2$. On the segment $I = \\left[0, \\prod_i a_i\\right]$ of the real line, mark all integers which are divisible by at least one of the numbers $a_1, a_2, \\dots, a_n$. These points break $I$ into a number of smaller segments. Prove that the sum of the squares of the lengths of these segments is divisible by $a_1$.",
+      "statement_sha256": "6810387999722ebb780c67d48f24b56d252f47e7137caf98ab192191d4062990",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Segments merely represent gaps between multiples on a line; the target is an arithmetic divisibility claim."
+    },
+    "nl.2004.0.5": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "A right triangle with legs $a$ and $b$ and hypotenuse $c$ has the following properties:\n$a=p^m$ and $b=q^n$, where $p$ and $q$ are primes and $m$ and $n$ are positive integers;\n$c=2k+1$, where $k$ is a positive integer.\n\nDetermine all possible values of $c$ and the corresponding values of $a$ and $b$.",
+      "statement_sha256": "c24fd667fef2c2de714b2e8e1983c0fd95135809fc4838d3ec2e5371e1f6a582",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "nlt.2017.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n\\ge 4$ be an integer. Consider a regular $2n$-gon where an integer is assigned to each vertex, which we call the value of that vertex. If four distinct vertices of this $2n$-gon form a rectangle, then we call the sum of the values of these vertices a rectangle sum.\n\nDetermine for which integers $m$ (not necessarily positive) we can assign the numbers $m+1, m+2, \\dots, m+2n$ as values to the vertices (in some order) such that every rectangle sum is a prime number. (Primes are positive by definition.)",
+      "statement_sha256": "40e3d496638140724a174e7a7c70e10a7ebf201647fb62581a8b7297ead920c1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "cht.2014.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Four points in the plane are given such that the $4$ triangles they span all have the same inradius. Prove that the $4$ triangles are congruent.",
+      "statement_sha256": "5db29619013cb5c1704830f9ba3974ea028aac17e7fb8b1570fe91d92d069beb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "cht.2022.3.8": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Johann and Nicole are playing a game on the coordinate plane. First, Johann draws any polygon $S$, and then Nicole can shift $S$ wherever she wants. Johann wins if there exists a point with coordinates $(x, y)$ in the interior of $S$, where $x$ and $y$ are coprime integers. Otherwise, Nicole wins. Determine who has a winning strategy.",
+      "statement_sha256": "a37cbf87823b820b524dad6881e0219a648f439965ff1b2f65531be768f9b36a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "cht.2024.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n \\ge 2$ be an integer. Kaloyan has a $1 \\times n^2$ strip of unit squares, where the $i$-th square is labelled with $i$ for all $1 \\le i \\le n^2$. He cuts the strip into several pieces, each piece consisting of a number of consecutive unit squares. He then places the pieces, without rotation or reflection, on an $n \\times n$ square such that the square is covered entirely and the unit square in the $i$-th row and $j$-th column contains a number congruent to $i + j$ modulo $n$.\nDetermine the smallest number of pieces for which this is possible.",
+      "statement_sha256": "5ecf9d91351c5f9768f365bd8fbee270e8ea580b3f48aaf7e3cff5adfa7bfef5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "de.2006.0.1": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A circle is divided into $2n$ congruent sectors, of which $n$ are colored black and the other $n$ white. The white sectors are numbered $1, 2, 3, \\dots, n$ clockwise, starting anywhere. Then the black sectors are numbered $1, 2, 3, \\dots, n$ counterclockwise, starting anywhere. Prove that there are $n$ consecutive sectors which contain the numbers $1$ to $n$.",
+      "statement_sha256": "327be7cc6357442fc17f07ea56f8a983f0909cf95c5716d79c94ba1599ad9927",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "de.2007.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A regular hexagon is divided, as shown in the figure, by lines parallel to its sides into $54$ congruent equilateral triangles. In the resulting figure there are then exactly $37$ points which are vertices of at least one of the triangles. These points are numbered from $1$ to $37$ in some way. A triangle is called clockwise if, going clockwise from the vertex with the smallest number, one first reaches the vertex with the middle number and then the vertex with the largest number. Prove that at least $19$ of the $54$ triangles are clockwise.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bwm_2007_p4_fig.png",
+      "statement_sha256": "6e6c7bb446cc7e049ca6afc4d8c14be60928f3a45ad85e5c581e32f06722f863",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "dem.1963.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A rectangle with sides $2a$ and $2b$, where $a > b$, is given. From this rectangle, four congruent right triangles (one triangle at each corner, whose legs lie on the sides of the rectangle) are to be cut off in such a way that the remaining figure is an octagon with sides of equal length. Express the side of the octagon in terms of $a$ and $b$ and construct it from $a$ and $b$. Also state under which conditions the problem is solvable.",
+      "statement_sha256": "7b5f7150bd4b84066bf9b11b3380edf1880b8782a0dffd3fe1dcd624890f9c4c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "dem.1986.0.6": {
+      "topics": [
+        "Algebra",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. A natural number represented in the decimal system is called a mirror number if its digits are arranged symmetrically, i.e. if the first and the last, the second and the second-to-last, etc. digits coincide. For example, the numbers $358853$, $27672$, $44444$ are mirror numbers. Investigate whether for every two-digit natural number $a$ whose last digit is different from $0$ there is a mirror number different from $0$ which is divisible by $a$.\n\nVersion B. For every triangle $ABC$, let $d$ denote the length of the diameter of the incircle, $g$ the largest side length and $\\varepsilon$ the size of the smallest angle of the triangle $ABC$.\n(a) Prove: there is a constant $K$ such that for every triangle $ABC$ the following inequality (1) holds:\n$$\\frac1d < \\frac{K}{g\\sin\\varepsilon}. \\qquad (1)$$\n(b) Among all constants $K$ for which the statement to be proved in (a) holds, determine the smallest constant, if it exists.",
+      "statement_sha256": "43d4a5f88a0d178b7f5ee93d974e5b4fca901465ec2daf56e472c1c2b854c544",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The stored record contains two genuinely different alternative problems: palindrome divisibility and a geometric inequality."
+    },
+    "dem.1993.0.5": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine the largest possible number of triangles with integer side lengths and perimeter $1993$ among which no two are congruent to each other.",
+      "statement_sha256": "8e9919d472c3ffd2434ec882492664521c186fa2bbf3685c65477aca38de0cd6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "dem.1997.2.6": {
+      "topics": [
+        "Algebra",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Exactly one of the following parts A and B is to be chosen and solved.\n\nPart A. Let $f$ and $g$ be the functions defined by\n$$f(x) = x^5 + 5x^4 + 5x^3 + 5x^2 + 1, \\qquad g(x) = x^5 + 5x^4 + 3x^3 - 5x^2 - 1.$$\nDetermine all primes $p$ for which there exists (at least) one integer $x$ with $0 \\le x < p$ such that both $f(x)$ and $g(x)$ are divisible by $p$. For each such prime $p$, determine all integers $x$ satisfying these conditions.\n\nPart B. For the approximate construction of a regular pentagon the following procedure is proposed: choose five points $P_1, P_2, P_3, P_4, P_5$ on a circle so that they are the vertices of an otherwise arbitrary convex pentagon $P_1P_2P_3P_4P_5$. Furthermore choose an arbitrary positive number $\\varepsilon$ as an error bound. Now carry out the following steps:\n\n(1) Introduce the further notation $P_0 := P_5$ and $P_6 := P_1$, and then for $j = 1, \\dots, 5$ construct the point $Q_j$ as the midpoint of the circular arc which connects $P_{j-1}$ with $P_{j+1}$ and passes through $P_j$.\n\n(2) Rename the pentagon $Q_1Q_2Q_3Q_4Q_5$ obtained in this way as $P_1P_2P_3P_4P_5$.\n\n(3) For $j = 1, \\dots, 5$ consider the length of the arc which leads from $P_j$ to $P_{j+1}$ (but not via the other $P_i$). If these arc lengths satisfy the condition that the difference between the largest and the smallest of them is less than $\\varepsilon$, stop the procedure; otherwise continue with step (1).\n\nProve that for every choice of the initial points $P_1, P_2, P_3, P_4, P_5$ and of the error bound $\\varepsilon$ this procedure stops after finitely many steps.",
+      "statement_sha256": "b942bf867a023b367466e5b1f62a370aa8cbc04483f1d8a3f47ec82f21bdab72",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The stored record contains two different alternatives: polynomial congruences and a convergent geometric construction."
+    },
+    "hk.2008.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "There are $2008$ congruent circles on a plane such that no two are tangent to each other and each circle intersects at least three other circles. Let $N$ be the total number of intersection points of these circles. Determine the smallest possible value of $N$.",
+      "statement_sha256": "da8cdcf08a6f6e04518f89ea2bf4e5ab1a72b0dcda4877e1d8e8c33b1d63ad69",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "hkt.2005.2.9": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $x$ be the area of two non-congruent triangles with integral side lengths. Determine the smallest possible value of $x$. Justify your claim.",
+      "statement_sha256": "685399edd1ed8bb1a2af08e6de01f4291480449d2822dfb4f5d376170ab31019",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "hkt.2006.2.7": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral. Show that the orthocentres of the triangles $\\triangle ABC$, $\\triangle BCD$, $\\triangle CDA$ and $\\triangle DAB$ are the vertices of a quadrilateral congruent to $ABCD$ and show that the centroids of the same triangles are the vertices of a cyclic quadrilateral.",
+      "statement_sha256": "42666b00ef069819bfe0203ff4903982e562523e4a6699b898b951ce20417b5a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "lt.2004.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "All angles of a given $19$-gon are multiples of $10^\\circ$. Prove that the $19$-gon has at least one pair of parallel sides.",
+      "statement_sha256": "a58a8705f09d06ca3e055aa1fd3b78801f76305a6719d937ea3024904caf59dd",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiples of ten are angle sizes; the claim concerns parallel sides of a polygon."
+    },
+    "lt.2010.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The integers from $1$ to $25$ are written around a circle (not necessarily in the usual order). $25$ sums are computed: starting from each number, $5$ consecutive numbers going clockwise are added. The remainders of these sums upon division by $5$ are found (i.e. each is one of the numbers $0,1,2,3$ or $4$). Denote by $d$ the number of distinct remainders.\n(a) Prove that $d$ can be equal to $1$, $3$, $4$ or $5$.\n(b) Prove that $d$ cannot be equal to $2$.",
+      "statement_sha256": "8659324cb0c19a169caa78705ad8eedb7c1767968e62685a443c2323be3840ab",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ltt.2017.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A positive integer $n\\ge 4$ is given. A regular $n$-gon is divided into triangles by drawing $n-3$ non-intersecting (having no common interior points) diagonals. What is the largest number of pairwise non-congruent triangles that can be among the resulting ones?",
+      "statement_sha256": "f68f8750993f9c5568db7f34692b9f871d0876d21418a4540d5f13774dd49823",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "lv.2000.0.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A point $T$ is taken inside a triangle $ABC$. Lines parallel to the sides of $ABC$ are drawn through it. The intersection points of these lines with the sides of $ABC$ lie on one circle. The vertices of triangle $ABC$ and the mentioned $6$ intersection points lie on the boundary of $ABC$ in the order $A, C_1, C_2, B, A_1, A_2, C, B_1, B_2$.\n(a) Prove that triangle $C_1A_1B_1$ is similar to triangle $ABC$.\n(b) Prove that triangles $A_1B_1C_1$ and $A_2B_2C_2$ are congruent.",
+      "statement_sha256": "e64ec205b18165137ef93bd91f29197a459b508de4bd9ed941d44fbda6b9e8ec",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "lv.2010.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The positive integers from $1$ to $k$ are written around a circle in some order (each exactly once). It is known that for every $d$ with $2\\le d\\le k-1$ the following property holds: dividing by $k$ all possible sums of $d$ consecutive numbers, one obtains all possible remainders. Is it possible that\n(a) $k=7$,\n(b) $k=8$?",
+      "statement_sha256": "d32dec5acb45b6e4cb1198fddd5950fabdd28534a25981e526daff1eeeed250a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "lv.2018.0.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "A rectangle of size $n\\times m$ cells is cut along the grid lines into rectangles of size $1\\times 6$ cells. Prove that $n$ or $m$ is divisible by $6$.",
+      "statement_sha256": "8d312e1e15e2513015037b1834712314a40b5b9561cabc56cd6e294e53da865e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "pt.2010.2.4": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Giraldo wrote five distinct natural numbers at the vertices of a pentagon. Then he wrote on each side of the pentagon the least common multiple of the numbers at the two vertices of that side, and noticed that the five numbers he wrote on the sides were equal. What is the smallest number Giraldo may have written on the sides?",
+      "statement_sha256": "c9b24c6721a11a04d66f9ca96c3b7f3af75d5b478c4471d693c571ac57c6e27f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "pt.2010.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that, for any prime number $p$, it is possible to choose $p$ points of a $p \\times p$ grid of points so that no three of the points are collinear. The following figure illustrates a possible choice for $p = 3$ (the chosen points are shown in a different colour).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/portugal_2010_p6_fig.png",
+      "statement_sha256": "8d275a6bf7709d74b076c390d721286078afe06996d73901f1d61c36e7b3b859",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The construction uses a prime-order lattice with a genuine collinearity constraint."
+    },
+    "pt.2018.2.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $[ABC]$ be any triangle and let $D$, $E$ and $F$ be the reflections of the circumcentre in the three sides. Show that the triangles $[ABC]$ and $[DEF]$ are congruent.",
+      "statement_sha256": "ff44a7df5c47ff32230f543c6cb8e3495ac3dfee0bb23e46534415d8e8d99548",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "dk.2020.0.4": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Identical rectangular pieces of cardboard are handed out to $30$ students, one to each. Each student cuts (parallel to the edges) his whole piece of cardboard into equally large squares. The squares of two different students need not have the same size. After all the cutting, it turns out that the total number of squares is a prime.\n\nProve that the original pieces of cardboard must have been square.",
+      "statement_sha256": "78927f7203777c44e254f4e6b89c1475cca3fdc219f3ffd72950521d3ed65dd7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "fi.2014.0.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "The radius $r$ of a circle is an odd integer. The point $(p^m,q^n)$ lies on the circle, where $p$ and $q$ are primes and $m$ and $n$ are positive integers. Moreover, the circle is centred at the origin. Determine the radius $r$.",
+      "statement_sha256": "23eea8cc83a5ef38206a21e52bfb26062014bc01db85bb4cca25cdbd0111e363",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The circle equation gives an integer equation in prime powers; the radius problem is substantively arithmetic."
+    },
+    "frt.2017.5.15": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n$ be an integer coprime to $6$. The vertices of a regular $n$-gon are coloured blue, green or red so that there is an odd number of vertices of each colour. Show that there is an isosceles triangle whose three vertices have different colours.",
+      "statement_sha256": "af2b6258fa1e9b97c44bbf55b7c0829189974b1636945eeec14a507690d29757",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Same geometric-colouring construction with coprimality restrictions on the polygon size."
+    },
+    "cyt.2023.3.11": {
+      "topics": [
+        "Combinatorics",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "An infinite set $A$ of positive real numbers is given. We colour the elements of $A$ with three colours so that each colour is used infinitely many times.\nIn each of the following cases (a), (b), (c), examine whether we can surely find a triangle with side lengths belonging to $A$ and these lengths having three different colours.\n(a) $A=\\mathbb{N}=\\{1,2,3,\\dots\\}$.\n(b) $A=\\{1,r,r^2,r^3,\\dots\\}$ where $r=\\frac{2024}{2023}$.\n(c) $A$ is the set of prime numbers.",
+      "statement_sha256": "946125270e36ddb201890228c6c6a62707e1f0f57a44219952c11a258eb1a865",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Multiple substantive parts or constraints require the listed mathematical areas, rather than merely matching their vocabulary."
+    },
+    "hu.2021.0.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "We are given a cyclic hexagon $A_1B_3A_2B_1A_3B_2$ whose diagonals $A_1B_1$, $A_2B_2$ and $A_3B_3$ pass through one point. For each $i = 1, 2, 3$, let $C_i$ be the intersection point of the diagonals $A_iB_i$ and $A_{i+1}A_{i+2}$, and let $D_i$ be the point, different from $B_i$, on the circumcircle of the hexagon such that the circle $B_iC_iD_i$ is tangent to the line $A_{i+1}A_{i+2}$. (Points are indexed modulo $3$, i.e. $A_4 = A_1$ and $A_5 = A_2$.) Prove that the segments $A_1D_1$, $A_2D_2$ and $A_3D_3$ pass through one point.",
+      "statement_sha256": "fdf65fca228dbcd914dd42ab14f52cafe3edefb3b3340dc56c1f46553cc7cf07",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Modulo 3 only rotates the vertex labels in a cyclic-hexagon concurrency theorem."
+    },
+    "au.2019.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "A fancy triangle is an equilateral triangular array of integers such that the sum of the three numbers in any unit equilateral triangle is a multiple of $3$. For example,\n$$\\begin{array}{ccccc} & & 1 & & \\\\ & 0 & & 2 & \\\\ 5 & & 7 & & 3 \\end{array}$$\nis a fancy triangle with three rows because the sum of the numbers in each of the following four unit equilateral triangles is a multiple of $3$.\n$$\\begin{array}{ccc} & 1 & \\\\ 0 & & 2 \\end{array} \\qquad \\begin{array}{ccc} & 0 & \\\\ 5 & & 7 \\end{array} \\qquad \\begin{array}{ccc} 0 & & 2 \\\\ & 7 & \\end{array} \\qquad \\begin{array}{ccc} & 2 & \\\\ 7 & & 3 \\end{array}$$\nSuppose that a fancy triangle has ten rows and that exactly $n$ of the numbers in the triangle are multiples of $3$.\n\nDetermine all possible values for $n$.",
+      "statement_sha256": "ed5dc1f4eff214ea670f0992c8795a7e1b81afb73359eadfde8ed3706b6cce4e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "ee.1993.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A rectangle is divided into five rectangular pieces of equal area. Prove that among these rectangles there are at least two equal (congruent) ones.",
+      "statement_sha256": "0e2c0078950da543150eb5426ffce02d605f93a8d0600ce2d388386c73770491",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "ee.2004.0.5": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n$ and $c$ be coprime positive integers. For any integer $i$, let $i'$ denote the remainder of $ci$ upon division by $n$. Let $A_0A_1 \\ldots A_{n-1}$ be a regular $n$-gon. Prove that\n\na) if the segments $A_iA_j$ and $A_kA_l$ are parallel, then the segments $A_{i'}A_{j'}$ and $A_{k'}A_{l'}$ are also parallel;\n\nb) if the segments $A_iA_j$ and $A_kA_l$ are perpendicular, then the segments $A_{i'}A_{j'}$ and $A_{k'}A_{l'}$ are also perpendicular.",
+      "statement_sha256": "0951f39918718bef64da07b24ef876ff85c2843c3c9a06fd1d3e0c6bbbf5b527",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Residue multiplication acts on a regular polygon and must preserve parallelism/perpendicularity; both arithmetic and geometry are active."
+    },
+    "ee.2024.0.5": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all positive integers $n$ for which it is possible to write all positive integers from $1$ to $n$ in some order around a circle, each exactly once, so that every number is coprime to the number following it.\n\nNote. An integer $n$ is coprime to an integer $m$ if $\\gcd(n, m) = 1$.",
+      "statement_sha256": "5a928abc182240ab61a42c47406645f09277f715043c024fc6a5118e0cec3d0b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "huo.2010.0.1": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that there are infinitely many right triangles whose side lengths are pairwise coprime integers and such that subtracting the length of either leg from the length of the hypotenuse gives a perfect cube.",
+      "statement_sha256": "84cd64131632dd952966f45935e398826eefd1bbe67b82e5bcba27060552908c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+    },
+    "huo.2011.0.2": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Is there a positive integer among whose positive divisors there are $2011$ times as many perfect squares as perfect cubes?",
+      "statement_sha256": "51c5969d57387ae5348706ef718a86c3f572f293c426964e85e4cb587a816f6c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive constraints are integer powers, prime factors, divisibility or integer representations; geometric vocabulary is incidental."
+    },
+    "um.1977.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Prove that if the opposite sides of a skew (non-planar) quadrilateral are congruent, then the line joining the midpoints of the two diagonals is perpendicular to these diagonals, and conversely, if the line joining the midpoints of the two diagonals of a skew quadrilateral is perpendicular to these diagonals, then the opposite sides of the quadrilateral are congruent.",
+      "statement_sha256": "3da1e4a29ce2ff886ee9caee3d9b0e2e2d5efa1405d85fdf5c335d8ebc85ff4b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "um.1978.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "(a) Prove that if the six dihedral angles (i.e., angles between pairs of faces) of a given tetrahedron are congruent, then the tetrahedron is regular. (b) Is a tetrahedron necessarily regular if five dihedral angles are congruent?",
+      "statement_sha256": "f2a3ea356ef2ce585b5a42da475697487e53f7a682ea63395b0ab6497b125f29",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "um.1981.0.1": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "The measure of a given angle is $\\dfrac{180^\\circ}{n}$ where $n$ is a positive integer not divisible by 3. Prove that the angle can be trisected by Euclidean means (straightedge and compasses).",
+      "statement_sha256": "0aa005a679a813112bcae8337c20eb395ba2383adf30f2db57e1f69c88184df9",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Euclidean trisection under a divisibility restriction on n connects constructibility and integer angle arithmetic."
+    },
+    "um.1983.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Six segments $S_1, S_2, S_3, S_4, S_5$, and $S_6$ are given in a plane. These are congruent to the edges $AB$, $AC$, $AD$, $BC$, $BD$, and $CD$, respectively, of a tetrahedron $ABCD$. Show how to construct a segment congruent to the altitude of the tetrahedron from vertex $A$ with straight-edge and compasses.",
+      "statement_sha256": "6821beef5033adc1042925d277a6b1fdd0c3ba68dbb0574da24e6fca8085822b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "um.1990.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Suppose that necklace A has 14 beads and necklace B has 19. Prove that for any odd integer $n \\ge 1$, there is a way to number each of the 33 beads with an integer from the sequence $\\{n, n+1, n+2, \\dots, n+32\\}$ so that each integer is used once, and adjacent beads correspond to relatively prime integers. (Here a necklace is viewed as a circle in which each bead is adjacent to two other beads.)",
+      "statement_sha256": "008e92c3c8472c22b8713c75faa9f3c09d3b2f5a4eb6c1adaf4ac3d6d34968f4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "um.2001.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $P$ be a point in the plane of triangle $ABC$ such that the segments $PA$, $PB$, and $PC$ are the sides of an obtuse triangle. Assume that in this triangle the obtuse angle opposes the side congruent to $PA$. Prove that $\\angle BAC$ is acute.",
+      "statement_sha256": "6ca3fe4e1b80e1c72e01a12c90e0eff2b4b02b522b234233792da9e6bdee9c39",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+    },
+    "um.2002.0.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be a triangle such that $$\\left(\\cot\\frac A2\\right)^2 + \\left(2\\cot\\frac B2\\right)^2 + \\left(3\\cot\\frac C2\\right)^2 = \\left(\\frac{6s}{7r}\\right)^2,$$ where $s$ and $r$ denote its semiperimeter and its inradius, respectively. Prove that triangle $ABC$ is similar to a triangle $T$ whose side lengths are all positive integers with no common divisor and determine these integers.",
+      "statement_sha256": "701482dfd2ed6d214dfe1308819ccb3eb016a0ddd74604de269c2061dce5bf6d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The essential data are angle/cotangent relations and triangle side ratios; the primitive integer triple describes the result."
+    },
+    "um.2005.0.1": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine all composite positive integers $n$ for which it is possible to arrange all divisors of $n$ that are greater than 1 in a circle so that no two adjacent divisors are relatively prime.",
+      "statement_sha256": "712cd7493b4aaf78b2c85dfb7006e26c1ced366302f0e168919433e888858e5d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+    },
+    "um.2012.0.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A circle is divided into congruent arcs by 432 points. The points are colored in four colors such that some 108 points are colored red, some 108 points are colored green, some 108 points are colored blue, and the remaining 108 points are colored yellow. Prove that one can choose three points of each color in such a way that the four triangles formed by the chosen points of the same color are congruent.",
+      "statement_sha256": "9f6d8e695d6f2c6078452148a3196190355c2c26687b9a9b38783f06b5d48c7b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The substantive task combines geometric incidence or shape constraints with discrete counting or colouring; no number-theory method is indicated."
+    },
+    "gr.2005.1.1": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "The side lengths of a triangle are the roots of a cubic polynomial with rational coefficients. Prove that the altitudes of this triangle are roots of a polynomial of sixth degree with rational coefficients.",
+      "statement_sha256": "9a643f269d4eec4d10c327edea4e1c3206f8a5ec3fedc244fb719c6aef0511c0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Polynomial relations among triangle sides and altitudes are both substantive."
+    },
+    "sg.2023.0.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine all real numbers $x$ between 0 and 180 such that it is possible to partition an equilateral triangle into finitely many triangles, each of which has an angle of $x^\\circ$.",
+      "statement_sha256": "8d260336538ddf6011cd3cd427fc758088a3ad8a64d28f7c78f989f388133e58",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Finite triangle partitions and angle constraints; a real angle parameter alone is not algebra."
+    },
+    "ca.1994.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $AB$ be a diameter of a circle $\\Omega$ and $P$ be any point not on the line through $A$ and $B$. Suppose the line through $P$ and $A$ cuts $\\Omega$ again in $U$, and the line through $P$ and $B$ cuts $\\Omega$ again in $V$. (Note that in case of tangency $U$ may coincide with $A$ or $V$ may coincide with $B$. Also, if $P$ is on $\\Omega$ then $P = U = V$.) Suppose that $|PU| = s|PA|$ and $|PV| = t|PB|$ for some nonnegative real numbers $s$ and $t$. Determine the cosine of the angle $APB$ in terms of $s$ and $t$.",
+      "statement_sha256": "47762a46f9661b92a880b908db8f7d5d28db4a92970327583cd8f762c844d668",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Circle chords and angle/length ratios."
+    },
+    "ie.1988.0.7": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "A function $f$, defined on the set of real numbers $\\mathbb{R}$, is said to have a horizontal chord of length $a > 0$ if there is a real number $x$ such that $f(a + x) = f(x)$. Show that the cubic $$f(x) = x^3 - x \\quad (x \\in \\mathbb{R})$$ has a horizontal chord of length $a$ if, and only if, $0 < a \\le 2$.",
+      "statement_sha256": "e0670030aea70d4e4414f830d49575c64db9e8ddf4c34a17b81c81f3f7750b22",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Horizontal chords describe a cubic function equation, not Euclidean circle geometry."
+    },
+    "ie.1993.0.5": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Given a complex number $z = x + iy$ ($x$, $y$ real), we denote by $P(z)$ the corresponding point $(x, y)$ in the plane. Suppose $z_1, z_2, z_3, z_4, z_5, \\alpha$ are nonzero complex numbers such that (a) $P(z_1), P(z_2), P(z_3), P(z_4), P(z_5)$ are the vertices of a convex pentagon $Q$ containing the origin 0 in its interior and (b) $P(\\alpha z_1), P(\\alpha z_2), P(\\alpha z_3), P(\\alpha z_4)$ and $P(\\alpha z_5)$ are all inside $Q$. If $\\alpha = p + iq$, where $p$ and $q$ are real, prove that $p^2 + q^2 \\le 1$ and that $$p + q\\tan(\\pi/5) \\le 1.$$",
+      "statement_sha256": "9b5e77a4bde352f3142ace46b14c3e4831a513c5011064fad8000ae52e90f82d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Complex multiplication acts on a convex pentagon with norm bounds."
+    },
+    "in.1992.0.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "If real numbers $x$, $y$, $z$ satisfy $x + y + z = 4$ and $x^2 + y^2 + z^2 = 6$, show that each of $x$, $y$, $z$ lies in the segment $\\left[\\frac23, 2\\right]$. Can $x$ attain either of the endpoints of the segment?",
+      "statement_sha256": "0a3a74e4393af5515a64c39bef101d5d4fe2e31dcee9e8ca0ab07ef13c74772e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The segment is a numerical interval for a symmetric expression."
+    },
+    "in.1998.0.5": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Suppose $a$, $b$, $c$ are real numbers such that the quadratic equation $$x^2 - (a+b+c)x + (ab+bc+ca) = 0$$ has roots of the form $\\alpha \\pm i\\beta$, where $\\alpha > 0$ and $\\beta \\ne 0$ are real numbers. Show that (a) the numbers $a$, $b$, $c$ are all positive; (b) the numbers $\\sqrt a$, $\\sqrt b$, $\\sqrt c$ are the sides of a triangle.",
+      "statement_sha256": "f4b2372d677c7f121d37527d43b9112f9e7f1a8f607efa00669ff2abc6e2e261",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Quadratic discriminants determine triangle inequalities for square roots."
+    },
+    "kr.2018.0.7": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "The figure below consists of $9$ small disks $A, B, \\dots, I$ and $11$ segments. A real number is written on each disk, and on each segment is written the square of the difference of the numbers on its two end disks. The number $0$ is written on disk $A$ and $1$ on disk $I$. Find the smallest possible value of the sum of the numbers written on all segments.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/korea_kmo_2018_p7_fig.png",
+      "statement_sha256": "67a1b706db12be3dac642c5b06e3ecf34e1a94212579e4ea85da6e786892035b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected figure is an adjacency graph; minimisation uses quadratic edge differences."
+    },
+    "id.2014.1.4": {
+      "topics": [
+        "Algebra",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all polynomials $P(x)$ with integer coefficients such that for all positive integers $a$, $b$, $c$ that are the side lengths of a right triangle, the numbers $P(a)$, $P(b)$, $P(c)$ are also the side lengths of a right triangle. (If $c$ is the hypotenuse, $P(c)$ need not be the hypotenuse.)",
+      "statement_sha256": "c173f17bbb50264ef6eae3501972ab9ca8dfa97478b58f6b6b6a7ee77851593c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer polynomials must preserve integer right-triangle identities."
+    },
+    "br.1992.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Given positive real numbers $x_1, x_2, \\ldots, x_n$, find the polygon $A_0A_1\\cdots A_n$ with $A_iA_{i+1} = x_{i+1}$ (indices mod $n$) that has the greatest area.",
+      "statement_sha256": "81e08e5ef8ec76da20959bc868f3fd44ce09d277bc6a1c8694dc20b5ce8d7139",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Maximum polygon area with prescribed side lengths."
+    },
+    "br.2018.2.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Esmeralda writes $2n$ real numbers $x_1, x_2, \\ldots, x_{2n}$, all in the interval $[0, 1]$, around a circle and multiplies all pairs of neighboring numbers, obtaining (counterclockwise) the products $p_1 = x_1x_2,\\, p_2 = x_2x_3,\\, \\ldots,\\, p_{2n} = x_{2n}x_1$. She adds the products with even indices and subtracts the products with odd indices. What is the maximum possible value Esmeralda can obtain?",
+      "statement_sha256": "4fce22d2e9bd6db0feade8b33e5b134c0ad82f1215bcf39d767cfacbecf72319",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Cyclic real-variable product optimisation; no metric property of a circle is used."
+    },
+    "vn.2000.2.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "For every integer $n \\geq 3$ and angle $\\alpha$ with $0 < \\alpha < \\pi$, let $P_n(x) = x^n \\sin\\alpha - x\\sin n\\alpha + \\sin(n-1)\\alpha$.\na) Prove there is a unique polynomial $f(x) = x^2 + ax + b$ dividing $P_n(x)$ for every $n \\geq 3$.\nb) Prove there is no polynomial $g(x) = x + c$ dividing $P_n(x)$ for every $n \\geq 3$.",
+      "statement_sha256": "4a8c83f5cc6fff58e8a62725492c1ca232b1eca2662d12a70695f2da7a1c181b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Trigonometric coefficients and common polynomial factors; angles are parameters."
+    },
+    "jp.2005.0.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $P(x, y)$ and $Q(x, y)$ be polynomials in two variables with integer coefficients. For integers $a_0$, $b_0$, define $a_{n+1} = P(a_n, b_n)$, $b_{n+1} = Q(a_n, b_n)$ $(n = 0, 1, 2, \\dots)$. Suppose that $(a_1, b_1) \\ne (a_0, b_0)$ and that $(a_k, b_k) = (a_0, b_0)$ for some positive integer $k$. Prove that the number of lattice points on the segment with endpoints $(a_n, b_n)$ and $(a_{n+1}, b_{n+1})$ does not depend on $n$.",
+      "statement_sha256": "f44b34718ed5701f0e8743196559fc0bfee11968ff9d8a0775924fb2ddb15171",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer polynomial orbits and lattice-point counts depend on arithmetic coordinates."
+    },
+    "jp.2022.0.5": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Find the smallest possible value of a positive integer $m$ for which the following statement holds:\n\n$999$ cells are arranged on a circle, and a real number is written in each cell so that, for every cell $A$ and every positive integer $k \\le m$, at least one of the following holds:\n\n• the difference between the number in the cell $k$ steps clockwise from $A$ and the number in $A$ is $k$;\n\n• the difference between the number in the cell $k$ steps counterclockwise from $A$ and the number in $A$ is $k$.\n\nThen there exists a cell $S$ such that, if $x$ is the number written in $S$, at least one of the following holds:\n\n• for every positive integer $k < 999$, the number in the cell $k$ steps clockwise from $S$ is $x + k$;\n\n• for every positive integer $k < 999$, the number in the cell $k$ steps counterclockwise from $S$ is $x + k$.",
+      "statement_sha256": "9f02f8778ab4d135b467901dc38f9981eb851fb54da6be7ce01e1f6d2d212616",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Cyclic real arrays and shift constraints; circle denotes indexing."
+    },
+    "it.2017.0.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $a$ and $b$ be two positive real numbers. Consider a regular hexagon of side $a$, and construct on its sides six rectangles with sides $a$ and $b$, lying outside the hexagon. The twelve new vertices lie on a circle. Repeat the operation with the values of $a$ and $b$ exchanged: start from a regular hexagon of side $b$ and construct on it, again outside the hexagon, six rectangles with sides $a$ and $b$. The twelve new vertices lie on a second circle. Prove that the two circles have the same radius.",
+      "statement_sha256": "69dffc4836b4db9ec8dfc4e60804a1bbf9d42338c904908b83deae1c34ae72a2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Hexagon, rectangle and circle lengths."
+    },
+    "tr.2024.1.1": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $n \\ge 3$ be a positive integer. A real number is written on each edge of a complete graph with $n$ vertices so that the following conditions hold:\n\n(i) for every triangle of the graph, two of the numbers written on its edges are equal and the third is greater than them;\n\n(ii) defining the weight of a vertex as the sum of the numbers written on the edges leaving that vertex, all vertices have the same weight.\n\nFind all possible values of $n$.",
+      "statement_sha256": "607691689a3e47591e631cc8d6452c9c67b3582ba6b2ae644c62150c633a5b33",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Weighted complete graph and vertex sums; triangles denote graph triples."
+    },
+    "ru.1994.1.4": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Real numbers are written in the cells of an infinite sheet of squared paper. Two figures are considered, each consisting of a finite number of cells. The figures may be translated parallel to the grid lines by an integer number of cells. It is known that for every position of the first figure the sum of the numbers in the cells it covers is positive. Prove that there exists a position of the second figure for which the sum of the numbers in the cells it covers is positive.",
+      "statement_sha256": "3bcc14f83de3a21fa6a046db02ff63f18314a966947e060cc91e817ba122b45a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Translated finite grid patterns constrain sums of real entries."
+    },
+    "ru.2010.1.4": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "A positive integer $n \\ge 3$ is given. For what smallest $k$ is the following statement true: for any $n$ points $A_i = (x_i, y_i)$ in the plane, no three of which are collinear, and any real numbers $c_i$ $(1 \\le i \\le n)$, there is a polynomial $P(x, y)$ of degree at most $k$ such that $P(x_i, y_i) = c_i$ for all $i = 1, \\dots, n$?\n\n(A polynomial in two variables is a function of the form $P(x, y) = a_{0,0} + a_{1,0}x + a_{0,1}y + a_{2,0}x^2 + a_{1,1}xy + a_{0,2}y^2 + \\cdots + a_{k,0}x^k + a_{k-1,1}x^{k-1}y + \\cdots + a_{0,k}y^k$. The degree of a nonzero monomial $a_{i,j}x^iy^j$ is $i + j$, and the degree of $P(x, y)$ is the largest degree of its monomials.)",
+      "statement_sha256": "62f124b8e82814384252704d134f4899e975bb9ebfdc882dff5f31d735632941",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Bivariate polynomial interpolation depends on noncollinear point configurations."
+    },
+    "ru.2017.2.5": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $P(x)$ be a polynomial of degree $n \\ge 2$ with non-negative coefficients, and let $a$, $b$, $c$ be the side lengths of a triangle. Prove that the numbers $\\sqrt[n]{P(a)}$, $\\sqrt[n]{P(b)}$, $\\sqrt[n]{P(c)}$ are also the side lengths of a triangle.",
+      "statement_sha256": "3dc673502fa84a43eff552a12aa68201c12513ca462d1d63e73d0d3acba2ef33",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A polynomial transformation preserves triangle inequalities."
+    },
+    "ru.2019.1.1": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "A real number $f(A)$ is assigned to every point $A$ of the plane. It is known that if $M$ is the centroid of a triangle $ABC$, then $f(M) = f(A) + f(B) + f(C)$. Prove that $f(A) = 0$ for all points $A$.",
+      "statement_sha256": "9cc51f0b622c16b1236c320dc2d1d568d99aceda61c624b90cd13c487f525bae",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A functional equation is imposed at triangle centroids."
+    },
+    "ru.2021.1.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $P(x)$ be a nonzero polynomial of degree $n$ with non-negative coefficients such that the function $y = P(x)$ is odd. Can it happen that for distinct points $A_1, A_2, \\dots, A_n$ of the graph $G: y = P(x)$ the tangent to $G$ at $A_1$ passes through $A_2$, the tangent at $A_2$ passes through $A_3$, $\\dots$, and the tangent at $A_n$ passes through $A_1$?",
+      "statement_sha256": "1c1504d575db0b4c5b63c20846ce5178cac3f2ce113faecf0c73424524d21032",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Polynomial derivatives and tangents to a function graph."
+    },
+    "es.2002.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In a triangle $ABC$, $A'$ is the foot of the altitude from vertex $A$ and $H$ is the orthocenter.\n\na) Given a positive real number $k$ such that $\\dfrac{AA'}{HA'}=k$, find the relation between the angles $B$ and $C$ as a function of $k$.\n\nb) If $B$ and $C$ are fixed, find the locus of the vertex $A$ for each value of $k$.",
+      "statement_sha256": "eec1fa74e5e8ba32cebf2b65b27de33f9da45acbfbf0f51ee50132a452fbc461",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Altitude, orthocentre and an angle locus; k is a geometric ratio."
+    },
+    "es.2004.1.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "We have a set of $221$ real numbers whose sum is $110721$. They are arranged forming a rectangle in such a way that all the rows and the first and last columns are arithmetic progressions of more than one element. Prove that the sum of the elements in the four corners equals $2004$.",
+      "statement_sha256": "ae97e08fbce6ad1bfe597173f7a8ecef6ac91247b8fc7d8808431874b709e014",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Arithmetic progressions in a rectangular array; rectangle is an indexing layout."
+    },
+    "es.2010.1.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCD$ be a convex quadrilateral. Let $P$ be the intersection of $AC$ and $BD$. The angle $\\angle APD = 60^\\circ$. Let $E$, $F$, $G$ and $H$ be the midpoints of the sides $AB$, $BC$, $CD$ and $DA$, respectively. Find the greatest positive real number $k$ such that $$EG + 3HF \\ge kd + (1-k)s,$$ where $s$ is the semiperimeter of the quadrilateral $ABCD$ and $d$ is the sum of the lengths of its diagonals. When does equality hold?",
+      "statement_sha256": "37a5a5d588134c28ad5c8c0446c3a682488fab0133653cf96c0d6ac69074ec08",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Optimising a geometric length inequality over a coefficient."
+    },
+    "es.2013.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $k$ and $n$ be integers with $n \\ge k \\ge 3$. Consider $n+1$ points in the plane, no three of which are collinear. Each segment joining two of these points is assigned a color from among $k$ given colors.\n\nAn angle is called *bicolored* if its vertex is one of the $n+1$ points and its sides are two of the above segments having different colors.\n\nProve that there exists a coloring such that the number of *bicolored* angles is strictly greater than $$n\\left\\lfloor \\frac{n}{k} \\right\\rfloor^2 \\binom{k}{2}.$$\n\nREMARK: $\\lfloor t \\rfloor$ denotes the integer part of the real number $t$, that is, the greatest integer less than or equal to $t$.",
+      "statement_sha256": "5f7436df5419f0561333a919e7aae104b93ff6f8ac4d404c7d99cce390ab7612",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Counting coloured edges and bichromatic triples; the metric embedding is incidental."
+    },
+    "es.2015.1.1": {
+      "topics": [
+        "Algebra",
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "On the graph of a polynomial function with integer coefficients, two points with integer coordinates are chosen. Prove that if the distance between them is an integer, then the segment joining them is parallel to the $x$-axis.",
+      "statement_sha256": "2a828a06a0053c6f1df862eba20557585d730a24f78296f81a930e543a7eb36a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer polynomial values and integer Euclidean distance impose arithmetic constraints."
+    },
+    "cz.2017.1.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Find all pairs of real numbers $k$, $l$ such that the inequality $$ka^2+lb^2>c^2$$ holds for the side lengths $a$, $b$, $c$ of any triangle.",
+      "statement_sha256": "72b9249f1eecdb7bfeaaf6822f599983f80c05403f1de6c3ac819301b58b54ae",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Characterisation of coefficients in an inequality for all triangle sides."
+    },
+    "cz.2018.1.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Real numbers $x$, $y$, $z$ are chosen so that the numbers $$\\frac{1}{|x^2+2yz|},\\quad \\frac{1}{|y^2+2zx|},\\quad \\frac{1}{|z^2+2xy|}$$ are the side lengths of a (non-degenerate) triangle. Determine all possible values of the expression $xy+yz+zx$.",
+      "statement_sha256": "c9822a5d1e70ad9137026f60c1faad1be6d14e4f0929c7768c3cd1413712ff8b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Algebraic expressions constrained to be triangle sides."
+    },
+    "ut.2021.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Points $A$, $V_1$, $V_2$, $B$, $U_2$, $U_1$ lie fixed on a circle $\\Gamma$, in that order, and such that $BU_2 > AU_1 > BV_2 > AV_1$.\nLet $X$ be a variable point on the arc $V_1V_2$ of $\\Gamma$ not containing $A$ or $B$. Line $XA$ meets line $U_1V_1$ at $C$, while line $XB$ meets line $U_2V_2$ at $D$. Let $O$ and $\\rho$ denote the circumcenter and circumradius of $\\triangle XCD$, respectively.\nProve there exists a fixed point $K$ and a real number $c$, independent of $X$, for which $OK^2 - \\rho^2 = c$ always holds regardless of the choice of $X$.",
+      "statement_sha256": "7a24506c4aa60616d92685c85310c7e8b4abfa6f97faac3d98a04b3cac40cd5a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Circumcircle centres, radii and a fixed geometric point."
+    },
+    "ut.2023.2.5": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $m$ and $n$ be fixed positive integers. Tsvety and Freyja play a game on an infinite grid of unit square cells. Tsvety has secretly written a real number inside of each cell so that the sum of the numbers within every rectangle of size either $m \\times n$ or $n \\times m$ is zero. Freyja wants to learn all of these numbers.\nOne by one, Freyja asks Tsvety about some cell in the grid, and Tsvety truthfully reveals what number is written in it. Freyja wins if, at any point, Freyja can simultaneously deduce the number written in every cell of the entire infinite grid. (If this never occurs, Freyja has lost the game and Tsvety wins.)\nIn terms of $m$ and $n$, find the smallest number of questions that Freyja must ask to win, or show that no finite number of questions can suffice.",
+      "statement_sha256": "8b1508aaca915dbad8a5b84ff49b43585dd1a01fa48c0c19acab835b4209b36a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Rectangle sums in an infinite real array and minimum information queries."
+    },
+    "hr.2023.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Do there exist pairwise distinct positive real numbers $a_1,a_3,a_5,\\dots,a_{2023}$ such that from\n\none square of side length $a_1$,\n\nthree squares of side length $a_3$, $\\dots$,\n\n$k$ squares of side length $a_k$, $\\dots$,\n\n$2023$ squares of side length $a_{2023}$\n\na square can be assembled?",
+      "statement_sha256": "0e25108593ca3074df728cbdfce2e069f48dded67d7877040f7f3c3b744bc225",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Assembling prescribed square pieces into a square."
+    },
+    "no.2015.0.2": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "a. King Arthur is placing $a + b + c$ knights around a table. $a$ knights are dressed in red, $b$ knights are dressed in brown, and $c$ knights are dressed in orange.\n\nArthur wishes to arrange the knights so that no knight is seated next to someone dressed in the same colour as himself. Show that this is possible if, and only if, there exists a triangle whose sides have lengths $a + \\frac{1}{2}$, $b + \\frac{1}{2}$, and $c + \\frac{1}{2}$.\n\nb. Nils is playing a game with a bag originally containing $n$ red and one black marble. He begins with a fortune equal to $1$.\n\nIn each move he picks a real number $x$ with $0 \\le x \\le y$, where his present fortune is $y$. Then he draws a marble from the bag. If the marble is red, his fortune increases by $x$, but if it is black, it decreases by $x$. The game is over after $n$ moves when there is only a single marble left.\n\nIn each move Nils chooses $x$ so that he ensures a final fortune greater or equal to $Y$. What is the largest possible value of $Y$?",
+      "statement_sha256": "9054f501f0ff5d4d56382c84e77742093b476fcb1344a46834ca6d2c9159e44f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The alternatives concern cyclic colouring and a betting optimisation; triangle inequality is an equivalent numerical condition."
+    },
+    "no.2019.0.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "a. Three circles are pairwise tangent, with none of them lying inside another. The centres of the circles are the corners of a triangle with circumference $1$. What is the smallest possible value for the sum of the areas of the circles?\n\nb. Find all real functions $f$ defined on the real numbers except zero, satisfying $f(2019) = 1$ and $$f(x)f(y) + f\\left(\\frac{2019}{x}\\right)f\\left(\\frac{2019}{y}\\right) = 2f(xy)$$ for all $x, y \\ne 0$.",
+      "statement_sha256": "f88e2b53192c841b0f4bc3d1dc1841d9271b3d9125cb6f1aadbc8615cf9d5995",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: circle-area optimisation and a functional equation."
+    },
+    "no.2023.0.4": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "a. Assuming $a$, $b$, and $c$ are the side lengths of a triangle, show that $$\\frac{a^2+b^2-c^2}{ab} + \\frac{b^2+c^2-a^2}{bc} + \\frac{c^2+a^2-b^2}{ca} > 2.$$ Also show that the inequality does not necessarily hold if you replace $2$ (on the right hand side) by a bigger number.\n\nb. Find all functions $f : \\mathbb{R}_+ \\to \\mathbb{R}_+$ satisfying $$f\\big(f(x) + y\\big) = f(y) + x \\quad \\text{for all } x, y \\in \\mathbb{R}_+.$$ (Here $\\mathbb{R}_+$ is the set of all real numbers $x > 0$.)",
+      "statement_sha256": "467edbd39e9f855fa2cebcaf0c29adda3124250fb63f803ee427a166e3ec9fe6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: triangle inequality and a functional equation."
+    },
+    "ukt.1993.1.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Six rods $A_1A_2$, $A_2A_3$, $A_3A_4$, $A_4A_5$, $A_5A_6$, $A_6A_1$ of lengths $(a_1+a_2)$, $(a_2+a_3)$, $(a_3+a_4)$, $(a_4+a_5)$, $(a_5+a_6)$, $(a_6+a_1)$ respectively, where $a_i > 0$ $(i = 1, 2, \\dots, 6)$, are freely jointed together to form a hexagon $A_1A_2A_3A_4A_5A_6$. Prove that the hexagon can be adjusted so that it takes the shape of a convex hexagon circumscribing a circle.\nProve also that if the real numbers $a_i$ $(i = 1, 2, \\dots, 6)$ are permuted amongst themselves in any way, the six new resulting rods have the same property and that whatever permutation is made the inscribed circle always has the same radius. Find the radius explicitly in terms of elementary symmetric functions of $a_1, a_2, \\dots, a_6$.\nDoes there exist a convex hexagon, with side lengths $1, 2, 3, 4, 5, 6$ in some order, circumscribing a circle?",
+      "statement_sha256": "af4e401c0326353a7ead8eaefd703edb20241771cb2271db68e6d62aded17eed",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Tangential hexagon geometry linked to symmetric algebraic expressions."
+    },
+    "ukt.2015.3.9": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Consider a circle $\\Gamma$ with three fixed points $A$, $B$ and $C$ on $\\Gamma$. Also fix a real number $\\lambda \\in (0, 1)$. Let $P$ denote a variable point on $\\Gamma$ with $P \\notin \\{A, B, C\\}$, and let $M$ be the point on the segment $CP$ such that $CM = \\lambda \\cdot CP$. Let $Q$ be the second point of intersection of the circumcircles of the triangles $AMP$ and $BMC$. Prove that, as $P$ varies, the point $Q$ lies on a fixed circle.",
+      "statement_sha256": "9942312b221ac69a0e1bda831283b57a3da510ffe0f6a43d53a27811ea4182fa",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A moving-point circle locus; lambda is a geometric parameter."
+    },
+    "nlt.2021.2.8": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine all positive integers $n$ with the following property: for every triple $(a,b,c)$ of positive real numbers there is a triple $(k,\\ell,m)$ of non-negative integers such that $an^k$, $bn^\\ell$ and $cn^m$ are the lengths of the sides of a (non-degenerate) triangle.",
+      "statement_sha256": "c9765ea61b19ed99f205b6a2ed54bcc7a47586458bc40bd4f90e8c7ef0b8bb5b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Power scalings of arbitrary positive lengths must satisfy triangle inequalities."
+    },
+    "nlt.2026.2.5": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Five real numbers are placed around a circle. Each number is $1$ less than the product of its two neighbours. The sum of the five numbers is $0$. What are the possible values of the product of the five numbers?\n\nYou may assume that at least one such circle of numbers exists.",
+      "statement_sha256": "7fc785c5264ccf2aba89ce3fbdb902832deefcb3b00c4e22018b7ad40214fdd8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Cyclic real-variable equations; there is no circle theorem."
+    },
+    "cht.2021.2.4": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $n$ be a positive integer. The islands of the MO-Archipelago are arranged in a regular equilateral triangular unit grid to form a big equilateral triangle of side length $n$. The beloved Governor Henning is in charge of building bridges between every pair of islands that are a distance of $1$ apart. For every island $i$, Henning chooses two real numbers $x_i$ and $y_i$ that satisfy $x_i^2 + y_i^2 = 1$. The cost of a bridge between islands $i$ and $j$ is then given by $1 + x_ix_j + y_iy_j$. Determine the minimal amount of money needed to build all the bridges.\nRemark: Below is a map of the MO-Archipelago in the case $n = 4$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/swisssel_2021_p4_fig.png",
+      "statement_sha256": "42e8ef9c32efb7e8c6839d25bb7644c3930e7b4f7eca1c9030f74c6807ef40f2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected island network is a graph with vector-valued quadratic edge costs."
+    },
+    "cht.2025.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $\\alpha$ be a real number satisfying $0 < \\alpha < 180$. For Leo's birthday, Frieder has placed $2025$ gnomes at arbitrary points inside his garden. No three gnomes are collinear and no two gnomes coincide. Each gnome has a field of view spanning $\\alpha$ degrees (including the boundary). After Frieder places the gnomes, Leo wants to rotate the gnomes such that, for each gnome, the number of other gnomes it sees is different.\nDetermine all values of $\\alpha$ for which Leo can achieve this, regardless of how the gnomes are placed.\n(The figure shows an example of the field of view of a gnome. It extends infinitely between the boundary rays.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/swisssel_2025_p5_fig.png",
+      "statement_sha256": "0f0a70f5dba55def4728679d1bc9b9fbe2e5f54c2a5303745b2ae48baefe1216",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected figure shows angular visibility wedges; orientation and distinct counts are substantive."
+    },
+    "de.2025.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine all real numbers $t$ with $0 < t < 1$ for which the following statement is true: if in an acute-angled triangle the sides of lengths $a$, $b$ and $c$ are, as usual, opposite the angles of sizes $\\alpha$, $\\beta$ and $\\gamma$, respectively, and $\\frac{a}{b+c} = t$ holds, then $\\alpha \\le \\beta$ and $\\alpha \\le \\gamma$.\n\nRemark: The correctness of the answer must be proved.",
+      "statement_sha256": "37d9f4166d39f5891e338fa19d94b7e86f81405d83fd7dca5a107548c0ea9cdb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A side-ratio bound determines the smallest triangle angle."
+    },
+    "de.2026.0.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "An equilateral triangle $ABC$ with area $1$ and a real number $q$ with $0 < q < 1$ are given. A point $P$ of the triangle $ABC$ is colored green if every triangle with area $q$ which is part of the triangle $ABC$ contains the point $P$. Determine the area of the green part of the triangle $ABC$ in terms of $q$.\n\nNote: Every triangle includes the points of its boundary and all interior points.",
+      "statement_sha256": "eef372c6f6025c552f4e05ad008d09113e1ebc167b10d7d76e7a2ceb5de46a5e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Intersection areas of subtriangles in an equilateral triangle."
+    },
+    "dem.1971.0.6": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Definition: A set $M$ of elements $u, v, w, \\dots$ is called a group with respect to the algebraic operation $A$ if and only if the following three conditions are satisfied:\n(a) To every ordered pair $[u, v]$ of elements of $M$, an element $w$ of $M$ is assigned by the operation $A$ (one writes $u \\circ v = w$).\n(b) The algebraic operation $A$ is associative, i.e. for all elements $u, v, w$ of $M$: $(u \\circ v) \\circ w = u \\circ (v \\circ w)$.\n(c) For any two elements $u$ and $v$ of $M$ there exists at least one element $x$ of $M$ such that $u \\circ x = v$, and at least one element $y$ of $M$ such that $y \\circ u = v$.\nNow let $P$ be the set of all polynomials of first degree $f(x) = a_0 + a_1x$, where $a_0, a_1$ are rational numbers and $a_1 \\neq 0$. Furthermore, let an algebraic operation $A$ be defined in $P$ as follows: if $f(x)$ and $g(x)$ are polynomials of $P$, then $f(x) \\circ g(x) = g[f(x)]$. Decide whether $P$ is a group with respect to $A$.\n\nVersion B. On level terrain, an arc of a circle of radius $r$ is staked out, when in addition a tangent $t$ to this arc and its point of tangency $A$ are known, as follows: at arbitrary points $P'$ of $t$ (with $\\overline{AP'} = x < r$) perpendiculars to $t$ are erected, and on them (on the side of $t$ on which the arc lies) segments $P'P$ are marked off such that the points $P$ are points of the desired arc. Here $\\overline{P'P} = y < r$.\n(a) Prove that then $y = \\frac{x^2}{2r-y}$.\n(b) In practice it often suffices to determine approximate values of $y$. This is done as follows: a first approximation $y_1$ is obtained from the equation $y_1 = \\frac{x^2}{2r}$. If its accuracy is not sufficient, a second approximation $y_2$ is determined from the equation $y_2 = \\frac{x^2}{2r - y_1}$. One can proceed analogously until the required accuracy is reached.\nInvestigate whether there is a smallest natural number $n$ with the property that for all positive real numbers $x \\le \\frac{1}{n}r$ the relative error $\\delta = \\frac{|y - y_1|}{r}$ of the approximation $y_1 = \\frac{x^2}{2r}$ is not greater than $0.001$, i.e. that $\\delta \\le 0.001$.",
+      "statement_sha256": "b851d4f07094b48670a16eedfc5765b7ef5a12b7fd1a382c0a2924e24b3a9a50",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: affine composition and circle-arc approximation."
+    },
+    "dem.1973.0.5": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Someone wrote a real number on each of the six faces of a cube, where the numbers $0$ and $1$ were among these $6$ numbers. Then he replaced each of these $6$ numbers by the arithmetic mean of the four numbers which had previously been on the $4$ adjacent faces. (He remembered each old number to be replaced, even after it had been replaced, as long as it was still needed for forming the means for the numbers of its adjacent faces.) With the $6$ new numbers obtained in this way, he repeated this operation. In total he carried it out twenty-five times. At the end he found that on each face he again had the same number as at the beginning. Could he have obtained this result with correct calculation?",
+      "statement_sha256": "3f04f5ba58cf4054cc9d3669ff4f081d6cdbe0a2c359188b78478e5c573cc334",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Averaging real labels on the cube adjacency graph."
+    },
+    "dem.1977.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Give all polynomials $f(x) = a_0 + a_1x + a_2x^2 + \\dots + a_nx^n$ with real coefficients $a_0, a_1, \\dots, a_n$ which have the following property: for all real numbers $x$, $x\\cdot f(x-1) = (x-2)\\cdot f(x)$.\n\nVersion B. For every natural number $n \\ge 5$, give a dissection of a regular convex $n$-gon into a minimal number of\n(a) triangles which are all acute-angled,\n(b) triangles which are all obtuse-angled.\nNote: A dissection into triangles means a dissection of the $n$-gon in which each side of a dissection triangle is either at the same time a side of another dissection triangle or one of the sides of the $n$-gon.",
+      "statement_sha256": "28d68263fa8f075b78bc511911124a761878a664c9fe465cef0989435925c7a8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: polynomial equation and polygon dissections."
+    },
+    "dem.1978.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Definition: Let $d(X, Y)$ denote the distance of two points $X, Y$ of a point set $\\mathfrak{M}$. A real number $d$ is called the diameter of $\\mathfrak{M}$ if the following conditions are satisfied:\n(1) For any two points $X, Y$ of $\\mathfrak{M}$, $d(X, Y) \\le d$.\n(2) There are points $P, Q$ of $\\mathfrak{M}$ for which $d(P, Q) = d$.\nProve:\n(a) If a disk with diameter $d$ is divided into two parts by an arbitrary polygonal line which intersects the circle at a point $M$ and a point $N$, then one of these partial regions (each understood including its boundary) also has diameter $d$.\n(b) If a solid ball with diameter $d$ is divided by a plane cut $\\varepsilon_1$ into two parts and then one of these parts is again divided into two parts by a plane cut $\\varepsilon_2$, then for every such dissection of a ball into three parts at least one of these parts (each understood including its bounding surfaces) also has diameter $d$.",
+      "statement_sha256": "7bb7738c2b8af5312f657bb6d412c2021f2ed6c4864d3f875ce4d32cb5d9cc39",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Diameters of pieces from disk/sphere cuts; real lengths are geometric data."
+    },
+    "dem.1978.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Let $n$ be a positive number, and let $(a_1, \\dots, a_n)$ be an $n$-tuple of real numbers with $a_1 \\le a_2 \\le \\dots \\le a_n$. Investigate whether for these given $a_1, \\dots, a_n$ there is a real number $x$ such that the number\n$$z = |x - a_1| + |x - a_2| + \\dots + |x - a_n|$$\nis as small as possible. If there is such an $x$, determine all real numbers $x$ with this property and state the corresponding minimal value of $z$.\n\nVersion B. (a) Let a natural number $n \\ge 2$ be given. Let $u$ be the circumcircle of a regular $2n$-gon $A_0A_1\\dots A_{2n-1}$. A set of three vertices $A_i, A_j, A_k$ of this $2n$-gon is called one-sided if there is a semicircular arc $h$ on the circle $u$, including its two endpoints, which contains $A_i$, $A_j$ and $A_k$. Determine the probability $w_n$ that an arbitrarily chosen set $M = \\{A_i, A_j, A_k\\}$ of three vertices is one-sided.\n(b) Determine the limit $\\lim_{n\\to\\infty} w_n$, if it exists.\nNote: If $m_n$ is the number of all sets that can be formed from three vertices $A_i, A_j, A_k$ of the $2n$-gon, and $g_n$ is the number of all one-sided ones among them, then the probability sought in (a) is defined as $w_n = \\frac{g_n}{m_n}$.",
+      "statement_sha256": "be967683dd1b2b82a298741980d8fd96571da03978a0df56b7ada7979b54a286",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: absolute-distance minimisation and polygon probability."
+    },
+    "dem.1979.0.6": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Let $A_1A_2A_3A_4A_5$ be a regular pentagon with given side length $s$. Around each point $A_i$ ($i = 1, 2, 3, 4, 5$) let the sphere $K_i$ with radius $\\frac{s}{2}$ and center $A_i$ be placed. Then in the set of those spheres $K'$ which have the property of touching each of the five spheres $K_i$, there are exactly two spheres $K_1'$ and $K_2'$ with radius $\\frac{s}{2}$. Investigate whether $K_1'$ and $K_2'$ intersect, touch, or have no point in common.\n\nVersion B. (a) Let $M$ be the set of all triples $(x, y, z)$ of real numbers for which the following inequalities (1) to (5) are satisfied:\n$$\\begin{aligned} 55x + z &\\le 54 &(1)\\\\ 55y + z &\\le 54 &(2)\\\\ 55x - 4z &\\ge 4 &(3)\\\\ 55y - 4z &\\ge 4 &(4)\\\\ z &\\ge -1 &(5) \\end{aligned}$$\nInvestigate whether for the expression\n$$f(x, y, z) = x^2 + y^2 + z^2 \\qquad (6)$$\nthere exists a triple $(x_0, y_0, z_0) \\in M$ with the property that for all triples $(x, y, z) \\in M$ the inequality $f(x_0, y_0, z_0) \\ge f(x, y, z)$ holds. If this is the case, determine $f(x_0, y_0, z_0)$.\n(b) Let $M'$ be the set of all triples $(x, y, z)$ of integers for which the inequalities (1) to (5) are satisfied. Investigate whether for the expression (6) there exists a triple $(x_1, y_1, z_1) \\in M'$ with the property that for all triples $(x, y, z) \\in M'$ the inequality $f(x_1, y_1, z_1) \\ge f(x, y, z)$ holds. If this is the case, determine $f(x_1, y_1, z_1)$.",
+      "statement_sha256": "cf4be831376620a39703809d56f89fd30127df7c8e94d53fea281b388d1dbc9e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: sphere tangency and quadratic optimisation."
+    },
+    "dem.1982.0.6": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. (a) Prove: if\n$$a = \\overline{BC}, \\quad b = \\overline{AC}, \\quad c = \\overline{AB}, \\quad d = \\overline{AD}, \\quad e = \\overline{BD}, \\quad f = \\overline{CD} \\qquad (1)$$\nare the edge lengths of a tetrahedron $ABCD$, then the surface area $A_O$ of this tetrahedron satisfies the inequality\n$$A_O < \\frac13\\left(a^2 + b^2 + c^2 + d^2 + e^2 + f^2\\right). \\qquad (2)$$\n(b) Investigate whether the statement about (2) can be sharpened to the following statement: there is a smallest real number $\\lambda$ with $\\lambda < \\frac13$ such that for the surface area $A_O$ of every tetrahedron $ABCD$, denoting its edge lengths as in (1), the inequality\n$$A_O \\le \\lambda\\left(a^2 + b^2 + c^2 + d^2 + e^2 + f^2\\right) \\qquad (3)$$\nholds. If this is the case, determine this number $\\lambda$.\n\nVersion B. Determine all those functions $f$ and $g$ which are defined for all non-negative real numbers $x$, have real function values and satisfy the following conditions:\n(1) For all $x \\ge 0$: $f(x) \\ge 1$ and $g(x) \\ge 0$.\n(2) For all $x \\ge 0$: $(f(x))^2 - (g(x))^2 = 1$.\n(3) For all $x \\ge 0$ and all $y \\ge 0$: $f\\left(\\sqrt{x^2 + y^2}\\right) = f(x)\\cdot f(y) + g(x)\\cdot g(y)$.\n(4) For all $x \\ge 0$ and all $y \\ge 0$: $g\\left(\\sqrt{x^2 + y^2}\\right) = f(x)\\cdot g(y) + g(x)\\cdot f(y)$.",
+      "statement_sha256": "abef9f56eb893f231d69a60f94f0c257c467aff441dad26dce93bf3a72d9a42a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: tetrahedron inequality and functional equation."
+    },
+    "dem.1983.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Let $ABCD$ be a tetrahedron in which the three edges $AD$, $BD$ and $CD$ are pairwise perpendicular. Let the lengths of these edges $AD$, $BD$ and $CD$ be denoted by $a$, $b$ and $c$, respectively. Furthermore, let $P$ be an arbitrary point on the boundary of the triangle $ABC$, and let $g$ be the line through $D$ and $P$.\n(a) Prove that then for the sum $s$ of the distances of the points $A$, $B$ and $C$ from $g$ always\n$$s \\le \\sqrt{2(a^2 + b^2 + c^2)} \\qquad (1)$$\nholds.\n(b) Investigate (in terms of the given edge lengths $a, b, c$) whether there is a point $P$ such that equality holds in (1). If this is the case, determine (in terms of $a, b, c$) all these points $P$.\n\nVersion B. In the investigation of frequency distributions in mathematical statistics, functions occur which are defined for finitely many natural numbers and which are required to satisfy so-called functional equations (equations between different function values). An example is the following: let a natural number $n \\ge 2$ and a real number $p$ with $0 < p < 1$ be given. Determine (in terms of $n$ and $p$) those functions $f$ with the set $\\{1, 2, \\dots, n\\}$ as domain which, for $k = 1, 2, \\dots, n$, satisfy the following equation (1):\n$$\\sum_{x=0}^{n} x\\cdot(x-1)\\cdot(x-2)\\cdot\\ldots\\cdot(x-k+1)\\cdot f(x) = n\\cdot(n-1)\\cdot(n-2)\\cdot\\ldots\\cdot(n-k+1)\\cdot p^k. \\qquad (1)$$\nNote: For $k = 1$, equation (1) is to be understood as $\\sum_{x=0}^{n} x\\cdot f(x) = n\\cdot p$.",
+      "statement_sha256": "25b0caf07f244b22dd09f169e5a670f6142db3fefa30df8f855bd989ee6c57e5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: tetrahedron distance bounds and finite functional moment identities."
+    },
+    "dem.1987.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. In a mathematics camp, a group leader proposes to the $n$ students ($n \\ge 3$) of his group to choose the student who is to do the blackboard duty by the following method: the students are numbered $P_1, P_2, \\dots, P_n$ and stand in a circle in this order, where (in the direction $P_1, P_2, \\dots$) $P_n$ is again followed by $P_1$. First a coin toss decides whether $P_1$ or $P_2$ leaves the circle: if heads is up, $P_1$ leaves, if tails, $P_2$. Then the elimination is continued with those two students not yet eliminated who follow, in the stated direction, the student just eliminated last. On heads, again the first of these two in that direction leaves, on tails the second. This is repeated until only one student remains, who is then designated to be on duty.\n(a) In the case $n = 3$, compute the probabilities $W_1$, $W_2$, $W_3$ that $P_1$, $P_2$ and $P_3$, respectively, are designated to be on duty.\n(b) Prove for every $n \\ge 3$ that the selection method is unfair, i.e. that the probability of being designated to be on duty is not the same for all students $P_1, P_2, \\dots, P_n$.\nRemark: If some random event $A$ occurs as a consequence of any one of $m$ events out of a total of $N$ possible events (which are mutually exclusive and equally likely), then the number $p = \\frac{m}{N}$ is called the probability of the event $A$.\n\nVersion B. Let $x_1, x_2, \\dots, x_{1987}$ be non-negative real numbers for which the sum of the squares equals $10$ and the sum of the cubes is greater than $1$. Investigate whether under these assumptions it is always possible to select\n(a) $9$ of these numbers,\n(b) $10$ of these numbers\nsuch that the sum of the selected numbers is greater than $1$. (If a number occurs several times among $x_1, x_2, \\dots, x_{1987}$, it may be included among the selected numbers at most as often.)",
+      "statement_sha256": "bd5d6db1b2c9c10f46be1719e66768e4fa3219cf8e0bfeafb0db37674facc269",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Probability and real-variable subset inequalities; cubes are third powers."
+    },
+    "dem.1989.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "(This problem was set in two alternative versions A and B.)\n\nVersion A. Prove: for every natural number $n > 1$ and for any $n + 2$ real numbers $p, q, a_1, a_2, \\dots, a_n$ which satisfy\n$$0 < p \\le a_i \\le q \\quad (i = 1, 2, \\dots, n), \\qquad (1)$$\nthe two inequalities\n$$n^2 \\le \\left(\\sum_{i=1}^{n} a_i\\right)\\cdot\\left(\\sum_{k=1}^{n}\\frac{1}{a_k}\\right) \\le n^2 + \\left[\\frac{n^2}{4}\\right]\\cdot\\left(\\sqrt{\\frac{p}{q}} - \\sqrt{\\frac{q}{p}}\\right)^2 \\qquad (2)$$\nhold.\nNote: For real $x$, as usual, $[x]$ denotes the integer $[x] = g$ with $g \\le x < g + 1$.\nFurthermore, for given $n, p, q$ with $0 < p \\le q$, determine all those $a_i$ satisfying (1) for which in (2) equality holds\n(a) between the first and the second number,\n(b) between the second and the third number.\n\nVersion B. Determine the largest possible number of squares of side length $1$ which can be placed in a given square of side length $1.99$ without protruding beyond its boundary and without overlapping each other.",
+      "statement_sha256": "2b5988e93b6ca5dadee5af2389a79ed5a193cd894770ff9ed55d776d8fd647c6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: real inequalities and square packing."
+    },
+    "dem.1996.2.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Part A. Prove the following statement: if a polynomial $p(x) = x^3 + Ax^2 + Bx + C$ has three real positive roots, at least two of which are different from each other, then $A^2 + B^2 + 18C > 0$.\n\nPart B. Every point of a plane is coloured with exactly one of the three colours red, black or blue. Prove that under this assumption there always exists a rectangle in this plane whose four vertices all have the same colour.",
+      "statement_sha256": "ce59199f5118ba96a060f8844deb87e5cec2d01a79daa197aca6acb8626d9afb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Separate alternatives: polynomial root inequality and plane colouring."
+    },
+    "dem.2018.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "About a tetrahedron it is known that two edges have length $a$ and the other four edges have length $b$, where $a$ and $b$ are arbitrary positive real numbers. Which values can the ratio $v = a/b$ of the edge lengths take?",
+      "statement_sha256": "459bb1a583ec10cafb8992c52dba98a35461061774a06b51757a8f5306124224",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Existence of a tetrahedron with prescribed edge lengths."
+    },
+    "dem.2018.2.4": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "(a) Let $a$, $b$ and $c$ be the side lengths of a triangle with perimeter $4$. Prove that then\n$$a^2 + b^2 + c^2 + abc < 8.$$\n\n(b) Is there a real number $d < 8$ such that for every triangle with perimeter $4$ the inequality\n$$a^2 + b^2 + c^2 + abc < d \\qquad (1)$$\nholds, where $a$, $b$ and $c$ denote the side lengths of the triangle?",
+      "statement_sha256": "dc09c08071b59139184670c2484c47a5dc6eb63dd011bc3124d0d0503f7a52fe",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Optimising a polynomial expression in triangle sides."
+    },
+    "ro.2019.0.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine the natural numbers $n \\ge 4$ for which the following property holds: any distinct nonzero complex numbers $a, b, c$ satisfying\n$$(a - b)^n + (b - c)^n + (c - a)^n = 0$$\nare the affixes of the vertices of an equilateral triangle.",
+      "statement_sha256": "29a5cd3030a895c5140192ff3fe0ac26d9db58622118dffba7a67eef80360076",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Complex power sums constrain an equilateral triangle."
+    },
+    "ltt.2014.1.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Positive real numbers $a,b$ and $c$ are given such that the system of equations\n$$\\begin{cases} a^2x+b^2y+c^2z=1,\\\\ xy+yz+zx=1 \\end{cases}$$\nhas a unique real solution $(x,y,z)$. Prove that there exists a triangle with side lengths $a$, $b$ and $c$.",
+      "statement_sha256": "0edacc8971e836c3d7561871910d3577428599ba98edf8a234fddb3bbeb6ddde",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Uniqueness of a real algebraic system constrains triangle-side coefficients."
+    },
+    "eet.2016.1.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A circle is divided into arcs of equal size by $n$ points ($n\\ge 1$). For any positive integer $x$, let $P_n(x)$ denote the number of possibilities for colouring all those points, using colours from $x$ given colours, so that any rotation of the colouring by $i\\cdot\\frac{360^\\circ}{n}$, where $i$ is a positive integer less than $n$, gives a colouring that differs from the original in at least one point. Prove that the function $P_n(x)$ is a polynomial with respect to $x$.",
+      "statement_sha256": "74fdd8881c1f5fd12187027ed957e269bb49a7a3272a897ef47d6c6ccb593df0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Counting primitive cyclic colourings by a polynomial; circular order is discrete."
+    },
+    "fi.2025.0.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $a$, $b$, $c$ denote the altitudes of a triangle $A$.\n(1) Let $r>0$ be a real number. Show that there exists a triangle $A$ with area $\\frac12$ for which $abc<r$.\n(2) Show that for all triangles $A$ with area $\\frac12$ it holds that $abc<1$.",
+      "statement_sha256": "9b4912c865a9c569dfa06bc11ebd92a019edf5a74c748908b0387a1150c1981b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Triangle altitudes and fixed area; a real bound alone does not establish algebra."
+    },
+    "frt.2014.3.9": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine all real numbers $t$ such that, whenever $a,b,c$ are the side lengths of a non-degenerate triangle, the same holds for $a^2+bct$, $b^2+cat$, $c^2+abt$.",
+      "statement_sha256": "60a0c877d6913077252c6806abc42552fbce5a49ed9f1f7583c9d2f6e5bbd9cb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Algebraic parameter transformation must preserve all triangles."
+    },
+    "frt.2019.4.10": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $\\mathcal{C}$ be a circle of radius $1$ and let $T$ be a real number. A set of triangles is called $T$-daring if it satisfies the following three conditions:\n- the vertices of each triangle lie on $\\mathcal{C}$;\n- the triangles have pairwise disjoint interiors (but two triangles may share a side or a vertex);\n- each triangle has perimeter strictly greater than $T$.\nFind all real numbers $T$ such that, for every integer $n\\ge 1$, there exists a $T$-daring set containing exactly $n$ triangles.",
+      "statement_sha256": "1be1acdffa135cb988b9f3039a943e76f34d93419078b0504b28d9667810b32c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Packing disjoint inscribed triangles with a perimeter threshold."
+    },
+    "ee.1998.0.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $BC$ be the longest side of a triangle $ABC$, and let the angle bisector drawn from the vertex $A$ meet the side $BC$ at the point $D$. Let $E$ and $F$ be the feet of the perpendiculars dropped from the point $D$ to the sides $AB$ and $AC$, respectively. Denote by $R$ the ratio of the areas of the triangles $DEB$ and $DFC$.\n\na) Prove that for every positive real number $r$ one can construct a triangle $ABC$ for which the ratio $R$ equals the given number $r$.\n\nb) Prove that if the ratio $R$ is irrational, then at least one of the side lengths of the triangle $ABC$ is irrational.\n\nc) Give examples of triangles in which the lengths of exactly one, exactly two, or all three sides are irrational, but the ratio $R$ is rational.",
+      "statement_sha256": "483482454906fb9a5938d17b931d44ce986d642dc6c212e32026be9bf7c63a55",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Triangle projections and area ratios are tied to rational/irrational side relations."
+    },
+    "ee.2002.0.3": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Prove that positive real numbers $a$, $b$ and $c$ satisfy the inequality\n$$2(a^4 + b^4 + c^4) < (a^2 + b^2 + c^2)^2$$\nif and only if there exists a triangle with side lengths $a$, $b$ and $c$.",
+      "statement_sha256": "63034a6173d2e37c9b23ff7c4730d4d87623afaeeddbf1d3edc8c2182ad3aef0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A symmetric quartic inequality characterises triangle inequalities."
+    },
+    "ee.2007.0.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Positive real numbers $x$, $y$ and $z$ are such that for every positive integer $n$ the numbers $x^n$, $y^n$ and $z^n$ are the side lengths of some triangle. Prove that at least two of the numbers $x$, $y$ and $z$ are equal.",
+      "statement_sha256": "d1ca00d06446ab27a97280e4ec8d1444da6ae52f2c09962ce4834d1c24797df9",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "All power transforms must remain triangle sides."
+    },
+    "ee.2010.0.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $a$, $b$ and $c$ be the side lengths of a triangle and $k$ a real number. Prove that if the quadratic equation $x^2 + (a + b + c)x + k(ab + bc + ca) = 0$ has a real solution, then $k < 1$.",
+      "statement_sha256": "89766edede20149be4198e6cf0869dede4beda6e75531c357e1046b6f5b74fac",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A discriminant constraint is combined with triangle inequalities."
+    },
+    "ee.2012.0.5": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "a) Does there exist a function defined on the set of all real numbers with real values, not identically zero, such that reflecting its graph in the $y$-axis gives the graph of the derivative of this function?\n\nb) Does there exist a function defined on the set of all real numbers with real values, not identically zero, such that shifting its graph by $1$ unit along the $x$-axis in the positive direction gives the graph of the derivative of this function?",
+      "statement_sha256": "7300ccfdf35d830cd398992698eb885629a207140b4af599f7083ae5fd2916ac",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Function graph transformations and derivatives; no Euclidean geometric theorem."
+    },
+    "huo.2009.0.2": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Project the regular tetrahedron $ABCD$ orthogonally onto a number line lying in space, and let the projections of the vertices be the real numbers $a$, $b$, $c$, $d$, respectively. Express the edge length of the tetrahedron in terms of $a$, $b$, $c$ and $d$.",
+      "statement_sha256": "635915b41a61007d5036d2d9eeb2bc24089e2392d2792578ca90941907ee7bc8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Tetrahedron projections relate coordinate expressions to edge lengths."
+    },
+    "um.2001.0.6": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Each point in the plane is assigned a real number such that, for any triangle, the number at the center of its inscribed circle is equal to the arithmetic mean of the three numbers at its vertices. Prove that all points in the plane are assigned the same number.",
+      "statement_sha256": "4d54edb0c55257cbc314ec97011c148dc0180207a991e15c24e64628d8bdf7b1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A functional equation is imposed at circle centres."
+    },
+    "um.2012.0.1": {
+      "topics": [
+        "Algebra",
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Find all integers $n \\ge 3$ such that among any $n$ positive real numbers $a_1, a_2, \\dots, a_n$ with $$\\max(a_1, a_2, \\dots, a_n) \\le n\\cdot\\min(a_1, a_2, \\dots, a_n),$$ there exist three that are the side lengths of an acute triangle.",
+      "statement_sha256": "a137dd3d7214d80b05096e0b2727593cb625b20d85933f43200d7636104697d3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Selecting an acute triangle from reals subject to ratio bounds."
+    },
+    "um.2025.0.6": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $m$ and $n$ be positive integers with $m \\ge n$. There are $m$ cupcakes of different flavors arranged around a circle and $n$ people who like cupcakes. Each person assigns a nonnegative real number score to each cupcake, depending on how much they like the cupcake. Suppose that for each person $P$, it is possible to partition the circle of $m$ cupcakes into $n$ groups of consecutive cupcakes so that the sum of $P$'s scores of the cupcakes in each group is at least 1. Prove that it is possible to distribute the $m$ cupcakes to the $n$ people so that each person $P$ receives cupcakes of total score at least 1 with respect to $P$.",
+      "statement_sha256": "6f21e2fe04704d2c1a2b0f51e0c7b19e6555ab657bf846b7c234ed26951073de",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Fair division of cyclic real valuations; circle denotes order."
+    },
+    "ar.2005.0.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "We will say that a positive integer is a winner if it can be written as the sum of a perfect square plus a perfect cube. For example, 33is a winner because 33 = 52+ 23. Gabriel chooses two positive integers, r and s, and Germ án must find 2005 positive integers n such that for each n, the numbers r+nands+nare winners. Prove that Germ án can always achieve his goal.",
+      "statement_sha256": "2ac93fafdf76a5032ffbebe1a23568a78e085f5dacf7356ed0c1e768bb0e4b34",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Squares and cubes are integer powers in an additive construction."
+    },
+    "sg.2010.0.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $(a_n)$, $(b_n)$, $n = 1, 2, \\ldots$ be two sequences of integers defined by $a_1 = 1$, $b_1 = 0$ and for $n \\geq 1$ $$a_{n+1} = 7a_n + 12b_n + 6 \\quad b_{n+1} = 4a_n + 7b_n + 3$$ Prove that $a_n^2$ is the difference of two consecutive cubes.",
+      "statement_sha256": "043193a0229f3c9b8600a6f1149ca3503d7b0fd0fe9fdf6a63ec354f6068978c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer recurrences and consecutive third powers."
+    },
+    "sg.2018.0.1": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Consider a regular cube with side length 2. Let $A$ and $B$ be 2 vertices that are furthest apart. Construct a sequence of points on the surface of the cube $A_1, A_2, \\ldots, A_k$ so that $A_1 = A$, $A_k = B$ and for any $i = 1, \\ldots, k - 1$, the distance from $A_i$ to $A_{i+1}$ is 3. Find the minimum value of $k$.",
+      "statement_sha256": "bc4b1d19d55132bd6aa53abe57ceefa723a6ab2003a8ec1bd6db625bf371b680",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Minimum jumps constrained by the cube surface."
+    },
+    "uk1.2011.0.2": {
+      "topics": [
+        "Geometry",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $s$ be an integer greater than 6. A solid cube of side $s$ has a square hole of side $x<6$ drilled straight through between opposite faces. The volume of the remaining solid equals, numerically, its total surface area. Find all possible integer values of $x$.",
+      "statement_sha256": "5479fee62374b3866d2378a07092f08a4c18be35390e8ae7f570b7491a7025df",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "An integer-length drilled solid gives a volume/surface Diophantine condition."
+    },
+    "ie.2005.0.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that $2005^{2005}$ is a sum of two perfect squares, but not the sum of two perfect cubes.",
+      "statement_sha256": "a6f16ebdd0539530323b31b7138c56182959566011c2e44979c5bc7ba1ddc5b8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Representations as sums of square and cube powers."
+    },
+    "id.2011.2.5": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A unit cube is labeled with numbers as shown. Place $2^n$ such cubes to form a $1 \\times 2 \\times n$ cuboid on a floor. Let $S$ be the sum of all visible numbers (not facing the floor). Find the minimum $n$ such that there exists a placement with $S > 2011$.",
+      "statement_sha256": "921bcad40e95c6bd48dfcbaa409ff729c0bc5623407641ea71aad3017e75a7da",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Counting visible labels in cube arrangements; the stored cube-count notation needs separate source checking."
+    },
+    "br.1981.0.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "The centers of the faces of a cube form a regular octahedron of volume $V$. Through each vertex of the cube take the plane perpendicular to the long diagonal from that vertex. These planes also form a regular octahedron. Show that its volume is $27V$.",
+      "statement_sha256": "7a8f0ab416fa249c9be3ea32261ef5848174d8d67deda2849a361912010c9162",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Volumes of a cube and octahedral construction."
+    },
+    "br.1994.1.1": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "The edges of a cube are labeled from $1$ to $12$ in an arbitrary manner.\n\na) Show that it is not possible to make the sum of edge-labels at each vertex the same.\n\nb) Show that if one of the labels is changed to $13$, we can label the edges so that all eight vertices have the same sum.",
+      "statement_sha256": "b203f88a60b9761261403463d36ace9c32c78d2cfda43a07e49a024d8a69859f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Distinct edge labels and vertex sums on a cube graph."
+    },
+    "br.2002.1.1": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Show that there is a set of $2002$ distinct positive integers such that the sum of one or more elements of the set is never a perfect square, cube, or higher power.",
+      "statement_sha256": "2d15cda26acc437f04a3af96659c53546099dcbd986539b1d6b493809bd0e383",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Constructing distinct integers with subset sums avoiding perfect powers."
+    },
+    "br.2005.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A square is contained in a cube when all of its points lie on the faces or in the interior of the cube. Determine the largest $\\ell > 0$ such that there exists a square of side $\\ell$ contained in a cube with edge length $1$.",
+      "statement_sha256": "2d1c2f24bfec3911b829b0d996221447bcd19d380b5c7d820c0bad870cf35150",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Largest square contained in a cube."
+    },
+    "br.2010.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "What is the largest shadow that a cube of side length $1$ can cast, with the sun directly overhead? (The shadow is the largest possible area of the orthogonal projection of the cube onto a plane.)",
+      "statement_sha256": "1536e88e877b348360b4d9a35278566c2898e77442aa164ff874196be74d5fe2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Maximum area of an orthogonal cube projection."
+    },
+    "vn.1970.0.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A plane $p$ passes through a vertex of a cube so that the three edges at that vertex make equal angles with $p$. Find the cosine of this angle. Find the positions of the feet of perpendiculars from the vertices onto $p$. Among the 28 lines through two vertices and the 20 planes through three vertices of the cube, find some relationship with $p$.",
+      "statement_sha256": "8871983d0c25c6d7df6330c70b6936c25241efb786762d17f3778c5eaeff28b0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Plane angles, perpendicular feet and cube incidence."
+    },
+    "vn.1971.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "$ABCDA'B'C'D'$ is a cube. $L$ is a line intersecting or parallel to lines $AA'$, $BC$, and $DB'$. $L$ meets $BC$ at $M$ with $|BM|=m$. Show $|B'E|=m$ and $|D'F|=m$ where $E,F$ are defined by certain planes. Construct $P = L \\cap A'B'C'D'$. Find distances from $P$ to lines $A'B'$ and $A'D'$ and a relation independent of $m$. Find the locus of $M$ and the envelope $S$ of $L$.",
+      "statement_sha256": "234566ded6d162eb6e59cc90a317177a482c2cf2a3ebc189cbde59da8e7f837b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Spatial loci/envelopes in a cube; the abbreviated plane definitions need separate source checking."
+    },
+    "vn.1974.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A unit cube $C$ has 12 edges. The lines containing the 12 edges meet a plane $p$ in 12 points. What can you say about the 12 points?",
+      "statement_sha256": "04319a4868e1a9d66033d48667ac990064ef5640f523363c23e3c9d8ddc32bb1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Plane intersections with cube edges."
+    },
+    "vn.1982.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCDA'B'C'D'$ be a cube (with faces $ABCD$ and $A'B'C'D'$, and edges $AA', BB', CC', DD'$). Consider the four lines $AA'$, $BC$, $D'C'$, and the line joining the midpoints of $BB'$ and $DD'$. Show that no line cuts all four of these lines.",
+      "statement_sha256": "480378a5a935f7d0e4d4e457cb81a49f19a97272e338ee1b747ef723b9cee27a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Spatial lines and existence of a transversal."
+    },
+    "vn.1997.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "In the unit cube, 75 points are given with no three collinear. Prove that there exists a triangle with vertices among these 75 points whose area does not exceed $\\dfrac{7}{72}$.",
+      "statement_sha256": "84f87810870dcdef150cbf60e53821251edfbece5ee0b781565c0f8a6bcd261e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Point selection with triangle-area bounds inside a cube."
+    },
+    "ru.2019.2.8": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A positive integer $n$ is given. A $3 \\times 3 \\times 3$ cube is assembled from $26$ white unit cubes and one black unit cube, with the black cube at its center. From $n^3$ such cubes with edge $3$, a cube with edge $3n$ is assembled. What is the smallest number of white unit cubes that can be repainted red so that every white unit cube has at least one common vertex with some red one?",
+      "statement_sha256": "40136c4cf9813ed810e7b18f9f879c4d3167745131c1d1f1e77699bf75abad24",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Minimum domination of a finite cube adjacency grid."
+    },
+    "ru.2025.1.4": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A positive integer $N$ is given. A cube with side $2N + 1$ is made of $(2N+1)^3$ unit cubes, each of which is black or white. It turned out that among any $8$ unit cubes having a common vertex and forming a $2 \\times 2 \\times 2$ cube there are at most $4$ black cubes. What is the largest possible number of black cubes?",
+      "statement_sha256": "2027945c3217822d8206f560f6aa70e910b6f3e0bd2b7352f3380d28d574cfdb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Extremal black/white counts in overlapping discrete blocks."
+    },
+    "pl.2012.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Determine all pairs $(m, n)$ of positive integers for which a cube $K$ with edge $n$ can be surrounded by rectangular blocks of dimensions $m \\times 1 \\times 1$ in such a way that a cube with edge $n+2$ is formed, having the same center as $K$.",
+      "statement_sha256": "83b65fc20eb51c1fa3e5ccff1938eeee4da80371907d4403ff167e259ed6c7bf",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Tiling a spatial cube shell with rods."
+    },
+    "es.2006.2.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that the product of four consecutive natural numbers can be neither a perfect square nor a perfect cube.",
+      "statement_sha256": "4aeea0d13ebcf8ecdf78d4d411ac4f762cf5c17f5e68e902dc21f1d820afd688",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Products of consecutive integers cannot be square/cube powers."
+    },
+    "es.2023.1.1": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "We have a cube of side $3$ made up of $27$ cubic pieces of side $1$. Inside each piece there is a light bulb that can be on or off. Each time a piece is pressed (it is not possible to press the one at the center of the cube), the state of its bulb changes, as well as the states of the bulbs of the pieces that share a face with the pressed one. Initially, all the bulbs are off. Answer the following questions, with justification:\n\n(1) Is it possible to get all the bulbs to be on?\n\n(2) Is it possible to get all the bulbs to be on except the one at the center of the cube?\n\n(3) Is it possible to get only the bulb at the center of the cube to be on?",
+      "statement_sha256": "fd6581447341b0f06cdb414946cd5c3243b184c1928cc874bf4db4d9ca79cce1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Binary toggles on the cube adjacency graph."
+    },
+    "hrt.2018.3.10": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "The figure shows a chain made of $54$ unit squares. Each square, except the two end ones, is joined to its two neighbours at opposite vertices.\n\nEach square may be placed in any position in space, provided that it stays joined to the neighbouring squares at the corresponding vertices. Is it possible to place this chain so that it forms the surface of a $3\\times 3\\times 3$ cube?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/croatiahmo_2018_p10_fig.png",
+      "statement_sha256": "b3c7a40a27196136cbc13fcda2bdc854bd2eda7d65b0a9bec136ab01d21e5b0b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected square chain must fold onto a cube surface."
+    },
+    "no.1993.0.4": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "We have a cube. Each of the $8$ corners is given the value $1$ or $-1$. Each of the six faces is given a value equal to the product of its four corners. Let $A$ be the sum of the values of all the corners (eight) and all the faces (six). Then $A$ is the sum of $14$ values. Which values of $A$ are attainable?",
+      "statement_sha256": "905832c13afe589cbd8e8a8fa9e8bec7cdb520f2476359aa3ce289e26d2545c5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Products of signed vertex labels and attainable sums on a graph."
+    },
+    "no.2009.0.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "a. Show that there exist infinitely many integers that cannot be written as the difference between two perfect squares.\n\nb. Show that the sum of three consecutive perfect cubes can always be written as the difference between two perfect squares.\n\n(A perfect square is an integer raised to the second power. A perfect cube is an integer raised to the third power.)",
+      "statement_sha256": "71982b9e1825b7cb2587fe0a65bdc15356f3cd8d896f9c7c359947598bed221b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer differences of squares and sums of consecutive cube powers."
+    },
+    "ukt.1998.1.3": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "An infinite arithmetic progression, whose terms are all positive integers, contains\n(i) a perfect square which is not a perfect cube, and\n(ii) a perfect cube which is not a perfect square.\nProve that the arithmetic progression contains a perfect sixth power.",
+      "statement_sha256": "0dcd6577728657399953cce5cdef410ee26dfff4cb8e4addbe168bb61bd98d3f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Perfect-square/cube terms in an integer arithmetic progression."
+    },
+    "ukt.2008.3.7": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $M$ and $N$ be vertices of a cube. Assign the number $1$ to these vertices and $0$ to the other six vertices. A move consists of selecting a vertex, and adding $1$ to the numbers assigned to each of the three adjacent vertices. Give necessary and sufficient conditions on $M$ and $N$ for there to exist a finite sequence of moves after which all numbers assigned to the eight vertices are equal.",
+      "statement_sha256": "0c4074f35a2fa3b29112c49350f0419a3ca212ff6f10848c88c80e1adf62ceb8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Neighbour-addition operations and linear invariants on a cube graph."
+    },
+    "nlt.2006.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Given a set of points in space, we may reflect a point of the set in another point of the set and add the image to the set.\n\nIf we start with a set consisting of seven of the eight vertices of a cube, can we get the eighth vertex into the set after a finite number of steps?",
+      "statement_sha256": "ae938d548b5ad13dc939aafefcdf5d643260d781a80e9d79e13a3f6a8d841a08",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Point reflections generate the missing cube vertex."
+    },
+    "ch.2008.1.4": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Consider three faces of an $n \\times n \\times n$ cube which meet at one of the vertices of the cube. For which $n$ is it possible to cover them completely and without overlap with paper strips of size $3 \\times 1$? The paper strips may also be glued across the edges between these faces.",
+      "statement_sha256": "19e26cd62d053018f5345ed5daf79d8f53bccbdb684f08c08053a953badc2f2f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Strip tiling across three adjacent cube faces."
+    },
+    "de.2013.0.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A paper parallelogram with side lengths $25$ and $10$ and height $6$ between the longer sides is given. It is to be cut into exactly two pieces in such a way that, using both pieces, one can cover a cube of suitable edge length completely and without overlaps, without any further cuts. Describe such a cutting and show that it actually satisfies the conditions of the problem.",
+      "statement_sha256": "76b534c9db0dbf8b776537f9ee996445d775cbd1ab5ea6f30533f90d7642a7e4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Cutting and assembling a parallelogram into a cube net."
+    },
+    "de.2017.0.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "We call a natural number heinersch if it can be written as the sum of a positive perfect square and a positive perfect cube. Prove: there are infinitely many heinersch numbers whose predecessor and successor are also heinersch.",
+      "statement_sha256": "9d2793f7f73a16e52877ad900b2a2122331b598f966b5c1a489a5c905a935790",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Neighbour relations for sums of positive square and cube powers."
+    },
+    "dem.1968.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Which of all the planes containing one and the same space diagonal of a cube with edge length $a$ cut out of the cube a cross-section of smallest area? Compute the area of such a cross-section.",
+      "statement_sha256": "7fbc80a123c02f7e7ec717f4b221654ff39ca0fd6db3f657bc77920284f73ed2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Minimum area of a plane section through a cube diagonal."
+    },
+    "dem.1990.0.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let the vertices of a cube with given edge length $a$ be labeled $A, B, C, D, E, F, G, H$ as in the figure. Let $\\varepsilon_1$ be the plane in which $A, B, C, D$ lie; let $\\varepsilon_2$ be the plane in which $B, C, G, F$ lie; let $g$ be the line through $H$ and the center $M$ of the square $BCGF$. Prove that among all segments which connect a point of $\\varepsilon_1$ with a point of $\\varepsilon_2$ and whose midpoint lies on $g$, there is a segment of smallest length. Determine this smallest length.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo_1990_p5_fig.png",
+      "statement_sha256": "d85388ff8d6f4e1e89b3143bd10cda9abb964097c7c0a66bba42a4964b741d30",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected diagram gives spatial planes and a minimum connecting segment."
+    },
+    "dem.1991.0.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "For a cube-shaped box with edge length $10$ cm, consider all those lines, called marked, which pass through the interior of the cube, run parallel to an edge of the cube and have integer distances (measured in cm) from the two faces containing this edge. Prove: however the box is completely filled with $250$ rectangular building blocks of dimensions $2\\text{ cm} \\times 2\\text{ cm} \\times 1\\text{ cm}$, there are always at least $100$ marked lines which pierce none of the blocks. Here a block counts as pierced if and only if the line contains interior points of the block.",
+      "statement_sha256": "4ed67d7a2f6e9b148a46ef7675a6aa90fce3694345294c35e9197d25522bac90",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Spatial block tiling and counting unpierced lines."
+    },
+    "dem.1993.0.2": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Prove that a cube can be dissected into exactly $n$ cubes for every natural number $n \\ge 100$.",
+      "statement_sha256": "97da7e98e508880243eadea87be6bf9409ab4e650aa239576d52db2c780626f9",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Dissecting a cube into a specified number of smaller cubes."
+    },
+    "hkt.2008.1.2": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Show that the product of three consecutive integers is the sum of four integer cubes.",
+      "statement_sha256": "d351ab668a2cf1b699cf897e5b350d288aaa11221a3ffd28ac41165cf4dff9a3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Representing a product of consecutive integers as a sum of third powers."
+    },
+    "hkt.2014.1.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find the largest integer $n$ satisfying the following conditions:\n\n(i) $n^2$ can be expressed as the difference of two consecutive cubes;\n\n(ii) $2n + 79$ is a perfect square.",
+      "statement_sha256": "5eadf153a0de9baba150dc6d8821c37b200343be85cfb7df5d602ddc9a3986fb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer square conditions and differences of consecutive cube powers."
+    },
+    "ltt.2016.2.5": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "An integer is written on each face of a cube. In a move it is allowed to choose any two adjacent faces and increase the numbers on them by $1$. After several moves all six numbers became equal. Determine for which initial collections of numbers this could have happened.",
+      "statement_sha256": "a6f690432615c061c82f4c4b92de8f6d1e0bc409ebbc7ff8391d2acd4e3be30f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Neighbour-increment operations on integer face labels and linear invariants."
+    },
+    "si.2023.0.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "On the cube $ABCDEFGH$ denote by $P$ the centre of the face $EFGH$ and by $R$ the midpoint of the edge $AB$. The plane $\\Sigma$, which contains the points $C$, $P$ and $R$, intersects the edges $EF$ and $GH$ at the points $X$ and $Y$, respectively (see the figure).\n\na) Prove that $|EX|:|XF|=|GY|:|YH|=1:3$.\n\nb) The plane $\\Sigma$ divides the cube into two parts. Determine the ratio between the volumes of these two parts.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/slovenia_2023_p5_fig.png",
+      "statement_sha256": "53a5c7a9eb01dfc6e6ea20efcf6adefe028463b6e3c5b974d16ea3518dafcfcf",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected cube section determines a volume ratio."
+    },
+    "lv.1995.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "The figure CIBA consists of $4$ equal unit cubes; some of them touch along faces (see the figure).\n(a) Prove that a rectangular parallelepiped can be assembled from figures CIBA.\n(b) Can a cube (of any size) be assembled from figures CIBA?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/latvia_1995_p3_fig.png",
+      "statement_sha256": "5631bed73a54f4997e7a9427560c6240a660cfc03aa8a2483ed8bc75f014a910",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected four-cube piece tiles a box or cube."
+    },
+    "eet.1996.0.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "The numbers $x$, $y$ and $\\frac{x^2+y^2+6}{xy}$ are positive integers. Prove that $\\frac{x^2+y^2+6}{xy}$ is a perfect cube.",
+      "statement_sha256": "28ef000053ad28d1ee44e3fe69450528c55207bb69c94494c9d3411c811e6314",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Integer divisibility forces an expression to be a perfect third power."
+    },
+    "eet.1996.0.6": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Each face of a cube is divided into $n\\times n$ equal squares. The vertices of the squares are called nodes, so each face of the cube has $(n+1)^2$ nodes.\n(a) For $n=2$, does there exist a closed broken line whose links are the edges of the squares which contains each node exactly once?\n(b) for $n$ arbitrary, prove that each such broken line divides the surface area of the cube into two equal parts.",
+      "statement_sha256": "ffb1dbbc86b50bd05132d6f745b1e077e130630bf93e243321abd224eadcb54b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "A closed lattice path on cube faces with equal-area constraints."
+    },
+    "eet.2012.1.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that for any positive integer $k$ there exist $k$ pairwise distinct integers for which the sum of their squares equals the sum of their cubes.",
+      "statement_sha256": "fe1601bbab1c723191d9e2da40e3923e47304635351fc17cda3ac47e7aae4e5d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Equality between sums of integer squares and cubes."
+    },
+    "pt.2017.2.4": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "The numbers from $1$ to $8$ are placed at the vertices of a cube, one at each of the eight vertices, in such a way that the sum of the numbers at any three vertices of the same face is greater than $9$. Determine the minimum value that the sum of the numbers of one of the faces can have.",
+      "statement_sha256": "9f3b0fc9d0c44f3d9c84d93622a4611fb7519719b9cb94c81b6c9f8d1621e21e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Vertex permutations and extremal face sums on a cube graph."
+    },
+    "dk.2000.0.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A GEORG MOHR cube is a cube on whose six faces the letters G, E, O, R, M and H are printed, respectively. Peter has nine identical GEORG MOHR cubes. Is it possible to stack them on top of each other into a tower which, on each of its four sides, shows the letters G E O R G M O H R in some order?",
+      "statement_sha256": "20e1a687ac8da0a4ba8d4ff33875e8acc774d4d233e4e848a0e23b4a18aa3add",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Letter assignment and stacking constraints on labelled cube faces."
+    },
+    "is.2011.0.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "The vertices of a cube are numbered with the numbers from $1$ to $8$ (each number used once). For each edge, the sum of the numbers at its endpoints is formed. Is it possible to number the vertices in such a way that the sums for the edges are all different?",
+      "statement_sha256": "358af44d4c1da3f6508aa7e567d1f9d618698c0ee91d588fa7d331ba286372ca",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Vertex permutations with distinct edge sums on a graph."
+    },
+    "ee.2005.0.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A \"krümbel\" is the solid shown in the figure, consisting of four white unit cubes and one black unit cube. Find the smallest side length of a cube that can be filled exactly with krümbels.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/estonia_2005_p5_fig.png",
+      "statement_sha256": "9b312f751217e75e12b5b9c09f757c65bcf73796314f8264d7f9c6cc4812808a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "The inspected five-cube piece must fill a larger cube."
+    },
+    "huo.2010.0.3": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "We want to cover completely the three faces meeting at one vertex of a cube with edge length $k$ using $k^2$ labels of size $3 \\times 1$. For which $k$ can this be done?",
+      "statement_sha256": "15792ab0c5ab505a9cf6a4f275cce20072dba3543f9ad79b602f2be44781cbab",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-02",
+      "rationale": "Strip tiling across three adjacent cube faces."
     }
   }
 }

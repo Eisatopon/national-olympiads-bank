@@ -25,4 +25,4 @@ assert.deepEqual(Array.from(ctx.topicFields('Find all primes p.',null,'au.2017.2
 assert.equal(ctx.topicFields(record.reviewed_statement,'Geometry','au.2017.2.5').topic,'Geometry');
 assert.ok(!ctx.classifyStatement('Find integers x,y with x^2+y^2=1.').includes('Geometry'));
 assert.ok(!ctx.classifyStatement('A regular 14-gon has marked vertices.').includes('Number Theory'));
-console.log('Thematic checks passed: 151 reviewed records, actual geometry/algebra omissions, stale overrides and category precedence.');
+console.log(`Thematic checks passed: ${Object.keys(metadata.records).length} reviewed records, actual geometry/algebra omissions, stale overrides and category precedence.`);

@@ -81,3 +81,9 @@ The UI drops DNA when the statement changes, and `scripts/validate_dna.py` rejec
 ## Thematic corrections (2 October 2026)
 
 151 previously unclassified statements now have explicit full-statement topic reviews in `metadata/topic-overrides.json`, including mixed-topic cases. Existing recorded categories take precedence, then exact-text reviewed overrides, then the fallback classifier. The fallback now handles plural geometry terms, solid geometry, polynomial notation, mathematical inequality symbols, recurrences and common integer/combinatorial structures. Regression tests include real omitted geometry and algebra problems across several countries. These changes repair the earlier incomplete keyword classifier; they do not certify a reviewed classification for every bank record. CI rejects stale thematic snapshots.
+
+## Focused thematic audit (2 October 2026)
+
+A subsequent full-statement audit covers 224 active records in three risk groups: Geometry + Number Theory, Geometry + Algebra, and Geometry-only statements mentioning cubes. All 12 referenced figures were visually inspected. Topic sets changed for 168 records; some changes add a substantive subject rather than remove an error. There are now 374 distinct statement-reviewed overrides, including the previous batch and one overlapping record.
+
+`docs/topic-audit-2026-10-02.json` records each decision, rationale, statement hash, prior labels, reviewed labels, inspected figures and two source-follow-up items. This audit does **not** claim review of all 9,458 active records: 9,234 were outside this audit. It reviews thematic content of stored statements, not correctness of solutions or fidelity to original sources. CI checks audit/override consistency and exact statement snapshots.
