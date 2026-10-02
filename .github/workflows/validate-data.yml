@@ -19,5 +19,7 @@ jobs:
       - run: node tests/test_collections.cjs
       - run: node tests/test_relations.cjs
       - run: python scripts/validate_dna.py
+      - run: node tests/test_topics.cjs
+      - run: python scripts/validate_topics.py
       - run: python -m unittest discover -s tests
       - run: python scripts/validate_data.py

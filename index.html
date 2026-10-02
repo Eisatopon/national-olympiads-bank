@@ -713,6 +713,7 @@ const inflight = new Map();
 const failed = new Map();
 const byUid = new Map();
 let collectionMetadata = {};
+let topicOverrides = {};
 let problemDna = {records:{}, techniques:{}};
 let metadataUnavailable = false;
 let selected = [];
@@ -762,16 +763,25 @@ function bodyHtml(text) {
    Φόρτωση και ομαλοποίηση δεδομένων
    ========================================================== */
 function classifyStatement(text) {
-    const t = String(text).replace(/https?:\/\/\S+/g, '').toLowerCase();
+    const t = String(text).replace(/https?:\/\/\S+/g, '').normalize('NFKC').replace(/(\d)([a-z])/gi, '$1 $2').toLowerCase();
+    const geometry = /\b(triangles?|quadrilaterals?|quadrangles?|circles?|circumcircles?|incircles?|tangen(?:t|ts|cy)|collinear|concurrent|perpendicular|parallel|angles?|polygons?|rectangles?|rhomb(?:us|uses|i)|trapezi(?:um|a)|trapezoids?|tetrahedr(?:on|a)|circumcent(?:re|er)|orthocent(?:re|er)|incent(?:re|er)|spheres?|cuboids?|pyramids?|polyhedr(?:on|a)|parallelograms?|heptagons?|hexagons?|pentagons?|octagons?|nonagons?|decagons?|disks?|diameters?|chords?|rhombuses|semicircles?|segments?|prisms?|compass|rhombuses|ellipses?|similarity|homothety|inversion|isometr(?:y|ies))\b|\b\d+\$?-gon\b|\\angle\b|\b(?:inscribed|circumscribed|lateral faces|angular distance|circular|side length|surface area|geometric construction|points in the plane|map.*plane.*distances|x\$?-axis|plane.*origin|line segments|straight line|unit square|square with side|squares.*area|area.*squares|intersecting lines|intersection point|equal areas|inscribed spheres)\b|\bcubes?\b(?!\s+(?:of|root|number|integer))|\bsquares?\s+(?:abcd|abce|pqrs)\b/.test(t);
+    const combinatorics = /\b(games?|players?|permutations?|combinations?|subsets?|colour(?:s|ed|ing)?|color(?:s|ed|ing)?|chessboards?|boards?|grids?|tournaments?|tiles?|tiling|graphs?|vertices and edges|cards?|coins?|tokens?|piles?|rocks?|students?|clubs?|societies|teams?|contestants?|classrooms?|athletes?|beads?|socks?|wagons?|scientists?|acquaintances?|arrangements?|rearrangements?|antipalindromic|binomial coefficients?|probabilit(?:y|ies)|expected number|fixed points|partitions?|disjoint sets|binary sequences?|monsters|weighings?|people|persons?|boys?|girls?|men|women|friends?|balls?|batteries|bacteria|pebbles?|stones?|customers?|couples?|cities|roads?|paths?|tables?|cells?|rows?|columns?|blackboard|painted|pairing|matching|cross out|winning strateg(?:y|ies)|swap|delete|insert|groups|paths|matches|colony|colonies)\b|\b(how many|number of ways|one of four colours|one of four colors|erase|allowed operations|allowed moves)\b/.test(t);
+    const integerDomain = /\b(?:integers?|integral|natural numbers?|whole numbers?)\b|\\mathbb\s*\{z\}|∈\s*z/.test(t);
+    const integerRelation = /(?:=|\\mid|\bdivides?\b|\bmultiple\b|\b(?:perfect|totally) squares?\b|\bsquare (?:numbers?|of (?:an|some) integer)\b|\b(?:sum of (?:the )?digits|digits.*base|triangular numbers?|perfect powers?|powers? of (?:two|[0-9]+)|fraction in its simplest form|is an integer)\b)/.test(t);
+    const numberTheory = /\b(primes?|divisib\w*|divisors?|coprime|gcd|lcm|congruen\w*|modulo|greatest common divisor|least common multiple|remainders?|common factors?|positive factors?|multiples?|composite|digits?|decimal|palindromes?|perfect powers?|triangular numbers?)\b|\\(?:mid|equiv|pmod)\b/.test(t) || (!geometry && !combinatorics && integerDomain && integerRelation && (!/(?:\\(?:geq?|leq?)\b|[≥≤<>])/.test(t) || /\b(find all|determine all|solve)\b/.test(t)) && (!/\b(sequences?|polynomials?|functions?)\b/.test(t) || /\bsequence of (?:positive |non-negative |nonnegative )?integers\b/.test(t)));
+    const algebra = /\b(polynomials?|real numbers?|real-valued|functional equations?|inequalit\w*|positive reals|rational functions?|complex numbers?|real roots?|real solutions?|positive numbers|nonnegative numbers|non-negative numbers|rational numbers?|arithmetic progression|geometric progression|irreducible fraction|partial sums|sum of.*terms|sum.*fraction|average of.*neighbou?rs)\b|\\mathbb\s*\{r\}|∈\s*r|\b(?:functions?|equations?|sequences?)\b|\\(?:lfloor|lceil|sin|cos|tan|log|sum)\b/.test(t)
+        || /\b[a-z]\s*\([^)]*\)\s*=/.test(t)
+        || (!geometry && !combinatorics && !numberTheory && /(?:\\(?:geq?|leq?|gt|lt)\b|[≥≤<>]|=)/.test(t) && /[a-z]/.test(t));
     const topics = [];
-    if (/\b(triangle|quadrilateral|circle|circumcircle|incircle|tangent|collinear|concurrent|perpendicular|parallel|angle|polygon|rectangle|rhombus|trapezium|tetrahedron|circumcentre|circumcenter|orthocentre|orthocenter)\b/.test(t)) topics.push('Geometry');
-    if (/\b(prime|primes|divisible|divisibility|divisor|divisors|coprime|gcd|lcm|congruent modulo|modulo|greatest common divisor|least common multiple|remainder when|remainders when)\b/.test(t)) topics.push('Number Theory');
-    if (/\b(game|players?|permutations?|combinations?|subsets?|colouring|coloring|coloured|colored|chessboard|pigeonhole|tournament|tiles?|tiling|graph|vertices and edges)\b/.test(t) || /\b(how many|number of ways)\b/.test(t)) topics.push('Combinatorics');
-    if (/\b(polynomial|polynomials|real numbers?|real-valued|functional equation|inequality|inequalities|positive reals|rational functions?|complex numbers?)\b/.test(t) || /\bf\s*\([^)]*\)/.test(t)) topics.push('Algebra');
+    if (geometry) topics.push('Geometry');
+    if (numberTheory) topics.push('Number Theory');
+    if (combinatorics) topics.push('Combinatorics');
+    if (algebra && (!numberTheory && !combinatorics && !geometry || /\b(polynomials?|functional equations?|real numbers?|complex numbers?)\b/.test(t))) topics.push('Algebra');
     return topics.length ? topics : ['Unclassified'];
 }
-function topicFields(text, category) {
-    const topics = category ? [category] : classifyStatement(text);
+function topicFields(text, category, uid) {
+    const reviewed = typeof topicOverrides !== 'undefined' && topicOverrides[uid];
+    const topics = category ? [category] : reviewed?.reviewed_statement === text ? reviewed.topics : classifyStatement(text);
     return {topics, topic: topics.filter(t => t !== 'Unclassified').join(' · ') || null};
 }
 
@@ -784,7 +794,7 @@ function normalizeYears(country, raw) {
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
-                ...topicFields(p.problem, p.category), text: String(p.problem || '')
+                ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || '')
             });
         });
     });
@@ -800,7 +810,7 @@ function normalizeUsa(country, raw) {
                     out.push({
                         uid: `${country.key}.${year}.0.${p.number}`,
                         country: country.key, year, day: null, num: String(p.number),
-                        ...topicFields(p.statement, p.category), text: String(p.statement || '')
+                        ...topicFields(p.statement, p.category, `${country.key}.${year}.0.${p.number}`), text: String(p.statement || '')
                     });
                 });
             });
@@ -1559,6 +1569,10 @@ async function init() {
         if (dna.schema_version !== 1 || !dna.records || !dna.techniques) throw new Error('Invalid DNA metadata');
         problemDna = dna;
     } catch (e) { /* Concept-based connections remain available. */ }
+    try {
+        const response = await fetch('./metadata/topic-overrides.json');
+        if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
+    } catch (e) { /* Recorded categories and fallback classification remain available. */ }
     const incoming = parseIncoming();
     const merged = incoming.length ? [...new Set(incoming)] : [...readSaved()];
     if (incoming.length) {
