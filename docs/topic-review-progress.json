@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 2883,
-  "not_statement_reviewed": 6575,
+  "distinct_statement_reviewed": 3883,
+  "not_statement_reviewed": 5575,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": false,
   "complete_collection_reviews": {
@@ -61,6 +61,46 @@
     "Romania-tst-problems.json": {
       "stored_statements_reviewed": 40,
       "source_fidelity_review_complete": false
+    },
+    "Lithuania-lmmo-problems.json": {
+      "stored_statements_reviewed": 92,
+      "source_fidelity_review_complete": false
+    },
+    "Lithuania-tst-problems.json": {
+      "stored_statements_reviewed": 99,
+      "source_fidelity_review_complete": false
+    },
+    "Slovenia-national-problems.json": {
+      "stored_statements_reviewed": 114,
+      "source_fidelity_review_complete": false
+    },
+    "Latvia-vol-problems.json": {
+      "stored_statements_reviewed": 175,
+      "source_fidelity_review_complete": false
+    },
+    "Estonia-tst-problems.json": {
+      "stored_statements_reviewed": 165,
+      "source_fidelity_review_complete": false
+    },
+    "Portugal-opm-problems.json": {
+      "stored_statements_reviewed": 98,
+      "source_fidelity_review_complete": false
+    },
+    "Denmark-georgmohr-problems.json": {
+      "stored_statements_reviewed": 180,
+      "source_fidelity_review_complete": false
+    },
+    "Finland-maol-problems.json": {
+      "stored_statements_reviewed": 120,
+      "source_fidelity_review_complete": false
+    },
+    "Iceland-final-problems.json": {
+      "stored_statements_reviewed": 78,
+      "source_fidelity_review_complete": false
+    },
+    "Hungary-kurschak-problems.json": {
+      "stored_statements_reviewed": 27,
+      "source_fidelity_review_complete": false
     }
   },
   "completed_batches": {
@@ -71,14 +111,15 @@
     "BMO1": 132,
     "BMO2": 88,
     "thematic_batch_1000_1": 1000,
-    "thematic_batch_1000_2": 1000
+    "thematic_batch_1000_2": 1000,
+    "thematic_batch_1000_3": 1000
   },
   "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
-    "Lithuania-lmmo-problems.json": {
-      "stored_statements_reviewed": 70,
-      "stored_statements_total": 92,
+    "Australia-amo-problems.json": {
+      "stored_statements_reviewed": 24,
+      "stored_statements_total": 40,
       "source_fidelity_review_complete": false
     }
   }
