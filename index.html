@@ -1012,17 +1012,25 @@ function safeSourceUrl(value) {
 function provenanceHtml(p, print = false) {
     const meta = collectionMetadata[CBY[p.country].file];
     const gaps = meta?.missing_problem_numbers?.[String(p.year)];
-    const status = 'Not yet verified against the original source';
+    const candidate = meta?.statement_checks?.[p.uid];
+    const source = candidate && safeSourceUrl(candidate.source_url);
+    // A changed statement must lose its checked badge immediately, even before CI.
+    const checked = candidate?.status === 'statement_checked_against_source'
+        && candidate.reviewed_statement === p.text && source
+        && Number.isInteger(candidate.source_page) && candidate.source_page > 0;
+    const status = checked ? 'Statement checked against source (AI-assisted)' : 'Not yet verified against the original source';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
+    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source</a>, page ${candidate.source_page}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.</p>` : '';
     const links = (meta?.source_links || []).map(link => {
         const url = safeSourceUrl(link.url);
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
     }).filter(Boolean);
-    if (print) return `<p class="ps-src">${status}.${note ? ' ' + esc(note) : ''}</p>`;
+    if (print) return `<p class="ps-src">${status}.${note ? ' ' + esc(note) : ''}${checked ? ` Source: ${esc(source)}, page ${candidate.source_page}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''}</p>`;
     return `<details class="provenance"><summary>${status}${note ? ' · Incomplete year' : ''}</summary>
-        ${note ? `<p>${esc(note)}</p>` : ''}
-        <p>Archive links are research references; they do not certify the statement, translation or year. Structural validation is not source verification.</p>
-        ${links.length ? `<ul>${links.map(link => `<li>${link}</li>`).join('')}</ul>` : '<p>No source link has been recorded for this collection yet.</p>'}
+        ${note ? `<p>${esc(note)}</p>` : ''}${checkDetail}
+        ${meta?.verification_notes ? `<p>${esc(meta.verification_notes)}</p>` : ''}
+        <p>Archive research links below do not certify other statements, translations or years. Structural validation is not source verification.</p>
+        ${links.length ? `<ul>${links.map(link => `<li>${link}</li>`).join('')}</ul>` : '<p>No archive research link has been recorded for this collection yet.</p>'}
     </details>`;
 }
 
