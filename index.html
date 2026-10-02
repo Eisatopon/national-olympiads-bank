@@ -600,7 +600,7 @@ const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
 const COUNTRIES = [
     { key: 'gr', name: 'Greece',     flag: '🇬🇷', file: 'Greece-tst-problems.json',       kind: 'years' },
     { key: 'ar', name: 'Argentina',  flag: '🇦🇷', file: 'Argentina-level3-problems.json', kind: 'years' },
-    { key: 'cn', name: 'China',      flag: '🇨🇳', file: 'China-olympiad-problems.json',   kind: 'years' },
+    { key: 'cn', name: 'China — under review', quarantined: true,      flag: '🇨🇳', file: 'China-olympiad-problems.json',   kind: 'years' },
     { key: 'az', name: 'Azerbaijan', flag: '🇦🇿', file: 'Azerbaijan-tst-problems.json',   kind: 'years' },
     { key: 'sg', name: 'Singapore',  flag: '🇸🇬', file: 'Singapore-mo-open-problems.json', kind: 'years' },
     { key: 'uk1', name: 'UK BMO1',   flag: '🇬🇧', file: 'Uk-bmo1-problems.json',          kind: 'years' },
@@ -736,7 +736,7 @@ function normalizeYears(country, raw) {
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
-                topic: null, text: String(p.problem || '')
+                topic: p.category || null, text: String(p.problem || '')
             });
         });
     });
@@ -765,6 +765,13 @@ function loadCountry(key) {
     if (cache.has(key)) return Promise.resolve(cache.get(key));
     if (inflight.has(key)) return inflight.get(key);
     const country = CBY[key];
+    // Preserve the original archive, but never offer corrupted records for selection.
+    if (country.quarantined) {
+        const message = 'This collection is under review because its statements and numbering need repair. It is temporarily excluded from search and problem sets.';
+        failed.set(key, message);
+        onCountrySettled(key);
+        return Promise.reject(new Error(message));
+    }
     const p = fetch(BASE + country.file)
         .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
         .then(txt => {
@@ -772,6 +779,11 @@ function loadCountry(key) {
             try { raw = JSON.parse(txt); }
             catch (e) { throw new Error(`${country.file} is not valid JSON`); }
             const list = country.kind === 'usa' ? normalizeUsa(country, raw) : normalizeYears(country, raw);
+            const ids = new Set();
+            for (const record of list) {
+                if (ids.has(record.uid)) throw new Error('Duplicate problem identifiers: this collection needs repair');
+                ids.add(record.uid);
+            }
             list.forEach(p => byUid.set(p.uid, p));
             list.sort((a, b) => b.year - a.year || (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0));
             cache.set(key, list);
@@ -1020,8 +1032,8 @@ function showCountryError(key) {
     box().innerHTML = headHtml(null) + `
         <div class="state error" role="alert">
             <h3>${CBY[key].name}'s problems did not load</h3>
-            ${/valid JSON/.test(msg)
-                ? `<p>${esc(msg)}, so this country cannot be shown until the file is repaired. Other countries work normally.</p>`
+            ${/valid JSON|identifiers|under review/.test(msg)
+                ? `<p>${esc(msg)}, This collection cannot be shown until the data is repaired. Other countries work normally.</p>`
                 : `<p>${esc(msg)}. Check your connection and try again.</p><button type="button" class="btn btn-primary" data-retry>Try again</button>`}
         </div>`;
 }
@@ -1287,7 +1299,7 @@ async function init() {
 
     selected = merged;
     const keep = new Set(await hydrate(merged));
-    selected = selected.filter(u => keep.has(u));
+    selected = selected.filter(u => keep.has(u) || failed.has(u.split('.')[0]));
     persist();
     renderExam();
 

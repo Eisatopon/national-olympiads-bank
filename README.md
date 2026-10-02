@@ -1,278 +1,45 @@
-# Mathematical Olympiads Problem Bank 🌍
+# National Olympiads Problem Bank
 
-A comprehensive problem database from National Mathematical Olympiads worldwide (1985-2025).
+A collection of national mathematical olympiad and team selection test statements, with an English interface and MathJax rendering.
 
-## ✨ Features
+## Current application
 
-### 🔍 Advanced Search
-- **Keyword search** in problem statements
-- Filters: Year, Country, Competition Type, Problem Number
-- **Difficulty Filter**: Easy, Medium, Hard
-- **Categories**: Algebra, Geometry, Combinatorics, Number Theory
+`index.html` is the standalone application. It loads one `<Country>-<competition>-problems.json` per collection from this repository. Features include country/year and keyword search, problem-set selection and reordering, local saving, printing with mathematical notation, and URL/QR sharing.
 
-### 💾 Save & Export
-- **LocalStorage**: Automatic saving of your selection
-- **PDF Export**: Export selected problems to PDF
-- **Print**: Print with optimized formatting
-- **QR Code**: Generate QR for sharing
+The older Olympiad Bank in `Eisatopon/eisatopon-next` is a separate application and dataset; an automated integration is not yet implemented.
 
-### 📊 Statistics
-- Total problems
-- Number of countries
-- Year range
-- Selected problems count
+## Data integrity
 
-### 🎨 Interface Features
-- Responsive design (mobile-friendly)
-- MathJax for mathematical formula rendering
-- Country flags
-- Dark mode ready (optional)
+China is temporarily excluded from search and problem sets because its archive contains corrupted statements and duplicate identifiers. The original JSON is retained for reconstruction. Counts in the application cover available collections, not the quarantined archive.
 
-## 🚀 Installation
+Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
 
-### Step 1: Create GitHub Repository
+Passing validation confirms structural checks, not mathematical correctness or verification against an official source. Source research is in `.dev/sources.json`; per-problem source verification remains future work.
 
-1. Create a new repository on GitHub:
-   - Name: `olympiads-bank` (or your choice)
-   - Public repository
-   - Add README
-
-### Step 2: Prepare JSON Files
-
-Each year needs a JSON file with this structure:
+## Schema
 
 ```json
-{
-  "year": "2024",
-  "problems": {
-    "National Olympiads": {
-      "China": [
-        {
-          "id": 1,
-          "number": "1",
-          "category": "Number Theory",
-          "difficulty": "Medium",
-          "statement": "Find all prime numbers $p$ such that..."
-        }
-      ],
-      "Greece": [...],
-      "Romania": [...]
-    },
-    "Selection Team Test": {
-      "Iran": [...],
-      "Brazil": [...]
-    }
-  }
-}
+{"competition":"Competition name","years":[{"year":2025,"problems":[{"number":1,"problem":"Prove $x=x$."}]}]}
 ```
 
-**Required fields:**
-- `id`: Unique number (integer)
-- `number`: Problem number (string)
-- `statement`: Problem statement (string with LaTeX)
+Years are ascending and unique. Numbers are positive integers in official order. Optional `day` identifies an exam day or paper and must be positive. Optional `category` is used by the topic filter. The USA TSTST archive retains its legacy schema, handled by a separate loader.
 
-**Optional fields:**
-- `category`: "Algebra" | "Geometry" | "Combinatorics" | "Number Theory"
-- `difficulty`: "Easy" | "Medium" | "Hard"
+Most statements do not yet have topic or difficulty metadata. The application does not provide a difficulty filter. Figures currently appear as image URLs in statement text.
 
-### Step 3: Upload to GitHub
+## Validation
+
+Run from the repository root:
 
 ```bash
-# Files to upload
-olympiads_1985.json
-olympiads_1986.json
-...
-olympiads_2025.json
+python -m unittest discover -s tests
+node tests/test_loader.cjs
+python scripts/validate_data.py
 ```
 
-### Step 4: Update HTML
+GitHub Actions runs these checks on pushes and pull requests. The validator checks JSON structure, collection registration, unique years and identifiers, numbering, nonempty statements, dollar delimiter parity, control characters and local figure existence. Known Argentina gaps are explicit exceptions; changes to their numbering fail validation. China is reported as quarantined and must remain marked as such in the application until repaired.
 
-In the `olympiads_bank_enhanced.html` file, change `YOUR_USERNAME`:
+The loader also rejects duplicate identifiers before storing any records from a collection, preventing an incorrect statement from being selected or printed under a reused identifier.
 
-```javascript
-const DATA_URLS = {
-    "2025": "https://raw.githubusercontent.com/YOUR_USERNAME/olympiads-bank/main/olympiads_2025.json",
-    "2024": "https://raw.githubusercontent.com/YOUR_USERNAME/olympiads-bank/main/olympiads_2024.json",
-    // ...
-}
-```
+## Local preview
 
-### Step 5: GitHub Pages (Optional)
-
-1. Settings → Pages
-2. Source: Deploy from branch
-3. Branch: main, folder: / (root)
-4. Save
-
-Your site will be available at:
-`https://YOUR_USERNAME.github.io/olympiads-bank/`
-
-## 📝 Usage
-
-### Search Problems
-
-1. **Select year** (required)
-2. Optional filters:
-   - Keyword
-   - Country
-   - Category
-   - Difficulty
-   - Competition type
-   - Problem number
-3. Click "🔍 Search"
-
-### Create Selection
-
-1. Click "✅ Add" on each problem you want
-2. Problems appear in "📝 My Selection"
-3. **Automatic save** to localStorage
-
-### Export
-
-- **📄 Export PDF**: Export to PDF (without LaTeX rendering)
-- **🖨️ Print**: Print (with LaTeX rendering)
-- **📱 QR Code**: Generate QR for sharing
-- **🗑️ Clear**: Clear selection
-
-## 🎯 Tips for JSON Creation
-
-### LaTeX Formatting
-
-```javascript
-// Inline math
-"Find $x$ such that $x^2 = 4$"
-
-// Display math
-"Prove that:\n\n$$\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$$"
-
-// Multiple lines
-"Given:\n\n$$a + b = c$$\n\n$$ab = 1$$"
-```
-
-### Difficulty Guidelines
-
-- **Easy**: Problems for beginners (usually P1-P2)
-- **Medium**: Moderate difficulty (P3-P4)
-- **Hard**: Difficult problems (P5-P6, Selection Tests)
-
-### Category Assignment
-
-- **Algebra**: Inequalities, equations, polynomials
-- **Geometry**: Triangles, circles, geometric properties
-- **Combinatorics**: Counting, graphs, principles
-- **Number Theory**: Primes, divisibility, modular arithmetic
-
-## 🛠️ Customizations
-
-### Add Countries
-
-1. Add to `<select id="country">`:
-```html
-<option value="USA">USA</option>
-```
-
-2. Optional: Add flag to `.flags-banner`
-
-### Add Categories
-
-```html
-<select id="category">
-    <option value="Functional Equations">Functional Equations</option>
-</select>
-```
-
-### Custom Styling
-
-Change colors in CSS:
-
-```css
-.header {
-    background: linear-gradient(135deg, #your-color-1, #your-color-2);
-}
-```
-
-## 📱 Responsive Design
-
-- Desktop: Full grid layout
-- Tablet: 2-column layout
-- Mobile: Single column, optimized buttons
-
-## 🔧 Technical Details
-
-### Libraries Used
-
-- **MathJax 3**: For LaTeX rendering
-- **jsPDF**: For PDF generation
-- **QRCode.js**: For QR code generation
-
-### Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-### LocalStorage Structure
-
-```javascript
-{
-  "olympiadsSelection": [
-    {
-      "id": 1,
-      "year": "2024",
-      "country": "China",
-      "type": "National Olympiads",
-      "problem_number": "1",
-      "content": "...",
-      "category": "Algebra",
-      "difficulty": "Medium"
-    }
-  ]
-}
-```
-
-## 📊 Example JSON Structure
-
-See `olympiads_2024_example.json` for a complete example.
-
-## 🐛 Troubleshooting
-
-### Loading Issues
-
-1. **404 Error**: Check that the URL is correct
-2. **CORS Error**: Use GitHub Pages or local server
-3. **Math not rendering**: Wait a bit, MathJax is loading
-
-### LocalStorage Issues
-
-```javascript
-// Clear cache
-localStorage.clear();
-location.reload();
-```
-
-## 🎓 Use Cases
-
-- Preparation for competitions
-- Creating exams
-- Study by category/difficulty
-- Compare problems across countries
-
-## 📄 License
-
-MIT License - Free for educational use
-
-## 🤝 Contributing
-
-Pull requests welcome! Add:
-- New years/countries
-- UI improvements
-- Bug fixes
-
-## 📞 Contact
-
-For questions or suggestions, open an issue on GitHub.
-
----
-
-**Made with 💙 for Math Olympiad enthusiasts worldwide**
+Serve the repository using `python -m http.server`. The committed application loads published data from `main`. To inspect local data changes, replace `BASE` with `./` in a temporary copy; do not commit that preview-only change.
