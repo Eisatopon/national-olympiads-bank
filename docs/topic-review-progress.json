@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 1883,
-  "not_statement_reviewed": 7575,
+  "distinct_statement_reviewed": 2883,
+  "not_statement_reviewed": 6575,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": false,
   "complete_collection_reviews": {
@@ -33,6 +33,34 @@
     "Swiss-final-problems.json": {
       "stored_statements_reviewed": 196,
       "source_fidelity_review_complete": false
+    },
+    "Swiss-selection-problems.json": {
+      "stored_statements_reviewed": 252,
+      "source_fidelity_review_complete": false
+    },
+    "Germany-bwm-problems.json": {
+      "stored_statements_reviewed": 108,
+      "source_fidelity_review_complete": false
+    },
+    "Germany-mo-problems.json": {
+      "stored_statements_reviewed": 383,
+      "source_fidelity_review_complete": false
+    },
+    "HongKong-chkmo-problems.json": {
+      "stored_statements_reviewed": 100,
+      "source_fidelity_review_complete": false
+    },
+    "HongKong-tst-problems.json": {
+      "stored_statements_reviewed": 313,
+      "source_fidelity_review_complete": false
+    },
+    "Romania-nmo-problems.json": {
+      "stored_statements_reviewed": 40,
+      "source_fidelity_review_complete": false
+    },
+    "Romania-tst-problems.json": {
+      "stored_statements_reviewed": 40,
+      "source_fidelity_review_complete": false
     }
   },
   "completed_batches": {
@@ -42,14 +70,15 @@
     "Greece_TST": 72,
     "BMO1": 132,
     "BMO2": 88,
-    "thematic_batch_1000_1": 1000
+    "thematic_batch_1000_1": 1000,
+    "thematic_batch_1000_2": 1000
   },
   "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
-    "Swiss-selection-problems.json": {
-      "stored_statements_reviewed": 229,
-      "stored_statements_total": 252,
+    "Lithuania-lmmo-problems.json": {
+      "stored_statements_reviewed": 70,
+      "stored_statements_total": 92,
       "source_fidelity_review_complete": false
     }
   }

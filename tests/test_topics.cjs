@@ -62,3 +62,9 @@ assert.equal(Object.keys(thousand.reviews).length,1000);
 assert.equal(thousand.new_distinct_reviews,1000);
 for(const prefix of ['ukt.','nl.','nlt.','ch.']) for(const uid of sourceRecords.keys()) if(uid.startsWith(prefix)) assert.ok(metadata.records[uid],uid);
 for(const [uid,expected] of [['ukt.2011.1.2',['Combinatorics']],['ch.2012.2.8',['Combinatorics']],['nl.2010.0.3',['Geometry','Number Theory']],['nlt.2018.1.2',['Geometry']]]) assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
+
+const secondThousand=JSON.parse(fs.readFileSync('docs/topic-audit-batch1000-2-2026-10-02.json'));
+assert.equal(Object.keys(secondThousand.reviews).length,1000);
+assert.equal(secondThousand.new_distinct_reviews,1000);
+for(const prefix of ['cht.','de.','dem.','hk.','hkt.','ro.','rot.']) for(const uid of sourceRecords.keys()) if(uid.startsWith(prefix)) assert.ok(metadata.records[uid],uid);
+for(const [uid,expected] of [['de.2002.0.3',['Combinatorics']],['dem.1993.0.3',['Combinatorics']],['hk.2003.0.2',['Combinatorics']],['hkt.2014.4.16',['Combinatorics']],['dem.1998.2.6',['Algebra','Combinatorics','Geometry']],['dem.1978.0.1',['Analysis']],['dem.2024.1.2',['Geometry','Number Theory']]]) assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
