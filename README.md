@@ -14,7 +14,7 @@ China is temporarily excluded from search and problem sets because its archive c
 
 Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
 
-Passing validation confirms structural checks, not mathematical correctness or verification against an official source. Source research is in `.dev/sources.json`; per-problem source verification remains future work.
+Passing validation confirms structural checks, not mathematical correctness or verification against an official source. Source research is in `.dev/sources.json`; per-problem source verification progress is tracked in `docs/verification-progress.md`.
 
 ## Schema
 
@@ -48,12 +48,14 @@ Serve the repository using `python -m http.server`. The committed application lo
 
 `metadata/collections.json` records source research links separately from problem statements. Every collection has an explicit verification state. The initial links were carried over from `.dev/sources.json` through a manually selected competition-to-file mapping; they have not been certified as the source of an individual statement. The UI labels them as research links and does not claim source verification. Collections without recorded links say so explicitly.
 
-Known missing Argentina problem numbers are shown in problem cards and on printed sets when source notes are enabled. Metadata failures leave statements available with a warning. Future source verification must record the exact paper, page and reviewer before changing the verification status; the current UI intentionally makes no verified claims.
+Known missing Argentina problem numbers are shown in problem cards and on printed sets when source notes are enabled. Metadata failures leave statements available with a warning. Source verification records the exact paper, page, review method and reviewed text before displaying a checked claim.
 
 ## Statement comparison: first batch
 
-22 USA TST statements (2012: 8, 2013: 8, 2014: 6) were visually and textually compared with the published exam PDFs in Evan Chen's archive on 2026-10-02. These are source-copy fidelity checks performed with AI assistance, not a human certification or an independent review of solutions. No material statement discrepancies were found in this batch.
+165 statements were visually and textually compared with published exam PDFs on 2026-10-02: all 85 stored USA TST statements (2012–2026, no stored 2022 cycle), 40 Australia AMO statements (2016–2020), and 40 New Zealand NZMO Round Two statements (2019–2026). USA sources are Evan Chen's archive and the public USA TST archive; Australia and New Zealand sources are the organizers' PDFs. These are source-copy fidelity checks performed with AI assistance, not a human certification or an independent review of solutions. No material statement discrepancies were found in this batch.
 
-Individual `statement_checks` records include the exact reviewed statement, its SHA-256, source PDF checksum, URL, page, original problem number, review method and date. The UI displays the checked status only when the current statement exactly matches the reviewed snapshot; CI rejects stale checks. A collection-wide unverified status does not override these granular checks or certify its remaining years.
+Individual `statement_checks` records include the exact reviewed statement, its SHA-256, source PDF checksum, URL, page, original problem number, review method and date. The UI displays the checked status only when the current statement exactly matches the reviewed snapshot; CI rejects stale text and changed reviewed figures using SHA-256 checksums. A collection-wide unverified status does not override these granular checks or certify its remaining years.
 
 The year denotes the selection cycle, which can begin in December of the previous year. The 2012 source PDF has an inconsistent IMO-edition header; its exam dates are recorded in the review notes without changing the bank's year labels.
+
+Generate the full 64-collection inventory with `python scripts/verification_progress.py`. The inventory counts stored records and explicitly separates checked and pending records, including the quarantined China data.

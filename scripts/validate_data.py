@@ -82,6 +82,17 @@ def validate_statement_checks(entry, data, country_key):
             errors.append(f'{uid}: checked statement changed or missing'); continue
         if hashlib.sha256(text.encode()).hexdigest() != check.get('statement_sha256'):
             errors.append(f'{uid}: statement checksum mismatch')
+        image_paths = set(re.findall(r'images/[A-Za-z0-9_.-]+', text))
+        figure_checks = check.get('figure_checks', [])
+        if image_paths != {f.get('path') for f in figure_checks}:
+            errors.append(f'{uid}: missing or unexpected reviewed figure')
+        for figure in figure_checks:
+            path = figure.get('path', '')
+            if not re.fullmatch(r'images/[A-Za-z0-9_.-]+', path):
+                errors.append(f'{uid}: invalid reviewed figure path'); continue
+            image = ROOT / path
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != figure.get('sha256'):
+                errors.append(f'{uid}: reviewed figure changed or missing')
         if (check.get('status') != 'statement_checked_against_source'
                 or not re.fullmatch(r'https?://[^\s{}<>]+', check.get('source_url', ''))
                 or type(check.get('source_page')) is not int or check['source_page'] < 1
