@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 5883,
-  "not_statement_reviewed": 3575,
+  "distinct_statement_reviewed": 6883,
+  "not_statement_reviewed": 2575,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": false,
   "complete_collection_reviews": {
@@ -181,6 +181,34 @@
     "Italy-itamo-problems.json": {
       "stored_statements_reviewed": 180,
       "source_fidelity_review_complete": false
+    },
+    "Azerbaijan-tst-problems.json": {
+      "stored_statements_reviewed": 79,
+      "source_fidelity_review_complete": false
+    },
+    "Singapore-mo-open-problems.json": {
+      "stored_statements_reviewed": 135,
+      "source_fidelity_review_complete": false
+    },
+    "India-inmo-problems.json": {
+      "stored_statements_reviewed": 235,
+      "source_fidelity_review_complete": false
+    },
+    "Korea-kmo-problems.json": {
+      "stored_statements_reviewed": 132,
+      "source_fidelity_review_complete": false
+    },
+    "Korea-fkmo-problems.json": {
+      "stored_statements_reviewed": 108,
+      "source_fidelity_review_complete": false
+    },
+    "Indonesia-osn-problems.json": {
+      "stored_statements_reviewed": 191,
+      "source_fidelity_review_complete": false
+    },
+    "Japan-jmo-problems.json": {
+      "stored_statements_reviewed": 180,
+      "source_fidelity_review_complete": false
     }
   },
   "completed_batches": {
@@ -194,14 +222,15 @@
     "thematic_batch_1000_2": 1000,
     "thematic_batch_1000_3": 1000,
     "thematic_batch_1000_4": 1000,
-    "thematic_batch_1000_5": 1000
+    "thematic_batch_1000_5": 1000,
+    "thematic_batch_1000_6": 1000
   },
   "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
-    "Azerbaijan-tst-problems.json": {
-      "stored_statements_reviewed": 28,
-      "stored_statements_total": 79,
+    "Philippines-pmo-problems.json": {
+      "stored_statements_reviewed": 14,
+      "stored_statements_total": 90,
       "source_fidelity_review_complete": false
     }
   }
