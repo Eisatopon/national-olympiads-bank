@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 9700,
-  "distinct_statement_reviewed": 9700,
+  "active_records": 9746,
+  "distinct_statement_reviewed": 9746,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -261,6 +261,10 @@
     "Uruguay-final-v-problems.json": {
       "stored_statements_reviewed": 28,
       "source_fidelity_review_complete": true
+    },
+    "Chile-tst-problems.json": {
+      "stored_statements_reviewed": 46,
+      "source_fidelity_review_complete": true
     }
   },
   "completed_batches": {
@@ -283,9 +287,10 @@
     "belgium_omb_maxi_import": 20,
     "italy_preimo_tst_import": 60,
     "thailand_tmo_supplied_import": 20,
-    "uruguay_senior_final_import": 28
+    "uruguay_senior_final_import": 28,
+    "chile_senior_selection_import": 46
   },
-  "note": "All 9,700 active records have thematic review metadata. Uruguay adds 28 source-compared senior final English translations for 2011–2017, with an explicit domain correction in 2016 Problem 3. China remains quarantined. Reviews do not certify solutions.",
+  "note": "All 9,746 active records have thematic review metadata. Chile adds 46 source-compared senior selection statements from 12 official papers, including 2026. Domain omissions and clarifications are explicit. China remains quarantined. Reviews do not certify solutions.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
