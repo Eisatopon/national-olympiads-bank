@@ -173,3 +173,11 @@ Added 44 complete statements for 2014–2016, 2018 and 2020–2023, including se
 ### Chile earlier finals and source-label corroboration
 
 Added 111 complete statements for 1990, 1992, 1994, 1996–1997, 2000–2003, 2006–2012, 2019 and 2024, with 10 original diagrams and 18 statement-only PDFs. Chile Final now has 155 records in 26 years. Matching AoPS collections corroborate the 2019 year and 2024 senior-final classification; the official source condition k > 2 is retained. Printed source defects are visible notes. Missing original figures or missing statements prevent faithful completion of 1989, 1991, 1995 and 1999; 1993/2013 remain under review. Active total: 10,553; no claim that all bank gaps are closed.
+
+### Italian PreIMO earlier selection tests
+
+Added all 49 TST statements for 2002–2008 and 2022, including original 2004 cube diagrams, complete statements continued onto later pages, and eight statement-only source PDFs. The 2022 official paper has seven statements (four on day 1, three on day 2); none is discarded to force a six-problem format. Italy PreIMO now contains 109 records across 18 years. Other years are still under source research. Active total: 10,602.
+
+### Belgian OMB older senior finals
+
+Added all eight MAXI final statements for 2007/2008 from public official attachments. Original statement diagram and two statement-only PDFs included; 2007 solutions and junior categories physically excluded. Belgium now has 28 records in seven years. The central historical final archive requires sign-in; missing years remain explicitly open.
