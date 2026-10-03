@@ -1,6 +1,10 @@
 # Source verification progress
 
-Inventory: 9800 records; 165 source-checked; 9635 remaining.
+Inventory: 9800 stored records; 265 source-checked; 9535 remaining (including quarantine).
+
+Active bank: 9458 records; 265 source-checked; 9193 remaining. Whole-bank source verification is **not complete**.
+
+Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
 Counts describe stored records, not certified unique mathematical problems. China includes damaged records and remains quarantined. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.
 
@@ -12,7 +16,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Azerbaijan-tst-problems.json | 79 | 0 | 79 | pending |
 | Brazil-obm-problems.json | 273 | 0 | 273 | pending |
 | Bulgaria-nmo-problems.json | 30 | 0 | 30 | pending |
-| Canada-cmo-problems.json | 323 | 0 | 323 | pending |
+| Canada-cmo-problems.json | 323 | 100 | 223 | pending |
 | China-olympiad-problems.json | 342 | 0 | 342 | quarantined |
 | Croatia-drz-problems.json | 60 | 0 | 60 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
@@ -71,12 +75,12 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Usa-usamo-problems.json | 306 | 0 | 306 | pending |
 | Vietnam-vmo-problems.json | 368 | 0 | 368 | pending |
 
-## Review order
+## Evidence and outstanding work
 
-1. Complete USA TST: done for all 85 stored statements.
-2. Australia AMO: done for all 40 stored statements, including the 2020 problem 7 figure.
-3. New Zealand NZMO Round Two: done for all 40 stored statements. Canada CMO remains pending.
-4. European finals and TSTs, then remaining Asian and American collections.
-5. Repair the quarantined China archive only from reliable original papers; missing papers remain explicitly pending.
+USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recorded source checks for every stored statement. Canada has 100 recorded checks: 1969, 1970 and 2011–2026. Its other 223 stored statements remain pending.
 
-Research links are leads, not evidence that the corresponding statements have already been checked. For every review, retain source URL, page, original problem number, PDF checksum, exact reviewed text, statement checksum and review date. Do not add checks from automated extraction alone.
+The Canadian review found a missing nonzero-denominator condition in the original CMO 1969 problem 1, recorded as a separate editorial note. The CMO 2019 problem 3 figure has been replaced with a faithful crop of the official paper, including all six original counter positions.
+
+Independent reasoning for CMO 1969 is recorded in mathematical-checks-2026-10-03.json: nine claims checked and one source domain gap. This is not mathematical certification of the other problems.
+
+Research links and retrieved PDFs are leads, not evidence that their statements or solutions have already been checked. For every source review, retain source URL, page, original problem number, PDF checksum, exact reviewed text, statement checksum and review date. Do not add checks from automated extraction alone.

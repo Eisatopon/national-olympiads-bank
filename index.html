@@ -1066,6 +1066,8 @@ function provenanceHtml(p, print = false) {
     const meta = collectionMetadata[CBY[p.country].file];
     const gaps = meta?.missing_problem_numbers?.[String(p.year)];
     const candidate = meta?.statement_checks?.[p.uid];
+    const editorial = meta?.statement_notes?.[p.uid];
+    const editorialText = editorial && editorial.reviewed_statement === p.text ? editorial.text : '';
     const source = candidate && safeSourceUrl(candidate.source_url);
     // A changed statement must lose its checked badge immediately, even before CI.
     const checked = candidate?.status === 'statement_checked_against_source'
@@ -1079,11 +1081,11 @@ function provenanceHtml(p, print = false) {
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
     }).filter(Boolean);
     if (print) {
-        const text = [checked ? status + '.' : '', note ? esc(note) : '', checked ? `Source: ${esc(source)}, page ${candidate.source_page}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
+        const text = [checked ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', checked ? `Source: ${esc(source)}, page ${candidate.source_page}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
         return text ? `<p class="ps-src">${text}</p>` : '';
     }
-    if (!checked && !note && !links.length) return '';
-    return `<details class="provenance"><summary>${status}${note ? ' · Incomplete year' : ''}</summary>
+    if (!checked && !note && !editorialText && !links.length) return '';
+    return `${editorialText ? `<p class="ps-src">${esc(editorialText)}</p>` : ''}<details class="provenance"><summary>${status}${note ? ' · Incomplete year' : ''}</summary>
         ${note ? `<p>${esc(note)}</p>` : ''}${checkDetail}
         ${meta?.verification_notes ? `<p>${esc(meta.verification_notes)}</p>` : ''}
         ${links.length ? `<ul>${links.map(link => `<li>${link}</li>`).join('')}</ul>` : '<p>No archive research link has been recorded for this collection yet.</p>'}
