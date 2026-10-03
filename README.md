@@ -169,3 +169,7 @@ The retrieved Thai archive is now fully indexed: 294 TMO, 360 TST, 12 TSTST prob
 ### Chile senior final — verified source batch
 
 Added 44 complete statements for 2014–2016, 2018 and 2020–2023, including seven original statement figures. Downloads contain only senior statements; all printed solutions and the 2022 complementary training problem are excluded. The unspecified tangent choices in 2018 Problem 6 are explicitly flagged. The mislabeled 2024 national-round file and inconsistent 2019 header have not been silently imported as finals. Earlier Chile years remain under review. Active total: 10,442 across 73 collections and 54 countries.
+
+### Chile earlier finals and source-label corroboration
+
+Added 111 complete statements for 1990, 1992, 1994, 1996–1997, 2000–2003, 2006–2012, 2019 and 2024, with 10 original diagrams and 18 statement-only PDFs. Chile Final now has 155 records in 26 years. Matching AoPS collections corroborate the 2019 year and 2024 senior-final classification; the official source condition k > 2 is retained. Printed source defects are visible notes. Missing original figures or missing statements prevent faithful completion of 1989, 1991, 1995 and 1999; 1993/2013 remain under review. Active total: 10,553; no claim that all bank gaps are closed.
