@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 9458,
-  "distinct_statement_reviewed": 9458,
+  "active_records": 9592,
+  "distinct_statement_reviewed": 9592,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -241,6 +241,14 @@
     "Turkey-tmo-problems.json": {
       "stored_statements_reviewed": 126,
       "source_fidelity_review_complete": false
+    },
+    "Sweden-smt-problems.json": {
+      "stored_statements_reviewed": 114,
+      "source_fidelity_review_complete": true
+    },
+    "Belgium-omb-maxi-problems.json": {
+      "stored_statements_reviewed": 20,
+      "source_fidelity_review_complete": true
     }
   },
   "completed_batches": {
@@ -258,9 +266,11 @@
     "thematic_batch_1000_6": 1000,
     "thematic_batch_1000_7": 1000,
     "thematic_batch_1000_8": 1000,
-    "thematic_final_575": 575
+    "thematic_final_575": 575,
+    "sweden_smt_import": 114,
+    "belgium_omb_maxi_import": 20
   },
-  "note": "All 9,458 active records now have thematic review metadata. China remains quarantined and excluded from active records; thematic completion does not imply source-fidelity or solution verification.",
+  "note": "All 9,592 active records have thematic review metadata. Sweden and Belgium add 134 source-compared English translations. China remains quarantined. Thematic review and source fidelity do not imply solution verification.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
