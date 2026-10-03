@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 7883,
-  "not_statement_reviewed": 1575,
+  "distinct_statement_reviewed": 8883,
+  "not_statement_reviewed": 575,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": false,
   "complete_collection_reviews": {
@@ -225,6 +225,22 @@
     "Brazil-obm-problems.json": {
       "stored_statements_reviewed": 273,
       "source_fidelity_review_complete": false
+    },
+    "Mexico-omm-problems.json": {
+      "stored_statements_reviewed": 238,
+      "source_fidelity_review_complete": false
+    },
+    "Argentina-level3-problems.json": {
+      "stored_statements_reviewed": 187,
+      "source_fidelity_review_complete": false
+    },
+    "Vietnam-vmo-problems.json": {
+      "stored_statements_reviewed": 368,
+      "source_fidelity_review_complete": false
+    },
+    "Turkey-tmo-problems.json": {
+      "stored_statements_reviewed": 126,
+      "source_fidelity_review_complete": false
     }
   },
   "completed_batches": {
@@ -240,14 +256,15 @@
     "thematic_batch_1000_4": 1000,
     "thematic_batch_1000_5": 1000,
     "thematic_batch_1000_6": 1000,
-    "thematic_batch_1000_7": 1000
+    "thematic_batch_1000_7": 1000,
+    "thematic_batch_1000_8": 1000
   },
   "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
-    "Mexico-omm-problems.json": {
-      "stored_statements_reviewed": 42,
-      "stored_statements_total": 238,
+    "Russia-aro-problems.json": {
+      "stored_statements_reviewed": 189,
+      "stored_statements_total": 264,
       "source_fidelity_review_complete": false
     }
   }
