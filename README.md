@@ -165,3 +165,7 @@ The next Thai TST pass adds all 71 recorded problems from the 2016–2017 papers
 Added 100 complete TST statements: 2018 (28), 2019 (27), 2020 (24), 2021 (21). A separate TSTST row adds all 12 problems from four 2021 papers. Every source statement page and formula was visually compared. Continuous annual numbering; day denotes paper index. Source Day 0–6 in TST 2021 maps to bank day 1–7; the original PDF labels remain available. TST 2020 combines four two-day tests, indexed as papers 1–8 with original within-test problem numbers in provenance.
 
 The retrieved Thai archive is now fully indexed: 294 TMO, 360 TST, 12 TSTST problems. Printed source omissions and ambiguities are retained and explicitly flagged, rather than silently repaired. No solutions or hints. Active total: 10,398 across 72 collections and 54 countries. This does not close newer or older Thai years, unresolved source issues, or other-country gaps.
+
+### Chile senior final — verified source batch
+
+Added 44 complete statements for 2014–2016, 2018 and 2020–2023, including seven original statement figures. Downloads contain only senior statements; all printed solutions and the 2022 complementary training problem are excluded. The unspecified tangent choices in 2018 Problem 6 are explicitly flagged. The mislabeled 2024 national-round file and inconsistent 2019 header have not been silently imported as finals. Earlier Chile years remain under review. Active total: 10,442 across 73 collections and 54 countries.
