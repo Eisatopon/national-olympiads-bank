@@ -76,6 +76,14 @@ def validate_statement_checks(entry, data, country_key):
     records = {f"{country_key}.{b['year']}.{p.get('day', 0)}.{p['number']}": p['problem']
                for b in data['years'] for p in b['problems']}
     errors = []
+    for uid, note in entry.get('statement_notes', {}).items():
+        text = records.get(uid)
+        if (text is None or text != note.get('reviewed_statement')
+                or hashlib.sha256(text.encode()).hexdigest() != note.get('statement_sha256')
+                or note.get('kind') != 'source_domain_gap'
+                or not isinstance(note.get('text'), str) or not note['text'].strip()
+                or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', note.get('checked_at', ''))):
+            errors.append(f'{uid}: stale or incomplete editorial note')
     for uid, check in entry.get('statement_checks', {}).items():
         text = records.get(uid)
         if text is None or text != check.get('reviewed_statement'):

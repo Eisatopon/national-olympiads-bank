@@ -18,6 +18,7 @@ jobs:
       - run: node tests/test_loader.cjs
       - run: node tests/test_collections.cjs
       - run: node tests/test_relations.cjs
+      - run: node tests/test_provenance.cjs
       - run: python scripts/validate_dna.py
       - run: node tests/test_topics.cjs
       - run: python scripts/validate_topics.py

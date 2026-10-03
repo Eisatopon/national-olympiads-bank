@@ -20,6 +20,16 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(any('control character' in e for e in validate(self.data([{'number': 1, 'problem': 'Find\x00 x.'}]), 'Example.json')))
 
 class SourceCheckTests(unittest.TestCase):
+    def test_editorial_note_is_bound_to_current_statement(self):
+        text = 'Find $x$.'
+        note = {'reviewed_statement':text, 'statement_sha256':hashlib.sha256(text.encode()).hexdigest(),
+                'kind':'source_domain_gap', 'text':'Assume the denominator is nonzero.', 'checked_at':'2026-10-03'}
+        entry = {'statement_notes':{'test.2025.0.1':note}}
+        data = {'years':[{'year':2025,'problems':[{'number':1,'problem':text}]}]}
+        self.assertEqual(validate_statement_checks(entry,data,'test'), [])
+        data['years'][0]['problems'][0]['problem']='Find $y$.'
+        self.assertTrue(any('editorial note' in e for e in validate_statement_checks(entry,data,'test')))
+
     def test_stale_statement_check_is_rejected(self):
         text = 'Find $x$.'
         check = {'status':'statement_checked_against_source','reviewed_statement':text,

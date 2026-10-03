@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "scope": "Only the ten explicitly listed CMO 1969 claims. No whole-bank mathematical certification; no stored solutions exist in the canonical bank.",
+  "records": {
+    "ca.1969.0.1": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Show that if $\\dfrac{a_1}{b_1} = \\dfrac{a_2}{b_2} = \\dfrac{a_3}{b_3}$ and $p_1, p_2, p_3$ are not all zero, then $$\\left(\\frac{a_1}{b_1}\\right)^n = \\frac{p_1a_1^n + p_2a_2^n + p_3a_3^n}{p_1b_1^n + p_2b_2^n + p_3b_3^n}$$ for every positive integer $n$.",
+      "statement_sha256": "6cfa2203eff5a9dd96009386b7aa8bae8e15ae0b7d8f2cc15c64b5e6720292c7",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "domain_gap_found",
+      "reasoning": "Editorial clarification: assume every displayed denominator is nonzero. The historical source omits this condition. For example, a1 = a2 = a3 = b1 = b2 = b3 = 1 and (p1, p2, p3) = (1, -1, 0) satisfy its stated assumptions but give 0/0 on the right. With the nonzero-denominator condition, the identity follows by substituting ai = r bi."
+    },
+    "ca.1969.0.2": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Determine which of the two numbers $\\sqrt{c+1} - \\sqrt{c}$, $\\sqrt{c} - \\sqrt{c-1}$ is greater for any $c \\ge 1$.",
+      "statement_sha256": "da44ac81b558c40dce0f8e26fcad7f1540d15ce08f14887c1af4e36d1b23fbdf",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Rationalize both differences. Their denominators are sqrt(c+1)+sqrt(c) and sqrt(c)+sqrt(c-1). For c>=1 the first denominator is strictly larger, so the second difference is strictly greater."
+    },
+    "ca.1969.0.3": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Let $c$ be the length of the hypotenuse of a right angle triangle whose other two sides have lengths $a$ and $b$. Prove that $a + b \\le \\sqrt{2}\\,c$. When does the equality hold?",
+      "statement_sha256": "e88445dd1f883aa097610f879addbf84d21dc2bcba64cb1ffe90f24b90c60505",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Since c^2=a^2+b^2, (a+b)^2<=2(a^2+b^2)=2c^2 follows from (a-b)^2>=0. Equality holds exactly when a=b."
+    },
+    "ca.1969.0.4": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Let $ABC$ be an equilateral triangle, and $P$ be an arbitrary point within the triangle. Perpendiculars $PD$, $PE$, $PF$ are drawn to the three sides of the triangle. Show that, no matter where $P$ is chosen, $$\\frac{PD + PE + PF}{AB + BC + CA} = \\frac{1}{2\\sqrt{3}}.$$",
+      "statement_sha256": "8ac9fab115e22dbee71a88999eb9657781cec9834e76220a0ff42a424d8a1be5",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Partition the equilateral triangle into the three triangles with vertex P and bases its sides. If the side length is s, (s/2)(PD+PE+PF)=sqrt(3)s^2/4. Divide by 3s to obtain 1/(2sqrt(3))."
+    },
+    "ca.1969.0.5": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Let $ABC$ be a triangle with sides of lengths $a$, $b$ and $c$. Let the bisector of the angle $C$ cut $AB$ in $D$. Prove that the length of $CD$ is $$\\frac{2ab\\cos\\frac{C}{2}}{a+b}.$$",
+      "statement_sha256": "03a276f082b099ccd532e0bda745c7186f030bdb5bdbb861584827138889a1b7",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Let x=CD and theta=C/2. The areas of ACD and BCD sum to (1/2)ab sin C. They also sum to (1/2)(a+b)x sin theta. Therefore x=2ab cos theta/(a+b)."
+    },
+    "ca.1969.0.6": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Find the sum of $1\\cdot 1! + 2\\cdot 2! + 3\\cdot 3! + \\cdots + (n-1)(n-1)! + n\\cdot n!$, where $n! = n(n-1)(n-2)\\cdots 2\\cdot 1$.",
+      "statement_sha256": "5a5df15fc4fbc3c208f1153555dcb1372be9d91cda122fce6f511ba71167a12b",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "For every k>=1, k k!=(k+1)!-k!. Summing from 1 to n telescopes to (n+1)!-1."
+    },
+    "ca.1969.0.7": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Show that there are no integers $a$, $b$, $c$ for which $a^2 + b^2 - 8c = 6$.",
+      "statement_sha256": "432b0f6dfefe44f05c8febc7c3a372dce42f579892241876afc276e4f9dbf2e4",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Squares modulo 8 lie in {0,1,4}. The sum of two such residues lies in {0,1,2,4,5}, never 6. Thus a^2+b^2-8c cannot equal 6."
+    },
+    "ca.1969.0.8": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Let $f$ be a function with the following properties: (1) $f(n)$ is defined for every positive integer $n$; (2) $f(n)$ is an integer; (3) $f(2) = 2$; (4) $f(mn) = f(m)f(n)$ for all $m$ and $n$; (5) $f(m) > f(n)$ whenever $m > n$. Prove that $f(n) = n$.",
+      "statement_sha256": "2a0ca14f6d5585b0125fb85289755798cf74c885daa8118cf27b8dbe662be8fd",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Multiplicativity and f(2)=2 imply f(1)=1; monotonicity gives f(n)>=1. For each r>=1 choose k with 2^k<=n^r<2^(k+1). Applying monotonicity and multiplicativity gives 2^k<=f(n)^r<2^(k+1). Hence |log f(n)-log n|<log(2)/r. Let r tend to infinity to obtain f(n)=n."
+    },
+    "ca.1969.0.9": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Show that for any quadrilateral inscribed in a circle of radius 1, the length of the shortest side is less than or equal to $\\sqrt{2}$.",
+      "statement_sha256": "93272f7c6255069a87b618a4e2e9ca9eb204976f51011ba401b2c8d79fd601c4",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "In cyclic order the four arcs between consecutive vertices sum to 2pi, so one arc is at most pi/2. Its chord is at most 2 sin(pi/4)=sqrt(2). The shortest side is no longer than that chord."
+    },
+    "ca.1969.0.10": {
+      "checked_at": "2026-10-03",
+      "reviewed_statement": "Let $ABC$ be the right-angled isosceles triangle whose equal sides $CA$ and $CB$ have length 1. $P$ is a point on the hypotenuse $AB$, and the feet of the perpendiculars from $P$ to the other sides are $Q$ (on $CA$) and $R$ (on $CB$). Consider the areas of the triangles $APQ$ and $PBR$, and the area of the rectangle $QCRP$. Prove that regardless of how $P$ is chosen, the largest of these three areas is at least $\\frac{2}{9}$.",
+      "statement_sha256": "aa96b041ce61ba4fbe36ad86ea12be802f4ca724b3a8b9f1e651c7dda4cb2c66",
+      "source_url": "https://cms.math.ca/wp-content/uploads/2019/07/exam1969.pdf",
+      "source_document_sha256": "622e98c18caa081bfebce28452a191c3231ce0764e66f48219b65f249f32d27f",
+      "review_method": "AI-assisted independent reasoning; not formal proof verification",
+      "status": "claim_checked_by_reasoning",
+      "reasoning": "Put C=(0,0), A=(1,0), B=(0,1), and P=(t,1-t), 0<=t<=1. The three areas are (1-t)^2/2, t^2/2, and t(1-t). For t<=1/3 the first is at least 2/9; for t>=2/3 the second is at least 2/9; between them the third is at least 2/9."
+    }
+  }
+}
