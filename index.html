@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 52 Countries, 1962–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Italy, Japan, Kazakhstan, Latvia, Lithuania, Mexico, the Netherlands, New Zealand, North Macedonia, Norway, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Sweden, Switzerland, Thailand, Turkey, Ukraine, the USA and Vietnam. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 53 Countries, 1962–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Italy, Japan, Kazakhstan, Latvia, Lithuania, Mexico, the Netherlands, New Zealand, North Macedonia, Norway, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Korea, Spain, Sweden, Switzerland, Thailand, Turkey, Ukraine, Uruguay, the USA and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -110,6 +110,7 @@
     --kz: #00a3c4; --kz-ink: #006a80; --kz-tint: #dcf4f9;
     --ee: #4891d9; --ee-ink: #2b5e94; --ee-tint: #e6f0fb;
     --huo: #a0522d; --huo-ink: #6b3519; --huo-tint: #f6e9e1;
+    --uy: #247d86; --uy-ink: #135860; --uy-tint: #e1f2f3;
     --th: #75449a; --th-ink: #502573; --th-tint: #f1e9f7;
     --itt: #697a21; --itt-ink: #445313; --itt-tint: #eef2de;
     --se: #247ba0; --se-ink: #135570; --se-tint: #e1f1f8;
@@ -179,6 +180,7 @@
 .f-kz { --f: var(--kz); --f-ink: var(--kz-ink); --f-tint: var(--kz-tint); }
 .f-ee { --f: var(--ee); --f-ink: var(--ee-ink); --f-tint: var(--ee-tint); }
 .f-huo { --f: var(--huo); --f-ink: var(--huo-ink); --f-tint: var(--huo-tint); }
+.f-uy { --f: var(--uy); --f-ink: var(--uy-ink); --f-tint: var(--uy-tint); }
 .f-th { --f: var(--th); --f-ink: var(--th-ink); --f-tint: var(--th-tint); }
 .f-itt { --f: var(--itt); --f-ink: var(--itt-ink); --f-tint: var(--itt-tint); }
 .f-se { --f: var(--se); --f-ink: var(--se-ink); --f-tint: var(--se-tint); }
@@ -455,7 +457,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>52</b><span>countries</span></div>
+            <div class="stat"><b>53</b><span>countries</span></div>
             <div class="stat"><b>1962–2026</b><span>years</span></div>
         </div>
     </div>
@@ -637,6 +639,7 @@ REGION_OF.se = 'europe';
 REGION_OF.be = 'europe';
 REGION_OF.itt = 'europe';
 REGION_OF.th = 'asia';
+REGION_OF.uy = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -708,6 +711,7 @@ const COUNTRIES = [
     { key: 'be', name: 'Belgium OMB MAXI', flag: '🇧🇪', file: 'Belgium-omb-maxi-problems.json', kind: 'years' },
     { key: 'itt', name: 'Italy PreIMO TST', flag: '🇮🇹', file: 'Italy-preimo-tst-problems.json', kind: 'years' },
     { key: 'th', name: 'Thailand TMO', flag: '🇹🇭', file: 'Thailand-tmo-problems.json', kind: 'years' },
+    { key: 'uy', name: 'Uruguay Final V', flag: '🇺🇾', file: 'Uruguay-final-v-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -1091,9 +1095,11 @@ function provenanceHtml(p, print = false) {
     const checked = candidate?.status === 'statement_checked_against_source'
         && candidate.reviewed_statement === p.text && source
         && Number.isInteger(candidate.source_page) && candidate.source_page > 0;
+    const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
+    const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
     const status = checked ? 'Statement checked against source (AI-assisted)' : 'Sources and notes';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
-    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source</a>, page ${candidate.source_page}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.</p>` : '';
+    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source</a>, page ${candidate.source_page}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
     const links = (meta?.source_links || []).map(link => {
         const url = safeSourceUrl(link.url);
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
