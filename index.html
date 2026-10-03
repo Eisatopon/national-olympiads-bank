@@ -1299,9 +1299,9 @@ function renderResults() {
             }
             html += problemHtml(p);
         });
-        if (items.length > shown.length) {
-            html += `<div class="more"><button type="button" class="btn" data-more>Show ${Math.min(PAGE, items.length - shown.length)} more</button></div>`;
-        }
+    }
+    if (items.length > shown.length) {
+        html += `<div class="more"><button type="button" class="btn" data-more>Show ${Math.min(PAGE, items.length - shown.length)} more</button></div>`;
     }
 
     box().innerHTML = html;
@@ -1591,7 +1591,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     try {
-        const response = await fetch('./metadata/collections.json?v=20261003-gapfill2');
+        const response = await fetch('./metadata/collections.json?v=20261003-gapfill3');
         if (!response.ok) throw new Error('Metadata unavailable');
         const data = await response.json();
         if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
@@ -1605,7 +1605,7 @@ async function init() {
         problemDna = dna;
     } catch (e) { /* Concept-based connections remain available. */ }
     try {
-        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill2');
+        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill3');
         if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
         const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
         if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
