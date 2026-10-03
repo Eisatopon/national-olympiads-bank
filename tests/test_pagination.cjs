@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const html=fs.readFileSync('index.html','utf8');
+const data=JSON.parse(fs.readFileSync('Thailand-tst-problems.json','utf8'));
+const items=data.years.find(y=>y.year===2012).problems.map(p=>({...p,uid:`tht.2012.${p.day}.${p.number}`,country:'tht',year:2012}));
+const box={innerHTML:''};
+const ctx={state:{country:'tht',year:2012},limit:20,PAGE:20,metadataUnavailable:false,failed:new Map(),CBY:{tht:{flag:'Thai',name:'TST'}},syncFilters(){},scoped:()=>items,matchesQuery:()=>true,matchesDay:()=>true,matchesTopic:()=>true,compare:(a,b)=>a.number-b.number,headHtml:()=>'',problemHtml:p=>`<article id="${p.uid}"></article>`,box:()=>box,syncAddButtons(){},typeset(){},say(){},countText:String};
+vm.createContext(ctx);vm.runInContext(html.slice(html.indexOf('function renderResults()'),html.indexOf('async function refresh()')),ctx);
+ctx.renderResults();assert.equal((box.innerHTML.match(/<article/g)||[]).length,20);assert.match(box.innerHTML,/data-more>Show 12 more/);
+ctx.limit+=ctx.PAGE;ctx.renderResults();assert.equal((box.innerHTML.match(/<article/g)||[]).length,32);assert.doesNotMatch(box.innerHTML,/data-more/);assert.match(box.innerHTML,/tht\.2012\.9\.25/);
+console.log('Pagination checks passed: all 32 problems reachable in a single country-year view.');
