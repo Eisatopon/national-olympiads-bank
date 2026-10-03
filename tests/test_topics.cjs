@@ -87,3 +87,10 @@ assert.equal(fifthThousand.new_distinct_reviews,1000);
 assert.equal(fifthThousand.figures_inspected.length,26);
 for(const prefix of ['hrt.','at.','cz.','rs.','rst.','pl.','es.','it.']) for(const uid of sourceRecords.keys()) if(uid.startsWith(prefix)) assert.ok(metadata.records[uid],uid);
 for(const [uid,expected] of [['hrt.2022.1.2',['Combinatorics']],['hrt.2023.1.3',['Geometry']],['cz.2016.2.6',['Combinatorics']],['rs.2026.2.4',['Combinatorics']],['pl.2018.1.2',['Combinatorics','Geometry','Number Theory']],['es.1997.1.3',['Algebra','Geometry']],['es.2006.1.1',['Algebra','Number Theory']],['es.2022.1.1',['Combinatorics','Geometry']],['it.1997.0.1',['Geometry']],['it.2004.0.5',['Analysis']],['az.2015.1.2',['Algebra','Analysis']]]) assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
+
+const sixthThousand=JSON.parse(fs.readFileSync('docs/topic-audit-batch1000-6-2026-10-03.json'));
+assert.equal(Object.keys(sixthThousand.reviews).length,1000);
+assert.equal(sixthThousand.new_distinct_reviews,1000);
+assert.equal(sixthThousand.figures_inspected.length,5);
+for(const prefix of ['az.','sg.','in.','kr.','kf.','id.','jp.']) for(const uid of sourceRecords.keys()) if(uid.startsWith(prefix)) assert.ok(metadata.records[uid],uid);
+for(const [uid,expected] of [['az.2025.2.6',['Geometry']],['sg.1995.0.4',['Number Theory']],['in.1990.0.1',['Algebra']],['in.1991.0.3',['Geometry']],['kr.2018.0.4',['Algebra','Analysis']],['kf.2018.1.3',['Combinatorics']],['id.2013.1.1',['Combinatorics','Geometry']],['jp.2023.0.1',['Combinatorics']],['jp.2026.0.4',['Algebra']],['ph.2009.0.3',['Combinatorics','Geometry']]]) assert.deepEqual(Array.from(ctx.topicFields(sourceRecords.get(uid).problem,null,uid).topics),expected,uid);
