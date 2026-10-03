@@ -129,3 +129,11 @@ Belgium OMB MAXI adds all four senior final questions, with every subpart, for 2
 ### Italy PreIMO TST (2010–2019)
 
 Added 60 English statements from the official Italian archive, six per year. Day 1 contains A1–A3; day 2 contains B1–B3, with continuous annual numbering 1–6. All formulas and subparts were compared with the rendered original TST pages. Each record includes source evidence and thematic review. No training exercises, solutions or hints imported. The active bank now contains 9,652 problems across 67 collections and 51 countries.
+
+### Thailand papers and TMO statements
+
+Added 20 searchable English LaTeX statements from the user-supplied TMO 2021 and 2023 PDFs, five problems per day. All formulas were visually compared with the supplied pages; notably TMO 2021 Problem 3 is $a^a bc+b^b ca+c^c ab$. Source evidence and thematic review accompany every indexed statement. The active bank now contains 9,672 problems across 68 collections and 52 countries.
+
+The [Thailand PDF archive](thailand-pdfs.html), linked from the main bank, contains 33 complete statement documents: TMO 2004–2024, TST 2011–2021, and TSTST 2021. Official Thai originals cover TMO 2020, 2022 and 2024; the other documents are English. The 2021 TST and TSTST documents combine the English statement pages from the original papers. An explicit hint on page 8 of TST 2014 was removed; no statements or definition notes were removed. Original and published document fingerprints are recorded in `docs/thailand-pdf-archive.json`.
+
+PDF documents other than TMO 2021 and 2023 are not individually indexed and are not counted as additional searchable problems. Historical source ambiguities (TMO 2004, TST 2011/2013) and a date typo (TMO 2007) are explicitly marked. This is complete coverage of the retrieved papers, not a claim of all Thai contest history. TMO 2025–2026 and selection papers outside the recorded ranges remain unretrieved; the 2026 event programme contains no exam paper and is excluded. Training camps, practice sets, solutions and hints are excluded.
