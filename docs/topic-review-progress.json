@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 9746,
-  "distinct_statement_reviewed": 9746,
+  "active_records": 10215,
+  "distinct_statement_reviewed": 10215,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -243,7 +243,7 @@
       "source_fidelity_review_complete": false
     },
     "Sweden-smt-problems.json": {
-      "stored_statements_reviewed": 114,
+      "stored_statements_reviewed": 120,
       "source_fidelity_review_complete": true
     },
     "Belgium-omb-maxi-problems.json": {
@@ -255,8 +255,9 @@
       "source_fidelity_review_complete": true
     },
     "Thailand-tmo-problems.json": {
-      "stored_statements_reviewed": 20,
-      "source_fidelity_review_complete": true
+      "stored_statements_reviewed": 294,
+      "source_fidelity_review_complete": false,
+      "note": "Source-incomplete 2004 Day 2 Problem 1 explicitly marked."
     },
     "Uruguay-final-v-problems.json": {
       "stored_statements_reviewed": 28,
@@ -265,6 +266,11 @@
     "Chile-tst-problems.json": {
       "stored_statements_reviewed": 46,
       "source_fidelity_review_complete": true
+    },
+    "Thailand-tst-problems.json": {
+      "stored_statements_reviewed": 189,
+      "source_fidelity_review_complete": false,
+      "note": "Further retrieved years await indexing; source omissions and explicit editorial corrections remain flagged."
     }
   },
   "completed_batches": {
@@ -288,9 +294,12 @@
     "italy_preimo_tst_import": 60,
     "thailand_tmo_supplied_import": 20,
     "uruguay_senior_final_import": 28,
-    "chile_senior_selection_import": 46
+    "chile_senior_selection_import": 46,
+    "thailand_tmo_gap_fill": 274,
+    "sweden_2025_gap_fill": 6,
+    "thailand_tst_gap_fill_2011_2015": 189
   },
-  "note": "All 9,746 active records have thematic review metadata. Chile adds 46 source-compared senior selection statements from 12 official papers, including 2026. Domain omissions and clarifications are explicit. China remains quarantined. Reviews do not certify solutions.",
+  "note": "All 10,215 active records have thematic review metadata. Source checks do not certify mathematical correctness; explicitly flagged source omissions remain.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
