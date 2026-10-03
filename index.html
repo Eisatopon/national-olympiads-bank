@@ -1105,7 +1105,8 @@ function provenanceHtml(p, print = false) {
         && Number.isInteger(candidate.source_page) && candidate.source_page > 0;
     const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
     const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_download_kind === 'statements_only' ? 'Statements PDF (no solutions)' : candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
-    const status = checked ? 'Statement checked against source (AI-assisted)' : 'Sources and notes';
+    const unresolved = checked && /^(?:Source ambiguity|Incomplete source condition|Unresolved source error|Potential source typo|Source omission|Source convention omission)/.test(editorialText);
+    const status = unresolved ? 'Source issue — awaiting verification' : checked ? 'Statement checked against source (AI-assisted)' : 'Sources and notes';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
     const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, page ${candidate.source_page}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
     const links = (meta?.source_links || []).map(link => {
@@ -1590,7 +1591,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     try {
-        const response = await fetch('./metadata/collections.json?v=20261003-gapfill1');
+        const response = await fetch('./metadata/collections.json?v=20261003-gapfill2');
         if (!response.ok) throw new Error('Metadata unavailable');
         const data = await response.json();
         if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
@@ -1604,7 +1605,7 @@ async function init() {
         problemDna = dna;
     } catch (e) { /* Concept-based connections remain available. */ }
     try {
-        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill1');
+        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill2');
         if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
         const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
         if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
