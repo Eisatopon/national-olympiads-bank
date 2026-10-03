@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 9800 stored records; 265 source-checked; 9535 remaining (including quarantine).
+Inventory: 9934 stored records; 399 source-checked; 9535 remaining (including quarantine).
 
-Active bank: 9458 records; 265 source-checked; 9193 remaining. Whole-bank source verification is **not complete**.
+Active bank: 9592 records; 399 source-checked; 9193 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -14,6 +14,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Australia-amo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | Austria-oemo-problems.json | 72 | 0 | 72 | pending |
 | Azerbaijan-tst-problems.json | 79 | 0 | 79 | pending |
+| Belgium-omb-maxi-problems.json | 20 | 20 | 0 | stored_statements_checked |
 | Brazil-obm-problems.json | 273 | 0 | 273 | pending |
 | Bulgaria-nmo-problems.json | 30 | 0 | 30 | pending |
 | Canada-cmo-problems.json | 323 | 100 | 223 | pending |
@@ -63,6 +64,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Singapore-mo-open-problems.json | 135 | 0 | 135 | pending |
 | Slovenia-national-problems.json | 114 | 0 | 114 | pending |
 | Spain-ome-problems.json | 198 | 0 | 198 | pending |
+| Sweden-smt-problems.json | 114 | 114 | 0 | stored_statements_checked |
 | Swiss-final-problems.json | 196 | 0 | 196 | pending |
 | Swiss-selection-problems.json | 252 | 0 | 252 | pending |
 | Turkey-tmo-problems.json | 126 | 0 | 126 | pending |

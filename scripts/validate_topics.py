@@ -36,7 +36,10 @@ def validate_topics(root=ROOT):
         assert record['review_method']=='AI-assisted full-statement thematic review'
     for audit_path in sorted((root/'docs').glob('topic-audit*.json')):
         audit=json.loads(audit_path.read_text())
-        assert audit['active_records']==active_count,f'{audit_path.name}: active bank count changed'
+        # Audit totals describe the bank at the time of that review. New
+        # collections must not rewrite historical counts; reviewed identities
+        # and exact statement hashes below still have to match the current bank.
+        assert len(audit['reviews']) <= audit['active_records'] <= active_count, f'{audit_path.name}: invalid historical bank count'
         assert audit['reviewed_this_audit']==len(audit['reviews'])
         assert audit['not_reviewed_this_audit']+len(audit['reviews'])==audit['active_records']
         for uid,review in audit['reviews'].items():

@@ -117,3 +117,11 @@ The seventh 1,000-statement batch changes 277 topic sets and inspects all 15 ref
 The eighth 1,000-statement batch changes 265 topic sets and inspects all 11 referenced figures. It completes Mexico, Argentina, Vietnam and Turkey thematic coverage, and adds 168 Russia reviews (189 of 264 stored statements reviewed cumulatively). 38 stored-wording or missing-diagram concerns are recorded for original-source follow-up without changing source statements. Exact duplicate statements have no topic-set conflicts with earlier reviews. See `docs/topic-audit-batch1000-8-2026-10-03.json`.
 
 There are now **8,883 distinct statement-reviewed records** out of 9,458 active records; **575 remain outside full-statement thematic review**. All previously Unclassified active statements have explicit reviews in this branch. This does not certify the remaining automatic labels. `docs/topic-review-progress.json` preserves non-additive, distinct coverage. The reviewed corrections were published at the owner's request on 2 and 3 October 2026 after successful validation. The broader thematic review remains incomplete.
+
+## Sweden national finals (3 October 2026)
+
+Sweden SMT adds all six final problems for each calendar year 2006–2024: 114 English translations from 19 official Swedish papers, with three original statement figures. Every statement has individual visual/textual source-comparison evidence and an explicit thematic review. No solutions or hints were imported. Calendar-year labels follow the exam dates rather than the archive's later school-year labels. The bank now has 50 countries and 65 collections, with 9,572 active records. Historical thematic audit counts remain snapshots of the bank at their review dates.
+
+## Belgium senior finals (3 October 2026)
+
+Belgium OMB MAXI adds all four senior final questions, with every subpart, for 2022–2026: 20 English translations from official French papers, with four required statement figures. Every statement has source-comparison evidence and thematic review metadata. Lower categories and all solutions in the 2022–2024 compilation were excluded. With Sweden and Belgium, the bank has 51 countries, 66 collections and 9,592 active records; 399 records have source-comparison evidence.
