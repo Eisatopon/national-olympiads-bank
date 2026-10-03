@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 10286,
-  "distinct_statement_reviewed": 10286,
+  "active_records": 10398,
+  "distinct_statement_reviewed": 10398,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -268,9 +268,13 @@
       "source_fidelity_review_complete": true
     },
     "Thailand-tst-problems.json": {
-      "stored_statements_reviewed": 260,
+      "stored_statements_reviewed": 360,
       "source_fidelity_review_complete": false,
       "note": "Further retrieved years await indexing; source omissions and explicit editorial corrections remain flagged."
+    },
+    "Thailand-tstst-problems.json": {
+      "stored_statements_reviewed": 12,
+      "source_fidelity_review_complete": true
     }
   },
   "completed_batches": {
@@ -298,9 +302,14 @@
     "thailand_tmo_gap_fill": 274,
     "sweden_2025_gap_fill": 6,
     "thailand_tst_gap_fill_2011_2015": 189,
-    "thailand_tst_gap_fill_2016_2017": 71
+    "thailand_tst_gap_fill_2016_2017": 71,
+    "thailand_tst_gap_fill_2018": 28,
+    "thailand_tst_gap_fill_2019": 27,
+    "thailand_tst_gap_fill_2020": 24,
+    "thailand_tst_gap_fill_2021": 21,
+    "thailand_tstst_2021": 12
   },
-  "note": "All 10,286 active records have thematic review metadata. Source checks do not certify mathematical correctness; explicitly flagged source omissions remain.",
+  "note": "All 10,398 active records have thematic review metadata. Source checks do not certify mathematical correctness; explicitly flagged source omissions remain.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
