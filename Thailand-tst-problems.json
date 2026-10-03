@@ -342,7 +342,7 @@
         {
           "day": 9,
           "number": 25,
-          "problem": "Given a positive integer $n$, prove that there are only finitely many monic polynomials of degree $n$ with integer coefficients whose zeros all lie in $\\{z\\in\\mathbb C:|z|\\le1\\}$. Also prove that every zero of each such polynomial has modulus $0$ or $1$."
+          "problem": "Given a positive integer $n$, prove that there are infinitely many monic polynomials of degree $n$ with integer coefficients whose zeros all lie in $\\{z\\in\\mathbb C:|z|\\le1\\}$. Also prove that every zero of each such polynomial has modulus $0$ or $1$."
         },
         {
           "day": 9,
@@ -968,6 +968,371 @@
           "day": 11,
           "number": 37,
           "problem": "Let $ABC$ be a fixed acute triangle. For points $E\\in AC,F\\in AB$, let $M$ be the midpoint of $EF$, and let its perpendicular bisector meet $BC$ at $K$. The perpendicular bisector of $MK$ meets $AC,AB$ at $S,T$. Call $(E,F)$ interesting if $KSAT$ is cyclic. If $(E_1,F_1)$ and $(E_2,F_2)$ are interesting, prove that $\\frac{E_1E_2}{AB}=\\frac{F_1F_2}{AC}$."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Santa has $k$ piles of gifts with $1\\le h_1<\\cdots<h_k$. Whenever any pile is split into two, two of the resulting $k+1$ piles contain equal numbers of gifts. Prove that $h_s\\le2s$ for every $1\\le s\\le k$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let triangle $ABC$ be acute, with altitudes $AA_1,BB_1$ meeting at $H$. Let $\\omega_1$ have centre $H$ and pass through $B_1$, and $\\omega_2$ have centre $B$ and pass through $B_1$. Tangents $CN,CK$ from $C$ touch $\\omega_1,\\omega_2$ at $N,K$, both distinct from $B_1$. Prove that $A_1,N,K$ are collinear."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a,b$ be positive integers with $a!+b!\\mid a!b!$. Prove that $3a\\ge2b+2$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all functions $f:\\mathbb Z\\to\\mathbb Z$ satisfying $f(x-f(y))=f(f(x))-f(y)-1$ for all integers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For a fixed positive integer $n$, find the maximum of $\\sum_{1\\le r<s\\le2n}(s-r-n)x_rx_s$, where $-1\\le x_i\\le1$ for $1\\le i\\le2n$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Colour the cells of an $n\\times n$ board with $n$ colours, with exactly $n$ cells of each colour. Prove that some row or column contains at least $\\sqrt n$ distinct colours."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let triangle $ABC$ have $\\angle C=90^\\circ$, and let $H$ be the foot of the altitude from $C$. Choose $D$ inside $CBH$ so that $CH$ bisects $AD$. Let $P=BD\\cap CH$. Let $\\omega$ be the semicircle with diameter $BD$ that meets the interior of segment $CB$. A line through $P$ is tangent to $\\omega$ at $Q$. Prove that $CQ,AD$ meet on $\\omega$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $\\omega$ be the circumcircle of triangle $ABC$, and let $M$ be the midpoint of the arc $BC$ not containing $A$. The incircle, centred at $I$, and the $A$-excircle, centred at $I_A$, touch $BC$ at $D,E$. Lines $MD,ME$ meet $\\omega$ again at $T\\ne D,R\\ne E$, respectively. Line $RI_A$ meets $\\omega$ again at $S\\ne R$. Prove that $T,I,S$ are collinear."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $a,b,c>0$ and $a+b+c=3$. Prove that $$\\frac{\\sqrt{2a^2b}}{2a+b}+\\frac{\\sqrt{2b^2c}}{2b+c}+\\frac{\\sqrt{2c^2a}}{2c+a}\\le\\frac{\\sqrt{a^2+b^2}}{2ab+1}+\\frac{\\sqrt{b^2+c^2}}{2bc+1}+\\frac{\\sqrt{c^2+a^2}}{2ca+1}.$$"
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "A partition of a finite set $A$ of positive integers into disjoint nonempty subsets $A_1,A_2$ is good if $\\operatorname{lcm}(A_1)=\\gcd(A_2)$. Find the least $n$ for which a set of $n$ positive integers has exactly $2015$ good partitions."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Let $P,Q,R,S$ lie on sides $AB,BC,CD,DA$ of a convex quadrilateral $ABCD$, respectively, with $PR,QS$ meeting at $O$. If $APOS,BQOP,CROQ,DSOR$ each have an incircle, prove that lines $AC,PQ,RS$ are concurrent or pairwise parallel."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Fix an integer $n\\ge2$. Real-coefficient polynomials $P,Q$ are twins if, for every $1\\le i\\le n$, the lists $P(2015i),P(2015i-1),\\ldots,P(2015i-2014)$ and $Q(2015i),Q(2015i-1),\\ldots,Q(2015i-2014)$ are permutations of each other. (a) Prove that distinct twins of degree $n+1$ exist. (b) Prove that distinct twins of degree $n$ do not exist."
+        },
+        {
+          "day": 5,
+          "number": 13,
+          "problem": "Let $n\\ge5$ points in the plane have no three collinear. Hillary and Donald alternately choose two points not yet joined and draw their connecting segment. A player wins if, after their move, each of the $n$ points is an endpoint of a drawn segment. Hillary moves first. For which $n$ can Donald win regardless of Hillary's strategy?"
+        },
+        {
+          "day": 5,
+          "number": 14,
+          "problem": "Let $ABC$ be acute and $M$ the midpoint of $AC$. A circle $\\omega$ through $B,M$ meets sides $AB,BC$ at $P,Q$. Choose $T$ so that $BPTQ$ is a parallelogram. If $T$ lies on the circumcircle of $ABC$, find all possible $BT/BM$."
+        },
+        {
+          "day": 5,
+          "number": 15,
+          "problem": "Let $(a_n),(b_n)$ be sequences of positive integers with $a_0,b_0\\ge2$, $a_{n+1}=\\gcd(a_n,b_n)+1$ and $b_{n+1}=\\operatorname{lcm}(a_n,b_n)-1$. Prove that $(a_n)$ is eventually periodic: there are integers $N\\ge0,t>0$ with $a_{n+t}=a_n$ for every $n\\ge N$."
+        },
+        {
+          "day": 6,
+          "number": 16,
+          "problem": "Find a monic rational-coefficient polynomial $P$ of the least possible degree with $P(\\sqrt[3]3)=\\sqrt[3]2$, or prove that no such polynomial exists."
+        },
+        {
+          "day": 6,
+          "number": 17,
+          "problem": "Dumbledore has $n$ bags containing a total of $n^2$ candies. He may choose two bags whose total is even and redistribute their candies equally between them. Find all integers $n>2$ for which he can always make every bag contain the same number of candies, whatever the initial distribution."
+        },
+        {
+          "day": 6,
+          "number": 18,
+          "problem": "Circles $\\omega_1,\\omega_2$ meet at $A,B$. A line through $A$ meets them again at $C,E$, and $G$ lies between $A,E$ on this line. A line through $B$ meets them again at $D,F$, and $H$ lies between $B,F$. Line $CH$ meets $FG$ at $I$ and $\\omega_1$ again at $J$; line $DG$ meets $EH$ at $K$ and $\\omega_1$ again at $L$. Lines $EH,FG$ meet $\\omega_2$ again at $M,N$. If $A,B,\\ldots,N$ are all distinct, prove that $I,J,K,L,M,N$ are concyclic."
+        },
+        {
+          "day": 7,
+          "number": 19,
+          "problem": "Let triangle $ABC$ have circumcircle $\\omega$ and $D\\in AB$. A circle $\\Gamma$ touches $DB,DC$ at $M,N$ and is externally tangent to $\\omega$. The external bisector of $\\angle ABC$ meets $MN$ at $X$. Prove that $AX$ bisects $\\angle BAC$."
+        },
+        {
+          "day": 7,
+          "number": 20,
+          "problem": "Let $a_1=11^{11},a_2=12^{12},a_3=13^{13}$ and $a_n=|a_{n-1}-a_{n-2}|+|a_{n-2}-a_{n-3}|$ for $n\\ge4$. Find $a_{1414}$."
+        },
+        {
+          "day": 7,
+          "number": 21,
+          "problem": "Find all functions $f:\\mathbb Z\\to2\\mathbb Z+1$ satisfying $f(x+f(x)+y)+f(x-f(x)-y)=f(x+y)+f(x-y)$ for all integers $x,y$."
+        },
+        {
+          "day": 8,
+          "number": 22,
+          "problem": "Find all complex numbers $z=a+bi$, with integers $a,b$, satisfying $3|z|^2+|z+4+2i|^2+6(z+i-z)^2=14$."
+        },
+        {
+          "day": 8,
+          "number": 23,
+          "problem": "Find all continuous periodic functions $f:\\mathbb R\\to\\mathbb R$ satisfying $(1+f(x)f(y))f(x+y)=f(x)+f(y)$ for all real numbers $x,y$."
+        },
+        {
+          "day": 8,
+          "number": 24,
+          "problem": "For an integer $n\\ge2$, colour each cell of an $n\\times n$ board red or blue. A domino is chic if it covers differently coloured cells and cool if it covers equally coloured cells. Find the largest integer $k$ such that every colouring allows $k$ nonoverlapping dominoes that are all chic or all cool."
+        },
+        {
+          "day": 9,
+          "number": 25,
+          "problem": "For a $2015$-tuple $(a_1,\\ldots,a_{2015})$, a move chooses $1\\le m,n\\le2015$ with $a_m$ even and replaces $a_m,a_n$ by $a_m/2,a_n+a_m/2$, respectively. Prove that every permutation of $(1,2,\\ldots,2015)$ can be reached from that tuple by finitely many moves."
+        },
+        {
+          "day": 9,
+          "number": 26,
+          "problem": "Let triangle $ABC$ have circumcircle $\\omega$. The circle centred at $B$ with radius $BC$ meets $AC,\\omega$ at $D,E$, respectively. The line through $D$ parallel to $CE$ meets $AB$ at $F$. (a) Prove that $BD,EF$ meet on $\\omega$. (b) Let $G=AB\\cap CE$. Prove that $DEFG$ is a rhombus."
+        },
+        {
+          "day": 9,
+          "number": 27,
+          "problem": "Prove that for every prime $p$ and positive integer $k$, some positive integer $n$ has the property that the decimal representation of $p^n$ contains $k$ consecutive equal digits."
+        },
+        {
+          "day": 10,
+          "number": 28,
+          "problem": "Let $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ and let $f^n$ denote its $n$-fold iterate. Suppose that $\\frac{f^n(m)-m}{n}$ is a positive integer for all positive integers $m,n$, and that $\\mathbb Z_{>0}\\setminus\\{f(n):n\\ge1\\}$ is finite. Prove that $f(1)-1,f(2)-2,f(3)-3,\\ldots$ is periodic."
+        },
+        {
+          "day": 10,
+          "number": 29,
+          "problem": "Let $S$ be a nonempty set of positive integers. A positive integer is clean if it has exactly one representation as a sum of an odd number of distinct elements of $S$. Prove that infinitely many positive integers are not clean."
+        },
+        {
+          "day": 11,
+          "number": 30,
+          "problem": "Lineland has $n\\ge1$ towns along a road from left to right. Every town has a bulldozer on its left facing left and another on its right facing right; all $2n$ sizes are distinct. When two bulldozers face each other, the larger pushes the smaller off the road. A bulldozer reaching the rear of another pushes it off, regardless of size. A town $A$ can sweep away a town $B$ to its right if its right bulldozer can reach $B$, pushing off every bulldozer it meets; analogously $B$ can sweep away $A$ with its left bulldozer. Prove that exactly one town cannot be swept away by any other town."
+        },
+        {
+          "day": 11,
+          "number": 31,
+          "problem": "Let $a,b,c>0$. Prove that $$\\sqrt[3]{abc}\\left(\\sum_{\\mathrm{cyc}}\\frac{3a\\sqrt a}{2a+b}\\right)\\le\\sum_{\\mathrm{cyc}}\\frac{a^2(a+2b)}{\\sqrt{b^2(b+c)+abc}}.$$"
+        },
+        {
+          "day": 11,
+          "number": 32,
+          "problem": "Let $ABC$ be acute, with orthocentre $H$. Choose $Y\\in AC,Z\\in AB$ with $\\angle HYC=\\angle HZB=60^\\circ$. Let $U$ be the circumcentre of $HYZ$ and $N$ the nine-point centre of $ABC$. Prove that $A,U,N$ are collinear."
+        },
+        {
+          "day": 12,
+          "number": 33,
+          "problem": "Let $ABCD$ be convex with $AC\\perp BD$. Prove that points $P,Q,R,S$ exist on $AB,BC,CD,DA$, respectively, such that $PR\\perp QS$ and the area of $PQRS$ is half the area of $ABCD$."
+        },
+        {
+          "day": 12,
+          "number": 34,
+          "problem": "(a) Prove that no function $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ satisfies $\\gcd(f(m)+n,f(n)+m)=1$ for all distinct positive integers $m,n$. (b) Prove that a function with $\\gcd(f(m)+n,f(n)+m)\\le2$ for all such pairs does exist."
+        },
+        {
+          "day": 12,
+          "number": 35,
+          "problem": "In a group of $n$ students, each has exactly $k$ friends; friendship is mutual. Any two friends have exactly $\\lambda$ common friends. Suppose $n,k,\\lambda$ have remainders $1,2,2$, respectively, modulo $4$. Prove that four students $A,B,C,D$ exist such that $A,B,C$ are all friends with $D$ but are pairwise nonfriends."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "An altitude of a convex pentagon is the line through a vertex perpendicular to the opposite side. Prove that if four altitudes are concurrent, the fifth passes through the same point."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ satisfying $f(f(x)+yz)=x+f(y)f(z)$ for all real numbers $x,y,z$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n>1$. An IMO team leader secretly chooses an $n$-digit binary string and tells it to the deputy. The deputy secretly chooses a positive integer $k<n$ and writes all $n$-digit binary strings differing from it in exactly $k$ positions. For example, from $101$ with $k=1$ the strings are $001,111,100$. A contestant sees the written strings and guesses the original. Find the minimum number of guesses, in terms of $n,k$, guaranteeing the correct answer."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $S(k)$ be the decimal digit sum of a positive integer $k$. Find all integer-coefficient polynomials $P$ such that $P(n)>0$ and $S(P(n))=P(S(n))$ for every integer $n\\ge2016$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a,b,c>0$ and $\\min(ab,bc,ca)\\ge1$. Prove that $\\sqrt[3]{(a^2+1)(b^2+1)(c^2+1)}\\le\\left(\\frac{a+b+c}3\\right)^2+1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Circles $\\Gamma_1,\\Gamma_2$ meet at $M,N$. A line cuts $\\Gamma_1$ at $A,C$ and $\\Gamma_2$ at $B,D$, with the four distinct points in order $A,B,C,D$. Choose $X\\in MN$ with $M$ between $X,N$. Let $P=AX\\cap BM,Q=DX\\cap CM$. Let $K,L$ be the midpoints of $AD,BC$. Prove that $KX,LM$ meet on $PQ$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $n$ boys and $n$ girls stand around a circle. A boy–girl pair is balancing if each of the two arcs between them contains equally many boys and girls, possibly zero. If some girl belongs to exactly $10$ balancing pairs, prove that some boy does too."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $m,n,k,\\ell$ be positive integers, with $n\\ne1$, such that $n^k+mn^\\ell+1\\mid n^{k+\\ell}-1$. Prove that either $m=1,\\ell=2k$, or $\\ell\\mid k$ and $m=\\frac{n^{k-\\ell}-1}{n^\\ell-1}$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Find all positive integers $n$ for which all positive divisors of $n$ can be placed in a rectangular table, one distinct divisor in each cell, with all row sums equal and all column sums equal."
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "Let triangle $ABC$ have circumcircle $\\Gamma$ and incentre $I$, and let $M$ be the midpoint of $BC$. Choose $D\\in BC,E\\in CA,F\\in AB$ with $ID\\perp BC,IE\\perp AI,IF\\perp AI$. The circumcircle of $AEF$ meets $\\Gamma$ again at $X\\ne A$. Prove that $XD,AM$ meet on $\\Gamma$."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Find all positive integers $n$ such that, whenever real numbers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ satisfy $|a_k|+|b_k|=1$ for every $k$, there are signs $\\varepsilon_1,\\ldots,\\varepsilon_n\\in\\{-1,1\\}$ with $\\left|\\sum_{i=1}^n\\varepsilon_i a_i\\right|+\\left|\\sum_{i=1}^n\\varepsilon_i b_i\\right|\\le1$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Let $\\tau(n)$ be the number of positive divisors of $n$ and $\\tau_1(n)$ the number congruent to $1$ modulo $3$. Find all positive integer values of $\\tau(10^n)/\\tau_1(10^n)$."
+        },
+        {
+          "day": 4,
+          "number": 13,
+          "problem": "Find all functions $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$xf(x^2)f(f(y))+f(yf(x))=f(xy)\\bigl(f(f(x^2))+f(f(y^2))\\bigr)$$ for every $x,y>0$."
+        },
+        {
+          "day": 4,
+          "number": 14,
+          "problem": "In an acute triangle $ABC$, internal angle bisectors $AA_1,BB_1,CC_1$ meet $BC,CA,AB$ at $A_1,B_1,C_1$. Let $I$ be the incentre of $ABC$ and $H$ the orthocentre of $A_1B_1C_1$. Prove that $AH+BH+CH\\ge AI+BI+CI$."
+        },
+        {
+          "day": 5,
+          "number": 15,
+          "problem": "Killer is a game with a dealer and $n\\ge2$ players. The dealer secretly designates one player as the killer, makes any number of public announcements, then secretly gives each player the name of one of the players. Every player knows that exactly one killer exists. Alone, each player, including the killer, cannot determine who is the killer or rule out any player with certainty; any two players exchanging information can determine the killer. For example, with two players the dealer can announce that both receive the same name if the first is the killer, and different names if the second is the killer. (a) Prove that the game is possible with five players. (b) Determine whether it is possible with four players."
+        },
+        {
+          "day": 5,
+          "number": 16,
+          "problem": "Let triangle $ABC$ have $\\angle A=60^\\circ$ and $AB>AC$. Let $O$ be its circumcentre, $F$ the altitude foot from $C$, and $D\\in AB$ satisfy $BD=AC$. If $O,F,D$ are distinct, prove that the circumcircle of $OFD$ meets the circle centred at $O$ of radius $OF$ on the altitude from $B$."
+        },
+        {
+          "day": 5,
+          "number": 17,
+          "problem": "Genji starts at $0$ on the real axis and alternates two types of jumps: from $x$ to any member of $\\{x,x+1,\\ldots,x+6\\}$, and from $y$ to $(\\sqrt2-3)y$. Prove that for any integers $a,b$, a finite sequence of jumps can reach $a+b\\sqrt2$."
+        },
+        {
+          "day": 6,
+          "number": 18,
+          "problem": "Let $(2+\\sqrt3)^k=m+n\\sqrt3$, where $m,n,k$ are positive integers and $k$ is odd. Prove that $\\sqrt{m-1}$ is an integer."
+        },
+        {
+          "day": 6,
+          "number": 19,
+          "problem": "Prove that $a=4/9$ is the largest real number for which $$\\sum_{i=1}^n\\frac1{x_i-x_{i-1}}\\ge a\\sum_{i=1}^n\\frac{i+1}{x_i}$$ holds for every integer $n\\ge1$ and every sequence of real numbers $0=x_0<x_1<\\cdots<x_n$."
+        },
+        {
+          "day": 6,
+          "number": 20,
+          "problem": "Initially, ferry routes between some pairs of $n\\ge3$ islands form a connected network. Each year one route $XY$ is closed; simultaneously, for each island joined to exactly one of $X,Y$, a route to the other is added. Suppose that, at any moment, every partition of the islands into two nonempty groups has a route between the groups that will be closed after some years. Prove that after some years an island is joined to every other island."
+        },
+        {
+          "day": 7,
+          "number": 21,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ with $f(0)\\ne0$ and $f(x+y)^2=2f(x)f(y)+\\max\\{f(x^2+y^2),f(x^2)+f(y^2)\\}$ for all real numbers $x,y$."
+        },
+        {
+          "day": 7,
+          "number": 22,
+          "problem": "Find all integer-coefficient polynomials $P$ of odd degree $d$ such that, for every positive integer $n$, there are positive integers $x_1,\\ldots,x_n$ for which each ratio $P(x_i)/P(x_j)$ belongs to $(1/2,2)$ and is a $d$th power of a rational number, for all $1\\le i,j\\le n$."
+        },
+        {
+          "day": 8,
+          "number": 23,
+          "problem": "Let $n\\ge3$. Each edge of a complete graph on $n$ vertices has one of three colours, each used at least once. Find the smallest positive integer $k$ such that $k$ edges can always be recoloured so that all vertices are connected by edges of a single colour."
+        },
+        {
+          "day": 8,
+          "number": 24,
+          "problem": "Let $I$ be the incentre of a nonequilateral triangle $ABC$. Reflect its $A$-excentre $I_A$ across $BC$ to obtain $I_A^{\\prime}$, and reflect line $AI_A^{\\prime}$ across $AI$ to obtain $\\ell_A$. Define $I_B,I_B^{\\prime},\\ell_B$ analogously, and let $P=\\ell_A\\cap\\ell_B$. (a) Prove that $P\\in OI$, where $O$ is the circumcentre. (b) A tangent from $P$ to the incircle meets the circumcircle at $X,Y$. Prove that $\\angle XIY=120^\\circ$."
+        },
+        {
+          "day": 9,
+          "number": 25,
+          "problem": "Alice draws $n$ distinct circles in the plane, forming bounded regions. Bob colours every bounded region red or blue. Alice may then change the colour of one region. She wins if each circle contains an even number of red regions; otherwise Bob wins. Find all $n$ for which Alice has a winning strategy."
+        },
+        {
+          "day": 9,
+          "number": 26,
+          "problem": "Let $x_1=2$ and $x_n=4\\nu_3(n)+2-\\frac2{x_{n-1}}$ for $n\\ge2$, where $\\nu_3(n)$ is the exponent of $3$ in the prime factorization of $n$. Prove that each positive rational number occurs exactly once in this sequence."
+        },
+        {
+          "day": 9,
+          "number": 27,
+          "problem": "(a) Prove that for every positive integer $n$, integers $a,b$ exist with $0<b\\le\\sqrt{n+1}$ and $\\sqrt n\\le a/b\\le\\sqrt{n+1}$. (b) Prove that for infinitely many positive integers $n$, no integers $a,b$ satisfy $0<b\\le\\sqrt n$ and $\\sqrt n\\le a/b\\le\\sqrt{n+1}$."
+        },
+        {
+          "day": 10,
+          "number": 28,
+          "problem": "Prove that infinitely many pairs of distinct primes $(m,n)$ satisfy $3^n\\equiv3\\pmod m$ and $3^m\\equiv3\\pmod n$."
+        },
+        {
+          "day": 10,
+          "number": 29,
+          "problem": "Fix $B=(-1,0),C=(1,0)$. A nonempty bounded plane set $S$ is nice if (i) some $T\\in S$ has $TQ\\subseteq S$ for every $Q\\in S$; and (ii) for every triangle $P_1P_2P_3$, there is a unique point $A\\in S$ and a permutation $\\sigma$ of $\\{1,2,3\\}$ for which $ABC$ and $P_{\\sigma(1)}P_{\\sigma(2)}P_{\\sigma(3)}$ are similar. Prove that two distinct nice subsets $S,S^{\\prime}$ of $\\{(x,y):x\\ge0,y\\ge0\\}$ exist such that, for the corresponding unique points $A\\in S,A^{\\prime}\\in S^{\\prime}$ in (ii), $BA\\cdot BA^{\\prime}$ is constant, independent of $P_1P_2P_3$."
+        },
+        {
+          "day": 10,
+          "number": 30,
+          "problem": "For a regular $n$-gon, $n\\ge3$, find the largest number of diagonals that can be chosen so that any two either do not intersect in the interior or are perpendicular."
+        },
+        {
+          "day": 11,
+          "number": 31,
+          "problem": "Let $P$ lie inside triangle $ABC$. Choose $A_1\\in PA,B_1\\in PB,C_1\\in PC$. Put $A_2=BC_1\\cap CB_1,B_2=CA_1\\cap AC_1,C_2=AB_1\\cap BA_1$. Let $U=A_1B_1\\cap A_2B_2$ and $V=A_1C_1\\cap A_2C_2$. Prove that $UC_2,VB_2,AP$ are concurrent."
+        },
+        {
+          "day": 11,
+          "number": 32,
+          "problem": "Let $X$ lie inside a convex $100$-gon, on no side or diagonal. Pete first marks two vertices, then Pete and Basil alternately mark one vertex. The player whose move makes $X$ lie inside the polygon of marked vertices loses. Prove that Pete has a winning strategy."
+        },
+        {
+          "day": 11,
+          "number": 33,
+          "problem": "Find all functions $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ such that $f(m)+f(n)-mn$ is nonzero and divides $mf(m)+nf(n)$ for all positive integers $m,n$."
+        },
+        {
+          "day": 12,
+          "number": 34,
+          "problem": "Prove that for all $a,b,c>0$, $\\frac{a}{\\sqrt{3ab+bc}}+\\frac{b}{\\sqrt{3bc+ca}}+\\frac{c}{\\sqrt{3ca+ab}}\\ge\\frac32$."
+        },
+        {
+          "day": 12,
+          "number": 35,
+          "problem": "Let $D$ be the projection of $A$ onto the Euler line of an acute scalene triangle $ABC$. A circle with centre $S$ passes through $A,D$ and meets sides $AB,AC$ at $X,Y$. Let $P$ be the altitude foot from $A$ onto $BC$ and $M$ the midpoint of $BC$. Prove that the circumcentre of $XSY$ is equidistant from $P,M$. The Euler line passes through the circumcentre and orthocentre."
+        },
+        {
+          "day": 12,
+          "number": 36,
+          "problem": "Let $H$ be a set of finite sequences with entries in $\\{1,2,3\\}$. If no member of $H$ is a subsequence of any other member, prove that $H$ is finite."
         }
       ]
     }

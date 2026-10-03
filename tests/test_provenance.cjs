@@ -23,4 +23,12 @@ assert.match(ctx.provenanceHtml(record),/&lt;img/);
 assert.doesNotMatch(ctx.provenanceHtml(record),/<img src=x/);
 const checked=ctx.provenanceHtml({country:'ca',year:2026,uid:'ca.2026.0.1',text:metadata['Canada-cmo-problems.json'].statement_checks['ca.2026.0.1'].reviewed_statement});
 assert.match(checked,/not the solution or independent mathematical correctness/);
+ctx.CBY.tht={file:'Thailand-tst-problems.json'};
+const defective=metadata['Thailand-tst-problems.json'].statement_checks['tht.2012.9.25'];
+for(const print of [false,true]) {
+  const rendered=ctx.provenanceHtml({country:'tht',year:2012,uid:'tht.2012.9.25',text:defective.reviewed_statement},print);
+  assert.match(rendered,/Source issue — awaiting verification/);
+  assert.doesNotMatch(rendered,/Statement checked against source/);
+  assert.match(rendered,/do not use/);
+}
 console.log('Provenance checks passed: editorial notes in screen/print, stale evidence hidden, HTML escaped, source scope explicit.');
