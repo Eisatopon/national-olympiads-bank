@@ -1,0 +1,975 @@
+{
+  "competition": "Thailand IMO Team Selection Tests",
+  "years": [
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all positive integer pairs $(m,n)$ for which an $m\\times n$ table can be coloured black and white so that, for every unit square $U$, the number of unit squares $V$ sharing a vertex with $U$ and having the same colour as $U$ is odd."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ satisfy $|f(x+y)|=|f(x)+f(y)|$ for all real numbers $x,y$. Prove that $f(x+y)=f(x)+f(y)$ for all real numbers $x,y$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be acute with $AB>AC$ and altitude $AD$. The circle with diameter $BC$ meets $AC$ at $E$, and its tangents at $B,E$ meet at $X$. Lines $AX,BC$ meet at $Y$. Prove that $\\frac1{DC}-\\frac1{BD}=\\frac2{DY}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $f(x),g(x)$ be polynomials with rational coefficients whose product has integer coefficients. Prove that the product of any coefficient of $f$ and any coefficient of $g$ is an integer."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $p,q$ be odd primes and $m$ a positive integer with $\\nu_q(p-1)=m$. Prove that, for every integer $n\\ge0$, the order of $p$ modulo $q^{m+n}$ is $q^n$ and $\\nu_q(p^{q^n}-1)=m+n$. Here $\\nu_q(x)$ is the largest integer $k$ such that $q^k\\mid x$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle with $AB\\le AC$, and let an interior point $P$ lie on the bisector of $\\angle BAC$. Choose $D\\in PC,E\\in PB$ with $\\angle PBD=\\angle PCE$. Lines $BD,AC$ meet at $X$, and lines $CE,AB$ meet at $Y$. Prove that $BX\\le CY$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $a,b,c>0$ with $a+b+c=3$. Prove that $$\\sqrt[3]{\\frac{abc}{(a+3)(b+3)(c+3)}}\\le\\frac9{32}\\left[\\left(\\frac{3-a}{1+2bc}\\right)^3+\\left(\\frac{3-b}{1+2ca}\\right)^3+\\left(\\frac{3-c}{1+2ab}\\right)^3\\right].$$"
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $ABC$ be acute with orthocentre $H$ and nine-point centre $N$. Points $Y\\in CA,Z\\in CB$ satisfy the directed-angle relations $\\angle(AC,HY)=-\\frac\\pi3$ and $\\angle(AB,HZ)=\\frac\\pi3$. Let $U$ be the circumcentre of $HYZ$. Prove that $A,N,U$ are collinear."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "A graph has $2n$ vertices and $2n(n-1)$ edges, where $n>1$ is an integer. Prove that some vertices and edges can be coloured red so that both endpoints of every red edge are red and every red vertex belongs to exactly $n$ red edges."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "A $16\\times16$ matrix has entries $+1,-1$. For any two distinct columns, the sum of products of corresponding entries is nonpositive. Prove that there are at most $160$ entries equal to $+1$."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Find all primes $p$ for which integers $a,b$ exist with $p^2=a^2+b^2$ and $p\\mid a^3+b^3-4$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Triangle $ABC$ has circumcircle $\\Gamma$ and inradius $1$. Let $\\Gamma_A$ be the circle tangent to lines $AB,AC$ and internally tangent to $\\Gamma$; define $\\Gamma_B,\\Gamma_C$ similarly. If their radii are $R_A,R_B,R_C$, prove that $R_A+R_B+R_C\\ge4$."
+        },
+        {
+          "day": 5,
+          "number": 13,
+          "problem": "Let $ABC$ be acute, with altitude feet $D\\in BC,E\\in CA,F\\in AB$. Let $P$ be either intersection of line $EF$ with the circumcircle. Lines $BP,DF$ meet at $Q$. Prove that $AP=AQ$."
+        },
+        {
+          "day": 5,
+          "number": 14,
+          "problem": "Can all rational numbers be coloured with two colours so that distinct rational numbers $x,y$ have different colours whenever $xy=1$ or $x+y\\in\\{0,1\\}$?"
+        },
+        {
+          "day": 5,
+          "number": 15,
+          "problem": "Define $x_1=1$, $x_{2k}=-x_k$, and $x_{2k-1}=(-1)^{k+1}x_k$ for $k\\ge1$. Prove that $x_1+x_2+\\cdots+x_n\\ge0$ for every $n\\ge1$."
+        },
+        {
+          "day": 6,
+          "number": 16,
+          "problem": "An $8\\times8$ square is divided into $64$ unit squares. Diagonals are drawn in some cells so that no two share any point, including endpoints. Find the maximum possible number of drawn diagonals."
+        },
+        {
+          "day": 6,
+          "number": 17,
+          "problem": "A circle $\\Omega$ through vertex $A$ of triangle $ABC$ is tangent to segment $BC$ at $D$. Let $E$ be the projection of $D$ onto $AC$. Choose $F\\in\\Omega$ on the opposite side of line $EC$ from $D$, with $\\angle EFC=2\\angle ECD$. If $CF$ meets $\\Omega$ again at $G$, prove that $AG\\parallel BC$."
+        },
+        {
+          "day": 6,
+          "number": 18,
+          "problem": "Find the smallest number $n$ for which polynomials $f_1,\\ldots,f_n$ with rational coefficients satisfy $x^2+7=f_1(x)^2+\\cdots+f_n(x)^2$."
+        },
+        {
+          "day": 7,
+          "number": 19,
+          "problem": "Let $a,b,c$ be real numbers with $ab+bc+ca=1$. Prove that $$\\frac{(a+b)^2+1}{c^2+2}+\\frac{(b+c)^2+1}{a^2+2}+\\frac{(c+a)^2+1}{b^2+2}\\ge3.$$"
+        },
+        {
+          "day": 7,
+          "number": 20,
+          "problem": "Find the least positive integer $n$ for which distinct positive integers $s_1,\\ldots,s_n$ satisfy $$\\prod_{i=1}^n\\left(1-\\frac1{s_i}\\right)=\\frac{51}{2010}.$$"
+        },
+        {
+          "day": 7,
+          "number": 21,
+          "problem": "The vertices $X,Y,Z$ of an equilateral triangle lie on sides $BC,CA,AB$, respectively, of an acute triangle $ABC$. Prove that the incentre of $ABC$ lies inside $XYZ$."
+        },
+        {
+          "day": 8,
+          "number": 22,
+          "problem": "Points $D,E$ lie in the interiors of sides $AB,AC$ of triangle $ABC$, and line $DE$ meets the extension of $BC$ at $F$. Prove that $ADE$ is similar to the triangle whose vertices are the circumcentres of $ABC,DFB,EFC$."
+        },
+        {
+          "day": 8,
+          "number": 23,
+          "problem": "Dreamland has $1024$ cities labelled $0,1,\\ldots,1023$. Two cities are connected by one road exactly when their binary labels differ in one digit. Exactly eight roads are closed for repairs. Prove that a tourist can choose a closed route visiting every city exactly once using only open roads."
+        },
+        {
+          "day": 8,
+          "number": 24,
+          "problem": "Find all functions $f:\\mathbb Q_{>0}\\to\\mathbb Q_{>0}$ satisfying $f(f(x)^2y)=x^3f(xy)$ for all positive rational numbers $x,y$."
+        },
+        {
+          "day": 9,
+          "number": 25,
+          "problem": "Let $a,b,c>0$. Prove that $$\\frac{(a+b)^2}{c(a+b+2c)}+\\frac{(b+c)^2}{a(b+c+2a)}+\\frac{(c+a)^2}{b(c+a+2b)}\\ge\\sqrt{\\frac{3a(b+c)}{b^2+4bc+c^2}}+\\sqrt{\\frac{3b(c+a)}{c^2+4ca+a^2}}+\\sqrt{\\frac{3c(a+b)}{a^2+4ab+b^2}}.$$"
+        },
+        {
+          "day": 9,
+          "number": 26,
+          "problem": "For every integer $n\\ge2$, let $A_n$ be the set of solutions of $x=\\left\\lfloor\\frac x2\\right\\rfloor+\\left\\lfloor\\frac x3\\right\\rfloor+\\cdots+\\left\\lfloor\\frac xn\\right\\rfloor$. Prove that $A=\\bigcup_{n\\ge2}A_n$ is finite, and find $\\max A$."
+        },
+        {
+          "day": 9,
+          "number": 27,
+          "problem": "Let $ABCDE$ be a convex pentagon with $BC\\parallel AE$, $AB=BC+AE$, and $\\angle ABC=\\angle CDE$. Let $M$ be the midpoint of $CE$ and $O$ the circumcentre of $BCD$. If $\\angle DMO=90^\\circ$, prove that $2\\angle BDA=\\angle CDE$."
+        },
+        {
+          "day": 10,
+          "number": 28,
+          "problem": "Define $K_0=1$ and $K_n=1+\\min\\{2K_{\\lfloor n/2\\rfloor},3K_{\\lfloor n/3\\rfloor}\\}$ for integers $n\\ge1$. Prove or disprove that $K_n\\ge n$ for every integer $n\\ge0$."
+        },
+        {
+          "day": 10,
+          "number": 29,
+          "problem": "A set of $n\\ge4$ points has integer distance between every pair. Prove that at least one sixth of these distances are divisible by $3$."
+        },
+        {
+          "day": 10,
+          "number": 30,
+          "problem": "In a round-robin tennis tournament with $n\\ge4$ players, no game is drawn. Four players form a bad company if one lost to the other three, and each of those three won one and lost one game among themselves. Suppose no bad company exists. If player $i$ has $w_i$ wins and $l_i$ losses, prove that $\\sum_{i=1}^n(w_i-l_i)^3\\ge0$."
+        },
+        {
+          "day": 11,
+          "number": 31,
+          "problem": "Let real numbers $a,b,c,d$ satisfy $a+b+c+d=6$ and $a^2+b^2+c^2+d^2=12$. Prove that $36\\le4(a^3+b^3+c^3+d^3)-(a^4+b^4+c^4+d^4)\\le48$."
+        },
+        {
+          "day": 11,
+          "number": 32,
+          "problem": "Let $A_1\\cdots A_n$ be a convex polygon. An interior point $P$ has projections $P_i$ onto lines $A_iA_{i+1}$ lying on their corresponding sides, with indices modulo $n$. Prove that for any $X_i\\in A_iA_{i+1}$, $$\\max\\left\\{\\frac{X_1X_2}{P_1P_2},\\ldots,\\frac{X_nX_1}{P_nP_1}\\right\\}\\ge1.$$"
+        },
+        {
+          "day": 11,
+          "number": 33,
+          "problem": "Let $a,b$ be integers and put $P(x)=ax^3+bx$. For a positive integer $n$, call $(a,b)$ n-good if $n\\mid P(m)-P(k)$ implies $n\\mid m-k$ for all integers $m,k$. Call it very good if it is n-good for infinitely many positive integers $n$. (a) Find a pair which is $51$-good but not very good. (b) Prove that every $2010$-good pair is very good."
+        },
+        {
+          "day": 12,
+          "number": 34,
+          "problem": "The incircle of triangle $ABC$, centred at $I$, touches $AB,BC,CA$ at $X,Y,Z$, respectively. Let $H^{\\prime}$ be the orthocentre of $XYZ$, $D=IH^{\\prime}\\cap BC$, and $P=AD\\cap XH^{\\prime}$. Prove that $PY=YX$."
+        },
+        {
+          "day": 12,
+          "number": 35,
+          "problem": "A planet has $2^N$ countries, where $N\\ge4$. Each has a different flag of $N$ unit-square fields in one row, each field yellow or blue. A set of $N$ flags is diverse if they can be arranged as an $N\\times N$ square whose main-diagonal fields all have the same colour. Find the smallest positive integer $M$ such that any $M$ distinct flags contain a diverse set of $N$ flags."
+        },
+        {
+          "day": 12,
+          "number": 36,
+          "problem": "Let $f,g:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ satisfy $f(g(n))=f(n)+1$ and $g(f(n))=g(n)+1$ for all positive integers $n$. Prove that $f(n)=g(n)$ for every positive integer $n$."
+        },
+        {
+          "day": 13,
+          "number": 37,
+          "problem": "Let $a,b,c>0$. Prove that $$\\frac{4a^4}{(a+b)(a^2+b^2)}+\\frac{4b^4}{(b+c)(b^2+c^2)}+\\frac{4c^4}{(c+a)(c^2+a^2)}\\ge\\frac{5b^3-a^3}{ab+3b^2}+\\frac{5c^3-b^3}{bc+3c^2}+\\frac{5a^3-c^3}{ca+3a^2}.$$"
+        },
+        {
+          "day": 13,
+          "number": 38,
+          "problem": "Let $I$ be the incentre of triangle $ABC$. A tangent $\\ell$ to its incircle, different from the side lines, meets sides $AB,BC$ and the extension of $CA$ at $X,Y,Z$, respectively. Let $P=AY\\cap CX$ and $Q=IP\\cap BZ$. If $A,C,Y,X$ are concyclic, prove that $ZI^2=ZQ\\cdot ZB$."
+        },
+        {
+          "day": 13,
+          "number": 39,
+          "problem": "Let $n\\ge2$ be an integer. A group is n-compact if, for every person, there are $n$ other people in the group who are pairwise acquainted. Find the largest possible integer $N$ such that every n-compact group of $N$ people contains $n+1$ pairwise acquainted people."
+        },
+        {
+          "day": 14,
+          "number": 40,
+          "problem": "Let $f:(0,\\infty)\\to\\mathbb R$ satisfy $f(x+y)=f\\left(\\frac{x+y}{xy}\\right)f(xy)$ for all positive real numbers $x,y$. Prove that $f(xy)=f(x)+f(y)$ for all positive real numbers $x,y$."
+        },
+        {
+          "day": 14,
+          "number": 41,
+          "problem": "Let $a,n$ be positive integers such that every prime factor of $a$ is greater than $n$. Prove that $n!\\mid(a-1)(a^2-1)\\cdots(a^n-1)$."
+        },
+        {
+          "day": 14,
+          "number": 42,
+          "problem": "Let $A_1,A_2,A_3,A_4$ be points in the plane with $A_4$ the centroid of triangle $A_1A_2A_3$. Find a point $A_5$ maximising $$\\frac{\\min_{1\\le i<j<k\\le5}A_iA_jA_k}{\\max_{1\\le i<j<k\\le5}A_iA_jA_k}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n\\ge2$. Write a permutation $\\sigma$ of $\\{1,2,\\ldots,n\\}$ as a product of disjoint cycles $C_1\\cdots C_k$ of lengths $c_1,\\ldots,c_k$. Call $\\sigma$ even or odd according to the parity of $\\sum_{i=1}^k(c_i-1)$. Prove that (a) exactly $n!/2$ permutations are even; and (b) if $n\\ge3$, a permutation is even if and only if it is a product of $3$-cycles."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Solve $\\lfloor x^2\\rfloor-\\lfloor-x^2\\rfloor-8\\lfloor x\\rfloor+2=0$ over the real numbers."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $M$ be the midpoint of side $BC$ of triangle $ABC$. Points $S\\in BM,T\\in CM$ satisfy $SM=MT$. Choose $P\\in AT,Q\\in AS$ with $\\angle PST=\\angle BAS$ and $\\angle QTS=\\angle CAT$. Lines $BQ,PC$ meet at $R$. Prove that $RM\\perp BC$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Does there exist a function $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ satisfying $f(n+7)=f(f(n))+f(n+5)$ for every positive integer $n$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a nonequilateral triangle, with incentre $I$ and circumcentre $O$. Prove that $\\angle AIO\\le90^\\circ$ if and only if $2BC\\le AB+AC$, and that equality occurs in both inequalities simultaneously."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A light bulb is placed at every vertex of a regular $n$-gon, whose sides and diagonals are drawn. Initially $k$ bulbs are on. In each step, erase a side or diagonal and switch the state of one of its endpoint bulbs. Find all $k$ for which, from any initial arrangement, one can make every bulb on and erase all diagonals."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $G=(V,E)$ be a simple graph with $n$ vertices and $m$ edges, containing no $4$-cycle. Write $d(x)$ for the degree of vertex $x$, the number of incident edges. Prove that (a) $\\sum_{x\\in V}\\binom{d(x)}2\\le\\binom n2$; and (b) $m\\le\\frac{n(1+\\sqrt{4n-3})}4$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $P(x),Q(x)$ have integer coefficients, with $P$ monic. Prove that there is a polynomial $R(x)$ with integer coefficients such that $P(x)$ divides $R(Q(x))$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Find, with proof, the least odd integer $a>5$ for which positive integers $m_1,m_2,n_1,n_2$ satisfy $a=m_1^2+n_1^2$, $a^2=m_2^2+n_2^2$, and $m_1-n_1=m_2-n_2$ is divisible by $3$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $a,b,c\\ge0$ with $a+b+c\\le3$. Prove that $$\\frac14a^2b(b\\sqrt c+3)^2+\\frac14b^2c(c\\sqrt a+3)^2+\\frac14c^2a(a\\sqrt b+3)^2\\le abc(ab^2+bc^2+ca^2)+3(a^2b+b^2c+c^2a)\\le12.$$"
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "(a) Find a continuous strictly decreasing function $f:\\mathbb R\\to\\mathbb R$ satisfying $f(f(x))=2012x+2555$ for all real $x$. (b) Find all continuous strictly decreasing functions $f:\\mathbb R\\to\\mathbb R$ satisfying $f(f(x))=x+2555$ for all real $x$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Let $ABC$ be acute with circumcentre $O$ and an interior point $P$. Lines $AP,BP,CP$ meet the circumcircle again at $A^{\\prime},B^{\\prime},C^{\\prime}$. Let $B_c,C_b,A_b,B_a,C_a,A_c$ be the circumcentres of $PBC^{\\prime},PCB^{\\prime},PAB^{\\prime},PBA^{\\prime},PCA^{\\prime},PAC^{\\prime}$, respectively. Prove that $B_cC_b,A_bB_a,C_aA_c$ concur at the midpoint of $OP$."
+        },
+        {
+          "day": 5,
+          "number": 13,
+          "problem": "Does there exist a convex equilateral $n$-gon with all vertices on $y=x^2$ for (a) $n=2012$; and (b) $n=2013$?"
+        },
+        {
+          "day": 5,
+          "number": 14,
+          "problem": "Find all pairs of functions $f,g:\\mathbb R\\to\\mathbb R$ satisfying $g(f(x+y))=f(x)+(2x+y)g(y)$ for all real numbers $x,y$."
+        },
+        {
+          "day": 5,
+          "number": 15,
+          "problem": "Let $p$ be an odd prime. For any integer $a$, put $S_a=\\frac a1+\\frac{a^2}2+\\cdots+\\frac{a^{p-1}}{p-1}$. Let integers $m,n$ satisfy $S_3+S_4-3S_2=\\frac mn$. Prove that $p\\mid m$."
+        },
+        {
+          "day": 6,
+          "number": 16,
+          "problem": "Let $a,b,c>0$ satisfy $\\min(a+b,b+c,c+a)>\\sqrt2$ and $a^2+b^2+c^2=3$. Prove that $$\\frac a{(b+c-a)^2}+\\frac b{(c+a-b)^2}+\\frac c{(a+b-c)^2}\\ge\\frac3{(abc)^2}.$$"
+        },
+        {
+          "day": 6,
+          "number": 17,
+          "problem": "Let $n>2$ be an integer and $\\Phi_n(x)$ the $n$th cyclotomic polynomial. (a) Prove that $\\Phi_n(a)>0$ for all real numbers $a$. (b) Find, with proof, $\\Phi_n(1)$ and $\\Phi_n(-1)$."
+        },
+        {
+          "day": 6,
+          "number": 18,
+          "problem": "Let $ABC$ be acute with circumcircle $\\Omega$. Let $B_0,C_0$ be the midpoints of $AC,AB$, $D$ the altitude foot from $A$, and $G$ the centroid. A circle through $B_0,C_0$ is tangent to $\\Omega$ at $X\\ne A$. Prove that $D,G,X$ are collinear."
+        },
+        {
+          "day": 7,
+          "number": 19,
+          "problem": "For a positive integer $d$, let $f(d)$ be the least positive integer having exactly $d$ positive divisors; for example, $f(1)=1$, $f(5)=16$, $f(6)=12$. Prove that $f(2^k)\\mid f(2^{k+1})$ for every integer $k\\ge0$."
+        },
+        {
+          "day": 7,
+          "number": 20,
+          "problem": "Let $G$ be a graph on vertex set $V$ with clique number $\\omega(G)=100$. Prove that $V$ can be partitioned into $V_1,V_2$ with $\\omega(G[V_1])=\\omega(G[V_2])=50$, where $G[V_i]$ is the induced subgraph. The clique number is the size of a largest clique."
+        },
+        {
+          "day": 7,
+          "number": 21,
+          "problem": "Let triangle $ABC$ have incentre $I$ and circumcircle $\\omega$. Lines $AI,BI$ meet $\\omega$ again at $D,E$. Chord $DE$ meets $AC,BC$ at $F,G$. The lines through $F$ parallel to $AD$ and through $G$ parallel to $BE$ meet at $P$. The tangents at $A,B$ meet at $K$. Prove that $AE,BD,KP$ are either parallel or concurrent."
+        },
+        {
+          "day": 8,
+          "number": 22,
+          "problem": "Prove that there are $1000$ consecutive positive integers containing exactly $25$ primes."
+        },
+        {
+          "day": 8,
+          "number": 23,
+          "problem": "Let $\\mathcal F$ be a convex figure. Prove that there is $C\\in\\mathcal F$ such that, for every chord $AB$ through $C$, $|AC|\\le\\frac23|AB|$. A chord is a segment whose endpoints lie on the boundary of the figure."
+        },
+        {
+          "day": 8,
+          "number": 24,
+          "problem": "Find all pairs $f,g:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ satisfying $$f^{g(n)+1}(n)+g^{f(n)}(n)=f(n+1)-g(n+1)+1$$ for every positive integer $n$. Here $f^k(n)$ denotes $k$ successive applications of $f$ to $n$."
+        },
+        {
+          "day": 9,
+          "number": 25,
+          "problem": "Given a positive integer $n$, prove that there are only finitely many monic polynomials of degree $n$ with integer coefficients whose zeros all lie in $\\{z\\in\\mathbb C:|z|\\le1\\}$. Also prove that every zero of each such polynomial has modulus $0$ or $1$."
+        },
+        {
+          "day": 9,
+          "number": 26,
+          "problem": "Let $a,b$ be positive integers. Suppose $\\gcd(\\Phi_a(t),\\Phi_b(t))>1$ for some positive integer $t$, where $\\Phi_j$ is the $j$th cyclotomic polynomial. Prove that $a/b=p^k$ for a prime $p$ and an integer $k$."
+        },
+        {
+          "day": 10,
+          "number": 27,
+          "problem": "Let $a,b,c>0$. Prove that $$\\frac{a\\sqrt{b^3+c^3}}{b^2+c^2}+\\frac{b\\sqrt{c^3+a^3}}{c^2+a^2}+\\frac{c\\sqrt{a^3+b^3}}{a^2+b^2}\\ge\\frac1{\\sqrt{2\\left(\\frac{a^5+b^5}{ab(a+b)}+\\frac{b^5+c^5}{bc(b+c)}+\\frac{c^5+a^5}{ca(c+a)}\\right)}}.$$"
+        },
+        {
+          "day": 10,
+          "number": 28,
+          "problem": "Let $t(k)$ be the largest odd divisor of a positive integer $k$. Find all positive integers $a$ for which there is a positive integer $n$ such that $t(n+a+j)-t(n+j)$ is divisible by $4$ for each $j=0,1,\\ldots,a-1$."
+        },
+        {
+          "day": 10,
+          "number": 29,
+          "problem": "Let $f$ be the largest size of a collection of $3$-element subsets of $\\{1,2,\\ldots,n\\}$ such that any two intersect in at most one element. Prove that $n^2-4n\\le6f\\le n^2-n$."
+        },
+        {
+          "day": 11,
+          "number": 30,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ for which some $g:\\mathbb R\\to\\mathbb R$ satisfies $f(x+y)f(x-y)=(x-y)g(x+y)$ for all real numbers $x,y$."
+        },
+        {
+          "day": 11,
+          "number": 31,
+          "problem": "Let $ABC$ have $AB=AC$, and let $D$ be the midpoint of $AC$. The bisector of $\\angle BAC$ meets the circle through $D,B,C$ at $E$ inside $ABC$. Line $BD$ meets the circle through $A,E,B$ again at $F$. Let $I=AF\\cap BE$ and $K=CI\\cap BD$. Prove that $I$ is the incentre of $KAB$."
+        },
+        {
+          "day": 11,
+          "number": 32,
+          "problem": "On a $2011\\times2011$ table place finitely many napkins, each covering a square of $52\\times52$ cells. In every cell write the number of napkins covering it. Let $k$ be the largest number of cells containing the same nonzero number. Over all napkin arrangements, find the largest possible $k$."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ satisfying $f(x+f(y))-f(x)=(x+f(y))^{2013}-x^{2013}$ for all real numbers $x,y$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n$ be a positive integer and $G=\\{z\\in\\mathbb C:z^n=1\\}$. Find all functions $f:G\\to\\mathbb Z$ satisfying (i) $f(z)=1$ if and only if $z=1$; and (ii) $f(z^k)=\\frac{f(z)}{\\gcd(f(z),k)}$ for all $z\\in G$ and all positive integers $k$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The incircle of triangle $ABC$, centred at $I$, touches $BC,CA,AB$ at $D,E,F$, respectively. A circle $k$ cuts segments $EF,FD,DE$ at $\\{X_1,X_2\\},\\{X_3,X_4\\},\\{X_5,X_6\\}$, respectively. Lines $X_1X_4,X_2X_5,X_3X_6$ all pass through the centre $G$ of $k$. (a) Prove that $A,D,G$ are collinear. (b) The lines through $G$ parallel to $DE,DF$ meet line $BC$ at $P,Q$, respectively. Prove that $IP=IQ$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all increasing functions $f:\\mathbb Z_{>0}\\to\\mathbb R$ satisfying $f(mn)=f(m)f(n)$ for all positive integers $m,n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all ordered pairs $(x,y)$ of positive integers satisfying $x^3+y^3=4(x^2y+y^2x-5)$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A stone on the coordinate plane may be moved from $(x,y)$ to $(x-z,y-z)$ for any positive integer $z$, or to either $(3x,y)$ or $(3y,x)$. Find all pairs of positive integers $(m,n)$ from which the stone can reach $(0,0)$ in finitely many moves."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $S$ be a set of students with $|S|\\ge4$. There is a positive integer $m$ with $3\\le m\\le|S|-1$ such that, for every $A\\subseteq S$ with $|A|=m$, exactly one student is friends with every student in $A$. No student is friends with themself. Prove that either (i) a subset $B\\subseteq S$ with $|B|=m+1$ consists of pairwise friends; or (ii) $|S|=m+1$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $M$ be the midpoint of the arc $BC$ not containing $A$ on the circumcircle of triangle $ABC$. Let $I$ be its incentre and $E,F$ the projections of $I$ onto $MB,MC$, respectively. Prove that $IE+IF\\le AM$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Find all ordered pairs $(a,b)$ of positive integers such that $n\\mid a^n+b^{n+1}$ for every positive integer $n$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $x,y,z>0$. Prove that $$\\frac{x^2}{y(x+y)+z(x+z)}+\\frac{y^2}{z(y+z)+x(y+z)}+\\frac{z^2}{x(z+x)+y(z+y)}\\ge\\frac{x}{(x+y)+(x+z)}+\\frac{y}{(y+z)+(y+x)}+\\frac{z}{(z+x)+(z+y)}.$$"
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Let $O,I$ be the circumcentre and incentre of a scalene triangle $ABC$. Its incircle touches $BC,CA,AB$ at $D,E,F$. Angle bisectors $AP,BQ,CR$ meet $BC,CA,AB$ at $P,Q,R$. The reflections of line $OI$ across lines $DE,DF$ meet at $X$. Prove that $P,Q,R,X$ are concyclic."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "There are $k\\ge2$ piles containing $n_1,\\ldots,n_k$ coins. A move chooses two piles with $a,b$ coins, where $a\\ge b$, and transfers $b$ coins from the first to the second. Find a necessary and sufficient condition on $n_1,\\ldots,n_k$ for all coins to be transferred into one pile by a sequence of moves."
+        },
+        {
+          "day": 5,
+          "number": 13,
+          "problem": "Let $P(x)\\in\\mathbb Q[x]$ be irreducible over $\\mathbb Q$. Suppose an irrational number $\\alpha$ satisfies $P(\\alpha)=P(-\\alpha)=0$. Prove that an irreducible polynomial $Q(x)\\in\\mathbb Q[x]$ exists with $P(x)=Q(x^2)$."
+        },
+        {
+          "day": 5,
+          "number": 14,
+          "problem": "Find all positive integers $n$ such that $\\left\\lfloor\\frac{1000000}{n}\\right\\rfloor-\\left\\lfloor\\frac{1000000}{n+1}\\right\\rfloor=1$."
+        },
+        {
+          "day": 5,
+          "number": 15,
+          "problem": "Let triangle $ABC$ have $AB>AC$. Its incircle touches $BC,CA,AB$ at $D,E,F$. The bisector of $\\angle BAC$ cuts $DE,DF$ at $K,L$. Let $M$ be the midpoint of $BC$ and $H$ the foot of the altitude from $A$. Prove that $\\angle MLK=\\angle MHK$."
+        },
+        {
+          "day": 6,
+          "number": 16,
+          "problem": "Let $P_1,\\ldots,P_n$, where $n\\ge3$, lie on a unit circle. Suppose that for every point $Q$ on this circle, $\\prod_{i=1}^n QP_i\\le2$. Prove that $P_1,\\ldots,P_n$ are the vertices of a regular $n$-gon."
+        },
+        {
+          "day": 6,
+          "number": 17,
+          "problem": "Find all functions $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ satisfying $$f\\left(2x+\\frac1{1+x+y}\\right)=f(x)+f\\left(x+\\frac1{1+x+y}\\right)$$ for all positive real numbers $x,y$."
+        },
+        {
+          "day": 6,
+          "number": 18,
+          "problem": "Let $S$ be the set of all positive integers with exactly $11$ decimal digits and $A\\subseteq S$. An element $x\\in A$ is lonely if $y+z$ does not divide $x$ for any $y,z\\in A$. If $A$ has at most $10$ lonely numbers, find the largest possible size of $A$."
+        },
+        {
+          "day": 7,
+          "number": 19,
+          "problem": "Find all triples $(x,y,z)$ of positive integers with $x\\le y\\le z$ and $x^3(y^3+z^3)=2012(xyz+2)$."
+        },
+        {
+          "day": 7,
+          "number": 20,
+          "problem": "Let $a,b,c>0$ and $abc=1$. Prove that $$\\frac1{1+a^4+(b^2+1)^2}+\\frac1{1+b^4+(c^2+1)^2}+\\frac1{1+c^4+(a^2+1)^2}\\le\\frac{a}{2b+c+3}+\\frac{b}{2c+a+3}+\\frac{c}{2a+b+3}.$$"
+        },
+        {
+          "day": 7,
+          "number": 21,
+          "problem": "Let triangle $ABC$ have circumcentre $O$ and incentre $I$. Points $D,E,F$ on $BC,CA,AB$ satisfy $BD+BF=CA$ and $CD+CE=AB$. The circumcircles of $BFD,CDE$ meet again at $P\\ne D$. Prove that $OP=OI$."
+        },
+        {
+          "day": 8,
+          "number": 22,
+          "problem": "Some cells of a $2556\\times2556$ square table are white and all remaining cells are red. Let $T$ count triples $(C_1,C_2,C_3)$ of cells whose first two are in the same row and last two in the same column, with $C_1,C_3$ white and $C_2$ red. Find the maximum possible $T$."
+        },
+        {
+          "day": 8,
+          "number": 23,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ such that $(f(x+y)+f(x-y))^2=4f(x)^2$ for all real numbers $x,y$."
+        },
+        {
+          "day": 8,
+          "number": 24,
+          "problem": "Let $x,y$ be positive integers. If $2^ny+1\\mid x^{2^n}-1$ for every positive integer $n$, prove that $x=1$."
+        },
+        {
+          "day": 9,
+          "number": 25,
+          "problem": "In the plane, $n\\ge4$ parallel line segments are placed so that every three can be intersected by one line. Prove that one line intersects all $n$ segments."
+        },
+        {
+          "day": 9,
+          "number": 26,
+          "problem": "Let $a,b,c>0$. Prove that $$32\\left(\\frac1{7+(a-3)^2}+\\frac1{7+(b-3)^2}+\\frac1{7+(c-3)^2}\\right)\\le\\frac{a^2+bc}{b+c}+\\frac{b^2+ca}{c+a}+\\frac{c^2+ab}{a+b}+6.$$"
+        },
+        {
+          "day": 9,
+          "number": 27,
+          "problem": "In an acute triangle $ABC$, let $D,E,F$ be the feet of the altitudes from $A,B,C$. Let $I_1,I_2$ be the incentres of $AEF,BDF$, and $O_1,O_2$ the circumcentres of $ACI_1,BCI_2$, respectively. Prove that $I_1I_2\\parallel O_1O_2$."
+        },
+        {
+          "day": 10,
+          "number": 28,
+          "problem": "Let triangle $ABC$ have $AB\\ne AC$ and circumcentre $O$. The bisector of $\\angle BAC$ meets $BC$ at $D$. Reflect $D$ across the midpoint of $BC$ to obtain $E$. The lines through $D,E$ perpendicular to $BC$ meet $AO,AD$ at $X,Y$, respectively. Prove that $BXCY$ is cyclic."
+        },
+        {
+          "day": 10,
+          "number": 29,
+          "problem": "Let $(a_1,\\ldots,a_{2n})$ be a permutation of $\\{1,\\ldots,2n\\}$ such that the values $|a_{i+1}-a_1|$, for $1\\le i\\le2n-1$, are distinct. Prove that $a_1-a_{2n}=n$ if and only if $1\\le a_{2k}\\le n$ for each $1\\le k\\le n$."
+        },
+        {
+          "day": 10,
+          "number": 30,
+          "problem": "Let $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$, and write $f^m$ for its $m$-fold iterate. For every positive integer $n$, suppose there is a positive integer $k$ with $f^{2k}(n)=n+k$. Let $k_n$ be the least such positive integer. Prove that $k_1,k_2,\\ldots$ is unbounded."
+        },
+        {
+          "day": 11,
+          "number": 31,
+          "problem": "Does a partition of $\\mathbb Q$ into three nonempty subsets $A,B,C$ exist for which $A+B,B+C,C+A$ are pairwise disjoint? Here $X+Y=\\{x+y:x\\in X,y\\in Y\\}$."
+        },
+        {
+          "day": 11,
+          "number": 32,
+          "problem": "An integer $a$ is fossil if $(m^2+n)(n^2+m)=a(m-n)^3$ has a solution in positive integers $m,n$. (a) Prove that at least $500$ integers in $\\{1,\\ldots,2012\\}$ are fossil. (b) Determine whether $a=2$ is fossil."
+        },
+        {
+          "day": 11,
+          "number": 33,
+          "problem": "Let $S$ be a finite set of positive integers whose smallest and largest elements are relatively prime. Let $S_n$ consist of all positive integers expressible as sums of at most $n$ elements of $S$, with repetition allowed, and let $a=\\max S$. Prove that a positive integer $k$ exists such that $|S_{m+1}|-|S_m|=a$ for every integer $m>k$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a,b,c>0$ satisfy $a+b+c=abc$. Prove that $$\\frac{a(a+b)+b(b+c)+c(c+a)-3}{5}\\ge\\frac{ab^2+bc^2+ca^2}{a+b+c}\\ge\\sqrt{\\frac{2a}{b+c}}+\\sqrt{\\frac{2b}{c+a}}+\\sqrt{\\frac{2c}{a+b}}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f:(0,\\infty)\\to\\mathbb R$ be continuous, with $f(x+y)\\le f(x)+f(y)$ for all $x,y>0$ and $f(2556x)=2556f(x)$ for all $x>0$. Prove that $f(x)=f(1)x$ for every $x>0$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The incircle $\\gamma$ of triangle $ABC$ touches $BC,CA,AB$ at $A_1,B_1,C_1$. Let $\\omega_A$ be the unique circle through $B,C$ tangent to $\\gamma$. The line through $A_1$ and the tangency point of $\\gamma,\\omega_A$ meets $\\omega_A$ again at $M_A$. Define $M_B,M_C$ analogously. Prove that (a) $A_1M_A,B_1M_B,C_1M_C$ concur at a point $K$; and (b) $K,I,O$ are collinear and $\\frac{KO}{KI}=\\frac{R(M_AM_BM_C)}{r(ABC)}$, where $I,O$ are the incentre and circumcentre of $ABC$, and $R(XYZ),r(XYZ)$ are the circumradius and inradius of triangle $XYZ$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Choose $2^{2n-1}+1$ odd integers between $2^{2n}$ and $2^{3n}$. Prove that two of them, $x,y$, satisfy $x\\nmid y^2$ and $y\\nmid x^2$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be scalene, with incentre $I$ and excentres $I_b,I_c$ opposite $B,C$. The perpendiculars from $I_b$ to $AC$ and from $I_c$ to $AB$ meet at $D$. The bisectors of $\\angle BI_bD,\\angle CI_cD$ meet at $G$. The line through $G$ parallel to $AI$ meets $I_bI_c$ at $H$. Prove that the circle with centre $G$ and radius $GH$ is tangent to the circumcircle of $ABC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $(a_n),(b_n)$ be integer sequences with $|a_{n+2}-a_n|\\le2$ and $a_m+a_n=b_{m^2+n^2}$ for all positive integers $m,n$. Prove that $(a_n)$ contains at most six distinct values."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Find all odd primes $p$ for which both $1+p+p^2+\\cdots+p^{p-1}$ and $1-p+p^2-p^3+\\cdots-p^{p-2}+p^{p-1}$ are prime."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $M$ lie on the circumcircle of triangle $ABC$. The tangents from $M$ to its incircle meet $BC$ at $X_1,X_2$. Prove that the second intersection, distinct from $M$, of the circumcircles of $MX_1X_2$ and $ABC$ is the point where the $A$-mixtilinear incircle touches the circumcircle of $ABC$. The $A$-mixtilinear incircle is tangent to lines $AB,AC$ and internally tangent to the circumcircle of $ABC$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $a,b,c>0$. Prove that $$\\sqrt[3]{a^2b^2}+\\sqrt[3]{b^2c^2}+\\sqrt[3]{c^2a^2}\\le\\frac{a(b+c)}{\\sqrt[3]{a^4}+\\sqrt[3]{b^2c^2}}+\\frac{b(c+a)}{\\sqrt[3]{b^4}+\\sqrt[3]{c^2a^2}}+\\frac{c(a+b)}{\\sqrt[3]{c^4}+\\sqrt[3]{a^2b^2}}\\le\\sqrt[3]{a^4}+\\sqrt[3]{b^4}+\\sqrt[3]{c^4}.$$"
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "Each entry of a $17\\times17$ matrix belongs to $\\{1,2,\\ldots,17\\}$, and each integer occurs exactly $17$ times. Prove that some row or column contains at least five distinct numbers."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Let $a,b,c$ be positive integers with $ac=b^2+b+1$. Prove that $ax^2-(2b+1)xy+cy^2=1$ has a solution in positive integers $x,y$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Let $ABC$ be acute, with circumcentre $O$, orthocentre $H$ and nine-point centre $N$. Let $P$ be the second intersection of $AO$ with the circumcircle of $BOC$, and let $Q$ be the reflection of $A$ across $BC$. Prove that the midpoint of $PQ$ lies on $AN$."
+        },
+        {
+          "day": 4,
+          "number": 13,
+          "problem": "Every pair among $n$ towns is connected by a one-way or two-way road. For every $k$ towns, there is a round trip through each of those $k$ towns exactly once. Find the largest possible number of one-way roads."
+        },
+        {
+          "day": 4,
+          "number": 14,
+          "problem": "Find all positive integers $n$ for which $\\prod_{j=1}^n\\left(j^4+\\frac14\\right)$ is the square of a rational number."
+        },
+        {
+          "day": 4,
+          "number": 15,
+          "problem": "Find all functions $f:\\mathbb Q\\to\\mathbb Q$ satisfying $f(xy)+f(x+y)=1+f(x)f(y)$ for all rational numbers $x,y$."
+        },
+        {
+          "day": 5,
+          "number": 16,
+          "problem": "Let $\\omega$ be the circumcircle of triangle $ABC$. Let $M,N$ be the midpoints of $AB,AC$ and $T$ the midpoint of the arc $BC$ not containing $A$. The circumcircles of $AMT,ANT$ meet the perpendicular bisectors of $AC,AB$ at $X,Y$, respectively, where $X,Y$ lie inside $ABC$. Lines $MN,XY$ meet at $K$. Prove that $KA=KT$."
+        },
+        {
+          "day": 5,
+          "number": 17,
+          "problem": "Let $a,b,c,d>0$ satisfy $a^3+b^3+c^3+d^3\\le4$. Prove that $\\frac1{\\sqrt{abc}}+\\frac1{\\sqrt{abd}}+\\frac1{\\sqrt{acd}}+\\frac1{\\sqrt{bcd}}\\ge a+b+c+d$."
+        },
+        {
+          "day": 5,
+          "number": 18,
+          "problem": "Let $R(x)=F(x)/G(x)$, where $F,G$ are polynomials with integer coefficients having no common root modulo any prime $p$. For a positive integer $n$, let $Q$ be the $n$-fold iterate of $R$. If an integer $k$ satisfies $Q(k)=k$, prove that $R(R(k))=k$."
+        },
+        {
+          "day": 6,
+          "number": 19,
+          "problem": "Let $f:\\mathbb Q\\to\\mathbb Z$. Prove that distinct rational numbers $p,q$ exist with $\\frac{f(p)+f(q)}2\\le f\\left(\\frac{p+q}2\\right)$."
+        },
+        {
+          "day": 6,
+          "number": 20,
+          "problem": "In quadrilateral $ABCD$, diagonal $AC$ bisects $\\angle BAD$ and $BD$ bisects $\\angle ABC$. A rhombus $KLMN$ is inscribed with its vertices on different sides of $ABCD$. Prove that its nonobtuse angle $\\varphi$ satisfies $\\varphi\\le\\max\\{\\angle BAD,\\angle ABC\\}$."
+        },
+        {
+          "day": 6,
+          "number": 21,
+          "problem": "There are $n$ piles of books, each nonempty. Peter rearranges the books into $n+1$ nonempty piles. A book is lucky if its new pile contains fewer books than its original pile. Prove that at least two books are lucky."
+        },
+        {
+          "day": 7,
+          "number": 22,
+          "problem": "Find all functions $f:\\mathbb Z\\to\\mathbb R$ such that $f(k)\\le2557$ and $f(k)\\le\\frac{f(k-1)+f(k+1)}2$ for every integer $k$."
+        },
+        {
+          "day": 7,
+          "number": 23,
+          "problem": "Does an infinite sequence of nonzero decimal digits $a_1,a_2,\\ldots$ and a positive integer $N$ exist such that, for every integer $k>N$, the number $\\overline{a_ka_{k-1}\\cdots a_1}$ is a perfect square?"
+        },
+        {
+          "day": 7,
+          "number": 24,
+          "problem": "Let $ABC$ be scalene, with incircle centred at $I$ of radius $r$, touching $BC,CA,AB$ at $X,Y,Z$. Choose $X_1,Y_1,Z_1$ on rays $IX,IY,IZ$ with $IX_1=IY_1=IZ_1=2r$. Prove that (a) $AX_1,BY_1,CZ_1$ concur at a point $Q$; and (b) if $O$ is the circumcentre of $ABC$ and $P$ is the intersection of $OI$ with the reflection of $AQ$ across $AI$, then $\\angle PCI=\\angle ICQ$."
+        },
+        {
+          "day": 8,
+          "number": 25,
+          "problem": "Let $a,b,c$ be positive integers with $0<a^2+b^2-abc\\le c$. Prove that $a^2+b^2-abc$ is a perfect square."
+        },
+        {
+          "day": 8,
+          "number": 26,
+          "problem": "Prove that the nine-point circle of the triangle formed by the diagonals of a complete quadrilateral passes through its Miquel point. If the complete quadrilateral is formed by $A,B,C,D,E=AB\\cap CD,F=AD\\cap BC$, its diagonals are $AC,BD,EF$, and its Miquel point is the common point of the circumcircles of $ADE,BCE,ABF,CDF$."
+        },
+        {
+          "day": 8,
+          "number": 27,
+          "problem": "(a) Prove that every convex polyhedron with no quadrilateral or pentagonal face has at least four triangular faces. (b) Let $P$ contain $2557$ distinct primes. Let $A$ consist of all products of $1278$ elements of $P$, and $B$ of all products of $1279$ elements. Prove that an injective function $f:A\\to B$ exists with $a\\mid f(a)$ for every $a\\in A$."
+        },
+        {
+          "day": 9,
+          "number": 28,
+          "problem": "Find all functions $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ satisfying $x^2+f(y)\\mid xf(x)+y$ for all positive integers $x,y$."
+        },
+        {
+          "day": 9,
+          "number": 29,
+          "problem": "Let $G$ be a finite undirected graph. Two operations are permitted: (i) delete a vertex of odd degree and all its incident edges; (ii) make a copy $V^{\\prime}$ of each vertex $V$, joining $V^{\\prime},W^{\\prime}$ exactly when $V,W$ are adjacent and also joining each $V^{\\prime}$ to $V$, with no other changes to the edges. Prove that finitely many operations can produce a graph with no edges."
+        },
+        {
+          "day": 9,
+          "number": 30,
+          "problem": "Let $ABCD$ be a tangential quadrilateral that is not a trapezoid. Extensions of $AD,BC$ meet at $E$ and extensions of $AB,CD$ meet at $F$, so exactly one of triangles $AEF,CEF$ lies outside $ABCD$. The incircle of $AEF$ touches lines $AD,AB$ at $K,L$; the incircle of $CEF$ touches $BC,CD$ at $M,N$. (a) Prove that $K,L,M,N$ are concyclic. (b) Prove that $ABCD$ is cyclic if and only if $KN\\perp LM$. A tangential quadrilateral has a circle inside it tangent to all four sides."
+        },
+        {
+          "day": 10,
+          "number": 31,
+          "problem": "Let $x,y,z>0$. Prove that $$\\frac{3x}{4x^2+4y^2+z^2}+\\frac{3y}{4y^2+4z^2+x^2}+\\frac{3z}{4z^2+4x^2+y^2}\\le\\sqrt{\\frac1{x^2+xy+y^2}+\\frac1{y^2+yz+z^2}+\\frac1{z^2+zx+x^2}}.$$"
+        },
+        {
+          "day": 10,
+          "number": 32,
+          "problem": "Let $ABCD$ be cyclic. Let $M$ consist of the $16$ centres of the incircles and excircles of $BCD,ACD,ABD,ABC$. Prove that two sets $K,L$, each of four parallel lines, exist such that every line in $K\\cup L$ contains exactly four points of $M$."
+        },
+        {
+          "day": 10,
+          "number": 33,
+          "problem": "Find all integers $x,y$ satisfying $xy-7\\sqrt{x^2+y^2}=1$."
+        },
+        {
+          "day": 11,
+          "number": 34,
+          "problem": "Let $ABC$ be scalene, with circumcircle $\\omega$ and circumcentre $O$. Let $M$ be the midpoint of $BC$, with $M\\ne O$. The circumcircle of $OAM$ meets $\\omega$ again at $D\\ne A$. Prove that (a) the tangents to $\\omega$ at $A,D$ meet on $BC$; and (b) triangles $AMB,ACD,DMB$ are similar."
+        },
+        {
+          "day": 11,
+          "number": 35,
+          "problem": "Let $L(k)$ denote the largest prime divisor of $k$. Prove that infinitely many positive integers $n$ satisfy $L(n^4+n^2+1)=L((n+1)^4+(n+1)^2+1)$."
+        },
+        {
+          "day": 11,
+          "number": 36,
+          "problem": "Find all functions $f:\\mathbb Z_{\\ge0}\\to\\mathbb Z_{\\ge0}$ satisfying $f(f(f(n)))=f(n+1)+1$ for every nonnegative integer $n$."
+        },
+        {
+          "day": 12,
+          "number": 37,
+          "problem": "Prove that among any $2000$ distinct real numbers there are two pairs $a>b$ and $c>d$, with $a\\ne c$ or $b\\ne d$, such that $\\left|\\frac{a-b}{c-d}-1\\right|<\\frac1{100000}$."
+        },
+        {
+          "day": 12,
+          "number": 38,
+          "problem": "Let triangle $ABC$ have $\\angle B>\\angle C$. Distinct points $P,Q$ on $AC$ satisfy $\\angle PBA=\\angle QBA=\\angle ACB$, with $A$ between $P,C$. Suppose an interior point $D$ of segment $BQ$ satisfies $PD=PB$. Ray $AD$ meets the circumcircle of $ABC$ again at $R\\ne A$. Prove that $QB=QR$."
+        },
+        {
+          "day": 12,
+          "number": 39,
+          "problem": "Some pairs of cities in a country are connected by direct two-way flights, and every city is reachable from every other. The distance between cities is the smallest number of flights needed to travel between them. For every city, at most $100$ cities are at distance exactly three. Prove that no city has more than $2550$ cities at distance exactly four."
+        },
+        {
+          "day": 13,
+          "number": 40,
+          "problem": "A graph has $mn$ edges and admits an edge colouring with $m$ colours in which incident edges have different colours. Prove that such a colouring exists with exactly $n$ edges of every colour."
+        },
+        {
+          "day": 13,
+          "number": 41,
+          "problem": "Let $a,b,c>0$. Prove that $$\\frac{a}{5+a^4+b^3}+\\frac{b}{5+b^4+c^3}+\\frac{c}{5+c^4+a^3}\\le\\frac17\\left(\\sqrt{\\frac{a^2+2b^2}{a^2+bc+ca}}+\\sqrt{\\frac{b^2+2c^2}{b^2+ca+ab}}+\\sqrt{\\frac{c^2+2a^2}{c^2+ab+bc}}\\right).$$"
+        },
+        {
+          "day": 13,
+          "number": 42,
+          "problem": "A convex polygon can cover every triangle whose side lengths are at most $1$. Prove that its area is at least $\\frac12\\cos10^\\circ$."
+        },
+        {
+          "day": 14,
+          "number": 43,
+          "problem": "Prove that every positive rational number $r$ can be written as $r=\\frac{a^3+b^3}{c^3+d^3}$ with positive integers $a,b,c,d$."
+        },
+        {
+          "day": 14,
+          "number": 44,
+          "problem": "Let $I,I_A,O$ be the incentre, $A$-excentre and circumcentre of triangle $ABC$. On its circumcircle $\\omega$, let $M$ be the midpoint of the arc $BC$ not containing $A$ and $K$ the midpoint of an arc $AM$. Lines $KI,KI_A$ meet $\\omega$ again at $P\\ne K,Q\\ne K$. Let $N=AM\\cap BC$. Prove that $P,Q,N$ are collinear."
+        },
+        {
+          "day": 14,
+          "number": 45,
+          "problem": "Prove that every positive integer is the difference of two relatively prime composite positive integers."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be inscribed in a circle $\\omega$. The symmedians from $B$ in triangles $ABD,CBD$ meet $\\omega$ again at $P,Q$. Let $X=CP\\cap AB$ and $Y=AQ\\cap BC$. Prove that $X,D,Y$ are collinear. A symmedian is the reflection of a median across the internal angle bisector."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Any six members of a group of seven people can be seated around a round table with friends in every pair of neighbouring seats. Prove that all seven can be seated with the same property. Friendship is mutual."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all primes $p\\le q\\le r$ for which positive integers $a,b,c,x,y$ exist with $p^aq^br^c=7^{2x}-2^{2y}7^{2x}-10^{2x}+2^{2x+2y}25^x$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $a,b,c$ be positive integers with $a+b+c=\\frac1a+\\frac1b+\\frac1c$. Prove that $$\\frac{2a^2}{\\sqrt{a^2+b^2}}+\\frac{2b^2}{\\sqrt{b^2+c^2}}+\\frac{2c^2}{\\sqrt{c^2+a^2}}\\ge\\sqrt{\\frac{a^2+3}2}+\\sqrt{\\frac{b^2+3}2}+\\sqrt{\\frac{c^2+3}2}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the least positive integer $k$ for which integer-coefficient polynomials $f,g$ satisfy $f(X)(X+1)^{2014}+g(X)(X^{2014}+1)=k$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all continuous functions $f:\\mathbb R\\to\\mathbb R$ satisfying $f(x+f(x+2557)+2557)=f(x+2557)$ for every real number $x$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Three balls initially bear the numbers $56,2014,2557$. Each minute Susan chooses a ball bearing $c$ and replaces that number by $1/[c(a+b)]$, where $a,b$ are the numbers on the other balls. Can the three numbers become $56,2015,2558$?"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "An interior point $P$ of triangle $ABC$ has cevians $AA^{\\prime},BB^{\\prime},CC^{\\prime}$ dividing $ABC$ into six triangles. Prove that their circumcentres are concyclic if and only if $P$ is the centroid of $ABC$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $P$ be an integer-coefficient polynomial and $x_1,\\ldots,x_{2015}$ distinct integers with $1\\le P(x_i)\\le2014$ for every $i$. Prove that $P(x_1)=\\cdots=P(x_{2015})$."
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "Find the maximum number of cells that can be coloured on an $8\\times8$ board so that every cell has at most one coloured adjacent cell. Two cells are adjacent if they share a side."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Let triangle $ABC$ have $\\angle ACB=60^\\circ$. Choose $D\\in BC,E\\in AC$ with $\\frac{AE}{BD}=\\frac{BC}{CE}-1$. Let $P=AD\\cap BE$, and let the circumcircles of $AEP,BDP$ meet again at $Q\\ne P$. Prove that $QE\\parallel BC$."
+        },
+        {
+          "day": 3,
+          "number": 12,
+          "problem": "Let $S$ be a nonempty finite set of positive integers. A nonempty subset $T=\\{t_1,\\ldots,t_k\\}$ has score $(-2)^k\\gcd(t_1,\\ldots,t_k)$. Prove that the sum of all nonempty-subset scores is negative."
+        },
+        {
+          "day": 3,
+          "number": 13,
+          "problem": "Let $n\\ge2$ and let $A=\\{a_1,\\ldots,a_n\\},B=\\{b_1,\\ldots,b_n\\}$ be distinct sets of positive integers with $\\{a_i+a_j:1\\le i<j\\le n\\}=\\{b_i+b_j:1\\le i<j\\le n\\}$. Find all possible $n$."
+        },
+        {
+          "day": 4,
+          "number": 14,
+          "problem": "Let $a,b_1,c_1,\\ldots,b_n,c_n$ be real numbers with $$x^{2n}+ax^{2n-1}+ax^{2n-2}+\\cdots+ax+1=\\prod_{i=1}^n(x^2+b_ix+c_i)$$ for every real number $x$. Prove that $c_1=\\cdots=c_n=1$."
+        },
+        {
+          "day": 4,
+          "number": 15,
+          "problem": "Let $\\Omega,O$ be the circumcircle and circumcentre of an acute triangle $ABC$ with $AB>BC$. The bisector of $\\angle ABC$ meets $\\Omega$ again at $M\\ne B$. Let $\\Gamma$ have diameter $BM$. The bisectors of $\\angle AOB,\\angle BOC$ meet $\\Gamma$ at $P,Q$. Choose $R\\in PQ$ with $BR=MR$. Prove that $BR\\parallel AC$."
+        },
+        {
+          "day": 4,
+          "number": 16,
+          "problem": "Colour $S=\\{1,\\ldots,n\\}$ with three colours, using each at most $n/2$ times. Let $A$ consist of ordered quadruples $(a,b,c,d)\\in S^4$ with $n\\mid a+b+c+d$ and all four entries of the same colour. Let $B$ consist of those with $n\\mid a+b+c+d$, where $a,b$ have one colour and $c,d$ have another. Prove that $|B|\\ge|A|$."
+        },
+        {
+          "day": 5,
+          "number": 17,
+          "problem": "Find all positive integer pairs $(x,y)$ satisfying $\\sqrt[3]{7x^2-13xy+7y^2}=|x-y|+1$."
+        },
+        {
+          "day": 5,
+          "number": 18,
+          "problem": "Let $a,b,c\\in[0,1]$. Prove that $\\frac{a+b}{\\sqrt{2c^2+3}}+\\frac{b+c}{\\sqrt{2a^2+3}}+\\frac{c+a}{\\sqrt{2b^2+3}}\\le\\frac6{\\sqrt5}$."
+        },
+        {
+          "day": 5,
+          "number": 19,
+          "problem": "Let triangle $ABC$ have orthocentre $H$, incentre $I$, circumcentre $O$, and incircle tangency point $K$ on $BC$. If $IO\\parallel BC$, prove that $AO\\parallel HK$."
+        },
+        {
+          "day": 6,
+          "number": 20,
+          "problem": "Let triangle $ABC$, with $AB>BC$, be inscribed in $\\omega$. Choose $M\\in AB,N\\in BC$ with $AM=CN$. Let $K=MN\\cap AC$, and let $S$ be the midpoint of the arc $AC$ containing $B$. The circle with diameter $KS$ meets $MN$ at $T$ and the bisector of $\\angle MKA$ at $D$. (a) Prove that $MT=TN$. (b) Let $P$ be the incentre of $CKN$ and $Q$ the $K$-excentre of $AKM$. Prove that $DP=DQ$."
+        },
+        {
+          "day": 6,
+          "number": 21,
+          "problem": "Students are divided among three classrooms. For each pair of students from different classrooms, exactly $10$ students in the third classroom are friends with both, and exactly $10$ are friends with neither. Find the total number of students."
+        },
+        {
+          "day": 6,
+          "number": 22,
+          "problem": "Consider all real-coefficient polynomials $P$ for which, for every pair of real numbers $x,y$, $|y^2-P(x)|\\le2|x|$ if and only if $|x^2-P(y)|\\le2|y|$. Find all possible values of $P(0)$."
+        },
+        {
+          "day": 7,
+          "number": 23,
+          "problem": "Find all nondecreasing functions $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ with $f(1)=1$, $f(n+f(n)+1)=f(n)+1$ and $f(m)f(n)\\le f(2mn+m+n)$ for all positive integers $m,n$."
+        },
+        {
+          "day": 7,
+          "number": 24,
+          "problem": "Find necessary and sufficient conditions for a prime $p$ to have the form $p=x^2+xy+y^2$ with integers $x,y$."
+        },
+        {
+          "day": 7,
+          "number": 25,
+          "problem": "A convex quadrilateral $ABCD$ has $\\angle ABC=\\angle CDA=90^\\circ$. Let $H$ be the foot of the perpendicular from $A$ to $BD$. Choose $S\\in AB,T\\in AD$ so that $H$ lies inside $SCT$ and $\\angle CHS-\\angle CSB=90^\\circ$, $\\angle THC-\\angle DTC=90^\\circ$. Prove that $BD$ is tangent to the circumcircle of $TSH$."
+        },
+        {
+          "day": 8,
+          "number": 26,
+          "problem": "Colour $S=\\{1,\\ldots,2015\\}$ red or blue. An operation chooses an element and switches its colour together with the colours of all elements not relatively prime to it. Initially all elements are red. Can finitely many operations make all elements blue?"
+        },
+        {
+          "day": 8,
+          "number": 27,
+          "problem": "Let $n$ be an integer. Prove that there is exactly one integer sequence $x_0,x_1,\\ldots$ with $0\\le x_i<2015$ and $n=x_0(-2015)^0+x_1(-2015)^1+x_2(-2015)^2+\\cdots$."
+        },
+        {
+          "day": 8,
+          "number": 28,
+          "problem": "Let $M$ lie inside a convex quadrilateral $ABCD$. Its projections onto $AB,BC,CD,DA$ lie on a circle with centre $O$. Reflect $M$ across $O$ to obtain $N$. Prove that the projections of $B$ onto lines $AM,AN,CM,CN$ are concyclic."
+        },
+        {
+          "day": 9,
+          "number": 29,
+          "problem": "Let $ABCD$ be convex with $\\angle DAB=180^\\circ-2\\angle BCD$. The incircle of $ABD$ touches $AB,AD$ at $P,Q$. Prove that the circumcircles of $APQ,BCD$ are tangent."
+        },
+        {
+          "day": 9,
+          "number": 30,
+          "problem": "Find all positive real numbers $x,y,z,w$ satisfying $$\\frac{x^2-yw}{y+2z+w}+\\frac{y^2-zx}{z+2w+x}+\\frac{z^2-wy}{w+2x+y}+\\frac{w^2-xz}{x+2y+z}=0.$$"
+        },
+        {
+          "day": 9,
+          "number": 31,
+          "problem": "Find all integers $a,b$ such that $a^3-a+9=5b^2$."
+        },
+        {
+          "day": 10,
+          "number": 32,
+          "problem": "Points $K,L,M$ lie on segments $BC,CA,AB$ of triangle $ABC$, respectively, with $AK,BL,CM$ concurrent. Prove that two of $ALM,BMK,CKL$ can be chosen whose inradii sum to at least the inradius of $ABC$."
+        },
+        {
+          "day": 10,
+          "number": 33,
+          "problem": "The price of a real sequence $(x_1,\\ldots,x_n)$ is $\\max_{1\\le i\\le n}|x_1+\\cdots+x_i|$. Given $n$ real numbers, Dave checks every ordering and obtains the minimum price $D$. George chooses $x_1$ with minimum $|x_1|$, then at step $i$ chooses a remaining number $x_i$ minimizing $|x_1+\\cdots+x_i|$, breaking ties randomly. His resulting price is $G$. Find the least constant $c$ such that $G\\le cD$ for every positive integer $n$, every collection of $n$ real numbers, and every possible ordering produced by George."
+        },
+        {
+          "day": 10,
+          "number": 34,
+          "problem": "Find all functions $f:\\mathbb Z\\to\\mathbb Z$ with $f(f(m)+n)+f(m)=f(n)+f(3m)+2014$ for all integers $m,n$."
+        },
+        {
+          "day": 11,
+          "number": 35,
+          "problem": "Inside a rectangle $R$ are $n$ points, no two on a line parallel to a side of $R$. Dissect $R$ into smaller rectangles whose sides are parallel to those of $R$, with no given point inside a piece. Prove that at least $n+1$ pieces are required."
+        },
+        {
+          "day": 11,
+          "number": 36,
+          "problem": "Let $n>1$ be an integer. Prove that infinitely many terms $a_k=\\left\\lfloor\\frac{n^k}{k}\\right\\rfloor$, $k\\ge1$, are odd."
+        },
+        {
+          "day": 11,
+          "number": 37,
+          "problem": "Let $ABC$ be a fixed acute triangle. For points $E\\in AC,F\\in AB$, let $M$ be the midpoint of $EF$, and let its perpendicular bisector meet $BC$ at $K$. The perpendicular bisector of $MK$ meets $AC,AB$ at $S,T$. Call $(E,F)$ interesting if $KSAT$ is cyclic. If $(E_1,F_1)$ and $(E_2,F_2)$ are interesting, prove that $\\frac{E_1E_2}{AB}=\\frac{F_1F_2}{AC}$."
+        }
+      ]
+    }
+  ]
+}
