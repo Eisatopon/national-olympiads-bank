@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 9652,
-  "distinct_statement_reviewed": 9652,
+  "active_records": 9672,
+  "distinct_statement_reviewed": 9672,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -253,6 +253,10 @@
     "Italy-preimo-tst-problems.json": {
       "stored_statements_reviewed": 60,
       "source_fidelity_review_complete": true
+    },
+    "Thailand-tmo-problems.json": {
+      "stored_statements_reviewed": 20,
+      "source_fidelity_review_complete": true
     }
   },
   "completed_batches": {
@@ -273,9 +277,10 @@
     "thematic_final_575": 575,
     "sweden_smt_import": 114,
     "belgium_omb_maxi_import": 20,
-    "italy_preimo_tst_import": 60
+    "italy_preimo_tst_import": 60,
+    "thailand_tmo_supplied_import": 20
   },
-  "note": "All 9,652 active records have thematic review metadata. Italy PreIMO TST adds 60 source-compared English translations for 2010–2019. China remains quarantined. Thematic and source fidelity reviews do not imply solution verification.",
+  "note": "All 9,672 active records have thematic review metadata. Thailand TMO adds 20 source-compared English statements for 2021 and 2023. The 33-document Thailand PDF archive is separate and does not inflate the active problem total. China remains quarantined. Reviews do not certify solutions.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
