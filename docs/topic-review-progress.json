@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "active_records": 9592,
-  "distinct_statement_reviewed": 9592,
+  "active_records": 9652,
+  "distinct_statement_reviewed": 9652,
   "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
   "whole_bank_review_complete": true,
@@ -249,6 +249,10 @@
     "Belgium-omb-maxi-problems.json": {
       "stored_statements_reviewed": 20,
       "source_fidelity_review_complete": true
+    },
+    "Italy-preimo-tst-problems.json": {
+      "stored_statements_reviewed": 60,
+      "source_fidelity_review_complete": true
     }
   },
   "completed_batches": {
@@ -268,9 +272,10 @@
     "thematic_batch_1000_8": 1000,
     "thematic_final_575": 575,
     "sweden_smt_import": 114,
-    "belgium_omb_maxi_import": 20
+    "belgium_omb_maxi_import": 20,
+    "italy_preimo_tst_import": 60
   },
-  "note": "All 9,592 active records have thematic review metadata. Sweden and Belgium add 134 source-compared English translations. China remains quarantined. Thematic review and source fidelity do not imply solution verification.",
+  "note": "All 9,652 active records have thematic review metadata. Italy PreIMO TST adds 60 source-compared English translations for 2010–2019. China remains quarantined. Thematic and source fidelity reviews do not imply solution verification.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {
