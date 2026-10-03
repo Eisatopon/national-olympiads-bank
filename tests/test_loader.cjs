@@ -24,7 +24,10 @@ assert.equal(context.topicFields('A triangle.', 'Algebra').topic, 'Algebra');
   assert.equal(context.cache.has('bad'), false);
   await assert.rejects(context.loadCountry('cn'), /under review/);
   assert.equal(calls, 1);
-  context.fetch = async () => ({ok:true,text:async()=>JSON.stringify({years:[{year:2025,problems:[{number:1,problem:'First',category:'Algebra'}]}]})});
+  context.fetch = async url => {
+    assert.equal(url, './ok.json?v=20261003-gapfill4', 'Collection requests must use the deployed data version to avoid stale country files');
+    return {ok:true,text:async()=>JSON.stringify({years:[{year:2025,problems:[{number:1,problem:'First',category:'Algebra'}]}]})};
+  };
   await context.loadCountry('ok');
   assert.equal(context.byUid.get('ok.2025.0.1').text, 'First');
   assert.equal(context.byUid.get('ok.2025.0.1').topic, 'Algebra');
