@@ -112,6 +112,7 @@
     --huo: #a0522d; --huo-ink: #6b3519; --huo-tint: #f6e9e1;
     --cl: #745a9c; --cl-ink: #483267; --cl-tint: #f0eaf7;
     --uy: #247d86; --uy-ink: #135860; --uy-tint: #e1f2f3;
+    --thst: #267f88; --thst-ink: #185d65; --thst-tint: #e8f5f6;
     --tht: #647942; --tht-ink: #43582a; --tht-tint: #eff4e8;
     --th: #75449a; --th-ink: #502573; --th-tint: #f1e9f7;
     --itt: #697a21; --itt-ink: #445313; --itt-tint: #eef2de;
@@ -184,6 +185,7 @@
 .f-huo { --f: var(--huo); --f-ink: var(--huo-ink); --f-tint: var(--huo-tint); }
 .f-cl { --f: var(--cl); --f-ink: var(--cl-ink); --f-tint: var(--cl-tint); }
 .f-uy { --f: var(--uy); --f-ink: var(--uy-ink); --f-tint: var(--uy-tint); }
+.f-thst { --f: var(--thst); --f-ink: var(--thst-ink); --f-tint: var(--thst-tint); }
 .f-tht { --f: var(--tht); --f-ink: var(--tht-ink); --f-tint: var(--tht-tint); }
 .f-th { --f: var(--th); --f-ink: var(--th-ink); --f-tint: var(--th-tint); }
 .f-itt { --f: var(--itt); --f-ink: var(--itt-ink); --f-tint: var(--itt-tint); }
@@ -644,6 +646,7 @@ REGION_OF.be = 'europe';
 REGION_OF.itt = 'europe';
 REGION_OF.th = 'asia';
 REGION_OF.tht = 'asia';
+REGION_OF.thst = 'asia';
 REGION_OF.uy = 'americas';
 REGION_OF.cl = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
@@ -720,6 +723,7 @@ const COUNTRIES = [
     { key: 'uy', name: 'Uruguay Final V', flag: '🇺🇾', file: 'Uruguay-final-v-problems.json', kind: 'years' },
     { key: 'cl', name: 'Chile TST', flag: '🇨🇱', file: 'Chile-tst-problems.json', kind: 'years' },
     { key: 'tht', name: 'Thailand TST', flag: '🇹🇭', file: 'Thailand-tst-problems.json', kind: 'years' },
+    { key: 'thst', name: 'Thailand TSTST', flag: '🇹🇭', file: 'Thailand-tstst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -1591,7 +1595,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     try {
-        const response = await fetch('./metadata/collections.json?v=20261003-gapfill3');
+        const response = await fetch('./metadata/collections.json?v=20261003-gapfill4');
         if (!response.ok) throw new Error('Metadata unavailable');
         const data = await response.json();
         if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
@@ -1605,7 +1609,7 @@ async function init() {
         problemDna = dna;
     } catch (e) { /* Concept-based connections remain available. */ }
     try {
-        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill3');
+        const response = await fetch('./metadata/topic-overrides.json?v=20261003-gapfill4');
         if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
         const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
         if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
