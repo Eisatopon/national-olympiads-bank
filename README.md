@@ -125,3 +125,7 @@ Sweden SMT adds all six final problems for each calendar year 2006–2024: 114 E
 ## Belgium senior finals (3 October 2026)
 
 Belgium OMB MAXI adds all four senior final questions, with every subpart, for 2022–2026: 20 English translations from official French papers, with four required statement figures. Every statement has source-comparison evidence and thematic review metadata. Lower categories and all solutions in the 2022–2024 compilation were excluded. With Sweden and Belgium, the bank has 51 countries, 66 collections and 9,592 active records; 399 records have source-comparison evidence.
+
+### Italy PreIMO TST (2010–2019)
+
+Added 60 English statements from the official Italian archive, six per year. Day 1 contains A1–A3; day 2 contains B1–B3, with continuous annual numbering 1–6. All formulas and subparts were compared with the rendered original TST pages. Each record includes source evidence and thematic review. No training exercises, solutions or hints imported. The active bank now contains 9,652 problems across 67 collections and 51 countries.

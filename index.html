@@ -110,6 +110,7 @@
     --kz: #00a3c4; --kz-ink: #006a80; --kz-tint: #dcf4f9;
     --ee: #4891d9; --ee-ink: #2b5e94; --ee-tint: #e6f0fb;
     --huo: #a0522d; --huo-ink: #6b3519; --huo-tint: #f6e9e1;
+    --itt: #697a21; --itt-ink: #445313; --itt-tint: #eef2de;
     --se: #247ba0; --se-ink: #135570; --se-tint: #e1f1f8;
     --be: #996515; --be-ink: #684207; --be-tint: #faf0d9;
 }
@@ -177,6 +178,7 @@
 .f-kz { --f: var(--kz); --f-ink: var(--kz-ink); --f-tint: var(--kz-tint); }
 .f-ee { --f: var(--ee); --f-ink: var(--ee-ink); --f-tint: var(--ee-tint); }
 .f-huo { --f: var(--huo); --f-ink: var(--huo-ink); --f-tint: var(--huo-tint); }
+.f-itt { --f: var(--itt); --f-ink: var(--itt-ink); --f-tint: var(--itt-tint); }
 .f-se { --f: var(--se); --f-ink: var(--se-ink); --f-tint: var(--se-tint); }
 .f-be { --f: var(--be); --f-ink: var(--be-ink); --f-tint: var(--be-tint); }
 
@@ -630,6 +632,7 @@ REGION_OF.ee = 'europe';
 REGION_OF.huo = 'europe';
 REGION_OF.se = 'europe';
 REGION_OF.be = 'europe';
+REGION_OF.itt = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -699,6 +702,7 @@ const COUNTRIES = [
     { key: 'huo', name: 'Hungary OKTV', flag: '🇭🇺', file: 'Hungary-oktv-problems.json', kind: 'years' },
     { key: 'se', name: 'Sweden SMT', flag: '🇸🇪', file: 'Sweden-smt-problems.json', kind: 'years' },
     { key: 'be', name: 'Belgium OMB MAXI', flag: '🇧🇪', file: 'Belgium-omb-maxi-problems.json', kind: 'years' },
+    { key: 'itt', name: 'Italy PreIMO TST', flag: '🇮🇹', file: 'Italy-preimo-tst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
