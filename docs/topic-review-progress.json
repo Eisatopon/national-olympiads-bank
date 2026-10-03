@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "active_records": 9458,
-  "distinct_statement_reviewed": 8883,
-  "not_statement_reviewed": 575,
+  "distinct_statement_reviewed": 9458,
+  "not_statement_reviewed": 0,
   "review_method": "AI-assisted full-statement thematic review",
-  "whole_bank_review_complete": false,
+  "whole_bank_review_complete": true,
   "complete_collection_reviews": {
     "Greece-tst-problems.json": {
       "stored_statements_reviewed": 72,
@@ -257,9 +257,10 @@
     "thematic_batch_1000_5": 1000,
     "thematic_batch_1000_6": 1000,
     "thematic_batch_1000_7": 1000,
-    "thematic_batch_1000_8": 1000
+    "thematic_batch_1000_8": 1000,
+    "thematic_final_575": 575
   },
-  "note": "Batch sizes overlap. The distinct review count is the number of exact-statement override records, not their sum. Zero Unclassified entries does not certify automatic assignments.",
+  "note": "All 9,458 active records now have thematic review metadata. China remains quarantined and excluded from active records; thematic completion does not imply source-fidelity or solution verification.",
   "rationale_policy": "Rationale required for changes and mixed classifications. Clear unchanged single-topic cases record the exact reviewed statement, hash, date and category. Earlier rationale records are retained.",
   "partial_collection_reviews": {
     "Russia-aro-problems.json": {

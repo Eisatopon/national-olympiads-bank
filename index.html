@@ -1572,6 +1572,8 @@ async function init() {
     try {
         const response = await fetch('./metadata/topic-overrides.json');
         if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
+        const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
+        if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
     } catch (e) { /* Recorded categories and fallback classification remain available. */ }
     const incoming = parseIncoming();
     const merged = incoming.length ? [...new Set(incoming)] : [...readSaved()];
