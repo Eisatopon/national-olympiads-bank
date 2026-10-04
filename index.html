@@ -461,7 +461,6 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div>
             <h1>National Olympiads Bank</h1>
             <p class="lede">Problems from national mathematical olympiads around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
-            <p><a href="thailand-pdfs.html">🇹🇭 Thailand: complete TMO, TST and TSTST PDF papers</a></p>
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
@@ -1089,7 +1088,7 @@ function headHtml(count) {
     <div class="res-head">
         <h2 class="res-title" id="resTitle">${esc(t)}<span class="res-count">${count === null ? '' : countText(count)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ''}</h2>
         <div class="res-actions">
-            ${['th', 'tht'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Thailand PDF archive</a>' : ''}
+            ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Thailand PDF archive</a>' : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
             ${wide ? '<button type="button" class="btn btn-sm" data-all-scope>All countries, all years</button>' : ''}
             ${count && count <= 60 ? `<button type="button" class="btn btn-sm" data-add-all>${ICON.plus} Add all (${count})</button>` : ''}
