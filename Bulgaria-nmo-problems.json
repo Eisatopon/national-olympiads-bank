@@ -175,6 +175,181 @@
           "problem": "The point $S$ is the midpoint of the arc $ACB$ of the circumcircle $k$ of $\\triangle ABC$ $(AC > BC)$. Let $I$ be the centre of the circle inscribed in $\\triangle ABC$. The line $SI$ meets the circle $k$ for the second time at the point $T$. Let $D$ be the point symmetric to $I$ with respect to the point $T$, and let $M$ be the midpoint of the side $AB$. The line $IM$ meets the line through $D$ parallel to $AB$ at the point $E$. Prove that $AE = BD$."
         }
       ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A white equilateral triangle $T$ of side length $2022$ is divided by lines parallel to its sides into equilateral triangles of side length $1$, called cells. Two cells are adjacent if they have a common vertex. Ivan colours some cells black. Without knowing which cells are black, Peter chooses a set $S$ of cells, and Ivan tells him the parity of the number of black cells in $S$. From this information Peter can determine the parity of the number of pairs of adjacent cells of different colours. Find all possible cardinalities of $S$ for which this is possible, regardless of how Ivan colours the cells."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle and $M$ the midpoint of $AB$. A circle through $B$ and $C$ meets the segments $CM$ and $BM$ again at $P$ and $Q$, respectively. Let $K$ be the reflection of $P$ in $M$. The circumcircles of $AKM$ and $CQM$ meet again at $X$, and the circumcircles of $AMC$ and $KMQ$ meet again at $Y$. The segments $BP$ and $CQ$ meet at $T$. Prove that $MT$ is tangent to the circumcircle of $MXY$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $x>y>2022$ be positive integers such that $xy+x+y$ is a perfect square. Is it possible that, for every integer $z$ in $[x+3y+1,3x+y+1]$, the numbers $x+y+z$ and $x^2+xy+y^2$ are not coprime?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n\\ge4$ be an integer and let $x_1,\\ldots,x_n,x_{n+1},x_{n+2}$ be real numbers with $x_{n+1}=x_1$ and $x_{n+2}=x_2$. Suppose there is a real number $a>0$ such that $$x_i^2=a+x_{i+1}x_{i+2}\\qquad(1\\le i\\le n).$$ Prove that at least two of $x_1,\\ldots,x_n$ are negative."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an isosceles triangle with $AB=4$ and $BC=CA=6$. Points $X_1,X_2,\\ldots$ occur consecutively on $AB$ so that $AX_1,X_1X_2,X_2X_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/4$. Points $Y_1,Y_2,\\ldots$ occur consecutively on $CB$ so that $CY_1,Y_1Y_2,Y_2Y_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/2$. Points $Z_1,Z_2,\\ldots$ occur consecutively on $AC$ so that $AZ_1,Z_1Z_2,Z_2Z_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/2$. Find all triples of positive integers $(a,b,c)$ for which $AY_a$, $BZ_b$, and $CX_c$ are concurrent."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n\\ge2$ be an integer. Sets $A_1,\\ldots,A_n$ and $B_1,\\ldots,B_n$ of positive integers satisfy $A_i\\cap B_j\\ne\\varnothing$ for every $i,j$, and $A_i\\cap A_j=B_i\\cap B_j=\\varnothing$ whenever $i\\ne j$. Arrange the elements of each set in descending order and calculate the differences between consecutive elements. Find the least possible value of the greatest of all these differences."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $G$ be a graph on $n\\ge6$ vertices, each of degree at least $3$. If $C_1,\\ldots,C_k$ are all the cycles in $G$, determine all possible values of $\\gcd(|C_1|,\\ldots,|C_k|)$, where $|C|$ denotes the number of vertices in a cycle $C$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle. Its excircles touch the segments $BC$, $CA$, and $AB$ at $A_1$, $B_1$, and $C_1$, respectively. Let $O_A$, $O_B$, and $O_C$ be the circumcentres of $AB_1C_1$, $BC_1A_1$, and $CA_1B_1$, respectively. Prove that the lines through $O_A$, $O_B$, and $O_C$, respectively parallel to the internal bisectors of angles $A$, $B$, and $C$, are concurrent."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f(x)$ be a polynomial with positive integer coefficients. For every positive integer $n$, choose positive integers $a_1^{(n)},\\ldots,a_n^{(n)}$ with pairwise distinct residues modulo $n$, and put $$g(n)=\\sum_{i=1}^n f\\bigl(a_i^{(n)}\\bigr).$$ Prove that there is a constant $M$ such that $\\gcd(m,g(m))>2023^{2023}$ for every integer $m>M$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABCD$ be a convex quadrilateral, and let $S_{ABM}$, $S_{CDM}$, and $S_{ABCD}$ denote the areas of the indicated figures. Prove that there is a unique point $M$ on side $AD$ satisfying $$\\sqrt{S_{ABM}}+\\sqrt{S_{CDM}}=\\sqrt{S_{ABCD}}$$ if and only if $AB\\parallel CD$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For every positive integer $n$, determine the least possible value of $$|x_1|+|x_1-x_2|+|x_1+x_2-x_3|+\\cdots+|x_1+\\cdots+x_{n-1}-x_n|$$ over real numbers $x_1,\\ldots,x_n$ satisfying $|x_1|+\\cdots+|x_n|=1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a class of $26$ students, each student receives a mark in each of five subjects, with three possible marks in each subject. Prove that, after $25$ students have received their marks, the last student can be given marks that differ from those of every other student in at least two subjects."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Is it true that, for every integer $n>1$, there is an infinite arithmetic progression $M_n$ of positive integers such that $n^m-1$ is not a perfect power for any $m\\in M_n$? A positive integer is a perfect power if it equals $a^b$ for integers $a,b>1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Points $M$ and $P$ lie on sides $AB$ and $BC$ of a triangle $ABC$, respectively, with $AM=BC$ and $CP=BM$. The lines $AP$ and $CM$ meet at $O$, and $2\\angle AOM=\\angle ABC$. Find $\\angle ABC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all functions $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$f\\bigl(af(b)+a\\bigr)\\bigl(f(bf(a))+a\\bigr)=1$$ for all positive real numbers $a,b$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Do there exist nonzero real numbers $a_1,\\ldots,a_{2024}$, with $a_{2025}=a_1$, such that $$\\sum_{i=1}^{2024}\\left(a_i^2+\\frac1{a_i^2}\\right)+2\\sum_{i=1}^{2024}\\frac{a_i}{a_{i+1}}+2024=2\\sum_{i=1}^{2024}\\left(a_i+\\frac1{a_i}\\right)?$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $m$ be a positive integer and $\\mathcal F$ a family of four-element subsets of a set with $5^m$ elements. The intersection of any two sets in $\\mathcal F$ never has exactly two elements. Find the maximum possible value of $|\\mathcal F|$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle and let a circle $\\omega$ with centre $I$ touch sides $AB$ and $AC$ and meet side $BC$ at $X$ and $Y$. The line through $I$ perpendicular to $BC$ meets the line through $A$ parallel to $BC$ at $Z$. Prove that the circumcircles of $XYZ$ and $ABC$ are tangent."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all infinite sequences $a_1,a_2,\\ldots$ of real numbers such that $$a_{m^2+m+n}=a_m^2+a_m+a_n$$ for all positive integers $m,n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Exactly $n$ cells of an $n\\times n$ square grid are black, and the remaining cells are white. The cost of a colouring is the minimum number of white cells that must be recoloured black so that any two black cells can be joined by a sequence of black cells in which consecutive cells share a side. Let $f(n)$ be the maximum cost over all initial colourings with exactly $n$ black cells. Determine a constant $\\alpha$ such that $$\\frac13 n^\\alpha\\le f(n)\\le3n^\\alpha$$ for every integer $n\\ge100$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $P(x)$ be a nonconstant monic polynomial with integer coefficients, and let $a_1,a_2,\\ldots$ be an infinite sequence of positive integers. Prove that infinitely many primes each divide at least one term of the sequence $P(n)^{a_n}+1$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle with $AB<AC$, midpoint $M$ of $BC$, altitude $AD$ with $D\\in BC$, and orthocentre $H$. A circle through $B$ and $D$ is tangent to line $AB$ and meets the circumcircle of $ABC$ again at $Q$. The circumcircle of $QDH$ meets line $BC$ again at $P$. Prove that $MH\\perp AP$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. Prove that there is a positive integer $a$ such that exactly $\\lfloor n/4\\rfloor$ of the integers $a+1,a+2,\\ldots,a+n$ are squarefree."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $X_0,X_1,\\ldots,X_{n-1}$ be $n\\ge2$ points in the plane, and let $r>0$. Alice constructs a connected graph with these vertices and assigns nonnegative real numbers $r_0,\\ldots,r_{n-1}$ to them with $\\sum_{i=0}^{n-1}r_i=1$. Bob then chooses a sequence of distinct vertices $X_{i_0}=X_0,X_{i_1},\\ldots,X_{i_k}$, with $k\\ge0$, in which each consecutive pair is joined by an edge. Bob wins if $$\\frac1{k+1}\\sum_{j=0}^k r_{i_j}\\ge r;$$ otherwise Alice wins. In terms of $n$, determine the largest $r$ for which Bob has a winning strategy."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $N$ be a positive integer. There are coins of distinct positive integer denominations $a_1,\\ldots,a_N$, with exactly $i$ coins of denomination $a_i$ for each $i=1,\\ldots,N$. In terms of $N$, determine the largest integer $S$ for which the denominations can be chosen so that every integer from $1$ to $S$ is a sum of one or more of the coins."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n\\ge2$ be an integer. Real numbers $a,b$ satisfy $a(b-1)^n+b(a-1)^n=0$. Determine the maximum possible value of $ab$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a>1$ be an integer and $p>2$ a prime. Determine the remainder of $$(a-1)(a^2-1)\\cdots(a^{p-1}-1)$$ upon division by $1+a+\\cdots+a^{p-1}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\Gamma$. A circle $\\Omega$ through $B$ and $C$ meets sides $AB$ and $AC$ again at $D$ and $E$, respectively. Let $F$ lie on the smaller arc $DE$ of $\\Omega$, and let $\\omega$ be the circle through $A$ and $F$ tangent to $\\Omega$. Prove that $\\omega$ is tangent to $\\Gamma$ if and only if line $AF$ bisects $\\angle DFE$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $(a_n)_{n\\ge1}$ be a strictly increasing sequence of positive integers. Suppose there is an integer $m$ such that $a_{i+1}-a_i<m$ for all $i\\ge1$. Prove that there are pairwise distinct indices $p,q,r,s$ such that $a_pa_q=a_ra_s$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In Baron Munchausen's country there are $2^n$ cities numbered $0,1,\\ldots,2^n-1$. Cities numbered $a$ and $b$ are friendly if their binary representations differ in exactly one digit. For example, when $n=3$, cities $0$ and $4$ are friendly, as are cities $5$ and $7$. Between each pair of friendly cities there are two one-way roads, one in each direction. Each road has a category, an integer from $1$ to $n$. At each city, all outgoing roads have distinct categories, while all incoming roads have the same category. Find all $n$ for which this is possible."
+        }
+      ]
     }
   ]
 }

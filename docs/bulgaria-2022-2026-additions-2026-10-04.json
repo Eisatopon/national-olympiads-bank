@@ -1,0 +1,271 @@
+{
+  "checked_at": "2026-10-04",
+  "baseline_commit": "84083a96618385d9a4c1d4dbf118deadbcb28144",
+  "competition": "Bulgarian National Mathematical Olympiad, senior national round, common paper for grades 9–12",
+  "added_records": 30,
+  "source_collections": {
+    "2022": "https://artofproblemsolving.com/community/c3028629",
+    "2023": "https://artofproblemsolving.com/community/c3327082",
+    "2024": "https://artofproblemsolving.com/community/c3803874",
+    "2025": "https://artofproblemsolving.com/community/c4343766",
+    "2026": "https://artofproblemsolving.com/community/c4796680"
+  },
+  "source_review_scope": "Every AoPS statement was read with LaTeX image alternative text. All six numbered statements and both day headings were present in every year. No essential non-formula statement figure was present. English wording normalized without changing conditions. Area notation explicitly defined in 2023 P4. This is source fidelity review, not independent solution certification or whole-bank verification.",
+  "reviews": [
+    {
+      "uid": "bg.2022.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825838p24986247",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "80f5cbb285d9eb9dad1105707a0b65b0e93ee4f9ccede7dd88ddb12110ccea94",
+      "reviewed_statement": "A white equilateral triangle $T$ of side length $2022$ is divided by lines parallel to its sides into equilateral triangles of side length $1$, called cells. Two cells are adjacent if they have a common vertex. Ivan colours some cells black. Without knowing which cells are black, Peter chooses a set $S$ of cells, and Ivan tells him the parity of the number of black cells in $S$. From this information Peter can determine the parity of the number of pairs of adjacent cells of different colours. Find all possible cardinalities of $S$ for which this is possible, regardless of how Ivan colours the cells."
+    },
+    {
+      "uid": "bg.2022.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825849p24986289",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "a9c5ac423b454d3d602621f76987538aff67b821694c5c7e0a3d250c43794f23",
+      "reviewed_statement": "Let $ABC$ be an acute triangle and $M$ the midpoint of $AB$. A circle through $B$ and $C$ meets the segments $CM$ and $BM$ again at $P$ and $Q$, respectively. Let $K$ be the reflection of $P$ in $M$. The circumcircles of $AKM$ and $CQM$ meet again at $X$, and the circumcircles of $AMC$ and $KMQ$ meet again at $Y$. The segments $BP$ and $CQ$ meet at $T$. Prove that $MT$ is tangent to the circumcircle of $MXY$."
+    },
+    {
+      "uid": "bg.2022.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825853p24986306",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "507230f4fdc787ed94cc44b5059caca48a024057b6008d4a92cee2f0f25ab47c",
+      "reviewed_statement": "Let $x>y>2022$ be positive integers such that $xy+x+y$ is a perfect square. Is it possible that, for every integer $z$ in $[x+3y+1,3x+y+1]$, the numbers $x+y+z$ and $x^2+xy+y^2$ are not coprime?"
+    },
+    {
+      "uid": "bg.2022.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825861p24986353",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "63cdae7521a94c6ffa199de7257a0d29f62655314b5369e9657720cbd7c67262",
+      "reviewed_statement": "Let $n\\ge4$ be an integer and let $x_1,\\ldots,x_n,x_{n+1},x_{n+2}$ be real numbers with $x_{n+1}=x_1$ and $x_{n+2}=x_2$. Suppose there is a real number $a>0$ such that $$x_i^2=a+x_{i+1}x_{i+2}\\qquad(1\\le i\\le n).$$ Prove that at least two of $x_1,\\ldots,x_n$ are negative."
+    },
+    {
+      "uid": "bg.2022.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825868p24986408",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "15d2d5c745d4f2aff0d4ac423024c5ced872119c989f1c6b6fd474fbb9d7753f",
+      "reviewed_statement": "Let $ABC$ be an isosceles triangle with $AB=4$ and $BC=CA=6$. Points $X_1,X_2,\\ldots$ occur consecutively on $AB$ so that $AX_1,X_1X_2,X_2X_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/4$. Points $Y_1,Y_2,\\ldots$ occur consecutively on $CB$ so that $CY_1,Y_1Y_2,Y_2Y_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/2$. Points $Z_1,Z_2,\\ldots$ occur consecutively on $AC$ so that $AZ_1,Z_1Z_2,Z_2Z_3,\\ldots$ form a geometric progression with first term $3$ and ratio $1/2$. Find all triples of positive integers $(a,b,c)$ for which $AY_a$, $BZ_b$, and $CX_c$ are concurrent."
+    },
+    {
+      "uid": "bg.2022.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h2825876p24986462",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "6c10369e912ca45172f39b52ccc12bc6fa5c72ba3cbdf1dadbaa635fab1f00d1",
+      "reviewed_statement": "Let $n\\ge2$ be an integer. Sets $A_1,\\ldots,A_n$ and $B_1,\\ldots,B_n$ of positive integers satisfy $A_i\\cap B_j\\ne\\varnothing$ for every $i,j$, and $A_i\\cap A_j=B_i\\cap B_j=\\varnothing$ whenever $i\\ne j$. Arrange the elements of each set in descending order and calculate the differences between consecutive elements. Find the least possible value of the greatest of all these differences."
+    },
+    {
+      "uid": "bg.2023.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h3048313p27461629",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "898ec5dc5e3a360a83f4a73e04433a35ad88d58ffe274e229f6b18d499d2652f",
+      "reviewed_statement": "Let $G$ be a graph on $n\\ge6$ vertices, each of degree at least $3$. If $C_1,\\ldots,C_k$ are all the cycles in $G$, determine all possible values of $\\gcd(|C_1|,\\ldots,|C_k|)$, where $|C|$ denotes the number of vertices in a cycle $C$."
+    },
+    {
+      "uid": "bg.2023.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h3048317p27461650",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "163183ec80ac4f57315357bc76b656c32aa2a4ccaf50662780a467b9798c3703",
+      "reviewed_statement": "Let $ABC$ be an acute triangle. Its excircles touch the segments $BC$, $CA$, and $AB$ at $A_1$, $B_1$, and $C_1$, respectively. Let $O_A$, $O_B$, and $O_C$ be the circumcentres of $AB_1C_1$, $BC_1A_1$, and $CA_1B_1$, respectively. Prove that the lines through $O_A$, $O_B$, and $O_C$, respectively parallel to the internal bisectors of angles $A$, $B$, and $C$, are concurrent."
+    },
+    {
+      "uid": "bg.2023.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h3048321p27461669",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "2e9553933663ef658a66eaab8483966808df1a29a2e9d920e1e167c2bbde76fa",
+      "reviewed_statement": "Let $f(x)$ be a polynomial with positive integer coefficients. For every positive integer $n$, choose positive integers $a_1^{(n)},\\ldots,a_n^{(n)}$ with pairwise distinct residues modulo $n$, and put $$g(n)=\\sum_{i=1}^n f\\bigl(a_i^{(n)}\\bigr).$$ Prove that there is a constant $M$ such that $\\gcd(m,g(m))>2023^{2023}$ for every integer $m>M$."
+    },
+    {
+      "uid": "bg.2023.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h3049016p27467952",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "4c67fcdb499ffec5044c1feaab2ad7049a12bdf26bb6d0393fb1ce009184d9c8",
+      "reviewed_statement": "Let $ABCD$ be a convex quadrilateral, and let $S_{ABM}$, $S_{CDM}$, and $S_{ABCD}$ denote the areas of the indicated figures. Prove that there is a unique point $M$ on side $AD$ satisfying $$\\sqrt{S_{ABM}}+\\sqrt{S_{CDM}}=\\sqrt{S_{ABCD}}$$ if and only if $AB\\parallel CD$."
+    },
+    {
+      "uid": "bg.2023.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h3049023p27467977",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "32f42d0cdc1bd4b491bcd32130b0f8ab7d66e6dcb1a0b3109d84e99196a2fbff",
+      "reviewed_statement": "For every positive integer $n$, determine the least possible value of $$|x_1|+|x_1-x_2|+|x_1+x_2-x_3|+\\cdots+|x_1+\\cdots+x_{n-1}-x_n|$$ over real numbers $x_1,\\ldots,x_n$ satisfying $|x_1|+\\cdots+|x_n|=1$."
+    },
+    {
+      "uid": "bg.2023.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h3049041p27468136",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "1029c6ca6ed50df7c0ccb5efea8f43ab5cf0399d34fa2ef191cc43186af00032",
+      "reviewed_statement": "In a class of $26$ students, each student receives a mark in each of five subjects, with three possible marks in each subject. Prove that, after $25$ students have received their marks, the last student can be given marks that differ from those of every other student in at least two subjects."
+    },
+    {
+      "uid": "bg.2024.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299380p30448091",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "160371c740fdae8002aa36ef15028d52afc34b8b693bd9593975fe008eccaf28",
+      "reviewed_statement": "Is it true that, for every integer $n>1$, there is an infinite arithmetic progression $M_n$ of positive integers such that $n^m-1$ is not a perfect power for any $m\\in M_n$? A positive integer is a perfect power if it equals $a^b$ for integers $a,b>1$."
+    },
+    {
+      "uid": "bg.2024.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299381p30448095",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "c92bab0c665401f8adda3bfe6aa5be8965222ac79dbb15b670efeceacc138986",
+      "reviewed_statement": "Points $M$ and $P$ lie on sides $AB$ and $BC$ of a triangle $ABC$, respectively, with $AM=BC$ and $CP=BM$. The lines $AP$ and $CM$ meet at $O$, and $2\\angle AOM=\\angle ABC$. Find $\\angle ABC$."
+    },
+    {
+      "uid": "bg.2024.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299382p30448099",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "d9cbe1f9340e2a0e0a810f519389b2b9b9309a2f141abb73145665255ff48837",
+      "reviewed_statement": "Find all functions $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$f\\bigl(af(b)+a\\bigr)\\bigl(f(bf(a))+a\\bigr)=1$$ for all positive real numbers $a,b$."
+    },
+    {
+      "uid": "bg.2024.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299383p30448106",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "c505d1ea3c4141d1b3780fe46ec407614e94b319717b861c6b9ba8025f6f4e09",
+      "reviewed_statement": "Do there exist nonzero real numbers $a_1,\\ldots,a_{2024}$, with $a_{2025}=a_1$, such that $$\\sum_{i=1}^{2024}\\left(a_i^2+\\frac1{a_i^2}\\right)+2\\sum_{i=1}^{2024}\\frac{a_i}{a_{i+1}}+2024=2\\sum_{i=1}^{2024}\\left(a_i+\\frac1{a_i}\\right)?$$"
+    },
+    {
+      "uid": "bg.2024.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299384p30448114",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "fd950507b67b27af99e1864776d599abdc3337b26b16e494659c9c0b7935822f",
+      "reviewed_statement": "Let $m$ be a positive integer and $\\mathcal F$ a family of four-element subsets of a set with $5^m$ elements. The intersection of any two sets in $\\mathcal F$ never has exactly two elements. Find the maximum possible value of $|\\mathcal F|$."
+    },
+    {
+      "uid": "bg.2024.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h3299386p30448121",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "f420285592beb74bd7fb72415401657d35c50f2b59fbbfa637b32818fb2757d5",
+      "reviewed_statement": "Let $ABC$ be a triangle and let a circle $\\omega$ with centre $I$ touch sides $AB$ and $AC$ and meet side $BC$ at $X$ and $Y$. The line through $I$ perpendicular to $BC$ meets the line through $A$ parallel to $BC$ at $Z$. Prove that the circumcircles of $XYZ$ and $ABC$ are tangent."
+    },
+    {
+      "uid": "bg.2025.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544347p34487488",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "b8fa33f602fac332cdc1c0fa42850d52f9cfc4b8b4c37a86db40759b62fc9bd8",
+      "reviewed_statement": "Determine all infinite sequences $a_1,a_2,\\ldots$ of real numbers such that $$a_{m^2+m+n}=a_m^2+a_m+a_n$$ for all positive integers $m,n$."
+    },
+    {
+      "uid": "bg.2025.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544351p34487521",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "57ee4555b126e4c56a6e8050479e0a0512c97cd87d1321cc75d6fc3bb3673ad1",
+      "reviewed_statement": "Exactly $n$ cells of an $n\\times n$ square grid are black, and the remaining cells are white. The cost of a colouring is the minimum number of white cells that must be recoloured black so that any two black cells can be joined by a sequence of black cells in which consecutive cells share a side. Let $f(n)$ be the maximum cost over all initial colourings with exactly $n$ black cells. Determine a constant $\\alpha$ such that $$\\frac13 n^\\alpha\\le f(n)\\le3n^\\alpha$$ for every integer $n\\ge100$."
+    },
+    {
+      "uid": "bg.2025.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544355p34487544",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "f2762e50db3eecc979d3b314877b03a4290e924d1cca2f66d1a057863a217aec",
+      "reviewed_statement": "Let $P(x)$ be a nonconstant monic polynomial with integer coefficients, and let $a_1,a_2,\\ldots$ be an infinite sequence of positive integers. Prove that infinitely many primes each divide at least one term of the sequence $P(n)^{a_n}+1$."
+    },
+    {
+      "uid": "bg.2025.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544357p34487560",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "412e0767fd75ae5061fac5952be000dafa7128db24dfa904d512994cf7af94db",
+      "reviewed_statement": "Let $ABC$ be an acute triangle with $AB<AC$, midpoint $M$ of $BC$, altitude $AD$ with $D\\in BC$, and orthocentre $H$. A circle through $B$ and $D$ is tangent to line $AB$ and meets the circumcircle of $ABC$ again at $Q$. The circumcircle of $QDH$ meets line $BC$ again at $P$. Prove that $MH\\perp AP$."
+    },
+    {
+      "uid": "bg.2025.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544359p34487578",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "1257b21bf26cf471056077c874894c001c1dd735625cdb67a61ecd1ffd7eda66",
+      "reviewed_statement": "Let $n$ be a positive integer. Prove that there is a positive integer $a$ such that exactly $\\lfloor n/4\\rfloor$ of the integers $a+1,a+2,\\ldots,a+n$ are squarefree."
+    },
+    {
+      "uid": "bg.2025.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h3544364p34487638",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "35a0c0455ebc741ecc99e3c4092e7309c38eb0c074e3ea7488fb9b24595f28ac",
+      "reviewed_statement": "Let $X_0,X_1,\\ldots,X_{n-1}$ be $n\\ge2$ points in the plane, and let $r>0$. Alice constructs a connected graph with these vertices and assigns nonnegative real numbers $r_0,\\ldots,r_{n-1}$ to them with $\\sum_{i=0}^{n-1}r_i=1$. Bob then chooses a sequence of distinct vertices $X_{i_0}=X_0,X_{i_1},\\ldots,X_{i_k}$, with $k\\ge0$, in which each consecutive pair is joined by an edge. Bob wins if $$\\frac1{k+1}\\sum_{j=0}^k r_{i_j}\\ge r;$$ otherwise Alice wins. In terms of $n$, determine the largest $r$ for which Bob has a winning strategy."
+    },
+    {
+      "uid": "bg.2026.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810721p37739081",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "07626eb465e12a2fd4a4ae79f23525ed6dadbdfbd2977f2139b634da4bd22f4e",
+      "reviewed_statement": "Let $N$ be a positive integer. There are coins of distinct positive integer denominations $a_1,\\ldots,a_N$, with exactly $i$ coins of denomination $a_i$ for each $i=1,\\ldots,N$. In terms of $N$, determine the largest integer $S$ for which the denominations can be chosen so that every integer from $1$ to $S$ is a sum of one or more of the coins."
+    },
+    {
+      "uid": "bg.2026.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810725p37739133",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "75368b15a18658c07957c18733f4f08ad6e14e7e97b182d272fa50d0edec1dd5",
+      "reviewed_statement": "Let $n\\ge2$ be an integer. Real numbers $a,b$ satisfy $a(b-1)^n+b(a-1)^n=0$. Determine the maximum possible value of $ab$."
+    },
+    {
+      "uid": "bg.2026.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810726p37739167",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "3eb38b262743b83de27c0b72f38f0fe4b2d232dab157620cfc19d37b83fefd49",
+      "reviewed_statement": "Let $a>1$ be an integer and $p>2$ a prime. Determine the remainder of $$(a-1)(a^2-1)\\cdots(a^{p-1}-1)$$ upon division by $1+a+\\cdots+a^{p-1}$."
+    },
+    {
+      "uid": "bg.2026.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810734p37739392",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "1a76f45fba4c834b051fa4fc011f011a8174a1ec5cbcdb5022d57fa6de3f2822",
+      "reviewed_statement": "Let $ABC$ be a triangle with circumcircle $\\Gamma$. A circle $\\Omega$ through $B$ and $C$ meets sides $AB$ and $AC$ again at $D$ and $E$, respectively. Let $F$ lie on the smaller arc $DE$ of $\\Omega$, and let $\\omega$ be the circle through $A$ and $F$ tangent to $\\Omega$. Prove that $\\omega$ is tangent to $\\Gamma$ if and only if line $AF$ bisects $\\angle DFE$."
+    },
+    {
+      "uid": "bg.2026.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810739p37739440",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "ce2be427f29c846efe8770114c46e0279ac6bb49ff5494a8b2020f6bdfcd23ea",
+      "reviewed_statement": "Let $(a_n)_{n\\ge1}$ be a strictly increasing sequence of positive integers. Suppose there is an integer $m$ such that $a_{i+1}-a_i<m$ for all $i\\ge1$. Prove that there are pairwise distinct indices $p,q,r,s$ such that $a_pa_q=a_ra_s$."
+    },
+    {
+      "uid": "bg.2026.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h3810748p37739561",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "2a5379f7905cb671996903528f3432d432d144983c278fcbb93a6ef86e4a1dd1",
+      "reviewed_statement": "In Baron Munchausen's country there are $2^n$ cities numbered $0,1,\\ldots,2^n-1$. Cities numbered $a$ and $b$ are friendly if their binary representations differ in exactly one digit. For example, when $n=3$, cities $0$ and $4$ are friendly, as are cities $5$ and $7$. Between each pair of friendly cities there are two one-way roads, one in each direction. Each road has a category, an integer from $1$ to $n$. At each city, all outgoing roads have distinct categories, while all incoming roads have the same category. Find all $n$ for which this is possible."
+    }
+  ],
+  "primary_pdf_review": {
+    "source_url": "https://npmg.org/wp-content/uploads/2024/04/Day2_sol-NOM-9-12.pdf",
+    "local_file": "sources/bulgaria/2024-national-day2.pdf",
+    "sha256": "3e41a8ef9d8c58f5f3d8f4b75fd673e600eba65374ce8ded5f1ca107f7eb2284",
+    "checked_problems": [
+      4,
+      5,
+      6
+    ],
+    "pages": [
+      1,
+      2
+    ],
+    "correction": "P4 explicitly states a_2025=a_1 in the original, omitted by the AoPS collection."
+  }
+}

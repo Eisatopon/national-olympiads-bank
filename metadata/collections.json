@@ -635,8 +635,80 @@
           "url": "https://www.matematika.bg/olimpiadi/olimpiadi/natsionalen-krag/2021-9-12-1den.pdf",
           "label": "Archive research link",
           "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c3028629",
+          "label": "AoPS Bulgaria NMO 2022 complete two-day statement collection",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c3327082",
+          "label": "AoPS Bulgaria NMO 2023 complete two-day statement collection",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c3803874",
+          "label": "AoPS Bulgaria NMO 2024 complete two-day statement collection",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c4343766",
+          "label": "AoPS Bulgaria NMO 2025 complete two-day statement collection",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c4796680",
+          "label": "AoPS Bulgaria NMO 2026 complete two-day statement collection",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://npmg.org/wp-content/uploads/2024/04/Day2_sol-NOM-9-12.pdf",
+          "label": "Official 2024 national round day 2; P4–P6 visually compared",
+          "verification": "unverified"
         }
-      ]
+      ],
+      "coverage_notes": "The senior national round for grades 9–12 is stored for 2017–2026, six numbered problems per year. The 2022–2026 complete two-day AoPS collections were individually reviewed, including formulas, quantifiers, and domains. Web reviews are recorded separately from PDF-page verification; whole-collection source fidelity has not been certified.",
+      "statement_checks": {
+        "bg.2024.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Do there exist nonzero real numbers $a_1,\\ldots,a_{2024}$, with $a_{2025}=a_1$, such that $$\\sum_{i=1}^{2024}\\left(a_i^2+\\frac1{a_i^2}\\right)+2\\sum_{i=1}^{2024}\\frac{a_i}{a_{i+1}}+2024=2\\sum_{i=1}^{2024}\\left(a_i+\\frac1{a_i}\\right)?$$",
+          "statement_sha256": "c505d1ea3c4141d1b3780fe46ec407614e94b319717b861c6b9ba8025f6f4e09",
+          "source_url": "https://npmg.org/wp-content/uploads/2024/04/Day2_sol-NOM-9-12.pdf",
+          "source_document_sha256": "3e41a8ef9d8c58f5f3d8f4b75fd673e600eba65374ce8ded5f1ca107f7eb2284",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete English statement and formulas compared with the official Ministry/Union 73rd National Olympiad second-day original hosted by NPMG. Cyclic convention a_2025=a_1 restored in P4. Statement figures are not required.",
+          "source_contains_solutions": true
+        },
+        "bg.2024.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $m$ be a positive integer and $\\mathcal F$ a family of four-element subsets of a set with $5^m$ elements. The intersection of any two sets in $\\mathcal F$ never has exactly two elements. Find the maximum possible value of $|\\mathcal F|$.",
+          "statement_sha256": "fd950507b67b27af99e1864776d599abdc3337b26b16e494659c9c0b7935822f",
+          "source_url": "https://npmg.org/wp-content/uploads/2024/04/Day2_sol-NOM-9-12.pdf",
+          "source_document_sha256": "3e41a8ef9d8c58f5f3d8f4b75fd673e600eba65374ce8ded5f1ca107f7eb2284",
+          "source_page": 1,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete English statement and formulas compared with the official Ministry/Union 73rd National Olympiad second-day original hosted by NPMG. Cyclic convention a_2025=a_1 restored in P4. Statement figures are not required.",
+          "source_contains_solutions": true
+        },
+        "bg.2024.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $ABC$ be a triangle and let a circle $\\omega$ with centre $I$ touch sides $AB$ and $AC$ and meet side $BC$ at $X$ and $Y$. The line through $I$ perpendicular to $BC$ meets the line through $A$ parallel to $BC$ at $Z$. Prove that the circumcircles of $XYZ$ and $ABC$ are tangent.",
+          "statement_sha256": "f420285592beb74bd7fb72415401657d35c50f2b59fbbfa637b32818fb2757d5",
+          "source_url": "https://npmg.org/wp-content/uploads/2024/04/Day2_sol-NOM-9-12.pdf",
+          "source_document_sha256": "3e41a8ef9d8c58f5f3d8f4b75fd673e600eba65374ce8ded5f1ca107f7eb2284",
+          "source_page": 2,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete English statement and formulas compared with the official Ministry/Union 73rd National Olympiad second-day original hosted by NPMG. Cyclic convention a_2025=a_1 restored in P4. Statement figures are not required.",
+          "source_contains_solutions": true
+        }
+      }
     },
     "Canada-cmo-problems.json": {
       "verification_status": "not_verified_against_source",
