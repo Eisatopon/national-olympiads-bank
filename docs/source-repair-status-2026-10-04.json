@@ -770,6 +770,51 @@
       "uid": "cn.2016.2.6",
       "kind": "source_domain_gap",
       "text": "Source convention and objective: the AoPS compilation says “complete directed graph” without explicitly defining the orientation convention. It asks for the minimum, not the maximum, of m(G) in part (b). Both are retained literally pending comparison with the original contest paper."
+    },
+    {
+      "uid": "cn.1988.1.2",
+      "kind": "source_domain_gap",
+      "text": "Source extension convention: the book says extensions of the four sides but does not explicitly select between the two intersections of each supporting line with the larger circle. No statement figure is printed. The wording is retained pending original-paper comparison."
+    },
+    {
+      "uid": "cn.1988.2.4",
+      "kind": "source_domain_gap",
+      "text": "Editorial correction: part (b) on printed page 31 omits the outer square on the sum of squares. The bank restores that square, as explicitly used in the book's inductive proof on printed page 114 (scan page 121). The conclusion is expressed for distinct indices, as in that proof. Original-paper confirmation remains pending."
+    },
+    {
+      "uid": "cn.1989.1.2",
+      "kind": "source_domain_gap",
+      "text": "Source domain omission: the book does not explicitly require n ≥ 2, although its formula is undefined for n = 1. The positive-variable sum condition and printed formula are preserved; apply only where the displayed denominators are defined."
+    },
+    {
+      "uid": "cn.1989.2.6",
+      "kind": "source_domain_gap",
+      "text": "Source exponent transcription: the scan prints 1/(4m) and 1/(4n) as the two exponents. They are retained literally; no replacement based on a presumed intended problem has been made."
+    },
+    {
+      "uid": "cn.1990.1.1",
+      "kind": "source_domain_gap",
+      "text": "Source existence omission: the statement refers to a common chord without separately assuming that the circles have two distinct intersections. No extra intersection condition has been silently added."
+    },
+    {
+      "uid": "cn.1990.1.3",
+      "kind": "source_domain_gap",
+      "text": "Unresolved source endpoint error: the hypothesis constrains f only through positive x and y, while the declared domain includes zero. The printed conclusion has no positive-x restriction. For example f(x)=0 for x>0 and f(0)=1 satisfies the hypotheses but fails the conclusion at zero. The record preserves the printed formulation; use its conclusion only for x>0 pending original-paper confirmation."
+    },
+    {
+      "uid": "cn.1993.1.1",
+      "kind": "source_domain_gap",
+      "text": "Editorial correction: the printed statement on page 52 gives the third family as a_i+b_(i+k). The book's construction and proof on pages 181–182 (scan pages 188–189) instead use b_i+b_(i+k). The bank adopts the latter explicitly: at k=0 the printed third family would duplicate the second family. Original-paper confirmation remains pending."
+    },
+    {
+      "uid": "cn.1993.1.3",
+      "kind": "source_domain_gap",
+      "text": "Source configuration omission: the book does not explicitly state convexity or select the direction of each side extension. Its wording is retained; no statement figure is printed and no unverified diagram has been added."
+    },
+    {
+      "uid": "cn.1993.2.4",
+      "kind": "source_domain_gap",
+      "text": "Source resultant convention: the source discusses angles to subset sums without explicitly requiring those sums to be nonzero. The intended angle condition presupposes nonzero resultant vectors; no separate original-paper confirmation is claimed."
     }
   ],
   "restored_figures": [
@@ -786,6 +831,13 @@
   ],
   "china": {
     "active_complete_years": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
       2003,
       2004,
       2005,
@@ -799,16 +851,9 @@
       2015,
       2016
     ],
-    "active_statements": 72,
+    "active_statements": 114,
     "damaged_original_path": "docs/quarantine/China-olympiad-problems-pre-rebuild.json",
     "remaining_historical_years": [
-      1987,
-      1988,
-      1989,
-      1990,
-      1991,
-      1992,
-      1993,
       1994,
       1995,
       1996,
@@ -827,7 +872,17 @@
     "aops_compilation_years": [
       2015,
       2016
-    ]
+    ],
+    "liu_reconstructed_years": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993
+    ],
+    "liu_original_sha256": "a2142eb710045ce582682fb9688c25113a3879ef65f3af3f52055a275a2c7b6f"
   },
   "retrieval_blockers": [
     {
