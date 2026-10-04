@@ -35,6 +35,146 @@
           "problem": "An infinite sequence of positive integers $\\{a_n\\}$ satisfies $a_{n+2} = a_na_{n+1} + 1$ for every $n \\ge 1$. Prove that for every index $i$ there exists an index $j > i$ such that $a_j^j$ is divisible by $a_i^i$."
         }
       ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle with obtuse angle $C$ and $AC>BC$, and let $O$ be the centre of its circumcircle $\\omega$. The tangent to $\\omega$ at $C$ meets $AB$ at $D$. Let $\\Omega$ be the circumcircle of $AOB$. Lines $OD$ and $AC$ meet $\\Omega$ again at $E$ and $F$, respectively. Put $T=OF\\cap CE$ and $K=OD\\cap BC$. Prove that $OTBK$ is cyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n>100$ be an integer. The numbers $1,2,\\ldots,4n$ are partitioned into $n$ groups of four. Prove that there are at least $(n-6)^2/2$ quadruples $(a,b,c,d)$ whose entries belong to four different groups and satisfy $$a<b<c<d,\\qquad c-b\\le |ad-bc|\\le d-a.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a,b,c$ be positive real numbers such that $$\\max\\left\\{\\frac{a(b+c)}{a^2+bc},\\frac{b(c+a)}{b^2+ca},\\frac{c(a+b)}{c^2+ab}\\right\\}\\le\\frac52.$$ Prove that $$\\frac{a(b+c)}{a^2+bc}+\\frac{b(c+a)}{b^2+ca}+\\frac{c(a+b)}{c^2+ab}\\le3.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In the plane there are $2000$ points, no three collinear, of which $1000$ are black and $1000$ are red. There are $100$ red points forming a convex $100$-gon with all the other $1900$ points strictly inside it. Prove that some segments joining points of the same colour can be drawn so that no segment joining red points intersects a segment joining black points, and the segments of each colour form a connected graph on all $1000$ points of that colour."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a,b,m,k$ be positive integers with $k\\ge2$. Prove that there are infinitely many positive integers $n$ such that $$\\gcd\\left(\\varphi_m(n),\\left\\lfloor\\sqrt[k]{an+b}\\right\\rfloor\\right)=1,$$ where $\\varphi$ is Euler's totient function and $\\varphi_m$ is its $m$-fold iterate."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Two rhombuses, each with side length $1.061$ and acute angle $60^\\circ$, have all their vertices strictly inside an equilateral triangle of side length $3$. Prove that the two rhombuses intersect."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with altitude $AD$ and orthocentre $H$. A circle $\\Omega$ passes through $A$ and $B$ and is tangent to line $AC$. Let $BE$ be a diameter of $\\Omega$. Lines $BH$ and $AH$ meet $\\Omega$ again at $K$ and $L$, respectively. Lines $EK$ and $AB$ meet at $T$. Prove that $\\angle BDK=\\angle BLT$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p\\ge3$ be a prime and $d\\ge1$ an integer. Prove that there is an integer $n\\ge1$ with $\\gcd(n,d)=1$ such that $$P=\\prod_{1\\le i<j<p}\\left(i^{n+j}-j^{n+i}\\right)$$ is not divisible by $p^n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all functions $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$f\\left(x+\\frac{f(xy)}x\\right)=f(xy)f\\left(y+\\frac1y\\right)$$ for all positive real numbers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Players $A$ and $B$ play a game on the coordinate plane. Player $A$ hides a nut at a point with integer coordinates, and player $B$ tries to find it. On each move, $B$ chooses three distinct points with integer coordinates, and $A$ tells $B$ whether these three points and the point containing the nut lie on one circle. Can $B$ be guaranteed to find the nut in finitely many moves?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $m\\ge3$ be an integer, and let $(a_n)_{n\\ge1}$ be an infinite sequence of positive integers satisfying $$a_{n+2}=2\\sqrt[m]{a_{n+1}^{m-1}+a_n^{m-1}}-a_{n+1}$$ for every $n\\ge1$. Prove that $a_1<2^m$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The incircle $\\omega$ of a triangle $ABC$ with $AB\\ne AC$ has centre $I$ and touches $BC$, $CA$, and $AB$ at $D$, $E$, and $F$, respectively. The circumcircles of $ABC$ and $AEF$ meet again at $K$. Put $X=EF\\cap AK$, $Y=EF\\cap BC$, and $Z=AK\\cap BC$. The tangents to $\\omega$ from $Y$ and $Z$, other than line $BC$, touch $\\omega$ at $P$ and $Q$, respectively. Put $R=AP\\cap KQ$, and let $M$ be the midpoint of $YZ$. Prove that $IR\\perp XM$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all quadruples $(a,b,c,d)$ of positive integers such that $$2^a+3^b=5^c d,\\qquad 2^b+3^a=5^d c.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all strictly increasing functions $f:\\mathbb N\\to\\mathbb N$ satisfying $$f(mf(n))+f(n)=f(nf(m))+f(m)$$ for all positive integers $m,n$. Here $\\mathbb N$ denotes the positive integers."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle with $AB\\ne AC$, incenter $I$, $A$-excenter $I_A$, altitude $AD$, and circumcircle $\\Omega$. Let $M$ be the midpoint of the arc $BAC$ of $\\Omega$, and let $AL$ be a diameter of $\\Omega$. Put $P=IL\\cap I_AD$ and $Q=ID\\cap I_AL$. A point $S$ satisfies $SA=SM$ and $SP=SL$. Prove that lines $AP$, $MQ$, and $I_AS$ are concurrent."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $x,y$ be positive real numbers and $n$ a positive integer such that $$\\left\\lfloor\\frac{x^{n+1}}{y^n}\\right\\rfloor=\\left\\lfloor\\frac xy\\right\\rfloor+\\left\\lfloor\\frac{y^{n+1}}{x^n}\\right\\rfloor.$$ Prove that $$-\\frac1{2n+1}<x-y<\\frac2{2n-1}.$$ Here $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a scalene triangle, $M$ the midpoint of $AB$, $I$ its incenter, and $J$ the midpoint of the arc $AB$ of its circumcircle not containing $C$. Tangents $IP$ and $IQ$ are drawn to the circle with centre $J$ and radius $JM$, with $A$ and $P$ on the same side of line $CI$. The circumcircles of $APJ$ and $BQJ$ meet again at $R$. Lines $IP$ and $IQ$ meet line $AB$ at $X$ and $Y$, respectively. The internal angle bisectors from $M$ in triangles $XMJ$ and $YMJ$ meet $XJ$ and $YJ$ at $X_1$ and $Y_1$, respectively. Prove that $X_1$, $Y_1$, and $R$ are collinear."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n,k$ be positive integers with $k+1<2n$. Let $A$ be the set of sequences $(a_1,\\ldots,a_{2n})$ such that $a_i\\in\\{1,-1\\}$, $a_1+\\cdots+a_{2n}=0$, and $a_1+\\cdots+a_i\\ge0$ for every $i=1,\\ldots,2n$. Let $B=\\{a\\in A:a_k=1\\}$ and $C=\\{a\\in A:a_{k+1}=1\\}$. Prove that $$|B|\\,|C|\\ge |A|\\,|B\\cap C|,$$ where $|X|$ denotes the cardinality of $X$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Does there exist an infinite set $S$ of positive integers such that (i) $\\gcd(a_1,\\ldots,a_{100})=1$ for every $100$ pairwise distinct elements $a_1,\\ldots,a_{100}$ of $S$; and (ii) for every $x\\in S$ there is $y\\in S$ such that $x+y+2026$ divides $x^2$?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a parallelogram with $\\angle BAC=45^\\circ$ and $\\angle ABC>90^\\circ$. The perpendicular from $A$ to line $BC$ meets the circumcircle of $ACD$ again at $E$. Line $EB$ meets diagonal $AC$ at $F$, and $EF=2AF$. Line $DF$ meets the circumcircle of $ACD$ again at $M$, and lines $AM$ and $BC$ meet at $N$. Prove that lines $CM$, $FN$, and $AE$ are concurrent."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Two players play a game starting with an empty graph on $S$ vertices and $k$ pencils of distinct colours. On each turn the first player names a colour, and the second player draws a previously undrawn edge in that colour. If a monochromatic cycle appears, the game ends and the second player wins. If all edges have been drawn without a monochromatic cycle appearing, the first player wins. For a fixed integer $S>2$, determine the largest positive integer $k$ for which the second player can guarantee a win."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Two cells of an $n\\times n$ board are adjacent if they share a side. A set of cells is connected if any two cells of the set can be joined by a sequence of cells in the set in which consecutive cells are adjacent. Does there exist a positive integer $n$ for which the board can be coloured with three colours, all of which occur, so that no two adjacent cells have the same colour and, for each pair of colours, the set of cells of those two colours is connected?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n\\ge2$ be an integer and $a_1,b_1,\\ldots,a_n,b_n$ positive real numbers such that $$\\frac{a_k^2+1}{b_k}\\ge b_1+\\cdots+b_n,\\qquad\\frac{b_k^2+1}{a_k}\\ge a_1+\\cdots+a_n$$ for every $k=1,\\ldots,n$. Prove that $$|a_1-b_1|+\\cdots+|a_n-b_n|\\le\\sqrt{8n}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The diagonals $AC$ and $BD$ of a convex quadrilateral $ABCD$ meet at $E$. Let $I_1,I_2,I_3,I_4$ be the incenters of $ABE$, $BCE$, $CDE$, $DAE$, respectively, and let $\\omega_1,\\omega_2,\\omega_3,\\omega_4$ be the circumcircles of $ABI_1$, $BCI_2$, $CDI_3$, $DAI_4$, respectively. Let $M$ and $N$ be the midpoints of $AC$ and $BD$. Prove that, if $M\\ne N$, there is a point $P$ on line $MN$ with equal powers with respect to all four circles. The power of a point $X$ with respect to a circle with centre $O$ and radius $r$ is $OX^2-r^2$."
+        }
+      ]
     }
   ]
 }

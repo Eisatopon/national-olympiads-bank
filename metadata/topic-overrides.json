@@ -97042,6 +97042,232 @@
       "statement_sha256": "2a5379f7905cb671996903528f3432d432d144983c278fcbb93a6ef86e4a1dd1",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-04"
+    },
+    "kz.2023.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be a triangle with obtuse angle $C$ and $AC>BC$, and let $O$ be the centre of its circumcircle $\\omega$. The tangent to $\\omega$ at $C$ meets $AB$ at $D$. Let $\\Omega$ be the circumcircle of $AOB$. Lines $OD$ and $AC$ meet $\\Omega$ again at $E$ and $F$, respectively. Put $T=OF\\cap CE$ and $K=OD\\cap BC$. Prove that $OTBK$ is cyclic.",
+      "statement_sha256": "5f1647338e43bb1bab6bc94b4ea1288c34ca7538610de7766c7d91f90ffce127",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2023.1.2": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n>100$ be an integer. The numbers $1,2,\\ldots,4n$ are partitioned into $n$ groups of four. Prove that there are at least $(n-6)^2/2$ quadruples $(a,b,c,d)$ whose entries belong to four different groups and satisfy $$a<b<c<d,\\qquad c-b\\le |ad-bc|\\le d-a.$$",
+      "statement_sha256": "1c55a1ef443342659d651c80866bb2301119e82b06662efa5c39d014f2d65e3e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Quadruples selected across a partition must satisfy arithmetic determinant bounds."
+    },
+    "kz.2023.1.3": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $a,b,c$ be positive real numbers such that $$\\max\\left\\{\\frac{a(b+c)}{a^2+bc},\\frac{b(c+a)}{b^2+ca},\\frac{c(a+b)}{c^2+ab}\\right\\}\\le\\frac52.$$ Prove that $$\\frac{a(b+c)}{a^2+bc}+\\frac{b(c+a)}{b^2+ca}+\\frac{c(a+b)}{c^2+ab}\\le3.$$",
+      "statement_sha256": "cff8a9f2aa5949574d15e3a309a624adcb3296a702fd71e92545124b1c01c39e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2023.2.4": {
+      "topics": [
+        "Geometry",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "In the plane there are $2000$ points, no three collinear, of which $1000$ are black and $1000$ are red. There are $100$ red points forming a convex $100$-gon with all the other $1900$ points strictly inside it. Prove that some segments joining points of the same colour can be drawn so that no segment joining red points intersects a segment joining black points, and the segments of each colour form a connected graph on all $1000$ points of that colour.",
+      "statement_sha256": "24e4b2b48d93cdc4f25d30d7ef99232d979c13d3dc25a6a8342b94d035baef70",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Planar segment geometry and monochromatic graph connectivity are both central."
+    },
+    "kz.2023.2.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $a,b,m,k$ be positive integers with $k\\ge2$. Prove that there are infinitely many positive integers $n$ such that $$\\gcd\\left(\\varphi_m(n),\\left\\lfloor\\sqrt[k]{an+b}\\right\\rfloor\\right)=1,$$ where $\\varphi$ is Euler's totient function and $\\varphi_m$ is its $m$-fold iterate.",
+      "statement_sha256": "6c521951bc989213145c796cdd74fa41a5dc540059ae94ae0103bbad9f510144",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2023.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Two rhombuses, each with side length $1.061$ and acute angle $60^\\circ$, have all their vertices strictly inside an equilateral triangle of side length $3$. Prove that the two rhombuses intersect.",
+      "statement_sha256": "1b44c7a7bf14211a74dee03c056e2625a1ca40549f50adf134a889797300adcf",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2024.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be an acute triangle with altitude $AD$ and orthocentre $H$. A circle $\\Omega$ passes through $A$ and $B$ and is tangent to line $AC$. Let $BE$ be a diameter of $\\Omega$. Lines $BH$ and $AH$ meet $\\Omega$ again at $K$ and $L$, respectively. Lines $EK$ and $AB$ meet at $T$. Prove that $\\angle BDK=\\angle BLT$.",
+      "statement_sha256": "fff1e85aab43d92c5093837af1ea27f6af6df0fb661af2000256fa46a348e4c2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2024.1.2": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $p\\ge3$ be a prime and $d\\ge1$ an integer. Prove that there is an integer $n\\ge1$ with $\\gcd(n,d)=1$ such that $$P=\\prod_{1\\le i<j<p}\\left(i^{n+j}-j^{n+i}\\right)$$ is not divisible by $p^n$.",
+      "statement_sha256": "2119caf518b122ad6ab1c120d26f6d96e658984eef025e2b84a9c48accbaf2be",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2024.1.3": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Find all functions $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$f\\left(x+\\frac{f(xy)}x\\right)=f(xy)f\\left(y+\\frac1y\\right)$$ for all positive real numbers $x,y$.",
+      "statement_sha256": "bfcef51e015569ce7e900af51ac48918c00722d424bccb55cd06cf4633aede7d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2024.2.4": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "Players $A$ and $B$ play a game on the coordinate plane. Player $A$ hides a nut at a point with integer coordinates, and player $B$ tries to find it. On each move, $B$ chooses three distinct points with integer coordinates, and $A$ tells $B$ whether these three points and the point containing the nut lie on one circle. Can $B$ be guaranteed to find the nut in finitely many moves?",
+      "statement_sha256": "6b4429d1e72a2a59ad95869e1057ed0a50ef9c2207bfe90f85beec5803858625",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "An information-search game uses concyclicity queries on lattice points."
+    },
+    "kz.2024.2.5": {
+      "topics": [
+        "Number Theory",
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $m\\ge3$ be an integer, and let $(a_n)_{n\\ge1}$ be an infinite sequence of positive integers satisfying $$a_{n+2}=2\\sqrt[m]{a_{n+1}^{m-1}+a_n^{m-1}}-a_{n+1}$$ for every $n\\ge1$. Prove that $a_1<2^m$.",
+      "statement_sha256": "0b4d0308b9bbf839742c94ad80024d44829d1f575dea14f9daa2ab2d3d2a4bf0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "A radical recurrence constrained to positive integers yields an initial-term bound."
+    },
+    "kz.2024.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "The incircle $\\omega$ of a triangle $ABC$ with $AB\\ne AC$ has centre $I$ and touches $BC$, $CA$, and $AB$ at $D$, $E$, and $F$, respectively. The circumcircles of $ABC$ and $AEF$ meet again at $K$. Put $X=EF\\cap AK$, $Y=EF\\cap BC$, and $Z=AK\\cap BC$. The tangents to $\\omega$ from $Y$ and $Z$, other than line $BC$, touch $\\omega$ at $P$ and $Q$, respectively. Put $R=AP\\cap KQ$, and let $M$ be the midpoint of $YZ$. Prove that $IR\\perp XM$.",
+      "statement_sha256": "6e4aff740145e27d0203307793f102aaf8db60a5d10bfb27c06039048215e0ca",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2025.1.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all quadruples $(a,b,c,d)$ of positive integers such that $$2^a+3^b=5^c d,\\qquad 2^b+3^a=5^d c.$$",
+      "statement_sha256": "99ae8217eee19096a5bcc88a6d394f8dd6e77c1c87c2044f9c4eacf5ba778ac7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2025.1.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all strictly increasing functions $f:\\mathbb N\\to\\mathbb N$ satisfying $$f(mf(n))+f(n)=f(nf(m))+f(m)$$ for all positive integers $m,n$. Here $\\mathbb N$ denotes the positive integers.",
+      "statement_sha256": "1abc45ee6e1dddc6bdaf71d1cae81205dfcc08a9a4bd6ed49471f7194f5243f5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "A functional equation on the positive integers combines monotonicity and integer-valued constraints."
+    },
+    "kz.2025.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be a triangle with $AB\\ne AC$, incenter $I$, $A$-excenter $I_A$, altitude $AD$, and circumcircle $\\Omega$. Let $M$ be the midpoint of the arc $BAC$ of $\\Omega$, and let $AL$ be a diameter of $\\Omega$. Put $P=IL\\cap I_AD$ and $Q=ID\\cap I_AL$. A point $S$ satisfies $SA=SM$ and $SP=SL$. Prove that lines $AP$, $MQ$, and $I_AS$ are concurrent.",
+      "statement_sha256": "5d2247f2444bfb6354f002eb26fbab5a71c57ad2ab81db26642223f4398d4d7e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2025.2.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $x,y$ be positive real numbers and $n$ a positive integer such that $$\\left\\lfloor\\frac{x^{n+1}}{y^n}\\right\\rfloor=\\left\\lfloor\\frac xy\\right\\rfloor+\\left\\lfloor\\frac{y^{n+1}}{x^n}\\right\\rfloor.$$ Prove that $$-\\frac1{2n+1}<x-y<\\frac2{2n-1}.$$ Here $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
+      "statement_sha256": "ea1d1c4b0848950ae1ac25e7dec84b6c5eb8f6bff118401820571aff34122fb3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2025.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be a scalene triangle, $M$ the midpoint of $AB$, $I$ its incenter, and $J$ the midpoint of the arc $AB$ of its circumcircle not containing $C$. Tangents $IP$ and $IQ$ are drawn to the circle with centre $J$ and radius $JM$, with $A$ and $P$ on the same side of line $CI$. The circumcircles of $APJ$ and $BQJ$ meet again at $R$. Lines $IP$ and $IQ$ meet line $AB$ at $X$ and $Y$, respectively. The internal angle bisectors from $M$ in triangles $XMJ$ and $YMJ$ meet $XJ$ and $YJ$ at $X_1$ and $Y_1$, respectively. Prove that $X_1$, $Y_1$, and $R$ are collinear.",
+      "statement_sha256": "0b70d59df30b2c9fbc1d930380e9822d215ecb3fdb274ba5642360470c7c4c52",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2025.2.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $n,k$ be positive integers with $k+1<2n$. Let $A$ be the set of sequences $(a_1,\\ldots,a_{2n})$ such that $a_i\\in\\{1,-1\\}$, $a_1+\\cdots+a_{2n}=0$, and $a_1+\\cdots+a_i\\ge0$ for every $i=1,\\ldots,2n$. Let $B=\\{a\\in A:a_k=1\\}$ and $C=\\{a\\in A:a_{k+1}=1\\}$. Prove that $$|B|\\,|C|\\ge |A|\\,|B\\cap C|,$$ where $|X|$ denotes the cardinality of $X$.",
+      "statement_sha256": "8f49371b3188f8551c2417deb1739fcd016f8e51bc62622bccfbc471afe462d2",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.1.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Does there exist an infinite set $S$ of positive integers such that (i) $\\gcd(a_1,\\ldots,a_{100})=1$ for every $100$ pairwise distinct elements $a_1,\\ldots,a_{100}$ of $S$; and (ii) for every $x\\in S$ there is $y\\in S$ such that $x+y+2026$ divides $x^2$?",
+      "statement_sha256": "f31e10c40ddbc53c6a867b9a4d239a6a2166033709cf7940490027e7e9743bf0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCD$ be a parallelogram with $\\angle BAC=45^\\circ$ and $\\angle ABC>90^\\circ$. The perpendicular from $A$ to line $BC$ meets the circumcircle of $ACD$ again at $E$. Line $EB$ meets diagonal $AC$ at $F$, and $EF=2AF$. Line $DF$ meets the circumcircle of $ACD$ again at $M$, and lines $AM$ and $BC$ meet at $N$. Prove that lines $CM$, $FN$, and $AE$ are concurrent.",
+      "statement_sha256": "ca60d564c956f0e6a66176da7c2aec5d193ed2f97c7a243dec0a69b9c2406b46",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Two players play a game starting with an empty graph on $S$ vertices and $k$ pencils of distinct colours. On each turn the first player names a colour, and the second player draws a previously undrawn edge in that colour. If a monochromatic cycle appears, the game ends and the second player wins. If all edges have been drawn without a monochromatic cycle appearing, the first player wins. For a fixed integer $S>2$, determine the largest positive integer $k$ for which the second player can guarantee a win.",
+      "statement_sha256": "5efc4cd5c413fff1097883d89dde38ef8be0dc6658f88401ce0d85e0122c536d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.2.4": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Two cells of an $n\\times n$ board are adjacent if they share a side. A set of cells is connected if any two cells of the set can be joined by a sequence of cells in the set in which consecutive cells are adjacent. Does there exist a positive integer $n$ for which the board can be coloured with three colours, all of which occur, so that no two adjacent cells have the same colour and, for each pair of colours, the set of cells of those two colours is connected?",
+      "statement_sha256": "16c07831ca134e8e355862000f87d387f07e00dc690ba2655bd15c67424230f8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.2.5": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $n\\ge2$ be an integer and $a_1,b_1,\\ldots,a_n,b_n$ positive real numbers such that $$\\frac{a_k^2+1}{b_k}\\ge b_1+\\cdots+b_n,\\qquad\\frac{b_k^2+1}{a_k}\\ge a_1+\\cdots+a_n$$ for every $k=1,\\ldots,n$. Prove that $$|a_1-b_1|+\\cdots+|a_n-b_n|\\le\\sqrt{8n}.$$",
+      "statement_sha256": "eb3ce53572f4f29587984562dff29e2dcfb1b4526cb9c87f6b46831f602c3063",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
+    },
+    "kz.2026.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "The diagonals $AC$ and $BD$ of a convex quadrilateral $ABCD$ meet at $E$. Let $I_1,I_2,I_3,I_4$ be the incenters of $ABE$, $BCE$, $CDE$, $DAE$, respectively, and let $\\omega_1,\\omega_2,\\omega_3,\\omega_4$ be the circumcircles of $ABI_1$, $BCI_2$, $CDI_3$, $DAI_4$, respectively. Let $M$ and $N$ be the midpoints of $AC$ and $BD$. Prove that, if $M\\ne N$, there is a point $P$ on line $MN$ with equal powers with respect to all four circles. The power of a point $X$ with respect to a circle with centre $O$ and radius $r$ is $OX^2-r^2$.",
+      "statement_sha256": "8cd34fbed19c68a3eeb66a91bff8831bf79aee7903cfa523eb493932e833cce4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04"
     }
   }
 }
