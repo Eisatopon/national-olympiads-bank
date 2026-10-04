@@ -705,6 +705,26 @@
       "uid": "clf.1989.2.6",
       "text": "Source indexing ambiguity: after relating f(n+1) to f(n), the original says to take f(n) as large as possible. The bank renders this as choosing the largest value at each step, without claiming independent confirmation of the index.",
       "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cn.2010.1.3",
+      "text": "Editorial correction: the retrieved book statement prints |az²+bz+c| ≥ 1, while its entire solution uses ≤ 1 and constructs a finite maximum under that upper bound. This record explicitly uses ≤ 1; it is not a literal transcription of the erroneous line. Independent original-paper confirmation remains pending.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cn.2010.2.5",
+      "text": "Source numbering discrepancy: the fifth problem is labelled 4 again in the retrieved reproduction. It is stored as problem 5 according to its position after second-day problem 4 and before problem 6.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cn.2010.1.1",
+      "text": "Source arc convention: the printed text does not specify which of the two arcs PB and QB is intended. The original statement figure is retained to show its configuration; no extra arc condition has been invented.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "gr.2011.1.2",
+      "text": "Incomplete figure recovery: the contemporaneous Greek transcription specifies six unit squares per cross-shaped tile and a 10 cm by 11 cm board. Those missing conditions are restored, and an unrelated forum question is removed. The source attachment (download/file.php?id=12089) has not yet been retrieved and visually verified for this bank. This exercise remains incomplete here until its exact tile shape is restored.",
+      "kind": "source_domain_gap"
     }
   ],
   "restored_figures": [
@@ -712,16 +732,19 @@
     "clf.1995.1.2",
     "clf.1995.2.7",
     "vn.2017.1.4",
-    "id.2013.1.1"
+    "id.2013.1.1",
+    "cn.2010.1.1"
   ],
   "china": {
     "active_complete_years": [
       2003,
       2004,
       2005,
-      2006
+      2006,
+      2009,
+      2010
     ],
-    "active_statements": 24,
+    "active_statements": 36,
     "damaged_original_path": "docs/quarantine/China-olympiad-problems-pre-rebuild.json",
     "remaining_historical_years": [
       1987,
@@ -742,8 +765,6 @@
       2002,
       2007,
       2008,
-      2009,
-      2010,
       2011,
       2012,
       2013,
@@ -755,7 +776,7 @@
   "retrieval_blockers": [
     {
       "record": "gr.2011.1.2",
-      "status": "cross shape not recovered; the Archimedes paper is a different contest and cannot substitute for the TST."
+      "status": "Contemporaneous Greek transcription recovered and missing six-square condition corrected. Exact tile figure attachment identified at Mathematica.gr id=12089, but local retrieval is blocked; visual verification and bank figure remain pending."
     },
     {
       "record": "br.1982.0.4",

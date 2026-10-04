@@ -1918,10 +1918,15 @@
           "url": "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n6.pdf",
           "label": "Canadian Mathematical Society: independent 2005 Problem 2 corroboration",
           "verification": "unverified"
+        },
+        {
+          "url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "label": "Xiong Bin / Lee Peng Yee: Mathematical Olympiad in China 2009–2010, coach-authored problems and solutions; public reproduction",
+          "verification": "unverified"
         }
       ],
       "notes": "Rebuilt active archive; damaged original retained separately for further reconstruction.",
-      "coverage_notes": "Four consecutive complete CMO papers, 2003–2006, six problems each. These 24 statements were rebuilt and compared visually with the coach-authored source. Historical 1987–2002 and 2007–2016 records remain quarantined in docs/quarantine and are not loaded. No claim of full historical coverage.",
+      "coverage_notes": "Complete stored CMO papers: 2003–2006 and 2009–2010, six problems each (36 statements). The 2010 reproduction has explicitly documented inequality and numbering corrections and an unspecified arc convention. Historical 1987–2002, 2007–2008 and 2011–2016 records remain quarantined pending reconstruction. No claim of complete historical coverage.",
       "statement_checks": {
         "cn.2003.1.1": {
           "status": "statement_checked_against_source",
@@ -2240,9 +2245,193 @@
           "review_method": "AI-assisted visual and textual comparison",
           "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
           "source_contains_solutions": true
+        },
+        "cn.2009.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "In an acute triangle $PBC$ with $PB\\ne PC$, points $A,D$ lie on sides $PB,PC$, respectively. Let $M,N$ be the midpoints of $BC,AD$, and let $O=AC\\cap BD$. The perpendiculars from $O$ to lines $AB,CD$ meet them at $E,F$, respectively. (a) Prove that if $A,B,C,D$ are concyclic, then $EM\\cdot FN=EN\\cdot FM$. (b) Does this equality imply that $A,B,C,D$ are concyclic? Justify your answer.",
+          "statement_sha256": "6b53eef071c8f45215ed0c5b28c6a6f71ba1e0eb8aa8f315d4861e1cc7efa981",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 35,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2009.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Find all pairs of prime numbers $(p,q)$ for which $pq\\mid 5^p+5^q$.",
+          "statement_sha256": "94b74627e46de15e4101f2deae78b3c085998649007cd0ddf543f932cbc51fbe",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 36,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2009.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $m,n$ be integers with $4<m<n$. A regular $(2n+1)$-gon has vertices $A_1,A_2,\\ldots,A_{2n+1}$. How many convex $m$-gons whose vertices belong to this set have exactly two acute interior angles?",
+          "statement_sha256": "35e4ec039406db0076408762dc1e05f311663d2b4e66436c356fae8e50f4381c",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 36,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2009.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $n\\ge3$ be an integer. Real numbers $a_1,\\ldots,a_n$ satisfy $\\min_{1\\le i<j\\le n}|a_i-a_j|=1$. Find the minimum of $\\sum_{k=1}^{n}|a_k|^3$.",
+          "statement_sha256": "80349f3786af687a83e321db79021d67d949f37804838db3d96ae41f8b7eac33",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 37,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2009.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "The sides and diagonals of a convex $n$-gon are coloured with $n$ given colours, one colour per segment. For every choice of three distinct colours, there is a triangle with vertices among the polygon vertices whose three sides have those colours. Determine all possible values of $n$.",
+          "statement_sha256": "4f2c4f67655d0f011cd1239baae1c82f8cb2282a4d2d4b03a0f2847fb603fb4c",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 37,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2009.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "For every integer $n\\ge3$, prove that there is a set $S$ of $n$ distinct positive integers such that, for any two distinct nonempty subsets $A,B\\subseteq S$, the numbers $\\frac{1}{|A|}\\sum_{x\\in A}x$ and $\\frac{1}{|B|}\\sum_{x\\in B}x$ are coprime composite integers.",
+          "statement_sha256": "ec57aefb5bd04d616b8fa66dd3ed9b0e1c7e733117999f705cd8a83485356008",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 38,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2010.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Two circles $\\Gamma_1,\\Gamma_2$ intersect at $A,B$. A line through $B$ meets them again at $C,D$, respectively; another line through $B$ meets them again at $E,F$, respectively. Line $CF$ meets $\\Gamma_1,\\Gamma_2$ again at $P,Q$, respectively. Let $M,N$ be the midpoints of arcs $PB,QB$, respectively, as in the figure. If $CD=EF$, prove that $C,F,M,N$ are concyclic.\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2010_p1_fig.png",
+          "statement_sha256": "56c537377d179a810aa873fc7f694503054c4cf0915477287ee8059a89361bab",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 39,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true,
+          "figure_checks": [
+            {
+              "path": "images/china_2010_p1_fig.png",
+              "sha256": "14b3b83428bc7109f5ca3d5c1de95c4fea30ca895628205b8957780114482304"
+            }
+          ]
+        },
+        "cn.2010.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $k\\ge3$ be an integer. A sequence is defined by $a_k=2k$ and, for $n>k$, $a_n=a_{n-1}+1$ if $\\gcd(a_{n-1},n)=1$, and $a_n=2n$ otherwise. Prove that $a_n-a_{n-1}$ is prime for infinitely many $n>k$.",
+          "statement_sha256": "5e73eff8776115affed0ff6ec6827d4f9070ec4a6e52e6fad66681df9d44e0ff",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 39,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2010.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Complex numbers $a,b,c$ satisfy $|az^2+bz+c|\\le1$ for every complex number $z$ with $|z|\\le1$. Find the maximum possible value of $|bc|$.",
+          "statement_sha256": "e1246b0795971d9529dc6cece49430f9ef467a5e730bf3fe5bf3c85a193cab27",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 40,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification. The statement inequality is explicitly corrected from the printed >= to <=, as consistently used throughout the source solution; see the editorial note. Independent original-paper corroboration remains pending.",
+          "source_contains_solutions": true
+        },
+        "cn.2010.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $m,n>1$ be integers and let $a_1<a_2<\\cdots<a_m$ be integers. Prove that there is a set $T$ of integers with $|T|\\le1+\\frac{a_m-a_1}{2n+1}$ such that each $a_i$ can be expressed as $a_i=t+s$, where $t\\in T$ and $s$ is an integer in $[-n,n]$.",
+          "statement_sha256": "6d74ff6a07dd55059c3f7c96f1ffbb7dc3fdbc9785edeb3d5b8326f871d4a505",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 40,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
+        },
+        "cn.2010.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $n\\ge3$. Cards are distributed among $n+1$ piles $A_1,\\ldots,A_n,O$, with cyclic indices $A_0=A_n$ and $A_{n+1}=A_1$. Two moves are allowed: (1) if $A_i$ has at least three cards, remove three from it and add one to each of $A_{i-1},A_{i+1},O$; (2) if $O$ has at least $n$ cards, remove $n$ from it and add one to each $A_i$. Prove that if the total number of cards is at least $n^2+3n+1$, a finite sequence of moves can leave at least $n+1$ cards in every pile.",
+          "statement_sha256": "b6c62297fa71adb2cd99b5022bd8f46d1478224f7b771c2584d1df1338c4459d",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 40,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification. The fifth problem is erroneously labelled 4 in this reproduction; stored numbering follows its position in the complete six-problem paper.",
+          "source_contains_solutions": true
+        },
+        "cn.2010.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $a_1,a_2,a_3,b_1,b_2,b_3$ be six pairwise distinct positive integers. For every positive integer $n$, assume that $(n+1)a_1^n+n a_2^n+(n-1)a_3^n$ divides $(n+1)b_1^n+n b_2^n+(n-1)b_3^n$. Prove that there is a positive integer $k$ such that $b_i=k a_i$ for $i=1,2,3$.",
+          "statement_sha256": "039972a674e1416a323f09b278f170058ce09803f5bea3df2035d0c4c10718bf",
+          "source_url": "https://api.saladigital.org/public/orgs/66af10cdd87f4dd0d4a7ea2c/pdf/703599a9-5399-4101-91d4-db0425ee1618.pdf",
+          "source_document_sha256": "95eecd2b55caa63f42ed848c528316024abb4a686ff72f58a51675864748e64a",
+          "source_page": 41,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Statement, formulas and domains visually compared with the coach-authored 2009–2010 volume; this is source review, not independent solution verification.",
+          "source_contains_solutions": true
         }
       },
-      "statement_notes": {}
+      "statement_notes": {
+        "cn.2010.1.3": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Complex numbers $a,b,c$ satisfy $|az^2+bz+c|\\le1$ for every complex number $z$ with $|z|\\le1$. Find the maximum possible value of $|bc|$.",
+          "statement_sha256": "e1246b0795971d9529dc6cece49430f9ef467a5e730bf3fe5bf3c85a193cab27",
+          "checked_at": "2026-10-04",
+          "text": "Editorial correction: the retrieved book statement prints |az²+bz+c| ≥ 1, while its entire solution uses ≤ 1 and constructs a finite maximum under that upper bound. This record explicitly uses ≤ 1; it is not a literal transcription of the erroneous line. Independent original-paper confirmation remains pending."
+        },
+        "cn.2010.2.5": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Let $n\\ge3$. Cards are distributed among $n+1$ piles $A_1,\\ldots,A_n,O$, with cyclic indices $A_0=A_n$ and $A_{n+1}=A_1$. Two moves are allowed: (1) if $A_i$ has at least three cards, remove three from it and add one to each of $A_{i-1},A_{i+1},O$; (2) if $O$ has at least $n$ cards, remove $n$ from it and add one to each $A_i$. Prove that if the total number of cards is at least $n^2+3n+1$, a finite sequence of moves can leave at least $n+1$ cards in every pile.",
+          "statement_sha256": "b6c62297fa71adb2cd99b5022bd8f46d1478224f7b771c2584d1df1338c4459d",
+          "checked_at": "2026-10-04",
+          "text": "Source numbering discrepancy: the fifth problem is labelled 4 again in the retrieved reproduction. It is stored as problem 5 according to its position after second-day problem 4 and before problem 6."
+        },
+        "cn.2010.1.1": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Two circles $\\Gamma_1,\\Gamma_2$ intersect at $A,B$. A line through $B$ meets them again at $C,D$, respectively; another line through $B$ meets them again at $E,F$, respectively. Line $CF$ meets $\\Gamma_1,\\Gamma_2$ again at $P,Q$, respectively. Let $M,N$ be the midpoints of arcs $PB,QB$, respectively, as in the figure. If $CD=EF$, prove that $C,F,M,N$ are concyclic.\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2010_p1_fig.png",
+          "statement_sha256": "56c537377d179a810aa873fc7f694503054c4cf0915477287ee8059a89361bab",
+          "checked_at": "2026-10-04",
+          "text": "Source arc convention: the printed text does not specify which of the two arcs PB and QB is intended. The original statement figure is retained to show its configuration; no extra arc condition has been invented."
+        }
+      }
     },
     "Croatia-drz-problems.json": {
       "verification_status": "not_verified_against_source",
@@ -3024,7 +3213,22 @@
       "verification_status": "not_verified_against_source",
       "coverage": "not_assessed",
       "competition": "Greece Team Selection Test (TST)",
-      "source_links": []
+      "source_links": [
+        {
+          "url": "https://www.mathematica.gr/forum/viewtopic.php?p=78796",
+          "label": "Contemporaneous Mathematica.gr reproduction, 16 April 2011, with original problem-2 attachment; secondary source",
+          "verification": "unverified"
+        }
+      ],
+      "statement_notes": {
+        "gr.2011.1.2": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "A rectangular board measuring $10\\,\\mathrm{cm}\\times11\\,\\mathrm{cm}$ is divided into $110$ unit squares. Cross-shaped tiles each consist of six unit squares, as shown in the source figure. Find the maximum number of tiles that can be placed on the board without overlap, each tile covering exactly six board squares.",
+          "statement_sha256": "03ac281b73d7d57fdd10b8a15b39c3c85dc4ea50f6147b753a19ca8e717cf930",
+          "checked_at": "2026-10-04",
+          "text": "Incomplete figure recovery: the contemporaneous Greek transcription specifies six unit squares per cross-shaped tile and a 10 cm by 11 cm board. Those missing conditions are restored, and an unrelated forum question is removed. The source attachment (download/file.php?id=12089) has not yet been retrieved and visually verified for this bank. This exercise remains incomplete here until its exact tile shape is restored."
+        }
+      }
     },
     "HongKong-chkmo-problems.json": {
       "verification_status": "not_verified_against_source",

@@ -1,12 +1,12 @@
 # Source verification progress
 
-Inventory: 9934 stored records; 399 source-checked; 9535 remaining (including quarantine).
+Inventory: 10660 stored records; 1482 source-checked; 9178 remaining (including quarantine).
 
-Active bank: 9592 records; 399 source-checked; 9193 remaining. Whole-bank source verification is **not complete**.
+Active bank: 10660 records; 1482 source-checked; 9178 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
-Counts describe stored records, not certified unique mathematical problems. China includes damaged records and remains quarantined. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.
+Counts describe stored records, not certified unique mathematical problems. China active data contains reconstructed 2003–2006 and 2009–2010 papers; damaged historical data is retained outside the active collections. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.
 
 | Collection | Stored records | Source checked | Remaining | State |
 |---|---:|---:|---:|---|
@@ -14,11 +14,13 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Australia-amo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | Austria-oemo-problems.json | 72 | 0 | 72 | pending |
 | Azerbaijan-tst-problems.json | 79 | 0 | 79 | pending |
-| Belgium-omb-maxi-problems.json | 20 | 20 | 0 | stored_statements_checked |
+| Belgium-omb-maxi-problems.json | 28 | 28 | 0 | stored_statements_checked |
 | Brazil-obm-problems.json | 273 | 0 | 273 | pending |
 | Bulgaria-nmo-problems.json | 30 | 0 | 30 | pending |
 | Canada-cmo-problems.json | 323 | 100 | 223 | pending |
-| China-olympiad-problems.json | 342 | 0 | 342 | quarantined |
+| Chile-final-problems.json | 169 | 169 | 0 | stored_statements_checked |
+| Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
+| China-olympiad-problems.json | 36 | 36 | 0 | stored_statements_checked |
 | Croatia-drz-problems.json | 60 | 0 | 60 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
 | Cyprus-tst-problems.json | 184 | 0 | 184 | pending |
@@ -37,9 +39,10 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Hungary-oktv-problems.json | 63 | 0 | 63 | pending |
 | Iceland-final-problems.json | 78 | 0 | 78 | pending |
 | India-inmo-problems.json | 235 | 0 | 235 | pending |
-| Indonesia-osn-problems.json | 191 | 0 | 191 | pending |
+| Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
 | Ireland-irmo-problems.json | 375 | 0 | 375 | pending |
 | Italy-itamo-problems.json | 180 | 0 | 180 | pending |
+| Italy-preimo-tst-problems.json | 109 | 109 | 0 | stored_statements_checked |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
 | Kazakhstan-rmo-problems.json | 6 | 0 | 6 | pending |
 | Korea-fkmo-problems.json | 108 | 0 | 108 | pending |
@@ -64,18 +67,22 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Singapore-mo-open-problems.json | 135 | 0 | 135 | pending |
 | Slovenia-national-problems.json | 114 | 0 | 114 | pending |
 | Spain-ome-problems.json | 198 | 0 | 198 | pending |
-| Sweden-smt-problems.json | 114 | 114 | 0 | stored_statements_checked |
+| Sweden-smt-problems.json | 120 | 120 | 0 | stored_statements_checked |
 | Swiss-final-problems.json | 196 | 0 | 196 | pending |
 | Swiss-selection-problems.json | 252 | 0 | 252 | pending |
+| Thailand-tmo-problems.json | 294 | 294 | 0 | stored_statements_checked |
+| Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
+| Thailand-tstst-problems.json | 12 | 12 | 0 | stored_statements_checked |
 | Turkey-tmo-problems.json | 126 | 0 | 126 | pending |
 | Uk-bmo1-problems.json | 132 | 0 | 132 | pending |
 | Uk-bmo2-problems.json | 88 | 0 | 88 | pending |
 | Uk-tst-problems.json | 285 | 0 | 285 | pending |
 | Ukraine-umo-problems.json | 16 | 0 | 16 | pending |
+| Uruguay-final-v-problems.json | 28 | 28 | 0 | stored_statements_checked |
 | Usa-tst-problems.json | 85 | 85 | 0 | stored_statements_checked |
 | Usa-tstst-problems.json | 132 | 0 | 132 | pending |
 | Usa-usamo-problems.json | 306 | 0 | 306 | pending |
-| Vietnam-vmo-problems.json | 368 | 0 | 368 | pending |
+| Vietnam-vmo-problems.json | 368 | 7 | 361 | pending |
 
 ## Evidence and outstanding work
 
