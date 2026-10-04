@@ -350,6 +350,76 @@
           "problem": "For nonempty sets $S,T$ of numbers, define $S+T=\\{s+t:s\\in S,t\\in T\\}$ and $2S=\\{2s:s\\in S\\}$. Let $n$ be a positive integer and $A,B$ nonempty subsets of $\\{1,2,\\ldots,n\\}$. Prove that there is a subset $D\\subseteq A+B$ such that $D+D\\subseteq2(A+B)$ and $|D|\\ge\\frac{|A|\\,|B|}{2n}$. Here $|X|$ denotes cardinality."
         }
       ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $z_1,z_2,\\ldots,z_n$ be complex numbers satisfying $|z_i-1|\\le r$ for some $r\\in(0,1)$. Prove that $$\\left|\\sum_{i=1}^n z_i\\right|\\left|\\sum_{i=1}^n\\frac1{z_i}\\right|\\ge n^2(1-r^2).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $A,B,D,E,F,C$ be six points on a circle, in that order, with $AB=AC$. Define $P=AD\\cap BE$, $R=AF\\cap CE$, $Q=BF\\cap CD$, $S=AD\\cap BF$, and $T=AF\\cap CD$. Let $K$ lie on $ST$ and satisfy $\\angle QKS=\\angle ECA$. Prove that $$\\frac{SK}{KT}=\\frac{PQ}{QR}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\ge5$ be a positive integer. Let $A\\subseteq B$ be sets of integers with $|A|=n$ and $|B|=m$. Suppose that for any distinct $x,y\\in B$, $$x+y\\in B\\quad\\Longleftrightarrow\\quad x,y\\in A.$$ Determine the minimum possible value of $m$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all integers $k$ for which there are infinitely many positive integers $n$ such that $$n+k\\nmid\\binom{2n}{n}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Among $30$ students, each student has at most $5$ friends, and every set of $5$ students contains a pair who are not friends. Determine the largest integer $k$ such that every configuration satisfying these conditions contains $k$ students no two of whom are friends."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a_1,a_2,\\ldots$ be a sequence of nonnegative integers such that, for all positive integers $m,n$, $$\\sum_{i=1}^{2m}a_{in}\\le m.$$ Prove that there are positive integers $k,d$ such that $$\\sum_{i=1}^{2k}a_{id}=k-2014.$$"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1,a_2,\\ldots,a_{31}$ and $b_1,b_2,\\ldots,b_{31}$ be positive integers satisfying $$a_1<a_2<\\cdots<a_{31}\\le2015,\\qquad b_1<b_2<\\cdots<b_{31}\\le2015,$$ and $$\\sum_{i=1}^{31}a_i=\\sum_{i=1}^{31}b_i.$$ Find the maximum possible value of $$S=\\sum_{i=1}^{31}|a_i-b_i|.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In triangle $AEF$, points $B,D$ lie on segments $AE,AF$, respectively, and $ED$ and $FB$ meet at $C$. Points $K,L,M,N$ lie on segments $AB,BC,CD,DA$, respectively, and satisfy $$\\frac{AK}{KB}=\\frac{AD}{BC},\\quad\\frac{BL}{LC}=\\frac{BA}{CD},\\quad\\frac{CM}{MD}=\\frac{CB}{DA},\\quad\\frac{DN}{NA}=\\frac{DC}{AB}.$$ The incircle of triangle $AEF$ touches $AE,AF$ at $S,T$, respectively; the incircle of triangle $CEF$ touches $CE,CF$ at $U,V$, respectively. Prove that if $K,L,M,N$ are concyclic, then $S,T,U,V$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $p$ be an odd prime, and let $a_1,a_2,\\ldots,a_p$ be integers. Prove that the following conditions are equivalent: (1) There is a polynomial $P(x)$ of degree at most $(p-1)/2$ such that $P(i)\\equiv a_i\\pmod p$ for $1\\le i\\le p$. (2) For every natural number $d\\le(p-1)/2$, $$\\sum_{i=1}^{p}(a_{i+d}-a_i)^2\\equiv0\\pmod p,$$ where subscripts are interpreted modulo $p$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n\\ge2$ be a positive integer, and let $k$ be the number of primes at most $n$. Put $S=\\{2,3,\\ldots,n\\}$. Suppose that $A\\subseteq S$, $|A|\\le k$, and no two distinct elements of $A$ divide one another. Prove that there is a set $B$ with $|B|=k$ and $A\\subseteq B\\subseteq S$ such that no two distinct elements of $B$ divide one another."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCD$ be a convex quadrilateral. Prove that there is a square $A\\prime B\\prime C\\prime D\\prime$, whose vertices may be ordered clockwise or counterclockwise, with $A\\ne A\\prime$, $B\\ne B\\prime$, $C\\ne C\\prime$, $D\\ne D\\prime$, such that the lines $AA\\prime,BB\\prime,CC\\prime,DD\\prime$ are concurrent."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $G$ be a complete directed graph on $100$ vertices such that for any two vertices $x,y$ there is a directed path from $x$ to $y$. (a) Prove that there is an integer $m$ such that for any two vertices $x,y$ there is a directed path of length $m$ from $x$ to $y$; vertices may be repeated along a path. (b) For each such graph $G$, let $m(G)$ be the smallest possible $m$ in part (a). Find the minimum value of $m(G)$ over all such graphs."
+        }
+      ]
     }
   ]
 }
