@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "years": [
+    1994,
+    1997
+  ],
+  "records": 12,
+  "primary_source_certification": false,
+  "source_url": "https://upload.xuanyan.ws/chinese-mathematical-olympiads.pdf",
+  "source_document_sha256": "f28ad6cb59175a495b02a88677171e96963d2b050ba4e46fd5e4c059aec49bf6",
+  "corroborating_source_url": "https://static.zzpxx.com/editor/default/20191015/b005724e938a0dbc37c44a63bb405980.pdf",
+  "english_source_url": "https://igor-kortchemski.perso.math.cnrs.fr/olympiades/Problemes/mc96-97-01feb.pdf",
+  "local_statement_documents": [
+    {
+      "year": 1994,
+      "path": "sources/china/1994-source-statements.pdf",
+      "sha256": "d06a810443cf566f1da509c9d493fb3899cc3fdc73e4c42b152cbdc30d022da5",
+      "contains_solutions": false,
+      "extraction_method": "Source page excerpts; content outside the statement rectangles is removed by PDF redaction before saving."
+    },
+    {
+      "year": 1997,
+      "path": "sources/china/1997-source-statements.pdf",
+      "sha256": "6bcc9aa8d12fd72f512a4b24f379414b72b45f1c111e32e01c8456ee5706eb6a",
+      "contains_solutions": false,
+      "extraction_method": "Source page excerpts; content outside the statement rectangles is removed by PDF redaction before saving."
+    }
+  ],
+  "source_variants": [
+    {
+      "year": 1997,
+      "problem": 1,
+      "note": "Source correction: the English 1996–1997 collection misprints the last exponent as 1/2. Both inspected Chinese compilations print the twelfth power for every variable; this consistent version is retained."
+    },
+    {
+      "year": 1997,
+      "problem": 5,
+      "note": "The English collection lists i=1,...,16 and defines an eighteenth entry but does not explicitly print the wraparound difference. Both Chinese compilations explicitly include the difference between the images of 1 and 17. The bank retains this complete cyclic condition, with positive iteration indices."
+    },
+    {
+      "year": 1997,
+      "problem": 6,
+      "note": "Source-domain variant: the English collection restricts the sequence to nonnegative integers. Both inspected Chinese compilations say a nonnegative sequence without an integrality restriction. The bank renders this as nonnegative real terms; the bound is valid for that domain."
+    }
+  ],
+  "formula_spot_check": "1994 P5 binomial identity verified for n=1,...,25; not a substitute for a general proof."
+}

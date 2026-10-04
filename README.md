@@ -10,7 +10,7 @@ The older Olympiad Bank in `Eisatopon/eisatopon-next` is a separate application 
 
 ## Data integrity
 
-China now indexes 168 statements in 28 six-problem papers: 1987–1993, 1995–1996 and 1998–2016. The remaining historical gaps are 1994 and 1997. Uploaded AoPS papers are visually checked, with source errors, restored conditions and unresolved variants recorded in metadata. This does not certify every statement against an official original. The corrupted original archive remains in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application.
+China now indexes 180 statements in thirty complete six-problem papers covering every year from 1987 through 2016. The 1994 and 1997 papers are restored from inspected Chinese compilations; documented English-source variants are retained in metadata. Uploaded AoPS papers are visually checked, with source errors, restored conditions and unresolved variants recorded in metadata. This does not certify every statement against an official original. The corrupted original archive remains in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application.
 
 Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
 

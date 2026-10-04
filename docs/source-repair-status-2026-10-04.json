@@ -970,6 +970,21 @@
       "uid": "clf.1991.1.3",
       "kind": "source_domain_gap",
       "text": "Partial year: only Problem 3 is indexed from the 1991 senior final. This is not a complete seven-problem set; the essential figures of Problems 6 and 7 remain missing."
+    },
+    {
+      "uid": "cn.1997.1.1",
+      "kind": "source_domain_gap",
+      "text": "Source correction: the English 1996–1997 collection misprints the last exponent as 1/2. Both inspected Chinese compilations print the twelfth power for every variable; this consistent version is retained."
+    },
+    {
+      "uid": "cn.1997.2.5",
+      "kind": "source_domain_gap",
+      "text": "The English collection lists i=1,...,16 and defines an eighteenth entry but does not explicitly print the wraparound difference. Both Chinese compilations explicitly include the difference between the images of 1 and 17. The bank retains this complete cyclic condition, with positive iteration indices."
+    },
+    {
+      "uid": "cn.1997.2.6",
+      "kind": "source_domain_gap",
+      "text": "Source-domain variant: the English collection restricts the sequence to nonnegative integers. Both inspected Chinese compilations say a nonnegative sequence without an integrality restriction. The bank renders this as nonnegative real terms; the bound is valid for that domain."
     }
   ],
   "restored_figures": [
@@ -996,8 +1011,10 @@
       1991,
       1992,
       1993,
+      1994,
       1995,
       1996,
+      1997,
       1998,
       1999,
       2000,
@@ -1018,12 +1035,9 @@
       2015,
       2016
     ],
-    "active_statements": 168,
+    "active_statements": 180,
     "damaged_original_path": "docs/quarantine/China-olympiad-problems-pre-rebuild.json",
-    "remaining_historical_years": [
-      1994,
-      1997
-    ],
+    "remaining_historical_years": [],
     "edition_date_notes": {
       "2014": "Nanjing paper held 21–22 December 2013; English AoPS edition convention retained."
     },
@@ -1049,7 +1063,11 @@
       1992,
       1993
     ],
-    "liu_original_sha256": "a2142eb710045ce582682fb9688c25113a3879ef65f3af3f52055a275a2c7b6f"
+    "liu_original_sha256": "a2142eb710045ce582682fb9688c25113a3879ef65f3af3f52055a275a2c7b6f",
+    "chinese_compilation_years": [
+      1994,
+      1997
+    ]
   },
   "retrieval_blockers": [
     {
