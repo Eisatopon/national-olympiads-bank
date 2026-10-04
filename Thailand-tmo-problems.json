@@ -1575,6 +1575,116 @@
           "problem": "Find the maximum of $abcd(a+b)(b+c)(c+d)(d+a)$ over positive real numbers $a,b,c,d$ satisfying $\\sqrt[3]a+\\sqrt[3]b+\\sqrt[3]c+\\sqrt[3]d=4$."
         }
       ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a positive integer $m$, let $d(m)$ be the number of its positive divisors. A positive integer $n$ is called a Burapha integer if (i) $d(n)$ is odd, and (ii) $d(k)\\le d(\\ell)$ for every pair of positive divisors $k,\\ell$ of $n$ with $k<\\ell$. Find all Burapha integers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A school sends teams to an academic olympiad in $11$ different subjects, with $5$ students in each team. For any two different subjects, at least one student competes in both. Prove that some student competes in at least four different subjects."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a,b,c,x,y,z$ be positive real numbers such that $ay+bz+cx\\le az+bx+cy$. Prove that $$\\frac{xy}{ax+bx+cy}+\\frac{yz}{by+cy+az}+\\frac{zx}{cz+az+bx}\\le\\frac{x+y+z}{a+b+c}.$$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "The incircle of triangle $ABC$ touches $BC$, $CA$, and $AB$ at $D$, $E$, and $F$, respectively. Let $P$, $Q$, and $R$ be the circumcentres of triangles $AFE$, $BDF$, and $CED$, respectively. Prove that the lines $DP$, $EQ$, and $FR$ are concurrent."
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "There are $n\\ge3$ students in a class and a teacher with $M$ marbles. Initially, the teacher distributes all her marbles so that each student receives at least one. She then chooses a student who has not previously been chosen and whose number of marbles is a multiple of $2(n-1)$. That student distributes half of his marbles equally among the other $n-1$ students. The process continues until the teacher can no longer choose a student. Find all integers $M$ for which some initial distribution allows the teacher to choose every student according to these rules and leaves all students with equal numbers of marbles."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f:(0,\\infty)\\to\\mathbb R$ such that $$f(x)+f\\left(\\frac yx\\right)\\le\\frac{x^3}{y^2}+\\frac y{x^3}$$ for all positive real numbers $x,y$, and such that for every positive real $x$ there is a positive real $y$ for which equality holds."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $ABC$ be a triangle with $AB<AC$. The tangent to its circumcircle at $A$ meets line $BC$ at $D$. The internal bisector of $\\angle BAC$ meets $BC$ at $E$. The perpendicular bisector of $AE$ meets lines $AB$ and $AC$ at $P$ and $Q$, respectively. Prove that $$\\sqrt{\\frac{BP}{CQ}}=\\frac{AC\\cdot BD}{AB\\cdot CD}.$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "For a finite integer sequence, a parity swap exchanges two terms whose sum is odd, leaving all other terms in place. Find the minimum number of parity swaps needed to transform the sequence $1,2,3,\\ldots,2025$ into $2025,2024,\\ldots,2,1$."
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "Let $p$ be an odd prime and $S=\\{1,2,\\ldots,p\\}$. Let $U:S\\to S$ be a bijection and let $B$ be an integer such that $$B\\,U(U(a))\\equiv a\\pmod p$$ for every $a\\in S$. Prove that $$B^{(p-1)/2}\\equiv1\\pmod p.$$"
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "Let $n$ be a positive integer. Prove that there is a polynomial $P(x)$ with integer coefficients of degree at most $2^n-n-1$ such that $$|P(k)|=(k-1)!(2^n-k)!$$ for every integer $k\\in\\{1,2,\\ldots,2^n\\}$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P$ be a point outside a circle $\\Gamma$ with centre $O$. A line through $P$ meets $\\Gamma$ at $A$ and $B$, where $\\angle BOP=90^\\circ$. Let $PC$ be a tangent to $\\Gamma$ at $C$, where $\\angle BOC$ is obtuse. The tangent to $\\Gamma$ at $A$ meets line $PO$ at $X$. Let $Y$ lie on line $PO$ such that $\\angle CYP=90^\\circ$. Prove that $$\\frac{XY}{YO}=\\frac{PA}{AB}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a,b,c,d$ be positive real numbers with $a+b+c+d=4$. Find the minimum value of $$\\frac a{(bc+1)^2}+\\frac b{(cd+1)^2}+\\frac c{(da+1)^2}+\\frac d{(ab+1)^2}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The organizing committee of the Thailand Mathematical Olympiad wants to print identification cards for $2569$ participants. A printer operates as follows. Choose two finite lists of integers $a_1,\\ldots,a_k$ and $b_1,\\ldots,b_\\ell$, where repetitions are allowed and $k,\\ell\\ge1$. The printer can print an integer $s$ if and only if there are $x_1,\\ldots,x_k\\in\\{b_1,\\ldots,b_\\ell\\}$ such that $$s=a_1x_1+\\cdots+a_kx_k.$$ Determine the smallest possible value of $k+\\ell$ for which the printer can print every integer from $1$ to $2569$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all positive integers $a,b,c$ with $\\gcd(a,b,c)=1$ such that each of $$\\frac{a^2+b^2}{b+c},\\qquad\\frac{b^2+c^2}{c+a},\\qquad\\frac{c^2+a^2}{a+b}$$ is an integer. Here $\\gcd(a,b,c)$ denotes the greatest common divisor of $a,b,c$."
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute triangle with circumcentre $O$. Construct isosceles right triangles $ABD$ and $ACE$ outside $ABC$, with $\\angle BAD=\\angle CAE=90^\\circ$. The circumcircle of $AED$, with centre $Q$, meets the circumcircle of $ABC$ again at $Z\\ne A$. Let line $AO$ meet $DE$ at $X$, and let line $AQ$ meet $BC$ at $Y$. Prove that the circumcircles of $AXY$ and $OQZ$ are tangent."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n\\ge3$ be an integer, and let $d(n)$ denote the number of its positive divisors. Prove that there are distinct positive divisors $a,b$ of $n$ such that $$d(n)\\mid(a-b).$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $a,b,c$ be positive integers. An $a\\times b\\times c$ rectangular box is divided into $abc$ unit cubes, each coloured blue or yellow. Every row of unit cubes parallel to any edge of the box contains at most one yellow cube. Determine the maximum possible number of yellow cubes."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Find all functions $f:\\mathbb C\\to\\mathbb C$ satisfying $$f\\bigl(u+(i+\\sqrt3)z\\bigr)+f\\bigl(u+(i-\\sqrt3)z\\bigr)=2f(u)+2\\operatorname{Re}(z)$$ for all complex numbers $u,z$, where $\\operatorname{Re}(z)$ is the real part of $z$ and $i=\\sqrt{-1}$."
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "Let $ABC$ be an acute triangle and let $P$ lie on side $BC$, distinct from $B$ and $C$. Let $N_1,N_2$ be the centres of the nine-point circles of triangles $ABP$ and $ACP$, respectively. Prove that $$N_1N_2\\ge\\frac14 BC,$$ and determine all positions of $P$ for which equality holds."
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "A province has $n\\ge2$ villages and $n$ species of pomelo. Each village produces a non-negative integer number of pomelos of each species. In each village, the total production of all species is $n^2+1$. For each species, the total production across all villages is also $n^2+1$. Prove that for every village there is another distinct village and two distinct species such that the sum of the production of these two species in these two villages is at least $4n+2$."
+        }
+      ]
     }
   ]
 }

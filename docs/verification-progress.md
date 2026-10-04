@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 10903 stored records; 1700 source-checked; 9203 remaining (including quarantine).
+Inventory: 10923 stored records; 1700 source-checked; 9223 remaining (including quarantine).
 
-Active bank: 10903 records; 1700 source-checked; 9203 remaining. Whole-bank source verification is **not complete**.
+Active bank: 10923 records; 1700 source-checked; 9223 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -70,7 +70,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Sweden-smt-problems.json | 120 | 120 | 0 | stored_statements_checked |
 | Swiss-final-problems.json | 196 | 0 | 196 | pending |
 | Swiss-selection-problems.json | 252 | 0 | 252 | pending |
-| Thailand-tmo-problems.json | 294 | 294 | 0 | stored_statements_checked |
+| Thailand-tmo-problems.json | 314 | 294 | 20 | pending |
 | Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
 | Thailand-tstst-problems.json | 12 | 12 | 0 | stored_statements_checked |
 | Turkey-tmo-problems.json | 126 | 0 | 126 | pending |
