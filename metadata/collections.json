@@ -5719,15 +5719,34 @@
           "url": "https://www.mathematica.gr/forum/viewtopic.php?p=78796",
           "label": "Contemporaneous Mathematica.gr reproduction, 16 April 2011, with original problem-2 attachment; secondary source",
           "verification": "unverified"
+        },
+        {
+          "url": "https://lisari.blogspot.com/2011/04/2011_16.html?m=1",
+          "label": "Contemporaneous 16 April 2011 reproduction by Makis Chatzopoulos (lisari.blogspot.com), including the six-square tile figure",
+          "verification": "unverified"
         }
       ],
-      "statement_notes": {
+      "statement_notes": {},
+      "statement_checks": {
         "gr.2011.1.2": {
-          "kind": "source_domain_gap",
-          "reviewed_statement": "A rectangular board measuring $10\\,\\mathrm{cm}\\times11\\,\\mathrm{cm}$ is divided into $110$ unit squares. Cross-shaped tiles each consist of six unit squares, as shown in the source figure. Find the maximum number of tiles that can be placed on the board without overlap, each tile covering exactly six board squares.",
-          "statement_sha256": "03ac281b73d7d57fdd10b8a15b39c3c85dc4ea50f6147b753a19ca8e717cf930",
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "A rectangular board measuring $10\\,\\mathrm{cm}\\times11\\,\\mathrm{cm}$ is divided into $110$ unit squares. Cross-shaped tiles each consist of six unit squares, as shown in the figure. Find the maximum number of tiles that can be placed on the board without overlap, each tile covering exactly six board squares.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/greece_2011_p2_fig.png",
+          "statement_sha256": "a89d764eeeeda6c51ecf6f6fb5233a68046da88a5f0ae18e71fbe78b592c8c58",
+          "source_url": "https://lisari.blogspot.com/2011/04/2011_16.html?m=1",
           "checked_at": "2026-10-04",
-          "text": "Incomplete figure recovery: the contemporaneous Greek transcription specifies six unit squares per cross-shaped tile and a 10 cm by 11 cm board. Those missing conditions are restored, and an unrelated forum question is removed. The source attachment (download/file.php?id=12089) has not yet been retrieved and visually verified for this bank. This exercise remains incomplete here until its exact tile shape is restored."
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Compared with the contemporaneous Greek reproduction and its original linked PNG. Secondary reproduction, not an official exam PDF. Figure copied unchanged; six-square tile shape visually verified.",
+          "source_contains_solutions": false,
+          "figure_source_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6_GrMFdG-ylGvX275Egf9v33Fu29F6nuoL7jE-m5ePk2pz5A_L1U-PiWQUkC7NgR5rQYaWb2EXqP8Oaza3h4e8Nf1J0SFnjgj824ktjkp-EX-xlMr8PE7rt1e7_4IggkbCzogAHKLNdfs/s1600/Untitled.png",
+          "figure_checks": [
+            {
+              "path": "images/greece_2011_p2_fig.png",
+              "sha256": "cdf234c074ec98e5a8b12161ff295774fe29c386a3f134291828e44947f78611"
+            }
+          ],
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "ec185490c84eb7cc15379f808d66483a9c346399a00318ebbcb49aa9e036edfb"
         }
       }
     },
@@ -26513,7 +26532,7 @@
       "competition": "Chile National Mathematical Olympiad — Senior Final (Nivel Mayor)",
       "verification_status": "not_verified_against_source",
       "coverage": "partial",
-      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation.",
+      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation. The complete six-problem 2025 senior-final set is restored from a public mirror of the AoPS collection c4665862; its original linked Problem 3 PNG is included. The mirror is a secondary source and primary-source confirmation remains pending.",
       "source_links": [
         {
           "url": "https://www.olimpiadadematematica.cl/index.php/entrenamiento/1-ejercicio-01",
@@ -26538,6 +26557,11 @@
         {
           "url": "https://imogeometry.blogspot.com/p/chile.html",
           "label": "Secondary geometry compilation restoring 1999 senior-final Problem 2",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "label": "Public mirror of AoPS c4665862: all six 2025 senior-final statements and original P3 image URL; secondary source",
           "verification": "unverified"
         }
       ],
@@ -29423,6 +29447,48 @@
           "statement_sha256": "e84ddc7a556cf88837347e69a7ef0033ba55321ccad46aa9f29576aa9e472a81",
           "checked_at": "2026-10-04",
           "text": "Source interpretation: the two common side lengths need not be corresponding sides under the similarity; requiring two corresponding sides to be equal would force congruence. No extra geometric condition has been added."
+        },
+        "clf.2025.1.1": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Determine all sequences of integers $a_1,a_2,\\ldots$ satisfying $a_1=1013$ and $$a_{n+m}=a_n+a_m+nm$$ for all positive integers $n,m$. Determine the possible values of $a_{2025}$.",
+          "statement_sha256": "99554487843eaeb357fd15b702f7860455425520ae59c505b060b6e3509531a9",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.2025.1.2": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Patana and Tulio alternate placing $3\\times3$ tiles on a $2025\\times2025$ board, with Patana playing first. Each tile must cover exactly nine board squares and must not overlap a previously placed tile. The game ends when no further tile can be placed, and the last player to place a tile wins. Prove that Patana has a winning strategy.",
+          "statement_sha256": "ad9e1b9852eb9c8bba75fad76b407b83ff881333279a8bc109c199e8de3a8690",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.2025.1.3": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Four equilateral triangles are stacked, and each vertex of a triangle is joined to the corresponding vertex of the triangle immediately below it. Find the number of paths starting at a vertex of the upper triangle and ending at a vertex of the lower triangle, without visiting any vertex more than once.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_2025_p3_fig.png",
+          "statement_sha256": "491aa4506bd536b49c50d57c42294f069faad1e0655c3b207d9db665e8a73d3c",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.2025.2.4": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Concatenate the decimal representations of $$1^1=1,\\quad2^2=4,\\quad3^3=27,\\quad4^4=256,\\quad5^5=3125,\\quad\\ldots$$ after a decimal point to form $0.14272563125\\ldots$. Determine whether this number is rational or irrational, and justify your answer.",
+          "statement_sha256": "02a34096a738f2394660bc76e77c40b1c25bf2a3f3a0f63dab94414cb3da1359",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.2025.2.5": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Let $n>4$ be an integer. Consider the right triangle with vertices $(0,0),(n,0),(0,n)$. Find the number of rectangles whose sides are parallel to the coordinate axes, whose vertices have integer coordinates, and which are entirely contained in the triangle. The vertices of the rectangles must not lie on the sides of the triangle.",
+          "statement_sha256": "0f1fd62eb8a29efff39ae0f906cfcb7c54c5bb0369c748d0c6128e448a3846fb",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.2025.2.6": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Can twenty regular tetrahedra be placed in three-dimensional space with a common vertex so that any two intersect only at that vertex?",
+          "statement_sha256": "a859ad43a75029652f7659033f586772b26d9a0e2883441c8ccedfb7a4044f3b",
+          "checked_at": "2026-10-04",
+          "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
         }
       },
       "secondary_statement_evidence": {
@@ -29436,6 +29502,67 @@
           "statement_sha256": "a6a13521a198f258570327a865fdddc3a383c968529289d79235ac156702805b",
           "checked_at": "2026-10-04",
           "primary_source_confirmation": false
+        },
+        "clf.2025.1.1": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Determine all sequences of integers $a_1,a_2,\\ldots$ satisfying $a_1=1013$ and $$a_{n+m}=a_n+a_m+nm$$ for all positive integers $n,m$. Determine the possible values of $a_{2025}$.",
+          "statement_sha256": "99554487843eaeb357fd15b702f7860455425520ae59c505b060b6e3509531a9",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set"
+        },
+        "clf.2025.1.2": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Patana and Tulio alternate placing $3\\times3$ tiles on a $2025\\times2025$ board, with Patana playing first. Each tile must cover exactly nine board squares and must not overlap a previously placed tile. The game ends when no further tile can be placed, and the last player to place a tile wins. Prove that Patana has a winning strategy.",
+          "statement_sha256": "ad9e1b9852eb9c8bba75fad76b407b83ff881333279a8bc109c199e8de3a8690",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set"
+        },
+        "clf.2025.1.3": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Four equilateral triangles are stacked, and each vertex of a triangle is joined to the corresponding vertex of the triangle immediately below it. Find the number of paths starting at a vertex of the upper triangle and ending at a vertex of the lower triangle, without visiting any vertex more than once.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_2025_p3_fig.png",
+          "statement_sha256": "491aa4506bd536b49c50d57c42294f069faad1e0655c3b207d9db665e8a73d3c",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set",
+          "figure_source_url": "https://cdn.artofproblemsolving.com/attachments/e/b/22d16ff6e2b64642f2e8bfd6bb27c620e2339f.png",
+          "figure_checks": [
+            {
+              "path": "images/clf_2025_p3_fig.png",
+              "sha256": "65603d06a19e0f8a3da0ff9da895f1aa2aaf7ff9b91c9957c4044a91997f2ea2"
+            }
+          ]
+        },
+        "clf.2025.2.4": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Concatenate the decimal representations of $$1^1=1,\\quad2^2=4,\\quad3^3=27,\\quad4^4=256,\\quad5^5=3125,\\quad\\ldots$$ after a decimal point to form $0.14272563125\\ldots$. Determine whether this number is rational or irrational, and justify your answer.",
+          "statement_sha256": "02a34096a738f2394660bc76e77c40b1c25bf2a3f3a0f63dab94414cb3da1359",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set"
+        },
+        "clf.2025.2.5": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Let $n>4$ be an integer. Consider the right triangle with vertices $(0,0),(n,0),(0,n)$. Find the number of rectangles whose sides are parallel to the coordinate axes, whose vertices have integer coordinates, and which are entirely contained in the triangle. The vertices of the rectangles must not lie on the sides of the triangle.",
+          "statement_sha256": "0f1fd62eb8a29efff39ae0f906cfcb7c54c5bb0369c748d0c6128e448a3846fb",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set"
+        },
+        "clf.2025.2.6": {
+          "source_url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
+          "linked_discussion": "https://artofproblemsolving.com/community/c4665862",
+          "reviewed_statement": "Can twenty regular tetrahedra be placed in three-dimensional space with a common vertex so that any two intersect only at that vertex?",
+          "statement_sha256": "a859ad43a75029652f7659033f586772b26d9a0e2883441c8ccedfb7a4044f3b",
+          "checked_at": "2026-10-04",
+          "primary_source_confirmation": false,
+          "source_format": "public HTML preview of the full AoPS problem set"
         }
       }
     }

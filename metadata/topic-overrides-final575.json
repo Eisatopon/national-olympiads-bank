@@ -5887,11 +5887,11 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A rectangular board measuring $10\\,\\mathrm{cm}\\times11\\,\\mathrm{cm}$ is divided into $110$ unit squares. Cross-shaped tiles each consist of six unit squares, as shown in the source figure. Find the maximum number of tiles that can be placed on the board without overlap, each tile covering exactly six board squares.",
-      "statement_sha256": "03ac281b73d7d57fdd10b8a15b39c3c85dc4ea50f6147b753a19ca8e717cf930",
+      "reviewed_statement": "A rectangular board measuring $10\\,\\mathrm{cm}\\times11\\,\\mathrm{cm}$ is divided into $110$ unit squares. Cross-shaped tiles each consist of six unit squares, as shown in the figure. Find the maximum number of tiles that can be placed on the board without overlap, each tile covering exactly six board squares.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/greece_2011_p2_fig.png",
+      "statement_sha256": "a89d764eeeeda6c51ecf6f6fb5233a68046da88a5f0ae18e71fbe78b592c8c58",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-04",
-      "rationale": "Packing six-square tiles in a rectangular grid; exact shape still pending source-figure recovery.",
+      "rationale": "Nonoverlapping packing of the source-verified six-square cross-shaped tile in a rectangular grid.",
       "superseded_reviews": [
         {
           "topics": [
@@ -7336,6 +7336,67 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-04",
       "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "clf.2025.1.1": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine all sequences of integers $a_1,a_2,\\ldots$ satisfying $a_1=1013$ and $$a_{n+m}=a_n+a_m+nm$$ for all positive integers $n,m$. Determine the possible values of $a_{2025}$.",
+      "statement_sha256": "99554487843eaeb357fd15b702f7860455425520ae59c505b060b6e3509531a9",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Integer sequence equation."
+    },
+    "clf.2025.1.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Patana and Tulio alternate placing $3\\times3$ tiles on a $2025\\times2025$ board, with Patana playing first. Each tile must cover exactly nine board squares and must not overlap a previously placed tile. The game ends when no further tile can be placed, and the last player to place a tile wins. Prove that Patana has a winning strategy.",
+      "statement_sha256": "ad9e1b9852eb9c8bba75fad76b407b83ff881333279a8bc109c199e8de3a8690",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Board placement game and strategy."
+    },
+    "clf.2025.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Four equilateral triangles are stacked, and each vertex of a triangle is joined to the corresponding vertex of the triangle immediately below it. Find the number of paths starting at a vertex of the upper triangle and ending at a vertex of the lower triangle, without visiting any vertex more than once.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_2025_p3_fig.png",
+      "statement_sha256": "491aa4506bd536b49c50d57c42294f069faad1e0655c3b207d9db665e8a73d3c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Counting simple graph paths."
+    },
+    "clf.2025.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Concatenate the decimal representations of $$1^1=1,\\quad2^2=4,\\quad3^3=27,\\quad4^4=256,\\quad5^5=3125,\\quad\\ldots$$ after a decimal point to form $0.14272563125\\ldots$. Determine whether this number is rational or irrational, and justify your answer.",
+      "statement_sha256": "02a34096a738f2394660bc76e77c40b1c25bf2a3f3a0f63dab94414cb3da1359",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Rationality of an infinite decimal."
+    },
+    "clf.2025.2.5": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $n>4$ be an integer. Consider the right triangle with vertices $(0,0),(n,0),(0,n)$. Find the number of rectangles whose sides are parallel to the coordinate axes, whose vertices have integer coordinates, and which are entirely contained in the triangle. The vertices of the rectangles must not lie on the sides of the triangle.",
+      "statement_sha256": "0f1fd62eb8a29efff39ae0f906cfcb7c54c5bb0369c748d0c6128e448a3846fb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Counting lattice rectangles."
+    },
+    "clf.2025.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Can twenty regular tetrahedra be placed in three-dimensional space with a common vertex so that any two intersect only at that vertex?",
+      "statement_sha256": "a859ad43a75029652f7659033f586772b26d9a0e2883441c8ccedfb7a4044f3b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Spatial packing of regular tetrahedra."
     }
   }
 }
