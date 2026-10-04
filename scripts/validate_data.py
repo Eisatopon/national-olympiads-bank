@@ -10,7 +10,9 @@ KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 1996): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2007): [1, 2, 3, 5, 6],
               ('Argentina-level3-problems.json', 2008): [2, 3, 4, 5, 6],
-              ('Argentina-level3-problems.json', 2010): [1, 2, 3, 4, 6]}
+              ('Argentina-level3-problems.json', 2010): [1, 2, 3, 4, 6],
+              ('Chile-final-problems.json', 1991): [3]}
+# Chile 1991 is explicitly partial: the user requested its intact Problem 3 only.
 
 
 def validate(data, filename, root=ROOT):

@@ -26532,7 +26532,7 @@
       "competition": "Chile National Mathematical Olympiad — Senior Final (Nivel Mayor)",
       "verification_status": "not_verified_against_source",
       "coverage": "partial",
-      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation. The complete six-problem 2025 senior-final set is restored from a public mirror of the AoPS collection c4665862; its original linked Problem 3 PNG is included. The mirror is a secondary source and primary-source confirmation remains pending.",
+      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation. The complete six-problem 2025 senior-final set is restored from a public mirror of the AoPS collection c4665862; its original linked Problem 3 PNG is included. The mirror is a secondary source and primary-source confirmation remains pending. At the user’s explicit request, only 1991 Problem 3 is indexed with its intact source diagram. The 1991 set is partial, not a complete paper; Problems 6 and 7 still lack essential figures.",
       "source_links": [
         {
           "url": "https://www.olimpiadadematematica.cl/index.php/entrenamiento/1-ejercicio-01",
@@ -26562,6 +26562,11 @@
         {
           "url": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2025-chile-nmo-final-round-problem-set/155924910",
           "label": "Public mirror of AoPS c4665862: all six 2025 senior-final statements and original P3 image URL; secondary source",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "label": "Official 1991 final; only P3 indexed, full paper remains incomplete in the bank",
           "verification": "unverified"
         }
       ],
@@ -29354,6 +29359,26 @@
           "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1999-statements.pdf",
           "source_language": "es",
           "translation_language": "en"
+        },
+        "clf.1991.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "A $6\\times6$ square board is tiled in an arbitrary way by eighteen dominoes, each covering exactly two squares. Prove that, regardless of the arrangement of the dominoes, there is a straight line dividing the board into two nonempty parts without cutting any domino.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1991_p3_fig.png",
+          "statement_sha256": "f1e4fb5afb32af99935bf80f4ed1445c015261cbb8e652df57c14e677ecc87b0",
+          "source_url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "source_document_sha256": "6676f69cdf50be8e8b9b4351414da4131b4cec5692ffce41f0248d495b6d456a",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "English translation compared with the official Spanish PDF and the user-uploaded screenshot. The intact board-and-domino diagram is extracted from page 1. No solutions added.",
+          "source_contains_solutions": false,
+          "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1991-statements.pdf",
+          "figure_checks": [
+            {
+              "path": "images/clf_1991_p3_fig.png",
+              "sha256": "79418a18f542d75a106c21def1bc8ee7c735c0edb4de11449eeb5f934f6117b9"
+            }
+          ]
         }
       },
       "statement_notes": {
@@ -29489,6 +29514,13 @@
           "statement_sha256": "a859ad43a75029652f7659033f586772b26d9a0e2883441c8ccedfb7a4044f3b",
           "checked_at": "2026-10-04",
           "text": "Recovered from a public mirror of the full AoPS collection c4665862 (2025 senior final). Primary-source confirmation remains pending."
+        },
+        "clf.1991.1.3": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "A $6\\times6$ square board is tiled in an arbitrary way by eighteen dominoes, each covering exactly two squares. Prove that, regardless of the arrangement of the dominoes, there is a straight line dividing the board into two nonempty parts without cutting any domino.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1991_p3_fig.png",
+          "statement_sha256": "f1e4fb5afb32af99935bf80f4ed1445c015261cbb8e652df57c14e677ecc87b0",
+          "checked_at": "2026-10-04",
+          "text": "Partial year: only Problem 3 is indexed from the 1991 senior final. This is not a complete seven-problem set; the essential figures of Problems 6 and 7 remain missing."
         }
       },
       "secondary_statement_evidence": {
@@ -29564,6 +29596,16 @@
           "primary_source_confirmation": false,
           "source_format": "public HTML preview of the full AoPS problem set"
         }
+      },
+      "missing_problem_numbers": {
+        "1991": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ]
       }
     }
   }
