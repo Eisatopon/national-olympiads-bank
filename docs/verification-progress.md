@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 10745 stored records; 1566 source-checked; 9179 remaining (including quarantine).
+Inventory: 10903 stored records; 1700 source-checked; 9203 remaining (including quarantine).
 
-Active bank: 10745 records; 1566 source-checked; 9179 remaining. Whole-bank source verification is **not complete**.
+Active bank: 10903 records; 1700 source-checked; 9203 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -18,9 +18,9 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Brazil-obm-problems.json | 273 | 0 | 273 | pending |
 | Bulgaria-nmo-problems.json | 30 | 0 | 30 | pending |
 | Canada-cmo-problems.json | 323 | 100 | 223 | pending |
-| Chile-final-problems.json | 176 | 175 | 1 | pending |
+| Chile-final-problems.json | 183 | 176 | 7 | pending |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
-| China-olympiad-problems.json | 114 | 114 | 0 | stored_statements_checked |
+| China-olympiad-problems.json | 246 | 240 | 6 | pending |
 | Croatia-drz-problems.json | 60 | 0 | 60 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
 | Cyprus-tst-problems.json | 184 | 0 | 184 | pending |
@@ -28,11 +28,11 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Denmark-georgmohr-problems.json | 180 | 0 | 180 | pending |
 | Estonia-final-problems.json | 170 | 0 | 170 | pending |
 | Estonia-tst-problems.json | 165 | 0 | 165 | pending |
-| Finland-maol-problems.json | 120 | 0 | 120 | pending |
+| Finland-maol-problems.json | 125 | 0 | 125 | pending |
 | France-tst-problems.json | 225 | 0 | 225 | pending |
 | Germany-bwm-problems.json | 108 | 0 | 108 | pending |
-| Germany-mo-problems.json | 383 | 0 | 383 | pending |
-| Greece-tst-problems.json | 72 | 0 | 72 | pending |
+| Germany-mo-problems.json | 389 | 6 | 383 | pending |
+| Greece-tst-problems.json | 72 | 1 | 71 | pending |
 | HongKong-chkmo-problems.json | 100 | 0 | 100 | pending |
 | HongKong-tst-problems.json | 313 | 0 | 313 | pending |
 | Hungary-kurschak-problems.json | 27 | 0 | 27 | pending |
@@ -56,7 +56,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | NewZealand-nzmo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | NorthMacedonia-mmo-problems.json | 34 | 0 | 34 | pending |
 | Norway-abel-problems.json | 136 | 0 | 136 | pending |
-| Philippines-pmo-problems.json | 90 | 0 | 90 | pending |
+| Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 174 | 0 | 174 | pending |
 | Portugal-opm-problems.json | 98 | 0 | 98 | pending |
 | Romania-nmo-problems.json | 40 | 0 | 40 | pending |
