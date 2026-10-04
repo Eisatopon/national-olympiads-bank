@@ -247,6 +247,251 @@
       ]
     },
     {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ be real numbers, where $n\\ge3$, satisfying $$\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i,$$ $$0<a_1=a_2,\\qquad a_i+a_{i+1}=a_{i+2}\\quad(1\\le i\\le n-2),$$ and $$0<b_1\\le b_2,\\qquad b_i+b_{i+1}\\le b_{i+2}\\quad(1\\le i\\le n-2).$$ Prove that $a_{n-1}+a_n\\le b_{n-1}+b_n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f:\\mathbb N\\to\\mathbb N$ satisfy $f(1)=1$ and, for every $n\\in\\mathbb N$, $$3f(n)f(2n+1)=f(2n)(1+3f(n)),\\qquad f(2n)<6f(n).$$ Find all solutions of $f(k)+f(l)=293$ with $k<l$. Here $\\mathbb N$ denotes the natural numbers."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find the minimum value of $$\\sum_{i=1}^{10}\\sum_{j=1}^{10}\\sum_{k=1}^{10}\\left|k(x+y-10i)(3x-6y-36j)(19x+95y-95k)\\right|,$$ where $x,y$ are real numbers."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Four spheres have radii $2,2,3,3$, respectively, and each is externally tangent to the other three. A further sphere is externally tangent to all four. Determine its radius."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a_1,a_2,\\ldots,a_{10}$ be pairwise distinct natural numbers whose sum is $1995$. Find the minimum value of $$a_1a_2+a_2a_3+\\cdots+a_9a_{10}+a_{10}a_1.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n>1$ be odd. Define $x_k=(x_1^{(k)},\\ldots,x_n^{(k)})$ by $x_0=(1,0,\\ldots,0,1)$ and, for $k\\ge1$, $$x_i^{(k)}=\\begin{cases}0,&x_i^{(k-1)}=x_{i+1}^{(k-1)},\\\\1,&x_i^{(k-1)}\\ne x_{i+1}^{(k-1)},\\end{cases}\\qquad 1\\le i\\le n,$$ with cyclic subscripts, so $x_{n+1}^{(k-1)}=x_1^{(k-1)}$. If $m$ is a positive integer and $x_m=x_0$, prove that $n\\mid m$."
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with orthocentre $H$. The tangents from $A$ to the circle with diameter $BC$ touch it at $P,Q$. Prove that $H,P,Q$ are collinear."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find the smallest positive integer $K$ such that every $K$-element subset of $\\{1,2,\\ldots,50\\}$ contains distinct $a,b$ for which $a+b$ divides $ab$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ satisfy $$f(x^3+y^3)=(x+y)\\bigl(f(x)^2-f(x)f(y)+f(y)^2\\bigr)$$ for all real $x,y$. Prove that $f(1996x)=1996f(x)$ for every real $x$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Eight singers take part in a festival. An organizer schedules $m$ concerts, with four singers performing at each concert. Every pair of singers must perform together the same number of times. Find a schedule minimizing $m$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a natural number, $x_0=0$ and $x_i>0$ for $1\\le i\\le n$, with $\\sum_{i=1}^n x_i=1$. Prove that $$1\\le\\sum_{i=1}^n\\frac{x_i}{\\sqrt{1+x_0+x_1+\\cdots+x_{i-1}}\\sqrt{x_i+x_{i+1}+\\cdots+x_n}}<\\frac\\pi2.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In triangle $ABC$, $\\angle C=90^\\circ$, $\\angle A=30^\\circ$ and $BC=1$. Find the minimum possible length of the longest side of an inscribed triangle, whose three vertices lie on the three sides of $ABC$, respectively."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a non-obtuse triangle with $AB>AC$ and $\\angle B=45^\\circ$. Its circumcentre $O$ and incentre $I$ satisfy $\\sqrt2\\,OI=AB-AC$. Find $\\sin A$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a given positive integer $n>1$, determine, with proof, whether there exist $2n$ pairwise distinct positive integers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ such that $$\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i,\\qquad n-1>\\sum_{i=1}^n\\frac{a_i-b_i}{a_i+b_i}>n-1-\\frac1{1998}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $S=\\{1,2,\\ldots,98\\}$. Find the least natural number $n$ such that every $n$-element subset of $S$ contains ten numbers with this property: however these ten numbers are divided into two groups of five, one group contains a number coprime to each of the other four numbers in that group, and the other group contains a number not coprime to any of the other four numbers in that group."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all natural numbers $n>3$ such that $$1+\\binom n1+\\binom n2+\\binom n3\\mid 2^{2000}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $D$ be a point inside an acute triangle $ABC$ such that $$DA\\cdot DB\\cdot AB+DB\\cdot DC\\cdot BC+DC\\cdot DA\\cdot CA=AB\\cdot BC\\cdot CA.$$ Determine, with proof, the geometric position of $D$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n\\ge2$ and let $x_1,\\ldots,x_n$ be real numbers satisfying $$\\sum_{i=1}^n x_i^2+\\sum_{i=1}^{n-1}x_ix_{i+1}=1.$$ For each $k$ with $1\\le k\\le n$, find the maximum value of $|x_k|$."
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with $\\angle C>\\angle B$. Let $D$ lie on $BC$ with $\\angle ADB$ obtuse, and let $H$ be the orthocentre of $ABD$. Let $F$ lie inside $ABC$ and on the circumcircle of $ABD$. Prove that $F$ is the orthocentre of $ABC$ if and only if $HD\\parallel CF$ and $H$ lies on the circumcircle of $ABC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a$ be real. Define polynomials $f_n(x)$ by $f_0(x)=1$ and $$f_{n+1}(x)=xf_n(x)+f_n(ax)\\qquad(n\\ge0).$$ (a) Prove that $f_n(x)=x^nf_n(x^{-1})$ for every nonnegative integer $n$. (b) Find an explicit expression for $f_n(x)$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "There are $99$ space stations, with a tunnel joining each pair. Exactly $99$ tunnels allow travel in both directions; every other tunnel allows travel in only one direction. A set of four stations is called connected if one can travel from each station to every other station in the set using only the six tunnels joining these four stations. Determine the maximum possible number of connected sets of four stations."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $m$ be a positive integer. Prove that there are integers $a,b,k$, with $a,b$ odd and $k\\ge0$, such that $$2m=a^{19}+b^{99}+k\\,2^{1999}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the largest real constant $\\lambda$ such that, for every cubic polynomial $f(x)=x^3+ax^2+bx+c$ whose roots are all nonnegative, $$f(x)\\ge\\lambda(x-a)^3\\qquad\\text{for all }x\\ge0.$$ Determine the equality condition."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A $4\\times4\\times4$ cube consists of $64$ unit cubes. Select $16$ unit cubes and color them red. A coloring is interesting if every $1\\times1\\times4$ rectangular box consisting of four unit cubes contains exactly one red unit cube. Determine the number of interesting colorings."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The side lengths $a,b,c$ of triangle $ABC$ satisfy $a\\le b\\le c$. Its circumradius and inradius are $R,r$, respectively. Let $f=a+b-2R-2r$. Determine the sign of $f$ in terms of $\\angle C$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Define a sequence by $a_1=0$, $a_2=1$, and $$a_n=\\frac n2a_{n-1}+\\frac{n(n-1)}2a_{n-2}+(-1)^n\\left(1-\\frac n2\\right)\\qquad(n\\ge3).$$ Find a closed-form expression for $$f_n=a_n+2\\binom n1a_{n-1}+3\\binom n2a_{n-2}+\\cdots+(n-1)\\binom n{n-2}a_2+n\\binom n{n-1}a_1.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A table tennis club schedules doubles matches subject to these rules: (i) each player belongs to at most two pairs; (ii) two distinct pairs play against one another at most once; (iii) players belonging to the same pair never play against one another while partnered with others. The set of distinct numbers of matches played by the individual players is called the set of games. Given a set $A=\\{a_1,\\ldots,a_k\\}$ of positive integers, each divisible by $6$, determine the minimum number of players needed for a schedule whose set of games is exactly $A$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For an ordered real $n$-tuple $A=(a_1,\\ldots,a_n)$, where $n\\ge2$, define $b_k=\\max\\{a_1,\\ldots,a_k\\}$ and $B=(b_1,\\ldots,b_n)$. Call $B$ the innovated tuple of $A$, and call the number of distinct entries of $B$ the innovated degree of $A$. Among all permutations of $1,2,\\ldots,n$ whose innovated degree is $2$, find the arithmetic mean of their first entries."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all positive integers $n$ for which there exist a positive integer $k$ and integers $n_1,\\ldots,n_k>3$ satisfying $$n=n_1n_2\\cdots n_k=2^{\\frac{(n_1-1)(n_2-1)\\cdots(n_k-1)}{2^k}}-1.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A test has five multiple-choice questions, each with four options. Each examinee selects one option for each question. Among $2000$ answer sheets there is a number $n$ such that every set of $n$ sheets contains four sheets any two of which agree on at most three answers. Find the minimum possible value of $n$."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\sqrt2<a<2$. Let $ABCD$ be a convex cyclic quadrilateral with its circumcentre in its interior. Its circumcircle $\\omega$ has radius $1$, and its longest and shortest sides have lengths $a$ and $\\sqrt{4-a^2}$, respectively. The tangents to $\\omega$ at $A,B,C,D$ are $L_A,L_B,L_C,L_D$. Put $A\\prime=L_A\\cap L_B$, $B\\prime=L_B\\cap L_C$, $C\\prime=L_C\\cap L_D$, $D\\prime=L_D\\cap L_A$. Determine the maximum and minimum possible values of $$\\frac{S_{A\\prime B\\prime C\\prime D\\prime}}{S_{ABCD}}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $X=\\{1,2,\\ldots,2001\\}$. Find the least positive integer $m$ such that every $m$-element subset $W$ of $X$ contains $u,v$, not necessarily distinct, for which $u+v=2^k$ for some positive integer $k$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A_1A_2\\cdots A_n$ be a regular $n$-gon. Find all positive integers $n$ such that, for every permutation $\\sigma$ of $\\{1,\\ldots,n\\}$, there are indices $i,j,k$ for which the triangles $A_iA_jA_k$ and $A_{\\sigma(i)}A_{\\sigma(j)}A_{\\sigma(k)}$ are both acute, both right, or both obtuse."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a,b,c$ be positive integers such that $a,b,c,a+b-c,a+c-b,b+c-a,a+b+c$ are seven distinct primes. Two of $a,b,c$ have sum $800$. Find the maximum possible difference between the largest and smallest of the seven primes."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A regular $24$-gon $P_1P_2\\cdots P_{24}$ is inscribed in a circle of circumference $24$. Determine the number of sets of eight vertices such that no arc between two chosen vertices has length $3$ or $8$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a=2001$, and let $A$ consist of all pairs of positive integers $(m,n)$ satisfying $$m<2a,\\qquad 2n\\mid(2am-m^2+n^2),\\qquad n^2-m^2+2mn\\le2a(n-m).$$ For $(m,n)\\in A$, define $$f(m,n)=\\frac{2am-m^2-mn}{n}.$$ Determine the maximum and minimum values of $f$."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Triangle $ABC$ has side lengths $a=BC$, $b=CA$, $c=AB$, with $b<c$. Its internal angle bisector $AD$ meets $BC$ at $D$. (1) Find a necessary and sufficient condition, expressed in terms of $\\angle A,\\angle B,\\angle C$, for the existence of points $E,F$ in the interiors of $AB,AC$, respectively, such that $BE=CF$ and $\\angle BDE=\\angle CDF$. (2) When such points exist, express $BE$ in terms of $a,b,c$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let polynomials $p_n(x)$ satisfy $$p_1(x)=x^2-1,\\qquad p_2(x)=2x(x^2-1),$$ and $$p_{n+1}(x)p_{n-1}(x)=p_n(x)^2-(x^2-1)^2\\qquad(n\\ge2).$$ Let $s_n$ be the sum of the absolute values of the coefficients of $p_n(x)$. For each $n$, find a nonnegative integer $k_n$ such that $2^{-k_n}s_n$ is odd."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Eighteen teams play a round-robin tournament over $17$ rounds. In each round the teams are divided into nine pairs, with one match in each pair, so that every pair of teams meets exactly once during the tournament. Find the largest $n$ such that, after any $n$ rounds of any valid schedule, there always exist four teams between which exactly one match has been played."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For four distinct points $P_1,P_2,P_3,P_4$ in the plane, find the minimum possible value of $$\\frac{\\sum_{1\\le i<j\\le4}P_iP_j}{\\min_{1\\le i<j\\le4}P_iP_j}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A point of the plane is called good if both its coordinates are rational. Prove that the good points can be partitioned into three sets such that: (1) the interior of every circle whose centre is good contains a point from each set; (2) no three collinear points belong to three different sets."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $\\frac12<c<1$. Find the least constant $M$ such that, for every integer $n\\ge2$ and every sequence of real numbers $0<a_1\\le\\cdots\\le a_n$ satisfying $$\\frac1n\\sum_{k=1}^n ka_k=c\\sum_{k=1}^n a_k,$$ one has $$\\sum_{k=1}^n a_k\\le M\\sum_{k=1}^m a_k,\\qquad m=\\lfloor cn\\rfloor.$$"
+        }
+      ]
+    },
+    {
       "year": 2003,
       "problems": [
         {
@@ -383,6 +628,76 @@
           "day": 2,
           "number": 6,
           "problem": "Let $X$ be a set of $56$ elements. Find the least positive integer $n$ with the following property: for any $15$ subsets of $X$, if the union of every seven of these subsets contains at least $n$ elements, then three of the $15$ subsets have nonempty intersection."
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a,b,c$ be complex numbers, and put $m=|a+b|$, $n=|a-b|$. If $mn\\ne0$, prove that $$\\max\\{|ac+b|,|a+bc|\\}\\ge\\frac{mn}{\\sqrt{m^2+n^2}}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove both statements: (1) If $2n-1$ is prime, then for every choice of $n$ pairwise distinct positive integers $a_1,\\ldots,a_n$, there are $i,j\\in\\{1,\\ldots,n\\}$ such that $$\\frac{a_i+a_j}{\\gcd(a_i,a_j)}\\ge2n-1.$$ (2) If $2n-1$ is composite, there exist $n$ pairwise distinct positive integers $a_1,\\ldots,a_n$ such that $$\\frac{a_i+a_j}{\\gcd(a_i,a_j)}<2n-1$$ for all $i,j\\in\\{1,\\ldots,n\\}$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a_1,\\ldots,a_{11}$ be pairwise distinct positive integers with sum less than $2007$. Begin with the ordered sequence $S=(1,2,\\ldots,2007)$. An operation consists of $22$ successive steps: at step $i$, choose an entry $x$ of the current sequence and replace it with $x+a_i$ if $1\\le i\\le11$, or with $x-a_{i-11}$ if $12\\le i\\le22$. Call the operation odd or even if its final sequence is, respectively, an odd or even permutation of $1,\\ldots,2007$. Which is larger, the number of odd operations or the number of even operations, and by how much? A permutation $(x_1,\\ldots,x_{2007})$ is even when $\\prod_{i>j}(x_i-x_j)>0$, and odd otherwise."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $O,I$ be the circumcentre and incentre of triangle $ABC$. Its incircle touches $BC,CA,AB$ at $D,E,F$, respectively. Lines $FD,ED$ meet $CA,AB$ at $P,Q$, respectively. Let $M,N$ be the midpoints of $PE,QF$. Prove that $OI\\perp MN$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $(a_n)_{n\\ge1}$ be a bounded sequence satisfying $$a_n<\\sum_{k=n}^{2n+2006}\\frac{a_k}{k+1}+\\frac1{2n+2007}\\qquad(n=1,2,3,\\ldots).$$ Prove that $a_n<1/n$ for every positive integer $n$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find the smallest integer $n\\ge9$ such that, for any $n$ integers $a_1,\\ldots,a_n$, not necessarily distinct, there are indices $1\\le i_1<\\cdots<i_9\\le n$ and coefficients $b_1,\\ldots,b_9\\in\\{4,7\\}$ for which $$b_1a_{i_1}+b_2a_{i_2}+\\cdots+b_9a_{i_9}$$ is divisible by $9$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute scalene triangle with circumcentre $O$. Let $A\\prime$ lie on the extension of segment $AO$ such that $\\angle BA\\prime A=\\angle CA\\prime A$. Let $A_1,A_2$ be the feet of the perpendiculars from $A\\prime$ to $AC,AB$, respectively, and let $H_A$ be the foot of the perpendicular from $A$ to $BC$. Let $R_A$ be the circumradius of $H_AA_1A_2$, and define $R_B,R_C$ cyclically. Prove that $$\\frac1{R_A}+\\frac1{R_B}+\\frac1{R_C}=\\frac2R,$$ where $R$ is the circumradius of $ABC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For an integer $n\\ge3$, prove that $X=\\{1,2,\\ldots,n^2-n\\}$ can be partitioned into two nonempty sets such that neither contains $n$ elements $a_1<\\cdots<a_n$ satisfying $$a_k\\le\\frac{a_{k-1}+a_{k+1}}2\\qquad(2\\le k\\le n-1).$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be a positive integer and let real numbers $x_1\\le\\cdots\\le x_n$ and $y_1\\ge\\cdots\\ge y_n$ satisfy $$\\sum_{i=1}^n ix_i=\\sum_{i=1}^n iy_i.$$ Prove that, for every real $\\alpha$, $$\\sum_{i=1}^n x_i\\lfloor i\\alpha\\rfloor\\ge\\sum_{i=1}^n y_i\\lfloor i\\alpha\\rfloor.$$ Here $\\lfloor\\beta\\rfloor$ is the greatest integer not exceeding $\\beta$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $A$ be an infinite subset of the positive integers, and let $n>1$ be a fixed integer. Suppose that, for every prime $p$ not dividing $n$, infinitely many elements of $A$ are not divisible by $p$. Prove that, for every integer $m>1$ with $\\gcd(m,n)=1$, there is a finite set of distinct elements of $A$ whose sum is congruent to $1$ modulo $m$ and to $0$ modulo $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the smallest integer $n$ such that every coloring of the vertices of a regular $n$-gon with red, yellow or blue contains four vertices of the same color forming an isosceles trapezoid. Here an isosceles trapezoid has one pair of parallel sides and a pair of equal nonparallel sides; rectangles are excluded."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all triples $(p,q,n)$ satisfying $$q^{n+2}\\equiv3^{n+2}\\pmod{p^n},\\qquad p^{n+2}\\equiv3^{n+2}\\pmod{q^n},$$ where $p,q$ are odd primes and $n$ is an integer greater than $1$."
         }
       ]
     },

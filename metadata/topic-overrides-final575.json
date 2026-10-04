@@ -6780,6 +6780,562 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-04",
       "rationale": "Full problem reviewed for its explicit objects and task: Algebra."
+    },
+    "cn.1995.1.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ be real numbers, where $n\\ge3$, satisfying $$\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i,$$ $$0<a_1=a_2,\\qquad a_i+a_{i+1}=a_{i+2}\\quad(1\\le i\\le n-2),$$ and $$0<b_1\\le b_2,\\qquad b_i+b_{i+1}\\le b_{i+2}\\quad(1\\le i\\le n-2).$$ Prove that $a_{n-1}+a_n\\le b_{n-1}+b_n$.",
+      "statement_sha256": "c59369a90dc22ba5c4bd8ef31f29cf994ccd80ddc6107193ff16fadd4800e6be",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1995.1.2": {
+      "topics": [
+        "Number Theory",
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $f:\\mathbb N\\to\\mathbb N$ satisfy $f(1)=1$ and, for every $n\\in\\mathbb N$, $$3f(n)f(2n+1)=f(2n)(1+3f(n)),\\qquad f(2n)<6f(n).$$ Find all solutions of $f(k)+f(l)=293$ with $k<l$. Here $\\mathbb N$ denotes the natural numbers.",
+      "statement_sha256": "38397df9087451e647a7b891f60e525140a300124d69b01ba0af909dc168d1c5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Algebra."
+    },
+    "cn.1995.1.3": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Find the minimum value of $$\\sum_{i=1}^{10}\\sum_{j=1}^{10}\\sum_{k=1}^{10}\\left|k(x+y-10i)(3x-6y-36j)(19x+95y-95k)\\right|,$$ where $x,y$ are real numbers.",
+      "statement_sha256": "411958ea80827ad766fc37031c9508aaf739a62da675805a9bb48fce686e9661",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1995.2.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Four spheres have radii $2,2,3,3$, respectively, and each is externally tangent to the other three. A further sphere is externally tangent to all four. Determine its radius.",
+      "statement_sha256": "7d1bd1abc46ca9b1c49491dc81fd4e303d07973669469ead69491ebe9074a430",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1995.2.5": {
+      "topics": [
+        "Algebra",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $a_1,a_2,\\ldots,a_{10}$ be pairwise distinct natural numbers whose sum is $1995$. Find the minimum value of $$a_1a_2+a_2a_3+\\cdots+a_9a_{10}+a_{10}a_1.$$",
+      "statement_sha256": "8ade7281ce5961650da350a84ac1053c2b2ec2f3b6a4d9e05b43edb3f5d0b33e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra, Combinatorics."
+    },
+    "cn.1995.2.6": {
+      "topics": [
+        "Combinatorics",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n>1$ be odd. Define $x_k=(x_1^{(k)},\\ldots,x_n^{(k)})$ by $x_0=(1,0,\\ldots,0,1)$ and, for $k\\ge1$, $$x_i^{(k)}=\\begin{cases}0,&x_i^{(k-1)}=x_{i+1}^{(k-1)},\\\\1,&x_i^{(k-1)}\\ne x_{i+1}^{(k-1)},\\end{cases}\\qquad 1\\le i\\le n,$$ with cyclic subscripts, so $x_{n+1}^{(k-1)}=x_1^{(k-1)}$. If $m$ is a positive integer and $x_m=x_0$, prove that $n\\mid m$.",
+      "statement_sha256": "c6fac556c0f4b48276f0b0deb737790fc3c1be1a6d2a50da3ce565d48a697eff",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics, Number Theory."
+    },
+    "cn.1996.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be an acute triangle with orthocentre $H$. The tangents from $A$ to the circle with diameter $BC$ touch it at $P,Q$. Prove that $H,P,Q$ are collinear.",
+      "statement_sha256": "011513e1915547a8500886878b0c1f5225fe48ffec4cfa14bf179a1441830c2b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1996.1.2": {
+      "topics": [
+        "Number Theory",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Find the smallest positive integer $K$ such that every $K$-element subset of $\\{1,2,\\ldots,50\\}$ contains distinct $a,b$ for which $a+b$ divides $ab$.",
+      "statement_sha256": "3d4126ef14a80911e0521d6e5254ec88a1535404715abf298fc17b0b26d84207",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Combinatorics."
+    },
+    "cn.1996.1.3": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $f:\\mathbb R\\to\\mathbb R$ satisfy $$f(x^3+y^3)=(x+y)\\bigl(f(x)^2-f(x)f(y)+f(y)^2\\bigr)$$ for all real $x,y$. Prove that $f(1996x)=1996f(x)$ for every real $x$.",
+      "statement_sha256": "3123157ad10fb88feb45758de7e65d5c320221af7532b9b9dfbb08574da3d57f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1996.2.4": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Eight singers take part in a festival. An organizer schedules $m$ concerts, with four singers performing at each concert. Every pair of singers must perform together the same number of times. Find a schedule minimizing $m$.",
+      "statement_sha256": "8570cb5f524b4435b5ba9662a632d4d9370fe42570e6bb6b82b5bb4bd4fe4f39",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.1996.2.5": {
+      "topics": [
+        "Algebra",
+        "Analysis"
+      ],
+      "reviewed_statement": "Let $n$ be a natural number, $x_0=0$ and $x_i>0$ for $1\\le i\\le n$, with $\\sum_{i=1}^n x_i=1$. Prove that $$1\\le\\sum_{i=1}^n\\frac{x_i}{\\sqrt{1+x_0+x_1+\\cdots+x_{i-1}}\\sqrt{x_i+x_{i+1}+\\cdots+x_n}}<\\frac\\pi2.$$",
+      "statement_sha256": "63d637653cf6bafe3d45c44eaea3ad3768698b79cb387e0b277360ee3401d586",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra, Analysis."
+    },
+    "cn.1996.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In triangle $ABC$, $\\angle C=90^\\circ$, $\\angle A=30^\\circ$ and $BC=1$. Find the minimum possible length of the longest side of an inscribed triangle, whose three vertices lie on the three sides of $ABC$, respectively.",
+      "statement_sha256": "9c9fd17d4a15e3a654145aae4b9e686611a8c82519a7400ec4f1081a7c6cbbbc",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1998.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be a non-obtuse triangle with $AB>AC$ and $\\angle B=45^\\circ$. Its circumcentre $O$ and incentre $I$ satisfy $\\sqrt2\\,OI=AB-AC$. Find $\\sin A$.",
+      "statement_sha256": "44beb3422d3eeeff6ff7aa2f27501ceaaafc8141edba00920a377fd9ada2106f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1998.1.2": {
+      "topics": [
+        "Number Theory",
+        "Algebra"
+      ],
+      "reviewed_statement": "For a given positive integer $n>1$, determine, with proof, whether there exist $2n$ pairwise distinct positive integers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ such that $$\\sum_{i=1}^n a_i=\\sum_{i=1}^n b_i,\\qquad n-1>\\sum_{i=1}^n\\frac{a_i-b_i}{a_i+b_i}>n-1-\\frac1{1998}.$$",
+      "statement_sha256": "2d8cd066aa90e0bcc5938f2c961f3a5b3094c891cd99f5245ad5666be508ce29",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Algebra."
+    },
+    "cn.1998.1.3": {
+      "topics": [
+        "Number Theory",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $S=\\{1,2,\\ldots,98\\}$. Find the least natural number $n$ such that every $n$-element subset of $S$ contains ten numbers with this property: however these ten numbers are divided into two groups of five, one group contains a number coprime to each of the other four numbers in that group, and the other group contains a number not coprime to any of the other four numbers in that group.",
+      "statement_sha256": "94da81e6f7cf8eaaac48749752e8514c9a5f6612ea74c57a0536a1c253866eee",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Combinatorics."
+    },
+    "cn.1998.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all natural numbers $n>3$ such that $$1+\\binom n1+\\binom n2+\\binom n3\\mid 2^{2000}.$$",
+      "statement_sha256": "6ef685d9bc0672823b564d869536e6ab1bdf0561c2d4ad8016c004286782fd22",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.1998.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $D$ be a point inside an acute triangle $ABC$ such that $$DA\\cdot DB\\cdot AB+DB\\cdot DC\\cdot BC+DC\\cdot DA\\cdot CA=AB\\cdot BC\\cdot CA.$$ Determine, with proof, the geometric position of $D$.",
+      "statement_sha256": "419e1c6e119c0bdef17afcea017d8895eb32ef47ba329be8adcdcfb12949719c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1998.2.6": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $n\\ge2$ and let $x_1,\\ldots,x_n$ be real numbers satisfying $$\\sum_{i=1}^n x_i^2+\\sum_{i=1}^{n-1}x_ix_{i+1}=1.$$ For each $k$ with $1\\le k\\le n$, find the maximum value of $|x_k|$.",
+      "statement_sha256": "4526f15a3da5cd8bc395557efc4bb065f2533f05b71c389a2bbfedd7f8501a9c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1999.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be an acute triangle with $\\angle C>\\angle B$. Let $D$ lie on $BC$ with $\\angle ADB$ obtuse, and let $H$ be the orthocentre of $ABD$. Let $F$ lie inside $ABC$ and on the circumcircle of $ABD$. Prove that $F$ is the orthocentre of $ABC$ if and only if $HD\\parallel CF$ and $H$ lies on the circumcircle of $ABC$.",
+      "statement_sha256": "55e6172715b290203994882d9082ea02e4649cdc17f398574f086c9c1c738738",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.1999.1.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $a$ be real. Define polynomials $f_n(x)$ by $f_0(x)=1$ and $$f_{n+1}(x)=xf_n(x)+f_n(ax)\\qquad(n\\ge0).$$ (a) Prove that $f_n(x)=x^nf_n(x^{-1})$ for every nonnegative integer $n$. (b) Find an explicit expression for $f_n(x)$.",
+      "statement_sha256": "af58a2857ee2c18e7c8a8d2a7c981a2488e6e5c36aa47fd1279005559efdee56",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1999.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "There are $99$ space stations, with a tunnel joining each pair. Exactly $99$ tunnels allow travel in both directions; every other tunnel allows travel in only one direction. A set of four stations is called connected if one can travel from each station to every other station in the set using only the six tunnels joining these four stations. Determine the maximum possible number of connected sets of four stations.",
+      "statement_sha256": "52fa21ab7646c7975da3fc7a4227a80e76fa82fbdc8cacef74c3031fbc3b3605",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.1999.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $m$ be a positive integer. Prove that there are integers $a,b,k$, with $a,b$ odd and $k\\ge0$, such that $$2m=a^{19}+b^{99}+k\\,2^{1999}.$$",
+      "statement_sha256": "c0464e4a4147ab08750ded5d0672ea575989f5a153d773aa3f7e210982d5ca1a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.1999.2.5": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Find the largest real constant $\\lambda$ such that, for every cubic polynomial $f(x)=x^3+ax^2+bx+c$ whose roots are all nonnegative, $$f(x)\\ge\\lambda(x-a)^3\\qquad\\text{for all }x\\ge0.$$ Determine the equality condition.",
+      "statement_sha256": "d954f7c22df3eadb074c391992a5856ed7831996f7cf4da89ffbe812c6cf4088",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.1999.2.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A $4\\times4\\times4$ cube consists of $64$ unit cubes. Select $16$ unit cubes and color them red. A coloring is interesting if every $1\\times1\\times4$ rectangular box consisting of four unit cubes contains exactly one red unit cube. Determine the number of interesting colorings.",
+      "statement_sha256": "80ad899a2259da472e5e923692863deba275a062ad5cd0e066da030632ee337f",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2000.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "The side lengths $a,b,c$ of triangle $ABC$ satisfy $a\\le b\\le c$. Its circumradius and inradius are $R,r$, respectively. Let $f=a+b-2R-2r$. Determine the sign of $f$ in terms of $\\angle C$.",
+      "statement_sha256": "68204f082e873796df47e260e0ccd1cee4022461ed8b8068e063f0b6569e921a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2000.1.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Define a sequence by $a_1=0$, $a_2=1$, and $$a_n=\\frac n2a_{n-1}+\\frac{n(n-1)}2a_{n-2}+(-1)^n\\left(1-\\frac n2\\right)\\qquad(n\\ge3).$$ Find a closed-form expression for $$f_n=a_n+2\\binom n1a_{n-1}+3\\binom n2a_{n-2}+\\cdots+(n-1)\\binom n{n-2}a_2+n\\binom n{n-1}a_1.$$",
+      "statement_sha256": "d7b05b7e16b444b75e2e9ff19ba12dbba51152905f2229a09f625f9b70651097",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.2000.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A table tennis club schedules doubles matches subject to these rules: (i) each player belongs to at most two pairs; (ii) two distinct pairs play against one another at most once; (iii) players belonging to the same pair never play against one another while partnered with others. The set of distinct numbers of matches played by the individual players is called the set of games. Given a set $A=\\{a_1,\\ldots,a_k\\}$ of positive integers, each divisible by $6$, determine the minimum number of players needed for a schedule whose set of games is exactly $A$.",
+      "statement_sha256": "91adfb9c947f840b89145f3c237ad27dbae0e2599cc97afb4331cf98c0a33c49",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2000.2.4": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "For an ordered real $n$-tuple $A=(a_1,\\ldots,a_n)$, where $n\\ge2$, define $b_k=\\max\\{a_1,\\ldots,a_k\\}$ and $B=(b_1,\\ldots,b_n)$. Call $B$ the innovated tuple of $A$, and call the number of distinct entries of $B$ the innovated degree of $A$. Among all permutations of $1,2,\\ldots,n$ whose innovated degree is $2$, find the arithmetic mean of their first entries.",
+      "statement_sha256": "238b3206f3c0760199ad4298aa1ac9979402549e8756819a0556dea47b41e4d0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2000.2.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all positive integers $n$ for which there exist a positive integer $k$ and integers $n_1,\\ldots,n_k>3$ satisfying $$n=n_1n_2\\cdots n_k=2^{\\frac{(n_1-1)(n_2-1)\\cdots(n_k-1)}{2^k}}-1.$$",
+      "statement_sha256": "ddc281411160c1a40108683206e360ff24ae8c7de59f2944de059fa585f9282d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.2000.2.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A test has five multiple-choice questions, each with four options. Each examinee selects one option for each question. Among $2000$ answer sheets there is a number $n$ such that every set of $n$ sheets contains four sheets any two of which agree on at most three answers. Find the minimum possible value of $n$.",
+      "statement_sha256": "b29e9b027dd29a34c8a7d38aad4e9170be60ef0c8bb38edf55c2707802eaac76",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2001.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $\\sqrt2<a<2$. Let $ABCD$ be a convex cyclic quadrilateral with its circumcentre in its interior. Its circumcircle $\\omega$ has radius $1$, and its longest and shortest sides have lengths $a$ and $\\sqrt{4-a^2}$, respectively. The tangents to $\\omega$ at $A,B,C,D$ are $L_A,L_B,L_C,L_D$. Put $A\\prime=L_A\\cap L_B$, $B\\prime=L_B\\cap L_C$, $C\\prime=L_C\\cap L_D$, $D\\prime=L_D\\cap L_A$. Determine the maximum and minimum possible values of $$\\frac{S_{A\\prime B\\prime C\\prime D\\prime}}{S_{ABCD}}.$$",
+      "statement_sha256": "f9796c30d020371d48e15dfbd6b54d5dd33d58219c6ad285da38677aeb154613",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2001.1.2": {
+      "topics": [
+        "Number Theory",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $X=\\{1,2,\\ldots,2001\\}$. Find the least positive integer $m$ such that every $m$-element subset $W$ of $X$ contains $u,v$, not necessarily distinct, for which $u+v=2^k$ for some positive integer $k$.",
+      "statement_sha256": "8a0a51fc8433fb5bcbe7453abc9b107465efa0d2c1ae847f145fb94edec671ec",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Combinatorics."
+    },
+    "cn.2001.1.3": {
+      "topics": [
+        "Geometry",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $A_1A_2\\cdots A_n$ be a regular $n$-gon. Find all positive integers $n$ such that, for every permutation $\\sigma$ of $\\{1,\\ldots,n\\}$, there are indices $i,j,k$ for which the triangles $A_iA_jA_k$ and $A_{\\sigma(i)}A_{\\sigma(j)}A_{\\sigma(k)}$ are both acute, both right, or both obtuse.",
+      "statement_sha256": "a826d440af9d0f8eebb3517a478914a392f7fb25e93831fadd638e886078df32",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry, Combinatorics."
+    },
+    "cn.2001.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $a,b,c$ be positive integers such that $a,b,c,a+b-c,a+c-b,b+c-a,a+b+c$ are seven distinct primes. Two of $a,b,c$ have sum $800$. Find the maximum possible difference between the largest and smallest of the seven primes.",
+      "statement_sha256": "1785e0425cc4e20d36b5719c986c80114451ea1e5f69aa270d71091565495174",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.2001.2.5": {
+      "topics": [
+        "Combinatorics",
+        "Geometry"
+      ],
+      "reviewed_statement": "A regular $24$-gon $P_1P_2\\cdots P_{24}$ is inscribed in a circle of circumference $24$. Determine the number of sets of eight vertices such that no arc between two chosen vertices has length $3$ or $8$.",
+      "statement_sha256": "fb6ac850a8fe984bb1213323ac811ce46dc631d53d69ed58adb092f112b34f3d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics, Geometry."
+    },
+    "cn.2001.2.6": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $a=2001$, and let $A$ consist of all pairs of positive integers $(m,n)$ satisfying $$m<2a,\\qquad 2n\\mid(2am-m^2+n^2),\\qquad n^2-m^2+2mn\\le2a(n-m).$$ For $(m,n)\\in A$, define $$f(m,n)=\\frac{2am-m^2-mn}{n}.$$ Determine the maximum and minimum values of $f$.",
+      "statement_sha256": "8163e1065885a0063a3aa2b353705279da5f10e3e16ea6663cc784370296048b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.2002.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Triangle $ABC$ has side lengths $a=BC$, $b=CA$, $c=AB$, with $b<c$. Its internal angle bisector $AD$ meets $BC$ at $D$. (1) Find a necessary and sufficient condition, expressed in terms of $\\angle A,\\angle B,\\angle C$, for the existence of points $E,F$ in the interiors of $AB,AC$, respectively, such that $BE=CF$ and $\\angle BDE=\\angle CDF$. (2) When such points exist, express $BE$ in terms of $a,b,c$.",
+      "statement_sha256": "90622c4e33f73ede93dfa0ef569738e99c1f931578f6c9422bb1d08af67c6443",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2002.1.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let polynomials $p_n(x)$ satisfy $$p_1(x)=x^2-1,\\qquad p_2(x)=2x(x^2-1),$$ and $$p_{n+1}(x)p_{n-1}(x)=p_n(x)^2-(x^2-1)^2\\qquad(n\\ge2).$$ Let $s_n$ be the sum of the absolute values of the coefficients of $p_n(x)$. For each $n$, find a nonnegative integer $k_n$ such that $2^{-k_n}s_n$ is odd.",
+      "statement_sha256": "61c25ddd1e2923139fc3359320f2f4d6f2214d6ca8878a95ca2f45c4033d3552",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra, Number Theory."
+    },
+    "cn.2002.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Eighteen teams play a round-robin tournament over $17$ rounds. In each round the teams are divided into nine pairs, with one match in each pair, so that every pair of teams meets exactly once during the tournament. Find the largest $n$ such that, after any $n$ rounds of any valid schedule, there always exist four teams between which exactly one match has been played.",
+      "statement_sha256": "a3c7cf78886456a8b4c6d739ae9ad0cfd317b00067a31149ee8062c7bda27beb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2002.2.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "For four distinct points $P_1,P_2,P_3,P_4$ in the plane, find the minimum possible value of $$\\frac{\\sum_{1\\le i<j\\le4}P_iP_j}{\\min_{1\\le i<j\\le4}P_iP_j}.$$",
+      "statement_sha256": "d210c9a4d9bb4bbae41a1dbeb5c2eb1f96623afaf147c022fcca743ea714a109",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2002.2.5": {
+      "topics": [
+        "Geometry",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A point of the plane is called good if both its coordinates are rational. Prove that the good points can be partitioned into three sets such that: (1) the interior of every circle whose centre is good contains a point from each set; (2) no three collinear points belong to three different sets.",
+      "statement_sha256": "f235e8bd57e60b5b0bbb6106c208395013c6d154ccbb2cbf244084621f4f3b87",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry, Combinatorics."
+    },
+    "cn.2002.2.6": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $\\frac12<c<1$. Find the least constant $M$ such that, for every integer $n\\ge2$ and every sequence of real numbers $0<a_1\\le\\cdots\\le a_n$ satisfying $$\\frac1n\\sum_{k=1}^n ka_k=c\\sum_{k=1}^n a_k,$$ one has $$\\sum_{k=1}^n a_k\\le M\\sum_{k=1}^m a_k,\\qquad m=\\lfloor cn\\rfloor.$$",
+      "statement_sha256": "e3e4ad5d20d9e7f10db7f61a8b0a2e9eb50dd90b9a0a3ee42aa9f6d033826b02",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.2007.1.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $a,b,c$ be complex numbers, and put $m=|a+b|$, $n=|a-b|$. If $mn\\ne0$, prove that $$\\max\\{|ac+b|,|a+bc|\\}\\ge\\frac{mn}{\\sqrt{m^2+n^2}}.$$",
+      "statement_sha256": "bdf5f447c6fda3663777e85af5cf61a5166fc739def04228b975cb481d15aad5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra."
+    },
+    "cn.2007.1.2": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove both statements: (1) If $2n-1$ is prime, then for every choice of $n$ pairwise distinct positive integers $a_1,\\ldots,a_n$, there are $i,j\\in\\{1,\\ldots,n\\}$ such that $$\\frac{a_i+a_j}{\\gcd(a_i,a_j)}\\ge2n-1.$$ (2) If $2n-1$ is composite, there exist $n$ pairwise distinct positive integers $a_1,\\ldots,a_n$ such that $$\\frac{a_i+a_j}{\\gcd(a_i,a_j)}<2n-1$$ for all $i,j\\in\\{1,\\ldots,n\\}$.",
+      "statement_sha256": "4ad5127405959bd5d4c8f6d3d03ec401417ea5e17f9171847461e5a1a641dffe",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.2007.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $a_1,\\ldots,a_{11}$ be pairwise distinct positive integers with sum less than $2007$. Begin with the ordered sequence $S=(1,2,\\ldots,2007)$. An operation consists of $22$ successive steps: at step $i$, choose an entry $x$ of the current sequence and replace it with $x+a_i$ if $1\\le i\\le11$, or with $x-a_{i-11}$ if $12\\le i\\le22$. Call the operation odd or even if its final sequence is, respectively, an odd or even permutation of $1,\\ldots,2007$. Which is larger, the number of odd operations or the number of even operations, and by how much? A permutation $(x_1,\\ldots,x_{2007})$ is even when $\\prod_{i>j}(x_i-x_j)>0$, and odd otherwise.",
+      "statement_sha256": "18b7753f18b9c6dcb7980869faa4f6da3d33d5348ea82b32608af8e71b277eb4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2007.2.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $O,I$ be the circumcentre and incentre of triangle $ABC$. Its incircle touches $BC,CA,AB$ at $D,E,F$, respectively. Lines $FD,ED$ meet $CA,AB$ at $P,Q$, respectively. Let $M,N$ be the midpoints of $PE,QF$. Prove that $OI\\perp MN$.",
+      "statement_sha256": "742165f4db623690e3af8b40b076263495b1b5f4a6588f8508b127e7aa15cbdb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2007.2.5": {
+      "topics": [
+        "Analysis",
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $(a_n)_{n\\ge1}$ be a bounded sequence satisfying $$a_n<\\sum_{k=n}^{2n+2006}\\frac{a_k}{k+1}+\\frac1{2n+2007}\\qquad(n=1,2,3,\\ldots).$$ Prove that $a_n<1/n$ for every positive integer $n$.",
+      "statement_sha256": "267200b92d2591a68e76b7c1693208d7cc298d46b037241e3857be5fc50be384",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Analysis, Algebra."
+    },
+    "cn.2007.2.6": {
+      "topics": [
+        "Number Theory",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Find the smallest integer $n\\ge9$ such that, for any $n$ integers $a_1,\\ldots,a_n$, not necessarily distinct, there are indices $1\\le i_1<\\cdots<i_9\\le n$ and coefficients $b_1,\\ldots,b_9\\in\\{4,7\\}$ for which $$b_1a_{i_1}+b_2a_{i_2}+\\cdots+b_9a_{i_9}$$ is divisible by $9$.",
+      "statement_sha256": "0e441b14bd78d07ecb11d44bd7b4c0e487a2f4825cad889a95c3ef15eb656410",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory, Combinatorics."
+    },
+    "cn.2008.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABC$ be an acute scalene triangle with circumcentre $O$. Let $A\\prime$ lie on the extension of segment $AO$ such that $\\angle BA\\prime A=\\angle CA\\prime A$. Let $A_1,A_2$ be the feet of the perpendiculars from $A\\prime$ to $AC,AB$, respectively, and let $H_A$ be the foot of the perpendicular from $A$ to $BC$. Let $R_A$ be the circumradius of $H_AA_1A_2$, and define $R_B,R_C$ cyclically. Prove that $$\\frac1{R_A}+\\frac1{R_B}+\\frac1{R_C}=\\frac2R,$$ where $R$ is the circumradius of $ABC$.",
+      "statement_sha256": "94a51563a619b53f2c6673a1e0f47ec0b5428ef04889a64a09cc55fb09381ab5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry."
+    },
+    "cn.2008.1.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "For an integer $n\\ge3$, prove that $X=\\{1,2,\\ldots,n^2-n\\}$ can be partitioned into two nonempty sets such that neither contains $n$ elements $a_1<\\cdots<a_n$ satisfying $$a_k\\le\\frac{a_{k-1}+a_{k+1}}2\\qquad(2\\le k\\le n-1).$$",
+      "statement_sha256": "ac14da8ff3a7f49375858b4aba45c0757452c96ba5ea608e5958cd9e7c285b70",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Combinatorics."
+    },
+    "cn.2008.1.3": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n$ be a positive integer and let real numbers $x_1\\le\\cdots\\le x_n$ and $y_1\\ge\\cdots\\ge y_n$ satisfy $$\\sum_{i=1}^n ix_i=\\sum_{i=1}^n iy_i.$$ Prove that, for every real $\\alpha$, $$\\sum_{i=1}^n x_i\\lfloor i\\alpha\\rfloor\\ge\\sum_{i=1}^n y_i\\lfloor i\\alpha\\rfloor.$$ Here $\\lfloor\\beta\\rfloor$ is the greatest integer not exceeding $\\beta$.",
+      "statement_sha256": "09bb5096b276c306ffffa0f429e39e691498a39955fe7d02e3612f30eccb3595",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Algebra, Number Theory."
+    },
+    "cn.2008.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $A$ be an infinite subset of the positive integers, and let $n>1$ be a fixed integer. Suppose that, for every prime $p$ not dividing $n$, infinitely many elements of $A$ are not divisible by $p$. Prove that, for every integer $m>1$ with $\\gcd(m,n)=1$, there is a finite set of distinct elements of $A$ whose sum is congruent to $1$ modulo $m$ and to $0$ modulo $n$.",
+      "statement_sha256": "785eb5622e0438c9836bf4b02c107814029eb92d6fca96cf12cf8978a134c240",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "cn.2008.2.5": {
+      "topics": [
+        "Geometry",
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Find the smallest integer $n$ such that every coloring of the vertices of a regular $n$-gon with red, yellow or blue contains four vertices of the same color forming an isosceles trapezoid. Here an isosceles trapezoid has one pair of parallel sides and a pair of equal nonparallel sides; rectangles are excluded.",
+      "statement_sha256": "27aff8d13312015ac94878a6fd133fefc0b6cfa6c7bfc6c4095afc0704414709",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Geometry, Combinatorics."
+    },
+    "cn.2008.2.6": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find all triples $(p,q,n)$ satisfying $$q^{n+2}\\equiv3^{n+2}\\pmod{p^n},\\qquad p^{n+2}\\equiv3^{n+2}\\pmod{q^n},$$ where $p,q$ are odd primes and $n$ is an integer greater than $1$.",
+      "statement_sha256": "dd8f2151085dedddbc5b62c91e81635abfd3c6add045eefe903e5bd800827ac4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-04",
+      "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
     }
   }
 }
