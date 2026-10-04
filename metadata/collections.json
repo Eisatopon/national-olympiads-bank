@@ -25794,6 +25794,28 @@
           "statement_sha256": "a48255050340eb4d7918270ee3996f6aac04d256ee5114a18b03ddbfe2813641"
         }
       }
+    },
+    "Morocco-tst-problems.json": {
+      "verification_status": "not_verified_against_source",
+      "coverage": "partial_archive",
+      "competition": "Morocco IMO Team Selection Test (TST)",
+      "source_links": [
+        {
+          "url": "https://artofproblemsolving.com/downloads/printable_post_collections/642440.pdf",
+          "label": "Morocco TST 2017: two-day paper",
+          "verification": "unverified"
+        }
+      ],
+      "verification_notes": "2017 only. Concise English restatements; original PDF is linked. Problem 3 retains an unresolved condition in the community source; no correction has been inferred. This is not a complete historical archive.",
+      "statement_notes": {
+        "mat.2017.1.3": {
+          "kind": "source_domain_gap",
+          "reviewed_statement": "Triangle $ABC$ has circumcircle $\\Gamma$, incentre $I$ and midpoint $M$ of $BC$. Points $D\\in BC,E\\in CA,F\\in AB$ satisfy $ID\\perp BC,IE\\perp AI,IF\\perp AI$. Circle $AEF$ meets $\\Gamma$ again at $X\\ne A$. Prove that $XD$ and $AM$ intersect on $\\Gamma$.",
+          "statement_sha256": "2b9fbe10dbe4a0c10c207cc3fff22c807b7f3c7cbb157865bffe0e22bb4e489b",
+          "checked_at": "2026-10-04",
+          "text": "Unresolved source error: the linked community PDF prints IE perpendicular to AI and IF perpendicular to AI. These conditions appear problematic for the intended construction. They are preserved pending corroboration; this problem should not be used as a verified contest statement."
+        }
+      }
     }
   }
 }
