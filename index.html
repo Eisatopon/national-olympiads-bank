@@ -1088,7 +1088,7 @@ function headHtml(count) {
     <div class="res-head">
         <h2 class="res-title" id="resTitle">${esc(t)}<span class="res-count">${count === null ? '' : countText(count)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ''}</h2>
         <div class="res-actions">
-            ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Thailand PDF archive</a>' : ''}
+            ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
             ${wide ? '<button type="button" class="btn btn-sm" data-all-scope>All countries, all years</button>' : ''}
             ${count && count <= 60 ? `<button type="button" class="btn btn-sm" data-add-all>${ICON.plus} Add all (${count})</button>` : ''}
