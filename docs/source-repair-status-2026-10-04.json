@@ -985,6 +985,51 @@
       "uid": "cn.1997.2.6",
       "kind": "source_domain_gap",
       "text": "Source-domain variant: the English collection restricts the sequence to nonnegative integers. Both inspected Chinese compilations say a nonnegative sequence without an integrality restriction. The bank renders this as nonnegative real terms; the bound is valid for that domain."
+    },
+    {
+      "uid": "cn.2017.1.1",
+      "kind": "source_domain_gap",
+      "text": "The inspected Chinese compilation explicitly requires eventual integer terms divisible by u_n; the shorter AoPS transcription omits the integer-term wording. The full condition is retained."
+    },
+    {
+      "uid": "cn.2017.1.2",
+      "kind": "source_domain_gap",
+      "text": "The inspected Chinese statement includes AB>AC, omitted in the AoPS transcription. It also describes P,Q as a diameter through I; the full Chinese condition is retained."
+    },
+    {
+      "uid": "cn.2020.1.1",
+      "kind": "source_domain_gap",
+      "text": "The compilation prints |a_i|-|a_{i+1}|<=1, whereas AoPS prints |a_i-a_{i+1}|<=1. The latter version is retained: the former would allow arbitrarily large alternating terms and invalidate the finite maximum task."
+    },
+    {
+      "uid": "cn.2022.1.3",
+      "kind": "source_domain_gap",
+      "text": "Domain variant: AoPS asks for positive integers a; the inspected Chinese compilation asks for all integers a. The bank retains the positive-integer AoPS version. The condition depends only on a modulo 37."
+    },
+    {
+      "uid": "cn.2023.1.3",
+      "kind": "source_domain_gap",
+      "text": "The Chinese compilation mislabels the white matching using m instead of n. The white matching has n pairs, as required by its 2n white vertices and confirmed by the AoPS paper."
+    },
+    {
+      "uid": "cn.2024.1.1",
+      "kind": "source_domain_gap",
+      "text": "The AoPS public transcription mistakenly lists x_1,...,x_n before a product of 2023 factors. The inspected Chinese paper confirms exactly 2023 positive integer factors."
+    },
+    {
+      "uid": "cn.2024.2.4",
+      "kind": "source_domain_gap",
+      "text": "The bank retains the exact maximum-cardinality question in the inspected Chinese paper; the AoPS reproduction additionally requests equality cases for its stated bound."
+    },
+    {
+      "uid": "cn.2025.1.1",
+      "kind": "source_domain_gap",
+      "text": "The public AoPS transcription omits that x_1 is a positive integer. This condition is explicit in the inspected Chinese paper reproduction and is restored."
+    },
+    {
+      "uid": "cn.2025.2.6",
+      "kind": "source_domain_gap",
+      "text": "The inspected SM International Education paper reproduction confirms n>=4 and the n^(-3/2) improvement, matching AoPS. A separate Beijing information-site transcription has a garbled formula and n>=3 and was not used for this problem."
     }
   ],
   "restored_figures": [
@@ -1033,13 +1078,33 @@
       2013,
       2014,
       2015,
-      2016
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
     ],
-    "active_statements": 180,
+    "active_statements": 240,
     "damaged_original_path": "docs/quarantine/China-olympiad-problems-pre-rebuild.json",
     "remaining_historical_years": [],
     "edition_date_notes": {
-      "2014": "Nanjing paper held 21–22 December 2013; English AoPS edition convention retained."
+      "2014": "Nanjing paper held 21–22 December 2013; English AoPS edition convention retained.",
+      "2017": "AoPS edition 2017; corresponding Chinese paper calendar label 2016.",
+      "2018": "AoPS edition 2018; corresponding Chinese paper calendar label 2017.",
+      "2019": "AoPS edition 2019; corresponding Chinese paper calendar label 2018.",
+      "2020": "AoPS edition 2020; corresponding Chinese paper calendar label 2019.",
+      "2021": "AoPS edition 2021; corresponding Chinese paper calendar label 2020.",
+      "2022": "AoPS edition 2022; corresponding Chinese paper calendar label 2021.",
+      "2023": "AoPS edition 2023; corresponding Chinese paper calendar label 2022.",
+      "2025": "AoPS edition 2025; corresponding Chinese paper calendar label 2024.",
+      "2026": "AoPS 2026 CMO edition; Chinese 41st CMO final held 26–27 November 2025. Calendar-2026 final is a separate future paper, not included.",
+      "2024": "AoPS edition 2024; corresponding Chinese paper calendar label 2023."
     },
     "aops_compilation_years": [
       1995,
@@ -1067,6 +1132,18 @@
     "chinese_compilation_years": [
       1994,
       1997
+    ],
+    "recent_restored_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
     ]
   },
   "retrieval_blockers": [

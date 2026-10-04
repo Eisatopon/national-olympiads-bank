@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-04",
+  "papers": [
+    {
+      "bank_year": 2017,
+      "source_calendar_year": 2016,
+      "aops_collection": 372140,
+      "source_pdf": "sources/china/2017-source-statements.pdf",
+      "sha256": "8d6cd080bc446c00320190dc8fd733707947e68e30e3c8985669d2d44accace5",
+      "count": 6
+    },
+    {
+      "bank_year": 2018,
+      "source_calendar_year": 2017,
+      "aops_collection": 562721,
+      "source_pdf": "sources/china/2018-source-statements.pdf",
+      "sha256": "4dc9f3e93f6f0ec3b246e80f3fb6c511f3f1160b5daecdaf90660035e91a96e9",
+      "count": 6
+    },
+    {
+      "bank_year": 2019,
+      "source_calendar_year": 2018,
+      "aops_collection": 789151,
+      "source_pdf": "sources/china/2019-source-statements.pdf",
+      "sha256": "e1d2931fe297301ab6121fc2e0ae0b77466d03d098d08b5862582c5ff4ecb427",
+      "count": 6
+    },
+    {
+      "bank_year": 2020,
+      "source_calendar_year": 2019,
+      "aops_collection": 1018560,
+      "source_pdf": "sources/china/2020-source-statements.pdf",
+      "sha256": "69eb8508ef88cf73962812366d1e1455a2d8853dc3c069306c4831985d407cd0",
+      "count": 6
+    },
+    {
+      "bank_year": 2021,
+      "source_calendar_year": 2020,
+      "aops_collection": 1617667,
+      "source_pdf": "sources/china/2021-source-statements.pdf",
+      "sha256": "a039cc11efad5fa716ec132605c7fe17dcd5c870ac28b125ad165249a3fa664f",
+      "count": 6
+    },
+    {
+      "bank_year": 2022,
+      "source_calendar_year": 2021,
+      "aops_collection": 2742261,
+      "source_pdf": "sources/china/2022-source-statements.pdf",
+      "sha256": "586774e4eb58d622155879d523ba2a5aa8482f9b8231bcac01e1abcd96cf0355",
+      "count": 6
+    },
+    {
+      "bank_year": 2023,
+      "source_calendar_year": 2022,
+      "aops_collection": 3238312,
+      "source_pdf": "sources/china/2023-source-statements.pdf",
+      "sha256": "18cc9d84f84a98aab11516ba0ce954950cb40bfd8d4f37d460c0a81871ca7c93",
+      "count": 6
+    },
+    {
+      "bank_year": 2024,
+      "source_calendar_year": 2023,
+      "aops_collection": 3631007,
+      "source_pdf": "sources/china/2024-source-statements.pdf",
+      "sha256": "7e1356ef22aa2d6ee7be71226278384df832987ee3431234cd5c141af1522aad",
+      "count": 6
+    },
+    {
+      "bank_year": 2025,
+      "source_calendar_year": 2024,
+      "aops_collection": 4110027,
+      "source_pdf": "sources/china/2025-source-statements.pdf",
+      "sha256": "9708f5517b4b9f53441f0bff81d0a4ddc8c66c0129c68fcc766a937834ee6726",
+      "count": 6
+    },
+    {
+      "bank_year": 2026,
+      "source_calendar_year": 2025,
+      "aops_collection": 4606608,
+      "source_pdf": "sources/china/2026-source-statements.pdf",
+      "sha256": "8c690a0571896f54caf423d594794c2e0f9ada2bba67dc565405898b037e22c9",
+      "count": 6
+    }
+  ],
+  "new_records": 60,
+  "new_source_figures": 6,
+  "year_convention": "Existing AoPS edition labels; source calendar years are one lower. AoPS 2026 is the November 2025 final.",
+  "direct_official_host_certification": false,
+  "statement_only_pdf_method": "Chinese source excerpts. The 2021-calendar paper solution block is physically removed by PDF redaction. Latest presentation excerpts contain only the cropped problem boxes; no answer pixels retained.",
+  "source_variants": [
+    {
+      "year": 2017,
+      "number": 1,
+      "note": "The inspected Chinese compilation explicitly requires eventual integer terms divisible by u_n; the shorter AoPS transcription omits the integer-term wording. The full condition is retained."
+    },
+    {
+      "year": 2017,
+      "number": 2,
+      "note": "The inspected Chinese statement includes AB>AC, omitted in the AoPS transcription. It also describes P,Q as a diameter through I; the full Chinese condition is retained."
+    },
+    {
+      "year": 2020,
+      "number": 1,
+      "note": "The compilation prints |a_i|-|a_{i+1}|<=1, whereas AoPS prints |a_i-a_{i+1}|<=1. The latter version is retained: the former would allow arbitrarily large alternating terms and invalidate the finite maximum task."
+    },
+    {
+      "year": 2022,
+      "number": 3,
+      "note": "Domain variant: AoPS asks for positive integers a; the inspected Chinese compilation asks for all integers a. The bank retains the positive-integer AoPS version. The condition depends only on a modulo 37."
+    },
+    {
+      "year": 2023,
+      "number": 3,
+      "note": "The Chinese compilation mislabels the white matching using m instead of n. The white matching has n pairs, as required by its 2n white vertices and confirmed by the AoPS paper."
+    },
+    {
+      "year": 2024,
+      "number": 1,
+      "note": "The AoPS public transcription mistakenly lists x_1,...,x_n before a product of 2023 factors. The inspected Chinese paper confirms exactly 2023 positive integer factors."
+    },
+    {
+      "year": 2024,
+      "number": 4,
+      "note": "The bank retains the exact maximum-cardinality question in the inspected Chinese paper; the AoPS reproduction additionally requests equality cases for its stated bound."
+    },
+    {
+      "year": 2025,
+      "number": 1,
+      "note": "The public AoPS transcription omits that x_1 is a positive integer. This condition is explicit in the inspected Chinese paper reproduction and is restored."
+    },
+    {
+      "year": 2025,
+      "number": 6,
+      "note": "The inspected SM International Education paper reproduction confirms n>=4 and the n^(-3/2) improvement, matching AoPS. A separate Beijing information-site transcription has a garbled formula and n>=3 and was not used for this problem."
+    }
+  ]
+}

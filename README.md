@@ -10,7 +10,7 @@ The older Olympiad Bank in `Eisatopon/eisatopon-next` is a separate application 
 
 ## Data integrity
 
-China now indexes 180 statements in thirty complete six-problem papers covering every year from 1987 through 2016. The 1994 and 1997 papers are restored from inspected Chinese compilations; documented English-source variants are retained in metadata. Uploaded AoPS papers are visually checked, with source errors, restored conditions and unresolved variants recorded in metadata. This does not certify every statement against an official original. The corrupted original archive remains in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application.
+China now indexes 240 statements in forty complete six-problem papers covering every indexed year from 1987 through 2026. The 1994 and 1997 papers are restored from inspected Chinese compilations; documented English-source variants are retained in metadata. Uploaded AoPS papers are visually checked, with source errors, restored conditions and unresolved variants recorded in metadata. This does not certify every statement against an official original. The corrupted original archive remains in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application.
 
 Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
 
@@ -181,3 +181,5 @@ Added all 49 TST statements for 2002–2008 and 2022, including original 2004 cu
 ### Belgian OMB older senior finals
 
 Added all eight MAXI final statements for 2007/2008 from public official attachments. Original statement diagram and two statement-only PDFs included; 2007 solutions and junior categories physically excluded. Belgium now has 28 records in seven years. The central historical final archive requires sign-in; missing years remain explicitly open.
+
+China 2017–2026 uses the existing AoPS edition-year convention. These papers have Chinese calendar-year labels 2016–2025; the AoPS 2026 paper was held on 26–27 November 2025. This does not claim completion of the calendar-2026 final. Source reproductions, variants, and statement-only downloads are recorded in metadata and `docs/china-2017-2026-restoration-2026-10-04.json`.

@@ -1050,6 +1050,356 @@
           "problem": "Let $G$ be a complete directed graph on $100$ vertices such that for any two vertices $x,y$ there is a directed path from $x$ to $y$. (a) Prove that there is an integer $m$ such that for any two vertices $x,y$ there is a directed path of length $m$ from $x$ to $y$; vertices may be repeated along a path. (b) For each such graph $G$, let $m(G)$ be the smallest possible $m$ in part (a). Find the minimum value of $m(G)$ over all such graphs."
         }
       ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a,b,c$ be real numbers. Define $u_0=u_1=1$, $u_n=2u_{n-1}-3u_{n-2}$ for $n\\ge2$, and $v_0=a$, $v_1=b$, $v_2=c$, $v_n=v_{n-1}-3v_{n-2}+27v_{n-3}$ for $n\\ge3$. Suppose that for some positive integer $N$, every $v_n$ with $n\\ge N$ is an integer divisible by $u_n$. Prove that $3a=2b+c$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle with $AB>AC$, circumcenter $O$ and incenter $I$. Its incircle touches $BC$ at $D$. The tangents to its circumcircle at $B$ and $C$ meet at $L$. Let $X=AO\\cap BC$ and let $Y$ be the foot of the altitude from $A$ to $BC$. Let $P,Q$ be the endpoints of the diameter of the circumcircle passing through $I$. Prove that $A,D,L$ are collinear if and only if $P,X,Y,Q$ are concyclic.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2017_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A rectangle $R$ is partitioned into $2016$ smaller rectangles whose sides are parallel to the sides of $R$. Call every corner of a smaller rectangle a vertex. A segment lying along the sides of the partition is basic if its endpoints are vertices and its interior contains no other vertex. Find the maximum and minimum possible numbers of basic segments over all such partitions."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n\\ge2$ be an integer. Two permutations of $1,2,\\ldots,n$ are related by a prefix reversal if one is obtained from the other by reversing its first $k$ entries for some $1\\le k\\le n$. Prove that all $n!$ permutations can be listed as $P_1,\\ldots,P_{n!}$ so that each consecutive pair is related by a prefix reversal, including $P_{n!}$ and $P_1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $D_n$ be the set of positive divisors of a positive integer $n$. Find all $n$ for which $D_n$ can be partitioned into two disjoint sets $A,G$, each containing at least three elements, such that the elements of $A$ can be arranged in an arithmetic progression and those of $G$ in a geometric progression."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Given an integer $n\\ge2$ and real numbers $0<a<b$, find the maximum of $$\\frac{x_1^2/x_2+x_2^2/x_3+\\cdots+x_{n-1}^2/x_n+x_n^2/x_1}{x_1+x_2+\\cdots+x_n}$$ over all $x_1,\\ldots,x_n\\in[a,b]$."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a positive integer $n$, let $A_n$ be the set of primes $p$ for which there exist positive integers $a,b$ such that both $(a+b)/p$ and $(a^n+b^n)/p^2$ are integers coprime to $p$. When $A_n$ is finite, including when it is empty, write $f(n)=|A_n|$. (a) Prove that $A_n$ is finite if and only if $n\\ne2$. (b) If $k,m$ are odd positive integers and $d=\\gcd(k,m)$, prove that $$f(d)\\le f(k)+f(m)-f(km)\\le2f(d).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n,k$ be positive integers and $$T=\\{(x,y,z)\\in\\mathbb Z^3:1\\le x,y,z\\le n\\}.$$ Suppose that $3n^2-3n+1+k$ points of $T$ are colored red. Whenever two red points determine a segment parallel to a coordinate axis, all lattice points on that segment are red. Prove that at least $k$ distinct unit cubes have all eight vertices red."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $q$ be a positive integer that is not a perfect cube. Prove that there exists a real constant $c>0$ such that $$\\{nq^{1/3}\\}+\\{nq^{2/3}\\}\\ge c n^{-1/2}$$ for every positive integer $n$, where $\\{x\\}$ denotes the fractional part of $x$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral whose diagonals meet at $P$. The circumcircle of $APD$ meets segment $AB$ again at $E$, and the circumcircle of $BPC$ meets segment $AB$ again at $F$. Let $I,J$ be the incenters of triangles $ADE,BCF$, respectively, and let $K=IJ\\cap AC$. Prove that $A,I,K,E$ are concyclic.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2018_p4_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n\\ge3$ be odd. Color every square of an $n\\times n$ board black or white. Two squares are adjacent if they have the same color and share a vertex. Squares are connected if they can be joined by a chain of adjacent squares. Find the largest integer $M$ for which some coloring admits $M$ pairwise unconnected squares."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n>k$ be positive integers and let $a_1,\\ldots,a_n\\in(k-1,k)$. Positive real numbers $x_1,\\ldots,x_n$ satisfy $$\\sum_{i\\in I}x_i\\le\\sum_{i\\in I}a_i$$ for every $k$-element subset $I\\subseteq\\{1,\\ldots,n\\}$. Find the maximum possible value of $x_1x_2\\cdots x_n$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Real numbers $a,b,c,d,e\\ge-1$ satisfy $a+b+c+d+e=5$. Find the minimum and maximum values of $$(a+b)(b+c)(c+d)(d+e)(e+a).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A Pythagorean set is a set of three positive integers that are the side lengths of a right triangle. Prove that for any two Pythagorean sets $P,Q$, there are $m\\ge2$ Pythagorean sets $P_1,\\ldots,P_m$ with $P_1=P$, $P_m=Q$ and $P_i\\cap P_{i+1}\\ne\\varnothing$ for every $1\\le i<m$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Triangle $ABC$, with $AB<AC$, has circumcenter $O$. Point $D$ lies on the internal angle-bisector line of $\\angle BAC$. Point $E$ lies on $BC$ with $OE\\parallel AD$ and $DE\\perp BC$. Point $K$ lies on ray $EB$ beyond $B$ and satisfies $EK=EA$. The circle through $A,D,K$ meets line $BC$ again at $P$ and the circumcircle of $ABC$ again at $Q$. Prove that $PQ$ is tangent to the circumcircle of $ABC$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2019_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "An ellipse that is not a circle is given. (a) Prove that there is a unique rhombus of minimum area whose four sides are tangent to the ellipse. (b) Give a straightedge-and-compass construction of this rhombus."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "An integer is written in each cell of an $n\\times n$ board. A move chooses one cell and adds $1$ to all $2n-1$ entries in its row or column. Find the largest integer $N(n)$ such that, for every initial board, finitely many moves can produce at least $N(n)$ even entries."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Place $2018$ points $P_1,\\ldots,P_{2018}$ inside or on the boundary of a fixed regular pentagon; points may coincide. Find all arrangements maximizing $$\\sum_{1\\le i<j\\le2018}|P_iP_j|^2,$$ and prove your answer."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1,\\ldots,a_{40}$ be real numbers with $\\sum_{i=1}^{40}a_i=0$ and $|a_i-a_{i+1}|\\le1$ for $1\\le i\\le40$, where $a_{41}=a_1$. Find the maximum possible values of (a) $a_{10}+a_{20}+a_{30}+a_{40}$ and (b) $a_{10}a_{20}+a_{30}a_{40}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In triangle $ABC$ with $AB>AC$, the bisector of $\\angle BAC$ meets $BC$ at $D$. Point $P$ lies on ray $DA$ beyond $A$. From $P$, draw tangents $PQ$ and $PR$ to the circumcircles of $ABD$ and $ACD$, respectively, choosing $Q$ on the same side of $AD$ as $B$ and $R$ on the same side as $C$. Let $K=BR\\cap CQ$. The line through $K$ parallel to $BC$ meets $QD,AD,RD$ at $E,L,F$, respectively. Prove that $EL=FK$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2020_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $S$ be a set with $35$ elements and $\\mathcal F$ a family of maps $S\\to S$. Say that $\\mathcal F$ has property $P(k)$ if for every $x,y\\in S$ there exist $f_1,\\ldots,f_k\\in\\mathcal F$, not necessarily distinct, such that $$f_k(\\cdots f_2(f_1(x))\\cdots)=f_k(\\cdots f_2(f_1(y))\\cdots).$$ Find the least positive integer $m$ such that every family with $P(2019)$ also has $P(m)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find the largest real constant $c$ with the following property for every integer $n\\ge3$: if $A_1,\\ldots,A_n$ are closed arcs of a circle and at least half of the $\\binom n3$ triples have nonempty common intersection, then some set $I\\subseteq\\{1,\\ldots,n\\}$ satisfies $|I|>cn$ and $\\bigcap_{i\\in I}A_i\\ne\\varnothing$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For an integer $t>1$, let $P(t)$ be its largest prime factor. A sequence of positive integers is defined by $a_1>1$ and $a_{n+1}=a_n+P(a_n)$ for $n\\ge1$. Prove that the sequence contains a perfect square."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Do there exist positive real numbers $a_0,\\ldots,a_{19}$ such that $$P(x)=x^{20}+a_{19}x^{19}+\\cdots+a_1x+a_0$$ has no real root, but interchanging any two coefficients $a_i,a_j$ with $0\\le i<j\\le19$ produces a polynomial with a real root? Prove your answer."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $(z_n)_{n\\ge1}$ be a complex sequence with real odd-indexed terms and purely imaginary even-indexed terms, satisfying $|z_kz_{k+1}|=2^k$ for every positive integer $k$. Put $f_n=|z_1+\\cdots+z_n|$. Find the minimum possible values of (a) $f_{2020}$ and (b) $f_{2020}f_{2021}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $m>1$ be an integer. Find the smallest positive integer $n$ such that for any integers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ there exist integers $x_1,\\ldots,x_n$ with at least one $x_i$ coprime to $m$ and $$\\sum_{i=1}^n a_ix_i\\equiv\\sum_{i=1}^n b_ix_i\\equiv0\\pmod m.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be a positive integer divisible by exactly $36$ distinct primes. For $k=1,\\ldots,5$, let $c_k$ count the integers coprime to $n$ in the closed interval $[(k-1)n/5,kn/5]$. Suppose that $c_1,\\ldots,c_5$ are not all equal. Prove that $$\\sum_{1\\le i<j\\le5}(c_i-c_j)^2\\ge2^{36}.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle with $AB>AC$, circumcenter $O$ and circumcircle $\\omega$. Let $M$ be the midpoint of the minor arc $BC$, and let $K$ be the point of $\\omega$ diametrically opposite $A$. The line through $O$ parallel to $AM$ meets segment $AB$ at $D$ and ray $CA$ beyond $A$ at $E$. Put $P=BM\\cap CK$, $Q=CM\\cap BK$. Prove that $$\\angle OEB+\\angle OPB=\\angle ODC+\\angle OQC.$$\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2021_p4_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A convex polyhedron has exactly three faces meeting at each vertex and an even number of $k$-gonal faces for every $k\\ge3$. An ant starts at the midpoint of an edge, travels along a simple closed route consisting of edges, and returns to its starting point without visiting any other point twice. The route divides the surface into two regions containing equal numbers of $k$-gonal faces for every $k$. Prove that the ant makes equally many left turns and right turns at vertices."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ such that $$f(f(x)+y)\\mid x+f(y)$$ for all positive integers $x,y$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Fix positive real numbers $a,b$ and a segment $AB$ of length $a$ in the plane. Variable points $C,D$ form a nondegenerate convex quadrilateral $ABCD$ with $BC=CD=b$ and $DA=a$. Its four sides are tangent to a circle with center $I$. Determine the exact locus of $I$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find the largest real number $\\lambda$ such that for every choice of positive real numbers $p,q,r,s$ there is a complex number $z=a+bi$, with $a,b\\in\\mathbb R$, satisfying $$|b|\\ge\\lambda|a|,\\qquad (pz^3+2qz^2+2rz+s)(qz^3+2pz^2+2sz+r)=0.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all positive integers $a$ for which there exists a set $X$ of six integers such that for every $k=1,2,\\ldots,36$ there are $x,y\\in X$ with $$ax+y\\equiv k\\pmod{37}.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A conference has $n\\ge3$ scientists, each with at least one friend among the others. Friendship is mutual. Every partition into two nonempty groups has a pair of friends in the same group and a pair of friends in different groups. On the first day, each scientist expresses an opinion as a nonnegative integer. On each subsequent day, every scientist replaces their opinion by the floor of the average of their friends' opinions on the preceding day. Prove that eventually all scientists have the same opinion."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A sheet of paper is marked with two points at distance $1$ and nothing else. Prove that a straightedge and compass can construct a line and two points on it at distance $\\sqrt{2021}$, using at most ten distinct lines and circles in total. Give explicit construction steps and number the lines and circles in the order they are drawn."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For integers $0\\le a\\le n$, let $f(n,a)$ be the number of coefficients divisible by $3$ in the expansion of $(x+1)^a(x+2)^{n-a}$. For instance, $f(4,3)=1$. For each positive integer $n$, put $$F(n)=\\min_{0\\le a\\le n}f(n,a).$$ Prove that (a) $F(n)\\ge(n-1)/3$ for infinitely many positive integers $n$, and (b) $F(n)\\le(n-1)/3$ for every positive integer $n$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Positive real sequences $(a_n),(b_n)$ satisfy $$a_{n+1}=a_n-\\frac1{1+\\sum_{i=1}^n1/a_i},\\qquad b_{n+1}=b_n+\\frac1{1+\\sum_{i=1}^n1/b_i}.$$ (a) If $a_{100}b_{100}=a_{101}b_{101}$, find $a_1-b_1$. (b) If $a_{100}=b_{99}$, compare $a_{100}+b_{100}$ with $a_{101}+b_{101}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an equilateral triangle of side length $1$. Points $D,E,F$ lie in the interiors of $BC,CA,AB$, respectively, with $DE/20=EF/22=FD/38$. Points $X,Y,Z$ lie on lines $BC,CA,AB$, respectively, with $XY\\perp DE$, $YZ\\perp EF$, $ZX\\perp FD$. Find all possible values of $$\\frac1{[DEF]}+\\frac1{[XYZ]},$$ where brackets denote triangle area."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Color the vertices of a regular $(2m+2n)$-gon, where $m,n$ are positive integers, with $2m$ black and $2n$ white vertices. The coloring distance between two vertices of the same color is the smaller number of opposite-colored vertices on the two boundary paths joining them. A black matching pairs all black vertices with $m$ pairwise nonintersecting segments; define $P(B)$ as the sum of the coloring distances of its pairs. Define a white matching and $P(W)$ analogously using all $2n$ white vertices. Prove that $$\\max_B P(B)=\\max_W P(W)$$ for every coloring."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find the smallest integer $n\\ge3$ for which there are planar points $A_1,\\ldots,A_n$, no three collinear, such that for every $i$ some segment $A_jA_{j+1}$ with $j\\ne i$ passes through the midpoint of $A_iA_{i+1}$. Indices are cyclic, so $A_{n+1}=A_1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that there is a constant $C>0$ such that every infinite arithmetic progression of positive integers $a_1,a_2,\\ldots$ with squarefree $\\gcd(a_1,a_2)$ has a squarefree term $a_m$ with $m\\le C a_2^2$. An integer is squarefree if it is not divisible by the square of any integer greater than $1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "There are $n\\ge8$ airports with directed nonstop routes. For any two distinct airports, there is at most one route in each direction. For every nonempty proper set $A$ of airports, at least $4\\min\\{|A|,n-|A|\\}$ routes go from $A$ to its complement. Prove that from every airport $x$ one can travel along at most $\\sqrt{2n}$ routes and return to $x$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find the smallest real $\\lambda$ such that every positive integer $n$ can be written as $n=x_1x_2\\cdots x_{2023}$ with positive integers $x_i$, each of which is either prime or at most $n^\\lambda$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find the largest real constant $c$ such that $$\\sum_{i=1}^n\\sum_{j=1}^n(n-|i-j|)x_ix_j\\ge c\\sum_{i=1}^n x_i^2$$ for every positive integer $n$ and all real numbers $x_1,\\ldots,x_n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $p\\ge5$ be prime and $S=\\{1,\\ldots,p\\}$. For $x,y\\in S$, define $r(x,y)=y-x$ if $y\\ge x$ and $r(x,y)=y-x+p$ otherwise. For a nonempty proper subset $A\\subset S$, put $$f(A)=\\sum_{x\\in A}\\sum_{y\\in A}r(x,y)^2.$$ Call $A$ good if $f(B)\\ge f(A)$ for every $B\\subseteq S$ with $|B|=|A|$. Find the largest integer $L$ for which there are distinct good sets $A_1\\subset A_2\\subset\\cdots\\subset A_L$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Nonnegative real numbers $a_1,\\ldots,a_{2023}$ have sum $100$. Let $$A=\\{(i,j):1\\le i\\le j\\le2023,\\ a_ia_j\\ge1\\}.$$ Find the maximum possible value of $|A|$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute triangle and let $K$ lie on ray $BC$ beyond $C$. Draw rays $KP,KQ$ parallel to and in the same directions as rays $AB,AC$, respectively, choosing $P,Q$ distinct from $K$ with $BP=BK$ and $CQ=CK$. The circumcircle of $KPQ$ meets line $AK$ again at $T$. Prove that (a) $\\angle BTC+\\angle APB=\\angle CQA$ and (b) $AP\\cdot BT\\cdot CQ=AQ\\cdot CT\\cdot BP$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Label the vertices of a regular $99$-gon with the integers $1,\\ldots,99$, each used once. Labelings agreeing under a rotation are identified. A move swaps the labels at two adjacent vertices. Find the smallest integer $n$ such that any labeling can be transformed into any other with at most $n$ moves."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\alpha>1$ be irrational and let $L$ be a positive integer with $L>\\alpha^2/(\\alpha-1)$. Starting from a positive integer $x_1>L$, define $$x_{n+1}=\\begin{cases}\\lfloor\\alpha x_n\\rfloor,&x_n\\le L,\\\\\\lfloor x_n/\\alpha\\rfloor,&x_n>L.\\end{cases}$$ Prove that the sequence is eventually periodic and that its eventual least positive period is odd and independent of $x_1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Triangle $ABC$ has incenter $I$. Let $L,M,N$ be the midpoints of $AI,AC,CI$, respectively. Point $D$ lies on segment $AM$ with $BD=BC$. The incircle of $ABD$ touches $AD,BD$ at $E,F$, respectively. Let $J$ be the circumcenter of $AIC$, and let $\\omega$ be the circumcircle of $JMD$. Lines $MN$ and $JL$ meet $\\omega$ again at $P$ and $Q$, respectively. Prove that $PQ,LN,EF$ are concurrent.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2025_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a_1>a_2>\\cdots>a_n>1$ be integers and put $M=\\operatorname{lcm}(a_1,\\ldots,a_n)$. For a finite nonempty set $X$ of positive integers, define $$f(X)=\\min_{1\\le i\\le n}\\sum_{x\\in X}\\left\\{\\frac{x}{a_i}\\right\\},$$ where braces denote fractional part, and set $f(\\varnothing)=0$. Call $X$ minimal if $f(Y)<f(X)$ for every proper subset $Y\\subset X$. If $X$ is minimal and $f(X)\\ge2/a_n$, prove that $|X|\\le f(X)M$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Define the fractional distance between planar points $(x_1,y_1)$ and $(x_2,y_2)$ by $$\\sqrt{\\|x_1-x_2\\|^2+\\|y_1-y_2\\|^2},$$ where $\\|t\\|$ is the distance from $t$ to the nearest integer. Find the largest real $r$ for which four planar points can have all six pairwise fractional distances at least $r$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For a prime $p$, consider bijections $f:\\{0,1,\\ldots,p-1\\}\\to\\{0,1,\\ldots,p-1\\}$ satisfying $|f(a)-f(b)|\\le2024$ whenever $p\\mid a^2-b$. Prove that infinitely many primes admit such a bijection and infinitely many primes do not."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Real numbers $a_1,\\ldots,a_n$ satisfy $$\\sum_{i=1}^n a_i=n,\\qquad\\sum_{i=1}^n a_i^2=2n,\\qquad\\sum_{i=1}^n a_i^3=3n.$$ (a) Find the largest constant $C$ such that $$\\max_i a_i-\\min_i a_i\\ge C$$ for all $n\\ge4$. (b) Prove that there is a constant $C_2>0$, independent of $n$ and the numbers, such that $$\\max_i a_i-\\min_i a_i\\ge C+C_2 n^{-3/2}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Define $$A=\\{re^{i\\theta}:r\\ge0,\\ 0\\le\\theta\\le\\pi/41\\},\\qquad B=\\{x+iy:x,y\\in\\mathbb R,\\ |x-y|<2025\\}.$$ Find all polynomials $P$ with complex coefficients such that $P(z)\\in B$ for every $z\\in A$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A convex cyclic quadrilateral $ABCD$ has circumcenter $O$, circumradius $1$ and $\\angle ABC<\\angle BCD<90^\\circ$. Let $P=BA\\cap CD$ and $Q=AC\\cap BD$. Suppose that some point $K$ on segment $BC$ satisfies that $P,A,K,D$ are concyclic and $KB\\cdot KC=OP^2/2$. The perpendicular to $BC$ through $Q$ meets line $OP$ at $T$. Find all possible values of (a) $OP$ and (b) $TB+TC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Initially, $n$ red cards each carry $0$, and $n$ blue cards each carry $1$. A move chooses a red card with a smaller number than a blue card and replaces both numbers by their arithmetic mean. Find the smallest positive integer $n$ for which finitely many moves can make the sum of the numbers on the red cards greater than $100$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "There are thirty colors of cards, seventy cards of each color. Choose any seventy cards and arrange them in a stack. A move selects a card $X$ among the bottom twenty whose color is absent from the top fifty, selects a card $Y$ among the top fifty whose color occurs there at least twice, and moves $X$ immediately above $Y$. Repeat until no eligible $X$ remains. Prove that every sequence of moves terminates, and find the maximum possible number of moves over all initial stacks and choices."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all real numbers $\\lambda$ for which there exists $N>0$ such that, for every integer $n\\ge N$ and all nonnegative real numbers $x_1,\\ldots,x_n$ with sum $1$, $$\\left(\\sum_{1\\le i<j\\le n}x_ix_j\\right)^2\\le\\lambda\\sum_{1\\le i<j<k\\le n}x_ix_jx_k+\\frac1n\\sum_{1\\le i<j\\le n}(x_i-x_j)^2.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n\\ge3$ be odd and satisfy $\\gcd(p-1,n)=1$ for every prime divisor $p$ of $n$. Count the triples $(a,b,c)\\in\\{1,2,\\ldots,n\\}^3$ such that $\\gcd(a,b,c,n)=1$ and there exists a permutation $x_1,\\ldots,x_n$ of $1,\\ldots,n$ with $$ax_{k+2}+bx_{k+1}+cx_k\\equiv0\\pmod n$$ for every $1\\le k\\le n$, where indices are cyclic."
+        }
+      ]
     }
   ]
 }
