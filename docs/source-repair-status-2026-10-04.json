@@ -735,6 +735,21 @@
       "uid": "cn.2014.1.1",
       "text": "Year convention: this six-problem paper was held in Nanjing on 21–22 December 2013. The coach-authored source labels it 2013, while the English AoPS archive indexes the same paper as China National Olympiad 2014 (collection 5237). The bank retains the existing 2014 edition convention; this does not assert an examination date in calendar 2014.",
       "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1999.1.2",
+      "text": "Secondary-source restoration: the official 1999 senior-final PDF prints only “David Painequeo” for Part I Problem 2. The statement is transcribed from the linked geometry compilation (1999 Chile L2 P2, linking AoPS c4h2726896p23735333). It has not been confirmed against an intact primary statement. Intersections are read as lines; the secondary text does not specify exclusions for degenerate intersections.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1999.2.4",
+      "text": "Source counting convention: the official paper does not explicitly say whether the empty marking is counted or whether every cell must receive a mark. Its wording is preserved without adding a counting convention.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1999.2.6",
+      "text": "Source interpretation: the two common side lengths need not be corresponding sides under the similarity; requiring two corresponding sides to be equal would force congruence. No extra geometric condition has been added.",
+      "kind": "source_domain_gap"
     }
   ],
   "restored_figures": [
@@ -804,8 +819,16 @@
       "status": "solitaire layout not recovered; AoPS printable source retrieval blocked."
     },
     {
-      "record": "Chile 1991 / 1993 / 1999 / 2013 / 2025",
-      "status": "Not newly imported or certified in this repair. Additional incomplete-paper or figure questions remain."
+      "record": "Chile 1991 / 1993 / 2013 / 2025; primary confirmation of 1999 P2",
+      "status": "1999 now has seven indexed statements: six checked against the official PDF, P2 restored from a clearly labelled secondary compilation. Other incomplete-paper or figure questions remain."
     }
-  ]
+  ],
+  "restored_papers_1999": {
+    "collection": "Chile-final-problems.json",
+    "year": 1999,
+    "records": 7,
+    "official_statement_checks": 6,
+    "secondary_restorations": 1,
+    "primary_source_confirmation_complete": false
+  }
 }
