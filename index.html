@@ -651,13 +651,11 @@ REGION_OF.thst = 'asia';
 REGION_OF.uy = 'americas';
 REGION_OF.cl = 'americas';
 REGION_OF.clf = 'americas';
-REGION_OF.mat = 'africa';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
 
 const COUNTRIES = [
-    { key: 'mat', name: 'Morocco TST', flag: '🇲🇦', file: 'Morocco-tst-problems.json', kind: 'years' },
     { key: 'gr', name: 'Greece',     flag: '🇬🇷', file: 'Greece-tst-problems.json',       kind: 'years' },
     { key: 'ar', name: 'Argentina',  flag: '🇦🇷', file: 'Argentina-level3-problems.json', kind: 'years' },
     { key: 'cn', name: 'China — under review', quarantined: true,      flag: '🇨🇳', file: 'China-olympiad-problems.json',   kind: 'years' },
@@ -1090,7 +1088,7 @@ function headHtml(count) {
     <div class="res-head">
         <h2 class="res-title" id="resTitle">${esc(t)}<span class="res-count">${count === null ? '' : countText(count)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ''}</h2>
         <div class="res-actions">
-            ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy', 'mat'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
+            ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
             ${!state.country ? '<a class="btn btn-sm" href="available-pdfs.html#israel">Available PDFs</a>' : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
             ${wide ? '<button type="button" class="btn btn-sm" data-all-scope>All countries, all years</button>' : ''}
