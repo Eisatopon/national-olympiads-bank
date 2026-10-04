@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-04",
+  "repairs": [
+    {
+      "uid": "vn.2017.1.4",
+      "previous_statement": "Given an integer $n > 1$ and an $n \\times n$ grid colored with three colors (black, white, gray). A coloring is symmetric if each cell on diagonal $AC$ is gray and every pair of cells symmetric about $AC$ are both the same non-gray color. Gray cells are labeled $0$, white cells positive integers, black cells negative integers. A labeling is $k$-balanced ($k \\in \\mathbb{Z}^+$) if: i) symmetric cell pairs have the same label from $[-k,k]$; ii) when a row and column meet at a black cell, the positive integers in that row and column are disjoint; when they meet at a white cell, the negative integers are disjoint.\na) For $n = 5$, find the minimum $k$ admitting a $k$-balanced labeling for the given grid.\nb) For $n = 2017$, find the minimum $k$ such that every symmetric coloring admits a $k$-balanced labeling.",
+      "previous_sha256": "23a284cf2ffc58b5022c117e9f215bdb0d22cbabb438af5357d2d78b1bbc6b85",
+      "new_sha256": "24101cad35a0fe3aa42eceea830e7c8baa79ea8ac8205493e84ba665a84a04eb",
+      "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+      "reason": "Recovered source figure and complete wording"
+    },
+    {
+      "uid": "vn.2017.2.6",
+      "previous_statement": "Prove that:\na) $\\displaystyle\\sum_{k=1}^{1008} k\\binom{k}{2017} \\equiv 0 \\pmod{2017^2}$.\nb) $\\displaystyle\\sum_{k=1}^{504} (-1)^k \\binom{k}{2017} \\equiv 3(2^{2016}-1) \\pmod{2017^2}$.",
+      "previous_sha256": "6ae8520035463aaae02bf00ada4b8cb72a3043d790fb3f3b53325f4f2e3c7e56",
+      "new_sha256": "a8ed742f870d086ec4c68a9a8eb78a2457c835fa450526e9a1ed4c3ee5cffe10",
+      "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+      "reason": "Corrected binomial argument order"
+    },
+    {
+      "uid": "vn.2017.2.7",
+      "previous_statement": "Let $ABC$ be an acute triangle with circumcircle $(O)$. Let $G$ be a point on arc $BC$ not containing $O$ of the circumcircle $(I)$ of $\\triangle OBC$. The circumcircle of $\\triangle ABG$ meets $AC$ at $E$ and the circumcircle of $\\triangle ACG$ meets $AB$ at $F$ ($E, F \\neq A$).\na) Let $K = BE \\cap CF$. Prove that $AK, BC, OG$ are concurrent.\nb) Let $D$ be a point on arc $BOC$ of $(I)$. Lines $GB, CD$ meet at $M$ and lines $GC, BD$ meet at $N$. Suppose $MN$ meets $(O)$ at $P$ and $Q$. Prove that as $G$ moves on arc $BC$ not containing $O$ of $(I)$, the circumcircle $(GPQ)$ always passes through two fixed points.",
+      "previous_sha256": "5419830ddbd3d6f19f2e862f3dc91235cda4d6e78315438bd5f641e823593f2c",
+      "new_sha256": "c087eedbfccb01b219b639197e29ab3c7849f77b6d9847b7037ce12793e31956",
+      "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+      "reason": "Restored fixed-point qualification"
+    },
+    {
+      "uid": "id.2013.1.1",
+      "previous_statement": "A $4 \\times 6$ rectangle with some line segments drawn in it is given, as in the figure. Using only the segments already drawn, find the number of parallelograms in the figure that have no right angle.",
+      "previous_sha256": "e6827d3f651c850ecc78996e055fd762b6f4889915e3de4aea359a5dd616249e",
+      "new_sha256": "4052079d5cf8c81fc637ed6fba78264a6a804ed81919a4af90c033664e3c72b9",
+      "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+      "reason": "Recovered source figure and complete wording"
+    }
+  ]
+}

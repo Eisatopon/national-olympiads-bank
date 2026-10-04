@@ -40,7 +40,7 @@ def render(rows):
     out = ['# Source verification progress', '', f'Inventory: {total} stored records; {checked} source-checked; {total-checked} remaining (including quarantine).', '',
            f'Active bank: {active_total} records; {active_checked} source-checked; {active_total-active_checked} remaining. Whole-bank source verification is **not complete**.', '',
            f'Stored solution records: {sum(r["stored_solution_records"] for r in rows)}. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.', '',
-           'Counts describe stored records, not certified unique mathematical problems. China includes damaged records and remains quarantined. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.', '',
+           'Counts describe stored records, not certified unique mathematical problems. China active data contains only reconstructed 2003–2006 papers; damaged historical data is retained outside the active collections. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.', '',
            '| Collection | Stored records | Source checked | Remaining | State |', '|---|---:|---:|---:|---|']
     out += [f"| {r['file']} | {r['total_records']} | {r['source_checked_records']} | {r['remaining_records']} | {r['status']} |" for r in rows]
     out += ['', '## Evidence and outstanding work', '',

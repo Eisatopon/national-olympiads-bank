@@ -1,0 +1,773 @@
+{
+  "date": "2026-10-04",
+  "scope": "Tracked historical source-fidelity concerns; these are not all confirmed source errors. Existing editorial clarifications are not counted as newly resolved.",
+  "resolved_historical_followups": [
+    "id.2013.1.1",
+    "vn.2017.1.4",
+    "vn.2017.2.6"
+  ],
+  "historical_followups": [
+    {
+      "uid": "id.2011.2.5",
+      "concern": "Check cube-count notation against original source.",
+      "status": "open",
+      "origin_audit": "topic-audit-2026-10-02.json"
+    },
+    {
+      "uid": "vn.1971.0.2",
+      "concern": "Check abbreviated definitions of planes against original source.",
+      "status": "open",
+      "origin_audit": "topic-audit-2026-10-02.json"
+    },
+    {
+      "uid": "fi.2017.0.4",
+      "concern": "The universal first-player win includes m=1, but then the only initial move chooses 1 and loses. Verify whether m>1 was intended.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-3-2026-10-02.json"
+    },
+    {
+      "uid": "eet.2017.2.9",
+      "concern": "Condition (ii) asserts a unique point and permutation for any triangle. For an equilateral input triangle all six permutations describe the same similarity. Check whether uniqueness is intended only for the point A or modulo the symmetries of the input triangle.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-3-2026-10-02.json"
+    },
+    {
+      "uid": "dem.1976.0.6",
+      "concern": "Version B defines m as the normalized unweighted binomial sum, so m=1; the subsequent quadratic objective is minimized at the weighted mean, which is 3/2 for n=3. Check whether a factor k is missing in the definition of m.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2-2026-10-02.json"
+    },
+    {
+      "uid": "dem.1998.1.3",
+      "concern": "The stored problem asks for nonnegative numbers without explicitly requiring integers. Verify whether the intended domain is nonnegative integers; classification follows the stored wording.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2-2026-10-02.json"
+    },
+    {
+      "uid": "dem.2000.2.6",
+      "concern": "The sequence is initially called positive integers, but a_(2^m)=1/m contradicts this for m>1. The final sentence instead calls it a sequence of positive reals. Check the official domain.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2-2026-10-02.json"
+    },
+    {
+      "uid": "hkt.2014.1.6",
+      "concern": "As stored, every positive m admits a positive n giving floor value 2013: choose n=ceil(2013*m*(3m+1)/(2m+1)); the admissible n-interval has length greater than one. Thus the requested sum over all qualifying m is not finite. Check missing bounds or quantifiers.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2-2026-10-02.json"
+    },
+    {
+      "uid": "rot.2025.3.9",
+      "concern": "Part (a) requests n-1 pair-merging steps while maintaining an adequate collection at every stage. A final one-element collection has no pair. Check whether the final stage is excluded or the number of steps was transcribed incorrectly.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2-2026-10-02.json"
+    },
+    {
+      "uid": "ukt.1985.1.2",
+      "concern": "Part (ii) refers to tangency to BC at M, although M was defined as the point diametrically opposite L on the incircle. Check the point label against the official source.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2026-10-02.json"
+    },
+    {
+      "uid": "ukt.2008.6.16",
+      "concern": "The stored correction says the bound k=5 is false, whereas the main statement uses 5n. Reconcile the original statement and correction against the official paper.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2026-10-02.json"
+    },
+    {
+      "uid": "nlt.2023.2.8",
+      "concern": "Check redistribution direction and target configuration against the official source: the stored balancing move and the target of collecting all 3n stones in one box appear inconsistent.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-2026-10-02.json"
+    },
+    {
+      "uid": "ie.2005.0.8",
+      "concern": "The statement quantifies over arbitrary integers with odd y,z,w, allowing undefined powers. For example x=0,y=-1,z=w=1 makes x^y undefined. Check whether positive integer exponents were intended.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "ca.1969.0.1",
+      "concern": "Nonzero weights do not guarantee a nonzero denominator. Taking a_i=b_i=1 and (p_1,p_2,p_3)=(1,-1,0) satisfies the stated assumptions but gives 0/0. Check the missing denominator restriction.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.1979.0.5",
+      "concern": "Part (c) changes from a triangle and its centroid to all convex quadrilaterals without defining the corresponding point or area relation. Check the complete original wording.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.1982.0.4",
+      "concern": "The sliding-tile problem does not specify the shape of the tray or the initial arrangement, and has no linked diagram. Obtain the original layout before deciding the intended reachability statement.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.1984.0.6",
+      "concern": "The solitaire problem refers to a central square and a square marked X, but neither board layout nor a figure URL is stored. Obtain the original diagram.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.1991.0.3",
+      "concern": "The first two recurrence terms are not specified or quantified. The identically zero sequence is polynomial for every k and makes the requested term ratio undefined. Check intended initial conditions and existence quantifiers.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.2002.1.3",
+      "concern": "The grid dimensions need a restriction or exceptional cases. A 1 by 4 board labelled consecutively satisfies the hypothesis but labels k and k+3 are never adjacent. Check whether both dimensions were intended to be at least two.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.2005.2.5",
+      "concern": "The statement allows a 120-degree angle but defines the Fermat point as an interior point with three 120-degree angles. At that boundary the Fermat point is the vertex and some subtriangles degenerate. Check the strict angle condition and any Euler-line degeneracy exceptions.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "br.2016.1.3",
+      "concern": "The displayed count fails for N=k=1: 0 is losing and 1 is winning, so there is one losing integer below 2, while the formula gives two. Check the exponent or the definition of losing states against the official source.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "mx.1988.1.3",
+      "concern": "Two common external tangent lines alone do not form a triangle. Check whether the common tangent at the circles contact point is the intended third side.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-7-2026-10-03.json"
+    },
+    {
+      "uid": "gr.2011.1.2",
+      "concern": "The exact shape of a cross is not defined and no figure is attached. Check original source.",
+      "status": "open",
+      "origin_audit": "topic-audit-greece-2026-10-02.json"
+    },
+    {
+      "uid": "gr.2013.1.4",
+      "concern": "The phrase lines passing through k should be checked; the intersection restriction also needs source clarification.",
+      "status": "open",
+      "origin_audit": "topic-audit-greece-2026-10-02.json"
+    },
+    {
+      "uid": "gr.2013.2.6",
+      "concern": "The grouping of the LCM numerator and denominator is unclear; check source before rewriting.",
+      "status": "open",
+      "origin_audit": "topic-audit-greece-2026-10-02.json"
+    },
+    {
+      "uid": "gr.2016.1.2",
+      "concern": "Part (ii) calls PR intersect MD lines that intersect on c; clarify the intended intersection point from source.",
+      "status": "open",
+      "origin_audit": "topic-audit-greece-2026-10-02.json"
+    },
+    {
+      "uid": "gr.2022.1.2",
+      "concern": "The text says inscribed in triangle Gamma1 and repeats Gamma2 while using Gamma3 later. Check circle names against source.",
+      "status": "open",
+      "origin_audit": "topic-audit-greece-2026-10-02.json"
+    },
+    {
+      "uid": "cyt.2010.2.7",
+      "concern": "The point T is described only as an intersection with the circle, without naming the intersecting line. Verify the missing definition against the official source before editing the statement.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-4-2026-10-02.json"
+    },
+    {
+      "uid": "cyt.2019.3.9",
+      "concern": "The coefficient domain and degree of P are unspecified. With real coefficients and no degree bound, interpolation permits arbitrarily many integer arguments with value 2019 and another with value zero, so there is no largest kappa. Check whether integer coefficients or another restriction were omitted.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-4-2026-10-02.json"
+    },
+    {
+      "uid": "cyt.2021.1.3",
+      "concern": "The stated domain is N_0, but the identity is quantified for all m,n in N_0 and includes f(n-m), undefined when n<m. Check the intended domain or an omitted n>=m restriction.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-4-2026-10-02.json"
+    },
+    {
+      "uid": "frt.2017.4.11",
+      "concern": "The variables are arbitrary real numbers and may all be zero, making the displayed ratios undefined. Check the intended nonzero or positive domain; Croatia HMO 2017 first round problem 1 states the related minimax problem for positive real numbers.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-4-2026-10-02.json"
+    },
+    {
+      "uid": "frt.2020.4.12",
+      "concern": "The function is defined only on positive integers, but a and b are quantified as all integers with a+b>=C. This permits nonpositive arguments of f. Check whether a,b should be positive integers.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-4-2026-10-02.json"
+    },
+    {
+      "uid": "mx.1997.2.6",
+      "concern": "The displayed product of positive reciprocals is strictly less than 1/5 and cannot equal one. Check whether addition signs were lost in the stored equation.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2000.1.3",
+      "concern": "The signed-sum construction does not state whether an element may be used more than once. With repetition allowed, A={1} already generates every positive integer. Check the intended restriction.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2001.2.4",
+      "concern": "Congruence alone does not specify the next term of the sequence or its alternating sum. Check the representative convention and the order of the arguments in f(m,n).",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2007.2.6",
+      "concern": "The hypotheses as stored do not exclude D=B, which satisfies CD=BC but violates BD=AC. Check the position restriction on D and whether another geometric condition is missing.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2015.2.4",
+      "concern": "Erasing all but one entry in each of n cubed triples leaves n cubed entries. For n=4 the count is 64, a square. Check whether the sum of the surviving values, rather than their count, was intended.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2018.1.1",
+      "concern": "The position restriction on X does not clearly exclude the midpoint M, where MX=0 cannot exceed XY. Check the full position conditions and the direction of the inequality.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "mx.2022.0.3",
+      "concern": "No duration bound for the performance is given. Instruments can play separately for arbitrarily long times, so the displayed sonority has no finite maximum. Check the missing time restriction.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1994.0.5",
+      "concern": "Rotation by zero preserves every set satisfying the other conditions but is omitted from the claimed list. Check the nonidentity assumption and the normalization of the rotation angle.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1972.0.2",
+      "concern": "Point G in line FG is never defined. Check the missing construction before interpreting the incidence claim.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1980.1.1",
+      "concern": "For n=1 and alpha=3pi/2, the cosine condition gives the odd integer one, while the sine sum is minus one. Check the angular interval or an omitted absolute value.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1985.1.3",
+      "concern": "Edge lengths alone do not determine the requested section area of a general parallelepiped. Check whether the original solid was explicitly rectangular.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1987.2.5",
+      "concern": "The bounded differentiable function f(x)=sqrt(10-2cos x) satisfies ff prime=sin x and |f|<5 but has no limit at infinity. Check the differential inequality or its right-hand side.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1991.2.5",
+      "concern": "For an equilateral triangle of circumradius one, GD=GE=GF=1, so the displayed middle inequality would assert 3<=sqrt(3). Check the missing scale factor or incorrectly placed inequality terms.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1993.2.4",
+      "concern": "The claimed minimizing condition fails as stored. On the unit sphere take A=(0,0,1) and B,C,D equally spaced on its equator: the expression is -3. If the three edges from A are mutually perpendicular the expression is zero. Check the extremum direction or the expression.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.1995.1.2",
+      "concern": "The recurrence is stated only for n>=2, leaving a_2 and a_3 unspecified despite giving just a_0 and a_1. Check its lower index or missing initial terms.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2005.1.2",
+      "concern": "As written, both circles pass through A,B and are tangent at C, so both contain A,B,C and coincide. A circle through B,C also cannot be tangent to BC at C. Check which fixed point belongs to each circle.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2012.1.4",
+      "concern": "For n=2 and the order boy,boy,girl,girl, the two middle students receive two candies each, giving four, while the stated bound is two. Check the factor in the bound or the counting definition.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2017.1.4",
+      "concern": "Part (a) refers to a given five-by-five colouring, but no pattern or linked figure is stored. Obtain the original diagram.",
+      "status": "resolved",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2017.2.6",
+      "concern": "All displayed binomial coefficients vanish under the standard convention because their upper index is smaller than 2017. In part (b), the right-hand side has remainder 2156173 modulo 2017 squared and is nonzero. Check whether the binomial arguments were reversed.",
+      "status": "resolved",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2018.1.4",
+      "concern": "The last denominator in part (b) repeats x_3 instead of matching the cyclic pattern. Check that denominator and any restrictions excluding zero coordinates.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2019.1.4",
+      "concern": "Six named points are assigned respectively to only five rays. Check the missing ray and its position in the list.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2019.2.7",
+      "concern": "The stored equivalence is equality at corresponding cells, which gives n to the power 25 colourings. The claimed upper bound instead has the form of a rotation/reflection orbit count. Check the omitted equivalence operations.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "vn.2022.1.1",
+      "concern": "At a=0 the displayed recurrence reduces to u_(n+1)=u_n+6 and diverges, contrary to part (a). Check the scope of the square root and the placement of the additive four.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ru.1995.1.3",
+      "concern": "The definition counts lines constructed using compasses alone, and only intersections of lines are permitted as new marked points. Check whether circles or all drawing operations were meant and which intersections may be marked.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1994.0.2",
+      "concern": "Visible mathematical text-extraction corruption: Powers in the quartic and the surrounding text are flattened. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1995.0.2",
+      "concern": "Visible mathematical text-extraction corruption: Reciprocal fractions in the displayed conditions are flattened. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1995.0.3",
+      "concern": "Visible mathematical text-extraction corruption: Angle notation in the geometric condition is missing. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1996.0.5",
+      "concern": "Visible mathematical text-extraction corruption: Floor brackets and the square-root expression are garbled. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1998.0.4",
+      "concern": "Visible mathematical text-extraction corruption: The floor and fraction expressions in the defining function are ambiguous. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.1999.0.1",
+      "concern": "Visible mathematical text-extraction corruption: The prose assigns the penultimate digit twice and does not clearly define the third digit. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2000.0.1",
+      "concern": "Visible mathematical text-extraction corruption: The position written as 102000 and examples of powers have flattened superscripts. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2000.0.5",
+      "concern": "Visible mathematical text-extraction corruption: The initial quantity written as 2110 has a potentially lost exponent. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2003.0.1",
+      "concern": "Visible mathematical text-extraction corruption: The reciprocal and floor equation has lost fraction layout. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2003.0.3",
+      "concern": "Visible mathematical text-extraction corruption: The power sums and product expression have lost fraction layout. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2004.0.2",
+      "concern": "Visible mathematical text-extraction corruption: The system contains flattened powers and malformed brace glyphs. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2004.0.6",
+      "concern": "Visible mathematical text-extraction corruption: The absolute-value and quadratic growth condition is garbled. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2006.0.1",
+      "concern": "Visible mathematical text-extraction corruption: The bound written as 1010 has a potentially lost exponent. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "ar.2010.0.3",
+      "concern": "Visible mathematical text-extraction corruption: The power expression written as 992 has a potentially lost exponent. Compare with the original typeset statement before repairing it.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-8-2026-10-03.json"
+    },
+    {
+      "uid": "az.2020.1.3",
+      "concern": "Check the direction and operands of the floor-divisibility condition against the official source. For a>=2 and sufficiently large n, the nonnegative quantity floor(a^n/b)-1 is smaller than a^n+1, so divisibility would force floor(a^n/b)=1 indefinitely; no b can satisfy this. For a=1 the stated hypothesis also cannot hold.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "sg.2013.0.3",
+      "concern": "The opening quantifier names n, the existence quantifier names n again, and the target number of distinct prime factors is N, which is not defined. Check the intended variable names against the official source.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "id.2008.1.4",
+      "concern": "The remainder index in the displayed alternating sum runs from 0 to 7 although remainders modulo 7 run from 0 to 6. Check the modulus, range and identity against the official source before editing.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "id.2013.1.1",
+      "concern": "The statement requires a particular drawing of interior segments, but no figure URL is stored. Obtain the original diagram before attempting to determine the intended parallelogram count.",
+      "status": "resolved",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "id.2024.1.2",
+      "concern": "The domain of the fatal triple (a,b,c) is unspecified. The intended positive-integer restriction must be checked: with positive reals, a=(-3+sqrt(137))/4, b=2a, c=2a^2 sum to 16 and satisfy ab=c, contradicting part (a).",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "jp.1996.0.1",
+      "concern": "Check the strict angle comparison against the official source. In an equilateral triangular tiling, choose ABC to be one tile: its circumcircle has no other vertex in its interior and theta=60 degrees, but no triangle can have all three angles strictly greater than theta.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-6-2026-10-03.json"
+    },
+    {
+      "uid": "cz.2008.2.6",
+      "concern": "Both displayed median/side ratios have zero denominators when a=b. Check whether a!=b or a scalene-triangle restriction was omitted from the official statement.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    },
+    {
+      "uid": "rs.2018.2.6",
+      "concern": "The forbidden subset condition includes the empty subset B, whose sum is zero and is divisible by every positive modulus. Check an omitted nonempty restriction before editing the stored statement.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    },
+    {
+      "uid": "rs.2023.2.4",
+      "concern": "Clarify the phrase perfect power of q against the official source: if it means a q-th power, n=1 gives 1 and contradicts the claim; a positive power of the prime q is a different condition.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    },
+    {
+      "uid": "rst.2004.1.3",
+      "concern": "The leading coefficient of P is unspecified. For n=1, P(x)=i(x-(i-1))=1+i(x+1) satisfies the root condition but R(x)=1 has no real zero. Check whether monic or a nonzero real leading coefficient was omitted.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    },
+    {
+      "uid": "rst.2022.1.3",
+      "concern": "The stated positive odd range includes n=1, for which the set of allowed k is empty. Check whether n>=3 was intended.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    },
+    {
+      "uid": "es.2007.2.5",
+      "concern": "At n=1 the displayed quotient equals 1, so the strict inequality 1<1 fails. Check whether n>=2 or a non-strict inequality was intended.",
+      "status": "open",
+      "origin_audit": "topic-audit-batch1000-5-2026-10-02.json"
+    }
+  ],
+  "current_source_notes": [
+    {
+      "uid": "ca.1969.0.1",
+      "text": "Editorial clarification: assume every displayed denominator is nonzero. The historical source omits this condition. For example, a1 = a2 = a3 = b1 = b2 = b3 = 1 and (p1, p2, p3) = (1, -1, 0) satisfy its stated assumptions but give 0/0 on the right. With the nonzero-denominator condition, the identity follows by substituting ai = r bi.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2004.1.8",
+      "text": "Source ambiguity: the retrieved English paper prints 2x + 4x + 2547. This is reproduced literally; no missing exponent or correction is inferred.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2004.2.22",
+      "text": "Incomplete source condition: the retrieved English paper prints only “CA + AI + BC”, without a relation. This historical record is incomplete and must not be used as a complete exercise until an independent source restores the missing condition.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2007.1.13",
+      "text": "Source ambiguity: the paper does not state whether the two selected subsets are ordered. The wording is preserved without imposing a convention.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2010.1.1",
+      "text": "Source ambiguity: the paper does not state whether the balls are distinguishable. This is preserved rather than inventing a convention.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2014.2.7",
+      "text": "Source endpoint omission: the paper excludes P = E but does not explicitly exclude endpoints that make the circumcircle APD degenerate. Its wording is preserved.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "th.2016.2.7",
+      "text": "Source omission: the paper does not explicitly specify the coefficient field. The printed statement is preserved; the real-coefficient assumption has not been silently added.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "uy.2016.0.3",
+      "text": "Editorial correction: n ≥ 2. The official paper says only “positive integer”; its printed equivalence fails at n = 1. The source is linked for comparison.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cl.2013.0.1",
+      "text": "Source domain note: the official paper asks for integer solutions but does not specify a convention for 0^0. The printed domain is preserved; no additional convention is assumed.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cl.2023.2.6",
+      "text": "Source domain note: the official paper does not specify the domain of the parameter c. This omission is preserved rather than silently imposing an integer or real domain.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cl.2024.1.2",
+      "text": "Editorial domain clarification: m ≥ 2 and k ≥ 1. The handwritten original gives m, k as natural numbers without excluding m = 1, which would make the divisibility assertion involve a zero divisor.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "cl.2025.2.7",
+      "text": "Editorial domain clarification: the equation is required for x in R excluding 0 and 1, matching the declared domain of f. The official paper instead prints “for every x in R”, where the expressions are undefined at those two points.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2011.10.28",
+      "text": "Editorial clarification: the source gives K_0 = 1 but prints the recurrence for n ≥ 0, which conflicts at zero. The recurrence is stated here for n ≥ 1; its conclusion still includes n = 0.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2011.14.42",
+      "text": "Source ambiguity: A_iA_jA_k is not defined. The source itself asks whether this denotes triangle area. The ratio is retained without inventing that convention.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2012.9.25",
+      "text": "Unresolved source error: the source prints “infinitely many” fixed-degree monic integer polynomials. That wording is reproduced literally, without an unverified correction. The printed assertion is defective; do not use this historical record as a valid exercise until an independent contest source resolves it.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2012.9.26",
+      "text": "Notation correction: the source switches its evaluation variable from t to k within the question. A single positive integer t is used consistently here.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2013.1.2",
+      "text": "Notation correction: condition (ii) quantifies n in the source, although its displayed variable is k. The quantifier here uses k.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2013.3.7",
+      "text": "Source ambiguity: the source footnote explicitly questions whether the conclusion is (i) or (ii), or both. The printed “either … or” is retained.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2013.4.10",
+      "text": "Potential source typo: the middle denominator is printed z(y+z)+x(y+z). This is retained literally without replacing it by a cyclic expression.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2013.10.29",
+      "text": "Potential source typo: the source prints |a_{i+1}−a_1|, not consecutive differences. Its condition is retained literally and has not been mathematically certified.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2013.10.30",
+      "text": "Convention clarification: the source uses N for the iteration parameter. Positive k is used here, since allowing k = 0 would trivialize the stated minimum.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2014.4.13",
+      "text": "Source omission: the source does not specify or quantify the parameter k. This omission remains unresolved; no range or fixed value is inferred.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2014.7.24",
+      "text": "Notation correction: the source calls O the circumcircle while using line OI. O is rendered as the circumcentre here, consistently with the construction.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2015.8.27",
+      "text": "Source convention omission: the infinite expansion is printed without explicitly requiring eventual zero digits or stating the meaning of its sum. The printed formulation is preserved.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2018.1.3",
+      "text": "Source ambiguity: the printed question does not specify the domain of the arithmetic progression or a convention for perfect powers. No additional domain has been invented.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2018.6.17",
+      "text": "Unresolved source error: the printed condition is AX = AU, but point U is never defined. The literal statement is retained. Do not use as a valid exercise until an independent contest source resolves the missing definition.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2018.9.26",
+      "text": "Unresolved source error: players choose only indices 1 through p−1, but the displayed number also contains a₀, whose value or choice is not specified. The literal statement is retained. Do not use as a valid exercise until an independent contest source resolves this omission.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2019.4.10",
+      "text": "Unresolved source error: the source prints starting position 2n and step 2n, while allowing n = 0 although positions are numbered from 1. No missing exponent or indexing convention has been inferred. This record requires an independent contest source before use.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2019.8.23",
+      "text": "Unresolved source error: the source prints 1 ≥ k ≥ n for n ≥ 2, an impossible range. This literal range is retained; do not use as a valid exercise until independently resolved.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2020.8.22",
+      "text": "Unresolved source error: the source introduces u₁ through u₂₀₁₉ but then uses u₁ through u_N for arbitrary N ≥ 2. The literal mismatch is retained. An independent contest source is needed to confirm the intended index range.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "tht.2020.8.23",
+      "text": "Source convention omission: the quantified coefficient choices include the zero polynomial, but the source does not specify whether its roots are excluded. No nonzero-polynomial condition has been added.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.2018.0.6",
+      "text": "Unresolved source ambiguity: each circle has two tangents from C, and the printed statement does not specify which tangent contacts P and Q are intended. The wording is retained literally; no tangent-choice condition or solution diagram has been added. An independent statement source is needed.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1994.2.6",
+      "text": "Unresolved source domain omission: the printed statement says quadrilateral without a convexity condition. No convexity assumption has been silently added; an independent source is needed.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1996.2.5",
+      "text": "Unresolved source counting convention: the statement does not specify whether fillings may repeat within a cake or whether the two cakes are distinguished. The literal wording is retained pending an independent source.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1996.2.7",
+      "text": "Unresolved source error: the printed last denominator is 1995·1996, while earlier terms advance by three. The literal last term is retained; no replacement by 1993·1996 has been made.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1997.1.2",
+      "text": "Unresolved source domain error: m and ℓ are required to be positive, but a=1 and n=11 satisfy the premise and require m=0. The printed statement is retained pending independent verification.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.2001.2.7",
+      "text": "Source capacity omission: the petrol-station assertion does not specify a lower bound on the finite tank capacity. The source wording is retained; no capacity assumption has been added.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.2002.2.7",
+      "text": "Unresolved source error: the printed inequality repeats d indexed by σ(2) as its first two terms, making the strict inequality impossible. The literal repeated index is retained; the probable σ(1) correction requires an independent source.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.2019.0.1",
+      "text": "Source label discrepancy: the official archive filename and edition XXXI identify 2019, but the source header prints 2020. The same four statements are indexed as the 2019 senior final in AoPS collection c3181503, independently reproduced at https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-2019-chile-nmo-nivel-mayor-final-round-solutions/155924939 . Bank year 2019 is based on that corroboration; the downloaded source header is unchanged.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.2024.0.5",
+      "text": "Source domain omission: token numbers are only stated to be at most 10; integrality and positivity are not specified. The literal domain is retained. Do not assume a positive-integer version without further verification.",
+      "kind": "source_domain_gap"
+    },
+    {
+      "uid": "clf.1989.2.6",
+      "text": "Source indexing ambiguity: after relating f(n+1) to f(n), the original says to take f(n) as large as possible. The bank renders this as choosing the largest value at each step, without claiming independent confirmation of the index.",
+      "kind": "source_domain_gap"
+    }
+  ],
+  "restored_figures": [
+    "clf.1989.1.3",
+    "clf.1995.1.2",
+    "clf.1995.2.7",
+    "vn.2017.1.4",
+    "id.2013.1.1"
+  ],
+  "china": {
+    "active_complete_years": [
+      2003,
+      2004,
+      2005,
+      2006
+    ],
+    "active_statements": 24,
+    "damaged_original_path": "docs/quarantine/China-olympiad-problems-pre-rebuild.json",
+    "remaining_historical_years": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ]
+  },
+  "retrieval_blockers": [
+    {
+      "record": "gr.2011.1.2",
+      "status": "cross shape not recovered; the Archimedes paper is a different contest and cannot substitute for the TST."
+    },
+    {
+      "record": "br.1982.0.4",
+      "status": "tray layout not recovered; publisher collection identified but no accessible original diagram established."
+    },
+    {
+      "record": "br.1984.0.6",
+      "status": "solitaire layout not recovered; AoPS printable source retrieval blocked."
+    },
+    {
+      "record": "Chile 1991 / 1993 / 1999 / 2013 / 2025",
+      "status": "Not newly imported or certified in this repair. Additional incomplete-paper or figure questions remain."
+    }
+  ]
+}

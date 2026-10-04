@@ -1722,7 +1722,7 @@
         {
           "day": 1,
           "number": 4,
-          "problem": "Given an integer $n > 1$ and an $n \\times n$ grid colored with three colors (black, white, gray). A coloring is symmetric if each cell on diagonal $AC$ is gray and every pair of cells symmetric about $AC$ are both the same non-gray color. Gray cells are labeled $0$, white cells positive integers, black cells negative integers. A labeling is $k$-balanced ($k \\in \\mathbb{Z}^+$) if: i) symmetric cell pairs have the same label from $[-k,k]$; ii) when a row and column meet at a black cell, the positive integers in that row and column are disjoint; when they meet at a white cell, the negative integers are disjoint.\na) For $n = 5$, find the minimum $k$ admitting a $k$-balanced labeling for the given grid.\nb) For $n = 2017$, find the minimum $k$ such that every symmetric coloring admits a $k$-balanced labeling."
+          "problem": "Let $n>1$ be an integer. An $n\\times n$ square grid $ABCD$ is coloured black, white and grey. A colouring is called nice if the cells on diagonal $AC$ are grey and each pair of cells symmetric about $AC$ have the same colour, either black or white. Fill grey cells with $0$, black cells with negative integers and white cells with positive integers. For a positive integer $k$, a filling is $k$-balanced if all entries belong to $[-k,k]$ and the following holds: if a row and a column intersect at a black cell, their sets of positive entries are disjoint; if they intersect at a white cell, their sets of negative entries are disjoint. (a) For $n=5$, find the least $k$ admitting a $k$-balanced filling of the grid shown. (b) For $n=2017$, find the least $k$ such that every nice colouring admits a $k$-balanced filling.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/vn_2017_p4_grid.png"
         },
         {
           "day": 2,
@@ -1732,12 +1732,12 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Prove that:\na) $\\displaystyle\\sum_{k=1}^{1008} k\\binom{k}{2017} \\equiv 0 \\pmod{2017^2}$.\nb) $\\displaystyle\\sum_{k=1}^{504} (-1)^k \\binom{k}{2017} \\equiv 3(2^{2016}-1) \\pmod{2017^2}$."
+          "problem": "Prove that:\na) $\\displaystyle\\sum_{k=1}^{1008} k\\binom{2017}{k} \\equiv 0 \\pmod{2017^2}$.\nb) $\\displaystyle\\sum_{k=1}^{504} (-1)^k \\binom{2017}{k} \\equiv 3(2^{2016}-1) \\pmod{2017^2}$."
         },
         {
           "day": 2,
           "number": 7,
-          "problem": "Let $ABC$ be an acute triangle with circumcircle $(O)$. Let $G$ be a point on arc $BC$ not containing $O$ of the circumcircle $(I)$ of $\\triangle OBC$. The circumcircle of $\\triangle ABG$ meets $AC$ at $E$ and the circumcircle of $\\triangle ACG$ meets $AB$ at $F$ ($E, F \\neq A$).\na) Let $K = BE \\cap CF$. Prove that $AK, BC, OG$ are concurrent.\nb) Let $D$ be a point on arc $BOC$ of $(I)$. Lines $GB, CD$ meet at $M$ and lines $GC, BD$ meet at $N$. Suppose $MN$ meets $(O)$ at $P$ and $Q$. Prove that as $G$ moves on arc $BC$ not containing $O$ of $(I)$, the circumcircle $(GPQ)$ always passes through two fixed points."
+          "problem": "Let $ABC$ be an acute triangle with circumcircle $(O)$. Let $G$ be a point on arc $BC$ not containing $O$ of the circumcircle $(I)$ of $\\triangle OBC$. The circumcircle of $\\triangle ABG$ meets $AC$ at $E$ and the circumcircle of $\\triangle ACG$ meets $AB$ at $F$ ($E, F \\neq A$).\na) Let $K = BE \\cap CF$. Prove that $AK, BC, OG$ are concurrent.\nb) Let $D$ be a fixed point on arc $BOC$ of $(I)$. Lines $GB, CD$ meet at $M$ and lines $GC, BD$ meet at $N$. Suppose $MN$ meets $(O)$ at $P$ and $Q$. Prove that as $G$ moves on arc $BC$ not containing $O$ of $(I)$, the circumcircle $(GPQ)$ always passes through two fixed points."
         }
       ]
     },

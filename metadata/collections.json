@@ -1905,11 +1905,344 @@
       }
     },
     "China-olympiad-problems.json": {
-      "verification_status": "quarantined",
-      "coverage": "damaged_archive",
+      "verification_status": "not_verified_against_source",
+      "coverage": "partial",
       "competition": "China National Olympiad (CMO)",
-      "source_links": [],
-      "notes": "Corrupted statements and duplicate identifiers; excluded until rebuilt."
+      "source_links": [
+        {
+          "url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "label": "Chinese National Coaches Team: Mathematical Olympiad in China, 2003–2006 (includes solutions)",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n6.pdf",
+          "label": "Canadian Mathematical Society: independent 2005 Problem 2 corroboration",
+          "verification": "unverified"
+        }
+      ],
+      "notes": "Rebuilt active archive; damaged original retained separately for further reconstruction.",
+      "coverage_notes": "Four consecutive complete CMO papers, 2003–2006, six problems each. These 24 statements were rebuilt and compared visually with the coach-authored source. Historical 1987–2002 and 2007–2016 records remain quarantined in docs/quarantine and are not loaded. No claim of full historical coverage.",
+      "statement_checks": {
+        "cn.2003.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $I$ and $H$ be the incentre and orthocentre of an acute triangle $ABC$, and let $B_1$ and $C_1$ be the midpoints of $AC$ and $AB$, respectively. Ray $B_1I$ intersects $AB$ at $B_2\\ne B$, and ray $C_1I$ intersects the extension of $AC$ at $C_2\\ne C$. Lines $B_2C_2$ and $BC$ meet at $K$. Let $A_1$ be the circumcentre of triangle $BHC$. Prove that $A,I,A_1$ are collinear if and only if triangles $BKB_2$ and $CKC_2$ have equal areas.",
+          "statement_sha256": "cc3bd890beff620d450031617b207d59796966fc30fc45ff27d2deeeb7bff138",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 97,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2003.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Find the maximum cardinality of a set $S$ of positive integers not exceeding $100$ with the following properties. For any two distinct elements $a,b\\in S$, there is $c\\in S$ such that $\\gcd(a,c)=\\gcd(b,c)=1$, and there is $d\\in S\\setminus\\{a,b\\}$ such that $\\gcd(a,d)>1$ and $\\gcd(b,d)>1$.",
+          "statement_sha256": "6358bbda184133f3e137632d11bc415fbaf245f61906196d952bb1fb4e25043d",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 98,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2003.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Given a positive integer $n$, find the least positive real number $\\lambda$ such that $$\\sum_{i=1}^{n}\\cos\\theta_i\\le\\lambda$$ whenever $\\theta_i\\in(0,\\pi/2)$ for $1\\le i\\le n$ and $$\\prod_{i=1}^{n}\\tan\\theta_i=2^{n/2}.$$",
+          "statement_sha256": "ba1ecf89fd9cd49391899c39882a8d3cbeeae42737dc7f57ccfbd19e1550175f",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 101,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2003.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Find all triples of positive integers $(a,m,n)$ with $a\\ge2$ and $m\\ge2$ such that $$a^m+1\\mid a^n+203.$$",
+          "statement_sha256": "b8d22241baa8fd2c32bf64d0b839e1a5866c2efa248fdb72c4a3af19daba3d95",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 104,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2003.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Ten applicants with distinct abilities, ranked from best ($1$) to worst ($10$), are interviewed in a uniformly random order. The first three applicants are rejected. From the fourth onwards, the first applicant better than every previously interviewed applicant is hired and interviewing stops. If none of the first nine is hired, the tenth is hired. Let $P_k$ be the probability that the applicant ranked $k$ is hired. Prove that (a) $P_1>P_2>\\cdots>P_8=P_9=P_{10}$; (b) $P_1+P_2+P_3>0.7$; (c) $P_8+P_9+P_{10}\\le0.1$.",
+          "statement_sha256": "25069697dd7c2fd7e853d7891bb42f5353105ddfe1990b510477b535761287cd",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 106,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2003.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $a,b,c,d$ be positive real numbers satisfying $ab+cd=1$, and let $x_i,y_i$ be real numbers with $x_i^2+y_i^2=1$ for $i=1,2,3,4$. Prove that $$(ay_1+by_2+cy_3+dy_4)^2+(ax_4+bx_3+cx_2+dx_1)^2\\le2\\left(\\frac{a^2+b^2}{ab}+\\frac{c^2+d^2}{cd}\\right).$$",
+          "statement_sha256": "48cb6162426de5f878ef84f7a0b04d473fb103811d913fe47ee5c6bb41fc7a16",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 109,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $EFGH$, $ABCD$ and $E_1F_1G_1H_1$ be convex quadrilaterals. Points $E,F,G,H$ lie on $AB,BC,CD,DA$, respectively, and $$\\frac{AE}{EB}\\frac{BF}{FC}\\frac{CG}{GD}\\frac{DH}{HA}=1.$$ Points $A,B,C,D$ lie on $H_1E_1,E_1F_1,F_1G_1,G_1H_1$, respectively, and $E_1F_1\\parallel EF$, $F_1G_1\\parallel FG$, $G_1H_1\\parallel GH$, $H_1E_1\\parallel HE$. If $E_1A/AH_1=\\lambda$, express $F_1C/CG_1$ in terms of $\\lambda$.",
+          "statement_sha256": "0d076c147481350323d90416ed4beb1f841950e8e3d4b2b9cb7f25216aa0e5fe",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 112,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $c$ be a positive integer. Define $x_1=c$ and, for $n\\ge2$, $$x_n=x_{n-1}+\\left\\lfloor\\frac{2x_{n-1}-(n+2)}{n}\\right\\rfloor+1.$$ Find an expression for $x_n$ in terms of $n$ and $c$.",
+          "statement_sha256": "e5711cb4a5f8304b5d25bd807c123d6d724c552e3cf1019084f5e0271cb1252c",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 113,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "A set $M$ of $n$ points in the plane contains the vertices of a convex heptagon. Whenever five points of $M$ are the vertices of a convex pentagon, another point of $M$ lies in its interior. Find the minimum possible value of $n$.",
+          "statement_sha256": "b755e6a8063289907a7b238c090a02c0ab150d021fa678a46b1fd04cd886e6e6",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 116,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "For a real number $a$ and a positive integer $n$, prove that there is exactly one sequence of real numbers $x_0,x_1,\\ldots,x_n,x_{n+1}$ satisfying $$x_0=x_{n+1}=0,\\qquad\\frac12(x_{i+1}+x_{i-1})=x_i+x_i^3-a^3\\quad(1\\le i\\le n).$$ Prove also that $|x_i|\\le|a|$ for $0\\le i\\le n+1$.",
+          "statement_sha256": "2e1588c9ee3b0524c5af47ec80aacaf82e9194984c7dc41c52721c182782a8e4",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 117,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $n\\ge2$ and let $a_1<a_2<\\cdots<a_n$ be positive integers satisfying $\\sum_{i=1}^{n}1/a_i\\le1$. Prove that, for every real $x$, $$\\left(\\sum_{i=1}^{n}\\frac1{a_i^2+x^2}\\right)^2\\le\\frac1{2\\bigl(a_1(a_1-1)+x^2\\bigr)}.$$",
+          "statement_sha256": "86561a742747a2d3409fe7c7f88678495f4c85fc367df311ed927d8e67069434",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 119,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2004.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Prove that every positive integer $n$, with finitely many exceptions, can be written as $$n=a_1+a_2+\\cdots+a_{2004},$$ where $1\\le a_1<a_2<\\cdots<a_{2004}$ are integers and $a_i\\mid a_{i+1}$ for $1\\le i\\le2003$.",
+          "statement_sha256": "aa00f5b628ebf072b87db498e43a60da7add69bd746dbbe50d8a7a18dc816141",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 120,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2005.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Suppose $\\theta_i \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ for $i = 1, 2, 3, 4$. Prove that there exists $x \\in \\mathbb{R}$ satisfying both inequalities $$\\cos^2\\theta_1\\cos^2\\theta_2 - (\\sin\\theta_1\\sin\\theta_2 - x)^2 \\ge 0, \\qquad \\cos^2\\theta_3\\cos^2\\theta_4 - (\\sin\\theta_3\\sin\\theta_4 - x)^2 \\ge 0$$ if and only if $$\\sum_{i=1}^{4}\\sin^2\\theta_i \\le 2\\left(1 + \\prod_{i=1}^{4}\\sin\\theta_i + \\prod_{i=1}^{4}\\cos\\theta_i\\right).$$",
+          "statement_sha256": "d93484d6f8fc1cdca12c53fb0082a9e32335e1c90873d5c878808efba72e4fdf",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 122,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2005.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "A circle meets the three sides $BC$, $CA$, $AB$ of a triangle $ABC$ at points $D_1, D_2$; $E_1, E_2$; $F_1, F_2$, respectively, in the order $D_1,D_2$ along $BC$, $E_1,E_2$ along $CA$, and $F_1,F_2$ along $AB$. Line segments $D_1E_1$ and $D_2F_2$ intersect at $L$, line segments $E_1F_1$ and $E_2D_2$ intersect at $M$, and line segments $F_1D_1$ and $F_2E_2$ intersect at $N$. Prove that the lines $AL$, $BM$, $CN$ are concurrent.",
+          "statement_sha256": "5041492e4c7b36f7cbcdee77c97b24f2f608d4fdcb5f9eb1694685bb4b8a28f2",
+          "source_url": "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n6.pdf",
+          "source_document_sha256": "1aeadccad8779ac1b4f081f73789ea294f9699fa290aaeb9899fb48d4270bcf9",
+          "source_page": 24,
+          "source_problem_number": 14,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Compared with CMS Crux Mathematicorum 41(6), printed page 254, Problem 14, and the coach-authored book. CMS independently corroborates D2F2 at L, resolving the book typo D2E2. The bank retains the book point order and finite-plane conclusion.",
+          "source_contains_solutions": true
+        },
+        "cn.2005.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "As shown in the figure, a pond is divided into $2n$ parts ($n \\ge 5$). Two parts are called neighbors if they have a common side or arc, so every part has exactly three neighbors. There are $4n + 1$ frogs in the pond. Whenever a part contains three or more frogs, three of the frogs in that part jump to its three neighbors, one to each. Prove that after some time the frogs will be distributed uniformly, that is, for every part, either there are frogs in that part or there are frogs in each of its neighbors.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/china_2005_p3_fig.png",
+          "statement_sha256": "aaa31eb2154d54e72c25f8d1f1ece41c57c715148601df950a10c714c3285173",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 125,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true,
+          "figure_checks": [
+            {
+              "path": "images/china_2005_p3_fig.png",
+              "sha256": "1b5b7865ec73e497601113d9cac81103d4b3e6928775f48cdfdc49e41d8dd98f"
+            }
+          ]
+        },
+        "cn.2005.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "The sequence $\\{a_n\\}$ is defined by $a_1 = \\dfrac{21}{16}$ and, for $n \\ge 2$, $$2a_n - 3a_{n-1} = \\frac{3}{2^{n+1}}.$$ Let $m \\ge 2$ be an integer. Prove that for $n \\le m$, $$\\left(a_n + \\frac{3}{2^{n+3}}\\right)^{\\frac{1}{m}}\\left(m - \\left(\\frac{2}{3}\\right)^{\\frac{n(m-1)}{m}}\\right) < \\frac{m^2 - 1}{m - n + 1}.$$",
+          "statement_sha256": "fa669372b5c071aa257039a70035a17e85ddeb8c1fe81583bc6e4b7d79ca06d8",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 127,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2005.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "There are $5$ points in a rectangle of area $1$ (boundary included), no three of which are collinear. Find the minimum number of triangles with vertices among these five points whose area is not greater than $\\frac{1}{4}$.",
+          "statement_sha256": "3a147741581b62e10016d67dcdc8c25afd0bdf5736b30cc54f456c83b75ff072",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 129,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2005.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Find all nonnegative integer solutions $(x, y, z, w)$ of the equation $$2^x \\cdot 3^y - 5^z \\cdot 7^w = 1.$$",
+          "statement_sha256": "44879375e4fcf6e51aafda0b39ae6edec7a3193e2ebd7d7be3042746960658f9",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 133,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $a_1,\\ldots,a_n$ be real numbers satisfying $a_1+\\cdots+a_n=0$. Prove that $$\\max_{1\\le i\\le n}a_i^2\\le\\frac n3\\sum_{i=1}^{n-1}(a_i-a_{i+1})^2.$$",
+          "statement_sha256": "ea3f734715fec96c2d343c285db4e74f91e295da1d3e9ee243a7d66ccb2be68f",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 135,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Positive integers $a_1,a_2,\\ldots,a_{2006}$ satisfy the condition that the $2005$ ratios $a_1/a_2,a_2/a_3,\\ldots,a_{2005}/a_{2006}$ are pairwise distinct. Find the minimum possible number of distinct values among $a_1,\\ldots,a_{2006}$.",
+          "statement_sha256": "4fb397bf7a7ef3834ed504a69a815f4453c89868625200c78815b211d8480dad",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 137,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.1.3": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Positive integers $m,n,k$ satisfy $mn=k^2+k+3$. Prove that at least one of the equations $$x^2+11y^2=4m,\\qquad x^2+11y^2=4n$$ has an integer solution $(x,y)$ with both $x$ and $y$ odd.",
+          "statement_sha256": "6c9474ca9f9a2d50e23a6f4e381bb844cb0f557f1ad5b6d7999e0cb5751cf6a4",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 137,
+          "source_problem_number": 3,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $ABC$ be a right triangle with $\\angle ACB=90^\\circ$. Its incircle touches $BC,CA,AB$ at $D,E,F$, respectively. Line $AD$ intersects the incircle again at $P$. If $\\angle BPC=90^\\circ$, prove that $AE+AP=PD$.",
+          "statement_sha256": "33c91f3a5b26d55bb4ffd8449dc2ce17c9fa4ec5a5e9d94dda48b1da5b94b66a",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 141,
+          "source_problem_number": 4,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Define $a_1=\\frac12$ and $$a_{k+1}=-a_k+\\frac1{2-a_k}\\qquad(k\\ge1).$$ Prove that, for every positive integer $n$, $$\\left(\\frac{n}{2(a_1+\\cdots+a_n)}-1\\right)^n\\le\\left(\\frac{a_1+\\cdots+a_n}{n}\\right)^n\\prod_{i=1}^{n}\\left(\\frac1{a_i}-1\\right).$$",
+          "statement_sha256": "4abd1a46024eea1134e0bbeb6c7f7cec84032df795bb515eea825c68652e3a90",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 143,
+          "source_problem_number": 5,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        },
+        "cn.2006.2.6": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $X$ be a set of $56$ elements. Find the least positive integer $n$ with the following property: for any $15$ subsets of $X$, if the union of every seven of these subsets contains at least $n$ elements, then three of the $15$ subsets have nonempty intersection.",
+          "statement_sha256": "cdf4c089d6874a457304dda27004f6a20d85e5ccf75252093b5e10c22602be9b",
+          "source_url": "https://mathematicalolympiads.wordpress.com/wp-content/uploads/2012/08/mathematical_olympiad_in_china-problems_and_solutions.pdf",
+          "source_document_sha256": "37f91e2d1294bc6faa6a177b4cc2558c0a78284e92bb30913c51de358594933d",
+          "source_page": 145,
+          "source_problem_number": 6,
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete statement, formulas, domains and original numbering compared visually with the coach-authored book. Solution figures excluded; the frog-grid statement figure retained. This is source fidelity review, not independent solution certification.",
+          "source_contains_solutions": true
+        }
+      },
+      "statement_notes": {}
     },
     "Croatia-drz-problems.json": {
       "verification_status": "not_verified_against_source",
@@ -2843,7 +3176,126 @@
       "verification_status": "not_verified_against_source",
       "coverage": "not_assessed",
       "competition": "Indonesia National Science Olympiad (OSN), Mathematics, Senior High School",
-      "source_links": []
+      "source_links": [
+        {
+          "url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "label": "2013 complete source paper (independent reproduction)",
+          "verification": "unverified"
+        }
+      ],
+      "statement_checks": {
+        "id.2013.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "A $4 \\times 6$ rectangle with some line segments drawn in it is given, as in the figure. Using only the segments already drawn, find the number of parallelograms in the figure that have no right angle.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/id_2013_p1_grid.png",
+          "statement_sha256": "4052079d5cf8c81fc637ed6fba78264a6a804ed81919a4af90c033664e3c72b9",
+          "figure_checks": [
+            {
+              "path": "images/id_2013_p1_grid.png",
+              "sha256": "192ff95f52c329ff6fd7c24593d653334771407446c381559fd9e872bb9e2643"
+            }
+          ]
+        },
+        "id.2013.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "Given an acute triangle $ABC$ with circumcircle $\\omega$, the bisector of $\\angle BAC$ meets $\\omega$ again at $M$. Let $P$ be a point on line $AM$ inside triangle $ABC$. The lines through $P$ parallel to $AB$ and to $AC$ meet side $BC$ at $E$ and $F$, respectively. Lines $ME$ and $MF$ meet $\\omega$ again at $K$ and $L$, respectively. Prove that the lines $AM$, $BL$, $CK$ are concurrent.",
+          "statement_sha256": "3d8e791b25c6514fd2f0701c896bc01685db5e1d29a59bdea578aaebc0471e26"
+        },
+        "id.2013.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "Find all positive real numbers $M$ such that for any positive real numbers $a$, $b$, $c$, at least one of the three numbers $$a + \\frac{M}{ab}, \\qquad b + \\frac{M}{bc}, \\qquad c + \\frac{M}{ca}$$ is greater than or equal to $1 + M$.",
+          "statement_sha256": "ca79f1eeb513f44fe70bbbfe1e0cf48d860d57771b2e8844bc1cb09526b19bfd"
+        },
+        "id.2013.1.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "Let $p > 3$ be a prime and $$S = \\sum_{2 \\le i < j < k \\le p-1} ijk.$$ Prove that $S + 1$ is divisible by $p$.",
+          "statement_sha256": "11281b1234a85138b30e14c2b65445f5b9039450a714b1a29d2c574b0308f87e"
+        },
+        "id.2013.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 2,
+          "source_problem_number": 5,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "Let $P(x)$ be any quadratic polynomial with positive leading coefficient and negative discriminant. Prove that $P(x)$ can be written as a sum of three quadratic polynomials $$P(x) = P_1(x) + P_2(x) + P_3(x),$$ where $P_1(x)$, $P_2(x)$, $P_3(x)$ have positive leading coefficients and zero discriminants, and their (double real) roots are distinct.",
+          "statement_sha256": "4b15f16748e0f0b7b0048f29518243d6c2830b26592072013ab6b932ce1e418c"
+        },
+        "id.2013.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 2,
+          "source_problem_number": 6,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "A positive integer $n$ is called strong if there is a positive integer $x$ such that $n^{nx} + 1$ is divisible by $2^n$.\n\n(a) Prove that $2013$ is strong.\n\n(b) If $m$ is strong, find the smallest positive integer $y$ such that $y^{my} + 1$ is divisible by $2^m$.",
+          "statement_sha256": "d70e065c9651099fca4d7ef47bb14dab1a13d0ac048c6946836aa069a009a974"
+        },
+        "id.2013.2.7": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 2,
+          "source_problem_number": 7,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "$ABCD$ is a parallelogram. Squares $ABC_1D_1$, $BCD_2A_2$, $CDA_3B_3$, $DAB_4C_4$ are constructed externally on its sides. On the outer sides $B_4D_1$, $C_1A_2$, $D_2B_3$, $A_3C_4$ of the triangles $AB_4D_1$, $BC_1A_2$, $CD_2B_3$, $DA_3C_4$, further squares are constructed externally, with centers $O_A$, $O_B$, $O_C$, $O_D$, respectively. Prove that $$AO_A = BO_B = CO_C = DO_D.$$",
+          "statement_sha256": "568ebd0b24aeb2daf274bb722eb7c71dbdaf0b2799be2448e4416d71550fb95b"
+        },
+        "id.2013.2.8": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation and original diagram compared visually with the OSN 2013 Indonesian-language paper reproduced by Ricky Theising. This is an independently hosted reproduction, not a claim of official-host provenance.",
+          "source_url": "https://rickytheising.wordpress.com/wp-content/uploads/2023/06/osn_2013.pdf",
+          "source_page": 2,
+          "source_problem_number": 8,
+          "source_document_sha256": "0467b620874f21c2021a87ac2b4d2d594ef22810331dff3200937671addb871d",
+          "source_contains_solutions": false,
+          "reviewed_statement": "Let $A$ be a finite set of positive integers, and consider its $3$-element subsets. The set $A$ is called balanced if the number of $3$-element subsets of $A$ whose sum is divisible by $3$ equals the number of $3$-element subsets of $A$ whose sum is not divisible by $3$.\n\n(a) Give an example of a balanced set with $9$ elements.\n\n(b) Prove that there is no balanced set with $2013$ elements.",
+          "statement_sha256": "e9e7d6a564cb02f16bb71bf996d128936553ee4502eb47bc5c26e3d4ab7c239f"
+        }
+      },
+      "statement_notes": {}
     },
     "Ireland-irmo-problems.json": {
       "verification_status": "not_verified_against_source",
@@ -5662,7 +6114,113 @@
       "verification_status": "not_verified_against_source",
       "coverage": "not_assessed",
       "competition": "Vietnam National Mathematical Olympiad (VMO)",
-      "source_links": []
+      "source_links": [
+        {
+          "url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "label": "2017 complete source paper and solutions",
+          "verification": "unverified"
+        }
+      ],
+      "statement_checks": {
+        "vn.2017.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 8,
+          "source_problem_number": 1,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Given $a \\in \\mathbb{R}$ and a sequence $(u_n)$ defined by $u_1 = a$ and $u_{n+1} = \\tfrac{1}{2} + \\sqrt{\\dfrac{2n+3}{n+1}\\,u_n + \\tfrac{1}{4}}$ for all $n \\in \\mathbb{N}^*$.\na) Prove that $(u_n)$ is convergent when $a = 5$ and find its limit.\nb) Find all $a$ for which the sequence exists and is convergent.",
+          "statement_sha256": "9e33bedca3eec89765780f1d8c2e8d86d945d31ac62ec482a639bdaf54b3c8d9"
+        },
+        "vn.2017.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 8,
+          "source_problem_number": 2,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Does there exist a polynomial $P(x)$ with integer coefficients satisfying\n$$\\begin{cases} P(1 + \\sqrt[3]{2}) = 1 + \\sqrt[3]{2} \\\\ P(1 + \\sqrt{5}) = 2 + 3\\sqrt{5} \\end{cases}?$$",
+          "statement_sha256": "e440eaeb0b30b7d8c30c5404e6db3fefab03e15e62b7b8b93d28063a99e6d093"
+        },
+        "vn.2017.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 8,
+          "source_problem_number": 3,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Let $ABC$ be an acute non-isosceles triangle with circumcircle $(O)$, orthocenter $H$, and $E, F$ the feet of the altitudes from $B, C$. Line $AH$ meets $(O)$ again at $D$.\na) Let $I$ be the midpoint of $AH$. Line $EI$ meets $BD$ at $M$ and line $FI$ meets $CD$ at $N$. Prove that $MN \\perp OH$.\nb) Lines $DE, DF$ meet $(O)$ again at $P, Q$. Circle $(AEF)$ meets $(O)$ and line $AO$ again at $R, S$ ($R \\neq A$, $S \\neq A$). Prove that $BP, CQ, RS$ are concurrent.",
+          "statement_sha256": "fa7e51c1fcca0e5171d68865f8b3a19d24fd02d6bc350da7c4ccd80976d679f9"
+        },
+        "vn.2017.1.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 9,
+          "source_problem_number": 4,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Let $n>1$ be an integer. An $n\\times n$ square grid $ABCD$ is coloured black, white and grey. A colouring is called nice if the cells on diagonal $AC$ are grey and each pair of cells symmetric about $AC$ have the same colour, either black or white. Fill grey cells with $0$, black cells with negative integers and white cells with positive integers. For a positive integer $k$, a filling is $k$-balanced if all entries belong to $[-k,k]$ and the following holds: if a row and a column intersect at a black cell, their sets of positive entries are disjoint; if they intersect at a white cell, their sets of negative entries are disjoint. (a) For $n=5$, find the least $k$ admitting a $k$-balanced filling of the grid shown. (b) For $n=2017$, find the least $k$ such that every nice colouring admits a $k$-balanced filling.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/vn_2017_p4_grid.png",
+          "statement_sha256": "24101cad35a0fe3aa42eceea830e7c8baa79ea8ac8205493e84ba665a84a04eb",
+          "figure_checks": [
+            {
+              "path": "images/vn_2017_p4_grid.png",
+              "sha256": "a35ed4bbcdefd28bdfcdf408d6d2850d4039e140baf7580f69a67d10e0e350c4"
+            }
+          ]
+        },
+        "vn.2017.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 9,
+          "source_problem_number": 5,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying\n$$f(xf(y) - f(x)) = 2f(x) + xy$$\nfor all $x, y \\in \\mathbb{R}$.",
+          "statement_sha256": "70d3125a29770e3bcf978aec60cf038c5b9e1470dc76eff18d031f31ae5124de"
+        },
+        "vn.2017.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 10,
+          "source_problem_number": 6,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Prove that:\na) $\\displaystyle\\sum_{k=1}^{1008} k\\binom{2017}{k} \\equiv 0 \\pmod{2017^2}$.\nb) $\\displaystyle\\sum_{k=1}^{504} (-1)^k \\binom{2017}{k} \\equiv 3(2^{2016}-1) \\pmod{2017^2}$.",
+          "statement_sha256": "a8ed742f870d086ec4c68a9a8eb78a2457c835fa450526e9a1ed4c3ee5cffe10"
+        },
+        "vn.2017.2.7": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full statement and formulas compared visually with the Ministry-authored 2017 competition booklet, including the original 5×5 pattern. The extra symmetric-label condition from the previous transcription is removed because it is absent in this source.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1K8YEsw3hTOnTboZKnK8zuiU9it4OaRF5",
+          "source_page": 10,
+          "source_problem_number": 7,
+          "source_document_sha256": "35d10209da8bbda9aad4b543d0398746b8eafe8f471bd541799da1bbbe07050e",
+          "source_contains_solutions": true,
+          "reviewed_statement": "Let $ABC$ be an acute triangle with circumcircle $(O)$. Let $G$ be a point on arc $BC$ not containing $O$ of the circumcircle $(I)$ of $\\triangle OBC$. The circumcircle of $\\triangle ABG$ meets $AC$ at $E$ and the circumcircle of $\\triangle ACG$ meets $AB$ at $F$ ($E, F \\neq A$).\na) Let $K = BE \\cap CF$. Prove that $AK, BC, OG$ are concurrent.\nb) Let $D$ be a fixed point on arc $BOC$ of $(I)$. Lines $GB, CD$ meet at $M$ and lines $GC, BD$ meet at $N$. Suppose $MN$ meets $(O)$ at $P$ and $Q$. Prove that as $G$ moves on arc $BC$ not containing $O$ of $(I)$, the circumcircle $(GPQ)$ always passes through two fixed points.",
+          "statement_sha256": "c087eedbfccb01b219b639197e29ab3c7849f77b6d9847b7037ce12793e31956"
+        }
+      },
+      "statement_notes": {}
     },
     "Sweden-smt-problems.json": {
       "verification_status": "not_verified_against_source",
@@ -23250,7 +23808,7 @@
       "competition": "Chile National Mathematical Olympiad — Senior Final (Nivel Mayor)",
       "verification_status": "not_verified_against_source",
       "coverage": "partial",
-      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations and original statement diagrams. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness.",
+      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented.",
       "source_links": [
         {
           "url": "https://www.olimpiadadematematica.cl/index.php/entrenamiento/1-ejercicio-01",
@@ -25727,6 +26285,240 @@
           "translation_language": "en",
           "reviewed_statement": "The integer consisting of a $1$ followed by $k-1$ digits equal to $3$ has $k>2$ digits and is assumed prime. Prove that $k(k+2)$ is divisible by $24$. For example, the number is prime when $k=16$.",
           "statement_sha256": "24acac432e126a1acc1f385664a7849d5f45c22196a906cb281cd952d951cee5"
+        },
+        "clf.1989.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Writing $1989$ in base $b$ gives a three-digit number $xyz$, so $$1989=xb^2+yb+z,$$ where $b$ is a positive integer, $0<x\\le b-1$ and $0\\le y,z\\le b-1$. The sum of its digits is the same in base ten and in base $b$: $x+y+z=1+9+8+9$. Find $x,y,z,b$.",
+          "statement_sha256": "ce58a0224966973ade41a665a50f646bf2c33d97862fed6f8a60e85a459d6d21"
+        },
+        "clf.1989.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "A rectangle with positive integer side lengths $m,n$ is divided into $mn$ unit squares. Find the number of these squares traversed by a diagonal of the rectangle, excluding squares touched only at a vertex.",
+          "statement_sha256": "0ab3be3ea0914ac812b8ec7c32b2062b1cf4992bff11be52d691219c80c439d7"
+        },
+        "clf.1989.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Semicircles are drawn on the sides of a right triangle with legs $a,b$ and hypotenuse $c$, as in the figure. The two shaded lunes have areas $X,Y$. Calculate $X+Y$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1989_p3_fig.png",
+          "statement_sha256": "2b119db716a56f5dd1fc77764cd3e16680fad865dfdd601d5d17957ce61a81c1",
+          "figure_checks": [
+            {
+              "path": "images/clf_1989_p3_fig.png",
+              "sha256": "d8c5fbba99751745352e5a08eaa6b3885836ec6e0fa4e51ddb8d8cff9b2a079b"
+            }
+          ],
+          "figure_source_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI672TsJoaY6DaL_YEXQD7BlQfARxZrWWyn3oCPWZvGbDlAyfUmq9I9zqUJFMgtt46kuSJ8TAXzR0JSuUehX4aAP7IfyHr38-xbTXmkdP0dumrfjFDMD26Ud7MnJ7EAmW7XTxGW3lF6lrrtoPvrvSvi8C8i-tfaEPFWfn-6_3SCauLJ7voBKE97WbOQw/s1600/Chile1989.png",
+          "figure_source_page": "https://imogeometry.blogspot.com/p/chile.html"
+        },
+        "clf.1989.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 2,
+          "source_problem_number": 4,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "A bank vault has $N$ locks, all of which must be opened to open the vault. Each of five executives has some of the keys, in such a way that any three executives together can open the vault, but no pair can do so. Find the smallest possible value of $N$.",
+          "statement_sha256": "569f6c4397c8ba2de206d77f56f186008ea0b58d72faaadc6737b673e67078da"
+        },
+        "clf.1989.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 2,
+          "source_problem_number": 5,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "The three side lengths of triangle $ABC$ are rational numbers. Its altitude $CD$ divides side $AB$ into segments $AD$ and $DB$. Prove that $AD$ and $DB$ have rational lengths.",
+          "statement_sha256": "dc006b1943a3439d5d28155d6ef561312477a7a9a1d39c0c8829b8ac89657f47"
+        },
+        "clf.1989.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 2,
+          "source_problem_number": 6,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "For integers $n=0,1,2,\\ldots$, define $f(n)$ by $f(0)=2$ and $$(f(n+1)-1)^2+(f(n)-1)^2=2f(n)f(n+1)+4,$$ taking the largest possible value at each step. Find $f(n)$.",
+          "statement_sha256": "caa170abb112212bdfd99ee8ed07af3296dee7833db2bd42a3e1e1cc2bf3d652"
+        },
+        "clf.1989.2.7": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=10AjXqgRCYz4ee-hXg1qaDGrY3jvEctyX",
+          "source_page": 2,
+          "source_problem_number": 7,
+          "source_document_sha256": "9315ec7fc7799a528d7fd0142b9282ca130034ed32397994b80477de7f26a3e6",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1989-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "A king wishes to keep only the wisest of three sages alive. He places a hat on each without letting its wearer see its colour. They know that the hats were selected from three white and two red hats. They can see one another but cannot communicate; only the first to identify the colour of his own hat will survive. After a long pause, one sage says, “I know the colour of my hat.” What colour is it, how did he deduce it, and what colours are the other hats?",
+          "statement_sha256": "90892ec636cac22d3af619b263b6f4825e7e35a048f8f790966bc3597352a311"
+        },
+        "clf.1995.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Let $a,b,c,d$ be integers. Prove that $$(a-b)(a-c)(a-d)(b-c)(b-d)(c-d)$$ is divisible (a) by $4$ and (b) by $12$.",
+          "statement_sha256": "4c1c567540978bbb9e569ee212186f2a6a14b1f522565cd089ce5ebdc6a906ba"
+        },
+        "clf.1995.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Six arcs of radius $1$ are drawn in a circle of radius $1$, as shown in the figure. Find the area $A$ of the shaded region.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1995_p2_fig.jpg",
+          "statement_sha256": "4628c0fb6dcef183caade9e8b9fef975489f49162414f8d642f62615cc11ca23",
+          "figure_checks": [
+            {
+              "path": "images/clf_1995_p2_fig.jpg",
+              "sha256": "ca10a144f5b04b091ac8870bad93ba8c0b3e2f5e60de7412206cf1e9487b185a"
+            }
+          ],
+          "figure_source_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKmmsaZ0Ko0NmHxfrXYoZg7XOnV6NI7pLCCehmOCE3dHRXWmvwvaFiKdlggOgtrY0Hbte9Yzm7bkXM6gnnkuMzxsfnfmJfT0SWuulEaPjIlArfSpv5xhWBmQFdpzrwohMc-W_lx8G_ptHF/s1600/1995+Chile+Level+2+P2.jpg",
+          "figure_source_page": "https://imogeometry.blogspot.com/p/chile.html"
+        },
+        "clf.1995.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Let $p(X)=a_0+a_1X+a_2X^2+a_3X^3$ be a polynomial of degree $3$ with integer coefficients, and let $a,b,c$ be distinct integers. Prove that it is impossible to have $p(a)=b$, $p(b)=c$ and $p(c)=a$.",
+          "statement_sha256": "f4ed614a5032709754f8a7048681d828e98c393e82c524e8849212108498866b"
+        },
+        "clf.1995.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 2,
+          "source_problem_number": 1,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Is it possible to assign the numbers $111,112,121,122,211,212,221,222$ to the eight vertices of a unit cube so that numbers on adjacent vertices agree in at most one digit?",
+          "statement_sha256": "c5a9f60493ac98a3890189e2cbba006ffe7e61b4f99ed22ccad4fa86e4c441a6"
+        },
+        "clf.1995.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 2,
+          "source_problem_number": 2,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "A trainer lines up five lions and four tigers. No two tigers may stand next to each other. In how many ways can the animals be arranged, if lions are indistinguishable from one another and tigers are indistinguishable from one another?",
+          "statement_sha256": "78c0d71337868b39c9d933efdc8eacd295c1ce1c86e1605a85ab58caef8058c7"
+        },
+        "clf.1995.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 2,
+          "source_problem_number": 3,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Which of the following rational numbers is greater? $$\\frac{1995^{1994}+1}{1995^{1995}+1},\\qquad\\frac{1995^{1995}+1}{1995^{1996}+1}.$$",
+          "statement_sha256": "ebbc8e64dd5356554db1c66962a87064756185b1770db7c7826023fd9baf1cbb"
+        },
+        "clf.1995.2.7": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-04",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Full English translation compared visually with the official Spanish paper. Missing figures supplied from an independent archive, explicitly documented below; no solutions or hints added. No independent solution certification.",
+          "source_url": "https://drive.google.com/uc?export=download&id=1kqWKabl6gO5Xq5SUf2ItNwr7V995UxFs",
+          "source_page": 2,
+          "source_problem_number": 4,
+          "source_document_sha256": "10b443cf04b0c34b94398a8d7b8e3adb9c06e3f0a5381211afbe8c1b7e3f9aed",
+          "source_contains_solutions": false,
+          "source_download_url": "https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/sources/chile/final/1995-statements.pdf",
+          "source_download_kind": "statements_only",
+          "reviewed_statement": "Three tangent circles are inscribed in a semicircle of radius $4$, as shown. Let their radii, from smallest to largest, be $r,R_1,R_2$. (a) Prove that $$\\frac1{\\sqrt r}=\\frac1{\\sqrt{R_1}}+\\frac1{\\sqrt{R_2}}.$$ (b) Prove that $R_1+R_2\\le8(\\sqrt2-1)$. (c) Deduce that $r\\le\\sqrt2-1$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1995_p7_fig.jpg",
+          "statement_sha256": "40c3b8efb3ad2abdeb65bc8e170d08fb1ca46b39313da9e14eabcda7a4c624b1",
+          "figure_checks": [
+            {
+              "path": "images/clf_1995_p7_fig.jpg",
+              "sha256": "889f642736019afa40a4d8b148f625a7905d64c0cd399cdd13d6b9b55ffa3d9d"
+            }
+          ],
+          "figure_source_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp3hDFzGdI-alZzxGxMeYnO90afsoc5lOVEiac-BkmgUd_guEeKGJ-3V3WkW9qwl3hzbP6_g_-XOsBHqRrqFIsV5ZoJfWrQKflF8TmrGbh9KcczHAGkQpfxGFShbmA_CBbL71huB25tQRX/s1600/1995+Chile+Level+2+P7.jpg",
+          "figure_source_page": "https://imogeometry.blogspot.com/p/chile.html"
         }
       },
       "statement_notes": {
@@ -25792,6 +26584,13 @@
           "text": "Source domain omission: token numbers are only stated to be at most 10; integrality and positivity are not specified. The literal domain is retained. Do not assume a positive-integer version without further verification.",
           "reviewed_statement": "At least two tokens each bear a number at most $10$, and the sum of the numbers is $S$. Find all values of $S$ that guarantee that the tokens can be divided into two groups so that neither group has sum greater than $80$.",
           "statement_sha256": "a48255050340eb4d7918270ee3996f6aac04d256ee5114a18b03ddbfe2813641"
+        },
+        "clf.1989.2.6": {
+          "kind": "source_domain_gap",
+          "checked_at": "2026-10-04",
+          "text": "Source indexing ambiguity: after relating f(n+1) to f(n), the original says to take f(n) as large as possible. The bank renders this as choosing the largest value at each step, without claiming independent confirmation of the index.",
+          "reviewed_statement": "For integers $n=0,1,2,\\ldots$, define $f(n)$ by $f(0)=2$ and $$(f(n+1)-1)^2+(f(n)-1)^2=2f(n)f(n+1)+4,$$ taking the largest possible value at each step. Find $f(n)$.",
+          "statement_sha256": "caa170abb112212bdfd99ee8ed07af3296dee7833db2bd42a3e1e1cc2bf3d652"
         }
       }
     }

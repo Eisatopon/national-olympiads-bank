@@ -43,7 +43,14 @@ def validate_topics(root=ROOT):
         assert audit['reviewed_this_audit']==len(audit['reviews'])
         assert audit['not_reviewed_this_audit']+len(audit['reviews'])==audit['active_records']
         for uid,review in audit['reviews'].items():
-            record=all_records[uid]
+            current=all_records[uid]
+            # Source repairs retain the exact earlier review as history instead
+            # of rewriting an audit made before the source was recovered.
+            candidates=[current]+current.get('superseded_reviews',[])
+            for candidate in candidates:
+                if 'statement_sha256' in candidate:
+                    assert hashlib.sha256(candidate['reviewed_statement'].encode()).hexdigest()==candidate['statement_sha256'], f'{uid}: invalid historical snapshot'
+            record=next((r for r in candidates if r.get('statement_sha256')==review['statement_sha256']),current)
             assert review['statement_sha256']==record['statement_sha256'],f'{uid}: audit text mismatch'
             assert review['reviewed_topics']==record['topics'],f'{uid}: audit topics mismatch'
             needs_rationale=set(review['previous_topics'])!=set(review['reviewed_topics']) or len(review['reviewed_topics'])>1

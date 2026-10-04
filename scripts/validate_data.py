@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QUARANTINED = {'China-olympiad-problems.json'}
+QUARANTINED = set()
 KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 1996): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2007): [1, 2, 3, 5, 6],

@@ -10,7 +10,7 @@ The older Olympiad Bank in `Eisatopon/eisatopon-next` is a separate application 
 
 ## Data integrity
 
-China is temporarily excluded from search and problem sets because its archive contains corrupted statements and duplicate identifiers. The original JSON is retained for reconstruction. Counts in the application cover available collections, not the quarantined archive.
+China is available for the four complete CMO years 2003–2006 (24 source-checked statements). The corrupted original archive is retained in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application. Other historical years await reconstruction.
 
 Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
 
@@ -36,7 +36,7 @@ node tests/test_loader.cjs
 python scripts/validate_data.py
 ```
 
-GitHub Actions runs these checks on pushes and pull requests. The validator checks JSON structure, collection registration, unique years and identifiers, numbering, nonempty statements, dollar delimiter parity, control characters and local figure existence. Known Argentina gaps are explicit exceptions; changes to their numbering fail validation. China is reported as quarantined and must remain marked as such in the application until repaired.
+GitHub Actions runs these checks on pushes and pull requests. The validator checks JSON structure, collection registration, unique years and identifiers, numbering, nonempty statements, dollar delimiter parity, control characters and local figure existence. Known Argentina gaps are explicit exceptions; changes to their numbering fail validation. Damaged historical China records remain outside the active collection; the rebuilt China data receives the same strict validation as other collections.
 
 The loader also rejects duplicate identifiers before storing any records from a collection, preventing an incorrect statement from being selected or printed under a reused identifier.
 
