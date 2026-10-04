@@ -1,12 +1,12 @@
 # Source verification progress
 
-Inventory: 10660 stored records; 1482 source-checked; 9178 remaining (including quarantine).
+Inventory: 10684 stored records; 1506 source-checked; 9178 remaining (including quarantine).
 
-Active bank: 10660 records; 1482 source-checked; 9178 remaining. Whole-bank source verification is **not complete**.
+Active bank: 10684 records; 1506 source-checked; 9178 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
-Counts describe stored records, not certified unique mathematical problems. China active data contains reconstructed 2003–2006 and 2009–2010 papers; damaged historical data is retained outside the active collections. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.
+Counts describe stored records, not certified unique mathematical problems. China active data contains reconstructed 2003–2006 and 2009–2014 papers (2014 edition held in December 2013); damaged historical data is retained outside the active collections. Complete stored-statement checks do not certify historical archive coverage. Review method is AI-assisted visual and textual source comparison, not independent solution verification.
 
 | Collection | Stored records | Source checked | Remaining | State |
 |---|---:|---:|---:|---|
@@ -20,7 +20,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Canada-cmo-problems.json | 323 | 100 | 223 | pending |
 | Chile-final-problems.json | 169 | 169 | 0 | stored_statements_checked |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
-| China-olympiad-problems.json | 36 | 36 | 0 | stored_statements_checked |
+| China-olympiad-problems.json | 60 | 60 | 0 | stored_statements_checked |
 | Croatia-drz-problems.json | 60 | 0 | 60 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
 | Cyprus-tst-problems.json | 184 | 0 | 184 | pending |
