@@ -8341,9 +8341,39 @@
           "url": "https://matol.kz/olympiads/274",
           "label": "Matol Kazakhstan RMO 2015, final round, grade 11, complete statements",
           "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c4044",
+          "label": "AoPS Kazakhstan RMO 2011, final-round senior statements",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://matol.kz/olympiads/147",
+          "label": "Matol Kazakhstan RMO 2011, final round, grade 11, complete statements",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c4045",
+          "label": "AoPS Kazakhstan RMO 2012, final-round senior statements",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://matol.kz/olympiads/150",
+          "label": "Matol Kazakhstan RMO 2012, final round, grade 11, complete statements",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c4046",
+          "label": "AoPS Kazakhstan RMO 2013, final-round senior statements",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://matol.kz/olympiads/153",
+          "label": "Matol Kazakhstan RMO 2013, final round, grade 11, complete statements",
+          "verification": "unverified"
         }
       ],
-      "coverage_notes": "National final grade 11 coverage for 2014–2026: six problems each year except 2020, which has a complete four-problem paper. The 2020 and 2023–2026 papers are common to grades 10–11. Added 2017–2021 statements were read on AoPS and compared with all numbered grade-11 statements in the Matol final-round archive; cross-references expanded and 2018 P2 initial conditions restored as b_0=1 and b_1=2. Official 2025 PDF checks are recorded per problem. Whole-collection source fidelity is not certified. The complete six-problem 2016 grade-11 final was compared with Matol; three AoPS cross-references were expanded, and P3 retains the original curvilinear-triangle specification. Complete six-problem 2014 and 2015 grade-11 finals were compared with Matol; six AoPS cross-references were expanded. The incorrect AoPS 2014 P4 location of N on BC was restored to the original angle-bisector foot on AC.",
+      "coverage_notes": "National final grade 11 coverage for 2011–2026: six problems each year except 2020, which has a complete four-problem paper. The 2020 and 2023–2026 papers are common to grades 10–11. Added 2017–2021 statements were read on AoPS and compared with all numbered grade-11 statements in the Matol final-round archive; cross-references expanded and 2018 P2 initial conditions restored as b_0=1 and b_1=2. Official 2025 PDF checks are recorded per problem. Whole-collection source fidelity is not certified. The complete six-problem 2016 grade-11 final was compared with Matol; three AoPS cross-references were expanded, and P3 retains the original curvilinear-triangle specification. Complete six-problem 2014 and 2015 grade-11 finals were compared with Matol; six AoPS cross-references were expanded. The incorrect AoPS 2014 P4 location of N on BC was restored to the original angle-bisector foot on AC. Complete 2011–2013 grade-11 finals were compared with Matol. Six cross-references were expanded. 2012 P2 non-similarity and all 2012 P6 subquestions and positive coefficients were restored. 2013 P6 has an explicit editorial note resolving the intermediate-meeting ambiguity using the archived solution discussion.",
       "statement_checks": {
         "kz.2025.1.1": {
           "status": "statement_checked_against_source",
@@ -8422,6 +8452,15 @@
           "review_method": "AI-assisted visual and textual comparison",
           "scope": "Complete English statements and formulas compared with Russian and Kazakh official final-round original linked from Daryn respa, 2024–2025 archive. Senior P4 also appears as grade 9 P5. P5 angle-bisector endpoints on opposite sides made explicit. No essential statement figures.",
           "source_contains_solutions": false
+        }
+      },
+      "statement_notes": {
+        "kz.2013.2.6": {
+          "checked_at": "2026-10-05",
+          "reviewed_statement": "Two turtles start simultaneously at $(0,0)$. At each step each turtle moves either one unit right or one unit up, from $(x,y)$ to $(x+1,y)$ or $(x,y+1)$. For a positive integer $n$, how many ways can they reach $(n,n)$ without meeting at any intermediate point between departure and arrival?",
+          "statement_sha256": "d988cd7bef5c6d765c160128cbd83424ca7f81f2fdfe27b3c3c3838f64e170f9",
+          "kind": "source_domain_gap",
+          "text": "Editorial clarification: the AoPS and Matol statements say the turtles last met only at (0,0), although both finish at (n,n). The bank explicitly excludes meetings only at intermediate points. This interpretation is supported by the archived Matol solution discussion at https://matol.kz/comments/1028/show, which counts disjoint interior paths between the first and penultimate steps. The supporting discussion is a community solution, not an official wording correction."
         }
       }
     },
