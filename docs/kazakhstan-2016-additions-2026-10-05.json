@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-05",
+  "baseline_commit": "ac15e52111c70181fa8d431bc3967418ba24019a",
+  "added_records": 6,
+  "competition": "Kazakhstan Republican Mathematical Olympiad, final round, grade 11",
+  "source_collections": {
+    "2016": "https://artofproblemsolving.com/community/c1459467"
+  },
+  "primary_archive_comparisons": [
+    {
+      "year": 2016,
+      "url": "https://matol.kz/olympiads/473",
+      "downloaded_html_sha256": "4b4e33b44e0f2295fe4c71f41773bdd29e185fd93fa19f2656fa4c39f7ce8dc1",
+      "source_statement_text": "Задача №1. Для любого натурального числа докажите, что все его натуральные делители можно расставить по кругу так, чтобы из любых двух соседних чисел одно число делилось на другое. ( Д. Елиусизов ) комментарий/решение(1) Задача №2. Найдите все рациональные числа $a$, для которых существует бесконечно много таких положительных рациональных чисел $q$, что уравнение $\\left[ {{x}^{a}} \\right]\\cdot \\left\\{ {{x}^{a}} \\right\\}=q$ не имеет решений в рациональных числах $x$. ( А. Васильев ) комментарий/решение(2) Задача №3. Две пересекающиеся в точках $X$ и $Y$ окружности $\\omega_1$ и $\\omega_2$ находятся внутри окружности $\\Omega$ и касаются ее в точках $A$ и $B$. Прямая $AB$ повторно пересекает окружности $\\omega_1$ и $\\omega_2$ в точках $A_1$ и $B_1$, соответственно. Вписанная в криволинейный треугольник $A_1B_1X$ окружность касается стороны $A_1B_1$ в точке $Z$. Докажите, что $\\angle AXZ=\\angle BXZ$. ( Ильясов С. ) комментарий/решение(2) Задача №4. В равнобедренном треугольнике $ABC$ точка $H$ — середина основания $AB$, $M$ — середина отрезка $BH$. Пусть $HK$ — высота треугольника $ACH$, а прямые $CM$ и $BK$ пересекаются в точке $L$. Перпендикуляр к прямой $BC$ в точке $B$ и прямая $LH$ пересекаются в точке $N$. Докажите, что угол $BCN$ в два раза меньше угла $ACB.$ ( М. Кунгожин ) комментарий/решение(2) Задача №5. На плоскости выбраны 101 синяя и 101 красная точка, причем никакие три не лежат на одной прямой. Сумма попарных расстояний между красными точками равна 1 (то есть сумма длин отрезков с концами в красных точках), сумма попарных расстояний между синими тоже равна 1, а сумма длин отрезков с концами разных цветов равна 400. Докажите, что можно провести прямую, отделяющую все красные точки от всех синих. ( Ким А. ) комментарий/решение(1) Задача №6. Бесконечная строго возрастающая последовательность $\\{a_n\\}$ положительных чисел удовлетворяет соотношению $$a_{n+2}=(a_{n+1}-a_n)^{\\sqrt{n}}+n^{-\\sqrt{n}}$$ для каждого натурального $n$. Докажите, что для любого $C>0$ существует такое натуральное $m(C)$ (зависящее от $C$), что $a_{m(C)}>C$. ( Сатылханов К. ) комментарий/решение(1) ×",
+      "numbered_problems": 6,
+      "scope": "Complete Russian statement text on grade-11 national-final archive compared with normalized English statements; no PDF-page certification claimed."
+    }
+  ],
+  "resolved_cross_references": [
+    {
+      "year": 2016,
+      "problem": 2,
+      "reference": "10.2"
+    },
+    {
+      "year": 2016,
+      "problem": 5,
+      "reference": "9.6"
+    },
+    {
+      "year": 2016,
+      "problem": 6,
+      "reference": "10.6"
+    }
+  ],
+  "source_corrections": [
+    {
+      "year": 2016,
+      "problem": 3,
+      "scope": "Restored original incircle of curvilinear triangle A1B1X wording; AoPS omits the curvilinear region."
+    }
+  ],
+  "source_review_scope": "All six grade-11 statements compared with Russian Matol final-round archive and AoPS senior statements, resolving three cross-references. P2 keeps the original rational-x domain without imposing an additional positivity restriction. No essential statement image appears in the source. Statement comparison does not certify solutions or whole-bank source fidelity.",
+  "reviews": [
+    {
+      "uid": "kz.2016.1.1",
+      "source_url": "https://artofproblemsolving.com/community/c6h1213034p6022569",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 1,
+      "day": 1,
+      "statement_sha256": "e85dfae0f0d4acfbe0bc7ebcbca114bbc0bfb4b85c55cb10f4d2727b4d7a498f",
+      "reviewed_statement": "Prove that all positive divisors of any given positive integer can be arranged around a circle so that, for every two neighbouring numbers, one divides the other."
+    },
+    {
+      "uid": "kz.2016.1.2",
+      "source_url": "https://artofproblemsolving.com/community/c6h1215355p6045397",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 2,
+      "day": 1,
+      "statement_sha256": "697ae73a4acf7a9782c514340771458363d92a8cfedf84a52e5fa146ee9fc372",
+      "reviewed_statement": "Find all rational numbers $a$ for which there are infinitely many positive rational numbers $q$ such that the equation $$\\lfloor x^a\\rfloor\\{x^a\\}=q$$ has no rational solution $x$. Here $\\lfloor t\\rfloor$ and $\\{t\\}=t-\\lfloor t\\rfloor$ denote the integer part and fractional part of $t$, respectively."
+    },
+    {
+      "uid": "kz.2016.1.3",
+      "source_url": "https://artofproblemsolving.com/community/c6h1215328p6045155",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 3,
+      "day": 1,
+      "statement_sha256": "f1ec969faf77810dc2a8a0da26b8e0e440859be410606c0693afa8218792dfab",
+      "reviewed_statement": "Two circles $\\omega_1$ and $\\omega_2$ intersect at $X$ and $Y$, lie inside a circle $\\Omega$, and are tangent to $\\Omega$ at $A$ and $B$, respectively. Line $AB$ meets $\\omega_1$ and $\\omega_2$ again at $A_1$ and $B_1$, respectively. The incircle of the curvilinear triangle $A_1B_1X$, bounded by segment $A_1B_1$ and arcs of $\\omega_1$ and $\\omega_2$ meeting at $X$, touches side $A_1B_1$ at $Z$. Prove that $\\angle AXZ=\\angle BXZ$."
+    },
+    {
+      "uid": "kz.2016.2.4",
+      "source_url": "https://artofproblemsolving.com/community/c6h1215691p6048896",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 4,
+      "day": 2,
+      "statement_sha256": "901c1640d5fe676e7cae7ed6b580649095696da8c0211904f4ced3252cbbacc6",
+      "reviewed_statement": "In an isosceles triangle $ABC$ with $CA=CB$, let $H$ be the midpoint of base $AB$ and $M$ the midpoint of $BH$. Let $HK$ be the altitude of triangle $ACH$, and let lines $CM$ and $BK$ meet at $L$. The line through $B$ perpendicular to $BC$ meets line $LH$ at $N$. Prove that $\\angle ACB=2\\angle BCN$."
+    },
+    {
+      "uid": "kz.2016.2.5",
+      "source_url": "https://artofproblemsolving.com/community/c6h2328021p18653498",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 5,
+      "day": 2,
+      "statement_sha256": "e8579a47df59732ba29d41ccaa8e21c8cf462d7e3054670a3ede726e999a6788",
+      "reviewed_statement": "There are $101$ blue points and $101$ red points in the plane, with no three of the $202$ points collinear. The sum of all pairwise distances between red points is $1$, the sum of all pairwise distances between blue points is $1$, and the sum of the distances between points of different colours is $400$. Prove that a straight line can separate all red points from all blue points."
+    },
+    {
+      "uid": "kz.2016.2.6",
+      "source_url": "https://artofproblemsolving.com/community/c6h1213031p6022526",
+      "corroborating_source_url": "https://matol.kz/olympiads/473",
+      "source_problem_number": 6,
+      "day": 2,
+      "statement_sha256": "b306804d908c351c6e238a89c072731984f64b172cf456d099f440e17b2ae36f",
+      "reviewed_statement": "An infinite strictly increasing sequence $(a_n)_{n\\ge1}$ of positive real numbers satisfies $$a_{n+2}=(a_{n+1}-a_n)^{\\sqrt n}+n^{-\\sqrt n}$$ for every positive integer $n$. Prove that, for every $C>0$, there is a positive integer $m(C)$ such that $a_{m(C)}>C$."
+    }
+  ]
+}
