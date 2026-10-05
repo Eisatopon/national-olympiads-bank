@@ -25,7 +25,7 @@ assert.equal(context.topicFields('A triangle.', 'Algebra').topic, 'Algebra');
   await assert.rejects(context.loadCountry('cn'), /under review/);
   assert.equal(calls, 1);
   context.fetch = async (url, options) => {
-    assert.equal(url, './ok.json?v=20261005-kazakhstan-2016-final', 'Collection requests must use the deployed data version to avoid stale country files');
+    assert.equal(url, './ok.json?v=20261005-kazakhstan-2014-2015-final', 'Collection requests must use the deployed data version to avoid stale country files');
     assert.equal(options.cache, 'no-cache', 'Collection data must be revalidated to avoid caching stale deployment responses');
     return {ok:true,text:async()=>JSON.stringify({years:[{year:2025,problems:[{number:1,problem:'First',category:'Algebra'}]}]})};
   };

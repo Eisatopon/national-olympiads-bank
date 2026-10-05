@@ -867,7 +867,7 @@ function loadCountry(key) {
         onCountrySettled(key);
         return Promise.reject(new Error(message));
     }
-    const p = fetch(BASE + country.file + '?v=20261005-kazakhstan-2016-final', {cache: 'no-cache'})
+    const p = fetch(BASE + country.file + '?v=20261005-kazakhstan-2014-2015-final', {cache: 'no-cache'})
         .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
         .then(txt => {
             let raw;
@@ -1600,7 +1600,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     try {
-        const response = await fetch('./metadata/collections.json?v=20261005-kazakhstan-2016-final', {cache: 'no-cache'});
+        const response = await fetch('./metadata/collections.json?v=20261005-kazakhstan-2014-2015-final', {cache: 'no-cache'});
         if (!response.ok) throw new Error('Metadata unavailable');
         const data = await response.json();
         if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
@@ -1614,7 +1614,7 @@ async function init() {
         problemDna = dna;
     } catch (e) { /* Concept-based connections remain available. */ }
     try {
-        const response = await fetch('./metadata/topic-overrides.json?v=20261005-kazakhstan-2016-final', {cache: 'no-cache'});
+        const response = await fetch('./metadata/topic-overrides.json?v=20261005-kazakhstan-2014-2015-final', {cache: 'no-cache'});
         if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
         const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
         if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
