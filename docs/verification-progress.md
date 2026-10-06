@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 13220 stored records; 1709 source-checked; 11511 remaining (including quarantine).
+Inventory: 13293 stored records; 1709 source-checked; 11584 remaining (including quarantine).
 
-Active bank: 13220 records; 1709 source-checked; 11511 remaining. Whole-bank source verification is **not complete**.
+Active bank: 13293 records; 1709 source-checked; 11584 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -32,7 +32,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | France-tst-problems.json | 225 | 0 | 225 | pending |
 | Germany-bwm-problems.json | 108 | 0 | 108 | pending |
 | Germany-mo-problems.json | 389 | 6 | 383 | pending |
-| Greece-archimedes-problems.json | 117 | 0 | 117 | pending |
+| Greece-archimedes-problems.json | 121 | 0 | 121 | pending |
 | Greece-tst-problems.json | 72 | 1 | 71 | pending |
 | HongKong-chkmo-problems.json | 100 | 0 | 100 | pending |
 | HongKong-tst-problems.json | 313 | 0 | 313 | pending |
@@ -42,7 +42,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | India-inmo-problems.json | 235 | 0 | 235 | pending |
 | Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
 | Ireland-irmo-problems.json | 395 | 0 | 395 | pending |
-| Italy-itamo-problems.json | 180 | 0 | 180 | pending |
+| Italy-itamo-problems.json | 249 | 0 | 249 | pending |
 | Italy-preimo-tst-problems.json | 109 | 109 | 0 | stored_statements_checked |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
 | Kazakhstan-rmo-problems.json | 94 | 6 | 88 | pending |
