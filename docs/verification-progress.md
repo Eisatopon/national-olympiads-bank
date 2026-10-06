@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 11158 stored records; 1709 source-checked; 9449 remaining (including quarantine).
+Inventory: 11342 stored records; 1709 source-checked; 9633 remaining (including quarantine).
 
-Active bank: 11158 records; 1709 source-checked; 9449 remaining. Whole-bank source verification is **not complete**.
+Active bank: 11342 records; 1709 source-checked; 9633 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -62,7 +62,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Portugal-opm-problems.json | 98 | 0 | 98 | pending |
 | Romania-nmo-problems.json | 40 | 0 | 40 | pending |
 | Romania-tst-problems.json | 40 | 0 | 40 | pending |
-| Russia-aro-problems.json | 264 | 0 | 264 | pending |
+| Russia-aro-problems.json | 289 | 0 | 289 | pending |
 | Serbia-smo-problems.json | 90 | 0 | 90 | pending |
 | Serbia-tst-problems.json | 48 | 0 | 48 | pending |
 | Singapore-mo-open-problems.json | 135 | 0 | 135 | pending |
@@ -75,6 +75,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
 | Thailand-tstst-problems.json | 12 | 12 | 0 | stored_statements_checked |
 | Turkey-tmo-problems.json | 126 | 0 | 126 | pending |
+| USSR-allunion-problems.json | 159 | 0 | 159 | pending |
 | Uk-bmo1-problems.json | 132 | 0 | 132 | pending |
 | Uk-bmo2-problems.json | 88 | 0 | 88 | pending |
 | Uk-tst-problems.json | 285 | 0 | 285 | pending |

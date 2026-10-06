@@ -9803,7 +9803,14 @@
       "verification_status": "not_verified_against_source",
       "coverage": "not_assessed",
       "competition": "All-Russian Mathematical Olympiad (Final Round, Grade 11)",
-      "source_links": []
+      "source_links": [
+        {
+          "url": "https://olympiads.win.tue.nl/imo/soviet/RusMath.html",
+          "label": "Vasil'ev & Egorov, English version (grade tables 1961-1966)",
+          "verification": "unverified"
+        }
+      ],
+      "coverage_notes": "1961-1963 and 1965-1966 (All-Russian olympiad before it became the All-Union olympiad): highest-form paper, grade tables from Vasil'ev & Egorov (1988), statements from AoPS c3371; 1964 omitted because the source grade table lists one problem twice for the top form."
     },
     "Serbia-smo-problems.json": {
       "verification_status": "not_verified_against_source",
@@ -32034,6 +32041,24 @@
         {
           "url": "https://artofproblemsolving.com/community/c3302",
           "label": "AoPS — Greece National Olympiad",
+          "verification": "unverified"
+        }
+      ]
+    },
+    "USSR-allunion-problems.json": {
+      "verification_status": "not_verified_against_source",
+      "coverage": "known_gaps",
+      "competition": "All-Union (USSR) Mathematical Olympiad, final round, senior form",
+      "coverage_notes": "Senior-form paper of each final round 1967-1987 (form 10). Grade assignment from the per-year grade tables of Vasil'ev & Egorov, 'Zadachi vsesoyuznykh matematicheskikh olimpiad' (Nauka, 1988), English version by V. Pertsel; statements from AoPS c3371 (same problem numbering), edited, keeping only the parts set to the senior form. 1988-1991 not included: the available compilations mix all grades without grade labels. Details: docs/ussr-all-union-2026-10-06.md.",
+      "source_links": [
+        {
+          "url": "https://olympiads.win.tue.nl/imo/soviet/RusMath.html",
+          "label": "Vasil'ev & Egorov, English version (grade tables)",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://artofproblemsolving.com/community/c3371",
+          "label": "AoPS — All-Russian / All Soviet Union Olympiad",
           "verification": "unverified"
         }
       ]
