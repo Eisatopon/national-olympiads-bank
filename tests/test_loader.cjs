@@ -2,9 +2,9 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const html = fs.readFileSync('index.html', 'utf8');
-const code = html.slice(html.indexOf('function classifyStatement('), html.indexOf('function loadAll('));
+const code = html.slice(html.indexOf('function textHash('), html.indexOf('function loadAll('));
 const context = {
-  BASE: './', cache: new Map(), inflight: new Map(), failed: new Map(), byUid: new Map(),
+  BASE: './', DATA_VERSION: 'test-version', cache: new Map(), inflight: new Map(), failed: new Map(), byUid: new Map(),
   CBY: { ok: {key:'ok',file:'ok.json'}, bad:{key:'bad',file:'bad.json'}, cn:{key:'cn',file:'cn.json',quarantined:true} },
   onCountrySettled() {}, fetch: async () => { throw Error('unexpected fetch'); }
 };
@@ -25,7 +25,7 @@ assert.equal(context.topicFields('A triangle.', 'Algebra').topic, 'Algebra');
   await assert.rejects(context.loadCountry('cn'), /under review/);
   assert.equal(calls, 1);
   context.fetch = async (url, options) => {
-    assert.equal(url, './ok.json?v=20261005-kazakhstan-2011-2013-final', 'Collection requests must use the deployed data version to avoid stale country files');
+    assert.equal(url, './ok.json?v=test-version', 'Collection requests must use the deployed data version to avoid stale country files');
     assert.equal(options.cache, 'no-cache', 'Collection data must be revalidated to avoid caching stale deployment responses');
     return {ok:true,text:async()=>JSON.stringify({years:[{year:2025,problems:[{number:1,problem:'First',category:'Algebra'}]}]})};
   };

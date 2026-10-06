@@ -4,7 +4,7 @@ const metadata=JSON.parse(fs.readFileSync('metadata/topic-overrides.json','utf8'
 const finalMetadata=JSON.parse(fs.readFileSync('metadata/topic-overrides-final575.json','utf8'));
 metadata.records={...metadata.records,...finalMetadata.records};
 const ctx={topicOverrides:metadata.records};vm.createContext(ctx);
-vm.runInContext(html.slice(html.indexOf('function classifyStatement('),html.indexOf('function normalizeYears(')),ctx);
+vm.runInContext(html.slice(html.indexOf('function textHash('),html.indexOf('function normalizeYears(')),ctx);
 for(const [uid,r] of Object.entries(metadata.records)) assert.deepEqual(Array.from(ctx.topicFields(r.reviewed_statement,null,uid).topics),r.topics,uid);
 // Check that real source records (including existing categories) actually use the reviews.
 const sourceRecords=new Map();

@@ -7,12 +7,19 @@ Live site: GitHub Pages of `Eisatopon/national-olympiads-bank` (this repo). Push
 
 ## Repo layout
 - `index.html`: the whole app (HTML + CSS + JS in one file).
-- `<Country>-<comp>-problems.json`: one file per row in the grid.
+- `<Country>-<comp>-problems.json`: one file per row in the grid (the data).
 - `images/`: figures, named `<prefix>_<year>_p<number>_fig.png`.
-- `.dev/`: working notes. These are not used by the site.
-  - `sources.json`: research on official archives per country.
-  - `extract-task.md`: rules for turning PDFs into JSON.
-  - `get-batch3.ps1`: the batch-3 download (already processed).
+- `metadata/` — **audit files**, used by validators/tests, NOT downloaded by the site:
+  - `collections.json`: per-collection source links, coverage notes, `missing_problem_numbers`, and per-problem `statement_checks` / `statement_notes` (each with a full `reviewed_statement` copy + `statement_sha256`).
+  - `topic-overrides.json` + `topic-overrides-final575.json`: reviewed topics per uid (same full-copy scheme; final575 wins).
+  - `problem-dna.json`: small pilot (13 records) of techniques; the site loads it directly.
+- `metadata/runtime/` — **generated, what the site downloads** (`topics.json`, `collections.json`): same information with an 8-hex fingerprint `h` (FNV-1a 32 over UTF-16, `textHash()` in index.html) instead of the full statement copy. ~150 KB gzipped instead of ~2.1 MB. **Never edit by hand.** After ANY change to a problem text or to `metadata/*.json`, run `python scripts/build_runtime_metadata.py` and commit the result; CI fails (`--check`) if it is stale.
+- `docs/`: audit reports and per-batch source records (`*-additions-*.json`, `source-gap-audit-*.md`, `verification-progress.md`). `docs/quarantine/` keeps the old corrupted China file.
+- `sources/`, `pdfs/`: downloaded source documents and statement-only PDFs (`available-pdfs.html`, `thailand-pdfs.html` list them).
+- `scripts/`: `validate_data.py`, `validate_topics.py`, `validate_dna.py`, `verification_progress.py`, `build_runtime_metadata.py`.
+- `tests/`: node `*.cjs` tests (they `vm`-load slices of index.html by function name — keep function names/order stable) and python unittests.
+- `.github/workflows/validate-data.yml`: runs all of the above on every push.
+- `.dev/`: older working notes (`sources.json`, `extract-task.md`). Not used by the site.
 
 ## JSON schema (per file)
 ```json
@@ -27,14 +34,16 @@ Live site: GitHub Pages of `Eisatopon/national-olympiads-bank` (this repo). Push
 - Exception: `Usa-tstst-problems.json` uses an older different schema, with kind `'usa'` in COUNTRIES. Don't change it unless asked.
 
 ## Adding a row to index.html (all of these, each exactly once)
-1. **CSS colour var:** after the last `--xx: ...; --xx-ink: ...; --xx-tint: ...;` line, add `    --key: #col; --key-ink: #ink; --key-tint: #tint;`. The current last one is `--huo`. Pick a colour that isn't used yet.
+1. **CSS colour var:** after the last `--xx: ...; --xx-ink: ...; --xx-tint: ...;` line, add `    --key: #col; --key-ink: #ink; --key-tint: #tint;`. Rows are no longer strictly in order; grep `--[a-z]*: #` and pick a colour that isn't used yet.
 2. **CSS class:** after the last `.f-xx { --f: var(--xx); ... }` line, add `.f-key { --f: var(--key); --f-ink: var(--key-ink); --f-tint: var(--key-tint); }`.
 3. **Continent:** add `REGION_OF.key = 'europe'|'asia'|'americas'|'africa'|'oceania';` just before `const regionOf = key =>`. Without it the row falls into "Other".
-4. **COUNTRIES entry:** insert `    { key: 'key', name: 'Display Name', flag: '🇽🇽', file: 'File-problems.json', kind: 'years' },` just before `{ key: 'um', name: 'USA USAMO'`. Use a name like "Serbia TST" for a second row of the same country.
+4. **COUNTRIES entry:** insert `    { key: 'key', name: 'Display Name', flag: '🇽🇽', file: 'File-problems.json', kind: 'years' },` just before `{ key: 'um', name: 'USA USAMO'`. Also add a `collections.json` entry for the new file (source links, coverage) — `validate_data.py` checks every collection is tracked. Use a name like "Serbia TST" for a second row of the same country.
 5. **New country only:** bump the count in `<title>…Problems from N Countries…`, in `<b>N</b><span>countries</span>`, and add the country (alphabetical) to the `<meta name="description">` list.
 6. **Years outside 1962–2026:** update `const FIRST = 1962, LAST = 2026;` and the two "1962–2026" strings.
 
-The grid is grouped by continent; groups are collapsed by default and only one is open at a time. Problem totals are computed at runtime.
+7. **Bump `DATA_VERSION`** (one constant next to `BASE`) whenever data or metadata change: all fetches use `?v=DATA_VERSION` + `cache: 'no-cache'` so browsers never mix old and new files.
+
+The grid is grouped by continent (countries sorted alphabetically); groups are collapsed by default and only one is open at a time. Problem totals are computed at runtime.
 
 ## Workflow for a new competition
 1. Find official sources: check `.dev/sources.json` first, then search the web. Use official sites only; AoPS is fine only if the user downloads the files himself.
@@ -50,29 +59,33 @@ The grid is grouped by continent; groups are collapsed by default and only one i
    - every figure URL points to an existing file in `images/`;
    - no leftover foreign words;
    - no "see figure" without a figure.
+   Then run everything CI runs: `python scripts/validate_data.py`, `python scripts/validate_topics.py`, `python scripts/validate_dna.py`, `python -m unittest discover -s tests`, every `node tests/*.cjs`, then `python scripts/build_runtime_metadata.py` (and `--check`).
 5. Edit `index.html` as above.
-6. Test locally with `python -m http.server`, or `npx serve`. To make the page load local JSON, temporarily replace `const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/'` with `'./'` in a copy and open that copy. Check the row shows the right years, the counts and that there are no console errors. **Never commit the BASE change.**
-7. `git add -A; git commit -m "Add <country/competition>"; git push`. Then tell him in Greek, briefly, what was added (years, problem count, figures).
+6. Test locally with `python -m http.server`, or `npx serve`. To make the page load local JSON, temporarily replace `const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/'` with `'./'` in a copy and open that copy. Check the row shows the right years, the counts and that there are no console errors. **Never commit the BASE change.** In the cloud container, Playwright + Chromium are preinstalled (`npm root -g`/playwright) for a headless check.
+7. `git add -A; git commit -m "Add <country/competition>"; git push`. Check that the GitHub Actions run is green. Then tell him in Greek, briefly, what was added (years, problem count, figures).
 
-## Current state (Oct 2026)
-49 countries, ~9,660 problems (plus USA TSTST), 64 rows. The rows are:
-- **Europe:** Greece TST, UK BMO1/BMO2/TST, Ireland, Italy, Turkey, Russia, Poland, Spain, Austria, Czech-Slovak, Serbia + TST, Croatia + HMO, Norway, Netherlands + TST, Switzerland + TST, Germany BWM + MO (1962–94 and 1996–2026; no 1995 in the official archive), Romania + TST, Lithuania + TST, Slovenia, Estonia final gr. 12 (1993–2026), Latvia, Estonia TST, Portugal, Denmark, Finland, Iceland, France TST, Cyprus TST, Hungary Kürschák (2014, 2017–24) + OKTV III final (2006–26), North Macedonia (2020–26), Ukraine final gr. 11 (2024–25), Bulgaria national round (2017–21).
-- **Asia:** China (1987–2016), Azerbaijan TST, Singapore, India, Korea KMO/FKMO, Indonesia, Vietnam, Japan, Philippines, Hong Kong + TST, Kazakhstan final gr. 11 (2022 only).
+## Current state (6 Oct 2026)
+54 countries, 73 rows, 11,041 problems (incl. 132 USA TSTST). Statements only — no solutions are stored.
+- **Europe:** Greece TST, UK BMO1/BMO2/TST, Ireland, Italy ITAMO + PreIMO TST (2002–08, 2010–19, 2022), Turkey, Russia (1993–2026), Poland, Spain, Austria, Czech-Slovak, Serbia + TST, Croatia + HMO, Norway, Netherlands + TST, Switzerland + TST, Germany BWM + MO (no 1995), Romania + TST, Lithuania + TST, Slovenia, Estonia final + TST, Latvia, Portugal, Denmark, Finland, Iceland, France TST, Cyprus TST, Hungary Kürschák + OKTV, North Macedonia, Ukraine (2024–25), Bulgaria (2017–2026), Sweden SMT (2006–25), Belgium OMB MAXI final (2007, 2008, 2022–26).
+- **Asia:** China CMO (1986–2026, rebuilt 4 Oct 2026, 6 problems/year, clean), Azerbaijan TST, Singapore, India, Korea KMO/FKMO, Indonesia, Vietnam, Japan, Philippines, Hong Kong + TST, Kazakhstan senior final (2011–2026), Thailand TMO (2004–26) + TST (2011–21) + TSTST (2021).
 - **Oceania:** Australia AMO (2016–20), New Zealand NZMO round 2 (2019–26).
-- **Americas:** Argentina, Canada, Brazil, Mexico, USA USAMO/TSTST/TST.
+- **Americas:** Argentina, Canada, Brazil, Mexico, Chile final (1989–2025, partial years flagged) + TST, Uruguay final level V (2011–17), USA USAMO/TSTST/TST.
 
-Last added colour var is `--huo`. Helper scripts in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py` (text/render), `validate.py`, `add_row.py` (does all index.html edits; check the description position for countries alphabetically before Croatia), `localtest.ps1` (headless Chrome against local JSON), `figcrop.py`.
+Review layers (all AI-assisted, kept separate): source-fidelity checks (`statement_checks`, ~1,700 records — see `docs/verification-progress.md`), editorial notes for source errors (`statement_notes`), thematic topics (all 11,041 reviewed), Problem DNA pilot (13). A changed statement automatically loses its checks/topics until re-reviewed (fingerprint mismatch).
 
-## Next tasks (in order)
-1. **Batch 3 is done** (Oct 2026). Leftovers: Kazakhstan other years (daryn.kz/ro/<year>/tasks/ only has 2022), Kürschák 2025 (not yet posted on bolyai.hu), Australia AMO after 2020 (not on amt.edu.au past papers), Bulgaria after 2021 (matematika.bg; needs `curl -A "Mozilla/5.0"`, a full browser UA gets 403).
-2. **Gaps (Oct 2026 pass done):** added Russia 1993–2005 (from Agakhanov et al., math.ru/lib/files/pdf/olimp/Vseross.pdf; Russia 2020 had no final), Serbia SMO 2008, Croatia 2015, Italy 2026, Estonia final, Hungary OKTV, Kürschák 2014/2017. Still open:
-   - **China file is corrupted** (`China-olympiad-problems.json`: years descending, 2016 has 81 mixed entries, ~150 problems with AoPS-PDF garbage like `$\leq$`, duplicated 2010/2011). Came from AoPS PDFs. Needs a rebuild; ask him for a source (no official one exists). China after 2016: same problem.
-   - Validator warnings in older files: Argentina numbering gaps (1994, 1996, 2007, 2008, …), Greece TST and Azerbaijan/Singapore years not sorted, Greece 2013 numbering, a few "non-English letters" (mostly names with diacritics, probably fine).
-   - Italy before 1997, Croatia national before 2015, Serbia SMO 2015/2020/2021/2025 and TST 2008–2015: not on the official sites.
-   - Kürschák 2009–2016: in KöMaL February issues, but komal.hu/lap/YYYY-02/YYfebr.pdf only exists for 2015 and 2018; 1900–2008 not reachable.
-3. **AoPS-only (ask him first):** Iran, Taiwan, Thailand, Israel; TSTs of China, Vietnam, India, Japan, Italy, Spain, Poland, Brazil, Mexico, Canada, Bulgaria, Ukraine. AoPS PDFs: https://artofproblemsolving.com/downloads/printable_post_collections/<collection id> — they need him logged in, and may come out blank.
+Site features: continent grid, topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
+
+Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py`, `validate.py`, `add_row.py` (predates the collections.json/DATA_VERSION steps — do those by hand), `localtest.ps1`, `figcrop.py`.
+
+## Next tasks
+1. **Open source gaps** (details: `docs/source-gap-audit-2026-10-03.md`): Chile figures (1989 P3, 1991 P6–7, 1995 two figures, 2025 P3), Chile 1991 only P3 stored, Chile 1998/2004/2005/2017 and 1999 P2 missing; Argentina missing 1994/1, 1996/1, 2007/4, 2008/1, 2010/5; Italy PreIMO 2009, 2020, 2021, 2023–26; Belgium 2009–21 (archive behind login); Uruguay after 2017; Thailand TST after 2021.
+2. Older leftovers: Kürschák 2025 and 2009–2016, Australia AMO after 2020, Italy before 1997, Croatia national before 2015, Serbia SMO 2015/2020/2021/2025 and TST 2008–2015.
+3. **AoPS-only (ask him first; he downloads the files himself):** Iran, Taiwan, Israel; TSTs of China, Vietnam, India, Japan, Spain, Poland, Brazil, Mexico, Canada, Bulgaria, Ukraine. (Morocco TST 2017 was added and then removed at his request.)
+4. Source-fidelity checks for the remaining ~9,300 records.
 
 ## Known pitfalls
 - Some official PDFs mislabel things: wrong year in a header, a 2nd-round page inside a final, a primary-school paper filed as a TST. Always check the header against the year.
 - Don't add problems from doubtful sources. The old eisatopon-next "Olympiad Bank" data is unreliable (summarised statements, wrong years).
 - Keep commits small and verified. After pushing, check that the raw.githubusercontent URLs of new images return 200.
+- Thematic topics are AI-assigned; grid/tiling problems are sometimes tagged Geometry rather than Combinatorics. Fix via the override files, not the classifier regexes alone.
+- `metadata/topic-overrides.json` is ~6.6 MB: never load it from index.html; use the runtime files.

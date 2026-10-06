@@ -6,6 +6,7 @@ const metadata = JSON.parse(fs.readFileSync('metadata/collections.json', 'utf8')
 const ctx = {URL, collectionMetadata:metadata, CBY:{ca:{file:'Canada-cmo-problems.json'}},
   esc:s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')};
 vm.createContext(ctx);
+vm.runInContext(html.slice(html.indexOf('function textHash('),html.indexOf('function classifyStatement(')),ctx);
 vm.runInContext(html.slice(html.indexOf('function safeSourceUrl('),html.indexOf('/* ---------- Mathematical connections')),ctx);
 const uid='ca.1969.0.1';
 const text=metadata['Canada-cmo-problems.json'].statement_checks[uid].reviewed_statement;

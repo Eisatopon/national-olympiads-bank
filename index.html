@@ -594,6 +594,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
    Δεδομένα και σταθερές
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
+// Bump on every data change so browsers never mix old and new files.
+const DATA_VERSION = '20261006-runtime-metadata';
 const FIRST = 1962, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -799,6 +801,20 @@ function bodyHtml(text) {
 /* ==========================================================
    Φόρτωση και ομαλοποίηση δεδομένων
    ========================================================== */
+/* ---------- Statement fingerprints ----------
+   The browser receives a short fingerprint of each reviewed statement instead of a full copy
+   (see scripts/build_runtime_metadata.py). 32-bit FNV-1a over UTF-16 code units. */
+function textHash(text) {
+    const s = String(text);
+    let h = 0x811c9dc5;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193); }
+    return (h >>> 0).toString(16).padStart(8, '0');
+}
+function sameStatement(record, text) {
+    if (!record) return false;
+    if (typeof record.reviewed_statement === 'string') return record.reviewed_statement === text;
+    return typeof record.h === 'string' && record.h === textHash(text);
+}
 function classifyStatement(text) {
     const t = String(text).replace(/https?:\/\/\S+/g, '').normalize('NFKC').replace(/(\d)([a-z])/gi, '$1 $2').toLowerCase();
     const geometry = /\b(triangles?|quadrilaterals?|quadrangles?|circles?|circumcircles?|incircles?|tangen(?:t|ts|cy)|collinear|concurrent|perpendicular|parallel|angles?|polygons?|rectangles?|rhomb(?:us|uses|i)|trapezi(?:um|a)|trapezoids?|tetrahedr(?:on|a)|circumcent(?:re|er)|orthocent(?:re|er)|incent(?:re|er)|spheres?|cuboids?|pyramids?|polyhedr(?:on|a)|parallelograms?|heptagons?|hexagons?|pentagons?|octagons?|nonagons?|decagons?|disks?|diameters?|chords?|rhombuses|semicircles?|segments?|prisms?|compass|rhombuses|ellipses?|similarity|homothety|inversion|isometr(?:y|ies))\b|\b\d+\$?-gon\b|\\angle\b|\b(?:inscribed|circumscribed|lateral faces|angular distance|circular|side length|surface area|geometric construction|points in the plane|map.*plane.*distances|x\$?-axis|plane.*origin|line segments|straight line|unit square|square with side|squares.*area|area.*squares|intersecting lines|intersection point|equal areas|inscribed spheres)\b|\bcubes?\b(?!\s+(?:of|root|number|integer))|\bsquares?\s+(?:abcd|abce|pqrs)\b/.test(t);
@@ -818,7 +834,7 @@ function classifyStatement(text) {
 }
 function topicFields(text, category, uid) {
     const reviewed = typeof topicOverrides !== 'undefined' && topicOverrides[uid];
-    const topics = category ? [category] : reviewed?.reviewed_statement === text ? reviewed.topics : classifyStatement(text);
+    const topics = category ? [category] : sameStatement(reviewed, text) ? reviewed.topics : classifyStatement(text);
     return {topics, topic: topics.filter(t => t !== 'Unclassified').join(' · ') || null};
 }
 
@@ -867,7 +883,7 @@ function loadCountry(key) {
         onCountrySettled(key);
         return Promise.reject(new Error(message));
     }
-    const p = fetch(BASE + country.file + '?v=20261005-kazakhstan-2011-2013-final', {cache: 'no-cache'})
+    const p = fetch(BASE + country.file + '?v=' + DATA_VERSION, {cache: 'no-cache'})
         .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
         .then(txt => {
             let raw;
@@ -1106,11 +1122,11 @@ function provenanceHtml(p, print = false) {
     const gaps = meta?.missing_problem_numbers?.[String(p.year)];
     const candidate = meta?.statement_checks?.[p.uid];
     const editorial = meta?.statement_notes?.[p.uid];
-    const editorialText = editorial && editorial.reviewed_statement === p.text ? editorial.text : '';
+    const editorialText = editorial && sameStatement(editorial, p.text) ? editorial.text : '';
     const source = candidate && safeSourceUrl(candidate.source_url);
     // A changed statement must lose its checked badge immediately, even before CI.
     const checked = candidate?.status === 'statement_checked_against_source'
-        && candidate.reviewed_statement === p.text && source
+        && sameStatement(candidate, p.text) && source
         && Number.isInteger(candidate.source_page) && candidate.source_page > 0;
     const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
     const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_download_kind === 'statements_only' ? 'Statements PDF (no solutions)' : candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
@@ -1599,26 +1615,24 @@ function centerPick() {
 async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
-    try {
-        const response = await fetch('./metadata/collections.json?v=20261005-kazakhstan-2011-2013-final', {cache: 'no-cache'});
-        if (!response.ok) throw new Error('Metadata unavailable');
-        const data = await response.json();
-        if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
-        collectionMetadata = data.collections;
-    } catch (e) { metadataUnavailable = true; }
-    try {
-        const response = await fetch('./metadata/problem-dna.json');
-        if (!response.ok) throw new Error('DNA metadata unavailable');
-        const dna = await response.json();
-        if (dna.schema_version !== 1 || !dna.records || !dna.techniques) throw new Error('Invalid DNA metadata');
-        problemDna = dna;
-    } catch (e) { /* Concept-based connections remain available. */ }
-    try {
-        const response = await fetch('./metadata/topic-overrides.json?v=20261005-kazakhstan-2011-2013-final', {cache: 'no-cache'});
-        if (response.ok) { const topics = await response.json(); if (topics.schema_version === 1 && topics.records) topicOverrides = topics.records; }
-        const finalResponse = await fetch('./metadata/topic-overrides-final575.json');
-        if (finalResponse.ok) { const finalTopics = await finalResponse.json(); if (finalTopics.schema_version === 1 && finalTopics.records) topicOverrides = {...topicOverrides, ...finalTopics.records}; }
-    } catch (e) { /* Recorded categories and fallback classification remain available. */ }
+    // Start every metadata request at once and draw the grid without waiting for them.
+    const getJson = url => fetch(url, {cache: 'no-cache'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+    const META_V = '?v=' + DATA_VERSION;
+    const metadataReady = Promise.allSettled([
+        getJson('./metadata/runtime/collections.json' + META_V).then(data => {
+            if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
+            collectionMetadata = data.collections;
+        }).catch(() => { metadataUnavailable = true; }),
+        getJson('./metadata/problem-dna.json' + META_V).then(dna => {
+            if (dna.schema_version === 1 && dna.records && dna.techniques) problemDna = dna;
+        }).catch(() => { /* Concept-based connections remain available. */ }),
+        getJson('./metadata/runtime/topics.json' + META_V).then(topics => {
+            if (topics.schema_version !== 1 || !topics.records) return;
+            const out = {};
+            for (const [uid, rec] of Object.entries(topics.records)) out[uid] = {topics: rec[0], h: rec[1]};
+            topicOverrides = out;
+        }).catch(() => { /* Recorded categories and fallback classification remain available. */ })
+    ]);
     const incoming = parseIncoming();
     const merged = incoming.length ? [...new Set(incoming)] : [...readSaved()];
     if (incoming.length) {
@@ -1635,6 +1649,8 @@ async function init() {
     syncToggle();
     renderExam();
 
+    // Topics and source notes are attached while each collection is normalised, so wait for them here.
+    await metadataReady;
     await refresh();
 
     const rest = COUNTRIES.map(c => c.key).filter(k => !cache.has(k) && !inflight.has(k));
