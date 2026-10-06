@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 12913 stored records; 1709 source-checked; 11204 remaining (including quarantine).
+Inventory: 12933 stored records; 1709 source-checked; 11224 remaining (including quarantine).
 
-Active bank: 12913 records; 1709 source-checked; 11204 remaining. Whole-bank source verification is **not complete**.
+Active bank: 12933 records; 1709 source-checked; 11224 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -41,7 +41,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Iceland-final-problems.json | 78 | 0 | 78 | pending |
 | India-inmo-problems.json | 235 | 0 | 235 | pending |
 | Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
-| Ireland-irmo-problems.json | 375 | 0 | 375 | pending |
+| Ireland-irmo-problems.json | 395 | 0 | 395 | pending |
 | Italy-itamo-problems.json | 180 | 0 | 180 | pending |
 | Italy-preimo-tst-problems.json | 109 | 109 | 0 | stored_statements_checked |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
