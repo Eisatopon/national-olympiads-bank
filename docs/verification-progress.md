@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 12572 stored records; 1709 source-checked; 10863 remaining (including quarantine).
+Inventory: 12587 stored records; 1709 source-checked; 10878 remaining (including quarantine).
 
-Active bank: 12572 records; 1709 source-checked; 10863 remaining. Whole-bank source verification is **not complete**.
+Active bank: 12587 records; 1709 source-checked; 10878 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -36,7 +36,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Greece-tst-problems.json | 72 | 1 | 71 | pending |
 | HongKong-chkmo-problems.json | 100 | 0 | 100 | pending |
 | HongKong-tst-problems.json | 313 | 0 | 313 | pending |
-| Hungary-kurschak-problems.json | 27 | 0 | 27 | pending |
+| Hungary-kurschak-problems.json | 30 | 0 | 30 | pending |
 | Hungary-oktv-problems.json | 63 | 0 | 63 | pending |
 | Iceland-final-problems.json | 78 | 0 | 78 | pending |
 | India-inmo-problems.json | 235 | 0 | 235 | pending |
@@ -60,7 +60,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 444 | 0 | 444 | pending |
 | Portugal-opm-problems.json | 98 | 0 | 98 | pending |
-| Romania-nmo-problems.json | 40 | 0 | 40 | pending |
+| Romania-nmo-problems.json | 52 | 0 | 52 | pending |
 | Romania-tst-problems.json | 40 | 0 | 40 | pending |
 | Russia-aro-problems.json | 289 | 0 | 289 | pending |
 | Serbia-smo-problems.json | 90 | 0 | 90 | pending |
