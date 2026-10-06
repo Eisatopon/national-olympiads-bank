@@ -2,6 +2,26 @@
   "competition": "Serbia IMO Team Selection Test",
   "years": [
     {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "If $p(x)$ is a polynomial, denote by $p^n(x)$ the polynomial $p(p(\\ldots p(x)\\ldots))$, where $p$ is iterated $n$ times. Prove that the polynomial $p^{2003}(x)-2p^{2002}(x)+p^{2001}(x)$ is divisible by $p(x)-x$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $M$ and $N$ be distinct points in the plane of a triangle $ABC$ such that $AM : BM : CM = AN : BN : CN$. Prove that the line $MN$ passes through the circumcenter of triangle $ABC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Each side and each diagonal of a convex $n$-gon $(n\\geq 3)$ is colored red or blue. Prove that the vertices of the $n$-gon can be labeled $A_1,A_2,\\ldots,A_n$ in such a way that one of the following two conditions is satisfied:\n\n(a) all segments $A_1A_2,A_2A_3,\\ldots,A_{n-1}A_n,A_nA_1$ have the same colour;\n\n(b) there exists a number $k$, $1<k<n$, such that the segments $A_1A_2,A_2A_3,\\ldots,A_{k-1}A_k$ are blue and the segments $A_kA_{k+1},\\ldots,A_{n-1}A_n,A_nA_1$ are red."
+        }
+      ]
+    },
+    {
       "year": 2004,
       "problems": [
         {
@@ -58,6 +78,41 @@
           "day": 1,
           "number": 3,
           "problem": "Find all positive integers $n$ and $k$, $k > 1$, such that $k$ divides each of the numbers\n$$\\binom{n}{1}, \\binom{n}{2}, \\dots, \\binom{n}{n-1}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\alpha$ and $\\beta$ be the angles of a non-isosceles triangle $ABC$ at the vertices $A$ and $B$, respectively. Let the bisectors of these angles meet the opposite sides of the triangle at $D$ and $E$, respectively. Prove that the acute angle between the lines $DE$ and $AB$ is not greater than $\\frac{|\\alpha-\\beta|}{3}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find the least number which is divisible by $2009$ and whose sum of digits is $2009$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find the largest natural number $n$ for which there exist different sets $S_1,S_2,\\ldots,S_n$ such that\n\n$1^\\circ$ $|S_i\\cup S_j|\\leq 2004$ for any two $1\\leq i,j\\le n$, and\n\n$2^\\circ$ $S_i\\cup S_j\\cup S_k=\\{1,2,\\ldots,2008\\}$ for any three integers $1\\le i<j<k\\le n$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n \\in \\mathbb N$ and let $A_n$ be the set of all permutations $(a_1, \\ldots, a_n)$ of the set $\\{1, 2, \\ldots , n\\}$ for which $$k\\mid 2(a_1 + \\cdots+ a_k)\\quad\\text{for all } 1 \\leq k \\leq n.$$ Find the number of elements of the set $A_n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $x,y,z$ be positive real numbers such that $xy + yz + zx = x + y + z$. Prove the inequality $$\\frac1{x^2 + y + 1} + \\frac1{y^2 + z + 1} + \\frac1{z^2 + x + 1}\\le1.$$ When does equality hold?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k$ be the incircle, with center $S$, of a non-isosceles triangle $ABC$. The circle $k$ touches the sides $BC,CA,AB$ at the points $P,Q,R$, respectively. The line $QR$ meets $BC$ at the point $M$. A circle through the points $B$ and $C$ touches $k$ at the point $N$. The circumcircle of triangle $MNP$ meets the line $AP$ at a point $L$ different from $P$. Prove that the points $S,L,M$ are collinear."
         }
       ]
     },
@@ -363,6 +418,41 @@
           "day": 2,
           "number": 6,
           "problem": "In the plane there is a figure in the shape of an L-tromino (see the figure), composed of $3$ unit squares, which we denote by $\\Phi_0$. In each move we choose an arbitrary line in the plane and use it to construct a new figure. The figure $\\Phi_n$, obtained in move $n \\in \\mathbb{N}$, is the union of the figure $\\Phi_{n-1}$ and its reflection in the chosen line. Moreover, for a move to be valid, the area of the new figure must be twice the area of the previous one, that is, $P(\\Phi_n) = 2P(\\Phi_{n-1})$ must hold. Is it possible to tile the whole plane by this method?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/serbiatst_2024_p6_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $p \\geq 7$ be a prime number and $m \\in \\mathbb{N}$. Prove that $$\\left| p^m - (p - 2)! \\right| > p^2.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle. Let $A'$ be the reflection of the point $A$ in the line $BC$. Let $O$ and $H$ be the circumcenter and the orthocenter of triangle $ABC$, respectively, and let $E$ be the midpoint of the segment $OH$. Let $D$ and $L$ be the points where the reflection of the line $AA'$ in the line $OA'$ intersects the circumcircle of triangle $ABC$, where $D$ lies on the arc $BC$ not containing $A$. If $M$ is the point on the line $BC$ such that $OM \\perp AD$, prove that $\\angle MAD = \\angle EAL$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all functions $f : \\mathbb{Z} \\to \\mathbb{Z}$ such that\n\n• $f$ is strictly increasing;\n\n• there exists $M \\in \\mathbb{N}$ such that $f(x+1) - f(x) < M$ for all $x \\in \\mathbb{N}$;\n\n• for every $x \\in \\mathbb{Z}$ there exists $y \\in \\mathbb{Z}$ such that $$f(y) = \\frac{f(x) + f(x + 2024)}{2}.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For a permutation $\\pi$ of the set $A = \\{1, 2, \\ldots, 2025\\}$, define its colorfulness as the greatest natural number $k$ such that for all $1 \\le i, j \\le 2025$, $i \\ne j$: if $|i - j| < k$, then $|\\pi(i) - \\pi(j)| \\ge k$. What is the maximum possible colorfulness of a permutation of the set $A$? Determine how many permutations have maximal colorfulness."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine the smallest positive real number $\\alpha$ such that there exists a sequence of positive real numbers $(a_n)$, $n \\in \\mathbb{N}$, with the property that for every $n \\in \\mathbb{N}$ $$a_1 + \\cdots + a_{n+1} < \\alpha \\cdot a_n.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For an $n \\times n$ table filled with natural numbers, we say it is a divisor table if\n\n• the numbers in the $i$-th row are exactly all the divisors of some natural number $r_i$;\n\n• the numbers in the $j$-th column are exactly all the divisors of some natural number $c_j$;\n\n• $r_i \\ne r_j$ for every $i \\ne j$.\n\nA prime number $p$ is given. Determine the smallest natural number $n$, divisible by $p$, such that there exists an $n \\times n$ divisor table, or prove that such $n$ does not exist."
         }
       ]
     },
