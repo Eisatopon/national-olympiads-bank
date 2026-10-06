@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 13621 stored records; 1709 source-checked; 11912 remaining (including quarantine).
+Inventory: 13955 stored records; 1709 source-checked; 12246 remaining (including quarantine).
 
-Active bank: 13621 records; 1709 source-checked; 11912 remaining. Whole-bank source verification is **not complete**.
+Active bank: 13955 records; 1709 source-checked; 12246 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -21,7 +21,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Chile-final-problems.json | 183 | 176 | 7 | pending |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
 | China-olympiad-problems.json | 246 | 240 | 6 | pending |
-| Croatia-drz-problems.json | 60 | 0 | 60 | pending |
+| Croatia-drz-problems.json | 96 | 0 | 96 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
 | Cyprus-tst-problems.json | 184 | 0 | 184 | pending |
 | CzechSlovak-mo-problems.json | 396 | 0 | 396 | pending |
@@ -39,15 +39,15 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Hungary-kurschak-problems.json | 228 | 0 | 228 | pending |
 | Hungary-oktv-problems.json | 63 | 0 | 63 | pending |
 | Iceland-final-problems.json | 90 | 0 | 90 | pending |
-| India-inmo-problems.json | 235 | 0 | 235 | pending |
+| India-inmo-problems.json | 262 | 0 | 262 | pending |
 | Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
 | Ireland-irmo-problems.json | 395 | 0 | 395 | pending |
 | Italy-itamo-problems.json | 249 | 0 | 249 | pending |
 | Italy-preimo-tst-problems.json | 109 | 109 | 0 | stored_statements_checked |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
 | Kazakhstan-rmo-problems.json | 94 | 6 | 88 | pending |
-| Korea-fkmo-problems.json | 108 | 0 | 108 | pending |
-| Korea-kmo-problems.json | 132 | 0 | 132 | pending |
+| Korea-fkmo-problems.json | 186 | 0 | 186 | pending |
+| Korea-kmo-problems.json | 180 | 0 | 180 | pending |
 | Latvia-vol-problems.json | 175 | 0 | 175 | pending |
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
@@ -55,7 +55,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Netherlands-final-problems.json | 312 | 0 | 312 | pending |
 | Netherlands-tst-problems.json | 212 | 0 | 212 | pending |
 | NewZealand-nzmo-problems.json | 40 | 40 | 0 | stored_statements_checked |
-| NorthMacedonia-mmo-problems.json | 34 | 0 | 34 | pending |
+| NorthMacedonia-mmo-problems.json | 97 | 0 | 97 | pending |
 | Norway-abel-problems.json | 136 | 0 | 136 | pending |
 | Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 444 | 0 | 444 | pending |
@@ -69,7 +69,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Slovenia-national-problems.json | 114 | 0 | 114 | pending |
 | Spain-ome-problems.json | 398 | 0 | 398 | pending |
 | Sweden-smt-problems.json | 384 | 120 | 264 | pending |
-| Swiss-final-problems.json | 196 | 0 | 196 | pending |
+| Swiss-final-problems.json | 206 | 0 | 206 | pending |
 | Swiss-selection-problems.json | 252 | 0 | 252 | pending |
 | Thailand-tmo-problems.json | 314 | 294 | 20 | pending |
 | Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
@@ -79,7 +79,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Uk-bmo1-problems.json | 132 | 0 | 132 | pending |
 | Uk-bmo2-problems.json | 88 | 0 | 88 | pending |
 | Uk-tst-problems.json | 285 | 0 | 285 | pending |
-| Ukraine-umo-problems.json | 16 | 0 | 16 | pending |
+| Ukraine-umo-problems.json | 88 | 0 | 88 | pending |
 | Uruguay-final-v-problems.json | 28 | 28 | 0 | stored_statements_checked |
 | Usa-tst-problems.json | 85 | 85 | 0 | stored_statements_checked |
 | Usa-tstst-problems.json | 132 | 0 | 132 | pending |
