@@ -80,8 +80,9 @@ Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: 
 ## Next tasks
 1. **Open source gaps** (details: `docs/source-gap-audit-2026-10-03.md`): Chile figures (1989 P3, 1991 P6–7, 1995 two figures, 2025 P3), Chile 1991 only P3 stored, Chile 1998/2004/2005/2017 and 1999 P2 missing; Argentina missing 1994/1, 1996/1, 2007/4, 2008/1, 2010/5; Italy PreIMO 2009, 2020, 2021, 2023–26; Belgium 2009–21 (archive behind login); Uruguay after 2017; Thailand TST after 2021.
 2. Older leftovers: Kürschák 2025 and 2009–2016, Australia AMO after 2020, Italy before 1997, Croatia national before 2015, Serbia SMO 2015/2020/2021/2025 and TST 2008–2015.
-3. **AoPS-only (ask him first; he downloads the files himself):** Iran, Taiwan, Israel; TSTs of China, Vietnam, India, Japan, Spain, Poland, Brazil, Mexico, Canada, Bulgaria, Ukraine. (Morocco TST 2017 was added and then removed at his request.)
-4. Source-fidelity checks for the remaining ~9,300 records.
+3. **AoPS National catalogue audit** (owner-supplied, 4 Oct 2026): `docs/aops-national-catalogue-audit-2026-10-04.md`. Its top section lists, per existing row, the years AoPS has that the bank lacks, plus candidate new countries (Greece National, Iran, Israel, Taiwan, Belarus, South Africa, …). Check it before searching for any competition; keep its status block up to date when you add years.
+4. **AoPS-only (ask him first; he downloads the files himself):** Iran, Taiwan, Israel; TSTs of China, Vietnam, India, Japan, Spain, Poland, Brazil, Mexico, Canada, Bulgaria, Ukraine. (Morocco TST 2017 was added and then removed at his request.)
+5. Source-fidelity checks for the remaining ~9,300 records.
 
 ## Known pitfalls
 - Some official PDFs mislabel things: wrong year in a header, a 2nd-round page inside a final, a primary-school paper filed as a TST. Always check the header against the year.
