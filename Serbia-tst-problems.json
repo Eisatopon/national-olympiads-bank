@@ -62,6 +62,46 @@
       ]
     },
     {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P(x)$ be a polynomial of degree $2012$ with real coefficients such that for all real numbers $a,b,c$ with $a+b+c=0$ $$P(a)^3+P(b)^3+P(c)^3\\ge 3P(a)P(b)P(c).$$ Can the polynomial $P(x)$ have exactly $2012$ distinct real roots?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Denote by $\\sigma(x)$ the sum of the divisors of a positive integer $x$, including $1$ and $x$. For every $n\\in\\mathbb{N}$, let $f(n)$ be the number of positive integers $m\\le n$ for which $\\sigma(m)$ is odd. Prove that there exist infinitely many positive integers $n$ such that $f(n)\\mid n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Points $P$ and $Q$ inside a triangle $ABC$ are such that $\\angle PAC=\\angle QAB$ and $\\angle PBC=\\angle QBA$.\n\na) Prove that the feet of the perpendiculars from $P$ and $Q$ to the sides of the triangle lie on one circle.\n\nb) Let $D$ and $E$ be the feet of the perpendiculars from $P$ to the lines $BC$ and $AC$, and let $F$ be the foot of the perpendicular from $Q$ to $AB$. The lines $DE$ and $AB$ meet at a point $M$. Prove that $MP$ is perpendicular to $CF$."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Polynomials $A(x)=a_nx^n+\\dots+a_1x+a_0$ and $B(x)=b_mx^m+\\dots+b_1x+b_0$ ($a_nb_m\\neq 0$) are called similar if the following conditions hold:\n\n(i) $n=m$;\n\n(ii) there exists a permutation $\\pi$ of the set $\\{0,1,\\dots,n\\}$ such that $b_i=a_{\\pi(i)}$ for every $i\\in\\{0,1,\\dots,n\\}$.\n\nLet $P(x)$ and $Q(x)$ be similar polynomials with integer coefficients. If $P(16)=3^{2012}$, what is the smallest possible value of $|Q(3^{2012})|$?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In an acute triangle $ABC$ ($AB\\neq AC$) with angle $\\alpha$ at the vertex $A$, the point $E$ is the nine-point centre, and $P$ is a point on the segment $AE$. If $\\angle ABP=\\angle ACP=x$, prove that $x=90^\\circ-2\\alpha$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A prime $p>3$ is given. For an arbitrary set $S\\subseteq\\mathbb{Z}$ and $a\\in\\mathbb{Z}$, let $$S_a=\\{x\\in\\{0,1,\\dots,p-1\\}\\mid (\\exists s\\in S)\\ x\\equiv a\\cdot s \\pmod p\\}.$$ (a) How many sets $S\\subseteq\\{1,2,\\dots,p-1\\}$ are there such that the sequence $S_1,S_2,\\dots,S_{p-1}$ contains exactly two distinct terms?\n\n(b) Determine all possible values of $k\\in\\mathbb{N}$ for which there exists a set $S\\subseteq\\{1,2,\\dots,p-1\\}$ such that the sequence $S_1,S_2,\\dots,S_{p-1}$ contains exactly $k$ distinct terms."
+        }
+      ]
+    },
+    {
       "year": 2016,
       "problems": [
         {
@@ -117,6 +157,41 @@
       ]
     },
     {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that there exist infinitely many positive integers $n$ such that at least one of the numbers $2^{2^n}+1$ and $2018^{2^n}+1$ is composite."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n$ be a given positive integer and let $x_1,x_2,\\dots,x_n$ be positive real numbers. Prove that $$x_1(1-x_1^2)+x_2(1-(x_1+x_2)^2)+\\dots+x_n(1-(x_1+x_2+\\dots+x_n)^2)<\\frac{2}{3}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Ana and Boba play the following game.\n\n$1^\\circ$ First Boba draws a triangle $\\triangle ABC$ and chooses a point $P$ inside it.\n\n$2^\\circ$ Then Ana and Boba, alternately and starting with Ana, choose three distinct permutations $\\sigma_1$, $\\sigma_2$ and $\\sigma_3$ of the set $\\{A,B,C\\}$.\n\n$3^\\circ$ Finally, Ana draws an arbitrary triangle $\\triangle V_1V_2V_3$.\n\nFor $i=1,2,3$, let $\\psi_i$ be the similarity transformation of the plane that maps the points $\\sigma_i(A)$, $\\sigma_i(B)$ and $\\sigma_i(C)$ to the points $V_i$, $V_{i+1}$ and $X_i$, respectively (we take $V_4=V_1$), where the triangle $\\triangle V_iV_{i+1}X_i$ lies outside $\\triangle V_1V_2V_3$. Finally, let $Q_i=\\psi_i(P)$. Ana wins if the triangles $\\triangle Q_1Q_2Q_3$ and $\\triangle ABC$ are similar (in some order of the vertices); otherwise Boba wins. Who has a winning strategy?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A proper isosceles trapezoid is an isosceles trapezoid whose legs are not parallel (thus parallelograms and rectangles are not proper isosceles trapezoids). Consider a partition of a rectangle into $n$ (possibly different) proper isosceles trapezoids. Such a partition is called strict if no union of $i$ trapezoids of the partition, for $2\\le i\\le n$, forms a proper isosceles trapezoid (in other words, the partition is strict if it cannot be obtained from some partition of that rectangle into fewer than $n$ proper isosceles trapezoids by further dividing some of the trapezoids of that partition into new trapezoids). Prove that for every positive integer $n\\ge 9$ there exists a strict partition of the $2017\\times 2018$ rectangle into $n$ proper isosceles trapezoids."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $H$ be the orthocenter of an acute triangle $\\triangle ABC$ with $AB\\neq AC$, and let $F\\neq A$ be the point on the circumcircle of this triangle for which $\\angle AFH=90^\\circ$. The point $K$ is the reflection of $H$ in the point $B$, the point $P$ is such that $\\angle PHB=\\angle PBC=90^\\circ$, and the point $Q$ is the foot of the perpendicular from $B$ to the line $CP$. Prove that the line $HQ$ is tangent to the circumcircle of $\\triangle FHK$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For a positive integer $n$, define $$c_n=\\min_{(z_1,z_2,\\dots,z_n)\\in\\{-1,1\\}^n}\\left|z_1\\cdot 1^{2018}+z_2\\cdot 2^{2018}+z_3\\cdot 3^{2018}+\\dots+z_n\\cdot n^{2018}\\right|.$$ Is the sequence $(c_n)_{n\\in\\mathbb{N}}$ bounded?"
+        }
+      ]
+    },
+    {
       "year": 2019,
       "problems": [
         {
@@ -148,6 +223,41 @@
           "day": 2,
           "number": 6,
           "problem": "Call a figurine a polyhedron with $26^{5^{2019}}$ faces. On each face of a figurine one number is written. When two figurines are thrown into the air (not necessarily with the same sets of written numbers), the one that lands on the face with the larger number wins; if the numbers are equal, the throw is repeated until different numbers are obtained. We say that one figurine dominates another if it has a greater probability of winning when they are thrown (it is possible that neither of two figurines dominates the other). Assume that every figurine lands on each of its faces with the same probability.\n\nMilisav and Milojka each have a figurine with no numbers written on it. First Milisav writes $26^{5^{2019}}$ (not necessarily distinct) positive integers on his figurine (one on each face), with the sum of the written numbers equal to $27^{5^{2019}}$. Having seen his figurine, Milojka then writes on her figurine (possibly different) positive integers whose sum is also $27^{5^{2019}}$. Can she always do this in such a way that she obtains a figurine which dominates Milisav's?"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that for every odd positive integer $n$ there exist real numbers $a_1,a_2,\\dots,a_{\\lfloor n/2\\rfloor}$ such that the polynomial $$P(x,y,z)=x^n+y^n+z^n+\\sum_{k=1}^{\\lfloor n/2\\rfloor}a_kx^ky^kz^{n-2k}$$ is divisible by the polynomial $x+y+z$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $D$ be an arbitrary point on the side $BC$ of a triangle $ABC$. Points $E$ and $F$ on the rays $CA$ and $BA$, respectively, are such that $CD=CE$ and $BD=BF$. The lines $BE$ and $CF$ meet at a point $P$. Prove that, as the point $D$ varies along the side $BC$, all the lines $PD$ pass through a common point."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A prime $p$ is given. How many ordered quadruples $(a,b,c,d)$ of positive integers not divisible by $p$ satisfy the equations $$ac+bd=p(a+c)\\quad\\text{and}\\quad bc-ad=p(b-d)?$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "If $a_1,a_2,\\dots,a_{2020}$ is a sequence of integers, what is the largest possible number of blocks of the form $a_i,a_{i+1},\\dots,a_j$ ($1\\le i\\le j\\le 2020$) whose terms sum to $2021$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The following operations may be performed on positive integers: if the number is even, it is divided by $2$, and if it is odd, it is multiplied by some power of $3$ (greater than $3^0$) and then increased by $1$. Prove that, for any starting number $n\\in\\mathbb{N}$, by repeatedly applying such operations one can obtain the number $1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $S=\\{1,2,\\dots,10^{10}\\}$. How many maps $f:S\\to S$ are there such that $$f(x+1)\\equiv f(f(x))+1 \\pmod{10^{10}}\\quad\\text{for every } x\\in S?$$ (For $x=10^{10}$ we take $f(x+1)=f(1)$.)"
         }
       ]
     },
