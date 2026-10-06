@@ -2,6 +2,1336 @@
   "competition": "Czech-Slovak Mathematical Olympiad (National Final, Category A)",
   "years": [
     {
+      "year": 1952,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a,b,c$ be positive rational numbers with $\\sqrt{a}+\\sqrt{b}=c$. Prove that $\\sqrt{a}$ and $\\sqrt{b}$ are rational."
+        },
+        {
+          "number": 2,
+          "problem": "A triangular table of positive integers $a_{ij}$ has $2i+1$ entries $a_{i1},\\ldots,a_{i,2i+1}$ in its $i$-th row. The first row $a_{11},a_{12},a_{13}$ consists of odd numbers only, and for $i>1$, $j\\geq 1$ $$a_{ij}=a_{i-1,j-2}+a_{i-1,j-1}+a_{i-1,j},$$ where terms whose second index is out of range are taken to be zero (e.g. $a_{22}=0+a_{11}+a_{12}$ and $a_{37}=a_{25}+0+0$). Prove that for every $i>1$ some entry $a_{ij}$, $j\\in\\{1,\\ldots,2i+1\\}$, is even."
+        },
+        {
+          "number": 3,
+          "problem": "$ABCD$ is a convex quadrilateral with $AB=CD$, and $R,S$ are the midpoints of $AD$ and $BC$. Rays $AU$ and $DV$ are drawn parallel to the ray $RS$ and pointing in the same direction. Prove that $\\angle BAU=\\angle CDV$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $p,q$ be positive integers. A rectangle $ABCD$ with sides $p$ and $q$ consists of $pq$ unit squares. How many of these squares does the diagonal $AC$ cross?"
+        }
+      ]
+    },
+    {
+      "year": 1953,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the locus of the complex numbers $z$ satisfying $$z+\\bar z=a\\cdot|z|,$$ where $a\\in\\mathbb{R}$ is given."
+        },
+        {
+          "number": 2,
+          "problem": "The angles $\\alpha,\\beta,\\gamma$ of a triangle are such that two of them can be written with an auxiliary angle $\\varphi$ as $$\\alpha=\\varphi+\\frac{\\pi}{4},\\qquad\\beta=\\pi-3\\varphi.$$ Prove that $\\alpha>\\gamma$."
+        },
+        {
+          "number": 3,
+          "problem": "Prove that $$\\left(a_1+\\cdots+a_n\\right)\\left(\\frac{1}{a_1}+\\cdots+\\frac{1}{a_n}\\right)\\geq n^2$$ for any positive numbers $a_1,\\ldots,a_n$, and determine when equality holds."
+        },
+        {
+          "number": 4,
+          "problem": "Skew lines $a,b$ and a plane $\\rho$ meeting both lines (but containing neither) are given. Points $X\\in a$, $Y\\in b$ are chosen so that $XY\\parallel\\rho$. Find the locus of the midpoints $M$ of the segments $XY$ as $X$ moves along $a$."
+        }
+      ]
+    },
+    {
+      "year": 1954,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Solve the equation $$ax^2+2(a-1)x+a-5=0$$ in real numbers, depending on the real parameter $a$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a,b$ be complex numbers. Prove that if the roots of the equation $z^2+az+b=0$ and $0$ form a triangle with a right angle at the origin, then $a^2=2b\\neq 0$. Does the converse hold?"
+        },
+        {
+          "number": 3,
+          "problem": "Prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "A cube $ABCDA'B'C'D'$ is given (with $AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let $X$ be an interior point of the segment $AB$ and $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\n(a) Let $M=B'Y\\cap D'X$. Find the locus of the points $M$.\n\n(b) Is there a quadrilateral $B'D'YX$ whose diagonals divide each other in the ratio $1:2$?"
+        }
+      ]
+    },
+    {
+      "year": 1955,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$ABCD$ is a trapezoid with $AB\\parallel CD$ and $AB>CD$. Let $E=AC\\cap BD$ and $F=AD\\cap BC$. The line through $E$ parallel to $AB$ meets $AD$ at $G$ and $BC$ at $H$, and $K,L$ are the midpoints of $AB$ and $CD$. Prove that:\n\n(a) $K$ and $L$ lie on the line $EF$;\n\n(b) the lines $AC$ and $KH$, and the lines $BD$ and $KG$, are not parallel (let $M=AC\\cap KH$, $N=BD\\cap KG$);\n\n(c) the points $F,M,N$ are collinear."
+        },
+        {
+          "number": 2,
+          "problem": "$S_1,S_2$ are concentric spheres with radii $a<b$. $ABCDA'B'C'D'$ is a square prism (with square bases $ABCD$, $A'B'C'D'$ and $AA'\\parallel BB'\\parallel CC'\\parallel DD'$) such that $A,B,C,D\\in S_2$, the plane $A'B'C'D'$ is tangent to $S_1$, and $\\frac{AB}{AA'}=\\frac{a}{b}$. Find $AB$ and $AA'$. How many such prisms are there (up to congruence)?"
+        },
+        {
+          "number": 3,
+          "problem": "In the complex plane consider the regular $17$-gon inscribed in the unit circle centred at the origin with one vertex at $1$. How many of its vertices lie in the open unit disc centred at $\\sqrt{3/2}\\,(1+i)$?"
+        },
+        {
+          "number": 4,
+          "problem": "Given distinct real numbers $a,b,c$, prove that the equation $$\\frac{1}{x-a}+\\frac{1}{x-b}+\\frac{1}{x-c}=0$$ has a real root."
+        }
+      ]
+    },
+    {
+      "year": 1956,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all $x,y\\in\\left(0,\\frac{\\pi}{2}\\right)$ such that $$\\frac{\\cos x}{\\cos y}=2\\cos^2y,\\qquad\\frac{\\sin x}{\\sin y}=2\\sin^2y.$$"
+        },
+        {
+          "number": 2,
+          "problem": "A convex quadrilateral $ABCD$ lies in a plane $\\varrho$, $E=AC\\cap BD$, and $V\\notin\\varrho$ is a point. Find points $A',B',C',D'$ on the rays $VA,VB,VC,VD$ such that $E,A',B',C',D'$ are coplanar and $A'B'C'D'$ is a parallelogram. Discuss the conditions of solvability."
+        },
+        {
+          "number": 3,
+          "problem": "Find all real pairs $(x,y)$ such that $$x-|y+1|=1,\\qquad x^2+y=10.$$"
+        },
+        {
+          "number": 4,
+          "problem": "A semicircle $AB$ is given, and $X$ is an interior point of the arc. $Y$ is the point of the ray $XA$ with $XY=XB$. Find the locus of $Y$ as $X$ moves on the arc $AB$ (endpoints excluded)."
+        }
+      ]
+    },
+    {
+      "year": 1957,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all real $p$ for which the equation $$\\sqrt{x^2-5p^2}=px-1$$ has the root $x=3$, and solve the equation for these values of $p$."
+        },
+        {
+          "number": 2,
+          "problem": "$ABCDV$ is a right square pyramid with apex $V$ and base $ABCD$. Let $d=\\frac{AB}{2}$ and $\\varphi$ the dihedral angle between the planes $VAD$ and $ABC$.\n\n(1) Consider the line $XY$ joining the skew lines $VA$ and $BC$, with $X$ on $VA$ and $Y$ on $BC$. Describe the construction of the line $XY$ for which the segment $XY$ is shortest, and find its length in terms of $d$ and $\\varphi$.\n\n(2) Find the distance $v=VX$ in terms of $d$ and $\\varphi$."
+        },
+        {
+          "number": 3,
+          "problem": "Find all real $\\alpha$ for which both $\\cot\\alpha$ and $\\cot 2\\alpha$ are integers."
+        },
+        {
+          "number": 4,
+          "problem": "A convex angle $POQ$, an interior point $M$ of it and a number $m>0$ are given. Construct a trapezoid $ABCD$ such that (1) $A,D$ lie on the ray $OP$ and $B,C$ on the ray $OQ$, (2) the diagonals $AC$ and $BD$ meet at $M$, and (3) $AB=m$. Prove that the construction is correct and discuss the conditions of solvability."
+        }
+      ]
+    },
+    {
+      "year": 1958,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all real solutions of the equation $x+\\sqrt{2p-x^2}=8$, depending on the real parameter $p$."
+        },
+        {
+          "number": 2,
+          "problem": "Construct a triangle $ABC$ given the angle $BCA$, the altitude $h_c$ and the median $m_c$. Discuss the conditions of solvability."
+        },
+        {
+          "number": 3,
+          "problem": "Find all real $x$ such that $$\\sqrt{2+\\frac{5}{2}\\cos x}\\leq\\sin x.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Positive numbers $d>v$ and two perpendicular skew lines $p,q$ at distance $v$ are given. Consider all segments $PQ$ with $P\\in p$, $Q\\in q$ and $PQ=d$.\n\n(a) Find the locus of the points $P$.\n\n(b) Find the locus of the midpoints of the segments $PQ$."
+        }
+      ]
+    },
+    {
+      "year": 1960,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all real $x$ such that $$\\frac{1}{\\sin^2x}-\\frac{1}{\\cos^2x}\\geq\\frac{8}{3}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "A cube $ABCDA'B'C'D'$ and a point $P$ on the line $AA'$ are given. Construct the centre $S$ of a sphere that has the plane $ABB'$ as a plane of symmetry, passes through $P$, and is tangent to the lines $AB$ and $A'D'$. Discuss the conditions of solvability depending on the position of $P$ on $AA'$."
+        },
+        {
+          "number": 3,
+          "problem": "Two points $A,M$ with $AM=d>0$ and a number $v>0$ are given in the plane. Construct a rhombus $ABCD$ with altitude $v$ such that $M$ is the midpoint of $BC$. Discuss the conditions of solvability and the number of solutions. Can $ABCD$ be a square?"
+        },
+        {
+          "number": 4,
+          "problem": "Find the real domain of the function $$y=\\sqrt{1-\\frac{x}{4}|x|+\\sqrt{1-\\frac{x}{2}|x|}}-\\sqrt{1-\\frac{x}{4}|x|-\\sqrt{1-\\frac{x}{2}|x|}}$$ and draw its graph."
+        }
+      ]
+    },
+    {
+      "year": 1961,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the infinite sequence $$1,2,2,3,3,3,4,4,4,4,5,\\ldots$$ each positive integer $n$ appears $n$ times in a row. Find the $1000$-th term of the sequence."
+        },
+        {
+          "number": 2,
+          "problem": "An isosceles right triangle $APQ$ with hypotenuse $AP$ is given in the plane. Construct a square $ABCD$ such that the lines $BC$ and $CD$ pass through $P$ and $Q$ respectively, and express its side $b=AB$ in terms of $a=AQ$."
+        },
+        {
+          "number": 3,
+          "problem": "Two cyclists start at the same time in opposite directions on a circular track, the first riding at a constant $c_1$ metres per second and the second at $c_2$ metres per second. How many times have they met when the first cyclist completes $n$ laps? Compute the answer for $c_1=10$, $c_2=7$, $n=11$."
+        },
+        {
+          "number": 4,
+          "problem": "$ABCD$ is a unit square and $XYZ$ a variable equilateral triangle with $X,Z$ on the rays $AB$, $DC$ respectively and $Y$ on the segment $AD$. Express the area of $XYZ$ in terms of $x=AX$ and find its maximum and minimum."
+        }
+      ]
+    },
+    {
+      "year": 1962,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all integers $x$ for which $2x^2-x-36$ is the square of a prime."
+        },
+        {
+          "number": 2,
+          "problem": "Determine (and draw) the set of all points $(x,y)$ of the plane such that $0\\leq x\\leq\\frac{\\pi}{2}$ and $$\\sqrt{1-\\sin 2x}-\\sqrt{1+\\sin 2x}\\leq y\\leq\\sqrt{1-\\cos 2x}-\\sqrt{1+\\cos 2x}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Skew lines $PM$ and $QN$ are given with $PM\\perp PQ\\perp QN$. In the plane $\\sigma\\perp PQ$ through the midpoint $O$ of $PQ$ a circle $k$ with centre $O$ and radius $r$ is drawn. Consider all segments $XY$ with $X$ on $PM$ and $Y$ on $QN$ that contain a point of $k$. Prove that all these segments have the same length, and find the locus of the points $X$."
+        },
+        {
+          "number": 4,
+          "problem": "A circle $k$ with centre $S$ and radius $r$ and a point $A\\neq S$ with $SA=d<r$ are given. A light ray leaves $A$, is reflected at $B\\in k$, then at $C\\in k$, and passes through $A$ again. Find the sine of the angle $SAB$ in terms of $d$ and $r$, and discuss the conditions of solvability."
+        }
+      ]
+    },
+    {
+      "year": 1963,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A cuboid $ABCDA'B'C'D'$ (with rectangular base $ABCD$ and $AA'\\parallel BB'\\parallel CC'\\parallel DD'$) has $AA'=d$, $\\angle ABD'=\\alpha$ and $\\angle A'D'B=\\beta$. Express $x=AB$ and $y=BC$ in terms of $d$ and the acute angles $\\alpha,\\beta$, and discuss the conditions of solvability."
+        },
+        {
+          "number": 2,
+          "problem": "Given an even positive integer $2k$, find relatively prime positive integers $x,y$ with $x+y=2k$ whose product $xy$ is maximal."
+        },
+        {
+          "number": 3,
+          "problem": "A line $MN$ is given in the plane. Consider circles $k_1,k_2$ tangent to the line at $M$ and $N$ respectively and externally tangent to each other. Let $P,Q$ be the points of tangency of their second common external tangent with $k_1$ and $k_2$, and $X$ the midpoint of $PQ$. Find the locus of $X$ over all such pairs of circles."
+        },
+        {
+          "number": 4,
+          "problem": "Two quadratic equations $$x^2+ax+b=0,\\qquad x^2+cx+d=0$$ with real coefficients are given. Find necessary and sufficient conditions for the first equation to have real roots $x,x_1$ and the second real roots $x,x_2$ with $x>0$ and $x_1>x_2$."
+        }
+      ]
+    },
+    {
+      "year": 1964,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that the number $11^{100}-1$ is divisible by $6000$ and that its last four decimal digits are $6000$."
+        },
+        {
+          "number": 2,
+          "problem": "$PP'$ and $QQ'$ are skew rays, and points $X$ and $Y$ start simultaneously from $P$ and $Q$ and move along the rays $PP'$ and $QQ'$ with constant speeds $c_1$ and $c_2$. Prove that the midpoint $Z$ of $XY$ always lies on a fixed ray $RR'$, where $R$ is the midpoint of $PQ$."
+        },
+        {
+          "number": 3,
+          "problem": "Find all values of the parameter $\\alpha\\in[0,2\\pi]$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$ and, if it has a second root $x_2\\neq x_1$, then $x_2\\leq 0$."
+        },
+        {
+          "number": 4,
+          "problem": "Points $A,S$ with $AS=a>0$ and positive numbers $b,c$ with $b<a<c$ are given in the plane. Construct an equilateral triangle $ABC$ with $BS=b$ and $CS=c$. Discuss the conditions of solvability."
+        }
+      ]
+    },
+    {
+      "year": 1965,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that $5^{2n+1}2^{n+2}+3^{n+2}2^{2n+1}$ is divisible by $19$ for every non-negative integer $n$."
+        },
+        {
+          "number": 2,
+          "problem": "A segment $AM=d>0$ and a number $v>0$ are given in the plane. Construct a right triangle $ABC$ with hypotenuse $AB$ and altitude to the hypotenuse of length $v$ such that $M$ lies on the leg $BC$ with $\\frac{MB}{MC}=\\frac{2}{3}$. Discuss the conditions of solvability in terms of $d$ and $v$."
+        },
+        {
+          "number": 3,
+          "problem": "Find all real roots of the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a real parameter."
+        },
+        {
+          "number": 4,
+          "problem": "A hollow cube $ABGCDEPF$ (with square faces $ABGC$, $DEPF$ and $AD\\parallel BE\\parallel GP\\parallel CF$) stands on a table so that its space diagonal $AP=1$ is perpendicular to the table. Water is poured into it, and $x$ denotes the length of the part of $AP$ under water. Express the volume $y$ of the water in terms of $x$ when\n\n(a) $0<x\\leq\\frac{1}{3}$;\n\n(b) $\\frac{1}{3}<x\\leq\\frac{1}{2}$."
+        }
+      ]
+    },
+    {
+      "year": 1966,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the system of inequalities $$y-x\\geq|x+1|-|x-1|,\\qquad |y-x|-y+x\\geq 2.$$ Draw the solution sets of the two inequalities in the plane and highlight the solution set of the system."
+        },
+        {
+          "number": 2,
+          "problem": "Into how many regions do $n$ circles divide the plane if every two of them meet at two points and no point lies on three circles?"
+        },
+        {
+          "number": 3,
+          "problem": "A square $ABCD$ with side $s=1$ and centre $S$ is given. Points $E,F$ lie on the rays opposite to $CB$ and $DA$, with $CE=a$ and $DF=b$. Find all triangles $XYZ$ with $X,Y,Z$ on the segments $CD$, $AD$, $BC$ respectively such that $E,S,F$ lie on the lines $XY$, $YZ$, $ZX$. Discuss the conditions of solvability in terms of $a$, $b$, $s$ and $x=CX$."
+        },
+        {
+          "number": 4,
+          "problem": "Two triangles $ABC$ and $ABD$ with the common side $c=AB$ are given in space: $ABC$ is right-angled with hypotenuse $AB$ and $ABD$ is equilateral. Let $\\varphi$ be the dihedral angle between the planes $ABC$ and $ABD$.\n\n(1) Find $CD$ in terms of $a=BC$, $b=CA$, $c$ and $\\varphi$.\n\n(2) Find all $\\varphi$ for which the tetrahedron $ABCD$ has four edges of equal length."
+        }
+      ]
+    },
+    {
+      "year": 1967,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all triples $(a,b,c)$ of complex numbers such that $a,b,c$ are roots of the equation $$x^4-ax^3-bx+c=0.$$"
+        },
+        {
+          "number": 2,
+          "problem": "A tetrahedron $ABCD$ satisfies $$AB^2+CD^2=AC^2+BD^2=AD^2+BC^2.$$ Prove that at least one of its faces is an acute triangle."
+        },
+        {
+          "number": 3,
+          "problem": "For $n\\geq 2$ consider the table of cyclic permutations $$\\begin{matrix}1,&2,&\\ldots,&n-1,&n\\\\ 2,&3,&\\ldots,&n,&1\\\\ \\vdots&\\vdots&&\\vdots&\\vdots\\\\ n,&1,&\\ldots,&n-2,&n-1.\\end{matrix}$$ Multiply each number of the first row by the number of the $k$-th row in the same column and let $s_k$ be the sum of these products (e.g. $s_2=1\\cdot 2+2\\cdot 3+\\cdots+(n-1)\\cdot n+n\\cdot 1$).\n\n(a) Find a recurrence expressing $s_k$ in terms of $s_{k-1}$, and an explicit formula for $s_k$.\n\n(b) Find the index $k$ for which $s_k$ is minimal and the minimal value."
+        },
+        {
+          "number": 4,
+          "problem": "$ABC$ is an acute triangle with circumcircle $k$, and $m$ is a line parallel to $BC$ that does not meet $k$. Let $D$ be the intersection of $m$ with the ray $AB$.\n\n(a) Let $X$ be an interior point of the arc $BC$ not containing $A$, and $Y$ the intersection of $m$ with the line $CX$. Prove that $A,D,X,Y$ are concyclic; call this circle $\\kappa$.\n\n(b) Determine the relative position of $\\kappa$ and $m$ when $C,D,X$ are collinear."
+        }
+      ]
+    },
+    {
+      "year": 1969,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all rational numbers $x,y$ such that $$\\left(x+y\\sqrt{5}\\right)^2=7+3\\sqrt{5}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Five distinct points $O,A,B,C,D$ in the plane satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral with vertices $A,B,C,D$ (in some order) satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and determine when equality holds."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $p$ be a prime. How many sequences $(a_k)_{k\\geq 0}$ are there such that for every positive integer $n$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all complex numbers $z$ such that $$\\Bigl|z-\\bigl|z+|z|\\bigr|\\Bigr|-|z|\\sqrt{3}\\geq 0,$$ and draw this set in the complex plane."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Two perpendicular lines $p,q$ and a point $A\\notin p\\cup q$ are given in the plane. Find the locus of the points $X$ such that $$XA=\\sqrt{d(X,p)\\cdot d(X,q)},$$ where $d(X,p)$ denotes the distance from $X$ to $p$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Circles $k_0,k_1,\\ldots,k_n$ $(n\\geq 3)$ of equal radius $r$ lie on a sphere of radius $1$. The circle $k_0$ is tangent to all the other circles, and $k_i$ is tangent to $k_{i+1}$ for $i=1,\\ldots,n$ (with $k_{n+1}=k_1$). (Two circles on the sphere are tangent if they have exactly one common point and the same tangent line there.)\n\n(a) Find the relation between $n$ and $r$.\n\n(b) For which $n$ is such a configuration possible, and what is the corresponding radius $r$?"
+        }
+      ]
+    },
+    {
+      "year": 1971,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a,b,c$ be real numbers. Prove that there are non-negative numbers $x,y,z$ with $xyz\\neq 0$ such that $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In a triangle $ABC$, points $D,A,B,E$ lie on the line $AB$ in this order with $DA=AB=BE$. Find a necessary and sufficient condition on $a=BC$ and $b=AC$ for the angle $DCE$ to be right."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\geq 96$. Prove that for every partition of $\\{2,3,\\ldots,n\\}$ into two sets, one of the sets contains two numbers together with their product. Show that this is false for $n=95$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that there are real numbers $A,B$ such that $$\\sum_{k=1}^n\\tan k\\,\\tan(k-1)=A\\tan n+Bn$$ for every positive integer $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A triangle $ABC$ is given. Find the locus of the vertices $Z$ of all equilateral triangles $XYZ$ with $X$ on the segment $AB$ and $Y\\neq X$ on the ray $AC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A tetrahedron $ABCD$ and an interior point $O$ are given. For each edge $e$ of the tetrahedron let $f(e)$ be the segment through $O$ parallel to $e$ with endpoints on the faces of the tetrahedron. Prove that $$\\sum_e\\frac{f(e)}{e}=3,$$ where the sum is over the six edges."
+        }
+      ]
+    },
+    {
+      "year": 1972,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that $$\\prod_{k=2}^n\\left(1-\\frac{1}{k^3}\\right)>\\frac{1}{2}$$ for every integer $n>1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$ABCDA'B'C'D'$ is a cube. For a rotation $\\mathcal{R}$ about some line with $\\mathcal{R}(A)=B$, let $X=\\mathcal{R}(C)$. Find the set of all such points $X$ that lie on the surface of the cube."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The polynomials $P_n$ are defined by $P_0(x)=2$, $P_1(x)=x$ and $P_{n+1}(x)+P_{n-1}(x)=xP_n(x)$ for $n\\geq 1$.\n\n(a) Find the polynomial $$Q_n(x)=P_n^2(x)-xP_n(x)P_{n-1}(x)+P_{n-1}^2(x)$$ for $n=1972$.\n\n(b) Express $\\big(P_{n+1}(x)-P_{n-1}(x)\\big)^2$ in terms of $P_n(x)$ and $Q_n(x)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that there are infinitely many positive integers $a$ such that $n^4+a$ is composite for every positive integer $n$. Give five such numbers $a$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "How many unordered pairs $\\{A,B\\}$ of disjoint subsets of $\\{1,\\ldots,n\\}$ are there?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Two distinct points $A,S$ and positive numbers $d,\\omega$ with $\\omega<180^\\circ$ are given in the plane. For a point $X$ let $X'$ be its image under the counter-clockwise rotation about $S$ through $\\omega$. Construct all points $X$ such that $XX'=d$ and $A$ lies on the segment $XX'$. Discuss the conditions of solvability in terms of $d$, $\\omega$ and $SA$."
+        }
+      ]
+    },
+    {
+      "year": 1973,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The angles of a triangle satisfy $$\\sin^2\\alpha+\\sin^2\\beta+\\sin^2\\gamma=2.$$ Prove that the triangle is right-angled."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a tetrahedron $A_1A_2A_3A_4$, the $A_1$-exsphere is the sphere tangent to the planes of all four faces such that $A_1$ and the sphere are separated by the plane $A_2A_3A_4$; the other exspheres are defined similarly, and $\\varrho_1,\\ldots,\\varrho_4$ are their radii. Let $v_i$ be the distance of $A_i$ from the opposite face. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A sequence of real numbers $(a_k)_{k\\geq 1}$ satisfies $a_{k-1}+a_{k+1}\\geq 2a_k$ for all $k>1$. Let $A_n=\\frac{1}{n}(a_1+\\cdots+a_n)$. Prove that $A_{n-1}+A_{n+1}\\geq 2A_n$ for every $n>1$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For every integer $n\\geq 2$ evaluate $$\\sum_{k=1}^{n^2-1}\\left\\lfloor\\sqrt{k}\\right\\rfloor.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For points $P,Q$ of the plane let $P+Q$ be the midpoint of the (possibly degenerate) segment $PQ$, and $P\\cdot Q$ the image of $P$ under the rotation about $Q$ through $+90^\\circ$.\n\n(a) Are these operations commutative?\n\n(b) For two distinct points $A,B$ the equation $Y\\cdot X=(A\\cdot X)+B$ defines a map $X\\mapsto Y$. What is this map?\n\n(c) Construct all fixed points of the map from (b)."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A polygonal line $L$ lies in a square of side $50$ so that every point of the square is at distance at most $1$ from some point of $L$. Prove that the length of $L$ is greater than $1248$."
+        }
+      ]
+    },
+    {
+      "year": 1974,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A sequence of positive numbers $(a_k)_{k\\geq 1}$ satisfies $a_{k-1}a_{k+1}\\geq a_k^2$ for all $k>1$. Let $b_n=(a_1a_2\\cdots a_n)^{1/n}$. Prove that $b_{n-1}b_{n+1}\\geq b_n^2$ for every $n>1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A triangle $ABC$ is given. For a point $X$ of the triangle let $m(X)=\\min\\{XA,XB,XC\\}$. Find all points $X$ of the triangle for which $m(X)$ is maximal."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a positive integer $m\\geq 10$ with distinct decimal digits, let $f(m)$ be the sum of all the numbers obtained by non-identical permutations of the digits of $m$; e.g. $f(302)=320+023+032+230+203=808$. Find all positive integers $x$ with $f(x)=138\\,012$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\mathcal{M}$ be the set of all polynomials $f$ of degree at most $3$ such that $|f(x)|\\leq 1$ for all $x\\in[-1,1]$, and let $a$ be the (possibly zero) coefficient of $x^3$ in $f$. Prove that there is a positive number $k$ such that $|a|\\leq k$ for all $f\\in\\mathcal{M}$, and find the least such $k$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$ABCDEF$ is a cyclic hexagon with $AB=BC$, $CD=DE$, $EF=FA$. Prove that $[ACE]\\leq[BDF]$ and determine when equality holds ($[XYZ]$ denotes the area of triangle $XYZ$)."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A unit square $\\mathcal{D}$ is given in the plane. For a point $X$ let $\\mathcal{D}_X$ be the image of $\\mathcal{D}$ under the rotation about $X$ through $+90^\\circ$. Find the locus of the points $X$ for which the area of $\\mathcal{D}\\cup\\mathcal{D}_X$ is at most $1.5$."
+        }
+      ]
+    },
+    {
+      "year": 1975,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\mathbf{T}$ be a triangle of area $1$. Prove that there is a right triangle $\\mathbf{R}$ of area at most $\\sqrt{3}$ with $\\mathbf{T}\\subseteq\\mathbf{R}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that the system $$\\lfloor x\\rfloor^2+\\lfloor y\\rfloor=0,\\qquad 3x+y=2$$ has infinitely many solutions and that all of them satisfy $0<x<4$ and $-9\\leq y\\leq 1$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all real $6$-tuples $(x_1,\\ldots,x_6)$ such that $$\\begin{aligned}x_1(x_6+x_2)&=x_3+x_5,& x_2(x_1+x_3)&=x_4+x_6,& x_3(x_2+x_4)&=x_5+x_1,\\\\ x_4(x_3+x_5)&=x_6+x_2,& x_5(x_4+x_6)&=x_1+x_3,& x_6(x_5+x_1)&=x_2+x_4.\\end{aligned}$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all real values of the parameter $p$ for which $$|x-2|+|y-3|+y=p$$ is the equation of a ray in the $xy$-plane."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A square $P_1P_2P_3P_4$ is given in the plane. Find the locus of the vertices $A$ of the isosceles triangles $ABC$ with $AB=BC$ whose vertices $B,C$ are points of the square."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A set $\\mathbf{M}\\subseteq\\mathbb{R}^2$ has the properties:\n\n(1) there is $(a,b)\\in\\mathbf{M}$ with $ab(a-b)\\neq 0$;\n\n(2) if $(x_1,y_1),(x_2,y_2)\\in\\mathbf{M}$ and $c\\in\\mathbb{R}$, then $(cx_1,cy_1)$, $(x_1+x_2,y_1+y_2)$ and $(x_1x_2,y_1y_2)$ belong to $\\mathbf{M}$.\n\nProve that $\\mathbf{M}=\\mathbb{R}^2$."
+        }
+      ]
+    },
+    {
+      "year": 1976,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all integers $x,y,z$ such that $$x^2+y^2=3z^2.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that for every $x\\in[0,1]$ $$\\frac{(1-x)x^2}{(1+x)^3}<\\frac{1}{25}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a half-plane with boundary line $p$ two points $M,N$ at different distances from $p$ are given. Construct a trapezoid $MNPQ$ of area $MN^2$ with $P,Q\\in p$. Discuss the conditions of solvability."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Solve the linear system $$\\begin{aligned}x_1-x_2-x_3-\\cdots-x_n&=2a,\\\\ -x_1+3x_2-x_3-\\cdots-x_n&=4a,\\\\ -x_1-x_2+7x_3-\\cdots-x_n&=8a,\\\\ &\\ \\ \\vdots\\\\ -x_1-x_2-x_3-\\cdots+(2^n-1)x_n&=2^na\\end{aligned}$$ in the unknowns $x_1,\\ldots,x_n$, where $a$ is a real parameter."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$\\mathbf{P}_1,\\mathbf{P}_2$ are convex polygons with perimeters $o_1,o_2$. Prove that if $\\mathbf{P}_1\\subseteq\\mathbf{P}_2$, then $o_1\\leq o_2$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Two non-coplanar half-planes $\\pi,\\pi'$ have the common boundary line $p$. Four points $A,B,C,D$ are given in $\\pi$ and four points $A',B',C',D'$ in $\\pi'$, none on $p$, such that $AA'\\parallel BB'\\parallel CC'\\parallel DD'$, and $A,B,C,D'$ are the vertices of a tetrahedron. Prove that $A',B',C',D$ are also the vertices of a tetrahedron, of the same volume as $ABCD'$."
+        }
+      ]
+    },
+    {
+      "year": 1977,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "$2050$ points are given in a unit cube. Prove that five of them lie in an open ball of radius $\\frac{1}{9}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Numbers $p,q>0$ are given. Construct a rectangle $ABCD$ with $AE=p$ and $AF=q$, where $E,F$ are the midpoints of $BC$ and $CD$. Discuss the conditions of solvability."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Consider all complex numbers $Z,W$ of absolute value $1$ with $\\operatorname{Im}Z\\geq 0$ and $\\operatorname{Re}W\\geq 0$. Find and draw the locus of all sums $S=Z+W$ in the complex plane."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all real solutions of the system $$x+y+z=3,\\qquad\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=\\frac{5}{12},\\qquad x^3+y^3+z^3=45.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$A_1,\\ldots,A_n$ are distinct collinear points, each coloured with one of four colours, every colour being used at least once. Prove that there is a segment (with endpoints among the points) on which two of the colours occur exactly once and the other two at least once."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$ABCDA'B'C'D'$ is a cube with $AA'\\parallel BB'\\parallel CC'\\parallel DD'$, and $S$ is the centre of the square $ABCD$. Find all points $X$ on the edges of the cube for which the tetrahedra $ABDX$ and $CB'SX$ have equal volumes."
+        }
+      ]
+    },
+    {
+      "year": 1978,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ be positive numbers. Prove that $$\\sqrt{(a_1+\\cdots+a_n)(b_1+\\cdots+b_n)}\\geq\\sqrt{a_1b_1}+\\cdots+\\sqrt{a_nb_n},$$ with equality if and only if $\\frac{a_1}{b_1}=\\cdots=\\frac{a_n}{b_n}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find a pair of real numbers $k,q$ such that $$2\\left|\\sqrt{1-x^2}-kx-q\\right|\\leq\\sqrt{2}-1$$ for all $x\\in[0,1]$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Find all real triples $(x,y,z)$ satisfying $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Is there a tetrahedron $ABCD$ with $AB+BC+CD+DA=12$ cm and volume at least $2\\sqrt{3}$ cm$^3$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$ABCD$ is an isosceles trapezoid, and $A',B',C',D'$ are the incentres of the triangles $BCD$, $CDA$, $DAB$, $ABC$. Prove that $A',B',C',D'$ are the vertices of a rectangle."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that $$p_n=\\left(\\frac{3+\\sqrt{5}}{2}\\right)^n+\\left(\\frac{3-\\sqrt{5}}{2}\\right)^n-2$$ is a positive integer for every positive integer $n$, and that $p_{2n-1}$ and $\\frac{p_{2n}}{5}$ are perfect squares."
+        }
+      ]
+    },
+    {
+      "year": 1979,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. Find the number of ordered triples $(x,y,z)$ of non-negative integers satisfying $$x+2y+5z=10n.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A cuboid $Q$ with dimensions $a<b<c$ is given. Find the edge of a cube $K$ with the same centre and parallel faces such that the volume of the set difference $(Q\\cup K)\\setminus(Q\\cap K)$ is minimal."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Prove that if a quadrilateral $ABCD$ inscribed in a circle of radius $1$ satisfies $AB\\cdot BC\\cdot CD\\cdot DA\\geq 4$, then $ABCD$ is a square."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For a positive integer $n$ find all $n$-tuples of real numbers $x_1\\leq x_2\\leq\\cdots\\leq x_n$ such that $$\\left(\\sum_{i=1}^nx_i\\right)^2\\leq n\\sum_{i=1}^nx_ix_{n-i+1}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A triangle $ABC$ with sides $a\\geq b\\geq c$ is given. Among all pairs of points $X,Y$ on its boundary that divide the boundary into two parts of equal length, find those for which the distance $XY$ is maximal."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all positive integers $n<10^7$ with the following property: every positive integer $m$ with $1<m<n$ that is relatively prime to $n$ is a prime."
+        }
+      ]
+    },
+    {
+      "year": 1981,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all $a\\in\\mathbb{R}$ for which the inequality $$x^4+x^3-2(a+1)x^2-ax+a^2<0$$ has at least one real solution $x$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. $n^2+1$ closed segments are given on a line. Prove that at least one of the following holds: (a) some $n+1$ of the segments have a common point; (b) some $n+1$ of the segments are pairwise disjoint."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "$ABCD$ is a unit square. Consider all equilateral triangles $XYZ$ with $X,Y$ inner or boundary points of the square. Find the locus $M$ of the vertices $Z$ and compute the area of $M$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Prove that there are a prime $p$ and a sequence $(a_k)_{k\\geq 1}$ of positive integers such that $(p+na_k)_{k\\geq 1}$ is a sequence of distinct primes."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. Find the maximum of $x_1+\\cdots+x_n$ over non-negative integers $x_1,\\ldots,x_n$ with $$x_1^3+\\cdots+x_n^3\\leq 7n.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$11$ distinct points are given inside a ball of volume $V$. Prove that there are two planes $\\varrho,\\sigma$ through the centre of the ball such that the spherical wedge they cut out has volume $\\frac{V}{8}$ and contains none of the given points in its interior."
+        }
+      ]
+    },
+    {
+      "year": 1982,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A tetrahedron $ABCD$ and points $K,L,M,N$ inside it, not lying in a plane, are given. Let $P,Q,R,S$ be the centroids of the tetrahedra $KBCD$, $ALCD$, $ABMD$, $ABCN$ (they do not lie in a plane either). Let $T$ be the centroid of $ABCD$, $T_0$ that of $PQRS$ and $T_1$ that of $KLMN$.\n\n(a) Prove that $T,T_0,T_1$ are collinear.\n\n(b) Find the ratio $T_0T:T_0T_1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $x_1,\\ldots,x_6$ be real numbers and $M$ the maximum of their absolute values. Prove that $$|x_1x_4-x_1x_5+x_2x_5-x_2x_6+x_3x_6-x_3x_4|\\leq 4M^2.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Give an example of a convex set $M$ in the $xy$-plane that contains infinitely many lattice points but such that every line of the plane contains only finitely many lattice points of $M$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "$64$ distinct points are chosen in a disc of radius $1$. Prove that $10$ of them lie in a disc of radius $\\frac{1}{2}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A sequence of real numbers $(a_n)_{n\\geq 1}$ with $a_n\\neq a_m$ for $n\\neq m$ and a positive integer $k$ are given. Construct an injective map $p:\\{1,2,\\ldots,20k\\}\\to\\mathbb{Z}^+$ such that $$a_{p(1)}<a_{p(2)}<\\cdots<a_{p(10)},\\quad a_{p(10)}>a_{p(11)}>\\cdots>a_{p(20)},\\quad a_{p(20)}<a_{p(21)}<\\cdots<a_{p(30)},\\quad\\ldots,\\quad a_{p(20k-10)}>\\cdots>a_{p(20k)},$$ and moreover $a_{p(10)}>a_{p(30)}>\\cdots>a_{p(20k-10)}$ and $a_{p(1)}<a_{p(20)}<\\cdots<a_{p(20k)}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n,k$ be positive integers. Find all $n$-tuples $(x_1,\\ldots,x_n)$ of non-negative real numbers satisfying $$x_1^k+x_2^k+\\cdots+x_n^k=1,\\qquad(1+x_1)(1+x_2)\\cdots(1+x_n)=2.$$"
+        }
+      ]
+    },
+    {
+      "year": 1983,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer and $k\\in[0,n]$ a real constant. Find the maximum of $$\\left|\\sum_{i=1}^n\\sin 2x_i\\right|$$ over real numbers $x_1,\\ldots,x_n$ with $\\sum_{i=1}^n\\sin^2x_i=k$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that for every triangle $ABC$ and every interior point $P$ of the side $AB$ $$PC\\cdot AB<PA\\cdot BC+PB\\cdot AC.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A $1\\times 2$ rectangular piece of paper is placed on an $8\\times 8$ chessboard made of unit squares. A square and the paper overlap if they have a common interior point. Find the maximum number of black squares that can overlap the paper."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a_0,\\ldots,a_n$ $(n\\geq 2)$ be an arithmetic progression. Prove that $$\\sum_{k=0}^n(-1)^k\\binom{n}{k}a_k=0.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all pairs $(x,y)$ of positive integers such that $$\\left|\\frac{x}{y}-\\sqrt{2}\\right|<\\frac{1}{y^3}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A circle $k$ with centre $S$ and radius $r$ is given. Let $\\mathsf{M}$ be the set of all triangles with incircle $k$ whose largest angle is twice the smallest. For $\\mathcal{T}\\in\\mathsf{M}$ label the vertices $A,B,C$ so that $SA\\geq SB\\geq SC$. Find the locus of the vertices $B$."
+        }
+      ]
+    },
+    {
+      "year": 1984,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "$S$ is the centre of a cube $A_1A_2\\ldots A_8$. Find all positive integers $k$ for which there is a plane not containing $S$ that meets exactly $k$ of the rays $SA_1,SA_2,\\ldots,SA_8$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that if the angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic or a trapezoid."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A sequence $(a_n)_{n\\geq 0}$ satisfies $$a_{n+2}=4a_{n+1}-3a_n.\\qquad(1)$$ Define $b_n=\\left\\lfloor\\frac{a_{n+1}}{a_{n-1}}\\right\\rfloor$ for $n\\geq 1$, with $b_n=1$ when $a_{n-1}=0$. Prove that from some term on the sequence $(b_n)$ also satisfies the recurrence $(1)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $r>1$ be a positive integer. Prove that there are positive irrational numbers $x,y$ such that $x^y=r$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all positive integers $n$ for which there is a convex polyhedron with $n$ edges, exactly one vertex of which has four edges while every other vertex has three edges."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A function $f:\\mathbb{Z}\\to\\mathbb{Z}$ satisfies $f(f(m))=-m$ for all $m\\in\\mathbb{Z}$. Prove that:\n\n(a) $f$ is a bijection of $\\mathbb{Z}$ onto itself;\n\n(b) $f(-m)=-f(m)$ for all $m$;\n\n(c) $f(m)=0$ if and only if $m=0$.\n\nAlso give an example of such a function."
+        }
+      ]
+    },
+    {
+      "year": 1985,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The lines containing the sides of a regular $1985$-gon are drawn. Into how many parts do they divide the plane?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$A_1,A_2,A_3$ are non-empty sets of integers such that for $\\{i,j,k\\}=\\{1,2,3\\}$, whenever $x\\in A_i$ and $y\\in A_j$, both $x+y$ and $x-y$ belong to $A_k$. Prove that at least two of the sets are equal. Can any two of the sets be disjoint?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Prove that if $\\vec u_1,\\ldots,\\vec u_n$ are vectors in the plane whose lengths have sum at least $1$, then some of them have a sum of length at least $\\frac{\\sqrt{2}}{8}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Two lines $p,q$ and a point $F\\in q$, $F\\notin p$, are given in the plane. Find the set of all points $X$ obtained by the following construction: choose a point $S$ on neither $p$ nor $q$ and draw the circle $k$ with centre $S$ tangent to $p$; choose $T$ on $k$ with $ST\\parallel q$; if the line $FT$ meets $p$ at $U$, let $X$ be the intersection of the lines $SU$ and $q$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A triangular table has $n$ rows and $n$ columns, its $i$-th row consisting of the cells in columns $1,\\ldots,i$ (so the $i$-th row ends in the $i$-th column, on the diagonal). Some of the numbers $1,2,\\ldots,n$ are written in its cells so that for every $k\\in\\{1,\\ldots,n\\}$ all the numbers $1,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,\\ldots,n$ is written in the last cell of some row."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that for every integer $n>1$ there is an arrangement $a_1,a_2,\\ldots,a_n$ of the numbers $1,2,\\ldots,n$ such that for every $k\\in\\{1,\\ldots,n-1\\}$ the number $a_{k+1}$ divides $a_1+a_2+\\cdots+a_k$."
+        }
+      ]
+    },
+    {
+      "year": 1986,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer and $A$ a family of subsets of $\\{1,2,\\ldots,n\\}$ such that for any $B,C\\in A$ the set $(B\\cup C)\\setminus(B\\cap C)$ has an even number of elements. Find the largest possible number of elements of $A$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $P(x)$ be a polynomial with integer coefficients of degree $n\\geq 3$. Prove that if $x_1,\\ldots,x_m$ $(n\\geq m\\geq 3)$ are distinct integers with $P(x_1)=\\cdots=P(x_m)=1$, then $P$ has no integer root."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A cross is the solid formed by a unit cube together with the six unit cubes attached to its faces. Prove that the whole space can be partitioned into such crosses."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "$C_1,C_2,C_3$ are points inside a bounded convex planar set $M$. Rays $l_1,l_2,l_3$ issuing from $C_1,C_2,C_3$ divide the complement of $M\\cup l_1\\cup l_2\\cup l_3$ into three regions $D_1,D_2,D_3$. Prove that if convex sets $A$ and $B$ satisfy $A\\cap l_j=\\emptyset=B\\cap l_j$ and $A\\cap D_j\\neq\\emptyset\\neq B\\cap D_j$ for $j=1,2,3$, then $A\\cap B\\neq\\emptyset$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A sequence of positive integers satisfies $a_1=1$ and $a_{n+2}=2a_{n+1}-a_n+2$ for $n\\in\\mathbb{N}$. Prove that for every $n$ there is $m$ such that $a_na_{n+1}=a_m$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A set $M\\subset\\mathbb{N}$ has the property that any two numbers $m,n\\in M$ satisfy $|m-n|\\geq\\frac{mn}{25}$. Prove that $M$ has at most $9$ elements. Does such a set with $9$ elements exist?"
+        }
+      ]
+    },
+    {
+      "year": 1987,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Given a trapezoid, divide it by a line into two quadrilaterals that are both cyclic with equal circumradii. Discuss the conditions of solvability."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p>3$ be a prime and $n>0$ an odd integer. Prove that the equation $$xyz=p^n(x+y+z)$$ has at least $3(n+1)$ different solutions in positive integers, up to permutation."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A function $f:(0,\\infty)\\to(0,\\infty)$ satisfies $f\\big(xf(y)\\big)+f\\big(yf(x)\\big)=2xy$ for all $x,y>0$. Prove that $f(x)=x$ for all $x>0$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n\\geq 3$ and let positive integers $x_1<x_2<\\cdots<x_n<2x_1$ be given. Prove that if $p$ is a prime and $r$ a positive integer such that $p^r$ divides $x_1\\cdots x_n$, then $$\\frac{x_1\\cdots x_n}{p^r}>n!.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a table with three rows and eleven columns, the cell in the first row and first column and the cell in the second row and last column contain zeros. Find the least real $\\alpha$ for which the table can be filled with non-negative numbers so that (1) the sum in every column is $1$, (2) the sum of any two neighbouring numbers in the first row is at most $1$, (3) the same holds in the second row, and (4) the sum of any two neighbouring numbers in the third row is at most $\\alpha$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$AA'$, $BB'$, $CC'$ are parallel lines not lying in one plane. Let $U$ be the intersection of the planes $A'BC$, $AB'C$, $ABC'$ and $V$ the intersection of the planes $AB'C'$, $A'BC'$, $A'B'C$. Prove that $UV\\parallel AA'$."
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $f$ be a map of $M=\\{1,2,\\ldots,1988\\}$ into itself, $x_1=f(1)$ and $x_{n+1}=f(x_n)$. Determine whether there is $m$ such that $x_{2m}=x_m$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The equation $x^3+ax^2+bx+c=0$ has only real roots and $a^2=2(b+1)$. Prove that $|a-c|\\leq 2$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a tetrahedron $ABCD$, $AD=BC=a$, $AC=BD=b$, $AB=c$ and $CD=d$. Find the least value of $AX+BX+CX+DX$ over all points $X$ in space."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that the numbers $1,2,3,\\ldots,2^n$ can be coloured red and blue so that no non-constant arithmetic progression of $2n$ terms chosen from them is monochromatic."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all $a\\in(-2,2)$ for which the polynomial $x^{154}-ax^{77}+1$ is divisible by $x^{14}-ax^7+1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Three points are given inside a triangle $A_1A_2A_3$ with sides $a_1,a_2,a_3$; they are labelled $P_1,P_2,P_3$ so that the product of their distances from the corresponding sides $a_1,a_2,a_3$ is as large as possible. Prove that the triangles $P_1A_2A_3$, $A_1P_2A_3$, $A_1A_2P_3$ cover the triangle $A_1A_2A_3$."
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Three distinct points $A,B,C$ on a circle with centre $S$ and a line $p$ perpendicular to $AS$ are given. Let $D$ and $E$ be the intersections of $p$ with the lines $AB$ and $AC$. Prove that $B,C,D,E$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$mn$ segments join pairs of $n$ given points in the plane. Prove that one can choose a sequence $V_0,V_1,\\ldots,V_m$ of distinct points among them such that $V_{i-1}$ and $V_i$ are joined by a segment for $1\\leq i\\leq m$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For given relatively prime numbers $p>q>0$, find all pairs of real numbers $c,d$ such that the sets $$A=\\left\\{\\left\\lfloor n\\frac{p}{q}\\right\\rfloor:n\\in\\mathbb{N}\\right\\},\\qquad B=\\{\\lfloor cn+d\\rfloor:n\\in\\mathbb{N}\\}$$ satisfy $A\\cap B=\\emptyset$ and $A\\cup B=\\mathbb{N}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "The sides of a triangle $T'$ are equal to the medians of a triangle $T$. Prove that if $T$ and $T'$ have a common angle, they are similar."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Each cell of a $2\\times n$ table is coloured black or white so that no $2\\times 2$ square is completely black. Let $P_n$ be the number of such colourings. Prove that $P_{1989}$ is divisible by $3$ and find the highest power of $3$ dividing it."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A finite sequence $a_1,a_2,\\ldots$ of positive integers not exceeding $n$ has any two neighbouring terms different, and no four terms satisfy $a_p=a_r\\neq a_q=a_s$ for $p<q<r<s$. Find the maximum number of terms of such a sequence."
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The sequence $(a_n)_{n\\geq 1}$ is given by $a_1=1$ and $a_{2^k+j}=-a_j$ for all $k\\geq 0$, $1\\leq j\\leq 2^k$. Prove that the sequence is not periodic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all $\\alpha\\in\\mathbb{R}$ with the following property: whenever positive numbers $x,y,z$ satisfy $$x^2+y^2+z^2\\leq\\alpha(xy+yz+zx),$$ they are the sides of a triangle."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "$ABCDEFGH$ is a cube. Consider planes whose intersection with the tetrahedron $ABDE$ is a triangle with an obtuse angle $\\varphi$. Find all $\\varphi>\\frac{\\pi}{2}$ for which such a plane exists."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find the largest $k\\geq 0$ such that $$\\left(\\sum_{j=1}^nx_j\\right)^2\\left(\\sum_{j=1}^nx_jx_{j+1}\\right)\\geq k\\sum_{j=1}^nx_j^2x_{j+1}^2$$ for every $n\\geq 2$ and all non-negative numbers $x_1,\\ldots,x_n$ (where $x_{n+1}=x_1$)."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a country any two towns are joined by exactly one one-way road, each road being intended either for cars or for cyclists. Prove that there is a town from which one can reach every other town without changing the means of transport."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k\\geq 1$ be an integer. Prove that there is a family $\\mathsf{S}$ of two-element subsets of $\\{1,\\ldots,2k\\}$ with the following property: whenever sets $\\mathsf{M}_1,\\ldots,\\mathsf{M}_{2k}$ satisfy $\\mathsf{M}_i\\cap\\mathsf{M}_j\\neq\\emptyset\\iff\\{i,j\\}\\in\\mathsf{S}$, the union $\\mathsf{M}_1\\cup\\cdots\\cup\\mathsf{M}_{2k}$ has at least $k^2$ elements."
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that for all real numbers $p,q,r,\\varphi$ $$p\\cos^2\\varphi+q\\sin\\varphi\\cos\\varphi+r\\sin^2\\varphi\\geq\\frac{1}{2}\\left(p+r-\\sqrt{(p-r)^2+q^2}\\right).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A museum has the shape of a (not necessarily convex) $3n$-gon. Prove that $n$ guards can be positioned so that they watch the whole museum."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a permutation $p$ of $\\{1,2,\\ldots,n\\}$ let $d(p)=|p(1)-1|+|p(2)-2|+\\cdots+|p(n)-n|$, and let $i(p)$ be the number of inversions of $p$ (pairs $i<j$ with $p(i)>p(j)$). Prove that $d(p)\\leq 2i(p)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that in every triangle $ABC$ with $\\angle A=2\\angle B$ the ratio of the distance from $C$ to $A$ to the distance from $C$ to the perpendicular bisector of $AB$ is the same."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a group of mathematicians everybody has at least one friend (friendship is mutual). Prove that some mathematician's friends have on average at least as many friends as the average number of friends in the whole group."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$\\mathbb{N}$ is partitioned into three subsets $A_1,A_2,A_3$. Prove that one of them has the following property: there is a positive number $m$ such that for every $k$ the subset contains numbers $a_1<a_2<\\cdots<a_k$ with $a_{j+1}-a_j\\leq m$ for $j=1,\\ldots,k-1$."
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a permutation $(a_1,a_2,\\ldots,a_{17})$ of $1,2,\\ldots,17$ let $k_p$ be the largest $k$ with $a_1+\\cdots+a_k<a_{k+1}+\\cdots+a_{17}$. Find the maximum and the minimum of $k_p$ and the sum $\\sum_pk_p$ over all permutations $p$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $S$ be the total surface area of a tetrahedron with edges $a,b,c,d,e,f$. Prove that $$S\\leq\\frac{\\sqrt{3}}{6}\\left(a^2+b^2+\\cdots+f^2\\right).$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $S(n)$ be the sum of the digits of $n\\in\\mathbb{N}$. Find all $n$ such that $S(n)=S(2n)=S(3n)=\\cdots=S(n^2)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Solve the equation $$\\cos 12x=5\\sin 3x+9\\tan^2x+\\cot^2x.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The function $f:(0,1)\\to\\mathbb{R}$ is defined by $f(x)=x$ if $x$ is irrational and $f(x)=\\frac{p+1}{q}$ if $x=\\frac{p}{q}$ with $\\gcd(p,q)=1$. Find the maximum of $f$ on the interval $\\left(\\frac{7}{8},\\frac{8}{9}\\right)$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$ABC$ is an acute triangle. The altitude from $B$ meets the circle with diameter $AC$ at $P,Q$, and the altitude from $C$ meets the circle with diameter $AB$ at $M,N$. Prove that $M,N,P,Q$ are concyclic."
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all positive integers $n$ for which $7^n-1$ is divisible by $6^n-1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Integers are written in the cells of a $19\\times 19$ table so that numbers in any two cells sharing a side differ by at most $2$. Find the greatest possible number of distinct integers in the table."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "$AKL$ is a triangle with $\\angle ALK>90^\\circ+\\angle LAK$. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that $K$ lies on the side $BC$, $L$ on the diagonal $AC$, and the lines $AK$ and $BL$ meet at the circumcentre of the trapezoid."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "The sequence of positive integers $(a_n)$ is defined by $a_1=2$ and, for $n\\geq 1$, $a_{n+1}$ is the sum of the tenth powers of the decimal digits of $a_n$. Does some number occur twice in the sequence?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all functions $f:\\mathbb{Z}\\to\\mathbb{Z}$ such that $f(-1)=f(1)$ and $$f(x)+f(y)=f(x+2xy)+f(y-2xy)$$ for all $x,y\\in\\mathbb{Z}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that there is a tetrahedron that can be partitioned into eight congruent tetrahedra, each similar to the original one."
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A function $f:\\mathbb{N}\\to\\mathbb{N}$ satisfies $f(x)+f(x+2)\\leq 2f(x+1)$ for all $x\\in\\mathbb{N}$. Prove that some line in the coordinate plane contains infinitely many points $(n,f(n))$, $n\\in\\mathbb{N}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A cuboid of volume $V$ contains a convex polyhedron $M$ whose orthogonal projection on each face of the cuboid covers the whole face. What is the least possible volume of $M$?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A closed polygonal line consists of $997$ diagonals of a convex $1994$-gon $M$, every vertex of $M$ being an endpoint of exactly one of these diagonals. Each diagonal divides the boundary of $M$ into two parts; the smaller of the numbers of sides of $M$ on the two parts is called the length of the diagonal. Is it possible that\n\n(a) $991$ diagonals have length $3$ and $6$ have length $2$?\n\n(b) $985$ diagonals have length $6$, $4$ have length $8$ and $8$ have length $3$?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A sequence of positive integers $a_1,a_2,\\ldots$ is such that for every $n$ the product $(a_n-1)(a_n-2)\\cdots(a_n-n^2)$ is a positive multiple of $n^{n^2-1}$. Prove that for every finite set $P$ of primes $$\\sum_{p\\in P}\\frac{1}{\\log_pa_p}<1.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In an acute triangle $ABC$ the altitudes $AA_1$, $BB_1$, $CC_1$ meet at $V$. If the triangles $AC_1V$, $BA_1V$, $CB_1V$ have equal areas, must the triangle $ABC$ be equilateral?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that among any four distinct numbers in the interval $(0,1)$ one can choose two, $a$ and $b$, such that $$\\sqrt{(1-a^2)(1-b^2)}>\\frac{a}{2b}+\\frac{b}{2a}-ab-\\frac{1}{8ab}.$$"
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A tetrahedron $ABCD$ satisfies $\\angle BAC+\\angle CAD+\\angle DAB=\\angle ABC+\\angle CBD+\\angle DBA=180^\\circ$. Prove that $CD\\geq AB$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find the positive real numbers $x,y$ for which $$\\frac{x+y}{2},\\quad\\sqrt{xy},\\quad\\frac{2xy}{x+y},\\quad\\sqrt{\\frac{x^2+y^2}{2}}$$ are integers with sum $66$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Five distinct points and five distinct lines are given in the plane. Prove that one can choose two of the points and two of the lines so that neither chosen line contains a chosen point."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Are there $10000$ ten-digit numbers divisible by $7$, any two of which can be obtained from each other by permuting the digits?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Points $A,B$ on a circle $k$ with centre $S$ satisfy $\\angle ASB=90^\\circ$. Circles $k_1$ and $k_2$ are tangent to each other at $Z$ and touch $k$ at $A$ and $B$ respectively. A circle $k_3$ inside the angle $ASB$ is internally tangent to $k$ at $C$ and externally tangent to $k_1$ and $k_2$ at $X$ and $Y$. Prove that $\\angle XCY=45^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all real parameters $p$ for which the equation $$x^3-2p(p+1)x^2+(p^4+4p^3-1)x-3p^3=0$$ has three distinct real roots that are the sides of a right triangle."
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A sequence satisfies $G(0)=0$ and $G(n)=n-G(G(n-1))$ for every $n\\in\\mathbb{N}$. Prove that:\n\n(a) $G(k)\\geq G(k-1)$ for every $k\\in\\mathbb{N}$;\n\n(b) there is no integer $k$ with $G(k-1)=G(k)=G(k+1)$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$AP$, $BQ$, $CR$ are the altitudes of an acute triangle $ABC$. Prove that for every point $X$ inside the triangle $PQR$ there is a tetrahedron $ABCD$ such that $X$ is the point of the face $ABC$ farthest from $D$, distances being measured along the surface of the tetrahedron."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Six three-element subsets of a finite set $X$ are given. Prove that the elements of $X$ can be coloured in two colours so that none of the given subsets is monochromatic."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Points $A$ and $B$ on the rays $CX$ and $CY$ of an acute angle $XCY$ satisfy $CX<CA=CB<CY$. Construct a line meeting the ray $CX$ and the segments $AB$, $BC$ at $K$, $L$, $M$ respectively such that $$KA\\cdot YB=XA\\cdot MB=LA\\cdot LB\\neq 0.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For which integers $k$ is there a function $f:\\mathbb{N}\\to\\mathbb{Z}$ such that $f(1995)=1996$ and $$f(xy)=f(x)+f(y)+kf(\\gcd(x,y))$$ for all $x,y\\in\\mathbb{N}$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Points $K,L,M$ on the sides $AB$, $BC$, $CA$ of a triangle $ABC$ satisfy $\\frac{AK}{AB}=\\frac{BL}{BC}=\\frac{CM}{CA}=\\frac{1}{3}$. Prove that if the circumcircles of the triangles $AKM$, $BLK$, $CML$ are congruent, then so are their incircles."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A triangle $ABC$ has sides $a,b,c$ and opposite angles $\\alpha,\\beta,\\gamma$. Prove that if $\\alpha=3\\beta$, then $(a^2-b^2)(a-b)=bc^2$. Is the converse true?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Each side and diagonal of a regular $n$-gon ($n\\geq 3$ odd) is coloured red or blue. In one move one may choose a vertex and change the colours of all segments issuing from it. Prove that, whatever the initial colouring, one can achieve that the number of blue segments at each vertex is even, and that the resulting colouring depends only on the initial colouring."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A tetrahedron $ABCD$ is divided into five polyhedra so that each face of the tetrahedron is a face of exactly one of the polyhedra, and any two of the polyhedra intersect in a common vertex, a common edge, a common face, or not at all. What is the least possible total number of faces of the five polyhedra?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that there is an increasing sequence $a_1,a_2,a_3,\\ldots$ of positive integers such that for every integer $k\\geq 2$ the sequence $(k+a_n)_{n\\in\\mathbb{N}}$ contains only finitely many primes."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For a given integer $n\\geq 2$ find the maximum of $$V_n=\\sin x_1\\cos x_2+\\sin x_2\\cos x_3+\\cdots+\\sin x_n\\cos x_1$$ over real numbers $x_1,\\ldots,x_n$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a parallelogram $ABCD$ the triangle $ABD$ is acute and $\\angle BAD=\\frac{\\pi}{4}$. Consider all choices of points $K,L,M,N$ on the sides $AB$, $BC$, $CD$, $DA$ such that $KLMN$ is a cyclic quadrilateral whose circumradius equals those of the triangles $ANK$ and $CLM$. Find the locus of the intersection of the diagonals of $KLMN$."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Solve the equation $x\\lfloor x\\lfloor x\\lfloor x\\rfloor\\rfloor\\rfloor=88$ in real numbers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that for any set of $14$ distinct positive integers there are $k$ $(1\\leq k\\leq 7)$ and two disjoint $k$-element subsets $\\{a_1,\\ldots,a_k\\}$ and $\\{b_1,\\ldots,b_k\\}$ such that $A=\\frac{1}{a_1}+\\cdots+\\frac{1}{a_k}$ and $B=\\frac{1}{b_1}+\\cdots+\\frac{1}{b_k}$ satisfy $|A-B|<0.001$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A sphere is inscribed in a tetrahedron $ABCD$. The tangent planes to the sphere parallel to the faces of the tetrahedron cut off four smaller tetrahedra. Prove that the sum of the $24$ edges of the smaller tetrahedra equals twice the sum of the edges of $ABCD$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For each date of the year $1998$ the number $\\text{day}^{\\text{month}}-\\text{year}$ is computed, together with the highest power of $3$ dividing it; e.g. for April $21$ we get $21^4-1998=192483=3^3\\cdot 7129$, divisible by $3^3$ but not by $3^4$. Find all dates for which this power of $3$ is the highest."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A circle $k$ and a point $A$ outside it are given in the plane. Prove that all trapezoids inscribed in $k$ whose legs (extended) meet at $A$ have the same intersection point of the diagonals."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a,b,c$ be positive numbers. Prove that there is a triangle with sides $a,b,c$ if and only if the system $$\\frac{y}{z}+\\frac{z}{y}=\\frac{a}{x},\\qquad\\frac{z}{x}+\\frac{x}{z}=\\frac{b}{y},\\qquad\\frac{x}{y}+\\frac{y}{x}=\\frac{c}{z}$$ has a real solution."
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Brackets may be inserted into the expression $$\\frac{29:28:27:\\cdots:16}{15:14:13:\\cdots:2},$$ always in the same places in the numerator and in the denominator (e.g. $\\frac{(29:28):27:\\cdots:16}{(15:14):13:\\cdots:2}$ is allowed, while $\\frac{(29:28):27:\\cdots:16}{15:(14:13):\\cdots:2}$ is not).\n\n(a) Find the smallest integer value that can be obtained.\n\n(b) Find all integer values that can be obtained."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In a tetrahedron $ABCD$, $E$ and $F$ are the midpoints of the medians from $A$ and $D$ (a median joins a vertex to the centroid of the opposite face). Find the ratio of the volumes of the tetrahedra $BCEF$ and $ABCD$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Prove that there is a triangle $ABC$ with $a\\neq b$ and $a+t_a=b+t_b$, where $t_a,t_b$ are the medians to the sides $a,b$. Prove also that there is a number $k$ such that every such triangle satisfies $a+t_a=b+t_b=k(a+b)$, and find all possible ratios $a:b$ in such triangles."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A language has only two letters, $A$ and $B$, and:\n\n(i) there are no words of length $1$, and the only words of length $2$ are $AB$ and $BB$;\n\n(ii) a string of length $n>2$ is a word if and only if it can be obtained from a word of length less than $n$ by replacing each letter $B$ by some (not necessarily the same) word.\n\nProve that the number of words of length $n$ equals $\\frac{2^n+2\\cdot(-1)^n}{3}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given an acute angle $APX$ in the plane, construct a square $ABCD$ such that $P$ lies on the side $BC$ and the ray $PX$ meets $CD$ at a point $Q$ with $AP$ bisecting the angle $BAQ$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all pairs of real numbers $a,b$ for which the system $$\\frac{x+y}{x^2+y^2}=a,\\qquad\\frac{x^3+y^3}{x^2+y^2}=b$$ has a real solution."
+        }
+      ]
+    },
+    {
       "year": 2000,
       "problems": [
         {
