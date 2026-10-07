@@ -141,6 +141,7 @@
     --bd: #1b7a4c; --bd-ink: #125234; --bd-tint: #e6f4ec;
     --bmo: #5c2d91; --bmo-ink: #3e1e63; --bmo-tint: #f0e9f7;
     --jbmo: #9c4dcc; --jbmo-ink: #5e2b7d; --jbmo-tint: #f6ecfb;
+    --imo: #a67c00; --imo-ink: #6b5000; --imo-tint: #fbf3dc;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -237,6 +238,7 @@
 .f-bd { --f: var(--bd); --f-ink: var(--bd-ink); --f-tint: var(--bd-tint); }
 .f-bmo { --f: var(--bmo); --f-ink: var(--bmo-ink); --f-tint: var(--bmo-tint); }
 .f-jbmo { --f: var(--jbmo); --f-ink: var(--jbmo-ink); --f-tint: var(--jbmo-tint); }
+.f-imo { --f: var(--imo); --f-ink: var(--imo-ink); --f-tint: var(--imo-tint); }
 
 /* ==========================================================
    Base
@@ -669,9 +671,9 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-balkan';
+const DATA_VERSION = '20261007-imo';
 const FIRST = 1947, LAST = 2026;
-const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
+const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
     gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
     az: 'asia', cn: 'asia', sg: 'asia', in: 'asia', kr: 'asia', kf: 'asia', id: 'asia', jp: 'asia', vn: 'asia', ph: 'asia',
@@ -749,6 +751,7 @@ REGION_OF.al = 'europe';
 REGION_OF.bd = 'asia';
 REGION_OF.bmo = 'europe';
 REGION_OF.jbmo = 'europe';
+REGION_OF.imo = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -847,6 +850,7 @@ const COUNTRIES = [
     { key: 'bd', name: 'Bangladesh', flag: '🇧🇩', file: 'Bangladesh-bdmo-problems.json', kind: 'years' },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
