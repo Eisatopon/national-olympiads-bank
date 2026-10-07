@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 16200 stored records; 1709 source-checked; 14491 remaining (including quarantine).
+Inventory: 16444 stored records; 1709 source-checked; 14735 remaining (including quarantine).
 
-Active bank: 16200 records; 1709 source-checked; 14491 remaining. Whole-bank source verification is **not complete**.
+Active bank: 16444 records; 1709 source-checked; 14735 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -59,11 +59,13 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
 | Mexico-omm-problems.json | 238 | 0 | 238 | pending |
+| Moldova-tst-problems.json | 132 | 0 | 132 | pending |
 | Netherlands-final-problems.json | 312 | 0 | 312 | pending |
 | Netherlands-tst-problems.json | 212 | 0 | 212 | pending |
 | NewZealand-nzmo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | NorthMacedonia-mmo-problems.json | 97 | 0 | 97 | pending |
 | Norway-abel-problems.json | 136 | 0 | 136 | pending |
+| Peru-tst-problems.json | 112 | 0 | 112 | pending |
 | Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 444 | 0 | 444 | pending |
 | Portugal-opm-problems.json | 182 | 0 | 182 | pending |

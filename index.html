@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 62 Countries, 1947–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Latvia, Lithuania, Mexico, the Netherlands, New Zealand, North Macedonia, Norway, Peru, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
+<title>National Olympiads Bank – Problems from 63 Countries, 1947–2026</title>
+<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Argentina, Australia, Austria, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Latvia, Lithuania, Mexico, Moldova, the Netherlands, New Zealand, North Macedonia, Norway, Peru, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -133,6 +133,7 @@
     --bgt: #2f855a; --bgt-ink: #1a4a32; --bgt-tint: #e2f3ea;
     --ba: #002395; --ba-ink: #001452; --ba-tint: #e0e6f7;
     --pe: #d91023; --pe-ink: #7a0914; --pe-tint: #fbe3e6;
+    --md: #0046ae; --md-ink: #00337f; --md-tint: #e6edf8;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -221,6 +222,7 @@
 .f-bgt { --f: var(--bgt); --f-ink: var(--bgt-ink); --f-tint: var(--bgt-tint); }
 .f-ba { --f: var(--ba); --f-ink: var(--ba-ink); --f-tint: var(--ba-tint); }
 .f-pe { --f: var(--pe); --f-ink: var(--pe-ink); --f-tint: var(--pe-tint); }
+.f-md { --f: var(--md); --f-ink: var(--md-ink); --f-tint: var(--md-tint); }
 
 /* ==========================================================
    Base
@@ -492,7 +494,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>62</b><span>countries</span></div>
+            <div class="stat"><b>63</b><span>countries</span></div>
             <div class="stat"><b>1947–2026</b><span>years</span></div>
         </div>
     </div>
@@ -623,7 +625,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-peru-tst';
+const DATA_VERSION = '20261007-moldova-tst';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -695,6 +697,7 @@ REGION_OF.uat = 'europe';
 REGION_OF.bgt = 'europe';
 REGION_OF.ba = 'europe';
 REGION_OF.pe = 'americas';
+REGION_OF.md = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -785,6 +788,7 @@ const COUNTRIES = [
     { key: 'bgt', name: 'Bulgaria TST', flag: '🇧🇬', file: 'Bulgaria-tst-problems.json', kind: 'years' },
     { key: 'ba', name: 'Bosnia and Herzegovina TST', flag: '🇧🇦', file: 'Bosnia-tst-problems.json', kind: 'years' },
     { key: 'pe', name: 'Peru TST', flag: '🇵🇪', file: 'Peru-tst-problems.json', kind: 'years' },
+    { key: 'md', name: 'Moldova TST', flag: '🇲🇩', file: 'Moldova-tst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
