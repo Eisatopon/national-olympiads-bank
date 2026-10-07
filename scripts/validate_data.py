@@ -11,8 +11,10 @@ KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2007): [1, 2, 3, 5, 6],
               ('Argentina-level3-problems.json', 2008): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2010): [1, 2, 3, 4, 6],
-              ('Chile-final-problems.json', 1991): [3]}
+              ('Chile-final-problems.json', 1991): [3],
+              ('Baltic-way-problems.json', 1996): [1] + list(range(3, 21))}
 # Chile 1991 is explicitly partial: the user requested its intact Problem 3 only.
+# Baltic Way 1996 P2 depends on a figure that is not available, so it is omitted.
 
 
 def validate(data, filename, root=ROOT):
