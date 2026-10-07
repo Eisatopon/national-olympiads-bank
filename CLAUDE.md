@@ -41,7 +41,7 @@ Live site: GitHub Pages of `Eisatopon/national-olympiads-bank` (this repo). Push
 5. **New country only:** bump the count in `<title>…Problems from N Countries…`, in `<b>N</b><span>countries</span>`, and add the country (alphabetical) to the `<meta name="description">` list.
 6. **Years outside 1950–2026:** update `const FIRST = 1950, LAST = 2026;` and the two "1950–2026" strings.
 
-7. **Bump `DATA_VERSION`** (one constant next to `BASE`) whenever data or metadata change: all fetches use `?v=DATA_VERSION` + `cache: 'no-cache'` so browsers never mix old and new files.
+7. **Bump `DATA_VERSION`** (one constant next to `BASE`) whenever data or metadata change. It must start with the date, `YYYYMMDD-...` (e.g. `20261007-moldova-tst`): the page shows it as "Updated 7 Oct 2026" under the totals. all fetches use `?v=DATA_VERSION` + `cache: 'no-cache'` so browsers never mix old and new files.
 
 The grid is grouped by continent (countries sorted alphabetically); groups are collapsed by default and only one is open at a time. Problem totals are computed at runtime.
 
@@ -74,7 +74,7 @@ The grid is grouped by continent (countries sorted alphabetically); groups are c
 
 Review layers (all AI-assisted, kept separate): source-fidelity checks (`statement_checks`, ~1,700 records — see `docs/verification-progress.md`), editorial notes for source errors (`statement_notes`), thematic topics (all 11,041 reviewed), Problem DNA pilot (13). A changed statement automatically loses its checks/topics until re-reviewed (fingerprint mismatch).
 
-Site features: continent grid (lazy loading via the manifest since 7 Oct 2026; the grid scrolls inside a box with a sticky year row, and a "Country, competition or year" box filters rows or jumps to a year column — Enter opens a single match or a year), topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
+Site features: continent grid (lazy loading via the manifest since 7 Oct 2026; the grid scrolls inside a box with a sticky year row, and a "Country, competition or year" box filters rows or jumps to a year column — Enter opens a single match or a year; the address bar keeps the current view as `?c=<key>&y=<year>&d=<day>&t=<topic>&q=<search>`, with a "Copy link to this view" button; `?set=` links still open a shared problem set), topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
 
 Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py`, `validate.py`, `add_row.py` (predates the collections.json/DATA_VERSION steps — do those by hand), `localtest.ps1`, `figcrop.py`.
 

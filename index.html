@@ -268,6 +268,9 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .stat { text-align: right; }
 .stat b { display: block; font: 800 1.7rem/1 var(--serif); }
 .stat span { font-size: .82rem; color: #aebccb; }
+.updated { flex-basis: 100%; text-align: right; font-size: .8rem; color: #aebccb; margin-top: -10px; }
+.updated:empty { display: none; }
+@media (max-width: 820px) { .updated { text-align: left; margin-top: -6px; } }
 
 /* ---------- Πίνακας χωρών × ετών ---------- */
 .mx-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-top: 18px; }
@@ -520,6 +523,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
             <div class="stat"><b>68</b><span>countries</span></div>
             <div class="stat"><b>1947–2026</b><span>years</span></div>
+            <p class="updated" id="statUpdated"></p>
         </div>
     </div>
 
@@ -654,7 +658,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-grid-find';
+const DATA_VERSION = '20261007-view-links';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -1333,6 +1337,7 @@ function headHtml(count) {
             ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
             ${!state.country ? '<a class="btn btn-sm" href="available-pdfs.html#israel">Available PDFs</a>' : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
+            ${wide || filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-copy-view>Copy link to this view</button>' : ''}
             ${wide ? '<button type="button" class="btn btn-sm" data-all-scope>All countries, all years</button>' : ''}
             ${count && count <= 60 ? `<button type="button" class="btn btn-sm" data-add-all>${ICON.plus} Add all (${count})</button>` : ''}
         </div>
@@ -1535,6 +1540,7 @@ function renderResults() {
                 </div>
             </div>`;
         say('No problems match.');
+        if (typeof syncUrl === 'function') syncUrl();
         return;
     }
 
@@ -1569,6 +1575,7 @@ function renderResults() {
     syncAddButtons();
     typeset(box());
     say(`${countText(total)}.`);
+    if (typeof syncUrl === 'function') syncUrl();
 }
 
 async function refresh() {
@@ -1756,6 +1763,48 @@ async function copyLink() {
     $('#copyStatus').textContent = 'Link copied.';
 }
 
+/* ---------- Link to the current view ----------
+   ?c=<row key>&y=<year>&d=<day>&t=<topic>&q=<search> reopens exactly this selection. */
+function viewQuery() {
+    const p = new URLSearchParams();
+    if (state.country) p.set('c', state.country);
+    if (state.year !== null) p.set('y', state.year);
+    if (state.day !== 'all') p.set('d', state.day);
+    if (state.topic !== 'all') p.set('t', state.topic);
+    if (state.q.trim()) p.set('q', state.q.trim());
+    return p.toString();
+}
+let urlReady = false;
+function syncUrl() {
+    if (!urlReady) return;
+    const qs = viewQuery();
+    const url = location.pathname + (qs ? '?' + qs : '') + location.hash;
+    if (url !== location.pathname + location.search + location.hash) history.replaceState(null, '', url);
+}
+function readView() {
+    const p = new URLSearchParams(location.search);
+    const c = p.get('c'), y = +p.get('y'), d = p.get('d'), t = p.get('t'), q = p.get('q');
+    if (c && CBY[c]) state.country = c;
+    if (p.has('y') && Number.isInteger(y) && y >= FIRST && y <= LAST) state.year = y;
+    if (d && /^\d{1,2}$/.test(d)) state.day = d;
+    if (t && t.length < 40) state.topic = t;
+    if (q) { state.q = q.slice(0, 120); $('#q').value = state.q; }
+    return !!(c || p.has('y') || d || t || q);
+}
+async function copyView() {
+    const url = location.origin + location.pathname + (viewQuery() ? '?' + viewQuery() : '');
+    try { await navigator.clipboard.writeText(url); say('Link to this view copied.'); }
+    catch (e) { prompt('Copy this link:', url); }
+    const b = $('[data-copy-view]'); if (b) { b.textContent = 'Link copied'; setTimeout(() => { if (b.isConnected) b.textContent = 'Copy link to this view'; }, 1800); }
+}
+function showUpdated() {
+    const m = /^(\d{4})-?(\d{2})-?(\d{2})/.exec(DATA_VERSION);
+    if (!m) return;
+    const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    if (isNaN(d)) return;
+    $('#statUpdated').textContent = 'Updated ' + d.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
+}
+
 function parseIncoming() {
     const set = new URLSearchParams(location.search).get('set');
     const out = [];
@@ -1785,6 +1834,7 @@ document.addEventListener('click', e => {
     if (t.dataset.topic !== undefined) { state.topic = t.dataset.topic; limit = PAGE; pendingCountries().length ? refresh() : renderResults(); return; }
     if (t.hasAttribute('data-clear-filters')) { state.day = 'all'; state.topic = 'all'; state.q = ''; $('#q').value = ''; limit = PAGE; pendingCountries().length ? refresh() : renderResults(); return; }
     if (t.hasAttribute('data-all-scope')) { setScope(null, null); return; }
+    if (t.hasAttribute('data-copy-view')) { copyView(); return; }
     if (t.hasAttribute('data-retry')) { failed.clear(); refresh(); return; }
     if (t.hasAttribute('data-more')) {
         limit += PAGE;
@@ -1897,6 +1947,8 @@ async function init() {
     }
     saveOptions(); renderCollections();
     if (incoming.length) { const [k, y] = incoming[0].split('.'); state.country = k; state.year = +y; }
+    else readView();
+    showUpdated();
 
     buildMatrix();
     centerPick();
@@ -1919,8 +1971,9 @@ async function init() {
     persist();
     renderExam();
 
+    urlReady = true;
+    syncUrl();
     if (incoming.length) {
-        history.replaceState(null, '', location.href.split('?')[0]);
         examEl.classList.add('open');
         syncToggle();
         say(`${countText(incoming.length)} from a shared set are ready.`);
