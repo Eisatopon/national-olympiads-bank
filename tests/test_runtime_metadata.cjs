@@ -48,4 +48,21 @@ for (const [file, meta] of Object.entries(fullMeta)) {
     checked++;
   }
 }
-console.log(`Runtime metadata checks passed: ${n} topic fingerprints, ${checked} provenance records identical.`);
+// The manifest (counts per file and year) must match what the browser derives from the full files,
+// because the grid and the totals are drawn from it before any collection is downloaded.
+const manifest = read('metadata/runtime/manifest.json').files;
+vm.runInContext(html.slice(html.indexOf('function normalizeYears('), html.indexOf('function loadCountry(')), ctx);
+const entries = [...html.matchAll(/\{\s*key:\s*'(\w+)',\s*name:\s*'[^']*',\s*flag:\s*'[^']*',\s*file:\s*'([^']+)',\s*kind:\s*'(\w+)'/g)];
+assert.ok(entries.length > 50, 'COUNTRIES entries not found');
+let files = 0;
+for (const [, key, file, kind] of entries) {
+  const raw = read(file);
+  const list = kind === 'usa' ? ctx.normalizeUsa({key}, raw) : ctx.normalizeYears({key}, raw);
+  const years = {};
+  list.forEach(p => { years[p.year] = (years[p.year] || 0) + 1; });
+  assert.ok(manifest[file], `${file}: missing from the manifest`);
+  assert.deepEqual(Object.fromEntries(Object.entries(manifest[file].years).map(([y, c]) => [y, c])), Object.fromEntries(Object.entries(years).map(([y, c]) => [String(y), c])), `${file}: manifest counts differ`);
+  assert.equal(manifest[file].total, list.length, `${file}: manifest total differs`);
+  files++;
+}
+console.log(`Runtime metadata checks passed: ${n} topic fingerprints, ${checked} provenance records identical, ${files} manifest entries match.`);

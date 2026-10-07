@@ -14,6 +14,10 @@ badge immediately, exactly as before.
 Usage:
     python scripts/build_runtime_metadata.py          # (re)write metadata/runtime/*
     python scripts/build_runtime_metadata.py --check  # fail if they are stale (CI)
+
+metadata/runtime/manifest.json holds the problem count per year of every
+collection file; index.html draws the grid and the totals from it and
+downloads a collection only when its problems are needed.
 """
 import json
 import sys
@@ -87,12 +91,39 @@ def build_collections():
     return {'schema_version': 1, 'hash': 'fnv1a32-utf16', 'collections': out}
 
 
+def build_manifest():
+    """Problem counts per year for every collection file.
+
+    The grid and the totals are drawn from this small file, so the browser
+    only downloads a collection when its problems are actually shown.
+    The counts must equal what index.html derives from the full file
+    (normalizeYears / normalizeUsa)."""
+    out = {}
+    for path in sorted(ROOT.glob('*-problems.json')):
+        raw = json.loads(path.read_text(encoding='utf-8'))
+        years = {}
+        if isinstance(raw.get('data'), dict):  # older USA TSTST schema
+            for yr, v in raw['data'].items():
+                n = sum(len(lst or []) for by_region in (v.get('problems') or {}).values()
+                        for lst in by_region.values())
+                if n:
+                    years[str(int(yr))] = years.get(str(int(yr)), 0) + n
+        else:
+            for y in raw.get('years') or []:
+                n = len(y.get('problems') or [])
+                if n:
+                    years[str(y['year'])] = years.get(str(y['year']), 0) + n
+        out[path.name] = {'total': sum(years.values()), 'years': years}
+    return {'schema_version': 1, 'files': out}
+
+
 def dump(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(',', ':'), sort_keys=False) + '\n'
 
 
 def main():
-    files = {'topics.json': dump(build_topics()), 'collections.json': dump(build_collections())}
+    files = {'topics.json': dump(build_topics()), 'collections.json': dump(build_collections()),
+             'manifest.json': dump(build_manifest())}
     if '--check' in sys.argv:
         stale = [n for n, body in files.items()
                  if not (OUT / n).exists() or (OUT / n).read_text(encoding='utf-8') != body]

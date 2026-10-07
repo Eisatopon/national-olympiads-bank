@@ -13,7 +13,7 @@ Live site: GitHub Pages of `Eisatopon/national-olympiads-bank` (this repo). Push
   - `collections.json`: per-collection source links, coverage notes, `missing_problem_numbers`, and per-problem `statement_checks` / `statement_notes` (each with a full `reviewed_statement` copy + `statement_sha256`).
   - `topic-overrides.json` + `topic-overrides-final575.json`: reviewed topics per uid (same full-copy scheme; final575 wins).
   - `problem-dna.json`: small pilot (13 records) of techniques; the site loads it directly.
-- `metadata/runtime/` — **generated, what the site downloads** (`topics.json`, `collections.json`): same information with an 8-hex fingerprint `h` (FNV-1a 32 over UTF-16, `textHash()` in index.html) instead of the full statement copy. ~150 KB gzipped instead of ~2.1 MB. **Never edit by hand.** After ANY change to a problem text or to `metadata/*.json`, run `python scripts/build_runtime_metadata.py` and commit the result; CI fails (`--check`) if it is stale.
+- `metadata/runtime/` — **generated, what the site downloads** (`topics.json`, `collections.json`, `manifest.json`): same information with an 8-hex fingerprint `h` (FNV-1a 32 over UTF-16, `textHash()` in index.html) instead of the full statement copy. ~150 KB gzipped instead of ~2.1 MB. `manifest.json` holds the problem count per file and year: the grid, the totals and the "All problems" first page are drawn from it, and a collection file is downloaded only when its problems are shown (a cell, a year column, a search/topic filter, Connections). **Never edit by hand.** After ANY change to a problem text or to `metadata/*.json`, run `python scripts/build_runtime_metadata.py` and commit the result; CI fails (`--check`) if it is stale.
 - `docs/`: audit reports and per-batch source records (`*-additions-*.json`, `source-gap-audit-*.md`, `verification-progress.md`). `docs/quarantine/` keeps the old corrupted China file.
 - `sources/`, `pdfs/`: downloaded source documents and statement-only PDFs (`available-pdfs.html`, `thailand-pdfs.html` list them).
 - `scripts/`: `validate_data.py`, `validate_topics.py`, `validate_dna.py`, `verification_progress.py`, `build_runtime_metadata.py`.
@@ -74,7 +74,7 @@ The grid is grouped by continent (countries sorted alphabetically); groups are c
 
 Review layers (all AI-assisted, kept separate): source-fidelity checks (`statement_checks`, ~1,700 records — see `docs/verification-progress.md`), editorial notes for source errors (`statement_notes`), thematic topics (all 11,041 reviewed), Problem DNA pilot (13). A changed statement automatically loses its checks/topics until re-reviewed (fingerprint mismatch).
 
-Site features: continent grid, topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
+Site features: continent grid (lazy loading via the manifest since 7 Oct 2026), topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
 
 Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py`, `validate.py`, `add_row.py` (predates the collections.json/DATA_VERSION steps — do those by hand), `localtest.ps1`, `figcrop.py`.
 

@@ -635,7 +635,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-bangladesh';
+const DATA_VERSION = '20261007-manifest';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -835,6 +835,7 @@ let collectionMetadata = {};
 let topicOverrides = {};
 let problemDna = {records:{}, techniques:{}};
 let metadataUnavailable = false;
+let manifest = null;          // metadata/runtime/manifest.json: problem counts per file and year
 let selected = [];
 let shownUids = [];
 let limit = PAGE;
@@ -989,6 +990,41 @@ function loadCountry(key) {
 }
 function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.key))); }
 
+/* ---------- Manifest: counts without downloading the collections ---------- */
+function manifestYears(key) {
+    const m = manifest && manifest.files && manifest.files[CBY[key].file];
+    return m ? m.years : null;
+}
+function yearCount(key, y) {
+    if (cache.has(key)) return cache.get(key).filter(p => p.year === y).length;
+    const ys = manifestYears(key);
+    return ys ? (ys[y] || 0) : 0;
+}
+function bankTotal() {
+    if (!manifest) return COUNTRIES.filter(c => cache.has(c.key)).reduce((s, c) => s + cache.get(c.key).length, 0);
+    return COUNTRIES.reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : (manifest.files[c.file] || {}).total || 0), 0);
+}
+/* "All problems" without filters shows the newest problems first, so only the
+   collections that reach the visible page are downloaded. */
+function browseTotal() {
+    if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
+    return bankTotal();
+}
+// The list is ordered by year (newest first), then by collection name, exactly as COUNTRIES.
+// Returns the last (year, collection index) needed to fill the first `limit` results.
+function browseCutoff() {
+    let sum = 0;
+    for (let y = LAST; y >= FIRST; y--) {
+        for (let i = 0; i < COUNTRIES.length; i++) {
+            const ys = manifestYears(COUNTRIES[i].key);
+            sum += ys ? (ys[y] || 0) : 0;
+            if (sum >= limit) return [y, i];
+        }
+    }
+    return [FIRST, COUNTRIES.length - 1];
+}
+
+
 /* ==========================================================
    Πίνακας χωρών × ετών
    ========================================================== */
@@ -1053,20 +1089,20 @@ function paintGroup(rk) {
     const keys = COUNTRIES.filter(c => regionOf(c.key) === rk).map(c => c.key);
     $$(`#mx .mx-grp[data-grp-row="${rk}"] .gcell`).forEach(g => {
         const y = +g.dataset.gy;
-        g.classList.toggle('on', keys.some(k => cache.has(k) && cache.get(k).some(p => p.year === y)));
+        g.classList.toggle('on', keys.some(k => yearCount(k, y) > 0));
     });
 }
 
 function paintCountry(key) {
     const list = cache.get(key);
-    const bad = failed.has(key);
+    const known = !!(list || manifestYears(key));
+    const bad = failed.has(key) && !list;
     const c = CBY[key];
     if (bad) $(`.rl[data-rl="${key}"]`).title = 'This file did not load';
     for (let y = LAST; y >= FIRST; y--) {
         const cell = $(`.cell[data-country="${key}"][data-year="${y}"]`);
-        const n = list ? list.filter(p => p.year === y).length : 0;
-        const was = cell.classList.contains('on');
-        cell.classList.toggle('pend', !list && !bad);
+        const n = bad ? 0 : yearCount(key, y);
+        cell.classList.toggle('pend', !known && !bad);
         cell.classList.toggle('err', bad);
         cell.classList.toggle('on', n > 0);
         cell.disabled = n === 0;
@@ -1094,8 +1130,8 @@ function syncMatrix() {
     $$('#mx button').forEach(b => { b.tabIndex = -1; });
     if (cur) cur.tabIndex = 0;
     const done = COUNTRIES.filter(c => cache.has(c.key)).length + failed.size;
-    $('#mxStatus').textContent = done < COUNTRIES.length ? `Loading ${done} of ${COUNTRIES.length} countries` : '';
-    const total = COUNTRIES.filter(c => cache.has(c.key)).reduce((s, c) => s + cache.get(c.key).length, 0);
+    $('#mxStatus').textContent = !manifest && done < COUNTRIES.length ? `Loading ${done} of ${COUNTRIES.length} countries` : '';
+    const total = bankTotal();
     if (total) $('#statTotal').textContent = total.toLocaleString('en-US');
 }
 
@@ -1128,6 +1164,7 @@ function scoped() {
     const keys = state.country ? [state.country] : COUNTRIES.map(c => c.key);
     let list = keys.flatMap(k => cache.get(k) || []);
     if (state.year !== null) list = list.filter(p => p.year === state.year);
+    else if (browseTotal()) { const [cy, ci] = browseCutoff(); const idx = Object.fromEntries(COUNTRIES.map((c, i) => [c.key, i])); list = list.filter(p => p.year > cy || (p.year === cy && idx[p.country] <= ci)); }
     return list;
 }
 function matchesQuery(p) {
@@ -1141,7 +1178,7 @@ const filtersOn = () => state.day !== 'all' || state.topic !== 'all' || state.q.
 
 function compare(a, b) {
     if (a.year !== b.year) return b.year - a.year;
-    if (a.country !== b.country) return CBY[a.country].name.localeCompare(CBY[b.country].name);
+    if (a.country !== b.country) return CBY[a.country].name.localeCompare(CBY[b.country].name, 'en', { sensitivity: 'base' });
     if ((a.day || 0) !== (b.day || 0)) return (a.day || 0) - (b.day || 0);
     return (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0);
 }
@@ -1155,15 +1192,16 @@ function syncFilters() {
 
     const days = [...new Set(list.map(p => p.day).filter(d => d !== null))].sort((a, b) => a - b);
     const dcounts = {}; days.forEach(d => dcounts[d] = base.filter(p => p.day === d).length);
-    const dayOpts = [['all', 'All', base.length]].concat(days.map(d => [String(d), 'Day ' + d, dcounts[d]]));
+    const partial = browseTotal();
+    const dayOpts = [['all', 'All', partial || base.length]].concat(days.map(d => [String(d), 'Day ' + d, dcounts[d]]));
     $('#dayChips').closest('div').style.display = days.length ? '' : 'none';
-    $('#dayChips').innerHTML = dayOpts.map(([v, l, n]) => `<button type="button" class="chip" data-day="${v}" aria-pressed="${state.day === v}">${l}<span class="n">${n}</span></button>`).join('');
+    $('#dayChips').innerHTML = dayOpts.map(([v, l, n]) => `<button type="button" class="chip" data-day="${v}" aria-pressed="${state.day === v}">${l}${partial && v !== 'all' ? '' : `<span class="n">${n}</span>`}</button>`).join('');
 
     const topics = [...new Set(list.flatMap(p => p.topics))].sort();
     const tcounts = {}; topics.forEach(t => tcounts[t] = base.filter(p => p.topics.includes(t)).length);
     $('#topicChips').closest('div').style.display = topics.length ? '' : 'none';
-    const topicOpts = [['all', 'All', base.length]].concat(topics.map(t => [t, t, tcounts[t]]));
-    $('#topicChips').innerHTML = topicOpts.map(([v, l, n]) => `<button type="button" class="chip" data-topic="${esc(v)}" aria-pressed="${state.topic === v}">${esc(l)}<span class="n">${n}</span></button>`).join('');
+    const topicOpts = [['all', 'All', partial || base.length]].concat(topics.map(t => [t, t, tcounts[t]]));
+    $('#topicChips').innerHTML = topicOpts.map(([v, l, n]) => `<button type="button" class="chip" data-topic="${esc(v)}" aria-pressed="${state.topic === v}">${esc(l)}${partial && v !== 'all' ? '' : `<span class="n">${n}</span>`}</button>`).join('');
 }
 
 /* ==========================================================
@@ -1344,12 +1382,21 @@ function problemHtml(p) {
 }
 
 function showLoading(text) { box().innerHTML = headHtml(null) + `<div class="state" role="status"><span class="spinner" aria-hidden="true"></span><p id="loadText">${text}</p></div>`; }
-function neededCountries() { return state.country ? [state.country] : COUNTRIES.map(c => c.key); }
+function neededCountries() {
+    if (state.country) return [state.country];
+    const all = COUNTRIES.map(c => c.key);
+    if (!manifest) return all;
+    const has = (k, test) => { const ys = manifestYears(k); return !ys || Object.keys(ys).some(y => test(+y)); };
+    if (state.year !== null) return all.filter(k => has(k, y => y === state.year));
+    if (filtersOn()) return all;
+    const [cy, ci] = browseCutoff();
+    return all.filter((k, i) => !manifestYears(k) || has(k, y => y > cy || (y === cy && i <= ci)));
+}
 function pendingCountries() { return neededCountries().filter(k => !cache.has(k) && !failed.has(k)); }
 function progressText() {
     const need = neededCountries();
     const done = need.filter(k => cache.has(k) || failed.has(k)).length;
-    return need.length > 1 ? `Loading… ${done} of ${need.length} countries` : 'Loading…';
+    return need.length > 1 ? `Loading… ${done} of ${need.length} collections` : 'Loading…';
 }
 function showCountryError(key) {
     const msg = failed.get(key) || 'The file could not be loaded';
@@ -1384,7 +1431,8 @@ function renderResults() {
     }
 
     const shown = items.slice(0, limit);
-    let html = headHtml(items.length);
+    const total = (typeof browseTotal === 'function' && browseTotal()) || items.length;
+    let html = headHtml(total);
     if (metadataUnavailable) html += '<p class="note">Source notes are temporarily unavailable.</p>';
     if (!state.country && failed.size) {
         const names = [...failed.keys()].map(k => CBY[k].name).join(', ');
@@ -1405,14 +1453,14 @@ function renderResults() {
             html += problemHtml(p);
         });
     }
-    if (items.length > shown.length) {
-        html += `<div class="more"><button type="button" class="btn" data-more>Show ${Math.min(PAGE, items.length - shown.length)} more</button></div>`;
+    if (total > shown.length) {
+        html += `<div class="more"><button type="button" class="btn" data-more>Show ${Math.min(PAGE, total - shown.length)} more</button></div>`;
     }
 
     box().innerHTML = html;
     syncAddButtons();
     typeset(box());
-    say(`${countText(items.length)}.`);
+    say(`${countText(total)}.`);
 }
 
 async function refresh() {
@@ -1625,12 +1673,20 @@ document.addEventListener('click', e => {
     if (t.classList.contains('cell')) { if (!t.disabled) setScope(t.dataset.country, +t.dataset.year); return; }
     if (t.dataset.yh) { const y = +t.dataset.yh; (state.year === y && state.country === null) ? setScope(null, null) : setScope(null, y); return; }
     if (t.dataset.rl) { const k = t.dataset.rl; (state.country === k && state.year === null) ? setScope(null, null) : setScope(k, null); return; }
-    if (t.dataset.day !== undefined) { state.day = t.dataset.day; limit = PAGE; renderResults(); return; }
-    if (t.dataset.topic !== undefined) { state.topic = t.dataset.topic; limit = PAGE; renderResults(); return; }
-    if (t.hasAttribute('data-clear-filters')) { state.day = 'all'; state.topic = 'all'; state.q = ''; $('#q').value = ''; limit = PAGE; renderResults(); return; }
+    if (t.dataset.day !== undefined) { state.day = t.dataset.day; limit = PAGE; pendingCountries().length ? refresh() : renderResults(); return; }
+    if (t.dataset.topic !== undefined) { state.topic = t.dataset.topic; limit = PAGE; pendingCountries().length ? refresh() : renderResults(); return; }
+    if (t.hasAttribute('data-clear-filters')) { state.day = 'all'; state.topic = 'all'; state.q = ''; $('#q').value = ''; limit = PAGE; pendingCountries().length ? refresh() : renderResults(); return; }
     if (t.hasAttribute('data-all-scope')) { setScope(null, null); return; }
     if (t.hasAttribute('data-retry')) { failed.clear(); refresh(); return; }
-    if (t.hasAttribute('data-more')) { limit += PAGE; renderResults(); return; }
+    if (t.hasAttribute('data-more')) {
+        limit += PAGE;
+        const need = pendingCountries();
+        if (!need.length) { renderResults(); return; }
+        t.disabled = true; t.textContent = 'Loading…';
+        const token = renderToken;
+        Promise.allSettled(need.map(loadCountry)).then(() => { if (token === renderToken) renderResults(); });
+        return;
+    }
 
     if (t.dataset.related) { showRelated(t.dataset.related); return; }
     if (t.dataset.openProblem) { openRelatedProblem(t.dataset.openProblem); return; }
@@ -1698,6 +1754,14 @@ async function init() {
     // Start every metadata request at once and draw the grid without waiting for them.
     const getJson = url => fetch(url, {cache: 'no-cache'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
     const META_V = '?v=' + DATA_VERSION;
+    // Counts per collection and year: the grid and the totals come from here, not from the full files.
+    const manifestReady = getJson('./metadata/runtime/manifest.json' + META_V).then(m => {
+        if (m.schema_version !== 1 || !m.files) throw new Error('Invalid manifest');
+        manifest = m;
+        COUNTRIES.forEach(c => paintCountry(c.key));
+        REGIONS.forEach(([rk]) => paintGroup(rk));
+        syncMatrix();
+    }).catch(() => { manifest = null; });
     const metadataReady = Promise.allSettled([
         getJson('./metadata/runtime/collections.json' + META_V).then(data => {
             if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
@@ -1730,10 +1794,11 @@ async function init() {
     renderExam();
 
     // Topics and source notes are attached while each collection is normalised, so wait for them here.
-    await metadataReady;
+    await Promise.all([metadataReady, manifestReady]);
     await refresh();
 
-    const rest = COUNTRIES.map(c => c.key).filter(k => !cache.has(k) && !inflight.has(k));
+    // Without the manifest the grid needs every collection, so fall back to loading them all.
+    const rest = manifest ? [] : COUNTRIES.map(c => c.key).filter(k => !cache.has(k) && !inflight.has(k));
     let idx = 0;
     const worker = async () => { while (idx < rest.length) { const k = rest[idx++]; try { await loadCountry(k); } catch (e) { /* καταγράφεται στο failed */ } } };
     const restDone = Promise.all(Array.from({ length: 4 }, worker));
