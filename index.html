@@ -126,6 +126,7 @@
     --il: #2b5fa8; --il-ink: #1b3f73; --il-tint: #e3ecf8;
     --by: #3a7d44; --by-ink: #24542c; --by-tint: #e4f1e6;
     --za: #d4a017; --za-ink: #8a6608; --za-tint: #fbf1d3;
+    --cnt: #9e1b32; --cnt-ink: #5e0f1d; --cnt-tint: #f9e6e9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -207,6 +208,7 @@
 .f-il { --f: var(--il); --f-ink: var(--il-ink); --f-tint: var(--il-tint); }
 .f-by { --f: var(--by); --f-ink: var(--by-ink); --f-tint: var(--by-tint); }
 .f-za { --f: var(--za); --f-ink: var(--za-ink); --f-tint: var(--za-tint); }
+.f-cnt { --f: var(--cnt); --f-ink: var(--cnt-ink); --f-tint: var(--cnt-tint); }
 
 /* ==========================================================
    Base
@@ -609,7 +611,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-kazakhstan-1999';
+const DATA_VERSION = '20261007-china-tst';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -674,6 +676,7 @@ REGION_OF.tw = 'asia';
 REGION_OF.il = 'asia';
 REGION_OF.by = 'europe';
 REGION_OF.za = 'africa';
+REGION_OF.cnt = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -757,6 +760,7 @@ const COUNTRIES = [
     { key: 'il', name: 'Israel', flag: '🇮🇱', file: 'Israel-gillis-problems.json', kind: 'years' },
     { key: 'by', name: 'Belarus', flag: '🇧🇾', file: 'Belarus-mo-problems.json', kind: 'years' },
     { key: 'za', name: 'South Africa', flag: '🇿🇦', file: 'SouthAfrica-samo-problems.json', kind: 'years' },
+    { key: 'cnt', name: 'China TST', flag: '🇨🇳', file: 'China-tst-problems.json', kind: 'years' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
