@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 15904 stored records; 1709 source-checked; 14195 remaining (including quarantine).
+Inventory: 16062 stored records; 1709 source-checked; 14353 remaining (including quarantine).
 
-Active bank: 15904 records; 1709 source-checked; 14195 remaining. Whole-bank source verification is **not complete**.
+Active bank: 16062 records; 1709 source-checked; 14353 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -18,6 +18,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Belgium-omb-maxi-problems.json | 28 | 28 | 0 | stored_statements_checked |
 | Brazil-obm-problems.json | 273 | 0 | 273 | pending |
 | Bulgaria-nmo-problems.json | 340 | 3 | 337 | pending |
+| Bulgaria-tst-problems.json | 50 | 0 | 50 | pending |
 | Canada-cmo-problems.json | 323 | 100 | 223 | pending |
 | Chile-final-problems.json | 183 | 176 | 7 | pending |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
@@ -86,6 +87,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Uk-bmo1-problems.json | 132 | 0 | 132 | pending |
 | Uk-bmo2-problems.json | 88 | 0 | 88 | pending |
 | Uk-tst-problems.json | 285 | 0 | 285 | pending |
+| Ukraine-tst-problems.json | 108 | 0 | 108 | pending |
 | Ukraine-umo-problems.json | 88 | 0 | 88 | pending |
 | Uruguay-final-v-problems.json | 28 | 28 | 0 | stored_statements_checked |
 | Usa-tst-problems.json | 85 | 85 | 0 | stored_statements_checked |
