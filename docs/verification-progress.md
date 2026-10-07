@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 16444 stored records; 1709 source-checked; 14735 remaining (including quarantine).
+Inventory: 16490 stored records; 1709 source-checked; 14781 remaining (including quarantine).
 
-Active bank: 16444 records; 1709 source-checked; 14735 remaining. Whole-bank source verification is **not complete**.
+Active bank: 16490 records; 1709 source-checked; 14781 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -45,7 +45,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Iceland-final-problems.json | 90 | 0 | 90 | pending |
 | India-inmo-problems.json | 262 | 0 | 262 | pending |
 | India-tst-problems.json | 198 | 0 | 198 | pending |
-| Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
+| Indonesia-osn-problems.json | 199 | 8 | 191 | pending |
 | Iran-tst-problems.json | 276 | 0 | 276 | pending |
 | Ireland-irmo-problems.json | 395 | 0 | 395 | pending |
 | Israel-gillis-problems.json | 62 | 0 | 62 | pending |
@@ -54,7 +54,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
 | Kazakhstan-rmo-problems.json | 184 | 6 | 178 | pending |
 | Korea-fkmo-problems.json | 186 | 0 | 186 | pending |
-| Korea-kmo-problems.json | 180 | 0 | 180 | pending |
+| Korea-kmo-problems.json | 192 | 0 | 192 | pending |
 | Latvia-vol-problems.json | 175 | 0 | 175 | pending |
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
@@ -74,8 +74,8 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Russia-aro-problems.json | 289 | 0 | 289 | pending |
 | Serbia-smo-problems.json | 114 | 0 | 114 | pending |
 | Serbia-tst-problems.json | 81 | 0 | 81 | pending |
-| Singapore-mo-open-problems.json | 135 | 0 | 135 | pending |
-| Slovenia-national-problems.json | 114 | 0 | 114 | pending |
+| Singapore-mo-open-problems.json | 145 | 0 | 145 | pending |
+| Slovenia-national-problems.json | 130 | 0 | 130 | pending |
 | SouthAfrica-samo-problems.json | 193 | 0 | 193 | pending |
 | Spain-ome-problems.json | 398 | 0 | 398 | pending |
 | Sweden-smt-problems.json | 384 | 120 | 264 | pending |

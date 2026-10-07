@@ -587,6 +587,31 @@
       ]
     },
     {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an acute triangle $ABC$, $E$ is the foot of the perpendicular from $B$ onto $AC$, and $D$ is the point on side $BC$ such that $\\angle BAD=\\angle CBE$. The segments $AD$ and $BE$ intersect at $F$. The line through $B$ perpendicular to $AB$ intersects the line $CF$ at $K$. Prove that the line $DK$ passes through the midpoint of $BF$."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f: \\mathbb{R} \\to \\mathbb{R}$ such that $$f((1 - xy)f(x)) + x^2 f(y) = f(x)$$ for all $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n_1 < n_2 < \\cdots < n_k$ be a sequence of positive integers such that for $i < j \\leq k$, the decimal representation of $n_i$ does not occur as the leftmost digits of the decimal representation of $n_j$. For example, $123$ cannot precede $1235436$ in the sequence. Prove that $$\\sum_{i=1}^k \\frac{1}{n_i} \\leq 1 + \\frac{1}{2} + \\cdots + \\frac{1}{9}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Each of the numbers $1, 2, \\ldots, N$ is colored either black or white. We are allowed to simultaneously change the colours, from white to black and vice versa, of any three numbers $a, b, c$ which satisfy $a + c = 2b$. For which positive integers $N$ can we always change the colours of all the numbers to white, irrespective of the initial colouring?"
+        },
+        {
+          "number": 5,
+          "problem": "Find all $a,b \\in \\mathbb{N}$ such that $$2049^b a^{2048}-2048^a b^{2049}=1.$$"
+        }
+      ]
+    },
+    {
       "year": 2022,
       "problems": [
         {
@@ -683,6 +708,31 @@
         {
           "number": 5,
           "problem": "Alice starts out with some coins in a box. On the $n$-th minute (for $n = 1, 2, 3, \\ldots$), she can choose to put an additional coin into the box or do nothing, and then she writes the number $2c^2 - n^2$ on the board where $c$ is the number of coins in the box. Show that for any positive integer $m$, there will eventually be two numbers on the board that sum to a multiple of $m$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral. The extensions of $AB$ and $DC$ meet at $E$ and the extensions of $AD$ and $BC$ meet at $F$. The bisectors of $\\angle BEC$ and $\\angle DFC$ meet at $P$, which lies on $AC$. Let $PF$ intersect $CD$ at $U$ and $PE$ intersect $BC$ at $V$. Prove that\n(i) $DB$ is parallel to $UV$;\n(ii) the lines $AC$ and $EF$ intersect at the midpoint of $EF$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1, a_2, a_3, \\ldots$ be a sequence defined by $a_1 = 33$ and, for $n \\geq 1$, $$a_{n+1} = a_n + \\frac{1}{\\left\\lfloor a_n + \\frac{1}{2} \\right\\rfloor}.$$ Which integers appear in the sequence?"
+        },
+        {
+          "number": 3,
+          "problem": "In an $n \\times n$ grid, you are allowed to choose $k$ squares, including the top right and bottom left squares, and colour them red. The remaining squares are coloured blue. Thereafter, you are allowed to repeatedly choose any row or column and reverse the colours of all the squares in that row or column, until all the squares are red. What is the minimum value of $k$ for this to be possible?"
+        },
+        {
+          "number": 4,
+          "problem": "The number $1$ is written $10$ times on a whiteboard. Every minute, Simon chooses two of the numbers on the whiteboard, $a$ and $b$ (which may be of equal value), erases them, and writes down the two new numbers $a + \\frac{1}{b}$ and $b + \\frac{1}{a}$.\n(a) Show that, regardless of Simon's sequence of operations, after $1000$ minutes there will be at least one number on the board which is greater than $20$.\n(b) Show that there is some sequence of operations for Simon to ensure that after $1000$ minutes, all numbers on the board are less than $21$."
+        },
+        {
+          "number": 5,
+          "problem": "Determine all primes $p$ such that for any positive integer $n$, one can find positive integers $a_1, a_2, a_3$ such that $$(a_1 - a_2)(a_2 - a_3)(a_3 - a_1) \\equiv n \\pmod{p}.$$"
         }
       ]
     }
