@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 14383 stored records; 1709 source-checked; 12674 remaining (including quarantine).
+Inventory: 14505 stored records; 1709 source-checked; 12796 remaining (including quarantine).
 
-Active bank: 14383 records; 1709 source-checked; 12674 remaining. Whole-bank source verification is **not complete**.
+Active bank: 14505 records; 1709 source-checked; 12796 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -43,6 +43,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Indonesia-osn-problems.json | 191 | 8 | 183 | pending |
 | Iran-tst-problems.json | 276 | 0 | 276 | pending |
 | Ireland-irmo-problems.json | 395 | 0 | 395 | pending |
+| Israel-gillis-problems.json | 62 | 0 | 62 | pending |
 | Italy-itamo-problems.json | 249 | 0 | 249 | pending |
 | Italy-preimo-tst-problems.json | 145 | 109 | 36 | pending |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
@@ -72,6 +73,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Sweden-smt-problems.json | 384 | 120 | 264 | pending |
 | Swiss-final-problems.json | 206 | 0 | 206 | pending |
 | Swiss-selection-problems.json | 252 | 0 | 252 | pending |
+| Taiwan-tmo-problems.json | 60 | 0 | 60 | pending |
 | Thailand-tmo-problems.json | 314 | 294 | 20 | pending |
 | Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
 | Thailand-tstst-problems.json | 12 | 12 | 0 | stored_statements_checked |
