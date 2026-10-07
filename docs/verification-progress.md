@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 15484 stored records; 1709 source-checked; 13775 remaining (including quarantine).
+Inventory: 15706 stored records; 1709 source-checked; 13997 remaining (including quarantine).
 
-Active bank: 15484 records; 1709 source-checked; 13775 remaining. Whole-bank source verification is **not complete**.
+Active bank: 15706 records; 1709 source-checked; 13997 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -90,6 +90,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Usa-tst-problems.json | 85 | 85 | 0 | stored_statements_checked |
 | Usa-tstst-problems.json | 132 | 0 | 132 | pending |
 | Usa-usamo-problems.json | 306 | 0 | 306 | pending |
+| Vietnam-tst-problems.json | 222 | 0 | 222 | pending |
 | Vietnam-vmo-problems.json | 368 | 7 | 361 | pending |
 
 ## Evidence and outstanding work
