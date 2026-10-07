@@ -74,7 +74,7 @@ The grid is grouped by continent (countries sorted alphabetically); groups are c
 
 Review layers (all AI-assisted, kept separate): source-fidelity checks (`statement_checks`, ~1,700 records — see `docs/verification-progress.md`), editorial notes for source errors (`statement_notes`), thematic topics (all 11,041 reviewed), Problem DNA pilot (13). A changed statement automatically loses its checks/topics until re-reviewed (fingerprint mismatch).
 
-Site features: continent grid (lazy loading via the manifest since 7 Oct 2026), topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
+Site features: continent grid (lazy loading via the manifest since 7 Oct 2026; the grid scrolls inside a box with a sticky year row, and a "Country, competition or year" box filters rows or jumps to a year column — Enter opens a single match or a year), topic chips/filters, search, printable problem sets, named collections with share links, provenance notes per problem, "Connections" between problems, available-PDF pages.
 
 Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py`, `validate.py`, `add_row.py` (predates the collections.json/DATA_VERSION steps — do those by hand), `localtest.ps1`, `figcrop.py`.
 

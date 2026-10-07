@@ -270,10 +270,20 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .stat span { font-size: .82rem; color: #aebccb; }
 
 /* ---------- Πίνακας χωρών × ετών ---------- */
-.mx-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 20px; margin-top: 18px; }
+.mx-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-top: 18px; }
 .mx-help { font-size: .9rem; color: #aebccb; }
 .mx-status { font-size: .85rem; color: #aebccb; font-variant-numeric: tabular-nums; }
-.mx-wrap { overflow-x: auto; overflow-y: hidden; padding: 22px 0 16px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.35) transparent; }
+.mx-wrap { overflow: auto; max-height: max(320px, calc(100vh - 150px)); padding: 0 0 16px; margin-top: 4px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.35) transparent; }
+.mx-years { position: sticky; top: 0; z-index: 4; background: var(--ink); padding: 22px 0 6px; box-shadow: 0 6px 8px -6px rgba(0, 0, 0, .45); }
+.mx-years .corner { z-index: 5; }
+.yh.flash { color: var(--ink-deep); background: var(--accent); }
+.mx-find { position: relative; flex: 0 1 280px; }
+.mx-find input { width: 100%; height: 34px; padding: 0 30px 0 12px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .25); border-radius: 4px; color: #fff; font: 400 .9rem/1 var(--sans); }
+.mx-find input::placeholder { color: #9fb0c1; }
+.mx-find input:focus { outline: 2px solid var(--accent); outline-offset: 1px; background: rgba(255, 255, 255, .12); }
+.mx-find button { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); appearance: none; border: 0; background: none; color: #cfd9e3; font-size: 1.1rem; line-height: 1; padding: 4px 6px; cursor: pointer; }
+.mx-find button[hidden] { display: none; }
+.mx-nomatch { color: #aebccb; font-size: .9rem; padding: 10px 0; }
 .mx { --cols: 39; --lw: 160px; --cw: 21px; display: grid; gap: 4px; min-width: calc(var(--lw) + var(--cols) * (var(--cw) + 4px)); }
 .mx-row { display: flex; align-items: center; gap: 3px; }
 .mx-row > .yh, .mx-row > .cell { flex: 1 1 0; min-width: var(--cw); }
@@ -285,6 +295,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .yh.sel { color: var(--ink-deep); background: var(--accent); font-weight: 700; }
 .rl { appearance: none; position: sticky; left: 0; z-index: 2; text-align: left; background: var(--ink); border: 0; padding: 4px 10px 4px 0; color: #eef2f6; font: 600 .86rem/1.2 var(--sans); cursor: pointer; height: 26px; white-space: nowrap; border-radius: 0 3px 3px 0; display: flex; align-items: center; gap: 8px; }
 .rl:hover { color: #fff; }
+.rl .nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .rl.sel { color: var(--accent); }
 .mx-row[hidden] { display: none; }
 .mx-grp { margin-top: 6px; }
@@ -464,7 +475,10 @@ dialog p { color: var(--muted); font-size: .92rem; }
     .f-top { grid-template-columns: minmax(0, 1fr); }
     .problem { padding: 16px 16px 20px; }
     .statement { font-size: 1.03rem; }
-    .mx { --lw: 118px; --cw: 16px; }
+    .mx { --lw: 146px; --cw: 16px; }
+    .rl { font-size: .8rem; gap: 6px; }
+    .mx-wrap { max-height: max(300px, calc(100vh - 120px)); }
+    .mx-find { flex: 1 1 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
     .spinner { animation: none; border-top-color: var(--line); }
@@ -512,6 +526,11 @@ dialog p { color: var(--muted); font-size: .92rem; }
     <div class="wrap">
         <div class="mx-head">
             <p class="mx-help" id="mxHelp">Click a cell to open one country's year. Click a country or a year to see all of it.</p>
+            <div class="mx-find" role="search">
+                <label class="sr-only" for="mxFind">Find a country, competition or year in the grid</label>
+                <input type="text" id="mxFind" placeholder="Country, competition or year" enterkeyhint="search" autocomplete="off" spellcheck="false">
+                <button type="button" id="mxFindClear" aria-label="Clear" hidden>&times;</button>
+            </div>
             <p class="mx-status" id="mxStatus" role="status"></p>
         </div>
         <div class="mx-wrap">
@@ -635,7 +654,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261007-manifest';
+const DATA_VERSION = '20261007-grid-find';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['other', 'Other']];
 const REGION_OF = {
@@ -1033,7 +1052,7 @@ let gridBtns = [];
 function buildMatrix() {
     const mx = $('#mx');
     mx.style.setProperty('--cols', LAST - FIRST + 1);
-    let html = '<div class="mx-row"><span class="corner"></span>';
+    let html = '<div class="mx-row mx-years"><span class="corner"></span>';
     for (let y = LAST; y >= FIRST; y--) {
         const dec = (y % 5 === 0) ? `<span class="dec" aria-hidden="true">${y}</span>` : '';
         html += `<button type="button" class="yh" data-yh="${y}" tabindex="-1" aria-label="Year ${y}, all countries">${dec}${String(y).slice(2)}</button>`;
@@ -1048,7 +1067,7 @@ function buildMatrix() {
         for (let y = LAST; y >= FIRST; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
         html += '</div>';
         list.forEach(c => {
-            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years"><span class="flag" aria-hidden="true">${c.flag}</span>${c.name}</button>`;
+            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${c.name}</span></button>`;
             for (let y = LAST; y >= FIRST; y--) {
                 html += `<button type="button" class="cell pend" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-label="${c.name}, ${y}"></button>`;
             }
@@ -1073,13 +1092,102 @@ function setGroupOpen(rk, open) {
     $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open; });
 }
 function toggleGroup(rk) {
+    if (gridFilter) clearGridFilter();
     const b = $(`.grp[data-grp="${rk}"]`);
     const open = b.getAttribute('aria-expanded') !== 'true';
     $$('#mx .grp').forEach(g => setGroupOpen(g.dataset.grp, false));
     if (open) setGroupOpen(rk, true);
     try { localStorage.setItem('nob-open-group', open ? rk : ''); } catch (e) {}
     refreshGrid();
+    if (open) scrollGridTo(b.closest('.mx-row'));
 }
+/* Keep a row visible below the sticky year header inside the scrolling grid. */
+function scrollGridTo(row) {
+    const wrap = $('.mx-wrap'), head = $('#mx .mx-years');
+    if (!wrap || !row) return;
+    const top = row.getBoundingClientRect().top - wrap.getBoundingClientRect().top + wrap.scrollTop - (head ? head.offsetHeight : 0) - 4;
+    if (row.getBoundingClientRect().top < wrap.getBoundingClientRect().top + (head ? head.offsetHeight : 0) || row.getBoundingClientRect().bottom > wrap.getBoundingClientRect().bottom) wrap.scrollTop = Math.max(0, top);
+}
+
+/* ---------- Find in the grid ----------
+   Text keeps only the matching rows (all continents open); a year scrolls to its column. */
+let gridFilter = '';
+const fold = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+function clearGridFilter() {
+    gridFilter = '';
+    const inp = $('#mxFind'); if (inp) inp.value = '';
+    $('#mxFindClear').hidden = true;
+    applyGridFilter();
+}
+function applyGridFilter() {
+    const q = fold(gridFilter.trim());
+    const words = q.split(/\s+/).filter(Boolean);
+    const openG = loadOpenGroup();
+    let any = false;
+    REGIONS.forEach(([rk]) => {
+        const grpRow = $(`#mx .mx-grp[data-grp-row="${rk}"]`);
+        if (!grpRow) return;
+        const rows = $$(`#mx .mx-row[data-region="${rk}"]`);
+        const gn = grpRow.querySelector('.gn');
+        if (!words.length) {
+            grpRow.hidden = false;
+            gn.textContent = rows.length;
+            setGroupOpen(rk, rk === openG);
+            return;
+        }
+        let n = 0;
+        rows.forEach(r => {
+            const c = CBY[r.querySelector('.rl').dataset.rl];
+            const hay = fold(`${c.name} ${regionName(rk)}`);
+            const ok = words.every(w => hay.includes(w));
+            r.hidden = !ok; if (ok) n++;
+        });
+        grpRow.hidden = n === 0;
+        gn.textContent = n;
+        grpRow.querySelector('.grp').setAttribute('aria-expanded', String(n > 0));
+        if (n) any = true;
+    });
+    let msg = $('#mx .mx-nomatch');
+    if (words.length && !any) {
+        if (!msg) { msg = document.createElement('p'); msg.className = 'mx-nomatch'; $('#mx').appendChild(msg); }
+        msg.textContent = 'No country or competition matches.';
+    } else if (msg) msg.remove();
+    refreshGrid();
+    if (words.length) $('.mx-wrap').scrollTop = 0;
+}
+function regionName(rk) { const r = REGIONS.find(([k]) => k === rk); return r ? r[1] : ''; }
+function gotoYear(y) {
+    const h = $(`#mx .yh[data-yh="${y}"]`), wrap = $('.mx-wrap');
+    if (!h || !wrap) return false;
+    const a = h.getBoundingClientRect(), b = wrap.getBoundingClientRect();
+    const lw = $('#mx .corner').offsetWidth;
+    wrap.scrollLeft += (a.left + a.width / 2) - (b.left + lw + (b.width - lw) / 2);
+    h.classList.remove('flash'); void h.offsetWidth; h.classList.add('flash');
+    setTimeout(() => h.classList.remove('flash'), 1600);
+    return true;
+}
+let findTimer = null;
+$('#mxFind').addEventListener('input', e => {
+    clearTimeout(findTimer);
+    const v = e.target.value;
+    $('#mxFindClear').hidden = !v;
+    findTimer = setTimeout(() => {
+        const t = v.trim();
+        if (/^\d{4}$/.test(t) && +t >= FIRST && +t <= LAST) { if (gridFilter) { gridFilter = ''; applyGridFilter(); } gotoYear(+t); return; }
+        if (/^\d{1,3}$/.test(t)) return;   // a year is still being typed
+        gridFilter = v; applyGridFilter();
+    }, 150);
+});
+$('#mxFind').addEventListener('keydown', e => {
+    if (e.key === 'Escape') { clearGridFilter(); return; }
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    const t = e.target.value.trim();
+    if (/^\d{4}$/.test(t) && +t >= FIRST && +t <= LAST) { setScope(null, +t); return; }
+    const rows = $$('#mx .mx-row[data-region]').filter(r => !r.hidden);
+    if (gridFilter && rows.length === 1) setScope(rows[0].querySelector('.rl').dataset.rl, null);
+});
+$('#mxFindClear').addEventListener('click', () => { clearGridFilter(); $('#mxFind').focus(); });
 function revealCountry(key) {
     const rk = regionOf(key);
     const b = $(`.grp[data-grp="${rk}"]`);
@@ -1746,6 +1854,8 @@ function centerPick() {
     if (!el || !wrap) return;
     const a = el.getBoundingClientRect(), b = wrap.getBoundingClientRect();
     wrap.scrollLeft += (a.left + a.width / 2) - (b.left + b.width / 2);
+    const row = el.closest('.mx-row');
+    if (row && !row.classList.contains('mx-years')) scrollGridTo(row);
 }
 
 async function init() {
