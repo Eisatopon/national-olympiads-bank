@@ -71,7 +71,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "A quadrilateral $ABCD$ is inscribed in a square of area one unit, with one vertex on each side of the square. Prove that $$2 \\le |AB|^2 + |BC|^2 + |CD|^2 + |DA|^2 \\le 4.$$"
+          "problem": "A quadrilateral $ABCD$ is inscribed, as shown, in a square of area one unit. Prove that $$2 \\le |AB|^2 + |BC|^2 + |CD|^2 + |DA|^2 \\le 4.$$\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_1989_p1_fig.png"
         },
         {
           "number": 2,
@@ -635,7 +635,7 @@
         },
         {
           "number": 7,
-          "problem": "Three hoops are arranged concentrically. Each hoop is threaded with 20 beads, of which 10 are black and 10 are white. On each hoop the positions of the beads are labelled 1 through 20 starting at the bottom and travelling counterclockwise. We say there is a match at position $i$ if all three beads at position $i$ have the same colour. We are free to slide all of the beads around any hoop (but not to unthread and rethread them). Show that it is possible (by sliding) to find a configuration involving at least 5 matches."
+          "problem": "Three hoops are arranged concentrically as in the diagram. Each hoop is threaded with 20 beads, of which 10 are black and 10 are white. On each hoop the positions of the beads are labelled 1 through 20 starting at the bottom and travelling counterclockwise. We say there is a match at position $i$ if all three beads at position $i$ have the same colour. We are free to slide all of the beads around any hoop (but not to unthread and rethread them).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2001_p7_fig.png\n\nShow that it is possible (by sliding) to find a configuration involving at least 5 matches."
         },
         {
           "number": 8,
@@ -819,7 +819,7 @@
         },
         {
           "number": 8,
-          "problem": "Suppose that $x$ is an integer and $y$, $z$, $w$ are odd integers. Show that 17 divides $x^{y^{z^w}} - x^{y^z}$. [Note: the towers are evaluated from the top down, i.e. $x^{y^{z^w}} = x^{\\left(y^{\\left(z^w\\right)}\\right)}$.]"
+          "problem": "Suppose that $x$ is an integer and $y$, $z$, $w$ are odd integers. Show that 17 divides $x^{y^{z^w}} - x^{y^z}$. [Note: Given a sequence of integers $a_n$, $n=1,2,\\ldots$, the terms $b_n$, $n=1,2,\\ldots$, of its sequence of “towers” $a_1, a_2^{a_1}, a_3^{a_2^{a_1}}, a_4^{a_3^{a_2^{a_1}}}, \\ldots$, are defined recursively as follows: $b_1=a_1$, $b_{n+1}=a_{n+1}^{b_n}$, $n=1,2,\\ldots$.]"
         },
         {
           "number": 9,
@@ -856,7 +856,7 @@
         },
         {
           "number": 6,
-          "problem": "The rooms of a building are arranged in an $m \\times n$ rectangular grid. Every room is connected by an open door to each adjacent room, but the only access to or from the building is by a door in the top right room. This door is locked with an elaborate system of $mn$ keys, one of which is located in every room of the building. A person is in the bottom left room and can move from there to any adjacent room. However, as soon as the person leaves a room, all the doors of that room are instantly and automatically locked. Find, with proof, all $m$ and $n$ for which it is possible for the person to collect all the keys and escape the building."
+          "problem": "The rooms of a building are arranged in an $m \\times n$ rectangular grid (as shown below for the $5\\times 6$ case).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2006_p6_fig.png\n\nEvery room is connected by an open door to each adjacent room, but the only access to or from the building is by a door in the top right room. This door is locked with an elaborate system of $mn$ keys, one of which is located in every room of the building. A person is in the bottom left room and can move from there to any adjacent room. However, as soon as the person leaves a room, all the doors of that room are instantly and automatically locked. Find, with proof, all $m$ and $n$ for which it is possible for the person to collect all the keys and escape the building."
         },
         {
           "number": 7,
@@ -1028,7 +1028,7 @@
         },
         {
           "number": 4,
-          "problem": "The country of Harpland has three types of coin: green, white and orange. The unit of currency in Harpland is the shilling. Any coin is worth a positive integer number of shillings, but coins of the same colour may be worth different amounts. A set of coins is stacked in the form of an equilateral triangle of side $n$ coins (rows of $n, n-1, \\dots, 1$ coins). The stacking has the following properties: (a) no coin touches another coin of the same colour; (b) the total worth, in shillings, of the coins lying on any line parallel to one of the sides of the triangle is divisible by three. Prove that the total worth in shillings of the green coins in the triangle is divisible by three."
+          "problem": "The country of Harpland has three types of coin: green, white and orange. The unit of currency in Harpland is the shilling. Any coin is worth a positive integer number of shillings, but coins of the same colour may be worth different amounts. A set of coins is stacked in the form of an equilateral triangle of side $n$ coins, as shown below for the case of $n=6$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2010_p4_fig.png\n\nThe stacking has the following properties: (a) no coin touches another coin of the same colour; (b) the total worth, in shillings, of the coins lying on any line parallel to one of the sides of the triangle is divisible by three. Prove that the total worth in shillings of the green coins in the triangle is divisible by three."
         },
         {
           "number": 5,
@@ -1142,7 +1142,7 @@
         },
         {
           "number": 10,
-          "problem": "Let $n$ be a positive integer. A mouse sits at each corner point of an $n \\times n$ square board, which is divided into unit squares. The mice then move according to a sequence of steps, in the following manner: (a) in each step, each of the four mice travels a distance of one unit in a horizontal or vertical direction; each unit distance is called an edge of the board, and we say that each mouse uses an edge of the board; (b) an edge of the board may not be used twice in the same direction; (c) at most two mice may occupy the same point on the board at any time. The mice wish to collectively organise their movements so that each edge of the board will be used twice (not necessarily by the same mouse), and each mouse will finish up at its starting point. Determine, with proof, the values of $n$ for which the mice may achieve this goal."
+          "problem": "Let $n$ be a positive integer. A mouse sits at each corner point of an $n \\times n$ square board, which is divided into unit squares as shown below for the example $n=5$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2012_p10_fig.png\n\nThe mice then move according to a sequence of steps, in the following manner: (a) in each step, each of the four mice travels a distance of one unit in a horizontal or vertical direction; each unit distance is called an edge of the board, and we say that each mouse uses an edge of the board; (b) an edge of the board may not be used twice in the same direction; (c) at most two mice may occupy the same point on the board at any time. The mice wish to collectively organise their movements so that each edge of the board will be used twice (not necessarily by the same mouse), and each mouse will finish up at its starting point. Determine, with proof, the values of $n$ for which the mice may achieve this goal."
         }
       ]
     },
@@ -1343,7 +1343,7 @@
         },
         {
           "number": 4,
-          "problem": "An equilateral triangle of integer side length $n \\ge 1$ is subdivided into small triangles of unit side length by lines parallel to its sides. A subtriangle is a triangle of any size which is formed by connecting vertices of the small triangles along the grid-lines. It is desired to colour each vertex of the small triangles either red or blue in such a way that there is no subtriangle with all three of its vertices having the same colour. Let $f(n)$ denote the number of distinct colourings satisfying this condition. Determine, with proof, $f(n)$ for every $n \\ge 1$."
+          "problem": "An equilateral triangle of integer side length $n \\ge 1$ is subdivided into small triangles of unit side length as illustrated in the figure below for the case $n=5$. In this diagram, a subtriangle is a triangle of any size which is formed by connecting vertices of the small triangles along the grid-lines. It is desired to colour each vertex of the small triangles either red or blue in such a way that there is no subtriangle with all three of its vertices having the same colour. Let $f(n)$ denote the number of distinct colourings satisfying this condition. Determine, with proof, $f(n)$ for every $n \\ge 1$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2017_p4_fig.png"
         },
         {
           "number": 5,
@@ -1478,7 +1478,7 @@
         },
         {
           "number": 4,
-          "problem": "Let $n$ be a positive integer. An $n$-level honeycomb is a plane region covered with regular hexagons of side-length 1 connected along edges, such that the centres of the boundary hexagons are lined up along a regular hexagon of side-length $n\\sqrt3$. A trex is a sequence of 3 hexagons with collinear centres such that the middle hexagon shares an edge with each of its neighbours in the trex. An $n$-level honeycomb from which the central size-1 hexagon has been removed is to be completely covered by trexes without any overlaps. Find all values of $n$ for which this is possible."
+          "problem": "Let $n$ be a positive integer. An $n$-level honeycomb is a plane region covered with regular hexagons of side-length 1 connected along edges, such that the centres of the boundary hexagons are lined up along a regular hexagon of side-length $n\\sqrt3$. The diagram shows a $2$-level honeycomb from which the central hexagon has been removed.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ireland_2020_p4_fig.png\n\nA trex is a sequence of 3 hexagons with collinear centres such that the middle hexagon shares an edge with each of its neighbours in the trex. An $n$-level honeycomb from which the central size-1 hexagon has been removed is to be completely covered by trexes without any overlaps. Find all values of $n$ for which this is possible."
         },
         {
           "number": 5,
