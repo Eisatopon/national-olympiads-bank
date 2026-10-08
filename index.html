@@ -147,6 +147,7 @@
     --bw: #2e6fb5; --bw-ink: #1d4a7a; --bw-tint: #e3eef9;
     --memo: #7b4fa0; --memo-ink: #52346b; --memo-tint: #f0e8f7;
     --bx: #1f6f8b; --bx-ink: #134657; --bx-tint: #e3f1f6;
+    --nmc: #3b7d4f; --nmc-ink: #255232; --nmc-tint: #e5f2e8;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -249,6 +250,7 @@
 .f-bw { --f: var(--bw); --f-ink: var(--bw-ink); --f-tint: var(--bw-tint); }
 .f-memo { --f: var(--memo); --f-ink: var(--memo-ink); --f-tint: var(--memo-tint); }
 .f-bx { --f: var(--bx); --f-ink: var(--bx-ink); --f-tint: var(--bx-tint); }
+.f-nmc { --f: var(--nmc); --f-ink: var(--nmc-ink); --f-tint: var(--nmc-tint); }
 
 /* ==========================================================
    Base
@@ -681,7 +683,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261008-benelux';
+const DATA_VERSION = '20261008-nordic';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -767,6 +769,7 @@ REGION_OF.apmo = 'asia';
 REGION_OF.bw = 'europe';
 REGION_OF.memo = 'europe';
 REGION_OF.bx = 'europe';
+REGION_OF.nmc = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -871,6 +874,7 @@ const COUNTRIES = [
     { key: 'bw', name: 'Baltic Way', flag: '🌊', file: 'Baltic-way-problems.json', kind: 'years', scope: 'regional' },
     { key: 'memo', name: 'MEMO', flag: '🇪🇺', file: 'MEMO-problems.json', kind: 'years', scope: 'regional' },
     { key: 'bx', name: 'Benelux MO', flag: '🇪🇺', file: 'Benelux-bxmo-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
