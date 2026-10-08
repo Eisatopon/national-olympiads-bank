@@ -532,7 +532,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $a_1,a_2,\\ldots,a_n$ be $n$ positive numbers, and let $q$ be a given real number such that $0<q<1$. Find $n$ real numbers $b_1,b_2,\\ldots,b_n$ for which:\n(a) $a_k<b_k$ for $k=1,2,\\ldots,n$;\n(b) $q<\\frac{b_{k+1}}{b_k}<\\frac{1}{q}$ for $k=1,2,\\ldots,n-1$;\n(c) $b_1+b_2+\\cdots+b_n<\\frac{1+q}{1-q}\\,(a_1+a_2+\\cdots+a_n)$."
+          "problem": "Let $a_1,a_2,\\ldots,a_n$ be $n$ positive numbers, and let $q$ be a given real number such that $0<q<1$. Find $n$ numbers $b_1,b_2,\\ldots,b_n$ for which:\n(a) $a_k<b_k$ for $k=1,2,\\ldots,n$;\n(b) $q<\\frac{b_{k+1}}{b_k}<\\frac{1}{q}$ for $k=1,2,\\ldots,n-1$;\n(c) $b_1+b_2+\\cdots+b_n<\\frac{1+q}{1-q}\\,(a_1+a_2+\\cdots+a_n)$."
         }
       ]
     },
@@ -697,7 +697,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "In triangle $ABC$, $AB=AC$. A circle is tangent internally to the circumscribed circle of triangle $ABC$ and also to the sides $AB$, $AC$ at $P$, $Q$, respectively. Prove that the midpoint of the segment $PQ$ is the center of the inscribed circle of triangle $ABC$."
+          "problem": "In triangle $ABC$, $AB=AC$. A circle is tangent internally to the circumcircle of triangle $ABC$ and also to the sides $AB$, $AC$ at $P$, $Q$, respectively. Prove that the midpoint of the segment $PQ$ is the center of the incircle of triangle $ABC$."
         },
         {
           "day": 2,
@@ -822,7 +822,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Find all functions $f$ defined on the set of positive real numbers which take positive real values and satisfy the conditions:\n(i) $f(xf(y))=yf(x)$ for all $x$, $y$;\n(ii) $f(x)\\to 0$ as $x\\to\\infty$."
+          "problem": "Find all functions $f$ defined on the set of positive real numbers which take positive real values and satisfy the conditions:\n(i) $f(xf(y))=yf(x)$ for all positive $x$, $y$;\n(ii) $f(x)\\to 0$ as $x\\to\\infty$."
         },
         {
           "day": 1,
@@ -967,12 +967,12 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "In an acute-angled triangle $ABC$ the interior bisector of angle $A$ intersects $BC$ at $L$ and intersects the circumcircle of triangle $ABC$ again at $N$. From point $L$ perpendiculars are drawn to $AB$ and $AC$, with feet $K$ and $M$ respectively. Prove that the quadrilateral $AKNM$ and the triangle $ABC$ have equal areas."
+          "problem": "In an acute-angled triangle $ABC$ the interior bisector of the angle $A$ intersects $BC$ at $L$ and intersects the circumcircle of $ABC$ again at $N$. From point $L$ perpendiculars are drawn to $AB$ and $AC$, the feet of these perpendiculars being $K$ and $M$ respectively. Prove that the quadrilateral $AKNM$ and the triangle $ABC$ have equal areas."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $x_1, x_2, \\ldots, x_n$ be real numbers satisfying $x_1^2 + x_2^2 + \\cdots + x_n^2 = 1$. Prove that for every integer $k \\geq 2$ there exist integers $a_1, a_2, \\ldots, a_n$, not all zero, such that $|a_i| \\leq k - 1$ for all $i$ and $|a_1x_1 + a_2x_2 + \\cdots + a_nx_n| \\leq \\frac{(k - 1)\\sqrt{n}}{k^{n-1}}$."
+          "problem": "Let $x_1, x_2, \\ldots, x_n$ be real numbers satisfying $x_1^2 + x_2^2 + \\cdots + x_n^2 = 1$. Prove that for every integer $k \\geq 2$ there exist integers $a_1, a_2, \\ldots, a_n$, not all zero, such that $|a_i| \\leq k - 1$ for all $i$ and $|a_1x_1 + a_2x_2 + \\cdots + a_nx_n| \\leq \\frac{(k - 1)\\sqrt{n}}{k^{n}-1}$."
         },
         {
           "day": 2,
@@ -1087,7 +1087,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Given an initial integer $n_0 > 1$, two players $A$ and $B$ choose integers $n_1, n_2, n_3, \\ldots$ alternately according to the following rules: Knowing $n_{2k}$, $A$ chooses any integer $n_{2k+1}$ such that $n_{2k} \\leq n_{2k+1} \\leq n_{2k}^2$. Knowing $n_{2k+1}$, $B$ chooses any integer $n_{2k+2}$ such that $\\frac{n_{2k+1}}{n_{2k+2}}$ is a prime power. Player $A$ wins by choosing the number 1990; player $B$ wins by choosing the number 1. For which $n_0$ does $A$ have a winning strategy, $B$ have a winning strategy, or neither have a winning strategy?"
+          "problem": "Given an initial integer $n_0 > 1$, two players, $\\mathcal{A}$ and $\\mathcal{B}$, choose integers $n_1, n_2, n_3, \\ldots$ alternately according to the following rules:\nKnowing $n_{2k}$, $\\mathcal{A}$ chooses any integer $n_{2k+1}$ such that $$n_{2k} \\leq n_{2k+1} \\leq n_{2k}^2.$$\nKnowing $n_{2k+1}$, $\\mathcal{B}$ chooses any integer $n_{2k+2}$ such that $$\\frac{n_{2k+1}}{n_{2k+2}}$$ is a prime raised to a positive integer power.\nPlayer $\\mathcal{A}$ wins the game by choosing the number $1990$; player $\\mathcal{B}$ wins by choosing the number $1$. For which $n_0$ does:\n(a) $\\mathcal{A}$ have a winning strategy?\n(b) $\\mathcal{B}$ have a winning strategy?\n(c) Neither player have a winning strategy?"
         },
         {
           "day": 2,
@@ -1147,7 +1147,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Consider nine points in space, no four of which are coplanar. Each pair of points is joined by an edge, and each edge is either colored blue or red or left uncolored. Find the smallest value of $n$ such that whenever exactly $n$ edges are colored, the set of colored edges necessarily contains a triangle all of whose edges have the same color."
+          "problem": "Consider nine points in space, no four of which are coplanar. Each pair of points is joined by an edge (that is, a line segment), and each edge is either colored blue or red or left uncolored. Find the smallest value of $n$ such that whenever exactly $n$ edges are colored, the set of colored edges necessarily contains a triangle all of whose edges have the same color."
         },
         {
           "day": 2,
@@ -1157,7 +1157,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $S$ be a finite set of points in three-dimensional space. Let $S_x, S_y, S_z$ be the sets consisting of the orthogonal projections of the points of $S$ onto the $yz$-plane, $zx$-plane, and $xy$-plane, respectively. Prove that $|S|^2 \\leq |S_x| \\cdot |S_y| \\cdot |S_z|$, where $|A|$ denotes the number of elements of the finite set $A$."
+          "problem": "Let $S$ be a finite set of points in three-dimensional space. Let $S_x, S_y, S_z$ be the sets consisting of the orthogonal projections of the points of $S$ onto the $yz$-plane, $zx$-plane, and $xy$-plane, respectively. Prove that $|S|^2 \\leq |S_x| \\cdot |S_y| \\cdot |S_z|$, where $|A|$ denotes the number of elements in the finite set $A$. (Note: The orthogonal projection of a point onto a plane is the foot of the perpendicular from that point to the plane.)"
         },
         {
           "day": 2,
@@ -1277,32 +1277,32 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "We are given a positive integer $r$ and a rectangular board $ABCD$ with dimensions $AB=20$, $BC=12$. The rectangle is divided into a grid of $20\\times 12$ unit squares. The following moves are permitted on the board: one can move from one square to another only if the distance between the centres of the two squares is $\\sqrt{r}$. The task is to find a sequence of moves leading from the square with $A$ as a vertex to the square with $B$ as a vertex.\n(a) Show that the task cannot be done if $r$ is divisible by $2$ or $3$.\n(b) Prove that the task is possible when $r=73$.\n(c) Can the task be done when $r=97$?"
+          "problem": "We are given a positive integer $r$ and a rectangular board $ABCD$ with dimensions $|AB|=20$, $|BC|=12$. The rectangle is divided into a grid of $20\\times 12$ unit squares. The following moves are permitted on the board: one can move from one square to another only if the distance between the centers of the two squares is $\\sqrt{r}$. The task is to find a sequence of moves leading from the square with $A$ as a vertex to the square with $B$ as a vertex.\n(a) Show that the task cannot be done if $r$ is divisible by $2$ or $3$.\n(b) Prove that the task is possible when $r=73$.\n(c) Can the task be done when $r=97$?"
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $P$ be a point inside triangle $ABC$ such that $$\\angle APB-\\angle ACB=\\angle APC-\\angle ABC.$$ Let $D$, $E$ be the incentres of triangles $APB$, $APC$, respectively. Show that the lines $AP$, $BD$, $CE$ meet at a point."
+          "problem": "Let $P$ be a point inside triangle $ABC$ such that $$\\angle APB-\\angle ACB=\\angle APC-\\angle ABC.$$ Let $D$, $E$ be the incenters of triangles $APB$, $APC$, respectively. Show that $AP$, $BD$, $CE$ meet at a point."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $S$ denote the set of nonnegative integers. Find all functions $f$ defined on $S$ and taking their values in $S$ such that $$f(m+f(n))=f(f(m))+f(n)\\quad\\text{for all } m,n\\in S.$$"
+          "problem": "Let $S$ denote the set of nonnegative integers. Find all functions $f$ from $S$ to itself such that $$f(m+f(n))=f(f(m))+f(n)\\qquad\\forall m,n\\in S.$$"
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "The positive integers $a$ and $b$ are such that the numbers $15a+16b$ and $16a-15b$ are both squares of positive integers. Find the least possible value that can be taken by the minimum of these two squares."
+          "problem": "The positive integers $a$ and $b$ are such that the numbers $15a+16b$ and $16a-15b$ are both squares of positive integers. What is the least possible value that can be taken by the smaller of these two squares?"
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $ABCDEF$ be a convex hexagon such that $AB$ is parallel to $DE$, $BC$ is parallel to $EF$, and $CD$ is parallel to $FA$. Let $R_A$, $R_C$, $R_E$ denote the circumradii of triangles $FAB$, $BCD$, $DEF$, respectively, and let $P$ denote the perimeter of the hexagon. Prove that $$R_A+R_C+R_E\\geq \\frac{P}{2}.$$"
+          "problem": "Let $ABCDEF$ be a convex hexagon such that $AB$ is parallel to $DE$, $BC$ is parallel to $EF$, and $CD$ is parallel to $FA$. Let $R_A$, $R_C$, $R_E$ denote the circumradii of triangles $FAB$, $BCD$, $DEF$, respectively, and let $P$ denote the perimeter of the hexagon. Prove that $$R_A+R_C+R_E\\geq\\frac{P}{2}.$$"
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $n$, $p$, $q$ be positive integers with $n>p+q$. Let $x_0, x_1, \\ldots, x_n$ be integers satisfying the following conditions:\n(a) $x_0=x_n=0$;\n(b) for each integer $i$ with $1\\leq i\\leq n$, either $x_i-x_{i-1}=p$ or $x_i-x_{i-1}=-q$.\nShow that there exists a pair $(i,j)$ of indices with $i<j$ and $(i,j)\\neq(0,n)$ such that $x_i=x_j$."
+          "problem": "Let $p,q,n$ be three positive integers with $p+q<n$. Let $(x_0,x_1,\\ldots,x_n)$ be an $(n+1)$-tuple of integers satisfying the following conditions:\n(a) $x_0=x_n=0$.\n(b) For each $i$ with $1\\leq i\\leq n$, either $x_i-x_{i-1}=p$ or $x_i-x_{i-1}=-q$.\nShow that there exist indices $i<j$ with $(i,j)\\neq(0,n)$, such that $x_i=x_j$."
         }
       ]
     },
@@ -1452,12 +1452,12 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Let $ABC$ be an acute-angled triangle with circumcentre $O$. Let $P$ on $BC$ be the foot of the altitude from $A$. Suppose that $\\angle BCA - \\angle ABC = 30^{\\circ}$. Prove that $\\angle CAB + \\angle COP = 90^{\\circ}$."
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcentre $O$. Let $P$ on $BC$ be the foot of the altitude from $A$. Suppose that $\\angle BCA\\geq\\angle ABC+30^{\\circ}$. Prove that $\\angle CAB+\\angle COP<90^{\\circ}$."
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Prove that\n$$\\frac{a}{\\sqrt{a^2 + 8bc}} + \\frac{b}{\\sqrt{b^2 + 8ca}} + \\frac{c}{\\sqrt{c^2 + 8ab}} \\leq 1$$\nfor all positive real numbers $a, b$ and $c$."
+          "problem": "Prove that\n$$\\frac{a}{\\sqrt{a^2 + 8bc}} + \\frac{b}{\\sqrt{b^2 + 8ca}} + \\frac{c}{\\sqrt{c^2 + 8ab}} \\geq 1$$\nfor all positive real numbers $a, b$ and $c$."
         },
         {
           "day": 1,
@@ -1472,7 +1472,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "In a triangle $ABC$, let $AP$ bisect $\\angle BAC$, with $P$ on $BC$, and let $BQ$ bisect $\\angle ABC$, with $Q$ on $CA$. It is known that $\\angle BAC = 60^{\\circ}$ and that $AB \\cdot BP = AQ \\cdot QB$. What are the possible angles of triangle $ABC$?"
+          "problem": "In a triangle $ABC$, let $AP$ bisect $\\angle BAC$, with $P$ on $BC$, and let $BQ$ bisect $\\angle ABC$, with $Q$ on $CA$. It is known that $\\angle BAC=60^{\\circ}$ and that $AB+BP=AQ+QB$. What are the possible angles of triangle $ABC$?"
         },
         {
           "day": 2,
@@ -1712,12 +1712,12 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Find all functions $f : (0, \\infty) \\to (0, \\infty)$ such that\n$$\\frac{(f(w))^2 + (f(x))^2}{f(y^2) + f(z^2)} = \\frac{w^2 + x^2}{y^2 + z^2}$$\nfor all positive real numbers $w, x, y, z$ satisfying $wx = yz$."
+          "problem": "Find all functions $f : (0, \\infty) \\to (0, \\infty)$ (so, $f$ is a function from the positive real numbers to the positive real numbers) such that\n$$\\frac{(f(w))^2 + (f(x))^2}{f(y^2) + f(z^2)} = \\frac{w^2 + x^2}{y^2 + z^2}$$\nfor all positive real numbers $w, x, y, z$ satisfying $wx = yz$."
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $n$ and $k$ be positive integers with $k \\geq n$ and $k - n$ an even number. Let $2n$ lamps labelled $1, 2, \\dots, 2n$ be given, each of which can be either on or off. Initially all the lamps are off. We consider sequences of steps: at each step one of the lamps is switched (from on to off or from off to on).\n\nLet $N$ be the number of such sequences consisting of $k$ steps and resulting in the state where lamps $1$ through $n$ are all on, and lamps $n + 1$ through $2n$ are all off.\n\nLet $M$ be the number of such sequences consisting of $k$ steps, resulting in the same final state, but where none of the lamps $n + 1$ through $2n$ is ever switched on.\n\nDetermine the ratio $N/M$."
+          "problem": "Let $n$ and $k$ be positive integers with $k \\geq n$ and $k - n$ an even number. Let $2n$ lamps labelled $1, 2, \\dots, 2n$ be given, each of which can be either on or off. Initially all the lamps are off. We consider sequences of steps: at each step one of the lamps is switched (from on to off or from off to on).\n\nLet $N$ be the number of such sequences consisting of $k$ steps and resulting in the state where lamps $1$ through $n$ are all on, and lamps $n + 1$ through $2n$ are all off.\n\nLet $M$ be the number of such sequences consisting of $k$ steps, resulting in the state where lamps $1$ through $n$ are all on, and lamps $n + 1$ through $2n$ are all off, but where none of the lamps $n + 1$ through $2n$ is ever switched on.\n\nDetermine the ratio $N/M$."
         },
         {
           "day": 2,
@@ -1787,7 +1787,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "In each of six boxes $B_1, B_2, B_3, B_4, B_5, B_6$ there is initially one coin. There are two types of operation allowed: Type 1: Choose a nonempty box $B_j$ with $1 \\leq j \\leq 5$. Remove one coin from $B_j$ and add two coins to $B_{j+1}$. Type 2: Choose a nonempty box $B_k$ with $1 \\leq k \\leq 4$. Remove one coin from $B_k$ and exchange the contents of (possibly empty) boxes $B_{k+1}$ and $B_{k+2}$. Determine whether there is a finite sequence of such operations that results in boxes $B_1, B_2, B_3, B_4, B_5$ being empty and box $B_6$ containing exactly $2010^{2010^{2010}}$ coins."
+          "problem": "In each of six boxes $B_1, B_2, B_3, B_4, B_5, B_6$ there is initially one coin. There are two types of operation allowed: Type 1: Choose a nonempty box $B_j$ with $1 \\leq j \\leq 5$. Remove one coin from $B_j$ and add two coins to $B_{j+1}$. Type 2: Choose a nonempty box $B_k$ with $1 \\leq k \\leq 4$. Remove one coin from $B_k$ and exchange the contents of (possibly empty) boxes $B_{k+1}$ and $B_{k+2}$. Determine whether there is a finite sequence of such operations that results in boxes $B_1, B_2, B_3, B_4, B_5$ being empty and box $B_6$ containing exactly $2010^{2010^{2010}}$ coins. (Note that $a^{b^c}=a^{(b^c)}$.)"
         },
         {
           "day": 2,
@@ -1847,7 +1847,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "The liar's guessing game is played between two players $A$ and $B$. The rules depend on two positive integers $k$ and $n$. At the start, player $A$ chooses integers $x$ and $N$ with $1 \\leq x \\leq N$, keeps $x$ secret, and tells $N$ to player $B$. Player $B$ asks questions of the following type: he specifies a set $S$ of positive integers and asks whether $x \\in S$. Player $A$ must answer yes or no, but may lie arbitrarily, subject to the restriction that among any $k + 1$ consecutive answers, at least one is truthful. After asking questions, player $B$ specifies a set $X$ of at most $n$ positive integers. If $x \\in X$, then $B$ wins; otherwise, $B$ loses. Prove that: (1) If $n \\geq 2^k$, then $B$ can guarantee a win. (2) For all sufficiently large $k$, there exists an integer $n \\geq 1.99^k$ such that $B$ cannot guarantee a win."
+          "problem": "The liar's guessing game is a game played between two players $A$ and $B$. The rules of the game depend on two positive integers $k$ and $n$ which are known to both players.\nAt the start of the game $A$ chooses integers $x$ and $N$ with $1\\leq x\\leq N$. Player $A$ keeps $x$ secret, and truthfully tells $N$ to player $B$. Player $B$ now tries to obtain information about $x$ by asking player $A$ questions as follows: each question consists of $B$ specifying an arbitrary set $S$ of positive integers (possibly one specified in some previous question), and asking $A$ whether $x$ belongs to $S$. Player $B$ may ask as many such questions as he wishes. After each question, player $A$ must immediately answer it with yes or no, but is allowed to lie as many times as she wants; the only restriction is that, among any $k+1$ consecutive answers, at least one answer must be truthful.\nAfter $B$ has asked as many questions as he wants, he must specify a set $X$ of at most $n$ positive integers. If $x$ belongs to $X$, then $B$ wins; otherwise, he loses. Prove that:\n1. If $n\\geq 2^k$, then $B$ can guarantee a win.\n2. For all sufficiently large $k$, there exists an integer $n\\geq 1.99^k$ such that $B$ cannot guarantee a win."
         },
         {
           "day": 2,
@@ -1967,7 +1967,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "The sequence $a_1, a_2, \\ldots$ of integers satisfies the following conditions: (i) $1 \\leq a_j \\leq 2015$ for all $j \\geq 1$; (ii) $k + a_k \\neq \\ell + a_\\ell$ for all integers $1 \\leq k < \\ell$. Prove that there exist positive integers $b$ and $N$ such that $|\\sum_{j=m+1}^{n} (a_j - b)| \\leq 1007$ for all integers $m$ and $n$ satisfying $n > m \\geq N$."
+          "problem": "The sequence $a_1, a_2, \\ldots$ of integers satisfies the following conditions: (i) $1 \\leq a_j \\leq 2015$ for all $j \\geq 1$; (ii) $k + a_k \\neq \\ell + a_\\ell$ for all integers $1 \\leq k < \\ell$. Prove that there exist positive integers $b$ and $N$ such that $|\\sum_{j=m+1}^{n} (a_j - b)| \\leq 1007^2$ for all integers $m$ and $n$ satisfying $n > m \\geq N$."
         }
       ]
     },
@@ -1977,12 +1977,12 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Let $BCF$ be a triangle right-angled at $B$. Point $A$ lies on line $CF$ such that $FA = FB$ and $F$ is between $A$ and $C$. Point $D$ satisfies $DA = DC$ and $AC$ bisects $\\angle DAB$. Point $E$ satisfies $EA = ED$ and $AD$ bisects $\\angle EAC$. Let $M$ be the midpoint of $CF$. Let $X$ be the point such that $AMXE$ is a parallelogram. Prove that lines $BD, FX,$ and $ME$ are concurrent."
+          "problem": "Triangle $BCF$ has a right angle at $B$. Let $A$ be the point on line $CF$ such that $FA=FB$ and $F$ lies between $A$ and $C$. Point $D$ is chosen such that $DA=DC$ and $AC$ is the bisector of $\\angle DAB$. Point $E$ is chosen such that $EA=ED$ and $AD$ is the bisector of $\\angle EAC$. Let $M$ be the midpoint of $CF$. Let $X$ be the point such that $AMXE$ is a parallelogram (where $AM\\parallel EX$ and $AE\\parallel MX$). Prove that lines $BD$, $FX$, and $ME$ are concurrent."
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Find all positive integers $n$ for which an $n \\times n$ table can be filled with letters $I, M, O$ so that: (i) each row and column has one third of its entries $I$, one third $M$, one third $O$; (ii) in any diagonal with $3k$ entries, exactly $k$ are $I$, $k$ are $M$, $k$ are $O$. (The table has $4n - 2$ such diagonals.)"
+          "problem": "Find all positive integers $n$ for which each cell of an $n\\times n$ table can be filled with one of the letters $I$, $M$ and $O$ in such a way that:\n• in each row and each column, one third of the entries are $I$, one third are $M$ and one third are $O$; and\n• in any diagonal, if the number of entries on the diagonal is a multiple of three, then one third of the entries are $I$, one third are $M$ and one third are $O$.\nNote: The rows and columns of an $n\\times n$ table are each labelled $1$ to $n$ in a natural order. Thus each cell corresponds to a pair of positive integers $(i,j)$ with $1\\leq i,j\\leq n$. For $n>1$, the table has $4n-2$ diagonals of two types. A diagonal of the first type consists of all cells $(i,j)$ for which $i+j$ is a constant, and a diagonal of the second type consists of all cells $(i,j)$ for which $i-j$ is a constant."
         },
         {
           "day": 2,
@@ -1992,7 +1992,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "A set of positive integers is fragrant if it contains at least two elements and each element has a prime factor not shared with any other element. Let $P(n) = n^2 + n + 1$. Find the least $b$ such that there exists a non-negative integer $a$ for which the set $\\{P(a + 1), P(a + 2), \\ldots, P(a + b)\\}$ is fragrant."
+          "problem": "A set of positive integers is called fragrant if it contains at least two elements and each of its elements has a prime factor in common with at least one of the other elements. Let $P(n)=n^2+n+1$. What is the least possible value of the positive integer $b$ such that there exists a non-negative integer $a$ for which the set $$\\{P(a+1),P(a+2),\\ldots,P(a+b)\\}$$ is fragrant?"
         },
         {
           "day": 2,
@@ -2002,7 +2002,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "There are $n \\geq 2$ line segments in the plane such that every two segments cross and no three segments meet at a single point. Geoff has to choose an endpoint of each segment and place a frog on it, facing the other endpoint. Then he simultaneously lets all frogs jump, each jumping over the other endpoint of its segment. The frogs never revisit an intersection. Prove that: (a) if $n$ is even, Geoff can choose the starting points so that no two frogs ever occupy the same point; (b) if $n$ is odd, such a choice is impossible."
+          "problem": "There are $n\\geq 2$ line segments in the plane such that every two segments cross, and no three segments meet at a point. Geoff has to choose an endpoint of each segment and place a frog on it, facing the other endpoint. Then he will clap his hands $n-1$ times. Every time he claps, each frog will immediately jump forward to the next intersection point on its segment. Frogs never change the direction of their jumps. Geoff wishes to place the frogs in such a way that no two of them will ever occupy the same intersection point at the same time.\n(a) Prove that Geoff can always fulfil his wish if $n$ is odd.\n(b) Prove that Geoff can never fulfil his wish if $n$ is even."
         }
       ]
     },
@@ -2012,7 +2012,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "For each integer $a_0 > 1$, define the sequence $a_0, a_1, a_2,\\ldots$ by $a_{n+1} = \\sqrt{a_n}$ if $\\sqrt{a_n}$ is an integer, and $a_{n+1} = a_n + 3$ otherwise, for each $n \\geq 0$. Determine all values of $a_0$ for which there exists a number $A$ such that $a_n = A$ for infinitely many values of $n$."
+          "problem": "For each integer $a_0>1$, define the sequence $a_0,a_1,a_2,\\ldots$ by: $$a_{n+1}=\\begin{cases}\\sqrt{a_n} & \\text{if } \\sqrt{a_n} \\text{ is an integer,}\\\\ a_n+3 & \\text{otherwise,}\\end{cases}\\qquad\\text{for each } n\\geq 0.$$ Determine all values of $a_0$ for which there is a number $A$ such that $a_n=A$ for infinitely many values of $n$."
         },
         {
           "day": 1,
@@ -2022,7 +2022,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point $A_0$ and the hunter's starting point $B_0$ coincide. After $n-1$ rounds of the game, the rabbit is at point $A_{n-1}$ and the hunter is at point $B_{n-1}$. In the $n$-th round of the game, the following occur in order: (i) The rabbit moves invisibly to a point $A_n$ such that the distance between $A_{n-1}$ and $A_n$ is exactly $1$. (ii) A tracking device reports a point $P_n$ to the hunter such that the distance between $P_n$ and $A_n$ is at most $1$. (iii) The hunter moves visibly to a point $B_n$ such that the distance between $B_{n-1}$ and $B_n$ is exactly $1$. Is it always possible, no matter how the rabbit moves and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after $10^9$ rounds she can ensure that the distance between her and the rabbit is at most $100$?"
+          "problem": "A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point, $A_0$, and the hunter's starting point, $B_0$, are the same. After $n-1$ rounds of the game, the rabbit is at point $A_{n-1}$ and the hunter is at point $B_{n-1}$. In the $n$-th round of the game, three things occur in order.\n(i) The rabbit moves invisibly to a point $A_n$ such that the distance between $A_{n-1}$ and $A_n$ is exactly $1$.\n(ii) A tracking device reports a point $P_n$ to the hunter. The only guarantee provided by the tracking device to the hunter is that the distance between $P_n$ and $A_n$ is at most $1$.\n(iii) The hunter moves visibly to a point $B_n$ such that the distance between $B_{n-1}$ and $B_n$ is exactly $1$.\nIs it always possible, no matter how the rabbit moves, and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after $10^9$ rounds she can ensure that the distance between her and the rabbit is at most $100$?"
         },
         {
           "day": 2,
@@ -2032,12 +2032,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "An integer $N > 2$ is given. A collection of $N(N+1)$ soccer players, no two of whom have the same height, stand in a row. Sir Alex wants to remove $N(N-1)$ players from this row, leaving a new row of $2N$ players in which the following $N$ conditions hold: (1) No one stands between the two tallest players. (2) No one stands between the third and fourth tallest players. ... (N) No one stands between the two shortest players. Show that this is always possible."
+          "problem": "An integer $N\\geq 2$ is given. A collection of $N(N+1)$ soccer players, no two of whom are of the same height, stand in a row. Sir Alex wants to remove $N(N-1)$ players from this row leaving a new row of $2N$ players in which the following $N$ conditions hold:\n(1) no one stands between the two tallest players,\n(2) no one stands between the third and fourth tallest players,\n$\\vdots$\n($N$) no one stands between the two shortest players.\nShow that this is always possible."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "An ordered pair $(x,y)$ of integers is called a primitive point if $\\gcd(x,y)=1$. Given a finite set $S$ of primitive points, prove that there exist a positive integer $n$ and integers $a_0,a_1,\\ldots,a_n$ such that, for each $(x,y)\\in S$, $a_0 x^n + a_1 x^{n-1} y + a_2 x^{n-2} y^2 + \\cdots + a_{n-1} x y^{n-1} + a_n y^n = 1$."
+          "problem": "An ordered pair $(x,y)$ of integers is a primitive point if the greatest common divisor of $x$ and $y$ is $1$. Given a finite set $S$ of primitive points, prove that there exist a positive integer $n$ and integers $a_0,a_1,\\ldots,a_n$ such that, for each $(x,y)$ in $S$, we have: $$a_0x^n+a_1x^{n-1}y+a_2x^{n-2}y^2+\\cdots+a_{n-1}xy^{n-1}+a_ny^n=1.$$"
         }
       ]
     },
@@ -2057,12 +2057,12 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "An anti-Pascal triangle is an equilateral triangular array of numbers such that, except for the numbers in the bottom row, each number is the absolute value of the difference of the two numbers immediately below it. Does there exist an anti-Pascal triangle with $2018$ rows which contains every integer from $1$ to $1 + 2 + \\dots + 2018$?"
+          "problem": "An anti-Pascal triangle is an equilateral triangular array of numbers such that, except for the numbers in the bottom row, each number is the absolute value of the difference of the two numbers immediately below it. For example, the following array is an anti-Pascal triangle with four rows which contains every integer from $1$ to $10$: $$\\begin{array}{ccccccc} & & & 4 & & & \\\\ & & 2 & & 6 & & \\\\ & 5 & & 7 & & 1 & \\\\ 8 & & 3 & & 10 & & 9\\end{array}$$ Does there exist an anti-Pascal triangle with $2018$ rows which contains every integer from $1$ to $1 + 2 + \\dots + 2018$?"
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "A site is any point $(x, y)$ in the plane such that $x$ and $y$ are both positive integers less than or equal to $20$. Initially, each of the $400$ sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to $\\sqrt{5}$. On his turn, Ben places a new blue stone on any unoccupied site. They stop as soon as a player cannot place a stone.\n\nFind the greatest $K$ such that Amy can ensure that she places at least $K$ red stones, no matter how Ben places his blue stones."
+          "problem": "A site is any point $(x, y)$ in the plane such that $x$ and $y$ are both positive integers less than or equal to $20$. Initially, each of the $400$ sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to $\\sqrt{5}$. On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone.\n\nFind the greatest $K$ such that Amy can ensure that she places at least $K$ red stones, no matter how Ben places his blue stones."
         },
         {
           "day": 2,
@@ -2102,7 +2102,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "The Bank of Bath issues coins with an H on one side and a T on the other. Harry has $n$ of these coins arranged in a line from left to right. He repeatedly performs the following operation: if there are exactly $k > 0$ coins showing H, then he turns over the $k$-th coin from the left; otherwise, all coins show T and he stops.\n\n$(a)$ Show that, for each initial configuration, Harry stops after a finite number of operations.\n$(b)$ For each initial configuration $C$, let $L(C)$ be the number of operations before Harry stops. Determine the average value of $L(C)$ over all $2^n$ possible initial configurations $C$."
+          "problem": "The Bank of Bath issues coins with an H on one side and a T on the other. Harry has $n$ of these coins arranged in a line from left to right. He repeatedly performs the following operation: if there are exactly $k > 0$ coins showing H, then he turns over the $k$-th coin from the left; otherwise, all coins show T and he stops. For example, if $n=3$ the process starting with the configuration THT would be $THT\\to HHT\\to HTT\\to TTT$, which stops after three operations.\n\n$(a)$ Show that, for each initial configuration, Harry stops after a finite number of operations.\n$(b)$ For each initial configuration $C$, let $L(C)$ be the number of operations before Harry stops. For example, $L(THT)=3$ and $L(TTT)=0$. Determine the average value of $L(C)$ over all $2^n$ possible initial configurations $C$."
         },
         {
           "day": 2,
@@ -2132,7 +2132,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "There is an integer $n > 1$. There are $n^2$ stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, $A$ and $B$, operates $k$ cable cars; each cable car provides a transfer from one of the stations to a higher one with no intermediate stops. The $k$ cable cars of $A$ have $k$ different starting points and $k$ different finishing points, and a cable car which starts higher also finishes higher. The same conditions hold for $B$. We say that two stations are linked by a company if one can start from the lower station and reach the higher one by using one or more cars of that company. Determine the smallest positive integer $k$ for which one can guarantee that there are two stations that are linked by both companies."
+          "problem": "There is an integer $n > 1$. There are $n^2$ stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, $A$ and $B$, operates $k$ cable cars; each cable car provides a transfer from one of the stations to a higher one with no intermediate stops. The $k$ cable cars of $A$ have $k$ different starting points and $k$ different finishing points, and a cable car which starts higher also finishes higher. The same conditions hold for $B$. We say that two stations are linked by a company if one can start from the lower station and reach the higher one by using one or more cars of that company (no other movements between stations are allowed). Determine the smallest positive integer $k$ for which one can guarantee that there are two stations that are linked by both companies."
         },
         {
           "day": 2,
@@ -2177,7 +2177,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $m\\geq 2$ be an integer, $A$ a finite set of (not necessarily positive) integers, and $B_1, B_2, \\ldots, B_m$ subsets of $A$. Suppose that for every $k=1,2,\\ldots,m$, the sum of the elements of $B_k$ is $m^k$. Prove that $A$ contains at least $\\frac{m}{2}$ elements."
+          "problem": "Let $m\\geq 2$ be an integer, $A$ a finite set of (not necessarily positive) integers, and $B_1, B_2, \\ldots, B_m$ subsets of $A$. Assume that for each $k=1,2,\\ldots,m$ the sum of the elements of $B_k$ is $m^k$. Prove that $A$ contains at least $\\frac{m}{2}$ elements."
         }
       ]
     },
@@ -2187,12 +2187,12 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The Bank of Oslo issues two types of coin: aluminium (denoted A) and bronze (denoted B). Marianne has $n$ aluminium coins and $n$ bronze coins, arranged in a row in some arbitrary initial order. A chain is any subsequence of consecutive coins of the same type. Given a fixed positive integer $k \\leq 2n$, Marianne repeatedly performs the following operation: she identifies the longest chain containing the $k$-th coin from the left, and moves all coins in that chain to the left end of the row. Find all pairs $(n,k)$ with $1 \\leq k \\leq 2n$ such that for every initial ordering, at some moment during the process, the leftmost $n$ coins will all be of the same type."
+          "problem": "The Bank of Oslo issues two types of coin: aluminium (denoted A) and bronze (denoted B). Marianne has $n$ aluminium coins and $n$ bronze coins, arranged in a row in some arbitrary initial order. A chain is any subsequence of consecutive coins of the same type. Given a fixed positive integer $k \\leq 2n$, Marianne repeatedly performs the following operation: she identifies the longest chain containing the $k$-th coin from the left, and moves all coins in that chain to the left end of the row. For example, if $n=4$ and $k=4$, the process starting from the ordering $AABBBABA$ would be $$AA\\underline{B}BBABA\\to BBB\\underline{A}AABA\\to AAA\\underline{B}BBBA\\to BBB\\underline{B}AAAA\\to BBB\\underline{B}AAAA\\to\\cdots.$$ Find all pairs $(n,k)$ with $1 \\leq k \\leq 2n$ such that for every initial ordering, at some moment during the process, the leftmost $n$ coins will all be of the same type."
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $\\mathbb{R}^+$ denote the set of positive real numbers. Find all functions $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for each $x \\in \\mathbb{R}^+$, there is exactly one $y \\in \\mathbb{R}^+$ satisfying\n$$x f(y) + y f(x) = 2.$$"
+          "problem": "Let $\\mathbb{R}^+$ denote the set of positive real numbers. Find all functions $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for each $x \\in \\mathbb{R}^+$, there is exactly one $y \\in \\mathbb{R}^+$ satisfying\n$$x f(y) + y f(x) \\leq 2.$$"
         },
         {
           "day": 1,
@@ -2242,12 +2242,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $n$ be a positive integer. A Japanese triangle consists of $1 + 2 + \\dots + n$ circles arranged in an equilateral triangular shape such that for each $i = 1,2,\\dots,n$, the $i$-th row contains exactly $i$ circles, exactly one of which is coloured red. A ninja path in a Japanese triangle is a sequence of $n$ circles obtained by starting in the top row, then repeatedly going from a circle to one of the two circles immediately below it and finishing in the bottom row. In terms of $n$, find the greatest $k$ such that in each Japanese triangle there is a ninja path containing at least $k$ red circles."
+          "problem": "Let $n$ be a positive integer. A Japanese triangle consists of $1 + 2 + \\dots + n$ circles arranged in an equilateral triangular shape such that for each $i = 1,2,\\dots,n$, the $i$-th row contains exactly $i$ circles, exactly one of which is coloured red. A ninja path in a Japanese triangle is a sequence of $n$ circles obtained by starting in the top row, then repeatedly going from a circle to one of the two circles immediately below it and finishing in the bottom row. Here is an example of a Japanese triangle with $n=6$, along with a ninja path in that triangle containing two red circles (shown in the figure below). In terms of $n$, find the greatest $k$ such that in each Japanese triangle there is a ninja path containing at least $k$ red circles.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/imo_2023_p5_fig.png"
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $ABC$ be an equilateral triangle. Let $A_1,B_1,C_1$ be interior points of $ABC$ such that $BA_1 = A_1C$, $CB_1 = B_1A$, $AC_1 = C_1B$, and\n$$\\angle BA_1C + \\angle CB_1A + \\angle AC_1B = 480^{\\circ}.$$\nLet $BC_1$ and $CB_1$ meet at $A_2$, let $CA_1$ and $AC_1$ meet at $B_2$, and let $AB_1$ and $BA_1$ meet at $C_2$. Prove that if triangle $A_1B_1C_1$ is scalene, then the three circumcircles of triangles $AA_1A_2$, $BB_1B_2$ and $CC_1C_2$ all pass through two common points."
+          "problem": "Let $ABC$ be an equilateral triangle. Let $A_1,B_1,C_1$ be interior points of $ABC$ such that $BA_1 = A_1C$, $CB_1 = B_1A$, $AC_1 = C_1B$, and\n$$\\angle BA_1C + \\angle CB_1A + \\angle AC_1B = 480^{\\circ}.$$\nLet $BC_1$ and $CB_1$ meet at $A_2$, let $CA_1$ and $AC_1$ meet at $B_2$, and let $AB_1$ and $BA_1$ meet at $C_2$. Prove that if triangle $A_1B_1C_1$ is scalene, then the three circumcircles of triangles $AA_1A_2$, $BB_1B_2$ and $CC_1C_2$ all pass through two common points. (Note: a scalene triangle is one where no two sides have equal length.)"
         }
       ]
     },
@@ -2257,17 +2257,17 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Determine all real numbers $\\alpha$ such that, for every positive integer $n$, the integer\n$$\\lfloor\\alpha\\rfloor + \\lfloor2\\alpha\\rfloor + \\cdots + \\lfloor n\\alpha\\rfloor$$\nis a multiple of $n$.\n(Here $\\lfloor z\\rfloor$ denotes the greatest integer less than or equal to $z$.)"
+          "problem": "Determine all real numbers $\\alpha$ such that, for every positive integer $n$, the integer\n$$\\lfloor\\alpha\\rfloor + \\lfloor2\\alpha\\rfloor + \\cdots + \\lfloor n\\alpha\\rfloor$$\nis a multiple of $n$.\n(Note that $\\lfloor z\\rfloor$ denotes the greatest integer less than or equal to $z$. For example, $\\lfloor -\\pi\\rfloor=-4$ and $\\lfloor 2\\rfloor=\\lfloor 2.9\\rfloor=2$.)"
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Determine all pairs $(a,b)$ of positive integers for which there exist positive integers $g$ and $N$ such that\n$$\\gcd(a^n + b, b^n + a) = g$$\nfor all integers $n \\geqslant N$."
+          "problem": "Determine all pairs $(a,b)$ of positive integers for which there exist positive integers $g$ and $N$ such that\n$$\\gcd(a^n + b, b^n + a) = g$$\nfor all integers $n \\geqslant N$. (Note that $\\gcd(x,y)$ denotes the greatest common divisor of integers $x$ and $y$.)"
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $a_1,a_2,a_3,\\dots$ be an infinite sequence of positive integers, and let $N$ be a positive integer. Suppose that, for each $n > N$, $a_n$ equals the number of times $a_{n-1}$ appears in the list $a_1,a_2,\\dots,a_{n-1}$. Prove that at least one of the sequences $a_1,a_3,a_5,\\dots$ and $a_2,a_4,a_6,\\dots$ is eventually periodic."
+          "problem": "Let $a_1,a_2,a_3,\\dots$ be an infinite sequence of positive integers, and let $N$ be a positive integer. Suppose that, for each $n > N$, $a_n$ equals the number of times $a_{n-1}$ appears in the list $a_1,a_2,\\dots,a_{n-1}$. Prove that at least one of the sequences $a_1,a_3,a_5,\\dots$ and $a_2,a_4,a_6,\\dots$ is eventually periodic. (An infinite sequence $b_1,b_2,b_3,\\dots$ is eventually periodic if there exist positive integers $p$ and $M$ such that $b_{m+p}=b_m$ for all $m\\geq M$.)"
         },
         {
           "day": 2,
@@ -2297,7 +2297,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $\\Omega$ and $\\Gamma$ be circles with centres $M$ and $N$, respectively, such that the radius of $\\Omega$ is less than the radius of $\\Gamma$. Suppose circles $\\Omega$ and $\\Gamma$ intersect at two distinct points $A$ and $B$. Line $MN$ intersects $\\Omega$ at $C$ and $\\Gamma$ at $D$, such that points $C$, $M$, $N$ and $D$ lie on the line in that order. Let $P$ be the circumcentre of triangle $ACD$. Line $AP$ intersects $\\Omega$ again at $E\\neq A$. Line $AP$ intersects $\\Gamma$ again at $F\\neq A$. Let $H$ be the orthocentre of triangle $PMN$.\nProve that the line through $H$ parallel to $AP$ is tangent to the circumcircle of triangle $BEF$."
+          "problem": "Let $\\Omega$ and $\\Gamma$ be circles with centres $M$ and $N$, respectively, such that the radius of $\\Omega$ is less than the radius of $\\Gamma$. Suppose circles $\\Omega$ and $\\Gamma$ intersect at two distinct points $A$ and $B$. Line $MN$ intersects $\\Omega$ at $C$ and $\\Gamma$ at $D$, such that points $C$, $M$, $N$ and $D$ lie on the line in that order. Let $P$ be the circumcentre of triangle $ACD$. Line $AP$ intersects $\\Omega$ again at $E\\neq A$. Line $AP$ intersects $\\Gamma$ again at $F\\neq A$. Let $H$ be the orthocentre of triangle $PMN$.\nProve that the line through $H$ parallel to $AP$ is tangent to the circumcircle of triangle $BEF$. (The orthocentre of a triangle is the point of intersection of its altitudes.)"
         },
         {
           "day": 1,
@@ -2332,7 +2332,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $ABC$ be a triangle and let $M$ and $N$ be the midpoints of sides $AB$ and $AC$, respectively. Let points $K$ and $L$ be chosen inside triangles $BMC$ and $BNC$, respectively, such that $K$ lies inside angle $LBA$, $L$ lies inside angle $ACK$, and $$\\angle KBA=\\angle ACL,\\qquad \\angle LBK=\\angle LNC,\\qquad \\angle LCK=\\angle BMK.$$ Let $O$ be the circumcentre of triangle $AKL$. Prove that $OM=ON$."
+          "problem": "Let $ABC$ be a triangle and let points $M$ and $N$ be the midpoints of sides $AB$ and $AC$, respectively. Let points $K$ and $L$ be chosen strictly inside triangles $BMC$ and $BNC$, respectively, such that $K$ lies strictly inside triangle $ABL$ and $L$ lies strictly inside triangle $AKC$. Suppose that $$\\angle KBA=\\angle ACL,\\qquad\\angle LBK=\\angle LNC,\\qquad\\text{and}\\qquad\\angle LCK=\\angle BMK.$$ Let $O$ be the circumcentre of triangle $AKL$. Prove that $OM=ON$."
         },
         {
           "day": 1,
