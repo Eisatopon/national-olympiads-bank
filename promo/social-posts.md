@@ -9,7 +9,7 @@ Suggested hashtags: #μαθηματικά #ολυμπιάδα #IMO #MathOlympiad
 ---
 
 ## Facebook (Greek)
-🧮 **19.425 προβλήματα μαθηματικών ολυμπιάδων. Δωρεάν, σε ένα μέρος.**
+🧮 **Πάνω από 19.400 προβλήματα μαθηματικών ολυμπιάδων. Δωρεάν, σε ένα μέρος, και ο αριθμός μεγαλώνει συνεχώς.**
 
 Το eisatopon.gr παρουσιάζει την **World Mathematical Olympiads Bank**:
 ✅ Εθνικές ολυμπιάδες και TST από 68 χώρες (1947–2026)
@@ -25,12 +25,12 @@ Suggested hashtags: #μαθηματικά #ολυμπιάδα #IMO #MathOlympiad
 ---
 
 ## X / Twitter (Greek, ≤280 characters)
-19.425 προβλήματα μαθηματικών ολυμπιάδων από 68 χώρες, 1947–2026: IMO, Balkan MO, εθνικές ολυμπιάδες και TST. Δωρεάν, με αναζήτηση και εκτυπώσιμα φυλλάδια. 🧮
+19.400+ προβλήματα μαθηματικών ολυμπιάδων από 68 χώρες, 1947–2026: IMO, Balkan MO, εθνικές ολυμπιάδες και TST. Δωρεάν, με αναζήτηση και εκτυπώσιμα φυλλάδια. 🧮
 👉 [link]
 #μαθηματικά #IMO
 
 ## X / Twitter (English)
-19,425 math olympiad problems from 68 countries (1947–2026): national olympiads, TSTs, Balkan MO, APMO, IMO and more. Free, searchable, with topic filters and printable problem sets. 🧮
+19,400+ math olympiad problems (and growing) from 68 countries (1947–2026): national olympiads, TSTs, Balkan MO, APMO, IMO and more. Free, searchable, with topic filters and printable problem sets. 🧮
 👉 [link]
 #MathOlympiad #IMO
 
@@ -38,7 +38,7 @@ Suggested hashtags: #μαθηματικά #ολυμπιάδα #IMO #MathOlympiad
 
 ## Instagram (caption)
 Ένα πρόβλημα την ημέρα… για τα επόμενα 53 χρόνια. 😄
-Η **World Mathematical Olympiads Bank** έχει 19.425 προβλήματα ολυμπιάδων από 68 χώρες.
+Η **World Mathematical Olympiads Bank** έχει πάνω από 19.400 προβλήματα ολυμπιάδων από 68 χώρες, και συνεχώς προστίθενται νέα.
 
 🔎 Αναζήτηση ανά θέμα
 🖨️ Φυλλάδια με ένα κλικ
@@ -50,14 +50,14 @@ Link στο bio 👆
 **Visual ideas:**
 1. A screenshot of the coloured grid of countries and years.
 2. One beautiful IMO problem on a dark background, captioned "Μπορείς να το λύσεις;" ("Can you solve it?").
-3. A carousel of three cards: the numbers (19.425 / 68 / 1947–2026), what you will find, and how to start.
+3. A carousel of three cards: the numbers (19.400+ / 68 / 1947–2026), what you will find, and how to start.
 
 ---
 
 ## LinkedIn (English, professional)
 **Launching the World Mathematical Olympiads Bank: a free resource for math educators and students**
 
-At eisatopon.gr we have gathered **19,425 olympiad problems from 68 countries (1947–2026)** in one searchable bank. It covers:
+At eisatopon.gr we have gathered **more than 19,400 olympiad problems from 68 countries (1947–2026)**, a collection that keeps growing, in one searchable bank. It covers:
 
 • national olympiads and IMO team selection tests;
 • regional competitions (Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican, Cono Sur…);
