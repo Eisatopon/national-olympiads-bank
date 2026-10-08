@@ -1,4 +1,6 @@
-# National Olympiads Bank — instructions for Claude Code
+# World Mathematical Olympiads Bank — instructions for Claude Code
+
+Display name since 8 Oct 2026 (formerly "National Olympiads Bank"). The repository keeps the name `national-olympiads-bank`: the GitHub Pages URL, BASE and every image URL depend on it.
 
 Owner: Sokratis Romanidis (eisatopon.gr). **Reply to him in Greek**, directly, and do the work yourself (download, edit, verify, commit, push) instead of handing him manual steps.
 Goal: the most complete bank in the world of NATIONAL math olympiad problems (national finals) and IMO TEAM SELECTION TESTS (TSTs), in English with LaTeX. Since 7 Oct 2026 it also holds REGIONAL competitions (Balkan MO, JBMO, …) and will hold INTERNATIONAL ones, each in its own section of the same grid.

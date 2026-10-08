@@ -1,4 +1,4 @@
-# National Olympiads Problem Bank
+# World Mathematical Olympiads Bank
 
 A collection of national mathematical olympiad and team selection test statements, with an English interface and MathJax rendering.
 

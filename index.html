@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Olympiads Bank – Problems from 68 Countries, 1947–2026</title>
-<meta name="description" content="A searchable archive of national mathematical olympiad problems from Greece, Albania, Argentina, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Lithuania, Mexico, Moldova, the Netherlands, New Zealand, North Macedonia, Norway, Peru, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
+<title>World Mathematical Olympiads Bank – eisatopon.gr</title>
+<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Lithuania, Mexico, Moldova, the Netherlands, New Zealand, North Macedonia, Norway, Peru, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d62828'/%3E%3Ctext x='32' y='45' font-size='40' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3Ee%3C/text%3E%3C/svg%3E">
 
@@ -542,8 +542,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
 
     <div class="wrap hero-body">
         <div>
-            <h1>National Olympiads Bank</h1>
-            <p class="lede">Problems from national mathematical olympiads around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
+            <h1>World Mathematical Olympiads Bank</h1>
+            <p class="lede">Problems from national, regional and international mathematical olympiads around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
@@ -614,7 +614,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
             <div id="examList"></div>
 
             <label class="field">Title for the printout
-                <input type="text" id="examTitle" placeholder="National Olympiads problem set" autocomplete="off">
+                <input type="text" id="examTitle" placeholder="Mathematical Olympiads problem set" autocomplete="off">
             </label>
             <label class="check"><input type="checkbox" id="showSource" checked> Show the source of each problem</label>
 
@@ -649,7 +649,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
 
 <footer class="footer">
     <div class="wrap">
-        <span>eisatopon.gr © 2025–<span id="yr">2026</span> – National Olympiads Bank</span>
+        <span>eisatopon.gr © 2025–<span id="yr">2026</span> – World Mathematical Olympiads Bank</span>
         <a href="https://github.com/Eisatopon/national-olympiads-bank" target="_blank" rel="noopener">Data on GitHub</a>
     </div>
 </footer>
@@ -1796,7 +1796,7 @@ function deleteCollection() {
 function renderPrintSheet() {
     const items = getSelected();
     const showSrc = $('#showSource').checked;
-    const title = $('#examTitle').value.trim() || 'National Olympiads problem set';
+    const title = $('#examTitle').value.trim() || 'Mathematical Olympiads problem set';
     $('#printSheet').innerHTML = items.length
         ? `<header class="ps-head"><h1></h1><p>eisatopon.gr</p></header>` + items.map((p, i) => `
             <section class="ps-item">
@@ -1980,7 +1980,7 @@ $('#clearBtn').addEventListener('click', () => {
     changeSelection(() => { selected = []; }, 'Your set was cleared.');
 });
 $('#showSource').addEventListener('change', renderPrintSheet);
-$('#examTitle').addEventListener('input', () => { const h1 = $('#printSheet h1'); if (h1) h1.textContent = $('#examTitle').value.trim() || 'National Olympiads problem set'; });
+$('#examTitle').addEventListener('input', () => { const h1 = $('#printSheet h1'); if (h1) h1.textContent = $('#examTitle').value.trim() || 'Mathematical Olympiads problem set'; });
 
 const examEl = $('#exam'), toggleEl = $('#examToggle');
 const wide = window.matchMedia('(min-width: 1024px)');
