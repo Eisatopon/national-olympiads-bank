@@ -91,19 +91,19 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find the smallest positive integer $n$ having the property that for any $n$ distinct integers $a_1, a_2, \\ldots, a_n$ the product of all differences $a_i-a_j$ ($i<j$) is divisible by $1991$."
+          "problem": "Find the smallest positive integer $n$ having the property: for any set of $n$ distinct integers $a_1, a_2, \\ldots, a_n$ the product of all differences $a_i-a_j$, $i<j$ is divisible by $1991$."
         },
         {
           "number": 2,
-          "problem": "Prove that $102^{1991}+103^{1991}$ is not a proper power of an integer."
+          "problem": "Prove that there are no positive integers $n$ and $m>1$ such that $102^{1991}+103^{1991}=n^m$."
         },
         {
           "number": 3,
-          "problem": "There are $20$ cats priced from $12$ to $15$ dollars and $20$ sacks priced from $10$ cents to $1$ dollar for sale, all of different prices. Prove that John and Peter can each buy a cat in a sack paying the same amount of money."
+          "problem": "There are $20$ cats priced from $12$ to $15$ dollars and $20$ sacks priced from $10$ cents to $1$ dollar for sale (all prices are different). Prove that each of two boys, John and Peter, can buy a cat in a sack paying the same amount of money."
         },
         {
           "number": 4,
-          "problem": "A polynomial $p$ with integer coefficients is such that $p(-n)<p(n)<n$ for some integer $n$. Prove that $p(-n)<-n$."
+          "problem": "Let $p$ be a polynomial with integer coefficients such that $p(-n)<p(n)<n$ for some integer $n$. Prove that $p(-n)<-n$."
         },
         {
           "number": 5,
@@ -111,19 +111,19 @@
         },
         {
           "number": 6,
-          "problem": "Solve the equation $[x]\\cdot\\{x\\}=1991x$. (Here $[x]$ denotes the greatest integer less than or equal to $x$, and $\\{x\\}=x-[x]$.)"
+          "problem": "Let $[x]$ be the integer part of a number $x$, and $\\{x\\}=x-[x]$. Solve the equation $$[x]\\cdot\\{x\\}=1991x.$$"
         },
         {
           "number": 7,
-          "problem": "If $\\alpha$, $\\beta$, $\\gamma$ are the angles of an acute-angled triangle, prove that $$\\sin\\alpha+\\sin\\beta>\\cos\\alpha+\\cos\\beta+\\cos\\gamma.$$"
+          "problem": "Let $A$, $B$, $C$ be the angles of an acute-angled triangle. Prove the inequality $$\\sin A+\\sin B>\\cos A+\\cos B+\\cos C.$$"
         },
         {
           "number": 8,
-          "problem": "Let $a$, $b$, $c$, $d$, $e$ be distinct real numbers. Prove that the equation $$\\begin{aligned}&(x-a)(x-b)(x-c)(x-d)+(x-a)(x-b)(x-c)(x-e)\\\\&+(x-a)(x-b)(x-d)(x-e)+(x-a)(x-c)(x-d)(x-e)\\\\&+(x-b)(x-c)(x-d)(x-e)=0\\end{aligned}$$ has four distinct real solutions."
+          "problem": "Let $a$, $b$, $c$, $d$, $e$ be distinct real numbers. Prove that the equation $$\\begin{aligned}&(x-a)(x-b)(x-c)(x-d)+{}\\\\&+(x-a)(x-b)(x-c)(x-e)+{}\\\\&+(x-a)(x-b)(x-d)(x-e)+{}\\\\&+(x-a)(x-c)(x-d)(x-e)+{}\\\\&+(x-b)(x-c)(x-d)(x-e)=0\\end{aligned}$$ has $4$ distinct real solutions."
         },
         {
           "number": 9,
-          "problem": "Find the number of real solutions of the equation $ae^x=x^3$, where $a$ is a real parameter."
+          "problem": "Find the number of solutions of the equation $ae^x=x^3$."
         },
         {
           "number": 10,
@@ -131,15 +131,15 @@
         },
         {
           "number": 11,
-          "problem": "The integers from $1$ to $1000000$ are divided into two groups consisting of numbers with odd or even sums of digits respectively. Which group contains more numbers?"
+          "problem": "All positive integers from $1$ to $1\\,000\\,000$ are divided into two groups consisting of numbers with odd or even sums of digits respectively. Which group contains more numbers?"
         },
         {
           "number": 12,
-          "problem": "The vertices of a convex $1991$-gon are enumerated with integers from $1$ to $1991$. Each side and diagonal of the $1991$-gon is coloured either red or blue. Prove that, for an arbitrary renumeration of vertices, one can find integers $k$ and $l$ such that the segment connecting the vertices numbered $k$ and $l$ before the renumeration has the same colour as the segment connecting the vertices numbered $k$ and $l$ after the renumeration."
+          "problem": "The vertices of a convex $1991$-gon are enumerated with integers from $1$ to $1991$. Each side and diagonal of the $1991$-gon is coloured either red or blue. Prove that, for an arbitrary renumeration of vertices, one can find integers $k$ and $l$ such that the line connecting vertices with numbers $k$ and $l$ before the renumeration has the same colour as the line between the vertices having these numbers after the renumeration."
         },
         {
           "number": 13,
-          "problem": "An equilateral triangle is divided into $25$ equal equilateral triangles labelled by $1$ through $25$. Prove that one can find two triangles having a common side whose labels differ by more than $3$."
+          "problem": "An equilateral triangle is divided into $25$ congruent triangles enumerated with numbers from $1$ to $25$. Prove that one can find two triangles having a common side and with the difference of the numbers assigned to them greater than $3$."
         },
         {
           "number": 14,
@@ -147,27 +147,27 @@
         },
         {
           "number": 15,
-          "problem": "In each of the squares of a chessboard an arbitrary integer is written. A king starts to move on the board. Whenever the king moves to some square, the number in that square is increased by $1$. Is it always possible to make the numbers on the chessboard:\n(a) all even;\n(b) all divisible by $3$;\n(c) all equal?"
+          "problem": "In each of the squares of a chessboard an arbitrary integer is written. A king starts to move on the board. As the king moves, $1$ is added to the number in each square it “visits”. Is it always possible to make the numbers on the chessboard:\na) all even;\nb) all divisible by $3$;\nc) all equal?"
         },
         {
           "number": 16,
-          "problem": "Two circles $C_1$ and $C_2$ with radii $r_1$ and $r_2$ touch each other externally and both touch a line $l$. A circle $C_3$ with radius $r_3<r_1, r_2$ is tangent to $l$ and externally to $C_1$ and $C_2$. Prove that $$\\frac{1}{\\sqrt{r_3}}=\\frac{1}{\\sqrt{r_1}}+\\frac{1}{\\sqrt{r_2}}.$$"
+          "problem": "Let two circles $C_1$ and $C_2$ (with radii $r_1$ and $r_2$) touch each other externally, and let $l$ be their common tangent. A third circle $C_3$ (with radius $r_3<\\min(r_1,r_2)$) is externally tangent to the two given circles and tangent to the line $l$. Prove that $$\\frac{1}{\\sqrt{r_3}}=\\frac{1}{\\sqrt{r_1}}+\\frac{1}{\\sqrt{r_2}}.$$"
         },
         {
           "number": 17,
-          "problem": "Let the coordinate planes have the reflection property. A ray falls onto one of them. How does the final direction of the ray after reflecting from all three coordinate planes depend on its initial direction?"
+          "problem": "Let the coordinate planes have the reflection property. A beam falls onto one of them. How does the final direction of the beam after reflecting from all three coordinate planes depend on its initial direction?"
         },
         {
           "number": 18,
-          "problem": "Is it possible to place two non-intersecting tetrahedra of volume $\\frac12$ into a sphere with radius $1$?"
+          "problem": "Is it possible to put two tetrahedra of volume $\\frac12$ without intersection into a sphere with radius $1$?"
         },
         {
           "number": 19,
-          "problem": "Three circles in the plane, whose interiors have no common point, meet each other at three pairs of points: $A_1$ and $A_2$, $B_1$ and $B_2$, and $C_1$ and $C_2$, where points $A_2$, $B_2$, $C_2$ lie inside the triangle $A_1B_1C_1$. Prove that $$A_1B_2\\cdot B_1C_2\\cdot C_1A_2=A_1C_2\\cdot C_1B_2\\cdot B_1A_2.$$"
+          "problem": "Let’s expand a little bit three circles, touching each other externally, so that three pairs of intersection points appear. Denote by $A_1$, $B_1$, $C_1$ the three so obtained “external” points and by $A_2$, $B_2$, $C_2$ the corresponding “internal” points. Prove the equality $$|A_1B_2|\\cdot|B_1C_2|\\cdot|C_1A_2|=|A_1C_2|\\cdot|C_1B_2|\\cdot|B_1A_2|.$$"
         },
         {
           "number": 20,
-          "problem": "Consider two points $A(x_1,y_1)$ and $B(x_2,y_2)$ on the graph of the function $y=\\frac1x$ such that $0<x_1<x_2$ and $AB=2\\cdot OA$, where $O=(0,0)$. Let $C$ be the midpoint of the segment $AB$. Prove that the angle between the $x$-axis and the ray $OA$ is equal to three times the angle between the $x$-axis and the ray $OC$."
+          "problem": "Consider two points $A(x_1,y_1)$ and $B(x_2,y_2)$ on the graph of the function $y=\\frac1x$ such that $0<x_1<x_2$ and $|AB|=2\\cdot|OA|$ ($O$ is the reference point, i.e. $O(0,0)$). Let $C$ be the midpoint of the segment $AB$. Prove that the angle between the $x$-axis and the ray $OA$ is equal to three times the angle between $x$-axis and the ray $OC$."
         }
       ]
     },
@@ -354,7 +354,7 @@
         },
         {
           "number": 3,
-          "problem": "Find the largest value of the expression $$xy+x\\sqrt{1-x^2}+y\\sqrt{1-y^2}-\\sqrt{(1-x^2)(1-y^2)}.$$"
+          "problem": "Find the largest value of the expression $$xy+x\\sqrt{1-y^2}+y\\sqrt{1-x^2}-\\sqrt{(1-x^2)(1-y^2)}.$$"
         },
         {
           "number": 4,
@@ -507,7 +507,7 @@
         },
         {
           "number": 20,
-          "problem": "All the vertices of a convex pentagon are on lattice points. Prove that the area of the pentagon is at least $\\frac52$."
+          "problem": "Prove that if both coordinates of every vertex of a convex pentagon are integers then the area of this pentagon is not less than $\\frac52$."
         }
       ]
     },
@@ -517,6 +517,10 @@
         {
           "number": 1,
           "problem": "Let $\\alpha$ be the angle between two lines containing the diagonals of a regular $1996$-gon, and let $\\beta\\neq 0$ be another such angle. Prove that $\\frac{\\alpha}{\\beta}$ is a rational number."
+        },
+        {
+          "number": 2,
+          "problem": "In the figure below, you see three half-circles. The circle $C$ is tangent to two of the half-circles and to the line $PQ$ perpendicular to the diameter $AB$. The area of the shaded region is $39\\pi$, and the area of the circle $C$ is $9\\pi$. Find the length of the diameter $AB$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_1996_p2_fig.png"
         },
         {
           "number": 3,
@@ -532,7 +536,7 @@
         },
         {
           "number": 6,
-          "problem": "Let $a$, $b$, $c$, $d$ be positive integers such that $ab=cd$. Prove that $a+b+c+d$ is a composite number."
+          "problem": "Let $a$, $b$, $c$, $d$ be positive integers such that $ab=cd$. Prove that $a+b+c+d$ is not a prime."
         },
         {
           "number": 7,
@@ -1281,7 +1285,7 @@
         },
         {
           "number": 2,
-          "problem": "Let $\\alpha$, $\\beta$ and $\\gamma$ be three acute angles such that $\\sin\\alpha+\\sin\\beta+\\sin\\gamma=1$. Show that $$\\tan^2\\alpha+\\tan^2\\beta+\\tan^2\\gamma\\geq\\frac38.$$"
+          "problem": "Let $\\alpha$, $\\beta$ and $\\gamma$ be three angles with $0\\le\\alpha,\\beta,\\gamma<90^\\circ$ and $\\sin\\alpha+\\sin\\beta+\\sin\\gamma=1$. Show that $$\\tan^2\\alpha+\\tan^2\\beta+\\tan^2\\gamma\\geq\\frac38.$$"
         },
         {
           "number": 3,
@@ -1297,11 +1301,11 @@
         },
         {
           "number": 6,
-          "problem": "Let $N$ and $K$ be positive integers satisfying $1\\leq K\\leq N$. A deck of $N$ different playing cards is shuffled by repeating the operation of reversing the order of the $K$ topmost cards and moving these to the bottom of the deck. Prove that the deck will be back in its initial order after a number of operations not greater than $(2N/K)^2$."
+          "problem": "Let $K$ and $N$ be positive integers with $1\\le K\\le N$. A deck of $N$ different playing cards is shuffled by repeating the operation of reversing the order of $K$ topmost cards and moving these to the bottom of the deck. Prove that the deck will be back in its initial order after a number of operations not greater than $4\\cdot N^2/K^2$."
         },
         {
           "number": 7,
-          "problem": "A rectangular array has $n$ rows and $6$ columns, where $n\\geq 2$. In each cell there is written either $0$ or $1$. All rows in the array are different from each other. For each two rows $(x_1,x_2,x_3,x_4,x_5,x_6)$ and $(y_1,y_2,y_3,y_4,y_5,y_6)$, the row $(x_1y_1,x_2y_2,x_3y_3,x_4y_4,x_5y_5,x_6y_6)$ can be found in the array as well. Prove that there is a column in which at least half of the entries are zeros."
+          "problem": "A rectangular array has $n$ rows and $6$ columns, where $n>2$. In each cell there is written either $0$ or $1$. All rows in the array are different from each other. For each two rows $(x_1,x_2,x_3,x_4,x_5,x_6)$ and $(y_1,y_2,y_3,y_4,y_5,y_6)$ the row $(x_1y_1,x_2y_2,x_3y_3,x_4y_4,x_5y_5,x_6y_6)$ also can be found in the array. Prove that there is a column in which at least half of the entries are zeros."
         },
         {
           "number": 8,
@@ -1313,7 +1317,7 @@
         },
         {
           "number": 10,
-          "problem": "Let $m=30030$ and let $M$ be the set of its positive divisors which have exactly $2$ prime factors. Determine the smallest positive integer $n$ with the following property: for any choice of $n$ numbers from $M$, there exist $3$ numbers $a$, $b$, $c$ among them satisfying $abc=m$."
+          "problem": "Let $m=30030=2\\cdot3\\cdot5\\cdot7\\cdot11\\cdot13$ and let $M$ be the set of its positive divisors which have exactly $2$ prime factors. Determine the minimal integer $n$ with the following property: for any choice of $n$ numbers from $M$, there exist $3$ numbers $a$, $b$, $c$ among them satisfying $a\\cdot b\\cdot c=m$."
         },
         {
           "number": 11,
@@ -1329,7 +1333,7 @@
         },
         {
           "number": 14,
-          "problem": "Let the medians of the triangle $ABC$ meet at $G$. Let $D$ and $E$ be different points on the line $BC$ such that $DC=CE=AB$, and let $P$ and $Q$ be points on the segments $BD$ and $BE$, respectively, such that $2BP=PD$ and $2BQ=QE$. Determine $\\angle PGQ$."
+          "problem": "Let the medians of the triangle $ABC$ meet at $M$. Let $D$ and $E$ be different points on the line $BC$ such that $DC=CE=AB$, and let $P$ and $Q$ be points on the segments $BD$ and $BE$, respectively, such that $2BP=PD$ and $2BQ=QE$. Determine $\\angle PMQ$."
         },
         {
           "number": 15,
@@ -1471,7 +1475,7 @@
         },
         {
           "number": 7,
-          "problem": "A squiggle is composed of six equilateral triangles with side length $1$: it consists of an equilateral triangle of side $2$ (made of four unit triangles) together with a rhombus made of two unit triangles, attached along the lower half of the left side of the big triangle, so that the bottom edge of the squiggle is a segment of length $3$. (The original problem shows the squiggle in a figure.) Determine all possible integers $n$ such that an equilateral triangle with side length $n$ can be fully covered with squiggles (rotations and reflections of squiggles are allowed, overlappings are not)."
+          "problem": "A squiggle is composed of six regular triangles with side length $1$ as shown in the figure below. Determine all possible integers $n$ such that a regular triangle with side length $n$ can be fully covered with squiggles (rotations and reflections of squiggles are allowed, overlappings are not).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2007_p7_fig.png"
         },
         {
           "number": 8,
@@ -1581,6 +1585,10 @@
         {
           "number": 13,
           "problem": "For an upcoming international mathematics contest, the participating countries were asked to choose from nine combinatorics problems. Given how hard it usually is to agree, nobody was surprised that the following happened:\n(i) every country voted for exactly three problems;\n(ii) any two countries voted for different sets of problems;\n(iii) given any three countries, there was a problem none of them voted for.\nFind the maximal possible number of participating countries."
+        },
+        {
+          "number": 14,
+          "problem": "Is it possible to build a $4\\times 4\\times 4$ cube from blocks of the following shape consisting of $4$ unit cubes?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2008_p14_fig.png"
         },
         {
           "number": 15,
@@ -2313,7 +2321,7 @@
         },
         {
           "number": 6,
-          "problem": "Fifteen stones are placed on a $4\\times 4$ board, one in each cell, the remaining cell being empty. Whenever two stones are on neighbouring cells (having a common side), one may jump over the other to the opposite neighbouring cell, provided this cell is empty. The stone jumped over is removed from the board. For which initial positions of the empty cell is it possible to end up with exactly one stone on the board?"
+          "problem": "Fifteen stones are placed on a $4\\times 4$ board, one in each cell, the remaining cell being empty. Whenever two stones are on neighbouring cells (having a common side), one may jump over the other to the opposite neighbouring cell, provided this cell is empty. The stone jumped over is removed from the board.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2017_p6_fig.png\n\nFor which initial positions of the empty cell is it possible to end up with exactly one stone on the board?"
         },
         {
           "number": 7,
@@ -2321,7 +2329,7 @@
         },
         {
           "number": 8,
-          "problem": "A chess knight has injured his leg and is limping. He alternates between a normal move and a short move where he moves to any diagonally neighbouring cell. The limping knight moves on a $5\\times 6$ cell chessboard starting with a normal move. What is the largest number of moves he can make if he is starting from a cell of his own choice and is not allowed to visit any cell (including the initial cell) more than once?"
+          "problem": "A chess knight has injured his leg and is limping. He alternates between a normal move and a short move where he moves to any diagonally neighbouring cell.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2017_p8_fig.png\n\nThe limping knight moves on a $5\\times 6$ cell chessboard starting with a normal move. What is the largest number of moves he can make if he is starting from a cell of his own choice and is not allowed to visit any cell (including the initial cell) more than once?"
         },
         {
           "number": 9,
@@ -2402,11 +2410,15 @@
         },
         {
           "number": 7,
-          "problem": "On a $16\\times 16$ torus (a $16\\times 16$ grid of cells whose opposite sides are glued together, so that it has $256$ vertices and $512$ edges) all $512$ edges are coloured red or blue. A colouring is good if every vertex is an endpoint of an even number of red edges. A move consists of switching the colour of each of the $4$ edges of an arbitrary cell. What is the largest number of good colourings such that none of them can be converted to another by a sequence of moves?"
+          "problem": "On a $16\\times 16$ torus as shown all $512$ edges are colored red or blue. A coloring is good if every vertex is an endpoint of an even number of red edges. A move consists of switching the color of each of the $4$ edges of an arbitrary cell. What is the largest number of good colorings such that none of them can be converted to another by a sequence of moves?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2018_p7_fig.png"
         },
         {
           "number": 8,
           "problem": "A graph has $N$ vertices. An invisible hare sits in one of the vertices. A group of hunters tries to kill the hare. In each move all of them shoot simultaneously: each hunter shoots at a single vertex, they choose the target vertices cooperatively. If the hare was in one of the target vertices during a shoot, the hunt is finished. Otherwise the hare can stay in its vertex or jump to one of the neighbouring vertices. The hunters know an algorithm that allows them to kill the hare in at most $N!$ moves. Prove that then there exists an algorithm that allows them to kill the hare in at most $2^N$ moves."
+        },
+        {
+          "number": 9,
+          "problem": "Olga and Sasha play a game on an infinite hexagonal grid. They take turns in placing a stone on a free hexagon of their choice. Olga starts the game. Just before the $2018$th stone is placed, a new rule comes into play. A stone may now be placed only on those free hexagons having at least two occupied neighbors. A player loses when she or he either is unable to make a move, or makes a move such that a pattern of the rhomboid shape as shown (rotated in any possible way) appears. Determine which player, if any, possesses a winning strategy.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2018_p9_fig.png"
         },
         {
           "number": 10,
@@ -2653,7 +2665,7 @@
         },
         {
           "number": 7,
-          "problem": "Let $n>2$ be an integer. Anna, Edda and Magni play a game on a hexagonal board tiled with regular hexagons, with $n$ tiles on each side. The central tile is marked. (The original problem shows such a board with $5$ tiles on each side.) The game begins with a stone on a tile in one corner of the board. Edda and Magni are on the same team, playing against Anna, and they win if the stone is on the central tile at the end of any player's turn. Anna, Edda and Magni take turns moving the stone: Anna begins, then Edda, then Magni, then Anna, and so on. The rules for each player's turn are:\n• Anna has to move the stone to an adjacent tile, in any direction.\n• Edda has to move the stone straight by two tiles in any of the $6$ possible directions.\n• Magni has a choice of passing his turn, or moving the stone straight by three tiles in any of the $6$ possible directions.\nFind all $n$ for which Edda and Magni have a winning strategy."
+          "problem": "Let $n>2$ be an integer. Anna, Edda and Magni play a game on a hexagonal board tiled with regular hexagons, with $n$ tiles on each side. The figure shows a board with $5$ tiles on each side. The central tile is marked.\nThe game begins with a stone on a tile in one corner of the board. Edda and Magni are on the same team, playing against Anna, and they win if the stone is on the central tile at the end of any player’s turn. Anna, Edda and Magni take turns moving the stone: Anna begins, then Edda, then Magni, then Anna, and so on.\nThe rules for each player’s turn are:\n• Anna has to move the stone to an adjacent tile, in any direction.\n• Edda has to move the stone straight by two tiles in any of the $6$ possible directions.\n• Magni has a choice of passing his turn, or moving the stone straight by three tiles in any of the $6$ possible directions.\nFind all $n$ for which Edda and Magni have a winning strategy.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bw_2021_p7_fig.png"
         },
         {
           "number": 8,
@@ -2839,7 +2851,7 @@
         },
         {
           "number": 11,
-          "problem": "Let $ABC$ be a triangle with $A$-excentre $J$. The reflection of $J$ in $BC$ is $K$. The points $E$ and $F$ are on $BJ$, $CJ$ such that $\\angle EAB=\\angle CAF=90^\\circ$. Prove that $\\angle FKE+\\angle FJE=180^\\circ$."
+          "problem": "Let $ABC$ be a triangle and let $J$ be the centre of the $A$-excircle. The reflection of $J$ in $BC$ is $K$. The points $E$ and $F$ are on $BJ$ and $CJ$, respectively, such that $\\angle EAB=\\angle CAF=90^\\circ$. Prove that $\\angle FKE+\\angle FJE=180^\\circ$.\nRemark: The $A$-excircle is the circle that touches the side $BC$ and the extensions of $AC$ and $AB$."
         },
         {
           "number": 12,
@@ -2855,7 +2867,7 @@
         },
         {
           "number": 15,
-          "problem": "Let $\\omega_1$ and $\\omega_2$ be two circles with no common points, such that neither of them is inside the other one. Let $M$, $N$ lie on $\\omega_1$, $\\omega_2$, such that the tangents at $M$ to $\\omega_1$ and at $N$ to $\\omega_2$ meet at $P$, such that $PM=PN$. The circles $\\omega_1$, $\\omega_2$ meet $MN$ at $A$, $B$. The lines $PA$, $PB$ meet $\\omega_1$, $\\omega_2$ at $C$, $D$. Show that $\\angle BCN=\\angle ADM$."
+          "problem": "Let $\\omega_1$ and $\\omega_2$ be circles with no common points, such that neither circle lies inside the other. Points $M$ and $N$ are chosen on the circles $\\omega_1$ and $\\omega_2$, respectively, such that the tangent to the circle $\\omega_1$ at $M$ and the tangent to the circle $\\omega_2$ at $N$ intersect at $P$ and such that $PMN$ is an isosceles triangle with $PM=PN$. The circles $\\omega_1$ and $\\omega_2$ meet the segment $MN$ again at $A$ and $B$, respectively. The line $PA$ meets the circle $\\omega_1$ again at $C$ and the line $PB$ meets the circle $\\omega_2$ again at $D$. Prove that $\\angle BCN=\\angle ADM$."
         },
         {
           "number": 16,
