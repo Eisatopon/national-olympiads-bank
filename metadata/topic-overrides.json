@@ -165813,10 +165813,21 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $x$, $y$, $z$, $w$ be nonzero real numbers such that $x+y\\neq 0$, $z+w\\neq 0$, and $xy+zw\\geq 0$. Prove that $$\\left(\\frac{x+y}{z+w}+\\frac{z+w}{x+y}\\right)^{-1}+\\frac12\\geq\\left(\\frac{x}{z}+\\frac{z}{x}\\right)^{-1}+\\left(\\frac{y}{w}+\\frac{w}{y}\\right)^{-1}.$$",
-      "statement_sha256": "6b099ffe1346f89dcb75e9b30e86d8950aba8dd4fd9ac7bb4418571709b361b5",
+      "reviewed_statement": "Let $x,y,z,w\\in\\mathbb{R}\\setminus\\{0\\}$ such that $x+y\\neq 0$, $z+w\\neq 0$, and $xy+zw\\geq 0$. Prove the inequality $$\\left(\\frac{x+y}{z+w}+\\frac{z+w}{x+y}\\right)^{-1}+\\frac12\\geq\\left(\\frac{x}{z}+\\frac{z}{x}\\right)^{-1}+\\left(\\frac{y}{w}+\\frac{w}{y}\\right)^{-1}.$$",
+      "statement_sha256": "f668f46c0606561853d8d26bd31ac12141f17afd5801d5a5a2a175138a9f767c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $x$, $y$, $z$, $w$ be nonzero real numbers such that $x+y\\neq 0$, $z+w\\neq 0$, and $xy+zw\\geq 0$. Prove that $$\\left(\\frac{x+y}{z+w}+\\frac{z+w}{x+y}\\right)^{-1}+\\frac12\\geq\\left(\\frac{x}{z}+\\frac{z}{x}\\right)^{-1}+\\left(\\frac{y}{w}+\\frac{w}{y}\\right)^{-1}.$$",
+          "statement_sha256": "6b099ffe1346f89dcb75e9b30e86d8950aba8dd4fd9ac7bb4418571709b361b5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2013.2.7": {
       "topics": [
@@ -166092,28 +166103,61 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $n\\geq 2$ be an integer, and let $x_1, x_2, \\ldots, x_n$ be reals for which:\n(a) $x_j>-1$ for $j=1, 2, \\ldots, n$ and\n(b) $x_1+x_2+\\cdots+x_n=n$.\nProve that $$\\sum_{j=1}^{n}\\frac{1}{1+x_j}\\geq\\sum_{j=1}^{n}\\frac{x_j}{1+x_j^2}$$ and determine when the equality occurs.",
-      "statement_sha256": "e4b5716a540f7a5895ee4812dfb33191bf5ac974fb6ef05e73d80145329573ff",
+      "reviewed_statement": "Let $n\\geq 2$ be an integer and $x_1, x_2, \\ldots, x_n$ be real numbers satisfying\n(a) $x_j>-1$ for $j=1, 2, \\ldots, n$ and\n(b) $x_1+x_2+\\cdots+x_n=n$.\nProve the inequality $$\\sum_{j=1}^{n}\\frac{1}{1+x_j}\\geq\\sum_{j=1}^{n}\\frac{x_j}{1+x_j^2}$$ and determine when equality holds.",
+      "statement_sha256": "a55814accdab091fa9c8f03be32afc1a55261d5122266d6218c34741f91698a2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $n\\geq 2$ be an integer, and let $x_1, x_2, \\ldots, x_n$ be reals for which:\n(a) $x_j>-1$ for $j=1, 2, \\ldots, n$ and\n(b) $x_1+x_2+\\cdots+x_n=n$.\nProve that $$\\sum_{j=1}^{n}\\frac{1}{1+x_j}\\geq\\sum_{j=1}^{n}\\frac{x_j}{1+x_j^2}$$ and determine when the equality occurs.",
+          "statement_sha256": "e4b5716a540f7a5895ee4812dfb33191bf5ac974fb6ef05e73d80145329573ff",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "There are $n\\geq 3$ positive integers written on a board. A move consists of choosing three numbers $a$, $b$, $c$ written on the board such that there exists a non-degenerate non-equilateral triangle with sides $a$, $b$, $c$ and replacing those numbers with $a+b-c$, $b+c-a$ and $c+a-b$. Prove that a sequence of moves cannot be infinite.",
-      "statement_sha256": "3b1178290a8fe7907a85f6afd0f2cb0988ca084aac805aceab2a69f3830716ab",
+      "reviewed_statement": "There are $n\\geq 3$ positive integers written on a blackboard. A move consists of choosing three numbers $a$, $b$, $c$ on the blackboard such that they are the sides of a non-degenerate non-equilateral triangle and replacing them by $a+b-c$, $b+c-a$ and $c+a-b$.\nShow that an infinite sequence of moves cannot exist.",
+      "statement_sha256": "5f51323dcc28077e0fedc7f8601cf07301b9eded39680d5a571496366dd259ba",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "There are $n\\geq 3$ positive integers written on a board. A move consists of choosing three numbers $a$, $b$, $c$ written on the board such that there exists a non-degenerate non-equilateral triangle with sides $a$, $b$, $c$ and replacing those numbers with $a+b-c$, $b+c-a$ and $c+a-b$. Prove that a sequence of moves cannot be infinite.",
+          "statement_sha256": "3b1178290a8fe7907a85f6afd0f2cb0988ca084aac805aceab2a69f3830716ab",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.1.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute triangle such that $\\angle BAC>45^\\circ$ with circumcentre $O$. A point $P$ is chosen inside triangle $ABC$ such that $A$, $P$, $O$, $B$ are concyclic and the line $BP$ is perpendicular to the line $CP$. A point $Q$ lies on the segment $BP$ such that the line $AQ$ is parallel to the line $PO$. Prove that $\\angle QCB=\\angle PCO$.",
-      "statement_sha256": "a83382eb96d46c2cc69ecd1f74dc4db6a2d82025356f5cef09c008ed6b240b6d",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $\\angle BAC>45^\\circ$ and with circumcentre $O$. The point $P$ lies in its interior such that the points $A$, $P$, $O$, $B$ lie on a circle and $BP$ is perpendicular to $CP$. The point $Q$ lies on the segment $BP$ such that $AQ$ is parallel to $PO$.\nProve that $\\angle QCB=\\angle PCO$.",
+      "statement_sha256": "281921850e1b93d7e276c191f8f1c940805b6468d9446e43a3df5ba22c64a3cb",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute triangle such that $\\angle BAC>45^\\circ$ with circumcentre $O$. A point $P$ is chosen inside triangle $ABC$ such that $A$, $P$, $O$, $B$ are concyclic and the line $BP$ is perpendicular to the line $CP$. A point $Q$ lies on the segment $BP$ such that the line $AQ$ is parallel to the line $PO$. Prove that $\\angle QCB=\\angle PCO$.",
+          "statement_sha256": "a83382eb96d46c2cc69ecd1f74dc4db6a2d82025356f5cef09c008ed6b240b6d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.1.4": {
       "topics": [
@@ -166128,19 +166172,41 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all triples $(a,b,c)$ of real numbers such that $$\\begin{aligned}a^2+ab+c&=0,\\\\ b^2+bc+a&=0,\\\\ c^2+ca+b&=0.\\end{aligned}$$",
-      "statement_sha256": "6f6e18a622702b37353c15c4fa80f499416ec7072f177a6d2cf2a751c9fd19e8",
+      "reviewed_statement": "Determine all triples $(a,b,c)$ of real numbers satisfying the system of equations $$\\begin{aligned}a^2+ab+c&=0,\\\\ b^2+bc+a&=0,\\\\ c^2+ca+b&=0.\\end{aligned}$$",
+      "statement_sha256": "fdb1d99f5f6c88d3260cd95e0cee5a16976b32abd040e9549eb9e71c5d899450",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all triples $(a,b,c)$ of real numbers such that $$\\begin{aligned}a^2+ab+c&=0,\\\\ b^2+bc+a&=0,\\\\ c^2+ca+b&=0.\\end{aligned}$$",
+          "statement_sha256": "6f6e18a622702b37353c15c4fa80f499416ec7072f177a6d2cf2a751c9fd19e8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $\\mathbb{R}$ denote the set of the reals. Find all $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x)f(y)=xf\\big(f(y-x)\\big)+xf(2x)+f(x^2)$$ for all real $x$, $y$.",
-      "statement_sha256": "e3734ea4a26d99a3619a2e490ce69fa760118a0eb8bf31733691b162b460d8f5",
+      "reviewed_statement": "Let $\\mathbb{R}$ denote the set of real numbers. Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x)f(y)=xf\\big(f(y-x)\\big)+xf(2x)+f(x^2)$$ holds for all real numbers $x$ and $y$.",
+      "statement_sha256": "ae575e29e5f11e12b1b888e8393b86e7bdf88e24281416b60c0458c6be62e29f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $\\mathbb{R}$ denote the set of the reals. Find all $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x)f(y)=xf\\big(f(y-x)\\big)+xf(2x)+f(x^2)$$ for all real $x$, $y$.",
+          "statement_sha256": "e3734ea4a26d99a3619a2e490ce69fa760118a0eb8bf31733691b162b460d8f5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.7": {
       "topics": [
@@ -166155,46 +166221,101 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "An exam was taken by some students. Each problem was worth $1$ point for the correct answer, and $0$ points for an incorrect one. For each question, at least one student answered it correctly. Also, there are two students with different scores on the exam. Prove that there exists a question for which the following holds: the average score of the students who answered the question correctly is greater than the average score of the students who didn't.",
-      "statement_sha256": "bae705ea6ff52ed9f7f02cf4543529944e70b8d06ee9b6db422b1a4427df3856",
+      "reviewed_statement": "A class of high school students wrote a test. Every question was graded as either $1$ point for a correct answer or $0$ points otherwise. It is known that each question was answered correctly by at least one student and the students did not all achieve the same total score.\nProve that there was a question on the test with the following property: The students who answered the question correctly got a higher average test score than those who did not.",
+      "statement_sha256": "a77ac6e14fa4e772dd8122638a1111bfc10cd99f985ef6c06429b3038b910805",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "An exam was taken by some students. Each problem was worth $1$ point for the correct answer, and $0$ points for an incorrect one. For each question, at least one student answered it correctly. Also, there are two students with different scores on the exam. Prove that there exists a question for which the following holds: the average score of the students who answered the question correctly is greater than the average score of the students who didn't.",
+          "statement_sha256": "bae705ea6ff52ed9f7f02cf4543529944e70b8d06ee9b6db422b1a4427df3856",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.9": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute triangle for which $AB\\neq AC$, and let $O$ be its circumcentre. Line $AO$ meets the circumcircle of $ABC$ again in $D$, and the line $BC$ in $E$. The circumcircle of $CDE$ meets the line $CA$ again in $P$. The lines $PE$ and $AB$ intersect in $Q$. The line passing through $O$ parallel to the line $PE$ intersects the $A$-altitude of $ABC$ in $F$. Prove that $FP=FQ$.",
-      "statement_sha256": "66389c82e32c5f95b40905f86ce698f8cb5d333664fecd7b2db6cd1d4cd50671",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $AB\\neq AC$, and let $O$ be its circumcentre. The line $AO$ intersects the circumcircle $\\omega$ of $ABC$ a second time in point $D$, and the line $BC$ in point $E$. The circumcircle of $CDE$ intersects the line $CA$ a second time in point $P$. The line $PE$ intersects the line $AB$ in point $Q$. The line through $O$ parallel to $PE$ intersects the altitude of the triangle $ABC$ that passes through $A$ in point $F$.\nProve that $FP=FQ$.",
+      "statement_sha256": "e1c9d7fbbfa53746b3951961667850a8ea8b058be89d3846c996484e987e8ded",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute triangle for which $AB\\neq AC$, and let $O$ be its circumcentre. Line $AO$ meets the circumcircle of $ABC$ again in $D$, and the line $BC$ in $E$. The circumcircle of $CDE$ meets the line $CA$ again in $P$. The lines $PE$ and $AB$ intersect in $Q$. The line passing through $O$ parallel to the line $PE$ intersects the $A$-altitude of $ABC$ in $F$. Prove that $FP=FQ$.",
+          "statement_sha256": "66389c82e32c5f95b40905f86ce698f8cb5d333664fecd7b2db6cd1d4cd50671",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.10": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle for which $AB\\neq AC$. Points $K$, $L$, $M$ are the midpoints of the sides $BC$, $CA$, $AB$. The incircle of $ABC$ with centre $I$ is tangent to $BC$ in $D$. A line passing through the midpoint of $ID$ perpendicular to $IK$ meets the line $LM$ in $P$. Prove that $\\angle PIA=90^\\circ$.",
-      "statement_sha256": "a967fc00a28cbe02c8ff49d162f416eaf31d152b3dade218c546433a2d0118ea",
+      "reviewed_statement": "Let $ABC$ be a triangle with $AB\\neq AC$. The points $K$, $L$, $M$ are the midpoints of the sides $BC$, $CA$, $AB$, respectively. The inscribed circle of $ABC$ with centre $I$ touches the side $BC$ at point $D$. The line $g$, which passes through the midpoint of segment $ID$ and is perpendicular to $IK$, intersects the line $LM$ at point $P$.\nProve that $\\angle PIA=90^\\circ$.",
+      "statement_sha256": "f8f156fd6709689f2562bdfdbda271cc23ee0d2e62bfbdf770dce9bd771992aa",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle for which $AB\\neq AC$. Points $K$, $L$, $M$ are the midpoints of the sides $BC$, $CA$, $AB$. The incircle of $ABC$ with centre $I$ is tangent to $BC$ in $D$. A line passing through the midpoint of $ID$ perpendicular to $IK$ meets the line $LM$ in $P$. Prove that $\\angle PIA=90^\\circ$.",
+          "statement_sha256": "a967fc00a28cbe02c8ff49d162f416eaf31d152b3dade218c546433a2d0118ea",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.11": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A positive integer $n$ is Mozart if the decimal representation of the sequence $1, 2, \\ldots, n$ contains each digit an even number of times. Prove that:\n1. all Mozart numbers are even;\n2. there are infinitely many Mozart numbers.",
-      "statement_sha256": "75ae29e3ba831c1cc953583bf634dfa73bb1a922c07b1a42277bd7f1877eb9de",
+      "reviewed_statement": "A positive integer $n$ is called a Mozartian number if the numbers $1, 2, \\ldots, n$ together contain an even number of each digit (in base $10$).\nProve:\n(a) All Mozartian numbers are even.\n(b) There are infinitely many Mozartian numbers.",
+      "statement_sha256": "3622b65bd3063905c4afbc1d349f4340e27b3b3a792ceca056166936f1c3617c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A positive integer $n$ is Mozart if the decimal representation of the sequence $1, 2, \\ldots, n$ contains each digit an even number of times. Prove that:\n1. all Mozart numbers are even;\n2. there are infinitely many Mozart numbers.",
+          "statement_sha256": "75ae29e3ba831c1cc953583bf634dfa73bb1a922c07b1a42277bd7f1877eb9de",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2016.2.12": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "For a positive integer $n$, the equation $a^2+b^2+c^2+n=abc$ is given in the positive integers. Prove that:\n1. there does not exist a solution $(a,b,c)$ for $n=2017$;\n2. for $n=2016$, $a$ is divisible by $3$ for all solutions $(a,b,c)$;\n3. there are infinitely many solutions $(a,b,c)$ for $n=2016$.",
-      "statement_sha256": "62ca2d1f8680301e1797420e419f3b2eeb916227681b81fa47a2373a73575634",
+      "reviewed_statement": "We consider the equation $a^2+b^2+c^2+n=abc$, where $a$, $b$, $c$ are positive integers.\nProve:\n(a) There are no solutions $(a,b,c)$ for $n=2017$.\n(b) For $n=2016$, $a$ must be divisible by $3$ for every solution $(a,b,c)$.\n(c) The equation has infinitely many solutions $(a,b,c)$ for $n=2016$.",
+      "statement_sha256": "af27911aec7464412186eaf1042ec54443a7884e6aed49cc8523ce2190259a07",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "For a positive integer $n$, the equation $a^2+b^2+c^2+n=abc$ is given in the positive integers. Prove that:\n1. there does not exist a solution $(a,b,c)$ for $n=2017$;\n2. for $n=2016$, $a$ is divisible by $3$ for all solutions $(a,b,c)$;\n3. there are infinitely many solutions $(a,b,c)$ for $n=2016$.",
+          "statement_sha256": "62ca2d1f8680301e1797420e419f3b2eeb916227681b81fa47a2373a73575634",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2017.1.1": {
       "topics": [
@@ -166317,10 +166438,21 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Two shapes, consisting of $6$ and $10$ unit squares respectively, are called staircases: the first consists of rows of $3$, $2$ and $1$ unit squares and the second of rows of $4$, $3$, $2$ and $1$ unit squares, the rows aligned at one end. (The original problem shows the two staircases in a figure.) Consider a $2018\\times 2018$ board consisting of $2018^2$ cells, each being a unit square. Two arbitrary cells were removed from the same row of the board. Prove that the rest of the board cannot be cut (along the cell borders) into staircases (possibly rotated).",
-      "statement_sha256": "b7ad3a6dd7f14ed7d92d3985b506c86c645fbc3be4246f62eca8eb5cc468b41a",
+      "reviewed_statement": "The two figures depicted below consisting of $6$ and $10$ unit squares, respectively, are called staircases.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/memo_2018_p2_fig.png\n\nConsider a $2018\\times 2018$ board consisting of $2018^2$ cells, each being a unit square. Two arbitrary cells were removed from the same row of the board. Prove that the rest of the board cannot be cut (along the cell borders) into staircases (possibly rotated).",
+      "statement_sha256": "732b177aebdecbf69d04e60f79bb8528c062efffbc87b0521188e61df8693e80",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Two shapes, consisting of $6$ and $10$ unit squares respectively, are called staircases: the first consists of rows of $3$, $2$ and $1$ unit squares and the second of rows of $4$, $3$, $2$ and $1$ unit squares, the rows aligned at one end. (The original problem shows the two staircases in a figure.) Consider a $2018\\times 2018$ board consisting of $2018^2$ cells, each being a unit square. Two arbitrary cells were removed from the same row of the board. Prove that the rest of the board cannot be cut (along the cell borders) into staircases (possibly rotated).",
+          "statement_sha256": "b7ad3a6dd7f14ed7d92d3985b506c86c645fbc3be4246f62eca8eb5cc468b41a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2018.1.3": {
       "topics": [
@@ -166416,19 +166548,41 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that for any two real numbers $x$, $y$ $$f\\big(xf(y)+2y\\big)=f(xy)+xf(y)+f\\big(f(y)\\big)$$ holds.",
-      "statement_sha256": "76467c9e81464e27ef24d6e4030e67c7b8828c9f294c6e77a5874dbec0490825",
+      "reviewed_statement": "Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big(xf(y)+2y\\big)=f(xy)+xf(y)+f\\big(f(y)\\big)$$ holds for all real numbers $x$ and $y$.",
+      "statement_sha256": "eee892a5392e2a09634e87d476358078236c9a15bbb603b85650ae264aa93c38",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that for any two real numbers $x$, $y$ $$f\\big(xf(y)+2y\\big)=f(xy)+xf(y)+f\\big(f(y)\\big)$$ holds.",
+          "statement_sha256": "76467c9e81464e27ef24d6e4030e67c7b8828c9f294c6e77a5874dbec0490825",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2019.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Let $n\\geq 3$ be an integer. We say that a vertex $A_i$ ($1\\leq i\\leq n$) of a convex polygon $A_1A_2\\ldots A_n$ is Bohemian if its reflection with respect to the midpoint of $A_{i-1}A_{i+1}$ (with $A_0=A_n$ and $A_{n+1}=A_1$) lies inside or on the boundary of the polygon $A_1A_2\\ldots A_n$. Determine the smallest possible number of Bohemian vertices a convex $n$-gon can have (depending on $n$).",
-      "statement_sha256": "d583993bab218eccccb406e95e654e06acfead092b7c5d78afb92e08b20e4cae",
+      "reviewed_statement": "Let $n\\geq 3$ be an integer. We say that a vertex $A_i$ ($1\\leq i\\leq n$) of a convex polygon $A_1A_2\\ldots A_n$ is Bohemian if its reflection with respect to the midpoint of the segment $A_{i-1}A_{i+1}$ (with $A_0=A_n$ and $A_{n+1}=A_1$) lies inside or on the boundary of the polygon $A_1A_2\\ldots A_n$. Determine the smallest possible number of Bohemian vertices a convex $n$-gon can have (depending on $n$).\n(A convex polygon $A_1A_2\\ldots A_n$ has $n$ vertices with all inner angles smaller than $180^\\circ$.)",
+      "statement_sha256": "122ea0cf102b075da4daba31f8f07b7f6fb17ca1f03d1ed8604a1c77d77d02ca",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Let $n\\geq 3$ be an integer. We say that a vertex $A_i$ ($1\\leq i\\leq n$) of a convex polygon $A_1A_2\\ldots A_n$ is Bohemian if its reflection with respect to the midpoint of $A_{i-1}A_{i+1}$ (with $A_0=A_n$ and $A_{n+1}=A_1$) lies inside or on the boundary of the polygon $A_1A_2\\ldots A_n$. Determine the smallest possible number of Bohemian vertices a convex $n$-gon can have (depending on $n$).",
+          "statement_sha256": "d583993bab218eccccb406e95e654e06acfead092b7c5d78afb92e08b20e4cae",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2019.1.3": {
       "topics": [
@@ -166668,10 +166822,21 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big(x+f(x+y)\\big)=x+f\\big(f(x)+y\\big)$$ holds for all real numbers $x$ and $y$.",
-      "statement_sha256": "5db830bf75a8a4182dcfba131eb4e6f676ec24548f9f6aa633e7e241dc4db910",
+      "reviewed_statement": "Let $\\mathbb{R}$ be the set of real numbers. Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big(x+f(x+y)\\big)=x+f\\big(f(x)+y\\big)$$ holds for all $x,y\\in\\mathbb{R}$.",
+      "statement_sha256": "04d9e321c0aca13b82505422060bcfa8ba9fe3c54643bb2556e7cf1a66e226a3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big(x+f(x+y)\\big)=x+f\\big(f(x)+y\\big)$$ holds for all real numbers $x$ and $y$.",
+          "statement_sha256": "5db830bf75a8a4182dcfba131eb4e6f676ec24548f9f6aa633e7e241dc4db910",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2022.1.2": {
       "topics": [
@@ -166695,10 +166860,21 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Initially, two distinct positive integers $a$ and $b$ are written on a blackboard. At each step, Andrea picks two distinct numbers $x$ and $y$ on the blackboard and writes the number $\\gcd(x,y)+\\operatorname{lcm}(x,y)$ on the blackboard as well. Let $n$ be a positive integer. Prove that, regardless of the values of $a$ and $b$, Andrea can perform a finite number of steps such that a multiple of $n$ appears on the blackboard.",
-      "statement_sha256": "4feb71aef46e904a29fe2b7c926792bad6f8cf4b8b5c85c511e89fe98b42e933",
+      "reviewed_statement": "Initially, two positive integers $a$ and $b$ with $a\\neq b$ are written on a blackboard. At each step, Andrea picks two numbers $x$ and $y$ on the blackboard with $x\\neq y$ and writes the number $$\\gcd(x,y)+\\operatorname{lcm}(x,y)$$ on the blackboard as well. Let $n$ be a positive integer. Prove that, regardless of the values of $a$ and $b$, Andrea can perform a finite number of steps such that a multiple of $n$ appears on the blackboard.\nRemark. If $x$ and $y$ are two positive integers, then $\\gcd(x,y)$ denotes their greatest common divisor and $\\operatorname{lcm}(x,y)$ their least common multiple.",
+      "statement_sha256": "bf205eb57346445cb0b22eb739eb7825acf2ab7bb9728debbffb7f6d370a7237",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Initially, two distinct positive integers $a$ and $b$ are written on a blackboard. At each step, Andrea picks two distinct numbers $x$ and $y$ on the blackboard and writes the number $\\gcd(x,y)+\\operatorname{lcm}(x,y)$ on the blackboard as well. Let $n$ be a positive integer. Prove that, regardless of the values of $a$ and $b$, Andrea can perform a finite number of steps such that a multiple of $n$ appears on the blackboard.",
+          "statement_sha256": "4feb71aef46e904a29fe2b7c926792bad6f8cf4b8b5c85c511e89fe98b42e933",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2022.2.5": {
       "topics": [
@@ -166722,19 +166898,41 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Let $n$ be a positive integer. There are $n$ purple and $n$ white cows queuing in a line in some order. Tim wishes to sort the cows by colour, such that all purple cows are at the front of the line. At each step, he is only allowed to swap two adjacent groups of equally many consecutive cows. What is the minimal number of steps Tim needs to be able to fulfill his wish, regardless of the initial alignment of the cows?",
-      "statement_sha256": "f40ac24f3548686624fc0301695763f1270525e0ee0c00af9164c69110d3e3dd",
+      "reviewed_statement": "Let $n$ be a positive integer. There are $n$ purple and $n$ white cows queuing in a line in some order. Tim wishes to sort the cows by colour, such that all purple cows are at the front of the line. At each step, he is only allowed to swap two adjacent groups of equally many consecutive cows. What is the minimal number of steps Tim needs to be able to fulfill his wish, regardless of the initial alignment of the cows?\nExample. For instance, Tim can perform the following three swaps: $$WPWPPW\\longrightarrow WPPPWW\\longrightarrow PWPPWW\\longrightarrow PPWWPW.$$",
+      "statement_sha256": "b9ed7e5ade00a0ac32612f4caf61a5dba86d5ac0280e03a182ae0ba105622335",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Let $n$ be a positive integer. There are $n$ purple and $n$ white cows queuing in a line in some order. Tim wishes to sort the cows by colour, such that all purple cows are at the front of the line. At each step, he is only allowed to swap two adjacent groups of equally many consecutive cows. What is the minimal number of steps Tim needs to be able to fulfill his wish, regardless of the initial alignment of the cows?",
+          "statement_sha256": "f40ac24f3548686624fc0301695763f1270525e0ee0c00af9164c69110d3e3dd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2022.2.8": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Let $n$ be a positive integer. We are given a $2n\\times 2n$ table. Each cell is coloured with one of $2n^2$ colours such that each colour is used exactly twice. Jana stands in one of the cells. There is a chocolate bar lying in one of the other cells. Jana wishes to reach the cell with the chocolate bar. At each step, she can only move in one of the following two ways. Either she walks to an adjacent cell or she teleports to the other cell with the same colour as her current cell. (Jana can move to an adjacent cell of the same colour by either walking or teleporting.) Determine whether Jana can fulfill her wish, regardless of the initial configuration, if she has to alternate between the two ways of moving and has to start with a teleportation.",
-      "statement_sha256": "6ff44f5388ab5c12944a685b650bf2e787cb7d20f799c9f67720e2fbba114967",
+      "reviewed_statement": "Let $n$ be a positive integer. We are given a $2n\\times 2n$ table. Each cell is coloured with one of $2n^2$ colours such that each colour is used exactly twice. Jana stands in one of the cells. There is a chocolate bar lying in one of the other cells. Jana wishes to reach the cell with the chocolate bar. At each step, she can only move in one of the following two ways. Either she walks to an adjacent cell or she teleports to the other cell with the same colour as her current cell. (Jana can move to an adjacent cell of the same colour by either walking or teleporting.) Determine whether Jana can fulfill her wish, regardless of the initial configuration, if she has to alternate between the two ways of moving and has to start with a teleportation.\nRemark. Two cells are adjacent if they share a common edge.",
+      "statement_sha256": "e80e2a74ea1ac57d15cbc7139257ce175b629cfec8c9b5e25c8f29e8ab3c4884",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Let $n$ be a positive integer. We are given a $2n\\times 2n$ table. Each cell is coloured with one of $2n^2$ colours such that each colour is used exactly twice. Jana stands in one of the cells. There is a chocolate bar lying in one of the other cells. Jana wishes to reach the cell with the chocolate bar. At each step, she can only move in one of the following two ways. Either she walks to an adjacent cell or she teleports to the other cell with the same colour as her current cell. (Jana can move to an adjacent cell of the same colour by either walking or teleporting.) Determine whether Jana can fulfill her wish, regardless of the initial configuration, if she has to alternate between the two ways of moving and has to start with a teleportation.",
+          "statement_sha256": "6ff44f5388ab5c12944a685b650bf2e787cb7d20f799c9f67720e2fbba114967",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2022.2.9": {
       "topics": [
@@ -166758,82 +166956,181 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that $f$ is increasing (not necessarily strictly) and the numbers $f(n)+n+1$ and $f(f(n))-f(n)$ are both perfect squares for every positive integer $n$.",
-      "statement_sha256": "64230540f34af374085d2c765873d9ea534fca0fead3b5183ccdf18721ed31de",
+      "reviewed_statement": "Let $\\mathbb{N}$ denote the set of positive integers. Determine all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that $f(1)\\leq f(2)\\leq f(3)\\leq\\ldots$ and the numbers $f(n)+n+1$ and $f\\big(f(n)\\big)-f(n)$ are both perfect squares for every positive integer $n$.",
+      "statement_sha256": "f41b84ce792f4cfaaf1feb934a6c373050f02e1e480d1160b185689273dde544",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that $f$ is increasing (not necessarily strictly) and the numbers $f(n)+n+1$ and $f(f(n))-f(n)$ are both perfect squares for every positive integer $n$.",
+          "statement_sha256": "64230540f34af374085d2c765873d9ea534fca0fead3b5183ccdf18721ed31de",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2022.2.12": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "We call a positive integer cheesy if we can obtain the average of the digits in its decimal representation by putting a decimal separator after the leftmost digit. Prove that there are only finitely many cheesy numbers.",
-      "statement_sha256": "2ace5f6946bacd6ef7f0fda305f5ff7df781691e1c92b2560c1d5e959a87f8e3",
+      "reviewed_statement": "We call a positive integer cheesy if we can obtain the average of the digits in its decimal representation by putting a decimal separator after the leftmost digit. Prove that there are only finitely many cheesy numbers.\nExample. For instance, $2250$ is cheesy, as the average of the digits is $2.250$.",
+      "statement_sha256": "ff3293d42de30837549b4a13c2bccfc183e52c2ae42b30e136bc6fb022ab80f4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "We call a positive integer cheesy if we can obtain the average of the digits in its decimal representation by putting a decimal separator after the leftmost digit. Prove that there are only finitely many cheesy numbers.",
+          "statement_sha256": "2ace5f6946bacd6ef7f0fda305f5ff7df781691e1c92b2560c1d5e959a87f8e3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.1.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "For each pair $(\\alpha,\\beta)$ of non-negative reals with $\\alpha+\\beta\\geq 2$, determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x)f(y)\\leq f(xy)+\\alpha x+\\beta y$$ for all reals $x$, $y$.",
-      "statement_sha256": "1492b662f110d1d0bc3abe3bcab1b3c1a2f1daefa30d7633d3ef3fd42b27e1d2",
+      "reviewed_statement": "Let $\\mathbb{R}$ denote the set of all real numbers. For each pair $(\\alpha,\\beta)$ of nonnegative real numbers subject to $\\alpha+\\beta\\geq 2$, determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ satisfying $$f(x)f(y)\\leq f(xy)+\\alpha x+\\beta y$$ for all real numbers $x$ and $y$.",
+      "statement_sha256": "8532222a4e312181deb67f45e63b776bbaaafc13674fb82949156aaedd80557b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "For each pair $(\\alpha,\\beta)$ of non-negative reals with $\\alpha+\\beta\\geq 2$, determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x)f(y)\\leq f(xy)+\\alpha x+\\beta y$$ for all reals $x$, $y$.",
+          "statement_sha256": "1492b662f110d1d0bc3abe3bcab1b3c1a2f1daefa30d7633d3ef3fd42b27e1d2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Find all positive integers $n\\geq 3$ for which it is possible to draw $n$ chords on a circle, with their $2n$ endpoints being pairwise distinct, such that each chord intersects exactly $k$ others for:\n(a) $k=n-2$,\n(b) $k=n-3$.",
-      "statement_sha256": "5f5ad613233c49fed03f8155f85c5301d9fafffa10e65329bbdac6bd20be02b6",
+      "reviewed_statement": "Find all integers $n\\geq 3$ for which it is possible to draw $n$ chords of one circle such that their $2n$ endpoints are pairwise distinct and each chord intersects precisely $k$ other chords for:\n(a) $k=n-2$,\n(b) $k=n-3$.\nRemark. A chord of a circle is a line segment whose both endpoints lie on the circle.",
+      "statement_sha256": "1fd11f5aeb5b98627b176a1cc4cef9ebd5b79e572f01b93443170dcefe7e31ec",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Find all positive integers $n\\geq 3$ for which it is possible to draw $n$ chords on a circle, with their $2n$ endpoints being pairwise distinct, such that each chord intersects exactly $k$ others for:\n(a) $k=n-2$,\n(b) $k=n-3$.",
+          "statement_sha256": "5f5ad613233c49fed03f8155f85c5301d9fafffa10e65329bbdac6bd20be02b6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.1.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle with incentre $I$, and let the incircle touch $BC$ at $D$. The points $E$, $F$ are such that $BE\\parallel AI\\parallel CF$ and $\\angle BEI=\\angle CFI=90^\\circ$. If $DE$, $DF$ meet the incircle again at $E'$, $F'$, show that $E'F'\\perp AI$.",
-      "statement_sha256": "c589cfed6fa4bbf4ff217eb8f59914f0d0c323a7e1c3eaa05141bbd461d862e9",
+      "reviewed_statement": "Let $ABC$ be a triangle with incenter $I$. The incircle $\\omega$ of $ABC$ is tangent to the line $BC$ at point $D$. Denote by $E$ and $F$ the points satisfying $AI\\parallel BE\\parallel CF$ and $\\angle BEI=\\angle CFI=90^\\circ$. Lines $DE$ and $DF$ intersect $\\omega$ again at points $E'$ and $F'$, respectively. Prove that $E'F'\\perp AI$.",
+      "statement_sha256": "3ddae898b080af02ec9b43f28e68070c1f67b37f4f5cc86472647e4d1b792581",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle with incentre $I$, and let the incircle touch $BC$ at $D$. The points $E$, $F$ are such that $BE\\parallel AI\\parallel CF$ and $\\angle BEI=\\angle CFI=90^\\circ$. If $DE$, $DF$ meet the incircle again at $E'$, $F'$, show that $E'F'\\perp AI$.",
+          "statement_sha256": "c589cfed6fa4bbf4ff217eb8f59914f0d0c323a7e1c3eaa05141bbd461d862e9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.1.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $n$, $m$ be positive integers. A set $S$ of positive integers is called $(n,m)$-good if:\n(1) $m\\in S$;\n(2) for all $a\\in S$, all divisors of $a$ are also in $S$;\n(3) for all distinct $a,b\\in S$, $a^n+b^n\\in S$.\nFor which $(n,m)$ is the only $(n,m)$-good set $\\mathbb{N}$?",
-      "statement_sha256": "151df6202db18737f77f2ee3aa6f4b47cd08ae70e00aaf754b8074d756b9eeec",
+      "reviewed_statement": "Let $n$ and $m$ be positive integers. We call a set $S$ of positive integers $(n,m)$-good if it satisfies the following three conditions:\n(i) We have $m\\in S$.\n(ii) For all $a\\in S$, all of the positive divisors of $a$ are elements of $S$ too.\n(iii) For all mutually different numbers $a,b\\in S$, we have $a^n+b^n\\in S$.\nDetermine all pairs $(n,m)$ such that the set of all positive integers is the only $(n,m)$-good set.",
+      "statement_sha256": "4569c99285323257d7850b99483c5569c247f970ca31fd6331f2659dc6cf2119",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $n$, $m$ be positive integers. A set $S$ of positive integers is called $(n,m)$-good if:\n(1) $m\\in S$;\n(2) for all $a\\in S$, all divisors of $a$ are also in $S$;\n(3) for all distinct $a,b\\in S$, $a^n+b^n\\in S$.\nFor which $(n,m)$ is the only $(n,m)$-good set $\\mathbb{N}$?",
+          "statement_sha256": "151df6202db18737f77f2ee3aa6f4b47cd08ae70e00aaf754b8074d756b9eeec",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.2.5": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "(a) A function $f:\\mathbb{Z}\\to\\mathbb{Z}$ is called $\\mathbb{Z}$-good if $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{Z}$. What is the largest possible number of distinct values that can occur among $f(1), \\ldots, f(2023)$, where $f$ is a $\\mathbb{Z}$-good function?\n(b) A function $f:\\mathbb{N}\\to\\mathbb{N}$ is called $\\mathbb{N}$-good if $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{N}$. What is the largest possible number of distinct values that can occur among $f(1), \\ldots, f(2023)$, where $f$ is an $\\mathbb{N}$-good function?",
-      "statement_sha256": "7b6b0d75d3466e741fa0a75011adc7fe3eda9aa1092e5cae57440ade6fb831bf",
+      "reviewed_statement": "Let $\\mathbb{Z}$ denote the set of all integers and $\\mathbb{Z}_{>0}$ denote the set of all positive integers.\n(a) A function $f:\\mathbb{Z}\\to\\mathbb{Z}$ is called $\\mathbb{Z}$-good if it satisfies $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{Z}$. Determine the largest possible number of distinct values that can occur among $f(1), f(2), \\ldots, f(2023)$, where $f$ is a $\\mathbb{Z}$-good function.\n(b) A function $f:\\mathbb{Z}_{>0}\\to\\mathbb{Z}_{>0}$ is called $\\mathbb{Z}_{>0}$-good if it satisfies $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{Z}_{>0}$. Determine the largest possible number of distinct values that can occur among $f(1), f(2), \\ldots, f(2023)$, where $f$ is a $\\mathbb{Z}_{>0}$-good function.",
+      "statement_sha256": "28b4c6432d1440f8c8174407b85bf8d4e08cbd886ddfef5b254e34f3ac9f0bb9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "(a) A function $f:\\mathbb{Z}\\to\\mathbb{Z}$ is called $\\mathbb{Z}$-good if $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{Z}$. What is the largest possible number of distinct values that can occur among $f(1), \\ldots, f(2023)$, where $f$ is a $\\mathbb{Z}$-good function?\n(b) A function $f:\\mathbb{N}\\to\\mathbb{N}$ is called $\\mathbb{N}$-good if $f(a^2+b)=f(b^2+a)$ for all $a,b\\in\\mathbb{N}$. What is the largest possible number of distinct values that can occur among $f(1), \\ldots, f(2023)$, where $f$ is an $\\mathbb{N}$-good function?",
+          "statement_sha256": "7b6b0d75d3466e741fa0a75011adc7fe3eda9aa1092e5cae57440ade6fb831bf",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "If $a,b,c,d>0$ and $abcd=1$, show that $$\\frac{ab+1}{a+1}+\\frac{bc+1}{b+1}+\\frac{cd+1}{c+1}+\\frac{da+1}{d+1}\\geq 4.$$ When does equality hold?",
-      "statement_sha256": "5f6144d67d8602603e4bd3f7752069d7708d0cfdb7a7828c2f78b98bcf95c9ea",
+      "reviewed_statement": "Let $a$, $b$, $c$ and $d$ be positive real numbers with $abcd=1$. Prove that $$\\frac{ab+1}{a+1}+\\frac{bc+1}{b+1}+\\frac{cd+1}{c+1}+\\frac{da+1}{d+1}\\geq 4,$$ and determine all quadruples $(a,b,c,d)$ for which equality holds.",
+      "statement_sha256": "62e05b7668974a03cba375910476f63abf100ac7ff208f745c1a3b404534e6ad",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "If $a,b,c,d>0$ and $abcd=1$, show that $$\\frac{ab+1}{a+1}+\\frac{bc+1}{b+1}+\\frac{cd+1}{c+1}+\\frac{da+1}{d+1}\\geq 4.$$ When does equality hold?",
+          "statement_sha256": "5f6144d67d8602603e4bd3f7752069d7708d0cfdb7a7828c2f78b98bcf95c9ea",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.2.7": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Find the smallest integer $b$ with the following property: for each way of colouring exactly $b$ squares of an $8\\times 8$ chessboard green, one can place $7$ bishops on $7$ green squares so that no two bishops attack each other.",
-      "statement_sha256": "a6f3f277548c808a0ddac185746f5c8ec7ec2983b69e98dd5b1f4c2d7094de17",
+      "reviewed_statement": "Find the smallest integer $b$ with the following property: for each way of colouring exactly $b$ squares of an $8\\times 8$ chessboard green, one can place $7$ bishops on $7$ green squares so that no two bishops attack each other.\nRemark. Two bishops attack each other if they are on the same diagonal.",
+      "statement_sha256": "6a474bb938b964d585aa77b14b1ad9d889e39c9c586c0d9b254f0b0f43234976",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Find the smallest integer $b$ with the following property: for each way of colouring exactly $b$ squares of an $8\\times 8$ chessboard green, one can place $7$ bishops on $7$ green squares so that no two bishops attack each other.",
+          "statement_sha256": "a6f3f277548c808a0ddac185746f5c8ec7ec2983b69e98dd5b1f4c2d7094de17",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.2.8": {
       "topics": [
@@ -166857,10 +167154,21 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute triangle with $AB<AC$. Let $J$ be the centre of the $A$-excircle of $ABC$. Let $D$ be the projection of $J$ on line $BC$. The internal bisectors of angles $BDJ$ and $JDC$ intersect lines $BJ$ and $JC$ at $X$ and $Y$, respectively. Segments $XY$ and $JD$ intersect at $P$. Let $Q$ be the projection of $A$ on line $BC$. Prove that the internal angle bisector of $\\angle QAP$ is perpendicular to line $XY$.",
-      "statement_sha256": "7e408cfe7e50e1ef6a05f8134e407233344a7a3db240d23daebcb24f5b1eaa9b",
+      "reviewed_statement": "Let $ABC$ be an acute triangle with $AB<AC$. Let $J$ be the centre of the $A$-excircle of $ABC$. Let $D$ be the projection of $J$ on line $BC$. The internal bisectors of angles $BDJ$ and $JDC$ intersect lines $BJ$ and $JC$ at $X$ and $Y$, respectively. Segments $XY$ and $JD$ intersect at $P$. Let $Q$ be the projection of $A$ on line $BC$. Prove that the internal angle bisector of $\\angle QAP$ is perpendicular to line $XY$.\nRemark. The $A$-excircle of the triangle $ABC$ is the circle outside the triangle which is tangent to the lines $AB$, $AC$, and the line segment $BC$.",
+      "statement_sha256": "5e369ab729f37aa00ce736941fe5851a989846958402d080f3c9ee1d5e564cf7",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute triangle with $AB<AC$. Let $J$ be the centre of the $A$-excircle of $ABC$. Let $D$ be the projection of $J$ on line $BC$. The internal bisectors of angles $BDJ$ and $JDC$ intersect lines $BJ$ and $JC$ at $X$ and $Y$, respectively. Segments $XY$ and $JD$ intersect at $P$. Let $Q$ be the projection of $A$ on line $BC$. Prove that the internal angle bisector of $\\angle QAP$ is perpendicular to line $XY$.",
+          "statement_sha256": "7e408cfe7e50e1ef6a05f8134e407233344a7a3db240d23daebcb24f5b1eaa9b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2023.2.11": {
       "topics": [
@@ -166884,19 +167192,41 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $\\mathbb{N}_0$ denote the set of non-negative integers. Determine all non-negative integers $k$ for which there exists a function $f:\\mathbb{N}_0\\to\\mathbb{N}_0$ such that $f(2024)=k$ and $$f\\big(f(n)\\big)\\leq f(n+1)-f(n)$$ for all non-negative integers $n$.",
-      "statement_sha256": "0ed315811251b3114afe2389a854c42469103251870f657f5da9ff3bab0e5f52",
+      "reviewed_statement": "Determine all $k\\in\\mathbb{N}_0$ for which there exists a function $f:\\mathbb{N}_0\\to\\mathbb{N}_0$ such that $f(2024)=k$ and $$f\\big(f(n)\\big)\\leq f(n+1)-f(n)$$ for all $n\\in\\mathbb{N}_0$.\nRemark. Here $\\mathbb{N}_0$ denotes the set of nonnegative integers.",
+      "statement_sha256": "01be73f3241e0e31271aaa9d945a501133e8c294a384f2cffd60ceba7c34a249",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $\\mathbb{N}_0$ denote the set of non-negative integers. Determine all non-negative integers $k$ for which there exists a function $f:\\mathbb{N}_0\\to\\mathbb{N}_0$ such that $f(2024)=k$ and $$f\\big(f(n)\\big)\\leq f(n+1)-f(n)$$ for all non-negative integers $n$.",
+          "statement_sha256": "0ed315811251b3114afe2389a854c42469103251870f657f5da9ff3bab0e5f52",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2024.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "There is a rectangular sheet of paper on an infinite blackboard. Marvin secretly chooses a convex $2024$-gon $P$ that lies fully on the piece of paper. Tigerin wants to find the vertices of $P$. In each step, Tigerin can draw a line $g$ on the blackboard that is fully outside the piece of paper, then Marvin replies with the line $h$ parallel to $g$ that is the closest to $g$ which passes through at least one vertex of $P$. Prove that there exists a positive integer $n$, independent of the choice of the polygon, such that Tigerin can always determine the vertices of $P$ in at most $n$ steps.",
-      "statement_sha256": "ea765ae809e83661e91552ad71f37d41e2ef4ae3b3c5558456ad0dcc4c0f0e42",
+      "reviewed_statement": "There is a sheet of paper (like this one) on an infinite blackboard. Marvin secretly chooses a convex $2024$-gon $P$ that lies fully on the piece of paper. Tigerin wants to find the vertices of $P$. In each step, Tigerin can draw a line $g$ on the blackboard that is fully outside the piece of paper, then Marvin replies with the line $h$ parallel to $g$ that is the closest to $g$ which passes through at least one vertex of $P$. Prove that there exists a positive integer $n$ such that Tigerin can always determine the vertices of $P$ in at most $n$ steps.",
+      "statement_sha256": "99bd56dc679d1d293459e429941b9d9da7f2ac6e2997ade2f310a21b2c9d912b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "There is a rectangular sheet of paper on an infinite blackboard. Marvin secretly chooses a convex $2024$-gon $P$ that lies fully on the piece of paper. Tigerin wants to find the vertices of $P$. In each step, Tigerin can draw a line $g$ on the blackboard that is fully outside the piece of paper, then Marvin replies with the line $h$ parallel to $g$ that is the closest to $g$ which passes through at least one vertex of $P$. Prove that there exists a positive integer $n$, independent of the choice of the polygon, such that Tigerin can always determine the vertices of $P$ in at most $n$ steps.",
+          "statement_sha256": "ea765ae809e83661e91552ad71f37d41e2ef4ae3b3c5558456ad0dcc4c0f0e42",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2024.1.3": {
       "topics": [
@@ -166911,10 +167241,21 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all polynomials $P(x)$ with integer coefficients such that $P(n)$ is divisible by $\\sigma(n)$ for all positive integers $n$. (As usual, $\\sigma(n)$ denotes the sum of all positive divisors of $n$.)",
-      "statement_sha256": "abfcc27f4e3c5c64d1cace4d019e2a4c86222d3078f8eac41fc02675162fb1be",
+      "reviewed_statement": "For any positive integer $n$, let $\\sigma(n)$ denote the sum of positive divisors of $n$. Determine all polynomials $P$ with integer coefficients such that $P(k)$ is divisible by $\\sigma(k)$ for all positive integers $k$.",
+      "statement_sha256": "5ef9781b063c7c8845952364a122eee86726a1453cb4adbc1d2947c2f17bf097",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all polynomials $P(x)$ with integer coefficients such that $P(n)$ is divisible by $\\sigma(n)$ for all positive integers $n$. (As usual, $\\sigma(n)$ denotes the sum of all positive divisors of $n$.)",
+          "statement_sha256": "abfcc27f4e3c5c64d1cace4d019e2a4c86222d3078f8eac41fc02675162fb1be",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2024.2.5": {
       "topics": [
@@ -166992,10 +167333,21 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $\\mathbb{R}^+$ be the set of positive real numbers. Let $f:\\mathbb{R}^+\\to\\mathbb{R}^+$ be a function such that for all $x,y\\in\\mathbb{R}^+$ it holds that $$yf^{2025}(x)\\geq xf(y).$$ Show that there exists a positive integer $n_0$ such that for all integers $n\\geq n_0$ and for all $x>0$ it holds that $$f^n(x)\\geq x.$$ (Here, $f^n$ means the $n$-fold composition of $f$.)",
-      "statement_sha256": "56771fa4e5be2685282ac45bea7c7d9223b79d6b15f40821350e6202c53b105b",
+      "reviewed_statement": "Let $\\mathbb{R}^+$ be the set of positive real numbers. Let $f:\\mathbb{R}^+\\to\\mathbb{R}^+$ be a function such that for all $x,y\\in\\mathbb{R}^+$ it holds that $$yf^{2025}(x)\\geq xf(y).$$ Show that there exists a positive integer $n_0$ such that for all positive integers $n\\geq n_0$ and for all $x\\in\\mathbb{R}^+$ it holds that $$f^n(x)\\geq x.$$\nRemark. Here $f^n$ denotes the function $f$ applied $n$ times, this means $f^n(x)=\\underbrace{f(f(\\ldots f}_{n\\text{ times}}(x)\\ldots))$.",
+      "statement_sha256": "fa80e1fbb3ead7782c35939917deae7255c6b625abddf638ec48e93974d5b30b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $\\mathbb{R}^+$ be the set of positive real numbers. Let $f:\\mathbb{R}^+\\to\\mathbb{R}^+$ be a function such that for all $x,y\\in\\mathbb{R}^+$ it holds that $$yf^{2025}(x)\\geq xf(y).$$ Show that there exists a positive integer $n_0$ such that for all integers $n\\geq n_0$ and for all $x>0$ it holds that $$f^n(x)\\geq x.$$ (Here, $f^n$ means the $n$-fold composition of $f$.)",
+          "statement_sha256": "56771fa4e5be2685282ac45bea7c7d9223b79d6b15f40821350e6202c53b105b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2025.1.2": {
       "topics": [
@@ -167046,10 +167398,21 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A snake in an $n\\times n$ grid is a path composed of straight line segments between centres of adjacent cells, going through the centres of all the $n^2$ grid cells, which visits each cell exactly once. Here two grid cells are considered to be adjacent if they share an edge. Note that all pieces of the snake path are parallel to grid lines. (The original problem shows, as an example, a snake in a $4\\times 4$ grid that makes nine $90^\\circ$ turns.) Let us now consider a snake through the $2025$ cells of a $45\\times 45$ grid. What is the maximum possible number of $90^\\circ$ turns that such a snake can make?",
-      "statement_sha256": "7aec2ce5bfbbb3587d5063cceb97c669b8b6056ed60348ba95fa268880e997d5",
+      "reviewed_statement": "A snake in an $n\\times n$ grid is a path composed of straight line segments between centres of adjacent cells, going through the centres of all the $n^2$ grid cells, which visits each cell exactly once. Here two grid cells are considered to be adjacent if they share an edge. Note that all pieces of the snake path are parallel to grid lines.\nThe figure shows an example of a snake in a $4\\times 4$ grid. This snake makes nine $90^\\circ$ turns, marked by small black squares.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/memo_2025_p7_fig.png\n\nLet us now consider a snake through the $2025$ cells of a $45\\times 45$ grid. What is the maximum possible number of $90^\\circ$ turns that such a snake can make?",
+      "statement_sha256": "0250bf3fc94a4fd046fd89266322b0531e7e2c6c86ea6a04a14ab836b513b680",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A snake in an $n\\times n$ grid is a path composed of straight line segments between centres of adjacent cells, going through the centres of all the $n^2$ grid cells, which visits each cell exactly once. Here two grid cells are considered to be adjacent if they share an edge. Note that all pieces of the snake path are parallel to grid lines. (The original problem shows, as an example, a snake in a $4\\times 4$ grid that makes nine $90^\\circ$ turns.) Let us now consider a snake through the $2025$ cells of a $45\\times 45$ grid. What is the maximum possible number of $90^\\circ$ turns that such a snake can make?",
+          "statement_sha256": "7aec2ce5bfbbb3587d5063cceb97c669b8b6056ed60348ba95fa268880e997d5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2025.2.8": {
       "topics": [
@@ -167091,10 +167454,21 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine whether the following statement is true for every polynomial $P$ of degree at least $2$ with nonnegative integer coefficients: there exists a positive integer $m$ such that for infinitely many positive integers $n$ the number $P^n(m)$ has more than $n$ distinct positive divisors. (Here, $P^n$ denotes $P$ applied $n$ times.)",
-      "statement_sha256": "15ff22908f82518f4dc020231984e3e49a851d865fcb9eae5ed7a4452ce97b5d",
+      "reviewed_statement": "Determine whether the following statement is true for every polynomial $P$ of degree at least $2$ with nonnegative integer coefficients:\nThere exists a positive integer $m$ such that for infinitely many positive integers $n$ the number $P^n(m)$ has more than $n$ distinct positive divisors.\nRemark. Here $P^n$ denotes $P$ applied $n$ times, this means $P^n(x)=\\underbrace{P(P(\\ldots P}_{n\\text{ times}}(x)\\ldots))$.",
+      "statement_sha256": "5618fcd42dd6d7a65774193cc4f9a0e66622697f14a4fc3b3e74d26d59abf8b3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine whether the following statement is true for every polynomial $P$ of degree at least $2$ with nonnegative integer coefficients: there exists a positive integer $m$ such that for infinitely many positive integers $n$ the number $P^n(m)$ has more than $n$ distinct positive divisors. (Here, $P^n$ denotes $P$ applied $n$ times.)",
+          "statement_sha256": "15ff22908f82518f4dc020231984e3e49a851d865fcb9eae5ed7a4452ce97b5d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ]
     },
     "memo.2026.1.1": {
       "topics": [
