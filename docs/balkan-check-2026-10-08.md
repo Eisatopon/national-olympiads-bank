@@ -17,3 +17,15 @@ Source checks were recorded for these 68 problems. Each one names the source, th
 The remaining years are AoPS-only and unverified:
 - 1984–2004;
 - 2006, 2014, 2021, 2024, 2025. There was no UK report for these years, and the 2024 and 2025 student reports do not contain the paper.
+
+## Junior Balkan MO
+Official English papers were found on the host websites for five years:
+- 2013: jbmo2013.tubitak.gov.tr
+- 2023: jbmo2023.al
+- 2024: jbmo2024.tubitak.gov.tr
+- 2025: jbmo2025.1c.mk
+- 2026: jbmo2026.ssmr.ro
+
+All 20 stored statements agree with the papers. The formulas were checked on the page images. Source checks were recorded for these 20 problems.
+
+The 2021 paper (jbmo2021.ance.gov.md/problems.pdf) is listed in the Wayback Machine but could not be downloaded. The other years remain AoPS-only and unverified.
