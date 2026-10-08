@@ -1362,10 +1362,21 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all pairs $(m,n)$ of positive integers satisfying $n^2-6n = m^2+m-10$.",
-      "statement_sha256": "de84a63806983688c58798fcc1c6393099a01b3839a337c8ea99951bd3bdd214",
+      "reviewed_statement": "Determine all pairs $(m,n)$ of positive integers which satisfy the equation $$n^2-6n=m^2+m-10.$$",
+      "statement_sha256": "270db2468a89aaca65175ce7ab22767e1d0c0d757cbc3384171876e5c551caad",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all pairs $(m,n)$ of positive integers satisfying $n^2-6n = m^2+m-10$.",
+          "statement_sha256": "de84a63806983688c58798fcc1c6393099a01b3839a337c8ea99951bd3bdd214",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk2.2016.0.2": {
       "topics": [
@@ -3323,11 +3334,24 @@
         "Geometry",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $s$ be an integer greater than 6. A solid cube of side $s$ has a square hole of side $x<6$ drilled straight through between opposite faces. The volume of the remaining solid equals, numerically, its total surface area. Find all possible integer values of $x$.",
-      "statement_sha256": "5479fee62374b3866d2378a07092f08a4c18be35390e8ae7f570b7491a7025df",
+      "reviewed_statement": "Let $s$ be an integer greater than $6$. A solid cube of side $s$ has a square hole of side $x<6$ drilled directly through from one face to the opposite face (so the drill removes a cuboid). The volume of the remaining solid is numerically equal to the total surface area of the remaining solid. Determine all possible integer values of $x$.",
+      "statement_sha256": "8c03674a91c5bdf2e876251a2c699e8e7e08968f2cfff21844c32328d3921948",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "An integer-length drilled solid gives a volume/surface Diophantine condition."
+      "reviewed_at": "2026-10-08",
+      "rationale": "An integer-length drilled solid gives a volume/surface Diophantine condition.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $s$ be an integer greater than 6. A solid cube of side $s$ has a square hole of side $x<6$ drilled straight through between opposite faces. The volume of the remaining solid equals, numerically, its total surface area. Find all possible integer values of $x$.",
+          "statement_sha256": "5479fee62374b3866d2378a07092f08a4c18be35390e8ae7f570b7491a7025df",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "An integer-length drilled solid gives a volume/surface Diophantine condition."
+        }
+      ]
     },
     "ie.2005.0.1": {
       "topics": [
@@ -3801,115 +3825,252 @@
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Paul and Jenny each have a whole number of pounds. Paul says to Jenny: if you give me £3, I will have $n$ times as much as you. Jenny says to Paul: if you give me £$n$, I will have 3 times as much as you. Given that both statements are true and $n$ is a positive integer, find all possible values of $n$.",
-      "statement_sha256": "118cab892fd5252e21bc4952b1462b028155f1b9b29573bacbeba1533e79ac98",
+      "reviewed_statement": "Each of Paul and Jenny has a whole number of pounds. He says to her: “If you give me £3, I will have $n$ times as much as you”. She says to him: “If you give me £$n$, I will have $3$ times as much as you”. Given that all these statements are true and that $n$ is a positive integer, what are the possible values for $n$?",
+      "statement_sha256": "e2846d340fae566a24650a975853108fb7f0626026290db9afbf4966ddf37b62",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The money transfers give linear equations subject to positive integer constraints on n and the holdings."
+      "reviewed_at": "2026-10-08",
+      "rationale": "The money transfers give linear equations subject to positive integer constraints on n and the holdings.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Paul and Jenny each have a whole number of pounds. Paul says to Jenny: if you give me £3, I will have $n$ times as much as you. Jenny says to Paul: if you give me £$n$, I will have 3 times as much as you. Given that both statements are true and $n$ is a positive integer, find all possible values of $n$.",
+          "statement_sha256": "118cab892fd5252e21bc4952b1462b028155f1b9b29573bacbeba1533e79ac98",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The money transfers give linear equations subject to positive integer constraints on n and the holdings."
+        }
+      ]
     },
     "uk1.2008.0.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Evaluate $\\dfrac{1^4+2007^4+2008^4}{1^2+2007^2+2008^2}$.",
-      "statement_sha256": "15716b9033bfc0dda0930e588a1414c5504bba8ab23b2937000d7ea63eb0c50b",
+      "reviewed_statement": "Find the value of $$\\frac{1^4+2007^4+2008^4}{1^2+2007^2+2008^2}.$$",
+      "statement_sha256": "7b886f969754362feb47b1f88df5b4203424a805918b1aab977e5a650ee86713",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Evaluation uses algebraic factorisation of fourth and second powers."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Evaluation uses algebraic factorisation of fourth and second powers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Evaluate $\\dfrac{1^4+2007^4+2008^4}{1^2+2007^2+2008^2}$.",
+          "statement_sha256": "15716b9033bfc0dda0930e588a1414c5504bba8ab23b2937000d7ea63eb0c50b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Evaluation uses algebraic factorisation of fourth and second powers."
+        }
+      ]
     },
     "uk1.2010.0.6": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Treasure is buried at an integer point $(x,y)$. A map shows the values of $x^2+y$ and $x+y^2$, which are distinct numbers. Prove that these two values determine $(x,y)$ uniquely.",
-      "statement_sha256": "cb853339c5476a06625a46957bca6ce8e0ca5536771cde3fecad0e9a713d5f98",
+      "reviewed_statement": "Long John Silverman has captured a treasure map from Adam McBones. Adam has buried the treasure at the point $(x,y)$ with integer co-ordinates (not necessarily positive). He has indicated on the map the values of $x^2+y$ and $x+y^2$, and these numbers are distinct. Prove that Long John has to dig only in one place to find the treasure.",
+      "statement_sha256": "c66ac977e19b148d7df71d0f1c8bdbd34787edc56558dd8e4ccf5f400d4331e1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Uniqueness of integer solutions is governed by the two quadratic expressions and integer differences."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Uniqueness of integer solutions is governed by the two quadratic expressions and integer differences.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Treasure is buried at an integer point $(x,y)$. A map shows the values of $x^2+y$ and $x+y^2$, which are distinct numbers. Prove that these two values determine $(x,y)$ uniquely.",
+          "statement_sha256": "cb853339c5476a06625a46957bca6ce8e0ca5536771cde3fecad0e9a713d5f98",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Uniqueness of integer solutions is governed by the two quadratic expressions and integer differences."
+        }
+      ]
     },
     "uk1.2011.0.1": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "One integer is removed from the set $\\{1,2,\\dots,n\\}$. The average of the remaining numbers is $40\\tfrac{3}{4}$. Which integer was removed?",
-      "statement_sha256": "0b482f066442a6be077b204edfa4e3dccc733b5f6592f5ee74a3d64b4123a80a",
+      "reviewed_statement": "One number is removed from the set of integers from $1$ to $n$. The average of the remaining numbers is $40\\frac34$. Which integer was removed?",
+      "statement_sha256": "b1f8e36c0658bd48cadfcd74b084f7ef4f3bbd2f0ce0733c495d9457042aae47",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "An average equation determines an integer deletion through integrality constraints."
+      "reviewed_at": "2026-10-08",
+      "rationale": "An average equation determines an integer deletion through integrality constraints.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "One integer is removed from the set $\\{1,2,\\dots,n\\}$. The average of the remaining numbers is $40\\tfrac{3}{4}$. Which integer was removed?",
+          "statement_sha256": "0b482f066442a6be077b204edfa4e3dccc733b5f6592f5ee74a3d64b4123a80a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "An average equation determines an integer deletion through integrality constraints."
+        }
+      ]
     },
     "uk1.2012.0.5": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that the product of four consecutive positive integers can never equal the product of two consecutive positive integers.",
-      "statement_sha256": "9f7915486048b15f14b91dccd7bcc21a5b72eae2cf895d6bad77a80eed687852",
+      "reviewed_statement": "Prove that the product of four consecutive positive integers cannot be equal to the product of two consecutive positive integers.",
+      "statement_sha256": "e8df795b760ca9d1bf95e89e85560e48689fc38f821d76ae526271375d289bb8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The claim excludes an equality between products of consecutive integers."
+      "reviewed_at": "2026-10-08",
+      "rationale": "The claim excludes an equality between products of consecutive integers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that the product of four consecutive positive integers can never equal the product of two consecutive positive integers.",
+          "statement_sha256": "9f7915486048b15f14b91dccd7bcc21a5b72eae2cf895d6bad77a80eed687852",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The claim excludes an equality between products of consecutive integers."
+        }
+      ]
     },
     "uk1.2014.0.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Calculate the value of $\\dfrac{2014^4+4\\times2013^4}{2013^2+4027^2} - \\dfrac{2012^4+4\\times2013^4}{2013^2+4025^2}$.",
-      "statement_sha256": "1329556b8e806cc048bdaedcee07e0bcd5fa5d7bb4dbb86bdb56ca73208fe0a1",
+      "reviewed_statement": "Calculate the value of $$\\frac{2014^4+4\\times 2013^4}{2013^2+4027^2}-\\frac{2012^4+4\\times 2013^4}{2013^2+4025^2}.$$",
+      "statement_sha256": "3f0c168fa9bed9118b6f18f5b6f171c82f6fa1997ab90546672a0ec97868c702",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A numerical rational expression is simplified using polynomial factorisation."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A numerical rational expression is simplified using polynomial factorisation.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Calculate the value of $\\dfrac{2014^4+4\\times2013^4}{2013^2+4027^2} - \\dfrac{2012^4+4\\times2013^4}{2013^2+4025^2}$.",
+          "statement_sha256": "1329556b8e806cc048bdaedcee07e0bcd5fa5d7bb4dbb86bdb56ca73208fe0a1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A numerical rational expression is simplified using polynomial factorisation."
+        }
+      ]
     },
     "uk1.2015.0.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Order the numbers $3^{3^4}$, $3^{4^3}$, $3^{4^4}$, $4^{3^3}$, $4^{3^4}$ from smallest to largest, justifying the order (here $a^{b^c}$ means $a^{(b^c)}$).",
-      "statement_sha256": "6789350bd639f6d9b0e1697b0ea48ec86419d02ece19651d7ee095d17c10bc65",
+      "reviewed_statement": "Place the following numbers in increasing order of size, and justify your reasoning: $$3^{3^4},\\quad 3^{4^3},\\quad 3^{4^4},\\quad 4^{3^3}\\quad\\text{and}\\quad 4^{3^4}.$$ Note that $a^{b^c}$ means $a^{(b^c)}$.",
+      "statement_sha256": "ee4097395f77035432016877f2014d0be809e8922c1fda8355cf347144c74fd3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Ordering exponential expressions requires comparisons of powers and exponents."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Ordering exponential expressions requires comparisons of powers and exponents.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Order the numbers $3^{3^4}$, $3^{4^3}$, $3^{4^4}$, $4^{3^3}$, $4^{3^4}$ from smallest to largest, justifying the order (here $a^{b^c}$ means $a^{(b^c)}$).",
+          "statement_sha256": "6789350bd639f6d9b0e1697b0ea48ec86419d02ece19651d7ee095d17c10bc65",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Ordering exponential expressions requires comparisons of powers and exponents."
+        }
+      ]
     },
     "uk1.2016.0.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A positive integer is called charming if it equals 2 or has the form $3^i5^j$ for non-negative integers $i,j$. Prove that every positive integer is a sum of distinct charming integers.",
-      "statement_sha256": "a2d78232f29726e4af7f4e80da33d174f5a11f8172065e0724807f8b08005a87",
+      "reviewed_statement": "A positive integer is called charming if it is equal to $2$ or is of the form $3^i5^j$ where $i$ and $j$ are non-negative integers. Prove that every positive integer can be written as a sum of different charming integers.",
+      "statement_sha256": "4de9377c9b9b2b5d9bb892dfa2dc7f5db2f132d252a2fbfb6dc73e30a04a6c5d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Distinct representations are built from integers with restricted prime factors."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Distinct representations are built from integers with restricted prime factors.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A positive integer is called charming if it equals 2 or has the form $3^i5^j$ for non-negative integers $i,j$. Prove that every positive integer is a sum of distinct charming integers.",
+          "statement_sha256": "a2d78232f29726e4af7f4e80da33d174f5a11f8172065e0724807f8b08005a87",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Distinct representations are built from integers with restricted prime factors."
+        }
+      ]
     },
     "uk1.2019.0.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Ares multiplies two integers differing by 9; Grace multiplies two integers differing by 6; both obtain the same product $T$. Determine all possible values of $T$.",
-      "statement_sha256": "9ab03906904a19d6f620413962ab678dbdf857511856d250e247858797ddfaa2",
+      "reviewed_statement": "Ares multiplies two integers which differ by $9$. Grace multiplies two integers which differ by $6$. They obtain the same product $T$. Determine all possible values of $T$.",
+      "statement_sha256": "7238c7b367c8204123f1fa06a4500b8ec6bcc968d3dd6b4c43b8db08659f7bca",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Two factorizations with prescribed differences form a Diophantine problem."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Two factorizations with prescribed differences form a Diophantine problem.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Ares multiplies two integers differing by 9; Grace multiplies two integers differing by 6; both obtain the same product $T$. Determine all possible values of $T$.",
+          "statement_sha256": "9ab03906904a19d6f620413962ab678dbdf857511856d250e247858797ddfaa2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Two factorizations with prescribed differences form a Diophantine problem."
+        }
+      ]
     },
     "uk1.2019.0.5": {
       "topics": [
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "Two mathematically similar solid cylinders have heights summing to 1, surface areas summing to $8\\pi$, and volumes summing to $2\\pi$. Find all possible dimensions of each cylinder.",
-      "statement_sha256": "0f0d607f5de3e1b2cc72d86448dc32be79fda08b4c6a0b155a85f2ef737a39c7",
+      "reviewed_statement": "Two solid cylinders are mathematically similar. The sum of their heights is $1$. The sum of their surface areas is $8\\pi$. The sum of their volumes is $2\\pi$. Find all possibilities for the dimensions of each cylinder.",
+      "statement_sha256": "abecf95783d6bb07f43ac1de0634e58d41343527b43f07481358d83c7f20a7f9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Similarity connects cylinder dimensions, surface areas and volumes to an algebraic system."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Similarity connects cylinder dimensions, surface areas and volumes to an algebraic system.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "Two mathematically similar solid cylinders have heights summing to 1, surface areas summing to $8\\pi$, and volumes summing to $2\\pi$. Find all possible dimensions of each cylinder.",
+          "statement_sha256": "0f0d607f5de3e1b2cc72d86448dc32be79fda08b4c6a0b155a85f2ef737a39c7",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Similarity connects cylinder dimensions, surface areas and volumes to an algebraic system."
+        }
+      ]
     },
     "uk1.2019.0.6": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "An ant starts at point $O$ and each minute walks 1 metre North, South, East, or West, returning to $O$ after 2018 minutes. If $n$ is the number of possible such journeys, find the highest power of 10 dividing $n$.",
-      "statement_sha256": "7c9ccdd7d39e29ad51afeea108c1795698a26635b72c3d400515304fa265b623",
+      "reviewed_statement": "Ada the ant starts at a point $O$ on a plane. At the start of each minute she chooses North, South, East or West, and marches $1$ metre in that direction. At the end of $2018$ minutes she finds herself back at $O$. Let $n$ be the number of possible journeys which she could have made. What is the highest power of $10$ which divides $n$?",
+      "statement_sha256": "7f9d4bc4c06725b65686080bf2083574666151c3d72d8fca64b0559287fddb00",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Counting closed lattice walks is combined with the exact power of ten dividing their number."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Counting closed lattice walks is combined with the exact power of ten dividing their number.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "An ant starts at point $O$ and each minute walks 1 metre North, South, East, or West, returning to $O$ after 2018 minutes. If $n$ is the number of possible such journeys, find the highest power of 10 dividing $n$.",
+          "statement_sha256": "7c9ccdd7d39e29ad51afeea108c1795698a26635b72c3d400515304fa265b623",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Counting closed lattice walks is combined with the exact power of ten dividing their number."
+        }
+      ]
     },
     "uk1.2022.0.1": {
       "topics": [
@@ -6989,419 +7150,925 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute-angled triangle, and let $D$, $E$ be the feet of the perpendiculars from $A$, $B$ onto $BC$, $CA$ respectively. Let $P$ be the point where line $AD$ meets the semicircle drawn outwardly on $BC$, and let $Q$ be the point where line $BE$ meets the semicircle drawn outwardly on $AC$. Prove that $CP = CQ$.",
-      "statement_sha256": "8ede318514bbe45da44c1a8da69548393da1fc06f90b2847fbc812ac397846d2",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle, and let $D$, $E$ be the feet of the perpendiculars from $A$, $B$ to $BC$, $CA$ respectively. Let $P$ be the point where the line $AD$ meets the semicircle constructed outwardly on $BC$, and $Q$ be the point where the line $BE$ meets the semicircle constructed outwardly on $AC$. Prove that $CP=CQ$.",
+      "statement_sha256": "510b3de82277a3e07264e0db26e28b4e350270c80e3f9895474cedc010b67293",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute-angled triangle, and let $D$, $E$ be the feet of the perpendiculars from $A$, $B$ onto $BC$, $CA$ respectively. Let $P$ be the point where line $AD$ meets the semicircle drawn outwardly on $BC$, and let $Q$ be the point where line $BE$ meets the semicircle drawn outwardly on $AC$. Prove that $CP = CQ$.",
+          "statement_sha256": "8ede318514bbe45da44c1a8da69548393da1fc06f90b2847fbc812ac397846d2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2005.0.3": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Find the smallest natural number $n$ such that, however the elements of $\\{1,2,\\dots,n\\}$ are coloured red or blue, there always exist integers $x,y,z,w$ in the set, of the same colour and not necessarily distinct, with $x+y+z=w$.",
-      "statement_sha256": "0ab9afe25d2bf7e646c013cfd729bda983462568c1d170c50c704d98c17bf7e0",
+      "reviewed_statement": "Determine the least natural number $n$ for which the following result holds: No matter how the elements of the set $\\{1,2,\\ldots,n\\}$ are coloured red or blue, there are integers $x$, $y$, $z$, $w$ in the set (not necessarily distinct) of the same colour such that $x+y+z=w$.",
+      "statement_sha256": "efb34c6d0627d6cf9ed0eefc738c32687c7d67a397648ba0c6e4f41b56b916a0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A two-colouring must force a monochromatic additive relation between integers."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A two-colouring must force a monochromatic additive relation between integers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find the smallest natural number $n$ such that, however the elements of $\\{1,2,\\dots,n\\}$ are coloured red or blue, there always exist integers $x,y,z,w$ in the set, of the same colour and not necessarily distinct, with $x+y+z=w$.",
+          "statement_sha256": "0ab9afe25d2bf7e646c013cfd729bda983462568c1d170c50c704d98c17bf7e0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A two-colouring must force a monochromatic additive relation between integers."
+        }
+      ]
     },
     "uk1.2005.0.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find the least possible value of the largest term of an arithmetic progression consisting of seven distinct prime numbers.",
-      "statement_sha256": "4d17aa9ee70c53889907311d32da19e00dc02ef417745d7d0b166bc487c55bb8",
+      "reviewed_statement": "Determine the least possible value of the largest term in an arithmetic progression of seven distinct primes.",
+      "statement_sha256": "8aa2f18a0e349ff16dc992edc618ee1b8f493ecb591d7bdcbb39c8b98f3fcfe2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find the least possible value of the largest term of an arithmetic progression consisting of seven distinct prime numbers.",
+          "statement_sha256": "4d17aa9ee70c53889907311d32da19e00dc02ef417745d7d0b166bc487c55bb8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2005.0.5": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $S$ be a set of rational numbers such that (i) $\\tfrac12 \\in S$, and (ii) whenever $x \\in S$, both $\\tfrac{1}{x+1} \\in S$ and $\\tfrac{x}{x+1} \\in S$. Prove that $S$ contains every rational number strictly between 0 and 1.",
-      "statement_sha256": "1a7225981d7189a1214900cb7d76c8a9d9820ccea09a2714ff3636f70e378c00",
+      "reviewed_statement": "Let $S$ be a set of rational numbers with the following properties:\ni) $\\frac12\\in S$;\nii) If $x\\in S$, then both $\\frac{1}{x+1}\\in S$ and $\\frac{x}{x+1}\\in S$.\nProve that $S$ contains all rational numbers in the interval $0<x<1$.",
+      "statement_sha256": "524bc6dba1b8c30ae41a09e61cb44b062f27124a00b75b5c864955d5b236b639",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Rational transformations generate all reduced fractions using numerator/denominator arithmetic."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Rational transformations generate all reduced fractions using numerator/denominator arithmetic.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $S$ be a set of rational numbers such that (i) $\\tfrac12 \\in S$, and (ii) whenever $x \\in S$, both $\\tfrac{1}{x+1} \\in S$ and $\\tfrac{x}{x+1} \\in S$. Prove that $S$ contains every rational number strictly between 0 and 1.",
+          "statement_sha256": "1a7225981d7189a1214900cb7d76c8a9d9820ccea09a2714ff3636f70e378c00",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Rational transformations generate all reduced fractions using numerator/denominator arithmetic."
+        }
+      ]
     },
     "uk1.2006.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $n$ be an integer greater than 6. Prove that if $n-1$ and $n+1$ are both prime, then $n^2(n^2+16)$ is divisible by 720. Is the converse true?",
-      "statement_sha256": "78efc53a6f094a69734a368ffd7c175d65afaa14c3497652a0dd2b56b6a8bc1d",
+      "reviewed_statement": "Let $n$ be an integer greater than $6$. Prove that if $n-1$ and $n+1$ are both prime, then $n^2(n^2+16)$ is divisible by $720$. Is the converse true?",
+      "statement_sha256": "7376da8c2f3b4e95ccd3ce75b94292c80a6fe96e85e4e406b4d1bae7cc846857",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $n$ be an integer greater than 6. Prove that if $n-1$ and $n+1$ are both prime, then $n^2(n^2+16)$ is divisible by 720. Is the converse true?",
+          "statement_sha256": "78efc53a6f094a69734a368ffd7c175d65afaa14c3497652a0dd2b56b6a8bc1d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2006.0.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A teacher has a class of six pairs of twins and wants to form quiz teams so that no pair of twins is ever placed on the same team. Subject to this condition: (i) in how many ways can the class be split into two teams of six, and (ii) in how many ways can it be split into three teams of four?",
-      "statement_sha256": "1eabb0ceb83e51e446d44e5060a328fec8274f919c2f89485b03f118d05b09d6",
+      "reviewed_statement": "Adrian teaches a class of six pairs of twins. He wishes to set up teams for a quiz, but wants to avoid putting any pair of twins into the same team. Subject to this condition:\ni) In how many ways can he split them into two teams of six?\nii) In how many ways can he split them into three teams of four?",
+      "statement_sha256": "4567645237f487c9c794f075b6ec63e5904a7e7664476c55139d22a202b0621e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A teacher has a class of six pairs of twins and wants to form quiz teams so that no pair of twins is ever placed on the same team. Subject to this condition: (i) in how many ways can the class be split into two teams of six, and (ii) in how many ways can it be split into three teams of four?",
+          "statement_sha256": "1eabb0ceb83e51e446d44e5060a328fec8274f919c2f89485b03f118d05b09d6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2006.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In cyclic quadrilateral $ABCD$, diagonal $AC$ bisects angle $DAB$. Side $AD$ is extended beyond $D$ to a point $E$. Show that $CE = CA$ if and only if $DE = AB$.",
-      "statement_sha256": "b6eaa9005e420a2d2113bbb0c857b6e54f6b8f64f66db28361b64ce49fe45bef",
+      "reviewed_statement": "In the cyclic quadrilateral $ABCD$, the diagonal $AC$ bisects the angle $DAB$. The side $AD$ is extended beyond $D$ to a point $E$. Show that $CE=CA$ if and only if $DE=AB$.",
+      "statement_sha256": "12df4313d74ba2034249442329a19602ed8eaefa9f93b2750ab8efc4c9841996",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In cyclic quadrilateral $ABCD$, diagonal $AC$ bisects angle $DAB$. Side $AD$ is extended beyond $D$ to a point $E$. Show that $CE = CA$ if and only if $DE = AB$.",
+          "statement_sha256": "b6eaa9005e420a2d2113bbb0c857b6e54f6b8f64f66db28361b64ce49fe45bef",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2006.0.4": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "An equilateral triangle $ABC$ with integer side length $N$ is divided by lines parallel to its sides into unit equilateral cells. A continuous route starts inside the cell containing vertex $A$ and always passes from one cell to an adjacent one through a shared edge, never visiting any cell twice. Find, with proof, the greatest possible number of cells visited.",
-      "statement_sha256": "ae29f7b301fe7a68c76e78b80c7a4e9321edca443d623428ff27cdcaffc7f864",
+      "reviewed_statement": "The equilateral triangle $ABC$ has sides of integer length $N$. The triangle is completely divided (by drawing lines parallel to the sides of the triangle) into equilateral triangular cells of side length $1$. A continuous route is chosen, starting inside the cell with vertex $A$ and always crossing from one cell to another through an edge shared by the two cells. No cell is visited more than once. Find, with proof, the greatest number of cells which can be visited.",
+      "statement_sha256": "9e37ea613ec4c27be015761dbc514ab66f0de1ad294e443226d7a8414dba8dba",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The triangle defines an adjacency graph of cells; the route asks for a maximum simple path, without a metric geometry claim."
+      "reviewed_at": "2026-10-08",
+      "rationale": "The triangle defines an adjacency graph of cells; the route asks for a maximum simple path, without a metric geometry claim.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "An equilateral triangle $ABC$ with integer side length $N$ is divided by lines parallel to its sides into unit equilateral cells. A continuous route starts inside the cell containing vertex $A$ and always passes from one cell to an adjacent one through a shared edge, never visiting any cell twice. Find, with proof, the greatest possible number of cells visited.",
+          "statement_sha256": "ae29f7b301fe7a68c76e78b80c7a4e9321edca443d623428ff27cdcaffc7f864",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The triangle defines an adjacency graph of cells; the route asks for a maximum simple path, without a metric geometry claim."
+        }
+      ]
     },
     "uk1.2006.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $G$ be a convex quadrilateral. Show that there exists a point $X$ in the plane such that every line through $X$ divides $G$ into two regions of equal area, if and only if $G$ is a parallelogram.",
-      "statement_sha256": "a0b8e5624bda00b00d687200d25ccdee185a787228fd5d2e4a6df1e69581dfae",
+      "reviewed_statement": "Let $G$ be a convex quadrilateral. Show that there is a point $X$ in the plane of $G$ with the property that every straight line through $X$ divides $G$ into two regions of equal area if and only if $G$ is a parallelogram.",
+      "statement_sha256": "650e1c91f535193b549805eb4ae3ada185f72b8d0eea198cfa7bbd967ff32300",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $G$ be a convex quadrilateral. Show that there exists a point $X$ in the plane such that every line through $X$ divides $G$ into two regions of equal area, if and only if $G$ is a parallelogram.",
+          "statement_sha256": "a0b8e5624bda00b00d687200d25ccdee185a787228fd5d2e4a6df1e69581dfae",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2006.0.6": {
       "topics": [
         "Combinatorics",
         "Geometry"
       ],
-      "reviewed_statement": "Let $T$ be a set of 2005 points in the plane, no three collinear. Show that, for any point of $T$, the number of triangles (with vertices in $T$) that strictly contain that point is even.",
-      "statement_sha256": "8543de8c02af88f30be31db50dc3887a0337b5b6e2e77f24c6809d7e423ace8b",
+      "reviewed_statement": "Let $T$ be a set of $2005$ coplanar points with no three collinear. Show that, for any of the $2005$ points, the number of triangles it lies strictly within, whose vertices are points in $T$, is even.",
+      "statement_sha256": "c01b28750f995f77f95ae12ec49ca181faa080b24c1a07aebf8038f030887873",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Count containing triangles modulo two in a geometric point configuration."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Count containing triangles modulo two in a geometric point configuration.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $T$ be a set of 2005 points in the plane, no three collinear. Show that, for any point of $T$, the number of triangles (with vertices in $T$) that strictly contain that point is even.",
+          "statement_sha256": "8543de8c02af88f30be31db50dc3887a0337b5b6e2e77f24c6809d7e423ace8b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Count containing triangles modulo two in a geometric point configuration."
+        }
+      ]
     },
     "uk1.2007.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find four prime numbers less than 100 that divide $3^{32} - 2^{32}$.",
-      "statement_sha256": "88f381675cad3599107515a33be66f1cd21d2f7370cf752efa2064f4c04e0535",
+      "reviewed_statement": "Find four prime numbers less than $100$ which are factors of $3^{32}-2^{32}$.",
+      "statement_sha256": "8f833daea2c145e149490e8b4bed8e012ccdca7e7d0361d4807bd2b8bad934d9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find four prime numbers less than 100 that divide $3^{32} - 2^{32}$.",
+          "statement_sha256": "88f381675cad3599107515a33be66f1cd21d2f7370cf752efa2064f4c04e0535",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2007.0.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In convex quadrilateral $ABCD$, points $M,N$ lie on side $AB$ with $AM=MN=NB$, and points $P,Q$ lie on side $CD$ with $CP=PQ=QD$. Prove that the area of $AMCP$, the area of $MNPQ$, and $\\tfrac13$ of the area of $ABCD$ are all equal.",
-      "statement_sha256": "876539781990651a7162323cb66ba026fef908268467363c522066c67f70a0c7",
+      "reviewed_statement": "In the convex quadrilateral $ABCD$, points $M$, $N$ lie on the side $AB$ such that $AM=MN=NB$, and points $P$, $Q$ lie on the side $CD$ such that $CP=PQ=QD$. Prove that $$\\text{Area of }AMCP=\\text{Area of }MNPQ=\\frac13\\,\\text{Area of }ABCD.$$",
+      "statement_sha256": "5396ca03e953e94a8fb46a2e568f014743797b1a24fb86484522dd11b7008b5d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In convex quadrilateral $ABCD$, points $M,N$ lie on side $AB$ with $AM=MN=NB$, and points $P,Q$ lie on side $CD$ with $CP=PQ=QD$. Prove that the area of $AMCP$, the area of $MNPQ$, and $\\tfrac13$ of the area of $ABCD$ are all equal.",
+          "statement_sha256": "876539781990651a7162323cb66ba026fef908268467363c522066c67f70a0c7",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2007.0.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "The number 916238457 is a nine-digit number using each digit 1 to 9 exactly once, in which the digits 1-5 appear in increasing order but the digits 1-6 do not. How many nine-digit numbers with all distinct digits 1-9 have this same property?",
-      "statement_sha256": "fc02eae60c7e9398a557132636b48c996136922dc8420bd1bb5c478bb0cb3422",
+      "reviewed_statement": "The number $916238457$ is an example of a nine-digit number which contains each of the digits $1$ to $9$ exactly once. It also has the property that the digits $1$ to $5$ occur in their natural order, while the digits $1$ to $6$ do not. How many such numbers are there?",
+      "statement_sha256": "2e408f95ec7c390337d9a6ecb5ae4bc9121acf6105d8aa48e377796917c84d73",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "This counts digit permutations with relative-order restrictions; digits serve as distinct labels, with no arithmetic constraint."
+      "reviewed_at": "2026-10-08",
+      "rationale": "This counts digit permutations with relative-order restrictions; digits serve as distinct labels, with no arithmetic constraint.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "The number 916238457 is a nine-digit number using each digit 1 to 9 exactly once, in which the digits 1-5 appear in increasing order but the digits 1-6 do not. How many nine-digit numbers with all distinct digits 1-9 have this same property?",
+          "statement_sha256": "fc02eae60c7e9398a557132636b48c996136922dc8420bd1bb5c478bb0cb3422",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "This counts digit permutations with relative-order restrictions; digits serve as distinct labels, with no arithmetic constraint."
+        }
+      ]
     },
     "uk1.2007.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two circles $S$ and $T$ touch each other and share a common tangent line meeting $S$ at $A$ and $T$ at $B$. Let $AP$ be a diameter of $S$, and let the tangent from $P$ to $T$ touch $T$ at $Q$. Show that $AP = PQ$.",
-      "statement_sha256": "bf5d6883a88e8fd8bc7e930f73f5389c36faf4f53724833cc8a60e25741427fa",
+      "reviewed_statement": "Two touching circles $S$ and $T$ share a common tangent which meets $S$ at $A$ and $T$ at $B$. Let $AP$ be a diameter of $S$ and let the tangent from $P$ to $T$ touch it at $Q$. Show that $AP=PQ$.",
+      "statement_sha256": "c1f11ca0bc4e833ef5682e653dd4c43b117ddb5a17d7e9b317570b86cf17949a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two circles $S$ and $T$ touch each other and share a common tangent line meeting $S$ at $A$ and $T$ at $B$. Let $AP$ be a diameter of $S$, and let the tangent from $P$ to $T$ touch $T$ at $Q$. Show that $AP = PQ$.",
+          "statement_sha256": "bf5d6883a88e8fd8bc7e930f73f5389c36faf4f53724833cc8a60e25741427fa",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2007.0.5": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "For positive real numbers $a,b,c$, prove that $(a^2+b^2)^2 \\ge (a+b+c)(a+b-c)(b+c-a)(c+a-b)$.",
-      "statement_sha256": "e85768343f4e58f7aedf9073084f2ba4b68f7e68844c03471190af81ca23f455",
+      "reviewed_statement": "For positive real numbers $a$, $b$, $c$, prove that $$(a^2+b^2)^2\\geq(a+b+c)(a+b-c)(b+c-a)(c+a-b).$$",
+      "statement_sha256": "a951e9df45043941dd47e714d539690aff14d3b0955c1e7c1c47d4d08142ef8c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "For positive real numbers $a,b,c$, prove that $(a^2+b^2)^2 \\ge (a+b+c)(a+b-c)(b+c-a)(c+a-b)$.",
+          "statement_sha256": "e85768343f4e58f7aedf9073084f2ba4b68f7e68844c03471190af81ca23f455",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2007.0.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $n$ be an integer. Show that if $2 + 2\\sqrt{1+12n^2}$ is an integer, then it is a perfect square.",
-      "statement_sha256": "ae700c682a576041994d9ff7ea08380035e97c6d60321d603422254b034389fe",
+      "reviewed_statement": "Let $n$ be an integer. Show that, if $2+2\\sqrt{1+12n^2}$ is an integer, then it is a perfect square.",
+      "statement_sha256": "7f8e948bac4b31484e07188b757f986a8aa2da98e77ca7b8f03f67f5b4faeac4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $n$ be an integer. Show that if $2 + 2\\sqrt{1+12n^2}$ is an integer, then it is a perfect square.",
+          "statement_sha256": "ae700c682a576041994d9ff7ea08380035e97c6d60321d603422254b034389fe",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2008.0.2": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all positive integer solutions $x,y,z$ of the simultaneous equations $x+y-z=12$ and $x^2+y^2-z^2=12$.",
-      "statement_sha256": "807281bed85562ecd664ea009f4fba2c74a6a4a1ed07ce29de2daa2df37eaa22",
+      "reviewed_statement": "Find all solutions in positive integers $x$, $y$, $z$ to the simultaneous equations $$\\begin{aligned}x+y-z&=12\\\\ x^2+y^2-z^2&=12.\\end{aligned}$$",
+      "statement_sha256": "34da6dfbc0942351585207e6262c371807c5a523c9882a5a4aa9ae3e92dddebc",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all positive integer solutions $x,y,z$ of the simultaneous equations $x+y-z=12$ and $x^2+y^2-z^2=12$.",
+          "statement_sha256": "807281bed85562ecd664ea009f4fba2c74a6a4a1ed07ce29de2daa2df37eaa22",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2008.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle with an obtuse angle at $A$. Let $Q$ be a point on the circumcircle of $ABC$, different from $A$, $B$, $C$, on the same side of chord $BC$ as $A$, and let $P$ be the other end of the diameter through $Q$. Let $V$, $W$ be the feet of the perpendiculars from $Q$ onto $CA$, $AB$ respectively. Prove that triangles $PBC$ and $AWV$ are similar.",
-      "statement_sha256": "a830489510fd66d585f9b1f6ff751576df09d2ce0d53860015a30455e511dcac",
+      "reviewed_statement": "Let $ABC$ be a triangle, with an obtuse angle at $A$. Let $Q$ be a point (other than $A$, $B$ or $C$) on the circumcircle of the triangle, on the same side of chord $BC$ as $A$, and let $P$ be the other end of the diameter through $Q$. Let $V$ and $W$ be the feet of the perpendiculars from $Q$ onto $CA$ and $AB$ respectively. Prove that the triangles $PBC$ and $AWV$ are similar.\n[Note: the circumcircle of the triangle $ABC$ is the circle which passes through the vertices $A$, $B$ and $C$.]",
+      "statement_sha256": "95c56dc7840b65f9daf29edf4830a34bb5afb019ad0ab98b2bbd34b616a060ae",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle with an obtuse angle at $A$. Let $Q$ be a point on the circumcircle of $ABC$, different from $A$, $B$, $C$, on the same side of chord $BC$ as $A$, and let $P$ be the other end of the diameter through $Q$. Let $V$, $W$ be the feet of the perpendiculars from $Q$ onto $CA$, $AB$ respectively. Prove that triangles $PBC$ and $AWV$ are similar.",
+          "statement_sha256": "a830489510fd66d585f9b1f6ff751576df09d2ce0d53860015a30455e511dcac",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2008.0.4": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $S$ be a 756-element subset of $\\{1,2,\\dots,2008\\}$. Show that $S$ contains two distinct elements $a,b$ such that $a+b$ is divisible by 8.",
-      "statement_sha256": "47e689584824206d60a9b6a4a6e2618fd4eccb7ce672a48a20e311268c6a4368",
+      "reviewed_statement": "Let $S$ be a subset of the set of numbers $\\{1,2,3,\\ldots,2008\\}$ which consists of $756$ distinct numbers. Show that there are two distinct elements $a$, $b$ of $S$ such that $a+b$ is divisible by $8$.",
+      "statement_sha256": "15cbd64c92e74907b5b9ef67057b8a13adffb2778c77853e74b0da71c43df0ab",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A large integer subset forces a pair of complementary residue classes modulo eight."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A large integer subset forces a pair of complementary residue classes modulo eight.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $S$ be a 756-element subset of $\\{1,2,\\dots,2008\\}$. Show that $S$ contains two distinct elements $a,b$ such that $a+b$ is divisible by 8.",
+          "statement_sha256": "47e689584824206d60a9b6a4a6e2618fd4eccb7ce672a48a20e311268c6a4368",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A large integer subset forces a pair of complementary residue classes modulo eight."
+        }
+      ]
     },
     "uk1.2008.0.5": {
       "topics": [
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "Let $P$ be an interior point of triangle $ABC$. The line through $P$ parallel to $AB$ meets $BC$ at $L$; the line through $P$ parallel to $BC$ meets $CA$ at $M$; the line through $P$ parallel to $CA$ meets $AB$ at $N$. Prove that $\\dfrac{BL}{LC}\\cdot\\dfrac{CM}{MA}\\cdot\\dfrac{AN}{NB} \\le \\dfrac18$, and determine the position of $P$ for which equality holds.",
-      "statement_sha256": "72f4638f5c3d84599c0aa60fdb48c99763f51aeaae9ad555be47e42ad9063eb2",
+      "reviewed_statement": "Let $P$ be an internal point of triangle $ABC$. The line through $P$ parallel to $AB$ meets $BC$ at $L$, the line through $P$ parallel to $BC$ meets $CA$ at $M$, and the line through $P$ parallel to $CA$ meets $AB$ at $N$. Prove that $$\\frac{BL}{LC}\\times\\frac{CM}{MA}\\times\\frac{AN}{NB}\\leq\\frac18$$ and locate the position of $P$ in triangle $ABC$ when equality holds.",
+      "statement_sha256": "d90a5f6309174943e0ba30538d70bc975fa192733aa8f44f32b6ce2c65ec14aa",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A product of geometric segment ratios is optimised under the interior-point constraint."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A product of geometric segment ratios is optimised under the interior-point constraint.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $P$ be an interior point of triangle $ABC$. The line through $P$ parallel to $AB$ meets $BC$ at $L$; the line through $P$ parallel to $BC$ meets $CA$ at $M$; the line through $P$ parallel to $CA$ meets $AB$ at $N$. Prove that $\\dfrac{BL}{LC}\\cdot\\dfrac{CM}{MA}\\cdot\\dfrac{AN}{NB} \\le \\dfrac18$, and determine the position of $P$ for which equality holds.",
+          "statement_sha256": "72f4638f5c3d84599c0aa60fdb48c99763f51aeaae9ad555be47e42ad9063eb2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A product of geometric segment ratios is optimised under the interior-point constraint."
+        }
+      ]
     },
     "uk1.2008.0.6": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "The function $f$ on the positive integers satisfies $f(1)=1$, $f(2n)=2f(n)$, and $n f(2n+1) = (2n+1)(f(n)+n)$ for all $n \\ge 1$. (i) Prove that $f(n)$ is always an integer. (ii) For how many positive integers less than 2007 does $f(n)=2n$?",
-      "statement_sha256": "83f750f32bc8939813fe5f822866a4d8d00a78e7d9db59db89a0112d15a9e0ad",
+      "reviewed_statement": "The function $f$ is defined on the set of positive integers by $f(1)=1$, $f(2n)=2f(n)$, and $nf(2n+1)=(2n+1)\\big(f(n)+n\\big)$ for all $n\\geq 1$.\ni) Prove that $f(n)$ is always an integer.\nii) For how many positive integers less than $2007$ is $f(n)=2n$?",
+      "statement_sha256": "c60ba0ee10012219f990ae9639461e00ac7d599c7beb048f93003f9d2c7fbd65",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A recursively defined function has an integer-value assertion and a count of arithmetic equality cases."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A recursively defined function has an integer-value assertion and a count of arithmetic equality cases.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "The function $f$ on the positive integers satisfies $f(1)=1$, $f(2n)=2f(n)$, and $n f(2n+1) = (2n+1)(f(n)+n)$ for all $n \\ge 1$. (i) Prove that $f(n)$ is always an integer. (ii) For how many positive integers less than 2007 does $f(n)=2n$?",
+          "statement_sha256": "83f750f32bc8939813fe5f822866a4d8d00a78e7d9db59db89a0112d15a9e0ad",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A recursively defined function has an integer-value assertion and a count of arithmetic equality cases."
+        }
+      ]
     },
     "uk1.2009.0.1": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "On a standard 8x8 chessboard, a zig-zag path is a set of eight white squares, one in each row, each pair in consecutive rows meeting at a corner. How many zig-zag paths are there?",
-      "statement_sha256": "87503dfece1683949645d68978094a6eef91c66898be9b1a52a4f8a68ec293b3",
+      "reviewed_statement": "Consider a standard $8\\times 8$ chessboard consisting of $64$ small squares coloured in the usual pattern, so $32$ are black and $32$ are white. A zig-zag path across the board is a collection of eight white squares, one in each row, which meet at their corners. How many zig-zag paths are there?",
+      "statement_sha256": "542e0cb9e89ab68b58bb5e9a43fc637a564fdb7c2a4000a3f3f8e06c42ad0746",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "On a standard 8x8 chessboard, a zig-zag path is a set of eight white squares, one in each row, each pair in consecutive rows meeting at a corner. How many zig-zag paths are there?",
+          "statement_sha256": "87503dfece1683949645d68978094a6eef91c66898be9b1a52a4f8a68ec293b3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2009.0.2": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all real numbers $x,y,z$ satisfying $(x+1)yz=12$, $(y+1)zx=4$, and $(z+1)xy=4$.",
-      "statement_sha256": "78f9a16f65cef12e7463718fe6a33ba133031a3c9ed326f4d7b9c52283934edd",
+      "reviewed_statement": "Find all real values of $x$, $y$ and $z$ such that $$(x+1)yz=12,\\qquad (y+1)zx=4\\qquad\\text{and}\\qquad (z+1)xy=4.$$",
+      "statement_sha256": "aac38fdf319b4ea579cce77ac3a335bb2feafa9395f00c2db449e9f9b676e08f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all real numbers $x,y,z$ satisfying $(x+1)yz=12$, $(y+1)zx=4$, and $(z+1)xy=4$.",
+          "statement_sha256": "78f9a16f65cef12e7463718fe6a33ba133031a3c9ed326f4d7b9c52283934edd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2009.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABPC$ be a parallelogram such that triangle $ABC$ is acute-angled. The circumcircle of triangle $ABC$ meets line $CP$ again at $Q$. Prove that $PQ = AC$ if and only if angle $BAC = 60^\\circ$.",
-      "statement_sha256": "5d05e2ef00e978b1ea21771719a47fc88d39ca4fc856aca236c133c60a4cb686",
+      "reviewed_statement": "Let $ABPC$ be a parallelogram such that $ABC$ is an acute-angled triangle. The circumcircle of triangle $ABC$ meets the line $CP$ again at $Q$. Prove that $PQ=AC$ if, and only if, $\\angle BAC=60^\\circ$.\nThe circumcircle of a triangle is the circle which passes through its vertices.",
+      "statement_sha256": "37dd44c192e775e756777073a41e67eb495292cfa3c18b9ee029d94be1b26a3d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABPC$ be a parallelogram such that triangle $ABC$ is acute-angled. The circumcircle of triangle $ABC$ meets line $CP$ again at $Q$. Prove that $PQ = AC$ if and only if angle $BAC = 60^\\circ$.",
+          "statement_sha256": "5d05e2ef00e978b1ea21771719a47fc88d39ca4fc856aca236c133c60a4cb686",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2009.0.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all positive integers $n$ such that $n+2008$ divides $n^2+2008$ and $n+2009$ divides $n^2+2009$.",
-      "statement_sha256": "e81d906e02a716f277bea227725abb2a125b75be81f1210a601c066983ecc29d",
+      "reviewed_statement": "Find all positive integers $n$ such that both $n+2008$ divides $n^2+2008$ and $n+2009$ divides $n^2+2009$.",
+      "statement_sha256": "cf456bdf9df956207c53c38874ff06b6d81c6176fdea2f2a8d00d21900726f9c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all positive integers $n$ such that $n+2008$ divides $n^2+2008$ and $n+2009$ divides $n^2+2009$.",
+          "statement_sha256": "e81d906e02a716f277bea227725abb2a125b75be81f1210a601c066983ecc29d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2009.0.5": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all sequences $a_0,a_1,a_2,\\dots$ satisfying $a_{n+1}=2a_n^2-1$ for every $n \\ge 0$, with $a_0$ rational, such that $a_i=a_j$ for some $i \\ne j$.",
-      "statement_sha256": "56a77652e7806c2038dcf73181b7df507108c0c3718a8fe5e1f84793684a1584",
+      "reviewed_statement": "Determine the sequences $a_0, a_1, a_2, \\ldots$ which satisfy all of the following conditions:\na) $a_{n+1}=2a_n^2-1$ for every integer $n\\geq 0$,\nb) $a_0$ is a rational number and\nc) $a_i=a_j$ for some $i$, $j$ with $i\\neq j$.",
+      "statement_sha256": "8c1a919dca79ba08af53ad7ab7ccecba7df74dddbaf8f9db79e0ef5e4d31dfc2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A rational quadratic recurrence must have a repeated orbit value; rational denominator behaviour is essential."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A rational quadratic recurrence must have a repeated orbit value; rational denominator behaviour is essential.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all sequences $a_0,a_1,a_2,\\dots$ satisfying $a_{n+1}=2a_n^2-1$ for every $n \\ge 0$, with $a_0$ rational, such that $a_i=a_j$ for some $i \\ne j$.",
+          "statement_sha256": "56a77652e7806c2038dcf73181b7df507108c0c3718a8fe5e1f84793684a1584",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A rational quadratic recurrence must have a repeated orbit value; rational denominator behaviour is essential."
+        }
+      ]
     },
     "uk1.2009.0.6": {
       "topics": [
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "Obtuse triangle $ABC$ has sides $a,b,c$ opposite angles $A,B,C$ respectively. Prove that $a^3\\cos A + b^3\\cos B + c^3\\cos C < abc$.",
-      "statement_sha256": "1dbaa72dc39b100364b80dcc2d025cf67e6fb422df1217f8d188d1916306b920",
+      "reviewed_statement": "The obtuse-angled triangle $ABC$ has sides of length $a$, $b$ and $c$ opposite the angles $\\angle A$, $\\angle B$ and $\\angle C$ respectively. Prove that $$a^3\\cos A+b^3\\cos B+c^3\\cos C<abc.$$",
+      "statement_sha256": "de991b897200e647b0dec894d35633adc937c85d84f7a9888a50a412be6a5a52",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "An algebraic/trigonometric inequality is constrained by an obtuse triangle."
+      "reviewed_at": "2026-10-08",
+      "rationale": "An algebraic/trigonometric inequality is constrained by an obtuse triangle.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "Obtuse triangle $ABC$ has sides $a,b,c$ opposite angles $A,B,C$ respectively. Prove that $a^3\\cos A + b^3\\cos B + c^3\\cos C < abc$.",
+          "statement_sha256": "1dbaa72dc39b100364b80dcc2d025cf67e6fb422df1217f8d188d1916306b920",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "An algebraic/trigonometric inequality is constrained by an obtuse triangle."
+        }
+      ]
     },
     "uk1.2010.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all integers $x,y,z$ such that $x^2+y^2+z^2 = 2(yz+1)$ and $x+y+z=4018$.",
-      "statement_sha256": "031cee858523a1e5ef940dce2e1d818be4cf27eaade7e80630e66de56afec4cb",
+      "reviewed_statement": "Find all integers $x$, $y$ and $z$ such that $$x^2+y^2+z^2=2(yz+1)\\qquad\\text{and}\\qquad x+y+z=4018.$$",
+      "statement_sha256": "9ff4d305f6efc995808d9a30574f97a2a2ed35ba27b42beedd18d292c591b43c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all integers $x,y,z$ such that $x^2+y^2+z^2 = 2(yz+1)$ and $x+y+z=4018$.",
+          "statement_sha256": "031cee858523a1e5ef940dce2e1d818be4cf27eaade7e80630e66de56afec4cb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2010.0.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Points $A,B,C,D,E$ lie in that order on a circle, with lines $AB$ and $ED$ parallel. Prove that angle $ABC = 90^\\circ$ if and only if $AC^2 = BD^2 + CE^2$.",
-      "statement_sha256": "18da05d1378074a11f627f2c6f6664970504e04761cbaa9c404ed4cf2e3c0fd5",
+      "reviewed_statement": "Points $A$, $B$, $C$, $D$ and $E$ lie, in that order, on a circle and the lines $AB$ and $ED$ are parallel. Prove that $\\angle ABC=90^\\circ$ if, and only if, $AC^2=BD^2+CE^2$.",
+      "statement_sha256": "ad3a7de2fd55ad133ba916470699c4aaf3083b6490c5929200ae9ca9252448d1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Points $A,B,C,D,E$ lie in that order on a circle, with lines $AB$ and $ED$ parallel. Prove that angle $ABC = 90^\\circ$ if and only if $AC^2 = BD^2 + CE^2$.",
+          "statement_sha256": "18da05d1378074a11f627f2c6f6664970504e04761cbaa9c404ed4cf2e3c0fd5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2010.0.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Isaac attempts all six questions of an Olympiad paper in order, each marked from 0 to 10, and never scores more on a later question than on any earlier one. How many different sequences of six marks can he achieve?",
-      "statement_sha256": "15d09cd1afbe31ccc91c5b18564b45e3816890fd19484053f042f592252760eb",
+      "reviewed_statement": "Isaac attempts all six questions on an Olympiad paper in order. Each question is marked on a scale from $0$ to $10$. He never scores more in a later question than in any earlier question. How many different possible sequences of six marks can he achieve?",
+      "statement_sha256": "8e8b98bf12cf4948b727d473e204e1f43d4c4ae9d5d52de6c973688cf5a6e875",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Isaac attempts all six questions of an Olympiad paper in order, each marked from 0 to 10, and never scores more on a later question than on any earlier one. How many different sequences of six marks can he achieve?",
+          "statement_sha256": "15d09cd1afbe31ccc91c5b18564b45e3816890fd19484053f042f592252760eb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2010.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two circles of different radii, centred at $B$ and $C$, touch externally at $A$. A common tangent not through $A$ touches the first circle at $D$ and the second at $E$. The line through $A$ perpendicular to $DE$ meets the perpendicular bisector of $BC$ at $F$. Prove that $BC = 2AF$.",
-      "statement_sha256": "0ca19d48fc80937be462dbe70ad090854d875b8e65c666eeb2f462e3d7dcd68c",
+      "reviewed_statement": "Two circles, of different radius, with centres at $B$ and $C$, touch externally at $A$. A common tangent, not through $A$, touches the first circle at $D$ and the second at $E$. The line through $A$ which is perpendicular to $DE$ and the perpendicular bisector of $BC$ meet at $F$. Prove that $BC=2AF$.",
+      "statement_sha256": "b57962d1eeabd97ad8772e4c5d5fe900828c16a7a71fd820c07d16c05973ac06",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two circles of different radii, centred at $B$ and $C$, touch externally at $A$. A common tangent not through $A$ touches the first circle at $D$ and the second at $E$. The line through $A$ perpendicular to $DE$ meets the perpendicular bisector of $BC$ at $F$. Prove that $BC = 2AF$.",
+          "statement_sha256": "0ca19d48fc80937be462dbe70ad090854d875b8e65c666eeb2f462e3d7dcd68c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2010.0.5": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all real-valued functions $f$ on the reals satisfying $f(x)f(y) = f(x+y) + xy$ for all real $x,y$.",
-      "statement_sha256": "1022ef6efd7b952e5244d349f9de7c702797881c5b61ac3728f5721b287e82c6",
+      "reviewed_statement": "Find all functions $f$, defined on the real numbers and taking real values, which satisfy the equation $f(x)f(y)=f(x+y)+xy$ for all real numbers $x$ and $y$.",
+      "statement_sha256": "0855b195748426c93b4fa7d240cf33d35f01f07c037b293f8f53744914e22efd",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all real-valued functions $f$ on the reals satisfying $f(x)f(y) = f(x+y) + xy$ for all real $x,y$.",
+          "statement_sha256": "1022ef6efd7b952e5244d349f9de7c702797881c5b61ac3728f5721b287e82c6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2011.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle right-angled at $A$, and let $L$ lie on side $BC$ between $B$ and $C$. The circle through $A,B,L$ meets line $AC$ again at $M$, and the circle through $C,A,L$ meets line $AB$ again at $N$. Prove that $L,M,N$ are collinear.",
-      "statement_sha256": "9778f0cf8d0873f63069a8c99ef9844cdb75dfdbf6f6a1b53d15d5bac911bfa0",
+      "reviewed_statement": "Let $ABC$ be a triangle with $\\angle CAB$ a right-angle. The point $L$ lies on the side $BC$ between $B$ and $C$. The circle $ABL$ meets the line $AC$ again at $M$ and the circle $CAL$ meets the line $AB$ again at $N$. Prove that $L$, $M$ and $N$ lie on a straight line.",
+      "statement_sha256": "8353340feff51a1ee73491da9e4de7ebb148bd3a4d055117df402fe875a64956",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle right-angled at $A$, and let $L$ lie on side $BC$ between $B$ and $C$. The circle through $A,B,L$ meets line $AC$ again at $M$, and the circle through $C,A,L$ meets line $AB$ again at $N$. Prove that $L,M,N$ are collinear.",
+          "statement_sha256": "9778f0cf8d0873f63069a8c99ef9844cdb75dfdbf6f6a1b53d15d5bac911bfa0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2011.0.4": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Each of the 64 unit squares of a chessboard is coloured red, white, or blue; a coloured pattern is called an arrangement. Determine whether more arrangements contain an even number of red squares or more contain an odd number of red squares.",
-      "statement_sha256": "52ac7486dca3cc16a873cfdbb9366877e6e40bcdcf2dec3be9b9e18b0f495f36",
+      "reviewed_statement": "Isaac has a large supply of counters, and places one in each of the $1\\times 1$ squares of an $8\\times 8$ chessboard. Each counter is either red, white or blue. A particular pattern of coloured counters is called an arrangement. Determine whether there are more arrangements which contain an even number of red counters or more arrangements which contain an odd number of red counters. Note that $0$ is an even number.",
+      "statement_sha256": "56e8edc0a14c278aa7f2b7b710e8821b61929b9bdb24c4536965faebbd6b162d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Each of the 64 unit squares of a chessboard is coloured red, white, or blue; a coloured pattern is called an arrangement. Determine whether more arrangements contain an even number of red squares or more contain an odd number of red squares.",
+          "statement_sha256": "52ac7486dca3cc16a873cfdbb9366877e6e40bcdcf2dec3be9b9e18b0f495f36",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2011.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Circles $S_1$ and $S_2$ meet at $L$ and $M$. Let $P$ be a point on $S_2$; let lines $PL$ and $PM$ meet $S_1$ again at $Q$ and $R$ respectively, and let lines $QM$ and $RL$ meet at $K$. Show that, as $P$ varies on $S_2$, $K$ traces a fixed circle.",
-      "statement_sha256": "cdd6cfa6017eff0446d8e981b4d5800f07acda39e72256ebeb3ef65e8f3d4996",
+      "reviewed_statement": "Circles $S_1$ and $S_2$ meet at $L$ and $M$. Let $P$ be a point on $S_2$. Let $PL$ and $PM$ meet $S_1$ again at $Q$ and $R$ respectively. The lines $QM$ and $RL$ meet at $K$. Show that, as $P$ varies on $S_2$, $K$ lies on a fixed circle.",
+      "statement_sha256": "d7d5cbb5d6177f90c783fc108d74ed7ad9c96e1672182ad658cff90f9b022312",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Circles $S_1$ and $S_2$ meet at $L$ and $M$. Let $P$ be a point on $S_2$; let lines $PL$ and $PM$ meet $S_1$ again at $Q$ and $R$ respectively, and let lines $QM$ and $RL$ meet at $K$. Show that, as $P$ varies on $S_2$, $K$ traces a fixed circle.",
+          "statement_sha256": "cdd6cfa6017eff0446d8e981b4d5800f07acda39e72256ebeb3ef65e8f3d4996",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2011.0.6": {
       "topics": [
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "Let $a,b,c$ be the side lengths of a triangle with $ab+bc+ca=1$. Show that $(a+1)(b+1)(c+1) < 4$.",
-      "statement_sha256": "637d962027f0441fa39c73cfef659afe88e721bd41d494ec3daa62da487974c9",
+      "reviewed_statement": "Let $a$, $b$ and $c$ be the lengths of the sides of a triangle. Suppose that $ab+bc+ca=1$. Show that $(a+1)(b+1)(c+1)<4$.",
+      "statement_sha256": "dba9b066dfdca639fab8c48fdbb1e8b45b219854dbad5de092b4c71567d48624",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A polynomial bound on triangle sides is combined with their triangle inequalities and fixed pair-product sum."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A polynomial bound on triangle sides is combined with their triangle inequalities and fixed pair-product sum.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $a,b,c$ be the side lengths of a triangle with $ab+bc+ca=1$. Show that $(a+1)(b+1)(c+1) < 4$.",
+          "statement_sha256": "637d962027f0441fa39c73cfef659afe88e721bd41d494ec3daa62da487974c9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A polynomial bound on triangle sides is combined with their triangle inequalities and fixed pair-product sum."
+        }
+      ]
     },
     "uk1.2012.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all integers $n$ (positive or negative) for which $n^2+20n+11$ is a perfect square, justifying that all values have been found.",
-      "statement_sha256": "be38710792dc2c96852d8cccfb5b0e0a31a7b3ab77b666d70dd14137875fa0d9",
+      "reviewed_statement": "Find all (positive or negative) integers $n$ for which $n^2+20n+11$ is a perfect square. Remember that you must justify that you have found them all.",
+      "statement_sha256": "76a38ec7a7146deeff931f4f76942abad0c5e6cc82ee727484a70a42d8e65d28",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all integers $n$ (positive or negative) for which $n^2+20n+11$ is a perfect square, justifying that all values have been found.",
+          "statement_sha256": "be38710792dc2c96852d8cccfb5b0e0a31a7b3ab77b666d70dd14137875fa0d9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2012.0.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "For the numbers $1,2,\\dots,n$, find, in terms of $n$, the largest integer $t$ such that they can be arranged in a row so that every pair of consecutive terms differs by at least $t$.",
-      "statement_sha256": "75b7c185977534e1bec5344d04f6d9e3f6019bcfc52f6d1525612fb47209f4d7",
+      "reviewed_statement": "Consider the numbers $1, 2, \\ldots, n$. Find, in terms of $n$, the largest integer $t$ such that these numbers can be arranged in a row so that all consecutive terms differ by at least $t$.",
+      "statement_sha256": "44fca1f75d1d81606eb12a90ea76a377a4995283c217c2a55e5eda0fdd7eccee",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "For the numbers $1,2,\\dots,n$, find, in terms of $n$, the largest integer $t$ such that they can be arranged in a row so that every pair of consecutive terms differs by at least $t$.",
+          "statement_sha256": "75b7c185977534e1bec5344d04f6d9e3f6019bcfc52f6d1525612fb47209f4d7",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2012.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A point $P$ lies outside a circle $S$, and a line through $P$ meets $S$ at distinct points $X,Y$. Circles $S_1,S_2$ pass through $P$ and are tangent to $S$ at $X,Y$ respectively. Prove that the difference of the radii of $S_1$ and $S_2$ does not depend on the choice of $P,X,Y$.",
-      "statement_sha256": "143af6c0f65e71603c4f9f5378f16d48159018deab2ba3fd80e7b93554080ed6",
+      "reviewed_statement": "Consider a circle $S$. The point $P$ lies outside $S$ and a line is drawn through $P$, cutting $S$ at distinct points $X$ and $Y$. Circles $S_1$ and $S_2$ are drawn through $P$ which are tangent to $S$ at $X$ and $Y$ respectively. Prove that the difference of the radii of $S_1$ and $S_2$ is independent of the positions of $P$, $X$ and $Y$.",
+      "statement_sha256": "4ae2b6502890def59760ac66a94f7f4b5ab1aa021b500e2ff0320d59b541ba09",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A point $P$ lies outside a circle $S$, and a line through $P$ meets $S$ at distinct points $X,Y$. Circles $S_1,S_2$ pass through $P$ and are tangent to $S$ at $X,Y$ respectively. Prove that the difference of the radii of $S_1$ and $S_2$ does not depend on the choice of $P,X,Y$.",
+          "statement_sha256": "143af6c0f65e71603c4f9f5378f16d48159018deab2ba3fd80e7b93554080ed6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2012.0.4": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Two bags contain $m$ and $n$ balls respectively ($m,n>0$). Two operations are allowed: (a) remove an equal number of balls from each bag; (b) double the number of balls in one bag. Is it always possible to empty both bags in finitely many operations? If operation (b) is replaced by tripling the balls in one bag, is it still always possible?",
-      "statement_sha256": "9affb78e8429ecd03682be1324b7250a5bc86ddcba3dc92ec411bb5810d2066a",
+      "reviewed_statement": "Initially there are $m$ balls in one bag, and $n$ in the other, where $m,n>0$. Two different operations are allowed:\na) Remove an equal number of balls from each bag;\nb) Double the number of balls in one bag.\nIs it always possible to empty both bags after a finite sequence of operations?\nOperation b) is now replaced with\nb$'$) Triple the number of balls in one bag.\nIs it now always possible to empty both bags after a finite sequence of operations?",
+      "statement_sha256": "03e9bf1aa248fe16cc165428508eb2e07080675e75c10eb8abc966f322dc1be2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Integer transfer and multiplication operations require arithmetic reachability invariants."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Integer transfer and multiplication operations require arithmetic reachability invariants.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Two bags contain $m$ and $n$ balls respectively ($m,n>0$). Two operations are allowed: (a) remove an equal number of balls from each bag; (b) double the number of balls in one bag. Is it always possible to empty both bags in finitely many operations? If operation (b) is replaced by tripling the balls in one bag, is it still always possible?",
+          "statement_sha256": "9affb78e8429ecd03682be1324b7250a5bc86ddcba3dc92ec411bb5810d2066a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Integer transfer and multiplication operations require arithmetic reachability invariants."
+        }
+      ]
     },
     "uk1.2012.0.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute triangle with feet of altitudes $D$ (from $A$), $E$ (from $B$), $F$ (from $C$). Prove that $DE+DF \\le BC$, and determine when equality holds.",
-      "statement_sha256": "4e8961f595b9721e360502d7d3ce5ef4bba2643c10e9644a928174ae606cf24b",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle. The feet of the altitudes from $A$, $B$ and $C$ are $D$, $E$ and $F$ respectively. Prove that $DE+DF\\leq BC$ and determine the triangles for which equality holds.\nThe altitude from $A$ is the line through $A$ which is perpendicular to $BC$. The foot of this altitude is the point $D$ where it meets $BC$. The other altitudes are similarly defined.",
+      "statement_sha256": "08d926c65f581080da0d8e16fb3fd89697782ad13245f64871f1f5b15855c5d6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute triangle with feet of altitudes $D$ (from $A$), $E$ (from $B$), $F$ (from $C$). Prove that $DE+DF \\le BC$, and determine when equality holds.",
+          "statement_sha256": "4e8961f595b9721e360502d7d3ce5ef4bba2643c10e9644a928174ae606cf24b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2013.0.1": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Counters are placed on an 8 by 8 chessboard, at most one per square. Determine the maximum number that can be placed so that no row, no column, and neither of the two main diagonals contains five or more counters.",
-      "statement_sha256": "cd58b14676af9ef60d5bf327cb29e78e8e9309dd7aab16e3aa96497323c68387",
+      "reviewed_statement": "Isaac places some counters onto the squares of an $8$ by $8$ chessboard so that there is at most one counter in each of the $64$ squares. Determine, with justification, the maximum number that he can place without having five or more counters in the same row, or in the same column, or on either of the two long diagonals.",
+      "statement_sha256": "ca9c0da561a00297a7b3a9a945056ac1d8bf78c490809b7a25e6ab7cf1ece9f5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Counters are placed on an 8 by 8 chessboard, at most one per square. Determine the maximum number that can be placed so that no row, no column, and neither of the two main diagonals contains five or more counters.",
+          "statement_sha256": "cd58b14676af9ef60d5bf327cb29e78e8e9309dd7aab16e3aa96497323c68387",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2013.0.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Circles $S$ and $T$ touch at $X$ and share a common tangent meeting $S$ at $A$ and $T$ at distinct point $B$. Let $AP$ be a diameter of $S$. Prove that $B$, $X$, $P$ are collinear.",
-      "statement_sha256": "b1356e2de5407594d0ab88c1b79ef293e6c7413d442659037acb1a9fcdd5c64f",
+      "reviewed_statement": "Two circles $S$ and $T$ touch at $X$. They have a common tangent which meets $S$ at $A$ and $T$ at $B$. The points $A$ and $B$ are different. Let $AP$ be a diameter of $S$. Prove that $B$, $X$ and $P$ lie on a straight line.",
+      "statement_sha256": "eb9656c150ef5e91af0822cf9751d55c16aae955ce5b22f98a03f4e8585b1383",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Circles $S$ and $T$ touch at $X$ and share a common tangent meeting $S$ at $A$ and $T$ at distinct point $B$. Let $AP$ be a diameter of $S$. Prove that $B$, $X$, $P$ are collinear.",
+          "statement_sha256": "b1356e2de5407594d0ab88c1b79ef293e6c7413d442659037acb1a9fcdd5c64f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2013.0.3": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all real $x,y,z$ satisfying $x^2-4y+7=0$, $y^2-6z+14=0$, $z^2-2x-7=0$ simultaneously.",
-      "statement_sha256": "74b585a524fec5c4c47127166688d06c1200f23ad3977d46be57c6b35391a1b2",
+      "reviewed_statement": "Find all real numbers $x$, $y$ and $z$ which satisfy the simultaneous equations $$x^2-4y+7=0,\\qquad y^2-6z+14=0\\qquad\\text{and}\\qquad z^2-2x-7=0.$$",
+      "statement_sha256": "7880cb8dafcf36c3a07ea105f23bbdbd8f15e198e0333737df0bb8819ddd80d5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all real $x,y,z$ satisfying $x^2-4y+7=0$, $y^2-6z+14=0$, $z^2-2x-7=0$ simultaneously.",
+          "statement_sha256": "74b585a524fec5c4c47127166688d06c1200f23ad3977d46be57c6b35391a1b2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2013.0.4": {
       "topics": [
@@ -7416,300 +8083,661 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A triangle has side lengths at most 2, 3, and 4 respectively. Determine, with proof, its maximum possible area.",
-      "statement_sha256": "78115579fb8c13a807561b2ff0312c88b9f8fad63fb9bab074eb5c7d76c9ff74",
+      "reviewed_statement": "A triangle has sides of length at most $2$, $3$ and $4$ respectively. Determine, with proof, the maximum possible area of the triangle.",
+      "statement_sha256": "c8935337cb7d723b3c1dac41377a2dbd8a4ace465d3e7fb495e0d3ff9b0c8cbe",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle has side lengths at most 2, 3, and 4 respectively. Determine, with proof, its maximum possible area.",
+          "statement_sha256": "78115579fb8c13a807561b2ff0312c88b9f8fad63fb9bab074eb5c7d76c9ff74",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2013.0.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle. Let $S$ be the circle through $B$ tangent to $CA$ at $A$, and $T$ the circle through $C$ tangent to $AB$ at $A$; $S$ and $T$ meet again at $D$. Let $E$ be the second intersection of line $AD$ with the circumcircle of $ABC$. Prove that $D$ is the midpoint of $AE$.",
-      "statement_sha256": "0e0e531ba3cf629e01e3c3eb2aaad94522ca02149a13c98755b1cec0f3ea81db",
+      "reviewed_statement": "Let $ABC$ be a triangle. Let $S$ be the circle through $B$ tangent to $CA$ at $A$ and let $T$ be the circle through $C$ tangent to $AB$ at $A$. The circles $S$ and $T$ intersect at $A$ and $D$. Let $E$ be the point where the line $AD$ meets the circle $ABC$. Prove that $D$ is the midpoint of $AE$.",
+      "statement_sha256": "010e4c3892baa1f5faebb80924790d7aabb4c9f54a5a299a92d9b924fac4aaac",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle. Let $S$ be the circle through $B$ tangent to $CA$ at $A$, and $T$ the circle through $C$ tangent to $AB$ at $A$; $S$ and $T$ meet again at $D$. Let $E$ be the second intersection of line $AD$ with the circumcircle of $ABC$. Prove that $D$ is the midpoint of $AE$.",
+          "statement_sha256": "0e0e531ba3cf629e01e3c3eb2aaad94522ca02149a13c98755b1cec0f3ea81db",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2014.0.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In acute triangle $ABC$, $E$ is the foot of the perpendicular from $B$ to $CA$. Let $\\ell$ be the tangent to the circumcircle of $ABC$ at $B$, and let $F$ be the foot of the perpendicular from $C$ to $\\ell$. Prove that $EF$ is parallel to $AB$.",
-      "statement_sha256": "23d756c48bf129b8a5d55c391d48a340958837452ee840bd94d6b4bd82fe3b00",
+      "reviewed_statement": "In the acute-angled triangle $ABC$, the foot of the perpendicular from $B$ to $CA$ is $E$. Let $l$ be the tangent to the circle $ABC$ at $B$. The foot of the perpendicular from $C$ to $l$ is $F$. Prove that $EF$ is parallel to $AB$.",
+      "statement_sha256": "718bda0052f5dc3e1dd1101304ff8ca04808eb99738bb9c5192efea59b53012f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In acute triangle $ABC$, $E$ is the foot of the perpendicular from $B$ to $CA$. Let $\\ell$ be the tangent to the circumcircle of $ABC$ at $B$, and let $F$ be the foot of the perpendicular from $C$ to $\\ell$. Prove that $EF$ is parallel to $AB$.",
+          "statement_sha256": "23d756c48bf129b8a5d55c391d48a340958837452ee840bd94d6b4bd82fe3b00",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2014.0.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A number, written in base 10, consists of $3^{2013}$ copies of the digit 3 and no other digit. Find the highest power of 3 dividing this number.",
-      "statement_sha256": "482a67fae34538dc163f33624be91c64cf6c7143060f9694fefa4faf2d2a1bac",
+      "reviewed_statement": "A number written in base $10$ is a string of $3^{2013}$ digit $3$s. No other digit appears. Find the highest power of $3$ which divides this number.",
+      "statement_sha256": "eb32ac6f6bfdfc3d62def98c3982eaaa4d0e30a5ead0175be9dea9a7bacea901",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A number, written in base 10, consists of $3^{2013}$ copies of the digit 3 and no other digit. Find the highest power of 3 dividing this number.",
+          "statement_sha256": "482a67fae34538dc163f33624be91c64cf6c7143060f9694fefa4faf2d2a1bac",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2014.0.4": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Over a nine-day holiday, Isaac does exactly one of surfing, water-skiing, or resting each day, and never does the two different water-sports on consecutive days. How many schedules are possible?",
-      "statement_sha256": "12b6f4b946d413ebc58e280a4611b397a9e4a7dd4019eb94477167b7e21a60af",
+      "reviewed_statement": "Isaac is planning a nine-day holiday. Every day he will go surfing, or water skiing, or he will rest. On any given day he does just one of these three things. He never does different water-sports on consecutive days. How many schedules are possible for the holiday?",
+      "statement_sha256": "6cbfc0cc47269931dcb06eced6afe32641305275d07287b9b5d92f884f7a83f8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Over a nine-day holiday, Isaac does exactly one of surfing, water-skiing, or resting each day, and never does the two different water-sports on consecutive days. How many schedules are possible?",
+          "statement_sha256": "12b6f4b946d413ebc58e280a4611b397a9e4a7dd4019eb94477167b7e21a60af",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2014.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be equilateral and $P$ an interior point, with $D,E,F$ the feet of the perpendiculars from $P$ to $BC,CA,AB$ respectively. Prove (a) $AF+BD+CE = AE+BF+CD$, and (b) area($APF$)+area($BPD$)+area($CPE$) = area($APE$)+area($BPF$)+area($CPD$).",
-      "statement_sha256": "b96f121e5f562c3d9cc61cfc3505869624c16f483a75b2f8cd353b9ebabad53a",
+      "reviewed_statement": "Let $ABC$ be an equilateral triangle, and $P$ be a point inside this triangle. Let $D$, $E$ and $F$ be the feet of the perpendiculars from $P$ to the sides $BC$, $CA$ and $AB$ respectively. Prove that\na) $AF+BD+CE=AE+BF+CD$ and\nb) $[APF]+[BPD]+[CPE]=[APE]+[BPF]+[CPD]$.\nThe area of triangle $XYZ$ is denoted $[XYZ]$.",
+      "statement_sha256": "d3e3e9727bc579f7ae0d0b814149b9897aa435f2b8382299c02f5ebea6d1b30d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Perpendicular projections in an equilateral triangle give length and area identities. Real-variable algebra is not the stated subject."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Perpendicular projections in an equilateral triangle give length and area identities. Real-variable algebra is not the stated subject.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be equilateral and $P$ an interior point, with $D,E,F$ the feet of the perpendiculars from $P$ to $BC,CA,AB$ respectively. Prove (a) $AF+BD+CE = AE+BF+CD$, and (b) area($APF$)+area($BPD$)+area($CPE$) = area($APE$)+area($BPF$)+area($CPD$).",
+          "statement_sha256": "b96f121e5f562c3d9cc61cfc3505869624c16f483a75b2f8cd353b9ebabad53a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Perpendicular projections in an equilateral triangle give length and area identities. Real-variable algebra is not the stated subject."
+        }
+      ]
     },
     "uk1.2014.0.6": {
       "topics": [
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "A triangle has angles $A,B,C$ (in degrees) and opposite sides $a,b,c$. Prove that $60 \\le \\dfrac{aA+bB+cC}{a+b+c} < 90$.",
-      "statement_sha256": "955a03be2540cd94bfa6b36df3edffbc438e7eafeb199a6e6cff93e333295140",
+      "reviewed_statement": "The angles $A$, $B$ and $C$ of a triangle are measured in degrees, and the lengths of the opposite sides are $a$, $b$ and $c$ respectively. Prove that $$60\\leq\\frac{aA+bB+cC}{a+b+c}<90.$$",
+      "statement_sha256": "33841634bf8852305b2187ea8eafd786fee5b406c187f0a07f25246b6e36a20b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A weighted side/angle expression is bounded by triangle constraints."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A weighted side/angle expression is bounded by triangle constraints.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle has angles $A,B,C$ (in degrees) and opposite sides $a,b,c$. Prove that $60 \\le \\dfrac{aA+bB+cC}{a+b+c} < 90$.",
+          "statement_sha256": "955a03be2540cd94bfa6b36df3edffbc438e7eafeb199a6e6cff93e333295140",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A weighted side/angle expression is bounded by triangle constraints."
+        }
+      ]
     },
     "uk1.2015.0.2": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Positive integers $p,a,b$ satisfy $p^2+a^2=b^2$. Prove that if $p$ is a prime greater than 3, then $a$ is a multiple of 12 and $2(p+a+1)$ is a perfect square.",
-      "statement_sha256": "99e4fccbfd9866926bbbf1dfea5ac95699f588f57930b1b0d293142c765997c2",
+      "reviewed_statement": "Positive integers $p$, $a$ and $b$ satisfy the equation $p^2+a^2=b^2$. Prove that if $p$ is a prime greater than $3$, then $a$ is a multiple of $12$ and $2(p+a+1)$ is a perfect square.",
+      "statement_sha256": "08b386ec7bfc480f68e4ebc235d3c0b37cf19bcd2ca593f31b3ed4b330f8958c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Positive integers $p,a,b$ satisfy $p^2+a^2=b^2$. Prove that if $p$ is a prime greater than 3, then $a$ is a multiple of 12 and $2(p+a+1)$ is a perfect square.",
+          "statement_sha256": "99e4fccbfd9866926bbbf1dfea5ac95699f588f57930b1b0d293142c765997c2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2015.0.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A hotel has ten rooms on each side of a corridor. A team leader wants to book seven rooms so that no two booked rooms on the same side of the corridor are adjacent. In how many ways can this be done?",
-      "statement_sha256": "06e8e878b4548dd707c5eebde9396267dd6497266d04d085965570c5385e3184",
+      "reviewed_statement": "A hotel has ten rooms along each side of a corridor. An olympiad team leader wishes to book seven rooms on the corridor so that no two reserved rooms on the same side of the corridor are adjacent. In how many ways can this be done?",
+      "statement_sha256": "eb2635ef8a18becd997383cdc96343e36b72b39e7888163204e1d1982e6a0ae6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A hotel has ten rooms on each side of a corridor. A team leader wants to book seven rooms so that no two booked rooms on the same side of the corridor are adjacent. In how many ways can this be done?",
+          "statement_sha256": "06e8e878b4548dd707c5eebde9396267dd6497266d04d085965570c5385e3184",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2015.0.4": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $x$ be real with $t = x + x^{-1}$ an integer greater than 2. Prove that $t_n = x^n + x^{-n}$ is an integer for every positive integer $n$, and determine for which $n$, $t$ divides $t_n$.",
-      "statement_sha256": "3e098cdf6bc6f51a9e4a4e176ee55c59121669320aaa67587685d074de810446",
+      "reviewed_statement": "Let $x$ be a real number such that $t=x+x^{-1}$ is an integer greater than $2$. Prove that $t_n=x^n+x^{-n}$ is an integer for all positive integers $n$. Determine the values of $n$ for which $t$ divides $t_n$.",
+      "statement_sha256": "0f607205cd83ef88dcbbeaa11e44a24565a38632f054275445de7a75609d97dc",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "An algebraic recurrence for x^n+x^(-n) is combined with integer divisibility."
+      "reviewed_at": "2026-10-08",
+      "rationale": "An algebraic recurrence for x^n+x^(-n) is combined with integer divisibility.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $x$ be real with $t = x + x^{-1}$ an integer greater than 2. Prove that $t_n = x^n + x^{-n}$ is an integer for every positive integer $n$, and determine for which $n$, $t$ divides $t_n$.",
+          "statement_sha256": "3e098cdf6bc6f51a9e4a4e176ee55c59121669320aaa67587685d074de810446",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "An algebraic recurrence for x^n+x^(-n) is combined with integer divisibility."
+        }
+      ]
     },
     "uk1.2015.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral, and $F$ the midpoint of arc $AB$ of its circumcircle not containing $C$ or $D$. Lines $DF$ and $AC$ meet at $P$; lines $CF$ and $BD$ meet at $Q$. Prove that $PQ$ is parallel to $AB$.",
-      "statement_sha256": "7cddaa4b66626ffda6d3063834b5b80b1065289ae7ff8eebdf985529ba134d4b",
+      "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral. Let $F$ be the midpoint of the arc $AB$ of its circumcircle which does not contain $C$ or $D$. Let the lines $DF$ and $AC$ meet at $P$ and the lines $CF$ and $BD$ meet at $Q$. Prove that the lines $PQ$ and $AB$ are parallel.",
+      "statement_sha256": "aad78407c57a59fdf4d9fe8f475d5073fca21c602a220de1836fc32fc099ae88",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral, and $F$ the midpoint of arc $AB$ of its circumcircle not containing $C$ or $D$. Lines $DF$ and $AC$ meet at $P$; lines $CF$ and $BD$ meet at $Q$. Prove that $PQ$ is parallel to $AB$.",
+          "statement_sha256": "7cddaa4b66626ffda6d3063834b5b80b1065289ae7ff8eebdf985529ba134d4b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2015.0.6": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all functions $f$ from the positive integers to the positive integers such that, whenever positive integers $a,b,c$ satisfy $1/a+1/b=1/c$, it follows that $1/f(a)+1/f(b)=1/f(c)$.",
-      "statement_sha256": "ee4704f4a1595e6ed5690902206fc72eac5f90b2a45481250db72a6f2c9dace8",
+      "reviewed_statement": "Determine all functions $f(n)$ from the positive integers to the positive integers which satisfy the following condition: whenever $a$, $b$ and $c$ are positive integers such that $1/a+1/b=1/c$, then $1/f(a)+1/f(b)=1/f(c)$.",
+      "statement_sha256": "ef216fef424e4f7ded19f673b894b28d51f78440a9f269a541bb8e3c9530ad6f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "An integer-valued functional condition preserves Egyptian-fraction identities."
+      "reviewed_at": "2026-10-08",
+      "rationale": "An integer-valued functional condition preserves Egyptian-fraction identities.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all functions $f$ from the positive integers to the positive integers such that, whenever positive integers $a,b,c$ satisfy $1/a+1/b=1/c$, it follows that $1/f(a)+1/f(b)=1/f(c)$.",
+          "statement_sha256": "ee4704f4a1595e6ed5690902206fc72eac5f90b2a45481250db72a6f2c9dace8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "An integer-valued functional condition preserves Egyptian-fraction identities."
+        }
+      ]
     },
     "uk1.2016.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Anna buys one book every day and one shelf every alternate Thursday, starting Thursday 1 January 2015. On how many days between Thursday 1 January 2015 and Saturday 31 December 2016 inclusive is it possible for Anna to distribute all her books evenly (an equal number per shelf) across all her shelves?",
-      "statement_sha256": "e3175390ea554725880c4c02706b6bcdfe8dbcc1357235fe94ef26fecc89f943",
+      "reviewed_statement": "On Thursday 1st January 2015, Anna buys one book and one shelf. For the next two years, she buys one book every day and one shelf on alternate Thursdays, so she next buys a shelf on 15th January 2015. On how many days in the period Thursday 1st January 2015 until (and including) Saturday 31st December 2016 is it possible for Anna to put all her books on all her shelves, so that there is an equal number of books on each shelf?",
+      "statement_sha256": "f3bcdbf7d2018c63be86d18295be89d51382d82b6f6e3dd2296acdf7d113d915",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Calendar indices specify counts of books and shelves; the substantive condition is integer divisibility, not counting arrangements."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Calendar indices specify counts of books and shelves; the substantive condition is integer divisibility, not counting arrangements.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Anna buys one book every day and one shelf every alternate Thursday, starting Thursday 1 January 2015. On how many days between Thursday 1 January 2015 and Saturday 31 December 2016 inclusive is it possible for Anna to distribute all her books evenly (an equal number per shelf) across all her shelves?",
+          "statement_sha256": "e3175390ea554725880c4c02706b6bcdfe8dbcc1357235fe94ef26fecc89f943",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Calendar indices specify counts of books and shelves; the substantive condition is integer divisibility, not counting arrangements."
+        }
+      ]
     },
     "uk1.2016.0.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral, with lines $CD$ and $BA$ meeting at $E$. The line through $D$ tangent to the circumcircle of $ADE$ meets line $CB$ at $F$. Prove that triangle $CDF$ is isosceles.",
-      "statement_sha256": "ae6abbf9f0a3031ea2e470d631da0da3ea2837b571143ba4ed1036db99875fef",
+      "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral and let the lines $CD$ and $BA$ meet at $E$. The line through $D$ which is tangent to the circle $ADE$ meets the line $CB$ at $F$. Prove that the triangle $CDF$ is isosceles.",
+      "statement_sha256": "172d95a283cdb3cf108d88582c6b476683d1d5f10959fdf4f582559f7526f0d3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABCD$ be a cyclic quadrilateral, with lines $CD$ and $BA$ meeting at $E$. The line through $D$ tangent to the circumcircle of $ADE$ meets line $CB$ at $F$. Prove that triangle $CDF$ is isosceles.",
+          "statement_sha256": "ae6abbf9f0a3031ea2e470d631da0da3ea2837b571143ba4ed1036db99875fef",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2016.0.3": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "A sequence $t_0,t_1,t_2,\\dots$ is given by $t_n = An^2+Bn+C$ for real constants $A\\ne0$, $B$, $C$. Find values of $A,B,C$ maximizing the number of consecutive terms of this sequence that are also consecutive terms of the Fibonacci sequence ($F_0=0,F_1=1,F_m=F_{m-1}+F_{m-2}$).",
-      "statement_sha256": "e34cb295ba55c512da9af21b67a0416a4e3531a2c4d5d9dd1d6b5a25cf8b1aa0",
+      "reviewed_statement": "Suppose that a sequence $t_0, t_1, t_2, \\ldots$ is defined by a formula $t_n=An^2+Bn+C$ for all integers $n\\geq 0$. Here $A$, $B$ and $C$ are real constants with $A\\neq 0$. Determine values of $A$, $B$ and $C$ which give the greatest possible number of successive terms of the sequence which are also successive terms of the Fibonacci sequence.\nThe Fibonacci sequence is defined by $F_0=0$, $F_1=1$ and $F_m=F_{m-1}+F_{m-2}$ for $m\\geq 2$.",
+      "statement_sha256": "0c151b101085891b644d9122074081715cba551b8ea8af14f09497dbfd9c478e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "A sequence $t_0,t_1,t_2,\\dots$ is given by $t_n = An^2+Bn+C$ for real constants $A\\ne0$, $B$, $C$. Find values of $A,B,C$ maximizing the number of consecutive terms of this sequence that are also consecutive terms of the Fibonacci sequence ($F_0=0,F_1=1,F_m=F_{m-1}+F_{m-2}$).",
+          "statement_sha256": "e34cb295ba55c512da9af21b67a0416a4e3531a2c4d5d9dd1d6b5a25cf8b1aa0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2016.0.4": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "James has a red jar, a blue jar, and 100 pebbles. A move transfers one pebble between the pile and a jar. At all times the red jar must contain at least as many pebbles as the blue jar, and the game must never revisit a previous state (given by the pebble counts in each jar). What is the maximum number of moves James can make?",
-      "statement_sha256": "b6c8f8a084034a93a04a27ad50640fffe2c95795e7129216ce805b05b1cee312",
+      "reviewed_statement": "James has a red jar, a blue jar and a pile of $100$ pebbles. Initially both jars are empty. A move consists of moving a pebble from the pile into one of the jars or returning a pebble from one of the jars to the pile. The numbers of pebbles in the red and blue jars determine the state of the game. The following conditions must be satisfied:\na) The red jar may never contain fewer pebbles than the blue jar;\nb) The game may never be returned to a previous state.\nWhat is the maximum number of moves that James can make?",
+      "statement_sha256": "d5704dafbf949fd6e826c8aa16a8eb378fbc285dd77fa689c1e858bd1e9479de",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "James has a red jar, a blue jar, and 100 pebbles. A move transfers one pebble between the pile and a jar. At all times the red jar must contain at least as many pebbles as the blue jar, and the game must never revisit a previous state (given by the pebble counts in each jar). What is the maximum number of moves James can make?",
+          "statement_sha256": "b6c8f8a084034a93a04a27ad50640fffe2c95795e7129216ce805b05b1cee312",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2016.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle with feet of altitudes $D,E,F$ from $A,B,C$ respectively. Let $P,Q,R,S$ be the feet of the perpendiculars from $D$ to $BA,BE,CF,CA$ respectively. Prove that $P,Q,R,S$ are collinear.",
-      "statement_sha256": "1d18cad5da163c6acb29afb4c643b698db8a6979c770b5e28d6852a5f0ca7ced",
+      "reviewed_statement": "Let $ABC$ be a triangle, and let $D$, $E$ and $F$ be the feet of the perpendiculars from $A$, $B$ and $C$ to $BC$, $CA$ and $AB$ respectively. Let $P$, $Q$, $R$ and $S$ be the feet of the perpendiculars from $D$ to $BA$, $BE$, $CF$ and $CA$ respectively. Prove that $P$, $Q$, $R$ and $S$ are collinear.",
+      "statement_sha256": "9fcd4c260339e0b60cd30e0ba6b928736b49791a34c8f72f3e6a83ee8b760a6d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle with feet of altitudes $D,E,F$ from $A,B,C$ respectively. Let $P,Q,R,S$ be the feet of the perpendiculars from $D$ to $BA,BE,CF,CA$ respectively. Prove that $P,Q,R,S$ are collinear.",
+          "statement_sha256": "1d18cad5da163c6acb29afb4c643b698db8a6979c770b5e28d6852a5f0ca7ced",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2017.0.1": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "The integers $1,2,\\dots,2016$ are each written in base 10 exactly once. How many of all the digits appearing across the whole list are odd?",
-      "statement_sha256": "b0e27bdaab7615a41d030ed3024fa2d62a33af868e1649f24c0e9bca293393e3",
+      "reviewed_statement": "The integers $1, 2, 3, \\ldots, 2016$ are written down in base $10$, each appearing exactly once. Each of the digits from $0$ to $9$ appears many times in the list. How many of the digits in the list are odd? For example, $8$ odd digits appear in the list $1, 2, 3, \\ldots, 11$.",
+      "statement_sha256": "926ecd88444c81ca23b59f194520e89ad18074858fbcc286645d3b7ca667003b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Count odd decimal digits by position in an integer interval."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Count odd decimal digits by position in an integer interval.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "The integers $1,2,\\dots,2016$ are each written in base 10 exactly once. How many of all the digits appearing across the whole list are odd?",
+          "statement_sha256": "b0e27bdaab7615a41d030ed3024fa2d62a33af868e1649f24c0e9bca293393e3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Count odd decimal digits by position in an integer interval."
+        }
+      ]
     },
     "uk1.2017.0.2": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "For positive real $x$, let $\\{x\\}$ denote the greater of $x$ and $1/x$ (with $\\{1\\}=1$). Find, with proof, all positive real $y$ such that $5y\\{8y\\}\\{25y\\} = 1$.",
-      "statement_sha256": "9e140b2430f5d73ffda64395726baeb76055a8bbdb85130ba532899f984c455e",
+      "reviewed_statement": "For each positive real number $x$, we define $\\{x\\}$ to be the greater of $x$ and $1/x$, with $\\{1\\}=1$. Find, with proof, all positive real numbers $y$ such that $$5y\\{8y\\}\\{25y\\}=1.$$",
+      "statement_sha256": "73f095f6735dbdf7bf1b2a1238c3e03e1cfecfb89ffd82373b106d1bf625cbcd",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "For positive real $x$, let $\\{x\\}$ denote the greater of $x$ and $1/x$ (with $\\{1\\}=1$). Find, with proof, all positive real $y$ such that $5y\\{8y\\}\\{25y\\} = 1$.",
+          "statement_sha256": "9e140b2430f5d73ffda64395726baeb76055a8bbdb85130ba532899f984c455e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2017.0.4": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Naomi and Tom alternately pick distinct integers from 1 to 100, Naomi first. A player loses if, after their move, the sum of all integers chosen so far cannot be written as a difference of two squares. Determine whether either player has a winning strategy, and if so, which.",
-      "statement_sha256": "6c426004710c89377f4cbadab40681fb7ba6f4f9a77f9aeefea0db441d4320ad",
+      "reviewed_statement": "Naomi and Tom play a game, with Naomi going first. They take it in turns to pick an integer from $1$ to $100$, each time selecting an integer which no-one has chosen before. A player loses the game if, after their turn, the sum of all the integers chosen since the start of the game (by both of them) cannot be written as the difference of two square numbers. Determine if one of the players has a winning strategy, and if so, which.",
+      "statement_sha256": "534718006f66a209f89472e9df36e7be7155c2be26f551facd53f8b119a29a1c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A picking game is governed by integer representability as a difference of squares."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A picking game is governed by integer representability as a difference of squares.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Naomi and Tom alternately pick distinct integers from 1 to 100, Naomi first. A player loses if, after their move, the sum of all integers chosen so far cannot be written as a difference of two squares. Determine whether either player has a winning strategy, and if so, which.",
+          "statement_sha256": "6c426004710c89377f4cbadab40681fb7ba6f4f9a77f9aeefea0db441d4320ad",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A picking game is governed by integer representability as a difference of squares."
+        }
+      ]
     },
     "uk1.2017.0.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be a triangle with angle $A$ < angle $B$ < $90^\\circ$, circumcircle $\\Gamma$. The tangents to $\\Gamma$ at $A$ and $C$ meet at $P$. Lines $AB$ and $PC$, extended, meet at $Q$. Given that the areas of triangles $ACP$, $ABC$, $BQC$ are all equal, prove that angle $BCA = 90^\\circ$.",
-      "statement_sha256": "cf6579c29cd29fa526a26784e4857c2cfe0e98eca4a7772f97c5446c0ad712ba",
+      "reviewed_statement": "Let $ABC$ be a triangle with $\\angle A<\\angle B<90^\\circ$ and let $\\Gamma$ be the circle through $A$, $B$ and $C$. The tangents to $\\Gamma$ at $A$ and $C$ meet at $P$. The line segments $AB$ and $PC$ produced meet at $Q$. It is given that $$[ACP]=[ABC]=[BQC].$$ Prove that $\\angle BCA=90^\\circ$.\nHere $[XYZ]$ denotes the area of triangle $XYZ$.",
+      "statement_sha256": "92dfd0ccd5a3d3ad9d3c0affef974f31e57d2832740d16e836b06ba5d23a27a5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be a triangle with angle $A$ < angle $B$ < $90^\\circ$, circumcircle $\\Gamma$. The tangents to $\\Gamma$ at $A$ and $C$ meet at $P$. Lines $AB$ and $PC$, extended, meet at $Q$. Given that the areas of triangles $ACP$, $ABC$, $BQC$ are all equal, prove that angle $BCA = 90^\\circ$.",
+          "statement_sha256": "cf6579c29cd29fa526a26784e4857c2cfe0e98eca4a7772f97c5446c0ad712ba",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2017.0.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Consecutive integers $m,m+1,m+2,m+3$ are divisible respectively by consecutive odd integers $n,n+2,n+4,n+6$. Determine the smallest possible $m$ in terms of $n$.",
-      "statement_sha256": "a4985f34d39cb2a318c8445a1047ae34fcbcaccaec0731ec22af0b3be7ea31aa",
+      "reviewed_statement": "Consecutive positive integers $m$, $m+1$, $m+2$ and $m+3$ are divisible by consecutive odd positive integers $n$, $n+2$, $n+4$ and $n+6$ respectively. Determine the smallest possible $m$ in terms of $n$.",
+      "statement_sha256": "a8ebbc59bbf85295757046f6bfe4a7cd2edc27b5495c0ed652dc29fdd103fd8d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Consecutive integers $m,m+1,m+2,m+3$ are divisible respectively by consecutive odd integers $n,n+2,n+4,n+6$. Determine the smallest possible $m$ in terms of $n$.",
+          "statement_sha256": "a4985f34d39cb2a318c8445a1047ae34fcbcaccaec0731ec22af0b3be7ea31aa",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2018.0.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Helen divides 365 in turn by each of $1,2,\\dots,365$, listing the 365 remainders; Phil divides 366 in turn by each of $1,2,\\dots,366$, listing the 366 remainders. Whose list of remainders has the greater sum, and by how much?",
-      "statement_sha256": "c64eab712a35271801c038fb611ad1ec2221ce64598be9c15f762408ac6ff365",
+      "reviewed_statement": "Helen divides $365$ by each of $1, 2, 3, \\ldots, 365$ in turn, writing down a list of the $365$ remainders. Then Phil divides $366$ by each of $1, 2, 3, \\ldots, 366$ in turn, writing down a list of the $366$ remainders. Whose list of remainders has the greater sum and by how much?",
+      "statement_sha256": "d986eff46c3b688548fddd9b1e062b500e4b658b8301087f2ba52c99fbf0fb30",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Helen divides 365 in turn by each of $1,2,\\dots,365$, listing the 365 remainders; Phil divides 366 in turn by each of $1,2,\\dots,366$, listing the 366 remainders. Whose list of remainders has the greater sum, and by how much?",
+          "statement_sha256": "c64eab712a35271801c038fb611ad1ec2221ce64598be9c15f762408ac6ff365",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2018.0.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Over a 100-day period, each of six friends swims on exactly 75 days. Let $n$ be the number of days on which at least five of the friends swim. Find the largest and smallest possible values of $n$.",
-      "statement_sha256": "48d3b89a789833c55a76b50f98347095635c8137717ea5f7b734c7283c181a4b",
+      "reviewed_statement": "In a $100$-day period, each of six friends goes swimming on exactly $75$ days. There are $n$ days on which at least five of the friends swim. What are the largest and smallest possible values of $n$?",
+      "statement_sha256": "2fafa5acd1cc3da3d74a76c6e147d545f3ef8561cc3b400e5d6e1f1e0815ae46",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Over a 100-day period, each of six friends swims on exactly 75 days. Let $n$ be the number of days on which at least five of the friends swim. Find the largest and smallest possible values of $n$.",
+          "statement_sha256": "48d3b89a789833c55a76b50f98347095635c8137717ea5f7b734c7283c181a4b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2018.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Triangle $ABC$ has $AB=CA$ and $BC$ as its longest side. Point $N$ on $BC$ satisfies $BN=AB$, and the line through $N$ perpendicular to $AB$ meets $AB$ at $M$. Prove that line $MN$ divides both the area and the perimeter of triangle $ABC$ into two equal parts.",
-      "statement_sha256": "78ed48230283a09a87f6217116299325db56b9403a604ddd9b86881ea9af9bb6",
+      "reviewed_statement": "The triangle $ABC$ has $AB=CA$ and $BC$ is its longest side. The point $N$ is on the side $BC$ and $BN=AB$. The line perpendicular to $AB$ which passes through $N$ meets $AB$ at $M$. Prove that the line $MN$ divides both the area and the perimeter of triangle $ABC$ into equal parts.",
+      "statement_sha256": "80af097500c7ec3e0c0e023b509be993699cc7f7832bd2872f6c392ab8e793b7",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Triangle $ABC$ has $AB=CA$ and $BC$ as its longest side. Point $N$ on $BC$ satisfies $BN=AB$, and the line through $N$ perpendicular to $AB$ meets $AB$ at $M$. Prove that line $MN$ divides both the area and the perimeter of triangle $ABC$ into two equal parts.",
+          "statement_sha256": "78ed48230283a09a87f6217116299325db56b9403a604ddd9b86881ea9af9bb6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2018.0.4": {
       "topics": [
         "Algebra",
         "Combinatorics"
       ],
-      "reviewed_statement": "A sequence of positive reals $a_1,a_2,\\dots$ satisfies $a_1=1$ and $a_{n+1}+a_n = (a_{n+1}-a_n)^2$ for every $n\\ge1$. How many possible values can $a_{2017}$ take?",
-      "statement_sha256": "3ad5f32d3a8ec73e8b4385b3fdbb939c0e9f777fb3f30635a9aa7f3fe59df15d",
+      "reviewed_statement": "Consider sequences $a_1, a_2, a_3, \\ldots$ of positive real numbers with $a_1=1$ and such that $$a_{n+1}+a_n=(a_{n+1}-a_n)^2$$ for each positive integer $n$. How many possible values can $a_{2017}$ take?",
+      "statement_sha256": "2e5f1b0e4cf58d4720156e7bfb9caa8fb187b8257c50e03fd894a117ff9d3149",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A real quadratic recurrence has alternative branches whose distinct attainable endpoint values are counted."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A real quadratic recurrence has alternative branches whose distinct attainable endpoint values are counted.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A sequence of positive reals $a_1,a_2,\\dots$ satisfies $a_1=1$ and $a_{n+1}+a_n = (a_{n+1}-a_n)^2$ for every $n\\ge1$. How many possible values can $a_{2017}$ take?",
+          "statement_sha256": "3ad5f32d3a8ec73e8b4385b3fdbb939c0e9f777fb3f30635a9aa7f3fe59df15d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A real quadratic recurrence has alternative branches whose distinct attainable endpoint values are counted."
+        }
+      ]
     },
     "uk1.2018.0.5": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A 100-comb is formed from a $2\\times100$ grid by removing alternate squares from a long side, leaving 150 squares. In a $200\\times200$ grid, $k$ squares are coloured so that no 150 uncoloured squares form a 100-comb. Find the smallest possible $k$.",
-      "statement_sha256": "6c113ae9497954ccfd6ea24041cbe89ddb9e65d2127e1600fb290ae88b7039df",
+      "reviewed_statement": "If we take a $2\\times 100$ (or $100\\times 2$) grid of unit squares, and remove alternate squares from a long side, the remaining $150$ squares form a $100$-comb. Henry takes a $200\\times 200$ grid of unit squares, and chooses $k$ of these squares and colours them so that James is unable to choose $150$ uncoloured squares which form a $100$-comb. What is the smallest possible value of $k$?",
+      "statement_sha256": "1f399e3f4e7aa80ab2d93cd93ccace51fdb61ce8995876a7fb941c8d6059df99",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A 100-comb is formed from a $2\\times100$ grid by removing alternate squares from a long side, leaving 150 squares. In a $200\\times200$ grid, $k$ squares are coloured so that no 150 uncoloured squares form a 100-comb. Find the smallest possible $k$.",
+          "statement_sha256": "6c113ae9497954ccfd6ea24041cbe89ddb9e65d2127e1600fb290ae88b7039df",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2018.0.6": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Matthew has 300 cards numbered 1 to 300. He places cards one at a time in a row (each new card at the right end) so that at every stage the mean of the numbers in the row is an integer, stopping when no remaining card allows this. What is the smallest possible number of cards in the row when he stops? Give an example.",
-      "statement_sha256": "a0fbac4a0af2c1e6702691b55be0082bb4c0ee96ce2b1e3a114ca02022a36ce8",
+      "reviewed_statement": "Matthew has a deck of $300$ cards numbered $1$ to $300$. He takes cards out of the deck one at a time, and places the selected cards in a row, with each new card added at the right end of the row. Matthew must arrange that, at all times, the mean of the numbers on the cards in the row is an integer. If, at some point, there is no card remaining in the deck which allows Matthew to continue, then he stops. When Matthew has stopped, what is the smallest possible number of cards that he could have placed in the row? Give an example of such a row.",
+      "statement_sha256": "14187a2aae84b1603d4acc5fc73f799ae899ee8e57968ded55273946b566e1fc",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "A stopping arrangement must keep every partial mean integral."
+      "reviewed_at": "2026-10-08",
+      "rationale": "A stopping arrangement must keep every partial mean integral.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Matthew has 300 cards numbered 1 to 300. He places cards one at a time in a row (each new card at the right end) so that at every stage the mean of the numbers in the row is an integer, stopping when no remaining card allows this. What is the smallest possible number of cards in the row when he stops? Give an example.",
+          "statement_sha256": "a0fbac4a0af2c1e6702691b55be0082bb4c0ee96ce2b1e3a114ca02022a36ce8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "A stopping arrangement must keep every partial mean integral."
+        }
+      ]
     },
     "uk1.2019.0.1": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Five two-digit positive integers are written in increasing order on a blackboard, each a multiple of 3, using each of the digits $0$-$9$ exactly once across all five numbers (no leading zero). In how many ways can this be done?",
-      "statement_sha256": "be28248dee17051d822db0441071cb5ce78da4f5bbe2ee9a7b77495865af7e61",
+      "reviewed_statement": "A list of five two-digit positive integers is written in increasing order on a blackboard. Each of the five integers is a multiple of $3$, and each digit $0,1,2,3,4,5,6,7,8,9$ appears exactly once on the blackboard. In how many ways can this be done? Note that a two-digit number cannot begin with the digit $0$.",
+      "statement_sha256": "4f255755e92c0d527ade611345daeb6cbbbc4e0dc1a0c60faf57b229798fb747",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Count distinct digit assignments subject to divisibility by three."
+      "reviewed_at": "2026-10-08",
+      "rationale": "Count distinct digit assignments subject to divisibility by three.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Five two-digit positive integers are written in increasing order on a blackboard, each a multiple of 3, using each of the digits $0$-$9$ exactly once across all five numbers (no leading zero). In how many ways can this be done?",
+          "statement_sha256": "be28248dee17051d822db0441071cb5ce78da4f5bbe2ee9a7b77495865af7e61",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Count distinct digit assignments subject to divisibility by three."
+        }
+      ]
     },
     "uk1.2019.0.2": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "For $n\\ge3$, an $n$-ring is a circular arrangement of $n$ positive integers (not necessarily distinct) such that the product of every three consecutive integers equals $n$. How many integers $n$ with $3\\le n\\le 2018$ admit an $n$-ring?",
-      "statement_sha256": "3fa35fceba395281486d9feaf82dbc2d7b62602b1d28cf0bf1e33550f393ea9f",
+      "reviewed_statement": "For each positive integer $n\\geq 3$, we define an $n$-ring to be a circular arrangement of $n$ (not necessarily different) positive integers such that the product of every three neighbouring integers is $n$. Determine the number of integers $n$ in the range $3\\leq n\\leq 2018$ for which it is possible to form an $n$-ring.",
+      "statement_sha256": "d2911e9c06c604aaeedf2bbaebd88dd65d41200412b08c846cf4951d777aeb80",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The circle supplies cyclic order. Consecutive integer triple products impose arithmetic constraints, without lengths or angles."
+      "reviewed_at": "2026-10-08",
+      "rationale": "The circle supplies cyclic order. Consecutive integer triple products impose arithmetic constraints, without lengths or angles.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "For $n\\ge3$, an $n$-ring is a circular arrangement of $n$ positive integers (not necessarily distinct) such that the product of every three consecutive integers equals $n$. How many integers $n$ with $3\\le n\\le 2018$ admit an $n$-ring?",
+          "statement_sha256": "3fa35fceba395281486d9feaf82dbc2d7b62602b1d28cf0bf1e33550f393ea9f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The circle supplies cyclic order. Consecutive integer triple products impose arithmetic constraints, without lengths or angles."
+        }
+      ]
     },
     "uk1.2019.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $\\Gamma$ be a semicircle with diameter $AB$, $C$ a point on $AB$, and $D,E$ points on arc $BA$ with $E$ between $B$ and $D$. Tangents to $\\Gamma$ at $D$ and $E$ meet at $F$. Given angle $ACD$ = angle $ECB$, prove that angle $EFD$ = angle $ACD$ + angle $ECB$.",
-      "statement_sha256": "b26a384bdedc097d382cbf96c66bf369587c14c3561e496a281119dd0a95c679",
+      "reviewed_statement": "Let $\\Gamma$ be a semicircle with diameter $AB$. The point $C$ lies on the diameter $AB$ and points $E$ and $D$ lie on the arc $BA$, with $E$ between $B$ and $D$. Let the tangents to $\\Gamma$ at $D$ and $E$ meet at $F$. Suppose that $\\angle ACD=\\angle ECB$. Prove that $\\angle EFD=\\angle ACD+\\angle ECB$.",
+      "statement_sha256": "ae25e7156f1ad440064adfa75e6b10ff288975d8b04574e623ff3aa81d12ce51",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $\\Gamma$ be a semicircle with diameter $AB$, $C$ a point on $AB$, and $D,E$ points on arc $BA$ with $E$ between $B$ and $D$. Tangents to $\\Gamma$ at $D$ and $E$ meet at $F$. Given angle $ACD$ = angle $ECB$, prove that angle $EFD$ = angle $ACD$ + angle $ECB$.",
+          "statement_sha256": "b26a384bdedc097d382cbf96c66bf369587c14c3561e496a281119dd0a95c679",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk1.2020.0.1": {
       "topics": [
@@ -8192,10 +9220,21 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $AB > AC$ and $\\angle BAC = 60^\\circ$. Denote the circumcentre by $O$ and the orthocentre by $H$ and let $OH$ meet $AB$ at $P$ and $AC$ at $Q$. Prove that $PO = HQ$.",
-      "statement_sha256": "5a88fb1b16c3d5882ac5f95b9e1d086378e499ffd0e124631e5f1184d31881de",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $AB > AC$ and $\\angle BAC = 60^\\circ$. Denote the circumcentre by $O$ and the orthocentre by $H$ and let $OH$ meet $AB$ at $P$ and $AC$ at $Q$. Prove that $PO = HQ$.\nNote: The circumcentre of triangle $ABC$ is the centre of the circle which passes through the vertices $A$, $B$ and $C$. The orthocentre is the point of intersection of the perpendiculars from each vertex to the opposite side.",
+      "statement_sha256": "f30cc361357fc3342e8557400981e1b3f9ddfb45192c1dbdc434b0c6e030d1b6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $AB > AC$ and $\\angle BAC = 60^\\circ$. Denote the circumcentre by $O$ and the orthocentre by $H$ and let $OH$ meet $AB$ at $P$ and $AC$ at $Q$. Prove that $PO = HQ$.",
+          "statement_sha256": "5a88fb1b16c3d5882ac5f95b9e1d086378e499ffd0e124631e5f1184d31881de",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk2.2007.0.4": {
       "topics": [
@@ -8259,10 +9298,21 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $\\angle B = \\angle C$. Let the circumcentre be $O$ and the orthocentre be $H$. Prove that the centre of the circle $BOH$ lies on the line $AB$.",
-      "statement_sha256": "8a09e43507770c31650e5ce36da5b2bdfaab77520116c4f95eb23397ad2bac5d",
+      "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $\\angle B = \\angle C$. Let the circumcentre be $O$ and the orthocentre be $H$. Prove that the centre of the circle $BOH$ lies on the line $AB$.\nThe circumcentre of a triangle is the centre of its circumcircle. The orthocentre of a triangle is the point where its three altitudes meet.",
+      "statement_sha256": "fe244e0a6b77aacfb1b88589bb1f9cba28bc0fc0da6eb1b2ef9349f3739700be",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $ABC$ be an acute-angled triangle with $\\angle B = \\angle C$. Let the circumcentre be $O$ and the orthocentre be $H$. Prove that the centre of the circle $BOH$ lies on the line $AB$.",
+          "statement_sha256": "8a09e43507770c31650e5ce36da5b2bdfaab77520116c4f95eb23397ad2bac5d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk2.2009.0.3": {
       "topics": [
@@ -8297,10 +9347,21 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In triangle $ABC$ the centroid is $G$ and $D$ is the midpoint of $CA$. The line through $G$ parallel to $BC$ meets $AB$ at $E$. Prove that $\\angle AEC = \\angle DGC$ if, and only if, $\\angle ACB = 90^\\circ$.",
-      "statement_sha256": "9e338075dd092cb452b2108f8cfdfcfbc7dd3db37327a02bc23e1762d5eb06d8",
+      "reviewed_statement": "In triangle $ABC$ the centroid is $G$ and $D$ is the midpoint of $CA$. The line through $G$ parallel to $BC$ meets $AB$ at $E$. Prove that $\\angle AEC = \\angle DGC$ if, and only if, $\\angle ACB = 90^\\circ$.\nThe centroid of a triangle is the intersection of the three medians, the lines which join each vertex to the midpoint of the opposite side.",
+      "statement_sha256": "53b8470a3d6f71d4c2d4cf1d3eb48891e3a3400de687df7d0683f1f7c2177f37",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In triangle $ABC$ the centroid is $G$ and $D$ is the midpoint of $CA$. The line through $G$ parallel to $BC$ meets $AB$ at $E$. Prove that $\\angle AEC = \\angle DGC$ if, and only if, $\\angle ACB = 90^\\circ$.",
+          "statement_sha256": "9e338075dd092cb452b2108f8cfdfcfbc7dd3db37327a02bc23e1762d5eb06d8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk2.2010.0.3": {
       "topics": [
@@ -8373,10 +9434,21 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "A function $f$ is defined on the positive integers by $f(1) = 1$ and, for $n > 1$, $$f(n) = f\\left(\\left\\lfloor \\frac{2n-1}{3} \\right\\rfloor\\right) + f\\left(\\left\\lfloor \\frac{2n}{3} \\right\\rfloor\\right),$$ where $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$. Is it true that $f(n) - f(n-1) \\le n$ for all $n > 1$?",
-      "statement_sha256": "44df5f256c30357e888940eced3e7755493c01c9d8bb4a04284f21305aa6b278",
+      "reviewed_statement": "A function $f$ is defined on the positive integers by $f(1) = 1$ and, for $n > 1$, $$f(n) = f\\left(\\left\\lfloor \\frac{2n-1}{3} \\right\\rfloor\\right) + f\\left(\\left\\lfloor \\frac{2n}{3} \\right\\rfloor\\right),$$ where $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$. Is it true that $f(n) - f(n-1) \\le n$ for all $n > 1$?\n[Here are some examples of the use of $\\lfloor x\\rfloor$: $\\lfloor\\pi\\rfloor=3$, $\\lfloor 1729\\rfloor=1729$ and $\\lfloor\\frac{2012}{1000}\\rfloor=2$.]",
+      "statement_sha256": "cfe311d100b231ea0a8edf44aef9ddf686c322d04141375d87814fe54f8eb15a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-08",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "A function $f$ is defined on the positive integers by $f(1) = 1$ and, for $n > 1$, $$f(n) = f\\left(\\left\\lfloor \\frac{2n-1}{3} \\right\\rfloor\\right) + f\\left(\\left\\lfloor \\frac{2n}{3} \\right\\rfloor\\right),$$ where $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$. Is it true that $f(n) - f(n-1) \\le n$ for all $n > 1$?",
+          "statement_sha256": "44df5f256c30357e888940eced3e7755493c01c9d8bb4a04284f21305aa6b278",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ]
     },
     "uk2.2012.0.3": {
       "topics": [
@@ -8566,11 +9638,24 @@
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $\\lfloor x \\rfloor$ denote the greatest integer less than or equal to the real number $x$. Consider the sequence $a_1, a_2, \\dots$ defined by $$a_n = \\frac{1}{n}\\left(\\left\\lfloor \\frac{n}{1} \\right\\rfloor + \\left\\lfloor \\frac{n}{2} \\right\\rfloor + \\cdots + \\left\\lfloor \\frac{n}{n} \\right\\rfloor\\right)$$ for integers $n \\ge 1$. Prove that $a_{n+1} > a_n$ for infinitely many $n$, and determine whether $a_{n+1} < a_n$ for infinitely many $n$.",
-      "statement_sha256": "28203a1750eea7a2bbf152fb1b360444dff7a0caa29c4457559bb827d8b8f906",
+      "reviewed_statement": "Let $\\lfloor x \\rfloor$ denote the greatest integer less than or equal to the real number $x$. Consider the sequence $a_1, a_2, \\dots$ defined by $$a_n = \\frac{1}{n}\\left(\\left\\lfloor \\frac{n}{1} \\right\\rfloor + \\left\\lfloor \\frac{n}{2} \\right\\rfloor + \\cdots + \\left\\lfloor \\frac{n}{n} \\right\\rfloor\\right)$$ for integers $n \\ge 1$. Prove that $a_{n+1} > a_n$ for infinitely many $n$, and determine whether $a_{n+1} < a_n$ for infinitely many $n$.\n[Here are some examples of the use of $\\lfloor x\\rfloor$: $\\lfloor\\pi\\rfloor=3$, $\\lfloor 1729\\rfloor=1729$ and $\\lfloor\\frac{2017}{1000}\\rfloor=2$.]",
+      "statement_sha256": "8e6e96d5d1bb28de0dfd98fb4adc6fa11e4cc952a6abf25e42c20f62d6595cc5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The floor sum is the summatory divisor-count function; its arithmetic jumps and the algebraic normalisation by n govern increases and decreases."
+      "reviewed_at": "2026-10-08",
+      "rationale": "The floor sum is the summatory divisor-count function; its arithmetic jumps and the algebraic normalisation by n govern increases and decreases.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $\\lfloor x \\rfloor$ denote the greatest integer less than or equal to the real number $x$. Consider the sequence $a_1, a_2, \\dots$ defined by $$a_n = \\frac{1}{n}\\left(\\left\\lfloor \\frac{n}{1} \\right\\rfloor + \\left\\lfloor \\frac{n}{2} \\right\\rfloor + \\cdots + \\left\\lfloor \\frac{n}{n} \\right\\rfloor\\right)$$ for integers $n \\ge 1$. Prove that $a_{n+1} > a_n$ for infinitely many $n$, and determine whether $a_{n+1} < a_n$ for infinitely many $n$.",
+          "statement_sha256": "28203a1750eea7a2bbf152fb1b360444dff7a0caa29c4457559bb827d8b8f906",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The floor sum is the summatory divisor-count function; its arithmetic jumps and the algebraic normalisation by n govern increases and decreases."
+        }
+      ]
     },
     "uk2.2017.0.3": {
       "topics": [
