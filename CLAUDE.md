@@ -84,6 +84,7 @@ Site features: continent grid (lazy loading via the manifest since 7 Oct 2026; t
 Helper scripts on the owner's PC in `C:\Users\sokko\Documents\nob-work\tools\`: `pdf.py`, `validate.py`, `add_row.py` (predates the collections.json/DATA_VERSION steps — do those by hand), `localtest.ps1`, `figcrop.py`.
 
 ## Next tasks
+Full current list (8 Oct 2026): `docs/pending-tasks.md` — start there.
 1. **Open source gaps** (details: `docs/source-gap-audit-2026-10-03.md`): Chile figures (1989 P3, 1991 P6–7, 1995 two figures, 2025 P3), Chile 1991 only P3 stored, Chile 1998/2004/2005/2017 and 1999 P2 missing; Argentina missing 1994/1, 1996/1, 2007/4, 2008/1, 2010/5; Italy PreIMO 2009, 2020, 2021, 2023–26; Belgium 2009–21 (archive behind login); Uruguay after 2017; Thailand TST after 2021.
 2. Older leftovers: Australia AMO after 2020, Croatia national before 2015, Serbia SMO 2025 and TST 2007–2011, 2014–2015, 2020, 2025 (no originals found on dms.rs or imomath.com/srb/zadaci).
 3. **AoPS National catalogue audit** (owner-supplied, 4 Oct 2026): `docs/aops-national-catalogue-audit-2026-10-04.md`. Its top section lists, per existing row, the years AoPS has that the bank lacks, plus candidate new countries (Greece National, Iran, Israel, Taiwan, Belarus, South Africa, …). Check it before searching for any competition; keep its status block up to date when you add years.
