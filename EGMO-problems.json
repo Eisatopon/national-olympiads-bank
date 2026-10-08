@@ -102,7 +102,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Determine all positive integers $n\\geq 2$ for which there exist integers $x_1, x_2, \\ldots, x_{n-1}$ satisfying the condition that if $0<i<n$, $0<j<n$, $i\\neq j$ and $n$ divides $2i+j$, then $x_i<x_j$."
+          "problem": "Determine all integers $n\\geq 2$ for which there exist integers $x_1, x_2, \\ldots, x_{n-1}$ satisfying the condition that if $0<i<n$, $0<j<n$, $i\\neq j$ and $n$ divides $2i+j$, then $x_i<x_j$."
         },
         {
           "day": 2,
@@ -407,7 +407,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "We are given an acute triangle $ABC$. Let $D$ be the point on its circumcircle such that $AD$ is a diameter. Suppose that points $K$ and $L$ lie on segments $AB$ and $AC$, respectively, and that $DK$ and $DL$ are tangent to circle $AKL$.\nShow that line $KL$ passes through the orthocentre of triangle $ABC$."
+          "problem": "We are given an acute triangle $ABC$. Let $D$ be the point on its circumcircle such that $AD$ is a diameter. Suppose that points $K$ and $L$ lie on segments $AB$ and $AC$, respectively, and that $DK$ and $DL$ are tangent to circle $AKL$.\nShow that line $KL$ passes through the orthocentre of triangle $ABC$.\nThe orthocentre of a triangle is the point of intersection of its altitudes."
         },
         {
           "day": 1,
@@ -417,7 +417,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Turbo the snail sits on a point on a circle with circumference $1$. Given an infinite sequence of positive real numbers $c_1, c_2, c_3, \\ldots$, Turbo successively crawls distances $c_1, c_2, c_3, \\ldots$ around the circle, each time choosing to crawl either clockwise or counterclockwise.\nDetermine the largest constant $C>0$ with the following property: for every sequence of positive real numbers $c_1, c_2, c_3, \\ldots$ with $c_i<C$ for all $i$, Turbo can (after studying the sequence) ensure that there is some point on the circle that it will never visit or crawl across."
+          "problem": "Turbo the snail sits on a point on a circle with circumference $1$. Given an infinite sequence of positive real numbers $c_1, c_2, c_3, \\ldots$, Turbo successively crawls distances $c_1, c_2, c_3, \\ldots$ around the circle, each time choosing to crawl either clockwise or counterclockwise.\nFor example, if the sequence $c_1,c_2,c_3,\\ldots$ is $0.4,0.6,0.3,\\ldots$, then Turbo may start crawling as shown in the figure below.\nDetermine the largest constant $C>0$ with the following property: for every sequence of positive real numbers $c_1, c_2, c_3, \\ldots$ with $c_i<C$ for all $i$, Turbo can (after studying the sequence) ensure that there is some point on the circle that it will never visit or crawl across.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/egmo_2023_p4_fig.png"
         },
         {
           "day": 2,
@@ -427,7 +427,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $ABC$ be a triangle with circumcircle $\\Omega$. Let $S_b$ and $S_c$ respectively denote the midpoints of the arcs $AC$ and $AB$ that do not contain the third vertex. Let $N_a$ denote the midpoint of arc $BAC$ (the arc $BC$ including $A$). Let $I$ be the incentre of $ABC$. Let $\\omega_b$ be the circle that is tangent to $AB$ and internally tangent to $\\Omega$ at $S_b$, and let $\\omega_c$ be the circle that is tangent to $AC$ and internally tangent to $\\Omega$ at $S_c$. Show that the line $IN_a$, and the line through the intersections of $\\omega_b$ and $\\omega_c$, meet on $\\Omega$."
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\Omega$. Let $S_b$ and $S_c$ respectively denote the midpoints of the arcs $AC$ and $AB$ that do not contain the third vertex. Let $N_a$ denote the midpoint of arc $BAC$ (the arc $BC$ including $A$). Let $I$ be the incentre of $ABC$. Let $\\omega_b$ be the circle that is tangent to $AB$ and internally tangent to $\\Omega$ at $S_b$, and let $\\omega_c$ be the circle that is tangent to $AC$ and internally tangent to $\\Omega$ at $S_c$. Show that the line $IN_a$, and the line through the intersections of $\\omega_b$ and $\\omega_c$, meet on $\\Omega$.\nThe incentre of a triangle is the centre of its incircle, the circle inside the triangle that is tangent to all three sides."
         }
       ]
     },
@@ -447,7 +447,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "We call a positive integer $n$ peculiar if, for any positive divisor $d$ of $n$, the integer $d(d+1)$ divides $n(n+1)$. Prove that for any four different peculiar positive integers $A$, $B$, $C$ and $D$, the following holds: $$\\gcd(A,B,C,D)=1.$$"
+          "problem": "We call a positive integer $n$ peculiar if, for any positive divisor $d$ of $n$, the integer $d(d+1)$ divides $n(n+1)$. Prove that for any four different peculiar positive integers $A$, $B$, $C$ and $D$, the following holds: $$\\gcd(A,B,C,D)=1.$$\nHere $\\gcd(A,B,C,D)$ is the largest positive integer that divides all of $A$, $B$, $C$ and $D$."
         },
         {
           "day": 2,
@@ -457,7 +457,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $\\mathbb{N}$ denote the set of positive integers. Find all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that the following conditions are true for every pair of positive integers $(x,y)$:\n(i) $x$ and $f(x)$ have the same number of positive divisors.\n(ii) If $x\\nmid y$ and $y\\nmid x$, then $$\\gcd\\big(f(x),f(y)\\big)>f\\big(\\gcd(x,y)\\big).$$"
+          "problem": "Let $\\mathbb{N}$ denote the set of positive integers. Find all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that the following conditions are true for every pair of positive integers $(x,y)$:\n(i) $x$ and $f(x)$ have the same number of positive divisors.\n(ii) If $x$ does not divide $y$ and $y$ does not divide $x$, then $$\\gcd\\big(f(x),f(y)\\big)>f\\big(\\gcd(x,y)\\big).$$\nHere $\\gcd(m,n)$ is the largest positive integer that divides both $m$ and $n$."
         },
         {
           "day": 2,
@@ -482,7 +482,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $ABC$ be an acute triangle. Points $B$, $D$, $E$ and $C$ lie on a line in this order and satisfy $BD=DE=EC$. Let $M$ and $N$ be the midpoints of $AD$ and $AE$, respectively. Suppose triangle $ADE$ is acute, and let $H$ be its orthocentre. Points $P$ and $Q$ lie on lines $BM$ and $CN$, respectively, such that $D$, $H$, $M$ and $P$ are concyclic and pairwise different, and $E$, $H$, $N$ and $Q$ are concyclic and pairwise different. Prove that $P$, $Q$, $N$ and $M$ are concyclic."
+          "problem": "Let $ABC$ be an acute triangle. Points $B$, $D$, $E$ and $C$ lie on a line in this order and satisfy $BD=DE=EC$. Let $M$ and $N$ be the midpoints of $AD$ and $AE$, respectively. Suppose triangle $ADE$ is acute, and let $H$ be its orthocentre. Points $P$ and $Q$ lie on lines $BM$ and $CN$, respectively, such that $D$, $H$, $M$ and $P$ are concyclic and pairwise different, and $E$, $H$, $N$ and $Q$ are concyclic and pairwise different. Prove that $P$, $Q$, $N$ and $M$ are concyclic.\nThe orthocentre of a triangle is the point of intersection of its altitudes."
         },
         {
           "day": 2,
