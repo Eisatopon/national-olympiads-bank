@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 19425 stored records; 4975 source-checked; 14450 remaining (including quarantine).
+Inventory: 19491 stored records; 5041 source-checked; 14450 remaining (including quarantine).
 
-Active bank: 19425 records; 4975 source-checked; 14450 remaining. Whole-bank source verification is **not complete**.
+Active bank: 19491 records; 5041 source-checked; 14450 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -28,12 +28,12 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Bulgaria-nmo-problems.json | 340 | 3 | 337 | pending |
 | Bulgaria-tst-problems.json | 50 | 0 | 50 | pending |
 | Canada-cmo-problems.json | 323 | 323 | 0 | stored_statements_checked |
-| Centroamerican-omcc-problems.json | 143 | 143 | 0 | stored_statements_checked |
+| Centroamerican-omcc-problems.json | 168 | 168 | 0 | stored_statements_checked |
 | Chile-final-problems.json | 183 | 176 | 7 | pending |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
 | China-olympiad-problems.json | 246 | 240 | 6 | pending |
 | China-tst-problems.json | 488 | 0 | 488 | pending |
-| Cono-sur-problems.json | 204 | 204 | 0 | stored_statements_checked |
+| Cono-sur-problems.json | 222 | 222 | 0 | stored_statements_checked |
 | CostaRica-final-problems.json | 30 | 0 | 30 | pending |
 | Croatia-drz-problems.json | 96 | 0 | 96 | pending |
 | Croatia-hmo-problems.json | 204 | 0 | 204 | pending |
@@ -55,7 +55,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Hungary-kurschak-problems.json | 228 | 0 | 228 | pending |
 | Hungary-oktv-problems.json | 63 | 0 | 63 | pending |
 | IMO-problems.json | 404 | 404 | 0 | stored_statements_checked |
-| Iberoamerican-oim-problems.json | 223 | 223 | 0 | stored_statements_checked |
+| Iberoamerican-oim-problems.json | 246 | 246 | 0 | stored_statements_checked |
 | Iceland-final-problems.json | 90 | 0 | 90 | pending |
 | India-inmo-problems.json | 262 | 0 | 262 | pending |
 | India-tst-problems.json | 198 | 0 | 198 | pending |

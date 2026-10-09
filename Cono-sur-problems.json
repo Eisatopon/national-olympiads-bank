@@ -2,7 +2,7 @@
   "competition": "Cono Sur Mathematical Olympiad",
   "years": [
     {
-      "year": 1988,
+      "year": 1989,
       "problems": [
         {
           "number": 1,
@@ -27,6 +27,35 @@
         {
           "number": 6,
           "problem": "Prove that by reducing the dimensions of a brick one cannot obtain another one that has, at the same time, half the volume and half the surface area of the first."
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A,B,C$ be three noncollinear points, and let $E\\ne B$ be a point not on the line $AC$. Construct the parallelograms $ABCD$ and $AECF$, with the vertices in the stated order. Prove that $BE$ is parallel to $DF$."
+        },
+        {
+          "number": 2,
+          "problem": "Two people $A$ and $B$ play the following game. $A$ starts by choosing a natural number. Subsequently, each player in turn says a number according to this rule: if the last number said is odd, add $7$ to it; if it is even, divide it by $2$. The player who repeats the initially chosen number wins. Find all numbers that $A$ can choose to win, and justify your answer."
+        },
+        {
+          "number": 3,
+          "problem": "The following system has finitely many real solutions. Prove that it has an even number of solutions: $$(y^2+6)(x-1)=y(x^2+1),\\qquad (x^2+6)(y-1)=x(y^2+1).$$"
+        },
+        {
+          "number": 4,
+          "problem": "A game has nine buttons, each green or red, arranged as shown in the figure. Pressing a button on the boundary of the square changes its colour and the colours of all its neighbours. Pressing the central button changes the colours of its eight neighbours but does not change its own colour. In the examples below, the red circles indicate the lights whose colours change when the labelled button is pressed. Is it possible, by successively pressing buttons, to turn all the lights green if initially they are all red? Justify your answer.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cono_1991_p4_fig.png"
+        },
+        {
+          "number": 5,
+          "problem": "Given a square $ABCD$ of side length $1$ and an inner square of side length $x$, find, as a function of $x$, the radius of the circle tangent to two sides of $ABCD$ and passing through a vertex of the inner square, as shown in the figure.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cono_1991_p5_fig.png"
+        },
+        {
+          "number": 6,
+          "problem": "For each positive integer $n$, let $f(n)$ be the arithmetic mean of all its positive divisors. For example, $f(3)=(1+3)/2=2$ and $f(12)=(1+2+3+4+6+12)/6=14/3$. (a) Prove that $$\\sqrt n\\le f(n)\\le\\frac{n+1}{2}.$$ (b) Find all positive integers $n$ for which $f(n)=91/9$."
         }
       ]
     },
@@ -532,6 +561,41 @@
       ]
     },
     {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all pairs of integers $(x,y)$ satisfying $$x^3y+x+y=xy+2xy^2.$$",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "Consider $100$ positive integers whose sum equals their product. Determine the smallest possible number of occurrences of $1$ among these integers.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with altitudes $AD$, $BE$ and $CF$, where $D\\in BC$, $E\\in AC$ and $F\\in AB$. Let $M$ be the midpoint of $BC$. The circumcircle of triangle $AEF$ meets the line $AM$ at $A$ and $X$. The lines $AM$ and $CF$ meet at $Y$, and the lines $AD$ and $BX$ meet at $Z$. Prove that $YZ$ is parallel to $BC$.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "Some squares of a $2007\\times2007$ board are coloured. Call the board charrua if no row and no column is entirely coloured. (a) What is the greatest possible number $k$ of coloured squares on a charrua board? (b) For this value of $k$, determine the number of distinct charrua boards.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABCDE$ be a convex pentagon with a circle $\\Gamma$ tangent to each side. All its side lengths are integers, at least one side has length $1$, and $AB=2$. Let $P$ be the point of tangency of $\\Gamma$ with $AB$. (a) Determine the lengths $AP$ and $BP$. (b) Give an example of a pentagon satisfying these conditions.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Prove that for every positive integer $n$ there is a positive integer $k$ such that the decimal representation of each of $k,2k,\\ldots,nk$ contains all ten digits $0,1,2,3,4,5,6,7,8,9$.",
+          "day": 2
+        }
+      ]
+    },
+    {
       "year": 2008,
       "problems": [
         {
@@ -592,7 +656,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Given a sequence $S$ of $1001$ positive real numbers, not necessarily distinct, and given a set $A$ of distinct positive integers, the allowed operation is: choose a $k\\in A$ ($k\\leq 1001$), select $k$ numbers of $S$, compute the mean of the $k$ numbers (arithmetic mean) and replace each of the $k$ selected numbers by this mean.\nIf $A$ is a set such that, for every $S$, it is possible to make all the numbers equal by a sequence of allowed operations, determine the smallest possible value of the largest element of $A$."
+          "problem": "Given a sequence $S$ of $1001$ positive real numbers, not necessarily distinct, and given a set $A$ of distinct positive integers, the allowed operation is: choose a $k\\in A$, select $k$ numbers of $S$, compute the mean of the $k$ numbers (arithmetic mean) and replace each of the $k$ selected numbers by this mean.\nIf $A$ is a set such that, for every $S$, it is possible to make all the numbers equal by a sequence of allowed operations, determine the smallest possible value of the largest element of $A$."
         },
         {
           "day": 2,
@@ -773,6 +837,41 @@
           "day": 2,
           "number": 6,
           "problem": "Given a family $F$ of subsets of $S=\\{1,2,\\ldots,n\\}$ ($n\\geq 2$), the allowed move is to choose two disjoint sets $A$ and $B$ of $F$ and add $A\\cup B$ to $F$ (without removing $A$ or $B$).\nInitially, $F$ consists of exactly all the subsets that contain only one element of $S$. The goal is that, by means of allowed moves, $F$ contains all the subsets of $S$ with $n-1$ elements.\nDetermine the smallest number of moves needed to reach the goal.\nRemark: $A\\cup B$ is the set formed by all the elements that belong to $A$, to $B$ or to both."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that, for every integer $n$, the number $n^3-9n+27$ is not divisible by $81$.",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "Consider $3n$ lines in the plane, where $n>1$, no two of which are parallel and no three of which are concurrent. Prove that if $2n$ of the lines are coloured red and $n$ blue, then at least two regions of the plane have entirely red boundaries. Note: The boundary of each region lies on the given lines, and none of these lines crosses the interior of the region.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\Gamma$ be a circle of radius $1$, and let $P$ lie on $\\Gamma$. Let $A_1$ and $B_1$ be two points on $\\Gamma$ such that triangle $PA_1B_1$ is acute and the distance from $P$ to the line $A_1B_1$ is $\\sqrt2$. For every integer $n\\ge1$, define $C_n$ to be the foot of the perpendicular from $P$ to the segment $A_nB_n$, and $O_n$ to be the circumcentre of triangle $PA_nB_n$. Let $A_{n+1}$ be the foot of the perpendicular from $C_n$ to the segment $PA_n$, and let $B_{n+1}$ be the intersection of the lines $PB_n$ and $O_nA_{n+1}$. Find the length $PO_{2015}$. Note: The distance from $P$ to the line $A_1B_1$ is the length $PC_1$, where $C_1$ is the foot of the perpendicular from $P$ to the segment $A_1B_1$.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABCD$ be a convex quadrilateral with $\\angle BAD=90^\\circ$ and perpendicular diagonals $AC$ and $BD$. Let $M$ be the midpoint of $CD$, and let $E$ be the intersection of $BM$ and $AC$. Let $F$ lie on the segment $AD$ such that $BM$ and $EF$ are perpendicular. If $CE=AF\\sqrt2$ and $FD=CE\\sqrt2$, prove that $ABCD$ is a square.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "Determine whether there exist positive integers $a_1,a_2,a_3,\\ldots$, not necessarily distinct, such that $a_{m+1}+a_{m+2}+\\cdots+a_n$ is not divisible by $a_1+a_2+\\cdots+a_m$ for any positive integers $m,n$ with $1\\le m<n$.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Let $S=\\{1,2,3,\\ldots,2046,2047,2048\\}$. Two subsets $A$ and $B$ of $S$ are called friends if they are disjoint, have the same number of elements, and the product of the elements of $A$ equals the product of the elements of $B$. Prove that there exist two subsets of $S$ that are friends and each contain at least $738$ elements.",
+          "day": 2
         }
       ]
     },

@@ -15,15 +15,8 @@ AoPS is unreachable from the build environment. Every statement was therefore tr
 
 A `statement_checks` record was written for all 223 statements. Each record holds the source URL, the page, the document SHA-256 and the figure hashes.
 
-## Gaps
-- **1986**: there was no OIM that year. The II OIM was held in January 1987.
-- **2005–2007**: no official text has been found online yet. OEI stops at 2004 and the OBM archive has no paper for these years. These years can be added later from AoPS once the text can be pasted in.
-- **Omitted problems** (listed in `KNOWN_GAPS` and in `missing_problem_numbers`). Every surviving text of these problems is corrupt, so they were left out instead of being guessed:
-  - 1992 P2: the inequality defining the intervals is lost ("formed by all x = 1").
-  - 1992 P4: the recurrences are missing, and the text runs into the statement of 1991 P4.
-  - 1993 P6: self-contradictory ("B is the set of all numbers that are 'cuates' of all elements of B").
-  - 1994 P6: the index condition is corrupt (`0 ≤ s , i`).
-  - 1995 P2: the exponents are ambiguous.
+## Update — 9 Oct 2026
+All 41 held editions are now present: 246 statements. Added 2005–2007 and restored all five omitted problems from clean sources. No competition in 1986. See `regional-gap-fill-2026-10-09.md` for source details and the added 2007 P4 figure.
 
 ## Source slips corrected (also noted in the scope of each check)
 - 1985 P6: the formula image reads `1/CE`. It should be `1/CF`, the cevian through C.

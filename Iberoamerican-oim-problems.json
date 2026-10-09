@@ -221,8 +221,18 @@
         },
         {
           "day": 1,
+          "number": 2,
+          "problem": "Given real numbers $0<a_1<a_2<\\cdots<a_n$, find the sum of the lengths of all pairwise disjoint intervals of real numbers on which $$f(x)=\\frac{a_1}{x+a_1}+\\frac{a_2}{x+a_2}+\\cdots+\\frac{a_n}{x+a_n}>1.$$"
+        },
+        {
+          "day": 1,
           "number": 3,
           "problem": "In an equilateral triangle $ABC$ whose side has length $2$, the circle $\\Gamma$ is inscribed.\n(a) Prove that for every point $P$ of $\\Gamma$, the sum of the squares of its distances to the vertices $A$, $B$ and $C$ is $5$.\n(b) Prove that for every point $P$ of $\\Gamma$ it is possible to construct a triangle whose sides have the lengths of the segments $AP$, $BP$ and $CP$, and that its area is $\\frac{\\sqrt3}{4}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $(a_n)$ and $(b_n)$ be sequences of integers satisfying $a_0=0$, $b_0=8$, $$a_{n+2}=2a_{n+1}-a_n+2,\\qquad b_{n+2}=2b_{n+1}-b_n\\quad(n\\ge0),$$ and such that $a_n^2+b_n^2$ is a perfect square for every $n\\ge0$. Find two possible values of the pair $(a_{1992},b_{1992})$."
         },
         {
           "day": 2,
@@ -263,6 +273,11 @@
           "day": 2,
           "number": 5,
           "problem": "Let $P$ and $Q$ be two distinct points of the plane. Denote by $m(PQ)$ the perpendicular bisector of the segment $PQ$. Let $S$ be a finite subset of the plane, with more than one element, that satisfies the following properties:\n(i) if $P$ and $Q$ are distinct points of $S$, then $m(PQ)$ meets $S$;\n(ii) if $P_1Q_1$, $P_2Q_2$ and $P_3Q_3$ are three different segments whose endpoints are points of $S$, then no point of $S$ belongs simultaneously to the three lines $m(P_1Q_1)$, $m(P_2Q_2)$ and $m(P_3Q_3)$.\nDetermine the number of points that $S$ can have."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Two nonnegative integers $a$ and $b$ are called buddies if the decimal representation of $a+b$ contains only zeros and ones. Let $A$ and $B$ be infinite sets of nonnegative integers such that $B$ is the set of all numbers that are buddies of every element of $A$, and $A$ is the set of all numbers that are buddies of every element of $B$. Prove that at least one of $A$ and $B$ contains infinitely many pairs $x,y$ with $x-y=1$."
         }
       ]
     },
@@ -293,6 +308,11 @@
           "day": 2,
           "number": 5,
           "problem": "Let $n$ and $r$ be two positive integers. We wish to construct $r$ subsets $A_1, A_2, \\ldots, A_r$ of $\\{0,1,\\ldots,n-1\\}$, each with exactly $k$ elements, such that for every integer $x$, $0\\leq x\\leq n-1$, there exist $x_1\\in A_1$, $x_2\\in A_2$, $\\ldots$, $x_r\\in A_r$ (one element in each set) with $x=x_1+x_2+\\cdots+x_r$. Find the smallest possible value of $k$ in terms of $n$ and $r$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that every positive integer $n\\le2^{1000000}$ can be obtained from $1$ using fewer than $1100000$ additions. More precisely, prove that there is a finite sequence of positive integers $x_0,x_1,\\ldots,x_k$ with $k<1100000$, $x_0=1$ and $x_k=n$, such that for each $i=1,2,\\ldots,k$ there exist $r,s$ with $0\\le r<i$, $0\\le s<i$ and $x_i=x_r+x_s$."
         }
       ]
     },
@@ -303,6 +323,11 @@
           "day": 1,
           "number": 1,
           "problem": "Determine the possible values of the sums of the digits of all perfect squares."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Given an integer $n\\ge1$, find all $n$-tuples of real numbers $x_1,x_2,\\ldots,x_n\\ge1$ such that $$\\sqrt{x_1}+\\sqrt[3]{x_2}+\\cdots+\\sqrt[n+1]{x_n}=\\sqrt n\\sqrt{x_1+x_2+\\cdots+x_n}.$$"
         },
         {
           "day": 1,
@@ -638,6 +663,111 @@
           "day": 2,
           "number": 6,
           "problem": "For a set $H$ of points in the plane, a point $P$ of the plane is called a cut point of $H$ if there exist four distinct points $A$, $B$, $C$ and $D$ in $H$ such that the lines $AB$ and $CD$ are distinct and meet at $P$.\nGiven a finite set $A_0$ of points in the plane, a sequence of sets $A_1, A_2, A_3, \\ldots$ is constructed as follows: for every $j\\geq 0$, $A_{j+1}$ is the union of $A_j$ with the set of all cut points of $A_j$. Prove that if the union of all the sets of the sequence is a finite set, then $A_j=A_1$ for every $j\\geq 1$."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all triples of real numbers $(x,y,z)$ satisfying $$xyz=8,\\qquad x^2y+y^2z+z^2x=73,\\qquad x(y-z)^2+y(z-x)^2+z(x-y)^2=98.$$",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "A flea jumps between integer points on the number line. On its first move it jumps from $0$ to $1$. Subsequently, if it jumps from $a$ to $b$ on one move, then on the next move it jumps from $b$ to one of $b+(b-a)-1$, $b+(b-a)$ and $b+(b-a)+1$. Prove that if the flea has landed twice on a positive integer $n$, then it must have made at least $t$ moves, where $t$ is the least integer greater than or equal to $2\\sqrt n$.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $p>3$ be a prime. If $$\\frac{1}{1^p}+\\frac{1}{2^p}+\\frac{1}{3^p}+\\cdots+\\frac{1}{(p-1)^p}=\\frac{n}{m},$$ where $\\gcd(n,m)=1$, prove that $p^3$ divides $n$.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "For positive integers $a$ and $b$, let $a\\mathbin{\\nabla}b$ denote the remainder when $a$ is divided by $b$, one of $0,1,\\ldots,b-1$. Find all pairs $(a,p)$ of positive integers such that $p$ is prime and $$(a\\mathbin{\\nabla}p)+(a\\mathbin{\\nabla}2p)+(a\\mathbin{\\nabla}3p)+(a\\mathbin{\\nabla}4p)=a+p.$$",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "Let $O$ be the circumcentre of an acute triangle $ABC$, and let $A_1$ be a point on the minor arc $BC$ of its circumcircle. Let $A_2$ and $A_3$ lie on the sides $AB$ and $AC$, respectively, such that $\\angle BA_1A_2=\\angle OAC$ and $\\angle CA_1A_3=\\angle OAB$. Prove that the line $A_2A_3$ passes through the orthocentre of triangle $ABC$.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Given a positive integer $n$, consider $2n$ collinear points $A_1,A_2,\\ldots,A_{2n}$ in the plane. Colour each point blue or red by the following procedure. Draw $n$ pairwise disjoint circles, each with a diameter whose endpoints are two of the given points, so that each $A_k$ belongs to exactly one circle. Colour the points so that the two points on each circle have the same colour. Determine how many distinct colourings of the $2n$ points can be obtained by varying the circles and the assignment of the two colours.",
+          "day": 2
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be a scalene triangle with $\\angle BAC=90^\\circ$. The tangent at $A$ to its circumcircle meets the line $BC$ at $M$. Let $S$ and $R$ be the points where the incircle touches $AC$ and $AB$, respectively. The line $RS$ meets the line $BC$ at $N$, and the lines $AM$ and $SR$ meet at $U$. Prove that triangle $UMN$ is isosceles.",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "Consider $n$ real numbers $a_1,a_2,\\ldots,a_n$, not necessarily distinct. Let $d$ be the difference between the largest and the smallest of them, and let $$s=\\sum_{i<j}|a_i-a_j|.$$ Prove that $$(n-1)d\\le s\\le\\frac{n^2d}{4},$$ and determine the conditions for equality in each inequality.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "The integers $1,2,\\ldots,n^2$ are placed in the squares of an $n\\times n$ board in some order, one number per square. A counter starts on the square numbered $n^2$. In each step it may move to a square sharing a side with its current square. It first moves to the square numbered $1$ along a shortest path, then to the square numbered $2$, then $3$, and so on until it returns to its starting square, always following a shortest path between successive destinations. The complete journey takes $N$ steps. Determine the smallest and largest possible values of $N$.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "Find all pairs $(a,b)$ of positive integers such that $2a+1$ and $2b-1$ are relatively prime and $a+b$ divides $4ab+1$.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABCD$ be a quadrilateral whose four sides are tangent to a circle $\\mathcal C$. The sides $AD$ and $CD$ touch $\\mathcal C$ at $P$ and $Q$, respectively. Let $X$ and $Y$ be the intersections of $BD$ with $\\mathcal C$, and let $M$ be the midpoint of $XY$. Prove that $\\angle AMP=\\angle CMQ$.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Let $n>1$ be an odd integer. Let $P_0$ and $P_1$ be consecutive vertices of a regular $n$-gon. For every $k\\ge2$, define $P_k$ to be the vertex of the polygon lying on the perpendicular bisector of the segment $P_{k-1}P_{k-2}$. Determine the values of $n$ for which the sequence $P_0,P_1,P_2,\\ldots$ visits every vertex of the polygon.",
+          "day": 2
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Given a positive integer $m$, define a sequence by $$a_1=\\frac m2,\\qquad a_{n+1}=a_n\\lceil a_n\\rceil\\quad(n\\ge1).$$ Determine all values of $m$ for which $a_{2007}$ is the first integer in the sequence. Here $\\lceil x\\rceil$ is the least integer greater than or equal to $x$; for example, $\\lceil\\pi\\rceil=4$ and $\\lceil2007\\rceil=2007$.",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with incentre $I$, and let $\\Gamma$ be a circle with centre $I$, with radius greater than the inradius, which does not pass through any vertex. Let $X_1$ be the intersection of $\\Gamma$ with the line $AB$ nearer to $B$, let $X_2$ and $X_3$ be its intersections with the line $BC$, with $X_2$ nearer to $B$, and let $X_4$ be its intersection with the line $CA$ nearer to $C$. Let $K$ be the intersection of the lines $X_1X_2$ and $X_3X_4$. Prove that $AK$ meets the segment $X_2X_3$ at its midpoint.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Two teams, $A$ and $B$, compete for the territory enclosed by a circle. Team $A$ has $n$ blue flags and team $B$ has $n$ white flags, where $n\\ge2$ is fixed. They play alternately, with $A$ starting. On each turn a team places one flag at a point of the circle not used on a previous turn; flags cannot subsequently be moved. After all $2n$ flags have been placed, the territory is divided between the teams as follows. If a point is nearer to a blue flag than to any white flag, it belongs to $A$; if it is nearer to a white flag than to any blue flag, it belongs to $B$; points equally near to flags of different colours are neutral. A team wins if the total area of its territory is greater than that of the other team. If the areas are equal, the game is a draw. Prove that for every $n$, team $B$ has a winning strategy.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "A dragon moves on a $19\\times19$ board, jumping four squares in a direction parallel to a side of the board and one square in a perpendicular direction. The figure shows four possible destinations from $D$. It is known that these jumps allow it to reach any square from any other square. The dragon distance between two squares is the least number of jumps needed to get from one to the other. Let $C$ be a corner square and let $V$ be the neighbouring square that shares only a vertex with $C$. Prove that there is a square $X$ such that the dragon distance from $C$ to $X$ is greater than that from $C$ to $V$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/oim_2007_p4_fig.png",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "A positive integer $n$ is called daring if its set of positive divisors, including $1$ and $n$, can be partitioned into three subsets whose sums are all equal. What is the smallest possible number of divisors of a daring integer?",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Let $\\mathcal F$ be the family of all convex hexagons $H$ satisfying the following conditions: (a) opposite sides of $H$ are parallel; (b) any three vertices of $H$ can be covered by a strip of width $1$. Determine the least real number $\\ell$ such that every hexagon in $\\mathcal F$ can be covered by a strip of width $\\ell$. A strip of width $\\ell$ is the region between two parallel lines at distance $\\ell$, including both boundary lines.",
+          "day": 2
         }
       ]
     },

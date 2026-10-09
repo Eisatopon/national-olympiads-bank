@@ -65361,24 +65361,49 @@
           "url": "https://www.ommenlinea.org/publicaciones/revista-tzaloa-2/revista-en-linea/",
           "label": "Revista Tzaloa (Olimpiada Mexicana de Matemáticas) — Spanish statements of OIM 2009, 2010, 2013 and 2015",
           "verification": "unverified"
+        },
+        {
+          "url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia1XXOMCC2005.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia2XXOMCC2005.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1992&comp=4",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1993&comp=4",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1994&comp=4",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1995&comp=4",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
         }
       ],
-      "coverage_notes": "OIM 1985–2026 except 2005–2007 (no official text found online yet). There was no OIM in 1986 (the II OIM was held in January 1987). Six problems per year, day 1 = P1–P3, day 2 = P4–P6. Faithful English translations made on 2026-10-08 from official-language texts: 1985–1997 from the Olimpíada Matemática Argentina pages (cross-checked with the archived OEI pages; formula images and symbol-font glyphs read from the page images), 1998–2003, 2008, 2011, 2012, 2014, 2016–2026 from the Portuguese papers published by the OBM (2026 is a scanned paper, read from the page images), 2004 from the official OEI papers, and 2009, 2010, 2013, 2015 from the revista Tzaloa of the OMM. Omitted because the surviving texts are corrupt or self-contradictory: 1992 P2, P4, 1993 P6, 1994 P6, 1995 P2 (recorded in KNOWN_GAPS). Figures: 1992 P6 and 1996 P5 from the OMA pages, 2009 P1 from Tzaloa, 2025 P2 from the OBM paper. Obvious source slips corrected and documented in docs/iberoamerican-oim-2026-10-08.md.",
-      "missing_problem_numbers": {
-        "1992": [
-          2,
-          4
-        ],
-        "1993": [
-          6
-        ],
-        "1994": [
-          6
-        ],
-        "1995": [
-          2
-        ]
-      },
+      "coverage_notes": "All 41 held editions, 1985 and 1987–2026, with 246 statements (six per edition). No OIM was held in 1986. On 9 Oct 2026 added 2005–2007 from UAN exam papers, OBM Eureka 25/29 and OMM Avanzado 21; restored 1992 P2/P4, 1993 P6, 1994 P6 and 1995 P2 from the Universidad de Jaen institutional Spanish archive. The university HTML source is identified explicitly in those five checks. Figure for 2007 P4 cropped from Eureka 29. See docs/regional-gap-fill-2026-10-09.md.",
       "statement_checks": {
         "oim.1985.1.1": {
           "status": "statement_checked_against_source",
@@ -68079,6 +68104,317 @@
           "source_document_sha256": "c381ac774cc949d710c7504506758401c026a84c6057b477750e0ab7eccc5ab2",
           "reviewed_statement": "Determine all integers $n>1$ for which there exist a permutation $d_1,\\ldots,d_k$ of all the positive divisors of $n$ and a polynomial $P(x)$ with integer coefficients such that $$P(d_j)=d_{j+1}\\qquad\\text{for every } 1\\leq j\\leq k-1.$$",
           "statement_sha256": "f722af90a9e00078d22165fe92a1fbc27eac4a5e332c98c29b00c42e01628efc"
+        },
+        "oim.2005.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia1XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "90384501ef37f52c641338917905ec98e7fe0ad7f6dfe472c56475cd42c43a9d",
+          "reviewed_statement": "Find all triples of real numbers $(x,y,z)$ satisfying $$xyz=8,\\qquad x^2y+y^2z+z^2x=73,\\qquad x(y-z)^2+y(z-x)^2+z(x-y)^2=98.$$",
+          "statement_sha256": "3d4ffd778946565d131c71c48173478bd1fcf3b633e5f0149c0ad24ca9ce801f",
+          "figure_checks": []
+        },
+        "oim.2005.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia1XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "90384501ef37f52c641338917905ec98e7fe0ad7f6dfe472c56475cd42c43a9d",
+          "reviewed_statement": "A flea jumps between integer points on the number line. On its first move it jumps from $0$ to $1$. Subsequently, if it jumps from $a$ to $b$ on one move, then on the next move it jumps from $b$ to one of $b+(b-a)-1$, $b+(b-a)$ and $b+(b-a)+1$. Prove that if the flea has landed twice on a positive integer $n$, then it must have made at least $t$ moves, where $t$ is the least integer greater than or equal to $2\\sqrt n$.",
+          "statement_sha256": "43c02ff01bd55810043043ff3919040d4d69713acca0b711b5a0103b86cfd359",
+          "figure_checks": []
+        },
+        "oim.2005.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia1XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "90384501ef37f52c641338917905ec98e7fe0ad7f6dfe472c56475cd42c43a9d",
+          "reviewed_statement": "Let $p>3$ be a prime. If $$\\frac{1}{1^p}+\\frac{1}{2^p}+\\frac{1}{3^p}+\\cdots+\\frac{1}{(p-1)^p}=\\frac{n}{m},$$ where $\\gcd(n,m)=1$, prove that $p^3$ divides $n$.",
+          "statement_sha256": "b1f88c4f04ee5d82fddb2f891c3d0b69ca86e67a43bb3a82b6e33926856aecb7",
+          "figure_checks": []
+        },
+        "oim.2005.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia2XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "60f2b059f9c86035ff64cf98df77cc01ad004af52cedfc098c950eede31174a8",
+          "reviewed_statement": "For positive integers $a$ and $b$, let $a\\mathbin{\\nabla}b$ denote the remainder when $a$ is divided by $b$, one of $0,1,\\ldots,b-1$. Find all pairs $(a,p)$ of positive integers such that $p$ is prime and $$(a\\mathbin{\\nabla}p)+(a\\mathbin{\\nabla}2p)+(a\\mathbin{\\nabla}3p)+(a\\mathbin{\\nabla}4p)=a+p.$$",
+          "statement_sha256": "eacae7d8f6f933637b4f0c3d6a9917a76c247da3e3499bf991a0b35a1d1a9041",
+          "figure_checks": []
+        },
+        "oim.2005.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia2XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 5,
+          "source_document_sha256": "60f2b059f9c86035ff64cf98df77cc01ad004af52cedfc098c950eede31174a8",
+          "reviewed_statement": "Let $O$ be the circumcentre of an acute triangle $ABC$, and let $A_1$ be a point on the minor arc $BC$ of its circumcircle. Let $A_2$ and $A_3$ lie on the sides $AB$ and $AC$, respectively, such that $\\angle BA_1A_2=\\angle OAC$ and $\\angle CA_1A_3=\\angle OAB$. Prove that the line $A_2A_3$ passes through the orthocentre of triangle $ABC$.",
+          "statement_sha256": "8b93620e5656a704e9c2891b580588f92bb0bc64cc91de31ba437ee6527d3b2a",
+          "figure_checks": []
+        },
+        "oim.2005.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://oc.uan.edu.co/images/Olimpiadas/XXOIM/documentos/PruebaDia2XXOMCC2005.pdf",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "60f2b059f9c86035ff64cf98df77cc01ad004af52cedfc098c950eede31174a8",
+          "reviewed_statement": "Given a positive integer $n$, consider $2n$ collinear points $A_1,A_2,\\ldots,A_{2n}$ in the plane. Colour each point blue or red by the following procedure. Draw $n$ pairwise disjoint circles, each with a diameter whose endpoints are two of the given points, so that each $A_k$ belongs to exactly one circle. Colour the points so that the two points on each circle have the same colour. Determine how many distinct colourings of the $2n$ points can be obtained by varying the circles and the assignment of the two colours.",
+          "statement_sha256": "5dac22d2836ac55f406e990268f58979f55bc9eaa4461d7d6a74b91d1c4b2e64",
+          "figure_checks": []
+        },
+        "oim.2006.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "source_page": 20,
+          "source_problem_number": 1,
+          "source_document_sha256": "cd9063f3fbb6dca38e56d73abce1a7645e6dca7933d29b9ff605d812597795ad",
+          "reviewed_statement": "Let $ABC$ be a scalene triangle with $\\angle BAC=90^\\circ$. The tangent at $A$ to its circumcircle meets the line $BC$ at $M$. Let $S$ and $R$ be the points where the incircle touches $AC$ and $AB$, respectively. The line $RS$ meets the line $BC$ at $N$, and the lines $AM$ and $SR$ meet at $U$. Prove that triangle $UMN$ is isosceles.",
+          "statement_sha256": "1fa0a0da4d9b32764bc2bfe6c258759e1f31067bded146687b6fee32e564cb93",
+          "figure_checks": []
+        },
+        "oim.2006.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification. Absolute-value bars absent in Eureka 25 are confirmed by the Spanish official OMM booklet, Avanzado 21, PDF pages 29-30.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_21.pdf",
+          "source_page": 29,
+          "source_problem_number": 2,
+          "source_document_sha256": "75e114981b430e39da4bf1ed3a861b0e1b0cb4c9d1784d3ec1711dfe51f14b82",
+          "reviewed_statement": "Consider $n$ real numbers $a_1,a_2,\\ldots,a_n$, not necessarily distinct. Let $d$ be the difference between the largest and the smallest of them, and let $$s=\\sum_{i<j}|a_i-a_j|.$$ Prove that $$(n-1)d\\le s\\le\\frac{n^2d}{4},$$ and determine the conditions for equality in each inequality.",
+          "statement_sha256": "65e11eca608e32cd32ca485376b528bd06072213faccd2a365a1711c0fe3e67f",
+          "figure_checks": [],
+          "source_pages": [
+            29,
+            30
+          ]
+        },
+        "oim.2006.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "source_page": 20,
+          "source_problem_number": 3,
+          "source_document_sha256": "cd9063f3fbb6dca38e56d73abce1a7645e6dca7933d29b9ff605d812597795ad",
+          "reviewed_statement": "The integers $1,2,\\ldots,n^2$ are placed in the squares of an $n\\times n$ board in some order, one number per square. A counter starts on the square numbered $n^2$. In each step it may move to a square sharing a side with its current square. It first moves to the square numbered $1$ along a shortest path, then to the square numbered $2$, then $3$, and so on until it returns to its starting square, always following a shortest path between successive destinations. The complete journey takes $N$ steps. Determine the smallest and largest possible values of $N$.",
+          "statement_sha256": "86684c321c867a9d0919eda7ee96e32ed779f871aef043c1861ef681e6ef2903",
+          "figure_checks": [],
+          "source_pages": [
+            20,
+            21
+          ]
+        },
+        "oim.2006.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "source_page": 21,
+          "source_problem_number": 4,
+          "source_document_sha256": "cd9063f3fbb6dca38e56d73abce1a7645e6dca7933d29b9ff605d812597795ad",
+          "reviewed_statement": "Find all pairs $(a,b)$ of positive integers such that $2a+1$ and $2b-1$ are relatively prime and $a+b$ divides $4ab+1$.",
+          "statement_sha256": "b835b9940438ff18bf45d8e4b7125c35d25296c85431e9164084c665765f765e",
+          "figure_checks": []
+        },
+        "oim.2006.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "source_page": 21,
+          "source_problem_number": 5,
+          "source_document_sha256": "cd9063f3fbb6dca38e56d73abce1a7645e6dca7933d29b9ff605d812597795ad",
+          "reviewed_statement": "Let $ABCD$ be a quadrilateral whose four sides are tangent to a circle $\\mathcal C$. The sides $AD$ and $CD$ touch $\\mathcal C$ at $P$ and $Q$, respectively. Let $X$ and $Y$ be the intersections of $BD$ with $\\mathcal C$, and let $M$ be the midpoint of $XY$. Prove that $\\angle AMP=\\angle CMQ$.",
+          "statement_sha256": "9f62d996352921a564cbd11e157488d9dd00d97ebd1c631c58bdb4a1f0ece35d",
+          "figure_checks": []
+        },
+        "oim.2006.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/Eureka_25.pdf",
+          "source_page": 21,
+          "source_problem_number": 6,
+          "source_document_sha256": "cd9063f3fbb6dca38e56d73abce1a7645e6dca7933d29b9ff605d812597795ad",
+          "reviewed_statement": "Let $n>1$ be an odd integer. Let $P_0$ and $P_1$ be consecutive vertices of a regular $n$-gon. For every $k\\ge2$, define $P_k$ to be the vertex of the polygon lying on the perpendicular bisector of the segment $P_{k-1}P_{k-2}$. Determine the values of $n$ for which the sequence $P_0,P_1,P_2,\\ldots$ visits every vertex of the polygon.",
+          "statement_sha256": "727efd9f5ea63f1f779b8f2e3fb91964b476825a364aa98480add434d921aec6",
+          "figure_checks": []
+        },
+        "oim.2007.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 9,
+          "source_problem_number": 1,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "Given a positive integer $m$, define a sequence by $$a_1=\\frac m2,\\qquad a_{n+1}=a_n\\lceil a_n\\rceil\\quad(n\\ge1).$$ Determine all values of $m$ for which $a_{2007}$ is the first integer in the sequence. Here $\\lceil x\\rceil$ is the least integer greater than or equal to $x$; for example, $\\lceil\\pi\\rceil=4$ and $\\lceil2007\\rceil=2007$.",
+          "statement_sha256": "147b5049773bd81fb2bfdb27362eaee66fa2acfa7679a26fa9fb6a38fdd291a0",
+          "figure_checks": []
+        },
+        "oim.2007.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 9,
+          "source_problem_number": 2,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "Let $ABC$ be a triangle with incentre $I$, and let $\\Gamma$ be a circle with centre $I$, with radius greater than the inradius, which does not pass through any vertex. Let $X_1$ be the intersection of $\\Gamma$ with the line $AB$ nearer to $B$, let $X_2$ and $X_3$ be its intersections with the line $BC$, with $X_2$ nearer to $B$, and let $X_4$ be its intersection with the line $CA$ nearer to $C$. Let $K$ be the intersection of the lines $X_1X_2$ and $X_3X_4$. Prove that $AK$ meets the segment $X_2X_3$ at its midpoint.",
+          "statement_sha256": "0b76efb0acad0b1d7d114298a51f99be8819a52963f105e6f01c3b0e286b5a81",
+          "figure_checks": []
+        },
+        "oim.2007.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 10,
+          "source_problem_number": 3,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "Two teams, $A$ and $B$, compete for the territory enclosed by a circle. Team $A$ has $n$ blue flags and team $B$ has $n$ white flags, where $n\\ge2$ is fixed. They play alternately, with $A$ starting. On each turn a team places one flag at a point of the circle not used on a previous turn; flags cannot subsequently be moved. After all $2n$ flags have been placed, the territory is divided between the teams as follows. If a point is nearer to a blue flag than to any white flag, it belongs to $A$; if it is nearer to a white flag than to any blue flag, it belongs to $B$; points equally near to flags of different colours are neutral. A team wins if the total area of its territory is greater than that of the other team. If the areas are equal, the game is a draw. Prove that for every $n$, team $B$ has a winning strategy.",
+          "statement_sha256": "784e6cddf42609f6babbc2312826c41ebec8cea341d67e6abcd92637830733c2",
+          "figure_checks": []
+        },
+        "oim.2007.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 10,
+          "source_problem_number": 4,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "A dragon moves on a $19\\times19$ board, jumping four squares in a direction parallel to a side of the board and one square in a perpendicular direction. The figure shows four possible destinations from $D$. It is known that these jumps allow it to reach any square from any other square. The dragon distance between two squares is the least number of jumps needed to get from one to the other. Let $C$ be a corner square and let $V$ be the neighbouring square that shares only a vertex with $C$. Prove that there is a square $X$ such that the dragon distance from $C$ to $X$ is greater than that from $C$ to $V$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/oim_2007_p4_fig.png",
+          "statement_sha256": "60b7691e7e2852ccc646cce28ae9dedf04b20c06e7d4e4deb214a3c7595cef57",
+          "figure_checks": [
+            {
+              "path": "images/oim_2007_p4_fig.png",
+              "sha256": "ef3b49aa6338ebb251b536b614f7955bf863d87cff4ba8e5a914a95d33cd9f79"
+            }
+          ],
+          "source_pages": [
+            10,
+            11
+          ]
+        },
+        "oim.2007.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 11,
+          "source_problem_number": 5,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "A positive integer $n$ is called daring if its set of positive divisors, including $1$ and $n$, can be partitioned into three subsets whose sums are all equal. What is the smallest possible number of divisors of a daring integer?",
+          "statement_sha256": "cf5b4aa6869e7762dc9d5c7f5506f9c9fcf851a8b6b2c3ed5c21b335b2fbb000",
+          "figure_checks": []
+        },
+        "oim.2007.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_29.pdf",
+          "source_page": 11,
+          "source_problem_number": 6,
+          "source_document_sha256": "d3f6a67071ea74bf35ec7593de3fae0599db46a82b38439dbf6bb160bb2f8e67",
+          "reviewed_statement": "Let $\\mathcal F$ be the family of all convex hexagons $H$ satisfying the following conditions: (a) opposite sides of $H$ are parallel; (b) any three vertices of $H$ can be covered by a strip of width $1$. Determine the least real number $\\ell$ such that every hexagon in $\\mathcal F$ can be covered by a strip of width $\\ell$. A strip of width $\\ell$ is the region between two parallel lines at distance $\\ell$, including both boundary lines.",
+          "statement_sha256": "cf1ee7e0e5365b143ec2168e3ffe497ed466a685dbc222a2638cf956a605d84a",
+          "figure_checks": []
+        },
+        "oim.1992.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared directly with the complete Spanish statement and LaTeX formulas in the Universidad de Jaen institutional preparation archive. The downloaded source is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. This restores symbols and clauses lost or corrupt in the previously used OMA text. No solution or independent human certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1992&comp=4",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "a682b63f7cf8050a90e42ed2991834b752d578db5f39b09af7f00e31ca53866c",
+          "reviewed_statement": "Given real numbers $0<a_1<a_2<\\cdots<a_n$, find the sum of the lengths of all pairwise disjoint intervals of real numbers on which $$f(x)=\\frac{a_1}{x+a_1}+\\frac{a_2}{x+a_2}+\\cdots+\\frac{a_n}{x+a_n}>1.$$",
+          "statement_sha256": "9739c0582a4ce4129e93b51d79616dfacb92d570ab9005f36dc90a0cf8214927"
+        },
+        "oim.1992.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared directly with the complete Spanish statement and LaTeX formulas in the Universidad de Jaen institutional preparation archive. The downloaded source is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. This restores symbols and clauses lost or corrupt in the previously used OMA text. No solution or independent human certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1992&comp=4",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "a682b63f7cf8050a90e42ed2991834b752d578db5f39b09af7f00e31ca53866c",
+          "reviewed_statement": "Let $(a_n)$ and $(b_n)$ be sequences of integers satisfying $a_0=0$, $b_0=8$, $$a_{n+2}=2a_{n+1}-a_n+2,\\qquad b_{n+2}=2b_{n+1}-b_n\\quad(n\\ge0),$$ and such that $a_n^2+b_n^2$ is a perfect square for every $n\\ge0$. Find two possible values of the pair $(a_{1992},b_{1992})$.",
+          "statement_sha256": "3ecad759c58eea5b8e1661a95ec6861f923a2bc96bf071f0840a6ab48abf436c"
+        },
+        "oim.1993.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared directly with the complete Spanish statement and LaTeX formulas in the Universidad de Jaen institutional preparation archive. The downloaded source is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. This restores symbols and clauses lost or corrupt in the previously used OMA text. No solution or independent human certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1993&comp=4",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "962d0ae519f89f4355eaf64b6efb80f3a646a426b4d88b67d67eedc1a52d1d65",
+          "reviewed_statement": "Two nonnegative integers $a$ and $b$ are called buddies if the decimal representation of $a+b$ contains only zeros and ones. Let $A$ and $B$ be infinite sets of nonnegative integers such that $B$ is the set of all numbers that are buddies of every element of $A$, and $A$ is the set of all numbers that are buddies of every element of $B$. Prove that at least one of $A$ and $B$ contains infinitely many pairs $x,y$ with $x-y=1$.",
+          "statement_sha256": "2aa1633458d68c1ddcadb2ac04ab2b79ac4fa0eb052859f72266ed93440d23fc"
+        },
+        "oim.1994.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared directly with the complete Spanish statement and LaTeX formulas in the Universidad de Jaen institutional preparation archive. The downloaded source is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. This restores symbols and clauses lost or corrupt in the previously used OMA text. No solution or independent human certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1994&comp=4",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "f791d49aa9fa2c00f0375ea0e067f9c0fcc90041193eec111d251128b77a17fc",
+          "reviewed_statement": "Prove that every positive integer $n\\le2^{1000000}$ can be obtained from $1$ using fewer than $1100000$ additions. More precisely, prove that there is a finite sequence of positive integers $x_0,x_1,\\ldots,x_k$ with $k<1100000$, $x_0=1$ and $x_k=n$, such that for each $i=1,2,\\ldots,k$ there exist $r,s$ with $0\\le r<i$, $0\\le s<i$ and $x_i=x_r+x_s$.",
+          "statement_sha256": "d9b19f22242e982b9b94cbec9961038db06269005e2483c174bd76db546a3eb6"
+        },
+        "oim.1995.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared directly with the complete Spanish statement and LaTeX formulas in the Universidad de Jaen institutional preparation archive. The downloaded source is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. This restores symbols and clauses lost or corrupt in the previously used OMA text. No solution or independent human certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?a=1995&comp=4",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "533356052d2cbde9d4331dc2b46fa62f932bd90d27725657f9edfe258c4a0b7b",
+          "reviewed_statement": "Given an integer $n\\ge1$, find all $n$-tuples of real numbers $x_1,x_2,\\ldots,x_n\\ge1$ such that $$\\sqrt{x_1}+\\sqrt[3]{x_2}+\\cdots+\\sqrt[n+1]{x_n}=\\sqrt n\\sqrt{x_1+x_2+\\cdots+x_n}.$$",
+          "statement_sha256": "5c4184cb8102a9c8569373ac953c983018e4a6d04462947c104c2fb957bf34ee"
         }
       }
     },
@@ -68089,84 +68425,42 @@
       "source_links": [
         {
           "url": "https://www.obm.org.br/como-se-preparar/provas-e-gabaritos/",
-          "label": "Olimpíada Brasileira de Matemática — Portuguese papers of the Olimpíada de Matemática do Cone Sul, 1988, 1992–2006, 2008–2014, 2016–2026",
+          "label": "OBM official Portuguese Cono Sur archive; first-edition 1988 header corrected to 1989 from OMA and 2026 host history",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.oma.org.ar/enunciados/con1.htm",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.oma.org.ar/enunciados/con20.htm",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
           "verification": "unverified"
         }
       ],
-      "coverage_notes": "Cono Sur 1988, 1992–2006, 2008–2014 and 2016–2026, six problems per year (day 1 = P1–P3, day 2 = P4–P6 from 1996 on; the 1988–1995 papers give one list). Faithful English translations made on 2026-10-08 from the official Portuguese papers published by the OBM; every formula was checked against the rendered page image, because the text layers of the older papers drop most mathematical symbols. Missing years: 1989 and 1990 (no paper published), 1991 (the OBM link returns 'page not found'), 2007 and 2015 (no paper on the OBM page). Ten figures cropped from the papers (1996 P1, 2003 P5, 2006 P6, 2009 P1, P2, P4, 2010 P4, 2012 P5, 2017 P3, 2025 P4). See docs/cono-sur-2026-10-08.md.",
+      "coverage_notes": "All 37 held editions, 1989 and 1991–2026, with 222 statements (six per edition). No competition in 1990, confirmed by the official 2026 history. The first edition was incorrectly filed as 1988 from the OBM paper header; moved to 1989 after comparison with the official OMA I Cono Sur page and the 2026 history (no duplicate added). Added 1991 from the working OBM PDF, 2007 from Eureka 27, and 2015 from Eureka 39. Figures for 1991 P4/P5 included. Cono 2009 P5 checked against the original Spanish OMA page: removed the unsupported editorial parenthesis k <= 1001; the original simply chooses k in A and k entries of S. See docs/regional-gap-fill-2026-10-09.md.",
       "statement_checks": {
-        "cono.1988.0.1": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 1,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "Two isosceles triangles whose sides measure $x$, $x$, $a$ and $x$, $x$, $b$, respectively, have equal area; $a\\neq b$. Find $x$.",
-          "statement_sha256": "a716fc857f8db655b1fd9eb406305757c824e12fccfb67debbb4fd4a375506cf"
-        },
-        "cono.1988.0.2": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 2,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "Find the sum $1+11+111+\\cdots+111\\ldots111$, which has $n$ terms.",
-          "statement_sha256": "35c0d83b5dc8ccae6a048b29d8a0858a811f8a52134d13aa8c804e9a209717d5"
-        },
-        "cono.1988.0.3": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 3,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "A number $p$ is called perfect if the sum of its divisors, except $p$ itself, gives $p$ as result. Let $f$ be a function such that:\n$f(n)=0$ if $n$ is perfect;\n$f(n)=0$ if the units digit of $n$ is $4$;\n$f(a\\cdot b)=f(a)+f(b)$.\nCompute $f(1988)$.",
-          "statement_sha256": "3c3b8fa91b801a10190cd5f0daa807c5914366b6119caeb08112d5366293c996"
-        },
-        "cono.1988.0.4": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 4,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "Consider a four-digit number $n$ which is a perfect square and all of whose digits are less than $6$. If $1$ is added to each digit, the resulting number is another perfect square. Find $n$.",
-          "statement_sha256": "58f9d1d08c002dc7b6eda888a4f5c6800a25289318e1c1cd5fbd5dbc93aaefa0"
-        },
-        "cono.1988.0.5": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 5,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "In the square $ABCD$ the diagonals $AC$ and $BD$ are considered. Let $P$ be any point belonging to one of the sides. Prove that the sum of the distances from $P$ to the two diagonals is constant.",
-          "statement_sha256": "947632a6ed42ac8575f02e2465d4ad79bf12c4200b5dc1c5773970ea8bd0b879"
-        },
-        "cono.1988.0.6": {
-          "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
-          "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification.",
-          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
-          "source_page": 1,
-          "source_problem_number": 6,
-          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
-          "reviewed_statement": "Prove that by reducing the dimensions of a brick one cannot obtain another one that has, at the same time, half the volume and half the surface area of the first.",
-          "statement_sha256": "8355ac7af6ea27b31d6e0a6ba171b6c4befcbdf87c500ade92e261e0abcdea56"
-        },
         "cono.1992.0.1": {
           "status": "statement_checked_against_source",
           "checked_at": "2026-10-08",
@@ -69405,15 +69699,15 @@
         },
         "cono.2009.2.5": {
           "status": "statement_checked_against_source",
-          "checked_at": "2026-10-08",
+          "checked_at": "2026-10-09",
           "review_method": "AI-assisted visual and textual comparison",
-          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Source slip corrected: the OBM paper prints \"$k\\in A$ ($k=1001$)\", which would make the operation trivial; rendered as $k\\leq 1001$, the condition needed to select $k$ numbers from the $1001$ terms of $S$.",
-          "source_url": "https://www.obm.org.br/content/uploads/2016/12/prova_conesul_2009.pdf",
-          "source_page": 2,
+          "scope": "English statement compared with the original Spanish OMA XX Cono Sur page. Removed the editorial parenthesis k <= 1001: the Spanish original simply says choose k in A and then choose k entries of S. OBM prints k = 1001, a source error absent from the Spanish original. HTML source; source_page 1 denotes the single document. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.oma.org.ar/enunciados/con20.htm",
+          "source_page": 1,
           "source_problem_number": 5,
-          "source_document_sha256": "1ff1f03ceee3a5211c7a666e298694a36c1be137aa505e5fcac94f4e39863984",
-          "reviewed_statement": "Given a sequence $S$ of $1001$ positive real numbers, not necessarily distinct, and given a set $A$ of distinct positive integers, the allowed operation is: choose a $k\\in A$ ($k\\leq 1001$), select $k$ numbers of $S$, compute the mean of the $k$ numbers (arithmetic mean) and replace each of the $k$ selected numbers by this mean.\nIf $A$ is a set such that, for every $S$, it is possible to make all the numbers equal by a sequence of allowed operations, determine the smallest possible value of the largest element of $A$.",
-          "statement_sha256": "1e7653889875863cd62849bb8efc08b2bb6bc67e0a27167e20e6ca97cc0fb6f2"
+          "source_document_sha256": "05b77dc20777ceee42fceb962a19eb61863f8a618daf4e747f91a0c7203bbe94",
+          "reviewed_statement": "Given a sequence $S$ of $1001$ positive real numbers, not necessarily distinct, and given a set $A$ of distinct positive integers, the allowed operation is: choose a $k\\in A$, select $k$ numbers of $S$, compute the mean of the $k$ numbers (arithmetic mean) and replace each of the $k$ selected numbers by this mean.\nIf $A$ is a set such that, for every $S$, it is possible to make all the numbers equal by a sequence of allowed operations, determine the smallest possible value of the largest element of $A$.",
+          "statement_sha256": "21b218a9eeacb9ddf00d8750a0d7eced2c58503027e7297e029fa559a44ba190"
         },
         "cono.2009.2.6": {
           "status": "statement_checked_against_source",
@@ -70602,6 +70896,394 @@
           "source_document_sha256": "b124374caf4198b6614a75f518918f53132e4d2c206edd3fe9e23201f1206fa8",
           "reviewed_statement": "Given a non-negative integer, an operation on this integer consists of adding $2026$ or erasing two equal adjacent digits. Let $a$ and $b$ be any two non-negative integers. Show that, starting with the number $a$, it is possible to perform a finite number of operations to obtain the number $b$.\nNote: for example, applying an operation to the number $1008$ one can obtain $3034$ or $18$. Also, applying an operation to the number $3305$ one can obtain $5331$ or $5$.",
           "statement_sha256": "e686cebad58f4ec13bf1dc7b39c0fdc6d05693dc33e99860f3334408ee4d7d83"
+        },
+        "cono.2007.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 3,
+          "source_problem_number": 1,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Find all pairs of integers $(x,y)$ satisfying $$x^3y+x+y=xy+2xy^2.$$",
+          "statement_sha256": "568a6f85811955e561f708996acd8c921978ac267811e3ce8f4c55211cdfdf2c",
+          "figure_checks": []
+        },
+        "cono.2007.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 4,
+          "source_problem_number": 2,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Consider $100$ positive integers whose sum equals their product. Determine the smallest possible number of occurrences of $1$ among these integers.",
+          "statement_sha256": "8bf922b6f7a896158e78fa12ebb86a733121f1c83d6c1cd76192c1b6a53be3cb",
+          "figure_checks": []
+        },
+        "cono.2007.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 5,
+          "source_problem_number": 3,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Let $ABC$ be an acute triangle with altitudes $AD$, $BE$ and $CF$, where $D\\in BC$, $E\\in AC$ and $F\\in AB$. Let $M$ be the midpoint of $BC$. The circumcircle of triangle $AEF$ meets the line $AM$ at $A$ and $X$. The lines $AM$ and $CF$ meet at $Y$, and the lines $AD$ and $BX$ meet at $Z$. Prove that $YZ$ is parallel to $BC$.",
+          "statement_sha256": "8f6017e9dc0f53e4425968c5203813537d6e56876c6b87168dcc4afa03f0498f",
+          "figure_checks": []
+        },
+        "cono.2007.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 6,
+          "source_problem_number": 4,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Some squares of a $2007\\times2007$ board are coloured. Call the board charrua if no row and no column is entirely coloured. (a) What is the greatest possible number $k$ of coloured squares on a charrua board? (b) For this value of $k$, determine the number of distinct charrua boards.",
+          "statement_sha256": "3087fe7cf3aacdce06e769fc85c2fa238dd20f1a61ee3302bc7d0ffd20d2fef1",
+          "figure_checks": []
+        },
+        "cono.2007.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 7,
+          "source_problem_number": 5,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Let $ABCDE$ be a convex pentagon with a circle $\\Gamma$ tangent to each side. All its side lengths are integers, at least one side has length $1$, and $AB=2$. Let $P$ be the point of tangency of $\\Gamma$ with $AB$. (a) Determine the lengths $AP$ and $BP$. (b) Give an example of a pentagon satisfying these conditions.",
+          "statement_sha256": "9ab53e81b95cf453485a7c9463845949f97f8772162f823033408300d8369eac",
+          "figure_checks": [],
+          "source_pages": [
+            7,
+            8
+          ]
+        },
+        "cono.2007.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka_27.pdf",
+          "source_page": 9,
+          "source_problem_number": 6,
+          "source_document_sha256": "740ecec2809066d50d1a3f53470e7d7d50b49da070effeccf34413e196460b69",
+          "reviewed_statement": "Prove that for every positive integer $n$ there is a positive integer $k$ such that the decimal representation of each of $k,2k,\\ldots,nk$ contains all ten digits $0,1,2,3,4,5,6,7,8,9$.",
+          "statement_sha256": "208bc22debfba67a9948241ded55bed77bd8f25698acee1ebe1c4163e229df27",
+          "figure_checks": []
+        },
+        "cono.2015.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 9,
+          "source_problem_number": 1,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Prove that, for every integer $n$, the number $n^3-9n+27$ is not divisible by $81$.",
+          "statement_sha256": "e4e9d9f5700f0bb75fa3957925e5586b26618b2fc6d7a0ec88c7204e2abdd0cd",
+          "figure_checks": []
+        },
+        "cono.2015.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 9,
+          "source_problem_number": 2,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Consider $3n$ lines in the plane, where $n>1$, no two of which are parallel and no three of which are concurrent. Prove that if $2n$ of the lines are coloured red and $n$ blue, then at least two regions of the plane have entirely red boundaries. Note: The boundary of each region lies on the given lines, and none of these lines crosses the interior of the region.",
+          "statement_sha256": "c7b3f39482e3355d47fb785350b1da506a093957814b5432c2c03e1bcff5c514",
+          "figure_checks": []
+        },
+        "cono.2015.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 9,
+          "source_problem_number": 3,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Let $\\Gamma$ be a circle of radius $1$, and let $P$ lie on $\\Gamma$. Let $A_1$ and $B_1$ be two points on $\\Gamma$ such that triangle $PA_1B_1$ is acute and the distance from $P$ to the line $A_1B_1$ is $\\sqrt2$. For every integer $n\\ge1$, define $C_n$ to be the foot of the perpendicular from $P$ to the segment $A_nB_n$, and $O_n$ to be the circumcentre of triangle $PA_nB_n$. Let $A_{n+1}$ be the foot of the perpendicular from $C_n$ to the segment $PA_n$, and let $B_{n+1}$ be the intersection of the lines $PB_n$ and $O_nA_{n+1}$. Find the length $PO_{2015}$. Note: The distance from $P$ to the line $A_1B_1$ is the length $PC_1$, where $C_1$ is the foot of the perpendicular from $P$ to the segment $A_1B_1$.",
+          "statement_sha256": "25d2f7f9147153fbca6cf08e474b4e44aa08f9c70d474d560d8936ed109eaa34",
+          "figure_checks": [],
+          "source_pages": [
+            9,
+            10
+          ]
+        },
+        "cono.2015.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 10,
+          "source_problem_number": 4,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Let $ABCD$ be a convex quadrilateral with $\\angle BAD=90^\\circ$ and perpendicular diagonals $AC$ and $BD$. Let $M$ be the midpoint of $CD$, and let $E$ be the intersection of $BM$ and $AC$. Let $F$ lie on the segment $AD$ such that $BM$ and $EF$ are perpendicular. If $CE=AF\\sqrt2$ and $FD=CE\\sqrt2$, prove that $ABCD$ is a square.",
+          "statement_sha256": "41d45d0924f9a79b614073c7338a86a028e9f6b7948b988849a258e25d47cf15",
+          "figure_checks": []
+        },
+        "cono.2015.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 10,
+          "source_problem_number": 5,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Determine whether there exist positive integers $a_1,a_2,a_3,\\ldots$, not necessarily distinct, such that $a_{m+1}+a_{m+2}+\\cdots+a_n$ is not divisible by $a_1+a_2+\\cdots+a_m$ for any positive integers $m,n$ with $1\\le m<n$.",
+          "statement_sha256": "0bdb9136217f8faf77bdd8b133bc777495c00f86ff27651c783a8fc28344f06a",
+          "figure_checks": []
+        },
+        "cono.2015.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2017/01/eureka39.pdf",
+          "source_page": 10,
+          "source_problem_number": 6,
+          "source_document_sha256": "95a042ba55f658b85c5f7cc98dc8755ee129d5b6ec8464c9086868081f7eff93",
+          "reviewed_statement": "Let $S=\\{1,2,3,\\ldots,2046,2047,2048\\}$. Two subsets $A$ and $B$ of $S$ are called friends if they are disjoint, have the same number of elements, and the product of the elements of $A$ equals the product of the elements of $B$. Prove that there exist two subsets of $S$ that are friends and each contain at least $738$ elements.",
+          "statement_sha256": "ec4539756bc7936ed98904ae05fdd42291ecf26c42474a8c04fcb87ae5883157",
+          "figure_checks": []
+        },
+        "cono.1991.0.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "Let $A,B,C$ be three noncollinear points, and let $E\\ne B$ be a point not on the line $AC$. Construct the parallelograms $ABCD$ and $AECF$, with the vertices in the stated order. Prove that $BE$ is parallel to $DF$.",
+          "statement_sha256": "adeb1192126dfbc114a666352fdfa0af23542e2d5c23e58138d5009f6dba743c",
+          "figure_checks": []
+        },
+        "cono.1991.0.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "Two people $A$ and $B$ play the following game. $A$ starts by choosing a natural number. Subsequently, each player in turn says a number according to this rule: if the last number said is odd, add $7$ to it; if it is even, divide it by $2$. The player who repeats the initially chosen number wins. Find all numbers that $A$ can choose to win, and justify your answer.",
+          "statement_sha256": "4533e729e2e06c34213472f4ca95904842503864771288df896d339b1fd2144f",
+          "figure_checks": []
+        },
+        "cono.1991.0.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "The following system has finitely many real solutions. Prove that it has an even number of solutions: $$(y^2+6)(x-1)=y(x^2+1),\\qquad (x^2+6)(y-1)=x(y^2+1).$$",
+          "statement_sha256": "7e3b46c4559b38dcc921845d4b5da2096e1acad03c9a8527d6d21ac8499b2b06",
+          "figure_checks": []
+        },
+        "cono.1991.0.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "A game has nine buttons, each green or red, arranged as shown in the figure. Pressing a button on the boundary of the square changes its colour and the colours of all its neighbours. Pressing the central button changes the colours of its eight neighbours but does not change its own colour. In the examples below, the red circles indicate the lights whose colours change when the labelled button is pressed. Is it possible, by successively pressing buttons, to turn all the lights green if initially they are all red? Justify your answer.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cono_1991_p4_fig.png",
+          "statement_sha256": "76c7b9c84e299c704008cc312414fdd64221c978752f179060a813b75bc13f92",
+          "figure_checks": [
+            {
+              "path": "images/cono_1991_p4_fig.png",
+              "sha256": "1e7a6f2d27dbd35f43ac40d7eede2d122dfaf64ae57a38b788a9c05730dd58da"
+            }
+          ],
+          "source_pages": [
+            1,
+            2
+          ]
+        },
+        "cono.1991.0.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 2,
+          "source_problem_number": 5,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "Given a square $ABCD$ of side length $1$ and an inner square of side length $x$, find, as a function of $x$, the radius of the circle tangent to two sides of $ABCD$ and passing through a vertex of the inner square, as shown in the figure.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cono_1991_p5_fig.png",
+          "statement_sha256": "0dc8a8aea4f5382a41e5791cb37d291cbe1d9e2ee36180afcdeaca2c920104af",
+          "figure_checks": [
+            {
+              "path": "images/cono_1991_p5_fig.png",
+              "sha256": "e74f940f2c2db13631b29e4d09f6d4d7c7f7768dbbba47bb0581a6f2a450d74e"
+            }
+          ]
+        },
+        "cono.1991.0.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul91.pdf",
+          "source_page": 2,
+          "source_problem_number": 6,
+          "source_document_sha256": "d1aec91b77e419bdaeaa23666e7a4c29f116f35581d5d6665818802a04084fe2",
+          "reviewed_statement": "For each positive integer $n$, let $f(n)$ be the arithmetic mean of all its positive divisors. For example, $f(3)=(1+3)/2=2$ and $f(12)=(1+2+3+4+6+12)/6=14/3$. (a) Prove that $$\\sqrt n\\le f(n)\\le\\frac{n+1}{2}.$$ (b) Find all positive integers $n$ for which $f(n)=91/9$.",
+          "statement_sha256": "cbcf1b254d2873b7ed7a4e278489b6e1eb2ced4a316fe5378642bb6b04192f60",
+          "figure_checks": []
+        },
+        "cono.1989.0.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "Two isosceles triangles whose sides measure $x$, $x$, $a$ and $x$, $x$, $b$, respectively, have equal area; $a\\neq b$. Find $x$.",
+          "statement_sha256": "a716fc857f8db655b1fd9eb406305757c824e12fccfb67debbb4fd4a375506cf",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
+        },
+        "cono.1989.0.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "Find the sum $1+11+111+\\cdots+111\\ldots111$, which has $n$ terms.",
+          "statement_sha256": "35c0d83b5dc8ccae6a048b29d8a0858a811f8a52134d13aa8c804e9a209717d5",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
+        },
+        "cono.1989.0.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "A number $p$ is called perfect if the sum of its divisors, except $p$ itself, gives $p$ as result. Let $f$ be a function such that:\n$f(n)=0$ if $n$ is perfect;\n$f(n)=0$ if the units digit of $n$ is $4$;\n$f(a\\cdot b)=f(a)+f(b)$.\nCompute $f(1988)$.",
+          "statement_sha256": "3c3b8fa91b801a10190cd5f0daa807c5914366b6119caeb08112d5366293c996",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
+        },
+        "cono.1989.0.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "Consider a four-digit number $n$ which is a perfect square and all of whose digits are less than $6$. If $1$ is added to each digit, the resulting number is another perfect square. Find $n$.",
+          "statement_sha256": "58f9d1d08c002dc7b6eda888a4f5c6800a25289318e1c1cd5fbd5dbc93aaefa0",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
+        },
+        "cono.1989.0.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 5,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "In the square $ABCD$ the diagonals $AC$ and $BD$ are considered. Let $P$ be any point belonging to one of the sides. Prove that the sum of the distances from $P$ to the two diagonals is constant.",
+          "statement_sha256": "947632a6ed42ac8575f02e2465d4ad79bf12c4200b5dc1c5773970ea8bd0b879",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
+        },
+        "cono.1989.0.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation of the official Portuguese statement published by the OBM, compared with the text layer and the rendered page image, every formula checked against the image. Statements only; no independent human or solution certification. Edition year corrected from 1988 to 1989: the official OMA I Cono Sur page and the official Cono Sur 2026 history agree on Uruguay 1989; OBM conesul88.pdf has a wrong header. Problem 3 still asks f(1988), as in both texts.",
+          "source_url": "https://www.obm.org.br/content/uploads/2018/01/conesul88.pdf",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "b945fb8ec172b332187c88d26fb284f105dcdab59ec43eab425d63c1865fad5e",
+          "reviewed_statement": "Prove that by reducing the dimensions of a brick one cannot obtain another one that has, at the same time, half the volume and half the surface area of the first.",
+          "statement_sha256": "8355ac7af6ea27b31d6e0a6ba171b6c4befcbdf87c500ade92e261e0abcdea56",
+          "corroborating_sources": [
+            {
+              "url": "https://www.oma.org.ar/enunciados/con1.htm",
+              "sha256": "d8c7bfd5f09cec8da62b724171487c9ed337a346bee6c2bd1b88df117d319771"
+            },
+            {
+              "url": "https://www.ompucp.org.pe/conosur2026/historia.html",
+              "sha256": "af7332bc5c6adc7e257cb7781fb8511e045aa353e2a5a11c1123b2ba5e50c24e"
+            }
+          ]
         }
       }
     },
@@ -70619,14 +71301,39 @@
           "url": "https://www.ommenlinea.org/publicaciones/revista-tzaloa-2/revista-en-linea/",
           "label": "Revista Tzaloa (Olimpiada Mexicana de Matemáticas) — Spanish statements of OMCC 2008–2023",
           "verification": "unverified"
+        },
+        {
+          "url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://omcc.ommenlinea.org/api/examen/file/MT0ofH/OMCC_2026_D2.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://omcc.ommenlinea.org/api/examen/file/wDRrEA/OMCC_2026_D1.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2017",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "label": "Institutional Spanish problem archive — Universidad de Jaen",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "label": "Official olympiad source used for 9 Oct 2026 gap repair",
+          "verification": "unverified"
         }
       ],
-      "coverage_notes": "OMCC (Olimpiada Matemática de Centroamérica y el Caribe) 1999–2006 and 2008–2023, six problems per year, day 1 = P1–P3, day 2 = P4–P6. Faithful English translations made on 2026-10-08 from the Spanish official texts: 1999–2002 from the OEI pages, 2003–2006 from the official papers hosted by the OEI, 2008–2023 from the revista Tzaloa of the OMM (the 2020 edition was held online in October 2020, the 2021 edition online in August 2021). Missing: 2007 and 2024–2026 (no official text found online yet); 2017 P1 is omitted because Tzaloa does not print the figure on which it depends (recorded in KNOWN_GAPS). Five figures: 1999 P3, 2000 P2, P4 from the OEI pages, 2012 P4 and 2014 P4 cropped from Tzaloa. See docs/centroamerican-omcc-2026-10-08.md.",
-      "missing_problem_numbers": {
-        "2017": [
-          1
-        ]
-      },
+      "coverage_notes": "All 28 editions, 1999–2026, with 168 statements (six per edition). On 9 Oct 2026 added 2007 from OMM Avanzado 22, 2024 from the host committee report in Revista Aleph PDF pages 19–20, and 2026 from official Durango exam papers. Added 2025 and restored 2017 P1 with its figure from the Universidad de Jaen institutional Spanish archive; these seven checks explicitly identify HTML rather than an original exam PDF. Included both 2025 P3/P4 figures. See docs/regional-gap-fill-2026-10-09.md.",
       "statement_checks": {
         "omcc.1999.1.1": {
           "status": "statement_checked_against_source",
@@ -72373,6 +73080,350 @@
           "source_document_sha256": "9f1647280e9381b542559637eab009ce24b37171974d342b4e878eaff607f5fe",
           "reviewed_statement": "In a pond there are $n\\geq 3$ stones arranged on a circle. A princess wants to label the stones with the numbers $1,2,\\ldots,n$ in some order and then place some toads on the stones. Once all the toads are placed, they start jumping clockwise according to the following rule: when a toad arrives at the stone labelled with the number $k$, it waits $k$ minutes and then jumps to the adjacent stone.\nIf at no moment two toads may occupy the same stone, what is the largest number of toads for which the princess can label the stones before placing the toads? For this maximum, show how the princess can label the stones and how to place the toads.\nNote: A stone is considered occupied by two toads at the same time only if there are two toads that are simultaneously on that stone for at least one minute.",
           "statement_sha256": "f446cb7bdcf319bfe460b5ee9c71e2d1d6782cccda7d7eda63afecf61a3e8431"
+        },
+        "omcc.2026.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/wDRrEA/OMCC_2026_D1.pdf",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "09b338e3920fd6c572a2cd6fca1cd7dd35d09e3b7a8462ef83efb25d43bc3775",
+          "reviewed_statement": "Find all pairs of primes $p$ and $q$ for which there exists a positive integer $n$ such that $$\\frac{1}{p+q+2}-\\frac{1}{pq+p+q+2}=\\frac1n.$$",
+          "statement_sha256": "633a2afc49ce0f3ea914ca01e215016fb479d83ceb8464c4fdf47897dabd3f05",
+          "figure_checks": []
+        },
+        "omcc.2026.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/wDRrEA/OMCC_2026_D1.pdf",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "09b338e3920fd6c572a2cd6fca1cd7dd35d09e3b7a8462ef83efb25d43bc3775",
+          "reviewed_statement": "A $2025\\times2027$ board is to be completely tiled with $2\\times2$ square tiles and $1\\times3$ rectangular tiles, which may be placed horizontally or vertically. The tiles may not overlap, even partially, and no square of the board may be left uncovered. What is the smallest number of $1\\times3$ tiles needed?",
+          "statement_sha256": "20f190ba1233868187424fc4fbf736d17ae7c0f76b5aa78bd5c40cff0c697b11",
+          "figure_checks": []
+        },
+        "omcc.2026.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/wDRrEA/OMCC_2026_D1.pdf",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "09b338e3920fd6c572a2cd6fca1cd7dd35d09e3b7a8462ef83efb25d43bc3775",
+          "reviewed_statement": "Let $ABC$ be a triangle, and let $D$ be the point where its incircle touches the segment $BC$. Let $P$ lie on the segment $AB$ and $Q$ on the segment $AC$, with $AP=AQ$. Let $\\Gamma_1$ be the circle tangent to the segments $AB$ and $BC$ at $P$ and $R$, respectively, and let $\\Gamma_2$ be the circle tangent to the segments $AC$ and $BC$ at $Q$ and $S$, respectively. The circumcircles of triangles $APR$ and $AQS$ meet at a point $T$ distinct from $A$. Prove that $A$, $D$ and $T$ are collinear. Note 1: The incircle of a triangle is the circle internally tangent to all three sides. Note 2: Its circumcircle is the circle passing through its three vertices.",
+          "statement_sha256": "075ed26b4f63dc4914d70e5f61e6f0793e01804b0cbfd7eb5a3aa8eea090e270",
+          "figure_checks": []
+        },
+        "omcc.2026.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/MT0ofH/OMCC_2026_D2.pdf",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "36730f6582de32d0949adbc8f04d0c4801cd0ed339457d538a40c372ddd4599a",
+          "reviewed_statement": "There are $2026$ students sitting around a circular table, each with a pencil. At a signal from the teacher, every student gives their pencil to one of their two neighbours. Determine the greatest possible number of students left without a pencil after the signal.",
+          "statement_sha256": "baacec9ffdd167251358f28898a47fd8197222cb8fb46cd37e16720222243877",
+          "figure_checks": []
+        },
+        "omcc.2026.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/MT0ofH/OMCC_2026_D2.pdf",
+          "source_page": 1,
+          "source_problem_number": 5,
+          "source_document_sha256": "36730f6582de32d0949adbc8f04d0c4801cd0ed339457d538a40c372ddd4599a",
+          "reviewed_statement": "For each positive integer $n$, define $T_n=1+2+\\cdots+n$. Find all integers $c\\ge0$ for which there is an integer $r\\ge0$ such that $$T_{n+r}\\le cn+T_n<T_{n+r+1}$$ for every integer $n\\ge1$.",
+          "statement_sha256": "20b1a540f0e110ddf6b4ddc2867c69c6893edc7d53909906a5473765790e091f",
+          "figure_checks": []
+        },
+        "omcc.2026.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://omcc.ommenlinea.org/api/examen/file/MT0ofH/OMCC_2026_D2.pdf",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "36730f6582de32d0949adbc8f04d0c4801cd0ed339457d538a40c372ddd4599a",
+          "reviewed_statement": "There are $n$ cards, where $n\\ge2$, numbered from $1$ to $n$, each with a different number. Find all $n$ such that, for every divisor $k$ of $n$ with $1\\le k<n$, any distribution of the cards into $k$ piles of $n/k$ cards each has a pile containing two cards whose numbers add up to a multiple of $k$.",
+          "statement_sha256": "887328624c5e7a161e146aa551cfd371feffaf91315a30bc96bf9fc1a6d3da13",
+          "figure_checks": []
+        },
+        "omcc.2007.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 28,
+          "source_problem_number": 1,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "The OMCC is an annual mathematics competition. Its ninth edition takes place in $2007$. For which positive integers $n$ does $n$ divide the year in which the $n$th edition takes place?",
+          "statement_sha256": "715cf7d96c28ed7ff8f3c6f1265fcfaed1b52f11fec9e1defcf99c167b893a10",
+          "figure_checks": []
+        },
+        "omcc.2007.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 28,
+          "source_problem_number": 2,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "Let $ABC$ be a triangle, and let $D$ and $E$ lie on the sides $AC$ and $AB$, respectively, such that the lines $BD$, $CE$ and the angle bisector from $A$ are concurrent at a point $P$ inside the triangle. Prove that there is a circle tangent to all four sides of quadrilateral $ADPE$ if and only if $AB=AC$.",
+          "statement_sha256": "5adee7337e4c746de2d799d04b7f1b2bf8e676098b744e0c2ff8d8c16156346f",
+          "figure_checks": []
+        },
+        "omcc.2007.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 28,
+          "source_problem_number": 3,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "Let $S$ be a finite set of integers. Suppose that for any distinct elements $p,q$ of $S$, there are elements $a,b,c$ of $S$, not necessarily distinct, with $a\\ne0$, such that the polynomial $F(x)=ax^2+bx+c$ satisfies $F(p)=F(q)=0$. Determine the greatest possible number of elements of $S$.",
+          "statement_sha256": "24b0da3b330943c56334a0d9272478c1ea59520e0dac72c0fd204e61e8e8b2b6",
+          "figure_checks": []
+        },
+        "omcc.2007.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 28,
+          "source_problem_number": 4,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "The inhabitants of an island speak a language in which every word can be written using the letters $a,b,c,d,e,f,g$. A word is said to produce another if the second can be obtained from the first by applying either of the following rules one or more times: (1) Replace a letter by two letters according to $$a\\to bc,\\quad b\\to cd,\\quad c\\to de,\\quad d\\to ef,\\quad e\\to fg,\\quad f\\to ga,\\quad g\\to ab.$$ (2) If two identical letters surround another letter, remove the two outer letters; for example, $dfd\\to f$. Thus $cafed$ produces $bfed$, since $cafed\\to cbcfed\\to bfed$. Prove that on this island every word produces every other word.",
+          "statement_sha256": "81c3c983f6892fd806a490c4bc366e92d5380876eed4a6e451e93d874570f13c",
+          "figure_checks": [],
+          "source_pages": [
+            28,
+            29
+          ]
+        },
+        "omcc.2007.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 29,
+          "source_problem_number": 5,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "For nonnegative integers $m,n$ with $m>n$, say that $m$ ends in $n$ if deleting some initial digits of $m$ leaves $n$. For example, $329$ ends only in $9$ and $29$. Determine how many three-digit numbers end in the product of their digits.",
+          "statement_sha256": "488fbc2ba6039d38ee2d9442b53a5261a842e380e2b902123ae81da099b79736",
+          "figure_checks": []
+        },
+        "omcc.2007.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://www.ommenlinea.org/wp-content/uploads/practica/folletos/Avanzado_22.pdf",
+          "source_page": 29,
+          "source_problem_number": 6,
+          "source_document_sha256": "d64a1829d88985c16cc2b70cac2d71c4ca9a6bb8557c2f92c0c75d69374212d1",
+          "reviewed_statement": "From a point $P$ outside a circle $S$, draw tangents touching it at $A$ and $B$. Let $M$ be the midpoint of $AB$. The perpendicular bisector of $AM$ meets $S$ at $C$ inside triangle $ABP$. The lines $AC$ and $PM$ meet at $G$, and $PM$ meets $S$ at a point $D$ outside triangle $ABP$. If $BD$ is parallel to $AC$, prove that $G$ is the centroid of triangle $ABP$.",
+          "statement_sha256": "891413c4dc13c5cccd9e7e2a091cfea06245e1387940df5b4690772909a78d0c",
+          "figure_checks": []
+        },
+        "omcc.2024.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 19,
+          "source_problem_number": 1,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "Let $n$ be a positive integer with $k$ digits. A number $m$ is called an ally of $n$ if there are distinct nonzero digits $a_1,a_2,\\ldots,a_k$ such that $m$ is obtained by adding $a_i$ to the digit in position $i$ of $n$, with no sum exceeding $9$. For example, if $n=2024$ and $a_1=2$, $a_2=1$, $a_3=5$, $a_4=3$, then $m=4177$ is an ally of $n$; but choosing $a_4=6$ instead is not allowed, since $4+6>9$. Find the least positive multiple $n$ of $2024$ that has an ally which is also a multiple of $2024$.",
+          "statement_sha256": "7734fc6fc90b2716531005d92e9f1b2d5bb635aa772043ee895639c0e626693b",
+          "figure_checks": []
+        },
+        "omcc.2024.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 19,
+          "source_problem_number": 2,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "A row has $2024$ empty squares. Ana and Beto play alternately, with Ana starting. On each turn a player chooses an empty square and writes a digit in it. When all the squares are filled, the resulting number is read from left to right, ignoring any leading zeros. Beto wins if the number is divisible by $99$; otherwise Ana wins. Determine which player has a winning strategy and describe it.",
+          "statement_sha256": "dee8c978ca34b2eac011b3111efdd2ded8bce43b28c28f6c462259093af59313",
+          "figure_checks": []
+        },
+        "omcc.2024.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 19,
+          "source_problem_number": 3,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "Let $ABC$ be a triangle with orthocentre $H$ and circumcircle $\\Gamma$. Let $J$ be the point of $\\Gamma$ diametrically opposite $A$. Let $D,E,F$ be the feet of the altitudes from $A,B,C$, respectively. The line $AD$ meets $\\Gamma$ again at $P$. The circumcircle of triangle $EFP$ meets $\\Gamma$ again at $Q$. Let $K$ be the second intersection of $JH$ with $\\Gamma$. Prove that $K,D,Q$ are collinear.",
+          "statement_sha256": "d55fe4633c1b913a58d26acc68ee96cf315caac90cfcbecbe285ebcde42a64bd",
+          "figure_checks": []
+        },
+        "omcc.2024.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 20,
+          "source_problem_number": 4,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "Let $ABC$ be a triangle with incentre $I$ and circumcircle $\\Gamma$. Let $D$ be the second intersection of $AI$ with $\\Gamma$. The line through $I$ parallel to $BC$ meets $AB$ and $AC$ at $P$ and $Q$, respectively. The lines $PD$ and $QD$ meet $BC$ at $E$ and $F$, respectively. Prove that triangles $IEF$ and $ABC$ are similar.",
+          "statement_sha256": "14e1e62540f342f460ff2c51c24de17c9d0bbf61de0323b77672f2963bfaf2d5",
+          "figure_checks": []
+        },
+        "omcc.2024.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 20,
+          "source_problem_number": 5,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "Let $x,y$ be positive real numbers satisfying $$\\sqrt x\\left(2+\\frac5{x+y}\\right)=3,\\qquad \\sqrt y\\left(2-\\frac5{x+y}\\right)=2.$$ Find the greatest possible value of $x+y$.",
+          "statement_sha256": "ed7b2831e871685663ed66e3950cda4164e304606e57b532be7fe99cf33357a3",
+          "figure_checks": []
+        },
+        "omcc.2024.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the official-language source and visually inspected PDF pages, including every mathematical formula. Statements only; no independent human or solution certification.",
+          "source_url": "https://matematicasaleph.com/wp-content/uploads/2024/11/rma-v10-199-218-1.pdf",
+          "source_page": 20,
+          "source_problem_number": 6,
+          "source_document_sha256": "9adaa89b5e3bd9336f7f87dd1feffa0e8e696c15cef2bace15fb5050ab753755",
+          "reviewed_statement": "Let $n\\ge2$ and $k\\ge2$ be positive integers. A cat and a mouse play Wim, starting with $n$ stones. They remove stones alternately, with the cat starting; on each turn a player may remove $1,2,\\ldots,k$ stones. The player unable to remove stones on their turn loses. A raccoon creates Wim 2 by adding this rule: a player may not remove the same number of stones as the opponent removed on the immediately preceding turn. Find all values of $k$ such that, for every $n$, the cat has a winning strategy in Wim if and only if it has a winning strategy in Wim 2.",
+          "statement_sha256": "cef46592d90b9641cf2e5a5312f32fedec94ec3fb1e948a825b72bfdcf93e2d3",
+          "figure_checks": []
+        },
+        "omcc.2025.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Let $ABCD$ be a square with centre $O$, and let $M$ be the midpoint of $AB$. Let $E$ be the second intersection of the line $OA$ with the circle through $M,O,D$. Let $F$ be the intersection of $EM$ with the line through $O$ parallel to $AB$. Prove that $C,D,E,F$ are concyclic.",
+          "statement_sha256": "c1f3f743073d20e5b00762e0a724622d08077ed9f5fe51637db9651f2e3d89f6",
+          "figure_checks": []
+        },
+        "omcc.2025.1.2": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Determine the number of integers $k$ for which there exist positive integers $a_1,a_2,\\ldots,a_{2025}$, not necessarily distinct, such that $$\\frac1{a_1}+\\frac2{a_2}+\\cdots+\\frac{2025}{a_{2025}}=k.$$",
+          "statement_sha256": "89bdb03ce3a1cea961aa4d787d2d37908fe77fba3cb49600d0e0ed8550f82ea9",
+          "figure_checks": []
+        },
+        "omcc.2025.1.3": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 3,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Let $n>2$ be an integer. There are $n$ counters arranged around a circle. Initially $n-1$ are black and one is white. Fernando makes successive moves as follows: choose two consecutive black counters and a white counter adjacent to one of them, and change the colours of these three counters. The two possible moves are shown in the figure. Fernando continues until no further move is possible. For each $n$, determine the smallest number of black counters that he can leave at the end of the game.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2025_p3_fig.png",
+          "statement_sha256": "0950611d1bef4299bc6077909e2146d7cd088a4f5474826b407fc776d2ce3646",
+          "figure_checks": [
+            {
+              "path": "images/omcc_2025_p3_fig.png",
+              "sha256": "89b4edc684492fba12023f801f1183d22e93713236c964f9fc96e9d2c7f9a93f"
+            }
+          ]
+        },
+        "omcc.2025.2.4": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 4,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Ana and Betty visit a national park consisting of a network of paths connecting $N$ stations, where $N>1$ is an integer. Every two consecutive stations are connected by two paths, as shown in the figure. They play as follows. Ana and Betty start at opposite ends of the park. Every hour, each chooses one of the two or four paths leaving her current station and travels to the adjacent station. On arrival, each sends the other a message stating the station she has reached, and waits until the next hour to move again. Betty wins if she reaches the opposite end of the park. Ana wins if she meets Betty on a path or at a station before Betty wins. Betty knows Ana so well that she can always predict exactly which path Ana will take. For each $N$, determine which friend has a winning strategy and describe it.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2025_p4_fig.png",
+          "statement_sha256": "01cc589ab030b916620de3493467b9da4762cdffde830984185c39f9b6b78595",
+          "figure_checks": [
+            {
+              "path": "images/omcc_2025_p4_fig.png",
+              "sha256": "293ebbbcadb2ec4e6ea71dce9350cbc1427f60385184132847e92b772238f298"
+            }
+          ]
+        },
+        "omcc.2025.2.5": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 5,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Find all positive integers $n$ satisfying both of the following conditions: (1) $n^2$ has at least four positive divisors; (2) if $1=d_1<d_2<d_3<d_4$ are the first four positive divisors of $n^2$, then $$\\frac1{d_2}=\\frac1{d_3}+\\frac1{d_4}+\\frac1n.$$",
+          "statement_sha256": "8f273ed69956371e51ed1a3b340b793748460dc596c87a70c44d29321a33171e",
+          "figure_checks": []
+        },
+        "omcc.2025.2.6": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2025",
+          "source_page": 1,
+          "source_problem_number": 6,
+          "source_document_sha256": "906c357ec906c8f56231b44b685d878e69e70d67dbca19574fcf3f148a75ebb0",
+          "reviewed_statement": "Let $ABC$ be a triangle whose longest side is $BC$, and let $D$ lie on the segment $BC$. Let $J$ and $K$ be the incentres of triangles $ABD$ and $ACD$, respectively. Let $X$ be the reflection of $A$ across the line $JK$. Let $Y$ and $Z$ lie on the segment $BC$ such that $BY=AB$ and $CZ=AC$. Prove that $\\angle YXZ$ has a constant measure, independent of the choice of $D$.",
+          "statement_sha256": "99381c9d320c39a1c4f9dfb43980c2d77cbfa99839ddc25dfa1c7dc604941cef",
+          "figure_checks": []
+        },
+        "omcc.2017.1.1": {
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-09",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Faithful English translation compared with the Spanish statement and exact LaTeX formulas in the Universidad de Jaen institutional archive. All attached figures were downloaded from that archive and visually inspected. Source document is HTML, not an original exam PDF; source_page 1 denotes the single HTML document. No independent human or solution certification.",
+          "source_url": "https://web.ujaen.es/eventos/omatematica/preparacion/competiciones.php?comp=12&a=2017",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "source_document_sha256": "f7d17d7d2c4778347d1fd2306529d8922dc075e7d502b686b56ea50a6a248aac",
+          "reviewed_statement": "The figure shows a hexagonal grid made up of small equilateral triangles. Gabriel and Arnoldo take turns. On each turn, a player colours a line segment, including its endpoints, according to these rules: (1) Its endpoints must be vertices of some of the small triangles. (2) It must consist of one or more sides of some of the small triangles. (3) It may not have any point in common with any previously coloured segment, including endpoints. A player who cannot colour a segment on their turn loses. If Gabriel starts, determine which player has a winning strategy and describe it.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2017_p1_fig.png",
+          "statement_sha256": "19850e458862d07348769f9f310abe48fa267df1809bd0b476d5e2973b7002fc",
+          "figure_checks": [
+            {
+              "path": "images/omcc_2017_p1_fig.png",
+              "sha256": "6199df33b2f9cdf33ea7683039db48cdb4d0cb94a9cb74686f16c49c697c780e"
+            }
+          ]
         }
       }
     }

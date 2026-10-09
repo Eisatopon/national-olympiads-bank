@@ -1,3 +1,5 @@
+> Updated on 9 Oct 2026: the gaps reported in this historical import report have been resolved. Current coverage and source corrections: `regional-gap-fill-2026-10-09.md`.
+
 # Mathematical Olympiad of Central America and the Caribbean (OMCC), 1999–2023 (8 Oct 2026)
 
 New regional row: key `omcc`, file `Centroamerican-omcc-problems.json`, continent group *americas*.

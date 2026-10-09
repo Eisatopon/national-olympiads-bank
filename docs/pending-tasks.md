@@ -1,4 +1,4 @@
-# Pending tasks (8 Oct 2026)
+# Pending tasks (9 Oct 2026)
 
 A single list of everything still open, so that the next session knows where to resume.
 
@@ -8,13 +8,7 @@ A single list of everything still open, so that the next session knows where to 
 3. **New regional rows**: Pan-African, Silk Road.
 
 ## B. Gaps that need text from AoPS (the owner pastes it, because the cloud cannot reach AoPS)
-- **Iberoamerican (`oim`)**:
-  - the whole years 2005, 2006, 2007;
-  - the corrupt problems 1992 P2, 1992 P4, 1993 P6, 1994 P6, 1995 P2 (listed in KNOWN_GAPS).
-- **Cono Sur (`cono`)**: 1989, 1990, 1991, 2007, 2015.
-- **OMCC (`omcc`)**:
-  - the years 2007, 2024, 2025, 2026;
-  - 2017 P1 (the figure is missing; listed in KNOWN_GAPS).
+- **Iberoamerican, Cono Sur and OMCC**: the previously listed gaps are closed. Current coverage: OIM 1985, 1987–2026 (246); Cono Sur 1989, 1991–2026 (222); OMCC 1999–2026 (168). See `docs/regional-gap-fill-2026-10-09.md`. No OIM in 1986 or Cono Sur in 1990; first Cono Sur moved from the incorrectly labelled 1988 to 1989. Twelve restored/added statements use the institutional Jaén HTML archive, explicitly distinguished from original exam PDFs in their checks.
 - **Baltic Way**: 1990 and 2025 are AoPS-only and unverified.
 - **MEMO**: 2007, 2008, 2012, 2014 and 2026 are AoPS-only.
 
@@ -38,7 +32,7 @@ A single list of everything still open, so that the next session knows where to 
   - candidate new countries: Greece National, Iran, Israel, Taiwan, Belarus, South Africa, …
 
 ## D. Source-fidelity checks
-- 4,975 of 19,425 records are checked; 14,450 remain. See `docs/verification-progress.md`.
+- 5,041 of 19,491 records are checked; 14,450 remain. See `docs/verification-progress.md`.
 - The largest pending collections:
 
   | Collection | Records |
@@ -60,7 +54,7 @@ A single list of everything still open, so that the next session knows where to 
 
 ## E. Open decisions for the owner
 - **Repository rename**: optional. It would change the Pages URL and all 321+ image URLs.
-- **Cono Sur 2009 P5**: rendered as "k ≤ 1001", because the OBM paper prints "k = 1001". This still needs confirmation from the Spanish original or from AoPS.
+- **Cono Sur 2009 P5**: resolved on 9 Oct 2026 against the original Spanish OMA page; unsupported parenthesis removed.
 
 ## Cost-saving order
 1. Pasted AoPS gaps, one year at a time. This is the cheapest work.

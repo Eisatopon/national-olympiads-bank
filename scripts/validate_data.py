@@ -11,14 +11,10 @@ KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2007): [1, 2, 3, 5, 6],
               ('Argentina-level3-problems.json', 2008): [2, 3, 4, 5, 6],
               ('Argentina-level3-problems.json', 2010): [1, 2, 3, 4, 6],
-              ('Chile-final-problems.json', 1991): [3],
-              ('Iberoamerican-oim-problems.json', 1992): [1, 3, 5, 6],
-              ('Iberoamerican-oim-problems.json', 1993): [1, 2, 3, 4, 5],
-              ('Iberoamerican-oim-problems.json', 1994): [1, 2, 3, 4, 5],
-              ('Iberoamerican-oim-problems.json', 1995): [1, 3, 4, 5, 6],
-              ('Centroamerican-omcc-problems.json', 2017): [2, 3, 4, 5, 6]}
-# Iberoamerican 1992 P2, P4, 1993 P6, 1994 P6, 1995 P2: the surviving official texts are corrupt; omitted until a clean source is found.
-# Centroamerican 2017 P1 depends on a figure that the only official text found (Tzaloa 3/2017) does not print.
+              ('Chile-final-problems.json', 1991): [3]
+}
+# Iberoamerican gaps restored from the clean Universidad de Jaen archive on 9 Oct 2026.
+# Centroamerican 2017 P1 restored with the figure from Universidad de Jaen on 9 Oct 2026.
 # Chile 1991 is explicitly partial: the user requested its intact Problem 3 only.
 
 

@@ -282,6 +282,41 @@
       ]
     },
     {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The OMCC is an annual mathematics competition. Its ninth edition takes place in $2007$. For which positive integers $n$ does $n$ divide the year in which the $n$th edition takes place?",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle, and let $D$ and $E$ lie on the sides $AC$ and $AB$, respectively, such that the lines $BD$, $CE$ and the angle bisector from $A$ are concurrent at a point $P$ inside the triangle. Prove that there is a circle tangent to all four sides of quadrilateral $ADPE$ if and only if $AB=AC$.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $S$ be a finite set of integers. Suppose that for any distinct elements $p,q$ of $S$, there are elements $a,b,c$ of $S$, not necessarily distinct, with $a\\ne0$, such that the polynomial $F(x)=ax^2+bx+c$ satisfies $F(p)=F(q)=0$. Determine the greatest possible number of elements of $S$.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "The inhabitants of an island speak a language in which every word can be written using the letters $a,b,c,d,e,f,g$. A word is said to produce another if the second can be obtained from the first by applying either of the following rules one or more times: (1) Replace a letter by two letters according to $$a\\to bc,\\quad b\\to cd,\\quad c\\to de,\\quad d\\to ef,\\quad e\\to fg,\\quad f\\to ga,\\quad g\\to ab.$$ (2) If two identical letters surround another letter, remove the two outer letters; for example, $dfd\\to f$. Thus $cafed$ produces $bfed$, since $cafed\\to cbcfed\\to bfed$. Prove that on this island every word produces every other word.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "For nonnegative integers $m,n$ with $m>n$, say that $m$ ends in $n$ if deleting some initial digits of $m$ leaves $n$. For example, $329$ ends only in $9$ and $29$. Determine how many three-digit numbers end in the product of their digits.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "From a point $P$ outside a circle $S$, draw tangents touching it at $A$ and $B$. Let $M$ be the midpoint of $AB$. The perpendicular bisector of $AM$ meets $S$ at $C$ inside triangle $ABP$. The lines $AC$ and $PM$ meet at $G$, and $PM$ meets $S$ at a point $D$ outside triangle $ABP$. If $BD$ is parallel to $AC$, prove that $G$ is the centroid of triangle $ABP$.",
+          "day": 2
+        }
+      ]
+    },
+    {
       "year": 2008,
       "problems": [
         {
@@ -601,6 +636,11 @@
       "problems": [
         {
           "day": 1,
+          "number": 1,
+          "problem": "The figure shows a hexagonal grid made up of small equilateral triangles. Gabriel and Arnoldo take turns. On each turn, a player colours a line segment, including its endpoints, according to these rules: (1) Its endpoints must be vertices of some of the small triangles. (2) It must consist of one or more sides of some of the small triangles. (3) It may not have any point in common with any previously coloured segment, including endpoints. A player who cannot colour a segment on their turn loses. If Gabriel starts, determine which player has a winning strategy and describe it.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2017_p1_fig.png"
+        },
+        {
+          "day": 1,
           "number": 2,
           "problem": "A pair $(a,b)$ of positive integers with $a<391$ is pupusa if $$\\operatorname{lcm}(a,b)>\\operatorname{lcm}(a,391).$$ Determine the minimum value that $b$ takes among the possible pupusa pairs $(a,b)$.\nNote. $\\operatorname{lcm}(a,b)$ denotes the least common multiple of $a$ and $b$."
         },
@@ -833,6 +873,111 @@
           "day": 2,
           "number": 6,
           "problem": "In a pond there are $n\\geq 3$ stones arranged on a circle. A princess wants to label the stones with the numbers $1,2,\\ldots,n$ in some order and then place some toads on the stones. Once all the toads are placed, they start jumping clockwise according to the following rule: when a toad arrives at the stone labelled with the number $k$, it waits $k$ minutes and then jumps to the adjacent stone.\nIf at no moment two toads may occupy the same stone, what is the largest number of toads for which the princess can label the stones before placing the toads? For this maximum, show how the princess can label the stones and how to place the toads.\nNote: A stone is considered occupied by two toads at the same time only if there are two toads that are simultaneously on that stone for at least one minute."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a positive integer with $k$ digits. A number $m$ is called an ally of $n$ if there are distinct nonzero digits $a_1,a_2,\\ldots,a_k$ such that $m$ is obtained by adding $a_i$ to the digit in position $i$ of $n$, with no sum exceeding $9$. For example, if $n=2024$ and $a_1=2$, $a_2=1$, $a_3=5$, $a_4=3$, then $m=4177$ is an ally of $n$; but choosing $a_4=6$ instead is not allowed, since $4+6>9$. Find the least positive multiple $n$ of $2024$ that has an ally which is also a multiple of $2024$.",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "A row has $2024$ empty squares. Ana and Beto play alternately, with Ana starting. On each turn a player chooses an empty square and writes a digit in it. When all the squares are filled, the resulting number is read from left to right, ignoring any leading zeros. Beto wins if the number is divisible by $99$; otherwise Ana wins. Determine which player has a winning strategy and describe it.",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle with orthocentre $H$ and circumcircle $\\Gamma$. Let $J$ be the point of $\\Gamma$ diametrically opposite $A$. Let $D,E,F$ be the feet of the altitudes from $A,B,C$, respectively. The line $AD$ meets $\\Gamma$ again at $P$. The circumcircle of triangle $EFP$ meets $\\Gamma$ again at $Q$. Let $K$ be the second intersection of $JH$ with $\\Gamma$. Prove that $K,D,Q$ are collinear.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle with incentre $I$ and circumcircle $\\Gamma$. Let $D$ be the second intersection of $AI$ with $\\Gamma$. The line through $I$ parallel to $BC$ meets $AB$ and $AC$ at $P$ and $Q$, respectively. The lines $PD$ and $QD$ meet $BC$ at $E$ and $F$, respectively. Prove that triangles $IEF$ and $ABC$ are similar.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "Let $x,y$ be positive real numbers satisfying $$\\sqrt x\\left(2+\\frac5{x+y}\\right)=3,\\qquad \\sqrt y\\left(2-\\frac5{x+y}\\right)=2.$$ Find the greatest possible value of $x+y$.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "Let $n\\ge2$ and $k\\ge2$ be positive integers. A cat and a mouse play Wim, starting with $n$ stones. They remove stones alternately, with the cat starting; on each turn a player may remove $1,2,\\ldots,k$ stones. The player unable to remove stones on their turn loses. A raccoon creates Wim 2 by adding this rule: a player may not remove the same number of stones as the opponent removed on the immediately preceding turn. Find all values of $k$ such that, for every $n$, the cat has a winning strategy in Wim if and only if it has a winning strategy in Wim 2.",
+          "day": 2
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a square with centre $O$, and let $M$ be the midpoint of $AB$. Let $E$ be the second intersection of the line $OA$ with the circle through $M,O,D$. Let $F$ be the intersection of $EM$ with the line through $O$ parallel to $AB$. Prove that $C,D,E,F$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine the number of integers $k$ for which there exist positive integers $a_1,a_2,\\ldots,a_{2025}$, not necessarily distinct, such that $$\\frac1{a_1}+\\frac2{a_2}+\\cdots+\\frac{2025}{a_{2025}}=k.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n>2$ be an integer. There are $n$ counters arranged around a circle. Initially $n-1$ are black and one is white. Fernando makes successive moves as follows: choose two consecutive black counters and a white counter adjacent to one of them, and change the colours of these three counters. The two possible moves are shown in the figure. Fernando continues until no further move is possible. For each $n$, determine the smallest number of black counters that he can leave at the end of the game.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2025_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Ana and Betty visit a national park consisting of a network of paths connecting $N$ stations, where $N>1$ is an integer. Every two consecutive stations are connected by two paths, as shown in the figure. They play as follows. Ana and Betty start at opposite ends of the park. Every hour, each chooses one of the two or four paths leaving her current station and travels to the adjacent station. On arrival, each sends the other a message stating the station she has reached, and waits until the next hour to move again. Betty wins if she reaches the opposite end of the park. Ana wins if she meets Betty on a path or at a station before Betty wins. Betty knows Ana so well that she can always predict exactly which path Ana will take. For each $N$, determine which friend has a winning strategy and describe it.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/omcc_2025_p4_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all positive integers $n$ satisfying both of the following conditions: (1) $n^2$ has at least four positive divisors; (2) if $1=d_1<d_2<d_3<d_4$ are the first four positive divisors of $n^2$, then $$\\frac1{d_2}=\\frac1{d_3}+\\frac1{d_4}+\\frac1n.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle whose longest side is $BC$, and let $D$ lie on the segment $BC$. Let $J$ and $K$ be the incentres of triangles $ABD$ and $ACD$, respectively. Let $X$ be the reflection of $A$ across the line $JK$. Let $Y$ and $Z$ lie on the segment $BC$ such that $BY=AB$ and $CZ=AC$. Prove that $\\angle YXZ$ has a constant measure, independent of the choice of $D$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all pairs of primes $p$ and $q$ for which there exists a positive integer $n$ such that $$\\frac{1}{p+q+2}-\\frac{1}{pq+p+q+2}=\\frac1n.$$",
+          "day": 1
+        },
+        {
+          "number": 2,
+          "problem": "A $2025\\times2027$ board is to be completely tiled with $2\\times2$ square tiles and $1\\times3$ rectangular tiles, which may be placed horizontally or vertically. The tiles may not overlap, even partially, and no square of the board may be left uncovered. What is the smallest number of $1\\times3$ tiles needed?",
+          "day": 1
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle, and let $D$ be the point where its incircle touches the segment $BC$. Let $P$ lie on the segment $AB$ and $Q$ on the segment $AC$, with $AP=AQ$. Let $\\Gamma_1$ be the circle tangent to the segments $AB$ and $BC$ at $P$ and $R$, respectively, and let $\\Gamma_2$ be the circle tangent to the segments $AC$ and $BC$ at $Q$ and $S$, respectively. The circumcircles of triangles $APR$ and $AQS$ meet at a point $T$ distinct from $A$. Prove that $A$, $D$ and $T$ are collinear. Note 1: The incircle of a triangle is the circle internally tangent to all three sides. Note 2: Its circumcircle is the circle passing through its three vertices.",
+          "day": 1
+        },
+        {
+          "number": 4,
+          "problem": "There are $2026$ students sitting around a circular table, each with a pencil. At a signal from the teacher, every student gives their pencil to one of their two neighbours. Determine the greatest possible number of students left without a pencil after the signal.",
+          "day": 2
+        },
+        {
+          "number": 5,
+          "problem": "For each positive integer $n$, define $T_n=1+2+\\cdots+n$. Find all integers $c\\ge0$ for which there is an integer $r\\ge0$ such that $$T_{n+r}\\le cn+T_n<T_{n+r+1}$$ for every integer $n\\ge1$.",
+          "day": 2
+        },
+        {
+          "number": 6,
+          "problem": "There are $n$ cards, where $n\\ge2$, numbered from $1$ to $n$, each with a different number. Find all $n$ such that, for every divisor $k$ of $n$ with $1\\le k<n$, any distribution of the cards into $k$ piles of $n/k$ cards each has a pile containing two cards whose numbers add up to a multiple of $k$.",
+          "day": 2
         }
       ]
     }
