@@ -16,3 +16,6 @@ Added 11 statements: 1991 P1, P2, P4, P5, P6 and the complete six-problem 2004 N
 - 1993/2013: earlier unresolved source/statement issues remain; neither is newly declared complete.
 
 Validation and publication are recorded in the associated commit and CI run. Source fidelity is distinct from thematic review.
+
+## Superseded remaining-gap list
+The later same-day country audit recovered a readable Compendium PDF and added 1993, 1998 and 2013 in full. The actual 2004 PDF page numbers are 48–49, not the earlier public-text pagination. Use [chile-country-audit-2026-10-10.md](chile-country-audit-2026-10-10.md) for the current complete inventory and blockers.

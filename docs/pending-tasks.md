@@ -1,6 +1,6 @@
 # Pending tasks — updated 10 Oct 2026
 
-Current inventory: **20,261 statements**, 114 rows (97 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `chile-gap-fill-2026-10-10.md`; preceding `north-africa-national-audit-2026-10-10.md`.
+Current inventory: **20,281 statements**, 114 rows (97 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `chile-country-audit-2026-10-10.md`; preceding `north-africa-national-audit-2026-10-10.md`.
 
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
@@ -25,7 +25,7 @@ Current inventory: **20,261 statements**, 114 rows (97 national, 12 regional, 2 
 - **HMMT**: February Team up to 2012, with year-specific format checks.
 - **MEMO**: official final papers for 2026 (12 statements).
 - **Argentina**: 1994/1.
-- **Chile**: 1991 now stores /1–6; only /7 remains, requiring the missing mass-distribution network. P6 diagram reconstructed from corroborated point memberships; original figure remains unrecovered. 2004 complete senior final added (six statements, secondary compilation). Whole years 1998, 2005, 2017 remain; 1993 and 2013 have unresolved source issues. See `chile-gap-fill-2026-10-10.md`. Figures 1989/3, 1995/2,/7, 1999/2, 2025/3 already exist; some still need primary-source confirmation.
+- **Chile**: final now has 214 statements, including complete 1993 (7), 1998 (7) and 2013 (6). Remaining missing final material: 1991/7 network, whole 2005 (readable full secondary paper recovered but P1 boundary/strict-inequality issue unresolved), whole 2017. 1993/2 contact-condition ambiguity visible; 2013/5 printed hint omitted with an editorial statement diagram. 1998/2004/2025 remain secondary. TST: 46 statements in the 12 available senior papers; old Ibero 1999–2012 and IMO 2007/2009/2010 candidates are isolated geometry only, not full papers; 2017–2021 and Ibero 2022/2026 unretrieved. Full country inventory and source ledger: `chile-country-audit-2026-10-10.md`. 2026 final scheduled 22–24 October, not yet held.
 - **Italy PreIMO**: 2009, 2020, 2021, 2023–2026. Do not substitute Gobbino training lessons.
 - **Belgium MAXI final**: 2009–2021, official archive behind login.
 - **Uruguay nivel V final**: held-paper gaps 2018–2025. The 2026 final is scheduled for 25 Oct 2026 and is not yet a missing held paper. Follow-up direct downloads and PDF screenshots for 2020/2022 return 404; indexed statements remain outside the bank pending visual inspection. 2018/2019 source independently identified as the 227-page FONMAT book, ISBN 978-9915-43-579-4; 2023/2024 final links remain placeholders. No new Uruguay imports. See `uruguay-retrieval-2026-10-10.md` and `national-gaps-audit-2026-10-10.md`.
@@ -36,7 +36,7 @@ Current inventory: **20,261 statements**, 114 rows (97 national, 12 regional, 2 
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,636 / 20,261 checked; 14,625 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,647 / 20,281 checked; 14,634 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.

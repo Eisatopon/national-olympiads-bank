@@ -385,9 +385,95 @@
       ],
       "download_kind": "statements_only",
       "original_contains_solutions": true
+    },
+    {
+      "year": 1993,
+      "source_url": "https://drive.google.com/uc?export=download&id=1W2oDC4FxIZEtE2rjtI5lD5Hobalm30tT",
+      "source_sha256": "ed2f95ae05a8e74159dd5ea1d7bc9cfaa1e1680475ee05c958f072c91d48f8ec",
+      "path": "sources/chile/final/1993-statements.pdf",
+      "sha256": "ed2f95ae05a8e74159dd5ea1d7bc9cfaa1e1680475ee05c958f072c91d48f8ec",
+      "source_pages": [
+        1,
+        2
+      ],
+      "download_kind": "original",
+      "original_contains_solutions": false,
+      "checked_at": "2026-10-10"
+    },
+    {
+      "year": 1998,
+      "source_url": "https://drive.google.com/file/d/1wi5XFmNn7qDuA8vCmZoCK7UY0Me3sg7U/view",
+      "source_sha256": "2393eeba167e089c1568f0c62da7d47ff82ea8b77faf5fee5176b1084382b36c",
+      "path": "sources/chile/final/1998-compendium-statements.pdf",
+      "sha256": "d3c2ba039642a93e9542ffa3337f0120c312cfddf4c6d8b47be858d8cc627903",
+      "source_pages": [
+        22,
+        23
+      ],
+      "download_kind": "secondary_statements_only",
+      "original_contains_solutions": false,
+      "checked_at": "2026-10-10"
+    },
+    {
+      "year": 2004,
+      "source_url": "https://drive.google.com/file/d/1wi5XFmNn7qDuA8vCmZoCK7UY0Me3sg7U/view",
+      "source_sha256": "2393eeba167e089c1568f0c62da7d47ff82ea8b77faf5fee5176b1084382b36c",
+      "path": "sources/chile/final/2004-compendium-statements.pdf",
+      "sha256": "f66a3c2460958c463474435476689c9602fe164f083ccb891ac946246be19e46",
+      "source_pages": [
+        48,
+        49
+      ],
+      "download_kind": "secondary_statements_only",
+      "original_contains_solutions": false,
+      "checked_at": "2026-10-10"
+    },
+    {
+      "year": 2013,
+      "source_url": "https://drive.google.com/uc?export=download&id=1cskWZHqx67SvtEeAPrTJm4ABTR3OAyuo",
+      "source_sha256": "0407421c18a4bd4b438ae42f1a4c1a21479cbd08d66282055c968b270b9a615d",
+      "path": "sources/chile/final/2013-statements.pdf",
+      "sha256": "f82b1c6241249639741ffd24dd010c2ebe65f837d2767ecf8bc31b46d3816be8",
+      "source_pages": [
+        3,
+        4
+      ],
+      "download_kind": "statements_without_printed_hint",
+      "original_contains_solutions": false,
+      "checked_at": "2026-10-10"
     }
   ],
-  "excluded_sources": [
+  "corroboration": [
+    {
+      "year": 2019,
+      "official_archive_filename": "2019_nivelmayor_final_SOLUCIONES.pdf",
+      "official_edition": "XXXI",
+      "official_header_year": 2020,
+      "aops_collection": "https://artofproblemsolving.com/community/c3181503",
+      "mirror": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-2019-chile-nmo-nivel-mayor-final-round-solutions/155924939",
+      "finding": "All four statements match; recorded as 2019 with a visible source-label note."
+    },
+    {
+      "year": 2024,
+      "official_archive_filename": "2024_nivelmayor_final_SOLUCIONES.pdf",
+      "official_header": "Prueba Nacional",
+      "aops_collection": "https://artofproblemsolving.com/community/c4076770",
+      "mirror": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2024-chile-nmo-final-round-problem-set/155924928",
+      "finding": "All six statements match the AoPS senior-final collection; original official condition k>2 is retained rather than the mirror k≥2."
+    },
+    {
+      "year": 1993,
+      "official_archive_filename": "1993_final.pdf",
+      "official_header": "Problemas para la Prueba Final (undated)",
+      "secondary_url": "https://drive.google.com/file/d/1wi5XFmNn7qDuA8vCmZoCK7UY0Me3sg7U/view",
+      "secondary_pages": [
+        11,
+        12
+      ],
+      "finding": "Seven matching numbered problems establish 1993 set identity; original P2 rectangle wording retained over contradictory secondary circle variant. P6 original non-strict inequality retained over secondary typo."
+    }
+  ],
+  "historical_exclusions_2026_10_03": [
     {
       "year": 1989,
       "reason": "Problem 3 refers to a missing original figure."
@@ -413,23 +499,30 @@
       "reason": "The geometry statement explicitly gives a hint, and its original diagram includes the Dandelin-spheres construction. A faithful version without that hint is still needed."
     }
   ],
-  "corroboration": [
+  "current_blockers_2026_10_10": [
     {
-      "year": 2019,
-      "official_archive_filename": "2019_nivelmayor_final_SOLUCIONES.pdf",
-      "official_edition": "XXXI",
-      "official_header_year": 2020,
-      "aops_collection": "https://artofproblemsolving.com/community/c3181503",
-      "mirror": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-2019-chile-nmo-nivel-mayor-final-round-solutions/155924939",
-      "finding": "All four statements match; recorded as 2019 with a visible source-label note."
+      "year": 1991,
+      "problems": [
+        7
+      ],
+      "reason": "Original network absent from official PDF and not located in reviewed secondary sources."
     },
     {
-      "year": 2024,
-      "official_archive_filename": "2024_nivelmayor_final_SOLUCIONES.pdf",
-      "official_header": "Prueba Nacional",
-      "aops_collection": "https://artofproblemsolving.com/community/c4076770",
-      "mirror": "https://www.studocu.com/row/document/moi-secondary-school-naikarra/physics/aops-community-2024-chile-nmo-final-round-problem-set/155924928",
-      "finding": "All six statements match the AoPS senior-final collection; original official condition k>2 is retained rather than the mirror k≥2."
+      "year": 2005,
+      "problems": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reason": "Complete secondary paper recovered, pp. 52–53, but P1 strict inequality conflicts with corner contact permitted by the printed wording. No speculative repair or isolated P2–7 import."
+    },
+    {
+      "year": 2017,
+      "reason": "Final was held, but official category contains only qualifier and final Drive archive has no 2017 paper."
     }
   ]
 }
