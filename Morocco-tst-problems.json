@@ -160,6 +160,41 @@
           "problem": "For a positive integer $k$, let $S(k)$ be the sum of its decimal digits. Find all polynomials $P(x)$ with integer coefficients such that, for every integer $n\\geq2016$, the integer $P(n)$ is positive and $$S(P(n))=P(S(n)).$$"
         }
       ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n\\geq4$ points, labelled $1,2,\\ldots,n$ consecutively, lie on a circle. Two players, $A$ and $B$, alternately draw a chord whose endpoints have labels of the same parity. No two drawn chords may intersect, even at an endpoint. Player $A$ starts, and the player who draws the last chord wins. Which player has a winning strategy?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a non-isosceles triangle with $AB<AC$, and let $I$ be its incenter. The external angle bisector of $\\angle BAC$ meets the line $BC$ at $T$. Let $K$ lie on the perpendicular bisector of $BC$ such that $IT\\perp IK$. If $O$ and $R$ are the circumcenter and circumradius of $ABC$, prove that $OK=3R$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a_1,\\ldots,a_k$ be positive integers, and let $f$ be a nonconstant polynomial with integer coefficients. Prove that there exists an infinite set $A$ of prime numbers such that, for every $p\\in A$, the expression $$f(n)+a_1^n+\\cdots+a_k^n$$ is divisible by $p$ for infinitely many values of $n$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For $n\\geq1$, an $n$-tuple $(a_1,\\ldots,a_n)$ of positive integers is called admissible if its entries are pairwise distinct and, for every $i,j\\in\\{1,\\ldots,n\\}$, there exists $k\\in\\{1,\\ldots,n\\}$ such that $$a_i\\equiv-2a_k\\pmod{a_j}.$$ Determine all admissible $n$-tuples."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f:\\mathbb{R}_{>0}\\to\\mathbb{R}_{>0}$ satisfying $$x+f(yf(x)+1)=xf(x+y)+yf(yf(x))$$ for all positive real numbers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The road network of a country is a connected simple graph: each road joins two distinct cities, and at most one road joins any pair of cities. There are exactly $a$ cities where four roads meet and $b$ cities where three roads meet, and no other cities, where $a,b$ are positive integers.\n\nThe country is called happy if it is possible to assign every road to the State or to one of three companies $A,B,C$ so that both of the following conditions hold:\n\n(1) At every city where three roads meet, the roads are either all assigned to the State or assigned one each to $A,B,C$.\n\n(2) At least one road is assigned to a company.\n\nFind the smallest real number $\\lambda$ such that every such country with $a>\\lambda b$ is happy."
+        }
+      ]
     }
   ]
 }

@@ -82282,9 +82282,28 @@
           "url": "https://artofproblemsolving.com/downloads/printable_post_collections/642440",
           "label": "AoPS secondary compilation: Morocco TST 2017",
           "verification": "unverified"
+        },
+        {
+          "url": "https://drive.google.com/file/d/1UWNoKcRrODCCpwoCBu4mUvtO83cRVb_B/view",
+          "label": "Math&Maroc 2025 trainers report: actual TST, printed pages 53–54",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2022/hmic/problems.pdf",
+          "label": "HMIC 2022 original P4: source for editorial restoration of Morocco 2025 P6",
+          "verification": "unverified"
         }
       ],
-      "coverage_notes": "Complete two-day sets as printed in the AoPS secondary compilations: 2010 (8), 2011 (6), 2012 (8), 2017 (6). Every page visually inspected; not checked against original ministry papers. Other years unresolved; this is not continuous historical coverage. 2025 withheld pending clarification of problem 6 in the trainers booklet. See docs/north-africa-national-audit-2026-10-10.md."
+      "coverage_notes": "Complete two-day secondary-source sets: 2010 (8), 2011 (6), 2012 (8), 2017 (6), 2025 (6). Pages visually inspected; original Moroccan exam comparison remains pending. 2025 actual TST dates: 19–20 March. P6 uses explicitly documented editorial restoration of hypotheses from the original reused HMIC 2022 P4. Other years unresolved; no claim of continuous historical coverage. See docs/north-africa-national-audit-2026-10-10.md.",
+      "statement_notes": {
+        "mat.2025.2.6": {
+          "kind": "source_domain_gap",
+          "text": "Editorial restoration: the 2025 trainers report omits that happiness means the existence of a suitable road assignment, that the network is a connected simple graph with no vertices of other degrees, and that a,b are positive. Its P6 is identifiable as the road-network rewording of HMIC 2022 P4; the report also reproduces the original first solution. The hypotheses above are restored from that original problem sheet (https://hmmt-archive.s3.amazonaws.com/tournaments/2022/hmic/problems.pdf). This is a disclosed reconstruction; the original Moroccan 2025 examination sheet has not been recovered.",
+          "reviewed_statement": "The road network of a country is a connected simple graph: each road joins two distinct cities, and at most one road joins any pair of cities. There are exactly $a$ cities where four roads meet and $b$ cities where three roads meet, and no other cities, where $a,b$ are positive integers.\n\nThe country is called happy if it is possible to assign every road to the State or to one of three companies $A,B,C$ so that both of the following conditions hold:\n\n(1) At every city where three roads meet, the roads are either all assigned to the State or assigned one each to $A,B,C$.\n\n(2) At least one road is assigned to a company.\n\nFind the smallest real number $\\lambda$ such that every such country with $a>\\lambda b$ is happy.",
+          "statement_sha256": "655fa1ac967579b0759468674c2588b495b86c033cc83eaec05ba3230a32185e",
+          "checked_at": "2026-10-10"
+        }
+      }
     }
   }
 }
