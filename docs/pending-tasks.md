@@ -1,6 +1,6 @@
 # Pending tasks — updated 10 Oct 2026
 
-Current inventory: **20,210 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-early-serbia-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
+Current inventory: **20,216 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-early-serbia-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
 
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
@@ -17,7 +17,8 @@ Current inventory: **20,210 statements**, 113 rows (96 national, 12 regional, 2 
 - Iberoamerican, Cono Sur and OMCC gaps closed in previous batch: see `regional-gap-fill-2026-10-09.md`.
 
 ## Remaining source / coverage gaps
-- **Small-country national priority**: Nepal and Uzbekistan complete final series not yet retrieved. Kyrgyzstan older finals, 2020–2021 and 2026 remain unretrieved; do not substitute Kazakhstan papers or the separate KSMS event. Paraguay before 2001 and 2017–2026; Malaysia older OMK series remain separate. Four editorial records in the added papers still lack exact-source checks. See `small-national-2026-10-10.md`.
+- **Kosovo Grade 12 national**: missing 2014, 2015, 2018. Official old download buttons are broken; the independent 2018 Grade XII image returns HTTP 404. A 2014 candidate lacks grade evidence and readable formulas; no complete 2015 source found. No statements added in this audit. See `kosovo-gaps-2026-10-10.md`.
+- **Small-country national priority**: Nepal and Uzbekistan complete final series not yet retrieved. Follow-up source audit: `nepal-uzbekistan-source-audit-2026-10-10.md`; Nepal candidate year/formula conflicts unresolved, Uzbekistan catalogue listings do not yet yield complete original exams. Kyrgyzstan 2018 final added (six statements); before 2018, 2020 and 2026 Republican final papers remain unretrieved. The 2021 Republican Stage IV was not held; Stage III winners received national awards. See `kyrgyzstan-followup-2026-10-10.md`; do not substitute Kazakhstan papers or the separate KSMS event. Paraguay before 2001 and 2017–2026; Malaysia older OMK series remain separate. Four editorial records in the added papers still lack exact-source checks. See `small-national-2026-10-10.md`.
 - **Morocco / Algeria**: see `north-africa-national-audit-2026-10-10.md`; neither imported. Morocco archive requires category/round/year classification; ALMO 2025 Senior PDF direct retrieval failed with HTTP 502.
 - **Silk Road SRMC**: 2002–2025 now stored as 24 complete four-problem papers (96 statements) from Matol.kz, secondary-source-only. Remaining: the complete 2026 paper and original-paper comparison for all 96. See `silk-road-2026-10-10.md`.
 - **PAMO**: 22 full papers stored: 2000–2010, 2012–2013, 2015–2019, 2021, 2023–2025. Missing held editions: 1987, 1989, 1991, 1993, 1994, 1995, 1997, 1998, 2022, 2026. Official timeline marks 1996 canceled; no editions in 1988, 1990, 1992, 1999, 2011, 2014, 2020. Original-source comparison remains for 126/132; 2024 checked. 2022 French transcription has unresolved conditions (P3 range, P4 codomain, P5 distinctness); 2026 available unofficial solution summary is not an exam source. Do not import these without resolving provenance and formulas.
@@ -35,7 +36,7 @@ Current inventory: **20,210 statements**, 113 rows (96 national, 12 regional, 2 
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,626 / 20,210 checked; 14,584 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,632 / 20,216 checked; 14,584 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.

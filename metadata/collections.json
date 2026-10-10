@@ -81755,7 +81755,7 @@
       "competition": "Kyrgyzstan Republican Mathematical Olympiad — Final (Stage IV)",
       "verification_status": "not_verified_against_source",
       "coverage": "known_gaps",
-      "coverage_notes": "Five complete official Stage IV final papers, 2019 and 2022–2025, both days and all six problems per year (30 statements). English translations; Cyrillic letters retained in the 2019 word puzzles because their identities are part of the questions. No claim of historical completeness: 2020–2021, older years and 2026 remain unretrieved. This is not Kazakhstan or the separate KSMS contest. Source conventions are preserved: 2023/6 does not explicitly discuss the left endpoint of the row; 2024/6 uses a front desk without specifying a row. Source comparison does not independently certify these questions mathematically.",
+      "coverage_notes": "Six complete official Stage IV final papers, 2018–2019 and 2022–2025, both days and all six problems per year (36 statements). English translations; original source conventions and Cyrillic identities in 2019 retained. Historical coverage remains incomplete: before 2018, 2020 and 2026 papers are unretrieved. The 2021 Stage IV final was not held: Ministry decision recognized Stage III regional winners instead (reported 23 April 2021 by Elgezit). National/Alternative Olympiad and KSMS are distinct competitions. No claim of independent mathematical certification.",
       "source_links": [
         {
           "url": "https://testing.kg/media/uploads/files/olimpiada/2019/math_task_1.pdf",
@@ -81805,6 +81805,21 @@
         {
           "url": "https://testing.kg/media/uploads/2025/10/06/2_7ghW6DI.pdf",
           "label": "Official Stage IV final 2025, day 2",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_1_rukg.pdf",
+          "label": "Official Stage IV final 2018, day 1; original bilingual statement booklet",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_2_rukg.pdf",
+          "label": "Official Stage IV final 2018, day 2; original bilingual statement booklet",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://testing.kg/media/uploads/files/olimpiada/math_resh_1_rukg.pdf",
+          "label": "Official 2018 Stage IV marking document: corroborates year, round and day 1 paper; solutions excluded",
           "verification": "unverified"
         }
       ],
@@ -82168,6 +82183,78 @@
           "source_page": 4,
           "source_problem_number": 6,
           "source_document_sha256": "f28040f46e000657621f6f35f0766139fe99733f8e38751a3659f555cd10eadc"
+        },
+        "kg.2018.1.1": {
+          "reviewed_statement": "Wrestlers from the villages of Orto-Suu and Kyzyl-Dyikan took part in an alysh tournament. There were $9$ more wrestlers from Orto-Suu than from Kyzyl-Dyikan. Every wrestler competed against every other wrestler; a win earned $1$ point and a loss $0$ points. The wrestlers from Orto-Suu scored in total $9$ times as many points as those from Kyzyl-Dyikan. What is the greatest possible total number of points scored by the wrestlers from Kyzyl-Dyikan?",
+          "statement_sha256": "37dd489893bc6d2687dc1aa70015e0b2d733d857393c8b60540916f89216c25e",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_1_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 1,
+          "source_document_sha256": "86346c5b7ffb574382dd37284f3691d98259179e615d2ee8205c03023342b055"
+        },
+        "kg.2018.1.2": {
+          "reviewed_statement": "The medians drawn from vertices $A$ and $B$ of triangle $ABC$ are perpendicular. Prove that $AB$ is the shortest side of triangle $ABC$.",
+          "statement_sha256": "787dcfcb269d9a735653e40f1788a6d4319a467eacd2844a069358df986bc493",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_1_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 2,
+          "source_document_sha256": "86346c5b7ffb574382dd37284f3691d98259179e615d2ee8205c03023342b055"
+        },
+        "kg.2018.1.3": {
+          "reviewed_statement": "Find all triples of natural numbers $(x,y,z)$ satisfying $$1+4^x+4^y=z^2.$$",
+          "statement_sha256": "b691900f8555e20768182aa0bf8d5232113f614b391b397fb86183ee40e725f0",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_1_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 3,
+          "source_document_sha256": "86346c5b7ffb574382dd37284f3691d98259179e615d2ee8205c03023342b055"
+        },
+        "kg.2018.2.4": {
+          "reviewed_statement": "Prove that for positive numbers $a,b,c$, $$\\frac{a^2}{b}+\\frac{b^3}{c^2}+\\frac{c^4}{a^3}\\ge -a+2b+2c.$$",
+          "statement_sha256": "890c3de30028f4312985687cb6be2a7ce5251e7210c62b8b5589298cb99d0272",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_2_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 4,
+          "source_document_sha256": "4ac4deb4d6afeb33c7fc19425e478d64268b7d09ea1c8cf3a8fcd1c450bfa92f"
+        },
+        "kg.2018.2.5": {
+          "reviewed_statement": "Let $x,y,z$ be positive numbers such that $x^n,y^n,z^n$ are the side lengths of a triangle for every natural number $n$. Determine all such triangles.",
+          "statement_sha256": "c5e8e17b1bc9eea756849b700e3baa52dfd7f8e6c33b1f221cc0536e964a2c74",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_2_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 5,
+          "source_document_sha256": "4ac4deb4d6afeb33c7fc19425e478d64268b7d09ea1c8cf3a8fcd1c450bfa92f"
+        },
+        "kg.2018.2.6": {
+          "reviewed_statement": "Find the integer part of $$\\frac{2^1}{1!}+\\frac{2^2}{2!}+\\cdots+\\frac{2^{2018}}{2018!},$$ where the integer part of a number $\\alpha$ is the greatest integer not exceeding $\\alpha$.",
+          "statement_sha256": "433132095e374361895cb968d42427fe3f9fa4e979972c514ae314e0a5bef1c7",
+          "status": "statement_checked_against_source",
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "Complete original testing.kg bilingual statement paper; faithful English translation of Russian text, all formulas visually compared. Year and Stage IV corroborated by official matching day 1 marking document. Statements only; no solutions or hints imported.",
+          "source_url": "https://testing.kg/media/uploads/files/olimpiada/math_tasks_2_rukg.pdf",
+          "source_page": 2,
+          "source_problem_number": 6,
+          "source_document_sha256": "4ac4deb4d6afeb33c7fc19425e478d64268b7d09ea1c8cf3a8fcd1c450bfa92f"
         }
       }
     }

@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 20210 stored records; 5626 source-checked; 14584 remaining (including quarantine).
+Inventory: 20216 stored records; 5632 source-checked; 14584 remaining (including quarantine).
 
-Active bank: 20210 records; 5626 source-checked; 14584 remaining. Whole-bank source verification is **not complete**.
+Active bank: 20216 records; 5632 source-checked; 14584 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -73,7 +73,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Korea-fkmo-problems.json | 186 | 0 | 186 | pending |
 | Korea-kmo-problems.json | 192 | 0 | 192 | pending |
 | Kosovo-nmo-problems.json | 67 | 0 | 67 | pending |
-| Kyrgyzstan-republican-problems.json | 30 | 30 | 0 | stored_statements_checked |
+| Kyrgyzstan-republican-problems.json | 36 | 36 | 0 | stored_statements_checked |
 | Latvia-vol-problems.json | 175 | 0 | 175 | pending |
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
