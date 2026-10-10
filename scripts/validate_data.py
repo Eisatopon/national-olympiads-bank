@@ -7,11 +7,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QUARANTINED = set()
 KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
-              ('Chile-final-problems.json', 1991): [3]
+              ('Chile-final-problems.json', 1991): [1, 2, 3, 4, 5, 6]
 }
 # Iberoamerican gaps restored from the clean Universidad de Jaen archive on 9 Oct 2026.
 # Centroamerican 2017 P1 restored with the figure from Universidad de Jaen on 9 Oct 2026.
-# Chile 1991 is explicitly partial: the user requested its intact Problem 3 only.
+# Chile 1991 remains partial: P1–6 restored; P7 lacks its essential network diagram.
 
 
 def validate(data, filename, root=ROOT):

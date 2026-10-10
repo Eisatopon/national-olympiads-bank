@@ -40749,7 +40749,7 @@
       "competition": "Chile National Mathematical Olympiad — Senior Final (Nivel Mayor)",
       "verification_status": "not_verified_against_source",
       "coverage": "partial",
-      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation. The complete six-problem 2025 senior-final set is restored from a public mirror of the AoPS collection c4665862; its original linked Problem 3 PNG is included. The mirror is a secondary source and primary-source confirmation remains pending. At the user’s explicit request, only 1991 Problem 3 is indexed with its intact source diagram. The 1991 set is partial, not a complete paper; Problems 6 and 7 still lack essential figures.",
+      "coverage_notes": "All recorded senior-final statements are indexed with complete English translations; statement diagrams and supplements are identified in individual source checks. PDF downloads retain only senior statements and remove solutions; the explicit 1990 helpful-facts section is omitted. Original source labels and unresolved printed errors are documented. The 2022 complementary Problem 7 is excluded. Exam day or part is recorded only when explicitly labelled. No coverage claim for missing years; AI-assisted source review does not certify mathematical correctness. Restored complete 1989 and 1995 papers (seven problems each); their official scans omit three statement figures, supplied from a separately identified geometry archive. The restored PDFs append a labelled figure supplement. The 1989 Problem 6 indexing ambiguity remains documented. The 1999 senior final now has all seven indexed statements. Its original PDF contains only the author name for Part I Problem 2; that statement is restored from the separately linked geometry compilation and awaits primary-source confirmation. The complete six-problem 2025 senior-final set is restored from a public mirror of the AoPS collection c4665862; its original linked Problem 3 PNG is included. The mirror is a secondary source and primary-source confirmation remains pending. 1991 now contains Problems 1–6; P1, P2, P4 and P5 were visually compared with the original paper on 10 Oct 2026. P6 uses the original statement plus point memberships corroborated by a secondary geometry compilation; its diagram is an explicitly documented reconstruction, not the recovered original. P7 remains excluded because the mass-distribution network is missing. The complete six-problem 2004 senior final is translated from Adolfo Villalobos’s ONM Compendium, a secondary compilation; no original-source badges are assigned. Missing full papers still include 1998, 2005 and 2017; 1993 and 2013 have unresolved source issues.",
       "source_links": [
         {
           "url": "https://www.olimpiadadematematica.cl/index.php/entrenamiento/1-ejercicio-01",
@@ -40783,7 +40783,12 @@
         },
         {
           "url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
-          "label": "Official 1991 final; only P3 indexed, full paper remains incomplete in the bank",
+          "label": "Official 1991 final: P1–6 indexed; P7 network diagram still missing",
+          "verification": "unverified"
+        },
+        {
+          "url": "https://es.scribd.com/document/144757472/ONM-Compendium-Adolfo-Villalobos",
+          "label": "Adolfo Villalobos, ONM Compendium: 2004 Nivel Mayor final, pp. 47–48; secondary compilation",
           "verification": "unverified"
         }
       ],
@@ -43596,6 +43601,62 @@
               "sha256": "79418a18f542d75a106c21def1bc8ee7c735c0edb4de11449eeb5f934f6117b9"
             }
           ]
+        },
+        "clf.1991.1.1": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Find all nonnegative integer solutions $(x,y)$ of $$2^x-2^y=1,$$ and prove that there are no others.",
+          "statement_sha256": "dada90fac057fde1ef4cf3c41f9a054bc3016080535e2867d15e0945e1213583",
+          "source_url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "source_document_sha256": "6676f69cdf50be8e8b9b4351414da4131b4cec5692ffce41f0248d495b6d456a",
+          "source_page": 1,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "English translation and formulas visually compared with the official Spanish final paper. No solutions or hints added.",
+          "source_contains_solutions": false,
+          "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1991-statements.pdf"
+        },
+        "clf.1991.1.2": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "A polygon inscribed in a circle has all its interior angles equal and an odd number of sides. Prove that it is regular, that is, all its sides are equal.",
+          "statement_sha256": "9ab0b7bf98af84a28852b96e7d291032b4c4f175426af514f432434566822919",
+          "source_url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "source_document_sha256": "6676f69cdf50be8e8b9b4351414da4131b4cec5692ffce41f0248d495b6d456a",
+          "source_page": 1,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "English translation and formulas visually compared with the official Spanish final paper. No solutions or hints added.",
+          "source_contains_solutions": false,
+          "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1991-statements.pdf"
+        },
+        "clf.1991.2.4": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Prove that, for integers $x,y$, the number $2x+3y$ is divisible by $17$ if and only if $9x+5y$ is divisible by $17$.",
+          "statement_sha256": "79992d80353c73d766f6056675cf569588995b9ecc85a1bc56c7af9fdf278e2d",
+          "source_url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "source_document_sha256": "6676f69cdf50be8e8b9b4351414da4131b4cec5692ffce41f0248d495b6d456a",
+          "source_page": 2,
+          "source_problem_number": 1,
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "English translation and formulas visually compared with the official Spanish final paper. No solutions or hints added.",
+          "source_contains_solutions": false,
+          "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1991-statements.pdf"
+        },
+        "clf.1991.2.5": {
+          "status": "statement_checked_against_source",
+          "reviewed_statement": "Let $a_0=a_1=1$ and $a_n=a_{n-1}+a_{n-2}$ for every integer $n>1$. Calculate the infinite sum $$a_0+\\frac12a_1+\\frac14a_2+\\frac18a_3+\\cdots+\\frac1{2^n}a_n+\\cdots.$$",
+          "statement_sha256": "68ac23f49315f254a6f704043e044dd496d49bfd031f9411095457b599ca96c3",
+          "source_url": "https://drive.google.com/file/d/1Nyxg5OA7lbWUAqE5tKfb2qd9kNoyz6K-/view",
+          "source_document_sha256": "6676f69cdf50be8e8b9b4351414da4131b4cec5692ffce41f0248d495b6d456a",
+          "source_page": 2,
+          "source_problem_number": 2,
+          "checked_at": "2026-10-10",
+          "review_method": "AI-assisted visual and textual comparison",
+          "scope": "English translation and formulas visually compared with the official Spanish final paper. No solutions or hints added.",
+          "source_contains_solutions": false,
+          "source_download_url": "https://eisatopon.github.io/national-olympiads-bank/sources/chile/final/1991-statements.pdf"
         }
       },
       "statement_notes": {
@@ -43738,6 +43799,13 @@
           "statement_sha256": "f1e4fb5afb32af99935bf80f4ed1445c015261cbb8e652df57c14e677ecc87b0",
           "checked_at": "2026-10-04",
           "text": "Partial year: only Problem 3 is indexed from the 1991 senior final. This is not a complete seven-problem set; the essential figures of Problems 6 and 7 remain missing."
+        },
+        "clf.1991.2.6": {
+          "kind": "source_domain_gap",
+          "checked_at": "2026-10-10",
+          "reviewed_statement": "In triangle $ABC$, $\\angle ACB=36^\\circ$ and $\\angle CAB=\\angle CBA$. Let $D\\in BC$, $E\\in AD$, $F\\in BE$, $G\\in DF$ and $H\\in EG$ be such that $AD$, $BE$, $DF$, $EG$ and $FH$ bisect $\\angle CAB$, $\\angle ABD$, $\\angle BDE$, $\\angle DEF$ and $\\angle EFG$, respectively. If $FH=1$, calculate $AC$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/clf_1991_p6_fig.png",
+          "statement_sha256": "3825a731d96ba20dd307826111b580fe77dc55f64e6fdca85c12e5d16c757cba",
+          "text": "The official scan omits its diagram. Point memberships are supplied by the separately linked geometry compilation; the displayed diagram was reconstructed from those memberships and the stated internal angle bisectors. It is not the recovered original figure."
         }
       },
       "secondary_statement_evidence": {
@@ -43816,11 +43884,6 @@
       },
       "missing_problem_numbers": {
         "1991": [
-          1,
-          2,
-          4,
-          5,
-          6,
           7
         ]
       }

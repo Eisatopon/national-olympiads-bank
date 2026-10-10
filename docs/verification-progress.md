@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 20250 stored records; 5632 source-checked; 14618 remaining (including quarantine).
+Inventory: 20261 stored records; 5636 source-checked; 14625 remaining (including quarantine).
 
-Active bank: 20250 records; 5632 source-checked; 14618 remaining. Whole-bank source verification is **not complete**.
+Active bank: 20261 records; 5636 source-checked; 14625 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -29,7 +29,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Bulgaria-tst-problems.json | 50 | 0 | 50 | pending |
 | Canada-cmo-problems.json | 323 | 323 | 0 | stored_statements_checked |
 | Centroamerican-omcc-problems.json | 168 | 168 | 0 | stored_statements_checked |
-| Chile-final-problems.json | 183 | 176 | 7 | pending |
+| Chile-final-problems.json | 194 | 180 | 14 | pending |
 | Chile-tst-problems.json | 46 | 46 | 0 | stored_statements_checked |
 | China-olympiad-problems.json | 246 | 240 | 6 | pending |
 | China-tst-problems.json | 488 | 0 | 488 | pending |
