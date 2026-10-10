@@ -51,3 +51,7 @@ The official historical archive was located at https://old.matematika.hr/natjeca
 A secondary volunteer archive links an apparent original 2014 four-grade exam PDF at https://izvori.matzadaci.com/izvori/2014/2014-SS-drzavno-A-1234-zad.pdf. The search service exposes its text, including five senior problems on page 4, but direct download returned 403 and screenshot calls yielded only a textual image placeholder, not inspectable image content. No visual review is claimed and no statement was imported. Constructed mirror filename probes for 2006–2013 also returned 403; their existence is not established by those failures.
 
 These access failures are retrieval blockers, not evidence that the papers never existed. Continue with a readable original or a complete trustworthy alternative; do not close the coverage gaps or label extracted text as visually checked.
+
+## Follow-up: Croatia access resolved
+
+The retrieval blockers above record the initial routes checked, not the current coverage result. A subsequent search located downloadable original examination PDFs mirrored at Školjka. All nine senior pages were inspected visually; all 43 statements for 2006–2014 have now been added. See `croatia-finals-2026-10-10.md`. Uruguay blockers and the corrected cancellation/scheduling classifications remain unchanged.
