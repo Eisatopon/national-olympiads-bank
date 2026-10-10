@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 20195 stored records; 5602 source-checked; 14593 remaining (including quarantine).
+Inventory: 20210 stored records; 5626 source-checked; 14584 remaining (including quarantine).
 
-Active bank: 20195 records; 5602 source-checked; 14593 remaining. Whole-bank source verification is **not complete**.
+Active bank: 20210 records; 5626 source-checked; 14584 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -11,7 +11,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Collection | Stored records | Source checked | Remaining | State |
 |---|---:|---:|---:|---|
 | APMO-problems.json | 190 | 190 | 0 | stored_statements_checked |
-| Albania-nmo-problems.json | 25 | 0 | 25 | pending |
+| Albania-nmo-problems.json | 40 | 24 | 16 | pending |
 | Argentina-level3-problems.json | 191 | 4 | 187 | pending |
 | Australia-amo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | Austria-oemo-problems.json | 72 | 0 | 72 | pending |

@@ -1,6 +1,6 @@
 # Pending tasks — updated 10 Oct 2026
 
-Current inventory: **20,195 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-early-serbia-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
+Current inventory: **20,210 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-early-serbia-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
 
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
@@ -35,7 +35,9 @@ Current inventory: **20,195 statements**, 113 rows (96 national, 12 regional, 2 
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,602 / 20,195 checked; 14,593 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,626 / 20,210 checked; 14,584 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.
+
+- **Albania senior final**: complete stored papers 2010–2012 and 2022–2026 (40 statements). 2013–2021 and earlier remain unretrieved; legacy official PDF URLs fail. QSHA 2022–2026 checked visually (24 exact-source checks, one disclosed codomain correction); 2010–2012 remain AoPS-only. See `albania-finals-2026-10-10.md`.
