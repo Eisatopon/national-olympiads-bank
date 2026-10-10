@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 19983 stored records; 5391 source-checked; 14592 remaining (including quarantine).
+Inventory: 20128 stored records; 5532 source-checked; 14596 remaining (including quarantine).
 
-Active bank: 19983 records; 5391 source-checked; 14592 remaining. Whole-bank source verification is **not complete**.
+Active bank: 20128 records; 5532 source-checked; 14596 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -73,10 +73,12 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Korea-fkmo-problems.json | 186 | 0 | 186 | pending |
 | Korea-kmo-problems.json | 192 | 0 | 192 | pending |
 | Kosovo-nmo-problems.json | 67 | 0 | 67 | pending |
+| Kyrgyzstan-republican-problems.json | 30 | 30 | 0 | stored_statements_checked |
 | Latvia-vol-problems.json | 175 | 0 | 175 | pending |
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
 | MEMO-problems.json | 224 | 212 | 12 | pending |
+| Malaysia-imonst2-problems.json | 36 | 33 | 3 | pending |
 | Mexico-omm-problems.json | 238 | 0 | 238 | pending |
 | Moldova-tst-problems.json | 132 | 0 | 132 | pending |
 | Netherlands-final-problems.json | 312 | 0 | 312 | pending |
@@ -86,6 +88,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | NorthMacedonia-mmo-problems.json | 97 | 0 | 97 | pending |
 | Norway-abel-problems.json | 136 | 0 | 136 | pending |
 | Pan-African-problems.json | 132 | 6 | 126 | pending |
+| Paraguay-omapa-problems.json | 79 | 78 | 1 | pending |
 | Peru-tst-problems.json | 112 | 0 | 112 | pending |
 | Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 444 | 0 | 444 | pending |
@@ -132,6 +135,8 @@ The 9 Oct 2026 gap batch added four Argentina statements, 120 Kangaroo questions
 The 10 Oct 2026 Silk Road batch added 96 statements, 24 complete four-problem papers (2002–2025), translated from the secondary Matol.kz HTML archive. No original-source checks were added. 2026 and original-paper comparison remain pending. See silk-road-2026-10-10.md.
 
 The 10 Oct 2026 PAMO batch added 18 statements (2003, 2024, 2025) and six original-sheet checks for 2024. PAMO now stores 132 statements in 22 complete papers; 126 remain without original-source checks. See pamo-2026-10-10.md.
+
+The 10 Oct 2026 small-national batch added 145 statements: Paraguay Level 3 final 2001–2016 (79) and Malaysia IMONST 2 Senior 2020–2025 (36), and Kyrgyzstan Stage IV final 2019 and 2022–2025 (30), with 16 original figure crops and 141 source checks. Four source errors/domain clarifications are disclosed in editorial notes and receive no exact-source badges. See small-national-2026-10-10.md.
 
 Independent reasoning for CMO 1969 is recorded in mathematical-checks-2026-10-03.json: nine claims checked and one source domain gap. This is not mathematical certification of the other problems.
 
