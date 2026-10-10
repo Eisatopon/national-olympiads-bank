@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 19869 stored records; 5385 source-checked; 14484 remaining (including quarantine).
+Inventory: 19965 stored records; 5385 source-checked; 14580 remaining (including quarantine).
 
-Active bank: 19869 records; 5385 source-checked; 14484 remaining. Whole-bank source verification is **not complete**.
+Active bank: 19965 records; 5385 source-checked; 14580 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -95,6 +95,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Russia-aro-problems.json | 289 | 0 | 289 | pending |
 | Serbia-smo-problems.json | 114 | 0 | 114 | pending |
 | Serbia-tst-problems.json | 81 | 0 | 81 | pending |
+| Silk-Road-problems.json | 96 | 0 | 96 | pending |
 | Singapore-mo-open-problems.json | 145 | 0 | 145 | pending |
 | Slovenia-national-problems.json | 130 | 0 | 130 | pending |
 | SouthAfrica-samo-problems.json | 193 | 0 | 193 | pending |
@@ -127,6 +128,8 @@ USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recor
 The Canadian review found a missing nonzero-denominator condition in the original CMO 1969 problem 1, recorded as a separate editorial note. The CMO 2019 problem 3 figure has been replaced with a faithful crop of the official paper, including all six original counter positions.
 
 The 9 Oct 2026 gap batch added four Argentina statements, 120 Kangaroo questions, 140 HMMT Team statements, and 114 PAMO statements. Baltic Way 1990/2025 and MEMO 2007/2008/2012/2014 gained 80 original-source checks. All new Kangaroo/HMMT records have original-source checks; PAMO remains secondary-source-only. See gap-repairs-tournaments-2026-10-09.md.
+
+The 10 Oct 2026 Silk Road batch added 96 statements, 24 complete four-problem papers (2002–2025), translated from the secondary Matol.kz HTML archive. No original-source checks were added. 2026 and original-paper comparison remain pending. See silk-road-2026-10-10.md.
 
 Independent reasoning for CMO 1969 is recorded in mathematical-checks-2026-10-03.json: nine claims checked and one source domain gap. This is not mathematical certification of the other problems.
 

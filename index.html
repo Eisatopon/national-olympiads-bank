@@ -146,6 +146,7 @@
     --apmo: #0f7c8c; --apmo-ink: #0a5560; --apmo-tint: #e2f4f6;
     --bw: #2e6fb5; --bw-ink: #1d4a7a; --bw-tint: #e3eef9;
     --memo: #7b4fa0; --memo-ink: #52346b; --memo-tint: #f0e8f7;
+    --srmc: #98652b; --srmc-ink: #5c3c18; --srmc-tint: #f6ecdc;
     --pamo: #32754e; --pamo-ink: #19492d; --pamo-tint: #e3f1e8;
     --hmmt: #8b3440; --hmmt-ink: #5b2028; --hmmt-tint: #f6e6e9;
     --kgj: #ac6030; --kgj-ink: #6f3b18; --kgj-tint: #f8ece1;
@@ -256,6 +257,7 @@
 .f-apmo { --f: var(--apmo); --f-ink: var(--apmo-ink); --f-tint: var(--apmo-tint); }
 .f-bw { --f: var(--bw); --f-ink: var(--bw-ink); --f-tint: var(--bw-tint); }
 .f-memo { --f: var(--memo); --f-ink: var(--memo-ink); --f-tint: var(--memo-tint); }
+.f-srmc { --f: var(--srmc); --f-ink: var(--srmc-ink); --f-tint: var(--srmc-tint); }
 .f-pamo { --f: var(--pamo); --f-ink: var(--pamo-ink); --f-tint: var(--pamo-tint); }
 .f-hmmt { --f: var(--hmmt); --f-ink: var(--hmmt-ink); --f-tint: var(--hmmt-tint); }
 .f-kgj { --f: var(--kgj); --f-ink: var(--kgj-ink); --f-tint: var(--kgj-tint); }
@@ -697,7 +699,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261009-gap-repairs-tournaments';
+const DATA_VERSION = '20261010-silk-road';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -784,6 +786,7 @@ REGION_OF.bw = 'europe';
 REGION_OF.memo = 'europe';
 REGION_OF.bx = 'europe';
 REGION_OF.nmc = 'europe';
+REGION_OF.srmc = 'asia';
 REGION_OF.pamo = 'africa';
 REGION_OF.kgj = 'world';
 REGION_OF.kgs = 'world';
@@ -898,6 +901,7 @@ const COUNTRIES = [
     { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional' },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
     { key: 'cono', name: 'Cono Sur MO', flag: '🌎', file: 'Cono-sur-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'srmc', name: 'Silk Road', flag: '🌏', file: 'Silk-Road-problems.json', kind: 'years', scope: 'regional' },
     { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
     { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
     { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'tournaments' },
