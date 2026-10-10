@@ -1,12 +1,12 @@
 # Pending tasks — updated 10 Oct 2026
 
-Current inventory: **19,965 statements**, 110 rows (93 national, 12 regional, 2 international, 3 tournaments), 68 countries. Latest batch: `gap-repairs-tournaments-2026-10-09.md`.
+Current inventory: **19,983 statements**, 110 rows (93 national, 12 regional, 2 international, 3 tournaments), 68 countries. Latest batch: `gap-repairs-tournaments-2026-10-09.md`.
 
 ## Completed agreed work
 - Silk Road: 2002–2025, 24 complete four-problem papers (96), translated from Matol.kz; no original-source badges.
 - Kangaroo pilot: Junior and Student, 2019 and 2023, all 120 questions and choices, 52 original graphic crops; new Tournaments tab.
 - HMMT February Team: all 140 statements, 2013–2026; 2021 officially Spring. Earlier years still open.
-- Pan-African: 19 complete six-problem papers from the owner's linked AoPS compilation, 114 statements. Secondary-source-only; original verification and historical completion still open.
+- Pan-African: 22 complete six-problem papers (132). Added 2003, 2024, 2025; six original-sheet checks for 2024. See `pamo-2026-10-10.md`.
 - Argentina: restored 1996/1, 2007/4, 2008/1, 2010/5 from OMA. Only 1994/1 remains from that numbered-gap list.
 - Baltic Way: original-source comparison now 720/720, including 1990 and 2025.
 - MEMO: originals checked for 2007, 2008, 2012, 2014; 212/224 checked. 2026 remains.
@@ -14,7 +14,7 @@ Current inventory: **19,965 statements**, 110 rows (93 national, 12 regional, 2 
 
 ## Remaining source / coverage gaps
 - **Silk Road SRMC**: 2002–2025 now stored as 24 complete four-problem papers (96 statements) from Matol.kz, secondary-source-only. Remaining: the complete 2026 paper and original-paper comparison for all 96. See `silk-road-2026-10-10.md`.
-- **PAMO**: stored 2000–2002, 2004–2010, 2012–2013, 2015–2019, 2021, 2023. Obtain absent held editions and earlier/later history; confirm organizer timeline before treating absent calendar years as held. Original-paper comparison pending for all 114.
+- **PAMO**: 22 full papers stored: 2000–2010, 2012–2013, 2015–2019, 2021, 2023–2025. Missing held editions: 1987, 1989, 1991, 1993, 1994, 1995, 1997, 1998, 2022, 2026. Official timeline marks 1996 canceled; no editions in 1988, 1990, 1992, 1999, 2011, 2014, 2020. Original-source comparison remains for 126/132; 2024 checked. 2022 French transcription has unresolved conditions (P3 range, P4 codomain, P5 distinctness); 2026 available unofficial solution summary is not an exam source. Do not import these without resolving provenance and formulas.
 - **HMMT**: February Team up to 2012, with year-specific format checks.
 - **MEMO**: official final papers for 2026 (12 statements).
 - **Argentina**: 1994/1.
@@ -29,7 +29,7 @@ Current inventory: **19,965 statements**, 110 rows (93 national, 12 regional, 2 
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,385 / 19,965 checked; 14,580 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,391 / 19,983 checked; 14,592 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.

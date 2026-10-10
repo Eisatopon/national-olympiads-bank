@@ -107,6 +107,41 @@
       ]
     },
     {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find every function $f:\\mathbb N_0\\to\\mathbb N_0$ with $f(2)=2$ such that $f(n)<f(n+1)$ and $f(mn)=f(m)f(n)$ for all $m,n\\in\\mathbb N$. Here $\\mathbb N_0$ denotes the nonnegative integers and $\\mathbb N$ the positive integers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Divide a circle arbitrarily into four arcs and join their midpoints by chords. Prove that two of these chords are perpendicular."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Is there a numeral base in which every number in the sequence $10101,101010101,1010101010101,\\ldots$ is prime?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Can a function $f:\\mathbb N_0\\to\\mathbb N_0$ satisfy $\\underbrace{f(f(\\cdots f(n)\\cdots))}_{2003\\text{ applications}}=5n$ for every nonnegative integer $n$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all positive integers $n$ for which $21\\mid 2^{2^n}+2^n+1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all functions $f:\\mathbb R\\to\\mathbb R$ satisfying $f(x^2)-f(y^2)=(x+y)(f(x)-f(y))$ for every pair of real numbers $x,y$."
+        }
+      ]
+    },
+    {
       "year": 2004,
       "problems": [
         {
@@ -663,6 +698,76 @@
           "day": 2,
           "number": 6,
           "problem": "Let $ABC$ be acute with $AB<AC$, and $D,E,F$ the altitude feet from $A,B,C$. Let $P$ be the perpendicular projection of $F$ onto line $DE$. Line $FP$ meets the circumcircle of $BDF$ again at $Q$. Show that $\\angle PBQ=\\angle PAD$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all positive integers $a,b,c$ satisfying $\\frac{a+b}{a+c}=\\frac{b+c}{b+a}$ for which $ab+bc+ca$ is prime."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In triangle $ABC$, let $M$ be the midpoint of $BC$ and $N$ the midpoint of $AM$. The circle through $N$ tangent to line $AC$ at $A$ meets segment $AB$ again at $P$. Prove that the circumcircle of $BPM$ is tangent to line $AM$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For an integer $n\\ge1$, Jo-Ané fills a $(2n+1)\\times(2n+1)$ grid with crosses and circles, alternating between them and starting with a cross. At each step she chooses an empty cell. Once all cells are filled, let $X$ count the rows with more crosses than circles and $O$ count the columns with more circles than crosses. Determine the maximum possible score $X+O$ as a function of $n$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Consider $m$ line segments on the real number line whose lengths are pairwise distinct. Each endpoint has a coordinate in $\\{1,2,\\ldots,2024\\}$. No segment is wholly contained in another, although partial overlap is allowed. What is the largest possible value of $m$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f:\\mathbb R\\to\\mathbb R$ for which $f(x^2)-yf(y)=f(x+y)(f(x)-y)$ holds for all real numbers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all integers $n$ for which $n^7-41$ is a perfect square."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle. A circle through $B,C$ meets sides $AB,AC$ again at $D,E$, respectively. Let $B^{\\prime},E^{\\prime}$ be the perpendicular projections of $B,E$ onto $CD$, and $D^{\\prime},C^{\\prime}$ the perpendicular projections of $D,C$ onto $BE$. Prove that $B^{\\prime},C^{\\prime},D^{\\prime},E^{\\prime}$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Each term of the sequences $x_1,\\ldots,x_{20}$ and $y_1,\\ldots,y_{20}$ is either $0$ or $1$. Count the pairs of sequences for which $x_1y_1+\\cdots+x_{20}y_{20}$ is even."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Call a positive $m$-digit integer $N$ a repeating number if the last $m$ decimal digits of $N^k$ form $N$ for every positive integer $k$. For instance, $5$ is a one-digit repeating number. Determine all six-digit repeating numbers."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine every integer $n$ for which the equation $x^5-nx-(n+1)=0$ has an integer solution $x$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f:\\mathbb Z\\to\\mathbb Z$ with $f(1)=1$ that satisfy $f(x+y)+f(x-y)=\\max\\{f(2x),2f(y)\\}$ for all integers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The integers $1,2,\\ldots,2025^2$ occupy the cells of a $2025\\times2025$ grid, each exactly once, in any order. Mpho chooses a starting cell for a token. A move takes it to another cell within the $7\\times7$ square centred on its current cell, whose entry must be larger than the current entry. Determine the greatest integer $M$ such that, for every arrangement, he can choose a starting cell and make at least $M$ moves."
         }
       ]
     }
