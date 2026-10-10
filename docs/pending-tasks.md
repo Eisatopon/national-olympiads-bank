@@ -1,6 +1,6 @@
 # Pending tasks — updated 10 Oct 2026
 
-Current inventory: **20,171 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-finals-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
+Current inventory: **20,195 statements**, 113 rows (96 national, 12 regional, 2 international, 3 tournaments), 71 countries. Latest batch: `croatia-early-serbia-2026-10-10.md`; preceding `small-national-2026-10-10.md`.
 
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
@@ -30,12 +30,12 @@ Current inventory: **20,171 statements**, 113 rows (96 national, 12 regional, 2 
 - **Uruguay nivel V final**: held-paper gaps 2018–2025. The 2026 final is scheduled for 25 Oct 2026 and is not yet a missing held paper. Indexed 2020/2022 statements remain outside the bank pending visual inspection; 2018/2019 official printed book located; 2023/2024 archive links are placeholders. See `national-gaps-audit-2026-10-10.md`.
 - **Thailand IMO TST**: 2022–2026; POSN TMO/camp selection is a different contest.
 - **Australia AMO**: 2021–2026; paid/inaccessible old-paper archive and 2026 format change.
-- **Croatia national**: 2006–2014 filled (43 statements); continuous 1997–2026 stored. Before 1997 remains open. Original source omissions disclosed for 2010 P3 and 2012 P3; older stored statements still need original-source comparison. See `croatia-finals-2026-10-10.md`.
-- **Serbia**: SMO 2025 was not held according to DMS; remove from missing held editions. TST 2007, 2008, 2010, 2011, 2014, 2015, 2020. TST 2009 and 2025 already stored; 2009 remains AoPS-only, all six 2025 statements now checked against original DMS papers. Retrieved 2007 izborno PDF is junior and was excluded.
+- **Croatia national**: 2006–2014 filled (43 statements); continuous 1997–2026 stored. 1992–1996 also filled (20 statements); stored coverage now continuous 1992–2026. Earlier national/federal contests need historical classification. Original source omissions disclosed for 2010 P3 and 2012 P3; older stored statements still need original-source comparison. See `croatia-finals-2026-10-10.md`.
+- **Serbia**: SMO 2025 was not held according to DMS; remove from missing held editions. TST 2020 remains unretrieved and its separate IMO-test occurrence needs confirmation (2020 RMM/BMO/EGMO tests are different). For 2007, 2008, 2010, 2011, 2014, 2015, first establish whether an additional IMO test was held: the 2017 SMO booklet says earlier tests were ad-hoc, rather than a regular annual series. Full additional IMO TST 25 May 2024 added as day/test 3 (four statements), closing a newly identified actual gap. TST 2009 and 2025 already stored; 2009 remains AoPS-only, all six 2025 statements now checked against original DMS papers. Retrieved 2007 izborno PDF is junior and was excluded.
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,581 / 20,171 checked; 14,590 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,602 / 20,195 checked; 14,593 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.
