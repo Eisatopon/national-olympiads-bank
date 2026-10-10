@@ -44,8 +44,9 @@ def render(rows):
            '| Collection | Stored records | Source checked | Remaining | State |', '|---|---:|---:|---:|---|']
     out += [f"| {r['file']} | {r['total_records']} | {r['source_checked_records']} | {r['remaining_records']} | {r['status']} |" for r in rows]
     out += ['', '## Evidence and outstanding work', '',
-            'USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recorded source checks for every stored statement. Canada has 100 recorded checks: 1969, 1970 and 2011–2026. Its other 223 stored statements remain pending.', '',
+            'USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recorded source checks for every stored statement. Canada has recorded checks for all 323 stored statements (1969–2026).', '',
             'The Canadian review found a missing nonzero-denominator condition in the original CMO 1969 problem 1, recorded as a separate editorial note. The CMO 2019 problem 3 figure has been replaced with a faithful crop of the official paper, including all six original counter positions.', '',
+            'The 9 Oct 2026 gap batch added four Argentina statements, 120 Kangaroo questions, 140 HMMT Team statements, and 114 PAMO statements. Baltic Way 1990/2025 and MEMO 2007/2008/2012/2014 gained 80 original-source checks. All new Kangaroo/HMMT records have original-source checks; PAMO remains secondary-source-only. See gap-repairs-tournaments-2026-10-09.md.', '',
             'Independent reasoning for CMO 1969 is recorded in mathematical-checks-2026-10-03.json: nine claims checked and one source domain gap. This is not mathematical certification of the other problems.', '',
             'Research links and retrieved PDFs are leads, not evidence that their statements or solutions have already been checked. For every source review, retain source URL, page, original problem number, PDF checksum, exact reviewed text, statement checksum and review date. Do not add checks from automated extraction alone.', '']
     return '\n'.join(out)

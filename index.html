@@ -146,6 +146,10 @@
     --apmo: #0f7c8c; --apmo-ink: #0a5560; --apmo-tint: #e2f4f6;
     --bw: #2e6fb5; --bw-ink: #1d4a7a; --bw-tint: #e3eef9;
     --memo: #7b4fa0; --memo-ink: #52346b; --memo-tint: #f0e8f7;
+    --pamo: #32754e; --pamo-ink: #19492d; --pamo-tint: #e3f1e8;
+    --hmmt: #8b3440; --hmmt-ink: #5b2028; --hmmt-tint: #f6e6e9;
+    --kgj: #ac6030; --kgj-ink: #6f3b18; --kgj-tint: #f8ece1;
+    --kgs: #6e568b; --kgs-ink: #483661; --kgs-tint: #efe9f6;
     --bx: #1f6f8b; --bx-ink: #134657; --bx-tint: #e3f1f6;
     --nmc: #3b7d4f; --nmc-ink: #255232; --nmc-tint: #e5f2e8;
     --oim: #b5532e; --oim-ink: #7a3519; --oim-tint: #f8e9e2;
@@ -252,6 +256,10 @@
 .f-apmo { --f: var(--apmo); --f-ink: var(--apmo-ink); --f-tint: var(--apmo-tint); }
 .f-bw { --f: var(--bw); --f-ink: var(--bw-ink); --f-tint: var(--bw-tint); }
 .f-memo { --f: var(--memo); --f-ink: var(--memo-ink); --f-tint: var(--memo-tint); }
+.f-pamo { --f: var(--pamo); --f-ink: var(--pamo-ink); --f-tint: var(--pamo-tint); }
+.f-hmmt { --f: var(--hmmt); --f-ink: var(--hmmt-ink); --f-tint: var(--hmmt-tint); }
+.f-kgj { --f: var(--kgj); --f-ink: var(--kgj-ink); --f-tint: var(--kgj-tint); }
+.f-kgs { --f: var(--kgs); --f-ink: var(--kgs-ink); --f-tint: var(--kgs-tint); }
 .f-bx { --f: var(--bx); --f-ink: var(--bx-ink); --f-tint: var(--bx-tint); }
 .f-nmc { --f: var(--nmc); --f-ink: var(--nmc-ink); --f-tint: var(--nmc-tint); }
 .f-oim { --f: var(--oim); --f-ink: var(--oim-ink); --f-tint: var(--oim-tint); }
@@ -547,7 +555,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
     <div class="wrap hero-body">
         <div>
             <h1>World Mathematical Olympiads Bank</h1>
-            <p class="lede">Problems from national, regional and international mathematical olympiads around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
+            <p class="lede">Problems from national, regional and international mathematical olympiads and tournaments around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
@@ -689,7 +697,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261009-regional-gaps';
+const DATA_VERSION = '20261009-gap-repairs-tournaments';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -776,6 +784,10 @@ REGION_OF.bw = 'europe';
 REGION_OF.memo = 'europe';
 REGION_OF.bx = 'europe';
 REGION_OF.nmc = 'europe';
+REGION_OF.pamo = 'africa';
+REGION_OF.kgj = 'world';
+REGION_OF.kgs = 'world';
+REGION_OF.hmmt = 'americas';
 REGION_OF.oim = 'americas';
 REGION_OF.cono = 'americas';
 REGION_OF.omcc = 'americas';
@@ -886,15 +898,19 @@ const COUNTRIES = [
     { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional' },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
     { key: 'cono', name: 'Cono Sur MO', flag: '🌎', file: 'Cono-sur-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
+    { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'tournaments' },
+    { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'tournaments' },
     { key: 'omcc', name: 'Centroamerican MO', flag: '🌎', file: 'Centroamerican-omcc-problems.json', kind: 'years', scope: 'regional' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
 COUNTRIES.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
-/* Three sections of the bank, each shown with the same grid: national olympiads and TSTs,
+/* Four sections of the bank, each shown with the same grid: national olympiads and TSTs,
    regional competitions (geographically restricted entry) and international ones. */
-const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International']];
+const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments']];
 const scopeOf = c => c.scope || 'national';
 const tabRows = () => COUNTRIES.filter(c => scopeOf(c) === state.tab);
 

@@ -12,7 +12,7 @@ The older Olympiad Bank in `Eisatopon/eisatopon-next` is a separate application 
 
 China now indexes 240 statements in forty complete six-problem papers covering every indexed year from 1987 through 2026. The 1994 and 1997 papers are restored from inspected Chinese compilations; documented English-source variants are retained in metadata. Uploaded AoPS papers are visually checked, with source errors, restored conditions and unresolved variants recorded in metadata. This does not certify every statement against an official original. The corrupted original archive remains in `docs/quarantine/China-olympiad-problems-pre-rebuild.json` and is never loaded by the application.
 
-Argentina has documented numbering gaps in 1994, 1996, 2007, 2008 and 2010. Original numbers are preserved; these years should not be treated as complete.
+Argentina retains the documented gap 1994/1. The four other gaps (1996/1, 2007/4, 2008/1, 2010/5) were restored from OMA originals on 9 Oct 2026.
 
 Passing validation confirms structural checks, not mathematical correctness or verification against an official source. Source research is in `.dev/sources.json`; per-problem source verification progress is tracked in `docs/verification-progress.md`.
 
@@ -24,7 +24,7 @@ Passing validation confirms structural checks, not mathematical correctness or v
 
 Years are ascending and unique. Numbers are positive integers in official order. Optional `day` identifies an exam day or paper and must be positive. Optional `category` is used by the topic filter. The USA TSTST archive retains its legacy schema, handled by a separate loader.
 
-Most statements do not yet have topic or difficulty metadata. The application does not provide a difficulty filter. Figures currently appear as image URLs in statement text.
+All active statements have reviewed thematic metadata. Difficulty metadata is not provided. The application does not provide a difficulty filter. Figures currently appear as image URLs in statement text.
 
 ## Validation
 
@@ -183,3 +183,7 @@ Added all 49 TST statements for 2002–2008 and 2022, including original 2004 cu
 Added all eight MAXI final statements for 2007/2008 from public official attachments. Original statement diagram and two statement-only PDFs included; 2007 solutions and junior categories physically excluded. Belgium now has 28 records in seven years. The central historical final archive requires sign-in; missing years remain explicitly open.
 
 China 2017–2026 uses the existing AoPS edition-year convention. These papers have Chinese calendar-year labels 2016–2025; the AoPS 2026 paper was held on 26–27 November 2025. This does not claim completion of the calendar-2026 final. Source reproductions, variants, and statement-only downloads are recorded in metadata and `docs/china-2017-2026-restoration-2026-10-04.json`.
+
+## Gap repairs and tournaments — 9–10 Oct 2026
+
+The bank now contains 19,869 statements in 109 collections. Added 378 statements: Argentina (4), Kangaroo Junior/Student 2019 and 2023 (120), HMMT February Team 2013–2026 (140), and 19 complete PAMO papers (114, secondary AoPS compilation). A fourth Tournaments tab keeps the existing grid layout. Baltic Way 1990/2025 and MEMO 2007/2008/2012/2014 gained 80 original-paper comparisons. Source checks now cover 5,385 statements; 14,484 remain. See [batch report](docs/gap-repairs-tournaments-2026-10-09.md) and [current pending tasks](docs/pending-tasks.md) for actual coverage and unresolved sources.

@@ -1,3 +1,5 @@
+> Current status (10 Oct 2026): this is a historical catalogue snapshot. Most candidate rows below already exist. Use `pending-tasks.md` and the current JSON before proposing additions. Argentina gaps 1996/1, 2007/4, 2008/1, 2010/5 are closed; Baltic Way 1990/2025 and MEMO 2007/2008/2012/2014 now have original-source checks. Serbia TST 2009/2025 and Croatia 1997–2005 already exist.
+
 <!-- Owner-supplied AoPS catalogue audit (4 Oct 2026, baseline commit 24a3669). Status block added 6 Oct 2026. -->
 
 ## Κατάσταση στις 6 Οκτωβρίου 2026 (μετά το commit 9712e77)

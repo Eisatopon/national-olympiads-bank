@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 19491 stored records; 5041 source-checked; 14450 remaining (including quarantine).
+Inventory: 19869 stored records; 5385 source-checked; 14484 remaining (including quarantine).
 
-Active bank: 19491 records; 5041 source-checked; 14450 remaining. Whole-bank source verification is **not complete**.
+Active bank: 19869 records; 5385 source-checked; 14484 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -12,13 +12,13 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 |---|---:|---:|---:|---|
 | APMO-problems.json | 190 | 190 | 0 | stored_statements_checked |
 | Albania-nmo-problems.json | 25 | 0 | 25 | pending |
-| Argentina-level3-problems.json | 187 | 0 | 187 | pending |
+| Argentina-level3-problems.json | 191 | 4 | 187 | pending |
 | Australia-amo-problems.json | 40 | 40 | 0 | stored_statements_checked |
 | Austria-oemo-problems.json | 72 | 0 | 72 | pending |
 | Azerbaijan-tst-problems.json | 79 | 0 | 79 | pending |
 | Balkan-bmo-problems.json | 172 | 68 | 104 | pending |
 | Balkan-jbmo-problems.json | 121 | 20 | 101 | pending |
-| Baltic-way-problems.json | 720 | 680 | 40 | pending |
+| Baltic-way-problems.json | 720 | 720 | 0 | stored_statements_checked |
 | Bangladesh-bdmo-problems.json | 40 | 0 | 40 | pending |
 | Belarus-mo-problems.json | 208 | 0 | 208 | pending |
 | Belgium-omb-maxi-problems.json | 28 | 28 | 0 | stored_statements_checked |
@@ -50,6 +50,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Germany-mo-problems.json | 389 | 6 | 383 | pending |
 | Greece-archimedes-problems.json | 121 | 0 | 121 | pending |
 | Greece-tst-problems.json | 72 | 1 | 71 | pending |
+| HMMT-february-team-problems.json | 140 | 140 | 0 | stored_statements_checked |
 | HongKong-chkmo-problems.json | 100 | 0 | 100 | pending |
 | HongKong-tst-problems.json | 313 | 0 | 313 | pending |
 | Hungary-kurschak-problems.json | 228 | 0 | 228 | pending |
@@ -66,6 +67,8 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Italy-itamo-problems.json | 249 | 0 | 249 | pending |
 | Italy-preimo-tst-problems.json | 145 | 109 | 36 | pending |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
+| Kangaroo-junior-problems.json | 60 | 60 | 0 | stored_statements_checked |
+| Kangaroo-student-problems.json | 60 | 60 | 0 | stored_statements_checked |
 | Kazakhstan-rmo-problems.json | 184 | 6 | 178 | pending |
 | Korea-fkmo-problems.json | 186 | 0 | 186 | pending |
 | Korea-kmo-problems.json | 192 | 0 | 192 | pending |
@@ -73,7 +76,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Latvia-vol-problems.json | 175 | 0 | 175 | pending |
 | Lithuania-lmmo-problems.json | 92 | 0 | 92 | pending |
 | Lithuania-tst-problems.json | 99 | 0 | 99 | pending |
-| MEMO-problems.json | 224 | 172 | 52 | pending |
+| MEMO-problems.json | 224 | 212 | 12 | pending |
 | Mexico-omm-problems.json | 238 | 0 | 238 | pending |
 | Moldova-tst-problems.json | 132 | 0 | 132 | pending |
 | Netherlands-final-problems.json | 312 | 0 | 312 | pending |
@@ -82,6 +85,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Nordic-nmc-problems.json | 160 | 160 | 0 | stored_statements_checked |
 | NorthMacedonia-mmo-problems.json | 97 | 0 | 97 | pending |
 | Norway-abel-problems.json | 136 | 0 | 136 | pending |
+| Pan-African-problems.json | 114 | 0 | 114 | pending |
 | Peru-tst-problems.json | 112 | 0 | 112 | pending |
 | Philippines-pmo-problems.json | 98 | 0 | 98 | pending |
 | Poland-pmo-problems.json | 444 | 0 | 444 | pending |
@@ -118,9 +122,11 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 
 ## Evidence and outstanding work
 
-USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recorded source checks for every stored statement. Canada has 100 recorded checks: 1969, 1970 and 2011–2026. Its other 223 stored statements remain pending.
+USA TST (85), Australia AMO (40), and New Zealand NZMO Round Two (40) have recorded source checks for every stored statement. Canada has recorded checks for all 323 stored statements (1969–2026).
 
 The Canadian review found a missing nonzero-denominator condition in the original CMO 1969 problem 1, recorded as a separate editorial note. The CMO 2019 problem 3 figure has been replaced with a faithful crop of the official paper, including all six original counter positions.
+
+The 9 Oct 2026 gap batch added four Argentina statements, 120 Kangaroo questions, 140 HMMT Team statements, and 114 PAMO statements. Baltic Way 1990/2025 and MEMO 2007/2008/2012/2014 gained 80 original-source checks. All new Kangaroo/HMMT records have original-source checks; PAMO remains secondary-source-only. See gap-repairs-tournaments-2026-10-09.md.
 
 Independent reasoning for CMO 1969 is recorded in mathematical-checks-2026-10-03.json: nine claims checked and one source domain gap. This is not mathematical certification of the other problems.
 

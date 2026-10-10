@@ -1,0 +1,635 @@
+{
+  "competition": "HMMT February Team Round (Spring in 2021)",
+  "years": [
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a,b$ be real with $ab/(a^2+b^2)=1/4$. Find all possible values of $|a^2-b^2|/(a^2+b^2)$."
+        },
+        {
+          "number": 2,
+          "problem": "A cafe has three tables and five individual counter seats. People enter in groups of size $1$ to $4$, and groups never share a table. A group larger than one always tries a table, but uses counter seats if no table is available. A single person always tries the counter first. One morning $M$ groups totalling $N$ people enter and sit. A further single person enters and finds every table and counter seat occupied by some person or group. What is the minimum possible $M+N$?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ have circumcentre $O$ and $AC=7$. The circumcircle of $AOC$ is tangent to $BC$ at $C$ and meets line $AB$ at $A,F$. Let $FO$ meet $BC$ at $E$. Compute $BE$."
+        },
+        {
+          "number": 4,
+          "problem": "Real numbers $a_1,\\ldots,a_5$ have sum $20$. Determine, with proof, the smallest possible $\\sum_{1\\leq i<j\\leq5}\\lfloor a_i+a_j\\rfloor$."
+        },
+        {
+          "number": 5,
+          "problem": "Thaddeus has a $2013\\times2013$ array of integers in $[1,2013]$. He may subtract $1$ from every entry of a chosen row, or add $1$ to every entry of a chosen column. On how many initial arrays can he obtain an array in which every integer is divisible by $2013$?"
+        },
+        {
+          "number": 6,
+          "problem": "Triangle $ABC$ satisfies $2BC=AB+AC$ and has incentre $I$ and circumcircle $\\omega$. Let $D\\neq A$ be the intersection of $AI$ with $\\omega$. Prove that $I$ is the midpoint of $AD$."
+        },
+        {
+          "number": 7,
+          "problem": "There are $n$ children and $n$ toys. Each child strictly orders the toys by preference. A distribution $A$ dominates $B\\neq A$ if every child receives a toy in $A$ at least as preferable as in $B$. Prove that any distribution not dominated by another gives at least one child their favourite toy."
+        },
+        {
+          "number": 8,
+          "problem": "Points $A,B$ lie on circle $\\omega$ centred at $O$. Circles $\\omega_A,\\omega_B$ not containing $O$ are internally tangent to $\\omega$ at $A,B$, and meet at $C,D$, with $D$ inside $ABC$. Line $BC$ meets $\\omega$ again at $E$, and $EA$ meets $\\omega_A$ at $F$. If $FC\\perp CD$, prove that $O,C,D$ are collinear."
+        },
+        {
+          "number": 9,
+          "problem": "Let $m>1$ be odd. Let $S_m$ consist of all nonnegative integers less than $m$ of the form $x+y$, where $xy-1$ is divisible by $m$, and let $f(m)=|S_m|$. (a) Prove that $f(mn)=f(m)f(n)$ for relatively prime odd $m,n>1$. (b) Find a closed form for $f(p^k)$ for odd prime $p$ and integer $k>0$."
+        },
+        {
+          "number": 10,
+          "problem": "A large rectangular table holds finitely many convex polygonal pieces of paper with disjoint interiors. In a move Chim Tu slides one piece in a straight line without its interior touching any other paper during the slide. Can Chim Tu always slide all pieces off the table in finitely many moves?"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\omega$ be a circle and $A,B$ interior points. Prove that some circle through $A,B$ is contained in the interior of $\\omega$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1,a_2,\\ldots$ be integers with $a_i\\mid a_{i+1}$ for every $i\\geq1$, and $b_i$ the remainder of $a_i$ modulo $210$. What is the maximum possible number of distinct terms among the $b_i$?"
+        },
+        {
+          "number": 3,
+          "problem": "There are $n$ girls $G_1,\\ldots,G_n$ and $n$ boys $B_1,\\ldots,B_n$. Pair $(G_i,B_j)$ is suitable if the girl is willing to marry the boy. Given that exactly one pairing assigns each girl to a distinct boy she is willing to marry, what is the maximum possible number of suitable pairs?"
+        },
+        {
+          "number": 4,
+          "problem": "Compute $\\sum_{k=0}^{100}\\left\\lfloor\\frac{2^{100}}{2^{50}+2^k}\\right\\rfloor$. Here $\\lfloor x\\rfloor$ is the greatest integer at most $x$."
+        },
+        {
+          "number": 5,
+          "problem": "Prove that there exist a nonzero complex number $c$ and a real number $d$ such that $$\\left|\\left|\\frac1{1+z+z^2}\\right|-\\left|\\frac1{1+z+z^2}-c\\right|\\right|=d$$ for all complex $z$ with $|z|=1$ and $1+z+z^2\\neq0$. Here $|z|$ is complex modulus, so $|a+bi|=\\sqrt{a^2+b^2}$ for real $a,b$."
+        },
+        {
+          "number": 6,
+          "problem": "For positive integer $n$, an integer sequence $(a_0,\\ldots,a_n)$ is acceptable if $0=|a_0|<|a_1|<\\cdots<|a_n|$ and the sets $\\{|a_1-a_0|,|a_2-a_1|,\\ldots,|a_n-a_{n-1}|\\}$ and $\\{1,3,9,\\ldots,3^{n-1}\\}$ are equal. Prove that the number of acceptable sequences is $(n+1)!$."
+        },
+        {
+          "number": 7,
+          "problem": "Find the maximum possible number of diagonals of equal length in a convex hexagon."
+        },
+        {
+          "number": 8,
+          "problem": "Let $ABC$ be acute with circumcentre $O$, $AB=4$, $AC=5$, $BC=6$. Let $D$ be the altitude foot from $A$ to $BC$, and $E=AO\\cap BC$. Suppose $X\\in BC$ lies between $D,E$ and some $Y\\in AD$ satisfies $XY\\parallel AO$ and $YO\\perp AX$. Determine $BX$."
+        },
+        {
+          "number": 9,
+          "problem": "For integers $m,n\\geq1$, let $A(n,m)$ count sequences $(a_1,\\ldots,a_{nm})$ in which each integer $1\\leq k\\leq n$ occurs exactly $m$ times, and for every prefix $(a_1,\\ldots,a_i)$ and $1\\leq j\\leq k\\leq n$, $j$ occurs at least as often as $k$. For example, $(1,1,2,1,2,2,1,2,1,2)$ is possible for $n=2,m=5$. Prove that $A(n,m)=A(m,n)$."
+        },
+        {
+          "number": 10,
+          "problem": "Fix real $c>1$ and positive integer $n$. A board initially contains $1,c,\\ldots,c^{n-1}$. Each minute Bob replaces two numbers $a,b$ with $ca+c^2b$. Prove that after $n-1$ minutes the single remaining number is at least $$\\left(\\frac{c^{n/L}-1}{c^{1/L}-1}\\right)^L,$$ where $\\phi=(1+\\sqrt5)/2$ and $L=1+\\log_\\phi c$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Complex numbers $x,y,z$ satisfy $xyz=-4$, $(x+1)(y+1)(z+1)=7$ and $(x+2)(y+2)(z+2)=-3$. Find, with proof, $(x+3)(y+3)(z+3)$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $P$ be a simple plane polygon and $C_1,\\ldots,C_n$ circles whose interiors cover its interior. If their radii are $r_1,\\ldots,r_n$, prove that a single circle of radius $r_1+\\cdots+r_n$ covers the interior of $P$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $z=a+bi$ with integers $a,b$ and $i=\\sqrt{-1}$. For an odd prime $p$, show that the real part of $z^p-z$ is an integer divisible by $p$."
+        },
+        {
+          "number": 4,
+          "problem": "Convex quadrilateral $ABCD$ with $BC=CD$ is inscribed in circle $\\Omega$, and its diagonals meet at $X$. Suppose $AD<AB$, the circumcircle of $BCX$ meets segment $AB$ at $Y\\neq B$, and ray $CY$ meets $\\Omega$ again at $Z\\neq C$. Prove that ray $DY$ bisects $\\angle ZDB$. The stated special-case conditions $AD<AB$ and $Z\\in\\overrightarrow{CY}$ are part of the problem."
+        },
+        {
+          "number": 5,
+          "problem": "For convex quadrilateral $P$, let $D$ be the sum of its diagonal lengths and $S$ its perimeter. Determine, with proof, all possible $S/D$."
+        },
+        {
+          "number": 6,
+          "problem": "Cindy has $100$ dollars in pennies ($0.01$ each), nickels ($0.05$), dimes ($0.10$), and quarters ($0.25$). Prove that the coins can be split into two piles worth $50$ dollars each."
+        },
+        {
+          "number": 7,
+          "problem": "Let $f:[0,1]\\to\\mathbb C$ be nonconstant. Prove that some $\\varepsilon>0$, possibly depending on $f$, has the following property: for every complex-coefficient polynomial $P$, there is a complex $z$ with $|z|\\leq1$ and $|f(|z|)-P(z)|\\geq\\varepsilon$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $\\pi$ be a permutation of $\\{1,2,\\ldots,2015\\}$. Determine, with proof, the maximum possible number of ordered pairs $(i,j)\\in\\{1,\\ldots,2015\\}^2$ with $i<j$ and $\\pi(i)\\pi(j)>ij$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $z=e^{2\\pi i/101}$ and $\\omega=e^{2\\pi i/10}$. Prove that $\\prod_{a=0}^{9}\\prod_{b=0}^{100}\\prod_{c=0}^{100}(\\omega^a+z^b+z^c)$ is an integer, and determine, with proof, its remainder modulo $101$."
+        },
+        {
+          "number": 10,
+          "problem": "Real sequences $(a_i)_{i\\geq1}$ and $(b_i)_{i\\geq1}$ satisfy $a_{n+1}=(a_{n-1}-1)(b_n+1)$ and $b_{n+1}=a_nb_{n-1}-1$ for $n\\geq2$, with $a_1=a_2=2015$, $b_1=b_2=2013$. Evaluate, with proof, $\\sum_{n=1}^{\\infty}b_n(1/a_{n+1}-1/a_{n+3})$."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a,b$ be integers, not necessarily positive. Prove that $a^3+5b^3\\neq2016$."
+        },
+        {
+          "number": 2,
+          "problem": "For positive integer $n$, let $c_n$ be the smallest positive integer such that $210\\mid n^{c_n}-1$, if one exists, and $c_n=0$ otherwise. What is $c_1+\\cdots+c_{210}$?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be acute with incentre $I$ and circumcentre $O$. Assume $\\angle OIA=90^\\circ$. Given $AI=97$, $BC=144$, compute its area."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n>1$ be odd. Delete the centre and four corner squares of an $n\\times n$ chessboard. For which $n$ can the remaining $n^2-5$ squares be paired so that each pair meets at exactly one point, i.e. is diagonally adjacent?"
+        },
+        {
+          "number": 5,
+          "problem": "Find all primes $p$ for which $y^2=x^3+4x$ has exactly $p$ solutions modulo $p$, i.e. exactly $p$ ordered pairs $(x,y)\\in\\{0,1,\\ldots,p-1\\}^2$ with $p\\mid y^2-x^3-4x$."
+        },
+        {
+          "number": 6,
+          "problem": "A nonempty set $S$ is well-filled if for every $m\\in S$ fewer than $m/2$ elements of $S$ are less than $m$. Determine the number of well-filled subsets of $\\{1,2,\\ldots,42\\}$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $q(x)=q^1(x)=2x^2+2x-1$ and $q^n(x)=q(q^{n-1}(x))$ for $n>1$. How many negative real roots does $q^{2016}(x)$ have?"
+        },
+        {
+          "number": 8,
+          "problem": "Compute $\\displaystyle\\int_0^\\pi\\frac{2\\sin\\theta+3\\cos\\theta-3}{13\\cos\\theta-5}\\,d\\theta$."
+        },
+        {
+          "number": 9,
+          "problem": "Fix positive integers $r>s$ and an infinite family $F$ of sets, each of size $r$, no two sharing fewer than $s$ elements. Prove that a set of size $r-1$ exists that shares at least $s$ elements with every set in $F$."
+        },
+        {
+          "number": 10,
+          "problem": "Let $ABC$ have incentre $I$, with incircle tangent to $BC,CA,AB$ at $D,E,F$. Point $P$ lies on $EF$ with $DP\\perp EF$. Ray $BP$ meets $AC$ at $Y$, and ray $CP$ meets $AB$ at $Z$. Choose $Q$ on the circumcircle of $AYZ$ with $AQ\\perp BC$. Prove that $P,I,Q$ are collinear."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $P,Q$ be nonconstant real-coefficient polynomials. Prove that if $\\lfloor P(y)\\rfloor=\\lfloor Q(y)\\rfloor$ for every real $y$, then $P(x)=Q(x)$ for every real $x$."
+        },
+        {
+          "number": 2,
+          "problem": "Does a real-coefficient polynomial $P(x,y)$ exist that is positive exactly when $x,y$ are both positive?"
+        },
+        {
+          "number": 3,
+          "problem": "A polyhedron has $7n$ faces. Show that $n+1$ of its faces have the same number of edges."
+        },
+        {
+          "number": 4,
+          "problem": "Let $w=w_1w_2\\cdots w_n$ be a word. A substring is $w_iw_{i+1}\\cdots w_j$ for $1\\leq i\\leq j\\leq n$. Show that $w$ has at most $n$ distinct palindromic substrings. For example, aaaaa has five, and abcata has five: a, b, c, t, ata."
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ be acute with altitude feet $E,F$ from $B,C$, orthocentre $H$ and circumcentre $O$. Choose $P$ with $\\angle APH=\\angle OPE=90^\\circ$, and $Q$ with $\\angle AQH=\\angle OQF=90^\\circ$. Lines $EP,FQ$ meet at $T$. Prove that $A,T,O$ are collinear."
+        },
+        {
+          "number": 6,
+          "problem": "Let $r$ be a positive integer. Show that a graph $G$ without cycles of length at most $2r$ has at most $|V|^{2016}$ cycles of length exactly $2016r$, where $|V|$ is its number of vertices."
+        },
+        {
+          "number": 7,
+          "problem": "Let $p$ be prime. A complete residue class modulo $p$ is a set containing an element congruent to every integer modulo $p$. (a) Show that some row $n$ of Pascal’s triangle is complete modulo $p$. (b) Show that such a row exists with $n\\leq p^2$."
+        },
+        {
+          "number": 8,
+          "problem": "Does an irrational real $\\alpha>1$ exist for which $\\lfloor\\alpha^n\\rfloor\\equiv0\\pmod{2017}$ for every integer $n\\geq1$?"
+        },
+        {
+          "number": 9,
+          "problem": "Let $n>2$ be odd and $G$ a regular $n$-gon centred at the origin. A subpolygon has at least three vertices, all vertices of $G$. It is well-centred if its centroid is the origin, and decomposable if its vertex set is a disjoint union of vertex sets of regular polygons with at least three vertices. Show that all well-centred subpolygons are decomposable if and only if $n$ has at most two distinct prime divisors."
+        },
+        {
+          "number": 10,
+          "problem": "Let $LBC$ be fixed with $LB=LC$, and $A$ vary on arc $LB$ of its circumcircle. Let $I$ be the incentre of $ABC$ and $AK$ its altitude from $A$. The circumcircle of $IKL$ meets $KA,BC$ again at $U\\neq K,V\\neq K$. Let $T$ be the projection of $I$ onto $UV$. Prove that the line through $T$ and the midpoint of $IK$ passes through a fixed point as $A$ varies."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an $n\\times n$ array of unit cells at least one cell is pink. Show that the square can always be divided into rectangles along cell borders, each containing exactly one pink cell."
+        },
+        {
+          "number": 2,
+          "problem": "Is $(1+1/2)(1+1/4)(1+1/6)\\cdots(1+1/2018)$ greater than, less than, or equal to $50$?"
+        },
+        {
+          "number": 3,
+          "problem": "Michelle has a word of $2^n$ letters over any alphabet. A switcheroo consists of, for each $k=0,1,\\ldots,n-1$ in order, switching the first $2^k$ letters with the next $2^k$ letters. For $n=3$, $ABCDEFGH\\to BACDEFGH\\to CDBAEFGH\\to EFGHCDBA$ is one switcheroo. In terms of $n$, find the minimum positive integer $m$ such that $m$ switcheroos return every word of length $2^n$ to its original form."
+        },
+        {
+          "number": 4,
+          "problem": "In acute triangle $ABC$, let $D,E,F$ be the altitude feet from $A,B,C$, and $L,M,N$ the midpoints of $BC,CA,AB$. Lines $DE,NL$ meet at $X$, lines $DF,LM$ meet at $Y$, and $XY,BC$ meet at $Z$. Find $ZB/ZC$ in terms of $AB,AC,BC$."
+        },
+        {
+          "number": 5,
+          "problem": "Can the projection of $\\{(x,y,z):0\\leq x,y,z\\leq1\\}$ onto a two-dimensional plane be a simple convex pentagon?"
+        },
+        {
+          "number": 6,
+          "problem": "Let $n\\geq2$ be an integer. A subset $S$ of positive integers is comprehensive if for each integer $0\\leq x<n$ some subset of $S$ has sum congruent to $x$ modulo $n$. The empty subset has sum $0$. Show that every comprehensive $S$ has a not necessarily proper comprehensive subset with at most $n-1$ elements."
+        },
+        {
+          "number": 7,
+          "problem": "Let $[n]=\\{1,\\ldots,n\\}$. Choose a function $f:[n]\\to[n]$ uniformly from all $n^n$ functions, and independently an integer $a$ uniformly from $[n]$. Find the probability that positive integers $b,c$ exist with $f^b(1)=a$ and $f^c(a)=1$, where $f^k$ denotes $k$ iterations."
+        },
+        {
+          "number": 8,
+          "problem": "Allen plays on a tree with $2n$ vertices, initially all red. A move chooses two adjacent vertices of the same colour and changes both to the opposite colour. He wins when all are blue. (a) Show that he can win if and only if the vertices split into groups $V_1,V_2$, each of size $n$, with every edge joining the groups. (b) Write $V_1=\\{a_1,\\ldots,a_n\\}$, $V_2=\\{b_1,\\ldots,b_n\\}$, and let $M=\\min_\\sigma\\sum_{i=1}^n d(a_i,b_{\\sigma(i)})$, where $\\sigma$ ranges over permutations of $1,\\ldots,n$ and $d$ is shortest-path edge distance. Show that, when he can win, the minimum number of moves is $M$. A tree is a connected graph with one fewer edge than vertices."
+        },
+        {
+          "number": 9,
+          "problem": "Evan has a simple graph with $v$ vertices and $e$ edges. Show that he can delete at least $(e-v+1)/2$ edges so that each vertex retains at least half its original degree."
+        },
+        {
+          "number": 10,
+          "problem": "Let $n,m$ be positive integers at most $10^{10}$. Let $R$ be the rectangle with corners $(0,0),(n,0),(n,m),(0,m)$. A simple quadrilateral with integer-coordinate vertices in $R$ is far-reaching if every side of $R$, including endpoints, contains at least one of its vertices. Show that a far-reaching quadrilateral of area at most $10^6$ exists."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCD$ be a parallelogram, with $X,Y$ on segments $AB,AD$. Diagonal $AC$ meets $XY$ at $Z$. Prove that $AB/AX+AD/AY=AC/AZ$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $\\mathbb N=\\{1,2,3,\\ldots\\}$ and $f:\\mathbb N\\to\\mathbb N$ a bijection. Must some positive integer $n$ make $(f(1),\\ldots,f(n))$ a permutation of $(1,\\ldots,n)$?"
+        },
+        {
+          "number": 3,
+          "problem": "For $0<\\theta<\\pi/2$, show that $0<\\sin\\theta+\\cos\\theta+\\tan\\theta+\\cot\\theta-\\sec\\theta-\\csc\\theta<1$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all positive integers $n$ for which there do not exist $n$ consecutive composite positive integers less than $n!$."
+        },
+        {
+          "number": 5,
+          "problem": "Find all positive integers $n$ such that the unit segments of an $n\\times n$ grid of unit squares can be partitioned into groups of three whose segments share a common vertex."
+        },
+        {
+          "number": 6,
+          "problem": "Scalene triangle $ABC$ has $\\angle A=60^\\circ$, circumcentre $O$, orthocentre $H$, and incentre $I$. Let $D,T$ be the intersections of $BC$ with the internal and external bisectors of $\\angle A$, respectively. Choose $X$ on the circumcircle of $IHO$ with $HX\\parallel AI$. Prove that $OD\\perp TX$."
+        },
+        {
+          "number": 7,
+          "problem": "A convex plane polygon is wide if its projection onto every line in the plane is a segment of length at least $1$. Prove that a circle of radius $1/3$ can be placed completely inside every wide polygon."
+        },
+        {
+          "number": 8,
+          "problem": "Can the lattice points $\\{(x,y):x,y\\in\\mathbb Z,\\ 1\\leq x,y\\leq252,\\ x\\neq y\\}$ be coloured with $10$ colours so that whenever $a\\neq b$, $b\\neq c$, points $(a,b),(b,c)$ have different colours?"
+        },
+        {
+          "number": 9,
+          "problem": "Let $p>2$ be prime and $\\mathbb F_p[x]$ the polynomials over the integers modulo $p$, with equality coefficientwise modulo $p$. A pair $(f,g)$ is compositional if $f(g(x))=x^{p^2}-x$ in $\\mathbb F_p[x]$. Find, with proof, the number of compositional pairs in terms of $p$."
+        },
+        {
+          "number": 10,
+          "problem": "Prove that, for every positive integer $n$, all complex roots of $$P(x)=(2n)x^{2n}+(2n-1)x^{2n-1}+\\cdots+(n+1)x^{n+1}+nx^n+(n+1)x^{n-1}+\\cdots+(2n-1)x+2n$$ lie on the unit circle."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For positive integer $n$, define $a_0=1$, $a_{2i+1}=a_i$, $a_{2i+2}=a_i+a_{i+1}$ for every $i\\geq0$. Determine, with proof, $a_0+a_1+\\cdots+a_{2^n-1}$."
+        },
+        {
+          "number": 2,
+          "problem": "For a fixed positive integer $n$, an $n$-staircase is a polyomino with $n(n+1)/2$ cells arranged as a staircase, of arbitrary size. Two $5$-staircases are illustrated. Prove that an $n$-staircase can be dissected into strictly smaller $n$-staircases.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2020_p2_fig.png"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be inscribed in circle $\\omega$, and $\\ell$ tangent to $\\omega$ at $A$. The line through $B$ parallel to $AC$ meets $\\ell$ at $P$, and the line through $C$ parallel to $AB$ meets $\\ell$ at $Q$. Circumcircles $ABP,ACQ$ meet at $S\\neq A$. Show that $AS$ bisects $BC$."
+        },
+        {
+          "number": 4,
+          "problem": "Alan draws a convex $2020$-gon $A_1\\cdots A_{2020}$ with vertices clockwise and chooses $2020$ angles $\\theta_1,\\ldots,\\theta_{2020}\\in(0,\\pi)$ with sum $1010\\pi$. He constructs isosceles triangles $A_iB_iA_{i+1}$ exterior to the polygon, with $B_iA_i=B_iA_{i+1}$ and $\\angle A_iB_iA_{i+1}=\\theta_i$, using $A_{2021}=A_1$. He erases the polygon and $B_1$, then tells Jason the chosen angles. Show that Jason can determine $B_1$ uniquely from this information and the remaining $2019$ points."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a_0,b_0,c_0,a,b,c$ be integers with $\\gcd(a_0,b_0,c_0)=\\gcd(a,b,c)=1$. Prove that there exist a positive integer $n$ and integers $a_1,\\ldots,a_n=a$, $b_1,\\ldots,b_n=b$, $c_1,\\ldots,c_n=c$ such that $a_{i-1}a_i+b_{i-1}b_i+c_{i-1}c_i=1$ for all $1\\leq i\\leq n$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $n>1$ be an integer and $S$ a collection of $\\frac12\\binom{2n}n$ distinct $n$-element subsets of $\\{1,2,\\ldots,2n\\}$. Show that some $A,B\\in S$ satisfy $|A\\cap B|\\leq1$."
+        },
+        {
+          "number": 7,
+          "problem": "Positive real numbers $x,y$ satisfy the nested absolute-value equation shown, with $2019$ absolute-value signs on each side. Determine, with proof, all possible values of $x/y$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2020_p7_fig.png"
+        },
+        {
+          "number": 8,
+          "problem": "Let $ABC$ be scalene with angle bisectors $AD,BE,CF$, where $D,E,F$ lie on $BC,CA,AB$, respectively. Let $M,N$ be the midpoints of $BC,EF$. Prove that $AN$ and the line through $M$ parallel to $AD$ intersect on the circumcircle of $ABC$ if and only if $DE=DF$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $p>5$ be prime. Show that there are a prime $q<p$ and a positive integer $n$ with $p\\mid n^2-q$."
+        },
+        {
+          "number": 10,
+          "problem": "For fixed positive integer $n$, choose positive integers $a_1,\\ldots,a_n$. Given a permutation $\\pi$ of $1,\\ldots,n$, let $S_\\pi=\\{i:a_i/\\pi(i)\\text{ is an integer}\\}$. Let $N$ be the number of distinct sets $S_\\pi$ as $\\pi$ varies. Determine, in terms of $n$, the maximum possible $N$ over all choices of the $a_i$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a>b$ be positive integers such that $\\sqrt{\\sqrt a+\\sqrt b}+\\sqrt{\\sqrt a-\\sqrt b}$ is an integer. (a) Must $\\sqrt a$ be an integer? (b) Must $\\sqrt b$ be an integer?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be right-angled at $A$. A circle $\\omega$ centred on $BC$ touches $AB$ at $D$ and $AC$ at $E$. Let $F,G$ be its intersections with $BC$, with $F$ between $B,G$. If $DG,EF$ meet at $X$, show that $AX=AD$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $m$ be a positive integer. Show that some positive integer $n$ makes all $2m+1$ integers $2^n-m,2^n-(m-1),\\ldots,2^n+(m-1),2^n+m$ positive and composite."
+        },
+        {
+          "number": 4,
+          "problem": "Let $k,n$ be positive integers and $$S=\\{(a_1,\\ldots,a_k)\\in\\mathbb Z^k:0\\leq a_k\\leq\\cdots\\leq a_1\\leq n,\\ a_1+\\cdots+a_k=k\\}.$$ Determine, with proof, $$\\sum_{(a_1,\\ldots,a_k)\\in S}\\binom n{a_1}\\binom{a_1}{a_2}\\cdots\\binom{a_{k-1}}{a_k}$$ in terms of $k,n$."
+        },
+        {
+          "number": 5,
+          "problem": "A convex polyhedron has $n$ faces, all congruent triangles with angles $36^\\circ,72^\\circ,72^\\circ$. Determine, with proof, the maximum possible $n$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $f(x)=x^2+x+1$. Determine, with proof, all positive integers $n$ for which $f(k)\\mid f(n)$ whenever $k$ is a positive divisor of $n$."
+        },
+        {
+          "number": 7,
+          "problem": "In triangle $ABC$, let $M$ be the midpoint of $BC$ and $D$ on segment $AM$. Distinct points $Y,Z$ lie on rays $CA,BA$, respectively, with $\\angle DYC=\\angle DCB$ and $\\angle DBC=\\angle DZB$. Prove that the circumcircle of $DYZ$ is tangent to that of $DBC$."
+        },
+        {
+          "number": 8,
+          "problem": "For positive real $\\alpha$, define $\\lfloor\\alpha\\mathbb N\\rfloor=\\{\\lfloor\\alpha m\\rfloor:m\\in\\mathbb N\\}$. Let $n$ be a positive integer. A set $S\\subseteq\\{1,2,\\ldots,n\\}$ has the property that for every real $\\beta>0$, if $S\\subseteq\\lfloor\\beta\\mathbb N\\rfloor$ then $\\{1,2,\\ldots,n\\}\\subseteq\\lfloor\\beta\\mathbb N\\rfloor$. Determine, with proof, the smallest possible size of $S$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $ABC$ be scalene with circumcentre $O$ and incentre $I$. The incircle $\\omega$ touches $BC,CA,AB$ at $D,E,F$. Let $P$ be the foot of the altitude from $D$ to $EF$, and let $DP$ meet $\\omega$ again at $Q\\neq D$. Line $OI$ meets the altitude from $A$ to $BC$ at $T$. Given $OI\\parallel BC$, show that $PQ=PT$."
+        },
+        {
+          "number": 10,
+          "problem": "Let $n>1$ be an integer. Each cell of an $n\\times n$ grid is black or white. Any two black cells are connected by a sequence of edge-adjacent black cells, and likewise for white cells. Every $2\\times2$ subgrid contains at least one cell of each colour. Determine, with proof, the maximum possible difference between the numbers of black and white cells, in terms of $n$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $(a_1,\\ldots,a_8)$ be a permutation of $(1,\\ldots,8)$. Find, with proof, the maximum number of perfect squares in $\\{a_1,a_1+a_2,\\ldots,a_1+\\cdots+a_8\\}$."
+        },
+        {
+          "number": 2,
+          "problem": "Find, with proof, the maximum positive integer $k$ such that $6k$ cells of a $6\\times6$ grid can be coloured and, for any three distinct rows $R_1,R_2,R_3$ and three distinct columns $C_1,C_2,C_3$, there is an uncoloured cell in some $R_i\\cap C_j$, $1\\leq i,j\\leq3$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be acute with circumcircle $\\Gamma$. Let $X,Y$ be the midpoints of its minor arcs $AB,AC$, respectively. If $XY$ is tangent to the incircle of $ABC$ and $\\Gamma$ has radius $R$, find, with proof, $XY$ in terms of $R$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n\\geq3$ be an integer and $a_1<\\cdots<a_n$ positive real numbers, with $a_{n+1}=a_1$. Prove that $\\sum_{k=1}^n a_k/a_{k+1}>\\sum_{k=1}^n a_{k+1}/a_k$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ have centroid $G$, with points $E,F$ on $BC$ such that $BE=EF=FC$. Points $X,Y$ lie on lines $AB,AC$, respectively, and $X,Y,G$ are not collinear. The line through $E$ parallel to $XG$ and the line through $F$ parallel to $YG$ meet at $P\\neq G$. Prove that $GP$ passes through the midpoint of $XY$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $P(x)=x^4+ax^3+bx^2+x$ have four distinct roots lying on a circle in the complex plane. Prove that $ab\\neq9$."
+        },
+        {
+          "number": 7,
+          "problem": "Find, with proof, all functions $f:\\mathbb R\\setminus\\{0\\}\\to\\mathbb R$ such that $f(x)^2-f(y)f(z)=x(x+y+z)(f(x)+f(y)+f(z))$ for all real $x,y,z$ with $xyz=1$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $P_1\\cdots P_n$ be a regular $n$-gon and $a_1,\\ldots,a_n$ nonnegative integers. One can draw $m$ circles so that exactly $a_i$ circles contain $P_i$ in their interior, for each $i$. Find, with proof, the minimum possible $m$ in terms of the $a_i$."
+        },
+        {
+          "number": 9,
+          "problem": "Circles $\\Gamma_1,\\Gamma_2$ are externally tangent at $N$ and internally tangent to $\\Gamma$ at $U,V$, respectively. A common external tangent of $\\Gamma_1,\\Gamma_2$ touches them at $P,Q$ and meets $\\Gamma$ at $X,Y$. Let $M$ be the midpoint of arc $XY$ not containing $U,V$. Let $Z\\in\\Gamma$ satisfy $MZ\\perp NZ$. Suppose the circumcircles of $QVZ$ and $PUZ$ meet at $T\\neq Z$. Find, with proof, $TU+TV$ in terms of the radii $R,r_1,r_2$ of $\\Gamma,\\Gamma_1,\\Gamma_2$."
+        },
+        {
+          "number": 10,
+          "problem": "Six vectors $(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)$ are on a board. A move erases two vectors $v,w$ and replaces them with $(v+w)/\\sqrt2$ and $(v-w)/\\sqrt2$. After some moves their sum is $u$. Find, with proof, the maximum possible length of $u$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For positive integer $a$, let $\\tau(a)$ be its number of positive divisors. Find, with proof, the largest possible value of $4\\tau(n)-n$ over positive integers $n$."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that no pairwise distinct complex numbers $a,b,c,d$ satisfy $a^3-bcd=b^3-cda=c^3-dab=d^3-abc$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABCD$ be convex with $\\angle ABC=\\angle BCD=\\theta<90^\\circ$. Point $X$ lies inside it with $\\angle XAD=\\angle XDA=90^\\circ-\\theta$. Prove that $BX=XC$."
+        },
+        {
+          "number": 4,
+          "problem": "Nathan secretly chooses positive integers $(x,y)$ with $x\\leq20$, $y\\leq23$, and Philena knows these bounds. Each round she chooses positive integers $(a,b)$ and tells Nathan. He replies YES if $x\\leq a$ and $y\\leq b$, and NO otherwise. Find, with proof, the smallest positive integer $N$ for which Philena can guarantee certainty about $(x,y)$ after at most $N$ rounds."
+        },
+        {
+          "number": 5,
+          "problem": "Let $S$ be the set of plane points whose coordinates are positive integers at most $100$, and $\\mathcal L$ the lines through at least two points of $S$. Find, with proof, the largest integer $N\\geq2$ for which $N$ distinct lines in $\\mathcal L$ can be chosen such that every two are parallel."
+        },
+        {
+          "number": 6,
+          "problem": "For odd positive integer $n$, let $r(n)$ be the odd positive integer whose binary representation is that of $n$ reversed. For example, $r(2023)=r(11111100111_2)=11100111111_2=1855$. Determine, with proof, whether there exists a strictly increasing eight-term arithmetic progression $a_1,\\ldots,a_8$ of odd positive integers such that $r(a_1),\\ldots,r(a_8)$ is an arithmetic progression in that order."
+        },
+        {
+          "number": 7,
+          "problem": "Let $ABC$ be a triangle, with $D$ on segment $BC$ and $\\angle BAD=\\angle DAC$. Point $X$ is on the opposite side of $BC$ from $A$, with $XB=XD$ and $\\angle BXD=\\angle ACB$. Similarly $Y$ is on the opposite side of $BC$ from $A$, with $YC=YD$ and $\\angle CYD=\\angle ABC$. Prove that $XY\\perp AD$."
+        },
+        {
+          "number": 8,
+          "problem": "Find, with proof, all nonconstant real-coefficient polynomials $P$ such that, for every nonzero real $z$ with $P(z)\\neq0$ and $P(1/z)\\neq0$, $$\\frac1{P(z)}+\\frac1{P(1/z)}=z+\\frac1z.$$"
+        },
+        {
+          "number": 9,
+          "problem": "Let $ABC$ have $AB<AC$. Its incircle touches $BC$ at $D$ and meets the perpendicular bisector of $BC$ at distinct points $X,Y$. Lines $AX,AY$ meet $BC$ at $P,Q$, respectively. Prove that $DP\\cdot DQ=(AC-AB)^2$ implies $AB+AC=3BC$."
+        },
+        {
+          "number": 10,
+          "problem": "One thousand people play a tennis tournament, each playing every other exactly once with no ties. Prove that they can be placed in a line so that each of the $998$ people not at an end either beat both neighbours or lost to both."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1,a_2,\\ldots,a_{100}$ be integers such that $$\\frac{a_1^2+\\cdots+a_{100}^2}{a_1+\\cdots+a_{100}}=100.$$ Determine, with proof, the maximum possible value of $a_1$."
+        },
+        {
+          "number": 2,
+          "problem": "Nine distinct positive integers with sum $74$ are placed in a $3\\times3$ grid. Simultaneously each is replaced by the sum of its edge-adjacent neighbours. Afterwards exactly four grid numbers are $23$. Determine, with proof, all possible numbers originally in the centre."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be scalene and $M$ the midpoint of $BC$. Let $X$ satisfy $CX\\parallel AB$ and $\\angle AMX=90^\\circ$. Prove that $AM$ bisects $\\angle BAX$."
+        },
+        {
+          "number": 4,
+          "problem": "Each lattice point with nonnegative coordinates is labelled by a nonnegative integer. Point $(0,0)$ has label $0$. For every $x,y\\geq0$, the set of labels at $(x,y),(x,y+1),(x+1,y)$ is $\\{n,n+1,n+2\\}$ for some nonnegative integer $n$. Determine, with proof, all possible labels at $(2000,2024)$."
+        },
+        {
+          "number": 5,
+          "problem": "Determine, with proof, whether positive integers $x,y$ exist such that $x+y$, $x^2+y^2$ and $x^3+y^3$ are all perfect squares."
+        },
+        {
+          "number": 6,
+          "problem": "Given a nonzero rational number $a$, find, with proof, all functions $f:\\mathbb Q\\to\\mathbb Q$ such that $f(f(x)+ay)=af(y)+x$ for all $x,y\\in\\mathbb Q$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $ABCDEF$ be a regular hexagon and $P$ an interior point. Prove that, of $\\tan\\angle APD,\\tan\\angle BPE,\\tan\\angle CPF$, two sum to the third."
+        },
+        {
+          "number": 8,
+          "problem": "Let $P$ lie inside quadrilateral $ABCD$. The circumcircles of triangles $PDA,PAB,PBC$ are pairwise distinct but congruent. Lines $AD,BC$ meet at $X$. If $O$ is the circumcentre of $XCD$, prove that $OP\\perp AB$."
+        },
+        {
+          "number": 9,
+          "problem": "One car occupies each cell of a $200\\times200$ grid and faces a cardinal direction. A move chooses a car without a car immediately in front and slides it forward one cell, or removes it if it exits the grid. Cars are arranged so that some sequence eventually removes all of them. Over all such initial arrangements, determine, with proof, the maximum possible number of moves."
+        },
+        {
+          "number": 10,
+          "problem": "Across all polynomials $P$ such that $P(n)$ is an integer for all integers $n$, determine, with proof, all possible values of $P(i)$, where $i^2=-1$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a,b,c$ be pairwise distinct positive integers such that $1/a,1/b,1/c$ form an increasing arithmetic progression in that order. Prove that $\\gcd(a,b)>1$."
+        },
+        {
+          "number": 2,
+          "problem": "A polyomino is a connected figure formed by joining one or more unit squares edge-to-edge. Determine, with proof, the number of non-congruent polyominoes with no holes, perimeter $180$, and area $2024$."
+        },
+        {
+          "number": 3,
+          "problem": "Circles $\\omega_1,\\omega_2$ intersect at distinct points $A,B$. Point $X$ varies along $\\omega_1$, and $Y$ on $\\omega_2$ is chosen so that $AB$ bisects $\\angle XAY$. Prove that, as $X$ varies, the circumcentre of $\\triangle AXY$, when it exists, varies along a fixed line."
+        },
+        {
+          "number": 4,
+          "problem": "Jerry places at most one rook in each cell of a $2025\\times2025$ grid. A rook attacks another if they lie in the same row or column with no rook between them. Determine, with proof, the maximum number of rooks such that no rook attacks four other rooks."
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ be acute with orthocentre $H$. Points $E,F$ lie on segments $AC,AB$, respectively, with $\\angle EHF=90^\\circ$. Let $X$ be the foot of the altitude from $H$ to $EF$. Prove that $\\angle BXC=90^\\circ$."
+        },
+        {
+          "number": 6,
+          "problem": "Complex numbers $\\omega_1,\\ldots,\\omega_n$ have magnitude $1$. Let $z$ be a complex number distinct from all of them such that $$\\frac{z+\\omega_1}{z-\\omega_1}+\\cdots+\\frac{z+\\omega_n}{z-\\omega_n}=0.$$ Prove that $|z|=1$."
+        },
+        {
+          "number": 7,
+          "problem": "Determine, with proof, whether a square can be dissected into finitely many, not necessarily congruent, triangles whose angles are $30^\\circ,75^\\circ,75^\\circ$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $ABC$ have incentre $I$. Its incircle touches $BC$ at $D$. Let $M$ be the midpoint of $BC$, and let $AI$ meet the circumcircle again at $L\\neq A$. The circle $\\omega$ centred at $L$ is tangent to $AB,AC$. If $\\omega$ intersects segment $AD$ at $P$, prove that $\\angle IPM=90^\\circ$."
+        },
+        {
+          "number": 9,
+          "problem": "Determine, with proof, all primes $p$ for which there exists $f:\\mathbb Z\\to\\mathbb Z$ such that for every integer $x$, $f(x+p)=f(x)$ and $p$ divides $f(x+f(x))-x$."
+        },
+        {
+          "number": 10,
+          "problem": "Determine, with proof, all possible values of $\\gcd(a^2+b^2+c^2,abc)$ over all triples of positive integers $(a,b,c)$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\mathcal P$ be a regular hexagon with centre $O$. Distinct points $A,B$ lie on its boundary. Segments $OA,OB$ divide its interior into polygons $R_1,R_2$ with areas $a_1,a_2$ and perimeters $p_1,p_2$. Given $a_1/p_1=a_2/p_2$, prove that $a_1=a_2$."
+        },
+        {
+          "number": 2,
+          "problem": "Jessica the jackrabbit climbs down a wall with $2026$ horizontal layers stacked vertically. The $n$th layer from the top is partitioned into $2n-1$ identical rectangular bricks arranged side by side, as shown. She starts on the single brick in the top layer. A move goes down one layer to a brick sharing a side with her current brick. Determine, with proof, the total number of distinct sequences of moves reaching the $2026$th layer.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026_p2_fig.png"
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\alpha,\\beta$ be complex numbers such that $\\alpha\\beta+\\alpha+\\beta+100=0$. Suppose $|\\alpha|=|\\beta|=M$ for some nonnegative real $M$. Determine, with proof, all possible $M$."
+        },
+        {
+          "number": 4,
+          "problem": "A set $S$ of rational numbers is inclusive if $0\\notin S$ and, for any not necessarily distinct $x,y,z\\in S$, $xy+z\\in S$. Determine, with proof, all rational numbers $a$ contained in some inclusive set."
+        },
+        {
+          "number": 5,
+          "problem": "The numbers $1,2,\\ldots,2026$ are written on a blackboard. An operation replaces any number with the positive difference between the largest and smallest numbers currently on the board. Determine, with proof, the least number of operations needed to make all numbers equal."
+        },
+        {
+          "number": 6,
+          "problem": "Let $ABCD$ be cyclic with circumcentre $O$, and $M$ the midpoint of $AB$. Suppose $\\angle CMD=90^\\circ$ and $AD\\perp BC$. Prove that the reflection of $O$ over $AB$ lies on line $CD$."
+        },
+        {
+          "number": 7,
+          "problem": "An infinite integer sequence $a_1,a_2,\\ldots$ is $r$-close if every integer appears exactly once and $|a_{n+2}-a_{n+1}|\\geq r|a_{n+1}-a_n|$ for every integer $n\\geq1$. Determine, with proof, all nonnegative real $r$ for which such a sequence exists."
+        },
+        {
+          "number": 8,
+          "problem": "Let $n\\geq2$ be an integer and $(a_1,\\ldots,a_n)$ a permutation of $1,\\ldots,n$. In one move Marin chooses $1\\leq k\\leq\\lfloor n/2\\rfloor$ and disjoint sets $I=\\{i_1,\\ldots,i_k\\}$, $J=\\{j_1,\\ldots,j_k\\}$ with $1\\leq i_1<\\cdots<i_k\\leq n$ and $1\\leq j_1<\\cdots<j_k\\leq n$. He swaps $a_{i_s}$ with $a_{j_s}$ for all $1\\leq s\\leq k$. The choice of $k$ may vary between moves. Let $f(n)$ be the smallest positive integer such that every starting permutation can reach $(1,2,\\ldots,n)$ in at most $f(n)$ moves. Prove that $\\lceil\\log_3 n\\rceil\\leq f(n)\\leq\\lceil\\log_2 n\\rceil$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $ABC$ be acute and scalene. Let $D$ be the foot of the altitude from $A$ to $BC$, and $M$ the midpoint of $BC$. There is a unique point $P$ strictly inside $ABC$ such that $\\angle DPM=90^\\circ$ and $PB/PC=AB/AC$. Prove that $\\angle BPC=180^\\circ-|\\angle ABC-\\angle ACB|$."
+        },
+        {
+          "number": 10,
+          "problem": "Prove that there is a real constant $M$ such that, for every prime $p\\geq M$ and every integer $2\\leq m\\leq p-1$, there exist positive integers $a,b$ with $m\\leq a\\leq1.01m$, $p^{0.99}\\leq b\\leq p$, and $p\\mid ab-1$."
+        }
+      ]
+    }
+  ]
+}
