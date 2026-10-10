@@ -27,15 +27,15 @@ Current inventory: **20,128 statements**, 113 rows (96 national, 12 regional, 2 
 - **Chile**: 1991 stores only /3; missing /1,/2,/4,/5,/6,/7, including necessary /6–7 figures. Whole years 1998, 2004, 2005, 2017. Figures 1989/3, 1995/2,/7, 1999/2, 2025/3 already exist; some still need primary-source confirmation.
 - **Italy PreIMO**: 2009, 2020, 2021, 2023–2026. Do not substitute Gobbino training lessons.
 - **Belgium MAXI final**: 2009–2021, official archive behind login.
-- **Uruguay nivel V final**: 2018–2026; public FONMAT archive checked covers 2011–2017.
+- **Uruguay nivel V final**: held-paper gaps 2018–2025. The 2026 final is scheduled for 25 Oct 2026 and is not yet a missing held paper. Indexed 2020/2022 statements remain outside the bank pending visual inspection; 2018/2019 official printed book located; 2023/2024 archive links are placeholders. See `national-gaps-audit-2026-10-10.md`.
 - **Thailand IMO TST**: 2022–2026; POSN TMO/camp selection is a different contest.
 - **Australia AMO**: 2021–2026; paid/inaccessible old-paper archive and 2026 format change.
 - **Croatia national**: 2006–2014 and before 1997. 1997–2005 already stored.
-- **Serbia**: SMO 2025; TST 2007, 2008, 2010, 2011, 2014, 2015, 2020. TST 2009 and 2025 already stored (AoPS, unverified). Retrieved 2007 izborno PDF is junior and was excluded.
+- **Serbia**: SMO 2025 was not held according to DMS; remove from missing held editions. TST 2007, 2008, 2010, 2011, 2014, 2015, 2020. TST 2009 and 2025 already stored; 2009 remains AoPS-only, all six 2025 statements now checked against original DMS papers. Retrieved 2007 izborno PDF is junior and was excluded.
 - **AoPS national audit**: remaining per-year gaps in `aops-national-catalogue-audit-2026-10-04.md`; compare against current JSON first. Greece National, Iran TST, Israel, Taiwan, Belarus, South Africa, Bangladesh, Albania, Kosovo, Bosnia, Peru, Moldova, Ecuador and Costa Rica already have rows. Do not propose them again as new countries.
 
 ## Source-fidelity backlog
-**5,532 / 20,128 checked; 14,596 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
+**5,538 / 20,128 checked; 14,590 pending.** See the generated `verification-progress.md` for current per-collection counts. Topics are reviewed for every stored statement; source fidelity is a separate unfinished layer. Original evidence must be visually compared; PDF retrieval or automated extraction alone never earns a check.
 
 ## Optional owner decision
 Repository rename remains optional; it changes Pages/BASE/image URLs and is outside this batch.
