@@ -23,14 +23,47 @@
   "years": [
     {
       "year": 1938,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "verified_13_question_original_numbering_full_text_not_transcribed",
       "original_sources": [
+        {
+          "kind": "historical_exam_statement_reproduction",
+          "url": "https://www.d.umn.edu/~jgallian/putnam13.pdf",
+          "citation": "Gallian, The Putnam Competition from 1938–2013, Appendix I",
+          "checked_for": "1938 date, 13 numbered problems, morning 1–7 and afternoon 8–13"
+        },
         {
           "kind": "historical_compilation_index",
           "url": "https://openlibrary.org/books/OL17217580M/The_William_Lowell_Putnam_Mathematical_Competition_problems_and_solutions"
         }
       ],
-      "problems": []
+      "problems": [],
+      "original_problem_count": 13,
+      "sessions": [
+        {
+          "session": "morning",
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "session": "afternoon",
+          "numbers": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "problem_index_file": "put-1938-exam-index.json"
     },
     {
       "year": 1939,
