@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "PARTIAL_SAMPLE_VERIFIED_REWORDING_MOST_YEARS_UNTRANSCRIBED",
+  "completeness": "PARTIAL_COMPLETE_2026_TEN_REWORDINGS_OTHER_YEARS_EMPTY",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -465,7 +465,7 @@
     },
     {
       "year": 2026,
-      "edition_status": "partial_verified_mathematical_rewording_not_full_original_exam",
+      "edition_status": "all_ten_mathematically_equivalent_originally_reworded_entries_source_compared",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -486,7 +486,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Find every real $x$ satisfying $\\cos(\\cos x)=\\sin(\\sin x)$.",
+          "problem": "Prove that there is no real number $x$ for which $\\cos(\\cos x)=\\sin(\\sin x)$.",
           "topics": [
             "Trigonometry",
             "Real Analysis"
@@ -497,10 +497,164 @@
           "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2026",
           "statement_verified": true,
           "statement_form": "independently_reworded_equivalent_not_verbatim",
-          "taxonomy_status": "provisional"
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For $n\\ge1$, consider real $n\\times n$ matrices $A,B$ satisfying $A^{\\mathsf T}A+BB^{\\mathsf T}=AB+BA$. Decide, with justification, whether the displayed identity forces $AB=BA$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Theory"
+          ],
+          "problem_dna": [
+            "factorization"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Label $n\\ge2$ distinct cards by $1,\\dots,n$. Partition them into two nonempty piles, place the first pile in increasing order and the second in decreasing order, then take one card alternately from each pile, starting with the first pile; once a pile is exhausted, append the other pile's remaining cards. Determine the number of distinct permutations obtainable, allowing every possible partition.",
+          "topics": [
+            "Combinatorics",
+            "Permutations"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Fix $x_1>0$. For $n\\ge1$, set $x_{n+1}=\\arctan\\!\\bigl(\\frac1n\\sum_{k=1}^{n}x_k\\bigr)$. Determine the limit of $x_n\\sqrt{\\ln n}$ as $n\\to\\infty$.",
+          "topics": [
+            "Real Analysis",
+            "Sequences"
+          ],
+          "problem_dna": [
+            "recurrence"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Show that some absolute constant $C>0$ has the following property. Given arbitrary positive integers $A,B$, a polynomial $p$ with real coefficients can be selected so that $\\deg p<C\\sqrt{AB}$ while $p(0)^2>\\sum_{j=1}^{A}p(-j)^2+\\sum_{j=1}^{B}p(j)^2$.",
+          "topics": [
+            "Polynomials",
+            "Inequalities"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Answer each existence question separately for differentiable maps $f:\\mathbb R\\to\\mathbb R$: (a) can $f'(f(x))=x$ hold for every real $x$? (b) can $f'(f(x))=|x|$ hold for every real $x$?",
+          "topics": [
+            "Real Analysis",
+            "Functional Equations"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For continuous $f:[0,1]\\to\\mathbb R$, form the planar set $S_f$ made from every segment with endpoints $(x,0)$ and $(f(x),1)$ as $x$ ranges over $[0,1]$. If $A_f$ denotes its area, compute $\\inf_f A_f$ over all such continuous functions.",
+          "topics": [
+            "Geometry",
+            "Measure Theory"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $n\\ge5$ and let $A=(a_{ij})$ be a real symmetric $n\\times n$ matrix with zeros on the diagonal and $a_{ij}\\in\\{-1,1\\}$ off the diagonal. Suppose the inner product of every pair of different rows is the same constant. For the eigenvalues $\\lambda_1,\\ldots,\\lambda_n$, establish $\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$ and characterize equality.",
+          "topics": [
+            "Linear Algebra",
+            "Spectral Theory"
+          ],
+          "problem_dna": [
+            "linear-combination"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "Positive real numbers $a_1,a_2,\\ldots$ obey $\\sum_{k=1}^{2n-1}a_k=a_n^2$ for every integer $n\\ge1$. Prove that $a_n\\ge2n-1$ for every $n$.",
+          "topics": [
+            "Sequences",
+            "Inequalities"
+          ],
+          "problem_dna": [
+            "partial-sums"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "For any finite collection of planar points $p_1,\\ldots,p_n$, determine whether one can always choose a square-grid spacing $d$ with $0<d<1$, together with a translation and rotation of an infinite alternating black-and-white square chessboard, such that every given point belongs to the interior of a white square. Grid lines have no colour.",
+          "topics": [
+            "Geometry",
+            "Combinatorics"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
         }
       ]
     }
   ],
-  "sample_problem_count": 1
+  "sample_problem_count": 10
 }
