@@ -56,16 +56,22 @@ for(const target of cfg.collections){
      }
    }else{
      if(target.id!=='put'&&year.year===({imc:2026,seemous:2024,vjimc:2025,smmc:2025})[target.id]){
-       assert.equal(year.problems.length,1,'One explicitly verified, independently reworded sample expected');
-       const p=year.problems[0];
-       assert.equal(p.statement_form,'independently_reworded_equivalent_not_verbatim');
-       assert.equal(p.statement_verified,true);
-       assert.ok(p.problem.length>=50);
-       assert.ok(Array.isArray(p.topics)&&p.topics.length>0);
-       assert.ok(Array.isArray(p.problem_dna)&&p.problem_dna.length>0);
-       assert.ok(p.source_url.startsWith('https://'));
-       assert.equal(p.taxonomy_status,'provisional');
-       assert.ok(!Object.hasOwn(p,'solution'));
+       const expectedCount=target.id==='imc'?10:1;
+       assert.equal(year.problems.length,expectedCount,'Must have all verified independently reworded records');
+       for(const p of year.problems){
+         assert.equal(p.statement_form,'independently_reworded_equivalent_not_verbatim');
+         assert.equal(p.statement_verified,true);
+         assert.ok(p.problem.length>=50);
+         assert.ok(Array.isArray(p.topics)&&p.topics.length>0);
+         assert.ok(Array.isArray(p.problem_dna)&&p.problem_dna.length>0);
+         assert.ok(p.source_url.startsWith('https://'));
+         assert.equal(p.taxonomy_status,'provisional');
+         assert.ok(!Object.hasOwn(p,'solution'));
+       }
+       if(target.id==='imc'){
+         assert.deepEqual(year.problems.map(p=>p.number),[1,2,3,4,5,6,7,8,9,10]);
+         assert.deepEqual(year.problems.map(p=>p.day),[1,1,1,1,1,2,2,2,2,2]);
+       }
      }else{
        assert.equal(year.problems.length,0,'Do not fabricate a year of problems');
      }
@@ -73,8 +79,8 @@ for(const target of cfg.collections){
    stagedStatementCount+=year.problems.length;
  }
 }
-assert.equal(stagedStatementCount,196);
-console.log('All five standalone staged JSON files valid; 192 Putnam transcriptions and four separately labelled short mathematical restatements; classification incomplete.');
+assert.equal(stagedStatementCount,205);
+console.log('All five standalone staged JSON files valid; 192 Putnam transcriptions and 13 independently worded source-checked mathematical statements; classification incomplete.');
 
 const first=JSON.parse(fs.readFileSync(base+'put-1938-exam-index.json','utf8'));
 assert.equal(first.year,1938);
