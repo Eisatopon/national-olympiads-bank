@@ -2,7 +2,7 @@
   "competition": "South Eastern European Mathematical Olympiad for University Students",
   "collection_id": "seemous",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "INCOMPLETE_NO_STATEMENTS_TRANSCRIBED",
+  "completeness": "PARTIAL_SAMPLE_VERIFIED_REWORDING_MOST_YEARS_UNTRANSCRIBED",
   "scope": {
     "start": 2007,
     "end": 2026
@@ -125,7 +125,7 @@
     },
     {
       "year": 2024,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "partial_verified_mathematical_rewording_not_full_original_exam",
       "original_sources": [
         {
           "kind": "original_year_page",
@@ -136,7 +136,23 @@
           "url": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "number": 2,
+          "problem": "Suppose $A$ and $B$ are real symmetric positive-semidefinite matrices of the same size. Establish that $A^3+B^3=(A+B)^3$ holds precisely when $AB=0$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Theory"
+          ],
+          "problem_dna": [
+            "factorization"
+          ],
+          "source_url": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional"
+        }
+      ]
     },
     {
       "year": 2025,
@@ -155,5 +171,6 @@
       ],
       "problems": []
     }
-  ]
+  ],
+  "sample_problem_count": 1
 }
