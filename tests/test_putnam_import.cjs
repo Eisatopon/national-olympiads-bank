@@ -42,4 +42,6 @@ for(const r of history.records){
  assert.equal(r.publication_permission,'not_established');
 }
 assert.equal(history.records.find(r=>r.year===2020).event_status,'unofficial_rescheduled_2021-02-20');
+const wronglyModern=base();wronglyModern.years[0].year=1938;
+assert.throws(()=>verify(wronglyModern,sources),/Standard A1–B6 validation/);
 console.log('Putnam historical coverage: 86 editions and zero invented historical originals.');
