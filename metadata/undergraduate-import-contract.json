@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-11",
+  "section": "undergraduate",
+  "purpose": "Strict, persistent import targets; entries only become public after original statement transcription and classification are verified. Do not substitute source URLs or blank strings for problem statements.",
+  "collections": [
+    {
+      "id": "imc",
+      "file": "IMC-university-problems.json",
+      "competition": "International Mathematics Competition for University Students",
+      "first_year": 1994,
+      "last_archived_year": 2026,
+      "identifier_rule": "Official year, day and official problem number; preserve non-standard counts",
+      "source_registry": "metadata/undergraduate-official-papers.json"
+    },
+    {
+      "id": "put",
+      "file": "Putnam-problems.json",
+      "competition": "William Lowell Putnam Mathematical Competition",
+      "first_year": 1938,
+      "last_archived_year": 2025,
+      "identifier_rule": "Use original paper numbering; do not impose A1–B6 before 1985; retain distinct 1958 examinations; no invented events for 1943–1945",
+      "source_registry": "metadata/putnam-historical-1938-2025.json"
+    },
+    {
+      "id": "seemous",
+      "file": "SEEMOUS-problems.json",
+      "competition": "South Eastern European Mathematical Olympiad for University Students",
+      "first_year": 2007,
+      "last_archived_year": 2026,
+      "identifier_rule": "Preserve original examination numbering and edition eligibility; verify actual held years",
+      "source_registry": "metadata/undergraduate-other-four-sources.json"
+    },
+    {
+      "id": "vjimc",
+      "file": "Vojtech-Jarnik-problems.json",
+      "competition": "Vojtěch Jarník International Mathematical Competition",
+      "first_year": 1991,
+      "last_archived_year": 2026,
+      "identifier_rule": "Keep official Category I/II attached to every problem; never merge same-number questions",
+      "source_registry": "metadata/undergraduate-other-four-sources.json"
+    },
+    {
+      "id": "smmc",
+      "file": "Simon-Marais-problems.json",
+      "competition": "Simon Marais Mathematics Competition",
+      "first_year": 2017,
+      "last_archived_year": 2025,
+      "identifier_rule": "Keep A/B/C paper identity per edition; do not assume all years had three papers",
+      "source_registry": "metadata/undergraduate-other-four-sources.json"
+    }
+  ],
+  "required_problem_fields": [
+    "problem",
+    "number",
+    "topics",
+    "problem_dna",
+    "source_url",
+    "statement_verified"
+  ],
+  "optional_problem_fields": [
+    "day",
+    "session",
+    "paper",
+    "category",
+    "figure",
+    "difficulty",
+    "source_reference"
+  ],
+  "taxonomy": {
+    "topics": "Existing bank controlled topical classification (must never guess unknown category)",
+    "problem_dna": "Use only IDs from metadata/problem-dna.json techniques; omit unsupported technique, never invent",
+    "mathematical_connections": "Cross-links based on demonstrated mathematical equivalence, not similarity alone"
+  },
+  "safety_rules": [
+    "Full statement text required; no placeholder or official PDF link as substitute",
+    "No solutions in the record",
+    "Publication basis must be documented before mirroring externally sourced protected texts",
+    "No unverified original year or problem count",
+    "Do not affect National/Regional/International/Tournaments grids"
+  ],
+  "state": "specification_only_no_statement_import"
+}
