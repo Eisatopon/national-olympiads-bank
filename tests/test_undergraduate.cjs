@@ -17,4 +17,20 @@ assert.match(html, /id="undergraduateSources"/);
 assert.match(html, /four 90-minute sessions/);
 assert.match(html, /A, B and C are distinct paper variants/);
 assert.ok(!/scope:\s*'undergraduate'/.test(html), 'Source cards must not be represented as exam problems');
-console.log('Undergraduate taxonomy and source-only UI validation passed.');
+const papers = JSON.parse(fs.readFileSync('metadata/undergraduate-official-papers.json', 'utf8'));
+assert.equal(papers.schema_version, 1);
+assert.equal(papers.competitions.length, 41);
+assert.equal(new Set(papers.competitions.map(x => x.competition_id + ':' + x.year)).size, 41);
+for (const paper of papers.competitions) {
+  assert.ok(['imc','put'].includes(paper.competition_id));
+  assert.equal(paper.source_rights, 'permission_not_documented');
+  assert.equal(paper.statement_text_imported, false);
+  assert.ok(paper.year_page.startsWith('https://'));
+}
+const imc2026 = papers.competitions.find(x => x.competition_id === 'imc' && x.year === 2026);
+assert.equal(imc2026.original_exams_verified, true);
+assert.deepEqual(imc2026.days.map(x => x.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
+assert.deepEqual(imc2026.days.map(x => x.date), ['2026-07-29','2026-07-30']);
+for (const day of imc2026.days) assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
+assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 1);
+console.log('Undergraduate taxonomy and official paper index checks passed.');
