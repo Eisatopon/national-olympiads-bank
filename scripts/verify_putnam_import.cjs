@@ -11,7 +11,7 @@ function verify(input, sources) {
   assert.ok(Array.isArray(input.years)&&input.years.length>0,'At least one exam year required');
   const seenYears=new Set();
   for(const exam of input.years){
-    assert.ok(Number.isInteger(exam.year)&&exam.year>=1938,'Year required');
+    assert.ok(Number.isInteger(exam.year)&&exam.year>=1985,'Standard A1–B6 validation applies only to years 1985 onward; older competitions need year-specific structure');
     assert.ok(!seenYears.has(exam.year),'Duplicate exam year '+exam.year);
     seenYears.add(exam.year);
     const source=sources.find(x=>x.competition_id==='put'&&x.year===exam.year);
