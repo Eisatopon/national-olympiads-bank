@@ -104,7 +104,7 @@ assert.match(html, /id="imcPreviewFrame"/);
 assert.match(html, /id="imcPreviewFallback"/);
 assert.match(html, /imcHistoric\.addEventListener\('click'/);
 assert.match(html, /frame\.src = url/);
-assert.match(html, /frame\)\.removeAttribute\('src'\)/);
+assert.ok(html.includes("document.querySelector('#imcPreviewFrame').removeAttribute('src')"));
 for (const url of links) assert.ok(html.includes('data-source="' + url + '"'), url);
 
 assert.match(html, /the PDFs and their full statement texts have not been copied to eisatopon\.gr/);
