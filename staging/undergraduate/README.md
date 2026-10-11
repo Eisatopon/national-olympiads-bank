@@ -63,3 +63,7 @@ The four other competition JSONs each contain **one** source-checked **independe
 ## IMC 2026 complete two-day mathematical restatement set
 
 The 2026 IMC exam now contains **10 separately authored, mathematically equivalent statement records**, numbered 1–5 for Day 1 and 6–10 for Day 2, with exact official source page per problem. Each record has LaTeX, topic tags, controlled-vocabulary Problem DNA, and `statement_form: independently_reworded_equivalent_not_verbatim`. The categorization is **provisional**. All **other** IMC years remain untranscribed and the entire work branch remains unpublished to the live bank. This is not a license to copy other organisers' original texts.
+
+## IMC 2025 complete two-day mathematical restatement set
+
+The 2025 IMC exam now also contains all **10 separately authored, mathematically equivalent statement records**, five per day, with original per-problem official source URLs. Math formatting and provisional classification are attached to each problem. Both **2025 and 2026** are the only complete IMC years in this staging JSON as of this update, with **20 independent restatements total**. Prior years **1994–2024 are not imported**. No publication to the live site.
