@@ -1,8 +1,10 @@
 # Pending tasks — updated 11 Oct 2026
 
-Current inventory: **20,736 statements**, 116 rows (99 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `israel-tst-import-2026-10-11.md`.
+Current inventory: **20,814 statements**, 117 rows (100 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `cyprus-pancyprian-2026-10-11.md`.
 
 Latest import: `israel-tst-import-2026-10-11.md`: 74 statements in 24 complete displayed Israel TST examinations, 2016 and 2021–2026, new row ilt. The owner accepted complete individual tests despite annual gaps. All 19 secondary compilation pages visually inspected; no original-source badges. Withheld whole tests: 2016/1 (coin rule), 2023/3 (missing tile image), 2025/1,7,8 (two-entry counts unconfirmed), 2026/2,9 (printed geometry/indexing defects). Other absent labels and explicit IMO Shortlist omissions remain open. Recover the identified original packets rather than repeating generic searches.
+
+Latest Cyprus import: 78 statements in 19 complete Grade 12 Pancyprian examinations (2006, 2007, 2009–2019 and two in 2021, then 2022–2025), with 75 original-source checks and three visible source qualifications. Actual dates retained. Cyprus TST remains 184 statements/46 examinations; latest missing papers and pre-2006/2008 national gaps are documented in `cyprus-pancyprian-2026-10-11.md`. Next agreed country: Estonia.
 
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
