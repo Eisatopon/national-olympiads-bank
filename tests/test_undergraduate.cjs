@@ -33,8 +33,9 @@ assert.deepEqual(imc2026.days.map(x => x.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
 assert.deepEqual(imc2026.days.map(x => x.date), ['2026-07-29','2026-07-30']);
 for (const day of imc2026.days) assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
 const officialIMC = papers.competitions.filter(x => x.competition_id === 'imc' && x.original_exams_verified).sort((a,b) => a.year-b.year);
-assert.deepEqual(officialIMC.map(x => x.year), [2021, 2022, 2023, 2024, 2025, 2026]);
+assert.deepEqual(officialIMC.map(x => x.year), [2020, 2021, 2022, 2023, 2024, 2025, 2026]);
 const editionSpecs = {
+  2020: {dates:['2020-07-26','2020-07-27'], dayNumbers:[[1,2,3,4],[5,6,7,8]]},
   2021: {dates:['2021-08-03','2021-08-04'], dayNumbers:[[1,2,3,4],[5,6,7,8]]},
   2022: {dates:['2022-08-03','2022-08-04'], dayNumbers:[[1,2,3,4],[5,6,7,8]]},
   2023: {dates:['2023-08-02','2023-08-03'], dayNumbers:[[1,2,3,4,5],[6,7,8,9,10]]},
@@ -56,7 +57,7 @@ for (const edition of officialIMC) {
   assert.equal(edition.statement_text_imported, false);
   assert.equal(edition.source_rights, 'permission_not_documented');
 }
-assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 6);
+assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 7);
 const putnam = papers.competitions.filter(x => x.competition_id === 'put');
 assert.equal(putnam.length, 8);
 assert.deepEqual(putnam.map(x => x.year).sort((a,b) => a-b), [2018,2019,2020,2021,2022,2023,2024,2025]);
