@@ -55,7 +55,7 @@ for(const target of cfg.collections){
        assert.ok(problem.source_url.startsWith('https://github.com/rpxgit/The-Putnam-Archive/'));
      }
    }else{
-     if(target.id!=='put'&&(target.id==='imc'?[2025,2026].includes(year.year):year.year===({seemous:2024,vjimc:2025,smmc:2025})[target.id])){
+     if(target.id!=='put'&&(target.id==='imc'?[2024,2025,2026].includes(year.year):year.year===({seemous:2024,vjimc:2025,smmc:2025})[target.id])){
        const expectedCount=target.id==='imc'?10:1;
        assert.equal(year.problems.length,expectedCount,'Must have all verified independently reworded records');
        for(const p of year.problems){
@@ -79,7 +79,7 @@ for(const target of cfg.collections){
    stagedStatementCount+=year.problems.length;
  }
 }
-assert.equal(stagedStatementCount,215);
+assert.equal(stagedStatementCount,225);
 console.log('All five standalone staged JSON files valid; 192 Putnam transcriptions and 23 independently worded source-checked mathematical statements; classification incomplete.');
 
 const first=JSON.parse(fs.readFileSync(base+'put-1938-exam-index.json','utf8'));
