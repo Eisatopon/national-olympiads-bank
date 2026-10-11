@@ -71,3 +71,7 @@ The 2025 IMC exam now also contains all **10 separately authored, mathematically
 ## IMC 2023 and 2024 papers
 
 The 2023 and 2024 examinations now also have ten independently written mathematics statement records each, with official per-question source links, correct day identifiers, and provisional topic/Problem DNA fields. **IMC 2023–2026: 40 restatement records**, **IMC 1994–2022: not yet transcribed**. This work branch remains unpublished.
+
+## IMC early-2020s full-examination transcriptions (2021–2022)
+
+The 2021 and 2022 IMC editions each contained **eight**, rather than ten, problems. Both have now been independently restated in the IMC JSON, with four problems on each of two days and original organiser source links. Total currently listed in IMC 2021–2026: **56** records. Remaining 1994–2020 editions are **not yet transcribed**. The broader whole-competition task remains incomplete, and the staging branch is not merged into the public bank. Per-question classifications are provisional.
