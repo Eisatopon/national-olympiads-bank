@@ -79,6 +79,27 @@ for (const edition of historical) {
   }
 }
 assert.equal(historical.filter(x => x.verified_primary_pdf).length, 7);
+assert.equal(papers.historical_archive_review.full_year_official_document_link_sets_verified, 23);
+assert.equal(papers.historical_archive_review.original_pdf_links_verified, 43);
+const links = new Set();
+for (const edition of historical) {
+  const docs = edition.official_original_documents;
+  assert.equal(edition.official_original_document_links_confirmed, true, edition.year);
+  assert.equal(docs.length, edition.year <= 1996 ? 1 : 2, edition.year);
+  assert.deepEqual(docs.map(d => d.paper), edition.year <= 1996 ? ['combined'] : ['day_1', 'day_2'], edition.year);
+  for (const d of docs) {
+    assert.match(d.official_url, /^https:\/\/www\.imc-math\.org\.uk\/imc\d{4}\//);
+    assert.ok(d.official_url.includes('/imc' + edition.year + '/'));
+    assert.ok(html.includes(d.official_url), 'Missing visible official paper link: ' + d.official_url);
+    assert.ok(!links.has(d.official_url), 'Duplicate original document link');
+    links.add(d.official_url);
+  }
+  assert.equal(edition.original_exams_verified, false);
+  assert.equal(edition.statement_text_imported, false);
+}
+assert.equal(links.size, 43);
+assert.match(html, /the PDFs and their full statement texts have not been copied to eisatopon\.gr/);
+
 const putnam = papers.competitions.filter(x => x.competition_id === 'put');
 assert.equal(putnam.length, 8);
 assert.deepEqual(putnam.map(x => x.year).sort((a,b) => a-b), [2018,2019,2020,2021,2022,2023,2024,2025]);
