@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "PARTIAL_COMPLETE_2024_2025_2026_OTHER_YEARS_EMPTY",
+  "completeness": "PARTIAL_COMPLETE_2023_2024_2025_2026_OTHER_YEARS_EMPTY",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -402,7 +402,7 @@
     },
     {
       "year": 2023,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "all_ten_independently_reworded_records_primary_source_compared",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -419,7 +419,178 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2023"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all twice continuously differentiable functions $f:\\mathbb R\\to\\mathbb R$ such that $f(7x+1)=49f(x)$ for every real $x$.",
+          "topics": [
+            "Real Analysis",
+            "Functional Equations"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For complex $n\\times n$ matrices $A,B,C$ satisfying $A^2=B^2=C^2$ and $B^3=ABC+2I_n$, prove the identity $A^6=I_n$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Equations"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Classify the real-coefficient bivariate polynomials $P$ for which $P(x,y)\\,P(z,t)=P(xz-yt,xt+yz)$ holds as an identity in four real variables.",
+          "topics": [
+            "Algebra",
+            "Polynomials"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $p$ be prime and $k\\ge1$. Suppose the $p$ residues $i^k+i$, $i=0,\\ldots,p-1$, are pairwise distinct modulo $p$. Find all congruence classes that $2^k+2$ can represent modulo $p$ under this hypothesis.",
+          "topics": [
+            "Number Theory",
+            "Finite Fields"
+          ],
+          "problem_dna": [
+            "modular-arithmetic"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Consider a nonempty family $\\mathcal F$ of permutations of an $n$-element set, with $2\\le k\\le n$. Assume each $\\sigma\\in\\mathcal F$ has positions $i_1<\\cdots<i_k$ such that interchanging entries at $i_j$ and $i_{j+1}$ produces another member of $\\mathcal F$, for every $j=1,\\ldots,k-1$. Prove $|\\mathcal F|\\ge k!$.",
+          "topics": [
+            "Combinatorics",
+            "Permutations"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Start with $M=\\begin{pmatrix}2&3\\\\2&4\\end{pmatrix}$. At each move, choose one row or column and replace it by its entrywise product with, or entrywise quotient by, the other row or column. Decide whether one can reach $\\begin{pmatrix}2&4\\\\2&3\\end{pmatrix}$ after finitely many legal moves.",
+          "topics": [
+            "Algebra",
+            "Invariants"
+          ],
+          "problem_dna": [
+            "prime-factors"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $\\mathcal V$ comprise functions $f:[0,1]\\to\\mathbb R$ continuous on the closed interval and differentiable on its interior, with $f(0)=0$, $f(1)=1$. Determine those real constants $\\alpha$ for which every $f\\in\\mathcal V$ admits $\\xi\\in(0,1)$ satisfying $f'(\\xi)-f(\\xi)=\\alpha$.",
+          "topics": [
+            "Real Analysis",
+            "Mean Value Theorem"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "For a finite tree $T$ with $n$ vertices, write $d(u,v)$ for graph distance and form $W(T)=\\sum_{\\{u,v\\}\\subset V(T)}d(u,v)$ and $H(T)=\\sum_{\\{u,v\\}\\subset V(T)}1/d(u,v)$, both over unordered pairs of distinct vertices. Establish $W(T)H(T)\\ge (n-1)^3(n+2)/4$.",
+          "topics": [
+            "Graph Theory",
+            "Inequalities"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "Inside the unit cube in $\\mathbb R^3$, choose two closed convex sets $X,Y$ having equal volume $V$. Require their orthogonal projections onto each of the three coordinate planes to have no common point. Determine the supremum of achievable values of $V$.",
+          "topics": [
+            "Convex Geometry",
+            "Optimization"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "Write the rational partial sum $\\sum_{j=0}^n1/j!=f(n)/g(n)$ in lowest positive terms. Decide whether there exists a positive integer $n$ with $g(n)>n^{0.999n}$.",
+          "topics": [
+            "Number Theory",
+            "Asymptotics"
+          ],
+          "problem_dna": [
+            "factorial-form"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        }
+      ]
     },
     {
       "year": 2024,
@@ -998,5 +1169,5 @@
       ]
     }
   ],
-  "sample_problem_count": 30
+  "sample_problem_count": 40
 }
