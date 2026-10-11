@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {verify}=require('../scripts/verify_putnam_import.cjs');
+const fs=require('node:fs');
+const sources=JSON.parse(fs.readFileSync('metadata/undergraduate-official-papers.json','utf8')).competitions;
+const source=sources.find(x=>x.competition_id==='put'&&x.year===2025);
+const fulltext='Let a, b and c be positive integers with a+b+c=100 and determine all values satisfying the stated conditions.';
+const base=()=>({competition:'William Lowell Putnam Mathematical Competition',years:[{year:2025,primary_source_url:source.questions_pdf,statement_reviewed_against_original:true,publication_authorized:true,authorization_reference:'Written approval on file',problems:['A','B'].flatMap(session=>Array.from({length:6},(_,i)=>({number:session+(i+1),problem:fulltext})))}]});
+assert.deepEqual(verify(base(),sources),{years:1,problems:12});
+const missing=base();missing.years[0].problems.pop();assert.throws(()=>verify(missing,sources),/12 problems/);
+const duplicate=base();duplicate.years[0].problems[11].number='A1';assert.throws(()=>verify(duplicate,sources),/Repeated/);
+const placeholder=base();placeholder.years[0].problems[0].problem='See the original PDF';assert.throws(()=>verify(placeholder,sources),/placeholder|incomplete/);
+const unreviewed=base();unreviewed.years[0].statement_reviewed_against_original=false;assert.throws(()=>verify(unreviewed,sources),/review/);
+const unauthorized=base();unauthorized.years[0].publication_authorized=false;assert.throws(()=>verify(unauthorized,sources),/clearance/);
+const badlink=base();badlink.years[0].primary_source_url='https://example.com';assert.throws(()=>verify(badlink,sources),/official original/);
+console.log('Putnam full-text import integrity tests passed.');
