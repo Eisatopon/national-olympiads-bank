@@ -32,7 +32,21 @@ assert.equal(imc2026.original_exams_verified, true);
 assert.deepEqual(imc2026.days.map(x => x.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
 assert.deepEqual(imc2026.days.map(x => x.date), ['2026-07-29','2026-07-30']);
 for (const day of imc2026.days) assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
-assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 1);
+const officialIMC = papers.competitions.filter(x => x.competition_id === 'imc' && x.original_exams_verified).sort((a,b) => a.year-b.year);
+assert.deepEqual(officialIMC.map(x => x.year), [2024, 2025, 2026]);
+const dates = {2024:['2024-08-07','2024-08-08'], 2025:['2025-07-30','2025-07-31'], 2026:['2026-07-29','2026-07-30']};
+for (const edition of officialIMC) {
+  assert.deepEqual(edition.days.map(d => d.date), dates[edition.year]);
+  assert.deepEqual(edition.days.map(d => d.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
+  for (const day of edition.days) {
+    assert.equal(day.page_count, 1);
+    assert.equal(day.pdf_read, 'verified_original');
+    assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
+  }
+  assert.equal(edition.statement_text_imported, false);
+  assert.equal(edition.source_rights, 'permission_not_documented');
+}
+assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 3);
 const putnam = papers.competitions.filter(x => x.competition_id === 'put');
 assert.equal(putnam.length, 8);
 assert.deepEqual(putnam.map(x => x.year).sort((a,b) => a-b), [2018,2019,2020,2021,2022,2023,2024,2025]);
