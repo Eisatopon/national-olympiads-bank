@@ -2,6 +2,8 @@
 
 Current inventory: **20,662 statements**, 115 rows (98 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `israel-gillis-search-2026-10-11.md`.
 
+Latest source-only audit: `israel-tst-audit-2026-10-11.md`. Seven Israel TST AoPS collections (2016, 2021–2026) are now readable through web PDF retrieval: 93 entries / 31 labelled tests. No new bank entries: complete season coverage and original comparison remain unresolved. Recover original camp packets, identify omitted test labels and IMO Shortlist reuse, verify the 2023 tile diagram and 2026 Test 9 P3 indexing before import. Do not repeat generic searches or describe all secondary contents as inaccessible.
+
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
 - Malaysia: IMONST 2 Senior, 2020–2025, 36 statements. This is separate from OMK; 2026 Senior round is scheduled after this audit.
