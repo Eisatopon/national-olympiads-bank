@@ -18,6 +18,8 @@ const history=JSON.parse(fs.readFileSync('metadata/putnam-historical-1938-2025.j
 assert.equal(history.schema_version,1);
 assert.equal(history.coverage.edition_records,86);
 assert.equal(history.records.length,86);
+assert.equal(history.coverage.last_past_exam_year,2025);
+assert.ok(history.records.every(x=>x.year<=2025),'2026 exam has not occurred yet');
 assert.equal(new Set(history.records.map(r=>r.year+':'+r.edition)).size,86);
 const validYears=new Set(history.records.map(r=>r.year));
 assert.equal(validYears.size,85);
