@@ -2,6 +2,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const v=JSON.parse(fs.readFileSync('metadata/undergraduate-import-contract.json','utf8'));
 assert.equal(v.schema_version,1);
+assert.equal(v.section,'undergraduate');
 assert.deepEqual(v.collections.map(c=>[c.id,c.first_year]),[['imc',1994],['put',1938],['seemous',2007],['vjimc',1991],['smmc',2017]]);
 assert.equal(new Set(v.collections.map(c=>c.file)).size,5);
 const catalog=JSON.parse(fs.readFileSync('metadata/undergraduate-competitions.json','utf8'));
