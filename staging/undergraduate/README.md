@@ -27,3 +27,15 @@ node staging/undergraduate/check-staging.cjs
 This work is stored only on an unpublished feature branch. It is **not merged into `main`**, is **not wired into `index.html`**, `COUNTRIES`, the runtime manifest or the published problem count, and does not alter any public grid. **Because the repository is public, GitHub branch files are still publicly readable at their direct URLs**, even though they are not exposed in the bank UI.
 
 To complete this task, verified lawful-to-publish original statements must be gathered, transcribed and mathematically checked, classified and then persisted as real problem JSON. Do not change the status to complete until that work is finished.
+
+## Five separate structured problem JSON drafts
+
+The following files now exist **on this work branch only**:
+
+- `IMC-university-problems.json`
+- `Putnam-problems.json`
+- `SEEMOUS-problems.json`
+- `Vojtech-Jarnik-problems.json`
+- `Simon-Marais-problems.json`
+
+They contain the requested historical-year slots and known original source references. **All `problems` lists are currently empty**. They must **not** be described as completed question banks. Only actual verified full statement records may populate them; mathematical topics, DNA tags and graph links must be checked per question. These draft files are not wired into the live application, and GitHub public repository branch links are visible to others who know the URL.
