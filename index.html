@@ -414,6 +414,16 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .problem { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--f); border-radius: 2px; padding: 18px 24px 22px; scroll-margin-top: 16px; }
 .p-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; margin-bottom: 10px; }
 .p-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.ai-menu { position: relative; }
+.ai-menu > summary { list-style: none; }
+.ai-menu > summary::-webkit-details-marker { display: none; }
+.ai-options { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; width: min(300px, calc(100vw - 64px)); padding: 8px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px; box-shadow: 0 8px 24px rgba(15,42,68,.18); }
+.ai-choice { display: block; width: 100%; padding: 11px 10px; border: 0; border-radius: 3px; background: transparent; color: var(--ink); text-align: left; text-decoration: none; font: 600 .88rem/1.4 var(--sans); cursor: pointer; }
+.ai-choice:hover, .ai-choice:focus-visible { background: #edf3f8; }
+.ai-custom textarea { width: 100%; min-height: 85px; padding: 9px; resize: vertical; border: 1px solid var(--line-strong); border-radius: 3px; font: .88rem/1.5 var(--sans); }
+.ai-custom .btn[hidden] { display: none; }
+.ai-custom .btn { width: 100%; margin-top: 6px; }
+.ai-copy { margin-top: 6px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .p-num { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 8px; border-radius: 4px; background: var(--f); color: #fff; font: 800 1.15rem/1 var(--serif); }
 .p-meta { font: 600 .96rem var(--serif); color: var(--ink); }
@@ -1925,11 +1935,11 @@ async function copyLink() {
 }
 
 /* ---------- ChatGPT handoff; no API calls or solution storage ---------- */
-function aiPrompt(p) {
+function aiPrompt(p, request) {
     const c = CBY[p.country];
     const label = `${c.name} ${p.year}${p.day ? `, Day / Test ${p.day}` : ''}, problem ${p.num}`;
     const figure = /https?:\/\/\S+\.(?:png|jpe?g|gif|webp)\b/i.test(p.text);
-    return `Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.\n\n${label}\n\n${p.text}` +
+    return `${request || 'Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\n${p.text}` +
         (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');
 }
 function aiUrl(text) {
@@ -1937,15 +1947,44 @@ function aiUrl(text) {
     // Practical portable URL budget; never truncate the statement.
     return url.length <= 8000 ? url : 'https://chatgpt.com/';
 }
-function aiActionHtml(p) {
-    const url = aiUrl(aiPrompt(p));
-    if (!url.includes('?q=')) return `<button type="button" class="btn btn-sm ask-ai" data-ask-ai="${esc(p.uid)}" title="Copy this long problem for ChatGPT">Ask AI</button>`;
-    return `<a class="btn btn-sm ask-ai" href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="Open this problem in ChatGPT">Ask AI</a><button type="button" class="btn btn-sm btn-quiet" data-ask-ai="${esc(p.uid)}" aria-label="Copy AI prompt: problem ${esc(p.num)}" title="Copy prompt if needed">⋯</button>`;
+function aiRequest(mode, question) {
+    if (mode === 'hint') return 'Give only one small, useful hint for the following olympiad problem. Preserve all hypotheses. Do not reveal the full solution, the final answer or subsequent steps. Wait for my next question.';
+    if (mode === 'custom') return 'Address only my request about the following olympiad problem. Preserve all hypotheses. Do not provide a full solution unless I ask for one.\n\nMy request: ' + question;
+    return undefined;
 }
-function askAi(uid) {
+function aiActionHtml(p) {
+    const uid = esc(p.uid);
+    const link = (mode, label) => {
+        const url = aiUrl(aiPrompt(p, aiRequest(mode)));
+        return `<a class="ai-choice" href="${esc(url.includes('?q=') ? url : '#')}" target="_blank" rel="noopener noreferrer" data-ai-link="${uid}" data-ai-mode="${mode}" data-ai-fallback="${!url.includes('?q=')}">${label}</a>`;
+    };
+    return `<details class="ai-menu" data-ai-uid="${uid}">
+        <summary class="btn btn-sm ask-ai" aria-label="Ask AI: problem ${esc(p.num)}">Ask AI ▾</summary>
+        <div class="ai-options">
+            ${link('hint', '💡 Μόνο μια υπόδειξη')}
+            ${link('solution', '📝 Πλήρης λύση')}
+            <details class="ai-custom"><summary class="ai-choice">✍️ Η δική μου ερώτηση</summary>
+                <textarea data-ai-question="${uid}" aria-label="Η ερώτησή σου για το πρόβλημα ${esc(p.num)}" placeholder="Π.χ. Δώσε μου μόνο το πρώτο βήμα."></textarea>
+                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="custom" target="_blank" rel="noopener noreferrer" hidden>Άνοιγμα στο ChatGPT ↗</a>
+            </details>
+            <button type="button" class="ai-choice ai-copy" data-ask-ai="${uid}">Αντιγραφή εκφώνησης / αιτήματος</button>
+        </div>
+    </details>`;
+}
+function updateAiQuestion(input) {
+    const p = byUid.get(input.dataset.aiQuestion);
+    if (!p) return;
+    const link = input.closest('.ai-custom').querySelector('[data-ai-link]');
+    const question = input.value.trim();
+    link.hidden = !question;
+    const url = aiUrl(aiPrompt(p, aiRequest('custom', question)));
+    link.href = url.includes('?q=') ? url : '#';
+    link.dataset.aiFallback = String(!url.includes('?q='));
+}
+function askAi(uid, request) {
     const p = byUid.get(uid);
     if (!p) return;
-    const text = aiPrompt(p), url = aiUrl(text), direct = url.includes('?q=');
+    const text = aiPrompt(p, request), url = aiUrl(text), direct = url.includes('?q=');
     $('#aiPrompt').value = text;
     $('#openAi').href = url;
     $('#aiCopyStatus').textContent = '';
@@ -2030,7 +2069,26 @@ async function hydrate(uids) {
    ========================================================== */
 function setScope(country, year) { state.country = country; state.year = year; limit = PAGE; refresh(); }
 
+document.addEventListener('input', e => {
+    if (e.target.matches('[data-ai-question]')) updateAiQuestion(e.target);
+});
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.querySelectorAll('.ai-menu[open]').forEach(menu => { menu.open = false; menu.querySelector('summary').focus(); });
+});
 document.addEventListener('click', e => {
+    const currentMenu = e.target.closest('.ai-menu');
+    document.querySelectorAll('.ai-menu[open]').forEach(menu => { if (menu !== currentMenu) menu.open = false; });
+    const aiLink = e.target.closest('[data-ai-link]');
+    if (aiLink) {
+        const question = currentMenu?.querySelector('[data-ai-question]')?.value.trim() || '';
+        if (currentMenu) currentMenu.dataset.aiMode = aiLink.dataset.aiMode;
+        if (aiLink.dataset.aiMode === 'custom' && !question) { e.preventDefault(); return; }
+        if (aiLink.dataset.aiFallback === 'true') {
+            e.preventDefault(); askAi(aiLink.dataset.aiLink, aiRequest(aiLink.dataset.aiMode, question));
+        }
+        if (currentMenu) currentMenu.open = false;
+        return;
+    }
     const t = e.target.closest('button');
     if (!t) return;
 
@@ -2054,7 +2112,12 @@ document.addEventListener('click', e => {
         return;
     }
 
-    if (t.dataset.askAi) { askAi(t.dataset.askAi); return; }
+    if (t.dataset.askAi) {
+        const question = currentMenu?.querySelector('[data-ai-question]')?.value.trim() || '';
+        askAi(t.dataset.askAi, question ? aiRequest('custom', question) : aiRequest(currentMenu?.dataset.aiMode));
+        if (currentMenu) currentMenu.open = false;
+        return;
+    }
     if (t.dataset.related) { showRelated(t.dataset.related); return; }
     if (t.dataset.openProblem) { openRelatedProblem(t.dataset.openProblem); return; }
     if (t.dataset.toggleUid) { toggleUid(t.dataset.toggleUid); return; }
