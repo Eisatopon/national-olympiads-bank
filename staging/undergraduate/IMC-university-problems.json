@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "PARTIAL_COMPLETE_2025_AND_2026_TEN_EACH_OTHER_YEARS_EMPTY",
+  "completeness": "PARTIAL_COMPLETE_2024_2025_2026_OTHER_YEARS_EMPTY",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -423,7 +423,7 @@
     },
     {
       "year": 2024,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "all_ten_independently_reworded_records_primary_source_compared",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -440,7 +440,178 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2024"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Classify the ordered pairs of unit complex numbers $a,b$ for which the complex quantity $a+b+a\\overline b$ is real.",
+          "topics": [
+            "Complex Numbers",
+            "Algebra"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For integers $n\\ge1$, put $S_n=\\frac{1}{n^2}\\sum_{k=1}^{n}k\\log k-\\frac12\\log n$. Compute the limit of $S_n$ as $n\\to\\infty$, where $\\log$ is the natural logarithm.",
+          "topics": [
+            "Real Analysis",
+            "Asymptotic Sums"
+          ],
+          "problem_dna": [
+            "partial-sums"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Characterize the positive integers $n$ for which a binary $n\\times n$ matrix $A$ can satisfy $A^2=J_n$, with $J_n$ denoting the $n\\times n$ matrix whose entries are all $1$.",
+          "topics": [
+            "Linear Algebra",
+            "Combinatorics"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Fix a group $G$, two unequal elements $g,h\\in G$, and an integer $n\\ge1$. From an infinite non-eventually-periodic word $w_1w_2\\cdots$ over $\\{g,h\\}$, generate a subgroup using all products $w_kw_{k+1}\\cdots w_{k+n-1}$ for $k\\ge1$. Show that this subgroup is independent of which non-eventually-periodic word was chosen.",
+          "topics": [
+            "Abstract Algebra",
+            "Groups"
+          ],
+          "problem_dna": [
+            "finite-cases"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Let $1\\le d<n$, and sample independently $n$ points uniformly from the unit ball $B\\subset\\mathbb R^d$. Write $F(p)$ for the probability that $p\\in B$ belongs to their convex hull. Show that $F(p)\\ge F(q)$ whenever $p,q\\in B$ obey $\\|p\\|<\\|q\\|$.",
+          "topics": [
+            "Probability",
+            "Convex Geometry"
+          ],
+          "problem_dna": [
+            "reflection"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Given any map $f:\\mathbb Q\\to\\mathbb Z$, prove that one can choose rationals $a<b<c$ such that the value at the middle point is no smaller than the values at both endpoints: $f(b)\\ge f(a)$ and $f(b)\\ge f(c)$.",
+          "topics": [
+            "Combinatorics",
+            "Order Theory"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $A,B\\in\\operatorname{GL}_n(\\mathbb C)$ with $A+B=I_n$ and $(A^2+B^2)(A^4+B^4)=A^5+B^5$. Determine all possible determinants $\\det(AB)$, as a function of $n$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Equations"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Starting with $x_1=2$ and $x_2=4$, define real terms by $x_{n+2}=3x_{n+1}-2x_n+2^n/x_n$ for $n\\ge1$. Establish existence of $L=\\lim_{n\\to\\infty}x_n/2^n$ and verify $(1+\\sqrt3)/2\\le L\\le3/2$.",
+          "topics": [
+            "Sequences",
+            "Real Analysis"
+          ],
+          "problem_dna": [
+            "recurrence"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "For integers $m,n\\ge1$, call an $m\\times n$ integer matrix admissible if its distinct entry values are exactly $\\{1,\\ldots,2t\\}$ for some positive integer $t$; each row and column is weakly increasing; equal entries lie together in a single row or a single column; and for every $1\\le s<2t$ there are positions $(i,j)$ and $(k,\\ell)$ with $i\\ne k$, $j\\ne\\ell$, holding $s$ and $s+1$, respectively. Prove that the count of admissible matrices is even.",
+          "topics": [
+            "Combinatorics",
+            "Matrices"
+          ],
+          "problem_dna": [
+            "parity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "Let $n$ be a square-free positive integer with ordered positive divisors $1=d_1<\\cdots<d_k=n$. Call $n$ almost prime if $n$ divides $\\sum_{i=1}^k x^{d_i}-kx$ for every integer $x$. Suppose $r=2^{2^m}+1$ is a Fermat prime, $p\\mid n$ is prime, and $p\\equiv1\\pmod r$. Prove that each divisor $d_i$ is congruent to $1$ modulo $r$.",
+          "topics": [
+            "Number Theory",
+            "Divisibility"
+          ],
+          "problem_dna": [
+            "modular-arithmetic"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        }
+      ]
     },
     {
       "year": 2025,
@@ -827,5 +998,5 @@
       ]
     }
   ],
-  "sample_problem_count": 20
+  "sample_problem_count": 30
 }
