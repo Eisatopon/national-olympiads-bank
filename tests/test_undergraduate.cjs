@@ -61,6 +61,24 @@ for (const edition of officialIMC) {
   assert.equal(edition.source_rights, 'permission_not_documented');
 }
 assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 10);
+const historical = papers.competitions.filter(x => x.competition_id === 'imc' && x.year >= 1994 && x.year <= 2016).sort((a,b) => a.year - b.year);
+assert.deepEqual(historical.map(x => x.year), Array.from({length:23}, (_,i) => 1994 + i));
+assert.equal(papers.historical_archive_review.year_pages_verified, 23);
+assert.equal(papers.historical_archive_review.original_full_year_papers_certified, 0);
+const combined1990s = new Set([1994,1995,1996]);
+for (const edition of historical) {
+  assert.equal(edition.archive_year_page_verified, true, edition.year);
+  assert.equal(edition.original_exams_verified, false, edition.year);
+  assert.equal(edition.statement_text_imported, false, edition.year);
+  assert.equal(edition.source_rights, 'permission_not_documented', edition.year);
+  assert.ok(edition.year_page.endsWith('year=' + edition.year));
+  assert.ok(html.includes('&amp;year=' + edition.year), 'Missing UI year link: ' + edition.year);
+  if (combined1990s.has(edition.year)) {
+    assert.equal(edition.verified_primary_pdf.format, 'combined_problems_and_solutions_both_days');
+    assert.ok(html.includes(edition.verified_primary_pdf.url));
+  }
+}
+assert.equal(historical.filter(x => x.verified_primary_pdf).length, 7);
 const putnam = papers.competitions.filter(x => x.competition_id === 'put');
 assert.equal(putnam.length, 8);
 assert.deepEqual(putnam.map(x => x.year).sort((a,b) => a-b), [2018,2019,2020,2021,2022,2023,2024,2025]);
