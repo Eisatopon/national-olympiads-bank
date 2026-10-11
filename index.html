@@ -596,7 +596,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
     <div class="wrap hero-body">
         <div>
             <h1>World Mathematical Olympiads Bank</h1>
-            <p class="lede">Problems from national, regional and international mathematical olympiads and tournaments around the world. Pick a country and a year on the grid, filter and search, and build a printable problem set.</p>
+            <p class="lede">Mathematical olympiad problems from national, regional and international competitions, tournaments and university contests. Browse the country-year grids or the Undergraduate source catalogue.</p>
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
@@ -622,14 +622,14 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
 
         <section id="undergraduateSources" class="undergraduate-sources" aria-label="Undergraduate competition archives" hidden>
-            <h2>Undergraduate Mathematics Competitions</h2>
-            <p>Official source catalogue — full examination statements will be integrated after source and republication checks. No unverified problem texts are represented as imported.</p>
+            <h2>Undergraduate · University Mathematics Competitions</h2>
+            <p>University-level competitions, including international university contests. Each competition retains its precise eligibility rules. This is currently a source catalogue, not an archive of imported examination texts.</p>
             <div class="undergraduate-cards">
-                <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>United States &amp; Canada · Undergraduate · Official MAA archive, recent papers 2018–2025.</p><a href="https://maa.org/maa-putnam-archive/" target="_blank" rel="noopener noreferrer">Browse official Putnam examinations ↗</a></article>
-                <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International · University students · Official problem archive 1994–2026, organised by day.</p><a href="https://www.imc-math.org.uk/?item=problems" target="_blank" rel="noopener noreferrer">Browse official IMC examinations ↗</a></article>
-                <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · University students · Original examination archive under review.</p><span>Original paper verification pending</span></article>
-                <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>International · University students · Official contest archive.</p><a href="https://vjimc.osu.cz/" target="_blank" rel="noopener noreferrer">Visit official competition website ↗</a></article>
-                <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Asia-Pacific · University students · Different A, B and C exam papers.</p><a href="https://www.simonmarais.org/" target="_blank" rel="noopener noreferrer">Visit official competition website ↗</a></article>
+                <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>USA, Canada &amp; Mexico · Undergraduate without a bachelor's degree · MAA official archive. Note: from 2026 the Putnam uses four 90-minute sessions rather than two three-hour sessions.</p><a href="https://maa.org/maa-putnam-archive/" target="_blank" rel="noopener noreferrer">Browse official Putnam examinations ↗</a></article>
+                <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International · Primarily university years 1–4, normally age 23 or under, with exceptions. Official problem archive 1994–2026; exam-day format must be verified per year.</p><a href="https://www.imc-math.org.uk/?item=problems" target="_blank" rel="noopener noreferrer">Browse official IMC examinations ↗</a></article>
+                <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · University students · Verify each edition's eligibility and complete original papers.</p><span>Full original-paper archive under review</span></article>
+                <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>International · University students in two contest categories; the categories remain separate in future imports.</p><a href="https://vjimc.osu.cz/" target="_blank" rel="noopener noreferrer">Visit official competition website ↗</a></article>
+                <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Asia-Pacific · University mathematics · A, B and C are distinct paper variants, not successive days.</p><a href="https://www.simonmarais.org/" target="_blank" rel="noopener noreferrer">Visit official competition website ↗</a></article>
             </div>
             <p class="undergraduate-note">Source references only; not included in the problem count. The National, Regional, International and Tournaments grids remain unchanged.</p>
         </section>
@@ -992,8 +992,9 @@ const COUNTRIES = [
 ];
 COUNTRIES.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
-/* Four sections of the bank, each shown with the same grid: national olympiads and TSTs,
-   regional competitions (geographically restricted entry) and international ones. */
+/* Five sections: the four established problem grids plus the university competition
+   source catalogue. University competition eligibility and paper variants are recorded
+   independently in metadata/undergraduate-competitions.json. */
 const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments'], ['undergraduate', 'Undergraduate']];
 const scopeOf = c => c.scope || 'national';
 const tabRows = () => COUNTRIES.filter(c => scopeOf(c) === state.tab);
