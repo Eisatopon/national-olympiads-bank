@@ -1,3 +1,5 @@
+> Superseded by the owner-authorized individual-paper import in [israel-tst-import-2026-10-11.md](israel-tst-import-2026-10-11.md). Correction: the two web screenshot results below were placeholders and do not substantiate the earlier visual-inspection claim. The subsequent import visually inspected all 19 pages in the browser.
+
 # Israel IMO-TST source audit — 11 October 2026
 
 Outcome: **no problems added**. The repository contains Israel Gillis and Grossman, but no Israel TST row. Seven secondary AoPS PDF collections became readable through web PDF retrieval: **93 entries in 31 labelled tests**, for 2016 and 2021–2026. These are candidate material, not a certified complete annual series. Original-paper verification, full formula review and independent mathematical validation have not been completed.

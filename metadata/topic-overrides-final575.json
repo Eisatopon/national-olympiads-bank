@@ -8137,6 +8137,672 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-04",
       "rationale": "Full statement reviewed for its mathematical objects and requested task: Number Theory."
+    },
+    "ilt.2016.2.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In square $ABCD$, choose $P$ inside triangle $ABC$ with $\\angle CAP=\\angle BCP=15^\\circ$. Choose $Q$ so that $APCQ$ is an isosceles trapezoid: $PC\\parallel AQ$, $AP=CQ$, and $AP\\not\\parallel CQ$. If $N$ is the midpoint of $PQ$, determine the angles of triangle $CAN$.",
+      "statement_sha256": "39361509dd9e5e54ad49b9d2202d32ed08ebba106e9a4dd1ce7f887eac1de39c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2016.2.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine every function $f:\\mathbb R\\to\\mathbb R$ satisfying, for all real $x,y$, $$f(x+y)^2-f(2x^2)=f(y-x)f(y+x)+2xf(y).$$",
+      "statement_sha256": "a741072991020b90101ebcc8f97c56d3ac415ede4c8dfc3ff9434afc04b4cc56",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2016.2.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Initially each cell of an $n\\times n$ board contains a living, sleeping dragon. Dragons are neighbours when their cells share a side. On each turn Minnie wakes a dragon having a living neighbour, then Max chooses one such neighbour. The awakened dragon destroys that neighbour and goes back to sleep. Play stops when no living dragons are neighbours. Minnie minimizes the number of survivors and Max maximizes it. Determine the final number under optimal play for (a) $n=4$ and (b) $n=5$.",
+      "statement_sha256": "577585319eab4caf371a15e7d78910b3b38ed37718b2c0e60adddd69b85d004b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2016.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine the greatest common divisor of the integers $$(2^{a^2}19^{b^2}53^{c^2}+8)^{16}-1,$$ as $a,b,c$ range over all integers.",
+      "statement_sha256": "ae0b49e2c604e45f6c535df3eb6c6039d40016b37519742a6dc7734cb8c6b65d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.1.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Which of the following two numbers is larger? $$\\sum_{k=1}^{2019}(-1)^{k+1}\\frac{k^{-3}-(k+1)^{-3}}{k^{-2}-(k+1)^{-2}},\\qquad \\sum_{j=0}^{2890}\\frac{(-1)^j}{2j+1}.$$",
+      "statement_sha256": "e956dfcdd5f99fc2c9355af1401096ca56c40699b64498a1d989e0ae2497f75b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.1.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Ten switches are initially off. Each unordered pair of switches controls one of $45$ bulbs: that bulb lights exactly when both switches in the pair are on. The switches and bulbs are unmarked, and their correspondence is unknown. A step flips exactly one switch; after each step all bulbs can be observed. What is the least number of steps needed to determine the two controlling switches for every bulb?",
+      "statement_sha256": "728095dac36ba2e0eef3b3c92d5e790b5efcc6fa136b8ea387bd318a3b80d081",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "For an acute triangle $ABC$ with orthocentre $H$, prove that the incircles of $ABH$ and $ACH$ have a common tangent parallel to $BC$.",
+      "statement_sha256": "084f79e58aaa4ea0a0ca7c1060bed28d84eeb7b00fcbb86b0a0003eb20f9257b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.1.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For a positive integer $r$, let $a_r$ count integer pairs $(x,y)$ with $0\\le x,y\\le5781$ and $3^x-2^y=r$. Determine $\\max_{r\\ge1}a_r$.",
+      "statement_sha256": "26e548bc2df29207469964ecab7bebe7a6af56e1cf055df5fd070243f147ae6c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $ABCDEFGHIJ$ be a regular decagon. A point $T$ inside it satisfies $DT=ET$ and $\\angle DTE=72^\\circ$. Prove that some point $S$ makes both $FTS$ and $HIS$ isosceles triangles, each having apex angle $72^\\circ$.",
+      "statement_sha256": "fa42c569a3ea13ab71b31c85669b0830f68205f6df3f9e742fde3198f8562435",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.2.6": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "For positive real $x,y,z$, establish $$\\frac{x}{\\sqrt{yz+4xy+4xz}}+\\frac{y}{\\sqrt{zx+4yz+4xy}}+\\frac{z}{\\sqrt{xy+4zx+4zy}}\\ge1.$$",
+      "statement_sha256": "4dbff7fdad3555d561c3b23549c56c72ad2c398ca9a77593ec8d4fcf23590e1d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.2.7": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Bars starts in any cell of an $n\\times n$ chessboard. The sparrows then choose cells for $d$ sparrows; several may occupy the same cell. Bars and the sparrows alternate turns, Bars moving first. Bars moves to a cell sharing a side or vertex with his current cell. On their turn, exactly one sparrow flies to any other cell. Bars wins upon reaching a cell occupied by a sparrow. For sufficiently large $n$, can he force a win when (a) $d=\\lfloor n^2/25\\rfloor$, (b) $d=\\lfloor n^2/19\\rfloor$, (c) $d=\\lfloor n^2/14\\rfloor$?",
+      "statement_sha256": "7d9b691921c87f53c5c9f9bf8e5936ebea18a490a9dce53b2daa42f6984ebce4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.4.8": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Ayala gives Barvaz two $100\\times100$ tables of positive integers with equal products of all entries. A move selects one row or column of one table and replaces its entries by positive integers, preserving the total product. Barvaz wins if he can make the tables identical in at most $N$ moves; otherwise Ayala wins. (a) For which $N$ does Barvaz have a winning strategy? (b) Answer again when Ayala must use only powers of $2$.",
+      "statement_sha256": "b5df3b0eb133260745dc072ce6e25d1f20b1887b1ef88734b698466a63f454ef",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.4.9": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine all unbounded functions $f:\\mathbb Z\\to\\mathbb Z$ such that $$f(x)-y\\mid x-f(y)$$ for every pair of integers $x,y$.",
+      "statement_sha256": "bf3dcbcdf68654bc5dd4f8be5a6f96c846d08e4a70ea128f400a3420216d30a6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.4.10": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are inscribed in $ABC$ and directly similar to it, with corresponding vertices in the displayed order. Each $A_i$ lies on the side opposite $A$, each $B_i$ on the side opposite $B$, and each $C_i$ on the side opposite $C$. Their circumcircles meet at $P,Q$. Prove that $PQ$ passes through the orthocentre of $ABC$.",
+      "statement_sha256": "f27dc9dd0da7e694c4485f89af44f94c8f76b66fbeba24506f6de18995ad4cbf",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.6.11": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For a positive integer $n$, write $s(n)$ for its decimal digit sum. Call a pair of positive integers $(a,b)$ an average couple if some positive integers $c_1,\\ldots,c_k$ satisfy $$\\frac{c_1+\\cdots+c_k}{k}=a,\\qquad\\frac{s(c_1)+\\cdots+s(c_k)}{k}=b.$$ Count the average couples with $a,b<10^{10}$.",
+      "statement_sha256": "9add7ef6b688d0af5d1f734966bfd2c2ff7f23d26ce7d245ef730da4379cbec5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.6.12": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Hippo chooses a list of $n\\ge2$ plane points $P_1,\\ldots,P_n$; repetitions are permitted, but not all points coincide. Wombat chooses one listed point $X$. Let $m(X)$ be the arithmetic mean of its distances to the other $n-1$ listed points, counted with multiplicity. Determine all $n$ for which Hippo can arrange that, for every possible choice of $X$, some listed point $Y$ satisfies $XY=m(X)$.",
+      "statement_sha256": "0243a6da87785a1357d0412b53d13a598f1b7a5a335dab02e1a85a57d58d3017",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.6.13": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A cyclic quadrilateral $ABCD$ satisfies $BC=CD$ and $AB\\ne AD$. Let $I,J$ be the incentres of $ABC,ACD$, respectively. Choose $K$ on segment $AC$ with $IK\\parallel IJ$, and let $M,N$ be the incentres of $AIK,AJK$. Prove that the perpendicular to $CD$ through $D$ and the perpendicular to $KI$ through $I$ meet on the circumcircle of $MAN$.",
+      "statement_sha256": "d444a34af2b63660fa8420a4dfbc6de576a9273d93a6d12924db135dcd877c9a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.8.14": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Ana secretly chooses an ordered quadruple $(a_1,a_2,a_3,a_4)$ of nonnegative integers whose sum is $10$. Each query by Banana is another such quadruple $(x_1,x_2,x_3,x_4)$, to which Ana replies with $\\sum_{i=1}^4|a_i-x_i|$. Determine the minimum number of queries required to identify Ana's quadruple in the worst case.",
+      "statement_sha256": "4f2d917e7093b9bdfb9786a78389318aa868913d117554ae80c218aa6c3b8093",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.8.15": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine every $f:\\mathbb R\\to\\mathbb R$ such that, for all real $x,y$, $$f(xf(x+y))+f(f(y)f(x+y))=(x+y)^2.$$",
+      "statement_sha256": "dd60cb5ad4dbc0860902b0f758bba49809bfaed3e614dd5e36d83eb8511056c7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2021.8.16": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine the least real $k$ for which all real $a,b,c,d,x,y,z,t$ satisfy $$ad-bc+yz-xt+(a+c)(y+t)-(b+d)(x+z)\\le k\\left(\\sqrt{a^2+b^2}+\\sqrt{c^2+d^2}+\\sqrt{x^2+y^2}+\\sqrt{z^2+t^2}\\right)^2.$$",
+      "statement_sha256": "8823b861197377ea0252668163aa22f46707b196bb69f13ac66d178506f19d64",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.2.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $H$ be the orthocentre of $ABC$, and let $P$ vary on line $BC$. The perpendicular to $BC$ through $P$ meets $BH,CH$ at $X,Y$. The line through $H$ parallel to $BC$ meets $AP$ at $Q$. Put $U=QX\\cap BC$ and $V=QY\\cap BC$. Determine the locus of the incentres of the resulting triangles $QUV$.",
+      "statement_sha256": "5991092740b4391a4688bbc37b9fedf985976463a381f237bceddea2a18e94e1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.2.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Establish, for real $a,b,c$, $$(a^5+b^5+c^5+a^3c^2+b^3a^2+c^3b^2)^2\\ge4(a^2+b^2+c^2)(a^5b^3+b^5c^3+c^5a^3).$$",
+      "statement_sha256": "ebf15fe65ebe777bced7aeca4cab2544efc287c8ae68f14190089c65c8d11971",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.2.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Each of $30$ students chooses dried fruits from $n$ available kinds. Two students are friends exactly when their selections share at least one kind. Determine the smallest $n$ allowing every student to have exactly six friends.",
+      "statement_sha256": "1a5673b0ea9b1f1cfd9f9ca2b4c8c668d716fbf5bcdb512e1b7c08c13eab7194",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.7.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "For an integer $n>1$, determine all real $r$ for which pairwise distinct real numbers $x_1,\\ldots,x_n$ can make the $n$ products $$\\prod_{\\substack{1\\le j\\le n\\\\j\\ne i}}(rx_i-x_j),\\qquad i=1,\\ldots,n,$$ equal.",
+      "statement_sha256": "771c8201063edbac674c5fae2d049697f08465fb946f24508ac6251f51938c22",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.7.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A closed annulus has centre $O$, inner radius $r>0$, outer radius $R>r$, and area $S$. A lattice point has integer coordinates. (a) For every positive integer $n$, prove that an annulus without lattice points exists with $S>3n$ and $R<2^{2^n}$. (b) Prove that every annulus with $100R<S^2$ contains a lattice point.",
+      "statement_sha256": "ed7259a8f665e57c674ea31bd0d6b2b552c700be247cf1cfbe3d782377b4478d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.7.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "The internal bisectors $BE,CF$ of triangle $ABC$ meet at $I$, where $E\\in AC$ and $F\\in AB$. A point $N$ on the circumcircle of $AEF$ satisfies $\\angle IAN=90^\\circ$. Let $L$ be the other intersection of $NI$ with that circle. Prove that the circumcentre of $AIL$ lies on $BC$.",
+      "statement_sha256": "3762983a94639ba8504fb49f3069a6e95c8f6d284ad236e32950f2eb21a882bf",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.9.7": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Nitzan chooses an integer from $1$ to $2^{2022}$ and tells Bilbo. Bilbo writes a word of length $4044$ over $\\{a,b,c\\}$. After seeing it, Nitzan chooses one of the letters and erases every occurrence of that letter. Gandalf sees only the remaining word and must determine the integer. Can Bilbo and Gandalf agree on a strategy that always succeeds?",
+      "statement_sha256": "bfef844c8109e8b8856177667df3400a0434a6d3df7b677edc8ae3ad10094245",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.9.8": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "A function $f:\\mathbb Z^2\\to\\mathbb R$ has the following property: for every integer $C$, each of $f(x,C)$, $f(C,x)$, $f(x,x+C)$ and $f(x,C-x)$ is a polynomial in $x$ of degree at most $100$. Prove that $f$ is represented by a bivariate polynomial and determine its maximum possible total degree, where total degree is the largest $i+j$ among its nonzero terms $x^iy^j$.",
+      "statement_sha256": "2e8ec06b25cb3230894320df158e5b351e7fc7ff330d1ade66d7c64ed8d3393a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2022.9.9": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A scalene triangle $ABC$ has incentre $I$ and circumcircle $\\Omega$ with centre $O$. Let $H$ be the orthocentre of $BIC$. Choose $T\\in\\Omega$ with $\\angle ATI=90^\\circ$. The circle through $A,I,O$ meets $IH$ again at $X$. Prove that the intersection of $AX$ and $HT$ lies on $\\Omega$.",
+      "statement_sha256": "398b202e5cb39a66a30ea9ed3e75b1e63603393ef935db4f793266d223f809ea",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.1.1": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Assign distinct real numbers to the vertices of a regular pentagon. An isosceles triple is successful when the number at its apex is either larger than both numbers at its base or smaller than both. Determine the greatest possible number of successful triples.",
+      "statement_sha256": "fa95b2b4526b82a11d3a9a43f87569782129905f5174565821f6a479135efdde",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A pyramid $SABCDE$ has a regular pentagonal base $ABCDE$ and acute lateral faces. In each lateral face draw the altitude from $S$ to the base edge, producing ten triangles. Colour these alternately red and blue around the pyramid. Prove that the sums of the squared areas of the red and blue triangles are equal.",
+      "statement_sha256": "3d64b146892ac1bd52e0c8f5af9f459fe5e3b975d0e15da5b2ec2d411c9ae302",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.1.3": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine all functions $f:\\mathbb Z\\to\\mathbb Z_{>0}$ satisfying $$f(x+f(y))^2+f(y+f(x))^2=f(f(x)+f(y))^2+1$$ for all integers $x,y$.",
+      "statement_sha256": "eb37c6264ef359396a12bacc5211d048ab97dc49ec5b58aa9ef1a52edcbc64b4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $f_2(n)$ and $f_3(n)$ count the positive divisors of $n$ that are perfect squares and perfect cubes, respectively. Prove that for every positive integer $k$ some positive integer $n$ satisfies $f_2(n)/f_3(n)=k$.",
+      "statement_sha256": "70b6f9923fce5ef8102df1b5da3bae81fbafcd9e20b0b73f215ed515ad2094b5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.2.5": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Colour an $8\\times8$ board black and white with no monochromatic $2\\times2$ subboard. A snake is a sequence of distinct cells in which consecutive cells share a side and have different colours. Determine the greatest $m$ such that every permitted colouring contains a snake of length $m$.",
+      "statement_sha256": "b4a804ce69582ba033048f20137e13ed9578f167cdd32c3b477872d56c69aed3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In triangle $ABC$, let $H$ be the orthocentre and $D$ the foot of the altitude from $A$. Choose $P$ with $AP=HP$ such that $PA$ is tangent to the circumcircle at $A$. Set $X=PD\\cap AB$ and $Y=PD\\cap AC$. Prove that either $\\angle YHX=\\angle BAC$ or $\\angle YHX+\\angle BAC=180^\\circ$.",
+      "statement_sha256": "1d676153153788c1cc416066d22ba50a533fb35fb7d33643129afff45f3eabfa",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.5.7": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Alice colours the vertices of a regular $20$-gon with two colours. Bob chooses a diagonal joining opposite vertices, then draws segments perpendicular to that diagonal whose endpoints are vertices of the same colour. Alice gives him one fish per such segment. How many fish can Bob guarantee, regardless of the colouring?",
+      "statement_sha256": "40ae41af786ada601b180dbf8a05f8ff0f92b05ab05b4ecc1304bd2a720c4a59",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.5.8": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "An isosceles triangle $ABC$, with $AB=AC$, is inscribed in $\\omega$. Its $B$-symmedian meets $\\omega$ again at $D$. The circle through $C,D$ tangent to $BC$ and the circle through $A,D$ tangent to $CD$ meet again at $X$. If $I$ is the incentre of $ABC$, prove that $B,C,I,X$ are concyclic.",
+      "statement_sha256": "3fe12d736f8a99d52c1e4882ec2c417e965b60cf6af723e858ba0271c3e13396",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.5.9": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Write $P^{\\circ k}$ for the $k$-fold composition of a real polynomial $P$. Call $P$ perfect if for every integer $n$ some positive integer $k$ makes $P^{\\circ k}(n)$ an integer. Must each perfect polynomial admit a positive integer $m$ such that, for every integer $n$, one can choose such a $k$ with $1\\le k\\le m$?",
+      "statement_sha256": "c7b40f3a0c7efea01869c496bb15ea3215962b6e55ea70764eb51fc1ad33545b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.7.10": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine every function $f:\\mathbb R\\to\\mathbb R$ satisfying $$f(x)+f(y)=f(xy)+f(f(x)+f(y))$$ for all real $x,y$.",
+      "statement_sha256": "10d57658a901288418838252db417f3c09d43046227462e63b9026c8e4aa66e4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.7.11": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $n>3$ be an integer and choose $a_k\\in\\{k,-k\\}$ for $1\\le k\\le n$. Prove that there are indices $k_1,\\ldots,k_n\\in\\{1,\\ldots,n\\}$, not necessarily distinct, whose partial sums $\\sum_{i=1}^j a_{k_i}$, $1\\le j\\le n$, have pairwise distinct residues modulo $2n+1$, with the last sum divisible by $2n+1$.",
+      "statement_sha256": "97a13a9d086f21dbe57b3250cbff206af7158791e124e8c361905fe004b89ab1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2023.7.12": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "An acute triangle $ABC$ has circumcentre $O$ and incentre $I$. Let $S$ be the midpoint of the circumcircle arc $BC$ not containing $A$. Choose $E,F$ on $OI$ with $BE\\perp OI$ and $CF\\perp OI$. Define $X$ by $XE\\perp AC$, $XF\\perp AB$, and $Y$ by $YE\\perp SC$, $YF\\perp SB$. Choose $D\\in BC$ with $DI\\perp BC$. Prove that $X,Y,D$ are collinear.",
+      "statement_sha256": "eb85deab9a64f03d0a52bd4a8a94142408e87373040f6f91381d8693778a27bb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Triangle $ABC$ has $\\angle BAC=60^\\circ$, orthocentre $H$, and circumcircle $\\Omega$. Let $S$ be the midpoint of arc $BC$ not containing $A$, and choose $P\\in\\Omega$ with $\\angle HPS=90^\\circ$. Prove that a circle through $P,S$ tangent to both $AB$ and $AC$ exists.",
+      "statement_sha256": "5c38dd04985a2c7ef45e249aa1aa5c279e2e3aa8d4eca05b434aa08d9cc00117",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.1.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "For a simple graph $G$ on $n>1$ labelled vertices, let $k(G)$ be the smallest dimension permitting $n$ axis-parallel rectangular boxes whose pairwise intersections correspond exactly to the edges of $G$. Determine $\\max_G k(G)$ as a function of $n$.",
+      "statement_sha256": "d0fcd204829728dc6390e06778b09526ca12f2facdd3c362d4c0bda2c2024055",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.1.3": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Fix a positive integer $n$ and a prime $p\\equiv5\\pmod8$. Consider polynomials $Q$ of degree at most $2023$ with integer coefficients in $\\{0,\\ldots,n\\}$. Prove that an even number of these polynomials satisfy $$p\\mid\\prod_{j=2}^{p-2}Q(j)-1.$$",
+      "statement_sha256": "2910c85ee21f292a7b6ca04144158d3982aa81752a148c7b7d257fae5994fd07",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Determine all positive integer triples $(x,y,z)$ satisfying $$x^{y^2+1}+y^{x^2+1}=2^z.$$",
+      "statement_sha256": "5a2bffd8c26fd29f650b16fba9aaab2a147d7e045ff4b418f8c627b743c6a006",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In triangle $ABC$, let $I$ be the incentre and $I_A$ the $A$-excentre, whose excircle touches $BC$ at $D$. Let $N$ be the midpoint of arc $BAC$, and $T$ the other intersection of $NI$ with the circumcircle. If $K$ is the circumcentre of $AID$, prove that $TI_A\\perp KI$.",
+      "statement_sha256": "42fc2d155895e88e11b5983e3da8046b4b8a4fc2f63349994ccbf6e806a92add",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.2.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Fix $0<c<1$. Bob writes $n$ integers, not all equal. A move replaces two numbers by their arithmetic mean. Alice plays first, making at most $cn$ moves, after which Bob moves until just two numbers remain. Alice wins if these differ; otherwise Bob wins. Determine the values of $c$ for which Alice has a winning strategy for every sufficiently large $n$.",
+      "statement_sha256": "0b9826f481547fc18600f642217b925fbb62e1ff1b884c6521cdedec6a764856",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.3.7": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Let $AD$ be the internal angle bisector of triangle $ABC$, with $D\\in BC$. The common tangents to the circumcircles of $BAD$ and $CAD$ meet at $A\\prime$. Define $B\\prime$ and $C\\prime$ analogously at the other vertices. Prove that $A\\prime,B\\prime,C\\prime$ are collinear.",
+      "statement_sha256": "bce1c5006ef4ef95edc66c71cb6ed6ee5fdf44b2d0c23ac43520dd0f0c41be0e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.3.8": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A tree with $N$ vertices is given a real weight at every vertex. For every vertex $v$ of degree $d_v$, its weight $w_v$ satisfies $d_v(w_v+1)\\ge\\sum_{u\\sim v}w_u$, where the sum runs over its neighbours. If $M$ and $m$ are the maximum and minimum weights, determine the greatest possible $M-m$ over all such weighted trees on $N$ vertices.",
+      "statement_sha256": "447c1dafae9d69a50a984c609da7e4d110d6299a012caaf16f4a540398b83097",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.3.9": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine all continuous functions $f:\\mathbb R_{>0}\\to\\mathbb R_{\\ge1}$ such that $$f\\left(\\frac{f(x)}y\\right)-f\\left(\\frac{f(y)}x\\right)=xy\\bigl(f(x+1)-f(y+1)\\bigr)$$ for all positive real $x,y$.",
+      "statement_sha256": "a9be58f08137575610cb445f3230ed301faccca87cec490744af27748aef3dd6",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.6.10": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A connected simple graph has $n$ vertices and at least $n$ edges. Prove that its vertices can be coloured red and blue, using both colours, with an even number of edges joining different colours, so that deleting those edges leaves exactly two connected components.",
+      "statement_sha256": "977eab09cb493dc14e7170a80bb7b92e449980482aa94a11f942dad68ff274d1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.6.11": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "For a positive integer $n$, determine all $Q\\in\\mathbb Z[x]$ of degree less than $n$ for which some integer $m\\ge1$ satisfies $$x^n-1\\mid Q(x)^m-1.$$",
+      "statement_sha256": "7f8811d04ec370fe2ade7280a775ef271d913be3bc5633375433b21275708ac3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.6.12": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In parallelogram $ABCD$, let $\\omega_1$ pass through $D$ and be tangent to $AB$ at $A$, and let $\\omega_2$ pass through $A$ and be tangent to $CD$ at $D$. The second tangents from $B$ and $C$ touch $\\omega_1,\\omega_2$ at $P,Q$, respectively. Put $X=AP\\cap DQ$, and let $R$ be the intersection of $AD$ with the perpendicular bisector of $BC$. Prove that the circumcircles of $PQX$ and $BCR$ are concentric.",
+      "statement_sha256": "8a838c2e5506dfca59da813cc0a78d8e4cfe9d6ddcdd60d05b67285ce5e30c3d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.8.13": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For $n\\ge1$, let $a_n$ be the largest positive integer such that $$(a_n)!\\mid\\prod_{k=1}^n\\left\\lfloor\\frac nk\\right\\rfloor.$$ Prove that $a_{m+1}<a_m$ for infinitely many positive integers $m$.",
+      "statement_sha256": "15f01dd154b97adecc8fd02e926ae9c69eb2af8d659d3da8c39fd424f949e06d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.8.14": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Triangle $ABC$ has circumcentre $O$ and incentre $I$, and its incircle touches $BC,CA,AB$ at $D,E,F$. Reflect the tangent to the circumcircle at $A$ across $EF$, obtaining $\\ell_A$. Define $\\ell_B,\\ell_C$ cyclically. Prove that the orthocentre of the triangle formed by these three lines lies on $OI$.",
+      "statement_sha256": "229bbf470219f2bb199277cc9b1bc08e6476a90e7f44281207193a18b5f91f21",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2024.8.15": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "For a finite set $S$ of at least three distinct plane points, let $d_{\\min}$ and $d_{\\max}$ be its smallest and largest distances between distinct points. Call $S$ $c$-balanced when $d_{\\max}/d_{\\min}\\le c|S|$. Prove that some real $c>0$ guarantees, for every $c$-balanced $S$, a triangle with vertices in $S$ containing at least $\\sqrt{|S|}$ points of $S$, counting its boundary.",
+      "statement_sha256": "b6ba9284445b7accf17bfeb991be2f0c117a8065d4e5913a1e7adbae7efb08c1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.2.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "For which integers $n\\ge2$, if any, do positive integers $a,b,c$ satisfy simultaneously $$a^n-2b^n=1,\\qquad b^n-2c^n=1?$$",
+      "statement_sha256": "245fc1c220a2e030272a3a05a915f05bc511c9e251c0c0ab7edce14369747eff",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.2.2": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A graph on $10^{100}$ vertices has no simple odd cycle of length at most $100$. Prove that it contains an independent set of size at least $10^{100}/102$.",
+      "statement_sha256": "85e0a5c2b4c85ba3e0a8f1ef02d7b2c4591f7371cafa102a6a4c6cd33b6643cb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.2.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A cyclic quadrilateral $ABCD$ has circumcentre $O$. The internal bisectors of its four angles form a convex quadrilateral $Q_1$, and the external bisectors form a convex quadrilateral $Q_2$. Prove that both are cyclic and that $O$ is the midpoint of their circumcentres.",
+      "statement_sha256": "5e4f149e76f82c54652484ed1fb37a41e411c8c87df50e615a1dea7a4d021289",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.4.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "A family $\\mathcal F$ of functions $\\mathbb R_{>0}\\to\\mathbb R_{>0}$ satisfies: for every $f,g\\in\\mathcal F$, there is $h\\in\\mathcal F$ such that $$y^2f\\left(\\frac{g(x)}y\\right)=h(xy)$$ for all positive real $x,y$. Prove that every $f\\in\\mathcal F$ satisfies $f(x/f(x))=1$ for all $x>0$.",
+      "statement_sha256": "5f604baeeaf580254924cb32465f5ba97840524829b3113a84f92b25dbb59df7",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.4.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "For a cyclic quadrilateral $ABCD$, set $E=AD\\cap BC$ and $F=AB\\cap CD$. Let $O_A,O_B,O_C,O_D$ be the centres, respectively, of the circle through $A,D$ tangent to $AB$, the circle through $B,C$ tangent to $AB$, the circle through $B,C$ tangent to $CD$, and the circle through $A,D$ tangent to $CD$. Prove that these four centres are concyclic and their circumcentre lies on $EF$.",
+      "statement_sha256": "e91deba02e912d4595d481805c238b6b38a7ae82ce8d895799b684f616616b89",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2025.4.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "A graph on $2n-1$ vertices has maximum clique size $n$, where $n$ is a positive integer. Prove that some vertex belongs to every clique of size $n$.",
+      "statement_sha256": "b15d64f95592fb3e52bccb6bea5d0b81aee28b25fa50e65ed906288359bc3188",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.1.1": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In triangle $ABC$, let $E,F$ be the perpendicular feet from $A$ to the internal angle-bisector lines at $B,C$. Let $I$ be the incentre, $P$ the second intersection of the circles $BIF,CIE$, and $N$ the midpoint of circumcircle arc $BC$ containing $A$. Prove that $P,I,N$ are collinear.",
+      "statement_sha256": "00e6c672798e1ffcb082ca7cb683e601a4e0a597a0faf935a08ced6753b0a7b0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.1.2": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine all functions $f:\\mathbb R\\to\\mathbb R$ satisfying $$f(x+f(y))+f(f(f(x))-y)=2x$$ for all real $x,y$.",
+      "statement_sha256": "45c35034dc76f887e54c526cf74f1ad7a9e5b303ec3898db7b13bf301963d869",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.1.3": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Let $\\sigma(n)$ be the sum of the positive divisors of $n$. Prove that infinitely many positive integers $m$ have exactly one positive integer solution $n$ to $\\sigma(n)=m$.",
+      "statement_sha256": "e7e2db99cb20848c16847ee83fb9224fad91f54ba26ada599aff0934c852fb0b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.4.4": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Let $n\\ge3$ and $a_1,\\ldots,a_n>0$. In the expression $a_1\\times\\cdots\\times a_n$, replacing any single multiplication sign with addition increases its value, using the usual precedence of multiplication. Prove that replacing every multiplication sign with addition also increases the value.",
+      "statement_sha256": "de9b41d7ae60ebd62d0b32577c80fbf94df286cd9265f2b918c0f770369dc683",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.4.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Define $\\Delta:\\mathbb Z_{>1}\\to\\mathbb Z_{>0}$ by $\\Delta(p^a)=ap^{a-1}$ for prime $p$ and $a\\ge1$, and $\\Delta(uv)=\\Delta(u)\\Delta(v)$ for coprime $u,v>1$. Is it true that for each positive integer $k$ there is an integer $n>1$ with a well-defined orbit satisfying $\\Delta^{\\circ k}(n)=n$ and $\\Delta^{\\circ j}(n)\\ne n$ for $1\\le j<k$? Here $\\Delta^{\\circ j}$ denotes iteration; all inputs along the orbit must lie in the stated domain.",
+      "statement_sha256": "76aab8ba41f01248c1f42af2251464f86e8e24d5e22ea254524a22328781dfd0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.4.6": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "There are $n$ blue points $b_1,\\ldots,b_n$ on a horizontal line and $n$ red points $r_1,\\ldots,r_n$ above it. No line through two red points contains another red or blue point. Ayala matches red and blue points by $n$ segments. Barvaz may replace two crossing segments $b_ir_j,b_kr_l$ by $b_ir_l,b_kr_j$. Prove that he can eliminate all crossings in at most $\\binom n2$ moves.",
+      "statement_sha256": "3e230bc70d6c60ef72935a6c5593ee9b8dc6f05ae8bc17cde4e10ef1cb7475fd",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.5.7": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "A grasshopper starts at $1$ on the number line with energy $E$. Each jump goes to the right; a jump from $y$ to $z$ consumes $z/y^2$ energy. Determine the least $E$ allowing it to make $n$ jumps for every positive integer $n$.",
+      "statement_sha256": "39699551cb6342671e0fcfcc38b190e7ae1ae9b4fcaf51e3219bc03d50b73ca0",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.5.8": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Let $n>2026^{2026}$ be an integer. A kangaroo moves between side-adjacent cells of an $n\\times n$ board. Each $2026\\times2026$ subboard may be visited at most $r$ times in total, counting repeated visits. Determine the smallest $r$ allowing visits to at least $n^2/10^{100}$ distinct cells.",
+      "statement_sha256": "34074374b8147dcd61a7345a20297d1ab5db3c843db409dc4e2e218a1f961a29",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.5.9": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "A map $f:\\mathbb Z[x,y]\\to\\mathbb Z[x,y]$ satisfies $f(1)=1$ and $f(P+Q)=f(P)+f(Q)$. For each polynomial $P$ and prime $r$, an integer pair with $P$ divisible by $r$ exists if and only if an integer pair with $f(P)$ divisible by $r$ exists. Prove that $f(PQ)=f(P)f(Q)$ for every $P,Q\\in\\mathbb Z[x,y]$.",
+      "statement_sha256": "2e24336da2ca56bfce92f122bf60f4f8fb65a31ded077cee4196890571c1dd6e",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.7.10": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "Given positive integers $n,m$, Ayala labels each edge of the complete graph on $n$ vertices with a number in $\\{1,\\ldots,m\\}$. Barvaz then selects a starting vertex and a finite word $a_1,\\ldots,a_k$ over that set. On step $i$, Ayala must traverse an edge labelled $a_i$, never returning to the starting vertex; edges may be reused. She loses if no legal move is possible. Determine the pairs $(n,m)$ for which Barvaz can force her loss, whatever labelling and legal choices she makes.",
+      "statement_sha256": "8cdbbdf3922d085f33c3cc579829a1654d55845c341d338cf8c3cfe626bf6e18",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.7.11": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Determine all real sequences $(a_n)_{n\\ge1}$ with $a_1=1$, $a_2=2$, such that, whenever positive integers $m,n,k$ are pairwise distinct, at least one of $$a_m+a_n=a_{m+n},\\qquad a_n+a_k=a_{n+k},\\qquad a_m+a_k=a_{m+k}$$ holds.",
+      "statement_sha256": "fc3f4369b2c278c2a0a7d978ab5940290396cba5bbd6d98a8b14aa4889581978",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
+    },
+    "ilt.2026.7.12": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A point $P$ lies on the circumcircle of $ABC$. Reflect $P$ across $AB,AC$ to obtain $P_B,P_C$. Set $X=PP_C\\cap BC$, $Y=PP_B\\cap BC$, and $U=P_BP_C\\cap BC$. Let $\\Gamma$ be the circle $PXY$, and $T$ its second intersection with the perpendicular to $BC$ through $P$. Prove that $\\Gamma$, the circle $AP_BP_C$, and line $UT$ share a point.",
+      "statement_sha256": "27040648a58153e512985fb5c6c28bc0f6b9a0c87af422448e89de94a94d9253",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-11"
     }
   }
 }

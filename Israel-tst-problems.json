@@ -1,0 +1,410 @@
+{
+  "competition": "Israel IMO Team Selection Tests",
+  "years": [
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 2,
+          "number": 1,
+          "problem": "In square $ABCD$, choose $P$ inside triangle $ABC$ with $\\angle CAP=\\angle BCP=15^\\circ$. Choose $Q$ so that $APCQ$ is an isosceles trapezoid: $PC\\parallel AQ$, $AP=CQ$, and $AP\\not\\parallel CQ$. If $N$ is the midpoint of $PQ$, determine the angles of triangle $CAN$."
+        },
+        {
+          "day": 2,
+          "number": 2,
+          "problem": "Determine every function $f:\\mathbb R\\to\\mathbb R$ satisfying, for all real $x,y$, $$f(x+y)^2-f(2x^2)=f(y-x)f(y+x)+2xf(y).$$"
+        },
+        {
+          "day": 2,
+          "number": 3,
+          "problem": "Initially each cell of an $n\\times n$ board contains a living, sleeping dragon. Dragons are neighbours when their cells share a side. On each turn Minnie wakes a dragon having a living neighbour, then Max chooses one such neighbour. The awakened dragon destroys that neighbour and goes back to sleep. Play stops when no living dragons are neighbours. Minnie minimizes the number of survivors and Max maximizes it. Determine the final number under optimal play for (a) $n=4$ and (b) $n=5$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine the greatest common divisor of the integers $$(2^{a^2}19^{b^2}53^{c^2}+8)^{16}-1,$$ as $a,b,c$ range over all integers."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Which of the following two numbers is larger? $$\\sum_{k=1}^{2019}(-1)^{k+1}\\frac{k^{-3}-(k+1)^{-3}}{k^{-2}-(k+1)^{-2}},\\qquad \\sum_{j=0}^{2890}\\frac{(-1)^j}{2j+1}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Ten switches are initially off. Each unordered pair of switches controls one of $45$ bulbs: that bulb lights exactly when both switches in the pair are on. The switches and bulbs are unmarked, and their correspondence is unknown. A step flips exactly one switch; after each step all bulbs can be observed. What is the least number of steps needed to determine the two controlling switches for every bulb?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For an acute triangle $ABC$ with orthocentre $H$, prove that the incircles of $ABH$ and $ACH$ have a common tangent parallel to $BC$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For a positive integer $r$, let $a_r$ count integer pairs $(x,y)$ with $0\\le x,y\\le5781$ and $3^x-2^y=r$. Determine $\\max_{r\\ge1}a_r$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCDEFGHIJ$ be a regular decagon. A point $T$ inside it satisfies $DT=ET$ and $\\angle DTE=72^\\circ$. Prove that some point $S$ makes both $FTS$ and $HIS$ isosceles triangles, each having apex angle $72^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For positive real $x,y,z$, establish $$\\frac{x}{\\sqrt{yz+4xy+4xz}}+\\frac{y}{\\sqrt{zx+4yz+4xy}}+\\frac{z}{\\sqrt{xy+4zx+4zy}}\\ge1.$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Bars starts in any cell of an $n\\times n$ chessboard. The sparrows then choose cells for $d$ sparrows; several may occupy the same cell. Bars and the sparrows alternate turns, Bars moving first. Bars moves to a cell sharing a side or vertex with his current cell. On their turn, exactly one sparrow flies to any other cell. Bars wins upon reaching a cell occupied by a sparrow. For sufficiently large $n$, can he force a win when (a) $d=\\lfloor n^2/25\\rfloor$, (b) $d=\\lfloor n^2/19\\rfloor$, (c) $d=\\lfloor n^2/14\\rfloor$?"
+        },
+        {
+          "day": 4,
+          "number": 8,
+          "problem": "Ayala gives Barvaz two $100\\times100$ tables of positive integers with equal products of all entries. A move selects one row or column of one table and replaces its entries by positive integers, preserving the total product. Barvaz wins if he can make the tables identical in at most $N$ moves; otherwise Ayala wins. (a) For which $N$ does Barvaz have a winning strategy? (b) Answer again when Ayala must use only powers of $2$."
+        },
+        {
+          "day": 4,
+          "number": 9,
+          "problem": "Determine all unbounded functions $f:\\mathbb Z\\to\\mathbb Z$ such that $$f(x)-y\\mid x-f(y)$$ for every pair of integers $x,y$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Two triangles $A_1B_1C_1$ and $A_2B_2C_2$ are inscribed in $ABC$ and directly similar to it, with corresponding vertices in the displayed order. Each $A_i$ lies on the side opposite $A$, each $B_i$ on the side opposite $B$, and each $C_i$ on the side opposite $C$. Their circumcircles meet at $P,Q$. Prove that $PQ$ passes through the orthocentre of $ABC$."
+        },
+        {
+          "day": 6,
+          "number": 11,
+          "problem": "For a positive integer $n$, write $s(n)$ for its decimal digit sum. Call a pair of positive integers $(a,b)$ an average couple if some positive integers $c_1,\\ldots,c_k$ satisfy $$\\frac{c_1+\\cdots+c_k}{k}=a,\\qquad\\frac{s(c_1)+\\cdots+s(c_k)}{k}=b.$$ Count the average couples with $a,b<10^{10}$."
+        },
+        {
+          "day": 6,
+          "number": 12,
+          "problem": "Hippo chooses a list of $n\\ge2$ plane points $P_1,\\ldots,P_n$; repetitions are permitted, but not all points coincide. Wombat chooses one listed point $X$. Let $m(X)$ be the arithmetic mean of its distances to the other $n-1$ listed points, counted with multiplicity. Determine all $n$ for which Hippo can arrange that, for every possible choice of $X$, some listed point $Y$ satisfies $XY=m(X)$."
+        },
+        {
+          "day": 6,
+          "number": 13,
+          "problem": "A cyclic quadrilateral $ABCD$ satisfies $BC=CD$ and $AB\\ne AD$. Let $I,J$ be the incentres of $ABC,ACD$, respectively. Choose $K$ on segment $AC$ with $IK\\parallel IJ$, and let $M,N$ be the incentres of $AIK,AJK$. Prove that the perpendicular to $CD$ through $D$ and the perpendicular to $KI$ through $I$ meet on the circumcircle of $MAN$."
+        },
+        {
+          "day": 8,
+          "number": 14,
+          "problem": "Ana secretly chooses an ordered quadruple $(a_1,a_2,a_3,a_4)$ of nonnegative integers whose sum is $10$. Each query by Banana is another such quadruple $(x_1,x_2,x_3,x_4)$, to which Ana replies with $\\sum_{i=1}^4|a_i-x_i|$. Determine the minimum number of queries required to identify Ana's quadruple in the worst case."
+        },
+        {
+          "day": 8,
+          "number": 15,
+          "problem": "Determine every $f:\\mathbb R\\to\\mathbb R$ such that, for all real $x,y$, $$f(xf(x+y))+f(f(y)f(x+y))=(x+y)^2.$$"
+        },
+        {
+          "day": 8,
+          "number": 16,
+          "problem": "Determine the least real $k$ for which all real $a,b,c,d,x,y,z,t$ satisfy $$ad-bc+yz-xt+(a+c)(y+t)-(b+d)(x+z)\\le k\\left(\\sqrt{a^2+b^2}+\\sqrt{c^2+d^2}+\\sqrt{x^2+y^2}+\\sqrt{z^2+t^2}\\right)^2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 2,
+          "number": 1,
+          "problem": "Let $H$ be the orthocentre of $ABC$, and let $P$ vary on line $BC$. The perpendicular to $BC$ through $P$ meets $BH,CH$ at $X,Y$. The line through $H$ parallel to $BC$ meets $AP$ at $Q$. Put $U=QX\\cap BC$ and $V=QY\\cap BC$. Determine the locus of the incentres of the resulting triangles $QUV$."
+        },
+        {
+          "day": 2,
+          "number": 2,
+          "problem": "Establish, for real $a,b,c$, $$(a^5+b^5+c^5+a^3c^2+b^3a^2+c^3b^2)^2\\ge4(a^2+b^2+c^2)(a^5b^3+b^5c^3+c^5a^3).$$"
+        },
+        {
+          "day": 2,
+          "number": 3,
+          "problem": "Each of $30$ students chooses dried fruits from $n$ available kinds. Two students are friends exactly when their selections share at least one kind. Determine the smallest $n$ allowing every student to have exactly six friends."
+        },
+        {
+          "day": 7,
+          "number": 4,
+          "problem": "For an integer $n>1$, determine all real $r$ for which pairwise distinct real numbers $x_1,\\ldots,x_n$ can make the $n$ products $$\\prod_{\\substack{1\\le j\\le n\\\\j\\ne i}}(rx_i-x_j),\\qquad i=1,\\ldots,n,$$ equal."
+        },
+        {
+          "day": 7,
+          "number": 5,
+          "problem": "A closed annulus has centre $O$, inner radius $r>0$, outer radius $R>r$, and area $S$. A lattice point has integer coordinates. (a) For every positive integer $n$, prove that an annulus without lattice points exists with $S>3n$ and $R<2^{2^n}$. (b) Prove that every annulus with $100R<S^2$ contains a lattice point."
+        },
+        {
+          "day": 7,
+          "number": 6,
+          "problem": "The internal bisectors $BE,CF$ of triangle $ABC$ meet at $I$, where $E\\in AC$ and $F\\in AB$. A point $N$ on the circumcircle of $AEF$ satisfies $\\angle IAN=90^\\circ$. Let $L$ be the other intersection of $NI$ with that circle. Prove that the circumcentre of $AIL$ lies on $BC$."
+        },
+        {
+          "day": 9,
+          "number": 7,
+          "problem": "Nitzan chooses an integer from $1$ to $2^{2022}$ and tells Bilbo. Bilbo writes a word of length $4044$ over $\\{a,b,c\\}$. After seeing it, Nitzan chooses one of the letters and erases every occurrence of that letter. Gandalf sees only the remaining word and must determine the integer. Can Bilbo and Gandalf agree on a strategy that always succeeds?"
+        },
+        {
+          "day": 9,
+          "number": 8,
+          "problem": "A function $f:\\mathbb Z^2\\to\\mathbb R$ has the following property: for every integer $C$, each of $f(x,C)$, $f(C,x)$, $f(x,x+C)$ and $f(x,C-x)$ is a polynomial in $x$ of degree at most $100$. Prove that $f$ is represented by a bivariate polynomial and determine its maximum possible total degree, where total degree is the largest $i+j$ among its nonzero terms $x^iy^j$."
+        },
+        {
+          "day": 9,
+          "number": 9,
+          "problem": "A scalene triangle $ABC$ has incentre $I$ and circumcircle $\\Omega$ with centre $O$. Let $H$ be the orthocentre of $BIC$. Choose $T\\in\\Omega$ with $\\angle ATI=90^\\circ$. The circle through $A,I,O$ meets $IH$ again at $X$. Prove that the intersection of $AX$ and $HT$ lies on $\\Omega$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Assign distinct real numbers to the vertices of a regular pentagon. An isosceles triple is successful when the number at its apex is either larger than both numbers at its base or smaller than both. Determine the greatest possible number of successful triples."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A pyramid $SABCDE$ has a regular pentagonal base $ABCDE$ and acute lateral faces. In each lateral face draw the altitude from $S$ to the base edge, producing ten triangles. Colour these alternately red and blue around the pyramid. Prove that the sums of the squared areas of the red and blue triangles are equal."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all functions $f:\\mathbb Z\\to\\mathbb Z_{>0}$ satisfying $$f(x+f(y))^2+f(y+f(x))^2=f(f(x)+f(y))^2+1$$ for all integers $x,y$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $f_2(n)$ and $f_3(n)$ count the positive divisors of $n$ that are perfect squares and perfect cubes, respectively. Prove that for every positive integer $k$ some positive integer $n$ satisfies $f_2(n)/f_3(n)=k$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Colour an $8\\times8$ board black and white with no monochromatic $2\\times2$ subboard. A snake is a sequence of distinct cells in which consecutive cells share a side and have different colours. Determine the greatest $m$ such that every permitted colouring contains a snake of length $m$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In triangle $ABC$, let $H$ be the orthocentre and $D$ the foot of the altitude from $A$. Choose $P$ with $AP=HP$ such that $PA$ is tangent to the circumcircle at $A$. Set $X=PD\\cap AB$ and $Y=PD\\cap AC$. Prove that either $\\angle YHX=\\angle BAC$ or $\\angle YHX+\\angle BAC=180^\\circ$."
+        },
+        {
+          "day": 5,
+          "number": 7,
+          "problem": "Alice colours the vertices of a regular $20$-gon with two colours. Bob chooses a diagonal joining opposite vertices, then draws segments perpendicular to that diagonal whose endpoints are vertices of the same colour. Alice gives him one fish per such segment. How many fish can Bob guarantee, regardless of the colouring?"
+        },
+        {
+          "day": 5,
+          "number": 8,
+          "problem": "An isosceles triangle $ABC$, with $AB=AC$, is inscribed in $\\omega$. Its $B$-symmedian meets $\\omega$ again at $D$. The circle through $C,D$ tangent to $BC$ and the circle through $A,D$ tangent to $CD$ meet again at $X$. If $I$ is the incentre of $ABC$, prove that $B,C,I,X$ are concyclic."
+        },
+        {
+          "day": 5,
+          "number": 9,
+          "problem": "Write $P^{\\circ k}$ for the $k$-fold composition of a real polynomial $P$. Call $P$ perfect if for every integer $n$ some positive integer $k$ makes $P^{\\circ k}(n)$ an integer. Must each perfect polynomial admit a positive integer $m$ such that, for every integer $n$, one can choose such a $k$ with $1\\le k\\le m$?"
+        },
+        {
+          "day": 7,
+          "number": 10,
+          "problem": "Determine every function $f:\\mathbb R\\to\\mathbb R$ satisfying $$f(x)+f(y)=f(xy)+f(f(x)+f(y))$$ for all real $x,y$."
+        },
+        {
+          "day": 7,
+          "number": 11,
+          "problem": "Let $n>3$ be an integer and choose $a_k\\in\\{k,-k\\}$ for $1\\le k\\le n$. Prove that there are indices $k_1,\\ldots,k_n\\in\\{1,\\ldots,n\\}$, not necessarily distinct, whose partial sums $\\sum_{i=1}^j a_{k_i}$, $1\\le j\\le n$, have pairwise distinct residues modulo $2n+1$, with the last sum divisible by $2n+1$."
+        },
+        {
+          "day": 7,
+          "number": 12,
+          "problem": "An acute triangle $ABC$ has circumcentre $O$ and incentre $I$. Let $S$ be the midpoint of the circumcircle arc $BC$ not containing $A$. Choose $E,F$ on $OI$ with $BE\\perp OI$ and $CF\\perp OI$. Define $X$ by $XE\\perp AC$, $XF\\perp AB$, and $Y$ by $YE\\perp SC$, $YF\\perp SB$. Choose $D\\in BC$ with $DI\\perp BC$. Prove that $X,Y,D$ are collinear."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Triangle $ABC$ has $\\angle BAC=60^\\circ$, orthocentre $H$, and circumcircle $\\Omega$. Let $S$ be the midpoint of arc $BC$ not containing $A$, and choose $P\\in\\Omega$ with $\\angle HPS=90^\\circ$. Prove that a circle through $P,S$ tangent to both $AB$ and $AC$ exists."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a simple graph $G$ on $n>1$ labelled vertices, let $k(G)$ be the smallest dimension permitting $n$ axis-parallel rectangular boxes whose pairwise intersections correspond exactly to the edges of $G$. Determine $\\max_G k(G)$ as a function of $n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Fix a positive integer $n$ and a prime $p\\equiv5\\pmod8$. Consider polynomials $Q$ of degree at most $2023$ with integer coefficients in $\\{0,\\ldots,n\\}$. Prove that an even number of these polynomials satisfy $$p\\mid\\prod_{j=2}^{p-2}Q(j)-1.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all positive integer triples $(x,y,z)$ satisfying $$x^{y^2+1}+y^{x^2+1}=2^z.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In triangle $ABC$, let $I$ be the incentre and $I_A$ the $A$-excentre, whose excircle touches $BC$ at $D$. Let $N$ be the midpoint of arc $BAC$, and $T$ the other intersection of $NI$ with the circumcircle. If $K$ is the circumcentre of $AID$, prove that $TI_A\\perp KI$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Fix $0<c<1$. Bob writes $n$ integers, not all equal. A move replaces two numbers by their arithmetic mean. Alice plays first, making at most $cn$ moves, after which Bob moves until just two numbers remain. Alice wins if these differ; otherwise Bob wins. Determine the values of $c$ for which Alice has a winning strategy for every sufficiently large $n$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $AD$ be the internal angle bisector of triangle $ABC$, with $D\\in BC$. The common tangents to the circumcircles of $BAD$ and $CAD$ meet at $A\\prime$. Define $B\\prime$ and $C\\prime$ analogously at the other vertices. Prove that $A\\prime,B\\prime,C\\prime$ are collinear."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "A tree with $N$ vertices is given a real weight at every vertex. For every vertex $v$ of degree $d_v$, its weight $w_v$ satisfies $d_v(w_v+1)\\ge\\sum_{u\\sim v}w_u$, where the sum runs over its neighbours. If $M$ and $m$ are the maximum and minimum weights, determine the greatest possible $M-m$ over all such weighted trees on $N$ vertices."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Determine all continuous functions $f:\\mathbb R_{>0}\\to\\mathbb R_{\\ge1}$ such that $$f\\left(\\frac{f(x)}y\\right)-f\\left(\\frac{f(y)}x\\right)=xy\\bigl(f(x+1)-f(y+1)\\bigr)$$ for all positive real $x,y$."
+        },
+        {
+          "day": 6,
+          "number": 10,
+          "problem": "A connected simple graph has $n$ vertices and at least $n$ edges. Prove that its vertices can be coloured red and blue, using both colours, with an even number of edges joining different colours, so that deleting those edges leaves exactly two connected components."
+        },
+        {
+          "day": 6,
+          "number": 11,
+          "problem": "For a positive integer $n$, determine all $Q\\in\\mathbb Z[x]$ of degree less than $n$ for which some integer $m\\ge1$ satisfies $$x^n-1\\mid Q(x)^m-1.$$"
+        },
+        {
+          "day": 6,
+          "number": 12,
+          "problem": "In parallelogram $ABCD$, let $\\omega_1$ pass through $D$ and be tangent to $AB$ at $A$, and let $\\omega_2$ pass through $A$ and be tangent to $CD$ at $D$. The second tangents from $B$ and $C$ touch $\\omega_1,\\omega_2$ at $P,Q$, respectively. Put $X=AP\\cap DQ$, and let $R$ be the intersection of $AD$ with the perpendicular bisector of $BC$. Prove that the circumcircles of $PQX$ and $BCR$ are concentric."
+        },
+        {
+          "day": 8,
+          "number": 13,
+          "problem": "For $n\\ge1$, let $a_n$ be the largest positive integer such that $$(a_n)!\\mid\\prod_{k=1}^n\\left\\lfloor\\frac nk\\right\\rfloor.$$ Prove that $a_{m+1}<a_m$ for infinitely many positive integers $m$."
+        },
+        {
+          "day": 8,
+          "number": 14,
+          "problem": "Triangle $ABC$ has circumcentre $O$ and incentre $I$, and its incircle touches $BC,CA,AB$ at $D,E,F$. Reflect the tangent to the circumcircle at $A$ across $EF$, obtaining $\\ell_A$. Define $\\ell_B,\\ell_C$ cyclically. Prove that the orthocentre of the triangle formed by these three lines lies on $OI$."
+        },
+        {
+          "day": 8,
+          "number": 15,
+          "problem": "For a finite set $S$ of at least three distinct plane points, let $d_{\\min}$ and $d_{\\max}$ be its smallest and largest distances between distinct points. Call $S$ $c$-balanced when $d_{\\max}/d_{\\min}\\le c|S|$. Prove that some real $c>0$ guarantees, for every $c$-balanced $S$, a triangle with vertices in $S$ containing at least $\\sqrt{|S|}$ points of $S$, counting its boundary."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 2,
+          "number": 1,
+          "problem": "For which integers $n\\ge2$, if any, do positive integers $a,b,c$ satisfy simultaneously $$a^n-2b^n=1,\\qquad b^n-2c^n=1?$$"
+        },
+        {
+          "day": 2,
+          "number": 2,
+          "problem": "A graph on $10^{100}$ vertices has no simple odd cycle of length at most $100$. Prove that it contains an independent set of size at least $10^{100}/102$."
+        },
+        {
+          "day": 2,
+          "number": 3,
+          "problem": "A cyclic quadrilateral $ABCD$ has circumcentre $O$. The internal bisectors of its four angles form a convex quadrilateral $Q_1$, and the external bisectors form a convex quadrilateral $Q_2$. Prove that both are cyclic and that $O$ is the midpoint of their circumcentres."
+        },
+        {
+          "day": 4,
+          "number": 4,
+          "problem": "A family $\\mathcal F$ of functions $\\mathbb R_{>0}\\to\\mathbb R_{>0}$ satisfies: for every $f,g\\in\\mathcal F$, there is $h\\in\\mathcal F$ such that $$y^2f\\left(\\frac{g(x)}y\\right)=h(xy)$$ for all positive real $x,y$. Prove that every $f\\in\\mathcal F$ satisfies $f(x/f(x))=1$ for all $x>0$."
+        },
+        {
+          "day": 4,
+          "number": 5,
+          "problem": "For a cyclic quadrilateral $ABCD$, set $E=AD\\cap BC$ and $F=AB\\cap CD$. Let $O_A,O_B,O_C,O_D$ be the centres, respectively, of the circle through $A,D$ tangent to $AB$, the circle through $B,C$ tangent to $AB$, the circle through $B,C$ tangent to $CD$, and the circle through $A,D$ tangent to $CD$. Prove that these four centres are concyclic and their circumcentre lies on $EF$."
+        },
+        {
+          "day": 4,
+          "number": 6,
+          "problem": "A graph on $2n-1$ vertices has maximum clique size $n$, where $n$ is a positive integer. Prove that some vertex belongs to every clique of size $n$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In triangle $ABC$, let $E,F$ be the perpendicular feet from $A$ to the internal angle-bisector lines at $B,C$. Let $I$ be the incentre, $P$ the second intersection of the circles $BIF,CIE$, and $N$ the midpoint of circumcircle arc $BC$ containing $A$. Prove that $P,I,N$ are collinear."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all functions $f:\\mathbb R\\to\\mathbb R$ satisfying $$f(x+f(y))+f(f(f(x))-y)=2x$$ for all real $x,y$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\sigma(n)$ be the sum of the positive divisors of $n$. Prove that infinitely many positive integers $m$ have exactly one positive integer solution $n$ to $\\sigma(n)=m$."
+        },
+        {
+          "day": 4,
+          "number": 4,
+          "problem": "Let $n\\ge3$ and $a_1,\\ldots,a_n>0$. In the expression $a_1\\times\\cdots\\times a_n$, replacing any single multiplication sign with addition increases its value, using the usual precedence of multiplication. Prove that replacing every multiplication sign with addition also increases the value."
+        },
+        {
+          "day": 4,
+          "number": 5,
+          "problem": "Define $\\Delta:\\mathbb Z_{>1}\\to\\mathbb Z_{>0}$ by $\\Delta(p^a)=ap^{a-1}$ for prime $p$ and $a\\ge1$, and $\\Delta(uv)=\\Delta(u)\\Delta(v)$ for coprime $u,v>1$. Is it true that for each positive integer $k$ there is an integer $n>1$ with a well-defined orbit satisfying $\\Delta^{\\circ k}(n)=n$ and $\\Delta^{\\circ j}(n)\\ne n$ for $1\\le j<k$? Here $\\Delta^{\\circ j}$ denotes iteration; all inputs along the orbit must lie in the stated domain."
+        },
+        {
+          "day": 4,
+          "number": 6,
+          "problem": "There are $n$ blue points $b_1,\\ldots,b_n$ on a horizontal line and $n$ red points $r_1,\\ldots,r_n$ above it. No line through two red points contains another red or blue point. Ayala matches red and blue points by $n$ segments. Barvaz may replace two crossing segments $b_ir_j,b_kr_l$ by $b_ir_l,b_kr_j$. Prove that he can eliminate all crossings in at most $\\binom n2$ moves."
+        },
+        {
+          "day": 5,
+          "number": 7,
+          "problem": "A grasshopper starts at $1$ on the number line with energy $E$. Each jump goes to the right; a jump from $y$ to $z$ consumes $z/y^2$ energy. Determine the least $E$ allowing it to make $n$ jumps for every positive integer $n$."
+        },
+        {
+          "day": 5,
+          "number": 8,
+          "problem": "Let $n>2026^{2026}$ be an integer. A kangaroo moves between side-adjacent cells of an $n\\times n$ board. Each $2026\\times2026$ subboard may be visited at most $r$ times in total, counting repeated visits. Determine the smallest $r$ allowing visits to at least $n^2/10^{100}$ distinct cells."
+        },
+        {
+          "day": 5,
+          "number": 9,
+          "problem": "A map $f:\\mathbb Z[x,y]\\to\\mathbb Z[x,y]$ satisfies $f(1)=1$ and $f(P+Q)=f(P)+f(Q)$. For each polynomial $P$ and prime $r$, an integer pair with $P$ divisible by $r$ exists if and only if an integer pair with $f(P)$ divisible by $r$ exists. Prove that $f(PQ)=f(P)f(Q)$ for every $P,Q\\in\\mathbb Z[x,y]$."
+        },
+        {
+          "day": 7,
+          "number": 10,
+          "problem": "Given positive integers $n,m$, Ayala labels each edge of the complete graph on $n$ vertices with a number in $\\{1,\\ldots,m\\}$. Barvaz then selects a starting vertex and a finite word $a_1,\\ldots,a_k$ over that set. On step $i$, Ayala must traverse an edge labelled $a_i$, never returning to the starting vertex; edges may be reused. She loses if no legal move is possible. Determine the pairs $(n,m)$ for which Barvaz can force her loss, whatever labelling and legal choices she makes."
+        },
+        {
+          "day": 7,
+          "number": 11,
+          "problem": "Determine all real sequences $(a_n)_{n\\ge1}$ with $a_1=1$, $a_2=2$, such that, whenever positive integers $m,n,k$ are pairwise distinct, at least one of $$a_m+a_n=a_{m+n},\\qquad a_n+a_k=a_{n+k},\\qquad a_m+a_k=a_{m+k}$$ holds."
+        },
+        {
+          "day": 7,
+          "number": 12,
+          "problem": "A point $P$ lies on the circumcircle of $ABC$. Reflect $P$ across $AB,AC$ to obtain $P_B,P_C$. Set $X=PP_C\\cap BC$, $Y=PP_B\\cap BC$, and $U=P_BP_C\\cap BC$. Let $\\Gamma$ be the circle $PXY$, and $T$ its second intersection with the perpendicular to $BC$ through $P$. Prove that $\\Gamma$, the circle $AP_BP_C$, and line $UT$ share a point."
+        }
+      ]
+    }
+  ]
+}
