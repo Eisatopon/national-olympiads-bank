@@ -38,4 +38,14 @@ The following files now exist **on this work branch only**:
 - `Vojtech-Jarnik-problems.json`
 - `Simon-Marais-problems.json`
 
-They contain the requested historical-year slots and known original source references. **All `problems` lists are currently empty**. They must **not** be described as completed question banks. Only actual verified full statement records may populate them; mathematical topics, DNA tags and graph links must be checked per question. These draft files are not wired into the live application, and GitHub public repository branch links are visible to others who know the URL.
+They contain the requested historical-year slots and known original source references. **Putnam 1985–2000 now contains 192 source-transcribed A1–B6 statement texts.** Their source LaTeX is preserved, but independent mathematical fidelity review, MathJax/HTML normalization, topical tags and Problem DNA are still pending; these problems are not approved for bank publication. All other year/competition problem lists remain empty. They must **not** be described as completed question banks. Only actual verified full statement records may populate them; mathematical topics, DNA tags and graph links must be checked per question. These draft files are not wired into the live application, and GitHub public repository branch links are visible to others who know the URL.
+
+## Putnam 1985–2000 archival provenance and reproduction notice
+
+The 192 Putnam statement records in the unpublished `Putnam-problems.json` were taken from statement-only, unofficial LaTeX files held by `rpxgit/The-Putnam-Archive` (year and URL cited on each entry). The copyright notice in the MAA book *The William Lowell Putnam Mathematical Competition 1985–2000: Problems, Solutions, and Commentary* (2002) expressly permits reproduction for educational/scientific purposes without fees or permission, except services charging for delivery of documents, and requires the following credit:
+
+> First published in The William Lowell Putnam Mathematical Competition 1985–2000: Problems, Solutions, and Commentary, © 2002 by the Mathematical Association of America.
+
+This notice applies to that book and period, not automatically to other years or competitions. Current GitHub files are publicly readable although this branch is **not merged** into `main`. These transcripts are **source-extracted, not independently verified against MAA originals** and retain plain LaTeX constructs that may require normalization for the live bank.
+
+Historical years before 1985 and contest texts after 2000, plus the other four contests, remain **untranscribed** in these JSON drafts.
