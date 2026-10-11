@@ -2,7 +2,7 @@
   "competition": "Simon Marais Mathematics Competition",
   "collection_id": "smmc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "INCOMPLETE_NO_STATEMENTS_TRANSCRIBED",
+  "completeness": "PARTIAL_SAMPLE_VERIFIED_REWORDING_MOST_YEARS_UNTRANSCRIBED",
   "scope": {
     "start": 2017,
     "end": 2025
@@ -111,7 +111,7 @@
     },
     {
       "year": 2025,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "partial_verified_mathematical_rewording_not_full_original_exam",
       "original_sources": [
         {
           "kind": "original_year_page",
@@ -133,7 +133,25 @@
           "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_c.pdf"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "paper": "A",
+          "number": "A1",
+          "problem": "Call $f:[0,\\infty)\\to[0,\\infty)$ a finite polynomial maximum when $f(x)=\\max_{1\\le i\\le m}p_i(x)$ for finitely many real polynomials $p_i$ nonnegative on $[0,\\infty)$. Decide whether $f(x)=\\min\\{x,x^2\\}$ has this form.",
+          "topics": [
+            "Real Analysis",
+            "Polynomial Functions"
+          ],
+          "problem_dna": [
+            "case-splitting"
+          ],
+          "source_url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional"
+        }
+      ]
     }
-  ]
+  ],
+  "sample_problem_count": 1
 }
