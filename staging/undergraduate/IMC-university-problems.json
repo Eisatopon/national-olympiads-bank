@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "INCOMPLETE_NO_STATEMENTS_TRANSCRIBED",
+  "completeness": "PARTIAL_SAMPLE_VERIFIED_REWORDING_MOST_YEARS_UNTRANSCRIBED",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -465,7 +465,7 @@
     },
     {
       "year": 2026,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "partial_verified_mathematical_rewording_not_full_original_exam",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -482,7 +482,25 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2026"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find every real $x$ satisfying $\\cos(\\cos x)=\\sin(\\sin x)$.",
+          "topics": [
+            "Trigonometry",
+            "Real Analysis"
+          ],
+          "problem_dna": [
+            "interval-trapping"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2026",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional"
+        }
+      ]
     }
-  ]
+  ],
+  "sample_problem_count": 1
 }
