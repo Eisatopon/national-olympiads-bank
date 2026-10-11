@@ -98,6 +98,15 @@ for (const edition of historical) {
   assert.equal(edition.statement_text_imported, false);
 }
 assert.equal(links.size, 43);
+assert.equal((html.match(/class="imc-preview-btn"/g) || []).length, 43);
+assert.match(html, /id="imcOriginalViewer"/);
+assert.match(html, /id="imcPreviewFrame"/);
+assert.match(html, /id="imcPreviewFallback"/);
+assert.match(html, /imcHistoric\.addEventListener\('click'/);
+assert.match(html, /frame\.src = url/);
+assert.ok(html.includes("document.querySelector('#imcPreviewFrame').removeAttribute('src')"));
+for (const url of links) assert.ok(html.includes('data-source="' + url + '"'), url);
+
 assert.match(html, /the PDFs and their full statement texts have not been copied to eisatopon\.gr/);
 
 const putnam = papers.competitions.filter(x => x.competition_id === 'put');
