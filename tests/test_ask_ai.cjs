@@ -3,7 +3,7 @@ const html = fs.readFileSync('index.html', 'utf8');
 const nodes = Object.fromEntries(['aiPrompt','openAi','aiCopyStatus','aiHelp','aiDialog'].map(id => [id, {value:'',textContent:'',showModal(){this.open=true;},focus(){},select(){this.selected=true;}}]));
 const opened=[];
 const p={uid:'gr.2011.0.2',country:'gr',year:2011,num:2,text:'Prove $a+b=c$. Ελληνικά & # ?\n\nhttps://example.com/figure.png'};
-const ctx={CBY:{gr:{name:'Greece'}},byUid:new Map([[p.uid,p]]),$:s=>nodes[s.slice(1)],window:{open:(...args)=>{opened.push(args);return null;}},navigator:{clipboard:{writeText:async()=>{}}},document:{execCommand:()=>false},encodeURIComponent};
+const ctx={CBY:{gr:{name:'Greece'}},byUid:new Map([[p.uid,p]]),$:s=>nodes[s.slice(1)],window:{open:(...args)=>{opened.push(args);return null;}},navigator:{clipboard:{writeText:async()=>{}}},document:{execCommand:()=>false},encodeURIComponent,esc:s=>String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;")};
 vm.createContext(ctx);
 vm.runInContext(html.slice(html.indexOf('function aiPrompt('),html.indexOf('/* ---------- Link to the current view')),ctx);
 (async()=>{
@@ -13,10 +13,11 @@ vm.runInContext(html.slice(html.indexOf('function aiPrompt('),html.indexOf('/* -
  assert.match(prompt,/Greece 2011, problem 2/);
  assert.match(ctx.aiPrompt({...p,day:3}),/Day \/ Test 3/);
  assert.doesNotMatch(ctx.aiPrompt({...p,text:'Find $x$.'}),/figure links/);
- ctx.askAi(p.uid); assert.equal(opened.length,1); assert.equal(opened[0][2],'noopener,noreferrer');
+ const action=ctx.aiActionHtml(p);assert.match(action,/<a class="btn btn-sm ask-ai"/);assert.match(action,/target="_blank" rel="noopener noreferrer"/);assert.match(action,/Copy AI prompt/);
+ ctx.askAi(p.uid); assert.equal(opened.length,0);
  assert.equal(nodes.aiPrompt.value,prompt); assert.equal(nodes.aiDialog.open,true);
- ctx.askAi('missing'); assert.equal(opened.length,1);
- p.text='x'.repeat(9000);ctx.askAi(p.uid);assert.equal(opened.length,1);
+ ctx.askAi('missing'); assert.equal(opened.length,0);
+ p.text='x'.repeat(9000);assert.doesNotMatch(ctx.aiActionHtml(p),/<a /);assert.match(ctx.aiActionHtml(p),/data-ask-ai=/);ctx.askAi(p.uid);assert.equal(opened.length,0);
  assert.ok(nodes.aiPrompt.value.includes(p.text));assert.equal(nodes.openAi.href,'https://chatgpt.com/');
  assert.match(nodes.aiHelp.textContent,/too long/);
  await ctx.copyAiPrompt();assert.equal(nodes.aiCopyStatus.textContent,'Prompt copied.');
@@ -25,5 +26,5 @@ vm.runInContext(html.slice(html.indexOf('function aiPrompt('),html.indexOf('/* -
  ctx.document.execCommand=()=>true;await ctx.copyAiPrompt();assert.equal(nodes.aiCopyStatus.textContent,'Prompt copied.');
  ctx.document.execCommand=()=>{throw Error('unsupported');};await ctx.copyAiPrompt();assert.match(nodes.aiCopyStatus.textContent,/Ctrl\+C/);
  assert.match(html,/data-ask-ai="\$\{esc\(p.uid\)\}"/);
- console.log('Ask AI: complete prompt, Unicode/LaTeX, figures, test identity, URL budget, popup fallback, and clipboard failures passed.');
+ console.log('Ask AI: complete prompt, Unicode/LaTeX, figures, test identity, URL budget, native link and optional fallback, and clipboard failures passed.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -443,8 +443,8 @@ mjx-container[display="true"] { margin: .6em 0 !important; overflow-x: auto; ove
 .btn-quiet { border-color: transparent; background: transparent; color: var(--muted); }
 .btn-quiet:hover { background: transparent; color: #a4312a; text-decoration: underline; }
 .btn-sm { min-height: 34px; padding: 0 12px; font-size: .88rem; }
-.btn[data-ask-ai] { background: #245b86; border-color: #245b86; color: #fff; }
-.btn[data-ask-ai]:hover { background: #194666; border-color: #194666; }
+.btn.ask-ai { text-decoration: none; background: #245b86; border-color: #245b86; color: #fff; }
+.btn.ask-ai:hover { background: #194666; border-color: #194666; }
 .btn:disabled { opacity: .45; cursor: not-allowed; pointer-events: none; }
 .add .on { display: none; }
 .add .off, .add[aria-pressed="true"] .on { display: inline-flex; align-items: center; gap: 8px; }
@@ -1642,7 +1642,7 @@ function problemHtml(p) {
                 ${p.topic ? `<span class="p-tag">${esc(p.topic)}</span>` : ''}
             </div>
             <div class="p-actions">
-            <button type="button" class="btn btn-sm" data-ask-ai="${esc(p.uid)}" title="Open this problem in ChatGPT">Ask AI</button>
+            ${aiActionHtml(p)}
             <button type="button" class="btn btn-sm add" data-toggle-uid="${p.uid}" aria-pressed="false">
                 <span class="off">${ICON.plus} Add</span>
                 <span class="on">${ICON.check} In my set</span>
@@ -1937,6 +1937,11 @@ function aiUrl(text) {
     // Practical portable URL budget; never truncate the statement.
     return url.length <= 8000 ? url : 'https://chatgpt.com/';
 }
+function aiActionHtml(p) {
+    const url = aiUrl(aiPrompt(p));
+    if (!url.includes('?q=')) return `<button type="button" class="btn btn-sm ask-ai" data-ask-ai="${esc(p.uid)}" title="Copy this long problem for ChatGPT">Ask AI</button>`;
+    return `<a class="btn btn-sm ask-ai" href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="Open this problem in ChatGPT">Ask AI</a><button type="button" class="btn btn-sm btn-quiet" data-ask-ai="${esc(p.uid)}" aria-label="Copy AI prompt: problem ${esc(p.num)}" title="Copy prompt if needed">⋯</button>`;
+}
 function askAi(uid) {
     const p = byUid.get(uid);
     if (!p) return;
@@ -1945,11 +1950,8 @@ function askAi(uid) {
     $('#openAi').href = url;
     $('#aiCopyStatus').textContent = '';
     $('#aiHelp').textContent = direct
-        ? 'ChatGPT opens with the problem ready. If the text is missing or the new tab is blocked, copy the prompt below and open ChatGPT.'
+        ? 'Copy the prompt below if it did not appear in ChatGPT, then open ChatGPT and paste it into your conversation.'
         : 'This problem is too long for a reliable link. Copy the full prompt below, open ChatGPT and paste it into your conversation.';
-    // Open synchronously within the click gesture. A null return with noopener
-    // does not indicate failure, so always leave a usable fallback on this page.
-    if (direct) window.open(url, '_blank', 'noopener,noreferrer');
     const dlg = $('#aiDialog');
     if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
 }
