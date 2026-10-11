@@ -31,6 +31,6 @@ const imc2026 = papers.competitions.find(x => x.competition_id === 'imc' && x.ye
 assert.equal(imc2026.original_exams_verified, true);
 assert.deepEqual(imc2026.days.map(x => x.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
 assert.deepEqual(imc2026.days.map(x => x.date), ['2026-07-29','2026-07-30']);
-for (const day of imc2026.days) assert.match(html, new RegExp(day.questions_pdf.replace(/[.*+?^${}()|[\]\\]/g, '\\console.log('Undergraduate taxonomy and source-only UI validation passed.');')));
+for (const day of imc2026.days) assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
 assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 1);
 console.log('Undergraduate taxonomy and official paper index checks passed.');
