@@ -49,3 +49,7 @@ The 192 Putnam statement records in the unpublished `Putnam-problems.json` were 
 This notice applies to that book and period, not automatically to other years or competitions. Current GitHub files are publicly readable although this branch is **not merged** into `main`. These transcripts are **source-extracted, not independently verified against MAA originals** and retain plain LaTeX constructs that may require normalization for the live bank.
 
 Historical years before 1985 and contest texts after 2000, plus the other four contests, remain **untranscribed** in these JSON drafts.
+
+## 1938 original exam verification (2026-10-11)
+
+The original **first Putnam examination (1938-04-16)** has been located in Joseph A. Gallian's independent historical article, Appendix I: https://www.d.umn.edu/~jgallian/putnam13.pdf . A separate file `put-1938-exam-index.json` records all **13** numbered problems, original morning/afternoon split (morning 1–7, afternoon 8–13), and a/b alternative questions **7 and 8**, with provisional subject notes. The index summaries are **not full exam transcriptions**; the 1938 `problems` array in `Putnam-problems.json` is still empty and its verification status states that explicitly. Never impose A1–B6 on this first examination.
