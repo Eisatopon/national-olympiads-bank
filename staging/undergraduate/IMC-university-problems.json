@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "PARTIAL_COMPLETE_2023_2024_2025_2026_OTHER_YEARS_EMPTY",
+  "completeness": "PARTIAL_COMPLETE_2021_2026_OTHER_YEARS_PENDING",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -360,7 +360,7 @@
     },
     {
       "year": 2021,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "all_eight_independent_rewordings_compared_with_official_questions",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -377,11 +377,148 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2021"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A real square matrix $A$ obeys $A^3=0$. Prove that the matrix equation $X+AX+XA^2=A$ has exactly one real solution $X$, and give $X$ explicitly in terms of $A$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Equations"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Fix positive integers $k,n$ and any integer $a\\ge0$. Independently and uniformly choose a $k$-subset $X$ of $\\{1,\\dots,k+a\\}$ and an $n$-subset $Y$ of $\\{1,\\dots,k+n+a\\}$. Show that the probability of $\\min Y>\\max X$ is unchanged when $a$ varies.",
+          "topics": [
+            "Probability",
+            "Combinatorics"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Call $d>0$ admissible if points $a_1,a_2,\\ldots\\in(0,d)$ can be chosen such that the first $n$ points divide $[0,d]$ into intervals of lengths at most $1/n$, for every $n\\ge1$. Determine the supremum of admissible $d$.",
+          "topics": [
+            "Real Analysis",
+            "Combinatorics"
+          ],
+          "problem_dna": [
+            "interval-trapping"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Suppose $f:\\mathbb R\\to\\mathbb R$ satisfies the following local control: for each $\\varepsilon>0$ there exists $g:\\mathbb R\\to(0,\\infty)$ such that $|f(x)-f(y)|<\\varepsilon$ whenever $|x-y|<\\min(g(x),g(y))$. Prove that $f$ is a pointwise limit of a sequence of continuous real functions.",
+          "topics": [
+            "Real Analysis",
+            "Topology"
+          ],
+          "problem_dna": [
+            "interval-trapping"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $A$ be a real $n\\times n$ matrix. Assume that for every positive integer $m$ one can find a real symmetric $n\\times n$ matrix $B$ satisfying $A^m=B(2021I_n-B)$. Prove $|\\det A|\\le1$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Inequalities"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For prime $p$, prove that no injective group homomorphism exists from $\\mathrm{GL}_2(\\mathbb F_p)$ into the group of permutations of $p$ objects, $S_p$.",
+          "topics": [
+            "Group Theory",
+            "Finite Fields"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $f$ be holomorphic on an open neighbourhood of the closed unit disk, and let $p(z)$ be a monic polynomial of arbitrary degree. Prove $|f(0)|\\le\\max_{|z|=1}|f(z)p(z)|$.",
+          "topics": [
+            "Complex Analysis",
+            "Polynomials"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In $\\mathbb R^n$, determine the largest size of a set of distinct vectors of norm $1$ such that every triple contains an orthogonal pair.",
+          "topics": [
+            "Linear Algebra",
+            "Extremal Combinatorics"
+          ],
+          "problem_dna": [
+            "extremal-example"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        }
+      ]
     },
     {
       "year": 2022,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "all_eight_independent_rewordings_compared_with_official_questions",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -398,7 +535,144 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2022"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Assume $f:[0,1]\\to(0,\\infty)$ is integrable and $f(x)f(1-x)=1$ for all $x\\in[0,1]$. Show that $\\int_0^1 f(x)\\,dx\\ge1$.",
+          "topics": [
+            "Real Analysis",
+            "Integral Inequalities"
+          ],
+          "problem_dna": [
+            "am-gm"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a positive integer $n$, characterize real $n\\times n$ matrices $A$ whose eigenvalues are all real and for which $A+A^k=A^{\\mathsf T}$ for at least one integer $k\\ge n$.",
+          "topics": [
+            "Linear Algebra",
+            "Matrix Equations"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a prime $p$, count modulo $p$ the walks of length $p-1$ that start and end at $0$ on $\\mathbb Z$, using at each step one of $-1,0,+1$.",
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "problem_dna": [
+            "modular-arithmetic"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Take $n>3$ and colour every three-element subset of $\\{1,\\dots,n\\}$. The colour of $\\{a,b,c\\}$ must differ from that of $\\{b,c,d\\}$ whenever $a<b<c<d$. If $m$ denotes the fewest colours possible, establish $\\frac1{100}\\log\\log n\\le m\\le100\\log\\log n$.",
+          "topics": [
+            "Combinatorics",
+            "Hypergraph Coloring"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "All edges and diagonals of a regular $43$-gon are coloured red or blue, each vertex having exactly $20$ incident red and $22$ incident blue segments. If precisely $2022$ triangles with vertices at polygon vertices have all three sides blue, determine the number with all three sides red.",
+          "topics": [
+            "Combinatorics",
+            "Graph Theory"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For every odd prime $p$, construct a permutation $x_1,\\dots,x_{p-1}$ of $1,\\dots,p-1$ satisfying $\\sum_{j=1}^{p-2}x_jx_{j+1}\\equiv2\\pmod p$.",
+          "topics": [
+            "Number Theory",
+            "Combinatorics"
+          ],
+          "problem_dna": [
+            "modular-arithmetic"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $A_1,\\dots,A_k$ be idempotent complex $n\\times n$ matrices with $A_iA_j=-A_jA_i$ whenever $i\\ne j$. Prove that some $A_i$ has rank at most $n/k$.",
+          "topics": [
+            "Linear Algebra",
+            "Rank Inequalities"
+          ],
+          "problem_dna": [
+            "linear-combination"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Independently and uniformly choose $n$ blue and $k$ red points on a circle, where $n,k\\ge3$. Intersect the convex hulls of the blue and red point sets, and let $m$ be the number of vertices of the resulting convex polygon, with $m=0$ for an empty intersection. Find $\\mathbb E[m]$.",
+          "topics": [
+            "Probability",
+            "Convex Geometry"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        }
+      ]
     },
     {
       "year": 2023,
@@ -1169,5 +1443,5 @@
       ]
     }
   ],
-  "sample_problem_count": 40
+  "sample_problem_count": 56
 }
