@@ -59,3 +59,7 @@ The original **first Putnam examination (1938-04-16)** has been located in Josep
 The four other competition JSONs each contain **one** source-checked **independently reworded** mathematical question with its original year, exact identifier, mathematical LaTeX, source URL, topic and controlled-vocabulary Problem DNA tag. These are expressly marked `statement_form: independently_reworded_equivalent_not_verbatim` and `taxonomy_status: provisional`. They are not presented as full sets or official text copies. Source references: IMC official 2026 problem 1; SEEMOUS official 2024 problem 2; VJIMC official 2025 Category I problem 1; Simon Marais official 2025 A1.
 
 **Incomplete:** 33 years of IMC, 20 SEEMOUS, 36 VJIMC and 9 SMMC years are not fully populated. Earlier progress is insufficient for user's request for all exam statements. Do not merge this branch into the public bank.
+
+## IMC 2026 complete two-day mathematical restatement set
+
+The 2026 IMC exam now contains **10 separately authored, mathematically equivalent statement records**, numbered 1–5 for Day 1 and 6–10 for Day 2, with exact official source page per problem. Each record has LaTeX, topic tags, controlled-vocabulary Problem DNA, and `statement_form: independently_reworded_equivalent_not_verbatim`. The categorization is **provisional**. All **other** IMC years remain untranscribed and the entire work branch remains unpublished to the live bank. This is not a license to copy other organisers' original texts.
