@@ -62,3 +62,13 @@ for(const target of cfg.collections){
 }
 assert.equal(stagedStatementCount,192);
 console.log('All five standalone staged JSON files valid; 192 1985–2000 Putnam source transcriptions, classification pending.');
+
+const first=JSON.parse(fs.readFileSync(base+'put-1938-exam-index.json','utf8'));
+assert.equal(first.year,1938);
+assert.equal(first.total_numbered_questions,13);
+assert.deepEqual(first.problem_index.map(p=>p.number),Array.from({length:13},(_,i)=>i+1));
+assert.deepEqual(first.problem_index.filter(p=>p.session==='morning').map(p=>p.number),[1,2,3,4,5,6,7]);
+assert.deepEqual(first.problem_index.filter(p=>p.session==='afternoon').map(p=>p.number),[8,9,10,11,12,13]);
+assert.deepEqual(first.problem_index.filter(p=>p.alternatives).map(p=>p.number),[7,8]);
+assert.ok(first.status.includes('NOT_IMPORTED'));
+console.log('Putnam 1938 numbering/index source cross-reference validated; full-text statements remain unimported.');
