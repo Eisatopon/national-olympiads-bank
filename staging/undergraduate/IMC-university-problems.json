@@ -2,7 +2,7 @@
   "competition": "International Mathematics Competition for University Students",
   "collection_id": "imc",
   "publication_state": "unpublished_work_branch_only",
-  "completeness": "PARTIAL_COMPLETE_2026_TEN_REWORDINGS_OTHER_YEARS_EMPTY",
+  "completeness": "PARTIAL_COMPLETE_2025_AND_2026_TEN_EACH_OTHER_YEARS_EMPTY",
   "scope": {
     "start": 1994,
     "end": 2026
@@ -444,7 +444,7 @@
     },
     {
       "year": 2025,
-      "edition_status": "sources_identified_examination_not_transcribed",
+      "edition_status": "all_ten_mathematically_equivalent_originally_reworded_entries_source_compared",
       "original_sources": [
         {
           "kind": "official_question_pdf",
@@ -461,7 +461,178 @@
           "url": "https://www.imc-math.org.uk/?item=problems&year=2025"
         }
       ],
-      "problems": []
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P\\in\\mathbb R[x]$ have degree at least $2$, and for each real $t$ write $\\ell_t$ for the tangent to $y=P(x)$ at $(t,P(t))$. (a) Prove that $\\bigcup_{t\\in\\mathbb R}\\ell_t=\\mathbb R^2$ whenever $\\deg P$ is odd. (b) Decide whether an even-degree polynomial can also have tangents whose union covers the whole plane.",
+          "topics": [
+            "Geometry",
+            "Polynomials"
+          ],
+          "problem_dna": [
+            "polynomial-identity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Suppose $f\\in C^2([-1,1])$ satisfies $f(-1)=f(1)=1$ and $\\int_{-1}^{1}f(t)\\,dt=0$. Establish $\\int_{-1}^{1}(f''(t))^2\\,dt\\ge15$ and describe precisely the equality cases.",
+          "topics": [
+            "Real Analysis",
+            "Integral Inequalities"
+          ],
+          "problem_dna": [
+            "am-gm"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Among all symmetric rank-one matrices of size $2025\\times2025$ with every entry in $\\{-1,1\\}$, choose $A$ and $B$ independently and uniformly. Compute the probability of $AB=BA$.",
+          "topics": [
+            "Linear Algebra",
+            "Probability"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Fix an even positive integer $a$. Determine the real values of $x$ for which, simultaneously for all positive integers $b$, $\\left\\lfloor b^{a-1}\\sqrt[a]{b^a+x}\\right\\rfloor=b^a+\\left\\lfloor x/a\\right\\rfloor$. Here $\\lfloor t\\rfloor$ is the integer part of $t$.",
+          "topics": [
+            "Number Theory",
+            "Floor Functions"
+          ],
+          "problem_dna": [
+            "floor-blocks"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Put $[n]=\\{1,\\ldots,n\\}$. For any self-map $\\tau:[n]\\to[n]$, define $\\operatorname{ord}(\\tau)$ as the cardinality of $\\{\\tau,\\tau^2,\\tau^3,\\ldots\\}$, with powers denoting composition. Let $f(n)$ be the largest such cardinality among permutations and $g(n)$ the largest among all self-maps. Show that for all sufficiently large $n$, $g(n)<f(n)+n^{0.501}$.",
+          "topics": [
+            "Combinatorics",
+            "Finite Functions"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Take $0<a<b$ and a continuously differentiable $f:(0,\\infty)\\to\\mathbb R$ satisfying $f(a)=f(b)=k$. Show that some $c\\in(a,b)$ has $f(c)-cf'(c)=k$.",
+          "topics": [
+            "Real Analysis",
+            "Mean Value Theorem"
+          ],
+          "problem_dna": [
+            "substitution"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Determine every nonempty $M\\subseteq\\mathbb Z_{>0}$ such that $m\\in M$ implies $2m\\in M$, and whenever $x,y\\in M$ have even sum, their arithmetic mean $(x+y)/2$ also lies in $M$.",
+          "topics": [
+            "Number Theory",
+            "Set Closure"
+          ],
+          "problem_dna": [
+            "parity"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "For a real square matrix $A$, let $R(A)$ be the matrix obtained by rotating its entries $90^\\circ$ anticlockwise (without altering entry values). Suppose $A=R(A)$. Prove that every complex eigenvalue $\\lambda$ of $A$ lies on either the real or the imaginary axis.",
+          "topics": [
+            "Linear Algebra",
+            "Eigenvalues"
+          ],
+          "problem_dna": [
+            "reflection"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 9,
+          "problem": "Choose distinct positive integers $X_1,\\ldots,X_n$ sequentially as follows: $X_1=i$ with probability $2^{-i}$. Once $X_1,\\ldots,X_j$ are selected, list the unused positive integers in increasing order $u_1<u_2<\\cdots$ and set $X_{j+1}=u_i$ with conditional probability $2^{-i}$. For $Y_n=\\max(X_1,\\ldots,X_n)$, prove $\\mathbb E(Y_n)=\\sum_{i=1}^{n}\\frac{2^i}{2^i-1}$.",
+          "topics": [
+            "Probability",
+            "Expectation"
+          ],
+          "problem_dna": [
+            "counting"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        },
+        {
+          "day": 2,
+          "number": 10,
+          "problem": "Let $S_N$ count ordered integer pairs $(a,b)$ with $1\\le a,b\\le N$ such that $a(a+1)b(b+1)$ is a square integer. Prove the sequence $S_N/N$ converges as $N\\to\\infty$, and determine its limiting value.",
+          "topics": [
+            "Number Theory",
+            "Asymptotic Counting"
+          ],
+          "problem_dna": [
+            "prime-factors"
+          ],
+          "source_url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025",
+          "statement_verified": true,
+          "statement_form": "independently_reworded_equivalent_not_verbatim",
+          "taxonomy_status": "provisional",
+          "mathematical_connections": []
+        }
+      ]
     },
     {
       "year": 2026,
@@ -656,5 +827,5 @@
       ]
     }
   ],
-  "sample_problem_count": 10
+  "sample_problem_count": 20
 }
