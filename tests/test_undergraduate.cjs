@@ -33,4 +33,15 @@ assert.deepEqual(imc2026.days.map(x => x.numbers), [[1,2,3,4,5],[6,7,8,9,10]]);
 assert.deepEqual(imc2026.days.map(x => x.date), ['2026-07-29','2026-07-30']);
 for (const day of imc2026.days) assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
 assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 1);
+const putnam = papers.competitions.filter(x => x.competition_id === 'put');
+assert.equal(putnam.length, 8);
+assert.deepEqual(putnam.map(x => x.year).sort((a,b) => a-b), [2018,2019,2020,2021,2022,2023,2024,2025]);
+for (const edition of putnam) {
+  assert.equal(edition.original_exams_verified, false, 'Link resolution is not a source-fidelity review');
+  assert.equal(edition.source_link_status, 'exact_official_archive_pdf_link_resolved');
+  assert.ok(edition.questions_pdf.startsWith('https://maa.org/wp-content/uploads/'));
+  assert.equal(edition.pdf_pages, 2);
+  assert.equal(edition.statement_text_imported, false);
+}
+for (const y of [2024, 2025]) assert.ok(html.includes(putnam.find(x => x.year === y).questions_pdf));
 console.log('Undergraduate taxonomy and official paper index checks passed.');
