@@ -413,6 +413,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 
 .problem { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--f); border-radius: 2px; padding: 18px 24px 22px; scroll-margin-top: 16px; }
 .p-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; margin-bottom: 10px; }
+.p-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .p-num { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 8px; border-radius: 4px; background: var(--f); color: #fff; font: 800 1.15rem/1 var(--serif); }
 .p-meta { font: 600 .96rem var(--serif); color: var(--ink); }
@@ -690,6 +691,19 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <button type="button" class="btn" id="copyBtn">Copy link</button>
         <button type="button" class="btn btn-primary" id="closeShare">Close</button>
     </div>
+</dialog>
+
+<dialog id="aiDialog" aria-labelledby="aiTitle">
+    <h2 id="aiTitle">Ask AI</h2>
+    <p id="aiHelp"></p>
+    <textarea id="aiPrompt" readonly aria-label="Problem and instructions for ChatGPT" style="width:100%;min-height:160px;margin-top:12px;padding:10px;resize:vertical"></textarea>
+    <div class="copy-status" id="aiCopyStatus" role="status"></div>
+    <div class="dlg-actions">
+        <button type="button" class="btn" id="copyAi">Copy prompt</button>
+        <a class="btn" id="openAi" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT</a>
+        <button type="button" class="btn btn-primary" id="closeAi">Close</button>
+    </div>
+    <p>Use your own ChatGPT account. Solutions are not saved in this bank.</p>
 </dialog>
 
 <dialog id="relatedDialog" aria-labelledby="relatedTitle">
@@ -1625,10 +1639,13 @@ function problemHtml(p) {
                 <span class="p-meta">${c.flag} ${c.name} ${p.year}${p.day ? `, Day ${p.day}` : ''}</span>
                 ${p.topic ? `<span class="p-tag">${esc(p.topic)}</span>` : ''}
             </div>
+            <div class="p-actions">
+            <button type="button" class="btn btn-sm" data-ask-ai="${esc(p.uid)}" title="Open this problem in ChatGPT">Ask AI</button>
             <button type="button" class="btn btn-sm add" data-toggle-uid="${p.uid}" aria-pressed="false">
                 <span class="off">${ICON.plus} Add</span>
                 <span class="on">${ICON.check} In my set</span>
             </button>
+            </div>
         </div>
         <div class="statement">${bodyHtml(p.text)}</div>
         ${provenanceHtml(p)}
@@ -1905,6 +1922,48 @@ async function copyLink() {
     $('#copyStatus').textContent = 'Link copied.';
 }
 
+/* ---------- ChatGPT handoff; no API calls or solution storage ---------- */
+function aiPrompt(p) {
+    const c = CBY[p.country];
+    const label = `${c.name} ${p.year}${p.day ? `, Day / Test ${p.day}` : ''}, problem ${p.num}`;
+    const figure = /https?:\/\/\S+\.(?:png|jpe?g|gif|webp)\b/i.test(p.text);
+    return `Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.\n\n${label}\n\n${p.text}` +
+        (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');
+}
+function aiUrl(text) {
+    const url = 'https://chatgpt.com/?q=' + encodeURIComponent(text);
+    // Practical portable URL budget; never truncate the statement.
+    return url.length <= 8000 ? url : 'https://chatgpt.com/';
+}
+function askAi(uid) {
+    const p = byUid.get(uid);
+    if (!p) return;
+    const text = aiPrompt(p), url = aiUrl(text), direct = url.includes('?q=');
+    $('#aiPrompt').value = text;
+    $('#openAi').href = url;
+    $('#aiCopyStatus').textContent = '';
+    $('#aiHelp').textContent = direct
+        ? 'ChatGPT opens with the problem ready. If the text is missing or the new tab is blocked, copy the prompt below and open ChatGPT.'
+        : 'This problem is too long for a reliable link. Copy the full prompt below, open ChatGPT and paste it into your conversation.';
+    // Open synchronously within the click gesture. A null return with noopener
+    // does not indicate failure, so always leave a usable fallback on this page.
+    if (direct) window.open(url, '_blank', 'noopener,noreferrer');
+    const dlg = $('#aiDialog');
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+}
+async function copyAiPrompt() {
+    const input = $('#aiPrompt'), status = $('#aiCopyStatus');
+    try {
+        await navigator.clipboard.writeText(input.value);
+        status.textContent = 'Prompt copied.';
+    } catch (e) {
+        input.focus(); input.select();
+        let copied = false;
+        try { copied = document.execCommand('copy'); } catch (ignored) {}
+        status.textContent = copied ? 'Prompt copied.' : 'Text selected. Press Ctrl+C (or Command+C) to copy.';
+    }
+}
+
 /* ---------- Link to the current view ----------
    ?c=<row key>&y=<year>&d=<day>&t=<topic>&q=<search> reopens exactly this selection. */
 function viewQuery() {
@@ -1991,6 +2050,7 @@ document.addEventListener('click', e => {
         return;
     }
 
+    if (t.dataset.askAi) { askAi(t.dataset.askAi); return; }
     if (t.dataset.related) { showRelated(t.dataset.related); return; }
     if (t.dataset.openProblem) { openRelatedProblem(t.dataset.openProblem); return; }
     if (t.dataset.toggleUid) { toggleUid(t.dataset.toggleUid); return; }
@@ -2016,6 +2076,8 @@ $('#q').addEventListener('input', e => {
     }, 200);
 });
 
+$('#copyAi').addEventListener('click', copyAiPrompt);
+$('#closeAi').addEventListener('click', () => $('#aiDialog').close());
 $('#closeRelated').addEventListener('click', () => { ++relatedToken; $('#relatedDialog').close(); });
 $('#saveSetBtn').addEventListener('click', saveCollection);
 $('#savedSets').addEventListener('change', syncCollectionButtons);
