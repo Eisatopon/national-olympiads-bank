@@ -1,5 +1,8 @@
 # Pending tasks — updated 11 Oct 2026
 
+> **Master Gap Register (11 Oct 2026):** [Cross-country open gaps and closure protocol](master-gap-register.md) · [Machine-readable 52-item register](master-gap-register.json). Before a new import, compare against actual JSON with `python scripts/reconcile_master_gaps.py`. This register is curated, not proof of exhaustive worldwide coverage.
+
+
 Current inventory: **20,814 statements**, 117 rows (100 national, 12 regional, 2 international, 3 tournaments), 72 countries. Latest batch: `cyprus-pancyprian-2026-10-11.md`.
 
 Latest import: `israel-tst-import-2026-10-11.md`: 74 statements in 24 complete displayed Israel TST examinations, 2016 and 2021–2026, new row ilt. The owner accepted complete individual tests despite annual gaps. All 19 secondary compilation pages visually inspected; no original-source badges. Withheld whole tests: 2016/1 (coin rule), 2023/3 (missing tile image), 2025/1,7,8 (two-entry counts unconfirmed), 2026/2,9 (printed geometry/indexing defects). Other absent labels and explicit IMO Shortlist omissions remain open. Recover the identified original packets rather than repeating generic searches.
