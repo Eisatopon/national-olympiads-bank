@@ -29,6 +29,7 @@ jobs:
       - run: python scripts/validate_dna.py
       - run: node tests/test_undergraduate.cjs
       - run: node tests/test_putnam_import.cjs
+      - run: node tests/test_undergraduate_other_four.cjs
       - run: node tests/test_topics.cjs
       - run: python scripts/validate_topics.py
       - run: python -m unittest discover -s tests
