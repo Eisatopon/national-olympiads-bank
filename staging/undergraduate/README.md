@@ -67,3 +67,7 @@ The 2026 IMC exam now contains **10 separately authored, mathematically equivale
 ## IMC 2025 complete two-day mathematical restatement set
 
 The 2025 IMC exam now also contains all **10 separately authored, mathematically equivalent statement records**, five per day, with original per-problem official source URLs. Math formatting and provisional classification are attached to each problem. Both **2025 and 2026** are the only complete IMC years in this staging JSON as of this update, with **20 independent restatements total**. Prior years **1994–2024 are not imported**. No publication to the live site.
+
+## IMC 2023 and 2024 papers
+
+The 2023 and 2024 examinations now also have ten independently written mathematics statement records each, with official per-question source links, correct day identifiers, and provisional topic/Problem DNA fields. **IMC 2023–2026: 40 restatement records**, **IMC 1994–2022: not yet transcribed**. This work branch remains unpublished.
