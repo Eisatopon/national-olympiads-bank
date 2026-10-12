@@ -18,7 +18,7 @@ import urllib.request
 from datetime import date
 
 ARCHIVE = "https://jarnik.osu.cz/problems"
-CURRENT = "https://vjimc.osu.cz/j32results"
+CURRENT = "https://vjimc.osu.cz/j31results"
 BASE = "https://jarnik.osu.cz"
 ABSENT = {2020, 2021, 2023}
 YEARS = [y for y in range(1991, 2027) if y not in ABSENT]
@@ -60,12 +60,18 @@ def main():
     p.add_argument("--download", action="store_true")
     p.add_argument("--download-dir", default=".cache/vjimc-sources")
     args = p.parse_args()
-    raw, final_url = get(ARCHIVE)
-    parser = Anchors()
-    parser.feed(raw.decode("utf-8", errors="replace"))
+    # The historical archive covers editions 1–32; the latest edition
+    # publishes its two category PDFs on the current Results page.
+    pages = [ARCHIVE, CURRENT]
     links = []
-    for href, label in parser.links:
-        url = urllib.parse.urljoin(final_url, href)
+    for page in pages:
+        raw, final_url = get(page)
+        parser = Anchors()
+        parser.feed(raw.decode("utf-8", errors="replace"))
+        for href, label in parser.links:
+            links.append((urllib.parse.urljoin(final_url, href), label, page))
+    collected = []
+    for url, label, page in links:
         parts = urllib.parse.urlsplit(url)
         if parts.hostname not in {"jarnik.osu.cz", "vjimc.osu.cz"}:
             continue
@@ -95,21 +101,21 @@ def main():
                             status="pdf_downloaded_statement_review_pending")
             except Exception as ex:
                 item["download_error"] = str(ex)
-        links.append(item)
+        collected.append(item)
 
     result = {"competition": "Vojtěch Jarník International Mathematical Competition",
               "archive": ARCHIVE, "generated_date": date.today().isoformat(),
               "held_years": YEARS, "years_without_competition": sorted(ABSENT),
-              "files": sorted(links, key=lambda x: (x["year"], x["category"], x["url"])),
+              "files": sorted(collected, key=lambda x: (x["year"], x["category"], x["url"])),
               "caution": "Inventory only. PDFs and statements require individual source checks; no solutions."}
     out = pathlib.Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"{len(links)} linked PDF sources discovered; {len(YEARS)} held years. Output: {out}")
-    missing = sorted(set(YEARS) - {a["year"] for a in links})
+    print(f"{len(collected)} linked PDF sources discovered; {len(YEARS)} held years. Output: {out}")
+    missing = sorted(set(YEARS) - {a["year"] for a in collected})
     if missing:
         print("Years without recognized source links:", missing)
-    return 0 if links else 1
+    return 0 if collected else 1
 
 
 if __name__ == "__main__":
