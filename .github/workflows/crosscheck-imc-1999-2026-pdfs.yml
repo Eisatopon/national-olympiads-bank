@@ -1,0 +1,28 @@
+name: Crosscheck IMC 1999-2026 organizer PDFs
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/crosscheck_imc_1999_2026_pdfs.py
+      - .github/workflows/crosscheck-imc-1999-2026-pdfs.yml
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pymupdf==1.26.5
+      - name: Check 28 years of official PDFs against 294 draft statements
+        run: python scripts/crosscheck_imc_1999_2026_pdfs.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: imc-1999-2026-official-pdf-crosscheck
+          path: staged/imc-1999-2026-pdf-crosscheck/report.json
+          retention-days: 90
+          if-no-files-found: warn
