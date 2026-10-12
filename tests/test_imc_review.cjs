@@ -12,6 +12,7 @@ assert.deepEqual(data.years.map(y => y.year), Array.from({length:33}, (_,i) => 1
 const ids = new Set();
 let count = 0;
 let withLatex = 0;
+let verified = 0;
 for (const year of data.years) {
   assert.equal(year.problems.length, countByYear(year.year), 'Wrong annual count '+year.year);
   assert.deepEqual(year.problems.map(p=>p.number), Array.from({length:countByYear(year.year)},(_,i)=>i+1));
@@ -19,8 +20,17 @@ for (const year of data.years) {
     const id = year.year+':'+p.number;
     assert.ok(!ids.has(id), 'Duplicate '+id); ids.add(id);
     assert.ok(typeof p.problem === 'string' && p.problem.trim().length >= 30, 'Empty '+id);
-    assert.equal(p.statement_verified, false, 'Unverified statement must not be certified: '+id);
-    assert.ok(Array.isArray(p.review_flags) && p.review_flags.length > 0, 'Review required '+id);
+    assert.ok(typeof p.statement_verified === 'boolean', 'Missing verification flag '+id);
+    if (p.statement_verified) {
+      verified++;
+      assert.ok(typeof p.verification_source === 'string' && /^https:\/\//.test(p.verification_source), 'Missing original source '+id);
+      assert.ok(typeof p.verification_method === 'string' && p.verification_method.trim(), 'Missing verification method '+id);
+      assert.ok(Number.isInteger(p.verification_page) && p.verification_page > 0, 'Missing original PDF page '+id);
+      assert.ok(/^\\d{4}-\\d{2}-\\d{2}$/.test(p.verified_on || ''), 'Missing review date '+id);
+      assert.ok(Array.isArray(p.review_flags) && p.review_flags.length === 0, 'Unresolved flags on verified record '+id);
+    } else {
+      assert.ok(Array.isArray(p.review_flags) && p.review_flags.length > 0, 'Unverified record requires review flags '+id);
+    }
     assert.ok(Array.isArray(p.topics) && Array.isArray(p.problem_dna), 'Missing classification arrays '+id);
     assert.equal(p.day, p.number <= countByYear(year.year)/2 ? 1 : 2, 'Incorrect day '+id);
     const url = 'https://studolymp.com/imc/problems/imc-'+year.year+'-d'+p.day+'-p'+
@@ -42,4 +52,4 @@ assert.ok(html.includes("if (key === 'imc') return {"));
 assert.ok(html.includes("c.key === 'imc' ? 354"));
 assert.ok(html.includes("loadCountry('imc')"));
 assert.ok(html.includes("354 statements available in the year grid"));
-console.log('IMC review archive: 33 years, 354 distinct nonempty sourced statements, 350 with LaTeX; all remain unverified.');
+console.log(`IMC review archive: 33 years, 354 sourced statements, 350 with LaTeX; ${verified} original-source-verified, ${count-verified} pending. Publication remains blocked.`);
