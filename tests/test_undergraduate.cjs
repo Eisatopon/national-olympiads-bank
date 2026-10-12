@@ -26,7 +26,7 @@ assert.equal(papers.competitions.length, 41);
 assert.equal(new Set(papers.competitions.map(x => x.competition_id + ':' + x.year)).size, 41);
 for (const paper of papers.competitions) {
   assert.ok(['imc','put'].includes(paper.competition_id));
-  assert.equal(paper.source_rights, 'permission_not_documented');
+  assert.equal(paper.source_rights, paper.competition_id === 'imc' ? 'oral_permission_reported_by_project_owner_2026-10-12_not_independently_verified' : 'permission_not_documented');
   assert.equal(paper.statement_text_imported, false);
   assert.ok(paper.year_page.startsWith('https://'));
 }
@@ -59,7 +59,7 @@ for (const edition of officialIMC) {
     assert.ok(['verified_original','verified_original_visual_review'].includes(day.pdf_read), edition.year);
   }
   assert.equal(edition.statement_text_imported, false);
-  assert.equal(edition.source_rights, 'permission_not_documented');
+  assert.equal(edition.source_rights, 'oral_permission_reported_by_project_owner_2026-10-12_not_independently_verified');
 }
 assert.equal(papers.competitions.filter(x => x.original_exams_verified).length, 10);
 const historical = papers.competitions.filter(x => x.competition_id === 'imc' && x.year >= 1994 && x.year <= 2016).sort((a,b) => a.year - b.year);
@@ -71,7 +71,7 @@ for (const edition of historical) {
   assert.equal(edition.archive_year_page_verified, true, edition.year);
   assert.equal(edition.original_exams_verified, false, edition.year);
   assert.equal(edition.statement_text_imported, false, edition.year);
-  assert.equal(edition.source_rights, 'permission_not_documented', edition.year);
+  assert.equal(edition.source_rights, 'oral_permission_reported_by_project_owner_2026-10-12_not_independently_verified', edition.year);
   assert.ok(edition.year_page.endsWith('year=' + edition.year));
   
   if (combined1990s.has(edition.year)) {
