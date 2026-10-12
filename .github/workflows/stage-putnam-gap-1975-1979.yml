@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - scripts/stage_putnam_gap_1980_1984.py
+      - scripts/stage_putnam_gap_1975_1979.py
       - .github/workflows/stage-putnam-gap-1975-1979.yml
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Download 60 statement candidates
-        run: python scripts/stage_putnam_gap_1980_1984.py
+        run: python scripts/stage_putnam_gap_1975_1979.py
       - name: Verify all five years and exact A1-B6 numbering
         run: |
           python - <<'PY'
