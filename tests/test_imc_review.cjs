@@ -25,6 +25,13 @@ for (const year of data.years) {
       assert.equal(p.verification_source, expectedPdf, 'Incorrect verified source '+id);
       assert.equal(p.statement_verified, true, 'Incomplete five-year source review '+id);
     }
+    if (year.year >= 2024 && year.year <= 2026) {
+      const original = `https://www.imc-math.org.uk/imc${year.year}/imc${year.year}-day${p.day}-questions.pdf`;
+      assert.equal(p.official_pdf_candidate_url, original, 'IMC 2024-2026 source mismatch '+id);
+      assert.equal(p.verification_source, original, 'IMC 2024-2026 verification mismatch '+id);
+      assert.equal(p.verification_page, 1, 'IMC 2024-2026 original PDF page mismatch '+id);
+      assert.equal(p.statement_verified, true, 'IMC 2024-2026 unverified '+id);
+    }
     if (year.year >= 2019 && year.year <= 2023) {
       const pdfFile = year.year === 2022
         ? `imc2022day${p.day}questions.pdf`
