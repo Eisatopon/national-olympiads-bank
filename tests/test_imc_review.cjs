@@ -35,8 +35,8 @@ for (const year of data.years) {
       assert.equal(p.statement_verified, true, 'Incomplete IMC 2014-2018 review '+id);
     }
     if (id === '2015:6') {
-      assert.ok(p.problem.includes('\\\\frac{1}{\\\\sqrt{n}(n+1)}'), '2015/6 divergent square-root transcription');
-      assert.ok(!p.problem.includes('\\\\sqrt{n(n+1)}'), '2015/6 wrong square root');
+      assert.ok(p.problem.includes('\\frac{1}{\\sqrt{n}(n+1)}'), '2015/6 divergent square-root transcription');
+      assert.ok(!p.problem.includes('\\sqrt{n(n+1)}'), '2015/6 wrong square root');
     }
     if (id === '2016:6') {
       assert.ok(p.problem.includes('2^n-1'), '2016/6 omitted exponent');
