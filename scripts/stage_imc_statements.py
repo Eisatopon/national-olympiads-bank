@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 DAY = re.compile(r"^Day\s*([12])$", re.I)
 PROBLEM = re.compile(r"^Problem\s+(\d+)$", re.I)
-STOP = re.compile(r"^(?:Day\\s*[12]|Problem\\s+\\d+|Solutions?|Statistics)$", re.I)
+STOP = re.compile(r"^(?:Day\s*[12]|Problem\s+\d+|Solutions?|Statistics)$", re.I)
 # Based on the actual edition structures, not a uniform assumption.
 EXPECTED_COUNTS = {
     **{y: 12 for y in range(1994, 2009)},
