@@ -68,9 +68,9 @@ def main():
     if not years or min(years) < FIRST or max(years) > LAST:
         ap.error("Years must be in the range 1994–2026")
     a.output.mkdir(parents=True, exist_ok=True)
-    records, errors = [], []
+    records, errors, warnings = [], [], []
 
-    def save(year, label, url, relpath, day=None, number=None):
+    def save(year, label, url, relpath, day=None, number=None, optional=False):
         try:
             final, body = fetch(url)
             path = a.output / relpath
@@ -85,13 +85,14 @@ def main():
             print(f"OK {year} {label} {number or ''} {len(body)} bytes", flush=True)
             return body
         except (OSError, urllib.error.URLError, ValueError, TimeoutError) as e:
-            errors.append({"year": year, "source": label, "url": url, "error": str(e)})
-            print(f"FAIL {year} {label}: {e}", flush=True)
+            target = warnings if optional else errors
+            target.append({"year": year, "source": label, "url": url, "error": str(e)})
+            print(f"{'WARN' if optional else 'FAIL'} {year} {label}: {e}", flush=True)
             return None
 
     for year in years:
         official = "https://www.imc-math.org.uk/?item=problems&year=" + str(year)
-        save(year, "official", official, pathlib.Path(str(year)) / "official.html")
+        save(year, "official", official, pathlib.Path(str(year)) / "official.html", optional=True)
         year_url = f"https://studolymp.com/imc/{year}"
         body = save(year, "studolymp_index", year_url, pathlib.Path(str(year)) / "index.html")
         if body is None:
@@ -116,7 +117,6 @@ def main():
             time.sleep(0.07)
         time.sleep(0.15)
     downloaded = [r for r in records if r["source"] == "studolymp_problem"]
-    full_range = years == list(range(FIRST, LAST+1))
     if len(downloaded) != sum(EXPECTED[y] for y in years):
         errors.append({"source": "count", "expected": sum(EXPECTED[y] for y in years),
                        "actual": len(downloaded)})
@@ -124,12 +124,12 @@ def main():
         "competition": "IMC", "years_requested": years,
         "expected_problem_pages": sum(EXPECTED[y] for y in years),
         "downloaded_problem_pages": len(downloaded),
-        "sources": records, "errors": errors,
+        "sources": records, "errors": errors, "warnings": warnings,
         "status": "RAW_SOURCE_PAGES_ONLY_NOT_VERIFIED"
     }
     (a.output / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"SUMMARY problem pages {len(downloaded)}/{manifest['expected_problem_pages']}; errors {len(errors)}", flush=True)
+    print(f"SUMMARY problem pages {len(downloaded)}/{manifest['expected_problem_pages']}; errors {len(errors)}; official-source warnings {len(warnings)}", flush=True)
     if errors:
         raise SystemExit(1)
 
