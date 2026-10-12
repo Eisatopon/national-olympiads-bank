@@ -99,7 +99,7 @@ def build_manifest():
     The counts must equal what index.html derives from the full file
     (normalizeYears / normalizeUsa)."""
     out = {}
-    for path in sorted(ROOT.glob('*-problems.json')):
+    for path in sorted([*ROOT.glob('*-problems.json'), ROOT / 'undergraduate/Vojtech-Jarnik-problems.json']):
         raw = json.loads(path.read_text(encoding='utf-8'))
         years = {}
         if isinstance(raw.get('data'), dict):  # older USA TSTST schema
@@ -113,7 +113,7 @@ def build_manifest():
                 n = len(y.get('problems') or [])
                 if n:
                     years[str(y['year'])] = years.get(str(y['year']), 0) + n
-        out[path.name] = {'total': sum(years.values()), 'years': years}
+        out[str(path.relative_to(ROOT))] = {'total': sum(years.values()), 'years': years}
     return {'schema_version': 1, 'files': out}
 
 

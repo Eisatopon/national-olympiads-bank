@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "section": "undergraduate",
   "purpose": "Strict, persistent import targets; entries only become public after original statement transcription and classification are verified. Do not substitute source URLs or blank strings for problem statements.",
   "collections": [
@@ -33,12 +33,13 @@
     },
     {
       "id": "vjimc",
-      "file": "Vojtech-Jarnik-problems.json",
+      "file": "undergraduate/Vojtech-Jarnik-problems.json",
       "competition": "Vojtěch Jarník International Mathematical Competition",
       "first_year": 1991,
       "last_archived_year": 2026,
       "identifier_rule": "Keep official Category I/II attached to every problem; never merge same-number questions",
-      "source_registry": "metadata/undergraduate-other-four-sources.json"
+      "source_registry": "metadata/undergraduate-other-four-sources.json",
+      "publication_status": "published_exact_official_statement_facsimiles"
     },
     {
       "id": "smmc",
@@ -79,5 +80,5 @@
     "No unverified original year or problem count",
     "Do not affect National/Regional/International/Tournaments grids"
   ],
-  "state": "specification_only_no_statement_import"
+  "state": "partial_import_vjimc_published"
 }

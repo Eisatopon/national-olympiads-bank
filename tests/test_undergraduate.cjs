@@ -8,8 +8,8 @@ assert.deepEqual(data.records.map(r => r.id), ['put', 'imc', 'seemous', 'vjimc',
 assert.equal(new Set(data.records.map(r => r.id)).size, data.records.length);
 for (const r of data.records) {
   assert.ok(r.name && r.audience && r.geography && r.scope.includes('university'), r.id);
-  assert.equal(r.statements_imported, 0, 'No rights-cleared contest statements imported');
-  assert.equal(r.republication_permission, 'not_established');
+  assert.equal(r.statements_imported, r.id === 'vjimc' ? 261 : 0);
+  assert.equal(r.republication_permission, r.id === 'vjimc' ? 'oral_permission_reported_by_project_owner_2026-10-12' : 'not_established');
   assert.ok(r.paper_structure && r.source_status);
 }
 assert.match(html, /\['undergraduate', 'Undergraduate'\]/);

@@ -33,6 +33,7 @@ jobs:
       - run: node tests/test_undergraduate_other_four.cjs
       - run: node tests/test_undergraduate_import_contract.cjs
       - run: node tests/test_vjimc_source_manifest.cjs
+      - run: node tests/test_vjimc_publication.cjs
       - run: node tests/test_imc_review.cjs
       - run: node tests/test_topics.cjs
       - run: python scripts/validate_topics.py

@@ -434,6 +434,8 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .statement { font: 400 1.08rem/1.75 var(--serif); max-width: 74ch; overflow-wrap: anywhere; }
 .statement .para + .para { margin-top: .6em; }
 .statement .fig { margin: .9em 0; text-align: center; }
+.statement-original{margin:0;background:#fff;border-radius:4px;padding:8px}
+.statement-original img{display:block;width:100%;height:auto;max-width:100%;background:#fff}
 .statement .fig img { max-width: min(100%, 480px); height: auto; background: #fff; border: 1px solid var(--line); }
 mjx-container { margin: .2em 0 !important; }
 mjx-container[display="true"] { margin: .6em 0 !important; overflow-x: auto; overflow-y: hidden; max-width: 100%; }
@@ -632,7 +634,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
                 <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>Undergraduate · 1985–2025 · 492 full problem statements in the year grid, with mathematical LaTeX. Historical completeness and original-PDF fidelity review remain ongoing.</p></article>
                 <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International undergraduate · 1994–2026 · 354 statements available in the year grid. Draft transcriptions: mathematical fidelity against the original IMC PDFs is not yet certified.</p></article>
                 <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · 2007–2026 · 80 problem statements available in the undergraduate archive; interactive integration is pending verification.</p></article>
-                <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>Undergraduate · Two separate contest categories. Problem statements not yet imported.</p></article>
+                <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>Undergraduate · 1991–2026 · 261 original problem statements, including both student categories and the 4-M / 4-I alternatives in 1997–1998.</p></article>
                 <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Undergraduate · Distinct paper variants A, B and C. Problem statements not yet imported.</p></article>
             </div>
             <p class="undergraduate-note">The undergraduate collections follow the same problem-bank principle as the national competitions: searchable statements, year and problem numbers, and no PDF catalogues. IMC and Putnam statements are available as explicitly unverified transcriptions; they must not be treated as certified original text until checked against the official PDFs. The existing national, regional, international and tournament grids are unchanged.</p>
@@ -769,7 +771,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261011-cyprus-pancyprian';
+const DATA_VERSION = '20261012-vjimc-261';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -969,6 +971,7 @@ const COUNTRIES = [
     { key: 'bd', name: 'Bangladesh', flag: '🇧🇩', file: 'Bangladesh-bdmo-problems.json', kind: 'years' },
     { key: 'put', name: 'Putnam', flag: '🎓', file: 'undergraduate/Putnam-1985-2025-review.json', kind: 'years', scope: 'undergraduate' },
     { key: 'imc', name: 'IMC', flag: '🎓', file: 'undergraduate/IMC-1994-2026-review.json', kind: 'years', scope: 'undergraduate' },
+    { key: 'vjimc', name: 'Vojtěch Jarník', flag: '🎓', file: 'undergraduate/Vojtech-Jarnik-problems.json', kind: 'years', scope: 'undergraduate' },
     { key: 'seemous', name: 'SEEMOUS', flag: '🎓', file: 'undergraduate/SEEMOUS-2007-2010-problems.json', kind: 'years', scope: 'undergraduate' },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional' },
@@ -1059,7 +1062,11 @@ function typeset(el) {
 }
 
 const IMG_RE = /(https?:\/\/\S+?)[ \t]*\.(png|jpe?g|gif|webp|svg)\b\.?/gi;
-function bodyHtml(text) {
+function bodyHtml(text, record) {
+    const asset = record && record.statementAsset;
+    if (asset && /^assets\/statements\/vjimc\/\d{4}-(?:I|II)-p\d+(?:[MI])?\.png$/.test(asset.src)) {
+        return `<figure class="statement-original"><a href="${esc(asset.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(asset.src)}" alt="${esc(asset.alt)}" width="${Number(asset.width)}" height="${Number(asset.height)}" loading="lazy" decoding="async"></a></figure>`;
+    }
     let figs = [];
     let s = esc(text).replace(IMG_RE, (m, url, ext) => {
         figs.push(`${url}.${ext}`);
@@ -1115,10 +1122,11 @@ function normalizeYears(country, raw) {
     (raw.years || []).forEach(y => {
         (y.problems || []).forEach((p, i) => {
             const num = p.number ?? (i + 1);
-            const day = p.day ?? null;
+            const day = p.day ?? p.paper_id ?? null;
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
+                paperLabel: p.paper_label || null, statementAsset: p.statement_asset || null,
                 ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || '')
             });
         });
@@ -1183,6 +1191,7 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 
 /* ---------- Manifest: counts without downloading the collections ---------- */
 function manifestYears(key) {
+    if (key === 'vjimc') return {"1991":4,"1992":8,"1993":8,"1994":8,"1995":7,"1996":6,"1997":10,"1998":10,"1999":8,"2000":8,"2001":8,"2002":8,"2003":8,"2004":8,"2005":8,"2006":8,"2007":8,"2008":8,"2009":8,"2010":8,"2011":8,"2012":8,"2013":8,"2014":8,"2015":8,"2016":8,"2017":8,"2018":8,"2019":8,"2022":8,"2024":8,"2025":8,"2026":8};
     if (key === 'put') return {'1985':12,'1986':12,'1987':12,'1988':12,'1989':12,'1990':12,'1991':12,'1992':12,'1993':12,'1994':12,'1995':12,'1996':12,'1997':12,'1998':12,'1999':12,'2000':12,'2001':12,'2002':12,'2003':12,'2004':12,'2005':12,'2006':12,'2007':12,'2008':12,'2009':12,'2010':12,'2011':12,'2012':12,'2013':12,'2014':12,'2015':12,'2016':12,'2017':12,'2018':12,'2019':12,'2020':12,'2021':12,'2022':12,'2023':12,'2024':12,'2025':12};
     if (key === 'imc') return {'1994':12,'1995':12,'1996':12,'1997':12,'1998':12,'1999':12,'2000':12,'2001':12,'2002':12,'2003':12,'2004':12,'2005':12,'2006':12,'2007':12,'2008':12,'2009':10,'2010':10,'2011':10,'2012':10,'2013':10,'2014':10,'2015':10,'2016':10,'2017':10,'2018':10,'2019':10,'2020':8,'2021':8,'2022':8,'2023':10,'2024':10,'2025':10,'2026':10};
     if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4,'2011':4,'2012':4,'2013':4,'2014':4,'2015':4,'2016':4,'2017':4,'2018':4,'2019':4,'2020':4,'2021':4,'2022':4,'2023':4,'2024':4,'2025':4,'2026':4};
@@ -1201,7 +1210,7 @@ function bankTotal() {
 /* "All problems" without filters shows the newest problems first, so only the
    collections that reach the visible page are downloaded. */
 function tabTotal(tab) {
-    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'put' ? 492 : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
+    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'put' ? 492 : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : c.key === 'vjimc' ? 261 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
 }
 function browseTotal() {
     if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
@@ -1284,7 +1293,7 @@ function setTab(tab, keepScope) {
     buildMatrix();
     paintTab();
     renderTabs();
-    if (tab === 'undergraduate') { loadCountry('seemous').catch(() => {}); loadCountry('imc').catch(() => {}); loadCountry('put').catch(() => {}); }
+    if (tab === 'undergraduate') { loadCountry('vjimc').catch(() => {}); loadCountry('seemous').catch(() => {}); loadCountry('imc').catch(() => {}); loadCountry('put').catch(() => {}); }
     $('.mx-wrap').scrollTop = 0;
     if (!keepScope) { state.country = null; state.year = null; limit = PAGE; refresh(); }
 }
@@ -1518,7 +1527,11 @@ function syncFilters() {
     const days = [...new Set(list.map(p => p.day).filter(d => d !== null))].sort((a, b) => a - b);
     const dcounts = {}; days.forEach(d => dcounts[d] = base.filter(p => p.day === d).length);
     const partial = browseTotal();
-    const dayOpts = [['all', 'All', partial || base.length]].concat(days.map(d => [String(d), 'Day ' + d, dcounts[d]]));
+    const dayLabel = d => {
+        const labels = new Set(list.filter(p => p.day === d).map(p => p.paperLabel || 'Day ' + d));
+        return labels.size === 1 ? [...labels][0] : 'Day / Paper ' + d;
+    };
+    const dayOpts = [['all', 'All', partial || base.length]].concat(days.map(d => [String(d), dayLabel(d), dcounts[d]]));
     $('#dayChips').closest('div').style.display = days.length ? '' : 'none';
     $('#dayChips').innerHTML = dayOpts.map(([v, l, n]) => `<button type="button" class="chip" data-day="${v}" aria-pressed="${state.day === v}">${l}${partial && v !== 'all' ? '' : `<span class="n">${n}</span>`}</button>`).join('');
 
@@ -1653,14 +1666,14 @@ function relatedProblems(source, candidates) {
 function relatedCard(item) {
     const p = item.problem, country = CBY[p.country];
     const reason = item.methods.length ? 'Shared techniques: ' + item.methods.map(t => problemDna.techniques[t]).join(', ') : 'Shared concepts: ' + item.shared.map(conceptLabel).join(', ');
-    return `<article class="related-card"><h3>${esc(country.name)} ${p.year}${p.day ? `, Day ${p.day}` : ''}, #${esc(p.num)}</h3><p>${esc(reason)}</p>
-        <div class="statement">${bodyHtml(p.text)}</div><div class="ex-actions"><button type="button" class="btn btn-sm" data-open-problem="${esc(p.uid)}">Open problem</button><button type="button" class="btn btn-sm" data-toggle-uid="${esc(p.uid)}" aria-pressed="${selected.includes(p.uid)}">Add / remove from my set</button></div></article>`;
+    return `<article class="related-card"><h3>${esc(country.name)} ${p.year}${p.paperLabel ? `, ${esc(p.paperLabel)}` : p.day ? `, Day ${p.day}` : ''}, #${esc(p.num)}</h3><p>${esc(reason)}</p>
+        <div class="statement">${bodyHtml(p.text, p)}</div><div class="ex-actions"><button type="button" class="btn btn-sm" data-open-problem="${esc(p.uid)}">Open problem</button><button type="button" class="btn btn-sm" data-toggle-uid="${esc(p.uid)}" aria-pressed="${selected.includes(p.uid)}">Add / remove from my set</button></div></article>`;
 }
 let relatedToken = 0;
 async function showRelated(uid) {
     const source = byUid.get(uid); if (!source) return;
     const token = ++relatedToken, dialog = $('#relatedDialog');
-    $('#relatedTitle').textContent = `${CBY[source.country].name} ${source.year}, #${source.num} — Connections`;
+    $('#relatedTitle').textContent = `${CBY[source.country].name} ${source.year}${source.paperLabel ? ", " + source.paperLabel : ""}, #${source.num} — Connections`;
     $('#relatedContent').textContent = 'Finding related problems…';
     if (!dialog.open) dialog.showModal();
     await loadAll();
@@ -1695,7 +1708,7 @@ function problemHtml(p) {
         <div class="p-head">
             <div class="p-id">
                 <span class="p-num">${esc(p.num)}</span>
-                <span class="p-meta">${c.flag} ${c.name} ${p.year}${p.day ? `, Day ${p.day}` : ''}</span>
+                <span class="p-meta">${c.flag} ${c.name} ${p.year}${p.paperLabel ? `, ${esc(p.paperLabel)}` : p.day ? `, Day ${p.day}` : ''}</span>
                 ${p.topic ? `<span class="p-tag">${esc(p.topic)}</span>` : ''}
             </div>
             <div class="p-actions">
@@ -1706,7 +1719,7 @@ function problemHtml(p) {
             </button>
             </div>
         </div>
-        <div class="statement">${bodyHtml(p.text)}</div>
+        <div class="statement">${bodyHtml(p.text, p)}</div>
         ${provenanceHtml(p)}
         ${dnaHtml(p)}
     </article>`;
@@ -1829,7 +1842,7 @@ function renderExam() {
         ? `<ol class="ex-list">${items.map((p, i) => `
             <li class="ex-item f-${p.country}">
                 <span class="ex-n">${i + 1}</span>
-                <div class="ex-t"><strong>${CBY[p.country].flag} ${CBY[p.country].name} ${p.year}, #${esc(p.num)}</strong><span>${p.day ? `Day ${p.day}` : ''}${p.topic ? (p.day ? ', ' : '') + esc(p.topic) : ''}</span></div>
+                <div class="ex-t"><strong>${CBY[p.country].flag} ${CBY[p.country].name} ${p.year}, #${esc(p.num)}</strong><span>${p.paperLabel ? esc(p.paperLabel) : p.day ? `Day ${p.day}` : ''}${p.topic ? (p.day ? ', ' : '') + esc(p.topic) : ''}</span></div>
                 <div class="ex-ctl">
                     <button type="button" class="icon-btn" data-up="${p.uid}" aria-label="Move up: item ${i + 1}" ${i === 0 ? 'disabled' : ''}>${ICON.up}</button>
                     <button type="button" class="icon-btn" data-down="${p.uid}" aria-label="Move down: item ${i + 1}" ${i === items.length - 1 ? 'disabled' : ''}>${ICON.down}</button>
@@ -1930,8 +1943,8 @@ function renderPrintSheet() {
             <section class="ps-item">
                 <div class="ps-num">${i + 1}.</div>
                 <div class="ps-body">
-                    ${showSrc ? `<p class="ps-src">${CBY[p.country].name} ${p.year}${p.day ? `, Day ${p.day}` : ''}, Problem ${esc(p.num)}${p.topic ? ` (${esc(p.topic)})` : ''}</p>` : ''}
-                    <div class="statement">${bodyHtml(p.text)}</div>
+                    ${showSrc ? `<p class="ps-src">${CBY[p.country].name} ${p.year}${p.paperLabel ? `, ${esc(p.paperLabel)}` : p.day ? `, Day ${p.day}` : ''}, Problem ${esc(p.num)}${p.topic ? ` (${esc(p.topic)})` : ''}</p>` : ''}
+                    <div class="statement">${bodyHtml(p.text, p)}</div>
                     ${showSrc ? provenanceHtml(p, true) : ''}
                     ${$('#solutionSpace').value !== '0' ? `<div class="solution-space" style="height:${Number($('#solutionSpace').value)}mm" aria-label="Space for solution"></div>` : ''}
                 </div>
@@ -1984,7 +1997,11 @@ async function copyLink() {
 /* ---------- ChatGPT handoff; no API calls or solution storage ---------- */
 function aiPrompt(p, request) {
     const c = CBY[p.country];
-    const label = `${c.name} ${p.year}${p.day ? `, Day / Test ${p.day}` : ''}, problem ${p.num}`;
+    const label = `${c.name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day / Test ${p.day}` : ''}, problem ${p.num}`;
+    if (p.statementAsset && /^assets\/statements\/vjimc\//.test(p.statementAsset.src)) {
+        const imageUrl = new URL(p.statementAsset.src, typeof location !== 'undefined' ? location.href : 'https://eisatopon.github.io/national-olympiads-bank/').href;
+        return `${request || 'Give a rigorous mathematical solution with clear explanations and standard LaTeX. Preserve every hypothesis. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\nRead the complete original statement from this image, including all formulas: ${imageUrl}\n\nIf you cannot access the image, ask me to upload it before attempting the problem. Do not infer or invent any formulas.`;
+    }
     const figure = /https?:\/\/\S+\.(?:png|jpe?g|gif|webp)\b/i.test(p.text);
     return `${request || 'Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\n${p.text}` +
         (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');

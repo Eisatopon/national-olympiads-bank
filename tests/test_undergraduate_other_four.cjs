@@ -22,5 +22,5 @@ assert.ok(seemous.find(x=>x.year===2024).question_pdf.includes('SEEMOUS_2024_Con
 assert.ok(seemous.find(x=>x.year===2026).source_page.includes('cms.org.cy'));
 assert.ok(seemous.find(x=>x.year_range==='2007–2025').source_kind.includes('collection'));
 assert.equal(registry.records.filter(x=>x.competition_id==='imc').length,1);
-assert.ok(registry.records.every(x=>x.statement_imported===false));
+assert.ok(registry.records.every(x=>x.statement_imported===(x.competition_id==='vjimc')));
 console.log('All four university competition source registries verified for structure and paper identity.');
