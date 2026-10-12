@@ -1,0 +1,38 @@
+name: Collect Putnam original TeX sources
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/collect-putnam-sources.yml'
+      - 'scripts/fetch_putnam_tex.py'
+
+permissions:
+  contents: read
+
+jobs:
+  archive-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch 41 year-specific Putnam problem TeX files
+        id: fetch
+        continue-on-error: true
+        run: python scripts/fetch_putnam_tex.py --output putnam-original-tex
+      - name: Preserve original source archive and manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: putnam-1985-2025-tex-archive
+          path: putnam-original-tex/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Fail on missing originals
+        if: steps.fetch.outcome != 'success'
+        run: |
+          echo "Putnam original-source download incomplete. Read manifest.json in artifact." >&2
+          exit 1
