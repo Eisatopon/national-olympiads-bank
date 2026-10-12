@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/collect-imc-sources.yml'
       - 'scripts/fetch_imc_sources.py'
+      - 'scripts/stage_imc_statements.py'
 
 permissions:
   contents: read
@@ -23,6 +24,22 @@ jobs:
         id: fetch
         continue-on-error: true
         run: python scripts/fetch_imc_sources.py --output imc-source-archive
+      - name: Install parsing dependency
+        if: steps.fetch.outcome == 'success'
+        run: python -m pip install beautifulsoup4==4.13.4
+      - name: Stage candidate statements from annual pages
+        if: steps.fetch.outcome == 'success'
+        id: stage
+        continue-on-error: true
+        run: python scripts/stage_imc_statements.py --archive imc-source-archive --output imc-review/unverified-candidates.json
+      - name: Upload review-only JSON
+        if: steps.stage.outcome == 'success' || steps.stage.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: imc-statement-candidates-NOT-VERIFIED
+          path: imc-review/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload source archive and integrity manifest
         if: always()
         uses: actions/upload-artifact@v4
@@ -35,4 +52,9 @@ jobs:
         if: steps.fetch.outcome != 'success'
         run: |
           echo 'Some IMC source pages failed to download. Inspect the manifest artifact.' >&2
+          exit 1
+      - name: Fail when statement staging is incomplete
+        if: steps.fetch.outcome == 'success' && steps.stage.outcome != 'success'
+        run: |
+          echo 'IMC candidate extraction incomplete: inspect review artifact and logs.' >&2
           exit 1
