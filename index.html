@@ -1181,6 +1181,7 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 
 /* ---------- Manifest: counts without downloading the collections ---------- */
 function manifestYears(key) {
+    if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4};
     const m = manifest && manifest.files && manifest.files[CBY[key].file];
     return m ? m.years : null;
 }
@@ -1196,7 +1197,7 @@ function bankTotal() {
 /* "All problems" without filters shows the newest problems first, so only the
    collections that reach the visible page are downloaded. */
 function tabTotal(tab) {
-    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
+    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'seemous' ? 16 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
 }
 function browseTotal() {
     if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
@@ -1225,7 +1226,7 @@ let gridBtns = [];
 
 function buildMatrix() {
     const mx = $('#mx');
-    if (state.tab === 'undergraduate') { mx.innerHTML = ''; refreshGrid(); return; }
+    // Undergraduate collections use the same searchable grid as other sections.
     mx.style.setProperty('--cols', LAST - FIRST + 1);
     let html = '<div class="mx-row mx-years"><span class="corner"></span>';
     for (let y = LAST; y >= FIRST; y--) {
@@ -1272,13 +1273,14 @@ function setTab(tab, keepScope) {
     if (tab === state.tab) return;
     state.tab = tab;
     document.querySelector('#undergraduateSources').hidden = tab !== 'undergraduate';
-    document.querySelector('.mx-wrap').hidden = tab === 'undergraduate';
-    document.querySelector('#main').hidden = tab === 'undergraduate';
-    document.querySelector('.mx-head').hidden = tab === 'undergraduate';
+    document.querySelector('.mx-wrap').hidden = false;
+    document.querySelector('#main').hidden = false;
+    document.querySelector('.mx-head').hidden = false;
     if (gridFilter) { gridFilter = ''; const inp = $('#mxFind'); if (inp) inp.value = ''; $('#mxFindClear').hidden = true; }
     buildMatrix();
     paintTab();
     renderTabs();
+    if (tab === 'undergraduate') loadCountry('seemous').catch(() => {});
     $('.mx-wrap').scrollTop = 0;
     if (!keepScope) { state.country = null; state.year = null; limit = PAGE; refresh(); }
 }
