@@ -18,6 +18,11 @@ for (const year of data.years) {
   assert.deepEqual(year.problems.map(p=>p.number), Array.from({length:countByYear(year.year)},(_,i)=>i+1));
   for (const p of year.problems) {
     const id = year.year+':'+p.number;
+    if (year.year >= 2004 && year.year <= 2008) {
+      const expectedDay = p.number <= 6 ? 1 : 2;
+      const officialCandidate = `https://www.imc-math.org.uk/imc${year.year}/day${expectedDay}_solutions.pdf`;
+      assert.equal(p.official_pdf_candidate_url, officialCandidate, 'Misassigned IMC official PDF candidate '+id);
+    }
     assert.ok(!ids.has(id), 'Duplicate '+id); ids.add(id);
     assert.ok(typeof p.problem === 'string' && p.problem.trim().length >= 30, 'Empty '+id);
     assert.ok(typeof p.statement_verified === 'boolean', 'Missing verification flag '+id);
