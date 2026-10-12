@@ -18,7 +18,7 @@ for edition in manifest['editions']:
             p=subprocess.run(['pdftotext','-layout',str(pdf),'-'],capture_output=True,text=True,timeout=15)
             if p.returncode: raise ValueError('pdftotext_error')
             t=p.stdout
-        cats=[c for c in ['I','II'] if ('Category '+c+'\\n') in t or ('Category '+c+' ') in t]
+        cats=[c for c in ['I','II'] if ('Category '+c+'\n') in t or ('Category '+c+' ') in t]
         record.update(status='pdf_text_extracted',categories_found=cats,raw_bytes=len(raw),text_chars=len(t),
           pdf_problem_word_occurrences=t.lower().count('problem'))
     except Exception as e:
