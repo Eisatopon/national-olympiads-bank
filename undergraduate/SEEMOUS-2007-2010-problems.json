@@ -1,0 +1,89 @@
+{
+  "competition": "SEEMOUS (South Eastern European Mathematical Olympiad for University Students)",
+  "years": [
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a\\in(0,1)\\cap\\mathbb{Q}$ have decimal representation $a=0.a_1a_2a_3\\ldots$. Define $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n$ for $x\\in(0,1)$. Prove that $f_a$ is a rational function $P(x)/Q(x)$, where $P,Q$ are polynomials with integer coefficients. Conversely, if $a_k\\in\\{0,1,\\ldots,9\\}$ for every positive integer $k$ and $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n=P(x)/Q(x)$ for $x\\in(0,1)$, where $P,Q$ have integer coefficients, prove that $a=0.a_1a_2a_3\\ldots$ is rational."
+        },
+        {
+          "number": 2,
+          "problem": "For $x=(x_1,\\ldots,x_n)^T\\in\\mathbb{R}^n$, let $f(x)=\\max_{1\\le i\\le n}|x_i|$. Let $A$ be an $n\\times n$ matrix such that $f(Ax)=f(x)$ for every $x\\in\\mathbb{R}^n$. Prove that there is a positive integer $m$ such that $A^m=I_n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $F$ be a field and $P:F\\times F\\to F$ a function such that, for every $x_0\\in F$, the function $y\\mapsto P(x_0,y)$ is a polynomial in $y$, and for every $y_0\\in F$, the function $x\\mapsto P(x,y_0)$ is a polynomial in $x$. Must $P$ be a polynomial in $x$ and $y$ when (a) $F=\\mathbb{Q}$, the field of rational numbers; (b) $F$ is a finite field? Prove your claims."
+        },
+        {
+          "number": 4,
+          "problem": "For $x\\in\\mathbb{R}$, $y\\ge0$ and $n\\in\\mathbb{Z}$, let $w_n(x,y)\\in[0,\\pi)$ be the angle (in radians) under which the segment from $(n,0)$ to $(n+y,0)$ is seen from $(x,1)\\in\\mathbb{R}^2$. (a) Prove that $\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$ converges for every $x\\in\\mathbb{R}$ and $y\\ge0$. Writing $w(x,y)=\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$, prove $w(x,y)\\le(\\lfloor y\\rfloor+1)\\pi$. (b) Prove that for every $\\varepsilon>0$ there exists $\\delta>0$ such that $0<y<\\delta$ implies $w(x,y)<\\varepsilon$ for all $x\\in\\mathbb{R}$. (c) Prove that $w:\\mathbb{R}\\times[0,\\infty)\\to[0,\\infty)$ is continuous."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f:[1,\\infty)\\to(0,\\infty)$ be continuous. Assume that for every $a>0$, the equation $f(x)=ax$ has at least one solution in $[1,\\infty)$. (a) Prove that for every $a>0$, the equation $f(x)=ax$ has infinitely many solutions. (b) Give an example of a strictly increasing continuous function $f$ with these properties."
+        },
+        {
+          "number": 2,
+          "problem": "Let $P_0,P_1,P_2,\\ldots$ be a sequence of convex polygons such that, for each $k\\ge0$, the vertices of $P_{k+1}$ are the midpoints of all sides of $P_k$. Prove that there exists a unique point lying inside all these polygons."
+        },
+        {
+          "number": 3,
+          "problem": "Let $M_n(\\mathbb{R})$ denote the set of real $n\\times n$ matrices. Find all surjective functions $f:M_n(\\mathbb{R})\\to\\{0,1,\\ldots,n\\}$ satisfying $f(XY)\\le\\min\\{f(X),f(Y)\\}$ for all $X,Y\\in M_n(\\mathbb{R})$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be a positive integer and $f:[0,1]\\to\\mathbb{R}$ a continuous function such that $\\int_0^1x^kf(x)\\,dx=1$ for every $k\\in\\{0,1,\\ldots,n-1\\}$. Prove that $\\int_0^1(f(x))^2\\,dx\\ge n^2$."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(a) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^n x^k\\,dx$, where $k\\in\\mathbb{N}$. (b) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nf(x)\\,dx$, where $f:[0,1]\\to\\mathbb{R}$ is continuous."
+        },
+        {
+          "number": 2,
+          "problem": "Let $P$ be a real polynomial of degree five. Assume that the graph of $P$ has three inflection points lying on a straight line. Calculate the ratios of the areas of the bounded regions between this line and the graph of $P$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $SL_2(\\mathbb{Z})=\\{A: A\\text{ is a }2\\times2\\text{ integer matrix and }\\det A=1\\}$. (a) Find matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^2+B^2=C^2$. (b) Show that there are no matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^4+B^4=C^4$."
+        },
+        {
+          "number": 4,
+          "problem": "Given real numbers $a_1,\\ldots,a_n$ and $b_1,\\ldots,b_n$, define $n\\times n$ matrices $A=(a_{ij})$ and $B=(b_{ij})$ by $a_{ij}=a_i-b_j$ and $b_{ij}=1$ if $a_{ij}\\ge0$, while $b_{ij}=0$ if $a_{ij}<0$. Let $C=(c_{ij})$ be an $n\\times n$ matrix with entries in $\\{0,1\\}$ and with the same row and column sums as $B$: $\\sum_jb_{ij}=\\sum_jc_{ij}$ for every $i$, and $\\sum_ib_{ij}=\\sum_ic_{ij}$ for every $j$. Prove that (a) $\\sum_{i,j=1}^n a_{ij}(b_{ij}-c_{ij})=0$ and $B=C$; (b) $B$ is invertible if and only if there exist permutations $\\sigma,\\tau$ of $\\{1,\\ldots,n\\}$ such that $b_{\\tau(1)}\\le a_{\\sigma(1)}<b_{\\tau(2)}\\le a_{\\sigma(2)}<\\cdots\\le a_{\\sigma(n-1)}<b_{\\tau(n)}\\le a_{\\sigma(n)}$."
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f_0:[0,1]\\to\\mathbb{R}$ be continuous. Define $f_n:[0,1]\\to\\mathbb{R}$ for integers $n\\ge1$ by $f_n(x)=\\int_0^x f_{n-1}(t)\\,dt$. (a) Prove that $\\sum_{n=1}^{\\infty}f_n(x)$ converges for every $x\\in[0,1]$. (b) Find an explicit formula for this sum."
+        },
+        {
+          "number": 2,
+          "problem": "Inside a square consider circles such that the sum of their circumferences is twice the perimeter of the square. (a) Find the minimum number of circles having this property. (b) Prove that there exist infinitely many lines which intersect at least three of these circles."
+        },
+        {
+          "number": 3,
+          "problem": "Let $M_2(\\mathbb{R})$ be the set of $2\\times2$ real matrices. Prove that (a) for every $A\\in M_2(\\mathbb{R})$ there are $B,C\\in M_2(\\mathbb{R})$ such that $A=B^2+C^2$; (b) there do not exist commuting matrices $B,C\\in M_2(\\mathbb{R})$ such that $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=B^2+C^2$."
+        },
+        {
+          "number": 4,
+          "problem": "Suppose $A$ and $B$ are $n\\times n$ matrices with integer entries and $\\det B\\ne0$. Prove that there exists $m\\in\\mathbb{N}$ such that $AB^{-1}=\\sum_{k=1}^m N_k^{-1}$, where $N_1,\\ldots,N_m$ are pairwise distinct $n\\times n$ integer matrices (with inverses as displayed)."
+        }
+      ]
+    }
+  ]
+}
