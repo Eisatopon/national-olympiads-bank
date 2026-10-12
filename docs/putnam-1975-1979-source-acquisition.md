@@ -49,3 +49,8 @@ corroborated, but cannot yet be counted as original-page verified.
 - Finding aid explicitly says material is remotely stored; contact archive in advance. Ask whether readable scans of 1975–1979 A/B original exam sheets can be supplied, under what fee and use conditions.
 - Do **not** use UT Libraries general 'Get a Scan' form for Briscoe archival materials: https://lib.utexas.edu/find-borrow/get-a-scan expressly excludes the Briscoe Center.
 - Status: **user confirmed request sent on 2026-10-12** to the archival contact; awaiting response. All 60 original-page comparisons still pending.
+
+## Archival correspondence status — 2026-10-12
+- **Automatic acknowledgment received** from the Briscoe Center: reading room hours Monday–Friday 10:00–17:00; remote research assistance offered; reference staff will respond separately.
+- **Not yet received:** original 1975–1979 exam scans, cost quotation, page access confirmation, or reproduction authorization.
+- **Next action:** assess a substantive reference-staff response and obtain authorized readable examination A/B copies before fidelity verification.
