@@ -1,0 +1,52 @@
+name: Stage Putnam 1975-1979 statements
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/stage_putnam_gap_1980_1984.py
+      - .github/workflows/stage-putnam-gap-1975-1979.yml
+permissions:
+  contents: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download 60 statement candidates
+        run: python scripts/stage_putnam_gap_1980_1984.py
+      - name: Verify all five years and exact A1-B6 numbering
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("undergraduate/Putnam-1975-1979-raw-review.json")
+          a=json.loads(p.read_text(encoding="utf-8"))
+          expected=[s+str(i) for s in "AB" for i in range(1,7)]
+          assert [y["year"] for y in a["years"]]==list(range(1975,1980))
+          assert a["problem_count"]==60 and a["publication_eligible"] is False
+          assert not a["errors"]
+          for y in a["years"]:
+              assert [x["number"] for x in y["problems"]]==expected
+              for x in y["problems"]:
+                  assert len(x["problem"])>=35
+                  assert x["statement_verified"] is False
+                  assert x["review_flags"]
+                  assert "solution" not in x
+          print("Putnam 1975-1979: 60/60 source-linked records staged; none certified.")
+          PY
+      - name: Archive raw records for independent checking
+        uses: actions/upload-artifact@v4
+        with:
+          name: putnam-1975-1979-60-statement-review
+          path: undergraduate/Putnam-1975-1979-raw-review.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit staged review file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add undergraduate/Putnam-1975-1979-raw-review.json
+          git diff --cached --quiet || (git commit -m "Stage Putnam 1975-1979 review statements" && git push)
