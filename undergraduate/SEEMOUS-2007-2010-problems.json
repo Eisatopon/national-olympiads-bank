@@ -451,15 +451,11 @@
         },
         {
           "number": 2,
-          "problem": "Let $a_n>0$ for $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2,\\triangle A_0A_2A_3,\\ldots,\\triangle A_0A_{n-1}A_n,\\ldots$ as follows. For every $n\\ge2$, the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$, with right angle $\\angle A_0A_nA_{n+1}$; the vertices $A_{n-1}$ and $A_{n+1}$ lie on opposite sides of the line $A_0A_n$; and $|A_{n-1}A_n|=a_n$ for all $n\\ge1$. Is it possible that the set $\\{A_n:n\\ge0\\}$ is unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ converges? Here $m(\\angle ABC)$ denotes the measure of the angle $ABC$. A set in the plane is bounded if it is contained in some disk.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending",
-            "source_collection_located_original_page_not_yet_ascertained",
-            "source_diagram_not_embedded_in_problem_record"
-          ],
+          "problem": "Let $a_n>0$ for $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2,\\triangle A_0A_2A_3,\\ldots,\\triangle A_0A_{n-1}A_n,\\ldots$ as follows. For every $n\\ge2$, the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$, with right angle $\\angle A_0A_nA_{n+1}$; the vertices $A_{n-1}$ and $A_{n+1}$ lie on opposite sides of the line $A_0A_n$; and $|A_{n-1}A_n|=a_n$ for all $n\\ge1$. Is it possible that the set $\\{A_n:n\\ge0\\}$ is unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ converges? Here $m(\\angle ABC)$ denotes the measure of the angle $ABC$. A set in the plane is bounded if it is contained in some disk.\n\nDiagram (schematic reconstruction, not a facsimile of the published figure): https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/assets/figures/seemous-2012-p2.svg",
+          "statement_verified": true,
+          "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "statement_and_original_diagram_compared; supplementary_figure_is_schematic",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -468,7 +464,13 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "source_figure_pdf_page": 16
+          "source_figure_pdf_page": 16,
+          "verification_source": "https://journals.azbuki.bg/mathinfo/seemous-olympiad-for-university-students/pdf",
+          "verification_page": 2,
+          "verification_method": "Visually compared problem 2 statement and original diagram in 2012 peer-reviewed SEEMOUS report, page 107; reconstructed a separately labeled editable schematic SVG; original drawing is not reproduced verbatim",
+          "verified_on": "2026-10-12",
+          "figure_asset": "assets/figures/seemous-2012-p2.svg",
+          "figure_provenance": "Schematic reconstruction from Grozdev and Nenkov, Mathematics and Informatics 55(2) 2012, page 107, not a facsimile"
         },
         {
           "number": 3,
