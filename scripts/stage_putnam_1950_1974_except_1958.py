@@ -15,7 +15,7 @@ OWNER_REPO = "YurenHao0426/PutnamGAP"
 TREE_URL = f"https://api.github.com/repos/{OWNER_REPO}/git/trees/main?recursive=1"
 RAW = f"https://raw.githubusercontent.com/{OWNER_REPO}/main/"
 YEARS = [*range(1950, 1958), *range(1959, 1975)]  # 1958 spring/fall separately audited
-PATTERN = re.compile(r"^dataset/(19(?:3[89]|4[0-9]))-([A-Z])-(\d+)\.json$")
+PATTERN = re.compile(r"^dataset/(19(?:5[0-9]|6[0-9]|7[0-4]))-([A-Z])-(\d+)\.json$")
 
 def get(url):
     req = urllib.request.Request(url, headers={
