@@ -36,6 +36,9 @@ vm.runInContext(html.slice(html.indexOf('function textHash('),html.indexOf('func
 vm.runInContext(html.slice(html.indexOf('const IMG_RE ='),html.indexOf('/* ==========================================================\n   Φόρτωση')),ctx);
 vm.runInContext(html.slice(html.indexOf('function aiPrompt('),html.indexOf('function aiUrl(')),ctx);
 const list=ctx.normalizeYears({key:'vjimc'},raw);assert.equal(list.length,261);assert.equal(new Set(list.map(p=>p.uid)).size,261);
+assert.equal(list.find(p=>p.year===2026&&p.day===1&&p.num===1).topic,'Algebra');
+assert.equal(list.find(p=>p.year===2026&&p.day===2&&p.num===2).topic,'Algebra');
+assert.equal(list.find(p=>p.year===2026&&p.day===1&&p.num===3).topic,'Geometry');
 const p=list.find(p=>p.year===2026&&p.day===2&&p.num===4);
 assert.equal(p.paperLabel,'Category II');assert.match(ctx.bodyHtml(p.text,p),/statement-original/);
 assert.match(ctx.bodyHtml(p.text,p),/2026-II-p4\.png/);assert.doesNotMatch(ctx.bodyHtml(p.text,p),/\bProblem 4 Let/);
