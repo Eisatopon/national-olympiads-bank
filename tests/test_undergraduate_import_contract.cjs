@@ -22,7 +22,7 @@ for(const c of v.collections){
    // Guard all imported full statements against accidental truncation and broken TeX.
    const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
    assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
-   assert.equal(problems.filter(p=>p.statement_verified).length,36,'SEEMOUS source-review count changed unexpectedly');
+   assert.equal(problems.filter(p=>p.statement_verified).length,59,'SEEMOUS source-review count changed unexpectedly');
    const p2025_2 = problems.find(p=>p.year===2025&&p.number===2);
    assert.ok(p2025_2.problem.includes('\\sqrt[n]{e^x-1-\\frac{x}{1!}'), '2025/2 must preserve original radical expression');
    assert.ok(!p2025_2.problem.includes('\\frac{e^x-1-'), '2025/2 spurious radical denominator reintroduced');
@@ -41,9 +41,13 @@ for(const c of v.collections){
        assert.equal(p.statement_verified,true,'Compiled contest paper comparison missing '+id);
        assert.ok(p.verification_source === 'User-supplied Seemous-2007-2025.pdf' || (p.year===2009 && p.verification_source==='https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf' || p.year===2010 && p.verification_source==='https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf'),'Missing contest compilation provenance '+id);
        assert.ok(p.verification_page>0&&p.review_flags.length===0,'Incomplete reviewed page metadata '+id);
+     }else if (p.year>=2012 && p.year<=2017 && !(p.year===2012&&p.number===2)){
+       assert.equal(p.statement_verified,true,'SEEMOUS 2012-2017 source review missing '+id);
+       assert.ok(p.verification_source && p.verification_page>=1 && p.review_flags.length===0,'Incomplete SEEMOUS 2012-2017 provenance '+id);
      }else{
        assert.equal(p.statement_verified,false,'Unverified original marked verified '+id);
        assert.ok(p.review_flags.includes('original_official_paper_statement_visual_comparison_pending'),'Missing pending review flag '+id);
+       if (p.year===2012&&p.number===2) assert.ok(p.review_flags.includes('source_diagram_not_embedded_in_problem_record'),'2012 P2 geometry figure must be retained '+id);
      }
    }
 
