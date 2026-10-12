@@ -6,19 +6,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $a\\in(0,1)\\cap\\mathbb{Q}$ have decimal representation $a=0.a_1a_2a_3\\ldots$. Define $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n$ for $x\\in(0,1)$. Prove that $f_a$ is a rational function $P(x)/Q(x)$, where $P,Q$ are polynomials with integer coefficients. Conversely, if $a_k\\in\\{0,1,\\ldots,9\\}$ for every positive integer $k$ and $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n=P(x)/Q(x)$ for $x\\in(0,1)$, where $P,Q$ have integer coefficients, prove that $a=0.a_1a_2a_3\\ldots$ is rational."
+          "problem": "Let $a\\in(0,1)\\cap\\mathbb{Q}$ have decimal representation $a=0.a_1a_2a_3\\ldots$. Define $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n$ for $x\\in(0,1)$. Prove that $f_a$ is a rational function $P(x)/Q(x)$, where $P,Q$ are polynomials with integer coefficients. Conversely, if $a_k\\in\\{0,1,\\ldots,9\\}$ for every positive integer $k$ and $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n=P(x)/Q(x)$ for $x\\in(0,1)$, where $P,Q$ have integer coefficients, prove that $a=0.a_1a_2a_3\\ldots$ is rational.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "For $x=(x_1,\\ldots,x_n)^T\\in\\mathbb{R}^n$, let $f(x)=\\max_{1\\le i\\le n}|x_i|$. Let $A$ be an $n\\times n$ matrix such that $f(Ax)=f(x)$ for every $x\\in\\mathbb{R}^n$. Prove that there is a positive integer $m$ such that $A^m=I_n$."
+          "problem": "For $x=(x_1,\\ldots,x_n)^T\\in\\mathbb{R}^n$, let $f(x)=\\max_{1\\le i\\le n}|x_i|$. Let $A$ be an $n\\times n$ matrix such that $f(Ax)=f(x)$ for every $x\\in\\mathbb{R}^n$. Prove that there is a positive integer $m$ such that $A^m=I_n$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $F$ be a field and $P:F\\times F\\to F$ a function such that, for every $x_0\\in F$, the function $y\\mapsto P(x_0,y)$ is a polynomial in $y$, and for every $y_0\\in F$, the function $x\\mapsto P(x,y_0)$ is a polynomial in $x$. Must $P$ be a polynomial in $x$ and $y$ when (a) $F=\\mathbb{Q}$, the field of rational numbers; (b) $F$ is a finite field? Prove your claims."
+          "problem": "Let $F$ be a field and $P:F\\times F\\to F$ a function such that, for every $x_0\\in F$, the function $y\\mapsto P(x_0,y)$ is a polynomial in $y$, and for every $y_0\\in F$, the function $x\\mapsto P(x,y_0)$ is a polynomial in $x$. Must $P$ be a polynomial in $x$ and $y$ when (a) $F=\\mathbb{Q}$, the field of rational numbers; (b) $F$ is a finite field? Prove your claims.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "For $x\\in\\mathbb{R}$, $y\\ge0$ and $n\\in\\mathbb{Z}$, let $w_n(x,y)\\in[0,\\pi)$ be the angle (in radians) under which the segment from $(n,0)$ to $(n+y,0)$ is seen from $(x,1)\\in\\mathbb{R}^2$. (a) Prove that $\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$ converges for every $x\\in\\mathbb{R}$ and $y\\ge0$. Writing $w(x,y)=\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$, prove $w(x,y)\\le(\\lfloor y\\rfloor+1)\\pi$. (b) Prove that for every $\\varepsilon>0$ there exists $\\delta>0$ such that $0<y<\\delta$ implies $w(x,y)<\\varepsilon$ for all $x\\in\\mathbb{R}$. (c) Prove that $w:\\mathbb{R}\\times[0,\\infty)\\to[0,\\infty)$ is continuous."
+          "problem": "For $x\\in\\mathbb{R}$, $y\\ge0$ and $n\\in\\mathbb{Z}$, let $w_n(x,y)\\in[0,\\pi)$ be the angle (in radians) under which the segment from $(n,0)$ to $(n+y,0)$ is seen from $(x,1)\\in\\mathbb{R}^2$. (a) Prove that $\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$ converges for every $x\\in\\mathbb{R}$ and $y\\ge0$. Writing $w(x,y)=\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$, prove $w(x,y)\\le(\\lfloor y\\rfloor+1)\\pi$. (b) Prove that for every $\\varepsilon>0$ there exists $\\delta>0$ such that $0<y<\\delta$ implies $w(x,y)<\\varepsilon$ for all $x\\in\\mathbb{R}$. (c) Prove that $w:\\mathbb{R}\\times[0,\\infty)\\to[0,\\infty)$ is continuous.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -27,19 +43,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[1,\\infty)\\to(0,\\infty)$ be continuous. Assume that for every $a>0$, the equation $f(x)=ax$ has at least one solution in $[1,\\infty)$. (a) Prove that for every $a>0$, the equation $f(x)=ax$ has infinitely many solutions. (b) Give an example of a strictly increasing continuous function $f$ with these properties."
+          "problem": "Let $f:[1,\\infty)\\to(0,\\infty)$ be continuous. Assume that for every $a>0$, the equation $f(x)=ax$ has at least one solution in $[1,\\infty)$. (a) Prove that for every $a>0$, the equation $f(x)=ax$ has infinitely many solutions. (b) Give an example of a strictly increasing continuous function $f$ with these properties.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $P_0,P_1,P_2,\\ldots$ be a sequence of convex polygons such that, for each $k\\ge0$, the vertices of $P_{k+1}$ are the midpoints of all sides of $P_k$. Prove that there exists a unique point lying inside all these polygons."
+          "problem": "Let $P_0,P_1,P_2,\\ldots$ be a sequence of convex polygons such that, for each $k\\ge0$, the vertices of $P_{k+1}$ are the midpoints of all sides of $P_k$. Prove that there exists a unique point lying inside all these polygons.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $M_n(\\mathbb{R})$ denote the set of real $n\\times n$ matrices. Find all surjective functions $f:M_n(\\mathbb{R})\\to\\{0,1,\\ldots,n\\}$ satisfying $f(XY)\\le\\min\\{f(X),f(Y)\\}$ for all $X,Y\\in M_n(\\mathbb{R})$."
+          "problem": "Let $M_n(\\mathbb{R})$ denote the set of real $n\\times n$ matrices. Find all surjective functions $f:M_n(\\mathbb{R})\\to\\{0,1,\\ldots,n\\}$ satisfying $f(XY)\\le\\min\\{f(X),f(Y)\\}$ for all $X,Y\\in M_n(\\mathbb{R})$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $n$ be a positive integer and $f:[0,1]\\to\\mathbb{R}$ a continuous function such that $\\int_0^1x^kf(x)\\,dx=1$ for every $k\\in\\{0,1,\\ldots,n-1\\}$. Prove that $\\int_0^1(f(x))^2\\,dx\\ge n^2$."
+          "problem": "Let $n$ be a positive integer and $f:[0,1]\\to\\mathbb{R}$ a continuous function such that $\\int_0^1x^kf(x)\\,dx=1$ for every $k\\in\\{0,1,\\ldots,n-1\\}$. Prove that $\\int_0^1(f(x))^2\\,dx\\ge n^2$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -48,19 +80,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "(a) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^n x^k\\,dx$, where $k\\in\\mathbb{N}$. (b) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nf(x)\\,dx$, where $f:[0,1]\\to\\mathbb{R}$ is continuous."
+          "problem": "(a) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^n x^k\\,dx$, where $k\\in\\mathbb{N}$. (b) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nf(x)\\,dx$, where $f:[0,1]\\to\\mathbb{R}$ is continuous.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $P$ be a real polynomial of degree five. Assume that the graph of $P$ has three inflection points lying on a straight line. Calculate the ratios of the areas of the bounded regions between this line and the graph of $P$."
+          "problem": "Let $P$ be a real polynomial of degree five. Assume that the graph of $P$ has three inflection points lying on a straight line. Calculate the ratios of the areas of the bounded regions between this line and the graph of $P$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $SL_2(\\mathbb{Z})=\\{A: A\\text{ is a }2\\times2\\text{ integer matrix and }\\det A=1\\}$. (a) Find matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^2+B^2=C^2$. (b) Show that there are no matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^4+B^4=C^4$."
+          "problem": "Let $SL_2(\\mathbb{Z})=\\{A: A\\text{ is a }2\\times2\\text{ integer matrix and }\\det A=1\\}$. (a) Find matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^2+B^2=C^2$. (b) Show that there are no matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^4+B^4=C^4$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Given real numbers $a_1,\\ldots,a_n$ and $b_1,\\ldots,b_n$, define $n\\times n$ matrices $A=(a_{ij})$ and $B=(b_{ij})$ by $a_{ij}=a_i-b_j$ and $b_{ij}=1$ if $a_{ij}\\ge0$, while $b_{ij}=0$ if $a_{ij}<0$. Let $C=(c_{ij})$ be an $n\\times n$ matrix with entries in $\\{0,1\\}$ and with the same row and column sums as $B$: $\\sum_jb_{ij}=\\sum_jc_{ij}$ for every $i$, and $\\sum_ib_{ij}=\\sum_ic_{ij}$ for every $j$. Prove that (a) $\\sum_{i,j=1}^n a_{ij}(b_{ij}-c_{ij})=0$ and $B=C$; (b) $B$ is invertible if and only if there exist permutations $\\sigma,\\tau$ of $\\{1,\\ldots,n\\}$ such that $b_{\\tau(1)}\\le a_{\\sigma(1)}<b_{\\tau(2)}\\le a_{\\sigma(2)}<\\cdots\\le a_{\\sigma(n-1)}<b_{\\tau(n)}\\le a_{\\sigma(n)}$."
+          "problem": "Given real numbers $a_1,\\ldots,a_n$ and $b_1,\\ldots,b_n$, define $n\\times n$ matrices $A=(a_{ij})$ and $B=(b_{ij})$ by $a_{ij}=a_i-b_j$ and $b_{ij}=1$ if $a_{ij}\\ge0$, while $b_{ij}=0$ if $a_{ij}<0$. Let $C=(c_{ij})$ be an $n\\times n$ matrix with entries in $\\{0,1\\}$ and with the same row and column sums as $B$: $\\sum_jb_{ij}=\\sum_jc_{ij}$ for every $i$, and $\\sum_ib_{ij}=\\sum_ic_{ij}$ for every $j$. Prove that (a) $\\sum_{i,j=1}^n a_{ij}(b_{ij}-c_{ij})=0$ and $B=C$; (b) $B$ is invertible if and only if there exist permutations $\\sigma,\\tau$ of $\\{1,\\ldots,n\\}$ such that $b_{\\tau(1)}\\le a_{\\sigma(1)}<b_{\\tau(2)}\\le a_{\\sigma(2)}<\\cdots\\le a_{\\sigma(n-1)}<b_{\\tau(n)}\\le a_{\\sigma(n)}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -69,19 +117,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f_0:[0,1]\\to\\mathbb{R}$ be continuous. Define $f_n:[0,1]\\to\\mathbb{R}$ for integers $n\\ge1$ by $f_n(x)=\\int_0^x f_{n-1}(t)\\,dt$. (a) Prove that $\\sum_{n=1}^{\\infty}f_n(x)$ converges for every $x\\in[0,1]$. (b) Find an explicit formula for this sum."
+          "problem": "Let $f_0:[0,1]\\to\\mathbb{R}$ be continuous. Define $f_n:[0,1]\\to\\mathbb{R}$ for integers $n\\ge1$ by $f_n(x)=\\int_0^x f_{n-1}(t)\\,dt$. (a) Prove that $\\sum_{n=1}^{\\infty}f_n(x)$ converges for every $x\\in[0,1]$. (b) Find an explicit formula for this sum.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Inside a square consider circles such that the sum of their circumferences is twice the perimeter of the square. (a) Find the minimum number of circles having this property. (b) Prove that there exist infinitely many lines which intersect at least three of these circles."
+          "problem": "Inside a square consider circles such that the sum of their circumferences is twice the perimeter of the square. (a) Find the minimum number of circles having this property. (b) Prove that there exist infinitely many lines which intersect at least three of these circles.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $M_2(\\mathbb{R})$ be the set of $2\\times2$ real matrices. Prove that (a) for every $A\\in M_2(\\mathbb{R})$ there are $B,C\\in M_2(\\mathbb{R})$ such that $A=B^2+C^2$; (b) there do not exist commuting matrices $B,C\\in M_2(\\mathbb{R})$ such that $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=B^2+C^2$."
+          "problem": "Let $M_2(\\mathbb{R})$ be the set of $2\\times2$ real matrices. Prove that (a) for every $A\\in M_2(\\mathbb{R})$ there are $B,C\\in M_2(\\mathbb{R})$ such that $A=B^2+C^2$; (b) there do not exist commuting matrices $B,C\\in M_2(\\mathbb{R})$ such that $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=B^2+C^2$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Suppose $A$ and $B$ are $n\\times n$ matrices with integer entries and $\\det B\\ne0$. Prove that there exists $m\\in\\mathbb{N}$ such that $AB^{-1}=\\sum_{k=1}^m N_k^{-1}$, where $N_1,\\ldots,N_m$ are pairwise distinct $n\\times n$ integer matrices (with inverses as displayed)."
+          "problem": "Suppose $A$ and $B$ are $n\\times n$ matrices with integer entries and $\\det B\\ne0$. Prove that there exists $m\\in\\mathbb{N}$ such that $AB^{-1}=\\sum_{k=1}^m N_k^{-1}$, where $N_1,\\ldots,N_m$ are pairwise distinct $n\\times n$ integer matrices (with inverses as displayed).",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -90,19 +154,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "For a given integer $n\\ge 1$, let $f:[0,1]\\to\\mathbb R$ be a non-decreasing function. Prove that $\\int_0^1 f(x)\\,dx\\le (n+1)\\int_0^1 x^n f(x)\\,dx$. Find all non-decreasing continuous functions for which equality holds."
+          "problem": "For a given integer $n\\ge 1$, let $f:[0,1]\\to\\mathbb R$ be a non-decreasing function. Prove that $\\int_0^1 f(x)\\,dx\\le (n+1)\\int_0^1 x^n f(x)\\,dx$. Find all non-decreasing continuous functions for which equality holds.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $A=(a_{ij})$ be a real $n\\times n$ matrix such that $A^n\\ne 0$ and $a_{ij}a_{ji}\\le 0$ for all $i,j$. Prove that there exist two nonreal numbers among the eigenvalues of $A$."
+          "problem": "Let $A=(a_{ij})$ be a real $n\\times n$ matrix such that $A^n\\ne 0$ and $a_{ij}a_{ji}\\le 0$ for all $i,j$. Prove that there exist two nonreal numbers among the eigenvalues of $A$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Given vectors $a,b,c\\in\\mathbb R^n$, show that $(\\|a\\|\\langle b,c\\rangle)^2+(\\|b\\|\\langle a,c\\rangle)^2\\le \\|a\\|\\|b\\|\\bigl(\\|a\\|\\|b\\|+|\\langle a,b\\rangle|\\bigr)\\|c\\|^2$, where $\\langle x,y\\rangle$ denotes the inner product and $\\|x\\|^2=\\langle x,x\\rangle$."
+          "problem": "Given vectors $a,b,c\\in\\mathbb R^n$, show that $(\\|a\\|\\langle b,c\\rangle)^2+(\\|b\\|\\langle a,c\\rangle)^2\\le \\|a\\|\\|b\\|\\bigl(\\|a\\|\\|b\\|+|\\langle a,b\\rangle|\\bigr)\\|c\\|^2$, where $\\langle x,y\\rangle$ denotes the inner product and $\\|x\\|^2=\\langle x,x\\rangle$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $f:[0,1]\\to\\mathbb R$ be a twice continuously differentiable increasing function. Define $L_n=\\frac1n\\sum_{k=0}^{n-1}f\\!\\left(\\frac kn\\right)$ and $U_n=\\frac1n\\sum_{k=1}^{n}f\\!\\left(\\frac kn\\right)$, $n\\ge1$. The interval $[L_n,U_n]$ is divided into three equal segments. Prove that, for sufficiently large $n$, the number $I=\\int_0^1 f(x)\\,dx$ belongs to the middle one of these three segments."
+          "problem": "Let $f:[0,1]\\to\\mathbb R$ be a twice continuously differentiable increasing function. Define $L_n=\\frac1n\\sum_{k=0}^{n-1}f\\!\\left(\\frac kn\\right)$ and $U_n=\\frac1n\\sum_{k=1}^{n}f\\!\\left(\\frac kn\\right)$, $n\\ge1$. The interval $[L_n,U_n]$ is divided into three equal segments. Prove that, for sufficiently large $n$, the number $I=\\int_0^1 f(x)\\,dx$ belongs to the middle one of these three segments.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -111,19 +191,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A=(a_{ij})$ be the $n\\times n$ matrix where $a_{ij}$ is the remainder upon division of $i^j+j^i$ by $3$, for $i,j=1,2,\\ldots,n$. Find the greatest $n$ for which $\\det A\\ne0$."
+          "problem": "Let $A=(a_{ij})$ be the $n\\times n$ matrix where $a_{ij}$ is the remainder upon division of $i^j+j^i$ by $3$, for $i,j=1,2,\\ldots,n$. Find the greatest $n$ for which $\\det A\\ne0$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $a_n>0$ for $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2,\\triangle A_0A_2A_3,\\ldots,\\triangle A_0A_{n-1}A_n,\\ldots$ as follows. For every $n\\ge2$, the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$, with right angle $\\angle A_0A_nA_{n+1}$; the vertices $A_{n-1}$ and $A_{n+1}$ lie on opposite sides of the line $A_0A_n$; and $|A_{n-1}A_n|=a_n$ for all $n\\ge1$. Is it possible that the set $\\{A_n:n\\ge0\\}$ is unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ converges? Here $m(\\angle ABC)$ denotes the measure of the angle $ABC$. A set in the plane is bounded if it is contained in some disk."
+          "problem": "Let $a_n>0$ for $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2,\\triangle A_0A_2A_3,\\ldots,\\triangle A_0A_{n-1}A_n,\\ldots$ as follows. For every $n\\ge2$, the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$, with right angle $\\angle A_0A_nA_{n+1}$; the vertices $A_{n-1}$ and $A_{n+1}$ lie on opposite sides of the line $A_0A_n$; and $|A_{n-1}A_n|=a_n$ for all $n\\ge1$. Is it possible that the set $\\{A_n:n\\ge0\\}$ is unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ converges? Here $m(\\angle ABC)$ denotes the measure of the angle $ABC$. A set in the plane is bounded if it is contained in some disk.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "(a) Prove that if $k$ is an even positive integer and $A$ is a real symmetric $n\\times n$ matrix satisfying $(\\operatorname{Tr}(A^k))^{k+1}=(\\operatorname{Tr}(A^{k+1}))^k$, then $A^n=\\operatorname{Tr}(A)A^{n-1}$. (b) Does the assertion in (a) also hold for odd positive integers $k$?"
+          "problem": "(a) Prove that if $k$ is an even positive integer and $A$ is a real symmetric $n\\times n$ matrix satisfying $(\\operatorname{Tr}(A^k))^{k+1}=(\\operatorname{Tr}(A^{k+1}))^k$, then $A^n=\\operatorname{Tr}(A)A^{n-1}$. (b) Does the assertion in (a) also hold for odd positive integers $k$?",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "(a) Compute $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n\\,dx$. (b) Let $k\\ge1$ be an integer. Compute $\\displaystyle\\lim_{n\\to\\infty}n^{k+1}\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n x^k\\,dx$."
+          "problem": "(a) Compute $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n\\,dx$. (b) Let $k\\ge1$ be an integer. Compute $\\displaystyle\\lim_{n\\to\\infty}n^{k+1}\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n x^k\\,dx$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -132,19 +228,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find all continuous functions $f:[1,8]\\to\\mathbb R$ such that $\\displaystyle\\int_1^2 f^2(t^3)\\,dt+2\\int_1^2 f(t^3)\\,dt=\\frac23\\int_1^8 f(t)\\,dt-\\int_1^2(t^2-1)^2\\,dt$."
+          "problem": "Find all continuous functions $f:[1,8]\\to\\mathbb R$ such that $\\displaystyle\\int_1^2 f^2(t^3)\\,dt+2\\int_1^2 f(t^3)\\,dt=\\frac23\\int_1^8 f(t)\\,dt-\\int_1^2(t^2-1)^2\\,dt$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $M,N\\in M_2(\\mathbb C)$ be two nonzero matrices such that $M^2=N^2=0_2$ and $MN+NM=I_2$, where $0_2$ is the $2\\times2$ zero matrix and $I_2$ the $2\\times2$ identity matrix. Prove that there is an invertible matrix $A\\in M_2(\\mathbb C)$ such that $M=A\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}A^{-1}$ and $N=A\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}A^{-1}$."
+          "problem": "Let $M,N\\in M_2(\\mathbb C)$ be two nonzero matrices such that $M^2=N^2=0_2$ and $MN+NM=I_2$, where $0_2$ is the $2\\times2$ zero matrix and $I_2$ the $2\\times2$ identity matrix. Prove that there is an invertible matrix $A\\in M_2(\\mathbb C)$ such that $M=A\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}A^{-1}$ and $N=A\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}A^{-1}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Find the maximum value of $\\displaystyle\\int_0^1|f'(x)|^2|f(x)|\\frac{1}{\\sqrt{x}}\\,dx$ over all continuously differentiable functions $f:[0,1]\\to\\mathbb R$ with $f(0)=0$ and $\\displaystyle\\int_0^1|f'(x)|^2\\,dx\\le1$."
+          "problem": "Find the maximum value of $\\displaystyle\\int_0^1|f'(x)|^2|f(x)|\\frac{1}{\\sqrt{x}}\\,dx$ over all continuously differentiable functions $f:[0,1]\\to\\mathbb R$ with $f(0)=0$ and $\\displaystyle\\int_0^1|f'(x)|^2\\,dx\\le1$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $A\\in M_2(\\mathbb Q)$ be such that there is a positive integer $n$ with $A^n=-I_2$. Prove that either $A^2=-I_2$ or $A^3=-I_2$."
+          "problem": "Let $A\\in M_2(\\mathbb Q)$ be such that there is a positive integer $n$ with $A^n=-I_2$. Prove that either $A^2=-I_2$ or $A^3=-I_2$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -153,19 +265,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $n$ be a nonzero natural number and let $f:\\mathbb R\\to\\mathbb R\\setminus\\{0\\}$ be a function such that $f(2014)=1-f(2013)$. Let $x_1,x_2,\\ldots,x_n$ be pairwise distinct real numbers. If $\\displaystyle\\det\\begin{pmatrix}1+f(x_1)&f(x_2)&\\cdots&f(x_n)\\\\f(x_1)&1+f(x_2)&\\cdots&f(x_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\f(x_1)&f(x_2)&\\cdots&1+f(x_n)\\end{pmatrix}=0$, prove that $f$ is not continuous."
+          "problem": "Let $n$ be a nonzero natural number and let $f:\\mathbb R\\to\\mathbb R\\setminus\\{0\\}$ be a function such that $f(2014)=1-f(2013)$. Let $x_1,x_2,\\ldots,x_n$ be pairwise distinct real numbers. If $\\displaystyle\\det\\begin{pmatrix}1+f(x_1)&f(x_2)&\\cdots&f(x_n)\\\\f(x_1)&1+f(x_2)&\\cdots&f(x_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\f(x_1)&f(x_2)&\\cdots&1+f(x_n)\\end{pmatrix}=0$, prove that $f$ is not continuous.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Consider the sequence $(x_n)$ given by $x_1=2$ and $\\displaystyle x_{n+1}=\\frac{x_n+1+\\sqrt{x_n^2+2x_n+5}}2$ for $n\\ge2$. Prove that the sequence $\\displaystyle y_n=\\sum_{k=1}^n\\frac1{x_k^2-1}$, $n\\ge1$, is convergent and find its limit. (The recurrence index $n\\ge2$ is reproduced as printed in the source.)"
+          "problem": "Consider the sequence $(x_n)$ given by $x_1=2$ and $\\displaystyle x_{n+1}=\\frac{x_n+1+\\sqrt{x_n^2+2x_n+5}}2$ for $n\\ge2$. Prove that the sequence $\\displaystyle y_n=\\sum_{k=1}^n\\frac1{x_k^2-1}$, $n\\ge1$, is convergent and find its limit. (The recurrence index $n\\ge2$ is reproduced as printed in the source.)",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ and $a\\in\\mathbb C$, $a\\ne0$, be such that $A-A^*=2aI_n$, where $A^*=(\\overline A)^t$ and $\\overline A$ is the complex conjugate of $A$. (a) Show that $|\\det A|\\ge|a|^n$. (b) Show that if $|\\det A|=|a|^n$, then $A=aI_n$."
+          "problem": "Let $A\\in M_n(\\mathbb C)$ and $a\\in\\mathbb C$, $a\\ne0$, be such that $A-A^*=2aI_n$, where $A^*=(\\overline A)^t$ and $\\overline A$ is the complex conjugate of $A$. (a) Show that $|\\det A|\\ge|a|^n$. (b) Show that if $|\\det A|=|a|^n$, then $A=aI_n$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "(a) Prove that $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx=\\frac\\pi2$. (b) Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx-\\frac\\pi2\\right)$."
+          "problem": "(a) Prove that $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx=\\frac\\pi2$. (b) Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx-\\frac\\pi2\\right)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -174,19 +302,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Prove that for every $x\\in(0,1)$, $\\displaystyle\\int_0^1\\sqrt{1+\\cos^2 y}\\,dy>\\sqrt{x^2+\\sin^2 x}$."
+          "problem": "Prove that for every $x\\in(0,1)$, $\\displaystyle\\int_0^1\\sqrt{1+\\cos^2 y}\\,dy>\\sqrt{x^2+\\sin^2 x}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "For each positive integer $n$, let $f_n:\\mathbb R\\to\\mathbb R$ be defined by $f_{n+1}(x)=f_1(f_n(x))$, where $f_1(x)=3x-4x^3$. Solve the equation $f_n(x)=0$."
+          "problem": "For each positive integer $n$, let $f_n:\\mathbb R\\to\\mathbb R$ be defined by $f_{n+1}(x)=f_1(f_n(x))$, where $f_1(x)=3x-4x^3$. Solve the equation $f_n(x)=0$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "For an integer $n>2$, let $A,B,C,D\\in M_n(\\mathbb R)$ satisfy $AC-BD=I_n$ and $AD+BC=O_n$, where $I_n$ and $O_n$ denote the identity and zero matrices. Prove that (a) $CA-DB=I_n$ and $DA+CB=O_n$; (b) $\\det(AC)\\ge0$ and $(-1)^n\\det(BD)\\ge0$."
+          "problem": "For an integer $n>2$, let $A,B,C,D\\in M_n(\\mathbb R)$ satisfy $AC-BD=I_n$ and $AD+BC=O_n$, where $I_n$ and $O_n$ denote the identity and zero matrices. Prove that (a) $CA-DB=I_n$ and $DA+CB=O_n$; (b) $\\det(AC)\\ge0$ and $(-1)^n\\det(BD)\\ge0$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $I\\subset\\mathbb R$ be an open interval containing $0$, and let $f:I\\to\\mathbb R$ be of class $C^{2016}(I)$ with $f(0)=0$, $f'(0)=1$, $f''(0)=f'''(0)=\\cdots=f^{(2015)}(0)=0$, and $f^{(2016)}(0)<0$. (i) Prove that there exists $\\delta>0$ such that $0<f(x)<x$ for every $x\\in(0,\\delta)$. (ii) With $\\delta$ as in (i), define $a_1=\\delta/2$ and $a_{n+1}=f(a_n)$ for $n\\ge1$. Study the convergence of $\\sum_{n=1}^\\infty a_n^r$ for real $r$."
+          "problem": "Let $I\\subset\\mathbb R$ be an open interval containing $0$, and let $f:I\\to\\mathbb R$ be of class $C^{2016}(I)$ with $f(0)=0$, $f'(0)=1$, $f''(0)=f'''(0)=\\cdots=f^{(2015)}(0)=0$, and $f^{(2016)}(0)<0$. (i) Prove that there exists $\\delta>0$ such that $0<f(x)<x$ for every $x\\in(0,\\delta)$. (ii) With $\\delta$ as in (i), define $a_1=\\delta/2$ and $a_{n+1}=f(a_n)$ for $n\\ge1$. Study the convergence of $\\sum_{n=1}^\\infty a_n^r$ for real $r$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -195,19 +339,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f$ be a continuous decreasing real-valued function on $[0,\\pi/2]$. Prove $\\int_{\\pi/2-1}^{\\pi/2}f(x)\\,dx\\le\\int_0^{\\pi/2}f(x)\\cos x\\,dx\\le\\int_0^1f(x)\\,dx$. When does equality hold?"
+          "problem": "Let $f$ be a continuous decreasing real-valued function on $[0,\\pi/2]$. Prove $\\int_{\\pi/2-1}^{\\pi/2}f(x)\\,dx\\le\\int_0^{\\pi/2}f(x)\\cos x\\,dx\\le\\int_0^1f(x)\\,dx$. When does equality hold?",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "(a) Prove that for every $X\\in M_2(\\mathbb C)$ there is $Y\\in M_2(\\mathbb C)$ such that $Y^3=X^2$. (b) Prove that there exists $A\\in M_3(\\mathbb C)$ such that $Z^3\\ne A^2$ for every $Z\\in M_3(\\mathbb C)$."
+          "problem": "(a) Prove that for every $X\\in M_2(\\mathbb C)$ there is $Y\\in M_2(\\mathbb C)$ such that $Y^3=X^2$. (b) Prove that there exists $A\\in M_3(\\mathbb C)$ such that $Z^3\\ne A^2$ for every $Z\\in M_3(\\mathbb C)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A_1,\\ldots,A_k\\in M_n(\\mathbb R)$ be idempotent matrices ($A_i^2=A_i$). Prove $\\sum_{i=1}^kN(A_i)\\ge\\operatorname{rank}(I_n-\\prod_{i=1}^k A_i)$, where $N(A_i)=n-\\operatorname{rank}(A_i)$."
+          "problem": "Let $A_1,\\ldots,A_k\\in M_n(\\mathbb R)$ be idempotent matrices ($A_i^2=A_i$). Prove $\\sum_{i=1}^kN(A_i)\\ge\\operatorname{rank}(I_n-\\prod_{i=1}^k A_i)$, where $N(A_i)=n-\\operatorname{rank}(A_i)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "For $n\\ge1$ put $I_n=\\int_0^\\infty\\frac{\\arctan x}{(1+x^2)^n}\\,dx$. Prove (a) $\\sum_{n=1}^\\infty\\frac{I_n}{n}=\\frac{\\pi^2}{6}$; (b) $\\int_0^\\infty\\arctan x\\ln(1+1/x^2)\\,dx=\\frac{\\pi^2}{6}$."
+          "problem": "For $n\\ge1$ put $I_n=\\int_0^\\infty\\frac{\\arctan x}{(1+x^2)^n}\\,dx$. Prove (a) $\\sum_{n=1}^\\infty\\frac{I_n}{n}=\\frac{\\pi^2}{6}$; (b) $\\int_0^\\infty\\arctan x\\ln(1+1/x^2)\\,dx=\\frac{\\pi^2}{6}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -216,19 +376,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in M_2(\\mathbb R)$ satisfy $a^2+b^2+c^2+d^2<\\frac15$. Prove that $I_2+A$ is invertible."
+          "problem": "Let $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in M_2(\\mathbb R)$ satisfy $a^2+b^2+c^2+d^2<\\frac15$. Prove that $I_2+A$ is invertible.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb R)$. (a) Prove that there exists $a>0$ such that for every $\\varepsilon\\in(-a,a)\\setminus\\{0\\}$, the matrix equation $AX+\\varepsilon X=B$, $X\\in M_n(\\mathbb R)$, has a unique solution $X(\\varepsilon)$. (b) Prove that if $B^2=I_n$ and $A$ is diagonalizable, then $\\displaystyle\\lim_{\\varepsilon\\to0}\\varepsilon\\operatorname{Tr}(BX(\\varepsilon))=n-\\operatorname{rank}A$."
+          "problem": "Let $A,B\\in M_n(\\mathbb R)$. (a) Prove that there exists $a>0$ such that for every $\\varepsilon\\in(-a,a)\\setminus\\{0\\}$, the matrix equation $AX+\\varepsilon X=B$, $X\\in M_n(\\mathbb R)$, has a unique solution $X(\\varepsilon)$. (b) Prove that if $B^2=I_n$ and $A$ is diagonalizable, then $\\displaystyle\\lim_{\\varepsilon\\to0}\\varepsilon\\operatorname{Tr}(BX(\\varepsilon))=n-\\operatorname{rank}A$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous. Prove that $\\displaystyle\\int_0^4 f(x(x-3)^2)\\,dx=2\\int_1^3 f(x(x-3)^2)\\,dx$."
+          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous. Prove that $\\displaystyle\\int_0^4 f(x(x-3)^2)\\,dx=2\\int_1^3 f(x(x-3)^2)\\,dx$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "(a) For an integer $n\\ge0$, calculate $\\displaystyle\\int_0^1(1-t)^ne^t\\,dt$. (b) For a fixed integer $k\\ge0$, let $\\displaystyle x_n=\\sum_{i=k}^n\\binom ik\\left(e-1-\\frac1{1!}-\\frac1{2!}-\\cdots-\\frac1{i!}\\right)$ for $n\\ge k$. Prove that $(x_n)$ converges and find its limit."
+          "problem": "(a) For an integer $n\\ge0$, calculate $\\displaystyle\\int_0^1(1-t)^ne^t\\,dt$. (b) For a fixed integer $k\\ge0$, let $\\displaystyle x_n=\\sum_{i=k}^n\\binom ik\\left(e-1-\\frac1{1!}-\\frac1{2!}-\\cdots-\\frac1{i!}\\right)$ for $n\\ge k$. Prove that $(x_n)$ converges and find its limit.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -237,19 +413,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[0,1]\\to(0,1)$ be a Riemann integrable function. Prove that $\\displaystyle\\frac{2\\int_0^1xf(x)^2\\,dx}{\\int_0^1(f(x)^2+1)\\,dx}<\\frac{\\int_0^1f(x)^2\\,dx}{\\int_0^1f(x)\\,dx}$."
+          "problem": "Let $f:[0,1]\\to(0,1)$ be a Riemann integrable function. Prove that $\\displaystyle\\frac{2\\int_0^1xf(x)^2\\,dx}{\\int_0^1(f(x)^2+1)\\,dx}<\\frac{\\int_0^1f(x)^2\\,dx}{\\int_0^1f(x)\\,dx}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $m,n,p,q\\ge1$ be integers and $A\\in M_{m,n}(\\mathbb R)$, $B\\in M_{n,p}(\\mathbb R)$, $C\\in M_{p,q}(\\mathbb R)$, $D\\in M_{q,m}(\\mathbb R)$ satisfy $A^t=BCD$, $B^t=CDA$, $C^t=DAB$, and $D^t=ABC$. Prove that $(ABCD)^2=ABCD$."
+          "problem": "Let $m,n,p,q\\ge1$ be integers and $A\\in M_{m,n}(\\mathbb R)$, $B\\in M_{n,p}(\\mathbb R)$, $C\\in M_{p,q}(\\mathbb R)$, $D\\in M_{q,m}(\\mathbb R)$ satisfy $A^t=BCD$, $B^t=CDA$, $C^t=DAB$, and $D^t=ABC$. Prove that $(ABCD)^2=ABCD$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A,B\\in M_{2018}(\\mathbb R)$ satisfy $AB=BA$ and $A^{2018}=B^{2018}=I$. Prove that if $\\operatorname{Tr}(AB)=2018$, then $\\operatorname{Tr}A=\\operatorname{Tr}B$."
+          "problem": "Let $A,B\\in M_{2018}(\\mathbb R)$ satisfy $AB=BA$ and $A^{2018}=B^{2018}=I$. Prove that if $\\operatorname{Tr}(AB)=2018$, then $\\operatorname{Tr}A=\\operatorname{Tr}B$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "(a) Let $f:\\mathbb R\\to\\mathbb R$ be a polynomial function. Prove that $\\displaystyle\\int_0^\\infty e^{-x}f(x)\\,dx=f(0)+f'(0)+f''(0)+\\cdots$. (b) Let $f$ have a Taylor series at $0$ with infinite radius of convergence. Prove that if $\\sum_{n=0}^\\infty f^{(n)}(0)$ converges absolutely, then $\\int_0^\\infty e^{-x}f(x)\\,dx$ converges and $\\displaystyle\\sum_{n=0}^\\infty f^{(n)}(0)=\\int_0^\\infty e^{-x}f(x)\\,dx$."
+          "problem": "(a) Let $f:\\mathbb R\\to\\mathbb R$ be a polynomial function. Prove that $\\displaystyle\\int_0^\\infty e^{-x}f(x)\\,dx=f(0)+f'(0)+f''(0)+\\cdots$. (b) Let $f$ have a Taylor series at $0$ with infinite radius of convergence. Prove that if $\\sum_{n=0}^\\infty f^{(n)}(0)$ converges absolutely, then $\\int_0^\\infty e^{-x}f(x)\\,dx$ converges and $\\displaystyle\\sum_{n=0}^\\infty f^{(n)}(0)=\\int_0^\\infty e^{-x}f(x)\\,dx$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -258,19 +450,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Call a sequence $(x_n)$ a \"Devin\" sequence if $0\\le x_n\\le1$ and, for every $f\\in C[0,1]$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nf(x_i)=\\int_0^1f(x)\\,dx$. Prove that $(x_n)$ is a Devin sequence if and only if, for every integer $k\\ge0$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nx_i^k=\\frac1{k+1}$."
+          "problem": "Call a sequence $(x_n)$ a \"Devin\" sequence if $0\\le x_n\\le1$ and, for every $f\\in C[0,1]$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nf(x_i)=\\int_0^1f(x)\\,dx$. Prove that $(x_n)$ is a Devin sequence if and only if, for every integer $k\\ge0$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nx_i^k=\\frac1{k+1}$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $m,n$ be positive integers. Prove that for every $A_1,\\ldots,A_m\\in M_n(\\mathbb R)$ there exist $\\varepsilon_1,\\ldots,\\varepsilon_m\\in\\{-1,1\\}$ such that $\\displaystyle\\operatorname{Tr}\\left((\\varepsilon_1A_1+\\cdots+\\varepsilon_mA_m)^2\\right)\\ge\\operatorname{Tr}(A_1^2)+\\cdots+\\operatorname{Tr}(A_m^2)$."
+          "problem": "Let $m,n$ be positive integers. Prove that for every $A_1,\\ldots,A_m\\in M_n(\\mathbb R)$ there exist $\\varepsilon_1,\\ldots,\\varepsilon_m\\in\\{-1,1\\}$ such that $\\displaystyle\\operatorname{Tr}\\left((\\varepsilon_1A_1+\\cdots+\\varepsilon_mA_m)^2\\right)\\ge\\operatorname{Tr}(A_1^2)+\\cdots+\\operatorname{Tr}(A_m^2)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $n\\ge2$ and $A,B\\in M_n(\\mathbb C)$ with $B^2=B$. Prove that $\\operatorname{rank}(AB-BA)\\le\\operatorname{rank}(AB+BA)$."
+          "problem": "Let $n\\ge2$ and $A,B\\in M_n(\\mathbb C)$ with $B^2=B$. Prove that $\\operatorname{rank}(AB-BA)\\le\\operatorname{rank}(AB+BA)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "(a) Let $n\\ge1$ be an integer. Calculate $\\displaystyle\\int_0^1x^{n-1}\\ln x\\,dx$. (b) Calculate $\\displaystyle\\sum_{n=0}^\\infty(-1)^n\\left(\\frac1{(n+1)^2}-\\frac1{(n+2)^2}+\\frac1{(n+3)^2}-\\cdots\\right)$."
+          "problem": "(a) Let $n\\ge1$ be an integer. Calculate $\\displaystyle\\int_0^1x^{n-1}\\ln x\\,dx$. (b) Calculate $\\displaystyle\\sum_{n=0}^\\infty(-1)^n\\left(\\frac1{(n+1)^2}-\\frac1{(n+2)^2}+\\frac1{(n+3)^2}-\\cdots\\right)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -279,19 +487,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A\\in M_{2020}(\\mathbb C)$ satisfy $A+\\operatorname{adj}(A)=I_{2020}$ and $A\\operatorname{adj}(A)=I_{2020}$, where $\\operatorname{adj}(A)$ denotes the adjugate matrix. Find the maximum number of such matrices that are pairwise non-similar."
+          "problem": "Let $A\\in M_{2020}(\\mathbb C)$ satisfy $A+\\operatorname{adj}(A)=I_{2020}$ and $A\\operatorname{adj}(A)=I_{2020}$, where $\\operatorname{adj}(A)$ denotes the adjugate matrix. Find the maximum number of such matrices that are pairwise non-similar.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $k>1$ be real. Calculate (a) $\\displaystyle L=\\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx$; (b) $\\displaystyle\\lim_{n\\to\\infty}n\\left[L-\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx\\right]$."
+          "problem": "Let $k>1$ be real. Calculate (a) $\\displaystyle L=\\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx$; (b) $\\displaystyle\\lim_{n\\to\\infty}n\\left[L-\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx\\right]$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $n$ be a positive integer, $k\\in\\mathbb C$, and $A\\in M_n(\\mathbb C)$ satisfy $\\operatorname{Tr}A\\ne0$ and $\\operatorname{rank}A+\\operatorname{rank}((\\operatorname{Tr}A)I_n-kA)=n$. Find $\\operatorname{rank}A$."
+          "problem": "Let $n$ be a positive integer, $k\\in\\mathbb C$, and $A\\in M_n(\\mathbb C)$ satisfy $\\operatorname{Tr}A\\ne0$ and $\\operatorname{rank}A+\\operatorname{rank}((\\operatorname{Tr}A)I_n-kA)=n$. Find $\\operatorname{rank}A$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$."
+          "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -300,19 +524,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and strictly increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$."
+          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and strictly increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $n\\ge2$ and $A\\in M_n(\\mathbb R)$ satisfy $A^2=-I_n$. If $B\\in M_n(\\mathbb R)$ commutes with $A$, prove $\\det B\\ge0$."
+          "problem": "Let $n\\ge2$ and $A\\in M_n(\\mathbb R)$ satisfy $A^2=-I_n$. If $B\\in M_n(\\mathbb R)$ commutes with $A$, prove $\\det B\\ge0$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $(AA^*)^2=A^*A$, where $A^*$ denotes the conjugate transpose. (a) Prove $AA^*=A^*A$. (b) Show that every nonzero eigenvalue of $A$ has modulus $1$."
+          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $(AA^*)^2=A^*A$, where $A^*$ denotes the conjugate transpose. (a) Prove $AA^*=A^*A$. (b) Show that every nonzero eigenvalue of $A$ has modulus $1$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "For $p\\in\\mathbb R$, define $a_n=n^{-p}\\int_0^n|\\sin(\\pi x)/x|\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges."
+          "problem": "For $p\\in\\mathbb R$, define $a_n=n^{-p}\\int_0^n|\\sin(\\pi x)/x|\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -321,19 +561,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $AB^2A=AB$. Prove (a) $(AB)^2=AB$; (b) $(AB-BA)^3=O_n$."
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $AB^2A=AB$. Prove (a) $(AB)^2=AB$; (b) $(AB-BA)^3=O_n$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Let $a,b,c\\in\\mathbb R$ satisfy $a+b+c=a^2+b^2+c^2=1$ and $a^3+b^3+c^3\\ne1$. A function $f:\\mathbb R\\to\\mathbb R$ is called Palic if it is continuous and $f(x)+f(y)+f(z)=f(ax+by+cz)+f(bx+cy+az)+f(cx+ay+bz)$ for all real $x,y,z$. Prove that every Palic function is infinitely differentiable and determine all Palic functions."
+          "problem": "Let $a,b,c\\in\\mathbb R$ satisfy $a+b+c=a^2+b^2+c^2=1$ and $a^3+b^3+c^3\\ne1$. A function $f:\\mathbb R\\to\\mathbb R$ is called Palic if it is continuous and $f(x)+f(y)+f(z)=f(ax+by+cz)+f(bx+cy+az)+f(cx+ay+bz)$ for all real $x,y,z$. Prove that every Palic function is infinitely differentiable and determine all Palic functions.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $\\alpha\\in\\mathbb C\\setminus\\{0\\}$ and $A\\in M_n(\\mathbb C)\\setminus\\{O_n\\}$ satisfy $A^2+(A^*)^2=\\alpha AA^*$. Prove that $\\alpha\\in\\mathbb R$, $|\\alpha|\\le2$, and $A$ is normal."
+          "problem": "Let $\\alpha\\in\\mathbb C\\setminus\\{0\\}$ and $A\\in M_n(\\mathbb C)\\setminus\\{O_n\\}$ satisfy $A^2+(A^*)^2=\\alpha AA^*$. Prove that $\\alpha\\in\\mathbb R$, $|\\alpha|\\le2$, and $A$ is normal.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $\\mathcal F$ be the family of all nonempty finite subsets of $\\mathbb N\\cup\\{0\\}$. Determine all $a>0$ for which $\\sum_{S\\in\\mathcal F}\\frac1{\\sum_{k\\in S}a^k}$ converges."
+          "problem": "Let $\\mathcal F$ be the family of all nonempty finite subsets of $\\mathbb N\\cup\\{0\\}$. Determine all $a>0$ for which $\\sum_{S\\in\\mathcal F}\\frac1{\\sum_{k\\in S}a^k}$ converges.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -342,19 +598,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A=AB-BA+A^2B-2ABA+BA^2+A^2BA-ABA^2$. Prove that $\\det A=0$."
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A=AB-BA+A^2B-2ABA+BA^2+A^2BA-ABA^2$. Prove that $\\det A=0$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "For $n\\ge1$ let $S_n=\\sum_{k=1}^n\\frac1{\\sqrt{n^2+k^2}}$. Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\left(\\ln(1+\\sqrt2)-S_n\\right)-\\frac1{2\\sqrt2(1+\\sqrt2)}\\right)$."
+          "problem": "For $n\\ge1$ let $S_n=\\sum_{k=1}^n\\frac1{\\sqrt{n^2+k^2}}$. Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\left(\\ln(1+\\sqrt2)-S_n\\right)-\\frac1{2\\sqrt2(1+\\sqrt2)}\\right)$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A+A^*=A^2A^*$, where $A^*$ is the conjugate transpose. Prove that $A=A^*$."
+          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A+A^*=A^2A^*$, where $A^*$ is the conjugate transpose. Prove that $A=A^*$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous and strictly decreasing with $f([0,1])\\subseteq[0,1]$. (a) Prove that for every positive integer $n$ there is a unique $a_n\\in(0,1)$ satisfying $f(a_n)=a_n^n$, and that $\\lim_{n\\to\\infty}a_n=1$. (b) Suppose $f$ has a continuous derivative, $f(1)=0$, and $f'(1)<0$. Define $F(x)=\\int_x^1f(t)\\,dt$. For real $\\alpha$, study the convergence of $\\sum_{n=1}^\\infty(F(a_n))^\\alpha$."
+          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous and strictly decreasing with $f([0,1])\\subseteq[0,1]$. (a) Prove that for every positive integer $n$ there is a unique $a_n\\in(0,1)$ satisfying $f(a_n)=a_n^n$, and that $\\lim_{n\\to\\infty}a_n=1$. (b) Suppose $f$ has a continuous derivative, $f(1)=0$, and $f'(1)<0$. Define $F(x)=\\int_x^1f(t)\\,dt$. For real $\\alpha$, study the convergence of $\\sum_{n=1}^\\infty(F(a_n))^\\alpha$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -363,19 +635,43 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $x_1\\in(0,1)$ and $x_{n+1}=x_n-x_n^2/\\sqrt n$ for $n\\ge1$. Determine all $\\alpha\\in\\mathbb R$ for which $\\sum_{n=1}^\\infty x_n^\\alpha$ converges."
+          "problem": "Let $x_1\\in(0,1)$ and $x_{n+1}=x_n-x_n^2/\\sqrt n$ for $n\\ge1$. Determine all $\\alpha\\in\\mathbb R$ for which $\\sum_{n=1}^\\infty x_n^\\alpha$ converges.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb R)$ be real symmetric matrices with nonnegative eigenvalues. Prove that $A^3+B^3=(A+B)^3$ if and only if $AB=O_n$."
+          "problem": "Let $A,B\\in M_n(\\mathbb R)$ be real symmetric matrices with nonnegative eigenvalues. Prove that $A^3+B^3=(A+B)^3$ if and only if $AB=O_n$.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 3,
-          "problem": "For $n\\ge1$ let $x_n=\\int_0^1\\ln(1+x+\\cdots+x^n)\\ln\\frac1{1-x}\\,dx$. (a) Prove that $x_n$ is finite and $\\lim_{n\\to\\infty}x_n=2$. (b) Calculate $\\lim_{n\\to\\infty}\\frac n{\\ln n}(2-x_n)$."
+          "problem": "For $n\\ge1$ let $x_n=\\int_0^1\\ln(1+x+\\cdots+x^n)\\ln\\frac1{1-x}\\,dx$. (a) Prove that $x_n$ is finite and $\\lim_{n\\to\\infty}x_n=2$. (b) Calculate $\\lim_{n\\to\\infty}\\frac n{\\ln n}(2-x_n)$.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 4,
-          "problem": "Let $n\\ge2$. Determine all integers $k\\ge1$ such that, for every $A\\in M_n(\\mathbb C)$, the identity $A^kA^*=A$ implies $A=A^*$, where $A^*$ is the conjugate transpose."
+          "problem": "Let $n\\ge2$. Determine all integers $k\\ge1$ such that, for every $A\\in M_n(\\mathbb C)$, the identity $A^kA^*=A$ implies $A=A^*$, where $A^*$ is the conjugate transpose.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         }
       ]
     },
@@ -384,19 +680,35 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A$ be an $n\\times n$ matrix with strictly positive entries and let $u,v\\in\\mathbb R^n$ have strictly positive entries. Suppose $Au=v$ and $Av=u$. Prove that $u=v$."
+          "problem": "Let $A$ be an $n\\times n$ matrix with strictly positive entries and let $u,v\\in\\mathbb R^n$ have strictly positive entries. Suppose $Au=v$ and $Av=u$. Prove that $u=v$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 2,
-          "problem": "Calculate $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^\\infty e^{-x}\\sqrt[n]{\\frac{e^x-1-x-\\frac{x^2}{2!}-\\cdots-\\frac{x^n}{n!}}{\\,e^x\\,}}\\,dx$."
+          "problem": "Calculate $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^\\infty e^{-x}\\sqrt[n]{\\frac{e^x-1-x-\\frac{x^2}{2!}-\\cdots-\\frac{x^n}{n!}}{\\,e^x\\,}}\\,dx$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A^*A^2=AA^*$, where $A^*$ is the conjugate transpose of $A$. Prove that $A^2=A$."
+          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A^*A^2=AA^*$, where $A^*$ is the conjugate transpose of $A$. Prove that $A^2=A$.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         },
         {
           "number": 4,
-          "problem": "Let $(a_n)_{n\\ge1}$ be a monotonically decreasing sequence of real numbers converging to $0$. Prove that $\\displaystyle\\sum_{n=1}^\\infty\\frac{a_n}{n}$ converges if and only if $(a_n\\ln n)_{n\\ge1}$ is bounded and $\\displaystyle\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ converges."
+          "problem": "Let $(a_n)_{n\\ge1}$ be a monotonically decreasing sequence of real numbers converging to $0$. Prove that $\\displaystyle\\sum_{n=1}^\\infty\\frac{a_n}{n}$ converges if and only if $(a_n\\ln n)_{n\\ge1}$ is bounded and $\\displaystyle\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ converges.",
+          "statement_verified": false,
+          "review_flags": [
+            "original_official_paper_statement_visual_comparison_pending"
+          ]
         }
       ]
     },
@@ -405,19 +717,43 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Determine all differentiable functions $f:\\mathbb R\\to[0,\\infty)$ with continuous derivative such that $f(x)^2\\le f'(x)$ for every $x\\in\\mathbb R$."
+          "problem": "Determine all differentiable functions $f:\\mathbb R\\to[0,\\infty)$ with continuous derivative such that $f(x)^2\\le f'(x)$ for every $x\\in\\mathbb R$.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2+B^2=2(AB-BA)$. Prove that $A^2+B^2$ is nilpotent."
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2+B^2=2(AB-BA)$. Prove that $A^2+B^2$ is nilpotent.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 3,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2=AB-BA$ and $\\operatorname{rank}(A-B)=1$. Prove $ABA=O_n$."
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2=AB-BA$ and $\\operatorname{rank}(A-B)=1$. Prove $ABA=O_n$.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 4,
-          "problem": "Determine all bijections $f:\\mathbb R\\to\\mathbb R$ such that $x^nf(x)+y^nf(y)\\ge2x^nf(y)$ for all $x,y\\in\\mathbb R$, where $n$ is a fixed positive integer."
+          "problem": "Determine all bijections $f:\\mathbb R\\to\\mathbb R$ such that $x^nf(x)+y^nf(y)\\ge2x^nf(y)$ for all $x,y\\in\\mathbb R$, where $n$ is a fixed positive integer.",
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
+          "verification_page": 1,
+          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
+          "verified_on": "2026-10-12"
         }
       ]
     }
