@@ -1,0 +1,44 @@
+name: Stage Putnam 1950-1974 excluding dual 1958 contest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/stage_putnam_1950_1974_except_1958.py
+      - .github/workflows/stage-putnam-1950-1974.yml
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect historical research records only
+        run: python scripts/stage_putnam_1950_1974_except_1958.py
+      - name: Validate year coverage without auto-certifying
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("staged/Putnam-1950-1974-raw-review.json").read_text())
+          expected=[*range(1950,1958),*range(1959,1975)]
+          assert [y["year"] for y in a["years"]]==expected
+          assert a["exceptional_contest_years_pending_separate_review"]==[1958]
+          assert a["publication_eligible"] is False
+          assert a["problem_count"]==sum(len(y["problems"]) for y in a["years"])
+          for y in a["years"]:
+              assert y["problems"]
+              for p in y["problems"]:
+                  assert p["statement_verified"] is False
+                  assert "solution" not in p and "answer" not in p
+          print("PASS: research artifact only; no historical fidelity certified")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: putnam-1950-1974-excluding-1958-review
+          path: staged/Putnam-1950-1974-raw-review.json
+          if-no-files-found: error
+          retention-days: 30
