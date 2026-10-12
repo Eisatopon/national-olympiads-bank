@@ -181,7 +181,8 @@
       "sources": [
         {
           "role": "university_archived_exam_pdf",
-          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf"
+          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf",
+          "source_index": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html"
         },
         {
           "role": "MAA_compilation",
@@ -212,7 +213,8 @@
       "sources": [
         {
           "role": "university_archived_exam_pdf",
-          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1981.pdf"
+          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1981.pdf",
+          "source_index": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html"
         },
         {
           "role": "MAA_compilation",
@@ -243,7 +245,8 @@
       "sources": [
         {
           "role": "university_archived_exam_pdf",
-          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1982.pdf"
+          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1982.pdf",
+          "source_index": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html"
         },
         {
           "role": "MAA_compilation",
@@ -274,7 +277,8 @@
       "sources": [
         {
           "role": "university_archived_exam_pdf",
-          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1983.pdf"
+          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1983.pdf",
+          "source_index": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html"
         },
         {
           "role": "MAA_compilation",
@@ -305,7 +309,8 @@
       "sources": [
         {
           "role": "university_archived_exam_pdf",
-          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf"
+          "url": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf",
+          "source_index": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html"
         },
         {
           "role": "MAA_compilation",
@@ -318,5 +323,36 @@
       "notes": "Independent exam PDF archive identified; PDF text extraction may corrupt formulas."
     }
   ],
-  "quality_gate": "Never publish source-only records or corrupted mathematical formulas as full statements; check A1–B6 for each year using the original scans."
+  "quality_gate": "Never publish source-only records or corrupted mathematical formulas as full statements; check A1–B6 for each year using the original scans.",
+  "book": {
+    "title": "The William Lowell Putnam Mathematical Competition: Problems and Solutions, 1965–1984",
+    "authors": [
+      "Gerald L. Alexanderson",
+      "Leonard F. Klosinski",
+      "Loren C. Larson"
+    ],
+    "publisher": "Mathematical Association of America",
+    "year": 1985,
+    "online_full_book_locations": [
+      {
+        "url": "https://www.scribd.com/document/460337978/G-L-Alexanderson-The-William-Lowell-Putnam-mathematical-competition-Problems-and-solutions-1965-1984-Mathematical-Association-of-America-1985",
+        "type": "full_text_online_view",
+        "status": "web_text_accessible_pdf_not_downloaded",
+        "note": "Full digitized book indexed, mathematical expressions require visual validation"
+      },
+      {
+        "url": "https://pdfcoffee.com/the-william-lowell-putnam-mathematical-competition-problems-and-solutions-1965-1984-pdf-free.html",
+        "type": "pdf_download_page",
+        "status": "download_attempt_failed",
+        "note": "9 MB PDF reported, direct binary not obtained"
+      },
+      {
+        "url": "https://archive.org/details/williamlowellput00alex",
+        "type": "digitized_library_record",
+        "status": "access_unconfirmed"
+      }
+    ],
+    "original_university_exam_archive": "https://mathweb.ucsd.edu/~pfitz/pastputnam.html",
+    "availability_note": "Book located online, but no verified PDF bytes acquired by this process. Avoid claiming full scan ingested."
+  }
 }
