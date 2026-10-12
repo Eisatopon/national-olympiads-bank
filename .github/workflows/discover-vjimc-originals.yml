@@ -23,4 +23,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: vjimc-original-paper-source-coverage
-          path: out/vjimc-source-discovery.json
+          path: |
+            out/vjimc-source-discovery.json
+            out/vjimc-original-pdf-text-review.json
