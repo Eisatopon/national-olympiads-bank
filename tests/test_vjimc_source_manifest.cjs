@@ -13,4 +13,13 @@ assert.equal(y1991.public_full_competition_eligible,false);
 assert.deepEqual(y1991.problems.map(p=>p.number),[1,2,3,4]);
 assert.ok(y1991.problems.every(p=>p.category==='I'&&p.source_page===1&&p.source_verified===true));
 assert.ok(y1991.problems.every(p=>(p.problem.match(/\$/g)||[]).length%2===0));
+for(const year of [1992,1993]){
+ const j=JSON.parse(fs.readFileSync('undergraduate/Vojtech-Jarnik-'+year+'-source-review.json','utf8'));
+ assert.equal(j.year,year);
+ assert.equal(j.problems.length,4);
+ assert.deepEqual(j.problems.map(p=>p.number),[1,2,3,4]);
+ assert.ok(j.problems.every(p=>p.category==='II'&&p.source_verified===false&&p.review_flags.includes('visual_comparison_of_original_pdf_required')));
+ assert.equal(j.public_full_competition_eligible,false);
+ for(const p of j.problems) assert.equal((p.problem.match(/\$/g)||[]).length%2,0,'Unbalanced math '+year+'/'+p.number);
+}
 console.log('VJIMC historical editions and 1991 original Category I source staging verified.');
