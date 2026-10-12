@@ -117,7 +117,7 @@ def validate_statement_checks(entry, data, country_key):
 def main():
     failures = 0
     html = (ROOT / 'index.html').read_text()
-    registered = set(re.findall(r"file: '([^']+\.json)'", html))
+    registered = {name for name in re.findall(r"file: '([^']+\.json)'", html) if "/" not in name}
     files = {p.name for p in ROOT.glob('*.json')}
     for missing in sorted(registered ^ files):
         print('ERROR: collection registration mismatch:', missing); failures += 1
