@@ -22,7 +22,7 @@ for(const c of v.collections){
    // Guard all imported full statements against accidental truncation and broken TeX.
    const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
    assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
-   assert.equal(problems.filter(p=>p.statement_verified).length,28,'SEEMOUS source-review count changed unexpectedly');
+   assert.equal(problems.filter(p=>p.statement_verified).length,32,'SEEMOUS source-review count changed unexpectedly');
    const p2025_2 = problems.find(p=>p.year===2025&&p.number===2);
    assert.ok(p2025_2.problem.includes('\\sqrt[n]{e^x-1-\\frac{x}{1!}'), '2025/2 must preserve original radical expression');
    assert.ok(!p2025_2.problem.includes('\\frac{e^x-1-'), '2025/2 spurious radical denominator reintroduced');
@@ -37,9 +37,9 @@ for(const c of v.collections){
        assert.equal(p.verification_source,official,'Wrong original contest paper '+id);
        assert.equal(p.verification_page,1,'Wrong original contest page '+id);
        assert.ok(p.verification_method && p.verified_on && p.review_flags.length===0,'Missing provenance '+id);
-     }else if ([2007,2008,2011,2018,2019].includes(p.year)) {
+     }else if ([2007,2008,2009,2011,2018,2019].includes(p.year)) {
        assert.equal(p.statement_verified,true,'Compiled contest paper comparison missing '+id);
-       assert.equal(p.verification_source,'User-supplied Seemous-2007-2025.pdf','Missing contest compilation provenance '+id);
+       assert.ok(p.verification_source === 'User-supplied Seemous-2007-2025.pdf' || (p.year===2009 && p.verification_source==='https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf'),'Missing contest compilation provenance '+id);
        assert.ok(p.verification_page>0&&p.review_flags.length===0,'Incomplete reviewed page metadata '+id);
      }else{
        assert.equal(p.statement_verified,false,'Unverified original marked verified '+id);
