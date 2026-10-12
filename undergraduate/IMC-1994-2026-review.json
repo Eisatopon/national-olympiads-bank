@@ -705,7 +705,7 @@
         {
           "number": 6,
           "day": 1,
-          "problem": "Upper content of a subset $E$ of the plane $\\mathbb{R}^2$ is defined as\n$\\mathcal{C}(E) = \\inf \\left\\{ \\sum_{i=1}^{n} \\operatorname{diam}(E_i)\n\\right\\}$\nwhere $\\inf$ is taken over all finite families of sets\n$E_1, \\dots, E_n$, $n \\in \\mathbb{N}$, in $\\mathbb{R}^2$ such that\n$E \\subset \\bigcup\\limits_{i=1}^{n} E_i$.\n\nLower content of $E$ is defined as\n$\\begin{align*}\n\\mathcal{K}(E) = \\sup \\{ \\operatorname{lenght}(L) :{}&\n\\text{$L$ is a closed line segment} \\\\\n& \\text{onto which $E$ can be contracted} \\}.$\n\n\\end{align*}K(E)=sup{lenght(L):​L is a closed line segmentonto which E can be contracted}.​\nShow that\n\n(a) $\\mathcal{C}(L) = \\operatorname{lenght}(L)$ if $L$ is a closed line\nsegment;\n\n(b) $\\mathcal{C}(E) \\ge \\mathcal{K}(E)$;\n\n(c) the equality in (b) needs not hold even if $E$ is compact.\n\nHint. If $E = T \\cup T'$ where $T$ is the triangle with vertices\n$(-2,2)$, $(2,2)$ and $(0,4)$, and $T'$ is its reflexion about the\n$x$-axis, then $\\mathcal{C}(E) = 8 > \\mathcal{K}(E)$.\n\nRemarks: All distances used in this problem are Euclidian. Diameter of\na set $E$ is $\\operatorname{diam}(E) = \\sup \\{ \\operatorname{dist}(x,y)\n: x, y \\in E \\}$. Contraction of a set $E$ to a set $F$ is a mapping\n$f : E \\mapsto F$ such that\n$\\operatorname{dist}(f(x), f(y)) \\le \\operatorname{dist}(x,y)$ for all\n$x, y \\in E$. A set $E$ can be contracted onto a set $F$ if there is a\ncontraction $f$ of $E$ to $F$ which is onto, i.e., such that\n$f(E) = F$. Triangle is defined as the union of the three segments\njoining its vertices, i.e., it does not contain the interior.",
+          "problem": "Upper content of a subset $E$ of the plane $\\mathbb{R}^2$ is defined as\n$\\mathcal{C}(E) = \\inf \\left\\{ \\sum_{i=1}^{n} \\operatorname{diam}(E_i)\n\\right\\}$\nwhere $\\inf$ is taken over all finite families of sets\n$E_1, \\dots, E_n$, $n \\in \\mathbb{N}$, in $\\mathbb{R}^2$ such that\n$E \\subset \\bigcup\\limits_{i=1}^{n} E_i$.\n\nLower content of $E$ is defined as\n\\[\n\\mathcal{K}(E)=\\sup\\bigl\\{\\operatorname{length}(L): L\\text{ is a closed line segment onto which }E\\text{ can be contracted}\\bigr\\}.\n\\]\nShow that\n\n(a) $\\mathcal{C}(L) = \\operatorname{length}(L)$ if $L$ is a closed line\nsegment;\n\n(b) $\\mathcal{C}(E) \\ge \\mathcal{K}(E)$;\n\n(c) the equality in (b) needs not hold even if $E$ is compact.\n\nHint. If $E = T \\cup T'$ where $T$ is the triangle with vertices\n$(-2,2)$, $(2,2)$ and $(0,4)$, and $T'$ is its reflexion about the\n$x$-axis, then $\\mathcal{C}(E) = 8 > \\mathcal{K}(E)$.\n\nRemarks: All distances used in this problem are Euclidian. Diameter of\na set $E$ is $\\operatorname{diam}(E) = \\sup \\{ \\operatorname{dist}(x,y)\n: x, y \\in E \\}$. Contraction of a set $E$ to a set $F$ is a mapping\n$f : E \\mapsto F$ such that\n$\\operatorname{dist}(f(x), f(y)) \\le \\operatorname{dist}(x,y)$ for all\n$x, y \\in E$. A set $E$ can be contracted onto a set $F$ if there is a\ncontraction $f$ of $E$ to $F$ which is onto, i.e., such that\n$f(E) = F$. Triangle is defined as the union of the three segments\njoining its vertices, i.e., it does not contain the interior.",
           "latex_annotations_for_review": [
             "E",
             "\\mathbb{R}^2",
@@ -746,10 +746,13 @@
           "topics": [],
           "problem_dna": [],
           "source_url": "https://studolymp.com/imc/problems/imc-1996-d1-p6",
-          "statement_verified": false,
-          "review_flags": [
-            "requires_original_imc_pdf_fidelity_review"
-          ]
+          "statement_verified": true,
+          "review_flags": [],
+          "verification_source": "https://www.imc-math.org.uk/imc1996/prob_sol.pdf",
+          "verification_page": 8,
+          "verification_method": "Compared original organizer PDF page 7–8 (PDF pages 7–8); reconstructed damaged lower-content formula and removed duplicate OCR text; normalized obvious printed 'lenght' spelling to 'length' without changing mathematical meaning.",
+          "verified_on": "2026-10-12",
+          "transcription_note": "Official 1996 source spells 'lenght' (sic). Rendering uses standard length; duplicated corrupted text removed after direct scan inspection."
         },
         {
           "number": 7,
