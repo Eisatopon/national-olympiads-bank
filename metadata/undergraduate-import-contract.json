@@ -43,12 +43,13 @@
     },
     {
       "id": "smmc",
-      "file": "Simon-Marais-problems.json",
+      "file": "undergraduate/Simon-Marais-problems.json",
       "competition": "Simon Marais Mathematics Competition",
       "first_year": 2017,
       "last_archived_year": 2025,
       "identifier_rule": "Keep A/B/C paper identity per edition; do not assume all years had three papers",
-      "source_registry": "metadata/undergraduate-other-four-sources.json"
+      "source_registry": "metadata/smmc-official-papers.json",
+      "publication_status": "published_verified_english_text_latex"
     }
   ],
   "required_problem_fields": [
@@ -80,5 +81,5 @@
     "No unverified original year or problem count",
     "Do not affect National/Regional/International/Tournaments grids"
   ],
-  "state": "partial_import_vjimc_published"
+  "state": "partial_import_vjimc_and_smmc_published"
 }

@@ -28,7 +28,7 @@ assert.deepEqual(Array.from(ctx.topicFields('Original.', null, 'x.1').topics), [
 assert.notDeepEqual(Array.from(ctx.topicFields('Edited.', null, 'x.1').topics), ['Geometry']);
 
 // Provenance rendered from slim metadata must match the full audit metadata, statement by statement.
-const fullMeta = read('metadata/collections.json').collections;
+const fullMeta = {...read('metadata/collections.json').collections, ...read('metadata/smmc-statement-checks.json').collections};
 const slimMeta = read('metadata/runtime/collections.json').collections;
 let checked = 0;
 for (const [file, meta] of Object.entries(fullMeta)) {

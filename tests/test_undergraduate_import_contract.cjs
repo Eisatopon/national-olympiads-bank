@@ -78,6 +78,11 @@ for(const c of v.collections){
    assert.equal(imported.problem_count,261);
    assert.equal(imported.years.length,33);
    assert.ok(imported.years.every(y=>y.problems.every(p=>p.statement_asset && p.paper && p.statement_verified)));
+ }else if(c.id==='smmc'){
+   const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
+   assert.equal(imported.problem_count,88);
+   assert.equal(imported.years.length,9);
+   assert.ok(imported.years.every(y=>y.problems.every(p=>p.statement_verified&&p.text_transcription_verified&&!p.statement_asset&&p.paper)));
  }else{
    assert.ok(!fs.existsSync(c.file),'Must not create a fake empty collection '+c.file);
  }
@@ -85,5 +90,5 @@ for(const c of v.collections){
 assert.ok(v.required_problem_fields.includes('problem'));
 assert.ok(v.required_problem_fields.includes('topics'));
 assert.ok(v.required_problem_fields.includes('problem_dna'));
-assert.equal(v.state,'partial_import_vjimc_published');
+assert.equal(v.state,'partial_import_vjimc_and_smmc_published');
 console.log('Five full-text Undergraduate targets, correct historical starts and stable source metadata validated.');

@@ -9,7 +9,7 @@ assert.equal(smmc.length,9);
 assert.deepEqual(smmc.map(r=>r.year),[2017,2018,2019,2020,2021,2022,2023,2024,2025]);
 for(const entry of smmc){
  assert.match(entry.source_page,/^https:\/\/www\.simonmarais\.org\/\d{4}1?\.html$/);
- assert.equal(entry.statement_imported,false);
+ assert.equal(entry.statement_imported,true);
 }
 const pdfs=smmc.find(r=>r.year===2025).question_pdfs;
 assert.deepEqual(Object.keys(pdfs),['A','B','C']);
@@ -22,5 +22,5 @@ assert.ok(seemous.find(x=>x.year===2024).question_pdf.includes('SEEMOUS_2024_Con
 assert.ok(seemous.find(x=>x.year===2026).source_page.includes('cms.org.cy'));
 assert.ok(seemous.find(x=>x.year_range==='2007–2025').source_kind.includes('collection'));
 assert.equal(registry.records.filter(x=>x.competition_id==='imc').length,1);
-assert.ok(registry.records.every(x=>x.statement_imported===(x.competition_id==='vjimc')));
+assert.ok(registry.records.every(x=>x.statement_imported===(['vjimc','smmc'].includes(x.competition_id))));
 console.log('All four university competition source registries verified for structure and paper identity.');
