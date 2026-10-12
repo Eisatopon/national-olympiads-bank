@@ -39,10 +39,16 @@ for year in years:
             errors.append(f"{ident}: incorrect exam day")
         if not isinstance(p.get("problem"),str) or len(p["problem"].strip())<25:
             errors.append(f"{ident}: missing/short statement")
-        if p.get("statement_verified") is not False:
-            errors.append(f"{ident}: no official-PDF verification may be presumed")
-        if not p.get("review_flags"):
-            errors.append(f"{ident}: missing review flags")
+        if p.get("statement_verified") is True:
+            if not p.get("verification_source") or not p.get("verification_method") or not p.get("verification_page"):
+                errors.append(f"{ident}: verified statement lacks source, method or original page")
+            if p.get("review_flags"):
+                errors.append(f"{ident}: verified statement still has unresolved review flags")
+        elif p.get("statement_verified") is False:
+            if not p.get("review_flags"):
+                errors.append(f"{ident}: unverified record lacks review flags")
+        else:
+            errors.append(f"{ident}: invalid verification boolean")
         if not p.get("source_url"):
             errors.append(f"{ident}: source not traceable")
         if not isinstance(p.get("topics"),list) or not isinstance(p.get("problem_dna"),list):
@@ -53,5 +59,5 @@ if total!=354 or data.get("problem_count")!=354:
     errors.append(f"Incorrect total: {total}")
 print(f"IMC audit: {len(years)} years, {total} statements; structural issues {len(errors)}")
 for e in errors: print("FAIL:",e,file=sys.stderr)
-print("No statements certified or approved for public redistribution by this structural audit.")
+print("Verification metadata only; no public redistribution authorized by structural audit.")
 sys.exit(bool(errors))
