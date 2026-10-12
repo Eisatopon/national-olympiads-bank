@@ -21,6 +21,7 @@ jobs:
       - name: Probe original numbered competition PDFs
         run: python scripts/discover_vjimc_originals.py
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: vjimc-original-paper-source-coverage
           path: |
