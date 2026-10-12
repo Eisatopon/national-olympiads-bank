@@ -191,6 +191,27 @@
       ]
     },
     {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f$ be a continuous decreasing real-valued function on $[0,\\pi/2]$. Prove $\\int_{\\pi/2-1}^{\\pi/2}f(x)\\,dx\\le\\int_0^{\\pi/2}f(x)\\cos x\\,dx\\le\\int_0^1f(x)\\,dx$. When does equality hold?"
+        },
+        {
+          "number": 2,
+          "problem": "(a) Prove that for every $X\\in M_2(\\mathbb C)$ there is $Y\\in M_2(\\mathbb C)$ such that $Y^3=X^2$. (b) Prove that there exists $A\\in M_3(\\mathbb C)$ such that $Z^3\\ne A^2$ for every $Z\\in M_3(\\mathbb C)$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A_1,\\ldots,A_k\\in M_n(\\mathbb R)$ be idempotent matrices ($A_i^2=A_i$). Prove $\\sum_{i=1}^kN(A_i)\\ge\\operatorname{rank}(I_n-\\prod_{i=1}^k A_i)$, where $N(A_i)=n-\\operatorname{rank}(A_i)$."
+        },
+        {
+          "number": 4,
+          "problem": "For $n\\ge1$ put $I_n=\\int_0^\\infty\\frac{\\arctan x}{(1+x^2)^n}\\,dx$. Prove (a) $\\sum_{n=1}^\\infty\\frac{I_n}{n}=\\frac{\\pi^2}{6}$; (b) $\\int_0^\\infty\\arctan x\\ln(1+1/x^2)\\,dx=\\frac{\\pi^2}{6}$."
+        }
+      ]
+    },
+    {
       "year": 2017,
       "problems": [
         {
@@ -275,6 +296,69 @@
       ]
     },
     {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and strictly increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n\\ge2$ and $A\\in M_n(\\mathbb R)$ satisfy $A^2=-I_n$. If $B\\in M_n(\\mathbb R)$ commutes with $A$, prove $\\det B\\ge0$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $(AA^*)^2=A^*A$, where $A^*$ denotes the conjugate transpose. (a) Prove $AA^*=A^*A$. (b) Show that every nonzero eigenvalue of $A$ has modulus $1$."
+        },
+        {
+          "number": 4,
+          "problem": "For $p\\in\\mathbb R$, define $a_n=n^{-p}\\int_0^n|\\sin(\\pi x)/x|\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $AB^2A=AB$. Prove (a) $(AB)^2=AB$; (b) $(AB-BA)^3=O_n$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a,b,c\\in\\mathbb R$ satisfy $a+b+c=a^2+b^2+c^2=1$ and $a^3+b^3+c^3\\ne1$. A function $f:\\mathbb R\\to\\mathbb R$ is called Palic if it is continuous and $f(x)+f(y)+f(z)=f(ax+by+cz)+f(bx+cy+az)+f(cx+ay+bz)$ for all real $x,y,z$. Prove that every Palic function is infinitely differentiable and determine all Palic functions."
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\alpha\\in\\mathbb C\\setminus\\{0\\}$ and $A\\in M_n(\\mathbb C)\\setminus\\{O_n\\}$ satisfy $A^2+(A^*)^2=\\alpha AA^*$. Prove that $\\alpha\\in\\mathbb R$, $|\\alpha|\\le2$, and $A$ is normal."
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathcal F$ be the family of all nonempty finite subsets of $\\mathbb N\\cup\\{0\\}$. Determine all $a>0$ for which $\\sum_{S\\in\\mathcal F}\\frac1{\\sum_{k\\in S}a^k}$ converges."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $x_1\\in(0,1)$ and $x_{n+1}=x_n-x_n^2/\\sqrt n$ for $n\\ge1$. Determine all $\\alpha\\in\\mathbb R$ for which $\\sum_{n=1}^\\infty x_n^\\alpha$ converges."
+        },
+        {
+          "number": 2,
+          "problem": "Let $A,B\\in M_n(\\mathbb R)$ be real symmetric matrices with nonnegative eigenvalues. Prove that $A^3+B^3=(A+B)^3$ if and only if $AB=O_n$."
+        },
+        {
+          "number": 3,
+          "problem": "For $n\\ge1$ let $x_n=\\int_0^1\\ln(1+x+\\cdots+x^n)\\ln\\frac1{1-x}\\,dx$. (a) Prove that $x_n$ is finite and $\\lim_{n\\to\\infty}x_n=2$. (b) Calculate $\\lim_{n\\to\\infty}\\frac n{\\ln n}(2-x_n)$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n\\ge2$. Determine all integers $k\\ge1$ such that, for every $A\\in M_n(\\mathbb C)$, the identity $A^kA^*=A$ implies $A=A^*$, where $A^*$ is the conjugate transpose."
+        }
+      ]
+    },
+    {
       "year": 2025,
       "problems": [
         {
@@ -292,6 +376,27 @@
         {
           "number": 4,
           "problem": "Let $(a_n)_{n\\ge1}$ be a monotonically decreasing sequence of real numbers converging to $0$. Prove that $\\displaystyle\\sum_{n=1}^\\infty\\frac{a_n}{n}$ converges if and only if $(a_n\\ln n)_{n\\ge1}$ is bounded and $\\displaystyle\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ converges."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine all differentiable functions $f:\\mathbb R\\to[0,\\infty)$ with continuous derivative such that $f(x)^2\\le f'(x)$ for every $x\\in\\mathbb R$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2+B^2=2(AB-BA)$. Prove that $A^2+B^2$ is nilpotent."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2=AB-BA$ and $\\operatorname{rank}(A-B)=1$. Prove $ABA=O_n$."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all bijections $f:\\mathbb R\\to\\mathbb R$ such that $x^nf(x)+y^nf(y)\\ge2x^nf(y)$ for all $x,y\\in\\mathbb R$, where $n$ is a fixed positive integer."
         }
       ]
     }
