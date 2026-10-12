@@ -26,9 +26,9 @@ for (const year of data.years) {
     const url = 'https://studolymp.com/imc/problems/imc-'+year.year+'-d'+p.day+'-p'+
       (p.day===1?p.number:p.number-countByYear(year.year)/2);
     assert.equal(p.source_url,url,'Wrong source URL '+id);
-    assert.ok(!/\\[(MATH|FIGURE)_REQUIRES_REVIEW\\]/.test(p.problem),'Broken math or figure '+id);
-    assert.ok(!/solution\\s*\\(official\\)|show solution/i.test(p.problem),'Solution leaked '+id);
-    assert.equal((p.problem.match(/\\$/g)||[]).length%2,0,'Unbalanced inline math delimiters '+id);
+    assert.ok(!/\[(MATH|FIGURE)_REQUIRES_REVIEW\]/.test(p.problem),'Broken math or figure '+id);
+    assert.ok(!/solution\s*\(official\)|show solution/i.test(p.problem),'Solution leaked '+id);
+    assert.equal((p.problem.match(/\$/g)||[]).length%2,0,'Unbalanced inline math delimiters '+id);
     if (p.latex_annotations_for_review?.length) withLatex++;
     count++;
   }
