@@ -48,4 +48,4 @@ corroborated, but cannot yet be counted as original-page verified.
 - Archival collection identifier: **camh-arc-04028**, William Lowell Putnam Mathematical Competition Records, 1938–2016: https://txarchives.org/utcah/finding_aids/04028.xml
 - Finding aid explicitly says material is remotely stored; contact archive in advance. Ask whether readable scans of 1975–1979 A/B original exam sheets can be supplied, under what fee and use conditions.
 - Do **not** use UT Libraries general 'Get a Scan' form for Briscoe archival materials: https://lib.utexas.edu/find-borrow/get-a-scan expressly excludes the Briscoe Center.
-- Status: contact details verified, **request not sent**; all 60 original-page comparisons still pending.
+- Status: **user confirmed request sent on 2026-10-12** to the archival contact; awaiting response. All 60 original-page comparisons still pending.
