@@ -1082,10 +1082,8 @@
         {
           "number": 1,
           "problem": "Let $A\\in M_{2020}(\\mathbb C)$ satisfy $A+\\operatorname{adj}(A)=I_{2020}$ and $A\\operatorname{adj}(A)=I_{2020}$, where $\\operatorname{adj}(A)$ denotes the adjugate matrix. Find the maximum number of such matrices that are pairwise non-similar.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1093,15 +1091,17 @@
               38
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 2,
           "problem": "Let $k>1$ be real. Calculate (a) $\\displaystyle L=\\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx$; (b) $\\displaystyle\\lim_{n\\to\\infty}n\\left[L-\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx\\right]$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1109,15 +1109,17 @@
               38
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 3,
           "problem": "Let $n$ be a positive integer, $k\\in\\mathbb C$, and $A\\in M_n(\\mathbb C)$ satisfy $\\operatorname{Tr}A\\ne0$ and $\\operatorname{rank}A+\\operatorname{rank}((\\operatorname{Tr}A)I_n-kA)=n$. Find $\\operatorname{rank}A$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1125,15 +1127,17 @@
               38
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 4,
           "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1141,7 +1145,11 @@
               38
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
+          "verified_on": "2026-10-12"
         }
       ]
     },
@@ -1150,12 +1158,9 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and strictly increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending",
-            "academic_source_exact_statement_fidelity_review_pending"
-          ],
+          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$.",
+          "statement_verified": true,
+          "review_flags": [],
           "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
@@ -1164,16 +1169,18 @@
               46
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "source_correction": "Published Romanian Mathematical Society report Problem 1 uses 'continuous increasing', not 'strictly increasing'.",
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
+          "verification_page": 25,
+          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 2,
           "problem": "Let $n\\ge2$ and $A\\in M_n(\\mathbb R)$ satisfy $A^2=-I_n$. If $B\\in M_n(\\mathbb R)$ commutes with $A$, prove $\\det B\\ge0$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending",
-            "academic_source_exact_statement_fidelity_review_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
@@ -1182,16 +1189,17 @@
               46
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
+          "verification_page": 25,
+          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 3,
           "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $(AA^*)^2=A^*A$, where $A^*$ denotes the conjugate transpose. (a) Prove $AA^*=A^*A$. (b) Show that every nonzero eigenvalue of $A$ has modulus $1$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending",
-            "academic_source_exact_statement_fidelity_review_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
@@ -1200,16 +1208,17 @@
               46
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
+          "verification_page": 25,
+          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 4,
           "problem": "For $p\\in\\mathbb R$, define $a_n=n^{-p}\\int_0^n|\\sin(\\pi x)/x|\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending",
-            "academic_source_exact_statement_fidelity_review_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
@@ -1218,7 +1227,11 @@
               46
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
+          "verification_page": 25,
+          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
+          "verified_on": "2026-10-12"
         }
       ]
     },
