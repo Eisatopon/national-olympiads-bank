@@ -18,6 +18,18 @@ for(const c of v.collections){
    assert.ok(data.competition && Array.isArray(data.years));
    assert.deepEqual(data.years.map(y=>y.year),Array.from({length:20},(_,i)=>2007+i));
    assert.ok(data.years.every(y=>y.problems.length===4&&y.problems.every((p,i)=>p.number===i+1&&typeof p.problem==='string'&&p.problem.trim())));
+   // SEEMOUS was incrementally imported through 2026 despite its historical filename.
+   // Guard all imported full statements against accidental truncation and broken TeX.
+   const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
+   assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
+   assert.equal(new Set(problems.map(p=>`${p.year}:${p.number}`)).size,80,'Duplicate SEEMOUS IDs');
+   for(const p of problems){
+     const id=`${p.year}:${p.number}`;
+     assert.ok(p.problem.trim().length>=35,'Suspiciously short SEEMOUS statement '+id);
+     assert.equal((p.problem.match(/\\$/g)||[]).length%2,0,'Unbalanced inline TeX '+id);
+     assert.ok(!/\\[(MATH|FIGURE)_REQUIRES_REVIEW\\]/.test(p.problem),'Unresolved problem placeholder '+id);
+   }
+
  }else{
    assert.ok(!fs.existsSync(c.file),'Must not create a fake empty collection '+c.file);
  }
