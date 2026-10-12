@@ -35,4 +35,10 @@ for (const year of data.years) {
 }
 assert.equal(count, 354);
 assert.equal(withLatex, 350);
+const html = fs.readFileSync('index.html','utf8');
+assert.match(html, /key: 'imc'.*file: 'undergraduate\\/IMC-1994-2026-review\\.json'.*scope: 'undergraduate'/);
+assert.match(html, /if \\(key === 'imc'\\) return \\{/);
+assert.match(html, /c\\.key === 'imc' \\? 354/);
+assert.match(html, /loadCountry\\('imc'\\)/);
+assert.match(html, /354 statements available in the year grid/);
 console.log('IMC review archive: 33 years, 354 distinct nonempty sourced statements, 350 with LaTeX; all remain unverified.');
