@@ -104,22 +104,42 @@ def main():
     if len(records) != expected:
         errors.append({"error": "Incomplete statement extraction",
                        "expected": expected, "actual": len(records)})
+    empty = [r for r in records if not r["statement_candidate"].strip()]
+    with_latex = [r for r in records if r["latex_annotations"]]
+    failures_by_year = {
+        str(y): {
+            "expected": EXPECTED[y],
+            "records": sum(r["year"] == y for r in records),
+            "nonempty_candidates": sum(r["year"] == y and bool(r["statement_candidate"].strip()) for r in records),
+            "candidates_with_latex": sum(r["year"] == y and bool(r["latex_annotations"]) for r in records),
+            "extraction_failures": sum(x.get("year") == y for x in errors)
+        }
+        for y in manifest["years_requested"]
+    }
     output = {
         "competition": "IMC", "status": "UNVERIFIED_REVIEW_ONLY",
         "expected": expected, "extracted": len(records),
         "candidates": records, "errors": errors,
+        "nonempty_candidates": len(records) - len(empty),
+        "candidates_with_latex": len(with_latex),
+        "quality_by_year": failures_by_year,
         "needs_manual_review": sum(bool(r["review_flags"]) for r in records),
         "publication_note": "Must compare each statement and LaTeX expression to original IMC PDFs before import."
     }
     a.output.parent.mkdir(parents=True, exist_ok=True)
     a.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"STAGED {len(records)}/{expected}; errors {len(errors)}", flush=True)
+    print(f"STAGED {len(records)}/{expected}; nonempty {len(records)-len(empty)}; "
+          f"with LaTeX {len(with_latex)}; extraction errors {len(errors)}", flush=True)
+    for year, quality in failures_by_year.items():
+        print("YEAR_QUALITY", year, json.dumps(quality, sort_keys=True), flush=True)
     for problem in errors:
         print("ERROR", problem, flush=True)
     # The staging operation succeeds if it accounts for every downloaded page;
     # failures of HTML extraction remain explicit review blockers in the JSON.
     if len(records) != expected or len(keys) != expected:
         raise SystemExit("IMC source inventory incomplete or duplicated")
+    if not with_latex or not (len(records) - len(empty)):
+        raise SystemExit("IMC extraction produced no useful LaTeX or text; see quality report")
 
 if __name__ == "__main__":
     main()
