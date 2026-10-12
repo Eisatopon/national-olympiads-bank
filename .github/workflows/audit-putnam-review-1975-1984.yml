@@ -1,0 +1,27 @@
+name: Audit Putnam 1975-1984 review structure
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - undergraduate/Putnam-1975-1979-raw-review.json
+      - undergraduate/Putnam-1980-1984-raw-review.json
+      - scripts/audit_putnam_review_1975_1984.py
+      - .github/workflows/audit-putnam-review-1975-1984.yml
+  pull_request:
+    paths:
+      - undergraduate/Putnam-1975-1979-raw-review.json
+      - undergraduate/Putnam-1980-1984-raw-review.json
+      - scripts/audit_putnam_review_1975_1984.py
+      - .github/workflows/audit-putnam-review-1975-1984.yml
+permissions:
+  contents: read
+jobs:
+  structural-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate research-only Putnam records (not fidelity or publication approval)
+        run: python scripts/audit_putnam_review_1975_1984.py
