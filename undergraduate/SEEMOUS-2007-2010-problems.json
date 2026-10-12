@@ -168,6 +168,69 @@
           "problem": "(a) Prove that $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx=\\frac\\pi2$. (b) Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx-\\frac\\pi2\\right)$."
         }
       ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f:[0,1]\\to(0,1)$ be a Riemann integrable function. Prove that $\\displaystyle\\frac{2\\int_0^1xf(x)^2\\,dx}{\\int_0^1(f(x)^2+1)\\,dx}<\\frac{\\int_0^1f(x)^2\\,dx}{\\int_0^1f(x)\\,dx}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $m,n,p,q\\ge1$ be integers and $A\\in M_{m,n}(\\mathbb R)$, $B\\in M_{n,p}(\\mathbb R)$, $C\\in M_{p,q}(\\mathbb R)$, $D\\in M_{q,m}(\\mathbb R)$ satisfy $A^t=BCD$, $B^t=CDA$, $C^t=DAB$, and $D^t=ABC$. Prove that $(ABCD)^2=ABCD$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A,B\\in M_{2018}(\\mathbb R)$ satisfy $AB=BA$ and $A^{2018}=B^{2018}=I$. Prove that if $\\operatorname{Tr}(AB)=2018$, then $\\operatorname{Tr}A=\\operatorname{Tr}B$."
+        },
+        {
+          "number": 4,
+          "problem": "(a) Let $f:\\mathbb R\\to\\mathbb R$ be a polynomial function. Prove that $\\displaystyle\\int_0^\\infty e^{-x}f(x)\\,dx=f(0)+f'(0)+f''(0)+\\cdots$. (b) Let $f$ have a Taylor series at $0$ with infinite radius of convergence. Prove that if $\\sum_{n=0}^\\infty f^{(n)}(0)$ converges absolutely, then $\\int_0^\\infty e^{-x}f(x)\\,dx$ converges and $\\displaystyle\\sum_{n=0}^\\infty f^{(n)}(0)=\\int_0^\\infty e^{-x}f(x)\\,dx$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Call a sequence $(x_n)$ a \"Devin\" sequence if $0\\le x_n\\le1$ and, for every $f\\in C[0,1]$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nf(x_i)=\\int_0^1f(x)\\,dx$. Prove that $(x_n)$ is a Devin sequence if and only if, for every integer $k\\ge0$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nx_i^k=\\frac1{k+1}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $m,n$ be positive integers. Prove that for every $A_1,\\ldots,A_m\\in M_n(\\mathbb R)$ there exist $\\varepsilon_1,\\ldots,\\varepsilon_m\\in\\{-1,1\\}$ such that $\\displaystyle\\operatorname{Tr}\\left((\\varepsilon_1A_1+\\cdots+\\varepsilon_mA_m)^2\\right)\\ge\\operatorname{Tr}(A_1^2)+\\cdots+\\operatorname{Tr}(A_m^2)$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n\\ge2$ and $A,B\\in M_n(\\mathbb C)$ with $B^2=B$. Prove that $\\operatorname{rank}(AB-BA)\\le\\operatorname{rank}(AB+BA)$."
+        },
+        {
+          "number": 4,
+          "problem": "(a) Let $n\\ge1$ be an integer. Calculate $\\displaystyle\\int_0^1x^{n-1}\\ln x\\,dx$. (b) Calculate $\\displaystyle\\sum_{n=0}^\\infty(-1)^n\\left(\\frac1{(n+1)^2}-\\frac1{(n+2)^2}+\\frac1{(n+3)^2}-\\cdots\\right)$."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A\\in M_{2020}(\\mathbb C)$ satisfy $A+\\operatorname{adj}(A)=I_{2020}$ and $A\\operatorname{adj}(A)=I_{2020}$, where $\\operatorname{adj}(A)$ denotes the adjugate matrix. Find the maximum number of such matrices that are pairwise non-similar."
+        },
+        {
+          "number": 2,
+          "problem": "Let $k>1$ be real. Calculate (a) $\\displaystyle L=\\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx$; (b) $\\displaystyle\\lim_{n\\to\\infty}n\\left[L-\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx\\right]$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive integer, $k\\in\\mathbb C$, and $A\\in M_n(\\mathbb C)$ satisfy $\\operatorname{Tr}A\\ne0$ and $\\operatorname{rank}A+\\operatorname{rank}((\\operatorname{Tr}A)I_n-kA)=n$. Find $\\operatorname{rank}A$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$."
+        }
+      ]
     }
   ]
 }
