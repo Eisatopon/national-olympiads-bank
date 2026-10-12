@@ -20,7 +20,7 @@ for(const y of raw.years){
   assert.ok(p.verification_page>=1);assert.equal(p.source_crop_points.length,4);
   assert.match(p.source_document_sha256,/^[0-9a-f]{64}$/);
   const a=p.statement_asset;assert.match(a.src,/^assets\/statements\/vjimc\/\d{4}-(?:I|II)-p\d+[MI]?\.png$/);
-  assert.ok(!assets.has(a.src));assets.add(a.src);assert.match(a.alt,/Αυθεντική εκφώνηση/);
+  assert.ok(!assets.has(a.src));assets.add(a.src);assert.match(a.alt,/Original statement of problem/);
   const data=fs.readFileSync(a.src);assert.equal(data.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
   assert.equal(crypto.createHash('sha256').update(data).digest('hex'),a.sha256,`${id}: changed original crop`);
   assert.equal(data.readUInt32BE(16),a.width);assert.equal(data.readUInt32BE(20),a.height);
@@ -33,7 +33,7 @@ assert.deepEqual(raw.years[0].problems.map(p=>p.paper),['I','I','I','I']);
 const ctx={URL,BASE:'./',topicOverrides:{},esc:s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'),CBY:{vjimc:{name:'Vojtěch Jarník'}},location:{href:'https://eisatopon.github.io/national-olympiads-bank/'}};
 vm.createContext(ctx);
 vm.runInContext(html.slice(html.indexOf('function textHash('),html.indexOf('function loadCountry(')),ctx);
-vm.runInContext(html.slice(html.indexOf('const IMG_RE ='),html.indexOf('/* ==========================================================\n   Φόρτωση')),ctx);
+vm.runInContext(html.slice(html.indexOf('const IMG_RE ='),html.indexOf('/* ==========================================================\n   Data loading')),ctx);
 vm.runInContext(html.slice(html.indexOf('function aiPrompt('),html.indexOf('function aiUrl(')),ctx);
 const list=ctx.normalizeYears({key:'vjimc'},raw);assert.equal(list.length,261);assert.equal(new Set(list.map(p=>p.uid)).size,261);
 assert.equal(list.find(p=>p.year===2026&&p.day===1&&p.num===1).topic,'Algebra');

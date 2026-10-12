@@ -45,7 +45,7 @@
     --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
     --sans: 'Public Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-    /* Χώρα -> χρώμα */
+    /* Country -> colour */
     --gr: #1f5fbf; --gr-ink: #163f82; --gr-tint: #e6eefb;
     --ar: #0b8fae; --ar-ink: #0a5b70; --ar-tint: #e0f4f8;
     --cn: #c62828; --cn-ink: #8f1c1c; --cn-tint: #fbe3e3;
@@ -320,7 +320,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .updated:empty { display: none; }
 @media (max-width: 820px) { .updated { text-align: left; margin-top: -6px; } }
 
-/* ---------- Πίνακας χωρών × ετών ---------- */
+/* ---------- Country × year grid ---------- */
 .mx-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
 .mx-tabs[hidden] { display: none; }
 .mx-tabs button { appearance: none; border: 1px solid rgba(255, 255, 255, .25); background: transparent; color: #cfd9e3; font: 600 .9rem/1 var(--sans); padding: 8px 14px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
@@ -767,11 +767,11 @@ dialog p { color: var(--muted); font-size: .92rem; }
 'use strict';
 
 /* ==========================================================
-   Δεδομένα και σταθερές
+   Data and constants
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261012-vjimc-261';
+const DATA_VERSION = '20261012-vjimc-english';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1018,7 +1018,7 @@ const ICON = {
 };
 
 /* ==========================================================
-   Κατάσταση
+   State
    ========================================================== */
 const state = { tab: 'national', country: null, year: null, day: 'all', topic: 'all', q: '' };
 const cache = new Map();      // country key -> records[]
@@ -1036,7 +1036,7 @@ let limit = PAGE;
 let renderToken = 0;
 
 /* ==========================================================
-   Βοηθητικά
+   Utilities
    ========================================================== */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -1078,7 +1078,7 @@ function bodyHtml(text, record) {
 }
 
 /* ==========================================================
-   Φόρτωση και ομαλοποίηση δεδομένων
+   Data loading and normalization
    ========================================================== */
 /* ---------- Statement fingerprints ----------
    The browser receives a short fingerprint of each reviewed statement instead of a full copy
@@ -1233,7 +1233,7 @@ function browseCutoff() {
 
 
 /* ==========================================================
-   Πίνακας χωρών × ετών
+   Country × year grid
    ========================================================== */
 let gridBtns = [];
 
@@ -1492,7 +1492,7 @@ $('#mx').addEventListener('keydown', e => {
 });
 
 /* ==========================================================
-   Φίλτρα
+   Filters
    ========================================================== */
 function scoped() {
     const keys = state.country ? [state.country] : tabRows().map(c => c.key);
@@ -1543,7 +1543,7 @@ function syncFilters() {
 }
 
 /* ==========================================================
-   Αποτελέσματα
+   Results
    ========================================================== */
 const box = () => $('#resultsBox');
 
@@ -1825,10 +1825,10 @@ async function refresh() {
 }
 
 /* ==========================================================
-   Το σύνολό μου
+   My problem set
    ========================================================== */
 const getSelected = () => selected.map(u => byUid.get(u)).filter(Boolean);
-function persist() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(selected)); } catch (e) { /* ιδιωτική περιήγηση */ } }
+function persist() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(selected)); } catch (e) { /* private browsing */ } }
 function readSaved() {
     try { const v = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); return Array.isArray(v) ? v.filter(x => typeof x === 'string') : []; }
     catch (e) { return []; }
@@ -2025,13 +2025,13 @@ function aiActionHtml(p) {
     return `<details class="ai-menu" data-ai-uid="${uid}">
         <summary class="btn btn-sm ask-ai" aria-label="Ask AI: problem ${esc(p.num)}">Ask AI ▾</summary>
         <div class="ai-options">
-            ${link('hint', '💡 Μόνο μια υπόδειξη')}
-            ${link('solution', '📝 Πλήρης λύση')}
-            <details class="ai-custom"><summary class="ai-choice">✍️ Η δική μου ερώτηση</summary>
-                <textarea data-ai-question="${uid}" aria-label="Η ερώτησή σου για το πρόβλημα ${esc(p.num)}" placeholder="Π.χ. Δώσε μου μόνο το πρώτο βήμα."></textarea>
-                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="custom" target="_blank" rel="noopener noreferrer" hidden>Άνοιγμα στο ChatGPT ↗</a>
+            ${link('hint', '💡 One small hint')}
+            ${link('solution', '📝 Full solution')}
+            <details class="ai-custom"><summary class="ai-choice">✍️ My own question</summary>
+                <textarea data-ai-question="${uid}" aria-label="Your question about problem ${esc(p.num)}" placeholder="For example: Give me only the first step."></textarea>
+                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="custom" target="_blank" rel="noopener noreferrer" hidden>Open in ChatGPT ↗</a>
             </details>
-            <button type="button" class="ai-choice ai-copy" data-ask-ai="${uid}">Αντιγραφή εκφώνησης / αιτήματος</button>
+            <button type="button" class="ai-choice ai-copy" data-ask-ai="${uid}">Copy statement / request</button>
         </div>
     </details>`;
 }
@@ -2129,7 +2129,7 @@ async function hydrate(uids) {
 }
 
 /* ==========================================================
-   Συμβάντα
+   Events
    ========================================================== */
 function setScope(country, year) { state.country = country; state.year = year; limit = PAGE; refresh(); }
 
@@ -2234,7 +2234,7 @@ toggleEl.addEventListener('click', () => { examEl.classList.toggle('open'); sync
 wide.addEventListener('change', syncToggle);
 
 /* ==========================================================
-   Εκκίνηση
+   Initialization
    ========================================================== */
 function centerPick() {
     const el = $('#mx .cell.pick') || $('#mx .yh.sel') || $('#mx .rl.sel');
@@ -2301,7 +2301,7 @@ async function init() {
     // Without the manifest the grid needs every collection, so fall back to loading them all.
     const rest = manifest ? [] : COUNTRIES.map(c => c.key).filter(k => !cache.has(k) && !inflight.has(k));
     let idx = 0;
-    const worker = async () => { while (idx < rest.length) { const k = rest[idx++]; try { await loadCountry(k); } catch (e) { /* καταγράφεται στο failed */ } } };
+    const worker = async () => { while (idx < rest.length) { const k = rest[idx++]; try { await loadCountry(k); } catch (e) { /* recorded in failed */ } } };
     const restDone = Promise.all(Array.from({ length: 4 }, worker));
 
     selected = merged;
