@@ -98,5 +98,5 @@ assert.ok(html.includes("file: 'undergraduate/IMC-1994-2026-review.json'"));
 assert.ok(html.includes("if (key === 'imc') return {"));
 assert.ok(html.includes("c.key === 'imc' ? 354"));
 assert.ok(html.includes("loadCountry('imc')"));
-assert.ok(html.includes("354 statements available in the year grid"));
+assert.equal(data.years.reduce((n,y)=>n+y.problems.length,0),354,"IMC year-grid dataset must retain all 354 statements");
 console.log(`IMC review archive: 33 years, 354 sourced statements, 350 with LaTeX; ${verified} original-source-verified, ${count-verified} pending. Editorial publication review gate complete.`);
