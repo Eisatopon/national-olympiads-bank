@@ -191,6 +191,27 @@
       ]
     },
     {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in M_2(\\mathbb R)$ satisfy $a^2+b^2+c^2+d^2<\\frac15$. Prove that $I_2+A$ is invertible."
+        },
+        {
+          "number": 2,
+          "problem": "Let $A,B\\in M_n(\\mathbb R)$. (a) Prove that there exists $a>0$ such that for every $\\varepsilon\\in(-a,a)\\setminus\\{0\\}$, the matrix equation $AX+\\varepsilon X=B$, $X\\in M_n(\\mathbb R)$, has a unique solution $X(\\varepsilon)$. (b) Prove that if $B^2=I_n$ and $A$ is diagonalizable, then $\\displaystyle\\lim_{\\varepsilon\\to0}\\varepsilon\\operatorname{Tr}(BX(\\varepsilon))=n-\\operatorname{rank}A$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous. Prove that $\\displaystyle\\int_0^4 f(x(x-3)^2)\\,dx=2\\int_1^3 f(x(x-3)^2)\\,dx$."
+        },
+        {
+          "number": 4,
+          "problem": "(a) For an integer $n\\ge0$, calculate $\\displaystyle\\int_0^1(1-t)^ne^t\\,dt$. (b) For a fixed integer $k\\ge0$, let $\\displaystyle x_n=\\sum_{i=k}^n\\binom ik\\left(e-1-\\frac1{1!}-\\frac1{2!}-\\cdots-\\frac1{i!}\\right)$ for $n\\ge k$. Prove that $(x_n)$ converges and find its limit."
+        }
+      ]
+    },
+    {
       "year": 2018,
       "problems": [
         {
@@ -250,6 +271,27 @@
         {
           "number": 4,
           "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A$ be an $n\\times n$ matrix with strictly positive entries and let $u,v\\in\\mathbb R^n$ have strictly positive entries. Suppose $Au=v$ and $Av=u$. Prove that $u=v$."
+        },
+        {
+          "number": 2,
+          "problem": "Calculate $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^\\infty e^{-x}\\sqrt[n]{\\frac{e^x-1-x-\\frac{x^2}{2!}-\\cdots-\\frac{x^n}{n!}}{\\,e^x\\,}}\\,dx$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A^*A^2=AA^*$, where $A^*$ is the conjugate transpose of $A$. Prove that $A^2=A$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $(a_n)_{n\\ge1}$ be a monotonically decreasing sequence of real numbers converging to $0$. Prove that $\\displaystyle\\sum_{n=1}^\\infty\\frac{a_n}{n}$ converges if and only if $(a_n\\ln n)_{n\\ge1}$ is bounded and $\\displaystyle\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ converges."
         }
       ]
     }
