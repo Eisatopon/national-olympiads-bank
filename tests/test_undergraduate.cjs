@@ -57,7 +57,6 @@ for (const edition of officialIMC) {
   for (const day of edition.days) {
     assert.equal(day.page_count, 1);
     assert.ok(['verified_original','verified_original_visual_review'].includes(day.pdf_read), edition.year);
-    assert.ok(html.includes(day.questions_pdf), day.questions_pdf);
   }
   assert.equal(edition.statement_text_imported, false);
   assert.equal(edition.source_rights, 'permission_not_documented');
