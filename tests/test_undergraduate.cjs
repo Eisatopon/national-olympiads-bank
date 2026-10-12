@@ -13,7 +13,7 @@ for (const r of data.records) {
   assert.ok(r.paper_structure && r.source_status);
 }
 assert.match(html, /\['undergraduate', 'Undergraduate'\]/);
-assert.match(html, /id="undergraduateSources"/);
+assert.doesNotMatch(html, /id="undergraduateSources"|class="undergraduate-card"/);
 assert.match(html, /key: 'seemous'.*scope: 'undergraduate'/);
 const seemous = JSON.parse(fs.readFileSync('undergraduate/SEEMOUS-2007-2010-problems.json', 'utf8'));
 assert.deepEqual(seemous.years.map(y => y.year), Array.from({length:20}, (_,i) => 2007 + i));

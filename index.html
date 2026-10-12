@@ -573,18 +573,6 @@ dialog p { color: var(--muted); font-size: .92rem; }
     #printSheet { position: static; left: auto; width: auto; }
 }
 
-/* Undergraduate source catalogue — isolated from the established country grids. */
-.undergraduate-sources{max-width:1120px;margin:0 auto;padding:24px 20px 32px;color:var(--text)}
-.undergraduate-sources h2{font:700 1.35rem var(--serif);color:var(--ink);margin:0 0 8px}
-.undergraduate-sources>p{max-width:780px;line-height:1.6;color:var(--muted)}
-.undergraduate-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
-.undergraduate-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
-.undergraduate-card h3{font:700 1rem var(--sans);color:var(--ink);line-height:1.35;margin:0 0 9px}
-.undergraduate-card p{font-size:.88rem;line-height:1.6;color:var(--muted);margin:0 0 12px}
-.undergraduate-card a{color:var(--focus);font-size:.87rem;font-weight:700}
-.undergraduate-card span,.undergraduate-note{font-size:.84rem;color:var(--muted)}
-.undergraduate-card .undergraduate-papers{padding-top:10px;margin-top:12px;border-top:1px solid var(--line)}
-.undergraduate-card .undergraduate-papers a{display:inline;font-size:.84rem}
 .imc-historical{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;font-size:.88rem}.imc-historical summary{cursor:pointer;font-weight:700;color:var(--ink)}.imc-historical p{margin-top:10px}.imc-year-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(54px,1fr));gap:6px;margin:10px 0}.imc-year-links a{display:block;padding:7px 4px;text-align:center;border:1px solid var(--line);border-radius:6px;text-decoration:none}.imc-year-links a:hover,.imc-year-links a:focus-visible{border-color:var(--focus);text-decoration:underline}
 
 .imc-source-index{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:7px;margin-top:12px}.imc-source-year{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border:1px solid var(--line);border-radius:7px;padding:8px}.imc-source-year>a{min-width:36px}.imc-source-year span{display:flex;gap:8px;flex-wrap:wrap}.imc-source-year span a{font-size:.8rem}
@@ -602,7 +590,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
     <div class="wrap hero-body">
         <div>
             <h1>World Mathematical Olympiads Bank</h1>
-            <p class="lede">Mathematical olympiad problems from national, regional and international competitions, tournaments and university contests. Browse the country-year grids or the Undergraduate source catalogue.</p>
+            <p class="lede">Mathematical olympiad problems from national, regional and international competitions, tournaments and university contests. Browse the competition-year grids.</p>
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
@@ -627,18 +615,6 @@ dialog p { color: var(--muted); font-size: .92rem; }
             <div class="mx" id="mx" role="group" aria-label="Country and year grid"></div>
         </div>
 
-        <section id="undergraduateSources" class="undergraduate-sources" aria-label="Undergraduate competition archives" hidden>
-            <h2>Undergraduate · University Mathematics Competitions</h2>
-            <p>University-level competitions, including international university contests. Each competition retains its precise eligibility rules. Browse imported undergraduate problem statements by competition and year. IMC and Putnam transcriptions are preliminary and still require comparison with the official question papers.</p>
-            <div class="undergraduate-cards">
-                <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>Undergraduate · 1985–2025 · 492 full problem statements in the year grid, with mathematical LaTeX. Historical completeness and original-PDF fidelity review remain ongoing.</p></article>
-                <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International undergraduate · 1994–2026 · 354 statements available in the year grid. Draft transcriptions: mathematical fidelity against the original IMC PDFs is not yet certified.</p></article>
-                <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · 2007–2026 · 80 problem statements available in the undergraduate archive; interactive integration is pending verification.</p></article>
-                <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>Undergraduate · 1991–2026 · 261 original problem statements, including both student categories and the 4-M / 4-I alternatives in 1997–1998.</p></article>
-                <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Undergraduate · Distinct paper variants A, B and C. Problem statements not yet imported.</p></article>
-            </div>
-            <p class="undergraduate-note">The undergraduate collections follow the same problem-bank principle as the national competitions: searchable statements, year and problem numbers, and no PDF catalogues. IMC and Putnam statements are available as explicitly unverified transcriptions; they must not be treated as certified original text until checked against the official PDFs. The existing national, regional, international and tournament grids are unchanged.</p>
-        </section>
 
     </div>
 </header>
@@ -771,7 +747,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261012-vjimc-english';
+const DATA_VERSION = '20261012-undergraduate-grid-only';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1003,7 +979,7 @@ const COUNTRIES = [
 COUNTRIES.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
 /* Five sections: the four established problem grids plus the university competition
-   source catalogue. University competition eligibility and paper variants are recorded
+   competition grid. University competition eligibility and paper variants are recorded
    independently in metadata/undergraduate-competitions.json. */
 const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments'], ['undergraduate', 'Undergraduate']];
 const scopeOf = c => c.scope || 'national';
@@ -1285,7 +1261,6 @@ function paintTab() {
 function setTab(tab, keepScope) {
     if (tab === state.tab) return;
     state.tab = tab;
-    document.querySelector('#undergraduateSources').hidden = tab !== 'undergraduate';
     document.querySelector('.mx-wrap').hidden = false;
     document.querySelector('#main').hidden = false;
     document.querySelector('.mx-head').hidden = false;
