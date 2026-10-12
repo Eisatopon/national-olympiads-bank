@@ -103,10 +103,17 @@ def main():
             got = sorted(parser.problems)
             if len(got) != EXPECTED[year]:
                 raise ValueError(f"Found {len(got)} problems, expected {EXPECTED[year]}")
-            if [n for _, n in got] != list(range(1, EXPECTED[year] + 1)):
-                raise ValueError("Official problem numbers incomplete or duplicated")
-            if any(d not in (1, 2) for d, _ in got):
-                raise ValueError("Unknown day identifier")
+            # Source URLs use DAY-LOCAL numbering. Day 2 starts again at p1,
+            # even though the displayed official numbers continue globally.
+            day1_count = EXPECTED[year] // 2
+            required = (
+                [(1, n) for n in range(1, day1_count + 1)]
+                + [(2, n) for n in range(1, EXPECTED[year] - day1_count + 1)]
+            )
+            if got != required:
+                missing = sorted(set(required) - set(got))
+                extra = sorted(set(got) - set(required))
+                raise ValueError(f"Day-local numbering invalid: missing={missing}, extra={extra}")
         except ValueError as e:
             errors.append({"year": year, "source": "problem_inventory", "error": str(e)})
             print(f"FAIL inventory {year}: {e}", flush=True)
