@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-"""Stage IMC statements from collected source HTML; never publish unverified text.
+"""Extract unverified IMC problem candidates from archived ANNUAL pages.
 
-Input: archive created by fetch_imc_sources.py.
-Output: review-only JSON, one entry per captured original HTML page.
-
-Requires beautifulsoup4. The text between the page title and the official
-solution heading is only a CANDIDATE until manually checked against IMC PDFs.
+This is deliberately fail-closed: a missing or ambiguous boundary is reported
+rather than silently guessed. Nothing produced here is ready for publication.
 """
 import argparse
 import json
@@ -13,70 +10,98 @@ import pathlib
 import re
 from bs4 import BeautifulSoup, NavigableString, Tag
 
-TITLE = re.compile(r"IMC\s+(\d{4})\s*[·\-]\s*Day\s+([12])\s*[·\-]\s*P(\d+)")
-SOLUTION = re.compile(r"^\s*Solution\s*\(official\)\s*$", re.I)
-IGNORE = {"script", "style", "noscript", "svg"}
-MATH_TAGS = {"math"}
+DAY = re.compile(r"^Day\s*([12])$", re.I)
+PROBLEM = re.compile(r"^Problem\s+(\d+)$", re.I)
+STOP = re.compile(r"^(?:Day\s*[12]|Problem\s+\d+|Solutions?|Statistics)$", re.I)
+
+def rendered_math(node):
+    annotations = node.select('annotation[encoding="application/x-tex"]')
+    if annotations:
+        tex = annotations[0].get_text(strip=True)
+        if tex:
+            return "$" + tex + "$"
+    return "[MATH_REQUIRES_REVIEW]"
 
 def render(node):
     if isinstance(node, NavigableString):
         return str(node)
-    if not isinstance(node, Tag) or node.name in IGNORE:
+    if not isinstance(node, Tag) or node.name in {"script", "style", "noscript"}:
         return ""
-    if node.name == "annotation" and node.get("encoding") == "application/x-tex":
-        return ""
-    if node.name in MATH_TAGS or "katex" in node.get("class", []):
-        annotations = node.select('annotation[encoding="application/x-tex"]')
-        if annotations:
-            return "$" + annotations[0].get_text(strip=True) + "$"
-        # Do not pretend rendered glyphs are faithful LaTeX.
-        return "[MATH_REQUIRES_REVIEW]"
+    classes = node.get("class", [])
+    if node.name == "math" or "katex" in classes or "MathJax" in classes:
+        return rendered_math(node)
     if node.name == "img":
         return "[FIGURE_REQUIRES_REVIEW]"
+    if node.name == "button":
+        return ""
+    if node.name == "br":
+        return "\n"
     return "".join(render(child) for child in node.children)
 
-def extract(html, year, day, number):
+def clean(s):
+    return re.sub(r"[ \t]+", " ", s).strip()
+
+def extract(html, year):
     soup = BeautifulSoup(html, "html.parser")
-    heading = soup.find("h1", string=lambda s: bool(s and TITLE.search(s)))
-    if heading is None:
-        raise ValueError("Matching problem title not found")
-    match = TITLE.search(heading.get_text(" ", strip=True))
-    if (int(match[1]), int(match[2]), int(match[3])) != (year, day, number):
-        raise ValueError("Problem identity mismatch")
-    # The content must be isolated structurally; never sweep the entire page,
-    # because the official solution and related problems are also present.
-    main = heading.find_parent("main")
-    if main is None:
-        raise ValueError("No <main> root available for isolation")
-    solution = main.find(string=lambda s: bool(s and SOLUTION.fullmatch(s.strip())))
-    if solution is None:
-        raise ValueError("Official-solution boundary not detected")
-    candidate_nodes = []
-    for node in main.descendants:
-        if node is heading:
+    content = soup.select_one("main") or soup.select_one("article")
+    if content is None:
+        raise ValueError("Neither <main> nor <article> detected")
+    # Heading conventions are deliberately strict to prevent collecting
+    # site navigation, solutions, or duplicate rendered MathJax glyphs.
+    headings = [h for h in content.find_all(re.compile(r"^h[1-6]$"))
+                if DAY.fullmatch(h.get_text(" ", strip=True))
+                or PROBLEM.fullmatch(h.get_text(" ", strip=True))]
+    if not headings:
+        raise ValueError("No recognized Day/Problem headings")
+    records, day = [], None
+    for idx, heading in enumerate(headings):
+        title = heading.get_text(" ", strip=True)
+        d = DAY.fullmatch(title)
+        if d:
+            day = int(d[1])
             continue
-        if node is solution:
-            break
-        if isinstance(node, Tag) and node.name in {"p", "li"}:
-            if node.find_parent("a") or node.find_parent("button"):
-                continue
-            # Avoid duplicates: capture top-level textual blocks only.
-            if node.find_parent(["p", "li"]) is not None:
-                continue
-            txt = render(node).strip()
-            if txt:
-                candidate_nodes.append(txt)
-    candidate = "\n\n".join(candidate_nodes)
-    flags = []
-    if not candidate or len(candidate) < 30:
-        flags.append("missing_or_short_statement")
-    if "[MATH_REQUIRES_REVIEW]" in candidate:
-        flags.append("math_not_recovered")
-    if "[FIGURE_REQUIRES_REVIEW]" in candidate:
-        flags.append("figure_requires_review")
-    if "Solution (official)" in candidate:
-        flags.append("solution_leakage")
-    return candidate, flags
+        p = PROBLEM.fullmatch(title)
+        if not p:
+            continue
+        if day is None:
+            raise ValueError("Problem heading found without preceding Day heading")
+        # Only accept sibling-contained problem text. Layout variants must be
+        # investigated separately rather than silently creating corrupt JSON.
+        chunks = []
+        cursor = heading.next_sibling
+        while cursor is not None:
+            if isinstance(cursor, Tag) and re.fullmatch(r"h[1-6]", cursor.name or ""):
+                break
+            if isinstance(cursor, Tag) and STOP.fullmatch(cursor.get_text(" ", strip=True)):
+                break
+            if isinstance(cursor, NavigableString):
+                if cursor.strip():
+                    chunks.append(str(cursor).strip())
+            elif isinstance(cursor, Tag):
+                chunks.append(render(cursor))
+            cursor = cursor.next_sibling
+        statement = clean("\n".join(chunks))
+        flags = []
+        if len(statement) < 30:
+            flags.append("empty_or_too_short")
+        if "[MATH_REQUIRES_REVIEW]" in statement:
+            flags.append("math_requires_review")
+        if "[FIGURE_REQUIRES_REVIEW]" in statement:
+            flags.append("figure_requires_review")
+        if re.search(r"(?i)official solution|show solution", statement):
+            flags.append("possible_solution_leak")
+        records.append({
+            "year": year, "day": day, "number": int(p[1]),
+            "statement_candidate": statement,
+            "review_flags": flags, "statement_verified": False,
+            "publication_eligible": False
+        })
+    keys = [(x["day"], x["number"]) for x in records]
+    if len(keys) != len(set(keys)):
+        raise ValueError("Duplicate year/day/problem")
+    if not records:
+        raise ValueError("No problems extracted")
+    return records
 
 def main():
     parser = argparse.ArgumentParser()
@@ -84,40 +109,36 @@ def main():
     parser.add_argument("--output", required=True, type=pathlib.Path)
     args = parser.parse_args()
     manifest = json.loads((args.archive / "manifest.json").read_text(encoding="utf-8"))
-    records = []
-    errors = []
-    for item in manifest["sources"]:
-        if item.get("source") != "studolymp_problem":
+    records, failures = [], []
+    for source in manifest["sources"]:
+        if source["source"] != "studolymp_statements":
             continue
-        year, day, number = item["year"], item["day"], item["number"]
+        year = source["year"]
         try:
-            html = (args.archive / item["path"]).read_text(encoding="utf-8")
-            statement, flags = extract(html, year, day, number)
-        except (OSError, UnicodeError, ValueError) as exc:
-            statement, flags = "", ["extraction_failed"]
-            errors.append({"year": year, "day": day, "number": number, "error": str(exc)})
-        records.append({
-            "year": year, "day": day, "number": number,
-            "statement_candidate": statement, "review_flags": flags,
-            "source_url": item["resolved_url"], "source_sha256": item["sha256"],
-            "statement_verified": False, "publication_eligible": False
-        })
+            raw = (args.archive / source["path"]).read_text(encoding="utf-8")
+            extracted = extract(raw, year)
+            for item in extracted:
+                item["source_url"] = source["resolved_url"]
+                item["source_sha256"] = source["sha256"]
+            records.extend(extracted)
+            print("STAGED", year, len(extracted), flush=True)
+        except (ValueError, OSError, UnicodeError) as exc:
+            failures.append({"year": year, "error": str(exc)})
+            print("FAIL", year, str(exc), flush=True)
     records.sort(key=lambda r: (r["year"], r["day"], r["number"]))
-    report = {
-        "competition": "IMC",
-        "status": "REVIEW_ONLY_NOT_FOR_PUBLICATION",
-        "records": records, "errors": errors,
-        "count": len(records),
-        "clean_candidates": sum(1 for r in records if r["statement_candidate"] and not r["review_flags"]),
-        "verified": 0,
-        "note": "Every candidate requires comparison with the original IMC statement PDF."
+    output = {
+        "status": "UNVERIFIED_CANDIDATES_NOT_FOR_PUBLICATION",
+        "years_expected": manifest["years_requested"],
+        "years_staged": sorted({r["year"] for r in records}),
+        "problem_candidates": len(records),
+        "candidates": records,
+        "failures": failures,
+        "note": "Do not publish: all equations, full text, authorship and numbering need comparison to original official papers."
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("IMC staged:", report["count"], "clean candidates:", report["clean_candidates"],
-          "extraction errors:", len(errors))
-    if errors or not records:
-        raise SystemExit("Extraction incomplete; inspect review JSON and do not publish")
+    args.output.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if failures or len(output["years_staged"]) != len(manifest["years_requested"]):
+        raise SystemExit("Statement staging incomplete; inspect report artifact")
 
 if __name__ == "__main__":
     main()
