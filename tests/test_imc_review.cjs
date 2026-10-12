@@ -5,8 +5,8 @@ const path = 'undergraduate/IMC-1994-2026-review.json';
 const data = JSON.parse(fs.readFileSync(path, 'utf8'));
 const countByYear = y => y <= 2008 ? 12 : y <= 2019 ? 10 : y <= 2022 ? 8 : 10;
 assert.equal(data.short_name, 'IMC');
-assert.equal(data.status, 'DRAFT_REQUIRES_OFFICIAL_PDF_VERIFICATION');
-assert.equal(data.publication_eligible, false);
+assert.equal(data.status, 'EDITORIAL_SOURCE_REVIEW_COMPLETE');
+assert.equal(data.publication_eligible, true);
 assert.equal(data.problem_count, 354);
 assert.deepEqual(data.years.map(y => y.year), Array.from({length:33}, (_,i) => 1994+i));
 const ids = new Set();
@@ -91,6 +91,7 @@ for (const year of data.years) {
 }
 assert.equal(count, 354);
 assert.equal(withLatex, 350);
+assert.equal(verified,354,'All 354 statements must retain documented source verification for publication eligibility');
 const html = fs.readFileSync('index.html','utf8');
 assert.ok(html.includes("key: 'imc', name: 'IMC'"));
 assert.ok(html.includes("file: 'undergraduate/IMC-1994-2026-review.json'"));
@@ -98,4 +99,4 @@ assert.ok(html.includes("if (key === 'imc') return {"));
 assert.ok(html.includes("c.key === 'imc' ? 354"));
 assert.ok(html.includes("loadCountry('imc')"));
 assert.ok(html.includes("354 statements available in the year grid"));
-console.log(`IMC review archive: 33 years, 354 sourced statements, 350 with LaTeX; ${verified} original-source-verified, ${count-verified} pending. Publication remains blocked.`);
+console.log(`IMC review archive: 33 years, 354 sourced statements, 350 with LaTeX; ${verified} original-source-verified, ${count-verified} pending. Editorial publication review gate complete.`);
