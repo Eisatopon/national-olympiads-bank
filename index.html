@@ -631,7 +631,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
             <div class="undergraduate-cards">
                 <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>Undergraduate · Problem statements not yet imported. This collection will become selectable by year and problem after verified JSON imports.</p></article>
                 <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International undergraduate · Problem statements not yet imported. Original paper links are not displayed in the bank.</p></article>
-                <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · 2007–2014 · 32 problem statements available in the undergraduate archive; interactive integration is pending verification.</p></article>
+                <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · 2007–2014 and 2018–2020 · 44 problem statements available in the undergraduate archive; interactive integration is pending verification.</p></article>
                 <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>Undergraduate · Two separate contest categories. Problem statements not yet imported.</p></article>
                 <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Undergraduate · Distinct paper variants A, B and C. Problem statements not yet imported.</p></article>
             </div>
@@ -1181,7 +1181,7 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 
 /* ---------- Manifest: counts without downloading the collections ---------- */
 function manifestYears(key) {
-    if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4,'2011':4,'2012':4,'2013':4,'2014':4};
+    if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4,'2011':4,'2012':4,'2013':4,'2014':4,'2018':4,'2019':4,'2020':4};
     const m = manifest && manifest.files && manifest.files[CBY[key].file];
     return m ? m.years : null;
 }
@@ -1197,7 +1197,7 @@ function bankTotal() {
 /* "All problems" without filters shows the newest problems first, so only the
    collections that reach the visible page are downloaded. */
 function tabTotal(tab) {
-    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'seemous' ? 32 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
+    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'seemous' ? 44 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
 }
 function browseTotal() {
     if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
