@@ -18,6 +18,13 @@ for (const year of data.years) {
   assert.deepEqual(year.problems.map(p=>p.number), Array.from({length:countByYear(year.year)},(_,i)=>i+1));
   for (const p of year.problems) {
     const id = year.year+':'+p.number;
+    if (year.year >= 2009 && year.year <= 2013) {
+      const expectedPrefix = year.year <= 2011 ? `imc${year.year}-day${p.day}-solutions.pdf` : `IMC${year.year}-day${p.day}-solutions.pdf`;
+      const expectedPdf = `https://www.imc-math.org.uk/imc${year.year}/${expectedPrefix}`;
+      assert.equal(p.official_pdf_candidate_url, expectedPdf, 'Incorrect original PDF candidate '+id);
+      assert.equal(p.verification_source, expectedPdf, 'Incorrect verified source '+id);
+      assert.equal(p.statement_verified, true, 'Incomplete five-year source review '+id);
+    }
     if (year.year >= 2004 && year.year <= 2008) {
       const expectedDay = p.number <= 6 ? 1 : 2;
       const officialCandidate = `https://www.imc-math.org.uk/imc${year.year}/day${expectedDay}_solutions.pdf`;
