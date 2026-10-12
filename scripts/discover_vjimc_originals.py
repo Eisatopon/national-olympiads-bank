@@ -4,6 +4,7 @@ import json, subprocess, tempfile, urllib.request
 from pathlib import Path
 manifest=json.loads(Path('metadata/vojtech-jarnik-editions-source-manifest.json').read_text())
 results=[]
+extracted=[]
 for edition in manifest['editions']:
     n=edition['edition']
     year=edition['year']
@@ -18,6 +19,12 @@ for edition in manifest['editions']:
             p=subprocess.run(['pdftotext','-layout',str(pdf),'-'],capture_output=True,text=True,timeout=15)
             if p.returncode: raise ValueError('pdftotext_error')
             t=p.stdout
+        # Save unedited extracted paper text as a REVIEW CANDIDATE only.
+        # Problem boundaries and mathematical formulae still require visual PDF inspection.
+        extracted.append({'year':year,'edition':n,'source_url':url,
+                          'original_pdf_text':t,'statement_verified':False,
+                          'publication_eligible':False,
+                          'review_flags':['pdf_text_extraction_only_visual_review_pending']})
         cats=[c for c in ['I','II'] if ('Category '+c+'\n') in t or ('Category '+c+' ') in t]
         record.update(status='pdf_text_extracted',categories_found=cats,raw_bytes=len(raw),text_chars=len(t),
           pdf_problem_word_occurrences=t.lower().count('problem'))
@@ -26,5 +33,8 @@ for edition in manifest['editions']:
     results.append(record)
 Path('out').mkdir(exist_ok=True)
 Path('out/vjimc-source-discovery.json').write_text(json.dumps({'competition':'VJIMC','edition_count':len(results),'results':results},ensure_ascii=False,indent=2)+'\\n')
+Path('out/vjimc-original-pdf-text-review.json').write_text(
+    json.dumps({'competition':'VJIMC','research_only':True,'documents':extracted},
+               ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('VJIMC papers obtained:',sum(x['status']=='pdf_text_extracted' for x in results),'/',len(results))
 for x in results: print(x['year'],x['edition'],x['status'],x['categories_found'])
