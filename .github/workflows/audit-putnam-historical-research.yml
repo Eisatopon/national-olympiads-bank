@@ -1,0 +1,20 @@
+name: Audit historical Putnam research integrity
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - research/putnam/**
+      - scripts/audit_putnam_historical_research.py
+      - .github/workflows/audit-putnam-historical-research.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fail-closed integrity and nonpublication checks
+        run: python scripts/audit_putnam_historical_research.py
