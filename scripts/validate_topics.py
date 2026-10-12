@@ -15,6 +15,8 @@ def validate_topics(root=ROOT):
     active_count=0
     for match in re.finditer(r"key: '([^']+)'[^\n]*file: '([^']+)'[^\n]*",(root/'index.html').read_text()):
         key,filename=match.group(1),match.group(2)
+        if '/' in filename:
+            continue  # Undergraduate subcollections have their own import review lifecycle.
         data=json.loads((root/filename).read_text())
         if not isinstance(data['years'],list):
             for year,bucket in data.get('data',{}).items():
