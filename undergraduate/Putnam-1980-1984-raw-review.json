@@ -8,7 +8,7 @@
   "problem_count": 60,
   "source_dataset": "PutnamGAP by Hao, Wan and Zhai; originals reproduced from MAA books",
   "rights_note": "Owner reports oral permission from MAA colleagues; authority and scope not independently verified.",
-  "note": "RAW research transcripts. Only individual records with statement_verified=true were visually checked against the original paper; all other statements remain unverified. Publication eligibility is false pending full audit and rights review.",
+  "note": "Eleven individual statements visually checked against original paper (1980 A1-A6, 1984 A2-A6). All other records remain unverified; publication_eligible=false pending full audit and rights review.",
   "years": [
     {
       "year": 1980,
@@ -43,52 +43,48 @@
           "problem": "Problem A-3\nEvaluate\n\\[\n\\int_{0}^{\\pi / 2} \\frac{d x}{1+(\\tan x)^{\\sqrt{2}}}\n\\]",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1980-A-3",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1980-A-3.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A4",
           "problem": "Problem A-4\n(a) Prove that there exist integers \\( a, b, c \\), not all zero and each of absolute value less than one million, such that\n\\[\n|a+b \\sqrt{2}+c \\sqrt{3}|<10^{-11}\n\\]\n(b) Let \\( a, b, c \\) be integers, not all zero and each of absolute value less than one million. Prove that\n\\[\n|a+b \\sqrt{2}+c \\sqrt{3}|>10^{-21}\n\\]",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1980-A-4",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1980-A-4.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A5",
           "problem": "Problem A-5\nLet \\( P(t) \\) be a nonconstant polynomial with real coefficients. Prove that the system of simultaneous equations\n\\[\n0=\\int_{0}^{x} P(t) \\sin t d t=\\int_{0}^{x} P(t) \\cos t d t\n\\]\nhas only finitely many real solutions \\( x \\).",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1980-A-5",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1980-A-5.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A6",
-          "problem": "Problem A-6\nLet \\( C \\) be the class of all real valued continuously differentiable functions \\( f \\) on the interval \\( 0<x<1 \\) with \\( f(0)=0 \\) and \\( f(1)=1 \\). Determine the largest real number \\( u \\) such that\n\\[\nu \\leqslant \\int_{0}^{1}\\left|f^{\\prime}(x)-f(x)\\right| d x\n\\]\nfor all \\( f \\) in \\( C \\).",
+          "problem": "Problem A-6\nLet \\( C \\) be the class of all real valued continuously differentiable functions \\( f \\) on the interval \\( 0\\leq x\\leq 1 \\) with \\( f(0)=0 \\) and \\( f(1)=1 \\). Determine the largest real number \\( u \\) such that\n\\[\nu \\leqslant \\int_{0}^{1}\\left|f^{\\prime}(x)-f(x)\\right| d x\n\\]\nfor all \\( f \\) in \\( C \\).",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1980-A-6",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1980-A-6.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1980.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "B1",
@@ -687,55 +683,51 @@
         },
         {
           "number": "A3",
-          "problem": "Problem A-3\nLet \\( n \\) be a positive integer. Let \\( a, b, x \\) be real numbers, with \\( a \\neq b \\), and let \\( M_{n} \\) denote the \\( 2 n \\times 2 n \\) matrix whose ( \\( i, j \\) ) entry \\( m_{i j} \\) is given by\n\\[\nm_{i j}=\\left\\{\\begin{array}{ll}\nx & \\text { if } i=j, \\\\\na & \\text { if } i \\neq j \\\\\nb & \\text { if } i \\neq j\n\\end{array} \\text { and } i+j \\text { is even }, ~ i+j\\right. \\text { is odd. }\n\\]\n\nThus, for example, \\( M_{2}=\\left(\\begin{array}{llll}x & b & a & b \\\\ b & x & b & a \\\\ a & b & x & b \\\\ b & a & b & x\\end{array}\\right) \\). Express \\( \\lim _{x \\rightarrow a} \\operatorname{det} M_{n} /(x-a)^{2 n-2} \\) as a polynomial in \\( a, b \\), and \\( n \\), where \\( \\operatorname{det} M_{n} \\) denotes the determinant of \\( M_{n} \\).",
+          "problem": "Let \\(n\\) be a positive integer. Let \\(a,b,x\\) be real numbers, with \\(a\\neq b\\), and let \\(M_n\\) denote the \\(2n\\times 2n\\) matrix whose \\((i,j)\\) entry \\(m_{ij}\\) is given by\n\\[\nm_{ij}=\n\\begin{cases}\nx & \\text{if }i=j,\\\\\na & \\text{if }i\\neq j\\text{ and }i+j\\text{ is even},\\\\\nb & \\text{if }i\\neq j\\text{ and }i+j\\text{ is odd}.\n\\end{cases}\n\\]\nThus, for example,\n\\[\nM_2=\\begin{pmatrix}\nx&b&a&b\\\\\nb&x&b&a\\\\\na&b&x&b\\\\\nb&a&b&x\n\\end{pmatrix}.\n\\]\nExpress \\(\\lim_{x\\to a}\\frac{\\det M_n}{(x-a)^{2n-2}}\\) as a polynomial in \\(a,b,n\\), where \\(\\det M_n\\) denotes the determinant of \\(M_n\\).",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1984-A-3",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1984-A-3.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A4",
           "problem": "Problem A-4\nA convex pentagon \\( P=A B C D E \\), with vertices labeled consecutively, is inscribed in a circle of radius 1 . Find the maximum area of \\( P \\) subject to the condition that the chords \\( A C \\) and \\( B D \\) be perpendicular.",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1984-A-4",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1984-A-4.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A5",
           "problem": "Problem A-5\nLet \\( R \\) be the region consisting of all triples ( \\( x, y, z \\) ) of nonnegative real numbers satisfying \\( x+y+z \\leqslant 1 \\). Let \\( w=1-x-y-z \\). Express the value of the triple integral\n\\[\n\\iiint_{R} x^{1} y^{9} z^{8} w^{4} d x d y d z\n\\]\nin the form \\( a!b!c!d!/ n! \\), where \\( a, b, c, d \\), and \\( n \\) are positive integers.",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1984-A-5",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1984-A-5.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "A6",
           "problem": "Problem A-6. Let \\( n \\) be a positive integer, and let \\( f(n) \\) denote the last nonzero digit in the decimal expansion of \\( n! \\). For instance, \\( f(5)=2 \\).\n(a) Show that if \\( a_{1}, a_{2}, \\ldots, a_{k} \\) are distinct nonnegative integers, then \\( f\\left(5^{a_{1}}+5^{a_{2}}+\\cdots+5^{a_{k}}\\right) \\) depends only on the sum \\( a_{1}+a_{2}+\\cdots+a_{k} \\).\n(b) Assuming part (a), we can define\n\\[\ng(s)=f\\left(5^{a_{1}}+5^{a_{2}}+\\cdots+5^{a_{k}}\\right)\n\\]\nwhere \\( s=a_{1}+a_{2}+\\cdots+a_{k} \\). Find the least positive integer \\( p \\) for which\n\\[\ng(s)=g(s+p), \\quad \\text { for all } s \\geqslant 1\n\\]\nor else show that no such \\( p \\) exists.",
           "topics": [],
           "problem_dna": [],
-          "statement_verified": false,
+          "statement_verified": true,
           "source_id": "1984-A-6",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1984-A-6.json",
-          "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison"
-          ]
+          "review_flags": [],
+          "verification_source": "https://math.ucsd.edu/~pfitz/downloads/putnam/putnam1984.pdf",
+          "verification_method": "Visual comparison with original competition examination A, page 1 (2026-10-12)"
         },
         {
           "number": "B1",
