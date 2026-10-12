@@ -12,5 +12,5 @@ assert.equal(y1991.category_II_original_not_found,true);
 assert.equal(y1991.public_full_competition_eligible,false);
 assert.deepEqual(y1991.problems.map(p=>p.number),[1,2,3,4]);
 assert.ok(y1991.problems.every(p=>p.category==='I'&&p.source_page===1&&p.source_verified===true));
-assert.ok(y1991.problems.every(p=>(p.problem.match(/\\$/g)||[]).length%2===0));
+assert.ok(y1991.problems.every(p=>(p.problem.match(/\$/g)||[]).length%2===0));
 console.log('VJIMC historical editions and 1991 original Category I source staging verified.');
