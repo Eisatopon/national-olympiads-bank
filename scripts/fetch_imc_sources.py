@@ -18,7 +18,7 @@ import urllib.request
 START, END = 1994, 2026
 SOURCES = (
     ("official", "https://www.imc-math.org.uk/?item=problems&year={year}"),
-    ("studolymp", "https://studolymp.com/imc/{year}/problems"),
+    ("studolymp", "https://studolymp.com/imc/{year}"),
 )
 
 def fetch(url):
