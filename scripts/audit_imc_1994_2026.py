@@ -15,8 +15,11 @@ expected_counts={**{y:12 for y in range(1994,2009)},
                  **{y:10 for y in range(2009,2020)},
                  **{y:8 for y in range(2020,2023)},
                  **{y:10 for y in range(2023,2027)}}
-if data.get("publication_eligible") is not False:
-    errors.append("Review file cannot be publication eligible")
+eligible = data.get("publication_eligible")
+if eligible is not True:
+    errors.append("Editorial publication gate must reflect completed 354-source review")
+if data.get("status") != "EDITORIAL_SOURCE_REVIEW_COMPLETE":
+    errors.append("IMC editorial source review must be marked complete")
 years=data.get("years",[])
 if [y.get("year") for y in years]!=list(range(1994,2027)):
     errors.append("IMC years not consecutive or unordered")
@@ -59,5 +62,5 @@ if total!=354 or data.get("problem_count")!=354:
     errors.append(f"Incorrect total: {total}")
 print(f"IMC audit: {len(years)} years, {total} statements; structural issues {len(errors)}")
 for e in errors: print("FAIL:",e,file=sys.stderr)
-print("Verification metadata only; no public redistribution authorized by structural audit.")
+print("Verified metadata and editorial gate consistency checked; source fidelity and legal permission not independently certified by audit.")
 sys.exit(bool(errors))
