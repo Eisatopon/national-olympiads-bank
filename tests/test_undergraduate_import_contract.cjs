@@ -22,6 +22,23 @@ for(const c of v.collections){
    // Guard all imported full statements against accidental truncation and broken TeX.
    const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
    assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
+   assert.equal(problems.filter(p=>p.statement_verified).length,8,'SEEMOUS original-source review count changed unexpectedly');
+   for(const p of problems){
+     const id=`${p.year}:${p.number}`;
+     if (p.year===2024 || p.year===2026){
+       const official = p.year===2024
+         ? 'https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf'
+         : 'https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf';
+       assert.equal(p.statement_verified,true,'Original paper check missing '+id);
+       assert.equal(p.verification_source,official,'Wrong original contest paper '+id);
+       assert.equal(p.verification_page,1,'Wrong original contest page '+id);
+       assert.ok(p.verification_method && p.verified_on && p.review_flags.length===0,'Missing provenance '+id);
+     }else{
+       assert.equal(p.statement_verified,false,'Unverified original marked verified '+id);
+       assert.ok(p.review_flags.includes('original_official_paper_statement_visual_comparison_pending'),'Missing pending review flag '+id);
+     }
+   }
+
    assert.equal(new Set(problems.map(p=>`${p.year}:${p.number}`)).size,80,'Duplicate SEEMOUS IDs');
    for(const p of problems){
      const id=`${p.year}:${p.number}`;
