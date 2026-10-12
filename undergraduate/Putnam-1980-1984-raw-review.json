@@ -436,16 +436,17 @@
         },
         {
           "number": "B5",
-          "problem": "For each \\(x>e^e\\), define a sequence \\(S_x=u_0,u_1,u_2,\\ldots\\) recursively as follows: \\(u_0=e\\), while for \\(n\\geq0\\), the next term is described in the scanned source as “n + n + 1 is the logarithm of x to the base \\(u_n\\)” [original print/scan appears defective; likely \\(u_{n+1}=\\log_{u_n}x\\), but requires independent source confirmation]. Prove that \\(S_x\\) converges to a number \\(g(x)\\) and that the function \\(g\\) defined in this way is continuous for \\(x>e^e\\).",
+          "problem": "For each \\(x>e^e\\), define a sequence \\(S_x=u_0,u_1,u_2,\\ldots\\) recursively as follows: \\(u_0=e\\), while for \\(n\\geq0\\), \\(u_{n+1}\\) is the logarithm of \\(x\\) to the base \\(u_n\\). Prove that \\(S_x\\) converges to a number \\(g(x)\\) and that the function \\(g\\) defined in this way is continuous for \\(x>e^e\\).",
           "topics": [],
           "problem_dna": [],
           "statement_verified": false,
           "source_id": "1982-B-5",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1982-B-5.json",
           "review_flags": [
-            "original_source_recursion_typographical_anomaly",
-            "requires_independent_original_print_confirmation"
-          ]
+            "original_scanned_recursion_subscripts_unclear",
+            "check_second_source_before_verification"
+          ],
+          "transcription_note": "Recurrence notation editorially reconstructed; scan/text extract defective. Original print comparison to independent copy required."
         },
         {
           "number": "B6",
