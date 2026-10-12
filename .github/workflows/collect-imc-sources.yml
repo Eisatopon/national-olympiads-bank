@@ -50,6 +50,14 @@ jobs:
             git commit -m "Stage 354 IMC statement candidates for manual PDF verification"
             git push
           fi
+      - name: Upload 354-problem review dataset for inspection
+        if: steps.prepare.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: IMC-1994-2026-354-review-json
+          path: undergraduate/IMC-1994-2026-review.json
+          if-no-files-found: error
+          retention-days: 14
       - name: Upload review-only JSON
         if: steps.stage.outcome == 'success' || steps.stage.outcome == 'failure'
         uses: actions/upload-artifact@v4
@@ -75,4 +83,9 @@ jobs:
         if: steps.fetch.outcome == 'success' && steps.stage.outcome != 'success'
         run: |
           echo 'IMC candidate extraction incomplete: inspect review artifact and logs.' >&2
+          exit 1
+      - name: Fail when complete JSON preparation is incomplete
+        if: steps.stage.outcome == 'success' && steps.prepare.outcome != 'success'
+        run: |
+          echo '354-statement review JSON preparation incomplete. Do not report successful import.' >&2
           exit 1
