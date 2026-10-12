@@ -11,7 +11,16 @@ for(const c of v.collections){
  assert.ok(c.file.endsWith('-problems.json'));
  assert.ok(c.first_year<=c.last_archived_year);
  assert.ok(fs.existsSync(c.source_registry));
- assert.ok(!fs.existsSync(c.file),'Must not create a fake empty collection '+c.file);
+ if(c.id==='seemous'){
+   const imported='undergraduate/SEEMOUS-2007-2010-problems.json';
+   assert.ok(fs.existsSync(imported),'SEEMOUS imported archive is missing');
+   const data=JSON.parse(fs.readFileSync(imported,'utf8'));
+   assert.ok(data.competition && Array.isArray(data.years));
+   assert.deepEqual(data.years.map(y=>y.year),Array.from({length:20},(_,i)=>2007+i));
+   assert.ok(data.years.every(y=>y.problems.length===4&&y.problems.every((p,i)=>p.number===i+1&&typeof p.problem==='string'&&p.problem.trim())));
+ }else{
+   assert.ok(!fs.existsSync(c.file),'Must not create a fake empty collection '+c.file);
+ }
 }
 assert.ok(v.required_problem_fields.includes('problem'));
 assert.ok(v.required_problem_fields.includes('topics'));
