@@ -23,6 +23,10 @@ for(const c of v.collections){
    const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
    assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
    assert.equal(problems.filter(p=>p.statement_verified).length,8,'SEEMOUS original-source review count changed unexpectedly');
+   const p2025_2 = problems.find(p=>p.year===2025&&p.number===2);
+   assert.ok(p2025_2.problem.includes('\\sqrt[n]{e^x-1-\\frac{x}{1!}'), '2025/2 must preserve original radical expression');
+   assert.ok(!p2025_2.problem.includes('\\frac{e^x-1-'), '2025/2 spurious radical denominator reintroduced');
+
    for(const p of problems){
      const id=`${p.year}:${p.number}`;
      if (p.year===2024 || p.year===2026){
