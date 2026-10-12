@@ -1,43 +1,48 @@
 #!/usr/bin/env python3
-"""Probe the organiser's numbered question PDFs for VJIMC; never mark unreviewed text verified."""
-import json, subprocess, tempfile, urllib.request
+"""Collect indexed VJIMC organizer source PDFs, preserving unreviewed status."""
+import json, re, subprocess, tempfile, urllib.request
 from pathlib import Path
+
 manifest=json.loads(Path('metadata/vojtech-jarnik-editions-source-manifest.json').read_text())
 results=[]
 extracted=[]
-for edition in manifest['editions']:
-    n=edition['edition']
-    year=edition['year']
-    url=f'https://vjimc.osu.cz/storage/uploads/j{n:02d}problems.pdf'
-    record={'year':year,'edition':n,'url':url,'status':'unavailable_or_unreadable','categories_found':[],'visual_review_required':True}
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (research source review)'}),timeout=15) as r:
-            raw=r.read(10000000)
-        if not raw.startswith(b'%PDF'): raise ValueError('not_pdf')
-        with tempfile.TemporaryDirectory() as td:
-            pdf=Path(td)/'source.pdf';pdf.write_bytes(raw)
-            p=subprocess.run(['pdftotext','-layout',str(pdf),'-'],capture_output=True,text=True,timeout=15)
-            if p.returncode: raise ValueError('pdftotext_error')
-            t=p.stdout
-        # Save unedited extracted paper text as a REVIEW CANDIDATE only.
-        # Problem boundaries and mathematical formulae still require visual PDF inspection.
-        extracted.append({'year':year,'edition':n,'source_url':url,
-                          'original_pdf_text':t,'statement_verified':False,
-                          'publication_eligible':False,
-                          'review_flags':['pdf_text_extraction_only_visual_review_pending']})
-        cats=[c for c in ['I','II'] if ('Category '+c+'\n') in t or ('Category '+c+' ') in t]
-        record.update(status='pdf_text_extracted',categories_found=cats,raw_bytes=len(raw),text_chars=len(t),
-          pdf_problem_word_occurrences=t.lower().count('problem'))
-    except Exception as e:
-        record['error']=str(e)[:160]
-    results.append(record)
+for ed in manifest['editions']:
+    n=ed['edition']; year=ed['year']
+    prefix=f'j{n:02d}'
+    attempts=[]
+    found=[]
+    # Categories are separate in much of the organizer's archive; a generic older
+    # PDF may contain a single category. Never infer category solely from suffix.
+    for suffix in ('problems1.pdf','problems2.pdf','problems.pdf'):
+        result=None
+        for host in ('https://jarnik.osu.cz','https://vjimc.osu.cz'):
+            url=f'{host}/storage/uploads/{prefix}{suffix}'
+            try:
+                req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+                with urllib.request.urlopen(req,timeout=8) as h:
+                    data=h.read(10000000)
+                if not data.startswith(b'%PDF'): raise ValueError('not_pdf')
+                with tempfile.TemporaryDirectory() as tmp:
+                    fp=Path(tmp)/'exam.pdf';fp.write_bytes(data)
+                    proc=subprocess.run(['pdftotext','-layout',str(fp),'-'],text=True,capture_output=True,timeout=12)
+                    if proc.returncode: raise ValueError('pdftotext_failed')
+                    body=proc.stdout
+                if len(body.strip())<70: raise ValueError('extraction_too_short')
+                match=re.search(r'Category\s+(II|I)\b',body,re.I)
+                result={'year':year,'edition':n,'source_url':url,'category_observed':match.group(1).upper() if match else None,
+                        'file_name':prefix+suffix,'original_pdf_text':body,
+                        'statement_verified':False,'publication_eligible':False,
+                        'review_flags':['pdf_text_extraction_only_visual_source_check_pending']}
+                found.append({'url':url,'category_observed':result['category_observed'],'text_chars':len(body)})
+                extracted.append(result)
+                break
+            except Exception as e:
+                attempts.append({'url':url,'error':str(e)[:150]})
+    results.append({'year':year,'edition':n,'found':found,'attempts':attempts,
+                    'source_status':'source_pdf_extracted_for_review' if found else 'source_pdf_unavailable'})
 Path('out').mkdir(exist_ok=True)
-Path('out/vjimc-source-discovery.json').write_text(json.dumps({'competition':'VJIMC','edition_count':len(results),'results':results},ensure_ascii=False,indent=2)+'\n')
-Path('out/vjimc-original-pdf-text-review.json').write_text(
-    json.dumps({'competition':'VJIMC','research_only':True,'documents':extracted},
-               ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('VJIMC papers obtained:',sum(x['status']=='pdf_text_extracted' for x in results),'/',len(results))
-for x in results: print(x['year'],x['edition'],x['status'],x['categories_found'])
-
-if not downloaded:
-    raise SystemExit('SOURCE_DISCOVERY_INCOMPLETE: none of the organizer PDFs were retrievable; do not declare collection complete')
+Path('out/vjimc-source-discovery.json').write_text(json.dumps({'competition':'VJIMC','edition_count':len(results),'results':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+Path('out/vjimc-original-pdf-text-review.json').write_text(json.dumps({'competition':'VJIMC','research_only':True,'documents':extracted},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('VJIMC source PDFs obtained:',len(extracted),'from',sum(bool(x['found']) for x in results),'editions')
+for x in results: print(x['year'],x['edition'],x['source_status'],[(k['file_name'] if 'file_name' in k else k['category_observed']) for k in x['found']])
+if not extracted: raise SystemExit('SOURCE_DISCOVERY_INCOMPLETE: no organizer PDFs downloadable; manual alternative required')
