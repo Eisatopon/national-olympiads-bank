@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify year-specific counts and nonpublication flags
+      - name: Verify year counts and editorial source-review gate
         run: python scripts/audit_imc_1994_2026.py
