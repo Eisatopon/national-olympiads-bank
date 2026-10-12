@@ -26,8 +26,8 @@ for(const c of v.collections){
    for(const p of problems){
      const id=`${p.year}:${p.number}`;
      assert.ok(p.problem.trim().length>=35,'Suspiciously short SEEMOUS statement '+id);
-     assert.equal((p.problem.match(/\\$/g)||[]).length%2,0,'Unbalanced inline TeX '+id);
-     assert.ok(!/\\[(MATH|FIGURE)_REQUIRES_REVIEW\\]/.test(p.problem),'Unresolved problem placeholder '+id);
+     assert.equal((p.problem.match(/\$/g)||[]).length%2,0,'Unbalanced inline TeX '+id);
+     assert.ok(!/\[(MATH|FIGURE)_REQUIRES_REVIEW\]/.test(p.problem),'Unresolved problem placeholder '+id);
    }
 
  }else{
