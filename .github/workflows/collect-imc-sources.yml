@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '.github/workflows/collect-imc-sources.yml'
+      - 'scripts/fetch_imc_sources.py'
 
 permissions:
   contents: read
