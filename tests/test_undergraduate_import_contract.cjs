@@ -22,7 +22,10 @@ for(const c of v.collections){
    // Guard all imported full statements against accidental truncation and broken TeX.
    const problems=data.years.flatMap(y=>y.problems.map(p=>({year:y.year,...p})));
    assert.equal(problems.length,80,'SEEMOUS 2007-2026 must contain 80 problems');
-   assert.equal(problems.filter(p=>p.statement_verified).length,59,'SEEMOUS source-review count changed unexpectedly');
+   assert.equal(problems.filter(p=>p.statement_verified).length,79,'SEEMOUS source-review count changed unexpectedly');
+   const p2021_4=problems.find(p=>p.year===2021&&p.number===4);
+   assert.ok(p2021_4.problem.includes('|\\sin(\\pi x)|^x'),'SEEMOUS 2021/4 integrand exponent must match original');
+   assert.ok(!p2021_4.problem.includes('\\sin(\\pi x)/x'),'SEEMOUS 2021/4 incorrect quotient prohibited');
    const p2025_2 = problems.find(p=>p.year===2025&&p.number===2);
    assert.ok(p2025_2.problem.includes('\\sqrt[n]{e^x-1-\\frac{x}{1!}'), '2025/2 must preserve original radical expression');
    assert.ok(!p2025_2.problem.includes('\\frac{e^x-1-'), '2025/2 spurious radical denominator reintroduced');
@@ -44,6 +47,9 @@ for(const c of v.collections){
      }else if (p.year>=2012 && p.year<=2017 && !(p.year===2012&&p.number===2)){
        assert.equal(p.statement_verified,true,'SEEMOUS 2012-2017 source review missing '+id);
        assert.ok(p.verification_source && p.verification_page>=1 && p.review_flags.length===0,'Incomplete SEEMOUS 2012-2017 provenance '+id);
+     }else if (p.year>=2020 && p.year<=2025){
+       assert.equal(p.statement_verified,true,'SEEMOUS 2020-2025 source review missing '+id);
+       assert.ok(p.verification_source&&p.verification_page>=1&&p.review_flags.length===0,'Source metadata incomplete '+id);
      }else{
        assert.equal(p.statement_verified,false,'Unverified original marked verified '+id);
        assert.ok(p.review_flags.includes('original_official_paper_statement_visual_comparison_pending'),'Missing pending review flag '+id);
