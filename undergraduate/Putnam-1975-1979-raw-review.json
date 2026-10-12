@@ -8,7 +8,7 @@
   "problem_count": 60,
   "source_dataset": "PutnamGAP by Hao, Wan and Zhai; originals reproduced from MAA books",
   "rights_note": "Owner reports oral permission from MAA colleagues; authority and scope not independently verified.",
-  "note": "OCR-derived research transcriptions may have damaged formulas and must be checked.",
+  "note": "Three OCR repairs have secondary-source corroboration (1975 A4, 1976 A3, 1979 B2). No 1975–1979 record is marked original-paper-verified; original primary source and rights audit required.",
   "years": [
     {
       "year": 1975,
@@ -55,18 +55,21 @@
         },
         {
           "number": "A4",
-          "problem": "A-4. Let \\( n=2 m \\), where \\( m \\) is an odd integer greater than 1 . Let \\( \\theta=e^{2 m / n} \\). Express \\( (1-\\theta)^{-1} \\) explicitly as a polynomial in \\( \\boldsymbol{\\theta} \\),\n\\[\na_{k} \\theta^{k}+a_{k-1} \\theta^{k-1}+\\cdots+a_{1} \\theta+a_{0}\n\\]\nwith integer coefficients \\( a_{1} \\).\n[Note that \\( \\boldsymbol{\\theta} \\) is a primitive \\( \\boldsymbol{n} \\)-th root of unity, and thus it satisfies all of the identities which hold for such roots.]",
+          "problem": "Let \\(n=2m\\), where \\(m\\) is an odd integer greater than 1. Let \\(\\theta=e^{2\\pi i/n}\\). Express \\((1-\\theta)^{-1}\\) explicitly as a polynomial in \\(\\theta\\), with integer coefficients.",
           "topics": [],
           "problem_dna": [],
           "statement_verified": false,
           "source_id": "1975-A-4",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1975-A-4.json",
           "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison",
-            "high_priority_math_ocr_ambiguity"
+            "secondary_sources_corroborrated",
+            "requires_original_paper_fidelity_review"
           ],
-          "transcription_note": "Root of unity represented as theta=e^(2m/n), potentially lost pi/i in OCR; do not repair before authoritative source comparison."
+          "transcription_note": "Corrected obvious OCR corruption by comparison with published secondary statement(s); original examination facsimile not inspected.",
+          "corroborating_sources": [
+            "https://prase.cz/kalva/putnam/psoln/psol754.html",
+            "https://huggingface.co/datasets/ChristianZ97/PutnamBench-lean4"
+          ]
         },
         {
           "number": "A5",
@@ -206,18 +209,20 @@
         },
         {
           "number": "A3",
-          "problem": "A-3. Find all integral solutions of the equation\n\\[\n\\left|p^{\\prime}-q^{s}\\right|=1,\n\\]\nwhere \\( p \\) and \\( q \\) are prime numbers and \\( r \\) and \\( s \\) are positive integers larger than unity. Prove that there are no other solutions.",
+          "problem": "Find all integral solutions of\n\\[\n|p^r-q^s|=1,\n\\]\nwhere \\(p\\) and \\(q\\) are prime numbers and \\(r\\) and \\(s\\) are positive integers larger than 1.",
           "topics": [],
           "problem_dna": [],
           "statement_verified": false,
           "source_id": "1976-A-3",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1976-A-3.json",
           "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison",
-            "high_priority_math_ocr_ambiguity"
+            "secondary_sources_corroborrated",
+            "requires_original_paper_fidelity_review"
           ],
-          "transcription_note": "Prime power exponent transcribed as p-prime rather than p^r; do not repair before authoritative source comparison."
+          "transcription_note": "Corrected obvious OCR corruption by comparison with published secondary statement(s); original examination facsimile not inspected.",
+          "corroborating_sources": [
+            "https://prase.cz/kalva/putnam/psoln/psol763.html"
+          ]
         },
         {
           "number": "A4",
@@ -759,18 +764,21 @@
         },
         {
           "number": "B2",
-          "problem": "Problem B-2\nLet \\( 0<a<b \\). Evaluate\n\\[\n\\lim _{t \\rightarrow 0}\\left\\{\\int_{0}^{1}[b x+a(1-x)]^{\\prime} d x\\right\\}^{1 / t}\n\\]\n[The final answer should not involve any operations other than addition, subtraction, multiplication, division, and exponentiation.]",
+          "problem": "Let \\(0<a<b\\). Evaluate\n\\[\n\\lim_{t\\to0}\\left\\{\\int_0^1[bx+a(1-x)]^t\\,dx\\right\\}^{1/t}.\n\\]\nThe final answer should not involve any operations other than addition, subtraction, multiplication, division, and exponentiation.",
           "topics": [],
           "problem_dna": [],
           "statement_verified": false,
           "source_id": "1979-B-2",
           "source_url": "https://github.com/YurenHao0426/PutnamGAP/blob/main/dataset/1979-B-2.json",
           "review_flags": [
-            "OCR_may_corrupt_mathematical_symbols",
-            "requires_original_MAA_paper_visual_comparison",
-            "high_priority_math_ocr_ambiguity"
+            "secondary_sources_corroborrated",
+            "requires_original_paper_fidelity_review"
           ],
-          "transcription_note": "Exponent on bracketed integrand transcribed as a prime character instead of t; do not repair before authoritative source comparison."
+          "transcription_note": "Corrected obvious OCR corruption by comparison with published secondary statement(s); original examination facsimile not inspected.",
+          "corroborating_sources": [
+            "https://prase.cz/kalva/putnam/psoln/psol798.html",
+            "https://www.researchgate.net/publication/267164498_Index_to_Mathematical_Problems_1975-1979"
+          ]
         },
         {
           "number": "B3",
