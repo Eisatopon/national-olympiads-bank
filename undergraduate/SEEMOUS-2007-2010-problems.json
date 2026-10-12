@@ -126,6 +126,48 @@
           "problem": "(a) Compute $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n\\,dx$. (b) Let $k\\ge1$ be an integer. Compute $\\displaystyle\\lim_{n\\to\\infty}n^{k+1}\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n x^k\\,dx$."
         }
       ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all continuous functions $f:[1,8]\\to\\mathbb R$ such that $\\displaystyle\\int_1^2 f^2(t^3)\\,dt+2\\int_1^2 f(t^3)\\,dt=\\frac23\\int_1^8 f(t)\\,dt-\\int_1^2(t^2-1)^2\\,dt$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $M,N\\in M_2(\\mathbb C)$ be two nonzero matrices such that $M^2=N^2=0_2$ and $MN+NM=I_2$, where $0_2$ is the $2\\times2$ zero matrix and $I_2$ the $2\\times2$ identity matrix. Prove that there is an invertible matrix $A\\in M_2(\\mathbb C)$ such that $M=A\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}A^{-1}$ and $N=A\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}A^{-1}$."
+        },
+        {
+          "number": 3,
+          "problem": "Find the maximum value of $\\displaystyle\\int_0^1|f'(x)|^2|f(x)|\\frac{1}{\\sqrt{x}}\\,dx$ over all continuously differentiable functions $f:[0,1]\\to\\mathbb R$ with $f(0)=0$ and $\\displaystyle\\int_0^1|f'(x)|^2\\,dx\\le1$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $A\\in M_2(\\mathbb Q)$ be such that there is a positive integer $n$ with $A^n=-I_2$. Prove that either $A^2=-I_2$ or $A^3=-I_2$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a nonzero natural number and let $f:\\mathbb R\\to\\mathbb R\\setminus\\{0\\}$ be a function such that $f(2014)=1-f(2013)$. Let $x_1,x_2,\\ldots,x_n$ be pairwise distinct real numbers. If $\\displaystyle\\det\\begin{pmatrix}1+f(x_1)&f(x_2)&\\cdots&f(x_n)\\\\f(x_1)&1+f(x_2)&\\cdots&f(x_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\f(x_1)&f(x_2)&\\cdots&1+f(x_n)\\end{pmatrix}=0$, prove that $f$ is not continuous."
+        },
+        {
+          "number": 2,
+          "problem": "Consider the sequence $(x_n)$ given by $x_1=2$ and $\\displaystyle x_{n+1}=\\frac{x_n+1+\\sqrt{x_n^2+2x_n+5}}2$ for $n\\ge2$. Prove that the sequence $\\displaystyle y_n=\\sum_{k=1}^n\\frac1{x_k^2-1}$, $n\\ge1$, is convergent and find its limit. (The recurrence index $n\\ge2$ is reproduced as printed in the source.)"
+        },
+        {
+          "number": 3,
+          "problem": "Let $A\\in M_n(\\mathbb C)$ and $a\\in\\mathbb C$, $a\\ne0$, be such that $A-A^*=2aI_n$, where $A^*=(\\overline A)^t$ and $\\overline A$ is the complex conjugate of $A$. (a) Show that $|\\det A|\\ge|a|^n$. (b) Show that if $|\\det A|=|a|^n$, then $A=aI_n$."
+        },
+        {
+          "number": 4,
+          "problem": "(a) Prove that $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx=\\frac\\pi2$. (b) Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx-\\frac\\pi2\\right)$."
+        }
+      ]
     }
   ]
 }
