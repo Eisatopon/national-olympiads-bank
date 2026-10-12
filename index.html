@@ -1058,7 +1058,7 @@ function typeset(el) {
     });
 }
 
-const IMG_RE = /(https?:\/\/\S+?)[ \t]*\.(png|jpe?g|gif|webp)\b\.?/gi;
+const IMG_RE = /(https?:\/\/\S+?)[ \t]*\.(png|jpe?g|gif|webp|svg)\b\.?/gi;
 function bodyHtml(text) {
     let figs = [];
     let s = esc(text).replace(IMG_RE, (m, url, ext) => {
