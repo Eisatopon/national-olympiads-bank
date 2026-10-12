@@ -18,7 +18,8 @@ import urllib.request
 from datetime import date
 
 ARCHIVE = "https://jarnik.osu.cz/problems"
-CURRENT = "https://vjimc.osu.cz/j31results"
+CURRENT = "https://vjimc.osu.cz/j33results"
+ARCHIVE_MIRROR = "https://vjimc.osu.cz/problems"
 BASE = "https://jarnik.osu.cz"
 ABSENT = {2020, 2021, 2023}
 YEARS = [y for y in range(1991, 2027) if y not in ABSENT]
@@ -62,16 +63,25 @@ def main():
     args = p.parse_args()
     # The historical archive covers editions 1–32; the latest edition
     # publishes its two category PDFs on the current Results page.
-    pages = [ARCHIVE, CURRENT]
+    pages = [ARCHIVE, ARCHIVE_MIRROR, CURRENT]
     links = []
+    page_errors = []
     for page in pages:
-        raw, final_url = get(page)
+        try:
+            raw, final_url = get(page)
+        except Exception as ex:
+            page_errors.append({"url": page, "error": str(ex)})
+            continue
         parser = Anchors()
         parser.feed(raw.decode("utf-8", errors="replace"))
         for href, label in parser.links:
             links.append((urllib.parse.urljoin(final_url, href), label, page))
     collected = []
+    seen_urls = set()
     for url, label, page in links:
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
         parts = urllib.parse.urlsplit(url)
         if parts.hostname not in {"jarnik.osu.cz", "vjimc.osu.cz"}:
             continue
@@ -106,6 +116,7 @@ def main():
     result = {"competition": "Vojtěch Jarník International Mathematical Competition",
               "archive": ARCHIVE, "generated_date": date.today().isoformat(),
               "held_years": YEARS, "years_without_competition": sorted(ABSENT),
+              "page_errors": page_errors,
               "files": sorted(collected, key=lambda x: (x["year"], x["category"], x["url"])),
               "caution": "Inventory only. PDFs and statements require individual source checks; no solutions."}
     out = pathlib.Path(args.output)
