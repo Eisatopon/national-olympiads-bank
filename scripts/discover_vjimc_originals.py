@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Collect indexed VJIMC organizer source PDFs, preserving unreviewed status."""
-import json, re, subprocess, tempfile, urllib.request
+import json, re, subprocess, tempfile, urllib.request, urllib.error, urllib.parse, ssl, hashlib
 from pathlib import Path
 
 manifest=json.loads(Path('metadata/vojtech-jarnik-editions-source-manifest.json').read_text())
@@ -19,9 +19,24 @@ for ed in manifest['editions']:
             url=f'{host}/storage/uploads/{prefix}{suffix}'
             try:
                 req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
-                with urllib.request.urlopen(req,timeout=8) as h:
-                    data=h.read(10000000)
+                transport_verified = True
+                try:
+                    with urllib.request.urlopen(req,timeout=8) as h:
+                        data=h.read(10000000)
+                except urllib.error.URLError as ex:
+                    if not isinstance(ex.reason, ssl.SSLCertVerificationError):
+                        raise
+                    # Public organizer papers only, no credentials or publication.
+                    # Keep the transport exception explicit for source review.
+                    transport_verified = False
+                    context = ssl._create_unverified_context()
+                    with urllib.request.urlopen(req,timeout=8,context=context) as h:
+                        if urllib.parse.urlparse(h.geturl()).hostname not in ("jarnik.osu.cz", "vjimc.osu.cz"):
+                            raise ValueError("unexpected_redirect_host")
+                        data=h.read(10000000)
                 if not data.startswith(b'%PDF'): raise ValueError('not_pdf')
+                pdf_dir=Path('out/vjimc-pdfs');pdf_dir.mkdir(parents=True,exist_ok=True)
+                (pdf_dir/(prefix+suffix)).write_bytes(data)
                 with tempfile.TemporaryDirectory() as tmp:
                     fp=Path(tmp)/'exam.pdf';fp.write_bytes(data)
                     proc=subprocess.run(['pdftotext','-layout',str(fp),'-'],text=True,capture_output=True,timeout=12)
@@ -32,8 +47,10 @@ for ed in manifest['editions']:
                 result={'year':year,'edition':n,'source_url':url,'category_observed':match.group(1).upper() if match else None,
                         'file_name':prefix+suffix,'original_pdf_text':body,
                         'statement_verified':False,'publication_eligible':False,
+                        'https_certificate_verified':transport_verified,
+                        'pdf_sha256':hashlib.sha256(data).hexdigest(),
                         'review_flags':['pdf_text_extraction_only_visual_source_check_pending']}
-                found.append({'url':url,'category_observed':result['category_observed'],'text_chars':len(body)})
+                found.append({'url':url,'category_observed':result['category_observed'],'text_chars':len(body),'https_certificate_verified':transport_verified})
                 extracted.append(result)
                 break
             except Exception as e:
