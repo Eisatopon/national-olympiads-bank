@@ -83,7 +83,19 @@ def main():
                 "statement_verified": False, "publication_eligible": False
             })
         except (OSError, ValueError, UnicodeError) as exc:
+            # A source page already exists in the archive. Preserve its identity
+            # as a review item rather than losing the problem from the inventory.
+            # A blank candidate is NEVER publishable.
             errors.append({"year": year, "day": day, "number": number, "error": str(exc)})
+            official_number = number + (EXPECTED[year] // 2 if day == 2 else 0)
+            records.append({
+                "year": year, "day": day, "number": official_number,
+                "day_local_number": number, "statement_candidate": "",
+                "latex_annotations": [],
+                "review_flags": ["extraction_failed", str(exc)],
+                "source_url": item["resolved_url"], "source_sha256": item["sha256"],
+                "statement_verified": False, "publication_eligible": False
+            })
     records.sort(key=lambda r: (r["year"], r["number"]))
     expected = sum(EXPECTED[y] for y in manifest["years_requested"])
     keys = {(r["year"], r["number"]) for r in records}
@@ -96,6 +108,7 @@ def main():
         "competition": "IMC", "status": "UNVERIFIED_REVIEW_ONLY",
         "expected": expected, "extracted": len(records),
         "candidates": records, "errors": errors,
+        "needs_manual_review": sum(bool(r["review_flags"]) for r in records),
         "publication_note": "Must compare each statement and LaTeX expression to original IMC PDFs before import."
     }
     a.output.parent.mkdir(parents=True, exist_ok=True)
@@ -103,8 +116,10 @@ def main():
     print(f"STAGED {len(records)}/{expected}; errors {len(errors)}", flush=True)
     for problem in errors:
         print("ERROR", problem, flush=True)
-    if errors:
-        raise SystemExit(1)
+    # The staging operation succeeds if it accounts for every downloaded page;
+    # failures of HTML extraction remain explicit review blockers in the JSON.
+    if len(records) != expected or len(keys) != expected:
+        raise SystemExit("IMC source inventory incomplete or duplicated")
 
 if __name__ == "__main__":
     main()
