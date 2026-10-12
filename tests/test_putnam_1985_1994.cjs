@@ -69,10 +69,17 @@ for(let i=30;i<40;i++){
  }
 }
 assert.ok(four.years.find(y=>y.year===2016).problems.find(p=>p.number==='A4').review_flags.includes('source_diagram_requires_reproduction'));
+const through2025=JSON.parse(fs.readFileSync('undergraduate/Putnam-1985-2025-review.json','utf8'));
+assert.equal(through2025.problem_count,492);
+assert.deepEqual(through2025.years.map(y=>y.year),Array.from({length:41},(_,i)=>1985+i));
+for(let i=0;i<40;i++) assert.deepEqual(through2025.years[i],four.years[i]);
+const newest=through2025.years[40];
+assert.deepEqual(newest.problems.map(p=>p.number),['A1','A2','A3','A4','A5','A6','B1','B2','B3','B4','B5','B6']);
+assert.ok(newest.problems.every(p=>p.problem.trim().length>=30&&!Object.hasOwn(p,'solution')&&p.statement_verified===false&&(p.problem.match(/\$/g)||[]).length%2===0));
 const html = fs.readFileSync('index.html','utf8');
 assert.ok(html.includes("key: 'put', name: 'Putnam'"));
-assert.ok(html.includes("file: 'undergraduate/Putnam-1985-2024-review.json'"));
+assert.ok(html.includes("file: 'undergraduate/Putnam-1985-2025-review.json'"));
 assert.ok(html.includes("if (key === 'put') return {"));
-assert.ok(html.includes("c.key === 'put' ? 480"));
+assert.ok(html.includes("c.key === 'put' ? 492"));
 assert.ok(html.includes("loadCountry('put')"));
-console.log('Putnam 1985-2024: 480 statements and Undergraduate grid registration validated.');
+console.log('Putnam 1985-2025: 492 statements and Undergraduate grid registration validated.');
