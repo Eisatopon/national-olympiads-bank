@@ -25,6 +25,23 @@ for (const year of data.years) {
       assert.equal(p.verification_source, expectedPdf, 'Incorrect verified source '+id);
       assert.equal(p.statement_verified, true, 'Incomplete five-year source review '+id);
     }
+    if (year.year >= 2014 && year.year <= 2018) {
+      const pdfName = year.year === 2014
+        ? `IMC2014-day${p.day}-solutions.pdf`
+        : `imc${year.year}-day${p.day}-questions.pdf`;
+      const expected = `https://www.imc-math.org.uk/imc${year.year}/${pdfName}`;
+      assert.equal(p.official_pdf_candidate_url, expected, 'Wrong original day PDF '+id);
+      assert.equal(p.verification_source, expected, 'Wrong verified original '+id);
+      assert.equal(p.statement_verified, true, 'Incomplete IMC 2014-2018 review '+id);
+    }
+    if (id === '2015:6') {
+      assert.ok(p.problem.includes('\\\\frac{1}{\\\\sqrt{n}(n+1)}'), '2015/6 divergent square-root transcription');
+      assert.ok(!p.problem.includes('\\\\sqrt{n(n+1)}'), '2015/6 wrong square root');
+    }
+    if (id === '2016:6') {
+      assert.ok(p.problem.includes('2^n-1'), '2016/6 omitted exponent');
+      assert.ok(!p.problem.includes('2n-1'), '2016/6 linear instead of exponential denominator');
+    }
     if (year.year >= 2004 && year.year <= 2008) {
       const expectedDay = p.number <= 6 ? 1 : 2;
       const officialCandidate = `https://www.imc-math.org.uk/imc${year.year}/day${expectedDay}_solutions.pdf`;
