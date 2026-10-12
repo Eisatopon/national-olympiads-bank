@@ -12,7 +12,15 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 DAY = re.compile(r"^Day\s*([12])$", re.I)
 PROBLEM = re.compile(r"^Problem\s+(\d+)$", re.I)
-STOP = re.compile(r"^(?:Day\s*[12]|Problem\s+\d+|Solutions?|Statistics)$", re.I)
+STOP = re.compile(r"^(?:Day\\s*[12]|Problem\\s+\\d+|Solutions?|Statistics)$", re.I)
+# Based on the actual edition structures, not a uniform assumption.
+EXPECTED_COUNTS = {
+    **{y: 12 for y in range(1994, 2009)},
+    **{y: 10 for y in range(2009, 2020)},
+    **{y: 8 for y in range(2020, 2023)},
+    **{y: 10 for y in range(2023, 2027)},
+}
+assert len(EXPECTED_COUNTS) == 33 and sum(EXPECTED_COUNTS.values()) == 354
 
 def rendered_math(node):
     annotations = node.select('annotation[encoding="application/x-tex"]')
@@ -117,6 +125,11 @@ def main():
         try:
             raw = (args.archive / source["path"]).read_text(encoding="utf-8")
             extracted = extract(raw, year)
+            expected = EXPECTED_COUNTS[year]
+            if len(extracted) != expected:
+                raise ValueError(f"Year {year}: extracted {len(extracted)} problems, expected {expected}")
+            if sorted(x["number"] for x in extracted) != list(range(1, expected + 1)):
+                raise ValueError(f"Year {year}: missing or duplicated official problem numbers")
             for item in extracted:
                 item["source_url"] = source["resolved_url"]
                 item["source_sha256"] = source["sha256"]
@@ -131,13 +144,19 @@ def main():
         "years_expected": manifest["years_requested"],
         "years_staged": sorted({r["year"] for r in records}),
         "problem_candidates": len(records),
+        "expected_count": sum(EXPECTED_COUNTS[y] for y in manifest["years_requested"]),
+        "counts_by_year": {
+            str(y): sum(r["year"] == y for r in records)
+            for y in manifest["years_requested"]
+        },
         "candidates": records,
         "failures": failures,
         "note": "Do not publish: all equations, full text, authorship and numbering need comparison to original official papers."
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    if failures or len(output["years_staged"]) != len(manifest["years_requested"]):
+    if (failures or len(output["years_staged"]) != len(manifest["years_requested"])
+            or len(records) != output["expected_count"]):
         raise SystemExit("Statement staging incomplete; inspect report artifact")
 
 if __name__ == "__main__":
