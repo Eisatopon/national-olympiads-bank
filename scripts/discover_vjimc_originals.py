@@ -32,7 +32,7 @@ for edition in manifest['editions']:
         record['error']=str(e)[:160]
     results.append(record)
 Path('out').mkdir(exist_ok=True)
-Path('out/vjimc-source-discovery.json').write_text(json.dumps({'competition':'VJIMC','edition_count':len(results),'results':results},ensure_ascii=False,indent=2)+'\\n')
+Path('out/vjimc-source-discovery.json').write_text(json.dumps({'competition':'VJIMC','edition_count':len(results),'results':results},ensure_ascii=False,indent=2)+'\n')
 Path('out/vjimc-original-pdf-text-review.json').write_text(
     json.dumps({'competition':'VJIMC','research_only':True,'documents':extracted},
                ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
