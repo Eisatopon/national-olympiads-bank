@@ -56,6 +56,7 @@ const entries = [...html.matchAll(/\{\s*key:\s*'(\w+)',\s*name:\s*'[^']*',\s*fla
 assert.ok(entries.length > 50, 'COUNTRIES entries not found');
 let files = 0;
 for (const [, key, file, kind] of entries) {
+  if (file.includes('/')) continue; // Undergraduate collections are not in the root manifest.
   const raw = read(file);
   const list = kind === 'usa' ? ctx.normalizeUsa({key}, raw) : ctx.normalizeYears({key}, raw);
   const years = {};
