@@ -52,7 +52,7 @@ class ProblemLinkParser(HTMLParser):
         href = dict(attrs).get("href", "")
         full = urljoin("https://studolymp.com/", href)
         path = urlparse(full).path
-        m = re.fullmatch(r"/imc/problems/imc-(\\d{4})-d([12])-p(\\d+)", path)
+        m = re.fullmatch(r"/imc/problems/imc-(\d{4})-d([12])-p(\d+)", path)
         if m and int(m.group(1)) == self.year and urlparse(full).hostname == "studolymp.com":
             self.links.add((int(m.group(2)), int(m.group(3)), full))
 
