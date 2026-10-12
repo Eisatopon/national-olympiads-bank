@@ -1193,7 +1193,8 @@
           "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "verification_page": 25,
           "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12"
+          "verified_on": "2026-10-12",
+          "source_review_note": "Printed statement shows det B >= 0 (not strictly positive)."
         },
         {
           "number": 3,
@@ -1216,7 +1217,7 @@
         },
         {
           "number": 4,
-          "problem": "For $p\\in\\mathbb R$, define $a_n=n^{-p}\\int_0^n|\\sin(\\pi x)/x|\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges.",
+          "problem": "For $p\\in\\mathbb R$, define $a_n=\\frac{1}{n^p}\\int_0^n|\\sin(\\pi x)|^x\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges.",
           "statement_verified": true,
           "review_flags": [],
           "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
@@ -1231,7 +1232,8 @@
           "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "verification_page": 25,
           "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12"
+          "verified_on": "2026-10-12",
+          "source_correction": "Correct integrand is |sin(pi x)|^x, NOT |sin(pi x)/x|; Gazeta Matematica SEEMOUS 2021 Problem 4, printed page 29."
         }
       ]
     },
@@ -1241,10 +1243,8 @@
         {
           "number": 1,
           "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $AB^2A=AB$. Prove (a) $(AB)^2=AB$; (b) $(AB-BA)^3=O_n$.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1252,15 +1252,17 @@
               54
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma3-4-2022-continut.pdf",
+          "verification_page": 19,
+          "verification_method": "Checked displayed SEEMOUS 2022 problem text and notation against Romanian Mathematical Society competition report, printed pages 19, 21, 23, 25",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 2,
           "problem": "Let $a,b,c\\in\\mathbb R$ satisfy $a+b+c=a^2+b^2+c^2=1$ and $a^3+b^3+c^3\\ne1$. A function $f:\\mathbb R\\to\\mathbb R$ is called Palic if it is continuous and $f(x)+f(y)+f(z)=f(ax+by+cz)+f(bx+cy+az)+f(cx+ay+bz)$ for all real $x,y,z$. Prove that every Palic function is infinitely differentiable and determine all Palic functions.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1268,15 +1270,17 @@
               54
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma3-4-2022-continut.pdf",
+          "verification_page": 21,
+          "verification_method": "Checked displayed SEEMOUS 2022 problem text and notation against Romanian Mathematical Society competition report, printed pages 19, 21, 23, 25",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 3,
           "problem": "Let $\\alpha\\in\\mathbb C\\setminus\\{0\\}$ and $A\\in M_n(\\mathbb C)\\setminus\\{O_n\\}$ satisfy $A^2+(A^*)^2=\\alpha AA^*$. Prove that $\\alpha\\in\\mathbb R$, $|\\alpha|\\le2$, and $A$ is normal.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1284,15 +1288,17 @@
               54
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma3-4-2022-continut.pdf",
+          "verification_page": 23,
+          "verification_method": "Checked displayed SEEMOUS 2022 problem text and notation against Romanian Mathematical Society competition report, printed pages 19, 21, 23, 25",
+          "verified_on": "2026-10-12"
         },
         {
           "number": 4,
           "problem": "Let $\\mathcal F$ be the family of all nonempty finite subsets of $\\mathbb N\\cup\\{0\\}$. Determine all $a>0$ for which $\\sum_{S\\in\\mathcal F}\\frac1{\\sum_{k\\in S}a^k}$ converges.",
-          "statement_verified": false,
-          "review_flags": [
-            "original_official_paper_statement_visual_comparison_pending"
-          ],
+          "statement_verified": true,
+          "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1300,7 +1306,11 @@
               54
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma3-4-2022-continut.pdf",
+          "verification_page": 25,
+          "verification_method": "Checked displayed SEEMOUS 2022 problem text and notation against Romanian Mathematical Society competition report, printed pages 19, 21, 23, 25",
+          "verified_on": "2026-10-12"
         }
       ]
     },
