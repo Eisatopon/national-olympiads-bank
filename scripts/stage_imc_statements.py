@@ -26,8 +26,11 @@ def extract(html, year, day, number):
         raise ValueError("Missing h1 problem identity")
     title = h1.get_text(" ", strip=True)
     match = TITLE.fullmatch(title)
-    if not match or tuple(map(int, match.groups())) != (year, day, number):
-        raise ValueError("Problem title does not match archive identity: " + title[:90])
+    # URLs restart numbering at P1 on day two, but visible IMC titles use
+    # official annual numbering (e.g. 1994 d2-p1 is official problem P7).
+    official_number = number + (EXPECTED[year] // 2 if day == 2 else 0)
+    if not match or tuple(map(int, match.groups())) != (year, day, official_number):
+        raise ValueError("Problem title does not match official annual identity: " + title[:90])
     container = h1.find_parent("main") or h1.find_parent("article")
     if not container:
         raise ValueError("Missing <main> or <article> content boundary")
@@ -72,8 +75,10 @@ def main():
         try:
             html = (a.archive / item["path"]).read_text(encoding="utf-8")
             candidate = extract(html, year, day, number)
+            official_number = number + (EXPECTED[year] // 2 if day == 2 else 0)
             records.append({
-                "year": year, "day": day, "number": number, **candidate,
+                "year": year, "day": day, "number": official_number,
+                "day_local_number": number, **candidate,
                 "source_url": item["resolved_url"], "source_sha256": item["sha256"],
                 "statement_verified": False, "publication_eligible": False
             })
