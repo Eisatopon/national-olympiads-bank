@@ -1,0 +1,20 @@
+name: Audit Putnam 1985-2025 review records
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - undergraduate/Putnam-1985-2025-review.json
+      - scripts/audit_putnam_1985_2025.py
+      - .github/workflows/audit-putnam-1985-2025.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit 492 unverified review records and surface diagram references
+        run: python scripts/audit_putnam_1985_2025.py
