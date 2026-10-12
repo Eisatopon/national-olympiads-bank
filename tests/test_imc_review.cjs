@@ -26,7 +26,7 @@ for (const year of data.years) {
       assert.ok(typeof p.verification_source === 'string' && /^https:\/\//.test(p.verification_source), 'Missing original source '+id);
       assert.ok(typeof p.verification_method === 'string' && p.verification_method.trim(), 'Missing verification method '+id);
       assert.ok(Number.isInteger(p.verification_page) && p.verification_page > 0, 'Missing original PDF page '+id);
-      assert.ok(/^\\d{4}-\\d{2}-\\d{2}$/.test(p.verified_on || ''), 'Missing review date '+id);
+      assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(p.verified_on || ''), 'Missing review date '+id);
       assert.ok(Array.isArray(p.review_flags) && p.review_flags.length === 0, 'Unresolved flags on verified record '+id);
     } else {
       assert.ok(Array.isArray(p.review_flags) && p.review_flags.length > 0, 'Unverified record requires review flags '+id);
