@@ -1,0 +1,56 @@
+name: Import historical Putnam candidates (research only)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/import-putnam-historical-research.yml
+permissions:
+  contents: write
+concurrency:
+  group: putnam-historical-research-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect 1938–1949 research statements
+        run: python scripts/stage_putnam_1938_1949.py
+      - name: Collect 1950–1974 excluding 1958
+        run: python scripts/stage_putnam_1950_1974_except_1958.py
+      - name: Collect both distinct 1958 editions
+        run: python scripts/stage_putnam_1958_spring_fall.py
+      - name: Validate and import 451 raw research statements
+        run: python scripts/import_putnam_historical_research.py
+      - name: Verify only explicitly whitelisted research files changed
+        run: |
+          git add research/putnam/Putnam-1938-1949-raw-review.json research/putnam/Putnam-1950-1974-raw-review.json research/putnam/Putnam-1958-spring-fall-raw-review.json
+          git diff --cached --name-only > /tmp/changed.txt
+          python - <<'PY'
+          from pathlib import Path
+          names=Path('/tmp/changed.txt').read_text().splitlines()
+          allowed={
+            'research/putnam/Putnam-1938-1949-raw-review.json',
+            'research/putnam/Putnam-1950-1974-raw-review.json',
+            'research/putnam/Putnam-1958-spring-fall-raw-review.json',
+          }
+          assert set(names) <= allowed, names
+          print('PASS: only research-only archive files can be committed')
+          PY
+      - name: Commit only research files (never publish)
+        run: |
+          if git diff --cached --quiet; then
+            echo "Research files already match validated collection"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Archive 451 historical Putnam raw review statements (unverified)"
+          git pull --rebase origin main
+          git push origin HEAD:main
