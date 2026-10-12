@@ -572,7 +572,7 @@
         },
         {
           "number": "A6",
-          "problem": "Let $\\alpha=1+a_1x+a_2x^2+\\cdots$ be a formal power series with coefficients\nin the field of two elements. Let\n$\na_n =\n\\begin{cases}\n1 & \\parbox{2in}{if every block of zeros in the binary expansion of $n$\nhas an even number of zeros in the block} \\$.3in]\n0 & \\text{otherwise.}\n\\end{cases}\n$\n(For example, $a_{36}=1$ because $36=100100_2$ and $a_{20}=0$ because\n$20=10100_2.$)\nProve that $\\alpha^3+x\\alpha+1=0.$",
+          "problem": "Let $\\alpha=1+a_1x+a_2x^2+\\cdots$ be a formal power series with coefficients\nin the field of two elements. Let\n$$\na_n =\n\\begin{cases}\n1 & \\text{if every block of zeros in the binary expansion of }n\n    \\text{ has an even number of zeros in the block},\\\\\n0 & \\text{otherwise.}\n\\end{cases}\n$$\n(For example, $a_{36}=1$ because $36=100100_2$ and $a_{20}=0$ because\n$20=10100_2.$)\nProve that $\\alpha^3+x\\alpha+1=0.$",
           "topics": [],
           "problem_dna": [],
           "statement_verified": false,
