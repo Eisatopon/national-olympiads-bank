@@ -38,3 +38,6 @@ Path('out/vjimc-original-pdf-text-review.json').write_text(
                ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('VJIMC papers obtained:',sum(x['status']=='pdf_text_extracted' for x in results),'/',len(results))
 for x in results: print(x['year'],x['edition'],x['status'],x['categories_found'])
+
+if not downloaded:
+    raise SystemExit('SOURCE_DISCOVERY_INCOMPLETE: none of the organizer PDFs were retrievable; do not declare collection complete')
