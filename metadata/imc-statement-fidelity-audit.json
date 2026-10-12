@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "competition": "IMC",
+  "scope": "Statement-to-official-source review, not blanket certification",
+  "created": "2026-10-12",
+  "source_dataset": "undergraduate/IMC-1994-2026-review.json",
+  "checked": [
+    {
+      "year": 2026,
+      "problems": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "official_pdf": "https://www.imc-math.org.uk/imc2026/imc2026-day1-questions.pdf",
+      "result": "mathematical_hypotheses_and_formulas_compared",
+      "notes": "Additional proposer credits in draft are not in the question sheet; no effect on mathematical statement. Comparison made against source PDF text."
+    },
+    {
+      "year": 1994,
+      "problems": [
+        2,
+        3
+      ],
+      "official_pdf": "https://www.imc-math.org.uk/imc1994/prob_sol.pdf",
+      "result": "mathematical_hypotheses_and_formulas_compared",
+      "notes": "Problems 2 and 3 checked against original problem section; archived PDF also contains solutions. Problem 1 has a matrix with an ellipsis pattern and requires additional visual review."
+    }
+  ],
+  "mathematical_content_compared_count": 7,
+  "full_dataset_records": 354,
+  "still_needing_review": 347,
+  "scope_limitations": [
+    "The check covers mathematical content, not exact typography or all archival context.",
+    "Never mark unreviewed problems as verified.",
+    "Figures and visually ambiguous matrices require PDF page visual inspection.",
+    "No solutions copied."
+  ],
+  "next": "Continue independent PDF comparison, log any corrections by year and problem ID, then approve publication only for verified records."
+}
