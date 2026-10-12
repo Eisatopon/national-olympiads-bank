@@ -627,15 +627,15 @@ dialog p { color: var(--muted); font-size: .92rem; }
 
         <section id="undergraduateSources" class="undergraduate-sources" aria-label="Undergraduate competition archives" hidden>
             <h2>Undergraduate · University Mathematics Competitions</h2>
-            <p>University-level competitions, including international university contests. Each competition retains its precise eligibility rules. Browse imported undergraduate problem statements by competition and year. IMC transcriptions are preliminary and still require comparison with the official question papers.</p>
+            <p>University-level competitions, including international university contests. Each competition retains its precise eligibility rules. Browse imported undergraduate problem statements by competition and year. IMC and Putnam transcriptions are preliminary and still require comparison with the official question papers.</p>
             <div class="undergraduate-cards">
-                <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>Undergraduate · Problem statements not yet imported. This collection will become selectable by year and problem after verified JSON imports.</p></article>
+                <article class="undergraduate-card"><h3>William Lowell Putnam Mathematical Competition</h3><p>Undergraduate · 1985–1994 · 120 full problem statements in the year grid, with mathematical LaTeX. Historical completeness and original-PDF fidelity review remain ongoing.</p></article>
                 <article class="undergraduate-card"><h3>International Mathematics Competition (IMC)</h3><p>International undergraduate · 1994–2026 · 354 statements available in the year grid. Draft transcriptions: mathematical fidelity against the original IMC PDFs is not yet certified.</p></article>
                 <article class="undergraduate-card"><h3>SEEMOUS</h3><p>South-Eastern Europe · 2007–2026 · 80 problem statements available in the undergraduate archive; interactive integration is pending verification.</p></article>
                 <article class="undergraduate-card"><h3>Vojtěch Jarník International Mathematical Competition</h3><p>Undergraduate · Two separate contest categories. Problem statements not yet imported.</p></article>
                 <article class="undergraduate-card"><h3>Simon Marais Mathematics Competition</h3><p>Undergraduate · Distinct paper variants A, B and C. Problem statements not yet imported.</p></article>
             </div>
-            <p class="undergraduate-note">The undergraduate collections follow the same problem-bank principle as the national competitions: searchable statements, year and problem numbers, and no PDF catalogues. IMC statements are available as explicitly unverified transcriptions; they must not be treated as certified original text until checked against the official PDFs. The existing national, regional, international and tournament grids are unchanged.</p>
+            <p class="undergraduate-note">The undergraduate collections follow the same problem-bank principle as the national competitions: searchable statements, year and problem numbers, and no PDF catalogues. IMC and Putnam statements are available as explicitly unverified transcriptions; they must not be treated as certified original text until checked against the official PDFs. The existing national, regional, international and tournament grids are unchanged.</p>
         </section>
 
     </div>
@@ -967,6 +967,7 @@ const COUNTRIES = [
     { key: 'cr', name: 'Costa Rica', flag: '🇨🇷', file: 'CostaRica-final-problems.json', kind: 'years' },
     { key: 'al', name: 'Albania', flag: '🇦🇱', file: 'Albania-nmo-problems.json', kind: 'years' },
     { key: 'bd', name: 'Bangladesh', flag: '🇧🇩', file: 'Bangladesh-bdmo-problems.json', kind: 'years' },
+    { key: 'put', name: 'Putnam', flag: '🎓', file: 'undergraduate/Putnam-1985-1994-review.json', kind: 'years', scope: 'undergraduate' },
     { key: 'imc', name: 'IMC', flag: '🎓', file: 'undergraduate/IMC-1994-2026-review.json', kind: 'years', scope: 'undergraduate' },
     { key: 'seemous', name: 'SEEMOUS', flag: '🎓', file: 'undergraduate/SEEMOUS-2007-2010-problems.json', kind: 'years', scope: 'undergraduate' },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional' },
@@ -1182,6 +1183,7 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 
 /* ---------- Manifest: counts without downloading the collections ---------- */
 function manifestYears(key) {
+    if (key === 'put') return {'1985':12,'1986':12,'1987':12,'1988':12,'1989':12,'1990':12,'1991':12,'1992':12,'1993':12,'1994':12};
     if (key === 'imc') return {'1994':12,'1995':12,'1996':12,'1997':12,'1998':12,'1999':12,'2000':12,'2001':12,'2002':12,'2003':12,'2004':12,'2005':12,'2006':12,'2007':12,'2008':12,'2009':10,'2010':10,'2011':10,'2012':10,'2013':10,'2014':10,'2015':10,'2016':10,'2017':10,'2018':10,'2019':10,'2020':8,'2021':8,'2022':8,'2023':10,'2024':10,'2025':10,'2026':10};
     if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4,'2011':4,'2012':4,'2013':4,'2014':4,'2015':4,'2016':4,'2017':4,'2018':4,'2019':4,'2020':4,'2021':4,'2022':4,'2023':4,'2024':4,'2025':4,'2026':4};
     const m = manifest && manifest.files && manifest.files[CBY[key].file];
@@ -1199,7 +1201,7 @@ function bankTotal() {
 /* "All problems" without filters shows the newest problems first, so only the
    collections that reach the visible page are downloaded. */
 function tabTotal(tab) {
-    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
+    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'put' ? 120 : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
 }
 function browseTotal() {
     if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
@@ -1282,7 +1284,7 @@ function setTab(tab, keepScope) {
     buildMatrix();
     paintTab();
     renderTabs();
-    if (tab === 'undergraduate') { loadCountry('seemous').catch(() => {}); loadCountry('imc').catch(() => {}); }
+    if (tab === 'undergraduate') { loadCountry('seemous').catch(() => {}); loadCountry('imc').catch(() => {}); loadCountry('put').catch(() => {}); }
     $('.mx-wrap').scrollTop = 0;
     if (!keepScope) { state.country = null; state.year = null; limit = PAGE; refresh(); }
 }
