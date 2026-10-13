@@ -104,7 +104,7 @@ def build_manifest():
     The counts must equal what index.html derives from the full file
     (normalizeYears / normalizeUsa)."""
     out = {}
-    for path in sorted([*ROOT.glob('*-problems.json'), ROOT / 'undergraduate/Vojtech-Jarnik-problems.json', ROOT / 'undergraduate/Simon-Marais-problems.json', ROOT / 'undergraduate/Putnam-problems.json']):
+    for path in sorted([*ROOT.glob('*-problems.json'), ROOT / 'undergraduate/Vojtech-Jarnik-problems.json', ROOT / 'undergraduate/Simon-Marais-problems.json', ROOT / 'undergraduate/Putnam-problems.json', ROOT / 'undergraduate/IMC-1994-2026-review.json', ROOT / 'undergraduate/SEEMOUS-2007-2010-problems.json']):
         raw = json.loads(path.read_text(encoding='utf-8'))
         years = {}
         if isinstance(raw.get('data'), dict):  # older USA TSTST schema

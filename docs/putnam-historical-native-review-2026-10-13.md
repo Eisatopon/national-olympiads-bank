@@ -29,3 +29,11 @@ The original 1938–1964 compilation has been located bibliographically, but a f
 Run `python scripts/build_putnam_1965_1984_review.py`, then `node tests/test_putnam_historical_native_review.cjs`. The builder pins the exact three reviewed input files by SHA-256 and refuses to certify modified inputs. Each output statement and diagram has its own SHA-256. The original research inputs are preserved.
 
 All 240 statements were tested with MathJax 3.2.2; the final pass rendered 1,477 math expressions without TeX errors. All 732 statements also passed the final MathJax render check: 4,838 expressions, zero TeX errors. Diagram crops were visually inspected. The already published 1985–2025 records retain their previous source-review status. Twelve nested-dollar expressions inside text macros were repaired for native MathJax rendering without changing hypotheses or formulas; input statement hashes are retained for those repairs.
+
+## Live publication checks
+
+The live bank was checked after deployment. Putnam now covers 1965–2025 with 732 records; the Undergraduate section contains 1,515 records. Representative views from 1965, 1973, 1974, 1978, 1982, 1987 and 2023 each displayed 12 cards without MathJax errors. All four original diagrams loaded in the three diagram assets. Source-review badges now support multi-page ranges, and printed source defects are shown as awaiting verification rather than as mathematically certified questions.
+
+The summary manifest includes every registered Undergraduate collection, so the overall counter includes IMC and SEEMOUS as well as Putnam, Simon Marais and Jarník. All root collections and their grid ordering remain unchanged.
+
+![Live Putnam statement and original diagrams](putnam-native-proof-1791868356231.jpg)
