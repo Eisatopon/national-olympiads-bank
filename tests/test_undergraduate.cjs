@@ -8,7 +8,7 @@ assert.deepEqual(data.records.map(r => r.id), ['put', 'imc', 'seemous', 'vjimc',
 assert.equal(new Set(data.records.map(r => r.id)).size, data.records.length);
 for (const r of data.records) {
   assert.ok(r.name && r.audience && r.geography && r.scope.includes('university'), r.id);
-  assert.equal(r.statements_imported, r.id === 'put' ? 732 : r.id === 'vjimc' ? 261 : r.id === 'smmc' ? 88 : 0);
+  assert.equal(r.statements_imported, r.id === 'put' ? 1063 : r.id === 'vjimc' ? 261 : r.id === 'smmc' ? 88 : 0);
   assert.equal(r.republication_permission, ['put','vjimc'].includes(r.id) ? 'oral_permission_reported_by_project_owner_2026-10-12' : r.id === 'smmc' ? 'publication_requested_by_project_owner_2026-10-12_no_licence_inferred' : 'not_established');
   assert.ok(r.paper_structure && r.source_status);
 }

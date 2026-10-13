@@ -80,6 +80,6 @@ const html = fs.readFileSync('index.html','utf8');
 assert.ok(html.includes("key: 'put', name: 'Putnam'"));
 assert.ok(html.includes("file: 'undergraduate/Putnam-problems.json'"));
 assert.ok(html.includes("if (key === 'put') return {"));
-assert.ok(html.includes("c.key === 'put' ? 732"));
+assert.ok(html.includes("c.key === 'put' ? 1063"));
 assert.ok(html.includes("loadCountry('put')"));
 console.log('Putnam 1985-2025: 492 preserved recent statements and expanded Undergraduate grid registration validated.');

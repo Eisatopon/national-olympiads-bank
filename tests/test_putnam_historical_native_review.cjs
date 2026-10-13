@@ -37,7 +37,7 @@ assert.equal(records.flatMap(p=>p.figures??[]).reduce((n,f)=>n+f.diagram_count,0
 console.log('Putnam historical checkpoint: 240 statements, source hashes, corrected formulas and four diagram crops verified.');
 const published=JSON.parse(fs.readFileSync('undergraduate/Putnam-problems.json','utf8'));
 const recent=JSON.parse(fs.readFileSync('undergraduate/Putnam-1985-2025-review.json','utf8'));
-assert.equal(published.problem_count,732);
+assert.equal(published.problem_count,1063);
 const recentPublished=published.years.filter(y=>y.year>=1985);
 assert.deepEqual(recentPublished.map(y=>y.year),recent.years.map(y=>y.year));
 let renderingRepairs=0;
@@ -54,7 +54,7 @@ for(let i=0;i<recent.years.length;i++)for(let j=0;j<12;j++){
  }else assert.equal(problem,oldProblem);
 }
 assert.equal(renderingRepairs,12);
-const historical=published.years.filter(y=>y.year<1985).flatMap(y=>y.problems);
+const historical=published.years.filter(y=>y.year>=1965 && y.year<1985).flatMap(y=>y.problems);
 assert.equal(historical.length,240);
 const categories=new Set(['Algebra','Geometry','Number Theory','Combinatorics','Analysis']);
 for(const p of historical){
@@ -64,8 +64,8 @@ for(const p of historical){
   for(const f of p.figures??[])assert.ok(p.problem.includes('https://eisatopon.github.io/national-olympiads-bank/'+f.src));
 }
 const checks=JSON.parse(fs.readFileSync('metadata/putnam-statement-checks.json','utf8')).collections['undergraduate/Putnam-problems.json'].statement_checks;
-assert.equal(Object.keys(checks).length,240);
-for(const y of published.years.filter(y=>y.year<1985))for(const p of y.problems){
+assert.equal(Object.keys(checks).length,571);
+for(const y of published.years.filter(y=>y.year>=1965 && y.year<1985))for(const p of y.problems){
   assert.equal(checks[`put.${y.year}.0.${p.number}`].reviewed_statement,p.problem);
 }
 const secondary=JSON.parse(fs.readFileSync('research/putnam/Putnam-1938-1964-Scholes-source-review.json','utf8'));

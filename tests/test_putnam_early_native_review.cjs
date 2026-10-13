@@ -1,0 +1,34 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const sha=t=>crypto.createHash('sha256').update(t).digest('hex');
+const data=read('research/putnam/Putnam-1938-1964-native-secondary-review.json');
+const published=read('undergraduate/Putnam-problems.json');
+const meta=read('metadata/putnam-statement-checks.json').collections['undergraduate/Putnam-problems.json'];
+assert.equal(data.problem_count,331);assert.equal(data.edition_count,25);assert.equal(data.years.length,24);
+assert.equal(data.solutions_imported,false);
+const uids=[];
+for(const y of data.years)for(const p of y.problems){
+ const id=`put.${y.year}.${p.paper_id??0}.${p.number}`;uids.push(id);
+ assert.equal(p.statement_verified,false);assert.equal(p.original_wording_verified,false);
+ assert.equal(p.secondary_comparison_completed,true);assert.equal(p.statement_sha256,sha(p.problem));
+ assert.ok(!/[\u0370-\u03ff]/.test(p.problem));assert.ok(!p.solution);
+ const rest=p.problem.replace(/\$\$[\s\S]*?\$\$|\$[^$]*?\$/g,'');
+ assert.ok(!/\\(?:text|begin|frac|sum|sqrt)\b/.test(rest),id);
+ assert.equal(p.problem.split('$').length%2,1);assert.ok(!/page\s*\}?\s*\d/i.test(p.problem),id);
+ assert.equal(meta.statement_checks[id].status,'statement_compared_against_secondary_source');
+ assert.equal(meta.statement_checks[id].reviewed_statement,p.problem);
+ assert.ok(p.category&&p.topics[0]===p.category);
+ const pub=published.years.find(z=>z.year===y.year).problems.find(q=>q.number===p.number&&(q.paper_id??0)===(p.paper_id??0));
+ assert.deepEqual(pub,p);
+}
+assert.equal(new Set(uids).size,331);
+assert.ok(!data.years.some(y=>[1943,1944,1945].includes(y.year)));
+const both=data.years.find(y=>y.year===1958).problems;
+assert.equal(both.filter(p=>p.paper_id===1).length,14);assert.equal(both.filter(p=>p.paper_id===2).length,14);
+const get=(y,n)=>data.years.find(z=>z.year===y).problems.find(p=>p.number===n);
+assert.ok(get(1940,'A8').problem.includes('\\Delta^2'));
+assert.ok(get(1960,'B7').problem.includes('\\int_s^t'));
+assert.ok(get(1962,'B6').problem.includes('exactly $2n$'));
+assert.ok(get(1959,'B5').source_issue_note.startsWith('Unresolved source variant'));
+assert.equal(get(1947,'A3').figures[0].content,'diagram_only');
+console.log('331 early native statements: distinct identities, secondary-only status, formula restorations, no solutions, and both 1958 examinations checked.');

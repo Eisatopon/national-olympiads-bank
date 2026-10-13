@@ -593,7 +593,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
             <div class="stat"><b>72</b><span>countries</span></div>
-            <div class="stat"><b>1947–2026</b><span>years</span></div>
+            <div class="stat"><b>1938–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
     </div>
@@ -745,8 +745,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261013-putnam-native';
-const FIRST = 1947, LAST = 2026;
+const DATA_VERSION = '20261013-putnam-early-native';
+const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
     gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
@@ -1164,7 +1164,7 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 function manifestYears(key) {
     if (key === 'smmc') return {'2017':8,'2018':8,'2019':8,'2020':8,'2021':8,'2022':12,'2023':12,'2024':12,'2025':12};
     if (key === 'vjimc') return {"1991":4,"1992":8,"1993":8,"1994":8,"1995":7,"1996":6,"1997":10,"1998":10,"1999":8,"2000":8,"2001":8,"2002":8,"2003":8,"2004":8,"2005":8,"2006":8,"2007":8,"2008":8,"2009":8,"2010":8,"2011":8,"2012":8,"2013":8,"2014":8,"2015":8,"2016":8,"2017":8,"2018":8,"2019":8,"2022":8,"2024":8,"2025":8,"2026":8};
-    if (key === 'put') return {'1965':12,'1966':12,'1967':12,'1968':12,'1969':12,'1970':12,'1971':12,'1972':12,'1973':12,'1974':12,'1975':12,'1976':12,'1977':12,'1978':12,'1979':12,'1980':12,'1981':12,'1982':12,'1983':12,'1984':12,'1985':12,'1986':12,'1987':12,'1988':12,'1989':12,'1990':12,'1991':12,'1992':12,'1993':12,'1994':12,'1995':12,'1996':12,'1997':12,'1998':12,'1999':12,'2000':12,'2001':12,'2002':12,'2003':12,'2004':12,'2005':12,'2006':12,'2007':12,'2008':12,'2009':12,'2010':12,'2011':12,'2012':12,'2013':12,'2014':12,'2015':12,'2016':12,'2017':12,'2018':12,'2019':12,'2020':12,'2021':12,'2022':12,'2023':12,'2024':12,'2025':12};
+    if (key === 'put') return {"1938":13,"1939":14,"1940":15,"1941":14,"1942":11,"1946":12,"1947":12,"1948":12,"1949":12,"1950":12,"1951":14,"1952":14,"1953":14,"1954":14,"1955":14,"1956":14,"1957":14,"1958":28,"1959":14,"1960":14,"1961":14,"1962":12,"1963":12,"1964":12,"1965":12,"1966":12,"1967":12,"1968":12,"1969":12,"1970":12,"1971":12,"1972":12,"1973":12,"1974":12,"1975":12,"1976":12,"1977":12,"1978":12,"1979":12,"1980":12,"1981":12,"1982":12,"1983":12,"1984":12,"1985":12,"1986":12,"1987":12,"1988":12,"1989":12,"1990":12,"1991":12,"1992":12,"1993":12,"1994":12,"1995":12,"1996":12,"1997":12,"1998":12,"1999":12,"2000":12,"2001":12,"2002":12,"2003":12,"2004":12,"2005":12,"2006":12,"2007":12,"2008":12,"2009":12,"2010":12,"2011":12,"2012":12,"2013":12,"2014":12,"2015":12,"2016":12,"2017":12,"2018":12,"2019":12,"2020":12,"2021":12,"2022":12,"2023":12,"2024":12,"2025":12};
     if (key === 'imc') return {'1994':12,'1995':12,'1996':12,'1997':12,'1998':12,'1999':12,'2000':12,'2001':12,'2002':12,'2003':12,'2004':12,'2005':12,'2006':12,'2007':12,'2008':12,'2009':10,'2010':10,'2011':10,'2012':10,'2013':10,'2014':10,'2015':10,'2016':10,'2017':10,'2018':10,'2019':10,'2020':8,'2021':8,'2022':8,'2023':10,'2024':10,'2025':10,'2026':10};
     if (key === 'seemous') return {'2007':4,'2008':4,'2009':4,'2010':4,'2011':4,'2012':4,'2013':4,'2014':4,'2015':4,'2016':4,'2017':4,'2018':4,'2019':4,'2020':4,'2021':4,'2022':4,'2023':4,'2024':4,'2025':4,'2026':4};
     const m = manifest && manifest.files && manifest.files[CBY[key].file];
@@ -1182,7 +1182,7 @@ function bankTotal() {
 /* "All problems" without filters shows the newest problems first, so only the
    collections that reach the visible page are downloaded. */
 function tabTotal(tab) {
-    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'put' ? 732 : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : c.key === 'vjimc' ? 261 : c.key === 'smmc' ? 88 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
+    return COUNTRIES.filter(c => scopeOf(c) === tab).reduce((s, c) => s + (cache.has(c.key) ? cache.get(c.key).length : c.key === 'put' ? 1063 : c.key === 'imc' ? 354 : c.key === 'seemous' ? 80 : c.key === 'vjimc' ? 261 : c.key === 'smmc' ? 88 : manifest ? ((manifest.files[c.file] || {}).total || 0) : 0), 0);
 }
 function browseTotal() {
     if (!manifest || state.country || state.year !== null || filtersOn()) return 0;
@@ -1566,21 +1566,24 @@ function provenanceHtml(p, print = false) {
     const checked = candidate?.status === 'statement_checked_against_source'
         && sameStatement(candidate, p.text) && source
         && sourcePages.length > 0;
+    const compared = candidate?.status === 'statement_compared_against_secondary_source'
+        && candidate.source_format === 'Reworded secondary HTML archive by John Scholes'
+        && sameStatement(candidate, p.text) && source;
     const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
     const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_download_kind === 'statements_only' ? 'Statements PDF (no solutions)' : candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
-    const unresolved = checked && /^(?:Source ambiguity|Incomplete source condition|Unresolved source error|Potential source typo|Source omission|Source convention omission)/.test(editorialText);
-    const status = unresolved ? 'Source issue — awaiting verification' : checked ? 'Statement checked against source (AI-assisted)' : 'Sources and notes';
+    const unresolved = (checked || compared) && /^(?:Source ambiguity|Incomplete source condition|Unresolved source (?:error|variant)|Potential source typo|Source omission|Source convention omission)/.test(editorialText);
+    const status = unresolved ? 'Source issue — awaiting verification' : checked ? 'Statement checked against source (AI-assisted)' : compared ? 'Secondary-source comparison (AI-assisted)' : 'Sources and notes';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
-    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
+    const checkDetail = compared ? `<p>Compared textually on ${esc(candidate.checked_at)} with <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">John Scholes’ reworded secondary archive</a>, problem ${esc(candidate.source_problem_number)}. This is an edited transcription; original examination wording has not been verified.</p>${candidate.source_variant_note ? `<p>${esc(candidate.source_variant_note)}</p>` : ''}` : checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
     const links = (meta?.source_links || []).map(link => {
         const url = safeSourceUrl(link.url);
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
     }).filter(Boolean);
     if (print) {
-        const text = [checked ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', checked ? `Source: ${esc(source)}, ${pageReference}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
+        const text = [(checked || compared) ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', (checked || compared) ? `Source: ${esc(source)}, ${checked ? pageReference + ', ' : ''}problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
         return text ? `<p class="ps-src">${text}</p>` : '';
     }
-    if (!checked && !note && !editorialText && !links.length) return '';
+    if (!checked && !compared && !note && !editorialText && !links.length) return '';
     return `${editorialText ? `<p class="ps-src">${esc(editorialText)}</p>` : ''}<details class="provenance"><summary>${status}${note ? ' · Incomplete year' : ''}</summary>
         ${note ? `<p>${esc(note)}</p>` : ''}${checkDetail}
         ${meta?.verification_notes ? `<p>${esc(meta.verification_notes)}</p>` : ''}

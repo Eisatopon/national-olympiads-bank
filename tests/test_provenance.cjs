@@ -47,3 +47,13 @@ const savedPages=rangeCheck.source_pages;
 rangeCheck.source_pages=[15,0];
 assert.doesNotMatch(ctx.provenanceHtml(rangeRecord),/Statement checked against source/);
 rangeCheck.source_pages=savedPages;
+const secondaryCheck=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1959.0.A1'];
+const secondaryRecord={country:'put',year:1959,uid:'put.1959.0.A1',text:secondaryCheck.reviewed_statement};
+for(const print of [false,true]){
+ const rendered=ctx.provenanceHtml(secondaryRecord,print);
+ assert.match(rendered,/Secondary-source comparison/);
+ assert.doesNotMatch(rendered,/Statement checked against source|Exam source|page 1/);
+ assert.doesNotMatch(ctx.provenanceHtml({...secondaryRecord,text:'Changed statement.'},print),/Secondary-source comparison/);
+ const issueCheck=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1959.0.B5'];
+ assert.match(ctx.provenanceHtml({country:'put',year:1959,uid:'put.1959.0.B5',text:issueCheck.reviewed_statement},print),/Source issue — awaiting verification/);
+}

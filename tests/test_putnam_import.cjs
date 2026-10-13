@@ -39,7 +39,7 @@ for(const r of early){
  assert.ok(['1938–1964','1965–1984'].includes(r.compilation_period));
 }
 for(const r of history.records){
- assert.equal(r.statement_text_imported,r.year>=1965);
+ assert.equal(r.statement_text_imported,true);
  assert.equal(r.statement_by_statement_verified,r.year>=1965&&r.year<=1984);
  assert.equal(r.publication_permission,'oral_permission_reported_by_project_owner_2026-10-12');
 }

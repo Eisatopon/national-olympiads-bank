@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated": "2026-10-13",
   "section": "undergraduate",
-  "purpose": "Strict, persistent import targets; entries only become public after original statement transcription and classification are verified. Do not substitute source URLs or blank strings for problem statements.",
+  "purpose": "Strict, persistent import targets; entries only become public after original statement transcription and classification are verified. Do not substitute source URLs or blank strings for problem statements. Putnam 1938–1964 is an explicitly labelled edited secondary-source edition; its records retain statement_verified=false and original_wording_verified=false.",
   "collections": [
     {
       "id": "imc",
@@ -21,8 +21,9 @@
       "last_archived_year": 2025,
       "identifier_rule": "Use original paper numbering; do not impose A1–B6 before 1985; retain distinct 1958 examinations; no invented events for 1943–1945",
       "source_registry": "metadata/putnam-historical-1938-2025.json",
-      "publication_status": "published_1965_2025_with_per_record_source_status",
-      "published_first_year": 1965
+      "publication_status": "published_1938_2025_with_per_record_primary_or_secondary_source_status",
+      "published_first_year": 1938,
+      "secondary_compared_statements": 331
     },
     {
       "id": "seemous",
