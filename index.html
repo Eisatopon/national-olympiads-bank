@@ -22,7 +22,7 @@
     };
 </script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <style>
 /* ==========================================================
@@ -1134,7 +1134,7 @@ function loadCountry(key) {
         onCountrySettled(key);
         return Promise.reject(new Error(message));
     }
-    const p = fetch(BASE + country.file + '?v=' + DATA_VERSION, {cache: 'no-cache'})
+    const p = fetch(BASE + country.file + '?v=' + DATA_VERSION, {cache: 'default'})
         .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
         .then(txt => {
             let raw;
@@ -2232,7 +2232,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     // Start every metadata request at once and draw the grid without waiting for them.
-    const getJson = url => fetch(url, {cache: 'no-cache'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+    const getJson = url => fetch(url, {cache: 'default'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
     const META_V = '?v=' + DATA_VERSION;
     // Counts per collection and year: the grid and the totals come from here, not from the full files.
     const manifestReady = getJson('./metadata/runtime/manifest.json' + META_V).then(m => {
