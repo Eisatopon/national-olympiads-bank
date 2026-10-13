@@ -61,6 +61,7 @@ def build_topics():
 def build_collections():
     src = dict(load('collections.json')['collections'])
     src.update((load('smmc-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('vjimc-statement-checks.json') or {}).get('collections', {}))
     out = {}
     for file in sorted(src):
         meta = src[file]

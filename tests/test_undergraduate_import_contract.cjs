@@ -77,7 +77,7 @@ for(const c of v.collections){
    const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
    assert.equal(imported.problem_count,261);
    assert.equal(imported.years.length,33);
-   assert.ok(imported.years.every(y=>y.problems.every(p=>p.statement_asset && p.paper && p.statement_verified)));
+   assert.ok(imported.years.every(y=>y.problems.every(p=>!p.statement_asset && p.paper && p.statement_verified && p.text_transcription_verified)));
  }else if(c.id==='smmc'){
    const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
    assert.equal(imported.problem_count,88);

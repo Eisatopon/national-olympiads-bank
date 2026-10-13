@@ -434,8 +434,6 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .statement { font: 400 1.08rem/1.75 var(--serif); max-width: 74ch; overflow-wrap: anywhere; }
 .statement .para + .para { margin-top: .6em; }
 .statement .fig { margin: .9em 0; text-align: center; }
-.statement-original{margin:0;background:#fff;border-radius:4px;padding:8px}
-.statement-original img{display:block;width:100%;height:auto;max-width:100%;background:#fff}
 .statement .fig img { max-width: min(100%, 480px); height: auto; background: #fff; border: 1px solid var(--line); }
 mjx-container { margin: .2em 0 !important; }
 mjx-container[display="true"] { margin: .6em 0 !important; overflow-x: auto; overflow-y: hidden; max-width: 100%; }
@@ -747,7 +745,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261012-simon-marais-paper-filters';
+const DATA_VERSION = '20261013-vjimc-native';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1040,17 +1038,13 @@ function typeset(el) {
 
 const IMG_RE = /(https?:\/\/\S+?)[ \t]*\.(png|jpe?g|gif|webp|svg)\b\.?/gi;
 function bodyHtml(text, record) {
-    const asset = record && record.statementAsset;
-    if (asset && /^assets\/statements\/vjimc\/\d{4}-(?:I|II)-p\d+(?:[MI])?\.png$/.test(asset.src)) {
-        return `<figure class="statement-original"><a href="${esc(asset.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(asset.src)}" alt="${esc(asset.alt)}" width="${Number(asset.width)}" height="${Number(asset.height)}" loading="lazy" decoding="async"></a></figure>`;
-    }
     let figs = [];
     let s = esc(text).replace(IMG_RE, (m, url, ext) => {
         figs.push(`${url}.${ext}`);
         return '';
     });
     let html = s.split(/\n{2,}/).map(x => x.trim()).filter(Boolean).map(x => `<div class="para">${x}</div>`).join('');
-    figs.forEach(u => { html += `<figure class="fig"><img src="${esc(u)}" alt="Figure" loading="lazy" referrerpolicy="no-referrer"></figure>`; });
+    figs.forEach(u => { html += `<figure class="fig"><img src="${esc(u)}" alt="${esc(record?.figureAlt || 'Figure')}" loading="lazy" referrerpolicy="no-referrer"></figure>`; });
     return html;
 }
 
@@ -1103,7 +1097,7 @@ function normalizeYears(country, raw) {
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
-                paperLabel: p.paper_label || null, statementAsset: p.statement_asset || null,
+                paperLabel: p.paper_label || null, figureAlt: p.figure_alt || null,
                 ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || '')
             });
         });
@@ -1979,10 +1973,6 @@ async function copyLink() {
 function aiPrompt(p, request) {
     const c = CBY[p.country];
     const label = `${c.name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day / Test ${p.day}` : ''}, problem ${p.num}`;
-    if (p.statementAsset && /^assets\/statements\/vjimc\//.test(p.statementAsset.src)) {
-        const imageUrl = new URL(p.statementAsset.src, typeof location !== 'undefined' ? location.href : 'https://eisatopon.github.io/national-olympiads-bank/').href;
-        return `${request || 'Give a rigorous mathematical solution with clear explanations and standard LaTeX. Preserve every hypothesis. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\nRead the complete original statement from this image, including all formulas: ${imageUrl}\n\nIf you cannot access the image, ask me to upload it before attempting the problem. Do not infer or invent any formulas.`;
-    }
     const figure = /https?:\/\/\S+\.(?:png|jpe?g|gif|webp)\b/i.test(p.text);
     return `${request || 'Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\n${p.text}` +
         (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');
