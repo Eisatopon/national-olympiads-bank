@@ -18,6 +18,10 @@ Usage:
 metadata/runtime/manifest.json holds the problem count per year of every
 collection file; index.html draws the grid and the totals from it and
 downloads a collection only when its problems are needed.
+
+The statement checks (most of the data) are written per collection to
+metadata/runtime/checks/<collection file>, and index.html downloads them
+together with the collection, so the first page load stays small.
 """
 import json
 import sys
@@ -58,12 +62,16 @@ def build_topics():
     return {'schema_version': 1, 'hash': 'fnv1a32-utf16', 'records': out}
 
 
+def checks_path(file):
+    return f'checks/{file}'
+
+
 def build_collections():
     src = dict(load('collections.json')['collections'])
     src.update((load('smmc-statement-checks.json') or {}).get('collections', {}))
     src.update((load('vjimc-statement-checks.json') or {}).get('collections', {}))
     src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
-    out = {}
+    out, check_files = {}, {}
     for file in sorted(src):
         meta = src[file]
         slim = {}
@@ -82,7 +90,8 @@ def build_collections():
             item['h'] = text_hash(c['reviewed_statement'])
             checks[uid] = item
         if checks:
-            slim['statement_checks'] = checks
+            slim['statement_checks_file'] = checks_path(file)
+            check_files[checks_path(file)] = {'schema_version': 1, 'hash': 'fnv1a32-utf16', 'statement_checks': checks}
         notes = {}
         for uid, n in (meta.get('statement_notes') or {}).items():
             if 'reviewed_statement' not in n or not n.get('text'):
@@ -91,7 +100,7 @@ def build_collections():
         if notes:
             slim['statement_notes'] = notes
         out[file] = slim
-    return {'schema_version': 1, 'hash': 'fnv1a32-utf16', 'collections': out}
+    return {'schema_version': 1, 'hash': 'fnv1a32-utf16', 'collections': out}, check_files
 
 
 def build_manifest():
@@ -125,11 +134,16 @@ def dump(obj):
 
 
 def main():
-    files = {'topics.json': dump(build_topics()), 'collections.json': dump(build_collections()),
+    collections, check_files = build_collections()
+    files = {'topics.json': dump(build_topics()), 'collections.json': dump(collections),
              'manifest.json': dump(build_manifest())}
+    files.update({name: dump(body) for name, body in check_files.items()})
+    # Check files of collections that no longer have checks must not linger.
+    orphans = [str(p.relative_to(OUT)) for p in (OUT / 'checks').rglob('*.json')
+               if str(p.relative_to(OUT)) not in files] if (OUT / 'checks').exists() else []
     if '--check' in sys.argv:
         stale = [n for n, body in files.items()
-                 if not (OUT / n).exists() or (OUT / n).read_text(encoding='utf-8') != body]
+                 if not (OUT / n).exists() or (OUT / n).read_text(encoding='utf-8') != body] + orphans
         if stale:
             print('Stale runtime metadata: ' + ', '.join(stale) +
                   '. Run: python scripts/build_runtime_metadata.py')
@@ -137,9 +151,14 @@ def main():
         print('Runtime metadata is up to date.')
         return
     OUT.mkdir(parents=True, exist_ok=True)
+    for name in orphans:
+        (OUT / name).unlink()
+        print(f'Removed metadata/runtime/{name}')
     for name, body in files.items():
+        (OUT / name).parent.mkdir(parents=True, exist_ok=True)
         (OUT / name).write_text(body, encoding='utf-8')
-        print(f'Wrote metadata/runtime/{name} ({len(body.encode()):,} bytes)')
+    print(f'Wrote {len(files)} files in metadata/runtime/ (collections.json: {len(files["collections.json"].encode()):,} bytes, '
+          f'{len(check_files)} statement-check files: {sum(len(files[n].encode()) for n in check_files):,} bytes)')
 
 
 if __name__ == '__main__':

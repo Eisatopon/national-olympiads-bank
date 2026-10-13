@@ -10,18 +10,22 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
 <script>
+    document.documentElement.classList.add('booting');
+    setTimeout(() => document.documentElement.classList.remove('booting'), 4000);
     MathJax = {
         tex: {
             inlineMath: [['\\(', '\\)'], ['$', '$']],
             displayMath: [['\\[', '\\]'], ['$$', '$$']],
             processEscapes: true
-        }
+        },
+        startup: { typeset: false }
     };
 </script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
 /* ==========================================================
@@ -304,6 +308,8 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
    Hero
    ========================================================== */
 .hero { background: var(--ink); color: #fff; overflow: hidden; }
+/* Until the grid is built (init), keep what it pushes down invisible, so nothing jumps on phones. */
+.booting .hero > .wrap:last-child, .booting #main, .booting .footer, .booting #statUpdated { visibility: hidden; }
 .brandbar { padding-top: 18px; padding-bottom: 4px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; }
 .logo { width: 30px; height: 30px; border-radius: 50%; background: #d62828; color: #fff; display: inline-grid; place-items: center; font: 800 1.35rem/1 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; letter-spacing: -.5px; padding-bottom: 3px; }
@@ -412,6 +418,8 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .yr-head .yr { font: 800 1.45rem/1 var(--serif); color: var(--ink); }
 .yr-head .kd { font: 600 1rem/1.2 var(--sans); color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
 
+/* Off-screen problem cards are laid out only when they come near the screen. */
+.results .problem { content-visibility: auto; contain-intrinsic-size: auto 320px; }
 .problem { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--f); border-radius: 2px; padding: 18px 24px 22px; scroll-margin-top: 16px; }
 .p-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; margin-bottom: 10px; }
 .p-actions { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -741,7 +749,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261013-putnam-source-complete';
+const DATA_VERSION = '20261013-mobile-speed';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1000,6 +1008,7 @@ let collectionMetadata = {};
 let topicOverrides = {};
 let problemDna = {records:{}, techniques:{}};
 let metadataUnavailable = false;
+let collectionMetadataReady = null;  // resolves when metadata/runtime/collections.json has been read
 let manifest = null;          // metadata/runtime/manifest.json: problem counts per file and year
 let selected = [];
 let shownUids = [];
@@ -1016,15 +1025,41 @@ const say = msg => { $('#srStatus').textContent = ''; setTimeout(() => { $('#srS
 const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 const countText = n => plural(n, 'problem', 'problems');
 
+// Typeset each problem card when it comes near the screen instead of the whole list at once.
+let typesetObserver = null;
+function typesetVisible(root) {
+    if (typesetObserver) { typesetObserver.disconnect(); typesetObserver = null; }
+    const cards = [...root.querySelectorAll('article.problem')];
+    if (!cards.length) return /[$\\]/.test(root.textContent) ? typeset(root) : Promise.resolve();
+    if (typeof IntersectionObserver !== 'function') return typeset(root);
+    typesetObserver = new IntersectionObserver(entries => {
+        const near = entries.filter(e => e.isIntersecting).map(e => e.target);
+        near.forEach(c => typesetObserver.unobserve(c));
+        if (near.length) typeset(near);
+    }, {rootMargin: '300px 0px'});
+    cards.forEach(c => typesetObserver.observe(c));
+}
+// MathJax (about 1 MB) is loaded on the first formula that has to be shown, or on the first
+// scroll, tap or key press, so it does not compete with the first paint on phones.
+function ensureMathJax() {
+    if (document.querySelector('script[data-mathjax]')) return;
+    const sc = document.createElement('script');
+    sc.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+    sc.async = true;
+    sc.dataset.mathjax = '1';
+    document.head.appendChild(sc);
+}
+['scroll', 'pointerdown', 'keydown'].forEach(t => addEventListener(t, ensureMathJax, {once: true, passive: true, capture: true}));
 function typeset(el) {
+    ensureMathJax();
     return new Promise(resolve => {
         let tries = 0;
         const go = () => {
             if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
-                const next = MathJax.startup.promise.then(() => MathJax.typesetPromise([el])).catch(err => console.error('MathJax:', err));
+                const next = MathJax.startup.promise.then(() => MathJax.typesetPromise(Array.isArray(el) ? el : [el])).catch(err => console.error('MathJax:', err));
                 MathJax.startup.promise = next;
                 next.then(resolve);
-            } else if (tries++ < 100) {
+            } else if (tries++ < 400) {
                 setTimeout(go, 150);
             } else { resolve(); }
         };
@@ -1130,9 +1165,18 @@ function loadCountry(key) {
         onCountrySettled(key);
         return Promise.reject(new Error(message));
     }
-    const p = fetch(BASE + country.file + '?v=' + DATA_VERSION, {cache: 'no-cache'})
-        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
-        .then(txt => {
+    // The statement checks of a collection are a separate small file, downloaded alongside it.
+    const checks = (collectionMetadataReady || Promise.resolve()).then(() => {
+        const meta = collectionMetadata[country.file];
+        if (!meta?.statement_checks_file || meta.statement_checks) return;
+        return fetch('./metadata/runtime/' + meta.statement_checks_file + '?v=' + DATA_VERSION, {cache: 'no-cache'})
+            .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+            .then(data => { if (data.schema_version === 1 && data.statement_checks) meta.statement_checks = data.statement_checks; })
+            .catch(() => { metadataUnavailable = true; });
+    });
+    const p = Promise.all([fetch(BASE + country.file + '?v=' + DATA_VERSION, {cache: 'no-cache'})
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }), checks])
+        .then(([txt]) => {
             let raw;
             try { raw = JSON.parse(txt); }
             catch (e) { throw new Error(`${country.file} is not valid JSON`); }
@@ -1220,14 +1264,12 @@ function buildMatrix() {
         const list = tabRows().filter(c => regionOf(c.key) === rk);
         if (!list.length) return;
         const open = rk === openG;
-        html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${list.length}</span></button>`;
+        html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" tabindex="-1" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${list.length}</span></button>`;
         for (let y = LAST; y >= FIRST; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
         html += '</div>';
         list.forEach(c => {
-            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${c.name}</span></button>`;
-            for (let y = LAST; y >= FIRST; y--) {
-                html += `<button type="button" class="cell pend" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-label="${c.name}, ${y}"></button>`;
-            }
+            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${c.name}</span></button>`;
+            if (open) html += rowCells(c);
             html += '</div>';
         });
     });
@@ -1264,7 +1306,23 @@ function setTab(tab, keepScope) {
     $('.mx-wrap').scrollTop = 0;
     if (!keepScope) { state.country = null; state.year = null; limit = PAGE; refresh(); }
 }
+// Cells of a collapsed continent are created the first time its rows are shown.
+function rowCells(c) {
+    let html = '';
+    for (let y = LAST; y >= FIRST; y--) {
+        const pick = state.country === c.key && state.year === y;
+        const line = !pick && ((state.year === y && state.country === null) || (state.country === c.key && state.year === null));
+        html += `<button type="button" class="cell pend${pick ? ' pick' : line ? ' line' : ''}" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-pressed="${pick}" aria-label="${c.name}, ${y}"></button>`;
+    }
+    return html;
+}
 function refreshGrid() {
+    $$('#mx .mx-row[data-lazy]:not([hidden])').forEach(row => {
+        row.removeAttribute('data-lazy');
+        const key = row.querySelector('.rl').dataset.rl;
+        row.insertAdjacentHTML('beforeend', rowCells(CBY[key]));
+        paintCountry(key);
+    });
     gridBtns = [...$('#mx').children].filter(row => !row.hidden && !row.classList.contains('mx-grp')).map(row => [...row.children]);
 }
 // A section with a single continent group shows it open; otherwise the last opened group.
@@ -1421,17 +1479,21 @@ function syncMatrix() {
     if (state.country) revealCountry(state.country);
     $$('#mx .yh').forEach(b => b.classList.toggle('sel', state.country === null && +b.dataset.yh === state.year));
     $$('#mx .rl').forEach(b => b.classList.toggle('sel', state.year === null && b.dataset.rl === state.country));
-    $$('#mx .cell').forEach(c => {
-        const y = +c.dataset.year, k = c.dataset.country;
-        const pick = state.country === k && state.year === y;
-        const line = !pick && ((state.year === y && state.country === null) || (state.country === k && state.year === null));
-        c.classList.toggle('pick', pick);
-        c.classList.toggle('line', line);
-        c.setAttribute('aria-pressed', String(pick));
+    // Touch only the cells whose pick/line state changes, not the whole grid.
+    let pickCell = null, lineCells = [];
+    if (state.country && state.year !== null) pickCell = $(`#mx .cell[data-country="${state.country}"][data-year="${state.year}"]`);
+    else if (state.country) lineCells = $$(`#mx .cell[data-country="${state.country}"]`);
+    else if (state.year !== null) lineCells = $$(`#mx .cell[data-year="${state.year}"]`);
+    const lineSet = new Set(lineCells);
+    $$('#mx .cell.pick, #mx .cell.line').forEach(c => {
+        if (c !== pickCell && c.classList.contains('pick')) { c.classList.remove('pick'); c.setAttribute('aria-pressed', 'false'); }
+        if (!lineSet.has(c)) c.classList.remove('line');
     });
+    lineCells.forEach(c => { if (!c.classList.contains('line')) c.classList.add('line'); });
+    if (pickCell && !pickCell.classList.contains('pick')) { pickCell.classList.remove('line'); pickCell.classList.add('pick'); pickCell.setAttribute('aria-pressed', 'true'); }
     const cur = $('#mx .cell.pick') || $('#mx .cell.on') || $('#mx .yh:not(:disabled)');
-    $$('#mx button').forEach(b => { b.tabIndex = -1; });
-    if (cur) cur.tabIndex = 0;
+    $$('#mx button[tabindex="0"]').forEach(b => { if (b !== cur) b.tabIndex = -1; });
+    if (cur && cur.tabIndex !== 0) cur.tabIndex = 0;
     const done = COUNTRIES.filter(c => cache.has(c.key)).length + failed.size;
     $('#mxStatus').textContent = !manifest && done < COUNTRIES.length ? `Loading ${done} of ${COUNTRIES.length} countries` : '';
     const total = bankTotal();
@@ -1789,7 +1851,7 @@ function renderResults() {
 
     box().innerHTML = html;
     syncAddButtons();
-    typeset(box());
+    typesetVisible(box());
     say(`${countText(total)}.`);
     if (typeof syncUrl === 'function') syncUrl();
 }
@@ -1937,7 +1999,7 @@ function renderPrintSheet() {
         : '';
     const h1 = $('#printSheet h1');
     if (h1) h1.textContent = title;
-    return typeset($('#printSheet'));
+    return items.length ? typeset($('#printSheet')) : Promise.resolve();
 }
 async function doPrint() {
     if (!getSelected().length) return;
@@ -2089,7 +2151,9 @@ function showUpdated() {
     if (!m) return;
     const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
     if (isNaN(d)) return;
-    $('#statUpdated').textContent = 'Updated ' + d.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
+    // Same text as toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}), without loading Intl at startup.
+    const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+    $('#statUpdated').textContent = `Updated ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 }
 
 function parseIncoming() {
@@ -2237,11 +2301,12 @@ async function init() {
         renderTabs();
         syncMatrix();
     }).catch(() => { manifest = null; });
+    collectionMetadataReady = getJson('./metadata/runtime/collections.json' + META_V).then(data => {
+        if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
+        collectionMetadata = data.collections;
+    }).catch(() => { metadataUnavailable = true; });
     const metadataReady = Promise.allSettled([
-        getJson('./metadata/runtime/collections.json' + META_V).then(data => {
-            if (data.schema_version !== 1 || !data.collections) throw new Error('Invalid metadata');
-            collectionMetadata = data.collections;
-        }).catch(() => { metadataUnavailable = true; }),
+        collectionMetadataReady,
         getJson('./metadata/problem-dna.json' + META_V).then(dna => {
             if (dna.schema_version === 1 && dna.records && dna.techniques) problemDna = dna;
         }).catch(() => { /* Concept-based connections remain available. */ }),
@@ -2270,6 +2335,7 @@ async function init() {
     centerPick();
     syncToggle();
     renderExam();
+    document.documentElement.classList.remove('booting');
 
     // Topics and source notes are attached while each collection is normalised, so wait for them here.
     await Promise.all([metadataReady, manifestReady]);
@@ -2298,7 +2364,15 @@ async function init() {
     syncMatrix();
 }
 
-init();
+// Build the grid and fetch the data only after the header has been painted, so phones show the page at once.
+let started = false;
+const start = () => { if (!started) { started = true; init(); } };
+try {
+    new PerformanceObserver((list, obs) => {
+        if (list.getEntries().some(e => e.name === 'first-contentful-paint')) { obs.disconnect(); setTimeout(start, 0); }
+    }).observe({type: 'paint', buffered: true});
+} catch (e) { /* no paint timing: the timer below starts the page */ }
+setTimeout(start, document.hidden ? 0 : 1000);
 })();
 </script>
 </body>

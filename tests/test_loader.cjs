@@ -6,6 +6,7 @@ const code = html.slice(html.indexOf('function textHash('), html.indexOf('functi
 const context = {
   BASE: './', DATA_VERSION: 'test-version', cache: new Map(), inflight: new Map(), failed: new Map(), byUid: new Map(),
   CBY: { ok: {key:'ok',file:'ok.json'}, bad:{key:'bad',file:'bad.json'}, cn:{key:'cn',file:'cn.json',quarantined:true} },
+  collectionMetadata: {}, collectionMetadataReady: null,
   onCountrySettled() {}, fetch: async () => { throw Error('unexpected fetch'); }
 };
 vm.createContext(context); vm.runInContext(code, context);
@@ -55,5 +56,19 @@ assert.equal(context.topicFields('A triangle.', 'Algebra').topic, 'Algebra');
   context.collectionMetadata = {};
   assert.equal(context.provenanceHtml(record), '');
   assert.equal(context.provenanceHtml(record, true), '');
-  console.log('Loader checks passed: duplicates blocked atomically, quarantine avoids fetch, topic preserved.');
+  // Statement checks of a collection come from their own runtime file, fetched together with the collection.
+  context.CBY.chk = {key:'chk', file:'chk.json'};
+  context.collectionMetadata = {'chk.json': {statement_checks_file: 'checks/chk.json'}};
+  context.collectionMetadataReady = Promise.resolve();
+  const urls = [];
+  context.fetch = async url => {
+    urls.push(url);
+    return url.includes('/checks/')
+      ? {ok:true, json:async()=>({schema_version:1, statement_checks:{'chk.2025.0.1':{status:'statement_checked_against_source'}}})}
+      : {ok:true, text:async()=>JSON.stringify({years:[{year:2025,problems:[{number:1,problem:'A'}]}]})};
+  };
+  await context.loadCountry('chk');
+  assert.deepEqual(urls.sort(), ['./chk.json?v=test-version', './metadata/runtime/checks/chk.json?v=test-version']);
+  assert.equal(context.collectionMetadata['chk.json'].statement_checks['chk.2025.0.1'].status, 'statement_checked_against_source');
+  console.log('Loader checks passed: duplicates blocked atomically, quarantine avoids fetch, topic preserved, statement checks loaded with the collection.');
 })().catch(e => { console.error(e); process.exitCode = 1; });

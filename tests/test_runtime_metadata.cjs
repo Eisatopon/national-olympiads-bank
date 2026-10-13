@@ -30,6 +30,14 @@ assert.notDeepEqual(Array.from(ctx.topicFields('Edited.', null, 'x.1').topics), 
 // Provenance rendered from slim metadata must match the full audit metadata, statement by statement.
 const fullMeta = {...read('metadata/collections.json').collections, ...read('metadata/smmc-statement-checks.json').collections, ...read('metadata/vjimc-statement-checks.json').collections, ...read('metadata/putnam-statement-checks.json').collections};
 const slimMeta = read('metadata/runtime/collections.json').collections;
+// Statement checks live in one file per collection (downloaded with the collection), not in collections.json.
+for (const [file, meta] of Object.entries(slimMeta)) {
+  assert.ok(!meta.statement_checks, `${file}: statement checks must not be inlined in runtime/collections.json`);
+  if (meta.statement_checks_file) {
+    assert.equal(meta.statement_checks_file, `checks/${file}`);
+    meta.statement_checks = read('metadata/runtime/' + meta.statement_checks_file).statement_checks;
+  }
+}
 let checked = 0;
 for (const [file, meta] of Object.entries(fullMeta)) {
   const uids = new Set([...Object.keys(meta.statement_checks || {}), ...Object.keys(meta.statement_notes || {})]);
