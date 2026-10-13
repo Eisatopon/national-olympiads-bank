@@ -7,7 +7,7 @@ Date: 2026-10-13. Scope: undergraduate expansion **source discovery**, not state
 - János Bolyai Mathematical Society, official competition and papers: https://www.bolyai.hu/versenyek-schweitzer-miklos-emlekverseny/
 - University of Szeged (M. Maróti), historical PDF index: https://www.math.u-szeged.hu/tagok/mmaroti/schweitzer/index.html
 
-The society's official page provides recent annual papers (including English-language 2024 and 2022 papers), and historical annual links for 2009–2020. The university index lists English editions for 2000–2004 (not 2005–06), 2007–10 (not 2011), 2012–22 (not 2021), and additional Hungarian PDFs for multiple years; check exact years at the source page rather than inferring continuous coverage. Earlier competitions require primary publications or independent archive checking: *Contests in Higher Mathematics, Hungary 1949–1961* (1968), and *Contests in Higher Mathematics: Miklós Schweitzer Competitions, 1962–1991* (1995).
+The society's official page provides recent annual papers (including English-language 2024 and 2022 papers), and historical annual links for 2009–2020. The university index lists English editions for 2000–2004, 2007–2010, 2012–2020, and 2022, and additional Hungarian PDFs for multiple years; check exact years at the source page rather than inferring continuous coverage. Earlier competitions require primary publications or independent archive checking: *Contests in Higher Mathematics, Hungary 1949–1961* (1968), and *Contests in Higher Mathematics: Miklós Schweitzer Competitions, 1962–1991* (1995).
 
 ### 2026 classification warning
 
