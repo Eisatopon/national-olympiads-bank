@@ -1,7 +1,7 @@
 """Build native edited statements with transparent secondary-source comparison records."""
 import json,hashlib,re
 from pathlib import Path
-from putnam_early_corrections import prepare,REVIEWED,CATEGORIES,NOTES,VARIANTS
+from putnam_early_corrections import prepare,REVIEWED,CATEGORIES,NOTES,VARIANTS,RESOLVED
 ROOT=Path(__file__).resolve().parents[1]
 def read(p):return json.loads((ROOT/p).read_text())
 def write(p,d):(ROOT/p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
@@ -39,6 +39,7 @@ for e in source['editions']:
   for field,m in [('source_issue_note',NOTES),('source_variant_note',VARIANTS)]:
    val=m.get(key,m.get((y,n)))
    if val:p[field]=val
+  if (y,n) in RESOLVED:p['source_issue_resolution']='Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.'
   if p.get('source_issue_note','').startswith(('Unresolved','Incomplete')):p['review_flags'].append('source_issue_awaiting_original_verification')
   if y==1947 and n=='A3':
    f={'src':'research/putnam/figures/1947-A3.svg','alt':'Reconstructed configuration: three triangle vertices, an interior fourth vertex, and all six joining segments.','content':'diagram_only','provenance':'Editorial reconstruction from the explicit Scholes configuration; not a crop of an original examination.'}

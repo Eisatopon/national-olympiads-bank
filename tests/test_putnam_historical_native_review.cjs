@@ -40,20 +40,9 @@ const recent=JSON.parse(fs.readFileSync('undergraduate/Putnam-1985-2025-review.j
 assert.equal(published.problem_count,1063);
 const recentPublished=published.years.filter(y=>y.year>=1985);
 assert.deepEqual(recentPublished.map(y=>y.year),recent.years.map(y=>y.year));
-let renderingRepairs=0;
-for(let i=0;i<recent.years.length;i++)for(let j=0;j<12;j++){
- const original=recent.years[i].problems[j], current=recentPublished[i].problems[j];
- const {problem,pre_render_repair_statement_sha256,native_rendering_repair,...rest}=current;
- const {problem:oldProblem,...oldRest}=original;
- assert.deepEqual(rest,oldRest);
- if(native_rendering_repair){
-  assert.equal(pre_render_repair_statement_sha256,sha(oldProblem));
-  assert.notEqual(problem,oldProblem);
-  assert.ok(!/\\(?:mbox|text)\s*\{[^}]*\$/.test(problem));
-  renderingRepairs++;
- }else assert.equal(problem,oldProblem);
-}
-assert.equal(renderingRepairs,12);
+const recentChecked=JSON.parse(fs.readFileSync('research/putnam/Putnam-1985-2025-source-checked-review.json','utf8'));
+assert.deepEqual(recentPublished,recentChecked.years);
+assert.ok(recentPublished.every(y=>y.problems.every(p=>p.statement_verified&&p.verification_basis==='archive_tex_textual_comparison_with_focused_pdf_checks')));
 const historical=published.years.filter(y=>y.year>=1965 && y.year<1985).flatMap(y=>y.problems);
 assert.equal(historical.length,240);
 const categories=new Set(['Algebra','Geometry','Number Theory','Combinatorics','Analysis']);
@@ -64,7 +53,7 @@ for(const p of historical){
   for(const f of p.figures??[])assert.ok(p.problem.includes('https://eisatopon.github.io/national-olympiads-bank/'+f.src));
 }
 const checks=JSON.parse(fs.readFileSync('metadata/putnam-statement-checks.json','utf8')).collections['undergraduate/Putnam-problems.json'].statement_checks;
-assert.equal(Object.keys(checks).length,571);
+assert.equal(Object.keys(checks).length,1063);
 for(const y of published.years.filter(y=>y.year>=1965 && y.year<1985))for(const p of y.problems){
   assert.equal(checks[`put.${y.year}.0.${p.number}`].reviewed_statement,p.problem);
 }
@@ -79,4 +68,4 @@ assert.equal(queue.records.length,331);
 assert.deepEqual(queue.existing_only_keys,[]);
 assert.deepEqual(queue.secondary_only_keys,[]);
 assert.ok(queue.records.every(r=>r.statement_verified===false&&r.original_wording_verified===false));
-console.log('Public extension: 240 checked historical records, 492 recent records with twelve rendering-only repairs; 331 early secondary-source identities matched.');
+console.log('Public extension: 240 checked historical records, 492 recent source-checked records; 331 early secondary-source identities matched.');

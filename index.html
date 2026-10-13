@@ -745,7 +745,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261013-putnam-early-native';
+const DATA_VERSION = '20261013-putnam-source-complete';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1563,7 +1563,10 @@ function provenanceHtml(p, print = false) {
             && candidate.source_pages.every(n => Number.isInteger(n) && n > 0) ? candidate.source_pages : [];
     const pageReference = `${sourcePages.length === 1 ? 'page' : 'pages'} ${sourcePages.join(', ')}`;
     // A changed statement must lose its checked badge immediately, even before CI.
-    const checked = candidate?.status === 'statement_checked_against_source'
+    const archiveChecked = candidate?.status === 'statement_checked_against_archive_tex'
+        && candidate.verification_basis === 'archive_tex_textual_comparison_with_focused_pdf_checks'
+        && sameStatement(candidate, p.text) && source;
+    const checked = archiveChecked || candidate?.status === 'statement_checked_against_source'
         && sameStatement(candidate, p.text) && source
         && sourcePages.length > 0;
     const compared = candidate?.status === 'statement_compared_against_secondary_source'
@@ -1571,16 +1574,17 @@ function provenanceHtml(p, print = false) {
         && sameStatement(candidate, p.text) && source;
     const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
     const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_download_kind === 'statements_only' ? 'Statements PDF (no solutions)' : candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
+    const editedChecked = checked && !archiveChecked && candidate.original_wording_verified === false;
     const unresolved = (checked || compared) && /^(?:Source ambiguity|Incomplete source condition|Unresolved source (?:error|variant)|Potential source typo|Source omission|Source convention omission)/.test(editorialText);
-    const status = unresolved ? 'Source issue — awaiting verification' : checked ? 'Statement checked against source (AI-assisted)' : compared ? 'Secondary-source comparison (AI-assisted)' : 'Sources and notes';
+    const status = unresolved ? 'Source issue — awaiting verification' : archiveChecked ? 'Statement checked against archive transcription (AI-assisted)' : editedChecked ? 'Edited statement — source correction recorded' : checked ? 'Statement checked against source (AI-assisted)' : compared ? 'Secondary-source comparison (AI-assisted)' : 'Sources and notes';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
-    const checkDetail = compared ? `<p>Compared textually on ${esc(candidate.checked_at)} with <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">John Scholes’ reworded secondary archive</a>, problem ${esc(candidate.source_problem_number)}. This is an edited transcription; original examination wording has not been verified.</p>${candidate.source_variant_note ? `<p>${esc(candidate.source_variant_note)}</p>` : ''}` : checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
+    const checkDetail = compared ? `<p>Compared textually on ${esc(candidate.checked_at)} with <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">John Scholes’ reworded secondary archive</a>, problem ${esc(candidate.source_problem_number)}. This is an edited transcription; original examination wording has not been verified.</p>${candidate.source_variant_note ? `<p>${esc(candidate.source_variant_note)}</p>` : ''}` : archiveChecked ? `<p>Checked textually on ${esc(candidate.checked_at)} against the archive’s declared verbatim examination transcription: <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">TeX statement source</a>, problem ${esc(candidate.source_problem_number)}. Source differences and visual dependencies received focused PDF checks. This does not assert visual comparison with every original MAA examination scan.</p>` : editedChecked ? `<p>The source was reviewed on ${esc(candidate.checked_at)}: <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Printed statement source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, problem ${esc(candidate.source_problem_number)}. The explicit editorial correction is described above; the displayed formulation is not presented as the original printed wording.</p>` : checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
     const links = (meta?.source_links || []).map(link => {
         const url = safeSourceUrl(link.url);
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
     }).filter(Boolean);
     if (print) {
-        const text = [(checked || compared) ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', (checked || compared) ? `Source: ${esc(source)}, ${checked ? pageReference + ', ' : ''}problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
+        const text = [(checked || compared) ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', (checked || compared) ? `Source: ${esc(source)}, ${checked && !archiveChecked ? pageReference + ', ' : ''}problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
         return text ? `<p class="ps-src">${text}</p>` : '';
     }
     if (!checked && !compared && !note && !editorialText && !links.length) return '';

@@ -77,7 +77,7 @@ for(const c of v.collections){
    const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
    assert.equal(imported.problem_count,1063);
    assert.equal(imported.years.length,85);
-   assert.equal(imported.years.flatMap(y=>y.problems).filter(p=>p.statement_verified).length,240);
+   assert.equal(imported.years.flatMap(y=>y.problems).filter(p=>p.statement_verified).length,732);
    assert.ok(imported.years.filter(y=>y.year>=1965 && y.year<1985).every(y=>y.problems.every(p=>p.statement_verified&&p.category)));
  }else if(c.id==='vjimc'){
    const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));

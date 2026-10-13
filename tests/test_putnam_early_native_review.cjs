@@ -29,6 +29,17 @@ const get=(y,n)=>data.years.find(z=>z.year===y).problems.find(p=>p.number===n);
 assert.ok(get(1940,'A8').problem.includes('\\Delta^2'));
 assert.ok(get(1960,'B7').problem.includes('\\int_s^t'));
 assert.ok(get(1962,'B6').problem.includes('exactly $2n$'));
-assert.ok(get(1959,'B5').source_issue_note.startsWith('Unresolved source variant'));
+assert.ok(get(1959,'B5').source_issue_note.startsWith('Historical source variant explained'));
+for(const [y,n] of [[1940,'B4'],[1941,'B6'],[1947,'A2'],[1956,'B7'],[1959,'B5']]){
+ assert.ok(get(y,n).source_issue_resolution);
+ assert.ok(!get(y,n).review_flags.includes('source_issue_awaiting_original_verification'));
+ assert.equal(get(y,n).original_wording_verified,false);
+}
+assert.ok(get(1941,'B6').problem.includes('f:[0,1]'));
+assert.ok(get(1947,'A2').problem.includes('identically zero'));
+assert.ok(get(1956,'B7').problem.includes('nonconstant'));
+assert.ok(get(1959,'B5').problem.includes('2t+4'));
+assert.ok(!get(1940,'B4').problem.includes('locus'));
+
 assert.equal(get(1947,'A3').figures[0].content,'diagram_only');
 console.log('331 early native statements: distinct identities, secondary-only status, formula restorations, no solutions, and both 1958 examinations checked.');

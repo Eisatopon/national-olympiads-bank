@@ -55,5 +55,23 @@ for(const print of [false,true]){
  assert.doesNotMatch(rendered,/Statement checked against source|Exam source|page 1/);
  assert.doesNotMatch(ctx.provenanceHtml({...secondaryRecord,text:'Changed statement.'},print),/Secondary-source comparison/);
  const issueCheck=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1959.0.B5'];
- assert.match(ctx.provenanceHtml({country:'put',year:1959,uid:'put.1959.0.B5',text:issueCheck.reviewed_statement},print),/Source issue — awaiting verification/);
+ assert.doesNotMatch(ctx.provenanceHtml({country:'put',year:1959,uid:'put.1959.0.B5',text:issueCheck.reviewed_statement},print),/Source issue — awaiting verification/);
+}
+const archiveCheck=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1992.0.B6'];
+const archiveRecord={country:'put',year:1992,uid:'put.1992.0.B6',text:archiveCheck.reviewed_statement};
+for(const print of [false,true]){
+ const rendered=ctx.provenanceHtml(archiveRecord,print);
+ assert.match(rendered,/Statement checked against archive transcription/);
+ assert.doesNotMatch(rendered,/Compared visually and textually|Exam source|page 1/);
+ assert.doesNotMatch(ctx.provenanceHtml({...archiveRecord,text:'Changed statement.'},print),/Statement checked against archive transcription/);
+}
+const savedBasis=archiveCheck.verification_basis;archiveCheck.verification_basis='unsupported';
+assert.doesNotMatch(ctx.provenanceHtml(archiveRecord),/Statement checked against archive transcription/);
+archiveCheck.verification_basis=savedBasis;
+
+const edited=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1978.0.A5'];
+for(const print of [false,true]){
+ const text=ctx.provenanceHtml({country:'put',year:1978,uid:'put.1978.0.A5',text:edited.reviewed_statement},print);
+ assert.match(text,/Edited statement — source correction recorded/);
+ assert.doesNotMatch(text,/Source issue — awaiting verification|Compared visually and textually/);
 }

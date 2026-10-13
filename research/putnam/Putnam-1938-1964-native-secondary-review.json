@@ -990,7 +990,7 @@
         },
         {
           "number": "B4",
-          "problem": "Prove that the locus of the point of intersection of three mutually perpendicular planes tangent to the surface\n$$\na x^{2}+b y^{2}+c z^{2}=1 \\quad(a b c \\neq 0)\n$$\nis the sphere\n$$\nx^{2}+y^{2}+z^{2}=\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\n$$",
+          "problem": "Let $S$ be the surface $ax^2+by^2+cz^2=1$, where $abc\\neq0$. If a point $P=(x,y,z)$ is the intersection of three mutually perpendicular planes tangent to $S$, prove that\n$$x^2+y^2+z^2=\\frac1a+\\frac1b+\\frac1c.$$",
           "category": "Geometry",
           "topics": [
             "Geometry"
@@ -1007,12 +1007,13 @@
           "reviewed_on": "2026-10-13",
           "statement_format": "english_text_latex",
           "review_flags": [
-            "original_examination_wording_not_verified",
-            "source_issue_awaiting_original_verification"
+            "original_examination_wording_not_verified"
           ],
           "topic_review_method": "AI-assisted thematic review; primary topic assigned from the statement",
-          "source_issue_note": "Unresolved source error: Scholes explicitly retains only the necessary director-sphere condition and identifies the converse in the longer statement as problematic. The longer statement is retained here as a historical transcription, not as a mathematically certified assertion.",
-          "statement_sha256": "298d74296d856182b4016f3ba84312496d000f5904b2c9f21d9c4e7e43c44a6b",
+          "source_issue_note": "Editorial reformulation: the necessary director-sphere condition is stated, following the Scholes version. The stronger historical locus claim would require a converse and tangency conventions not justified for all nonzero a,b,c. This edited version does not assert that converse.",
+          "source_variant_note": "The edited statement asks only for the necessary condition, matching Scholes. The original longer locus formulation remains available in the immutable raw research input.",
+          "source_issue_resolution": "Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.",
+          "statement_sha256": "5f444a2aae523480a3ff0f9c835d473c1cb163ea8eaefff0539b7f8f6c113201",
           "pre_review_statement_sha256": "b7597d65733aea6863fa0cdca8c4a633faf73dc0a870c98e686456debe903b41"
         },
         {
@@ -1399,7 +1400,7 @@
         },
         {
           "number": "B6",
-          "problem": "Assuming that $ f(x) $ is continuous in the interval $ (0,1) $, prove that $ \\int_{x=0}^{x=1} \\int_{y=x}^{y=1} \\int_{z=x}^{z=y} f(x) f(y) f(z) d z d y d x=\\frac{1}{3!}\\left(\\int_{t=0}^{t=1} f(t) d t\\right)^{3} $.",
+          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous. Prove that\n$$\\int_0^1\\int_x^1\\int_x^y f(x)f(y)f(z)\\,dz\\,dy\\,dx=\\frac1{3!}\\left(\\int_0^1f(t)\\,dt\\right)^3.$$",
           "category": "Analysis",
           "topics": [
             "Analysis"
@@ -1416,12 +1417,13 @@
           "reviewed_on": "2026-10-13",
           "statement_format": "english_text_latex",
           "review_flags": [
-            "original_examination_wording_not_verified",
-            "source_issue_awaiting_original_verification"
+            "original_examination_wording_not_verified"
           ],
           "topic_review_method": "AI-assisted thematic review; primary topic assigned from the statement",
-          "source_issue_note": "Incomplete source condition: continuity on the open interval alone does not ensure that the stated integrals exist. The source wording is retained; convergence or appropriate endpoint regularity is needed for a finite-integral interpretation.",
-          "statement_sha256": "8f6006bbc3243336cfedf3b0483004992e86b8ef5ba584839b17dd1f5f27878e",
+          "source_issue_note": "Editorial clarification: continuity is required on the closed interval [0,1], ensuring that all displayed integrals are finite. The available historical transcriptions only specify continuity on (0,1); the added endpoint condition is explicit and is not certified as original examination wording.",
+          "source_variant_note": "Closed-interval continuity is an explicit editorial strengthening of the available open-interval condition, making the proper-integral assertion well defined.",
+          "source_issue_resolution": "Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.",
+          "statement_sha256": "e63bef54303807ba4d7c39e89c823b7c82af952b704ada54678e2252f41c3e11",
           "pre_review_statement_sha256": "59c8f3ada87d5d4ca4e0a712785991cc0728e1f40a09a540ebbef5dab68cc7a3"
         },
         {
@@ -2067,7 +2069,7 @@
         },
         {
           "number": "A2",
-          "problem": "A real valued continuous function satisfies for all real $ x $ and $ y $ the functional equation\n$$\nf\\left(\\sqrt{x^{2}+y^{2}}\\right)=f(x) f(y)\n$$\n\nProve that\n$$\nf(x)=[f(1)]^{x^{2}}\n$$",
+          "problem": "A continuous function $f:\\mathbb R\\to\\mathbb R$ satisfies\n$$f\\left(\\sqrt{x^2+y^2}\\right)=f(x)f(y)$$\nfor all real $x,y$. Prove that either $f$ is identically zero, or $f(1)>0$ and\n$$f(x)=[f(1)]^{x^2}\\qquad\\text{for every real }x.$$",
           "category": "Algebra",
           "topics": [
             "Algebra"
@@ -2084,12 +2086,13 @@
           "reviewed_on": "2026-10-13",
           "statement_format": "english_text_latex",
           "review_flags": [
-            "original_examination_wording_not_verified",
-            "source_issue_awaiting_original_verification"
+            "original_examination_wording_not_verified"
           ],
           "topic_review_method": "AI-assisted thematic review; primary topic assigned from the statement",
-          "source_issue_note": "Unresolved source error: the identically zero function satisfies the functional equation, but the displayed conclusion is undefined at x=0 without a separate zero-function case. The printed formulation is retained.",
-          "statement_sha256": "ed683b05eac96f79d69b1c0e157254d26becb8b4b46d16b8879f9ccc18163f4b",
+          "source_issue_note": "Editorial clarification: the identically zero solution is listed separately, following the separate case in Scholes’ discussion. In the remaining case f(1)>0, so the displayed power is defined also at x=0.",
+          "source_variant_note": "The separate zero-function alternative avoids an undefined 0^0 expression. Scholes’ discussion treats that alternative explicitly.",
+          "source_issue_resolution": "Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.",
+          "statement_sha256": "eef9f861b90f66c3e0e31cbb45ec287ffc16f768643b8cf0d81d9507be8c959a",
           "pre_review_statement_sha256": "8eb2351d3f7cb45692963cd46ebf91798e3f2bdaa990e9ed564ce2da68b0a4b6"
         },
         {
@@ -5391,7 +5394,7 @@
         },
         {
           "number": "B7",
-          "problem": "The polynomials $ P(z) $ and $ Q(z) $ with complex coefficients have the same set of numbers for their zeros but possibly different multiplicities. The same is true of the polynomials\n$$\nP(z)+1 \\text { and } Q(z)+1\n$$\n\nProve that $ P(z) \\equiv Q(z) $.",
+          "problem": "Let $P(z)$ and $Q(z)$ be nonconstant polynomials with complex coefficients. Suppose they have the same set of zeros, possibly with different multiplicities. Suppose also that $P(z)+1$ and $Q(z)+1$ have the same set of zeros. Prove that $P(z)\\equiv Q(z)$.",
           "category": "Algebra",
           "topics": [
             "Algebra"
@@ -5408,12 +5411,13 @@
           "reviewed_on": "2026-10-13",
           "statement_format": "english_text_latex",
           "review_flags": [
-            "original_examination_wording_not_verified",
-            "source_issue_awaiting_original_verification"
+            "original_examination_wording_not_verified"
           ],
           "topic_review_method": "AI-assisted thematic review; primary topic assigned from the statement",
-          "source_issue_note": "Incomplete source condition: unequal constant polynomials can satisfy both empty-root-set conditions. The standard nonconstant-polynomial interpretation is required; it is not explicitly stated in either available transcription.",
-          "statement_sha256": "49d7822e2b21f45d61a57146dd3f798625a9bcc7fa508c1201785982c945640d",
+          "source_issue_note": "Editorial clarification: both polynomials are required to be nonconstant. Without this condition unequal constants other than 0 and -1 are counterexamples. The added restriction is mathematically necessary and is not certified as original examination wording.",
+          "source_variant_note": "The nonconstant hypothesis is an explicit editorial addition needed to exclude unequal constant counterexamples; the source argument presupposes positive degree.",
+          "source_issue_resolution": "Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.",
+          "statement_sha256": "1028d4df3a04af35384f1d66cf9272c43cf98248c76ce6a42196ce5e7412de74",
           "pre_review_statement_sha256": "694a5ea0f6ddeecef2a47a1c3b596cf8a539e59b62eb8e178a9e8cb4a9b85060"
         }
       ]
@@ -6850,7 +6854,7 @@
         },
         {
           "number": "B5",
-          "problem": "Find the equation of the smallest sphere which is tangent to both of the lines: (i) $ x=t+1, y=2 t+4, z=-3 t+5 $, and (ii) $ x=4 t-12, y= $ $ -t+8, z=t+17 $.",
+          "problem": "Find the equation of the smallest sphere tangent to both lines\n$$(x,y,z)=(t+1,2t+4,-3t+5),\\qquad t\\in\\mathbb R,$$\n$$(x,y,z)=(4s-12,-s+8,s+17),\\qquad s\\in\\mathbb R.$$",
           "category": "Number Theory",
           "topics": [
             "Number Theory"
@@ -6867,13 +6871,13 @@
           "reviewed_on": "2026-10-13",
           "statement_format": "english_text_latex",
           "review_flags": [
-            "original_examination_wording_not_verified",
-            "source_issue_awaiting_original_verification"
+            "original_examination_wording_not_verified"
           ],
           "topic_review_method": "AI-assisted thematic review; primary topic assigned from the statement",
-          "source_issue_note": "Unresolved source variant: the sign of the constant in the first line differs between the two available transcriptions (+4 versus -4). This published record retains +4 and is not certified against an original examination.",
-          "source_variant_note": "The first line has y=2t+4 in the longer transcription and y=2t-4 in Scholes. Neither sign can be independently certified from the available transcriptions. The longer version is retained with an explicit unresolved-variant warning.",
-          "statement_sha256": "d0dabf77a5075dd6186bd9cb369ba196399b1639d337d41c40d70059c33948e1",
+          "source_issue_note": "Historical source variant explained: +4 is retained from the longer examination transcription. Scholes explicitly reports that the original question printed +4 and that his version changes it to -4 to simplify arithmetic. Both define legitimate distinct questions; no sign correction is silently applied.",
+          "source_variant_note": "Scholes’ source note explicitly identifies +4 as the original printed value and -4 as his alteration. The bank retains the longer transcription’s +4 historical variant.",
+          "source_issue_resolution": "Resolved through explicit editorial clarification or documented historical variant; original wording remains unverified.",
+          "statement_sha256": "deb6ed0ca037b268f9df9fb6762e49c62b6bd9a9aafa25776648331cd36a1536",
           "pre_review_statement_sha256": "a14ad79afa3d31ade89db29517a0986c119e2d724f2897e79f450d607905a94d"
         },
         {

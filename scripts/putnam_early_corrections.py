@@ -214,3 +214,34 @@ REVIEWED.update((y,'regular',f'{s}{n}') for y in range(1959,1965) for s in 'AB' 
 CATEGORIES.update({1959:'AGXXGAXCXCGNNA',1960:'NGXGACNNXXXNXX',1961:'XXXXCAGXCGCXXX',1962:'GXGXCAACGCXX',1963:'GNXXGGAXXGXC',1964:'GXXNXGXCXGN G'})
 
 REPLACE[(1958,'Fall','A5')]=[(r'. \quad(\text { page 481) }','.') ]
+# Editorial resolutions preserve the distinction between an edited statement
+# and verified original examination wording.
+OVERRIDE.update({
+ (1940,'B4'):r'''Let $S$ be the surface $ax^2+by^2+cz^2=1$, where $abc\neq0$. If a point $P=(x,y,z)$ is the intersection of three mutually perpendicular planes tangent to $S$, prove that
+$$x^2+y^2+z^2=\frac1a+\frac1b+\frac1c.$$''',
+ (1941,'B6'):r'''Let $f:[0,1]\to\mathbb R$ be continuous. Prove that
+$$\int_0^1\int_x^1\int_x^y f(x)f(y)f(z)\,dz\,dy\,dx=\frac1{3!}\left(\int_0^1f(t)\,dt\right)^3.$$''',
+ (1947,'A2'):r'''A continuous function $f:\mathbb R\to\mathbb R$ satisfies
+$$f\left(\sqrt{x^2+y^2}\right)=f(x)f(y)$$
+for all real $x,y$. Prove that either $f$ is identically zero, or $f(1)>0$ and
+$$f(x)=[f(1)]^{x^2}\qquad\text{for every real }x.$$''',
+ (1956,'B7'):r'''Let $P(z)$ and $Q(z)$ be nonconstant polynomials with complex coefficients. Suppose they have the same set of zeros, possibly with different multiplicities. Suppose also that $P(z)+1$ and $Q(z)+1$ have the same set of zeros. Prove that $P(z)\equiv Q(z)$.''',
+ (1959,'B5'):r'''Find the equation of the smallest sphere tangent to both lines
+$$(x,y,z)=(t+1,2t+4,-3t+5),\qquad t\in\mathbb R,$$
+$$(x,y,z)=(4s-12,-s+8,s+17),\qquad s\in\mathbb R.$$''',
+})
+NOTES.update({
+ (1940,'B4'):'Editorial reformulation: the necessary director-sphere condition is stated, following the Scholes version. The stronger historical locus claim would require a converse and tangency conventions not justified for all nonzero a,b,c. This edited version does not assert that converse.',
+ (1941,'B6'):'Editorial clarification: continuity is required on the closed interval [0,1], ensuring that all displayed integrals are finite. The available historical transcriptions only specify continuity on (0,1); the added endpoint condition is explicit and is not certified as original examination wording.',
+ (1947,'A2'):'Editorial clarification: the identically zero solution is listed separately, following the separate case in Scholes\u2019 discussion. In the remaining case f(1)>0, so the displayed power is defined also at x=0.',
+ (1956,'B7'):'Editorial clarification: both polynomials are required to be nonconstant. Without this condition unequal constants other than 0 and -1 are counterexamples. The added restriction is mathematically necessary and is not certified as original examination wording.',
+ (1959,'B5'):'Historical source variant explained: +4 is retained from the longer examination transcription. Scholes explicitly reports that the original question printed +4 and that his version changes it to -4 to simplify arithmetic. Both define legitimate distinct questions; no sign correction is silently applied.',
+})
+VARIANTS.update({
+ (1940,'B4'):'The edited statement asks only for the necessary condition, matching Scholes. The original longer locus formulation remains available in the immutable raw research input.',
+ (1941,'B6'):'Closed-interval continuity is an explicit editorial strengthening of the available open-interval condition, making the proper-integral assertion well defined.',
+ (1947,'A2'):'The separate zero-function alternative avoids an undefined 0^0 expression. Scholes\u2019 discussion treats that alternative explicitly.',
+ (1956,'B7'):'The nonconstant hypothesis is an explicit editorial addition needed to exclude unequal constant counterexamples; the source argument presupposes positive degree.',
+ (1959,'B5'):'Scholes\u2019 source note explicitly identifies +4 as the original printed value and -4 as his alteration. The bank retains the longer transcription\u2019s +4 historical variant.',
+})
+RESOLVED={(1940,'B4'),(1941,'B6'),(1947,'A2'),(1956,'B7'),(1959,'B5')}
