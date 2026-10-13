@@ -1405,8 +1405,11 @@ function paintCountry(key) {
     const bad = failed.has(key) && !list;
     const c = CBY[key];
     if (bad) $(`.rl[data-rl="${key}"]`).title = 'This file did not load';
-    for (let y = LAST; y >= FIRST; y--) {
-        const cell = $(`.cell[data-country="${key}"][data-year="${y}"]`);
+    // Scan the row once rather than querying the entire document for every year.
+    const row = $('#mx .rl[data-rl="' + key + '"]').closest('.mx-row');
+    if (!row) return;
+    for (const cell of row.querySelectorAll('.cell')) {
+        const y = +cell.dataset.year;
         const n = bad ? 0 : yearCount(key, y);
         cell.classList.toggle('pend', !known && !bad);
         cell.classList.toggle('err', bad);
