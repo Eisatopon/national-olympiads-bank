@@ -9,3 +9,7 @@
 **Import gate:** Full-text comparison against visually readable scans is required for each expression; machine-extracted PDF text alone corrupts superscripts, inequalities and mathematical operators. A valid year JSON must include *all* its source problems, correct round labels and number sequence, native LaTeX and necessary figures. Raw OCR/extracted text must never be published as a verified statement. The 1952–1961 source-gap audit documents are now superseded as to primary-source accessibility, but their notes must not be silently rewritten into claims of completed transcription.
 
 **Current state:** primary source and counts verified, one concrete draft correction committed, 1949/1950 secondary DRAFTs remain staged, 1951–1961 primary transcription not complete. No new Undergraduate grid row and no claim of 145 fully transcribed or fully checked statements.
+
+
+## Superseded — 13 Oct 2026
+All 145 statements 1949–1961 were transcribed afresh from the 1968 page images and published as `undergraduate/Schweitzer-problems.json` (row `schw`). The staged drafts in this folder are historical only. See docs/schweitzer-1949-1961-2026-10-13.md.
