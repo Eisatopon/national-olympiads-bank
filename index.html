@@ -1425,9 +1425,10 @@ function syncMatrix() {
         const y = +c.dataset.year, k = c.dataset.country;
         const pick = state.country === k && state.year === y;
         const line = !pick && ((state.year === y && state.country === null) || (state.country === k && state.year === null));
-        c.classList.toggle('pick', pick);
-        c.classList.toggle('line', line);
-        c.setAttribute('aria-pressed', String(pick));
+        // Avoid thousands of redundant DOM writes during metadata and selection refreshes.
+        if (c.classList.contains('pick') !== pick) c.classList.toggle('pick', pick);
+        if (c.classList.contains('line') !== line) c.classList.toggle('line', line);
+        if (c.getAttribute('aria-pressed') !== String(pick)) c.setAttribute('aria-pressed', String(pick));
     });
     const cur = $('#mx .cell.pick') || $('#mx .cell.on') || $('#mx .yh:not(:disabled)');
     $$('#mx button').forEach(b => { b.tabIndex = -1; });
