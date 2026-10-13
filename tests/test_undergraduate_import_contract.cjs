@@ -25,12 +25,10 @@ for(const c of v.collections){
    assert.equal(problems.filter(p=>p.statement_verified).length,80,'SEEMOUS source-review count changed unexpectedly');
    const geometry2012 = problems.find(p=>p.year===2012&&p.number===2);
    assert.equal(geometry2012.statement_verified,true,'SEEMOUS 2012/2 source review incomplete');
-   assert.equal(geometry2012.figure_asset,'assets/figures/seemous-2012-p2.svg');
-   assert.ok(geometry2012.problem.includes('seemous-2012-p2.svg'),'SEEMOUS 2012/2 missing visible schematic');
-   assert.ok(geometry2012.figure_provenance.includes('not a facsimile'),'Figure must be identified as a reconstruction');
-   assert.ok(fs.existsSync(geometry2012.figure_asset),'Missing SEEMOUS geometry SVG asset');
-   const page=fs.readFileSync('index.html','utf8');
-   assert.ok(page.includes('webp|svg'),'SVG renderer is required for SEEMOUS geometry diagram');
+   assert.equal(geometry2012.figure_asset,'images/seemous_2012_p2_fig.png');
+   assert.ok(geometry2012.problem.endsWith('/images/seemous_2012_p2_fig.png'),'SEEMOUS 2012/2 missing source figure');
+   assert.ok(geometry2012.figure_provenance.includes('cropped'),'Figure provenance must say it is a crop of the source');
+   assert.ok(fs.existsSync(geometry2012.figure_asset),'Missing SEEMOUS 2012/2 figure');
    const p2021_4=problems.find(p=>p.year===2021&&p.number===4);
    assert.ok(p2021_4.problem.includes('|\\sin(\\pi x)|^x'),'SEEMOUS 2021/4 integrand exponent must match original');
    assert.ok(!p2021_4.problem.includes('\\sin(\\pi x)/x'),'SEEMOUS 2021/4 incorrect quotient prohibited');
@@ -48,7 +46,10 @@ for(const c of v.collections){
        assert.equal(p.verification_source,official,'Wrong original contest paper '+id);
        assert.equal(p.verification_page,1,'Wrong original contest page '+id);
        assert.ok(p.verification_method && p.verified_on && p.review_flags.length===0,'Missing provenance '+id);
-     }else if ([2007,2008,2009,2010,2011,2018,2019].includes(p.year)) {
+     }else if (p.year===2018){
+       assert.equal(p.verification_source,'https://math.etti.tuiasi.ro/seemous2018/wp-content/uploads/2018/03/SEEMOUS-2018-Contest-Problems.pdf','Wrong original contest paper '+id);
+       assert.ok(p.statement_verified&&p.verification_page===1&&p.review_flags.length===0,'Missing provenance '+id);
+     }else if ([2007,2008,2009,2010,2011,2019].includes(p.year)) {
        assert.equal(p.statement_verified,true,'Compiled contest paper comparison missing '+id);
        assert.ok(p.verification_source === 'User-supplied Seemous-2007-2025.pdf' || (p.year===2009 && p.verification_source==='https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf' || p.year===2010 && p.verification_source==='https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf'),'Missing contest compilation provenance '+id);
        assert.ok(p.verification_page>0&&p.review_flags.length===0,'Incomplete reviewed page metadata '+id);

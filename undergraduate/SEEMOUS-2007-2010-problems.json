@@ -6,83 +6,95 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $a\\in(0,1)\\cap\\mathbb{Q}$ have decimal representation $a=0.a_1a_2a_3\\ldots$. Define $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n$ for $x\\in(0,1)$. Prove that $f_a$ is a rational function $P(x)/Q(x)$, where $P,Q$ are polynomials with integer coefficients. Conversely, if $a_k\\in\\{0,1,\\ldots,9\\}$ for every positive integer $k$ and $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n=P(x)/Q(x)$ for $x\\in(0,1)$, where $P,Q$ have integer coefficients, prove that $a=0.a_1a_2a_3\\ldots$ is rational.",
+          "problem": "Given $a\\in(0,1)\\cap\\mathbb{Q}$ let $a = 0{,}a_1a_2a_3\\ldots$ be its decimal representation. Define $$f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n,\\quad x\\in(0,1).$$ Prove that $f_a$ is a rational function of the form $f_a(x)=\\dfrac{P(x)}{Q(x)}$, where $P$ and $Q$ are polynomials with integer coefficients.\n\nConversely, if $a_k\\in\\{0,1,2,\\ldots,9\\}$ for all $k\\in\\mathbb{N}$, and $f_a(x)=\\sum_{n=1}^{\\infty}a_nx^n$ for $x\\in(0,1)$ is a rational function of the form $f_a(x)=\\dfrac{P(x)}{Q(x)}$, where $P$ and $Q$ are polynomials with integer coefficients, prove that the number $a = 0{,}a_1a_2a_3\\ldots$ is rational.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               1,
-              2
+              1
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 1,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2007 competition problems sheet (Agros, Cyprus)) on page 1 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "068d211102120134b652bc557d50c3d84b5dec18db8f8c9a63dcc7f881ff32e5",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "For $x=(x_1,\\ldots,x_n)^T\\in\\mathbb{R}^n$, let $f(x)=\\max_{1\\le i\\le n}|x_i|$. Let $A$ be an $n\\times n$ matrix such that $f(Ax)=f(x)$ for every $x\\in\\mathbb{R}^n$. Prove that there is a positive integer $m$ such that $A^m=I_n$.",
+          "problem": "Let $f(x)=\\max\\limits_i|x_i|$ for $x=(x_1,x_2,\\ldots,x_n)^T\\in\\mathbb{R}^n$ and let $A$ be an $n\\times n$ matrix such that $f(Ax)=f(x)$ for all $x\\in\\mathbb{R}^n$. Prove that there exists a positive integer $m$ such that $A^m$ is the identity matrix $I_n$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               1,
-              2
+              1
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 1,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2007 competition problems sheet (Agros, Cyprus)) on page 1 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "a6954cb9a8d672f76eba4ca0d1167f4addae1155691551d1914ab4da6e0cf8b4",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Let $F$ be a field and $P:F\\times F\\to F$ a function such that, for every $x_0\\in F$, the function $y\\mapsto P(x_0,y)$ is a polynomial in $y$, and for every $y_0\\in F$, the function $x\\mapsto P(x,y_0)$ is a polynomial in $x$. Must $P$ be a polynomial in $x$ and $y$ when (a) $F=\\mathbb{Q}$, the field of rational numbers; (b) $F$ is a finite field? Prove your claims.",
+          "problem": "Let $F$ be a field and let $P\\colon F\\times F\\to F$ be a function such that for every $x_0\\in F$ the function $P(x_0,y)$ is a polynomial in $y$ and for every $y_0\\in F$ the function $P(x,y_0)$ is a polynomial in $x$.\n\nIs it true that $P$ is necessarily a polynomial in $x$ and $y$, when\n\na) $F=\\mathbb{Q}$, the field of rational numbers?\n\nb) $F$ is a finite field?\n\nProve your claims.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              1,
+              2,
               2
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 2,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2007 competition problems sheet (Agros, Cyprus)) on page 2 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "eda43fd4e7c856ebfd7f6cb473612c5a4005bec7a29301f246175921e7a882c8",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "For $x\\in\\mathbb{R}$, $y\\ge0$ and $n\\in\\mathbb{Z}$, let $w_n(x,y)\\in[0,\\pi)$ be the angle (in radians) under which the segment from $(n,0)$ to $(n+y,0)$ is seen from $(x,1)\\in\\mathbb{R}^2$. (a) Prove that $\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$ converges for every $x\\in\\mathbb{R}$ and $y\\ge0$. Writing $w(x,y)=\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$, prove $w(x,y)\\le(\\lfloor y\\rfloor+1)\\pi$. (b) Prove that for every $\\varepsilon>0$ there exists $\\delta>0$ such that $0<y<\\delta$ implies $w(x,y)<\\varepsilon$ for all $x\\in\\mathbb{R}$. (c) Prove that $w:\\mathbb{R}\\times[0,\\infty)\\to[0,\\infty)$ is continuous.",
+          "problem": "For $x\\in\\mathbb{R}$, $y\\ge0$ and $n\\in\\mathbb{Z}$ denote by $w_n(x,y)\\in[0,\\pi)$ the angle in radians with which the segment joining the point $(n,0)$ to the point $(n+y,0)$ is seen from the point $(x,1)\\in\\mathbb{R}^2$.\n\na) Show that for every $x\\in\\mathbb{R}$ and $y\\ge0$, the series $\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$ converges.\n\nIf we now set $w(x,y)=\\sum_{n=-\\infty}^{\\infty}w_n(x,y)$, show that $w(x,y)\\le([y]+1)\\pi$. ($[y]$ is the integer part of $y$)\n\nb) Prove that for every $\\varepsilon>0$ there exists $\\delta>0$ such that for every $y$ with $0<y<\\delta$ and every $x\\in\\mathbb{R}$ we have $w(x,y)<\\varepsilon$.\n\nc) Prove that the function $w\\colon\\mathbb{R}\\times[0,+\\infty)\\to[0,+\\infty)$ defined in (a) is continuous.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              1,
+              2,
               2
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 2,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2007 competition problems sheet (Agros, Cyprus)) on page 2 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "d939159854f0655b83feef7556fc2f97fd4d715ed2b8600bd0b498277e033e5e",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -91,23 +103,26 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[1,\\infty)\\to(0,\\infty)$ be continuous. Assume that for every $a>0$, the equation $f(x)=ax$ has at least one solution in $[1,\\infty)$. (a) Prove that for every $a>0$, the equation $f(x)=ax$ has infinitely many solutions. (b) Give an example of a strictly increasing continuous function $f$ with these properties.",
+          "problem": "Let $f\\colon[1,\\infty)\\to(0,\\infty)$ be a continuous function. Assume that for every $a>0$, the equation $f(x)=ax$ has at least one solution in the interval $[1,\\infty)$.\n\n(a) Prove that for every $a>0$, the equation $f(x)=ax$ has infinitely many solutions.\n\n(b) Give an example of a strictly increasing continuous function $f$ with these properties.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               3,
-              6
+              3
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 3,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2008 problems sheet (Athens)) on page 3 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "70ae2ac5cf585f9ed108847c8ec82f76264a21d7ec59c118a7cb68df589b382e",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
@@ -115,59 +130,68 @@
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               3,
-              6
+              3
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 3,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2008 problems sheet (Athens)) on page 3 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "1a7afeb1a612106d155e4da765c90d1bac610894ee7e7ec44d96a1dc2a53db7d",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Let $M_n(\\mathbb{R})$ denote the set of real $n\\times n$ matrices. Find all surjective functions $f:M_n(\\mathbb{R})\\to\\{0,1,\\ldots,n\\}$ satisfying $f(XY)\\le\\min\\{f(X),f(Y)\\}$ for all $X,Y\\in M_n(\\mathbb{R})$.",
+          "problem": "Let $\\mathcal{M}_n(\\mathbb{R})$ denote the set of all real $n\\times n$ matrices. Find all surjective functions $f\\colon\\mathcal{M}_n(\\mathbb{R})\\to\\{0,1,\\ldots,n\\}$ which satisfy $$f(XY)\\le\\min\\{f(X),f(Y)\\}$$ for all $X,Y\\in\\mathcal{M}_n(\\mathbb{R})$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               3,
-              6
+              3
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 3,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2008 problems sheet (Athens)) on page 3 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "ecc861b56d025d38bb331ba8f4b124524c68fe1c51a2cde49afd1933b4e470d8",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "Let $n$ be a positive integer and $f:[0,1]\\to\\mathbb{R}$ a continuous function such that $\\int_0^1x^kf(x)\\,dx=1$ for every $k\\in\\{0,1,\\ldots,n-1\\}$. Prove that $\\int_0^1(f(x))^2\\,dx\\ge n^2$.",
+          "problem": "Let $n$ be a positive integer and $f\\colon[0,1]\\to\\mathbb{R}$ be a continuous function such that $$\\int_0^1x^kf(x)\\,dx=1$$ for every $k\\in\\{0,1,\\ldots,n-1\\}$. Prove that $$\\int_0^1(f(x))^2\\,dx\\ge n^2.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               3,
-              6
+              3
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 3,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2008 problems sheet (Athens)) on page 3 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "160046257a0ac9f0fb6eeb25c24de3845cb1ae02c8315b7dbf1a74ea094686fc",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -176,83 +200,95 @@
       "problems": [
         {
           "number": 1,
-          "problem": "(a) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^n x^k\\,dx$, where $k\\in\\mathbb{N}$. (b) Calculate $\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nf(x)\\,dx$, where $f:[0,1]\\to\\mathbb{R}$ is continuous.",
+          "problem": "a) Calculate the limit $$\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nx^k\\,dx,$$ where $k\\in\\mathbb{N}$.\n\nb) Calculate the limit $$\\lim_{n\\to\\infty}\\frac{(2n+1)!}{(n!)^2}\\int_0^1(x(1-x))^nf(x)\\,dx,$$ where $f\\colon[0,1]\\to\\mathbb{R}$ is a continuous function.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               7,
-              10
+              7
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf",
-          "verification_page": 1,
-          "verification_method": "Problem text, conditions, formulas, and numbering compared against searchable original contest paper with solutions (source PDF pages 1–4); original solutions excluded from bank",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 7,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2009 competition problems with solutions (Agros)) on page 7 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "034964d17f96e151b2f66468b141a7a1e53ba72d32eecd8642608457e8913cda",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Let $P$ be a real polynomial of degree five. Assume that the graph of $P$ has three inflection points lying on a straight line. Calculate the ratios of the areas of the bounded regions between this line and the graph of $P$.",
+          "problem": "Let $P$ be a real polynomial of degree five. Assume that the graph of $P$ has three inflection points lying on a straight line. Calculate the ratios of the areas of the bounded regions between this line and the graph of the polynomial $P$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              7,
-              10
+              8,
+              8
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf",
-          "verification_page": 2,
-          "verification_method": "Problem text, conditions, formulas, and numbering compared against searchable original contest paper with solutions (source PDF pages 1–4); original solutions excluded from bank",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 8,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2009 competition problems with solutions (Agros)) on page 8 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "a60f854653f94a8f9d73427e37ab9c30e916a0ead85bc29da017d0b8f81352fb",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Let $SL_2(\\mathbb{Z})=\\{A: A\\text{ is a }2\\times2\\text{ integer matrix and }\\det A=1\\}$. (a) Find matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^2+B^2=C^2$. (b) Show that there are no matrices $A,B,C\\in SL_2(\\mathbb{Z})$ such that $A^4+B^4=C^4$.",
+          "problem": "Let $\\mathbf{SL}_2(\\mathbb{Z})=\\{A\\mid A\\text{ is a }2\\times2\\text{ matrix with integer entries and }\\det A=1\\}$.\n\na) Find an example of matrices $A,B,C\\in\\mathbf{SL}_2(\\mathbb{Z})$ such that $A^2+B^2=C^2$.\n\nb) Show that there do not exist matrices $A,B,C\\in\\mathbf{SL}_2(\\mathbb{Z})$ such that $A^4+B^4=C^4$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              7,
-              10
+              9,
+              9
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf",
-          "verification_page": 3,
-          "verification_method": "Problem text, conditions, formulas, and numbering compared against searchable original contest paper with solutions (source PDF pages 1–4); original solutions excluded from bank",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 9,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2009 competition problems with solutions (Agros)) on page 9 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "8dd5972b493fb593f189d51a49d714e4cbe1cfbcdf5e1e55eb5b90e130e1af01",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "Given real numbers $a_1,\\ldots,a_n$ and $b_1,\\ldots,b_n$, define $n\\times n$ matrices $A=(a_{ij})$ and $B=(b_{ij})$ by $a_{ij}=a_i-b_j$ and $b_{ij}=1$ if $a_{ij}\\ge0$, while $b_{ij}=0$ if $a_{ij}<0$. Let $C=(c_{ij})$ be an $n\\times n$ matrix with entries in $\\{0,1\\}$ and with the same row and column sums as $B$: $\\sum_jb_{ij}=\\sum_jc_{ij}$ for every $i$, and $\\sum_ib_{ij}=\\sum_ic_{ij}$ for every $j$. Prove that (a) $\\sum_{i,j=1}^n a_{ij}(b_{ij}-c_{ij})=0$ and $B=C$; (b) $B$ is invertible if and only if there exist permutations $\\sigma,\\tau$ of $\\{1,\\ldots,n\\}$ such that $b_{\\tau(1)}\\le a_{\\sigma(1)}<b_{\\tau(2)}\\le a_{\\sigma(2)}<\\cdots\\le a_{\\sigma(n-1)}<b_{\\tau(n)}\\le a_{\\sigma(n)}$.",
+          "problem": "Given the real numbers $a_1,a_2,\\ldots,a_n$ and $b_1,b_2,\\ldots,b_n$ we define the $n\\times n$ matrices $A=(a_{ij})$ and $B=(b_{ij})$ by $$a_{ij}=a_i-b_j\\quad\\text{and}\\quad b_{ij}=\\begin{cases}1, & \\text{if } a_{ij}\\ge0,\\\\ 0, & \\text{if } a_{ij}<0,\\end{cases}\\qquad\\text{for all } i,j\\in\\{1,2,\\ldots,n\\}.$$ Consider $C=(c_{ij})$ a matrix of the same order with elements $0$ and $1$ such that $$\\sum_{j=1}^nb_{ij}=\\sum_{j=1}^nc_{ij},\\quad i\\in\\{1,2,\\ldots,n\\}\\quad\\text{and}\\quad\\sum_{i=1}^nb_{ij}=\\sum_{i=1}^nc_{ij},\\quad j\\in\\{1,2,\\ldots,n\\}.$$ Show that:\n\na) $\\sum_{i,j=1}^na_{ij}(b_{ij}-c_{ij})=0$ and $B=C$.\n\nb) $B$ is invertible if and only if there exists two permutations $\\sigma$ and $\\tau$ of the set $\\{1,2,\\ldots,n\\}$ such that $$b_{\\tau(1)}\\le a_{\\sigma(1)}<b_{\\tau(2)}\\le a_{\\sigma(2)}<\\cdots\\le a_{\\sigma(n-1)}<b_{\\tau(n)}\\le a_{\\sigma(n)}.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              7,
-              10
+              9,
+              9
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/3nibFWGcTEi5Os97mSQ7sQ.pdf",
-          "verification_page": 3,
-          "verification_method": "Problem text, conditions, formulas, and numbering compared against searchable original contest paper with solutions (source PDF pages 1–4); original solutions excluded from bank",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 9,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2009 competition problems with solutions (Agros)) on page 9 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "b797edaa96a8dbe1baf9fdf1979b07df4a2195936a3a0af1561d8072880db5d1",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -261,83 +297,95 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f_0:[0,1]\\to\\mathbb{R}$ be continuous. Define $f_n:[0,1]\\to\\mathbb{R}$ for integers $n\\ge1$ by $f_n(x)=\\int_0^x f_{n-1}(t)\\,dt$. (a) Prove that $\\sum_{n=1}^{\\infty}f_n(x)$ converges for every $x\\in[0,1]$. (b) Find an explicit formula for this sum.",
+          "problem": "Let $f_0\\colon[0,1]\\to\\mathbb{R}$ be a continuous function. Define the sequence of functions $f_n\\colon[0,1]\\to\\mathbb{R}$ by $$f_n(x)=\\int_0^xf_{n-1}(t)\\,dt$$ for all integers $n\\ge1$.\n\na) Prove that the series $\\sum_{n=1}^{\\infty}f_n(x)$ is convergent for every $x\\in[0,1]$.\n\nb) Find an explicit formula for the sum of the series $\\sum_{n=1}^{\\infty}f_n(x)$, $x\\in[0,1]$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               11,
-              14
+              11
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf",
-          "verification_page": 38,
-          "verification_method": "Comparative verification of all statements, hypotheses and formulas against Romanian Mathematical Society published paper (Cornel Baetica & Gabriel Mincu, SEEMOUS 2010); printed page reference",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 11,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2010 problems with solutions (Plovdiv)) on page 11 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "c2a4e98274647821f55cf5fa02752fc16bfe363274278c042621f87efc4a922d",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Inside a square consider circles such that the sum of their circumferences is twice the perimeter of the square. (a) Find the minimum number of circles having this property. (b) Prove that there exist infinitely many lines which intersect at least three of these circles.",
+          "problem": "Inside a square consider circles such that the sum of their circumferences is twice the perimeter of the square.\n\na) Find the minimum number of circles having this property.\n\nb) Prove that there exist infinitely many lines which intersect at least 3 of these circles.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              11,
-              14
+              12,
+              12
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf",
-          "verification_page": 41,
-          "verification_method": "Comparative verification of all statements, hypotheses and formulas against Romanian Mathematical Society published paper (Cornel Baetica & Gabriel Mincu, SEEMOUS 2010); printed page reference",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 12,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2010 problems with solutions (Plovdiv)) on page 12 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "921e9c90b40caee9672ec17878bdaac56f98c2212330f34c592047602a4792aa",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Let $M_2(\\mathbb{R})$ be the set of $2\\times2$ real matrices. Prove that (a) for every $A\\in M_2(\\mathbb{R})$ there are $B,C\\in M_2(\\mathbb{R})$ such that $A=B^2+C^2$; (b) there do not exist commuting matrices $B,C\\in M_2(\\mathbb{R})$ such that $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=B^2+C^2$.",
+          "problem": "Denote by $\\mathcal{M}_2(\\mathbb{R})$ the set of all $2\\times2$ matrices with real entries. Prove that:\n\na) for every $A\\in\\mathcal{M}_2(\\mathbb{R})$ there exist $B,C\\in\\mathcal{M}_2(\\mathbb{R})$ such that $A=B^2+C^2$;\n\nb) there do not exist $B,C\\in\\mathcal{M}_2(\\mathbb{R})$ such that $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}=B^2+C^2$ and $BC=CB$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              11,
-              14
+              13,
+              13
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf",
-          "verification_page": 44,
-          "verification_method": "Comparative verification of all statements, hypotheses and formulas against Romanian Mathematical Society published paper (Cornel Baetica & Gabriel Mincu, SEEMOUS 2010); printed page reference",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 13,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2010 problems with solutions (Plovdiv)) on page 13 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "3d48e39a6a7a6b6201bae5dcf58a1c481c4593f5882fc529d28f9b0b881fa96b",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "Suppose $A$ and $B$ are $n\\times n$ matrices with integer entries and $\\det B\\ne0$. Prove that there exists $m\\in\\mathbb{N}$ such that $AB^{-1}=\\sum_{k=1}^m N_k^{-1}$, where $N_1,\\ldots,N_m$ are pairwise distinct $n\\times n$ integer matrices (with inverses as displayed).",
+          "problem": "Suppose that $A$ and $B$ are $n\\times n$ matrices with integer entries, and $\\det B\\ne0$. Prove that there exists $m\\in\\mathbb{N}$ such that the product $AB^{-1}$ can be represented as $$AB^{-1}=\\sum_{k=1}^mN_k^{-1},$$ where $N_k$ are $n\\times n$ matrices with integer entries for all $k=1,\\ldots,m$, and $N_i\\ne N_j$ for $i\\ne j$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              11,
-              14
+              13,
+              13
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2010/gma1-2-2010-continut.pdf",
-          "verification_page": 45,
-          "verification_method": "Comparative verification of all statements, hypotheses and formulas against Romanian Mathematical Society published paper (Cornel Baetica & Gabriel Mincu, SEEMOUS 2010); printed page reference",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 13,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2010 problems with solutions (Plovdiv)) on page 13 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "655ba1ebc7d7909f12e2474551e27c26cc5181a98675517622bf6f33cd4f3991",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -346,11 +394,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "For a given integer $n\\ge 1$, let $f:[0,1]\\to\\mathbb R$ be a non-decreasing function. Prove that $\\int_0^1 f(x)\\,dx\\le (n+1)\\int_0^1 x^n f(x)\\,dx$. Find all non-decreasing continuous functions for which equality holds.",
+          "problem": "For a given integer $n\\ge1$, let $f\\colon[0,1]\\to\\mathbb{R}$ be a non-decreasing function. Prove that $$\\int_0^1f(x)\\,\\mathrm{d}x\\le(n+1)\\int_0^1x^nf(x)\\,\\mathrm{d}x.$$ Find all non-decreasing continuous functions for which equality holds.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -361,16 +409,19 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 15,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2011 problems sheet (Bucharest)) on page 15 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "22f1601ee37fba77eb7c32a29b72acd880bf6bbf29a8bd73ff8e2fb92ff8d41e",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Let $A=(a_{ij})$ be a real $n\\times n$ matrix such that $A^n\\ne 0$ and $a_{ij}a_{ji}\\le 0$ for all $i,j$. Prove that there exist two nonreal numbers among the eigenvalues of $A$.",
+          "problem": "Let $A=(a_{ij})$ be a real $n\\times n$ matrix such that $A^n\\ne0$ and $a_{ij}a_{ji}\\le0$ for all $i,j$. Prove that there exist two nonreal numbers among eigenvalues of $A$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -381,16 +432,19 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 15,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2011 problems sheet (Bucharest)) on page 15 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "78db508ef7464c793896737e3da93dec2bf8f767fcc33541d74db9c9beee4824",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Given vectors $a,b,c\\in\\mathbb R^n$, show that $(\\|a\\|\\langle b,c\\rangle)^2+(\\|b\\|\\langle a,c\\rangle)^2\\le \\|a\\|\\|b\\|\\bigl(\\|a\\|\\|b\\|+|\\langle a,b\\rangle|\\bigr)\\|c\\|^2$, where $\\langle x,y\\rangle$ denotes the inner product and $\\|x\\|^2=\\langle x,x\\rangle$.",
+          "problem": "Given vectors $\\overline{a},\\overline{b},\\overline{c}\\in\\mathbb{R}^n$, show that $$\\left(\\|\\overline{a}\\|\\,\\langle\\overline{b},\\overline{c}\\rangle\\right)^2+\\left(\\|\\overline{b}\\|\\,\\langle\\overline{a},\\overline{c}\\rangle\\right)^2\\le\\|\\overline{a}\\|\\|\\overline{b}\\|\\left(\\|\\overline{a}\\|\\|\\overline{b}\\|+|\\langle\\overline{a},\\overline{b}\\rangle|\\right)\\|\\overline{c}\\|^2,$$ where $\\langle\\overline{x},\\overline{y}\\rangle$ denotes the scalar (inner) product of the vectors $\\overline{x}$ and $\\overline{y}$ and $\\|\\overline{x}\\|^2=\\langle\\overline{x},\\overline{x}\\rangle$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -401,16 +455,19 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 15,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2011 problems sheet (Bucharest)) on page 15 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "b8b79b52ed19217b0772536110c6464caf77a597d66e7be31e2da9caa349d1ba",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "Let $f:[0,1]\\to\\mathbb R$ be a twice continuously differentiable increasing function. Define $L_n=\\frac1n\\sum_{k=0}^{n-1}f\\!\\left(\\frac kn\\right)$ and $U_n=\\frac1n\\sum_{k=1}^{n}f\\!\\left(\\frac kn\\right)$, $n\\ge1$. The interval $[L_n,U_n]$ is divided into three equal segments. Prove that, for sufficiently large $n$, the number $I=\\int_0^1 f(x)\\,dx$ belongs to the middle one of these three segments.",
+          "problem": "Let $f\\colon[0,1]\\to\\mathbb{R}$ be a twice continuously differentiable increasing function. Define the sequences given by $L_n=\\dfrac1n\\sum_{k=0}^{n-1}f\\left(\\dfrac kn\\right)$ and $U_n=\\dfrac1n\\sum_{k=1}^{n}f\\left(\\dfrac kn\\right)$, $n\\ge1$. The interval $[L_n,U_n]$ is divided into three equal segments. Prove that, for large enough $n$, the number $I=\\int_0^1f(x)\\,\\mathrm{d}x$ belongs to the middle one of these three segments.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -421,8 +478,11 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 15,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2011 problems sheet (Bucharest)) on page 15 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "85967f3e53f2995589173e5120de6c7803aa4beda68097de41ac96f6679e8449",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -431,86 +491,98 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A=(a_{ij})$ be the $n\\times n$ matrix where $a_{ij}$ is the remainder upon division of $i^j+j^i$ by $3$, for $i,j=1,2,\\ldots,n$. Find the greatest $n$ for which $\\det A\\ne0$.",
+          "problem": "Let $A=(a_{ij})$ be the $n\\times n$ matrix, where $a_{ij}$ is the remainder of the division of $i^j+j^i$ by $3$ for $i,j=1,2,\\ldots,n$. Find the greatest $n$ for which $\\det A\\ne0$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               16,
-              19
+              16
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 16,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2012 problems, solutions and grading (Blagoevgrad)) on page 16 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "d4b5268b92f16d4ee9b69756a3df74fd80c26d4bc6ce61c151d773e707b27b0b",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Let $a_n>0$ for $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2,\\triangle A_0A_2A_3,\\ldots,\\triangle A_0A_{n-1}A_n,\\ldots$ as follows. For every $n\\ge2$, the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$, with right angle $\\angle A_0A_nA_{n+1}$; the vertices $A_{n-1}$ and $A_{n+1}$ lie on opposite sides of the line $A_0A_n$; and $|A_{n-1}A_n|=a_n$ for all $n\\ge1$. Is it possible that the set $\\{A_n:n\\ge0\\}$ is unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ converges? Here $m(\\angle ABC)$ denotes the measure of the angle $ABC$. A set in the plane is bounded if it is contained in some disk.\n\nDiagram (schematic reconstruction, not a facsimile of the published figure): https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/assets/figures/seemous-2012-p2.svg",
+          "problem": "Let $a_n>0$, $n\\ge1$. Consider the right triangles $\\triangle A_0A_1A_2$, $\\triangle A_0A_2A_3,\\ldots$, $\\triangle A_0A_{n-1}A_n,\\ldots$, as in the figure. (More precisely, for every $n\\ge2$ the hypotenuse $A_0A_n$ of $\\triangle A_0A_{n-1}A_n$ is a leg of $\\triangle A_0A_nA_{n+1}$ with right angle $\\angle A_0A_nA_{n+1}$, and the vertices $A_{n-1}$ and $A_{n+1}$ lie on the opposite sides of the straight line $A_0A_n$; also, $|A_{n-1}A_n|=a_n$ for every $n\\ge1$.)\n\nIs it possible for the set of points $\\{A_n\\mid n\\ge0\\}$ to be unbounded but the series $\\sum_{n=2}^{\\infty}m(\\angle A_{n-1}A_0A_n)$ to be convergent? Here $m(\\angle ABC)$ denotes the measure of $\\angle ABC$.\n\nNote. A subset $B$ of the plane is bounded if there is a disk $D$ such that $B\\subseteq D$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/seemous_2012_p2_fig.png",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "statement_and_original_diagram_compared; supplementary_figure_is_schematic",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               16,
-              19
+              16
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
           "source_figure_pdf_page": 16,
-          "verification_source": "https://journals.azbuki.bg/mathinfo/seemous-olympiad-for-university-students/pdf",
-          "verification_page": 2,
-          "verification_method": "Visually compared problem 2 statement and original diagram in 2012 peer-reviewed SEEMOUS report, page 107; reconstructed a separately labeled editable schematic SVG; original drawing is not reproduced verbatim",
-          "verified_on": "2026-10-12",
-          "figure_asset": "assets/figures/seemous-2012-p2.svg",
-          "figure_provenance": "Schematic reconstruction from Grozdev and Nenkov, Mathematics and Informatics 55(2) 2012, page 107, not a facsimile"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 16,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2012 problems, solutions and grading (Blagoevgrad)) on page 16 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "figure_asset": "images/seemous_2012_p2_fig.png",
+          "figure_provenance": "Figure cropped from the 2012 organizers' document as reproduced on page 16 of the SEEMOUS 2007-2025 compilation",
+          "statement_sha256": "ef5ac23150f8837d6bd77516b3ac42161aada2342283cee97dbb20765f0a443e",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "(a) Prove that if $k$ is an even positive integer and $A$ is a real symmetric $n\\times n$ matrix satisfying $(\\operatorname{Tr}(A^k))^{k+1}=(\\operatorname{Tr}(A^{k+1}))^k$, then $A^n=\\operatorname{Tr}(A)A^{n-1}$. (b) Does the assertion in (a) also hold for odd positive integers $k$?",
+          "problem": "a) Prove that if $k$ is an even positive integer and $A$ is a real symmetric $n\\times n$ matrix such that $(\\operatorname{Tr}(A^k))^{k+1}=(\\operatorname{Tr}(A^{k+1}))^k$, then $$A^n=\\operatorname{Tr}(A)\\,A^{n-1}.$$\n\nb) Does the assertion from a) also hold for odd positive integers $k$?",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              16,
-              19
+              17,
+              17
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 17,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2012 problems, solutions and grading (Blagoevgrad)) on page 17 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "58911ce2a2ba955ecf86dab08cf1c16c548abe0f05999432566dc8cbf3cb119b",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "(a) Compute $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n\\,dx$. (b) Let $k\\ge1$ be an integer. Compute $\\displaystyle\\lim_{n\\to\\infty}n^{k+1}\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^n x^k\\,dx$.",
+          "problem": "a) Compute $$\\lim_{n\\to\\infty}n\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^ndx.$$\n\nb) Let $k\\ge1$ be an integer. Compute $$\\lim_{n\\to\\infty}n^{k+1}\\int_0^1\\left(\\frac{1-x}{1+x}\\right)^nx^k\\,dx.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              16,
-              19
+              18,
+              18
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 18,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2012 problems, solutions and grading (Blagoevgrad)) on page 18 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "dcb9ca4aba12cb8268f287cf3489eb337eab782e16caf847a815af1984ecee01",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -519,83 +591,95 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find all continuous functions $f:[1,8]\\to\\mathbb R$ such that $\\displaystyle\\int_1^2 f^2(t^3)\\,dt+2\\int_1^2 f(t^3)\\,dt=\\frac23\\int_1^8 f(t)\\,dt-\\int_1^2(t^2-1)^2\\,dt$.",
+          "problem": "Find all continuous functions $f\\colon[1,8]\\to\\mathbb{R}$, such that $$\\int_1^2f^2(t^3)\\,dt+2\\int_1^2f(t^3)\\,dt=\\frac23\\int_1^8f(t)\\,dt-\\int_1^2(t^2-1)^2\\,dt.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               20,
-              23
+              20
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 20,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2013 problems and solutions) on page 20 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "cbc30808cc8c8a854e60602f15a9a3f5ae1d410ac71c67e14dbb8dc0d1369a8a",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Let $M,N\\in M_2(\\mathbb C)$ be two nonzero matrices such that $M^2=N^2=0_2$ and $MN+NM=I_2$, where $0_2$ is the $2\\times2$ zero matrix and $I_2$ the $2\\times2$ identity matrix. Prove that there is an invertible matrix $A\\in M_2(\\mathbb C)$ such that $M=A\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}A^{-1}$ and $N=A\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}A^{-1}$.",
+          "problem": "Let $M,N\\in M_2(\\mathbb{C})$ be two nonzero matrices such that $$M^2=N^2=0_2\\quad\\text{and}\\quad MN+NM=I_2$$ where $0_2$ is the $2\\times2$ zero matrix and $I_2$ the $2\\times2$ unit matrix. Prove that there is an invertible matrix $A\\in M_2(\\mathbb{C})$ such that $$M=A\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}A^{-1}\\quad\\text{and}\\quad N=A\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}A^{-1}.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               20,
-              23
+              20
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 20,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2013 problems and solutions) on page 20 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "3fe2cc745c92e73f04fd008ac9ccf7c057e399f34aebc483f8572f702bdb3f41",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Find the maximum value of $\\displaystyle\\int_0^1|f'(x)|^2|f(x)|\\frac{1}{\\sqrt{x}}\\,dx$ over all continuously differentiable functions $f:[0,1]\\to\\mathbb R$ with $f(0)=0$ and $\\displaystyle\\int_0^1|f'(x)|^2\\,dx\\le1$.",
+          "problem": "Find the maximum value of $$\\int_0^1|f'(x)|^2\\,|f(x)|\\,\\frac{1}{\\sqrt x}\\,dx$$ over all continuously differentiable functions $f\\colon[0,1]\\to\\mathbb{R}$ with $f(0)=0$ and $$\\int_0^1|f'(x)|^2\\,dx\\le1.$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              20,
-              23
+              22,
+              22
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 22,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2013 problems and solutions) on page 22 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "de5c8d4083c41b2749a634ff686f7b6e12689976b70a55d1387ab3ddfa09993d",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "Let $A\\in M_2(\\mathbb Q)$ be such that there is a positive integer $n$ with $A^n=-I_2$. Prove that either $A^2=-I_2$ or $A^3=-I_2$.",
+          "problem": "Let $A\\in M_2(\\mathbb{Q})$ such that there is $n\\in\\mathbb{N}$, $n\\ne0$, with $A^n=-I_2$. Prove that either $A^2=-I_2$ or $A^3=-I_2$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              20,
-              23
+              22,
+              22
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 22,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2013 problems and solutions) on page 22 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "668ded39eb4453136075fec4efafb331c6915b9b468bc448342f0c588c46e3c9",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -604,11 +688,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $n$ be a nonzero natural number and let $f:\\mathbb R\\to\\mathbb R\\setminus\\{0\\}$ be a function such that $f(2014)=1-f(2013)$. Let $x_1,x_2,\\ldots,x_n$ be pairwise distinct real numbers. If $\\displaystyle\\det\\begin{pmatrix}1+f(x_1)&f(x_2)&\\cdots&f(x_n)\\\\f(x_1)&1+f(x_2)&\\cdots&f(x_n)\\\\\\vdots&\\vdots&\\ddots&\\vdots\\\\f(x_1)&f(x_2)&\\cdots&1+f(x_n)\\end{pmatrix}=0$, prove that $f$ is not continuous.",
+          "problem": "Let $n$ be a nonzero natural number and $f\\colon\\mathbb{R}\\to\\mathbb{R}\\setminus\\{0\\}$ be a function such that $f(2014)=1-f(2013)$. Let $x_1,x_2,x_3,\\ldots,x_n$ be real numbers not equal to each other. If $$\\begin{vmatrix}1+f(x_1)&f(x_2)&f(x_3)&\\ldots&f(x_n)\\\\f(x_1)&1+f(x_2)&f(x_3)&\\ldots&f(x_n)\\\\f(x_1)&f(x_2)&1+f(x_3)&\\ldots&f(x_n)\\\\\\vdots&\\vdots&\\vdots&\\ddots&\\vdots\\\\f(x_1)&f(x_2)&f(x_3)&\\ldots&1+f(x_n)\\end{vmatrix}=0,$$ prove that $f$ is not continuous.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -617,18 +701,21 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 24,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2014 problems sheet (Iasi)) on page 24 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "1b7e13e462b76f1b4edf7844034ae476e01f0775f147b376b2cd5963508b4678",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 2,
-          "problem": "Consider the sequence $(x_n)$ given by $x_1=2$ and $\\displaystyle x_{n+1}=\\frac{x_n+1+\\sqrt{x_n^2+2x_n+5}}2$ for $n\\ge2$. Prove that the sequence $\\displaystyle y_n=\\sum_{k=1}^n\\frac1{x_k^2-1}$, $n\\ge1$, is convergent and find its limit. (The recurrence index $n\\ge2$ is reproduced as printed in the source.)",
+          "problem": "Consider the sequence $(x_n)$ given by $$x_1=2,\\qquad x_{n+1}=\\frac{x_n+1+\\sqrt{x_n^2+2x_n+5}}{2},\\quad n\\ge2.$$ Prove that the sequence $y_n=\\sum_{k=1}^n\\dfrac{1}{x_k^2-1}$, $n\\ge1$ is convergent and find its limit.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -637,19 +724,22 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 24,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12",
-          "original_statement_editorial_warning": "Original recurrence begins at n>=2 with only x_1=2; x_2 unspecified in printed source. Do not silently alter original."
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2014 problems sheet (Iasi)) on page 24 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "original_statement_editorial_warning": "Original recurrence begins at n>=2 with only x_1=2; x_2 unspecified in printed source. Do not silently alter original.",
+          "statement_sha256": "2bb50f8119ada36ad8fd4a480a97208680dacc852b8e24302972b2fce29e6eb0",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ and $a\\in\\mathbb C$, $a\\ne0$, be such that $A-A^*=2aI_n$, where $A^*=(\\overline A)^t$ and $\\overline A$ is the complex conjugate of $A$. (a) Show that $|\\det A|\\ge|a|^n$. (b) Show that if $|\\det A|=|a|^n$, then $A=aI_n$.",
+          "problem": "Let $A\\in\\mathcal{M}_n(\\mathbb{C})$ and $a\\in\\mathbb{C}$, $a\\ne0$ such that $A-A^*=2aI_n$, where $A^*=(\\bar A)^t$ and $\\bar A$ is the conjugate of the matrix $A$.\n\n(a) Show that $|\\det A|\\ge|a|^n$\n\n(b) Show that if $|\\det A|=|a|^n$ then $A=aI_n$.",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -658,18 +748,21 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 24,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2014 problems sheet (Iasi)) on page 24 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "bc4fd7804e0dcf4ebe598ae3036318dffd6e7787007955cc04a6329030a0edf5",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         },
         {
           "number": 4,
-          "problem": "(a) Prove that $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx=\\frac\\pi2$. (b) Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\arctan(x/n)}{x(x^2+1)}\\,dx-\\frac\\pi2\\right)$.",
+          "problem": "a) Prove that $$\\lim_{n\\to\\infty}n\\int_0^n\\frac{\\operatorname{arctg}\\dfrac xn}{x\\,(x^2+1)}\\,dx=\\frac\\pi2.$$\n\nb) Find the limit $$\\lim_{n\\to\\infty}n\\left(n\\int_0^n\\frac{\\operatorname{arctg}\\dfrac xn}{x\\,(x^2+1)}\\,dx-\\frac\\pi2\\right).$$",
           "statement_verified": true,
           "review_flags": [],
           "official_collection_pdf": "https://www.massee-org.eu/images/problems_SEEMOUS_2007_2014.pdf",
-          "original_paper_verification_status": "pending_exact_visual_formula_and_diagram_comparison",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -678,10 +771,13 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 24,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2014 problems sheet (Iasi)) on page 24 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "607f665e2d9c0855dabc6a5f367ed599d1d004e8fbe294ff90909df2f645085c",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312"
         }
       ]
     },
@@ -690,75 +786,91 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Prove that for every $x\\in(0,1)$, $\\displaystyle\\int_0^1\\sqrt{1+\\cos^2 y}\\,dy>\\sqrt{x^2+\\sin^2 x}$.",
+          "problem": "Prove that for every $x\\in(0,1)$ the following inequality holds: $$\\int_0^1\\sqrt{1+(\\cos y)^2}\\,dy>\\sqrt{x^2+(\\sin x)^2}.$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               25,
-              29
+              25
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 25,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2015 contest problems and solutions) on page 25 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "653a9d6693d37c572c5edac1adb4d2e3154a77c43f1a4448af168f6dbfaaa8d4",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "For each positive integer $n$, let $f_n:\\mathbb R\\to\\mathbb R$ be defined by $f_{n+1}(x)=f_1(f_n(x))$, where $f_1(x)=3x-4x^3$. Solve the equation $f_n(x)=0$.",
+          "problem": "For any positive integer $n$, let the functions $f_n\\colon\\mathbb{R}\\to\\mathbb{R}$ be defined by $f_{n+1}(x)=f_1(f_n(x))$, where $f_1(x)=3x-4x^3$. Solve the equation $f_n(x)=0$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               25,
-              29
+              25
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 25,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2015 contest problems and solutions) on page 25 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "128b1ea149e00c5e1f7a38f6e3c50cc2328fc447be0ace5c081433109088ca98",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "For an integer $n>2$, let $A,B,C,D\\in M_n(\\mathbb R)$ satisfy $AC-BD=I_n$ and $AD+BC=O_n$, where $I_n$ and $O_n$ denote the identity and zero matrices. Prove that (a) $CA-DB=I_n$ and $DA+CB=O_n$; (b) $\\det(AC)\\ge0$ and $(-1)^n\\det(BD)\\ge0$.",
+          "problem": "For an integer $n>2$, let $A,B,C,D\\in M_n(\\mathbb{R})$ be matrices satisfying: $$AC-BD=I_n,\\qquad AD+BC=O_n,$$ where $I_n$ is the identity matrix and $O_n$ is the zero matrix in $M_n(\\mathbb{R})$.\n\nProve that:\n\na) $CA-DB=I_n$ and $DA+CB=O_n$,\n\nb) $\\det(AC)\\ge0$ and $(-1)^n\\det(BD)\\ge0$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              25,
-              29
+              27,
+              27
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 27,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2015 contest problems and solutions) on page 27 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "c5afad77c2c6f5322c443049a179ee273bf697921a503cefbdfa21b2b3515690",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "Let $I\\subset\\mathbb R$ be an open interval containing $0$, and let $f:I\\to\\mathbb R$ be of class $C^{2016}(I)$ with $f(0)=0$, $f'(0)=1$, $f''(0)=f'''(0)=\\cdots=f^{(2015)}(0)=0$, and $f^{(2016)}(0)<0$. (i) Prove that there exists $\\delta>0$ such that $0<f(x)<x$ for every $x\\in(0,\\delta)$. (ii) With $\\delta$ as in (i), define $a_1=\\delta/2$ and $a_{n+1}=f(a_n)$ for $n\\ge1$. Study the convergence of $\\sum_{n=1}^\\infty a_n^r$ for real $r$.",
+          "problem": "Let $I\\subset\\mathbb{R}$ be an open interval which contains $0$, and $f\\colon I\\to\\mathbb{R}$ be a function of class $C^{2016}(I)$ such that $f(0)=0$, $f'(0)=1$, $f''(0)=f'''(0)=\\ldots=f^{(2015)}(0)=0$, $f^{(2016)}(0)<0$.\n\ni) Prove that there is $\\delta>0$ such that $$0<f(x)<x,\\quad\\forall x\\in(0,\\delta).\\tag{1.1}$$\n\nii) With $\\delta$ determined as in i), define the sequence $(a_n)$ by $$a_1=\\frac\\delta2,\\quad a_{n+1}=f(a_n),\\quad\\forall n\\ge1.\\tag{1.2}$$ Study the convergence of the series $\\sum_{n=1}^{\\infty}a_n^r$, for $r\\in\\mathbb{R}$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              25,
-              29
+              28,
+              28
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 28,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2015 contest problems and solutions) on page 28 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge. The copy prints blank boxes for blackboard-bold letters; the sets were restored from context.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "523b883057cb0cf1d8dc9766ade1e798dc61a2f515dc828ed7fe834180f6a8c7",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -767,11 +879,10 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f$ be a continuous decreasing real-valued function on $[0,\\pi/2]$. Prove $\\int_{\\pi/2-1}^{\\pi/2}f(x)\\,dx\\le\\int_0^{\\pi/2}f(x)\\cos x\\,dx\\le\\int_0^1f(x)\\,dx$. When does equality hold?",
+          "problem": "Let $f$ be a continuous and decreasing real valued function, defined on $\\left[0,\\frac\\pi2\\right]$.\n\nProve the inequalities $$\\int_{\\frac\\pi2-1}^{\\frac\\pi2}f(x)\\,dx\\le\\int_0^{\\frac\\pi2}f(x)\\cos x\\,dx\\le\\int_0^1f(x)\\,dx$$ when do equalities hold?",
           "statement_verified": true,
           "review_flags": [],
           "official_paper_candidate_url": "https://www.massee-org.eu/images/seemous/Paper-SEEMOUS2016-final.pdf",
-          "textual_source_crosscheck": "consistent_with_source_text_not_a_visual_pdf_certification",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -780,18 +891,21 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/XQN1EZVfQ0iejyApt1f4hg.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 30,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2016 competition problems sheet (Protaras, Cyprus)) on page 30 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "df5f077d5eef85959c95c3782bb807f86e1ea9a5dfc8388fe5fdf17392e3c188",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "(a) Prove that for every $X\\in M_2(\\mathbb C)$ there is $Y\\in M_2(\\mathbb C)$ such that $Y^3=X^2$. (b) Prove that there exists $A\\in M_3(\\mathbb C)$ such that $Z^3\\ne A^2$ for every $Z\\in M_3(\\mathbb C)$.",
+          "problem": "a) Prove that for every matrix $X\\in M_2(\\mathbb{C})$ there exists a matrix $Y\\in M_2(\\mathbb{C})$ such that $Y^3=X^2$.\n\nb) Prove that there exists a matrix $A\\in M_3(\\mathbb{C})$ such that $Z^3\\ne A^2$ for all $Z\\in M_3(\\mathbb{C})$.",
           "statement_verified": true,
           "review_flags": [],
           "official_paper_candidate_url": "https://www.massee-org.eu/images/seemous/Paper-SEEMOUS2016-final.pdf",
-          "textual_source_crosscheck": "consistent_with_source_text_not_a_visual_pdf_certification",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -800,18 +914,21 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/XQN1EZVfQ0iejyApt1f4hg.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 30,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2016 competition problems sheet (Protaras, Cyprus)) on page 30 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "67fa1dcc5fbd155d62172b980f1e81a249615374dbbb4c038c4a5062a6dc2e29",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $A_1,\\ldots,A_k\\in M_n(\\mathbb R)$ be idempotent matrices ($A_i^2=A_i$). Prove $\\sum_{i=1}^kN(A_i)\\ge\\operatorname{rank}(I_n-\\prod_{i=1}^k A_i)$, where $N(A_i)=n-\\operatorname{rank}(A_i)$.",
+          "problem": "Let $A_1,A_2,\\ldots,A_k$ be idempotent matrices ($A_i^2=A_i$) in $M_n(\\mathbb{R})$. Prove that $$\\sum_{i=1}^kN(A_i)\\ge\\operatorname{rank}\\left(I-\\prod_{i=1}^kA_i\\right)$$ where $N(A_i)=n-\\operatorname{rank}(A_i)$ and $M_n(\\mathbb{R})$ is the set of square $n\\times n$ matrices with real entries.",
           "statement_verified": true,
           "review_flags": [],
           "official_paper_candidate_url": "https://www.massee-org.eu/images/seemous/Paper-SEEMOUS2016-final.pdf",
-          "textual_source_crosscheck": "consistent_with_source_text_not_a_visual_pdf_certification",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -820,18 +937,21 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/XQN1EZVfQ0iejyApt1f4hg.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 30,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2016 competition problems sheet (Protaras, Cyprus)) on page 30 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "c0b4b7d37529adf2d070f67d82b98611bf625bf4801d51cc0c159b55541ee326",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "For $n\\ge1$ put $I_n=\\int_0^\\infty\\frac{\\arctan x}{(1+x^2)^n}\\,dx$. Prove (a) $\\sum_{n=1}^\\infty\\frac{I_n}{n}=\\frac{\\pi^2}{6}$; (b) $\\int_0^\\infty\\arctan x\\ln(1+1/x^2)\\,dx=\\frac{\\pi^2}{6}$.",
+          "problem": "Let $n\\ge1$ be an integer and let $$I_n=\\int_0^\\infty\\frac{\\arctan x}{(1+x^2)^n}\\,dx$$ Prove that\n\na) $$\\sum_{n=1}^\\infty\\frac{I_n}{n}=\\frac{\\pi^2}{6}$$\n\nb) $$\\int_0^\\infty\\arctan x\\cdot\\ln\\left(1+\\frac1{x^2}\\right)dx=\\frac{\\pi^2}{6}$$",
           "statement_verified": true,
           "review_flags": [],
           "official_paper_candidate_url": "https://www.massee-org.eu/images/seemous/Paper-SEEMOUS2016-final.pdf",
-          "textual_source_crosscheck": "consistent_with_source_text_not_a_visual_pdf_certification",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -840,10 +960,14 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://matematickitalent.mk/uploads/books/XQN1EZVfQ0iejyApt1f4hg.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 30,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2016 competition problems sheet (Protaras, Cyprus)) on page 30 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "4b4d5923dd632051a0bd4ce2575821a7d5043f855de699007b77f35493fd5274",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -852,75 +976,91 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in M_2(\\mathbb R)$ satisfy $a^2+b^2+c^2+d^2<\\frac15$. Prove that $I_2+A$ is invertible.",
+          "problem": "Let $A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\in\\mathcal{M}_2(\\mathbb{R})$ such that $a^2+b^2+c^2+d^2<\\frac15$. Show that $I+A$ is invertible.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               31,
-              32
+              31
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 31,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2017 problems and solutions (Ohrid)) on page 31 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "35f5bc2c958bd3929250df9c6fdfb9765b3f38880c9293de5a0bf1294ae3b5cb",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb R)$. (a) Prove that there exists $a>0$ such that for every $\\varepsilon\\in(-a,a)\\setminus\\{0\\}$, the matrix equation $AX+\\varepsilon X=B$, $X\\in M_n(\\mathbb R)$, has a unique solution $X(\\varepsilon)$. (b) Prove that if $B^2=I_n$ and $A$ is diagonalizable, then $\\displaystyle\\lim_{\\varepsilon\\to0}\\varepsilon\\operatorname{Tr}(BX(\\varepsilon))=n-\\operatorname{rank}A$.",
+          "problem": "Let $A,B\\in\\mathcal{M}_n(\\mathbb{R})$.\n\na) Show that there exists $a>0$ such that for every $\\varepsilon\\in(-a,a)$, $\\varepsilon\\ne0$, the matrix equation $$AX+\\varepsilon X=B,\\quad X\\in\\mathcal{M}_n(\\mathbb{R})$$ has a unique solution $X(\\varepsilon)\\in\\mathcal{M}_n(\\mathbb{R})$.\n\nb) Prove that if $B^2=I_n$, and $A$ is diagonalizable then $$\\lim_{\\varepsilon\\to0}\\varepsilon\\operatorname{Tr}(BX(\\varepsilon))=n-\\operatorname{rank}(A).$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               31,
-              32
+              31
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 31,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2017 problems and solutions (Ohrid)) on page 31 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "6847e537166673b01c91bc8469c7abab4f4c63b125ec0cc1ad0957e20c26b088",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous. Prove that $\\displaystyle\\int_0^4 f(x(x-3)^2)\\,dx=2\\int_1^3 f(x(x-3)^2)\\,dx$.",
+          "problem": "Let $f\\colon\\mathbb{R}\\to\\mathbb{R}$ be a continuous function. Prove that $$\\int_0^4f(x(x-3)^2)\\,\\mathrm{d}x=2\\int_1^3f(x(x-3)^2)\\,\\mathrm{d}x$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               31,
-              32
+              31
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 31,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2017 problems and solutions (Ohrid)) on page 31 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "98f3bd85ae609adbec98b095e639b8fdaae997209830de7854e051ae52b81f12",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "(a) For an integer $n\\ge0$, calculate $\\displaystyle\\int_0^1(1-t)^ne^t\\,dt$. (b) For a fixed integer $k\\ge0$, let $\\displaystyle x_n=\\sum_{i=k}^n\\binom ik\\left(e-1-\\frac1{1!}-\\frac1{2!}-\\cdots-\\frac1{i!}\\right)$ for $n\\ge k$. Prove that $(x_n)$ converges and find its limit.",
+          "problem": "a) Let $n\\ge0$ be an integer. Calculate $\\int_0^1(1-t)^ne^t\\,\\mathrm{d}t$.\n\nb) Let $k\\ge0$ be a fixed integer and let $(x_n)_{n\\ge k}$ be a sequence defined by $$x_n=\\sum_{i=k}^n\\binom ik\\left(e-1-\\frac1{1!}-\\frac1{2!}-\\cdots-\\frac1{i!}\\right).$$ Prove that the sequence converges and find its limit.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               31,
-              32
+              31
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://eclass.upatras.gr/modules/document/file.php/MATH1230/%CE%86%CE%BB%CE%BB%CE%B5%CF%82%20%CE%B1%CF%83%CE%BA%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%80%CF%81%CE%BF%CE%B5%CF%84%CE%BF%CE%B9%CE%BC%CE%B1%CF%83%CE%AF%CE%B1/%CE%8C%CE%BB%CE%B1%20%CF%84%CE%B1%20%CE%B8%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20Seemous%202007-2020.pdf",
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 31,
-          "verification_method": "Direct comparison of mathematical statement and displayed formulas with rendered contest/source PDF pages; solutions excluded",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2017 problems and solutions (Ohrid)) on page 31 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "8336a39b377d57f7ced35d537a2a99b9053bf78149a0704ab94cd06d043756ec",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -929,7 +1069,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[0,1]\\to(0,1)$ be a Riemann integrable function. Prove that $\\displaystyle\\frac{2\\int_0^1xf(x)^2\\,dx}{\\int_0^1(f(x)^2+1)\\,dx}<\\frac{\\int_0^1f(x)^2\\,dx}{\\int_0^1f(x)\\,dx}$.",
+          "problem": "Let $f\\colon[0,1]\\to(0,1)$ be a Riemann integrable function. Show that $$\\frac{2\\displaystyle\\int_0^1xf^2(x)\\,dx}{\\displaystyle\\int_0^1\\left(f^2(x)+1\\right)dx}<\\frac{\\displaystyle\\int_0^1f^2(x)\\,dx}{\\displaystyle\\int_0^1f(x)\\,dx}.$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -940,14 +1080,17 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "User-supplied Seemous-2007-2025.pdf",
-          "verification_page": 33,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2018/wp-content/uploads/2018/03/SEEMOUS-2018-Contest-Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "24e434e5893be8a18f075ab6d2202668eeda621ebc83192a0248469e5ecc39e1",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "38dfa8c203f1e1e3f69207f6309390f0f3a765d44648e5d4d4c82082ee2861c8"
         },
         {
           "number": 2,
-          "problem": "Let $m,n,p,q\\ge1$ be integers and $A\\in M_{m,n}(\\mathbb R)$, $B\\in M_{n,p}(\\mathbb R)$, $C\\in M_{p,q}(\\mathbb R)$, $D\\in M_{q,m}(\\mathbb R)$ satisfy $A^t=BCD$, $B^t=CDA$, $C^t=DAB$, and $D^t=ABC$. Prove that $(ABCD)^2=ABCD$.",
+          "problem": "Let $m,n,p,q\\ge1$ and let the matrices $A\\in\\mathcal{M}_{m,n}(\\mathbb{R})$, $B\\in\\mathcal{M}_{n,p}(\\mathbb{R})$, $C\\in\\mathcal{M}_{p,q}(\\mathbb{R})$, $D\\in\\mathcal{M}_{q,m}(\\mathbb{R})$ be such that $$A^t=BCD,\\qquad B^t=CDA,\\qquad C^t=DAB,\\qquad D^t=ABC.$$ Prove that $(ABCD)^2=ABCD$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -958,14 +1101,17 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "User-supplied Seemous-2007-2025.pdf",
-          "verification_page": 33,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2018/wp-content/uploads/2018/03/SEEMOUS-2018-Contest-Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "ab3454c1c43e435e987fef80c294c93aca009ee82a6b1abededfd3e37f275b4b",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "38dfa8c203f1e1e3f69207f6309390f0f3a765d44648e5d4d4c82082ee2861c8"
         },
         {
           "number": 3,
-          "problem": "Let $A,B\\in M_{2018}(\\mathbb R)$ satisfy $AB=BA$ and $A^{2018}=B^{2018}=I$. Prove that if $\\operatorname{Tr}(AB)=2018$, then $\\operatorname{Tr}A=\\operatorname{Tr}B$.",
+          "problem": "Let $A,B\\in\\mathcal{M}_{2018}(\\mathbb{R})$ such that $AB=BA$ and $A^{2018}=B^{2018}=I$, where $I$ is the identity matrix. Prove that if $\\operatorname{Tr}(AB)=2018$, then $\\operatorname{Tr}A=\\operatorname{Tr}B$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -976,14 +1122,17 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "User-supplied Seemous-2007-2025.pdf",
-          "verification_page": 33,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2018/wp-content/uploads/2018/03/SEEMOUS-2018-Contest-Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "17f80ea1df34999160641bcc23e280cfbb3628c34cc3ccc8f6d7491daf39f82c",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "38dfa8c203f1e1e3f69207f6309390f0f3a765d44648e5d4d4c82082ee2861c8"
         },
         {
           "number": 4,
-          "problem": "(a) Let $f:\\mathbb R\\to\\mathbb R$ be a polynomial function. Prove that $\\displaystyle\\int_0^\\infty e^{-x}f(x)\\,dx=f(0)+f'(0)+f''(0)+\\cdots$. (b) Let $f$ have a Taylor series at $0$ with infinite radius of convergence. Prove that if $\\sum_{n=0}^\\infty f^{(n)}(0)$ converges absolutely, then $\\int_0^\\infty e^{-x}f(x)\\,dx$ converges and $\\displaystyle\\sum_{n=0}^\\infty f^{(n)}(0)=\\int_0^\\infty e^{-x}f(x)\\,dx$.",
+          "problem": "(a) Let $f\\colon\\mathbb{R}\\to\\mathbb{R}$ be a polynomial function. Prove that $$\\int_0^\\infty e^{-x}f(x)\\,dx=f(0)+f'(0)+f''(0)+\\cdots.$$\n\n(b) Let $f$ be a function which has a Taylor series expansion at $0$ with radius of convergence $R=\\infty$. Prove that if $\\sum_{n=0}^\\infty f^{(n)}(0)$ converges absolutely then $\\int_0^\\infty e^{-x}f(x)\\,dx$ converges and $$\\sum_{n=0}^\\infty f^{(n)}(0)=\\int_0^\\infty e^{-x}f(x)\\,dx.$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -994,10 +1143,13 @@
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "User-supplied Seemous-2007-2025.pdf",
-          "verification_page": 33,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_source": "https://math.etti.tuiasi.ro/seemous2018/wp-content/uploads/2018/03/SEEMOUS-2018-Contest-Problems.pdf",
+          "verification_page": 1,
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "4d764c70c346bb4384ab3081ce47382de0ac623af2152dc6676169413234ce43",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "38dfa8c203f1e1e3f69207f6309390f0f3a765d44648e5d4d4c82082ee2861c8"
         }
       ]
     },
@@ -1006,7 +1158,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Call a sequence $(x_n)$ a \"Devin\" sequence if $0\\le x_n\\le1$ and, for every $f\\in C[0,1]$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nf(x_i)=\\int_0^1f(x)\\,dx$. Prove that $(x_n)$ is a Devin sequence if and only if, for every integer $k\\ge0$, $\\displaystyle\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nx_i^k=\\frac1{k+1}$.",
+          "problem": "We shall call the numerical sequence $\\{x_n\\}$ a “Devin” sequence if $0\\le x_n\\le1$ and for each function $f\\in\\mathrm{C}[0,1]$ $$\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nf(x_i)=\\int_0^1f(x)\\,\\mathrm{d}x.$$ Prove that the numerical sequence $\\{x_n\\}$ is a “Devin” sequence if and only if $\\forall k\\ge0$ $$\\lim_{n\\to\\infty}\\frac1n\\sum_{i=1}^nx_i^k=\\frac1{k+1}.$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1019,12 +1171,16 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 34,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2019 problems sheet (Devin, Bulgaria)) on page 34 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "b997920d62130d0ad252fbd1433f4de38d65c0d1825dc2c5d36a3ee807a08b6f",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "Let $m,n$ be positive integers. Prove that for every $A_1,\\ldots,A_m\\in M_n(\\mathbb R)$ there exist $\\varepsilon_1,\\ldots,\\varepsilon_m\\in\\{-1,1\\}$ such that $\\displaystyle\\operatorname{Tr}\\left((\\varepsilon_1A_1+\\cdots+\\varepsilon_mA_m)^2\\right)\\ge\\operatorname{Tr}(A_1^2)+\\cdots+\\operatorname{Tr}(A_m^2)$.",
+          "problem": "Let $m$ and $n$ be positive integers. Prove that for any matrices $A_1,A_2,\\ldots,A_m\\in\\mathcal{M}_n(\\mathbb{R})$ there exist $\\varepsilon_1,\\varepsilon_2,\\ldots,\\varepsilon_m\\in\\{-1,1\\}$ such that $$\\operatorname{Tr}\\left((\\varepsilon_1A_1+\\varepsilon_2A_2+\\ldots+\\varepsilon_mA_m)^2\\right)\\ge\\operatorname{Tr}\\left(A_1^2\\right)+\\operatorname{Tr}\\left(A_2^2\\right)+\\ldots+\\operatorname{Tr}\\left(A_m^2\\right).$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1037,12 +1193,16 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 34,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2019 problems sheet (Devin, Bulgaria)) on page 34 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "e60c2e13aeb36a67950c67d31e6b48dfac0b5428321ec86a98130a23475d38b6",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $n\\ge2$ and $A,B\\in M_n(\\mathbb C)$ with $B^2=B$. Prove that $\\operatorname{rank}(AB-BA)\\le\\operatorname{rank}(AB+BA)$.",
+          "problem": "Let $n\\ge2$ and $A,B\\in\\mathcal{M}_n(\\mathbb{C})$ such that $B^2=B$. Prove that $$\\operatorname{rank}(AB-BA)\\le\\operatorname{rank}(AB+BA).$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1055,12 +1215,16 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 34,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2019 problems sheet (Devin, Bulgaria)) on page 34 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "bd52e3482a2024a44d8c026bb145c800985add0a1f26660215ac519b49618c02",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "(a) Let $n\\ge1$ be an integer. Calculate $\\displaystyle\\int_0^1x^{n-1}\\ln x\\,dx$. (b) Calculate $\\displaystyle\\sum_{n=0}^\\infty(-1)^n\\left(\\frac1{(n+1)^2}-\\frac1{(n+2)^2}+\\frac1{(n+3)^2}-\\cdots\\right)$.",
+          "problem": "(a) Let $n\\ge1$ be an integer. Calculate $\\int_0^1x^{n-1}\\ln x\\,dx$.\n\n(b) Calculate $$\\sum_{n=0}^\\infty(-1)^n\\left(\\frac1{(n+1)^2}-\\frac1{(n+2)^2}+\\frac1{(n+3)^2}-\\cdots\\right).$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1073,8 +1237,12 @@
           },
           "verification_source": "User-supplied Seemous-2007-2025.pdf",
           "verification_page": 34,
-          "verification_method": "Direct comparison with contest problem statements on corresponding page of user-provided SEEMOUS 2007–2025 source compilation; formulas, conditions and numbered questions inspected",
-          "verified_on": "2026-10-12"
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2019 problems sheet (Devin, Bulgaria)) on page 34 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "161efe4f879d2258b56d2e595973794361633f5b3563b8a5b639af1ebaac6bce",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -1172,82 +1340,92 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $f:[0,1]\\to\\mathbb R$ be continuous and increasing with $\\lim_{x\\to0^+}f(x)/x=1$. (a) Prove that $x_n=\\sum_{k=1}^n f(1/k)-\\int_1^n f(1/x)\\,dx$ converges. (b) Find $\\lim_{n\\to\\infty}\\sum_{k=n+1}^{2021n}f(1/k)$.",
+          "problem": "Let $f\\colon[0,1]\\longrightarrow\\mathbb{R}$ be a continuous strictly increasing function such that $$\\lim_{x\\to0^+}\\frac{f(x)}{x}=1.$$\n\n(a) Prove that the sequence $(x_n)_{n\\geqslant1}$ defined by $$x_n=f\\left(\\frac11\\right)+f\\left(\\frac12\\right)+\\cdots+f\\left(\\frac1n\\right)-\\int_1^nf\\left(\\frac1x\\right)\\mathrm{d}x$$ is convergent.\n\n(b) Find the limit of the sequence $(y_n)_{n\\geqslant1}$ defined by $$y_n=f\\left(\\frac1{n+1}\\right)+f\\left(\\frac1{n+2}\\right)+\\cdots+f\\left(\\frac1{2021n}\\right).$$",
           "statement_verified": true,
           "review_flags": [],
-          "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              39,
-              46
+              40,
+              40
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "source_correction": "Published Romanian Mathematical Society report Problem 1 uses 'continuous increasing', not 'strictly increasing'.",
-          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
-          "verification_page": 25,
-          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 40,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2021 English contest paper (Cyprus, 21 July 2021)) on page 40 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "d6665157e49149703db89dd5e84e7e3d9880725a52375ddce1ba6cc574cb69b0",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "Let $n\\ge2$ and $A\\in M_n(\\mathbb R)$ satisfy $A^2=-I_n$. If $B\\in M_n(\\mathbb R)$ commutes with $A$, prove $\\det B\\ge0$.",
+          "problem": "Let $n\\geqslant2$ be a positive integer and let $A\\in\\mathcal{M}_n(\\mathbb{R})$ be a matrix such that $A^2=-I_n$. If $B\\in\\mathcal{M}_n(\\mathbb{R})$ and $AB=BA$, prove that $\\det B\\geqslant0$.",
           "statement_verified": true,
           "review_flags": [],
-          "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              39,
-              46
+              40,
+              40
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
-          "verification_page": 25,
-          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12",
-          "source_review_note": "Printed statement shows det B >= 0 (not strictly positive)."
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 40,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2021 English contest paper (Cyprus, 21 July 2021)) on page 40 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "source_review_note": "Printed statement shows det B >= 0 (not strictly positive).",
+          "statement_sha256": "d02003915a41230b68efa9833e481b7aa4ce3c8c84fe7f3448105b53fc053b36",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $(AA^*)^2=A^*A$, where $A^*$ denotes the conjugate transpose. (a) Prove $AA^*=A^*A$. (b) Show that every nonzero eigenvalue of $A$ has modulus $1$.",
+          "problem": "Let $A\\in\\mathcal{M}_n(\\mathbb{C})$ be a matrix such that $(AA^*)^2=A^*A$, where $A^*=\\left(\\overline{A}\\right)^t$ denotes the Hermitian transpose (i.e., the conjugate transpose) of $A$.\n\n(a) Prove that $AA^*=A^*A$.\n\n(b) Show that the non-zero eigenvalues of $A$ have modulus one.",
           "statement_verified": true,
           "review_flags": [],
-          "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              39,
-              46
+              40,
+              40
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
-          "verification_page": 25,
-          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 40,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2021 English contest paper (Cyprus, 21 July 2021)) on page 40 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "0aa62c20f5c71987e062f8109ee615e9165fc49a68d0047b5f52e9b007626e58",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "For $p\\in\\mathbb R$, define $a_n=\\frac{1}{n^p}\\int_0^n|\\sin(\\pi x)|^x\\,dx$. Determine all $p$ for which $\\sum_{n=1}^\\infty a_n$ converges.",
+          "problem": "For $p\\in\\mathbb{R}$, let $(a_n)_{n\\geqslant1}$ be the sequence defined by $$a_n=\\frac1{n^p}\\int_0^n|\\sin(\\pi x)|^x\\,\\mathrm{d}x.$$ Determine all possible values of $p$ for which the series $\\sum_{n=1}^\\infty a_n$ converges.",
           "statement_verified": true,
           "review_flags": [],
-          "independent_academic_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              39,
-              46
+              40,
+              40
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://ssmr.ro/gazeta/gma/2022/gma1-2-2022-continut.pdf",
-          "verification_page": 25,
-          "verification_method": "Comparison with SEEMOUS 2021 competition problems published in Gazeta Matematica 2022, by Cornel Baetica; review of original mathematical conditions",
-          "verified_on": "2026-10-12",
-          "source_correction": "Correct integrand is |sin(pi x)|^x, NOT |sin(pi x)/x|; Gazeta Matematica SEEMOUS 2021 Problem 4, printed page 29."
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 40,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2021 English contest paper (Cyprus, 21 July 2021)) on page 40 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "88f657f70b464140dfa44062fa0e95557451c9bf1d54c85e047b5e3ffd937113",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -1345,83 +1523,95 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A=AB-BA+A^2B-2ABA+BA^2+A^2BA-ABA^2$. Prove that $\\det A=0$.",
+          "problem": "Prove that if $A$ and $B$ are $n\\times n$ square matrices with complex entries satisfying $$A=AB-BA+A^2B-2ABA+BA^2+A^2BA-ABA^2$$ then $\\det(A)=0$.",
           "statement_verified": true,
           "review_flags": [],
-          "alternative_contest_statement_source": "https://www.scribd.com/document/641056394/Problems",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              55,
-              61
+              56,
+              56
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.scribd.com/document/641056394/Problems",
-          "verification_page": 1,
-          "verification_method": "Compared four contest statements against third-party hosted scan/text of original 17th SEEMOUS 2023 question sheet; primary organizer link not independently obtained",
-          "verified_on": "2026-10-12",
-          "original_organizer_host_not_confirmed": true
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 56,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2023 organizers' solutions of the problems (Struga)) on page 56 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "original_organizer_host_not_confirmed": true,
+          "statement_sha256": "68fa98d89d1f80e28292d607935749bd466414ca1b0ed28c4f99f01ec25b787d",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "For $n\\ge1$ let $S_n=\\sum_{k=1}^n\\frac1{\\sqrt{n^2+k^2}}$. Find $\\displaystyle\\lim_{n\\to\\infty}n\\left(n\\left(\\ln(1+\\sqrt2)-S_n\\right)-\\frac1{2\\sqrt2(1+\\sqrt2)}\\right)$.",
+          "problem": "For the sequence $$S_n=\\frac1{\\sqrt{n^2+1^2}}+\\frac1{\\sqrt{n^2+2^2}}+\\ldots+\\frac1{\\sqrt{n^2+n^2}},$$ find $$\\lim_{n\\to\\infty}n\\left(n(\\ln(1+\\sqrt2)-S_n)-\\frac1{2\\sqrt2(1+\\sqrt2)}\\right).$$",
           "statement_verified": true,
           "review_flags": [],
-          "alternative_contest_statement_source": "https://www.scribd.com/document/641056394/Problems",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              55,
-              61
+              57,
+              57
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.scribd.com/document/641056394/Problems",
-          "verification_page": 1,
-          "verification_method": "Compared four contest statements against third-party hosted scan/text of original 17th SEEMOUS 2023 question sheet; primary organizer link not independently obtained",
-          "verified_on": "2026-10-12",
-          "original_organizer_host_not_confirmed": true
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 57,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2023 organizers' solutions of the problems (Struga)) on page 57 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "original_organizer_host_not_confirmed": true,
+          "statement_sha256": "087bb9296554954e35f3dab7705a88979a92abf86c6a40130b2a4ce0ceb54982",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A+A^*=A^2A^*$, where $A^*$ is the conjugate transpose. Prove that $A=A^*$.",
+          "problem": "Prove that: if $A$ is $n\\times n$ square matrix with complex entries such that $A+A^*=A^2A^*$, then $A=A^*$. (For any matrix $M$, denote by $M^*=\\overline{M}^t$ the conjugate transpose of $M$.)",
           "statement_verified": true,
           "review_flags": [],
-          "alternative_contest_statement_source": "https://www.scribd.com/document/641056394/Problems",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              55,
-              61
+              59,
+              59
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.scribd.com/document/641056394/Problems",
-          "verification_page": 1,
-          "verification_method": "Compared four contest statements against third-party hosted scan/text of original 17th SEEMOUS 2023 question sheet; primary organizer link not independently obtained",
-          "verified_on": "2026-10-12",
-          "original_organizer_host_not_confirmed": true
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 59,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2023 organizers' solutions of the problems (Struga)) on page 59 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "original_organizer_host_not_confirmed": true,
+          "statement_sha256": "614a2636e3d145999fc8b076ff86bd6380b0991e1b76c77c42694c4f7dcd8eca",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous and strictly decreasing with $f([0,1])\\subseteq[0,1]$. (a) Prove that for every positive integer $n$ there is a unique $a_n\\in(0,1)$ satisfying $f(a_n)=a_n^n$, and that $\\lim_{n\\to\\infty}a_n=1$. (b) Suppose $f$ has a continuous derivative, $f(1)=0$, and $f'(1)<0$. Define $F(x)=\\int_x^1f(t)\\,dt$. For real $\\alpha$, study the convergence of $\\sum_{n=1}^\\infty(F(a_n))^\\alpha$.",
+          "problem": "Let $f\\colon\\mathbb{R}\\to\\mathbb{R}$ be a continuous, strictly decreasing function such that $f([0,1])\\subseteq[0,1]$.\n\n(i) For all $n\\in\\mathbb{N}\\setminus\\{0\\}$, prove that there exists a unique $a_n\\in(0,1)$, solution of the equation $$f(x)=x^n.$$ Moreover, if $(a_n)$ is the sequence defined as above, prove that $\\lim_{n\\to\\infty}a_n=1$.\n\n(ii) Suppose $f$ has a continuous derivative, with $f(1)=0$ and $f'(1)<0$. For any $x\\in\\mathbb{R}$, we define $$F(x)=\\int_x^1f(t)\\,dt.$$ Study the convergence of the series $\\sum_{n=1}^\\infty(F(a_n))^\\alpha$, with $\\alpha\\in\\mathbb{R}$.",
           "statement_verified": true,
           "review_flags": [],
-          "alternative_contest_statement_source": "https://www.scribd.com/document/641056394/Problems",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              55,
-              61
+              60,
+              60
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.scribd.com/document/641056394/Problems",
-          "verification_page": 1,
-          "verification_method": "Compared four contest statements against third-party hosted scan/text of original 17th SEEMOUS 2023 question sheet; primary organizer link not independently obtained",
-          "verified_on": "2026-10-12",
-          "original_organizer_host_not_confirmed": true
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 60,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2023 organizers' solutions of the problems (Struga)) on page 60 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "original_organizer_host_not_confirmed": true,
+          "statement_sha256": "551649e89eada7919d67ba2f44abe2b8e76440981be02afb8e0c101b9632197e",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
@@ -1519,25 +1709,29 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A$ be an $n\\times n$ matrix with strictly positive entries and let $u,v\\in\\mathbb R^n$ have strictly positive entries. Suppose $Au=v$ and $Av=u$. Prove that $u=v$.",
+          "problem": "Let $A$ be an $n\\times n$ matrix with strictly positive elements and two vectors $\\boldsymbol{u},\\boldsymbol{v}\\in\\mathbb{R}^n$, also with strictly positive elements, such that $$A\\boldsymbol{u}=\\boldsymbol{v}\\quad\\text{and}\\quad A\\boldsymbol{v}=\\boldsymbol{u}.$$ Prove that $\\boldsymbol{u}=\\boldsymbol{v}$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               70,
-              75
+              70
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.matematickitalent.mk/uploads/books/pIsqechwwEOnuER8IekhIA.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct source text reconciliation with original 19th SEEMOUS 2025 four-problem paper; confirmed 2025 P2 radical encloses exponential remainder without extraneous e^x denominator",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 70,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2025 organizers' problems and solutions (Korce)) on page 70 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "ed5a40ce3a68632dd78327ad6a1e19ba2c9b0e9a054ff2cdc1585b17d63642b4",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 2,
-          "problem": "Calculate $\\displaystyle\\lim_{n\\to\\infty}n\\int_0^\\infty e^{-x}\\sqrt[n]{e^x-1-\\frac{x}{1!}-\\frac{x^2}{2!}-\\cdots-\\frac{x^n}{n!}}\\,dx$.",
+          "problem": "Calculate $$\\lim_{n\\to\\infty}n\\int_0^\\inftye^{-x}\\sqrt[n]{e^x-1-\\frac{x}{1!}-\\frac{x^2}{2!}-\\cdots-\\frac{x^n}{n!}}\\,\\mathrm{d}x.$$",
           "statement_verified": true,
           "review_flags": [],
           "secondary_comparison_source": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/SEEMOUS_2025_report.pdf",
@@ -1546,50 +1740,62 @@
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
               70,
-              75
+              70
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.matematickitalent.mk/uploads/books/pIsqechwwEOnuER8IekhIA.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct source text reconciliation with original 19th SEEMOUS 2025 four-problem paper; confirmed 2025 P2 radical encloses exponential remainder without extraneous e^x denominator",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 70,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2025 organizers' problems and solutions (Korce)) on page 70 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "029f947f7f51bb109b2eef425d8c85af5c763db7f673aae4c9f43085c103206c",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 3,
-          "problem": "Let $A\\in M_n(\\mathbb C)$ satisfy $A^*A^2=AA^*$, where $A^*$ is the conjugate transpose of $A$. Prove that $A^2=A$.",
+          "problem": "Let $A\\in M_n(\\mathbb{C})$ such that $A^*A^2=AA^*$. Prove that $A^2=A$. (We denote with $A^*=\\overline{A}^t$ the conjugate transpose of $A$).",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              70,
-              75
+              73,
+              73
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.matematickitalent.mk/uploads/books/pIsqechwwEOnuER8IekhIA.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct source text reconciliation with original 19th SEEMOUS 2025 four-problem paper; confirmed 2025 P2 radical encloses exponential remainder without extraneous e^x denominator",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 73,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2025 organizers' problems and solutions (Korce)) on page 73 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "b25981d5e5ab03d63d4f012c2bdff435c2c23a6b7f8b4144c60e72758e1a1325",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         },
         {
           "number": 4,
-          "problem": "Let $(a_n)_{n\\ge1}$ be a monotonically decreasing sequence of real numbers converging to $0$. Prove that $\\displaystyle\\sum_{n=1}^\\infty\\frac{a_n}{n}$ converges if and only if $(a_n\\ln n)_{n\\ge1}$ is bounded and $\\displaystyle\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ converges.",
+          "problem": "Let $(a_n)$ be a monotone decreasing sequence of real numbers that converges to $0$. Prove that $\\sum_{n=1}^\\infty\\dfrac{a_n}{n}$ is convergent if and only if the sequence $(a_n\\ln n)$ is bounded and $\\sum_{n=1}^\\infty(a_n-a_{n+1})\\ln n$ is convergent.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
-              70,
-              75
+              74,
+              74
             ],
             "source_type": "user_provided_compiled_contest_documents"
           },
-          "verification_source": "https://www.matematickitalent.mk/uploads/books/pIsqechwwEOnuER8IekhIA.pdf",
-          "verification_page": 1,
-          "verification_method": "Direct source text reconciliation with original 19th SEEMOUS 2025 four-problem paper; confirmed 2025 P2 radical encloses exponential remainder without extraneous e^x denominator",
-          "verified_on": "2026-10-12"
+          "verification_source": "User-supplied Seemous-2007-2025.pdf",
+          "verification_page": 74,
+          "verification_method": "Organizer wording transcribed from the reproduced organizer document (SEEMOUS 2025 organizers' problems and solutions (Korce)) on page 74 of the SEEMOUS 2007-2025 compilation (NKUA course copy) and compared visually, formula by formula (2026-10-13). Secondary compilation: no original-source badge.",
+          "verified_on": "2026-10-13",
+          "statement_sha256": "5f603c83e2712434860fe93d43cb9025feec16abb3250a80e3576c5bd0fd23c0",
+          "compilation_public_copy": "https://eclass.uoa.gr/modules/document/file.php/MATH206/%CE%98%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%20SEEMOUS/Seemous-2007-2025.pdf",
+          "compilation_sha256": "f4e4997ccc83da6b84321b47a16ddbdeecb09ec8bf82b4cb9d0ae45724d36312",
+          "original_paper_verification_status": "organizer_document_wording_transcribed_from_secondary_compilation"
         }
       ]
     },
