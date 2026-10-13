@@ -10,10 +10,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
-<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script>
     MathJax = {
@@ -25,7 +22,7 @@
     };
 </script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <style>
 /* ==========================================================
@@ -1405,11 +1402,8 @@ function paintCountry(key) {
     const bad = failed.has(key) && !list;
     const c = CBY[key];
     if (bad) $(`.rl[data-rl="${key}"]`).title = 'This file did not load';
-    // Scan the row once rather than querying the entire document for every year.
-    const row = $('#mx .rl[data-rl="' + key + '"]').closest('.mx-row');
-    if (!row) return;
-    for (const cell of row.querySelectorAll('.cell')) {
-        const y = +cell.dataset.year;
+    for (let y = LAST; y >= FIRST; y--) {
+        const cell = $(`.cell[data-country="${key}"][data-year="${y}"]`);
         const n = bad ? 0 : yearCount(key, y);
         cell.classList.toggle('pend', !known && !bad);
         cell.classList.toggle('err', bad);
@@ -2238,7 +2232,7 @@ async function init() {
     $('#yr').textContent = new Date().getFullYear();
 
     // Start every metadata request at once and draw the grid without waiting for them.
-    const getJson = url => fetch(url, {cache: 'default'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+    const getJson = url => fetch(url, {cache: 'no-cache'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
     const META_V = '?v=' + DATA_VERSION;
     // Counts per collection and year: the grid and the totals come from here, not from the full files.
     const manifestReady = getJson('./metadata/runtime/manifest.json' + META_V).then(m => {
