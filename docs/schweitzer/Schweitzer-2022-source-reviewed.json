@@ -1,0 +1,50 @@
+{
+  "competition": "Miklós Schweitzer Memorial Competition",
+  "years": [
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A set $A\\subseteq\\mathbb Z$ is called irregular if for any two distinct elements $x,y\\in A$, the set $A$ contains no other element of the form $x+k(y-x)$ where $k\\in\\mathbb Z$. Does there exist an infinite irregular set?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. Suppose that the sum of the matrices $A_1,\\ldots,A_n\\in\\mathbb R^{n\\times n}$ is the identity matrix but $\\sum_{i=1}^n\\alpha_i A_i$ is singular whenever at least one of the coefficients $\\alpha_i\\in\\mathbb R$ is zero.\\n\\n(a) Show that $\\sum_{i=1}^n\\alpha_i A_i$ is non-singular provided that $\\alpha_i\\ne0$ for all $i$.\\n\\n(b) Prove that if the matrices $A_i$ are symmetric, then each has rank $1$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f:[0,\\infty)\\to[0,\\infty)$ satisfy the following: it is linear between adjacent integers, and for $n=0,1,\\ldots$, $$f(n)=\\begin{cases}0&\\text{if }2\\mid n,\\\\4^\\ell+1&\\text{if }2\\nmid n,\\ 4^{\\ell-1}\\le n<4^\\ell\\ (\\ell=1,2,\\ldots).\\end{cases}$$ Let $f^1(x)=f(x)$, and $f^k(x)=f(f^{k-1}(x))$ for all integers $k\\ge2$. Determine $\\liminf_{k\\to\\infty}f^k(x)$ and $\\limsup_{k\\to\\infty}f^k(x)$ for Lebesgue almost every $x\\in[0,\\infty)$."
+        },
+        {
+          "number": 4,
+          "problem": "For each polynomial $f$ of degree $n$ with integer coefficients, consider the integral $$\\int_{-1}^1x^nf(x)\\,dx.$$ Let $\\alpha_n$ denote the smallest positive real number that can be obtained as the value of such an integral. Determine $$\\lim_{n\\to\\infty}\\frac{\\log\\alpha_n}{n}.$$"
+        },
+        {
+          "number": 5,
+          "problem": "Is it possible to select a non-degenerate segment from every line in the plane in such a way that they are pairwise disjoint?"
+        },
+        {
+          "number": 6,
+          "problem": "Let $\\varepsilon$ be a primitive $7$th root of unity. Determine all integers of the form $|\\alpha|^2$ for some element $\\alpha$ of the cyclotomic field $\\mathbb Q(\\varepsilon)$."
+        },
+        {
+          "number": 7,
+          "problem": "There are chess pieces located on each vertex of a regular $k$-gon. We are allowed to pick up a piece and move it to the point obtained by reflecting its current position to that of another piece. By repeatedly performing this type of move, for what integers $k\\ge3$ are we able to achieve a situation where all pieces once again occupy the vertices of a regular $k$-gon, but the polygon is of different size than the original?"
+        },
+        {
+          "number": 8,
+          "problem": "Prove that for a suitable choice of the signs $\\varepsilon_n=\\pm1$ the function $f(s)=\\sum_{n=1}^{\\infty}\\frac{\\varepsilon_n}{n^s}:\\{\\operatorname{Re}s>1\\}\\to\\mathbb C$ accumulates to every complex number at every point $\\xi\\in\\{\\operatorname{Re}s=1\\}$ (i.e. for every $z\\in\\mathbb C$ and $\\xi\\in\\{\\operatorname{Re}s=1\\}$ there exists a sequence $s_n\\to\\xi$, $\\operatorname{Re}s_n>1$ such that $f(s_n)\\to z$)."
+        },
+        {
+          "number": 9,
+          "problem": "Consider the group formed by the vectors in the plane under addition. Suppose a set $S\\subseteq\\mathbb R^2$ contains a Borel subset of a circular arc that has positive linear measure. Show that $S$ is a generating set of the above group."
+        },
+        {
+          "number": 10,
+          "problem": "Does there exist a continuous function $f:\\mathbb R\\setminus\\mathbb Q\\to\\mathbb R\\setminus\\mathbb Q$ such that the preimage of each irrational number is of positive Hausdorff dimension?"
+        }
+      ]
+    }
+  ]
+}
