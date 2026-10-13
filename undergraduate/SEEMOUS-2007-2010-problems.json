@@ -1083,7 +1083,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $A\\in M_{2020}(\\mathbb C)$ satisfy $A+\\operatorname{adj}(A)=I_{2020}$ and $A\\operatorname{adj}(A)=I_{2020}$, where $\\operatorname{adj}(A)$ denotes the adjugate matrix. Find the maximum number of such matrices that are pairwise non-similar.",
+          "problem": "Consider $A \\in \\mathcal{M}_{2020}(\\mathbb{C})$ such that $$A + A^\\times = I_{2020},\\qquad A\\cdot A^\\times = I_{2020}, \\tag{1}$$ where $A^\\times$ is the adjugate matrix of $A$, i.e., the matrix whose elements are $a_{ij} = (-1)^{i+j}d_{ji}$, where $d_{ji}$ is the determinant obtained from $A$, eliminating the line $j$ and the column $i$.\n\nFind the maximum number of matrices verifying (1) such that any two of them are not similar.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1096,12 +1096,15 @@
           },
           "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bcf62dec9ed409faf6f5651009a102827fa9111a16099261229538a008763d19",
+          "statement_sha256": "0ec7d6c32600193199d99bd98ae7da2e4c8ba1c598d9472710e273cc4829a242"
         },
         {
           "number": 2,
-          "problem": "Let $k>1$ be real. Calculate (a) $\\displaystyle L=\\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx$; (b) $\\displaystyle\\lim_{n\\to\\infty}n\\left[L-\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x}+k-1}\\right)^n\\,dx\\right]$.",
+          "problem": "Let $k > 1$ be a real number. Calculate:\n\n(a) $$L = \\lim_{n\\to\\infty}\\int_0^1\\left(\\frac{k}{\\sqrt[n]{x} + k - 1}\\right)^n\\mathrm{d}x.$$\n\n(b) $$\\lim_{n\\to\\infty}n\\left[L - \\int_0^1\\left(\\frac{k}{\\sqrt[n]{x} + k - 1}\\right)^n\\mathrm{d}x\\right].$$",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1114,12 +1117,15 @@
           },
           "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bcf62dec9ed409faf6f5651009a102827fa9111a16099261229538a008763d19",
+          "statement_sha256": "2d075d484e8753e1f15a0170cc66f5eb971bd1e1e45c3a569850276f1b7b1255"
         },
         {
           "number": 3,
-          "problem": "Let $n$ be a positive integer, $k\\in\\mathbb C$, and $A\\in M_n(\\mathbb C)$ satisfy $\\operatorname{Tr}A\\ne0$ and $\\operatorname{rank}A+\\operatorname{rank}((\\operatorname{Tr}A)I_n-kA)=n$. Find $\\operatorname{rank}A$.",
+          "problem": "Let $n$ be a positive integer, $k \\in \\mathbb{C}$ and $A \\in \\mathcal{M}_n(\\mathbb{C})$ such that $\\operatorname{Tr}A \\neq 0$ and $$\\operatorname{rank}A + \\operatorname{rank}\\big((\\operatorname{Tr}A)\\cdot I_n - kA\\big) = n.$$ Find $\\operatorname{rank}A$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1132,12 +1138,15 @@
           },
           "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bcf62dec9ed409faf6f5651009a102827fa9111a16099261229538a008763d19",
+          "statement_sha256": "6555a22b14053daa6f6f4c562556dda8e8adc228cf0bfbed0ec9924c34c3dce7"
         },
         {
           "number": 4,
-          "problem": "Let $0<a<T$, $D=\\mathbb R\\setminus\\{kT+a:k\\in\\mathbb Z\\}$, and let $f:D\\to\\mathbb R$ be $T$-periodic and differentiable, with $f(0)=0$, $f'(x)>1$ for $x\\in(0,a)$, $\\displaystyle\\lim_{x\\to a^-}f(x)=+\\infty$, and $\\displaystyle\\lim_{x\\to a^-}\\frac{f'(x)}{f(x)^2}=1$. (a) Prove that for every $n\\in\\mathbb N^*$, $f(x)=x$ has a unique solution $x_n\\in(nT,nT+a)$. (b) Put $y_n=nT+a-x_n$ and $z_n=\\int_0^{y_n}f(x)\\,dx$. Prove $y_n\\to0$ and study the convergence of $\\sum_{n=1}^\\infty y_n$ and $\\sum_{n=1}^\\infty z_n$.",
+          "problem": "Consider $0 < a < T$, $D = \\mathbb{R}\\setminus\\{kT + a \\mid k \\in \\mathbb{Z}\\}$, and let $f\\colon D \\to \\mathbb{R}$ a $T$-periodic and differentiable function which satisfies $f' > 1$ on $(0,a)$ and $$f(0) = 0,\\quad \\lim_{\\substack{x\\to a\\\\ x<a}}f(x) = +\\infty\\quad\\text{and}\\quad \\lim_{\\substack{x\\to a\\\\ x<a}}\\frac{f'(x)}{f^2(x)} = 1.$$\n\n(a) Prove that for every $n \\in \\mathbb{N}^*$, the equation $f(x) = x$ has a unique solution in the interval $(nT, nT + a)$, denoted $x_n$.\n\n(b) Let $y_n = nT + a - x_n$ and $z_n = \\int_0^{y_n}f(x)\\,dx$. Prove that $\\lim_{n\\to\\infty}y_n = 0$ and study the convergence of the series $\\sum_{n=1}^{\\infty}y_n$ and $\\sum_{n=1}^{\\infty}z_n$.",
           "statement_verified": true,
           "review_flags": [],
           "user_supplied_compilation": {
@@ -1150,8 +1159,11 @@
           },
           "verification_source": "https://seemous2020.auth.gr/sites/default/files/2020-03/SEEMOUS2020Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Direct original organizer single-page exam PDF inspection, including matrix identities, integral limits and four numbered problem statements",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bcf62dec9ed409faf6f5651009a102827fa9111a16099261229538a008763d19",
+          "statement_sha256": "8b5ebb3ead68ea6ec06b2f436880b642e10a7a6321c31201670272f55cec3b01"
         }
       ]
     },
@@ -1406,13 +1418,13 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $x_1\\in(0,1)$ and $x_{n+1}=x_n-x_n^2/\\sqrt n$ for $n\\ge1$. Determine all $\\alpha\\in\\mathbb R$ for which $\\sum_{n=1}^\\infty x_n^\\alpha$ converges.",
+          "problem": "Let $(x_n)_{n\\ge1}$ be the sequence defined by $x_1 \\in (0,1)$ and $x_{n+1} = x_n - \\dfrac{x_n^2}{\\sqrt n}$ for all $n \\ge 1$. Find the values of $\\alpha \\in \\mathbb{R}$ for which the series $\\sum_{n=1}^{\\infty}x_n^\\alpha$ is convergent.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12",
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1420,17 +1432,20 @@
               69
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bb87d17aa98bf0291cc3c8c4d6a4f8b45e3efdeaa2157aef31ccb2d6af6ca664",
+          "statement_sha256": "571f3d1f2c40358961a3a6d556ace844423999b4eb0f791a56880b1ccadc21cf"
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb R)$ be real symmetric matrices with nonnegative eigenvalues. Prove that $A^3+B^3=(A+B)^3$ if and only if $AB=O_n$.",
+          "problem": "Let $A, B \\in \\mathcal{M}_n(\\mathbb{R})$ two real, symmetric matrices with nonnegative eigenvalues. Prove that $A^3 + B^3 = (A+B)^3$ if and only if $AB = \\mathcal{O}_n$.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12",
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1438,17 +1453,20 @@
               69
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bb87d17aa98bf0291cc3c8c4d6a4f8b45e3efdeaa2157aef31ccb2d6af6ca664",
+          "statement_sha256": "6a144b079ae6542c4876132cb930a9cf0cb2c597ea8af0310432d025372fbe66"
         },
         {
           "number": 3,
-          "problem": "For $n\\ge1$ let $x_n=\\int_0^1\\ln(1+x+\\cdots+x^n)\\ln\\frac1{1-x}\\,dx$. (a) Prove that $x_n$ is finite and $\\lim_{n\\to\\infty}x_n=2$. (b) Calculate $\\lim_{n\\to\\infty}\\frac n{\\ln n}(2-x_n)$.",
+          "problem": "For every $n \\ge 1$ define $x_n$ by $$x_n = \\int_0^1\\ln(1 + x + x^2 + \\ldots + x^n)\\cdot\\ln\\frac{1}{1-x}\\,\\mathrm{d}x,\\qquad n \\ge 1.$$\n\na) Show that $x_n$ is finite for every $n \\ge 1$ and $\\lim_{n\\to\\infty}x_n = 2$.\n\nb) Calculate $\\lim_{n\\to\\infty}\\dfrac{n}{\\ln n}(2 - x_n)$.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12",
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1456,17 +1474,20 @@
               69
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bb87d17aa98bf0291cc3c8c4d6a4f8b45e3efdeaa2157aef31ccb2d6af6ca664",
+          "statement_sha256": "d373ceb31603924019f9e6e0a6e9e336991d0f1ce2e4f7aeddc887ec59218c81"
         },
         {
           "number": 4,
-          "problem": "Let $n\\ge2$. Determine all integers $k\\ge1$ such that, for every $A\\in M_n(\\mathbb C)$, the identity $A^kA^*=A$ implies $A=A^*$, where $A^*$ is the conjugate transpose.",
+          "problem": "Let $n \\in \\mathbb{N}$, $n \\ge 2$. Find all the values $k \\in \\mathbb{N}$, $k \\ge 1$, for which the following statement holds: “If $A \\in \\mathcal{M}_n(\\mathbb{C})$ is such that $A^kA^* = A$, then $A = A^*$.” (here, $A^* = \\overline{A}^{\\,t}$ denotes the transpose conjugate of $A$).",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://math.etti.tuiasi.ro/seemous2024/wp-content/SEEMOUS_2024_Contest_Problems.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12",
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
           "user_supplied_compilation": {
             "file": "Seemous-2007-2025.pdf",
             "page_range": [
@@ -1474,7 +1495,10 @@
               69
             ],
             "source_type": "user_provided_compiled_contest_documents"
-          }
+          },
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "bb87d17aa98bf0291cc3c8c4d6a4f8b45e3efdeaa2157aef31ccb2d6af6ca664",
+          "statement_sha256": "a167a5e010d82a4df5f8d7fa02f438c25b9877d3ba99a22a4fa5b5f48460e63a"
         }
       ]
     },
@@ -1562,43 +1586,55 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Determine all differentiable functions $f:\\mathbb R\\to[0,\\infty)$ with continuous derivative such that $f(x)^2\\le f'(x)$ for every $x\\in\\mathbb R$.",
+          "problem": "Determine all differentiable functions $f\\colon \\mathbb{R} \\to [0,\\infty)$ with continuous derivative such that $f^2(x) \\leqslant f'(x)$ for all $x \\in \\mathbb{R}$.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "d78fe1a66ceb0be34cfacbe5a6f089c167832652b97eebc94e3d13fe6d7e9951",
+          "statement_sha256": "971fbbeb86119773bcb026c553d3abfc9722b6e040febdaab47bb8d603f2c5ee"
         },
         {
           "number": 2,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2+B^2=2(AB-BA)$. Prove that $A^2+B^2$ is nilpotent.",
+          "problem": "Let $A$ and $B$ be $n \\times n$ matrices with complex entries for which $$A^2 + B^2 = 2(AB - BA).$$ Prove that $A^2 + B^2$ is a nilpotent matrix.\n\nAn $n \\times n$ matrix $M$ is called nilpotent, if there is a positive integer $k$ such that $M^k = O_n$.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "d78fe1a66ceb0be34cfacbe5a6f089c167832652b97eebc94e3d13fe6d7e9951",
+          "statement_sha256": "bd7e5545d8d20309ce4b9241bea8f4fa10a92931cb20967a92b9c0828ede8bd0"
         },
         {
           "number": 3,
-          "problem": "Let $A,B\\in M_n(\\mathbb C)$ satisfy $A^2=AB-BA$ and $\\operatorname{rank}(A-B)=1$. Prove $ABA=O_n$.",
+          "problem": "Let $A$ and $B$ be $n \\times n$ matrices with complex entries for which $A^2 = AB - BA$ and $\\operatorname{rank}(A - B) = 1$. Prove that $ABA = O_n$.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "d78fe1a66ceb0be34cfacbe5a6f089c167832652b97eebc94e3d13fe6d7e9951",
+          "statement_sha256": "479d80fe496641708b78c3f3ad85ab68becf3f0d6a6409659ebfdda952fca951"
         },
         {
           "number": 4,
-          "problem": "Determine all bijections $f:\\mathbb R\\to\\mathbb R$ such that $x^nf(x)+y^nf(y)\\ge2x^nf(y)$ for all $x,y\\in\\mathbb R$, where $n$ is a fixed positive integer.",
+          "problem": "Find all bijective functions $f\\colon \\mathbb{R} \\to \\mathbb{R}$ satisfying $$x^nf(x) + y^nf(y) \\geqslant 2x^nf(y)$$ for all $x, y \\in \\mathbb{R}$, where $n$ is a fixed positive integer.",
           "statement_verified": true,
           "review_flags": [],
           "verification_source": "https://cdn.b3web.xyz/web/cms/optimizedSEEMOUS_2026_Contest.pdf1772877068.pdf",
           "verification_page": 1,
-          "verification_method": "Manual visual comparison of all formulae, hypotheses and numbering against organizer one-page original contest paper",
-          "verified_on": "2026-10-12"
+          "verification_method": "Official wording transcribed from the official contest paper and compared visually, formula by formula (2026-10-13)",
+          "verified_on": "2026-10-13",
+          "original_paper_verification_status": "official_paper_wording_transcribed_and_compared",
+          "source_document_sha256": "d78fe1a66ceb0be34cfacbe5a6f089c167832652b97eebc94e3d13fe6d7e9951",
+          "statement_sha256": "dbd267dddb7c0829039fed7f53c2ae6b9bb6236c0b1b295c116f9b60d97834c8"
         }
       ]
     }

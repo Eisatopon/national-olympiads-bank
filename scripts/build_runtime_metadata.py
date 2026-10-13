@@ -72,6 +72,8 @@ def build_collections():
     src.update((load('vjimc-statement-checks.json') or {}).get('collections', {}))
     src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
     src.update((load('schweitzer-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('imc-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('seemous-statement-checks.json') or {}).get('collections', {}))
     out, check_files = {}, {}
     for file in sorted(src):
         meta = src[file]
