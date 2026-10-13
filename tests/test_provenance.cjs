@@ -33,3 +33,17 @@ for(const print of [false,true]) {
   assert.match(rendered,/do not use/);
 }
 console.log('Provenance checks passed: editorial notes in screen/print, stale evidence hidden, HTML escaped, source scope explicit.');
+const putMeta=JSON.parse(fs.readFileSync('metadata/putnam-statement-checks.json','utf8')).collections;
+Object.assign(ctx.collectionMetadata,putMeta);
+ctx.CBY.put={file:'undergraduate/Putnam-problems.json'};
+const rangeCheck=putMeta['undergraduate/Putnam-problems.json'].statement_checks['put.1965.0.A3'];
+const rangeRecord={country:'put',year:1965,uid:'put.1965.0.A3',text:rangeCheck.reviewed_statement};
+for(const print of [false,true]){
+ const rendered=ctx.provenanceHtml(rangeRecord,print);
+ assert.match(rendered,/Statement checked against source/);
+ assert.match(rendered,/pages 15, 16/);
+}
+const savedPages=rangeCheck.source_pages;
+rangeCheck.source_pages=[15,0];
+assert.doesNotMatch(ctx.provenanceHtml(rangeRecord),/Statement checked against source/);
+rangeCheck.source_pages=savedPages;

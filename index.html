@@ -745,7 +745,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261013-vjimc-native';
+const DATA_VERSION = '20261013-putnam-native';
 const FIRST = 1947, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1558,22 +1558,26 @@ function provenanceHtml(p, print = false) {
     const editorial = meta?.statement_notes?.[p.uid];
     const editorialText = editorial && sameStatement(editorial, p.text) ? editorial.text : '';
     const source = candidate && safeSourceUrl(candidate.source_url);
+    const sourcePages = Number.isInteger(candidate?.source_page) && candidate.source_page > 0
+        ? [candidate.source_page] : Array.isArray(candidate?.source_pages) && candidate.source_pages.length
+            && candidate.source_pages.every(n => Number.isInteger(n) && n > 0) ? candidate.source_pages : [];
+    const pageReference = `${sourcePages.length === 1 ? 'page' : 'pages'} ${sourcePages.join(', ')}`;
     // A changed statement must lose its checked badge immediately, even before CI.
     const checked = candidate?.status === 'statement_checked_against_source'
         && sameStatement(candidate, p.text) && source
-        && Number.isInteger(candidate.source_page) && candidate.source_page > 0;
+        && sourcePages.length > 0;
     const sourceDownload = checked && safeSourceUrl(candidate.source_download_url);
     const originalLink = sourceDownload ? ` <a href="${esc(sourceDownload)}" target="_blank" rel="noopener noreferrer">${candidate.source_download_kind === 'statements_only' ? 'Statements PDF (no solutions)' : candidate.source_format === 'doc' ? 'Original document (Word)' : 'Original PDF'}</a>.` : '';
     const unresolved = checked && /^(?:Source ambiguity|Incomplete source condition|Unresolved source error|Potential source typo|Source omission|Source convention omission)/.test(editorialText);
     const status = unresolved ? 'Source issue — awaiting verification' : checked ? 'Statement checked against source (AI-assisted)' : 'Sources and notes';
     const note = gaps ? `Incomplete year: missing problem ${gaps.join(', ')}.` : '';
-    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, page ${candidate.source_page}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
+    const checkDetail = checked ? `<p>Compared visually and textually on ${esc(candidate.checked_at)}. <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Exam source${candidate.source_contains_solutions ? ' (includes solutions)' : ''}</a>, ${pageReference}, source problem ${esc(candidate.source_problem_number)}. This checks statement fidelity, not the solution or independent mathematical correctness.${originalLink}</p>` : '';
     const links = (meta?.source_links || []).map(link => {
         const url = safeSourceUrl(link.url);
         return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Archive research link</a>` : '';
     }).filter(Boolean);
     if (print) {
-        const text = [checked ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', checked ? `Source: ${esc(source)}, page ${candidate.source_page}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
+        const text = [checked ? status + '.' : '', note ? esc(note) : '', editorialText ? esc(editorialText) : '', checked ? `Source: ${esc(source)}, ${pageReference}, problem ${esc(candidate.source_problem_number)}; checked ${esc(candidate.checked_at)}.` : ''].filter(Boolean).join(' ');
         return text ? `<p class="ps-src">${text}</p>` : '';
     }
     if (!checked && !note && !editorialText && !links.length) return '';

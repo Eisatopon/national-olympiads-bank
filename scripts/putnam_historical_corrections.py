@@ -45,9 +45,9 @@ $$\sum_{k=0}^{n}(-1)^k\binom nk(x-k)^n.$$''',
 [At a point on a graph, the normal line is the perpendicular to the tangent at that point. Also, $\cosh x=(e^x+e^{-x})/2$ and $\sinh x=(e^x-e^{-x})/2$.]''',
 }
 NOTES={
- (1978,'A5'):'Source issue: the printed statement uses a strict inequality, which fails when all x_i are equal. The original inequality is retained; its equality case requires an editorial correction to a non-strict inequality.',
+ (1978,'A5'):'Unresolved source error: the printed statement uses a strict inequality, which fails when all x_i are equal. The original inequality is retained; its equality case requires an editorial correction to a non-strict inequality.',
  (1978,'B3'):'Source omission: the printed recurrence says m>1 although only Q_1 and Q_2 are initialized; Q_3 and Q_4 are not specified. The wording is retained. A complete recurrence would also need its m=1 step.',
- (1979,'B6'):'Source issue: the printed inequality is strict, but equality occurs, for example, when n=1 and z_1=1. The original inequality is retained; a non-strict inequality is needed for the general assertion.',
+ (1979,'B6'):'Unresolved source error: the printed inequality is strict, but equality occurs, for example, when n=1 and z_1=1. The original inequality is retained; a non-strict inequality is needed for the general assertion.',
 }
 def native(text):
  text=re.sub(r'^\s*(?:Problem\s+)?[AB][-−]?\d+[.]?\s*','',text)

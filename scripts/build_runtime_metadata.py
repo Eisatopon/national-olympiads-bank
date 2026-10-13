@@ -28,7 +28,7 @@ OUT = ROOT / 'metadata' / 'runtime'
 
 # Fields of a statement check that index.html actually reads.
 CHECK_FIELDS = ('status', 'checked_at', 'source_url', 'source_page', 'source_problem_number',
-                'source_download_url', 'source_download_kind', 'source_format',
+                'source_pages', 'printed_source_pages', 'source_download_url', 'source_download_kind', 'source_format',
                 'source_contains_solutions')
 
 
@@ -62,6 +62,7 @@ def build_collections():
     src = dict(load('collections.json')['collections'])
     src.update((load('smmc-statement-checks.json') or {}).get('collections', {}))
     src.update((load('vjimc-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
     src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
     src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
     out = {}
