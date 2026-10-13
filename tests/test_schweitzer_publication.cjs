@@ -13,7 +13,7 @@ const SRC = 'https://real-eod.mtak.hu/14558/1/AkademiaiKiado_007070.pdf';
 // Year totals printed in Chapter 2 of the book (1950 had two rounds).
 const expected = {1949: 8, 1950: 19, 1951: 17, 1952: 10, 1953: 10, 1954: 10, 1955: 10, 1956: 10, 1957: 10, 1958: 11, 1959: 10, 1960: 10, 1961: 10,
   // Annual problem papers (Szeged archive / Bolyai Society).
-  1987: 10, 1995: 12, 1997: 10, 1998: 10, 1999: 11, 2000: 10, 2001: 11, 2002: 10, 2003: 10, 2004: 10, 2005: 12, 2006: 11, 2007: 10, 2008: 11, 2009: 12, 2010: 11, 2011: 10, 2012: 11, 2013: 12, 2014: 11, 2015: 11, 2016: 10, 2017: 10, 2018: 11, 2019: 10};
+  1987: 10, 1995: 12, 1997: 10, 1998: 10, 1999: 11, 2000: 10, 2001: 11, 2002: 10, 2003: 10, 2004: 10, 2005: 12, 2006: 11, 2007: 10, 2008: 11, 2009: 12, 2010: 11, 2011: 10, 2012: 11, 2013: 12, 2014: 11, 2015: 11, 2016: 10, 2017: 10, 2018: 11, 2019: 10, 2020: 11, 2021: 10, 2022: 10, 2023: 11, 2024: 11, 2025: 10};
 const SZ = 'https://www.math.u-szeged.hu/tagok/mmaroti/schweitzer/';
 assert.deepEqual(data.years.map(y => y.year), Object.keys(expected).map(Number));
 assert.equal(data.problem_count, Object.values(expected).reduce((a, b) => a + b, 0));
