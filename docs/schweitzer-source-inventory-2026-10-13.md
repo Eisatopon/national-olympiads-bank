@@ -38,3 +38,29 @@ The society explicitly states that **there is no official competition or awards 
 ## 1950 special handling — two rounds (verified from introductory historical volume)
 
 The historical 1949–1961 volume explicitly states that the poor results of the first **1950** four-hour contest led to a separately announced **Second Round** with modified rules, still in 1950. For import, keep both as distinct sessions (`day: 1` and `day: 2`, with documented day/session meaning) under the same year; do not treat an independently found 9-question compilation as necessarily covering both rounds. Source: https://real-eod.mtak.hu/14558/1/AkademiaiKiado_007070.pdf, introductory historical text around printed page 8. Actual complete problem lists for both rounds are **not yet verified**. Do not publish a 1950 grid year until the original source pages have been checked visually.
+
+
+## PRIMARY HISTORICAL VOLUME NOW ACCESSIBLE — 2026-10-13
+
+The owner supplied the **complete legible 76 MB original English 1968 volume**, `AkademiaiKiado_007070.pdf` (268 PDF pages). Earlier assertions that the source cannot be opened are now **obsolete**. The original PDF has been opened and its chapter and historical totals directly inspected.
+
+- Book, Chapter 1 **Problems of the contests**: printed pp. 11–32; **PDF pages 15–36** (22 pages); statements appear in chronological order. Chapter 2 begins PDF page 37.
+- Chapter 2 **Results of the contests**: printed p. 33; **PDF page 37**. Authoritative full year counts:
+  - 1949: 8
+  - 1950/I: 10; 1950/II: 9 (**19 combined**, preserve rounds)
+  - 1951: 17
+  - 1952: 10
+  - 1953: 10
+  - 1954: 10
+  - 1955: 10
+  - 1956: 10
+  - 1957: 10
+  - 1958: 11
+  - 1959: 10
+  - 1960: 10
+  - 1961: 10
+  - **TOTAL: 145 numbered statements in 1949–1961**.
+
+Statements continue across page boundaries. The source has been split locally into (a) a 22-page questions-only PDF, (b) per-year smaller PDFs that may overlap where years share a page, and (c) a machine-readable source index. Those locally generated files are not yet committed into this repository.
+
+**IMPORTANT: Counts and page provenance are now checked from the primary volume; this does not automatically authenticate previously staged secondary-source statement transcriptions.** Re-compare 1949 and 1950 DRAFT JSON word-for-word/formula-for-formula against the visible 1968 pages, including a missing 1950/II problem 2 modulus restriction and precise expressions. Likewise, the 1951 source audit is superseded for source accessibility but does not constitute a completed full-text import. Do not publish until mathematical transcription QA, full-year checks and CI.
