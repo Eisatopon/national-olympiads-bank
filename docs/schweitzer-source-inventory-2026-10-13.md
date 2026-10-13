@@ -34,3 +34,7 @@ The society explicitly states that **there is no official competition or awards 
 - **1992 onward**: https://www.math.u-szeged.hu/tagok/mmaroti/schweitzer/index.html — annual original papers and English editions where available. This list is not evidence of uninterrupted coverage.
 
 **Publication gate:** do not present any 1949–1961 questions as source-checked until the actual source PDF has been read and mathematical typesetting and diagrams compared against the pages. No year-to-year leap or placeholder collection is authorized.
+
+## 1950 special handling — two rounds (verified from introductory historical volume)
+
+The historical 1949–1961 volume explicitly states that the poor results of the first **1950** four-hour contest led to a separately announced **Second Round** with modified rules, still in 1950. For import, keep both as distinct sessions (`day: 1` and `day: 2`, with documented day/session meaning) under the same year; do not treat an independently found 9-question compilation as necessarily covering both rounds. Source: https://real-eod.mtak.hu/14558/1/AkademiaiKiado_007070.pdf, introductory historical text around printed page 8. Actual complete problem lists for both rounds are **not yet verified**. Do not publish a 1950 grid year until the original source pages have been checked visually.
