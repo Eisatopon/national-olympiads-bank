@@ -13,7 +13,7 @@ const SRC = 'https://real-eod.mtak.hu/14558/1/AkademiaiKiado_007070.pdf';
 // Year totals printed in Chapter 2 of the book (1950 had two rounds).
 const expected = {1949: 8, 1950: 19, 1951: 17, 1952: 10, 1953: 10, 1954: 10, 1955: 10, 1956: 10, 1957: 10, 1958: 11, 1959: 10, 1960: 10, 1961: 10,
   // Annual problem papers (Szeged archive / Bolyai Society).
-  1987: 10, 1995: 12, 1997: 10, 1998: 10, 1999: 11, 2000: 10, 2001: 11, 2002: 10, 2003: 10, 2004: 10};
+  1987: 10, 1995: 12, 1997: 10, 1998: 10, 1999: 11, 2000: 10, 2001: 11, 2002: 10, 2003: 10, 2004: 10, 2005: 12, 2006: 11, 2007: 10, 2008: 11, 2009: 12};
 const SZ = 'https://www.math.u-szeged.hu/tagok/mmaroti/schweitzer/';
 assert.deepEqual(data.years.map(y => y.year), Object.keys(expected).map(Number));
 assert.equal(data.problem_count, Object.values(expected).reduce((a, b) => a + b, 0));
@@ -72,6 +72,8 @@ assert.ok(get(1960, 6).problem.includes('n_k^{\\frac{1}{2^k}}'));
 assert.ok(get(1955, 4).problem.includes('p^\\alpha = q^\\beta + r^\\alpha'));
 // 2001 P8: the Hungarian original defines A o B = sqrt(A) B sqrt(A) (the unofficial English sheet has sqrt(B)).
 assert.ok(get(2001, 8).problem.includes('A \\circ B = \\sqrt A B\\sqrt A'));
+// 2008 P8 refers to the Sierpinski triangle figure cropped from the Hungarian paper.
+assert.ok(get(2008, 8).problem.endsWith('images/schw_2008_p8_fig.png') && fs.existsSync('images/schw_2008_p8_fig.png'));
 assert.match(html, /key: 'schw'.*file: 'undergraduate\/Schweitzer-problems\.json'.*scope: 'undergraduate'/);
 const ctx = {};
 vm.createContext(ctx);
