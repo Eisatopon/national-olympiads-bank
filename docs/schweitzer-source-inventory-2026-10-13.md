@@ -23,3 +23,14 @@ The society explicitly states that **there is no official competition or awards 
 6. Rebuild runtime metadata, run Python and Node validation, inspect rendered MathJax and figures, then publish and confirm GitHub Actions and Pages.
 
 **Status as of 2026-10-13:** Official sources identified and inventoried. Source PDFs were not accessible to this work session for reliable line-by-line and diagram verification. Consequently no contest problems have been published and no new grid row has been added. This document deliberately does not assert completeness.
+
+
+## Chronological source acquisition update (13 October 2026)
+
+**Start year: 1949, not 2022.** The complete 2022 translation remains a separate staged draft and is not evidence of complete historical coverage.
+
+- **1949–1961 primary edited book, digitized by the Library and Information Centre of the Hungarian Academy of Sciences**: https://real-eod.mtak.hu/14558/1/AkademiaiKiado_007070.pdf — *Contests in Higher Mathematics, Hungary, 1949–1961: In Memoriam Miklós Schweitzer* (Akadémiai Kiadó, 1968; English). This is the identified primary source for the first chronological batch. The PDF is approximately 79 MB and could not be downloaded in the current execution environment. Its individual formulas and problem counts have therefore **not** yet been verified.
+- **1962–1991 follow-on volume**: https://link.springer.com/book/10.1007/978-1-4612-0733-7 — *Contests in Higher Mathematics: Miklós Schweitzer Competitions, 1962–1991* (1995), with a separate chapter *Problems of the Contests*, pp. 1–48.
+- **1992 onward**: https://www.math.u-szeged.hu/tagok/mmaroti/schweitzer/index.html — annual original papers and English editions where available. This list is not evidence of uninterrupted coverage.
+
+**Publication gate:** do not present any 1949–1961 questions as source-checked until the actual source PDF has been read and mathematical typesetting and diagrams compared against the pages. No year-to-year leap or placeholder collection is authorized.
