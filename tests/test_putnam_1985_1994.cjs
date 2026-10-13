@@ -78,8 +78,8 @@ assert.deepEqual(newest.problems.map(p=>p.number),['A1','A2','A3','A4','A5','A6'
 assert.ok(newest.problems.every(p=>p.problem.trim().length>=30&&!Object.hasOwn(p,'solution')&&p.statement_verified===false&&(p.problem.match(/\$/g)||[]).length%2===0));
 const html = fs.readFileSync('index.html','utf8');
 assert.ok(html.includes("key: 'put', name: 'Putnam'"));
-assert.ok(html.includes("file: 'undergraduate/Putnam-1985-2025-review.json'"));
+assert.ok(html.includes("file: 'undergraduate/Putnam-problems.json'"));
 assert.ok(html.includes("if (key === 'put') return {"));
-assert.ok(html.includes("c.key === 'put' ? 492"));
+assert.ok(html.includes("c.key === 'put' ? 732"));
 assert.ok(html.includes("loadCountry('put')"));
-console.log('Putnam 1985-2025: 492 statements and Undergraduate grid registration validated.');
+console.log('Putnam 1985-2025: 492 preserved recent statements and expanded Undergraduate grid registration validated.');

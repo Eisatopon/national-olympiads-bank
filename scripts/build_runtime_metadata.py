@@ -62,6 +62,8 @@ def build_collections():
     src = dict(load('collections.json')['collections'])
     src.update((load('smmc-statement-checks.json') or {}).get('collections', {}))
     src.update((load('vjimc-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
+    src.update((load('putnam-statement-checks.json') or {}).get('collections', {}))
     out = {}
     for file in sorted(src):
         meta = src[file]
@@ -101,7 +103,7 @@ def build_manifest():
     The counts must equal what index.html derives from the full file
     (normalizeYears / normalizeUsa)."""
     out = {}
-    for path in sorted([*ROOT.glob('*-problems.json'), ROOT / 'undergraduate/Vojtech-Jarnik-problems.json', ROOT / 'undergraduate/Simon-Marais-problems.json']):
+    for path in sorted([*ROOT.glob('*-problems.json'), ROOT / 'undergraduate/Vojtech-Jarnik-problems.json', ROOT / 'undergraduate/Simon-Marais-problems.json', ROOT / 'undergraduate/Putnam-problems.json']):
         raw = json.loads(path.read_text(encoding='utf-8'))
         years = {}
         if isinstance(raw.get('data'), dict):  # older USA TSTST schema

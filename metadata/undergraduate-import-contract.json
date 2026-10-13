@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "section": "undergraduate",
   "purpose": "Strict, persistent import targets; entries only become public after original statement transcription and classification are verified. Do not substitute source URLs or blank strings for problem statements.",
   "collections": [
@@ -15,12 +15,14 @@
     },
     {
       "id": "put",
-      "file": "Putnam-problems.json",
+      "file": "undergraduate/Putnam-problems.json",
       "competition": "William Lowell Putnam Mathematical Competition",
       "first_year": 1938,
       "last_archived_year": 2025,
       "identifier_rule": "Use original paper numbering; do not impose A1–B6 before 1985; retain distinct 1958 examinations; no invented events for 1943–1945",
-      "source_registry": "metadata/putnam-historical-1938-2025.json"
+      "source_registry": "metadata/putnam-historical-1938-2025.json",
+      "publication_status": "published_1965_2025_with_per_record_source_status",
+      "published_first_year": 1965
     },
     {
       "id": "seemous",
@@ -81,5 +83,5 @@
     "No unverified original year or problem count",
     "Do not affect National/Regional/International/Tournaments grids"
   ],
-  "state": "partial_import_vjimc_and_smmc_published"
+  "state": "partial_import_vjimc_smmc_and_putnam_published"
 }

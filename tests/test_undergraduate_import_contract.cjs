@@ -73,6 +73,18 @@ for(const c of v.collections){
      assert.ok(!/\[(MATH|FIGURE)_REQUIRES_REVIEW\]/.test(p.problem),'Unresolved problem placeholder '+id);
    }
 
+ }else if(c.id==='put'){
+   const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
+   assert.equal(imported.problem_count,732);
+   assert.equal(imported.years.length,61);
+   assert.equal(imported.years.flatMap(y=>y.problems).filter(p=>p.statement_verified).length,240);
+   assert.ok(imported.years.filter(y=>y.year<1985).every(y=>y.problems.every(p=>p.statement_verified&&p.category)));
+ }else if(c.id==='put'){
+   const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
+   assert.equal(imported.problem_count,732);
+   assert.equal(imported.years.length,61);
+   assert.equal(imported.years.flatMap(y=>y.problems).filter(p=>p.statement_verified).length,240);
+   assert.ok(imported.years.filter(y=>y.year<1985).every(y=>y.problems.every(p=>p.statement_verified&&p.category)));
  }else if(c.id==='vjimc'){
    const imported=JSON.parse(fs.readFileSync(c.file,'utf8'));
    assert.equal(imported.problem_count,261);
@@ -90,5 +102,5 @@ for(const c of v.collections){
 assert.ok(v.required_problem_fields.includes('problem'));
 assert.ok(v.required_problem_fields.includes('topics'));
 assert.ok(v.required_problem_fields.includes('problem_dna'));
-assert.equal(v.state,'partial_import_vjimc_and_smmc_published');
+assert.equal(v.state,'partial_import_vjimc_smmc_and_putnam_published');
 console.log('Five full-text Undergraduate targets, correct historical starts and stable source metadata validated.');
