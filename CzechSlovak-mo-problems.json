@@ -6,19 +6,19 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $a,b,c$ be positive rational numbers with $\\sqrt{a}+\\sqrt{b}=c$. Prove that $\\sqrt{a}$ and $\\sqrt{b}$ are rational."
+          "problem": "If $a,b$ are positive rational numbers, prove that the relation $$\\sqrt{a}+\\sqrt{b}=c,$$ where $c$ is a rational number, implies that $\\sqrt{a},\\sqrt{b}$ are also rational numbers."
         },
         {
           "number": 2,
-          "problem": "A triangular table of positive integers $a_{ij}$ has $2i+1$ entries $a_{i1},\\ldots,a_{i,2i+1}$ in its $i$-th row. The first row $a_{11},a_{12},a_{13}$ consists of odd numbers only, and for $i>1$, $j\\geq 1$ $$a_{ij}=a_{i-1,j-2}+a_{i-1,j-1}+a_{i-1,j},$$ where terms whose second index is out of range are taken to be zero (e.g. $a_{22}=0+a_{11}+a_{12}$ and $a_{37}=a_{25}+0+0$). Prove that for every $i>1$ some entry $a_{ij}$, $j\\in\\{1,\\ldots,2i+1\\}$, is even."
+          "problem": "A table of numbers $$\\begin{array}{ccccccc} & & a_1 & b_1 & c_1 & & \\\\ & a_2 & b_2 & c_2 & d_2 & e_2 & \\\\ a_3 & b_3 & c_3 & d_3 & e_3 & f_3 & g_3\\\\ & & & \\cdots & & & \\end{array}$$ is formed as follows: the first row contains three odd numbers. Every number of each further row equals the sum of the three neighbouring numbers of the preceding row, the middle one of which stands above the number considered; if one of these three numbers is missing in the table, it is replaced by zero. Prove that, starting with the second row, every row contains at least one even number."
         },
         {
           "number": 3,
-          "problem": "$ABCD$ is a convex quadrilateral with $AB=CD$, and $R,S$ are the midpoints of $AD$ and $BC$. Rays $AU$ and $DV$ are drawn parallel to the ray $RS$ and pointing in the same direction. Prove that $\\angle BAU=\\angle CDV$."
+          "problem": "Let $ABCD$ be a convex quadrilateral with no two sides parallel, in which $AB=CD$, and let $R,S$ be the midpoints of the sides $AD$, $BC$. Construct the rays $AU$, $DV$ parallel to the ray $RS$ and pointing in the same direction as it. Prove that $$\\angle BAU=\\angle CDV.$$"
         },
         {
           "number": 4,
-          "problem": "Let $p,q$ be positive integers. A rectangle $ABCD$ with sides $p$ and $q$ consists of $pq$ unit squares. How many of these squares does the diagonal $AC$ cross?"
+          "problem": "The dimensions of a rectangle $ABCD$ are positive integers $p,q$; the rectangle is divided into $pq$ unit squares. Determine the number of those unit squares through whose interior the diagonal $AC$ passes, in the case that the numbers $p,q$ are\n\na) coprime,\n\nb) not coprime."
         }
       ]
     },
@@ -27,7 +27,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find the locus of the complex numbers $z$ satisfying $$z+\\bar z=a\\cdot|z|,$$ where $a\\in\\mathbb{R}$ is given."
+          "problem": "In the plane of complex numbers, determine the figure formed by the images of the numbers $Z$ satisfying $$Z+\\overline{Z}=a\\cdot|Z|,$$ where $\\overline{Z}$ is the complex conjugate of $Z$ and $a$ is a given real number. Carry out the discussion for all values of $a$."
         },
         {
           "number": 2,
@@ -52,15 +52,15 @@
         },
         {
           "number": 2,
-          "problem": "Let $a,b$ be complex numbers. Prove that if the roots of the equation $z^2+az+b=0$ and $0$ form a triangle with a right angle at the origin, then $a^2=2b\\neq 0$. Does the converse hold?"
+          "problem": "Let $a,b$ be complex numbers. Prove that if the images of the roots of the equation $$Z^2+aZ+b=0$$ in the plane of complex numbers form, together with the image of the number $0$, an isosceles right triangle with the right angle at the origin, then $a^2=2b\\neq 0$.\n\nDetermine whether the statement can be reversed."
         },
         {
           "number": 3,
-          "problem": "Prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$"
+          "problem": "Without using logarithm tables, prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$ (Here $\\log_A B$ denotes the logarithm of the number $B$ to the base $A$.)"
         },
         {
           "number": 4,
-          "problem": "A cube $ABCDA'B'C'D'$ is given (with $AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let $X$ be an interior point of the segment $AB$ and $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\n(a) Let $M=B'Y\\cap D'X$. Find the locus of the points $M$.\n\n(b) Is there a quadrilateral $B'D'YX$ whose diagonals divide each other in the ratio $1:2$?"
+          "problem": "A cube $ABCDA'B'C'D'$ is given ($AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let a point $X$ lie inside the segment $AB$, and denote by $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\na) What figure is formed by the intersection of the diagonals of the quadrilateral $B'D'YX$ as the point $X$ runs through the interior of the edge $AB$?\n\nb) Among these quadrilaterals $B'D'YX$, determine the one whose diagonals divide each other in the ratio $1:2$."
         }
       ]
     },
@@ -73,7 +73,7 @@
         },
         {
           "number": 2,
-          "problem": "$S_1,S_2$ are concentric spheres with radii $a<b$. $ABCDA'B'C'D'$ is a square prism (with square bases $ABCD$, $A'B'C'D'$ and $AA'\\parallel BB'\\parallel CC'\\parallel DD'$) such that $A,B,C,D\\in S_2$, the plane $A'B'C'D'$ is tangent to $S_1$, and $\\frac{AB}{AA'}=\\frac{a}{b}$. Find $AB$ and $AA'$. How many such prisms are there (up to congruence)?"
+          "problem": "Two concentric spheres $\\mathbf{K}_1$ with radius $a$ and $\\mathbf{K}_2$ with radius $b$ are given, where $a<b$. Let $ABCDA'B'C'D'$ be a right prism with square base $ABCD$ ($AA'\\parallel BB'\\parallel CC'\\parallel DD'$) whose vertices $A,B,C,D$ lie on the sphere $\\mathbf{K}_2$, while the plane $A'B'C'D'$ is tangent to the sphere $\\mathbf{K}_1$. Further let $$\\frac{AB}{AA'}=\\frac{a}{b}.$$ Compute the dimensions of this prism. How many such prisms are there (up to congruence)?"
         },
         {
           "number": 3,
@@ -94,7 +94,7 @@
         },
         {
           "number": 2,
-          "problem": "A convex quadrilateral $ABCD$ lies in a plane $\\varrho$, $E=AC\\cap BD$, and $V\\notin\\varrho$ is a point. Find points $A',B',C',D'$ on the rays $VA,VB,VC,VD$ such that $E,A',B',C',D'$ are coplanar and $A'B'C'D'$ is a parallelogram. Discuss the conditions of solvability."
+          "problem": "A convex quadrilateral $ABCD$ whose diagonals intersect at a point $E$ is given in a plane $\\varrho$. A point $V$ not lying in $\\varrho$ is given. In the interiors of the rays $VA$, $VB$, $VC$, $VD$ construct points $A'$, $B'$, $C'$, $D'$, respectively, such that they lie in one plane $\\sigma$ together with the point $E$ and the quadrilateral $A'B'C'D'$ is a parallelogram. Discuss the solvability of the problem. Carry out a sketch of the construction in free parallel projection."
         },
         {
           "number": 3,
@@ -115,7 +115,7 @@
         },
         {
           "number": 2,
-          "problem": "$ABCDV$ is a right square pyramid with apex $V$ and base $ABCD$. Let $d=\\frac{AB}{2}$ and $\\varphi$ the dihedral angle between the planes $VAD$ and $ABC$.\n\n(1) Consider the line $XY$ joining the skew lines $VA$ and $BC$, with $X$ on $VA$ and $Y$ on $BC$. Describe the construction of the line $XY$ for which the segment $XY$ is shortest, and find its length in terms of $d$ and $\\varphi$.\n\n(2) Find the distance $v=VX$ in terms of $d$ and $\\varphi$."
+          "problem": "A regular quadrilateral pyramid with apex $V$ and base $ABCD$ is given; let $d=\\frac{1}{2}AB$ and let $\\varphi$ be the angle between the planes $VAD$ and $ABC$, so that $0^\\circ<\\varphi<90^\\circ$.\n\na) Sketch the construction of the shortest transversal $XY$ of the skew lines $VA$, $BC$, where $X$ is a point of the line $VA$ and $Y$ a point of the line $BC$. Compute the length of the transversal $XY$ in terms of the given numbers $d,\\varphi$.\n\nb) Compute the distance $v$ of the points $V$, $X$ in terms of the given numbers $d,\\varphi$ (note for which $\\varphi$ the point $X$ falls inside the segment $VA$ and for which it falls on its extension beyond the point $V$)."
         },
         {
           "number": 3,
@@ -123,7 +123,7 @@
         },
         {
           "number": 4,
-          "problem": "A convex angle $POQ$, an interior point $M$ of it and a number $m>0$ are given. Construct a trapezoid $ABCD$ such that (1) $A,D$ lie on the ray $OP$ and $B,C$ on the ray $OQ$, (2) the diagonals $AC$ and $BD$ meet at $M$, and (3) $AB=m$. Prove that the construction is correct and discuss the conditions of solvability."
+          "problem": "A convex angle $POQ$ and a point $M$ inside this angle are given; further let a positive number $m$ be given. Construct a trapezoid $ABCD$ with the following three properties:\n\n1. The vertices $A$, $D$ lie on the ray $OP$ and the vertices $B$, $C$ lie on the ray $OQ$.\n\n2. The point $M$ is the intersection of the diagonals $AC$, $BD$.\n\n3. $AB=m$.\n\nProve the correctness of the construction and discuss the solvability of the problem."
         }
       ]
     },
@@ -136,7 +136,7 @@
         },
         {
           "number": 2,
-          "problem": "Construct a triangle $ABC$ given the angle $BCA$, the altitude $h_c$ and the median $m_c$. Discuss the conditions of solvability."
+          "problem": "Construct a triangle $ABC$ if the length of the altitude $v_c$, the length of the median $t_c$ and the size of the angle $\\gamma$ are given."
         },
         {
           "number": 3,
@@ -195,7 +195,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "In the infinite sequence $$1,2,2,3,3,3,4,4,4,4,5,\\ldots$$ each positive integer $n$ appears $n$ times in a row. Find the $1000$-th term of the sequence."
+          "problem": "The sequence $$1,\\ 2,\\ 2,\\ 3,\\ 3,\\ 3,\\ 4,\\ 4,\\ 4,\\ 4,\\ 5,\\ \\ldots$$ is given. Compute its thousandth term."
         },
         {
           "number": 2,
@@ -203,11 +203,11 @@
         },
         {
           "number": 3,
-          "problem": "Two cyclists start at the same time in opposite directions on a circular track, the first riding at a constant $c_1$ metres per second and the second at $c_2$ metres per second. How many times have they met when the first cyclist completes $n$ laps? Compute the answer for $c_1=10$, $c_2=7$, $n=11$."
+          "problem": "Two cyclists start simultaneously from the same place of a circular track and ride on this track in opposite directions, the first with a constant speed of $c_1$ m/s, the second with a constant speed of $c_2$ m/s. How many times do they meet during the time in which the first cyclist rides around the circular track $n$ times?\n\nCarry out the computation for $c_1=10$, $c_2=7$, $n=11$."
         },
         {
           "number": 4,
-          "problem": "$ABCD$ is a unit square and $XYZ$ a variable equilateral triangle with $X,Z$ on the rays $AB$, $DC$ respectively and $Y$ on the segment $AD$. Express the area of $XYZ$ in terms of $x=AX$ and find its maximum and minimum."
+          "problem": "A square $ABCD$ with side length $1$ is given. The vertex $X$ of a variable equilateral triangle $XYZ$ lies on the ray $AB$, the vertex $Y$ on the segment $AD$, and the vertex $Z$ on the ray $DC$.\n\nDetermine how the side length of the triangle $XYZ$ depends on the distance $AX$. From this, compute which of the triangles $XYZ$ has the smallest and which the largest area."
         }
       ]
     },
@@ -224,7 +224,7 @@
         },
         {
           "number": 3,
-          "problem": "Skew lines $PM$ and $QN$ are given with $PM\\perp PQ\\perp QN$. In the plane $\\sigma\\perp PQ$ through the midpoint $O$ of $PQ$ a circle $k$ with centre $O$ and radius $r$ is drawn. Consider all segments $XY$ with $X$ on $PM$ and $Y$ on $QN$ that contain a point of $k$. Prove that all these segments have the same length, and find the locus of the points $X$."
+          "problem": "Two mutually perpendicular skew lines $PM$, $QN$ are given, where the line $PQ$ is perpendicular to each of the two skew lines. In the plane $\\sigma$ perpendicular to the segment $PQ$ and passing through its midpoint $S$, the circle $k=(S,r)$ is given.\n\nProve that every segment $XY$ whose endpoints $X$, $Y$ lie on the skew lines $PM$, $QN$, respectively, and which contains a point of the circle $k$, has the same length; express this length in terms of the radius $r$ and the length $v=PQ$.\n\nWhat figure is formed by the endpoints $X$ of all such segments $XY$?"
         },
         {
           "number": 4,
@@ -266,7 +266,7 @@
         },
         {
           "number": 3,
-          "problem": "Find all values of the parameter $\\alpha\\in[0,2\\pi]$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$ and, if it has a second root $x_2\\neq x_1$, then $x_2\\leq 0$."
+          "problem": "Determine all values of the parameter $\\alpha$ in the interval $[0,2\\pi)$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$, while the other root $x_2$, if it exists and is different from $x_1$, is not positive."
         },
         {
           "number": 4,
@@ -287,11 +287,11 @@
         },
         {
           "number": 3,
-          "problem": "Find all real roots of the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a real parameter."
+          "problem": "Solve in the real numbers the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a given real number. Discuss the solvability with respect to the number $p$."
         },
         {
           "number": 4,
-          "problem": "A hollow cube $ABGCDEPF$ (with square faces $ABGC$, $DEPF$ and $AD\\parallel BE\\parallel GP\\parallel CF$) stands on a table so that its space diagonal $AP=1$ is perpendicular to the table. Water is poured into it, and $x$ denotes the length of the part of $AP$ under water. Express the volume $y$ of the water in terms of $x$ when\n\n(a) $0<x\\leq\\frac{1}{3}$;\n\n(b) $\\frac{1}{3}<x\\leq\\frac{1}{2}$."
+          "problem": "A vessel has the shape of a hollow cube placed so that its space diagonal $AP$ is in a vertical position, and $AP=1$. There is water in the vessel; the part of the space diagonal $AP$ that is submerged in the water has length $x$.\n\nExpress the volume $y$ of the water in the vessel in terms of the number $x$ for these two cases:\n\na) $0<x\\le\\frac{1}{3}$;\n\nb) $\\frac{1}{3}<x\\le\\frac{1}{2}$."
         }
       ]
     },
@@ -304,15 +304,15 @@
         },
         {
           "number": 2,
-          "problem": "Into how many regions do $n$ circles divide the plane if every two of them meet at two points and no point lies on three circles?"
+          "problem": "In the plane, $n$ circles are given, any two of which intersect in exactly two points, and no point of the plane lies on three of these circles. Determine the total number of parts into which the system of circles divides the plane. (For example, three circles with these properties divide the plane into eight parts.)"
         },
         {
           "number": 3,
-          "problem": "A square $ABCD$ with side $s=1$ and centre $S$ is given. Points $E,F$ lie on the rays opposite to $CB$ and $DA$, with $CE=a$ and $DF=b$. Find all triangles $XYZ$ with $X,Y,Z$ on the segments $CD$, $AD$, $BC$ respectively such that $E,S,F$ lie on the lines $XY$, $YZ$, $ZX$. Discuss the conditions of solvability in terms of $a$, $b$, $s$ and $x=CX$."
+          "problem": "A square $ABCD$ with centre $S$ and side $s=AB=1$ is given. Further, two points $E$, $F$ are given, lying respectively on the lines $BC$, $AD$ in the interior of the half-plane opposite to $CDA$.\n\nOn the basis of a computation, determine all triangles $XYZ$ whose vertices $X$, $Y$, $Z$ lie respectively on the segments $CD$, $AD$, $BC$ and whose lines $XY$, $YZ$, $ZX$ pass respectively through the points $E$, $S$, $F$. (Remark. By computation determine, for example, the length $CX$.)"
         },
         {
           "number": 4,
-          "problem": "Two triangles $ABC$ and $ABD$ with the common side $c=AB$ are given in space: $ABC$ is right-angled with hypotenuse $AB$ and $ABD$ is equilateral. Let $\\varphi$ be the dihedral angle between the planes $ABC$ and $ABD$.\n\n(1) Find $CD$ in terms of $a=BC$, $b=CA$, $c$ and $\\varphi$.\n\n(2) Find all $\\varphi$ for which the tetrahedron $ABCD$ has four edges of equal length."
+          "problem": "Two triangles $ABC$ and $ABD$ with a common side of length $c$ are placed in space. The triangle $ABC$ is right-angled with hypotenuse $AB$, the triangle $ABD$ is equilateral, and the planes $ABC$, $ABD$ make the angle $\\varphi$.\n\na) Express the distance of the points $C$, $D$ in terms of the side lengths of both triangles and the number $\\varphi$; determine this distance by a construction.\n\nb) Find an angle $\\varphi$ such that the tetrahedron $ABCD$ has four congruent edges."
         }
       ]
     },
@@ -369,12 +369,12 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Five distinct points $O,A,B,C,D$ in the plane satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral with vertices $A,B,C,D$ (in some order) satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and determine when equality holds."
+          "problem": "Five points $O,A,B,C,D$ lie in a plane, and their distances satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral whose vertices are the points $A,B,C,D$ always satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and find when equality holds."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $p$ be a prime. How many sequences $(a_k)_{k\\geq 0}$ are there such that for every positive integer $n$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$"
+          "problem": "Let $p$ be a prime. How many different sequences of positive integers $$a_0,a_1,a_2,\\ldots,a_n,\\ldots$$ are there such that for every positive integer $n=1,2,3,\\ldots$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$"
         },
         {
           "day": 2,
@@ -434,17 +434,17 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Let $a,b,c$ be real numbers. Prove that there are non-negative numbers $x,y,z$ with $xyz\\neq 0$ such that $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$"
+          "problem": "Let $a,b,c$ be real numbers. Prove that there exist non-negative numbers $x,y,z$, not all equal to zero, which satisfy the inequalities $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$"
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "In a triangle $ABC$, points $D,A,B,E$ lie on the line $AB$ in this order with $DA=AB=BE$. Find a necessary and sufficient condition on $a=BC$ and $b=AC$ for the angle $DCE$ to be right."
+          "problem": "For a triangle $ABC$, points $D\\neq B$ and $E\\neq A$ are constructed on the line $AB$ such that $DA=BE=AB$. Find a necessary and sufficient condition on the lengths of the segments $a=BC$, $b=AC$ for a triangle $ABC$ to exist in which the angle $DCE$ is right."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $n\\geq 96$. Prove that for every partition of $\\{2,3,\\ldots,n\\}$ into two sets, one of the sets contains two numbers together with their product. Show that this is false for $n=95$."
+          "problem": "The positive integers $2,3,4,5,\\ldots,n-1,n$ are given, where $n\\geq 96$. Prove that if they are divided arbitrarily into two groups, then in at least one of the groups one can always find two (distinct) numbers together with their product.\\n\\nFind an example showing that the statement does not hold for $n=95$."
         },
         {
           "day": 2,
@@ -454,7 +454,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A triangle $ABC$ is given. Find the locus of the vertices $Z$ of all equilateral triangles $XYZ$ with $X$ on the segment $AB$ and $Y\\neq X$ on the ray $AC$."
+          "problem": "A triangle $ABC$ is given. Choose a point $X$ of the segment $AB$ and a point $Y\\neq X$ of the ray $AC$, and construct in the plane $ABC$ an equilateral triangle $XYZ$. Investigate the set $M$ of the vertices $Z$ of all equilateral triangles $XYZ$ constructed in this way, as the point $X$ runs over the segment $AB$ and the point $Y$ over the ray $AC$. Investigate also the case $\\angle BAC=60^\\circ$."
         },
         {
           "day": 2,
@@ -489,12 +489,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "How many unordered pairs $\\{A,B\\}$ of disjoint subsets of $\\{1,\\ldots,n\\}$ are there?"
+          "problem": "How many pairs of mutually disjoint subsets does a set with $n$ elements have?"
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Two distinct points $A,S$ and positive numbers $d,\\omega$ with $\\omega<180^\\circ$ are given in the plane. For a point $X$ let $X'$ be its image under the counter-clockwise rotation about $S$ through $\\omega$. Construct all points $X$ such that $XX'=d$ and $A$ lies on the segment $XX'$. Discuss the conditions of solvability in terms of $d$, $\\omega$ and $SA$."
+          "problem": "Two distinct points $A,S$ are given in a plane $\\varrho$. Further, positive numbers $d,\\omega$ with $\\omega<180$ are given. Construct all points $X$ of the plane $\\varrho$ with the following property: the rotation in the plane $\\varrho$ about the centre $S$ in the positive sense through the angle $\\omega^\\circ$ takes the point $X$ to a point $X'$ such that $XX'=d$ and the point $A$ lies on the segment $XX'$. What condition must the numbers $d,\\omega$ satisfy for such a point $X$ to exist?"
         }
       ]
     },
@@ -509,7 +509,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "For a tetrahedron $A_1A_2A_3A_4$, the $A_1$-exsphere is the sphere tangent to the planes of all four faces such that $A_1$ and the sphere are separated by the plane $A_2A_3A_4$; the other exspheres are defined similarly, and $\\varrho_1,\\ldots,\\varrho_4$ are their radii. Let $v_i$ be the distance of $A_i$ from the opposite face. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$"
+          "problem": "A tetrahedron is given. Let $v_i$ $(i=1,2,3,4)$ denote its altitudes and $\\varrho_i$ $(i=1,2,3,4)$ the radii of the spheres escribed to this tetrahedron. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$"
         },
         {
           "day": 1,
@@ -524,7 +524,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "For points $P,Q$ of the plane let $P+Q$ be the midpoint of the (possibly degenerate) segment $PQ$, and $P\\cdot Q$ the image of $P$ under the rotation about $Q$ through $+90^\\circ$.\n\n(a) Are these operations commutative?\n\n(b) For two distinct points $A,B$ the equation $Y\\cdot X=(A\\cdot X)+B$ defines a map $X\\mapsto Y$. What is this map?\n\n(c) Construct all fixed points of the map from (b)."
+          "problem": "A plane $\\varrho$ is given. For two points $P,Q$ of $\\varrho$ let $P+Q$ denote the midpoint of the pair $P,Q$, and $P\\cdot Q$ the point of the plane $\\varrho$ obtained by rotating the point $Q$ about the point $P$ through $90^\\circ$ in the positive sense.\\n\\na) Are these operations commutative?\\n\\nb) Two fixed distinct points $A,B$ of the plane $\\varrho$ are given. The equation $$Y\\cdot X=(A\\cdot X)+B$$ determines a map $X\\mapsto Y$. Determine what kind of map it is.\\n\\nc) Construct all fixed points of this map."
         },
         {
           "day": 2,
@@ -574,7 +574,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Let $\\mathbf{T}$ be a triangle of area $1$. Prove that there is a right triangle $\\mathbf{R}$ of area at most $\\sqrt{3}$ with $\\mathbf{T}\\subseteq\\mathbf{R}$."
+          "problem": "Prove that if $\\mathbf{T}$ is an acute triangle of area $1$, then there exists a right triangle whose area does not exceed $\\sqrt{3}$ and which contains the triangle $\\mathbf{T}$."
         },
         {
           "day": 1,
@@ -619,7 +619,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "In a half-plane with boundary line $p$ two points $M,N$ at different distances from $p$ are given. Construct a trapezoid $MNPQ$ of area $MN^2$ with $P,Q\\in p$. Discuss the conditions of solvability."
+          "problem": "In a given half-plane with boundary line $p$, two points $M,N$ are given at different distances from the line $p$. Construct a trapezoid $MNPQ$ whose vertices $P,Q$ lie on the line $p$ and whose area equals the area of the square with side $MN$."
         },
         {
           "day": 2,
@@ -664,7 +664,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "$A_1,\\ldots,A_n$ are distinct collinear points, each coloured with one of four colours, every colour being used at least once. Prove that there is a segment (with endpoints among the points) on which two of the colours occur exactly once and the other two at least once."
+          "problem": "Mutually distinct points $A_1,A_2,\\ldots,A_n$ are given on a line. Each of them is coloured with exactly one of four colours so that every colour is used. Prove that then there exists a segment on this line which contains exactly one point of each of some two of these colours and at least one point of each of the two remaining colours."
         },
         {
           "day": 2,
@@ -689,7 +689,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Find all real triples $(x,y,z)$ satisfying $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$"
+          "problem": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Consider the system of equations $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$\\n\\na) Show that $x=\\sin\\alpha/\\sin\\gamma$, $y=\\sin\\beta/\\sin\\alpha$, $z=\\sin\\gamma/\\sin\\beta$ is a solution of the system.\\n\\nb) Find all solutions of the system."
         },
         {
           "day": 2,
@@ -864,7 +864,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A $1\\times 2$ rectangular piece of paper is placed on an $8\\times 8$ chessboard made of unit squares. A square and the paper overlap if they have a common interior point. Find the maximum number of black squares that can overlap the paper."
+          "problem": "The fields of an $8\\times 8$ chessboard are squares with side of length $3$ cm. A rectangular strip of paper with dimensions $6$ cm by $3$ cm is placed on the chessboard. We say that the strip overlaps a field of the chessboard if it has at least one interior point in common with it. Find the largest number of black fields that the given rectangular strip of paper can overlap."
         },
         {
           "day": 2,
@@ -894,7 +894,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Prove that if the angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic or a trapezoid."
+          "problem": "Prove that if the interior angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic, a trapezoid or a parallelogram."
         },
         {
           "day": 1,
@@ -944,7 +944,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A triangular table has $n$ rows and $n$ columns, its $i$-th row consisting of the cells in columns $1,\\ldots,i$ (so the $i$-th row ends in the $i$-th column, on the diagonal). Some of the numbers $1,2,\\ldots,n$ are written in its cells so that for every $k\\in\\{1,\\ldots,n\\}$ all the numbers $1,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,\\ldots,n$ is written in the last cell of some row."
+          "problem": "A triangular table with $n$ rows and $n$ columns is given (the figure shows it for $n=6$): its $i$-th row consists of the cells in columns $1,\\ldots,i$, so the $i$-th row ends in the $i$-th column. In each cell of the table one of the numbers $1,2,\\ldots,n$ is written so that for every $k\\in\\{1,2,\\ldots,n\\}$ all the numbers $1,2,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,2,\\ldots,n$ is written in the last cell of some row.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_1985_p5_fig.png"
         },
         {
           "day": 2,
@@ -964,27 +964,27 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $P(x)$ be a polynomial with integer coefficients of degree $n\\geq 3$. Prove that if $x_1,\\ldots,x_m$ $(n\\geq m\\geq 3)$ are distinct integers with $P(x_1)=\\cdots=P(x_m)=1$, then $P$ has no integer root."
+          "problem": "Let $m\\geq n\\geq 3$ be positive integers. A polynomial $p$ of degree $m$ with integer coefficients is given such that $p(a_1)=p(a_2)=\\cdots=p(a_n)=1$ for $n$ distinct integers $a_1,a_2,\\ldots,a_n$. Prove that $p$ has no integer root."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "A cross is the solid formed by a unit cube together with the six unit cubes attached to its faces. Prove that the whole space can be partitioned into such crosses."
+          "problem": "Suppose we have infinitely many identical building pieces, each composed of seven cubes (see the figure): a cube together with the six equal cubes attached to its faces. Prove that the whole space can be filled with these pieces without gaps.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_1986_p3_fig.png"
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "$C_1,C_2,C_3$ are points inside a bounded convex planar set $M$. Rays $l_1,l_2,l_3$ issuing from $C_1,C_2,C_3$ divide the complement of $M\\cup l_1\\cup l_2\\cup l_3$ into three regions $D_1,D_2,D_3$. Prove that if convex sets $A$ and $B$ satisfy $A\\cap l_j=\\emptyset=B\\cap l_j$ and $A\\cap D_j\\neq\\emptyset\\neq B\\cap D_j$ for $j=1,2,3$, then $A\\cap B\\neq\\emptyset$."
+          "problem": "In the plane, a bounded convex set $A$ and three pairwise disjoint half-lines with origins in $A$ are given. The complement of the union of these four figures consists of three pairwise disjoint regions. Let $B$ and $C$ be convex sets that are disjoint from all three half-lines, and suppose each of the sets $B$, $C$ has a nonempty intersection with each of the three regions. Prove that the sets $B$ and $C$ have a nonempty intersection."
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "A sequence of positive integers satisfies $a_1=1$ and $a_{n+2}=2a_{n+1}-a_n+2$ for $n\\in\\mathbb{N}$. Prove that for every $n$ there is $m$ such that $a_na_{n+1}=a_m$."
+          "problem": "Let $f$ be a function mapping the set $\\mathbb{N}$ of all positive integers into itself such that $f(1)=1$ and for every $n\\in\\mathbb{N}$ $$f(n+2)=2f(n+1)-f(n)+2.$$ Prove that for every $n\\in\\mathbb{N}$ there exists $m\\in\\mathbb{N}$ such that $$f(n)f(n+1)=f(m).$$"
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "A set $M\\subset\\mathbb{N}$ has the property that any two numbers $m,n\\in M$ satisfy $|m-n|\\geq\\frac{mn}{25}$. Prove that $M$ has at most $9$ elements. Does such a set with $9$ elements exist?"
+          "problem": "Let $A$ be a set of positive integers such that any two distinct elements $x,y$ of it satisfy the inequality $$|x-y|\\geq\\frac{xy}{25}.$$ Prove that the set $A$ contains at most $9$ elements. Decide whether such a nine-element set $A$ exists."
         }
       ]
     },
@@ -994,7 +994,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Given a trapezoid, divide it by a line into two quadrilaterals that are both cyclic with equal circumradii. Discuss the conditions of solvability."
+          "problem": "Divide a given trapezoid into two cyclic quadrilaterals whose circumcircles have the same radius. State the conditions of solvability."
         },
         {
           "day": 1,
@@ -1119,7 +1119,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "In a country any two towns are joined by exactly one one-way road, each road being intended either for cars or for cyclists. Prove that there is a town from which one can reach every other town without changing the means of transport."
+          "problem": "In a country any two towns are joined by exactly one road. Each road is one-way and is intended either only for motor vehicles or only for cyclists. Roads cross only in towns (elsewhere they have grade-separated crossings). Prove that there is a town from which one can travel to any other town without changing the means of transport."
         },
         {
           "day": 2,
@@ -1159,7 +1159,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "$\\mathbb{N}$ is partitioned into three subsets $A_1,A_2,A_3$. Prove that one of them has the following property: there is a positive number $m$ such that for every $k$ the subset contains numbers $a_1<a_2<\\cdots<a_k$ with $a_{j+1}-a_j\\leq m$ for $j=1,\\ldots,k-1$."
+          "problem": "The set $\\mathbb{N}$ of all positive integers is the union of three subsets $A_1,A_2,A_3$. Prove that at least one of them has the following property: there is a positive number $m$ such that for every $k$ one can find in this subset numbers $a_1,a_2,\\ldots,a_k$ with $0<a_{j+1}-a_j\\leq m$ for $1\\leq j\\leq k-1$."
         }
       ]
     },
@@ -1214,7 +1214,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "$AKL$ is a triangle with $\\angle ALK>90^\\circ+\\angle LAK$. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that $K$ lies on the side $BC$, $L$ on the diagonal $AC$, and the lines $AK$ and $BL$ meet at the circumcentre of the trapezoid."
+          "problem": "In the plane, a triangle $AKL$ with $\\angle ALK>90^\\circ+\\angle LAK$ is given. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that the point $K$ lies on the side $BC$, the point $L$ lies on the diagonal $AC$, and the intersection $S$ of the segments $AK$ and $BL$ is the centre of the circle circumscribed to the trapezoid $ABCD$."
         },
         {
           "day": 2,
@@ -1249,7 +1249,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A closed polygonal line consists of $997$ diagonals of a convex $1994$-gon $M$, every vertex of $M$ being an endpoint of exactly one of these diagonals. Each diagonal divides the boundary of $M$ into two parts; the smaller of the numbers of sides of $M$ on the two parts is called the length of the diagonal. Is it possible that\n\n(a) $991$ diagonals have length $3$ and $6$ have length $2$?\n\n(b) $985$ diagonals have length $6$, $4$ have length $8$ and $8$ have length $3$?"
+          "problem": "A convex $1994$-gon $M$ is drawn in the plane, together with some of its diagonals, in such a way that exactly one drawn diagonal issues from each vertex. By the length of a diagonal we mean the number of sides of $M$ that the diagonal cuts off from $M$ (the minimum of the two possible numbers). Let $(d_1,d_2,\\ldots,d_{997})$ be the lengths of the drawn diagonals, arranged in non-increasing order. Decide whether the diagonals can be drawn so that\n\na) $(d_1,d_2,\\ldots,d_{997})=(3,\\ldots,3,2,2,2,2,2,2)$, with $991$ threes followed by six twos;\n\nb) $(d_1,d_2,\\ldots,d_{997})=(8,8,8,8,6,\\ldots,6,3,3,3,3,3,3,3,3)$, with four eights, $985$ sixes and eight threes."
         },
         {
           "day": 2,
@@ -1294,7 +1294,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Points $A,B$ on a circle $k$ with centre $S$ satisfy $\\angle ASB=90^\\circ$. Circles $k_1$ and $k_2$ are tangent to each other at $Z$ and touch $k$ at $A$ and $B$ respectively. A circle $k_3$ inside the angle $ASB$ is internally tangent to $k$ at $C$ and externally tangent to $k_1$ and $k_2$ at $X$ and $Y$. Prove that $\\angle XCY=45^\\circ$."
+          "problem": "Points $A$ and $B$ are given on a circle $k$ with centre $S$ so that the chord $AB$ is seen from $S$ at an angle of $90^\\circ$. Circles $k_1$, $k_2$ touch the circle $k$ internally at the points $A$, $B$ respectively, and moreover touch each other externally at a point $Z$. A circle $k_3$ lying inside the angle $ASB$ touches the circle $k$ (internally) at a point $C$ and touches the circles $k_1$, $k_2$ (externally) at points $X$, $Y$ respectively. Prove that the segment $XY$ is seen from the point $C$ at an angle of $45^\\circ$."
         },
         {
           "day": 2,
@@ -1354,12 +1354,12 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A tetrahedron $ABCD$ is divided into five polyhedra so that each face of the tetrahedron is a face of exactly one of the polyhedra, and any two of the polyhedra intersect in a common vertex, a common edge, a common face, or not at all. What is the least possible total number of faces of the five polyhedra?"
+          "problem": "A tetrahedron $ABCD$ is divided without remainder into five convex polyhedra in such a way that none of its faces is divided and the intersection of any two of the five resulting polyhedra is either a common vertex, or a common edge, or a common face. What is the least possible sum of the numbers of faces of these five polyhedra?"
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "Prove that there is an increasing sequence $a_1,a_2,a_3,\\ldots$ of positive integers such that for every integer $k\\geq 2$ the sequence $(k+a_n)_{n\\in\\mathbb{N}}$ contains only finitely many primes."
+          "problem": "Prove that there exists an increasing sequence $(a_n)_{n=1}^{\\infty}$ of positive integers such that for every positive integer $k\\geq 2$ the sequence $(k+a_n)_{n=1}^{\\infty}$ contains only finitely many primes.\n\nDecide whether there exists an increasing sequence $(a_n)_{n=1}^{\\infty}$ of positive integers such that for every integer $k\\geq 0$ the sequence $(k+a_n)_{n=1}^{\\infty}$ contains only finitely many primes."
         },
         {
           "day": 2,
@@ -1369,7 +1369,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "In a parallelogram $ABCD$ the triangle $ABD$ is acute and $\\angle BAD=\\frac{\\pi}{4}$. Consider all choices of points $K,L,M,N$ on the sides $AB$, $BC$, $CD$, $DA$ such that $KLMN$ is a cyclic quadrilateral whose circumradius equals those of the triangles $ANK$ and $CLM$. Find the locus of the intersection of the diagonals of $KLMN$."
+          "problem": "A parallelogram $ABCD$ is given such that $ABD$ is an acute triangle and $\\angle BAD=45^\\circ$. In the interiors of the sides of the parallelogram one can choose, in various ways, points $K\\in AB$, $L\\in BC$, $M\\in CD$ and $N\\in DA$ so that $KLMN$ is a cyclic quadrilateral whose circumcircle has the same radius as both circumcircles of the triangles $ANK$ and $CLM$. Find the set of intersection points of the diagonals of all such quadrilaterals $KLMN$."
         }
       ]
     },
@@ -1379,7 +1379,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Solve the equation $x\\lfloor x\\lfloor x\\lfloor x\\rfloor\\rfloor\\rfloor=88$ in real numbers."
+          "problem": "Solve the equation $$x\\cdot\\lfloor x\\cdot\\lfloor x\\cdot\\lfloor x\\rfloor\\rfloor\\rfloor=88$$ in the set of positive real numbers, where $\\lfloor a\\rfloor$ denotes the integer part of a real number $a$, i.e. the integer for which $\\lfloor a\\rfloor\\leq a<\\lfloor a\\rfloor+1$. For example, $\\lfloor 3.7\\rfloor=3$ and $\\lfloor 6\\rfloor=6$."
         },
         {
           "day": 1,
@@ -1414,7 +1414,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Brackets may be inserted into the expression $$\\frac{29:28:27:\\cdots:16}{15:14:13:\\cdots:2},$$ always in the same places in the numerator and in the denominator (e.g. $\\frac{(29:28):27:\\cdots:16}{(15:14):13:\\cdots:2}$ is allowed, while $\\frac{(29:28):27:\\cdots:16}{15:(14:13):\\cdots:2}$ is not).\n\n(a) Find the smallest integer value that can be obtained.\n\n(b) Find all integer values that can be obtained."
+          "problem": "Into the numerator and the denominator of the fraction $$\\frac{29:28:27:26:25:24:23:22:21:20:19:18:17:16}{15:14:13:12:11:10:9:8:7:6:5:4:3:2}$$ we may repeatedly insert brackets, always at the same places one below the other.\n\na) Find the smallest possible integer value of the resulting expression.\n\nb) Find all possible integer values of the resulting expression."
         },
         {
           "day": 1,

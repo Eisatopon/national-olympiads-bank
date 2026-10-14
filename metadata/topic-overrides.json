@@ -108860,46 +108860,106 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $a,b,c$ be positive rational numbers with $\\sqrt{a}+\\sqrt{b}=c$. Prove that $\\sqrt{a}$ and $\\sqrt{b}$ are rational.",
-      "statement_sha256": "bb58d2b56d66d59de6357f6a40cf2bec3ca7097760fdf5ac58e9ad31bc7f9bea",
+      "reviewed_statement": "If $a,b$ are positive rational numbers, prove that the relation $$\\sqrt{a}+\\sqrt{b}=c,$$ where $c$ is a rational number, implies that $\\sqrt{a},\\sqrt{b}$ are also rational numbers.",
+      "statement_sha256": "9a2537ee0a2b2a9bc4b18a19750fa17280960870f95204b07b6e338edb9e8bed",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $a,b,c$ be positive rational numbers with $\\sqrt{a}+\\sqrt{b}=c$. Prove that $\\sqrt{a}$ and $\\sqrt{b}$ are rational.",
+          "statement_sha256": "bb58d2b56d66d59de6357f6a40cf2bec3ca7097760fdf5ac58e9ad31bc7f9bea",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1952.0.2": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A triangular table of positive integers $a_{ij}$ has $2i+1$ entries $a_{i1},\\ldots,a_{i,2i+1}$ in its $i$-th row. The first row $a_{11},a_{12},a_{13}$ consists of odd numbers only, and for $i>1$, $j\\geq 1$ $$a_{ij}=a_{i-1,j-2}+a_{i-1,j-1}+a_{i-1,j},$$ where terms whose second index is out of range are taken to be zero (e.g. $a_{22}=0+a_{11}+a_{12}$ and $a_{37}=a_{25}+0+0$). Prove that for every $i>1$ some entry $a_{ij}$, $j\\in\\{1,\\ldots,2i+1\\}$, is even.",
-      "statement_sha256": "e881f122fe529469046c417ed63ce8cb831c143b4f7c4aa3524545866943b6af",
+      "reviewed_statement": "A table of numbers $$\\begin{array}{ccccccc} & & a_1 & b_1 & c_1 & & \\\\ & a_2 & b_2 & c_2 & d_2 & e_2 & \\\\ a_3 & b_3 & c_3 & d_3 & e_3 & f_3 & g_3\\\\ & & & \\cdots & & & \\end{array}$$ is formed as follows: the first row contains three odd numbers. Every number of each further row equals the sum of the three neighbouring numbers of the preceding row, the middle one of which stands above the number considered; if one of these three numbers is missing in the table, it is replaced by zero. Prove that, starting with the second row, every row contains at least one even number.",
+      "statement_sha256": "8f3f6fe1ad0aecad680d0d811d0b946ef9e63f3cacf9b63cc21d18d7395f702c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A triangular table of positive integers $a_{ij}$ has $2i+1$ entries $a_{i1},\\ldots,a_{i,2i+1}$ in its $i$-th row. The first row $a_{11},a_{12},a_{13}$ consists of odd numbers only, and for $i>1$, $j\\geq 1$ $$a_{ij}=a_{i-1,j-2}+a_{i-1,j-1}+a_{i-1,j},$$ where terms whose second index is out of range are taken to be zero (e.g. $a_{22}=0+a_{11}+a_{12}$ and $a_{37}=a_{25}+0+0$). Prove that for every $i>1$ some entry $a_{ij}$, $j\\in\\{1,\\ldots,2i+1\\}$, is even.",
+          "statement_sha256": "e881f122fe529469046c417ed63ce8cb831c143b4f7c4aa3524545866943b6af",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1952.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$ABCD$ is a convex quadrilateral with $AB=CD$, and $R,S$ are the midpoints of $AD$ and $BC$. Rays $AU$ and $DV$ are drawn parallel to the ray $RS$ and pointing in the same direction. Prove that $\\angle BAU=\\angle CDV$.",
-      "statement_sha256": "9f53ad362ab7d41e94aed178cf991d62e1aedf60f5a9eed5e37cd6eb1c80209d",
+      "reviewed_statement": "Let $ABCD$ be a convex quadrilateral with no two sides parallel, in which $AB=CD$, and let $R,S$ be the midpoints of the sides $AD$, $BC$. Construct the rays $AU$, $DV$ parallel to the ray $RS$ and pointing in the same direction as it. Prove that $$\\angle BAU=\\angle CDV.$$",
+      "statement_sha256": "8b5834fbcfd4c886f5aaf364f87a787893ada67f27639e8a0f5207f8b9fea157",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$ABCD$ is a convex quadrilateral with $AB=CD$, and $R,S$ are the midpoints of $AD$ and $BC$. Rays $AU$ and $DV$ are drawn parallel to the ray $RS$ and pointing in the same direction. Prove that $\\angle BAU=\\angle CDV$.",
+          "statement_sha256": "9f53ad362ab7d41e94aed178cf991d62e1aedf60f5a9eed5e37cd6eb1c80209d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1952.0.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p,q$ be positive integers. A rectangle $ABCD$ with sides $p$ and $q$ consists of $pq$ unit squares. How many of these squares does the diagonal $AC$ cross?",
-      "statement_sha256": "d78216bc4cbb0f0159020731ea73e5a1a6bb9c0e804e8577d71c94bff6ba5479",
+      "reviewed_statement": "The dimensions of a rectangle $ABCD$ are positive integers $p,q$; the rectangle is divided into $pq$ unit squares. Determine the number of those unit squares through whose interior the diagonal $AC$ passes, in the case that the numbers $p,q$ are\n\na) coprime,\n\nb) not coprime.",
+      "statement_sha256": "2cbbe4d5e2b0b04858c13b3fd4754a2ed8ebc77dea64d0dc0caac6c06ca50003",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p,q$ be positive integers. A rectangle $ABCD$ with sides $p$ and $q$ consists of $pq$ unit squares. How many of these squares does the diagonal $AC$ cross?",
+          "statement_sha256": "d78216bc4cbb0f0159020731ea73e5a1a6bb9c0e804e8577d71c94bff6ba5479",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1953.0.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find the locus of the complex numbers $z$ satisfying $$z+\\bar z=a\\cdot|z|,$$ where $a\\in\\mathbb{R}$ is given.",
-      "statement_sha256": "a3eba379b74facae51b82bd098dea1b45da5ada60a6003002d29455378031f33",
+      "reviewed_statement": "In the plane of complex numbers, determine the figure formed by the images of the numbers $Z$ satisfying $$Z+\\overline{Z}=a\\cdot|Z|,$$ where $\\overline{Z}$ is the complex conjugate of $Z$ and $a$ is a given real number. Carry out the discussion for all values of $a$.",
+      "statement_sha256": "d6a389f92202625bb9c23102be73cb745b573d1bdc1b21f3fa9047511e56e99b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find the locus of the complex numbers $z$ satisfying $$z+\\bar z=a\\cdot|z|,$$ where $a\\in\\mathbb{R}$ is given.",
+          "statement_sha256": "a3eba379b74facae51b82bd098dea1b45da5ada60a6003002d29455378031f33",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1953.0.2": {
       "topics": [
@@ -108941,28 +109001,64 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $a,b$ be complex numbers. Prove that if the roots of the equation $z^2+az+b=0$ and $0$ form a triangle with a right angle at the origin, then $a^2=2b\\neq 0$. Does the converse hold?",
-      "statement_sha256": "32e7a1075df52330712a5879e7e4944fab717a419f7dad597d8c586b56abbe00",
+      "reviewed_statement": "Let $a,b$ be complex numbers. Prove that if the images of the roots of the equation $$Z^2+aZ+b=0$$ in the plane of complex numbers form, together with the image of the number $0$, an isosceles right triangle with the right angle at the origin, then $a^2=2b\\neq 0$.\n\nDetermine whether the statement can be reversed.",
+      "statement_sha256": "06d89dfdcfeb77ee502f620ccc9c6ad7ef156f0695a2c6eb628a2834b1416e34",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $a,b$ be complex numbers. Prove that if the roots of the equation $z^2+az+b=0$ and $0$ form a triangle with a right angle at the origin, then $a^2=2b\\neq 0$. Does the converse hold?",
+          "statement_sha256": "32e7a1075df52330712a5879e7e4944fab717a419f7dad597d8c586b56abbe00",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1954.0.3": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$",
-      "statement_sha256": "fe963f77b6fc39d719b0fe6d9000ec57c9b50a5abce7df75908dd33e534fadf5",
+      "reviewed_statement": "Without using logarithm tables, prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$ (Here $\\log_A B$ denotes the logarithm of the number $B$ to the base $A$.)",
+      "statement_sha256": "b68bb7c3386297ad452b952b2f7fe95a66e37c412e7071bc94ddc5f89ffad4be",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that $$\\log_2\\pi+\\log_4\\pi<\\frac{5}{2}.$$",
+          "statement_sha256": "fe963f77b6fc39d719b0fe6d9000ec57c9b50a5abce7df75908dd33e534fadf5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1954.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A cube $ABCDA'B'C'D'$ is given (with $AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let $X$ be an interior point of the segment $AB$ and $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\n(a) Let $M=B'Y\\cap D'X$. Find the locus of the points $M$.\n\n(b) Is there a quadrilateral $B'D'YX$ whose diagonals divide each other in the ratio $1:2$?",
-      "statement_sha256": "c495d2596008502d85a96f2147b6d3909be2aa9de9dcf74e801ca053f7bc9b8f",
+      "reviewed_statement": "A cube $ABCDA'B'C'D'$ is given ($AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let a point $X$ lie inside the segment $AB$, and denote by $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\na) What figure is formed by the intersection of the diagonals of the quadrilateral $B'D'YX$ as the point $X$ runs through the interior of the edge $AB$?\n\nb) Among these quadrilaterals $B'D'YX$, determine the one whose diagonals divide each other in the ratio $1:2$.",
+      "statement_sha256": "06a996bde1a28e08c0c0c849a7a366d1097975a1bab7bde04ff5bd8c3d2be26b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A cube $ABCDA'B'C'D'$ is given (with $AA'\\parallel BB'\\parallel CC'\\parallel DD'$). Let $X$ be an interior point of the segment $AB$ and $Y$ the intersection of the edge $AD$ with the plane $B'D'X$.\n\n(a) Let $M=B'Y\\cap D'X$. Find the locus of the points $M$.\n\n(b) Is there a quadrilateral $B'D'YX$ whose diagonals divide each other in the ratio $1:2$?",
+          "statement_sha256": "c495d2596008502d85a96f2147b6d3909be2aa9de9dcf74e801ca053f7bc9b8f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1955.0.1": {
       "topics": [
@@ -108977,10 +109073,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$S_1,S_2$ are concentric spheres with radii $a<b$. $ABCDA'B'C'D'$ is a square prism (with square bases $ABCD$, $A'B'C'D'$ and $AA'\\parallel BB'\\parallel CC'\\parallel DD'$) such that $A,B,C,D\\in S_2$, the plane $A'B'C'D'$ is tangent to $S_1$, and $\\frac{AB}{AA'}=\\frac{a}{b}$. Find $AB$ and $AA'$. How many such prisms are there (up to congruence)?",
-      "statement_sha256": "4392081a8e9a589f54dcea831899859b362b77b791d4a325e1ce270bfb21861f",
+      "reviewed_statement": "Two concentric spheres $\\mathbf{K}_1$ with radius $a$ and $\\mathbf{K}_2$ with radius $b$ are given, where $a<b$. Let $ABCDA'B'C'D'$ be a right prism with square base $ABCD$ ($AA'\\parallel BB'\\parallel CC'\\parallel DD'$) whose vertices $A,B,C,D$ lie on the sphere $\\mathbf{K}_2$, while the plane $A'B'C'D'$ is tangent to the sphere $\\mathbf{K}_1$. Further let $$\\frac{AB}{AA'}=\\frac{a}{b}.$$ Compute the dimensions of this prism. How many such prisms are there (up to congruence)?",
+      "statement_sha256": "58739087e5cc8736cd22fc9450814ee416d85d461980a265dc203be2e2891705",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$S_1,S_2$ are concentric spheres with radii $a<b$. $ABCDA'B'C'D'$ is a square prism (with square bases $ABCD$, $A'B'C'D'$ and $AA'\\parallel BB'\\parallel CC'\\parallel DD'$) such that $A,B,C,D\\in S_2$, the plane $A'B'C'D'$ is tangent to $S_1$, and $\\frac{AB}{AA'}=\\frac{a}{b}$. Find $AB$ and $AA'$. How many such prisms are there (up to congruence)?",
+          "statement_sha256": "4392081a8e9a589f54dcea831899859b362b77b791d4a325e1ce270bfb21861f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1955.0.3": {
       "topics": [
@@ -109013,10 +109121,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A convex quadrilateral $ABCD$ lies in a plane $\\varrho$, $E=AC\\cap BD$, and $V\\notin\\varrho$ is a point. Find points $A',B',C',D'$ on the rays $VA,VB,VC,VD$ such that $E,A',B',C',D'$ are coplanar and $A'B'C'D'$ is a parallelogram. Discuss the conditions of solvability.",
-      "statement_sha256": "b15fdbe83a47692d56e1af7b79b1012fe097d0bddea8af79a5f22c8072a4bdee",
+      "reviewed_statement": "A convex quadrilateral $ABCD$ whose diagonals intersect at a point $E$ is given in a plane $\\varrho$. A point $V$ not lying in $\\varrho$ is given. In the interiors of the rays $VA$, $VB$, $VC$, $VD$ construct points $A'$, $B'$, $C'$, $D'$, respectively, such that they lie in one plane $\\sigma$ together with the point $E$ and the quadrilateral $A'B'C'D'$ is a parallelogram. Discuss the solvability of the problem. Carry out a sketch of the construction in free parallel projection.",
+      "statement_sha256": "0156c8936d50db7fa62bcd4464a783c95009ed28d3809d9896312c809b63a1c6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A convex quadrilateral $ABCD$ lies in a plane $\\varrho$, $E=AC\\cap BD$, and $V\\notin\\varrho$ is a point. Find points $A',B',C',D'$ on the rays $VA,VB,VC,VD$ such that $E,A',B',C',D'$ are coplanar and $A'B'C'D'$ is a parallelogram. Discuss the conditions of solvability.",
+          "statement_sha256": "b15fdbe83a47692d56e1af7b79b1012fe097d0bddea8af79a5f22c8072a4bdee",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1956.0.3": {
       "topics": [
@@ -109049,10 +109169,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$ABCDV$ is a right square pyramid with apex $V$ and base $ABCD$. Let $d=\\frac{AB}{2}$ and $\\varphi$ the dihedral angle between the planes $VAD$ and $ABC$.\n\n(1) Consider the line $XY$ joining the skew lines $VA$ and $BC$, with $X$ on $VA$ and $Y$ on $BC$. Describe the construction of the line $XY$ for which the segment $XY$ is shortest, and find its length in terms of $d$ and $\\varphi$.\n\n(2) Find the distance $v=VX$ in terms of $d$ and $\\varphi$.",
-      "statement_sha256": "1a78337a963932e9ec1602b112bf9ca938e472b0ffca4b9c450a03699830a8f1",
+      "reviewed_statement": "A regular quadrilateral pyramid with apex $V$ and base $ABCD$ is given; let $d=\\frac{1}{2}AB$ and let $\\varphi$ be the angle between the planes $VAD$ and $ABC$, so that $0^\\circ<\\varphi<90^\\circ$.\n\na) Sketch the construction of the shortest transversal $XY$ of the skew lines $VA$, $BC$, where $X$ is a point of the line $VA$ and $Y$ a point of the line $BC$. Compute the length of the transversal $XY$ in terms of the given numbers $d,\\varphi$.\n\nb) Compute the distance $v$ of the points $V$, $X$ in terms of the given numbers $d,\\varphi$ (note for which $\\varphi$ the point $X$ falls inside the segment $VA$ and for which it falls on its extension beyond the point $V$).",
+      "statement_sha256": "ba9eddcab0f5101f84bab461e9441c5b40b424b84445bf70fb04cfa2c736e4e0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$ABCDV$ is a right square pyramid with apex $V$ and base $ABCD$. Let $d=\\frac{AB}{2}$ and $\\varphi$ the dihedral angle between the planes $VAD$ and $ABC$.\n\n(1) Consider the line $XY$ joining the skew lines $VA$ and $BC$, with $X$ on $VA$ and $Y$ on $BC$. Describe the construction of the line $XY$ for which the segment $XY$ is shortest, and find its length in terms of $d$ and $\\varphi$.\n\n(2) Find the distance $v=VX$ in terms of $d$ and $\\varphi$.",
+          "statement_sha256": "1a78337a963932e9ec1602b112bf9ca938e472b0ffca4b9c450a03699830a8f1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1957.0.3": {
       "topics": [
@@ -109067,10 +109199,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A convex angle $POQ$, an interior point $M$ of it and a number $m>0$ are given. Construct a trapezoid $ABCD$ such that (1) $A,D$ lie on the ray $OP$ and $B,C$ on the ray $OQ$, (2) the diagonals $AC$ and $BD$ meet at $M$, and (3) $AB=m$. Prove that the construction is correct and discuss the conditions of solvability.",
-      "statement_sha256": "a0d935129223af21a860256091b75ea122e077dbc0cb77cde01f3c9872d320dd",
+      "reviewed_statement": "A convex angle $POQ$ and a point $M$ inside this angle are given; further let a positive number $m$ be given. Construct a trapezoid $ABCD$ with the following three properties:\n\n1. The vertices $A$, $D$ lie on the ray $OP$ and the vertices $B$, $C$ lie on the ray $OQ$.\n\n2. The point $M$ is the intersection of the diagonals $AC$, $BD$.\n\n3. $AB=m$.\n\nProve the correctness of the construction and discuss the solvability of the problem.",
+      "statement_sha256": "0f49a9cccf1853e4ebf2c94352865592c9de0daafd0366b3d15b39bc58e87837",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A convex angle $POQ$, an interior point $M$ of it and a number $m>0$ are given. Construct a trapezoid $ABCD$ such that (1) $A,D$ lie on the ray $OP$ and $B,C$ on the ray $OQ$, (2) the diagonals $AC$ and $BD$ meet at $M$, and (3) $AB=m$. Prove that the construction is correct and discuss the conditions of solvability.",
+          "statement_sha256": "a0d935129223af21a860256091b75ea122e077dbc0cb77cde01f3c9872d320dd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1958.0.1": {
       "topics": [
@@ -109085,10 +109229,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Construct a triangle $ABC$ given the angle $BCA$, the altitude $h_c$ and the median $m_c$. Discuss the conditions of solvability.",
-      "statement_sha256": "fa3f44214fbd6d3d9d05bbc97e2c212028db798b2183d3809d351cd0b844b707",
+      "reviewed_statement": "Construct a triangle $ABC$ if the length of the altitude $v_c$, the length of the median $t_c$ and the size of the angle $\\gamma$ are given.",
+      "statement_sha256": "b775e0bdc20d2d8d90ac44fc15cffcb6e465d264e08cae3ff2c475769321e61a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Construct a triangle $ABC$ given the angle $BCA$, the altitude $h_c$ and the median $m_c$. Discuss the conditions of solvability.",
+          "statement_sha256": "fa3f44214fbd6d3d9d05bbc97e2c212028db798b2183d3809d351cd0b844b707",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1958.0.3": {
       "topics": [
@@ -109148,10 +109304,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "In the infinite sequence $$1,2,2,3,3,3,4,4,4,4,5,\\ldots$$ each positive integer $n$ appears $n$ times in a row. Find the $1000$-th term of the sequence.",
-      "statement_sha256": "caf941f359f8b9c8d7a26d9fe525bd6dc3a7de1a7d6dba65147c1dd2181eccf3",
+      "reviewed_statement": "The sequence $$1,\\ 2,\\ 2,\\ 3,\\ 3,\\ 3,\\ 4,\\ 4,\\ 4,\\ 4,\\ 5,\\ \\ldots$$ is given. Compute its thousandth term.",
+      "statement_sha256": "0418ccb36609b314e54d51d9330a473111bc903226f762f2aa1272566c34c7df",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "In the infinite sequence $$1,2,2,3,3,3,4,4,4,4,5,\\ldots$$ each positive integer $n$ appears $n$ times in a row. Find the $1000$-th term of the sequence.",
+          "statement_sha256": "caf941f359f8b9c8d7a26d9fe525bd6dc3a7de1a7d6dba65147c1dd2181eccf3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1961.0.2": {
       "topics": [
@@ -109166,19 +109334,43 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Two cyclists start at the same time in opposite directions on a circular track, the first riding at a constant $c_1$ metres per second and the second at $c_2$ metres per second. How many times have they met when the first cyclist completes $n$ laps? Compute the answer for $c_1=10$, $c_2=7$, $n=11$.",
-      "statement_sha256": "b826afa8e2011753a455aee42c71d70bd664d456dc92eb330326743144db70cf",
+      "reviewed_statement": "Two cyclists start simultaneously from the same place of a circular track and ride on this track in opposite directions, the first with a constant speed of $c_1$ m/s, the second with a constant speed of $c_2$ m/s. How many times do they meet during the time in which the first cyclist rides around the circular track $n$ times?\n\nCarry out the computation for $c_1=10$, $c_2=7$, $n=11$.",
+      "statement_sha256": "ad4fb313c2e2f96bbbd50d266ee5464404835cb67f1c3a132095b6dab1206e94",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Two cyclists start at the same time in opposite directions on a circular track, the first riding at a constant $c_1$ metres per second and the second at $c_2$ metres per second. How many times have they met when the first cyclist completes $n$ laps? Compute the answer for $c_1=10$, $c_2=7$, $n=11$.",
+          "statement_sha256": "b826afa8e2011753a455aee42c71d70bd664d456dc92eb330326743144db70cf",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1961.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$ABCD$ is a unit square and $XYZ$ a variable equilateral triangle with $X,Z$ on the rays $AB$, $DC$ respectively and $Y$ on the segment $AD$. Express the area of $XYZ$ in terms of $x=AX$ and find its maximum and minimum.",
-      "statement_sha256": "84b4af0beff81300f38cdc88044a371535e79a243ad1da97257d68858453ea99",
+      "reviewed_statement": "A square $ABCD$ with side length $1$ is given. The vertex $X$ of a variable equilateral triangle $XYZ$ lies on the ray $AB$, the vertex $Y$ on the segment $AD$, and the vertex $Z$ on the ray $DC$.\n\nDetermine how the side length of the triangle $XYZ$ depends on the distance $AX$. From this, compute which of the triangles $XYZ$ has the smallest and which the largest area.",
+      "statement_sha256": "e916adc78c82fdac1affe515b23224540ae4c897b8639ae6a9e01d06728faa9f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$ABCD$ is a unit square and $XYZ$ a variable equilateral triangle with $X,Z$ on the rays $AB$, $DC$ respectively and $Y$ on the segment $AD$. Express the area of $XYZ$ in terms of $x=AX$ and find its maximum and minimum.",
+          "statement_sha256": "84b4af0beff81300f38cdc88044a371535e79a243ad1da97257d68858453ea99",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1962.0.1": {
       "topics": [
@@ -109202,10 +109394,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Skew lines $PM$ and $QN$ are given with $PM\\perp PQ\\perp QN$. In the plane $\\sigma\\perp PQ$ through the midpoint $O$ of $PQ$ a circle $k$ with centre $O$ and radius $r$ is drawn. Consider all segments $XY$ with $X$ on $PM$ and $Y$ on $QN$ that contain a point of $k$. Prove that all these segments have the same length, and find the locus of the points $X$.",
-      "statement_sha256": "7c9333df8652009908e59bf4ec08bdb7d6401ccaea4e829cdaa0da02a4046628",
+      "reviewed_statement": "Two mutually perpendicular skew lines $PM$, $QN$ are given, where the line $PQ$ is perpendicular to each of the two skew lines. In the plane $\\sigma$ perpendicular to the segment $PQ$ and passing through its midpoint $S$, the circle $k=(S,r)$ is given.\n\nProve that every segment $XY$ whose endpoints $X$, $Y$ lie on the skew lines $PM$, $QN$, respectively, and which contains a point of the circle $k$, has the same length; express this length in terms of the radius $r$ and the length $v=PQ$.\n\nWhat figure is formed by the endpoints $X$ of all such segments $XY$?",
+      "statement_sha256": "7c8a5b6932e64fb1137dab3510ba5985adb5b0e3f0952e224200b415db9050c8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Skew lines $PM$ and $QN$ are given with $PM\\perp PQ\\perp QN$. In the plane $\\sigma\\perp PQ$ through the midpoint $O$ of $PQ$ a circle $k$ with centre $O$ and radius $r$ is drawn. Consider all segments $XY$ with $X$ on $PM$ and $Y$ on $QN$ that contain a point of $k$. Prove that all these segments have the same length, and find the locus of the points $X$.",
+          "statement_sha256": "7c9333df8652009908e59bf4ec08bdb7d6401ccaea4e829cdaa0da02a4046628",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1962.0.4": {
       "topics": [
@@ -109274,10 +109478,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all values of the parameter $\\alpha\\in[0,2\\pi]$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$ and, if it has a second root $x_2\\neq x_1$, then $x_2\\leq 0$.",
-      "statement_sha256": "bac8cb95bed90f4ee4288e5620d1aac34be8080e19e4798e56d7308ed692c45f",
+      "reviewed_statement": "Determine all values of the parameter $\\alpha$ in the interval $[0,2\\pi)$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$, while the other root $x_2$, if it exists and is different from $x_1$, is not positive.",
+      "statement_sha256": "2d43a658a3aa16cd0c8d8db05abb5614af12aeb967c4eb77d8d5c2db09e11793",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all values of the parameter $\\alpha\\in[0,2\\pi]$ for which the equation $$(2\\cos\\alpha-1)x^2+4x+4\\cos\\alpha+2=0$$ has a positive root $x_1$ and, if it has a second root $x_2\\neq x_1$, then $x_2\\leq 0$.",
+          "statement_sha256": "bac8cb95bed90f4ee4288e5620d1aac34be8080e19e4798e56d7308ed692c45f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1964.0.4": {
       "topics": [
@@ -109310,19 +109526,43 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all real roots of the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a real parameter.",
-      "statement_sha256": "da6be09c25550944fd638904dcd77100b3fef534aaa907638915cd4900914b42",
+      "reviewed_statement": "Solve in the real numbers the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a given real number. Discuss the solvability with respect to the number $p$.",
+      "statement_sha256": "7926626b898e540f827f58e2f1086e22b65a36d1e979fe42de7315daddfa07f7",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all real roots of the equation $$\\sqrt{x^2-2x-1}+\\sqrt{x^2+2x-1}=p,$$ where $p$ is a real parameter.",
+          "statement_sha256": "da6be09c25550944fd638904dcd77100b3fef534aaa907638915cd4900914b42",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1965.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A hollow cube $ABGCDEPF$ (with square faces $ABGC$, $DEPF$ and $AD\\parallel BE\\parallel GP\\parallel CF$) stands on a table so that its space diagonal $AP=1$ is perpendicular to the table. Water is poured into it, and $x$ denotes the length of the part of $AP$ under water. Express the volume $y$ of the water in terms of $x$ when\n\n(a) $0<x\\leq\\frac{1}{3}$;\n\n(b) $\\frac{1}{3}<x\\leq\\frac{1}{2}$.",
-      "statement_sha256": "a54107af543caa1d056b20524150f77999a7b1f20db5fad62b5ca110b03bef0e",
+      "reviewed_statement": "A vessel has the shape of a hollow cube placed so that its space diagonal $AP$ is in a vertical position, and $AP=1$. There is water in the vessel; the part of the space diagonal $AP$ that is submerged in the water has length $x$.\n\nExpress the volume $y$ of the water in the vessel in terms of the number $x$ for these two cases:\n\na) $0<x\\le\\frac{1}{3}$;\n\nb) $\\frac{1}{3}<x\\le\\frac{1}{2}$.",
+      "statement_sha256": "4ad6de48d323157071c184c4293728a224a131f66d972803a63210512af163bf",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A hollow cube $ABGCDEPF$ (with square faces $ABGC$, $DEPF$ and $AD\\parallel BE\\parallel GP\\parallel CF$) stands on a table so that its space diagonal $AP=1$ is perpendicular to the table. Water is poured into it, and $x$ denotes the length of the part of $AP$ under water. Express the volume $y$ of the water in terms of $x$ when\n\n(a) $0<x\\leq\\frac{1}{3}$;\n\n(b) $\\frac{1}{3}<x\\leq\\frac{1}{2}$.",
+          "statement_sha256": "a54107af543caa1d056b20524150f77999a7b1f20db5fad62b5ca110b03bef0e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1966.0.1": {
       "topics": [
@@ -109337,28 +109577,64 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Into how many regions do $n$ circles divide the plane if every two of them meet at two points and no point lies on three circles?",
-      "statement_sha256": "6811df693758d0d6846a514e968c9052fbb7b17ee494e0107130642b7a112d69",
+      "reviewed_statement": "In the plane, $n$ circles are given, any two of which intersect in exactly two points, and no point of the plane lies on three of these circles. Determine the total number of parts into which the system of circles divides the plane. (For example, three circles with these properties divide the plane into eight parts.)",
+      "statement_sha256": "f1b10a895f2b8d67e694efce73bcead4551bae16616417b740ca6e64ca98b418",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Into how many regions do $n$ circles divide the plane if every two of them meet at two points and no point lies on three circles?",
+          "statement_sha256": "6811df693758d0d6846a514e968c9052fbb7b17ee494e0107130642b7a112d69",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1966.0.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A square $ABCD$ with side $s=1$ and centre $S$ is given. Points $E,F$ lie on the rays opposite to $CB$ and $DA$, with $CE=a$ and $DF=b$. Find all triangles $XYZ$ with $X,Y,Z$ on the segments $CD$, $AD$, $BC$ respectively such that $E,S,F$ lie on the lines $XY$, $YZ$, $ZX$. Discuss the conditions of solvability in terms of $a$, $b$, $s$ and $x=CX$.",
-      "statement_sha256": "657f9c7fa6690d49c941e99b02dbb40359936cf208009a8046c17b8194d1ba27",
+      "reviewed_statement": "A square $ABCD$ with centre $S$ and side $s=AB=1$ is given. Further, two points $E$, $F$ are given, lying respectively on the lines $BC$, $AD$ in the interior of the half-plane opposite to $CDA$.\n\nOn the basis of a computation, determine all triangles $XYZ$ whose vertices $X$, $Y$, $Z$ lie respectively on the segments $CD$, $AD$, $BC$ and whose lines $XY$, $YZ$, $ZX$ pass respectively through the points $E$, $S$, $F$. (Remark. By computation determine, for example, the length $CX$.)",
+      "statement_sha256": "9f108b2328bc2cba2de6b38c6cc99f11f1170702b5b934208edf5912c7d4ac25",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A square $ABCD$ with side $s=1$ and centre $S$ is given. Points $E,F$ lie on the rays opposite to $CB$ and $DA$, with $CE=a$ and $DF=b$. Find all triangles $XYZ$ with $X,Y,Z$ on the segments $CD$, $AD$, $BC$ respectively such that $E,S,F$ lie on the lines $XY$, $YZ$, $ZX$. Discuss the conditions of solvability in terms of $a$, $b$, $s$ and $x=CX$.",
+          "statement_sha256": "657f9c7fa6690d49c941e99b02dbb40359936cf208009a8046c17b8194d1ba27",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1966.0.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two triangles $ABC$ and $ABD$ with the common side $c=AB$ are given in space: $ABC$ is right-angled with hypotenuse $AB$ and $ABD$ is equilateral. Let $\\varphi$ be the dihedral angle between the planes $ABC$ and $ABD$.\n\n(1) Find $CD$ in terms of $a=BC$, $b=CA$, $c$ and $\\varphi$.\n\n(2) Find all $\\varphi$ for which the tetrahedron $ABCD$ has four edges of equal length.",
-      "statement_sha256": "7f1a7b8b80d8963a83c0ce224e0c5175df5badf657f38b373a26ff3cb3e6ae4d",
+      "reviewed_statement": "Two triangles $ABC$ and $ABD$ with a common side of length $c$ are placed in space. The triangle $ABC$ is right-angled with hypotenuse $AB$, the triangle $ABD$ is equilateral, and the planes $ABC$, $ABD$ make the angle $\\varphi$.\n\na) Express the distance of the points $C$, $D$ in terms of the side lengths of both triangles and the number $\\varphi$; determine this distance by a construction.\n\nb) Find an angle $\\varphi$ such that the tetrahedron $ABCD$ has four congruent edges.",
+      "statement_sha256": "0f0bdff5ee18bd357558eb260bd3cba621269dd6756441de6fedd3973c178eeb",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two triangles $ABC$ and $ABD$ with the common side $c=AB$ are given in space: $ABC$ is right-angled with hypotenuse $AB$ and $ABD$ is equilateral. Let $\\varphi$ be the dihedral angle between the planes $ABC$ and $ABD$.\n\n(1) Find $CD$ in terms of $a=BC$, $b=CA$, $c$ and $\\varphi$.\n\n(2) Find all $\\varphi$ for which the tetrahedron $ABCD$ has four edges of equal length.",
+          "statement_sha256": "7f1a7b8b80d8963a83c0ce224e0c5175df5badf657f38b373a26ff3cb3e6ae4d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1967.0.1": {
       "topics": [
@@ -109409,19 +109685,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Five distinct points $O,A,B,C,D$ in the plane satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral with vertices $A,B,C,D$ (in some order) satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and determine when equality holds.",
-      "statement_sha256": "10d1c333e7cb6a69a53a8e61cbfe68344dfd73680865bcc23d00aa658fc726d1",
+      "reviewed_statement": "Five points $O,A,B,C,D$ lie in a plane, and their distances satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral whose vertices are the points $A,B,C,D$ always satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and find when equality holds.",
+      "statement_sha256": "c4db2e2dc74e467575b60db93820c38b95971854b489730d289f96d641aa8835",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Five distinct points $O,A,B,C,D$ in the plane satisfy $OA\\leq OB\\leq OC\\leq OD$. Prove that the area $P$ of every convex quadrilateral with vertices $A,B,C,D$ (in some order) satisfies $$P\\leq\\frac{1}{2}(OA+OD)(OB+OC),$$ and determine when equality holds.",
+          "statement_sha256": "10d1c333e7cb6a69a53a8e61cbfe68344dfd73680865bcc23d00aa658fc726d1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1969.1.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p$ be a prime. How many sequences $(a_k)_{k\\geq 0}$ are there such that for every positive integer $n$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$",
-      "statement_sha256": "39950abb85bd123cc0ff0942e954307bb16c1c8803b2950b73158d07fcecf823",
+      "reviewed_statement": "Let $p$ be a prime. How many different sequences of positive integers $$a_0,a_1,a_2,\\ldots,a_n,\\ldots$$ are there such that for every positive integer $n=1,2,3,\\ldots$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$",
+      "statement_sha256": "1db6b122dfcc7a36ab5448142f9b4d0581eeb7d3ac9a02c26378eaf43c5575f3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p$ be a prime. How many sequences $(a_k)_{k\\geq 0}$ are there such that for every positive integer $n$ $$\\frac{a_0}{a_1}+\\frac{a_0}{a_2}+\\cdots+\\frac{a_0}{a_n}+\\frac{p}{a_{n+1}}=1?$$",
+          "statement_sha256": "39950abb85bd123cc0ff0942e954307bb16c1c8803b2950b73158d07fcecf823",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1969.2.4": {
       "topics": [
@@ -109454,28 +109754,64 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $a,b,c$ be real numbers. Prove that there are non-negative numbers $x,y,z$ with $xyz\\neq 0$ such that $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$",
-      "statement_sha256": "810b70f68d069296989c672c6db9cb16e0d6903d575d2ed32177f6218984efef",
+      "reviewed_statement": "Let $a,b,c$ be real numbers. Prove that there exist non-negative numbers $x,y,z$, not all equal to zero, which satisfy the inequalities $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$",
+      "statement_sha256": "39a3266e66ff1c7824e38d3b89c84911b2af3b97c32b38cfd543d0d6778bf9f8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $a,b,c$ be real numbers. Prove that there are non-negative numbers $x,y,z$ with $xyz\\neq 0$ such that $$cy-bz\\geq 0,\\qquad az-cx\\geq 0,\\qquad bx-ay\\geq 0.$$",
+          "statement_sha256": "810b70f68d069296989c672c6db9cb16e0d6903d575d2ed32177f6218984efef",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1971.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a triangle $ABC$, points $D,A,B,E$ lie on the line $AB$ in this order with $DA=AB=BE$. Find a necessary and sufficient condition on $a=BC$ and $b=AC$ for the angle $DCE$ to be right.",
-      "statement_sha256": "b2f6d152fc6ed8bffdc913ecb190f8030cc5c1d8658cef7561b7df1e930eb88f",
+      "reviewed_statement": "For a triangle $ABC$, points $D\\neq B$ and $E\\neq A$ are constructed on the line $AB$ such that $DA=BE=AB$. Find a necessary and sufficient condition on the lengths of the segments $a=BC$, $b=AC$ for a triangle $ABC$ to exist in which the angle $DCE$ is right.",
+      "statement_sha256": "7b912cede5e0fb01d9a161ae302f42aeee7a9c7f0600f53ea38c6f66bd110429",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a triangle $ABC$, points $D,A,B,E$ lie on the line $AB$ in this order with $DA=AB=BE$. Find a necessary and sufficient condition on $a=BC$ and $b=AC$ for the angle $DCE$ to be right.",
+          "statement_sha256": "b2f6d152fc6ed8bffdc913ecb190f8030cc5c1d8658cef7561b7df1e930eb88f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1971.1.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Let $n\\geq 96$. Prove that for every partition of $\\{2,3,\\ldots,n\\}$ into two sets, one of the sets contains two numbers together with their product. Show that this is false for $n=95$.",
-      "statement_sha256": "db750546e8fc693e99fa17fc66a829f6af8033ba8840a8f4d179201435d9f60d",
+      "reviewed_statement": "The positive integers $2,3,4,5,\\ldots,n-1,n$ are given, where $n\\geq 96$. Prove that if they are divided arbitrarily into two groups, then in at least one of the groups one can always find two (distinct) numbers together with their product.\\n\\nFind an example showing that the statement does not hold for $n=95$.",
+      "statement_sha256": "43573f327020ffdb47ab72e0e467246bb1896cccb911753d83d261be19cf9c2d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Let $n\\geq 96$. Prove that for every partition of $\\{2,3,\\ldots,n\\}$ into two sets, one of the sets contains two numbers together with their product. Show that this is false for $n=95$.",
+          "statement_sha256": "db750546e8fc693e99fa17fc66a829f6af8033ba8840a8f4d179201435d9f60d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1971.2.4": {
       "topics": [
@@ -109490,10 +109826,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A triangle $ABC$ is given. Find the locus of the vertices $Z$ of all equilateral triangles $XYZ$ with $X$ on the segment $AB$ and $Y\\neq X$ on the ray $AC$.",
-      "statement_sha256": "0e13b42e58f05a01f0bf970955a026ec759719ece9c16f4373f6fe4e34e9e39e",
+      "reviewed_statement": "A triangle $ABC$ is given. Choose a point $X$ of the segment $AB$ and a point $Y\\neq X$ of the ray $AC$, and construct in the plane $ABC$ an equilateral triangle $XYZ$. Investigate the set $M$ of the vertices $Z$ of all equilateral triangles $XYZ$ constructed in this way, as the point $X$ runs over the segment $AB$ and the point $Y$ over the ray $AC$. Investigate also the case $\\angle BAC=60^\\circ$.",
+      "statement_sha256": "7128c0fb0954c7f08845dde87cf3242f432bb1e7449b70574e1a2e6fdf60e793",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle $ABC$ is given. Find the locus of the vertices $Z$ of all equilateral triangles $XYZ$ with $X$ on the segment $AB$ and $Y\\neq X$ on the ray $AC$.",
+          "statement_sha256": "0e13b42e58f05a01f0bf970955a026ec759719ece9c16f4373f6fe4e34e9e39e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1971.2.6": {
       "topics": [
@@ -109544,19 +109892,43 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "How many unordered pairs $\\{A,B\\}$ of disjoint subsets of $\\{1,\\ldots,n\\}$ are there?",
-      "statement_sha256": "08b056d539456a962b0dcbba41ddd2c0e9b4cc8b2bdc47c04a2e5dfd8670b846",
+      "reviewed_statement": "How many pairs of mutually disjoint subsets does a set with $n$ elements have?",
+      "statement_sha256": "fe969577fe6753d5a047435c5b71873ae77610f3bc7c8c7cb1c723e9b6aaf91c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "How many unordered pairs $\\{A,B\\}$ of disjoint subsets of $\\{1,\\ldots,n\\}$ are there?",
+          "statement_sha256": "08b056d539456a962b0dcbba41ddd2c0e9b4cc8b2bdc47c04a2e5dfd8670b846",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1972.2.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two distinct points $A,S$ and positive numbers $d,\\omega$ with $\\omega<180^\\circ$ are given in the plane. For a point $X$ let $X'$ be its image under the counter-clockwise rotation about $S$ through $\\omega$. Construct all points $X$ such that $XX'=d$ and $A$ lies on the segment $XX'$. Discuss the conditions of solvability in terms of $d$, $\\omega$ and $SA$.",
-      "statement_sha256": "cd46dc1dfffe675587e9f46f5f533df1f28c34ab92e973ea8f709258d5d4d6b5",
+      "reviewed_statement": "Two distinct points $A,S$ are given in a plane $\\varrho$. Further, positive numbers $d,\\omega$ with $\\omega<180$ are given. Construct all points $X$ of the plane $\\varrho$ with the following property: the rotation in the plane $\\varrho$ about the centre $S$ in the positive sense through the angle $\\omega^\\circ$ takes the point $X$ to a point $X'$ such that $XX'=d$ and the point $A$ lies on the segment $XX'$. What condition must the numbers $d,\\omega$ satisfy for such a point $X$ to exist?",
+      "statement_sha256": "c54659b570420f1edf4943fde00ae17220f0bd1ab3f6a56d00d3ba2ae49fe127",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two distinct points $A,S$ and positive numbers $d,\\omega$ with $\\omega<180^\\circ$ are given in the plane. For a point $X$ let $X'$ be its image under the counter-clockwise rotation about $S$ through $\\omega$. Construct all points $X$ such that $XX'=d$ and $A$ lies on the segment $XX'$. Discuss the conditions of solvability in terms of $d$, $\\omega$ and $SA$.",
+          "statement_sha256": "cd46dc1dfffe675587e9f46f5f533df1f28c34ab92e973ea8f709258d5d4d6b5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1973.1.1": {
       "topics": [
@@ -109571,10 +109943,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "For a tetrahedron $A_1A_2A_3A_4$, the $A_1$-exsphere is the sphere tangent to the planes of all four faces such that $A_1$ and the sphere are separated by the plane $A_2A_3A_4$; the other exspheres are defined similarly, and $\\varrho_1,\\ldots,\\varrho_4$ are their radii. Let $v_i$ be the distance of $A_i$ from the opposite face. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$",
-      "statement_sha256": "454c24cf1979ff730b783c67b6f810ced358644f259fcb2d706bcfdaaa90275d",
+      "reviewed_statement": "A tetrahedron is given. Let $v_i$ $(i=1,2,3,4)$ denote its altitudes and $\\varrho_i$ $(i=1,2,3,4)$ the radii of the spheres escribed to this tetrahedron. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$",
+      "statement_sha256": "44222cfa67d6064e1d86a7ca1b9eeb0acd0692f97ab910c3d764be691ec43625",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "For a tetrahedron $A_1A_2A_3A_4$, the $A_1$-exsphere is the sphere tangent to the planes of all four faces such that $A_1$ and the sphere are separated by the plane $A_2A_3A_4$; the other exspheres are defined similarly, and $\\varrho_1,\\ldots,\\varrho_4$ are their radii. Let $v_i$ be the distance of $A_i$ from the opposite face. Prove that $$2\\left(\\frac{1}{v_1}+\\frac{1}{v_2}+\\frac{1}{v_3}+\\frac{1}{v_4}\\right)=\\frac{1}{\\varrho_1}+\\frac{1}{\\varrho_2}+\\frac{1}{\\varrho_3}+\\frac{1}{\\varrho_4}.$$",
+          "statement_sha256": "454c24cf1979ff730b783c67b6f810ced358644f259fcb2d706bcfdaaa90275d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1973.1.3": {
       "topics": [
@@ -109598,10 +109982,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "For points $P,Q$ of the plane let $P+Q$ be the midpoint of the (possibly degenerate) segment $PQ$, and $P\\cdot Q$ the image of $P$ under the rotation about $Q$ through $+90^\\circ$.\n\n(a) Are these operations commutative?\n\n(b) For two distinct points $A,B$ the equation $Y\\cdot X=(A\\cdot X)+B$ defines a map $X\\mapsto Y$. What is this map?\n\n(c) Construct all fixed points of the map from (b).",
-      "statement_sha256": "18ddcd6a9c0383f25cebab49bf63215776b9db274b65f3d4c9d27c1aab2c5587",
+      "reviewed_statement": "A plane $\\varrho$ is given. For two points $P,Q$ of $\\varrho$ let $P+Q$ denote the midpoint of the pair $P,Q$, and $P\\cdot Q$ the point of the plane $\\varrho$ obtained by rotating the point $Q$ about the point $P$ through $90^\\circ$ in the positive sense.\\n\\na) Are these operations commutative?\\n\\nb) Two fixed distinct points $A,B$ of the plane $\\varrho$ are given. The equation $$Y\\cdot X=(A\\cdot X)+B$$ determines a map $X\\mapsto Y$. Determine what kind of map it is.\\n\\nc) Construct all fixed points of this map.",
+      "statement_sha256": "070dc082361a74ddfb027bbc3cf8ebef79554f14d0267ff985abe2af05caa36b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "For points $P,Q$ of the plane let $P+Q$ be the midpoint of the (possibly degenerate) segment $PQ$, and $P\\cdot Q$ the image of $P$ under the rotation about $Q$ through $+90^\\circ$.\n\n(a) Are these operations commutative?\n\n(b) For two distinct points $A,B$ the equation $Y\\cdot X=(A\\cdot X)+B$ defines a map $X\\mapsto Y$. What is this map?\n\n(c) Construct all fixed points of the map from (b).",
+          "statement_sha256": "18ddcd6a9c0383f25cebab49bf63215776b9db274b65f3d4c9d27c1aab2c5587",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1973.2.6": {
       "topics": [
@@ -109670,10 +110066,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $\\mathbf{T}$ be a triangle of area $1$. Prove that there is a right triangle $\\mathbf{R}$ of area at most $\\sqrt{3}$ with $\\mathbf{T}\\subseteq\\mathbf{R}$.",
-      "statement_sha256": "09243cab22b01a11f8c5fabb9605b1f5d728b09ae8d1d373b9b7b1f7bcc253cc",
+      "reviewed_statement": "Prove that if $\\mathbf{T}$ is an acute triangle of area $1$, then there exists a right triangle whose area does not exceed $\\sqrt{3}$ and which contains the triangle $\\mathbf{T}$.",
+      "statement_sha256": "8fce8a99e22029c23ecebe2432f6ed91896e45cb94a598225a6a281d0b4a3826",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $\\mathbf{T}$ be a triangle of area $1$. Prove that there is a right triangle $\\mathbf{R}$ of area at most $\\sqrt{3}$ with $\\mathbf{T}\\subseteq\\mathbf{R}$.",
+          "statement_sha256": "09243cab22b01a11f8c5fabb9605b1f5d728b09ae8d1d373b9b7b1f7bcc253cc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1975.1.2": {
       "topics": [
@@ -109742,10 +110150,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a half-plane with boundary line $p$ two points $M,N$ at different distances from $p$ are given. Construct a trapezoid $MNPQ$ of area $MN^2$ with $P,Q\\in p$. Discuss the conditions of solvability.",
-      "statement_sha256": "2b156d350adb617b8c43b43d2511bf275e82788914377f6115156816721fd92d",
+      "reviewed_statement": "In a given half-plane with boundary line $p$, two points $M,N$ are given at different distances from the line $p$. Construct a trapezoid $MNPQ$ whose vertices $P,Q$ lie on the line $p$ and whose area equals the area of the square with side $MN$.",
+      "statement_sha256": "ea3fd79fbe7d6a0d47e8d4e34d2119c283a286c4aace2ff659224342a5a236b8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a half-plane with boundary line $p$ two points $M,N$ at different distances from $p$ are given. Construct a trapezoid $MNPQ$ of area $MN^2$ with $P,Q\\in p$. Discuss the conditions of solvability.",
+          "statement_sha256": "2b156d350adb617b8c43b43d2511bf275e82788914377f6115156816721fd92d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1976.2.4": {
       "topics": [
@@ -109814,10 +110234,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "$A_1,\\ldots,A_n$ are distinct collinear points, each coloured with one of four colours, every colour being used at least once. Prove that there is a segment (with endpoints among the points) on which two of the colours occur exactly once and the other two at least once.",
-      "statement_sha256": "94cb459db34114ba28cb9dad853d59d696680af88f53561c5381682e5d23c8f0",
+      "reviewed_statement": "Mutually distinct points $A_1,A_2,\\ldots,A_n$ are given on a line. Each of them is coloured with exactly one of four colours so that every colour is used. Prove that then there exists a segment on this line which contains exactly one point of each of some two of these colours and at least one point of each of the two remaining colours.",
+      "statement_sha256": "e2673b6d403ad7eba79db21787f2b32ca20a3be40c1d2c2f43a51dc55234855d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "$A_1,\\ldots,A_n$ are distinct collinear points, each coloured with one of four colours, every colour being used at least once. Prove that there is a segment (with endpoints among the points) on which two of the colours occur exactly once and the other two at least once.",
+          "statement_sha256": "94cb459db34114ba28cb9dad853d59d696680af88f53561c5381682e5d23c8f0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1977.2.6": {
       "topics": [
@@ -109850,10 +110282,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Find all real triples $(x,y,z)$ satisfying $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$",
-      "statement_sha256": "ab3202678bdbfdfd6be94afb73f77fc88be7919d7bb29554ba55e6fbcedb87a8",
+      "reviewed_statement": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Consider the system of equations $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$\\n\\na) Show that $x=\\sin\\alpha/\\sin\\gamma$, $y=\\sin\\beta/\\sin\\alpha$, $z=\\sin\\gamma/\\sin\\beta$ is a solution of the system.\\n\\nb) Find all solutions of the system.",
+      "statement_sha256": "36f9d0fc430ca8a14eed2ea6c44e410a7803a0c2ada5448acca6589ae1d267b4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $\\alpha,\\beta,\\gamma$ be the angles of a triangle. Find all real triples $(x,y,z)$ satisfying $$x\\cos\\beta+\\frac{1}{z}\\cos\\alpha=1,\\qquad y\\cos\\gamma+\\frac{1}{x}\\cos\\beta=1,\\qquad z\\cos\\alpha+\\frac{1}{y}\\cos\\gamma=1.$$",
+          "statement_sha256": "ab3202678bdbfdfd6be94afb73f77fc88be7919d7bb29554ba55e6fbcedb87a8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1978.2.4": {
       "topics": [
@@ -110066,10 +110510,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A $1\\times 2$ rectangular piece of paper is placed on an $8\\times 8$ chessboard made of unit squares. A square and the paper overlap if they have a common interior point. Find the maximum number of black squares that can overlap the paper.",
-      "statement_sha256": "e3bf9864c7287c9a8ddea478d000f18fab1a7914a939e256c6ae4aa6f484056d",
+      "reviewed_statement": "The fields of an $8\\times 8$ chessboard are squares with side of length $3$ cm. A rectangular strip of paper with dimensions $6$ cm by $3$ cm is placed on the chessboard. We say that the strip overlaps a field of the chessboard if it has at least one interior point in common with it. Find the largest number of black fields that the given rectangular strip of paper can overlap.",
+      "statement_sha256": "076f0e73919321d286b42f31a9d4cc469e9a195ee1605f9bbcd54e6791ac4dc8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A $1\\times 2$ rectangular piece of paper is placed on an $8\\times 8$ chessboard made of unit squares. A square and the paper overlap if they have a common interior point. Find the maximum number of black squares that can overlap the paper.",
+          "statement_sha256": "e3bf9864c7287c9a8ddea478d000f18fab1a7914a939e256c6ae4aa6f484056d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1983.2.4": {
       "topics": [
@@ -110111,10 +110567,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Prove that if the angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic or a trapezoid.",
-      "statement_sha256": "221cbaf79839452751a28df61f6360962279f04460caef2ef552eff6438d78e3",
+      "reviewed_statement": "Prove that if the interior angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic, a trapezoid or a parallelogram.",
+      "statement_sha256": "ec43846b0b5802a70836eba97323e8a84fc1604bdfe643d1d010db45f754c6df",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Prove that if the angles $\\alpha,\\beta,\\gamma,\\delta$ of a convex quadrilateral satisfy $$\\cos\\alpha+\\cos\\beta+\\cos\\gamma+\\cos\\delta=0,$$ then the quadrilateral is cyclic or a trapezoid.",
+          "statement_sha256": "221cbaf79839452751a28df61f6360962279f04460caef2ef552eff6438d78e3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1984.1.3": {
       "topics": [
@@ -110192,10 +110660,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A triangular table has $n$ rows and $n$ columns, its $i$-th row consisting of the cells in columns $1,\\ldots,i$ (so the $i$-th row ends in the $i$-th column, on the diagonal). Some of the numbers $1,2,\\ldots,n$ are written in its cells so that for every $k\\in\\{1,\\ldots,n\\}$ all the numbers $1,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,\\ldots,n$ is written in the last cell of some row.",
-      "statement_sha256": "58c540404b6694b007e04251d6858c34ec87cbfe001a79bc57fef79dd7045b9e",
+      "reviewed_statement": "A triangular table with $n$ rows and $n$ columns is given (the figure shows it for $n=6$): its $i$-th row consists of the cells in columns $1,\\ldots,i$, so the $i$-th row ends in the $i$-th column. In each cell of the table one of the numbers $1,2,\\ldots,n$ is written so that for every $k\\in\\{1,2,\\ldots,n\\}$ all the numbers $1,2,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,2,\\ldots,n$ is written in the last cell of some row.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_1985_p5_fig.png",
+      "statement_sha256": "5a9a196d8f8880bd04d0daf97af4e38c811482ec1a76714a02b788c7d98f4ad8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A triangular table has $n$ rows and $n$ columns, its $i$-th row consisting of the cells in columns $1,\\ldots,i$ (so the $i$-th row ends in the $i$-th column, on the diagonal). Some of the numbers $1,2,\\ldots,n$ are written in its cells so that for every $k\\in\\{1,\\ldots,n\\}$ all the numbers $1,\\ldots,n$ occur in the union of the $k$-th row and the $k$-th column. Prove that for odd $n$ each of the numbers $1,\\ldots,n$ is written in the last cell of some row.",
+          "statement_sha256": "58c540404b6694b007e04251d6858c34ec87cbfe001a79bc57fef79dd7045b9e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1985.2.6": {
       "topics": [
@@ -110219,55 +110699,127 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $P(x)$ be a polynomial with integer coefficients of degree $n\\geq 3$. Prove that if $x_1,\\ldots,x_m$ $(n\\geq m\\geq 3)$ are distinct integers with $P(x_1)=\\cdots=P(x_m)=1$, then $P$ has no integer root.",
-      "statement_sha256": "f3edbd2ef3e9b38adf16372fd07d2433f2ee9bc300d5abb3c8ec0f18a2cc6631",
+      "reviewed_statement": "Let $m\\geq n\\geq 3$ be positive integers. A polynomial $p$ of degree $m$ with integer coefficients is given such that $p(a_1)=p(a_2)=\\cdots=p(a_n)=1$ for $n$ distinct integers $a_1,a_2,\\ldots,a_n$. Prove that $p$ has no integer root.",
+      "statement_sha256": "40ff09260b1edf0fddb508331975ad40144d93637bdddb93e67d3fc95685ebec",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $P(x)$ be a polynomial with integer coefficients of degree $n\\geq 3$. Prove that if $x_1,\\ldots,x_m$ $(n\\geq m\\geq 3)$ are distinct integers with $P(x_1)=\\cdots=P(x_m)=1$, then $P$ has no integer root.",
+          "statement_sha256": "f3edbd2ef3e9b38adf16372fd07d2433f2ee9bc300d5abb3c8ec0f18a2cc6631",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1986.1.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A cross is the solid formed by a unit cube together with the six unit cubes attached to its faces. Prove that the whole space can be partitioned into such crosses.",
-      "statement_sha256": "66cea1148d928bcb006f839c5b994504e0f5a6e79f5b38e0cf6feeac5bd77bbd",
+      "reviewed_statement": "Suppose we have infinitely many identical building pieces, each composed of seven cubes (see the figure): a cube together with the six equal cubes attached to its faces. Prove that the whole space can be filled with these pieces without gaps.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_1986_p3_fig.png",
+      "statement_sha256": "fa83e2f54cbf2281cc31efa04290de22699a19c858a5d333370a20c8c02e01e3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A cross is the solid formed by a unit cube together with the six unit cubes attached to its faces. Prove that the whole space can be partitioned into such crosses.",
+          "statement_sha256": "66cea1148d928bcb006f839c5b994504e0f5a6e79f5b38e0cf6feeac5bd77bbd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1986.2.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$C_1,C_2,C_3$ are points inside a bounded convex planar set $M$. Rays $l_1,l_2,l_3$ issuing from $C_1,C_2,C_3$ divide the complement of $M\\cup l_1\\cup l_2\\cup l_3$ into three regions $D_1,D_2,D_3$. Prove that if convex sets $A$ and $B$ satisfy $A\\cap l_j=\\emptyset=B\\cap l_j$ and $A\\cap D_j\\neq\\emptyset\\neq B\\cap D_j$ for $j=1,2,3$, then $A\\cap B\\neq\\emptyset$.",
-      "statement_sha256": "faab7216b63a22da612e07be811e01eb54998711a1313f53967b803a9d2564f1",
+      "reviewed_statement": "In the plane, a bounded convex set $A$ and three pairwise disjoint half-lines with origins in $A$ are given. The complement of the union of these four figures consists of three pairwise disjoint regions. Let $B$ and $C$ be convex sets that are disjoint from all three half-lines, and suppose each of the sets $B$, $C$ has a nonempty intersection with each of the three regions. Prove that the sets $B$ and $C$ have a nonempty intersection.",
+      "statement_sha256": "c163705d08de91db41aeaf951d25e279b33e8682cf21a2107acf578bbbdcfd25",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$C_1,C_2,C_3$ are points inside a bounded convex planar set $M$. Rays $l_1,l_2,l_3$ issuing from $C_1,C_2,C_3$ divide the complement of $M\\cup l_1\\cup l_2\\cup l_3$ into three regions $D_1,D_2,D_3$. Prove that if convex sets $A$ and $B$ satisfy $A\\cap l_j=\\emptyset=B\\cap l_j$ and $A\\cap D_j\\neq\\emptyset\\neq B\\cap D_j$ for $j=1,2,3$, then $A\\cap B\\neq\\emptyset$.",
+          "statement_sha256": "faab7216b63a22da612e07be811e01eb54998711a1313f53967b803a9d2564f1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1986.2.5": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A sequence of positive integers satisfies $a_1=1$ and $a_{n+2}=2a_{n+1}-a_n+2$ for $n\\in\\mathbb{N}$. Prove that for every $n$ there is $m$ such that $a_na_{n+1}=a_m$.",
-      "statement_sha256": "13737b26803f08e64f6faf6831f18fbc84246764cfa774ea66b7a7c696520ece",
+      "reviewed_statement": "Let $f$ be a function mapping the set $\\mathbb{N}$ of all positive integers into itself such that $f(1)=1$ and for every $n\\in\\mathbb{N}$ $$f(n+2)=2f(n+1)-f(n)+2.$$ Prove that for every $n\\in\\mathbb{N}$ there exists $m\\in\\mathbb{N}$ such that $$f(n)f(n+1)=f(m).$$",
+      "statement_sha256": "707cb037925188f37cf158f5b953bcd0ef9feac86870f5c4822e31c13d003a09",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A sequence of positive integers satisfies $a_1=1$ and $a_{n+2}=2a_{n+1}-a_n+2$ for $n\\in\\mathbb{N}$. Prove that for every $n$ there is $m$ such that $a_na_{n+1}=a_m$.",
+          "statement_sha256": "13737b26803f08e64f6faf6831f18fbc84246764cfa774ea66b7a7c696520ece",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1986.2.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A set $M\\subset\\mathbb{N}$ has the property that any two numbers $m,n\\in M$ satisfy $|m-n|\\geq\\frac{mn}{25}$. Prove that $M$ has at most $9$ elements. Does such a set with $9$ elements exist?",
-      "statement_sha256": "4b81d9973987bc017c8a1fccf85197094174b656009680c45f7b02d2526364d7",
+      "reviewed_statement": "Let $A$ be a set of positive integers such that any two distinct elements $x,y$ of it satisfy the inequality $$|x-y|\\geq\\frac{xy}{25}.$$ Prove that the set $A$ contains at most $9$ elements. Decide whether such a nine-element set $A$ exists.",
+      "statement_sha256": "c2432d2728be2d95d03f68a538876cc0b795b59f6e937c9a23babff29b36e762",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A set $M\\subset\\mathbb{N}$ has the property that any two numbers $m,n\\in M$ satisfy $|m-n|\\geq\\frac{mn}{25}$. Prove that $M$ has at most $9$ elements. Does such a set with $9$ elements exist?",
+          "statement_sha256": "4b81d9973987bc017c8a1fccf85197094174b656009680c45f7b02d2526364d7",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1987.1.1": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Given a trapezoid, divide it by a line into two quadrilaterals that are both cyclic with equal circumradii. Discuss the conditions of solvability.",
-      "statement_sha256": "d8405a7895bae33ddba4241b5d31e5abe527a6a8237a16e4e3f3ef68223c1037",
+      "reviewed_statement": "Divide a given trapezoid into two cyclic quadrilaterals whose circumcircles have the same radius. State the conditions of solvability.",
+      "statement_sha256": "b91398086fb09ea316b1540eede7fa563054dc58b3c9cc52dc3179243b354e15",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Given a trapezoid, divide it by a line into two quadrilaterals that are both cyclic with equal circumradii. Discuss the conditions of solvability.",
+          "statement_sha256": "d8405a7895bae33ddba4241b5d31e5abe527a6a8237a16e4e3f3ef68223c1037",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1987.1.2": {
       "topics": [
@@ -110462,10 +111014,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "In a country any two towns are joined by exactly one one-way road, each road being intended either for cars or for cyclists. Prove that there is a town from which one can reach every other town without changing the means of transport.",
-      "statement_sha256": "312a94848d08ac5336940f752778bcc346e64b8d9db9847416e051098e51c7fc",
+      "reviewed_statement": "In a country any two towns are joined by exactly one road. Each road is one-way and is intended either only for motor vehicles or only for cyclists. Roads cross only in towns (elsewhere they have grade-separated crossings). Prove that there is a town from which one can travel to any other town without changing the means of transport.",
+      "statement_sha256": "e98dccc45b343b2d4d18259a35a42a354fba2e8b3b1706245dfc32b5721c24e6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "In a country any two towns are joined by exactly one one-way road, each road being intended either for cars or for cyclists. Prove that there is a town from which one can reach every other town without changing the means of transport.",
+          "statement_sha256": "312a94848d08ac5336940f752778bcc346e64b8d9db9847416e051098e51c7fc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1990.2.6": {
       "topics": [
@@ -110525,10 +111089,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "$\\mathbb{N}$ is partitioned into three subsets $A_1,A_2,A_3$. Prove that one of them has the following property: there is a positive number $m$ such that for every $k$ the subset contains numbers $a_1<a_2<\\cdots<a_k$ with $a_{j+1}-a_j\\leq m$ for $j=1,\\ldots,k-1$.",
-      "statement_sha256": "80b24da8fa60514bce4878cdf65fc5073c01a2ab5485ca99e720646f325cfec4",
+      "reviewed_statement": "The set $\\mathbb{N}$ of all positive integers is the union of three subsets $A_1,A_2,A_3$. Prove that at least one of them has the following property: there is a positive number $m$ such that for every $k$ one can find in this subset numbers $a_1,a_2,\\ldots,a_k$ with $0<a_{j+1}-a_j\\leq m$ for $1\\leq j\\leq k-1$.",
+      "statement_sha256": "88dffb14845c5cabefbdd7d3414925f5d281744130be20c5455a47c8f196bb0f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "$\\mathbb{N}$ is partitioned into three subsets $A_1,A_2,A_3$. Prove that one of them has the following property: there is a positive number $m$ such that for every $k$ the subset contains numbers $a_1<a_2<\\cdots<a_k$ with $a_{j+1}-a_j\\leq m$ for $j=1,\\ldots,k-1$.",
+          "statement_sha256": "80b24da8fa60514bce4878cdf65fc5073c01a2ab5485ca99e720646f325cfec4",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1992.1.1": {
       "topics": [
@@ -110606,10 +111182,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$AKL$ is a triangle with $\\angle ALK>90^\\circ+\\angle LAK$. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that $K$ lies on the side $BC$, $L$ on the diagonal $AC$, and the lines $AK$ and $BL$ meet at the circumcentre of the trapezoid.",
-      "statement_sha256": "3ba87623a68245cc411520c886656c9d73d6877b2936612b9e1a2160b7486382",
+      "reviewed_statement": "In the plane, a triangle $AKL$ with $\\angle ALK>90^\\circ+\\angle LAK$ is given. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that the point $K$ lies on the side $BC$, the point $L$ lies on the diagonal $AC$, and the intersection $S$ of the segments $AK$ and $BL$ is the centre of the circle circumscribed to the trapezoid $ABCD$.",
+      "statement_sha256": "206be22f2d24b8d2d0259d6f9c7b6412fc219676fcb203cca0fd92c073b71412",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$AKL$ is a triangle with $\\angle ALK>90^\\circ+\\angle LAK$. Construct an isosceles trapezoid $ABCD$ with $AB\\parallel CD$ such that $K$ lies on the side $BC$, $L$ on the diagonal $AC$, and the lines $AK$ and $BL$ meet at the circumcentre of the trapezoid.",
+          "statement_sha256": "3ba87623a68245cc411520c886656c9d73d6877b2936612b9e1a2160b7486382",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1993.2.4": {
       "topics": [
@@ -110660,10 +111248,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A closed polygonal line consists of $997$ diagonals of a convex $1994$-gon $M$, every vertex of $M$ being an endpoint of exactly one of these diagonals. Each diagonal divides the boundary of $M$ into two parts; the smaller of the numbers of sides of $M$ on the two parts is called the length of the diagonal. Is it possible that\n\n(a) $991$ diagonals have length $3$ and $6$ have length $2$?\n\n(b) $985$ diagonals have length $6$, $4$ have length $8$ and $8$ have length $3$?",
-      "statement_sha256": "8a7b7a07167054231d6b9456d0d73ffc319b603ac9cd233c8e818a745886f1c5",
+      "reviewed_statement": "A convex $1994$-gon $M$ is drawn in the plane, together with some of its diagonals, in such a way that exactly one drawn diagonal issues from each vertex. By the length of a diagonal we mean the number of sides of $M$ that the diagonal cuts off from $M$ (the minimum of the two possible numbers). Let $(d_1,d_2,\\ldots,d_{997})$ be the lengths of the drawn diagonals, arranged in non-increasing order. Decide whether the diagonals can be drawn so that\n\na) $(d_1,d_2,\\ldots,d_{997})=(3,\\ldots,3,2,2,2,2,2,2)$, with $991$ threes followed by six twos;\n\nb) $(d_1,d_2,\\ldots,d_{997})=(8,8,8,8,6,\\ldots,6,3,3,3,3,3,3,3,3)$, with four eights, $985$ sixes and eight threes.",
+      "statement_sha256": "c77479c841872ded5b0e32ae2ebd6f8d41a7aa7a4bf8256570f5081c9e372ffe",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A closed polygonal line consists of $997$ diagonals of a convex $1994$-gon $M$, every vertex of $M$ being an endpoint of exactly one of these diagonals. Each diagonal divides the boundary of $M$ into two parts; the smaller of the numbers of sides of $M$ on the two parts is called the length of the diagonal. Is it possible that\n\n(a) $991$ diagonals have length $3$ and $6$ have length $2$?\n\n(b) $985$ diagonals have length $6$, $4$ have length $8$ and $8$ have length $3$?",
+          "statement_sha256": "8a7b7a07167054231d6b9456d0d73ffc319b603ac9cd233c8e818a745886f1c5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1994.2.4": {
       "topics": [
@@ -110732,10 +111332,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Points $A,B$ on a circle $k$ with centre $S$ satisfy $\\angle ASB=90^\\circ$. Circles $k_1$ and $k_2$ are tangent to each other at $Z$ and touch $k$ at $A$ and $B$ respectively. A circle $k_3$ inside the angle $ASB$ is internally tangent to $k$ at $C$ and externally tangent to $k_1$ and $k_2$ at $X$ and $Y$. Prove that $\\angle XCY=45^\\circ$.",
-      "statement_sha256": "7cc91a53409ccdf099c755d9fcc37e13e5209fd8b9212ac340d2c080790ba20a",
+      "reviewed_statement": "Points $A$ and $B$ are given on a circle $k$ with centre $S$ so that the chord $AB$ is seen from $S$ at an angle of $90^\\circ$. Circles $k_1$, $k_2$ touch the circle $k$ internally at the points $A$, $B$ respectively, and moreover touch each other externally at a point $Z$. A circle $k_3$ lying inside the angle $ASB$ touches the circle $k$ (internally) at a point $C$ and touches the circles $k_1$, $k_2$ (externally) at points $X$, $Y$ respectively. Prove that the segment $XY$ is seen from the point $C$ at an angle of $45^\\circ$.",
+      "statement_sha256": "27e331c18f3aab073d727c81a68f071bb9259ff78e0d72a2511cac73c606187f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Points $A,B$ on a circle $k$ with centre $S$ satisfy $\\angle ASB=90^\\circ$. Circles $k_1$ and $k_2$ are tangent to each other at $Z$ and touch $k$ at $A$ and $B$ respectively. A circle $k_3$ inside the angle $ASB$ is internally tangent to $k$ at $C$ and externally tangent to $k_1$ and $k_2$ at $X$ and $Y$. Prove that $\\angle XCY=45^\\circ$.",
+          "statement_sha256": "7cc91a53409ccdf099c755d9fcc37e13e5209fd8b9212ac340d2c080790ba20a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1995.2.6": {
       "topics": [
@@ -110822,19 +111434,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A tetrahedron $ABCD$ is divided into five polyhedra so that each face of the tetrahedron is a face of exactly one of the polyhedra, and any two of the polyhedra intersect in a common vertex, a common edge, a common face, or not at all. What is the least possible total number of faces of the five polyhedra?",
-      "statement_sha256": "9b46d6da98e9b572af712671bb7987fa79b9a907f27da43ebf361307feb9b7a4",
+      "reviewed_statement": "A tetrahedron $ABCD$ is divided without remainder into five convex polyhedra in such a way that none of its faces is divided and the intersection of any two of the five resulting polyhedra is either a common vertex, or a common edge, or a common face. What is the least possible sum of the numbers of faces of these five polyhedra?",
+      "statement_sha256": "8f385b5135257829e999263333848a93b974c7386d01eae34c3bd79f75d34cb9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A tetrahedron $ABCD$ is divided into five polyhedra so that each face of the tetrahedron is a face of exactly one of the polyhedra, and any two of the polyhedra intersect in a common vertex, a common edge, a common face, or not at all. What is the least possible total number of faces of the five polyhedra?",
+          "statement_sha256": "9b46d6da98e9b572af712671bb7987fa79b9a907f27da43ebf361307feb9b7a4",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1997.2.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that there is an increasing sequence $a_1,a_2,a_3,\\ldots$ of positive integers such that for every integer $k\\geq 2$ the sequence $(k+a_n)_{n\\in\\mathbb{N}}$ contains only finitely many primes.",
-      "statement_sha256": "02b536a394ee4a25aabf86d6299b4cd6caa0aee2db8ec17dcc9ace434e44778f",
+      "reviewed_statement": "Prove that there exists an increasing sequence $(a_n)_{n=1}^{\\infty}$ of positive integers such that for every positive integer $k\\geq 2$ the sequence $(k+a_n)_{n=1}^{\\infty}$ contains only finitely many primes.\n\nDecide whether there exists an increasing sequence $(a_n)_{n=1}^{\\infty}$ of positive integers such that for every integer $k\\geq 0$ the sequence $(k+a_n)_{n=1}^{\\infty}$ contains only finitely many primes.",
+      "statement_sha256": "d20a812b3acc9cf8c1e5922068713058363aa91525989cd8b669607fe7c501ac",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that there is an increasing sequence $a_1,a_2,a_3,\\ldots$ of positive integers such that for every integer $k\\geq 2$ the sequence $(k+a_n)_{n\\in\\mathbb{N}}$ contains only finitely many primes.",
+          "statement_sha256": "02b536a394ee4a25aabf86d6299b4cd6caa0aee2db8ec17dcc9ace434e44778f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1997.2.5": {
       "topics": [
@@ -110849,19 +111485,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a parallelogram $ABCD$ the triangle $ABD$ is acute and $\\angle BAD=\\frac{\\pi}{4}$. Consider all choices of points $K,L,M,N$ on the sides $AB$, $BC$, $CD$, $DA$ such that $KLMN$ is a cyclic quadrilateral whose circumradius equals those of the triangles $ANK$ and $CLM$. Find the locus of the intersection of the diagonals of $KLMN$.",
-      "statement_sha256": "2ca1ceff46dafde24f9ade46105729674f52f2780814a870b15f1e55b016920a",
+      "reviewed_statement": "A parallelogram $ABCD$ is given such that $ABD$ is an acute triangle and $\\angle BAD=45^\\circ$. In the interiors of the sides of the parallelogram one can choose, in various ways, points $K\\in AB$, $L\\in BC$, $M\\in CD$ and $N\\in DA$ so that $KLMN$ is a cyclic quadrilateral whose circumcircle has the same radius as both circumcircles of the triangles $ANK$ and $CLM$. Find the set of intersection points of the diagonals of all such quadrilaterals $KLMN$.",
+      "statement_sha256": "c743c4beeff0ef0e8e4a6f74aa8c7d73b10bb489f40e1a0742921f494f33c600",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a parallelogram $ABCD$ the triangle $ABD$ is acute and $\\angle BAD=\\frac{\\pi}{4}$. Consider all choices of points $K,L,M,N$ on the sides $AB$, $BC$, $CD$, $DA$ such that $KLMN$ is a cyclic quadrilateral whose circumradius equals those of the triangles $ANK$ and $CLM$. Find the locus of the intersection of the diagonals of $KLMN$.",
+          "statement_sha256": "2ca1ceff46dafde24f9ade46105729674f52f2780814a870b15f1e55b016920a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1998.1.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Solve the equation $x\\lfloor x\\lfloor x\\lfloor x\\rfloor\\rfloor\\rfloor=88$ in real numbers.",
-      "statement_sha256": "29566048db6fefe31204e194bd996177d3b4c15a463e69d02cd1988c17db0f5c",
+      "reviewed_statement": "Solve the equation $$x\\cdot\\lfloor x\\cdot\\lfloor x\\cdot\\lfloor x\\rfloor\\rfloor\\rfloor=88$$ in the set of positive real numbers, where $\\lfloor a\\rfloor$ denotes the integer part of a real number $a$, i.e. the integer for which $\\lfloor a\\rfloor\\leq a<\\lfloor a\\rfloor+1$. For example, $\\lfloor 3.7\\rfloor=3$ and $\\lfloor 6\\rfloor=6$.",
+      "statement_sha256": "6bc80d8e76896bd04cdd519877a0214c4ae290cdbc05558c37688df82921dac1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Solve the equation $x\\lfloor x\\lfloor x\\lfloor x\\rfloor\\rfloor\\rfloor=88$ in real numbers.",
+          "statement_sha256": "29566048db6fefe31204e194bd996177d3b4c15a463e69d02cd1988c17db0f5c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1998.1.2": {
       "topics": [
@@ -110912,10 +111572,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Brackets may be inserted into the expression $$\\frac{29:28:27:\\cdots:16}{15:14:13:\\cdots:2},$$ always in the same places in the numerator and in the denominator (e.g. $\\frac{(29:28):27:\\cdots:16}{(15:14):13:\\cdots:2}$ is allowed, while $\\frac{(29:28):27:\\cdots:16}{15:(14:13):\\cdots:2}$ is not).\n\n(a) Find the smallest integer value that can be obtained.\n\n(b) Find all integer values that can be obtained.",
-      "statement_sha256": "02f9ad20d281b1d7466eeb090dc841bfc2ccb2569ff7c6dff580a977b3c3dcb1",
+      "reviewed_statement": "Into the numerator and the denominator of the fraction $$\\frac{29:28:27:26:25:24:23:22:21:20:19:18:17:16}{15:14:13:12:11:10:9:8:7:6:5:4:3:2}$$ we may repeatedly insert brackets, always at the same places one below the other.\n\na) Find the smallest possible integer value of the resulting expression.\n\nb) Find all possible integer values of the resulting expression.",
+      "statement_sha256": "660b85f0498a93f32bf11be0f5e0048ad93ad6bdfda437ae5de05863304a42d8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Brackets may be inserted into the expression $$\\frac{29:28:27:\\cdots:16}{15:14:13:\\cdots:2},$$ always in the same places in the numerator and in the denominator (e.g. $\\frac{(29:28):27:\\cdots:16}{(15:14):13:\\cdots:2}$ is allowed, while $\\frac{(29:28):27:\\cdots:16}{15:(14:13):\\cdots:2}$ is not).\n\n(a) Find the smallest integer value that can be obtained.\n\n(b) Find all integer values that can be obtained.",
+          "statement_sha256": "02f9ad20d281b1d7466eeb090dc841bfc2ccb2569ff7c6dff580a977b3c3dcb1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Czechoslovak MO annual report, 2026-10-14."
     },
     "cz.1999.1.2": {
       "topics": [
