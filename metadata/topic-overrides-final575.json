@@ -9506,7 +9506,7 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-11"
     },
-    "eet.1997.0.1": {
+    "eet.1997.1.1": {
       "topics": [
         "Geometry"
       ],
@@ -9514,7 +9514,7 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-11"
     },
-    "eet.1997.0.2": {
+    "eet.1997.1.2": {
       "topics": [
         "Algebra"
       ],
@@ -9523,38 +9523,91 @@
       "reviewed_at": "2026-10-11",
       "rationale": "Inequality in positive real variables; compare symmetric sums and harmonic expressions."
     },
-    "eet.1997.0.3": {
+    "eet.1997.1.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "There are $n$ boyfriend-girlfriend pairs at a party. Initially all the girls sit at a round table. For the first dance, each boy invites one of the girls to dance with. After each dance, a boy takes the girl he danced with to her seat, and for the next dance he invites the girl next to her in the counterclockwise direction. For which values of $n$ can the girls be selected in such a way that in every dance at least one boy danced with his girlfriend, assuming that there are no less than $n$ dances?",
+      "reviewed_statement": "At a dance party, $n$ young men gather, each together with his girlfriend. At the beginning of the party all the girls sit along the wall of a circular hall, and for the first dance each young man invites one of them to dance. After each dance the young men escort their partners back to their seats, and for the next dance each of them invites the next girl in the counterclockwise direction. For which values of $n$ can the girls be seated so that during every dance some young man dances with his own girlfriend, if it is known that at least $n$ dances are danced during the party?",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-11",
-      "rationale": "Cyclic dance assignment constraints and modular counting of pairings."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Cyclic dance assignment constraints and modular counting of pairings.",
+      "statement_sha256": "71f1ede2100e02d2a9f52ec9b142263b78cd9c471ceba8cf95b9ce00c6de76ad",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "There are $n$ boyfriend-girlfriend pairs at a party. Initially all the girls sit at a round table. For the first dance, each boy invites one of the girls to dance with. After each dance, a boy takes the girl he danced with to her seat, and for the next dance he invites the girl next to her in the counterclockwise direction. For which values of $n$ can the girls be selected in such a way that in every dance at least one boy danced with his girlfriend, assuming that there are no less than $n$ dances?",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-11",
+          "rationale": "Cyclic dance assignment constraints and modular counting of pairings.",
+          "statement_sha256": "a2f4e08cff81a3210c918579697754e8efcd22b80317de6e8bcb1291e41608a4"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official Estonian wording (English booklet or translation of the Estonian original), 2026-10-14."
     },
-    "eet.1997.0.4": {
+    "eet.1997.2.4": {
       "topics": [
         "Analysis"
       ],
-      "reviewed_statement": "(a) Is it possible to partition the segment $[0,1]$ into two sets $A$ and $B$ and to define a continuous function $f$ such that for every $x\\in A$, $f(x)\\in B$, and for every $x\\in B$, $f(x)\\in A$?\\n(b) Answer the same question with $[0,1]$ replaced by $[0,1)$.",
+      "reviewed_statement": "a) Is it possible to divide all real numbers of the segment $[0,1]$ into two disjoint sets $A$ and $B$ and to define a continuous function $f(x)$ so that for every number $x$ in the set $A$ the number $f(x)$ belongs to the set $B$ and, vice versa, for every number $x$ in the set $B$ the number $f(x)$ belongs to the set $A$?\n\nb) The same question if the segment $[0,1]$ is replaced by the half-open interval $[0,1)$.",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-11"
+      "reviewed_at": "2026-10-14",
+      "statement_sha256": "69d8e2e098967a042aef27d4e41997aa7f35c56e20e31bcfa1bfd4515072e988",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Analysis"
+          ],
+          "reviewed_statement": "(a) Is it possible to partition the segment $[0,1]$ into two sets $A$ and $B$ and to define a continuous function $f$ such that for every $x\\in A$, $f(x)\\in B$, and for every $x\\in B$, $f(x)\\in A$?\\n(b) Answer the same question with $[0,1]$ replaced by $[0,1)$.",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-11",
+          "statement_sha256": "1952a19e65e655526c50920bdfb33c18abc9c69fc21071fe7641c84f379dde1b"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official Estonian wording (English booklet or translation of the Estonian original), 2026-10-14."
     },
-    "eet.1997.0.5": {
+    "eet.1997.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A quadrilateral $ABCD$ is inscribed in a circle. On each of the sides $AB,BC,CD,DA$ one erects a rectangle towards the interior of the quadrilateral, the other side of the rectangle being equal to $CD,DA,AB,BC$, respectively. Prove that the centers of these four rectangles are vertices of a rectangle.",
+      "reviewed_statement": "On the sides $AB$, $BC$, $CD$ and $DA$ of a cyclic quadrilateral $ABCD$, rectangles are constructed outwards from the quadrilateral whose heights are equal to the lengths of the sides $CD$, $DA$, $AB$ and $BC$ of the quadrilateral, respectively. Prove that the quadrilateral whose vertices are the centres of these four rectangles is a rectangle.",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-11"
+      "reviewed_at": "2026-10-14",
+      "statement_sha256": "78a8d2cb6072919ab9cea2ba0b444119d41cda562b3dd5446817f41d7bc70ba2",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A quadrilateral $ABCD$ is inscribed in a circle. On each of the sides $AB,BC,CD,DA$ one erects a rectangle towards the interior of the quadrilateral, the other side of the rectangle being equal to $CD,DA,AB,BC$, respectively. Prove that the centers of these four rectangles are vertices of a rectangle.",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-11",
+          "statement_sha256": "22b90baeca6b3fe6d550684f1b932436b0d0544c53d0141f2174c3aa2f6e84c9"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official Estonian wording (English booklet or translation of the Estonian original), 2026-10-14."
     },
-    "eet.1997.0.6": {
+    "eet.1997.2.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "It is known that for every integer $n>1$ there is a prime number among $n+1,n+2,\\ldots,2n-1$. Determine all positive integers $n$ with the following property: Every integer $m>1$ less than $n$ and coprime to $n$ is prime.",
+      "reviewed_statement": "It is known that for every integer $k>1$ there is at least one prime number among the numbers $k+1, k+2, \\dots, 2k-1$. Find all positive integers $n$ with the following property: every integer $m>1$ that is less than $n$ and coprime to $n$ is prime.",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-11"
+      "reviewed_at": "2026-10-14",
+      "statement_sha256": "fdf23a90552d065b0de044e4b1bdb96d3033cad9153ae85ecb1a42bffd5da07f",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "It is known that for every integer $n>1$ there is a prime number among $n+1,n+2,\\ldots,2n-1$. Determine all positive integers $n$ with the following property: Every integer $m>1$ less than $n$ and coprime to $n$ is prime.",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-11",
+          "statement_sha256": "8f9d181e9a41bdb633797747b43c055bf85aa9f6461d139f2e3694f40d59af7f"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official Estonian wording (English booklet or translation of the Estonian original), 2026-10-14."
     }
   }
 }

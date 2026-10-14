@@ -9,6 +9,8 @@ Latest import: `israel-tst-import-2026-10-11.md`: 74 statements in 24 complete d
 
 Latest Cyprus import: 78 statements in 19 complete Grade 12 Pancyprian examinations (2006, 2007, 2009–2019 and two in 2021, then 2022–2025), with 75 original-source checks and three visible source qualifications. Actual dates retained. Cyprus TST remains 184 statements/46 examinations; latest missing papers and pre-2006/2008 national gaps are documented in `cyprus-pancyprian-2026-10-11.md`. Next agreed country: Estonia.
 
+Estonia done (14 Oct 2026): final grade 12 1993–2026 (170) and IMO TST 1993–2025 (264, +93 added) checked against the official Tartu archive and English booklets; 425 source checks, 9 editorial-correction notes. Open: TST 2026 papers (not yet published). See `estonia-official-check-2026-10-14.md`.
+
 ## Completed agreed work
 - Paraguay: OMAPA Level 3 national finals, 2001–2016, 79 statements and 16 source figure crops.
 - Malaysia: IMONST 2 Senior, 2020–2025, 36 statements. This is separate from OMK; 2026 Senior round is scheduled after this audit.

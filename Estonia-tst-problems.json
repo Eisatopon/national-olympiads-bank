@@ -2,29 +2,140 @@
   "competition": "Estonian IMO Team Selection Contest",
   "years": [
     {
+      "year": 1993,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A tennis club has $n$ players $a_1, a_2, \\dots, a_n$. For doubles competitions, $n$ different pairs $K_1, K_2, \\dots, K_n$ are formed from them. It is known that the pair $(a_i, a_j)$ is among these pairs if and only if the pairs $K_i$ and $K_j$ have one player in common. Prove that every player occurs in exactly two pairs."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $\\alpha$, $\\beta$ and $\\gamma$ be the angles of a triangle, $R$ the radius of its circumcircle and $S$ its area. Prove that $$\\tan\\frac{\\alpha}{2}+\\tan\\frac{\\beta}{2}+\\tan\\frac{\\gamma}{2}\\le\\frac{9R^2}{4S}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "It is known that the number $d$ is the greatest common divisor of the natural numbers $m$ and $n$, and that the quotient $\\frac{m}{d}$ is odd. Prove that the numbers $x=2^m-1$ and $y=2^n+1$ are coprime."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Through the vertices $A$, $B$, $C$ of an acute triangle $ABC$, lines $L_A$, $L_B$, $L_C$, respectively, are drawn in the following way.\n\nLet $H$ be the foot of the altitude drawn from the vertex $A$ on the side $BC$, and let the circle $S_A$ with diameter $AH$ intersect the sides $AB$ and $AC$ of the triangle at the points $M$ and $N$, respectively ($M\\ne A$ and $N\\ne A$); then the line $L_A$ is drawn through the point $A$ perpendicular to the segment $MN$. The lines $L_B$ and $L_C$ are constructed analogously.\n\nProve that the lines $L_A$, $L_B$ and $L_C$ intersect at one point."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "All possible seven-digit numbers are formed from the digits $0$ and $1$, including those that begin with zero(s). What is the maximum number of these numbers that can be chosen so that any two chosen numbers have different digits in at least three positions?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a_1, a_2, \\dots, a_n$ be pairwise distinct positive integers such that all possible sums of them (taken $1, 2, \\dots, n$ at a time, $2^n-1$ sums in total) are all different. Prove that $$\\frac{1}{a_1}+\\frac{1}{a_2}+\\dots+\\frac{1}{a_n}<2.$$"
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "From the vertex $B$ of a triangle $ABC$, $n$ rays are drawn which intersect the side $AC$ at the points $X_1, X_2, \\dots, X_n$, respectively (the points $A, X_1, \\dots, X_n, C$ lie on the line $AC$ in the order shown). Let $r_0, r_1, \\dots, r_n$ and $R_0, R_1, \\dots, R_n$ be the radii of the incircles and of the “excircles” of the triangles $ABX_1, X_1BX_2, \\dots, X_nBC$, respectively (see the figure). Prove that the number $$\\frac{r_0r_1\\dots r_n}{R_0R_1\\dots R_n}$$ does not depend on the number $n$ of rays or on the choice of the points $X_1, X_2, \\dots, X_n$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/estoniatst_1994_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all pairs $(x, y)$ of natural numbers greater than one for which the number $2^x+3^y$ is the square of some natural number."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "There are $32$ coins of identical appearance on a table, which may have two different weights (it is known that there are both lighter and heavier coins among them). How can one find one lighter and one heavier coin with five weighings on a balance scale without weights?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Two circles touch each other externally. One of them is the circumcircle of an equilateral triangle none of whose vertices lies at the point of tangency of the circles. From each vertex of this triangle a tangent is drawn to the other circle. Prove that the length of one of the resulting tangent segments is equal to the sum of the lengths of the other two tangent segments."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that for any positive numbers $a, b, c, d, e$ the inequality $$(a+b+c+d+e)^2\\ge 4(ab+bc+cd+de+ea)$$ holds."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For two disjoint sets of numbers $A$ and $B$, each containing $2n$ elements, we write $A\\xrightarrow{x}B$ if among the $4n^2$ formal inequalities $a>b$, where $a\\in A$ and $b\\in B$, there are at least $x$ times as many true inequalities as false ones. Prove that:\n\na) there do not exist sets of numbers $A_1, A_2, \\dots, A_k$ for which $$A_1\\xrightarrow{3}A_2\\xrightarrow{3}\\dots\\xrightarrow{3}A_{k-1}\\xrightarrow{3}A_k\\xrightarrow{3}A_1;$$\n\nb) for any real number $x<3$ there exist sets of numbers $A_1, A_2, \\dots, A_k$ such that $$A_1\\xrightarrow{x}A_2\\xrightarrow{x}\\dots\\xrightarrow{x}A_{k-1}\\xrightarrow{x}A_k\\xrightarrow{x}A_1.$$"
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all functions $f(n)$ that are defined for all non-negative integers $n$, take only non-negative integer values and satisfy the condition $f(f(n))+f(n)=2n+3$ for every non-negative integer $n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Three vertices $A$, $B$, $C$ of a parallelogram $ABCD$ are given in the plane. How can the fourth vertex $D$ of this parallelogram be constructed using only a compass with a fixed distance between its legs? (The distance between the legs of the compass is not known in advance; neither a ruler nor any other instruments may be used.)"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The sum of the squares of five real numbers $a_1, a_2, a_3, a_4, a_5$ is $1$. Prove that among them there exist two numbers $a_i$ and $a_j$ $(i\\ne j)$ such that $|a_i-a_j|\\le\\frac{1}{\\sqrt{10}}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be an arbitrary positive integer and $k$ a positive integer that leaves remainder $1$ when divided by four. Prove that the number $$C_n^1+C_n^3k+C_n^5k^2+C_n^7k^3+\\dots$$ is divisible by $2^{n-1}$. (Here $C_n^m$ denotes the number of combinations of $n$ elements taken $m$ at a time, and the number of terms in the sum under consideration is $\\left[\\frac{n+1}{2}\\right]$.)"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$18$ teams take part in a basketball tournament. Each team plays one game against every other team; a basketball game cannot end in a draw. Prove that at the end of the tournament there certainly exist three teams $A$, $B$ and $C$ such that each of the remaining teams has lost to at least one of these three in the tournament."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Through the orthocentre of an acute triangle $ABC$ a line $l$ is drawn that does not pass through any vertex of this triangle. Prove that the three lines that are symmetric to the line $l$ with respect to the lines determined by the sides of the triangle $ABC$ intersect at one point, and that this point lies on the circumcircle of the triangle $ABC$."
+        }
+      ]
+    },
+    {
       "year": 1996,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "The numbers $x$, $y$ and $\\frac{x^2+y^2+6}{xy}$ are positive integers. Prove that $\\frac{x^2+y^2+6}{xy}$ is a perfect cube."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "Let $a$, $b$, $c$ be the sides of a triangle and $\\alpha$, $\\beta$, $\\gamma$ the opposite angles of the sides respectively. Prove that if the inradius of the triangle is $r$ then $a\\sin\\alpha+b\\sin\\beta+c\\sin\\gamma\\ge 9r$."
         },
         {
+          "day": 1,
           "number": 3,
           "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ satisfying the following conditions for all $x\\in\\mathbb{R}$:\n(a) $f(x)=-f(-x)$;\n(b) $f(x+1)=f(x)+1$;\n(c) $f\\left(\\frac1x\\right)=\\frac{1}{x^2}f(x)$, if $x\\ne 0$."
         },
         {
+          "day": 2,
           "number": 4,
           "problem": "Prove that the polynomial $P_n(x)=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}+\\dots+\\frac{x^n}{n!}$ has no zeros if $n$ is even and has exactly one zero if $n$ is odd."
         },
         {
+          "day": 2,
           "number": 5,
           "problem": "Let $H$ be the ortocenter of an obtuse triangle $ABC$ and $A_1$, $B_1$, $C_1$ arbitrary points taken on the sides $BC$, $AC$, $AB$, respectively. Prove that the tangents drawn from the point $H$ to the circles with diameters $AA_1$, $BB_1$, $CC_1$ are equal."
         },
         {
+          "day": 2,
           "number": 6,
           "problem": "Each face of a cube is divided into $n\\times n$ equal squares. The vertices of the squares are called nodes, so each face of the cube has $(n+1)^2$ nodes.\n(a) For $n=2$, does there exist a closed broken line whose links are the edges of the squares which contains each node exactly once?\n(b) for $n$ arbitrary, prove that each such broken line divides the surface area of the cube into two equal parts."
         }
@@ -34,28 +145,139 @@
       "year": 1997,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "In a triangle $ABC$, let $A_1,B_1,C_1$ be the midpoints of $BC,CA,AB$, respectively, and let $A_2,B_2,C_2$ be the midpoints of the altitudes from $A,B,C$, respectively. Prove that the lines $A_1A_2$, $B_1B_2$, and $C_1C_2$ are concurrent."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "Prove that for all positive real numbers $a_1,a_2,\\ldots,a_n$, $$\\frac{1}{\\frac{1}{1+a_1}+\\frac{1}{1+a_2}+\\cdots+\\frac{1}{1+a_n}}-\\frac{1}{\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n}}\\ge\\frac1n.$$ When does equality hold?"
         },
         {
+          "day": 1,
           "number": 3,
-          "problem": "There are $n$ boyfriend-girlfriend pairs at a party. Initially all the girls sit at a round table. For the first dance, each boy invites one of the girls to dance with. After each dance, a boy takes the girl he danced with to her seat, and for the next dance he invites the girl next to her in the counterclockwise direction. For which values of $n$ can the girls be selected in such a way that in every dance at least one boy danced with his girlfriend, assuming that there are no less than $n$ dances?"
+          "problem": "At a dance party, $n$ young men gather, each together with his girlfriend. At the beginning of the party all the girls sit along the wall of a circular hall, and for the first dance each young man invites one of them to dance. After each dance the young men escort their partners back to their seats, and for the next dance each of them invites the next girl in the counterclockwise direction. For which values of $n$ can the girls be seated so that during every dance some young man dances with his own girlfriend, if it is known that at least $n$ dances are danced during the party?"
         },
         {
+          "day": 2,
           "number": 4,
-          "problem": "(a) Is it possible to partition the segment $[0,1]$ into two sets $A$ and $B$ and to define a continuous function $f$ such that for every $x\\in A$, $f(x)\\in B$, and for every $x\\in B$, $f(x)\\in A$?\\n(b) Answer the same question with $[0,1]$ replaced by $[0,1)$."
+          "problem": "a) Is it possible to divide all real numbers of the segment $[0,1]$ into two disjoint sets $A$ and $B$ and to define a continuous function $f(x)$ so that for every number $x$ in the set $A$ the number $f(x)$ belongs to the set $B$ and, vice versa, for every number $x$ in the set $B$ the number $f(x)$ belongs to the set $A$?\n\nb) The same question if the segment $[0,1]$ is replaced by the half-open interval $[0,1)$."
         },
         {
+          "day": 2,
           "number": 5,
-          "problem": "A quadrilateral $ABCD$ is inscribed in a circle. On each of the sides $AB,BC,CD,DA$ one erects a rectangle towards the interior of the quadrilateral, the other side of the rectangle being equal to $CD,DA,AB,BC$, respectively. Prove that the centers of these four rectangles are vertices of a rectangle."
+          "problem": "On the sides $AB$, $BC$, $CD$ and $DA$ of a cyclic quadrilateral $ABCD$, rectangles are constructed outwards from the quadrilateral whose heights are equal to the lengths of the sides $CD$, $DA$, $AB$ and $BC$ of the quadrilateral, respectively. Prove that the quadrilateral whose vertices are the centres of these four rectangles is a rectangle."
         },
         {
+          "day": 2,
           "number": 6,
-          "problem": "It is known that for every integer $n>1$ there is a prime number among $n+1,n+2,\\ldots,2n-1$. Determine all positive integers $n$ with the following property: Every integer $m>1$ less than $n$ and coprime to $n$ is prime."
+          "problem": "It is known that for every integer $k>1$ there is at least one prime number among the numbers $k+1, k+2, \\dots, 2k-1$. Find all positive integers $n$ with the following property: every integer $m>1$ that is less than $n$ and coprime to $n$ is prime."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "On the side $AB$ of a triangle $ABC$, points $C_1$ and $C_2$ are chosen so that the point $C_2$ lies between the points $C_1$ and $B$. Analogously, points $A_1$, $A_2$ are chosen on the side $BC$ and points $B_1$, $B_2$ on the side $CA$ so that the point $A_2$ lies between the points $A_1$ and $C$, and the point $B_2$ lies between the points $B_1$ and $A$. Let the rays $C_2A_1$ and $B_1A_2$ intersect at the point $D$, the rays $A_2B_1$ and $C_1B_2$ at the point $E$, and the rays $B_2C_1$ and $A_1C_2$ at the point $F$. Prove that the equalities $$\\frac{|A_1A_2|}{|BC|}=\\frac{|B_1B_2|}{|CA|}=\\frac{|C_1C_2|}{|AB|}$$ hold if and only if $$\\frac{|B_2C_1|}{|EF|}=\\frac{|C_2A_1|}{|FD|}=\\frac{|A_2B_1|}{|DE|}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f$ be a monotonically increasing function defined on the whole set of real numbers which satisfies the condition $f(x^2)-x^2=f(x)-x$ for every real number $x$. Find all such functions $f$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Traffic at a crossroads with $n$ road ends ($n\\ge 3$) is organized in cyclically alternating phases, so that during each phase movement is allowed only in certain directions. The following conditions are fulfilled:\n\n1) For any two different road ends $S$ and $S'$ there is a phase during which one may drive across the crossroads from the road end $S$ to the road end $S'$;\n\n2) Denote the road ends entering the crossroads, counted counterclockwise, by $S_0, S_1, \\dots, S_{n-1}$, where the indices are interpreted “modulo $n$”, i.e. $S_n=S_0$ etc. If during some phase one may drive across the crossroads from the road end $S_i$ to some other road end $S_j$, then during the same phase one may not drive from any of the road ends $S_{i+1}, \\dots, S_{j-1}$ to any of the road ends $S_j, \\dots, S_i$, nor from any of the road ends $S_j, \\dots, S_{i-1}$ to any of the road ends $S_{i+1}, \\dots, S_j$.\n\nFind the least possible number of phases with different traffic arrangements at this crossroads."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $x_1, x_2, \\dots, x_n$ and $y_1, y_2, \\dots, y_n$ be real numbers satisfying the conditions $x_1\\ge x_2\\ge\\dots\\ge x_n>0$ and $y_1\\ge x_1$, $y_1y_2\\ge x_1x_2$, $\\dots$, $y_1y_2\\dots y_n\\ge x_1x_2\\dots x_n$. Prove that $y_1+y_2+\\dots+y_n\\ge x_1+x_2+\\dots+x_n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $k$ be a fixed positive integer. Define the sequence $(E_n)$ by $$E_1=k+1;\\qquad E_{n+1}=E_n^2-kE_n+k\\quad(n\\ge 1).$$ Prove that all terms of the sequence $(E_n)$ are pairwise coprime."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "a) In the strip between the parallel lines $s_1$ and $s_2$, four distinct points $A$, $B$, $C$ and $D$ are chosen so that there exists a closed broken line with four links whose vertices lie alternately on the lines $s_1$ and $s_2$ and whose links pass through the points $A$, $B$, $C$ and $D$, respectively (in this order), where the common endpoint of the links passing through $A$ and $B$ lies on the line $s_1$ (see Figure 1, left). Prove that if for the given points $A$, $B$, $C$, $D$ there exists more than one such broken line, then there are infinitely many such broken lines.\n\nb) Prove the analogous statement in the case when, instead of the lines $s_1$ and $s_2$, there are the rays $OM$ and $ON$ forming the sides of some angle $MON$, and the points $A$, $B$, $C$ and $D$ lie in the interior of the angle $MON$ (see Figure 2, right).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/estoniatst_1998_p6_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Does there exist a sequence of positive integers $a_1, a_2, \\dots, a_k, \\dots$ which satisfies both of the following conditions?\n\na) Every positive integer occurs in this sequence infinitely many times.\n\nb) For any integer $n\\ge 1$ the sequence $a_1^{(n)}, a_2^{(n)}, \\dots, a_k^{(n)}, \\dots$ (where $a_i^{(n)}$ are the remainders of the numbers $a_i$ upon division by $n$) is periodic, i.e. there exists an integer $T_n\\ge 1$ such that $a_{i+T_n}^{(n)}=a_i^{(n)}$ for every index $i$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In the plane, $n$ distinct circles of equal radius are given, no two of which are tangent to each other, and each given circle intersects at least one of the others. Prove that these circles have at least $n$ distinct points of intersection in total."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\ge 2$ and let $c_1, c_2, \\dots, c_n$ be non-negative real numbers for which the equality $$c_1c_2+c_2c_3+\\dots+c_{n-1}c_n+c_nc_1=1$$ holds. Find the least possible value of the sum $S_n=c_1+c_2+\\dots+c_n$ for a given number $n$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Dominoes are placed on a game board consisting of $30\\times 30$ squares until it is no longer possible to add any domino (each domino covers two neighbouring squares). Prove that there are at least $300$ dominoes on the board."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A function $f$ is defined for every real argument $x$, takes real values and has the following properties:\n\na) for any real numbers $x$ and $y$ the equality $$f(x+f(y)+yf(x))=y+f(x)+xf(y)$$ holds;\n\nb) the ratio $\\frac{f(x)}{x}$ takes only finitely many different values for nonzero real numbers $x$.\n\nFind all such functions $f$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The incircle of a triangle $ABC$ with centre $O$ touches the side $BC$ at the point $K$. Let $N$ and $M$ be the midpoints of the segments $BC$ and $AK$, respectively. Prove that the points $M$, $O$ and $N$ lie on one line."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Five real numbers are given such that, choosing any three of them, the difference between the sum of the three chosen numbers and the sum of the remaining two numbers is positive. Prove that the product of all $10$ such differences (corresponding to all possible triples of chosen numbers) does not exceed the product of the squares of the given $5$ numbers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that $18$ consecutive positive integers cannot be divided into two groups so that the products of the numbers in the two groups are equal."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $M$, $N$ and $K$ be the points of tangency of the incircle of a triangle $ABC$ with the sides of the triangle, and let $Q$ be the centre of the circle passing through the midpoints of the segments $MN$, $NK$ and $KM$. Prove that the centres of the incircle and the circumcircle of the triangle $ABC$ and the point $Q$ lie on one line."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all functions $f(n)$ with positive integer values that are defined for all positive integers $n$ and satisfy, for every such $n$, the condition $$f(f(f(n)))+f(f(n))+f(n)=3n.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a triangle $ABC$, $|AC|\\ne|BC|$. Choose a point $X$ in the interior of this triangle and denote $\\angle A=\\alpha$, $\\angle B=\\beta$, $\\angle ACX=\\varphi$ and $\\angle BCX=\\psi$. Prove that the equality $$\\frac{\\sin\\alpha\\sin\\beta}{\\sin(\\alpha-\\beta)}=\\frac{\\sin\\varphi\\sin\\psi}{\\sin(\\varphi-\\psi)}$$ holds if and only if the point $X$ lies on the median of the triangle $ABC$ drawn from the vertex $C$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Call an infinite sequence of positive integers an $F$-sequence if each of its terms, starting from the third, is equal to the sum of the two preceding terms. Is it possible to partition the set of all positive integers into\n\na) a finite;\n\nb) an infinite\n\nnumber of disjoint $F$-sequences?"
         }
       ]
     },
@@ -235,6 +457,41 @@
       ]
     },
     {
+      "year": 2006,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $k$ be an arbitrary fixed positive integer. Consider pairs of integers $(a,b)$ for which the quadratic equations $x^2-2ax+b=0$ and $y^2+2ay+b=0$ have real roots (not necessarily distinct), which can be denoted by $x_1$, $x_2$ and $y_1$, $y_2$, respectively, in such an order that the equality $x_1y_1-x_2y_2=4k$ holds.\n\na) Find the largest possible value of the second component $b$ of such a pair $(a,b)$.\n\nb) Find the sum of the second components of all such pairs."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $O$ be the circumcentre of an acute triangle $ABC$. Line $AO$ intersects side $BC$ at point $D$. Points $E$ and $F$ are chosen on sides $AB$ and $AC$ of the triangle, respectively, such that points $A$, $E$, $D$, $F$ lie on one circle. Let $E'$ and $F'$ be the feet of the perpendiculars drawn from points $E$ and $F$, respectively, to side $BC$. Prove that the length of segment $E'F'$ does not depend on the positions of points $E$ and $F$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A $10\\times 11$ grid is given. What is the maximal number of “crosses” covering five unit squares (see the figure) that can be placed on the grid so that no two of them cover the same square?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/estoniatst_2006_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Side $AC$ of an acute triangle $ABC$ is a diameter of circle $c_1$, and side $BC$ is a diameter of circle $c_2$. Let $E$ be the foot of the altitude drawn from vertex $B$ of the triangle and $F$ the foot of the altitude drawn from vertex $A$. Furthermore, let $L$ and $N$ be the intersection points of line $BE$ with circle $c_1$ (point $L$ lies on segment $BE$), and let $K$ and $M$ be the intersection points of line $AF$ with circle $c_2$ (point $K$ lies on segment $AF$). Prove that $KLMN$ is a cyclic quadrilateral."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a_1, a_2, a_3, \\dots$ be a sequence of positive real numbers. Prove that for any positive integer $n$ the inequality\n$$\\sum_{i=1}^{n} b_i^2\\le 4\\sum_{i=1}^{n} a_i^2$$\nholds, where $b_i$ is the arithmetic mean of the numbers $a_1, a_2, \\dots, a_i$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $d(n)$ denote the number of positive divisors of a positive integer $n$. A positive integer $n$ is called highly divisible if $d(m)<d(n)$ for all positive integers $m<n$. Two highly divisible integers $m$ and $n$ are called consecutive if $m<n$ and there is no highly divisible integer $s$ such that $m<s<n$. Prove that the set of all pairs $(a,b)$ of consecutive highly divisible integers for which $b$ is divisible by $a$ is finite."
+        }
+      ]
+    },
+    {
       "year": 2007,
       "problems": [
         {
@@ -280,7 +537,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $ABCD$ be a cyclic quadrangle whose midpoints of diagonals $AC$ and $BD$ are $F$ and $G$, respectively.\na) Prove the following implication: if the bisectors of angles at $B$ and $D$ of the quadrangle intersect at diagonal $AC$ then $\\frac14\\cdot|AC|\\cdot|BD|=\\sqrt{|AG|\\cdot|BF|\\cdot|CG|\\cdot|DF|}$.\nb) Does the converse implication also always hold?"
+          "problem": "Let $ABCD$ be a cyclic quadrangle whose midpoints of diagonals $AC$ and $BD$ are $F$ and $G$, respectively.\n\na) Prove the following implication: if the bisectors of angles at $B$ and $D$ of the quadrangle intersect at diagonal $AC$ then $\\frac14\\cdot|AC|\\cdot|BD|=\\sqrt{|AG|\\cdot|BF|\\cdot|CG|\\cdot|DF|}$.\n\nb) Does the converse implication also always hold?"
         },
         {
           "day": 1,
@@ -300,7 +557,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "A string of parentheses is any word that can be composed by the following rules.\n1) () is a string of parentheses.\n2) If $s$ is a string of parentheses then $(s)$ is a string of parentheses.\n3) If $s$ and $t$ are strings of parentheses then $st$ is a string of parentheses.\nThe midcode of a string of parentheses is the tuple of natural numbers obtained by finding, for all pairs of opening and its corresponding closing parenthesis, the number of characters remaining to the left from the medium position between these parentheses, and writing all these numbers in non-decreasing order. For example, the midcode of (()) is $(2,2)$ and the midcode of ()() is $(1,3)$. Prove that midcodes of arbitrary two different strings of parentheses are different."
+          "problem": "A string of parentheses is any word that can be composed by the following rules.\n\n1) () is a string of parentheses.\n\n2) If $s$ is a string of parentheses then $(s)$ is a string of parentheses.\n\n3) If $s$ and $t$ are strings of parentheses then $st$ is a string of parentheses.\n\nThe midcode of a string of parentheses is the tuple of natural numbers obtained by finding, for all pairs of opening and its corresponding closing parenthesis, the number of characters remaining to the left from the medium position between these parentheses, and writing all these numbers in non-decreasing order. For example, the midcode of (()) is $(2,2)$ and the midcode of ()() is $(1,3)$. Prove that midcodes of arbitrary two different strings of parentheses are different."
         }
       ]
     },
@@ -315,12 +572,12 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Call a finite set of positive integers independent if its elements are pairwise coprime, and nice if the arithmetic mean of the elements of every non-empty subset of it is an integer.\na) Prove that for any positive integer $n$ there is an $n$-element set of positive integers which is both independent and nice.\nb) Is there an infinite set of positive integers whose every independent subset is nice and which has an $n$-element independent subset for every positive integer $n$?"
+          "problem": "Call a finite set of positive integers independent if its elements are pairwise coprime, and nice if the arithmetic mean of the elements of every non-empty subset of it is an integer.\n\na) Prove that for any positive integer $n$ there is an $n$-element set of positive integers which is both independent and nice.\n\nb) Is there an infinite set of positive integers whose every independent subset is nice and which has an $n$-element independent subset for every positive integer $n$?"
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Find all natural numbers $n$ for which there exists a convex polyhedron satisfying the following conditions:\n(i) Each face is a regular polygon.\n(ii) Among the faces, there are polygons with at most two different numbers of edges.\n(iii) There are two faces with common edge that are both $n$-gons."
+          "problem": "Find all natural numbers $n$ for which there exists a convex polyhedron satisfying the following conditions:\n\n(i) Each face is a regular polygon.\n\n(ii) Among the faces, there are polygons with at most two different numbers of edges.\n\n(iii) There are two faces with common edge that are both $n$-gons."
         },
         {
           "day": 2,
@@ -330,7 +587,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A strip consists of $n$ squares which are numerated in their order by integers $1, 2, 3, \\dots, n$. In the beginning, one square is empty while each remaining square contains one piece. Whenever a square contains a piece and its some neighbouring square contains another piece while the square immediately following the neighbouring square is empty, one may raise the first piece over the second one to the empty square, removing the second piece from the strip.\nFind all possibilites which square can be initially empty, if it is possible to reach a state where the strip contains only one piece and a) $n=2008$; b) $n=2009$."
+          "problem": "A strip consists of $n$ squares which are numerated in their order by integers $1, 2, 3, \\dots, n$. In the beginning, one square is empty while each remaining square contains one piece. Whenever a square contains a piece and its some neighbouring square contains another piece while the square immediately following the neighbouring square is empty, one may raise the first piece over the second one to the empty square, removing the second piece from the strip.\n\nFind all possibilites which square can be initially empty, if it is possible to reach a state where the strip contains only one piece and a) $n=2008$; b) $n=2009$."
         },
         {
           "day": 2,
@@ -345,7 +602,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "For arbitrary positive integers $a$, $b$, denote $a\\ominus b=\\frac{a-b}{\\gcd(a,b)}$. Let $n$ be a positive integer. Prove that the following conditions are equivalent:\n(i) $\\gcd(n,n\\ominus m)=1$ for every positive integer $m<n$;\n(ii) $n=p^k$ where $p$ is a prime number and $k$ is a non-negative integer."
+          "problem": "For arbitrary positive integers $a$, $b$, denote $a\\ominus b=\\frac{a-b}{\\gcd(a,b)}$. Let $n$ be a positive integer. Prove that the following conditions are equivalent:\n\n(i) $\\gcd(n,n\\ominus m)=1$ for every positive integer $m<n$;\n\n(ii) $n=p^k$ where $p$ is a prime number and $k$ is a non-negative integer."
         },
         {
           "day": 1,
@@ -370,7 +627,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Every unit square of a $n\\times n$ board is colored either red or blue so that among all $2\\times 2$ squares on this board all possible colorings of $2\\times 2$ squares with these two colors are represented (colorings obtained from each other by rotation and reflection are considered different).\na) Find the least possible value of $n$.\nb) For the least possible value of $n$ find the least possible number of red unit squares."
+          "problem": "Every unit square of a $n\\times n$ board is colored either red or blue so that among all $2\\times 2$ squares on this board all possible colorings of $2\\times 2$ squares with these two colors are represented (colorings obtained from each other by rotation and reflection are considered different).\n\na) Find the least possible value of $n$.\n\nb) For the least possible value of $n$ find the least possible number of red unit squares."
         }
       ]
     },
@@ -390,7 +647,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Does there exist an operation $*$ on the set of all integers such that the following conditions hold simultaneously:\n(1) for any integers $x$, $y$, $z$, $(x*y)*z=x*(y*z)$;\n(2) for any integers $x$ and $y$, $x*x*y=y*x*x=y$?"
+          "problem": "Does there exist an operation $*$ on the set of all integers such that the following conditions hold simultaneously:\n\n(1) for any integers $x$, $y$, $z$, $(x*y)*z=x*(y*z)$;\n\n(2) for any integers $x$ and $y$, $x*x*y=y*x*x=y$?"
         },
         {
           "day": 2,
@@ -420,7 +677,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "For a given positive integer $n$ one has to choose positive integers $a_0, a_1, \\dots$ so that the following conditions hold:\n(1) $a_i=a_{i+n}$ for any $i$;\n(2) $a_i$ is not divisible by $n$ for any $i$;\n(3) $a_{i+a_i}$ is divisible by $a_i$ for any $i$.\nFor which positive integers $n>1$ is this possible only if the numbers $a_0, a_1, \\dots$ are all equal?"
+          "problem": "For a given positive integer $n$ one has to choose positive integers $a_0, a_1, \\dots$ so that the following conditions hold:\n\n(1) $a_i=a_{i+n}$ for any $i$;\n\n(2) $a_i$ is not divisible by $n$ for any $i$;\n\n(3) $a_{i+a_i}$ is divisible by $a_i$ for any $i$.\n\nFor which positive integers $n>1$ is this possible only if the numbers $a_0, a_1, \\dots$ are all equal?"
         },
         {
           "day": 1,
@@ -440,7 +697,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "On an $m\\times m$ board, at the midpoints of the unit squares there are some ants. At the time $0$ each ant starts moving with speed $1$ parallel to some edge of the board until it meets an ant moving in the opposite direction or until it reaches the edge of the board. When two ants moving in the opposite direction meet each other, both turn $90^\\circ$ clockwise and continue moving parallel to another edge of the board. Upon reaching the edge of the board the ant falls off the board.\na) Prove that eventually all the ants will have fallen off the board.\nb) Find the latest possible moment for the last ant to fall off the board."
+          "problem": "On an $m\\times m$ board, at the midpoints of the unit squares there are some ants. At the time $0$ each ant starts moving with speed $1$ parallel to some edge of the board until it meets an ant moving in the opposite direction or until it reaches the edge of the board. When two ants moving in the opposite direction meet each other, both turn $90^\\circ$ clockwise and continue moving parallel to another edge of the board. Upon reaching the edge of the board the ant falls off the board.\n\na) Prove that eventually all the ants will have fallen off the board.\n\nb) Find the latest possible moment for the last ant to fall off the board."
         }
       ]
     },
@@ -460,7 +717,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $x_1, \\dots, x_n$ be non-negative real numbers, not all of which are zeros.\n(i) Prove that\n$$1\\le\\frac{\\left(x_1+\\frac{x_2}{2}+\\frac{x_3}{3}+\\dots+\\frac{x_n}{n}\\right)\\cdot(x_1+2x_2+3x_3+\\dots+nx_n)}{(x_1+x_2+x_3+\\dots+x_n)^2}\\le\\frac{(n+1)^2}{4n}.$$\n(ii) Show that, for each $n\\ge 1$, both inequalities can hold as equalities."
+          "problem": "Let $x_1, \\dots, x_n$ be non-negative real numbers, not all of which are zeros.\n\n(i) Prove that\n$$1\\le\\frac{\\left(x_1+\\frac{x_2}{2}+\\frac{x_3}{3}+\\dots+\\frac{x_n}{n}\\right)\\cdot(x_1+2x_2+3x_3+\\dots+nx_n)}{(x_1+x_2+x_3+\\dots+x_n)^2}\\le\\frac{(n+1)^2}{4n}.$$\n\n(ii) Show that, for each $n\\ge 1$, both inequalities can hold as equalities."
         },
         {
           "day": 2,
@@ -470,7 +727,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Call a tuple $(b_m, b_{m+1}, \\dots, b_n)$ of integers perfect if both following conditions are fulfilled:\n1. There exists an integer $a>1$ such that $b_k=a^k+1$ for all $k=m, m+1, \\dots, n$;\n2. For all $k=m, m+1, \\dots, n$, there exists a prime number $q$ and a non-negative integer $t$ such that $b_k=q^t$.\nProve that if $n-m$ is large enough then there is no perfect tuples, and find all perfect tuples with the maximal number of components."
+          "problem": "Call a tuple $(b_m, b_{m+1}, \\dots, b_n)$ of integers perfect if both following conditions are fulfilled:\n\n1. There exists an integer $a>1$ such that $b_k=a^k+1$ for all $k=m, m+1, \\dots, n$;\n\n2. For all $k=m, m+1, \\dots, n$, there exists a prime number $q$ and a non-negative integer $t$ such that $b_k=q^t$.\n\nProve that if $n-m$ is large enough then there is no perfect tuples, and find all perfect tuples with the maximal number of components."
         },
         {
           "day": 2,
@@ -530,50 +787,50 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $q$ be a fixed positive rational number. Call number $x$ charismatic if there exist a positive integer $n$ and integers $\\alpha_1, \\alpha_2, \\dots, \\alpha_n$ such that\n$$x=(q+1)^{\\alpha_1}\\cdot(q+2)^{\\alpha_2}\\cdot\\ldots\\cdot(q+n)^{\\alpha_n}.$$\na) Prove that $q$ can be chosen in such a way that every positive rational number turns out to be charismatic.\nb) Is it true for every $q$ that, for every charismatic number $x$, the number $x+1$ is charismatic, too?"
+          "problem": "Let $q$ be a fixed positive rational number. Call number $x$ charismatic if there exist a positive integer $n$ and integers $\\alpha_1, \\alpha_2, \\dots, \\alpha_n$ such that\n$$x=(q+1)^{\\alpha_1}\\cdot(q+2)^{\\alpha_2}\\cdot\\ldots\\cdot(q+n)^{\\alpha_n}.$$\n\na) Prove that $q$ can be chosen in such a way that every positive rational number turns out to be charismatic.\n\nb) Is it true for every $q$ that, for every charismatic number $x$, the number $x+1$ is charismatic, too?"
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 4,
-          "problem": "Altitudes $AD$ and $BE$ of an acute triangle $ABC$ intersect at $H$. Let $P$ be the point of tangency of the circle with radius $HE$ centered at $H$ with its tangent line going through point $C$, and $Q$ be the point of tangency of the circle with radius $BE$ centered at $B$ with its tangent line going through point $C$. Prove that points $D$, $P$, and $Q$ are collinear."
+          "problem": "Altitudes $AD$ and $BE$ of an acute triangle $ABC$ intersect at $H$. Let $P$ be the point of tangency of the circle with radius $HE$ centered at $H$ with its second tangent line going through point $C$, and $Q$ be the point of tangency of the circle with radius $BE$ centered at $B$ with its second tangent line going through point $C$. Prove that points $D$, $P$, and $Q$ are collinear."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 5,
           "problem": "Find all functions $f$ from reals to reals which satisfy $f(f(x)+f(y))=f(x^2)+2x^2f(y)+(f(y))^2$ for all real numbers $x$ and $y$."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 6,
-          "problem": "In any rectangular game board with black and white squares, call a row $X$ a mix of rows $Y$ and $Z$ whenever each cell in row $X$ has the same colour as either the cell of the same column in row $Y$ or the cell of the same column in row $Z$. Let a natural number $m\\ge 3$ be given. In some rectangular board, black and white squares lie in such a way that all the following conditions hold.\n1) Among every three rows of the board, one is a mix of two others.\n2) For every two rows of the board, their corresponding cells in at least one column have different colours.\n3) For every two rows of the board, their corresponding cells in at least one column have equal colours.\n4) It is impossible to add a new row with each cell either black or white to the board in a way leaving both conditions 1) and 2) still in force.\nFind all possibilities of what can be the number of rows of the board."
+          "problem": "In any rectangular game board with black and white squares, call a row $X$ a mix of rows $Y$ and $Z$ whenever each cell in row $X$ has the same colour as either the cell of the same column in row $Y$ or the cell of the same column in row $Z$. Let a natural number $m\\ge 3$ be given. In some rectangular board with $m$ columns, black and white squares lie in such a way that all the following conditions hold.\n\n1) Among every three rows of the board, one is a mix of two others.\n\n2) For every two rows of the board, their corresponding cells in at least one column have different colours.\n\n3) For every two rows of the board, their corresponding cells in at least one column have equal colours.\n\n4) It is impossible to add a new row with each cell either black or white to the board in a way leaving both conditions 1) and 2) still in force.\n\nFind all possibilities of what can be the number of rows of the board."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 7,
           "problem": "Prove that for every prime number $p$ and positive integer $a$, there exists a natural number $n$ such that $p^n$ contains $a$ consecutive equal digits."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 8,
           "problem": "Find all positive integers $n$ for which it is possible to partition a regular $n$-gon into triangles with diagonals not intersecting inside the $n$-gon such that at every vertex of the $n$-gon an odd number of triangles meet."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 9,
-          "problem": "The orthocenter of an acute triangle $ABC$ is $H$. Let $K$ and $P$ be the midpoints of lines $BC$ and $AH$, respectively. The angle bisector drawn from the vertex $A$ of the triangle $ABC$ intersects with line $KP$ at $D$. Prove that $HD\\perp AD$."
+          "problem": "The orthocenter of an acute triangle $ABC$ is $H$. Let $K$ and $P$ be the midpoints of segments $BC$ and $AH$, respectively. The angle bisector drawn from the vertex $A$ of the triangle $ABC$ intersects with line $KP$ at $D$. Prove that $HD\\perp AD$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 10,
           "problem": "Let $n$ be an integer and $a$, $b$ real numbers such that $n>1$ and $a>b>0$. Prove that $(a^n-b^n)\\left(\\frac{1}{b^{n-1}}-\\frac{1}{a^{n-1}}\\right)>4n(n-1)\\left(\\sqrt a-\\sqrt b\\right)^2$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 11,
           "problem": "Let $M$ be the midpoint of the side $AB$ of a triangle $ABC$. A circle through point $C$ that has a point of tangency to the line $AB$ at point $A$ and a circle through point $C$ that has a point of tangency to the line $AB$ at point $B$ intersect the second time at point $N$. Prove that $|CM|^2+|CN|^2-|MN|^2=|CA|^2+|CB|^2-|AB|^2$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 12,
           "problem": "Call an $n$-tuple $(a_1, \\dots, a_n)$ occasionally periodic if there exist a non-negative integer $i$ and a positive integer $p$ satisfying $i+2p\\le n$ and $a_{i+j}=a_{i+p+j}$ for every $j=1, 2, \\dots, p$. Let $k$ be a positive integer. Find the least positive integer $n$ for which there exists an $n$-tuple $(a_1, \\dots, a_n)$ with elements from set $\\{1, 2, \\dots, k\\}$, which is not occasionally periodic but whose arbitrary extension $(a_1, \\dots, a_n, a_{n+1})$ is occasionally periodic for any $a_{n+1}\\in\\{1, 2, \\dots, k\\}$."
         }
@@ -598,47 +855,47 @@
           "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ satisfying the equality $f(2^x+2y)=2^yf(f(x))f(y)$ for every $x,y\\in\\mathbb{R}$."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 4,
-          "problem": "Prove that for any positive integer $n$, $2\\cdot\\sqrt3\\cdot\\sqrt[3]{4}\\cdot\\ldots\\cdot\\sqrt[n-1]{n}>n$."
+          "problem": "Prove that for any positive integer $n\\ge 3$, $2\\cdot\\sqrt3\\cdot\\sqrt[3]{4}\\cdot\\ldots\\cdot\\sqrt[n-1]{n}>n$."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 5,
-          "problem": "Let $O$ be the circumcentre of the acute triangle $ABC$. Let $c_1$ and $c_2$ be the circumcircles of triangles $ABO$ and $ACO$. Let $P$ and $Q$ be points on $c_1$ and $c_2$ respectively, such that $OP$ is a diameter of $c_1$ and $OQ$ is a diameter of $c_2$. Let $T$ be the intesection of the tangent to $c_1$ at $P$ and the tangent to $c_2$ at $Q$. Let $D$ be the second intersection of the line $AC$ and the circle $c_1$. Prove that the points $D$, $O$ and $T$ are collinear."
+          "problem": "Let $O$ be the circumcentre of the acute triangle $ABC$. Let $c_1$ and $c_2$ be the circumcircles of triangles $ABO$ and $ACO$. Let $P$ and $Q$ be points on $c_1$ and $c_2$ respectively, such that $OP$ is a diameter of $c_1$ and $OQ$ is a diameter of $c_2$. Let $T$ be the intersection of the tangent to $c_1$ at $P$ and the tangent to $c_2$ at $Q$. Let $D$ be the second intersection of the line $AC$ and the circle $c_1$. Prove that the points $D$, $O$ and $T$ are collinear."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 6,
           "problem": "A circle is divided into arcs of equal size by $n$ points ($n\\ge 1$). For any positive integer $x$, let $P_n(x)$ denote the number of possibilities for colouring all those points, using colours from $x$ given colours, so that any rotation of the colouring by $i\\cdot\\frac{360^\\circ}{n}$, where $i$ is a positive integer less than $n$, gives a colouring that differs from the original in at least one point. Prove that the function $P_n(x)$ is a polynomial with respect to $x$."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 7,
           "problem": "On the sides $AB$, $BC$ and $CA$ of triangle $ABC$, points $L$, $M$ and $N$ are chosen, respectively, such that the lines $CL$, $AM$ and $BN$ intersect at a common point $O$ inside the triangle and the quadrilaterals $ALON$, $BMOL$ and $CNOM$ have incircles. Prove that\n$$\\frac{1}{AL\\cdot BM}+\\frac{1}{BM\\cdot CN}+\\frac{1}{CN\\cdot AL}=\\frac{1}{AN\\cdot BL}+\\frac{1}{BL\\cdot CM}+\\frac{1}{CM\\cdot AN}.$$"
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 8,
           "problem": "Let $x$, $y$ and $z$ be positive real numbers such that $x+y+z=\\frac1x+\\frac1y+\\frac1z$. Prove that $xy+yz+zx\\ge 3$."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 9,
-          "problem": "Let $n$ be a positive integer such that there exists a positive integer that is less than $n$ and does not divide $n$. Let $(a_1, \\dots, a_n)$ be an arbitrary permutation of $1, \\dots, n$. Let $a_{i_1}<\\dots<a_{i_k}$ be its maximal increasing subsequence and let $a_{j_1}>\\dots>a_{j_l}$ be its maximal decreasing subsequence. Prove that tuples $(a_{i_1}, \\dots, a_{i_k})$ and $(a_{j_1}, \\dots, a_{j_l})$ altogether contain at least one number that does not divide $n$."
+          "problem": "Let $n$ be a positive integer such that there exists a positive integer that is less than $\\sqrt{n}$ and does not divide $n$. Let $(a_1, \\dots, a_n)$ be an arbitrary permutation of $1, \\dots, n$. Let $a_{i_1}<\\dots<a_{i_k}$ be its maximal increasing subsequence and let $a_{j_1}>\\dots>a_{j_l}$ be its maximal decreasing subsequence. Prove that tuples $(a_{i_1}, \\dots, a_{i_k})$ and $(a_{j_1}, \\dots, a_{j_l})$ altogether contain at least one number that does not divide $n$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 10,
           "problem": "Let $m$ be an integer, $m\\ge 2$. Each student in a school is practising $m$ hobbies the most. Among any $m$ students there exist two students who have a common hobby. Find the smallest number of students for which there must exist a hobby which is practised by at least $3$ students."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 11,
           "problem": "Find all positive integers $n$ such that $(n^2+11n-4)\\cdot n!+33\\cdot 13^n+4$ is a perfect square."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 12,
           "problem": "The circles $k_1$ and $k_2$ intersect at points $M$ and $N$. The line $l$ intersects with the circle $k_1$ at points $A$ and $C$ and with circle $k_2$ at points $B$ and $D$, so that points $A$, $B$, $C$ and $D$ are on the line $l$ in that order. Let $X$ be a point on line $MN$ such that the point $M$ is between points $X$ and $N$. Lines $AX$ and $BM$ intersect at point $P$ and lines $DX$ and $CM$ intersect at point $Q$. Prove that $PQ\\parallel l$."
         }
@@ -663,47 +920,47 @@
           "problem": "Let $ABC$ be a triangle with $AB=AC\\ne BC$ and let $I$ be its incenter. The line $BI$ meets $AC$ at $D$, and the line through $D$ perpendicular to $AC$ meets $AI$ at $E$. Prove that the reflection of $I$ in $AC$ lies on the circumcircle of triangle $BDE$."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 4,
           "problem": "Let $ABC$ be an isosceles triangle with apex $A$ and altitude $AD$. On $AB$, choose a point $F$ distinct from $B$ such that $CF$ is tangent to the incircle of $ABD$. Suppose that $\\triangle BCF$ is isosceles. Show that those conditions uniquely determine: a) which vertex of $BCF$ is its apex; b) the size of $\\angle BAC$."
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 5,
           "problem": "The leader of an IMO team chooses positive integers $n$ and $k$ with $n>k$, and announces them to the deputy leader and a contestant. The leader then secretly tells the deputy leader an $n$-digit binary string, and the deputy leader writes down all $n$-digit binary strings which differ from the leader's in exactly $k$ positions. (For example, if $n=3$ and $k=1$, and if the leader chooses $101$, the deputy leader would write down $001$, $111$, and $100$.) The contestant, who is allowed to look at the strings written by the deputy leader, tries to guess the leader's string. What is the minimum number of guesses (in terms of $n$ and $k$) needed to guarantee the correct answer?"
         },
         {
-          "day": 1,
+          "day": 2,
           "number": 6,
           "problem": "Let $\\mathbb{R}^+$ be the set of positive real numbers. Determine all functions $f:\\mathbb{R}^+\\to\\mathbb{R}^+$ satisfying the equation\n$$xf(x^2)f(f(y))+f(yf(x))=f(xy)\\bigl(f(f(x^2))+f(f(y^2))\\bigr)$$\nfor all $x,y\\in\\mathbb{R}^+$."
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 7,
-          "problem": "Let $n$ be a positive integer. In how many ways can an $n\\times n$ table be filled with integers from $0$ to $5$ such that\na) the sum of each row is divisible by $2$ and the sum of each column is divisible by $3$;\nb) the sum of each row is divisible by $2$, the sum of each column is divisible by $3$ and the sum of each of the two diagonals is divisible by $6$?"
+          "problem": "Let $n$ be a positive integer. In how many ways can an $n\\times n$ table be filled with integers from $0$ to $5$ such that\n\na) the sum of each row is divisible by $2$ and the sum of each column is divisible by $3$;\n\nb) the sum of each row is divisible by $2$, the sum of each column is divisible by $3$ and the sum of each of the two diagonals is divisible by $6$?"
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 8,
           "problem": "Let $a$, $b$ and $c$ be positive real numbers such that $\\min\\{ab,bc,ca\\}\\ge 1$. Prove that\n$$\\sqrt[3]{(a^2+1)(b^2+1)(c^2+1)}\\le\\left(\\frac{a+b+c}{3}\\right)^2+1.$$"
         },
         {
-          "day": 2,
+          "day": 3,
           "number": 9,
-          "problem": "Let $B=(-1,0)$ and $C=(1,0)$ be fixed points on the coordinate plane. A nonempty, bounded subset $S$ of the plane is said to be nice if\n(i) there is a point $T\\in S$ such that for every point $Q\\in S$, the segment $TQ$ lies entirely in $S$; and\n(ii) for any triangle $P_1P_2P_3$, there exists a unique point $A\\in S$ and a permutation $\\sigma$ of the indices $\\{1,2,3\\}$ for which triangles $ABC$ and $P_{\\sigma(1)}P_{\\sigma(2)}P_{\\sigma(3)}$ are similar.\nProve that there exist two distinct nice subsets $S$ and $S'$ of the set $\\{(x,y): x\\ge 0, y\\ge 0\\}$ such that if $A\\in S$ and $A'\\in S'$ are the unique choices of points in (ii), then the product $BA\\cdot BA'$ is a constant independent of the triangle $P_1P_2P_3$."
+          "problem": "Let $B=(-1,0)$ and $C=(1,0)$ be fixed points on the coordinate plane. A nonempty, bounded subset $S$ of the plane is said to be nice if\n\n(i) there is a point $T\\in S$ such that for every point $Q\\in S$, the segment $TQ$ lies entirely in $S$; and\n\n(ii) for any triangle $P_1P_2P_3$, there exists a unique point $A\\in S$ and a permutation $\\sigma$ of the indices $\\{1,2,3\\}$ for which triangles $ABC$ and $P_{\\sigma(1)}P_{\\sigma(2)}P_{\\sigma(3)}$ are similar.\n\nProve that there exist two distinct nice subsets $S$ and $S'$ of the set $\\{(x,y): x\\ge 0, y\\ge 0\\}$ such that if $A\\in S$ and $A'\\in S'$ are the unique choices of points in (ii), then the product $BA\\cdot BA'$ is a constant independent of the triangle $P_1P_2P_3$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 10,
           "problem": "Let $ABC$ be a triangle with $AB=\\frac{AC}{2}+BC$. Consider the two semicircles outside the triangle with diameters $AB$ and $BC$. Let $X$ be the orthogonal projection of $A$ onto the common tangent line of those semicircles. Find $\\angle CAX$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 11,
           "problem": "For any positive integer $k$, denote the sum of digits of $k$ in its decimal representation by $S(k)$. Find all polynomials $P(x)$ with integer coefficients such that for any positive integer $n\\ge 2016$, the integer $P(n)$ is positive and $S(P(n))=P(S(n))$."
         },
         {
-          "day": 2,
+          "day": 4,
           "number": 12,
           "problem": "Let $n$ be a natural number, $n\\ge 3$. Find the maximal number of diagonals of a regular $n$-gon one can select in such a way that every two selected diagonals that intersect each other inside the polygon are perpendicular."
         }
@@ -713,35 +970,63 @@
       "year": 2018,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "There are distinct points $O, A, B, K_1, \\dots, K_n, L_1, \\dots, L_n$ on a plane such that no three points are collinear. The open line segments $K_1L_1, \\dots, K_nL_n$ are coloured red, other points on the plane are left uncoloured. An allowed path from point $O$ to point $X$ is a polygonal chain with first and last vertices at points $O$ and $X$, containing no red points. For example, for $n=1$, and $K_1=(-1;0)$, $L_1=(1;0)$, $O=(0;-1)$, and $X=(0;1)$, $OK_1X$ and $OL_1X$ are examples of allowed paths from $O$ to $X$; there are no shorter allowed paths. Find the least positive integer $n$ such that it is possible that the first vertex that is not $O$ on any shortest possible allowed path from $O$ to $A$ is closer to $B$ than to $A$, and the first vertex that is not $O$ on any shortest possible allowed path from $O$ to $B$ is closer to $A$ than to $B$."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "Find the greatest number of depicted pieces composed of $4$ unit squares that can be placed without overlapping on an $n\\times n$ grid (where $n$ is a positive integer) in such a way that it is possible to move from some corner to the opposite corner via uncovered squares (moving between squares requires a common edge). The shapes can be rotated and reflected.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/estoniatst_2018_p2_fig.png"
         },
         {
+          "day": 1,
           "number": 3,
+          "problem": "A real number $c$ and an integer $m$, $m\\ge 2$, are given. Real numbers $x_1, x_2, \\dots, x_m$ satisfy the conditions $x_1+x_2+\\dots+x_m=0$ and $\\frac{x_1^2+x_2^2+\\dots+x_m^2}{m}=c$. Find $\\max(x_1, x_2, \\dots, x_m)$, given that it is as small as possible."
+        },
+        {
+          "day": 2,
+          "number": 4,
           "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ that satisfy $f(xy+f(xy))=2xf(y)$ for all $x,y\\in\\mathbb{R}$."
         },
         {
-          "number": 4,
+          "day": 2,
+          "number": 5,
           "problem": "Let $O$ be the circumcentre of an acute scalene triangle $ABC$. Line $OA$ intersects the altitudes of $ABC$ through $B$ and $C$ at $P$ and $Q$, respectively. The altitudes meet at $H$. Prove that the circumcentre of triangle $PQH$ lies on the median drawn from vertex $A$ of triangle $ABC$."
         },
         {
-          "number": 5,
+          "day": 2,
+          "number": 6,
           "problem": "We call a positive integer $n$ whose all digits are distinct bright, if either $n$ is a one-digit number or there exists a divisor of $n$ which can be obtained by omitting one digit of $n$ and which is bright itself. Find the largest bright positive integer. (We assume that numbers do not start with zero.)"
         },
         {
-          "number": 6,
+          "day": 3,
+          "number": 7,
+          "problem": "Let $AD$ be an altitude of an acute triangle $ABC$. Distinct points $E$ and $F$ are chosen on the line $AD$ such that $DE=DF$ and the point $E$ lies inside the triangle $ABC$. The circumcircle of triangle $BEF$ intersects the segments $BC$ and $BA$ for the second time at points $K$ and $M$, respectively. The circumcircle of triangle $CEF$ intersects the segments $CB$ and $CA$ for the second time at points $L$ and $N$, respectively. Prove that the lines $AD$, $KM$ and $LN$ meet at one point."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Find all integers $k\\ge 5$ for which there exists a positive integer $n$ with exactly $k$ positive divisors $1=d_1<d_2<\\dots<d_k=n$ that satisfy the condition $d_2d_3+d_3d_5+d_5d_2=n$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $m$ and $n$ be positive integers. Player A has a board of size $m\\times n$, and player B has a board of size $1\\times n$ (the first dimension denotes the number of rows). On the opening move, each player places arbitrarily either a white or a black counter on every square of their own board. On each subsequent move, each player may reverse the colour of any chosen counters on their own board, but in no row may the colour of more than one counter be changed on the same move (it is also allowed not to change the colour of any counter). The players move alternately, A starting. Player A wins if a position arises in which the colours of the counters in the only row of player B's board, from left to right, are the same as in some row of player A's board. Prove that player A can win against any play of B if and only if $n<2m$."
+        },
+        {
+          "day": 4,
+          "number": 10,
           "problem": "A sequence of positive real numbers $a_1, a_2, a_3, \\dots$ satisfies $a_n=a_{n-1}+a_{n-2}$ for all $n\\ge 3$. A sequence $b_1, b_2, b_3, \\dots$ is defined by equations $b_1=a_1$, $b_n=a_n+(b_1+b_3+\\dots+b_{n-1})$ for even $n>1$, $b_n=a_n+(b_2+b_4+\\dots+b_{n-1})$ for odd $n>1$. Prove that if $n\\ge 3$, then $\\frac13<\\frac{b_n}{n\\cdot a_n}<1$."
         },
         {
-          "number": 7,
+          "day": 4,
+          "number": 11,
           "problem": "Let $k$ be a positive integer. Find all positive integers $n$, such that it is possible to mark $n$ points on the sides of a triangle (different from its vertices) and connect some of them with a line in such a way that the following conditions are satisfied: 1) there is at least $1$ marked point on each side; 2) for each pair of points $X$ and $Y$ marked on different sides, on the third side there exist exactly $k$ marked points which are connected to both $X$ and $Y$ and exactly $k$ points which are connected to neither $X$ nor $Y$."
         },
         {
-          "number": 8,
+          "day": 4,
+          "number": 12,
           "problem": "Let a simple polynomial function be a polynomial function $P(x)$ whose coefficients belong to the set $\\{-1,0,1\\}$. Let $n$ be a positive integer, $n>1$. Find the smallest possible number of non-zero coefficients in a simple polynomial function of $n$th order whose values at all integral arguments are divisible by $n$."
         }
       ]
@@ -750,20 +1035,64 @@
       "year": 2019,
       "problems": [
         {
+          "day": 1,
           "number": 1,
+          "problem": "A positive integer $n$ is written on the board. Ats and Pets play the following game. Ats finds all different representations of $n$ as a product of powers of primes greater than $1$, in which each factor is either greater than all the preceding factors or equal to the preceding one. Pets finds all different representations of $n$ as a product of integers greater than $1$, in which each factor is divisible by all the preceding factors. The player who obtains more representations wins; if both obtain equally many representations, the game is a draw. Find all positive integers $n$ for which the game is a draw.\n\nNote: the representation consisting of the single factor $n$ also counts as a representation of $n$ as a product."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The orthocentre of an acute triangle $ABC$ is $H$, and the foot of the altitude drawn from the vertex $A$ is $K$. A circle $c$ passes through the points $A$ and $K$ and intersects the sides $AB$ and $AC$ at points $M$ and $N$, respectively. The line through $A$ parallel to $BC$ intersects the circumcircles of triangles $AHM$ and $AHN$ for the second time at points $X$ and $Y$, respectively. Prove that $XY=BC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
           "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ which for all $x,y\\in\\mathbb{R}$ satisfy\n$$f(x^2)f(y^2)+|x|f(-xy^2)=3|y|f(x^2y).$$"
         },
         {
-          "number": 2,
+          "day": 2,
+          "number": 4,
           "problem": "Let us call a real number $r$ interesting, if $r=a+b\\sqrt2$ for some integers $a$ and $b$. Let $A(x)$ and $B(x)$ be polynomial functions with interesting coefficients for which the constant term of $B(x)$ is $1$, and $Q(x)$ be a polynomial function with real coefficients such that $A(x)=B(x)\\cdot Q(x)$. Prove that the coefficients of $Q(x)$ are interesting."
         },
         {
-          "number": 3,
+          "day": 2,
+          "number": 5,
           "problem": "Boeotia is comprised of $3$ islands which are home to $2019$ towns in total. Each flight route connects three towns, each on a different island, providing connections between any two of them in both directions. Any two towns in the country are connected by at most one flight route. Find the maximal number of flight routes in the country."
         },
         {
-          "number": 4,
+          "day": 2,
+          "number": 6,
           "problem": "It is allowed to perform the following transformations in the plane with any integers $\\alpha$: (1) Transform every point $(x,y)$ to the corresponding point $(x+\\alpha y,y)$; (2) Transform every point $(x,y)$ to the corresponding point $(x,y+\\alpha x)$. Does there exist a non-square rhombus whose all vertices have integer coordinates and which can be transformed to: a) Vertices of a square; b) Vertices of a rectangle with unequal side lengths?"
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $BE$ and $CF$ be two altitudes of an acute triangle $ABC$. The circle with diameter $AC$ intersects the altitude $BE$ at point $P$. The circle with diameter $AB$ intersects the altitude $CF$ at point $Q$ and the extension of this altitude at point $Q'$. Prove that $\\angle PQ'Q=\\angle PQB$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $n$ be a positive integer. There is a $1\\times(n+1)$ game strip and $n$ counters, which are initially all on the leftmost end square of the strip. In one move, one counter may be moved to the right by any number of squares from $1$ to $k$, where $k$ is the number of counters on the square from which the counter is moved, counted before the move; the counter must stay within the strip. The game ends when no more moves can be made. Prove that the number of moves in the game is at least\n$$\\left\\lceil\\frac{n}{1}\\right\\rceil+\\left\\lceil\\frac{n}{2}\\right\\rceil+\\dots+\\left\\lceil\\frac{n}{n}\\right\\rceil.$$\n\nNote: $\\lceil x\\rceil$ denotes the ceiling of the real number $x$, i.e. the least integer not smaller than $x$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Find all pairs $(n,k)$ of distinct positive integers for which there exists a positive integer $s$ such that the numbers $sn$ and $sk$ have equally many positive divisors."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $n\\ge 3$ be an integer. Prove that there exists a set $S$ of $2n$ distinct positive integers such that for every $m=2,3,\\dots,n$ one can choose exactly $m$ elements of $S$ in such a way that the sums of the chosen and of the unchosen elements are equal."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "A circle $\\omega$ with radius $1$ is given. A set $T$ of triangles is called good if the following conditions hold:\n\na) the circumcircle of every triangle in $T$ is $\\omega$;\n\nb) the interiors of no two triangles in $T$ have a common point.\n\nFind all positive real numbers $t$ such that for every positive integer $n$ there exists a good set of $n$ triangles in which the perimeter of every triangle is greater than $t$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Let $a_0, a_1, a_2, \\dots$ be a sequence of real numbers such that $a_0=0$, $a_1=1$ and for every $n\\ge 2$ there exists a positive integer $k\\le n$ for which\n$$a_n=\\frac{a_{n-1}+\\dots+a_{n-k}}{k}.$$\nFind the greatest possible value of $|a_{2019}-a_{2018}|$."
         }
       ]
     },
@@ -771,31 +1100,63 @@
       "year": 2020,
       "problems": [
         {
+          "day": 1,
           "number": 1,
+          "problem": "A circle $\\Gamma$ passes through the vertex $A$ of a triangle $ABC$, intersects the sides $AB$ and $AC$ for the second time at points $D$ and $E$, respectively, and intersects the side $BC$ at points $F$ and $G$, where $F$ lies between $B$ and $G$. The tangent to the circumcircle of triangle $BDF$ at point $F$ and the tangent to the circumcircle of triangle $CEG$ at point $G$ meet at a point $T$ different from $A$. Prove that the lines $AT$ and $BC$ are parallel."
+        },
+        {
+          "day": 1,
+          "number": 2,
           "problem": "There are $2020$ inhabitants in a town. Before Christmas, they are all happy; but if an inhabitant does not receive any Christmas card from any other inhabitant, he or she will become sad. Unfortunately, there is only one post company which offers only one kind of service: before Christmas, each inhabitant may appoint two different other inhabitants, among which the company chooses one to whom to send a Christmas card on behalf of that inhabitant. It is known that the company makes the choices in such a way that as many inhabitants as possible will become sad. Find the least possible number of inhabitants who will become sad."
         },
         {
-          "number": 2,
+          "day": 1,
+          "number": 3,
           "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that, for any real numbers $x$ and $y$,\n$$f\\left(x^3+y^3\\right)=f\\left(x^3\\right)+3x^3f(x)f(y)+3f(x)(f(y))^2+y^6f(y).$$"
         },
         {
-          "number": 3,
+          "day": 2,
+          "number": 4,
           "problem": "For every positive integer $x$, denote by $\\kappa(x)$ the number of composite numbers not greater than $x$. Find all positive integers $n$ such that\n$$(\\kappa(n))!\\cdot\\operatorname{lcm}(1,2,\\dots,n)>(n-1)!.$$"
         },
         {
-          "number": 4,
+          "day": 2,
+          "number": 5,
           "problem": "Given a triangle $\\Delta$ with circumradius $R$ and inradius $r$, prove that the area of the circle with radius $R+r$ is more than $5$ times greater than the area of the triangle $\\Delta$."
         },
         {
-          "number": 5,
-          "problem": "With an expression that uses an operator $*$, one can make the following transformations:\n(1) Rewrite an expression of the form $x*(y*z)$ as $((1*x)*y)*z$;\n(2) Rewrite an expression of the form $x*1$ as $x$.\nThe transformations may be performed only on the entire expression and not on the subexpressions. For example, $(1*1)*(1*1)$ may only be rewritten using the first kind of transformation as $((1*(1*1))*1)*1$ (taking $x=1*1$, $y=1$ and $z=1$), but not as $1*(1*1)$ or $(1*1)*1$ (in the latter two cases the second kind of transformation would have been applied just to the left or right subexpression of the form $1*1$).\nDenote $A_n=\\underbrace{1*(1*(1*(\\ldots*(1*1)\\ldots)))}_{n\\text{ ones}}$. For which positive integers $n$ can the expression $A_n$ be transformed to an expression that does not contain occurrences of the $*$ operator?"
+          "day": 2,
+          "number": 6,
+          "problem": "With an expression that uses an operator $*$, one can make the following transformations:\n\n(1) Rewrite an expression of the form $x*(y*z)$ as $((1*x)*y)*z$;\n\n(2) Rewrite an expression of the form $x*1$ as $x$.\n\nThe transformations may be performed only on the entire expression and not on the subexpressions. For example, $(1*1)*(1*1)$ may only be rewritten using the first kind of transformation as $((1*(1*1))*1)*1$ (taking $x=1*1$, $y=1$ and $z=1$), but not as $1*(1*1)$ or $(1*1)*1$ (in the latter two cases the second kind of transformation would have been applied just to the left or right subexpression of the form $1*1$).\n\nDenote $A_n=\\underbrace{1*(1*(1*(\\ldots*(1*1)\\ldots)))}_{n\\text{ ones}}$. For which positive integers $n$ can the expression $A_n$ be transformed to an expression that does not contain occurrences of the $*$ operator?"
         },
         {
-          "number": 6,
+          "day": 3,
+          "number": 7,
+          "problem": "A sequence of integers $a_0, a_1, a_2, \\dots$ (whose terms are not necessarily distinct) satisfies the following conditions:\n\n1) $0\\le a_k\\le k$ for every integer $k\\ge 0$;\n\n2) $C_k^{a_0}+C_k^{a_1}+\\dots+C_k^{a_k}=2^k$ for every integer $k\\ge 0$.\n\nProve that for every integer $n\\ge 0$ there exists an integer $k\\ge 0$ such that $a_k=n$.\n\nNote: $C_m^i$ denotes the number of combinations of $m$ elements taken $i$ at a time."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $M$ be the midpoint of the side $BC$ of an acute triangle $ABC$. Let $D$ and $E$ be the centres of the excircle of triangle $AMB$ tangent to the side $AB$ and of the excircle of triangle $AMC$ tangent to the side $AC$, respectively. The circumcircle of triangle $ABD$ intersects the line $BC$ for the second time at point $F$, and the circumcircle of triangle $ACE$ at point $G$. Prove that $BF=CG$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "We say that a set $S$ of integers is rootiful if, for every nonzero polynomial in one variable with coefficients in $S$, all integer roots of the polynomial belong to $S$. Find all rootiful sets of integers that contain all integers of the form $2^a-2^b$, where $a$ and $b$ are positive integers."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $a_1, a_2, \\dots$ be a sequence of real numbers. For every positive integer $n$, denote $m_n=\\frac{a_1+a_2+\\dots+a_n}{n}$. It is known that there exists a real number $c$ such that for any distinct positive integers $i$, $j$, $k$,\n$$(i-j)m_k+(j-k)m_i+(k-i)m_j=c.$$\nProve that the sequence $a_1, a_2, \\dots$ is arithmetic."
+        },
+        {
+          "day": 4,
+          "number": 11,
           "problem": "Let $n$ be an integer such that $n\\ge 3$. On a plane, $n$ points are chosen, no three of which are collinear. Consider all triangles with vertices at these points; denote minimal among the internal angles of these triangles by $\\alpha$. Find the greatest possible value of $\\alpha$ and determine all configurations of $n$ points for which it is achieved."
         },
         {
-          "number": 7,
+          "day": 4,
+          "number": 12,
           "problem": "Let $p$, $q$ be prime numbers and $a$ be an integer such that $p>2$ and $a\\not\\equiv 1\\pmod q$ but $a^p\\equiv 1\\pmod q$. Prove that\n$$(1+a^1)(1+a^2)\\ldots(1+a^{p-1})\\equiv 1\\pmod q.$$"
         }
       ]
@@ -804,24 +1165,64 @@
       "year": 2021,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "Juku has the first $100$ volumes of the Harrie Totter book series at his home. For every $i$ and $j$, where $1\\le i<j\\le 100$, call the pair $(i,j)$ reversed if volume No $j$ is before volume No $i$ on Juku's shelf. Juku wants to arrange all volumes of the series to one row on his shelf in such a way that there does not exist numbers $i$, $j$, $k$, where $1\\le i<j<k\\le 100$, such that pairs $(i,j)$ and $(j,k)$ are both reversed. Find the largest number of reversed pairs that can occur under this condition."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "Find all polynomials $P(x)$ with integral coefficients whose values at points $x=1, 2, \\dots, 2021$ are numbers $1, 2, \\dots, 2021$ in some order."
         },
         {
+          "day": 1,
           "number": 3,
-          "problem": "(a) There are $2n$ rays marked in a plane, with $n$ being a natural number. Given that no two marked rays have the same direction and no two marked rays have a common initial point, prove that there exists a line that passes through none of the initial points of the marked rays and intersects with exactly $n$ marked rays.\n(b) Would the claim still hold if the assumption that no two marked rays have a common initial point was dropped?"
+          "problem": "A convex quadrilateral $ABCD$ satisfies $\\angle ABC>90^\\circ$, $\\angle CDA>90^\\circ$ and $\\angle BCD=\\angle DAB$. Let $E$ and $F$ be the reflections of point $A$ in lines $BC$ and $CD$, respectively. Line segments $AE$ and $AF$ intersect line $BD$ at points $K$ and $L$, respectively. Prove that the circumcircles of triangles $BEK$ and $DFL$ touch each other."
         },
         {
+          "day": 2,
           "number": 4,
+          "problem": "(a) There are $2n$ rays marked in a plane, with $n$ being a natural number. Given that no two marked rays have the same direction and no two marked rays have a common initial point, prove that there exists a line that passes through none of the initial points of the marked rays and intersects with exactly $n$ marked rays.\n\n(b) Would the claim still hold if the assumption that no two marked rays have a common initial point was dropped?"
+        },
+        {
+          "day": 2,
+          "number": 5,
           "problem": "Positive real numbers $a$, $b$, $c$ satisfy $abc=1$. Prove that\n$$\\frac{a}{1+b}+\\frac{b}{1+c}+\\frac{c}{1+a}\\ge\\frac32.$$"
         },
         {
-          "number": 5,
+          "day": 2,
+          "number": 6,
+          "problem": "For any positive integer $m$ and integer $a$, let $a\\bmod m$ denote the remainder when $a$ is divided by $m$. For any odd positive integer $m$, we say that $a_0, a_1, a_2, \\dots$ is an $m$-sequence if $a_0$ is a positive integer relatively prime to $m$ and $a_{n+1}=a_n+(a_n\\bmod m)$ for all non-negative integers $n$.\n\na) Do there exist infinitely many odd prime numbers $p$ for which there exist $p$-sequences $a_0, a_1, a_2, \\dots$ and $b_0, b_1, b_2, \\dots$ such that $a_n<b_n$ for infinitely many natural numbers $n$ and also $a_n>b_n$ for infinitely many natural numbers $n$?\n\nb) Do there exist infinitely many odd prime numbers $p$ for which there exist $p$-sequences $a_0, a_1, a_2, \\dots$ and $b_0, b_1, b_2, \\dots$ such that $a_0<b_0$ but $a_n>b_n$ for all positive integers $n$?"
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $n$ be a positive integer. Find the number of permutations $(a_1, a_2, \\dots, a_n)$ of the numbers $1, 2, \\dots, n$ that satisfy the condition $a_1\\le 2a_2\\le\\dots\\le na_n$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $ABC$ be a triangle with $AC=BC$. Let $D$ be a point on the side $AB$ such that $0<AD<DB$. Let $P$ and $Q$ be points on the sides $AC$ and $BC$, respectively, such that $\\angle DPA=\\angle DQB=90^\\circ$. The perpendicular bisector of the segment $PQ$ intersects the side $AC$ at point $E$, and the circumcircles of triangles $ABC$ and $CPQ$ intersect, besides at point $C$, at point $F$. Prove that if the points $Q$, $E$ and $F$ are collinear, then $\\angle ACB=90^\\circ$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "For every prime $p$ there is a $p$-kingdom consisting of $p$ islands numbered $1, 2, \\dots, p$. Two distinct islands with numbers $n$ and $m$ are connected by a bridge if and only if $p$ divides the number $(n^2-m+1)(m^2-n+1)$. Prove that for infinitely many primes $p$ there exist two islands of the $p$-kingdom that are not connected to each other by a chain of bridges."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "A natural number greater than $1$ is written on the board. At each step, Juku replaces the number $n$ currently on the board with the number $n+\\frac{n}{p}$, where $p$ is some prime divisor of $n$. Prove that if Juku keeps writing numbers forever, then he chooses the number $3$ as the prime divisor $p$ infinitely many times."
+        },
+        {
+          "day": 4,
+          "number": 11,
           "problem": "Find all polynomials $P(x,y)$ with real coefficients which for all real numbers $x$ and $y$ satisfy $P(x+y,x-y)=2P(x,y)$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "In the plane there are $n\\ge 6$ discs $D_1, D_2, \\dots, D_n$, no two of which have a common interior point, with radii $r_1\\ge r_2\\ge\\dots\\ge r_n$. For every $i=1, 2, \\dots, n$, a point $P_i$ is chosen in the disc $D_i$. Let $Q$ be an arbitrary point of the plane. Prove the inequality\n$$QP_1+QP_2+\\dots+QP_n\\ge r_6+r_7+\\dots+r_n.$$"
         }
       ]
     },
@@ -829,24 +1230,64 @@
       "year": 2022,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ which satisfy the inequality $f(x)+f(x+y)\\le f(xy)+f(y)$ for all real numbers $x$, $y$."
         },
         {
+          "day": 1,
           "number": 2,
-          "problem": "Let $p$ be a fixed prime number. Juku and Miku play the following game. One of the players chooses a natural number $a$ such that $a>1$ and $a$ is not divisible by $p$, his opponent chooses any natural number $n$ such that $n>1$. Miku wins if the natural number written as $n$ ones in the positional numeral system with radix $a$ is divisible by $p$, otherwise Juku wins. Which player has a winning strategy if:\n(a) Juku chooses the number $a$, tells it to Miku and then Miku chooses the number $n$;\n(b) Juku chooses the number $n$, tells it to Miku and then Miku chooses the number $a$?"
+          "problem": "In a parallelogram $ABCD$, $AC=BC$. A point $P$ is chosen on the extension of the segment $AB$ beyond the point $B$. Let $Q$ be the intersection point of the circumcircle of triangle $ACD$ and the segment $PD$ ($Q\\ne D$), and let $R$ be the intersection point of the circumcircle of triangle $APQ$ and the segment $PC$ ($R\\ne P$). Prove that the lines $CD$, $AQ$ and $BR$ meet at one point."
         },
         {
+          "day": 1,
           "number": 3,
-          "problem": "(a) Is it true that, for arbitrary integer $n$ greater than $1$ and distinct positive integers $i$ and $j$ not greater than $n$, the set of any $n$ consecutive integers contains distinct numbers $i'$ and $j'$ whose product $i'j'$ is divisible by the product $ij$?\n(b) Is it true that, for arbitrary integer $n$ greater than $2$ and distinct positive integers $i$, $j$, $k$ not greater than $n$, the set of any $n$ consecutive integers contains distinct numbers $i'$, $j'$, $k'$ whose product $i'j'k'$ is divisible by the product $ijk$?"
+          "problem": "Let $p$ be a fixed prime number. Juku and Miku play the following game. One of the players chooses a natural number $a$ such that $a>1$ and $a$ is not divisible by $p$, his opponent chooses any natural number $n$ such that $n>1$. Miku wins if the natural number written as $n$ ones in the positional numeral system with radix $a$ is divisible by $p$, otherwise Juku wins. Which player has a winning strategy if:\n\n(a) Juku chooses the number $a$, tells it to Miku and then Miku chooses the number $n$;\n\n(b) Juku chooses the number $n$, tells it to Miku and then Miku chooses the number $a$?"
         },
         {
+          "day": 2,
           "number": 4,
+          "problem": "A natural number $n$, $n\\ge 3$, is fixed. A natural number $m$ is called colourful if $m>n$ and the vertices of a regular $m$-gon can be coloured with $n$ colours in such a way that among the colours of any $n+1$ consecutive vertices all $n$ colours occur. Prove that there are only finitely many natural numbers that are not colourful, and find the largest such natural number."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "(a) Is it true that, for arbitrary integer $n$ greater than $1$ and distinct positive integers $i$ and $j$ not greater than $n$, the set of any $n$ consecutive integers contains distinct numbers $i'$ and $j'$ whose product $i'j'$ is divisible by the product $ij$?\n\n(b) Is it true that, for arbitrary integer $n$ greater than $2$ and distinct positive integers $i$, $j$, $k$ not greater than $n$, the set of any $n$ consecutive integers contains distinct numbers $i'$, $j'$, $k'$ whose product $i'j'k'$ is divisible by the product $ijk$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n$ be a fixed positive integer. Let $S$ be the set of all points of the coordinate plane both of whose coordinates are non-negative integers less than $2n$. Let $\\mathcal{F}$ be a set of polygons such that every vertex of every polygon in $\\mathcal{F}$ belongs to $S$ and every point of $S$ is a vertex of exactly one polygon in $\\mathcal{F}$. Find the greatest possible sum of the areas of the polygons in $\\mathcal{F}$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $n$ be a natural number and let $X$ be a subset of the set $\\{0, 1, 2, 3, \\dots, 5^n\\}$ consisting of $4n+2$ numbers. Prove that there exist numbers $a$, $b$ and $c$ in $X$ such that $a<b<c$ and $c+2a>3b$."
+        },
+        {
+          "day": 3,
+          "number": 8,
           "problem": "For any non-negative integer $i$, denote by $d_i$ the first digit of the number $2^i$. Let $n$ be a positive integer. Prove that there exists a non-zero digit that occurs in the tuple $(d_0, d_1, \\dots, d_{n-1})$ less than $\\frac{n}{17}$ times."
         },
         {
-          "number": 5,
+          "day": 3,
+          "number": 9,
           "problem": "Determine all triples $(a,b,c)$ of integers which satisfy the equation $(a-b)^3(a+b)^2=c^2+2(a-b)+1$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral whose circumcentre lies inside it, and let $S$ be the intersection point of its diagonals. Let $P$ and $Q$ be the circumcentres of triangles $ABS$ and $BCS$, respectively. The lines through $P$ and $Q$ parallel to the sides $AD$ and $CD$, respectively, meet at a point $R$. Prove that the point $R$ lies on the line $BD$."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Let $n$ be a positive integer. Find the smallest possible value of the expression\n$$\\left\\lfloor\\frac{a_1}{1}\\right\\rfloor+\\left\\lfloor\\frac{a_2}{2}\\right\\rfloor+\\dots+\\left\\lfloor\\frac{a_n}{n}\\right\\rfloor$$\nif the values of the variables $a_1, a_2, \\dots, a_n$ are the numbers $1, 2, \\dots, n$ in some order.\n\nNote: $\\lfloor x\\rfloor$ denotes the floor of the real number $x$, i.e. the greatest integer not greater than $x$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "The kingdom of Anisotropy has $n$ towns. Between every two towns there runs exactly one one-way direct road. A route from town $X$ to town $Y$ is a sequence of roads along which one can travel from $X$ to $Y$ without returning to an already visited town. A collection of routes is called diverse if no road belongs to more than one route of the collection (but a town may belong to several routes).\n\nFor any two distinct towns $X$ and $Y$ of Anisotropy, let $N_{XY}$ denote the largest number of routes in a diverse collection of routes each of which goes from town $X$ to town $Y$. Prove that for any two distinct towns $A$ and $B$ of Anisotropy the equality $N_{AB}=N_{BA}$ holds if and only if the same number of roads leave the towns $A$ and $B$."
         }
       ]
     },
@@ -854,20 +1295,64 @@
       "year": 2023,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "Given a prime number $p$ and integers $x$ and $y$, find the remainder of the sum $x^0y^{p-1}+x^1y^{p-2}+\\dots+x^{p-2}y^1+x^{p-1}y^0$ upon division by $p$."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "For any natural number $n$ and positive integer $k$, we say that $n$ is $k$-good if there exist non-negative integers $a_1, \\dots, a_k$ such that\n$$n=a_1^2+a_2^4+a_3^8+\\dots+a_k^{2^k}.$$\nIs there a positive integer $k$ for which every natural number is $k$-good?"
         },
         {
+          "day": 1,
           "number": 3,
+          "problem": "Let $F$ be the foot of the altitude drawn from the vertex $A$ of an acute triangle $ABC$. Let $P$ be a point on the segment $AF$. The lines through $P$ parallel to the sides $CA$ and $AB$ intersect the side $BC$ at points $D$ and $E$, respectively. Let $X$ be a point on the circumcircle of triangle $ABD$ such that $A\\ne X$ and $DA=DX$, and let $Y$ be a point on the circumcircle of triangle $ACE$ such that $A\\ne Y$ and $EA=EY$. Prove that the points $B$, $C$, $X$ and $Y$ lie on one circle."
+        },
+        {
+          "day": 2,
+          "number": 4,
           "problem": "A convex quadrilateral $ABCD$ has $\\angle BAC=\\angle ADC$. Let $M$ be the midpoint of the diagonal $AC$. The side $AD$ contains a point $E$ such that $ABME$ is a parallelogram. Let $N$ be the midpoint of the line segment $AE$. Prove that the line $AC$ touches the circumcircle of the triangle $DMN$ at point $M$."
         },
         {
-          "number": 4,
+          "day": 2,
+          "number": 5,
+          "problem": "A sequence of positive real numbers $a_1, a_2, a_3, \\dots$ satisfies, for every positive integer $n$, the condition\n$$(a_{n+1})^2+a_na_{n+2}\\le a_n+a_{n+2}.$$\nProve that $a_{2023}\\le 1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A gardener and a servant play the following game in a garden of size $300\\times 300$. Initially, on every unit square of the garden there is a tree of height $0$. On each of his moves, the gardener chooses an area consisting of $3\\times 3$ unit squares and makes all the trees in this area $1$ unit taller. On each of his moves, the servant chooses any $4$ unit squares of the garden and makes all trees of positive height growing on them $1$ unit lower. The players move alternately, the gardener starting. Find the largest natural number $k$ such that the gardener can make at least $k$ trees grow to a height of at least $1000000$ units, regardless of the play of the servant."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $a$ and $d$ be coprime integers greater than $1$. A sequence $x_1, x_2, x_3, \\dots$ satisfies $x_1=1$ and, for every $k\\ge 1$,\n$$x_{k+1}=\\begin{cases}\\dfrac{x_k}{a}, & \\text{if } x_k \\text{ is divisible by } a,\\\\ x_k+d & \\text{otherwise.}\\end{cases}$$\nFind the greatest integer $n$ for which this sequence has a term $x_k$ divisible by $a^n$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $n$ be a positive integer. Find all polynomials $P(x)$ with real coefficients such that for every real number $x$\n$$P\\left(x^2+x-n^2\\right)=(P(x))^2+P(x).$$"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $n$ be a positive integer. Initially there are $n$ stones on the table, each in its own heap. In one move, one may choose two heaps, remove an equal number of stones from both of them and form a new heap from the removed stones. Find the smallest possible number of non-empty heaps that can be achieved with a finite number of moves."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "On a river bank, $666$ buckets are placed in a row. Each bucket is either red or blue. At the beginning, a salmon jumps into a bucket of its choice. Then at each step the salmon jumps, at its choice, either into the next bucket in the row or into the one after that (the salmon cannot skip more than one bucket in one jump, nor turn back). After an arbitrary number of steps, the salmon jumps back into the river. The score of the salmon is the difference between the numbers of red and blue buckets visited by it (the absolute value of the difference). Find the largest number $c$ such that, regardless of the colours of the buckets, the salmon can act so that its score after returning to the river is at least $c$."
+        },
+        {
+          "day": 4,
+          "number": 11,
           "problem": "We say that distinct positive integers $n$, $m$ are friends if $|n-m|$ is a divisor of both $n$ and $m$. Prove that, for any positive integer $k$, there exist $k$ distinct positive integers such that any two of these integers are friends."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "In an acute triangle $ABC$, $AC>AB$. Let $O$ be the circumcentre of triangle $ABC$ and $P$ a point on the segment $AO$. The line through $P$ perpendicular to the side $BC$ intersects the lines $BC$, $CA$ and $AB$ at points $X$, $Y$ and $Z$, respectively. The circumcircles of triangles $ABC$ and $AYZ$ intersect for the second time at point $Q$ ($Q\\ne A$). Prove that if $OP=OX$, then the line $XQ$ is tangent to the circumcircle of triangle $AYZ$."
         }
       ]
     },
@@ -875,35 +1360,63 @@
       "year": 2024,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "Acute triangle $ABC$ with $AB<AC$ has circumcircle $\\omega$. Let $D$, $E$, $F$ be the midpoints of sides $BC$, $CA$, $AB$ correspondingly. Ray $AD$ intersects $\\omega$ at point $K$ ($K\\ne A$) and the circumcircle of triangle $AEF$ at point $M$ ($M\\ne A$). On circle $\\omega$ a point $T$ such that $AT\\parallel BC$ is chosen. The circumcircles of triangles $KDT$ and $AEF$ intersect at point $L$ on the shorter arc $EF$. Prove that circle $\\omega$ and the circumcircle of triangle $KLM$ are tangent to each other."
         },
         {
+          "day": 1,
           "number": 2,
           "problem": "Let $n$ and $k$ be positive integers. On the board $k$ different positive integers not exceeding $n$ are written. Prove that the equation\n$$x+y=z+w$$\nhas at least $\\frac{k^4}{2n-1}$ solutions $(x,y,z,w)$, where $x$, $y$, $z$, $w$ are some (not necessarily different) numbers written on the board."
         },
         {
+          "day": 1,
           "number": 3,
-          "problem": "How many integers $k$ are there for which $1\\le k\\le n$ and the sum $1+2+\\dots+k$ is divisible by $n$, if\n(a) $n=2023^{2024}$;\n(b) $n=2024^{2023}$?"
+          "problem": "How many integers $k$ are there for which $1\\le k\\le n$ and the sum $1+2+\\dots+k$ is divisible by $n$, if\n\n(a) $n=2023^{2024}$;\n\n(b) $n=2024^{2023}$?"
         },
         {
+          "day": 2,
           "number": 4,
-          "problem": "A sequence $(a_n)$ satsfies $a_1=2$, $a_2=3$, $a_3=5$ and $a_n=a_{n-1}^2$ for any $n\\ge 4$. A sequence $(b_n)$ satisfies $b_1=2$, $b_2=3$, $b_3=5$ and $b_n=b_{n-1}\\cdot b_{n-2}\\cdot b_{n-3}^2$ for any $n\\ge 4$. A sequence $(c_n)$ satisfies $c_1=2$, $c_2=3$, $c_3=5$ and $c_n=c_1\\cdot c_2\\cdot\\ldots\\cdot c_{n-1}$ for any $n\\ge 4$. Order the numbers $a_{1000}$, $b_{1000}$ and $c_{1000}$ by size."
+          "problem": "A sequence $(a_n)$ satisfies $a_1=2$, $a_2=3$, $a_3=5$ and $a_n=a_{n-1}^2$ for any $n\\ge 4$. A sequence $(b_n)$ satisfies $b_1=2$, $b_2=3$, $b_3=5$ and $b_n=b_{n-1}\\cdot b_{n-2}\\cdot b_{n-3}^2$ for any $n\\ge 4$. A sequence $(c_n)$ satisfies $c_1=2$, $c_2=3$, $c_3=5$ and $c_n=c_1\\cdot c_2\\cdot\\ldots\\cdot c_{n-1}$ for any $n\\ge 4$. Order the numbers $a_{1000}$, $b_{1000}$ and $c_{1000}$ by size."
         },
         {
+          "day": 2,
           "number": 5,
           "problem": "The number $\\sqrt2$ is on the computer screen. In one step, Juku can multiply the number currently on the screen by any positive rational number or add any natural number to it. Is there a positive integer $n$ such that every number that Juku can get after a finite number of steps can be obtained by at most $n$ steps? If so, find the least suitable $n$."
         },
         {
+          "day": 2,
           "number": 6,
           "problem": "Fix a natural number $n$. A function $f:\\{0,1,\\dots,n\\}\\to\\{0,1,\\dots,n\\}$ is called regular if $f(0)=0$ and $f(i)\\in\\{i-1,f(i-1),f(f(i-1)),\\dots\\}$ for every $i=1,\\dots,n$. If, for instance, $n=3$, then the function $f(0)=f(1)=0$, $f(2)=f(3)=1$ is regular, but the function $f(0)=f(1)=f(2)=0$, $f(3)=1$ is not (in the latter case, $f(3)$ violates the regularity condition). Juku chooses a regular function $f$ and tells Miku for each number $k=0,1,\\dots,n$, how many different arguments $i$ are there such that $f(i)=k$. Can Miku always determine based on this information which regular function Juku had chosen?"
         },
         {
+          "day": 3,
           "number": 7,
+          "problem": "A function $f$ is defined on all real numbers, takes only real values and satisfies, for all real numbers $x$ and $y$, the inequality\n$$f(x+y)f(x-y)\\ge (f(x))^2-(f(y))^2.$$\nIt is known that there exist real numbers $x$ and $y$ for which this inequality is strict. Prove that either $f(x)\\ge 0$ for every real number $x$ or $f(x)\\le 0$ for every real number $x$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "For a positive integer $a$ and an integer $k$ greater than $1$, let $A_k(a)$ denote the greatest non-negative integer $r$ for which $a!$ is divisible by $k^r$. Prove that there exist infinitely many:\n\na) positive integers $n$ for which $A_{10}(n)>A_9(n)$;\n\nb) positive integers $m$ for which $A_{10}(m)<A_9(m)$.\n\nNote: for a positive integer $a$, $a!$ denotes the product $1\\cdot 2\\cdot\\ldots\\cdot a$."
+        },
+        {
+          "day": 3,
+          "number": 9,
           "problem": "Let $A$, $B$, $C$ and $P$ be four points on a plane such that no three of them are collinear. Let $D$ and $E$ be the second points of intersection of the circumcircle of $PBC$ with lines $AB$ and $AC$, respectively. Let $K$, $L$ and $M$ be the reflections of $P$ across $BC$, $AC$ and $AB$, respectively. Let lines $MD$ and $LE$ intersect at $F$. Prove that $A$, $F$ and $K$ are collinear."
         },
         {
-          "number": 8,
+          "day": 4,
+          "number": 10,
+          "problem": "Let $n$ be a positive integer. Some $n+1$ consecutive terms of an arithmetic sequence, taken in this order, are\n$$a_1a_2a_3\\ldots a_n,\\quad b_1a_2a_3\\ldots a_n,\\quad b_1b_2a_3\\ldots a_n,\\quad \\ldots,\\quad b_1b_2b_3\\ldots b_n,$$\nwhere $a_1, a_2, \\dots, a_n$ and $b_1, b_2, \\dots, b_n$ are some positive integers. Find the smallest positive integer that can be the common difference of this arithmetic sequence."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Let $ABC$ be a triangle with $AC>BC$. Let $\\omega$ be the circumcircle of triangle $ABC$ and $r$ its radius. A point $P$ is chosen on the segment $AC$ such that $BC=CP$. Let $S$ be the foot of the perpendicular drawn from the point $P$ to the line $AB$. The ray $BP$ intersects the circle $\\omega$ for the second time at point $D$. A point $Q$ is chosen on the line $SP$ such that $PQ=r$ and the points $S$, $P$, $Q$ lie on the line in this order. The line through $A$ perpendicular to $CQ$ and the line through $B$ perpendicular to $DQ$ intersect at point $E$. Prove that the point $E$ lies on the circle $\\omega$."
+        },
+        {
+          "day": 4,
+          "number": 12,
           "problem": "A rectangular grid is divided by two perpendicular straight lines into four smaller rectangles with integral side lengths. It is possible to remove one among these four rectangles in such a way that the remaining figure can be exactly covered by rectangles of size $2\\times 3$ and $3\\times 2$. Prove that it is possible to exactly cover one among these four smaller rectangles by rectangles of size $2\\times 3$ and $3\\times 2$. (By exact covering we mean covering without gaps, overlaps and overflows.)"
         }
       ]
@@ -912,20 +1425,64 @@
       "year": 2025,
       "problems": [
         {
+          "day": 1,
           "number": 1,
           "problem": "Let $n\\ge 3$ be any natural number. A real number is written into every vertex of a regular $n$-gon in such a way that numbers in any two neighbouring vertices differ by at most $1$. Find the least non-negative real number $C$ such that, regardless of the choice of the numbers in the vertices, there exist two neighbouring vertices in which numbers differ by at most $C$."
         },
         {
+          "day": 1,
           "number": 2,
-          "problem": "Kati writes the numbers\n$$2^0, 2^1, 2^2, \\dots, 2^{100}, 3^0, 3^1, 3^2, \\dots, 3^{100}, 6^0, 6^1, 6^2, \\dots, 6^{100}$$\non the board. In each step, she performs one of the following operations:\n(1) She can pick two numbers and replace them with their greatest common divisor and least common multiple; or\n(2) She can pick two numbers, one of which is divisible by the other, and replace them with some two numbers whose greatest common divisor and least common multiple would be the two picked numbers.\nFind the least and the greatest sum of all numbers on the board that can be achieved via finitely many steps."
+          "problem": "Kati writes the numbers\n$$2^0, 2^1, 2^2, \\dots, 2^{100}, 3^0, 3^1, 3^2, \\dots, 3^{100}, 6^0, 6^1, 6^2, \\dots, 6^{100}$$\non the board. In each step, she performs one of the following operations:\n\n(1) She can pick two numbers and replace them with their greatest common divisor and least common multiple; or\n\n(2) She can pick two numbers, one of which is divisible by the other, and replace them with some two numbers whose greatest common divisor and least common multiple would be the two picked numbers.\n\nFind the least and the greatest sum of all numbers on the board that can be achieved via finitely many steps."
         },
         {
+          "day": 1,
           "number": 3,
-          "problem": "The angle bisectors of an acute triangle $ABC$ meet at point $I$. The line $AI$ meets the circumcircle of the triangle $ABC$ at point $D$ ($D\\ne A$) and the side $BC$ at point $E$. The line $BI$ meets the circumcircle of the triangle $CDI$ at point $K$ whereas the line $CI$ meets the circumcircle of the triangle $BDI$ at point $L$ ($K\\ne I$, $L\\ne I$).\n(a) Prove that the line $DI$ is tangent to the circumcircle of the triangle $IKL$.\n(b) Prove that points $A$, $K$, $L$, $E$ are concyclic."
+          "problem": "Let $D$ be the midpoint of the side $AB$ of an acute triangle $ABC$, and let $F$ be the foot of the altitude drawn from the vertex $B$. The tangents to the circumcircle of triangle $ABC$ at the points $B$ and $C$ meet at a point $P$, and the circumcircles of triangles $DBP$ and $ABC$ intersect for the second time at a point $E$. Prove that the line $BC$ is tangent to the circumcircle of triangle $CEF$."
         },
         {
+          "day": 2,
           "number": 4,
+          "problem": "A positive integer $s$ is given. The sequence $a_0, a_1, a_2, \\dots$ is defined by $a_0=s$ and\n$$a_{n+1}=\\begin{cases}1, & \\text{if } a_n=1,\\\\ t_1^{p_1}\\ldots t_k^{p_k}, & \\text{if } a_n=p_1^{t_1}\\ldots p_k^{t_k}>1,\\end{cases}$$\nwhere in the second case $p_1, \\dots, p_k$ are distinct primes and $t_1, \\dots, t_k$ are positive integers. Prove that the sequence $a_0, a_1, a_2, \\dots$ is eventually periodic, i.e. there exist positive integers $N$ and $d$ such that $a_{n+d}=a_n$ for every $n\\ge N$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The angle bisectors of an acute triangle $ABC$ meet at point $I$. The line $AI$ meets the circumcircle of the triangle $ABC$ at point $D$ ($D\\ne A$) and the side $BC$ at point $E$. The line $BI$ meets the circumcircle of the triangle $CDI$ at point $K$ whereas the line $CI$ meets the circumcircle of the triangle $BDI$ at point $L$ ($K\\ne I$, $L\\ne I$).\n\n(a) Prove that the line $DI$ is tangent to the circumcircle of the triangle $IKL$.\n\n(b) Prove that points $A$, $K$, $L$, $E$ are concyclic."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f$ defined on all positive integers, taking only positive integer values and satisfying the condition\n$$f(p)\\mid a^{f(p)}+\\bigl(f(p-1)\\bigr)!\\cdot f(a)$$\nfor every prime $p$ and every positive integer $a$, where $f(2)\\ne 1$ and $f(3)\\ne 1$.\n\nNote: $m\\mid n$ denotes the statement that the number $m$ is a divisor of the number $n$; $n!$ denotes the product of all positive integers $1, 2, \\dots, n$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Find all pairs $(p,q)$ of primes for which the numbers $\\frac{p^2-4}{q}$ and $\\frac{p^3-p-4}{q}$ are both squares of integers."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "A positive integer $n$ and a prime $p$ with $p\\le n$ are given. Find the largest integer $m$ such that, whenever an arbitrary set of unit squares of an $n\\times n$ grid is marked, there exists a rectangle bounded by grid lines whose area is at least $m$ and in which the number of marked unit squares is divisible by $p$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $\\lambda$ be a real number, $0<\\lambda\\le 1$. Define the sequence $a_0, a_1, a_2, \\dots$ by $a_0=0$ and $a_{n+1}=a_n+\\frac{\\lambda-a_n^2}{2}$ for every non-negative integer $n$. Prove that $|a_m-a_n|<\\frac{1}{n+1}$ whenever $m$ and $n$ are integers with $m\\ge n\\ge 0$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Find all polynomials $P(x)$ with real coefficients such that whenever real numbers $x$, $y$ and $z$ satisfy the condition $x+y+z=0$, the points $(x;P(x))$, $(y;P(y))$ and $(z;P(z))$ of the coordinate plane lie on one line."
+        },
+        {
+          "day": 4,
+          "number": 11,
           "problem": "A triangle $ABC$ with $AB<BC$ and an obtuse angle at vertex $B$ is given. The incircle of the triangle $ABC$ with incentre $I$ touches the sides $BC$, $CA$ and $AB$ at points $D$, $E$ and $F$, respectively. The line $AI$ intersects the side $BC$ at point $K$. The ray $IB$ intersects the circumcircle of the triangle $KIF$ at point $P$ ($P\\ne I$), whereas the ray $IC$ intersects the circumcircle of the triangle $KIE$ at point $Q$ ($Q\\ne I$). Prove that the line $PQ$ bisects the line segment $DK$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "We call a line colourful if there is a point $P$ on it that divides the line into two rays, one of which is entirely blue and the other entirely yellow. The point $P$ is then called the change point of the colourful line; it has neither colour. If two colourful lines intersect, their intersection point is called good if the two lines have the same colour at the intersection point, and bad otherwise. Find all positive integers $n$ for which one can place $n$ distinct colourful lines in the plane satisfying the following conditions:\n\n1) no two of the placed lines are parallel and no three of them pass through one point;\n\n2) no intersection point of two placed lines is a change point of either of these lines;\n\n3) on every placed line, the absolute value of the difference between the numbers of good and bad intersection points is at most $1$."
         }
       ]
     }
