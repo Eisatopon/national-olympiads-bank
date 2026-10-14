@@ -1907,33 +1907,74 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Determine the sizes of the interior angles of all triangles $ABC$ with the following property: there exist points $K$, $M$ in the interiors of the sides $AB$, $AC$, respectively, which together with the intersection $L$ of the lines $MB$ and $KC$ form cyclic quadrilaterals $AKLM$ and $KBCM$ with congruent circumcircles.",
-      "statement_sha256": "4cef3e13d70737dd248dda3cdb511408ef882370f2a9390402de268bbf76f07f",
+      "reviewed_statement": "Determine the angles of the triangles $ABC$ which satisfy the following property: There exist $K$ and $M$ inside $AB$ and $AC$ respectively, such that the quadrilaterals $AKLM$ and $KBCM$ are cyclic and their circumcircles are congruent, where $L$ is the intersection of $MB$ and $KC$.",
+      "statement_sha256": "18c7f07a8f4acd7a74f80f7ada1041cfaee181c761d06b5b6e652210925cd3db",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+      "reviewed_at": "2026-10-14",
+      "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Determine the sizes of the interior angles of all triangles $ABC$ with the following property: there exist points $K$, $M$ in the interiors of the sides $AB$, $AC$, respectively, which together with the intersection $L$ of the lines $MB$ and $KC$ form cyclic quadrilaterals $AKLM$ and $KBCM$ with congruent circumcircles.",
+          "statement_sha256": "4cef3e13d70737dd248dda3cdb511408ef882370f2a9390402de268bbf76f07f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The statement requires a metric, incidence, congruence, construction or circle theorem; no arithmetic congruence is present."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2014.1.3": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Consider an $8\\times 8$ chessboard, and next to each \\\"edge\\\" separating two of its squares write the positive integer equal to the number of ways in which the whole chessboard can be cut into $2\\times 1$ rectangles so that the edge in question is part of the cut. Determine the last digit of the sum of all numbers written in this way.",
-      "statement_sha256": "5b830055b8dcd7bbe8ee3a44820a8f4efb61851778ccb680e9814ab7eee5b9e1",
+      "reviewed_statement": "Let us call by an “edge” any segment of length $1$ which is common to two adjacent fields of a given chessboard $8\\times 8$. Consider all possible cuttings of the chessboard into $32$ pieces $2\\times 1$ and denote by $n(e)$ the total number of such cuttings that involve the given edge $e$. Determine the last digit of the sum of the numbers $n(e)$ over all the edges $e$.",
+      "statement_sha256": "bd6a52053e20a945f97cd6b058e518d4e20d5f86ad87ca311ee814e05164e62a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The task counts domino matchings and asks a final digit; rectangles specify tiles rather than a metric geometry theorem."
+      "reviewed_at": "2026-10-14",
+      "rationale": "The task counts domino matchings and asks a final digit; rectangles specify tiles rather than a metric geometry theorem.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Consider an $8\\times 8$ chessboard, and next to each \\\"edge\\\" separating two of its squares write the positive integer equal to the number of ways in which the whole chessboard can be cut into $2\\times 1$ rectangles so that the edge in question is part of the cut. Determine the last digit of the sum of all numbers written in this way.",
+          "statement_sha256": "5b830055b8dcd7bbe8ee3a44820a8f4efb61851778ccb680e9814ab7eee5b9e1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The task counts domino matchings and asks a final digit; rectangles specify tiles rather than a metric geometry theorem."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2018.2.4": {
       "topics": [
         "Geometry",
         "Number Theory"
       ],
-      "reviewed_statement": "Consider an arbitrary triple of integers $a$, $b$ and $c$ which are the side lengths of a triangle, have no common divisor greater than $1$, and for which the values of all three fractions $$\\frac{a^2+b^2-c^2}{a+b-c},\\quad \\frac{b^2+c^2-a^2}{b+c-a},\\quad \\frac{c^2+a^2-b^2}{c+a-b}$$ are integers. Prove that the product of the denominators of these three fractions or its double is the square of an integer.",
-      "statement_sha256": "d200318a898ea5cf1333702ac143b80b4cbbafab64926c3232541115dac26a12",
+      "reviewed_statement": "Consider positive integers $a$, $b$, $c$ that are side-lengths of a non-degenerate triangle and such that $\\gcd(a,b,c)=1$ and the fractions $$\\frac{a^2+b^2-c^2}{a+b-c},\\quad \\frac{b^2+c^2-a^2}{b+c-a},\\quad \\frac{c^2+a^2-b^2}{c+a-b}$$ are all integers. Prove that the product of the denominators of the three fractions is either a square or twice a square of an integer.",
+      "statement_sha256": "de4a066233308286dce4a92fc72986dccc43f5eca7c686ad0189100458ef55d9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Consider an arbitrary triple of integers $a$, $b$ and $c$ which are the side lengths of a triangle, have no common divisor greater than $1$, and for which the values of all three fractions $$\\frac{a^2+b^2-c^2}{a+b-c},\\quad \\frac{b^2+c^2-a^2}{b+c-a},\\quad \\frac{c^2+a^2-b^2}{c+a-b}$$ are integers. Prove that the product of the denominators of these three fractions or its double is the square of an integer.",
+          "statement_sha256": "d200318a898ea5cf1333702ac143b80b4cbbafab64926c3232541115dac26a12",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Integer or prime constraints on lengths/coordinates are mathematically essential alongside genuine geometric constraints."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2024.2.6": {
       "topics": [
@@ -1951,11 +1992,25 @@
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "At least $3$ pairwise distinct primes are written around a circle. For every two adjacent primes we determine the largest prime dividing their sum. In this way we obtain, up to order, the same primes as those that were written. Find all possible initial sets of primes.\n(For example, the primes $2, 7, 3, 11, 17$ in this order do not work, since the corresponding sums $9, 10, 14, 28, 19$ have largest prime divisors $3, 5, 7, 7, 19$, respectively.)",
-      "statement_sha256": "d586b2118d0c5b84789616a40e55ea467d3ae78a7452652836d1eb9d2b8f92ed",
+      "reviewed_statement": "At least $3$ pairwise distinct primes are written around a circle. For every two adjacent primes we determine the largest prime dividing their sum. In this way we obtain, up to order, the same primes as those that were written. Find all possible initial sets of primes.\n\n(For example, the primes $2, 7, 3, 11, 17$ in this order do not work, since the corresponding sums $9, 10, 14, 28, 19$ have largest prime divisors $3, 5, 7, 7, 19$, respectively.)",
+      "statement_sha256": "38f4cd99762b4d56a5e9c8e60b0e30bec7e2c7b9420da0c8102a3288759e3645",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+      "reviewed_at": "2026-10-14",
+      "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "At least $3$ pairwise distinct primes are written around a circle. For every two adjacent primes we determine the largest prime dividing their sum. In this way we obtain, up to order, the same primes as those that were written. Find all possible initial sets of primes.\n(For example, the primes $2, 7, 3, 11, 17$ in this order do not work, since the corresponding sums $9, 10, 14, 28, 19$ have largest prime divisors $3, 5, 7, 7, 19$, respectively.)",
+          "statement_sha256": "d586b2118d0c5b84789616a40e55ea467d3ae78a7452652836d1eb9d2b8f92ed",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "The substantive task combines integer/divisibility constraints with counting or discrete arrangement; the drawn circle/polygon is an adjacency model."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "ut.2013.2.5": {
       "topics": [
@@ -2897,11 +2952,25 @@
         "Algebra",
         "Geometry"
       ],
-      "reviewed_statement": "Real numbers $x$, $y$, $z$ are chosen so that the numbers $$\\frac{1}{|x^2+2yz|},\\quad \\frac{1}{|y^2+2zx|},\\quad \\frac{1}{|z^2+2xy|}$$ are the side lengths of a (non-degenerate) triangle. Determine all possible values of the expression $xy+yz+zx$.",
-      "statement_sha256": "c9822a5d1e70ad9137026f60c1faad1be6d14e4f0929c7768c3cd1413712ff8b",
+      "reviewed_statement": "Let $x$, $y$, $z$ be real numbers such that $$\\frac{1}{|x^2+2yz|},\\quad \\frac{1}{|y^2+2zx|},\\quad \\frac{1}{|z^2+2xy|}$$ are side-lengths of a (non-degenerate) triangle. Find all possible values of $xy+yz+zx$.",
+      "statement_sha256": "e4f886ceab043d42e4cc66c6866f14e4e97676ee353e8b7a711155a7abff2a9b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Algebraic expressions constrained to be triangle sides."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Algebraic expressions constrained to be triangle sides.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Geometry"
+          ],
+          "reviewed_statement": "Real numbers $x$, $y$, $z$ are chosen so that the numbers $$\\frac{1}{|x^2+2yz|},\\quad \\frac{1}{|y^2+2zx|},\\quad \\frac{1}{|z^2+2xy|}$$ are the side lengths of a (non-degenerate) triangle. Determine all possible values of the expression $xy+yz+zx$.",
+          "statement_sha256": "c9822a5d1e70ad9137026f60c1faad1be6d14e4f0929c7768c3cd1413712ff8b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Algebraic expressions constrained to be triangle sides."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "ut.2021.1.2": {
       "topics": [
@@ -5000,21 +5069,47 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that there exist infinitely many integers which cannot be expressed in the form $2^a+3^b-5^c$, where $a$, $b$, $c$ are non-negative integers.",
-      "statement_sha256": "7a8c906b770a800055a7b4aa18046e80004ebb232c3377f3ed2833f38de8dee8",
+      "reviewed_statement": "Prove that there are infinitely many integers that cannot be expressed in the form $$2^a+3^b-5^c,$$ where $a$, $b$, $c$ are non-negative integers.",
+      "statement_sha256": "6d0d6e2298d4df551af00e06ccef31943625a2ba457fbb1d400f36a5dd3379b3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Integer nonrepresentability by a combination of exponential prime powers."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Integer nonrepresentability by a combination of exponential prime powers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that there exist infinitely many integers which cannot be expressed in the form $2^a+3^b-5^c$, where $a$, $b$, $c$ are non-negative integers.",
+          "statement_sha256": "7a8c906b770a800055a7b4aa18046e80004ebb232c3377f3ed2833f38de8dee8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Integer nonrepresentability by a combination of exponential prime powers."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2022.2.6": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "In an attempt to colonise Mars, humanity has flooded the solar system with $50$ satellites, which have created $225$ communication lines among themselves (each line exists between one pair of satellites and no two satellites have more than one line between them). We say that a triple of satellites is connected if at least one of them has communication lines established with both of the other satellites. Determine the smallest and the largest possible number of connected triples of satellites.",
-      "statement_sha256": "bab13aba0fbac5bce64f973a9ad7def3b1b6d2fd47f9e67965566010a9ca9a09",
+      "reviewed_statement": "Consider any graph with $50$ vertices and $225$ edges. We say that a triplet of its (mutually distinct) vertices is connected if the three vertices determine at least two edges. Determine the smallest and the largest possible number of connected triples.",
+      "statement_sha256": "331bafa267ab6a0bfd45817d9517faa66ebc255c3176a4da3e6bc5339a841bd5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Extremal counts of connected triples in a graph with a fixed vertex and edge count."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Extremal counts of connected triples in a graph with a fixed vertex and edge count.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "In an attempt to colonise Mars, humanity has flooded the solar system with $50$ satellites, which have created $225$ communication lines among themselves (each line exists between one pair of satellites and no two satellites have more than one line between them). We say that a triple of satellites is connected if at least one of them has communication lines established with both of the other satellites. Determine the smallest and the largest possible number of connected triples of satellites.",
+          "statement_sha256": "bab13aba0fbac5bce64f973a9ad7def3b1b6d2fd47f9e67965566010a9ca9a09",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Extremal counts of connected triples in a graph with a fixed vertex and edge count."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "ut.2015.1.3": {
       "topics": [
@@ -52473,10 +52568,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A segment $AB$ is given in the plane. Determine the locus of the centroids of all acute triangles $ABC$ with the following property: the vertices $A$ and $B$, the orthocentre $V$ and the incentre $S$ of the triangle $ABC$ lie on one circle.",
-      "statement_sha256": "1f0e34f38c405a4a17a4fade06fcc830bdd2abf1a8fdd1222aafa9ffc893551c",
+      "reviewed_statement": "A segment $AB$ is given in the plane. Construct the locus of the centroids of all acute triangles $ABC$ with the following property: the vertices $A$ and $B$, the orthocentre $V$ and the incentre $S$ of the triangle $ABC$ lie on one circle.",
+      "statement_sha256": "03c03666fc96b04a2263605a48dd9119cf7f15c4d27bb5a5830c3e91f07148ac",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A segment $AB$ is given in the plane. Determine the locus of the centroids of all acute triangles $ABC$ with the following property: the vertices $A$ and $B$, the orthocentre $V$ and the incentre $S$ of the triangle $ABC$ lie on one circle.",
+          "statement_sha256": "1f0e34f38c405a4a17a4fade06fcc830bdd2abf1a8fdd1222aafa9ffc893551c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2006.2.5": {
       "topics": [
@@ -52500,58 +52607,133 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A piece is placed on some square of an $n\\times n$ chessboard ($n\\ge 2$) and is then moved alternately “diagonally” and “straight”. “Diagonally” means to a square that has exactly one point in common with the previous one. “Straight” means to an adjacent square that has a common side with the previous one. Determine all $n$ for which there exist a starting square and a sequence of moves beginning with a “diagonal” move such that the piece passes through the whole chessboard and visits every square exactly once.",
-      "statement_sha256": "684de233447fa2faf9475886fe75d16274f3df9aaa6a88e594fbbf8420d726cc",
+      "reviewed_statement": "A chess piece is placed on some square in an $n\\times n$ ($n\\ge 2$) square chessboard. It then makes alternately “straight” and “diagonal” moves. “Straight” means to a square having a common side with the original square. “Diagonal” means to a square which has exactly one point in common with the original square. Find all $n$ for which there exists a sequence of moves, starting by a “diagonal” move from the original square, such that the piece passes through all squares of the chessboard, and through each square exactly once.",
+      "statement_sha256": "ff0cc05e611b810dbf619a62f6af8ac0687332557ca2a38b8f80cf97ab09c2dd",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A piece is placed on some square of an $n\\times n$ chessboard ($n\\ge 2$) and is then moved alternately “diagonally” and “straight”. “Diagonally” means to a square that has exactly one point in common with the previous one. “Straight” means to an adjacent square that has a common side with the previous one. Determine all $n$ for which there exist a starting square and a sequence of moves beginning with a “diagonal” move such that the piece passes through the whole chessboard and visits every square exactly once.",
+          "statement_sha256": "684de233447fa2faf9475886fe75d16274f3df9aaa6a88e594fbbf8420d726cc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2007.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a cyclic quadrilateral $ABCD$, let $L$, $M$ be the incentres of the triangles $BCA$, $BCD$, respectively. Further, let $R$ be the intersection of the perpendiculars drawn from the points $L$ and $M$ to the lines $AC$ and $BD$, respectively. Prove that the triangle $LMR$ is isosceles.",
-      "statement_sha256": "f9233102d88fcd6ef12c703550d9622c2231e5d7c9929027a638f9176e0920b1",
+      "reviewed_statement": "In a chordal quadrangle $ABCD$ denote by $L$, $M$ the incenters of the triangles $BCA$ and $BCD$, respectively. Denote further by $R$ the intersection of the perpendiculars from the points $L$ and $M$ onto the lines $AC$ and $BD$, respectively. Show that the triangle $LMR$ is isosceles.",
+      "statement_sha256": "b6fd1f3c2bab922a6bcd31c81e369866bbff836912f83251aa4095e089617389",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a cyclic quadrilateral $ABCD$, let $L$, $M$ be the incentres of the triangles $BCA$, $BCD$, respectively. Further, let $R$ be the intersection of the perpendiculars drawn from the points $L$ and $M$ to the lines $AC$ and $BD$, respectively. Prove that the triangle $LMR$ is isosceles.",
+          "statement_sha256": "f9233102d88fcd6ef12c703550d9622c2231e5d7c9929027a638f9176e0920b1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2007.1.3": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $\\mathbb{N}$ denote the set of all positive integers and consider all functions $f\\colon\\mathbb{N}\\to\\mathbb{N}$ such that for arbitrary $x,y\\in\\mathbb{N}$ $$f\\bigl(xf(y)\\bigr)=yf(x).$$ Determine the smallest possible value of $f(2007)$.",
-      "statement_sha256": "805d0c5d0e7fe333835b2b20daca9f8faf04be15c66d2c2638784370055bfe9b",
+      "reviewed_statement": "Denote by $\\mathbb{N}$ the set of all natural numbers and consider all functions $f\\colon\\mathbb{N}\\to\\mathbb{N}$ such that for any $x,y\\in\\mathbb{N}$, $$f\\bigl(xf(y)\\bigr)=yf(x).$$ Find the least possible value of $f(2007)$.",
+      "statement_sha256": "785bd001b091951de3a660966208ad5128ad877478313723a37d426a1a859151",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Natural-number functional equation and its smallest value."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Natural-number functional equation and its smallest value.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $\\mathbb{N}$ denote the set of all positive integers and consider all functions $f\\colon\\mathbb{N}\\to\\mathbb{N}$ such that for arbitrary $x,y\\in\\mathbb{N}$ $$f\\bigl(xf(y)\\bigr)=yf(x).$$ Determine the smallest possible value of $f(2007)$.",
+          "statement_sha256": "805d0c5d0e7fe333835b2b20daca9f8faf04be15c66d2c2638784370055bfe9b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Natural-number functional equation and its smallest value."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2007.2.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A set $M$ contains all positive integers from $1$ to $2007$ inclusive and has the following property: if a number $n$ is an element of the set $M$, then all terms of the arithmetic progression with first term $n$ and common difference $n+1$ lie in $M$. Decide whether the set $M$ must contain all positive integers greater than some number $m$.",
-      "statement_sha256": "f350a2ce246310343362a90a88df64c3a017169a19cf9e89c542159a8d54d135",
+      "reviewed_statement": "The set $M$ contains all natural numbers from $1$ to $2007$ (inclusive) and has the following property: if $n\\in M$, then $M$ contains all the members of the arithmetic progression with first member $n$ and difference $n+1$. Decide whether there must always exist a number $m$ such that $M$ contains all natural numbers greater than $m$.",
+      "statement_sha256": "f09a8e2fe3d01ae647dfa3c8108b84545280671108170196febea90b0ed1ed39",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Set closed under arithmetic progressions covering a tail of natural numbers."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Set closed under arithmetic progressions covering a tail of natural numbers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A set $M$ contains all positive integers from $1$ to $2007$ inclusive and has the following property: if a number $n$ is an element of the set $M$, then all terms of the arithmetic progression with first term $n$ and common difference $n+1$ lie in $M$. Decide whether the set $M$ must contain all positive integers greater than some number $m$.",
+          "statement_sha256": "f350a2ce246310343362a90a88df64c3a017169a19cf9e89c542159a8d54d135",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Set closed under arithmetic progressions covering a tail of natural numbers."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2007.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "An acute triangle $ABC$ with $|AC|\\ne|BC|$ is given. Consider points $D$ and $E$ in the interiors of its sides $BC$ and $AC$, respectively, for which $ABDE$ is a cyclic quadrilateral. Let $P$ be the intersection of its diagonals $AD$ and $BE$. Prove that if the lines $CP$ and $AB$ are perpendicular, then $P$ is the orthocentre of the triangle $ABC$.",
-      "statement_sha256": "e9ffd148ab5d8f0722a5df655d3038af9384118941f2ea0867ed8bdd2e7623ab",
+      "reviewed_statement": "An acute triangle $ABC$ is given such that $|AC|\\ne|BC|$. In the interior of its sides $BC$ and $AC$ consider the points $D$ and $E$, respectively, for which $ABDE$ is a chordal quadrangle. Denote by $P$ the intersection of its diagonals $AD$ and $BE$. Show that if the lines $CP$ and $AB$ are perpendicular, then $P$ is the orthocenter of the triangle $ABC$.",
+      "statement_sha256": "5768929be90cef1a87087fd28c7a2a8c297e66402353ac8f7b962bda27c224cd",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "An acute triangle $ABC$ with $|AC|\\ne|BC|$ is given. Consider points $D$ and $E$ in the interiors of its sides $BC$ and $AC$, respectively, for which $ABDE$ is a cyclic quadrilateral. Let $P$ be the intersection of its diagonals $AD$ and $BE$. Prove that if the lines $CP$ and $AB$ are perpendicular, then $P$ is the orthocentre of the triangle $ABC$.",
+          "statement_sha256": "e9ffd148ab5d8f0722a5df655d3038af9384118941f2ea0867ed8bdd2e7623ab",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2007.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Determine all ordered triples $(x,y,z)$ of pairwise distinct real numbers which satisfy the set equation $$\\{x,y,z\\}=\\left\\{\\frac{x-y}{y-z},\\ \\frac{y-z}{z-x},\\ \\frac{z-x}{x-y}\\right\\}.$$",
-      "statement_sha256": "46922db47e733492c53b7607684de0fc1ed1f4385187977a3413f3e0ea4cbe12",
+      "reviewed_statement": "Find all ordered triples $(x,y,z)$ of mutually distinct real numbers which satisfy the set equation $$\\{x,y,z\\}=\\left\\{\\frac{x-y}{y-z},\\ \\frac{y-z}{z-x},\\ \\frac{z-x}{x-y}\\right\\}.$$",
+      "statement_sha256": "e15c7477783204e000611b4e37e9c69bef03e178b0d6cf8931479d11ce61b34a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Determine all ordered triples $(x,y,z)$ of pairwise distinct real numbers which satisfy the set equation $$\\{x,y,z\\}=\\left\\{\\frac{x-y}{y-z},\\ \\frac{y-z}{z-x},\\ \\frac{z-x}{x-y}\\right\\}.$$",
+          "statement_sha256": "46922db47e733492c53b7607684de0fc1ed1f4385187977a3413f3e0ea4cbe12",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2008.1.1": {
       "topics": [
@@ -52616,77 +52798,177 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that if all of the numbers $p$, $3p+2$, $5p+4$, $7p+6$, $9p+8$ and $11p+10$ are primes, then the number $6p+11$ is composite.",
-      "statement_sha256": "2258c42fc0bcde6979140bc6fbaf64aa36849ded228cb43f7029276bdc8625e1",
+      "reviewed_statement": "Show that if the numbers $p$, $3p+2$, $5p+4$, $7p+6$, $9p+8$ and $11p+10$ are all primes, then the number $6p+11$ is composite.",
+      "statement_sha256": "29e4334df418be308e664819026c352de259b7729832a2eaee1d4455930341c5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that if all of the numbers $p$, $3p+2$, $5p+4$, $7p+6$, $9p+8$ and $11p+10$ are primes, then the number $6p+11$ is composite.",
+          "statement_sha256": "2258c42fc0bcde6979140bc6fbaf64aa36849ded228cb43f7029276bdc8625e1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2009.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "On the shorter of the arcs $CD$ of the circumcircle of a rectangle $ABCD$, choose a point $P$. Denote by $K$, $L$ and $M$ the feet of the perpendiculars from $P$ to the lines $AB$, $AC$ and $BD$, respectively. Show that the angle $LKM$ measures $45^\\circ$ if and only if $ABCD$ is a square.",
-      "statement_sha256": "fdaebf1a3efa1d4d91462fed3212a3b50488518941692e0442a917c22c9a0e8f",
+      "reviewed_statement": "On the shorter of the arcs $CD$ of the circumcircle of a rectangle $ABCD$, a point $P$ is chosen. Denote the feet of the perpendiculars from $P$ onto the lines $AB$, $AC$ and $BD$ by $K$, $L$ and $M$, respectively. Show that the angle $LKM$ has magnitude $45^\\circ$ if and only if $ABCD$ is a square.",
+      "statement_sha256": "96dfac9bcc0403c21c96c65652b157287634bb5c2b725a61e621516478dbf766",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "On the shorter of the arcs $CD$ of the circumcircle of a rectangle $ABCD$, choose a point $P$. Denote by $K$, $L$ and $M$ the feet of the perpendiculars from $P$ to the lines $AB$, $AC$ and $BD$, respectively. Show that the angle $LKM$ measures $45^\\circ$ if and only if $ABCD$ is a square.",
+          "statement_sha256": "fdaebf1a3efa1d4d91462fed3212a3b50488518941692e0442a917c22c9a0e8f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2009.1.3": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find the smallest positive number $x$ with the following property: if $a$, $b$, $c$, $d$ are arbitrary positive numbers whose product is $1$, then $$a^x+b^x+c^x+d^x\\ge \\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}.$$",
-      "statement_sha256": "ec65a2c9851b4166de05f160710e3601c8ae963c8dbbbb0e8b93994cda053416",
+      "reviewed_statement": "Find the least positive number $x$ with the following property: if $a$, $b$, $c$, $d$ are arbitrary positive numbers whose product is $1$, then $$a^x+b^x+c^x+d^x\\ge\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}.$$",
+      "statement_sha256": "378f84fc846c0bbf06c0e7c210b53ae3b6ec71bcc3e5ecabce47cb5029b04f0b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find the smallest positive number $x$ with the following property: if $a$, $b$, $c$, $d$ are arbitrary positive numbers whose product is $1$, then $$a^x+b^x+c^x+d^x\\ge \\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}.$$",
+          "statement_sha256": "ec65a2c9851b4166de05f160710e3601c8ae963c8dbbbb0e8b93994cda053416",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2009.2.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "We investigate for which positive integers $n$ there exist exactly four positive integers $k$ such that the number $n+k$ is a divisor of the number $n+k^2$.\n\na) Show that $n=58$ has this property and find the corresponding four numbers $k$.\n\nb) Prove that an even number $n=2p$, where $p\\ge 3$, has this property if and only if both $p$ and $2p+1$ are primes.\n\n(Zero is not counted among the natural numbers.)",
-      "statement_sha256": "79ccc9d4b81d1950e332a771903a5a0ec40e4435ed82687276bc38e3d50fc0cb",
+      "reviewed_statement": "We are interested in natural numbers (positive integers) $n$ with the property that there exist exactly four natural numbers $k$ such that $n+k$ is a divisor of $n+k^2$.\n\na) Show that $n=58$ has this property, and find the corresponding four numbers $k$.\n\nb) Show that an even number $n=2p$, where $p\\ge 3$, has this property if and only if both $p$ and $2p+1$ are primes.",
+      "statement_sha256": "914e2be4cd275aedd5022fb6f82ada357175dd00b73693d4df44b9057e8f58a2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "We investigate for which positive integers $n$ there exist exactly four positive integers $k$ such that the number $n+k$ is a divisor of the number $n+k^2$.\n\na) Show that $n=58$ has this property and find the corresponding four numbers $k$.\n\nb) Prove that an even number $n=2p$, where $p\\ge 3$, has this property if and only if both $p$ and $2p+1$ are primes.\n\n(Zero is not counted among the natural numbers.)",
+          "statement_sha256": "79ccc9d4b81d1950e332a771903a5a0ec40e4435ed82687276bc38e3d50fc0cb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2009.2.5": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "At each vertex of a regular $n$-gon $A_1A_2\\dots A_n$ there lies a certain number of coins: at the vertex $A_k$ there are exactly $k$ coins, $1\\le k\\le n$. We choose two coins and move each of them to a neighbouring vertex in such a way that one of them moves clockwise and the other one counterclockwise. Decide for which $n$ it is possible, after a finite number of such moves, to achieve that for every $k$, $1\\le k\\le n$, there are $n+1-k$ coins at the vertex $A_k$.",
-      "statement_sha256": "7a3d7a0e0d693e4ab59e2d086c8839fed38ee2ba1c9b47be6ff798411e81c315",
+      "reviewed_statement": "In each vertex of a regular $n$-gon $A_1A_2\\dots A_n$ there lies a certain number of coins: in the vertex $A_k$ there are exactly $k$ coins, for each $1\\le k\\le n$. We choose two coins and move each of them into one of the neighbouring vertices in such a way that one is moved clockwise and the other anti-clockwise. Decide for which $n$ it is possible to achieve, after a finite number of steps, that for each $k$, $1\\le k\\le n$, there are exactly $n+1-k$ coins in the vertex $A_k$.",
+      "statement_sha256": "363782dbf2f8e6a0dceaeaa2fb155a64e539f7db23f26843c5fda08bf035b829",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Cyclic coin transfers and modular reachability."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Cyclic coin transfers and modular reachability.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "At each vertex of a regular $n$-gon $A_1A_2\\dots A_n$ there lies a certain number of coins: at the vertex $A_k$ there are exactly $k$ coins, $1\\le k\\le n$. We choose two coins and move each of them to a neighbouring vertex in such a way that one of them moves clockwise and the other one counterclockwise. Decide for which $n$ it is possible, after a finite number of such moves, to achieve that for every $k$, $1\\le k\\le n$, there are $n+1-k$ coins at the vertex $A_k$.",
+          "statement_sha256": "7a3d7a0e0d693e4ab59e2d086c8839fed38ee2ba1c9b47be6ff798411e81c315",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Cyclic coin transfers and modular reachability."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2009.2.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two distinct points $O$ and $T$ are given in a plane $\\omega$. Find the set of vertices of all triangles which lie in the plane $\\omega$ and have centroid at the point $T$ and circumcentre at the point $O$.",
-      "statement_sha256": "d186c7cd7a6d295db1807bd5d4756efe0ebd9d82f7ba3f10221eb6a691bacadd",
+      "reviewed_statement": "Two distinct points $O$ and $T$ are given in the plane $\\omega$. Find the locus of vertices of all triangles lying in $\\omega$ whose centroid is $T$ and whose circumcenter is $O$.",
+      "statement_sha256": "dd80fc922857c0841f44f364d6642922814011627b3d0acb57f276e2574c8af2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two distinct points $O$ and $T$ are given in a plane $\\omega$. Find the set of vertices of all triangles which lie in the plane $\\omega$ and have centroid at the point $T$ and circumcentre at the point $O$.",
+          "statement_sha256": "d186c7cd7a6d295db1807bd5d4756efe0ebd9d82f7ba3f10221eb6a691bacadd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.1.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all pairs of positive integers $a$, $b$ such that $$4^a+4a^2+4=b^2.$$",
-      "statement_sha256": "4ea49804402978ad38d860f7c7b34b03eb352ac78608e10a697e175ca11327f8",
+      "reviewed_statement": "Find all positive integers $a$ and $b$ such that $$4^a+4a^2+4=b^2.$$",
+      "statement_sha256": "7210bf40da08a1878cba4c95455879b0f65347b7b7d9219e7db4d486bd1c114a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all pairs of positive integers $a$, $b$ such that $$4^a+4a^2+4=b^2.$$",
+          "statement_sha256": "4ea49804402978ad38d860f7c7b34b03eb352ac78608e10a697e175ca11327f8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.1.2": {
       "topics": [
         "Combinatorics",
         "Geometry"
       ],
-      "reviewed_statement": "A circular target of radius $12\\,\\mathrm{cm}$ has been hit by $19$ shots. Prove that the distance between some two of the hits is less than $7\\,\\mathrm{cm}$.",
-      "statement_sha256": "767273e64e53b6fba7b3d4318404471fe603e19052767f70a8e6a8461847d236",
+      "reviewed_statement": "Nineteen shots hit the circular target with the radius $12\\text{ cm}$. Prove that there are two hits separated by a distance smaller than $7\\text{ cm}$.",
+      "statement_sha256": "8b182a3bd6719a4691cc5402e60f809ee45b7724c9c06bca62b0d0ca7c3b0689",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Packing points in a circular disk and a close pair."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Packing points in a circular disk and a close pair.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Geometry"
+          ],
+          "reviewed_statement": "A circular target of radius $12\\,\\mathrm{cm}$ has been hit by $19$ shots. Prove that the distance between some two of the hits is less than $7\\,\\mathrm{cm}$.",
+          "statement_sha256": "767273e64e53b6fba7b3d4318404471fe603e19052767f70a8e6a8461847d236",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Packing points in a circular disk and a close pair."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.1.3": {
       "topics": [
@@ -52694,152 +52976,353 @@
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Rumburak kidnapped to his castle $31$ members of party $A$, $28$ members of party $B$, $23$ members of party $C$ and $19$ members of party $D$, and locked each of them in a separate cell. After work they could occasionally walk in the courtyard and talk. As soon as three members of three different parties started talking together, Rumburak, as a punishment, re-registered them into the fourth party. (Never did more than three of the kidnapped talk together.)\n\na) Could it happen that after some time all the kidnapped were members of one party? Of which one?\n\nb) Determine all quadruples of positive integers whose sum is $101$ and which, as the numbers of kidnapped members of the four parties, make it possible that, thanks to Rumburak, all of them eventually become members of one party.",
-      "statement_sha256": "a73881a9fc669c226facbab89f9ef69fefe7b54cf0be766c0da953ddc6075745",
+      "reviewed_statement": "A wizard kidnapped $31$ members of the political party $A$, $28$ members of the party $B$, $23$ members of the party $C$, and $19$ members of the party $D$ and kept them separately in single cells on his castle and made them to do some work. Each day after the work the party members could walk on the courtyard and talk to each other. But when three members of different parties started to talk to each other, the wizard re-registered them into the fourth party. (More than $3$ kidnapped party members never talked to each other.)\n\na) Is it possible that after some time all the kidnapped people were members of one political party? Which one?\n\nb) Find all the quadruples of positive integers with the sum $101$ which admit, considered as numbers of kidnapped party members, that after some time they become, with the “help” of the wizard, the members of a single party.",
+      "statement_sha256": "82687aa279467a4c23f8ecd59923a330512ec0e2d603b2315012713e55c90da8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Group-replacement counts and modular invariants."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Group-replacement counts and modular invariants.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Rumburak kidnapped to his castle $31$ members of party $A$, $28$ members of party $B$, $23$ members of party $C$ and $19$ members of party $D$, and locked each of them in a separate cell. After work they could occasionally walk in the courtyard and talk. As soon as three members of three different parties started talking together, Rumburak, as a punishment, re-registered them into the fourth party. (Never did more than three of the kidnapped talk together.)\n\na) Could it happen that after some time all the kidnapped were members of one party? Of which one?\n\nb) Determine all quadruples of positive integers whose sum is $101$ and which, as the numbers of kidnapped members of the four parties, make it possible that, thanks to Rumburak, all of them eventually become members of one party.",
+          "statement_sha256": "a73881a9fc669c226facbab89f9ef69fefe7b54cf0be766c0da953ddc6075745",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Group-replacement counts and modular invariants."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.2.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A circle $k$ with a chord $AC$ which is not a diameter is given. On its tangent through the point $A$ we choose a point $X\\ne A$ and denote by $D$ the intersection of the circle $k$ with the interior of the segment $XC$ (if it exists). We complete the triangle $ACD$ to a trapezoid $ABCD$ inscribed in the circle $k$. Determine the locus of the intersections of the lines $BC$ and $AD$ corresponding to all such trapezoids.",
-      "statement_sha256": "f3c101cd787f6ee1a36857f929c08cd9316ed7ad754bf4b9c4a7ecb34ba1d614",
+      "reviewed_statement": "We are given a circle $k$ with a chord $AC$, which is not a diameter. On its tangent through $A$ we choose a point $X\\ne A$ and let $D$ be the intersection point of $k$ with the interior of the segment $XC$ (if it exists). We complete the triangle $ACD$ into the trapezoid $ABCD$ inscribed into $k$. Determine the set of intersection points of lines $BC$ and $AD$ of such trapezoids.",
+      "statement_sha256": "47da9862f9386d630921e42236752e5ca5f44e78a3fa817ba5d605904139acd4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A circle $k$ with a chord $AC$ which is not a diameter is given. On its tangent through the point $A$ we choose a point $X\\ne A$ and denote by $D$ the intersection of the circle $k$ with the interior of the segment $XC$ (if it exists). We complete the triangle $ACD$ to a trapezoid $ABCD$ inscribed in the circle $k$. Determine the locus of the intersections of the lines $BC$ and $AD$ corresponding to all such trapezoids.",
+          "statement_sha256": "f3c101cd787f6ee1a36857f929c08cd9316ed7ad754bf4b9c4a7ecb34ba1d614",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.2.5": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "The numbers $1, 2, \\dots, 33$ are written on a blackboard. In one step we choose two numbers written on the blackboard whose product is a perfect square, erase both chosen numbers and write the square root of their product on the blackboard. We continue in this way until only numbers remain on the blackboard such that the product of no two of them is a perfect square. (In one step we may also erase two equal numbers and replace them by the same number.) Prove that at least $16$ numbers remain on the blackboard.",
-      "statement_sha256": "acf8e9fe2a3cde16a632d5951daf00ff3ecb9107d0e4fda8fac7770796ba54f1",
+      "reviewed_statement": "There are numbers $1, 2, \\dots, 33$ written on a blackboard. In one step we choose two numbers on the blackboard such that their product is a square, we erase the two numbers and write their square root instead. We proceed in this manner until no product of any two numbers on the blackboard is a square. (In one step we may also erase two equal numbers and replace them by the same number.) Prove that there are at least $16$ numbers left on the blackboard.",
+      "statement_sha256": "5043c4b64c34d9e2cdd7f08431dc3c902d38ddebe81cf858e9bbc25bb328e9c4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Square-product replacement and a lower bound on surviving integers."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Square-product replacement and a lower bound on surviving integers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "The numbers $1, 2, \\dots, 33$ are written on a blackboard. In one step we choose two numbers written on the blackboard whose product is a perfect square, erase both chosen numbers and write the square root of their product on the blackboard. We continue in this way until only numbers remain on the blackboard such that the product of no two of them is a perfect square. (In one step we may also erase two equal numbers and replace them by the same number.) Prove that at least $16$ numbers remain on the blackboard.",
+          "statement_sha256": "acf8e9fe2a3cde16a632d5951daf00ff3ecb9107d0e4fda8fac7770796ba54f1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Square-product replacement and a lower bound on surviving integers."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2010.2.6": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find the minimum of the expression $$\\frac{a+b+c}{2}-\\frac{[a,b]+[b,c]+[c,a]}{a+b+c},$$ where the variables $a$, $b$, $c$ are arbitrary integers greater than $1$ and $[x,y]$ denotes the least common multiple of the numbers $x$, $y$.",
-      "statement_sha256": "50d3412e996d4a6cc519102467575dcb627c4db7bc5e26c9d2fc5cd69449a9f0",
+      "reviewed_statement": "Find the minimum value of $$\\frac{a+b+c}{2}-\\frac{[a,b]+[b,c]+[c,a]}{a+b+c},$$ where $a$, $b$, $c$ are integers greater than $1$ and $[x,y]$ denotes the least common multiple of $x$ and $y$.",
+      "statement_sha256": "859bd7745b4fb72ff4ed90a89187a0e660366c2fc9aa42eadfc37214a18de9b8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find the minimum of the expression $$\\frac{a+b+c}{2}-\\frac{[a,b]+[b,c]+[c,a]}{a+b+c},$$ where the variables $a$, $b$, $c$ are arbitrary integers greater than $1$ and $[x,y]$ denotes the least common multiple of the numbers $x$, $y$.",
+          "statement_sha256": "50d3412e996d4a6cc519102467575dcb627c4db7bc5e26c9d2fc5cd69449a9f0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2011.1.2": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Determine all triples of primes $(p,q,r)$ such that $$(p+1)(q+2)(r+3)=4pqr.$$",
-      "statement_sha256": "b4e4d3ce66364828a750e76743cb76ce8a6518f2dfbab3e0fcae1ad3c19c074f",
+      "reviewed_statement": "Find all triples $(p,q,r)$ of primes which satisfy $$(p+1)(q+2)(r+3)=4pqr.$$",
+      "statement_sha256": "44d0a0ea4563c2ff1b8003561c437ceba31afd5bb8a09d016b6849e4877dedeb",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Determine all triples of primes $(p,q,r)$ such that $$(p+1)(q+2)(r+3)=4pqr.$$",
+          "statement_sha256": "b4e4d3ce66364828a750e76743cb76ce8a6518f2dfbab3e0fcae1ad3c19c074f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2011.1.3": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Suppose that real numbers $x$, $y$, $z$ satisfy the system of equations $$x+y+z=12,\\qquad x^2+y^2+z^2=54.$$ Prove that then the following statements hold:\n\na) Each of the numbers $xy$, $yz$, $zx$ is at least $9$ but at most $25$.\n\nb) One of the numbers $x$, $y$, $z$ is at most $3$ and another one of them is at least $5$.",
-      "statement_sha256": "a9cc42d841839bee1077def56c73f5010b07baac23e82833459ca20ebb878a56",
+      "reviewed_statement": "Let real $x$, $y$, $z$ satisfy $$x+y+z=12,\\qquad x^2+y^2+z^2=54.$$ Prove:\n\na) Each of $xy$, $yz$, $zx$ is at least $9$, but at most $25$.\n\nb) Some of $x$, $y$, $z$ is at most $3$, and some at least $5$.",
+      "statement_sha256": "9a0a2cb625305197e4f7cfba9894d7cce85d01c7187a2450725f69ad2ffd062b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Suppose that real numbers $x$, $y$, $z$ satisfy the system of equations $$x+y+z=12,\\qquad x^2+y^2+z^2=54.$$ Prove that then the following statements hold:\n\na) Each of the numbers $xy$, $yz$, $zx$ is at least $9$ but at most $25$.\n\nb) One of the numbers $x$, $y$, $z$ is at most $3$ and another one of them is at least $5$.",
+          "statement_sha256": "a9cc42d841839bee1077def56c73f5010b07baac23e82833459ca20ebb878a56",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2011.2.4": {
       "topics": [
         "Algebra",
         "Combinatorics"
       ],
-      "reviewed_statement": "Consider a quadratic trinomial $ax^2+bx+c$ with real coefficients $a\\ge 2$, $b\\ge 2$, $c\\ge 2$. Adam and Boris play the following game: when it is Adam's turn, he chooses one of the coefficients of the trinomial and replaces it by the *sum* of the other two. When it is Boris's turn, he chooses one of the coefficients and replaces it by the *product* of the other two. Adam starts and the players alternate regularly. The winner is the player after whose move the resulting trinomial has two distinct real roots. Depending on the coefficients $a$, $b$, $c$ of the initial trinomial, determine which of the players has a winning strategy.",
-      "statement_sha256": "03d4caf82c615715f63012b8ea708ecff5d9c99685f7b2f5f824c86b513dbed1",
+      "reviewed_statement": "Let us consider a quadratic polynomial $f(x)=ax^2+bx+c$ with real coefficients $a\\ge 2$, $b\\ge 2$, and $c\\ge 2$. Adam and Boris can change the polynomial consecutively in the following game: Adam is allowed in his turn to choose one of coefficients and replace it with the sum of the other two. Boris in his turn can choose one of coefficients and replace it with the product of the other two. They take turns and Adam begins. The winner is the one who succeeds in his turn to change the polynomial into the one with two distinct real roots. Depending on $a$, $b$, and $c$, the coefficients of the original polynomial $f(x)$, determine which of the players has a winning strategy.",
+      "statement_sha256": "c87a9e42e2b5c6a27c282e52d27d411b6f6410b735faa4efb03f44bedb6ba317",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Coefficient-update game on a real quadratic."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Coefficient-update game on a real quadratic.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Consider a quadratic trinomial $ax^2+bx+c$ with real coefficients $a\\ge 2$, $b\\ge 2$, $c\\ge 2$. Adam and Boris play the following game: when it is Adam's turn, he chooses one of the coefficients of the trinomial and replaces it by the *sum* of the other two. When it is Boris's turn, he chooses one of the coefficients and replaces it by the *product* of the other two. Adam starts and the players alternate regularly. The winner is the player after whose move the resulting trinomial has two distinct real roots. Depending on the coefficients $a$, $b$, $c$ of the initial trinomial, determine which of the players has a winning strategy.",
+          "statement_sha256": "03d4caf82c615715f63012b8ea708ecff5d9c99685f7b2f5f824c86b513dbed1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Coefficient-update game on a real quadratic."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2011.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In an acute triangle $ABC$ which is not equilateral, denote by $P$ the foot of the altitude from the vertex $C$ to the side $AB$, by $V$ the orthocenter, by $O$ the circumcentre, by $D$ the intersection of the ray $CO$ with the side $AB$ and by $E$ the midpoint of the segment $CD$. Prove that the line $EP$ passes through the midpoint of the segment $OV$.",
-      "statement_sha256": "537b644feec430071a236b82864bbade8b597af249ec20e4cc9f6db12b3686f9",
+      "reviewed_statement": "In an acute non-equilateral triangle $ABC$ let $P$ be the foot of the altitude from $C$, $V$ the orthocenter, $O$ the circumcenter, $D$ the intersection of the ray $CO$ with the segment $AB$, and $E$ the midpoint of $CD$. Prove that the line $EP$ goes through the midpoint of $OV$.",
+      "statement_sha256": "d90b415fd86b15e3c84a9216b509539ff4b77812923859e105d0de6318df2c04",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In an acute triangle $ABC$ which is not equilateral, denote by $P$ the foot of the altitude from the vertex $C$ to the side $AB$, by $V$ the orthocenter, by $O$ the circumcentre, by $D$ the intersection of the ray $CO$ with the side $AB$ and by $E$ the midpoint of the segment $CD$. Prove that the line $EP$ passes through the midpoint of the segment $OV$.",
+          "statement_sha256": "537b644feec430071a236b82864bbade8b597af249ec20e4cc9f6db12b3686f9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2011.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Denote by $\\mathbb{R}^+$ the set of all positive real numbers. Determine all functions $f\\colon \\mathbb{R}^+\\to\\mathbb{R}^+$ such that for all $x, y\\in\\mathbb{R}^+$ $$f(x)\\cdot f(y)=f(y)\\cdot f\\bigl(x\\cdot f(y)\\bigr)+\\frac{1}{xy}.$$",
-      "statement_sha256": "616079e813174f2b83426f7931dd30a4881cc403240d9134cffdff25f2c19f99",
+      "reviewed_statement": "Find all $f\\colon\\mathbb{R}^+\\to\\mathbb{R}^+$ satisfying $$f(x)f(y)=f(y)f\\bigl(xf(y)\\bigr)+\\frac{1}{xy},$$ for any $x,y\\in\\mathbb{R}^+$, where $\\mathbb{R}^+$ denotes the set of positive real numbers.",
+      "statement_sha256": "79923fe7eef3cdaed57493aff85c841e501001dc7bbc89a63958b997d705c516",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Denote by $\\mathbb{R}^+$ the set of all positive real numbers. Determine all functions $f\\colon \\mathbb{R}^+\\to\\mathbb{R}^+$ such that for all $x, y\\in\\mathbb{R}^+$ $$f(x)\\cdot f(y)=f(y)\\cdot f\\bigl(x\\cdot f(y)\\bigr)+\\frac{1}{xy}.$$",
+          "statement_sha256": "616079e813174f2b83426f7931dd30a4881cc403240d9134cffdff25f2c19f99",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.1.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all integers $n$ for which $n^4-3n^2+9$ is a prime.",
-      "statement_sha256": "b49f9289a58576f0a99f9d8ce300f9a5f866380e12412919fe525005585ecad6",
+      "reviewed_statement": "Find all integers $n$ such that $n^4-3n^2+9$ is prime.",
+      "statement_sha256": "1efb017660fd353a40cf66f2aac6f68b14b09341cf361e2df0f6487874d34855",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all integers $n$ for which $n^4-3n^2+9$ is a prime.",
+          "statement_sha256": "b49f9289a58576f0a99f9d8ce300f9a5f866380e12412919fe525005585ecad6",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Find the largest possible area of a triangle $ABC$ whose medians have lengths satisfying the inequalities $t_a\\le 2$, $t_b\\le 3$, $t_c\\le 4$.",
-      "statement_sha256": "2698e7988be62c609d77ebd0119aee017902cd0220464177384513ca3f9d7798",
+      "reviewed_statement": "Find the greatest possible area of a triangle $ABC$ with medians satisfying $t_a\\le 2$, $t_b\\le 3$, $t_c\\le 4$.",
+      "statement_sha256": "39b5506bc4b4a071da1704bf45cd08256270d6199a12f1ccdbc596143e34fa72",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Find the largest possible area of a triangle $ABC$ whose medians have lengths satisfying the inequalities $t_a\\le 2$, $t_b\\le 3$, $t_c\\le 4$.",
+          "statement_sha256": "2698e7988be62c609d77ebd0119aee017902cd0220464177384513ca3f9d7798",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.1.3": {
       "topics": [
         "Algebra",
         "Combinatorics"
       ],
-      "reviewed_statement": "Prove that among any $101$ real numbers there exist two numbers $u$ and $v$ such that $$100\\,|u-v|\\cdot|1-uv|\\le (1+u^2)(1+v^2).$$",
-      "statement_sha256": "e4d9b236add168cdf9f8bf99d6c653b52eb0493e7a2a983cf2beaf0bafa1ffcd",
+      "reviewed_statement": "Prove that among any $101$ real numbers one can choose $u$ and $v$ such that $$100\\,|u-v|\\cdot|1-uv|\\le(1+u^2)(1+v^2).$$",
+      "statement_sha256": "09d6a9478ccfc9b3f577219d2cc4cb74bb12cac96512e3e84611b6d4d6f37b1d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Close pair inequality among a finite real set."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Close pair inequality among a finite real set.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Prove that among any $101$ real numbers there exist two numbers $u$ and $v$ such that $$100\\,|u-v|\\cdot|1-uv|\\le (1+u^2)(1+v^2).$$",
+          "statement_sha256": "e4d9b236add168cdf9f8bf99d6c653b52eb0493e7a2a983cf2beaf0bafa1ffcd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Close pair inequality among a finite real set."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.2.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A point $X$ is given in the interior of a parallelogram $ABCD$. Construct a line which passes through the point $X$ and divides the given parallelogram into two parts whose areas differ from each other as much as possible.",
-      "statement_sha256": "04f45e593920b6da8c1d00fca9219425730f7ef0727edd94cc27994f13bc2f71",
+      "reviewed_statement": "There is a point $X$ inside a parallelogram $ABCD$. Construct a line which goes through $X$ and divides the parallelogram into two parts, with the greatest possible difference in their areas.",
+      "statement_sha256": "18c646984240507f8d59f4e27dd6f8f75362c819d781b6ca47926e95ed724243",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A point $X$ is given in the interior of a parallelogram $ABCD$. Construct a line which passes through the point $X$ and divides the given parallelogram into two parts whose areas differ from each other as much as possible.",
+          "statement_sha256": "04f45e593920b6da8c1d00fca9219425730f7ef0727edd94cc27994f13bc2f71",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.2.5": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "In a group of $90$ children, each child has at least $30$ friends (friendship is mutual). Prove that the children can be divided into three groups of $30$ in such a way that each child has at least one friend in its own group.",
-      "statement_sha256": "e9eb313de9f7c76edff53b751ccdc6028626bb42d73b4e88edfdb05d3fff276e",
+      "reviewed_statement": "In a group of $90$ children, each one has at least $30$ friends (friendship is mutual). Prove that children can be divided into $3$ groups containing $30$ children each, such that any child has a friend in his (her) group.",
+      "statement_sha256": "74274d180c56ed7fcb72eba7a3723388741a4de463af1e41d0c3200b371f2979",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "In a group of $90$ children, each child has at least $30$ friends (friendship is mutual). Prove that the children can be divided into three groups of $30$ in such a way that each child has at least one friend in its own group.",
+          "statement_sha256": "e9eb313de9f7c76edff53b751ccdc6028626bb42d73b4e88edfdb05d3fff276e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2012.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Solve in the set of real numbers the system of equations $$\\begin{aligned} x^4+y^2+4&=5yz,\\\\ y^4+z^2+4&=5zx,\\\\ z^4+x^2+4&=5xy. \\end{aligned}$$",
-      "statement_sha256": "c66cf92a86bc4f77313021acdecac15b7b64125d0f5653fe1d7ddd153f86a93b",
+      "reviewed_statement": "In the domain of real numbers solve the following system of equations $$\\begin{aligned}x^4+y^2+4&=5yz,\\\\y^4+z^2+4&=5zx,\\\\z^4+x^2+4&=5xy.\\end{aligned}$$",
+      "statement_sha256": "bdb72e38bdd18e45113b217a90f45560cf03d62b08ec93e02c9d282ba3a767be",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Solve in the set of real numbers the system of equations $$\\begin{aligned} x^4+y^2+4&=5yz,\\\\ y^4+z^2+4&=5zx,\\\\ z^4+x^2+4&=5xy. \\end{aligned}$$",
+          "statement_sha256": "c66cf92a86bc4f77313021acdecac15b7b64125d0f5653fe1d7ddd153f86a93b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2013.1.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all pairs of integers $a$, $b$ for which the equality $$\\frac{a^2+1}{2b^2-3}=\\frac{a-1}{2b-1}$$ holds.",
-      "statement_sha256": "3f0b307b0787bc9cc06b3f2143b29fa1cfd2856869b48c4375b7684f9469a797",
+      "reviewed_statement": "Find all pairs of integers $a$, $b$ such that $$\\frac{a^2+1}{2b^2-3}=\\frac{a-1}{2b-1}.$$",
+      "statement_sha256": "bfd70b774284a1473288c3c1798843028a4128d1dcad136938b06b1ba2cb3dbb",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all pairs of integers $a$, $b$ for which the equality $$\\frac{a^2+1}{2b^2-3}=\\frac{a-1}{2b-1}$$ holds.",
+          "statement_sha256": "3f0b307b0787bc9cc06b3f2143b29fa1cfd2856869b48c4375b7684f9469a797",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2013.1.2": {
       "topics": [
@@ -52856,29 +53339,66 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a parallelogram $ABCD$ with centre $S$, denote by $O$ the centre of the incircle of the triangle $ABD$ and by $T$ its point of tangency with the diagonal $BD$. Prove that the lines $OS$ and $CT$ are parallel.",
-      "statement_sha256": "843fc13f679406f00534d0fa0bad7c27c38774a6f8a82935c8d069dc8c8b737e",
+      "reviewed_statement": "Given a parallelogram $ABCD$ with center $S$, denote by $O$ the incenter of triangle $ABD$ and by $T$ the point of contact of the incircle of triangle $ABD$ with the diagonal $BD$. Prove that lines $OS$ and $CT$ are parallel.",
+      "statement_sha256": "d8e75c026217ee76064295e8f069511decc17480a1cd4ab9b3c2f7d00323618f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a parallelogram $ABCD$ with centre $S$, denote by $O$ the centre of the incircle of the triangle $ABD$ and by $T$ its point of tangency with the diagonal $BD$. Prove that the lines $OS$ and $CT$ are parallel.",
+          "statement_sha256": "843fc13f679406f00534d0fa0bad7c27c38774a6f8a82935c8d069dc8c8b737e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2013.2.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "A positive integer $N$ is written on a blackboard in the decimal system. If it is not a one-digit number, we erase its last digit $c$ and replace the number $m$ which remains on the blackboard by the number $|m-3c|$. (For example, if the number $N=1204$ was on the blackboard, after the operation there will be $120-3\\cdot 4=108$.) Find all positive integers $N$ from which, by repeating the described operation, we eventually obtain the number $0$.",
-      "statement_sha256": "d401056126af8c3e99e51f7211ceb9168827bc75a425aace105370f2a8bc4784",
+      "reviewed_statement": "There is written a number $N$ (in the decimal representation) on the board. In a step we erase the last digit $c$ and instead of the number $m$, which is now left on the board, we write number $|m-3c|$ (for example, if $N=1204$ was written on the board, then after the step there will be $120-3\\cdot 4=108$). We continue until there is a one-digit number on the board. Find all positive integers $N$ such that after a finite number of steps number $0$ is left on the board.",
+      "statement_sha256": "f830bf1d40abc4b9beaf756ffadfca29f9d925cb0a4fd312c84687fe987d9c9a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Digit-deletion divisibility algorithm."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Digit-deletion divisibility algorithm.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "A positive integer $N$ is written on a blackboard in the decimal system. If it is not a one-digit number, we erase its last digit $c$ and replace the number $m$ which remains on the blackboard by the number $|m-3c|$. (For example, if the number $N=1204$ was on the blackboard, after the operation there will be $120-3\\cdot 4=108$.) Find all positive integers $N$ from which, by repeating the described operation, we eventually obtain the number $0$.",
+          "statement_sha256": "d401056126af8c3e99e51f7211ceb9168827bc75a425aace105370f2a8bc4784",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Digit-deletion divisibility algorithm."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2013.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A parallelogram $ABCD$ is given such that the feet $K$, $L$ of the perpendiculars dropped from the point $D$ to the sides $AB$, $BC$, respectively, are interior points of these sides. Prove that $KL\\parallel AC$ if and only if $$|\\angle BCA|+|\\angle ABD|=|\\angle BDA|+|\\angle ACD|.$$",
-      "statement_sha256": "68b06f020c35a6cad4d225f84402fdf800f3f967a250f8970ad5e14d2959b27c",
+      "reviewed_statement": "Let $ABCD$ be a parallelogram such that the projections $K$, $L$ of $D$ onto the sides $AB$, $BC$, respectively, are their interior points. Prove that $KL\\parallel AC$ if and only if $$\\angle BCA+\\angle ABD=\\angle BDA+\\angle ACD.$$",
+      "statement_sha256": "0983070afab0f204fdc702ba03f6e908f41160721888c830f2cd2da5e9cf254c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A parallelogram $ABCD$ is given such that the feet $K$, $L$ of the perpendiculars dropped from the point $D$ to the sides $AB$, $BC$, respectively, are interior points of these sides. Prove that $KL\\parallel AC$ if and only if $$|\\angle BCA|+|\\angle ABD|=|\\angle BDA|+|\\angle ACD|.$$",
+          "statement_sha256": "68b06f020c35a6cad4d225f84402fdf800f3f967a250f8970ad5e14d2959b27c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2013.2.6": {
       "topics": [
@@ -52893,67 +53413,154 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $n$ be a positive integer. Denote all its positive divisors by $d_1, d_2, \\dots, d_k$ so that $d_1<d_2<\\dots<d_k$ (i.e. $d_1=1$ and $d_k=n$). Determine all values of $n$ for which $d_5-d_3=50$ and $11d_5+8d_7=3n$.",
-      "statement_sha256": "3636e9a3b926c957384cf2bbeea3978d948099d7ae802554a2d43495ee2af5ea",
+      "reviewed_statement": "Let $n$ be a natural number whose all positive divisors are denoted as $d_1, d_2, \\dots, d_k$ in such a way that $d_1<d_2<\\dots<d_k$ (thus $d_1=1$ and $d_k=n$). Determine all the values of $n$ for which both equalities $d_5-d_3=50$ and $11d_5+8d_7=3n$ hold.",
+      "statement_sha256": "164d2562b803a7bc94200d9ae4b0c9c5ece343f872c4d1da418eb1fbd3006078",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $n$ be a positive integer. Denote all its positive divisors by $d_1, d_2, \\dots, d_k$ so that $d_1<d_2<\\dots<d_k$ (i.e. $d_1=1$ and $d_k=n$). Determine all values of $n$ for which $d_5-d_3=50$ and $11d_5+8d_7=3n$.",
+          "statement_sha256": "3636e9a3b926c957384cf2bbeea3978d948099d7ae802554a2d43495ee2af5ea",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2014.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a plane in which a segment $AB$ is given, consider triangles $XYZ$ such that $X$ is an interior point of the segment $AB$, the triangles $XBY$ and $XZA$ are similar ($\\triangle XBY\\sim\\triangle XZA$), and the points $A$, $B$, $Y$, $Z$ lie on a circle in this order. Find the locus of the midpoints of all the segments $YZ$.",
-      "statement_sha256": "d625de5bc246d33c7012082cb1ad74e66e4964dd3e52e40b3f670e76295fa3b3",
+      "reviewed_statement": "We are given a segment $AB$ in the plane. Consider a triangle $XYZ$ with the following properties: the vertex $X$ is an interior point of the segment $AB$, the triangles $XBY$ and $XZA$ are similar ($\\triangle XBY\\sim\\triangle XZA$) and the points $A$, $B$, $Y$, $Z$ lie on a circle in this order. Find the locus of midpoints of the sides $YZ$ of all such triangles $XYZ$.",
+      "statement_sha256": "2c7c0cc1929a600b295f856245162edfab7ef8ec5dbae91c25c83b2915d23d59",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a plane in which a segment $AB$ is given, consider triangles $XYZ$ such that $X$ is an interior point of the segment $AB$, the triangles $XBY$ and $XZA$ are similar ($\\triangle XBY\\sim\\triangle XZA$), and the points $A$, $B$, $Y$, $Z$ lie on a circle in this order. Find the locus of the midpoints of all the segments $YZ$.",
+          "statement_sha256": "d625de5bc246d33c7012082cb1ad74e66e4964dd3e52e40b3f670e76295fa3b3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2014.2.4": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "$234$ spectators came to a cinema. Determine for which $n\\ge 4$ it could happen that the spectators could be seated in $n$ rows so that each spectator in the $i$-th row knew exactly $j$ spectators in the $j$-th row, for any $i, j\\in\\{1,2,\\dots,n\\}$, $i\\ne j$. (The relation of acquaintance is mutual.)",
-      "statement_sha256": "8c507776d743f8738194ca9759e444339286381a88c6081ac7dab85013ee2aed",
+      "reviewed_statement": "There are $234$ visitors in a cinema auditorium. The visitors are sitting in $n$ rows, where $n\\ge 4$, so that each visitor in the $i$-th row has exactly $j$ friends in the $j$-th row, for any $i, j\\in\\{1,2,\\dots,n\\}$, $i\\ne j$. Find all the possible values of $n$. (Friendship is supposed to be a symmetric relation.)",
+      "statement_sha256": "b407b9ed92f34510c900411622e84e96bcbda3b842aeeb31c65ece79dcc1dcef",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Integer class sizes with prescribed bipartite degrees."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Integer class sizes with prescribed bipartite degrees.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "$234$ spectators came to a cinema. Determine for which $n\\ge 4$ it could happen that the spectators could be seated in $n$ rows so that each spectator in the $i$-th row knew exactly $j$ spectators in the $j$-th row, for any $i, j\\in\\{1,2,\\dots,n\\}$, $i\\ne j$. (The relation of acquaintance is mutual.)",
+          "statement_sha256": "8c507776d743f8738194ca9759e444339286381a88c6081ac7dab85013ee2aed",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Integer class sizes with prescribed bipartite degrees."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2014.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "An acute triangle $ABC$ is given. Denote by $k$ the circle with diameter $AB$. The circle which touches the angle bisector of $\\angle BAC$ at the point $A$ and passes through the point $C$ intersects the circle $k$ at a point $P$, $P\\ne A$. The circle which touches the angle bisector of $\\angle ABC$ at the point $B$ and passes through the point $C$ intersects the circle $k$ at a point $Q$, $Q\\ne B$. Prove that the intersection of the lines $AQ$ and $BP$ lies on the angle bisector of $\\angle ACB$.",
-      "statement_sha256": "58116824124811c7dcf7a2b5a02ad6f614aae52eddf828db53040e4dd4299e68",
+      "reviewed_statement": "We are given an acute-angled triangle $ABC$. Denote by $k$ the circle with diameter $AB$. A circle touching the bisector of the angle $BAC$ at the point $A$ and passing through the point $C$ meets the circle $k$ in a point $P$, $P\\ne A$. Similarly, a circle touching the bisector of the angle $ABC$ at the point $B$ and passing through the point $C$ meets the circle $k$ in a point $Q$, $Q\\ne B$. Prove that the lines $AQ$ and $BP$ intersect each other on the bisector of the angle $ACB$.",
+      "statement_sha256": "906e6d7aace8be62f114795d2e5f58fae38748416ab9fc81ed95ed7310d5d94c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "An acute triangle $ABC$ is given. Denote by $k$ the circle with diameter $AB$. The circle which touches the angle bisector of $\\angle BAC$ at the point $A$ and passes through the point $C$ intersects the circle $k$ at a point $P$, $P\\ne A$. The circle which touches the angle bisector of $\\angle ABC$ at the point $B$ and passes through the point $C$ intersects the circle $k$ at a point $Q$, $Q\\ne B$. Prove that the intersection of the lines $AQ$ and $BP$ lies on the angle bisector of $\\angle ACB$.",
+          "statement_sha256": "58116824124811c7dcf7a2b5a02ad6f614aae52eddf828db53040e4dd4299e68",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2014.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for any non-negative real numbers $a$ and $b$ the inequality $$\\frac{a}{\\sqrt{b^2+1}}+\\frac{b}{\\sqrt{a^2+1}}\\ge\\frac{a+b}{\\sqrt{ab+1}}$$ holds, and determine when equality occurs.",
-      "statement_sha256": "e2f50c79203250809d28270957149116f86232f40c8b9b3e44b34cf76969ba2d",
+      "reviewed_statement": "Let $a$, $b$ be non-negative real numbers. Prove the inequality $$\\frac{a}{\\sqrt{b^2+1}}+\\frac{b}{\\sqrt{a^2+1}}\\ge\\frac{a+b}{\\sqrt{ab+1}}$$ and find when the equality holds.",
+      "statement_sha256": "b914cae46b0c59a0187abcf4f8f08e699155860a968d4317dd37816c577c9e90",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for any non-negative real numbers $a$ and $b$ the inequality $$\\frac{a}{\\sqrt{b^2+1}}+\\frac{b}{\\sqrt{a^2+1}}\\ge\\frac{a+b}{\\sqrt{ab+1}}$$ holds, and determine when equality occurs.",
+          "statement_sha256": "e2f50c79203250809d28270957149116f86232f40c8b9b3e44b34cf76969ba2d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2015.1.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all four-digit numbers $n$ such that simultaneously:\n\ni) the number $n$ is a product of three distinct primes;\n\nii) the sum of the two smallest of these primes equals the difference of the two largest of them;\n\niii) the sum of all three primes equals the square of another prime.",
-      "statement_sha256": "70686933581382590cf6a3f1e3eeed3015c1f59225923824a65542f2109285f2",
+      "reviewed_statement": "Find all four-digit numbers $n$ satisfying the following conditions:\n\ni) number $n$ is product of three different primes;\n\nii) sum of the two smallest of these prime numbers is equal to the difference of largest two of them;\n\niii) sum of three primes is equal to the square of another prime.",
+      "statement_sha256": "f15858d5923f3459ddb02910cf88d99bc12e232416f66a79c47d6044b2883c57",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all four-digit numbers $n$ such that simultaneously:\n\ni) the number $n$ is a product of three distinct primes;\n\nii) the sum of the two smallest of these primes equals the difference of the two largest of them;\n\niii) the sum of all three primes equals the square of another prime.",
+          "statement_sha256": "70686933581382590cf6a3f1e3eeed3015c1f59225923824a65542f2109285f2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2015.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "For a given positive integer $n$, determine the number of paths of length $2n+2$ from the point $[0,0]$ to the point $[n,n]$ which do not pass through any point more than once. By a path of length $2n+2$ from the point $[0,0]$ to the point $[n,n]$ we mean a $(2n+2)$-term sequence $$(A_0A_1, A_1A_2, A_2A_3, \\dots, A_{2n+1}A_{2n+2})$$ of segments joining two neighbouring lattice points, where $A_0=[0,0]$, $A_{2n+2}=[n,n]$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2015_p2_fig.png",
-      "statement_sha256": "04161c8aced77bb5abb2b948508408fc19f04e56d1f343693e41bea2bbb81563",
+      "reviewed_statement": "For a given natural number $n$ specify the number of paths of length $2n+2$ from point $[0,0]$ to the point $[n,n]$ which do not pass any point more than once. Path of length $2n+2$ connecting points $[0,0]$ and $[n,n]$ means $(2n+2)$-tuple $$(A_0A_1, A_1A_2, A_2A_3, \\dots, A_{2n+1}A_{2n+2})$$ of line segments connecting two adjacent lattice points, while $A_0=[0,0]$, $A_{2n+2}=[n,n]$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_2015_p2_fig.png",
+      "statement_sha256": "bc7c0ab4af83129155ac2bc6a696d211ff306fa30e03b8c8dbb623239383b8a6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Counting self-avoiding lattice paths of prescribed length."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Counting self-avoiding lattice paths of prescribed length.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "For a given positive integer $n$, determine the number of paths of length $2n+2$ from the point $[0,0]$ to the point $[n,n]$ which do not pass through any point more than once. By a path of length $2n+2$ from the point $[0,0]$ to the point $[n,n]$ we mean a $(2n+2)$-term sequence $$(A_0A_1, A_1A_2, A_2A_3, \\dots, A_{2n+1}A_{2n+2})$$ of segments joining two neighbouring lattice points, where $A_0=[0,0]$, $A_{2n+2}=[n,n]$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2015_p2_fig.png",
+          "statement_sha256": "04161c8aced77bb5abb2b948508408fc19f04e56d1f343693e41bea2bbb81563",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Counting self-avoiding lattice paths of prescribed length."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2015.1.3": {
       "topics": [
@@ -52968,19 +53575,43 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Solve in the set of real numbers the system of equations $$\\begin{aligned} a(b^2+c)&=c(c+ab),\\\\ b(c^2+a)&=a(a+bc),\\\\ c(a^2+b)&=b(b+ca). \\end{aligned}$$",
-      "statement_sha256": "c81e279fd3bff515539235f1146148ace6b5e97b0ec8bbbef28aecdae17780be",
+      "reviewed_statement": "In the field of real numbers solve a system of equations $$\\begin{aligned} a(b^2+c)&=c(c+ab),\\\\ b(c^2+a)&=a(a+bc),\\\\ c(a^2+b)&=b(b+ca). \\end{aligned}$$",
+      "statement_sha256": "c580ca1de0b8aa7e04c43da11cc74a1443213d8248871c133371fbaa47cf7a1a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Solve in the set of real numbers the system of equations $$\\begin{aligned} a(b^2+c)&=c(c+ab),\\\\ b(c^2+a)&=a(a+bc),\\\\ c(a^2+b)&=b(b+ca). \\end{aligned}$$",
+          "statement_sha256": "c81e279fd3bff515539235f1146148ace6b5e97b0ec8bbbef28aecdae17780be",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2015.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A triangle $ABC$ is given in which any two sides differ in length by at least $d>0$. Denote by $T$ its centroid, by $I$ the centre of its incircle and by $\\varrho$ the radius of the incircle. Prove that $$S_{AIT}+S_{BIT}+S_{CIT}\\ge\\frac{2}{3}d\\varrho,$$ where $S_{XYZ}$ denotes the area of the triangle $XYZ$.",
-      "statement_sha256": "f0c72982d82c61eb87a64c979d09e47ac741107c05d2fb0e559a2f9a5e3685c2",
+      "reviewed_statement": "A triangle $ABC$ is given every two sides of which differ in length by at least $d>0$. Denote by $T$ its centroid, $I$ incentre and $\\rho$ inradius. Prove that $$S_{AIT}+S_{BIT}+S_{CIT}\\ge\\frac{2}{3}\\rho d,$$ where $S_{XYZ}$ denotes the area of triangle $XYZ$.",
+      "statement_sha256": "324a908df3ceffce3f8dadff3db2a2323ee84fe6a8f2cf2ff317e3bb934b3343",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle $ABC$ is given in which any two sides differ in length by at least $d>0$. Denote by $T$ its centroid, by $I$ the centre of its incircle and by $\\varrho$ the radius of the incircle. Prove that $$S_{AIT}+S_{BIT}+S_{CIT}\\ge\\frac{2}{3}d\\varrho,$$ where $S_{XYZ}$ denotes the area of the triangle $XYZ$.",
+          "statement_sha256": "f0c72982d82c61eb87a64c979d09e47ac741107c05d2fb0e559a2f9a5e3685c2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2015.2.6": {
       "topics": [
@@ -52998,57 +53629,132 @@
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p>3$ be a given prime. Determine the number of all ordered six-tuples $(a,b,c,d,e,f)$ of positive integers whose sum equals $3p$ and such that all the fractions $$\\frac{a+b}{c+d},\\quad \\frac{b+c}{d+e},\\quad \\frac{c+d}{e+f},\\quad \\frac{d+e}{f+a},\\quad \\frac{e+f}{a+b}$$ have integer values.",
-      "statement_sha256": "4820f52c3363b877c1a44cfc4cf4c6b0ba311657792eece4dda8bc52bacf88a1",
+      "reviewed_statement": "Let $p>3$ be a prime. Find the number of ordered sextuples $(a,b,c,d,e,f)$ of positive integers, whose sum is $3p$, and all the fractions $$\\frac{a+b}{c+d},\\quad \\frac{b+c}{d+e},\\quad \\frac{c+d}{e+f},\\quad \\frac{d+e}{f+a},\\quad \\frac{e+f}{a+b}$$ are integers.",
+      "statement_sha256": "1787e8cda8716ab4c2c84dfc8e19c194558b159d7a48493f265be75b38deced8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Counting integer six-tuples with integral adjacent ratios."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Counting integer six-tuples with integral adjacent ratios.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p>3$ be a given prime. Determine the number of all ordered six-tuples $(a,b,c,d,e,f)$ of positive integers whose sum equals $3p$ and such that all the fractions $$\\frac{a+b}{c+d},\\quad \\frac{b+c}{d+e},\\quad \\frac{c+d}{e+f},\\quad \\frac{d+e}{f+a},\\quad \\frac{e+f}{a+b}$$ have integer values.",
+          "statement_sha256": "4820f52c3363b877c1a44cfc4cf4c6b0ba311657792eece4dda8bc52bacf88a1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Counting integer six-tuples with integral adjacent ratios."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2016.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Denote by $r$ and $r_a$ the radii of the incircle and of the excircle opposite to the side $BC$ of a triangle $ABC$, respectively. Prove that if $$r+r_a=|BC|,$$ then the triangle $ABC$ is right-angled.",
-      "statement_sha256": "2ff0994bc66e05034804cd69091642d8c5f2d2bab22aa87c0fea7b401ded6908",
+      "reviewed_statement": "Let $r$ and $r_a$ be the radii of inscribed circle and excircle opposite $A$ of the triangle $ABC$. Show that if $$r+r_a=|BC|,$$ then the triangle is right-angled.",
+      "statement_sha256": "f5ddf5e911ef5d89db8a275bb29d6029a65ab4918ec5dd306ee8688443d3c761",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Denote by $r$ and $r_a$ the radii of the incircle and of the excircle opposite to the side $BC$ of a triangle $ABC$, respectively. Prove that if $$r+r_a=|BC|,$$ then the triangle $ABC$ is right-angled.",
+          "statement_sha256": "2ff0994bc66e05034804cd69091642d8c5f2d2bab22aa87c0fea7b401ded6908",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2016.1.3": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Mathematical clubs are popular among the inhabitants of a certain town. Any two of the clubs have at least one common member. Prove that we can distribute compasses and rulers to the inhabitants of the town in such a way that only one inhabitant gets both, and yet each club, at full attendance of its members, has at its disposal both a ruler and a compass.",
-      "statement_sha256": "e7f35b14ffecff936e0093964ba72cc9d721eec57792d0795696cfaa6cfd2ccb",
+      "reviewed_statement": "Mathematics clubs are very popular in certain city. Any two of them have at least one common member. Prove that one can distribute rulers and compasses to the citizens in such a way that only one citizen gets both (compass and ruler) and any club has to his disposal both, compass and ruler, from its members.",
+      "statement_sha256": "e6ce73b78c1ef8739d78d8b2c676c87f097de12a4836d8abf9818751617655c2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Two-resource allocation to intersecting set families."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Two-resource allocation to intersecting set families.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Mathematical clubs are popular among the inhabitants of a certain town. Any two of the clubs have at least one common member. Prove that we can distribute compasses and rulers to the inhabitants of the town in such a way that only one inhabitant gets both, and yet each club, at full attendance of its members, has at its disposal both a ruler and a compass.",
+          "statement_sha256": "e7f35b14ffecff936e0093964ba72cc9d721eec57792d0795696cfaa6cfd2ccb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Two-resource allocation to intersecting set families."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2016.2.4": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Positive numbers $a$, $b$, $c$ satisfy $$(a+c)(b^2+ac)=4a.$$ Determine the maximum value of the expression $b+c$ and find all triples of numbers $(a,b,c)$ for which the expression attains this value.",
-      "statement_sha256": "675dd51c94d40edf09b6a1b025caf80a394d9ec0fbdcd27c0a73396b7818829a",
+      "reviewed_statement": "For positive $a$, $b$, $c$ it holds $$(a+c)(b^2+ac)=4a.$$ Find the maximal possible value of $b+c$ and find all triples $(a,b,c)$, for which the value is attained.",
+      "statement_sha256": "b2ea2f1bd9f7be9bbbba3ea9231d7055e43965b924a578f1999a251cff9de9fc",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Positive numbers $a$, $b$, $c$ satisfy $$(a+c)(b^2+ac)=4a.$$ Determine the maximum value of the expression $b+c$ and find all triples of numbers $(a,b,c)$ for which the expression attains this value.",
+          "statement_sha256": "675dd51c94d40edf09b6a1b025caf80a394d9ec0fbdcd27c0a73396b7818829a",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2016.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a triangle $ABC$ we have $|BC|=1$ and, moreover, there exists exactly one point $D$ on the side $BC$ such that $|DA|^2=|DB|\\cdot|DC|$. Determine all possible values of the perimeter of the triangle $ABC$.",
-      "statement_sha256": "73b3f78260a38e6e731180df760e6f282f408e7f6719f3c931b39094be31236f",
+      "reviewed_statement": "There is $|BC|=1$ in a triangle $ABC$ and there is a unique point $D$ on $BC$ such that $|DA|^2=|DB|\\cdot|DC|$. Find all possible values of the perimeter of $ABC$.",
+      "statement_sha256": "bee1777df90ce64e904ecf451c5d482fd9906bab005ee6a88fd55f4018ff663e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a triangle $ABC$ we have $|BC|=1$ and, moreover, there exists exactly one point $D$ on the side $BC$ such that $|DA|^2=|DB|\\cdot|DC|$. Determine all possible values of the perimeter of the triangle $ABC$.",
+          "statement_sha256": "73b3f78260a38e6e731180df760e6f282f408e7f6719f3c931b39094be31236f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2016.2.6": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A piece called a prince is placed on some square of a $6\\times 6$ chessboard. In one move it can jump either vertically or horizontally. The length of the jump is alternately one and two squares, the piece starting with a jump of length one (i.e. to a neighbouring square). Decide whether the starting position of the piece can be chosen so that, after a suitable sequence of $35$ jumps, it visits every square of the chessboard exactly once.",
-      "statement_sha256": "ecf4989257cdbbfcebec389431725309d2470cbfd5ac4c972df95bb10392d14f",
+      "reviewed_statement": "There is a figure of prince on a field of a $6\\times 6$ square chessboard. The prince can in one move jump either horizontally or vertically. The lengths of the jumps are alternately either one or two fields, and the jump on the next field is the first one. Decide whether one can choose the initial field for the prince, so that the prince visits in an appropriate sequence of $35$ jumps every field of the chessboard.",
+      "statement_sha256": "a64209963bed07ea3d863542ebc42bd61a9ed60d71d2ef946f3ef347ee244418",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A piece called a prince is placed on some square of a $6\\times 6$ chessboard. In one move it can jump either vertically or horizontally. The length of the jump is alternately one and two squares, the piece starting with a jump of length one (i.e. to a neighbouring square). Decide whether the starting position of the piece can be chosen so that, after a suitable sequence of $35$ jumps, it visits every square of the chessboard exactly once.",
+          "statement_sha256": "ecf4989257cdbbfcebec389431725309d2470cbfd5ac4c972df95bb10392d14f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2017.1.1": {
       "topics": [
@@ -53102,86 +53808,198 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "In a group of people, some pairs are friends. For a positive integer $k\\ge 3$ we say that the group is $k$-good if every $k$-tuple of people from the group can be seated around a round table so that every two neighbours are friends. Prove that if the group is $6$-good, then it is also $7$-good.",
-      "statement_sha256": "1f9e8b1ac3e4918f40b0b5cb8d4ce4fe783feca700c5a2d5fb746d680605a302",
+      "reviewed_statement": "In a certain club, some pairs of members are friends. Given $k\\ge 3$, we say that a club is $k$-good if every group of $k$ members can be seated around a round table such that every two neighbors are friends. Prove that if a club is $6$-good then it is $7$-good.",
+      "statement_sha256": "0027ad1353f2614f12bc2bc4be61ecd2135bd9db98611ce765cb135ccd329349",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "In a group of people, some pairs are friends. For a positive integer $k\\ge 3$ we say that the group is $k$-good if every $k$-tuple of people from the group can be seated around a round table so that every two neighbours are friends. Prove that if the group is $6$-good, then it is also $7$-good.",
+          "statement_sha256": "1f9e8b1ac3e4918f40b0b5cb8d4ce4fe783feca700c5a2d5fb746d680605a302",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2018.1.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A triangle $ABC$ is given. The angle bisector at vertex $A$ meets side $BC$ at point $D$. Let $E$, $F$ be the circumcentres of triangles $ABD$, $ACD$, respectively. What can the measure of angle $BAC$ be if the circumcentre of triangle $AEF$ lies on the line $BC$?",
-      "statement_sha256": "154ea8030b6b295d974e66ae49044709679ec280d8be35840be0c76b0b0d4421",
+      "reviewed_statement": "Let $ABC$ be a triangle. The $A$-angle bisector intersects $BC$ at $D$. Let $E$, $F$ be the circumcenters of triangles $ABD$, $ACD$, respectively. Given that the circumcenter of triangle $AEF$ lies on $BC$, find all possible values of $\\angle BAC$.",
+      "statement_sha256": "bfc5909f6de6ea82f3eba15ddc9ac605d66c3cb5d8a5b9abc99f6e0261c8f4b3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle $ABC$ is given. The angle bisector at vertex $A$ meets side $BC$ at point $D$. Let $E$, $F$ be the circumcentres of triangles $ABD$, $ACD$, respectively. What can the measure of angle $BAC$ be if the circumcentre of triangle $AEF$ lies on the line $BC$?",
+          "statement_sha256": "154ea8030b6b295d974e66ae49044709679ec280d8be35840be0c76b0b0d4421",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2018.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "An isosceles trapezoid $ABCD$ with the longer base $AB$ is given. Let $I$ be the incentre of triangle $ABC$ and $J$ the centre of the excircle of triangle $ACD$ opposite to side $AD$. Prove that the lines $IJ$ and $AB$ are parallel.",
-      "statement_sha256": "ff2da9f6f10ec95b1313cb7c1318b1ce0de9899c208bdea18ee5424dde4331bd",
+      "reviewed_statement": "Let $ABCD$ be an isosceles trapezoid with longer base $AB$. Let $I$ be the incenter of triangle $ABC$ and $J$ the $C$-excenter of triangle $ACD$. Prove that $IJ$ and $AB$ are parallel.",
+      "statement_sha256": "844145f76c90f84118670b714f76dd535cc15efd5678b9127fe31dd541f262d8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "An isosceles trapezoid $ABCD$ with the longer base $AB$ is given. Let $I$ be the incentre of triangle $ABC$ and $J$ the centre of the excircle of triangle $ACD$ opposite to side $AD$. Prove that the lines $IJ$ and $AB$ are parallel.",
+          "statement_sha256": "ff2da9f6f10ec95b1313cb7c1318b1ce0de9899c208bdea18ee5424dde4331bd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2018.2.6": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Find the smallest positive integer $n$ such that for any colouring of the numbers $1, 2, 3, \\dots, n$ with three colours there exist two numbers of the same colour among them whose difference is the square of a positive integer.",
-      "statement_sha256": "6ec0f8575938051d76f2411d85a0697b00c168247243bea1fc80ff8d5d8b4af8",
+      "reviewed_statement": "Find the smallest positive integer $n$ such that for any coloring of numbers $1, 2, 3, \\dots, n$ by three colors there exist two numbers with the same color whose difference is a square of an integer.",
+      "statement_sha256": "e0253cb197a4c74936bd5fcda04cd5448e96407ede3787542147f21edbc48939",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Three-colouring an integer interval with square-distance restrictions."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Three-colouring an integer interval with square-distance restrictions.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find the smallest positive integer $n$ such that for any colouring of the numbers $1, 2, 3, \\dots, n$ with three colours there exist two numbers of the same colour among them whose difference is the square of a positive integer.",
+          "statement_sha256": "6ec0f8575938051d76f2411d85a0697b00c168247243bea1fc80ff8d5d8b4af8",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Three-colouring an integer interval with square-distance restrictions."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2019.1.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Solve the system of equations in the set of real numbers: $$\\begin{aligned} x^2-yz&=|y-z|+1,\\\\ y^2-zx&=|z-x|+1,\\\\ z^2-xy&=|x-y|+1.\\end{aligned}$$",
-      "statement_sha256": "562a9de8391cdfc89118d4f9f769c95488d15b12b6cebde6cc4bbc8df92df6cb",
+      "reviewed_statement": "Find all triplets $(x,y,z)$ of real numbers satisfying $$\\begin{aligned} x^2-yz&=|y-z|+1,\\\\ y^2-zx&=|z-x|+1,\\\\ z^2-xy&=|x-y|+1.\\end{aligned}$$",
+      "statement_sha256": "d551cd3522b2388ca0baf5f5f931a263cab9ee3ab375454ccd4ab8c3fa03ea02",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Solve the system of equations in the set of real numbers: $$\\begin{aligned} x^2-yz&=|y-z|+1,\\\\ y^2-zx&=|z-x|+1,\\\\ z^2-xy&=|x-y|+1.\\end{aligned}$$",
+          "statement_sha256": "562a9de8391cdfc89118d4f9f769c95488d15b12b6cebde6cc4bbc8df92df6cb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2019.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A rectangle $ABCD$ with $|AB|=a\\ge b=|BC|$ is given. Construct points $P$ and $Q$ on the line $BD$ such that $|AP|=|PQ|=|QC|$. Discuss the solvability of the problem with respect to the lengths $a$, $b$.",
-      "statement_sha256": "532b319635b3b830e1f3826b4d7964f7c51c95d6d22f849a5c9ce6e09c8969be",
+      "reviewed_statement": "Let $ABCD$ be a rectangle such that $AB=a\\ge b=BC$. Construct points $P$, $Q$ on the line $BD$ such that $AP=PQ=QC$. Determine the number of solutions in terms of $a$, $b$.",
+      "statement_sha256": "3bb4b699d317bbecd0aa195db4aa3543305542d9a636fda7538d9b2fbaf797ea",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A rectangle $ABCD$ with $|AB|=a\\ge b=|BC|$ is given. Construct points $P$ and $Q$ on the line $BD$ such that $|AP|=|PQ|=|QC|$. Discuss the solvability of the problem with respect to the lengths $a$, $b$.",
+          "statement_sha256": "532b319635b3b830e1f3826b4d7964f7c51c95d6d22f849a5c9ce6e09c8969be",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2019.1.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $a$, $b$, $c$, $n$ be positive integers such that the following conditions hold:\n(i) the numbers $a$, $b$, $c$, $a+b+c$ are pairwise coprime;\n(ii) the number $(a+b+c)(a+b)(b+c)(c+a)(ab+bc+ca)$ is the $n$-th power of an integer.\nProve that the product $abc$ can be written as the difference of two $n$-th powers of integers.",
-      "statement_sha256": "67e5b841d4d9fd972fbf6f90c49576cd4499cc664d5200872151b2f2c8cd1889",
+      "reviewed_statement": "Let $a$, $b$, $c$, $n$ be positive integers such that the following conditions are met:\n\n(i) every two of the numbers $a$, $b$, $c$, $a+b+c$ are coprime;\n\n(ii) number $(a+b+c)(a+b)(b+c)(c+a)(ab+bc+ca)$ is a perfect $n$-th power.\n\nProve that number $abc$ can be expressed as a difference of two perfect $n$-th powers.",
+      "statement_sha256": "89c28549c42864e5d3e50a1b0b06f57175d48a7bfdc9490d5d751c9d0f5477d0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $a$, $b$, $c$, $n$ be positive integers such that the following conditions hold:\n(i) the numbers $a$, $b$, $c$, $a+b+c$ are pairwise coprime;\n(ii) the number $(a+b+c)(a+b)(b+c)(c+a)(ab+bc+ca)$ is the $n$-th power of an integer.\nProve that the product $abc$ can be written as the difference of two $n$-th powers of integers.",
+          "statement_sha256": "67e5b841d4d9fd972fbf6f90c49576cd4499cc664d5200872151b2f2c8cd1889",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2019.2.4": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "An acute triangle $ABC$ is given. On the ray opposite to the ray $BC$ lies a point $P$ such that $|AB|=|BP|$. Analogously, on the ray opposite to the ray $CB$ lies a point $Q$ such that $|AC|=|CQ|$. Let $J$ be the centre of the excircle of the triangle opposite to side $BC$, and let $D$, $E$ be its points of tangency with the lines $AB$ and $AC$, respectively. Suppose that the rays opposite to the rays $DP$ and $EQ$ intersect at a point $F$ different from $J$. Prove that $AF\\perp FJ$.",
-      "statement_sha256": "d6c5e49fbbc4de43b4e70643034849c3441ece26e971d39eda6a3e4b4819eec4",
+      "reviewed_statement": "Let $ABC$ be an acute triangle. Point $P$ lies on the ray opposite to $BC$ such that $AB=BP$. Similarly, point $Q$ lies on the ray opposite to $CB$ such that $AC=CQ$. Let $J$ be the center of the $A$-excircle of triangle $ABC$ and $D$, $E$ its tangency points with lines $AB$, $AC$, respectively. Suppose that rays opposite to $DP$ and $EQ$ meet at $F\\ne J$. Prove that $AF\\perp FJ$.",
+      "statement_sha256": "098f7bd0fc5c25555fdc35e0208b68d5ae95ed89528de2d9d66ae7b735487892",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "An acute triangle $ABC$ is given. On the ray opposite to the ray $BC$ lies a point $P$ such that $|AB|=|BP|$. Analogously, on the ray opposite to the ray $CB$ lies a point $Q$ such that $|AC|=|CQ|$. Let $J$ be the centre of the excircle of the triangle opposite to side $BC$, and let $D$, $E$ be its points of tangency with the lines $AB$ and $AC$, respectively. Suppose that the rays opposite to the rays $DP$ and $EQ$ intersect at a point $F$ different from $J$. Prove that $AF\\perp FJ$.",
+          "statement_sha256": "d6c5e49fbbc4de43b4e70643034849c3441ece26e971d39eda6a3e4b4819eec4",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2019.2.6": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "For which positive integers $n$ is it possible to write all the integers from $1$ to $n^2$ into an $n\\times n$ table so that the arithmetic mean of the numbers in every row and in every column of the table is an integer?",
-      "statement_sha256": "3cb6cf273c7c89e71de4e4cd08083ec8736e7d28f222d77d72f5ea9ae492d252",
+      "reviewed_statement": "Find all positive integers $n$ for which an $n\\times n$ table can be filled with integers $1, 2, \\dots, n^2$, each of them appearing once, so that the $2n$ arithmetic means of the numbers in every row and column are all integers.",
+      "statement_sha256": "12c31f2bfa473438af1e6b6e39bc3efddedaa9b3b8390458558cfd08ce8976ec",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Integer row and column means in a number array."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Integer row and column means in a number array.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "For which positive integers $n$ is it possible to write all the integers from $1$ to $n^2$ into an $n\\times n$ table so that the arithmetic mean of the numbers in every row and in every column of the table is an integer?",
+          "statement_sha256": "3cb6cf273c7c89e71de4e4cd08083ec8736e7d28f222d77d72f5ea9ae492d252",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Integer row and column means in a number array."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2020.1.1": {
       "topics": [
@@ -53207,10 +54025,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Consider the system of equations $$\\begin{aligned} x^2-3y+p&=z,\\\\ y^2-3z+p&=x,\\\\ z^2-3x+p&=y\\end{aligned}$$ with a real parameter $p$.\na) For $p\\ge 4$, solve the system in the set of real numbers.\nb) Prove that for $p\\in[1,4)$ every real solution of the system satisfies $x=y=z$.",
-      "statement_sha256": "1570611238e61b7669f8cd5e449f73ecbf61806a425f61f51d1ebc9e862f5637",
+      "reviewed_statement": "Consider the system of equations $$\\begin{aligned} x^2-3y+p&=z,\\\\ y^2-3z+p&=x,\\\\ z^2-3x+p&=y\\end{aligned}$$ with a real parameter $p$.\n\na) For $p\\ge 4$, solve the system in the set of real numbers.\n\nb) Prove that for $p\\in[1,4)$ every real solution of the system satisfies $x=y=z$.",
+      "statement_sha256": "931104e888772cc843858b19c08eff0427ec227a9c0c5e85cb858c029e805c0f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Consider the system of equations $$\\begin{aligned} x^2-3y+p&=z,\\\\ y^2-3z+p&=x,\\\\ z^2-3x+p&=y\\end{aligned}$$ with a real parameter $p$.\na) For $p\\ge 4$, solve the system in the set of real numbers.\nb) Prove that for $p\\in[1,4)$ every real solution of the system satisfies $x=y=z$.",
+          "statement_sha256": "1570611238e61b7669f8cd5e449f73ecbf61806a425f61f51d1ebc9e862f5637",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2020.2.4": {
       "topics": [
@@ -53235,11 +54065,25 @@
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "For every positive integer $k$, let $P(k)$ denote the number of all positive $4k$-digit integers which can be formed from the digits $2$, $0$ and which are divisible by $2\\,020$. Prove the inequality $$P(k)\\ge \\binom{2k-1}{k}^2$$ and determine all $k$ for which equality holds.\n(Note. The decimal representation of a positive integer cannot begin with the digit $0$.)",
-      "statement_sha256": "0af70e281963d879fb268aec917539b933c95c30d288a4946f6e7afdb8501290",
+      "reviewed_statement": "For every positive integer $k$, let $P(k)$ denote the number of all positive $4k$-digit integers which can be formed from the digits $2$, $0$ and which are divisible by $2\\,020$. Prove the inequality $$P(k)\\ge \\binom{2k-1}{k}^2$$ and determine all $k$ for which equality holds.\n\n(Note. The decimal representation of a positive integer cannot begin with the digit $0$.)",
+      "statement_sha256": "d4012ca1c52c96b98f1d4f85a8b332661995586cbe52cad797d2adc7c7867c81",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Counting digit-constrained integers divisible by a fixed modulus."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Counting digit-constrained integers divisible by a fixed modulus.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "For every positive integer $k$, let $P(k)$ denote the number of all positive $4k$-digit integers which can be formed from the digits $2$, $0$ and which are divisible by $2\\,020$. Prove the inequality $$P(k)\\ge \\binom{2k-1}{k}^2$$ and determine all $k$ for which equality holds.\n(Note. The decimal representation of a positive integer cannot begin with the digit $0$.)",
+          "statement_sha256": "0af70e281963d879fb268aec917539b933c95c30d288a4946f6e7afdb8501290",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Counting digit-constrained integers divisible by a fixed modulus."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2021.1.1": {
       "topics": [
@@ -53301,22 +54145,49 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "$71$ non-zero real numbers are written in a row next to each other on a sheet of paper. Every number except the first and the last is $1$ less than the product of its two neighbours. Prove that the first and the last numbers are equal.",
-      "statement_sha256": "93ce3a5864fae5e83adeed338ebd3be3e10f82b45b8ad16fe98e81acc3bfbd9c",
+      "reviewed_statement": "In a sequence of $71$ nonzero real numbers, each number (apart from the first one and the last one) is one less than the product of its two neighbors. Prove that the first and the last number are equal.",
+      "statement_sha256": "ba2785a914be3533208ae5ca10ce927009fe8ee6f5accc72f7842c42a4ed73f1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Finite multiplicative recurrence and equal endpoints."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Finite multiplicative recurrence and equal endpoints.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "$71$ non-zero real numbers are written in a row next to each other on a sheet of paper. Every number except the first and the last is $1$ less than the product of its two neighbours. Prove that the first and the last numbers are equal.",
+          "statement_sha256": "93ce3a5864fae5e83adeed338ebd3be3e10f82b45b8ad16fe98e81acc3bfbd9c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Finite multiplicative recurrence and equal endpoints."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2022.1.2": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "We say that a positive integer $d$ is fair if the number of $2021$-digit palindromes which are multiples of $d$ is the same as the number of $2022$-digit palindromes which are multiples of $d$. Does the set $\\{1, 2, \\dots, 35\\}$ contain more numbers that are fair, or more that are not fair?\n(A palindrome is a positive integer whose decimal representation reads the same from left to right as from right to left.)",
-      "statement_sha256": "ccee8cd40ccb16d0f05bc9db017b0b7e66aa863b87c95e6fd8fa4d7dd3906e24",
+      "reviewed_statement": "We say that a positive integer $k$ is fair if the number of $2021$-digit palindromes that are a multiple of $k$ is the same as the number of $2022$-digit palindromes that are a multiple of $k$. Does the set $M=\\{1,2,\\dots,35\\}$ contain more numbers that are fair or those that are not fair?\n\n(A palindrome is an integer that reads the same forward and backward.)",
+      "statement_sha256": "0a77e4ad3c8417eef197d25c84175f7ebd16b15300633c70a4fcb77bcb0b16b3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Counting divisible palindromes of two lengths."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Counting divisible palindromes of two lengths.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "We say that a positive integer $d$ is fair if the number of $2021$-digit palindromes which are multiples of $d$ is the same as the number of $2022$-digit palindromes which are multiples of $d$. Does the set $\\{1, 2, \\dots, 35\\}$ contain more numbers that are fair, or more that are not fair?\n(A palindrome is a positive integer whose decimal representation reads the same from left to right as from right to left.)",
+          "statement_sha256": "ccee8cd40ccb16d0f05bc9db017b0b7e66aa863b87c95e6fd8fa4d7dd3906e24",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Counting divisible palindromes of two lengths."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2022.1.3": {
       "topics": [
@@ -53331,88 +54202,202 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a convex quadrilateral $ABCD$ we have $|AB|=|BC|=|CD|$. Let $P$ be the intersection of its diagonals and let $O$, $Q$ be the circumcentres of triangles $APB$ and $DPC$, respectively. Prove that the quadrilateral $OBCQ$ is a parallelogram.",
-      "statement_sha256": "0d121238e5528465b3508e788db03571dcb1b253737e0845a940c6587dd2cbb9",
+      "reviewed_statement": "Let $ABCD$ be a convex quadrilateral with $AB=BC=CD$ and $P$ its intersection of diagonals. Denote by $O_1$, $O_2$ the circumcenters of triangles $ABP$, $CDP$, respectively. Prove that $O_1BCO_2$ is a parallelogram.",
+      "statement_sha256": "397b569e7f6d3c3165f85aa22e724ffed2a7a63d9c399d23a5d6f39056fb70e9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a convex quadrilateral $ABCD$ we have $|AB|=|BC|=|CD|$. Let $P$ be the intersection of its diagonals and let $O$, $Q$ be the circumcentres of triangles $APB$ and $DPC$, respectively. Prove that the quadrilateral $OBCQ$ is a parallelogram.",
+          "statement_sha256": "0d121238e5528465b3508e788db03571dcb1b253737e0845a940c6587dd2cbb9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2022.2.5": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Find all integers $n$ for which the number $$2^n+n^2$$ is the square of some integer.",
-      "statement_sha256": "6cb1c3cf7c528fc829ecf1d00d3b4f378df923921f7cbd2452948d1aa9c91592",
+      "reviewed_statement": "Find all integers $n$ such that $2^n+n^2$ is a square of an integer.",
+      "statement_sha256": "9f203c9de68f87baeae42a9086f2f28571fe015a77decbb0a6b899c86dbf4e00",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Find all integers $n$ for which the number $$2^n+n^2$$ is the square of some integer.",
+          "statement_sha256": "6cb1c3cf7c528fc829ecf1d00d3b4f378df923921f7cbd2452948d1aa9c91592",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.1.1": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Alica and Bohuš play a game on a board with $72$ cells arranged around the circumference of a circle. At the beginning, Bohuš places one token on each of some of the cells. In each round, Alica first chooses an empty cell and Bohuš must then move a token onto it from one of the adjacent cells. If he cannot do so, the game ends; otherwise the next round follows. Determine the smallest number of tokens for which Bohuš can ensure that the game lasts at least $2023$ rounds.",
-      "statement_sha256": "d1b315e1a398aa6580e200144578284bb0e3cb3a810f327269050f8028c43787",
+      "reviewed_statement": "Alice and Ben play the game on a board with $72$ cells around a circle. First, Ben chooses some cells and places one chip on each of them. Each round, Alice first chooses one empty cell and then Ben moves a chip from one of the adjacent cells onto the chosen one. If Ben fails to do so, the game ends; otherwise, another round follows. Determine the smallest number of chips for which Ben can guarantee that the game will last for at least $2023$ rounds.",
+      "statement_sha256": "faaec836c59d413f817fe8296396f59122e9f858a688d474531e7fe0f8021e2a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Defensive token movement game on a cycle."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Defensive token movement game on a cycle.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Alica and Bohuš play a game on a board with $72$ cells arranged around the circumference of a circle. At the beginning, Bohuš places one token on each of some of the cells. In each round, Alica first chooses an empty cell and Bohuš must then move a token onto it from one of the adjacent cells. If he cannot do so, the game ends; otherwise the next round follows. Determine the smallest number of tokens for which Bohuš can ensure that the game lasts at least $2023$ rounds.",
+          "statement_sha256": "d1b315e1a398aa6580e200144578284bb0e3cb3a810f327269050f8028c43787",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Defensive token movement game on a cycle."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.1.2": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Let $n$ be an integer with $n\\ge 3$ and let $a_1, a_2, \\dots, a_n$ be the side lengths of an arbitrary $n$-gon. Prove the inequality $$a_1+a_2+\\dots+a_n>\\sqrt{2\\left(a_1^2+a_2^2+\\dots+a_n^2\\right)}.$$",
-      "statement_sha256": "a93e0b1af94c5291af76233b0dd5e3b253e9bdd2cad79ce8b0352931ebb350f0",
+      "reviewed_statement": "Let $n\\ge 3$ be an integer and $a_1, a_2, \\dots, a_n$ be the lengths of the sides of an $n$-gon. Prove the inequality $$a_1+a_2+\\dots+a_n>\\sqrt{2\\left(a_1^2+a_2^2+\\dots+a_n^2\\right)}.$$",
+      "statement_sha256": "c9606de2591f4c4ee755c9fc1c0fda2601cde7a4813a7e55dad10100310c4639",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Polygon side-length inequality."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Polygon side-length inequality.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Let $n$ be an integer with $n\\ge 3$ and let $a_1, a_2, \\dots, a_n$ be the side lengths of an arbitrary $n$-gon. Prove the inequality $$a_1+a_2+\\dots+a_n>\\sqrt{2\\left(a_1^2+a_2^2+\\dots+a_n^2\\right)}.$$",
+          "statement_sha256": "a93e0b1af94c5291af76233b0dd5e3b253e9bdd2cad79ce8b0352931ebb350f0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Polygon side-length inequality."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.1.3": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In an acute triangle $ABC$, let $H$ be its orthocenter and $I$ its incentre. Let $D$ be the foot of the perpendicular from $I$ to the line $BC$ and let $E$ be the image of point $A$ under the point reflection with centre $I$. Further, let $F$ be the foot of the perpendicular from $H$ to the line $ED$. Prove that the points $B$, $H$, $F$ and $C$ lie on a circle.",
-      "statement_sha256": "3b6da92be9638b35c8018856101a6e20c19bb8e19f534a2d902ef4b6602b4740",
+      "reviewed_statement": "In an acute-angled triangle $ABC$, let us denote $H$ its orthocenter and $I$ its incentre. Let $D$ be the perpendicular projection of $I$ on the line $BC$, and $E$ be the image of point $A$ in symmetry with center $I$. Furthermore, $F$ is the perpendicular projection of the point $H$ on the line $ED$. Prove that the points $B$, $H$, $F$ and $C$ lie on one circle.",
+      "statement_sha256": "a1274fdd762eab7f899e2fa8ca56d14d91631db3c7bc9e278e3a6c95f80fdda0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In an acute triangle $ABC$, let $H$ be its orthocenter and $I$ its incentre. Let $D$ be the foot of the perpendicular from $I$ to the line $BC$ and let $E$ be the image of point $A$ under the point reflection with centre $I$. Further, let $F$ be the foot of the perpendicular from $H$ to the line $ED$. Prove that the points $B$, $H$, $F$ and $C$ lie on a circle.",
+          "statement_sha256": "3b6da92be9638b35c8018856101a6e20c19bb8e19f534a2d902ef4b6602b4740",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.2.4": {
       "topics": [
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $(a_n)_{n=0}^{\\infty}$ be a sequence of positive integers such that for $n\\ge 0$, $$a_{n+2}=a_0a_1+a_1a_2+\\dots+a_na_{n+1}-1.$$\na) Prove that some prime divides infinitely many terms of this sequence.\nb) Prove that there are infinitely many such primes.",
-      "statement_sha256": "ba6da65c78ff95ec947df3fe5472c782f137872304c7e790b3b0814bd279f486",
+      "reviewed_statement": "Consider a sequence $(a_n)_{n=1}^{\\infty}$ of positive integers satisfying for each $n\\ge 3$ the condition $$a_n=a_1a_2+a_2a_3+\\dots+a_{n-2}a_{n-1}-1.$$\n\na) Prove that some prime number is a divisor of infinitely many terms of this sequence.\n\nb) Prove that there are infinitely many such prime numbers.",
+      "statement_sha256": "dd38ee982549d4a6da1a47cc0c907f80d608890a6fa1ab2d558d672a6739ae63",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Prime divisors of an integer sum-product recurrence."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Prime divisors of an integer sum-product recurrence.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $(a_n)_{n=0}^{\\infty}$ be a sequence of positive integers such that for $n\\ge 0$, $$a_{n+2}=a_0a_1+a_1a_2+\\dots+a_na_{n+1}-1.$$\na) Prove that some prime divides infinitely many terms of this sequence.\nb) Prove that there are infinitely many such primes.",
+          "statement_sha256": "ba6da65c78ff95ec947df3fe5472c782f137872304c7e790b3b0814bd279f486",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Prime divisors of an integer sum-product recurrence."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.2.5": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "In a triangle $ABC$, let $M$, $N$, $P$ be the midpoints of the sides $BC$, $CA$, $AB$, respectively, and $G$ its centroid. Let the circumcircle of triangle $BGP$ meet the line $MP$ at a point $K$ different from $P$, and let the circumcircle of triangle $CGN$ meet the line $MN$ at a point $L$ different from $N$. Prove that $\\angle BAK=\\angle CAL$.",
-      "statement_sha256": "264cd1be086c60e65bfae95fcc9d90fff12aeea948ddc57ecf0a0371827005de",
+      "reviewed_statement": "In the triangle $ABC$, let us denote $M$, $N$, $P$ the midpoints of the sides $BC$, $CA$, $AB$ respectively and let $G$ be the centroid of $ABC$. Let the circumcircle of $BGP$ intersect the line $MP$ at a point $K$ different from $P$, and let the circumcircle of $CGN$ intersect the line $MN$ at a point $L$ different from $N$. Prove $|\\angle BAK|=|\\angle CAL|$.",
+      "statement_sha256": "7aff03749a35a6693c3fc2f60c512ee85fd25c4360fe1ec055d60821c578bf21",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "In a triangle $ABC$, let $M$, $N$, $P$ be the midpoints of the sides $BC$, $CA$, $AB$, respectively, and $G$ its centroid. Let the circumcircle of triangle $BGP$ meet the line $MP$ at a point $K$ different from $P$, and let the circumcircle of triangle $CGN$ meet the line $MN$ at a point $L$ different from $N$. Prove that $\\angle BAK=\\angle CAL$.",
+          "statement_sha256": "264cd1be086c60e65bfae95fcc9d90fff12aeea948ddc57ecf0a0371827005de",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2023.2.6": {
       "topics": [
         "Algebra",
         "Combinatorics"
       ],
-      "reviewed_statement": "Let $n$ be a positive integer with $n\\ge 3$. Consider an $n\\times n$ square grid whose individual unit squares can be either white or black. In each step, we change the colours of five squares forming the shape shown below, in any rotation. At the beginning all squares are white. Decide for which $n$ it is possible, after a finite number of steps, to make all the squares black.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2023_p6_fig.png",
-      "statement_sha256": "20c6c51805b368b77f5548049a2e421a8e8296ef838eea64d5396826f7a195db",
+      "reviewed_statement": "Let $n\\ge 3$ be an integer. Consider a grid consisting of $n\\times n$ squares, whose individual squares can be either white or black. In each step, we change the colours of the five squares that make up the pattern\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_2023_p6_fig.png\n\nin any rotation. At the beginning, all squares are white. Decide for which $n$ the squares can be made all black after a finite number of steps.",
+      "statement_sha256": "c347b9ef0d63ac19cd552210de887a190765ce58ced5e6327247acfce1433567",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Binary grid flips by a prescribed pentomino shape."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Binary grid flips by a prescribed pentomino shape.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Let $n$ be a positive integer with $n\\ge 3$. Consider an $n\\times n$ square grid whose individual unit squares can be either white or black. In each step, we change the colours of five squares forming the shape shown below, in any rotation. At the beginning all squares are white. Decide for which $n$ it is possible, after a finite number of steps, to make all the squares black.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2023_p6_fig.png",
+          "statement_sha256": "20c6c51805b368b77f5548049a2e421a8e8296ef838eea64d5396826f7a195db",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Binary grid flips by a prescribed pentomino shape."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2024.1.1": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $a$, $b$, $c$ be positive integers such that one of the values $$\\gcd(a,b)\\cdot\\operatorname{lcm}(b,c),\\qquad \\gcd(b,c)\\cdot\\operatorname{lcm}(c,a),\\qquad \\gcd(c,a)\\cdot\\operatorname{lcm}(a,b)$$ is equal to the product of the remaining two. Prove that one of the numbers $a$, $b$, $c$ is a multiple of another one of them.\n($\\gcd(x,y)$ and $\\operatorname{lcm}(x,y)$ denote the greatest common divisor and the least common multiple, respectively, of positive integers $x$, $y$.)",
-      "statement_sha256": "2fbe16496fa97cd1919159af8599f110686a14154fea3661fceda839789a42e7",
+      "reviewed_statement": "Let $a$, $b$, $c$ be positive integers such that one of the values $$\\gcd(a,b)\\cdot\\operatorname{lcm}(b,c),\\qquad \\gcd(b,c)\\cdot\\operatorname{lcm}(c,a),\\qquad \\gcd(c,a)\\cdot\\operatorname{lcm}(a,b)$$ is equal to the product of the remaining two. Prove that one of the numbers $a$, $b$, $c$ is a multiple of another one of them.\n\n($\\gcd(x,y)$ and $\\operatorname{lcm}(x,y)$ denote the greatest common divisor and the least common multiple, respectively, of positive integers $x$, $y$.)",
+      "statement_sha256": "bde5e9ee00b0b23e4fde46e9f47ab1314f6f4aba85fe240caeb43977dd0aa6f0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $a$, $b$, $c$ be positive integers such that one of the values $$\\gcd(a,b)\\cdot\\operatorname{lcm}(b,c),\\qquad \\gcd(b,c)\\cdot\\operatorname{lcm}(c,a),\\qquad \\gcd(c,a)\\cdot\\operatorname{lcm}(a,b)$$ is equal to the product of the remaining two. Prove that one of the numbers $a$, $b$, $c$ is a multiple of another one of them.\n($\\gcd(x,y)$ and $\\operatorname{lcm}(x,y)$ denote the greatest common divisor and the least common multiple, respectively, of positive integers $x$, $y$.)",
+          "statement_sha256": "2fbe16496fa97cd1919159af8599f110686a14154fea3661fceda839789a42e7",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2024.1.2": {
       "topics": [
@@ -53427,10 +54412,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Determine the largest positive integer $n$ such that any set of $n$ tetrominoes, each of which has one of the four shapes in the figure, can be placed without overlapping into a $20\\times 20$ table so that each tetromino covers exactly four cells of the table. The individual tetrominoes may be rotated and reflected arbitrarily.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2024_p3_fig.png",
-      "statement_sha256": "590631974d496174f84a3bb2b9fc0be2bea8bbb9bdc03c056b30404c7b32beb3",
+      "reviewed_statement": "Determine the largest positive integer $n$ such that any set of $n$ tetrominoes, each of which has one of the four shapes in the figure, can be placed without overlapping into a $20\\times 20$ table so that each tetromino covers exactly four cells of the table. The individual tetrominoes may be rotated and reflected arbitrarily.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/cs_2024_p3_fig.png",
+      "statement_sha256": "36a62934132d877daffebc1f093c3152025cab74bad9aad2a9dbdb2fff63913e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Determine the largest positive integer $n$ such that any set of $n$ tetrominoes, each of which has one of the four shapes in the figure, can be placed without overlapping into a $20\\times 20$ table so that each tetromino covers exactly four cells of the table. The individual tetrominoes may be rotated and reflected arbitrarily.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/czsk_2024_p3_fig.png",
+          "statement_sha256": "590631974d496174f84a3bb2b9fc0be2bea8bbb9bdc03c056b30404c7b32beb3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2024.2.4": {
       "topics": [
@@ -53446,11 +54443,25 @@
         "Algebra",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $(a_k)_{k=0}^{\\infty}$ be a sequence of real numbers such that for every non-negative integer $k$, $$a_{k+1}=3a_k-\\lfloor 2a_k\\rfloor-\\lfloor a_k\\rfloor.$$ Determine all positive integers $n$ such that if $a_0=1/n$, then this sequence is constant from some term on.\n(By $\\lfloor x\\rfloor$ we mean the greatest integer not exceeding the number $x$.)",
-      "statement_sha256": "46150df6e64adb22352ed31aa7856c25dad2dc726adee08d44a1e20a43c4d3dd",
+      "reviewed_statement": "Let $(a_k)_{k=0}^{\\infty}$ be a sequence of real numbers such that for every non-negative integer $k$, $$a_{k+1}=3a_k-\\lfloor 2a_k\\rfloor-\\lfloor a_k\\rfloor.$$ Determine all positive integers $n$ such that if $a_0=1/n$, then this sequence is constant from some term on.\n\n(By $\\lfloor x\\rfloor$ we mean the greatest integer not exceeding the number $x$.)",
+      "statement_sha256": "27317562c5fc358bcaa1ecca686ff8653fedc822ee29d7fa6683eae60d68d21a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Floor recurrence starting at reciprocal integers."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Floor recurrence starting at reciprocal integers.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $(a_k)_{k=0}^{\\infty}$ be a sequence of real numbers such that for every non-negative integer $k$, $$a_{k+1}=3a_k-\\lfloor 2a_k\\rfloor-\\lfloor a_k\\rfloor.$$ Determine all positive integers $n$ such that if $a_0=1/n$, then this sequence is constant from some term on.\n(By $\\lfloor x\\rfloor$ we mean the greatest integer not exceeding the number $x$.)",
+          "statement_sha256": "46150df6e64adb22352ed31aa7856c25dad2dc726adee08d44a1e20a43c4d3dd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Floor recurrence starting at reciprocal integers."
+        }
+      ],
+      "superseded_reason": "Statement replaced by the official wording (Czech MO English booklet or faithful translation of the official Slovak text), 2026-10-14."
     },
     "cz.2025.1.1": {
       "topics": [
@@ -194536,6 +195547,60 @@
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-14",
       "rationale": "An inequality for integers decided by integer case analysis."
+    },
+    "cz.2008.3.7": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Solve the system of equations $$\\begin{aligned}x+y^2&=y^3,\\\\y+x^2&=x^3\\end{aligned}$$ in the domain of the reals.",
+      "statement_sha256": "458bc9df5cb63834ca185852c17c51d7812a4ff08ff32148197979f7e2941012",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "cz.2008.3.8": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Two circles $k_1(S_1;r_1)$ and $k_2(S_2;r_2)$ are given, with $S_1S_2>r_1+r_2$. Consider an arbitrary triangle $ABC$ with vertex $A$ on the circle $k_1$ and vertices $B$, $C$ on the circle $k_2$ such that both lines $AB$, $AC$ are tangent to $k_2$. Find the locus of the\n\na) incenters\n\nb) orthocenters\n\nof all such triangles $ABC$.",
+      "statement_sha256": "832035cc2cb730a483fa7e30f2e517c403e6e861b5f21e4e7fcf704a8c5971bd",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "cz.2008.3.9": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find for which positive integers $a$, $b$ is the value of the fraction $$\\frac{b^2+ab+a+b-1}{a^2+ab+1}$$ equal to an integer.",
+      "statement_sha256": "bf195feb8c8231b087d8d27265c15dbb9bfc19a75551b6ee06412cb61697ae1a",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "cz.2008.4.10": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "The equality $$2008=1111+666+99+88+44$$ is a decomposition of the number $2008$ into the sum of several pairwise distinct multi-digit numbers, each of which is represented (in the decimal system) using the same digits. Find\n\na) at least one such decomposition of the number $8002$,\n\nb) all such decompositions of the number $8002$ which have the least possible number of summands (the order of summands is irrelevant).",
+      "statement_sha256": "ab8e88773a59ded5cd73492bbea5fa27fdd766101d8313c405d172d992fa755d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "cz.2008.4.11": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "At some moment, Charles noticed that the tip of the minute hand, the tip of the hour hand, and a suitable point of the circumference of his watch formed three vertices of an equilateral triangle. A period $t$ of time elapsed before the next occurrence of this phenomenon. Find the greatest possible $t$ for a given watch, given the ratio $k$ of the lengths of the two hands ($k>1$), provided that the radius of the circumference of the watch is equal to the length of the minute hand.",
+      "statement_sha256": "d88f756d9a242467e06a63ae2cf920cb6260b39c5412bd940169200c24a7f37c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "cz.2008.4.12": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Find the greatest real number $p$ and the least real number $q$ for which the inequalities $$p<\\frac{a+m_b}{b+m_a}<q$$ hold in an arbitrary triangle $ABC$ with sides $a$, $b$ and medians $m_a$, $m_b$.",
+      "statement_sha256": "ad0de6a26dedb591b300dfbdc3d711b0572381eb7bbdad64b9cc4278ce0d004c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
     }
   }
 }
