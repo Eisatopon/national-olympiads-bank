@@ -56011,11 +56011,25 @@
         "Algebra",
         "Combinatorics"
       ],
-      "reviewed_statement": "We consider in the plane the unit squares whose vertices both have integer coordinates. Let $S$ be the chessboard whose cells are all the unit squares contained in the disc determined by the inequality $x^2 + y^2 \\le 1998^2$. In every cell of the chessboard we write the number $+1$. We perform a sequence of operations. Each of them consists in choosing an arbitrary horizontal, vertical or diagonal row and changing the signs of all the numbers written in the cells of the chosen row. (A diagonal row is formed by all cells of the chessboard $S$ whose centres lie on some line intersecting the coordinate axes at an angle of $45^\\circ$.) Decide whether in this way one can reach a situation in which one cell contains the number $-1$ and all the remaining cells contain $+1$.",
-      "statement_sha256": "0ee5d8db16443fd80026af253d8bb617ef989f2d1424fdb128a70a23c5db1570",
+      "reviewed_statement": "We consider in the plane the unit squares all of whose vertices have both coordinates integral. Let $S$ be the chessboard whose cells are all the unit squares contained in the disc determined by the inequality $x^2 + y^2 \\le 1998^2$. In every cell of the chessboard we write the number $+1$. We perform a sequence of operations. Each of them consists in choosing an arbitrary horizontal, vertical or diagonal row and changing the signs of all the numbers written in the cells of the chosen row. (A diagonal row is formed by all cells of the chessboard $S$ whose centres lie on some line intersecting the coordinate axes at an angle of $45^\\circ$.) Decide whether in this way one can reach a situation in which one cell contains the number $-1$ and all the remaining cells contain $+1$.",
+      "statement_sha256": "3e365d72bb834986ce8696de396a3158eed15e1640c8a6d5740bf0985738d928",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Grid sign flips and a linear invariant on a circular board."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Grid sign flips and a linear invariant on a circular board.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "We consider in the plane the unit squares whose vertices both have integer coordinates. Let $S$ be the chessboard whose cells are all the unit squares contained in the disc determined by the inequality $x^2 + y^2 \\le 1998^2$. In every cell of the chessboard we write the number $+1$. We perform a sequence of operations. Each of them consists in choosing an arbitrary horizontal, vertical or diagonal row and changing the signs of all the numbers written in the cells of the chosen row. (A diagonal row is formed by all cells of the chessboard $S$ whose centres lie on some line intersecting the coordinate axes at an angle of $45^\\circ$.) Decide whether in this way one can reach a situation in which one cell contains the number $-1$ and all the remaining cells contain $+1$.",
+          "statement_sha256": "0ee5d8db16443fd80026af253d8bb617ef989f2d1424fdb128a70a23c5db1570",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Grid sign flips and a linear invariant on a circular board."
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.2000.1.1": {
       "topics": [
@@ -56999,11 +57013,24 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A sequence $(a_1, a_2, \\dots, a_k)$ consisting of pairwise distinct cells of an $n \\times n$ chessboard is called a cycle if $k \\ge 4$ and the cells $a_i$ and $a_{i+1}$ share a common side for all $i = 1, 2, \\dots, k$, where $a_{k+1} = a_1$. A subset $X$ of the cells of this chessboard is called malicious if every cycle on it contains at least one cell belonging to $X$. Determine all real numbers $C$ with the following property: for every integer $n \\ge 2$ there exists on the $n \\times n$ chessboard a malicious subset consisting of at most $Cn^2$ cells.",
-      "statement_sha256": "a2d4dfe99f1d9ac4fd692b7f5f69d43243b2c221126a000269349b80d7f83d81",
+      "reviewed_statement": "A sequence $(a_1, a_2, \\dots, a_k)$ consisting of pairwise distinct cells of an $n \\times n$ chessboard is called a cycle if $k \\ge 4$ and the cells $a_i$ and $a_{i+1}$ share a common side for all $i = 1, 2, \\dots, k$, where $a_{k+1} = a_1$. A subset $X$ of the cells of this chessboard is called malicious if every cycle on this chessboard contains at least one cell belonging to $X$. Determine all real numbers $C$ with the following property: for every integer $n \\ge 2$ there exists on the $n \\times n$ chessboard a malicious subset consisting of at most $Cn^2$ cells.",
+      "statement_sha256": "fe899b6e7661bff517000d65fd1b935b82f8721e0a2fe37c9ad421a20a23413c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Minimum feedback vertex sets in grid graphs."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Minimum feedback vertex sets in grid graphs.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A sequence $(a_1, a_2, \\dots, a_k)$ consisting of pairwise distinct cells of an $n \\times n$ chessboard is called a cycle if $k \\ge 4$ and the cells $a_i$ and $a_{i+1}$ share a common side for all $i = 1, 2, \\dots, k$, where $a_{k+1} = a_1$. A subset $X$ of the cells of this chessboard is called malicious if every cycle on it contains at least one cell belonging to $X$. Determine all real numbers $C$ with the following property: for every integer $n \\ge 2$ there exists on the $n \\times n$ chessboard a malicious subset consisting of at most $Cn^2$ cells.",
+          "statement_sha256": "a2d4dfe99f1d9ac4fd692b7f5f69d43243b2c221126a000269349b80d7f83d81",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Minimum feedback vertex sets in grid graphs."
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.2017.1.3": {
       "topics": [
@@ -57213,11 +57240,25 @@
         "Combinatorics",
         "Geometry"
       ],
-      "reviewed_statement": "An integer $d \\ge 2$ and a circle $\\omega$ are given. Jaś drew some finite number of chords of the circle $\\omega$. The following condition is satisfied: each endpoint of each drawn chord is an endpoint of at least $d$ different drawn chords. Prove that there exists a drawn chord which intersects at least $\\frac{d^2}{4}$ other drawn chords. We assume that chords with a common endpoint intersect. Note: A proof that some drawn chord intersects at least $\\frac{d^2}{8}$ other drawn chords will be awarded two points.",
-      "statement_sha256": "cdcdc33e1537b9ca2c46185a05f9d091992d95fe5e3583b65422b7136c48db36",
+      "reviewed_statement": "An integer $d \\ge 2$ and a circle $\\omega$ are given. Jaś drew some finite number of chords of the circle $\\omega$. The following condition is satisfied: each endpoint of each drawn chord is an endpoint of at least $d$ different drawn chords. Prove that there exists a drawn chord which intersects at least $\\frac{d^2}{4}$ other drawn chords. We assume that chords with a common endpoint intersect.",
+      "statement_sha256": "6124c39a725098c59ae8f2f0f26b9f40af57fe06194723b0c4b9eae254ae69fa",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Chord intersection count in a circle drawing with bounded endpoint degrees."
+      "reviewed_at": "2026-10-14",
+      "rationale": "Chord intersection count in a circle drawing with bounded endpoint degrees.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Geometry"
+          ],
+          "reviewed_statement": "An integer $d \\ge 2$ and a circle $\\omega$ are given. Jaś drew some finite number of chords of the circle $\\omega$. The following condition is satisfied: each endpoint of each drawn chord is an endpoint of at least $d$ different drawn chords. Prove that there exists a drawn chord which intersects at least $\\frac{d^2}{4}$ other drawn chords. We assume that chords with a common endpoint intersect. Note: A proof that some drawn chord intersects at least $\\frac{d^2}{8}$ other drawn chords will be awarded two points.",
+          "statement_sha256": "cdcdc33e1537b9ca2c46185a05f9d091992d95fe5e3583b65422b7136c48db36",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Chord intersection count in a circle drawing with bounded endpoint degrees."
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.2022.1.1": {
       "topics": [
@@ -57379,10 +57420,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "An integer $n \\ge 2024$ and a sequence of real numbers $a_1, a_2, \\dots, a_{n^2}$ are given satisfying the conditions $$|a_k - a_{k-1}| \\le \\frac{1}{k} \\qquad\\text{and}\\qquad |a_1 + a_2 + \\dots + a_k| \\le 1$$ for $k = 2, 3, \\dots, n^2$. Prove that $$|a_{n(n-1)}| \\le \\frac{2}{n}.$$ Note: A proof of the inequality $|a_{n(n-1)}| \\le \\frac{75}{n}$ will be awarded two points.",
-      "statement_sha256": "bbcc2c3d56fefd2a8e96ca7e743b191e6cd35ac7953db46d90563a52f0dc64c1",
+      "reviewed_statement": "An integer $n \\ge 2024$ and a sequence of real numbers $a_1, a_2, \\dots, a_{n^2}$ are given satisfying the conditions $$|a_k - a_{k-1}| \\le \\frac{1}{k} \\qquad\\text{and}\\qquad |a_1 + a_2 + \\dots + a_k| \\le 1$$ for $k = 2, 3, \\dots, n^2$. Prove that $$|a_{n(n-1)}| \\le \\frac{2}{n}.$$",
+      "statement_sha256": "d44392beb012af82b9a0fdb146f96d39327fadf74b0176923527e0bb39264fce",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "An integer $n \\ge 2024$ and a sequence of real numbers $a_1, a_2, \\dots, a_{n^2}$ are given satisfying the conditions $$|a_k - a_{k-1}| \\le \\frac{1}{k} \\qquad\\text{and}\\qquad |a_1 + a_2 + \\dots + a_k| \\le 1$$ for $k = 2, 3, \\dots, n^2$. Prove that $$|a_{n(n-1)}| \\le \\frac{2}{n}.$$ Note: A proof of the inequality $|a_{n(n-1)}| \\le \\frac{75}{n}$ will be awarded two points.",
+          "statement_sha256": "bbcc2c3d56fefd2a8e96ca7e743b191e6cd35ac7953db46d90563a52f0dc64c1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.2024.2.6": {
       "topics": [
@@ -107477,10 +107530,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Prove that the angles $A,B,C$ of a triangle satisfy $$\\sin^2A+\\sin^2B+\\sin^2C=2$$ if and only if the triangle is right-angled.",
-      "statement_sha256": "5125ceaed246074d4524fd98897da728a376899920e825d87e79c15dec26cba5",
+      "reviewed_statement": "Prove that if the angles $A$, $B$, $C$ of a triangle satisfy the equation $$\\sin^2 A+\\sin^2 B+\\sin^2 C=2,$$ then the triangle is right-angled.",
+      "statement_sha256": "87d16fed5214ed87d039fe5027956823027f08b7cfc99cca9bd9c737a45d8c4e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Prove that the angles $A,B,C$ of a triangle satisfy $$\\sin^2A+\\sin^2B+\\sin^2C=2$$ if and only if the triangle is right-angled.",
+          "statement_sha256": "5125ceaed246074d4524fd98897da728a376899920e825d87e79c15dec26cba5",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1950.2.6": {
       "topics": [
@@ -107873,10 +107938,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for all non-negative numbers $a$ and $b$ $$\\frac{a+b}{2}\\cdot\\frac{a^2+b^2}{2}\\cdot\\frac{a^3+b^3}{2}\\leq\\frac{a^6+b^6}{2}.$$",
-      "statement_sha256": "bef76a3c8b4992e4a413a92b0434dc826a2b0a6312b4e52223ab39926fa7a83f",
+      "reviewed_statement": "Prove that for any numbers $a$ and $b$ the following inequality holds: $$\\frac{a+b}{2}\\cdot\\frac{a^2+b^2}{2}\\cdot\\frac{a^3+b^3}{2}\\leq\\frac{a^6+b^6}{2}.$$",
+      "statement_sha256": "aa2bf6f3fedce33be8e9823f265aabd5dab45df8a08fa185dad71beb8f890b2a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for all non-negative numbers $a$ and $b$ $$\\frac{a+b}{2}\\cdot\\frac{a^2+b^2}{2}\\cdot\\frac{a^3+b^3}{2}\\leq\\frac{a^6+b^6}{2}.$$",
+          "statement_sha256": "bef76a3c8b4992e4a413a92b0434dc826a2b0a6312b4e52223ab39926fa7a83f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1959.1.2": {
       "topics": [
@@ -107891,10 +107968,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A pyramid with square base $ABCD$ and apex $S$ is given. Find the shortest path on its surface that starts and ends at $S$ and passes through all the vertices of the base.",
-      "statement_sha256": "406deba819e0d9c2e6d8f3d7cfc198f9c6f6b8fb9df9e2749a71649cb78b9bda",
+      "reviewed_statement": "A pyramid with square base $ABCD$ and apex $S$ is given. Find the shortest path that starts and ends at the point $S$ and passes through all the vertices of the base.",
+      "statement_sha256": "2f0ba590595c8bceb9c88e64b7244ee171f36343324175346b0edf63453821da",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A pyramid with square base $ABCD$ and apex $S$ is given. Find the shortest path on its surface that starts and ends at $S$ and passes through all the vertices of the base.",
+          "statement_sha256": "406deba819e0d9c2e6d8f3d7cfc198f9c6f6b8fb9df9e2749a71649cb78b9bda",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1959.2.4": {
       "topics": [
@@ -108269,19 +108358,43 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "There are $100$ people in a hall, each knowing at least $67$ of the others. Prove that there are always four of them who all know each other.",
-      "statement_sha256": "bc84dfa01f1080fce1efe15278a4cc80149b3ea58f7e3f62d79d88beff7e55cc",
+      "reviewed_statement": "There are $100$ people in a hall, each of whom knows at least $67$ of the others. Prove that in this hall there are four people any two of whom know each other. We assume that if a person $A$ knows a person $B$, then $B$ also knows $A$.",
+      "statement_sha256": "200d87294ada8326e3eeb16edd768c8ef7e66fec5f032e3e6fb7c92511352098",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "There are $100$ people in a hall, each knowing at least $67$ of the others. Prove that there are always four of them who all know each other.",
+          "statement_sha256": "bc84dfa01f1080fce1efe15278a4cc80149b3ea58f7e3f62d79d88beff7e55cc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1967.2.4": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that the polynomial $x^2+x+1$ divides $P_n(x)=x^{n+2}+(x+1)^{2n+1}$ for every integer $n\\geq 0$.",
-      "statement_sha256": "4f17272cfadb049251d9d70ed5ccae02af4704a0d3844c233a98c2c209c77b22",
+      "reviewed_statement": "Prove that the polynomial $x^2+x+1$ is a divisor of the polynomial $P_n(x)=x^{n+2}+(x+1)^{2n+1}$ for every integer $n\\geq 0$.",
+      "statement_sha256": "9340ffc848be3817b4fdcd542f272f481e65df5616971d8c2be0211863b1528e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that the polynomial $x^2+x+1$ divides $P_n(x)=x^{n+2}+(x+1)^{2n+1}$ for every integer $n\\geq 0$.",
+          "statement_sha256": "4f17272cfadb049251d9d70ed5ccae02af4704a0d3844c233a98c2c209c77b22",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1967.2.5": {
       "topics": [
@@ -108332,10 +108445,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Given an integer $n>2$, give an example of $n$ distinct numbers $a_1,\\ldots,a_n$ for which the set of pairwise sums $a_i+a_j$ $(i\\neq j)$ has as few distinct elements as possible, and an example of $n$ distinct numbers $b_1,\\ldots,b_n$ for which the set of pairwise sums $b_i+b_j$ $(i\\neq j)$ has as many distinct elements as possible.",
-      "statement_sha256": "331b505654495c5835b2cab6ff1190927fc24fb43e1fc7ddb57519d1e73b90df",
+      "reviewed_statement": "A natural number $n>2$ is given. Give a set of $n$ natural numbers $a_1,a_2,\\ldots,a_n$ such that the set of sums $$a_i+a_j\\quad(i,j=1,2,\\ldots,n,\\ i\\neq j)$$ contains as few distinct numbers as possible, and a set of $n$ natural numbers $b_1,b_2,\\ldots,b_n$ such that the set of sums $$b_i+b_j\\quad(i,j=1,2,\\ldots,n,\\ i\\neq j)$$ contains as many distinct numbers as possible.",
+      "statement_sha256": "9f8b82dc6d55714b522526f533c85632201e9457331d244edd9f7ef23953db5d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Given an integer $n>2$, give an example of $n$ distinct numbers $a_1,\\ldots,a_n$ for which the set of pairwise sums $a_i+a_j$ $(i\\neq j)$ has as few distinct elements as possible, and an example of $n$ distinct numbers $b_1,\\ldots,b_n$ for which the set of pairwise sums $b_i+b_j$ $(i\\neq j)$ has as many distinct elements as possible.",
+          "statement_sha256": "331b505654495c5835b2cab6ff1190927fc24fb43e1fc7ddb57519d1e73b90df",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1968.2.5": {
       "topics": [
@@ -108350,10 +108475,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Consider a set of $n>3$ points in the plane, no three collinear, and a positive integer $k<n$. Prove that:\n\n(a) if $k\\leq\\frac{n}{2}$, each point can be joined by segments to at least $k$ other points so that no three segments form a triangle;\n\n(b) if $k>\\frac{n}{2}$ and each point is joined by segments to at least $k$ other points, then some three segments form a triangle.",
-      "statement_sha256": "526ea998ee15fe486986e9f360a01c96873111390da5533485a9139f21d01d05",
+      "reviewed_statement": "A set of $n>3$ points, no three of which are collinear, and a natural number $k<n$ are given. Prove the theorems:\n\n1. If $k\\leq\\frac{n}{2}$, then each point of the given set can be joined to at least $k$ other points of the set in such a way that among the drawn segments there are no three sides of one triangle.\n\n2. If $k>\\frac{n}{2}$ and each point of the given set is joined to $k$ other points of the set, then among the drawn segments there are three sides of one triangle.",
+      "statement_sha256": "b617cdaccea89f4506fa00010562c4650a8e0b8a371ef71cd718bd1cda853a13",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Consider a set of $n>3$ points in the plane, no three collinear, and a positive integer $k<n$. Prove that:\n\n(a) if $k\\leq\\frac{n}{2}$, each point can be joined by segments to at least $k$ other points so that no three segments form a triangle;\n\n(b) if $k>\\frac{n}{2}$ and each point is joined by segments to at least $k$ other points, then some three segments form a triangle.",
+          "statement_sha256": "526ea998ee15fe486986e9f360a01c96873111390da5533485a9139f21d01d05",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1969.1.1": {
       "topics": [
@@ -108422,10 +108559,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Three sequences $(a_n)_{n\\geq 1}$, $(b_n)_{n\\geq 1}$, $(c_n)_{n\\geq 1}$ are given, each with pairwise distinct terms. Prove that there are indices $k<l$ such that $a_k<a_l$, $b_k<b_l$ and $c_k<c_l$.",
-      "statement_sha256": "1822228af1297986cb5369905bf798533f97b9c4100f9628b47ea0c62d9b54d3",
+      "reviewed_statement": "Three infinite sequences whose terms are natural numbers are given: $$a_1,a_2,\\ldots,\\qquad b_1,b_2,\\ldots,\\qquad c_1,c_2,\\ldots,$$ where, if $i\\neq j$, then $a_i\\neq a_j$, $b_i\\neq b_j$, $c_i\\neq c_j$. Prove that there exists a pair of indices $k$, $l$ such that $k<l$ and $a_k<a_l$, $b_k<b_l$, $c_k<c_l$.",
+      "statement_sha256": "2ce46c0dd5e36393d9156512ee262e67a737386b38ca1727c93f5ffd2c3d3a70",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Three sequences $(a_n)_{n\\geq 1}$, $(b_n)_{n\\geq 1}$, $(c_n)_{n\\geq 1}$ are given, each with pairwise distinct terms. Prove that there are indices $k<l$ such that $a_k<a_l$, $b_k<b_l$ and $c_k<c_l$.",
+          "statement_sha256": "1822228af1297986cb5369905bf798533f97b9c4100f9628b47ea0c62d9b54d3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1970.1.3": {
       "topics": [
@@ -108476,10 +108625,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A billiard table has the shape of a triangle whose angles are in rational ratios. A ball at an interior point of the table is struck and reflects from the sides according to the law of reflection. Prove that the ball moves along only finitely many distinct segments. (Assume that the ball never reaches a vertex.)",
-      "statement_sha256": "05c3fd0f39fb95ba70026b7bd3083a7258f17fa5c18652be7fb7a0c8bc6337a3",
+      "reviewed_statement": "On a billiard table in the shape of a triangle whose angles are commensurable, a ball is pushed from some interior point. The ball rebounds from the cushions according to the law \"the angle of incidence equals the angle of reflection\". Prove that the number of directions in which the ball can move is finite. (We assume that the ball does not hit a vertex of the triangle.)",
+      "statement_sha256": "b95c7bef53774664b25f96582a5fd26bfbe5a3651f1dc0043a7933e9fb56e65a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A billiard table has the shape of a triangle whose angles are in rational ratios. A ball at an interior point of the table is struck and reflects from the sides according to the law of reflection. Prove that the ball moves along only finitely many distinct segments. (Assume that the ball never reaches a vertex.)",
+          "statement_sha256": "05c3fd0f39fb95ba70026b7bd3083a7258f17fa5c18652be7fb7a0c8bc6337a3",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1971.1.3": {
       "topics": [
@@ -108494,10 +108655,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that if positive integers $x,y,z$ satisfy $x^n+y^n=z^n$, then $\\min(x,y)\\geq n$.",
-      "statement_sha256": "d49a12e593c732645457700be0056781221f6df9e61bb0ee69699020616da55d",
+      "reviewed_statement": "Prove that if natural numbers $x$, $y$, $z$, $n$ satisfy the equation $$x^n+y^n=z^n,$$ then $\\min(x,y)>n$.",
+      "statement_sha256": "e989c3d030de5473017b7830341485713c39999ae3c4c130b6f673bb181735c8",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that if positive integers $x,y,z$ satisfy $x^n+y^n=z^n$, then $\\min(x,y)\\geq n$.",
+          "statement_sha256": "d49a12e593c732645457700be0056781221f6df9e61bb0ee69699020616da55d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1971.2.5": {
       "topics": [
@@ -108512,19 +108685,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A regular tetrahedron with edge $1$ is given. The distance between two points of its surface $S$ is the length of the shortest polygonal line on $S$ joining them. Prove that:\n\n(a) there are four points of $S$ such that every point of the surface is at distance at most $\\frac{1}{2}$ from one of them;\n\n(b) there are no three points with this property.",
-      "statement_sha256": "602ec4413b12450483ce21ad5a121cf0b06b048a6ccc2f5344e2f3dd52a57757",
+      "reviewed_statement": "A regular tetrahedron with edge length $1$ is given. Prove that:\n\n1) On the surface $S$ of the tetrahedron there exist four points such that the distance of every point of the surface $S$ from one of these four points does not exceed $\\frac{1}{2}$.\n\n2) On the surface $S$ there do not exist three points with the analogous property.\n\nBy the distance between points belonging to $S$ we mean the infimum of the lengths of polygonal lines contained in $S$ joining these points.",
+      "statement_sha256": "d25be7d00b19ff03685ce144216dcd8fe6518da8931e7e86eb57b0588779511f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A regular tetrahedron with edge $1$ is given. The distance between two points of its surface $S$ is the length of the shortest polygonal line on $S$ joining them. Prove that:\n\n(a) there are four points of $S$ such that every point of the surface is at distance at most $\\frac{1}{2}$ from one of them;\n\n(b) there are no three points with this property.",
+          "statement_sha256": "602ec4413b12450483ce21ad5a121cf0b06b048a6ccc2f5344e2f3dd52a57757",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1972.1.1": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "The polynomials $u_i(x)=a_ix+b_i$ $(a_i,b_i\\in\\mathbb{R},\\ i=1,2,3)$ satisfy $$u_1(x)^n+u_2(x)^n=u_3(x)^n$$ for some integer $n\\geq 2$. Prove that there are real numbers $A,B,c_1,c_2,c_3$ such that $u_i(x)=c_i(Ax+B)$ for $i=1,2,3$.",
-      "statement_sha256": "fad204722dd44195b33e75c00bbc1944705b83f9b4ad9740dbc20806a986ae22",
+      "reviewed_statement": "The polynomials $u_i(x)=a_ix+b_i$ ($a_i$, $b_i$ real numbers; $i=1,2,3$) satisfy, for some natural number $n>2$, the equation $$[u_1(x)]^n+[u_2(x)]^n=[u_3(x)]^n.$$ Prove that there exist real numbers $A$, $B$, $c_1$, $c_2$, $c_3$ such that $u_i(x)=c_i(Ax+B)$ for $i=1,2,3$.",
+      "statement_sha256": "a016654b464c0eb71fc39392ad7f01441edcb297287f808fb0c1ddc6d49c6add",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "The polynomials $u_i(x)=a_ix+b_i$ $(a_i,b_i\\in\\mathbb{R},\\ i=1,2,3)$ satisfy $$u_1(x)^n+u_2(x)^n=u_3(x)^n$$ for some integer $n\\geq 2$. Prove that there are real numbers $A,B,c_1,c_2,c_3$ such that $u_i(x)=c_i(Ax+B)$ for $i=1,2,3$.",
+          "statement_sha256": "fad204722dd44195b33e75c00bbc1944705b83f9b4ad9740dbc20806a986ae22",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1972.1.2": {
       "topics": [
@@ -108548,10 +108745,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Points $A$ and $B$ lie on a line having no common point with a sphere $K$. The foot $P$ of the perpendicular from the centre of $K$ to the line $AB$ lies between $A$ and $B$, and $AP$ and $BP$ both exceed the radius of $K$. Consider the set $Z$ of all triangles $ABC$ whose sides $AC$ and $BC$ are tangent to $K$. Prove that a triangle of $Z$ with maximal perimeter also has maximal area.",
-      "statement_sha256": "848a69a459e16b6b7e5bcc173de129679b00c19a5371de429752160326b6ae6d",
+      "reviewed_statement": "Points $A$ and $B$ are given on a line that has no common points with a ball $K$. The orthogonal projection $P$ of the centre of $K$ onto the line $AB$ lies between $A$ and $B$, and $AP$ and $BP$ are greater than the radius of $K$. Consider the set $Z$ of triangles $ABC$ whose sides $AC$ and $BC$ are tangent to the ball $K$. Prove that $T$ is a triangle of greatest perimeter among the triangles of $Z$ if and only if $T$ is a triangle of greatest area among the triangles of $Z$.",
+      "statement_sha256": "107f4d19c9d66cf73b18a8a846928d697812859fe499ac49bec99c143bd73ddc",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Points $A$ and $B$ lie on a line having no common point with a sphere $K$. The foot $P$ of the perpendicular from the centre of $K$ to the line $AB$ lies between $A$ and $B$, and $AP$ and $BP$ both exceed the radius of $K$. Consider the set $Z$ of all triangles $ABC$ whose sides $AC$ and $BC$ are tangent to $K$. Prove that a triangle of $Z$ with maximal perimeter also has maximal area.",
+          "statement_sha256": "848a69a459e16b6b7e5bcc173de129679b00c19a5371de429752160326b6ae6d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1972.2.5": {
       "topics": [
@@ -108566,10 +108775,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that the sum of the digits of $1972^n$ is unbounded as $n\\to\\infty$.",
-      "statement_sha256": "46c741e4ba3090b74f5a9b5b217c3b7ffb09b6b61a0e77042750c40616fc9697",
+      "reviewed_statement": "Prove that the sum of the digits of the number $1972^n$ tends to infinity as $n$ tends to infinity.",
+      "statement_sha256": "bf714a732bfb544952fe12668705a07a293038c37afeda716815d784edf1de7a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that the sum of the digits of $1972^n$ is unbounded as $n\\to\\infty$.",
+          "statement_sha256": "46c741e4ba3090b74f5a9b5b217c3b7ffb09b6b61a0e77042750c40616fc9697",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1973.1.1": {
       "topics": [
@@ -108593,10 +108814,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A polyhedron $W$ has the following properties:\n\n(i) it has a centre of symmetry;\n\n(ii) the section of $W$ by any plane through the centre of symmetry and an edge of $W$ is a parallelogram;\n\n(iii) some vertex of $W$ belongs to exactly three edges.\n\nProve that $W$ is a parallelepiped.",
-      "statement_sha256": "1526d3972bc6d5b0cdee167d537c2b6bbb557e9d15da3c837086448f4cbc8e58",
+      "reviewed_statement": "A polyhedron $W$ has the following properties:\n\na) it has a centre of symmetry;\n\nb) the common part of $W$ and any plane containing the centre of symmetry and any edge of the polyhedron is a parallelogram;\n\nc) there is a vertex of $W$ that belongs to exactly three edges.\n\nProve that $W$ is a parallelepiped.",
+      "statement_sha256": "c1355c9442fffa5d852d0f1a8af4c460d750b295f22df4b52ed52deeb85f99b4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A polyhedron $W$ has the following properties:\n\n(i) it has a centre of symmetry;\n\n(ii) the section of $W$ by any plane through the centre of symmetry and an edge of $W$ is a parallelogram;\n\n(iii) some vertex of $W$ belongs to exactly three edges.\n\nProve that $W$ is a parallelepiped.",
+          "statement_sha256": "1526d3972bc6d5b0cdee167d537c2b6bbb557e9d15da3c837086448f4cbc8e58",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1973.2.4": {
       "topics": [
@@ -108611,19 +108844,43 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that every positive rational number $\\frac{m}{n}$ is a sum of reciprocals of distinct positive integers.",
-      "statement_sha256": "5b78c622a1e988723a93c3477bdf7b23013b5630bd7fca3d7b5f61b7c795a8b0",
+      "reviewed_statement": "Prove that every positive proper fraction $\\frac{m}{n}$ can be written as a finite sum of reciprocals of distinct positive integers.",
+      "statement_sha256": "b7f4269f7b3f0af1f92073225bbef3d8d4d3b3cc70f73044ca9f0552241b879d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that every positive rational number $\\frac{m}{n}$ is a sum of reciprocals of distinct positive integers.",
+          "statement_sha256": "5b78c622a1e988723a93c3477bdf7b23013b5630bd7fca3d7b5f61b7c795a8b0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1973.2.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Prove that for every centrally symmetric polygon there is at most one ellipse of minimal area containing the polygon.",
-      "statement_sha256": "84f9ae193690514f40e6a13cbb6ff53481707e182a4c78c94bd642a2565829b1",
+      "reviewed_statement": "Prove that for every convex polygon having a centre of symmetry there is at most one ellipse of smallest area containing the polygon.\n\nRemark. The area of an ellipse with semi-axes of lengths $a$ and $b$ is $\\pi ab$.",
+      "statement_sha256": "4966d87a1ec7c63dd5cfbe7da1887463b224d29f696c8faa02116878f2795445",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Prove that for every centrally symmetric polygon there is at most one ellipse of minimal area containing the polygon.",
+          "statement_sha256": "84f9ae193690514f40e6a13cbb6ff53481707e182a4c78c94bd642a2565829b1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1974.1.1": {
       "topics": [
@@ -108638,10 +108895,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A salmon in a mountain river must pass two waterfalls. In each minute the probability that it passes the first waterfall is $p>0$ and the probability that it passes the second is $q>0$; these events are independent. Find the probability that the salmon has not passed the first waterfall within $n$ minutes, given that it has not passed both waterfalls within that time.",
-      "statement_sha256": "09ae2bfb61a410c2dfcb6e28d9429aed712eaa6b7ed1623ccadf63d80a2e8189",
+      "reviewed_statement": "Salmon swimming up a river must pass two waterfalls. The probability that a salmon passes the first waterfall in a given attempt is $p>0$, and the probability of passing the second waterfall in a given attempt is $q>0$. We assume that successive attempts at the waterfalls are independent. Compute the probability that the salmon does not pass the first waterfall in $n$ attempts, given that in $n$ attempts it does not pass both waterfalls.",
+      "statement_sha256": "4ef4c345cc86b4c9da851b3829bfccdb88b7961cc213bf6a2efeae201569f9d1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A salmon in a mountain river must pass two waterfalls. In each minute the probability that it passes the first waterfall is $p>0$ and the probability that it passes the second is $q>0$; these events are independent. Find the probability that the salmon has not passed the first waterfall within $n$ minutes, given that it has not passed both waterfalls within that time.",
+          "statement_sha256": "09ae2bfb61a410c2dfcb6e28d9429aed712eaa6b7ed1623ccadf63d80a2e8189",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1974.1.3": {
       "topics": [
@@ -108674,10 +108943,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Some diagonals of a convex $n$-gon are drawn, dividing it into triangles, so that:\n\n(i) an even number of the drawn diagonals issues from each vertex;\n\n(ii) no two of the diagonals have a common interior point.\n\nProve that $n$ is divisible by $3$.",
-      "statement_sha256": "a14da745bc69408f4e0203df5055f32ddb58b9721260bc36697dc614f546c802",
+      "reviewed_statement": "A convex $n$-gon is divided by diagonals into triangles in such a way that\n\n$1^\\circ$ an even number of diagonals issues from each vertex,\n\n$2^\\circ$ no two diagonals have a common interior point.\n\nProve that $n$ is divisible by $3$.",
+      "statement_sha256": "f1fe0c2e55eca8759277ddf0385110f2f7cf5c5d569993cb638b0adf26caf941",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Some diagonals of a convex $n$-gon are drawn, dividing it into triangles, so that:\n\n(i) an even number of the drawn diagonals issues from each vertex;\n\n(ii) no two of the diagonals have a common interior point.\n\nProve that $n$ is divisible by $3$.",
+          "statement_sha256": "a14da745bc69408f4e0203df5055f32ddb58b9721260bc36697dc614f546c802",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1975.1.1": {
       "topics": [
@@ -108701,10 +108982,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $0<u<1$. Find the least $\\alpha>0$ for which there is $\\beta>0$ such that $$(1+x)^u+(1-x)^u\\leq 2-\\frac{x^\\alpha}{\\beta}$$ for all $0<x<1$.",
-      "statement_sha256": "ceccc30219aa5de0583e7abe52416605469cbd98aabe3eaf5a2b6aa31b04dbdd",
+      "reviewed_statement": "Find the smallest positive number $\\alpha$ for which there exists a positive number $\\beta$ such that for every $x$ in the interval $(0,1]$\n$$\\sqrt{1+x}+\\sqrt{1-x}\\leq 2-\\frac{x^{\\alpha}}{\\beta}.$$\n\nFor the value of $\\alpha$ found, find the smallest positive number $\\beta$ satisfying this inequality.",
+      "statement_sha256": "6e60f4071c6aaa493eb3019fd5de6776cbc989256f883453b7ff501df6a5f262",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $0<u<1$. Find the least $\\alpha>0$ for which there is $\\beta>0$ such that $$(1+x)^u+(1-x)^u\\leq 2-\\frac{x^\\alpha}{\\beta}$$ for all $0<x<1$.",
+          "statement_sha256": "ceccc30219aa5de0583e7abe52416605469cbd98aabe3eaf5a2b6aa31b04dbdd",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1975.2.4": {
       "topics": [
@@ -108719,10 +109012,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Prove that there is a triangle with one angle equal to $a$, circumradius $R$ and inradius $r$ if and only if $$\\frac{2R}{r}\\geq\\frac{1}{\\sin\\frac{a}{2}\\left(1-\\sin\\frac{a}{2}\\right)}.$$",
-      "statement_sha256": "beccafa3903bde9664d513a90964f3e1c66a7d1f32e114ceba0051418712ef62",
+      "reviewed_statement": "Prove that a triangle with an angle $\\alpha$ can be inscribed in a circle of radius $R$ and circumscribed about a circle of radius $r$ if and only if\n$$\\frac{2R}{r}\\geq\\frac{1}{\\sin\\frac{\\alpha}{2}\\left(1-\\sin\\frac{\\alpha}{2}\\right)}.$$",
+      "statement_sha256": "b78ab8ceb68427bb7ab1ad16aac4e4ce4f524ebd50702246181579d6b991bcb2",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Prove that there is a triangle with one angle equal to $a$, circumradius $R$ and inradius $r$ if and only if $$\\frac{2R}{r}\\geq\\frac{1}{\\sin\\frac{a}{2}\\left(1-\\sin\\frac{a}{2}\\right)}.$$",
+          "statement_sha256": "beccafa3903bde9664d513a90964f3e1c66a7d1f32e114ceba0051418712ef62",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1975.2.6": {
       "topics": [
@@ -108746,10 +109051,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Four sequences of real numbers $(a_n),(b_n),(c_n),(d_n)$ satisfy for all $n$ $$a_{n+1}=a_n+b_n,\\quad b_{n+1}=b_n+c_n,\\quad c_{n+1}=c_n+d_n,\\quad d_{n+1}=d_n+a_n.$$ Prove that if $a_{k+m}=a_m$, $b_{k+m}=b_m$, $c_{k+m}=c_m$, $d_{k+m}=d_m$ for some $k\\geq 1$, $m\\geq 1$, then $a_2=b_2=c_2=d_2=0$.",
-      "statement_sha256": "84a0abbd588ca9a5d2f68d7c6a1dfad22c9d2d220a45664567d392690beb0a87",
+      "reviewed_statement": "Four sequences of real numbers $(a_n)$, $(b_n)$, $(c_n)$, $(d_n)$ are given such that for every $n$\n$$a_{n+1}=a_n+b_n,\\quad b_{n+1}=b_n+c_n,\\quad c_{n+1}=c_n+d_n,\\quad d_{n+1}=d_n+a_n.$$\nProve that if for some $k,m\\geq 1$ we have $a_{k+m}=a_m$, $b_{k+m}=b_m$, $c_{k+m}=c_m$, then $a_2=b_2=c_2=d_2=0$.",
+      "statement_sha256": "3e2f635837524c4b6c23ac048f4d9efe4c9f229dd739294f046eb367a23bd196",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Four sequences of real numbers $(a_n),(b_n),(c_n),(d_n)$ satisfy for all $n$ $$a_{n+1}=a_n+b_n,\\quad b_{n+1}=b_n+c_n,\\quad c_{n+1}=c_n+d_n,\\quad d_{n+1}=d_n+a_n.$$ Prove that if $a_{k+m}=a_m$, $b_{k+m}=b_m$, $c_{k+m}=c_m$, $d_{k+m}=d_m$ for some $k\\geq 1$, $m\\geq 1$, then $a_2=b_2=c_2=d_2=0$.",
+          "statement_sha256": "84a0abbd588ca9a5d2f68d7c6a1dfad22c9d2d220a45664567d392690beb0a87",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1976.1.3": {
       "topics": [
@@ -108764,10 +109081,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "The diagonals of a quadrilateral with sides $a,b,c,d$ are perpendicular. Prove that the diagonals of every other quadrilateral with sides $a,b,c,d$ are also perpendicular.",
-      "statement_sha256": "03ff6fa6dbda6f8ee55011decb881168c7b86cc2c1a63ce33846ea12d688bd9f",
+      "reviewed_statement": "The diagonals of a certain plane quadrilateral whose consecutive sides have lengths $a,b,c,d$ are perpendicular. Prove that the diagonals of every plane quadrilateral whose consecutive sides have lengths $a,b,c,d$ are perpendicular.",
+      "statement_sha256": "8e0ee610c06b4a80005d00b0b624098c59cbf2101cf18e3c0ed91b7d0a8f4c5a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "The diagonals of a quadrilateral with sides $a,b,c,d$ are perpendicular. Prove that the diagonals of every other quadrilateral with sides $a,b,c,d$ are also perpendicular.",
+          "statement_sha256": "03ff6fa6dbda6f8ee55011decb881168c7b86cc2c1a63ce33846ea12d688bd9f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1976.2.5": {
       "topics": [
@@ -108818,10 +109147,22 @@
       "topics": [
         "Analysis"
       ],
-      "reviewed_statement": "A differentiable function $h:\\mathbb{R}\\to\\mathbb{R}$ satisfies $h(ax)=bh(x)$ for all $x$, where $a$ and $b$ are given numbers with $b>0$ and $0\\neq|a|\\neq 1$. Suppose that $h'(0)\\neq 0$ and $h'$ is continuous at $0$. Prove that $a=b$ and that there is a real number $c$ such that $h(x)=cx$ for all $x$.",
-      "statement_sha256": "fcbb60215de9a365a1e52f4883230d0a9387a1d5a8d7d0ae3e14c970a6d48c16",
+      "reviewed_statement": "A function $h:\\mathbb{R}\\to\\mathbb{R}$ is differentiable and satisfies $h(ax)=bh(x)$ for every $x$, where $a$ and $b$ are fixed real numbers and $0\\neq|a|\\neq 1$. Moreover, $h'(0)\\neq 0$ and the function $h'$ is continuous at the point $x=0$.\n\nProve that $a=b$ and that there is a real number $c$ such that $h(x)=cx$.",
+      "statement_sha256": "cbc0daaecabd49b8d691d7fe04407a815cf18db0ffa11bceafbb22e1c4d108c6",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Analysis"
+          ],
+          "reviewed_statement": "A differentiable function $h:\\mathbb{R}\\to\\mathbb{R}$ satisfies $h(ax)=bh(x)$ for all $x$, where $a$ and $b$ are given numbers with $b>0$ and $0\\neq|a|\\neq 1$. Suppose that $h'(0)\\neq 0$ and $h'$ is continuous at $0$. Prove that $a=b$ and that there is a real number $c$ such that $h(x)=cx$ for all $x$.",
+          "statement_sha256": "fcbb60215de9a365a1e52f4883230d0a9387a1d5a8d7d0ae3e14c970a6d48c16",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1977.2.5": {
       "topics": [
@@ -108845,10 +109186,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A ray of light reflects from the sides of a given angle, and a ray reaching the vertex of the angle is absorbed. Prove that there is a positive integer $n$ such that every ray is reflected at most $n$ times.",
-      "statement_sha256": "2708e0895516c5a10f2e0c2d7009033c1325154fb6c214954fdaa73e98bf62fe",
+      "reviewed_statement": "Inside a given convex angle in the plane a ray of light travels, reflecting from the arms of the angle according to the law that the angle of incidence equals the angle of reflection. A ray that hits the vertex of the angle is absorbed. Prove that there is a positive integer $n$ such that every ray can be reflected from the arms of the angle at most $n$ times.",
+      "statement_sha256": "f098734b740d7e46fec82d942ce6efde4f5dd702bf48ff1a0bae5cc928cb8273",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A ray of light reflects from the sides of a given angle, and a ray reaching the vertex of the angle is absorbed. Prove that there is a positive integer $n$ such that every ray is reflected at most $n$ times.",
+          "statement_sha256": "2708e0895516c5a10f2e0c2d7009033c1325154fb6c214954fdaa73e98bf62fe",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1978.1.2": {
       "topics": [
@@ -108863,10 +109216,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that if $m$ is a positive integer and $P,Q,R$ are polynomials in $x,y$ of degree less than $m$ satisfying $$x^{2m}P(x,y)+y^{2m}Q(x,y)=(x+y)^{2m}R(x,y),$$ then all three polynomials are zero.",
-      "statement_sha256": "f2fd1de235234afd7b1809dbed934f6ccb2b567a308d3bc0a3f17753982706dc",
+      "reviewed_statement": "Prove that if\n$$x^{2m}P(x,y)+y^{2m}Q(x,y)=(x+y)^{2m}R(x,y),$$\nwhere $m$ is a positive integer and $P,Q,R$ are polynomials of degrees less than $m$, then each of these polynomials is the zero polynomial.\n\nRemark. The degree of a non-zero polynomial $W(x,y)=\\sum a_{ij}x^iy^j$ is the largest integer $i+j$ for which $a_{ij}\\neq 0$. The degree of the zero polynomial is taken to be $0$.",
+      "statement_sha256": "5e7fa1570bf63d9a8c3813e2890206e9903dd1403d5a8dfdb5aa304a35753bf3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that if $m$ is a positive integer and $P,Q,R$ are polynomials in $x,y$ of degree less than $m$ satisfying $$x^{2m}P(x,y)+y^{2m}Q(x,y)=(x+y)^{2m}R(x,y),$$ then all three polynomials are zero.",
+          "statement_sha256": "f2fd1de235234afd7b1809dbed934f6ccb2b567a308d3bc0a3f17753982706dc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1978.2.4": {
       "topics": [
@@ -108881,10 +109246,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "For a real number $a$ define the sequence $(a_n)$ by $a_1=a$ and $$a_{n+1}=\\begin{cases}\\dfrac{1}{2}\\left(a_n-\\dfrac{1}{a_n}\\right)&\\text{if }a_n\\neq 0,\\\\ 0&\\text{if }a_n=0.\\end{cases}$$ Prove that the sequence contains infinitely many non-positive terms.",
-      "statement_sha256": "4e7418af1b94975d06188de603609dc2613ebe9577d0456bafffea0e2dc88b5d",
+      "reviewed_statement": "A real number $a$ is given. The sequence $(a_n)$ is defined by $a_1=a$ and\n$$a_{n+1}=\\begin{cases}\\dfrac{1}{2}\\left(a_n-\\dfrac{1}{a_n}\\right)&\\text{if }a_n\\neq 0,\\\\ 0&\\text{if }a_n=0.\\end{cases}$$\nProve that the sequence $(a_n)$ has infinitely many non-negative terms and infinitely many non-positive terms.",
+      "statement_sha256": "66a99dc636c167a1fc18df994311434043c7521344619fe1bded58e12f7acc6a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "For a real number $a$ define the sequence $(a_n)$ by $a_1=a$ and $$a_{n+1}=\\begin{cases}\\dfrac{1}{2}\\left(a_n-\\dfrac{1}{a_n}\\right)&\\text{if }a_n\\neq 0,\\\\ 0&\\text{if }a_n=0.\\end{cases}$$ Prove that the sequence contains infinitely many non-positive terms.",
+          "statement_sha256": "4e7418af1b94975d06188de603609dc2613ebe9577d0456bafffea0e2dc88b5d",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1978.2.6": {
       "topics": [
@@ -108935,28 +109312,64 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Prove that the product of the sides of a quadrilateral inscribed in a circle of radius $1$ does not exceed $4$.",
-      "statement_sha256": "b3de8d1aa08bae666b5359320a736462bb673b92755f44c7d36b033b80335b97",
+      "reviewed_statement": "Prove that the product of the side lengths of a convex quadrilateral inscribed in a circle of radius $1$ is not greater than $4$.",
+      "statement_sha256": "898f1b0487e92b81486eb5a96718f7a94c819850b0e4f1e72704ac161bb5f07b",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Prove that the product of the sides of a quadrilateral inscribed in a circle of radius $1$ does not exceed $4$.",
+          "statement_sha256": "b3de8d1aa08bae666b5359320a736462bb673b92755f44c7d36b033b80335b97",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1979.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "A polynomial $w$ of degree $n>1$ has $n$ distinct roots $x_1,x_2,\\ldots,x_n$. Prove that $$\\frac{1}{w'(x_1)}+\\frac{1}{w'(x_2)}+\\cdots+\\frac{1}{w'(x_n)}=0.$$",
-      "statement_sha256": "a5b07660afcf61b22214fe1468f605f245d7c81c2e1b1ff980f35570d995e4db",
+      "reviewed_statement": "A polynomial $w$ of degree $n$ ($n>1$) has $n$ distinct real roots $x_1,x_2,\\ldots,x_n$. Prove that\n$$\\frac{1}{w'(x_1)}+\\frac{1}{w'(x_2)}+\\cdots+\\frac{1}{w'(x_n)}=0.$$",
+      "statement_sha256": "47ee2bddc052d47861196690ea85b6978171c52f2e2a4559c2ecaf3495b30b70",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "A polynomial $w$ of degree $n>1$ has $n$ distinct roots $x_1,x_2,\\ldots,x_n$. Prove that $$\\frac{1}{w'(x_1)}+\\frac{1}{w'(x_2)}+\\cdots+\\frac{1}{w'(x_n)}=0.$$",
+          "statement_sha256": "a5b07660afcf61b22214fe1468f605f245d7c81c2e1b1ff980f35570d995e4db",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1980.1.1": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Find the area of an octagon inscribed in a circle, four of whose sides have length $1$ and the other four length $2$.",
-      "statement_sha256": "a37145b9f7207ace3134416bafd9f1532854ce651b0f7b117b7785959b6fcd91",
+      "reviewed_statement": "Compute the area of an octagon inscribed in a circle, given that each of four consecutive sides of the octagon has length $1$ and each of the four remaining sides has length $2$.",
+      "statement_sha256": "2cd7aa63e68a98b9e87171f3ae4dfd5cd155cedc16a12521306020b60d43e9c5",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Find the area of an octagon inscribed in a circle, four of whose sides have length $1$ and the other four length $2$.",
+          "statement_sha256": "a37145b9f7207ace3134416bafd9f1532854ce651b0f7b117b7785959b6fcd91",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1980.1.2": {
       "topics": [
@@ -109007,10 +109420,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Two intersecting lines $a$ and $b$ are given in a plane. Consider all pairs of perpendicular planes $\\alpha$, $\\beta$ with $a\\subset\\alpha$ and $b\\subset\\beta$. Prove that there is a circle each point of which lies on the line $\\alpha\\cap\\beta$ for some such $\\alpha$ and $\\beta$.",
-      "statement_sha256": "d4bfaa43a970adc35cb70b8b35d63d4ef4ee7f47a3668d83a271062eae4940cf",
+      "reviewed_statement": "Two intersecting lines $a$ and $b$ are given in space. Consider all pairs of perpendicular planes $\\alpha$ and $\\beta$ such that $a\\subset\\alpha$ and $b\\subset\\beta$. Prove that there is a circle such that through each of its points passes the line $\\alpha\\cap\\beta$ for some such $\\alpha,\\beta$.",
+      "statement_sha256": "5181cb8f2a4eedfbc8b31d65d5606ad4036658c5cd29f989e317d15d64c837af",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Two intersecting lines $a$ and $b$ are given in a plane. Consider all pairs of perpendicular planes $\\alpha$, $\\beta$ with $a\\subset\\alpha$ and $b\\subset\\beta$. Prove that there is a circle each point of which lies on the line $\\alpha\\cap\\beta$ for some such $\\alpha$ and $\\beta$.",
+          "statement_sha256": "d4bfaa43a970adc35cb70b8b35d63d4ef4ee7f47a3668d83a271062eae4940cf",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1981.1.2": {
       "topics": [
@@ -109025,10 +109450,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for every positive integer $n$ and real numbers $a$ and $x$ with $0<a<1$ and $a^{n+1}\\leq x\\leq 1$ $$\\prod_{k=1}^n\\left|\\frac{x-a^k}{x+a^k}\\right|\\leq\\prod_{k=1}^n\\frac{1-a^k}{1+a^k}.$$",
-      "statement_sha256": "ba6797d5b786fc5d254139a418dbbbf25da7a907987241d89e9d7797c1e89f68",
+      "reviewed_statement": "Prove that for every positive integer $n$ and real numbers $\\alpha$, $x$ satisfying $\\alpha^{n-1}\\leq x\\leq 1$ and $0<\\alpha<1$,\n$$\\prod_{k=1}^n\\left|\\frac{x-\\alpha^k}{x+\\alpha^k}\\right|\\leq\\prod_{k=1}^n\\frac{1-\\alpha^k}{1+\\alpha^k}.$$",
+      "statement_sha256": "6556a7d78bc083d6c53b2cbfe73b4e997304bfd8dd2234c4479a2e1138a17328",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for every positive integer $n$ and real numbers $a$ and $x$ with $0<a<1$ and $a^{n+1}\\leq x\\leq 1$ $$\\prod_{k=1}^n\\left|\\frac{x-a^k}{x+a^k}\\right|\\leq\\prod_{k=1}^n\\frac{1-a^k}{1+a^k}.$$",
+          "statement_sha256": "ba6797d5b786fc5d254139a418dbbbf25da7a907987241d89e9d7797c1e89f68",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1981.2.4": {
       "topics": [
@@ -109088,10 +109525,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A finite set of points is given in the plane. Prove that the points can be covered by open squares $Q_1,Q_2,\\ldots,Q_n$ such that $1\\leq\\frac{N_j}{S_j}\\leq 4$ for $j=1,\\ldots,n$, where $N_j$ is the number of points of the set in $Q_j$ and $S_j$ is the area of $Q_j$.",
-      "statement_sha256": "0db05fc1e5306d7141a7bd613a26aa8c0db9fbd1e9f8e088c7abb992200110f1",
+      "reviewed_statement": "A finite set of points is given in the plane. Prove that this set can be covered by disjoint open squares $Q_1,Q_2,\\ldots,Q_n$ such that\n$$1\\leq\\frac{N_j}{S_j}\\leq 4\\qquad(j=1,2,\\ldots,n),$$\nwhere $N_j$ is the number of points of the set lying in the square $Q_j$ and $S_j$ is the area of $Q_j$.",
+      "statement_sha256": "efafa94d4acd9458621e7e0080e6798d4bd4b44e973d669f15a35378279b768c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A finite set of points is given in the plane. Prove that the points can be covered by open squares $Q_1,Q_2,\\ldots,Q_n$ such that $1\\leq\\frac{N_j}{S_j}\\leq 4$ for $j=1,\\ldots,n$, where $N_j$ is the number of points of the set in $Q_j$ and $S_j$ is the area of $Q_j$.",
+          "statement_sha256": "0db05fc1e5306d7141a7bd613a26aa8c0db9fbd1e9f8e088c7abb992200110f1",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1982.2.5": {
       "topics": [
@@ -109169,10 +109618,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Find the number of functions $f$ mapping an $n$-element set into itself such that $f^{n-1}$ is constant but $f^{n-2}$ is not. Here $f^0(x)=x$ and $f^k=f\\circ f^{k-1}$ for $k\\geq 1$.",
-      "statement_sha256": "a88c51068fbac9572d3204294808b8af99c25bbef64cd3ffc667c6111195e24e",
+      "reviewed_statement": "Let $n>2$ be a fixed positive integer. Find the number of functions $f$ mapping an $n$-element set into itself such that $f^{n-1}$ is a constant function while $f^{n-2}$ is not a constant function, where $f^k=f\\circ f\\circ\\cdots\\circ f$ ($k$ times).",
+      "statement_sha256": "34c4b77ffa02ae80b0479147858d1a2e25eef424a41228ba3e3139f5e8ea1529",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Find the number of functions $f$ mapping an $n$-element set into itself such that $f^{n-1}$ is constant but $f^{n-2}$ is not. Here $f^0(x)=x$ and $f^k=f\\circ f^{k-1}$ for $k\\geq 1$.",
+          "statement_sha256": "a88c51068fbac9572d3204294808b8af99c25bbef64cd3ffc667c6111195e24e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1984.1.2": {
       "topics": [
@@ -109205,10 +109666,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A regular hexagon of side $1$ is covered by six unit discs. Prove that no vertex of the hexagon is covered by two or more discs.",
-      "statement_sha256": "47081f00875a47f70bea2aa0e26ea4d3fff69bfbfc1f1d770d027ca62eda907f",
+      "reviewed_statement": "A regular hexagon with side $1$ is contained in the union of six discs of diameter $1$. Prove that none of the vertices of the hexagon belongs to two of these discs.",
+      "statement_sha256": "6254177e2e09f53650d9d158db910b50c17e9efc6a28ecba384a860353b3d6d7",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A regular hexagon of side $1$ is covered by six unit discs. Prove that no vertex of the hexagon is covered by two or more discs.",
+          "statement_sha256": "47081f00875a47f70bea2aa0e26ea4d3fff69bfbfc1f1d770d027ca62eda907f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1984.2.6": {
       "topics": [
@@ -109232,10 +109705,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A unit square and $2n$ positive reals $a_1,b_1,\\ldots,a_n,b_n$, each at most $1$, with $\\sum a_ib_i\\geq 100$ are given. Prove that the square can be covered by rectangles $R_i$ with sides $a_i,b_i$ parallel to the sides of the square.",
-      "statement_sha256": "ab5dedb653fa143b931dd04d09da64df0af74418fd420ab484dcd70a90165105",
+      "reviewed_statement": "A square of side $1$ and positive numbers $a_1,b_1,a_2,b_2,\\ldots,a_n,b_n$, each not greater than $1$, are given such that $a_1b_1+a_2b_2+\\cdots+a_nb_n>100$. Prove that the square can be covered by rectangles $P_i$ ($i=1,2,\\ldots,n$) with sides of lengths $a_i,b_i$ parallel to the sides of the square.",
+      "statement_sha256": "565b1a8f4bd919d6104cda9c2bedded098502363d043a1bffb07f28ee91461b1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A unit square and $2n$ positive reals $a_1,b_1,\\ldots,a_n,b_n$, each at most $1$, with $\\sum a_ib_i\\geq 100$ are given. Prove that the square can be covered by rectangles $R_i$ with sides $a_i,b_i$ parallel to the sides of the square.",
+          "statement_sha256": "ab5dedb653fa143b931dd04d09da64df0af74418fd420ab484dcd70a90165105",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1985.1.3": {
       "topics": [
@@ -109304,19 +109789,43 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Find all $n$ for which there is a real polynomial $f(x)$ of degree $n$ such that $f(x)\\geq f'(x)$ for all real $x$.",
-      "statement_sha256": "8915a9216580b6241c4b279791847676a2794762167137dc629873282846c1df",
+      "reviewed_statement": "Find the non-negative integers $n$ for which there exists a polynomial $f$ of degree $n$ with real coefficients such that $f(x)>f'(x)$ for every real $x$.",
+      "statement_sha256": "7a22ebfefd83898a43e34721e650cb70cd3ada60a8b750506fa1f5f5330f0b26",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Find all $n$ for which there is a real polynomial $f(x)$ of degree $n$ such that $f(x)\\geq f'(x)$ for all real $x$.",
+          "statement_sha256": "8915a9216580b6241c4b279791847676a2794762167137dc629873282846c1df",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1986.2.5": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "In a chess tournament with $2n$ players $(n>1)$ every two players meet at most once. Prove that if there are no three players who all played each other, then at most $n^2$ games were played. Conversely, prove that if $n^2$ games are to be played, they can be arranged so that no three players all play each other.",
-      "statement_sha256": "83c17c7aa7dacbbf13937eb18ddd50265823e86e468f502da86f012a56259ac9",
+      "reviewed_statement": "In a chess tournament $2n$ ($n>1$) players take part, and any two of them play at most one game against each other. Prove that a course of the tournament in which no three participants play three games among themselves is possible if and only if the number of all games played in the tournament does not exceed $n^2$.",
+      "statement_sha256": "53f4621e93b4fdfee91f213ac0a68845969b212523af070a59acbeaa0c1b0aa9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "In a chess tournament with $2n$ players $(n>1)$ every two players meet at most once. Prove that if there are no three players who all played each other, then at most $n^2$ games were played. Conversely, prove that if $n^2$ games are to be played, they can be arranged so that no three players all play each other.",
+          "statement_sha256": "83c17c7aa7dacbbf13937eb18ddd50265823e86e468f502da86f012a56259ac9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1986.2.6": {
       "topics": [
@@ -109331,28 +109840,64 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$n\\geq 2$ points lie in a unit square. Prove that they can be labelled $P_1,P_2,\\ldots,P_n$ so that $$\\sum_{i=1}^n|P_{i-1}P_i|^2\\leq 4,$$ where $P_0=P_n$.",
-      "statement_sha256": "2a0b1a1671da299b146e5a25fbfcc49157b97a05d472a92eeae7f2b28b91b8af",
+      "reviewed_statement": "There are $n$ points ($n>2$) in a square of side $1$. Prove that they can be numbered $P_1,P_2,\\ldots,P_n$ so that\n$$\\sum_{i=1}^n|P_{i-1}P_i|^2\\leq 4$$\n(where $P_0=P_n$).",
+      "statement_sha256": "2907ef5526e843b171c25389d50bf6b8ea7da4570b88e36ce9a62194e9083aec",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$n\\geq 2$ points lie in a unit square. Prove that they can be labelled $P_1,P_2,\\ldots,P_n$ so that $$\\sum_{i=1}^n|P_{i-1}P_i|^2\\leq 4,$$ where $P_0=P_n$.",
+          "statement_sha256": "2a0b1a1671da299b146e5a25fbfcc49157b97a05d472a92eeae7f2b28b91b8af",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1987.1.2": {
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "A regular $n$-gon is inscribed in a circle of radius $1$. Let $X$ be the set of all arcs $PQ$, where $P,Q$ are distinct vertices of the $n$-gon. Five elements $L_1,\\ldots,L_5$ of $X$ are chosen at random (not necessarily distinct). Prove that the expected length of $L_1\\cap L_2\\cap L_3\\cap L_4\\cap L_5$ does not depend on $n$.",
-      "statement_sha256": "fd058f24bdaf4658e917e8167a0bd11ed239d95fad015e6291e19f02ef46bf88",
+      "reviewed_statement": "A regular $n$-gon is inscribed in a circle of length $1$. Among the arcs of the circle with endpoints at vertices of the polygon, five arcs $L_1,\\ldots,L_5$ are drawn with replacement, every arc having the same probability of being drawn. Prove that the expected value of the length of the common part $L_1\\cap L_2\\cap L_3\\cap L_4\\cap L_5$ does not depend on $n$.",
+      "statement_sha256": "eee380ba07abc8acf28472ada0eb654bc9e3094d11fb295c1954d51563921474",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "A regular $n$-gon is inscribed in a circle of radius $1$. Let $X$ be the set of all arcs $PQ$, where $P,Q$ are distinct vertices of the $n$-gon. Five elements $L_1,\\ldots,L_5$ of $X$ are chosen at random (not necessarily distinct). Prove that the expected length of $L_1\\cap L_2\\cap L_3\\cap L_4\\cap L_5$ does not depend on $n$.",
+          "statement_sha256": "fd058f24bdaf4658e917e8167a0bd11ed239d95fad015e6291e19f02ef46bf88",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1987.1.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "$w(x)$ is a polynomial with integer coefficients, and $p_n$ is the sum of the digits of $w(n)$. Prove that some value occurs infinitely often in the sequence $p_1,p_2,p_3,\\ldots$",
-      "statement_sha256": "e8a6b5a53f53b06e9698f7a35bb4671508feb234b9b96c29664a63a65b676e72",
+      "reviewed_statement": "A polynomial $W$ with non-negative integer coefficients is given. Define the sequence $(p_n)$, where $p_n$ is the sum of the digits of the number $W(n)$. Prove that some number occurs infinitely many times in the sequence $(p_n)$.",
+      "statement_sha256": "f357ccd80ba73c97ea27805ee66013416074d28d075be2d7157b95a2b7a88f5a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "$w(x)$ is a polynomial with integer coefficients, and $p_n$ is the sum of the digits of $w(n)$. Prove that some value occurs infinitely often in the sequence $p_1,p_2,p_3,\\ldots$",
+          "statement_sha256": "e8a6b5a53f53b06e9698f7a35bb4671508feb234b9b96c29664a63a65b676e72",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1987.2.4": {
       "topics": [
@@ -109385,10 +109930,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "The real numbers $x_1,x_2,\\ldots,x_n$ belong to $(0,1)$ and $x_1+x_2+\\cdots+x_n=m+r$, where $m$ is an integer and $r\\in[0,1)$. Prove that $x_1^2+x_2^2+\\cdots+x_n^2\\leq m+r^2$.",
-      "statement_sha256": "5084dd1d8edd393fd3a8eb9f6915bb350cdd00a9f254b5e6b7bee46d42a54425",
+      "reviewed_statement": "Numbers $x_1,x_2,\\ldots,x_n$ belonging to the interval $[0,1]$ satisfy\n$$\\sum_{i=1}^n x_i=m+r,$$\nwhere $m$ is an integer and $r\\in[0,1)$. Prove that\n$$\\sum_{i=1}^n x_i^2\\leq m+r^2.$$",
+      "statement_sha256": "9786de74c22a5a8d7cb72fc7cd426a138c3cba94be3c9a06a938124b717fc763",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "The real numbers $x_1,x_2,\\ldots,x_n$ belong to $(0,1)$ and $x_1+x_2+\\cdots+x_n=m+r$, where $m$ is an integer and $r\\in[0,1)$. Prove that $x_1^2+x_2^2+\\cdots+x_n^2\\leq m+r^2$.",
+          "statement_sha256": "5084dd1d8edd393fd3a8eb9f6915bb350cdd00a9f254b5e6b7bee46d42a54425",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1988.1.2": {
       "topics": [
@@ -109403,10 +109960,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$W$ is a polygon with a centre of symmetry $S$ (if $P$ belongs to $W$, so does the point $P'$ for which $S$ is the midpoint of $PP'$). Prove that there is a parallelogram $V$ containing $W$ such that the midpoint of each side of $V$ lies on the boundary of $W$.",
-      "statement_sha256": "a0ee3fad815ac78b03477ccdd05cedaf12afc838625d2e46baea2092bd8962b0",
+      "reviewed_statement": "Let $W$ be a polygon (not necessarily convex) having a centre of symmetry. Prove that there is a parallelogram containing $W$ such that the midpoints of the sides of this parallelogram belong to the boundary of $W$.",
+      "statement_sha256": "8f9a6d98a6d98750aa2b0f74a7bdad088fc4e95ef0aeede2007302c38915dcc1",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$W$ is a polygon with a centre of symmetry $S$ (if $P$ belongs to $W$, so does the point $P'$ for which $S$ is the midpoint of $PP'$). Prove that there is a parallelogram $V$ containing $W$ such that the midpoint of each side of $V$ lies on the boundary of $W$.",
+          "statement_sha256": "a0ee3fad815ac78b03477ccdd05cedaf12afc838625d2e46baea2092bd8962b0",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1988.2.4": {
       "topics": [
@@ -109457,10 +110026,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "The edges of a cube are labelled $1$ to $12$. Prove that there are at least eight triples $(i,j,k)$ with $1\\leq i<j<k\\leq 12$ such that the edges $i,j,k$ are consecutive edges of a path, and that there is a labelling for which there are no nine such triples.",
-      "statement_sha256": "716910dc61e4fe0e7093b6d6f7de272e5d3aa9b19c468605879f6e230a0abce2",
+      "reviewed_statement": "The edges of a cube are numbered with the numbers from $1$ to $12$.\n\n(a) Prove that for every numbering there exist at least eight triples of integers $(i,j,k)$, where $1\\leq i<j<k\\leq 12$, such that the edges numbered $i,j,k$ are consecutive sides of a broken line.\n\n(b) Give an example of a numbering for which there do not exist nine triples with the properties stated in (a).",
+      "statement_sha256": "c67cebc5aa5ac4b03452dcd68989c5384af1dbc0d724216c54a985a301474cd3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "The edges of a cube are labelled $1$ to $12$. Prove that there are at least eight triples $(i,j,k)$ with $1\\leq i<j<k\\leq 12$ such that the edges $i,j,k$ are consecutive edges of a path, and that there is a labelling for which there are no nine such triples.",
+          "statement_sha256": "716910dc61e4fe0e7093b6d6f7de272e5d3aa9b19c468605879f6e230a0abce2",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1989.2.4": {
       "topics": [
@@ -109475,19 +110056,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "Three circles of radius $a$ are drawn on a sphere of radius $r$. Any two of them touch externally, and all three lie in one hemisphere. Find the radius of a circle on the sphere that touches all three.",
-      "statement_sha256": "b72649df2f7f461c0fb51b148e47392ce01b27973b63e44e08e5255a0a3c4181",
+      "reviewed_statement": "On a sphere of radius $r$ there are three circles of radius $a$, pairwise tangent and contained in one hemisphere. Find the radius of a circle lying on the same sphere and tangent to each of these three circles.\n\nRemark. As in the plane, two circles lying on a sphere are called tangent if they have exactly one common point.",
+      "statement_sha256": "05cb143f73afc2428eee34b5730f202656c2bdd408b8ceff661a94332000634e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "Three circles of radius $a$ are drawn on a sphere of radius $r$. Any two of them touch externally, and all three lie in one hemisphere. Find the radius of a circle on the sphere that touches all three.",
+          "statement_sha256": "b72649df2f7f461c0fb51b148e47392ce01b27973b63e44e08e5255a0a3c4181",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1989.2.6": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for positive reals $a,b,c,d$ $$\\left(\\frac{ab+ac+ad+bc+bd+cd}{6}\\right)^3\\geq\\left(\\frac{abc+abd+acd+bcd}{4}\\right)^2.$$",
-      "statement_sha256": "583f297e8bb3706d5e3c8082a6d30e01f7d233076ed9fa565ba7362d83aac04b",
+      "reviewed_statement": "Prove that for all positive numbers $a,b,c,d$\n$$\\sqrt{\\frac{ab+ac+ad+bc+bd+cd}{6}}\\geq\\sqrt[3]{\\frac{abc+abd+acd+bcd}{4}}.$$",
+      "statement_sha256": "5a204af1b5cc37a03a268a48d3fb41b5d5246697aa0111e975b939e082fb3f99",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for positive reals $a,b,c,d$ $$\\left(\\frac{ab+ac+ad+bc+bd+cd}{6}\\right)^3\\geq\\left(\\frac{abc+abd+acd+bcd}{4}\\right)^2.$$",
+          "statement_sha256": "583f297e8bb3706d5e3c8082a6d30e01f7d233076ed9fa565ba7362d83aac04b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1990.1.1": {
       "topics": [
@@ -109502,10 +110107,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Let $x_1,x_2,\\ldots,x_n$ be positive numbers, $x_{n+1}=x_1$, $x_{n+2}=x_2$. Prove that $$\\sum_{i=1}^n\\frac{x_i^2}{x_i^2+x_{i+1}x_{i+2}}\\leq n-1.$$",
-      "statement_sha256": "2d31ecbd4f602ef5d9c4b09ded55d4a94528cf5e018c2ab9f8ae0678d9932faa",
+      "reviewed_statement": "Prove that if $n$ is a positive integer greater than $2$ and $x_1,x_2,\\ldots,x_n$ are positive real numbers, then\n$$\\frac{x_1^2}{x_1^2+x_2x_3}+\\frac{x_2^2}{x_2^2+x_3x_4}+\\cdots+\\frac{x_n^2}{x_n^2+x_1x_2}\\leq n-1.$$",
+      "statement_sha256": "d485c23a221a0686a2054198cdd6862b999fe9124cab5fc6d6bbb0643d3bddd3",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Let $x_1,x_2,\\ldots,x_n$ be positive numbers, $x_{n+1}=x_1$, $x_{n+2}=x_2$. Prove that $$\\sum_{i=1}^n\\frac{x_i^2}{x_i^2+x_{i+1}x_{i+2}}\\leq n-1.$$",
+          "statement_sha256": "2d31ecbd4f602ef5d9c4b09ded55d4a94528cf5e018c2ab9f8ae0678d9932faa",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1990.1.3": {
       "topics": [
@@ -109520,10 +110137,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A triangle all of whose sides have length at least $1$ is inscribed in a square of side $1$. Prove that the centre of the square lies inside the triangle or on its boundary.",
-      "statement_sha256": "8c37e96d5fe721d9fa5cea37b5fd10c551138c8fe4521ea6851838e7a3960a0b",
+      "reviewed_statement": "A triangle each of whose sides has length not less than $1$ is drawn inside a square of side $1$. Prove that the centre of the square belongs to the triangle.",
+      "statement_sha256": "b249e78eb837f491063852d80322d351b83abfe2508c9dfc1a7ae6f81b0d02d4",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A triangle all of whose sides have length at least $1$ is inscribed in a square of side $1$. Prove that the centre of the square lies inside the triangle or on its boundary.",
+          "statement_sha256": "8c37e96d5fe721d9fa5cea37b5fd10c551138c8fe4521ea6851838e7a3960a0b",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1990.2.5": {
       "topics": [
@@ -109565,10 +110194,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $$N=\\sum_{k=1}^{60}e_kk^{k^k},$$ where $e_k\\in\\{-1,1\\}$ for each $k$. Prove that $N$ is not the fifth power of an integer.",
-      "statement_sha256": "6234ee95b308de91f2c11dab2af0f12e8a2b0f5325185d7a4ca7769eec4bff2f",
+      "reviewed_statement": "Let $N$ be any number of the form\n$$N=\\sum_{k=1}^{60}\\varepsilon_k\\cdot k^{k^k},$$\nwhere each of the coefficients $\\varepsilon_1,\\ldots,\\varepsilon_{60}$ equals $1$ or $-1$. Prove that $N$ is not the fifth power of any positive integer.\n\nRemark. $k^{k^k}=k^{(k^k)}$.",
+      "statement_sha256": "894999369349a2a00fabbdd2b7879b7506476af235e595e7820700b8ebe5cdc9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $$N=\\sum_{k=1}^{60}e_kk^{k^k},$$ where $e_k\\in\\{-1,1\\}$ for each $k$. Prove that $N$ is not the fifth power of an integer.",
+          "statement_sha256": "6234ee95b308de91f2c11dab2af0f12e8a2b0f5325185d7a4ca7769eec4bff2f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1991.2.4": {
       "topics": [
@@ -109619,10 +110260,22 @@
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for all real numbers $x_1,x_2,\\ldots,x_n$ $$\\sum_{i=1}^n\\sum_{j=1}^n\\frac{x_ix_j}{i+j}\\geq 0.$$ When does equality hold?",
-      "statement_sha256": "c4d28f707834e9e8d2b5d8e57259962def6f893e3f2de8af67d8f322c8b0fe6f",
+      "reviewed_statement": "Prove that for any real numbers $a_1,a_2,\\ldots,a_r$\n$$\\sum_{n=1}^r\\left(\\sum_{m=1}^r\\frac{a_ma_n}{m+n}\\right)\\geq 0.$$\nDetermine for which numbers $a_1,a_2,\\ldots,a_r$ this inequality becomes an equality.",
+      "statement_sha256": "5b74c13c7eb48d9004e0945a80cff7503d1bfe9ebbdcbc172eb2132cf3bffd43",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for all real numbers $x_1,x_2,\\ldots,x_n$ $$\\sum_{i=1}^n\\sum_{j=1}^n\\frac{x_ix_j}{i+j}\\geq 0.$$ When does equality hold?",
+          "statement_sha256": "c4d28f707834e9e8d2b5d8e57259962def6f893e3f2de8af67d8f322c8b0fe6f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1992.2.4": {
       "topics": [
@@ -109664,19 +110317,43 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "A circle with centre $O$ is inscribed in a quadrilateral $ABCD$ in which $AB$ is parallel to and longer than $CD$; $M$ is the midpoint of $AB$. The line $OM$ meets $CD$ at $F$, and $CD$ touches the circle at $E$. Prove that $DE=CF$ if and only if $AB=2CD$.",
-      "statement_sha256": "dd2f29d8145050395c426bc20d96c74867e59d62c21e60a4ad419e4b6679cfcb",
+      "reviewed_statement": "The point $O$ is the centre of the circle $k$ inscribed in a non-isosceles trapezoid $ABCD$ whose longer base $AB$ has midpoint $M$. The shorter base $CD$ touches $k$ at $E$, and the line $OM$ meets the base $CD$ at $F$. Prove that $|DE|=|FC|$ if and only if $|AB|=2\\cdot|CD|$.",
+      "statement_sha256": "82724137637ffee35c38d9cdbc751bee5404e7566a4747a1f222fd7f5348a85a",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "A circle with centre $O$ is inscribed in a quadrilateral $ABCD$ in which $AB$ is parallel to and longer than $CD$; $M$ is the midpoint of $AB$. The line $OM$ meets $CD$ at $F$, and $CD$ touches the circle at $E$. Prove that $DE=CF$ if and only if $AB=2CD$.",
+          "statement_sha256": "dd2f29d8145050395c426bc20d96c74867e59d62c21e60a4ad419e4b6679cfcb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1993.1.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $g(k)$ be the greatest odd divisor of $k$. Put $f(k)=\\frac{k}{2}+\\frac{k}{g(k)}$ for even $k$ and $f(k)=2^{(k+1)/2}$ for odd $k$. The sequence $(x_n)$ is defined by $x_1=1$ and $x_{n+1}=f(x_n)$. Find $n$ such that $x_n=800$.",
-      "statement_sha256": "dd9d6cc55ed0889835eda549456d933d7d05a97e02123b8fbfb4d0ab1201a894",
+      "reviewed_statement": "Let $g(k)$ denote the greatest odd divisor of a positive integer $k$, and put\n$$f(k)=\\begin{cases}\\dfrac{k}{2}+\\dfrac{k}{g(k)}&\\text{for even }k,\\\\ 2^{(k+1)/2}&\\text{for odd }k.\\end{cases}$$\nThe sequence $(x_n)$ is defined by $x_1=1$, $x_{n+1}=f(x_n)$. Prove that the number $800$ occurs among the terms of this sequence exactly once. Find $n$ for which $x_n=800$.",
+      "statement_sha256": "027d0389b52ba75d948983685c03d30b9323edefb1cb7b6deb4188b1d1d9c60e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $g(k)$ be the greatest odd divisor of $k$. Put $f(k)=\\frac{k}{2}+\\frac{k}{g(k)}$ for even $k$ and $f(k)=2^{(k+1)/2}$ for odd $k$. The sequence $(x_n)$ is defined by $x_1=1$ and $x_{n+1}=f(x_n)$. Find $n$ such that $x_n=800$.",
+          "statement_sha256": "dd9d6cc55ed0889835eda549456d933d7d05a97e02123b8fbfb4d0ab1201a894",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1993.2.4": {
       "topics": [
@@ -109727,19 +110404,43 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "$k$ is a fixed positive integer. Let $a_n$ be the number of maps $f$ from the subsets of $\\{1,2,\\ldots,n\\}$ to $\\{1,2,\\ldots,k\\}$ such that $f(A\\cap B)=\\min(f(A),f(B))$ for all subsets $A,B$ of $\\{1,2,\\ldots,n\\}$. Find $\\lim_{n\\to\\infty}\\sqrt[n]{a_n}$.",
-      "statement_sha256": "e5729bafca35544f30ece88ece721c3a5f04ad6ef6a958d697f1688ae7296a32",
+      "reviewed_statement": "An integer $c\\geq 1$ is given. To each subset $A$ of the set $\\{1,2,\\ldots,n\\}$ we assign a number $w(A)$ from the set $\\{1,2,\\ldots,c\\}$ so that the following condition holds:\n$$w(A\\cap B)=\\min(w(A),w(B))\\quad\\text{for }A,B\\subset\\{1,2,\\ldots,n\\}.$$\nLet $a(n)$ be the number of such assignments. Compute $\\lim_{n\\to\\infty}\\sqrt[n]{a(n)}$.\n\nRemark. $\\min(x,y)$ is the smaller of the numbers $x$, $y$ (the not greater one).",
+      "statement_sha256": "70f2b264cff197f2ef126f00567228786f8a8cd6b492da022034dd7503864cf9",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "$k$ is a fixed positive integer. Let $a_n$ be the number of maps $f$ from the subsets of $\\{1,2,\\ldots,n\\}$ to $\\{1,2,\\ldots,k\\}$ such that $f(A\\cap B)=\\min(f(A),f(B))$ for all subsets $A,B$ of $\\{1,2,\\ldots,n\\}$. Find $\\lim_{n\\to\\infty}\\sqrt[n]{a_n}$.",
+          "statement_sha256": "e5729bafca35544f30ece88ece721c3a5f04ad6ef6a958d697f1688ae7296a32",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1994.2.4": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "$m,n$ are relatively prime positive integers. Three jugs hold $m$, $n$ and $m+n$ litres, and initially the largest jug is full of water. Prove that for every $k\\in\\{1,2,\\ldots,m+n\\}$ one can obtain exactly $k$ litres in one of the jugs.",
-      "statement_sha256": "321f1958634fcf03b22fe6961e05e857e05be5f931d1516fe2bb663dc15d7c3e",
+      "reviewed_statement": "We have three vessels without scales: an empty $m$-litre vessel, an empty $n$-litre vessel and an $(m+n)$-litre vessel filled with water. The numbers $m$ and $n$ are relatively prime positive integers. Prove that for every $k\\in\\{1,2,\\ldots,m+n-1\\}$ one can obtain, by pouring water, exactly $k$ litres of water in the third vessel.",
+      "statement_sha256": "bfa541001aa00a4f48d35486699846f397c099684f76bd9a70138f61fb8fba44",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "$m,n$ are relatively prime positive integers. Three jugs hold $m$, $n$ and $m+n$ litres, and initially the largest jug is full of water. Prove that for every $k\\in\\{1,2,\\ldots,m+n\\}$ one can obtain exactly $k$ litres in one of the jugs.",
+          "statement_sha256": "321f1958634fcf03b22fe6961e05e857e05be5f931d1516fe2bb663dc15d7c3e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1994.2.5": {
       "topics": [
@@ -109781,10 +110482,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p$ be a prime and define $x_i=i$ for $i=0,1,\\ldots,p-1$ and $x_n=x_{n-1}+x_{n-p}$ for $n\\geq p$. Find the remainder of $x_{p^3}$ upon division by $p$.",
-      "statement_sha256": "ec87ae4d0915a98596b8f88aadf5f94a5aedfd8ce945edba02d723465d65ee16",
+      "reviewed_statement": "A prime number $p\\geq 3$ is given. The sequence $(a_n)$ is defined by\n$$a_n=n\\ \\text{ for }n=0,1,2,\\ldots,p-1,\\qquad a_n=a_{n-1}+a_{n-p}\\ \\text{ for }n\\geq p.$$\nFind the remainder of $a_{p^3}$ upon division by $p$.",
+      "statement_sha256": "268675056e5149f793e96ba6bd457e9698fe058505de12520333cd6a43b3d4a7",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p$ be a prime and define $x_i=i$ for $i=0,1,\\ldots,p-1$ and $x_n=x_{n-1}+x_{n-p}$ for $n\\geq p$. Find the remainder of $x_{p^3}$ upon division by $p$.",
+          "statement_sha256": "ec87ae4d0915a98596b8f88aadf5f94a5aedfd8ce945edba02d723465d65ee16",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1995.2.4": {
       "topics": [
@@ -109799,19 +110512,43 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "An urn contains $n$ balls numbered $1,2,\\ldots,n$. Balls are drawn one by one without replacement until a ball with number divisible by $k$ appears. Find all $k$ for which the expected number of balls drawn is $k$.",
-      "statement_sha256": "d29db909b89977480a7256a9f8fb4c888298719eef9b58a8bdf9861e48bbec85",
+      "reviewed_statement": "Let $n$ and $k$ be positive integers. From an urn containing $n$ cards numbered $1$ to $n$ we draw cards one at a time without replacement. When a card whose number is divisible by $k$ appears, we stop drawing. For fixed $n$, determine those numbers $k\\leq n$ for which the expected number of cards drawn is exactly $k$.",
+      "statement_sha256": "ba6dc03567d46711948e3affded480e6b0e7c5f98255f6c0a132ad40b3456fa0",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "An urn contains $n$ balls numbered $1,2,\\ldots,n$. Balls are drawn one by one without replacement until a ball with number divisible by $k$ appears. Find all $k$ for which the expected number of balls drawn is $k$.",
+          "statement_sha256": "d29db909b89977480a7256a9f8fb4c888298719eef9b58a8bdf9861e48bbec85",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1995.2.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$PA$, $PB$, $PC$ are three rays in space (with $A$ a given point on the first ray). Prove that there is exactly one pair of points $B'$ on the ray $PB$ and $C'$ on the ray $PC$ such that $$PC'+B'C'=PA+AB'\\qquad\\text{and}\\qquad PB'+B'C'=PA+AC'.$$",
-      "statement_sha256": "3e2ec0731b03fe22093744536129d01114f0f88463ed40685d37b1eb4652cccc",
+      "reviewed_statement": "Three non-coplanar rays $k$, $l$, $m$ with common origin $P$ and a point $A\\neq P$ on $k$ are given. Prove that there exists exactly one pair of points $B$, $C$, lying on $l$ and $m$ respectively, such that\n$$|PA|+|AB|=|PC|+|CB|\\quad\\text{and}\\quad|PB|+|BC|=|PA|+|AC|.$$",
+      "statement_sha256": "ca32c3dd567cd34c940e8700cbd5a3823af136c3569e9e25b542fa884f3c2fff",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$PA$, $PB$, $PC$ are three rays in space (with $A$ a given point on the first ray). Prove that there is exactly one pair of points $B'$ on the ray $PB$ and $C'$ on the ray $PC$ such that $$PC'+B'C'=PA+AB'\\qquad\\text{and}\\qquad PB'+B'C'=PA+AC'.$$",
+          "statement_sha256": "3e2ec0731b03fe22093744536129d01114f0f88463ed40685d37b1eb4652cccc",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1999.1.1": {
       "topics": [
@@ -109826,46 +110563,106 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "$101$ distinct non-negative integers less than $5050$ are given. Prove that one can choose four of them, $a,b,c,d$, such that $a+b-c-d$ is a multiple of $5050$.",
-      "statement_sha256": "801648f4ff4ab04d59422a19339e39aee068a855ce8263b1429cc05ad167e081",
+      "reviewed_statement": "Non-negative integers $a_1 < a_2 < a_3 < \\ldots < a_{101}$ less than $5050$ are given. Prove that among them one can choose four distinct numbers $a_k, a_l, a_m, a_n$ such that the number $a_k + a_l - a_m - a_n$ is divisible by $5050$.",
+      "statement_sha256": "55675dd2c56bd63986c06cf84a26869720c41303d1197c0367791dce404adf86",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "$101$ distinct non-negative integers less than $5050$ are given. Prove that one can choose four of them, $a,b,c,d$, such that $a+b-c-d$ is a multiple of $5050$.",
+          "statement_sha256": "801648f4ff4ab04d59422a19339e39aee068a855ce8263b1429cc05ad167e081",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1999.1.3": {
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Prove that there are $50$ distinct positive integers such that every one of them has the same sum of itself and its digits.",
-      "statement_sha256": "931082a311af9b598cae21837204895e3ac656051e0af24d886e7478aa773d6c",
+      "reviewed_statement": "Prove that there exist positive integers $n_1 < n_2 < \\ldots < n_{50}$ such that $$n_1 + S(n_1) = n_2 + S(n_2) = n_3 + S(n_3) = \\ldots = n_{50} + S(n_{50}),$$ where $S(n)$ is the sum of the digits of the number $n$.",
+      "statement_sha256": "419e81558c9c224fc456c50b72676a4fc4eab9600bac6796ffcf58ebac96f02f",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Prove that there are $50$ distinct positive integers such that every one of them has the same sum of itself and its digits.",
+          "statement_sha256": "931082a311af9b598cae21837204895e3ac656051e0af24d886e7478aa773d6c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1999.2.4": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "For which $n$ does the system $$\\begin{cases}x_1^2+x_2^2+50=16x_1+12x_2\\\\ x_2^2+x_3^2+50=16x_2+12x_3\\\\ \\quad\\vdots\\\\ x_{n-1}^2+x_n^2+50=16x_{n-1}+12x_n\\\\ x_n^2+x_1^2+50=16x_n+12x_1\\end{cases}$$ have a solution in integers?",
-      "statement_sha256": "ef3c5df7bccd2786b3a0f5ed7f18356e0a453a2e8409e058ce5684cf851aed4e",
+      "reviewed_statement": "Determine for which positive integers $n \\ge 2$ the system of equations $$\\begin{cases} x_1^2 + x_2^2 + 50 = 16x_1 + 12x_2 \\\\ x_2^2 + x_3^2 + 50 = 16x_2 + 12x_3 \\\\ x_3^2 + x_4^2 + 50 = 16x_3 + 12x_4 \\\\ \\quad\\vdots \\\\ x_{n-1}^2 + x_n^2 + 50 = 16x_{n-1} + 12x_n \\\\ x_n^2 + x_1^2 + 50 = 16x_n + 12x_1 \\end{cases}$$ has a solution in integers $x_1, x_2, x_3, \\ldots, x_n$.",
+      "statement_sha256": "8a34a41925834bfe6a56893f213bc1e91bea8b6e52c200dd60f4c0867d6c44ad",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "For which $n$ does the system $$\\begin{cases}x_1^2+x_2^2+50=16x_1+12x_2\\\\ x_2^2+x_3^2+50=16x_2+12x_3\\\\ \\quad\\vdots\\\\ x_{n-1}^2+x_n^2+50=16x_{n-1}+12x_n\\\\ x_n^2+x_1^2+50=16x_n+12x_1\\end{cases}$$ have a solution in integers?",
+          "statement_sha256": "ef3c5df7bccd2786b3a0f5ed7f18356e0a453a2e8409e058ce5684cf851aed4e",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1999.2.5": {
       "topics": [
         "Algebra"
       ],
-      "reviewed_statement": "Prove that for any $2n$ real numbers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ $$\\sum_{i<j}|a_i-a_j|+\\sum_{i<j}|b_i-b_j|\\leq\\sum_{i,j=1}^n|a_i-b_j|.$$",
-      "statement_sha256": "a9a3993acbc06d7f3a41e0ce36ea5061e0e6d40d2625be10f69ae434b69dc555",
+      "reviewed_statement": "Let $a_1, a_2, \\ldots, a_n, b_1, b_2, \\ldots, b_n$ be integers. Prove that $$\\sum_{1 \\le i < j \\le n} \\bigl(|a_i - a_j| + |b_i - b_j|\\bigr) \\le \\sum_{1 \\le i, j \\le n} |a_i - b_j|.$$",
+      "statement_sha256": "8bce1aeb4cb016ed0764cdf078e46b2de8f3946d6a26adec80f2862a18e38a0d",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Algebra"
+          ],
+          "reviewed_statement": "Prove that for any $2n$ real numbers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ $$\\sum_{i<j}|a_i-a_j|+\\sum_{i<j}|b_i-b_j|\\leq\\sum_{i,j=1}^n|a_i-b_j|.$$",
+          "statement_sha256": "a9a3993acbc06d7f3a41e0ce36ea5061e0e6d40d2625be10f69ae434b69dc555",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "pl.1999.2.6": {
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$ABCDEF$ is a convex hexagon with $\\angle B+\\angle D+\\angle F=360^\\circ$ and $$\\frac{AB}{BC}\\cdot\\frac{CD}{DE}\\cdot\\frac{EF}{FA}=1.$$ Prove that $$\\frac{BC}{CA}\\cdot\\frac{AE}{EF}\\cdot\\frac{FD}{DB}=1.$$",
-      "statement_sha256": "9dd023ed9695653a53c1925607b5e3792c8a9e213d66f93b433e4058504d4d0f",
+      "reviewed_statement": "In a convex hexagon $ABCDEF$ the following equalities hold: $$\\angle A + \\angle C + \\angle E = 360^\\circ, \\qquad \\frac{AB}{BC} \\cdot \\frac{CD}{DE} \\cdot \\frac{EF}{FA} = 1.$$ Prove that $$\\frac{AB}{BF} \\cdot \\frac{FD}{DE} \\cdot \\frac{EC}{CA} = 1.$$",
+      "statement_sha256": "8edf6d96e49fa2bdcf1d673317ddc87857183968cf8037a1aa75bf1d4f916bff",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-14",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$ABCDEF$ is a convex hexagon with $\\angle B+\\angle D+\\angle F=360^\\circ$ and $$\\frac{AB}{BC}\\cdot\\frac{CD}{DE}\\cdot\\frac{EF}{FA}=1.$$ Prove that $$\\frac{BC}{CA}\\cdot\\frac{AE}{EF}\\cdot\\frac{FD}{DB}=1.$$",
+          "statement_sha256": "9dd023ed9695653a53c1925607b5e3792c8a9e213d66f93b433e4058504d4d0f",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful translation of the official Polish text (source check of 14 Oct 2026); topics re-reviewed, unchanged."
     },
     "cz.1952.0.1": {
       "topics": [
@@ -195599,6 +196396,111 @@
       ],
       "reviewed_statement": "Find the greatest real number $p$ and the least real number $q$ for which the inequalities $$p<\\frac{a+m_b}{b+m_a}<q$$ hold in an arbitrary triangle $ABC$ with sides $a$, $b$ and medians $m_a$, $m_b$.",
       "statement_sha256": "ad0de6a26dedb591b300dfbdc3d711b0572381eb7bbdad64b9cc4278ce0d004c",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1952.1.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Solve the system of equations $$\\left\\{\\begin{array}{l} xy(x-y)=ab(a-b)\\\\ x^3-y^3=a^3-b^3. \\end{array}\\right.$$",
+      "statement_sha256": "82622d7a1e2f0507f6bc122736fa6e62aa3795a3df9382e0d13dc1e890ef6d6b",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1952.1.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Points $M$, $N$, $P$ are chosen on the sides $BC$, $CA$, $AB$ of a triangle $ABC$, respectively, in such a way that $$\\frac{BM}{MC}=\\frac{CN}{NA}=\\frac{AP}{PB}=k,$$ where $k$ is a given number greater than $1$; then the segments $AM$, $BN$, $CP$ are drawn. Given the area $S$ of the triangle $ABC$, compute the area of the triangle bounded by the lines $AM$, $BN$ and $CP$.",
+      "statement_sha256": "2e85816597b61bd691cba609fb2e7b89d4389402545bf5e530cb432794f49fa5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1952.1.3": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Construct a quadrilateral $ABCD$, given the lengths of the sides $AB$ and $CD$ and the angles of the quadrilateral.",
+      "statement_sha256": "26315581da7679c3dcc3499ae864dfbd759110a4e1f7cfcf21cdf056eb6e5aa4",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1952.2.4": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Prove that if the angles $A$, $B$, $C$ of a triangle satisfy the equation $$\\cos 3A+\\cos 3B+\\cos 3C=1,$$ then one of these angles equals $120^\\circ$.",
+      "statement_sha256": "2509c6e00dd5eef764d47297655315996e93ac2b742bdd9a825eb3bb9a8224f5",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14",
+      "rationale": "Trigonometric identity for the angles of a triangle: algebraic manipulation of cosines of triangle angles."
+    },
+    "pl.1952.2.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that none of the digits $2$, $4$, $7$, $9$ can be the last digit of the number $$1+2+3+\\ldots+n,$$ where $n$ is a natural number.",
+      "statement_sha256": "e70eb7df42e9c6ab709f7d420215d8c39df1dd1d287e3844ec0dcc26d1de63ae",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1952.2.6": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "In a round tower with inner diameter $2$ m there is a spiral staircase of height $6$ m. The height of each step is $0.15$ m. In horizontal projection the steps form adjacent circular sectors with angle $18^\\circ$. The narrower ends of the steps are fixed in a round pillar of diameter $0.64$ m whose axis coincides with the axis of the tower. Compute the greatest length of a straight rod that can be carried along these stairs from the bottom to the top (disregard the thickness of the rod and the thickness of the slabs of which the stairs are made).",
+      "statement_sha256": "21f5c1266022be2a32d2d47ac4befc2ca49622f4a9905db0505783a8ef6dfaa1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1965.1.1": {
+      "topics": [
+        "Algebra",
+        "Geometry"
+      ],
+      "reviewed_statement": "Prove the theorem: the lengths $a$, $b$, $c$ of the sides of a triangle and the radian measures $\\alpha$, $\\beta$, $\\gamma$ of the opposite angles satisfy the inequalities $$\\frac{\\pi}{3}\\leq\\frac{a\\alpha+b\\beta+c\\gamma}{a+b+c}<\\frac{\\pi}{2}.$$",
+      "statement_sha256": "024ce3602155d1743b1cfb2f90e692953d90691b62a3246aa2599808b88212cb",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14",
+      "rationale": "Inequality between side lengths and angles of a triangle, proved with rearrangement-type algebraic estimates."
+    },
+    "pl.1965.1.2": {
+      "topics": [
+        "Algebra",
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that if the numbers $x_1$ and $x_2$ are the roots of the equation $x^2+px-1=0$, where $p$ is an odd number, then for every natural number $n$ the numbers $x_1^n+x_2^n$ and $x_1^{n+1}+x_2^{n+1}$ are integers and are relatively prime.",
+      "statement_sha256": "b79508887f2b762ac321b97138347e9b814b93020c7734665d8316591f42f009",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14",
+      "rationale": "Power sums of quadratic roots (algebraic recurrence) combined with integrality and coprimality."
+    },
+    "pl.1965.1.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "On a circle $n>2$ points are chosen and each of them is joined by a segment to every other one. Is it possible to draw all these segments in one continuous sequence, i.e. so that the end of the first segment is the beginning of the second, the end of the second is the beginning of the third, and so on, and moreover the end of the last segment is the beginning of the first?",
+      "statement_sha256": "613b190c014f3ec36f3820f856f647ecc1abc46ebb058b48f123b9dd606675b1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1965.2.4": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Prove that if integers $a$ and $b$ satisfy the equation $$2a^2+a=3b^2+b,$$ then the numbers $a-b$ and $2a+2b+1$ are squares of integers.",
+      "statement_sha256": "25c454a6754ff2a4cd47f0ad528af88ef9499c0f0568e84f9046e49214eb24c8",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-14"
+    },
+    "pl.1965.2.5": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "Points $A_1$, $B_1$, $C_1$ divide the sides $BC$, $CA$, $AB$ of a triangle $ABC$ in the ratios $k_1$, $k_2$, $k_3$, respectively. Compute the ratio of the areas of the triangles $A_1B_1C_1$ and $ABC$.",
+      "statement_sha256": "c6c6853d04bf10d1a7d1b5d4e00aa0903bf9cce319e8530030c19794ba2af812",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-14"
     }

@@ -27,7 +27,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Prove that the angles $A,B,C$ of a triangle satisfy $$\\sin^2A+\\sin^2B+\\sin^2C=2$$ if and only if the triangle is right-angled."
+          "problem": "Prove that if the angles $A$, $B$, $C$ of a triangle satisfy the equation $$\\sin^2 A+\\sin^2 B+\\sin^2 C=2,$$ then the triangle is right-angled."
         },
         {
           "day": 2,
@@ -68,6 +68,41 @@
           "day": 2,
           "number": 6,
           "problem": "A circle and a segment $MN$ are given. Find a point $C$ on the circle such that the triangle $ABC$, where $A$ and $B$ are the second intersection points of the lines $MC$ and $NC$ with the circle, is similar to the triangle $MNC$."
+        }
+      ]
+    },
+    {
+      "year": 1952,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Solve the system of equations $$\\left\\{\\begin{array}{l} xy(x-y)=ab(a-b)\\\\ x^3-y^3=a^3-b^3. \\end{array}\\right.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Points $M$, $N$, $P$ are chosen on the sides $BC$, $CA$, $AB$ of a triangle $ABC$, respectively, in such a way that $$\\frac{BM}{MC}=\\frac{CN}{NA}=\\frac{AP}{PB}=k,$$ where $k$ is a given number greater than $1$; then the segments $AM$, $BN$, $CP$ are drawn. Given the area $S$ of the triangle $ABC$, compute the area of the triangle bounded by the lines $AM$, $BN$ and $CP$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Construct a quadrilateral $ABCD$, given the lengths of the sides $AB$ and $CD$ and the angles of the quadrilateral."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that if the angles $A$, $B$, $C$ of a triangle satisfy the equation $$\\cos 3A+\\cos 3B+\\cos 3C=1,$$ then one of these angles equals $120^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that none of the digits $2$, $4$, $7$, $9$ can be the last digit of the number $$1+2+3+\\ldots+n,$$ where $n$ is a natural number."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a round tower with inner diameter $2$ m there is a spiral staircase of height $6$ m. The height of each step is $0.15$ m. In horizontal projection the steps form adjacent circular sectors with angle $18^\\circ$. The narrower ends of the steps are fixed in a round pillar of diameter $0.64$ m whose axis coincides with the axis of the tower. Compute the greatest length of a straight rod that can be carried along these stairs from the bottom to the top (disregard the thickness of the rod and the thickness of the slabs of which the stairs are made)."
         }
       ]
     },
@@ -287,7 +322,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Prove that for all non-negative numbers $a$ and $b$ $$\\frac{a+b}{2}\\cdot\\frac{a^2+b^2}{2}\\cdot\\frac{a^3+b^3}{2}\\leq\\frac{a^6+b^6}{2}.$$"
+          "problem": "Prove that for any numbers $a$ and $b$ the following inequality holds: $$\\frac{a+b}{2}\\cdot\\frac{a^2+b^2}{2}\\cdot\\frac{a^3+b^3}{2}\\leq\\frac{a^6+b^6}{2}.$$"
         },
         {
           "day": 1,
@@ -297,7 +332,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A pyramid with square base $ABCD$ and apex $S$ is given. Find the shortest path on its surface that starts and ends at $S$ and passes through all the vertices of the base."
+          "problem": "A pyramid with square base $ABCD$ and apex $S$ is given. Find the shortest path that starts and ends at the point $S$ and passes through all the vertices of the base."
         },
         {
           "day": 2,
@@ -492,6 +527,36 @@
       ]
     },
     {
+      "year": 1965,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove the theorem: the lengths $a$, $b$, $c$ of the sides of a triangle and the radian measures $\\alpha$, $\\beta$, $\\gamma$ of the opposite angles satisfy the inequalities $$\\frac{\\pi}{3}\\leq\\frac{a\\alpha+b\\beta+c\\gamma}{a+b+c}<\\frac{\\pi}{2}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove that if the numbers $x_1$ and $x_2$ are the roots of the equation $x^2+px-1=0$, where $p$ is an odd number, then for every natural number $n$ the numbers $x_1^n+x_2^n$ and $x_1^{n+1}+x_2^{n+1}$ are integers and are relatively prime."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "On a circle $n>2$ points are chosen and each of them is joined by a segment to every other one. Is it possible to draw all these segments in one continuous sequence, i.e. so that the end of the first segment is the beginning of the second, the end of the second is the beginning of the third, and so on, and moreover the end of the last segment is the beginning of the first?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that if integers $a$ and $b$ satisfy the equation $$2a^2+a=3b^2+b,$$ then the numbers $a-b$ and $2a+2b+1$ are squares of integers."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Points $A_1$, $B_1$, $C_1$ divide the sides $BC$, $CA$, $AB$ of a triangle $ABC$ in the ratios $k_1$, $k_2$, $k_3$, respectively. Compute the ratio of the areas of the triangles $A_1B_1C_1$ and $ABC$."
+        }
+      ]
+    },
+    {
       "year": 1966,
       "problems": [
         {
@@ -542,12 +607,12 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "There are $100$ people in a hall, each knowing at least $67$ of the others. Prove that there are always four of them who all know each other."
+          "problem": "There are $100$ people in a hall, each of whom knows at least $67$ of the others. Prove that in this hall there are four people any two of whom know each other. We assume that if a person $A$ knows a person $B$, then $B$ also knows $A$."
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "Prove that the polynomial $x^2+x+1$ divides $P_n(x)=x^{n+2}+(x+1)^{2n+1}$ for every integer $n\\geq 0$."
+          "problem": "Prove that the polynomial $x^2+x+1$ is a divisor of the polynomial $P_n(x)=x^{n+2}+(x+1)^{2n+1}$ for every integer $n\\geq 0$."
         },
         {
           "day": 2,
@@ -582,7 +647,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Given an integer $n>2$, give an example of $n$ distinct numbers $a_1,\\ldots,a_n$ for which the set of pairwise sums $a_i+a_j$ $(i\\neq j)$ has as few distinct elements as possible, and an example of $n$ distinct numbers $b_1,\\ldots,b_n$ for which the set of pairwise sums $b_i+b_j$ $(i\\neq j)$ has as many distinct elements as possible."
+          "problem": "A natural number $n>2$ is given. Give a set of $n$ natural numbers $a_1,a_2,\\ldots,a_n$ such that the set of sums $$a_i+a_j\\quad(i,j=1,2,\\ldots,n,\\ i\\neq j)$$ contains as few distinct numbers as possible, and a set of $n$ natural numbers $b_1,b_2,\\ldots,b_n$ such that the set of sums $$b_i+b_j\\quad(i,j=1,2,\\ldots,n,\\ i\\neq j)$$ contains as many distinct numbers as possible."
         },
         {
           "day": 2,
@@ -592,7 +657,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Consider a set of $n>3$ points in the plane, no three collinear, and a positive integer $k<n$. Prove that:\n\n(a) if $k\\leq\\frac{n}{2}$, each point can be joined by segments to at least $k$ other points so that no three segments form a triangle;\n\n(b) if $k>\\frac{n}{2}$ and each point is joined by segments to at least $k$ other points, then some three segments form a triangle."
+          "problem": "A set of $n>3$ points, no three of which are collinear, and a natural number $k<n$ are given. Prove the theorems:\n\n1. If $k\\leq\\frac{n}{2}$, then each point of the given set can be joined to at least $k$ other points of the set in such a way that among the drawn segments there are no three sides of one triangle.\n\n2. If $k>\\frac{n}{2}$ and each point of the given set is joined to $k$ other points of the set, then among the drawn segments there are three sides of one triangle."
         }
       ]
     },
@@ -642,7 +707,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Three sequences $(a_n)_{n\\geq 1}$, $(b_n)_{n\\geq 1}$, $(c_n)_{n\\geq 1}$ are given, each with pairwise distinct terms. Prove that there are indices $k<l$ such that $a_k<a_l$, $b_k<b_l$ and $c_k<c_l$."
+          "problem": "Three infinite sequences whose terms are natural numbers are given: $$a_1,a_2,\\ldots,\\qquad b_1,b_2,\\ldots,\\qquad c_1,c_2,\\ldots,$$ where, if $i\\neq j$, then $a_i\\neq a_j$, $b_i\\neq b_j$, $c_i\\neq c_j$. Prove that there exists a pair of indices $k$, $l$ such that $k<l$ and $a_k<a_l$, $b_k<b_l$, $c_k<c_l$."
         },
         {
           "day": 1,
@@ -677,7 +742,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "A billiard table has the shape of a triangle whose angles are in rational ratios. A ball at an interior point of the table is struck and reflects from the sides according to the law of reflection. Prove that the ball moves along only finitely many distinct segments. (Assume that the ball never reaches a vertex.)"
+          "problem": "On a billiard table in the shape of a triangle whose angles are commensurable, a ball is pushed from some interior point. The ball rebounds from the cushions according to the law \"the angle of incidence equals the angle of reflection\". Prove that the number of directions in which the ball can move is finite. (We assume that the ball does not hit a vertex of the triangle.)"
         },
         {
           "day": 1,
@@ -687,7 +752,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Prove that if positive integers $x,y,z$ satisfy $x^n+y^n=z^n$, then $\\min(x,y)\\geq n$."
+          "problem": "Prove that if natural numbers $x$, $y$, $z$, $n$ satisfy the equation $$x^n+y^n=z^n,$$ then $\\min(x,y)>n$."
         },
         {
           "day": 2,
@@ -697,7 +762,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "A regular tetrahedron with edge $1$ is given. The distance between two points of its surface $S$ is the length of the shortest polygonal line on $S$ joining them. Prove that:\n\n(a) there are four points of $S$ such that every point of the surface is at distance at most $\\frac{1}{2}$ from one of them;\n\n(b) there are no three points with this property."
+          "problem": "A regular tetrahedron with edge length $1$ is given. Prove that:\n\n1) On the surface $S$ of the tetrahedron there exist four points such that the distance of every point of the surface $S$ from one of these four points does not exceed $\\frac{1}{2}$.\n\n2) On the surface $S$ there do not exist three points with the analogous property.\n\nBy the distance between points belonging to $S$ we mean the infimum of the lengths of polygonal lines contained in $S$ joining these points."
         }
       ]
     },
@@ -707,7 +772,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The polynomials $u_i(x)=a_ix+b_i$ $(a_i,b_i\\in\\mathbb{R},\\ i=1,2,3)$ satisfy $$u_1(x)^n+u_2(x)^n=u_3(x)^n$$ for some integer $n\\geq 2$. Prove that there are real numbers $A,B,c_1,c_2,c_3$ such that $u_i(x)=c_i(Ax+B)$ for $i=1,2,3$."
+          "problem": "The polynomials $u_i(x)=a_ix+b_i$ ($a_i$, $b_i$ real numbers; $i=1,2,3$) satisfy, for some natural number $n>2$, the equation $$[u_1(x)]^n+[u_2(x)]^n=[u_3(x)]^n.$$ Prove that there exist real numbers $A$, $B$, $c_1$, $c_2$, $c_3$ such that $u_i(x)=c_i(Ax+B)$ for $i=1,2,3$."
         },
         {
           "day": 1,
@@ -722,7 +787,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Points $A$ and $B$ lie on a line having no common point with a sphere $K$. The foot $P$ of the perpendicular from the centre of $K$ to the line $AB$ lies between $A$ and $B$, and $AP$ and $BP$ both exceed the radius of $K$. Consider the set $Z$ of all triangles $ABC$ whose sides $AC$ and $BC$ are tangent to $K$. Prove that a triangle of $Z$ with maximal perimeter also has maximal area."
+          "problem": "Points $A$ and $B$ are given on a line that has no common points with a ball $K$. The orthogonal projection $P$ of the centre of $K$ onto the line $AB$ lies between $A$ and $B$, and $AP$ and $BP$ are greater than the radius of $K$. Consider the set $Z$ of triangles $ABC$ whose sides $AC$ and $BC$ are tangent to the ball $K$. Prove that $T$ is a triangle of greatest perimeter among the triangles of $Z$ if and only if $T$ is a triangle of greatest area among the triangles of $Z$."
         },
         {
           "day": 2,
@@ -732,7 +797,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Prove that the sum of the digits of $1972^n$ is unbounded as $n\\to\\infty$."
+          "problem": "Prove that the sum of the digits of the number $1972^n$ tends to infinity as $n$ tends to infinity."
         }
       ]
     },
@@ -752,7 +817,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A polyhedron $W$ has the following properties:\n\n(i) it has a centre of symmetry;\n\n(ii) the section of $W$ by any plane through the centre of symmetry and an edge of $W$ is a parallelogram;\n\n(iii) some vertex of $W$ belongs to exactly three edges.\n\nProve that $W$ is a parallelepiped."
+          "problem": "A polyhedron $W$ has the following properties:\n\na) it has a centre of symmetry;\n\nb) the common part of $W$ and any plane containing the centre of symmetry and any edge of the polyhedron is a parallelogram;\n\nc) there is a vertex of $W$ that belongs to exactly three edges.\n\nProve that $W$ is a parallelepiped."
         },
         {
           "day": 2,
@@ -762,12 +827,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Prove that every positive rational number $\\frac{m}{n}$ is a sum of reciprocals of distinct positive integers."
+          "problem": "Prove that every positive proper fraction $\\frac{m}{n}$ can be written as a finite sum of reciprocals of distinct positive integers."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Prove that for every centrally symmetric polygon there is at most one ellipse of minimal area containing the polygon."
+          "problem": "Prove that for every convex polygon having a centre of symmetry there is at most one ellipse of smallest area containing the polygon.\n\nRemark. The area of an ellipse with semi-axes of lengths $a$ and $b$ is $\\pi ab$."
         }
       ]
     },
@@ -782,7 +847,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "A salmon in a mountain river must pass two waterfalls. In each minute the probability that it passes the first waterfall is $p>0$ and the probability that it passes the second is $q>0$; these events are independent. Find the probability that the salmon has not passed the first waterfall within $n$ minutes, given that it has not passed both waterfalls within that time."
+          "problem": "Salmon swimming up a river must pass two waterfalls. The probability that a salmon passes the first waterfall in a given attempt is $p>0$, and the probability of passing the second waterfall in a given attempt is $q>0$. We assume that successive attempts at the waterfalls are independent. Compute the probability that the salmon does not pass the first waterfall in $n$ attempts, given that in $n$ attempts it does not pass both waterfalls."
         },
         {
           "day": 1,
@@ -802,7 +867,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Some diagonals of a convex $n$-gon are drawn, dividing it into triangles, so that:\n\n(i) an even number of the drawn diagonals issues from each vertex;\n\n(ii) no two of the diagonals have a common interior point.\n\nProve that $n$ is divisible by $3$."
+          "problem": "A convex $n$-gon is divided by diagonals into triangles in such a way that\n\n$1^\\circ$ an even number of diagonals issues from each vertex,\n\n$2^\\circ$ no two diagonals have a common interior point.\n\nProve that $n$ is divisible by $3$."
         }
       ]
     },
@@ -822,7 +887,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $0<u<1$. Find the least $\\alpha>0$ for which there is $\\beta>0$ such that $$(1+x)^u+(1-x)^u\\leq 2-\\frac{x^\\alpha}{\\beta}$$ for all $0<x<1$."
+          "problem": "Find the smallest positive number $\\alpha$ for which there exists a positive number $\\beta$ such that for every $x$ in the interval $(0,1]$\n$$\\sqrt{1+x}+\\sqrt{1-x}\\leq 2-\\frac{x^{\\alpha}}{\\beta}.$$\n\nFor the value of $\\alpha$ found, find the smallest positive number $\\beta$ satisfying this inequality."
         },
         {
           "day": 2,
@@ -832,7 +897,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Prove that there is a triangle with one angle equal to $a$, circumradius $R$ and inradius $r$ if and only if $$\\frac{2R}{r}\\geq\\frac{1}{\\sin\\frac{a}{2}\\left(1-\\sin\\frac{a}{2}\\right)}.$$"
+          "problem": "Prove that a triangle with an angle $\\alpha$ can be inscribed in a circle of radius $R$ and circumscribed about a circle of radius $r$ if and only if\n$$\\frac{2R}{r}\\geq\\frac{1}{\\sin\\frac{\\alpha}{2}\\left(1-\\sin\\frac{\\alpha}{2}\\right)}.$$"
         },
         {
           "day": 2,
@@ -852,7 +917,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Four sequences of real numbers $(a_n),(b_n),(c_n),(d_n)$ satisfy for all $n$ $$a_{n+1}=a_n+b_n,\\quad b_{n+1}=b_n+c_n,\\quad c_{n+1}=c_n+d_n,\\quad d_{n+1}=d_n+a_n.$$ Prove that if $a_{k+m}=a_m$, $b_{k+m}=b_m$, $c_{k+m}=c_m$, $d_{k+m}=d_m$ for some $k\\geq 1$, $m\\geq 1$, then $a_2=b_2=c_2=d_2=0$."
+          "problem": "Four sequences of real numbers $(a_n)$, $(b_n)$, $(c_n)$, $(d_n)$ are given such that for every $n$\n$$a_{n+1}=a_n+b_n,\\quad b_{n+1}=b_n+c_n,\\quad c_{n+1}=c_n+d_n,\\quad d_{n+1}=d_n+a_n.$$\nProve that if for some $k,m\\geq 1$ we have $a_{k+m}=a_m$, $b_{k+m}=b_m$, $c_{k+m}=c_m$, then $a_2=b_2=c_2=d_2=0$."
         },
         {
           "day": 1,
@@ -862,7 +927,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "The diagonals of a quadrilateral with sides $a,b,c,d$ are perpendicular. Prove that the diagonals of every other quadrilateral with sides $a,b,c,d$ are also perpendicular."
+          "problem": "The diagonals of a certain plane quadrilateral whose consecutive sides have lengths $a,b,c,d$ are perpendicular. Prove that the diagonals of every plane quadrilateral whose consecutive sides have lengths $a,b,c,d$ are perpendicular."
         },
         {
           "day": 2,
@@ -897,7 +962,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "A differentiable function $h:\\mathbb{R}\\to\\mathbb{R}$ satisfies $h(ax)=bh(x)$ for all $x$, where $a$ and $b$ are given numbers with $b>0$ and $0\\neq|a|\\neq 1$. Suppose that $h'(0)\\neq 0$ and $h'$ is continuous at $0$. Prove that $a=b$ and that there is a real number $c$ such that $h(x)=cx$ for all $x$."
+          "problem": "A function $h:\\mathbb{R}\\to\\mathbb{R}$ is differentiable and satisfies $h(ax)=bh(x)$ for every $x$, where $a$ and $b$ are fixed real numbers and $0\\neq|a|\\neq 1$. Moreover, $h'(0)\\neq 0$ and the function $h'$ is continuous at the point $x=0$.\n\nProve that $a=b$ and that there is a real number $c$ such that $h(x)=cx$."
         },
         {
           "day": 2,
@@ -917,7 +982,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "A ray of light reflects from the sides of a given angle, and a ray reaching the vertex of the angle is absorbed. Prove that there is a positive integer $n$ such that every ray is reflected at most $n$ times."
+          "problem": "Inside a given convex angle in the plane a ray of light travels, reflecting from the arms of the angle according to the law that the angle of incidence equals the angle of reflection. A ray that hits the vertex of the angle is absorbed. Prove that there is a positive integer $n$ such that every ray can be reflected from the arms of the angle at most $n$ times."
         },
         {
           "day": 1,
@@ -927,7 +992,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Prove that if $m$ is a positive integer and $P,Q,R$ are polynomials in $x,y$ of degree less than $m$ satisfying $$x^{2m}P(x,y)+y^{2m}Q(x,y)=(x+y)^{2m}R(x,y),$$ then all three polynomials are zero."
+          "problem": "Prove that if\n$$x^{2m}P(x,y)+y^{2m}Q(x,y)=(x+y)^{2m}R(x,y),$$\nwhere $m$ is a positive integer and $P,Q,R$ are polynomials of degrees less than $m$, then each of these polynomials is the zero polynomial.\n\nRemark. The degree of a non-zero polynomial $W(x,y)=\\sum a_{ij}x^iy^j$ is the largest integer $i+j$ for which $a_{ij}\\neq 0$. The degree of the zero polynomial is taken to be $0$."
         },
         {
           "day": 2,
@@ -937,7 +1002,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "For a real number $a$ define the sequence $(a_n)$ by $a_1=a$ and $$a_{n+1}=\\begin{cases}\\dfrac{1}{2}\\left(a_n-\\dfrac{1}{a_n}\\right)&\\text{if }a_n\\neq 0,\\\\ 0&\\text{if }a_n=0.\\end{cases}$$ Prove that the sequence contains infinitely many non-positive terms."
+          "problem": "A real number $a$ is given. The sequence $(a_n)$ is defined by $a_1=a$ and\n$$a_{n+1}=\\begin{cases}\\dfrac{1}{2}\\left(a_n-\\dfrac{1}{a_n}\\right)&\\text{if }a_n\\neq 0,\\\\ 0&\\text{if }a_n=0.\\end{cases}$$\nProve that the sequence $(a_n)$ has infinitely many non-negative terms and infinitely many non-positive terms."
         },
         {
           "day": 2,
@@ -972,12 +1037,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Prove that the product of the sides of a quadrilateral inscribed in a circle of radius $1$ does not exceed $4$."
+          "problem": "Prove that the product of the side lengths of a convex quadrilateral inscribed in a circle of radius $1$ is not greater than $4$."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "A polynomial $w$ of degree $n>1$ has $n$ distinct roots $x_1,x_2,\\ldots,x_n$. Prove that $$\\frac{1}{w'(x_1)}+\\frac{1}{w'(x_2)}+\\cdots+\\frac{1}{w'(x_n)}=0.$$"
+          "problem": "A polynomial $w$ of degree $n$ ($n>1$) has $n$ distinct real roots $x_1,x_2,\\ldots,x_n$. Prove that\n$$\\frac{1}{w'(x_1)}+\\frac{1}{w'(x_2)}+\\cdots+\\frac{1}{w'(x_n)}=0.$$"
         }
       ]
     },
@@ -987,7 +1052,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Find the area of an octagon inscribed in a circle, four of whose sides have length $1$ and the other four length $2$."
+          "problem": "Compute the area of an octagon inscribed in a circle, given that each of four consecutive sides of the octagon has length $1$ and each of the four remaining sides has length $2$."
         },
         {
           "day": 1,
@@ -1022,7 +1087,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Two intersecting lines $a$ and $b$ are given in a plane. Consider all pairs of perpendicular planes $\\alpha$, $\\beta$ with $a\\subset\\alpha$ and $b\\subset\\beta$. Prove that there is a circle each point of which lies on the line $\\alpha\\cap\\beta$ for some such $\\alpha$ and $\\beta$."
+          "problem": "Two intersecting lines $a$ and $b$ are given in space. Consider all pairs of perpendicular planes $\\alpha$ and $\\beta$ such that $a\\subset\\alpha$ and $b\\subset\\beta$. Prove that there is a circle such that through each of its points passes the line $\\alpha\\cap\\beta$ for some such $\\alpha,\\beta$."
         },
         {
           "day": 1,
@@ -1032,7 +1097,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Prove that for every positive integer $n$ and real numbers $a$ and $x$ with $0<a<1$ and $a^{n+1}\\leq x\\leq 1$ $$\\prod_{k=1}^n\\left|\\frac{x-a^k}{x+a^k}\\right|\\leq\\prod_{k=1}^n\\frac{1-a^k}{1+a^k}.$$"
+          "problem": "Prove that for every positive integer $n$ and real numbers $\\alpha$, $x$ satisfying $\\alpha^{n-1}\\leq x\\leq 1$ and $0<\\alpha<1$,\n$$\\prod_{k=1}^n\\left|\\frac{x-\\alpha^k}{x+\\alpha^k}\\right|\\leq\\prod_{k=1}^n\\frac{1-\\alpha^k}{1+\\alpha^k}.$$"
         },
         {
           "day": 2,
@@ -1072,7 +1137,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "A finite set of points is given in the plane. Prove that the points can be covered by open squares $Q_1,Q_2,\\ldots,Q_n$ such that $1\\leq\\frac{N_j}{S_j}\\leq 4$ for $j=1,\\ldots,n$, where $N_j$ is the number of points of the set in $Q_j$ and $S_j$ is the area of $Q_j$."
+          "problem": "A finite set of points is given in the plane. Prove that this set can be covered by disjoint open squares $Q_1,Q_2,\\ldots,Q_n$ such that\n$$1\\leq\\frac{N_j}{S_j}\\leq 4\\qquad(j=1,2,\\ldots,n),$$\nwhere $N_j$ is the number of points of the set lying in the square $Q_j$ and $S_j$ is the area of $Q_j$."
         },
         {
           "day": 2,
@@ -1127,7 +1192,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Find the number of functions $f$ mapping an $n$-element set into itself such that $f^{n-1}$ is constant but $f^{n-2}$ is not. Here $f^0(x)=x$ and $f^k=f\\circ f^{k-1}$ for $k\\geq 1$."
+          "problem": "Let $n>2$ be a fixed positive integer. Find the number of functions $f$ mapping an $n$-element set into itself such that $f^{n-1}$ is a constant function while $f^{n-2}$ is not a constant function, where $f^k=f\\circ f\\circ\\cdots\\circ f$ ($k$ times)."
         },
         {
           "day": 1,
@@ -1147,7 +1212,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A regular hexagon of side $1$ is covered by six unit discs. Prove that no vertex of the hexagon is covered by two or more discs."
+          "problem": "A regular hexagon with side $1$ is contained in the union of six discs of diameter $1$. Prove that none of the vertices of the hexagon belongs to two of these discs."
         },
         {
           "day": 2,
@@ -1167,7 +1232,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "A unit square and $2n$ positive reals $a_1,b_1,\\ldots,a_n,b_n$, each at most $1$, with $\\sum a_ib_i\\geq 100$ are given. Prove that the square can be covered by rectangles $R_i$ with sides $a_i,b_i$ parallel to the sides of the square."
+          "problem": "A square of side $1$ and positive numbers $a_1,b_1,a_2,b_2,\\ldots,a_n,b_n$, each not greater than $1$, are given such that $a_1b_1+a_2b_2+\\cdots+a_nb_n>100$. Prove that the square can be covered by rectangles $P_i$ ($i=1,2,\\ldots,n$) with sides of lengths $a_i,b_i$ parallel to the sides of the square."
         },
         {
           "day": 1,
@@ -1212,12 +1277,12 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Find all $n$ for which there is a real polynomial $f(x)$ of degree $n$ such that $f(x)\\geq f'(x)$ for all real $x$."
+          "problem": "Find the non-negative integers $n$ for which there exists a polynomial $f$ of degree $n$ with real coefficients such that $f(x)>f'(x)$ for every real $x$."
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "In a chess tournament with $2n$ players $(n>1)$ every two players meet at most once. Prove that if there are no three players who all played each other, then at most $n^2$ games were played. Conversely, prove that if $n^2$ games are to be played, they can be arranged so that no three players all play each other."
+          "problem": "In a chess tournament $2n$ ($n>1$) players take part, and any two of them play at most one game against each other. Prove that a course of the tournament in which no three participants play three games among themselves is possible if and only if the number of all games played in the tournament does not exceed $n^2$."
         },
         {
           "day": 2,
@@ -1232,17 +1297,17 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "$n\\geq 2$ points lie in a unit square. Prove that they can be labelled $P_1,P_2,\\ldots,P_n$ so that $$\\sum_{i=1}^n|P_{i-1}P_i|^2\\leq 4,$$ where $P_0=P_n$."
+          "problem": "There are $n$ points ($n>2$) in a square of side $1$. Prove that they can be numbered $P_1,P_2,\\ldots,P_n$ so that\n$$\\sum_{i=1}^n|P_{i-1}P_i|^2\\leq 4$$\n(where $P_0=P_n$)."
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "A regular $n$-gon is inscribed in a circle of radius $1$. Let $X$ be the set of all arcs $PQ$, where $P,Q$ are distinct vertices of the $n$-gon. Five elements $L_1,\\ldots,L_5$ of $X$ are chosen at random (not necessarily distinct). Prove that the expected length of $L_1\\cap L_2\\cap L_3\\cap L_4\\cap L_5$ does not depend on $n$."
+          "problem": "A regular $n$-gon is inscribed in a circle of length $1$. Among the arcs of the circle with endpoints at vertices of the polygon, five arcs $L_1,\\ldots,L_5$ are drawn with replacement, every arc having the same probability of being drawn. Prove that the expected value of the length of the common part $L_1\\cap L_2\\cap L_3\\cap L_4\\cap L_5$ does not depend on $n$."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "$w(x)$ is a polynomial with integer coefficients, and $p_n$ is the sum of the digits of $w(n)$. Prove that some value occurs infinitely often in the sequence $p_1,p_2,p_3,\\ldots$"
+          "problem": "A polynomial $W$ with non-negative integer coefficients is given. Define the sequence $(p_n)$, where $p_n$ is the sum of the digits of the number $W(n)$. Prove that some number occurs infinitely many times in the sequence $(p_n)$."
         },
         {
           "day": 2,
@@ -1267,7 +1332,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The real numbers $x_1,x_2,\\ldots,x_n$ belong to $(0,1)$ and $x_1+x_2+\\cdots+x_n=m+r$, where $m$ is an integer and $r\\in[0,1)$. Prove that $x_1^2+x_2^2+\\cdots+x_n^2\\leq m+r^2$."
+          "problem": "Numbers $x_1,x_2,\\ldots,x_n$ belonging to the interval $[0,1]$ satisfy\n$$\\sum_{i=1}^n x_i=m+r,$$\nwhere $m$ is an integer and $r\\in[0,1)$. Prove that\n$$\\sum_{i=1}^n x_i^2\\leq m+r^2.$$"
         },
         {
           "day": 1,
@@ -1277,7 +1342,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "$W$ is a polygon with a centre of symmetry $S$ (if $P$ belongs to $W$, so does the point $P'$ for which $S$ is the midpoint of $PP'$). Prove that there is a parallelogram $V$ containing $W$ such that the midpoint of each side of $V$ lies on the boundary of $W$."
+          "problem": "Let $W$ be a polygon (not necessarily convex) having a centre of symmetry. Prove that there is a parallelogram containing $W$ such that the midpoints of the sides of this parallelogram belong to the boundary of $W$."
         },
         {
           "day": 2,
@@ -1312,7 +1377,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "The edges of a cube are labelled $1$ to $12$. Prove that there are at least eight triples $(i,j,k)$ with $1\\leq i<j<k\\leq 12$ such that the edges $i,j,k$ are consecutive edges of a path, and that there is a labelling for which there are no nine such triples."
+          "problem": "The edges of a cube are numbered with the numbers from $1$ to $12$.\n\n(a) Prove that for every numbering there exist at least eight triples of integers $(i,j,k)$, where $1\\leq i<j<k\\leq 12$, such that the edges numbered $i,j,k$ are consecutive sides of a broken line.\n\n(b) Give an example of a numbering for which there do not exist nine triples with the properties stated in (a)."
         },
         {
           "day": 2,
@@ -1322,12 +1387,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Three circles of radius $a$ are drawn on a sphere of radius $r$. Any two of them touch externally, and all three lie in one hemisphere. Find the radius of a circle on the sphere that touches all three."
+          "problem": "On a sphere of radius $r$ there are three circles of radius $a$, pairwise tangent and contained in one hemisphere. Find the radius of a circle lying on the same sphere and tangent to each of these three circles.\n\nRemark. As in the plane, two circles lying on a sphere are called tangent if they have exactly one common point."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Prove that for positive reals $a,b,c,d$ $$\\left(\\frac{ab+ac+ad+bc+bd+cd}{6}\\right)^3\\geq\\left(\\frac{abc+abd+acd+bcd}{4}\\right)^2.$$"
+          "problem": "Prove that for all positive numbers $a,b,c,d$\n$$\\sqrt{\\frac{ab+ac+ad+bc+bd+cd}{6}}\\geq\\sqrt[3]{\\frac{abc+abd+acd+bcd}{4}}.$$"
         }
       ]
     },
@@ -1342,7 +1407,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $x_1,x_2,\\ldots,x_n$ be positive numbers, $x_{n+1}=x_1$, $x_{n+2}=x_2$. Prove that $$\\sum_{i=1}^n\\frac{x_i^2}{x_i^2+x_{i+1}x_{i+2}}\\leq n-1.$$"
+          "problem": "Prove that if $n$ is a positive integer greater than $2$ and $x_1,x_2,\\ldots,x_n$ are positive real numbers, then\n$$\\frac{x_1^2}{x_1^2+x_2x_3}+\\frac{x_2^2}{x_2^2+x_3x_4}+\\cdots+\\frac{x_n^2}{x_n^2+x_1x_2}\\leq n-1.$$"
         },
         {
           "day": 1,
@@ -1352,7 +1417,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "A triangle all of whose sides have length at least $1$ is inscribed in a square of side $1$. Prove that the centre of the square lies inside the triangle or on its boundary."
+          "problem": "A triangle each of whose sides has length not less than $1$ is drawn inside a square of side $1$. Prove that the centre of the square belongs to the triangle."
         },
         {
           "day": 2,
@@ -1382,7 +1447,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $$N=\\sum_{k=1}^{60}e_kk^{k^k},$$ where $e_k\\in\\{-1,1\\}$ for each $k$. Prove that $N$ is not the fifth power of an integer."
+          "problem": "Let $N$ be any number of the form\n$$N=\\sum_{k=1}^{60}\\varepsilon_k\\cdot k^{k^k},$$\nwhere each of the coefficients $\\varepsilon_1,\\ldots,\\varepsilon_{60}$ equals $1$ or $-1$. Prove that $N$ is not the fifth power of any positive integer.\n\nRemark. $k^{k^k}=k^{(k^k)}$."
         },
         {
           "day": 2,
@@ -1417,7 +1482,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Prove that for all real numbers $x_1,x_2,\\ldots,x_n$ $$\\sum_{i=1}^n\\sum_{j=1}^n\\frac{x_ix_j}{i+j}\\geq 0.$$ When does equality hold?"
+          "problem": "Prove that for any real numbers $a_1,a_2,\\ldots,a_r$\n$$\\sum_{n=1}^r\\left(\\sum_{m=1}^r\\frac{a_ma_n}{m+n}\\right)\\geq 0.$$\nDetermine for which numbers $a_1,a_2,\\ldots,a_r$ this inequality becomes an equality."
         },
         {
           "day": 2,
@@ -1447,12 +1512,12 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "A circle with centre $O$ is inscribed in a quadrilateral $ABCD$ in which $AB$ is parallel to and longer than $CD$; $M$ is the midpoint of $AB$. The line $OM$ meets $CD$ at $F$, and $CD$ touches the circle at $E$. Prove that $DE=CF$ if and only if $AB=2CD$."
+          "problem": "The point $O$ is the centre of the circle $k$ inscribed in a non-isosceles trapezoid $ABCD$ whose longer base $AB$ has midpoint $M$. The shorter base $CD$ touches $k$ at $E$, and the line $OM$ meets the base $CD$ at $F$. Prove that $|DE|=|FC|$ if and only if $|AB|=2\\cdot|CD|$."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $g(k)$ be the greatest odd divisor of $k$. Put $f(k)=\\frac{k}{2}+\\frac{k}{g(k)}$ for even $k$ and $f(k)=2^{(k+1)/2}$ for odd $k$. The sequence $(x_n)$ is defined by $x_1=1$ and $x_{n+1}=f(x_n)$. Find $n$ such that $x_n=800$."
+          "problem": "Let $g(k)$ denote the greatest odd divisor of a positive integer $k$, and put\n$$f(k)=\\begin{cases}\\dfrac{k}{2}+\\dfrac{k}{g(k)}&\\text{for even }k,\\\\ 2^{(k+1)/2}&\\text{for odd }k.\\end{cases}$$\nThe sequence $(x_n)$ is defined by $x_1=1$, $x_{n+1}=f(x_n)$. Prove that the number $800$ occurs among the terms of this sequence exactly once. Find $n$ for which $x_n=800$."
         },
         {
           "day": 2,
@@ -1487,12 +1552,12 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "$k$ is a fixed positive integer. Let $a_n$ be the number of maps $f$ from the subsets of $\\{1,2,\\ldots,n\\}$ to $\\{1,2,\\ldots,k\\}$ such that $f(A\\cap B)=\\min(f(A),f(B))$ for all subsets $A,B$ of $\\{1,2,\\ldots,n\\}$. Find $\\lim_{n\\to\\infty}\\sqrt[n]{a_n}$."
+          "problem": "An integer $c\\geq 1$ is given. To each subset $A$ of the set $\\{1,2,\\ldots,n\\}$ we assign a number $w(A)$ from the set $\\{1,2,\\ldots,c\\}$ so that the following condition holds:\n$$w(A\\cap B)=\\min(w(A),w(B))\\quad\\text{for }A,B\\subset\\{1,2,\\ldots,n\\}.$$\nLet $a(n)$ be the number of such assignments. Compute $\\lim_{n\\to\\infty}\\sqrt[n]{a(n)}$.\n\nRemark. $\\min(x,y)$ is the smaller of the numbers $x$, $y$ (the not greater one)."
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "$m,n$ are relatively prime positive integers. Three jugs hold $m$, $n$ and $m+n$ litres, and initially the largest jug is full of water. Prove that for every $k\\in\\{1,2,\\ldots,m+n\\}$ one can obtain exactly $k$ litres in one of the jugs."
+          "problem": "We have three vessels without scales: an empty $m$-litre vessel, an empty $n$-litre vessel and an $(m+n)$-litre vessel filled with water. The numbers $m$ and $n$ are relatively prime positive integers. Prove that for every $k\\in\\{1,2,\\ldots,m+n-1\\}$ one can obtain, by pouring water, exactly $k$ litres of water in the third vessel."
         },
         {
           "day": 2,
@@ -1522,7 +1587,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $p$ be a prime and define $x_i=i$ for $i=0,1,\\ldots,p-1$ and $x_n=x_{n-1}+x_{n-p}$ for $n\\geq p$. Find the remainder of $x_{p^3}$ upon division by $p$."
+          "problem": "A prime number $p\\geq 3$ is given. The sequence $(a_n)$ is defined by\n$$a_n=n\\ \\text{ for }n=0,1,2,\\ldots,p-1,\\qquad a_n=a_{n-1}+a_{n-p}\\ \\text{ for }n\\geq p.$$\nFind the remainder of $a_{p^3}$ upon division by $p$."
         },
         {
           "day": 2,
@@ -1532,12 +1597,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "An urn contains $n$ balls numbered $1,2,\\ldots,n$. Balls are drawn one by one without replacement until a ball with number divisible by $k$ appears. Find all $k$ for which the expected number of balls drawn is $k$."
+          "problem": "Let $n$ and $k$ be positive integers. From an urn containing $n$ cards numbered $1$ to $n$ we draw cards one at a time without replacement. When a card whose number is divisible by $k$ appears, we stop drawing. For fixed $n$, determine those numbers $k\\leq n$ for which the expected number of cards drawn is exactly $k$."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "$PA$, $PB$, $PC$ are three rays in space (with $A$ a given point on the first ray). Prove that there is exactly one pair of points $B'$ on the ray $PB$ and $C'$ on the ray $PC$ such that $$PC'+B'C'=PA+AB'\\qquad\\text{and}\\qquad PB'+B'C'=PA+AC'.$$"
+          "problem": "Three non-coplanar rays $k$, $l$, $m$ with common origin $P$ and a point $A\\neq P$ on $k$ are given. Prove that there exists exactly one pair of points $B$, $C$, lying on $l$ and $m$ respectively, such that\n$$|PA|+|AB|=|PC|+|CB|\\quad\\text{and}\\quad|PB|+|BC|=|PA|+|AC|.$$"
         }
       ]
     },
@@ -1642,7 +1707,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "We consider in the plane the unit squares whose vertices both have integer coordinates. Let $S$ be the chessboard whose cells are all the unit squares contained in the disc determined by the inequality $x^2 + y^2 \\le 1998^2$. In every cell of the chessboard we write the number $+1$. We perform a sequence of operations. Each of them consists in choosing an arbitrary horizontal, vertical or diagonal row and changing the signs of all the numbers written in the cells of the chosen row. (A diagonal row is formed by all cells of the chessboard $S$ whose centres lie on some line intersecting the coordinate axes at an angle of $45^\\circ$.) Decide whether in this way one can reach a situation in which one cell contains the number $-1$ and all the remaining cells contain $+1$."
+          "problem": "We consider in the plane the unit squares all of whose vertices have both coordinates integral. Let $S$ be the chessboard whose cells are all the unit squares contained in the disc determined by the inequality $x^2 + y^2 \\le 1998^2$. In every cell of the chessboard we write the number $+1$. We perform a sequence of operations. Each of them consists in choosing an arbitrary horizontal, vertical or diagonal row and changing the signs of all the numbers written in the cells of the chosen row. (A diagonal row is formed by all cells of the chessboard $S$ whose centres lie on some line intersecting the coordinate axes at an angle of $45^\\circ$.) Decide whether in this way one can reach a situation in which one cell contains the number $-1$ and all the remaining cells contain $+1$."
         }
       ]
     },
@@ -1657,27 +1722,27 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "$101$ distinct non-negative integers less than $5050$ are given. Prove that one can choose four of them, $a,b,c,d$, such that $a+b-c-d$ is a multiple of $5050$."
+          "problem": "Non-negative integers $a_1 < a_2 < a_3 < \\ldots < a_{101}$ less than $5050$ are given. Prove that among them one can choose four distinct numbers $a_k, a_l, a_m, a_n$ such that the number $a_k + a_l - a_m - a_n$ is divisible by $5050$."
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Prove that there are $50$ distinct positive integers such that every one of them has the same sum of itself and its digits."
+          "problem": "Prove that there exist positive integers $n_1 < n_2 < \\ldots < n_{50}$ such that $$n_1 + S(n_1) = n_2 + S(n_2) = n_3 + S(n_3) = \\ldots = n_{50} + S(n_{50}),$$ where $S(n)$ is the sum of the digits of the number $n$."
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "For which $n$ does the system $$\\begin{cases}x_1^2+x_2^2+50=16x_1+12x_2\\\\ x_2^2+x_3^2+50=16x_2+12x_3\\\\ \\quad\\vdots\\\\ x_{n-1}^2+x_n^2+50=16x_{n-1}+12x_n\\\\ x_n^2+x_1^2+50=16x_n+12x_1\\end{cases}$$ have a solution in integers?"
+          "problem": "Determine for which positive integers $n \\ge 2$ the system of equations $$\\begin{cases} x_1^2 + x_2^2 + 50 = 16x_1 + 12x_2 \\\\ x_2^2 + x_3^2 + 50 = 16x_2 + 12x_3 \\\\ x_3^2 + x_4^2 + 50 = 16x_3 + 12x_4 \\\\ \\quad\\vdots \\\\ x_{n-1}^2 + x_n^2 + 50 = 16x_{n-1} + 12x_n \\\\ x_n^2 + x_1^2 + 50 = 16x_n + 12x_1 \\end{cases}$$ has a solution in integers $x_1, x_2, x_3, \\ldots, x_n$."
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "Prove that for any $2n$ real numbers $a_1,\\ldots,a_n,b_1,\\ldots,b_n$ $$\\sum_{i<j}|a_i-a_j|+\\sum_{i<j}|b_i-b_j|\\leq\\sum_{i,j=1}^n|a_i-b_j|.$$"
+          "problem": "Let $a_1, a_2, \\ldots, a_n, b_1, b_2, \\ldots, b_n$ be integers. Prove that $$\\sum_{1 \\le i < j \\le n} \\bigl(|a_i - a_j| + |b_i - b_j|\\bigr) \\le \\sum_{1 \\le i, j \\le n} |a_i - b_j|.$$"
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "$ABCDEF$ is a convex hexagon with $\\angle B+\\angle D+\\angle F=360^\\circ$ and $$\\frac{AB}{BC}\\cdot\\frac{CD}{DE}\\cdot\\frac{EF}{FA}=1.$$ Prove that $$\\frac{BC}{CA}\\cdot\\frac{AE}{EF}\\cdot\\frac{FD}{DB}=1.$$"
+          "problem": "In a convex hexagon $ABCDEF$ the following equalities hold: $$\\angle A + \\angle C + \\angle E = 360^\\circ, \\qquad \\frac{AB}{BC} \\cdot \\frac{CD}{DE} \\cdot \\frac{EF}{FA} = 1.$$ Prove that $$\\frac{AB}{BF} \\cdot \\frac{FD}{DE} \\cdot \\frac{EC}{CA} = 1.$$"
         }
       ]
     },
@@ -2287,7 +2352,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "A sequence $(a_1, a_2, \\dots, a_k)$ consisting of pairwise distinct cells of an $n \\times n$ chessboard is called a cycle if $k \\ge 4$ and the cells $a_i$ and $a_{i+1}$ share a common side for all $i = 1, 2, \\dots, k$, where $a_{k+1} = a_1$. A subset $X$ of the cells of this chessboard is called malicious if every cycle on it contains at least one cell belonging to $X$. Determine all real numbers $C$ with the following property: for every integer $n \\ge 2$ there exists on the $n \\times n$ chessboard a malicious subset consisting of at most $Cn^2$ cells."
+          "problem": "A sequence $(a_1, a_2, \\dots, a_k)$ consisting of pairwise distinct cells of an $n \\times n$ chessboard is called a cycle if $k \\ge 4$ and the cells $a_i$ and $a_{i+1}$ share a common side for all $i = 1, 2, \\dots, k$, where $a_{k+1} = a_1$. A subset $X$ of the cells of this chessboard is called malicious if every cycle on this chessboard contains at least one cell belonging to $X$. Determine all real numbers $C$ with the following property: for every integer $n \\ge 2$ there exists on the $n \\times n$ chessboard a malicious subset consisting of at most $Cn^2$ cells."
         },
         {
           "day": 1,
@@ -2412,7 +2477,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "An integer $d \\ge 2$ and a circle $\\omega$ are given. Jaś drew some finite number of chords of the circle $\\omega$. The following condition is satisfied: each endpoint of each drawn chord is an endpoint of at least $d$ different drawn chords. Prove that there exists a drawn chord which intersects at least $\\frac{d^2}{4}$ other drawn chords. We assume that chords with a common endpoint intersect. Note: A proof that some drawn chord intersects at least $\\frac{d^2}{8}$ other drawn chords will be awarded two points."
+          "problem": "An integer $d \\ge 2$ and a circle $\\omega$ are given. Jaś drew some finite number of chords of the circle $\\omega$. The following condition is satisfied: each endpoint of each drawn chord is an endpoint of at least $d$ different drawn chords. Prove that there exists a drawn chord which intersects at least $\\frac{d^2}{4}$ other drawn chords. We assume that chords with a common endpoint intersect."
         }
       ]
     },
@@ -2512,7 +2577,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "An integer $n \\ge 2024$ and a sequence of real numbers $a_1, a_2, \\dots, a_{n^2}$ are given satisfying the conditions $$|a_k - a_{k-1}| \\le \\frac{1}{k} \\qquad\\text{and}\\qquad |a_1 + a_2 + \\dots + a_k| \\le 1$$ for $k = 2, 3, \\dots, n^2$. Prove that $$|a_{n(n-1)}| \\le \\frac{2}{n}.$$ Note: A proof of the inequality $|a_{n(n-1)}| \\le \\frac{75}{n}$ will be awarded two points."
+          "problem": "An integer $n \\ge 2024$ and a sequence of real numbers $a_1, a_2, \\dots, a_{n^2}$ are given satisfying the conditions $$|a_k - a_{k-1}| \\le \\frac{1}{k} \\qquad\\text{and}\\qquad |a_1 + a_2 + \\dots + a_k| \\le 1$$ for $k = 2, 3, \\dots, n^2$. Prove that $$|a_{n(n-1)}| \\le \\frac{2}{n}.$$"
         },
         {
           "day": 2,
