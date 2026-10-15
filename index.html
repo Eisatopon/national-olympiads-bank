@@ -993,8 +993,8 @@ const COUNTRIES = [
     { key: 'srmc', name: 'Silk Road', flag: '🌏', file: 'Silk-Road-problems.json', kind: 'years', scope: 'regional', full: 'Silk Road Mathematics Competition' },
     { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
     { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
-    { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'tournaments' },
-    { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'tournaments' },
+    { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'kangaroo' },
+    { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'omcc', name: 'Centroamerican MO', flag: '🌎', file: 'Centroamerican-omcc-problems.json', kind: 'years', scope: 'regional', full: 'Centroamerican and Caribbean Mathematical Olympiad' },
     { key: 'kg', name: 'Kyrgyzstan Republican Final', flag: '🇰🇬', file: 'Kyrgyzstan-republican-problems.json', kind: 'years' },
     { key: 'py', name: 'Paraguay OMAPA (Level 3)', flag: '🇵🇾', file: 'Paraguay-omapa-problems.json', kind: 'years' },
@@ -1011,7 +1011,7 @@ const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
 /* Five sections: the four established problem grids plus the university competition
    competition grid. University competition eligibility and paper variants are recorded
    independently in metadata/undergraduate-competitions.json. */
-const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments'], ['undergraduate', 'Undergraduate']];
+const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments'], ['kangaroo', 'Kangaroo'], ['amc', 'USA AMC'], ['undergraduate', 'Undergraduate']];
 const scopeOf = c => c.scope || 'national';
 const tabRows = () => COUNTRIES.filter(c => scopeOf(c) === state.tab);
 
@@ -1614,7 +1614,8 @@ function scopeTitle() {
     if (state.country && state.year !== null) return [`${CBY[state.country].flag} ${CBY[state.country].name} ${state.year}`, CBY[state.country].full || ''];
     if (state.country) return [`${CBY[state.country].flag} ${CBY[state.country].name}`, CBY[state.country].full ? `${CBY[state.country].full} · All years` : 'All years'];
     const nat = state.tab === 'national';
-    const label = (TABS.find(([k]) => k === state.tab) || TABS[0])[1].toLowerCase();
+    const tabLabel = (TABS.find(([k]) => k === state.tab) || TABS[0])[1];
+    const label = ['kangaroo', 'amc'].includes(state.tab) ? tabLabel : tabLabel.toLowerCase();
     if (state.year !== null) return [String(state.year), nat ? 'All countries' : `All ${label} competitions`];
     return [nat ? 'All problems' : `All ${label} problems`, nat ? 'Every country, every year' : 'Every competition, every year'];
 }
