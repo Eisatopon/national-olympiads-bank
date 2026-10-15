@@ -1,0 +1,605 @@
+{
+  "competition": "Romanian Masters of Mathematics",
+  "years": [
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be an equilateral triangle and $P$ in its interior. The distances from $P$ to the triangle's sides are denoted by $a^2, b^2, c^2$ respectively, where $a, b, c > 0$. Find the locus of the points $P$ for which $a, b, c$ can be the sides of a non-degenerate triangle."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that every bijective function $f : \\mathbb{Z} \\to \\mathbb{Z}$ can be written in the way $f = u + v$ where $u, v : \\mathbb{Z} \\to \\mathbb{Z}$ are bijective functions."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a > 1$ be a positive integer. Prove that every non-zero positive integer $N$ has a multiple in the sequence $(a_n)_{n \\ge 1}$, $a_n = \\left\\lfloor \\frac{a^n}{n} \\right\\rfloor$."
+        },
+        {
+          "number": 4,
+          "problem": "Consider a square of sidelength $n$ and $(n+1)^2$ interior points. Prove that we can choose $3$ of these points so that they determine a triangle (eventually degenerated) of area at most $\\frac{1}{2}$."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For positive integers $a_1, \\ldots, a_k$, let $n = \\sum_{i=1}^{k} a_i$, and let $\\binom{n}{a_1, \\ldots, a_k}$ be the multinomial coefficient $\\dfrac{n!}{\\prod_{i=1}^{k} (a_i!)}$.\n\nLet $d = \\gcd(a_1, \\ldots, a_k)$ denote the greatest common divisor of $a_1, \\ldots, a_k$. Prove that $\\dfrac{d}{n}\\binom{n}{a_1, \\ldots, a_k}$ is an integer."
+        },
+        {
+          "number": 2,
+          "problem": "A set $S$ of points in space satisfies the property that all pairwise distances between points in $S$ are distinct. Given that all points in $S$ have integer coordinates $(x, y, z)$, where $1 \\le x, y, z \\le n$, show that the number of points in $S$ is less than $\\min\\left((n+2)\\sqrt{n/3},\\ n\\sqrt{6}\\right)$."
+        },
+        {
+          "number": 3,
+          "problem": "Given four points $A_1, A_2, A_3, A_4$ in the plane, no three collinear, such that\n$$A_1A_2 \\cdot A_3A_4 = A_1A_3 \\cdot A_2A_4 = A_1A_4 \\cdot A_2A_3,$$\ndenote by $O_i$ the circumcenter of $\\triangle A_jA_kA_\\ell$, with $\\{i, j, k, \\ell\\} = \\{1, 2, 3, 4\\}$.\n\nAssuming $A_i \\ne O_i$ for all indices $i$, prove that the four lines $A_iO_i$ are concurrent or parallel."
+        },
+        {
+          "number": 4,
+          "problem": "For a finite set $X$ of positive integers, let\n$$\\Sigma(X) = \\sum_{x \\in X} \\arctan \\frac{1}{x}.$$\nGiven a finite set $S$ of positive integers for which $\\Sigma(S) < \\frac{\\pi}{2}$, show that there exists at least one finite set $T$ of positive integers for which\n$$S \\subset T \\text{ and } \\Sigma(T) = \\frac{\\pi}{2}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a finite non-empty set of primes $P$, let $m(P)$ be the largest possible number of consecutive positive integers, each of which is divisible by at least one member of $P$.\n\n(i) Show that $|P| \\le m(P)$, with equality if and only if $\\min(P) > |P|$;\n\n(ii) Show that $m(P) < (|P| + 1)(2^{|P|} - 1)$.\n\n(The number $|P|$ is the size of the set $P$.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For each positive integer $n$, find the largest real number $C_n$ with the following property. Given any $n$ real-valued functions $f_1(x), f_2(x), \\ldots, f_n(x)$ defined on the closed interval $0 \\le x \\le 1$, one can find numbers $x_1, x_2, \\ldots, x_n$, such that $0 \\le x_i \\le 1$, satisfying\n$$\\left|f_1(x_1) + f_2(x_2) + \\cdots + f_n(x_n) - x_1x_2\\cdots x_n\\right| \\ge C_n.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A_1A_2A_3A_4$ be a convex quadrilateral with no pair of parallel sides. For each $i = 1, 2, 3, 4$, define $\\omega_i$ to be the circle touching the quadrilateral externally, and which is tangent to the lines $A_{i-1}A_i$, $A_iA_{i+1}$ and $A_{i+1}A_{i+2}$ (indices are considered modulo $4$, so $A_0 = A_4$, $A_5 = A_1$ and $A_6 = A_2$). Let $T_i$ be the point of tangency of $\\omega_i$ with the side $A_iA_{i+1}$. Prove that the lines $A_1A_2$, $A_3A_4$ and $T_2T_4$ are concurrent if and only if the lines $A_2A_3$, $A_4A_1$ and $T_1T_3$ are concurrent."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine whether there exist a polynomial $f(x_1, x_2)$ in two variables, with integer coefficients, and two points $A = (a_1, a_2)$ and $B = (b_1, b_2)$ in the plane, satisfying all the following conditions:\n\n(i) $A$ is an integer point (i.e., $a_1$ and $a_2$ are integers);\n\n(ii) $|a_1 - b_1| + |a_2 - b_2| = 2010$;\n\n(iii) $f(n_1, n_2) > f(a_1, a_2)$, for all integer points $(n_1, n_2)$ in the plane other than $A$;\n\n(iv) $f(x_1, x_2) > f(b_1, b_2)$, for all points $(x_1, x_2)$ in the plane other than $B$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a given positive integer. Say that a set $K$ of points with integer coordinates in the plane is connected if for every pair of points $R, S \\in K$, there exist a positive integer $\\ell$ and a sequence $R = T_0, T_1, \\ldots, T_\\ell = S$ of points in $K$, where each $T_i$ is distance $1$ away from $T_{i+1}$. For such a set $K$, we define the set of vectors\n$$\\Delta(K) = \\{\\overrightarrow{RS} \\mid R, S \\in K\\}.$$\nWhat is the maximum value of $|\\Delta(K)|$ over all connected sets $K$ of $2n + 1$ points with integer coordinates in the plane?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Given a polynomial $f(x)$ with rational coefficients, of degree $d \\ge 2$, we define the sequence of sets $f^0(\\mathbb{Q}), f^1(\\mathbb{Q}), \\ldots$ by $f^0(\\mathbb{Q}) = \\mathbb{Q}$ and $f^{n+1}(\\mathbb{Q}) = f(f^n(\\mathbb{Q}))$ for $n \\ge 0$. (Given a set $S$, we write $f(S)$ for the set $\\{f(x) \\mid x \\in S\\}$.)\n\nLet $f^{\\omega}(\\mathbb{Q}) = \\bigcap_{n=0}^{\\infty} f^n(\\mathbb{Q})$ be the set of numbers that are in all of the sets $f^n(\\mathbb{Q})$. Prove that $f^{\\omega}(\\mathbb{Q})$ is a finite set."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that there exist two functions $f, g : \\mathbb{R} \\to \\mathbb{R}$, such that $f \\circ g$ is strictly decreasing and $g \\circ f$ is strictly increasing.",
+          "proposer": "Poland, Andrzej Komisarski & Marcin Kuczma"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all positive integers $n$ for which there exists a polynomial $f(x)$ with real coefficients, with the following properties:\n\n(1) for each integer $k$, the number $f(k)$ is an integer if and only if $k$ is not divisible by $n$;\n\n(2) the degree of $f$ is less than $n$.",
+          "proposer": "Hungary, Géza Kós"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A triangle $ABC$ is inscribed in a circle $\\omega$. A variable line $\\ell$ chosen parallel to $BC$ meets segments $AB$, $AC$ at points $D$, $E$ respectively, and meets $\\omega$ at points $K$, $L$ (where $D$ lies between $K$ and $E$). Circle $\\gamma_1$ is tangent to the segments $KD$ and $BD$ and also tangent to $\\omega$, while circle $\\gamma_2$ is tangent to the segments $LE$ and $CE$ and also tangent to $\\omega$. Determine the locus, as $\\ell$ varies, of the meeting point of the common inner tangents to $\\gamma_1$ and $\\gamma_2$.",
+          "proposer": "Russia, Vasily Mokin & Fedor Ivlev"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Given a positive integer $n = \\prod_{i=1}^{s} p_i^{\\alpha_i}$, we write $\\Omega(n)$ for the total number $\\sum_{i=1}^{s} \\alpha_i$ of prime factors of $n$, counted with multiplicity. Let $\\lambda(n) = (-1)^{\\Omega(n)}$ (so, for example, $\\lambda(12) = \\lambda(2^2 \\cdot 3^1) = (-1)^{2+1} = -1$).\n\nProve the following two claims:\n\ni) There are infinitely many positive integers $n$ such that $\\lambda(n) = \\lambda(n+1) = +1$;\n\nii) There are infinitely many positive integers $n$ such that $\\lambda(n) = \\lambda(n+1) = -1$.",
+          "proposer": "Romania, Dan Schwarz"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For every $n \\ge 3$, determine all the configurations of $n$ distinct points $X_1, X_2, \\ldots, X_n$ in the plane, with the property that for any pair of distinct points $X_i, X_j$ there exists a permutation $\\sigma$ of the integers $\\{1, \\ldots, n\\}$, such that $\\mathrm{d}(X_i, X_k) = \\mathrm{d}(X_j, X_{\\sigma(k)})$ for all $1 \\le k \\le n$.\n\n(We write $\\mathrm{d}(X, Y)$ to denote the distance between points $X$ and $Y$.)",
+          "proposer": "United Kingdom, Luke Betts"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The cells of a square $2011 \\times 2011$ array are labelled with the integers $1, 2, \\ldots, 2011^2$, in such a way that every label is used exactly once. We then identify the left-hand and right-hand edges, and then the top and bottom, in the normal way to form a torus (the surface of a doughnut).\n\nDetermine the largest positive integer $M$ such that, no matter which labelling we choose, there exist two neighbouring cells with the difference of their labels at least $M$.\n\n(Cells with coordinates $(x, y)$ and $(x', y')$ are considered to be neighbours if $x = x'$ and $y - y' \\equiv \\pm 1 \\pmod{2011}$, or if $y = y'$ and $x - x' \\equiv \\pm 1 \\pmod{2011}$.)",
+          "proposer": "Romania, Dan Schwarz"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Given a finite number of boys and girls, a sociable set of boys is a set of boys such that every girl knows at least one boy in that set; and a sociable set of girls is a set of girls such that every boy knows at least one girl in that set. Prove that the number of sociable sets of boys and the number of sociable sets of girls have the same parity. (Acquaintance is assumed to be mutual.)",
+          "proposer": "Poland, Marek Cygan"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Given a non-isosceles triangle $ABC$, let $D$, $E$, and $F$ denote the midpoints of the sides $BC$, $CA$, and $AB$ respectively. The circle $BCF$ and the line $BE$ meet again at $P$, and the circle $ABE$ and the line $AD$ meet again at $Q$. Finally, the lines $DP$ and $FQ$ meet at $R$. Prove that the centroid $G$ of the triangle $ABC$ lies on the circle $PQR$.",
+          "proposer": "United Kingdom, David Monk"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Each positive integer is coloured red or blue. A function $f$ from the set of positive integers to itself has the following two properties:\n\n(a) if $x \\le y$, then $f(x) \\le f(y)$; and\n\n(b) if $x$, $y$ and $z$ are (not necessarily distinct) positive integers of the same colour and $x + y = z$, then $f(x) + f(y) = f(z)$.\n\nProve that there exists a positive number $a$ such that $f(x) \\le ax$ for all positive integers $x$.",
+          "proposer": "United Kingdom, Ben Elliott"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that there are infinitely many positive integers $n$ such that $2^{2^n+1} + 1$ is divisible by $n$ but $2^n + 1$ is not.",
+          "proposer": "Russia, Valery Senderov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given a positive integer $n \\ge 3$, colour each cell of an $n \\times n$ square array with one of $\\lfloor (n+2)^2/3 \\rfloor$ colours, each colour being used at least once. Prove that there is some $1 \\times 3$ or $3 \\times 1$ rectangular subarray whose three cells are coloured with three different colours.",
+          "proposer": "Russia, Ilya Bogdanov, Grigory Chelnokov, Dmitry Khramtsov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle and let $I$ and $O$ denote its incentre and circumcentre respectively. Let $\\omega_A$ be the circle through $B$ and $C$ which is tangent to the incircle of the triangle $ABC$; the circles $\\omega_B$ and $\\omega_C$ are defined similarly. The circles $\\omega_B$ and $\\omega_C$ meet at a point $A'$ distinct from $A$; the points $B'$ and $C'$ are defined similarly. Prove that the lines $AA'$, $BB'$ and $CC'$ are concurrent at a point on the line $IO$.",
+          "proposer": "Russia, Fedor Ivlev"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a positive integer $a$, define a sequence of integers $x_1, x_2, \\ldots$ by letting $x_1 = a$ and $x_{n+1} = 2x_n + 1$ for $n \\ge 1$. Let $y_n = 2^{x_n} - 1$. Determine the largest possible $k$ such that, for some positive integer $a$, the numbers $y_1, \\ldots, y_k$ are all prime.",
+          "proposer": "Russia, Valery Senderov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Does there exist a pair $(g, h)$ of functions $g, h : \\mathbb{R} \\to \\mathbb{R}$ such that the only function $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying $f(g(x)) = g(f(x))$ and $f(h(x)) = h(f(x))$ for all $x \\in \\mathbb{R}$ is the identity function $f(x) \\equiv x$?",
+          "proposer": "United Kingdom, Alexander Betts"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABCD$ be a quadrilateral inscribed in a circle $\\omega$. The lines $AB$ and $CD$ meet at $P$, the lines $AD$ and $BC$ meet at $Q$, and the diagonals $AC$ and $BD$ meet at $R$. Let $M$ be the midpoint of the segment $PQ$, and let $K$ be the common point of the segment $MR$ and the circle $\\omega$. Prove that the circumcircle of the triangle $KPQ$ and $\\omega$ are tangent to one another.",
+          "proposer": "Russia, Medeubek Kungozhin"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $P$ and $P'$ be two convex quadrilateral regions in the plane (regions contain their boundary). Let them intersect, with $O$ a point in the intersection. Suppose that for every line $\\ell$ through $O$ the segment $\\ell \\cap P$ is strictly longer than the segment $\\ell \\cap P'$. Is it possible that the ratio of the area of $P'$ to the area of $P$ is greater than $1.9$?",
+          "proposer": "Bulgaria"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given an integer $k \\ge 2$, set $a_1 = 1$ and, for every integer $n \\ge 2$, let $a_n$ be the smallest $x > a_{n-1}$ such that:\n$$x = 1 + \\sum_{i=1}^{n-1} \\left\\lfloor \\sqrt[k]{\\frac{x}{a_i}} \\right\\rfloor.$$\nProve that every prime occurs in the sequence $a_1, a_2, \\ldots$.",
+          "proposer": "Bulgaria"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "$2n$ distinct tokens are placed at the vertices of a regular $2n$-gon, with one token placed at each vertex. A move consists of choosing an edge of the $2n$-gon and interchanging the two tokens at the endpoints of that edge. Suppose that after a finite number of moves, every pair of tokens have been interchanged exactly once. Prove that some edge has never been chosen.",
+          "proposer": "Russia, Alexander Gribalko"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Does there exist an infinite sequence of positive integers $a_1, a_2, a_3, \\ldots$ such that $a_m$ and $a_n$ are coprime if and only if $|m - n| = 1$?",
+          "proposer": "Peru"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For an integer $n \\ge 5$, two players play the following game on a regular $n$-gon. Initially, three consecutive vertices are chosen, and one counter is placed on each. A move consists of one player sliding one counter along any number of edges to another vertex of the $n$-gon without jumping over another counter. A move is legal if the area of the triangle formed by the counters is strictly greater after the move than before. The players take turns to make legal moves, and if a player cannot make a legal move, that player loses. For which values of $n$ does the player making the first move have a winning strategy?",
+          "proposer": "United Kingdom, Jeremy King"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A finite list of rational numbers is written on a blackboard. In an operation, we choose any two numbers $a, b$, erase them, and write down one of the numbers\n$$a + b,\\ a - b,\\ b - a,\\ a \\times b,\\ a/b \\ (\\text{if } b \\ne 0),\\ b/a \\ (\\text{if } a \\ne 0).$$\nProve that, for every integer $n > 100$, there are only finitely many integers $k \\ge 0$, such that, starting from the list\n$$k + 1,\\ k + 2,\\ \\ldots,\\ k + n,$$\nit is possible to obtain, after $n - 1$ operations, the value $n!$.",
+          "proposer": "United Kingdom, Alexander Betts"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle, and let $D$ be the point where the incircle meets side $BC$. Let $J_b$ and $J_c$ be the incentres of the triangles $ABD$ and $ACD$, respectively. Prove that the circumcentre of the triangle $AJ_bJ_c$ lies on the angle bisector of $\\angle BAC$.",
+          "proposer": "Russia, Fedor Ivlev"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $p \\ge 5$ be a prime number. For a positive integer $k$, let $R(k)$ be the remainder when $k$ is divided by $p$, with $0 \\le R(k) \\le p - 1$. Determine all positive integers $a < p$ such that, for every $m = 1, 2, \\ldots, p - 1$,\n$$m + R(ma) > a.$$",
+          "proposer": "Bulgaria, Alexander Ivanov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Given a positive integer $n$, determine the largest real number $\\mu$ satisfying the following condition: for every set $C$ of $4n$ points in the interior of the unit square $U$, there exists a rectangle $T$ contained in $U$ such that\n\n- the sides of $T$ are parallel to the sides of $U$;\n\n- the interior of $T$ contains exactly one point of $C$;\n\n- the area of $T$ is at least $\\mu$.",
+          "proposer": "Bulgaria, Nikolai Beluhov"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle and let $D$ be a point on the segment $BC$, $D \\ne B$ and $D \\ne C$. The circle $ABD$ meets the segment $AC$ again at an interior point $E$. The circle $ACD$ meets the segment $AB$ again at an interior point $F$. Let $A'$ be the reflection of $A$ in the line $BC$. The lines $A'C$ and $DE$ meet at $P$, and the lines $A'B$ and $DF$ meet at $Q$. Prove that the lines $AD$, $BP$ and $CQ$ are concurrent (or all parallel)."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Given positive integers $m$ and $n \\ge m$, determine the largest number of dominoes ($1 \\times 2$ or $2 \\times 1$ rectangles) that can be placed on a rectangular board with $m$ rows and $2n$ columns consisting of cells ($1 \\times 1$ squares) so that:\n\n(i) each domino covers exactly two adjacent cells of the board;\n\n(ii) no two dominoes overlap;\n\n(iii) no two form a $2 \\times 2$ square; and\n\n(iv) the bottom row of the board is completely covered by $n$ dominoes."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A cubic sequence is a sequence of integers given by $a_n = n^3 + bn^2 + cn + d$, where $b$, $c$ and $d$ are integer constants and $n$ ranges over all integers, including negative integers.\n\n(a) Show that there exists a cubic sequence such that the only terms of the sequence which are squares of integers are $a_{2015}$ and $a_{2016}$.\n\n(b) Determine the possible values of $a_{2015} \\cdot a_{2016}$ for a cubic sequence satisfying the condition in part (a)."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $x$ and $y$ be positive real numbers such that $x + y^{2016} \\ge 1$. Prove that $x^{2016} + y > 1 - 1/100$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A convex hexagon $A_1B_1A_2B_2A_3B_3$ is inscribed in a circle $\\Omega$ of radius $R$. The diagonals $A_1B_2$, $A_2B_3$, and $A_3B_1$ concur at $X$. For $i = 1, 2, 3$, let $\\omega_i$ be the circle tangent to the segments $XA_i$ and $XB_i$, and to the arc $A_iB_i$ of $\\Omega$ not containing other vertices of the hexagon; let $r_i$ be the radius of $\\omega_i$.\n\n(a) Prove that $R \\ge r_1 + r_2 + r_3$.\n\n(b) If $R = r_1 + r_2 + r_3$, prove that the six points where the circles $\\omega_i$ touch the diagonals $A_1B_2$, $A_2B_3$, $A_3B_1$ are concyclic."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A set of $n$ points in Euclidean $3$-dimensional space, no four of which are coplanar, is partitioned into two subsets $\\mathcal{A}$ and $\\mathcal{B}$. An $\\mathcal{AB}$-tree is a configuration of $n - 1$ segments, each of which has an endpoint in $\\mathcal{A}$ and the other in $\\mathcal{B}$, and such that no segments form a closed polyline. An $\\mathcal{AB}$-tree is transformed into another as follows: choose three distinct segments $A_1B_1$, $B_1A_2$ and $A_2B_2$ in the $\\mathcal{AB}$-tree such that $A_1$ is in $\\mathcal{A}$ and $A_1B_1 + A_2B_2 > A_1B_2 + A_2B_1$, and remove the segment $A_1B_1$ to replace it by the segment $A_1B_2$. Given any $\\mathcal{AB}$-tree, prove that every sequence of successive transformations comes to an end (no further transformation is possible) after finitely many steps."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "(a) Prove that every positive integer $n$ can be written uniquely in the form\n$$n = \\sum_{j=1}^{2k+1} (-1)^{j-1} 2^{m_j},$$\nwhere $k \\ge 0$ and $0 \\le m_1 < m_2 < \\cdots < m_{2k+1}$ are integers. This number $k$ is called the weight of $n$.\n\n(b) Find (in closed form) the difference between the number of positive integers at most $2^{2017}$ with even weight and the number of positive integers at most $2^{2017}$ with odd weight."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all positive integers $n$ satisfying the following condition: for every monic polynomial $P$ of degree at most $n$ with integer coefficients, there exists a positive integer $k \\le n$, and $k + 1$ distinct integers $x_1, x_2, \\ldots, x_{k+1}$ such that\n$$P(x_1) + P(x_2) + \\cdots + P(x_k) = P(x_{k+1}).$$\nNote. A polynomial is monic if the coefficient of the highest power is one."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be an integer greater than $1$ and let $X$ be an $n$-element set. A non-empty collection of subsets $A_1, \\ldots, A_k$ of $X$ is tight if the union $A_1 \\cup \\cdots \\cup A_k$ is a proper subset of $X$ and no element of $X$ lies in exactly one of the $A_i$s. Find the largest cardinality of a collection of proper non-empty subsets of $X$, no non-empty subcollection of which is tight.\n\nNote. A subset $A$ of $X$ is proper if $A \\ne X$. The sets in a collection are assumed to be distinct. The whole collection is assumed to be a subcollection."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In the Cartesian plane, let $\\mathcal{G}_1$ and $\\mathcal{G}_2$ be the graphs of the quadratic functions $f_1(x) = p_1x^2 + q_1x + r_1$ and $f_2(x) = p_2x^2 + q_2x + r_2$, where $p_1 > 0 > p_2$. The graphs $\\mathcal{G}_1$ and $\\mathcal{G}_2$ cross at distinct points $A$ and $B$. The four tangents to $\\mathcal{G}_1$ and $\\mathcal{G}_2$ at $A$ and $B$ form a convex quadrilateral which has an inscribed circle. Prove that the graphs $\\mathcal{G}_1$ and $\\mathcal{G}_2$ have the same axis of symmetry."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Fix an integer $n \\ge 2$. An $n \\times n$ sieve is an $n \\times n$ array with $n$ cells removed so that exactly one cell is removed from every row and every column. A stick is a $1 \\times k$ or $k \\times 1$ array for any positive integer $k$. For any sieve $A$, let $m(A)$ be the minimal number of sticks required to partition $A$. Find all possible values of $m(A)$, as $A$ varies over all possible $n \\times n$ sieves."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be any convex quadrilateral and let $P$, $Q$, $R$, $S$ be points on the segments $AB$, $BC$, $CD$, and $DA$, respectively. It is given that the segments $PR$ and $QS$ dissect $ABCD$ into four quadrilaterals, each of which has perpendicular diagonals. Show that the points $P$, $Q$, $R$, $S$ are concyclic."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a cyclic quadrangle and let $P$ be a point on the side $AB$. The diagonal $AC$ crosses the segment $DP$ at $Q$. The parallel through $P$ to $CD$ crosses the extension of the side $BC$ beyond $B$ at $K$, and the parallel through $Q$ to $BD$ crosses the extension of the side $BC$ beyond $B$ at $L$. Prove that the circumcircles of the triangles $BKP$ and $CLQ$ are tangent.",
+          "proposer": "Russia, Aleksandr Kuznetsov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine whether there exist non-constant polynomials $P(x)$ and $Q(x)$ with real coefficients satisfying\n$$P(x)^{10} + P(x)^9 = Q(x)^{21} + Q(x)^{20}.$$",
+          "proposer": "Russia, Ilya Bogdanov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Ann and Bob play a game on an infinite checkered plane making moves in turn; Ann makes the first move. A move consists in orienting any unit grid-segment that has not been oriented before. If at some stage some oriented segments form an oriented cycle, Bob wins. Does Bob have a strategy that guarantees him to win?",
+          "proposer": "Russia, Maxim Didin"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a$, $b$, $c$, $d$ be positive integers such that $ad \\ne bc$ and $\\gcd(a, b, c, d) = 1$. Prove that, as $n$ runs through the positive integers, the values $\\gcd(an + b, cn + d)$ may achieve form the set of all positive divisors of some integer.",
+          "proposer": "Peru, Raul Alcantara"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer and fix $2n$ distinct points on a circumference. Split these points into $n$ pairs and join the points in each pair by an arrow (i.e., an oriented line segment). The resulting configuration is good if no two arrows cross, and there are no arrows $\\overrightarrow{AB}$ and $\\overrightarrow{CD}$ such that $ABCD$ is a convex quadrangle oriented clockwise. Determine the number of good configurations.",
+          "proposer": "Russia, Fedor Petrov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Fix a circle $\\Gamma$, a line $\\ell$ tangent to $\\Gamma$, and another circle $\\Omega$ disjoint from $\\ell$ such that $\\Gamma$ and $\\Omega$ lie on opposite sides of $\\ell$. The tangents to $\\Gamma$ from a variable point $X$ on $\\Omega$ cross $\\ell$ at $Y$ and $Z$. Prove that, as $X$ traces $\\Omega$, the circle $XYZ$ is tangent to two fixed circles.",
+          "proposer": "Russia, Ivan Frolov"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Amy and Bob play the game. At the beginning, Amy writes down a positive integer on the board. Then the players take moves in turn, Bob moves first. On any move of his, Bob replaces the number $n$ on the blackboard with a number of the form $n - a^2$, where $a$ is a positive integer. On any move of hers, Amy replaces the number $n$ on the blackboard with a number of the form $n^k$, where $k$ is a positive integer. Bob wins if the number on the board becomes zero. Can Amy prevent Bob's win?",
+          "proposer": "Russia, Maxim Didin"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be an isosceles trapezoid with $AB \\parallel CD$. Let $E$ be the midpoint of $AC$. Denote by $\\omega$ and $\\Omega$ the circumcircles of the triangles $ABE$ and $CDE$, respectively. Let $P$ be the crossing point of the tangent to $\\omega$ at $A$ with the tangent to $\\Omega$ at $D$. Prove that $PE$ is tangent to $\\Omega$.",
+          "proposer": "Slovenia, Jakob Jurij Snoj"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Given any positive real number $\\varepsilon$, prove that, for all but finitely many positive integers $v$, any graph on $v$ vertices with at least $(1 + \\varepsilon)v$ edges has two distinct simple cycles of equal lengths.\n\n(Recall that the notion of a simple cycle does not allow repetition of vertices in a cycle.)",
+          "proposer": "Russia, Fedor Petrov"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that for every positive integer $n$ there exists a (not necessarily convex) polygon with no three collinear vertices, which admits exactly $n$ different triangulations.\n\n(A triangulation is a dissection of the polygon into triangles by interior diagonals which have no common interior points with each other nor with the sides of the polygon.)"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying\n$$f(x + yf(x)) + f(xy) = f(x) + f(2019y),$$\nfor all real numbers $x$ and $y$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all pairs of integers $(c, d)$, both greater than $1$, such that the following holds:\n\nFor any monic polynomial $Q$ of degree $d$ with integer coefficients and for any prime $p > c(2c + 1)$, there exists a set $S$ of at most $\\left(\\frac{2c-1}{2c+1}\\right)p$ integers, such that\n$$\\bigcup_{s \\in S} \\{s,\\ Q(s),\\ Q(Q(s)),\\ Q(Q(Q(s))),\\ \\ldots\\}$$\nis a complete residue system modulo $p$ (i.e., intersects with every residue class modulo $p$)."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle with a right angle at $C$. Let $I$ be the incentre of triangle $ABC$, and let $D$ be the foot of the altitude from $C$ to $AB$. The incircle $\\omega$ of triangle $ABC$ is tangent to sides $BC$, $CA$ and $AB$ at $A_1$, $B_1$ and $C_1$, respectively. Let $E$ and $F$ be the reflections of $C$ in lines $C_1A_1$ and $C_1B_1$, respectively. Let $K$ and $L$ be the reflections of $D$ in lines $C_1A_1$ and $C_1B_1$, respectively.\n\nProve that the circumcircles of triangles $A_1EI$, $B_1FI$ and $C_1KL$ have a common point."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $N \\ge 2$ be an integer, and let $\\mathbf{a} = (a_1, \\ldots, a_N)$ and $\\mathbf{b} = (b_1, \\ldots, b_N)$ be sequences of non-negative integers. For each integer $i \\notin \\{1, \\ldots, N\\}$, let $a_i = a_k$ and $b_i = b_k$, where $k \\in \\{1, \\ldots, N\\}$ is the integer such that $i - k$ is divisible by $N$. We say $\\mathbf{a}$ is $\\mathbf{b}$-harmonic if each $a_i$ equals the following arithmetic mean:\n$$a_i = \\frac{1}{2b_i + 1} \\sum_{s=-b_i}^{b_i} a_{i+s}.$$\nSuppose that neither $\\mathbf{a}$ nor $\\mathbf{b}$ is a constant sequence, and that both $\\mathbf{a}$ is $\\mathbf{b}$-harmonic and $\\mathbf{b}$ is $\\mathbf{a}$-harmonic.\n\nProve that at least $N + 1$ of the numbers $a_1, \\ldots, a_N, b_1, \\ldots, b_N$ are zero."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n \\ge 3$ be an integer. In a country there are $n$ airports and $n$ airlines operating two-way flights. For each airline, there is an odd integer $m \\ge 3$, and $m$ distinct airports $c_1, \\ldots, c_m$, where the flights offered by the airline are exactly those between the following pairs of airports: $c_1$ and $c_2$; $c_2$ and $c_3$; $\\ldots$; $c_{m-1}$ and $c_m$; $c_m$ and $c_1$.\n\nProve that there is a closed route consisting of an odd number of flights where no two flights are operated by the same airline."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\mathbb{N}$ be the set of all positive integers. A subset $A$ of $\\mathbb{N}$ is sum-free if, whenever $x$ and $y$ are (not necessarily distinct) members of $A$, their sum $x + y$ does not belong to $A$.\n\nDetermine all surjective functions $f : \\mathbb{N} \\to \\mathbb{N}$ such that, for each sum-free subset $A$ of $\\mathbb{N}$, the image $\\{f(a) : a \\in A\\}$ is also sum-free.\n\nNote: a function $f : \\mathbb{N} \\to \\mathbb{N}$ is surjective if, for every positive integer $n$, there exists a positive integer $m$ such that $f(m) = n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A lattice point in the Cartesian plane is a point whose coordinates are both integers. A lattice polygon is a polygon all of whose vertices are lattice points.\n\nLet $\\Gamma$ be a convex lattice polygon. Prove that $\\Gamma$ is contained in a convex lattice polygon $\\Omega$ such that the vertices of $\\Gamma$ all lie on the boundary of $\\Omega$, and exactly one vertex of $\\Omega$ is not a vertex of $\\Gamma$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For each integer $n \\ge 2$, let $F(n)$ denote the greatest prime factor of $n$. A strange pair is a pair of distinct primes $p$ and $q$ such that there is no integer $n \\ge 2$ for which $F(n)F(n+1) = pq$.\n\nProve that there exist infinitely many strange pairs."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $T_1, T_2, T_3, T_4$ be pairwise distinct collinear points such that $T_2$ lies between $T_1$ and $T_3$, and $T_3$ lies between $T_2$ and $T_4$. Let $\\omega_1$ be a circle through $T_1$ and $T_4$; let $\\omega_2$ be the circle through $T_2$ and internally tangent to $\\omega_1$ at $T_1$; let $\\omega_3$ be the circle through $T_3$ and externally tangent to $\\omega_2$ at $T_2$; and let $\\omega_4$ be the circle through $T_4$ and externally tangent to $\\omega_3$ at $T_3$. A line crosses $\\omega_1$ at $P$ and $W$, $\\omega_2$ at $Q$ and $R$, $\\omega_3$ at $S$ and $T$, and $\\omega_4$ at $U$ and $V$, the order of these points along the line being $P, Q, R, S, T, U, V, W$. Prove that $PQ + TU = RS + VW$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Xenia and Sergey play the following game. Xenia thinks of a positive integer $N$ not exceeding $5000$. Then she fixes $20$ distinct positive integers $a_1, a_2, \\ldots, a_{20}$ such that, for each $k = 1, 2, \\ldots, 20$, the numbers $N$ and $a_k$ are congruent modulo $k$. By a move, Sergey tells Xenia a set $S$ of positive integers not exceeding $20$, and she tells him back the set $\\{a_k : k \\in S\\}$ without spelling out which number corresponds to which index. How many moves does Sergey need to determine for sure the number Xenia thought of?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A number of $17$ workers stand in a row. Every contiguous group of at least $2$ workers is a brigade. The chief wants to assign each brigade a leader (which is a member of the brigade) so that each worker's number of assignments is divisible by $4$. Prove that the number of such ways to assign the leaders is divisible by $17$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Consider an integer $n \\ge 2$ and write the numbers $1, 2, \\ldots, n$ down on a board. A move consists in erasing any two numbers $a$ and $b$, then writing down the numbers $a + b$ and $|a - b|$ on the board, and then removing repetitions (e.g., if the board contained the numbers $2, 5, 7, 8$, then one could choose the numbers $a = 5$ and $b = 7$, obtaining the board with numbers $2, 8, 12$). For all integers $n \\ge 2$, determine whether it is possible to be left with exactly two numbers on the board after a finite number of moves."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. The kingdom of Zoomtopia is a convex polygon with integer sides, perimeter $6n$, and $60^\\circ$ rotational symmetry (that is, there is a point $O$ such that a $60^\\circ$ rotation about $O$ maps the polygon to itself). In light of the pandemic, the government of Zoomtopia would like to relocate its $3n^2 + 3n + 1$ citizens at $3n^2 + 3n + 1$ points in the kingdom so that every two citizens have a distance of at least $1$ for proper social distancing. Prove that this is possible. (The kingdom is assumed to contain its boundary.)"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Initially, a non-constant polynomial $S(x)$ with real coefficients is written down on a board. Whenever the board contains a polynomial $P(x)$, not necessarily alone, one can write down on the board any polynomial of the form $P(C + x)$ or $C + P(x)$, where $C$ is a real constant. Moreover, if the board contains two (not necessarily distinct) polynomials $P(x)$ and $Q(x)$, one can write $P(Q(x))$ and $P(x) + Q(x)$ down on the board. No polynomial is ever erased from the board.\n\nGiven two sets of real numbers, $A = \\{a_1, a_2, \\ldots, a_n\\}$ and $B = \\{b_1, b_2, \\ldots, b_n\\}$, a polynomial $f(x)$ with real coefficients is $(A, B)$-nice if $f(A) = B$, where $f(A) = \\{f(a_i) : i = 1, 2, \\ldots, n\\}$.\n\nDetermine all polynomials $S(x)$ that can initially be written down on the board such that, for any two finite sets $A$ and $B$ of real numbers, with $|A| = |B|$, one can produce an $(A, B)$-nice polynomial in a finite number of steps."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all prime numbers $p$ and all positive integers $x$ and $y$ satisfying\n$$x^3 + y^3 = p(xy + p).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Fix an integer $n \\geqslant 3$. Let $\\mathcal{S}$ be a set of $n$ points in the plane, no three of which are collinear. Given different points $A, B, C$ in $\\mathcal{S}$, the triangle $ABC$ is nice for $AB$ if $\\mathrm{Area}(ABC) \\leqslant \\mathrm{Area}(ABX)$ for all $X$ in $\\mathcal{S}$ different from $A$ and $B$. (Note that for a segment $AB$ there could be several nice triangles.) A triangle is beautiful if its vertices are all in $\\mathcal{S}$ and it is nice for at least two of its sides.\n\nProve that there are at least $\\frac{1}{2}(n - 1)$ beautiful triangles."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n \\geqslant 2$ be an integer, and let $f$ be a $4n$-variable polynomial with real coefficients. Assume that, for any $2n$ points $(x_1, y_1), \\ldots, (x_{2n}, y_{2n})$ in the Cartesian plane, $f(x_1, y_1, \\ldots, x_{2n}, y_{2n}) = 0$ if and only if the points form the vertices of a regular $2n$-gon in some order, or are all equal.\n\nDetermine the smallest possible degree of $f$.\n\n(Note, for example, that the degree of the polynomial\n$$g(x, y) = 4x^3y^4 + yx + x - 2$$\nis $7$ because $7 = 3 + 4$.)"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Given an acute triangle $ABC$, let $H$ and $O$ be its orthocentre and circumcentre, respectively. Let $K$ be the midpoint of the line segment $AH$. Also let $\\ell$ be a line through $O$, and let $P$ and $Q$ be the orthogonal projections of $B$ and $C$ onto $\\ell$, respectively.\n\nProve that $KP + KQ \\geqslant BC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $P(x)$, $Q(x)$, $R(x)$ and $S(x)$ be non-constant polynomials with real coefficients such that $P(Q(x)) = R(S(x))$. Suppose that the degree of $P(x)$ is divisible by the degree of $R(x)$.\n\nProve that there is a polynomial $T(x)$ with real coefficients such that\n$$P(x) = R(T(x)).$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $r, g, b$ be non-negative integers. Let $\\Gamma$ be a connected graph on $r + g + b + 1$ vertices. The edges of $\\Gamma$ are each coloured red, green or blue. It turns out that $\\Gamma$ has\n\n- a spanning tree in which exactly $r$ of the edges are red,\n\n- a spanning tree in which exactly $g$ of the edges are green and\n\n- a spanning tree in which exactly $b$ of the edges are blue.\n\nProve that $\\Gamma$ has a spanning tree in which exactly $r$ of the edges are red, exactly $g$ of the edges are green and exactly $b$ of the edges are blue.\n\n(A spanning tree of $\\Gamma$ is a graph which has the same vertices as $\\Gamma$, with edges which are also edges of $\\Gamma$, for which there is exactly one path between each pair of different vertices.)"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. Initially, a bishop is placed in each square of the top row of a $2^n \\times 2^n$ chessboard; those bishops are numbered from $1$ to $2^n$, from left to right. A jump is a simultaneous move made by all bishops such that the following conditions are satisfied:\n\n- each bishop moves diagonally, in a straight line, some number of squares, and\n\n- at the end of the jump, the bishops all stand in different squares of the same row.\n\nFind the total number of permutations $\\sigma$ of the numbers $1, 2, \\ldots, 2^n$ with the following property: There exists a sequence of jumps such that all bishops end up on the bottom row arranged in the order $\\sigma(1), \\sigma(2), \\ldots, \\sigma(2^n)$, from left to right."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider an odd prime $p$ and a positive integer $N < 50p$. Let $a_1, a_2, \\ldots, a_N$ be a list of positive integers less than $p$ such that any specific value occurs at most $\\frac{51}{100}N$ times and $a_1 + a_2 + \\cdots + a_N$ is not divisible by $p$. Prove that there exists a permutation $b_1, b_2, \\ldots, b_N$ of the $a_i$ such that, for all $k = 1, 2, \\ldots, N$, the sum $b_1 + b_2 + \\cdots + b_k$ is not divisible by $p$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Given a positive integer $n$, a set $\\mathcal{S}$ is $n$-admissible if\n\n- each element of $\\mathcal{S}$ is an unordered triple of integers in $\\{1, 2, \\ldots, n\\}$,\n\n- $|\\mathcal{S}| = n - 2$, and\n\n- for each $1 \\le k \\le n - 2$ and each choice of $k$ distinct $A_1, A_2, \\ldots, A_k \\in \\mathcal{S}$,\n$$|A_1 \\cup A_2 \\cup \\cdots \\cup A_k| \\ge k + 2.$$\n\nIs it true that, for all $n > 3$ and for each $n$-admissible set $\\mathcal{S}$, there exist pairwise distinct points $P_1, \\ldots, P_n$ in the plane such that the angles of the triangle $P_iP_jP_k$ are all less than $61^\\circ$ for any triple $\\{i, j, k\\}$ in $\\mathcal{S}$?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Fix integers $a$ and $b$ greater than $1$. For any positive integer $n$, let $r_n$ be the (non-negative) remainder that $b^n$ leaves upon division by $a^n$. Assume there exists a positive integer $N$ such that $r_n < 2^n/n$ for all integers $n \\ge N$. Prove that $a$ divides $b$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $BC$ be a fixed segment in the plane, and let $A$ be a variable point in the plane not on the line $BC$. Distinct points $X$ and $Y$ are chosen on the rays $\\overrightarrow{CA}$ and $\\overrightarrow{BA}$, respectively, such that $\\angle CBX = \\angle YCB = \\angle BAC$. Assume that the tangents to the circumcircle of $ABC$ at $B$ and $C$ meet line $XY$ at $P$ and $Q$, respectively, such that the points $X$, $P$, $Y$, and $Q$ are pairwise distinct and lie on the same side of $BC$. Let $\\Omega_1$ be the circle through $X$ and $P$ centred on $BC$. Similarly, let $\\Omega_2$ be the circle through $Y$ and $Q$ centred on $BC$. Prove that $\\Omega_1$ and $\\Omega_2$ intersect at two fixed points as $A$ varies."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A polynomial $P$ with integer coefficients is square-free if it is not expressible in the form $P = Q^2R$, where $Q$ and $R$ are polynomials with integer coefficients and $Q$ is not constant. For a positive integer $n$, let $\\mathcal{P}_n$ be the set of polynomials of the form\n$$1 + a_1x + a_2x^2 + \\cdots + a_nx^n$$\nwith $a_1, a_2, \\ldots, a_n \\in \\{0, 1\\}$. Prove that there exists an integer $N$ so that, for all integers $n \\ge N$, more than $99\\%$ of the polynomials in $\\mathcal{P}_n$ are square-free."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n > 10$ be an integer, and let $A_1, A_2, \\ldots, A_n$ be distinct points in the plane such that the distances between the points are pairwise different. Define $f_{10}(j, k)$ to be the $10^{\\text{th}}$ smallest of the distances from $A_j$ to $A_1, A_2, \\ldots, A_k$, excluding $A_j$ if $k \\ge j$. Suppose that for all $j$ and $k$ satisfying $11 \\le j \\le k \\le n$, we have $f_{10}(j, j - 1) \\ge f_{10}(k, j - 1)$. Prove that $f_{10}(j, n) \\ge \\frac{1}{2} f_{10}(n, n)$ for all $j$ in the range $1 \\le j \\le n - 1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider an infinite sequence of positive integers $a_1, a_2, a_3, \\ldots$ such that $a_1 > 1$ and $(2^{a_n} - 1)a_{n+1}$ is a square for all positive integers $n$. Is it possible for two terms of such a sequence to be equal?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Fix an integer $n \\ge 3$. Determine the smallest positive integer $k$ satisfying the following condition:\n\nFor any tree $T$ with vertices $v_1, v_2, \\ldots, v_n$ and any pairwise distinct complex numbers $z_1, z_2, \\ldots, z_n$, there is a polynomial $P(X, Y)$ with complex coefficients of total degree at most $k$ such that for all $i \\ne j$ satisfying $1 \\le i, j \\le n$, we have $P(z_i, z_j) = 0$ if and only if there is an edge in $T$ joining $v_i$ to $v_j$.\n\nNote, for example, that the total degree of the polynomial\n$$9X^3Y^4 + XY^5 + X^6 - 2$$\nis $7$ because $7 = 3 + 4$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\mathbb{Z}$ denote the set of integers, and let $S \\subset \\mathbb{Z}$ be the set of integers that are at least $10^{100}$. Fix a positive integer $c$. Determine all functions $f : S \\to \\mathbb{Z}$ satisfying $f(xy + c) = f(x) + f(y)$ for all $x, y \\in S$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$, and let $H$ and $O$ be its orthocentre and circumcentre, respectively. Let $\\Gamma$ be the circumcircle of triangle $BOC$. Circle $\\Gamma$ intersects line $AO$ at points $O$ and $A'$, and $\\Gamma$ intersects the circle of radius $AO$ with centre $A$ at points $O$ and $F$. Prove that the circle which has diameter $AA'$, the circumcircle of triangle $AFH$, and $\\Gamma$ pass through a common point."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k$ and $m$ be integers greater than $1$. Consider $k$ pairwise disjoint sets $S_1, S_2, \\ldots, S_k$, each of which has exactly $m + 1$ elements: one red and $m$ blue. Let $\\mathcal{F}$ be the family of all subsets $T$ of $S_1 \\cup S_2 \\cup \\cdots \\cup S_k$ such that, for every $i$, the intersection $T \\cap S_i$ is monochromatic. Determine the largest possible number of sets in a subfamily $\\mathcal{G} \\subseteq \\mathcal{F}$ such that no two sets in $\\mathcal{G}$ are disjoint.\n\nA set is monochromatic if all of its elements have the same colour. In particular, the empty set is monochromatic."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. Alice draws a unit area triangle on the board. Then she draws additional triangles by performing $n$ moves in a row. On each move, she chooses a drawn triangle $\\Delta$ with no marked points in its interior, marks a point $P$ in its interior, and draws three smaller triangles by joining $P$ to each vertex of $\\Delta$ with a segment.\n\nOnce these $n$ moves have been performed, Bob chooses three distinct drawn triangles $\\Delta_1$, $\\Delta_2$, and $\\Delta_3$ which contain no marked points in their interiors, such that $\\Delta_2$ shares one side with $\\Delta_1$ and another with $\\Delta_3$. In terms of $n$, determine the largest possible constant $c$ such that Bob can guarantee that the sum of the areas of $\\Delta_1$, $\\Delta_2$, and $\\Delta_3$ is at least $c$, regardless of Alice's choices."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p \\ge 11$ be a prime. Suppose that, if $a$ and $b$ are integers such that $1 \\le a < b \\le p - 3$, then $b! - a!$ is not divisible by $p$. Prove that $p - 5$ is divisible by $8$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\mathcal{S}$ be a finite subset of $\\mathbb{R}^3$. Prove that there exist three polynomials $P(x, y, z)$, $Q(x, y, z)$ and $R(x, y, z)$ with real coefficients, such that a triple of real numbers $(a, b, c)$ is in $\\mathcal{S}$ if and only if the system of equations\n$$P(x, y, z) = a,\\quad Q(x, y, z) = b,\\quad R(x, y, z) = c,$$\ndoes not have a solution in real numbers $x$, $y$, and $z$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For any positive integer $m$, let $\\varphi(m)$ be the number of positive integers less than or equal to $m$ and coprime to $m$. Define $\\varphi_0(m) = m$ and, for each positive integer $k$, $\\varphi_k(m) = \\varphi(\\varphi_{k-1}(m))$. For any integer $n \\ge 3$, prove that\n$$\\varphi_0(2^n - 3) \\cdot \\varphi_1(2^n - 3) \\cdot \\varphi_2(2^n - 3) \\cdot \\ldots \\cdot \\varphi_n(2^n - 3)$$\nhas at most $n$ distinct prime divisors."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle with $AB < AC$, let $O$ be its circumcentre and let $XYZT$ be a parallelogram inside triangle $ABC$ such that\n$$\\angle AXB = \\angle AZC,\\quad \\angle AZB = \\angle AXC,$$\n$$\\angle AYB = \\angle ATC,\\quad \\angle ATB = \\angle AYC.$$\nProve that the diagonals $XZ$ and $YT$ of the parallelogram intersect on the circumcircle of $BOC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k > 1$ be an integer, and let $S$ denote the set of all $(k+1)$-tuples of integers $X = (x_1, \\ldots, x_{k+1})$ such that $1 \\le x_1 < \\cdots < x_{k+1} \\le k^2 + 1$. If $\\sigma$ is a permutation of the numbers $1, 2, \\ldots, k^2 + 1$, say that an element $X$ of $S$ is $\\sigma$-nice if the sequence $\\sigma(x_1), \\sigma(x_2), \\ldots, \\sigma(x_{k+1})$ is monotone. Prove that\n$$\\min_{1 \\le i \\le k} \\left\\lfloor \\frac{x_i}{i} \\right\\rfloor + \\min_{2 \\le i \\le k+1} \\left\\lfloor \\frac{k^2 + 2 - x_i}{k + 2 - i} \\right\\rfloor \\ge k + 1$$\nif and only if there exists a permutation $\\sigma$ such that $X$ is the unique $\\sigma$-nice tuple in $S$."
+        }
+      ]
+    }
+  ]
+}
