@@ -322,11 +322,27 @@
         "Number Theory",
         "Combinatorics"
       ],
-      "reviewed_statement": "Find all permutations $(a_1, a_2, \\dots, a_{2021})$ of the numbers $1, 2, \\dots, 2021$ such that for all positive integers $m$, $n$ with $|m - n| > 2021$,\n$$\\sum_{i=1}^{2021} \\gcd(m + i,\\ n + a_i) < 2|m - n|.$$\n(A permutation $(a_1, a_2, \\dots, a_{2021})$ is a sequence in which each of the numbers $1, 2, \\dots, 2021$ occurs exactly once.)",
+      "reviewed_statement": "Find all permutations $(a_1, a_2, \\dots, a_{2021})$ of the numbers $1, 2, \\dots, 2021$ such that for all positive integers $m$, $n$ satisfying $|m - n| > 20^{21}$ the inequality\n$$\\sum_{i=1}^{2021} \\gcd(m + i,\\ n + a_i) < 2|m - n|$$\nholds. (A permutation $(a_1, a_2, \\dots, a_{2021})$ is a sequence in which each of the numbers $1, 2, \\dots, 2021$ occurs exactly once.)",
       "statement_fingerprint": "edad38fb",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-03",
-      "rationale": "Full-statement review identifies substantial Number Theory and Combinatorics content."
+      "reviewed_at": "2026-10-15",
+      "rationale": "Full-statement review identifies substantial Number Theory and Combinatorics content.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory",
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Find all permutations $(a_1, a_2, \\dots, a_{2021})$ of the numbers $1, 2, \\dots, 2021$ such that for all positive integers $m$, $n$ with $|m - n| > 2021$,\n$$\\sum_{i=1}^{2021} \\gcd(m + i,\\ n + a_i) < 2|m - n|.$$\n(A permutation $(a_1, a_2, \\dots, a_{2021})$ is a sequence in which each of the numbers $1, 2, \\dots, 2021$ occurs exactly once.)",
+          "statement_fingerprint": "edad38fb",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-03",
+          "rationale": "Full-statement review identifies substantial Number Theory and Combinatorics content.",
+          "statement_sha256": "df8a4cb9810042bb527f9493096c3beffe17eefb6615fc50c6170443e14e7dc2"
+        }
+      ],
+      "statement_sha256": "c2e9a0693ec9d75f81c3b76372367839baf25e729b5af6f29cd2a544690707f4",
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "ru.2021.2.8": {
       "topics": [
@@ -601,10 +617,24 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "$100$ ones are written around a circle. Petya and Vasya play a game in which each makes $1010$ moves. On each of his moves Petya chooses $9$ consecutive numbers and decreases each of them by $2$. On each of his moves Vasya chooses $10$ consecutive numbers and increases each of them by $1$. They move alternately, Petya first. Prove that Vasya can play so that after each of his moves at least five of the $100$ numbers are positive, however Petya plays.",
+      "reviewed_statement": "$100$ ones are written around a circle. Petya and Vasya play a game in which each of them makes $10^{10}$ moves. On each of his moves Petya chooses $9$ consecutive numbers and decreases each of them by $2$. On each of his moves Vasya chooses $10$ consecutive numbers and increases each of them by $1$. They move alternately, Petya first. Prove that Vasya can play so that after each of his moves at least five of the $100$ numbers are positive, however Petya plays.",
       "statement_fingerprint": "33b8f886",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-03"
+      "reviewed_at": "2026-10-15",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "$100$ ones are written around a circle. Petya and Vasya play a game in which each makes $1010$ moves. On each of his moves Petya chooses $9$ consecutive numbers and decreases each of them by $2$. On each of his moves Vasya chooses $10$ consecutive numbers and increases each of them by $1$. They move alternately, Petya first. Prove that Vasya can play so that after each of his moves at least five of the $100$ numbers are positive, however Petya plays.",
+          "statement_fingerprint": "33b8f886",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-03",
+          "statement_sha256": "25fbf8b8e945f0ab7a5f6dff47a18eaead87e0aa8b2cfac165565e06cf347f8c"
+        }
+      ],
+      "statement_sha256": "c1550bccdb4a68373d1672652f98fb8c8b3a688c35026039d8365958bd05a04b",
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "ru.2025.2.7": {
       "topics": [

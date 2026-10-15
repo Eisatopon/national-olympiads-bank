@@ -77,6 +77,31 @@
       ]
     },
     {
+      "year": 1964,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the largest perfect square such that after crossing out its last two digits one again obtains a perfect square. (It is assumed that at least one of the crossed-out digits is not zero.)"
+        },
+        {
+          "number": 2,
+          "problem": "$ABCD$ is a circumscribed (tangential) trapezoid, $E$ is the intersection point of its diagonals $AC$ and $BD$, and $r_1$, $r_2$, $r_3$, $r_4$ are the radii of the circles inscribed in the triangles $ABE$, $BCE$, $CDE$, $DAE$, respectively. Prove that\n$$\\frac{1}{r_1}+\\frac{1}{r_3}=\\frac{1}{r_2}+\\frac{1}{r_4}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "In the expression $x_1 : x_2 : \\dots : x_n$ brackets are placed to indicate the order of the operations, and the result is written as a fraction\n$$\\frac{x_{i_1}x_{i_2}\\cdots x_{i_k}}{x_{j_1}x_{j_2}\\cdots x_{j_{n-k}}}$$\n(each of the letters $x_1, x_2, \\dots, x_n$ stands either in the numerator or in the denominator of the fraction). How many different expressions can be obtained in this way over all possible ways of placing the brackets?"
+        },
+        {
+          "number": 4,
+          "problem": "What is the smallest number of non-overlapping tetrahedra into which a cube can be divided?"
+        },
+        {
+          "number": 5,
+          "problem": "An arbitrary set of $n = 2k+1$ integers $a_1, a_2, \\dots, a_{2k+1}$ is given. From it a new set is obtained:\n$$\\frac{a_1+a_2}{2},\\ \\frac{a_2+a_3}{2},\\ \\dots,\\ \\frac{a_{n-1}+a_n}{2},\\ \\frac{a_n+a_1}{2};$$\nfrom this set the next one is obtained by the same rule, and so on. Prove that if all the numbers obtained are integers, then all the original numbers are equal."
+        }
+      ]
+    },
+    {
       "year": 1965,
       "problems": [
         {
@@ -93,7 +118,7 @@
         },
         {
           "number": 4,
-          "problem": "Let $p,q$ be relatively prime positive integers. An integer $n$ is called good if it can be written as $n=px+qy$ with non-negative integers $x,y$, and bad otherwise. How many bad numbers are there?"
+          "problem": "Let $p>0$ and $q>0$ be relatively prime integers. An integer $n$ is called good if it can be written in the form $n=px+qy$ with non-negative integers $x$ and $y$, and bad otherwise. How many non-negative integers are bad?"
         },
         {
           "number": 5,
@@ -118,7 +143,7 @@
         },
         {
           "number": 4,
-          "problem": "The distance between points $A$ and $B$ is $d$ kilometres. An aeroplane flies with constant speed in a constant direction along the line $AB$ (above it) and is observed from both points. The observers report that within one second the angle of elevation of the aeroplane changed by $\\alpha$ degrees as seen from $A$ and by $\\beta$ degrees as seen from $B$. What is the minimum possible speed of the aeroplane?"
+          "problem": "Two points $A$ and $B$, at a distance of $d$ km from each other, simultaneously observe during one second an aeroplane flying along a straight line with constant speed (see the figure). The observers report that during this second the aeroplane moved through the angle $\\alpha$ as seen from $A$, and through the angle $\\beta$ as seen from $B$ (the angles $\\alpha$ and $\\beta$ are acute). What is the smallest possible speed of the aeroplane?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ru_1966_p4_fig.png"
         },
         {
           "number": 5,
@@ -1377,7 +1402,7 @@
         {
           "day": 2,
           "number": 7,
-          "problem": "Find all permutations $(a_1, a_2, \\dots, a_{2021})$ of the numbers $1, 2, \\dots, 2021$ such that for all positive integers $m$, $n$ with $|m - n| > 2021$,\n$$\\sum_{i=1}^{2021} \\gcd(m + i,\\ n + a_i) < 2|m - n|.$$\n(A permutation $(a_1, a_2, \\dots, a_{2021})$ is a sequence in which each of the numbers $1, 2, \\dots, 2021$ occurs exactly once.)"
+          "problem": "Find all permutations $(a_1, a_2, \\dots, a_{2021})$ of the numbers $1, 2, \\dots, 2021$ such that for all positive integers $m$, $n$ satisfying $|m - n| > 20^{21}$ the inequality\n$$\\sum_{i=1}^{2021} \\gcd(m + i,\\ n + a_i) < 2|m - n|$$\nholds. (A permutation $(a_1, a_2, \\dots, a_{2021})$ is a sequence in which each of the numbers $1, 2, \\dots, 2021$ occurs exactly once.)"
         },
         {
           "day": 2,
@@ -1552,7 +1577,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "$100$ ones are written around a circle. Petya and Vasya play a game in which each makes $1010$ moves. On each of his moves Petya chooses $9$ consecutive numbers and decreases each of them by $2$. On each of his moves Vasya chooses $10$ consecutive numbers and increases each of them by $1$. They move alternately, Petya first. Prove that Vasya can play so that after each of his moves at least five of the $100$ numbers are positive, however Petya plays."
+          "problem": "$100$ ones are written around a circle. Petya and Vasya play a game in which each of them makes $10^{10}$ moves. On each of his moves Petya chooses $9$ consecutive numbers and decreases each of them by $2$. On each of his moves Vasya chooses $10$ consecutive numbers and increases each of them by $1$. They move alternately, Petya first. Prove that Vasya can play so that after each of his moves at least five of the $100$ numbers are positive, however Petya plays."
         },
         {
           "day": 2,

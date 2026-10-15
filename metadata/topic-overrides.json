@@ -104626,10 +104626,22 @@
       "topics": [
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p,q$ be relatively prime positive integers. An integer $n$ is called good if it can be written as $n=px+qy$ with non-negative integers $x,y$, and bad otherwise. How many bad numbers are there?",
-      "statement_sha256": "d7d3368673bc2871692b87ecc7277c218fd68084a838e3299bf96156d821601c",
+      "reviewed_statement": "Let $p>0$ and $q>0$ be relatively prime integers. An integer $n$ is called good if it can be written in the form $n=px+qy$ with non-negative integers $x$ and $y$, and bad otherwise. How many non-negative integers are bad?",
+      "statement_sha256": "b1b3a7a2ae3b2f0cb115c474090d41374118b4fc6a33a8ab31fe3dd6f3ffdb6c",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-15",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p,q$ be relatively prime positive integers. An integer $n$ is called good if it can be written as $n=px+qy$ with non-negative integers $x,y$, and bad otherwise. How many bad numbers are there?",
+          "statement_sha256": "d7d3368673bc2871692b87ecc7277c218fd68084a838e3299bf96156d821601c",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "ru.1965.0.5": {
       "topics": [
@@ -104672,10 +104684,22 @@
       "topics": [
         "Geometry"
       ],
-      "reviewed_statement": "The distance between points $A$ and $B$ is $d$ kilometres. An aeroplane flies with constant speed in a constant direction along the line $AB$ (above it) and is observed from both points. The observers report that within one second the angle of elevation of the aeroplane changed by $\\alpha$ degrees as seen from $A$ and by $\\beta$ degrees as seen from $B$. What is the minimum possible speed of the aeroplane?",
-      "statement_sha256": "22cfbcfd646c0f26ef0177609fee31ea3271a2ca5e63aa31667fd554c8dccf72",
+      "reviewed_statement": "Two points $A$ and $B$, at a distance of $d$ km from each other, simultaneously observe during one second an aeroplane flying along a straight line with constant speed (see the figure). The observers report that during this second the aeroplane moved through the angle $\\alpha$ as seen from $A$, and through the angle $\\beta$ as seen from $B$ (the angles $\\alpha$ and $\\beta$ are acute). What is the smallest possible speed of the aeroplane?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ru_1966_p4_fig.png",
+      "statement_sha256": "f8831b6a8cbe8732347eedf9bedd3a0991a1a7fb7718865e1a1c4de015542e0e",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-15",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Geometry"
+          ],
+          "reviewed_statement": "The distance between points $A$ and $B$ is $d$ kilometres. An aeroplane flies with constant speed in a constant direction along the line $AB$ (above it) and is observed from both points. The observers report that within one second the angle of elevation of the aeroplane changed by $\\alpha$ degrees as seen from $A$ and by $\\beta$ degrees as seen from $B$. What is the minimum possible speed of the aeroplane?",
+          "statement_sha256": "22cfbcfd646c0f26ef0177609fee31ea3271a2ca5e63aa31667fd554c8dccf72",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "ru.1966.0.5": {
       "topics": [
@@ -285980,6 +286004,51 @@
       ],
       "reviewed_statement": "On a certain day three men visited a sick friend in hospital, and on the same day their wives did likewise. None of the six visitors went into the sickroom more than once. Each man met the wives of the other two men in the sickroom. Prove that at least one of the men met his own wife in the sickroom.",
       "statement_sha256": "f6c0b9a316d56d27a89210c9a1bb678bed435f2850f787e05e895228050d1113",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "ru.1964.0.1": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "Find the largest perfect square such that after crossing out its last two digits one again obtains a perfect square. (It is assumed that at least one of the crossed-out digits is not zero.)",
+      "statement_sha256": "b026e47b6bd85a1dce0e339e964d7d1e1b38b1d1d6dc3dcdfcf811a204f55d88",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "ru.1964.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "$ABCD$ is a circumscribed (tangential) trapezoid, $E$ is the intersection point of its diagonals $AC$ and $BD$, and $r_1$, $r_2$, $r_3$, $r_4$ are the radii of the circles inscribed in the triangles $ABE$, $BCE$, $CDE$, $DAE$, respectively. Prove that\n$$\\frac{1}{r_1}+\\frac{1}{r_3}=\\frac{1}{r_2}+\\frac{1}{r_4}.$$",
+      "statement_sha256": "99b7817a8eaa82db8def6daee9b9dc743d1822e9c35cf6c70b50e9feea3229e1",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "ru.1964.0.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "In the expression $x_1 : x_2 : \\dots : x_n$ brackets are placed to indicate the order of the operations, and the result is written as a fraction\n$$\\frac{x_{i_1}x_{i_2}\\cdots x_{i_k}}{x_{j_1}x_{j_2}\\cdots x_{j_{n-k}}}$$\n(each of the letters $x_1, x_2, \\dots, x_n$ stands either in the numerator or in the denominator of the fraction). How many different expressions can be obtained in this way over all possible ways of placing the brackets?",
+      "statement_sha256": "3718071219d2e1149428bf4a49feaf9632bce7f046c64d66ccbe6bf8a1512ef3",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "ru.1964.0.4": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "What is the smallest number of non-overlapping tetrahedra into which a cube can be divided?",
+      "statement_sha256": "6bd98cf04ed5fad782d4d6aa0dc09a9c922e351da33e7b0331eb99a3859f8d6d",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "ru.1964.0.5": {
+      "topics": [
+        "Number Theory"
+      ],
+      "reviewed_statement": "An arbitrary set of $n = 2k+1$ integers $a_1, a_2, \\dots, a_{2k+1}$ is given. From it a new set is obtained:\n$$\\frac{a_1+a_2}{2},\\ \\frac{a_2+a_3}{2},\\ \\dots,\\ \\frac{a_{n-1}+a_n}{2},\\ \\frac{a_n+a_1}{2};$$\nfrom this set the next one is obtained by the same rule, and so on. Prove that if all the numbers obtained are integers, then all the original numbers are equal.",
+      "statement_sha256": "80622f74fbad42db2dbc0364c87b6d52985f011a402cb6b2de811ce2e5d6950d",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-15"
     }
