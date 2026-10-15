@@ -1,0 +1,539 @@
+{
+  "competition": "Brazilian Undergraduate Mathematical Olympiad (OBMU)",
+  "source_archive": "https://www.obm.org.br/como-se-preparar/provas-e-gabaritos/",
+  "publication_basis": "AoPS community collections (via the AI-MO/aops copy), secondary; order and wording checked against the official OBM papers where noted. No original-source badges.",
+  "coverage_note": "Final papers (Segunda Fase 2005-2017, single phase from 2020): 2005, 2016, 2017, 2020-2025, each 6 problems, AoPS copy checked against the official obm.org.br papers for order and wording (corrections noted). 2018 (no final in copy), 2019 (P2 missing) and other years not imported.",
+  "years": [
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Determine, as a function of $n$, the number of possible values for the determinant of $A$, given that $A$ is a $n\\times n$ matrix with real entries such that $A^3 - A^2 - 3A + 2I = 0$, where $I$ is the identity and $0$ is the all-zero matrix."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f$ and $g$ be two continuous, distinct functions from $[0,1] \\rightarrow (0,+\\infty)$ such that $\\int_{0}^{1}f(x)dx = \\int_{0}^{1}g(x)dx$. Let $y_n=\\int_{0}^{1}{\\frac{f^{n+1}(x)}{g^{n}(x)}dx}$, for $n\\geq 0$.\n\nProve that $(y_n)$ is an increasing and divergent sequence."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $v_1,v_2,\\ldots,v_n$ be vectors in $\\mathbb{R}^2$ such that $|v_i|\\leq 1$ for $1 \\leq i \\leq n$ and $\\sum_{i=1}^n v_i=0$. Prove that there exists a permutation $\\sigma$ of $(1,2,\\ldots,n)$ such that $\\left|\\sum_{j=1}^k v_{\\sigma(j)}\\right| \\leq\\sqrt 5$ for every $k$, $1\\leq k \\leq n$.\n\nRemark: If $v = (x,y)\\in \\mathbb{R}^2$, $|v| = \\sqrt{x^2 + y^2}$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $a_{n+1} = a_n + \\frac{1}{{a_n}^{2005}}$ and $a_1=1$. Show that $\\sum^{\\infty}_{n=1}{\\frac{1}{n a_n}}$ converges."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Prove that\n$$\\sum_{n=1}^\\infty {1\\over n^n} = \\int_0^1 x^{-x}\\,dx.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Prove that for any natural numbers $0 \\leq i_1 < i_2 < \\cdots < i_k$ and $0 \\leq j_1 < j_2 < \\cdots < j_k$, the matrix $A = (a_{rs})_{1\\leq r,s\\leq k}$, $a_{rs} = {i_r + j_s\\choose i_r} = {(i_r + j_s)!\\over i_r!\\, j_s!}$ ($1\\leq r,s\\leq k$) is nonsingular."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $(a_n)_{n \\geq 1}$ be a sequence of reals such that $\\sum_{n \\geq 1}{\\frac{a_n}{n}}$ converges. Show that\n$$\\lim_{n \\rightarrow \\infty}{\\frac{1}{n} \\cdot \\sum_{k=1}^{n}{a_k}} = 0.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Find all functions $f:\\mathbb{R} \\rightarrow \\mathbb{R}$ such that\n\n$$f(x^2+y^2f(x)) = xf(y)^2-f(x)^2$$\n\nfor every $x, y \\in \\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $k \\geq 1$ be an integer. Define the sequence $(a_n)_{n \\geq 0}$ by $a_0=0$, $a_1=1$ and\n$$a_{n+2} = ka_{n+1}+a_n$$\nfor $n \\geq 0$.\nLet $p$ be an odd prime number. Denote by $m(p)$ the smallest positive integer $m$ such that $p \\mid a_m$. Denote by $T(p)$ the smallest positive integer $T$ such that for every natural $j$ we have $p \\mid (a_{T+j}-a_j)$.\n(i) Show that $T(p) \\leq (p-1) \\cdot m(p)$.\n(ii) Show that if $T(p) = (p-1) \\cdot m(p)$ then\n$$\\prod_{\\substack{1 \\leq j \\leq T(p)-1 \\\\ j \\not\\equiv 0 \\pmod{m(p)}}} a_j \\equiv (-1)^{m(p)-1} \\pmod{p}.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $$A=\\begin{pmatrix} 4 & -\\sqrt{5} \\\\ 2\\sqrt{5} & -3 \\end{pmatrix}.$$ Find all pairs of integers $m,n$ with $n \\geq 1$ and $|m| \\leq n$ such that all entries of $A^n-(m+n^2)A$ are integers."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "A soccer ball is usually made from a polyhedral figure model, with two types of faces, hexagons and pentagons, and at every vertex three faces meet - two hexagons and one pentagon.\n\nWe call a polyhedron soccer-ball if it is similar to the traditional soccer ball, in the following sense: its faces are $m$-gons or $n$-gons, $m \\neq n$, and at every vertex three faces meet, two of them being $m$-gons and the other one being an $n$-gon.\n(i) Show that $m$ needs to be even.\n(ii) Find all soccer-ball polyhedra."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $C,D > 0$. We call a function $f:\\mathbb{R} \\rightarrow \\mathbb{R}$ pretty if $f$ is of class $C^2$, $|x^3f(x)| \\leq C$ and $|xf''(x)| \\leq D$ for every $x$ with $|x| \\geq 1$.\n(i) Show that if $f$ is pretty, then, given $\\epsilon > 0$, there is $x_0 > 0$ such that for every $x$ with $|x| \\geq x_0$, we have $|x^2f'(x)| < \\sqrt{2CD}+\\epsilon$.\n(ii) Show that if $0 < E < \\sqrt{2CD}$ then there is a pretty function $f$ such that for every $x_0 > 0$ there is $x > x_0$ such that $|x^2f'(x)| > E$."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "A polynomial is called positivist if it can be written as a product of two non-constant polynomials with non-negative real coefficients. Let $f(x)$ be a polynomial of degree greater than one such that $f(x^n)$ is positivist for some positive integer $n$. Show that $f(x)$ is positivist."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $a$ and $b$ be fixed positive integers. Show that the set of primes that divide at least one of the terms of the sequence $a_n = a \\cdot 2017^n + b \\cdot 2016^n$ is infinite."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Geometry"
+          ],
+          "problem": "Let $X = \\{(x,y) \\in \\mathbb{R}^2 | y \\geq 0, x^2+y^2 = 1\\} \\cup \\{(x,0),-1\\leq x\\leq 1\\}$ be the boundary of the closed half-disk with radius 1.\n\na) Let $n>1$ be an integer and $P_1,P_2,\\dots,P_n \\in X$. Show that there exists a permutation $\\sigma \\colon \\{1,2,\\dots,n\\}\\to \\{1,2,\\dots,n\\}$ such that\n$$\\sum_{j=1}^{n}|P_{\\sigma(j+1)}-P_{\\sigma(j)}|^2\\leq 8,$$\nwhere $\\sigma(n+1) = \\sigma(1)$.\n\nb) Find all sets $\\{P_1,P_2,\\dots,P_n \\} \\subset X$ such that for any permutation $\\sigma \\colon \\{1,2,\\dots,n\\}\\to \\{1,2,\\dots,n\\}$,\n$$\\sum_{j=1}^{n}|P_{\\sigma(j+1)}-P_{\\sigma(j)}|^2 \\geq 8,$$\nwhere $\\sigma(n+1) = \\sigma(1)$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $(a_n)_{n\\geq 1}$ be a sequence of positive real numbers in which $\\lim_{n\\to\\infty} a_n = 0$ such that there is a constant $c >0$ so that for all $n \\geq 1$, $|a_{n+1}-a_n| \\leq c\\cdot a_n^2$. Show that there exists $d>0$ with $na_n \\geq d, \\forall n \\geq 1$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $d\\leq n$ be positive integers and $A$ a real $d\\times n$ matrix. Let $\\sigma(A)$ be the supremum of $\\inf_{v\\in W,|v|=1}|Av|$ over all subspaces $W$ of $\\mathbb{R}^n$ with dimension $d$.\n\nFor each $j \\leq d$, let $r(j) \\in \\mathbb{R}^n$ be the $j$-th row vector of $A$. Show that:\n\n$$\\sigma(A) \\leq \\min_{i\\leq d} d(r(i), \\langle r(j), j\\ne i\\rangle) \\leq \\sqrt{n}\\sigma(A)$$\n\nHere all norms are Euclidean and $d(r(i), \\langle r(j), j\\ne i\\rangle)$ denotes the distance between $r(i)$ and the span of $r(j), 1 \\leq j \\leq d, j\\ne i$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let's consider words over the alphabet $\\{a,b\\}$ to be sequences of $a$ and $b$ with finite length. We say $u \\leq v$ if $u$ is a subword of $v$ if we can get $u$ by erasing some letters of $v$ (for example $aba \\leq abbab$). We say that $u$ differentiates the words $x$ and $y$ if $u \\leq x$ but $u \\not\\leq y$ or vice versa.\n\nLet $m$ and $l$ be positive integers. We say that two words are $m$-equivalent if there does not exist some $u$ with length at most $m$ that differentiates $x$ and $y$.\n\na) Show that, if $2m \\leq l$, there exists two distinct words with length $l$ that are $m$-equivalent.\nb) Show that, if $2m > l$, any two distinct words with length $l$ aren't $m$-equivalent."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $R > 0$ be an integer, and let $n(R)$ be the number of triples $(x, y, z) \\in \\mathbb{Z}^3$ such that $2x^2+3y^2+5z^2 = R$. What is the value of $\\lim_{ R \\to \\infty}\\frac{n(1) + n(2) + \\cdots + n(R)}{R^{3/2}}$?"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For a positive integer $a$, define $F_1 ^{(a)}=1$, $F_2 ^{(a)}=a$ and for $n>2$, $F_n ^{(a)}=F_{n-1} ^{(a)}+F_{n-2} ^{(a)}$. A positive integer is fibonatic when it is equal to $F_n ^{(a)}$ for a positive integer $a$ and $n>3$. Prove that there are infinitely many integers that are not fibonatic."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $\\mathbb{F}_{13} = \\{\\overline{0}, \\overline{1}, \\cdots, \\overline{12}\\}$ be the finite field with $13$ elements (with sum and product modulus $13$). Find how many matrices $A$ of size $5 \\times 5$ with entries in $\\mathbb{F}_{13}$ exist such that $$A^5 = I$$ where $I$ is the identity matrix of order $5$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "For each of the following, provide proof or a counterexample:\n\na) Every $2\\times2$ matrix with real entries can be written as the sum of the squares of two $2\\times2$ matrices with real entries.\nb) Every $3\\times3$ matrix with real entries can be written as the sum of the squares of two $3\\times3$ matrices with real entries."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $N$ be a positive integer.\n\nIn a spaceship there are $2 \\cdot N$ people, and each two of them are friends or foes (both relationships are symmetric). Two aliens play a game as follows:\n\n1) The first alien chooses any person as she wishes.\n\n2) Thenceforth, alternately, each alien chooses one person not chosen before such that the person chosen on each turn be a friend of the person chosen on the previous turn.\n\n3) The alien that can't play in her turn loses.\n\nProve that second player has a winning strategy if, and only if, the $2 \\cdot N$ people can be divided in $N$ pairs in such a way that two people in the same pair are friends."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f(x) = 2x^2 + x - 1, f^{0}(x) = x$, and $f^{n+1}(x) = f(f^{n}(x))$ for all real $x$ and $n \\ge 0$ integer (that is, $f^{n}$ is $f$ iterated $n$ times).\n\na) Find the number of distinct real roots of the equation $f^{3}(x) = x$.\nb) Find, for each $n \\ge 0$ integer, the number of distinct real solutions of the equation $f^{n}(x) = 0$"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Consider the matrices of the form $$M= \\begin{pmatrix} a & b & c \\\\ c & a & b \\\\ b & c & a \\end{pmatrix}$$ such that $\\det(M) = 1$.\n\nShow that\na) There are infinitely many matrices like above with $a,b,c \\in \\mathbb{Q}$.\nb) There are finitely many matrices like above with $a,b,c \\in \\mathbb{Z}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Find all functions $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ of class $C^2$ (that is, $f$ is twice differentiable and $f''$ is continuous.) such that for every real number $t$ we have $f(t)^2=f(t \\sqrt{2})$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Find all positive integers $k$ for which there is an irrational $\\alpha>1$ and a positive integer $N$ such that $\\left\\lfloor\\alpha^{n}\\right\\rfloor$ is of the form $m^2-k$ with $m \\in \\mathbb{Z}$ for every integer $n>N$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For every positive integer $n>1$, let $k(n)$ be the largest positive integer $k$ such that there exists a positive integer $m$ such that $n = m^k$.\n\nFind $$\\lim_{n \\rightarrow \\infty} \\frac{\\sum_{j=2}^{j=n+1}{k(j)}}{n}$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Find all triplets $(\\lambda_1,\\lambda_2,\\lambda_3) \\in \\mathbb{R}^3$ such that there exists a matrix $A_{3 \\times 3}$ with all entries being non-negative reals whose eigenvalues are $\\lambda_1,\\lambda_2,\\lambda_3$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "We recursively define a set of goody pairs of words on the alphabet $\\{a,b\\}$ as follows:\n\n- $(a,b)$ is a goody pair;\n- $(\\alpha, \\beta) \\not= (a,b)$ is a goody pair if and only if there is a goody pair $(u,v)$ such that $(\\alpha, \\beta) = (uv,v)$ or $(\\alpha, \\beta) = (u,uv)$.\n\nShow that if $(\\alpha, \\beta)$ is a goody pair then there exists a palindrome $\\gamma$ (possibly empty) such that $\\alpha\\beta = a \\gamma b$"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $0<a<1$. Find all functions $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ continuous at $x = 0$ such that $f(x) + f(ax) = x,\\, \\forall x \\in \\mathbb{R}$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $G$ be the set of $2\\times 2$ matrices $$G = \\left\\{ \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\mid\\, a,b,c,d \\in \\mathbb{Z},\\ ad-bc = 1,\\ c \\text{ is a multiple of } 3 \\right\\}$$ and consider two matrices in $G$: $$A = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}, \\qquad B = \\begin{pmatrix} -1 & 1 \\\\ -3 & 2 \\end{pmatrix}.$$ Show that any matrix in $G$ can be written as a product $M_1M_2\\cdots M_r$ such that $M_i \\in \\{A, A^{-1}, B, B^{-1}\\}$ for all $i \\leq r$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $(a_n)_{n \\in \\mathbb{N}}$ be a sequence of integers. Define $a_n^{(0)} = a_n$ for all $n \\in \\mathbb{N}$. For all $M \\geq 0$, we define $(a_n^{(M + 1)})_{n \\in \\mathbb{N}}:\\, a_n^{(M + 1)} = a_{n + 1}^{(M)} - a_n^{(M)}, \\forall n \\in \\mathbb{N}$. We say that $(a_n)_{n \\in \\mathbb{N}}$ is $(M + 1)$-self-referencing if there exists $k_1$ and $k_2$ fixed positive integers such that $a_{n + k_1} = a_{n + k_2}^{(M + 1)}, \\forall n \\in \\mathbb{N}$.\n\n(a) Does there exist a sequence of integers such that the smallest $M$ such that it is $M$-self-referencing is $M = 2022$?\n\n(b) Does there exist a strictly increasing sequence of positive integers such that the smallest $M$ such that it is $M$-self-referencing is $M = 2022$?"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\alpha, c > 0$, define $x_1 = c$ and let $x_{n + 1} = x_n e^{-x_n^\\alpha}$ for $n \\geq 1$. For which values of $\\beta$ does $\\sum_{n = 1}^{\\infty} x_n^\\beta$ converge?"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Given $X \\subset \\mathbb{N}$, define $d(X)$ as the largest $c \\in [0, 1]$ such that for any $a < c$ and $n_0\\in \\mathbb{N}$, there exists $m, r \\in \\mathbb{N}$ with $r \\geq n_0$ and $\\frac{\\mid X \\cap [m, m+r)\\mid}{r} \\geq a$.\n\nLet $E, F \\subset \\mathbb{N}$ such that $d(E)d(F) > 1/4$. Prove that for any prime $p$ and $k\\in\\mathbb{N}$, there exists $m \\in E, n \\in F$ such that $m\\equiv n \\pmod{p^k}$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $p \\equiv 3 \\,(\\textrm{mod}\\, 4)$ be a prime and $\\theta$ some angle such that $\\tan(\\theta)$ is rational. Prove that $\\tan((p+1)\\theta)$ is a rational number with numerator divisible by $p$, that is, $\\tan((p+1)\\theta) = \\frac{u}{v}$ with $u, v \\in \\mathbb{Z}, v >0, \\gcd(u, v) = 1$ and $u \\equiv 0 \\,(\\textrm{mod}\\,p)$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $p$ be the potentioral function, from positive integers to positive integers, defined by $p(1) = 1$ and $p(n + 1) = p(n)$, if $n + 1$ is not a perfect power and $p(n + 1) = (n + 1) \\cdot p(n)$, otherwise. (A positive integer is a perfect power if it equals $a^b$ for some integers $a, b \\geq 2$.) Is there a positive integer $N$ such that, for all $n > N,$ $p(n) > 2^n$?"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $a_n = \\frac{1}{\\binom{2n}{n}}, \\forall n \\geq 1$.\n\na) Show that $\\sum\\limits_{n=1}^{+\\infty}a_nx^n$ converges for all $x \\in (-4, 4)$ and that the function $f(x) = \\sum\\limits_{n=1}^{+\\infty}a_nx^n$ satisfies the differential equation $x(x - 4)f'(x) + (x + 2)f(x) = -x$.\n\nb) Prove that $\\sum\\limits_{n=1}^{+\\infty}\\frac{1}{\\binom{2n}{n}} = \\frac{1}{3} + \\frac{2\\pi\\sqrt{3}}{27}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Prove that there exists a constant $C > 0$ such that, for any integers $m, n$ with $n \\geq m > 1$ and any real number $x > 1$, $$\\sum_{k=m}^{n}\\sqrt[k]{x} \\leq C\\bigg(\\frac{m^2 \\cdot \\sqrt[m-1]{x}}{\\log{x}} + n\\bigg)$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $M_2(\\mathbb{Z})$ be the set of $2 \\times 2$ matrices with integer entries. Let $A \\in M_2(\\mathbb{Z})$ such that $$A^2+5I=0,$$ where $I \\in M_2(\\mathbb{Z})$ and $0 \\in M_2(\\mathbb{Z})$ denote the identity and null matrices, respectively. Prove that there exists an invertible matrix $C \\in M_2(\\mathbb{Z})$ with $C^{-1} \\in M_2(\\mathbb{Z})$ such that $$CAC^{-1} = \\begin{pmatrix} 1 & 2 \\\\ -3 & -1 \\end{pmatrix} \\text{ or } CAC^{-1} = \\begin{pmatrix} 0 & 1 \\\\ -5 & 0 \\end{pmatrix}.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "A drunken horse moves on an infinite board whose squares are numbered in pairs $(a, b) \\in \\mathbb{Z}^2$. In each movement, the 8 possibilities $$(a, b) \\rightarrow (a \\pm 1, b \\pm 2),$$ $$(a, b) \\rightarrow (a \\pm 2, b \\pm 1)$$ are equally likely. Knowing that the knight starts at $(0, 0)$, calculate the probability that, after $2023$ moves, it is in a square $(a, b)$ with $a \\equiv 4 \\pmod 8$ and $b \\equiv 5 \\pmod 8$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Determine all pairs $(c, d) \\in \\mathbb{R}^2$ of real constants such that there is a sequence $(a_n)_{n\\geq1}$ of positive real numbers such that, for all $n \\geq 1$, $$a_n \\geq c \\cdot a_{n+1} + d \\cdot \\sum_{1 \\leq j < n} a_j .$$"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "A positive integer $n$ is called perfect if the sum of its positive divisors $\\sigma(n)$ is twice $n$, that is, $\\sigma(n) = 2n$. For example, $6$ is a perfect number since the sum of its positive divisors is $1 + 2 + 3 + 6 = 12$, which is twice $6$. Prove that if $n$ is a positive perfect integer, then:\n$$\\sum_{p|n} \\frac{1}{p + 1} < \\ln 2 < \\sum_{p|n} \\frac{1}{p - 1}$$\nwhere the sums are taken over all prime divisors $p$ of $n$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "For each pair of integers $j, k \\geq 2$, define the function $f_{jk} : \\mathbb{R} \\to \\mathbb{R}$ given by\n\n$$f_{jk}(x) = 1 - (1 - x^j)^k.$$\n\n(a) Prove that for any integers $j, k \\geq 2$, there exists a unique real number $p_{jk} \\in (0, 1)$ such that $f_{jk}(p_{jk}) = p_{jk}$. Furthermore, defining $\\lambda_{jk} := f'_{jk}(p_{jk})$, prove that $\\lambda_{jk} > 1$.\n\n(b) Prove that $p^j_{jk} = 1 - p_{kj}$ for any integers $j, k \\geq 2$.\n\n(c) Prove that $\\lambda_{jk} = \\lambda_{kj}$ for any integers $j, k \\geq 2$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Consider a game on an $n \\times n$ board, where each square starts with exactly one stone. A move consists of choosing $5$ consecutive squares in the same row or column of the board and toggling the state of each of those squares (removing the stone from squares with a stone and placing a stone in squares without a stone). For which positive integers $n \\geq 5$ is it possible to end up with exactly one stone on the board after a finite number of moves?"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "We say that a function $f: \\mathbb{R} \\to \\mathbb{R}$ is morally odd if its graph is symmetric with respect to a point, that is, there exists $(x_0, y_0) \\in \\mathbb{R}^2$ such that if $(u, v) \\in \\{(x, f(x)) : x \\in \\mathbb{R}\\}$, then $(2x_0 - u, 2y_0 - v) \\in \\{(x, f(x)) : x \\in \\mathbb{R}\\}$. On the other hand, $f$ is said to be morally even if its graph $\\{(x, f(x)) : x \\in \\mathbb{R}\\}$ is symmetric with respect to some line (not necessarily vertical or horizontal). If $f$ is morally even and morally odd, we say that $f$ is parimpar.\n\n(a) Let $S \\subset \\mathbb{R}$ be a bounded set and $f: S \\to \\mathbb{R}$ be an arbitrary function. Prove that there exists $g: \\mathbb{R} \\to \\mathbb{R}$ that is parimpar such that $g(x) = f(x)$ for all $x \\in S$.\n\n(b) Find all polynomials $P$ with real coefficients such that the corresponding polynomial function $P: \\mathbb{R} \\to \\mathbb{R}$ is parimpar."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $A$ be a $2 \\times 2$ matrix with integer entries and $\\det A \\neq 0$. If the sequence $\\operatorname{tr}(A^n)$, for $n = 1, 2, 3, \\ldots$, is bounded, show that\n$$A^{12} = I \\quad \\text{or} \\quad (A^2 - I)^2 = O.$$\nHere, $I$ and $O$ denote the identity and zero matrices, respectively, and $\\operatorname{tr}$ denotes the trace of the matrix (the sum of the elements on the main diagonal)."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For each positive integer $n$, list in increasing order all irreducible fractions in the interval $[0, 1]$ that have a positive denominator less than or equal to $n$:\n\n$$0 = \\frac{p_0}{q_0} < \\frac{1}{n} = \\frac{p_1}{q_1} < \\cdots < \\frac{1}{1} = \\frac{p_{M(n)}}{q_{M(n)}}.$$\n\nLet $k$ be a positive integer. We define, for each $n$ such that $M(n) \\geq k - 1$,\n\n$$f_k(n) = \\min \\left\\{ \\sum_{s=0}^{k-1} q_{j+s} : 0 \\leq j \\leq M(n) - k + 1 \\right\\}.$$\n\nDetermine, in function of $k$,\n\n$$\\lim_{n \\to \\infty} \\frac{f_k(n)}{n}.$$\n\nFor example, if $n = 4$, the enumeration is\n\n$$\\frac{0}{1} < \\frac{1}{4} < \\frac{1}{3} < \\frac{1}{2} < \\frac{2}{3} < \\frac{3}{4} < \\frac{1}{1},$$\n\nwhere $p_0 = 0, p_1 = 1, p_2 = 1, p_3 = 1, p_4 = 2, p_5 = 3, p_6 = 1$ and $q_0 = 1, q_1 = 4, q_2 = 3, q_3 = 2, q_4 = 3, q_5 = 4, q_6 = 1$. In this case, we have $f_1(4) = 1, f_2(4) = 5, f_3(4) = 8, f_4(4) = 10, f_5(4) = 13, f_6(4) = 17$, and $f_7(4) = 18$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\pi(x)$ be the quantity of prime numbers less than or equal to $x$, for every $x\\in \\mathbb{R}$. Prove that there does not exist a continuous function $f : [0,+\\infty) \\to \\mathbb{R}$ such that\n$$\\lim_{x \\to \\infty} \\left(f(x) - \\pi(x)\\right) = 0.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Determine whether there exist integers $a, b, c, d$ such that there are sequences $(x_n)$ and $(y_n)$ satisfying:\n$$x_0 = y_0 = 0$$\n$$x_1 = y_1 = 1$$\n$$x_{n+2} = a\\cdot x_{n+1} + b\\cdot x_n$$\n$$y_{n+2} = c\\cdot y_{n+1} + d\\cdot y_n$$\nwith $y_n\\neq 0$, for $n\\geq 1$. Furthermore, the following two conditions are both satisfied:\nI- There exist infinitely many integers $k$ such that\n$$1 - \\frac{1}{2^{2025}} < \\frac{|x_k|}{|y_k|} < 1 + \\frac{1}{2^{2025}}$$\nII- There exist infinitely many integers $p$ such that\n$$\\frac{|x_p|}{|y_p|} > 2^{2025}$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Given a non-empty set $X \\subset \\mathbb{R}^k$, for $k \\in \\{2, 3\\}$, we say that $q$ is a vector of minimum norm in $X$ if $q \\in X$ and $\\|q\\| \\le \\|p\\|$ for all $p \\in X$.\n\n(a) Let $A : \\mathbb{R}^2 \\to \\mathbb{R}^2$ be an invertible linear transformation, and let $\\Lambda = A(\\mathbb{Z}^2) = \\{A(x, y) \\mid x, y \\in \\mathbb{Z}\\}$. Let $u$ be a vector of minimum norm in $\\Lambda \\setminus \\{(0,0)\\}$ and $v$ be a vector of minimum norm in $\\Lambda \\setminus \\{tu \\mid t \\in \\mathbb{R}\\}$. Prove that $\\Lambda = \\{ku + mv \\mid k, m \\in \\mathbb{Z}\\}$.\n\n(b) Let $B : \\mathbb{R}^3 \\to \\mathbb{R}^3$ be an invertible linear transformation, and $\\Gamma = B(\\mathbb{Z}^3) = \\{B(x, y, z) \\mid x, y, z \\in \\mathbb{Z}\\}$.\nSuppose that $u$ is a vector of minimum norm in $\\Gamma \\setminus \\{(0, 0, 0)\\}$, $v$ is a vector of minimum norm in $\\Gamma \\setminus \\{tu \\mid t \\in \\mathbb{R}\\}$, and $w$ is a vector of minimum norm in $\\Gamma \\setminus \\{tu + sv \\mid t, s \\in \\mathbb{R}\\}$. Prove that $\\Gamma = \\{ku + mv + nw \\mid k, m, n \\in \\mathbb{Z}\\}$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $A$ and $B$ be complex matrices of dimension $n\\times n$, and let $P(x) \\in \\mathbb{C}[x]$ be a non-constant polynomial such that\n$$AB = P(A)$$\nand $P(0)\\neq 0$. Prove that the matrix $A$ is invertible and $AB = BA$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "a) Let $(a_n)_{n \\geq 1}$ be a decreasing sequence of positive terms such that $\\sum_{n = 1}^{\\infty} \\frac{a_{n}}{n}$ diverges. Prove that for every increasing sequence $(n_k)_{k \\geq 1}$ such that the ratio $\\frac{n_{k+1}}{n_{k}}$ is bounded, the series $\\sum_{k=1}^{\\infty} a_{n_{k}}$ also diverges.\nb) Prove that for any sequence of positive real numbers $(a_n)$, such that $\\sum_{n=1}^{\\infty}\\frac{a_n}{n}$ converges, there exists an increasing sequence of positive integers $(n_k)$, such that $\\lim_{k\\to \\infty}\\frac{n_{k+1}}{n_k}=1$ and $\\sum_{k=1}^{\\infty} a_{n_k}$ also converges."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "(a) Let $g: \\mathbb{R} \\to (-1, 1)$ be the bijection given by $$g(x) = \\tanh(x) = \\frac{e^{2x} - 1}{e^{2x} + 1}.$$ Given $r \\in [0, 1)$, prove that there exists $\\lambda(r) \\in [0, 1)$ with the following property: for every rational function $$f(x) = \\frac{ax+b}{cx+d}$$ with $a, b, c, d$ being real numbers and $|d| > |c|$, such that $f((-1, 1)) \\subset (-r, r)$, we have $$|(g^{-1} \\circ f \\circ g)'(x)| \\le \\lambda(r), \\quad \\forall x \\in \\mathbb{R}.$$\n(b) Determine the smallest possible value $\\lambda = \\lambda(r)$ from the previous part."
+        }
+      ]
+    }
+  ]
+}

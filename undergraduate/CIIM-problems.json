@@ -1,0 +1,904 @@
+{
+  "competition": "Iberoamerican Interuniversity Mathematics Competition (CIIM)",
+  "source_archive": "https://www.obm.org.br/como-se-preparar/provas-e-gabaritos/",
+  "publication_basis": "AoPS community collections (via the AI-MO/aops copy), secondary; order and wording checked against the official OBM papers where noted. No original-source badges.",
+  "coverage_note": "2009-2015, 2017-2025, 6 problems each, AoPS copy; order and days checked against the official papers for 2012-2015, 2017, 2018, 2020-2025 (corrections noted); 2009-2011 and 2019 order unverified, no day split. 2016 not imported (2 of 6 in copy).",
+  "years": [
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Prove that for any positive integer $n$ the number $\\left(\\frac{3+\\sqrt{17}}{2}\\right)^n+\\left(\\frac{3-\\sqrt{17}}{2}\\right)^n$ is an odd integer."
+        },
+        {
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Determine if for all natural $n$ there is a $n \\times n$ matrix of real entries such that its determinant is 0 and that changing any entry produce another matrix with nonzero determinant."
+        },
+        {
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $r > n$ be positive integers. A \"good word\" is an $n$-tuple $\\langle a_1,\\dots, a_n \\rangle$ of distinct positive integers between 1 and $r$. A \"play\" consist of changing a integer $a_i$ of a good word, in such a way that the resulting word is still a good word. The distance between two good words $A= \\langle a_1,\\dots, a_n \\rangle$ and $B = \\langle b_1,\\dots, b_n \\rangle$ is the minimum number of plays needed to obtain B from A. Find the maximum possible distance between two good words."
+        },
+        {
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $\\epsilon$ be an $n$-th root of the unity and suppose $z=p(\\epsilon)$ is a real number where $p$ is some polynomial with integer coefficients. Prove there exists a polynomial $q$ with integer coefficients such that $z=q(2\\cos(2\\pi/n))$."
+        },
+        {
+          "number": 5,
+          "topics": [
+            "Geometry"
+          ],
+          "problem": "Let $m$ be a line in the plane and $M$ a point not in $m$. Find the locus of the focus of the parabolas with vertex $M$ that are tangent to $m$."
+        },
+        {
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f:\\mathbb{R} \\to \\mathbb{R}$, such that\n\ni) For all $a \\in \\mathbb{R}$ and all $\\epsilon > 0$, exists $\\delta > 0$ such that $|x-a| < \\delta \\Rightarrow f(x) < f(a) + \\epsilon.$\nii) For all $b\\in \\mathbb{R}$ and all $\\epsilon > 0$, exists $x,y \\in \\mathbb{R}$ with $b - \\epsilon < x < b < y < b + \\epsilon$, such that $|f(x)-f(b)|< \\epsilon$ and $|f(y)-f(b)| < \\epsilon.$\nProve that if $f(a) < d < f(d)$ there exists $c$ with $a < c < b$ or $b < c < a$ such that $f(c) = d$."
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "A set $X\\subset \\mathbb{R}$ has dimension zero if, for any $\\epsilon > 0$ there exists a positive integer $k$ and intervals $I_1,I_2,...,I_k$ such that $X \\subset I_1 \\cup I_2 \\cup \\cdots \\cup I_k$ with $\\sum_{j=1}^k |I_j|^{\\epsilon} < \\epsilon$.\n\nProve that there exist sets $X,Y \\subset [0,1]$ both of dimension zero, such that $X+Y = [0,2].$"
+        },
+        {
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "A group is called locally cyclic if any finitely generated subgroup is cyclic. Prove that a locally cyclic group is isomorphic to one of its proper subgroups if and only if it's isomorphic to a proper subgroup of the rational numbers with the addition."
+        },
+        {
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Given two vectors $v = (v_1,\\dots,v_n)$ and $w = (w_1\\dots,w_n)$ in $\\mathbb{R}^n$, lets define $v*w$ as the matrix in which the element of row $i$ and column $j$ is $v_iw_j$. Supose that $v$ and $w$ are linearly independent. Find the rank of the matrix $v*w - w*v.$"
+        },
+        {
+          "number": 4,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "In one side of a hall there are $2N$ rooms numbered from 1 to $2N$. In each room $i$ between 1 and $N$ there are $p_i$ beds. Is needed to move every one of this beds to the roms from $N+ 1$ to $2N$, in such a way that for every $j$ between $N+1$ and $2N$ the room $j$ will have $p_j$ beds. Supose that each bed can be move once and the price of moving a bed from room $i$ to room $j$ is $(i-j)^2$.\nFind a way to move every bed such that the total cost is minimize.\n\nNote: The numbers $p_i$ are given and satisfy that $p_1 + p_2 + \\cdots + p_N = p_{N+1} + p_{N+2} + \\cdots+ p_{2N}.$"
+        },
+        {
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f:[0,1] \\to [0,1]$ a increasing continuous function, differentiable in $(0,1)$ and with derivative smaller than 1 in every point. The sequence of sets $A_1,A_2,A_3,\\dots$ is define as: $A_1 = f([0,1])$, and for $n \\geq 2, A_n = f(A_{n-1}).$ Prove that $\\displaystyle \\lim_{n\\to+\\infty} d(A_n) = 0$, where $d(A)$ is the diameter of the set $A$.\n\nNote: The diameter of a set $X$ is define as $d(X) = \\sup_{x,y\\in X} |x-y|.$"
+        },
+        {
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $n,d$ be integers with $n,k > 1$ such that $\\gcd(n,d!) = 1$. Prove that $n$ and $n+d$ are primes if and only if $$d!d((n-1)!+1) + n(d!-1) \\equiv 0 \\pmod{n(n+d)}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Find all real numbers $a$ for which there exist different real numbers $b, c, d$\ndifferent from $a$ such that the four tangents drawn to the curve $y = \\sin (x)$ at the points $(a, \\sin (a)), (b, \\sin (b)), (c, \\sin (c))$ and $(d, \\sin (d))$ form a rectangle."
+        },
+        {
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $k$ be a positive integer, and let $a$ be an integer such that $a-2$ is a multiple of $7$ and $a^6-1$ is a multiple of $7^k$.\n\nProve that $(a + 1)^6-1$ is also a multiple of $7^k$."
+        },
+        {
+          "number": 3,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f(x)$ be a rational function with complex coefficients whose denominator does not have multiple roots. Let $u_0, u_1,... , u_n$ be the complex roots of $f$ and $w_1, w_2,..., w_m$ be the roots of $f'$. Suppose that $u_0$ is a simple root of $f$. Prove that\n$$\\sum_{k=1}^m \\frac{1}{w_k - u_0} = 2\\sum_{k = 1}^n\\frac{1}{u_k - u_0}.$$"
+        },
+        {
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "For $n \\geq 3$, let $(b_0, b_1,..., b_{n-1}) = (1, 1, 1, 0, ..., 0).$ Let $C_n = (c_{i, j})$ the $n \\times n$ matrix defined by $c_{i, j} = b_{(j-i) \\bmod n}$. Show that $\\det (C_n) = 3$ if $n$ is not a multiple of 3 and $\\det (C_n) = 0$ if $n$\nis a multiple of 3."
+        },
+        {
+          "number": 5,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $n$ be a positive integer with $d$ digits, all different from zero. For $k = 0,. . . , d - 1$, we define $n_k$ as the number obtained by moving the last $k$ digits of $n$ to the beginning. For example, if $n = 2184$ then $n_0 = 2184, n_1 = 4218, n_2 = 8421, n_3 = 1842$. For $m$ a positive integer, define $s_m(n)$ as the number of values $k$ such that $n_k$ is a multiple of $m.$ Finally, define $a_d$ as the number of integers $n$ with $d$ digits all nonzero, for which $s_2 (n) + s_3 (n) + s_5 (n) = 2d.$\nFind $$\\lim_{d \\to \\infty} \\frac{a_d}{5^d}.$$"
+        },
+        {
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\Gamma$ be the branch $x> 0$ of the hyperbola $x^2 - y^2 = 1.$ Let $P_0, P_1,..., P_n$ different points of $\\Gamma$ with $P_0 = (1, 0)$ and $P_1 = (13/12, 5/12)$. Let $t_i$ be the tangent line to $\\Gamma$ at $P_i$. Suppose that for all $i \\geq 0$ the area of the region bounded by $t_i, t_{i +1}$ and $\\Gamma$ is a constant independent of $i$. Find the coordinates of the points $P_i$."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "For each positive integer $n$ let $A_n$ be the $n \\times n$ matrix such that its $a_{ij}$ entry is equal to ${i+j-2 \\choose j-1}$ for all $1\\leq i,j \\leq n.$ Find the determinant of $A_n$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "A set $A\\subset \\mathbb{Z}$ is \"padre\" if whenever $x,y \\in A$ with $x\\leq y$ then also $2y -x \\in A$. Prove that if $A$ is \"padre\", $0,a,b \\in A$ with $0< a < b$ and $d = \\gcd(a,b)$ then $$a+b-3d, a+b-2d \\in A.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $a,b,c,$ the lengths of the sides of a triangle. Prove that $$\\sqrt{\\frac{(3a+b)(3b+a)}{(2a+c)(2b+c)}} + \\sqrt{\\frac{(3b+c)(3c+b)}{(2b+a)(2c+a)}} + \\sqrt{\\frac{(3c+a)(3a+c)}{(2c+b)(2a+b)}} \\geq 4.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f(x) = \\frac{\\sin(x)}{x}$ Find $$\\lim_{T\\to\\infty}\\frac{1}{T}\\int_0^T\\sqrt{1+f'(x)^2}dx.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $D=\\{0,1,\\dots,9\\}$. A direction function for $D$ is a function $f:D \\times D \\to \\{0,1\\}.$\nA real $r\\in [0,1]$ is compatible with $f$ if it can be written in the form $$r = \\sum_{j=1}^{\\infty} \\frac{d_j}{10^j}$$ with $d_j \\in D$ and $f(d_j,d_{j+1})=1$ for every positive integer $j$.\n\nDetermine the least integer $k$ such that for any direction fuction $f$, if there are $k$ compatible reals with $f$ then there are infinite reals compatible with $f$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $n \\geq 2$ and $p(x) = x^n + a_{n-1} x^{n-1} + \\cdots + a_1 x + a_0$ a polynomial with real coefficients. Show that if there exists a positive integer $k$ such that $(x-1)^{k+1}$ divides $p(x)$ then $$\\sum_{j=0}^{n-1}|a_j| > 1 +\\frac{2k^2}{n}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Given two natural numbers $m$ and $n$, denote by $\\overline{m.n}$ the number obtained by writing $m$ followed by $n$ after the decimal dot.\n\na) Prove that there are infinitely many natural numbers $k$ such that for any of them the equation $\\overline{m.n} \\times \\overline{n.m} = k$ has no solution.\n\nb) Prove that there are infinitely many natural numbers $k$ such that for any of them the equation $\\overline{m.n} \\times \\overline{n.m} = k$ has a solution."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Consider a polynomial $p \\in \\mathbb{R}[x]$ of degree $n$ and with no real roots. Prove that $$\\int_{-\\infty}^{\\infty}\\frac{(p'(x))^2}{(p(x))^2+(p'(x))^2}dx$$ converges, and is less or equal than $n^{3/2}\\pi.$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Given a set of boys and girls, we call a pair $(A,B)$ amicable if $A$ and $B$ are friends. The friendship relation is symmetric. A set of people is affectionate if it satisfy the following conditions:\n\ni) The set has the same number of boys and girls.\n\nii) For every four different people $A,B,C,D$ if the pairs $(A,B),(B,C),(C,D)$ and $(D,A)$ are all amicable, then at least one of the pairs $(A,C)$ and $(B,D)$ is also amicable.\niii) At least $\\frac{1}{2013}$ of all boy-girl pairs are amicable.\n\nLet $m$ be a positive integer. Prove that there exists an integer $N(m)$ such that if a affectionate set has al least $N(m)$ people, then there exists $m$ boys that are pairwise friends or $m$ girls that are pairwise friends."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $a_1,b_1,c_1,a_2,b_2,c_2$ be positive real number and $F,G:(0,\\infty)\\times(0,\\infty)\\to(0,\\infty)$ be two differentiable and positive functions that satisfy the identities: $$\\frac{x}{F} = 1 + a_1x+ b_1y + c_1G$$ $$\\frac{y}{G} = 1 + a_2x+ b_2y + c_2F.$$ Prove that if $0 < x_1 \\leq x_2$ and $0 < y_2 \\leq y_1$, then $F(x_1,y_1) \\leq F(x_2,y_2)$ and $G(x_1,y_1) \\geq G(x_2,y_2).$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $A,B$ be $n\\times n$ matrices with complex entries. Show that there exists a matrix $T$ and an invertible matrix $S$ such that $$B=S(A+T)S^{-1}\\ -T \\iff \\operatorname{tr}(A) = \\operatorname{tr}(B)$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $(X,d)$ be a metric space with $d:X\\times X \\to \\mathbb{R}_{\\geq 0}$. Suppose that $X$ is connected and compact. Prove that there exists an $\\alpha \\in \\mathbb{R}_{\\geq 0}$ with the following property: for any integer $n > 0$ and any $x_1,\\dots,x_n \\in X$, there exists $x\\in X$ such that the average of the distances from $x_1,\\dots,x_n$ to $x$ is $\\alpha$ i.e. $$\\frac{d(x,x_1)+d(x,x_2)+\\cdots+d(x,x_n)}{n} = \\alpha.$$"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $g:[2013,2014]\\to\\mathbb{R}$ a function that satisfy the following two conditions:\n\ni) $g(2013)=g(2014) = 0,$\nii) for any $a,b \\in [2013,2014]$ it hold that $g\\left(\\frac{a+b}{2}\\right) \\leq g(a) + g(b).$\nProve that $g$ has zeros in any open subinterval $(c,d) \\subset[2013,2014].$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $n$ be a positive integer and $p$ a prime greater than 2. Show that: $$(p-1)^n n! \\mid (p^n-1)(p^n-p)(p^n-p^2)\\cdots(p^n-p^{n-1}).$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Given $n\\geq2$, let $\\mathcal{A}$ be a family of subsets of the set $\\{1,2,\\dots,n\\}$ such that, for any $A_1,A_2,A_3,A_4 \\in \\mathcal{A}$, it holds that $|A_1 \\cup A_2 \\cup A_3 \\cup A_4| \\leq n -2$.\nProve that $|\\mathcal{A}| \\leq 2^{n-2}.$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $\\{a_i\\}$ be a strictly increasing sequence of positive integers. Define the sequence $\\{s_k\\}$ as $$s_k = \\sum_{i=1}^{k}\\frac{1}{[a_i,a_{i+1}]},$$ where $[a_i,a_{i+1}]$ is the least commun multiple of $a_i$ and $a_{i+1}$.\nShow that the sequence $\\{s_k\\}$ is convergent."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "A analytic function $f:\\mathbb{C}\\to\\mathbb{C}$ is call interesting if $f(z)$ is real along the parabola $Re (z) = (Im (z))^2$.\n\na) Find an example of a non constant interesting function.\nb) Show that every interesting function $f$ satisfy that $f'(-3/4) = 0.$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "a) Let $\\{x_n\\}$ be a sequence with $x_n \\in [0,1]$ for any $n$. Prove that there exists $C > 0$ such that for every positive integer $r$, there exists $m \\geq 1$ and $n > m + r$ that satisfy $(n-m)|x_n-x_m| \\leq C$.\nb) Prove that for every $C > 0$, there exists a sequence $\\{x_n\\}$ with $x_n \\in [0,1]$ for all $n$ and an integer $r$ such that, if $m \\geq 1$ and $n > m+r$, then $(n-m)|x_n-x_m| > C.$"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Find the real number $a$ such that the integral $$\\int_a^{a+8}e^{-x}e^{-x^2}dx$$ attain its maximum."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Find all polynomials $P(x)$ with real coefficients that satisfy the identity $$P(x^3-2)=P(x)^3-2,$$ for every real number $x$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Consider the matrices $$A = \\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix} \\text{ and } B = \\begin{pmatrix} 1 & 0 \\\\ 2 & 1 \\end{pmatrix}.$$ Let $k\\geq 1$ an integer. Prove that for any nonzero $i_1,i_2,\\dots,i_{k-1},j_1,j_2,\\dots,j_k$ and any integers $i_0,i_k$ it holds that $$A^{i_0}B^{j_1}A^{i_1}B^{j_2}\\cdots A^{i_{k-1}}B^{j_k}A^{i_k} \\not = I.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f:\\mathbb{R} \\to \\mathbb{R}$ a continuous function and $\\alpha$ a real number such that $$\\lim_{x\\to\\infty}f(x) = \\lim_{x\\to-\\infty}f(x) = \\alpha.$$ Prove that for any $r > 0,$ there exists $x,y \\in \\mathbb{R}$ such that $y-x = r$ and $f(x) = f(y).$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "There are $n$ people seated on a circular table that have seats numbered from 1 to $n$ clockwise. Let $k$ be a fix integer with $2 \\leq k \\leq n$. The people can change their seats. There are two types of moves permitted:\n\n1. Each person moves to the next seat clockwise.\n2. Only the ones in seats 1 and $k$ exchange their seats.\n\nDetermine, in function of $n$ and $k$, the number of possible configurations of people in the table that can be attain by using a sequence of permitted moves."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Show that there exists a real $C > 1$ that satisfy the following property: if $n > 1$ and $a_0 < a_1 < \\cdots < a_n$ are positive integers such that $\\frac{1}{a_0},\\frac{1}{a_1},\\dots,\\frac{1}{a_n}$ are in arithmetic progression, then $a_0 > C^n.$"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Determine all the complex numbers $w = a + bi$ with $a, b \\in \\mathbb{R}$, such that there exists a polynomial $p(z)$ whose coefficients are real and positive such that $p(w) = 0.$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $f :\\mathbb{R} \\to \\mathbb{R}$ a derivable function such that $f(0) = 0$ and $|f'(x)| \\leq |f(x)\\cdot log |f(x)||$ for every $x \\in \\mathbb{R}$ such that $0 < |f(x)| < 1/2.$ Prove that $f(x) = 0$ for every $x \\in \\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $G$ be a finite abelian group and $f :\\mathbb{Z}^+ \\to G$ a completely multiplicative function (i.e. $f(mn) = f(m)f(n)$ for any positive integers $m, n$). Prove that there are infinitely many positive integers $k$ such that $f(k) = f(k + 1).$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $m, n$ be positive integers and $a_1,\\dots , a_m, b_1, \\dots , b_n$ positive real numbers such that for every positive integer $k$ we have that $$(a_1^k + \\cdots + a^k_m) - (b^k_1 + \\cdots + b^k_n) \\leq Ck^N,$$ for some fix $C$ and $N$. Show that there exists $l \\leq m, n$ and permutations $\\sigma$ of $\\{1, \\dots , m\\}$ and $\\tau$ of $\\{1,\\dots , n\\}$, such that\n\n1. $a_{\\sigma(i)} = b_{\\tau(i)}$ for $1 \\leq i \\leq l,$\n2. $a_{\\sigma(i)}, b_{\\tau(i)} \\leq 1$ for $i > l.$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $\\mathcal{S}$ be a set of integers. Given a real positive $r$, we say that $\\mathcal{S}$ is $r$-discerning if for any pair $m, n > 1$ of distinct integers such that $\\left| \\frac{m-n}{m+n} \\right| < r$, there exists $a \\in \\mathcal{S}$ and $k \\geq 1$ such that $a^k$ divides $m$ but not $n$, or $a^k$ divides $n$ but not $m$.\n\n1. Show that for every $r > 0$ every $r$-discerning set contains an infinite number of primes.\n\n2. For every $r > 0$ determine the maximal possible cardinality of $\\mathcal{P} \\backslash \\mathcal{S}$ where $\\mathcal{P}$ is the set of primes and $\\mathcal{S} \\subseteq \\mathcal{P}$ is an $r$-discerning set."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $G$ be a simple, connected and finite graph. A hunter and an invisible rabbit play in the graph $G$.\nThe rabbit is initially in a vertex $w_0$. In the $k$-th turn (for $k \\geq 0$) the hunter picks freely a vertex $v_k$. If $v_k = w_k$, the rabbit is captured and the game ends. If not, the rabbit moves invisibly by an edge of $w_k$ to $w_{k+1}$ ($w_k$ and $w_{k+1}$ are adjacent and therefore distinct) and the game continues. The hunter knows these rules and the graph $G$. After the $k$-th turn he knows that $w_k \\not = v_k$, but he gets no more information.\nCharacterize the graphs $G$ such that the hunter has an strategy that guarantees that he can capture the rabbit in at most $N$ turns for some positive integer $N$. Here $N$ must depend only on $G$ and the strategy should work independently of the initial position and trajectory of the rabbit."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Show that there exists a $2 \\times 2$ matrix of order 6 with rational entries, such that the sum of its entries is 2018.\n\nNote: The order of a matrix (if it exists) is the smallest positive integer $n$ such that $A^n = I$, where $I$ is the identity matrix."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $p(x)$ and $q(x)$ non constant real polynomials of degree at most $n$ ($n > 1$). Show that there exists a non zero polynomial $F(x,y)$ in two variables with real coefficients of degree at most $2n-2,$ such that $F(p(t),q(t)) = 0$ for every $t\\in \\mathbb{R}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $m$ be an odd integer and $\\mathbb{Z}_m$ the set of integer modulo $m$. An equivalence relation is defined in $\\mathbb{Z}_m$ given by, $x \\sim y$ if there exists a natural $t$ such that $y \\equiv 2^tx \\, (\\bmod m)$. Find all values of $m$ such that the number of equivalent classes is even."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $\\alpha < 0 < \\beta$ and consider the polynomial $f(x) = x(x-\\alpha)(x-\\beta)$. Let $S$ be the set of real numbers $s$ such that $f(x) - s$ has three real roots. For $s\\in S$, let $p(s)$ be the product of the smallest and largest root of $f(x)-s$. Determine the smallest possible value of $p(s)$ for $s\\in S$, and the corresponding values of $s$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Consider the transformation $$T(x,y,z) = (\\sin y + \\sin z - \\sin x,\\sin z + \\sin x - \\sin y,\\sin x +\\sin y -\\sin z).$$ Determine all the points $(x,y,z) \\in [0,1]^3$ such that $T^n(x,y,z) \\in [0,1]^3,$ for every $n \\geq 1$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\{x_n\\}$ be a sequence of real numbers in the interval $[0,1)$. Prove that there exists a sequence $0 < n_1 < n_2 < n_3 < \\cdots$ of positive integers such that the following limit exists $$\\lim_{i,j \\to \\infty} x_{n_i+n_j}.$$ That is, there exists a real number $L$ such that for every $\\epsilon > 0,$ there exists a positive integer $N$ such that if $i,j > N$, then $|x_{n_i+n_j}-L| < \\epsilon.$"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Determine all triples of integers $(x, y, z)$ that satisfy the equation\n$$x^z + y^z = z.$$"
+        },
+        {
+          "number": 2,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Consider the set\n$$\\{0, 1\\}^n = \\{X = (x_1, x_2,\\dots , x_n) : x_i \\in \\{0, 1\\}, 1 \\leq i \\leq n\\}.$$\nWe say that $X > Y$ if $X \\neq Y$ and the following $n$ inequalities are satisfied\n$$x_1 \\geq y_1, x_1 + x_2 \\geq y_1 + y_2,\\dots , x_1 + x_2 + \\cdots + x_n \\geq y_1 + y_2 + \\cdots + y_n.$$\nWe define a chain of length $k$ as a subset $\\{Z_1,\\dots , Z_k\\} \\subseteq \\{0, 1\\}^n$ of distinct elements such that $Z_1 > Z_2 > \\cdots > Z_k.$\nDetermine the length of longest chain in $\\{0,1\\}^n$."
+        },
+        {
+          "number": 3,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\{a_n\\}_{n\\in \\mathbb{N}}$ a sequence of non zero real numbers.\nFor $m \\geq 1$, we define:\n$$X_m = \\left\\{X \\subseteq \\{0, 1,\\dots, m - 1\\}: \\left|\\sum_{x\\in X} a_x \\right| > \\dfrac{1}{m}\\right\\}.$$\nShow that\n$$\\lim_{n\\to\\infty}\\frac{|X_n|}{2^n} = 1.$$"
+        },
+        {
+          "number": 4,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $(G, *)$ be a group of $n > 1$ elements, and let $g \\in G$ be an element distinct from the identity.\nAna and Bob play with the group $G$ in the following way:\nStarting with Ana and playing alternately, each player selects an element of $G$ that has not been selected before, until each element of $G$ has been selected or a player has selected the elements $a$ and $a * g$ for some $a \\in G$.\nIn that case it is said that the player loses and his opponent wins.\na) If $n$ is odd, show that, independent of the element $g$, one of the two players has a winning strategy, and determine which player possesses such a strategy.\nb) If $n$ is even, show that there exists an element $g \\in G$ for which none of the players has a winning strategy.\n\nNote: A group $(G, *)$ is a set $G$ together with a binary operation $* : G\\times G \\to G$ that satisfies the following properties:\n(i) $*$ is associative: $\\forall a, b, c \\in G\\ (a * b) * c = a * (b * c)$;\n(ii) there exists an identity element $e \\in G$ such that $\\forall a \\in G,\\ a * e = e * a = a$;\n(iii) there exist inverse elements: $\\forall a \\in G\\ \\exists a^{-1} \\in G$ such that $a*a^{-1} = a^{-1}*a = e$."
+        },
+        {
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $\\{k_1, k_2, \\dots , k_m\\}$ a set of $m$ integers. Show that there exists a matrix $m \\times m$ with integers entries $A$ such that each of the matrices $A + k_jI, 1 \\leq j \\leq m$ are invertible and their entries have integer entries (here $I$ denotes the identity matrix)."
+        },
+        {
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Determine all the injective functions $f : \\mathbb{Z}_+ \\to \\mathbb{Z}_+$, such that for each pair of integers $(m, n)$ the following conditions hold:\na) $f(mn) = f(m)f(n)$\nb) $f(m^2 + n^2) \\mid f(m^2) + f(n^2).$"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $\\alpha>1$ and consider the function $f(x)=x^{\\alpha}$ for $x \\ge 0$. For $t>0$, define $M(t)$ as the largest area that a triangle with vertices $(0, 0), (s, f(s)), (t, f(t))$ could reach, for $s \\in (0,t)$. Let $A(t)$ be the area of the region bounded by the segment with endpoints $(0, 0)$, $(t, f(t))$ and the graph of $y =f(x)$.\n(a) Show that $A(t)/M(t)$ does not depend on $t$. We denote this value by $c(\\alpha)$. Find $c(\\alpha)$.\n(b) Determine the range of values of $c(\\alpha)$ when $\\alpha$ varies in the interval $(1, +\\infty)$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Find all triples of positive integers $(a,b,c)$ such that the following equations are both true:\n$$a^2+b^2=c^2, \\qquad a^3+b^3+1=(c-1)^3.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Let $(m,r,s,t)$ be positive integers such that $m\\geq s+1$ and $r\\geq t$. Consider $m$ sets $A_1, A_2, \\dots, A_m$ with $r$ elements each one. Suppose that, for each $1\\leq i\\leq m$, there exist at least $t$ elements of $A_i$, such that each one(element) belongs to (at least) $s$ sets $A_j$ where $j\\neq i$. Determine the greatest quantity of elements in the following set $A_1 \\cup A_2 \\cup A_3 \\dots \\cup A_m$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "For each polynomial $P(x)$ with real coefficients, define $P_0=P(0)$ and $P_j(x)=x^j\\cdot P^{(j)}(x)$ where $P^{(j)}$ denotes the $j$-th derivative of $P$ for $j\\geq 1$.\n(a) Prove that there exists one unique sequence of real numbers $b_0, b_1, b_2, \\dots$ such that for each polynomial $P(x)$ with real coefficients and for each $x$ real, we have $P(x)=b_0P_0+\\sum_{k\\geq 1}b_kP_k(x)=b_0P_0+b_1P_1(x)+b_2P_2(x)+\\dots$\n(b) Compute the value of the series $\\sum_{n=0}^{\\infty} b_n$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Determine all the positive real numbers $x_1, x_2, x_3, \\dots, x_{2021}$ such that $x_{i+1}=\\frac{x_i^3+2}{3x_i^2}$ for every $i=1, 2, 3, \\dots, 2020$ and $x_{2021}=x_1$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For a set $A$, we define $A + A = \\{a + b: a, b \\in A \\}$. Determine whether there exists a set $A$ of positive integers such that $$\\sum_{a \\in A} \\frac{1}{a} = +\\infty \\quad \\text{and} \\quad \\lim_{n \\rightarrow +\\infty} \\frac{|(A+A) \\cap \\{1,2,\\cdots,n \\}|}{n}=0.$$"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "For every $0 < \\alpha < 1$, let $R(\\alpha)$ be the region in $\\mathbb{R}^2$ whose boundary is the convex pentagon of vertices $(0,1-\\alpha), (\\alpha, 0), (1, 0), (1,1)$ and $(0, 1)$. Let $R$ be the set of points that belong simultaneously to each of the regions $R(\\alpha)$ with $0 < \\alpha < 1$, that is, $R =\\bigcap_{0<\\alpha<1} R(\\alpha)$.\n\nDetermine the area of $R$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $r>s$ be positive integers. Let $P(x)$ and $Q(x)$ be distinct polynomials with real coefficients, non-constant(s), such that $P(x)^r-P(x)^s=Q(x)^r-Q(x)^s$ for every $x\\in \\mathbb{R}$.\nProve that $(r,s)=(2,1)$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $m,n$ and $N$ be positive integers and $\\mathbb{Z}_{N}=\\{0,1,\\dots,N-1\\}$ a set of residues modulo $N$. Consider a table $m\\times n$ such that each one of the $mn$ cells has an element of $\\mathbb{Z}_{N}$. A move is to choose an element $g\\in \\mathbb{Z}_{N}$, a cell in the table and add $+g$ to the elements in the same row/column of the chosen cell(the sum is modulo $N$). Prove that if $N$ is coprime with $m-1,n-1,m+n-1$ then any initial arrangement of your elements in the table cells can become any other arrangement using an finite quantity of moves."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $\\mathbb{Z}^{+}$ be the set of positive integers.\na) Prove that there is only one function $f:\\mathbb{Z}^{+} \\rightarrow \\mathbb{Z}^{+}$, strictly increasing, such that $f(f(n))=2n+1$ for every $n\\in \\mathbb{Z}^{+}$.\nb) For the function in a), prove that for every $n\\in \\mathbb{Z}^{+}$, $\\frac{4n+1}{3}\\leq f(n)\\leq \\frac{3n+1}{2}$\nc) Prove that in each inequality side of b the equality can reach by infinite positive integers $n$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For every positive integer $n$, let $s(n)$ be the sum of the exponents of $71$ and $97$ in the prime factorization of $n$; for example, $s(2021) = s(43 \\cdot 47) = 0$ and $s(488977) = s(71^2 \\cdot 97) = 3$. If we define $f(n)=(-1)^{s(n)}$, prove that the limit\n$$\\lim_{n \\to +\\infty} \\frac{f(1) + f(2) + \\cdots+ f(n)}{n}$$\nexists and determine its value."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $0 \\le a < b$ be real numbers. Prove that there is no continuous function $f : [a, b] \\to \\mathbb{R}$ such that\n$$\\int_a^b f(x)x^{2n} \\mathrm dx>0 \\quad \\text{and} \\quad \\int_a^b f(x)x^{2n+1} \\mathrm dx <0$$\nfor every integer $n \\ge 0$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Given the function $f(x) = x^2$, the sector of $f$ from $a$ to $b$ is defined as the limited region between the graph of $y = f(x)$ and the straight line segment that joins the points $(a, f(a))$ and $(b, f(b))$. Define the increasing sequence $x_0$, $x_1, \\cdots$ with $x_0 = 0$ and $x_1 = 1$, such that the area of the sector of $f$ from $x_n$ to $x_{n+1}$ is constant for $n \\geq 0$. Determine the value of $x_n$ in function of $n$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $v \\in \\mathbb{R}^2$ a vector of length 1 and $A$ a $2 \\times 2$ matrix with real entries such that:\n(i) The vectors $A v, A^2 v$ and $A^3 v$ are also of length 1.\n(ii) The vector $A^2 v$ isn't equal to $\\pm v$ nor to $\\pm A v$.\nProve that $A^t A=I_2$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Geometry"
+          ],
+          "problem": "Danielle draws a point $O$ on the plane and a set of points $\\mathcal P = \\{P_0, P_1, \\ldots , P_{2022}\\}$ such that $$\\angle{P_0OP_1} = \\angle{P_1OP_2} = \\cdots = \\angle{P_{2021}OP_{2022}} = \\alpha, \\hspace{5pt} 0 < \\alpha < \\pi,$$ where the angles are measured counterclockwise and for $0 \\leq n \\leq 2022$, $OP_n = r^n$, where $r > 1$ is a given real number. Then, obtain new sets of points in the plane by iterating the following process: given a set of points $\\{A_0, A_1, \\ldots , A_n\\}$ in the plane, it is built a new set of points $\\{B_0, B_1, \\ldots , B_{n-1}\\}$ such that $A_kA_{k+1}B_k$ is an equilateral triangle oriented clockwise for $0 \\leq k \\leq n - 1$. After carrying out the process $2022$ times from the set $P$, Danielle obtains a single point $X$. If the distance from $X$ to point $O$ is $d$, show that $$(r-1)^{2022} \\leq d \\leq (r+1)^{2022}.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Given a positive integer $n$, determine how many permutations $\\sigma$ of the set $\\{1, 2, \\ldots , 2022n\\}$ have the following property: for each $i \\in \\{1, 2, \\ldots , 2021n + 1\\}$, the number $$\\sigma(i) + \\sigma(i + 1) + \\cdots + \\sigma(i + n - 1)$$ is a multiple of $n$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Define in the plane the sequence of vectors $v_1, v_2, \\ldots$ with initial values $v_1 = (1, 0)$, $v_2 = (-1/\\sqrt{2}, 1/\\sqrt{2})$ and satisfying the relationship $$v_n=\\frac{v_{n-1}+v_{n-2}}{\\lVert v_{n-1}+v_{n-2}\\rVert},$$ for $n \\geq 3$. Show that the sequence is convergent and determine its limit.\n\nNote: The expression $\\lVert v \\rVert$ denotes the length of the vector $v$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Prove that $\\tau ((n+1)!) \\leq 2 \\tau (n!)$ for all positive integers $n$, where $\\tau(m)$ denotes the number of positive divisors of $m$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Determine all the pairs of positive real numbers $(a, b)$ with $a < b$ such that the following series $$\\sum_{k=1}^{\\infty} \\int_a^b\\{x\\}^k dx =\\int_a^b\\{x\\} dx + \\int_a^b\\{x\\}^2 dx + \\int_a^b\\{x\\}^3 dx + \\cdots$$ is convergent and determine its value in function of $a$ and $b$.\n\nNote: $\\{x\\} = x - \\lfloor x \\rfloor$ denotes the fractional part of $x$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "A toymaker has $k$ dice at his disposal, each with $6$ blank sides. On each side of each of these dice, the toymaker must draw one of the digits $0, 1, 2, \\ldots , 9$.\n\nDetermine (in terms of $k$) the largest integer $n$ such that the toymaker can draw digits on the $k$ dice such that, for any positive integer $r \\leq n$, it is possible to choose some of the $k$ dice and form with them the decimal representation of $r$.\n\nNote: The digits 6 and 9 are distinguishable: they appear as 6 and 9."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Given a $3 \\times 3$ symmetric real matrix $A$, we define $f(A)$ as a $3 \\times 3$ matrix with the same eigenvectors of $A$ such that if $A$ has eigenvalues $a$, $b$, $c$, then $f(A)$ has eigenvalues $b+c$, $c+a$, $a+b$ (in that order). We define a sequence of symmetric real $3\\times3$ matrices $A_0, A_1, A_2, \\ldots$ such that $A_{n+1} = f(A_n)$ for $n \\geq 0$. If the matrix $A_0$ has no zero entries, determine the maximum number of indices $j \\geq 0$ for which the matrix $A_j$ has any null entries."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "For a positive integer $n$, $\\sigma(n)$ denotes the sum of the positive divisors of $n$. Determine $$\\limsup\\limits_{n\\rightarrow \\infty} \\frac{\\sigma(n^{2023})}{(\\sigma(n))^{2023}}$$\n\nNote: Given a sequence ($a_n$) of real numbers, we say that $\\limsup\\limits_{n\\rightarrow \\infty} a_n = +\\infty$ if ($a_n$) is not upper bounded, and, otherwise, $\\limsup\\limits_{n\\rightarrow \\infty} a_n$ is the smallest constant $C$ such that, for every real $K > C$, there is a positive integer $N$ with $a_n < K$ for every $n > N$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Given a positive integer $k > 1$, find all positive integers $n$ such that the polynomial $$P(z) = z^n + \\sum_{j=0}^{2^k-2} z^j = 1 +z +z^2 + \\cdots +z^{2^k-2} + z^n$$ has a complex root $w$ such that $|w| = 1$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Let $n$ be a positive integer. We define $f(n)$ as the number of finite sequences $(a_1, a_2, \\ldots , a_k)$ of positive integers such that $a_1 < a_2 < a_3 < \\cdots < a_k$ and $$a_1+a_2^2+a_3^3+\\cdots + a_k^k \\leq n.$$ Determine the positive constants $\\alpha$ and $C$ such that $$\\lim\\limits_{n\\rightarrow \\infty} \\frac{f(n)}{n^\\alpha}=C.$$"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $(a_n)_{n \\geq 1}$ be a sequence of real numbers. We define a sequence of real functions $(f_n)_{n \\geq 0}$ such that for all $x \\in \\mathbb{R}$, the following holds:\n$$f_0(x) = 1 \\quad \\text{and} \\quad f_n(x) = \\int_{a_n}^{x} f_{n-1}(t) \\, dt \\quad \\text{for } n \\geq 1.$$\nFind all possible sequences $(a_n)_{n \\geq 1}$ such that $f_n(0) = 0$ for all $n \\geq 2$.\n\nNote: It is not necessarily true that $f_1(0) = 0$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $n$ be a positive integer, and let $M_n$ be the set of invertible matrices with integer entries and size $n \\times n$.\n\n(a) Find the largest possible value of $n$ such that there exists a symmetric matrix $A \\in M_n$ satisfying\n$$\\det(A^{20} + A^{24}) < 2024.$$\n\n(b) Prove that for every $n$, there exists a matrix $B \\in M_n$ such that\n$$\\det(B^{20} + B^{24}) < 2024.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Number Theory"
+          ],
+          "problem": "Given a positive integer $n$, let $\\phi(n)$ denote the number of positive integers less than or equal to $n$ that are relatively prime to $n$. Find all possible positive integers $k$ for which there exist positive integers $1 < a_1 < a_2 < \\dots < a_k$ such that:\n$$\\left\\lfloor \\frac{\\phi(a_1)}{a_1} + \\frac{\\phi(a_2)}{a_2} + \\dots + \\frac{\\phi(a_k)}{a_k} \\right\\rfloor = 2024$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Given the points $O = (0, 0)$ and $A = (2024, -2024)$ in the plane. For any positive integer $n$, Damian draws all the points with integer coordinates $B_{i,j} = (i, j)$ with $0 \\leq i, j \\leq n$ and calculates the area of each triangle $OAB_{i,j}$. Let $S(n)$ denote the sum of the $(n+1)^2$ areas calculated above. Find the following limit:\n$$\\lim_{n \\to \\infty} \\frac{S(n)}{n^3}.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "A board of size $3 \\times N$ initially has all of its cells painted white. Let $a(N)$ be the maximum number of cells that can be painted black in such a way that no three consecutive cells (either horizontally, vertically, or diagonally) are painted black. Prove that\n$$\\lim_{N \\to \\infty} \\frac{a(N)}{N}$$\nexists and determine its value."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Given a real number $x$, define the series\n$$S(x) = \\sum_{n=1}^{\\infty} \\{n! \\cdot x\\},$$\nwhere $\\{s\\} = s - \\lfloor s \\rfloor$ is the fractional part of the number $s$. Determine if there exists an irrational number $x$ for which the series $S(x)$ converges."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "topics": [
+            "Geometry"
+          ],
+          "problem": "Consider two sets $P, Q \\subseteq \\mathbb{R}^2$ that satisfy the following three conditions:\n1. $(n, 1) \\in P$ for every $n \\in \\mathbb{Z}$.\n2. If $(a, b) \\in P$, then $(a, 0) \\in Q$.\n3. If a trapezoid has two sides parallel to the $y$-axis, with two of its vertices in $P$ and the other two vertices in $Q$, then the point of intersection of its diagonals is also in $P$.\nProve that $\\mathbb{Q} \\times \\{0\\} \\subseteq Q$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Let $F : \\mathbb{R}^2 \\to \\mathbb{R}^2$ be defined by\n$$F(x, y) = \\left( x + y - x^3,\\; y - y^3 \\right).$$\nDefine $F^1 = F$, and\n$$F^{n+1} = F \\circ F^n \\quad \\text{for } n \\geq 1.$$\na) Prove that if $|x| \\leq \\frac{1}{2}$ and $|y| \\leq \\frac{1}{2}$, then\n$$\\lim_{n \\to \\infty} F^n(x, y) = (0, 0)$$\n\nb) Prove that for any $K > 0$ and $\\varepsilon > 0$, there exist a positive integer $n$ and a point $(x_0, y_0) \\in \\mathbb{R}^2$ with $0 < \\lvert (x_0, y_0) \\rvert < \\varepsilon$ such that\n$$\\lvert F^n(x_0, y_0) \\rvert > K \\cdot \\lvert (x_0, y_0) \\rvert$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "topics": [
+            "Geometry"
+          ],
+          "problem": "Let $E$ be an ellipse with semi-axes $a > b$ and let $B$ be an endpoint of the minor axis of the ellipse. For every point $P$ on the ellipse, define $m(P)$ as the greatest distance from $P$ to any other point on the ellipse; that is, define the function\n$$m(P) = \\max_{Q \\in E} \\, |PQ|,$$\nwhere $|PQ|$ denotes the distance from $P$ to $Q$.\na) Prove that $m(B) \\leq m(P)$ for every point $P$ on the ellipse.\nb) Determine the value of $m(B)$ as a function of $a$ and $b$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "topics": [
+            "Analysis"
+          ],
+          "problem": "Find infinitely many differentiable functions $f : \\mathbb{R}^2 \\to \\mathbb{R}$ such that $f(20, 25) = 2025$ and, for all $x, y \\in \\mathbb{R}$, the following identity holds:\n$$\\left(f(x, y)\\right)^3 + \\left(f_x(x, y)\\right)^3 + \\left(f_y(x, y)\\right)^3 = 3 f(x, y) f_x(x, y) f_y(x, y),$$\nwhere $f_x$ and $f_y$ denote the partial derivatives of $f$ with respect to $x$ and $y$, respectively."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "topics": [
+            "Algebra"
+          ],
+          "problem": "Let $n$ be a positive integer. In the space of $n \\times n$ matrices with real entries, consider the subset $M_n$ of matrices whose entries belong to the set $\\{-1, 1\\}$.\nProve that at least $25\\%$ of the matrices in $M_n$ are invertible."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "topics": [
+            "Combinatorics"
+          ],
+          "problem": "Prove that there exist positive real numbers $C$ and $t$, with $t > 1$, such that if $n \\geq 2$ and $S$ is a set of $2n$ points in the plane in general position, with $n$ red points and $n$ blue points, then there are at least $Cn^t$ triangles with two red vertices and one blue vertex whose interior contains no point of $S$.\n\nNote: A set of points is said to be in general position if no three points are collinear."
+        }
+      ]
+    }
+  ]
+}

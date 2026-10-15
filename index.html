@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Mathematical Olympiads Bank – eisatopon.gr</title>
-<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Romania, Russia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
+<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Romania, Russia, Saudi Arabia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" type="image/png" href="assets/eisatopon-logo.png">
 <link rel="apple-touch-icon" href="assets/eisatopon-logo.png">
@@ -218,6 +218,10 @@
     --cn2: #3a5c8f; --cn2-ink: #263d5f; --cn2-tint: #e2e9f3;
     --tot: #4f6b2a; --tot-ink: #34471c; --tot-tint: #ebf1e3;
     --inr: #c27c0e; --inr-ink: #815309; --inr-tint: #fbf0dd;
+    --sat: #0f766e; --sat-ink: #0a4f4a; --sat-tint: #ddf3f0;
+    --brt: #047857; --brt-ink: #03543d; --brt-tint: #d9f2e8;
+    --obmu: #b45309; --obmu-ink: #7a3906; --obmu-tint: #fbecd9;
+    --ciim: #be185d; --ciim-ink: #7f1040; --ciim-tint: #fbe3ef;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -371,6 +375,10 @@
 .f-cn2 { --f: var(--cn2); --f-ink: var(--cn2-ink); --f-tint: var(--cn2-tint); }
 .f-tot { --f: var(--tot); --f-ink: var(--tot-ink); --f-tint: var(--tot-tint); }
 .f-inr { --f: var(--inr); --f-ink: var(--inr-ink); --f-tint: var(--inr-tint); }
+.f-sat { --f: var(--sat); --f-ink: var(--sat-ink); --f-tint: var(--sat-tint); }
+.f-brt { --f: var(--brt); --f-ink: var(--brt-ink); --f-tint: var(--brt-tint); }
+.f-obmu { --f: var(--obmu); --f-ink: var(--obmu-ink); --f-tint: var(--obmu-tint); }
+.f-ciim { --f: var(--ciim); --f-ink: var(--ciim-ink); --f-tint: var(--ciim-tint); }
 
 /* ==========================================================
    Base
@@ -716,7 +724,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>72</b><span>countries</span></div>
+            <div class="stat"><b>73</b><span>countries</span></div>
             <div class="stat"><b>1938–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
@@ -870,7 +878,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-india-rmo';
+const DATA_VERSION = '20261015-saudi-brazil-obmu-ciim';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1000,6 +1008,10 @@ REGION_OF.csmo = 'asia';
 REGION_OF.cn2 = 'asia';
 REGION_OF.tot = 'world';
 REGION_OF.inr = 'asia';
+REGION_OF.sat = 'asia';
+REGION_OF.brt = 'americas';
+REGION_OF.obmu = 'other';
+REGION_OF.ciim = 'other';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1010,6 +1022,7 @@ const COUNTRIES = [
     { key: 'cn', name: 'China — CMO',      flag: '🇨🇳', file: 'China-olympiad-problems.json',   kind: 'years' },
     { key: 'az', name: 'Azerbaijan', flag: '🇦🇿', file: 'Azerbaijan-tst-problems.json',   kind: 'years' },
     { key: 'sg', name: 'Singapore',  flag: '🇸🇬', file: 'Singapore-mo-open-problems.json', kind: 'years' },
+    { key: 'sat', name: 'Saudi Arabia TST', flag: '🇸🇦', file: 'Saudi-tst-problems.json', kind: 'years', full: "Saudi Arabia IMO Team Selection Test" },
     { key: 'uk1', name: 'UK BMO1',   flag: '🇬🇧', file: 'Uk-bmo1-problems.json',          kind: 'years' },
     { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
     { key: 'ca', name: 'Canada',     flag: '🇨🇦', file: 'Canada-cmo-problems.json',       kind: 'years' },
@@ -1019,6 +1032,7 @@ const COUNTRIES = [
     { key: 'kf', name: 'S. Korea FKMO', flag: '🇰🇷', file: 'Korea-fkmo-problems.json', kind: 'years' },
     { key: 'id', name: 'Indonesia', flag: '🇮🇩', file: 'Indonesia-osn-problems.json', kind: 'years' },
     { key: 'br', name: 'Brazil', flag: '🇧🇷', file: 'Brazil-obm-problems.json', kind: 'years' },
+    { key: 'brt', name: 'Brazil TST', flag: '🇧🇷', file: 'Brazil-tst-problems.json', kind: 'years', full: "Brazil IMO Team Selection Test" },
     { key: 'mx', name: 'Mexico', flag: '🇲🇽', file: 'Mexico-omm-problems.json', kind: 'years' },
     { key: 'vn', name: 'Vietnam', flag: '🇻🇳', file: 'Vietnam-vmo-problems.json', kind: 'years' },
     { key: 'jp', name: 'Japan', flag: '🇯🇵', file: 'Japan-jmo-problems.json', kind: 'years' },
@@ -1110,6 +1124,8 @@ const COUNTRIES = [
     { key: 'seemous', name: 'SEEMOUS', flag: '🎓', file: 'undergraduate/SEEMOUS-2007-2010-problems.json', kind: 'years', scope: 'undergraduate', full: 'South Eastern European Mathematical Olympiad for University Students' },
     { key: 'schw', name: 'Miklós Schweitzer', flag: '🎓', file: 'undergraduate/Schweitzer-problems.json', kind: 'years', scope: 'undergraduate', full: 'Miklós Schweitzer Memorial Competition' },
     { key: 'vtrmc', name: 'Virginia Tech', flag: '🎓', file: 'undergraduate/VTRMC-problems.json', kind: 'years', scope: 'undergraduate', full: 'Virginia Tech Regional Mathematics Contest' },
+    { key: 'obmu', name: 'OBMU', flag: '🎓', file: 'undergraduate/OBMU-problems.json', kind: 'years', scope: 'undergraduate', full: "Brazilian Undergraduate Mathematical Olympiad (OBM n\u00edvel universit\u00e1rio)" },
+    { key: 'ciim', name: 'CIIM', flag: '🎓', file: 'undergraduate/CIIM-problems.json', kind: 'years', scope: 'undergraduate', full: "Iberoamerican Interuniversity Mathematics Competition (CIIM)" },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional' },
     { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad' },
