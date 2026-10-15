@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 25180 stored records; 8957 source-checked; 16223 remaining (including quarantine).
+Inventory: 25630 stored records; 9399 source-checked; 16231 remaining (including quarantine).
 
-Active bank: 25180 records; 8957 source-checked; 16223 remaining. Whole-bank source verification is **not complete**.
+Active bank: 25630 records; 9399 source-checked; 16231 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -72,6 +72,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Italy-itamo-problems.json | 249 | 0 | 249 | pending |
 | Italy-preimo-tst-problems.json | 145 | 109 | 36 | pending |
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
+| Kangaroo-benjamin-problems.json | 450 | 442 | 8 | pending |
 | Kangaroo-cadet-problems.json | 450 | 446 | 4 | pending |
 | Kangaroo-junior-problems.json | 450 | 446 | 4 | pending |
 | Kangaroo-student-problems.json | 450 | 448 | 2 | pending |
