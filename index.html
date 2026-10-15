@@ -207,6 +207,8 @@
     --usemo: #c0663a; --usemo-ink: #7f4025; --usemo-tint: #f9ebe3;
     --rmm: #1f7a6b; --rmm-ink: #14524a; --rmm-tint: #e0f2ee;
     --izho: #7a6a1f; --izho-ink: #524714; --izho-tint: #f3efdc;
+    --ir2: #2e8b57; --ir2-ink: #1d5c39; --ir2-tint: #e3f3ea;
+    --ir3: #8b5e2e; --ir3-ink: #5c3d1d; --ir3-tint: #f5ece2;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -349,6 +351,8 @@
 .f-usemo { --f: var(--usemo); --f-ink: var(--usemo-ink); --f-tint: var(--usemo-tint); }
 .f-rmm { --f: var(--rmm); --f-ink: var(--rmm-ink); --f-tint: var(--rmm-tint); }
 .f-izho { --f: var(--izho); --f-ink: var(--izho-ink); --f-tint: var(--izho-tint); }
+.f-ir2 { --f: var(--ir2); --f-ink: var(--ir2-ink); --f-tint: var(--ir2-tint); }
+.f-ir3 { --f: var(--ir3); --f-ink: var(--ir3-ink); --f-tint: var(--ir3-tint); }
 
 /* ==========================================================
    Base
@@ -848,7 +852,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-kangaroo-2011';
+const DATA_VERSION = '20261015-iran-mo';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -967,6 +971,8 @@ REGION_OF.elmo = 'americas';
 REGION_OF.usemo = 'americas';
 REGION_OF.rmm = 'world';
 REGION_OF.izho = 'world';
+REGION_OF.ir2 = 'asia';
+REGION_OF.ir3 = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1046,6 +1052,8 @@ const COUNTRIES = [
     { key: 'gra', name: 'Greece Archimedes', flag: '🇬🇷', file: 'Greece-archimedes-problems.json', kind: 'years' },
     { key: 'su', name: 'USSR All-Union', flag: '☭', file: 'USSR-allunion-problems.json', kind: 'years' },
     { key: 'irt', name: 'Iran TST', flag: '🇮🇷', file: 'Iran-tst-problems.json', kind: 'years' },
+    { key: 'ir2', name: 'Iran MO 2nd Round', flag: '🇮🇷', file: 'Iran-mo2-problems.json', kind: 'years', full: "Iran Mathematical Olympiad, Second Round" },
+    { key: 'ir3', name: 'Iran MO 3rd Round', flag: '🇮🇷', file: 'Iran-mo3-problems.json', kind: 'years', full: "Iran Mathematical Olympiad, Third Round (national final)" },
     { key: 'tw', name: 'Taiwan', flag: '🇹🇼', file: 'Taiwan-tmo-problems.json', kind: 'years' },
     { key: 'il', name: 'Israel', flag: '🇮🇱', file: 'Israel-gillis-problems.json', kind: 'years' },
     { key: 'by', name: 'Belarus', flag: '🇧🇾', file: 'Belarus-mo-problems.json', kind: 'years' },
