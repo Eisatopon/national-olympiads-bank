@@ -176,6 +176,7 @@
     --schw: #8a5a1f; --schw-ink: #5c3c14; --schw-tint: #f5ebdc;
     --vtrmc: #7d1f4f; --vtrmc-ink: #541535; --vtrmc-tint: #f5e0eb;
     --aime: #1f4e8c; --aime-ink: #14335c; --aime-tint: #e1eaf6;
+    --amc12: #2a6f97; --amc12-ink: #1b4a66; --amc12-tint: #e2eff6;
     --kgca: #9a5a2c; --kgca-ink: #643a1c; --kgca-tint: #f6eadf;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -305,6 +306,7 @@
 .f-schw { --f: var(--schw); --f-ink: var(--schw-ink); --f-tint: var(--schw-tint); }
 .f-vtrmc { --f: var(--vtrmc); --f-ink: var(--vtrmc-ink); --f-tint: var(--vtrmc-tint); }
 .f-aime { --f: var(--aime); --f-ink: var(--aime-ink); --f-tint: var(--aime-tint); }
+.f-amc12 { --f: var(--amc12); --f-ink: var(--amc12-ink); --f-tint: var(--amc12-tint); }
 .f-kgca { --f: var(--kgca); --f-ink: var(--kgca-ink); --f-tint: var(--kgca-tint); }
 
 /* ==========================================================
@@ -462,6 +464,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 
 .statement { font: 400 1.08rem/1.75 var(--serif); max-width: 74ch; overflow-wrap: anywhere; }
 .statement .para + .para { margin-top: .6em; }
+.statement .choices .choice { display: block; }
 .statement .fig { margin: .9em 0; text-align: center; }
 .statement .fig img { max-width: min(100%, 480px); height: auto; background: #fff; border: 1px solid var(--line); }
 mjx-container { margin: .2em 0 !important; }
@@ -774,7 +777,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-aime-one-row';
+const DATA_VERSION = '20261015-amc12';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -879,6 +882,7 @@ REGION_OF.cy = 'europe';
 REGION_OF.cps = 'europe';
 REGION_OF.cpsj = 'europe';
 REGION_OF.aime = 'americas';
+REGION_OF.amc12 = 'americas';
 REGION_OF.kgca = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
@@ -1003,6 +1007,7 @@ const COUNTRIES = [
     { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'aime', name: 'AIME', flag: '🇺🇸', file: 'USA-AIME-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination (AIME I and II from 2000) · problems © MAA' },
+    { key: 'amc12', name: 'AMC 12', flag: '🇺🇸', file: 'USA-AMC12-problems.json', kind: 'years', scope: 'amc', full: 'American Mathematics Competitions 12 (A, B, Fall 2021, 2002 P) · problems © MAA' },
     { key: 'omcc', name: 'Centroamerican MO', flag: '🌎', file: 'Centroamerican-omcc-problems.json', kind: 'years', scope: 'regional', full: 'Centroamerican and Caribbean Mathematical Olympiad' },
     { key: 'kg', name: 'Kyrgyzstan Republican Final', flag: '🇰🇬', file: 'Kyrgyzstan-republican-problems.json', kind: 'years' },
     { key: 'py', name: 'Paraguay OMAPA (Level 3)', flag: '🇵🇾', file: 'Paraguay-omapa-problems.json', kind: 'years' },
@@ -1109,7 +1114,11 @@ function bodyHtml(text, record) {
         figs.push(`${url}.${ext}`);
         return '';
     });
-    let html = s.split(/\n{2,}/).map(x => x.trim()).filter(Boolean).map(x => `<div class="para">${x}</div>`).join('');
+    // A paragraph made only of answer-choice lines "(A) …" … "(E) …" keeps one choice per line.
+    const isChoices = x => { const ls = x.split('\n').map(l => l.trim()).filter(Boolean); return ls.length > 1 && ls.every(l => /^\([A-E]\)/.test(l)); };
+    let html = s.split(/\n{2,}/).map(x => x.trim()).filter(Boolean).map(x => isChoices(x)
+        ? `<div class="para choices">${x.split('\n').map(l => l.trim()).filter(Boolean).map(l => `<span class="choice">${l}</span>`).join('')}</div>`
+        : `<div class="para">${x.replace(/\n(?=\s*•)/g, '<br>')}</div>`).join('');
     figs.forEach(u => { html += `<figure class="fig"><img src="${esc(u)}" alt="${esc(record?.figureAlt || 'Figure')}" loading="lazy" referrerpolicy="no-referrer"></figure>`; });
     return html;
 }
