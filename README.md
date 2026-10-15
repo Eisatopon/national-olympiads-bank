@@ -1,6 +1,8 @@
 # World Mathematical Olympiads Bank
 
-A collection of national mathematical olympiad and team selection test statements, with an English interface and MathJax rendering.
+A collection of national, regional and international mathematical olympiad statements, with an English interface and MathJax rendering.
+
+**All rights reserved.** See `LICENSE`: personal study and classroom use of the website are welcome; copying or redistributing the data or the application requires written permission. Problem statements belong to their competition organisers.
 
 ## Current application
 
