@@ -17,7 +17,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Consider a convex polygon with $n$ sides and draw all the lines of its diagonals, assuming that no two of them are parallel and that no three of them have a common point other than a vertex. Under these conditions compute:\n\n(a) the number of intersection points of these diagonals, excluding the vertices;\n\n(b) how many of these points are inside the polygon."
+          "problem": "Consider a convex polygon with $n$ sides and draw all the lines of its diagonals, assuming that no two of them are parallel and that no three of them have a common point other than a vertex. Under these conditions compute:\n\n(a) the number of intersection points of these diagonals, excluding the vertices;\n\n(b) how many of these points are inside the polygon, and how many are outside it."
         },
         {
           "day": 1,
@@ -82,7 +82,7 @@
         {
           "day": 2,
           "number": 7,
-          "problem": "A frustum of a right circular cone has larger base of radius $r$, and its generators make with the plane of the base an angle whose tangent is $m$. The frustum is made of a material of density $d$, and its smaller base is covered by a sheet of mass $p$ g/cm$^2$. For which height of the frustum is the total mass maximal?"
+          "problem": "A frustum of a right circular cone has larger base of radius $r$, and its generators make with the plane of the base an angle whose tangent is $m$. The frustum is made of a material of density $d$, and its smaller base is covered by a sheet of mass $p$ g/cm$^2$. For which height of the frustum is the total mass maximal? Give a complete discussion of the problem."
         },
         {
           "day": 2,
@@ -137,6 +137,51 @@
       ]
     },
     {
+      "year": 1967,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "It is known that the real function $f(t)$ is monotonically increasing on the interval $-8\\le t\\le 8$, but nothing is known about its behaviour outside this interval. On which interval of values of $x$ can one assert that the function $y=f(2x-x^2)$ is monotonically increasing?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine the poles of the inversions that transform four collinear points $A$, $B$, $C$, $D$, lying in this order, into four points $A'$, $B'$, $C'$, $D'$ that are the vertices of a rectangle, with $A'$ and $C'$ opposite vertices."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A traffic light is installed at the main crossing of a road on which traffic runs in both directions. It is red for $30$ s and green for another $30$ s, alternately. Another traffic light is to be installed on the same road, at a secondary crossing $400$ m away from the first one, also working with a period of $1$ min. It is required that cars travelling at $60$ km/h along the road in either direction, which would not have to stop if there were only the light at the main crossing, also do not have to stop after the light at the secondary crossing has been installed. For how many seconds can the red light of the secondary traffic light be on?\n\nNote: reason with a Cartesian representation of the motion of the vehicles, with one axis for distances and another for times."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A closed bottle with a flat circular bottom is partially filled with wine, so that the level does not go beyond the cylindrical part. Discuss in which cases the capacity of the bottle can be computed without opening it, using only a graduated double decimetre; when it is possible, describe how the computation would be done. (Problem from the Italian Gara Matematica.)\n\nNote: the thickness of the bottle may be neglected; the bottle consists of a perfectly cylindrical part and another part (the neck) of unknown shape. A graduated double decimetre is simply a ruler measuring lengths up to $20$ cm."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $\\gamma$ be a semicircle with diameter $AB$. A polygonal line with origin $A$ is constructed whose vertices lie alternately on the diameter $AB$ and on the semicircle $\\gamma$, in such a way that all its sides make equal angles $\\alpha$ with the diameter (but alternately in the two directions), as in the figure. Find:\n\n(a) the values of the angle $\\alpha$ for which the polygonal line passes through the other endpoint $B$ of the diameter;\n\n(b) the total length of the polygonal line, in terms of the length $d$ of the diameter and of the angle $\\alpha$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/es_1967_p5_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "An equilateral triangle $ABC$ with centre $O$ and radius $OA=R$ is given, and the seven regions into which the lines containing its sides divide the plane are considered. Determine (draw and describe) the region of the plane into which the two regions shaded in the figure are transformed by the inversion with centre $O$ and power $R^2$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/es_1967_p6_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A convoy of cars travels along a road, all at the same speed, keeping between consecutive cars the minimum distance prescribed by the Highway Code. This distance, in metres, is $$\\frac{v^2}{100},$$ where $v$ is the speed in km/h. Assuming that each car is $2.89$ m long, compute the speed at which they must travel for the traffic capacity to be maximal, that is, for the largest number of vehicles to pass a given point of the road in a fixed period of time."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "To obtain the value of a polynomial of degree $n$ with coefficients $a_0,a_1,\\dots,a_n$ (starting with the term of highest degree) when the variable $x$ is given the value $b$, one can apply the process shown in the attached flowchart, which carries out the steps required to apply Ruffini\\'s rule. Construct another, analogous flowchart that expresses the computation of the value of the derivative of the given polynomial, also at $x=b$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/es_1967_p8_fig.png"
+        }
+      ]
+    },
+    {
       "year": 1968,
       "problems": [
         {
@@ -147,7 +192,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Decide whether the continuity of a real function $f(x)$ of a real variable at the point $x=0$ can be asserted, can be denied, or cannot be decided, in each of the following three (independent) cases:\n\n(a) it is known only that $f\\left(\\frac1{2n}\\right)=1$ and $f\\left(\\frac{-1}{2n}\\right)=-1$ for every positive integer $n$;\n\n(b) it is known that $f(x)=x^2$ for non-negative real $x$ and $f(x)=0$ for negative real $x$;\n\n(c) it is known only that $f\\left(\\frac1n\\right)=1$ for every positive integer $n$."
+          "problem": "Decide whether the continuity of a real function $f(x)$ of a real variable at the point $x=0$ can be asserted, can be denied, or cannot be decided, in each of the following three (independent) cases:\n\n(a) it is known only that $f\\left(\\frac1{2n}\\right)=1$ and $f\\left(\\frac1{2n+1}\\right)=-1$ for every positive integer $n$;\n\n(b) it is known that $f(x)=x^2$ for non-negative real $x$ and $f(x)=0$ for negative real $x$;\n\n(c) it is known only that $f\\left(\\frac1n\\right)=1$ for every positive integer $n$."
         },
         {
           "day": 1,
@@ -222,7 +267,7 @@
         {
           "day": 2,
           "number": 8,
-          "problem": "The SEAT company recommends to its customers, for the proper care of the tyres, periodic changes of the wheels in the pattern $R\\to 3\\to 2\\to 1\\to 4\\to R$, where $1,2,3,4$ are the front left, front right, rear left and rear right wheels respectively, and $R$ is the spare wheel. Call this change of wheels $G$, and let $G^n$ be the change obtained by applying $G$ $n$ times in succession.\n\n(a) Prove that the set $\\{G^n:n\\in\\mathbb N\\}$ is a group under the product consisting of applying the changes in succession.\n\n(b) Each puncture of one of the wheels amounts to replacing the punctured wheel by the spare one, which, once repaired, takes the place of the spare. Obtain $G$ as a product of transformations of puncture type. Do the transformations of puncture type form a group?"
+          "problem": "The SEAT company recommends to its customers, for the proper care of the tyres, periodic changes of the wheels in the pattern $R\\to 3\\to 2\\to 1\\to 4\\to R$, according to the numbering in the figure ($R$ is the spare wheel). Call this change of wheels $G$; let $G^2=GG$ be the result of carrying it out twice, and similarly for the other powers of the transformation $G$.\n\n(a) Prove that the set of the powers of $G$ is a group, and study it.\n\n(b) Each puncture of one of the wheels also amounts to a substitution in which the punctured wheel is replaced by the spare wheel $R$, and, once repaired, it takes the place of the spare. Express $G$ as a product of transformations of puncture type. Do these transformations form a group?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/es_1969_p8_fig.png"
         }
       ]
     },
@@ -277,7 +322,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Compute the sum $$\\sum_{k=5}^{49}\\frac{11_{(k)}}{2\\sqrt[3]{1331_{(k)}}},$$ where the subscript indicates that the numbers $11$ and $1331$ are written in base $k$."
+          "problem": "Compute the sum $$\\sum_{k=5}^{49}\\frac{11_{(k)}}{\\sqrt[3]{1331_{(k)}}},$$ where the subscript indicates that the numbers $11$ and $1331$ are written in base $k$."
         },
         {
           "day": 1,
@@ -422,7 +467,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Denote by $Z_{(5)}$ the following subset of the set $\\mathbb Q$ of rational numbers: a rational number belongs to $Z_{(5)}$ if and only if it can be written as a fraction whose denominator is not a multiple of $5$. For example, $13/10$ does not belong to $Z_{(5)}$, since the denominators of all fractions equal to $13/10$ are multiples of $5$; on the other hand, $75/10$ belongs to $Z_{(5)}$, since $75/10=15/2$.\n\n(a) What algebraic structure (semigroup, group, etc.) does $Z_{(5)}$ have with respect to addition?\n\n(b) And with respect to multiplication?\n\n(c) Is $Z_{(5)}$ a subring of $\\mathbb Q$?\n\n(d) Is $Z_{(5)}$ a vector space over $Z_{(5)}$?"
+          "problem": "Denote by $Z_{(5)}$ the following subset of the set $\\mathbb Q$ of rational numbers: a rational number belongs to $Z_{(5)}$ if and only if it can be written as a fraction whose denominator is not a multiple of $5$. For example, $13/10$ does not belong to $Z_{(5)}$, since the denominators of all fractions equal to $13/10$ are multiples of $5$; on the other hand, $75/10$ belongs to $Z_{(5)}$, since $75/10=15/2$.\n\n(a) What algebraic structure (semigroup, group, etc.) does $Z_{(5)}$ have with respect to addition?\n\n(b) And with respect to multiplication?\n\n(c) Is $Z_{(5)}$ a subring of $\\mathbb Q$?\n\n(d) Is $Z_{(5)}$ a vector space over $Z_{(5)}$?\n\n(The operations are the usual ones of the field of rational numbers.)"
         },
         {
           "day": 1,
@@ -448,6 +493,51 @@
           "day": 2,
           "number": 8,
           "problem": "The sides of a regular convex polygon with $L+M+N$ sides are to be drawn in three colours: $L$ of them in red, $M$ in yellow and $N$ in blue. Express by means of inequalities the necessary and sufficient conditions for the problem of doing this without two adjacent sides having the same colour to have a solution (in general several)."
+        }
+      ]
+    },
+    {
+      "year": 1975,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Compute the limit $$\\lim_{n\\to\\infty}\\frac1n\\left(\\frac1{n^k}+\\frac{2^k}{n^k}+\\cdots+\\frac{(n-1)^k}{n^k}+\\frac{n^k}{n^k}\\right).$$ (To compute the limit one may follow the procedure used to construct the integral.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Study the real function $$f(x)=\\left(1+\\frac1x\\right)^x,$$ defined for $x\\in\\mathbb R\\setminus[-1,0]$, and draw its graph."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Denote by $Z_{(5)}$ the following subset of the set $\\mathbb Q$ of rational numbers: a rational number belongs to $Z_{(5)}$ if and only if it can be written as a fraction whose denominator is not a multiple of $5$. For example, $13/10$ does not belong to $Z_{(5)}$, since the denominators of all fractions equal to $13/10$ are multiples of $5$; on the other hand, $75/10$ belongs to $Z_{(5)}$, since $75/10=15/2$.\n\n(a) What algebraic structure (semigroup, group, etc.) does $Z_{(5)}$ have with respect to addition?\n\n(b) And with respect to multiplication?\n\n(c) Is $Z_{(5)}$ a subring of $\\mathbb Q$?\n\n(d) Is $Z_{(5)}$ a vector space over $Z_{(5)}$?\n\n(The operations are the usual ones of the field of rational numbers.)"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that if the product of $n$ positive real numbers equals $1$, then their sum is greater than or equal to $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In the plane, a line $r$ and two points $A$ and $B$ not on $r$, lying in the same half-plane determined by $r$, are given. Determine a point $M$ of the line such that the angle between $r$ and $AM$ is twice the angle between $r$ and $BM$. (The angle between two lines is taken to be the smaller of the angles they form.)"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $\\{x_n\\}$ and $\\{y_n\\}$ be two sequences of positive integers defined by $$x_1=1,\\quad x_2=1,\\quad x_{n+2}=x_{n+1}+2x_n\\quad\\text{for } n=1,2,3,\\dots,$$ $$y_1=1,\\quad y_2=7,\\quad y_{n+2}=2y_{n+1}+3y_n\\quad\\text{for } n=1,2,3,\\dots$$ Prove that, apart from the case $x_1=y_1=1$, no positive integer belongs to both sequences."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Consider the real function defined for every $x\\in\\mathbb R$ by $$f(x)=\\frac1{|x+3|+|x+1|+|x-2|+|x-5|}.$$\n\n(a) Determine its maximum.\n\n(b) Draw its graph."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Two real numbers between $0$ and $1$ are chosen at random. Compute the probability that one of them (either one) is less than the square of the other."
         }
       ]
     },
@@ -582,7 +672,7 @@
         {
           "day": 2,
           "number": 8,
-          "problem": "Given the polynomial $$P(x)=1+3x+5x^3+7x^5+\\cdots+1001x^{500},$$ give the value of its derivative of order $325$ at $x=0$."
+          "problem": "Given the polynomial $$P(x)=1+3x+5x^2+7x^3+\\cdots+1001x^{500},$$ give the value of its derivative of order $325$ at $x=0$."
         }
       ]
     },
@@ -682,7 +772,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The puzzle page of a newspaper proposes the following problem: “Two children, Antonio and José, have $160$ comics. Antonio counts his in sevens and has $4$ left over. José counts his in eights and also has $4$ left over. How many comics does each have?” The next issue gives the solution: “Antonio has $60$ comics and José has $100$.” Show how this problem would be solved mathematically."
+          "problem": "The puzzle page of a newspaper proposes the following problem: “Two children, Antonio and José, have $160$ comics. Antonio counts his in sevens and has $4$ left over. José counts his in eights and also has $4$ left over. How many comics does each have?” The next issue gives the solution: “Antonio has $60$ comics and José has $100$.” Analyse this solution and indicate what a mathematician would do with this problem."
         },
         {
           "day": 1,
@@ -727,7 +817,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "While Theophrastus was talking with Aristotle about the classification of plants, he had a dog tied to a perfectly smooth cylindrical column of radius $r$ by a very thin rope wound around the column with a loop. The dog held the free end of the rope tied to its neck. Trying to reach Theophrastus, it pulled the rope taut and the rope broke. Determine the distance from the column of the knot at the moment the rope broke."
+          "problem": "While Theophrastus was talking with Aristotle about the classification of plants, he had a dog tied to a perfectly smooth cylindrical column of radius $r$, by a very thin rope that was wound around the column and closed with a running (slip) knot. The dog was tied to the free end of the rope. Trying to reach Theophrastus, the dog pulled the rope taut and broke it. Determine the distance from the column to the knot at the moment the rope broke."
         },
         {
           "day": 1,
@@ -952,7 +1042,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A well-known puzzle consists in dividing a Greek cross (five equal squares forming a plus sign) into four parts that can be reassembled into a square. Prove that there are infinitely many different solutions. Is there a solution giving four equal parts?"
+          "problem": "A well-known puzzle consists in cutting the Greek cross on the left of the figure into four pieces with which a square can be formed. A usual solution is the one shown on the right of the figure. Prove that there are infinitely many different solutions. Is there a solution giving four equal pieces?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/es_1988_p5_fig.png"
         },
         {
           "day": 2,
@@ -1567,7 +1657,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "The dimensions of a wooden rectangular parallelepiped (box) are integers. We paint its whole surface (the six faces) and cut it into unit cubes, and we observe that exactly half of the small cubes have no painted face. Prove that the number of parallelepipeds with this property is finite.\n\n(It may be useful to bear in mind that $\\sqrt[3]{\\tfrac{1}{2}}\\simeq 1.79\\ldots<1.8$.)"
+          "problem": "The dimensions of a wooden rectangular parallelepiped (box) are integers. We paint its whole surface (the six faces) and cut it into unit cubes, and we observe that exactly half of the small cubes have no painted face. Prove that the number of parallelepipeds with this property is finite.\n\n(It may be useful to bear in mind that $\\sqrt[3]{\\tfrac{1}{2}}\\simeq 0.79\\ldots<0.8$.)"
         },
         {
           "day": 1,
@@ -2277,7 +2367,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "For each positive integer $n$, let $a(n)$ be the integer such that $n$ is a multiple of all the integers $1,2,\\dots,a(n)$ but not a multiple of $a(n)+1$. Prove that if $a(n)$ is a perfect cube, then $a(n+2520)$ is also a perfect cube."
+          "problem": "For each positive integer $n$, let $a(n)$ denote the largest positive integer $k$ such that $n$ is a multiple of all the numbers $1, 2, \\dots, k$. Prove that if $\\sqrt[3]{a(n)}$ is an integer, then $\\sqrt[3]{a(n+2520)}$ is an integer."
         },
         {
           "day": 2,
