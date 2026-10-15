@@ -216,6 +216,7 @@
     --cwmo: #8f3a5c; --cwmo-ink: #5f263d; --cwmo-tint: #f5e4eb;
     --csmo: #5c8f3a; --csmo-ink: #3d5f26; --csmo-tint: #e9f3e2;
     --cn2: #3a5c8f; --cn2-ink: #263d5f; --cn2-tint: #e2e9f3;
+    --tot: #4f6b2a; --tot-ink: #34471c; --tot-tint: #ebf1e3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -367,6 +368,7 @@
 .f-cwmo { --f: var(--cwmo); --f-ink: var(--cwmo-ink); --f-tint: var(--cwmo-tint); }
 .f-csmo { --f: var(--csmo); --f-ink: var(--csmo-ink); --f-tint: var(--csmo-tint); }
 .f-cn2 { --f: var(--cn2); --f-ink: var(--cn2-ink); --f-tint: var(--cn2-tint); }
+.f-tot { --f: var(--tot); --f-ink: var(--tot-ink); --f-tint: var(--tot-tint); }
 
 /* ==========================================================
    Base
@@ -866,7 +868,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-china-series';
+const DATA_VERSION = '20261015-tournament-of-towns';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -994,6 +996,7 @@ REGION_OF.cgmo = 'asia';
 REGION_OF.cwmo = 'asia';
 REGION_OF.csmo = 'asia';
 REGION_OF.cn2 = 'asia';
+REGION_OF.tot = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1111,6 +1114,7 @@ const COUNTRIES = [
     { key: 'rmm', name: 'RMM', flag: '🌐', file: 'RMM-problems.json', kind: 'years', scope: 'international', full: "Romanian Masters of Mathematics" },
     { key: 'izho', name: 'Zhautykov (IZhO)', flag: '🌐', file: 'IZhO-problems.json', kind: 'years', scope: 'international', full: "International Zhautykov Olympiad in Mathematics" },
     { key: 'shg', name: 'Sharygin (geometry)', flag: '🌐', file: 'Sharygin-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (final round, grade 10)" },
+    { key: 'tot', name: 'Tournament of Towns', flag: '🌐', file: 'Tournament-of-towns-problems.json', kind: 'years', scope: 'international', full: "Tournament of Towns (Senior, A-level)" },
     { key: 'apmo', name: 'APMO', flag: '🌏', file: 'APMO-problems.json', kind: 'years', scope: 'regional', full: 'Asian Pacific Mathematics Olympiad' },
     { key: 'bw', name: 'Baltic Way', flag: '🌊', file: 'Baltic-way-problems.json', kind: 'years', scope: 'regional' },
     { key: 'memo', name: 'MEMO', flag: '🇪🇺', file: 'MEMO-problems.json', kind: 'years', scope: 'regional', full: 'Middle European Mathematical Olympiad' },
