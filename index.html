@@ -209,6 +209,7 @@
     --izho: #7a6a1f; --izho-ink: #524714; --izho-tint: #f3efdc;
     --ir2: #2e8b57; --ir2-ink: #1d5c39; --ir2-tint: #e3f3ea;
     --ir3: #8b5e2e; --ir3-ink: #5c3d1d; --ir3-tint: #f5ece2;
+    --trt: #a33a3a; --trt-ink: #6e2626; --trt-tint: #f7e4e4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -353,6 +354,7 @@
 .f-izho { --f: var(--izho); --f-ink: var(--izho-ink); --f-tint: var(--izho-tint); }
 .f-ir2 { --f: var(--ir2); --f-ink: var(--ir2-ink); --f-tint: var(--ir2-tint); }
 .f-ir3 { --f: var(--ir3); --f-ink: var(--ir3-ink); --f-tint: var(--ir3-tint); }
+.f-trt { --f: var(--trt); --f-ink: var(--trt-ink); --f-tint: var(--trt-tint); }
 
 /* ==========================================================
    Base
@@ -852,7 +854,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-iran-mo';
+const DATA_VERSION = '20261015-turkey-tst';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -973,6 +975,7 @@ REGION_OF.rmm = 'world';
 REGION_OF.izho = 'world';
 REGION_OF.ir2 = 'asia';
 REGION_OF.ir3 = 'asia';
+REGION_OF.trt = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1119,6 +1122,7 @@ const COUNTRIES = [
     { key: 'ilt', name: 'Israel TST', flag: '🇮🇱', file: 'Israel-tst-problems.json', kind: 'years' },
     { key: 'cy', name: 'Cyprus Pancyprian (Grade 12)', flag: '🇨🇾', file: 'Cyprus-pancyprian-problems.json', kind: 'years' },
     { key: 'ujm', name: 'USA USAJMO', flag: '🇺🇸', file: 'Usa-usajmo-problems.json', kind: 'years', full: "USA Junior Mathematical Olympiad (USAJMO)" },
+    { key: 'trt', name: 'Turkey TST', flag: '🇹🇷', file: 'Turkey-tst-problems.json', kind: 'years', full: "Turkey IMO Team Selection Test" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
