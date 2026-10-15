@@ -230,6 +230,8 @@
     --mn: #4d7c0f; --mn-ink: #335209; --mn-tint: #e8f3d9;
     --pr: #c2410c; --pr-ink: #832b08; --pr-tint: #fde6da;
     --uz: #0369a1; --uz-ink: #02466b; --uz-tint: #dcedf8;
+    --caq: #9a3412; --caq-ink: #66220b; --caq-tint: #fbe7dc;
+    --det: #334155; --det-ink: #1e2733; --det-tint: #e5e9ef;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -395,6 +397,8 @@
 .f-mn { --f: var(--mn); --f-ink: var(--mn-ink); --f-tint: var(--mn-tint); }
 .f-pr { --f: var(--pr); --f-ink: var(--pr-ink); --f-tint: var(--pr-tint); }
 .f-uz { --f: var(--uz); --f-ink: var(--uz-ink); --f-tint: var(--uz-tint); }
+.f-caq { --f: var(--caq); --f-ink: var(--caq-ink); --f-tint: var(--caq-tint); }
+.f-det { --f: var(--det); --f-ink: var(--det-ink); --f-tint: var(--det-tint); }
 
 /* ==========================================================
    Base
@@ -894,7 +898,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-mongolia-puerto-rico-uzbekistan';
+const DATA_VERSION = '20261015-canada-repechage-germany-tst';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1036,6 +1040,8 @@ REGION_OF.hmmti = 'americas';
 REGION_OF.mn = 'asia';
 REGION_OF.pr = 'americas';
 REGION_OF.uz = 'asia';
+REGION_OF.caq = 'americas';
+REGION_OF.det = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1050,6 +1056,7 @@ const COUNTRIES = [
     { key: 'uk1', name: 'UK BMO1',   flag: '🇬🇧', file: 'Uk-bmo1-problems.json',          kind: 'years' },
     { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
     { key: 'ca', name: 'Canada',     flag: '🇨🇦', file: 'Canada-cmo-problems.json',       kind: 'years' },
+    { key: 'caq', name: 'Canada Repêchage', flag: '🇨🇦', file: 'Canada-repechage-problems.json', kind: 'years', full: "Canadian Mathematical Olympiad Qualifying Rep\u00eachage (CMOQR)" },
     { key: 'ie', name: 'Ireland',    flag: '🇮🇪', file: 'Ireland-irmo-problems.json',     kind: 'years' },
     { key: 'in', name: 'India',      flag: '🇮🇳', file: 'India-inmo-problems.json',       kind: 'years' },
     { key: 'kr', name: 'S. Korea KMO', flag: '🇰🇷', file: 'Korea-kmo-problems.json',        kind: 'years' },
@@ -1081,6 +1088,7 @@ const COUNTRIES = [
     { key: 'cht', name: 'Switzerland TST', flag: '🇨🇭', file: 'Swiss-selection-problems.json', kind: 'years' },
     { key: 'de', name: 'Germany BWM', flag: '🇩🇪', file: 'Germany-bwm-problems.json', kind: 'years' },
     { key: 'dem', name: 'Germany MO', flag: '🇩🇪', file: 'Germany-mo-problems.json', kind: 'years' },
+    { key: 'det', name: 'Germany TST', flag: '🇩🇪', file: 'Germany-tst-problems.json', kind: 'years', full: "Germany IMO Selection Exams (Auswahlklausuren)" },
     { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
     { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },
     { key: 'ro', name: 'Romania', flag: '🇷🇴', file: 'Romania-nmo-problems.json', kind: 'years' },
