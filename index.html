@@ -212,6 +212,10 @@
     --trt: #a33a3a; --trt-ink: #6e2626; --trt-tint: #f7e4e4;
     --cmo: #3a6ea5; --cmo-ink: #244a70; --cmo-tint: #e4edf6;
     --shg: #7d4c93; --shg-ink: #523163; --shg-tint: #f1e7f6;
+    --cgmo: #b5473a; --cgmo-ink: #7a2f27; --cgmo-tint: #f8e6e3;
+    --cwmo: #8f3a5c; --cwmo-ink: #5f263d; --cwmo-tint: #f5e4eb;
+    --csmo: #5c8f3a; --csmo-ink: #3d5f26; --csmo-tint: #e9f3e2;
+    --cn2: #3a5c8f; --cn2-ink: #263d5f; --cn2-tint: #e2e9f3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -359,6 +363,10 @@
 .f-trt { --f: var(--trt); --f-ink: var(--trt-ink); --f-tint: var(--trt-tint); }
 .f-cmo { --f: var(--cmo); --f-ink: var(--cmo-ink); --f-tint: var(--cmo-tint); }
 .f-shg { --f: var(--shg); --f-ink: var(--shg-ink); --f-tint: var(--shg-tint); }
+.f-cgmo { --f: var(--cgmo); --f-ink: var(--cgmo-ink); --f-tint: var(--cgmo-tint); }
+.f-cwmo { --f: var(--cwmo); --f-ink: var(--cwmo-ink); --f-tint: var(--cwmo-tint); }
+.f-csmo { --f: var(--csmo); --f-ink: var(--csmo-ink); --f-tint: var(--csmo-tint); }
+.f-cn2 { --f: var(--cn2); --f-ink: var(--cn2-ink); --f-tint: var(--cn2-tint); }
 
 /* ==========================================================
    Base
@@ -858,7 +866,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-caucasus-sharygin';
+const DATA_VERSION = '20261015-china-series';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -982,6 +990,10 @@ REGION_OF.ir3 = 'asia';
 REGION_OF.trt = 'europe';
 REGION_OF.cmo = 'europe';
 REGION_OF.shg = 'world';
+REGION_OF.cgmo = 'asia';
+REGION_OF.cwmo = 'asia';
+REGION_OF.csmo = 'asia';
+REGION_OF.cn2 = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1068,6 +1080,10 @@ const COUNTRIES = [
     { key: 'by', name: 'Belarus', flag: '🇧🇾', file: 'Belarus-mo-problems.json', kind: 'years' },
     { key: 'za', name: 'South Africa', flag: '🇿🇦', file: 'SouthAfrica-samo-problems.json', kind: 'years' },
     { key: 'cnt', name: 'China TST', flag: '🇨🇳', file: 'China-tst-problems.json', kind: 'years' },
+    { key: 'cgmo', name: 'China Girls MO', flag: '🇨🇳', file: 'China-girls-problems.json', kind: 'years', full: "China Girls Mathematical Olympiad (CGMO)" },
+    { key: 'cwmo', name: 'China Western MO', flag: '🇨🇳', file: 'China-western-problems.json', kind: 'years', full: "China Western Mathematical Olympiad (CWMO)" },
+    { key: 'csmo', name: 'China South East MO', flag: '🇨🇳', file: 'China-southeast-problems.json', kind: 'years', full: "China South East Mathematical Olympiad" },
+    { key: 'cn2', name: 'China Second Round', flag: '🇨🇳', file: 'China-second-round-problems.json', kind: 'years', full: "China National High School Mathematics League, Second Round" },
     { key: 'vnt', name: 'Vietnam TST', flag: '🇻🇳', file: 'Vietnam-tst-problems.json', kind: 'years' },
     { key: 'int', name: 'India TST', flag: '🇮🇳', file: 'India-tst-problems.json', kind: 'years' },
     { key: 'uat', name: 'Ukraine TST', flag: '🇺🇦', file: 'Ukraine-tst-problems.json', kind: 'years' },
