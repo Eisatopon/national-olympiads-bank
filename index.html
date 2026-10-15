@@ -820,7 +820,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-russia-check';
+const DATA_VERSION = '20261015-test-labels';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1220,14 +1220,18 @@ function topicFields(text, category, uid) {
 
 function normalizeYears(country, raw) {
     const out = [];
+    // A selection-test row stores the test number as `day`: a year with more than two shows "Test N".
+    const tst = /\bTST/.test(country.name || '') || /-(tst|tstst|selection)-problems\.json$/i.test(country.file || '');
     (raw.years || []).forEach(y => {
+        const days = (y.problems || []).map(p => p.day ?? p.paper_id ?? 0);
+        const tests = tst && (new Set(days).size > 2 || Math.max(0, ...days) > 2);
         (y.problems || []).forEach((p, i) => {
             const num = p.number ?? (i + 1);
             const day = p.day ?? p.paper_id ?? null;
             out.push({
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
-                paperLabel: p.paper_label || null, figureAlt: p.figure_alt || null,
+                paperLabel: p.paper_label || (tests && day ? 'Test ' + day : null), figureAlt: p.figure_alt || null,
                 ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || '')
             });
         });
