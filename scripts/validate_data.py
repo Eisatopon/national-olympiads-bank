@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QUARANTINED = set()
 # USA AMC rows: several papers per year (A/B, I/II, Fall), each numbered from 1.
-PER_PAPER_NUMBERING = {'USA-AIME-problems.json', 'USA-AMC12-problems.json', 'USA-AMC10-problems.json', 'USA-AMC8-problems.json'}
+PER_PAPER_NUMBERING = {'USA-AIME-problems.json', 'USA-AMC12-problems.json', 'USA-AMC10-problems.json', 'USA-AMC8-problems.json', 'USA-AHSME-problems.json'}
 KNOWN_GAPS = {('Austria-oemo-problems.json', 1996): [1, 2, 3, 4, 6],
               ('Austria-oemo-problems.json', 1978): [1, 3, 4, 5, 6],
               ('Austria-oemo-problems.json', 1977): [1, 2, 4, 5, 6],
