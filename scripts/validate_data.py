@@ -6,7 +6,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUARANTINED = set()
-KNOWN_GAPS = {('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
+KNOWN_GAPS = {('Austria-oemo-problems.json', 1996): [1, 2, 3, 4, 6],
+              ('Austria-oemo-problems.json', 1978): [1, 3, 4, 5, 6],
+              ('Austria-oemo-problems.json', 1977): [1, 2, 4, 5, 6],
+              ('Austria-oemo-problems.json', 1976): [1, 2, 3, 5, 6],
+              ('Argentina-level3-problems.json', 1994): [2, 3, 4, 5, 6],
               ('Chile-final-problems.json', 1991): [1, 2, 3, 4, 5, 6]
 }
 # Iberoamerican gaps restored from the clean Universidad de Jaen archive on 9 Oct 2026.
