@@ -179,6 +179,7 @@
     --amc12: #2a6f97; --amc12-ink: #1b4a66; --amc12-tint: #e2eff6;
     --amc10: #3d7f6e; --amc10-ink: #28564a; --amc10-tint: #e3f1ec;
     --ahsme: #6b5a8e; --ahsme-ink: #463b5e; --ahsme-tint: #ece8f3;
+    --amc8: #4f7d3a; --amc8-ink: #345226; --amc8-tint: #e7f0e1;
     --kgca: #9a5a2c; --kgca-ink: #643a1c; --kgca-tint: #f6eadf;
     --kgbe: #b7791f; --kgbe-ink: #7a5014; --kgbe-tint: #f8eedd;
     --kgec: #5f8a3a; --kgec-ink: #3e5c25; --kgec-tint: #e9f1e1;
@@ -314,6 +315,7 @@
 .f-amc12 { --f: var(--amc12); --f-ink: var(--amc12-ink); --f-tint: var(--amc12-tint); }
 .f-amc10 { --f: var(--amc10); --f-ink: var(--amc10-ink); --f-tint: var(--amc10-tint); }
 .f-ahsme { --f: var(--ahsme); --f-ink: var(--ahsme-ink); --f-tint: var(--ahsme-tint); }
+.f-amc8 { --f: var(--amc8); --f-ink: var(--amc8-ink); --f-tint: var(--amc8-tint); }
 .f-kgca { --f: var(--kgca); --f-ink: var(--kgca-ink); --f-tint: var(--kgca-tint); }
 .f-kgbe { --f: var(--kgbe); --f-ink: var(--kgbe-ink); --f-tint: var(--kgbe-tint); }
 .f-kgec { --f: var(--kgec); --f-ink: var(--kgec-ink); --f-tint: var(--kgec-tint); }
@@ -787,7 +789,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-ahsme';
+const DATA_VERSION = '20261015-amc8-kangaroo-junior-2005';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -895,6 +897,7 @@ REGION_OF.aime = 'americas';
 REGION_OF.amc12 = 'americas';
 REGION_OF.amc10 = 'americas';
 REGION_OF.ahsme = 'americas';
+REGION_OF.amc8 = 'americas';
 REGION_OF.kgca = 'world';
 REGION_OF.kgbe = 'world';
 REGION_OF.kgec = 'world';
@@ -1028,6 +1031,7 @@ const COUNTRIES = [
     { key: 'aime', name: 'AIME', flag: '🇺🇸', file: 'USA-AIME-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination (AIME I and II from 2000) · problems © MAA' },
     { key: 'amc12', name: 'AMC 12', flag: '🇺🇸', file: 'USA-AMC12-problems.json', kind: 'years', scope: 'amc', full: 'American Mathematics Competitions 12 (A, B, Fall 2021, 2002 P) · problems © MAA' },
     { key: 'amc10', name: 'AMC 10', flag: '🇺🇸', file: 'USA-AMC10-problems.json', kind: 'years', scope: 'amc', full: 'American Mathematics Competitions 10 (A, B, Fall 2021) · problems © MAA' },
+    { key: 'amc8', name: 'AMC 8', flag: '🇺🇸', file: 'USA-AMC8-problems.json', kind: 'years', scope: 'amc', full: 'AMC 8 (AJHSME until 1998) · problems © MAA' },
     { key: 'omcc', name: 'Centroamerican MO', flag: '🌎', file: 'Centroamerican-omcc-problems.json', kind: 'years', scope: 'regional', full: 'Centroamerican and Caribbean Mathematical Olympiad' },
     { key: 'kg', name: 'Kyrgyzstan Republican Final', flag: '🇰🇬', file: 'Kyrgyzstan-republican-problems.json', kind: 'years' },
     { key: 'py', name: 'Paraguay OMAPA (Level 3)', flag: '🇵🇾', file: 'Paraguay-omapa-problems.json', kind: 'years' },

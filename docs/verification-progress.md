@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 29670 stored records; 10301 source-checked; 19369 remaining (including quarantine).
+Inventory: 30905 stored records; 10499 source-checked; 20406 remaining (including quarantine).
 
-Active bank: 29670 records; 10301 source-checked; 19369 remaining. Whole-bank source verification is **not complete**.
+Active bank: 30905 records; 10499 source-checked; 20406 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -75,7 +75,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Kangaroo-benjamin-problems.json | 450 | 442 | 8 | pending |
 | Kangaroo-cadet-problems.json | 450 | 446 | 4 | pending |
 | Kangaroo-ecolier-problems.json | 360 | 350 | 10 | pending |
-| Kangaroo-junior-problems.json | 450 | 446 | 4 | pending |
+| Kangaroo-junior-problems.json | 660 | 644 | 16 | pending |
 | Kangaroo-preecolier-problems.json | 360 | 349 | 11 | pending |
 | Kangaroo-student-problems.json | 660 | 651 | 9 | pending |
 | Kazakhstan-rmo-problems.json | 184 | 6 | 178 | pending |
@@ -125,6 +125,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | USA-AIME-problems.json | 1065 | 0 | 1065 | pending |
 | USA-AMC10-problems.json | 1300 | 0 | 1300 | pending |
 | USA-AMC12-problems.json | 1325 | 0 | 1325 | pending |
+| USA-AMC8-problems.json | 1025 | 0 | 1025 | pending |
 | USSR-allunion-problems.json | 159 | 0 | 159 | pending |
 | Uk-bmo1-problems.json | 132 | 132 | 0 | stored_statements_checked |
 | Uk-bmo2-problems.json | 88 | 88 | 0 | stored_statements_checked |
