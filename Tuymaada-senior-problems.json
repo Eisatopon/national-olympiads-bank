@@ -1,0 +1,990 @@
+{
+  "competition": "Tuymaada Olympiad (Senior League)",
+  "years": [
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "50 knights of King Arthur sat at the Round Table. A glass of white or red wine stood before each of them. It is known that at least one glass of red wine and at least one glass of white wine stood on the table. The king clapped his hands twice. After the first clap every knight with a glass of red wine before him took a glass from his left neighbour. After the second clap every knight with a glass of white wine (and possibly something more) before him gave this glass to the left neighbour of his left neighbour. Prove that some knight was left without wine.",
+          "proposer": "A. Khrabrov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all polynomials $P(x)$ such that\n$$P(x^3+1)=P(x^3)+P(x^2).$$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "What maximum number of elements can be selected from the set $\\{1, 2, 3, \\dots, 100\\}$ so that no sum of any three selected numbers is equal to a selected number?",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove the inequality\n$${x\\over y^2-z}+{y\\over z^2-x}+{z\\over x^2-y} > 1,$$\nwhere $2 < x, y, z < 4.$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In the triangle $ABC$ we have $\\angle ABC=100^\\circ$, $\\angle ACB=65^\\circ$, $M\\in AB$, $N\\in AC$, and $\\angle MCB=55^\\circ$, $\\angle NBC=80^\\circ$. Find $\\angle NMC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Can the graphs of a polynomial of degree 20 and the function $\\displaystyle y={1\\over x^{40}}$ have exactly 30 points of intersection?",
+          "proposer": "K. Kokhas"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A sequence of integers $a_0,\\ a_1,\\dots a_n \\dots$ is defined by the following rules: $a_0=0,\\ a_1=1,\\ a_{n+1} > a_n$ for each $n\\in \\mathbb{N}$, and $a_{n+1}$ is the minimum number such that no three numbers among $a_0,\\ a_1,\\dots a_{n+1}$ form an arithmetical progression. Prove that $a_{2^n}=3^n$ for each $n \\in \\mathbb{N}.$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A right parallelepiped (i.e. a parallelepiped one of whose edges is perpendicular to a face) is given. Its vertices have integral coordinates, and no other points with integral coordinates lie on its faces or edges. Prove that the volume of this parallelepiped is a sum of three perfect squares.",
+          "proposer": "A. Golovanov"
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $d(n)$ denote the number of positive divisors of $n$ and let $e(n)=\\left[\\frac{2000}{n}\\right]$ for positive integer $n$. Prove that\n$$d(1)+d(2)+\\dots+d(2000)=e(1)+e(2)+\\dots+e(2000).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A tangent $l$ to the circle inscribed in a rhombus meets its sides $AB$ and $BC$ at points $E$ and $F$ respectively.\nProve that the product $AE\\cdot CF$ is independent of the choice of $l$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Can the 'brick wall' (infinite in all directions) drawn at the picture be made of wires of length $1, 2, 3, \\dots$ (each positive integral length occurs exactly once)? (Wires can be bent but should not overlap; size of a 'brick' is $1\\times 2$)."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove for real $x_1$, $x_2$, ....., $x_n$, $0 < x_k \\leq {1\\over 2}$, the inequality\n$$\\left( {n \\over x_1 + \\dots + x_n} - 1 \\right)^n \\leq \\left( {1 \\over x_1} - 1 \\right) \\dots \\left( {1 \\over x_n} - 1 \\right).$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Can the plane be coloured in 2000 colours so that any nondegenerate circle contains points of all 2000 colors?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "There are 2000 cities in Graphland; some of them are connected by roads.\nFor every city the number of roads going from it is counted. It is known that there are exactly two equal numbers among all the numbers obtained. What can be these numbers?"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Polynomial $P(t)$ is such that for all real $x$,\n$$P(\\sin x) + P(\\cos x) = 1.$$\nWhat can be the degree of this polynomial?"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Prove that no number of the form $10^{-n}$, $n\\geq 1,$ can be represented as the sum of reciprocals of factorials of different positive integers."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Ten volleyball teams played a tournament; every two teams met exactly once. The winner of the play gets 1 point, the loser gets 0 (there are no draws in volleyball). If the team that scored $n$-th has $x_{n}$ points ($n=1, \\dots, 10$), prove that $x_{1}+2x_{2}+\\dots+10x_{10}\\geq 165$.",
+          "proposer": "D. Teryoshin"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Solve the equation\n$$(a^{2},b^{2})+(a,bc)+(b,ac)+(c,ab)=199.$$\nin positive integers.\n(Here $(x,y)$ denotes the greatest common divisor of $x$ and $y$.)",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Do there exist quadratic trinomials $P, \\ \\ Q, \\ \\ R$ such that for every integers $x$ and $y$ an integer $z$ exists satisfying $P(x)+Q(y)=R(z)?$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Unit square $ABCD$ is divided into $10^{12}$ smaller squares (not necessarily equal). Prove that the sum of perimeters of all the smaller squares having common points with diagonal $AC$ does not exceed 1500.",
+          "proposer": "A. Kanel-Belov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "All positive integers are distributed among two disjoint sets $N_{1}$ and $N_{2}$ such that no difference of two numbers belonging to the same set is a prime greater than 100.\n\nFind all such distributions.",
+          "proposer": "N. Sedrakyan"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Non-zero numbers are arranged in $n \\times n$ square ($n>2$). Every number is exactly $k$ times less than the sum of all the other numbers in the same cross (i.e., $2n-2$ numbers written in the same row or column with this number).\nFind all possible $k$.",
+          "proposer": "D. Rostovsky, A. Khrabrov, S. Berlov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "$ABCD$ is a convex quadrilateral; half-lines $DA$ and $CB$ meet at point $Q$; half-lines $BA$ and $CD$ meet at point $P$. It is known that $\\angle AQB=\\angle APD$. The bisector of angle $\\angle AQB$ meets the sides $AB$ and $CD$ of the quadrilateral at points $X$ and $Y$, respectively; the bisector of angle $\\angle APD$ meets the sides $AD$ and $BC$ at points $Z$ and $T$, respectively.\nThe circumcircles of triangles $ZQT$ and $XPY$ meet at point $K$ inside the quadrilateral.\nProve that $K$ lies on the diagonal $AC$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Is it possible to colour all positive real numbers by 10 colours so that every two numbers with decimal representations differing in one place only are of different colours? (We suppose that there is no place in a decimal representations such that all digits starting from that place are 9's.)",
+          "proposer": "A. Golovanov"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A $2003\\times 2004$ rectangle consists of unit squares. We consider rhombi formed by four diagonals of unit squares.\nWhat maximum number of such rhombi can be arranged in this rectangle so that no two of them have any common points except vertices?",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In a quadrilateral $ABCD$ sides $AB$ and $CD$ are equal, $\\angle A=150^\\circ,$ $\\angle B=44^\\circ,$ $\\angle C=72^\\circ.$\nPerpendicular bisector of the segment $AD$ meets the side $BC$ at point $P.$\nFind $\\angle APD.$",
+          "proposer": "F. Bakharev"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Alphabet $A$ contains $n$ letters. $S$ is a set of words of finite length composed of letters of $A$. It is known that every infinite sequence of letters of $A$ begins with one and only one word of $S$.\nProve that the set $S$ is finite.",
+          "proposer": "F. Bakharev"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all continuous functions $f(x)$ defined for all $x>0$ such that for every $x$, $y > 0$\n$$f\\left(x+{1\\over x}\\right)+f\\left(y+{1\\over y}\\right)= f\\left(x+{1\\over y}\\right)+f\\left(y+{1\\over x}\\right) .$$",
+          "proposer": "F. Petrov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that for every $\\alpha_{1}, \\alpha_{2}, \\ldots, \\alpha_{n}$ in the interval $(0,\\pi/2)$\n$$\\left({1\\over \\sin \\alpha_{1}}+{1\\over \\sin \\alpha_{2}}+\\ldots+{1\\over \\sin \\alpha_{n}}\\right) \\left({1\\over \\cos \\alpha_{1}}+{1\\over \\cos \\alpha_{2}}+\\ldots+{1\\over \\cos \\alpha_{n}}\\right) \\leq$$\n$$\\leq 2 \\left({1\\over \\sin 2\\alpha_{1}}+{1\\over \\sin 2\\alpha_{2}}+\\ldots+{1\\over \\sin 2\\alpha_{n}}\\right)^{2}.$$",
+          "proposer": "A. Khrabrov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Which number is bigger: the number of positive integers not exceeding 1000000 that can be represented by the form $2x^{2}-3y^{2}$ with integral $x$ and $y$ or that of positive integers not exceeding 1000000 that can be represented by the form $10xy-x^{2}-y^{2}$ with integral $x$ and $y?$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "In a convex quadrilateral $ABCD$ we have $AB\\cdot CD=BC\\cdot DA$ and $2\\angle A+\\angle C=180^\\circ$. Point $P$ lies on the circumcircle of triangle $ABD$ and is the midpoint of the arc $BD$ not containing $A$. It is known that the point $P$ lies inside the quadrilateral $ABCD$. Prove that $\\angle BCA=\\angle DCP$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Given are polynomial $f(x)$ with non-negative integral coefficients and positive integer $a.$ The sequence $\\{a_{n}\\}$ is defined by $a_{1}=a,$ $a_{n+1}=f(a_{n}).$ It is known that the set of primes dividing at least one of the terms of this sequence is finite.\nProve that $f(x)=cx^{k}$ for some non-negative integral $c$ and $k.$",
+          "proposer": "F. Petrov"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The positive integers $1,2,...,121$ are arranged in the squares of a $11 \\times 11$ table. Dima found the product of numbers in each row and Sasha found the product of the numbers in each column. Could they get the same set of $11$ numbers?",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Six members of the team of Fatalia for the International Mathematical Olympiad are selected from $13$ candidates. At the TST the candidates got $a_1,a_2, \\ldots, a_{13}$ points with $a_i \\neq a_j$ if $i \\neq j$.\n\nThe team leader has already $6$ candidates and now wants to see them and nobody other in the team. With that end in view he constructs a polynomial $P(x)$ and finds the creative potential of each candidate by the formula $c_i = P(a_i)$.\n\nFor what minimum $n$ can he always find a polynomial $P(x)$ of degree not exceeding $n$ such that the creative potential of all $6$ candidates is strictly more than that of the $7$ others?",
+          "proposer": "F. Petrov, K. Sukhov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The organizers of a mathematical congress found that if they accommodate any participant in a room the rest can be accommodated in double rooms so that 2 persons living in each room know each other. Prove that every participant can organize a round table on graph theory for himself and an even number of other people so that each participant of the round table knows both his neighbours.",
+          "proposer": "S. Berlov, S. Ivanov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "In a triangle $ABC$, let $A_{1}$, $B_{1}$, $C_{1}$ be the points where the excircles touch the sides $BC$, $CA$ and $AB$ respectively. Prove that $A A_{1}$, $B B_{1}$ and $C C_{1}$ are the side lengths of a triangle.",
+          "proposer": "L. Emelyanov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "You have $2$ columns of $11$ squares in the middle, in the right and in the left you have columns of $9$ squares (centered on the ones of $11$ squares), then columns of $7,5,3,1$ squares.\n\nSeveral rooks stand on the table and beat all the squares (a rook beats the square it stands in, too). Prove that one can remove several rooks such that not more than $11$ rooks are left and still beat all the table.",
+          "proposer": "D. Rostovsky, based on folklore"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Given are a positive integer $n$ and an infinite sequence of proper fractions $x_0 = \\frac{a_0}{n}$, $\\ldots$, $x_i=\\frac{a_i}{n+i}$, with $a_i < n+i$. Prove that there exist a positive integer $k$ and integers $c_1$, $\\ldots$, $c_k$ such that $$c_1 x_1 + \\ldots + c_k x_k = 1.$$",
+          "proposer": "M. Dubashinsky"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $I$ be the incentre of triangle $ABC$. A circle containing the points $B$ and $C$ meets the segments $BI$ and $CI$ at points $P$ and $Q$ respectively. It is known that $BP\\cdot CQ=PI\\cdot QI$. Prove that the circumcircle of the triangle $PQI$ is tangent to the circumcircle of $ABC$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $a,b,c$ be positive reals s.t. $a^2+b^2+c^2=1$. Prove the following inequality $$\\sum \\frac{a}{a^3+bc} >3 .$$",
+          "proposer": "A. Khrabrov"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Seven different odd primes are given. Is it possible that for any two of them, the difference of their eighth powers to be divisible by all the remaining ones?",
+          "proposer": "F. Petrov, K. Sukhov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "We call a sequence of integers a Fibonacci-type sequence if it is infinite in both ways and $a_{n}=a_{n-1}+a_{n-2}$ for any $n\\in\\mathbb{Z}$. How many Fibonacci-type sequences can we find, with the property that in these sequences there are two consecutive terms, strictly positive, and less or equal than $N$? (two sequences are considered to be the same if they differ only by shifting of indices)",
+          "proposer": "I. Pevzner"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A line $d$ is given in the plane. Let $B\\in d$ and $A$ another point, not on $d$, and such that $AB$ is not perpendicular on $d$. Let $\\omega$ be a variable circle touching $d$ at $B$ and letting $A$ outside, and $X$ and $Y$ the points on $\\omega$ such that $AX$ and $AY$ are tangent to the circle. Prove that the line $XY$ passes through a fixed point.",
+          "proposer": "F. Bakharev"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all functions $f: (0,\\infty)\\rightarrow(0,\\infty)$ with the following properties: $f(x+1)=f(x)+1$ and $f\\left(\\frac{1}{f(x)}\\right)=\\frac{1}{x}$.",
+          "proposer": "P. Volkmann"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "There are 100 boxers, each of them having different strengths, who participate in a tournament. Any of them fights each other only once. Several boxers form a plot. In one of their matches, they hide in their glove a horse shoe. If in a fight, only one of the boxers has a horse shoe hidden, he wins the fight; otherwise, the stronger boxer wins. It is known that there are three boxers who obtained (strictly) more wins than the strongest three boxers. What is the minimum number of plotters?",
+          "proposer": "N. Kalinin"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle, $G$ its centroid, $H$ its orthocenter, and $M$ the midpoint of the arc $\\widehat{AC}$ (not containing $B$). It is known that $MG=R$, where $R$ is the radius of the circumcircle. Prove that $BG\\geq BH$.",
+          "proposer": "F. Bakharev"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "From a $n\\times (n-1)$ rectangle divided into unit squares, we cut the corner, which consists of the first row and the first column. (that is, the corner has $2n-2$ unit squares). For the following, when we say corner we refer to the above definition, along with rotations and symmetry. Consider an infinite lattice of unit squares. We will color the squares with $k$ colors, such that for any corner, the squares in that corner are coloured differently (that means that there are no squares coloured with the same colour). Find out the minimum of $k$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "For a positive integer, we define its set of exponents the unordered list of all the exponents of the primes, in its decomposition. For example, $18=2\\cdot 3^{2}$ has its set of exponents $1,2$ and $300=2^{2}\\cdot 3\\cdot 5^{2}$ has its set of exponents $1,2,2$. There are given two arithmetical progressions $\\big(a_{n}\\big)_{n}$ and $\\big(b_{n}\\big)_{n}$, such that for any positive integer $n$, $a_{n}$ and $b_{n}$ have the same set of exponents. Prove that the progressions are proportional (that is, there is $k$ such that $a_{n}=kb_{n}$ for any $n$).",
+          "proposer": "A. Golovanov"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Positive integers $a<b$ are given. Prove that among every $b$ consecutive positive integers there are two numbers whose product is divisible by $ab$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Two polynomials $f(x)=a_{100}x^{100}+a_{99}x^{99}+\\dots+a_{1}x+a_{0}$ and $g(x)=b_{100}x^{100}+b_{99}x^{99}+\\dots+b_{1}x+b_{0}$ of degree $100$ differ from each other by a permutation of coefficients. It is known that $a_{i}\\ne b_{i}$ for $i=0, 1, 2, \\dots, 100$. Is it possible that $f(x)\\geq g(x)$ for all real $x$?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "$AA_{1}$, $BB_{1}$, $CC_{1}$ are altitudes of an acute triangle $ABC$. A circle passing through $A_{1}$ and $B_{1}$ touches the arc $AB$ of its circumcircle at $C_{2}$. The points $A_{2}$, $B_{2}$ are defined similarly. Prove that the lines $AA_{2}$, $BB_{2}$, $CC_{2}$ are concurrent."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine maximum real $k$ such that there exist a set $X$ and its subsets $Y_{1}$, $Y_{2}$, $...$, $Y_{31}$ satisfying the following conditions:\n(1) for every two elements of $X$ there is an index $i$ such that $Y_{i}$ contains neither of these elements;\n\n(2) if any non-negative numbers $\\alpha_{i}$ are assigned to the subsets $Y_{i}$ and $\\alpha_{1}+\\dots+\\alpha_{31}=1$ then there is an element $x\\in X$ such that the sum of $\\alpha_{i}$ corresponding to all the subsets $Y_{i}$ that contain $x$ is at least $k$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "What minimum number of colours is sufficient to colour all positive real numbers so that every two numbers whose ratio is 4 or 8 have different colours?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Point $D$ is chosen on the side $AB$ of triangle $ABC$. Point $L$ inside the triangle $ABC$ is such that $BD=LD$ and $\\angle LAB=\\angle LCA=\\angle DCB$. It is known that $\\angle ALD+\\angle ABC=180^\\circ$. Prove that $\\angle BLC=90^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Several knights are arranged on an infinite chessboard. No square is attacked by more than one knight (in particular, a square occupied by a knight can be attacked by one knight but not by two). Sasha outlined a $14\\times 16$ rectangle. What maximum number of knights can this rectangle contain?"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Prove that there exists a positive $c$ such that for every positive integer $N$ among any $N$ positive integers not exceeding $2N$ there are two numbers whose greatest common divisor is greater than $cN$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Several irrational numbers are written on a blackboard. It is known that for every two numbers $a$ and $b$ on the blackboard, at least one of the numbers $\\frac{a}{b+1}$ and $\\frac{b}{a+1}$ is rational. What maximum number of irrational numbers can be on the blackboard?",
+          "proposer": "Alexander Golovanov"
+        },
+        {
+          "number": 2,
+          "problem": "Is it possible to arrange on a circle all composite positive integers not exceeding $10^6$, so that no two neighbouring numbers are coprime?",
+          "proposer": "L. Emelyanov"
+        },
+        {
+          "number": 3,
+          "problem": "Point $I_1$ is the reflection of incentre $I$ of triangle $ABC$ across the side $BC$. The circumcircle of $BCI_1$ intersects the line $II_1$ again at point $P$. It is known that $P$ lies outside the incircle of the triangle $ABC$. Two tangents drawn from $P$ to the latter circle touch it at points $X$ and $Y$. Prove that the line $XY$ contains a medial line of the triangle $ABC$.",
+          "proposer": "L. Emelyanov"
+        },
+        {
+          "number": 4,
+          "problem": "A group of persons is called good if its members can be distributed to several rooms so that nobody is acquainted with any person in the same room but it is possible to choose a person from each room so that all the chosen persons are acquainted with each other.\n\nA group is called perfect if it is good and every set of its members is also good.\n\nA perfect group planned a party. However one of its members, Alice, brought here acquaintance Bob, who was not originally expected, and introduced him to all her other acquaintances. Prove that the new group is also perfect.",
+          "proposer": "C. Berge"
+        },
+        {
+          "number": 5,
+          "problem": "Every street in the city of Hamiltonville connects two squares, and every square may be reached by streets from every other. The governor discovered that if he closed all squares of any route not passing any square more than once, every remained square would be reachable from each other. Prove that there exists a circular route passing every square of the city exactly once.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "number": 6,
+          "problem": "A set $X$ of positive integers is called nice if for each pair $a$, $b\\in X$ exactly one of the numbers $a + b$ and $|a - b|$ belongs to $X$ (the numbers $a$ and $b$ may be equal). Determine the number of nice sets containing the number 2008.",
+          "proposer": "Fedor Petrov"
+        },
+        {
+          "number": 7,
+          "problem": "A loader has two carts. One of them can carry up to 8 kg, and another can carry up to 9 kg. A finite number of sacks with sand lie in a storehouse. It is known that their total weight is more than 17 kg, while each sack weighs not more than 1 kg. What maximum weight of sand can the loader carry on his two carts, regardless of particular weights of sacks?",
+          "proposer": "M.Ivanov, D.Rostovsky, V.Frank"
+        },
+        {
+          "number": 8,
+          "problem": "A convex hexagon is given. Let $s$ be the sum of the lengths of the three segments connecting the midpoints of its opposite sides. Prove that there is a point in the hexagon such that the sum of its distances to the lines containing the sides of the hexagon does not exceed $s.$",
+          "proposer": "N. Sedrakyan"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Misha and Sasha play a game on a $100\\times 100$ chessboard. First, Sasha places $50$ kings on the board, and Misha places a rook, and then they move in turns, as following (Sasha begins):\n\nAt his move, Sasha moves each of the kings one square in any direction, and Misha can move the rook on the horizontal or vertical any number of squares. The kings cannot be captured or stepped over. Sasha's purpose is to capture the rook, and Misha's is to avoid capture.\n\nIs there a winning strategy available for Sasha?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In acute triangle $ABC$, let $H$ denote its orthocenter and let $D$ be a point on side $BC$. Let $P$ be the point so that $ADPH$ is a parallelogram. Prove that $\\angle DCP<\\angle BHP$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Arranged in a circle are $2010$ digits, each of them equal to $1$, $2$, or $3$. For each positive integer $k$, it's known that in any block of $3k$ consecutive digits, each of the digits appears at most $k+10$ times. Prove that there is a block of several consecutive digits with the same number of $1$s, $2$s, and $3$s."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that for any positive real number $\\alpha$, the number $\\lfloor\\alpha n^2\\rfloor$ is even for infinitely many positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Baron Münchausen boasts that he knows a remarkable quadratic trinomial with positive coefficients. The trinomial has an integral root; if all of its coefficients are increased by $1$, the resulting trinomial also has an integral root; and if all of its coefficients are also increased by $1$, the new trinomial, too, has an integral root. Can this be true?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For a given positive integer $n$, it's known that there exist $2010$ consecutive positive integers such that none of them is divisible by $n$ but their product is divisible by $n$. Prove that there exist $2004$ consecutive positive integers such that none of them is divisible by $n$ but their product is divisible by $n$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "In a cyclic quadrilateral $ABCD$, the extensions of sides $AB$ and $CD$ meet at point $P$, and the extensions of sides $AD$ and $BC$ meet at point $Q$. Prove that the distance between the orthocenters of triangles $APD$ and $AQB$ is equal to the distance between the orthocenters of triangles $CQD$ and $BPC$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In a country there are $4^9$ schoolchildren living in four cities. At the end of the school year a state examination was held in 9 subjects. It is known that any two students have different marks at least in one subject. However, every two students from the same city got equal marks at least in one subject. Prove that there is a subject such that every two children living in the same city have equal marks in this subject.",
+          "proposer": "F. Petrov"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Red, blue, and green children are arranged in a circle. When a teacher asked the red children that have a green neighbor to raise their hands, $20$ children raised their hands. When she asked the blue children that have a green neighbor to raise their hands, $25$ children raised their hands. Prove that some child that raised her hand had two green neighbors."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Circles $\\omega_1$ and $\\omega_2$ intersect at points $A$ and $B$, and $M$ is the midpoint of $AB$. Points $S_1$ and $S_2$ lie on the line $AB$ (but not between $A$ and $B$). The tangents drawn from $S_1$ to $\\omega_1$ touch it at $X_1$ and $Y_1$, and the tangents drawn from $S_2$ to $\\omega_2$ touch it at $X_2$ and $Y_2$. Prove that if the line $X_1X_2$ passes through $M$, then line $Y_1Y_2$ also passes through $M$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Written in each square of an infinite chessboard is the minimum number of moves needed for a knight to reach that square from a given square $O$. A square is called singular if $100$ is written in it and $101$ is written in all four squares sharing a side with it. How many singular squares are there?"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "In a set of consecutive positive integers, there are exactly $100$ perfect cubes and $10$ perfect fourth powers. Prove that there are at least $2000$ perfect squares in the set."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Each real number greater than 1 is colored red or blue with both colors being used. Prove that there exist real numbers $a$ and $b$ such that the numbers $a+\\frac1b$ and $b+\\frac1a$ are different colors."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a word of more than $10$ letters, any two consecutive letters are different. Prove that one can change places of two consecutive letters so that the resulting word is not periodic, that is, cannot be divided into equal subwords."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "In a convex hexagon $AC'BA'CB'$, every two opposite sides are equal. Let $A_1$ denote the point of intersection of $BC$ with the perpendicular bisector of $AA'$. Define $B_1$ and $C_1$ similarly. Prove that $A_1$, $B_1$, and $C_1$ are collinear."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $P(n)$ be a quadratic trinomial with integer coefficients. For each positive integer $n$, the number $P(n)$ has a proper divisor $d_n$, i.e., $1<d_n<P(n)$, such that the sequence $d_1,d_2,d_3,\\ldots$ is increasing. Prove that either $P(n)$ is the product of two linear polynomials with integer coefficients or all the values of $P(n)$, for positive integers $n$, are divisible by the same integer $m>1$."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Tanya and Serezha take turns putting chips in empty squares of a chessboard. Tanya starts with a chip in an arbitrary square. At every next move, Serezha must put a chip in the column where Tanya put her last chip, while Tanya must put a chip in the row where Serezha put his last chip. The player who cannot make a move loses. Which of the players has a winning strategy?",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $P(x)$ be a real quadratic trinomial, so that for all $x\\in \\mathbb{R}$ the inequality $P(x^3+x)\\geq P(x^2+1)$ holds. Find the sum of the roots of $P(x)$.",
+          "proposer": "A. Golovanov, M. Ivanov, K. Kokhas"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Point $P$ is taken in the interior of the triangle $ABC$, so that\n$$\\angle PAB = \\angle PCB = \\dfrac {1} {4} (\\angle A + \\angle C).$$\nLet $L$ be the foot of the angle bisector of $\\angle B$. The line $PL$ meets the circumcircle of $\\triangle APC$ at point $Q$. Prove that $QB$ is the angle bisector of $\\angle AQC$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $p=4k+3$ be a prime. Prove that if\n$$\\dfrac {1} {0^2+1}+\\dfrac{1}{1^2+1}+\\cdots+\\dfrac{1}{(p-1)^2+1}=\\dfrac{m} {n}$$\n(where the fraction $\\dfrac {m} {n}$ is in reduced terms), then $p \\mid 2m-n$.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Solve in positive integers the following equation:\n$${1\\over n^2}-{3\\over 2n^3}={1\\over m^2}$$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Quadrilateral $ABCD$ is both cyclic and circumscribed. Its incircle touches its sides $AB$ and $CD$ at points $X$ and $Y$, respectively. The perpendiculars to $AB$ and $CD$ drawn at $A$ and $D$, respectively, meet at point $U$; those drawn at $X$ and $Y$ meet at point $V$, and finally, those drawn at $B$ and $C$ meet at point $W$. Prove that points $U$, $V$ and $W$ are collinear.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Prove that for any real numbers $a,b,c$ satisfying $abc = 1$ the following inequality holds\n$$\\dfrac{1} {2a^2+b^2+3}+\\dfrac {1} {2b^2+c^2+3}+\\dfrac{1} {2c^2+a^2+3}\\leq \\dfrac {1} {2}.$$",
+          "proposer": "V. Aksenov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Integers not divisible by $2012$ are arranged on the arcs of an oriented graph. We call the weight of a vertex the difference between the sum of the numbers on the arcs coming into it and the sum of the numbers on the arcs going away from it. It is known that the weight of each vertex is divisible by $2012$. Prove that non-zero integers with absolute values not exceeding $2012$ can be arranged on the arcs of this graph, so that the weight of each vertex is zero.",
+          "proposer": "W. Tutte"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "$100$ heaps of stones lie on a table. Two players make moves in turn. At each move, a player can remove any non-zero number of stones from the table, so that at least one heap is left untouched. The player that cannot move loses. Determine, for each initial position, which of the players, the first or the second, has a winning strategy.",
+          "proposer": "K. Kokhas"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Points $X$ and $Y$ inside the rhombus $ABCD$ are such that $Y$ is inside the convex quadrilateral $BXDC$ and $2\\angle XBY = 2\\angle XDY = \\angle ABC$. Prove that the lines $AX$ and $CY$ are parallel.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The vertices of a connected graph cannot be coloured with less than $n+1$ colours (so that adjacent vertices have different colours).\nProve that $\\dfrac{n(n-1)}{2}$ edges can be removed from the graph so that it remains connected.",
+          "proposer": "V. Dolnikov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that if $x$, $y$, $z$ are positive real numbers and $xyz = 1$ then\n$$\\frac{x^3}{x^2+y}+\\frac{y^3}{y^2+z}+\\frac{z^3}{z^2+x}\\geq \\dfrac {3} {2}.$$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that every polynomial of fourth degree can be represented in the form $P(Q(x))+R(S(x))$, where $P,Q,R,S$ are quadratic trinomials.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Solve the equation $p^2-pq-q^3=1$ in prime numbers.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Points $A_1$, $A_2$, $A_3$, $A_4$ are the vertices of a regular tetrahedron of edge length $1$. The points $B_1$ and $B_2$ lie inside the figure bounded by the plane $A_1A_2A_3$ and the spheres of radius $1$ and centres $A_1$, $A_2$, $A_3$.\nProve that $B_1B_2 < \\max\\{B_1A_1, B_1A_2, B_1A_3, B_1A_4\\}$.",
+          "proposer": "A. Kupavsky"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Cards numbered from 1 to $2^n$ are distributed among $k$ children, $1\\leq k\\leq 2^n$, so that each child gets at least one card. Prove that the number of ways to do that is divisible by $2^{k-1}$ but not by $2^k$.",
+          "proposer": "M. Ivanov"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Four consecutive three-digit numbers are divided respectively by four consecutive two-digit numbers. What minimum number of different remainders can be obtained?",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The points $K$ and $L$ on the side $BC$ of a triangle $\\triangle{ABC}$ are such that $\\widehat{BAK}=\\widehat{CAL}=90^\\circ$. Prove that the midpoint of the altitude drawn from $A$, the midpoint of $KL$ and the circumcentre of $\\triangle{ABC}$ are collinear.",
+          "proposer": "A. Akopyan, S. Boev, P. Kozhevnikov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Positive numbers $a,\\ b,\\ c$ satisfy $\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=3$. Prove the inequality\n$$\\dfrac{1}{\\sqrt{a^3+1}}+\\dfrac{1}{\\sqrt{b^3+1}}+\\dfrac{1}{\\sqrt{c^3+1}}\\le \\dfrac{3}{\\sqrt{2}}.$$",
+          "proposer": "N. Alexandrov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A $k\\times \\ell$ 'parallelogram' is drawn on a paper with hexagonal cells (it consists of $k$ horizontal rows of $\\ell$ cells each). In this parallelogram a set of non-intersecting sides of hexagons is chosen; it divides all the vertices into pairs.\nHow many ways are there to do that?",
+          "proposer": "T. Doslic"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "There is an even number of cards on a table; a positive integer is written on each card. Let $a_k$ be the number of cards having $k$ written on them. It is known that\n$$a_n-a_{n-1}+a_{n-2}- \\cdots \\ge 0$$\nfor each positive integer $n$. Prove that the cards can be partitioned into pairs so that the numbers in each pair differ by $1$.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Each of $n$ black squares and $n$ white squares can be obtained by a translation from each other. Every two squares of different colours have a common point. Prove that there is a point belonging at least to $n$ squares.",
+          "proposer": "V. Dolnikov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A parallelogram $ABCD$ is given. The excircle of triangle $\\triangle{ABC}$ touches the sides $AB$ at $L$ and the extension of $BC$ at $K$. The line $DK$ meets the diagonal $AC$ at point $X$; the line $BX$ meets the median $CC_1$ of triangle $\\triangle{ABC}$ at ${Y}$. Prove that the line $YL$, median $BB_1$ of triangle $\\triangle{ABC}$ and its bisector $CC^\\prime$ have a common point.",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let positive integers $a,\\ b,\\ c$ be pairwise coprime. Denote by $g(a, b, c)$ the maximum integer not representable in the form $xa+yb+zc$ with positive integral $x,\\ y,\\ z$. Prove that\n$$g(a, b, c)\\ge \\sqrt{2abc}$$",
+          "proposer": "M. Ivanov"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "On the football training there was $n$ footballers - forwards and goalkeepers. They made $k$ goals. Prove that main trainer can give for every footballer squad number from $1$ to $n$ such, that for every goal the difference between squad number of forward and squad number of goalkeeper is more than $n-k$.",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$D$ is midpoint of $AC$ for $\\triangle ABC$. Bisectors of $\\angle ACB,\\angle ABD$ are perpendicular. Find max value for $\\angle BAC$",
+          "proposer": "S. Berlov"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "$P(x,y)$ is polynomial with real coefficients and $P(x+2y,x+y)=P(x,y)$. Prove that exists polynomial $Q(t)$ such that $P(x,y)=Q((x^2-2y^2)^2)$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $n!=ab^2$ where $a$ is free from squares. Prove, that for every $\\epsilon>0$ for every big enough $n$ it is true, that $$2^{(1-\\epsilon)n}<a<2^{(1+\\epsilon)n}$$",
+          "proposer": "M. Ivanov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "There is some natural number $n>1$ on the board. Operation is adding to number on the board it maximal non-trivial divisor. Prove, that after some operations we get number, that is divisible by $3^{2000}$",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $0 \\leq b \\leq c \\leq d \\leq a$ and $a>14$ are integers. Prove, that there is such natural $n$ that can not be represented as $$n=x(ax+b)+y(ay+c)+z(az+d)$$ where $x,y,z$ are some integers.",
+          "proposer": "K. Kokhas"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "In $\\triangle ABC$ points $M,O$ are midpoint of $AB$ and circumcenter. It is true, that $OM=R-r$. Bisector of external $\\angle A$ intersect $BC$ at $D$ and bisector of external $\\angle C$ intersect $AB$ at $E$.\nFind possible values of $\\angle CED$",
+          "proposer": "D. Shiryaev"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "There are $\\frac{k(k+1)}{2}+1$ points on the planes, some are connected by disjoint segments ( also point can not lies on segment, that connects two other points). It is true, that plane is divided to some parallelograms and one infinite region. What maximum number of segments can be drawn?",
+          "proposer": "A. Kupavski, A. Polyanski"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Do there exist three different quadratic trinomials $f(x), g(x), h(x)$ such that the roots of the equation $f(x)=g(x)$ are $1$ and $4$, the roots of the equation $g(x)=h(x)$ are $2$ and $5$, and the roots of the equation $h(x)=f(x)$ are $3$ and $6$?",
+          "proposer": "A. Golovanov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "$2550$ rooks and $k$ pawns are arranged on a $100 \\times 100$ board. The rooks cannot leap over pawns. For which minimum $k$ is it possible that no rook can capture any other rook?",
+          "proposer": "N. Vlasova"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A point $P$ on the side $AB$ of a triangle $ABC$ and points $S$ and $T$ on the sides $AC$ and $BC$ are such that $AP=AS$ and $BP=BT$. The circumcircle of $PST$ meets the sides $AB$ and $BC$ again at $Q$ and $R$, respectively. The lines $PS$ and $QR$ meet at $L$. Prove that the line $CL$ bisects the segment $PQ$.",
+          "proposer": "A. Antropov"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that for every positive integer $d > 1$ and $m$ the sequence $a_n=2^{2^n}+d$ contains two terms $a_k$ and $a_l$ ($k \\neq l$) such that their greatest common divisor is greater than $m$.",
+          "proposer": "T. Hakobyan"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A prime $p$ and a positive integer $n$ are given. The product $$(1^3+1)(2^3+1)...((n-1)^3+1)(n^3+1)$$ is divisible by $p^3$. Prove that $p \\leq n+1$.",
+          "proposer": "Z. Luria"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove the inequality $$(x^3+2y^2+3z)(4y^3+5z^2+6x)(7z^3+8x^2+9y)\\geq720(xy+yz+xz)$$ for $x, y, z \\geq 1$.",
+          "proposer": "K. Kokhas"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A school has three senior classes of $M$ students each. Every student knows at least $\\frac{3}{4}M$ people in each of the other two classes. Prove that the school can send $M$ non-intersecting teams to the olympiad so that each team consists of $3$ students from different classes who know each other.",
+          "proposer": "C. Magyar, R. Martin"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Quadrilateral $ABCD$ with perpendicular diagonals is inscribed in a circle with centre $O$. The tangents to this circle at $A$ and $C$ together with line $BD$ form the triangle $\\Delta$. Prove that the circumcircles of $BOD$ and $\\Delta$ are tangent.",
+          "proposer": "A. Kuznetsov"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In a sequence $a_1, a_2, ..$ of real numbers the product $a_1a_2$ is negative, and to define $a_n$ for $n > 2$ one pair $(i, j)$ is chosen among all the pairs $(i, j), 1 \\le i < j < n$, not chosen before, so that $a_i +a_j$ has minimum absolute value, and then $a_n$ is set equal to $a_i + a_j$. Prove that $|a_i| < 1$ for some $i$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A trapezoid $ABCD$ with $BC // AD$ is given. The points $B'$ and $C'$ are symmetrical to $B$ and $C$ with respect to $CD$ and $AB$, respectively. Prove that the midpoint of the segment joining the circumcentres of $ABC'$ and $B'CD$ is equidistant from $A$ and $D$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The plan of a picture gallery is a chequered figure where each square is a room, and every room can be reached from each other by moving to adjacent rooms. A custodian in a room can watch all the rooms that can be reached from this room by one move of a chess queen (without leaving the gallery). What minimum number of custodians is sufficient to watch all the rooms in every gallery of $n$ rooms ($n > 2$)?"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A calculator can square a number or add $1$ to it. It cannot add $1$ two times in a row. By several operations it transformed a number $x$ into a number $S > x^n + 1$ ($x, n,S$ are positive integers). Prove that $S > x^n + x - 1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $\\mathbb{S}$ be the set of prime numbers less or equal to 26. Is there any $a_1, a_2, a_3, a_4, a_5, a_6 \\in \\mathbb{N}$ such that $$\\gcd(a_i,a_j) \\in \\mathbb{S} \\qquad \\text {for }  1\\leq i \\ne j \\leq 6$$ and for every element $p$ of $\\mathbb{S}$ there exists a pair of $1\\leq k \\ne l \\leq 6$ such that $$s=\\gcd(a_k,a_l)?$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that the expression $$(1^4+1^2+1)(2^4+2^2+1)\\dots(n^4+n^2+1)$$ is not square for all $n \\in \\mathbb{N}$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "$N$ cells chosen on a rectangular grid. Let $a_i$ is number of chosen cells in $i$-th row, $b_j$ is number of chosen cells in $j$-th column. Prove that $$\\prod_{i} a_i! \\cdot \\prod_{j} b_j! \\leq N!$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In $\\triangle ABC$ $\\angle B$ is obtuse and $AB \\ne BC$. Let $O$ is the circumcenter and $\\omega$ is the circumcircle of this triangle. $N$ is the midpoint of arc $ABC$. The circumcircle of $\\triangle BON$ intersects $AC$ on points $X$ and $Y$. Let $BX \\cap \\omega = P \\ne B$ and $BY \\cap \\omega = Q \\ne B$. Prove that $P, Q$ and reflection of $N$ with respect to line $AC$ are collinear."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Does the system of equations\n$$\\begin{cases} x_1 + x_2 = y_1 + y_2 + y_3 + y_4 \\\\ x_1^2 + x_2^2 = y_1^2 + y_2^2 + y_3^2 + y_4^2 \\\\ x_1^3 + x_2^3 = y_1^3 + y_2^3 + y_3^3 + y_4^3 \\end{cases}$$\nadmit a solution in integers such that the absolute value of each of these integers is greater than $2020$?",
+          "proposer": "A. Choudhry"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Given positive real numbers $a_1, a_2, \\dots, a_n$. Let\n$$m = \\min \\left( a_1 + \\frac{1}{a_2}, a_2 + \\frac{1}{a_3}, \\dots, a_{n - 1} + \\frac{1}{a_n} , a_n + \\frac{1}{a_1} \\right).$$\nProve the inequality\n$$\\sqrt[n]{a_1 a_2 \\dots a_n} + \\frac{1}{\\sqrt[n]{a_1 a_2 \\dots a_n}} \\ge m.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Points $D$ and $E$ lie on the lines $BC$ and $AC$ respectively so that $B$ is between $C$ and $D$, $C$ is between $A$ and $E$, $BC = BD$ and $\\angle BAD = \\angle CDE$. It is known that the ratio of the perimeters of the triangles $ABC$ and $ADE$ is $2$. Find the ratio of the areas of these triangles."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For each positive integer $k$, let $g(k)$ be the maximum possible number of points in the plane such that pairwise distances between these points have only $k$ different values. Prove that there exists $k$ such that $g(k) > 2k + 2020$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Coordinate axes (without any marks, with the same scale) and the graph of a quadratic trinomial $y = x^2 + ax + b$ are drawn in the plane. The numbers $a$ and $b$ are not known. How to draw a unit segment using only ruler and compass?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "An isosceles triangle $ABC$ ($AB = BC$) is given. Circles $\\omega_1$ and $\\omega_2$ with centres $O_1$ and $O_2$ lie in the angle $ABC$ and touch the sides $AB$ and $CB$ at $A$ and $C$ respectively, and touch each other externally at point $X$. The side $AC$ meets the circles again at points $Y$ and $Z$. $O$ is the circumcenter of the triangle $XYZ$. Lines $O_2 O$ and $O_1 O$ intersect lines $AB$ and $BC$ at points $C_1$ and $A_1$ respectively. Prove that $B$ is the circumcentre of the triangle $A_1 OC_1$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Several policemen try to catch a thief who has $2m$ accomplices. To that end they place the accomplices under surveillance. In the beginning, the policemen shadow nobody. Every morning each policeman places under his surveillance one of the accomplices. Every evening the thief stops trusting one of his accomplices. The thief is caught if by the $m$-th evening some policeman shadows exactly those $m$ accomplices who are still trusted by the thief. Prove that to guarantee the capture of the thief at least $2^m$ policemen are needed."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "The degrees of polynomials $P$ and $Q$ with real coefficients do not exceed $n$. These polynomials satisfy the identity\n$$P(x) x^{n + 1} + Q(x) (x+1)^{n + 1} = 1.$$\nDetermine all possible values of $Q \\left( - \\frac{1}{2} \\right)$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Polynomials $F$ and $G$ satisfy: $$F(F(x))>G(F(x))>G(G(x))$$ for all real $x$. Prove that $F(x)>G(x)$ for all real $x$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In trapezoid $ABCD$, $M$ is the midpoint of the base $AD$.Point $E$ lies on the segment $BM$. It is known that $\\angle ADB=\\angle MAE=\\angle BMC$. Prove that the triangle $BCE$ is isosceles."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Positive real numbers $a_1, \\dots, a_k, b_1, \\dots, b_k$ are given. Let $A = \\sum_{i = 1}^k a_i, B = \\sum_{i = 1}^k b_i$. Prove the inequality\n$$\\left( \\sum_{i = 1}^k \\frac{a_i b_i}{a_i B + b_i A} - 1 \\right)^2 \\ge \\sum_{i = 1}^k \\frac{a_i^2}{a_i B + b_i A} \\cdot \\sum_{i = 1}^k \\frac{b_i^2}{a_i B + b_i A}.$$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "An $n\\times n$ square ($n$ is a positive integer) consists of $n^2$ unit squares. A monotonous path in this square is a path of length $2n$ beginning in the left lower corner of the square,ending in its right upper corner and going along the sides of unit squares.\nFor each $k$, $0\\leq k\\leq 2n-1$, let $S_k$ be the set of all the monotonous paths such that the number of unit squares lying below the path leaves remainder $k$ upon division by $2n-1$. Prove that all $S_k$ contain equal number of elements."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Sines of three acute angles form an arithmetic progression, while the cosines of these angles form a geometric progression. Prove that all three angles are equal."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a $n\\times n$ table ($n>1$) $k$ unit squares are marked. One wants to rearrange rows and columns so that all the marked unit squares are above the main diagonal or on it. For what maximum $k$ is it always possible?"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "An acute triangle $ABC$ is given, $AC \\not= BC$. The altitudes drawn from $A$ and $B$ meet at $H$ and intersect the external bisector of the angle $C$ at $Y$ and $X$ respectively. The external bisector of the angle $AHB$ meets the segments $AX$ and $BY$ at $P$ and $Q$ respectively. If $PX = QY$, prove that $AP + BQ \\ge 2CH$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In a sequence $P_n$ of quadratic trinomials each trinomial, starting with the third, is the sum of the two preceding trinomials. The first two trinomials do not have common roots. Is it possible that $P_n$ has an integral root for each $n$?"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Some of $100$ towns of a kingdom are connected by roads. It is known that for each two towns $A$ and $B$ connected by a road there is a town $C$ which is not connected by a road with at least one of the towns $A$ and $B$. Determine the maximum possible number of roads in the kingdom."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Two circles $w_{1}$ and $w_{2}$ of different radii touch externally at $L$. A line touches $w_{1}$ at $A$ and $w_{2}$ at $B$ (the points $A$ and $B$ are different from $L$). A point $X$ is chosen in the plane. $Y$ and $Z$ are the second points of intersection of the lines $XA$ and $XB$ with $w_{1}$ and $w_{2}$ respectively. Prove that all $X$ such that $AB\\parallel YZ$ belong to one circle."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Is there a colouring of all positive integers in three colours so that for each positive integer the numbers of its divisors of any two colours differ at most by $2?$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For every positive $a_1, a_2, \\dots, a_6$, prove the inequality\n$$\\sqrt[4]{\\frac{a_1}{a_2 + a_3 + a_4}} + \\sqrt[4]{\\frac{a_2}{a_3 + a_4 + a_5}} + \\dots + \\sqrt[4]{\\frac{a_6}{a_1 + a_2 + a_3}} \\ge 2$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that a quadratic trinomial $x^2 + ax + b$ ($a, b \\in \\mathbb{R}$) cannot attain at ten consecutive integral points values equal to powers of $2$ with non-negative integral exponent.",
+          "proposer": "F. Petrov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Kostya marked the points $A(0, 1), B(1, 0), C(0, 0)$ in the coordinate plane. On the legs of the triangle $ABC$ he marked the points with coordinates $(\\frac{1}{2},0), (\\frac{1}{3},0), \\cdots, (\\frac{1}{n+1},0)$ and $(0,\\frac{1}{2}), (0,\\frac{1}{3}), \\cdots, (0,\\frac{1}{n+1}).$ Then Kostya joined each pair of marked points with a segment. Sasha drew a $1 \\times n$ rectangle and joined with a segment each pair of integer points on its border. As a result both the triangle and the rectangle are divided into polygons by the segments drawn. Who has the greater number of polygons: Sasha or Kostya?",
+          "proposer": "M. Alekseyev"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A $1 \\times 5n$ rectangle is partitioned into tiles, each of the tile being either a separate $1 \\times 1$ square or a broken domino consisting of two such squares separated by four squares (not belonging to the domino). Prove that the number of such partitions is a perfect fifth power.",
+          "proposer": "K. Kokhas"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In an acute triangle $\\triangle ABC$ the points $C_m, A_m, B_m$ are the midpoints of $AB, BC, CA$ respectively. Inside the triangle $\\triangle ABC$ a point $P$ is chosen so that $\\angle PCB = \\angle B_mBC$ and $\\angle PAB = \\angle ABB_m.$ A line passing through $P$ and perpendicular to $AC$ meets the median $BB_m$ at $E.$ Prove that $E$ lies on the circumcircle of the triangle $\\triangle A_mB_mC_m.$",
+          "proposer": "K. Ivanov"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that a positive integer of the form $n^4 +1$ can have more than $1000$ divisors of the form $a^4 +1$ with integral $a$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Chip and Dale play on a $100 \\times 100$ table. In the beginning, a chess king stands in the upper left corner of the table. At each move the king is moved one square right, down or right-down diagonally. A player cannot move in the direction used by his opponent in the previous move. The players move in turn, Chip begins. The player that cannot move loses. Which player has a winning strategy?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "All perfect squares, and all perfect squares multiplied by two, are written in a row in increasing order. Let $f(n)$ be the $n$-th number in this sequence. (For instance, $f(1)=1,f(2)=2,f(3)=4,f(4)=8$.) Is there an integer $n$ such that all the numbers\n$$f(n),f(2n),f(3n),\\dots,f(10n^2)$$\nare perfect squares?"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A triangle $ABC$ is given. The segment connecting the points where the excircles touch $AB$ and $AC$ meets the bisector of angle $C$ at $X$. The segment connecting the points where the excircles touch $BC$ and $AC$ meets the bisector of angle $A$ at $Y$. Prove that the midpoint of $XY$ is equidistant from $A$ and $C$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given a board with size $25\\times 25$. Some $1\\times 1$ squares are marked, so that for each $13\\times 13$ and $4\\times 4$ sub-boards, there are at least $\\frac{1}{2}$ marked parts of the sub-board. Find the least possible amount of marked squares in the entire board."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The triangle $ABC$ is given. On the arc $BC$ of its circumscribed circle, which does not contain point $A$, the variable point $X$ is selected, and on the rays $XB$ and $XC$, the variable points $Y$ and $Z$, respectively, so that $XA = XY = XZ$. Prove that the line $YZ$ passes through a fixed point.",
+          "proposer": "A. Kuznetsov"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Given are two polynomial $f$ and $g$ of degree $100$ with real coefficients. For each positive integer $n$ there is an integer $k$ such that\n$$\\frac{f(k)}{g(k)}=\\frac{n+1}{n}.$$\nProve that $f$ and $g$ have a common non-constant factor."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A graph $G$ has $n$ vertices ($n>1$). For each edge $e$ let $c(e)$ be the number of vertices of the largest complete subgraph containing $e$. Prove that the inequality (the summation is over all edges of $G$):\n$$\\sum_{e} \\frac{c(e)}{c(e)-1}\\le \\frac{n^2}{2}.$$"
+        }
+      ]
+    }
+  ]
+}
