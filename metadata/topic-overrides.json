@@ -39655,22 +39655,50 @@
         "Combinatorics",
         "Geometry"
       ],
-      "reviewed_statement": "The ancient One-Dimensional Empire lay along a line. Initially there were no cities. A total of $n$ different point-like cities were founded one by one; from the second one on, each newly founded city and the already existing city closest to it (if there were two such cities, then the older one) were declared twin cities.\n\nThe surviving map of the empire shows the cities and the distances between them, but not the order in which they were founded. Historians try to conclude from the map that each city had at most $41$ twin cities.\n\n(a) For $n = 106$, give a map from which this conclusion can be drawn.\n\n(b) Prove that for $n = 1013$ this conclusion cannot be drawn from any map.",
-      "statement_sha256": "ea284315b38a036710b8a22af295252d4ba940a54cec1ca8149da39d3223ccb9",
+      "reviewed_statement": "The ancient One-Dimensional Empire lay along a line. Initially there were no cities. A total of $n$ different point-like cities were founded one by one; from the second one on, each newly founded city and the already existing city closest to it (if there were two such cities, then the older one) were declared twin cities.\n\nThe surviving map of the empire shows the cities and the distances between them, but not the order in which they were founded. Historians try to conclude from the map that each city had at most $41$ twin cities.\n\n(a) For $n = 10^6$, give a map from which this conclusion can be drawn.\n\n(b) Prove that for $n = 10^{13}$ this conclusion cannot be drawn from any map.",
+      "statement_sha256": "c74f64251fe0b22c20147f623015b33a81eee297d3d414399d1743f2db9b1854",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Metric line nearest predecessor graph degree."
+      "reviewed_at": "2026-10-15",
+      "rationale": "Metric line nearest predecessor graph degree.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Geometry"
+          ],
+          "reviewed_statement": "The ancient One-Dimensional Empire lay along a line. Initially there were no cities. A total of $n$ different point-like cities were founded one by one; from the second one on, each newly founded city and the already existing city closest to it (if there were two such cities, then the older one) were declared twin cities.\n\nThe surviving map of the empire shows the cities and the distances between them, but not the order in which they were founded. Historians try to conclude from the map that each city had at most $41$ twin cities.\n\n(a) For $n = 106$, give a map from which this conclusion can be drawn.\n\n(b) Prove that for $n = 1013$ this conclusion cannot be drawn from any map.",
+          "statement_sha256": "ea284315b38a036710b8a22af295252d4ba940a54cec1ca8149da39d3223ccb9",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Metric line nearest predecessor graph degree."
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "hu.2024.0.3": {
       "topics": [
         "Combinatorics",
         "Number Theory"
       ],
-      "reviewed_statement": "Let $p$ be a prime and let $H \\subseteq \\{0, 1, \\dots, p-1\\}$ be a nonempty set. Suppose that for every element $a \\in H$ there are elements $b \\in H$ and $c \\in H$, different from $a$, such that $b + c - 2a$ is divisible by $p$. Prove that $p < 4k$, where $k$ denotes the number of elements of the set $H$.",
-      "statement_sha256": "ad44ec441de6cfbb5616bc23defdfcbdf3d813b58183771e87ca69740397e324",
+      "reviewed_statement": "Let $p$ be a prime and let $H \\subseteq \\{0, 1, \\dots, p-1\\}$ be a nonempty set. Suppose that for every element $a \\in H$ there are elements $b \\in H$ and $c \\in H$, different from $a$, such that $b + c - 2a$ is divisible by $p$. Prove that $p < 4^k$, where $k$ denotes the number of elements of the set $H$.",
+      "statement_sha256": "05d7a8bcd09878f136fafe0b1b2cac8b960fd38ef7b21becc5de1551b1ff4739",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-02",
-      "rationale": "Modular arithmetic progression subset cardinality."
+      "reviewed_at": "2026-10-15",
+      "rationale": "Modular arithmetic progression subset cardinality.",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics",
+            "Number Theory"
+          ],
+          "reviewed_statement": "Let $p$ be a prime and let $H \\subseteq \\{0, 1, \\dots, p-1\\}$ be a nonempty set. Suppose that for every element $a \\in H$ there are elements $b \\in H$ and $c \\in H$, different from $a$, such that $b + c - 2a$ is divisible by $p$. Prove that $p < 4k$, where $k$ denotes the number of elements of the set $H$.",
+          "statement_sha256": "ad44ec441de6cfbb5616bc23defdfcbdf3d813b58183771e87ca69740397e324",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-02",
+          "rationale": "Modular arithmetic progression subset cardinality."
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "au.2016.1.2": {
       "topics": [
@@ -123822,10 +123850,22 @@
       "topics": [
         "Combinatorics"
       ],
-      "reviewed_statement": "Prove that the edges of a complete graph with $3^n$ vertices can be partitioned into disjoint cycles of length $3$.",
-      "statement_sha256": "af6372d7b5346be31f3a650fd2a2fefe501a19314f423a68b1afa546070c6260",
+      "reviewed_statement": "Prove that the system of segments consisting of all sides and all diagonals of a convex $3^n$-gon can be partitioned into groups of three so that in each group the three segments form the sides of a triangle.",
+      "statement_sha256": "e8c6d095e0cdd225fbdc3bcc5eb85c9b7b9be970b96e2bd1599d846d53fe5715",
       "review_method": "AI-assisted full-statement thematic review",
-      "reviewed_at": "2026-10-06"
+      "reviewed_at": "2026-10-15",
+      "superseded_reviews": [
+        {
+          "topics": [
+            "Combinatorics"
+          ],
+          "reviewed_statement": "Prove that the edges of a complete graph with $3^n$ vertices can be partitioned into disjoint cycles of length $3$.",
+          "statement_sha256": "af6372d7b5346be31f3a650fd2a2fefe501a19314f423a68b1afa546070c6260",
+          "review_method": "AI-assisted full-statement thematic review",
+          "reviewed_at": "2026-10-06"
+        }
+      ],
+      "superseded_reason": "Statement replaced by a faithful rendering of the official paper (source check of 2026-10-15); topics re-reviewed, unchanged."
     },
     "hu.2003.0.1": {
       "topics": [
@@ -285913,6 +285953,33 @@
       ],
       "reviewed_statement": "Two real numbers between $0$ and $1$ are chosen at random. Compute the probability that one of them (either one) is less than the square of the other.",
       "statement_sha256": "9f9ba920174511b3449aac7367ed306cd0d1edc228398a314615874a22820544",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "hu.1959.0.1": {
+      "topics": [
+        "Algebra"
+      ],
+      "reviewed_statement": "Prove that $$\\frac{x^n}{(x-y)(x-z)}+\\frac{y^n}{(y-z)(y-x)}+\\frac{z^n}{(z-x)(z-y)}$$ is an integer, where $x$, $y$ and $z$ are distinct integers and $n$ is a nonnegative integer.",
+      "statement_sha256": "420eb7660b4287debe2a6faa07126936f28a0ebdd4fa1cd1a2bfef8c07d8ed96",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "hu.1959.0.2": {
+      "topics": [
+        "Geometry"
+      ],
+      "reviewed_statement": "A vertical pole stands on a horizontal plane. The distances from the base of the pole to three points of the plane are $100$, $200$ and $300$ metres, respectively. The sum of the angles of elevation of the top of the pole seen from these three points is $90^\\circ$. How tall is the pole?",
+      "statement_sha256": "75149efde7daeabe1630ca8e19939815221cb848743ae4621c562c9dd2a60166",
+      "review_method": "AI-assisted full-statement thematic review",
+      "reviewed_at": "2026-10-15"
+    },
+    "hu.1959.0.3": {
+      "topics": [
+        "Combinatorics"
+      ],
+      "reviewed_statement": "On a certain day three men visited a sick friend in hospital, and on the same day their wives did likewise. None of the six visitors went into the sickroom more than once. Each man met the wives of the other two men in the sickroom. Prove that at least one of the men met his own wife in the sickroom.",
+      "statement_sha256": "f6c0b9a316d56d27a89210c9a1bb678bed435f2850f787e05e895228050d1113",
       "review_method": "AI-assisted full-statement thematic review",
       "reviewed_at": "2026-10-15"
     }

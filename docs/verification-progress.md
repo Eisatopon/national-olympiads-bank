@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 30921 stored records; 11388 source-checked; 19533 remaining (including quarantine).
+Inventory: 30924 stored records; 11427 source-checked; 19497 remaining (including quarantine).
 
-Active bank: 30921 records; 11388 source-checked; 19533 remaining. Whole-bank source verification is **not complete**.
+Active bank: 30924 records; 11427 source-checked; 19497 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -56,7 +56,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | HMMT-february-team-problems.json | 140 | 140 | 0 | stored_statements_checked |
 | HongKong-chkmo-problems.json | 100 | 0 | 100 | pending |
 | HongKong-tst-problems.json | 313 | 0 | 313 | pending |
-| Hungary-kurschak-problems.json | 228 | 0 | 228 | pending |
+| Hungary-kurschak-problems.json | 231 | 39 | 192 | pending |
 | Hungary-oktv-problems.json | 63 | 0 | 63 | pending |
 | IMO-problems.json | 404 | 404 | 0 | stored_statements_checked |
 | Iberoamerican-oim-problems.json | 246 | 246 | 0 | stored_statements_checked |
