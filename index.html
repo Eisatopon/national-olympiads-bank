@@ -179,6 +179,7 @@
     --amc12: #2a6f97; --amc12-ink: #1b4a66; --amc12-tint: #e2eff6;
     --kgca: #9a5a2c; --kgca-ink: #643a1c; --kgca-tint: #f6eadf;
     --kgbe: #b7791f; --kgbe-ink: #7a5014; --kgbe-tint: #f8eedd;
+    --kgec: #5f8a3a; --kgec-ink: #3e5c25; --kgec-tint: #e9f1e1;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -310,6 +311,7 @@
 .f-amc12 { --f: var(--amc12); --f-ink: var(--amc12-ink); --f-tint: var(--amc12-tint); }
 .f-kgca { --f: var(--kgca); --f-ink: var(--kgca-ink); --f-tint: var(--kgca-tint); }
 .f-kgbe { --f: var(--kgbe); --f-ink: var(--kgbe-ink); --f-tint: var(--kgbe-tint); }
+.f-kgec { --f: var(--kgec); --f-ink: var(--kgec-ink); --f-tint: var(--kgec-tint); }
 
 /* ==========================================================
    Base
@@ -779,7 +781,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-kangaroo-benjamin';
+const DATA_VERSION = '20261015-kangaroo-ecolier';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -887,6 +889,7 @@ REGION_OF.aime = 'americas';
 REGION_OF.amc12 = 'americas';
 REGION_OF.kgca = 'world';
 REGION_OF.kgbe = 'world';
+REGION_OF.kgec = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1008,6 +1011,7 @@ const COUNTRIES = [
     { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },
     { key: 'kgbe', name: 'Kangaroo Benjamin', flag: '🦘', file: 'Kangaroo-benjamin-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Benjamin (grades 5–6), international KSF paper' },
+    { key: 'kgec', name: 'Kangaroo Ecolier', flag: '🦘', file: 'Kangaroo-ecolier-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Ecolier (grades 3–4), international KSF paper' },
     { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'aime', name: 'AIME', flag: '🇺🇸', file: 'USA-AIME-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination (AIME I and II from 2000) · problems © MAA' },

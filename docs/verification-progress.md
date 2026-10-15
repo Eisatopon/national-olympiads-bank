@@ -1,8 +1,8 @@
 # Source verification progress
 
-Inventory: 25630 stored records; 9399 source-checked; 16231 remaining (including quarantine).
+Inventory: 25990 stored records; 9749 source-checked; 16241 remaining (including quarantine).
 
-Active bank: 25630 records; 9399 source-checked; 16231 remaining. Whole-bank source verification is **not complete**.
+Active bank: 25990 records; 9749 source-checked; 16241 remaining. Whole-bank source verification is **not complete**.
 
 Stored solution records: 0. No stored solution has been independently verified. Source fidelity, mathematical correctness and thematic classification are separate review stages.
 
@@ -74,6 +74,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Japan-jmo-problems.json | 180 | 0 | 180 | pending |
 | Kangaroo-benjamin-problems.json | 450 | 442 | 8 | pending |
 | Kangaroo-cadet-problems.json | 450 | 446 | 4 | pending |
+| Kangaroo-ecolier-problems.json | 360 | 350 | 10 | pending |
 | Kangaroo-junior-problems.json | 450 | 446 | 4 | pending |
 | Kangaroo-student-problems.json | 450 | 448 | 2 | pending |
 | Kazakhstan-rmo-problems.json | 184 | 6 | 178 | pending |
