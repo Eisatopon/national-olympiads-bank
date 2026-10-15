@@ -382,7 +382,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .mx-find button { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); appearance: none; border: 0; background: none; color: #cfd9e3; font-size: 1.1rem; line-height: 1; padding: 4px 6px; cursor: pointer; }
 .mx-find button[hidden] { display: none; }
 .mx-nomatch { color: #aebccb; font-size: .9rem; padding: 10px 0; }
-.mx { --cols: 39; --lw: 160px; --cw: 21px; display: grid; gap: 4px; min-width: calc(var(--lw) + var(--cols) * (var(--cw) + 4px)); }
+.mx { --cols: 39; --lw: 184px; --cw: 21px; display: grid; gap: 4px; min-width: calc(var(--lw) + var(--cols) * (var(--cw) + 4px)); }
 .mx-row { display: flex; align-items: center; gap: 3px; }
 .mx-row > .yh, .mx-row > .cell { flex: 1 1 0; min-width: var(--cw); }
 .mx-row > .rl, .mx-row > .corner { flex: 0 0 var(--lw); width: var(--lw); }
@@ -415,6 +415,35 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .cell.pick { background: var(--accent); }
 .cell.pend::after { background: rgba(255, 255, 255, .06); }
 .cell.err::after { background: #ff8a80; width: 6px; height: 6px; }
+/* A country with several competitions: one row, its competitions below it. */
+.rl.cg .cn { flex: 0 0 auto; font: 600 .7rem/1 var(--sans); color: #9fb0c1; border: 1px solid rgba(255, 255, 255, .25); border-radius: 8px; padding: 2px 5px; }
+.rl.cg .car { flex: 0 0 auto; display: inline-block; color: #9fb0c1; font-size: .7rem; transition: transform .15s ease; }
+.rl.cg[aria-expanded="true"] .car { transform: rotate(90deg); }
+.mx-row.sub > .rl { padding-left: 30px; font-weight: 500; font-size: .8rem; color: #cfd9e3; }
+.mx-row.sub > .rl.sel { color: var(--accent); }
+.cell.hint { outline: 2px solid var(--accent); outline-offset: -2px; }
+.mx-years .corner { align-self: stretch; display: flex; align-items: flex-end; }
+.early { appearance: none; background: none; border: 1px solid rgba(255, 255, 255, .25); border-radius: 3px; color: #cfd9e3; font: 600 .72rem/1 var(--sans); padding: 5px 8px; cursor: pointer; white-space: nowrap; }
+.early:hover { color: #fff; border-color: rgba(255, 255, 255, .5); }
+/* Phones: a list of countries instead of the grid. */
+.mxl[hidden] { display: none; }
+.mxl { margin-top: 8px; }
+.mxl .lgrp { display: flex; align-items: center; gap: 6px; width: 100%; appearance: none; background: none; border: 0; border-top: 1px solid rgba(255, 255, 255, .12); padding: 12px 0; text-align: left; color: #cfd9e3; font: 700 .78rem/1.2 var(--sans); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.mxl .lgrp .gn { font-weight: 600; letter-spacing: 0; color: #7f93a8; }
+.mxl .lgrp .car, .mxl .li-h .car { display: inline-block; width: 12px; transition: transform .15s ease; }
+.mxl [aria-expanded="true"] > .car { transform: rotate(90deg); }
+.mxl .li { border-top: 1px solid rgba(255, 255, 255, .07); }
+.mxl .li-h { display: flex; align-items: center; gap: 10px; width: 100%; appearance: none; background: none; border: 0; padding: 11px 0; text-align: left; color: #eef2f6; font: 600 .95rem/1.25 var(--sans); cursor: pointer; }
+.mxl .li-h .meta { margin-left: auto; color: #9fb0c1; font: 500 .78rem/1.2 var(--sans); white-space: nowrap; }
+.mxl .li-b { padding: 0 0 14px 22px; }
+.mxl .lc + .lc { margin-top: 12px; }
+.mxl .lc-h { appearance: none; background: none; border: 0; padding: 4px 0; color: #fff; font: 600 .86rem/1.3 var(--sans); text-decoration: underline; text-decoration-color: rgba(255, 255, 255, .35); text-underline-offset: 3px; cursor: pointer; text-align: left; }
+.mxl .lc-h.sel { color: var(--accent); }
+.mxl .yrs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.mxl .ly { appearance: none; min-width: 52px; height: 34px; border: 1px solid rgba(255, 255, 255, .22); border-radius: 4px; background: rgba(255, 255, 255, .08); color: #eef2f6; font: 600 .82rem/1 var(--sans); font-variant-numeric: tabular-nums; cursor: pointer; }
+.mxl .ly.sel { background: var(--accent); border-color: var(--accent); color: var(--ink-deep); }
+.mxl .ly-more { appearance: none; background: none; border: 0; color: #cfd9e3; font: 600 .8rem/1 var(--sans); padding: 8px 4px; cursor: pointer; text-decoration: underline; }
+.mxl .li[hidden], .mxl .lgrp[hidden] { display: none; }
 
 /* ==========================================================
    Layout
@@ -656,6 +685,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div class="mx-wrap">
             <div class="mx" id="mx" role="group" aria-label="Country and year grid"></div>
         </div>
+        <div class="mxl" id="mxList" hidden></div>
 
 
     </div>
@@ -1317,12 +1347,55 @@ function browseCutoff() {
    ========================================================== */
 let gridBtns = [];
 
+/* The grid shows the recent years; "Show earlier years" adds the rest (remembered per browser). */
+const RECENT_FROM = 1997;
+let earlyYears = (() => { try { return localStorage.getItem('nob-early') === '1'; } catch (e) { return false; } })();
+const gridFrom = () => earlyYears ? FIRST : RECENT_FROM;
+function setEarly(on) {
+    if (earlyYears === on) return;
+    earlyYears = on;
+    try { localStorage.setItem('nob-early', on ? '1' : '0'); } catch (e) {}
+    buildMatrix();
+    paintTab();
+    if (gridFilter) applyGridFilter();
+}
+
+/* In the National section a country with several competitions gets one row
+   (its flag groups them); its competitions open below it. */
+const openCountries = new Set();
+let entriesById = new Map(), entryOf = {};
+function gridEntries(list) {
+    if (state.tab !== 'national') return list.map(c => ({ id: c.key, members: [c] }));
+    const byFlag = new Map();
+    list.forEach(c => { if (!byFlag.has(c.flag)) byFlag.set(c.flag, []); byFlag.get(c.flag).push(c); });
+    return [...byFlag.values()].map(members => {
+        if (members.length === 1) return { id: members[0].key, members };
+        const words = members.map(c => c.name.split(' '));
+        let n = 0;
+        while (words.every(w => w.length > n && w[n] === words[0][n])) n++;
+        const name = n ? words[0].slice(0, n).join(' ').replace(/\s*—$/, '') : members[0].name;
+        const subName = c => (n ? c.name.split(' ').slice(n).join(' ').replace(/^—\s*/, '').replace(/\s*\([^)]*\)$/, '') : c.name) || 'National olympiad';
+        const names = new Map(members.map(c => [c.key, c.name === name ? 'National olympiad' : subName(c)]));
+        // The national olympiad first, then the other finals, then the selection tests.
+        const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 2 : 1;
+        members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key)));
+        return { id: 'g-' + members[0].key, name, flag: members[0].flag, members, sub: c => names.get(c.key) };
+    });
+}
+
+/* A country with a single competition is shown by the country's name; the competition is in the tooltip and the results title. */
+const countryLabel = c => state.tab !== 'national' ? c.name
+    : c.name.replace(/\s+(?:TST|SMT|All-Union|Republican Final|Final V|OMB MAXI|IMONST 2 \(Senior\)|OMAPA \(Level 3\))$/, '').replace(' and Herzegovina', ' & Herzegovina');
+
 function buildMatrix() {
-    const mx = $('#mx');
+    const mx = $('#mx'), from = gridFrom();
+    applyGridMode();
     // Undergraduate competitions use the same year-by-year grid as national collections.
-    mx.style.setProperty('--cols', LAST - FIRST + 1);
-    let html = '<div class="mx-row mx-years"><span class="corner"></span>';
-    for (let y = LAST; y >= FIRST; y--) {
+    mx.style.setProperty('--cols', LAST - from + 1);
+    entriesById = new Map(); entryOf = {};
+    const early = `${FIRST}–${RECENT_FROM - 1}`;
+    let html = `<div class="mx-row mx-years"><span class="corner"><button type="button" class="early" data-early aria-pressed="${earlyYears}" title="${earlyYears ? 'Show only the years from ' + RECENT_FROM : 'Add the years ' + early}">${earlyYears ? '&#9666; Only ' + RECENT_FROM + '–' + LAST : 'Show ' + early + ' &#9656;'}</button></span>`;
+    for (let y = LAST; y >= from; y--) {
         const dec = (y % 5 === 0) ? `<span class="dec" aria-hidden="true">${y}</span>` : '';
         html += `<button type="button" class="yh" data-yh="${y}" tabindex="-1" aria-label="Year ${y}, all countries">${dec}${String(y).slice(2)}</button>`;
     }
@@ -1331,20 +1404,35 @@ function buildMatrix() {
     REGIONS.forEach(([rk, rname]) => {
         const list = tabRows().filter(c => regionOf(c.key) === rk);
         if (!list.length) return;
+        const entries = gridEntries(list);
         const open = rk === openG;
-        html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" tabindex="-1" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${list.length}</span></button>`;
-        for (let y = LAST; y >= FIRST; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
+        html += `<div class="mx-row mx-grp" data-grp-row="${rk}"><button type="button" class="rl grp" data-grp="${rk}" tabindex="-1" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${entries.length}</span></button>`;
+        for (let y = LAST; y >= from; y--) html += `<span class="gcell" data-gy="${y}" aria-hidden="true"></span>`;
         html += '</div>';
-        list.forEach(c => {
-            html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${c.name}</span></button>`;
-            if (open) html += rowCells(c);
+        entries.forEach(e => {
+            if (e.members.length === 1) {
+                const c = e.members[0];
+                html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${countryLabel(c)}</span></button>`;
+                if (open) html += rowCells(c);
+                html += '</div>';
+                return;
+            }
+            entriesById.set(e.id, e);
+            const ex = openCountries.has(e.id);
+            html += `<div class="mx-row mx-cg" data-region="${rk}" data-cg-row="${e.id}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl cg" data-cg="${e.id}" tabindex="-1" aria-expanded="${ex}" aria-label="${e.name}: ${e.members.length} competitions" title="${e.members.map(c => c.name).join(' · ')}"><span class="flag" aria-hidden="true">${e.flag}</span><span class="nm">${e.name}</span><span class="cn" aria-hidden="true">${e.members.length}</span><span class="car" aria-hidden="true">&#9656;</span></button>`;
+            if (open) html += groupCells(e);
             html += '</div>';
+            e.members.forEach(c => {
+                entryOf[c.key] = e;
+                html += `<div class="mx-row sub" data-region="${rk}" data-sub="${e.id}" data-lazy${open && ex ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="nm">${e.sub(c)}</span></button></div>`;
+            });
         });
     });
     mx.innerHTML = html;
     mx.querySelectorAll('.grp').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); toggleGroup(b.dataset.grp); }));
     refreshGrid();
     syncMatrix();
+    if (useList()) buildList();
 }
 function renderTabs() {
     const used = TABS.filter(([k]) => k === 'undergraduate' || COUNTRIES.some(c => scopeOf(c) === k));
@@ -1358,6 +1446,8 @@ function renderTabs() {
 }
 function paintTab() {
     tabRows().forEach(c => paintCountry(c.key));
+    entriesById.forEach((e, id) => paintEntry(id));
+    if (useList()) buildList();
     REGIONS.forEach(([rk]) => paintGroup(rk));
 }
 function setTab(tab, keepScope) {
@@ -1377,16 +1467,68 @@ function setTab(tab, keepScope) {
 // Cells of a collapsed continent are created the first time its rows are shown.
 function rowCells(c) {
     let html = '';
-    for (let y = LAST; y >= FIRST; y--) {
+    for (let y = LAST; y >= gridFrom(); y--) {
         const pick = state.country === c.key && state.year === y;
         const line = !pick && ((state.year === y && state.country === null) || (state.country === c.key && state.year === null));
         html += `<button type="button" class="cell pend${pick ? ' pick' : line ? ' line' : ''}" data-country="${c.key}" data-year="${y}" tabindex="-1" disabled aria-pressed="${pick}" aria-label="${c.name}, ${y}"></button>`;
     }
     return html;
 }
+function groupCells(e) {
+    let html = '';
+    for (let y = LAST; y >= gridFrom(); y--) html += `<button type="button" class="cell pend" data-cg-cell="${e.id}" data-year="${y}" tabindex="-1" disabled aria-label="${e.name}, ${y}"></button>`;
+    return html;
+}
+function paintEntry(id) {
+    const e = entriesById.get(id), row = $(`#mx .mx-row[data-cg-row="${id}"]`);
+    if (!e || !row) return;
+    const known = e.members.every(c => cache.has(c.key) || manifestYears(c.key) || failed.has(c.key));
+    for (const cell of row.querySelectorAll('.cell')) {
+        const y = +cell.dataset.year;
+        const parts = e.members.map(c => [e.sub(c), failed.has(c.key) && !cache.has(c.key) ? 0 : yearCount(c.key, y)]).filter(([, n]) => n > 0);
+        cell.classList.toggle('pend', !known);
+        cell.classList.toggle('on', parts.length > 0);
+        cell.disabled = !parts.length;
+        if (parts.length) {
+            cell.title = `${e.name}, ${y}: ` + parts.map(([s, n]) => `${s} ${n}`).join(' · ');
+            cell.setAttribute('aria-label', cell.title);
+        }
+    }
+}
+/* Show or hide a country's competitions. */
+function toggleCountry(id, force) {
+    const e = entriesById.get(id), b = $(`#mx .rl[data-cg="${id}"]`);
+    if (!e || !b) return;
+    const open = force === undefined ? !openCountries.has(id) : force;
+    open ? openCountries.add(id) : openCountries.delete(id);
+    b.setAttribute('aria-expanded', String(open));
+    const visible = !b.closest('.mx-row').hidden;
+    $$(`#mx .mx-row[data-sub="${id}"]`).forEach(r => { r.hidden = !(open && visible); });
+    refreshGrid();
+    syncMatrix();
+}
+/* A country cell opens the competition when only one has that year; otherwise it shows the competitions. */
+function countryCellClick(id, y) {
+    const e = entriesById.get(id);
+    if (!e) return;
+    const has = e.members.filter(c => yearCount(c.key, y) > 0);
+    if (has.length === 1) { setScope(has[0].key, y); return; }
+    toggleCountry(id, true);
+    has.forEach(c => {
+        const cell = $(`#mx .cell[data-country="${c.key}"][data-year="${y}"]`);
+        if (cell) { cell.classList.add('hint'); setTimeout(() => cell.classList.remove('hint'), 1600); }
+    });
+    const first = has[0] && $(`#mx .cell[data-country="${has[0].key}"][data-year="${y}"]`);
+    if (first) first.focus({ preventScroll: true });
+}
 function refreshGrid() {
     $$('#mx .mx-row[data-lazy]:not([hidden])').forEach(row => {
         row.removeAttribute('data-lazy');
+        if (row.dataset.cgRow) {
+            row.insertAdjacentHTML('beforeend', groupCells(entriesById.get(row.dataset.cgRow)));
+            paintEntry(row.dataset.cgRow);
+            return;
+        }
         const key = row.querySelector('.rl').dataset.rl;
         row.insertAdjacentHTML('beforeend', rowCells(CBY[key]));
         paintCountry(key);
@@ -1405,7 +1547,7 @@ function setGroupOpen(rk, open) {
     const b = $(`.grp[data-grp="${rk}"]`);
     if (!b) return;
     b.setAttribute('aria-expanded', String(open));
-    $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open; });
+    $$(`#mx .mx-row[data-region="${rk}"]`).forEach(r => { r.hidden = !open || (r.dataset.sub !== undefined && !openCountries.has(r.dataset.sub)); });
 }
 function toggleGroup(rk) {
     if (gridFilter) clearGridFilter();
@@ -1415,6 +1557,7 @@ function toggleGroup(rk) {
     if (open) setGroupOpen(rk, true);
     try { localStorage.setItem('nob-open-group', open ? rk : ''); } catch (e) {}
     refreshGrid();
+    if (useList()) { buildList(); return; }
     if (open) scrollGridTo(b.closest('.mx-row'));
 }
 /* Keep a row visible below the sticky year header inside the scrolling grid. */
@@ -1452,10 +1595,22 @@ function applyGridFilter() {
             return;
         }
         let n = 0;
+        const fits = text => { const hay = fold(`${text} ${regionName(rk)}`); return words.every(w => hay.includes(w)); };
         rows.forEach(r => {
-            const c = CBY[r.querySelector('.rl').dataset.rl];
-            const hay = fold(`${c.name} ${regionName(rk)}`);
-            const ok = words.every(w => hay.includes(w));
+            if (r.dataset.sub !== undefined) return;   // decided with its country below
+            if (r.dataset.cgRow) {
+                // The country matches: show it as it is. Otherwise show only its matching competitions.
+                const e = entriesById.get(r.dataset.cgRow), whole = fits(e.name);
+                let any = whole;
+                $$(`#mx .mx-row[data-sub="${e.id}"]`).forEach(s => {
+                    const ok = whole ? openCountries.has(e.id) : fits(CBY[s.querySelector('.rl').dataset.rl].name);
+                    s.hidden = !ok; if (ok) any = true;
+                });
+                r.hidden = !any; if (any) n++;
+                r.querySelector('.rl').setAttribute('aria-expanded', String($$(`#mx .mx-row[data-sub="${e.id}"]`).some(s => !s.hidden)));
+                return;
+            }
+            const ok = fits(CBY[r.querySelector('.rl').dataset.rl].name);
             r.hidden = !ok; if (ok) n++;
         });
         grpRow.hidden = n === 0;
@@ -1469,10 +1624,12 @@ function applyGridFilter() {
         msg.textContent = 'No country or competition matches.';
     } else if (msg) msg.remove();
     refreshGrid();
+    if (useList()) buildList();
     if (words.length) $('.mx-wrap').scrollTop = 0;
 }
 function regionName(rk) { const r = REGIONS.find(([k]) => k === rk); return r ? r[1] : ''; }
 function gotoYear(y) {
+    if (y < gridFrom()) setEarly(true);
     const h = $(`#mx .yh[data-yh="${y}"]`), wrap = $('.mx-wrap');
     if (!h || !wrap) return false;
     const a = h.getBoundingClientRect(), b = wrap.getBoundingClientRect();
@@ -1500,15 +1657,121 @@ $('#mxFind').addEventListener('keydown', e => {
     e.preventDefault();
     const t = e.target.value.trim();
     if (/^\d{4}$/.test(t) && +t >= FIRST && +t <= LAST) { setScope(null, +t); return; }
-    const rows = $$('#mx .mx-row[data-region]').filter(r => !r.hidden);
+    if (useList()) { const items = $$('#mxList .li').filter(li => !li.hidden); if (gridFilter && items.length === 1) toggleListItem(items[0].dataset.li, true); return; }
+    const rows = $$('#mx .mx-row[data-region]').filter(r => !r.hidden && r.querySelector('.rl[data-rl]'));
+    const countries = $$('#mx .mx-row[data-cg-row]').filter(r => !r.hidden);
     if (gridFilter && rows.length === 1) setScope(rows[0].querySelector('.rl').dataset.rl, null);
+    else if (gridFilter && !rows.length && countries.length === 1) toggleCountry(countries[0].dataset.cgRow, true);
 });
 $('#mxFindClear').addEventListener('click', () => { clearGridFilter(); $('#mxFind').focus(); });
 function revealCountry(key) {
     const rk = regionOf(key);
     const b = $(`.grp[data-grp="${rk}"]`);
     if (b && b.getAttribute('aria-expanded') !== 'true') toggleGroup(rk);
+    const e = entryOf[key];
+    if (e && !openCountries.has(e.id)) toggleCountry(e.id, true);
+    if (useList()) revealListItem(key);
 }
+/* ---------- Phones: a list of countries instead of the grid ----------
+   Same continents and countries as the grid; a country opens to its competitions and years. */
+const listMq = typeof matchMedia === 'function' ? matchMedia('(max-width: 640px)') : { matches: false };
+const useList = () => listMq.matches;
+const openItems = new Set(), allYearsKeys = new Set();
+const LIST_YEARS = 12;
+function listYears(key) {
+    const ys = cache.has(key) ? [...new Set(cache.get(key).map(p => p.year))] : Object.keys(manifestYears(key) || {}).map(Number).filter(y => yearCount(key, y) > 0);
+    return ys.sort((a, b) => b - a);
+}
+function listItemBody(e, only) {
+    return e.members.filter(c => !only || only.includes(c.key)).map(c => {
+        const ys = listYears(c.key);
+        const all = allYearsKeys.has(c.key) || ys.length <= LIST_YEARS + 2 || (state.country === c.key && ys.indexOf(state.year) >= LIST_YEARS);
+        const shown = all ? ys : ys.slice(0, LIST_YEARS);
+        const label = e.members.length > 1 ? e.sub(c) : 'All years';
+        return `<div class="lc"><button type="button" class="lc-h" data-lc="${c.key}" aria-pressed="false">${esc(label)}</button>`
+            + `<div class="yrs">${shown.map(y => `<button type="button" class="ly" data-lc="${c.key}" data-ly="${y}" aria-pressed="false" aria-label="${esc(c.name)} ${y}">${y}</button>`).join('')}`
+            + `${all ? '' : `<button type="button" class="ly-more" data-ly-more="${c.key}">All ${ys.length} years</button>`}</div></div>`;
+    }).join('');
+}
+function listMeta(e) {
+    const ys = e.members.flatMap(c => listYears(c.key));
+    if (!ys.length) return '';
+    const lo = Math.min(...ys), hi = Math.max(...ys);
+    return (e.members.length > 1 ? `${e.members.length} competitions · ` : '') + (lo === hi ? lo : `${lo}–${hi}`);
+}
+function buildList() {
+    const el = $('#mxList');
+    const q = fold(gridFilter.trim()), words = q.split(/\s+/).filter(Boolean);
+    const openG = defaultOpenGroup();
+    let html = '';
+    REGIONS.forEach(([rk, rname]) => {
+        const list = tabRows().filter(c => regionOf(c.key) === rk);
+        if (!list.length) return;
+        const fits = text => { const hay = fold(`${text} ${regionName(rk)}`); return words.every(w => hay.includes(w)); };
+        let entries = gridEntries(list).map(e => {
+            if (!words.length) return [e, null];
+            const name = e.members.length > 1 ? e.name : e.members[0].name;
+            if (fits(name)) return [e, null];
+            const only = e.members.filter(c => fits(c.name)).map(c => c.key);
+            return only.length ? [e, only] : null;
+        }).filter(Boolean);
+        if (words.length && !entries.length) return;
+        const open = words.length ? true : rk === openG;
+        html += `<button type="button" class="lgrp" data-lgrp="${rk}" aria-expanded="${open}"><span class="car" aria-hidden="true">&#9656;</span>${rname}<span class="gn">${entries.length}</span></button>`;
+        if (!open) return;
+        entries.forEach(([e, only]) => {
+            e.sub = e.sub || (() => 'All years');
+            if (e.members.length > 1) entriesById.set(e.id, e);
+            const ex = openItems.has(e.id) || !!only;
+            const name = e.members.length > 1 ? e.name : countryLabel(e.members[0]);
+            html += `<div class="li" data-li="${e.id}"><button type="button" class="li-h" data-li-h="${e.id}" aria-expanded="${ex}"><span class="car" aria-hidden="true">&#9656;</span><span class="flag" aria-hidden="true">${(e.members[0]).flag}</span><span>${esc(name)}</span><span class="meta">${listMeta(e)}</span></button>`
+                + `<div class="li-b"${ex ? '' : ' hidden'}>${ex ? listItemBody(e, only) : ''}</div></div>`;
+        });
+    });
+    el.innerHTML = html || '<p class="mx-nomatch">No country or competition matches.</p>';
+    syncList();
+}
+function listEntry(id) {
+    const key = entriesById.has(id) ? null : id;
+    return key ? { id: key, members: [CBY[key]], sub: () => 'All years' } : entriesById.get(id);
+}
+function toggleListItem(id, force) {
+    const li = $(`#mxList .li[data-li="${id}"]`);
+    if (!li) return;
+    const open = force === undefined ? !openItems.has(id) : force;
+    open ? openItems.add(id) : openItems.delete(id);
+    li.querySelector('.li-h').setAttribute('aria-expanded', String(open));
+    const body = li.querySelector('.li-b');
+    body.hidden = !open;
+    if (open) { body.innerHTML = listItemBody(listEntry(id)); syncList(); }
+}
+function showAllListYears(key) {
+    allYearsKeys.add(key);
+    const li = $(`#mxList .ly-more[data-ly-more="${key}"]`)?.closest('.li');
+    if (li) { li.querySelector('.li-b').innerHTML = listItemBody(listEntry(li.dataset.li)); syncList(); }
+}
+function revealListItem(key) {
+    const id = entryOf[key] ? entryOf[key].id : key;
+    if (!$(`#mxList .li[data-li="${id}"]`)) buildList();
+    if (!openItems.has(id)) toggleListItem(id, true);
+}
+function syncList() {
+    $$('#mxList .ly').forEach(b => { const on = b.dataset.lc === state.country && +b.dataset.ly === state.year; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
+    $$('#mxList .lc-h').forEach(b => { const on = b.dataset.lc === state.country && state.year === null; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
+}
+function scrollToResults() {
+    if (!useList()) return;
+    const m = $('#main');
+    if (m) setTimeout(() => m.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+function applyGridMode() {
+    const list = useList();
+    $('.mx-wrap').hidden = list;
+    $('#mxList').hidden = !list;
+    $('#mxHelp').textContent = list ? 'Tap a country to see its competitions and years.' : "Click a cell to open one country's year. Click a country or a year to see all of it.";
+}
+if (listMq.addEventListener) listMq.addEventListener('change', () => { applyGridMode(); buildMatrix(); paintTab(); });
+
 function paintGroup(rk) {
     const keys = tabRows().filter(c => regionOf(c.key) === rk).map(c => c.key);
     $$(`#mx .mx-grp[data-grp-row="${rk}"] .gcell`).forEach(g => {
@@ -1540,10 +1803,12 @@ function paintCountry(key) {
         }
     }
 }
-function onCountrySettled(key) { paintCountry(key); paintGroup(regionOf(key)); syncMatrix(); }
+function onCountrySettled(key) { paintCountry(key); if (entryOf[key]) paintEntry(entryOf[key].id); paintGroup(regionOf(key)); syncMatrix(); }
 
 function syncMatrix() {
     if (state.country && scopeOf(CBY[state.country]) !== state.tab) setTab(scopeOf(CBY[state.country]), true);
+    if (state.year !== null && state.year < gridFrom()) setEarly(true);
+    if (useList()) syncList();
     if (state.country) revealCountry(state.country);
     $$('#mx .yh').forEach(b => b.classList.toggle('sel', state.country === null && +b.dataset.yh === state.year));
     $$('#mx .rl').forEach(b => b.classList.toggle('sel', state.year === null && b.dataset.rl === state.country));
@@ -2267,6 +2532,14 @@ document.addEventListener('click', e => {
     if (!t) return;
 
     if (t.dataset.tab) { setTab(t.dataset.tab); return; }
+    if (t.hasAttribute('data-early')) { setEarly(!earlyYears); return; }
+    if (t.dataset.cgCell) { if (!t.disabled) countryCellClick(t.dataset.cgCell, +t.dataset.year); return; }
+    if (t.dataset.cg) { toggleCountry(t.dataset.cg); return; }
+    if (t.dataset.lgrp) { toggleGroup(t.dataset.lgrp); return; }
+    if (t.dataset.liH) { toggleListItem(t.dataset.liH); return; }
+    if (t.dataset.lyMore) { showAllListYears(t.dataset.lyMore); return; }
+    if (t.dataset.ly) { setScope(t.dataset.lc, +t.dataset.ly); scrollToResults(); return; }
+    if (t.dataset.lc) { const k = t.dataset.lc; (state.country === k && state.year === null) ? setScope(null, null) : (setScope(k, null), scrollToResults()); return; }
     if (t.classList.contains('cell')) { if (!t.disabled) setScope(t.dataset.country, +t.dataset.year); return; }
     if (t.dataset.yh) { const y = +t.dataset.yh; (state.year === y && state.country === null) ? setScope(null, null) : setScope(null, y); return; }
     if (t.dataset.rl) { const k = t.dataset.rl; (state.country === k && state.year === null) ? setScope(null, null) : setScope(k, null); return; }
