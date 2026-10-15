@@ -6,6 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUARANTINED = set()
+# USA AMC rows: several papers per year (A/B, I/II, Fall), each numbered from 1.
+PER_PAPER_NUMBERING = {'USA-AIME-problems.json', 'USA-AMC12-problems.json', 'USA-AMC10-problems.json', 'USA-AMC8-problems.json'}
 KNOWN_GAPS = {('Austria-oemo-problems.json', 1996): [1, 2, 3, 4, 6],
               ('Austria-oemo-problems.json', 1978): [1, 3, 4, 5, 6],
               ('Austria-oemo-problems.json', 1977): [1, 2, 4, 5, 6],
@@ -66,12 +68,21 @@ def validate(data, filename, root=ROOT):
             text = p.get('statement' if legacy else 'problem')
             if not isinstance(text, str) or not text.strip():
                 errors.append(f'{year}/{n}: empty statement'); continue
-            require(text.count('$') % 2 == 0, f'{year}/{n}: unmatched dollar delimiter')
+            require(text.replace('\\$', '').count('$') % 2 == 0, f'{year}/{n}: unmatched dollar delimiter')  # \$ is a literal dollar sign
             require(not re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', text), f'{year}/{n}: control character')
             for image in re.findall(r'https?://\S+?images/([^\s]+)', text):
                 require((root / 'images' / image).is_file(), f'{year}/{n}: missing image {image}')
-        expected = KNOWN_GAPS.get((filename, year), list(range(1, len(problems) + 1)))
-        require(numbers == expected, f'{year}: unexpected numbering {numbers}')
+        if filename in PER_PAPER_NUMBERING:
+            # One row per contest; each paper (stored as a day) is numbered 1..n as printed.
+            days = [p.get('day', 0) for p in problems if isinstance(p, dict)]
+            for d in sorted(set(days)):
+                nums = [n for n, dd in zip(numbers, days) if dd == d]
+                require(nums == list(range(1, len(nums) + 1)), f'{year}/day {d}: unexpected numbering {nums}')
+                labels = {p.get('paper_label') for p in problems if isinstance(p, dict) and p.get('day', 0) == d}
+                require(d == 0 or (len(labels) == 1 and None not in labels), f'{year}/day {d}: one paper_label per paper required')
+        else:
+            expected = KNOWN_GAPS.get((filename, year), list(range(1, len(problems) + 1)))
+            require(numbers == expected, f'{year}: unexpected numbering {numbers}')
     if not legacy:
         require(year_order == sorted(year_order), 'years must be ascending')
     return errors

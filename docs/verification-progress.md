@@ -118,8 +118,7 @@ Counts describe stored records, not certified unique mathematical problems. Chin
 | Thailand-tst-problems.json | 360 | 360 | 0 | stored_statements_checked |
 | Thailand-tstst-problems.json | 12 | 12 | 0 | stored_statements_checked |
 | Turkey-tmo-problems.json | 126 | 0 | 126 | pending |
-| USA-AIME-I-problems.json | 660 | 0 | 660 | pending |
-| USA-AIME-II-problems.json | 405 | 0 | 405 | pending |
+| USA-AIME-problems.json | 1065 | 0 | 1065 | pending |
 | USSR-allunion-problems.json | 159 | 0 | 159 | pending |
 | Uk-bmo1-problems.json | 132 | 132 | 0 | stored_statements_checked |
 | Uk-bmo2-problems.json | 88 | 88 | 0 | stored_statements_checked |

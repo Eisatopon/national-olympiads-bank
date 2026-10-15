@@ -176,7 +176,6 @@
     --schw: #8a5a1f; --schw-ink: #5c3c14; --schw-tint: #f5ebdc;
     --vtrmc: #7d1f4f; --vtrmc-ink: #541535; --vtrmc-tint: #f5e0eb;
     --aime: #1f4e8c; --aime-ink: #14335c; --aime-tint: #e1eaf6;
-    --aime2: #2f6e9e; --aime2-ink: #1d4a6b; --aime2-tint: #e3eef6;
     --kgca: #9a5a2c; --kgca-ink: #643a1c; --kgca-tint: #f6eadf;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -306,7 +305,6 @@
 .f-schw { --f: var(--schw); --f-ink: var(--schw-ink); --f-tint: var(--schw-tint); }
 .f-vtrmc { --f: var(--vtrmc); --f-ink: var(--vtrmc-ink); --f-tint: var(--vtrmc-tint); }
 .f-aime { --f: var(--aime); --f-ink: var(--aime-ink); --f-tint: var(--aime-tint); }
-.f-aime2 { --f: var(--aime2); --f-ink: var(--aime2-ink); --f-tint: var(--aime2-tint); }
 .f-kgca { --f: var(--kgca); --f-ink: var(--kgca-ink); --f-tint: var(--kgca-tint); }
 
 /* ==========================================================
@@ -776,7 +774,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-kangaroo-cadet';
+const DATA_VERSION = '20261015-aime-one-row';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -881,7 +879,6 @@ REGION_OF.cy = 'europe';
 REGION_OF.cps = 'europe';
 REGION_OF.cpsj = 'europe';
 REGION_OF.aime = 'americas';
-REGION_OF.aime2 = 'americas';
 REGION_OF.kgca = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
@@ -1005,8 +1002,7 @@ const COUNTRIES = [
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },
     { key: 'kgj', name: 'Kangaroo Junior', flag: '🦘', file: 'Kangaroo-junior-problems.json', kind: 'years', scope: 'kangaroo' },
     { key: 'kgs', name: 'Kangaroo Student', flag: '🦘', file: 'Kangaroo-student-problems.json', kind: 'years', scope: 'kangaroo' },
-    { key: 'aime', name: 'AIME I', flag: '🇺🇸', file: 'USA-AIME-I-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination (single AIME until 1999) · problems © MAA' },
-    { key: 'aime2', name: 'AIME II', flag: '🇺🇸', file: 'USA-AIME-II-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination II · problems © MAA' },
+    { key: 'aime', name: 'AIME', flag: '🇺🇸', file: 'USA-AIME-problems.json', kind: 'years', scope: 'amc', full: 'American Invitational Mathematics Examination (AIME I and II from 2000) · problems © MAA' },
     { key: 'omcc', name: 'Centroamerican MO', flag: '🌎', file: 'Centroamerican-omcc-problems.json', kind: 'years', scope: 'regional', full: 'Centroamerican and Caribbean Mathematical Olympiad' },
     { key: 'kg', name: 'Kyrgyzstan Republican Final', flag: '🇰🇬', file: 'Kyrgyzstan-republican-problems.json', kind: 'years' },
     { key: 'py', name: 'Paraguay OMAPA (Level 3)', flag: '🇵🇾', file: 'Paraguay-omapa-problems.json', kind: 'years' },
