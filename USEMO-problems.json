@@ -1,0 +1,292 @@
+{
+  "competition": "USEMO",
+  "years": [
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral. A circle centered at $O$ passes through $B$ and $D$ and meets lines $BA$ and $BC$ again at points $E$ and $F$ (distinct from $A$, $B$, $C$). Let $H$ denote the orthocenter of triangle $DEF$. Prove that if lines $AC$, $DO$, $EF$ are concurrent, then triangles $ABC$ and $EHF$ are similar.",
+          "proposer": "Robin Son"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $\\mathbb{Z}[x]$ denote the set of single-variable polynomials in $x$ with integer coefficients. Find all functions $\\theta\\colon \\mathbb{Z}[x] \\to \\mathbb{Z}[x]$ (i.e. functions taking polynomials to polynomials) such that\n\n• for any polynomials $p, q \\in \\mathbb{Z}[x]$, $\\theta(p + q) = \\theta(p) + \\theta(q)$;\n• for any polynomial $p \\in \\mathbb{Z}[x]$, $p$ has an integer root if and only if $\\theta(p)$ does.",
+          "proposer": "Carl Schildkraut"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Consider an infinite grid $\\mathcal{G}$ of unit square cells. A chessboard polygon is a simple polygon (i.e. not self-intersecting) whose sides lie along the gridlines of $\\mathcal{G}$.\n\nNikolai chooses a chessboard polygon $F$ and challenges you to paint some cells of $\\mathcal{G}$ green, such that any chessboard polygon congruent to $F$ has at least $1$ green cell but at most $2020$ green cells. Can Nikolai choose $F$ to make your job impossible?",
+          "proposer": "Nikolai Beluhov"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that for any prime $p$, there exists a positive integer $n$ such that $$1^n + 2^{n-1} + 3^{n-2} + \\cdots + n^1 \\equiv 2020 \\pmod{p}.$$",
+          "proposer": "Robin Son"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $\\mathcal{P}$ be a regular polygon, and let $\\mathcal{V}$ be the set of its vertices. Each point in $\\mathcal{V}$ is colored red, white, or blue. A subset of $\\mathcal{V}$ is patriotic if it contains an equal number of points of each color, and a side of $\\mathcal{P}$ is dazzling if its endpoints are of different colors.\n\nSuppose that $\\mathcal{V}$ is patriotic and the number of dazzling edges of $\\mathcal{P}$ is even. Prove that there exists a line, not passing through any point of $\\mathcal{V}$, dividing $\\mathcal{V}$ into two nonempty patriotic subsets.",
+          "proposer": "Ankan Bhattacharya"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be an acute scalene triangle with circumcenter $O$ and altitudes $\\overline{AD}$, $\\overline{BE}$, $\\overline{CF}$. Let $X$, $Y$, $Z$ be the midpoints of $\\overline{AD}$, $\\overline{BE}$, $\\overline{CF}$. Lines $AD$ and $YZ$ intersect at $P$, lines $BE$ and $ZX$ intersect at $Q$, and lines $CF$ and $XY$ intersect at $R$.\n\nSuppose that lines $YZ$ and $BC$ intersect at $A'$, and lines $QR$ and $EF$ intersect at $D'$. Prove that the perpendiculars from $A$, $B$, $C$, $O$ to the lines $QR$, $RP$, $PQ$, $A'D'$, respectively, are concurrent.",
+          "proposer": "Ankan Bhattacharya"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Which positive integers can be written in the form $$\\frac{\\operatorname{lcm}(x, y) + \\operatorname{lcm}(y, z)}{\\operatorname{lcm}(x, z)}$$ for positive integers $x$, $y$, $z$?",
+          "proposer": "David Altizio"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Calvin and Hobbes play a game. First, Hobbes picks a family $\\mathcal{F}$ of subsets of $\\{1, 2, \\dots, 2020\\}$, known to both players. Then, Calvin and Hobbes take turns choosing a number from $\\{1, 2, \\dots, 2020\\}$ which is not already chosen, with Calvin going first, until all numbers are taken (i.e., each player has $1010$ numbers). Calvin wins if he has chosen all the elements of some member of $\\mathcal{F}$, otherwise Hobbes wins. What is the largest possible size of a family $\\mathcal{F}$ that Hobbes could pick while still having a winning strategy?",
+          "proposer": "Pitchayut Saengrungkongka"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with circumcenter $O$ and orthocenter $H$. Let $\\Gamma$ denote the circumcircle of triangle $ABC$, and $N$ the midpoint of $\\overline{OH}$. The tangents to $\\Gamma$ at $B$ and $C$, and the line through $H$ perpendicular to line $AN$, determine a triangle whose circumcircle we denote by $\\omega_A$. Define $\\omega_B$ and $\\omega_C$ similarly.\n\nProve that the common chords of $\\omega_A$, $\\omega_B$, and $\\omega_C$ are concurrent on line $OH$.",
+          "proposer": "Anant Mudgal"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A function $f$ from the set of positive real numbers to itself satisfies $$f(x + f(y) + xy) = xf(y) + f(x + y)$$ for all positive real numbers $x$ and $y$. Prove that $f(x) = x$ for all positive real numbers $x$.",
+          "proposer": "Borislav Kirilov and Galin Totev"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The sides of a convex $200$-gon $A_1A_2 \\dots A_{200}$ are colored red and blue in an alternating fashion. Suppose the extensions of the red sides determine a regular $100$-gon, as do the extensions of the blue sides.\n\nProve that the $50$ diagonals $\\overline{A_1A_{101}}, \\ \\overline{A_3A_{103}}, \\ \\dots, \\ \\overline{A_{99}A_{199}}$ are concurrent.",
+          "proposer": "Ankan Bhattacharya"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that for every odd integer $n > 1$, there exist integers $a, b > 0$ such that, if we let $Q(x) = (x + a)^2 + b$, then the following conditions hold:\n\n• we have $\\gcd(a, n) = \\gcd(b, n) = 1$;\n• the number $Q(0)$ is divisible by $n$; and\n• the numbers $Q(1), Q(2), Q(3), \\dots$ each have a prime factor not dividing $n$.",
+          "proposer": "Pitchayut Saengrungkongka"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a fixed positive integer and consider an $n \\times n$ grid of real numbers. Determine the greatest possible number of cells $c$ in the grid such that the entry in $c$ is both strictly greater than the average of $c$'s column and strictly less than the average of $c$'s row.",
+          "proposer": "Holden Mui"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all integers $n \\ge 1$ such that $2^n - 1$ has exactly $n$ positive integer divisors.",
+          "proposer": "Ankan Bhattacharya"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A_1C_2B_1A_2C_1B_2$ be an equilateral hexagon. Let $O_1$ and $H_1$ denote the circumcenter and orthocenter of $\\triangle A_1B_1C_1$, and let $O_2$ and $H_2$ denote the circumcenter and orthocenter of $\\triangle A_2B_2C_2$. Suppose that $O_1 \\ne O_2$ and $H_1 \\ne H_2$. Prove that the lines $O_1O_2$ and $H_1H_2$ are either parallel or coincide.",
+          "proposer": "Ankan Bhattacharya"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\omega$, and let $X$ be the reflection of $A$ in $B$. Line $CX$ meets $\\omega$ again at $D$. Lines $BD$ and $AC$ meet at $E$, and lines $AD$ and $BC$ meet at $F$. Let $M$ and $N$ denote the midpoints of $AB$ and $AC$.\n\nCan line $EF$ share a point with the circumcircle of triangle $AMN$?",
+          "proposer": "Sayandeep Shee"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given a polynomial $p(x)$ with real coefficients, we denote by $S(p)$ the sum of the squares of its coefficients. For example, $S(20x + 21) = 20^2 + 21^2 = 841$.\n\nProve that if $f(x)$, $g(x)$, and $h(x)$ are polynomials with real coefficients satisfying the identity $f(x) \\cdot g(x) = h(x)^2$, then $$S(f) \\cdot S(g) \\ge S(h)^2.$$",
+          "proposer": "Bhavya Tiwari"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A bagel is a loop of $2a + 2b + 4$ unit squares which can be obtained by cutting a concentric $a \\times b$ hole out of an $(a + 2) \\times (b + 2)$ rectangle, for some positive integers $a$ and $b$. (The side of length $a$ of the hole is parallel to the side of length $a + 2$ of the rectangle.)\n\nConsider an infinite grid of unit square cells. For each even integer $n \\ge 8$, a bakery of order $n$ is a finite set of cells $S$ such that, for every $n$-cell bagel $B$ in the grid, there exists a congruent copy of $B$ all of whose cells are in $S$. (The copy can be translated and rotated.) We denote by $f(n)$ the smallest possible number of cells in a bakery of order $n$.\n\nFind a real number $\\alpha$ such that, for all sufficiently large even integers $n \\ge 8$, we have $$\\frac{1}{100} < \\frac{f(n)}{n^{\\alpha}} < 100.$$",
+          "proposer": "Nikolai Beluhov"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A stick is defined as a $1 \\times k$ or $k \\times 1$ rectangle for any integer $k \\ge 1$. We wish to partition the cells of a $2022 \\times 2022$ chessboard into $m$ non-overlapping sticks, such that any two of these $m$ sticks share at most one unit of perimeter. Determine the smallest $m$ for which this is possible.",
+          "proposer": "Holden Mui"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A function $\\psi\\colon \\mathbb{Z} \\to \\mathbb{Z}$ is said to be zero-requiem if for any positive integer $n$ and any integers $a_1, \\dots, a_n$ (not necessarily distinct), the sums $a_1 + a_2 + \\cdots + a_n$ and $\\psi(a_1) + \\psi(a_2) + \\cdots + \\psi(a_n)$ are not both zero.\n\nLet $f$ and $g$ be two zero-requiem functions for which $f \\circ g$ and $g \\circ f$ are both the identity function (that is, $f$ and $g$ are mutually inverse bijections). Given that $f + g$ is not a zero-requiem function, prove that $f \\circ f$ and $g \\circ g$ are both zero-requiem.\n\n(Footnote: Recall that if $\\psi_1$ and $\\psi_2$ are functions from $\\mathbb{Z}$ to $\\mathbb{Z}$, then the composition $\\psi_1 \\circ \\psi_2$ is defined as the function sending each $x \\in \\mathbb{Z}$ to $\\psi_1(\\psi_2(x))$, while the sum $\\psi_1 + \\psi_2$ is defined as the function sending each $x \\in \\mathbb{Z}$ to $\\psi_1(x) + \\psi_2(x)$.)",
+          "proposer": "Sutanay Bhattacharya"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Point $P$ lies in the interior of a triangle $ABC$. Lines $AP$, $BP$, and $CP$ meet the opposite sides of triangle $ABC$ at points $A'$, $B'$, and $C'$, respectively. Let $P_A$ be the midpoint of the segment joining the incenters of triangles $BPC'$ and $CPB'$, and define points $P_B$ and $P_C$ analogously. Show that if $$AB' + BC' + CA' = AC' + BA' + CB',$$ then points $P$, $P_A$, $P_B$, and $P_C$ are concyclic.",
+          "proposer": "Nikolai Beluhov"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral whose opposite sides are not parallel. Suppose points $P$, $Q$, $R$, $S$ lie in the interiors of segments $AB$, $BC$, $CD$, $DA$, respectively, such that $$\\angle PDA = \\angle PCB, \\quad \\angle QAB = \\angle QDC, \\quad \\angle RBC = \\angle RAD, \\quad \\text{and} \\quad \\angle SCD = \\angle SBA.$$ Let $\\overline{AQ}$ intersect $\\overline{BS}$ at $X$, and $\\overline{DQ}$ intersect $\\overline{CS}$ at $Y$. Prove that lines $\\overline{PR}$ and $\\overline{XY}$ are either parallel or coincide.",
+          "proposer": "Tilek Askerbekov"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $\\tau(n)$ denote the number of positive integer divisors of a positive integer $n$ (for example, $\\tau(2022) = 8$). Given a polynomial $P(X)$ with integer coefficients, we define a sequence $a_1, a_2, \\dots$ of nonnegative integers by setting $$a_n = \\begin{cases} \\gcd\\left(P(n), \\ \\tau(P(n))\\right) & \\text{if } P(n) > 0 \\\\ 0 & \\text{if } P(n) \\le 0 \\end{cases}$$ for each positive integer $n$. We then say the sequence has limit infinity if every integer occurs in this sequence only finitely many times (possibly not at all).\n\nDoes there exist a choice of $P(X)$ for which the sequence $a_1, a_2, \\dots$ has limit infinity?",
+          "proposer": "Jovan Vuković"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all positive integers $k$ for which there exists a nonlinear function $f\\colon \\mathbb{Z} \\to \\mathbb{Z}$ such that the equation $$f(a) + f(b) + f(c) = \\frac{f(a - b) + f(b - c) + f(c - a)}{k}$$ holds for any integers $a$, $b$, $c$ satisfying $a + b + c = 0$ (not necessarily distinct).\n\n(Footnote: We say $f\\colon \\mathbb{Z} \\to \\mathbb{Z}$ is nonlinear if $f(x) \\ne (f(1) - f(0))x + f(0)$ for some $x \\in \\mathbb{Z}$.)",
+          "proposer": "Evan Chen"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A positive integer $n$ is called beautiful if, for every integer $4 \\le b \\le 10000$, the base-$b$ representation of $n$ contains the consecutive digits $2$, $0$, $2$, $3$ (in this order, from left to right). Determine whether the set of all beautiful integers is finite.",
+          "proposer": "Oleg Kryzhanovsky"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Each point in the plane is labeled with a real number. Show that there exist two distinct points $P$ and $Q$ whose labels differ by less than the distance from $P$ to $Q$.",
+          "proposer": "Holden Mui"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Canmoo is trying to do constructions, but doesn't have a ruler or compass. Instead, Canmoo has a device that, given four distinct points $A$, $B$, $C$, $P$ in the plane, will mark the isogonal conjugate of $P$ with respect to triangle $ABC$, if it exists. Show that if two points are marked on the plane, then Canmoo can construct their midpoint using this device, a pencil for marking additional points, and no other tools.\n\n(Recall that the isogonal conjugate of $P$ with respect to triangle $ABC$ is the point $Q$ such that lines $AP$ and $AQ$ are reflections around the bisector of $\\angle BAC$, lines $BP$ and $BQ$ are reflections around the bisector of $\\angle CBA$, lines $CP$ and $CQ$ are reflections around the bisector of $\\angle ACB$. Additional points marked by the pencil can be assumed to be in general position, meaning they don't lie on any line through two existing points or any circle through three existing points.)",
+          "proposer": "Maxim Li"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle with orthocenter $H$. Points $A_1$, $B_1$, $C_1$ are chosen in the interiors of sides $BC$, $CA$, $AB$, respectively, such that $\\triangle A_1B_1C_1$ has orthocenter $H$. Define $A_2 = \\overline{AH} \\cap \\overline{B_1C_1}$, $B_2 = \\overline{BH} \\cap \\overline{C_1A_1}$, and $C_2 = \\overline{CH} \\cap \\overline{A_1B_1}$.\n\nProve that triangle $A_2B_2C_2$ has orthocenter $H$.",
+          "proposer": "Ankan Bhattacharya"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n \\ge 2$ be an integer. A cube of size $n \\times n \\times n$ is dissected into $n^3$ unit cubes. A nonzero real number is written at the center of each unit cube so that the sum of the $n^2$ numbers in each slab of size $1 \\times n \\times n$, $n \\times 1 \\times n$, or $n \\times n \\times 1$ equals zero. (There are a total of $3n$ such slabs, forming three groups of $n$ slabs each such that slabs in the same group are parallel and slabs in different groups are perpendicular.)\n\nCould it happen that some plane in three-dimensional space separates the positive and the negative written numbers? (The plane should not pass through any of the numbers.)",
+          "proposer": "Nikolai Beluhov"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n \\ge 2$ be a fixed integer.\n\n(a) Determine the largest positive integer $m$ (in terms of $n$) such that there exist complex numbers $r_1, \\dots, r_n$, not all zero, for which $$\\prod_{k=1}^{n} (r_k + 1) = \\prod_{k=1}^{n} (r_k^2 + 1) = \\cdots = \\prod_{k=1}^{n} (r_k^m + 1) = 1.$$\n(b) For this value of $m$, find all possible values of $$\\prod_{k=1}^{n} (r_k^{m+1} + 1).$$",
+          "proposer": "Kaixin Wang"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "There are $1001$ stacks of coins $S_1, S_2, \\dots, S_{1001}$. Initially, stack $S_k$ has $k$ coins for each $k = 1, 2, \\dots, 1001$. In an operation, one selects an ordered pair $(i, j)$ of indices $i$ and $j$ satisfying $1 \\le i < j \\le 1001$ subject to two conditions:\n\n• The stacks $S_i$ and $S_j$ must each have at least one coin.\n• The ordered pair $(i, j)$ must not have been selected in any previous operation.\n\nThen, if $S_i$ and $S_j$ have $a$ coins and $b$ coins, respectively, one removes $\\gcd(a, b)$ coins from each stack.\n\nWhat is the maximum number of times this operation could be performed?",
+          "proposer": "Galin Totev"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $k$ be a fixed positive integer. For each integer $1 \\le i \\le 4$, let $x_i$ and $y_i$ be positive integers such that their least common multiple is $k$. Suppose that the four points $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$, $(x_4, y_4)$ are the vertices of a non-degenerate rectangle in the Cartesian plane. Prove that $x_1x_2x_3x_4$ is a perfect square.",
+          "proposer": "Andrei Chirita"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with incenter $I$. Two distinct points $P$ and $Q$ are chosen on the circumcircle of $ABC$ such that $$\\angle API = \\angle AQI = 45^\\circ.$$ Lines $PQ$ and $BC$ meet at $S$. Let $H$ denote the foot of the altitude from $A$ to $BC$. Prove that $\\angle AHI = \\angle ISH$.",
+          "proposer": "Matsvei Zorka"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all sequences $a_1, a_2, \\dots$ of nonnegative integers such that for all positive integers $n$, the polynomial $$1 + x^{a_1} + x^{a_2} + \\cdots + x^{a_n}$$ has at least one integer root. (Here $x^0 = 1$.)",
+          "proposer": "Kornpholkrit Weraarchakul"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a scalene triangle whose incircle is tangent to $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively. Lines $BE$ and $CF$ meet at $G$. Prove that there exists a point $X$ on the circumcircle of triangle $EFG$ such that the circumcircles of triangles $BCX$ and $EFG$ are tangent, and $$\\angle BGC = \\angle BXC + \\angle EDF.$$",
+          "proposer": "Kornpholkrit Weraarchakul"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n$ be an odd positive integer and consider an $n \\times n$ chessboard of $n^2$ unit squares. In some of the cells of the chessboard, we place a knight. A knight in a cell $c$ is said to attack a cell $c'$ if the distance between the centers of $c$ and $c'$ is exactly $\\sqrt{5}$ (in particular, a knight does not attack the cell which it occupies).\n\nSuppose each cell of the board is attacked by an even number of knights (possibly zero). Show that the configuration of knights is symmetric with respect to all four axes of symmetry of the board (i.e. the configuration of knights is both horizontally and vertically symmetric, and also unchanged by reflection along either diagonal of the chessboard).",
+          "proposer": "Nikolai Beluhov"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all real numbers $\\lambda$ for which there exists an integer $n \\ge 2$ and an arithmetic progression $(a_0, a_1, \\dots, a_n)$ of real numbers (in that order) such that the identity $$(X - \\lambda)(X - \\lambda^2) \\dots (X - \\lambda^n) = a_0X^n + a_1X^{n-1} + a_2X^{n-2} + \\cdots + a_n$$ is true for every real number $X$.",
+          "proposer": "Alan Zaripov"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a fixed triangle with circumcircle $\\omega$. Consider $P$ a variable point inside $ABC$. Ray $BP$ meets side $AC$ at $Y$ while ray $CP$ meets side $AB$ at $X$. Let $Q$ be the second intersection of $\\omega$ and the circumcircle of triangle $AXY$. Let $K$ be the second intersection of ray $AP$ and $\\omega$.\n\nProve that as $P$ varies, the circumcircles of triangle $QPK$ all have a common radical center.",
+          "proposer": "Iman Maghsoudi, Ayeen Izady"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Suppose $2025$ black and white mice are arranged in a $45 \\times 45$ grid. A set of four mice is special if the four mice form a contiguous $2 \\times 2$ square, the top-left mouse and the bottom-right mouse are both black, and the bottom-left mouse and top-right mouse are both white. A move swaps the positions of the black and white mice in a special set, as shown below.\n\nAcross all possible initial configurations of mice, what is the maximum number of moves that one could make?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/usemo_2025_p3_fig.png",
+          "proposer": "Holden Mui"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all odd integers $n \\ge 3$ with the following property: Let $S$ denote the set of all positive integers less than $n$ which are relatively prime to $n$, and let $k = \\frac{1}{2}|S|$. Then one can label the integers in $S$ by $a_1, \\dots, a_{2k}$ in some order such that $$\\sum_{i=1}^{k} a_i^2 = \\frac{1}{2} \\sum_{i=1}^{k} a_ia_{i+k}.$$",
+          "proposer": "Xu Zi Jie"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Azza and Bob are playing the squeakuences game, a game whose rules depend on two positive integers $n$ and $g$ known to both players. A squeakuence is an ordered sequence of $100$ integers (not necessarily positive). At the start of the game, Azza gives Bob a list of $n$ different squeakuences, and Bob secretly picks one squeakuence and copies it into a notebook which Azza cannot see.\n\nOn each turn of the game, Azza makes up to $g$ guesses for the squeakuence currently in the notebook. Bob hears all of Azza's guesses. If any of Azza's guesses are correct, the game ends and Azza wins. Otherwise, Bob privately chooses an index $1 \\le i \\le 100$ and an integer $\\delta \\in \\{-1, 0, 1\\}$, and secretly modifies the squeakuence written in the notebook by adding $\\delta$ to its $i$th entry. (Azza is not told either $i$ or $\\delta$. The values of $i$ and $\\delta$ can change from turn to turn.)\n\nFind the smallest real number $\\alpha$ for which there exists $C > 0$ making the following statement true: Azza can always guarantee winning the squeakuences game provided that $g > Cn^{\\alpha}$.",
+          "proposer": "Kornpholkrit Weraarchakul"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k$ be a positive integer not divisible by $6$. Suppose that there exists a prime $p$ such that $p$ divides both $2025^k - 1$ and $2026^k - 1$. Prove that $p < 3^k$.",
+          "proposer": "Kornpholkrit Weraarchakul"
+        }
+      ]
+    }
+  ]
+}

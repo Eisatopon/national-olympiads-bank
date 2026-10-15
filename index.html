@@ -202,6 +202,9 @@
     --kgbe: #b7791f; --kgbe-ink: #7a5014; --kgbe-tint: #f8eedd;
     --kgec: #5f8a3a; --kgec-ink: #3e5c25; --kgec-tint: #e9f1e1;
     --kgpe: #7a6aa8; --kgpe-ink: #504473; --kgpe-tint: #ece8f5;
+    --ujm: #3d5a99; --ujm-ink: #263b66; --ujm-tint: #e6ecf7;
+    --elmo: #8a4fbf; --elmo-ink: #5c3380; --elmo-tint: #f1e8f8;
+    --usemo: #c0663a; --usemo-ink: #7f4025; --usemo-tint: #f9ebe3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -339,6 +342,9 @@
 .f-kgbe { --f: var(--kgbe); --f-ink: var(--kgbe-ink); --f-tint: var(--kgbe-tint); }
 .f-kgec { --f: var(--kgec); --f-ink: var(--kgec-ink); --f-tint: var(--kgec-tint); }
 .f-kgpe { --f: var(--kgpe); --f-ink: var(--kgpe-ink); --f-tint: var(--kgpe-tint); }
+.f-ujm { --f: var(--ujm); --f-ink: var(--ujm-ink); --f-tint: var(--ujm-tint); }
+.f-elmo { --f: var(--elmo); --f-ink: var(--elmo-ink); --f-tint: var(--elmo-tint); }
+.f-usemo { --f: var(--usemo); --f-ink: var(--usemo-ink); --f-tint: var(--usemo-tint); }
 
 /* ==========================================================
    Base
@@ -838,7 +844,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261015-imo-shortlist';
+const DATA_VERSION = '20261015-usajmo-elmo-usemo';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -952,6 +958,9 @@ REGION_OF.kgca = 'world';
 REGION_OF.kgbe = 'world';
 REGION_OF.kgec = 'world';
 REGION_OF.kgpe = 'world';
+REGION_OF.ujm = 'americas';
+REGION_OF.elmo = 'americas';
+REGION_OF.usemo = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1072,6 +1081,8 @@ const COUNTRIES = [
     { key: 'srmc', name: 'Silk Road', flag: '🌏', file: 'Silk-Road-problems.json', kind: 'years', scope: 'regional', full: 'Silk Road Mathematics Competition' },
     { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
     { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
+    { key: 'elmo', name: 'ELMO', flag: '🇺🇸', file: 'ELMO-problems.json', kind: 'years', scope: 'tournaments', full: "ELMO (olympiad-style contest held during the US MOP)" },
+    { key: 'usemo', name: 'USEMO', flag: '🇺🇸', file: 'USEMO-problems.json', kind: 'years', scope: 'tournaments', full: "United States Ersatz Math Olympiad (USEMO)" },
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },
     { key: 'kgbe', name: 'Kangaroo Benjamin', flag: '🦘', file: 'Kangaroo-benjamin-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Benjamin (grades 5–6), international KSF paper' },
     { key: 'kgec', name: 'Kangaroo Ecolier', flag: '🦘', file: 'Kangaroo-ecolier-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Ecolier (grades 3–4), international KSF paper' },
@@ -1091,6 +1102,7 @@ const COUNTRIES = [
     { key: 'ilg', name: 'Israel Grossman', flag: '🇮🇱', file: 'Israel-grossman-problems.json', kind: 'years' },
     { key: 'ilt', name: 'Israel TST', flag: '🇮🇱', file: 'Israel-tst-problems.json', kind: 'years' },
     { key: 'cy', name: 'Cyprus Pancyprian (Grade 12)', flag: '🇨🇾', file: 'Cyprus-pancyprian-problems.json', kind: 'years' },
+    { key: 'ujm', name: 'USA USAJMO', flag: '🇺🇸', file: 'Usa-usajmo-problems.json', kind: 'years', full: "USA Junior Mathematical Olympiad (USAJMO)" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];

@@ -1,0 +1,648 @@
+{
+  "competition": "ELMO",
+  "years": [
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all (not necessarily finite) sets $S$ of points in the plane such that given any four distinct points in $S$, there is a circle passing through all four or a line passing through some three."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $r$ and $s$ be positive integers. Define $a_0 = 0$, $a_1 = 1$, and $a_n = ra_{n-1} + sa_{n-2}$ for $n \\ge 2$. Let $f_n = a_1a_2 \\cdots a_n$. Prove that $\\dfrac{f_n}{f_kf_{n-k}}$ is an integer for all integers $n$ and $k$ such that $0 < k < n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n > 1$ be a positive integer. A 2-dimensional grid, infinite in all directions, is given. Each 1 by 1 square in a given $n$ by $n$ square has a counter on it. A move consists of taking $n$ adjacent counters in a row or column and sliding them each by one space along that row or column. A returning sequence is a finite sequence of moves such that all counters again fill the original $n$ by $n$ square at the end of the sequence.\n\n(a) Assume that all counters are distinguishable except two, which are indistinguishable from each other. Prove that any distinguishable arrangement of counters in the $n$ by $n$ square can be reached by a returning sequence.\n(b) Assume all counters are distinguishable. Prove that there is no returning sequence that switches two counters and returns the rest to their original positions."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all strictly increasing functions $f: \\mathbb{N} \\to \\mathbb{N}$ satisfying $nf(f(n)) = f(n)^2$ for all positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "$2010$ MOPpers are assigned numbers $1$ through $2010$. Each one is given a red slip and a blue slip of paper. Two positive integers, A and B, each less than or equal to $2010$ are chosen. On the red slip of paper, each MOPper writes the remainder when the product of A and his or her number is divided by $2011$. On the blue slip of paper, he or she writes the remainder when the product of B and his or her number is divided by $2011$. The MOPpers may then perform either of the following two operations:\n\n• Each MOPper gives his or her red slip to the MOPper whose number is written on his or her blue slip.\n• Each MOPper gives his or her blue slip to the MOPper whose number is written on his or her red slip.\n\nShow that it is always possible to perform some number of these operations such that each MOPper is holding a red slip with his or her number written on it."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\omega$, incenter $I$, and $A$-excenter $I_A$. Let the incircle and the $A$-excircle hit $BC$ at $D$ and $E$, respectively, and let $M$ be the midpoint of arc $BC$ without $A$. Consider the circle tangent to $BC$ at $D$ and arc $BAC$ at $T$. If $TI$ intersects $\\omega$ again at $S$, prove that $SI_A$ and $ME$ meet on $\\omega$."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a convex quadralateral. Let $E, F, G, H$ be points on segments $AB, BC, CD, DA$, respectively, and let $P$ be intersection of $EG$ and $FH$. Given that quadrilaterals $HAEP, EBFP, FCGP, GDHP$ all have inscribed circles, prove that $ABCD$ also has an inscribed circle.",
+          "proposer": "Evan O'Dorney"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Wanda the Worm likes to eat Pascal's triangle. One day, she starts at the top of the triangle and eats $\\binom{0}{0} = 1$. Each move, she travels to an adjacent positive integer and eats it, but she can never return to a spot that she has previously eaten. If Wanda can never eat numbers $a, b, c$ such that $a + b = c$, proof that it is possible for her to eat $100{,}000$ numbers in the first $2011$ rows given that she is not restricted to traveling only in the first $2011$ rows.\n\n(Here, the $n+1^{\\text{st}}$ row of Pascal's triangle consists of entries of the form $\\binom{n}{k}$ for integers $0 \\le k \\le n$. Thus, the entry $\\binom{n}{k}$ is considered adjacent to the entries $\\binom{n-1}{k-1}$, $\\binom{n-1}{k}$, $\\binom{n}{k-1}$, $\\binom{n}{k+1}$, $\\binom{n+1}{k}$, $\\binom{n+1}{k+1}$.)",
+          "proposer": "Linus Hamilton"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine whether there exists a sequence $\\{a_n\\}_{n=0}^{\\infty}$ of real numbers such that the following holds:\n\n• For all $n \\ge 0$, $a_n \\ne 0$.\n• There exist real numbers $x$ and $y$ such that $a_{n+2} = xa_{n+1} + ya_n$ for all $n \\ge 0$.\n• For all positive real numbers $r$, there exists positive integers $i$ and $j$ such that $|a_i| < r < |a_j|$.",
+          "proposer": "Alex Zhu"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{R}^+ \\mapsto \\mathbb{R}^+$, where $\\mathbb{R}^+$ denotes the positive reals, such that whenever $a > b > c > d > 0$ are reel numbers with $ad = bc$, $$f(a + d) + f(b - c) = f(a - d) + f(b + c).$$",
+          "proposer": "Calvin Deng"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $p > 13$ be a prime of the the form $2q+1$, where $q$ is prime. Find the number of ordered pairs of integers $(m, n)$ such that $0 \\le m < n < p - 1$ and $$3^m + (-12)^m \\equiv 3^n + (-12)^n \\pmod{p}.$$",
+          "proposer": "Alex Zhu"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Consider the infinite grid of lattice points in $\\mathbb{Z}^3$. Little D and Big Z play a game, where Little D first loses a shoe on an unmunched point in the grid. Then, Big Z munches a shoe-free plane perpendicular to one of the coordinate axes. They continue to alternature turns in this fashion, with Little D's goal to loose a shoe on each of $n$ consecutive lattice points on a line parrallel to one of the coordinate axes. Determine all $n$ for which Little D can accomplish his goal.",
+          "proposer": "David Yang"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In acute triangle $ABC$, let $D, E, F$ denote the feet of the altitudes from $A, B, C$, respectively, and let $\\omega$ be the circumcircle of $\\triangle AEF$. Let $\\omega_1$ and $\\omega_2$ be the circles through $D$ tangent to $\\omega$ at $E$ and $F$, respectively. Show that $\\omega_1$ and $\\omega_2$ meet at a point $P$ on $BC$ other than $D$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all ordered pairs of positive integers $(m, n)$ for which there exists a set $C = \\{c_1, \\dots, c_k\\}$ $(k \\ge 1)$ of colors and an assignment of colors to each of the $mn$ unit squares of a $m \\times n$ grid such that for every color $c_i \\in C$ and unit square $S$ of color $c_i$, exactly two direct (non-diagonal) neighbors of $S$ have color $c_i$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f, g$ be polynomials with complex coefficients such that $\\gcd(\\deg f, \\deg g) = 1$. Suppose that there exist polynomials $P(x, y)$ and $Q(x, y)$ with complex coefficients such that $f(x) + g(y) = P(x, y)Q(x, y)$. Show that one of $P$ and $Q$ must be constant."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a_0, b_0$ be positive integers, and define $a_{i+1} = a_i + \\lfloor \\sqrt{b_i} \\rfloor$ and $b_{i+1} = b_i + \\lfloor \\sqrt{a_i} \\rfloor$ for all $i \\ge 0$. Show that there exists a positive integer $n$ such that $a_n = b_n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$, and let $D$ and $E$ be points on side $BC$ such that $BD = CE$ and $D$ lies between $B$ and $E$. Suppose there exists a point $P$ inside $ABC$ such that $PD \\parallel AE$ and $\\angle PAB = \\angle EAC$. Prove that $\\angle PBA = \\angle PCA$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A diabolical combination lock has $n$ dials (each with $c$ possible states), where $n, c > 1$. The dials are initially set to states $d_1, d_2, \\dots, d_n$, where $0 \\le d_i \\le c - 1$ for each $1 \\le i \\le n$. Unfortunately, the actual states of the dials (the $d_i$'s) are concealed, and the initial settings of the dials are also unknown. On a given turn, one may advance each dial by an integer amount $c_i$ $(0 \\le c_i \\le c - 1)$, so that every dial is now in a state $d_i' \\equiv d_i + c_i \\pmod{c}$ with $0 \\le d_i' \\le c - 1$. After each turn, the lock opens if and only if all of the dials are set to the zero state; otherwise, the lock selects a random integer $k$ and cyclically shifts the $d_i$'s by $k$ (so that for every $i$, $d_i$ is replaced by $d_{i-k}$, where indices are taken modulo $n$).\n\nShow that the lock can always be opened, regardless of the choices of the initial configuration and the choices of $k$ (which may vary from turn to turn), if and only if $n$ and $c$ are powers of the same prime."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\dots, a_9$ be nine real numbers, not necessarily distinct, with average $m$. Let $A$ denote the number of triples $1 \\le i < j < k \\le 9$ for which $a_i + a_j + a_k \\ge 3m$. What is the minimum possible value of $A$?",
+          "proposer": "Ray Li"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a, b, c$ be positive reals satisfying $a + b + c = \\sqrt[7]{a} + \\sqrt[7]{b} + \\sqrt[7]{c}$. Prove that $a^ab^bc^c \\ge 1$.",
+          "proposer": "Evan Chen"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $m_1, m_2, \\dots, m_{2013} > 1$ be $2013$ pairwise relatively prime positive integers and $A_1, A_2, \\dots, A_{2013}$ be $2013$ (possibly empty) sets with $A_i \\subseteq \\{1, 2, \\dots, m_i - 1\\}$ for $i = 1, 2, \\dots, 2013$. Prove that there is a positive integer $N$ such that $$N \\le \\left(2|A_1| + 1\\right)\\left(2|A_2| + 1\\right) \\cdots \\left(2|A_{2013}| + 1\\right)$$ and for each $i = 1, 2, \\dots, 2013$, there does not exist $a \\in A_i$ such that $m_i$ divides $N - a$.",
+          "proposer": "Victor Wang"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Triangle $ABC$ is inscribed in circle $\\omega$. A circle with chord $BC$ intersects segments $AB$ and $AC$ again at $S$ and $R$, respectively. Segments $BR$ and $CS$ meet at $L$, and rays $LR$ and $LS$ intersect $\\omega$ at $D$ and $E$, respectively. The internal angle bisector of $\\angle BDE$ meets line $ER$ at $K$. Prove that if $BE = BR$, then $\\angle ELK = \\frac{1}{2}\\angle BCD$.",
+          "proposer": "Evan Chen"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For what polynomials $P(n)$ with integer coefficients can a positive integer be assigned to every lattice point in $\\mathbb{R}^3$ so that for every integer $n \\ge 1$, the sum of the $n^3$ integers assigned to any $n \\times n \\times n$ grid of lattice points is divisible by $P(n)$?",
+          "proposer": "Andre Arslan"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Consider a function $f : \\mathbb{Z} \\to \\mathbb{Z}$ such that for every integer $n \\ge 0$, there are at most $0.001n^2$ pairs of integers $(x, y)$ for which $f(x + y) \\ne f(x) + f(y)$ and $\\max\\{|x|, |y|\\} \\le n$. Is it possible that for some integer $n \\ge 0$, there are more than $n$ integers $a$ such that $f(a) \\ne a \\cdot f(1)$ and $|a| \\le n$?",
+          "proposer": "David Yang"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all triples $(f, g, h)$ of injective functions from the set of real numbers to itself satisfying $$\\begin{aligned} f(x + f(y)) &= g(x) + h(y) \\\\ g(x + g(y)) &= h(x) + f(y) \\\\ h(x + h(y)) &= f(x) + g(y) \\end{aligned}$$ for all real numbers $x$ and $y$. (We say a function $F$ is injective if $F(a) \\ne F(b)$ for any distinct real numbers $a$ and $b$.)",
+          "proposer": "Evan Chen"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Define a beautiful number to be an integer of the form $a^n$, where $a \\in \\{3, 4, 5, 6\\}$ and $n$ is a positive integer. Prove that each integer greater than $2$ can be expressed as the sum of pairwise distinct beautiful numbers.",
+          "proposer": "Matthew Babbitt"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "We say a finite set $S$ of points in the plane is very if for every point $X$ in $S$, there exists an inversion with center $X$ mapping every point in $S$ other than $X$ to another point in $S$ (possibly the same point).\n\n(a) Fix an integer $n$. Prove that if $n \\ge 2$, then any line segment $\\overline{AB}$ contains a unique very set $S$ of size $n$ such that $A, B \\in S$.\n(b) Find the largest possible size of a very set not contained in any line.\n\n(Here, an inversion with center $O$ and radius $r$ sends every point $P$ other than $O$ to the point $P'$ along ray $OP$ such that $OP \\cdot OP' = r^2$.)",
+          "proposer": "Sammy Luo"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer and let $a_1, a_2, \\dots, a_n$ be real numbers strictly between $0$ and $1$. For any subset $S$ of $\\{1, 2, \\dots, n\\}$, define $$f(S) = \\prod_{i \\in S} a_i \\cdot \\prod_{j \\notin S} (1 - a_j).$$ Suppose that $\\sum_{|S| \\text{ odd}} f(S) = \\frac{1}{2}$. Prove that $a_k = \\frac{1}{2}$ for some $k$. (Here the sum ranges over all subsets of $\\{1, 2, \\dots, n\\}$ with an odd number of elements.)",
+          "proposer": "Kevin Sun"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle with circumcenter $O$ and orthocenter $H$. Let $\\omega_1$ and $\\omega_2$ denote the circumcircles of triangles $BOC$ and $BHC$, respectively. Suppose the circle with diameter $\\overline{AO}$ intersects $\\omega_1$ again at $M$, and line $AM$ intersects $\\omega_1$ again at $X$. Similarly, suppose the circle with diameter $\\overline{AH}$ intersects $\\omega_2$ again at $N$, and line $AN$ intersects $\\omega_2$ again at $Y$. Prove that lines $MN$ and $XY$ are parallel.",
+          "proposer": "Sammy Luo"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A $2^{2014} + 1$ by $2^{2014} + 1$ grid has some black squares filled. The filled black squares form one or more snakes on the plane, each of whose heads splits at some points but never comes back together. In other words, for every positive integer $n$ greater than $2$, there do not exist pairwise distinct black squares $s_1, s_2, \\dots, s_n$ such that $s_i$ and $s_{i+1}$ share an edge for $i = 1, 2, \\dots, n$ (here $s_{n+1} = s_1$).\n\nWhat is the maximum possible number of filled black squares?",
+          "proposer": "David Yang"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Define the sequence $a_1 = 2$ and $a_n = 2^{a_{n-1}} + 2$ for all integers $n \\ge 2$. Prove that $a_{n-1}$ divides $a_n$ for all integers $n \\ge 2$.",
+          "proposer": "Sam Korsky"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $m$, $n$, and $x$ be positive integers. Prove that $$\\sum_{i=1}^{n} \\min\\left(\\left\\lfloor \\frac{x}{i} \\right\\rfloor, m\\right) = \\sum_{i=1}^{m} \\min\\left(\\left\\lfloor \\frac{x}{i} \\right\\rfloor, n\\right).$$",
+          "proposer": "Yang Liu"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\omega$ be a circle and $C$ a point outside it; distinct points $A$ and $B$ are selected on $\\omega$ so that $\\overline{CA}$ and $\\overline{CB}$ are tangent to $\\omega$. Let $X$ be the reflection of $A$ across the point $B$, and denote by $\\gamma$ the circumcircle of triangle $BXC$. Suppose $\\gamma$ and $\\omega$ meet at $D \\ne B$ and line $CD$ intersects $\\omega$ at $E \\ne D$. Prove that line $EX$ is tangent to the circle $\\gamma$.",
+          "proposer": "David Stoner"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $a > 1$ be a positive integer. Prove that for some nonnegative integer $n$, the number $2^{2^n} + a$ is not prime.",
+          "proposer": "Jack Gurev"
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "problem": "Let $m, n, k > 1$ be positive integers. For a set $S$ of positive integers, define $S(i, j)$ for $i < j$ to be the number of elements in $S$ strictly between $i$ and $j$. We say two sets $(X, Y)$ are a fat pair if $$X(i, j) \\equiv Y(i, j) \\pmod{n}$$ for every $i, j \\in X \\cap Y$. (In particular, if $|X \\cap Y| < 2$ then $(X, Y)$ is fat.)\n\nIf there are $m$ distinct sets of $k$ positive integers such that no two form a fat pair, show that $m < n^{k-1}$.",
+          "proposer": "Allen Liu"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Cookie Monster says a positive integer $n$ is crunchy if there exist $2n$ real numbers $x_1, x_2, \\dots, x_{2n}$, not all equal, such that the sum of any $n$ of the $x_i$'s is equal to the product of the other $n$ of the $x_i$'s. Help Cookie Monster determine all crunchy integers.",
+          "proposer": "Yannick Yao"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Oscar is drawing diagrams with trash can lids and sticks. He draws a triangle $ABC$ and a point $D$ such that $DB$ and $DC$ are tangent to the circumcircle of $ABC$. Let $B'$ be the reflection of $B$ over $AC$ and $C'$ be the reflection of $C$ over $AB$. If $O$ is the circumcenter of $DB'C'$, help Oscar prove that $AO$ is perpendicular to $BC$.",
+          "proposer": "James Lin"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a Cartesian coordinate plane, call a rectangle standard if all of its sides are parallel to the $x$- and $y$- axes, and call a set of points nice if no two of them have the same $x$- or $y$- coordinates. First, Bert chooses a nice set $B$ of $2016$ points in the coordinate plane. To mess with Bert, Ernie then chooses a set $E$ of $n$ points in the coordinate plane such that $B \\cup E$ is a nice set with $2016 + n$ points. Bert returns and then miraculously notices that there does not exist a standard rectangle that contains at least two points in $B$ and no points in $E$ in its interior. For a given nice set $B$ that Bert chooses, define $f(B)$ as the smallest positive integer $n$ such that Ernie can find a nice set $E$ of size $n$ with the aforementioned properties. Help Bert determine the minimum and maximum possible values of $f(B)$.",
+          "proposer": "Yannick Yao"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Big Bird has a polynomial $P$ with integer coefficients such that $n$ divides $P(2^n)$ for every positive integer $n$. Prove that Big Bird's polynomial must be the zero polynomial.",
+          "proposer": "Ashwin Sah"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Elmo is drawing with colored chalk on a sidewalk outside. He first marks a set $S$ of $n > 1$ collinear points. Then, for every unordered pair of points $\\{X, Y\\}$ in $S$, Elmo draws the circle with diameter $XY$ so that each pair of circles which intersect at two distinct points are drawn in different colors. Count von Count then wishes to count the number of colors Elmo used. In terms of $n$, what is the minimum number of colors Elmo could have used?",
+          "proposer": "Michael Ren"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Elmo is now learning olympiad geometry. In a triangle $ABC$ with $AB \\ne AC$, let its incircle be tangent to sides $BC$, $CA$, and $AB$ at $D$, $E$, and $F$, respectively. The internal angle bisector of $\\angle BAC$ intersects lines $DE$ and $DF$ at $X$ and $Y$, respectively. Let $S$ and $T$ be distinct points on side $BC$ such that $\\angle XSY = \\angle XTY = 90^\\circ$. Finally, let $\\gamma$ be the circumcircle of $\\triangle AST$.\n\n(a) Help Elmo show that $\\gamma$ is tangent to the circumcircle of $\\triangle ABC$.\n(b) Help Elmo show that $\\gamma$ is also tangent to the incircle of $\\triangle ABC$.",
+          "proposer": "James Lin"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\dots, a_n$ be positive integers with product $P$, where $n$ is an odd positive integer. Prove that $$\\gcd(a_1^n + P, a_2^n + P, \\dots, a_n^n + P) \\le 2\\gcd(a_1, \\dots, a_n)^n.$$",
+          "proposer": "Daniel Liu"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with orthocenter $H$, and let $M$ be the midpoint of $\\overline{BC}$. Suppose that $P$ and $Q$ are distinct points on the circle with diameter $\\overline{AH}$, different from $A$, such that $M$ lies on line $PQ$. Prove that the orthocenter of $\\triangle APQ$ lies on the circumcircle of $\\triangle ABC$.",
+          "proposer": "Michael Ren"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "nic$\\kappa$y is drawing kappas in the cells of a square grid. However, he does not want to draw kappas in three consecutive cells (horizontally, vertically, or diagonally). Find all real numbers $d > 0$ such that for every positive integer $n$, nic$\\kappa$y can label at least $dn^2$ cells of an $n \\times n$ square.",
+          "proposer": "Mihir Singhal and Michael Kural"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "An integer $n > 2$ is called tasty if for every ordered pair of positive integers $(a, b)$ with $a + b = n$, at least one of $\\frac{a}{b}$ and $\\frac{b}{a}$ is a terminating decimal. Do there exist infinitely many tasty integers?",
+          "proposer": "Vincent Huang"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The edges of $K_{2017}$ are each labelled with $1$, $2$, or $3$ such that any triangle has sum of labels at least $5$. Determine the minimum possible average of all $\\binom{2017}{2}$ labels.\n\n(Here $K_{2017}$ is defined as the complete graph on $2017$ vertices, with an edge between every pair of vertices.)",
+          "proposer": "Michael Ma"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all real numbers $a$, $b$, and $c$:\n\n(i) If $a + b + c \\ge 0$ then $f(a^3) + f(b^3) + f(c^3) \\ge 3f(abc)$.\n(ii) If $a + b + c \\le 0$ then $f(a^3) + f(b^3) + f(c^3) \\le 3f(abc)$.",
+          "proposer": "Ashwin Sah"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. There are $2018n + 1$ cities in the Kingdom of Sellke Arabia. King Mark wants to build two-way roads that connect certain pairs of cities such that for each city $C$ and integer $1 \\le i \\le 2018$, there are exactly $n$ cities that are a distance $i$ away from $C$. (The distance between two cities is the least number of roads on any path between the two cities.)\n\nFor which $n$ is it possible for Mark to achieve this?",
+          "proposer": "Michael Ren"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider infinite sequences $a_1, a_2, \\dots$ of positive integers satisfying $a_1 = 1$ and $$a_n \\mid a_k + a_{k+1} + \\cdots + a_{k+n-1}$$ for all positive integers $k$ and $n$. For a given positive integer $m$, find the maximum possible value of $a_{2m}$.",
+          "proposer": "Krit Boonsiriseth"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A$ be a point in the plane, and $\\ell$ a line not passing through $A$. Evan does not have a straightedge, but instead has a special compass which has the ability to draw a circle through three distinct noncollinear points. (The center of the circle is not marked in this process.) Additionally, Evan can mark the intersections between two objects drawn, and can mark an arbitrary point on a given object or on the plane.\n\n(i) Can Evan construct the reflection of $A$ over $\\ell$?\n(ii) Can Evan construct the foot of the altitude from $A$ to $\\ell$?\n\n(Footnote: To construct a point, Evan must have an algorithm which marks the point in finitely many steps.)",
+          "proposer": "Zack Chroman"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a scalene triangle with orthocenter $H$ and circumcenter $O$. Let $P$ be the midpoint of $\\overline{AH}$ and let $T$ be on line $BC$ with $\\angle TAO = 90^\\circ$. Let $X$ be the foot of the altitude from $O$ onto line $PT$. Prove that the midpoint of $\\overline{PX}$ lies on the nine-point circle of $\\triangle ABC$.\n\n(Footnote: The nine-point circle of $\\triangle ABC$ is the unique circle passing through the following nine points: the midpoint of the sides, the feet of the altitudes, and the midpoints of $\\overline{AH}$, $\\overline{BH}$, and $\\overline{CH}$.)",
+          "proposer": "Zack Chroman"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a_1, a_2, \\dots, a_m$ be a finite sequence of positive integers. Prove that there exist nonnegative integers $b$, $c$, and $N$ such that $$\\left\\lfloor \\sum_{i=1}^{m} \\sqrt{n + a_i} \\right\\rfloor = \\left\\lfloor \\sqrt{bn + c} \\right\\rfloor$$ holds for all integers $n > N$.",
+          "proposer": "Carl Schildkraut"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A windmill is a closed line segment of unit length with a distinguished endpoint, the pivot. Let $S$ be a finite set of $n$ points such that the distance between any two points of $S$ is greater than $c$. A configuration of $n$ windmills is admissible if no two windmills intersect and each point of $S$ is used exactly once as a pivot.\n\nAn admissible configuration of windmills is initially given to Geoff in the plane. In one operation Geoff can rotate any windmill around its pivot, either clockwise or counterclockwise and by any amount, as long as no two windmills intersect during the process. Show that Geoff can reach any other admissible configuration in finitely many operations, where\n\n(i) $c = \\sqrt{3}$,\n(ii) $c = \\sqrt{2}$.",
+          "proposer": "Michael Ren"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P(x)$ be a polynomial with integer coefficients such that $P(0) = 1$, and let $c > 1$ be an integer. Define $x_0 = 0$ and $x_{i+1} = P(x_i)$ for all integers $i \\ge 0$. Show that there are infinitely many positive integers $n$ such that $\\gcd(x_n, n + c) = 1$.",
+          "proposer": "Carl Schildkraut and Milan Haiman"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $m, n \\ge 2$ be integers. Carl is given $n$ marked points in the plane and wishes to mark their centroid. He has no standard compass or straightedge. Instead, he has a device which, given marked points $A$ and $B$, marks the $m - 1$ points that divides segment $\\overline{AB}$ into $m$ congruent parts (but does not draw the segment).\n\nFor which pairs $(m, n)$ can Carl necessarily accomplish his task, regardless of which $n$ points he is given?\n\n(Footnote: Here, the centroid of $n$ points with coordinates $(x_1, y_1)$, $\\dots$, $(x_n, y_n)$ is the point whose coordinates are $\\left(\\frac{x_1 + \\cdots + x_n}{n}, \\frac{y_1 + \\cdots + y_n}{n}\\right)$.)",
+          "proposer": "Holden Mui and Carl Schildkraut"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n \\ge 3$ be a fixed integer. A game is played by $n$ players sitting in a circle. Initially, each player draws three cards from a shuffled deck of $3n$ cards numbered $1, 2, \\dots, 3n$. Then, on each turn, every player simultaneously passes the smallest-numbered card in their hand one place clockwise and the largest-numbered card in their hand one place counterclockwise, while keeping the middle card.\n\nLet $T_r$ denote the configuration after $r$ turns (so $T_0$ is the initial configuration). Show that $T_r$ is eventually periodic with period $n$, and find the smallest integer $m$ for which, regardless of the initial configuration, $T_m = T_{m+n}$.",
+          "proposer": "Carl Schildkraut and Colin Tang"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Carl is given three distinct non-parallel lines $\\ell_1$, $\\ell_2$, $\\ell_3$ and a circle $\\omega$ in the plane. In addition to a normal straightedge, Carl has a special straightedge which, given a line $\\ell$ and a point $P$, constructs a new line passing through $P$ parallel to $\\ell$. (Carl does not have a compass.) Show that Carl can construct a triangle with circumcircle $\\omega$ whose sides are parallel to $\\ell_1$, $\\ell_2$, $\\ell_3$ in some order.",
+          "proposer": "Vincent Huang"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $S$ be a nonempty set of positive integers so that, for any (not necessarily distinct) integers $a$ and $b$ in $S$, the number $ab + 1$ is also in $S$. Show that the set of primes that do not divide any element of $S$ is finite.",
+          "proposer": "Carl Schildkraut"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Snorlax chooses a functional expression $E$ which is a finite nonempty string formed from a set $x_1, x_2, \\dots$, of variables and applications of a function $f$, together with addition, subtraction, multiplication (but not division), and fixed real constants. He then considers the equation $E = 0$, and lets $S$ denote the set of functions $f\\colon \\mathbb{R} \\to \\mathbb{R}$ such that the equation holds for any choices of real numbers $x_1, \\dots, x_k$. (For example, if Snorlax chooses the functional equation $$f(2f(x_1) + x_2) - 2f(x_1) - x_2 = 0,$$ then $S$ consists of one function, the identity function.)\n\n(a) Let $X$ denote the set of functions with domain $\\mathbb{R}$ and image exactly $\\mathbb{Z}$. Show that Snorlax can choose his functional equation such that $S$ is nonempty but $S \\subseteq X$.\n(b) Can Snorlax choose his functional equation such that $|S| = 1$ and $S \\subseteq X$?\n\n(Footnote: Functional expressions can be defined formally in the following way: the set of functional expressions is the minimal one (by inclusion) such that (i) any fixed real constant is a functional expression, (ii) for any integer $i$, the variable $x_i$ is a functional expression, and (iii) if $V$ and $W$ are functional expressions, then so are $f(V)$, $V + W$, $V - W$, and $V \\cdot W$.)",
+          "proposer": "Carl Schildkraut"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\mathbb{N}$ be the set of all positive integers. Find all functions $f\\colon \\mathbb{N} \\to \\mathbb{N}$ such that $$f^{f^{f(x)}(y)}(z) = x + y + z + 1$$ for all $x, y, z \\in \\mathbb{N}$.\n\n(Footnote: Here, $f^a(b)$ denotes the result of $a$ repeated applications of $f$ to $b$. Formally, we define $f^1(b) = f(b)$, and $f^{a+1}(b) = f(f^a(b))$ for all $a > 0$.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Define the Fibonacci numbers by $F_1 = F_2 = 1$ and $F_n = F_{n-1} + F_{n-2}$ for $n \\ge 3$. Let $k$ be a positive integer. Suppose that for every positive integer $m$ there exists a positive integer $n$ such that $m \\mid F_n - k$. Must $k$ be a Fibonacci number?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Janabel has a device that, when given two distinct points $U$ and $V$ in the plane, draws the perpendicular bisector of $UV$. Show that if three lines forming a triangle are drawn, Janabel can mark the orthocenter of the triangle using this device, a pencil, and no other tools."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let acute scalene triangle $ABC$ have orthocenter $H$ and altitude $AD$ with $D$ on side $BC$. Let $M$ be the midpoint of side $BC$, and let $D'$ be the reflection of $D$ over $M$. Let $P$ be a point on line $D'H$ such that lines $AP$ and $BC$ are parallel, and let the circumcircles of $\\triangle AHP$ and $\\triangle BHC$ meet again at $G \\ne H$. Prove that $\\angle MHG = 90^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $m$ and $n$ be positive integers. Find the smallest positive integer $s$ for which there exists an $m \\times n$ rectangular array of positive integers such that\n\n• each row contains $n$ distinct consecutive integers in some order,\n• each column contains $m$ distinct consecutive integers in some order, and\n• each entry is less than or equal to $s$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For any positive integer $n$, let\n\n• $\\tau(n)$ denote the number of positive integer divisors of $n$,\n• $\\sigma(n)$ denote the sum of the positive integer divisors of $n$, and\n• $\\varphi(n)$ denote the number of positive integers less than or equal to $n$ that are relatively prime to $n$.\n\nLet $a, b > 1$ be integers. Brandon has a calculator with three buttons that replace the integer $n$ currently displayed with $\\tau(n)$, $\\sigma(n)$, or $\\varphi(n)$, respectively. Prove that if the calculator currently displays $a$, then Brandon can make the calculator display $b$ after a finite (possibly empty) sequence of button presses."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In $\\triangle ABC$, points $P$ and $Q$ lie on sides $AB$ and $AC$, respectively, such that the circumcircle of $\\triangle APQ$ is tangent to side $BC$ at $D$. Let $E$ lie on side $BC$ such that $BD = EC$. Line $DP$ intersects the circumcircle of $\\triangle CDQ$ again at $X$, and line $DQ$ intersects the circumcircle of $\\triangle BDP$ again at $Y$. Prove that $D$, $E$, $X$, and $Y$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n > 1$ be an integer and let $a_1, a_2, \\dots, a_n$ be integers such that $n \\mid a_i - i$ for all integers $1 \\le i \\le n$. Prove there exists an infinite sequence $b_1, b_2, \\dots$ such that\n\n• $b_k \\in \\{a_1, a_2, \\dots, a_n\\}$ for all positive integers $k$, and\n• $\\displaystyle\\sum_{k=1}^{\\infty} \\frac{b_k}{n^k}$ is an integer."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Each cell of a $100 \\times 100$ grid is colored with one of $101$ colors. A cell is diverse if, among the $199$ cells in its row or column, every color appears at least once. Determine the maximum possible number of diverse cells."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "The set of positive integers is partitioned into $n$ disjoint infinite arithmetic progressions $S_1, S_2, \\dots, S_n$ with common differences $d_1, d_2, \\dots, d_n$, respectively. Prove that there exists exactly one index $1 \\le i \\le n$ such that $$\\frac{1}{d_i} \\prod_{j=1}^{n} d_j \\in S_i.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ and $k$ be positive integers. Two infinite sequences $\\{s_i\\}_{i \\ge 1}$ and $\\{t_i\\}_{i \\ge 1}$ are equivalent if, for all positive integers $i$ and $j$, $s_i = s_j$ if and only if $t_i = t_j$. A sequence $\\{r_i\\}_{i \\ge 1}$ has equi-period $k$ if $r_1, r_2, \\dots$ and $r_{k+1}, r_{k+2}, \\dots$ are equivalent.\n\nSuppose $M$ infinite sequences with equi-period $k$ whose terms are in the set $\\{1, \\dots, n\\}$ can be chosen such that no two chosen sequences are equivalent to each other. Determine the largest possible value of $M$ in terms of $n$ and $k$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In $\\triangle ABC$, points $D$, $E$, and $F$ lie on sides $BC$, $CA$, and $AB$, respectively, such that each of the quadrilaterals $AFDE$, $BDEF$, and $CEFD$ has an incircle. Prove that the inradius of $\\triangle ABC$ is twice the inradius of $\\triangle DEF$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n > 1$ be an integer. The numbers $1, \\dots, n$ are written on a board. Aliceurill and Bobasaur take turns circling an uncircled number on the board, with Aliceurill going first. When the product of the circled numbers becomes a multiple of $n$, the game ends and the last player to have circled a number loses. For which values of $n$ can Bobasaur guarantee victory?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all monic nonconstant polynomials $P$ with integer coefficients for which there exist positive integers $a$ and $m$ such that for all positive integers $n \\equiv a \\pmod{m}$, $P(n)$ is nonzero, and $$2022 \\cdot \\frac{(n+1)^{n+1} - n^n}{P(n)}$$ is an integer."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\mathcal{P}$ be a regular $2022$-gon with area $1$. Find a real number $c$ such that, if points $A$ and $B$ are chosen independently and uniformly at random on the perimeter of $\\mathcal{P}$, then the probability that $AB \\ge c$ is $\\frac{1}{2}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABCDE$ be a convex pentagon such that $\\triangle ABE$, $\\triangle BEC$, and $\\triangle EDB$ are similar (with vertices in order). Lines $BE$ and $CD$ intersect at point $T$. Prove that line $AT$ is tangent to the circumcircle of $\\triangle ACD$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n \\ge 3$ be a positive integer. There are $n^3$ users on a social media network called Everyone Likes Meeting Online (ELMO), and some pairs of these users are ELMObuddies. A set of at least three ELMO users forms an ELMOclub if and only if all pairs of members of the set are ELMObuddies. It is known that among every $n$ users, some three form an ELMOclub. Prove that there is an ELMOclub with five members."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f\\colon \\mathbb{Z} \\to \\mathbb{Z}$ such that, for all integers $m$ and $n$, $$f(f(m) - n) + f(f(n) - m) = f(m + n).$$"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $m$ be a positive integer. Find, in terms of $m$, all polynomials $P(x)$ with integer coefficients such that for every integer $n$, there exists an integer $k$ such that $P(k) = n^m$.",
+          "proposer": "Raymond Feng"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a$, $b$, and $n$ be positive integers. A lemonade stand owns $n$ cups, all of which are initially empty. The lemonade stand has a filling machine and an emptying machine, which operate according to the following rules:\n\n• If at any moment, $a$ completely empty cups are available, the filling machine spends the next $a$ minutes filling those $a$ cups simultaneously and doing nothing else.\n• If at any moment, $b$ completely full cups are available, the emptying machine spends the next $b$ minutes emptying those $b$ cups simultaneously and doing nothing else.\n\nSuppose that after a sufficiently long time has passed, both the filling machine and emptying machine work without pausing. Find, in terms of $a$ and $b$, the least possible value of $n$.",
+          "proposer": "Raymond Feng"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Convex quadrilaterals $ABCD$, $A_1B_1C_1D_1$, and $A_2B_2C_2D_2$ are similar with vertices in order. Points $A$, $A_1$, $B_2$, $B$ are collinear in order, points $B$, $B_1$, $C_2$, $C$ are collinear in order, points $C$, $C_1$, $D_2$, $D$ are collinear in order, and points $D$, $D_1$, $A_2$, $A$ are collinear in order. Diagonals $AC$ and $BD$ intersect at $P$, diagonals $A_1C_1$ and $B_1D_1$ intersect at $P_1$, and diagonals $A_2C_2$ and $B_2D_2$ intersect at $P_2$. Prove that points $P$, $P_1$, and $P_2$ are collinear.",
+          "proposer": "Holden Mui"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute scalene triangle with orthocenter $H$. Line $BH$ intersects $\\overline{AC}$ at $E$ and line $CH$ intersects $\\overline{AB}$ at $F$. Let $X$ be the foot of the perpendicular from $H$ to the line through $A$ parallel to $\\overline{EF}$. Point $B_1$ lies on line $XF$ such that $\\overline{BB_1}$ is parallel to $\\overline{AC}$, and point $C_1$ lies on line $XE$ such that $\\overline{CC_1}$ is parallel to $\\overline{AB}$. Prove that points $B$, $C$, $B_1$, $C_1$ are concyclic.",
+          "proposer": "Luke Robitaille"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the least positive integer $M$ for which there exist a positive integer $n$ and polynomials $P_1(x), P_2(x), \\dots, P_n(x)$ with integer coefficients satisfying $$Mx = P_1(x)^3 + P_2(x)^3 + \\cdots + P_n(x)^3.$$",
+          "proposer": "Karthik Vedula"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For a set $S$ of positive integers and a positive integer $n$, consider the game of $(n, S)$-nim, which is as follows. A pile starts with $n$ watermelons. Two players, Deric and Erek, alternate turns eating watermelons from the pile, with Deric going first. On any turn, the number of watermelons eaten must be an element of $S$. The last player to move wins. Let $f(S)$ denote the set of positive integers $n$ for which Deric has a winning strategy in $(n, S)$-nim.\n\nLet $T$ be a set of positive integers. Must the sequence $$T, \\ f(T), \\ f(f(T)), \\ \\dots$$ be eventually constant?",
+          "proposer": "Brandon Wang, Edward Wan"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In convex quadrilateral $ABCD$, let diagonals $\\overline{AC}$ and $\\overline{BD}$ intersect at $E$. Let the circumcircles of $ADE$ and $BCE$ intersect $\\overline{AB}$ again at $P \\ne A$ and $Q \\ne B$, respectively. Let the circumcircle of $ACP$ intersect $\\overline{AD}$ again at $R \\ne A$, and let the circumcircle of $BDQ$ intersect $\\overline{BC}$ again at $S \\ne B$. Prove that $A$, $B$, $R$, and $S$ are concyclic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For positive integers $a$ and $b$, an $(a, b)$-shuffle of a deck of $a + b$ cards is any shuffle that preserves the relative order of the top $a$ cards and the relative order of the bottom $b$ cards. Let $n, k, a_1, a_2, \\dots, a_k, b_1, b_2, \\dots, b_k$ be fixed positive integers such that $a_i + b_i = n$ for all $1 \\le i \\le k$. Big Bird has a deck of $n$ cards and will perform an $(a_i, b_i)$-shuffle for each $1 \\le i \\le k$, in ascending order of $i$. Suppose that Big Bird can reverse the order of the deck. Prove that Big Bird can also achieve any of the $n!$ permutations of the cards."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For some positive integer $n$, Elmo writes down the equation $$x_1 + x_2 + \\cdots + x_n = x_1 + x_2 + \\cdots + x_n.$$ Elmo inserts at least one $f$ to the left side of the equation and adds parentheses to create a valid functional equation. For example, if $n = 3$, Elmo could have created the equation $$f(x_1 + f(f(x_2) + x_3)) = x_1 + x_2 + x_3.$$ Cookie Monster comes up with a function $f : \\mathbb{Q} \\to \\mathbb{Q}$ which is a solution to Elmo's functional equation. (In other words, Elmo's equation is satisfied for all choices of $x_1, \\dots, x_n \\in \\mathbb{Q}$). Is it possible that there is no integer $k$ (possibly depending on $f$) such that $f^k(x) = x$ for all $x$?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Find the number of sequences $a_0, a_1, a_2, \\dots, a_{2n}$ of integers in the range $[0, n]$ such that for all integers $0 \\le k \\le n$ and all nonnegative integers $m$, there exists an integer $k \\le i \\le 2k$ such that $\\lfloor k/2^m \\rfloor = a_i$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In triangle $ABC$ with $AB < AC$ and $AB + AC = 2BC$, let $M$ be the midpoint of $\\overline{BC}$. Choose point $P$ on the extension of $\\overline{BA}$ past $A$ and point $Q$ on segment $\\overline{AC}$ such that $M$ lies on $\\overline{PQ}$. Let $X$ be on the opposite side of $\\overline{AB}$ from $C$ such that $\\overline{AX} \\parallel \\overline{BC}$ and $AX = AP = AQ$. Let $\\overline{BX}$ intersect the circumcircle of $BMQ$ again at $Y \\ne B$, and let $\\overline{CX}$ intersect the circumcircle of $CMP$ again at $Z \\ne C$. Prove that $A$, $Y$, and $Z$ are collinear."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For a prime $p$, let $\\mathbb{F}_p$ denote the integers modulo $p$, and let $\\mathbb{F}_p^{(4)}[x]$ be the set of quartic polynomials with coefficients in $\\mathbb{F}_p$. Find all $p$ for which there exists a polynomial $P(x) \\in \\mathbb{F}_p^{(4)}[x]$ such that for all integers $k$, there exists some integer $\\ell$ such that $P(\\ell) \\equiv k \\pmod{p}$. (Note that there are $p^4(p - 1)$ quartic polynomials in $\\mathbb{F}_p$ in total.)"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\mathbb{Z}_{>0}$ denote the set of positive integers. Find all functions $f\\colon \\mathbb{Z}_{>0} \\to \\mathbb{Z}_{>0}$ such that for all positive integers $m$ and $n$, $$f^m(n) + f(mn) = f(m)f(n).$$ Note: $f^m(n) = \\underbrace{f(f(\\cdots f}_{m \\text{ times}}(n)\\cdots))$, that is, $f$ applied $m$ times to $n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A contest has $2025$ problems. Elmo initially knows that the answers are $1, 2, \\dots, 2025$ in some order. Every minute, Elmo selects a problem that has not been answered correctly, inputs an answer to it, and is told whether the answer is correct or incorrect. Elmo wins the contest if and only if he answers all $2025$ problems correctly in at most $2024$ attempts each. Can Elmo guarantee that he wins the contest?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be a positive integer and $p$ be a prime. In terms of $n$ and $p$, find the largest nonnegative integer $k$ for which there exists a polynomial $P(x)$ with integer coefficients satisfying the following conditions:\n\n• The $x^n$ coefficient of $P(x)$ is $1$.\n• $p^k$ divides $P(x)$ for all integers $x$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In convex quadrilateral $ABCD$ with $\\angle BAD = \\angle BCD < 90^\\circ$, diagonal $AC$ intersects the circumcircle of $\\triangle BCD$ at a point $P \\ne C$. Let $Q$, $R$, $S$, and $T$ be the reflections of $P$ across $\\overline{AB}$, $\\overline{BC}$, $\\overline{CD}$, and $\\overline{DA}$, respectively. Prove that the circumcircle of $\\triangle AQT$ is tangent to line $RS$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $k$ be a positive integer. Define a sequence of positive integers $a_1, a_2, \\dots$ by $a_1 = 1$ and $$a_{n+1} = a_n + k^{a_n}$$ for all positive integers $n$. Show that there exist infinitely many primes $p$ such that for any integer $r$, there exists an index $m$ such that $a_m \\equiv r \\pmod{p}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n \\ge 2$ be an integer. An $n \\times n$ grid is filled with the numbers $1$ through $n$ such that each row contains every number exactly once and any two adjacent rows differ by exactly two elements. Find all $n$ such that for any valid labeling of the grid, there exists a set of $n$ cells, each with a different number, such that no two are on the same row or column."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P_1$, $P_2$ and $P_3$ be distinct points on a circle $\\Omega$. For all positive integers $1 \\le i \\le 23$, define $P_{i+3}$ as the reflection of $P_i$ over line $P_{i+1}P_{i+2}$. Prove that $P_{20}P_{26}$ is tangent to $\\Omega$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "An $n \\times n$ Latin square is an $n \\times n$ grid of cells where each cell contains exactly one positive integer between $1$ and $n$, each row contains the numbers $1$ to $n$ in some order, and each column contains the numbers $1$ to $n$ in some order. Call four numbers stable if there are either exactly two or exactly four distinct values among them. For which positive integers $n$ is it possible to construct an $n \\times n$ Latin square such that every quadruple of four distinct cells forming the corners of a grid rectangle has entries which are stable?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all integers $n \\ge 2$ such that there exists an integer polynomial $P(x) \\in \\mathbb{Z}[x]$ of degree at most $0.9n$ such that the range of $P$ modulo $n$ is the same as the set of zeros of $P$ modulo $n$.\n\nThe range of $P$ modulo $n$ is the set of all integers $0 \\le y \\le n - 1$ such that there exists a positive integer $x$ where $P(x) - y$ is a multiple of $n$.\n\nThe set of zeros of $P$ modulo $n$ is the set of all integers $0 \\le x \\le n - 1$ such that $P(x)$ is a multiple of $n$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "For an integer $n$, let $\\tau(n)$ denote the number of positive integer divisors of $n$. For each positive integer $k$, let $S_k = \\{\\tau(k), \\tau(2k), \\tau(3k), \\cdots\\}$. If $S_a = S_b$ for two positive integers $a$ and $b$, prove that $\\tau(a^n) = \\tau(b^n)$ for all positive integers $n \\ge 1$.\n\nTwo sets are equal if and only if every number which appears in one set also appears in the other set."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $\\mathbb{N}$ denote the set of all positive integers. Find all functions $f\\colon \\mathbb{N} \\to \\mathbb{N}$ such that $$f\\left(f(n)^m\\right) = 2^{f(m)^n}$$ for all $m, n \\in \\mathbb{N}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n$ be a positive integer. There are $n(n+1)$ points chosen on the circumference of a circle, and each of these points is colored one of $n$ colors such that each color appears exactly $n + 1$ times. Elmo wishes to choose $n$ non-overlapping arcs of the circle such that both endpoints of each arc are selected points of the same color, and this color is different for each of the $n$ chosen arcs.\n\nProve that Elmo can select the arcs in at least $n + 1$ distinct ways."
+        }
+      ]
+    }
+  ]
+}
