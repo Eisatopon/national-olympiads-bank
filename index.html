@@ -1234,10 +1234,10 @@ const COUNTRIES = [
     { key: 'emc', name: 'European Math Cup', flag: '🌍', file: 'EMC-senior-problems.json', kind: 'years', scope: 'regional', full: "European Mathematical Cup (Senior category)" },
     { key: 'srmc', name: 'Silk Road', flag: '🌏', file: 'Silk-Road-problems.json', kind: 'years', scope: 'regional', full: 'Silk Road Mathematics Competition' },
     { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
-    { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments' },
-    { key: 'hmmti', name: 'HMMT February Individual', flag: '🇺🇸', file: 'HMMT-february-individual-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, February, individual subject tests" },
-    { key: 'hmmtg', name: 'HMMT February Guts', flag: '🇺🇸', file: 'HMMT-february-guts-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, February, Guts round" },
-    { key: 'hmmtn', name: 'HMMT November', flag: '🇺🇸', file: 'HMMT-november-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, November" },
+    { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments', group: 'HMMT' },
+    { key: 'hmmti', name: 'HMMT February Individual', flag: '🇺🇸', file: 'HMMT-february-individual-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, February, individual subject tests", group: 'HMMT' },
+    { key: 'hmmtg', name: 'HMMT February Guts', flag: '🇺🇸', file: 'HMMT-february-guts-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, February, Guts round", group: 'HMMT' },
+    { key: 'hmmtn', name: 'HMMT November', flag: '🇺🇸', file: 'HMMT-november-problems.json', kind: 'years', scope: 'tournaments', full: "Harvard-MIT Mathematics Tournament, November", group: 'HMMT' },
     { key: 'pumac', name: 'PUMaC', flag: '🇺🇸', file: 'PUMaC-problems.json', kind: 'years', scope: 'tournaments', full: "Princeton University Mathematics Competition (PUMaC), Division A individual tests" },
     { key: 'arml', name: 'ARML', flag: '🇺🇸', file: 'ARML-problems.json', kind: 'years', scope: 'tournaments', full: "American Regions Mathematics League (ARML)" },
     { key: 'elmo', name: 'ELMO', flag: '🇺🇸', file: 'ELMO-problems.json', kind: 'years', scope: 'tournaments', full: "ELMO (olympiad-style contest held during the US MOP)" },
@@ -1562,9 +1562,10 @@ function setEarly(on) {
 const openCountries = new Set();
 let entriesById = new Map(), entryOf = {};
 function gridEntries(list) {
-    if (state.tab !== 'national') return list.map(c => ({ id: c.key, members: [c] }));
+    // National rows group by country flag; in the other tabs only rows sharing a `group` (e.g. HMMT) are grouped.
+    const groupKey = c => state.tab === 'national' ? c.flag : (c.group || c.key);
     const byFlag = new Map();
-    list.forEach(c => { if (!byFlag.has(c.flag)) byFlag.set(c.flag, []); byFlag.get(c.flag).push(c); });
+    list.forEach(c => { const g = groupKey(c); if (!byFlag.has(g)) byFlag.set(g, []); byFlag.get(g).push(c); });
     return [...byFlag.values()].map(members => {
         if (members.length === 1) return { id: members[0].key, members };
         const words = members.map(c => c.name.split(' '));
