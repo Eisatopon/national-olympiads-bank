@@ -253,6 +253,7 @@
     --iom: #64748b; --iom-ink: #424d5c; --iom-tint: #e9edf2;
     --shgc: #475569; --shgc-ink: #2f3946; --shgc-tint: #e5e9ee;
     --rus: #b45f06; --rus-ink: #783f04; --rus-tint: #fbecd9;
+    --cplp: #7c3a2d; --cplp-ink: #5a2519; --cplp-tint: #f6e7e3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -441,6 +442,7 @@
 .f-iom { --f: var(--iom); --f-ink: var(--iom-ink); --f-tint: var(--iom-tint); }
 .f-shgc { --f: var(--shgc); --f-ink: var(--shgc-ink); --f-tint: var(--shgc-tint); }
 .f-rus { --f: var(--rus); --f-ink: var(--rus-ink); --f-tint: var(--rus-tint); }
+.f-cplp { --f: var(--cplp); --f-ink: var(--cplp-ink); --f-tint: var(--cplp-tint); }
 
 /* ==========================================================
    Base
@@ -955,7 +957,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-stpetersburg-mo';
+const DATA_VERSION = '20261016-omcplp-singapore';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1120,6 +1122,7 @@ REGION_OF.mpg = 'americas';
 REGION_OF.iom = 'world';
 REGION_OF.shgc = 'world';
 REGION_OF.rus = 'europe';
+REGION_OF.cplp = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1254,6 +1257,7 @@ const COUNTRIES = [
     { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad', group: 'IMO', groupName: 'IMO', sub: 'Contest problems' },
     { key: 'egmo', name: 'EGMO', flag: '🌐', file: 'EGMO-problems.json', kind: 'years', scope: 'international', full: "European Girls' Mathematical Olympiad" },
     { key: 'ofm', name: 'Francophone MO', flag: '🌐', file: 'OFM-problems.json', kind: 'years', scope: 'international', full: "Olympiade Francophone de Math\u00e9matiques (OFM), Senior" },
+    { key: 'cplp', name: 'OMCPLP', flag: '🌐', file: 'OMCPLP-problems.json', kind: 'years', scope: 'international', full: "Mathematical Olympiad of the Community of Portuguese Language Countries (OMCPLP)" },
     { key: 'isl', name: 'IMO Shortlist', flag: '🌐', file: 'IMO-shortlist-problems.json', kind: 'years', scope: 'international', full: 'IMO Shortlist: the problems proposed for each IMO (published after the following IMO)', group: 'IMO', groupName: 'IMO', sub: 'Shortlist' },
     { key: 'rmm', name: 'RMM', flag: '🌐', file: 'RMM-problems.json', kind: 'years', scope: 'international', full: "Romanian Masters of Mathematics" },
     { key: 'izho', name: 'Zhautykov (IZhO)', flag: '🌐', file: 'IZhO-problems.json', kind: 'years', scope: 'international', full: "International Zhautykov Olympiad in Mathematics" },
