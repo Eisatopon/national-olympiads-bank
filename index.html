@@ -259,6 +259,9 @@
     --bmt: #6b2d5c; --bmt-ink: #48193d; --bmt-tint: #f3e6ef;
     --icmc: #2f6f4f; --icmc-ink: #1d4a34; --icmc-tint: #e3f1ea;
     --mitib: #9a6b00; --mitib-ink: #664700; --mitib-tint: #f8efd9;
+    --igoi: #4a6b1f; --igoi-ink: #2f4512; --igoi-tint: #ebf2df;
+    --igoe: #7a5c1f; --igoe-ink: #513c12; --igoe-tint: #f3ecdc;
+    --stars: #1f4f7a; --stars-ink: #123352; --stars-tint: #e0eaf4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -453,6 +456,9 @@
 .f-bmt { --f: var(--bmt); --f-ink: var(--bmt-ink); --f-tint: var(--bmt-tint); }
 .f-icmc { --f: var(--icmc); --f-ink: var(--icmc-ink); --f-tint: var(--icmc-tint); }
 .f-mitib { --f: var(--mitib); --f-ink: var(--mitib-ink); --f-tint: var(--mitib-tint); }
+.f-igoi { --f: var(--igoi); --f-ink: var(--igoi-ink); --f-tint: var(--igoi-tint); }
+.f-igoe { --f: var(--igoe); --f-ink: var(--igoe-ink); --f-tint: var(--igoe-tint); }
+.f-stars { --f: var(--stars); --f-ink: var(--stars-ink); --f-tint: var(--stars-tint); }
 
 /* ==========================================================
    Base
@@ -967,7 +973,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-cmimc-smt-bmt-icmc-mitib';
+const DATA_VERSION = '20261016-igo-levels-stars';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1138,6 +1144,9 @@ REGION_OF.smt = 'americas';
 REGION_OF.bmt = 'americas';
 REGION_OF.icmc = 'other';
 REGION_OF.mitib = 'other';
+REGION_OF.igoi = 'world';
+REGION_OF.igoe = 'world';
+REGION_OF.stars = 'world';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1277,10 +1286,13 @@ const COUNTRIES = [
     { key: 'cplp', name: 'OMCPLP', flag: '🌐', file: 'OMCPLP-problems.json', kind: 'years', scope: 'international', full: "Mathematical Olympiad of the Community of Portuguese Language Countries (OMCPLP)" },
     { key: 'isl', name: 'IMO Shortlist', flag: '🌐', file: 'IMO-shortlist-problems.json', kind: 'years', scope: 'international', full: 'IMO Shortlist: the problems proposed for each IMO (published after the following IMO)', group: 'IMO', groupName: 'IMO', sub: 'Shortlist' },
     { key: 'rmm', name: 'RMM', flag: '🌐', file: 'RMM-problems.json', kind: 'years', scope: 'international', full: "Romanian Masters of Mathematics" },
+    { key: 'stars', name: 'Stars of Mathematics', flag: '🌐', file: 'Stars-of-mathematics-problems.json', kind: 'years', scope: 'international', full: "Stars of Mathematics (Romania), Senior level" },
     { key: 'izho', name: 'Zhautykov (IZhO)', flag: '🌐', file: 'IZhO-problems.json', kind: 'years', scope: 'international', full: "International Zhautykov Olympiad in Mathematics" },
     { key: 'shg', name: 'Sharygin (geometry)', flag: '🌐', file: 'Sharygin-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (final round, grade 10)", group: 'SHG', groupName: 'Sharygin (geometry)', sub: 'Final round' },
     { key: 'shgc', name: 'Sharygin Correspondence', flag: '🌐', file: 'Sharygin-correspondence-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (correspondence round)", group: 'SHG', groupName: 'Sharygin (geometry)', sub: 'Correspondence round' },
-    { key: 'igo', name: 'Iranian Geometry (IGO)', flag: '🌐', file: 'IGO-advanced-problems.json', kind: 'years', scope: 'international', full: "Iranian Geometry Olympiad (Advanced level)" },
+    { key: 'igo', name: 'Iranian Geometry (IGO)', flag: '🌐', file: 'IGO-advanced-problems.json', kind: 'years', scope: 'international', group: 'IGO', groupName: 'Iranian Geometry (IGO)', sub: 'Advanced', full: "Iranian Geometry Olympiad (Advanced level)" },
+    { key: 'igoi', name: 'IGO Intermediate', flag: '🌐', file: 'IGO-intermediate-problems.json', kind: 'years', scope: 'international', group: 'IGO', groupName: 'Iranian Geometry (IGO)', sub: 'Intermediate', full: "Iranian Geometry Olympiad (Intermediate level)" },
+    { key: 'igoe', name: 'IGO Elementary', flag: '🌐', file: 'IGO-elementary-problems.json', kind: 'years', scope: 'international', group: 'IGO', groupName: 'Iranian Geometry (IGO)', sub: 'Elementary', full: "Iranian Geometry Olympiad (Elementary level)" },
     { key: 'iom', name: 'Metropolises (IOM)', flag: '🌐', file: 'IOM-problems.json', kind: 'years', scope: 'international', full: "International Olympiad of Metropolises (Mathematics)" },
     { key: 'tot', name: 'Tournament of Towns', flag: '🌐', file: 'Tournament-of-towns-problems.json', kind: 'years', scope: 'international', full: "Tournament of Towns (Senior, A-level)" },
     { key: 'tuy', name: 'Tuymaada (senior)', flag: '🌐', file: 'Tuymaada-senior-problems.json', kind: 'years', scope: 'international', full: "Tuymaada International Olympiad (Senior League)" },
@@ -1699,7 +1711,7 @@ function gridEntries(list) {
         const subName = c => (n ? c.name.split(' ').slice(n).join(' ').replace(/^—\s*/, '').replace(/\s*\([^)]*\)$/, '') : c.name) || 'National olympiad';
         const names = new Map(members.map(c => [c.key, c.sub || (c.name === name ? 'National olympiad' : subName(c))]));
         // The national olympiad first, then the other finals, junior contests, then the selection tests.
-        const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior/.test(names.get(c.key)) ? 2 : 1;
+        const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior|Elementary/.test(names.get(c.key)) ? 2 : 1;
         members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key), 'en', { numeric: true }));
         return { id: 'g-' + members[0].key, name, flag: members[0].flag, members, sub: c => names.get(c.key) };
     });
