@@ -2200,6 +2200,7 @@ function headHtml(count) {
         <div class="res-actions">
             ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
             ${!state.country && state.tab === 'national' ? '<a class="btn btn-sm" href="available-pdfs.html#israel">Available PDFs</a>' : ''}
+            ${['gr', 'gra', 'grj', 'gre'].includes(state.country) ? '<a class="btn btn-sm" href="https://eisatopon.github.io/eisatopon-bank/" target="_blank" rel="noopener" title="Τράπεζα Θεμάτων ΕΜΕ: Θαλής, Ευκλείδης, Αρχιμήδης, in the original Greek">Greek originals (HMS bank) ↗</a>' : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
             ${wide || filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-copy-view>Copy link to this view</button>' : ''}
             ${wide ? `<button type="button" class="btn btn-sm" data-all-scope>${state.tab === 'national' ? 'All countries, all years' : 'All competitions, all years'}</button>` : ''}
