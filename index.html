@@ -13,15 +13,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="eisatopon.gr">
 <meta property="og:title" content="World Mathematical Olympiads Bank">
-<meta property="og:description" content="33,500+ mathematical olympiad problems from 72 countries (1938–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
+<meta property="og:description" content="46,000+ mathematical olympiad problems from 76 countries (1935–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
 <meta property="og:url" content="https://eisatopon.github.io/national-olympiads-bank/">
 <meta property="og:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 33,500+ problems, 72 countries, 1938–2026">
+<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 46,000+ problems, 76 countries, 1935–2026">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="World Mathematical Olympiads Bank">
-<meta name="twitter:description" content="33,500+ olympiad problems from 72 countries, 1938–2026. In English with LaTeX. Free, searchable, printable.">
+<meta name="twitter:description" content="46,000+ olympiad problems from 76 countries, 1935–2026. In English with LaTeX. Free, searchable, printable.">
 <meta name="twitter:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -246,6 +246,7 @@
     --inq: #c026d3; --inq-ink: #7e1a8a; --inq-tint: #f8e3fb;
     --jpp: #854d0e; --jpp-ink: #583308; --jpp-tint: #f8eedb;
     --grj: #4c1d95; --grj-ink: #321363; --grj-tint: #ede5fb;
+    --rum: #be4b0b; --rum-ink: #7e3207; --rum-tint: #fce7da;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -427,6 +428,7 @@
 .f-inq { --f: var(--inq); --f-ink: var(--inq-ink); --f-tint: var(--inq-tint); }
 .f-jpp { --f: var(--jpp); --f-ink: var(--jpp-ink); --f-tint: var(--jpp-tint); }
 .f-grj { --f: var(--grj); --f-ink: var(--grj-ink); --f-tint: var(--grj-tint); }
+.f-rum { --f: var(--rum); --f-ink: var(--rum-ink); --f-tint: var(--rum-tint); }
 
 /* ==========================================================
    Base
@@ -788,7 +790,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
             <div class="stat"><b>76</b><span>countries</span></div>
-            <div class="stat"><b>1938–2026</b><span>years</span></div>
+            <div class="stat"><b>1935–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
     </div>
@@ -941,8 +943,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-greece-euclid-withdrawn';
-const FIRST = 1938, LAST = 2026;
+const DATA_VERSION = '20261016-moscow-mo';
+const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
     gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
@@ -1099,6 +1101,7 @@ REGION_OF.rur = 'europe';
 REGION_OF.inq = 'asia';
 REGION_OF.jpp = 'asia';
 REGION_OF.grj = 'europe';
+REGION_OF.rum = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1130,6 +1133,7 @@ const COUNTRIES = [
     { key: 'tr', name: 'Turkey', flag: '🇹🇷', file: 'Turkey-tmo-problems.json', kind: 'years' },
     { key: 'ru', name: 'Russia', flag: '🇷🇺', file: 'Russia-aro-problems.json', kind: 'years' },
     { key: 'rur', name: 'Russia Regional', flag: '🇷🇺', file: 'Russia-regional-problems.json', kind: 'years', full: "All-Russian Olympiad, regional stage, grade 11" },
+    { key: 'rum', name: 'Russia Moscow MO', flag: '🇷🇺', file: 'Russia-moscow-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad (oldest grade)" },
     { key: 'pl', name: 'Poland', flag: '🇵🇱', file: 'Poland-pmo-problems.json', kind: 'years' },
     { key: 'es', name: 'Spain', flag: '🇪🇸', file: 'Spain-ome-problems.json', kind: 'years' },
     { key: 'at', name: 'Austria', flag: '🇦🇹', file: 'Austria-oemo-problems.json', kind: 'years' },
