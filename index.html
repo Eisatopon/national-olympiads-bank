@@ -635,6 +635,13 @@ mjx-container[display="true"] { margin: .6em 0 !important; overflow-x: auto; ove
 .btn-sm { min-height: 34px; padding: 0 12px; font-size: .88rem; }
 .btn.ask-ai { text-decoration: none; background: #245b86; border-color: #245b86; color: #fff; }
 .btn.ask-ai:hover { background: #194666; border-color: #194666; }
+.btn.like { gap: 4px; }
+.btn.like .lh { color: var(--muted, #6b7280); }
+.btn.like[aria-pressed="true"] { background: var(--card, #fff); color: inherit; border-color: #e11d26; }
+.btn.like[aria-pressed="true"] .lh { color: #e11d26; }
+.btn.like .lc:empty { display: none; }
+.p-views { font-size: 12px; color: var(--muted, #6b7280); white-space: nowrap; align-self: center; }
+.p-views:empty { display: none; }
 .btn:disabled { opacity: .45; cursor: not-allowed; pointer-events: none; }
 .add .on { display: none; }
 .add .off, .add[aria-pressed="true"] .on { display: inline-flex; align-items: center; gap: 8px; }
@@ -1326,6 +1333,59 @@ function typesetVisible(root) {
     }, {rootMargin: '300px 0px'});
     cards.forEach(c => typesetObserver.observe(c));
 }
+// Likes and view counts (Cloudflare Worker nob-stats + D1). Loaded after the cards are drawn, only for
+// cards near the screen, in one small batched request; if the service is slow or down nothing is shown.
+const STATS_URL = 'https://nob-stats.sokkorom.workers.dev';
+const statsStore = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } };
+const statsLiked = new Set(statsStore('nob-liked') || []);
+const statsCache = new Map();
+let statsObserver = null, statsQueue = new Set(), statsTimer = 0;
+function statsPaint(uid) {
+    const v = statsCache.get(uid) || [0, 0];
+    $$(`[data-like="${uid}"]`).forEach(b => { b.setAttribute('aria-pressed', String(statsLiked.has(uid))); b.querySelector('.lc').textContent = v[0] > 0 ? v[0] : ''; });
+    $$(`[data-views="${uid}"]`).forEach(e => { e.textContent = v[1] > 0 ? `${v[1].toLocaleString('en')} view${v[1] === 1 ? '' : 's'}` : ''; });
+}
+function statsFlush() {
+    statsTimer = 0;
+    const uids = [...statsQueue].slice(0, 60); statsQueue = new Set([...statsQueue].slice(60));
+    if (statsQueue.size) statsTimer = setTimeout(statsFlush, 50);
+    if (!uids.length) return;
+    fetch(`${STATS_URL}/s?u=${uids.map(encodeURIComponent).join(',')}`).then(r => r.ok ? r.json() : {}).then(d => {
+        uids.forEach(u => { statsCache.set(u, d[u] || [0, 0]); statsPaint(u); });
+    }).catch(() => {});
+    // One view per problem per browser per day.
+    const seen = statsStore('nob-seen') || {}, today = new Date().toISOString().slice(0, 10), fresh = uids.filter(u => seen[u] !== today);
+    if (fresh.length) {
+        fresh.forEach(u => { seen[u] = today; });
+        for (const k in seen) if (seen[k] !== today) delete seen[k];
+        statsStore('nob-seen', seen);
+        fetch(`${STATS_URL}/v`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({u: fresh})}).catch(() => {});
+    }
+}
+function statsObserve(root) {
+    if (statsObserver) { statsObserver.disconnect(); statsObserver = null; }
+    const cards = [...root.querySelectorAll('article.problem')];
+    if (!cards.length || typeof IntersectionObserver !== 'function') return;
+    statsObserver = new IntersectionObserver(entries => {
+        entries.filter(e => e.isIntersecting).forEach(e => {
+            statsObserver.unobserve(e.target);
+            const uid = e.target.id.slice(2);
+            if (statsCache.has(uid)) statsPaint(uid); else statsQueue.add(uid);
+        });
+        if (statsQueue.size && !statsTimer) statsTimer = setTimeout(statsFlush, 400);
+    }, {rootMargin: '100px 0px'});
+    cards.forEach(c => statsObserver.observe(c));
+}
+document.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-like]');
+    if (!b) return;
+    const uid = b.dataset.like, on = !statsLiked.has(uid), v = statsCache.get(uid) || [0, 0];
+    if (on) statsLiked.add(uid); else statsLiked.delete(uid);
+    statsStore('nob-liked', [...statsLiked]);
+    statsCache.set(uid, [Math.max(0, v[0] + (on ? 1 : -1)), v[1]]); statsPaint(uid);
+    fetch(`${STATS_URL}/l`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({u: uid, on})})
+        .then(r => r.ok ? r.json() : null).then(d => { if (d && typeof d.likes === 'number') { statsCache.set(uid, [d.likes, (statsCache.get(uid) || [0, 0])[1]]); statsPaint(uid); } }).catch(() => {});
+});
 // MathJax (about 1 MB) is loaded on the first formula that has to be shown, or on the first
 // scroll, tap or key press, so it does not compete with the first paint on phones.
 function ensureMathJax() {
@@ -2291,6 +2351,8 @@ function problemHtml(p) {
                 ${p.topic ? `<span class="p-tag">${esc(p.topic)}</span>` : ''}
             </div>
             <div class="p-actions">
+            <span class="p-views" data-views="${p.uid}" title="Views"></span>
+            <button type="button" class="btn btn-sm like" data-like="${p.uid}" aria-pressed="${typeof statsLiked !== 'undefined' && statsLiked.has(p.uid)}" aria-label="Like this problem" title="Like"><span class="lh" aria-hidden="true">♥</span><span class="lc"></span></button>
             ${aiActionHtml(p)}
             <button type="button" class="btn btn-sm add" data-toggle-uid="${p.uid}" aria-pressed="false">
                 <span class="off">${ICON.plus} Add</span>
@@ -2384,6 +2446,7 @@ function renderResults() {
     box().innerHTML = html;
     syncAddButtons();
     typesetVisible(box());
+    statsObserve(box());
     say(`${countText(total)}.`);
     if (typeof syncUrl === 'function') syncUrl();
 }
