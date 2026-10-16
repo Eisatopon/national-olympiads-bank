@@ -2,6 +2,96 @@
   "competition": "Australian Mathematical Olympiad",
   "years": [
     {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The sequence $a_1,a_2,a_3,\\ldots$ is defined by $a_1=0$ and, for $n\\geq 2$, $$a_n=\\max_{i=1,\\ldots,n-1}\\left\\{i+a_i+a_{n-i}\\right\\}.$$ (For example, $a_2=1$ and $a_3=3$.)\n\nDetermine $a_{200}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with $\\angle BAC<90^\\circ$. Let $k$ be the circle through $A$ that is tangent to $BC$ at $C$. Let $M$ be the midpoint of $BC$, and let $AM$ intersect $k$ a second time at $D$. Finally, let $BD$ (extended) intersect $k$ a second time at $E$.\n\nProve that $\\angle BAC=\\angle CAE$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Consider labelling the twenty vertices of a regular dodecahedron with twenty different integers. Each edge of the dodecahedron can then be labelled with the number $|a-b|$, where $a$ and $b$ are the labels of its endpoints. Let $e$ be the largest edge label.\n\nWhat is the smallest possible value of $e$ over all such vertex labellings?\n\n(A regular dodecahedron is a polyhedron with twelve identical regular pentagonal faces.)"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $\\mathbb{N}^+$ denote the set of positive integers, and let $\\mathbb{R}$ denote the set of real numbers.\n\nFind all functions $f:\\mathbb{N}^+\\to\\mathbb{R}$ that satisfy the following three conditions:\n\n(i) $f(1)=1$,\n\n(ii) $f(n)=0$ if $n$ contains the digit $2$ in its decimal representation,\n\n(iii) $f(mn)=f(m)f(n)$ for all positive integers $m,n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all non-integer real numbers $x$ such that $$x+\\frac{2014}{x}=\\lfloor x\\rfloor+\\frac{2014}{\\lfloor x\\rfloor}.$$ (Note that $\\lfloor x\\rfloor$ denotes the largest integer that is less than or equal to the real number $x$. For example, $\\lfloor 20.14\\rfloor=20$ and $\\lfloor -20.14\\rfloor=-21$.)"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $S$ be the set of all numbers $$a_0+10\\,a_1+10^2\\,a_2+\\cdots+10^n\\,a_n\\qquad(n=0,1,2,\\ldots)$$ where\n\n(i) $a_i$ is an integer satisfying $0\\leq a_i\\leq 9$ for $i=0,1,\\ldots,n$ and $a_n\\neq 0$, and\n\n(ii) $a_i<\\dfrac{a_{i-1}+a_{i+1}}{2}$ for $i=1,2,\\ldots,n-1$.\n\nDetermine the largest number in the set $S$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $ABC$ be a triangle. Let $P$ and $Q$ be points on the sides $AB$ and $AC$, respectively, such that $BC$ and $PQ$ are parallel. Let $D$ be a point inside triangle $APQ$. Let $E$ and $F$ be the intersections of $PQ$ with $BD$ and $CD$, respectively. Finally, let $O_E$ and $O_F$ be the circumcentres of triangle $DEQ$ and triangle $DFP$, respectively.\n\nProve that $O_EO_F$ is perpendicular to $AD$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "An $n\\times n$ square is tiled with $1\\times 1$ tiles, some of which are coloured. Sally is allowed to colour in any uncoloured tile that shares edges with at least three coloured tiles. She discovers that by repeating this process all tiles will eventually be coloured.\n\nShow that initially there must have been more than $\\frac{n^2}{3}$ coloured tiles."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Define the sequence $a_1,a_2,a_3,\\ldots$ by $a_1=4$, $a_2=7$, and $$a_{n+1}=2a_n-a_{n-1}+2,\\qquad\\text{for } n\\geq 2.$$ Prove that, for every positive integer $m$, the number $a_ma_{m+1}$ is a term of the sequence."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For each positive integer $n$, let $s(n)$ be the sum of its digits. We call a number nifty if it can be expressed as $n-s(n)$ for some positive integer $n$.\n\nHow many positive integers less than $10{,}000$ are nifty?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $S$ be the set of all two-digit numbers that do not contain the digit $0$. Two numbers in $S$ are called friends if their largest digits are equal and the difference between their smallest digits is $1$. For example, the numbers $68$ and $85$ are friends, the numbers $78$ and $88$ are friends, but the numbers $58$ and $75$ are not friends.\n\nDetermine the size of the largest possible subset of $S$ that contains no two numbers that are friends."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $\\Gamma$ be a fixed circle with centre $O$ and radius $r$. Let $B$ and $C$ be distinct fixed points on $\\Gamma$. Let $A$ be a variable point on $\\Gamma$, distinct from $B$ and $C$. Let $P$ be the point such that the midpoint of $OP$ is $A$. The line through $O$ parallel to $AB$ intersects the line through $P$ parallel to $AC$ at the point $D$.\n\n(a) Prove that, as $A$ varies over the points of the circle $\\Gamma$ (other than $B$ or $C$), $D$ lies on a fixed circle whose radius is greater than or equal to $r$.\n\n(b) Prove that equality occurs in part (a) if and only if $BC$ is a diameter of $\\Gamma$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle with $\\angle ACB=90^\\circ$. The points $D$ and $Z$ lie on the side $AB$ such that $CD$ is perpendicular to $AB$ and $AC=AZ$. The line that bisects $\\angle BAC$ meets $CB$ and $CZ$ at $X$ and $Y$, respectively.\n\nProve that the quadrilateral $BXYD$ is cyclic."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine the number of distinct real solutions of the equation $$(x-1)(x-3)(x-5)\\cdots(x-2015)=(x-2)(x-4)(x-6)\\cdots(x-2014).$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For each integer $n\\geq 2$, let $p(n)$ be the largest prime divisor of $n$.\n\nProve that there exist infinitely many positive integers $n$ such that $$\\big(p(n+1)-p(n)\\big)\\big(p(n)-p(n-1)\\big)>0.$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $n$ be a given integer greater than or equal to $3$. Maryam draws $n$ lines in the plane such that no two are parallel.\n\nFor each equilateral triangle formed by three of the lines, Maryam receives three apples. For each non-equilateral isosceles triangle formed by three of the lines, she receives one apple.\n\nWhat is the maximum number of apples that Maryam can obtain?"
+        }
+      ]
+    },
+    {
       "year": 2016,
       "problems": [
         {
@@ -223,6 +313,186 @@
           "day": 2,
           "number": 8,
           "problem": "Prove that for each integer $k$ satisfying $2 \\le k \\le 100$, there are positive integers $b_2, b_3, \\dots, b_{101}$ such that\n$$b_2^2 + b_3^3 + \\dots + b_k^k = b_{k+1}^{k+1} + b_{k+2}^{k+2} + \\dots + b_{101}^{101}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a$, $b$ and $c$ be positive integers. Vaughan arranges $abc$ identical white unit cubes into an $a\\times b\\times c$ rectangular prism and paints the outside of the prism red. After disassembling the prism back into unit cubes, he notices that the number of faces of the unit cubes that are red is the same as the number that are white.\n\nFind all values that the product $abc$ could take."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCDE$ be a convex pentagon such that $AC$ is perpendicular to $BD$ and $AD$ is perpendicular to $CE$.\n\nProve that $\\angle BAC=\\angle DAE$ if and only if triangles $ABC$ and $ADE$ have equal areas."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Each square in a $2021\\times 2021$ grid of unit squares can be coloured either red or blue. We can adjust the colours of the squares with a sequence of moves. In each move, we choose a rectangle composed of unit squares, and change all of its red squares to blue and all of its blue squares to red.\n\nA monochrome path in the grid is a sequence of distinct unit squares of the same colour, such that each shares an edge with the next. A colouring of the grid is called tree-like if, for any two unit squares $S$ and $T$ of the same colour, there is a unique monochrome path whose first square is $S$ and last square is $T$.\n\nDetermine the minimum number of moves required to reach a tree-like colouring when starting from a colouring in which all unit squares are red."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $P(x)$ and $Q(x)$ be polynomials with integer coefficients such that the leading coefficient of $P(x)$ is $1$. Suppose that $P(n)^n$ divides $Q(n)^{n+1}$ for infinitely many positive integers $n$.\n\nProve that $P(n)$ divides $Q(n)$ for infinitely many positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all pairs $(a,b)$ of real numbers that simultaneously satisfy the equations $$a^{20}+b^{20}=1\\qquad\\text{and}\\qquad a^{21}+b^{21}=1.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A school has $60$ students in year $2$ who will be divided into three classes of $20$ students. Each student writes a list of three other students that they hope to have in their class.\n\nCan the school always arrange for each student to be in the same class as at least one of the three students on their list?"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "The sequence $a_1,a_2,a_3,\\ldots$ is defined by $a_1=1$ and for $n=1,2,3,\\ldots$ $$a_{n+1}=a_n^2+1.$$ Prove that there exists a positive integer $n$ such that $a_n$ has a prime factor with more than $2021$ digits."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $ABC$ be a triangle with incentre $I$. Suppose that $D$ is a variable point on the circumcircle of $ABC$, on the arc $AB$ that does not contain $C$. Let $E$ be a point on the line segment $BC$ such that $\\angle ADI=\\angle IEC$.\n\nProve that, as $D$ varies, the line $DE$ passes through a fixed point."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that a convex pentagon with integer side lengths and an odd perimeter can have two right angles, but cannot have more than two right angles.\n\n(A polygon is convex if all of its interior angles are less than $180^\\circ$.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Suppose that $P$ is a point inside a convex hexagon $ABCDEF$ such that $PABC$, $PCDE$ and $PEFA$ are parallelograms of equal area.\n\nProve that $PBCD$, $PDEF$ and $PFAB$ are also parallelograms of equal area."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all polynomials $p(x)$ with real coefficients such that:\n\n• $p(x)>0$ for all positive real numbers $x$\n\n• $\\dfrac{1}{p(x)}+\\dfrac{1}{p(y)}+\\dfrac{1}{p(z)}=1$ for all positive real numbers $x,y,z$ satisfying $xyz=1$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $S$ be the set of points $(i,j)$ in the plane with $i,j\\in\\{1,2,\\ldots,2022\\}$ and $i<j$. We would like to colour each point in $S$ either red or blue, so that whenever points $(i,j)$ and $(j,k)$ have the same colour, the point $(i,k)$ also has that colour.\n\nHow many such colourings of $S$ are there?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $x_1,x_2,\\ldots,x_{2022}$ be a sequence of real numbers such that $x_1+x_2+\\cdots+x_{2022}>0$. Suppose that there exists a positive integer $k$ less than $2022$ such that:\n\n• the first $k$ terms of the sequence are less than or equal to zero\n\n• the remaining terms of the sequence are greater than or equal to zero.\n\nProve that $x_1+2x_2+3x_3+\\cdots+2022x_{2022}>0$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In the country of Biplania there are two airline companies: Redwing and Blueways. There are $20$ cities in Biplania, including Abadu and Ethora. Between any pair of cities, exactly one of the two airlines has direct flights and that airline flies in both directions between the two cities.\n\nArthur only flies on Redwing. He can travel from Abadu to Ethora in exactly four flights but not fewer.\n\nMartha only flies on Blueways.\n\nShow that Martha can travel between any two cities in Biplania in at most two flights."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For any positive integer $n$, let $f(n)$ denote the absolute value of the difference between $n$ and its nearest power of $2$. We define the stopping time of $n$ to be the smallest positive integer $k$ such that $f(\\cdots f(n)\\cdots)=0$, where $f$ is applied $k$ times. For example, $f(54)=10$, $f(10)=2$, and $f(2)=0$. So $f(f(f(54)))=0$ and the stopping time of $54$ is $3$.\n\n(a) What is the smallest positive integer whose stopping time is $2022$?\n\n(b) What is the maximum number of consecutive positive integers that have the same stopping time?"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $ABC$ be an acute scalene triangle with orthocentre $H$. The altitudes from $B$ and $C$ intersect the angle bisector of $\\angle BAC$ at $D$ and $E$ respectively. The tangents to the circumcircle of triangle $DEH$ at $D$ and $E$ intersect at $X$.\n\nProve that $BX=CX$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer greater than $2$. Mia is playing the following game. She writes the numbers $1,2,3,\\ldots,n$ in some order on the sides of a regular $n$-sided polygon, one number per side. Then, on each vertex of the polygon, she writes the sum of the numbers on the two sides that meet at that vertex. Mia wins if the $n$ numbers on the vertices can be written down in some order to form an arithmetic progression.\n\nFor which $n$ can Mia win this game?\n\n(In an arithmetic progression, there is a constant $d$ such that each term is equal to the previous term plus $d$.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A set of integers is wanless if the sum of its elements is $1$ less than a multiple of $4$.\n\nHow many subsets of $\\{1,2,3,\\ldots,2023\\}$ are wanless?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f(x)$ be a polynomial with real coefficients not all equal to zero.\n\nProve that there exists another polynomial $g(x)$ with real coefficients such that the polynomial $f(x)g(x)$ has exactly $2023$ more positive coefficients than negative coefficients."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle. Points $P$ and $Q$ lie on sides $AB$ and $AC$ respectively such that $PQ$ is parallel to $BC$. Let $D$ be the foot of the perpendicular from $A$ to $BC$. Let $M$ be the midpoint of $PQ$. Suppose that line segment $DM$ meets the circumcircle of triangle $APQ$ at a point $X$ inside triangle $ABC$.\n\nProve that $\\angle AXB=\\angle AXC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Some consecutive positive integers have been written on a whiteboard. Leigh circles some of them and underlines some of them so that one more number is circled than underlined. (Numbers can be both circled and underlined.) It turns out that, no matter how Leigh does this, the sum of the circled numbers is always greater than the sum of the underlined numbers.\n\nShow that there is at most one square number on the whiteboard."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be a fixed parallelogram with $AB$ parallel to $DC$, and $AD$ parallel to $BC$. A point $E$, different from $A$ and $B$, is chosen on the side $AB$. Let $K$ be the centre of the circle through $A$, $D$ and $E$. Let $L$ be the centre of the circle through $B$, $C$ and $E$.\n\nProve that no matter where $E$ is chosen, the length $KL$ is always the same."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $n$ be a positive integer. A positive integer $k$ is called a benefactor of $n$ if the positive divisors of $k$ can be partitioned into two sets $A$ and $B$ such that $n$ is equal to the sum of the elements of $A$ minus the sum of the elements of $B$. Note that $A$ or $B$ may be empty, and that the sum of the elements of the empty set is $0$.\n\nFor example, $15$ is a benefactor of $18$ because $(1+5+15)-(3)=18$.\n\nShow that every positive integer $n$ has at least $2023$ benefactors."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Sam is playing a game with $2023$ cards labelled $1,2,3,\\ldots,2023$. The cards are shuffled and placed in a pile face down. On each turn, Sam thinks of a positive integer $n$ and then looks at the number on the topmost card. If the number on the card is at least $n$, then Sam gains $n$ points; otherwise Sam gains $0$ points. Then the card is discarded. This process is repeated until there are no cards left in the pile.\n\nFind the largest integer $P$ such that Sam can guarantee a total of at least $P$ points from this game, no matter how the cards were originally shuffled."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all triples $(k,m,n)$ of positive integers satisfying $$k!+m!=k!\\times n!.$$ (If $n$ is a positive integer, then $n!=1\\times 2\\times 3\\times\\cdots\\times(n-1)\\times n$.)"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral. Point $P$ is on line $CB$ such that $CP=CA$ and $B$ lies between $C$ and $P$. Point $Q$ is on line $CD$ such that $CQ=CA$ and $D$ lies between $C$ and $Q$.\n\nProve that the incentre of triangle $ABD$ lies on line $PQ$.\n\n(The incentre of a triangle is the point where its angle bisectors intersect.)"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a_1,a_2,\\ldots,a_n$ be positive real numbers, where $n\\geq 2$. For each permutation $(b_1,b_2,\\ldots,b_n)$ of $(a_1,a_2,\\ldots,a_n)$, define its score to be $$\\frac{b_1^2}{b_2}+\\frac{b_2^2}{b_3}+\\cdots+\\frac{b_{n-1}^2}{b_n}.$$ Show that there exist two permutations of $(a_1,a_2,\\ldots,a_n)$ whose scores differ by at least $3|a_1-a_n|$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Consider a $2024\\times 2024$ grid of unit squares. Two distinct unit squares are adjacent if they share a common side. Each unit square is to be coloured either black or white. Such a colouring is called evenish if every unit square in the grid is adjacent to an even number of black unit squares.\n\nDetermine the number of evenish colourings."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The sequence of positive integers $a_1,a_2,\\ldots,a_{2025}$ is defined as follows:\n\n• $a_1=2^{2024}+1$\n\n• for each $n=1,2,\\ldots,2024$, define $a_{n+1}$ to be the largest prime divisor of $a_n^2-1$.\n\nDetermine the value of $a_{2024}+a_{2025}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a school, there are $1000$ students in each year level, from Year $1$ to Year $12$. The school has $12\\,000$ lockers, numbered from $1$ to $12\\,000$. The school principal requests that each student is assigned their own locker, so that the following condition is satisfied:\n\nFor every pair of students in the same year level, the difference between their locker numbers must be divisible by their year-level number.\n\nCan the principal's request be satisfied?"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $ABCD$ be a square and let $P$ be a point on side $AB$. The point $Q$ lies outside the square such that $\\angle ABQ=\\angle ADP$ and $\\angle AQB=90^\\circ$. The point $R$ lies on the side $BC$ such that $\\angle BAR=\\angle ADQ$.\n\nProve that the lines $AR$, $CQ$ and $DP$ pass through a common point."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $r=0.d_0d_1d_2\\ldots$ be a real number (written in decimal form) where $d_0,d_1,d_2,\\ldots$ is an infinite sequence of digits.\n\nFor each integer $n\\geq 0$, let $$e_n=10^nd_n+10^{n-1}d_{n-1}+\\cdots+10d_1+d_0$$ be the number formed by writing the digits $d_n,d_{n-1},\\ldots,d_1,d_0$ in order from left to right. (Leading zeros are permitted.)\n\nSuppose that $d_0=6$ and, for each integer $n\\geq 0$, the number $e_n$ is equal to the number formed by the rightmost $n+1$ digits of $e_n^2$.\n\nProve that $r$ is irrational."
         }
       ]
     }
