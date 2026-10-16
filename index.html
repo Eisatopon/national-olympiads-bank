@@ -245,7 +245,6 @@
     --rur: #57534e; --rur-ink: #3a3734; --rur-tint: #ecebea;
     --inq: #c026d3; --inq-ink: #7e1a8a; --inq-tint: #f8e3fb;
     --jpp: #854d0e; --jpp-ink: #583308; --jpp-tint: #f8eedb;
-    --gre: #7c2d12; --gre-ink: #521d0b; --gre-tint: #fbe9e1;
     --grj: #4c1d95; --grj-ink: #321363; --grj-tint: #ede5fb;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
@@ -427,7 +426,6 @@
 .f-rur { --f: var(--rur); --f-ink: var(--rur-ink); --f-tint: var(--rur-tint); }
 .f-inq { --f: var(--inq); --f-ink: var(--inq-ink); --f-tint: var(--inq-tint); }
 .f-jpp { --f: var(--jpp); --f-ink: var(--jpp-ink); --f-tint: var(--jpp-tint); }
-.f-gre { --f: var(--gre); --f-ink: var(--gre-ink); --f-tint: var(--gre-tint); }
 .f-grj { --f: var(--grj); --f-ink: var(--grj-ink); --f-tint: var(--grj-tint); }
 
 /* ==========================================================
@@ -943,7 +941,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-greece-archimedes-junior';
+const DATA_VERSION = '20261016-greece-euclid-withdrawn';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1100,7 +1098,6 @@ REGION_OF.ro9 = 'europe';
 REGION_OF.rur = 'europe';
 REGION_OF.inq = 'asia';
 REGION_OF.jpp = 'asia';
-REGION_OF.gre = 'europe';
 REGION_OF.grj = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
@@ -1190,7 +1187,6 @@ const COUNTRIES = [
     { key: 'thst', name: 'Thailand TSTST', flag: '🇹🇭', file: 'Thailand-tstst-problems.json', kind: 'years' },
     { key: 'clf', name: 'Chile Final', flag: '🇨🇱', file: 'Chile-final-problems.json', kind: 'years' },
     { key: 'gra', name: 'Greece Archimedes', flag: '🇬🇷', file: 'Greece-archimedes-problems.json', kind: 'years' },
-    { key: 'gre', name: 'Greece Euclid', flag: '🇬🇷', file: 'Greece-euclid-problems.json', kind: 'years', full: "Hellenic Mathematical Society \u2014 Euclid competition (Grade 12)" },
     { key: 'grj', name: 'Greece Archimedes Junior', flag: '🇬🇷', file: 'Greece-archimedes-junior-problems.json', kind: 'years', full: "Greek Mathematical Olympiad \"Archimedes\" (junior category), Hellenic Mathematical Society" },
     { key: 'su', name: 'USSR All-Union', flag: '☭', file: 'USSR-allunion-problems.json', kind: 'years' },
     { key: 'irt', name: 'Iran TST', flag: '🇮🇷', file: 'Iran-tst-problems.json', kind: 'years' },
@@ -2208,7 +2204,7 @@ function headHtml(count) {
         <div class="res-actions">
             ${['th', 'tht', 'thst'].includes(state.country) ? '<a class="btn btn-sm" href="thailand-pdfs.html">Available PDFs</a>' : ['be', 'clf', 'cl', 'itt', 'se', 'uy'].includes(state.country) ? `<a class="btn btn-sm" href="available-pdfs.html#${state.country}">Available PDFs</a>` : ''}
             ${!state.country && state.tab === 'national' ? '<a class="btn btn-sm" href="available-pdfs.html#israel">Available PDFs</a>' : ''}
-            ${['gr', 'gra', 'grj', 'gre'].includes(state.country) ? '<a class="btn btn-sm" href="https://eisatopon.github.io/eisatopon-bank/" target="_blank" rel="noopener" title="Τράπεζα Θεμάτων ΕΜΕ: Θαλής, Ευκλείδης, Αρχιμήδης, in the original Greek">Greek originals (HMS bank) ↗</a>' : ''}
+            ${['gr', 'gra', 'grj'].includes(state.country) ? '<a class="btn btn-sm" href="https://eisatopon.github.io/eisatopon-bank/" target="_blank" rel="noopener" title="Τράπεζα Θεμάτων ΕΜΕ: Θαλής, Ευκλείδης, Αρχιμήδης, in the original Greek">Greek originals (HMS bank) ↗</a>' : ''}
             ${filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-clear-filters>Clear filters</button>' : ''}
             ${wide || filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-copy-view>Copy link to this view</button>' : ''}
             ${wide ? `<button type="button" class="btn btn-sm" data-all-scope>${state.tab === 'national' ? 'All countries, all years' : 'All competitions, all years'}</button>` : ''}
