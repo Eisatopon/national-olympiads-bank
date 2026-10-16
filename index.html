@@ -252,6 +252,7 @@
     --mpg: #db2777; --mpg-ink: #91194e; --mpg-tint: #fde4ef;
     --iom: #64748b; --iom-ink: #424d5c; --iom-tint: #e9edf2;
     --shgc: #475569; --shgc-ink: #2f3946; --shgc-tint: #e5e9ee;
+    --rus: #b45f06; --rus-ink: #783f04; --rus-tint: #fbecd9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -439,6 +440,7 @@
 .f-mpg { --f: var(--mpg); --f-ink: var(--mpg-ink); --f-tint: var(--mpg-tint); }
 .f-iom { --f: var(--iom); --f-ink: var(--iom-ink); --f-tint: var(--iom-tint); }
 .f-shgc { --f: var(--shgc); --f-ink: var(--shgc-ink); --f-tint: var(--shgc-tint); }
+.f-rus { --f: var(--rus); --f-ink: var(--rus-ink); --f-tint: var(--rus-tint); }
 
 /* ==========================================================
    Base
@@ -953,7 +955,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-iom-sharygin-corr';
+const DATA_VERSION = '20261016-stpetersburg-mo';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1117,6 +1119,7 @@ REGION_OF.bamo = 'americas';
 REGION_OF.mpg = 'americas';
 REGION_OF.iom = 'world';
 REGION_OF.shgc = 'world';
+REGION_OF.rus = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1149,6 +1152,7 @@ const COUNTRIES = [
     { key: 'ru', name: 'Russia', flag: '🇷🇺', file: 'Russia-aro-problems.json', kind: 'years' },
     { key: 'rur', name: 'Russia Regional', flag: '🇷🇺', file: 'Russia-regional-problems.json', kind: 'years', full: "All-Russian Olympiad, regional stage, grade 11" },
     { key: 'rum', name: 'Russia Moscow MO', flag: '🇷🇺', file: 'Russia-moscow-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad (oldest grade)" },
+    { key: 'rus', name: 'Russia St. Petersburg MO', flag: '🇷🇺', file: 'Russia-stpetersburg-problems.json', kind: 'years', full: "St. Petersburg (Leningrad) Mathematical Olympiad (oldest grade)" },
     { key: 'pl', name: 'Poland', flag: '🇵🇱', file: 'Poland-pmo-problems.json', kind: 'years' },
     { key: 'es', name: 'Spain', flag: '🇪🇸', file: 'Spain-ome-problems.json', kind: 'years' },
     { key: 'at', name: 'Austria', flag: '🇦🇹', file: 'Austria-oemo-problems.json', kind: 'years' },
