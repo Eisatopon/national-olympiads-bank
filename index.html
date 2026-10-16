@@ -254,6 +254,11 @@
     --shgc: #475569; --shgc-ink: #2f3946; --shgc-tint: #e5e9ee;
     --rus: #b45f06; --rus-ink: #783f04; --rus-tint: #fbecd9;
     --cplp: #7c3a2d; --cplp-ink: #5a2519; --cplp-tint: #f6e7e3;
+    --cmimc: #8a3b12; --cmimc-ink: #5e270b; --cmimc-tint: #f7e9e1;
+    --smt: #3d5a80; --smt-ink: #263a54; --smt-tint: #e5ecf4;
+    --bmt: #6b2d5c; --bmt-ink: #48193d; --bmt-tint: #f3e6ef;
+    --icmc: #2f6f4f; --icmc-ink: #1d4a34; --icmc-tint: #e3f1ea;
+    --mitib: #9a6b00; --mitib-ink: #664700; --mitib-tint: #f8efd9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -443,6 +448,11 @@
 .f-shgc { --f: var(--shgc); --f-ink: var(--shgc-ink); --f-tint: var(--shgc-tint); }
 .f-rus { --f: var(--rus); --f-ink: var(--rus-ink); --f-tint: var(--rus-tint); }
 .f-cplp { --f: var(--cplp); --f-ink: var(--cplp-ink); --f-tint: var(--cplp-tint); }
+.f-cmimc { --f: var(--cmimc); --f-ink: var(--cmimc-ink); --f-tint: var(--cmimc-tint); }
+.f-smt { --f: var(--smt); --f-ink: var(--smt-ink); --f-tint: var(--smt-tint); }
+.f-bmt { --f: var(--bmt); --f-ink: var(--bmt-ink); --f-tint: var(--bmt-tint); }
+.f-icmc { --f: var(--icmc); --f-ink: var(--icmc-ink); --f-tint: var(--icmc-tint); }
+.f-mitib { --f: var(--mitib); --f-ink: var(--mitib-ink); --f-tint: var(--mitib-tint); }
 
 /* ==========================================================
    Base
@@ -957,7 +967,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-singapore-2021-withdrawn';
+const DATA_VERSION = '20261016-cmimc-smt-bmt-icmc-mitib';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1123,6 +1133,11 @@ REGION_OF.iom = 'world';
 REGION_OF.shgc = 'world';
 REGION_OF.rus = 'europe';
 REGION_OF.cplp = 'world';
+REGION_OF.cmimc = 'americas';
+REGION_OF.smt = 'americas';
+REGION_OF.bmt = 'americas';
+REGION_OF.icmc = 'other';
+REGION_OF.mitib = 'other';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1252,6 +1267,8 @@ const COUNTRIES = [
     { key: 'vtrmc', name: 'Virginia Tech', flag: '🎓', file: 'undergraduate/VTRMC-problems.json', kind: 'years', scope: 'undergraduate', full: 'Virginia Tech Regional Mathematics Contest' },
     { key: 'obmu', name: 'OBMU', flag: '🎓', file: 'undergraduate/OBMU-problems.json', kind: 'years', scope: 'undergraduate', full: "Brazilian Undergraduate Mathematical Olympiad (OBM n\u00edvel universit\u00e1rio)" },
     { key: 'ciim', name: 'CIIM', flag: '🎓', file: 'undergraduate/CIIM-problems.json', kind: 'years', scope: 'undergraduate', full: "Iberoamerican Interuniversity Mathematics Competition (CIIM)" },
+    { key: 'icmc', name: 'ICMC', flag: '🎓', file: 'undergraduate/ICMC-problems.json', kind: 'years', scope: 'undergraduate', full: "Imperial College Mathematics Competition (ICMC), Individual Rounds One and Two" },
+    { key: 'mitib', name: 'MIT Integration Bee', flag: '🎓', file: 'undergraduate/MIT-integration-bee-problems.json', kind: 'years', scope: 'undergraduate', full: "MIT Integration Bee, Qualifying Test" },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Junior' },
     { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad', group: 'IMO', groupName: 'IMO', sub: 'Contest problems' },
@@ -1291,6 +1308,9 @@ const COUNTRIES = [
     { key: 'usamts', name: 'USAMTS', flag: '🇺🇸', file: 'USAMTS-problems.json', kind: 'years', scope: 'tournaments', full: "USA Mathematical Talent Search (USAMTS)" },
     { key: 'bamo', name: 'BAMO', flag: '🇺🇸', file: 'BAMO-problems.json', kind: 'years', scope: 'tournaments', full: "Bay Area Mathematical Olympiad (BAMO-12)" },
     { key: 'mpg', name: 'Math Prize for Girls', flag: '🇺🇸', file: 'MathPrizeGirls-problems.json', kind: 'years', scope: 'tournaments', full: "Math Prize for Girls" },
+    { key: 'cmimc', name: 'CMIMC', flag: '🇺🇸', file: 'CMIMC-problems.json', kind: 'years', scope: 'tournaments', full: "Carnegie Mellon Informatics and Mathematics Competition (CMIMC), individual subject rounds" },
+    { key: 'smt', name: 'Stanford MT', flag: '🇺🇸', file: 'SMT-problems.json', kind: 'years', scope: 'tournaments', full: "Stanford Math Tournament (SMT), individual subject tests" },
+    { key: 'bmt', name: 'Berkeley MT', flag: '🇺🇸', file: 'BMT-problems.json', kind: 'years', scope: 'tournaments', full: "Berkeley Math Tournament (BMT), individual tests" },
     { key: 'elmo', name: 'ELMO', flag: '🇺🇸', file: 'ELMO-problems.json', kind: 'years', scope: 'tournaments', full: "ELMO (olympiad-style contest held during the US MOP)" },
     { key: 'usemo', name: 'USEMO', flag: '🇺🇸', file: 'USEMO-problems.json', kind: 'years', scope: 'tournaments', full: "United States Ersatz Math Olympiad (USEMO)" },
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },
