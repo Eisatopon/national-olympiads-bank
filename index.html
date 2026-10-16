@@ -1207,12 +1207,12 @@ const COUNTRIES = [
     { key: 'vtrmc', name: 'Virginia Tech', flag: '🎓', file: 'undergraduate/VTRMC-problems.json', kind: 'years', scope: 'undergraduate', full: 'Virginia Tech Regional Mathematics Contest' },
     { key: 'obmu', name: 'OBMU', flag: '🎓', file: 'undergraduate/OBMU-problems.json', kind: 'years', scope: 'undergraduate', full: "Brazilian Undergraduate Mathematical Olympiad (OBM n\u00edvel universit\u00e1rio)" },
     { key: 'ciim', name: 'CIIM', flag: '🎓', file: 'undergraduate/CIIM-problems.json', kind: 'years', scope: 'undergraduate', full: "Iberoamerican Interuniversity Mathematics Competition (CIIM)" },
-    { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional' },
-    { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional' },
-    { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad' },
+    { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior' },
+    { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Junior' },
+    { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad', group: 'IMO', groupName: 'IMO', sub: 'Contest problems' },
     { key: 'egmo', name: 'EGMO', flag: '🌐', file: 'EGMO-problems.json', kind: 'years', scope: 'international', full: "European Girls' Mathematical Olympiad" },
     { key: 'ofm', name: 'Francophone MO', flag: '🌐', file: 'OFM-problems.json', kind: 'years', scope: 'international', full: "Olympiade Francophone de Math\u00e9matiques (OFM), Senior" },
-    { key: 'isl', name: 'IMO Shortlist', flag: '🌐', file: 'IMO-shortlist-problems.json', kind: 'years', scope: 'international', full: 'IMO Shortlist: the problems proposed for each IMO (published after the following IMO)' },
+    { key: 'isl', name: 'IMO Shortlist', flag: '🌐', file: 'IMO-shortlist-problems.json', kind: 'years', scope: 'international', full: 'IMO Shortlist: the problems proposed for each IMO (published after the following IMO)', group: 'IMO', groupName: 'IMO', sub: 'Shortlist' },
     { key: 'rmm', name: 'RMM', flag: '🌐', file: 'RMM-problems.json', kind: 'years', scope: 'international', full: "Romanian Masters of Mathematics" },
     { key: 'izho', name: 'Zhautykov (IZhO)', flag: '🌐', file: 'IZhO-problems.json', kind: 'years', scope: 'international', full: "International Zhautykov Olympiad in Mathematics" },
     { key: 'shg', name: 'Sharygin (geometry)', flag: '🌐', file: 'Sharygin-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (final round, grade 10)" },
@@ -1571,9 +1571,9 @@ function gridEntries(list) {
         const words = members.map(c => c.name.split(' '));
         let n = 0;
         while (words.every(w => w.length > n && w[n] === words[0][n])) n++;
-        const name = n ? words[0].slice(0, n).join(' ').replace(/\s*—$/, '') : members[0].name;
+        const name = (members.find(c => c.groupName) || {}).groupName || (n ? words[0].slice(0, n).join(' ').replace(/\s*—$/, '') : members[0].name);
         const subName = c => (n ? c.name.split(' ').slice(n).join(' ').replace(/^—\s*/, '').replace(/\s*\([^)]*\)$/, '') : c.name) || 'National olympiad';
-        const names = new Map(members.map(c => [c.key, c.name === name ? 'National olympiad' : subName(c)]));
+        const names = new Map(members.map(c => [c.key, c.sub || (c.name === name ? 'National olympiad' : subName(c))]));
         // The national olympiad first, then the other finals, junior contests, then the selection tests.
         const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior/.test(names.get(c.key)) ? 2 : 1;
         members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key), 'en', { numeric: true }));
