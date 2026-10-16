@@ -1224,8 +1224,8 @@ const COUNTRIES = [
     { key: 'memo', name: 'MEMO', flag: '🇪🇺', file: 'MEMO-problems.json', kind: 'years', scope: 'regional', full: 'Middle European Mathematical Olympiad' },
     { key: 'bx', name: 'Benelux MO', flag: '🇪🇺', file: 'Benelux-bxmo-problems.json', kind: 'years', scope: 'regional', full: 'Benelux Mathematical Olympiad' },
     { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional', full: 'Nordic Mathematical Contest' },
-    { key: 'cps', name: 'CPS Match', flag: '🇪🇺', file: 'Cps-match-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Match' },
-    { key: 'cpsj', name: 'CPS Junior', flag: '🇪🇺', file: 'Cps-junior-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Junior Match' },
+    { key: 'cps', name: 'CPS Match', flag: '🇪🇺', file: 'Cps-match-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Match', group: 'CPS' },
+    { key: 'cpsj', name: 'CPS Junior', flag: '🇪🇺', file: 'Cps-junior-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Junior Match', group: 'CPS' },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
     { key: 'rio', name: 'Rioplatense', flag: '🌎', file: 'Rioplatense-problems.json', kind: 'years', scope: 'regional', full: "Olimp\u00edada Matem\u00e1tica Rioplatense (Level 3)" },
     { key: 'cono', name: 'Cono Sur MO', flag: '🌎', file: 'Cono-sur-problems.json', kind: 'years', scope: 'regional' },
@@ -1574,8 +1574,8 @@ function gridEntries(list) {
         const name = n ? words[0].slice(0, n).join(' ').replace(/\s*—$/, '') : members[0].name;
         const subName = c => (n ? c.name.split(' ').slice(n).join(' ').replace(/^—\s*/, '').replace(/\s*\([^)]*\)$/, '') : c.name) || 'National olympiad';
         const names = new Map(members.map(c => [c.key, c.name === name ? 'National olympiad' : subName(c)]));
-        // The national olympiad first, then the other finals, then the selection tests.
-        const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 2 : 1;
+        // The national olympiad first, then the other finals, junior contests, then the selection tests.
+        const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior/.test(names.get(c.key)) ? 2 : 1;
         members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key), 'en', { numeric: true }));
         return { id: 'g-' + members[0].key, name, flag: members[0].flag, members, sub: c => names.get(c.key) };
     });
