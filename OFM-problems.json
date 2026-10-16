@@ -1,0 +1,152 @@
+{
+  "competition": "Olympiade Francophone de Mathématiques (Francophone Mathematical Olympiad), Senior",
+  "years": [
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle all of whose angles are acute, and such that $AB < AC$. Let $D$, $E$ and $F$ be the points of contact of the incircle of triangle $ABC$ with the segments $[BC]$, $[CA]$ and $[AB]$, respectively. Let $G$ be the point of the line $(AB)$ such that the lines $(DG)$ and $(EF)$ are perpendicular. Finally, let $X$ be the point of intersection, other than $A$, of the circumcircles of triangles $ABC$ and $AEF$.\n\nProve that the points $B$, $D$, $G$ and $X$ lie on a common circle."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1, a_2, \\ldots, a_n$ be a finite sequence of natural numbers. Its subsequences are the sequences of the form $a_i, a_{i+1}, \\ldots, a_j$ such that $1 \\leqslant i \\leqslant j \\leqslant n$. Two subsequences are equal if they have the same length and are formed of the same terms; in other words, the subsequences $a_i, a_{i+1}, \\ldots, a_j$ and $a_u, a_{u+1}, \\ldots, a_v$ are considered equal if and only if $j - i = v - u$ and $a_{i+k} = a_{u+k}$ for every integer $k$ such that $0 \\leqslant k \\leqslant j - i$. Finally, we say that a subsequence $a_i, a_{i+1}, \\ldots, a_j$ is palindromic if it reads the same in both directions, that is, if $a_{i+k} = a_{j-k}$ for every integer $k$ such that $0 \\leqslant k \\leqslant j - i$.\n\nWhat is the largest number of distinct palindromic subsequences that such a sequence of length $n$ can contain?"
+        },
+        {
+          "number": 3,
+          "problem": "A sequence of real numbers $a_1, a_2, a_3, \\ldots$ is defined by $a_1 = 3/2$, and then\n$$a_{n+1} = 1 + \\frac{n}{a_n}$$\nfor every integer $n \\geqslant 1$.\n\nFind an integer $k \\geqslant 1$ such that $2020 \\leqslant a_k < 2021$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb{N}_{\\geqslant 1}$ denote the set of integers greater than or equal to $1$. Let $a_1, a_2, a_3, \\ldots$ be a sequence of elements of $\\mathbb{N}_{\\geqslant 1}$, and let $m$ be an integer. Suppose that, for every finite non-empty subset $S$ of $\\mathbb{N}_{\\geqslant 1}$, the number\n$$-1 + \\prod_{k \\in S} a_k$$\nis a prime number.\n\nProve that, among the integers $a_1, a_2, a_3, \\ldots$, only finitely many have fewer than $m$ distinct prime factors.\n\nRemark: the notation $\\prod_{k \\in S} a_k$ denotes the product of all the integers $a_k$ for which $k \\in S$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1, a_2, a_3, \\ldots$ and $b_1, b_2, b_3, \\ldots$ be two sequences of positive integers such that $a_{n+2} = a_{n+1} + a_n$ and $b_{n+2} = b_{n+1} + b_n$ for every $n \\geqslant 1$. Suppose that $a_n$ divides $b_n$ for infinitely many integers $n \\geqslant 1$. Prove that there exists an integer $c$ such that $b_n = c a_n$ for every $n \\geqslant 1$."
+        },
+        {
+          "number": 2,
+          "problem": "Albert and Béatrice play a game. $2021$ pebbles have been placed on a table. Taking turns, and starting with Albert, they remove some number of pebbles from the table according to the following rule. On turn $n \\geqslant 1$, the player whose turn it is, that is, Albert if $n$ is odd and Béatrice if $n$ is even, may remove a number of pebbles between $1$ and $n$. On the first turn, Albert must therefore remove $1$ pebble; on the second turn, Béatrice may remove $1$ or $2$ pebbles; on the third turn, Albert may remove $1$, $2$ or $3$, and so on. The player who removes the last pebble from the table loses the game. Determine which of the two players has a winning strategy."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABCD$ be a square and $\\Gamma$ its incircle. Let $M$ be the midpoint of the segment $[CD]$. Let $P$ be a point on the segment $[AB]$ different from $B$. The line through $M$ parallel to the line $(DP)$ meets $\\Gamma$ a second time at $E$. The lines $(CP)$ and $(AD)$ meet at $F$. Prove that the line $(EF)$ is tangent to the circle $\\Gamma$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb{N}_{\\geqslant 1}$ denote the set of integers greater than or equal to $1$. Find all functions $f\\colon \\mathbb{N}_{\\geqslant 1} \\to \\mathbb{N}_{\\geqslant 1}$ such that the following three conditions are satisfied for all integers $m \\geqslant 1$ and $n \\geqslant 1$:\n\n(a) $n = (f(2n) - f(n))(2f(n) - f(2n))$,\n\n(b) $f(m)f(n) - f(mn) = (f(2m) - f(m))(2f(n) - f(2n)) + (f(2n) - f(n))(2f(m) - f(2m))$,\n\n(c) $m - n$ divides $f(2m) - f(2n)$ if $m$ and $n$ are two distinct odd primes."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\mathbb{Z}$ denote the set of integers. Find all functions $f\\colon \\mathbb{Z} \\to \\mathbb{Z}$ such that, for all integers $m$ and $n$:\n$$f(m+n) + f(m)f(n) = n^2(f(m)+1) + m^2(f(n)+1) + mn(2 - mn).$$"
+        },
+        {
+          "number": 2,
+          "problem": "To log in to the OFM website, Alice must choose a password. It must consist of $n$ characters chosen among the following $27$ characters:\n$$A, B, C, \\ldots, Y, Z, \\#.$$\nA password $m$ is called redundant if one can colour in red and blue a block of consecutive letters of $m$ in such a way that the word formed by the red letters is identical to the word formed by the blue letters. For example, the password $H\\#ZBZJBJZ$ is redundant, since it contains the block $ZBZJBJ$, in which the word $ZBJ$ appears both in blue and in red. On the other hand, the password $ABCACB$ is not redundant.\n\nProve that, for every integer $n \\geqslant 1$, there exist at least $18^n$ passwords of length $n$, that is, consisting of $n$ characters each, that are not redundant."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle and $\\Gamma$ its circumcircle. Let $\\Delta$ be the tangent to the circle $\\Gamma$ at $A$. Let $\\Gamma_1$ be a circle tangent to the lines $\\Delta$, $(AB)$ and $(BC)$, and $E$ its point of tangency with the line $(AB)$. Let $\\Gamma_2$ be a circle tangent to the lines $\\Delta$, $(AC)$ and $(BC)$, and $F$ its point of tangency with the line $(AC)$.\n\nSuppose that $E$ and $F$ lie on the segments $[AB]$ and $[AC]$ respectively, and that the two circles $\\Gamma_1$ and $\\Gamma_2$ lie outside the triangle $ABC$. Prove that the lines $(BC)$ and $(EF)$ are parallel."
+        },
+        {
+          "number": 4,
+          "problem": "Find all integers $a \\geqslant 2$ and $b \\geqslant 2$ such that $a$ is even and all the digits of the decimal representation of $a^b + 1$ are equal."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let\n$$P(X) = a_n X^n + a_{n-1} X^{n-1} + \\cdots + a_1 X + a_0$$\nbe a polynomial with real coefficients such that $0 \\leqslant a_i \\leqslant a_0$ for each of the integers $i = 1, 2, \\ldots, n$. Prove that, if\n$$P(X)^2 = b_{2n} X^{2n} + b_{2n-1} X^{2n-1} + \\cdots + b_{n+1} X^{n+1} + \\cdots + b_1 X + b_0,$$\nthen $4 b_{n+1} \\leqslant P(1)^2$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $k \\geqslant 1$ be a fixed integer; Uncle Scrooge has $k$ coins. He also has infinitely many boxes $B_1, B_2, B_3, \\ldots$ in front of him. Initially, the box $B_1$ contains one of Scrooge's coins; the other $k - 1$ coins are lying on the table, outside every box.\n\nUncle Scrooge then allows himself to perform, as many times as he wants, operations of the following form:\n\n• if two consecutive boxes $B_i$ and $B_{i+1}$ each contain a coin, he may take out the coin that was in the box $B_{i+1}$ and put it back on his table;\n\n• if a box $B_i$ contains a coin, the box $B_{i+1}$ is empty, and Scrooge still has at least one coin on his table, he may take this coin and put it in the box $B_{i+1}$.\n\nIn terms of $k$, for which integers $n$ can Uncle Scrooge manage to put a coin in the box $B_n$?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABCD$ be a convex quadrilateral such that $\\angle ABC > 90^\\circ$, $\\angle CDA > 90^\\circ$ and $\\angle DAB = \\angle BCD$. Let $E$, $F$ and $G$ be the reflections of $A$ in the lines $(BC)$, $(CD)$ and $(DB)$. Finally, suppose that the line $(BD)$ meets the segments $[AE]$ and $[AF]$ at two points $K$ and $L$.\n\nProve that the circumcircles of triangles $BEK$ and $DFL$ are tangent to each other at $G$."
+        },
+        {
+          "number": 4,
+          "problem": "Do there exist two integers $a$ and $b$ such that none of the numbers $a, a+1, \\ldots, a+2023, b, b+1, \\ldots, b+2023$ divides any of the $4047$ others, but $a(a+1)(a+2)\\cdots(a+2023)$ divides $b(b+1)(b+2)\\cdots(b+2023)$?"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $d$ and $m$ be two fixed positive integers. Pinocchio and Geppetto know the values of $d$ and $m$, and play the following game. First, Pinocchio chooses a polynomial $P$ of degree at most $d$ with coefficients in $\\mathbb{Z}$. Then Geppetto asks him questions of the form \"What is the value of $P(n)$?\", where $n \\in \\mathbb{Z}$. Pinocchio usually tells the truth, but he may lie up to $m$ times. In terms of $d$ and $m$, what is the minimum number of questions that Geppetto must ask to be sure of being able to determine $P$, whatever Pinocchio's answers?\n\nRemark: $\\mathbb{Z}$ denotes the set of integers, whatever their sign."
+        },
+        {
+          "number": 2,
+          "problem": "Given an integer $n \\geqslant 2$, let $\\mathcal{P}$ and $\\mathcal{Q}$ be two sets, each consisting of $n$ points of three-dimensional space. Suppose that the $2n$ points so obtained are all distinct. Prove that one can order the points of $\\mathcal{P}$ in a list $P_1, P_2, \\ldots, P_n$, and the points of $\\mathcal{Q}$ in a list $Q_1, Q_2, \\ldots, Q_n$, in such a way that, for all indices $i$ and $j$, the balls with diameters $[P_iQ_i]$ and $[P_jQ_j]$ have at least one point in common.\n\nRemark: The ball with diameter $[PQ]$ is the set of points lying on the sphere with diameter $[PQ]$ and of points lying inside it."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle all of whose angles are acute, $\\omega$ its circumcircle, and $O$ the centre of $\\omega$. The altitude of $ABC$ from $A$ meets $\\omega$ again at a point $D$ distinct from $A$, and the segment $[AC]$ meets the circumcircle of $OCD$ again at a point $E$ distinct from $C$. Finally, let $M$ be the midpoint of the segment $[BE]$. Prove that $(DE)$ is parallel to $(OM)$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $p$ be a fixed prime number. Find all integers $n \\geqslant 1$ with the following property: the positive divisors of $n$ can be grouped in pairs in such a way that, for each pair $(d, d')$ so formed, the following two conditions are satisfied:\n\n• $d < d'$;\n\n• $p$ divides $\\left\\lfloor \\frac{d'}{d} \\right\\rfloor$.\n\nRemark: Recall that, for a real number $x$, the notation $\\lfloor x \\rfloor$ denotes the largest integer less than or equal to $x$. For example, $\\lfloor 3 \\rfloor = \\lfloor \\pi \\rfloor = \\lfloor 3.99 \\rfloor = 3$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\ldots$ be a sequence of positive integers with the following property: for all positive integers $k < \\ell$, for all distinct integers $m_1, \\ldots, m_k$ and for all distinct integers $n_1, \\ldots, n_\\ell$,\n$$a_{m_1} + \\ldots + a_{m_k} \\leqslant a_{n_1} + \\ldots + a_{n_\\ell}.$$\nProve that there exist two integers $N$ and $b$ such that $a_n = b$ for all $n \\geqslant N$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\geqslant 2$ be an integer. Consider a square grid of size $2n \\times 2n$, divided into $4n^2$ unit squares. The grid is called balanced if:\n\n• Each cell contains a number equal to $-1$, $0$ or $1$.\n\n• The absolute value of the sum of the numbers of the grid does not exceed $4n$.\n\nDetermine, in terms of $n$, the smallest integer $k \\geqslant 1$ such that every balanced grid always contains an $n \\times n$ square in which the absolute value of the sum of the $n^2$ cells is less than or equal to $k$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\omega$ be a circle with centre $O$. Let $B$ and $C$ be two fixed points of the circle $\\omega$ and let $A$ be a variable point on the circle $\\omega$. Let $X$ be the point of intersection of the lines $(OB)$ and $(AC)$, and suppose that $X \\neq O$. Let $\\Omega$ be the circumcircle of triangle $AOX$. Let $Y$ be the second point of intersection of $\\Omega$ with $\\omega$. The tangent to $\\Omega$ at $Y$ meets $\\omega$ again at $I$. The line $(OI)$ meets $\\omega$ again at $J$. The perpendicular bisector of the segment $[OY]$ meets the line $(YI)$ at $T$, and the line $(AJ)$ meets $\\Omega$ again at $P$. Let $Z$ be the second point of intersection of the circumcircle of triangle $PYT$ with $\\omega$.\n\nProve that, as the point $A$ varies, the points $Y$ and $Z$ remain fixed."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all sequences of positive integers $a_1, a_2, \\ldots$ satisfying the following two conditions:\n\n• there exists an integer $M > 0$ such that $0 < a_n \\leqslant M$ for every index $n \\geqslant 1$;\n\n• for every prime number $p$ and every index $n \\geqslant 1$, the number\n$$a_n a_{n+1} \\ldots a_{n+p-1} - a_{n+p}$$\nis a multiple of $p$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all polynomials $P$ with integer coefficients such that, for all integers $a \\geqslant 1$ and $b \\geqslant 1$, the number $P(a) - P(b)$ is divisible by $a + 2b$ or by $2a + b$."
+        },
+        {
+          "number": 2,
+          "problem": "Judith has gathered her $2026$ friends in a circle, so that each of her friends has one person on their left and one person on their right. Judith wishes to explain to them her clever solution to an olympiad problem, which can be told in a few seconds.\n\nAt 5:00 pm, Judith chooses one of her friends and tells him her solution. Thereafter, every minute starting from 5:01 pm, two things happen. First, every friend who knows Judith's solution tells it to his two neighbours. Then, Judith chooses one of her friends and tells him her solution. Determine the smallest integer $n$ such that it is possible for all of Judith's friends to know her solution after $n$ minutes."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with $AB \\neq AC$. Let $H$ be the orthocentre of $ABC$ and $M$ the midpoint of $[BC]$. Let $D$ and $E$ be the orthogonal projections of $H$ onto the internal and external bisectors, respectively, of the angle $\\angle BAC$. Prove that the points $D$, $E$, $M$ are collinear."
+        },
+        {
+          "number": 4,
+          "problem": "Prove that there exists an integer $n \\geqslant 1$ for which there exist at least $2026$ triples $(a, b, c)$ of positive integers such that\n$$a^2 + b^3 + c^4 = n.$$"
+        }
+      ]
+    }
+  ]
+}
