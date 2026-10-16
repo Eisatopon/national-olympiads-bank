@@ -236,6 +236,7 @@
     --arml: #0f4c81; --arml-ink: #0a3256; --arml-tint: #dde9f5;
     --hmmtg: #be123c; --hmmtg-ink: #7f0c28; --hmmtg-tint: #fde3e9;
     --hmmtn: #15803d; --hmmtn-ink: #0e5228; --hmmtn-tint: #dcf3e4;
+    --twt: #7e22ce; --twt-ink: #541689; --twt-tint: #f1e4fb;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -407,6 +408,7 @@
 .f-arml { --f: var(--arml); --f-ink: var(--arml-ink); --f-tint: var(--arml-tint); }
 .f-hmmtg { --f: var(--hmmtg); --f-ink: var(--hmmtg-ink); --f-tint: var(--hmmtg-tint); }
 .f-hmmtn { --f: var(--hmmtn); --f-ink: var(--hmmtn-ink); --f-tint: var(--hmmtn-tint); }
+.f-twt { --f: var(--twt); --f-ink: var(--twt-ink); --f-tint: var(--twt-tint); }
 
 /* ==========================================================
    Base
@@ -906,7 +908,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-hmmt-guts-november-team';
+const DATA_VERSION = '20261016-taiwan-tst';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1054,6 +1056,7 @@ REGION_OF.pumac = 'americas';
 REGION_OF.arml = 'americas';
 REGION_OF.hmmtg = 'americas';
 REGION_OF.hmmtn = 'americas';
+REGION_OF.twt = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1142,6 +1145,7 @@ const COUNTRIES = [
     { key: 'ir2', name: 'Iran MO 2nd Round', flag: '🇮🇷', file: 'Iran-mo2-problems.json', kind: 'years', full: "Iran Mathematical Olympiad, Second Round" },
     { key: 'ir3', name: 'Iran MO 3rd Round', flag: '🇮🇷', file: 'Iran-mo3-problems.json', kind: 'years', full: "Iran Mathematical Olympiad, Third Round (national final)" },
     { key: 'tw', name: 'Taiwan', flag: '🇹🇼', file: 'Taiwan-tmo-problems.json', kind: 'years' },
+    { key: 'twt', name: 'Taiwan TST', flag: '🇹🇼', file: 'Taiwan-tst-problems.json', kind: 'years', full: "Taiwan IMO Team Selection Test" },
     { key: 'il', name: 'Israel', flag: '🇮🇱', file: 'Israel-gillis-problems.json', kind: 'years' },
     { key: 'by', name: 'Belarus', flag: '🇧🇾', file: 'Belarus-mo-problems.json', kind: 'years' },
     { key: 'za', name: 'South Africa', flag: '🇿🇦', file: 'SouthAfrica-samo-problems.json', kind: 'years' },
