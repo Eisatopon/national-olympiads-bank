@@ -262,6 +262,8 @@
     --igoi: #4a6b1f; --igoi-ink: #2f4512; --igoi-tint: #ebf2df;
     --igoe: #7a5c1f; --igoe-ink: #513c12; --igoe-tint: #f3ecdc;
     --stars: #1f4f7a; --stars-ink: #123352; --stars-tint: #e0eaf4;
+    --omo: #5b4a8a; --omo-ink: #3b2f5c; --omo-tint: #ece8f5;
+    --duke: #00539b; --duke-ink: #003566; --duke-tint: #dde9f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -459,6 +461,8 @@
 .f-igoi { --f: var(--igoi); --f-ink: var(--igoi-ink); --f-tint: var(--igoi-tint); }
 .f-igoe { --f: var(--igoe); --f-ink: var(--igoe-ink); --f-tint: var(--igoe-tint); }
 .f-stars { --f: var(--stars); --f-ink: var(--stars-ink); --f-tint: var(--stars-tint); }
+.f-omo { --f: var(--omo); --f-ink: var(--omo-ink); --f-tint: var(--omo-tint); }
+.f-duke { --f: var(--duke); --f-ink: var(--duke-ink); --f-tint: var(--duke-tint); }
 
 /* ==========================================================
    Base
@@ -973,7 +977,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-igo-levels-stars';
+const DATA_VERSION = '20261016-omo-duke';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1147,6 +1151,8 @@ REGION_OF.mitib = 'other';
 REGION_OF.igoi = 'world';
 REGION_OF.igoe = 'world';
 REGION_OF.stars = 'world';
+REGION_OF.omo = 'americas';
+REGION_OF.duke = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1323,6 +1329,8 @@ const COUNTRIES = [
     { key: 'cmimc', name: 'CMIMC', flag: '🇺🇸', file: 'CMIMC-problems.json', kind: 'years', scope: 'tournaments', full: "Carnegie Mellon Informatics and Mathematics Competition (CMIMC), individual subject rounds" },
     { key: 'smt', name: 'Stanford MT', flag: '🇺🇸', file: 'SMT-problems.json', kind: 'years', scope: 'tournaments', full: "Stanford Math Tournament (SMT), individual subject tests" },
     { key: 'bmt', name: 'Berkeley MT', flag: '🇺🇸', file: 'BMT-problems.json', kind: 'years', scope: 'tournaments', full: "Berkeley Math Tournament (BMT), individual tests" },
+    { key: 'omo', name: 'Online Math Open', flag: '🇺🇸', file: 'OMO-problems.json', kind: 'years', scope: 'tournaments', full: "Online Math Open (OMO)" },
+    { key: 'duke', name: 'Duke Math Meet', flag: '🇺🇸', file: 'Duke-math-meet-problems.json', kind: 'years', scope: 'tournaments', full: "Duke Math Meet, Individual Round" },
     { key: 'elmo', name: 'ELMO', flag: '🇺🇸', file: 'ELMO-problems.json', kind: 'years', scope: 'tournaments', full: "ELMO (olympiad-style contest held during the US MOP)" },
     { key: 'usemo', name: 'USEMO', flag: '🇺🇸', file: 'USEMO-problems.json', kind: 'years', scope: 'tournaments', full: "United States Ersatz Math Olympiad (USEMO)" },
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },
