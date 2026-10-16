@@ -590,6 +590,8 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 
 /* Off-screen problem cards are laid out only when they come near the screen. */
 .results .problem { content-visibility: auto; contain-intrinsic-size: auto 320px; }
+/* An open Ask AI menu must not be clipped by the card's paint containment or hidden under the next card. */
+.results .problem:has(.ai-menu[open]) { content-visibility: visible; position: relative; z-index: 5; }
 .problem { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--f); border-radius: 2px; padding: 18px 24px 22px; scroll-margin-top: 16px; }
 .p-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; margin-bottom: 10px; }
 .p-actions { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -602,6 +604,10 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .ai-custom textarea { width: 100%; min-height: 85px; padding: 9px; resize: vertical; border: 1px solid var(--line-strong); border-radius: 3px; font: .88rem/1.5 var(--sans); }
 .ai-custom .btn[hidden] { display: none; }
 .ai-custom .btn { width: 100%; margin-top: 6px; }
+.ai-prov { display: flex; gap: 4px; padding: 2px 2px 8px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
+.ai-prov button { flex: 1; padding: 6px 8px; border: 1px solid var(--line-strong); border-radius: 3px; background: transparent; color: var(--muted); font: 600 .8rem/1.2 var(--sans); cursor: pointer; }
+.ai-prov button[aria-pressed="true"] { background: #245b86; border-color: #245b86; color: #fff; }
+.ai-note { margin: 6px 4px 2px; font-size: .75rem; color: var(--muted); }
 .ai-copy { margin-top: 6px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .p-num { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 8px; border-radius: 4px; background: var(--f); color: #fff; font: 800 1.15rem/1 var(--serif); }
@@ -902,14 +908,14 @@ dialog p { color: var(--muted); font-size: .92rem; }
 <dialog id="aiDialog" aria-labelledby="aiTitle">
     <h2 id="aiTitle">Ask AI</h2>
     <p id="aiHelp"></p>
-    <textarea id="aiPrompt" readonly aria-label="Problem and instructions for ChatGPT" style="width:100%;min-height:160px;margin-top:12px;padding:10px;resize:vertical"></textarea>
+    <textarea id="aiPrompt" readonly aria-label="Problem and instructions for the AI assistant" style="width:100%;min-height:160px;margin-top:12px;padding:10px;resize:vertical"></textarea>
     <div class="copy-status" id="aiCopyStatus" role="status"></div>
     <div class="dlg-actions">
         <button type="button" class="btn" id="copyAi">Copy prompt</button>
         <a class="btn" id="openAi" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT</a>
         <button type="button" class="btn btn-primary" id="closeAi">Close</button>
     </div>
-    <p>Use your own ChatGPT account. Solutions are not saved in this bank.</p>
+    <p>Use your own ChatGPT or Claude account. Solutions are not saved in this bank. AI answers can be wrong — check every step.</p>
 </dialog>
 
 <dialog id="relatedDialog" aria-labelledby="relatedTitle">
@@ -2640,18 +2646,23 @@ function aiPrompt(p, request) {
     return `${request || 'Give a rigorous mathematical solution to the following olympiad problem, with clear explanations and standard LaTeX. Preserve all hypotheses. If you cannot establish a complete proof, state what remains unresolved.'}\n\n${label}\n\n${p.text}` +
         (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');
 }
-function aiUrl(text) {
-    const url = 'https://chatgpt.com/?q=' + encodeURIComponent(text);
+const AI_PROVIDERS = {chatgpt: {name: 'ChatGPT', q: 'https://chatgpt.com/?q=', home: 'https://chatgpt.com/'},
+    claude: {name: 'Claude', q: 'https://claude.ai/new?q=', home: 'https://claude.ai/new'}};
+function aiProvider() { try { const v = localStorage.getItem('nob-ai'); return AI_PROVIDERS[v] ? v : 'chatgpt'; } catch (e) { return 'chatgpt'; } }
+function aiUrl(text, provider = aiProvider()) {
+    const pr = AI_PROVIDERS[provider] || AI_PROVIDERS.chatgpt;
+    const url = pr.q + encodeURIComponent(text);
     // Practical portable URL budget; never truncate the statement.
-    return url.length <= 8000 ? url : 'https://chatgpt.com/';
+    return url.length <= 8000 ? url : pr.home;
 }
 function aiRequest(mode, question) {
     if (mode === 'hint') return 'Give only one small, useful hint for the following olympiad problem. Preserve all hypotheses. Do not reveal the full solution, the final answer or subsequent steps. Wait for my next question.';
+    if (mode === 'check') return 'Check my solution to the following olympiad problem. Go through it step by step, point out every gap, unjustified claim or error, and say clearly whether it is a complete and correct proof. Preserve all hypotheses. Do not give a different full solution unless I ask for one.\n\nMy solution:\n' + question;
     if (mode === 'custom') return 'Address only my request about the following olympiad problem. Preserve all hypotheses. Do not provide a full solution unless I ask for one.\n\nMy request: ' + question;
     return undefined;
 }
 function aiActionHtml(p) {
-    const uid = esc(p.uid);
+    const uid = esc(p.uid), prov = aiProvider();
     const link = (mode, label) => {
         const url = aiUrl(aiPrompt(p, aiRequest(mode)));
         return `<a class="ai-choice" href="${esc(url.includes('?q=') ? url : '#')}" target="_blank" rel="noopener noreferrer" data-ai-link="${uid}" data-ai-mode="${mode}" data-ai-fallback="${!url.includes('?q=')}">${label}</a>`;
@@ -2659,13 +2670,19 @@ function aiActionHtml(p) {
     return `<details class="ai-menu" data-ai-uid="${uid}">
         <summary class="btn btn-sm ask-ai" aria-label="Ask AI: problem ${esc(p.num)}">Ask AI ▾</summary>
         <div class="ai-options">
+            <div class="ai-prov" role="group" aria-label="AI assistant">${Object.entries(AI_PROVIDERS).map(([k, v]) => `<button type="button" data-ai-provider="${k}" aria-pressed="${k === prov}">${v.name}</button>`).join('')}</div>
             ${link('hint', '💡 One small hint')}
             ${link('solution', '📝 Full solution')}
+            <details class="ai-custom"><summary class="ai-choice">✅ Check my solution</summary>
+                <textarea data-ai-question="${uid}" data-ai-kind="check" aria-label="Your solution to problem ${esc(p.num)}" placeholder="Write or paste your solution here."></textarea>
+                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="check" target="_blank" rel="noopener noreferrer" hidden>Check in <span data-ai-name>${AI_PROVIDERS[prov].name}</span> ↗</a>
+            </details>
             <details class="ai-custom"><summary class="ai-choice">✍️ My own question</summary>
                 <textarea data-ai-question="${uid}" aria-label="Your question about problem ${esc(p.num)}" placeholder="For example: Give me only the first step."></textarea>
-                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="custom" target="_blank" rel="noopener noreferrer" hidden>Open in ChatGPT ↗</a>
+                <a class="btn btn-sm ask-ai" data-ai-link="${uid}" data-ai-mode="custom" target="_blank" rel="noopener noreferrer" hidden>Open in <span data-ai-name>${AI_PROVIDERS[prov].name}</span> ↗</a>
             </details>
             <button type="button" class="ai-choice ai-copy" data-ask-ai="${uid}">Copy statement / request</button>
+            <p class="ai-note">AI answers can be wrong — check every step.</p>
         </div>
     </details>`;
 }
@@ -2675,20 +2692,36 @@ function updateAiQuestion(input) {
     const link = input.closest('.ai-custom').querySelector('[data-ai-link]');
     const question = input.value.trim();
     link.hidden = !question;
-    const url = aiUrl(aiPrompt(p, aiRequest('custom', question)));
+    const url = aiUrl(aiPrompt(p, aiRequest(input.dataset.aiKind || 'custom', question)));
     link.href = url.includes('?q=') ? url : '#';
     link.dataset.aiFallback = String(!url.includes('?q='));
+}
+function setAiProvider(provider) {
+    if (!AI_PROVIDERS[provider]) return;
+    try { localStorage.setItem('nob-ai', provider); } catch (e) {}
+    document.querySelectorAll('[data-ai-provider]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.aiProvider === provider)));
+    document.querySelectorAll('[data-ai-name]').forEach(n => { n.textContent = AI_PROVIDERS[provider].name; });
+    document.querySelectorAll('a[data-ai-link]').forEach(a => {
+        const p = byUid.get(a.dataset.aiLink), mode = a.dataset.aiMode;
+        if (!p) return;
+        if (mode === 'custom' || mode === 'check') { const q = a.closest('.ai-custom')?.querySelector('[data-ai-question]'); if (q) updateAiQuestion(q); return; }
+        const url = aiUrl(aiPrompt(p, aiRequest(mode)));
+        a.href = url.includes('?q=') ? url : '#';
+        a.dataset.aiFallback = String(!url.includes('?q='));
+    });
 }
 function askAi(uid, request) {
     const p = byUid.get(uid);
     if (!p) return;
     const text = aiPrompt(p, request), url = aiUrl(text), direct = url.includes('?q=');
     $('#aiPrompt').value = text;
+    const pr = AI_PROVIDERS[aiProvider()] || AI_PROVIDERS.chatgpt;
     $('#openAi').href = url;
+    $('#openAi').textContent = 'Open ' + pr.name;
     $('#aiCopyStatus').textContent = '';
     $('#aiHelp').textContent = direct
-        ? 'Copy the prompt below if it did not appear in ChatGPT, then open ChatGPT and paste it into your conversation.'
-        : 'This problem is too long for a reliable link. Copy the full prompt below, open ChatGPT and paste it into your conversation.';
+        ? `Copy the prompt below if it did not appear in ${pr.name}, then open ${pr.name} and paste it into your conversation.`
+        : `This problem is too long for a reliable link. Copy the full prompt below, open ${pr.name} and paste it into your conversation.`;
     const dlg = $('#aiDialog');
     if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
 }
@@ -2780,9 +2813,9 @@ document.addEventListener('click', e => {
     document.querySelectorAll('.ai-menu[open]').forEach(menu => { if (menu !== currentMenu) menu.open = false; });
     const aiLink = e.target.closest('[data-ai-link]');
     if (aiLink) {
-        const question = currentMenu?.querySelector('[data-ai-question]')?.value.trim() || '';
+        const question = aiLink.closest('.ai-custom')?.querySelector('[data-ai-question]')?.value.trim() || '';
         if (currentMenu) currentMenu.dataset.aiMode = aiLink.dataset.aiMode;
-        if (aiLink.dataset.aiMode === 'custom' && !question) { e.preventDefault(); return; }
+        if ((aiLink.dataset.aiMode === 'custom' || aiLink.dataset.aiMode === 'check') && !question) { e.preventDefault(); return; }
         if (aiLink.dataset.aiFallback === 'true') {
             e.preventDefault(); askAi(aiLink.dataset.aiLink, aiRequest(aiLink.dataset.aiMode, question));
         }
@@ -2820,9 +2853,11 @@ document.addEventListener('click', e => {
         return;
     }
 
+    if (t.dataset.aiProvider) { setAiProvider(t.dataset.aiProvider); return; }
     if (t.dataset.askAi) {
-        const question = currentMenu?.querySelector('[data-ai-question]')?.value.trim() || '';
-        askAi(t.dataset.askAi, question ? aiRequest('custom', question) : aiRequest(currentMenu?.dataset.aiMode));
+        const open = [...(currentMenu?.querySelectorAll('.ai-custom[open] [data-ai-question]') || [])].find(x => x.value.trim());
+        const question = open ? open.value.trim() : '';
+        askAi(t.dataset.askAi, question ? aiRequest(open.dataset.aiKind || 'custom', question) : aiRequest(currentMenu?.dataset.aiMode));
         if (currentMenu) currentMenu.open = false;
         return;
     }
