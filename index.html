@@ -607,6 +607,8 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .ai-prov { display: flex; gap: 4px; padding: 2px 2px 8px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
 .ai-prov button { flex: 1; padding: 6px 8px; border: 1px solid var(--line-strong); border-radius: 3px; background: transparent; color: var(--muted); font: 600 .8rem/1.2 var(--sans); cursor: pointer; }
 .ai-prov button[aria-pressed="true"] { background: #245b86; border-color: #245b86; color: #fff; }
+#aiToast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); max-width: calc(100vw - 32px); padding: 12px 18px; border-radius: 6px; background: #0f2a44; color: #fff; font: 600 .9rem/1.4 var(--sans); box-shadow: 0 8px 24px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 100; }
+#aiToast.show { opacity: 1; transform: translate(-50%, 0); }
 .ai-note { margin: 6px 4px 2px; font-size: .75rem; color: var(--muted); }
 .ai-copy { margin-top: 6px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
@@ -915,7 +917,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <a class="btn" id="openAi" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT</a>
         <button type="button" class="btn btn-primary" id="closeAi">Close</button>
     </div>
-    <p>Use your own ChatGPT or Claude account. Solutions are not saved in this bank. AI answers can be wrong — check every step.</p>
+    <p>Use your own ChatGPT, Claude or Gemini account. Solutions are not saved in this bank. AI answers can be wrong — check every step.</p>
 </dialog>
 
 <dialog id="relatedDialog" aria-labelledby="relatedTitle">
@@ -2647,10 +2649,13 @@ function aiPrompt(p, request) {
         (figure ? '\n\nThe statement includes figure links. Inspect the figures before using them. If you cannot access them, ask me to upload the images; do not guess their contents.' : '');
 }
 const AI_PROVIDERS = {chatgpt: {name: 'ChatGPT', q: 'https://chatgpt.com/?q=', home: 'https://chatgpt.com/'},
-    claude: {name: 'Claude', q: 'https://claude.ai/new?q=', home: 'https://claude.ai/new'}};
+    claude: {name: 'Claude', q: 'https://claude.ai/new?q=', home: 'https://claude.ai/new'},
+    // Gemini has no prefill link: the prompt is copied to the clipboard and Gemini opens for pasting.
+    gemini: {name: 'Gemini', q: '', home: 'https://gemini.google.com/app', paste: true}};
 function aiProvider() { try { const v = localStorage.getItem('nob-ai'); return AI_PROVIDERS[v] ? v : 'chatgpt'; } catch (e) { return 'chatgpt'; } }
 function aiUrl(text, provider = aiProvider()) {
     const pr = AI_PROVIDERS[provider] || AI_PROVIDERS.chatgpt;
+    if (pr.paste) return pr.home;
     const url = pr.q + encodeURIComponent(text);
     // Practical portable URL budget; never truncate the statement.
     return url.length <= 8000 ? url : pr.home;
@@ -2661,11 +2666,16 @@ function aiRequest(mode, question) {
     if (mode === 'custom') return 'Address only my request about the following olympiad problem. Preserve all hypotheses. Do not provide a full solution unless I ask for one.\n\nMy request: ' + question;
     return undefined;
 }
+// href and fallback flag of an Ask AI link: a direct prefill link, the paste-provider home page, or '#' (open the copy dialog).
+function aiLinkState(url) {
+    const paste = !!(AI_PROVIDERS[aiProvider()] || {}).paste, direct = url.includes('?q=');
+    return {href: direct || paste ? url : '#', fallback: !direct && !paste};
+}
 function aiActionHtml(p) {
     const uid = esc(p.uid), prov = aiProvider();
     const link = (mode, label) => {
-        const url = aiUrl(aiPrompt(p, aiRequest(mode)));
-        return `<a class="ai-choice" href="${esc(url.includes('?q=') ? url : '#')}" target="_blank" rel="noopener noreferrer" data-ai-link="${uid}" data-ai-mode="${mode}" data-ai-fallback="${!url.includes('?q=')}">${label}</a>`;
+        const st = aiLinkState(aiUrl(aiPrompt(p, aiRequest(mode))));
+        return `<a class="ai-choice" href="${esc(st.href)}" target="_blank" rel="noopener noreferrer" data-ai-link="${uid}" data-ai-mode="${mode}" data-ai-fallback="${st.fallback}">${label}</a>`;
     };
     return `<details class="ai-menu" data-ai-uid="${uid}">
         <summary class="btn btn-sm ask-ai" aria-label="Ask AI: problem ${esc(p.num)}">Ask AI ▾</summary>
@@ -2692,9 +2702,9 @@ function updateAiQuestion(input) {
     const link = input.closest('.ai-custom').querySelector('[data-ai-link]');
     const question = input.value.trim();
     link.hidden = !question;
-    const url = aiUrl(aiPrompt(p, aiRequest(input.dataset.aiKind || 'custom', question)));
-    link.href = url.includes('?q=') ? url : '#';
-    link.dataset.aiFallback = String(!url.includes('?q='));
+    const st = aiLinkState(aiUrl(aiPrompt(p, aiRequest(input.dataset.aiKind || 'custom', question))));
+    link.href = st.href;
+    link.dataset.aiFallback = String(st.fallback);
 }
 function setAiProvider(provider) {
     if (!AI_PROVIDERS[provider]) return;
@@ -2705,10 +2715,19 @@ function setAiProvider(provider) {
         const p = byUid.get(a.dataset.aiLink), mode = a.dataset.aiMode;
         if (!p) return;
         if (mode === 'custom' || mode === 'check') { const q = a.closest('.ai-custom')?.querySelector('[data-ai-question]'); if (q) updateAiQuestion(q); return; }
-        const url = aiUrl(aiPrompt(p, aiRequest(mode)));
-        a.href = url.includes('?q=') ? url : '#';
-        a.dataset.aiFallback = String(!url.includes('?q='));
+        const st = aiLinkState(aiUrl(aiPrompt(p, aiRequest(mode))));
+        a.href = st.href;
+        a.dataset.aiFallback = String(st.fallback);
     });
+}
+function aiCopyAndTell(text, name) {
+    const done = ok => {
+        let t = document.getElementById('aiToast');
+        if (!t) { t = document.createElement('div'); t.id = 'aiToast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+        t.textContent = ok ? `Copied — paste it into ${name} (Ctrl+V).` : `Could not copy automatically: use “Copy statement / request”.`;
+        t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 6000);
+    };
+    try { navigator.clipboard.writeText(text).then(() => done(true), () => done(false)); } catch (e) { done(false); }
 }
 function askAi(uid, request) {
     const p = byUid.get(uid);
@@ -2719,7 +2738,9 @@ function askAi(uid, request) {
     $('#openAi').href = url;
     $('#openAi').textContent = 'Open ' + pr.name;
     $('#aiCopyStatus').textContent = '';
-    $('#aiHelp').textContent = direct
+    $('#aiHelp').textContent = pr.paste
+        ? `Copy the prompt below, open ${pr.name} and paste it into your conversation (Ctrl+V).`
+        : direct
         ? `Copy the prompt below if it did not appear in ${pr.name}, then open ${pr.name} and paste it into your conversation.`
         : `This problem is too long for a reliable link. Copy the full prompt below, open ${pr.name} and paste it into your conversation.`;
     const dlg = $('#aiDialog');
@@ -2818,6 +2839,9 @@ document.addEventListener('click', e => {
         if ((aiLink.dataset.aiMode === 'custom' || aiLink.dataset.aiMode === 'check') && !question) { e.preventDefault(); return; }
         if (aiLink.dataset.aiFallback === 'true') {
             e.preventDefault(); askAi(aiLink.dataset.aiLink, aiRequest(aiLink.dataset.aiMode, question));
+        } else if ((AI_PROVIDERS[aiProvider()] || {}).paste) {
+            const p = byUid.get(aiLink.dataset.aiLink);
+            if (p) aiCopyAndTell(aiPrompt(p, aiRequest(aiLink.dataset.aiMode, question)), AI_PROVIDERS[aiProvider()].name);
         }
         if (currentMenu) currentMenu.open = false;
         return;
