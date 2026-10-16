@@ -2,6 +2,861 @@
   "competition": "Australian Mathematical Olympiad",
   "years": [
     {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Show that there are not more than 9 prime numbers between 10 and $10^{29}$ whose decimal representation is a string of $1$s."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "On the circumference of a circle, $4n$ points ($n\\in\\mathbb{N}$) have been chosen and numbered consecutively $1,2,\\dots,4n$ clockwise around the circle. The $2n$ even-numbered points are divided into $n$ pairs, and the points of each pair joined by a green chord. Similarly, the $2n$ odd-numbered points are divided into $n$ pairs, and the points of each pair joined by a gold chord. The choice of points and chords turns out to be such that no three of the chords (the same colour or a mixture of both) meet at a common point.\n\nProve that there are at least $n$ points where a green chord intersects a gold chord."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A straight line cuts two concentric circles in the points $A$, $B$, $C$ and $D$, in that order; $AE$ and $BF$ are parallel chords, one in each circle; $GC\\perp BF$ at $G$, and $DH\\perp AE$ at $H$.\n\nProve that $GF=HE$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine all pairs $(x,y)$ of positive integers which satisfy $$y^2(x-1)=x^5-1.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all $r\\in\\mathbb{R}$ such that there is precisely one pair $(x,y)$ of real numbers satisfying the conditions\n\n(i) $y-x=r$;\n\n(ii) $x^2+y^2+2x\\le 1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For each $n\\in\\mathbb{N}$, let $f(n,0), f(n,1),\\dots,f(n,2n)\\in\\mathbb{Z}$ such that the polynomial $f(n,0)+f(n,1)x+\\dots+f(n,2n)x^{2n}$ is identical with the polynomial $(x^2+x+1)^n$.\n\nProve that there are infinitely many values of $n$ for which precisely three of the integers $f(n,k)$, $k=0,1,\\dots,2n$, are odd."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "The lines joining the three vertices of $\\triangle ABC$ to a point in its plane cut the sides opposite the vertices $A$, $B$, $C$ in the points $K$, $L$, $M$, respectively. A line through $M$ parallel to $KL$ cuts $BC$ at $V$ and $AK$ at $W$.\n\nProve that $VM=MW$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Determine all functions $f:\\mathbb{R}_{>0}\\to\\mathbb{R}$ such that\n\n(i) $f(xy)=f(x)f\\left(\\frac{3}{y}\\right)+f(y)f\\left(\\frac{3}{x}\\right)$ for all $x,y\\in\\mathbb{R}_{>0}$;\n\n(ii) $f(1)=\\frac12$."
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCDE$ be a convex pentagon such that $BC=CD=DE$ and each diagonal of the pentagon is parallel to one of its sides.\n\nProve that all the angles in the pentagon are equal and that all sides are equal."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p(x)$ be a cubic polynomial with roots $r_1$, $r_2$, $r_3$. Suppose that $$\\frac{p(\\frac12)+p(-\\frac12)}{p(0)}=1000.$$ Find the value of $$\\frac{1}{r_1r_2}+\\frac{1}{r_2r_3}+\\frac{1}{r_3r_1}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A number of tubes are bundled together in hexagonal form (see figure). The number of tubes in the bundle can be $1, 7, 19, 37$ (as shown), $61, 91, \\dots$. If this sequence is continued, it will be noticed that the total number of tubes is often a number ending in 69.\n\nWhat is the $69^{\\text{th}}$ number of the sequence ending in 69?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/au_1996_p3_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For which $n\\in\\mathbb{N}$ can we rearrange the sequence $1,2,\\dots,n$ to $a_1,a_2,\\dots,a_n$ such that $$|a_k-k|=|a_1-1|\\ne 0 \\quad\\text{for } k=2,3,\\dots,n?$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a_1,a_2,\\dots,a_n\\in\\mathbb{R}$ and $0\\le s\\in\\mathbb{R}$ such that\n\n(i) $a_1\\le a_2\\le\\dots\\le a_n$;\n\n(ii) $a_1+a_2+\\dots+a_n=0$;\n\n(iii) $|a_1|+|a_2|+\\dots+|a_n|=s$.\n\nProve that $$a_n-a_1\\ge\\frac{2s}{n}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral and let $P$ and $Q$ be points on the sides $AB$ and $AD$, respectively, such that $AP=CD$ and $AQ=BC$. Let $M$ be the point of intersection of $AC$ and $PQ$.\n\nShow that $M$ is the midpoint of $PQ$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For $n\\in\\mathbb{N}$, let $\\sigma(n)$ denote the sum of all positive integers that divide $n$. Let $k\\in\\mathbb{N}$ and $n_1<n_2<\\dots$ be an infinite sequence of positive integers with the property that $\\sigma(n_i)-n_i=k$ for $i=1,2,\\dots$.\n\nProve that $n_i$ is prime for $i=1,2,\\dots$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $f:\\mathbb{Z}\\to\\{0,1\\}$ such that\n\n(i) $f(n+1996)=f(n)$ for all $n\\in\\mathbb{Z}$;\n\n(ii) $f(1)+f(2)+\\dots+f(1996)=45$.\n\nProve there exists $t\\in\\mathbb{Z}$ such that $f(n+t)=0$ for all $n$ for which $f(n)=1$ holds."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle with $AB=AC$ and $\\angle BAC<120^\\circ$. Let $D$ be the midpoint of $BC$. Choose point $E$ on $AD$ such that $\\angle AEB=120^\\circ$. Let $E'$ be any point on $AD$ distinct from $E$. Prove that $$EA+EB+EC<E'A+E'B+E'C.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a_1,a_2,\\dots,a_k$ be real numbers satisfying the following two conditions:\n\n(i) $0\\le a_1\\le a_2\\le\\dots\\le a_k$;\n\n(ii) $a_1+a_2+\\dots+a_k=1$.\n\nProve that $\\dfrac{a_1+a_2+\\dots+a_n}{n}\\le\\dfrac{1}{k}$ for $n=1,2,\\dots,k$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all functions $f$ defined for all real numbers and taking real numbers as values that satisfy the inequality $$|f(x+h)-f(x)|\\le h^2$$ for all real numbers $x$ and $h$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A staircase sequence is a sequence of ordered pairs of non-negative integers $(x_1,y_1)$, $(x_1,y_2)$, $(x_2,y_2)$, $(x_2,y_3)$, $(x_3,y_3)$, $(x_3,y_4)$, $(x_4,y_4)$, $(x_4,y_5)$, $\\dots$, in which $0\\le x_1\\le x_2\\le x_3\\le\\cdots$ and $0\\le y_1\\le y_2\\le y_3\\le\\cdots$. Prove that if each $(x,y)$ in the coordinate plane, with $x$ and $y$ being non-negative integers, is coloured either red or blue, then it is possible to find an infinite staircase such that all its points are the same colour."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For each positive integer $n$ let $p(n)$ be the product of positive integers that divide $n$. Prove that if $a$ and $b$ are positive integers and $p(a)=p(b)$, then $a=b$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For any real number $x$, let $\\lfloor x\\rfloor$ denote the largest integer not exceeding $x$. Prove that if $n$ is a positive integer, then $$\\left\\lfloor\\sqrt{n}+\\sqrt{n+1}\\right\\rfloor=\\left\\lfloor\\sqrt{4n+1}\\right\\rfloor.$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $m$ and $n$ be integers greater than $1$. Prove that $$\\frac{1}{\\sqrt[m]{n+1}}+\\frac{1}{\\sqrt[n]{m+1}}>1.$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $ABC$ be a triangle with $\\angle ABC=60^\\circ$ and $\\angle BAC=40^\\circ$. Let $P$ be a point on $AB$ such that $\\angle BCP=70^\\circ$ and let $Q$ be a point on $AC$ such that $\\angle CBQ=40^\\circ$. Let $BQ$ intersect $CP$ at $R$. Prove that $AR$ (extended) is perpendicular to $BC$."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all real solutions of the equation $$(x+1998)(x+1999)(x+2000)(x+2001)+1=0.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all pairs $(r,s)$ of non-negative real numbers that satisfy the following two conditions:\n\n(i) $2^{r^4+s^2}+2^{r^2+s^4}=8$;\n\n(ii) $r+s=2$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In $\\triangle ABC$, let $D$ be a point on $AB$ and $E$ be a point on $AC$ such that $DE\\parallel BC$ and $DE$ is tangent to the incircle of $\\triangle ABC$.\n\nProve that $8DE\\le AB+BC+CA$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine all functions $f:\\mathbb{R}\\setminus\\{0\\}\\to\\mathbb{R}$ such that\n\n(i) $f(-x)=f(x)$ for all $0\\ne x\\in\\mathbb{R}$;\n\n(ii) $f\\left(\\dfrac{1}{x+y}\\right)=f\\left(\\dfrac{1}{x}\\right)+f\\left(\\dfrac{1}{y}\\right)+2(xy-1000)$ for all $x,y\\in\\mathbb{R}$ such that $x,y,x+y\\ne 0$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Consider all binary $2\\times2$ arrays, where binary means each entry is 0 or 1. We say that a pair $A,B$ of such $2\\times2$ arrays is compatible if there exists a $3\\times3$ array within which both $A$ and $B$ appear as $2\\times2$ arrays, e.g., the pair $$\\begin{pmatrix}1&0\\\\1&1\\end{pmatrix},\\quad\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$$ are compatible since both arrays occur within $$\\begin{pmatrix}1&0&0\\\\1&1&0\\\\1&0&0\\end{pmatrix}.$$ Determine all pairs of binary $2\\times2$ arrays that are not compatible."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that for all $n\\in\\mathbb{N}$, $$(1998n)!\\le\\left(\\frac{3995n+1}{2}\\cdot\\frac{3993n+1}{2}\\cdot\\frac{3991n+1}{2}\\cdot\\cdots\\cdot\\frac{n+1}{2}\\right)^n.$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Suppose $\\triangle ABC$ has area $1998\\,\\text{cm}^2$. Let $G$ be the centroid of $\\triangle ABC$. Each line through $G$ cuts $\\triangle ABC$ into two regions having areas $A_1$ and $A_2$, say.\n\nDetermine the largest possible value of $A_1-A_2$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A team of archaeologists was able to establish that $40\\,000$ years ago, there had been a flourishing civilisation in the crocodile-infested jungle of Udakak. As many as 12 cities were excavated. After some effort, the Udakak script was deciphered, and the rich Udakak literature was studied by historians. They discovered that\n\n(i) Udakak could not have had more than 28 cities;\n\n(ii) the Udakakan cities had peculiar trade arrangements:\n\n(a) whenever a city $A$ had no trade relations with another city $B$, there were exactly two cities with which $A$ and $B$ both had trade relations;\n\n(b) whenever a city $A$ had trade relations with another city $B$, no city had trade relations with both $A$ and $B$.\n\nFor budgetary reasons, the archaeologists wanted to know how much excavation work was still ahead of them.\n\nShow how the archaeologists can work out the exact number of Udakakan cities."
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Points $P$, $Q$, $R$, $S$ lie, in that order, on a circle such that $PQ\\parallel SR$ and $QR=SR$. Point $T$ lies in the same plane as the circle such that $QT$ is tangent to the circle and $\\angle RQT$ is acute.\n\nProve that\n\n(a) $PS=QR$;\n\n(b) $\\angle PQT$ is trisected by $QR$ and $QS$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A town has 99 clubs $C_1,C_2,\\dots,C_{99}$, each of which has at least one member, and no two of which have exactly the same members.\n\nDetermine the least $n\\in\\mathbb{N}$ such that one can be certain there is a set $S$ of $n$ people with the property: whenever $C_i$ and $C_j$, $1\\le i,j\\le 99$, are different clubs in the town, then either there is a person in $S$ who belongs to $C_i$ but not to $C_j$, or there is a person in $S$ who belongs to $C_j$ but not to $C_i$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "(a) Find $a_1,a_2,a_3,d_3\\in\\mathbb{N}$ such that\n\n(i) $a_k-a_{k-1}=d_3$ for $k=2,3$, and\n\n(ii) there are $m_i,b_i\\in\\mathbb{Z}$ such that $m_i>1$ and $a_i=b_i^{m_i}$ for $i=1,2,3$.\n\n(b) Show for each integer $n>1$, there exist $a_1,a_2,\\dots,a_n,d_n\\in\\mathbb{N}$ such that\n\n(i) $a_k-a_{k-1}=d_n$ for $k=2,3,\\dots,n$, and\n\n(ii) there are $m_i,b_i\\in\\mathbb{Z}$ such that $m_i>1$ and $a_i=b_i^{m_i}$ for $i=1,2,\\dots,n$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "In triangle $\\triangle$, the radius of the incircle is $r$.\n\nProve that the sum of the lengths of the altitudes of $\\triangle$ is at least $9r$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $1<x\\in\\mathbb{R}$ and $1<n\\in\\mathbb{Z}$. Prove that $$1+\\frac{x-1}{nx}<\\sqrt[n]{x}<1+\\frac{x-1}{n}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For $\\triangle ABC$, points $D$, $E$, $F$ are in its exterior such that $\\triangle ABD$, $\\triangle BCE$, $\\triangle CAF$ are equilateral. The sides of these triangles are extended so that $BE$ and $AF$ meet at $K$, $DB$ and $FC$ meet at $L$, and $DA$ and $EC$ meet at $M$.\n\nProve that $DK\\parallel EL\\parallel FM$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $n\\in\\mathbb{Z}$ and $p$ be a prime such that $1+np$ is a perfect square.\n\nProve that $n+1$ is the sum of $p$ perfect squares."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "(a) Find an integer sequence $a_1,a_2,\\dots$ with the properties\n\n(i) $a_n\\in\\{1,-1\\}$ for $n\\in\\mathbb{N}$;\n\n(ii) $a_{mn}=a_ma_n$ for all $m,n\\in\\mathbb{N}$;\n\n(iii) for no $n\\in\\mathbb{N}$ does $a_n=a_{n+1}=a_{n+2}$ hold.\n\n(b) Determine all integer sequences $a_1,a_2,\\dots$ with the properties (i), (ii), (iii)."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all polynomials $f$ with real coefficients such that $$(x-27)f(3x)=27(x-1)f(x)\\quad\\text{for all } x\\in\\mathbb{R}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For each date of the year 2000, evaluate the expression $$\\text{day}^{\\text{month}}-\\text{year}$$ and then find the highest power of 5 dividing it, e.g. for 15 April, 2000, we obtain $$\\text{day}^{\\text{month}}-\\text{year}=15^4-2000=5^3(405-16)=5^3\\cdot 389,$$ for which the highest power of 5 dividing it is $5^3$.\n\nFind all dates for which the corresponding power of 5 is the greatest."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $x_1,x_2,\\dots,x_n,y_1,y_2,\\dots,y_n\\in\\mathbb{R}$ such that\n\n(i) $0<x_1y_1<x_2y_2<\\cdots<x_ny_n$ and\n\n(ii) $x_1+x_2+\\dots+x_i\\ge y_1+y_2+\\dots+y_i$ for $1\\le i\\le n$.\n\nProve that $$\\frac{1}{x_1}+\\frac{1}{x_2}+\\dots+\\frac{1}{x_n}\\le\\frac{1}{y_1}+\\frac{1}{y_2}+\\dots+\\frac{1}{y_n}.$$ When does equality occur?"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $A$, $B$, $C$, $A'$, $B'$, $C'$ be points on a circle such that $AA'\\perp BC$, $BB'\\perp CA$, $CC'\\perp AB$. Further, let $D$ be on the circle, and let $DA'$ meet $BC$ at $A''$, $DB'$ meet $CA$ at $B''$, $DC'$ meet $AB$ at $C''$, all line segments being extended where required.\n\nProve that $A''$, $B''$, $C''$ and the orthocentre of $\\triangle ABC$ are collinear."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $m,n\\in\\mathbb{N}$. Prove that $m^{n+2}+m^{n+1}+m^n$ is not a perfect square."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a,b,c\\in\\mathbb{R}$, not all zero. Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$af(xy+z^2)+bf(yz+x^2)+cf(zx+y^2)=0\\quad\\text{for all } x,y,z\\in\\mathbb{R}.$$ Distinguish all possibilities for $a,b,c$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Solve the following system of equations $$\\begin{aligned} x+\\lfloor y\\rfloor+\\{z\\}&=200.0\\\\ \\{x\\}+y+\\lfloor z\\rfloor&=190.1\\\\ \\lfloor x\\rfloor+\\{y\\}+z&=178.8,\\end{aligned}$$ where for $r\\in\\mathbb{R}$, $\\{r\\}=r-\\lfloor r\\rfloor$, the “fractional part” of $r$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $A_1$, $A_2$, $A_3$, $A_4$, $A_5$, $A_6$, $A_7$ be vertices of a heptagon lying in plane $\\Pi$, and let $B$ and $C$ be different points not lying in $\\Pi$ and such that no three of these nine points are collinear. Now colour each of the 14 edges $A_iB$ and $A_iC$ ($i=1,2,\\dots,7$), the 14 diagonals of $A_1A_2A_3A_4A_5A_6A_7$, and the line segment $BC$, either green or gold.\n\nProve that there are three line segments of the same colour that form a triangle."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $L(n)$ be the least common multiple of $1,2,\\dots,n$.\n\nDetermine all prime number pairs $(p,q)$ such that $q=p+2$ and $L(q)>qL(p)$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $\\triangle BCA$ be isosceles with $BC=CA$, and circumcentre $O$. Let $P$, $Q$, $R$ be points on $AB$, $BC$, $CA$, respectively, such that $PQ\\parallel AC$ and $PR\\parallel BC$.\n\nProve that the quadrilateral $CROQ$ is cyclic."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A town has $c$ celebrities and $m$ magazines. One week, each celebrity was mentioned in an odd number of magazines and each magazine mentioned an odd number of celebrities.\n\n(a) Prove that $m$ and $c$ are either both even or both odd.\n\n(b) In how many ways can that mentioning of celebrities happen? Express this number in terms of $c$ and $m$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that the polynomial $$4x^8-2x^7+x^6-3x^4+x^2-x+1$$ has no real root."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big((x-y)^2\\big)=x^2-2yf(x)+\\big(f(y)\\big)^2.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In $\\triangle ABC$, $AC>BC$. On the circumcircle of $\\triangle ABC$, let $D$ be the midpoint of arc $AB$ containing $C$. Let $E$ be the point on $AC$ such that $DE\\perp AC$.\n\nProve that $AE=EC+CB$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Prove that there do not exist $w,x,y,z\\in\\mathbb{N}$ such that $$\\begin{aligned} x^2&=10w-1\\\\ y^2&=13w-1\\\\ z^2&=85w-1.\\end{aligned}$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "The country of Senso Unico has an airline whose flight routes are arranged as follows:\n\n(i) whenever there is a direct route from city $A$ to city $B$, there is no direct route from city $B$ to city $A$;\n\n(ii) there is a route out of every city in Senso Unico;\n\n(iii) whenever there is a direct route from city $A$ to city $C$, there is a city $B$ such that there is a direct route from city $A$ to city $B$ and a direct route from city $B$ to city $C$.\n\nThe population of Senso Unico is very proud to have the smallest number of cities that allows such an arrangement.\n\nDetermine this number."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $m,n\\in\\mathbb{N}$ such that $2001m^2+m=2002n^2+n$.\n\nProve that $m-n$ is a perfect square."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all triples $(u,v,w)$ of real numbers satisfying\n\n(i) $u+v+w=38$,\n\n(ii) $uvw=2002$,\n\n(iii) $0<u\\le 11$, $w\\ge 14$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A line through a vertex of a triangle is called a dividend if it cuts the triangle into two triangles with equal perimeters.\n\nProve that the dividends of a triangle concur."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine the largest $n\\in\\mathbb{N}$ for which there exists a set $S$ with exactly $n$ numbers such that\n\n(i) each number in $S$ is a positive integer not exceeding 2002;\n\n(ii) if $a,b\\in S$, then $ab\\notin S$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f\\big(2002x-f(0)\\big)=2002x^2\\quad\\text{for all } x\\in\\mathbb{R}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be a rectangle, and let $E$, $F$ be points on $BC$, $CD$, respectively, such that $\\triangle AEF$ is equilateral.\n\nProve that the area of $\\triangle ECF$ equals the sum of the areas of $\\triangle ABE$ and $\\triangle AFD$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $n,q\\in\\mathbb{Z}$ such that $n\\ge 5$ and $2\\le q\\le n$. Prove that $q-1$ divides $$\\left\\lfloor\\frac{(n-1)!}{q}\\right\\rfloor.$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $a,b,c,A,B,C,D\\in\\mathbb{R}$ such that $$(Ax+B)(Cx+D)=ax^2+bx+c\\quad\\text{for all } x\\in\\mathbb{R}.$$ Prove that at least one of $a,b,c$ is $\\ge\\frac49(A+B)(C+D)$."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all triples $(p,q,r)$ of positive integers that satisfy:\n\n(i) $p(q-r)=q+r$,\n\n(ii) $p$, $q$ and $r$ are prime numbers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all functions $f$ that are defined for all real numbers $x\\ne 0,1$, with real numbers as their values, and which satisfy $$f(x)+\\frac{1}{2x}f\\left(\\frac{1}{1-x}\\right)=1.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle such that $\\angle ACB=2\\angle ABC$, and let $D$ be a point in the interior of $ABC$ satisfying $AD=AC$ and $DB=DC$.\n\nProve that $\\angle BAC=3\\angle BAD$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $$p(x)=x^{2003}+a_{2002}x^{2002}+a_{2001}x^{2001}+\\dots+a_2x^2+a_1x+a_0,$$ where $a_0,a_1,\\dots,a_{2002}$ are integers. Let $q(x)=p(x)^2-25$.\n\nProve that there are not more than 2003 distinct integers $m$ such that $q(m)=0$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "After several kilometres of a televised bicycle race along a straight stretch of road on the Nullarbor, the favourite Andrew pulled well ahead of the rest of the field closely followed by Brenda and then Chris. For the remainder of the race those three were ahead of the rest and, although they frequently changed places, at no time were all three abreast. During the finish a thunderstorm caused the TV signal to drop out, and when it came back on the race was over. The frustrated viewers only heard that the leading position changed 19 times while the third position changed 17 times and that Brenda came third.\n\nWho won the race and why?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $AD$ be a median of $\\triangle ABC$. Let point $E$ lie on $AD$ (extended if necessary) such that $CE\\perp AD$. Suppose that $\\angle ACE=\\angle ABC$.\n\nProve that either $AB=AC$ or $\\angle BAC=90^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $a_1,a_2,a_3,\\ldots$ be a sequence defined by\n\n(i) $a_1=0$,\n\n(ii) either $a_{i+1}=a_i+1$ or $a_{i+1}=-a_i-1$, for each $i\\ge 0$.\n\nAn example is $0,1,2,3,-4,-3,2,\\ldots$.\n\nProve that $\\dfrac{a_1+a_2+\\dots+a_n}{n}\\ge-\\dfrac12$, for all positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $S$ be any sequence of $n$ letters ($n\\ge 1$) not more than 10 of which are different, e.g. MATHEMATICIANS or GOOLLLDDMMMMEDALLLLLSYESYESYES.\n\nProve that each letter of the sequence can be replaced by a single decimal digit such that\n\n(i) different letters are replaced by different digits,\n\n(ii) the first letter of the sequence is replaced by a digit other than $0$,\n\n(iii) the resulting $n$-digit number is a multiple of $9$."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all pairs $(a,b)$ of real numbers for which the equation $x^3+3x^2+ax+b=0$ has three different real solutions that can be arranged in arithmetic progression, i.e. the third minus the second is equal to the second minus the first."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Suppose $0\\le x\\le a\\le y\\le b\\le z$ and $a+b+x+y+z=2004$.\n\nDetermine, with proof, the minimum possible value of $x+y+z$.\n\nDetermine, with proof, the maximum possible value of $x+y+z$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine the number of sequences $a_1,a_2,\\dots,a_{2004}$ which are the numbers $1,2,\\dots,2004$ in some order and satisfy $$|a_1-1|=|a_2-2|=\\cdots=|a_{2004}-2004|>0.$$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $ABC$ be an equilateral triangle, and let $D$ be a point on $AB$ between $A$ and $B$. Next, let $E$ be a point on $AC$ with $DE\\parallel BC$. Further, let $F$ be the midpoint of $CD$ and $G$ be the circumcentre of $\\triangle ADE$.\n\nDetermine the angles of $\\triangle BFG$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all non-negative integers $m,n$ for which $6^m+2^n+2$ is a perfect square."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Decide whether or not there is a function $f$ defined for all positive integers and taking positive integers as values such that $$f\\big(f(1)\\big)=5,\\quad f\\big(f(2)\\big)=6,\\quad f\\big(f(3)\\big)=4,\\quad f\\big(f(4)\\big)=3,\\quad f\\big(f(n)\\big)=n+2\\ \\text{for } n\\ge 5.$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A necklace is made from an even number, $n\\ge 4$, of beads, each of which is coloured red, blue or green. There is an equal number of blue beads and green beads on the necklace. It is impossible to cut the necklace into two separate strings such that each string contains a positive even number of beads and such that each string contains the same number of blue and green beads.\n\nFind all the possibilities for the number of red beads on the necklace."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $ABCD$ be a parallelogram. Suppose there exists a point $P$ in the interior of $ABCD$ such that $\\angle ABP=2\\angle ADP$ and $\\angle DCP=2\\angle DAP$.\n\nProve that $AB=BP=CP$."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a right-angled triangle with the right angle at $C$. Let $BCDE$ and $ACFG$ be squares external to the triangle. Furthermore, let $AE$ intersect $BC$ at $H$, and let $BG$ intersect $AC$ at $K$.\n\nFind the size of $\\angle DKH$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider a polyhedron whose faces are convex polygons.\n\nShow that it has at least two faces with the same number of edges."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be a positive integer, and let $a_1,a_2,\\dots,a_n$ be positive real numbers such that $$a_1+a_2+\\dots+a_n=n.$$ Show that $$\\frac{a_1}{a_1^2+1}+\\frac{a_2}{a_2^2+1}+\\dots+\\frac{a_n}{a_n^2+1}\\le\\frac{1}{a_1+1}+\\frac{1}{a_2+1}+\\dots+\\frac{1}{a_n+1}.$$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Show that, for each positive integer $n$, there exists a positive integer $x$ such that $$\\sqrt{x+2004^n}+\\sqrt{x}=(\\sqrt{2005}+1)^n.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a multiple choice test there are $q\\ge 10$ questions. For each question there are $a>1$ possible answers, exactly one of which is right. A student who gets $r$ answers right, $w$ answers wrong and does not attempt the other questions will receive a score of $$\\frac{100(r-w)}{q(a-1)}.$$ Determine all different pairs $(q,a)$ such that all possible scores are integers."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle. Let $D$, $E$, $F$ be points on the line segments $BC$, $CA$ and $AB$, respectively, such that line segments $AD$, $BE$ and $CF$ meet in a single point. Suppose that $ACDF$ and $BCEF$ are cyclic quadrilaterals.\n\nProve that $AD\\perp BC$, $BE\\perp AC$ and $CF\\perp AB$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $a_0,a_1,a_2,\\dots$ and $b_0,b_1,b_2,\\dots$ be two sequences of integers such that $a_0=b_0=1$ and, for each non-negative integer $k$,\n\n(i) $a_{k+1}=b_0+b_1+b_2+\\dots+b_k$ and\n\n(ii) $b_{k+1}=(0^2+0+1)a_0+(1^2+1+1)a_1+\\dots+(k^2+k+1)a_k$.\n\nFor each positive integer $n$ show that $$a_n=\\frac{b_1b_2\\dots b_n}{a_1a_2\\dots a_n}.$$"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In an $n\\times n$ array, each of $n$ distinct symbols occurs exactly $n$ times. An example with $n=3$ is shown: $$\\begin{array}{|c|c|c|}\\hline 1&2&3\\\\\\hline 1&3&2\\\\\\hline 2&3&1\\\\\\hline\\end{array}$$ Show that there is a row or column in the array with at least $\\sqrt{n}$ distinct symbols."
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all solutions to $1+5\\times 2^m=n^2$, where $m,n$ are positive integers."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f$ be a function taking positive integers to positive integers such that\n\n(i) $f(ab)=f(a)f(b)$,\n\n(ii) $f(a)<f(b)$ whenever $a<b$,\n\n(iii) $f(3)\\ge 7$.\n\nFind the smallest value that $f(3)$ can take."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $PRUS$ be a trapezium with $PR\\parallel SU$ such that $\\angle SPU=2\\angle UPR$ and $\\angle PSR=2\\angle RSU$. Suppose $Q$ is on $PR$ such that $QS$ bisects $\\angle PSR$ and, similarly, $T$ is on $SU$ such that $TP$ bisects $\\angle SPU$. Let $PT$ meet $SQ$ at $E$, and let $PU$ meet $SR$ at $F$. The line through $E$ parallel to $SR$ meets $PU$ at $G$, and the line through $E$ parallel to $PU$ meets $SR$ at $H$. Finally, the line through $G$ and $H$ meets $PR$ at $K$ and $SU$ at $L$.\n\nProve that $KG=GH=HL$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $P_1,P_2,\\dots,P_n$ be $n$ different points on a circle. Between each pair of points there is a line segment which is coloured either red or blue. Consider colourings for which $P_iP_j$ is red if and only if $P_{i+1}P_{j+1}$ is blue, for any distinct $i$ and $j$ in the set $\\{1,\\dots,n\\}$. We interpret $P_{n+1}$ as being the same point as $P_1$.\n\n(a) For which values of $n$ is such a colouring possible?\n\n(b) Let a step consist of moving along a single red segment from one point to another point. Show that it is possible to get from each point to any other point in at most three steps."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCD$ be a square, and let $E$ be a point on its diagonal $BD$. Suppose that $O_1$ is the centre of the circle passing through $\\triangle ABE$ and $O_2$ is the centre of the circle passing through $\\triangle ADE$.\n\nShow that $AO_1EO_2$ is a square."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For each positive integer $n$, let $a(n)$ denote the product of all digits of $n$.\n\n(a) Show that $a(n)\\le n$.\n\n(b) Find all solutions to the equation $n^2-17n+56=a(n)$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For each sequence $S=(a_1,a_2,\\dots,a_n)$ of non-negative integers let the offspring of $S$ be the sequence $T=(b_1,b_2,\\dots,b_n)$, where $b_i$ is the number of integers in $S$ to the right of $a_i$ that are less than $a_i$. For example, if $S=(6,1,8,0,5,7,2,2,4,0,7,7,5)$, then $T=(8,2,10,0,4,5,1,1,1,0,1,1,0)$.\n\nFor a given sequence $S_0$, let $S_1$ be the offspring of $S_0$, $S_2$ be the offspring of $S_1$, and so on.\n\nShow that there exists an integer $j$ such that $S_j=S_{j+1}$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Alice and Bob play the following guessing game. Alice chooses a positive integer $a$ and tells Bob that it is at most 2006. At each turn, Bob chooses a positive integer $b$ and calls it out to Alice. Alice then tells Bob whether or not $a+b$ is prime.\n\nProve that there is a strategy for Bob to determine $a$ in less than 2006 turns."
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In $\\triangle ABC$ let $AB$ be the shortest side. Let the midpoints of $BC$ and $AC$ be $X$ and $Y$, respectively. Suppose $P$ is on $AC$ such that $PX$ is perpendicular to $BC$. The circle passing through $A$, $B$ and $P$ meets the side $BC$ again at $Q$.\n\nProve that $QY$ is perpendicular to $AC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p$ be an odd prime. Determine all pairs $(m,n)$ of positive integers that satisfy $$(p-1)(p^n+1)=4m(m+1).$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Consider an $m\\times n$ rectangle divided into $mn$ unit squares using $m-1$ horizontal grid lines and $n-1$ vertical grid lines. The rectangle is to be cut into $mn$ unit squares in stages as follows.\n\nThe first stage is to cut the rectangle into two pieces along a grid line. Each subsequent stage consists of choosing one or more pieces and cutting each of these into two along one of its grid lines.\n\nFind, in terms of $m$ and $n$, the minimum number of stages required."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "(a) Prove that for each positive integer $n$ there exists a real number $C_n$ such that $$r+r^2+r^3+\\dots+r^{2n}\\le C_n(1+r^{2n+1})$$ for all positive real numbers $r$.\n\n(b) For each $n$, find the minimum value of $C_n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Consider a $3\\times 3$ square array of distinct positive integers. It is called special if the eight products of the numbers in each row, each column and each diagonal are equal. For a special array let the common value of the products be $P$.\n\n(a) Show that there is exactly one such $P$ between 5000 and 6500.\n\n(b) Give an example of a special array with this value of $P$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a$ and $b$ be non-zero real numbers such that $a^2+b^2=1$.\n\nProve that $\\left|a+\\frac{a}{b}+b+\\frac{b}{a}\\right|\\ge 2-\\sqrt{2}$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $ABC$ be an acute angled triangle. For each point $M$ on the segment $AC$, let $S_1$ be the circle through $A$, $B$ and $M$, and let $S_2$ be the circle through $M$, $B$ and $C$. Let $D_1$ be the disk bounded by $S_1$, and let $D_2$ be the disk bounded by $S_2$.\n\nShow that the area of the intersection of $D_1$ and $D_2$ is smallest when $BM\\perp AC$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $S$ be a finite set of non-negative real numbers including $0$. Suppose that whenever $a$ and $b$ belong to $S$, then at least one of $a+b$ and $|a-b|$ belongs to $S$.\n\nProve that\n\n(i) $S$ consists of exactly four distinct real numbers\n\nor\n\n(ii) $S=\\{0,r,2r,\\dots,nr\\}$ for some non-negative integer $n$ and some positive real number $r$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $K$ be a circle with $PQ$ as diameter. Let $C$ be a circle with centre on $K$ and with $PQ$ tangent to $C$.\n\nProve that the other tangents from $P$ and $Q$ are parallel."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $f(x)=5^x$. Determine all real solutions of the equation $$f\\big(x+f(2008)\\big)=2008-x.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A positive integer is called square-free if it has no factor greater than 1 which is a perfect square.\n\nFor each positive integer $n$, let $f(n)$ be the sum of all square-free factors of $n$.\n\nDetermine all values of $n$, for which $f(n)/n$ is an integer."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all positive integers $n$ and all prime numbers $p$ such that the polynomial $$x^5+x+p^n$$ can be written as the product of two polynomials with integer coefficients and positive degrees."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For each positive integer $m$, let $F(m)$ be the largest integer such that $10^{F(m)}$ divides $m!$.\n\nProve that there exists a positive integer $n$ such that for each $m$ $$\\text{either}\\quad F(m)\\le n\\quad\\text{or}\\quad F(m)\\ge n+2008.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be a convex quadrilateral. Suppose there is a point $P$ on the segment $AB$ with $\\angle APD=\\angle BPC=45^\\circ$.\n\nIf $Q$ is the intersection of the line $AB$ with the perpendicular bisector of $CD$, prove $\\angle CQD=90^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $A_1A_2A_3$ and $B_1B_2B_3$ be triangles. If $$\\begin{aligned} p&=A_1A_2+A_2A_3+A_3A_1+B_1B_2+B_2B_3+B_3B_1,\\ \\text{and}\\\\ q&=A_1B_1+A_1B_2+A_1B_3+A_2B_1+A_2B_2+A_2B_3+A_3B_1+A_3B_2+A_3B_3,\\end{aligned}$$ prove that $3p\\le 4q$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A rectangular chessboard has 5 rows and 2008 columns. Each square is painted either red or blue.\n\nDetermine the largest integer $N$ which guarantees that, no matter how the chessboard is coloured, there are two rows which have matching colours in at least $N$ columns."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute-angled triangle, and let $P$ and $Q$ be points on sides $AC$ and $BC$, respectively, such that $APQB$ is a cyclic quadrilateral. Let $R$ be the point such that $PR\\perp AC$ and $QR\\perp BC$.\n\nProve that $CR\\perp AB$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider rectangular rooms whose side lengths are integers $>1$. Tile the floors of such rooms with unit square tiles. Edge tiles are those next to the walls of the room (including corner tiles). The remaining tiles are interior tiles.\n\nA pair $(R,S)$ of rooms ($R$ may have the same dimensions as $S$) is compatible if\n\n(i) the number of edge tiles in $R$ = the number of interior tiles in $S$, and\n\n(ii) the number of edge tiles in $S$ = the number of interior tiles in $R$.\n\nFor a compatible pair $(R,S)$, let $m(R,S)$ be the minimal length of an edge occurring in $R$ or $S$.\n\nDetermine the largest value $m(R,S)$ can take."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The polynomials $x^2+x$ and $x^2+2$ are written on a white board. Sue is allowed to write on this board the sum, the difference or the product of any two polynomials already on the board. She repeats this process as many times as she likes.\n\nCan Sue ever write the polynomial $x$ on the board?"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $a_1,a_2,\\dots,a_m\\in\\mathbb{Z}$, where $m\\ge 3$, and let $N=\\dfrac{m(m+1)}{2}$.\n\nProve that there is an integer $k$ such that none of the integers $a_i+a_j-k$ is divisible by $N$, for all pairs of integers $(i,j)$ such that $1\\le i,j\\le m$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A certain country has a finite number of towns, and all the distances between the towns are different. Each town is connected to its nearest neighbour by a straight road, and there are no other roads in the country.\n\n(a) Prove that no two roads cross each other.\n\n(b) Prove that there is no circuit within this road network."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that $$f(n)=\\begin{cases} n-9, & \\text{if } n>2009,\\\\ f\\big(f(n+1009)\\big), & \\text{if } n\\le 2009.\\end{cases}$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $I$ be the incentre of $\\triangle ABC$ in which $AC\\ne BC$. Let $\\Gamma$ be the circle passing through $A$, $I$ and $B$. Suppose $\\Gamma$ intersects the line $AC$ at $A$ and $X$ and intersects the line $BC$ at $B$ and $Y$.\n\nShow that $AX=BY$.\n\n(The incentre of a triangle is the intersection of its angle bisectors.)"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $ABC$ be a triangle, and let $X$, $Y$, $Z$ be points on the sides $BC$, $CA$, $AB$, respectively. Let $T$ be the area of $\\triangle XYZ$, and $T_1$, $T_2$, $T_3$ be the areas of $\\triangle AYZ$, $\\triangle BZX$, $\\triangle CXY$, respectively.\n\nProve that $$\\frac{3}{T}\\le\\frac{1}{T_1}+\\frac{1}{T_2}+\\frac{1}{T_3}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a_1,a_2,a_3,\\ldots\\in\\mathbb{R}$ be such that $$\\begin{aligned} a_1+a_2&=2010\\\\ \\text{and}\\quad a_{n-1}a_{n+1}&=a_n\\quad\\text{for } n=2,3,4,\\ldots.\\end{aligned}$$ Determine all possible values of $a_{2011}+a_{2012}$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A tiling of an $m\\times m$ chessboard is a complete covering of the board, without overlap, by $2\\times 1$ tiles. (A $2\\times 1$ tile covers exactly two squares of the chessboard and may be horizontal or vertical.)\n\n(a) Prove that for each tiling of a $2010\\times 4$ chessboard there is a straight line dividing the board into two non-empty regions such that each tile lies completely in one of the regions.\n\n(b) Prove that there is a tiling of a $2010\\times 5$ chessboard such that every straight line dividing the board into two non-empty regions crosses at least one tile."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Consider $\\triangle ABC$ with $AB\\ne AC$, and $P,Q,R,S$ are points on the line through $B$ and $C$, such that $P$ is the midpoint of $BC$, $AQ$ bisects $\\angle BAC$, $AR\\perp BC$ and $AS\\perp AQ$.\n\nProve that $PR\\times QS=AB\\times AC$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A positive integer is said to be square-free if it is $1$, is a prime, or is the product of two or more different primes.\n\nA prime $p$ is called good if for all primes $q<p$, the remainder when $p$ is divided by $q$ is square-free.\n\nDetermine all good primes."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $K$ and $L$ be concentric circles with radii $r$ and $s$, respectively, where $r<s$. Let $PA$ be a chord of $K$. Let $BC$ be a chord of $L$ passing through $P$, with $BC\\perp PA$.\n\nFind a formula, in terms of $r$ and $s$, for $PA^2+PB^2+PC^2$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that $$\\sqrt[3]{6+\\sqrt[3]{845}+\\sqrt[3]{325}}+\\sqrt[3]{6+\\sqrt[3]{847}+\\sqrt[3]{539}}=\\sqrt[3]{4+\\sqrt[3]{245}+\\sqrt[3]{175}}+\\sqrt[3]{8+\\sqrt[3]{1859}+\\sqrt[3]{1573}}.$$"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $a,b,c,d\\in\\mathbb{Z}$ such that $0<a<b<c<d<2010$.\n\nProve that there exists $e\\in\\mathbb{Z}$ satisfying:\n\n(i) $0<e<2010$,\n\n(ii) $e\\mid 2010$, and\n\n(iii) no two of $a,b,c,d$ give the same remainder on division by $e$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $O$ be the circumcentre and $H$ the orthocentre of $\\triangle ABC$, where $$\\angle A<\\angle B<\\angle C<90^\\circ.$$ Prove that the incentre of $\\triangle ABC$ lies inside $\\triangle BHO$."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $2\\le b\\in\\mathbb{N}$. For $n\\in\\mathbb{N}$ define $S_b(n)$ to be the sum of the digits of $n$ when $n$ is expressed in base $b$, e.g. if $b=4$ then $$S_4(26)=S_4(1\\times 4^2+2\\times 4+2\\times 1)=1+2+2=5.$$ Determine all $m\\in\\mathbb{N}$ with the property that for all $n\\in\\mathbb{N}$, whenever $m$ is a factor of $S_b(n)$, then $m$ is also a factor of $S_b(n+1)-1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The vertices of the regular polygon $P_1P_2\\ldots P_{2n}$ lie on a circle of radius 1. For $1\\le i\\le n-1$, let $a_i$ be the length of the line segment $P_1P_{i+1}$.\n\nProve that $$\\left(\\frac{4}{a_1^2}-1\\right)\\left(\\frac{4}{a_2^2}-1\\right)\\cdots\\left(\\frac{4}{a_{n-1}^2}-1\\right)=1.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A$, $B$, $C$ be three distinct points on a circle of radius $r$.\n\nProve that $\\triangle ABC$ has an obtuse angle if and only if there exists a point $X$ in the plane such that the distances $AX$, $BX$ and $CX$ are all less than $r$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine all functions $f:\\mathbb{N}\\cup\\{0\\}\\to\\mathbb{N}\\cup\\{0\\}$ such that $f(1)>0$ and $$\\big(f(x)\\big)^2+\\big(f(y)\\big)^2=f(x^2+y^2)\\quad\\text{for all } x,y\\in\\mathbb{N}\\cup\\{0\\}.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $PQRS$ be a rectangle with centre $O$. Let $E$, $F$ be the midpoints of $PQ$, $QR$, respectively. Let $A$, $B$, $C$, $D$ be points on $PQ$, $QR$, $RS$, $SP$, respectively, such that $ABCD$ is a rhombus and $A$ lies between $E$ and $Q$. Let $K$ be the intersection of $AB$ and $EF$.\n\nProve that $OK\\perp AB$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all $r\\in\\mathbb{R}$ such that the three solutions of the equation $$x^3-30x^2+rx-780=0$$ are the side lengths of a right-angled triangle."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Determine all $n\\in\\mathbb{N}$ with the property: for all $k\\in\\mathbb{Z}$, there exists $i\\in\\mathbb{Z}$ such that $\\dfrac{i(i-1)}{2}-k$ is divisible by $n$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $S$ be the set of all positive integers less than or equal to 2211. Let $T$ be a subset of $S$ containing 2011 elements.\n\nProve that there is a number in $T$ that is the sum of 11, not necessarily distinct numbers from $T$."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine the largest $n\\in\\mathbb{N}$ such that $$4^n+2^{2012}+1$$ is a perfect square."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $S$ be a set of points in the $(x,y)$-plane such that\n\n(i) no three points in $S$ are collinear, and\n\n(ii) for any two points $(a,b)$ and $(c,d)$ in $S$, at least two of $a,b,c,d$ are equal.\n\nWhat is the largest possible number of points in $S$?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $P$ be the intersection of the diagonals of a convex quadrilateral $ABCD$. Let $X,Y,Z$ be points on sides $AB,BC,CD$, respectively, such that $$AX:XB=BY:YC=CZ:ZD=2.$$ Suppose further that $XY$ is tangent to the circumcircle of $\\triangle CYZ$ and $YZ$ is tangent to the circumcircle of $\\triangle BXY$.\n\nProve that $\\angle APD=\\angle XYZ$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $$p(x)=x^{2012}+a_{2011}x^{2011}+a_{2010}x^{2010}+\\dots+a_2x^2+a_1x$$ be a polynomial such that $$p(x_1)=p(x_2)=\\cdots=p(x_{2012})=0$$ for distinct integers $x_1,x_2,\\dots,x_{2012}$.\n\nDetermine all $n\\in\\mathbb{Z}$ such that $p\\big(p(n)\\big)=0$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "(a) Prove that there is a unique triple $(x,y,z)$ of real numbers, satisfying all three equations $$\\begin{aligned}(x+20)(y+12)(z-4)&=1215\\\\ (x+20)(y-12)(z+4)&=1215\\\\ (x-20)(y+12)(z+4)&=1215.\\end{aligned}$$\n\n(b) Determine the least integer $n>1215$ such that the system $$\\begin{aligned}(x+20)(y+12)(z-4)&=n\\\\ (x+20)(y-12)(z+4)&=n\\\\ (x-20)(y+12)(z+4)&=n,\\end{aligned}$$ has integer solutions $x,y,z$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all triples $(p,a,b)$ of positive integers, such that $p$ is prime, $a\\le b$ and $p^a+p^b$ is a perfect cube."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "A rectangular array of square tiles has at least 3 rows and at least 3 columns.\n\nEach tile is coloured red, blue or green.\n\nThe bottom row consists entirely of red tiles, and in the top row all tiles are green. Except for the top and bottom tiles, all tiles in the leftmost column are blue, and except for the bottom tile, all tiles in the rightmost column are green.\n\nProve that there is a point where 4 tiles meet, at which there is at least one tile of each colour."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Two circles $C_1$ and $C_2$ intersect at distinct points $A$ and $B$. Let $P$ be the point on $C_1$ and $Q$ the point on $C_2$ such that $PQ$ is the common tangent closer to $B$ than to $A$.\n\nLet $BQ$ intersect $C_1$ again at $R$, and let $BP$ intersect $C_2$ again at $S$. Let $M$ be the midpoint of $PR$ and let $N$ be the midpoint of $QS$.\n\nProve that $AB$ bisects $\\angle MAN$."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a parallelogram, and let $P$ be a point on side $CD$. Let the line through $P$ parallel to $AD$ intersect the diagonal $AC$ at $Q$.\n\nProve $$(BCP)^2=(QBP)\\cdot(ABP).$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all triples $(x,y,z)$ of positive integers that satisfy $$20x^x=13y^y+7z^z.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\in\\mathbb{N}$ such that $8\\mid n-3$. Let $3<k\\in\\mathbb{Z}$.\n\nProve that $2^k$ divides $n^{2^{k-3}}-2^{k-1}-1$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $S=\\{1,2,3,\\dots,2013\\}$. A subset of $S$ is said to be good if among its elements there are numbers $a_1<a_2<\\cdots<a_{300}$ such that $$a_i-i\\quad\\text{is a multiple of } 3 \\text{ for}\\quad 1\\le i\\le 300.$$ Find the smallest integer $n$ such that every subset of $S$ with $n$ elements is good."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the largest $n\\in\\mathbb{N}$ such that $2013$ can be written as the sum of the squares of $n$ different positive integers."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "There are $2013$ people at a party. Among any $3$ of these people the number of pairs of people who know each other is odd.\n\nProve that there are $1007$ people who all know each other."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $\\triangle ABC$ be acute-angled with $\\angle ABC=35^\\circ$. Let $I=\\text{incentre}(ABC)$ and that $AI+AC=BC$. Let $P$ be the point such that $PB$ and $PC$ are tangent to $\\text{circumcircle}(ABC)$. Let $Q$ be the point on the line $AB$ such that $PQ\\parallel AC$.\n\nFind the value of $\\angle AQC$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Find all $n\\in\\mathbb{N}$ for which there exist $x_1,x_2,\\dots,x_n\\in\\mathbb{R}$ such that\n\n(i) $-1<x_i<1$ for $i=1,2,\\dots,n$,\n\n(ii) $x_1+x_2+\\dots+x_n=0$ and\n\n(iii) $\\sqrt{1-x_1^2}+\\sqrt{1-x_2^2}+\\dots+\\sqrt{1-x_n^2}=1$."
+        }
+      ]
+    },
+    {
       "year": 2014,
       "problems": [
         {
