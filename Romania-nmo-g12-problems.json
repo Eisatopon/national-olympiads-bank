@@ -1,0 +1,500 @@
+{
+  "competition": "Romanian National Mathematical Olympiad (Grade 12)",
+  "years": [
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "a) Let $K$ be a commutative field and $n$ a natural number, $n \\ge 2$. Determine\n$$Z(\\mathcal{M}_n(K)) = \\{A \\in \\mathcal{M}_n(K) \\mid AX = XA \\text{ for every } X \\in \\mathcal{M}_n(K)\\}$$\nand prove that the subring $Z(\\mathcal{M}_n(K))$ is isomorphic to $K$.\n\nb) Prove that the rings $\\mathcal{M}_n(\\mathbb{R})$ and $\\mathcal{M}_n(\\mathbb{C})$ are not isomorphic.",
+          "proposer": "Marian Andronache, Ion Savu"
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\in \\mathbb{N} \\setminus \\{1\\}$, $n$ odd. Determine the continuous functions $f : [0, 1] \\to \\mathbb{R}$ such that\n$$\\int_0^1 \\left(f\\left(\\sqrt[k]{x}\\right)\\right)^{n-k} dx = \\frac{k}{n} \\quad \\text{for every } k \\in \\{1, 2, \\dots, n - 1\\}.$$",
+          "proposer": "Titu Andreescu"
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous function with the property $x f(x) \\ge \\int_0^x f(t)\\, dt$ for every $x \\in \\mathbb{R}$.\n\na) Prove that the function $g : \\mathbb{R}^* \\to \\mathbb{R}$, $g(x) = \\dfrac{1}{x} \\displaystyle\\int_0^x f(t)\\, dt$, is increasing on $(-\\infty, 0)$ and on $(0, \\infty)$.\n\nb) If moreover $\\displaystyle\\int_x^{x+1} f(t)\\, dt = \\int_{x-1}^{x} f(t)\\, dt$ for every $x \\in \\mathbb{R}$, prove that $f$ is constant.",
+          "proposer": "Mihai Piticari"
+        },
+        {
+          "number": 4,
+          "problem": "If $(G, +)$ is a finite abelian group with $n(G)$ elements, denote by $i(G)$ the number of composition laws $(G, *)$ for which $(G, +, *)$ is a ring.\n\nProve that:\n\na) $i(\\mathbb{Z}_{12}) = 4$;\n\nb) $i(A \\times B) \\ge i(A)\\, i(B)$, where $(A, +)$ and $(B, +)$ are finite abelian groups;\n\nc) there exist two sequences of finite commutative groups $(G_k)_{k \\ge 1}$, $(H_k)_{k \\ge 1}$ such that\n$$\\lim_{k \\to \\infty} \\frac{n(G_k)}{i(G_k)} = 0 \\quad \\text{and} \\quad \\lim_{k \\to \\infty} \\frac{n(H_k)}{i(H_k)} = \\infty.$$",
+          "proposer": "Barbu Berceanu"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine all continuous functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for every $x \\in \\mathbb{R}$ and every $n \\in \\mathbb{N}^*$ the following relation holds:\n$$n^2 \\int_x^{x + \\frac{1}{n}} f(t)\\, dt = n f(x) + \\frac{1}{2}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $f \\in \\mathbb{Z}[X]$. For $n \\in \\mathbb{N}$, $n \\ge 2$, define $f_n : \\mathbb{Z}_n \\to \\mathbb{Z}_n$ by $f_n(\\widehat{x}) = \\widehat{f(x)}$ for $x \\in \\mathbb{Z}$.\n\na) Prove that $f_n$ is well defined.\n\nb) Determine all polynomials $f \\in \\mathbb{Z}[X]$ with the property that for every $n \\in \\mathbb{N}$, $n \\ge 2$, the function $f_n$ is surjective."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be an integrable function such that\n$$\\int_0^1 f(x)\\, dx = \\int_0^1 x f(x)\\, dx = 1.$$\nProve that\n$$\\int_0^1 f^2(x)\\, dx \\ge 4.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $K$ be a field of characteristic $p$, with $p \\equiv 1 \\pmod{4}$.\n\na) Prove that $-1$ is the square of an element of $K$.\n\nb) Prove that every nonzero element of $K$ can be written as a sum of three nonzero squares of elements of $K$.\n\nc) Does this representation remain true, in general, for the zero element of $K$?"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that the group morphisms $f : (\\mathbb{C}, +) \\to (\\mathbb{C}, +)$ for which there exists a positive real $\\lambda$ such that $|f(z)| \\le \\lambda |z|$ for every $z \\in \\mathbb{C}$ are of the form\n$$f(z) = \\alpha z + \\beta \\overline{z}, \\quad \\text{where } \\alpha, \\beta \\in \\mathbb{C}.$$",
+          "proposer": "Cristinel Mortici, Târgoviște"
+        },
+        {
+          "number": 2,
+          "problem": "Let $G$ be a group with $m$ elements and $H$ a proper subgroup of it with $n$ elements. For every $x \\in G$ denote\n$$H^x = \\{xhx^{-1} \\mid h \\in H\\}$$\nand suppose that $H^x \\cap H = \\{e\\}$ for every $x \\in G \\setminus H$.\n\n(a) Prove that $H^x = H^y$ if and only if $x^{-1}y \\in H$.\n\n(b) Determine the number of elements of the set $\\bigcup_{x \\in G} H^x$ in terms of $m$ and $n$.",
+          "proposer": "Călin Popescu, București"
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [0, \\infty) \\to (0, \\infty)$ be a continuous function such that $\\lim_{x \\to \\infty} \\int_0^x f(t)\\, dt$ exists and is finite. Prove that\n$$\\lim_{x \\to \\infty} \\frac{1}{\\sqrt{x}} \\int_0^x \\sqrt{f(t)}\\, dt = 0.$$",
+          "proposer": "Radu Miculescu, București"
+        },
+        {
+          "number": 4,
+          "problem": "Let $A$ be a ring with $2^n + 1$ elements, where $n$ is a nonzero natural number, and let $M = \\{k \\mid k \\in \\mathbb{N},\\ k \\ge 2,\\ x^k = x \\text{ for every } x \\in A\\}$.\n\nProve that the following statements are equivalent:\n\n(a) $A$ is a field;\n\n(b) $M$ is nonempty and its smallest element is equal to $2^n + 1$.",
+          "proposer": "Marian Andronache, București"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $K$ be a finite field. Prove that the following statements are equivalent:\n\na) $1 + 1 = 0$;\n\nb) for every $f \\in K[X]$ with $\\deg f \\ge 1$, the polynomial $f(X^2)$ is reducible."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that\n$$\\lim_{n \\to \\infty} n\\left(\\frac{\\pi}{4} - n \\int_0^1 \\frac{x^n}{1 + x^{2n}}\\, dx\\right) = \\int_0^1 f(x)\\, dx,$$\nwhere $f(x) = \\dfrac{\\arctan x}{x}$ if $x \\in (0, 1]$ and $f(0) = 1$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $G$ be a finite group with $n$ elements ($n \\ge 2$) and let $p$ be the smallest prime factor of $n$. If $G$ has a unique subgroup $H$ with $p$ elements, prove that $H$ is contained in the center of $G$.\n\n(The center of $G$ is the set $Z(G) = \\{a \\in G \\mid ax = xa,\\ \\forall x \\in G\\}$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be a continuous function with the property that\n$$\\int_0^1 f(x)\\, dx = 0.$$\nProve that there exists $c \\in (0, 1)$ such that\n$$\\int_0^c x f(x)\\, dx = 0.$$"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "a) If $u, v : [0, 1] \\to \\mathbb{R}$ are two continuous functions, prove the Cauchy inequality\n$$\\left(\\int_0^1 u(x) v(x)\\, dx\\right)^2 \\le \\left(\\int_0^1 (u(x))^2\\, dx\\right)\\left(\\int_0^1 (v(x))^2\\, dx\\right).$$\n\nb) Let $\\mathcal{C}$ be the set of all differentiable functions $f : [0, 1] \\to \\mathbb{R}$ with derivative $f'$ continuous on $[0, 1]$ and $f(0) = 0$, $f(1) = 1$. Determine\n$$\\min_{f \\in \\mathcal{C}} \\int_0^1 (1 + x^2)^{1/2} (f'(x))^2\\, dx$$\nand all the functions $f \\in \\mathcal{C}$ for which this minimum is attained."
+        },
+        {
+          "number": 2,
+          "problem": "Let $f : [0, 1] \\to (0, \\infty)$ be a function continuous on $[0, 1]$.\n\na) Prove that for every integer $n \\ge 1$ there exists a unique partition $0 = a_0 < a_1 < \\dots < a_n = 1$ of the interval $[0, 1]$ such that\n$$\\int_{a_k}^{a_{k+1}} f(x)\\, dx = \\frac{1}{n} \\int_0^1 f(x)\\, dx, \\quad k = 0, \\dots, n - 1. \\qquad (*)$$\n\nb) For every integer $n \\ge 1$ let\n$$\\bar{a}_n = \\frac{a_1 + \\dots + a_n}{n},$$\nwhere $0 = a_0 < a_1 < \\dots < a_n = 1$ is the unique partition with property $(*)$. Prove that the sequence $(\\bar{a}_n)_{n \\ge 1}$ is convergent and compute its limit."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\in \\mathbb{N}^*$. Determine all rings $(A, +, \\cdot)$ with the property $x^{2^n + 1} = 1$ for every $x \\in A \\setminus \\{0\\}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $S_n$ be the group of permutations of the set $\\{1, \\dots, n\\}$, $n \\ge 3$, and $G$ a subgroup of it generated by $n - 2$ transpositions. Prove that for every $i \\in \\{1, \\dots, n\\}$ the set $\\{\\sigma(i) : \\sigma \\in G\\}$ has at most $n - 1$ elements."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a > 0$ and let $f : [0, \\infty) \\to [0, a]$ be a function which is continuous on $(0, \\infty)$ and has the Darboux property on $[0, \\infty)$. Prove that if $f(0) = 0$ and\n$$x f(x) \\ge \\int_0^x f(t)\\, dt \\quad \\text{for every } x \\in [0, \\infty),$$\nthen $f$ has antiderivatives on $[0, \\infty)$."
+        },
+        {
+          "number": 2,
+          "problem": "Consider a differentiable function $f : [0, 1] \\to \\mathbb{R}$ with continuous derivative $f'$ on $[0, 1]$. Prove that if $f(1/2) = 0$, then\n$$\\int_0^1 (f'(x))^2\\, dx \\ge 12 \\left(\\int_0^1 f(x)\\, dx\\right)^2.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $A$ be a finite ring with $n$ elements, with the property that the equation $x^n = 1$ has the unique solution $x = 1$. Prove that:\n\n(a) $0$ is the only nilpotent element of the ring $A$;\n\n(b) there exists $k \\in \\mathbb{N}$, $k \\ge 2$, such that the equation $x^k = x$ has $n$ solutions in $A$.\n\n($x \\in A$ is nilpotent if there exists $m \\in \\mathbb{N}^*$ such that $x^m = 0$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathcal{G}$ be the set of finite groups with at least two elements.\n\n(a) Prove that if $G \\in \\mathcal{G}$, then\n$$|\\operatorname{End}(G)| \\le \\sqrt[p]{n^n},$$\nwhere $|\\operatorname{End}(G)|$ is the number of endomorphisms of $G$, $n = n(G)$ is the number of elements of $G$, and $p = p(G)$ is the largest prime divisor of $n$.\n\n(b) Determine the groups in $\\mathcal{G}$ for which the inequality in part (a) is an equality."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be a differentiable function with continuous derivative such that\n$$\\int_0^1 (f'(x))^2\\, dx \\le 2 \\int_0^1 f(x)\\, dx.$$\nDetermine $f$, given that $f(1) = -\\frac{1}{6}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $(A, +, \\cdot)$ be a finite commutative ring. Denote by $d$ the number of zero divisors of $A$ and by $n$ the number of nilpotent elements of the ring. Prove that:\n\n1. if $x$ and $y$ are nilpotent, then $x + y$ and $x \\cdot y$ are nilpotent;\n\n2. $n$ divides $d$.\n\n(An element $x \\in A$ is called a zero divisor if there exists $a \\in A$, $a \\ne 0$, such that $x \\cdot a = 0$. An element $y \\in A$ is called nilpotent if there exists $k \\in \\mathbb{N}^*$ such that $y^k = 0$.)"
+        },
+        {
+          "number": 3,
+          "problem": "Determine the natural numbers $n \\ge 2$ with the property that in the ring $(\\mathbb{Z}_n, +, \\cdot)$ exactly one element cannot be written as a sum of two squares."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all continuous bijective functions $f : [0, 1] \\to [0, 1]$ with the property that\n$$\\int_0^1 g(f(x))\\, dx = \\int_0^1 g(x)\\, dx$$\nfor every continuous function $g : [0, 1] \\to \\mathbb{R}$."
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a monotonic function and $F : \\mathbb{R} \\to \\mathbb{R}$,\n$$F(x) = \\int_0^x f(t)\\, dt.$$\nProve that if $F$ is differentiable, then $f$ is continuous."
+        },
+        {
+          "number": 2,
+          "problem": "A ring $A$ has property $(P)$ if every nonzero element can be written uniquely as the sum of an invertible element and a non-invertible element.\n\n(a) If $1 + 1 \\ne 0$ in the ring $A$, prove that $A$ has property $(P)$ if and only if $A$ is a division ring (skew field).\n\n(b) Give an example of a ring with at least two elements which has property $(P)$ but is not a division ring."
+        },
+        {
+          "number": 3,
+          "problem": "Let $G$ be a finite group with $n$ elements,\n$$H = \\{x : x \\in G \\text{ and } x^2 = e\\},$$\nwhere $e$ is the identity element of $G$, and let $p$ be the number of elements of $H$. Prove that:\n\n(a) $\\operatorname{Card}(H \\cap xH) \\ge 2p - n$ for every $x \\in G$, where $xH = \\{xh : h \\in H\\}$;\n\n(b) if $p > 3n/4$, then $G$ is commutative;\n\n(c) if $n/2 < p \\le 3n/4$, then $G$ is non-commutative."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : [-1, 1] \\to \\mathbb{R}$ be a continuous function, differentiable at $0$, and\n$$I(h) = \\int_{-h}^{h} f(x)\\, dx, \\quad h \\in [0, 1].$$\nProve that:\n\n(a) there exists $M > 0$ such that $|I(h) - 2f(0)h| \\le Mh^2$ for every $h \\in [0, 1]$;\n\n(b) the sequence $(a_n)_{n \\in \\mathbb{N}^*}$ defined by $a_n = \\sum_{k=1}^{n} \\sqrt{k}\\, |I(1/k)|$ is convergent if and only if $f(0) = 0$."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $m$ be a nonzero natural number, $p$ a prime number and $A$ a ring which has exactly $m$ invertible elements, and in which $\\underbrace{1 + 1 + \\dots + 1}_{p \\text{ times}} = 0$. Prove that the ring $A$ has nonzero nilpotent elements if and only if $p$ divides $m$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $f : [0, 1] \\to (0, \\infty)$ be a continuous function. For each $n \\in \\mathbb{N}$, $n \\ge 2$, consider the partition $0 = t_0 < t_1 < \\dots < t_n = 1$ such that\n$$\\int_{t_0}^{t_1} f(t)\\, dt = \\int_{t_1}^{t_2} f(t)\\, dt = \\dots = \\int_{t_{n-1}}^{t_n} f(t)\\, dt.$$\nCompute\n$$\\lim_{n \\to \\infty} \\frac{n}{\\dfrac{1}{f(t_1)} + \\dfrac{1}{f(t_2)} + \\dots + \\dfrac{1}{f(t_n)}}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\in \\mathbb{N}$, $n \\ge 2$, and let $A$ be a ring with $n$ elements such that the equation $x^{n+1} + x = 0$ has in $A \\setminus \\{0\\}$ the unique solution $x = 1$. Prove that $A$ is a field."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be an increasing function and $F : \\mathbb{R} \\to \\mathbb{R}$ a function which has finite one-sided derivatives at every point of $\\mathbb{R}$, with $F(0) = 0$. Given that\n$$\\lim_{x \\uparrow x_0} f(x) \\le F'_s(x_0) \\quad \\text{and} \\quad \\lim_{x \\downarrow x_0} f(x) \\ge F'_d(x_0)$$\nfor every $x_0 \\in \\mathbb{R}$, prove that\n$$F(x) = \\int_0^x f(t)\\, dt, \\quad x \\in \\mathbb{R}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f : [0, \\infty) \\to \\mathbb{R}$ be a continuous function such that\n$$\\int_0^n f(x) f(n - x)\\, dx = \\int_0^n (f(x))^2\\, dx$$\nfor every natural number $n \\ge 1$. Prove that the function $f$ is periodic."
+        },
+        {
+          "number": 2,
+          "problem": "Let $(R, +, \\cdot)$ be a ring and $f$ a surjective endomorphism of it such that $[x, f(x)] = 0$ for all $x \\in R$, where $[a, b] = ab - ba$, $a, b \\in R$. Prove that:\n\n(a) $[x, f(y)] = [f(x), y]$ and $x[x, y] = f(x)[x, y]$ for all $x, y \\in R$;\n\n(b) if $R$ is a division ring (skew field) and $f$ is different from the identity, then $R$ is commutative."
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\mathcal{C}$ be the set of integrable functions $f : [0, 1] \\to \\mathbb{R}$ such that $0 \\le f(x) \\le x$ for every $x \\in [0, 1]$. Define the function $V : \\mathcal{C} \\to \\mathbb{R}$ by\n$$V(f) = \\int_0^1 (f(x))^2\\, dx - \\left(\\int_0^1 f(x)\\, dx\\right)^2, \\quad f \\in \\mathcal{C}.$$\nDetermine the following two sets:\n\n(a) $\\{V(f_a) \\mid 0 \\le a \\le 1\\}$, where $f_a(x) = 0$ if $0 \\le x \\le a$, and $f_a(x) = x$ if $a < x \\le 1$;\n\n(b) $\\{V(f) \\mid f \\in \\mathcal{C}\\}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $m$ and $n$ be two nonzero natural numbers. Determine the minimum number of distinct complex roots of the polynomial $\\prod_{k=1}^{m} (f + k)$, as $f$ ranges over the polynomials of degree $n$ with complex coefficients."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the continuous functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the property that\n$$(a^2 + ab + b^2) \\int_a^b f(x)\\, dx = 3 \\int_a^b x^2 f(x)\\, dx$$\nfor all $a, b \\in \\mathbb{R}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $(A, +, \\cdot)$ be a ring which simultaneously satisfies the following two conditions:\n\n(1) $A$ is not a division ring (skew field);\n\n(2) for every non-invertible element $x$ of $A$ there exists an integer $m \\ge 1$, depending on $x$, such that\n$$x = x^2 + x^3 + \\dots + x^{2^m}.$$\n\nProve that:\n\n(a) $x + x = 0$ for all $x \\in A$;\n\n(b) $x^2 = x$ for every non-invertible element $x \\in A$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a \\in (0, 1)$ and let $\\mathcal{C}$ be the set of increasing functions $f : [0, 1] \\to [0, \\infty)$ such that $\\int_0^1 f(x)\\, dx = 1$. Determine:\n\n(a) $\\displaystyle \\max_{f \\in \\mathcal{C}} \\int_0^a f(x)\\, dx$;\n\n(b) $\\displaystyle \\max_{f \\in \\mathcal{C}} \\int_0^a (f(x))^2\\, dx$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n \\ge 2$ be a natural number, $(K, +, \\cdot)$ a field with the property that $\\underbrace{1 + \\dots + 1}_{m \\text{ times}} \\ne 0$ for $m = 2, \\dots, n$, $f \\in K[X]$ a polynomial of degree $n$, and $G$ a subgroup of the additive group $(K, +)$ with $G \\ne K$. Prove that there exists $a \\in K$ such that $f(a) \\notin G$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $(A, +, \\cdot)$ be a ring. For each $a \\in A$ define the functions $s_a : A \\to A$ and $d_a : A \\to A$ by $s_a(x) = ax$, $d_a(x) = xa$ for all $x \\in A$.\n\na) Prove that if $A$ is a finite set, then $s_a$ is injective if and only if $d_a$ is injective.\n\nb) Give an example of a ring containing an element $a$ for which exactly one of the functions $s_a$ and $d_a$ is injective."
+        },
+        {
+          "number": 2,
+          "problem": "Let $I$, $J$ be two intervals, let $\\varphi : J \\to \\mathbb{R}$ be a continuous function which does not vanish at any point of $J$, and let $f, g : I \\to J$ be two differentiable functions such that $f' = \\varphi \\circ f$ and $g' = \\varphi \\circ g$.\n\nProve that if there exists $x_0 \\in I$ such that $f(x_0) = g(x_0)$, then the functions $f$ and $g$ coincide."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [1, +\\infty) \\to (0, +\\infty)$ be a continuous function with the properties:\n\n(i) the function $g : [1, +\\infty) \\to (0, +\\infty)$ given by $g(x) = \\dfrac{f(x)}{x}$ has a limit at $+\\infty$;\n\n(ii) the function $h : [1, +\\infty) \\to (0, +\\infty)$ given by $h(x) = \\dfrac{1}{x} \\displaystyle\\int_1^x f(t)\\, dt$ has a finite limit at $+\\infty$.\n\na) Prove that $\\lim_{x \\to +\\infty} g(x) = 0$.\n\nb) Prove that $\\displaystyle \\lim_{x \\to +\\infty} \\frac{1}{x^2} \\int_1^x f^2(t)\\, dt = 0$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $(G, \\cdot)$ be a finite group with identity element $e$. Suppose that there exist $a \\in G \\setminus \\{e\\}$ and a prime natural number $p$ such that $x^{p+1} = a^{-1} x a$ for all $x \\in G$.\n\na) Prove that there exists $k \\in \\mathbb{N}^*$ such that $\\operatorname{ord}(G) = p^k$.\n\nb) Prove that the set $\\{x \\in G \\mid x^p = e\\}$ is a subgroup $H$ of $G$ and $(\\operatorname{ord}(H))^2 > \\operatorname{ord}(G)$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $(R, +, \\cdot)$ be a ring with the property that for every element $x \\in R$ there exist two elements $e_1$ and $e_2$ in $R$ such that $e_1^2 = e_1$, $e_2^2 = e_2$ and $x = e_1 e_2$. Prove that:\n\n(a) $1$ is the only invertible element of the ring $R$; and\n\n(b) $x^2 = x$ for every $x \\in R$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $(K, +, \\cdot)$ be a finite field with at least four elements. Prove that the set $K^*$ can be partitioned into two nonempty subsets $A$ and $B$ with the property that\n$$\\sum_{x \\in A} x = \\prod_{y \\in B} y.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $\\mathcal{C}$ be the set of functions $f : [0, 1] \\to \\mathbb{R}$, twice differentiable on $[0, 1]$, which have at least two zeros, not necessarily distinct, in $[0, 1]$, and $|f''(x)| \\le 1$ for every $x$ in $[0, 1]$. Determine the maximum value that the integral\n$$\\int_0^1 |f(x)|\\, dx$$\ncan take as $f$ ranges over the set $\\mathcal{C}$, and the functions which attain this maximum.\n\n(A differentiable function $f$ has two zeros at the same point $a$ if $f(a) = f'(a) = 0$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Determine the non-constant polynomial functions $f : [0, 1] \\to \\mathbb{R}^*$ with rational coefficients which have the following property: for every $x$ in the interval $[0, 1]$ there exist two polynomial functions $g_x, h_x : [0, 1] \\to \\mathbb{R}$ with rational coefficients such that $h_x(x) \\ne 0$ and\n$$\\int_0^x \\frac{1}{f(t)}\\, dt = \\frac{g_x(x)}{h_x(x)}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that for every $n \\in \\mathbb{N}^*$ there exists a unique $c_n \\in (0, 1)$ such that\n$$\\int_0^1 \\frac{1}{1 + x^n}\\, dx = \\frac{1}{1 + (c_n)^n},$$\nand compute $\\lim_{n \\to \\infty} n (c_n)^n$.",
+          "proposer": "Radu Pop"
+        },
+        {
+          "number": 2,
+          "problem": "Let $A$ be a ring and let $D$ be the set of its non-invertible elements. Given that $a^2 = 0$ for every $a \\in D$, prove that:\n\n(a) $axa = 0$ for all $a \\in D$ and $x \\in A$;\n\n(b) if $D$ is a finite set with at least two elements, then there exists $a \\in D$, $a \\ne 0$, such that $ab = ba = 0$ for every $b \\in D$.",
+          "proposer": "Ioan Băetu"
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be an increasing function and $a \\in \\mathbb{R}$. Prove that $f$ is continuous at $a$ if and only if there exists a sequence $(a_n)_{n \\ge 1}$ with $a_n > 0$ for every $n \\in \\mathbb{N}^*$, such that\n$$\\int_a^{a + a_n} f(x)\\, dx + \\int_a^{a - a_n} f(x)\\, dx \\le \\frac{a_n}{n}$$\nfor every $n \\in \\mathbb{N}^*$.",
+          "proposer": "Dan Marinescu"
+        },
+        {
+          "number": 4,
+          "problem": "Let $K$ be a finite field with $q$ elements, $q \\ge 3$. Denote by $M$ the set of polynomials of degree $q - 2$ in $K[X]$ whose coefficients are all nonzero and pairwise distinct. Determine the number of polynomials in $M$ which have $q - 2$ distinct roots in $K$.",
+          "proposer": "Marian Andronache"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f : [0, \\infty) \\to (0, \\infty)$ be a continuous function. Prove that:\n\n(a) there exists a natural number $n_0$ such that for every natural number $n > n_0$ there exists a unique real number $x_n > 0$ for which\n$$n \\int_0^{x_n} f(t)\\, dt = 1;$$\n\n(b) the sequence $(n x_n)_{n > n_0}$ is convergent, and determine its limit."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a nonzero natural number, let $a_1 < \\dots < a_n$ be real numbers and let $b_1, \\dots, b_n$ be arbitrary real numbers. Prove that:\n\n(a) if all the numbers $b_i$ are strictly positive, then there exists a polynomial $f$ with real coefficients which has no real root, such that $f(a_i) = b_i$, $i = 1, \\dots, n$;\n\n(b) there exists a polynomial $f$ of degree at least $1$, all of whose roots are real, such that $f(a_i) = b_i$, $i = 1, \\dots, n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $G$ be a finite group with the following property: for every automorphism $f$ of $G$ there exists a natural number $m$ such that $f(x) = x^m$ for all $x \\in G$. Prove that $G$ is commutative."
+        },
+        {
+          "number": 4,
+          "problem": "(a) Give an example of a continuous function $f : [0, \\infty) \\to \\mathbb{R}$ such that\n$$\\lim_{x \\to \\infty} \\frac{1}{x^2} \\int_0^x f(t)\\, dt = 1,$$\nbut $f(x)/x$ has no limit as $x \\to \\infty$.\n\n(b) Let $f : [0, \\infty) \\to \\mathbb{R}$ be an increasing function such that\n$$\\lim_{x \\to \\infty} \\frac{1}{x^2} \\int_0^x f(t)\\, dt = 1.$$\nProve that $f(x)/x$ has a limit as $x \\to \\infty$ and determine its value."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A$ be a finite ring and $a, b \\in A$ with the property that $(ab - 1)b = 0$. Prove that $b(ab - 1) = 0$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $\\mathcal{F}$ be the set of continuous functions $f : \\mathbb{R} \\to \\mathbb{R}$ which satisfy the condition\n$$e^{f(x)} + f(x) \\ge x + 1$$\nfor every real number $x$. Determine the minimum value that the integral\n$$I(f) = \\int_0^e f(x)\\, dx$$\ncan take as $f$ ranges over $\\mathcal{F}$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [a, b] \\to \\mathbb{R}$ be an integrable function and $(a_n)_{n \\ge 1}$ a sequence of strictly positive real numbers with $\\lim_{n \\to \\infty} a_n = 0$.\n\na) If $A = \\{m \\cdot a_n \\mid m, n \\in \\mathbb{N}^*\\}$, prove that every open interval of strictly positive numbers contains elements of $A$.\n\nb) If for every $n \\in \\mathbb{N}^*$ and all $x, y \\in [a, b]$ with $|x - y| = a_n$ the inequality $\\left|\\int_x^y f(t)\\, dt\\right| \\le |x - y|$ holds, prove that\n$$\\left|\\int_x^y f(t)\\, dt\\right| \\le |x - y| \\quad \\text{for all } x, y \\in [a, b].$$"
+        },
+        {
+          "number": 4,
+          "problem": "For $k \\in \\mathbb{Z}$ define the polynomial $F_k = X^4 + 2(1 - k)X^2 + (1 + k)^2$. Determine all values $k \\in \\mathbb{Z}$ such that $F_k$ is irreducible over $\\mathbb{Z}$ and reducible over $\\mathbb{Z}_p$ for every prime $p$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a$ be a strictly positive real number. Determine the minimum value of the expression\n$$\\left(\\int_0^1 f(x)\\, dx\\right)^2 - (a + 1) \\int_0^1 x^{2a} f(x)\\, dx,$$\nas $f$ ranges over the set of concave functions $f : [0, 1] \\to \\mathbb{R}$ with $f(0) = 1$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be an even integer, $n \\ge 4$, and let $G$ be a subgroup of order $n$ of the multiplicative group of invertible matrices in $\\mathcal{M}_2(\\mathbb{C})$. Prove that $G$ has a subgroup $H$ such that $\\{I_2\\} \\subsetneq H \\subsetneq G$ and $XYX^{-1} \\in H$ for all $X \\in G$ and all $Y \\in H$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [0, \\infty) \\to (0, \\infty)$ be an increasing function and let $g : [0, \\infty) \\to \\mathbb{R}$ be a twice differentiable function such that $g''$ is continuous and $g''(x) + f(x) g(x) = 0$ for every real number $x \\ge 0$.\n\n(a) Give an example of functions $f$ and $g$ satisfying the conditions of the problem such that $g$ is not identically zero.\n\n(b) Prove that the function $g$ is bounded."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be an integer, $n \\ge 3$, and let $a_1, a_2, \\dots, a_{n-1}, a_n$ be nonzero complex numbers such that $|a_i| < 1$, $i = 1, 2, \\dots, n - 1$, and all the coefficients of the polynomial $\\prod_{i=1}^{n} (X - a_i)$ are integers. Prove that:\n\n(a) the numbers $a_1, a_2, \\dots, a_{n-1}, a_n$ are pairwise distinct;\n\n(b) if $a_i, a_j, a_k$ are in geometric progression, then $i = j = k$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the continuous functions $f : [0, 1] \\to [0, \\infty)$ which satisfy\n$$\\int_0^1 f(x)\\, dx \\cdot \\int_0^1 f^2(x)\\, dx \\cdot \\ldots \\cdot \\int_0^1 f^{2020}(x)\\, dx = \\left(\\int_0^1 f^{2021}(x)\\, dx\\right)^{1010}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Determine the finite nonzero rings with unity in which the sum of all the elements is an invertible element."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a \\in \\mathbb{N}$, $a > 2$. Prove that:\n\na) there exists a number $n \\in \\mathbb{N}^* \\setminus \\{1\\}$ which is not prime such that $a^n \\equiv 1 \\pmod{n}$;\n\nb) if $p$ is the smallest number in $\\mathbb{N}^* \\setminus \\{1\\}$ for which $a^p \\equiv 1 \\pmod{p}$, then $p$ is prime;\n\nc) there are no numbers $n \\in \\mathbb{N}^* \\setminus \\{1\\}$ for which $2^n \\equiv 1 \\pmod{n}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : [0, 1] \\to [0, 1]$ be a continuous bijective function with $f(0) = 0$. Prove that for every $\\alpha \\ge 0$ the following inequality holds:\n$$(\\alpha + 2) \\cdot \\int_0^1 x^\\alpha \\left(f(x) + f^{-1}(x)\\right) dx \\le 2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\mathcal{F}$ be the set of functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the property that $f(2x) = f(x)$ for every $x \\in \\mathbb{R}$.\n\na) Determine all functions in $\\mathcal{F}$ which have antiderivatives on $\\mathbb{R}$.\n\nb) Give an example of a non-constant function $f \\in \\mathcal{F}$, integrable on every interval $[a, b] \\subset \\mathbb{R}$, with the property that $\\int_a^b f(x)\\, dx = 0$ for all $a, b \\in \\mathbb{R}$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine all rings $(A, +, \\cdot)$ with the property that $x^3 \\in \\{0, 1\\}$ for every element $x \\in A$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f, g : \\mathbb{R} \\to \\mathbb{R}$ be two increasing functions.\n\na) Prove that for every $a \\in \\mathbb{R}$ and every $b \\in [f(a - 0), f(a + 0)]$ the inequality\n$$\\int_a^x f(t)\\, dt \\ge b(x - a)$$\nholds for every $x \\in \\mathbb{R}$.\n\nb) If $[f(a - 0), f(a + 0)] \\cap [g(a - 0), g(a + 0)] \\ne \\emptyset$ for every $a \\in \\mathbb{R}$, prove that\n$$\\int_a^b f(t)\\, dt = \\int_a^b g(t)\\, dt \\quad \\text{for all } a, b \\in \\mathbb{R},\\ a < b.$$\n\n(Here $u(a - 0)$ and $u(a + 0)$ denote the left and the right limit, respectively, of a function $u$ at the point $a \\in \\mathbb{R}$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Let $(R, +, \\cdot)$ be a ring with center $Z = \\{a \\in R \\mid ar = ra,\\ \\forall r \\in R\\}$, with the property that the group $U = U(R)$ of its invertible elements is finite. If $G$ is the group of automorphisms of the additive group $(R, +)$, prove that\n$$|G| \\ge \\frac{|U|^2}{|Z \\cap U|}.$$\n($|M|$ denotes the cardinality of the set $M$.)"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $(G, \\cdot)$ be a finite group of order $n \\in \\mathbb{N}^*$, where $n \\ge 2$. We say that the group $(G, \\cdot)$ is arrangeable if there exists an ordering of its elements such that\n$$G = \\{a_1, a_2, \\dots, a_k, \\dots, a_n\\} = \\{a_1 \\cdot a_2, a_2 \\cdot a_3, \\dots, a_k \\cdot a_{k+1}, \\dots, a_n \\cdot a_1\\}.$$\n\na) Determine all nonzero natural numbers $n$ for which the group $(\\mathbb{Z}_n, +)$ is arrangeable.\n\nb) Give an example of a group of even order which is arrangeable."
+        },
+        {
+          "number": 2,
+          "problem": "Let $p$ be a prime number, $n$ a natural number not divisible by $p$, and $\\mathbb{K}$ a field with $p^n$ elements, with unit element $1_{\\mathbb{K}}$ and zero element $\\widehat{0} = 0_{\\mathbb{K}}$. For every $m \\in \\mathbb{N}^*$ denote $\\widehat{m} = \\underbrace{1_{\\mathbb{K}} + 1_{\\mathbb{K}} + \\dots + 1_{\\mathbb{K}}}_{m \\text{ times}}$ and define the polynomial\n$$f_m = \\sum_{k=0}^{m} (-1)^{m-k} \\widehat{\\binom{m}{k}} X^{p^k} \\in \\mathbb{K}[X].$$\n\na) Prove that the set of roots of the polynomial $f_1$ is $\\{\\widehat{k} \\mid k \\in \\{0, 1, \\dots, p - 1\\}\\}$.\n\nb) Let $m \\in \\mathbb{N}^*$ be arbitrary. Determine the set of roots in the field $\\mathbb{K}$ of the polynomial $f_m$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a, b \\in \\mathbb{R}$, with $a < b$, be two arbitrary real numbers. We say that a function $f : [a, b] \\to \\mathbb{R}$ has property $(\\mathcal{P})$ if it is integrable on $[a, b]$ and\n$$f(x) - f\\left(\\frac{x + a}{2}\\right) = f\\left(\\frac{x + b}{2}\\right) - f(x) \\quad \\text{for every } x \\in [a, b].$$\nProve that for every real number $t$ there exists a unique function $f : [a, b] \\to \\mathbb{R}$ with property $(\\mathcal{P})$ such that $\\int_a^b f(x)\\, dx = t$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be a monotonically increasing differentiable function with continuous derivative, for which $f(0) = 0$. Let $g : [0, 1] \\to \\mathbb{R}$ be the function defined by\n$$g(x) = f(x) + (x - 1) f'(x) \\quad \\text{for every } x \\in [0, 1].$$\n\na) Prove that\n$$\\int_0^1 g(x)\\, dx = 0.$$\n\nb) Prove that for every convex differentiable function $\\varphi : [0, 1] \\to [0, 1]$ with $\\varphi(0) = 0$ and $\\varphi(1) = 1$ the following inequality holds:\n$$\\int_0^1 g(\\varphi(x))\\, dx \\le 0.$$"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous function with the property that $f(x) + \\sin(f(x)) \\ge x$ for every $x \\in \\mathbb{R}$. Prove that\n$$\\int_0^\\pi f(x)\\, dx \\ge \\frac{\\pi^2}{2} - 2.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $(\\mathbb{K}, +, \\cdot)$ be a division ring (skew field) with the property that $x^2 y = y x^2$ for all $x, y \\in \\mathbb{K}$. Prove that $(\\mathbb{K}, +, \\cdot)$ is commutative."
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be a continuous function with $f(1) = 0$. Prove the existence of, and determine the value of, the limit\n$$\\lim_{\\substack{t \\to 1 \\\\ t < 1}} \\left(\\frac{1}{1 - t} \\cdot \\int_0^1 x\\,(f(tx) - f(x))\\, dx\\right).$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb{L}$ be a finite field with $q$ elements. Prove that:\n\na) if $q \\equiv 3 \\pmod{4}$ and $n \\in \\mathbb{N}$, $n \\ge 2$, is a natural number divisible by $q - 1$, then $x^n = (x^2 + 1)^n$ for every element $x \\in \\mathbb{L}^*$;\n\nb) if there exists a natural number $n \\in \\mathbb{N}^*$, $n \\ge 2$, such that $x^n = (x^2 + 1)^n$ for every $x \\in \\mathbb{L}^*$, then $q \\equiv 3 \\pmod{4}$ and $q - 1$ divides $n$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "We say that the ring $(A, +, \\cdot)$ has property $(P)$ if\n\n(i) the set $A$ has at least $4$ elements,\n(ii) the element $1 + 1 \\in A$ is invertible,\n(iii) $x + x^4 = x^2 + x^3$ for every $x \\in A$.\n\na) Prove that if a ring $(A, +, \\cdot)$ has property $(P)$ and $a, b \\in A$ are distinct elements such that $a$ and $a + b$ are invertible, then $b$ is not invertible, while $1 + ab$ is invertible.\n\nb) Give an example of a ring with property $(P)$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $f : [0, 1] \\to \\mathbb{R}$ be a differentiable function whose derivative is integrable on $[0, 1]$, with $f(1) = 0$. Prove that\n$$\\int_0^1 (x f'(x))^2\\, dx \\ge 12 \\cdot \\left(\\int_0^1 x f(x)\\, dx\\right)^2.$$"
+        },
+        {
+          "number": 3,
+          "problem": "a) Let $a \\in \\mathbb{R}$ and let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous function on $\\mathbb{R}$ which has an antiderivative $F : \\mathbb{R} \\to \\mathbb{R}$ such that $F(x) + a \\cdot f(x) \\ge 0$ for every $x \\in \\mathbb{R}$ and $\\displaystyle \\lim_{|x| \\to \\infty} \\frac{F(x)}{e^{|\\alpha \\cdot x|}} = 0$ for every $\\alpha \\in \\mathbb{R}^*$. Prove that $F(x) \\ge 0$ for every $x \\in \\mathbb{R}$.\n\nb) Let $n \\in \\mathbb{N} \\setminus \\{0, 1\\}$, let $g = X^n + a_1 X^{n-1} + \\dots + a_{n-1} X + a_n \\in \\mathbb{R}[X]$ be a polynomial with all roots real, and let $f : \\mathbb{R} \\to \\mathbb{R}$ be a polynomial function with the property that $f(x) + a_1 \\cdot f'(x) + a_2 \\cdot f^{(2)}(x) + \\dots + a_n \\cdot f^{(n)}(x) \\ge 0$ for every $x \\in \\mathbb{R}$. Prove that $f(x) \\ge 0$ for every $x \\in \\mathbb{R}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $p$ be a prime number, $p \\ge 3$, and let $k$ be an odd number not divisible by $p$. Let $K$ be a finite field with $kp + 1$ elements and let $A = \\{x_1, x_2, \\dots, x_t\\}$ be the set of elements of $K^* = K \\setminus \\{0\\}$ which do not have order $k$ in the multiplicative group $(K^*, \\cdot)$. Prove that the polynomial $P(X) = (X + x_1)(X + x_2) \\dots (X + x_t)$ has at least $p$ coefficients equal to $1$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider a Cartesian coordinate system $xOy$ in the plane $\\Pi$. For every nonzero natural number $n$ denote by $D_n$ the closed disc of radius $n$ centred at the origin,\n$$D_n = \\{P \\in \\Pi \\mid OP \\le n\\},$$\nand denote by $a_n$ the number of lattice points $P(k, l) \\in D_n$ (a lattice point is a point with both coordinates integers). Determine\n$$\\lim_{n \\to \\infty} \\frac{a_n}{n^2}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a square-free natural number ($n$ is called square-free if it is not divisible by any perfect square greater than $1$), and let $G$ be a group of order $n$. Let $d$ be the largest order of an element of the group $G$ and $N$ the number of elements of order $d$ in the group $G$.\n\na) Prove that $N$ is divisible by $\\dfrac{n}{d}$.\n\nb) Prove that $N^2 \\ge \\varphi(n)$, where $\\varphi(n)$ is the number of integers $k$ with $1 \\le k \\le n$ and $(k, n) = 1$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $p$ be a prime number and $A$ a ring of characteristic $p$. Prove that $A$ has at most $\\dfrac{|A|}{p}$ nilpotent elements, where $|A|$ denotes the number of elements of the ring $A$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous function. Prove that $f$ is strictly monotonic on $\\mathbb{R}$ if and only if\n$$\\int_x^y f(t)\\, dt \\ne (y - x) f(x) \\quad \\text{for all } x, y \\in \\mathbb{R} \\text{ with } x \\ne y.$$"
+        }
+      ]
+    }
+  ]
+}

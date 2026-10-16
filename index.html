@@ -239,6 +239,9 @@
     --twt: #7e22ce; --twt-ink: #541689; --twt-tint: #f1e4fb;
     --ofm: #0891b2; --ofm-ink: #065b70; --ofm-tint: #dcf2f7;
     --rio: #65a30d; --rio-ink: #416a08; --rio-tint: #e9f5da;
+    --ro12: #b91c1c; --ro12-ink: #7a1212; --ro12-tint: #fbe1e1;
+    --ro11: #a21caf; --ro11-ink: #6b1374; --ro11-tint: #f7e2f9;
+    --ro9: #0d9488; --ro9-ink: #085e57; --ro9-tint: #daf3f0;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -413,6 +416,9 @@
 .f-twt { --f: var(--twt); --f-ink: var(--twt-ink); --f-tint: var(--twt-tint); }
 .f-ofm { --f: var(--ofm); --f-ink: var(--ofm-ink); --f-tint: var(--ofm-tint); }
 .f-rio { --f: var(--rio); --f-ink: var(--rio-ink); --f-tint: var(--rio-tint); }
+.f-ro12 { --f: var(--ro12); --f-ink: var(--ro12-ink); --f-tint: var(--ro12-tint); }
+.f-ro11 { --f: var(--ro11); --f-ink: var(--ro11-ink); --f-tint: var(--ro11-tint); }
+.f-ro9 { --f: var(--ro9); --f-ink: var(--ro9-ink); --f-tint: var(--ro9-tint); }
 
 /* ==========================================================
    Base
@@ -912,7 +918,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-ofm-rioplatense';
+const DATA_VERSION = '20261016-romania-nmo-grades';
 const FIRST = 1938, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1063,6 +1069,9 @@ REGION_OF.hmmtn = 'americas';
 REGION_OF.twt = 'asia';
 REGION_OF.ofm = 'world';
 REGION_OF.rio = 'americas';
+REGION_OF.ro12 = 'europe';
+REGION_OF.ro11 = 'europe';
+REGION_OF.ro9 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1112,7 +1121,10 @@ const COUNTRIES = [
     { key: 'det', name: 'Germany TST', flag: '🇩🇪', file: 'Germany-tst-problems.json', kind: 'years', full: "Germany IMO Selection Exams (Auswahlklausuren)" },
     { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
     { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },
-    { key: 'ro', name: 'Romania', flag: '🇷🇴', file: 'Romania-nmo-problems.json', kind: 'years' },
+    { key: 'ro9', name: 'Romania NMO grade 9', flag: '🇷🇴', file: 'Romania-nmo-g9-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 9" },
+    { key: 'ro', name: 'Romania NMO grade 10', flag: '🇷🇴', file: 'Romania-nmo-problems.json', kind: 'years' },
+    { key: 'ro11', name: 'Romania NMO grade 11', flag: '🇷🇴', file: 'Romania-nmo-g11-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 11" },
+    { key: 'ro12', name: 'Romania NMO grade 12', flag: '🇷🇴', file: 'Romania-nmo-g12-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 12" },
     { key: 'rot', name: 'Romania TST', flag: '🇷🇴', file: 'Romania-tst-problems.json', kind: 'years' },
     { key: 'lt', name: 'Lithuania', flag: '🇱🇹', file: 'Lithuania-lmmo-problems.json', kind: 'years' },
     { key: 'ltt', name: 'Lithuania TST', flag: '🇱🇹', file: 'Lithuania-tst-problems.json', kind: 'years' },
@@ -1551,7 +1563,7 @@ function gridEntries(list) {
         const names = new Map(members.map(c => [c.key, c.name === name ? 'National olympiad' : subName(c)]));
         // The national olympiad first, then the other finals, then the selection tests.
         const rank = c => names.get(c.key) === 'National olympiad' ? 0 : /TST/.test(names.get(c.key)) ? 2 : 1;
-        members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key)));
+        members = [...members].sort((a, b) => rank(a) - rank(b) || names.get(a.key).localeCompare(names.get(b.key), 'en', { numeric: true }));
         return { id: 'g-' + members[0].key, name, flag: members[0].flag, members, sub: c => names.get(c.key) };
     });
 }

@@ -1,0 +1,496 @@
+{
+  "competition": "Romanian National Mathematical Olympiad (Grade 9)",
+  "years": [
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the nonzero natural numbers $a$ and $b$ with the property that for all $x, y \\in [a, b]$ we have $\\dfrac{1}{x} + \\dfrac{1}{y} \\in [a, b]$.",
+          "proposer": "Mircea Fianu"
+        },
+        {
+          "number": 2,
+          "problem": "A natural number $n$, $n \\ge 2$, is called \"friendly\" if there exists a family of nonempty subsets $A_1, A_2, \\dots, A_n$ of the set $\\{1, 2, \\dots, n\\}$ such that:\n\n1) $i \\notin A_i$ for every $i = \\overline{1, n}$;\n\n2) $i \\in A_j$ if and only if $j \\notin A_i$, for all distinct $i, j \\in \\{1, \\dots, n\\}$;\n\n3) $A_i \\cap A_j \\ne \\emptyset$ for all $i, j \\in \\{1, \\dots, n\\}$.\n\nProve that:\n\na) the number $7$ is friendly;\n\nb) $n$ is friendly if and only if $n \\ge 7$.",
+          "proposer": "Valentin Vornicu"
+        },
+        {
+          "number": 3,
+          "problem": "Prove that the midpoints of the altitudes of a triangle are collinear if and only if the triangle is right-angled.",
+          "proposer": "Dorin Popovici"
+        },
+        {
+          "number": 4,
+          "problem": "Let $P$ be a plane. Prove that there is no function $f : P \\to P$ with the property: whenever $A, B, C, D$ are the vertices of a convex quadrilateral, $f(A), f(B), f(C), f(D)$ are the vertices of a concave quadrilateral.",
+          "proposer": "Dinu Șerbănescu"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the strictly increasing functions $f : \\{1, 2, \\dots, 10\\} \\to \\{1, 2, \\dots, 100\\}$ with the property that $x + y$ divides $x f(x) + y f(y)$ for all numbers $x, y \\in \\{1, 2, \\dots, 10\\}$."
+        },
+        {
+          "number": 2,
+          "problem": "For every nonzero natural number $n$ denote by $P(n)$ the number of functions $f : \\mathbb{R} \\to \\mathbb{R}$, $f(x) = ax^2 + bx + c$, with the property that $a, b, c \\in \\{1, 2, \\dots, n\\}$ and the solutions of the equation $f(x) = 0$ are integers. Prove that\n$$n < P(n) < n^2, \\quad n \\ge 4.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $H$ be the orthocenter of the acute triangle $ABC$ and $B', C'$ the feet of the altitudes from $B$ and $C$, respectively. A variable line $d$ through $H$ meets the segments $[BC']$ and $[CB']$ at $M$ and $N$, respectively. The perpendiculars at $M$ and $N$ to $d$ meet $BB'$ and $CC'$ at $P$ and $Q$, respectively. Determine the locus of the midpoint of the segment $[PQ]$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $p, q \\in \\mathbb{N}^*$, $p \\ge 2$, $q \\ge 2$. We say that a set $X$ has property (S) if, however we choose $p$ subsets $B_i \\subset X$, $i = \\overline{1, p}$, not necessarily distinct, each with $q$ elements, there exists a subset $Y \\subset X$ with $p$ elements such that the intersection of $Y$ with each $B_i$, $i = \\overline{1, p}$, has at most one element. Prove that:\n\na) for $p = 4$ and $q = 3$, no set with $9$ elements has property (S);\n\nb) no set $X$ with $pq - q$ elements has property (S);\n\nc) every set $X$ with $pq - q + 1$ elements has property (S)."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the convex quadrilateral $ABCD$ and the points $\\{E\\} = AD \\cap BC$, $\\{I\\} = AC \\cap BD$. Prove that the triangles $EDC$ and $IAB$ have the same centroid if and only if $AB \\parallel CD$ and $IC^2 = IA \\cdot AC$.",
+          "proposer": "Virgil Nicula, București"
+        },
+        {
+          "number": 2,
+          "problem": "Determine the functions $f : \\mathbb{R} \\to \\mathbb{R}$ for which\n$$x(f(x + 1) - f(x)) = f(x)$$\nfor every $x \\in \\mathbb{R}$ and\n$$|f(x) - f(y)| \\le |x - y|$$\nfor all $x, y \\in \\mathbb{R}$.",
+          "proposer": "Mihai Piticari, Câmpulung"
+        },
+        {
+          "number": 3,
+          "problem": "Prove that for every nonzero natural number $n$ there exists a unique natural number divisible by $5^n$ which is written in base $10$ with $n$ digits from the set $\\{1, 2, 3, 4, 5\\}$.",
+          "proposer": "Vasile Pop, Cluj, and Szász Robert, Tg. Mureș"
+        },
+        {
+          "number": 4,
+          "problem": "Let $x_1, x_2, \\dots, x_n$ be strictly positive numbers. Prove that\n$$\\frac{1}{1 + x_1} + \\frac{1}{1 + x_1 + x_2} + \\dots + \\frac{1}{1 + x_1 + \\dots + x_n} < \\sqrt{\\frac{1}{x_1} + \\frac{1}{x_2} + \\dots + \\frac{1}{x_n}}.$$",
+          "proposer": "Bogdan Enescu, Buzău"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the maximum value of the expression\n$$(x^3 + 1)(y^3 + 1)$$\nfor $x, y \\in \\mathbb{R}$ satisfying $x + y = 1$."
+        },
+        {
+          "number": 2,
+          "problem": "Consider the isosceles triangles $ABC$ and $DBC$ with common base $BC$ and $\\angle ABD = 90^\\circ$. Let $M$ be the midpoint of the segment $BC$. The points $E, F, P$ are chosen such that $E \\in (AB)$, $P \\in (MC)$, $C \\in (AF)$ and $\\angle BDE = \\angle ADP = \\angle CDF$. Prove that $P$ is the midpoint of the segment $EF$ and $DP \\perp EF$."
+        },
+        {
+          "number": 3,
+          "problem": "Consider the quadrilateral $ABCD$ inscribed in a circle of radius $r$, for which there exists a point $P$ on the side $CD$ such that $CB = BP = PA = AB$.\n\na) Prove that there exist points $A, B, C, D, P$ satisfying the above conditions.\n\nb) Prove that $PD = r$."
+        },
+        {
+          "number": 4,
+          "problem": "In a table tennis competition held over $4$ days, $2n$ students took part, $n \\ge 5$. On each day every student played exactly one match (it being possible for the same pair to meet on several days). Prove that the competition can end with a single winner, with three students tied for second place and with no player having lost all $4$ games. How many students won exactly one match and how many won exactly two matches, under these conditions?"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a, b, c, d$ be four nonzero natural numbers such that the equation\n$$x^2 - (a^2 + b^2 + c^2 + d^2 + 1)x + ab + bc + cd + da = 0$$\nhas an integer solution. Prove that the other solution is also an integer, and that the two solutions are perfect squares."
+        },
+        {
+          "number": 2,
+          "problem": "Consider an acute triangle $ABC$ and a point $M$ different from the vertices of the triangle. Prove that $M$ is the orthocenter of the triangle if and only if\n$$\\frac{BC}{MA}\\,\\overrightarrow{MA} + \\frac{CA}{MB}\\,\\overrightarrow{MB} + \\frac{AB}{MC}\\,\\overrightarrow{MC} = \\vec{0}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "The plane is divided into an infinite set of strips by equidistant parallel lines at distance $1$, and the points in the interior of each strip are coloured red or white, a single colour being used in each strip (the points on the lines remain uncoloured). Prove that there exists an equilateral triangle of side $100$ whose vertices are points of the same colour."
+        },
+        {
+          "number": 4,
+          "problem": "For a nonempty set $A$ and a function $f : A \\to A$ we denote\n$$f_1(A) = f(A),\\ f_2(A) = f(f_1(A)),\\ f_3(A) = f(f_2(A)), \\dots$$\nand, in general, $f_n(A) = f(f_{n-1}(A))$ for all $n \\ge 2$, $n \\in \\mathbb{N}$ (as usual, for a set $B \\subset A$, $f(B)$ denotes the set $\\{f(x) \\mid x \\in B\\}$ of images of the elements of $B$). Define\n$$f_\\infty(A) = f_1(A) \\cap f_2(A) \\cap f_3(A) \\cap \\dots = \\bigcap_{n \\ge 1} f_n(A).$$\n\na) Prove that if $A$ is a finite set, then $f(f_\\infty(A)) = f_\\infty(A)$.\n\nb) Determine whether the preceding conclusion holds for\n$$A = \\mathbb{N} \\times \\mathbb{N}, \\quad f((m, n)) = \\begin{cases} (m + 1, n) & \\text{if } n \\ge m \\ge 1, \\\\ (0, 0) & \\text{if } m > n, \\\\ (0, n + 1) & \\text{if } m = 0. \\end{cases}$$"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the functions $f : \\mathbb{N} \\to \\mathbb{N}$ for which\n$$f(x^2 + f(y)) = x f(x) + y$$\nfor all $x, y \\in \\mathbb{N}$."
+        },
+        {
+          "number": 2,
+          "problem": "a) Prove that $\\dfrac{1}{2} + \\dfrac{1}{3} + \\dots + \\dfrac{1}{2^{2n}} > n$ for every $n \\in \\mathbb{N}^*$.\n\nb) Prove that for every $n \\in \\mathbb{N}^*$ the following inequality holds:\n$$\\min\\left\\{k \\in \\mathbb{N},\\ k \\ge 2 \\;;\\; \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{k} > n\\right\\} > 2^n.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\in \\mathbb{N}^*$ and let $a_i$, $i = 1, 2, \\dots, n$, be real numbers with $|a_i| \\le 1$ and $\\sum_{i=1}^{n} a_i = 0$.\n\nProve that $\\sum_{i=1}^{n} |x - a_i| \\le n$ for every $x \\in \\mathbb{R}$ with $|x| \\le 1$."
+        },
+        {
+          "number": 4,
+          "problem": "On the sides of triangle $ABC$ consider the points $C_1, C_2 \\in (AB)$, $B_1, B_2 \\in (AC)$, $A_1, A_2 \\in (BC)$ such that the triangles $A_1B_1C_1$ and $A_2B_2C_2$ have the same centroid.\n\nProve that the sets $[A_1B_1] \\cap [A_2B_2]$, $[B_1C_1] \\cap [B_2C_2]$, $[C_1A_1] \\cap [C_2A_2]$ are nonempty."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be an arbitrary triangle and $k$ a nonzero real number. On the sides $AB$ and $AC$ of the triangle consider the variable points $M$ and $N$, respectively, such that\n$$\\frac{MB}{MA} - \\frac{NC}{NA} = k.$$\nProve that the line $MN$ passes through a fixed point."
+        },
+        {
+          "number": 2,
+          "problem": "Given real numbers $a, b, c, d > 0$ and $e, f, g, h < 0$, prove that the inequalities $ae + bc > 0$, $ef + cg > 0$, $fd + gh > 0$, $da + hb > 0$ cannot all hold simultaneously."
+        },
+        {
+          "number": 3,
+          "problem": "Given distinct positive real numbers $a_1, a_2, \\dots, a_n$, $n \\in \\mathbb{N}^*$, and a rearrangement $b_1, b_2, \\dots, b_n$ of them, prove the inequality\n$$(a_1^2 + b_1)(a_2^2 + b_2) \\cdots (a_n^2 + b_n) \\ge (a_1^2 + a_1)(a_2^2 + a_2) \\cdots (a_n^2 + a_n).$$"
+        },
+        {
+          "number": 4,
+          "problem": "Given ordered sequences of distinct real numbers $a_1 < a_2 < \\dots < a_n$ and $b_1 < b_2 < \\dots < b_m$, $n, m \\in \\mathbb{N}$, $n, m \\ge 2$, consider the set\n$$\\{a_i + b_j \\;;\\; 1 \\le i \\le n,\\ 1 \\le j \\le m\\}.$$\nProve that this set has exactly $n + m - 1$ elements if and only if both sequences are arithmetic progressions with the same common difference."
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the triangle $ABC$ and the points $D, E, F$ where the bisectors of the angles $\\angle BAC$, $\\angle ABC$ and $\\angle ACB$, respectively, meet its circumcircle.\n\na) Prove that the orthocenter of triangle $DEF$ coincides with the incenter of triangle $ABC$.\n\nb) Prove that if $\\overrightarrow{AD} + \\overrightarrow{BE} + \\overrightarrow{CF} = \\vec{0}$, then triangle $ABC$ is equilateral."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that there is a similarity between a triangle $ABC$ and the triangle whose sides are its medians if and only if the squares of the side lengths of triangle $ABC$ are in arithmetic progression."
+        },
+        {
+          "number": 3,
+          "problem": "For every natural number $n \\ge 2$ denote by $A_n$ the set of real solutions of the equation\n$$x = \\left[\\frac{x}{2}\\right] + \\left[\\frac{x}{3}\\right] + \\dots + \\left[\\frac{x}{n}\\right].$$\n\na) Determine $A_2 \\cup A_3$.\n\nb) Prove that the set $A = \\bigcup_{n \\ge 2} A_n$ is finite and determine $\\max A$."
+        },
+        {
+          "number": 4,
+          "problem": "Consider the set $\\mathcal{F}$ of functions $f : \\mathbb{N} \\to \\mathbb{N}$ which have the property\n$$f(a^2 - b^2) = f^2(a) - f^2(b) \\quad \\text{for all } a, b \\in \\mathbb{N},\\ a \\ge b.$$\n\na) Determine $\\{f(1) \\mid f \\in \\mathcal{F}\\}$.\n\nb) Prove that $\\mathcal{F}$ has exactly two elements."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a nonzero natural number and let $a_1, a_2, \\dots, a_n$ be real numbers such that $a_m + a_{m+1} + \\dots + a_n \\ge m + (m + 1) + \\dots + n$ for every $m = 1, 2, \\dots, n$. Prove that\n$$a_1^2 + \\dots + a_n^2 \\ge \\frac{n(n+1)(2n+1)}{6}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a nonzero natural number. Prove that every nonzero natural number less than or equal to $n!$ is the sum of at most $n$ distinct divisors of the number $n!$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle and let $I_a$ be the center of the excircle corresponding to $A$. Let $P$ and $Q$ be the points of tangency of this excircle with the lines $AB$ and $AC$. The line $PQ$ meets the lines $I_aB$ and $I_aC$ at the points $D$ and $E$, respectively. Denote by $A_1$ the intersection point of the lines $DC$ and $BE$, and define the points $B_1$ and $C_1$ analogously. Prove that $AA_1$, $BB_1$, $CC_1$ are concurrent."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be a nonzero natural number. Prove that at least one of the numbers $\\left[2^n\\sqrt{2}\\right], \\left[2^{n+1}\\sqrt{2}\\right], \\dots, \\left[2^{2n}\\sqrt{2}\\right]$ is even.\n\n($[a]$ denotes the integer part of the real number $a$.)"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The altitude $[BH]$ drawn to the hypotenuse of the right triangle $ABC$ meets the angle bisectors $[AD]$ and $[CE]$ at the points $Q$ and $P$, respectively. Prove that the line through the midpoints of the segments $[QD]$ and $[PE]$ is parallel to the line $AC$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the following property: for every bounded open interval $I$, the set $f(I)$ is an open interval of the same length as $I$."
+        },
+        {
+          "number": 3,
+          "problem": "Prove that if $n \\ge 2$ is a natural number and $x_1, x_2, \\dots, x_n$ are positive real numbers, then\n$$4\\left(\\frac{x_1^3 - x_2^3}{x_1 + x_2} + \\frac{x_2^3 - x_3^3}{x_2 + x_3} + \\dots + \\frac{x_{n-1}^3 - x_n^3}{x_{n-1} + x_n} + \\frac{x_n^3 - x_1^3}{x_n + x_1}\\right) \\le (x_1 - x_2)^2 + (x_2 - x_3)^2 + \\dots + (x_{n-1} - x_n)^2 + (x_n - x_1)^2.$$"
+        },
+        {
+          "number": 4,
+          "problem": "On a table there are $k \\ge 2$ piles having $n_1, n_2, \\dots, n_k$ pencils, respectively. A move consists of choosing two piles having $a$ and $b$ pencils, respectively, with $a \\ge b$, and transferring $b$ pencils from the first pile to the second one.\n\nDetermine a necessary and sufficient condition on $n_1, n_2, \\dots, n_k$ for the existence of a sequence of moves by which all the pencils are transferred into the same pile."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A sequence of numbers is called complete if its terms are nonzero natural numbers and every nonzero natural number has at least one multiple among the terms of the sequence.\n\nProve that an arithmetic progression is a complete sequence if and only if its common difference divides its first term."
+        },
+        {
+          "number": 2,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be an arbitrary function and $g : \\mathbb{R} \\to \\mathbb{R}$ a function of the second degree, with the property:\n\nfor any real numbers $m$ and $n$, the equation $f(x) = mx + n$ has solutions if and only if the equation $g(x) = mx + n$ has solutions.\n\nProve that the functions $f$ and $g$ are equal."
+        },
+        {
+          "number": 3,
+          "problem": "Let $P$ be a point in the interior of an acute triangle $ABC$, and let $D, E, F$ be the intersections of the lines $AP$, $BP$, $CP$ with $[BC]$, $[CA]$ and $[AB]$, respectively.\n\na) Prove that the area of triangle $DEF$ is at most one quarter of the area of triangle $ABC$.\n\nb) Prove that the inradius of triangle $DEF$ is at most one quarter of the circumradius of triangle $ABC$."
+        },
+        {
+          "number": 4,
+          "problem": "Consider a nonzero natural number $n$ and the function\n$$f : \\mathbb{N} \\to \\mathbb{N}, \\quad f(x) = \\begin{cases} \\dfrac{x}{2}, & \\text{if } x \\text{ is even}, \\\\ \\dfrac{x - 1}{2} + 2^{n-1}, & \\text{if } x \\text{ is odd}. \\end{cases}$$\nDetermine the set\n$$A = \\{x \\in \\mathbb{N} \\mid (\\underbrace{f \\circ f \\circ \\dots \\circ f}_{n \\text{ times}})(x) = x\\}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a natural number. Find the integers $x, y, z$ with the property\n$$x^2 + y^2 + z^2 = 2^n (x + y + z).$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $a$ be an odd natural number which is not a perfect square. Prove that if $m$ and $n$ are nonzero natural numbers, then\n\na) $\\{m(a + \\sqrt{a})\\} \\ne \\{n(a - \\sqrt{a})\\}$;\n\nb) $[m(a + \\sqrt{a})] \\ne [n(a - \\sqrt{a})]$.\n\nHere $\\{x\\}$ and $[x]$ denote the fractional part and the integer part of the real number $x$, respectively."
+        },
+        {
+          "number": 3,
+          "problem": "Let $P$ and $Q$ be the midpoints of the diagonals $BD$ and $AC$ of the quadrilateral $ABCD$. Consider the points $M \\in (BC)$, $N \\in (CD)$, $R \\in (PQ)$ and $S \\in (AC)$ such that\n$$\\frac{BM}{MC} = \\frac{DN}{NC} = \\frac{PR}{RQ} = \\frac{AS}{SC} = k.$$\nProve that the centroid of triangle $AMN$ lies on the segment $[RS]$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABCD$ be a quadrilateral inscribed in the circle of diameter $AC$. It is known that there exist points $E \\in (CD)$ and $F \\in (BC)$ such that the line $AE$ is perpendicular to $DF$ and $AF$ is perpendicular to $BE$.\n\nProve that $AB = AD$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that one cannot choose $45$ distinct elements of the set $\\{\\sqrt{1}, \\sqrt{2}, \\sqrt{3}, \\dots, \\sqrt{2015}\\}$ such that the selected numbers are in arithmetic progression."
+        },
+        {
+          "number": 2,
+          "problem": "A function $f$ of the second degree has the property: for every interval $I$ of length $1$, the interval $f(I)$ has length at least $1$.\n\nProve that for every interval $J$ of length $2$, the interval $f(J)$ has length at least $4$."
+        },
+        {
+          "number": 3,
+          "problem": "The point $P$ lies in the interior of triangle $ABC$, and the lines $AP$, $BP$, $CP$ meet the sides $BC$, $AC$, $AB$ at $A_1$, $B_1$ and $C_1$, respectively. It is known that\n$$s(PBA_1) + s(PCB_1) + s(PAC_1) = \\frac{1}{2} s(ABC),$$\nwhere $s(XYZ)$ denotes the area of triangle $XYZ$. Prove that $P$ lies on a median of triangle $ABC$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a, b, c, d \\ge 0$ be real numbers such that $a + b + c + d = 1$. Prove that\n$$\\sqrt{a + \\frac{(b - c)^2}{6} + \\frac{(c - d)^2}{6} + \\frac{(d - b)^2}{6}} + \\sqrt{b} + \\sqrt{c} + \\sqrt{d} \\le 2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A triangle $ABC$ has orthocenter $H$ different from the vertices and from the circumcenter $O$. Denote by $M$, $N$, $P$ the circumcenters of the triangles $HBC$, $HCA$ and $HAB$, respectively. Prove that the lines $AM$, $BN$, $CP$ and $OH$ are concurrent."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\ge 2$ be a natural number and $a_1, a_2, \\dots, a_n$ strictly positive real numbers such that $a_1 \\le a_2$, $a_1 + a_2 \\le a_3$, $a_1 + a_2 + a_3 \\le a_4$, $\\dots$, $a_1 + a_2 + \\dots + a_{n-1} \\le a_n$. Prove that\n$$\\frac{a_1}{a_2} + \\frac{a_2}{a_3} + \\frac{a_3}{a_4} + \\dots + \\frac{a_{n-1}}{a_n} \\le \\frac{n}{2}.$$\nWhen does equality hold?"
+        },
+        {
+          "number": 3,
+          "problem": "a) Prove that $7$ cannot be written as a sum of three squares of rational numbers.\n\nb) Let $a$ be a rational number which can be written as a sum of three squares of rational numbers. Prove that $a^m$ can be written as a sum of three squares of rational numbers for every nonzero natural number $m$."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the property\n$$f(a^2) - f(b^2) \\le (f(a) + b)(a - f(b)) \\quad \\text{for all } a, b \\in \\mathbb{R}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be a non-isosceles triangle with centroid $G$ and incenter $I$. Prove that $GI \\perp BC$ if and only if $AB + AC = 3BC$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCD$ be a square. Consider the points $E \\in (AB)$, $N \\in (CD)$ and $F, M \\in (BC)$ such that the triangles $AMN$ and $DEF$ are equilateral. Prove that\n$$PQ = FM,$$\nwhere $\\{P\\} = AN \\cap DE$ and $\\{Q\\} = AM \\cap EF$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a$ and $n$ be two fixed nonzero natural numbers.\n\na) Prove that there exist $n$ nonzero natural numbers $a_1, a_2, \\dots, a_n$ such that\n$$1 + \\frac{1}{a} = \\left(1 + \\frac{1}{a_1}\\right)\\left(1 + \\frac{1}{a_2}\\right) \\dots \\left(1 + \\frac{1}{a_n}\\right).$$\n\nb) Prove that the number of representations of $1 + \\frac{1}{a}$ of the above form is finite."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a, b \\in \\mathbb{R}$ with $0 < a < b$, and let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function satisfying\n$$f(x^2 + ay) \\ge f(x^2 + by) \\quad \\text{for all } x, y \\in \\mathbb{R}. \\qquad (*)$$\n\na) Prove that $f(s) \\le f(0) \\le f(t)$ for all $s < 0$ and $t > 0$.\n\nb) Prove that $f$ is constant on the interval $(0, \\infty)$.\n\nc) Give an example of a non-monotonic function $f : \\mathbb{R} \\to \\mathbb{R}$ with property $(*)$."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that if in a triangle the orthocenter $H$, the centroid $G$ and the incenter $I$ are collinear, then the triangle is isosceles."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that if $a, b, c \\ge 0$ and $a + b + c = 3$, then\n$$\\frac{a}{1 + b} + \\frac{b}{1 + c} + \\frac{c}{1 + a} \\ge \\frac{1}{1 + a} + \\frac{1}{1 + b} + \\frac{1}{1 + c}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ and $g : \\mathbb{R} \\to \\mathbb{R}$ be two functions of the second degree with the property: for every real number $r$, if $f(r)$ is an integer, then $g(r)$ is also an integer.\n\nProve that there exist two integers $m$ and $n$ such that $g(x) = m f(x) + n$ for every real number $x$."
+        },
+        {
+          "number": 4,
+          "problem": "Consider a nonzero natural number $n$, a circle of length $6n$ and $3n$ points which divide the circle into $3n$ arcs such that $n$ of these arcs have length $1$, another $n$ of these arcs have length $2$, and the remaining $n$ arcs have length $3$.\n\nProve that among the considered points there are two which are diametrically opposite."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be an arbitrary triangle and $P$ an interior point such that $BP = AC$. Denote by $M$ the midpoint of the segment $AP$ and by $R$ the midpoint of the segment $BC$. Let $BP \\cap AC = \\{E\\}$. Prove that the bisector of the angle $\\angle BEA$ is perpendicular to $MR$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine all natural numbers $n$, $n \\ge 3$, for which there exists a set $M$ consisting of $n$ distinct nonzero vectors of equal lengths such that $\\sum_{\\vec{u} \\in M} \\vec{u} = \\vec{0}$, given that $\\vec{v} + \\vec{w} \\ne \\vec{0}$ for all $\\vec{v}, \\vec{w} \\in M$."
+        },
+        {
+          "number": 3,
+          "problem": "For every nonzero natural number $n$ define the set\n$$A_n = \\left\\{(x, y) \\in \\mathbb{N} \\times \\mathbb{N} \\;\\middle|\\; \\sqrt{x^2 + y + n} + \\sqrt{y^2 + x + n} \\in \\mathbb{N}\\right\\}.$$\nProve that for every $n \\ge 1$ the set $A_n$ is nonempty and finite."
+        },
+        {
+          "number": 4,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying\n$$f(x + y) \\le f(x^2 + y)$$\nfor all $x, y \\in \\mathbb{R}$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the acute triangle $ABC$. Let $O$ be its circumcenter and $D$ the foot of the altitude from $A$. Given that $OD \\parallel AB$, prove that $\\sin 2B = \\cot C$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $P_0, P_1, \\dots, P_{2021}$ be points on the unit circle with center $O$ and radius $1$ such that, for every $n \\in \\{1, 2, \\dots, 2021\\}$, the length of the arc travelled in the positive (trigonometric) direction from $P_{n-1}$ to $P_n$ belongs to the interval $\\left[\\frac{\\pi}{2}, \\pi\\right]$. Find the maximum length of the vector\n$$\\overrightarrow{OP_0} + \\overrightarrow{OP_1} + \\dots + \\overrightarrow{OP_{2021}}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a, b, c$ be strictly positive numbers such that $a + b + c = 1$. Prove that\n$$\\frac{1}{abc} + \\frac{4}{a^2 + b^2 + c^2} \\ge \\frac{13}{ab + bc + ca}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $A$ be a finite set of natural numbers. Determine all functions $f : \\mathbb{N} \\to A$ with the property that $f(|x - y|) = |f(x) - f(y)|$ for all $x, y \\in \\mathbb{N}$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a$ and $b$ be nonzero natural numbers. Prove that the equation\n$$x^2 + (a + b)^2 x + 4ab = 1$$\nhas rational solutions if and only if $a = b$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle with a right angle at $A$, let $A'$ be the midpoint of the hypotenuse, $M$ the midpoint of the altitude $AD$, $D \\in (BC)$, and $\\{P\\} = BM \\cap AA'$. If $\\alpha = m(\\angle PCB)$, prove that\n$$\\tan \\alpha = \\sin C \\cdot \\cos C.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Determine the functions $f : \\mathbb{R} \\to \\mathbb{R}$ for which there exists a function $g : \\mathbb{R} \\to \\mathbb{R}$ such that\n$$f(x) + f(y) = [g(x + y)]$$\nfor all real numbers $x, y$.\n\n(Here $[a]$ denotes the integer part of the real number $a$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Let $a, b, c, d$ be nonzero natural numbers with $a < b < c < d$ and $ad = bc$. Prove that\n$$2a + \\sqrt{a} + \\sqrt{d} < b + c + 1.$$"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the equation $x^2 + (a + b - 1)x + ab - a - b = 0$, where $a$ and $b$ are nonzero natural numbers with $a \\le b$.\n\na) Prove that the equation has two distinct real solutions.\n\nb) Prove that if one solution of the equation is an integer, then both solutions are non-positive integers and $b < 2a$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine the functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the property that\n$$f(f(x)) + y \\cdot f(x) \\le x + x \\cdot f(f(y))$$\nfor all real numbers $x$ and $y$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\ge 2$ be a natural number. Consider a square of side $2n - 1$, which is divided by lines parallel to its sides into $(2n - 1)^2$ unit squares. Ana and Bogdan play the following game: starting with Ana, the two of them alternately colour, Ana in red and Bogdan in blue, in $2n^2$ turns, the $4n^2$ vertices of the unit squares. Then, starting with Ana, each of them in turn joins by a vector a red point (which will be the origin) with a blue point (which will be the endpoint), resulting in $2n^2$ vectors with distinct origins and distinct endpoints. If the sum of these vectors is zero, Ana wins. Otherwise, Bogdan wins.\n\nProve that Bogdan has a winning strategy."
+        },
+        {
+          "number": 4,
+          "problem": "Let $r, s \\in [1, \\infty)$ be real numbers with the property that for all nonzero natural numbers $a, b$ with $a \\mid b$, it follows that $[ar]$ divides $[bs]$.\n\na) Prove that $\\frac{s}{r}$ is a natural number.\n\nb) Prove that $r$ and $s$ are natural numbers.\n\nHere $[x]$ denotes the integer part of the real number $x$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "On the side $(BC)$ of triangle $ABC$ consider the points $D$ and $E$, with $D$ between $B$ and $E$.\n\nWe say that a point $R$ of the segment $(AE)$ is remarkable if the lines $PQ$ and $BC$ are parallel, where $\\{P\\} = DR \\cap AC$ and $\\{Q\\} = CR \\cap AB$. We say that a point $R'$ of the segment $(AD)$ is remarkable if the lines $P'Q'$ and $BC$ are parallel, where $\\{P'\\} = BR' \\cap AC$ and $\\{Q'\\} = ER' \\cap AB$.\n\na) If there is a remarkable point on the segment $(AE)$, prove that every point of the segment $(AE)$ is remarkable.\n\nb) If each of the segments $(AD)$ and $(AE)$ contains a remarkable point, prove that $BD = CE = \\varphi \\cdot DE$, where $\\varphi = \\frac{1 + \\sqrt{5}}{2}$ is the golden ratio."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a$ and $b$ be two real numbers in the interval $(0, 1)$ such that $a$ is rational and\n$$\\{na\\} \\ge \\{nb\\} \\quad \\text{for every natural number } n.$$\nProve that $a = b$.\n\n(Here $\\{x\\}$ denotes the fractional part of the real number $x$.)"
+        },
+        {
+          "number": 3,
+          "problem": "Determine the functions $f : \\mathbb{R} \\to \\mathbb{R}$ with the property that\n$$(f(x) - y) \\cdot f(x + f(y)) = f(x^2) - y f(y)$$\nfor all real numbers $x$ and $y$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a$ be a given nonzero natural number. Consider the sequence $(x_n)_{n \\ge 1}$ defined by $x_n = \\dfrac{1}{1 + na}$ for every nonzero natural number $n$.\n\nProve that for every natural number $k \\ge 3$ there exist nonzero natural numbers $n_1 < n_2 < \\dots < n_k$ such that the numbers $x_{n_1}, x_{n_2}, \\dots, x_{n_k}$ are consecutive terms of an arithmetic progression."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $N \\ge 1$ be a natural number. Initially two zeros are written on a board, one in red and one in blue. We define the following procedure: at each step, a natural number $k$ is chosen (not necessarily distinct from the values chosen before) and, if $x$ is the number written in blue and $y$ the one written in red, we replace them by $x + k + 1$ and $y + k^2 + 2$, respectively, and then colour $x + k + 1$ blue and $y + k^2 + 2$ red. The procedure continues until the blue number is at least $N$. Determine the minimum value that the red number can have at the end of the procedure."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle inscribed in the circle with center $O$ and radius $R$, with orthocenter $H$. Let $A_1$ be a point on the side $BC$ of the triangle such that $HA_1 + A_1O = R$. Analogously, consider $B_1$ and $C_1$ on the sides $AC$ and $AB$, respectively. If $\\overrightarrow{AA_1} + \\overrightarrow{BB_1} + \\overrightarrow{CC_1} = \\vec{0}$, prove that the triangle $ABC$ is equilateral."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n \\in \\mathbb{N}$, $n \\ge 2$. Consider the equation\n$$\\{x\\} + \\{2x\\} + \\dots + \\{nx\\} = [x] + [2x] + \\dots + [2nx].$$\n\na) Solve the equation in $\\mathbb{R}$ for $n = 2$.\n\nb) Prove that the equation has at most two real solutions, for every $n \\ge 2$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $m \\in \\mathbb{N}$, $m \\ge 2$, be a fixed natural number and let $(a_n)_{n \\ge 1}$ be a sequence of non-negative real numbers such that $a_{n+1} \\le a_n - a_{mn}$ for all $n \\ge 1$.\n\na) Prove that the sequence $(b_n)_{n \\ge 1}$ with $b_n = \\sum_{k=1}^{n} a_k$ is bounded above.\n\nb) Prove that the sequence $(c_n)_{n \\ge 1}$ with $c_n = \\sum_{k=1}^{n} k^2 a_k$ is bounded above."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the strictly monotonic functions $f : \\mathbb{N}^* \\to \\mathbb{N}^*$ which simultaneously satisfy the following two conditions:\n$$f(f(n)) = 4n + 3;$$\n$$f(f(n) - n) = 2n + 3,$$\nfor every nonzero natural number $n$."
+        },
+        {
+          "number": 2,
+          "problem": "Consider the natural number $n \\ge 2$ and the real numbers $a_1, a_2, \\dots, a_n \\in (0, \\infty)$ with the property that there exists a nonzero natural number $k$ such that\n$$a_1^{k-1} + a_2^{k} + \\dots + a_n^{k+n-2} \\ge a_1^{k} + a_2^{k+1} + \\dots + a_n^{k+n-1}.$$\nProve that $a_1^k + a_2^k + \\dots + a_n^k \\le n$."
+        },
+        {
+          "number": 3,
+          "problem": "Consider real numbers $a$ and $b$ such that $[a] = [b] \\in \\mathbb{N}^*$. If $[a^n] \\cdot [b^n]$ is a perfect square for every natural number $n$, prove that $a = b$.\n\n(Here $[x]$ denotes the integer part of the real number $x$.)"
+        },
+        {
+          "number": 4,
+          "problem": "a) Consider the four sides of a square and one of its diagonals. To each of these segments we assign an arbitrary direction, obtaining in this way five vectors. Prove that the length of the sum of these five vectors is at least the length of the diagonal of the square.\n\nb) Let $n$ be a nonzero natural number and let $n$ lines partition a square into convex polygons. Denote by $M$ the set of all segments which are sides of these polygons. Prove that we can choose a direction for each segment in $M$ such that the sum of the corresponding vectors has length at most the length of the diagonal of the square."
+        }
+      ]
+    }
+  ]
+}
