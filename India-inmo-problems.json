@@ -546,7 +546,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "For a convex hexagon $ABCDEF$ in which each pair of opposite sides is unequal, consider the following six statements: $(a_1)$ $AB$ is parallel to $DE$; $(a_2)$ $AE = BD$; $(b_1)$ $BC$ is parallel to $EF$; $(b_2)$ $BF = CE$; $(c_1)$ $CD$ is parallel to $FA$; $(c_2)$ $CA = DF$. (a) Show that if all six of these statements are true then the hexagon is cyclic (i.e., it can be inscribed in a circle). (b) Prove that, in fact, five of these six statements suffice to imply that the hexagon is cyclic."
+          "problem": "For a convex hexagon $ABCDEF$ in which each pair of opposite sides is unequal, consider the following six statements: $(a_1)$ $AB$ is parallel to $DE$; $(a_2)$ $AE = BD$; $(b_1)$ $BC$ is parallel to $EF$; $(b_2)$ $BF = CE$; $(c_1)$ $CD$ is parallel to $FA$; $(c_2)$ $CA = DF$. (a) Show that if all six of these statements are true then the hexagon is cyclic (i.e., it can be inscribed in a circle). (b) Prove that, in fact, any five of these six statements also imply that the hexagon is cyclic."
         },
         {
           "number": 2,
@@ -1014,7 +1014,7 @@
         },
         {
           "number": 2,
-          "problem": "For any natural number $n$, consider a $1 \\times n$ rectangular board made up of $n$ unit squares. This is covered by 3 types of tiles: $1 \\times 1$ red tile, $1 \\times 1$ green tile and $1 \\times 2$ domino. (For example, we can have 5 types of tiling when $n = 2$: red-red; red-green; green-red; green-green; and blue.) Let $t_n$ denote the number of ways of covering a $1 \\times n$ rectangular board by these 3 types of tiles. Prove that $t_n$ divides $t_{2n+1}$."
+          "problem": "For any natural number $n$, consider a $1 \\times n$ rectangular board made up of $n$ unit squares. This is covered by three types of tiles: $1 \\times 1$ red tile, $1 \\times 1$ green tile and $1 \\times 2$ blue domino. Let $t_n$ denote the number of ways of covering a $1 \\times n$ rectangular board by these three types of tiles. Prove that $t_n$ divides $t_{2n+1}$."
         },
         {
           "number": 3,
@@ -1076,7 +1076,7 @@
         },
         {
           "number": 3,
-          "problem": "Let $X = \\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}$. Let $S \\subseteq X$ be such that any nonnegative integer $n$ can be written as $p + q$ where the nonnegative integers $p$, $q$ have all their digits in $S$. Find the smallest possible number of elements in $S$."
+          "problem": "Let $X = \\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}$. Let $S \\subseteq X$ be such that any positive integer $n$ can be written as $p + q$ where the non-negative integers $p$, $q$ have all their digits in $S$. Find the smallest possible number of elements in $S$."
         },
         {
           "number": 4,
@@ -1126,15 +1126,18 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $D$ be an interior point on the side $BC$ of an acute-angled triangle $ABC$. Let the circumcircle of triangle $ADB$ intersect $AC$ again at $E\\ (\\ne A)$ and the circumcircle of triangle $ADC$ intersect $AB$ again at $F\\ (\\ne A)$. Let $AD$, $BE$, and $CF$ intersect the circumcircle of triangle $ABC$ again at $D_1\\ (\\ne A)$, $E_1\\ (\\ne B)$ and $F_1\\ (\\ne C)$, respectively. Let $I$ and $I_1$ be the incentres of triangles $DEF$ and $D_1E_1F_1$, respectively. Prove that $E$, $F$, $I$, $I_1$ are concyclic."
+          "problem": "Let $D$ be an interior point on the side $BC$ of an acute-angled triangle $ABC$. Let the circumcircle of triangle $ADB$ intersect $AC$ again at $E\\ (\\ne A)$ and the circumcircle of triangle $ADC$ intersect $AB$ again at $F\\ (\\ne A)$. Let $AD$, $BE$, and $CF$ intersect the circumcircle of triangle $ABC$ again at $D_1\\ (\\ne A)$, $E_1\\ (\\ne B)$ and $F_1\\ (\\ne C)$, respectively. Let $I$ and $I_1$ be the incentres of triangles $DEF$ and $D_1E_1F_1$, respectively. Prove that $E$, $F$, $I$, $I_1$ are concyclic.",
+          "paper_label": "IOQM 2022 Part B (held instead of the INMO)"
         },
         {
           "number": 2,
-          "problem": "Find all natural numbers $n$ for which there is a permutation $\\sigma$ of $\\{1, 2, \\dots, n\\}$ that satisfies $$\\sum_{i=1}^{n} \\sigma(i)(-2)^{i-1} = 0.$$"
+          "problem": "Find all natural numbers $n$ for which there is a permutation $\\sigma$ of $\\{1, 2, \\dots, n\\}$ that satisfies $$\\sum_{i=1}^{n} \\sigma(i)(-2)^{i-1} = 0.$$",
+          "paper_label": "IOQM 2022 Part B (held instead of the INMO)"
         },
         {
           "number": 3,
-          "problem": "For a positive integer $N$, let $T(N)$ denote the number of arrangements of the integers $1, 2, \\dots, N$ into a sequence $a_1, a_2, \\dots, a_N$ such that $a_i > a_{2i}$ for all $i$, $1 \\le i < 2i \\le N$, and $a_i > a_{2i+1}$ for all $i$, $1 \\le i < 2i + 1 \\le N$. For example, $T(3)$ is 2, since the possible arrangements are 321 and 312. (a) Find $T(7)$. (b) If $K$ is the largest non-negative integer so that $2^K$ divides $T(2^n - 1)$, show that $K = 2^n - n - 1$. (c) Find the largest non-negative integer $K$ so that $2^K$ divides $T(2^n + 1)$."
+          "problem": "For a positive integer $N$, let $T(N)$ denote the number of arrangements of the integers $1, 2, \\dots, N$ into a sequence $a_1, a_2, \\dots, a_N$ such that $a_i > a_{2i}$ for all $i$, $1 \\le i < 2i \\le N$, and $a_i > a_{2i+1}$ for all $i$, $1 \\le i < 2i + 1 \\le N$. For example, $T(3)$ is 2, since the possible arrangements are 321 and 312. (a) Find $T(7)$. (b) If $K$ is the largest non-negative integer so that $2^K$ divides $T(2^n - 1)$, show that $K = 2^n - n - 1$. (c) Find the largest non-negative integer $K$ so that $2^K$ divides $T(2^n + 1)$.",
+          "paper_label": "IOQM 2022 Part B (held instead of the INMO)"
         }
       ]
     },
