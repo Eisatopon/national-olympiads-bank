@@ -283,6 +283,31 @@
           "problem": "Find all functions $f: \\mathbb{R}^{+} \\to \\mathbb{R}^{+}$ such that $f(x+yf(x)) = xf(1+y)$ for all positive reals $x, y$."
         }
       ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $k \\geq 2$ be an integer. Let $m$ and $n$ be coprime positive integers with exactly $k$ positive divisors such that $m < n$.\nFor $i \\in \\{1, \\ldots, k\\}$, denote by $f_i$ and $d_i$ the $i$-th smallest divisor of $m$ and $n$, respectively. Suppose that $$d_i - f_i \\mid n - m$$ for all $i \\in \\{2, \\ldots, k\\}$. Prove that $d_i \\geq f_i$ for all $i \\leq \\frac{k}{2}$.",
+          "proposer": "Ivan Novak"
+        },
+        {
+          "number": 2,
+          "problem": "Let $f\\colon \\mathbb{N} \\to \\mathbb{N}$ (where $\\mathbb{N}$ is a set of positive integers) be a function such that for every positive integer $k$, the set $\\{f(1), f(2), \\ldots, f(k)\\}$ contains exactly $f(f(k))$ elements. Prove that $$f(f(f(k))) = f(k)$$ for every positive integer $k$.",
+          "proposer": "Ivan Novak"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with circumcircle $\\omega$. Let the angle bisector of $\\angle B$ intersect $AC$, $\\omega$, and the parallel to $AB$ from $C$ in $D$, $E$ and $F$ respectively. Let $X$ be the intersection of $\\omega$ and the circumcircle of triangle $DCF$, and let $Y$ be a point on $CF$ such that $YF = YD$. The line $XF$ intersects $\\omega$ and $DY$ in $T$ and $P$ respectively. The circumcircle of triangle $\\triangle TDE$ meets the lines $PF$ and $EY$ in $R$ and $S$.\nProve that the circumcircles of triangles $\\triangle PRS$ and $\\triangle BDC$ are internally tangent.",
+          "proposer": "Yasser Merabet"
+        },
+        {
+          "number": 4,
+          "problem": "Determine all sequences of positive real numbers $a_1, a_2, a_3, \\ldots$, such that for each positive integer $n$ the following equality holds: $$a_n + \\max(a_{n+1}, a_{n+2}) = \\frac{1}{\\min(a_n, a_{n+1})}.$$",
+          "proposer": "Ivan Novak"
+        }
+      ]
     }
   ]
 }

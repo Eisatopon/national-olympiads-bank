@@ -13,15 +13,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="eisatopon.gr">
 <meta property="og:title" content="World Mathematical Olympiads Bank">
-<meta property="og:description" content="52,000+ mathematical olympiad problems from 80 countries (1935–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
+<meta property="og:description" content="53,000+ mathematical olympiad problems from 80 countries (1894–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
 <meta property="og:url" content="https://eisatopon.github.io/national-olympiads-bank/">
 <meta property="og:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 52,000+ problems, 80 countries, 1935–2026">
+<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 53,000+ problems, 80 countries, 1894–2026">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="World Mathematical Olympiads Bank">
-<meta name="twitter:description" content="52,000+ olympiad problems from 80 countries, 1935–2026. In English with LaTeX. Free, searchable, printable.">
+<meta name="twitter:description" content="53,000+ olympiad problems from 80 countries, 1894–2026. In English with LaTeX. Free, searchable, printable.">
 <meta name="twitter:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -271,6 +271,16 @@
     --ge: #b91c1c; --ge-ink: #7f1d1d; --ge-tint: #fbe4e4;
     --me: #a16207; --me-ink: #6b4105; --me-tint: #f8efd6;
     --ve: #ca8a04; --ve-ink: #7a5303; --ve-tint: #faf0d3;
+    --ukf: #1e3a8a; --ukf-ink: #132559; --ukf-tint: #e1e7f7;
+    --ukg: #9d174d; --ukg-ink: #650f32; --ukg-tint: #f9e1ec;
+    --uka: #475569; --uka-ink: #2c3542; --uka-tint: #e5e9ee;
+    --iowa: #3f6212; --iowa-ink: #283e0b; --iowa-tint: #eaf2dc;
+    --utor: #1e40af; --utor-ink: #132a70; --utor-tint: #e1e8f8;
+    --irlu: #15803d; --irlu-ink: #0d5228; --irlu-tint: #def3e5;
+    --umd: #b45309; --umd-ink: #7a3906; --umd-tint: #fbecd9;
+    --fou: #0f766e; --fou-ink: #0a4d48; --fou-tint: #dbf1ee;
+    --apmc: #7c2d12; --apmc-ink: #521d0b; --apmc-tint: #f6e6df;
+    --hue: #57534e; --hue-ink: #3a3734; --hue-tint: #ecebe9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -477,6 +487,16 @@
 .f-ge { --f: var(--ge); --f-ink: var(--ge-ink); --f-tint: var(--ge-tint); }
 .f-me { --f: var(--me); --f-ink: var(--me-ink); --f-tint: var(--me-tint); }
 .f-ve { --f: var(--ve); --f-ink: var(--ve-ink); --f-tint: var(--ve-tint); }
+.f-ukf { --f: var(--ukf); --f-ink: var(--ukf-ink); --f-tint: var(--ukf-tint); }
+.f-ukg { --f: var(--ukg); --f-ink: var(--ukg-ink); --f-tint: var(--ukg-tint); }
+.f-uka { --f: var(--uka); --f-ink: var(--uka-ink); --f-tint: var(--uka-tint); }
+.f-iowa { --f: var(--iowa); --f-ink: var(--iowa-ink); --f-tint: var(--iowa-tint); }
+.f-utor { --f: var(--utor); --f-ink: var(--utor-ink); --f-tint: var(--utor-tint); }
+.f-irlu { --f: var(--irlu); --f-ink: var(--irlu-ink); --f-tint: var(--irlu-tint); }
+.f-umd { --f: var(--umd); --f-ink: var(--umd-ink); --f-tint: var(--umd-tint); }
+.f-fou { --f: var(--fou); --f-ink: var(--fou-ink); --f-tint: var(--fou-tint); }
+.f-apmc { --f: var(--apmc); --f-ink: var(--apmc-ink); --f-tint: var(--apmc-tint); }
+.f-hue { --f: var(--hue); --f-ink: var(--hue-ink); --f-tint: var(--hue-tint); }
 
 /* ==========================================================
    Base
@@ -838,7 +858,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
             <div class="stat"><b>80</b><span>countries</span></div>
-            <div class="stat"><b>1935–2026</b><span>years</span></div>
+            <div class="stat"><b>1894–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
     </div>
@@ -991,8 +1011,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-armenia-georgia-montenegro-venezuela';
-const FIRST = 1935, LAST = 2026;
+const DATA_VERSION = '20261017-umd-fou-auspol-eotvos';
+const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
     gr: 'europe', uk1: 'europe', uk2: 'europe', ie: 'europe', it: 'europe', tr: 'europe', ru: 'europe',
@@ -1174,6 +1194,16 @@ REGION_OF.am = 'asia';
 REGION_OF.ge = 'asia';
 REGION_OF.me = 'europe';
 REGION_OF.ve = 'americas';
+REGION_OF.ukf = 'europe';
+REGION_OF.ukg = 'europe';
+REGION_OF.uka = 'europe';
+REGION_OF.iowa = 'other';
+REGION_OF.utor = 'other';
+REGION_OF.irlu = 'other';
+REGION_OF.umd = 'americas';
+REGION_OF.fou = 'world';
+REGION_OF.apmc = 'europe';
+REGION_OF.hue = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1218,6 +1248,9 @@ const COUNTRIES = [
     { key: 'hrt', name: 'Croatia HMO', flag: '🇭🇷', file: 'Croatia-hmo-problems.json', kind: 'years' },
     { key: 'no', name: 'Norway', flag: '🇳🇴', file: 'Norway-abel-problems.json', kind: 'years' },
     { key: 'ukt', name: 'UK TST', flag: '🇬🇧', file: 'Uk-tst-problems.json', kind: 'years' },
+    { key: 'ukf', name: 'UK FIST', flag: '🇬🇧', file: 'Uk-fist-problems.json', kind: 'years', full: "UK Further International Selection Test (FIST)" },
+    { key: 'ukg', name: 'UK MOG', flag: '🇬🇧', file: 'Uk-mog-problems.json', kind: 'years', full: "UK Mathematical Olympiad for Girls (UK MOG)" },
+    { key: 'uka', name: 'UK Ashes', flag: '🇬🇧', file: 'Uk-ashes-problems.json', kind: 'years', full: "Mathematics Ashes (Australia v United Kingdom IMO team training exam)" },
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'ch', name: 'Switzerland', flag: '🇨🇭', file: 'Swiss-final-problems.json', kind: 'years' },
@@ -1244,6 +1277,7 @@ const COUNTRIES = [
     { key: 'frt', name: 'France TST', flag: '🇫🇷', file: 'France-tst-problems.json', kind: 'years' },
     { key: 'cyt', name: 'Cyprus TST', flag: '🇨🇾', file: 'Cyprus-tst-problems.json', kind: 'years' },
     { key: 'hu', name: 'Hungary Kürschák', flag: '🇭🇺', file: 'Hungary-kurschak-problems.json', kind: 'years' },
+    { key: 'hue', name: 'Hungary Eötvös', flag: '🇭🇺', file: 'Hungary-eotvos-problems.json', kind: 'years', full: "E\u00f6tv\u00f6s Competition (Hungary), predecessor of the K\u00fcrsch\u00e1k Competition" },
     { key: 'au', name: 'Australia', flag: '🇦🇺', file: 'Australia-amo-problems.json', kind: 'years' },
     { key: 'nz', name: 'New Zealand', flag: '🇳🇿', file: 'NewZealand-nzmo-problems.json', kind: 'years' },
     { key: 'mk', name: 'North Macedonia', flag: '🇲🇰', file: 'NorthMacedonia-mmo-problems.json', kind: 'years' },
@@ -1305,6 +1339,9 @@ const COUNTRIES = [
     { key: 'ciim', name: 'CIIM', flag: '🎓', file: 'undergraduate/CIIM-problems.json', kind: 'years', scope: 'undergraduate', full: "Iberoamerican Interuniversity Mathematics Competition (CIIM)" },
     { key: 'icmc', name: 'ICMC', flag: '🎓', file: 'undergraduate/ICMC-problems.json', kind: 'years', scope: 'undergraduate', full: "Imperial College Mathematics Competition (ICMC), Individual Rounds One and Two" },
     { key: 'mitib', name: 'MIT Integration Bee', flag: '🎓', file: 'undergraduate/MIT-integration-bee-problems.json', kind: 'years', scope: 'undergraduate', full: "MIT Integration Bee, Qualifying Test" },
+    { key: 'iowa', name: 'Iowa Collegiate', flag: '🎓', file: 'undergraduate/Iowa-collegiate-problems.json', kind: 'years', scope: 'undergraduate', full: "Iowa Collegiate Mathematics Competition" },
+    { key: 'utor', name: 'Toronto Undergraduate', flag: '🎓', file: 'undergraduate/Toronto-undergraduate-problems.json', kind: 'years', scope: 'undergraduate', full: "University of Toronto Undergraduate Mathematics Competition" },
+    { key: 'irlu', name: 'Irish Intervarsity', flag: '🎓', file: 'undergraduate/Irish-intervarsity-problems.json', kind: 'years', scope: 'undergraduate', full: "Irish Intervarsity Mathematics Competition" },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Junior' },
     { key: 'bmosl', name: 'BMO Shortlist', flag: '🏔️', file: 'Balkan-bmo-shortlist-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior shortlist', full: "Balkan Mathematical Olympiad Shortlist" },
@@ -1316,6 +1353,7 @@ const COUNTRIES = [
     { key: 'isl', name: 'IMO Shortlist', flag: '🌐', file: 'IMO-shortlist-problems.json', kind: 'years', scope: 'international', full: 'IMO Shortlist: the problems proposed for each IMO (published after the following IMO)', group: 'IMO', groupName: 'IMO', sub: 'Shortlist' },
     { key: 'rmm', name: 'RMM', flag: '🌐', file: 'RMM-problems.json', kind: 'years', scope: 'international', full: "Romanian Masters of Mathematics" },
     { key: 'stars', name: 'Stars of Mathematics', flag: '🌐', file: 'Stars-of-mathematics-problems.json', kind: 'years', scope: 'international', full: "Stars of Mathematics (Romania), Senior level" },
+    { key: 'fou', name: 'Formula of Unity', flag: '🌐', file: 'Formula-of-unity-problems.json', kind: 'years', scope: 'international', full: "Formula of Unity / The Third Millennium International Mathematical Olympiad, top grade (R11)" },
     { key: 'izho', name: 'Zhautykov (IZhO)', flag: '🌐', file: 'IZhO-problems.json', kind: 'years', scope: 'international', full: "International Zhautykov Olympiad in Mathematics" },
     { key: 'shg', name: 'Sharygin (geometry)', flag: '🌐', file: 'Sharygin-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (final round, grade 10)", group: 'SHG', groupName: 'Sharygin (geometry)', sub: 'Final round' },
     { key: 'shgc', name: 'Sharygin Correspondence', flag: '🌐', file: 'Sharygin-correspondence-problems.json', kind: 'years', scope: 'international', full: "Sharygin Geometry Olympiad (correspondence round)", group: 'SHG', groupName: 'Sharygin (geometry)', sub: 'Correspondence round' },
@@ -1332,6 +1370,7 @@ const COUNTRIES = [
     { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional', full: 'Nordic Mathematical Contest' },
     { key: 'cps', name: 'CPS Match', flag: '🇪🇺', file: 'Cps-match-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Match', group: 'CPS' },
     { key: 'cpsj', name: 'CPS Junior', flag: '🇪🇺', file: 'Cps-junior-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Junior Match', group: 'CPS' },
+    { key: 'apmc', name: 'Austrian–Polish MC', flag: '🇪🇺', file: 'Austrian-polish-problems.json', kind: 'years', scope: 'regional', full: "Austrian\u2013Polish Mathematics Competition" },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
     { key: 'rio', name: 'Rioplatense', flag: '🌎', file: 'Rioplatense-problems.json', kind: 'years', scope: 'regional', full: "Olimp\u00edada Matem\u00e1tica Rioplatense (Level 3)" },
     { key: 'mayo', name: 'Olimpiada de Mayo', flag: '🌎', file: 'Mayo-problems.json', kind: 'years', scope: 'regional', full: "Olimpiada de Mayo (OMA), First and Second Level" },
@@ -1355,6 +1394,7 @@ const COUNTRIES = [
     { key: 'bmt', name: 'Berkeley MT', flag: '🇺🇸', file: 'BMT-problems.json', kind: 'years', scope: 'tournaments', full: "Berkeley Math Tournament (BMT), individual tests" },
     { key: 'omo', name: 'Online Math Open', flag: '🇺🇸', file: 'OMO-problems.json', kind: 'years', scope: 'tournaments', full: "Online Math Open (OMO)" },
     { key: 'duke', name: 'Duke Math Meet', flag: '🇺🇸', file: 'Duke-math-meet-problems.json', kind: 'years', scope: 'tournaments', full: "Duke Math Meet, Individual Round" },
+    { key: 'umd', name: 'Maryland HS (Part II)', flag: '🇺🇸', file: 'UMD-part2-problems.json', kind: 'years', scope: 'tournaments', full: "University of Maryland High School Mathematics Competition, Part II" },
     { key: 'elmo', name: 'ELMO', flag: '🇺🇸', file: 'ELMO-problems.json', kind: 'years', scope: 'tournaments', full: "ELMO (olympiad-style contest held during the US MOP)" },
     { key: 'usemo', name: 'USEMO', flag: '🇺🇸', file: 'USEMO-problems.json', kind: 'years', scope: 'tournaments', full: "United States Ersatz Math Olympiad (USEMO)" },
     { key: 'kgca', name: 'Kangaroo Cadet', flag: '🦘', file: 'Kangaroo-cadet-problems.json', kind: 'years', scope: 'kangaroo', full: 'Kangaroo Cadet (grades 7–8), international KSF paper' },

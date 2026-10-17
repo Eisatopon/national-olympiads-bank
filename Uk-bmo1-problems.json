@@ -2,6 +2,934 @@
   "competition": "British Mathematical Olympiad (BMO), Round 1",
   "years": [
     {
+      "year": 1973,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(i) Two fixed circles are touched by a variable circle at $P$ and $Q$.\nProve that $PQ$ passes through one of two fixed points.\n(ii) State a true theorem about ellipses or if you like about conics in general of which (i) is a particular case."
+        },
+        {
+          "number": 2,
+          "problem": "$9$ points are given in the interior of the unit square.\nProve there exists a triangle of area $\\leq \\frac{1}{8}$ whose vertices are three of the points."
+        },
+        {
+          "number": 3,
+          "problem": "A curve consisting of the quarter-circle $x^2 + y^2 = r^2$, $x, y \\geq 0$, together with the line segment $x = r$, $-h \\leq y \\leq 0$, is rotated about $x = 0$ to form a surface of revolution which is a hemisphere on a cylinder. A string is stretched tightly over the surface from the point on the curve $(r\\sin\\theta, r\\cos\\theta)$ to the point $(-r, -h)$ in the plane of the curve. Show that the string does not lie in a plane if $\\tan\\theta > \\frac{r}{h}$.\n[You may assume spherical triangle formulae such as $\\cos a = \\cos b\\cos c + \\sin b\\sin c\\cos A$ or $\\sin A\\cot B = \\sin c\\cot b - \\cos c\\cos A$. In a spherical triangle the sides $a, b, c$ are arcs of great circles and are measured by the angles they subtend at the centre of the sphere.]"
+        },
+        {
+          "number": 4,
+          "problem": "You have a large number of congruent triangular equilateral discs on a table and you want to fit $n$ discs together to make a convex equiangular hexagon (i.e. one whose interior angles are each $120^\\circ$).\nObviously $n$ cannot be any positive integer. The smallest $n$ is $6$, the next smallest is $10$ and the next $13$. Determine conditions for possible $n$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bmo_1973_1_p4_fig.png"
+        },
+        {
+          "number": 5,
+          "problem": "There is an infinite set of positive integers of the form $2^n - 3$ with the property Q: no two members of the set have a common prime factor. An outline of a proof is as follows.\nSuppose there is a finite set $S = (2^{m_1} - 3, 2^{m_2} - 3, \\ldots, 2^{m_k} - 3)$ with property Q and $k$ members. Let the prime factors of these $k$ numbers be $P_1, P_2, \\ldots, P_t$. Consider the number $N = 2^{(P_1-1)(P_2-1)\\cdots(P_t-1)} + 1$. By Fermat's theorem $a^{P-1} \\equiv 1 \\pmod{P}$ for every prime $P$ that does not divide $a$. Hence $N - 3 \\equiv -1 \\pmod{P_r}$, $r = 1$ to $t$, and $N - 3$ may be added to $S$ to give a larger set with property Q.\nGive a properly expanded and reasoned proof that there is an infinite set of positive integers of the form $2^n - 7$ with property Q."
+        },
+        {
+          "number": 6,
+          "problem": "In answering general knowledge questions (framed so that each question is answered yes or no) the teacher's probability of being correct is $\\alpha$ and a pupil's probability of being correct is $\\beta$ or $\\gamma$ according as the pupil is a boy or a girl.\nThe probability of a randomly chosen pupil agreeing with the teacher's answer is $\\frac{1}{2}$.\nFind the ratio of the numbers of boys to girls in the class."
+        },
+        {
+          "number": 7,
+          "problem": "The life-table issued by the Registrar-General of Draconia shows out of $10{,}000$ live births the number $(y)$ expected to be alive $x$ years later. When $x = 60$, $y = 4{,}820$. When $x = 80$, $y = 3{,}205$. For $60 \\leq x \\leq 100$ the curve $$y = Ax(100 - x) + \\frac{B}{(x - 40)^2}$$ fits the figures in the table very closely, $A$ and $B$ being constants.\nDetermine the life-expectancy (in years correct to one decimal place) of a Draconian aged $70$.\nN.B. At age $100$ all Draconians are put to death."
+        },
+        {
+          "number": 8,
+          "problem": "Call $M_r = \\begin{pmatrix} a_r & b_r \\\\ c_r & d_r \\end{pmatrix}$ the companion matrix for the mapping $$T_r : z \\longrightarrow \\frac{a_rz + b_r}{c_rz + d_r}, \\qquad \\det M_r \\neq 0.$$\n(i) Prove that $M_1M_2$ is the companion matrix for the mapping $T_1T_2$.\n(ii) Find conditions on $a, b, c, d$ so that $T^4 = I$ but $T^2 \\neq I$."
+        },
+        {
+          "number": 9,
+          "problem": "$$L_r = \\begin{vmatrix} x & y & 1 \\\\ a + c\\cos\\theta_r & b + c\\sin\\theta_r & 1 \\\\ l + n\\cos\\theta_r & m + n\\sin\\theta_r & 1 \\end{vmatrix}$$\nShow that the lines $L_r = 0$, $r = 1, 2, 3$ are concurrent and find the co-ordinates of their concurrence."
+        },
+        {
+          "number": 10,
+          "problem": "Construct a detailed flow chart for a computer program to print out all positive integers up to $100$ of the form $a^2 - b^2 - c^2$, where $a, b, c$ are positive integers and $a \\geq b + c$.\nThere is no need to print in ascending order or to avoid repetitions."
+        },
+        {
+          "number": 11,
+          "problem": "(i) Two uniform rough right circular cylinders $A$ and $B$, with the same length, have radii and masses $a, b$ and $M, m$ respectively.\n$A$ rests with a generator in contact with a rough horizontal table. $B$ rests on $A$, initially in unstable equilibrium, with its axis vertically above $A$'s. Equilibrium is disturbed, $B$ rolls on $A$ and $A$ rolls on the table. In the subsequent motion the plane containing the axes makes an angle $\\theta$ with the vertical.\nDraw diagrams showing angles, forces etc., for the period when there is no slipping. Write down equations which will give on elimination a differential equation for $\\theta$, stating the principles used. Indicate how the elimination could be done; you are not asked to do it.\n(ii) Such a differential equation is, with $k = M/m$, $$\\ddot{\\theta}\\left(4 + 2\\cos\\theta - 2\\cos^2\\theta + \\frac{9k}{2}\\right) + \\dot{\\theta}^2\\sin\\theta\\,(2\\cos\\theta - 1) = \\frac{3g(1+k)\\sin\\theta}{a+b}.$$ Obtain $\\dot{\\theta}$ in terms of $\\theta$.\n[Moment of inertia of a uniform cylinder about its axis is $\\frac{1}{2}$(mass)(radius)$^2$.]"
+        }
+      ]
+    },
+    {
+      "year": 1974,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The curves A, B and C are related in such a way that B \"bisects\" the area between A and C, that is, the area of the region U is equal to the area of the region V at all points of the curve B. Find the equation of the curve B given that the equation of curve A is $y = \\frac{4}{3}x^2$ and that the equation of curve C is $y = \\frac{3}{8}x^2$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bmo_1974_1_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "A domino can be represented by an unordered pair of integers. Thus the domino with one spot and five spots can be represented as $(1,5)$ or $(5,1)$ and the double with two spots on each half as $(2,2)$. The set of all $15$ dominoes containing two integers from $1, 2, 3, 4, 5$ is partitioned into three subsets of five dominoes. The dominoes in each subset form a closed chain, that is $(a,b)(b,c)(c,d)(d,e)(e,a)$ where $a, b, c, d, e$ need not all be different. How many distinct partitions are there? (The order of the three subsets in the partition is immaterial.)"
+        },
+        {
+          "number": 3,
+          "problem": "Prove that it is impossible for all the faces of a convex polyhedron to be hexagons."
+        },
+        {
+          "number": 4,
+          "problem": "$M$ is a $16 \\times 16$ matrix. Each element in the leading diagonal and each element in the bottom row (i.e. $16$th row) is $1$. Every other element of the matrix is $\\frac{1}{2}$. Find the inverse of $M$."
+        },
+        {
+          "number": 5,
+          "problem": "A bridge deal is defined as the distribution of $52$ ordinary playing cards among four players so that each player has $13$ cards. In a bridge deal what is the probability that just one player has a complete suit? (Leave your answer in factorials.)"
+        },
+        {
+          "number": 6,
+          "problem": "$X$ and $Y$ are the feet of the perpendiculars from $P$ to $CA$ and $CB$ respectively, where $P$ is in the plane of triangle $ABC$. $PX = PY$. The straight line through $P$ which is perpendicular to $AB$ cuts $XY$ at $Z$. Prove that $CZ$ bisects $AB$."
+        },
+        {
+          "number": 7,
+          "problem": "The roots of the equation $x^3 = bx + c$ ($bc \\neq 0$, $b$ and $c$ real) are $\\alpha$, $\\beta$ and $\\gamma$. Determine $p$, $q$ and $r$ in terms of $b$ and $c$ so that $$\\beta = p\\alpha^2 + q\\alpha + r, \\quad \\gamma = p\\beta^2 + q\\beta + r, \\quad \\alpha = p\\gamma^2 + q\\gamma + r$$ and state a condition which ensures that $p$, $q$ and $r$ are real."
+        },
+        {
+          "number": 8,
+          "problem": "Let $n$ be an odd prime number. It is required to write the product $$\\prod_{i=1}^{n-1}(x+i)$$ as a polynomial $$\\sum_{j=0}^{n-1} a_jx^j.$$ By considering the product $\\prod_{i=1}^{n}(x+i)$ in two ways, establish the relations\n$$a_{n-1} = 1,$$ $$a_{n-2} = n(n-1)/2!,$$ $$2a_{n-3} = n(n-1)(n-2)/3! + a_{n-2}(n-1)(n-2)/2!,$$ $$\\cdots\\cdots$$ $$(n-2)a_1 = n + a_{n-2}(n-1) + a_{n-3}(n-2) + \\cdots + 3a_2,$$ $$(n-1)a_0 = 1 + a_{n-2} + \\cdots + a_1.$$\nProve $n \\mid a_j$ $(j = 1, 2, \\ldots, n-2)$ and that $n \\mid (a_0 + 1)$; and prove also that when $x$ is an integer $$n \\mid (x+1)(x+2)\\cdots(x+n-1) - x^{n-1} + 1.$$ Hence deduce Wilson's Theorem and Fermat's Theorem, namely, that when $n$ is prime and $x$ is not a multiple of $n$\n(i) $n \\mid (n-1)! + 1$;\n(ii) $n \\mid x^{n-1} - 1$.\n($p \\mid q$ means $p$ divides $q$ leaving no remainder.)"
+        },
+        {
+          "number": 9,
+          "problem": "A vertical uniform rod of length $2a$ is hinged at its lower end to a frictionless joint secured to a horizontal table. It falls from rest in this unstable position on to the table. Find the time occupied in falling. Comment on your answer.\n[You may quote the result $\\int (\\operatorname{cosec} x)\\,dx = \\log\\left|\\tan\\frac{1}{2}x\\right|$ if you wish.]"
+        },
+        {
+          "number": 10,
+          "problem": "A right circular cone whose vertex is $V$ and whose semi-vertical angle is $\\alpha$ has height $h$ and uniform density. All points of the cone whose distances from $V$ are less than $a$ or greater than $b$, where $0 < a < b < h$, are removed. A solid of mass $M$ is left.\nGiven that the gravitational attraction that a point mass $m$ at $P$ exerts on unit mass at $O$ is $(Gm/OP^3)\\overrightarrow{OP}$, prove that the magnitude of the gravitational attraction of this solid on unit mass at $V$ is $$\\tfrac{3}{2}GM(1 + \\cos\\alpha)/(a^2 + ab + b^2).$$"
+        }
+      ]
+    },
+    {
+      "year": 1975,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Given that $x$ is a positive integer solve $$\\left[\\sqrt[3]{1}\\right] + \\left[\\sqrt[3]{2}\\right] + \\cdots + \\left[\\sqrt[3]{x^3 - 1}\\right] = 400$$ (where $[z]$ means the integral part of $z$) and prove your solution is complete."
+        },
+        {
+          "number": 2,
+          "problem": "The first $n$ prime numbers, $2, 3, 5, \\ldots, p_n$ are partitioned into two disjoint sets $A$ and $B$. The primes in $A$ are $a_1, a_2, \\ldots, a_h$ and the primes in $B$ are $b_1, b_2, \\ldots, b_k$ where $h + k = n$.\nThe two products $\\prod_{1}^{h} a_i^{\\alpha_i}$ and $\\prod_{1}^{k} b_i^{\\beta_i}$ are formed where the $\\alpha_i$ and $\\beta_i$ are any positive integers.\nIf $d$ divides the difference between these products prove that either $d = 1$ or $d > p_n$."
+        },
+        {
+          "number": 3,
+          "problem": "Use the pigeonhole principle (i.e. if more than $n$ objects are put into $n$ pigeonholes then at least one pigeonhole must contain more than one object) to answer the following question.\nA disc $S$ is defined as the set of all points $P$ in a plane such that $|OP| \\leq 1$, where $|OP|$ is the distance of $P$ from $O$, a given point in the plane, called the centre of the disc.\nProve that if the disc $S$ contains $7$ points such that the distance from any of the $7$ points to any other is greater than or equal to $1$, then one of the $7$ points is $O$."
+        },
+        {
+          "number": 4,
+          "problem": "Three parallel lines $AD$, $BE$, $CF$ are drawn through the vertices of triangle $ABC$ meeting the opposite sides in $D, E, F$ respectively.\nThe points $P, Q, R$ divide $AD$, $BE$, $CF$ respectively in the same ratio $k : 1$ and $P, Q, R$ are collinear. Find the value of $k$."
+        },
+        {
+          "number": 5,
+          "problem": "For any positive integer $m$ you are given that $$1 + \\binom{2m}{1}\\cos\\theta + \\binom{2m}{2}\\cos 2\\theta + \\cdots + \\cos 2m\\theta = \\left(2\\cos\\tfrac{1}{2}\\theta\\right)^{2m}\\cos m\\theta$$ where there are $2m+1$ terms on the left hand side. Both these expressions are defined to be $f(\\theta)$. The function $g(\\theta)$ is defined by $$g(\\theta) = 1 + \\binom{2m}{2}\\cos 2\\theta + \\binom{2m}{4}\\cos 4\\theta + \\cdots + \\cos 2m\\theta.$$ Given that there is no rational $k$ for which $\\alpha = k\\pi$ find the values of $\\alpha$ for which $$\\lim_{m \\to \\infty}\\frac{g(\\alpha)}{f(\\alpha)} = \\frac{1}{2}.$$"
+        },
+        {
+          "number": 6,
+          "problem": "Prove that if $n$ is a positive integer greater than $1$ and $x > y > 1$, then $$\\frac{x^{n+1} - 1}{x(x^{n-1} - 1)} > \\frac{y^{n+1} - 1}{y(y^{n-1} - 1)}.$$"
+        },
+        {
+          "number": 7,
+          "problem": "Prove that there is only one set of real numbers $x_1, x_2, \\ldots, x_n$ such that $$(1 - x_1)^2 + (x_1 - x_2)^2 + \\cdots + (x_{n-1} - x_n)^2 + x_n^2 = \\frac{1}{n+1}.$$"
+        },
+        {
+          "number": 8,
+          "problem": "The interior of a wine glass is a right circular cone. The glass is half filled with water and then slowly tilted so that the water starts and continues to spill from a point $P$ on the rim. What fraction of the whole conical interior is occupied by water when the horizontal plane of the water level bisects the generator of the cone furthest from $P$?"
+        }
+      ]
+    },
+    {
+      "year": 1976,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find, with proof, the length $d$ of the shortest straight line which bisects the area of an arbitrarily given triangle. Express $d$ in terms of the area $\\Delta$ of the triangle and one of its angles.\nShow that there is a shorter line (not straight) which bisects the area of the given triangle."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that if $x, y, z$ are positive real numbers then $$\\frac{x}{y+z} + \\frac{y}{z+x} + \\frac{z}{x+y} \\geq \\frac{3}{2}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "$S_1, S_2, \\ldots, S_{50}$ are subsets of a finite set $E$. Each subset contains more than half the elements of $E$.\nShow that it is possible to find a subset $F$ of $E$, having not more than $5$ elements, such that each $S_i$ $(1 \\leq i \\leq 50)$ has an element in common with $F$."
+        },
+        {
+          "number": 4,
+          "problem": "Prove that if $n$ is a non-negative integer then $19 \\cdot 8^n + 17$ is not a prime number."
+        },
+        {
+          "number": 5,
+          "problem": "Prove that $$\\sum_{t=0}^{\\frac{1}{2}(r-1)} \\binom{n}{r-t}\\binom{n}{t}(\\alpha\\beta)^t\\left(\\alpha^{r-2t} + \\beta^{r-2t}\\right) = \\sum_{t=0}^{\\frac{1}{2}(r-1)} \\binom{n}{r-t}\\binom{r-t}{t}(\\alpha\\beta)^t(\\alpha+\\beta)^{r-2t},$$ where $\\alpha$ and $\\beta$ are real numbers, $r$ and $n$ are positive integers with $r$ odd and $r \\leq n$.\n[$\\binom{m}{s}$ denotes the coefficient of $x^s$ in the expansion of $(1+x)^m$.]"
+        },
+        {
+          "number": 6,
+          "problem": "A sphere with centre $O$ and radius $r$ is cut in a circle $K$ by a horizontal plane distant $\\frac{1}{2}r$ above $O$. The part of the sphere above the plane is removed and replaced by a right circular cone having $K$ as its base and having its vertex $V$ at a distance $2r$ vertically above $O$.\n$Q$ is a point on the sphere on the same horizontal level as $O$. The plane $OVQ$ cuts the circle $K$ in two points $X$ and $Y$, of which $Y$ is the further from $Q$. $P$ is a point of the cone lying on $VY$, whose position can be determined by the fact that the shortest path from $P$ to $Q$ over the surfaces of cone and sphere cuts the circle $K$ at an angle of $45^\\circ$. Prove $VP = \\sqrt{3}\\,r/\\sqrt{1 + 1/\\sqrt{5}}$.\n[In a spherical triangle $ABC$ the sides are arcs of great circles (centre $O$) and the sides are measured by the angles they subtend at $O$. You may find these spherical triangle formulae useful: $$\\sin a/\\sin A = \\sin b/\\sin B = \\sin c/\\sin C,$$ $$\\cos a = \\cos b\\cos c + \\sin b\\sin c\\cos A.$$]"
+        }
+      ]
+    },
+    {
+      "year": 1977,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A non-negative integer $f(n)$ is assigned to each positive integer $n$ in such a way that the following conditions are satisfied:\n(i) $f(mn) = f(m) + f(n)$ for all positive integers $m, n$;\n(ii) $f(n) = 0$ whenever the final (right-hand) decimal digit of $n$ is $3$; and\n(iii) $f(10) = 0$.\nProve that $f(n) = 0$ for all positive integers $n$."
+        },
+        {
+          "number": 2,
+          "problem": "The sides $BC$, $CA$, $AB$ of a triangle touch a circle at $X, Y, Z$ respectively. Prove that the centre of the circle lies on the straight line through the midpoints of $BC$ and of $AX$."
+        },
+        {
+          "number": 3,
+          "problem": "(i) Prove that if $x, y, z$ are non-negative real numbers, then $$x(x-y)(x-z) + y(y-z)(y-x) + z(z-x)(z-y) \\geq 0.$$\n(ii) Hence or otherwise show that for all real numbers $a, b, c$ $$a^6 + b^6 + c^6 + 3a^2b^2c^2 \\geq 2(b^3c^3 + c^3a^3 + a^3b^3).$$"
+        },
+        {
+          "number": 4,
+          "problem": "The equation $x^3 + qx + r = 0$, where $r \\neq 0$, has roots $u, v, w$.\nExpress the roots of $$r^2x^3 + q^3x + q^3 = 0 \\qquad (1)$$ in terms of $u, v, w$, and show that if $u, v, w$ are real then $(1)$ has no root in the interval $-1 < x < 3$."
+        },
+        {
+          "number": 5,
+          "problem": "$A_1A_2A_3A_4A_5$ is a regular pentagon whose sides are each of length $2a$. For each $i = 1, 2, \\ldots, 5$, $K_i$ is the sphere with centre $A_i$ and radius $a$. The spheres $K_1, K_2, \\ldots, K_5$ are all touched externally by each of two spheres $P_1$ and $P_2$ also of radius $a$.\nDetermine with proof and without tables whether $P_1$ and $P_2$ have or have not a common point."
+        },
+        {
+          "number": 6,
+          "problem": "The polynomial $26(x + x^2 + x^3 + \\cdots + x^n)$, where $n > 1$, is to be decomposed into a sum of polynomials, not necessarily all different. Each of these polynomials is to be of the form $a_1x + a_2x^2 + a_3x^3 + \\cdots + a_nx^n$ where each $a_i$ is one of the numbers $1, 2, 3, \\ldots, n$ and no two $a_i$ are equal.\nFind all the values of $n$ for which this decomposition is possible."
+        }
+      ]
+    },
+    {
+      "year": 1978,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine with proof the point $P$ inside a given triangle $ABC$ for which the product $PL \\cdot PM \\cdot PN$ is a maximum, where $L, M, N$ are the feet of the perpendiculars from $P$ to $BC, CA, AB$ respectively."
+        },
+        {
+          "number": 2,
+          "problem": "Prove that there is no proper fraction $\\frac{m}{n}$, with denominator $n \\leq 100$, whose decimal expansion contains the block of consecutive digits $167$ in that order."
+        },
+        {
+          "number": 3,
+          "problem": "Show that there is one and only one sequence $\\{u_n\\}$ of integers such that $u_1 = 1$, $u_1 < u_2$, and $$u_n^3 + 1 = u_{n-1}u_{n+1} \\quad \\text{for all } n > 1.$$"
+        },
+        {
+          "number": 4,
+          "problem": "An altitude of a tetrahedron is a line through a vertex perpendicular to the opposite face.\nProve that the four altitudes of a tetrahedron are concurrent if and only if each edge of the tetrahedron is perpendicular to its opposite edge."
+        },
+        {
+          "number": 5,
+          "problem": "Inside a cube of side $15$ units there are $11000$ given points.\nProve that there is a sphere of unit radius within which there are at least $6$ of the given points."
+        },
+        {
+          "number": 6,
+          "problem": "Show that if $n$ is a non-zero integer, $2\\cos n\\theta$ is a polynomial of the $n$th degree in $2\\cos\\theta$.\nHence or otherwise prove that if $k$ is rational then $\\cos k\\pi$ either is equal to one of the numbers $0, \\pm\\frac{1}{2}, \\pm 1$, or is irrational."
+        }
+      ]
+    },
+    {
+      "year": 1979,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all triangles $ABC$ for which $$AB + AC = 2\\text{ cm} \\quad \\text{and} \\quad AD + BC = \\sqrt{5}\\text{ cm},$$ where $AD$ is the altitude through $A$, meeting $BC$ at right angles in $D$."
+        },
+        {
+          "number": 2,
+          "problem": "From a point $O$ in 3-D space, three given rays $OA$, $OB$, $OC$ emerge, the angles $BOC$, $COA$, $AOB$ being $\\alpha$, $\\beta$, $\\gamma$ respectively, $0 < \\alpha, \\beta, \\gamma < \\pi$.\nProve that, given $2s > 0$, there are unique points $X, Y, Z$ on $OA$, $OB$, $OC$ respectively such that the triangles $YOZ$, $ZOX$ and $XOY$ have the same perimeter $2s$, and express $OX$ in terms of $s$ and $\\sin\\frac{1}{2}\\alpha$, $\\sin\\frac{1}{2}\\beta$ and $\\sin\\frac{1}{2}\\gamma$."
+        },
+        {
+          "number": 3,
+          "problem": "$S$ is a set of distinct positive odd integers $\\{a_i\\}$, $i = 1$ to $n$. No two differences $|a_i - a_j|$ are equal, $1 \\leq i < j \\leq n$.\nProve $$\\sum_{i=1}^{n} a_i \\geq \\frac{1}{3}n(n^2 + 2).$$"
+        },
+        {
+          "number": 4,
+          "problem": "The function $f$ is defined on the rational numbers and takes only rational values. For all rational $x$ and $y$ $$f(x + f(y)) = f(x)f(y).$$ Prove that $f$ is constant."
+        },
+        {
+          "number": 5,
+          "problem": "For $n$ a positive integer denote by $p(n)$ the number of ways of expressing $n$ as the sum of one or more positive integers. Thus $p(4) = 5$, because there are $5$ different sums, namely $$1+1+1+1, \\quad 1+1+2, \\quad 1+3, \\quad 2+2, \\quad 4.$$ Prove that for $n > 1$, $$p(n+1) - 2p(n) + p(n-1) \\geq 0.$$"
+        },
+        {
+          "number": 6,
+          "problem": "Prove that in the infinite sequence of integers $$10001, \\quad 100010001, \\quad 1000100010001, \\quad \\ldots$$ there is no prime number.\nNote each integer after the first (ten thousand and one) is obtained by adjoining $0001$ to the digits of the previous integer."
+        }
+      ]
+    },
+    {
+      "year": 1980,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that the equation $x^n + y^n = z^n$, where $n$ is an integer $> 1$, has no solution in integers $x, y, z$, with $0 < x \\leq n$, $0 < y \\leq n$."
+        },
+        {
+          "number": 2,
+          "problem": "Find a set $S = \\{n\\}$ of $7$ consecutive positive integers for which a polynomial $P(x)$ of the $5$th degree exists with the following properties:\n(a) all the coefficients in $P(x)$ are integers;\n(b) $P(n) = n$ for $5$ members of $S$, including the least and greatest;\n(c) $P(n) = 0$ for one member of $S$."
+        },
+        {
+          "number": 3,
+          "problem": "On the diameter $AB$ bounding a semi-circular region there are two points $P$ and $Q$, and on the semi-circular arc there are two points $R$ and $S$ such that $PQRS$ is a square. $C$ is a point on the semi-circular arc such that the areas of the triangle $ABC$ and the square $PQRS$ are equal.\nProve that a straight line passing through one of the points $R$ and $S$ and through one of the points $A$ and $B$ cuts a side of the square at the in-centre of the triangle."
+        },
+        {
+          "number": 4,
+          "problem": "Find the set of real numbers $a_0$ for which the infinite sequence $\\{a_n\\}$ of real numbers defined by $$a_{n+1} = 2^n - 3a_n \\quad (n \\geq 0)$$ is strictly increasing, i.e. $$a_n < a_{n+1} \\quad (n \\geq 0).$$"
+        },
+        {
+          "number": 5,
+          "problem": "In a party of ten persons, among any three persons there are at least two who do not know each other. Prove that at the party there are four persons none of whom knows another of the four."
+        }
+      ]
+    },
+    {
+      "year": 1981,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$H$ is the orthocentre of triangle $ABC$. The midpoints of $BC$, $CA$, $AB$ are $A'$, $B'$, $C'$ respectively. A circle with centre $H$ cuts the sides of triangle $A'B'C'$ (produced if necessary) in six points, $D_1, D_2$ on $B'C'$, $E_1, E_2$ on $C'A'$ and $F_1, F_2$ on $A'B'$.\nProve that $$AD_1 = AD_2 = BE_1 = BE_2 = CF_1 = CF_2.$$"
+        },
+        {
+          "number": 2,
+          "problem": "$m$ and $n$ are positive integers. $S_m$ is the sum of $m$ terms of $$(n+1) - (n+1)(n+3) + (n+1)(n+2)(n+4) - (n+1)(n+2)(n+3)(n+5) + \\cdots$$ where the terms alternate in sign and each, after the first, is the product of consecutive integers with the last but one omitted.\nProve that $S_m$ is divisible by $m!$ but not necessarily by $m!(n+1)$."
+        },
+        {
+          "number": 3,
+          "problem": "$a, b, c$ are positive numbers. Prove\n(i) $a^3 + b^3 + c^3 \\geq a^2b + b^2c + c^2a$.\n(ii) $abc \\geq (a+b-c)(b+c-a)(c+a-b)$."
+        },
+        {
+          "number": 4,
+          "problem": "$n$ points are given such that no plane passes through four of them. $S$ is the set of all tetrahedra whose vertices are $4$ of the $n$ points. A plane does not pass through any of the $n$ points.\nProve that it cannot cut more than $n^2(n-2)^2/64$ of the tetrahedra of $S$ in quadrilateral cross-sections."
+        },
+        {
+          "number": 5,
+          "problem": "Find, with proof, the smallest possible value of $|12^m - 5^n|$, where $m$ and $n$ are positive integers."
+        },
+        {
+          "number": 6,
+          "problem": "$a_i$, $i = 1, 2, 3, \\ldots, n$, are distinct non-zero integers. $$p_i = \\prod_{j \\neq i}^{n}(a_i - a_j)$$ is the product of the $(n-1)$ factors $(a_i - a_1), (a_i - a_2), \\ldots, (a_i - a_n)$, the zero factor $(a_i - a_i)$ being excluded.\nProve that if $k$ is a non-negative integer, $$\\sum_{i=1}^{n}\\frac{a_i^k}{p_i}$$ is an integer."
+        }
+      ]
+    },
+    {
+      "year": 1982,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$PQRS$ is a quadrilateral of area $A$. $O$ is a point inside it. Prove that if $$2A = OP^2 + OQ^2 + OR^2 + OS^2,$$ then $PQRS$ is a square and $O$ is its centre."
+        },
+        {
+          "number": 2,
+          "problem": "A multiple of $17$ when written in the scale of $2$ contains exactly three digits $1$. Prove that it contains at least six digits $0$, and that if it contains exactly seven digits $0$, then it is even."
+        },
+        {
+          "number": 3,
+          "problem": "If $s_n = 1 + \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\cdots + \\frac{1}{n}$ and $n > 2$, prove $$n(n+1)^a - n < s_n < n - (n-1)n^b$$ where $a$ and $b$ are given in terms of $n$ by $an = 1$, $b(n-1) = -1$."
+        },
+        {
+          "number": 4,
+          "problem": "A sequence of real numbers $u_1, u_2, u_3, \\ldots$ is given by $u_1$ and the recurrence relation $$u_n^3 = u_{n-1} + \\frac{15}{64}, \\quad n \\geq 2.$$ By considering the curve $x^3 = y + \\frac{15}{64}$, or otherwise, describe with proof the behaviour of $u_n$ as $n$ tends to infinity."
+        },
+        {
+          "number": 5,
+          "problem": "A right circular cone stands on a horizontal base, radius $r$. Its vertex $V$ is at a distance $1$ from every point on the perimeter of the base. A plane section of the cone is an ellipse whose lowest point is $L$ and whose highest point is $H$. On the curved surface of the cone, to one side of the plane $VLH$, two routes from $L$ to $H$ are marked. $R_1$ is along the semi-perimeter of the ellipse and $R_2$ is the route of shortest length.\nFind the condition that $R_1$ and $R_2$ intersect between $L$ and $H$."
+        },
+        {
+          "number": 6,
+          "problem": "Prove that the number of sequences $a_1a_2\\ldots a_n$ with each of their $n$ terms $a_i = 0$ or $1$ and containing exactly $m$ occurrences of $01$ is $\\binom{n+1}{2m+1}$."
+        }
+      ]
+    },
+    {
+      "year": 1983,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the triangle $ABC$ with circumcentre $O$, $AB = AC$, $D$ is the midpoint of $AB$ and $E$ is the centroid of triangle $ACD$. Prove that $OE$ is perpendicular to $CD$."
+        },
+        {
+          "number": 2,
+          "problem": "The Fibonacci sequence $\\{f_n\\}$ is defined by $$f_1 = 1, \\quad f_2 = 1, \\quad f_n = f_{n-1} + f_{n-2} \\quad (n > 2).$$ Prove that there are unique integers $a, b, m$ such that $0 < a < m$, $0 < b < m$ and $f_n - anb^n$ is divisible by $m$ for all positive integers $n$."
+        },
+        {
+          "number": 3,
+          "problem": "The real numbers $x_1, x_2, x_3, \\ldots$ are defined by $$x_1 = a \\neq -1 \\quad \\text{and} \\quad x_{n+1} = x_n^2 + x_n \\quad \\text{for all } n \\geq 1.$$ $S_n$ is the sum and $P_n$ is the product of the first $n$ terms of the sequence $y_1, y_2, y_3, \\ldots$, where $y_n = \\frac{1}{1+x_n}$.\nProve that $aS_n + P_n = 1$ for all $n$."
+        },
+        {
+          "number": 4,
+          "problem": "The two cylindrical surfaces $$x^2 + z^2 = a^2, \\quad z > 0, \\quad |y| \\leq a$$ $$\\text{and} \\quad y^2 + z^2 = a^2, \\quad z > 0, \\quad |x| \\leq a$$ intersect and with the plane $z = 0$ enclose a dome-like shape which is here called a \"cupola\". The cupola is placed on top of a vertical tower of height $h$ whose horizontal cross-section is a square of side $2a$. Find the shortest distance from the highest point of the cupola to a corner of the base of the tower, over the surface of the cupola and tower."
+        },
+        {
+          "number": 5,
+          "problem": "If $10$ points are within a circle of diameter $5''$, prove that the distance between some $2$ of the points is less than $2''$."
+        },
+        {
+          "number": 6,
+          "problem": "Consider the equation $$\\sqrt{2p + 1 - x^2} + \\sqrt{3x + p + 4} = \\sqrt{x^2 + 9x + 3p + 9} \\qquad (1)$$ in which $x, p$ are real numbers and the square roots are to be real and non-negative. Show that if $(1)$ holds then $$(x^2 + x - p)(x^2 + 8x + 2p + 9) = 0.$$ Hence find the set of real numbers $p$ for which $(1)$ is satisfied by exactly one real number $x$."
+        }
+      ]
+    },
+    {
+      "year": 1984,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$P, Q, R$ are arbitrary points on the sides $BC, CA, AB$ respectively of triangle $ABC$. Prove that the triangle whose vertices are the centres of the circles $AQR$, $BRP$, $CPQ$ is similar to triangle $ABC$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_n$ be the number of binomial coefficients $\\binom{n}{r}$ $(0 \\leq r \\leq n)$ which leave remainder $1$ on division by $3$ and let $b_n$ be the number which leave remainder $2$. Prove that $a_n > b_n$ for all positive integers $n$."
+        },
+        {
+          "number": 3,
+          "problem": "(i) Prove that, for all positive integers $m$, $$\\left(2 - \\frac{1}{m}\\right)\\left(2 - \\frac{3}{m}\\right)\\left(2 - \\frac{5}{m}\\right)\\cdots\\left(2 - \\frac{2m-1}{m}\\right) \\leq m!$$\n(ii) Prove that if $a, b, c, d, e$ are positive real numbers then $$\\left(\\frac{a}{b}\\right)^4 + \\left(\\frac{b}{c}\\right)^4 + \\left(\\frac{c}{d}\\right)^4 + \\left(\\frac{d}{e}\\right)^4 + \\left(\\frac{e}{a}\\right)^4 \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{d}{c} + \\frac{e}{d} + \\frac{a}{e}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $N$ be a positive integer. Determine with proof the number of solutions of the equation $$x^2 - [x^2] = (x - [x])^2$$ lying in the interval $1 \\leq x \\leq N$.\n(For a real number $x$ the \"integer part\" $[x]$ is the largest integer which is $\\leq x$.)"
+        },
+        {
+          "number": 5,
+          "problem": "A plane cuts a right circular cone with vertex $V$ in an ellipse $E$ and meets the axis of the cone at $C$; $A$ is an extremity of the major axis of $E$. Prove that the area of the curved surface of the slant cone with $V$ as vertex and $E$ as base is $$\\frac{VA}{AC} \\times (\\text{area of } E).$$"
+        },
+        {
+          "number": 6,
+          "problem": "Let $a, m$ be positive integers. Prove that if there exists an integer $x$ such that $a^2x - a$ is divisible by $m$ then there exists an integer $y$ such that both $a^2y - a$ and $ay^2 - y$ are divisible by $m$."
+        },
+        {
+          "number": 7,
+          "problem": "$ABCD$ is a quadrilateral which has an inscribed circle. With the side $AB$ is associated $$u_{AB} = p_1\\sin\\widehat{DAB} + p_2\\sin\\widehat{ABC}$$ where $p_1, p_2$ are the perpendiculars from $A, B$ respectively to the opposite side $CD$. Define $u_{BC}, u_{CD}, u_{DA}$ likewise, using in each case perpendiculars to the opposite side. Show that $$u_{AB} = u_{BC} = u_{CD} = u_{DA}.$$"
+        }
+      ]
+    },
+    {
+      "year": 1985,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Two circles $S_1$ and $S_2$ each touch a straight line $p$ at the same point $P$. All points of $S_2$, except $P$, are in the interior of $S_1$. A straight line $q$ (i) is perpendicular to $p$; (ii) touches $S_2$ at $R$; (iii) cuts $p$ at $L$; and (iv) cuts $S_1$ at $N$ and $M$, where $M$ is between $L$ and $R$.\n(a) Prove that $RP$ bisects angle $MPN$.\n(b) If $MP$ bisects angle $RPL$, find, with proof, the ratio of the areas of $S_1$ and $S_2$."
+        },
+        {
+          "number": 2,
+          "problem": "$a, b, c$ are each numbers between $0$ and $1$. Prove that not all of $a(1-b)$, $b(1-c)$, $c(1-a)$ can be greater than $\\frac{1}{4}$."
+        },
+        {
+          "number": 3,
+          "problem": "$n$ and $m$ are non-negative integers. Prove that $$\\binom{n}{m} + 2\\binom{n-1}{m} + 3\\binom{n-2}{m} + \\cdots + (n+1-m)\\binom{m}{m} = \\binom{n+2}{m+2}$$ where $\\binom{r}{s}$ is the binomial coefficient $r(r-1)(r-2)\\cdots(r-s+1)/s!$"
+        },
+        {
+          "number": 4,
+          "problem": "The sequence $f_n$ is defined by $f_0 = 1$, $f_1 = c$, where $c$ is a positive integer, and for all $n > 1$, $$f_n = 2f_{n-1} - f_{n-2} + 2.$$ Prove that for each $k \\geq 0$ there exists $h$ such that $f_kf_{k+1} = f_h$."
+        },
+        {
+          "number": 5,
+          "problem": "A cylindrical container has height $6$ cm and radius $4$ cm. It rests on a circular hoop which has also radius $4$ cm and the hoop is fixed in a horizontal plane. The container rests with its axis horizontal and with each of its circular rims touching the hoop at two points. The cylinder is now moved so that each of its circular rims still touches the hoop at two points. Find, with proof, the locus of the centre of one of the cylinder's circular ends."
+        },
+        {
+          "number": 6,
+          "problem": "Show that the equation $x^2 + y^2 = z^5 + z$ has infinitely many solutions in positive integers $x, y, z$ having no factor in common greater than $1$."
+        }
+      ]
+    },
+    {
+      "year": 1986,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Reduce the fraction $\\frac{N}{D}$ to its lowest terms when $$N = 2244851485148514627, \\qquad D = 8118811881188118000.$$"
+        },
+        {
+          "number": 2,
+          "problem": "A circle $S$ of radius $R$ has two parallel tangents $t_1$, $t_2$. A circle $S_1$ of radius $r_1$ touches $S$ and $t_1$; a circle $S_2$ of radius $r_2$ touches $S$ and $t_2$; also $S_1$ touches $S_2$ and all the circle contacts are external. Calculate $R$ in terms of $r_1$ and $r_2$."
+        },
+        {
+          "number": 3,
+          "problem": "Prove that if $m, n, r$ are positive integers and $$1 + m + n\\sqrt{3} = (2 + \\sqrt{3})^{2r-1}$$ then $m$ is a perfect square."
+        },
+        {
+          "number": 4,
+          "problem": "Find, with proof, the largest real number $K$ (independent of $a, b, c$) such that the inequality $$a^2 + b^2 + c^2 > K(a+b+c)^2$$ holds for the lengths $a, b, c$ of the sides of any obtuse-angled triangle."
+        },
+        {
+          "number": 5,
+          "problem": "Find, with proof, the number of permutations $$a_1, a_2, \\ldots, a_n$$ of $1, 2, \\ldots, n$ such that $$a_r < a_{r+2} \\quad \\text{for } 1 \\leq r \\leq n-2$$ and $$a_r < a_{r+3} \\quad \\text{for } 1 \\leq r \\leq n-3.$$ (In a permutation each of the numbers $1, 2, \\ldots, n$ appears.)"
+        },
+        {
+          "number": 6,
+          "problem": "$AB$, $AC$, $AD$ are three edges of a cube. $AC$ is produced to $E$ so that $AE = 2AC$ and $AD$ is produced to $F$ so that $AF = 3AD$. Prove that the area of the section of the cube by any plane parallel to $BCD$ is equal to the area of the section of tetrahedron $ABEF$ by the same plane."
+        }
+      ]
+    },
+    {
+      "year": 1987,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(a) Find, with proof, all integer solutions of $$a^3 + b^3 = 9.$$\n(b) Find, with proof, all integer solutions of $$35x^3 + 66x^2y + 42xy^2 + 9y^3 = 9.$$"
+        },
+        {
+          "number": 2,
+          "problem": "In a triangle $ABC$, $\\angle BAC = 100^\\circ$ and $AB = AC$. A point $D$ is chosen on the side $AC$ so that $\\angle ABD = \\angle CBD$. Prove that $AD + DB = BC$."
+        },
+        {
+          "number": 3,
+          "problem": "Find, with proof, the value of the limit as $n \\to \\infty$ of $$\\sum_{r=0}^{n}\\binom{2n}{2r}2^r \\Bigg/ \\sum_{r=0}^{n-1}\\binom{2n}{2r+1}2^r.$$ Here $\\binom{2n}{s}$ denotes a binomial coefficient."
+        },
+        {
+          "number": 4,
+          "problem": "Let $P(x)$ be any polynomial with integer coefficients such that $$P(21) = 17, \\quad P(32) = -247, \\quad P(37) = 33.$$ Prove that if $P(N) = N + 51$ for some integer $N$, then $N = 26$."
+        },
+        {
+          "number": 5,
+          "problem": "A line parallel to the side $BC$ of an acute-angled triangle $ABC$ cuts the side $AB$ at $F$ and the side $AC$ at $E$. Prove that the circles on $BE$ and $CF$ as diameters intersect on the altitude of the triangle drawn from $A$ perpendicular to $BC$."
+        },
+        {
+          "number": 6,
+          "problem": "Find, with proof, the maximum value of $$\\frac{xyz}{(1+x)(x+y)(y+z)(z+16)}$$ for positive real numbers $x, y, z$."
+        },
+        {
+          "number": 7,
+          "problem": "Prove that if $n$ and $k$ are any positive integers then there exists a positive integer $x$ such that $\\frac{1}{2}x(x+1) - k$ is divisible by $2^n$."
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all the real solutions $x$ of the equation $$\\sqrt{x + 1972098 - 1986\\sqrt{x + 986049}} + \\sqrt{x + 1974085 - 1988\\sqrt{x + 986049}} = 1$$ where $\\sqrt{\\phantom{x}}$ indicates the non-negative square root."
+        },
+        {
+          "number": 2,
+          "problem": "Find all the real-valued functions $f$ defined on the set $D$ of natural numbers $x \\geq 10$ and satisfying the functional equation $$f(x + y) = f(x)f(y)$$ for all $x, y \\in D$."
+        },
+        {
+          "number": 3,
+          "problem": "Find a pair of integers $r, s$ such that $0 < s < 200$ and $$\\frac{45}{61} > \\frac{r}{s} > \\frac{59}{80}.$$ Also prove that there is exactly one such pair $r, s$."
+        },
+        {
+          "number": 4,
+          "problem": "The triangle $ABC$ has orthocentre $H$. The feet of the perpendiculars from $H$ to the internal and external bisectors of angle $BAC$ (which is not a right angle) are $P$ and $Q$. Prove that $PQ$ passes through the middle point of $BC$."
+        },
+        {
+          "number": 5,
+          "problem": "Numbers $d(n, m)$ with $m, n$ integers, $0 \\leq m \\leq n$, are defined by $$d(n, 0) = d(n, n) = 1 \\quad \\text{all } n \\geq 0$$ and $$m\\,d(n, m) = m\\,d(n-1, m) + (2n - m)\\,d(n-1, m-1)$$ for $0 < m < n$. Prove that all the $d(n, m)$ are integers."
+        },
+        {
+          "number": 6,
+          "problem": "Show that the least positive value of $$\\frac{x^2 + y^2}{y},$$ where $x, y$ are real numbers such that $$7x^2 + 3xy + 3y^2 = 1,$$ is $\\frac{1}{2}$."
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all integers $a, b, c$ for which $$(x - a)(x - 10) + 1 \\equiv (x + b)(x + c) \\quad \\text{for all } x.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Points $P$, $Q$ lie on the sides $AB$, $AC$ respectively of triangle $ABC$ and are distinct from $A$. The lengths $AP$, $AQ$ are denoted by $x$, $y$ respectively, with the convention that $x > 0$ if $P$ is on the same side of $A$ as $B$, and $x < 0$ on the opposite side; similarly for $y$. Show that $PQ$ passes through the centroid of the triangle if and only if $$3xy = bx + cy$$ where $b = AC$, $c = AB$."
+        },
+        {
+          "number": 3,
+          "problem": "$OA$, $OB$, $OC$ are mutually perpendicular lines. Express the area of triangle $ABC$ in terms of the areas of triangles $OBC$, $OCA$, $OAB$."
+        },
+        {
+          "number": 4,
+          "problem": "Consider the following triangle of numbers:\n$$\\begin{array}{ccccccc} & & & 1 & & & \\\\ & & 1 & 1 & 1 & & \\\\ & 1 & 2 & 3 & 2 & 1 & \\\\ 1 & 3 & 6 & 7 & 6 & 3 & 1 \\\\ \\cdot & \\cdot & \\cdot & \\cdot & \\cdot & \\cdot & \\cdot \\end{array}$$\nEach number is the sum of three numbers in the previous row: the number above it and the numbers immediately to the left and right of that number. If there is no number in one or more of these positions, $0$ is used.\nProve that, from the third row on, every row contains at least one even number."
+        },
+        {
+          "number": 5,
+          "problem": "None of the angles of a triangle $ABC$ exceeds $90^\\circ$. Prove that $$\\sin A + \\sin B + \\sin C > 2.$$"
+        },
+        {
+          "number": 6,
+          "problem": "The sequence $\\{a_n\\}$ of integers is defined by $$a_1 = 2, \\quad a_2 = 7$$ and $$-\\frac{1}{2} < a_{n+1} - \\frac{a_n^2}{a_{n-1}} \\leq \\frac{1}{2} \\quad \\text{for } n \\geq 2.$$ Prove that $a_n$ is odd for all $n > 1$."
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find a positive integer whose first digit is $1$ and which has the property that, if this digit is transferred to the end of the number, the number is tripled."
+        },
+        {
+          "number": 2,
+          "problem": "$ABCD$ is a square and $P$ is a point on the line $AB$. Find the maximum and minimum values of the ratio $PC/PD$, showing that these occur for the points $P$ given by $AP \\times BP = AB^2$."
+        },
+        {
+          "number": 3,
+          "problem": "The angles $A, B, C, D$ of a convex quadrilateral satisfy the relation $$\\cos A + \\cos B + \\cos C + \\cos D = 0.$$ Prove that $ABCD$ is a trapezium or is cyclic."
+        },
+        {
+          "number": 4,
+          "problem": "A coin is biassed so that the probability of obtaining a head is $p$, $0 < p < 1$. Two players A and B throw the coin in turn until one of the sequences HHH or HTH occurs. If sequence HHH occurs first then A wins. If HTH occurs first then B wins. For what value of $p$ is this game fair (ie. such that A and B have an equal chance of winning)?"
+        },
+        {
+          "number": 5,
+          "problem": "The diagonals of a convex quadrilateral $ABCD$ intersect at $O$. The centroids of triangles $AOD$ and $BOC$ are $P$ and $Q$; the orthocentres of triangles $AOB$ and $COD$ are $R$ and $S$. Prove that $PQ$ is perpendicular to $RS$.\n[The centroid of a triangle is the intersection of the lines joining each vertex to the midpoint of the opposite side; the orthocentre is the intersection of the altitudes.]"
+        },
+        {
+          "number": 6,
+          "problem": "Prove that if $x, y$ are rational numbers satisfying the equation $$x^5 + y^5 = 2x^2y^2$$ then $1 - xy$ is the square of a rational number."
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that the number $$3^n + 2 \\times 17^n$$ where $n$ is a non-negative integer, is never a perfect square."
+        },
+        {
+          "number": 2,
+          "problem": "Find all positive integers $k$ such that the polynomial $x^{2k+1} + x + 1$ is divisible by the polynomial $x^k + x + 1$.\nFor each such $k$ specify the integers $n$ such that $x^n + x + 1$ is divisible by $x^k + x + 1$."
+        },
+        {
+          "number": 3,
+          "problem": "$ABCD$ is a quadrilateral inscribed in a circle of radius $r$. The diagonals $AC$, $BD$ meet at $E$.\nProve that if $AC$ is perpendicular to $BD$ then $$EA^2 + EB^2 + EC^2 + ED^2 = 4r^2. \\qquad (*)$$ Is it true that if $(*)$ holds then $AC$ is perpendicular to $BD$? Give a reason for your answer."
+        },
+        {
+          "number": 4,
+          "problem": "Find, with proof, the minimum value of $(x + y)(y + z)$ where $x, y, z$ are positive real numbers satisfying the condition $$xyz(x + y + z) = 1.$$"
+        },
+        {
+          "number": 5,
+          "problem": "Find the number of permutations (arrangements) $$p_1, p_2, p_3, p_4, p_5, p_6$$ of $1, 2, 3, 4, 5, 6$ with the property:\nFor no integer $n$, $1 \\leq n \\leq 5$, do $p_1, p_2, \\ldots, p_n$ form a permutation of $1, 2, \\ldots, n$."
+        },
+        {
+          "number": 6,
+          "problem": "Show that if $x$ and $y$ are positive integers such that $x^2 + y^2 - x$ is divisible by $2xy$ then $x$ is a perfect square."
+        },
+        {
+          "number": 7,
+          "problem": "A ladder of length $l$ rests against a vertical wall. Suppose that there is a rung on the ladder which has the same distance $d$ from both the wall and the (horizontal) ground. Find explicitly, in terms of $l$ and $d$, the height $h$ from the ground that the ladder reaches up the wall."
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(a) Observe that the square of $20$ has the same number of non-zero digits as the original number. Does there exist a two-digit number, other than $10$, $20$ or $30$, whose square has the same number of non-zero digits as the original number? If you think there is one, then find it. If you claim that there is none, then you must prove your claim.\n(b) Does there exist a three-digit number other than $100$, $200$, $300$ whose square has the same number of non-zero digits as the original number?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCDE$ be a pentagon inscribed in a circle. Suppose that $AC$, $BD$, $CE$, $DA$ and $EB$ are parallel to $DE$, $EA$, $AB$, $BC$ and $CD$, respectively. Does it follow that the pentagon has to be regular? Justify your claim."
+        },
+        {
+          "number": 3,
+          "problem": "Find four distinct positive integers whose product is divisible by the sum of every pair of them.\nCan you find a set of five or more numbers with the same property?"
+        },
+        {
+          "number": 4,
+          "problem": "Determine the smallest value of $x^2 + 5y^2 + 8z^2$, where $x, y, z$ are real numbers subject to the condition $yz + zx + xy = -1$.\nDoes $x^2 + 5y^2 + 8z^2$ have a greatest value subject to the same condition? Justify your claim."
+        },
+        {
+          "number": 5,
+          "problem": "Let $f$ be a function mapping the positive integers into positive integers. Suppose that $f(n+1) > f(n)$ and $f(f(n)) = 3n$ for all positive integers $n$. Determine $f(1992)$."
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find, showing your method, a six-digit integer $n$ with the following properties: (i) $n$ is a perfect square, (ii) the number formed by the last three digits of $n$ is exactly one greater than the number formed by the first three digits of $n$. (Thus $n$ might look like $123124$, although this is not a square.)"
+        },
+        {
+          "number": 2,
+          "problem": "A square piece of toast $ABCD$ of side length $1$ and centre $O$ is cut in half to form two equal pieces $ABC$ and $CDA$. If the triangle $ABC$ has to be cut into two parts of equal area, one would usually cut along the line of symmetry $BO$. However, there are other ways of doing this. Find, with justification, the length and location of the shortest straight cut which divides the triangle $ABC$ into two parts of equal area."
+        },
+        {
+          "number": 3,
+          "problem": "For each positive integer $c$, the sequence $u_n$ of integers is defined by $$u_1 = 1, \\quad u_2 = c, \\quad u_n = (2n+1)u_{n-1} - (n^2-1)u_{n-2}, \\quad (n \\geq 3).$$ For which values of $c$ does this sequence have the property that $u_i$ divides $u_j$ whenever $i \\leq j$?\n(Note: If $x$ and $y$ are integers, then $x$ divides $y$ if and only if there exists an integer $z$ such that $y = xz$. For example, $x = 4$ divides $y = -12$, since we can take $z = -3$.)"
+        },
+        {
+          "number": 4,
+          "problem": "Two circles touch internally at $M$. A straight line touches the inner circle at $P$ and cuts the outer circle at $Q$ and $R$. Prove that $\\angle QMP = \\angle RMP$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $x, y, z$ be positive real numbers satisfying $$\\frac{1}{3} \\leq xy + yz + zx \\leq 3.$$ Determine the range of values for (i) $xyz$, and (ii) $x + y + z$."
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Starting with any three digit number $n$ (such as $n = 625$) we obtain a new number $f(n)$ which is equal to the sum of the three digits of $n$, their three products in pairs, and the product of all three digits.\n(i) Find the value of $n/f(n)$ when $n = 625$.\n(ii) Find all three digit numbers such that the ratio $n/f(n) = 1$."
+        },
+        {
+          "number": 2,
+          "problem": "In triangle $ABC$ the point $X$ lies on $BC$.\n(i) Suppose that $\\angle BAC = 90^\\circ$, that $X$ is the midpoint of $BC$, and that $\\angle BAX$ is one third of $\\angle BAC$. What can you say (and prove!) about triangle $ACX$?\n(ii) Suppose that $\\angle BAC = 60^\\circ$, that $X$ lies one third of the way from $B$ to $C$, and that $AX$ bisects $\\angle BAC$. What can you say (and prove!) about triangle $ACX$?"
+        },
+        {
+          "number": 3,
+          "problem": "The sequence of integers $u_0, u_1, u_2, u_3, \\ldots$ satisfies $u_0 = 1$ and $$u_{n+1}u_{n-1} = ku_n \\quad \\text{for each } n \\geq 1,$$ where $k$ is some fixed positive integer. If $u_{2000} = 2000$, determine all possible values of $k$."
+        },
+        {
+          "number": 4,
+          "problem": "The points $Q$, $R$ lie on the circle $\\gamma$, and $P$ is a point such that $PQ$, $PR$ are tangents to $\\gamma$. $A$ is a point on the extension of $PQ$, and $\\gamma'$ is the circumcircle of triangle $PAR$. The circle $\\gamma'$ cuts $\\gamma$ again at $B$, and $AR$ cuts $\\gamma$ at the point $C$. Prove that $\\angle PAR = \\angle ABC$."
+        },
+        {
+          "number": 5,
+          "problem": "An increasing sequence of integers is said to be alternating if it starts with an odd term, the second term is even, the third term is odd, the fourth is even, and so on. The empty sequence (with no term at all!) is considered to be alternating. Let $A(n)$ denote the number of alternating sequences which only involve integers from the set $\\{1, 2, \\ldots, n\\}$. Show that $A(1) = 2$ and $A(2) = 3$. Find the value of $A(20)$, and prove that your value is correct."
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the first positive integer whose square ends in three $4$'s. Find all positive integers whose squares end in three $4$'s. Show that no perfect square ends with four $4$'s."
+        },
+        {
+          "number": 2,
+          "problem": "$ABCDEFGH$ is a cube of side $2$.\n(a) Find the area of the quadrilateral $AMHN$, where $M$ is the midpoint of $BC$, and $N$ is the midpoint of $EF$.\n(b) Let $P$ be the midpoint of $AB$, and $Q$ the midpoint of $HE$. Let $AM$ meet $CP$ at $X$, and $HN$ meet $FQ$ at $Y$. Find the length of $XY$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bmo1_1995_1_p2_fig.png"
+        },
+        {
+          "number": 3,
+          "problem": "(a) Find the maximum value of the expression $x^2y - y^2x$ when $0 \\leq x \\leq 1$ and $0 \\leq y \\leq 1$.\n(b) Find the maximum value of the expression $$x^2y + y^2z + z^2x - x^2z - y^2x - z^2y$$ when $0 \\leq x \\leq 1$, $0 \\leq y \\leq 1$, $0 \\leq z \\leq 1$."
+        },
+        {
+          "number": 4,
+          "problem": "$ABC$ is a triangle, right-angled at $C$. The internal bisectors of angles $BAC$ and $ABC$ meet $BC$ and $CA$ at $P$ and $Q$, respectively. $M$ and $N$ are the feet of the perpendiculars from $P$ and $Q$ to $AB$. Find angle $MCN$."
+        },
+        {
+          "number": 5,
+          "problem": "The seven dwarfs walk to work each morning in single file. As they go, they sing their famous song, \"High - low - high - low, it's off to work we go ...\". Each day they line up so that no three successive dwarfs are either increasing or decreasing in height. Thus, the line-up must go up-down-up-down-$\\cdots$ or down-up-down-up-$\\cdots$. If they all have different heights, for how many days they go to work like this if they insist on using a different order each day?\nWhat if Snow White always came along too?"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the pair of four-digit positive integers $$(M, N) = (3600, 2500).$$ Notice that $M$ and $N$ are both perfect squares, with equal digits in two places, and differing digits in the remaining two places. Moreover, when the digits differ, the digit in $M$ is exactly one greater than the corresponding digit in $N$. Find all pairs of four-digit positive integers $(M, N)$ with these properties."
+        },
+        {
+          "number": 2,
+          "problem": "A function $f$ is defined over the set of all positive integers and satisfies $$f(1) = 1996$$ and $$f(1) + f(2) + \\cdots + f(n) = n^2 f(n) \\quad \\text{for all } n > 1.$$ Calculate the exact value of $f(1996)$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an acute-angled triangle, and let $O$ be its circumcentre. The circle through $A$, $O$ and $B$ is called $S$. The lines $CA$ and $CB$ meet the circle $S$ again at $P$ and $Q$ respectively. Prove that the lines $CO$ and $PQ$ are perpendicular.\n(Given any triangle $XYZ$, its circumcentre is the centre of the circle which passes through the three vertices $X$, $Y$ and $Z$.)"
+        },
+        {
+          "number": 4,
+          "problem": "For any real number $x$, let $[x]$ denote the greatest integer which is less than or equal to $x$. Define $$q(n) = \\left[\\frac{n}{[\\sqrt{n}]}\\right] \\quad \\text{for } n = 1, 2, 3, \\ldots.$$ Determine all positive integers $n$ for which $q(n) > q(n+1)$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a$, $b$ and $c$ be positive real numbers.\n(i) Prove that $4(a^3 + b^3) \\geq (a+b)^3$.\n(ii) Prove that $9(a^3 + b^3 + c^3) \\geq (a+b+c)^3$."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$N$ is a four-digit integer, not ending in zero, and $R(N)$ is the four-digit integer obtained by reversing the digits of $N$; for example, $R(3275) = 5723$.\nDetermine all such integers $N$ for which $R(N) = 4N + 3$."
+        },
+        {
+          "number": 2,
+          "problem": "For positive integers $n$, the sequence $a_1, a_2, a_3, \\ldots, a_n, \\ldots$ is defined by $$a_1 = 1; \\quad a_n = \\left(\\frac{n+1}{n-1}\\right)(a_1 + a_2 + a_3 + \\cdots + a_{n-1}), \\quad n > 1.$$ Determine the value of $a_{1997}$."
+        },
+        {
+          "number": 3,
+          "problem": "The Dwarfs in the Land-under-the-Mountain have just adopted a completely decimal currency system based on the Pippin, with gold coins to the value of $1$ Pippin, $10$ Pippins, $100$ Pippins and $1000$ Pippins.\nIn how many ways is it possible for a Dwarf to pay, in exact coinage, a bill of $1997$ Pippins?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABCD$ be a convex quadrilateral. The midpoints of $AB$, $BC$, $CD$ and $DA$ are $P$, $Q$, $R$ and $S$, respectively. Given that the quadrilateral $PQRS$ has area $1$, prove that the area of the quadrilateral $ABCD$ is $2$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $x$, $y$ and $z$ be positive real numbers.\n(i) If $x + y + z \\geq 3$, is it necessarily true that $\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\leq 3$?\n(ii) If $x + y + z \\leq 3$, is it necessarily true that $\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\geq 3$?"
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A $5 \\times 5$ square is divided into $25$ unit squares. One of the numbers $1, 2, 3, 4, 5$ is inserted into each of the unit squares in such a way that each row, each column and each of the two diagonals contains each of the five numbers once and only once. The sum of the numbers in the four squares immediately below the diagonal from top left to bottom right is called the score.\nShow that it is impossible for the score to be $20$.\nWhat is the highest possible score?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $a_1 = 19$, $a_2 = 98$. For $n \\geq 1$, define $a_{n+2}$ to be the remainder of $a_n + a_{n+1}$ when it is divided by $100$. What is the remainder when $$a_1^2 + a_2^2 + \\cdots + a_{1998}^2$$ is divided by $8$?"
+        },
+        {
+          "number": 3,
+          "problem": "$ABP$ is an isosceles triangle with $AB = AP$ and $\\angle PAB$ acute. $PC$ is the line through $P$ perpendicular to $BP$, and $C$ is a point on this line on the same side of $BP$ as $A$. (You may assume that $C$ is not on the line $AB$.) $D$ completes the parallelogram $ABCD$. $PC$ meets $DA$ at $M$.\nProve that $M$ is the midpoint of $DA$."
+        },
+        {
+          "number": 4,
+          "problem": "Show that there is a unique sequence of positive integers $(a_n)$ satisfying the following conditions: $$a_1 = 1, \\quad a_2 = 2, \\quad a_4 = 12,$$ $$a_{n+1}a_{n-1} = a_n^2 \\pm 1 \\quad \\text{for } n = 2, 3, 4, \\ldots.$$"
+        },
+        {
+          "number": 5,
+          "problem": "In triangle $ABC$, $D$ is the midpoint of $AB$ and $E$ is the point of trisection of $BC$ nearer to $C$. Given that $\\angle ADC = \\angle BAE$ find $\\angle BAC$."
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "I have four children. The age in years of each child is a positive integer between $2$ and $16$ inclusive and all four ages are distinct. A year ago the square of the age of the oldest child was equal to the sum of the squares of the ages of the other three. In one year's time the sum of the squares of the ages of the oldest and the youngest will be equal to the sum of the squares of the other two children.\nDecide whether this information is sufficient to determine their ages uniquely, and find all possibilities for their ages."
+        },
+        {
+          "number": 2,
+          "problem": "A circle has diameter $AB$ and $X$ is a fixed point of $AB$ lying between $A$ and $B$. A point $P$, distinct from $A$ and $B$, lies on the circumference of the circle. Prove that, for all possible positions of $P$, $$\\frac{\\tan \\angle APX}{\\tan \\angle PAX}$$ remains constant."
+        },
+        {
+          "number": 3,
+          "problem": "Determine a positive constant $c$ such that the equation $$xy^2 - y^2 - x + y = c$$ has precisely three solutions $(x, y)$ in positive integers."
+        },
+        {
+          "number": 4,
+          "problem": "Any positive integer $m$ can be written uniquely in base $3$ form as a string of $0$'s, $1$'s and $2$'s (not beginning with a zero). For example, $$98 = (1 \\times 81) + (0 \\times 27) + (1 \\times 9) + (2 \\times 3) + (2 \\times 1) = (10122)_3.$$ Let $c(m)$ denote the sum of the cubes of the digits of the base $3$ form of $m$; thus, for instance $$c(98) = 1^3 + 0^3 + 1^3 + 2^3 + 2^3 = 18.$$ Let $n$ be any fixed positive integer. Define the sequence $(u_r)$ by $$u_1 = n \\quad \\text{and} \\quad u_r = c(u_{r-1}) \\quad \\text{for } r \\geq 2.$$ Show that there is a positive integer $r$ for which $u_r = 1$, $2$ or $17$."
+        },
+        {
+          "number": 5,
+          "problem": "Consider all functions $f$ from the positive integers to the positive integers such that\n(i) for each positive integer $m$, there is a unique positive integer $n$ such that $f(n) = m$;\n(ii) for each positive integer $n$, we have $f(n+1)$ is either $4f(n) - 1$ or $f(n) - 1$.\nFind the set of positive integers $p$ such that $f(1999) = p$ for some function $f$ with properties (i) and (ii)."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Two intersecting circles $C_1$ and $C_2$ have a common tangent which touches $C_1$ at $P$ and $C_2$ at $Q$. The two circles intersect at $M$ and $N$, where $N$ is nearer to $PQ$ than $M$ is. The line $PN$ meets the circle $C_2$ again at $R$. Prove that $MQ$ bisects angle $PMR$."
+        },
+        {
+          "number": 2,
+          "problem": "Show that, for every positive integer $n$, $$121^n - 25^n + 1900^n - (-4)^n$$ is divisible by $2000$."
+        },
+        {
+          "number": 3,
+          "problem": "Triangle $ABC$ has a right angle at $A$. Among all points $P$ on the perimeter of the triangle, find the position of $P$ such that $$AP + BP + CP$$ is minimized."
+        },
+        {
+          "number": 4,
+          "problem": "For each positive integer $k > 1$, define the sequence $\\{a_n\\}$ by $$a_0 = 1 \\quad \\text{and} \\quad a_n = kn + (-1)^n a_{n-1} \\quad \\text{for each } n \\geq 1.$$ Determine all values of $k$ for which $2000$ is a term of the sequence."
+        },
+        {
+          "number": 5,
+          "problem": "The seven dwarfs decide to form four teams to compete in the Millennium Quiz. Of course, the sizes of the teams will not all be equal. For instance, one team might consist of Doc alone, one of Dopey alone, one of Sleepy, Happy & Grumpy, and one of Bashful & Sneezy. In how many ways can the four teams be made up? (The order of the teams or of the dwarfs within the teams does not matter, but each dwarf must be in exactly one of the teams.)\nSuppose Snow-White agreed to take part as well. In how many ways could the four teams then be formed?"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all two-digit integers $N$ for which the sum of the digits of $10^N - N$ is divisible by $170$."
+        },
+        {
+          "number": 2,
+          "problem": "Circle $S$ lies inside circle $T$ and touches it at $A$. From a point $P$ (distinct from $A$) on $T$, chords $PQ$ and $PR$ of $T$ are drawn touching $S$ at $X$ and $Y$ respectively. Show that $\\angle QAR = 2\\angle XAY$."
+        },
+        {
+          "number": 3,
+          "problem": "A tetromino is a figure made up of four unit squares connected by common edges.\n(i) If we do not distinguish between the possible rotations of a tetromino within its plane, prove that there are seven distinct tetrominoes.\n(ii) Prove or disprove the statement: It is possible to pack all seven distinct tetrominoes into a $4 \\times 7$ rectangle without overlapping."
+        },
+        {
+          "number": 4,
+          "problem": "Define the sequence $(a_n)$ by $$a_n = n + \\{\\sqrt{n}\\},$$ where $n$ is a positive integer and $\\{x\\}$ denotes the nearest integer to $x$, where halves are rounded up if necessary. Determine the smallest integer $k$ for which the terms $a_k, a_{k+1}, \\ldots, a_{k+2000}$ form a sequence of $2001$ consecutive integers."
+        },
+        {
+          "number": 5,
+          "problem": "A triangle has sides of length $a, b, c$ and its circumcircle has radius $R$. Prove that the triangle is right-angled if and only if $a^2 + b^2 + c^2 = 8R^2$."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find all positive integers $m, n$, where $n$ is odd, that satisfy $$\\frac{1}{m} + \\frac{4}{n} = \\frac{1}{12}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "The quadrilateral $ABCD$ is inscribed in a circle. The diagonals $AC$, $BD$ meet at $Q$. The sides $DA$, extended beyond $A$, and $CB$, extended beyond $B$, meet at $P$.\nGiven that $CD = CP = DQ$, prove that $\\angle CAD = 60^\\circ$."
+        },
+        {
+          "number": 3,
+          "problem": "Find all positive real solutions to the equation $$x + \\left\\lfloor \\frac{x}{6} \\right\\rfloor = \\left\\lfloor \\frac{x}{2} \\right\\rfloor + \\left\\lfloor \\frac{2x}{3} \\right\\rfloor,$$ where $\\lfloor t \\rfloor$ denotes the largest integer less than or equal to the real number $t$."
+        },
+        {
+          "number": 4,
+          "problem": "Twelve people are seated around a circular table. In how many ways can six pairs of people engage in handshakes so that no arms cross?\n(Nobody is allowed to shake hands with more than one person at once.)"
+        },
+        {
+          "number": 5,
+          "problem": "$f$ is a function from $\\mathbb{Z}^+$ to $\\mathbb{Z}^+$, where $\\mathbb{Z}^+$ is the set of non-negative integers, which has the following properties:\na) $f(n+1) > f(n)$ for each $n \\in \\mathbb{Z}^+$,\nb) $f(n + f(m)) = f(n) + m + 1$ for all $m, n \\in \\mathbb{Z}^+$.\nFind all possible values of $f(2001)$."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Given that $$34! = 295\\,232\\,799\\,cd9\\,604\\,140\\,847\\,618\\,609\\,643\\,5ab\\,000\\,000,$$ determine the digits $a, b, c, d$."
+        },
+        {
+          "number": 2,
+          "problem": "The triangle $ABC$, where $AB < AC$, has circumcircle $S$. The perpendicular from $A$ to $BC$ meets $S$ again at $P$. The point $X$ lies on the line segment $AC$, and $BX$ meets $S$ again at $Q$.\nShow that $BX = CX$ if and only if $PQ$ is a diameter of $S$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $x, y, z$ be positive real numbers such that $x^2 + y^2 + z^2 = 1$. Prove that $$x^2yz + xy^2z + xyz^2 \\leq \\frac{1}{3}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $m$ and $n$ be integers greater than $1$. Consider an $m \\times n$ rectangular grid of points in the plane. Some $k$ of these points are coloured red in such a way that no three red points are the vertices of a right-angled triangle two of whose sides are parallel to the sides of the grid. Determine the greatest possible value of $k$."
+        },
+        {
+          "number": 5,
+          "problem": "Find all solutions in positive integers $a, b, c$ to the equation $$a!\\,b! = a! + b! + c!$$"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Solve the simultaneous equations $$ab + c + d = 3, \\quad bc + d + a = 5, \\quad cd + a + b = 2, \\quad da + b + c = 6,$$ where $a, b, c, d$ are real numbers."
+        },
+        {
+          "number": 2,
+          "problem": "$ABCD$ is a rectangle, $P$ is the midpoint of $AB$, and $Q$ is the point on $PD$ such that $CQ$ is perpendicular to $PD$.\nProve that the triangle $BQC$ is isosceles."
+        },
+        {
+          "number": 3,
+          "problem": "Alice and Barbara play a game with a pack of $2n$ cards, on each of which is written a positive integer. The pack is shuffled and the cards laid out in a row, with the numbers facing upwards. Alice starts, and the girls take turns to remove one card from either end of the row, until Barbara picks up the final card. Each girl's score is the sum of the numbers on her chosen cards at the end of the game.\nProve that Alice can always obtain a score at least as great as Barbara's."
+        },
+        {
+          "number": 4,
+          "problem": "A set of positive integers is defined to be wicked if it contains no three consecutive integers. We count the empty set, which contains no elements at all, as a wicked set.\nFind the number of wicked subsets of the set $$\\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}.$$"
+        },
+        {
+          "number": 5,
+          "problem": "Let $p$, $q$ and $r$ be prime numbers. It is given that $p$ divides $qr - 1$, $q$ divides $rp - 1$, and $r$ divides $pq - 1$.\nDetermine all possible values of $pqr$."
+        }
+      ]
+    },
+    {
       "year": 2005,
       "problems": [
         {
