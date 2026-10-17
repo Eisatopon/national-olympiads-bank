@@ -286,6 +286,7 @@
     --rug10: #881337; --rug10-ink: #5b0d25; --rug10-tint: #f8e0e7;
     --debw1: #3f3f46; --debw1-ink: #27272a; --debw1-tint: #e8e8ea;
     --itf: #047857; --itf-ink: #03543c; --itf-tint: #dcf3ea;
+    --nlm: #c2410c; --nlm-ink: #7c2d12; --nlm-tint: #fde8dc;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -507,6 +508,7 @@
 .f-rug10 { --f: var(--rug10); --f-ink: var(--rug10-ink); --f-tint: var(--rug10-tint); }
 .f-debw1 { --f: var(--debw1); --f-ink: var(--debw1-ink); --f-tint: var(--debw1-tint); }
 .f-itf { --f: var(--itf); --f-ink: var(--itf-ink); --f-tint: var(--itf-tint); }
+.f-nlm { --f: var(--nlm); --f-ink: var(--nlm-ink); --f-tint: var(--nlm-tint); }
 
 /* ==========================================================
    Base
@@ -1035,7 +1037,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-format-argentina-greece';
+const DATA_VERSION = '20261017-gap-additions';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1233,6 +1235,7 @@ REGION_OF.rug9 = 'europe';
 REGION_OF.rug10 = 'europe';
 REGION_OF.debw1 = 'europe';
 REGION_OF.itf = 'europe';
+REGION_OF.nlm = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1286,6 +1289,7 @@ const COUNTRIES = [
     { key: 'uka', name: 'UK Ashes', flag: '🇬🇧', file: 'Uk-ashes-problems.json', kind: 'years', full: "Mathematics Ashes (Australia v United Kingdom IMO team training exam)" },
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
+    { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
     { key: 'ch', name: 'Switzerland', flag: '🇨🇭', file: 'Swiss-final-problems.json', kind: 'years' },
     { key: 'cht', name: 'Switzerland TST', flag: '🇨🇭', file: 'Swiss-selection-problems.json', kind: 'years' },
     { key: 'de', name: 'Germany BWM', flag: '🇩🇪', file: 'Germany-bwm-problems.json', kind: 'years' },
