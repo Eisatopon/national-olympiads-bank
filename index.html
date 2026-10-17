@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Mathematical Olympiads Bank – eisatopon.gr</title>
-<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Mongolia, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Puerto Rico, Romania, Russia, Saudi Arabia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR, Uzbekistan and Vietnam. Build a printable problem set.">
+<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Armenia, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Georgia, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Mongolia, Montenegro, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Puerto Rico, Romania, Russia, Saudi Arabia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR, Uzbekistan, Venezuela and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" type="image/png" href="assets/eisatopon-logo.png">
 <link rel="apple-touch-icon" href="assets/eisatopon-logo.png">
@@ -13,15 +13,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="eisatopon.gr">
 <meta property="og:title" content="World Mathematical Olympiads Bank">
-<meta property="og:description" content="46,000+ mathematical olympiad problems from 76 countries (1935–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
+<meta property="og:description" content="52,000+ mathematical olympiad problems from 80 countries (1935–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
 <meta property="og:url" content="https://eisatopon.github.io/national-olympiads-bank/">
 <meta property="og:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 46,000+ problems, 76 countries, 1935–2026">
+<meta property="og:image:alt" content="World Mathematical Olympiads Bank: 52,000+ problems, 80 countries, 1935–2026">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="World Mathematical Olympiads Bank">
-<meta name="twitter:description" content="46,000+ olympiad problems from 76 countries, 1935–2026. In English with LaTeX. Free, searchable, printable.">
+<meta name="twitter:description" content="52,000+ olympiad problems from 80 countries, 1935–2026. In English with LaTeX. Free, searchable, printable.">
 <meta name="twitter:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -267,6 +267,10 @@
     --bmosl: #4b6584; --bmosl-ink: #2f4157; --bmosl-tint: #e6ecf3;
     --jbmosl: #7a6a4b; --jbmosl-ink: #514630; --jbmosl-tint: #f2ede3;
     --mayo: #2a7a8c; --mayo-ink: #1a4f5c; --mayo-tint: #e0f0f3;
+    --am: #c2410c; --am-ink: #7c2d12; --am-tint: #fbe7dc;
+    --ge: #b91c1c; --ge-ink: #7f1d1d; --ge-tint: #fbe4e4;
+    --me: #a16207; --me-ink: #6b4105; --me-tint: #f8efd6;
+    --ve: #ca8a04; --ve-ink: #7a5303; --ve-tint: #faf0d3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -469,6 +473,10 @@
 .f-bmosl { --f: var(--bmosl); --f-ink: var(--bmosl-ink); --f-tint: var(--bmosl-tint); }
 .f-jbmosl { --f: var(--jbmosl); --f-ink: var(--jbmosl-ink); --f-tint: var(--jbmosl-tint); }
 .f-mayo { --f: var(--mayo); --f-ink: var(--mayo-ink); --f-tint: var(--mayo-tint); }
+.f-am { --f: var(--am); --f-ink: var(--am-ink); --f-tint: var(--am-tint); }
+.f-ge { --f: var(--ge); --f-ink: var(--ge-ink); --f-tint: var(--ge-tint); }
+.f-me { --f: var(--me); --f-ink: var(--me-ink); --f-tint: var(--me-tint); }
+.f-ve { --f: var(--ve); --f-ink: var(--ve-ink); --f-tint: var(--ve-tint); }
 
 /* ==========================================================
    Base
@@ -829,7 +837,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>76</b><span>countries</span></div>
+            <div class="stat"><b>80</b><span>countries</span></div>
             <div class="stat"><b>1935–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
@@ -983,7 +991,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-bulgaria-belarus-gaps';
+const DATA_VERSION = '20261017-armenia-georgia-montenegro-venezuela';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1162,6 +1170,10 @@ REGION_OF.duke = 'americas';
 REGION_OF.bmosl = 'europe';
 REGION_OF.jbmosl = 'europe';
 REGION_OF.mayo = 'americas';
+REGION_OF.am = 'asia';
+REGION_OF.ge = 'asia';
+REGION_OF.me = 'europe';
+REGION_OF.ve = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1366,6 +1378,10 @@ const COUNTRIES = [
     { key: 'cy', name: 'Cyprus Pancyprian (Grade 12)', flag: '🇨🇾', file: 'Cyprus-pancyprian-problems.json', kind: 'years' },
     { key: 'ujm', name: 'USA USAJMO', flag: '🇺🇸', file: 'Usa-usajmo-problems.json', kind: 'years', full: "USA Junior Mathematical Olympiad (USAJMO)" },
     { key: 'trt', name: 'Turkey TST', flag: '🇹🇷', file: 'Turkey-tst-problems.json', kind: 'years', full: "Turkey IMO Team Selection Test" },
+    { key: 'am', name: 'Armenia', flag: '🇦🇲', file: 'Armenia-nmo-problems.json', kind: 'years', full: "Armenian National Mathematical Olympiad, Republican (final) stage, top grade" },
+    { key: 'ge', name: 'Georgia', flag: '🇬🇪', file: 'Georgia-nmo-problems.json', kind: 'years', full: "Georgian National Learning Olympiad in Mathematics, Round III (final), grades XI\u2013XII" },
+    { key: 'me', name: 'Montenegro', flag: '🇲🇪', file: 'Montenegro-nmo-problems.json', kind: 'years', full: "Montenegro State Competition in Mathematics, secondary school (top category)" },
+    { key: 've', name: 'Venezuela', flag: '🇻🇪', file: 'Venezuela-ojm-problems.json', kind: 'years', full: "Venezuelan Juvenile Mathematical Olympiad (OJM), national final, 5th year" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
