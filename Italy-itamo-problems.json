@@ -109,7 +109,7 @@
         },
         {
           "number": 2,
-          "problem": "There are $30$ men with their $30$ wives sitting at a round table, the seats being the vertices of a regular polygon. Show that there always exist two men who are at the same distance from their wives."
+          "problem": "At a round table there are $60$ seats, occupied by $30$ men and their $30$ wives. Prove that there are at least two ladies who sit at the same distance from their respective husbands."
         },
         {
           "number": 3,
@@ -125,7 +125,7 @@
         },
         {
           "number": 6,
-          "problem": "Given a real number $\\alpha$, a function $f$ is defined on pairs of nonnegative integers by $$f(0,0)=1,\\qquad f(m,0)=f(0,m)=0\\ \\text{for } m>0,$$ $$f(m,n)=\\alpha f(m,n-1)+(1-\\alpha)f(m-1,n-1)\\ \\text{for } m,n>0.$$ Find the values of $\\alpha$ such that $|f(m,n)|<1989$ for all integers $m,n\\ge 0$."
+          "problem": "Let $\\alpha$ be a real number and let $f$ be the function defined by\n$$f(m,n)=\\alpha f(m,n-1)+(1-\\alpha)f(m-1,n-1)\\quad\\text{for positive integers } m, n,$$\n$$f(0,0)=1,\\qquad f(m,0)=f(0,m)=0\\quad\\text{for every positive integer } m.$$\nFind the values of $\\alpha$ for which $|f(m,n)|\\le 1989$ for all $m$ and $n$."
         }
       ]
     },
@@ -171,7 +171,7 @@
         },
         {
           "number": 3,
-          "problem": "Consider sums of the form $\\pm1\\pm4\\pm9\\pm\\dots\\pm n^2$. Show that every integer can be represented in this form for some $n$. (For example, $3=-1+4$ and $8=1-4-9+16+25-36-49+64$.)"
+          "problem": "Consider sums of the form $\\pm 1 \\pm 4 \\pm 9 \\pm 16 \\pm \\cdots \\pm n^2$. Prove that every positive integer can be represented in this form for a suitable choice of the signs and of $n$. (For example, $3 = -1 + 4$ and $8 = +1 - 4 - 9 + 16 + 25 - 36 - 49 + 64$.)"
         },
         {
           "number": 4,
@@ -192,7 +192,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "A cube is divided into $27$ equal smaller cubes. A plane intersects the cube. Find the maximum possible number of smaller cubes the plane can intersect."
+          "problem": "We say that a line properly intersects a cube if it passes through an interior point of the cube. A cube is divided into $27$ equal smaller cubes (a $3 \\times 3 \\times 3$ arrangement). What is the largest number of smaller cubes that a line can properly intersect?"
         },
         {
           "number": 2,
@@ -212,7 +212,7 @@
         },
         {
           "number": 6,
-          "problem": "Let $a$ and $b$ be integers. Prove that if $\\sqrt[3]{a}+\\sqrt[3]{b}$ is a rational number, then both $a$ and $b$ are perfect cubes."
+          "problem": "Let $a$ and $b$ be integers. Prove that if $\\sqrt[3]{a}+\\sqrt[3]{b}$ is a nonzero rational number, then $a$ and $b$ are both perfect cubes."
         }
       ]
     },
@@ -221,11 +221,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Points $A,B,C$ are given on a line, with $C$ between $A$ and $B$. Three semicircles with diameters $AC$, $BC$, $AB$ are drawn on the same side of the line $AB$. The perpendicular to $AB$ at $C$ meets the semicircle with diameter $AB$ at $H$. Given that $CH=\\sqrt2$, compute the area of the region bounded by the three semicircles."
+          "problem": "Points $A, B, C$ are given on a line, with $C$ between $A$ and $B$. Three semicircles with diameters $AC$, $BC$, $AB$ are drawn on the same side of the line $AB$. Let $H$ be the point of the semicircle with diameter $AB$ whose orthogonal projection onto the diameter $AB$ is $C$. Given that the segment $CH$ has length $\\sqrt3$, compute the area of the region bounded by the three semicircles."
         },
         {
           "number": 2,
-          "problem": "Find all pairs $(p,q)$ of primes such that the equation $3x^2-px+q=0$ has two distinct rational roots."
+          "problem": "Find all pairs $(p, q)$ of (positive) primes such that the equation $5x^2 - px + q = 0$ has distinct rational solutions."
         },
         {
           "number": 3,
@@ -233,11 +233,11 @@
         },
         {
           "number": 4,
-          "problem": "Let $P$ be a point in the plane of a triangle $ABC$, different from its circumcentre. Prove that the triangle whose vertices are the projections of $P$ on the perpendicular bisectors of the sides of $ABC$ is similar to $ABC$."
+          "problem": "Let $ABC$ be a triangle and $P$ a point of the plane. Let $P_A$, $P_B$, $P_C$ be the projections of $P$ onto the three perpendicular bisectors of the sides of the triangle. Prove that triangle $P_AP_BP_C$ is similar to triangle $ABC$. (For simplicity, consider only the case in which $P$ lies in the angle $\\angle M_AHM_B$, where $M_A$, $M_B$ are the midpoints of the sides $BC$ and $AC$ and $H$ is the intersection point of the perpendicular bisectors.)"
         },
         {
           "number": 5,
-          "problem": "Prove that for any positive real numbers $a,b,c$ not exceeding $1$ $$a^2b+b^2c+c^2a+1\\ge a^2+b^2+c^2.$$"
+          "problem": "Let $a$, $b$, $c$ be positive real numbers less than $1$. Prove that\n$$a^2 + b^2 + c^2 \\le a^2b + b^2c + c^2a + 1.$$"
         },
         {
           "number": 6,
@@ -254,11 +254,11 @@
         },
         {
           "number": 2,
-          "problem": "Solve the Diophantine equation $y^2=x^3-16$."
+          "problem": "Find all integer solutions of the equation $y^2 = x^3 + 16$."
         },
         {
           "number": 3,
-          "problem": "A journalist wants to report on the island of scoundrels and knights, where all inhabitants are either scoundrels (who always lie) or knights (who always tell the truth). The journalist interviews each inhabitant exactly once and gets the following answers:\n\n$A_1$: On this island there is at least one scoundrel.\n\n$A_2$: On this island there are at least two scoundrels.\n\n$\\dots$\n\n$A_{n-1}$: On this island there are at least $n-1$ scoundrels.\n\n$A_n$: On this island everybody is a scoundrel.\n\nCan the journalist decide whether there are more scoundrels or more knights?"
+          "problem": "A journalist has to write an article about a classic island of knaves and knights, where every inhabitant either always lies (and is a knave) or always tells the truth (and is a knight), and all the inhabitants know one another. Suppose the journalist interviews every inhabitant exactly once and gets, in order, the following answers:\n\n$A_1$: \"On the island there is at least $1$ knave.\"\n\n$A_2$: \"On the island there are at least $2$ knaves.\"\n\n$\\dots$\n\n$A_{n-1}$: \"On the island there are at least $n-1$ knaves.\"\n\n$A_n$: \"On the island there are $n$ knaves.\"\n\nCan the journalist determine whether there are more knaves or more knights on the island?"
         },
         {
           "number": 4,
@@ -1012,7 +1012,7 @@
         },
         {
           "number": 3,
-          "problem": "Let $a_1, a_2, \\dots, a_{2020}$ and $b_1, b_2, \\dots, b_{2020}$ be real numbers, not necessarily distinct. Suppose that there are only finitely many positive integers $n$ for which the equation\n$$a_1|x - b_1| + a_2|x - b_2| + \\cdots + a_{2020}|x - b_{2020}| = n \\qquad (1)$$\nhas exactly two real solutions. Prove that there are only finitely many positive integers $n$ for which equation (1) has at least one real solution."
+          "problem": "Let $a_1, a_2, \\dots, a_{2020}$ and $b_1, b_2, \\dots, b_{2020}$ be real numbers, not necessarily distinct. Suppose that there are only finitely many positive integers $n$ for which the equation\n$$\\left| a_1|x - b_1| + a_2|x - b_2| + \\cdots + a_{2020}|x - b_{2020}| \\right| = n \\qquad (1)$$\nhas exactly two real solutions. Prove that there are only finitely many positive integers $n$ for which equation (1) has at least one real solution."
         },
         {
           "number": 4,
@@ -1128,7 +1128,7 @@
         },
         {
           "number": 3,
-          "problem": "An integer $n$ is called Egyptian if there is a strictly increasing sequence of positive integers $0 < a_1 < a_2 < \\cdots < a_k = n$ (so the last term of the sequence is $n$) such that\n$$\\frac{1}{a_1} + \\frac{1}{a_2} + \\cdots + \\frac{1}{a_k} = 1.$$\n\n(a) Determine whether $n = 72$ is Egyptian.\n\n(b) Determine whether $n = 71$ is Egyptian.\n\n(c) Determine whether $n = 7271$ is Egyptian."
+          "problem": "An integer $n$ is called Egyptian if there is a strictly increasing sequence of positive integers $0 < a_1 < a_2 < \\cdots < a_k = n$ (so the last term of the sequence is $n$) such that\n$$\\frac{1}{a_1} + \\frac{1}{a_2} + \\cdots + \\frac{1}{a_k} = 1.$$\n\n(a) Determine whether $n = 72$ is Egyptian.\n\n(b) Determine whether $n = 71$ is Egyptian.\n\n(c) Determine whether $n = 72^{71}$ is Egyptian."
         },
         {
           "number": 4,
