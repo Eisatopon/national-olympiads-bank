@@ -585,6 +585,108 @@
           "problem": "Let $n$ be a positive integer and $a_1,a_2,\\ldots,a_n$ integers. A function $f: \\mathbb{Z} \\rightarrow \\mathbb{R}$ satisfies $$\\sum_{i=1}^n f(k+a_il)=0$$ for all integers $k$ and $l$ with $l \\neq 0$. Prove that $f \\equiv 0$."
         }
       ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In a triangle $ABC$, $\\angle ABC=60^\\circ$, and $I$ is the incentre. Let the points $P$ and $T$ on the sides $AB$ and $BC$, respectively, be such that $PI\\parallel BC$ and $TI\\parallel AB$, and let the points $P_1$ and $T_1$ on the sides $AB$ and $BC$, respectively, be such that $AP_1=BP$ and $CT_1=BT$. Prove that the point $I$ lies on the segment $P_1T_1$.",
+          "proposer": "Tryhub Anton"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A regular hexagon is cut by lines into $6n^2$ equilateral triangles (see the figure). In them $2n$ rooks are placed, no two of which attack each other (a rook attacks in the directions parallel to the sides of the hexagon). Prove that if we consider the chessboard colouring of all $6n^2$ equilateral triangles, then the number of rooks standing on black triangles equals the number of rooks standing on white triangles.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/ukraine_tst_2019_1_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a_0, a_1, a_2, \\dots$ be a sequence of real numbers such that $a_0=0$, $a_1=1$, and for every natural number $n\\ge 2$ there exists a natural number $k$, $1\\le k\\le n$, for which $$a_n=\\frac1k\\left(a_{n-1}+\\ldots+a_{n-k}\\right).$$ Find the largest possible value of $a_{2018}-a_{2017}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A natural number $n$ is given. Hanna placed $n+1$ boxes in a row, numbered them from left to right with the numbers $0, 1, 2, \\dots, n$, and put $n$ beetles into box number $0$. These beetles started crawling between the boxes. In one minute exactly one of the beetles which is in a box containing $k$ beetles in total, counting this beetle, crawls at most $k$ boxes to the right. After some time it happened that all the beetles are in the box with number $n$. Prove that at least $$\\left[\\frac{n}{1}\\right]+\\left[\\frac{n}{2}\\right]+\\ldots+\\left[\\frac{n}{n}\\right]$$ minutes have passed."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A non-constant polynomial $p(x)$ with real coefficients has the following property: for any natural numbers $n$ and $k$ the number $$\\frac{p(n+1)p(n+2)\\ldots p(n+k)}{p(1)p(2)\\ldots p(k)}$$ is an integer. Prove that this polynomial is divisible by $x$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "An acute-angled triangle $ABC$ is given. Its altitudes $AA_1$, $BB_1$ and $CC_1$ meet at the point $H$, the orthocentre of triangle $ABC$. Let the lines $B_1C_1$ and $AA_1$ meet at the point $K$, and let $M$ be the midpoint of the segment $AH$. Prove that the circumcircle of triangle $MKB_1$ is tangent to the circumcircle of triangle $ABC$ if and only if $BA_1=3A_1C$.",
+          "proposer": "Bondarenko Mykhailo"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $BH$ be an altitude of a scalene acute-angled triangle $ABC$. Points $K$ and $L$ are chosen on the sides $AB$ and $BC$, respectively, so that $BK=BH=BL$. The circumcircles of the triangles $AKH$ and $CLH$ meet for the second time at the point $P$, and meet the ray $BH$ for the second time at the points $Q$ and $R$, respectively. Prove that the circumcentre of triangle $PQR$ lies on the bisector of the angle $ABC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A rectangular board with $2021$ rows and $2022$ columns has been divided in some way into dominoes (rectangles $1\\times 2$). It happened that in any other division of this board into dominoes there is a domino which is also present in the given division. Prove that in the given division there are two adjacent columns which are filled with $2021$ horizontal dominoes."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all functions $f:(0,+\\infty)\\to(0,+\\infty)$ such that for all $x, y>0$ the equality $$f(x+f(xy))+y=f(x)f(y)+1$$ holds."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Initially some natural number greater than $1$ is written on the board. Every second, instead of the number $n$ written on the board, the number $n+\\frac{n}{p}$ is written, where $p$ is some prime divisor of the natural number $n$; this process continues infinitely long. Prove that the number $3$ was chosen as the prime $p$ infinitely many times."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In the plane $n\\ge 6$ discs $D_1, D_2, \\dots, D_n$ are drawn which pairwise do not intersect, with corresponding radii $R_1\\ge R_2\\ge\\ldots\\ge R_n$. For each $i=1, 2, \\dots, n$ a point $P_i$ is chosen inside or on the boundary of the disc $D_i$. Let $O$ be an arbitrary point in this plane. Prove that the inequality $$OP_1+OP_2+\\ldots+OP_n\\ge R_6+R_7+\\ldots+R_n$$ holds."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Players $\\mathbf{A}$ and $\\mathbf{B}$ play a game on a board on which initially $2020$ ones are written. In each move $\\mathbf{A}$ erases two of the numbers on the board (say $x$ and $y$), and $\\mathbf{B}$ writes on the board one of the numbers $x+y$ or $|x-y|$. The game ends when one of the following holds:\n\n(i) one of the numbers is strictly greater than the sum of all the other numbers;\n\n(ii) only zeros are written on the board.\n\nWhen the game is over, player $\\mathbf{B}$ must give $\\mathbf{A}$ as many coins as there are numbers left on the board. Player $\\mathbf{A}$ wants to get as many coins as possible, and $\\mathbf{B}$ wants to give away as few as possible. If both players play optimally, how many coins must $\\mathbf{B}$ give?"
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "One hundred volleyball teams played a tournament in which each team played every other team exactly once, and all the matches were played at different times. It turned out that in every match the teams that met had the same number of points at the moment of the match. How many points could the team that scored the most points by the end of the tournament have scored? In volleyball a team gets $1$ point for a win and $0$ points for a loss, and there are no draws."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Find all polynomials $p(x)$ with real coefficients, not identically zero, for which there exists a polynomial $q(x)$ with real coefficients such that for every natural number $n$ the equality $$p(1)+p(2)+\\ldots+p(n)=p(n)q(n)$$ holds."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "An acute-angled triangle $ABC$ and a point $P$ on its circumcircle are given. Let $D$, $E$, $F$ be the reflections of the point $P$ in the midlines of triangle $ABC$ parallel to the sides $BC$, $AC$ and $AB$, respectively. Denote by $\\omega_A$, $\\omega_B$, $\\omega_C$ the circumcircles of the triangles $ADP$, $BEP$, $CFP$, respectively. Let $\\omega$ be the circumcircle of the triangle whose vertices are the pairwise intersections of the perpendicular bisectors of the segments $AD$, $BE$ and $CF$. Prove that all four circles $\\omega_A$, $\\omega_B$, $\\omega_C$ and $\\omega$ have a common point."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "A natural number $n$ is given. Let $N=2^n$. Find the smallest real number $a_n$ such that for all real numbers $x$ the inequality $$\\sqrt[N]{\\frac{x^{2N}+1}{2}}\\le a_n(x-1)^2+x$$ holds."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "A triangle $ABC$ with $AB<AC$ is given. Let $I$ be the incentre, and let $I_A$ be the centre of the excircle which touches the side $BC$. Let the incircle of triangle $ABC$ touch the side $BC$ at the point $D$. The line $AD$ meets $BI_A$ and $CI_A$ at the points $E$ and $F$, respectively. Prove that the circumcircles of the triangles $AID$ and $I_AEF$ are tangent to each other."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "Let $S$ be a set consisting of $n\\ge 3$ distinct natural numbers such that the sum of any two of them does not belong to $S$. Prove that the elements of $S$ can be ordered as $a_1, a_2, \\dots, a_n$ so that $a_i$ does not divide $a_{i-1}+a_{i+1}$ for all $i=2, 3, \\dots, n-1$."
+        }
+      ]
     }
   ]
 }
