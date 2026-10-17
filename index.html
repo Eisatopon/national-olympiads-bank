@@ -264,6 +264,8 @@
     --stars: #1f4f7a; --stars-ink: #123352; --stars-tint: #e0eaf4;
     --omo: #5b4a8a; --omo-ink: #3b2f5c; --omo-tint: #ece8f5;
     --duke: #00539b; --duke-ink: #003566; --duke-tint: #dde9f5;
+    --bmosl: #4b6584; --bmosl-ink: #2f4157; --bmosl-tint: #e6ecf3;
+    --jbmosl: #7a6a4b; --jbmosl-ink: #514630; --jbmosl-tint: #f2ede3;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -463,6 +465,8 @@
 .f-stars { --f: var(--stars); --f-ink: var(--stars-ink); --f-tint: var(--stars-tint); }
 .f-omo { --f: var(--omo); --f-ink: var(--omo-ink); --f-tint: var(--omo-tint); }
 .f-duke { --f: var(--duke); --f-ink: var(--duke-ink); --f-tint: var(--duke-tint); }
+.f-bmosl { --f: var(--bmosl); --f-ink: var(--bmosl-ink); --f-tint: var(--bmosl-tint); }
+.f-jbmosl { --f: var(--jbmosl); --f-ink: var(--jbmosl-ink); --f-tint: var(--jbmosl-tint); }
 
 /* ==========================================================
    Base
@@ -977,7 +981,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261016-omo-duke';
+const DATA_VERSION = '20261017-balkan-shortlists';
 const FIRST = 1935, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1153,6 +1157,8 @@ REGION_OF.igoe = 'world';
 REGION_OF.stars = 'world';
 REGION_OF.omo = 'americas';
 REGION_OF.duke = 'americas';
+REGION_OF.bmosl = 'europe';
+REGION_OF.jbmosl = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1286,6 +1292,8 @@ const COUNTRIES = [
     { key: 'mitib', name: 'MIT Integration Bee', flag: '🎓', file: 'undergraduate/MIT-integration-bee-problems.json', kind: 'years', scope: 'undergraduate', full: "MIT Integration Bee, Qualifying Test" },
     { key: 'bmo', name: 'Balkan MO', flag: '🏔️', file: 'Balkan-bmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior' },
     { key: 'jbmo', name: 'Junior Balkan MO', flag: '🏔️', file: 'Balkan-jbmo-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Junior' },
+    { key: 'bmosl', name: 'BMO Shortlist', flag: '🏔️', file: 'Balkan-bmo-shortlist-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Senior shortlist', full: "Balkan Mathematical Olympiad Shortlist" },
+    { key: 'jbmosl', name: 'JBMO Shortlist', flag: '🏔️', file: 'Balkan-jbmo-shortlist-problems.json', kind: 'years', scope: 'regional', group: 'BMO', groupName: 'Balkan MO', sub: 'Junior shortlist', full: "Junior Balkan Mathematical Olympiad Shortlist" },
     { key: 'imo', name: 'IMO', flag: '🌐', file: 'IMO-problems.json', kind: 'years', scope: 'international', full: 'International Mathematical Olympiad', group: 'IMO', groupName: 'IMO', sub: 'Contest problems' },
     { key: 'egmo', name: 'EGMO', flag: '🌐', file: 'EGMO-problems.json', kind: 'years', scope: 'international', full: "European Girls' Mathematical Olympiad" },
     { key: 'ofm', name: 'Francophone MO', flag: '🌐', file: 'OFM-problems.json', kind: 'years', scope: 'international', full: "Olympiade Francophone de Math\u00e9matiques (OFM), Senior" },
