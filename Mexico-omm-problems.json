@@ -112,7 +112,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Find the smallest possible natural number $n = \\overline{a_m \\cdots a_2 a_1 a_0}$ (in decimal) such that the number $r = \\overline{a_1 a_0 a_m \\cdots a_2}$ (obtained by moving the last two digits to the front) equals $2n$."
+          "problem": "Find the smallest positive integer $n$ with the following property: if the decimal expansion of $n$ is $n=\\overline{a_ma_{m-1}\\ldots a_2a_1a_0}$ and $r$ is the number whose decimal expansion is $r=\\overline{a_1a_0a_ma_{m-1}\\ldots a_20}$, then $r$ is twice $n$."
         },
         {
           "day": 2,
@@ -142,12 +142,12 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Show that $n^{n-1} - 1$ is divisible by $(n-1)^2$ for $n > 2$."
+          "problem": "Prove that $n^{n-1}-1$ is divisible by $(n-1)^2$ for every integer $n\\geq 2$."
         },
         {
           "day": 2,
           "number": 4,
-          "problem": "Find $\\dfrac{0}{1} + \\dfrac{1}{1} + \\dfrac{0}{2} + \\dfrac{1}{2} + \\dfrac{2}{2} + \\dfrac{0}{3} + \\dfrac{1}{3} + \\dfrac{2}{3} + \\dfrac{3}{3} + \\dfrac{0}{4} + \\dfrac{1}{4} + \\dfrac{2}{4} + \\dfrac{3}{4} + \\dfrac{4}{4} + \\dfrac{0}{5} + \\dfrac{1}{5} + \\dfrac{2}{5} + \\dfrac{3}{5} + \\dfrac{4}{5} + \\dfrac{5}{5} + \\dfrac{0}{6} + \\dfrac{1}{6} + \\dfrac{2}{6} + \\dfrac{3}{6} + \\dfrac{4}{6} + \\dfrac{5}{6} + \\dfrac{6}{6}$."
+          "problem": "Consider the 27 dominoes that remain after removing the double blank. Taking into account the number of pips on each tile, each tile corresponds to a rational number less than or equal to one. What is the sum of all these numbers?"
         },
         {
           "day": 2,
@@ -187,7 +187,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "The sum of squares of two consecutive integers can be a square, as in $3^2 + 4^2 = 5^2$. Prove that the sum of squares of $m$ consecutive integers cannot be a square for $m = 3$ or $m = 6$, and find 11 consecutive integers whose sum of squares is a perfect square."
+          "problem": "The sum of the squares of two consecutive integers can be a perfect square, for example $3^2+4^2=5^2$.\n\n(a) Prove that the sum of the squares of $m$ consecutive integers cannot be a perfect square for $m=3$ and $m=6$.\n\n(b) Find an example of $11$ consecutive positive integers the sum of whose squares is a perfect square."
         },
         {
           "day": 2,
@@ -202,7 +202,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The tetrahedron $OPQR$ has $\\angle POQ = \\angle POR = \\angle QOR = 90^\\circ$. $X, Y, Z$ are the midpoints of $PQ, QR, RP$ respectively. Show that the four faces of tetrahedron $OXYZ$ have equal area."
+          "problem": "A tetrahedron $OPQR$ is such that the angles $POQ$, $POR$ and $QOR$ are right angles. Show that if $X$, $Y$, $Z$ are the midpoints of $PQ$, $QR$ and $RP$, then the four faces of the tetrahedron $OXYZ$ are congruent."
         },
         {
           "day": 1,
@@ -217,7 +217,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Show that $1 + \\underbrace{11\\cdots1}_{4} + \\underbrace{11\\cdots1}_{6} + \\underbrace{11\\cdots1}_{8} + \\cdots + \\underbrace{11\\cdots1}_{20}$ is divisible by 100."
+          "problem": "Show that $100$ divides $1^1+11^{11}+111^{111}+\\cdots+1111111111^{1111111111}$."
         },
         {
           "day": 2,
@@ -312,7 +312,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Consider 6 points in the plane such that 8 of the $\\binom{6}{2} = 15$ distances between them equal 1. Prove that there are at least 3 points forming an equilateral triangle."
+          "problem": "Consider $6$ points in the plane such that $8$ of the distances between them are equal to $1$. Show that at least three of the points form an equilateral triangle of side $1$."
         },
         {
           "day": 1,
@@ -402,7 +402,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Prove that 1 has infinitely many representations of the form $1 = \\dfrac{1}{5} \\cdot \\dfrac{1}{a_1} \\cdot \\dfrac{1}{a_2} \\cdots \\dfrac{1}{a_n}$ where $n$ and $a_i$ are positive integers with $5 < a_1 < a_2 < \\cdots < a_n$."
+          "problem": "Prove that the number $1$ can be written in infinitely many different ways in the form $$1=\\frac{1}{5}+\\frac{1}{a_1}+\\frac{1}{a_2}+\\cdots+\\frac{1}{a_n},$$ where $n,a_1,a_2,\\ldots,a_n$ are positive integers and $5<a_1<a_2<\\cdots<a_n$."
         }
       ]
     },
@@ -427,7 +427,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Find all integers that can be written in the form $a_1^1 + a_2^2 + \\cdots + a_9^9$ where $a_1, a_2, \\ldots, a_9$ are nonzero digits, not necessarily different."
+          "problem": "Find all integers that can be written in the form $$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{9}{a_9},$$ where $a_1,a_2,\\ldots,a_9$ are nonzero digits, which may be repeated."
         },
         {
           "day": 2,
@@ -482,7 +482,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Circles $A, B, C, D$ are given such that $A$ and $B$ are externally tangent at $P$, $B$ and $C$ at $Q$, $C$ and $D$ at $R$, $D$ and $A$ at $S$. (a) Prove that $P, Q, R, S$ lie on a circle. (b) If $A$ and $C$ have radius 2, $B$ and $D$ have radius 3, and the distance between centers of $A$ and $C$ is 6, find the area of quadrilateral $PQRS$."
+          "problem": "Let $\\mathcal{A}$, $\\mathcal{B}$, $\\mathcal{C}$ and $\\mathcal{D}$ be circles such that $\\mathcal{A}$ is externally tangent to $\\mathcal{B}$ at $P$, $\\mathcal{B}$ is externally tangent to $\\mathcal{C}$ at $Q$, $\\mathcal{C}$ is externally tangent to $\\mathcal{D}$ at $R$, and $\\mathcal{D}$ is externally tangent to $\\mathcal{A}$ at $S$. Suppose that $\\mathcal{A}$ and $\\mathcal{C}$ do not intersect, and neither do $\\mathcal{B}$ and $\\mathcal{D}$.\n\n(a) Prove that the points $P$, $Q$, $R$ and $S$ all lie on a circle.\n\n(b) Suppose moreover that $\\mathcal{A}$ and $\\mathcal{C}$ have radius $2$, $\\mathcal{B}$ and $\\mathcal{D}$ have radius $3$, and the distance between the centres of $\\mathcal{A}$ and $\\mathcal{C}$ is $6$. Determine the area of the quadrilateral $PQRS$."
         },
         {
           "day": 1,
@@ -492,7 +492,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Given a set $A$ of positive integers, $A'$ is formed by elements of $A$ and all integers obtained by writing elements of $A$ in a row with $+$ or $-$ signs and evaluating. $A''$ is constructed from $A'$ similarly. Find the smallest number of elements in $A$ such that $A''$ contains all integers from 1 to 40."
+          "problem": "Given a set $A$ of positive integers, we construct the set $A'$ consisting of all the elements of $A$ together with all positive integers that can be obtained as follows: some elements of $A$ are chosen, without repetition, each of them is given the sign $+$ or $-$, and these signed numbers are added; if the result is positive, it is put in $A'$. For example, if $A=\\{2,8,13,20\\}$, then some elements of $A'$ are $8$ and $14$ ($8$ is an element of $A$ and $14=20+2-8$). From $A'$ we construct $A''$ in the same way as $A'$ was constructed from $A$. Find the smallest number of elements that $A$ must have if $A''$ is to contain all the integers from $1$ to $40$ (inclusive)."
         },
         {
           "day": 2,
@@ -532,7 +532,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "For positive integers $n, m$, define $f(n, m)$ using the sequence $a_1 = m$ and $a_{k+1} \\equiv a_k^2 \\pmod{n}$, then $f(n,m) = a_1 - a_2 + a_3 - \\cdots + a_{2001}$. For which $n \\geq 5$ can we find $m$ with $2 \\leq m \\leq n/2$ and $f(m, n) > 0$?"
+          "problem": "Given positive integers $n$ and $a$, a list of $2001$ numbers is formed as follows: the first number is $a$; from the second number on, each number is the remainder obtained when the square of the previous number is divided by $n$. The numbers of the list are given the signs $+$ and $-$ alternately, starting with $+$, and the signed numbers obtained in this way are added; this sum is called the final sum for $n$ and $a$. For which integers $n\\geq 5$ does there exist an $a$ with $2\\leq a\\leq\\frac{n}{2}$ such that the final sum for $n$ and $a$ is positive?"
         },
         {
           "day": 2,
@@ -552,7 +552,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "The numbers 1 to 1024 are written on a $32 \\times 32$ board in row-major order. The board is divided into four $16 \\times 16$ parts and rotated clockwise, then each $16 \\times 16$ is divided into $8 \\times 8$ parts and rotated, continuing down to $2 \\times 2$ parts. What numbers end up on the main diagonal?"
+          "problem": "The numbers from $1$ to $1024$ are written in a $32\\times32$ grid from left to right, with the numbers $1$ to $32$ in the first row, $33$ to $64$ in the second, and so on. The grid is divided into four $16\\times16$ grids, which exchange places as follows: the grid in the upper-left position moves to the upper-right position, the upper-right one moves to the lower-right position, the lower-right one moves to the lower-left position, and the lower-left one moves to the upper-left position. Then each $16\\times16$ grid is divided into four $8\\times8$ grids, which exchange places in the same way; in turn each of these is divided, and so on, until the $2\\times2$ grids are divided into $1\\times1$ squares, which exchange places in the same way. After these operations, which numbers lie on the diagonal from the upper-left corner to the lower-right corner of the $32\\times32$ grid?"
         },
         {
           "day": 1,
@@ -742,7 +742,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "The fraction $\\frac{1}{10}$ can be expressed as the sum of two unit fractions in many ways. Find the number of ways that $\\frac{1}{2007}$ can be expressed as the sum of two distinct positive unit fractions."
+          "problem": "For a positive integer $n$, let $n_1$ be the sum of the digits of $n$, $n_2$ the sum of the digits of $n_1$, and $n_3$ the sum of the digits of $n_2$. For example, for $n=199$ we have $n_1=199_1=19$, $n_2=199_2=10$ and $n_3=199_3=1$. Find all pairs of positive integers $(m,n)$ such that $$m+n=2007,\\qquad m_3+n_3=2007_3.$$"
         },
         {
           "day": 2,
@@ -752,7 +752,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $ABC$ be a triangle with $AB > BC > CA$. $D$ is on $AB$ with $CD = BC$, and $M$ is the midpoint of $AC$. Show that $BD = AC$ and $\\angle BAC = 2\\angle ABM$."
+          "problem": "Let $ABC$ be a triangle with $AB>AC>BC$. Let $D$ be a point on the side $AB$ such that $CD=BC$, and let $M$ be the midpoint of the side $AC$. Show that $BD=AC$ if and only if $\\angle BAC=2\\angle ABM$."
         }
       ]
     },
@@ -772,7 +772,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "Consider a chess board, with the numbers 1 through 64 placed in the squares in column-major order. Assume we have an infinite supply of knights. We place knights in the chess board squares such that no two knights attack one another and compute the sum of the numbers of the cells on which the knights are placed. What is the maximum sum that we can attain?"
+          "problem": "Consider a chessboard. The numbers $1$ to $64$ are written in its squares row by row: $1$ to $8$ in the first row from left to right, $9$ to $16$ in the second row, and so on up to $57$ to $64$ in the last row. Enough knights are available to place them on squares of the board so that no two of them attack each other. Compute the sum of the numbers of the squares on which the knights are placed. What is the maximum sum that can be obtained? (Two knights attack each other when they are at two opposite corners of a $2\\times3$ or $3\\times2$ rectangle.)"
         },
         {
           "day": 2,
@@ -782,7 +782,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "We place 8 distinct integers in the vertices of a cube and then write the greatest common divisor of each pair of adjacent vertices on the edge connecting them. Let $E$ be the sum of the numbers on the edges and $V$ the sum of the numbers on the vertices. (a) Prove that $\\frac{2}{3}E \\leq V$. (b) Can $E = V$?"
+          "problem": "Eight distinct positive integers are written at the vertices of a cube, and on each edge of the cube the greatest common divisor of the numbers at its two endpoints is written. Let $E$ be the sum of the numbers written on the edges and $V$ the sum of the numbers written at the vertices.\n\n(a) Show that $\\frac{2}{3}E\\leq V$.\n\n(b) Is it possible that $E=V$?"
         },
         {
           "day": 2,
@@ -887,12 +887,12 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "A $(2n-1) \\times (2n+1)$ board is divided into rectangles with integer side lengths and sides parallel to the board sides, such that each rectangle's area is a power of 2. Find the minimum number of rectangles."
+          "problem": "Consider a $(2^n-1)\\times(2^n+1)$ board that is to be divided into rectangles with sides parallel to the sides of the board, in such a way that the area (number of cells) of each rectangle is a power of $2$. Find the smallest number of rectangles into which the board can be divided."
         },
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $C_1$ and $C_2$ intersect at $A$ and $B$. $C$ is on line $AB$ with $B$ between $A$ and $C$. $P$ on $C_1$ and $Q$ on $C_2$ are such that $CP$ is tangent to $C_1$ and $CQ$ to $C_2$. Line $PQ$ meets $C_1$ at $R$ and $C_2$ at $S$. $CR$ meets $C_1$ again at $X$ and $CS$ meets $C_2$ again at $Y$. Let $Z$ be on line $XY$. Prove $SZ \\parallel QX$ if and only if $PZ \\parallel RX$."
+          "problem": "Let $\\mathcal{C}_1$ and $\\mathcal{C}_2$ be two circles meeting at the points $A$ and $B$. Consider a point $C$ on the line $AB$ such that $B$ lies between $A$ and $C$. Let $P$ and $Q$ be points on $\\mathcal{C}_1$ and $\\mathcal{C}_2$, respectively, such that $CP$ is tangent to $\\mathcal{C}_1$, $CQ$ is tangent to $\\mathcal{C}_2$, $P$ is not inside $\\mathcal{C}_2$ and $Q$ is not inside $\\mathcal{C}_1$. The line $PQ$ meets $\\mathcal{C}_1$ again at $R$ and $\\mathcal{C}_2$ again at $S$, both points different from $B$. Suppose that $CR$ meets $\\mathcal{C}_1$ again at $X$ and $CS$ meets $\\mathcal{C}_2$ again at $Y$. Let $Z$ be a point on the line $XY$. Show that $SZ$ is parallel to $QX$ if and only if $PZ$ is parallel to $RX$."
         }
       ]
     },
@@ -986,7 +986,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $a, b, c$ be positive reals with $a + b + c = 3$. Prove: $\\dfrac{a^2}{\\sqrt[3]{b + ca}} + \\dfrac{b^2}{\\sqrt[3]{c + ab}} + \\dfrac{c^2}{\\sqrt[3]{a + bc}} \\geq \\dfrac{3}{2}$. Determine when equality holds."
+          "problem": "Let $a$, $b$ and $c$ be positive real numbers such that $a+b+c=3$. Show that $$\\frac{a^2}{a+\\sqrt[3]{bc}}+\\frac{b^2}{b+\\sqrt[3]{ca}}+\\frac{c^2}{c+\\sqrt[3]{ab}}\\geq\\frac{3}{2},$$ and determine for which numbers $a$, $b$ and $c$ equality holds."
         },
         {
           "day": 2,
@@ -1016,7 +1016,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Mary writes all $n^3$ triples of integers between 1 and $n$ (inclusive, not necessarily distinct) on a board. For each triple, she erases all but the greatest element. Show that the total count of remaining numbers cannot be a perfect square."
+          "problem": "Let $n$ be a positive integer. María writes on a board the $n^3$ triples that can be formed by taking three integers, not necessarily distinct, between $1$ and $n$ inclusive. Then, for each of the triples, María determines the largest number (or the largest numbers, if there is more than one) and erases the others. For example, in the triple $(1,3,4)$ she erases the numbers $1$ and $3$, while in the triple $(1,2,2)$ she erases only the number $1$. Show that at the end of this process the number of numbers that remain written on the board cannot be the square of an integer."
         },
         {
           "day": 2,
@@ -1086,7 +1086,7 @@
         },
         {
           "number": 5,
-          "problem": "On circle $\\Gamma$, points $A, B, N, C, D, M$ are chosen clockwise with $N$ the midpoint of clockwise arc $BC$ and $M$ the midpoint of clockwise arc $AD$. Let $P = AC \\cap BD$ and $Q$ on line $MB$ with $PQ \\perp MN$. Point $R$ on segment $MC$ satisfies $QB = RC$. Prove the midpoint of $QR$ lies on $AC$."
+          "problem": "On a circle $\\Gamma$ the points $A$, $B$, $N$, $C$, $D$ and $M$ lie in this clockwise order, where $M$ and $N$ are the midpoints of the arcs $DA$ and $BC$ (traversed clockwise), respectively. Let $P$ be the intersection of the segments $AC$ and $BD$, and let $Q$ be a point on $MB$ such that the lines $PQ$ and $MN$ are perpendicular. A point $R$ is taken on the segment $MC$ such that $QB=RC$. Show that $AC$ passes through the midpoint of the segment $QR$."
         },
         {
           "number": 6,
@@ -1110,7 +1110,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "A sequence $a_2, a_3, \\ldots, a_n$ of positive integers is campechana if for each $i$ with $2 \\leq i \\leq n$, exactly $a_i$ terms are relatively prime to $i$. Let $m = p_1 p_2 \\cdots p_k$ where $p_1, \\ldots, p_k$ are distinct primes and $k \\geq 2$. Show there exist at least two different campechana sequences of size $m$."
+          "problem": "A sequence $a_1,a_2,\\ldots,a_n$ of positive integers is called campechana if for each $i$ with $2\\leq i\\leq n$, exactly $a_i$ elements of the sequence are relatively prime to $i$. We say that the size of the sequence is $n-1$. Let $m=p_1p_2\\cdots p_k$, where $p_1,p_2,\\ldots,p_k$ are distinct primes and $k\\geq 2$. Show that there exist at least two different campechana sequences of size $m$."
         },
         {
           "day": 2,
@@ -1150,7 +1150,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "A list of positive integers is good if its maximum appears exactly once. A list is very good if all its sublists are good. Find the minimum $k$ such that a very good list of length 2019 with $k$ different values exists."
+          "problem": "A list of positive integers is called good if the maximum element of the list appears exactly once. A sublist is a list formed by several consecutive elements of the list. For example, in the list $10,34,34,22,30,22$ the sublist $22,30,22$ is good, while the sublist $10,34,34,22$ is not. A list is called very good if all its sublists are good. Find the smallest positive integer $k$ such that it is possible to create a very good list with $2019$ elements in which exactly $k$ distinct values are used."
         },
         {
           "day": 2,
@@ -1205,7 +1205,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Positive reals $a_1, a_2, a_3$ are three consecutive terms of an arithmetic progression; distinct positive reals $b_1, b_2, b_3$ are also three consecutive terms of an arithmetic progression. Is it possible to use segments of lengths $a_1, a_2, a_3$ as bases and segments of lengths $b_1, b_2, b_3$ as altitudes to construct three rectangles of equal area?"
+          "problem": "The distinct positive numbers $a_1,a_2,a_3$ are three consecutive terms of an arithmetic progression and, in the same way, the distinct positive numbers $b_1,b_2,b_3$ are three consecutive terms of an arithmetic progression. Is it possible to use three segments of lengths $a_1,a_2,a_3$ as bases and three other segments of lengths $b_1,b_2,b_3$ as heights (in some order) to construct three rectangles of equal area?"
         },
         {
           "day": 1,
@@ -1239,7 +1239,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "A number $x$ is Tlahuica if there exist primes $p_1, p_2, \\ldots, p_k$ such that $x = \\frac{1}{p_1} + \\frac{1}{p_2} + \\cdots + \\frac{1}{p_k}$. Find the largest Tlahuica $x$ with $0 < x < 1$ such that there exists a positive integer $m \\leq 2022$ with $mx$ an integer."
+          "problem": "A number $x$ is called Tlahuica if there exist distinct positive primes $p_1,p_2,\\ldots,p_k$ such that $$x=\\frac{1}{p_1}+\\frac{1}{p_2}+\\cdots+\\frac{1}{p_k}.$$ Determine the largest Tlahuica number $x$ that satisfies both of the following properties: (1) $0<x<1$; (2) there exists an integer $0<m\\leq 2022$ such that $mx$ is an integer."
         },
         {
           "number": 2,
@@ -1309,12 +1309,12 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Determine all pairs $(a, b)$ of integers satisfying: (1) $5 \\leq b < a$; (2) there exists a natural number $n$ such that $ab$ and $a - b$ are consecutive divisors of $n$ in that order."
+          "problem": "Determine all pairs $(a,b)$ of integers that satisfy: (1) $5\\leq b<a$; (2) there exists a natural number $n$ such that the numbers $\\frac{a}{b}$ and $a-b$ are consecutive divisors of $n$, in that order. (Two positive integers $x$, $y$ are consecutive divisors of $m$, in that order, if there is no divisor $d$ of $m$ with $x<d<y$.)"
         },
         {
           "day": 1,
           "number": 3,
-          "problem": "Let $ABCDEF$ be a convex hexagon with midpoints $A_1, B_1, C_1, D_1, E_1, F_1$ of sides $AB, BC, CD, DE, EF, FA$. Construct $A_2, B_2, C_2, D_2, E_2, F_2$ in the interior of $A_1B_1C_1D_1E_1F_1$ such that: (1) all sides of the 12-gon $A_2A_1B_2B_1C_2C_1D_2D_1E_2E_1F_2F_1$ are equal; (2) $\\angle A_1B_2B_1 + \\angle C_1D_2D_1 + \\angle E_1F_2F_1 = \\angle B_1C_2C_1 + \\angle D_1E_2E_1 + \\angle F_1A_2A_1 = 360^\\circ$. Prove that $A_2B_2C_2D_2E_2F_2$ is cyclic."
+          "problem": "Let $ABCDEF$ be a convex hexagon and let $A_1$, $B_1$, $C_1$, $D_1$, $E_1$, $F_1$ be the midpoints of $AB$, $BC$, $CD$, $DE$, $EF$, $FA$, respectively. Points $A_2$, $B_2$, $C_2$, $D_2$, $E_2$, $F_2$ are constructed in the interior of $A_1B_1C_1D_1E_1F_1$ such that: (1) the dodecagon $A_2A_1B_2B_1C_2C_1D_2D_1E_2E_1F_2F_1$ has its $12$ sides equal; (2) $\\angle A_1B_2B_1+\\angle C_1D_2D_1+\\angle E_1F_2F_1=\\angle B_1C_2C_1+\\angle D_1E_2E_1+\\angle F_1A_2A_1=360^\\circ$, where all these angles are less than $180^\\circ$. Prove that $A_2B_2C_2D_2E_2F_2$ is cyclic. (The dodecagon has the shape of a six-pointed star whose points are $A_1$, $B_1$, $C_1$, $D_1$, $E_1$, $F_1$.)"
         },
         {
           "day": 2,
@@ -1354,7 +1354,7 @@
         {
           "day": 2,
           "number": 4,
-          "problem": "Lalo has a magical net of 20 vertices and some edges. He places ants one by one on vertices; each ant walks on edges (which disappear as traversed), and Lalo removes each ant after it reaches some vertex. He has $n$ ants, each traversing at least one edge, no two traversing the same number of edges, and together covering all edges. What is the maximum number of edges one ant could traverse?"
+          "problem": "Lalo was given a magic net, like the one shown in the figure. The net consists of $20$ vertices joined by some edges. Lalo places ants, one at a time, on the vertices of the net. The ants walk along the edges, and as they do so, each edge they traverse disappears. Lalo has $n$ ants and plays by placing them as follows: (1) He places an ant on a vertex and it walks freely until Lalo decides to remove it on arriving at some vertex; then he places the next ant. (2) Each ant traverses at least one edge. (3) No three ants traverse the same number of edges of the magic net. Lalo used each of his ants exactly once, and at the end the magic net had disappeared completely. What is the largest number of edges that one of Lalo's ants could have traversed?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/mexico_2025_p4_fig.png"
         },
         {
           "day": 2,

@@ -174,11 +174,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $\\mathcal{P}$ be the parabola $y^2=2px$, and let $T_0$ be a point on it. The point $T_0'$ is such that the midpoint of the segment $T_0T_0'$ lies on the axis of the parabola. For a variable point $T$ on $\\mathcal{P}$, the perpendicular from $T_0'$ to the line $T_0T$ meets the line through $T$ parallel to the axis of $\\mathcal{P}$ at a point $T'$. Find the locus of $T'$."
+          "problem": "A point $T_0$ on the parabola $\\mathcal{P}$ with equation $y^2=2px$ is given, together with a point $T_0'$ such that the midpoint of the segment $\\overline{T_0T_0'}$ lies on the axis of the parabola $\\mathcal{P}$. For a variable point $T$ on $\\mathcal{P}$, different from $T_0$ and from the point symmetric to $T_0$ with respect to the axis of the parabola, the perpendicular from the point $T_0'$ to the line $T_0T$ meets the line through $T$ parallel to the axis of the parabola at a point $T'$. What is the locus of the point $T'$?"
         },
         {
           "number": 2,
-          "problem": "Let $ABC$ be a triangle with $AB=AC$. A circle $S$ with centre on the side $BC$ is tangent to the sides $AB$ and $AC$. Let $P$ and $Q$ be points on the sides $AB$ and $AC$, respectively, such that $PQ$ is tangent to $S$. Show that $$PB\\cdot CQ=\\left(\\frac{BC}{2}\\right)^2.$$"
+          "problem": "The legs of an isosceles triangle $ABC$ touch a circle whose centre lies on the base $\\overline{BC}$ of the triangle. Points $P$ and $Q$ lie on the sides $\\overline{AB}$ and $\\overline{AC}$, respectively. Prove that $$|PB|\\cdot|CQ|=\\left(\\frac{1}{2}|BC|\\right)^2$$ if and only if $PQ$ is tangent to the given circle."
         },
         {
           "number": 3,
@@ -195,7 +195,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "On the unit circle $k$ with centre $O$, points $A$ and $B$ with $AB=1$ are chosen, and unit circles $k_1$ and $k_2$ with centres $A$ and $B$ are drawn. A sequence of circles $(l_n)$ is defined as follows: the circle $l_1$ is internally tangent to $k$ at $D_1$ and externally tangent to $k_1$ and $k_2$, and for $n>1$ the circle $l_n$ is tangent to $k_1$ and $k_2$ and to $l_{n-1}$ at $D_n$. For each $n$, compute $d_n=OD_n$ and the radius $r_n$ of $l_n$."
+          "problem": "In the figure, arcs of six further circles of the same radius are drawn inside the circle with centre $O$ and radius $1$. In the region between two adjacent “petals” a sequence of circles with radii $r_1,r_2,r_3,\\ldots$ is inscribed; these circles touch the initial circle and the neighbouring circles of the sequence at the points $D_1,D_2,D_3,\\ldots$, respectively. For every $n$ compute the radius $r_n$ and the length $d_n=|OD_n|$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/croatia_2001_p1_fig.png"
         },
         {
           "number": 2,
@@ -203,7 +203,7 @@
         },
         {
           "number": 3,
-          "problem": "Let $p_1,p_2,p_3,p_4$ be four distinct primes, and let $1=d_1<d_2<\\ldots<d_{16}=n$ be the divisors of $n=p_1p_2p_3p_4$. Determine all $n<2001$ with the property that $d_9-d_8=22$."
+          "problem": "Let $n=p_1p_2p_3p_4$, where $p_1,p_2,p_3,p_4$ are four distinct primes. Its positive divisors are $$1=d_1<d_2<d_3<\\cdots<d_{15}<d_{16}=n.$$ Does there exist $n<2001$ such that $d_9-d_8=22$?"
         },
         {
           "number": 4,
