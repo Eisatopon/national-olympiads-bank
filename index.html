@@ -293,6 +293,8 @@
     --rur10: #831843; --rur10-ink: #560f2b; --rur10-tint: #fae1eb;
     --caco: #be123c; --caco-ink: #7f0c28; --caco-tint: #fbe3e9;
     --caeu: #9f1239; --caeu-ink: #6a0c26; --caeu-tint: #fae1e8;
+    --totj: #0e7490; --totj-ink: #0a4f62; --totj-tint: #dcf1f6;
+    --emcj: #4d7c0f; --emcj-ink: #33520a; --emcj-tint: #ecf5dc;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -521,6 +523,8 @@
 .f-rur10 { --f: var(--rur10); --f-ink: var(--rur10-ink); --f-tint: var(--rur10-tint); }
 .f-caco { --f: var(--caco); --f-ink: var(--caco-ink); --f-tint: var(--caco-tint); }
 .f-caeu { --f: var(--caeu); --f-ink: var(--caeu-ink); --f-tint: var(--caeu-tint); }
+.f-totj { --f: var(--totj); --f-ink: var(--totj-ink); --f-tint: var(--totj-tint); }
+.f-emcj { --f: var(--emcj); --f-ink: var(--emcj-ink); --f-tint: var(--emcj-tint); }
 
 /* ==========================================================
    Base
@@ -1049,7 +1053,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-ukraine-official';
+const DATA_VERSION = '20261017-tot-emc-junior';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1254,6 +1258,8 @@ REGION_OF.rur9 = 'europe';
 REGION_OF.rur10 = 'europe';
 REGION_OF.caco = 'americas';
 REGION_OF.caeu = 'americas';
+REGION_OF.totj = 'world';
+REGION_OF.emcj = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1422,7 +1428,8 @@ const COUNTRIES = [
     { key: 'igoi', name: 'IGO Intermediate', flag: '🌐', file: 'IGO-intermediate-problems.json', kind: 'years', scope: 'international', group: 'IGO', groupName: 'Iranian Geometry (IGO)', sub: 'Intermediate', full: "Iranian Geometry Olympiad (Intermediate level)" },
     { key: 'igoe', name: 'IGO Elementary', flag: '🌐', file: 'IGO-elementary-problems.json', kind: 'years', scope: 'international', group: 'IGO', groupName: 'Iranian Geometry (IGO)', sub: 'Elementary', full: "Iranian Geometry Olympiad (Elementary level)" },
     { key: 'iom', name: 'Metropolises (IOM)', flag: '🌐', file: 'IOM-problems.json', kind: 'years', scope: 'international', full: "International Olympiad of Metropolises (Mathematics)" },
-    { key: 'tot', name: 'Tournament of Towns', flag: '🌐', file: 'Tournament-of-towns-problems.json', kind: 'years', scope: 'international', full: "Tournament of Towns (Senior, A-level)" },
+    { key: 'tot', name: 'Tournament of Towns', flag: '🌐', file: 'Tournament-of-towns-problems.json', kind: 'years', scope: 'international', group: 'TOT', groupName: 'Tournament of Towns', sub: 'Senior A-level', full: "Tournament of Towns (Senior, A-level)" },
+    { key: 'totj', name: 'Tournament of Towns Junior', flag: '🌐', file: 'Tournament-of-towns-junior-problems.json', kind: 'years', scope: 'international', group: 'TOT', groupName: 'Tournament of Towns', sub: 'Junior A-level', full: "Tournament of Towns, Junior A-level" },
     { key: 'tuy', name: 'Tuymaada (senior)', flag: '🌐', file: 'Tuymaada-senior-problems.json', kind: 'years', scope: 'international', full: "Tuymaada International Olympiad (Senior League)" },
     { key: 'apmo', name: 'APMO', flag: '🌏', file: 'APMO-problems.json', kind: 'years', scope: 'regional', full: 'Asian Pacific Mathematics Olympiad' },
     { key: 'bw', name: 'Baltic Way', flag: '🌊', file: 'Baltic-way-problems.json', kind: 'years', scope: 'regional' },
@@ -1439,7 +1446,8 @@ const COUNTRIES = [
     { key: 'cono', name: 'Cono Sur MO', flag: '🌎', file: 'Cono-sur-problems.json', kind: 'years', scope: 'regional' },
     { key: 'cmo', name: 'Caucasus MO', flag: '🌍', file: 'Caucasus-mo-problems.json', kind: 'years', scope: 'regional', full: "Caucasus Mathematical Olympiad (Senior)" },
     { key: 'med', name: 'Mediterranean MO', flag: '🌊', file: 'Mediterranean-problems.json', kind: 'years', scope: 'regional', full: "Mediterranean Mathematical Olympiad (Peter O'Halloran Memorial)" },
-    { key: 'emc', name: 'European Math Cup', flag: '🌍', file: 'EMC-senior-problems.json', kind: 'years', scope: 'regional', full: "European Mathematical Cup (Senior category)" },
+    { key: 'emc', name: 'European Math Cup', flag: '🌍', file: 'EMC-senior-problems.json', kind: 'years', scope: 'regional', group: 'EMC', groupName: 'European Math Cup', sub: 'Senior', full: "European Mathematical Cup (Senior category)" },
+    { key: 'emcj', name: 'European Math Cup Junior', flag: '🌍', file: 'EMC-junior-problems.json', kind: 'years', scope: 'regional', group: 'EMC', groupName: 'European Math Cup', sub: 'Junior', full: "European Mathematical Cup, Junior category" },
     { key: 'srmc', name: 'Silk Road', flag: '🌏', file: 'Silk-Road-problems.json', kind: 'years', scope: 'regional', full: 'Silk Road Mathematics Competition' },
     { key: 'pamo', name: 'Pan-African MO', flag: '🌍', file: 'Pan-African-problems.json', kind: 'years', scope: 'regional' },
     { key: 'hmmt', name: 'HMMT February Team', flag: '🇺🇸', file: 'HMMT-february-team-problems.json', kind: 'years', scope: 'tournaments', group: 'HMMT' },
