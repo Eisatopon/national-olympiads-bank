@@ -52,7 +52,7 @@
         {
           "day": 1,
           "number": 3,
-          "problem": "In a country with $n + 1$ cities, two-way flights are operated between some of the cities. A two-way flight between cities $A$ and $B$ means flights from $A$ to $B$ and from $B$ to $A$ on the same day, and there is no one-way flight from one city to another without the return flight. Between two cities, at most one two-way flight can be operated on the same day. For a city $A$, let $d_A$ be the number of flights leaving $A$ in a day. For all cities $A$ other than the capital, $d_A \\le n$, and for any two cities $A$, $B$ other than the capital that are not connected by a two-way flight, $d_A + d_B \\le n$. There is no restriction on the number of flights leaving the capital, which is one of the $n + 1$ cities, in a day. Determine the maximum number of two-way flights that can be operated in this country in a day, and all flight schedules that attain this maximum."
+          "problem": "In a country with $n + 1$ cities, two-way flights are operated between some of the cities. A two-way flight between cities $A$ and $B$ means flights from $A$ to $B$ and from $B$ to $A$ on the same day, and there is no one-way flight from one city to another without the return flight. More than one two-way flight may be operated between two cities on the same day. For a city $A$, let $d_A$ be the number of flights leaving $A$ in a day. For all cities $A$ other than the capital, $d_A \\le n$, and for any two cities $A$, $B$ other than the capital that are not connected by a two-way flight, $d_A + d_B \\le n$. There is no restriction on the number of flights leaving the capital, which is one of the $n + 1$ cities, in a day. Determine the maximum number of two-way flights that can be operated in this country in a day, and all flight schedules that attain this maximum."
         },
         {
           "day": 2,
@@ -222,7 +222,7 @@
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $P$ be a point in the interior of triangle $ABC$, on the median from vertex $A$, such that $\\angle CAP = \\angle BCP$. Let $BP \\cap CA = \\{B'\\}$ and $CP \\cap AB = \\{C'\\}$. Let $AP$ meet the circumcircle of $ABC$ again at $Q$, let $B'Q$ and $CC'$ meet at $R$, and let $B'Q$ meet the line through $P$ parallel to $AC$ at $S$. Let the lines $B'C'$ and $QB$ meet at a point $T$ lying on the opposite side of the line $AB$ from $C$. Prove that $\\angle BAT = \\angle BB'Q$ if and only if $|SQ| = |RB'|$."
+          "problem": "Let $P$ be a point in the interior of triangle $ABC$, not lying on the median from vertex $A$, such that $\\angle CAP = \\angle BCP$. Let $BP \\cap CA = \\{B'\\}$ and $CP \\cap AB = \\{C'\\}$. Let $AP$ meet the circumcircle of $ABC$ again at $Q$, let $B'Q$ and $CC'$ meet at $R$, and let $B'Q$ meet the line through $P$ parallel to $AC$ at $S$. Let the lines $B'C'$ and $QB$ meet at a point $T$ lying on the opposite side of the line $AB$ from $C$. Prove that $\\angle BAT = \\angle BB'Q$ if and only if $|SQ| = |RB'|$."
         },
         {
           "day": 1,
@@ -242,7 +242,7 @@
         {
           "day": 2,
           "number": 6,
-          "problem": "Let $K$ be the set of the sides and vertices of a convex $2010$-gon in the plane. A subset $A$ of $K$ is called intersecting if every pair of segments belonging to $A$ intersect. Determine the maximum number of elements that the union of two intersecting sets can have."
+          "problem": "Let $K$ be the set of the sides and diagonals of a convex $2010$-gon in the plane. A subset $A$ of $K$ is called intersecting if every pair of segments belonging to $A$ intersect. Determine the maximum number of elements that the union of two intersecting sets can have."
         }
       ]
     },
@@ -427,7 +427,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "For a wedding in village $A$, famous for its $25$ kinds of dishes, where $2017$ people live, some people from the neighbouring village $B$ will be invited. Every person in village $B$ likes at least one of these $25$ dishes, and for every dish there is at least one person in village $B$ who likes it. A set of people invited to the wedding is called a suitable guest list if every dish is liked by at least one invited person. A set is called a circle group if it contains at least one element of every suitable guest list. Prove that in every circle group that has no proper subset which is a circle group, there is a dish liked by everyone in the group."
+          "problem": "For a wedding to be held in village $A$, famous for its $25$ kinds of dishes, some people will be invited from the neighbouring village $B$, where $2017$ people live. Every person in village $B$ likes at least one of these $25$ dishes, and for every dish there is at least one person in village $B$ who likes it. A set of people invited to the wedding is called a suitable guest list if every dish is liked by at least one invited person. A set is called a circle group if it contains at least one element of every suitable guest list. Prove that in every circle group that has no proper subset which is a circle group, there is a dish liked by everyone in the group."
         },
         {
           "day": 1,
@@ -482,7 +482,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "The positive integers $a_1, a_2, a_3, a_4$ are arranged around a circle so that any two neighbours are relatively prime. At most how many ordered triples $(i, j, k)$ with $i, j, k \\in \\{1, 2, 3, 4\\}$, $i \\ne j$, $j \\ne k$, $k \\ne i$ can satisfy $\\left(\\gcd(a_i, a_j)\\right)^2 \\mid a_k$?"
+          "problem": "The positive integers $a_1, a_2, a_3, a_4$ cannot be arranged around a circle so that any two neighbours are relatively prime. At most how many ordered triples $(i, j, k)$ with $i, j, k \\in \\{1, 2, 3, 4\\}$, $i \\ne j$, $j \\ne k$, $k \\ne i$ can satisfy $\\left(\\gcd(a_i, a_j)\\right)^2 \\mid a_k$?"
         },
         {
           "day": 2,
