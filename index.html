@@ -291,6 +291,8 @@
     --atg: #b91c1c; --atg-ink: #7a1212; --atg-tint: #fbe3e3;
     --rur9: #9d174d; --rur9-ink: #650f32; --rur9-tint: #fbe3ee;
     --rur10: #831843; --rur10-ink: #560f2b; --rur10-tint: #fae1eb;
+    --caco: #be123c; --caco-ink: #7f0c28; --caco-tint: #fbe3e9;
+    --caeu: #9f1239; --caeu-ink: #6a0c26; --caeu-tint: #fae1e8;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -517,6 +519,8 @@
 .f-atg { --f: var(--atg); --f-ink: var(--atg-ink); --f-tint: var(--atg-tint); }
 .f-rur9 { --f: var(--rur9); --f-ink: var(--rur9-ink); --f-tint: var(--rur9-tint); }
 .f-rur10 { --f: var(--rur10); --f-ink: var(--rur10-ink); --f-tint: var(--rur10-tint); }
+.f-caco { --f: var(--caco); --f-ink: var(--caco-ink); --f-tint: var(--caco-tint); }
+.f-caeu { --f: var(--caeu); --f-ink: var(--caeu-ink); --f-tint: var(--caeu-tint); }
 
 /* ==========================================================
    Base
@@ -1045,7 +1049,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-danube-austria-russia-regional';
+const DATA_VERSION = '20261017-canada-comc-euclid';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1248,6 +1252,8 @@ REGION_OF.dan = 'europe';
 REGION_OF.atg = 'europe';
 REGION_OF.rur9 = 'europe';
 REGION_OF.rur10 = 'europe';
+REGION_OF.caco = 'americas';
+REGION_OF.caeu = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1263,6 +1269,8 @@ const COUNTRIES = [
     { key: 'uk2', name: 'UK BMO2',   flag: '🇬🇧', file: 'Uk-bmo2-problems.json',          kind: 'years' },
     { key: 'ca', name: 'Canada',     flag: '🇨🇦', file: 'Canada-cmo-problems.json',       kind: 'years' },
     { key: 'caq', name: 'Canada Repêchage', flag: '🇨🇦', file: 'Canada-repechage-problems.json', kind: 'years', full: "Canadian Mathematical Olympiad Qualifying Rep\u00eachage (CMOQR)" },
+    { key: 'caco', name: 'Canada COMC', flag: '🇨🇦', file: 'Canada-comc-problems.json', kind: 'years', full: "Canadian Open Mathematics Challenge (COMC)" },
+    { key: 'caeu', name: 'Canada Euclid', flag: '🇨🇦', file: 'Canada-euclid-problems.json', kind: 'years', full: "CEMC Euclid Mathematics Contest (University of Waterloo)" },
     { key: 'ie', name: 'Ireland',    flag: '🇮🇪', file: 'Ireland-irmo-problems.json',     kind: 'years' },
     { key: 'in', name: 'India',      flag: '🇮🇳', file: 'India-inmo-problems.json',       kind: 'years' },
     { key: 'kr', name: 'S. Korea KMO', flag: '🇰🇷', file: 'Korea-kmo-problems.json',        kind: 'years' },
