@@ -533,7 +533,11 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .hero { background: var(--ink); color: #fff; overflow: hidden; }
 /* Until the grid is built (init), keep what it pushes down invisible, so nothing jumps on phones. */
 .booting .hero > .wrap:last-child, .booting #main, .booting .footer, .booting #statUpdated { visibility: hidden; }
-.brandbar { padding-top: 18px; padding-bottom: 4px; }
+.brandbar { padding-top: 18px; padding-bottom: 4px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.subjects { display: flex; gap: 8px; flex-wrap: wrap; }
+.subj { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; color: #fff; text-decoration: none; font-size: .88rem; font-weight: 600; background: rgba(255,255,255,.06); transition: background .15s, border-color .15s; }
+.subj span { font-size: 1rem; line-height: 1; }
+.subj:hover, .subj:focus-visible { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.6); }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; }
 .logo { width: 32px; height: 32px; flex: 0 0 auto; display: block; }
 
@@ -812,6 +816,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
 @media (max-width: 820px) {
     .hero-body { grid-template-columns: minmax(0, 1fr); gap: 14px; }
     .stats { justify-content: flex-start; }
+    .subjects { gap: 6px; }
+    .subj { padding: 5px 10px; font-size: .8rem; }
     .stat { text-align: left; }
 }
 @media (max-width: 640px) {
@@ -858,6 +864,12 @@ dialog p { color: var(--muted); font-size: .92rem; }
 <header class="hero">
     <div class="wrap brandbar">
         <a class="brand" href="https://eisatopon.gr" target="_top" aria-label="eisatopon.gr"><img class="logo" src="assets/eisatopon-logo.png" width="32" height="32" alt=""><span>eisatopon.gr</span></a>
+        <nav class="subjects" aria-label="Other olympiad banks">
+            <a class="subj" href="physics.html"><span aria-hidden="true">⚛</span>Physics</a>
+            <a class="subj" href="chemistry.html"><span aria-hidden="true">⚗</span>Chemistry</a>
+            <a class="subj" href="informatics.html"><span aria-hidden="true">⌨</span>Informatics</a>
+            <a class="subj" href="biology.html"><span aria-hidden="true">🧬</span>Biology</a>
+        </nav>
     </div>
 
     <div class="wrap hero-body">
