@@ -32,15 +32,15 @@
       "problems": [
         {
           "number": 1,
-          "problem": "A0A1. . . A nis a regular polygon with n+1vertices ( n > 2). Initially nstones are placed at vertex A0. In each allowed operation, 2stones are moved simultaneously, at the player’s choice: each stone is moved from the vertex where it is located to one of the adjacent 2vertices. Find all the values of nfor which it is possible to have, after a succession of permitted operations, a stone at each of the vertices A1, A2, . . . , A n. Clarification: The two stones that move in an allowed operation can be at the same vertex or at different vertices."
+          "problem": "$A_0A_1\\ldots A_n$ is a regular polygon with $n+1$ vertices ($n>2$). Initially $n$ stones are placed at the vertex $A_0$. In each allowed operation, $2$ stones, chosen by the player, are moved simultaneously: each stone is moved from the vertex where it is to one of the $2$ adjacent vertices. Find all values of $n$ for which it is possible to have, after a sequence of allowed operations, one stone at each of the vertices $A_1, A_2, \\ldots, A_n$.\n\nClarification: The two stones moved in an allowed operation may be at the same vertex or at different vertices."
         },
         {
           "number": 2,
-          "problem": "For each positive integer nletp(n)be the number of ordered pairs (x, y)of positive integers such that1 x+1 y=1 n. For example, for n= 2the pairs are (3,6),(4,4),(6,3). Therefore p(2) = 3 . a) Determine p(n)for all nand calculate p(1995) . b) Determine all pairs nsuch that p(n) = 3 ."
+          "problem": "For each positive integer $n$ let $p(n)$ be the number of ordered pairs $(x, y)$ of positive integers such that $$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{n}.$$ For example, for $n = 2$ the pairs are $(3,6)$, $(4,4)$, $(6,3)$. Therefore $p(2) = 3$.\n\na) Determine $p(n)$ for every $n$ and compute $p(1995)$.\n\nb) Determine all even $n$ such that $p(n) = 3$."
         },
         {
           "number": 3,
-          "problem": "Let ABCD be a parallelogram, and P a point such that 2PDA =ABP and 2PAD =PCD Show that AB =BP =CP"
+          "problem": "Let $ABCD$ be a parallelogram and $P$ a point such that $$2\\angle PDA = \\angle ABP \\quad \\text{and} \\quad 2\\angle PAD = \\angle PCD.$$ Prove that $AB = BP = CP$."
         },
         {
           "number": 4,
@@ -48,11 +48,11 @@
         },
         {
           "number": 5,
-          "problem": "Leta, bbe real numbers such that the equation x3+√ 3(a−1)x2−6ax+b= 0 has three real roots. Prove that |b| ≤ |a+ 1|3. ¿Clarification: |x|indicates the absolute value of x. For example, |5|= 5;| −1.23|= 1.23; etc"
+          "problem": "Let $a, b$ be real numbers such that the equation $$x^3 + \\sqrt{3}(a-1)x^2 - 6ax + b = 0$$ has three real roots. Prove that $|b| \\leq |a+1|^3$.\n\nClarification: $|x|$ denotes the absolute value of $x$. For example, $|5| = 5$, $|-1{,}23| = 1{,}23$, etc."
         },
         {
           "number": 6,
-          "problem": "The 27points (a, b, c )of the space are marked such that a,bandctake the values 0,1or2. We will call these points ”junctures”. Using 54rods of length 1, all the joints that are at a distance of 1are joined together. A cubic structure of 2×2×2is thus formed. An ant starts from a juncture Aand moves along the rods; When it reaches a juncture it turns 90◦and changes rod. If the ant returns to Aand has not visited any juncture more than once except A, which it visited 2times, at the beginning of the walk and at the end of it, what is the greatest length that the path of the ant can have?"
+          "problem": "The $27$ points $(a, b, c)$ of space such that $a$, $b$ and $c$ take the values $0$, $1$ or $2$ are marked. We will call these points \"joints\". Using $54$ rods of length $1$, all the joints at distance $1$ from each other are joined. A $2 \\times 2 \\times 2$ cubic structure is thus formed. An ant starts from a joint $A$ and moves along the rods; when it reaches a joint it turns $90$ degrees and changes rod. If the ant returns to $A$ and has not visited any joint more than once except $A$, which it visited twice, at the beginning and at the end of the walk, what is the greatest length the ant's path can have?"
         }
       ]
     },
@@ -69,19 +69,19 @@
         },
         {
           "number": 3,
-          "problem": "The non-regular hexagon ABCDEF is inscribed on a circle of center OandAB=CD=EF. If diagonals ACandBD intersect at M, diagonals CEandDFintersect at N, and diagonals AEandBFintersect at K, show that the heights of triangle MNK intersect at O."
+          "problem": "The non-regular hexagon $ABCDEF$ is inscribed in a circle with center $O$, and $AB = CD = EF$. If the diagonals $AC$ and $BD$ meet at $M$, the diagonals $CE$ and $DF$ meet at $N$, and the diagonals $AE$ and $BF$ meet at $K$, prove that the altitudes of triangle $MNK$ meet at $O$."
         },
         {
           "number": 4,
-          "problem": "LetABCD be a parallelogram with center Osuch that ∠BAD < 90oand∠AOB > 90o. Consider points A1andB1on the rays OAandOBrespectively, such that A1B1is parallel to ABand ∠A1B1C=1 2∠ABC . Prove that A1Dis perpendicular to B1C."
+          "problem": "Let $ABCD$ be a parallelogram with sides $AB$, $BC$, $CD$, $DA$ and center $O$ such that $\\angle BAD < 90^\\circ$ and $\\angle AOB > 90^\\circ$. Consider points $A_1$ and $B_1$ on the rays $OA$ and $OB$ respectively, such that $A_1B_1$ is parallel to $AB$ and $\\angle A_1B_1C = \\dfrac{\\angle ABC}{2}$. Prove that $A_1D$ is perpendicular to $B_1C$."
         },
         {
           "number": 5,
-          "problem": "Determine all positive real numbers xfor which [x] +h√ 1996xi = 1996 is verified Clarification:The brackets indicate the integer part of the number they enclose."
+          "problem": "Determine all positive real numbers $x$ for which $$[x] + \\left[\\sqrt{1996x}\\right] = 1996.$$ Clarification: the brackets denote the integer part of the number they enclose; for example, $[2{,}16] = 2$, $[5] = 5$, $[\\sqrt{2}] = 1$."
         },
         {
           "number": 6,
-          "problem": "In a tennis tournament of 10players, everyone played against everyone once. In this tournament, if player iwon the match against player j, then the total number of matches ilost plus the total number of matches jwon is greater than or equal to 8. We will say that three players i,j,kform anatypical tri o ifibeatj,jbeatkandkbeati. Prove that in the tournament there were exactly 40atypical trios."
+          "problem": "In a tennis tournament with $10$ players, everyone played against everyone else once. In this tournament, if player $i$ won the match against player $j$, then the total number of matches that $i$ lost plus the total number of matches that $j$ won is greater than or equal to $8$. We say that three players $i$, $j$, $k$ form an atypical trio if $i$ beat $j$, $j$ beat $k$ and $k$ beat $i$. Prove that in the tournament there were exactly $40$ atypical trios."
         }
       ]
     },
@@ -90,27 +90,27 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Letsandtbe two parallel lines. We have marked kpoints on line sandnpoints on line t(k≥n). If it is known that the total number of triangles that have their three vertices at marked points is220, find all possible values of kandn."
+          "problem": "Let $s$ and $t$ be two parallel lines. We have marked $k$ points on the line $s$ and $n$ points on the line $t$ ($k \\geq n$). If it is known that the total number of triangles having their three vertices at marked points is $220$, find all possible values of $k$ and $n$."
         },
         {
           "number": 2,
-          "problem": "LetABC be a triangle and Mbe the midpoint of AB. If it is known that ∠CAM +∠MCB = 90o, show that triangle ABC is isosceles or right."
+          "problem": "Let $ABC$ be a triangle and $M$ the midpoint of $AB$. If it is known that $\\angle CAM + \\angle MCB = 90^\\circ$, prove that triangle $ABC$ is isosceles or right-angled."
         },
         {
           "number": 3,
-          "problem": "Letx1, x2, x3, . . . , x 100be one hundred real numbers greater than or equal to 0and less than or equal to 1. Find the maximum possible value of the sum S=x1(1−x2) +x2(1−x3) +x3(1−x4) +···+x99(1−x100) +x100(1−x1)."
+          "problem": "Let $x_1, x_2, x_3, \\ldots, x_{100}$ be one hundred real numbers greater than or equal to $0$ and less than or equal to $1$. Find the maximum possible value of the sum $$S = x_1(1-x_2) + x_2(1-x_3) + x_3(1-x_4) + \\cdots + x_{99}(1-x_{100}) + x_{100}(1-x_1).$$"
         },
         {
           "number": 4,
-          "problem": "The first 1997 natural numbers are written on the blackboard: 1,2,3, . . . , 1997 . In front of each number, a ” +” sign or a ” −” sign will be written in order, from left to right. To decide each sign, a coin is tossed; If it comes up heads, you write ” +”, if it comes up tails, you write ” −”. Once the 1997 signs are written, the algebraic sum of the expression on the blackboard is carried out and the result is S. What is the probability that Sis greater than 0? Clarification: The probability of an event is equal to the number of favorable cases/number of possible cases."
+          "problem": "The first $1997$ natural numbers are written on the blackboard: $1, 2, 3, \\ldots, 1997$. In front of each number a sign \"$+$\" or a sign \"$-$\" will be written, in order, from left to right. To decide each sign, a coin is tossed; if it comes up heads, \"$+$\" is written, if it comes up tails, \"$-$\" is written. Once the $1997$ signs are written, the algebraic sum of the expression on the blackboard is computed and the result is $S$. What is the probability that $S$ is greater than $0$?\n\nClarification: The probability of an event is equal to $$\\frac{\\text{number of favourable cases}}{\\text{number of possible cases}}.$$"
         },
         {
           "number": 5,
-          "problem": "Given two non-parallel segments ABandCD on the plane, find the locus of points Pon the plane such that the area of triangle ABP is equal to the area of triangle CDP ."
+          "problem": "Given two non-parallel segments $AB$ and $CD$ in the plane, find the locus of the points $P$ of the plane such that the area of triangle $ABP$ is equal to the area of triangle $CDP$."
         },
         {
           "number": 6,
-          "problem": "Decide if there are ten natural and distinct numbers a1, a2, . . . , a 10such that: •Each of them is a power of a natural number with a natural exponent and greater than 1.•The numbers a1, a2, . . . , a 10form an arithmetic progression."
+          "problem": "Decide whether there exist ten distinct natural numbers $a_1, a_2, \\ldots, a_{10}$ such that\n\n(i) each of them is a power of a natural number with natural exponent greater than $1$, and moreover\n\n(ii) the numbers $a_1, a_2, \\ldots, a_{10}$ form an arithmetic progression."
         }
       ]
     },
@@ -119,27 +119,27 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Jorge writes a list with an even number of integers, not all equal to 0(there may be repeated numbers). Show that Martin can cross out a number from the list, of his choice, so that it is impossible for Jorge to separate the remaining numbers into two groups in such a way that the sum of all the numbers in one group is equal to the sum of all the others. numbers from the other group."
+          "problem": "Jorge writes a list with an even number of integers, not all equal to $0$ (there may be repeated numbers). Prove that Martín can cross out one number of the list, of his choice, so that it is impossible for Jorge to split the remaining numbers into two groups in such a way that the sum of all the numbers of one group equals the sum of all the numbers of the other group."
         },
         {
           "number": 2,
-          "problem": "Let a quadrilateral ABCD have an inscribed circle and let K, L, M, N be the tangency points of the sides AB, BC, CD andDA, respectively. Consider the orthocenters of each of the triangles △AKN, △BLK, △CML and△DNM . Prove that these four points are the vertices of a parallelogram."
+          "problem": "Let $ABCD$ be a quadrilateral that has an inscribed circle, and let $K$, $L$, $M$, $N$ be the points of tangency of the sides $AB$, $BC$, $CD$ and $DA$, respectively. In each of the triangles $AKN$, $BLK$, $CML$ and $DNM$ we consider the point of intersection of the altitudes (that is, the orthocenter of the triangle). Prove that these four points are the vertices of a parallelogram."
         },
         {
           "number": 3,
-          "problem": "Given two integers m≥2andn≥2we consider two types of sequences of length m·nformed exclusively by 0and 1 TYPE 1 sequences are all those that verify the following two conditions: •akak+m= 0for all k= 1,2,3, ...•Ifakak+1= 1, then kis a multiple of m. TYPE 2 sequences are all those that verify the following two conditions: •akak+n= 0for all k= 1,2,3, ...•Ifakak+1= 1, then kis a multiple of n. Prove that the number of sequences of type 1 is equal to the number of sequences of type 2."
+          "problem": "Given two integers $m \\geq 2$ and $n \\geq 2$, we consider two types of sequences $a_1, a_2, \\ldots$ of length $m \\cdot n$ formed exclusively by $0$ and $1$.\n\nThe sequences of TYPE 1 are all those that satisfy the following two conditions:\n\n(i) $a_k \\cdot a_{k+m} = 0$ for every $k = 1, 2, 3, \\ldots$;\n\n(ii) if $a_k \\cdot a_{k+1} = 1$, then $k$ is a multiple of $m$.\n\nThe sequences of TYPE 2 are all those that satisfy the following two conditions:\n\n(i) $a_k \\cdot a_{k+n} = 0$ for every $k = 1, 2, 3, \\ldots$;\n\n(ii) if $a_k \\cdot a_{k+1} = 1$, then $k$ is a multiple of $n$.\n\nProve that the number of sequences of type 1 is equal to the number of sequences of type 2."
         },
         {
           "number": 4,
-          "problem": "Determine all possible values of the expression x−hx 2i −hx 3i −hx 6i by varying xin the real numbers. Clarification: The brackets indicate the integer part of the number they enclose."
+          "problem": "Determine all possible values of the expression $$x - \\left[\\frac{x}{2}\\right] - \\left[\\frac{x}{3}\\right] - \\left[\\frac{x}{6}\\right]$$ as $x$ varies over the real numbers.\n\nClarification: The brackets denote the integer part of the number they enclose."
         },
         {
           "number": 5,
-          "problem": "LetABC a right isosceles triangle with hypotenuse AB =√ 2. Determine the positions of the points X, Y, Z on the sides BC, CA, AB respectively so that the triangle XY Z is isosceles, right, and with minimum area."
+          "problem": "Let $ABC$ be an isosceles right triangle with hypotenuse $AB = \\sqrt{2}$. Determine the positions of the points $X$, $Y$, $Z$ on the sides $BC$, $CA$, $AB$, respectively, so that the triangle $XYZ$ is isosceles, right-angled, and of minimum area."
         },
         {
           "number": 6,
-          "problem": "Given nnon-negative real numbers, n≥3, such that the sum of the nnumbers is less than or equal to 3and the sum of the squares of the nnumbers is greater than or equal to 1, prove that among the nnumbers three can be chosen whose sum is greater than or equal to 1."
+          "problem": "Given $n$ non-negative real numbers, $n \\geq 3$, such that the sum of the $n$ numbers is less than or equal to $3$ and the sum of the squares of the $n$ numbers is greater than or equal to $1$, prove that among the $n$ numbers one can choose three whose sum is greater than or equal to $1$."
         }
       ]
     },
@@ -148,15 +148,15 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Three natural numbers greater than or equal to 2are written, not necessarily different, and from them a sequence is constructed using the following procedure: in each step, if the penultimate number written is a, the penultimate one is band the last one is c, it is written xsuch that x·c=a+b+ 186 . Determine all the possible values of the three numbers initially written so that when the process continues indefinitely all the written numbers are natural numbers greater than or equal to 2."
+          "problem": "Three natural numbers greater than or equal to $2$, not necessarily distinct, are written, and from them a sequence is built by the following procedure: at each step, if the antepenultimate number written is $a$, the penultimate is $b$ and the last is $c$, one writes $x$ such that $$x \\cdot c = a + b + 186.$$ Determine all possible values of the three numbers written initially so that, when the process continues indefinitely, all the numbers written are natural numbers greater than or equal to $2$."
         },
         {
           "number": 2,
-          "problem": "LetC1andC2be the outer circumferences of centers O1andO2, respectively. The two tangents to the circumference C2are drawn by O1, intersecting C1atPandP′. The two tangents to the circumference C1are drawn by O2, intersecting C2atQandQ′. Prove that the segment PP′is equal to the segment QQ′."
+          "problem": "Let $C_1$ and $C_2$ be exterior circles with centers $O_1$ and $O_2$, respectively. Through $O_1$ the two tangents to the circle $C_2$ are drawn, which meet $C_1$ at $P$ and $P'$. Through $O_2$ the two tangents to the circle $C_1$ are drawn, which meet $C_2$ at $Q$ and $Q'$. Prove that the segment $PP'$ is equal to the segment $QQ'$."
         },
         {
           "number": 3,
-          "problem": "In a trick tournament 2kpeople sign up. All possible matches are played with the condition that in each match, each of the four players knows his partner and does not know any of his two opponents. Determine the maximum number of matches that can be in such a tournament."
+          "problem": "In a truco tournament $2k$ people sign up. All possible matches are played, with the condition that in each match each of the four players knows his partner and does not know either of his two opponents. Determine the maximum number of matches there can be in such a tournament."
         },
         {
           "number": 4,
@@ -168,7 +168,7 @@
         },
         {
           "number": 6,
-          "problem": "We consider the set E of all fractions1 n, where nis a natural number. A maximal arithmetic progression of length kof the set E is an arithmetic progression of kterms such that all its terms belong to the set E, and it is impossible to extend it to the right or to the left with another element of E. For example,1 20,1 8,1 5, is an arithmetic progression in E of length 3, and it is maximal, since to extend it towards to the right you have to add11 40, which does not belong to E, and to extend it to the left you have to add−1 40which does not belong to E either. Prove that for every integer k > 2, there exists a maximal arithmetic progression of length kof the set E."
+          "problem": "We consider the set $E$ of all fractions $\\frac{1}{n}$, where $n$ is a natural number. A maximal arithmetic progression of length $k$ of the set $E$ is an arithmetic progression of $k$ terms such that all its terms belong to the set $E$, and it is impossible to extend it to the right or to the left with another element of $E$. For example, $\\frac{1}{20}, \\frac{1}{8}, \\frac{1}{5}$ is an arithmetic progression in $E$ of length $3$, and it is maximal, since to extend it to the right one has to add $\\frac{11}{40}$, which does not belong to $E$, and to extend it to the left one has to add $-\\frac{1}{40}$, which does not belong to $E$ either. Prove that for every integer $k > 2$ there exists a maximal arithmetic progression of length $k$ of the set $E$."
         }
       ]
     },
@@ -177,11 +177,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "The natural numbers are written in succession, forming a sequence of digits 12345678910111213141516171819202122232425262728293031 . . . Determine how many digits the natural number has that contributes to this sequence with the digit in position 102000. Clarification: The natural number that contributes to the sequence with the digit in position 10 has 2digits, because it is 10; The natural number that contributes to the sequence with the digit at position 102has 2digits, because it is 55."
+          "problem": "The natural numbers are written in succession, forming a sequence of digits $$12345678910111213141516171819202122232425262728293031\\ldots$$ Determine how many digits has the natural number that contributes to this sequence the digit in position $10^{2000}$.\n\nClarification: The natural number that contributes to the sequence the digit in position $10$ has $2$ digits, because it is $10$; the natural number that contributes to the sequence the digit in position $10^2$ has $2$ digits, because it is $55$."
         },
         {
           "number": 2,
-          "problem": "Given a triangle ABC with side AB greater than BC, letMbe the midpoint of AC andLbe the point at which the bisector of angle ∠Bintersects side AC. The line parallel to AB, which intersects the bisector BLatD, is drawn by M, and the line parallel to the side BCthat intersects the median BM atEis drawn by L. Show that ED is perpendicular to BL."
+          "problem": "Given a triangle $ABC$ with side $AB$ greater than $BC$, let $M$ be the midpoint of $AC$ and $L$ the point at which the bisector of angle $B$ meets side $AC$. Through $M$ the line parallel to $AB$ is drawn, which meets the bisector $BL$ at $D$, and through $L$ the line parallel to side $BC$ is drawn, which meets the median $BM$ at $E$. Prove that $ED$ is perpendicular to $BL$."
         },
         {
           "number": 3,
@@ -189,11 +189,11 @@
         },
         {
           "number": 4,
-          "problem": "Determine the number of pairs of natural numbers (a, b)that simultaneously verify that 4620 is a multiple of a,4620 is a multiple of bandbis a multiple of a."
+          "problem": "Determine the number of pairs of natural numbers $(a, b)$ that simultaneously satisfy: $4620$ is a multiple of $a$, $4620$ is a multiple of $b$, and $b$ is a multiple of $a$."
         },
         {
           "number": 5,
-          "problem": "A computer program generates a sequence of numbers with the following rule: the first number is written by Camilo; thereafter, the program calculates the integer division of the last number generated by 18; thus obtains a quotient and a remainder. The sum of that quotient plus that remainder is the next number generated. For example, if Camilo’s number is 5291,the computer makes 5291 = 293 ×18 + 17 , and generates 310 = 293 + 17 . The next number generated will be 21, since 310 = 17 ×18 + 4 and 17 + 4 = 21 ; etc Whatever Camilo’s initial number is, from some point on, the computer always generates the same number. Determine what is that number that will be repeated indefinitely, if Camilo’s initial number is equal to 2110."
+          "problem": "A computer program generates a sequence of numbers with the following rule: the first number is written by Camilo; from then on, the program computes the integer division of the last number generated by $18$, thus obtaining a quotient and a remainder. The sum of that quotient plus that remainder is the next number generated. For example, if Camilo's number is $5291$, the computer does $5291 = 293 \\cdot 18 + 17$ and generates $310 = 293 + 17$. The next number generated will be $21$, since $310 = 17 \\cdot 18 + 4$ and $17 + 4 = 21$; etc.\n\nWhatever Camilo's initial number is, from some moment on the computer always generates the same number. Determine which number is repeated indefinitely if Camilo's initial number is equal to $2^{110}$."
         },
         {
           "number": 6,
@@ -206,23 +206,23 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Sergio thinks of a positive integer S, less than or equal to 100. Iván must guess the number that Sergio thought of, using the following procedure: in each step, he chooses two positive integers AandBless than 100, and asks Sergio what is the greatest common factor between A+Sand B. Give a sequence of seven steps that ensures Iv án guesses the number Sthat Sergio thought of. Clarification:In each step, Sergio correctly answers Iv án’s question."
+          "problem": "Sergio thinks of a positive integer $S$, less than or equal to $100$. Iván must guess the number Sergio thought of, using the following procedure: at each step he chooses two positive integers $A$ and $B$ less than $100$, and asks Sergio what the greatest common divisor of $A + S$ and $B$ is. Give a sequence of seven steps that guarantees that Iván guesses the number $S$ that Sergio thought of.\n\nClarification: At each step, Sergio answers Iván's question correctly."
         },
         {
           "number": 2,
-          "problem": "Let△ABC be a triangle such that angle ∠ABC is less than angle ∠ACB . The bisector of angle ∠BAC cuts side BCatD. LetEbe on side ABsuch that ∠EDB = 90oandFon side ACsuch that∠BED =∠DEF . Prove that ∠BAD =∠FDC ."
+          "problem": "Let $ABC$ be a triangle such that the angle $\\angle ABC$ is less than the angle $\\angle ACB$. The bisector of the angle $\\angle BAC$ meets the side $BC$ at $D$. Let $E$ be on the side $AB$ such that $\\angle EDB = 90^\\circ$ and $F$ on the side $AC$ such that $\\angle BED = \\angle DEF$. Prove that $\\angle BAD = \\angle FDC$."
         },
         {
           "number": 3,
-          "problem": "Letaandbbe positive integers, a < b , such that in the decimal expansion of the fractiona bthe five digits 1,4,2,8,6appear somewhere, in that order and consecutively. Determine the lowest possible value bcan take ."
+          "problem": "Let $a$ and $b$ be positive integers, $a < b$, such that in the decimal expansion of the fraction $\\frac{a}{b}$ the five digits $1, 4, 2, 8, 6$ appear somewhere, in that order and consecutively. Determine the smallest possible value that $b$ can take."
         },
         {
           "number": 4,
-          "problem": "Find all positive integers kthat can be expressed as the sum of 50fractions such that the nu- merators are the 50natural numbers from 1to50and the denominators are positive integers, that is, k=1 a1+2 a2+. . .+50 a50with a 1, a2, . . . , a npositive integers."
+          "problem": "Find all positive integers $k$ that can be expressed as a sum of $50$ fractions whose numerators are the $50$ natural numbers from $1$ to $50$ and whose denominators are positive integers, that is, $$k = \\frac{1}{a_1} + \\frac{2}{a_2} + \\frac{3}{a_3} + \\cdots + \\frac{50}{a_{50}}$$ with $a_1, a_2, a_3, \\ldots, a_{50}$ positive integers."
         },
         {
           "number": 5,
-          "problem": "All sets of 49distinct positive integers less than or equal to 100are considered. Leandro as- signed each of these sets a positive integer less than or equal to 100. Prove that there is a set Lof50distinct positive integers less than or equal to 100, such that for each number xofLthe number that Leandro assigned to the set of 49numbers L− {x}is different from x. Clarification: L− {x}denotes the set that results from removing the number xfrom L."
+          "problem": "All sets of $49$ distinct positive integers less than or equal to $100$ are considered. Leandro assigned to each of these sets a positive integer less than or equal to $100$. Prove that there is a set $L$ of $50$ distinct positive integers less than or equal to $100$ such that, for each number $x$ of $L$, the number Leandro assigned to the set of $49$ numbers $L - \\{x\\}$ is different from $x$.\n\nClarification: $L - \\{x\\}$ denotes the set that results from removing the number $x$ from $L$."
         },
         {
           "number": 6,
@@ -239,11 +239,11 @@
         },
         {
           "number": 2,
-          "problem": "Determine the smallest positive integer kso that the equation 2002x+ 273 y= 200201 + k has integer solutions, and for that value of k, find the number of solutions (x, y)withx,ypositive integers that have the equation."
+          "problem": "Determine the smallest positive integer $k$ such that the equation $$2002x + 273y = 200201 + k$$ has integer solutions, and for that value of $k$, find the number of solutions $(x, y)$ with $x$, $y$ positive integers that the equation has."
         },
         {
           "number": 3,
-          "problem": "In a circumference Γa chord PQis considered such that the segment that joins the midpoint of the smallest arc PQand the midpoint of the segment PQmeasures 1. Let Γ1,Γ2andΓ3be three tangent circumferences to the chord PQthat are in the same half plane than the center of Γwith respect to the line PQ. Furthermore, Γ1andΓ3are internally tangent to Γand externally tangent to Γ2, and the centers of Γ1andΓ3are on different halfplanes with respect to the line determined by the centers of ΓandΓ2. If the sum of the radii of Γ1,Γ2andΓ3is equal to the radius of Γ, calculate the radius of Γ2."
+          "problem": "In a circle $\\Gamma$ a chord $PQ$ is considered such that the segment joining the midpoint of the minor arc $PQ$ and the midpoint of the segment $PQ$ measures $1$. Let $\\Gamma_1$, $\\Gamma_2$ and $\\Gamma_3$ be three circles tangent to the chord $PQ$ that lie in the same half-plane as the center of $\\Gamma$ with respect to the line $PQ$. Moreover, $\\Gamma_1$ and $\\Gamma_3$ are internally tangent to $\\Gamma$ and externally tangent to $\\Gamma_2$, and the centers of $\\Gamma_1$ and $\\Gamma_3$ lie in different half-planes with respect to the line determined by the centers of $\\Gamma$ and $\\Gamma_2$. If the sum of the radii of $\\Gamma_1$, $\\Gamma_2$ and $\\Gamma_3$ equals the radius of $\\Gamma$, compute the radius of $\\Gamma_2$."
         },
         {
           "number": 4,
@@ -251,11 +251,11 @@
         },
         {
           "number": 5,
-          "problem": "Let△ABC be an isosceles triangle with AC=BC. Points D, E, F are considered on BC, CA, AB , respectively, such that AF > BF and that the quadrilateral CEFD is a parallelogram. The per- pendicular line to BCdrawn by Bintersects the perpendicular bisector of ABatG. Prove that DE⊥FG."
+          "problem": "Let $ABC$ be an isosceles triangle with $AC = BC$. Points $D$, $E$, $F$ are taken on $BC$, $CA$, $AB$, respectively, such that $AF > BF$ and the quadrilateral $CEFD$ is a parallelogram. The line perpendicular to $BC$ through $B$ meets the perpendicular bisector of $AB$ at $G$. Prove that the line $DE$ is perpendicular to the line $FG$."
         },
         {
           "number": 6,
-          "problem": "LetP1, P2, . . . , P n, be infinite arithmetic progressions of positive integers, of differences d1, d2, . . . , d n, respectively. Prove that if every positive integer appears in at least one of the nprogressions then one of the differences didivides the least common multiple of the remaining n−1differ- ences. Note: Pi={ai, ai+di, ai+ 2di, ai+ 3di, ai+ 4di,···} withaianddipositive integers."
+          "problem": "Let $P_1, P_2, \\ldots, P_n$ be infinite arithmetic progressions of positive integers with differences $d_1, d_2, \\ldots, d_n$, respectively. Prove that if every positive integer appears in at least one of the $n$ progressions, then one of the differences $d_i$ divides the least common multiple of the remaining $n-1$ differences.\n\nNote: $P_i = \\{a_i, a_i + d_i, a_i + 2d_i, a_i + 3d_i, a_i + 4d_i, \\ldots\\}$ with $a_i$ and $d_i$ positive integers."
         }
       ]
     },
@@ -264,7 +264,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find all positive numbers xsuch that: 1 [x]−1 [2x]=1 6{x} where [x]represents the integer part of xand{x}=x−[x]."
+          "problem": "Find all positive numbers $x$ such that $$\\frac{1}{[x]} - \\frac{1}{[2x]} = \\frac{1}{6\\{x\\}},$$ where $[x]$ denotes the integer part of $x$ and $\\{x\\} = x - [x]$."
         },
         {
           "number": 2,
@@ -272,11 +272,11 @@
         },
         {
           "number": 3,
-          "problem": "Leta≥4be a positive integer. Determine the smallest value of n≥5,n̸=a, such that acan be represented in the form a=x2 1+x2 2+···+x2 n x1x2···xn for a suitable choice of the npositive integers x1, x2, . . . , x n."
+          "problem": "Let $a \\geq 4$ be a positive integer. Determine the smallest value of $n \\geq 5$, $n \\neq a$, such that $a$ can be represented in the form $$a = \\frac{x_1^2 + x_2^2 + \\cdots + x_n^2}{x_1 x_2 \\cdots x_n}$$ for a suitable choice of the $n$ positive integers $x_1, x_2, \\ldots, x_n$."
         },
         {
           "number": 4,
-          "problem": "The trapezoid ABCD of bases ABandCD, has∠A= 90o, AB = 6, CD = 3andAD= 4. Let E, G, H be the circumcenters of triangles ABC, ACD, ABD , respectively. Find the area of the triangle EGH ."
+          "problem": "The trapezoid $ABCD$ with bases $AB$ and $CD$ and non-parallel sides $BC$ and $DA$ has $\\angle A = 90^\\circ$, $AB = 6$, $CD = 3$ and $AD = 4$. Let $E$, $G$, $H$ be the circumcenters of the triangles $ABC$, $ACD$, $ABD$, respectively. Find the area of the triangle $EGH$.\n\nClarification: The circumcenter of a triangle is the point of intersection of the perpendicular bisectors of its sides."
         },
         {
           "number": 5,
@@ -284,7 +284,7 @@
         },
         {
           "number": 6,
-          "problem": "Determine the positive integers nsuch that the set of all positive divisors of 30ncan be divided into groups of three so that the product of the three numbers in each group is the same."
+          "problem": "Determine the positive integers $n$ such that the set of all positive divisors of $30^n$ can be split into groups of three so that the product of the three numbers of each group is the same."
         }
       ]
     },
@@ -297,23 +297,23 @@
         },
         {
           "number": 2,
-          "problem": "Determine all positive integers a, b, c, d such that   a < b a2c=b2d ab+cd= 299+ 2101"
+          "problem": "Determine all positive integers $a, b, c, d$ such that $$a > b, \\quad a^2c = b^2d \\quad \\text{and} \\quad ab + cd = 2^{99} + 2^{101}.$$"
         },
         {
           "number": 3,
-          "problem": "Zeros and ones are placed in each square of a rectangular board. Such a board is said to be varied if each row contains at least one 0and at least two 1s. Given n ≥3,find all integers k > 1 with the following property: The columns of each varied board of krows and n columns can be permuted so that in each row of the new board the 1s do not form a block (that is, there are at least two 1s that are separated by one or more 0s)."
+          "problem": "We say that a rectangular board of $0$s and $1$s is varied if each row contains at least one $0$ and at least two $1$s. Given $n \\geq 3$, find all integers $k \\geq 1$ with the following property: the columns of every varied board with $k$ rows and $n$ columns can be permuted so that in each row of the new board the $1$s do not form a block (that is, there are at least two $1$s separated by one or more $0$s)."
         },
         {
           "number": 4,
-          "problem": "Determine all positive integers aandbsuch that each square on the a×bboard can be col- ored red, blue, or green such that each red square has exactly one blue neighbor and one green neighbor, each blue square has exactly one red and one green neighbor and each green square has exactly one red and one blue neighbor. Clarification: Two squares are neighbors if they have a common side."
+          "problem": "Determine all positive integers $a$ and $b$ such that each square of the $a \\times b$ board can be coloured red, blue or green so that each red square has exactly one blue neighbour and one green neighbour, each blue square has exactly one red neighbour and one green neighbour, and each green square has exactly one red neighbour and one blue neighbour.\n\nClarification: Two squares are neighbours if they have a common side."
         },
         {
           "number": 5,
-          "problem": "The pentagon ABCDE hasAB =BC, CD =DE,∠ABC = 120o,∠CDE = 60oandBD = 2. Calculate the area of the pentagon."
+          "problem": "The pentagon $ABCDE$ has $AB = BC$, $CD = DE$, $\\angle ABC = 120^\\circ$, $\\angle CDE = 60^\\circ$ and $BD = 2$. Compute the area of the pentagon."
         },
         {
           "number": 6,
-          "problem": "Decide if it is possible to generate an infinite sequence of positive integers ansuch that in the sequence there are no three terms that are in arithmetic progression and that for all n an−n2 <n 2. Clarification: Three numbers a,b,care in arithmetic progression if and only if 2b=a+c."
+          "problem": "Decide whether it is possible to generate an infinite sequence of positive integers $a_n$ such that no three terms of the sequence are in arithmetic progression and such that for every $n$ $$\\left|a_n - n^2\\right| < \\frac{n}{2}.$$ Clarification: Three numbers $a, b, c$ are in arithmetic progression if and only if $2b = a + c$."
         }
       ]
     },
@@ -322,27 +322,27 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Leta > b > c > d be positive integers satisfying a+b+c+d= 502 anda2−b2+c2−d2= 502 . Calculate how many possible values of aare there."
+          "problem": "Let $a > b > c > d$ be positive integers satisfying $$a + b + c + d = 502 \\quad \\text{and} \\quad a^2 - b^2 + c^2 - d^2 = 502.$$ Compute how many possible values of $a$ there are."
         },
         {
           "number": 2,
-          "problem": "On Babba Island they use a two-letter alphabet, aandb, and every (finite) sequence of letters is a word. For each set Pof six words of 4letters each, we denote NPto the set of all words that do not contain any of the words of Pas a syllable (subword). Prove that if NPis finite, then all its words are of length less than or equal to 10, and find a set Psuch that NPis finite and contains at least one word of length 10."
+          "problem": "On the island of Babba they use an alphabet of two letters, $a$ and $b$, and every (finite) sequence of letters is a word. For each set $P$ of six words of $4$ letters each, we denote by $N_P$ the set of all words that contain none of the words of $P$ as a syllable (subword). Prove that if $N_P$ is finite, then all its words have length less than or equal to $10$, and find a set $P$ such that $N_P$ is finite and contains at least one word of length $10$."
         },
         {
           "number": 3,
-          "problem": "Letabe a real number such that1 a=a−[a]. Show that ais irrational. Clarification: The brackets indicate the integer part of the number they enclose."
+          "problem": "Let $a$ be a real number such that $$\\frac{1}{a} = a - [a].$$ Prove that $a$ is irrational.\n\nClarification: The brackets denote the integer part of the number they enclose."
         },
         {
           "number": 4,
-          "problem": "We will say that a positive integer is a winner if it can be written as the sum of a perfect square plus a perfect cube. For example, 33is a winner because 33 = 52+ 23. Gabriel chooses two positive integers, r and s, and Germ án must find 2005 positive integers n such that for each n, the numbers r+nands+nare winners. Prove that Germ án can always achieve his goal."
+          "problem": "We say that a positive integer is a winner if it can be written as the sum of a perfect square plus a perfect cube. For example, $33$ is a winner because $33 = 5^2 + 2^3$. Gabriel chooses two positive integers $r$ and $s$, and Germán must find $2005$ positive integers $n$ such that for each $n$ the numbers $r + n$ and $s + n$ are winners. Prove that Germán can always achieve his goal."
         },
         {
           "number": 5,
-          "problem": "LetAM andAN be the lines tangent to a circle Γdrawn from a point A(MandNbelong to the circle). A line through AcutsΓatBandCwithBbetween AandC, andAB BC=2 3. IfPis the intersection point of ABandMN , calculateAP CP."
+          "problem": "Let $AM$ and $AN$ be the lines tangent to a circle $\\Gamma$ drawn from a point $A$ ($M$ and $N$ on the circle). A line through $A$ meets $\\Gamma$ at $B$ and $C$, with $B$ between $A$ and $C$, and $\\dfrac{AB}{BC} = \\dfrac{2}{3}$. If $P$ is the point of intersection of $AB$ and $MN$, compute $\\dfrac{AP}{PC}$."
         },
         {
           "number": 6,
-          "problem": "Letk≥1be an integer. In a group of 2k+ 1 people, some are sincere (they always tell the truth) and the rest are unpredictable (sometimes they tell the truth and sometimes they lie). It is known that the unpredictable ones are at most k. Someone outside the group must determine who is sincere and who is unpredictable through a sequence of steps. In each step he chooses two people AandBfrom the group and asks AisBsincere? Show that after 3ksteps the stranger will be able to classify with certainty the 2k+ 1people in the group. (Before asking each question, the answers to the previous questions are known.) Clarification: Each of the 2k+ 1people in the group knows which ones are sincere and which ones are unpredictable."
+          "problem": "Let $k \\geq 1$ be an integer. In a group of $2k+1$ people, some are sincere (they always tell the truth) and the rest are unpredictable (sometimes they tell the truth and sometimes they lie). It is known that the unpredictable ones are at most $k$. Someone outside the group must determine who is sincere and who is unpredictable through a sequence of steps. In each step he chooses two people $A$ and $B$ of the group and asks $A$: is $B$ sincere? Prove that after $3k$ steps the outsider will be able to classify with certainty the $2k+1$ people of the group. (Before asking each question, the answers to the previous questions are known.)\n\nClarification: Each of the $2k+1$ people of the group knows which ones are sincere and which ones are unpredictable."
         }
       ]
     },
@@ -351,15 +351,15 @@
       "problems": [
         {
           "number": 1,
-          "problem": "LetAbe the set of positive real numbers less than 1that have a periodic decimal expansion with a period of ten different digits. Find a positive integer ngreater than 1and less than 1010 such that na−ais a positive integer for all a. of set A."
+          "problem": "Let $A$ be the set of positive real numbers less than $1$ that have a periodic decimal expansion with a period of ten distinct digits. Find a positive integer $n$ greater than $1$ and less than $10^{10}$ such that $na - a$ is a positive integer for every $a$ of the set $A$."
         },
         {
           "number": 2,
-          "problem": "In triangle ABC, M is the midpoint of ABandDthe foot of the bisector of angle ∠ABC . IfMD andBDare known to be perpendicular, calculateAB BC."
+          "problem": "In the triangle $ABC$, $M$ is the midpoint of $AB$ and $D$ is the foot of the bisector of the angle $\\angle ABC$. If it is known that $MD$ and $BD$ are perpendicular, compute $\\dfrac{AB}{BC}$."
         },
         {
           "number": 3,
-          "problem": "Pablo and Nacho write together a succession of positive integers of 2006 terms, according to the following rules: Pablo begins, who in his first turn writes 1, and from then on, each one in his turn writes an integer positive that is greater than or equal to the last number that the opponent wrote and less than or equal to triple the last number that the opponent wrote. When the two of them have written the 2006 numbers, the sum Sof the first 2005 numbers written (all except the last one) and the sum Tof the 2006 numbers written. If SandTare co-cousins, Nacho wins. Otherwise, Pablo wins. Determine which of the two players has a winning strategy, describe the strategy and demonstrate that it is a winning one."
+          "problem": "Pablo and Nacho together write a sequence of $2006$ positive integers according to the following rules: Pablo starts, writing $1$ on his first turn, and from then on each of them, on his turn, writes a positive integer that is greater than or equal to the last number written by the opponent and less than or equal to three times the last number written by the opponent. When the two of them have written the $2006$ numbers, one computes the sum $S$ of the first $2005$ numbers written (all except the last one) and the sum $T$ of the $2006$ numbers written. If $S$ and $T$ are coprime, Nacho wins. Otherwise, Pablo wins. Determine which of the two players has a winning strategy, describe the strategy and prove that it is a winning one.\n\nClarification: Two integers are coprime if their greatest common divisor is $1$."
         },
         {
           "number": 4,
@@ -371,7 +371,7 @@
         },
         {
           "number": 6,
-          "problem": "We will say that a natural number nisadequate if there exist nintegers a1, a2, . . . , a n(which are not necessarily positive and can be repeated) such that a1+a2+· · ·+an=a1a2· · ·an=n. Determine all adequate numbers."
+          "problem": "We say that a natural number $n$ is adequate if there exist $n$ integers $a_1, a_2, \\ldots, a_n$ (not necessarily positive, and possibly repeated) such that $$a_1 + a_2 + \\cdots + a_n = a_1 \\cdot a_2 \\cdots a_n = n.$$ Determine all adequate numbers."
         }
       ]
     },
@@ -380,7 +380,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find all the prime numbers pandqsuch that p2+q= 37q2+p. Clarification: 1is not a prime number."
+          "problem": "Find all prime numbers $p$, $q$ such that $$p^2 + q = 37q^2 + p.$$ Clarification: $p > 1$; $q > 1$."
         },
         {
           "number": 2,
@@ -388,7 +388,7 @@
         },
         {
           "number": 3,
-          "problem": "LetABCD be a parellogram with AB > AD . Suposse the ratio between diagonals ACandBD isAC BD= 3. Letrbe the line symmetric to AD with respect to ACandsthe line symmetric to BCwith respect to BD. Ifrandsintersect at P, find the ratioPA PB Daniel"
+          "problem": "Let $ABCD$ be a parallelogram with sides $AB$, $BC$, $CD$, $AD$ such that $AB > AD$ and $\\dfrac{AC}{BD} = 3$. Let $r$ be the line symmetric to $AD$ with respect to $AC$ and $s$ the line symmetric to $BC$ with respect to $BD$. If $r$ and $s$ meet at $P$, compute the value of $\\dfrac{PA}{PB}$."
         },
         {
           "number": 4,
@@ -396,11 +396,11 @@
         },
         {
           "number": 5,
-          "problem": "We will say that a positive integer is [i]lucky [/i ]if the sum of its digits is divisible by 31. What is the maximum possible difference between two consecutive [i]lucky [/i ] numbers?"
+          "problem": "We say that a positive integer is lucky if the sum of its digits is divisible by $31$. What is the greatest possible difference between two consecutive lucky numbers?"
         },
         {
           "number": 6,
-          "problem": "Julián chooses 2007 points of the plane between which there are no 3aligned, and draw with red all the segments that join two of those points. Next, Roberto draws several lines. Its objective is for each red segment to be cut inside by (at least) one of the lines. Determine the minor ℓ lines such that, no matter how Juli án chooses the 2007 points, with the properly chosen ℓlines, Roberto will achieve his objective with certainty."
+          "problem": "Julián chooses $2007$ points of the plane, no $3$ of them collinear, and draws in red all the segments joining two of these points. Next, Roberto draws several lines. His goal is that every red segment be cut at an interior point by (at least) one of the lines. Determine the smallest $\\ell$ such that, no matter how Julián chooses the $2007$ points, with $\\ell$ suitably chosen lines Roberto achieves his goal with certainty."
         }
       ]
     },
@@ -417,11 +417,11 @@
         },
         {
           "number": 3,
-          "problem": "On a circle of center O, letAandBbe points on the circle such that ∠AOB = 120o. Point C lies on the small arc ABand point Dlies on the segment AB. Let also AD= 2, BD = 1and CD=√ 2. Calculate the area of triangle ABC ."
+          "problem": "On a circle with center $O$, let $A$ and $B$ be points of the circle such that $\\angle AOB = 120^\\circ$. The point $C$ lies on the minor arc $AB$ and the point $D$ lies on the chord $AB$. It is known that $AD = 2$, $BD = 1$ and $CD = \\sqrt{2}$. Compute the area of the triangle $ABC$."
         },
         {
           "number": 4,
-          "problem": "Find all real numbers xwhich satisfy the following equation: [2x] + [3x] + [7x] = 2008 . Note: [x]means the greatest integer less or equal than x."
+          "problem": "Find all real numbers $x$ such that $$[2x] + [3x] + [7x] = 2008.$$ Clarification: The brackets denote the integer part of the number they enclose. For example, $\\left[\\frac{9}{4}\\right] = 2$; $[4] = 4$; $\\left[\\frac{3}{8}\\right] = 0$."
         },
         {
           "number": 5,
@@ -429,7 +429,7 @@
         },
         {
           "number": 6,
-          "problem": "Consider a board of a×b, with aandbintegers greater than or equal to 2. Initially their squares are colored black and white like a chess board. The permitted operation consists of choosing two squares with a common side and recoloring them as follows: a white square becomes black; a black box turns green; a green box turns white. Determine for which values of aandb it is possible, by a succession of allowed operations, to make all the squares that were initially white end black and all the squares that were initially black end white. Clarification: Initially there are no green squares, but they appear after the first operation."
+          "problem": "Consider an $a \\times b$ board, with $a$ and $b$ integers greater than or equal to $2$. Initially its squares are coloured white and black like a chessboard. The allowed operation consists of choosing two squares with a common side and recolouring them as follows: a white square becomes black; a black square becomes green; a green square becomes white. Determine for which values of $a$ and $b$ it is possible, by a sequence of allowed operations, to make all the squares that were initially white end up black and all the squares that were initially black end up white.\n\nClarification: Initially there are no green squares, but they appear after the first operation."
         }
       ]
     },
@@ -454,7 +454,7 @@
         },
         {
           "number": 5,
-          "problem": "Around a circle are written 2009 integers, not necessarily distinct, so that if two numbers are neighbors their difference is 1 or 2. We will say that a number is $huge$ if it is greater than its two neighbors, and that it is $tiny$ if it is less than its two neighbors. The sum of all the huge numbers is equal to the sum of all the tiny numbers, which equals 1810. Determine how many $huge$ and $tiny$ numbers there can be around the circumference."
+          "problem": "Around a circle $2009$ integers are written, not necessarily distinct, such that if two numbers are neighbours their difference is $1$ or $2$. We say that a number is big if it is greater than both its neighbours, and that it is small if it is less than both its neighbours. The sum of all the big numbers is equal to the sum of all the small numbers plus $1810$. Determine how many odd numbers there can be around the circle."
         },
         {
           "number": 6,
@@ -471,19 +471,19 @@
         },
         {
           "number": 2,
-          "problem": "LetABC be a triangle with ∠C= 90oandAC = 1. The median AM intersects the incircle at the points PandQ, with Pbetween AandQ, such that AP =QM. Find the length of PQ."
+          "problem": "Let $ABC$ be a triangle with $\\angle C = 90^\\circ$ and $AC = 1$. The median $AM$ ($M \\in BC$) meets the incircle at the points $P$ and $Q$, with $P$ between $A$ and $Q$, such that $AP = QM$. Find the length of $PQ$."
         },
         {
           "number": 3,
-          "problem": "The positive integers a, b, c are less than 99and satisfy a2+b2=c2+ 992. . Find the minimum and maximum value of a+b+c."
+          "problem": "The positive integers $a$, $b$, $c$ are less than $99$ and satisfy $$a^2 + b^2 = c^2 + 99^2.$$ Find the minimum and the maximum value of $a + b + c$."
         },
         {
           "number": 4,
-          "problem": "Find the sum of all products a1a2...a50, where a1, a2, ..., a 50are distinct positive integers, less than or equal to 101, and such that no two of them add up to 101."
+          "problem": "Find the sum of all the products $a_1 a_2 \\cdots a_{50}$, where $a_1, a_2, \\ldots, a_{50}$ are distinct positive integers, less than or equal to $101$, such that no two of them add up to $101$."
         },
         {
           "number": 5,
-          "problem": "Twenty-one numbers are written in a row. Whenever $u,v,w$ are three consecutive numbers in that order,\n$$v=\\frac{2uw}{u+w}.$$\nThe first number is $\\frac1{100}$ and the last is $\\frac1{10}$. Find the fifteenth number."
+          "problem": "Twenty-one numbers are written in a row. If $u$, $v$, $w$ are three consecutive numbers, then $$v = \\frac{2uw}{u+w}.$$ The first number is $\\frac{1}{100}$ and the last is $\\frac{1}{101}$. Find the $15$th number."
         },
         {
           "number": 6,
@@ -500,7 +500,7 @@
         },
         {
           "number": 2,
-          "problem": "Three players $A$, $B$ and $C$ take turns removing stones from a pile of $N$ stones. They move in the order $A, B, C, A, B, C, \\ldots$. The game begins, and the one who takes the last stone wins the game. If they agree on a joint strategy, $A$ and $C$ can team up against $B$; they agree on a joint strategy. $B$ can take one, two, three, four or 5 stones, while $A$ and $C$, they can each get 1, 2 or 3 stones each turn. Determine for what values of $N$ have winning strategy $A$ and $C$, and for what values the winning strategy is from $B$."
+          "problem": "Three players $A$, $B$ and $C$ take turns removing stones from a pile of $N$ stones. They move in the order $A, B, C, A, B, C, \\ldots$. $A$ starts the game, and the one who takes the last stone loses the game. The players $A$ and $C$ form a team against $B$; they agree on a joint strategy. $B$ can take $1$, $2$, $3$, $4$ or $5$ stones on each move, while $A$ and $C$ can each take $1$, $2$ or $3$ stones on each turn. Determine for which values of $N$ the players $A$ and $C$ have a winning strategy, and for which values the winning strategy belongs to $B$."
         },
         {
           "number": 3,
@@ -508,7 +508,7 @@
         },
         {
           "number": 4,
-          "problem": "For each natural number $n$ we denote $a_n$ as the greatest perfect square less than or equal to $n$ and $b_n$ as the least perfect square greater than $n$. For example $a_9 = 3^2$, $b_9 = 4^2$ and $a_{20} = 4^2$, $b_{20} = 5^2$. Calculate: $$\\frac{1}{a_1 b_1} + \\frac{1}{a_2 b_2} + \\frac{1}{a_3 b_3} + \\ldots + \\frac{1}{a_{600} b_{600}}$$"
+          "problem": "Let $S$ be a set of positive integers such that if $x, y$ belong to $S$ and $x < y$, then $$xy < 111y - 148x.$$ Find the greatest number of elements that $S$ can have."
         },
         {
           "number": 5,
