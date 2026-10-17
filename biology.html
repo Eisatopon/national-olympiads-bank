@@ -19,6 +19,8 @@ body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; back
 .subjects a:hover { background: rgba(255,255,255,.16); }
 .subjects a[aria-current] { background: var(--accent); border-color: var(--accent); }
 main { flex: 1; display: grid; place-items: center; padding: 40px 16px; text-align: center; }
+main > div { width: 100%; max-width: 900px; }
+h1 { overflow-wrap: break-word; }
 .icon { font-size: 4rem; line-height: 1; }
 h1 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 800; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 18px 0 10px; }
 .badge { display: inline-block; padding: 6px 16px; border-radius: 999px; background: #facc15; color: #1a1a1a; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; font-size: .9rem; }
@@ -30,10 +32,10 @@ p { color: #c7d3df; max-width: 560px; margin: 16px auto; }
 <div class="bar">
   <a class="brand" href="./"><img src="assets/eisatopon-logo.png" alt="">eisatopon.gr</a>
   <nav class="subjects" aria-label="Olympiad banks">
-    <a href="./"><span aria-hidden="true">∑</span>Mathematics</a>
-    <a href="physics.html"><span aria-hidden="true">⚛</span>Physics</a>
-    <a href="chemistry.html"><span aria-hidden="true">⚗</span>Chemistry</a>
-    <a href="informatics.html"><span aria-hidden="true">⌨</span>Informatics</a>
+    <a href="./"><span aria-hidden="true">📐</span>Mathematics</a>
+    <a href="physics.html"><span aria-hidden="true">⚛️</span>Physics</a>
+    <a href="chemistry.html"><span aria-hidden="true">🧪</span>Chemistry</a>
+    <a href="informatics.html"><span aria-hidden="true">💻</span>Informatics</a>
     <a href="biology.html" aria-current="page"><span aria-hidden="true">🧬</span>Biology</a>
   </nav>
 </div>
