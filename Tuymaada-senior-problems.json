@@ -776,12 +776,12 @@
         {
           "day": 1,
           "number": 4,
-          "problem": "A calculator can square a number or add $1$ to it. It cannot add $1$ two times in a row. By several operations it transformed a number $x$ into a number $S > x^n + 1$ ($x, n,S$ are positive integers). Prove that $S > x^n + x - 1$."
+          "problem": "A calculator can square a number or add $1$ to it. It cannot add $1$ two times in a row. By several operations it transformed a number $x$ into a number $S > x^n + 1$ ($x, n,S$ are positive integers). Prove that $S \\ge x^n + x - 1$."
         },
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $\\mathbb{S}$ be the set of prime numbers less or equal to 26. Is there any $a_1, a_2, a_3, a_4, a_5, a_6 \\in \\mathbb{N}$ such that $$\\gcd(a_i,a_j) \\in \\mathbb{S} \\qquad \\text {for }  1\\leq i \\ne j \\leq 6$$ and for every element $p$ of $\\mathbb{S}$ there exists a pair of $1\\leq k \\ne l \\leq 6$ such that $$s=\\gcd(a_k,a_l)?$$"
+          "problem": "Do there exist six positive integers such that the greatest common divisor of every two of them is a prime number not exceeding $26$, and every such prime number is the greatest common divisor of some two of these six numbers?"
         },
         {
           "day": 2,
@@ -852,7 +852,7 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Polynomials $F$ and $G$ satisfy: $$F(F(x))>G(F(x))>G(G(x))$$ for all real $x$. Prove that $F(x)>G(x)$ for all real $x$."
+          "problem": "Polynomials $F$ and $G$ satisfy: $$F(F(x))>F(G(x))>G(G(x))$$ for all real $x$. Prove that $F(x)>G(x)$ for all real $x$."
         },
         {
           "day": 1,
@@ -867,7 +867,7 @@
         {
           "day": 1,
           "number": 4,
-          "problem": "An $n\\times n$ square ($n$ is a positive integer) consists of $n^2$ unit squares. A monotonous path in this square is a path of length $2n$ beginning in the left lower corner of the square,ending in its right upper corner and going along the sides of unit squares.\nFor each $k$, $0\\leq k\\leq 2n-1$, let $S_k$ be the set of all the monotonous paths such that the number of unit squares lying below the path leaves remainder $k$ upon division by $2n-1$. Prove that all $S_k$ contain equal number of elements."
+          "problem": "An $n\\times n$ square ($n$ is a positive integer) consists of $n^2$ unit squares. A monotonous path in this square is a path of length $2n$ beginning in the left lower corner of the square,ending in its right upper corner and going along the sides of unit squares.\nFor each $k$, $0\\leq k< 2n-1$, let $S_k$ be the set of all the monotonous paths such that the number of unit squares lying below the path leaves remainder $k$ upon division by $2n-1$. Prove that all $S_k$ contain equal number of elements."
         },
         {
           "day": 2,
@@ -966,7 +966,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Given a board with size $25\\times 25$. Some $1\\times 1$ squares are marked, so that for each $13\\times 13$ and $4\\times 4$ sub-boards, there are at least $\\frac{1}{2}$ marked parts of the sub-board. Find the least possible amount of marked squares in the entire board."
+          "problem": "In a $25\\times 25$ chessboard some squares are marked so that in each subboard of size $13\\times 13$ or $4\\times 4$ at least half the squares are marked. What is the minimum possible number of marked squares in the entire chessboard?"
         },
         {
           "day": 2,
