@@ -298,6 +298,12 @@
     --rum10: #7c3aed; --rum10-ink: #4c1d95; --rum10-tint: #efe7fd;
     --rum9: #6d28d9; --rum9-ink: #43188a; --rum9-tint: #ece4fc;
     --rum8: #5b21b6; --rum8-ink: #3a1577; --rum8-tint: #e9e2fb;
+    --jpj: #7a4e9c; --jpj-ink: #4a2a66; --jpj-tint: #efe6f6;
+    --jpjp: #3f8f6b; --jpjp-ink: #1f5a40; --jpjp-tint: #e3f3ea;
+    --ukj: #b5651d; --ukj-ink: #6e3a0c; --ukj-tint: #f8eadc;
+    --ukmc: #9c3d54; --ukmc-ink: #5e1f30; --ukmc-tint: #f6e3e8;
+    --ukh: #5b7f1f; --ukh-ink: #364d10; --ukh-tint: #ecf3df;
+    --ukc: #4a6fa5; --ukc-ink: #263f66; --ukc-tint: #e4ecf6;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -531,6 +537,12 @@
 .f-rum10 { --f: var(--rum10); --f-ink: var(--rum10-ink); --f-tint: var(--rum10-tint); }
 .f-rum9 { --f: var(--rum9); --f-ink: var(--rum9-ink); --f-tint: var(--rum9-tint); }
 .f-rum8 { --f: var(--rum8); --f-ink: var(--rum8-ink); --f-tint: var(--rum8-tint); }
+.f-jpj { --f: var(--jpj); --f-ink: var(--jpj-ink); --f-tint: var(--jpj-tint); }
+.f-jpjp { --f: var(--jpjp); --f-ink: var(--jpjp-ink); --f-tint: var(--jpjp-tint); }
+.f-ukj { --f: var(--ukj); --f-ink: var(--ukj-ink); --f-tint: var(--ukj-tint); }
+.f-ukmc { --f: var(--ukmc); --f-ink: var(--ukmc-ink); --f-tint: var(--ukmc-tint); }
+.f-ukh { --f: var(--ukh); --f-ink: var(--ukh-ink); --f-tint: var(--ukh-tint); }
+.f-ukc { --f: var(--ukc); --f-ink: var(--ukc-ink); --f-tint: var(--ukc-tint); }
 
 /* ==========================================================
    Base
@@ -1059,7 +1071,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-moscow-grades-8-10';
+const DATA_VERSION = '20261018-japan-uk-juniors';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1269,6 +1281,12 @@ REGION_OF.emcj = 'europe';
 REGION_OF.rum10 = 'europe';
 REGION_OF.rum9 = 'europe';
 REGION_OF.rum8 = 'europe';
+REGION_OF.jpj = 'asia';
+REGION_OF.jpjp = 'asia';
+REGION_OF.ukj = 'europe';
+REGION_OF.ukmc = 'europe';
+REGION_OF.ukh = 'europe';
+REGION_OF.ukc = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1297,6 +1315,8 @@ const COUNTRIES = [
     { key: 'vn', name: 'Vietnam', flag: '🇻🇳', file: 'Vietnam-vmo-problems.json', kind: 'years' },
     { key: 'jp', name: 'Japan', flag: '🇯🇵', file: 'Japan-jmo-problems.json', kind: 'years' },
     { key: 'jpp', name: 'Japan JMO Preliminary', flag: '🇯🇵', file: 'Japan-jmo-prelim-problems.json', kind: 'years', full: "Japan Mathematical Olympiad, preliminary round" },
+    { key: 'jpj', name: 'Japan Junior MO', flag: '🇯🇵', file: 'Japan-jjmo-problems.json', kind: 'years', full: "Japan Junior Mathematical Olympiad (JJMO), final round" },
+    { key: 'jpjp', name: 'Japan Junior MO Preliminary', flag: '🇯🇵', file: 'Japan-jjmo-prelim-problems.json', kind: 'years', full: "Japan Junior Mathematical Olympiad (JJMO), preliminary round (single round 2003-2008)" },
     { key: 'it', name: 'Italy', flag: '🇮🇹', file: 'Italy-itamo-problems.json', kind: 'years' },
     { key: 'itf', name: 'Italy Gara di Febbraio', flag: '🇮🇹', file: 'Italy-febbraio-problems.json', kind: 'years', full: "Italian Mathematical Olympiad, Gara di Febbraio (second round), Triennio" },
     { key: 'ph', name: 'Philippines', flag: '🇵🇭', file: 'Philippines-pmo-problems.json', kind: 'years' },
@@ -1328,6 +1348,10 @@ const COUNTRIES = [
     { key: 'ukf', name: 'UK FIST', flag: '🇬🇧', file: 'Uk-fist-problems.json', kind: 'years', full: "UK Further International Selection Test (FIST)" },
     { key: 'ukg', name: 'UK MOG', flag: '🇬🇧', file: 'Uk-mog-problems.json', kind: 'years', full: "UK Mathematical Olympiad for Girls (UK MOG)" },
     { key: 'uka', name: 'UK Ashes', flag: '🇬🇧', file: 'Uk-ashes-problems.json', kind: 'years', full: "Mathematics Ashes (Australia v United Kingdom IMO team training exam)" },
+    { key: 'ukj', name: 'UK JMO', flag: '🇬🇧', file: 'Uk-jmo-problems.json', kind: 'years', full: "UK Junior Mathematical Olympiad (UKMT JMO)" },
+    { key: 'ukmc', name: 'UK Maclaurin', flag: '🇬🇧', file: 'Uk-maclaurin-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Maclaurin paper (UKMT)" },
+    { key: 'ukh', name: 'UK Hamilton', flag: '🇬🇧', file: 'Uk-hamilton-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Hamilton paper (UKMT)" },
+    { key: 'ukc', name: 'UK Cayley', flag: '🇬🇧', file: 'Uk-cayley-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Cayley paper (UKMT)" },
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
