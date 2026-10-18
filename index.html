@@ -308,6 +308,8 @@
     --rus10: #8a5a2b; --rus10-ink: #553515; --rus10-tint: #f5ebe0;
     --rus9: #3b6e8f; --rus9-ink: #1f4157; --rus9-tint: #e2edf4;
     --plj: #b4583a; --plj-ink: #6a2f1c; --plj-tint: #f8e8e1;
+    --ua10: #4f7a3a; --ua10-ink: #2c4a1f; --ua10-tint: #e6f0df;
+    --ua9: #7d5a9e; --ua9-ink: #4a3163; --ua9-tint: #eee6f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -551,6 +553,8 @@
 .f-rus10 { --f: var(--rus10); --f-ink: var(--rus10-ink); --f-tint: var(--rus10-tint); }
 .f-rus9 { --f: var(--rus9); --f-ink: var(--rus9-ink); --f-tint: var(--rus9-tint); }
 .f-plj { --f: var(--plj); --f-ink: var(--plj-ink); --f-tint: var(--plj-tint); }
+.f-ua10 { --f: var(--ua10); --f-ink: var(--ua10-ink); --f-tint: var(--ua10-tint); }
+.f-ua9 { --f: var(--ua9); --f-ink: var(--ua9-ink); --f-tint: var(--ua9-tint); }
 
 /* ==========================================================
    Base
@@ -1079,7 +1083,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-poland-omj';
+const DATA_VERSION = '20261018-ukraine-grades-9-10';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1299,6 +1303,8 @@ REGION_OF.cajm = 'americas';
 REGION_OF.rus10 = 'europe';
 REGION_OF.rus9 = 'europe';
 REGION_OF.plj = 'europe';
+REGION_OF.ua10 = 'europe';
+REGION_OF.ua9 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1401,6 +1407,8 @@ const COUNTRIES = [
     { key: 'nz', name: 'New Zealand', flag: '🇳🇿', file: 'NewZealand-nzmo-problems.json', kind: 'years' },
     { key: 'mk', name: 'North Macedonia', flag: '🇲🇰', file: 'NorthMacedonia-mmo-problems.json', kind: 'years' },
     { key: 'ua', name: 'Ukraine', flag: '🇺🇦', file: 'Ukraine-umo-problems.json', kind: 'years' },
+    { key: 'ua10', name: 'Ukraine grade 10', flag: '🇺🇦', file: 'Ukraine-umo-g10-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, final (IV stage), grade 10" },
+    { key: 'ua9', name: 'Ukraine grade 9', flag: '🇺🇦', file: 'Ukraine-umo-g9-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, final (IV stage), grade 9" },
     { key: 'bg', name: 'Bulgaria', flag: '🇧🇬', file: 'Bulgaria-nmo-problems.json', kind: 'years' },
     { key: 'kz', name: 'Kazakhstan', flag: '🇰🇿', file: 'Kazakhstan-rmo-problems.json', kind: 'years' },
     { key: 'mn', name: 'Mongolia', flag: '🇲🇳', file: 'Mongolia-mmo-problems.json', kind: 'years', full: "Mongolian Mathematical Olympiad (national round, top school grade)" },
