@@ -307,6 +307,7 @@
     --cajm: #2e8b8b; --cajm-ink: #145555; --cajm-tint: #e0f2f2;
     --rus10: #8a5a2b; --rus10-ink: #553515; --rus10-tint: #f5ebe0;
     --rus9: #3b6e8f; --rus9-ink: #1f4157; --rus9-tint: #e2edf4;
+    --plj: #b4583a; --plj-ink: #6a2f1c; --plj-tint: #f8e8e1;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -549,6 +550,7 @@
 .f-cajm { --f: var(--cajm); --f-ink: var(--cajm-ink); --f-tint: var(--cajm-tint); }
 .f-rus10 { --f: var(--rus10); --f-ink: var(--rus10-ink); --f-tint: var(--rus10-tint); }
 .f-rus9 { --f: var(--rus9); --f-ink: var(--rus9-ink); --f-tint: var(--rus9-tint); }
+.f-plj { --f: var(--plj); --f-ink: var(--plj-ink); --f-tint: var(--plj-tint); }
 
 /* ==========================================================
    Base
@@ -1077,7 +1079,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-stpetersburg-grades-9-10';
+const DATA_VERSION = '20261018-poland-omj';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1296,6 +1298,7 @@ REGION_OF.ukc = 'europe';
 REGION_OF.cajm = 'americas';
 REGION_OF.rus10 = 'europe';
 REGION_OF.rus9 = 'europe';
+REGION_OF.plj = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1346,6 +1349,7 @@ const COUNTRIES = [
     { key: 'rus9', name: 'Russia St. Petersburg MO grade 9', flag: '🇷🇺', file: 'Russia-stpetersburg-g9-problems.json', kind: 'years', full: "St. Petersburg Mathematical Olympiad, grade 9" },
     { key: 'pl', name: 'Poland', flag: '🇵🇱', file: 'Poland-pmo-problems.json', kind: 'years' },
     { key: 'plr2', name: 'Poland 2nd round', flag: '🇵🇱', file: 'Poland-round2-problems.json', kind: 'years', full: "Polish Mathematical Olympiad, Second Round" },
+    { key: 'plj', name: 'Poland Junior MO', flag: '🇵🇱', file: 'Poland-omj-problems.json', kind: 'years', full: "Polish Junior Mathematical Olympiad (OMJ; until 2016 OMG), final round" },
     { key: 'es', name: 'Spain', flag: '🇪🇸', file: 'Spain-ome-problems.json', kind: 'years' },
     { key: 'at', name: 'Austria', flag: '🇦🇹', file: 'Austria-oemo-problems.json', kind: 'years' },
     { key: 'atg', name: 'Austria regional (advanced)', flag: '🇦🇹', file: 'Austria-gwf-problems.json', kind: 'years', full: "Austrian MO, regional round for advanced students (Gebietswettbewerb f\u00fcr Fortgeschrittene)" },
