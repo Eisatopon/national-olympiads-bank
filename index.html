@@ -304,6 +304,7 @@
     --ukmc: #9c3d54; --ukmc-ink: #5e1f30; --ukmc-tint: #f6e3e8;
     --ukh: #5b7f1f; --ukh-ink: #364d10; --ukh-tint: #ecf3df;
     --ukc: #4a6fa5; --ukc-ink: #263f66; --ukc-tint: #e4ecf6;
+    --cajm: #2e8b8b; --cajm-ink: #145555; --cajm-tint: #e0f2f2;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -543,6 +544,7 @@
 .f-ukmc { --f: var(--ukmc); --f-ink: var(--ukmc-ink); --f-tint: var(--ukmc-tint); }
 .f-ukh { --f: var(--ukh); --f-ink: var(--ukh-ink); --f-tint: var(--ukh-tint); }
 .f-ukc { --f: var(--ukc); --f-ink: var(--ukc-ink); --f-tint: var(--ukc-tint); }
+.f-cajm { --f: var(--cajm); --f-ink: var(--cajm-ink); --f-tint: var(--cajm-tint); }
 
 /* ==========================================================
    Base
@@ -1071,7 +1073,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-emc-senior-2018';
+const DATA_VERSION = '20261018-canada-cjmo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1287,6 +1289,7 @@ REGION_OF.ukj = 'europe';
 REGION_OF.ukmc = 'europe';
 REGION_OF.ukh = 'europe';
 REGION_OF.ukc = 'europe';
+REGION_OF.cajm = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1304,6 +1307,7 @@ const COUNTRIES = [
     { key: 'caq', name: 'Canada Repêchage', flag: '🇨🇦', file: 'Canada-repechage-problems.json', kind: 'years', full: "Canadian Mathematical Olympiad Qualifying Rep\u00eachage (CMOQR)" },
     { key: 'caco', name: 'Canada COMC', flag: '🇨🇦', file: 'Canada-comc-problems.json', kind: 'years', full: "Canadian Open Mathematics Challenge (COMC)" },
     { key: 'caeu', name: 'Canada Euclid', flag: '🇨🇦', file: 'Canada-euclid-problems.json', kind: 'years', full: "CEMC Euclid Mathematics Contest (University of Waterloo)" },
+    { key: 'cajm', name: 'Canada CJMO', flag: '🇨🇦', file: 'Canada-cjmo-problems.json', kind: 'years', full: "Canadian Junior Mathematical Olympiad (CJMO)" },
     { key: 'ie', name: 'Ireland',    flag: '🇮🇪', file: 'Ireland-irmo-problems.json',     kind: 'years' },
     { key: 'in', name: 'India',      flag: '🇮🇳', file: 'India-inmo-problems.json',       kind: 'years' },
     { key: 'kr', name: 'S. Korea KMO', flag: '🇰🇷', file: 'Korea-kmo-problems.json',        kind: 'years' },
