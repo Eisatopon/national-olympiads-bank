@@ -295,6 +295,9 @@
     --caeu: #9f1239; --caeu-ink: #6a0c26; --caeu-tint: #fae1e8;
     --totj: #0e7490; --totj-ink: #0a4f62; --totj-tint: #dcf1f6;
     --emcj: #4d7c0f; --emcj-ink: #33520a; --emcj-tint: #ecf5dc;
+    --rum10: #7c3aed; --rum10-ink: #4c1d95; --rum10-tint: #efe7fd;
+    --rum9: #6d28d9; --rum9-ink: #43188a; --rum9-tint: #ece4fc;
+    --rum8: #5b21b6; --rum8-ink: #3a1577; --rum8-tint: #e9e2fb;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -525,6 +528,9 @@
 .f-caeu { --f: var(--caeu); --f-ink: var(--caeu-ink); --f-tint: var(--caeu-tint); }
 .f-totj { --f: var(--totj); --f-ink: var(--totj-ink); --f-tint: var(--totj-tint); }
 .f-emcj { --f: var(--emcj); --f-ink: var(--emcj-ink); --f-tint: var(--emcj-tint); }
+.f-rum10 { --f: var(--rum10); --f-ink: var(--rum10-ink); --f-tint: var(--rum10-tint); }
+.f-rum9 { --f: var(--rum9); --f-ink: var(--rum9-ink); --f-tint: var(--rum9-tint); }
+.f-rum8 { --f: var(--rum8); --f-ink: var(--rum8-ink); --f-tint: var(--rum8-tint); }
 
 /* ==========================================================
    Base
@@ -1053,7 +1059,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261017-tot-emc-junior';
+const DATA_VERSION = '20261018-moscow-grades-8-10';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1260,6 +1266,9 @@ REGION_OF.caco = 'americas';
 REGION_OF.caeu = 'americas';
 REGION_OF.totj = 'world';
 REGION_OF.emcj = 'europe';
+REGION_OF.rum10 = 'europe';
+REGION_OF.rum9 = 'europe';
+REGION_OF.rum8 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1298,7 +1307,10 @@ const COUNTRIES = [
     { key: 'rur', name: 'Russia Regional grade 11', flag: '🇷🇺', file: 'Russia-regional-problems.json', kind: 'years', full: "All-Russian Olympiad, regional stage, grade 11" },
     { key: 'rur9', name: 'Russia Regional grade 9', flag: '🇷🇺', file: 'Russia-regional-g9-problems.json', kind: 'years', full: "All-Russian Olympiad, regional stage, grade 9" },
     { key: 'rur10', name: 'Russia Regional grade 10', flag: '🇷🇺', file: 'Russia-regional-g10-problems.json', kind: 'years', full: "All-Russian Olympiad, regional stage, grade 10" },
-    { key: 'rum', name: 'Russia Moscow MO', flag: '🇷🇺', file: 'Russia-moscow-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad (oldest grade)" },
+    { key: 'rum', name: 'Russia Moscow MO grade 11', flag: '🇷🇺', file: 'Russia-moscow-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad (oldest grade)" },
+    { key: 'rum10', name: 'Russia Moscow MO grade 10', flag: '🇷🇺', file: 'Russia-moscow-g10-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad, grade 10" },
+    { key: 'rum9', name: 'Russia Moscow MO grade 9', flag: '🇷🇺', file: 'Russia-moscow-g9-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad, grade 9" },
+    { key: 'rum8', name: 'Russia Moscow MO grade 8', flag: '🇷🇺', file: 'Russia-moscow-g8-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad, grade 8" },
     { key: 'rus', name: 'Russia St. Petersburg MO', flag: '🇷🇺', file: 'Russia-stpetersburg-problems.json', kind: 'years', full: "St. Petersburg (Leningrad) Mathematical Olympiad (oldest grade)" },
     { key: 'pl', name: 'Poland', flag: '🇵🇱', file: 'Poland-pmo-problems.json', kind: 'years' },
     { key: 'plr2', name: 'Poland 2nd round', flag: '🇵🇱', file: 'Poland-round2-problems.json', kind: 'years', full: "Polish Mathematical Olympiad, Second Round" },
