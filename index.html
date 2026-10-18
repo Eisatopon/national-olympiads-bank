@@ -305,6 +305,8 @@
     --ukh: #5b7f1f; --ukh-ink: #364d10; --ukh-tint: #ecf3df;
     --ukc: #4a6fa5; --ukc-ink: #263f66; --ukc-tint: #e4ecf6;
     --cajm: #2e8b8b; --cajm-ink: #145555; --cajm-tint: #e0f2f2;
+    --rus10: #8a5a2b; --rus10-ink: #553515; --rus10-tint: #f5ebe0;
+    --rus9: #3b6e8f; --rus9-ink: #1f4157; --rus9-tint: #e2edf4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -545,6 +547,8 @@
 .f-ukh { --f: var(--ukh); --f-ink: var(--ukh-ink); --f-tint: var(--ukh-tint); }
 .f-ukc { --f: var(--ukc); --f-ink: var(--ukc-ink); --f-tint: var(--ukc-tint); }
 .f-cajm { --f: var(--cajm); --f-ink: var(--cajm-ink); --f-tint: var(--cajm-tint); }
+.f-rus10 { --f: var(--rus10); --f-ink: var(--rus10-ink); --f-tint: var(--rus10-tint); }
+.f-rus9 { --f: var(--rus9); --f-ink: var(--rus9-ink); --f-tint: var(--rus9-tint); }
 
 /* ==========================================================
    Base
@@ -1073,7 +1077,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-canada-cjmo';
+const DATA_VERSION = '20261018-stpetersburg-grades-9-10';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1290,6 +1294,8 @@ REGION_OF.ukmc = 'europe';
 REGION_OF.ukh = 'europe';
 REGION_OF.ukc = 'europe';
 REGION_OF.cajm = 'americas';
+REGION_OF.rus10 = 'europe';
+REGION_OF.rus9 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1336,6 +1342,8 @@ const COUNTRIES = [
     { key: 'rum9', name: 'Russia Moscow MO grade 9', flag: '🇷🇺', file: 'Russia-moscow-g9-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad, grade 9" },
     { key: 'rum8', name: 'Russia Moscow MO grade 8', flag: '🇷🇺', file: 'Russia-moscow-g8-problems.json', kind: 'years', full: "Moscow Mathematical Olympiad, grade 8" },
     { key: 'rus', name: 'Russia St. Petersburg MO', flag: '🇷🇺', file: 'Russia-stpetersburg-problems.json', kind: 'years', full: "St. Petersburg (Leningrad) Mathematical Olympiad (oldest grade)" },
+    { key: 'rus10', name: 'Russia St. Petersburg MO grade 10', flag: '🇷🇺', file: 'Russia-stpetersburg-g10-problems.json', kind: 'years', full: "St. Petersburg Mathematical Olympiad, grade 10" },
+    { key: 'rus9', name: 'Russia St. Petersburg MO grade 9', flag: '🇷🇺', file: 'Russia-stpetersburg-g9-problems.json', kind: 'years', full: "St. Petersburg Mathematical Olympiad, grade 9" },
     { key: 'pl', name: 'Poland', flag: '🇵🇱', file: 'Poland-pmo-problems.json', kind: 'years' },
     { key: 'plr2', name: 'Poland 2nd round', flag: '🇵🇱', file: 'Poland-round2-problems.json', kind: 'years', full: "Polish Mathematical Olympiad, Second Round" },
     { key: 'es', name: 'Spain', flag: '🇪🇸', file: 'Spain-ome-problems.json', kind: 'years' },
