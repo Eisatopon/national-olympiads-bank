@@ -319,6 +319,9 @@
     --ar2: #7a9a2e; --ar2-ink: #475c16; --ar2-tint: #eef3e0;
     --ee11: #5a7fb0; --ee11-ink: #2f4b70; --ee11-tint: #e5ecf6;
     --ee10: #b05a8a; --ee10-ink: #6a2f51; --ee10-tint: #f6e5ee;
+    --hr3: #2b6f9e; --hr3-ink: #17415f; --hr3-tint: #e1edf6;
+    --hr2: #9e5b2b; --hr2-ink: #5f3417; --hr2-tint: #f6e9df;
+    --bem: #6b8e23; --bem-ink: #3f5514; --bem-tint: #ecf2df;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -573,6 +576,9 @@
 .f-ar2 { --f: var(--ar2); --f-ink: var(--ar2-ink); --f-tint: var(--ar2-tint); }
 .f-ee11 { --f: var(--ee11); --f-ink: var(--ee11-ink); --f-tint: var(--ee11-tint); }
 .f-ee10 { --f: var(--ee10); --f-ink: var(--ee10-ink); --f-tint: var(--ee10-tint); }
+.f-hr3 { --f: var(--hr3); --f-ink: var(--hr3-ink); --f-tint: var(--hr3-tint); }
+.f-hr2 { --f: var(--hr2); --f-ink: var(--hr2-ink); --f-tint: var(--hr2-tint); }
+.f-bem { --f: var(--bem); --f-ink: var(--bem-ink); --f-tint: var(--bem-tint); }
 
 /* ==========================================================
    Base
@@ -1102,7 +1108,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261019-georgia-1995-1998';
+const DATA_VERSION = '20261019-croatia-g2-g3-belgium-midi';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1333,6 +1339,9 @@ REGION_OF.ar1 = 'americas';
 REGION_OF.ar2 = 'americas';
 REGION_OF.ee11 = 'europe';
 REGION_OF.ee10 = 'europe';
+REGION_OF.hr3 = 'europe';
+REGION_OF.hr2 = 'europe';
+REGION_OF.bem = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1395,6 +1404,8 @@ const COUNTRIES = [
     { key: 'rs', name: 'Serbia', flag: '🇷🇸', file: 'Serbia-smo-problems.json', kind: 'years' },
     { key: 'rst', name: 'Serbia TST', flag: '🇷🇸', file: 'Serbia-tst-problems.json', kind: 'years' },
     { key: 'hr', name: 'Croatia', flag: '🇭🇷', file: 'Croatia-drz-problems.json', kind: 'years' },
+    { key: 'hr3', name: 'Croatia grade 3', flag: '🇭🇷', file: 'Croatia-drz-g3-problems.json', kind: 'years', full: "Croatian national competition (Dr\u017eavno natjecanje), grade 3, A variant" },
+    { key: 'hr2', name: 'Croatia grade 2', flag: '🇭🇷', file: 'Croatia-drz-g2-problems.json', kind: 'years', full: "Croatian national competition (Dr\u017eavno natjecanje), grade 2, A variant" },
     { key: 'hrt', name: 'Croatia HMO', flag: '🇭🇷', file: 'Croatia-hmo-problems.json', kind: 'years' },
     { key: 'no', name: 'Norway', flag: '🇳🇴', file: 'Norway-abel-problems.json', kind: 'years' },
     { key: 'ukt', name: 'UK TST', flag: '🇬🇧', file: 'Uk-tst-problems.json', kind: 'years' },
@@ -1454,6 +1465,7 @@ const COUNTRIES = [
     { key: 'huo', name: 'Hungary OKTV', flag: '🇭🇺', file: 'Hungary-oktv-problems.json', kind: 'years' },
     { key: 'se', name: 'Sweden SMT', flag: '🇸🇪', file: 'Sweden-smt-problems.json', kind: 'years' },
     { key: 'be', name: 'Belgium OMB MAXI', flag: '🇧🇪', file: 'Belgium-omb-maxi-problems.json', kind: 'years' },
+    { key: 'bem', name: 'Belgium OMB MIDI', flag: '🇧🇪', file: 'Belgium-omb-midi-problems.json', kind: 'years', full: "Belgian Mathematical Olympiad (OMB), MIDI category, final" },
     { key: 'itt', name: 'Italy PreIMO TST', flag: '🇮🇹', file: 'Italy-preimo-tst-problems.json', kind: 'years' },
     { key: 'th', name: 'Thailand TMO', flag: '🇹🇭', file: 'Thailand-tmo-problems.json', kind: 'years' },
     { key: 'uy', name: 'Uruguay Final V', flag: '🇺🇾', file: 'Uruguay-final-v-problems.json', kind: 'years' },
