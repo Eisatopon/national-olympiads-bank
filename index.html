@@ -322,6 +322,7 @@
     --hr3: #2b6f9e; --hr3-ink: #17415f; --hr3-tint: #e1edf6;
     --hr2: #9e5b2b; --hr2-ink: #5f3417; --hr2-tint: #f6e9df;
     --bem: #6b8e23; --bem-ink: #3f5514; --bem-tint: #ecf2df;
+    --nlj: #e07b39; --nlj-ink: #7a3d14; --nlj-tint: #fbeadd;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -579,6 +580,7 @@
 .f-hr3 { --f: var(--hr3); --f-ink: var(--hr3-ink); --f-tint: var(--hr3-tint); }
 .f-hr2 { --f: var(--hr2); --f-ink: var(--hr2-ink); --f-tint: var(--hr2-tint); }
 .f-bem { --f: var(--bem); --f-ink: var(--bem-ink); --f-tint: var(--bem-tint); }
+.f-nlj { --f: var(--nlj); --f-ink: var(--nlj-ink); --f-tint: var(--nlj-tint); }
 
 /* ==========================================================
    Base
@@ -1108,7 +1110,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261019-croatia-g2-g3-belgium-midi';
+const DATA_VERSION = '20261019-netherlands-jwo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1342,6 +1344,7 @@ REGION_OF.ee10 = 'europe';
 REGION_OF.hr3 = 'europe';
 REGION_OF.hr2 = 'europe';
 REGION_OF.bem = 'europe';
+REGION_OF.nlj = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1417,6 +1420,7 @@ const COUNTRIES = [
     { key: 'ukh', name: 'UK Hamilton', flag: '🇬🇧', file: 'Uk-hamilton-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Hamilton paper (UKMT)" },
     { key: 'ukc', name: 'UK Cayley', flag: '🇬🇧', file: 'Uk-cayley-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Cayley paper (UKMT)" },
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
+    { key: 'nlj', name: 'Netherlands Junior MO', flag: '🇳🇱', file: 'Netherlands-jwo-problems.json', kind: 'years', full: "Dutch Junior Mathematical Olympiad (Junior Wiskunde Olympiade), final" },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
     { key: 'ch', name: 'Switzerland', flag: '🇨🇭', file: 'Swiss-final-problems.json', kind: 'years' },
