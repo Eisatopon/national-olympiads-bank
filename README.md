@@ -1,4 +1,4 @@
-# World Mathematical Olympiads Bank
+# Pythagoras – World Mathematical Olympiads Bank
 
 Olympiad problem statements in English with LaTeX: national finals and IMO team selection tests, regional and international olympiads, Kangaroo, USA AMC and undergraduate competitions.
 
