@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pythagoras – World Mathematical Olympiads Bank – eisatopon.gr</title>
-<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Armenia, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Georgia, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Mongolia, Montenegro, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Puerto Rico, Romania, Russia, Saudi Arabia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR, Uzbekistan, Venezuela and Vietnam. Build a printable problem set.">
+<meta name="description" content="A searchable archive of national, regional and international mathematical olympiad problems (IMO, EGMO, Balkan MO, APMO, Baltic Way, MEMO, Iberoamerican MO and more) and of national olympiads from Greece, Albania, Argentina, Armenia, Australia, Austria, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, Brazil, Bulgaria, Chile, China, Azerbaijan, Singapore, the UK, Canada, Costa Rica, Croatia, Cuba, Cyprus, the Czech Republic and Slovakia, Denmark, Ecuador, Estonia, Finland, France, Georgia, Germany, Hong Kong, Hungary, Iceland, Ireland, India, Indonesia, Iran, Israel, Italy, Japan, Kazakhstan, Kosovo, Latvia, Kyrgyzstan, Lithuania, Malaysia, Mexico, Moldova, Mongolia, Montenegro, Morocco, the Netherlands, New Zealand, North Macedonia, Norway, Paraguay, Peru, the Philippines, Poland, Portugal, Puerto Rico, Romania, Russia, Saudi Arabia, Serbia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, Uruguay, the USA, the USSR, Uzbekistan, Venezuela and Vietnam. Build a printable problem set.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="icon" type="image/png" href="assets/eisatopon-logo.png">
 <link rel="apple-touch-icon" href="assets/eisatopon-logo.png">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="eisatopon.gr">
 <meta property="og:title" content="Pythagoras – World Mathematical Olympiads Bank">
-<meta property="og:description" content="60,000+ mathematical olympiad problems from 80 countries (1894–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
+<meta property="og:description" content="60,000+ mathematical olympiad problems from 81 countries (1894–2026): national olympiads and TSTs, Balkan MO, IMO, EGMO, Kangaroo, USA AMC, Putnam and IMC. In English with LaTeX. Free, searchable, printable.">
 <meta property="og:url" content="https://eisatopon.github.io/national-olympiads-bank/">
 <meta property="og:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="Pythagoras – World Mathematical Olympiads Bank: 60,000+ problems, 80 countries, 1894–2026">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pythagoras – World Mathematical Olympiads Bank">
-<meta name="twitter:description" content="60,000+ olympiad problems from 80 countries, 1894–2026. In English with LaTeX. Free, searchable, printable.">
+<meta name="twitter:description" content="60,000+ olympiad problems from 81 countries, 1894–2026. In English with LaTeX. Free, searchable, printable.">
 <meta name="twitter:image" content="https://eisatopon.github.io/national-olympiads-bank/assets/share-card.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -324,6 +324,7 @@
     --bem: #6b8e23; --bem-ink: #3f5514; --bem-tint: #ecf2df;
     --nlj: #e07b39; --nlj-ink: #7a3d14; --nlj-tint: #fbeadd;
     --nzt: #4b5d8f; --nzt-ink: #28345a; --nzt-tint: #e5e9f4;
+    --cu: #1f5aa6; --cu-ink: #0f3266; --cu-tint: #e1ebf7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -583,6 +584,7 @@
 .f-bem { --f: var(--bem); --f-ink: var(--bem-ink); --f-tint: var(--bem-tint); }
 .f-nlj { --f: var(--nlj); --f-ink: var(--nlj-ink); --f-tint: var(--nlj-tint); }
 .f-nzt { --f: var(--nzt); --f-ink: var(--nzt-ink); --f-tint: var(--nzt-tint); }
+.f-cu { --f: var(--cu); --f-ink: var(--cu-ink); --f-tint: var(--cu-tint); }
 
 /* ==========================================================
    Base
@@ -958,7 +960,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         </div>
         <div class="stats" id="stats" aria-hidden="true">
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
-            <div class="stat"><b>80</b><span>countries</span></div>
+            <div class="stat"><b>81</b><span>countries</span></div>
             <div class="stat"><b>1894–2026</b><span>years</span></div>
             <p class="updated" id="statUpdated"></p>
         </div>
@@ -1112,7 +1114,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261019-new-zealand-sst-2017';
+const DATA_VERSION = '20261019-cuba';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1348,6 +1350,7 @@ REGION_OF.hr2 = 'europe';
 REGION_OF.bem = 'europe';
 REGION_OF.nlj = 'europe';
 REGION_OF.nzt = 'oceania';
+REGION_OF.cu = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1609,6 +1612,7 @@ const COUNTRIES = [
     { key: 'ge', name: 'Georgia', flag: '🇬🇪', file: 'Georgia-nmo-problems.json', kind: 'years', full: "Georgian Mathematical Olympiad, final round, oldest grade (1995\u20131998: grade XI; since 2015 NAEC Round III, grades XI\u2013XII)" },
     { key: 'me', name: 'Montenegro', flag: '🇲🇪', file: 'Montenegro-nmo-problems.json', kind: 'years', full: "Montenegro State Competition in Mathematics, secondary school (top category)" },
     { key: 've', name: 'Venezuela', flag: '🇻🇪', file: 'Venezuela-ojm-problems.json', kind: 'years', full: "Venezuelan Juvenile Mathematical Olympiad (OJM), national final, 5th year" },
+    { key: 'cu', name: 'Cuba', flag: '🇨🇺', file: 'Cuba-mo-problems.json', kind: 'years', full: "Cuban Mathematical Olympiad (Concurso Nacional)" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
