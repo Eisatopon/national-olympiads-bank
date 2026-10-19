@@ -310,6 +310,8 @@
     --plj: #b4583a; --plj-ink: #6a2f1c; --plj-tint: #f8e8e1;
     --ua10: #4f7a3a; --ua10-ink: #2c4a1f; --ua10-tint: #e6f0df;
     --ua9: #7d5a9e; --ua9-ink: #4a3163; --ua9-tint: #eee6f5;
+    --ro8: #c0803a; --ro8-ink: #6e4519; --ro8-tint: #f8eddf;
+    --ro7: #3a8fa6; --ro7-ink: #1d5363; --ro7-tint: #e1f1f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -555,6 +557,8 @@
 .f-plj { --f: var(--plj); --f-ink: var(--plj-ink); --f-tint: var(--plj-tint); }
 .f-ua10 { --f: var(--ua10); --f-ink: var(--ua10-ink); --f-tint: var(--ua10-tint); }
 .f-ua9 { --f: var(--ua9); --f-ink: var(--ua9-ink); --f-tint: var(--ua9-tint); }
+.f-ro8 { --f: var(--ro8); --f-ink: var(--ro8-ink); --f-tint: var(--ro8-tint); }
+.f-ro7 { --f: var(--ro7); --f-ink: var(--ro7-ink); --f-tint: var(--ro7-tint); }
 
 /* ==========================================================
    Base
@@ -1083,7 +1087,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261018-ukraine-grades-9-10';
+const DATA_VERSION = '20261019-romania-grades-7-8';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1305,6 +1309,8 @@ REGION_OF.rus9 = 'europe';
 REGION_OF.plj = 'europe';
 REGION_OF.ua10 = 'europe';
 REGION_OF.ua9 = 'europe';
+REGION_OF.ro8 = 'europe';
+REGION_OF.ro7 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1385,6 +1391,8 @@ const COUNTRIES = [
     { key: 'det', name: 'Germany TST', flag: '🇩🇪', file: 'Germany-tst-problems.json', kind: 'years', full: "Germany IMO Selection Exams (Auswahlklausuren)" },
     { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
     { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },
+    { key: 'ro7', name: 'Romania NMO grade 7', flag: '🇷🇴', file: 'Romania-nmo-g7-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final stage, grade 7" },
+    { key: 'ro8', name: 'Romania NMO grade 8', flag: '🇷🇴', file: 'Romania-nmo-g8-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final stage, grade 8" },
     { key: 'ro9', name: 'Romania NMO grade 9', flag: '🇷🇴', file: 'Romania-nmo-g9-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 9" },
     { key: 'ro', name: 'Romania NMO grade 10', flag: '🇷🇴', file: 'Romania-nmo-problems.json', kind: 'years' },
     { key: 'ro11', name: 'Romania NMO grade 11', flag: '🇷🇴', file: 'Romania-nmo-g11-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 11" },
