@@ -312,6 +312,8 @@
     --ua9: #7d5a9e; --ua9-ink: #4a3163; --ua9-tint: #eee6f5;
     --ro8: #c0803a; --ro8-ink: #6e4519; --ro8-tint: #f8eddf;
     --ro7: #3a8fa6; --ro7-ink: #1d5363; --ro7-tint: #e1f1f5;
+    --demo10: #5c6bc0; --demo10-ink: #2f3a7a; --demo10-tint: #e6e8f6;
+    --demo9: #b0703c; --demo9-ink: #66401e; --demo9-tint: #f6ebe0;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -559,6 +561,8 @@
 .f-ua9 { --f: var(--ua9); --f-ink: var(--ua9-ink); --f-tint: var(--ua9-tint); }
 .f-ro8 { --f: var(--ro8); --f-ink: var(--ro8-ink); --f-tint: var(--ro8-tint); }
 .f-ro7 { --f: var(--ro7); --f-ink: var(--ro7-ink); --f-tint: var(--ro7-tint); }
+.f-demo10 { --f: var(--demo10); --f-ink: var(--demo10-ink); --f-tint: var(--demo10-tint); }
+.f-demo9 { --f: var(--demo9); --f-ink: var(--demo9-ink); --f-tint: var(--demo9-tint); }
 
 /* ==========================================================
    Base
@@ -1087,7 +1091,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261019-romania-grades-7-8';
+const DATA_VERSION = '20261019-germany-mo-grades-9-10';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1311,6 +1315,8 @@ REGION_OF.ua10 = 'europe';
 REGION_OF.ua9 = 'europe';
 REGION_OF.ro8 = 'europe';
 REGION_OF.ro7 = 'europe';
+REGION_OF.demo10 = 'europe';
+REGION_OF.demo9 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1388,6 +1394,8 @@ const COUNTRIES = [
     { key: 'de', name: 'Germany BWM', flag: '🇩🇪', file: 'Germany-bwm-problems.json', kind: 'years' },
     { key: 'debw1', name: 'Germany BWM Round 1', flag: '🇩🇪', file: 'Germany-bwm-r1-problems.json', kind: 'years', full: "Bundeswettbewerb Mathematik, Round 1" },
     { key: 'dem', name: 'Germany MO', flag: '🇩🇪', file: 'Germany-mo-problems.json', kind: 'years' },
+    { key: 'demo9', name: 'Germany MO grade 9', flag: '🇩🇪', file: 'Germany-mo-g9-problems.json', kind: 'years', full: "German Mathematical Olympiad (Bundesrunde), grade 9" },
+    { key: 'demo10', name: 'Germany MO grade 10', flag: '🇩🇪', file: 'Germany-mo-g10-problems.json', kind: 'years', full: "German Mathematical Olympiad (Bundesrunde / DDR final), grade 10" },
     { key: 'det', name: 'Germany TST', flag: '🇩🇪', file: 'Germany-tst-problems.json', kind: 'years', full: "Germany IMO Selection Exams (Auswahlklausuren)" },
     { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
     { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },

@@ -1,0 +1,1160 @@
+{
+  "competition": "German Mathematical Olympiad (4th Round / Bundesrunde), Grade 9",
+  "years": [
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "On a chessboard a piece \"queen\" is considered, which can move as in the game of chess, i.e. in the eight directions parallel to the edge of the board or diagonally, in each case any number of squares. (See, for example, in Figure A 330941 all moves possible from c4.)\n\nThe length of a move is always taken to be the length of the segment from the centre of the starting square to the centre of the target square of the move. Here the side length of each of the $64$ square fields is taken as the unit of length.\n\nA sequence of moves is sought which satisfies the following conditions:\n\n(1) Every move of the sequence, except the last, shall be followed by a move (i.e. one whose starting square is the target square just reached) that has a greater length than the move it follows.\n\n(2) The target square of the last move shall be adjacent to the starting square of the first move (namely having a side in common with it, not only a corner).\n\n(3) The sequence of moves shall not be exceeded in the sum of the lengths of its moves by any sequence of moves that satisfies conditions (1) and (2).\n\nGive such a sequence of moves and prove that it satisfies conditions (1), (2) and (3)!\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_1994_d1_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all triples $(a, b, c)$ of positive integers $a$, $b$, $c$, none of which is greater than $100$, for which the inequalities $a + b \\ge 101$, $a + c \\le 101$ and $a + b + c \\ge 201$ hold!"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a regular octagon a square is constructed in such a way that the centre of the octagon is a vertex of the square and that between the side length $a$ of the octagon and the side length $b$ of the square the inequality $b \\ge \\frac{4}{3}a$ holds. Then let $f$ denote the area of the region which the octagon and the square have in common.\n\nProve that for a given octagon, $f$ has the same value for all squares corresponding to this description."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Somebody finds the statement\n$$22! = 11240007277{*}{*}607680000.$$\nIn it the two illegible digits indicated by $*$ are also contained. He would like to determine these digits without carrying out the multiplications that correspond to the definition of $22!$.\n\nCarry out such a determination and justify it! It may be used that the stated digits are correct.\n\nNote: For every positive integer $n$, $n!$ is defined as the product of all positive integers from $1$ to $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Using a Cartesian coordinate system, a point of the plane is called \"rational\" if both its coordinates are rational numbers; it is called \"irrational\" if both its coordinates are irrational numbers; it is called \"mixed\" if one of its coordinates is rational and the other irrational.\n\na) Are there lines in the plane which contain only points of one kind? Determine the answer to this question for each of the three kinds \"rational\", \"irrational\", \"mixed\"!\n\nb) Are there lines in the plane in which exactly two kinds are represented by (at least) one point each? Determine the answer to this question for each combination of two of the three kinds!\n\nc) Are there lines in the plane in which each of the three kinds is represented by (at least) one point?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "If $P$ is a point in the interior of a triangle $ABC$, the following construction can be carried out: the parallel through $P$ to $CB$ meets $AB$ at $S_1$, the parallel through $S_1$ to $AC$ meets $BC$ at $S_2$, the parallel through $S_2$ to $BA$ meets $CA$ at $S_3$. In this way one can continue for $k = 1, 2, 3, \\dots$:\n\nthe parallel through $S_{3k}$ to $CB$ meets $AB$ at $S_{3k+1}$, the parallel through $S_{3k+1}$ to $AC$ meets $BC$ at $S_{3k+2}$, the parallel through $S_{3k+2}$ to $BA$ meets $CA$ at $S_{3k+3}$.\n\nProve that for every triangle $ABC$ and every point $P$ in the interior of this triangle, one of the parallels constructed in this way must pass through $P$ again!"
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The inhabitants of the planet Quadron differ by their sex, and indeed there are, unlike on Earth, exactly four different sexes. Politically the population is divided into exactly four tribes. When the planetary council meets, each tribe sends exactly four delegates, one of each sex.\n\nA seating arrangement is then prescribed in which the $16$ seats are arranged in a square formation in four rows and four columns. In each row and in each column, all four tribes and all four sexes must be represented.\n\nGive a possible seating arrangement and confirm that all the stated conditions are fulfilled for this seating arrangement!"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Show that the number $z = 7 + 7^3 + 7^5 + 7^7 + \\dots + 7^{93} + 7^{95}$ is divisible by $336$!"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "On the side $AB$ of a square $ABCD$ a point $X \\ne A$ is chosen. Then the square is divided by the segments $AC$ and $XD$ into four partial regions.\n\nDetermine all possibilities of choosing $X$ such that there are natural numbers $p$, $q$ and $r$ for which the areas of these partial regions, in a suitable order, are in the ratio $1 : p : q : r$!"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Axel performs a card trick. For it he uses a skat pack consisting of $4$ cards each of the following kinds, to which he assigns the following point values:\n$$\\begin{array}{|l||c|c|c|c|c|c|c|c|} \\hline \\text{Kind of card} & 7 & 8 & 9 & 10 & \\text{Jack} & \\text{Queen} & \\text{King} & \\text{Ace} \\\\ \\hline \\text{Point value} & 7 & 8 & 9 & 10 & 2 & 3 & 4 & 11 \\\\ \\hline \\end{array}$$\nWhile he is not in the room, his friends are to form piles of cards according to the following rule: for each pile, one card is first laid face up, and the pile thus begun receives as many points as the point value of this card indicates. Then further cards are laid face down on the pile; for each of these cards the score of the pile is increased by $1$. This is continued only until the score $11$ is reached; the pile is then complete. It is then turned over, so that the card that was previously lowest now lies face down on top.\n\n(1st example: lay down a 7 face up, lay four cards face down on it, turn the pile over.\n2nd example: lay down an Ace face up, turn over.)\n\nSuch piles are formed a number of times and laid side by side on the table. If at the end cards are left over, these \"remaining cards\" are laid face down beside the piles, so that they can be counted individually.\n\nThen Axel is called in. He claims that from the number of completed piles and the number of remaining cards he can find the sum of the point values of the cards now on top of the piles. How is that possible?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The insphere $K$ is inscribed in a regular tetrahedron $ABCD$ (that is the sphere which touches all four triangular faces $ABC$, $ABD$, $ACD$, $BCD$). A second regular tetrahedron $PQRS$ is inscribed in this sphere (i.e. its vertices $P$, $Q$, $R$, $S$ all lie on the surface of the sphere $K$).\n\nWhat ratio $V_2 : V_1$ does the volume $V_2$ of such a tetrahedron $PQRS$ form with the volume $V_1$ of $ABCD$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "How many pairs $(x; y)$ of integers $x$, $y$ satisfying the inequality $|x - 30| + |y - 10| < 100$ are there in total?"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Figure A 350941 below shows a $4 \\times 4$ chessboard. A knight stands on the square A1 and is to reach the square D4 in $n$ knight's moves. The condition is that each square is occupied at most once.\n\nDetermine all those numbers $n$ for which a path of $n$ such knight's moves can be found!\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_1996_d1_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Alex and Beate are occupied with the following problem:\n\nIn a square of given side length $a$, $n$ congruent circles, as large as possible, are to be inscribed in such a way that no two circles have an interior point in common and no point of a circle lies outside the square.\n\nFor $n = 6$ Alex drew the circles in the arrangement of Figure A 350942 a, Beate as in Figure A 350942 b. Who drew the larger circles?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_1996_d1_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "About three lines $g$, $h$ and $j$ it is assumed that they are parallel to one another, $h$ lying between $g$ and $j$. Through a point $P$ on $g$ the two lines are drawn which make angles of $60^\\circ$ with $g$. These lines meet $h$ and $j$ in four points in total.\n\nProve that from these assumptions it always follows: from the four points of intersection mentioned last, two points $A$ and $B$ can be chosen such that a point $C$ exists on $g$ for which $ABC$ is an equilateral triangle."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "We consider those ten-digit numbers in which each of the ten digits $0, 1, \\dots, 9$ occurs exactly once.\n\nProve that among these numbers there are at least $50\\,000$ which are divisible by $11$!"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Somebody seeks a series $S = (a_1, a_2, \\dots, a_n)$ of $n$ natural numbers of the form\n$$a_1,\\ a_2 = a_1 + 1,\\ a_3 = a_2 + 1,\\ \\dots,\\ a_n = a_{n-1} + 1$$\nwith the property that none of the numbers $a_1, a_2, \\dots, a_n$ has a digit sum divisible by $5$.\n\na) What is the greatest possible length $n$ that such a series $S$ can have?\n\nb) How many such series $S$ of this greatest possible length $n$ are there in total in the range of the natural numbers from $1$ to $1000$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Prove that for every acute-angled triangle $ABC$ the following statement (*) holds!\n\n(*) If $A'$, $B'$ and $C'$ are the feet of the altitudes perpendicular to $\\overline{BC}$, $\\overline{CA}$ and $\\overline{AB}$ respectively, then\n$$|AC'|^2 + |BA'|^2 + |CB'|^2 = |C'B|^2 + |A'C|^2 + |B'A|^2.$$\n\nInvestigate furthermore whether the statement (*) also holds for every right triangle $ABC$!"
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A photo club wants to produce a series of sheets for distribution. Each sheet is to carry $6$ pictures, as shown in Figure A 360941.\n\nFor such pictures a total of $10$ different motifs are available. Every possible combination of $6$ different ones of these motifs is to occur, in an arbitrary order, on exactly one sheet. How many copies (smallest possible number) of each of the $10$ motifs are sufficient?\n\nNote: Unlike what is stated in the preamble, for this problem it would not be sufficient merely to quote a ready-made formula (applicable to problems of this type) as a known fact and then apply it only formally. Rather, if such a formula is to be used, a justification of it must additionally be given (one that is sufficient at least for the special problem posed here).\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_1997_d1_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $100$ fractions $Q_i = \\dfrac{a_i}{b_i}$ $(i = 1, \\dots, 100)$ with natural numbers $a_i$ and $b_i$ be chosen arbitrarily, subject only to the condition that at least one pair $(i, j)$ with $Q_i \\ne Q_j$ exists.\n\nProve that the fraction $\\dfrac{a_1 + a_2 + \\dots + a_{100}}{b_1 + b_2 + \\dots + b_{100}}$ is greater than the minimum of the $Q_i$ and less than the maximum of the $Q_i$!"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABCD$ be a trapezoid with $\\overline{AB} \\parallel \\overline{CD}$ and $|AB| = 2 \\cdot |CD|$. Let the point of intersection of the diagonals $\\overline{AC}$ and $\\overline{BD}$ be $S$. Every line $g$ through $S$ divides the trapezoid into two parts; let their areas be denoted by $F_1, F_2$ in such a way that $F_1 > F_2$.\n\n(a) Prove that there is exactly one line $g$ through $S$ for which the ratio $v = F_1 : F_2$ takes its greatest possible value!\n\n(b) Calculate this greatest possible value of $v$!"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "From the following scheme exactly eight numbers are to be crossed out. The only condition required is that in each row and in each column exactly two numbers are removed.\n$$\\begin{array}{|c|c|c|c|} \\hline 1 & 2 & 3 & 4 \\\\ \\hline 5 & 6 & 7 & 8 \\\\ \\hline 9 & 10 & 11 & 12 \\\\ \\hline 13 & 14 & 15 & 16 \\\\ \\hline \\end{array}$$\nProve that after every such crossing out the same sum of the eight remaining numbers results!"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Investigate whether there is a positional system with base $B$ in which $17^3 = 21^2$ holds! In case of existence, give all such bases $B$!"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In an arbitrarily given circular sector $AMB$ whose central angle $AMB$ has a size less than $90^\\circ$, perpendiculars are dropped from an arbitrary point $P$ of the arc $\\widehat{AB}$ onto the radii $\\overline{MA}$ and $\\overline{MB}$; let the feet be denoted by $C$ and $D$ respectively.\n\nProve that the length of the segment $\\overline{CD}$ is independent of the position of the point $P$ on the arc $\\widehat{AB}$!"
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove the following statement:\nIf $p = n^{n^n} + n^n + n + 1$ and $n$ are primes, then $p = n^{n^n} - n^n + n - 1$ is also a prime."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A tetrahedron $ABCD$ is inscribed in a hemisphere with radius $r$ in such a way that the vertices $A, B, C$ lie on the circumference of the base of the hemisphere and $D$ lies at the apex of the hemisphere. Let the volume of the tetrahedron be denoted by $V$, the perimeter of the triangle $ABC$ by $u$.\nProve that in the case in which the volume of the tetrahedron is maximal,\n$$V = \\frac{u^3}{324}. \\qquad (1)$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Andreas is experimenting with a computer program. The program chooses at random $101$ numbers from the natural numbers from $1$ to $200$ and searches among them for a pair of numbers for which one number is a divisor of the other. Such a pair of numbers is always output. Andreas wonders about this.\nBrigitte claims that there is always such a pair of numbers. She could prove this even without a computer program, e.g. by skilful use of the fact that among the numbers there are only $100$ even numbers. What proof could Brigitte give for her claim?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "a) Are there three consecutive odd numbers for which the following holds:\nThe sum of the squares of these three numbers is a four-digit number formed from four equal digits?\n\nb) If this is the case, give all these triples."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The triples of positive real numbers $(a; b; c)$ are to be determined for which\n$$a + 2b^2 + 3c^3 + \\frac{1}{a} + \\frac{2}{b^2} + \\frac{3}{c^3} = 12.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Of a figure (see sketch) the following is known:\n\n- The line through $E$ and $F$ is parallel to the line through $A$ and $B$, and\n\n- the area of the triangle $FEC$ is $40\\,\\mathrm{cm}^2$, and the sum of the areas of the triangles $ADF$ and $DBE$ is $150\\,\\mathrm{cm}^2$.\n\nDetermine whether the area of the triangle $DEF$ follows uniquely from this information, and if so calculate this area.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_1998_d2_p6_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A circle $k$ is given.\nProve that of all quadrilaterals inscribed in this circle (cyclic quadrilaterals), the squares have the greatest area."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In a number system with base $a$ ($a \\in \\mathbb{N}$, $a > 1$), let the number $z = 100\\,000\\,004$ be given.\nProve that there is no natural number $a$ for which $z$ is a prime."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all triples $(x, y, z)$ of positive real numbers for which\n$$x + 3y^3 + 5z^5 + \\frac{1}{x} + \\frac{3}{y^3} + \\frac{5}{z^5} = 18. \\qquad (*)$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all triples $(x, y, z)$ of natural numbers $x$, $y$ and $z$ for which\n\n(1) $x > y > z > 0$ and\n\n(2) $\\frac{1}{x} + \\frac{2}{y} + \\frac{3}{z} = 1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that in the interior of a regular tetrahedron $ABCD$, for every quadruple $(a, b, c, d)$ of positive real numbers, there is a point $S$ whose distances from the four faces of the tetrahedron are in the ratio $a : b : c : d$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a plane, let $ABC$ be an equilateral triangle and $P$ an arbitrary point.\nShow that then always\n$$|AP| \\le |BP| + |CP|. \\qquad (1)$$\nConstruct furthermore a point $P$ with $P \\ne B$ and $P \\ne C$ for which the equality sign holds in (1)."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $M$ be the set of all those numbers that can be represented as the product of four consecutive positive even numbers.\n\na) Determine the largest integer $t$ which is a divisor of all numbers from $M$.\n\nb) Determine the largest natural number $m$ for which every number from $M$ has at least $m$ positive divisors.\n\nc) Determine the smallest number from $M$ which has more than $100$ positive divisors."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all pairs $(x, y)$ of integers $x$ and $y$ that satisfy the equation\n$$79x^2 + 2xy + y^2 = 1999. \\qquad (1)$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A cube $ABCDEFGH$ (see figure) with edge length $6\\,\\mathrm{cm}$ is dissected into partial solids by plane cuts through the points $A, F, H$; $B, E, G$; $C, F, H$; $D, E, G$; $E, B, D$; $F, A, C$; $G, B, D$ and $H, A, C$.\n\na) Determine the number of these partial solids!\n\nb) Calculate the volume of each of these partial solids!\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2000_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In a right triangle $ABC$, let $P$ be the point of contact of the incircle with the hypotenuse $AB$. Let the lengths of the segments $\\overline{AP}$ and $\\overline{BP}$ be $d$ and $e$. Prove that then for the area $F$ of the triangle\n$$F = d \\cdot e \\qquad (1)$$\nholds."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $P(x)$ be a polynomial of third degree, i.e.\n$P(x) = ax^3 + bx^2 + cx + d$ with integers $a, b, c, d$.\n\nLet $p$ and $q$ be two primes between which there is no further prime, and suppose it is known that $P(p) = 1234$ and $P(q) = 4321$.\n\nDetermine whether $p$ and $q$ can be determined uniquely from this information, and if so, determine $p$ and $q$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "From a total of $220$ congruent balls, a spatial structure which we call a ball pyramid is to be built by stacking, as follows:\n\nThe base of the structure is a board with $55$ hollows, each of which can hold one ball. The hollows are arranged so that the centres of the outer balls lie on the sides of an equilateral triangle and neighbouring balls touch one another.\n\nOne ball is placed in each hollow. On this first layer a second layer of balls is placed in such a way that every ball of this layer touches three balls of the layer beneath. This kind of layering is continued until only one ball can be placed on the $3$ balls of the layer beneath.\n\na) Prove that exactly $220$ balls are needed for the structure described in this way.\n\nb) Investigate whether the set of $220$ balls can be partitioned into subsets of at least $4$ balls each in such a way that from each of these subsets a smaller ball pyramid can be built (each time again starting on the board).\n\nc) If a partition as required in b) into seven smaller pyramids is possible, give all these partitions."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "a) Prove: For every natural number $a$, the number $a^2$ is either of the form $4k$ or of the form $8k + 1$, where in each case $k$ is a natural number.\n\nb) Is there an $n$-digit square number with $n > 1$ consisting entirely of equal digits?\nProve your answer!"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all those pairs $(x, y)$ of real numbers $x, y$ by which the system of the two inequalities\n$$x^2 \\le \\frac{2000y^2 + 2x - 1}{2001}, \\qquad y^2 \\le \\frac{2000x^2 - 2y - 1}{2001}$$\nis satisfied!"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "a) Let a quadrilateral $ABCD$ be inscribed in a circle $k$. Let the lengths of its sides $\\overline{AB}, \\overline{BC}, \\overline{CD}, \\overline{DA}$ be denoted as usual in this order by $a, b, c, d$. A second quadrilateral $A'B'C'D'$ inscribed in the circle $k$ also has $a, b, c, d$ as the lengths of its sides, namely in an arbitrary order (which may thus also differ from the order $\\overline{A'B'}$, $\\overline{B'C'}$, $\\overline{C'D'}$, $\\overline{D'A'}$).\nProve that it is possible to form two quadrilaterals $ABCD$ and $A'B'C'D'$ such that all these hypotheses are satisfied and the two quadrilaterals are not congruent to each other!\n\nb) Prove that any two quadrilaterals satisfying the hypotheses stated in a) have equal area!"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "a) A square $ABCD$ with side length $a$ is given. On the side $AB$ an equilateral triangle $BAE$ is erected outwards. The triangle $BAE$ \"rolls\" in the positive sense of rotation around the square in such a way that in the first movement the triangle performs a rotation about the point $B$ until point $E$ lies on the point $C$. Then a similar rotation about $C$ follows, and so on. The rotation is continued until finally point $E$ has returned to its starting position.\nHow long is the path that point $E$ has covered in this \"rolling\"?\n\nb) On the side $AB$ an equilateral triangle $ABI$ is now drawn into the interior of the square. The triangle $ABI$ now \"rolls\" inside the square until the point $I$ reaches its original place again for the first time.\nHow long is the path that point $I$ has covered in this \"rolling\"?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "How many ways are there of writing the number $2000$ as a product of three natural numbers?\nHere product representations which differ only in the order of the factors are also to count as different from one another."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In the interior of a square of side length $12\\,\\mathrm{cm}$, let $20$ points be chosen arbitrarily, but such that no three lie on the same line.\nProve that there is at least one triangle whose vertices coincide with such points and whose area is at most $8\\,\\mathrm{cm}^2$."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that for every triangular pyramid $ABCD$ the following holds:\nIf the triangles $ABD$, $ACD$ and $BCD$ are all right-angled at $D$, then the sum of the squares of their areas is equal to the square of the area of the triangle $ABC$. (\"Spatial version of Pythagoras' theorem\")"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The mother bear scolds her three sons: \"Which of you has eaten all our honey? Yesterday there was still a litre there, and today the pot is empty.\" The sons talk excitedly all at once.\n\nAlbärt says: \"I ate by far the least honey.\"\nBärtram says: \"The others together ate at least half of the honey, and Christobär ate at least as much honey as Albärt.\"\nChristobär says: \"Albärt had more than twice as much honey as I.\"\nAlbärt says: \"That is not true at all!\"\nBärtram says: \"I had the least and Christobär the most.\"\nChristobär says: \"Bärtram ate at least as much honey as the two of us together.\"\n\nThe mother bear knows her sons and knows that each lied once and told the truth once.\nWho ate how much honey?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine the greatest common divisor of all numbers of the form $n^4 - 4n^2$ with $n \\in \\{1, 2, 3, \\dots\\}$ which end in zero."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "a) Calculate the value of the sum $S_n = 1 - 2 + 3 - 4 + \\dots + (-1)^{n-1} \\cdot n$ in terms of $n$, where $n$ is a natural number with $n > 0$.\n\nb) Determine $S_1 + S_2 + S_3 + S_4 + \\dots + S_{2000} + S_{2001} + S_{2002}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that for every natural number $n \\ge 5$: $2^n > n^2$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $P$ be an interior point of a segment $\\overline{AB}$. Let $AO_1P$ and $BO_2P$ be two isosceles right triangles with hypotenuses $\\overline{AP}$ and $\\overline{BP}$ respectively, both lying on the same side of the line $AB$.\nDetermine the set of all midpoints of the segments $\\overline{O_1O_2}$ as $P$ runs through the interior points of the segment $\\overline{AB}$."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove: For every pair $(m; n)$ of natural numbers with $m > 1$ and $n > 1$, the number $m^n$ can be represented as the sum of $m$ consecutive odd numbers.\n\nExamples: $3^2 = 1 + 3 + 5$, $6^3 = 31 + 33 + 35 + 37 + 39 + 41$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "a) Show that a cyclic quadrilateral $ABCD$ can be constructed uniquely if its side $\\overline{AB}$ with length $a$ as well as the size $\\sigma$ of the angle $\\angle BAC$, the size $\\tau$ of the angle $\\angle CBD$ and the size $\\phi$ of the angle $\\angle DCA$ are given.\n\nb) Which conditions (stated as requirements on all or some of the quantities $a$, $\\sigma$, $\\tau$, $\\phi$) are necessary and sufficient for such a cyclic quadrilateral to exist?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In the equation\n$$n \\cdot (\\mathtt{ZAHL}) = \\mathtt{SUMME} \\qquad (1)$$\na natural number is to be substituted for $n$ and digits for the capital letters, namely equal digits for equal capital letters and different digits for different capital letters, so that ZAHL becomes a four-digit number and SUMME a five-digit number in the decimal positional system. Such a substitution is called a \"solution\" if equation (1) is satisfied.\n\na) Find a solution!\n\nb) Of all solutions, find the one for which the number SUMME is as small as possible!\n\nNote: A number of $n$ digits is called $n$-digit exactly when its first digit is different from zero."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all triples of integers $(a; b; c)$ for which the equation\n$$2a^2 + b^2 = 5c^2 \\qquad (1)$$\nholds!"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "What is the greatest possible number of elements that a set $M$ of natural numbers can have if $M$ satisfies the following condition:\n\nFor every subset $\\{a; b; c\\}$ of $M$ (with $a \\ne b$, $a \\ne c$, $b \\ne c$), both inequalities $a \\cdot b \\cdot c > 37$ and $a + b + c < 37$ hold."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle and $D$ the point of intersection of the interior angle bisector through $A$ with the side $\\overline{BC}$. Further, let the following notation be chosen:\n$$|AB| = c, \\quad |AC| = b, \\quad |AD| = w, \\quad |BD| = v, \\quad |CD| = u.$$\nShow that then $w^2 = (b + u) \\cdot (c - v)$."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The adjacent figure A 430941 shows a cubic space lattice of edge length $2$ formed from unit segments. An ant moves along the lattice bars on a shortest path from $A_0$ to $K_2$. How many different such shortest paths are there for the ant if it moves\n\na) along arbitrary lattice bars,\n\nb) only along the lattice bars on the surface of the cube?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2004_d1_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove: From every set $M$ of $1003$ positive integers, all of which are less than $2004$, two numbers can always be chosen whose sum lies in $M$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "How many ordered pairs of clock times are there in which the positions of the hour hand and the minute hand are exactly interchanged? Only clock times lying between $0$ and $12$ o'clock are to be considered, at which the two hands do not lie exactly on top of each other."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In a plane lie $10$ circles $K_1, K_2, \\dots, K_{10}$ with radii $r_1, r_2, \\dots, r_{10}$ such that any two of the discs have no interior points in common. In the same plane let there lie a further circle $K_0$ with radius $r_0$ for which\n$$r_0^2 = r_1^2 + r_2^2 + \\dots + r_{10}^2$$\nholds.\n\nProve that for $11$ circles of this kind the following always holds: the sum of the areas of the regions lying outside $K_0$ but inside $K_1, K_2, \\dots$ or $K_{10}$ is equal to the area of the region lying outside $K_1, K_2, \\dots$ and $K_{10}$ but inside $K_0$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Investigate whether there are infinitely many natural numbers $n$ for which $2^n - 3$ and $3^n - 2$ have a common divisor greater than $1$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a triangle $ABC$, the interior angle $ACB$ is divided by the median $\\overline{CM}$ and the altitude $\\overline{CD}$ into three equal parts.\n\nDetermine the sizes of the interior angles of the triangle $ABC$."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let the equation\n$$4y^2 + 4xy + x + 6 = 0$$\nbe given. Determine all real numbers $x$ for which there are real numbers $y$ such that this equation is satisfied!"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let the set $M$ consist of $15$ distinct natural numbers, all of which are greater than zero and less than $2005$.\n\nShow that it is always possible to choose from such a set $M$ two disjoint non-empty subsets such that the sum of the elements of the one is equal to the sum of the elements of the other."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let a circle $k$ with diameter $d$ and a fixed point $P$ on its circumference be given. For every point $B$ on the circumference of $k$, let $k_B$ be the circle congruent to $k$ which touches $k$ externally at $B$. On $k_B$ let the point $P_B$ be situated such that the arcs $\\widehat{BP}$ on $k$ and $\\widehat{P_BB}$ on $k_B$ are of equal length. Let $H$ be, as sketched in the figure, the locus of all points $P_B$ as $B$ runs through the circle $k$.\n\nShow that every line through $P$ which does not pass through the centre of $k$ meets the curve $H$ in exactly two points different from $P$, whose distance is equal to $2d$.\n\nNote: On a circular arc $\\widehat{AB}$, $B$ follows $A$ in the counterclockwise direction.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2005_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that there are no pairs $(x; y)$ of integers which satisfy the equation\n$$5x^2 - 11y^2 = 21.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In the rectangle $ABCD$, let $M$ be an interior point such that $|\\angle AMB| + |\\angle CMD| = 180^\\circ$.\n\nHow large is then the sum $|\\angle MBA| + |\\angle MDC|$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A lock has $9$ levers arranged in a $3 \\times 3$ array. Each lever is either horizontal or vertical. To open the lock, all levers must be vertical. If a lever changes its position, then all levers in the same row and all levers in the same column change their position (see diagram). The positions which all nine levers occupy at the same time we call a setting of the lock.\n\na) Show that it is not possible to open the lock from every setting!\n\nb) Show that among the $512$ possible settings there are exactly $32$ from which the lock can be opened!\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2005_d2_p6_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "How many integers $n$ with $\\frac{2^{2005}}{45} < n \\le 2^{2005}$ are there which can be represented in the form $2^a \\cdot 45^b$ with integers $a, b$?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all pairs $(p; q)$ of primes for which there are positive integers $x$ and $y$ such that\n$$p = x^2 - y,$$\n$$q = y^2 + 3x - 7$$\nholds."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In an acute-angled triangle $ABC$, let $H$ be the foot of the perpendicular dropped from $C$ to $AB$. Further, let $P$ and $Q$ be the feet of the perpendiculars dropped from $H$ to $AC$ and $BC$ respectively.\n\nSuppose moreover: the circumcircles of the triangles $AHP$ and $HBQ$ meet the segment $\\overline{PQ}$ at points $S$ and $T$ respectively, different from $P$ and $Q$ (see figure).\n\nProve that the circumcircle of the triangle $HTS$ touches the line $AB$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2006_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine the number of all nine-digit natural numbers, written as usual in the decimal system, for which\n$$\\left(1 + \\gcd(n; 90)\\right)^4 = Q(Q(n)).$$\n\nNote: A natural number is called nine-digit if it can be represented with $9$ digits in the decimal system, the first digit being different from zero. $Q(n)$ denotes the digit sum of the natural number $n$ (and thus $Q(Q(n))$ the digit sum of the digit sum of $n$). $\\gcd$ abbreviates greatest common divisor."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all real triples $(x; y; z)$ which are solutions of the following system of equations:\n$$x + y + \\frac{1}{z} = 3$$\n$$y + z + \\frac{1}{x} = 3$$\n$$z + x + \\frac{1}{y} = 3.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In the drawing plane, let a sequence $A_1, A_2, A_3, A_4, \\dots$ of points be given such that:\n\n– For all positive integers $i$, the triangle $D_i = A_iA_{i+1}A_{i+2}$ has a right angle at $A_{i+2}$.\n\n– The point $A_{i+3}$ lies in the interior of the segment $\\overline{A_iA_{i+1}}$.\n\nHow can one construct, in finitely many construction steps from the points $A_1$, $A_2$ and $A_3$, all points which lie in the interior of each of the triangles $D_i$ $(i = 1, 2, \\dots)$?"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all triples $(x; y; z)$ of real numbers that solve the following system of equations:\n$$x + y + z = 1, \\qquad (1)$$\n$$\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = 1. \\qquad (2)$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Determine all convex quadrilaterals which have the following property:\n\nOn each of the four sides of the quadrilateral there exists a point (possibly one of the endpoints of this side) which, together with the two endpoints of the opposite side, forms an equilateral triangle.\n\nNote: A quadrilateral $ABCD$ is called convex if the diagonals $\\overline{AC}$ and $\\overline{BD}$ lie in the interior of the quadrilateral $ABCD$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Nicole's room is to be newly tiled. Only the tiles shown here are available, consisting of $3$ and $4$ unit squares respectively.\n\nThe figure shows the 3-tile (top) and the two 4-tiles (bottom).\n\na) Show that for $n = 1, 2, 3, 4, 5$ it is not possible to tile a square room consisting of $n \\times n$ unit squares with the 3-tiles and 4-tiles shown.\n\nb) Show that for every integer $n$ with $n \\ge 6$ it is possible to tile a square room of side length $n$ with the 3-tiles and 4-tiles shown.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2007_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n = p_1 \\cdot p_2 \\cdot \\ldots \\cdot p_k$ be a product of primes with $p_1 < p_2 < \\dots < p_k$ and $k > 1$.\n\nShow that\n$$p_1 + p_2 + \\dots + p_k \\le \\frac{5}{6}n$$\nholds."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let the points $C_1$ and $C_2$ lie in the interior of the sides $\\overline{B_1A}$ and $\\overline{B_2A}$, respectively, of the rectangle $AB_1BB_2$. Further, let the point $C$ be chosen so that $AC_1CC_2$ is also a rectangle.\n\nDetermine the area $F$ of the triangle $ABC$ (possibly degenerated to a segment) solely from the areas $F_1$ and $F_2$ of the quadrilaterals $BCC_1B_1$ and $CBB_2C_2$!"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all pairs $(x; y)$ of real numbers for which the numbers\n$$x + y, \\qquad xy \\qquad\\text{and}\\qquad x^3 - x^2y - xy^2 + y^3$$\nare prime numbers."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "On an old slip of paper, Matthias has found the problem of determining four integers $a, b, c, d$ that satisfy the equation\n$$\\frac{1}{47}\\left(a^2 + b^2 + c^2 + d^2\\right) = ab + ac + ad + bc + bd + cd. \\qquad (1)$$\n\na) On the slip there is already a solution, namely $b = 3$, $c = 2$ and $d = -3$; only the value of $a$ is illegible. Which values come into question for $a$?\n\nb) Show that for all integers $a, b, c, d$ which satisfy equation (1), a square number stands on both sides of the equation!\n\nc) Show that for every square number $q$ there is a quadruple $(a; b; c; d)$ of integers for which equation (1) is satisfied and the value $q$ stands on both sides!"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A chessboard-like game board of $n \\times n$ square fields with $n \\ge 2$ is given. On the fields, $K$ draughts pieces are distributed arbitrarily, where several draughts pieces may stand on top of one another. Such a distribution is called a starting position.\n\nWe investigate the following one-person game: a move consists in selecting a field on which there are at least as many pieces as it has neighbouring fields, and from these pieces moving one onto each of these neighbouring fields. Two fields are called neighbouring if they have a common edge. The game is over when no move can be made any more.\n\na) For $n = 2$ and $K = 4$, find all starting positions for which there is a sequence of moves after which the one-person game ends.\n\nA starting position is called finite if there is a sequence of moves after which the game is over.\n\nb) Prove for arbitrary $n$ and $K$ that for every finite starting position and every way of playing the following holds: for every field, the frequency with which it is selected in the whole game is independent of the way of playing.\n\nNote: From statement b) it follows in particular that there is no starting position for which the finiteness of the game depends on the way of playing, since the game, regardless of the way of playing, always ends after the same number of moves. This may not, however, be presupposed at the outset."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In space, a (not necessarily regular) tetrahedron $ABCD$ is given. Let the foot $H$ of the perpendicular dropped from $D$ to the plane determined by $A, B, C$ lie in the interior of the triangle $ABC$. Let the feet of the perpendiculars from $H$ to the lines $AD$, $BD$ and $CD$ be $X$, $Y$ and $Z$ respectively.\n\nShow that the points $A$, $B$, $C$, $X$, $Y$ and $Z$ lie on a common sphere."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In a hiking area there are three resting places $A$, $B$ and $C$. A path between two of these resting places counts as convenient if it connects them directly or leads via two direct connections through the third.\n\nOf these two kinds together, there are $10$ convenient paths from $A$ to $B$, $14$ from $B$ to $C$ and fewer than $12$ from $C$ back to $A$. How many direct connections between two of the three resting places can there be in total in the path network between $A$, $B$ and $C$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "An acute-angled triangle $ABC$ with circumcentre $O$ is given. The circumcentres of the triangles $AOC$ and $BCO$ are denoted by $Q$ and $R$ respectively.\n\nShow that the circumcircles of the triangles $ABO$ and $QOR$ touch each other."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine the greatest common divisor of all numbers of the form $a^3b - ab^3$, where $a$ and $b$ are integers such that $a^2 + b^2$ is a square number."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Anton and Bärbel play the following game: from a stack of $100$ cards they alternately draw either $2$, $5$ or $6$ cards. Anton always makes the first move. The winner is whoever can make the last permitted move.\n\nInvestigate which of the two can force victory, and give a winning strategy."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be an arbitrary, not necessarily regular, tetrahedron with volume $1$. Let $S_A$, $S_B$, $S_C$ and $S_D$ denote, in this order, the centroids of its triangular faces $BCD$, $ACD$, $ABD$ and $ABC$ respectively.\n\nWhat values can the volume of the tetrahedron $S_AS_BS_CS_D$ take?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all pairs $(x, y)$ of real numbers that satisfy the following three conditions:\n\n(1) $(1 + x^3)(1 + y^3) = 1$,\n\n(2) $\\sqrt[3]{|(1 + x)(1 + y)|}$ is rational,\n\n(3) $\\sqrt[3]{|xy(x + y)|}$ is rational."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $C$ be a point of the segment $\\overline{AB}$. On $\\overline{AB}$ and $\\overline{CB}$ the semicircles $h_1$ and $h_2$ respectively are erected on the same side. The circle $k_3$ touches $h_1$ from inside, $h_2$ from outside, and furthermore the segment $\\overline{AB}$.\n\nIf the radii of $h_2$ and $k_3$ are both $3\\,\\mathrm{cm}$, what is the radius of $h_1$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2009_d2_p4_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let the digit representation of the positive integer $z$ in the decimal system be\n$$z = [z_{n-1}z_{n-2}\\dots z_0]$$\nwith the digits $z_{n-1}, z_{n-2}, \\dots, z_1, z_0$. For each such number $z$, a value $S(z)$ is calculated by adding the seventh powers of these digits, i.e. according to the following rule:\n$$S(z) = S([z_{n-1}z_{n-2}\\dots z_0]) = z_{n-1}^7 + z_{n-2}^7 + \\dots + z_0^7.$$\nThere are numbers $z$ for which $S(z) = z$, for example $z = 1\\,741\\,725$, since\n$$1^7 + 7^7 + 4^7 + 1^7 + 7^7 + 2^7 + 5^7 = 1\\,741\\,725.$$\nInvestigate whether there are finitely or infinitely many positive integers $z$ with $S(z) = z$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A natural number $k$ with $k > 0$ is given.\n\nFor a natural number $n$ with $n > 1$, the sum $S = S_k(n)$ of $n + 1$ immediately consecutive natural numbers, the smallest of which is $k$, is calculated. This sum is examined for divisibility by $n$.\n\na) First $k = 2009$ is chosen. For how many numbers $n$ is $S_{2009}(n)$ divisible by $n$?\n\nb) The problem is to be solved in general for natural numbers $k$ and $n$ with $k > 0$ and $n > 1$: for which numbers $n$, for a given number $k$, is the sum $S_k(n)$ divisible by $n$?\n\nc) For which $k$ is there exactly one natural number $n$ such that the sum $S_k(n)$ is divisible by $n$?"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Class 10b is planning a two-day trip to the Red Cross hut in Altenfeld. Class 10b has $13$ pupils ($8$ boys and $5$ girls). There are no siblings in this class. To minimise the costs, five fathers have declared themselves willing to drive the pupils to the Red Cross hut in their cars. The mathematics teacher Mrs Lustig notes the names of the five fathers at the parents' evening.\n\nMrs Lustig sets her class the following puzzle: how many possibilities are there for distributing the pupils among the five vehicles, if one assumes that in each car exactly three seats are available for pupils and that in each car the child of the father who drives the car sits?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In a letter on the desk of the institute secretary, it is reported about the incomes of the mathematicians $A$, $B$, $C$ and $D$ that each of them earns an integer amount of more than $100$ € per day, that only $B$ and $C$ earn the same amount, and that together they receive $500$ € per day. The mathematicians $A$, $B$, $C$ and $D$ know nothing further about one another's earnings.\n\nFirst $C$ comes into the office because of a travel expense claim. After he has read the letter \"by chance\", he says to the (of course mathematically versed) secretary: \"With the content of this letter and the knowledge of the amount of my earnings, I can prove: if $D$'s earnings are a square number, then he earns the most of all of us.\"\n\nAfter $C$ has gone again, $A$ comes into the office, also reads the letter \"by chance\", and says to the secretary: \"With the content of this letter and the knowledge of the amount of my earnings, I can prove: $D$'s earnings are not a square number.\"\n\nOn the basis of this information, and of course under the assumption that what $C$ and $A$ say to the secretary is true, answer the following questions:\n\na) How much does $C$ earn?\n\nb) What possibilities are there for the salary of $A$?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABCD$ be a convex quadrilateral. We denote the midpoints of the sides $\\overline{BC}$ and $\\overline{DA}$ by $M$ and $N$ respectively.\n\nProve:\n\na) If $ABCD$ is a parallelogram, then $DM \\parallel BN$ and $NC \\parallel AM$.\n\nb) If $DM \\parallel BN$ and $NC \\parallel AM$, then $ABCD$ is a parallelogram."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all pairs $(a; b)$ of positive integers with $a < b$ for which the quadratic expressions $x^2 + ax + b$ and $x^2 + bx + a$ can both be written as products of linear expressions with integer coefficients.\n\nNote: The expression $3x + \\frac{1}{2}$ is linear, but not all of its coefficients are integers."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "An acute-angled triangle $ABC$ with $|BC| > |CA|$ is given. Let the perpendicular bisector of the segment $\\overline{AB}$ meet the line $BC$ at $P$ and the line $CA$ at $Q$. The foot of the perpendicular dropped from $P$ to the line $CA$ is denoted by $R$, and the foot of the perpendicular dropped from $Q$ to the line $BC$ by $S$.\n\nShow that the points $R$, $S$ and the midpoint $M$ of the segment $\\overline{AB}$ lie on a line."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "a) Determine the smallest positive integer $y$ for which there is an integer $x$ such that the chain of inequalities\n$$\\frac{41}{2010} < \\frac{x}{y} < \\frac{1}{49}$$\nis satisfied.\n\nb) Let two fractions in lowest terms $\\frac{p}{q} < \\frac{r}{s}$ with $qr - ps = 1$ and $p, q, r, s > 0$ be given.\nDetermine here too the smallest positive integer $y$ for which there is an integer $x$ such that the chain of inequalities\n$$\\frac{p}{q} < \\frac{x}{y} < \\frac{r}{s}$$\nis satisfied."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "How many different eight-letter words (meaningless or unpronounceable words are also allowed) can be formed from three letters A, three letters B and two letters C in which equal letters never stand next to each other?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A cube $ABCDEFGH$ with edge length $a$ and labelling as in the figure is given. On the line $AG$, let $P$ be the point for which $EP$ is perpendicular to $AG$.\n\nProve that $P$ has distance $a$ from the points $F$, $H$ and $C$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2011_d1_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $a$ and $b$ be real numbers with $3a \\ge b$ and $3b \\ge a$.\n\nProve that all roots in the inequality\n$$\\sqrt{a + b} \\cdot \\left(\\sqrt{3a - b} + \\sqrt{3b - a}\\right) \\le 4\\sqrt{a \\cdot b}$$\nare defined and that the inequality is valid."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all pairs $(n; t)$ of integers for which $n^2 = 2^t + 5$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be a right triangle with the right angle at $C$. Let $D$ be the foot of the altitude from $C$ on $AB$. Further, let $X$ and $Y$ be the incentres of the triangles $ADC$ and $BCD$.\n\nCalculate the sizes of the interior angles of the triangle $CXY$ using the angle sizes of the triangle $ABC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A regular $50$-gon is given whose area has been divided into (exclusively) triangles by some drawn, mutually non-intersecting diagonals.\n\na) Show: The number of drawn diagonals is independent of the concrete dissection of the $50$-gon.\n\nb) Find the largest integer $m$ with the following property: there are numbers $a$ and $b$ with $|a - b| \\ge m$ such that, independently of the concrete dissection of the $50$-gon, among the drawn diagonals one can always be found which divides the boundary of the polygon into two parts of $a$ and $b$ sides respectively.\n\nc) Find the smallest integer $n$ with the following property: there are numbers $a$ and $b$ with $|a - b| \\le n$ such that, independently of the concrete dissection of the $50$-gon, among the drawn diagonals one can always be found which divides the boundary of the polygon into two parts of $a$ and $b$ sides respectively."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "As a condition of participation in a car race, the racing drivers must, in the so-called \"qualifying\", drive the distance of two laps at an average speed of at least $200\\,\\mathrm{km/h}$.\n\nThe driver Fabian Fettel drives the first lap at an average speed of $180\\,\\mathrm{km/h}$. How fast must he drive the second lap so that he is admitted to the race?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let the points $E$ and $F$ be chosen in the interior of a square $ABCD$ in such a way that $AE \\parallel FC$ and $|AE| = |EF| = |FC|$.\n\nDetermine, under these conditions, the smallest possible value of $|\\angle EAD|$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The following picture shows the representation of the digits from $0$ to $9$ by a commercially available digital display (first row of the figure).\n\nThe digital display consists of seven \"bars\", of which in each case a certain selection \"lights up\" in order to represent particular digits. Thus for the digit $1$ the two vertical bars on the right-hand side of the display light up, while for the digit $8$ all seven bars light up.\n\nIf in the digital display a change from one digit to another digit takes place, then in general some of the bars go out, while other bars newly light up instead. Each time one of the bars changes its state, we speak of a \"bar change\". For example, the transition from the digit $5$ to the digit $6$ takes place by the lower left vertical bar newly lighting up. A transition from the digit $2$ to the digit $3$, on the other hand, requires that the lower left vertical bar goes out, while instead the lower right vertical bar newly lights up. This corresponds to two bar changes.\n\nIf the digital display runs through the digits from $0$ to $9$ in the usual order and then jumps back to $0$, the following bar changes are necessary in detail (second row of the figure):\n$$0 \\xrightarrow{4} 1 \\xrightarrow{5} 2 \\xrightarrow{2} 3 \\xrightarrow{3} 4 \\xrightarrow{3} 5 \\xrightarrow{1} 6 \\xrightarrow{5} 7 \\xrightarrow{4} 8 \\xrightarrow{1} 9 \\xrightarrow{2} 0$$\nA complete run thus requires a total of $30$ bar changes.\n\nWhat is the minimum number of bar changes necessary for a complete run if the order of the digits $1$ to $9$ may be chosen arbitrarily (each of these digits occurring exactly once) and only $0$ is fixed as the beginning and end of the run?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2012_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Anita and Bodo find an old beam balance with $2$ scale pans and a set of weights with the masses $1\\,\\mathrm{g}$, $2\\,\\mathrm{g}$, $3\\,\\mathrm{g}$, $4\\,\\mathrm{g}$, $5\\,\\mathrm{g}$ and $6\\,\\mathrm{g}$. Since they are bored, they think up various competitions. The following basic rules of play are agreed:\n\n(1) Anita and Bodo alternately place one weight each on either of the two scale pans.\n\n(2) Anita begins and must place the $1$-g weight first.\n\nThere are $3$ rounds of play:\n\na) In the first game, after all $6$ weights have been placed, the difference between the masses of the left and the right scale pan is formed. If this difference (in g) is odd, Anita wins. If the difference is even, Bodo wins.\nInvestigate which of the players can force a win.\n\nb) In the second game Anita wins if she manages that at the end of the game the sum of the masses on the left scale pan is a number of grams divisible by $3$. If she does not succeed, Bodo wins.\nInvestigate which of the players can force a win.\n\nc) In the third game Anita wins if at some time after one of her or Bodo's moves either both scale pans are in equilibrium or one of the scale pans contains twice the mass of the other. Otherwise Bodo wins.\nInvestigate here too whether (and if so, by whom) a sure win can be forced in this game."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "On a horizontal plane $E$ lie three equally large balls $K_1$, $K_2$ and $K_3$ which touch one another pairwise. The centres $M_1$, $M_2$ and $M_3$ of these balls thus form an equilateral triangle.\n\nA fourth ball $K_4$ touches the balls $K_1$, $K_2$, $K_3$ and the plane $E$. A further ball $K_5$ is touched externally by each of these four balls $K_1$, $K_2$, $K_3$ and $K_4$.\n\nWhat is the position of $K_5$ relative to the plane $E'$ through $M_1$, $M_2$ and $M_3$?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all pairs $(a, b)$ of positive integers for which\n$$\\frac{a + 1}{a} + \\frac{b}{b + 1} = \\frac{b + 2}{a + 1}$$\nholds."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "If one writes the digits of a natural number $z$ in reverse order, one obtains the number $u$. For example, $z = 31$ gives correspondingly $u = 13$.\n\na) Determine all two-digit numbers $z$ which are greater than the corresponding $u$ and for which $z^2 - u^2$ is a square number.\n\nb) If one inserts a zero in the middle of the digit representation of a two-digit number $[ab]$, one obtains a three-digit number $z = [a0b]$ and correspondingly its reversal $u = [b0a]$. Determine the number of numbers $z$ of this kind which are greater than the corresponding $u$ and for which $z^2 - u^2$ is a square number."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A square $ABCD$ with side length $1$ and a perpendicular $g$ to the line $AC$ through $A$ are given. On the line $g$ a point $P$ is chosen, and the ray $h$ perpendicular to $g$ through $P$ is drawn so that it lies in the same half-plane as $C$ with respect to $g$. On $h$ the point $Q$ is determined such that the segments $\\overline{CP}$ and $\\overline{PQ}$ are of equal length. The feet of the perpendiculars from $Q$ to the lines $AB$ and $AD$ are denoted by $R$ and $S$ respectively.\n\nDetermine the area of the rectangle with vertices $A, R, Q, S$ in terms of the length of the segment $\\overline{AP}$!"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all real solutions $(x, y, z)$ of the system of equations\n$$x - \\frac{1}{y} = y - \\frac{1}{z} = z - \\frac{1}{x}.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Show that $3^m + 3^n + 1$ can never be the square of an integer for positive integers $m, n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a number quiz, each of the $1\\,500$ participants receives a slip of paper on which he writes one or more distinct natural numbers and which he then shows. The quizmaster has the task of writing on a large slip of his own some natural numbers in such a way that the following two conditions are satisfied simultaneously:\n\n(1) On the slip of every participant there is a number which can also be found on the quizmaster's slip.\n\n(2) There is at least one participant whose smallest written number is at the same time the smallest number on the quizmaster's slip, and this number is the only number that is on both slips.\n\nShow that the quizmaster can always achieve this!"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "An acute-angled triangle $ABC$ is given. Determine the set of all those points $P$ in the interior of the triangle $ABC$ for which there exist a point $X$ on the line $BC$ and a point $Y$ on the line $CA$ such that the following three conditions are satisfied simultaneously:\n\n(1) The point $X$ is different from the point $C$.\n\n(2) The line $XY$ is parallel to the line $AB$.\n\n(3) The angles $\\angle XPC$ and $\\angle CPY$ are equal.\n\nNote: Two lines are also parallel if they coincide."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "How many different ways are there to pay the amount of $1$ euro using only coins of $1$ cent, $2$ cents or $5$ cents? Two ways are to be regarded as different exactly when they differ in the number of coins of at least one value."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For every positive integer $n$ we denote by $Q(n)$ the digit sum of $n$.\n\nDetermine all pairs $(a, b)$ of distinct positive integers for which $a = \\left(Q(b)\\right)^2$ and $b = \\left(Q(a)\\right)^2$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a convex quadrilateral $ABCD$, let the midpoints of the sides $\\overline{AD}$ and $\\overline{BC}$ be denoted by $M$ and $N$ respectively. Further, let $S$ denote the point of intersection of the lines $AN$ and $BM$, and $T$ the point of intersection of the lines $DN$ and $CM$.\n\nProve: If $|\\angle BMC| = |\\angle DNA| = 90^\\circ$, then the three lines $AD$, $BC$ and $ST$ are either pairwise parallel, or the lines $AD$ and $BC$ are cut by the line $ST$ at angles of equal size.\n\nNote: A quadrilateral is called convex if non-adjacent sides have no point in common and all interior angles are smaller than $180^\\circ$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A positive natural number $z$ and two sequences $a_n$ and $b_n$ with the following properties are given:\n$$a_1 = 4z,\\quad b_1 = \\frac{1}{4}z$$\nand\n$$a_{n+1} = \\frac{a_n + b_n}{2},\\quad b_{n+1} = \\frac{a_n \\cdot b_n}{a_{n+1}} \\quad \\text{for } n = 1, 2, \\dots$$\n\na) Prove that then always $a_n + b_n \\ge 2z$.\n\nb) Prove that every term $a_n$ of the sequence is greater than the next term $a_{n+1}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In the triangle $ABC$, a point $P$ in the interior of the side $\\overline{BC}$, a point $Q$ in the interior of the side $\\overline{AC}$ and a point $R$ in the interior of the side $\\overline{AB}$ are given such that the line $PQ$ is parallel to the line $AB$. Further, we introduce the notation $F(ARQ) = F_1$, $F(BPR) = F_2$ and $F(CQP) = F_3 = x$ for the areas of these partial triangles.\n\nDetermine a formula for $F = F(ABC)$ in terms of $x$, if it is known that $F_1 + F_2 = 6F_3$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let positive integers $m$ and $n$ with $m < n$ be chosen such that neither $m$ nor $n$ nor $m + n$ is divisible by $3$. Can the set $\\mathbb{Z}$ of integers, for every such choice of $m$ and $n$, be partitioned into infinitely many subsets of three numbers each in such a way that in each subset the three numbers have the three distances $m$, $n$ and $m + n$ from one another?\n\nNote: \"Partition\" means that every integer is to be contained in exactly one subset. The distances of the three numbers $a$, $b$, $c$ are $|a - b|$, $|a - c|$ and $|b - c|$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all pairs $(a, b)$ of real numbers that are solutions of the system of equations\n$$\\big||a + b| - |a - b|\\big| = |ab|, \\qquad (1)$$\n$$|a + b| + |a - b| = 1. \\qquad (2)$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Eight equally large circles of radius $r$ are arranged in a plane in such a way that their centres form a regular octagon and each circle touches its two neighbouring circles. A square of side length $a$ encloses all $8$ circles in such a way that each side of the square is touched by two circles (see Figure A 540942).\n\na) Express the length $r$ in terms of the variable $a$.\n\nb) The $8$ circles enclose a circle of radius $R$ in such a way that they all touch this circle from outside. Calculate $R$ in terms of $r$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2015_d1_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Twelve pupils sing in a choir. Unfortunately two of them cannot really sing well, and the choirmaster wants to find out which two they are. Since he does not want to let anyone sing alone, every day he invites four of them to his home and lets them sing something together there. From the sound of this small choir he can then determine whether at least one of the two pupils sought is among these four.\n\na) Prove: If the choirmaster uses a suitable strategy, he can guarantee to have found out after at most $7$ days which two pupils cannot sing well.\n\nb) Prove that the statement from a) no longer holds if $7$ is replaced by $6$.\n\nNote: You may make the following assumption: the choirmaster's strategy is a selection rule which uniquely determines the four pupils singing on a day from the results of the previous days. In particular, the four pupils singing on the first day must already be fixed."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "We consider the set $Q = \\{25, 49, 121, \\dots\\}$ of the squares of all those primes that are greater than $4$. From this we construct the set $D$ of all those positive numbers that can be written as the difference of two numbers from $Q$.\n\nDetermine the greatest common divisor of all numbers of the set $D$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCD$ be a trapezoid with $AB \\parallel CD$ and $|\\angle CBA| = 90^\\circ$.\n\nProve: If the Thales circle on the diameter $\\overline{AD}$ touches the side $\\overline{BC}$ at an interior point, then the Thales circle on the diameter $\\overline{BC}$ touches the side $\\overline{AD}$ at an interior point."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "a) Determine the largest real number $a$ with the property that for all real numbers $x, y > 0$ the inequality\n$$\\frac{x + y}{2} + \\frac{8}{\\frac{1}{x} + \\frac{1}{y}} \\ge a \\cdot \\sqrt{xy}$$\nis satisfied.\n\nb) Determine the largest real number $b$ with the property that for all real numbers $x, y > 0$ the inequality\n$$\\frac{x + y}{2} + \\frac{1}{\\frac{1}{x} + \\frac{1}{y}} \\ge b \\cdot \\sqrt{xy}$$\nis satisfied."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A set of $12$ integers in which exactly $6$ numbers are prime (P), exactly $9$ numbers are odd (U), exactly $10$ numbers are non-negative (N) and exactly $7$ numbers are greater than $10$ (Z) is called a PUNZ set.\n\na) Give an example of such a PUNZ set and show that your example has the required properties.\n\nb) In every PUNZ set there are numbers which have all four properties, i.e. which are simultaneously prime, odd, non-negative and greater than $10$.\nDetermine (with justification) a PUNZ set which contains the minimum possible number of such numbers.\n\nNote: A prime is an integer $p > 1$ which has exactly two positive integer divisors, namely $1$ and $p$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all triples of integers $(a, b, c)$ that satisfy the following system of equations:\n$$a^3 + b^3 = c^3 + 1, \\qquad (1)$$\n$$b^2 - a^2 = a + b, \\qquad (2)$$\n$$2a^3 - 6a = c^3 - 4a^2. \\qquad (3)$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A triangle $ABC$ and an interior point $P$ are given. Further, let $D$ be the point of intersection of the parallel to $AB$ through $P$ with the line $BC$, $E$ the point of intersection of the parallel to $BC$ through $P$ with the line $AC$, and $F$ the point of intersection of the parallel to $AC$ through $P$ with the line $AB$.\n\nShow that always\n$$\\frac{|AF|}{|AB|} + \\frac{|BD|}{|BC|} + \\frac{|CE|}{|CA|} = 1$$\nholds."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In an acute-angled triangle $ABC$, let the segments $\\overline{AD}$ and $\\overline{CF}$ be the two altitudes from $A$ and $C$ respectively, whose feet on the respective opposite sides have been denoted by $D$ and $F$. Let the point of intersection of these altitudes $\\overline{AD}$ and $\\overline{CF}$ be denoted by $S$.\n\na) Prove that $|\\angle ASF| = |\\angle CBA|$.\n\nb) Calculate the size $\\alpha$ of the angle $BAC$ for the case that additionally $|AS| = |BC|$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that the equation $x^2 - \\lfloor x^2 \\rfloor = (x - \\lfloor x \\rfloor)^2$ has exactly $55$ solutions in the interval $1 < x < 8$.\n\nHere $\\lfloor x \\rfloor$ denotes the greatest integer $z$ with the property $z \\le x$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Sultan Abu Kara decrees a currency reform for his realm. In future only coin denominations of value $a$ ducats are to be minted, where $a$ runs through all positive divisors of a given integer $n > 1$, coins of value $1$ ducat and $n$ ducats included. In order to avoid annoying problems with change, however, the following small-change rule is additionally to be observed:\n\nFrom every purse with coins of total value $n - 1$ ducats, every (integer) amount of $k$ ducats, $1 \\le k \\le n - 1$, should be payable without further change.\n\nShow:\n\na) The small-change rule is not satisfied for $n = 6$, but holds for $n = 16$.\n\nb) If $n > 1$ has exactly one prime divisor, then the small-change rule is satisfied.\n\nc) If $n > 1$ has more than one prime divisor, then the small-change rule is not satisfied.\n\nNote: A prime divisor of an integer $n > 1$ is a positive integer $p$ which is a prime and a divisor of $n$. A prime is an integer $p > 1$ which has exactly two positive integer divisors, namely $1$ and $p$."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Tom rides his e-bike home from his workplace. He sets off at 19:00. For the first $4\\,\\mathrm{km}$ it goes downhill; there he rides at an average speed of $30\\,\\mathrm{km/h}$. Then follow $12\\,\\mathrm{km}$ of level cycle path, which he covers at $20\\,\\mathrm{km/h}$. Then he has to ride up a hill; on this stretch of $3\\,\\mathrm{km}$ length he manages only $10\\,\\mathrm{km/h}$. Finally he rides another $5\\,\\mathrm{km}$ on a level stretch at a speed of $15\\,\\mathrm{km/h}$.\n\nTo make faster progress, he can switch on the electric motor of his bicycle. This increases his speed by $5\\,\\mathrm{km/h}$. However, the battery is already rather empty, so that he can do this only for a total of $10$ minutes.\n\nAt what time, at the earliest, can he be at home?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let a triangle $ABC$ be given, a point $P$ on the line $AB$ and a point $Q$ on the line $AC$ such that $B$ lies between $A$ and $P$ and $C$ lies between $A$ and $Q$. Further, let the points $P$ and $Q$ be chosen so that the equation\n$$|PB| \\cdot |QC| = |AB| \\cdot |AC|$$\nholds.\n\nShow that all the lines $PQ$ that can be constructed in this way for the triangle $ABC$ have a point in common."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A group of $25$ football-card collectors has found out via the internet that they could swap with one another. Each of them has, for every other collector, exactly one duplicate card which the other is still missing, and all these $24 \\cdot 25 = 600$ cards are pairwise different. Since each of the collectors lives in a different town, all cards would have to be sent by post. If each sent a letter to each other one, a total of $600$ letters with one card each would have to be sent. The collectors consider together whether there is not a better procedure.\n\na) Explain a procedure in which each sends the correct $24$ cards by letter and receives the correct $24$ cards by letter, and in which as few letters as possible are sent in total. (Not all letters have to be sent at the same time, and any number of cards may be sent in one letter.)\n\nb) Prove that the procedure is optimal, i.e. that there is no such procedure in which even fewer letters are sent."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Kai and Michael exchange secret messages. Each message consists of five digits. Each digit is either a $0$ or a $1$.\n\nMichael sends a message. Each digit arrives correctly at Kai's only with a probability of $\\frac{9}{10}$. With probability $\\frac{1}{10}$ the wrong digit is received. For safety, the same message is always sent twice in succession.\n\na) How many different such messages can be formed?\n\nb) With what probability is a message received correctly twice in succession?\n\nc) With what probability does the following hold: \"The same sequence of digits was received twice, and in this sequence of digits exactly two digits were transmitted incorrectly\"?\n\nd) Kai receives the same message twice in succession.\nShow that the message is correct with probability $\\left(\\frac{81}{82}\\right)^5$.\n\nNote: The required probabilities are to be given as fractions in lowest terms. It is sufficient to give the results as a product or power of fractions (as done, by way of example, in the last part of the problem)."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABC$ be an acute-angled triangle and $P$ the foot of the perpendicular from $A$ to the side $\\overline{BC}$. Let $D$ be the foot of the perpendicular dropped from $P$ to the side $\\overline{AB}$. Further, on the segment $\\overline{PD}$ let an interior point $E$ be given for which $|\\angle CEA| = 90^\\circ$. Let $F$ denote the foot of the perpendicular dropped from $E$ to the side $\\overline{AC}$.\n\nProve that the lines $DF$ and $BC$ are parallel."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all triples $(p, q, r)$ of prime numbers that satisfy the system of equations\n$$p + q = r + 1,$$\n$$p \\cdot r = q^2 + 6.$$"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The basic frame of a cuboid-shaped rabbit hutch is to be built from construction battens. The battens are to form the edges of the hutch shape.\n\nFor the vertical edges, battens of $50$ centimetres length each are needed, for the longitudinal edges battens of two metres length each, and for the transverse edges battens of one metre length each.\n\nDaniela wants to build at least one of these hutches. In the DIY store she only finds battens of three metres length, which she has cut, for transport, each into a piece $2$ metres long and a piece $1$ metre long.\n\nFor building the hutches described above, she buys just so many construction battens that she can build her hutch and as few further such hutches as possible without having any pieces of batten left over.\n\na) How many battens does she buy, and how many hutches can she then build?\nNote: Justifying the answers here means proving that with this many purchased battens, cut into pieces of $1\\,\\mathrm{m}$ and $2\\,\\mathrm{m}$, that many hutch frames can actually be built without remainder, and that with fewer battens there is always a remainder of battens left over.\n\nb) Prove that the number of cuts that she has to make herself is uniquely determined, and determine it!"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For every non-negative integer $n$, let the odd part $u(n)$ be the number obtained by replacing all even digits of $n$ by zeros, and let the even part $g(n)$ be the number obtained by replacing all odd digits of $n$ by zeros. In this problem we are interested in the difference $u(n) - g(n)$.\n\nFor example, $u(2018) = 10$ and $g(2018) = 2008$, and thus $u(2018) - g(2018) = -1998$.\n\na) Determine a non-negative integer $n$ such that $u(n) - g(n) = 570\\,942$.\n\nb) Prove that $u(n_1) - g(n_1) = u(n_2) - g(n_2)$ implies $n_1 = n_2$.\n\nc) Investigate whether for every integer $z$ there is exactly one non-negative integer $n$ with $u(n) - g(n) = z$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "How many different possibilities are there for specifying four distinct points in the plane such that among the six distances between them at most two different values occur?\n\nTwo possibilities are to be regarded as the same here if they are similar.\n\nNote: Two possibilities are similar if all mutually corresponding distances are in the same ratio, or if all mutually corresponding angles are equal."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Each of the twelve faces of two dice $A$ and $B$ is to be labelled with one of twelve consecutive integers in such a way that any two faces are labelled differently. The sum of the numbers on each die is to be exactly $57$.\n\na) Show that such a labelling is possible.\n\nb) Prove: Regardless of how such a labelling is made, the probability of throwing a higher number with $A$ than with $B$ is exactly $\\frac{1}{2}$.\n\nRemark: In part b) it is assumed that the dice are fair, i.e. each of the numbers is thrown with the same probability."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A right triangle $ABC$ which is not isosceles, with the right angle at $C$ and circumcircle $k$, is given. Furthermore, let $D$ be the point of intersection of the line $AB$ with the tangent to $k$ through $C$, let $g$ be the perpendicular to $AB$ at $D$, let $E$ be the point of intersection of $g$ with $AC$, and let $F$ be the point of intersection of $g$ with $BC$.\n\nProve: $D$ is the midpoint of the segment $\\overline{EF}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "We consider the system of equations\n$$(a + 2) \\cdot x + (a + 3) \\cdot y = a + 3,$$\n$$(a + 7) \\cdot x + (11 - a) \\cdot y = a + 13$$\nin the real variables $a$, $x$ and $y$.\n\n(a) Determine all real numbers $a$ for which the system of equations has at least one solution $(x, y)$.\n\n(b) Determine the set $M$ of all pairs $(x, y)$ of real numbers for which the system of equations has at least one solution $a$.\nSketch $M$ in a rectangular coordinate system."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all real solutions $(x, y, z)$ of the system of equations\n$$|x + y| + z = 4,$$\n$$|y + z| + x = 5,$$\n$$|z + x| + y = 6.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcentre $O$. On the circumcircle of the triangle $ABO$, a point $P$ is chosen in the interior of the triangle $ABC$. The circumcircle of the triangle $PBC$ meets the line $AC$, apart from $C$, at a further point $Q$. The circumcircle of the triangle $PCA$ meets the line $BC$, apart from $C$, at a further point $R$.\n\nProve that $P$, $Q$ and $R$ lie on a common line."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "At M. O. Consulting, several consultants work on five projects. They proceed according to very strange rules: every consultant works together with every other one on exactly one day, and on exactly one of the projects. On each working day exactly two consultants work; all the others have the day off and take a creative break. In total, work is done on $1\\,653$ days in this way.\n\nThe boss Martin O. wants to draw up a work schedule which specifies which consultant works on which project on which day. In doing so he must keep to the above rules; otherwise he has a free hand in the design. In order to prevent signs of fatigue, he wants to prevent a consultant from having to work on the same project too often.\n\na) How many consultants work at M. O. Consulting?\n\nb) What is the smallest natural number $m$ for which the work schedule can be designed so that on each project each consultant works at most $m$ times?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Thomas drives to work by car every working day. Outside built-up areas (motorway) he drives at an average speed of $180\\,\\mathrm{km/h}$. On the $10\\,\\mathrm{km}$ inside built-up areas, which consist mostly of 30-km/h zones, he drives at $40\\,\\mathrm{km/h}$ on average. As a result he is often too fast and has recently often been caught by speed cameras. Meanwhile he has realised that it cannot go on like this, and he resolves in future to reduce his average speed by $20\\,\\mathrm{km/h}$ both outside and inside built-up areas.\n\nCan his average speed for the whole route thereby drop by exactly $40\\,\\mathrm{km/h}$? If so, give all possibilities for the total length of his route to work in this case."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that the equation $2x^6 + 3y^6 = z^3$ has no integer solutions other than $(x, y, z) = (0, 0, 0)$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A smaller square $MNOP$ is placed on the outside of a square $JKLM$ in such a way that the point $N$ lies in the interior of the segment $\\overline{ML}$. Let $H$ be the point of intersection of the lines $KO$ and $ML$.\n\nShow that the angle $\\angle PHJ$ is obtuse."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The rower Marcel trains on a river. He first rows a certain distance upstream and then, without a break, the same distance back downstream. Upstream he travels at a constant speed. Downstream he travels constantly at an integer multiple of this speed (for example, at nine times the speed). As a result, Marcel covers more distance in the second half of the total time needed than in the first half of the total time.\n\na) In the second half of the total time Marcel covers $5\\,\\mathrm{km}$ more than in the first half. In total he has covered $12.5\\,\\mathrm{km}$.\nWhat is the ratio of the two speeds?\n\nb) After a further trip (with different speeds in both directions and a different distance), Marcel notices: the total distance covered is an integer multiple of the distance by which the distance covered in the second half of the total time exceeds that covered in the first half.\nDetermine all ratios that the two speeds can have had to each other.\n\nNote: All statements of distances and speeds are relative to the fixed bank."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A cuboid has surface area $6$ and the sum of its twelve edge lengths is $20$.\n\nDetermine the greatest length that one of its edges can have.\n\nRemark: The lengths and areas are given as numerical values with respect to a suitably chosen unit of length and the corresponding unit of area."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Klara is making nut corners today. To do so, she has cut the dough baked on the tray into triangular pieces; now she wants to decorate the nut corners with blobs of chocolate, where every nut corner is to get some chocolate. She wonders how many blobs she has to make at least for this.\n\nShe models the question mathematically as follows. A rectangle with side lengths $5$ and $9$ is first divided by lines parallel to the sides into $5 \\times 9$ unit squares, and by mutually parallel diagonals each of these is divided into two isosceles right triangles.\n\nDiscs of diameter $\\frac{1}{2}$ are now to be placed in the plane of the rectangle in such a way that each of the $90$ triangular regions has at least one point in common with at least one disc. What is the minimum number of discs for which this is possible?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2020_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all pairs of real numbers $(a, b)$ for which the function $f : \\mathbb{R} \\to \\mathbb{R}$ with the rule\n$$f(x) = x^2 + ax + b$$\nhas two distinct real zeros $x_1$ and $x_2$, and the function $g : \\mathbb{R} \\to \\mathbb{R}$ with the rule\n$$g(x) = x^2 + (2a + 1)x + (2b + 1)$$\nhas the zeros $\\frac{1}{x_1}$ and $\\frac{1}{x_2}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For every positive integer $n$, determine the number of sequences $(a_1, a_2, \\dots, a_n)$ of integers with the following property:\n\nFor all (not necessarily distinct) numbers $j, k \\in \\{1, 2, \\dots, n\\}$, $a_j + a_k$ is a divisor of $j + k$.\n\nNote: In this problem divisors can also be negative; for example, $590945$ is divisible by $-5$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "On the sides $\\overline{AC}$ and $\\overline{BC}$ of an acute-angled triangle $ABC$, isosceles right triangles $ACX$ and $CBY$ with $|\\angle AXC| = |\\angle CYB| = 90^\\circ$ are erected outwards.\n\nShow that the midpoint of the side $\\overline{AB}$, the foot of the perpendicular dropped from $C$ to the line $AB$, and the points $X$ and $Y$ lie on a common circle."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "How many different amounts of money can be paid exactly with $7$ two-euro coins, $5$ one-euro coins, $4$ fifty-cent coins, $2$ ten-cent coins, $4$ five-cent coins, $2$ two-cent coins and $2$ one-cent coins?\n\nNote: For example, the amount $13.78$ euros can be paid exactly with the available coins, whereas the amount $19.99$ euros cannot, since there are too few \"small\" coins to count out $49$ cents.\n\nEach amount that can be paid exactly is to be counted only once, even if it can be put together in different ways from the available coins.\n\nThe amount $0.00$ euros for a free purchase is also to count as a possible amount."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Prove:\n\na) If the triangle $ABC$ is equilateral, then for every point $P$ lying in the interior of the triangle $ABC$ a proper triangle can be formed from the segment lengths $|PA|$, $|PB|$ and $|PC|$.\n\nb) If for every point $P$ in the interior of a triangle $ABC$ a proper triangle can be formed from the segment lengths $|PA|$, $|PB|$ and $|PC|$, then the triangle $ABC$ is equilateral.\n\nNote: A triangle is called proper if its vertices do not lie on a line."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a table with $2$ rows and $10$ columns, each cell of the upper row contains one of the digits $0, \\dots, 9$, each digit occurring exactly once. The cells of the lower row are empty.\n\nIn one step it is allowed to move any digit into a free neighbouring cell. Two cells are neighbouring here if they have a common edge. Diagonally adjacent cells are not neighbouring.\n\nBy such steps it is to be achieved that the digits stand in the lower row, sorted in increasing order from left to right.\n\nShow that it is possible to reach this goal from any starting position within at most $60$ steps.\n\nNote: For example, the sequence $9876543210$ can indeed be sorted in\n$$10 + 8 + 6 + 4 + 2 + 2 + 4 + 6 + 8 + 10 = 60$$\nsteps if the digits $0, \\dots, 9$ are moved one after another by a shortest path into the lower row and there to their place."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all sequences $(x_1, x_2, \\dots, x_{10})$ of rational numbers that have both of the following properties:\n\n– For all odd $k = 1, 3, 5, 7, 9$: $5 \\cdot x_k = x_{k+1} + x_{k+2} + \\dots + x_{10}$.\n\n– For all even $k = 2, 4, 6, 8, 10$: $5 \\cdot x_k = x_1 + x_2 + \\dots + x_{k-1}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Investigate whether there is a five-term sequence $(a_1^2, a_2^2, a_3^2, a_4^2, a_5^2)$ of squares of positive integers in which every term, beginning with the third, is the sum of the two preceding terms.\n\nNote: There are infinitely many three-term sequences $(a_1^2, a_2^2, a_3^2)$ with this property, i.e. with $a_1^2 + a_2^2 = a_3^2$, the Pythagorean triples."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let a rhombus $ABCD$ with $|\\angle DCB| = 60^\\circ$ be given. On the extension of the segment $\\overline{CD}$ beyond $D$, a point $E$ is chosen arbitrarily. The line through $E$ and $A$ meets the line $BC$ at the point $F$. Let $M$ be the point of intersection of the lines $BE$ and $DF$.\n\nShow that the line $BD$ is tangent to the circumcircle of the triangle $MDE$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all pairs $(x, y)$ of real numbers that satisfy the system of equations\n$$\\frac{10}{1 + |x|} + y = 4,$$\n$$\\frac{10}{1 + |y|} + x = 4.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an equilateral triangle. The point $D$ satisfies $|\\angle CAD| = 35^\\circ$ and $|CD| = |BC|$, where $D$ and $B$ lie on different sides of the line $AC$. For the point $E$, $|\\angle EBC| = 50^\\circ$ and $|BE| = |BC|$, where $E$ and $A$ lie on different sides of the line $BC$.\n\nShow that the quadrilateral $ABED$ is a kite."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Can $250$ bricks of format $1 \\times 1 \\times 4$ be put together to form a $(10 \\times 10 \\times 10)$ cube $W$ in such a way that every face of every brick is parallel to some face of $W$?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In a board game, as in Figure A 610944 a, the game board is laid out from $61$ fields, each of which has the shape of a regular hexagon with side length $5\\,\\mathrm{cm}$. Of these fields, $52$ are coloured yellow and the remaining $9$ blue; the latter are to form a river running through the land. A river is a sequence of blue fields in which any two neighbouring fields have exactly one side in common.\n\nThe fields are to be laid out so that the blue fields connect the boldly marked edges of the left and the right side of the game board; one such possibility is shown in Figure A 610944 b.\n\na) How many possibilities are there if the middle field, which is marked grey in Figure A 610944 a, is to belong to the river?\n\nb) How many possibilities are there in total?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2022_d2_p4_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A triangle $ABC$ is given in which three circles $k_A$, $k_B$ and $k_C$ lie in such a way that they touch one another pairwise externally and each touches two of the three sides of the triangle, as shown in Figure A 610945.\n\nIt is known that for every triangle $ABC$ such circles $k_A$, $k_B$ and $k_C$ exist and are uniquely determined.\n\nCalculate the radii of the three circles if $|AC| = |BC| = 5\\,\\mathrm{cm}$ and $|AB| = 6\\,\\mathrm{cm}$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2022_d2_p5_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all positive integers $n$ with the following property: there are $n$ positive integers whose product and whose sum are both powers of $6$.\n\nNote: It is not required that these $n$ positive integers be distinct. The number $1\\ (= 6^0)$ is also a power of $6$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "a) Let $a$ and $b$ be positive integers, each with digit sum $Q(a) = Q(b) = 62$. Which values can the digit sum of $a + b$ take?\n\nb) Let $a$ be a positive integer with digit sum $Q(a) = 62$. Which values can the digit sum of $2 \\cdot a$ take?"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "How many different sequences of letters can be formed by rearranging the seven letters of the word $KLAUSUR$ such that none of the letters is any longer in its previous position, i.e. $K$ not in the first position, $L$ not in the second, $A$ not in the third, $U$ neither in the fourth nor in the sixth, $S$ not in the fifth and $R$ not in the seventh position?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A complete grid of squares of side length $1$ is laid in the plane.\n\na) What is the maximum number of grid squares with which a square $Q$ of side length $1$ can have points in common?\n\nb) What is the maximum number of grid squares with which a square $Q$ of side length $1$ can have interior points in common?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Every week Rudi and Simon walk on the forest path between Adorf and Bedorf. Rudi lives in Adorf, Simon lives in Bedorf. Each of them walks at his own constant speed from home to the other village and then back home again.\n\nToday both set off at exactly 12 noon. Today they met for the first time at the old oak, which is exactly $3\\,\\mathrm{km}$ away from Adorf. Some time later they arrived simultaneously at the barbecue hut, which lies exactly $4\\,\\mathrm{km}$ away from Adorf.\n\nHow long is the path from Adorf to Bedorf? Give all possibilities."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $k$ be a circle with centre $M$ and radius $r$, on whose circumference two points $A$ and $B$ are given that do not lie on a diameter. $A$ and $B$ are joined inside $k$ by a polygonal line $l$ without self-intersections which divides the area of $k$ into two parts of equal area.\n\nShow that the length of this polygonal line is greater than $2r$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In this problem we consider an inequality for positive numbers $a$ and $b$ with the property $a^2 + b^2 = 18$.\n\nShow that for all such pairs of numbers $(a, b)$ the inequality\n$$\\frac{1}{5 - a} + \\frac{1}{5 - b} \\ge 1$$\nholds."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A set of $115$ points is given, all of which lie in the interior of a regular hexagon with side length $2$.\n\nShow that there is a circle of radius $1$ in whose interior at least $20$ of these points lie."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Philipp has been given a clock by the extraterrestrial ZFC42. The extraterrestrial tried to explain to Philipp how time is measured in its world, but Philipp did not understand everything. He only understood that there time is measured not in seconds, minutes, hours, $\\dots$, but in quaxes $Q_1, Q_2, \\dots, Q_{10}$, where the quax $Q_1$ is the shortest unit of time, the quax $Q_2$ the second shortest, and so on. Also, the conversion factors $u_i$ between the quax units are not all equal. Philipp only understood that in the relation $1\\,Q_{i+1} = u_i\\,Q_i$ $(i = 1, \\dots, 9)$ the conversion factor $u_i$ is always an integer greater than or equal to $4$.\n\nThe clock works similarly to an earthly analogue clock with a circular dial, whose hands rotate about the centre of the dial. On the clock, ten pairwise distinguishable hands are mounted, all of which go around the dial in the same direction of rotation at positive constant speed and display the time in the units $Q_1$ to $Q_{10}$, where the hand for $Q_i$ goes around the dial $u_i$ times while the hand for $Q_{i+1}$ $(i = 1, \\dots, 9)$ goes around the dial once. Furthermore, the dial is divided into three congruent sectors, a green one, a blue one and a red one.\n\nPhilipp would now like to know whether at some time all hands are in the interior of the red sector.\n\nShow that this is indeed the case!\n\nRemark: In contrast to earthly clocks, where for example at midnight all hands lie on top of one another, it is not known whether something like this also happens with the extraterrestrial's clock."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Determine all solution pairs $(m, n)$ of integers $m$ and $n$ for which $2^m = 255^n + 1$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all pairs $(x, y)$ of real numbers that satisfy the following conditions:\n$$x^2 + y^2 = 1. \\qquad (1)$$\n$$a = x + y \\text{ is rational.} \\qquad (2)$$\n$$b = \\sqrt{(1 + x)(1 + y)} \\text{ is rational.} \\qquad (3)$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Four pupils were given the task of writing the same integer $n$ as a product of positive integers. Paula may use only prime numbers, Sebastian is to use only numbers less than $6$, Simon may only take numbers less than $7$, and Nina is to use only numbers less than $9$. Each of them solved the task; Paula used $87$ factors, Sebastian $61$, Simon $51$, and Nina used only $45$ factors. Moreover, each of them found a best possible factorization in the sense that none of them could have solved the task with fewer factors.\n\nProve that $n$ is uniquely determined by this information, and give the prime factorization of $n$!"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral in which $ABD$ is an equilateral triangle. Let $S$ be the point of intersection of the lines $AD$ and $BC$, and let $T$ be the point of intersection of the lines $AC$ and $BD$. Show that the triangles $ATS$ and $BSD$ have the same area."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In this problem we consider those positive integers $z$ less than $1\\,000\\,000$ with the digit sums $Q(z)$ fixed in the parts of the problem, and in each case we ask for the probability that a number chosen at random from these numbers has a certain divisor. Each number is chosen with the same probability.\n\na) Determine the probability that a number chosen at random from the set of numbers with $Q(z) = 2$ is divisible by $5$.\n\nb) Determine the probability that a number chosen at random from the set of numbers with $Q(z) = 51$ is divisible by $6$.\n\nNote: If $z = 12\\,001$, then the digit sum is $Q(z) = 1 + 2 + 0 + 0 + 1 = 4$, and $z$ is divisible by $11$, i.e. has the divisor $11$, because $12\\,001 = 11 \\cdot 1\\,091$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider the inequality $\\sqrt{x^2 + 4} + \\sqrt{x^2 - 2x + 5} \\ge \\sqrt{17}$.\n\na) Show that the expression on the left-hand side of the inequality is defined for all real numbers $x$.\n\nb) Show that the inequality holds for all real $x$. For which $x$ does equality of both sides hold?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a Cartesian coordinate system of the plane, a finite number of squares is given. These squares are all pairwise congruent and all their sides are parallel to the axes of the coordinate system. Furthermore, let $S$ denote the set of all points of the plane that belong to at least one of these squares.\n\nShow: If $S$ has area $6$, then one can always select one or more of the given squares in such a way that the selected squares are pairwise disjoint and together have area $\\ge 1$.\n\nNote: A square includes all points in its interior and on its edges as well as its four vertices. Squares are called pairwise disjoint if there is no point of the plane that belongs to at least two of the squares."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A solid monument in the shape of a cuboid with a square base was built from equally large cube-shaped blocks. After many years, the $673$ blocks that are visible from the outside (these are not all blocks of the monument) have to be replaced.\n\nHow many blocks does the monument consist of, if it is known that this number is not divisible by $7$?\n\nNote: Solid means that the monument has no holes and no cavities. Visible from the outside are all four side faces and the top face, but not the base."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For given real numbers $x, y$ with $x > 0$ and $0 < y < 180$, let $ABCD$ be a parallelogram with $|\\overline{AB}| = x \\cdot |\\overline{AD}|$ and $y$ equal to the size of the angle $\\angle BAD$ in degrees. The points of intersection of the four interior angle bisectors of the parallelogram form a quadrilateral $EFGH$.\n\nInvestigate for which pairs of numbers $(x, y)$ the areas of the quadrilaterals $ABCD$ and $EFGH$ coincide.\n\nNote: Up to similarity, the figure is uniquely determined by $x$ and $y$; that is, whether the areas of the quadrilaterals are equal depends only on $x$ and $y$ and not on the choice of $ABCD$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $x_1, x_2, x_3, x_4, x_5, x_6$ be non-negative numbers with sum $1$. What is the largest value that the expression $x_1x_2 + x_2x_3 + x_3x_4 + x_4x_5 + x_5x_6 + x_6x_1$ can take?"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Determine all non-negative integers $n$ for which the expression\n$$n^4 + 2n^3 - n^2 + 2n + 1$$\nis a prime number."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Helene and Klara play a game with positive integers.\n\nFirst Helene writes $n$ positive integers on a board. (The numbers need not be distinct.) Then Klara chooses an arbitrary positive integer $k$ and adds $k$ to each of Helene's numbers. Afterwards the product of the $n$ numbers that Klara has obtained in this way is computed.\n\nIf this product is divisible by $16$, Helene wins; otherwise Klara wins.\n\n(a) Give a positive integer $n$ for which Klara can play so that she wins in every case, regardless of how Helene plays.\n\n(b) Give a positive integer $n$ for which Helene can play so that she wins in every case, regardless of how Klara plays.\n\n(c) Decide, for every positive integer $n$, which of the two players can play so that she wins in every case, regardless of how her opponent plays. Give your answer in a suitable way and justify its correctness with a proof.\n\nIn each part, also describe a corresponding winning strategy."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "An angle of size $60^\\circ$ and a point $P$ in its interior are given. The distances from the point $P$ to the arms of the angle are $a$ and $b$, respectively.\n\nDetermine the distance from the point $P$ to the vertex $S$ of the given angle in terms of $a$ and $b$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/demo9_2026_d1_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $m$ be a positive integer.\n\nOn an infinitely large board, all positive integers whose digit sum is $m$ are written. At one stroke, every number is replaced by its $11$-fold. Then every number now standing on the board is replaced by its digit sum.\n\nShow:\n\na) The largest number now standing on the board is $2m$.\n\nb) The smallest number now standing on the board is even."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In a triangle with side lengths $a, b, c$, let $a \\cdot b + b \\cdot c + c \\cdot a = 12$.\n\nFind\n\na) the largest real number $S$ such that $S \\le a + b + c$ holds for all such triangles;\n\nb) the smallest real number $T$ such that $a + b + c \\le T$ holds for all such triangles.\n\nNote: For this problem it is to be assumed that the triangle is not degenerate, that is, it has positive area."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "We call two mutually perpendicular lines $g$ and $h$ a midcross of a quadrilateral $ABCD$ if the segment $\\overline{AC}$ is not disjoint from $g$, the segment $\\overline{BD}$ is not disjoint from $h$, and moreover the four distances from $A$ and $C$ to $g$ and from $B$ and $D$ to $h$ are all equal.\n\nHow can one construct a midcross with compass and straightedge for every given quadrilateral $ABCD$?\n\nProve that every pair of lines arising from your construction description is a midcross of the quadrilateral $ABCD$.\n\nNote: Two geometric objects are disjoint if they have no point in common."
+        }
+      ]
+    }
+  ]
+}
