@@ -2,6 +2,669 @@
   "competition": "Belgian Mathematical Olympiad (Olympiade Mathématique Belge) - MAXI National Final",
   "years": [
     {
+      "year": 1976,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Look carefully at the equalities below:\n$$\\begin{array}{rcl}1&=&1\\\\ 3+5&=&8\\\\ 7+9+11&=&27\\\\ 12+15+17+19&=&64\\\\ 21+23+25+27+29&=&125\\end{array}$$\nWhat is the more general property suggested by these equalities? State this property as precisely as possible and give a proof of it."
+        },
+        {
+          "number": 2,
+          "problem": "Determine the number and the sign of the real roots of the polynomial\n$$x^5-5x^3+10x+k$$\nfor the various values of $k\\in\\mathbb{R}$."
+        },
+        {
+          "number": 3,
+          "problem": "In a plane $\\pi$, consider a convex $n$-gon ($n\\ge 3$), that is, an $n$-tuple $(a_0,a_1,\\ldots,a_{n-1})$ of distinct points such that for each of the lines $a_0a_1,a_1a_2,\\ldots,a_{n-1}a_0$, the $n-2$ other points all lie in one open half-plane determined by this line.\n\nFor every point $p_0$ of the segment $[a_0a_1]$, define the sequence $S(p_0)$ of points\n$$p_0,\\ p_1,\\ p_2,\\ \\ldots,\\ p_i,\\ \\ldots\\qquad(i\\in\\mathbb{N})$$\nas follows:\n\n$p_1$ is the intersection of the line $a_1a_2$ and the parallel to $a_0a_2$ through $p_0$;\n\n$p_2$ is the intersection of the line $a_2a_3$ and the parallel to $a_1a_3$ through $p_1$;\n\n$\\ldots$\n\n$p_i$ ($i\\ge 1$) is the intersection of the line $a_ia_{i+1}$ and the parallel to $a_{i-1}a_{i+1}$ through $p_{i-1}$ (it being understood that for $i\\ge n-1$ we set $a_n=a_0$, $a_{n+1}=a_1$, $a_{n+2}=a_2$, $\\ldots$, and more generally $a_{qn+r}=a_r$ where $q>0$ and $0\\le r<n$).\n\n(1) Can the sequence $S(p_0)$ contain infinitely many distinct points for a suitable choice of the convex $n$-gon and of the point $p_0$?\n\n(2) Clearly there exist convex $n$-gons and points $p_0$ for which the sequence $S(p_0)$ contains only finitely many distinct points. What values can this number take and, for a given value $v$, which are the convex $n$-gons and the points $p_0$ such that the sequence $S(p_0)$ contains exactly $v$ distinct points?"
+        },
+        {
+          "number": 4,
+          "problem": "Prove that, for every $x\\in\\mathbb{R}$,\n$$\\cos(\\sin x)>\\sin(\\cos x).$$"
+        },
+        {
+          "number": 5,
+          "problem": "Recall that if $r$ is a real number, the symbol $[r]$ denotes the largest integer less than or equal to $r$. Given a natural number $n\\ge 1$ and a real number $x$, the rounding of order $n$ of $x$ is defined by\n$$a_n(x)=10^{-n}\\,[10^nx+0.5].$$\nExamples:\n$$a_3(1.23647)=1.236,\\quad a_3(1.2365)=1.237,\\quad a_3(1.23661)=1.237,\\quad a_3(1.29973)=1.300.$$\nA real number $x$ is chosen at random among those for which $a_3(x)=1.236$, and a number $y$ among those for which $a_3(y)=2.742$.\n\nWhat is the probability that\n$$a_3(xy)=a_3(1.236\\cdot2.742)=3.389\\,?$$"
+        }
+      ]
+    },
+    {
+      "year": 1977,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "From the summit $s$ of a mountain, one sees in the plain two points $a$ and $b$ whose distance apart is $2$ km. The lines of sight to $a$ and to $b$ make an angle of $30^\\circ$. The inclination of the first line of sight with respect to a horizontal plane is $15^\\circ$ and that of the second line of sight is $20^\\circ$. The points $a$ and $b$ are at the same altitude. Compute, to the nearest metre, the difference in altitude between the points $s$ and $a$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine the infinitely differentiable functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that\n$$f(x+y)=f(x)+f(y)+2xy\\quad\\text{for all }x,y\\in\\mathbb{R}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a$, $b$, $c$ be three natural numbers. If, for every $n\\in\\mathbb{N}$, there exists a triangle whose side lengths are $a^n$, $b^n$, $c^n$, prove that all these triangles are isosceles."
+        },
+        {
+          "number": 4,
+          "problem": "$A$, $B$, $C$ have decided to fight a pistol duel. They stand at the vertices of an equilateral triangle, $20$ metres from one another. At this distance, the probability of hitting a target is $0.3$ for $A$ and $0.5$ for $C$; as for $B$, he never misses his target. At each shot, each one may aim at the target of his choice, and the shots are fired in turn by $A,B,C,A,B,C,A,\\ldots$. As soon as one of the shooters is hit, he drops out and the duel continues between the other two until one of them is hit in turn. What is the best strategy for $A$ among the following three: aim at $B$ with the first shot, aim at $C$ with the first shot, fire into the air with the first shot?"
+        },
+        {
+          "number": 5,
+          "problem": "In a plane, we are given a line $D$, a closed disc of radius $n\\in\\mathbb{N}$, and $4n$ closed segments of length $1$ contained in the disc. Prove that, whatever the position of these $4n$ segments in the disc, there exists a line parallel to $D$ or a line perpendicular to $D$ that meets at least two of the segments."
+        }
+      ]
+    },
+    {
+      "year": 1978,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the rectangle shown, the length is twice the width, the point $c$ is the midpoint of $[bd]$ and $|ab|=5$. What is the scalar product\n$$\\overrightarrow{ac}\\cdot\\overrightarrow{ad}\\,?$$\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1978_1_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "How many real roots does the equation\n$$\\sin x=\\frac{x}{100}$$\nhave?"
+        },
+        {
+          "number": 3,
+          "problem": "The gable $abcde$ of a house is as shown in the diagram (the points $b$ and $e$ are at the same height). The owner decides to install a gutter downpipe made of three straight pipes $[bp]$, $[ep]$ and $[pq]$, the descent from $p$ being vertical. For which choice of the point $p$ will the total length of the pipes used be minimal?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1978_1_p3_fig.png"
+        },
+        {
+          "number": 4,
+          "problem": "Find a polynomial in $x$ with coefficients in $\\mathbb{Z}$ having\n$$\\sqrt2+\\sqrt[3]{3}$$\nas a root."
+        },
+        {
+          "number": 5,
+          "problem": "A fly walks along the edges of a cube $abcdefgh$. Whenever it is at a vertex, it continues its walk to the other endpoint of one of the three edges issuing from this vertex, each of these edges having probability $1/3$ of being chosen. The vertices $f$ and $g$ are coated with a deadly insecticide. If the fly starts from vertex $a$, what is the probability\n\n(1) that it reaches vertex $f$?\n\n(2) that it reaches vertex $g$?\n\n(3) that it never passes through $f$ or through $g$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1978_1_p5_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 1979,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "By permuting in all possible ways the digits of the number $1234567$, one obtains $7!$ seven-digit numbers. What is the sum of these $7!$ numbers?"
+        },
+        {
+          "number": 2,
+          "problem": "In three-dimensional Euclidean space, consider a sequence of distinct points\n$$\\ldots,\\ a_{-3},\\ a_{-2},\\ a_{-1},\\ a_0,\\ a_1,\\ a_2,\\ a_3,\\ \\ldots$$\n(the set of indices is $\\mathbb{Z}$). The union of the segments $[a_ia_{i+1}]$, as $i$ runs through $\\mathbb{Z}$, is called a helical polygon if and only if any four consecutive points $a_i,a_{i+1},a_{i+2},a_{i+3}$ are the vertices of a regular tetrahedron.\n\n($\\alpha$) Given a regular tetrahedron $T$, how many helical polygons are there having the four vertices of $T$ as consecutive vertices?\n\n($\\beta$) Are two helical polygons with congruent sides necessarily congruent (isometric)?"
+        },
+        {
+          "number": 3,
+          "problem": "It is observed experimentally that a physical phenomenon is represented by a graph of the following shape.\n\nAnalysing the important properties of this graph leads one to look for a continuous function $f:[1,+\\infty[\\ \\to\\mathbb{R}$ such that $f(1)=1$, $f(2)=2$, $f$ has a maximum at $t=2$ and $\\lim_{t\\to+\\infty}f(t)=0$.\n\nAssuming that $f$ is a quotient of two polynomial functions restricted to the interval considered, give an example of a function having these properties.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1979_1_p3_fig.png"
+        },
+        {
+          "number": 4,
+          "problem": "A motorway interchange is shown below (the letter O in the figure marks the West). The arrows indicate the permitted direction of travel on the slip roads of the interchange.\n\nA car coming from the South enters the interchange on a day when roadworks make the hatched slip road unusable. At every point where there is a choice of directions, a mechanism is installed such that the car turns right with probability $r$. If $r=\\frac12$, what is the probability that the car leaves the interchange towards the West?\n\n(N.B. It is of course assumed that the highway code is respected.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1979_1_p4_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 1980,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Four prisms with triangular bases, whose lateral faces bear the digits $0$, $1$, $2$, can turn about their common axis. Each prism can only turn by a third of a turn at a time, and one must always turn three of them simultaneously and in the same direction. At the start, the four visible faces all bear the digit $0$. Is it possible to make any quadruple of the digits $0,1,2$ appear on the visible faces? In particular, can the quadruple $(1,0,0,0)$ be made to appear?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1980_1_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "Four spheres rest on a plane. Each sphere is tangent to the other three. Given that three of the four spheres have the same radius $R$, what is the radius of the fourth one?"
+        },
+        {
+          "number": 3,
+          "problem": "Given three numbers $a,b,x\\in\\mathbb{R}_0^+$ (strictly positive reals), denote by $S(a,b,x)$ the sequence\n$$t_0,\\ t_1,\\ t_2,\\ \\ldots,\\ t_n,\\ \\ldots$$\nsuch that\n$$t_0=a,\\qquad t_1=b,\\qquad t_n=x\\,t_{n-1}t_{n+1}\\quad\\text{for all }n\\in\\mathbb{N}_0.$$\n\n1) Prove that every sequence $S(a,b,x)$ is periodic.\n\n2) What values can the period take? (The period is the smallest non-zero natural number $k$ such that $t_{n+k}=t_n$ for all $n\\in\\mathbb{N}$.)\n\n3) For which values of $a,b,x$ is the sequence $S(a,b,x)$ convergent?"
+        },
+        {
+          "number": 4,
+          "problem": "Two urns each contain white balls and black balls. The total number of balls in the two urns together is $25$. One ball is drawn simultaneously from each urn. Given that the probability that the two balls drawn are both white is $0.54$, what is the probability that they are both black?"
+        }
+      ]
+    },
+    {
+      "year": 1981,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that, for every natural number $n$, the polynomial\n$$(x+1)^{2n+1}+x^{n+2}$$\nis divisible by $x^2+x+1$."
+        },
+        {
+          "number": 2,
+          "problem": "From a circular tart of radius $R$, one cuts a slice with central angle $\\alpha$ (measured in radians, with $0<\\alpha<2\\pi$). Express, as a function of $\\alpha$, the radius $r$ of the smallest circular plate on which the slice of tart can be placed without overhanging the plate."
+        },
+        {
+          "number": 3,
+          "problem": "In an octahedron (not necessarily regular) $abcdef$, suppose that each of the quadrilaterals $bcde$, $abfd$, $acfe$ is contained in a plane that separates the two other vertices. Do the lines $af$, $bd$, $ce$ always have a common point?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1981_1_p3_fig.png"
+        },
+        {
+          "number": 4,
+          "problem": "Two players $A$ and $B$ watch a little boy who has started tossing a coin (assumed perfectly fair) without stopping. The result of $3$ consecutive tosses is one of the $8$ triples\n$$\\mathrm{PPP},\\ \\mathrm{PPF},\\ \\mathrm{PFP},\\ \\mathrm{FPP},\\ \\mathrm{PFF},\\ \\mathrm{FPF},\\ \\mathrm{FFP},\\ \\mathrm{FFF},$$\nwhere P denotes \"tails\" (pile) and F \"heads\" (face). Player $A$ has bet that the triple PFP will appear in the sequence of tosses before the triple PPP. Player $B$ has bet the opposite. Which of the two players has the better chance of winning his bet?"
+        }
+      ]
+    },
+    {
+      "year": 1982,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Two circles $C'$ and $C''$ meet at two distinct points $a$ and $b$. Two parallel lines $A$ and $B$ are drawn through $a$ and $b$ respectively.\n\nThe line $A$ meets $C'$ again at $a'$ and $C''$ again at $a''$, the point $a$ lying between $a'$ and $a''$. The line $B$ meets $C'$ again at $b'$ and $C''$ again at $b''$, the point $b$ lying between $b'$ and $b''$.\n\nProve that the quadrilateral $a'b'b''a''$ is a parallelogram."
+        },
+        {
+          "number": 2,
+          "problem": "What is the largest natural number $n$ for which the system of $n$ inequalities\n$$k<x^k<k+1\\qquad(k=1,\\ldots,n)$$\nhas a real solution $x$?"
+        },
+        {
+          "number": 3,
+          "problem": "The wrappers of the chocolate bars of the brand SUPERMATH each contain the photo of a great mathematician. The complete collection consists of $n$ photos.\n\nAssuming that the photos are uniformly distributed among the wrappers, how many bars must one buy on average to gather a complete collection?"
+        },
+        {
+          "number": 4,
+          "problem": "Given a real number $x\\ge 1$, set\n$$x_1=x\\quad\\text{and}\\quad x_{k+1}=x_k^2+x_k\\qquad(k=1,2,3,\\ldots).$$\nWhat is the value of\n$$\\frac{1}{1+x_1}+\\frac{1}{1+x_2}+\\frac{1}{1+x_3}+\\cdots\\,?$$"
+        }
+      ]
+    },
+    {
+      "year": 1983,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A $5$-franc coin has a diameter of $24$ mm. When it is thrown onto a horizontal plane ruled into squares, one observes that there is exactly $1$ chance in $2$ that it lands entirely inside a square. What is the side length of a square of this grid?"
+        },
+        {
+          "number": 2,
+          "problem": "What is the value of the sum\n$$[\\sqrt1]+[\\sqrt2]+[\\sqrt3]+\\cdots+[\\sqrt{19831983}]\\,?$$\n($[\\sqrt n]$ denotes the largest integer less than or equal to $\\sqrt n$.)"
+        },
+        {
+          "number": 3,
+          "problem": "For which value(s) of $\\lambda\\in\\mathbb{R}$ does the equation\n$$1+\\sin^2(\\lambda x)=\\cos x$$\nhave one and only one real solution $x$?"
+        },
+        {
+          "number": 4,
+          "problem": "In order to award a favour by lot among his three children, Dad announces: \"I have chosen at random a number in the set $\\{1,2,\\ldots,100\\}$. Each of you in turn will name a number of this set. Whoever names the number closest to mine wins (in case of a tie, we shall toss a coin between those tied).\"\n\n(a) Alice having chosen $33$ and Benoît $75$, what is the best choice Corinne can make?\n\n(b) Express as completely as possible the strategy of best choice for Corinne as a function of Alice's choice $a$ and Benoît's choice $b$.\n\n(c) Alice having opted for $33$, what is the best choice Benoît can make, knowing that Corinne will then apply the strategy described above?"
+        }
+      ]
+    },
+    {
+      "year": 1984,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The first row of the triangular array below contains all the integers from $0$ to $1984$ in the usual order:\n$$\\begin{array}{ccccccccccccc}0&&1&&2&&3&\\cdots&1982&&1983&&1984\\\\ &1&&3&&5&\\cdots&&3965&&3967&\\\\ &&4&&8&&\\cdots&&&7932&&\\end{array}$$\nEvery number appearing in another row of the array is the sum of its two neighbours in the preceding row. Prove that the number in the last row is a multiple of $1984$."
+        },
+        {
+          "number": 2,
+          "problem": "Given a circle of radius $1$ with a diameter $[ab]$, and $T$ the tangent at $a$, one draws a chord $[ac]$ of length $k$ and constructs the point $d\\in T$ such that $c$ and $d$ lie in the same half-plane bounded by $ab$ and such that $|ad|=k$. Let $p$ be the point of intersection of the lines $ab$ and $cd$. What is the limiting position towards which the point $p$ tends as $k$ tends to zero?"
+        },
+        {
+          "number": 3,
+          "problem": "Given four non-coplanar points $p$, $q$, $r$, $s$ in three-dimensional Euclidean space, we want to construct four parallel planes $\\alpha$, $\\beta$, $\\gamma$, $\\sigma$, each containing one and only one of the four given points, such that the distances from $\\alpha$ to $\\beta$, from $\\beta$ to $\\gamma$ and from $\\gamma$ to $\\sigma$ are equal.\n\nHow many solutions does this problem have?"
+        },
+        {
+          "number": 4,
+          "problem": "What is the smallest value of the product\n$$\\left(1+\\frac1x\\right)\\left(1+\\frac1y\\right)\\left(1+\\frac1z\\right)$$\nif $x$, $y$, $z$ are three strictly positive real numbers such that $x+y+z=1$?"
+        }
+      ]
+    },
+    {
+      "year": 1985,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the Euclidean plane, two circles $C$ and $C'$, exterior to each other, are given. One draws the two common external tangents $aa'$ and $bb'$, and a common internal tangent $cc'$ ($a$, $b$, $c$ being the points of contact of these tangents with the circle $C$, and $a'$, $b'$, $c'$ the points of contact with the circle $C'$). If $d=aa'\\cap cc'$ and $d'=bb'\\cap cc'$, what can be said about the ratio of the lengths of the segments $[cd]$ and $[c'd']$?"
+        },
+        {
+          "number": 2,
+          "problem": "What are all the quadruples $(x,y,z,t)$ of non-zero real numbers that satisfy the system of equations\n$$\\begin{cases}x+y+z=t\\\\ \\dfrac1x+\\dfrac1y+\\dfrac1z=\\dfrac1t\\end{cases}\\ ?$$"
+        },
+        {
+          "number": 3,
+          "problem": "For which values of $n\\ge 4$ do there exist, in three-dimensional Euclidean space, $n$ points $p_1,p_2,p_3,\\ldots,p_n$ such that\n$$p_1p_2\\perp p_2p_3\\perp\\cdots\\perp p_ip_{i+1}\\perp\\cdots\\perp p_{n-1}p_n\\perp p_np_1\\,?$$"
+        },
+        {
+          "number": 4,
+          "problem": "If $x$ is a real number, $[x]$ denotes the integer part of $x$, that is, the unique integer $k$ such that $k\\le x<k+1$. What are all the real numbers $x$ such that $[x^2]=[x]^2$?"
+        }
+      ]
+    },
+    {
+      "year": 1986,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The Danish flag has a white cross on a red background. The arms of the cross have the same width, and the area of the cross is equal to that of the part coloured red. What is the width of the arms for a flag $75$ cm wide and $1$ metre long?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $u_1,u_2,\\ldots,u_n$ be strictly positive real numbers. Prove that, for every $n\\ge 1$,\n$$\\frac1{u_1}+\\frac1{u_2}+\\cdots+\\frac1{u_n}\\ge\\frac{n^2}{u_1+u_2+\\cdots+u_n}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "What is the greatest common divisor of $n^2+2$ and $n^3+1$ if $n=1986^{1986}$?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $m$ be the midpoint of the segment joining the centre of a cube to one of its vertices. Consider all the segments $[xy]$ having the point $m$ as midpoint and having as endpoints two points $x$, $y$ of the surface of the cube.\n\nWhat is the set, on the surface of the cube, of the endpoints of all these segments?"
+        }
+      ]
+    },
+    {
+      "year": 1987,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $p$ and $q$ are the roots of $x^2+rx+s$ and if $r$ and $s$ are the roots of $x^2+px+q$, what values can the sum $p+q+r+s$ take?"
+        },
+        {
+          "number": 2,
+          "problem": "The points $a$, $b$, $c$, $d$ are four consecutive vertices of a convex regular polygon. Given that\n$$\\frac1{|ab|}=\\frac1{|ac|}+\\frac1{|ad|},$$\nwhat is the number of sides of the polygon?"
+        },
+        {
+          "number": 3,
+          "problem": "An aeroplane $A$ and an aeroplane $B$ are fitted with engines of the same model. The probability that an engine fails is equal to $p$ ($0<p<1$). Aeroplane $A$ has two engines, aeroplane $B$ has four. Aeroplane $A$ can fly only if two engines are working. Aeroplane $B$ can still fly if one of its four engines fails, but it crashes as soon as at least two engines have failed.\n\nWhich of the two aeroplanes $A$ or $B$ is the safer? (Discuss according to $p$.)"
+        },
+        {
+          "number": 4,
+          "problem": "In space, two non-coplanar segments $ab$ and $cd$ are given. Determine the set of midpoints of the segments $[xy]$, where $x$ runs through $[ab]$ and $y$ runs through $[cd]$."
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Observe that\n$$\\begin{array}{rcl}16&=&4^2\\\\ 1156&=&34^2\\\\ 111556&=&334^2\\\\ 11115556&=&3334^2\\end{array}$$\nState and prove a formula depending on a natural number $n$ which, for $n=1,2,3,4$, reduces successively to the four formulas above."
+        },
+        {
+          "number": 2,
+          "problem": "To turn a square table through a quarter turn so that it occupies its initial position again, it is of course enough to rotate it through an angle $\\frac{\\pi}{2}$ about its centre.\n\nBut what is the minimal number of rotations needed if one uses only rotations whose centre is one of the legs of the table?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $E_n=\\{1,2,3,\\ldots,2n-1,2n\\}$. For which values of the non-zero natural number $n$ can one find in $E_n$ two disjoint subsets $P_1$, $P_2$ whose union is $E_n$ and such that the sum of the elements of $P_1$ is equal to the sum of the elements of $P_2$?"
+        },
+        {
+          "number": 4,
+          "problem": "Paris is a circular city, bounded by a ring road on which traffic flows so well that the speed there may be assumed infinite. On the other hand, any two points of Paris are joined by a straight street on which one travels at a finite speed, constant and independent of the two points. Your Paris home $d$ is neither on the ring road nor at the centre of Paris. What is the set of points of Paris that you reach, starting from $d$, faster by the straight line than by going via the ring road?"
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Kouar, a small rodent, stores nuts at the four consecutive vertices $a$, $b$, $c$, $d$ of a square. To keep watch over them, he starts from a point $k$ inside the square and moves in a straight line towards $a$. When he has covered half of the distance $|ka|$, at $\\ell$, he turns off towards $b$. Likewise, at $m$, halfway between $\\ell$ and $b$, he turns off towards $c$. Finally, from the midpoint $n$ of $[mc]$, he heads towards $d$. He ends his round at $p$, the point halfway between $n$ and $d$.\n\n(a) Determine the position(s) of the point $k$ with respect to the vertices of the square for which the round ends where it began, that is, at $k$.\n\n(b) If the round ends at $k$ and the area of the square $abcd$ is $75$, what is the area of $k\\ell mn$?\n\n(c) Koukouar, a less experienced fellow creature, has placed his stores of nuts at the four vertices $a'$, $b'$, $c'$, $d'$ of a parallelogram whose area is also $75$, and makes a round in the same way as Kouar. Determine (if possible from your previous answers) the point $k'$, start and end of Koukouar's round. Find (if possible from your previous answers) the area $k'\\ell'm'n'$ enclosed by Koukouar's path."
+        },
+        {
+          "number": 2,
+          "problem": "Which quintuples of non-zero real numbers $(u_1,u_2,\\ldots,u_5)$ satisfy\n$$\\frac{u_2}{u_1}=\\frac{u_3}{u_2}=\\frac{u_4}{u_3}=\\frac{u_5}{u_4},$$\n$$u_1\\cdot u_5=144,$$\n$$u_2+u_3+u_4=63,$$\n$$u_3>0\\ ?$$"
+        },
+        {
+          "number": 3,
+          "problem": "A point $a$ of a subset $A$ of the Euclidean plane is said to be solitary in $A$ if there exists a point $b$ in $A$ such that\n$$x\\in A\\setminus\\{a\\}\\Rightarrow |ax|>|bx|.$$\nWhat is the largest number of points that a finite subset $S$ of the Euclidean plane can have if every point of $S$ is solitary in $S$?"
+        },
+        {
+          "number": 4,
+          "problem": "Determine all natural numbers $n$ for which $1989^n$ is the sum of the squares of two non-zero natural numbers."
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A young adventurer discovers instructions for recovering a treasure.\n\n\"In the plain of Huelva only three trees can be seen: an araucaria $a$, a banana tree $b$ and a coconut palm $c$. Stand with your back against the banana tree $b$; the araucaria $a$ then appears on the left and the coconut palm $c$ on the right. Walk towards the araucaria, measuring the distance $|ba|$. On reaching $a$, turn a quarter turn to the left, then walk in a straight line a distance equal to $|ba|$. Plant a stake at the point $p$ thus reached. Go back to the banana tree $b$. Walk towards the coconut palm, measuring the distance $|bc|$. On reaching $c$, turn a quarter turn to the right, then walk in a straight line a distance equal to $|bc|$. Plant a stake at the point $q$ thus reached. The treasure is buried at the point $t$, the midpoint of the segment $[pq]$.\"\n\nIn the plain of Huelva, our adventurer locates the araucaria and the coconut palm, but notes that the banana tree has disappeared. An excellent geometer, he nevertheless finds the treasure by digging a single hole. You too, locate the point $t$ from the points $a$ and $c$ alone."
+        },
+        {
+          "number": 2,
+          "problem": "Are there at least five prime natural numbers each of which has the property of being a sum of two cubes of natural numbers?\n\nAre there at least five prime natural numbers each of which has the property of being a sum of two cubes of integers?"
+        },
+        {
+          "number": 3,
+          "problem": "In the figure, the five rhombi $abcd$, $aefg$, $bhij$, $dklm$ and $cnpq$ are congruent and their diagonals determine only two directions of the plane.\n\nShow that the octagon $abhiplmd$ is regular if and only if the octagon $cejnfqkg$ is.\n\nWhen these octagons are regular, what is the ratio $\\frac{|bd|}{|ac|}$ of the lengths of the diagonals of one of the rhombi?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1990_1_p3_fig.png"
+        },
+        {
+          "number": 4,
+          "problem": "Determine the largest value taken by the expression\n$$xy+yz+zx$$\nwhen $x$, $y$ and $z$ are real numbers such that $x\\ge 0$, $y\\ge 0$, $z\\ge 0$ and $x+y+z=1$."
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that for every natural number $n$ the integer\n$$E(n)=3^{n+2}2^{2n+1}+5^{2n+1}2^{n+2}$$\nis divisible by $19$."
+        },
+        {
+          "number": 2,
+          "problem": "A pine-wood cube is painted orange, then sawn into $n^3$ small cubes of the same size (where $n$ is a strictly positive natural number). What is the average of the numbers of painted faces of these $n^3$ small cubes?"
+        },
+        {
+          "number": 3,
+          "problem": "Describe, giving their degrees and their coefficients, all the polynomial functions $f$ from $\\mathbb{Z}$ to $\\mathbb{Z}$ satisfying, for $x,y\\in\\mathbb{Z}$,\n$$f(x+y)+1=f(x)+f(y)+2xy.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Inside a tetrahedron with vertices $a$, $b$, $c$, $d$, how many points $o$ are there for which the four tetrahedra with respective vertices $o,b,c,d$; $a,o,c,d$; $a,b,o,d$; $a,b,c,o$ have the same volume? Determine this point (these points) $o$."
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In base $10$, a certain number is written with five different digits, with $9$ as the hundreds digit. The same five digits written in the reverse order form another number which is equal to four times the initial number. Determine all the values of the initial number that satisfy these conditions."
+        },
+        {
+          "number": 2,
+          "problem": "In the plane, two segments of respective lengths $\\ell$ and $m$ with $\\ell<m$ are given, as well as a circle $C$ with one of its diameters $[ab]$. To each point $t$ of the circle, distinct from $a$, associate the possible points $p$ of the perpendicular to the line $ab$ through $t$ such that\n$$\\frac{|ap|}{|at|}=\\frac{\\ell}{m}.$$\nConstruct geometrically the set of these points $p$; for this purpose you have an ungraduated straightedge and a compass that allows you to transfer lengths and to draw circles."
+        },
+        {
+          "number": 3,
+          "problem": "A sequence is formed of $996$ symbols $\\alpha$ and $996$ symbols $\\omega$ in some order, but such that beyond each position the number of $\\alpha$ does not exceed the number of $\\omega$. Is there, for every natural number $n$ with $0<n<996$, a subsequence of consecutive symbols formed of $n$ symbols $\\alpha$ and $n$ symbols $\\omega$?"
+        },
+        {
+          "number": 4,
+          "problem": "A prisoner must distribute $17$ white balls and $17$ black balls between two urns, placing at least one black ball in each urn. The guard will choose an urn at random, then a ball at random from this urn. If this ball is white, the prisoner will be freed; otherwise, he will spend his life in jail. How should the prisoner distribute the balls in order to have the greatest chance of being freed? If you were in the prisoner's place, would you prefer to have to distribute $16$ white balls and $16$ black balls rather than $17$ white balls and $17$ black balls?"
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Ten Japanese children occupy the ten places of their classroom. When the day comes to change places, they proceed as follows. On a single sheet of paper, they first draw ten vertical lines of the same length, at the same height, and write a name above each line. To simplify the writing, denote the names by $1,2,\\ldots,10$. Then they add at random any number of horizontal bars, each joining two adjacent lines, in such a way that no two bars are ever at the same height. See the first example in the figure.\n\nEach pupil determines his new place by tracing a path starting from his name, following the vertical lines always going downwards and taking each of the horizontal bars encountered; the lower end reached indicates whose place the pupil must take (possibly he will not move). In our example (second drawing in the figure, the path in bold), pupil $8$ will occupy the place that was that of $7$.\n\n(a) Is it certain that, for every choice of horizontal bars, no two pupils will ever be assigned the same new place?\n\n(b) Can every permutation of the places be obtained in this way (that is, by a suitable choice of the horizontal bars)?\n\n(c) What is the smallest natural number $n$ such that every permutation of the $10$ places can be obtained by a choice of at most $n$ horizontal bars?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_1993_1_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "Which integers are both the square of a strictly positive integer $n$ and equal to a sum of $n$ consecutive integers?"
+        },
+        {
+          "number": 3,
+          "problem": "Two cyclists ride at the same speed $v$, equal to $30$ km/h, along a long flat road, separated by a distance $d$ equal to $100$ m. At some place on this road there is a traffic light that alternates green phases lasting $30$ s and red phases lasting $30$ s. The moment at which the first cyclist reaches the light is uniformly random over one period, that is: the probability that he arrives at most $t$ seconds after the light has turned green is $\\frac{t}{60}$, if $0\\le t\\le 60$. Discuss what the gap $e$ between the two cyclists will be when both have passed the signal; on average, will their distance have decreased or increased?"
+        },
+        {
+          "number": 4,
+          "problem": "In the plane, let $C$ be a solid triangle or a solid parallelogram. We say that a half-plane $D$ favours $C$ if the area of the intersection of $D$ and $C$ is at least seven eighths of the area of $C$:\n$$\\operatorname{area}(D\\cap C)\\ge\\frac78\\operatorname{area}(C).$$\nIf $D_1$ and $D_2$ are two half-planes that favour $C$, is the same true of every half-plane $D$ containing the intersection $D_1\\cap D_2$, when\n\n(a) $C$ is a solid triangle?\n\n(b) $C$ is a solid parallelogram?"
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A convex plane pentagon has two non-adjacent right angles. The two sides adjacent to the first right angle have equal lengths. The two sides adjacent to the second right angle have equal lengths. By replacing the two vertices of the pentagon that lie on only one side of these right angles by their midpoint, we form a quadrilateral. Must this quadrilateral have a right angle?"
+        },
+        {
+          "number": 2,
+          "problem": "There are $2n$ lamps (with $n\\ge 2$), numbered from $1$ to $2n$, arranged in a circle around a central lamp numbered $0$. These lamps form groups of four:\n$$\\{0,1,2,3\\},\\ \\{0,3,4,5\\},\\ \\ldots,\\ \\{0,2k-3,2k-2,2k-1\\},\\ \\{0,2k-1,2k,2k+1\\},\\ \\{0,2k+1,2k+2,2k+3\\},\\ \\ldots,\\ \\{0,2n-1,2n,1\\},$$\nand only two operations can be performed:\n\n($\\alpha$) switch off the four lamps of one group;\n\n($\\beta$) change the state of each of the lamps of one group (that is, a lamp that is on is switched off and one that is off is switched on).\n\nFor which values of $n$ can every initial state of the $2n+1$ lamps be transformed by a sequence of such operations into\n\n(a) the state in which all the lamps are on?\n\n(b) the state in which only lamp number $0$ is on?"
+        },
+        {
+          "number": 3,
+          "problem": "Is there a numbering of the edges of a cube by $12$ consecutive natural numbers such that\n\n(a) the sum of the numbers assigned to the edges ending at a vertex is always the same?\n\n(b) the sum of the numbers assigned to the edges of a face is always the same?"
+        },
+        {
+          "number": 4,
+          "problem": "Does the plane contain $1994$ (distinct) points, not all collinear, such that the distance between any two of them is an integer?"
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(a) On a circle, $1995$ blue points and $1994$ red points have been coloured, in an arbitrary arrangement. Let $b$ be the number of pairs of neighbouring blue points and $r$ the number of pairs of neighbouring red points. Does the difference $b-r$ always have the same value, whatever the arrangement of the coloured points? If so, what is this value?\n\n(b) Generalise to the case of $B$ blue points and $R$ red points."
+        },
+        {
+          "number": 2,
+          "problem": "Consider the set of the nine digits $\\{1,2,3,4,5,6,7,8,9\\}$. For a choice of four distinct digits among these, consider the sum $S$ of the numbers obtained by permuting these four digits in all possible ways. Let $M$ be the number of choices of four distinct digits for which the sum $S$ is divisible by no square other than $1$, and $N$ the total number of choices of four distinct digits. What is the ratio $M/N$?"
+        },
+        {
+          "number": 3,
+          "problem": "Using trapezoids that are halves of regular hexagons of side $1$, is it possible to tile (that is, to cover without gaps or overlaps)\n\n(a) an equilateral triangle with integer side?\n\n(b) a regular hexagon with integer side?"
+        },
+        {
+          "number": 4,
+          "problem": "Blaise first constructed a convex hexagon having three non-adjacent right angles, the two sides adjacent to each of these right angles having the same length. He then constructs a second hexagon by replacing each right-angle vertex by the reflection, in that right-angle vertex, of the opposite vertex of the hexagon; the other three vertices are unchanged. Blaise observes that the sides of his second hexagon are pairwise perpendicular. Is this a coincidence?"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "At the marshalling yard for passenger trains, the only rule given is that two first-class carriages may never follow each other. In how many ways can a train of fifteen carriages be made up, if at least fifteen carriages of each of the two classes are available? (The first-class carriages are indistinguishable from one another, as are the second-class ones.)"
+        },
+        {
+          "number": 2,
+          "problem": "Let $\\lfloor r\\rfloor$ be the integer part of the real number $r$, that is, the largest integer less than or equal to $r$. For all arithmetic sequences $(a_n)_{n\\in\\mathbb{N}}$ such that\n$$\\lfloor a_0\\rfloor=\\lfloor a_1\\rfloor=\\cdots=\\lfloor a_9\\rfloor=0\\quad\\text{and}\\quad\\lfloor a_{10}\\rfloor=1,$$\nwhat is the set of values taken by $a_{1996}$?"
+        },
+        {
+          "number": 3,
+          "problem": "Which non-empty subsets of space have the property that their intersection with every plane is either empty or a circle? (A set reduced to a point is considered to be a degenerate circle.)"
+        },
+        {
+          "number": 4,
+          "problem": "From the sum\n$$1+\\frac12+\\frac13+\\cdots+\\frac1n$$\nof the reciprocals of the non-zero natural numbers up to $n$, all the terms whose denominator contains the digit $9$ are removed.\n\n(a) Is it true that, whatever $n$ is, the remaining sum is less than $80$?\n\n(b) Is it true that, whatever $n$ is, it is less than $28$?"
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A convex polygon with $1997$ sides is tiled by polygons each of whose sides is either a side of the initial polygon or a side of another polygon of the tiling. Can such a tiling consist of\n\n(a) $1997$ triangles?\n\n(b) $1997$ quadrilaterals?\n\n(c) $1998$ triangles?"
+        },
+        {
+          "number": 2,
+          "problem": "In the expression $1+2+\\cdots+1997$, what is the minimum number of $+$ signs that must be changed into $-$ signs so that the new expression has value $1997$?"
+        },
+        {
+          "number": 3,
+          "problem": "Consider all rectangles inscribed in a triangle $ABC$ with a right angle at $A$, one of the sides of these rectangles lying on the hypotenuse of the right triangle.\n\n(a) Which of these rectangles has maximal area?\n\n(b) The part of the right triangle outside this rectangle of maximal area consists of three triangles; let $a$ (resp. $b$, $c$) be the radius of the incircle of the one of these triangles having $A$ (resp. $B$, $C$) as a vertex. In which cases is it true that $a^2=b^2+c^2$?"
+        },
+        {
+          "number": 4,
+          "problem": "The columns and the rows of a $1997\\times1997$ chessboard are numbered from $0$ to $1996$, the columns from left to right and the rows from bottom to top. The square at the intersection of column $x$ and row $y$ is denoted $(x,y)$.\n\nA pawn, initially on the square $(a,b)$ (with $a\\le b$), must go to the square $(c,d)$ (with $c\\le d$), observing the following rules:\n\n(a) Moves are made from a square to one of the four adjacent squares.\n\n(b) The squares $(x,y)$ with $x>y$ are forbidden.\n\n(c) The pawn does not pass through the same square twice.\n\n(d) Entering the square $(x,y)$ costs $xy$ euros.\n\nWhat is the cheapest route for the pawn? Discuss according to $a$, $b$, $c$ and $d$; describe all the optimal solutions if there are several."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCD$ be a rectangle in the plane (the vertices being listed in cyclic order), of area $S$, and $M$ a point inside this rectangle.\n\n(a) Show that $S\\le |AM|\\cdot|CM|+|BM|\\cdot|DM|$.\n\n(b) In which case(s) is $S$ equal to $|AM|\\cdot|CM|+|BM|\\cdot|DM|$?"
+        },
+        {
+          "number": 2,
+          "problem": "Around a round table sit $n$ people ($n\\ge 3$). Every hour, each of them votes aloud, \"yes\" or \"no\", on a motion. The participants in this meeting have all decided to adopt the same behaviour: \"If, in one round of voting, at least one of my two neighbours voted the same way as I did, I will keep the same vote in the next round; if, on the contrary, my two neighbours both voted the opposite way to my vote, then in the next round I will change my vote.\"\n\n(a) If $n=25$, is there, for every initial distribution of the votes, a moment from which the votes no longer change?\n\n(b) What about other values of $n$?"
+        },
+        {
+          "number": 3,
+          "problem": "Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that\n$$\\frac12 f(xy)+\\frac12 f(xz)-f(x)f(yz)\\ge\\frac14$$\nfor all real numbers $x$, $y$ and $z$."
+        },
+        {
+          "number": 4,
+          "problem": "Into how many regions do $1998$ great circles divide the surface of the sphere on which they are drawn, if no three of them are ever concurrent? (A great circle is the intersection of the sphere with a plane through its centre.)"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A sequence $s_1$ consists of $n$ natural numbers. The sequence $s_2$ is obtained by changing the order of the terms of $s_1$; the sequence $s_3$ is constructed by subtracting $s_2$ from $s_1$ term by term.\n\n(a) Show that, when $n=3$, the product of the terms of $s_3$ is an even number.\n\n(b) Does the result still hold when $n=1999$?"
+        },
+        {
+          "number": 2,
+          "problem": "Determine all polynomials $P$ with real coefficients such that $P(X^2)=(P(X))^2$."
+        },
+        {
+          "number": 3,
+          "problem": "A regular tetrahedron and a regular octahedron, both with edge $1$, rest on the table, each standing on a face. Which one is taller than the other? By how much?"
+        },
+        {
+          "number": 4,
+          "problem": "On each side of a regular polygon with $n$ sides, we select a point that is not a vertex, and we construct the convex $n$-gon $P$ determined by these $n$ points.\n\n(a) When $n=4$, if the quadrilateral $P$ has equal angles, is it necessarily a square?\n\n(b) When $n=5$, if the pentagon $P$ has equal angles, is it necessarily regular?\n\n(c) For which natural numbers $n$ greater than $3$ is it true that, if the $n$-gon $P$ has equal angles, then it is necessarily regular?"
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Show that if $a$, $b$ and $c$ are three distinct natural numbers strictly greater than $1$, then\n$$\\frac{a^2-1}{a^2}\\cdot\\frac{b^2-1}{b^2}\\cdot\\frac{c^2-1}{c^2}\\ge\\frac58.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Determine all real numbers $a$ such that\n$$\\sin(ax)=a\\sin x\\cos x\\quad\\text{for all }x\\in\\mathbb{R}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Is the polynomial\n$$P=(X-1)(X-2)(X-3)\\cdots(X-2000)-1$$\ndivisible by a polynomial with integer coefficients that is non-constant and different from $P$?"
+        },
+        {
+          "number": 4,
+          "problem": "Show that for every point $P$ inside the triangle $ABC$,\n$$\\min\\{|PA|,|PB|,|PC|\\}+|PA|+|PB|+|PC|<|AB|+|BC|+|CA|.$$"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Given a rectangle $ABCD$, determine two points $K$ and $L$ on $[BC]$ and on $[CD]$ respectively such that the triangles $ABK$, $AKL$ and $ADL$ have the same area."
+        },
+        {
+          "number": 2,
+          "problem": "Find all solutions of the following system in the real unknowns $x$, $y$, $u$ and $v$:\n$$\\begin{cases}x^2+y^2=1\\\\ u^2+v^2=1\\\\ xu+yv=1\\\\ xu-yv=\\frac12\\end{cases}$$"
+        },
+        {
+          "number": 3,
+          "problem": "Determine all real numbers $r$ such that $-20$, $1$, $10$ and $r$ are the four solutions of an equation of the form $p(q(x))=0$ in which $p(x)$ and $q(x)$ are polynomials of degree two."
+        },
+        {
+          "number": 4,
+          "problem": "The integers $a_0,a_1,a_2,\\ldots,a_{100}$ satisfy the following conditions:\n$$\\begin{cases}a_1>a_0\\ge 0\\\\ a_{k+2}=3a_{k+1}-2a_k\\quad(\\text{for }k=0,1,2,\\ldots,98).\\end{cases}$$\nCompare the numbers $a_{100}$ and $2^{99}$. Are they equal? Is one of them always larger than the other? If so, which one?"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $(a_n)_{n\\in\\mathbb{N}}$ be the sequence such that\n$$a_n=n+\\lfloor\\sqrt n\\rfloor\\quad\\text{for all }n\\in\\mathbb{N}.$$\nDetermine the smallest natural number $k$ for which $a_k,a_{k+1},\\ldots,a_{k+2001}$ form a sequence of $2002$ consecutive integers.\n\nN.B.: $\\lfloor x\\rfloor$ denotes the largest integer less than or equal to $x$."
+        },
+        {
+          "number": 2,
+          "problem": "(a) In the plane, let $AB_1C_1D_1$ and $AB_2C_2D_2$ be two squares with a common vertex (the vertices are listed in the same sense). If $B$, $C$ and $D$ are the midpoints of the segments $[B_1B_2]$, $[C_1C_2]$ and $[D_1D_2]$ respectively, is the quadrilateral $ABCD$ also a square?\n\n(b) What if the vertices of the squares $AB_1C_1D_1$ and $AB_2C_2D_2$ are listed in opposite senses?"
+        },
+        {
+          "number": 3,
+          "problem": "Here is a partial view of a multiplication table in which a rectangular array has been selected (framed in the figure).\n\nFor each array whose top-left element and bottom-right element are $1$ and $2002$ respectively, we compute the sum of all its elements. What is the smallest of the sums thus obtained?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_2002_1_p3_fig.png"
+        },
+        {
+          "number": 4,
+          "problem": "Find all prime numbers $a$ and $b$ such that $a^{a+1}+b^{b+1}$ is also a prime number."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Between the digits $4$ and $9$, one inserts one or more digits $4$ followed by the same number of digits $8$. The first two numbers obtained in this way are $4489=67^2$ and $444889=667^2$. Are all the numbers constructed in this way squares of integers?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral such that $\\angle ACB=2\\angle CAD$ and $\\angle ACD=2\\angle BAC$. Is the equality $|CA|=|CB|+|CD|$ necessarily true?"
+        },
+        {
+          "number": 3,
+          "problem": "On a cube whose edges have length $1$, consider paths going from one (arbitrary) vertex of the cube to another (arbitrary) one. These paths are made up of edges and face diagonals of the cube, and they do not pass through the same point twice.\n\nCompute the greatest length of such a path."
+        },
+        {
+          "number": 4,
+          "problem": "In the infinite table below, the first row and the first column are formed by the arithmetic progression $4,7,10,13,16,\\ldots$ with common difference $3$. The following rows are also arithmetic progressions, with successive odd common differences $5,7,9,11,\\ldots$\n$$\\begin{array}{cccccccc}4&7&10&13&16&19&22&\\cdots\\\\ 7&12&17&22&27&32&37&\\cdots\\\\ 10&17&24&31&38&45&52&\\cdots\\\\ 13&22&31&40&49&58&67&\\cdots\\\\ 16&27&38&49&60&71&82&\\cdots\\\\ 19&32&45&58&71&84&97&\\cdots\\\\ \\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\end{array}$$\nIs the following statement correct for every strictly positive integer $n$?\n\nThe number $n$ does not appear in this table if and only if $2n+1$ is prime."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "(a) Is there a polynomial $p$ with integer coefficients such that $p(2)=0$ and $p(0)=4$?\n\n(b) Is there a polynomial $p$ with integer coefficients such that $p(1)=7$ and $p(8)=9$?\n\n(c) For which values of the integer $n$ is there a polynomial $p$ with integer coefficients such that $p(1)=7$ and $p(8)=n$?"
+        },
+        {
+          "number": 2,
+          "problem": "How many integers between $10\\,000$ and $99\\,999$ have an even number of even digits?"
+        },
+        {
+          "number": 3,
+          "problem": "In triangle $ABC$, the point $D$ lies on $[AC]$ and is such that $|BD|=|CD|$. A line parallel to $BD$ meets the segment $[BC]$ at $E$ and the line $AB$ at $F$. The intersection point of the lines $AE$ and $BD$ is $G$. Prove that the angles $\\angle BCG$ and $\\angle BCF$ are equal."
+        },
+        {
+          "number": 4,
+          "problem": "An initial list contains all the integers from $1$ to $2004$ in some order.\n\nThe following operation will be applied to it repeatedly: if the first value of the list is the number $k$, the first $k$ values are rewritten in the reverse of the order they were in (the other values are unchanged). Note that if $k=1$, the list is not modified.\n\n(a) Is there an initial list such that, after the operation has been applied to it four times in succession, the number $1$ appears in first position (without $1$ having appeared in first position earlier)?\n\n(b) Is there an initial list such that, after the operation has been applied to it seventeen times in succession, the number $1$ appears in first position (without $1$ having appeared in first position earlier)?\n\n(c) Is there, for every natural number $n$ with $1\\le n\\le 2004$, an initial list such that, after the operation has been applied to it $n$ times in succession, the number $1$ appears in first position (without $1$ having appeared in first position earlier)?\n\n(d) For every initial list, is there necessarily a natural number $n$ such that, after the operation has been applied to the list $n$ times in succession, the number $1$ appears in first position?"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the expression\n$$(x_1+x_2+x_3+\\cdots+x_n)^2=x_1^2+x_2^2+x_3^2+\\cdots+x_n^2+2x_1x_2+2x_1x_3+\\cdots+2x_1x_n+\\cdots+2x_{n-1}x_n,$$\nthe non-zero real numbers $x_1,x_2,x_3,\\ldots,x_n$ are not all positive. Are there values of these real numbers that make the number of positive double products equal to the number of negative double products\n\n(a) if $n=4$?\n\n(b) if $n=2005$?\n\nGive a necessary and sufficient condition on $n$ for the number of positive double products to be equal to the number of negative double products."
+        },
+        {
+          "number": 2,
+          "problem": "In three-dimensional space, are there two points $P$ and $Q$ with rational coordinates such that $|PQ|=\\sqrt7$?"
+        },
+        {
+          "number": 3,
+          "problem": "In triangle $ABC$, the lines $AE$ and $CD$ are the internal bisectors of the angles $\\angle BAC$ and $\\angle ACB$ respectively; $E$ lies on $BC$ and $D$ lies on $AB$. For which sizes of the angle $\\angle ABC$ do we certainly have\n\n(a) $|AD|+|EC|=|AC|$?\n\n(b) $|AD|+|EC|>|AC|$?\n\n(c) $|AD|+|EC|<|AC|$?"
+        },
+        {
+          "number": 4,
+          "problem": "The infinite sequence\n$$1,2,3,4,0,9,6,9,4,8,7,\\ldots$$\ncontains only numbers belonging to the set $\\{0,1,2,\\ldots,9\\}$ and is constructed as follows: after the fourth number, each new number is the units digit of the sum of the four preceding numbers.\n\n(a) Do the numbers $2,0,0,5$ appear consecutively in this sequence?\n\n(b) Do the numbers $1,2,3,4$ appear consecutively a second time in this sequence?"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "We wish to tile a rectangle using only pieces identical to those drawn below, made up of small squares of size $1\\times1$. The tiling must leave no hole in the rectangle and no two pieces may overlap.\n\nIs this tiling possible if the rectangle has size\n\n(a) $3\\times5$?\n\n(b) $3\\times3$?\n\n(c) $m\\times n$, where $m$ and $n$ are natural numbers greater than $2$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/be_2006_1_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCD$ be a parallelogram. On $DC$ and $BC$, the parallelograms $DCFE$ and $BCHG$ are constructed so that $A$, $B$ and $G$ are collinear, as are $A$, $D$ and $E$. Show that $EH$, $FG$ and $AC$ are concurrent."
+        },
+        {
+          "number": 3,
+          "problem": "Determine all natural numbers $k$ and $n$ such that\n\n(a) $2^k-1=n^2$;\n\n(b) $3^k-1=n^3$."
+        },
+        {
+          "number": 4,
+          "problem": "The positive real numbers $x$, $y$ are such that $y=2-x$.\n\n(a) What is the maximum value of $x^2y^2(x^2+y^2)$?\n\n(b) For which values of $(x,y)$ is this maximum attained?\n\n(c) What is the set of values of $x^2y^2(x^2+y^2)$?"
+        }
+      ]
+    },
+    {
       "year": 2007,
       "problems": [
         {
