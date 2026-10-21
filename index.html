@@ -325,6 +325,7 @@
     --nlj: #e07b39; --nlj-ink: #7a3d14; --nlj-tint: #fbeadd;
     --nzt: #4b5d8f; --nzt-ink: #28345a; --nzt-tint: #e5e9f4;
     --cu: #1f5aa6; --cu-ink: #0f3266; --cu-tint: #e1ebf7;
+    --danj: #2f6f73; --danj-ink: #1d4a4d; --danj-tint: #e3f0f0;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -585,6 +586,7 @@
 .f-nlj { --f: var(--nlj); --f-ink: var(--nlj-ink); --f-tint: var(--nlj-tint); }
 .f-nzt { --f: var(--nzt); --f-ink: var(--nzt-ink); --f-tint: var(--nzt-tint); }
 .f-cu { --f: var(--cu); --f-ink: var(--cu-ink); --f-tint: var(--cu-tint); }
+.f-danj { --f: var(--danj); --f-ink: var(--danj-ink); --f-tint: var(--danj-tint); }
 
 /* ==========================================================
    Base
@@ -1114,7 +1116,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261021-balkan-check';
+const DATA_VERSION = '20261021-danube-contributed';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1351,6 +1353,7 @@ REGION_OF.bem = 'europe';
 REGION_OF.nlj = 'europe';
 REGION_OF.nzt = 'oceania';
 REGION_OF.cu = 'americas';
+REGION_OF.danj = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1559,7 +1562,8 @@ const COUNTRIES = [
     { key: 'cps', name: 'CPS Match', flag: '🇪🇺', file: 'Cps-match-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Match', group: 'CPS' },
     { key: 'cpsj', name: 'CPS Junior', flag: '🇪🇺', file: 'Cps-junior-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Junior Match', group: 'CPS' },
     { key: 'apmc', name: 'Austrian–Polish MC', flag: '🇪🇺', file: 'Austrian-polish-problems.json', kind: 'years', scope: 'regional', full: "Austrian\u2013Polish Mathematics Competition" },
-    { key: 'dan', name: 'Danube Competition', flag: '🇪🇺', file: 'Danube-problems.json', kind: 'years', scope: 'regional', full: "Danube Mathematical Competition, Seniors" },
+    { key: 'dan', name: 'Danube Competition', flag: '🇪🇺', file: 'Danube-problems.json', kind: 'years', scope: 'regional', group: 'Danube', groupName: 'Danube Competition', sub: 'Senior', full: "Danube Mathematical Competition, Seniors" },
+    { key: 'danj', name: 'Danube Competition Junior', flag: '🇪🇺', file: 'Danube-junior-problems.json', kind: 'years', scope: 'regional', group: 'Danube', groupName: 'Danube Competition', sub: 'Junior', full: "Danube Mathematical Competition, Juniors" },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
     { key: 'rio', name: 'Rioplatense', flag: '🌎', file: 'Rioplatense-problems.json', kind: 'years', scope: 'regional', full: "Olimp\u00edada Matem\u00e1tica Rioplatense (Level 3)" },
     { key: 'mayo', name: 'Olimpiada de Mayo', flag: '🌎', file: 'Mayo-problems.json', kind: 'years', scope: 'regional', full: "Olimpiada de Mayo (OMA), First and Second Level" },
