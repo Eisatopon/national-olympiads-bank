@@ -358,7 +358,7 @@
         },
         {
           "number": 4,
-          "problem": "In the plane, $k+n$ distinct lines are given, where $k>1$ and $n$ are integers, no three of them passing through the same point. Exactly $k$ of these lines are parallel to each other, and each of the other $n$ lines meets every other line. The lines divide the plane into regions (triangles, polygons and unbounded regions). A region is called good if it lies in a strip between two of the parallel lines. If the minimum possible number of good regions is $176$ and the maximum possible number is $221$, find $k$ and $n$."
+          "problem": "In the plane we consider $k+n$ pairwise distinct lines, where $k>1$ is an integer and $n$ is a positive integer, no three of which pass through the same point. Of these lines, $k$ are parallel to each other, while the remaining $n$ lines intersect pairwise and none of them is parallel to the $k$ parallel lines. All these lines together divide the plane into regions (e.g. triangular, polygonal and unbounded ones). Two regions are considered different if they have no common points or have common points only on their boundary. A region is called good if it lies between the parallel lines. If, in a configuration, the minimum number of good regions is $176$ and the maximum number is $221$, find $k$ and $n$."
         }
       ]
     },
@@ -547,7 +547,7 @@
         },
         {
           "number": 4,
-          "problem": "An $n\\times m$ rectangle with $n<m$ is divided by lines parallel to its sides into $nm$ unit squares. Initially a black token is placed on each of $N$ unit squares. Then we try to fill the board with black tokens using the following move: if an empty unit square shares a side with at least two unit squares that contain a token, a token may be placed on it. Find the least number $N$ of tokens in an initial placement that is necessary and sufficient for the whole rectangle to be filled after finitely many moves."
+          "problem": "An $n\\times m$ rectangle with $n\\leq m$ is divided by lines parallel to its sides into $nm$ unit squares. Initially a black token is placed on each of $N$ unit squares. Then we try to fill the board with black tokens using the following move: if an empty unit square shares a side with at least two unit squares that contain a token, a token may be placed on it. Find the least number $N$ of tokens in an initial placement that is necessary and sufficient for the whole rectangle to be filled after finitely many moves."
         }
       ]
     },
@@ -569,6 +569,27 @@
         {
           "number": 4,
           "problem": "Find all positive integers $k$ with the following property: there are no positive integers $a,b$ for which $$A(k,a,b)=\\frac{a+b}{a^2+k^2b^2-k^2ab}$$ is a composite positive integer."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a,b,c,d$ be positive real numbers such that $(a+c)(b+d)=ac+bd$. Determine the least possible value of the expression $$A=\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{d}+\\frac{d}{a}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCD$ be a convex quadrilateral with $\\angle ABC>90^\\circ$, $\\angle CDA>90^\\circ$ and $\\angle DAB=\\angle BCD$. Let $E$ and $F$ be the reflections of $A$ in the lines $BC$ and $CD$, respectively. Suppose that the segments $AE$ and $AF$ meet the line $BD$ at $K$ and $L$, respectively. Prove that the circumcircles of the triangles $BEK$ and $DFL$ are tangent to each other."
+        },
+        {
+          "number": 3,
+          "problem": "Let $k$ be a positive integer. The vertices of a convex $(4k+1)$-gon $P$ are coloured with two colours, white and black, and each colour is used at least $k$ times. A convex quadrilateral whose vertices are also vertices of $P$ is called good if it has three vertices of one colour and one vertex of the other colour. Prove that there exist $k$ good convex quadrilaterals that are pairwise disjoint, that is, no two of them have common points on their perimeter or in their interior."
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb{N}$ be the set of natural numbers and $\\mathbb{N}^*=\\mathbb{N}\\setminus\\{0\\}$ the set of non-zero natural numbers. Determine all functions $f:\\mathbb{N}^*\\to\\mathbb{N}$ that satisfy all three of the following conditions:\n\n(a) $f(n)\\neq 0$ for at least one $n\\in\\mathbb{N}^*$;\n\n(b) $f(xy)=f(x)+f(y)$ for all $x,y\\in\\mathbb{N}^*$;\n\n(c) there exist infinitely many positive integers $n$ such that $f(k)=f(n-k)$ for all $k$ with $0<k<n$."
         }
       ]
     },

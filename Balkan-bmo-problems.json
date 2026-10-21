@@ -867,11 +867,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "An integer $n > 1$ is called good if there exists a permutation $a_1, a_2, \\ldots, a_n$ of the numbers $1, 2, \\ldots, n$ such that:\n(i) $a_i$ and $a_{i+1}$ have different parities for every $1 \\leq i \\leq n-1$;\n(ii) the sum $a_1 + a_2 + \\cdots + a_k$ is a quadratic residue modulo $n$ for every $1 \\leq k \\leq n$.\nProve that there exist infinitely many good numbers, as well as infinitely many positive integers which are not good."
+          "problem": "An integer $n > 1$ is called good if there exists a permutation $a_1, a_2, a_3, \\ldots, a_n$ of the numbers $1, 2, 3, \\ldots, n$ such that:\n(i) $a_i$ and $a_{i+1}$ have different parities for every $1 \\leq i \\leq n-1$;\n(ii) the sum $a_1 + a_2 + \\cdots + a_k$ is a quadratic residue modulo $n$ for every $1 \\leq k \\leq n$.\nProve that there exist infinitely many good numbers, as well as infinitely many positive integers which are not good.\nRemark: Here an integer $x$ is considered a quadratic residue modulo $n$ if there exists an integer $y$ such that $x \\equiv y^2 \\pmod{n}$."
         },
         {
           "number": 2,
-          "problem": "Let $ABC$ be an acute-angled triangle with orthocenter $H$, and let $D$ be any point on the side $BC$. The points $E, F$ lie on the segments $AB, AC$ respectively, such that the points $A, B, D, F$ are concyclic and the points $A, C, D, E$ are concyclic. The segments $BF$ and $CE$ intersect at $P$. Let $L$ be the point on $HA$ such that $LC$ is tangent to the circumcircle of triangle $PBC$ at $C$, and let $X$ be the intersection of $BH$ and $CP$. Prove that the points $D$, $X$ and $L$ are collinear."
+          "problem": "Let $ABC$ be an acute-angled triangle with orthocentre $H$ and let $D$ be an arbitrary interior point on the side $BC$. Suppose $E$ and $F$ are points on the segments $AB$ and $AC$ respectively such that the quadrilaterals $ABDF$ and $ACDE$ are cyclic, and let $BF$ and $CE$ intersect at $P$. Let $L$ be the point of the line $HA$ such that $LC$ is tangent to the circumcircle of triangle $PBC$ at the point $C$. Let the lines $BH$ and $CP$ intersect at $X$. Prove that $D$, $L$ and $X$ are collinear."
         },
         {
           "number": 3,
