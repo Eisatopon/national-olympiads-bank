@@ -329,6 +329,7 @@
     --ecs: #6b4f2a; --ecs-ink: #47331a; --ecs-tint: #f3ece2;
     --co: #c99a2e; --co-ink: #7d6608; --co-tint: #faf3df;
     --mdm: #2d5f8a; --mdm-ink: #1b3a55; --mdm-tint: #e4eef7;
+    --tr1: #5a2d8a; --tr1-ink: #3a1c5a; --tr1-tint: #efe6f7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -593,6 +594,7 @@
 .f-ecs { --f: var(--ecs); --f-ink: var(--ecs-ink); --f-tint: var(--ecs-tint); }
 .f-co { --f: var(--co); --f-ink: var(--co-ink); --f-tint: var(--co-tint); }
 .f-mdm { --f: var(--mdm); --f-ink: var(--mdm-ink); --f-tint: var(--mdm-tint); }
+.f-tr1 { --f: var(--tr1); --f-ink: var(--tr1-ink); --f-tint: var(--tr1-tint); }
 
 /* ==========================================================
    Base
@@ -1124,7 +1126,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261022-turkey-final-tst';
+const DATA_VERSION = '20261022-turkey-first-round';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1365,6 +1367,7 @@ REGION_OF.danj = 'europe';
 REGION_OF.ecs = 'americas';
 REGION_OF.co = 'americas';
 REGION_OF.mdm = 'europe';
+REGION_OF.tr1 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1403,6 +1406,7 @@ const COUNTRIES = [
     { key: 'itf', name: 'Italy Gara di Febbraio', flag: '🇮🇹', file: 'Italy-febbraio-problems.json', kind: 'years', full: "Italian Mathematical Olympiad, Gara di Febbraio (second round), Triennio" },
     { key: 'ph', name: 'Philippines', flag: '🇵🇭', file: 'Philippines-pmo-problems.json', kind: 'years' },
     { key: 'tr', name: 'Turkey', flag: '🇹🇷', file: 'Turkey-tmo-problems.json', kind: 'years' },
+    { key: 'tr1', name: 'Turkey First Round', flag: '🇹🇷', file: 'Turkey-first-round-problems.json', kind: 'years', full: "Turkey National Mathematical Olympiad, First Round (multiple choice)" },
     { key: 'ru', name: 'Russia', flag: '🇷🇺', file: 'Russia-aro-problems.json', kind: 'years' },
     { key: 'rug9', name: 'Russia All-Russian grade 9', flag: '🇷🇺', file: 'Russia-aro-g9-problems.json', kind: 'years', full: "All-Russian Olympiad, final stage, grade 9" },
     { key: 'rug10', name: 'Russia All-Russian grade 10', flag: '🇷🇺', file: 'Russia-aro-g10-problems.json', kind: 'years', full: "All-Russian Olympiad, final stage, grade 10" },
