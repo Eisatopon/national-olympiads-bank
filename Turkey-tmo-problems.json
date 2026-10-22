@@ -2,6 +2,386 @@
   "competition": "Turkey Mathematical Olympiad (National Round)",
   "years": [
     {
+      "year": 1993,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Prove that there is a number whose decimal representation ends with $1994$ and which can be written as $1994 \\cdot 1993^n$ ($n \\in \\mathbb{Z}^+$)."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The incircle of triangle $ABC$ with centre $I$ ($\\angle ABC = 90^\\circ$) touches $AB$, $BC$, $AC$ at $F$, $D$, $E$, respectively. If $L = CI \\cap EF$ and $N = DL \\cap AB$, prove that $AI = ND$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n \\in \\mathbb{Z}^+$ and $A = \\{1, 2, \\ldots, n\\}$, and let $f$ and $\\sigma$ be two permutations of $A$. If there is a $k \\in A$ such that $(f \\circ \\sigma)(1), \\ldots, (f \\circ \\sigma)(k)$ is an increasing sequence and $(f \\circ \\sigma)(k), \\ldots, (f \\circ \\sigma)(n)$ is a decreasing sequence, we say that $f$ is good for $\\sigma$. Let $S_\\sigma$ denote the set of functions that are good for $\\sigma$.\n(a) Prove that $S_\\sigma$ has $2^{n-1}$ elements for every permutation $\\sigma$.\n(b) Prove that for each $n \\ge 4$ there are permutations $\\sigma$ and $\\tau$ such that $S_\\sigma \\cap S_\\tau = \\emptyset$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $(a_n)$ be a sequence of positive integers such that $0 < a_{n+1} - a_n < \\sqrt{a_n}$ for every $n \\ge 1$. Prove that for all $x, y \\in \\mathbb{R}$ with $0 < x < y < 1$ one can find $k, m \\in \\mathbb{Z}^+$ such that $x < \\dfrac{a_k}{a_m} < y$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that through a vertex of a convex quadrilateral one can draw (with ruler and compass) a line which divides the quadrilateral into two parts of equal area."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n_1, \\ldots, n_k$ and $a$ be positive integers which satisfy the following conditions:\n(a) for every $i \\ne j$, $(n_i, n_j) = 1$;\n(b) for every $i$, $a^{n_i} \\equiv 1 \\pmod{n_i}$;\n(c) for every $i$, $n_i$ does not divide $a - 1$.\nShow that there exist at least $2^{k+1} - 2$ integers $x > 1$ with $a^x \\equiv 1 \\pmod{x}$."
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For $n \\in \\mathbb{N}$, let $a_n$ denote the closest integer to $\\sqrt{n}$. Evaluate $$\\sum_{n=1}^{\\infty} \\frac{1}{a_n^3}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral with $\\angle BAD < 90^\\circ$ and $\\angle BCA = \\angle DCA$. Point $E$ is taken on segment $DA$ such that $BD = 2DE$. The line through $E$ parallel to $CD$ intersects the diagonal $AC$ at $F$. Prove that $AC \\cdot BD = 2AB \\cdot FC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ blue lines, no two of which are parallel and no three concurrent, be drawn on a plane. An intersection of two blue lines is colored blue. Through any two blue points that have not already been joined by a blue line, a red line is drawn. An intersection of two red lines is colored red, and an intersection of a red line and a blue line is colored purple. What is the maximum possible number of purple points?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ be an increasing function. For each $u \\in \\mathbb{R}^+$, we denote $g(u) = \\inf\\{f(t) + u/t \\mid t > 0\\}$. Prove that:\n(a) if $x \\le g(xy)$, then $x \\le 2f(2y)$;\n(b) if $x \\le f(y)$, then $x \\le g(xy)$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find the set of all ordered pairs $(s, t)$ of positive integers such that $t^2 + 1 = s(s + t)$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "The incircle of a triangle $ABC$ touches $BC$ at $D$ and $AC$ at $E$. Let $K$ be the point on $CB$ with $CK = 3BD$, and $L$ be the point on $CA$ with $AE = CL$. Lines $AK$ and $BL$ meet at $P$. If $Q$ is the midpoint of $BC$, $I$ the incenter, and $G$ the centroid of $\\triangle ABC$, show that:\n(a) $IQ$ and $AK$ are parallel;\n(b) the triangles $AIG$ and $QPG$ have equal area."
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $m_1, m_2, \\ldots, m_k$ be integers with $2 \\le m_1$ and $2m_i \\le m_{i+1}$ for all $i$. Show that for any integers $a_1, a_2, \\ldots, a_k$ there are infinitely many integers $x$ which do not satisfy any of the congruences $$x \\equiv a_i \\pmod{m_i}, \\quad i = 1, 2, \\ldots, k.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle and let $k_1, k_2, k_3$ be the circles with diameters $BC, CA, AB$, respectively. Let $K$ be the radical center of these circles. Segments $AK, BK, CK$ meet $k_1, k_2, k_3$ again at $D, E, F$, respectively. If the areas of triangles $ABC, DBC, ECA, FAB$ are $u, x, y, z$, respectively, prove that $$u^2 = x^2 + y^2 + z^2.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A$ be a real number and $(a_n)$ be a sequence of real numbers such that $a_1 = 1$ and $$1 < \\frac{a_{n+1}}{a_n} \\le A \\quad \\text{for all } n \\in \\mathbb{N}.$$\n(a) Show that there is a unique non-decreasing surjective function $k : \\mathbb{N} \\to \\mathbb{N}$ such that $1 < A^{k(n)}/a_n \\le A$ for all $n \\in \\mathbb{N}$.\n(b) If $k$ takes every value at most $m$ times, show that there is a real number $C > 1$ such that $Aa_n \\ge C^n$ for all $n \\in \\mathbb{N}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In a triangle $ABC$ with $AB \\ne AC$, the internal and external bisectors of the angle $A$ meet the line $BC$ at $D$ and $E$, respectively. If the feet of the perpendiculars from a point $F$ on the circle with diameter $DE$ to $BC, CA, AB$ are $K, L, M$, respectively, show that $KL = KM$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $t(A)$ denote the sum of elements of a nonempty set $A$ of integers, and define $t(\\emptyset) = 0$. Find a set $X$ of positive integers such that for every integer $k$ there is a unique ordered pair of disjoint subsets $(A_k, B_k)$ of $X$ such that $t(A_k) - t(B_k) = k$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all surjective functions $f : \\mathbb{N} \\to \\mathbb{N}$ such that for all $m, n \\in \\mathbb{N}$, $$f(m) \\mid f(n) \\quad \\text{if and only if} \\quad m \\mid n.$$"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $(A_n)_{n=1}^{\\infty}$ and $(a_n)_{n=1}^{\\infty}$ be sequences of positive integers. Assume that for each positive integer $x$, there is a unique positive integer $N$ and a unique $N$-tuple $(x_1, x_2, \\ldots, x_N)$ such that $$0 \\le x_k \\le a_k \\text{ for } k = 1, 2, \\ldots, N, \\quad x_N \\ne 0, \\quad \\text{and} \\quad x = \\sum_{k=1}^{N} x_k A_k.$$\n(a) Prove that $A_k = 1$ for some $k$.\n(b) Prove that $A_k = A_j$ if and only if $k = j$.\n(c) Prove that if $A_k \\le A_j$, then $A_k \\mid A_j$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a square of side length $2$, and let $M$ and $N$ be points on the sides $AB$ and $CD$, respectively. The lines $CM$ and $BN$ meet at $P$, while the lines $AN$ and $DM$ meet at $Q$. Prove that $PQ \\ge 1$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ integers on the real axis be colored. Determine for which positive integers $k$ there exists a family $\\mathcal{K}$ of closed intervals with the following properties:\n(i) the union of the intervals in $\\mathcal{K}$ contains all the colored points;\n(ii) any two distinct intervals in $\\mathcal{K}$ are disjoint;\n(iii) for each interval $I$ in $\\mathcal{K}$ we have $a_I = k b_I$, where $a_I$ denotes the number of integers in $I$, and $b_I$ the number of colored integers in $I$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "A circle is tangent to the sides $AD, DC, CB$ of a convex quadrilateral $ABCD$ at $K, L, M$, respectively. A line $l$, passing through $L$ and parallel to $AD$, meets $KM$ at $N$ and $KC$ at $P$. Prove that $PL = PN$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Prove that $\\displaystyle\\prod_{k=0}^{n-1} (2^n - 2^k)$ is divisible by $n!$ for all positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Show that there is no function $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that $$f(x + y) > f(x)\\bigl(1 + yf(x)\\bigr) \\quad \\text{for all } x, y > 0.$$"
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all pairs of integers $(x, y)$ such that $5x^2 - 6xy + 7y^2 = 383$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $F$ be a point inside a convex pentagon $ABCDE$, and let $a_1, a_2, a_3, a_4, a_5$ denote the distances from $F$ to the lines $AB, BC, CD, DE, EA$, respectively. The points $F_1, F_2, F_3, F_4, F_5$ are chosen on the inner bisectors of the angles $A, B, C, D, E$ of the pentagon, respectively, so that $AF_1 = AF$, $BF_2 = BF$, $CF_3 = CF$, $DF_4 = DF$ and $EF_5 = EF$. If the distances from $F_1, F_2, F_3, F_4, F_5$ to the lines $EA, AB, BC, CD, DE$ are $b_1, b_2, b_3, b_4, b_5$, respectively, prove that $$a_1 + a_2 + a_3 + a_4 + a_5 \\le b_1 + b_2 + b_3 + b_4 + b_5.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ and $k$ be positive integers, where $n > 1$ is odd. Suppose $n$ voters are to elect one of the $k$ candidates from a set $A$ according to the rule of majoritarian compromise described below.\nAfter each voter ranks the candidates in a column according to his/her preferences, these columns are concatenated to form a $k \\times n$ voting matrix. We denote the number of occurrences of $a \\in A$ in the $i$-th row of the voting matrix by $a_i$. Let $l_a$ stand for the minimum integer $l$ for which $\\sum_{i=1}^{l} a_i > n/2$. Setting $l' = \\min\\{l_a \\mid a \\in A\\}$, we will regard as admissible the voting matrices which make the set $\\{a \\in A \\mid l_a = l'\\}$ a singleton. For each such matrix, the single candidate in this set will get elected according to majoritarian compromise. Moreover, if $\\omega_1 \\ge \\omega_2 \\ge \\cdots \\ge \\omega_k \\ge 0$ are given, for each admissible voting matrix, $\\sum_{i=1}^{k} \\omega_i a_i$ is called the total weighted score of $a \\in A$. We will say that the system $(\\omega_1, \\ldots, \\omega_k)$ of weights represents majoritarian compromise if the total score of the elected candidate is maximum among the scores of all candidates.\n(a) Determine whether there is a system of weights representing majoritarian compromise if $k = 3$.\n(b) Show that such a system of weights does not exist for $k > 3$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $e > 0$ be a given real number. Find the least value of $f(e)$ (in terms of $e$ only) such that the inequality $$a^3 + b^3 + c^3 + d^3 \\le e^2(a^2 + b^2 + c^2 + d^2) + f(e)(a^4 + b^4 + c^4 + d^4)$$ holds for all real numbers $a, b, c, d$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $D_1, D_2, \\ldots, D_n$ be rectangular parallelepipeds in space, with edges parallel to the $x, y, z$ axes. For each $D_i$, let $x_i, y_i, z_i$ be the lengths of its projections onto the $x, y, z$ axes, respectively. Suppose that for all pairs $D_i, D_j$, if at least one of $x_i < x_j$, $y_i < y_j$, $z_i < z_j$ holds, then $x_i \\le x_j$, $y_i \\le y_j$, and $z_i < z_j$. If the volume of the region $\\bigcup_{i=1}^{n} D_i$ equals $1997$, prove that there is a subset $\\{D_{i_1}, D_{i_2}, \\ldots, D_{i_m}\\}$ of the set $\\{D_1, \\ldots, D_n\\}$ such that\n(i) if $k \\ne l$ then $D_{i_k} \\cap D_{i_l} = \\emptyset$, and\n(ii) the volume of $\\bigcup_{k=1}^{m} D_{i_k}$ is at least $73$."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $D$ be the point on the base $BC$ of an isosceles triangle $ABC$ such that $BD : DC = 2 : 1$, and let $P$ be the point on the segment $AD$ such that $\\angle BAC = \\angle BPD$. Prove that $\\angle DPC = \\frac{1}{2}\\angle BAC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "If $0 \\le a \\le b \\le c$ are real numbers, prove that $$(a + 3b)(b + 4c)(c + 2a) \\ge 60abc.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The points of a circle are colored by three colors. Prove that there exist infinitely many isosceles triangles inscribed in the circle whose vertices are of the same color."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all positive integers $x$ and $n$ such that $x^3 + 3367 = 2^n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Variable points $M$ and $N$ are considered on the arms $OX$ and $OY$, respectively, of an angle $XOY$ so that $OM + ON$ is constant. Determine the locus of the midpoint of $MN$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Some of the vertices of unit squares of an $n \\times n$ chessboard are colored so that any $k \\times k$ square consisting of these unit squares has a colored point on at least one of its sides. Let $l(n)$ denote the minimum number of colored points required to satisfy this condition. Prove that $$\\lim_{n \\to \\infty} \\frac{l(n)}{n^2} = \\frac{2}{7}.$$"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find the number of ordered quadruples $(x, y, z, w)$ of integers with $0 \\le x, y, z, w \\le 36$ such that $$x^2 + y^2 \\equiv z^3 + w^3 \\pmod{37}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let a circle with center $O$ be given. The two tangents from a point $S$ outside the circle touch the circle at $P$ and $Q$. The line $SO$ intersects the circle at $A$ and $B$. Let $X$ be an interior point of the smaller arc $PB$, and let the line $SO$ meet the lines $QX$ and $PX$ at points $C$ and $D$, respectively. Prove that $$\\frac{1}{AC} + \\frac{1}{AD} = \\frac{2}{AB}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ and $p$ be positive integers. Prove that the number of functions $f$ from the set $\\{1, 2, \\ldots, n\\}$ to $\\{-p, -p+1, \\ldots, p\\}$ satisfying $|f(i) - f(j)| \\le p$ for all $i, j$ is equal to $(p + 1)^{n+1} - p^{n+1}$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine all sequences $(a_n)$ of real numbers such that $$\\sum_{n=1}^{2000} a_n = 1999$$ and $$\\frac{1}{2} < a_n < 1 \\quad \\text{and} \\quad a_n = a_{n-1}(2 - a_{n-1}) \\text{ for all } n > 1.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In an acute triangle $A_1A_2A_3$ whose circumradius is $R$, $Y_1, Y_2, Y_3$ are the feet of the altitudes from $A_1, A_2, A_3$, respectively. Let $A_1Y_1 = h_1$, $A_2Y_2 = h_2$, and $A_3Y_3 = h_3$. If $t_1, t_2, t_3$ are the lengths of the tangents from $A_1, A_2, A_3$ to the circumcircle of $\\triangle Y_1Y_2Y_3$, respectively, prove that $$\\sum_{i=1}^{3} \\frac{t_i^2}{h_i} \\le \\frac{3}{2}R.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "We wish to find the sum of $40$ given numbers utilizing $40$ processors. Initially, we have the number $0$ on the screen of each processor. Each processor adds the number on its screen with a number entered directly or transferred from another processor in a unit time. Whenever a number is transferred from a processor to another, the former processor resets. Find the least time needed to find the desired sum."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A circle with center $O$ and a point $A$ inside this circle are given. For a point $B$ on the circle not lying on the line $OA$, let $P_B$ be the intersection point of $[AB]$ and the internal bisector of $\\angle AOB$. Find the locus of $P_B$ as $B$ varies."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Define $P_n(x) = x^{n-1} + x^{n-2} + x^{n-3} + \\cdots + x + 1$ for every positive integer $n$. Prove that for every positive integer $a$ one can find a positive integer $n$ and polynomials $R(x)$ and $Q(x)$ with integer coefficients such that $$P_n(x) = \\bigl(1 + ax + x^2R(x)\\bigr)Q(x).$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f(x, y)$ and $g(x, y)$ be real-valued functions defined for all $x, y \\in \\{1, 2, \\ldots, 2000\\}$. If there exist $X, Y \\subset \\{1, 2, \\ldots, 2000\\}$ such that $s(X) = s(Y) = 1000$ and $x \\notin X$ and $y \\notin Y$ implies $f(x, y) = g(x, y)$, what is the maximum number of pairs $(x, y)$ for which $f(x, y) \\ne g(x, y)$?"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $p$ be a prime number and let $T(x)$ be a polynomial with integer coefficients and degree from the set $\\{0, 1, \\ldots, p-1\\}$ such that, for all integers $m$ and $n$, $T(n) \\equiv T(m) \\pmod{p}$ implies $m \\equiv n \\pmod{p}$. Determine the maximum possible value of the degree of $T(x)$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A positive real number $a$ and two rays which intersect at a point $A$ are given. Show that all the circles which pass through $A$ and intersect these rays at points $B$ and $C$ with $|AB| + |AC| = a$ have a common point other than $A$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all continuous functions $f : [0, 1] \\to [0, 1]$ for which there exists a positive integer $n$ such that $f^n(x) = x$ for $x \\in [0, 1]$, where $f^0(x) = x$ and $f^{k+1}(x) = f(f^k(x))$ for every positive integer $k$."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABCD$ be a convex quadrilateral. The perpendicular bisectors of the sides $[AD]$ and $[BC]$ intersect at a point $P$ inside the quadrilateral, and the perpendicular bisectors of the sides $[AB]$ and $[CD]$ also intersect at a point $Q$ inside the quadrilateral. Show that if $\\angle APD = \\angle BPC$, then $\\angle AQB = \\angle CQD$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A sequence $(x_n)_{-\\infty < n < \\infty}$ of real numbers satisfies $$x_{n+1} = \\frac{x_n^2 + 10}{7}$$ for every $n \\in \\mathbb{Z}$. If this sequence is bounded above, find all the values $x_0$ can take."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "One wants to distribute $n$ equal-sized cakes equally among $k$ people by cutting every cake at most once. If the number of positive divisors of $n$ is denoted by $d(n)$, show that the number of different values of $k$ which make such a distribution possible is $n + d(n)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all ordered triples of positive integers $(x, y, z)$ such that $$3^x + 11^y = z^2.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Two nonperpendicular lines through a point $A$ and a point $F$ on one of these lines, different from $A$, are given. For a point $G$ on the other line, different from $A$, let $P_G$ be the intersection point of the tangent lines at $G$ and $F$ to the circle through the points $A$, $F$ and $G$. What is the locus of $P_G$ as $G$ varies?"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "We wish to color the cells of an $n \\times n$ chessboard with $k$ different colors such that for every $i \\in \\{1, 2, \\ldots, n\\}$, the $2n - 1$ cells in the $i$-th row and the $i$-th column all have different colors.\n(a) Prove that for $n = 2001$ and $k = 4001$ such a coloring is not possible.\n(b) Show that for $n = 2^m - 1$ and $k = 2^{m+1} - 1$ such a coloring is possible."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $(a_1, a_2, \\ldots, a_n)$ be a permutation of $1, 2, \\ldots, n$, where $n \\ge 2$. For each $k = 1, \\ldots, n$, $a_k$ apples are placed at the point $k$ on the real axis. Children named $A, B, C$ are assigned respective points $x_A, x_B, x_C \\in \\{1, \\ldots, n\\}$. For each $k$, the children whose points are closest to $k$ divide $a_k$ apples equally among themselves. We call $(x_A, x_B, x_C)$ a stable configuration if no child's total share can be increased by assigning a new point to this child and not changing the points of the other two. Determine the values of $n$ for which a stable configuration exists for some distribution $(a_1, \\ldots, a_n)$ of the apples."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Two circles are externally tangent to each other at a point $A$ and internally tangent to a third circle $\\Gamma$ at points $B$ and $C$. Let $D$ be the midpoint of the secant of $\\Gamma$ which is tangent to the smaller circles at $A$. Show that $A$ is the incenter of the triangle $BCD$ if the centers of the circles are not collinear."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Graph Airlines (GA) operates flights between some of the cities of the Republic of Graphia. There are GA flights between each city and at least three different cities, and it is possible to travel from any city in Graphia using GA flights. GA decides to discontinue some of its flights. Show that this can be done in such a way that it is still possible to travel between any two cities using GA flights, yet at least $2/9$ of the cities have only one flight."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all prime numbers $p$ for which the number of ordered pairs of integers $(x, y)$ with $0 \\le x, y < p$ satisfying the condition $$y^2 \\equiv x^3 - x \\pmod{p}$$ is exactly $p$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In an acute triangle $ABC$ with $BC < AC < AB$, the points $D$ on side $AB$ and $E$ on side $AC$ satisfy the condition $DB = BC = CE$. Show that the circumradius of the triangle $ADE$ is equal to the distance between the incenter and the circumcenter of the triangle $ABC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n$ be a positive integer and let $T$ denote the collection of points $(x_1, x_2, \\ldots, x_n) \\in \\mathbb{R}^n$ for which there exists a permutation $\\sigma$ of $1, 2, \\ldots, n$ such that $x_{\\sigma(i)} - x_{\\sigma(i+1)} \\ge 1$ for each $i = 1, \\ldots, n-1$. Prove that there is a real number $d$ satisfying the following condition: for every $(a_1, \\ldots, a_n) \\in \\mathbb{R}^n$ there exist points $(b_1, \\ldots, b_n)$ and $(c_1, \\ldots, c_n)$ in $T$ such that, for each $i = 1, \\ldots, n$, $$a_i = \\frac{1}{2}(b_i + c_i), \\quad |a_i - b_i| \\le d, \\quad \\text{and} \\quad |a_i - c_i| \\le d.$$"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "$n \\ge 2$ cars are participating in a rally. The cars leave the start line at different times and arrive at the finish line at different times. During the entire rally each car takes over any other car at most once, the number of cars taken over by each car is different and each car is taken over by the same number of cars. Find all possible values of $n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a convex quadrilateral and $K, L, M, N$ be points on $[AB], [BC], [CD], [DA]$, respectively. Show that $$\\sqrt[3]{s_1} + \\sqrt[3]{s_2} + \\sqrt[3]{s_3} + \\sqrt[3]{s_4} \\le 2\\sqrt[3]{s}$$ where $s_1 = \\text{Area}(AKN)$, $s_2 = \\text{Area}(BKL)$, $s_3 = \\text{Area}(CLM)$, $s_4 = \\text{Area}(DMN)$ and $s = \\text{Area}(ABCD)$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that $$f(tx_1 + (1 - t)x_2) \\le tf(x_1) + (1 - t)f(x_2)$$ for all $x_1, x_2 \\in \\mathbb{R}$ and $t \\in (0, 1)$. Show that $$\\sum_{k=1}^{2003} f(a_{k+1})a_k \\ge \\sum_{k=1}^{2003} f(a_k)a_{k+1}$$ for all real numbers $a_1, a_2, \\ldots, a_{2004}$ such that $a_1 \\ge a_2 \\ge \\cdots \\ge a_{2003}$ and $a_{2004} = a_1$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all triples $(x, m, n)$ of positive integers satisfying the equation $x^m = 2^{2n+1} + 2^n + 1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A circle which is tangent to the sides $[AB]$ and $[BC]$ of $\\triangle ABC$ is also tangent to its circumcircle at the point $T$. If $I$ is the incenter of $\\triangle ABC$, show that $\\angle ATI = \\angle CTI$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "An assignment of either a $0$ or a $1$ to each unit square of an $m \\times n$ chessboard is called fair if the total numbers of $0$s and $1$s are equal. A real number $a$ is called beautiful if there are positive integers $m, n$ and a fair assignment for the $m \\times n$ chessboard such that for each of the $m$ rows and $n$ columns, the percentage of $1$s on that row or column is not less than $a$ or greater than $100 - a$. Find the largest beautiful number."
+        }
+      ]
+    },
+    {
       "year": 2004,
       "problems": [
         {
