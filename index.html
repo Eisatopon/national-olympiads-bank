@@ -332,6 +332,7 @@
     --tr1: #5a2d8a; --tr1-ink: #3a1c5a; --tr1-tint: #efe6f7;
     --hil: #3d6b5a; --hil-ink: #24423a; --hil-tint: #e3f0eb;
     --grpan: #1f5fa8; --grpan-ink: #123b6b; --grpan-tint: #e2ecf8;
+    --alr: #9a4f2b; --alr-ink: #6e3519; --alr-tint: #f6ebe4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -599,6 +600,7 @@
 .f-tr1 { --f: var(--tr1); --f-ink: var(--tr1-ink); --f-tint: var(--tr1-tint); }
 .f-hil { --f: var(--hil); --f-ink: var(--hil-ink); --f-tint: var(--hil-tint); }
 .f-grpan { --f: var(--grpan); --f-ink: var(--grpan-ink); --f-tint: var(--grpan-tint); }
+.f-alr { --f: var(--alr); --f-ink: var(--alr-ink); --f-tint: var(--alr-tint); }
 
 /* ==========================================================
    Base
@@ -1149,7 +1151,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261027-greece-hmo-1984-1990';
+const DATA_VERSION = '20261027-albania-round3';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1393,6 +1395,7 @@ REGION_OF.mdm = 'europe';
 REGION_OF.tr1 = 'europe';
 REGION_OF.hil = 'europe';
 REGION_OF.grpan = 'europe';
+REGION_OF.alr = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1559,6 +1562,7 @@ const COUNTRIES = [
     { key: 'cr', name: 'Costa Rica', flag: '🇨🇷', file: 'CostaRica-final-problems.json', kind: 'years' },
     { key: 'pr', name: 'Puerto Rico TST', flag: '🇵🇷', file: 'PuertoRico-tst-problems.json', kind: 'years', full: "Puerto Rico Team Selection Test" },
     { key: 'al', name: 'Albania', flag: '🇦🇱', file: 'Albania-nmo-problems.json', kind: 'years' },
+    { key: 'alr', name: 'Albania Round 3 (Classes 9–10)', flag: '🇦🇱', file: 'Albania-round3-problems.json', kind: 'years', full: "Albanian Mathematical Olympiad, Round 3 (Classes 9\u201310)" },
     { key: 'bd', name: 'Bangladesh', flag: '🇧🇩', file: 'Bangladesh-bdmo-problems.json', kind: 'years' },
     { key: 'put', name: 'Putnam', flag: '🎓', file: 'undergraduate/Putnam-problems.json', kind: 'years', scope: 'undergraduate', full: 'William Lowell Putnam Mathematical Competition' },
     { key: 'imc', name: 'IMC', flag: '🎓', file: 'undergraduate/IMC-1994-2026-review.json', kind: 'years', scope: 'undergraduate', full: 'International Mathematics Competition for University Students' },
