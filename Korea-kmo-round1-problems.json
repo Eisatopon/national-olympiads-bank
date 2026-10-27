@@ -1,0 +1,924 @@
+{
+  "competition": "Korean Mathematical Olympiad, First Round",
+  "years": [
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let there be a circle with center $O$ and radius $5$. Let $P$ be the intersection of the diagonals of an isosceles trapezoid inscribed in $O$. Each diagonal is divided into two parts by $P$; the longer part has length $6$ and the shorter part has length $2$. Calculate $OP^2$."
+        },
+        {
+          "number": 2,
+          "problem": "For a given positive integer $m$, $m^{1003} \\equiv 19 \\pmod{77}$. Calculate the remainder when $m$ is divided by $77$."
+        },
+        {
+          "number": 3,
+          "problem": "Let\n$$a=\\sum_{n=1}^{99}\\frac{1}{n(n+1)^2(n+2)},\\qquad b=\\sum_{n=1}^{99}\\frac{1}{n^2(n+1)^2(n+2)}.$$\nFor relatively prime positive integers $p, q$, $3a+2b=\\frac{q}{p}$. Calculate the remainder when $q$ is divided by $1000$."
+        },
+        {
+          "number": 4,
+          "problem": "Among all arithmetic sequences $a_n$ whose terms are all integers, how many arithmetic sequences are there such that $\\{1, 1000\\} \\subset \\{a_1, a_2, \\ldots, a_{10}\\}$?"
+        },
+        {
+          "number": 5,
+          "problem": "In $\\triangle ABC$, let $P$ be a point on $AB$, and let $Q$ be the intersection of $AC$ and the line through $P$ parallel to $BC$. Let $R$ be the intersection of the line through $Q$ parallel to $AB$ and the line through $P$ parallel to $AC$. Let $S$ be the area of $\\triangle ABC$, and let $T$ be the area of the common part of $\\triangle ABC$ and $\\triangle PQR$. Calculate the minimum of $\\frac{S^2}{T^2}$."
+        },
+        {
+          "number": 6,
+          "problem": "If $m$ is an integer such that $3^m \\mid 7^{3^{527}}-1$, what is the maximum possible value of $m$?"
+        },
+        {
+          "number": 7,
+          "problem": "Reals $x, y, z$ satisfy $3x+2y+z=1$. For relatively prime positive integers $p, q$, let the maximum of\n$$\\frac{1}{1+|x|}+\\frac{1}{1+|y|}+\\frac{1}{1+|z|}$$\nbe $\\frac{q}{p}$. Find $p+q$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $x$ be the number of functions $f:\\{1,2,3,4,5,6,7\\}\\to\\{1,2,3,4,5,6,7\\}$ such that the following two conditions are true:\n\n(i) for all $n$, $f(n)-n\\equiv 1 \\pmod 2$;\n\n(ii) for all $n$, $f(f(n))\\neq n$.\n\nCalculate the remainder when $x$ is divided by $1000$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $M_1, M_2, M_3, M_4, M_5$ be the midpoints of the sides of a regular pentagon, in counterclockwise order. Define $X$ as the midpoint of $M_2M_4$ and $Y$ as the midpoint of $M_3M_5$. Calculate $XY^2$, given that the sides of the pentagon have length $40$."
+        },
+        {
+          "number": 10,
+          "problem": "For a pair of positive integers $(a,b)$, define\n$$Q(a,b)=\\frac{a^2b+2ab^2-5}{ab+1}.$$\nLet $(a_1,b_1),(a_2,b_2),\\ldots,(a_n,b_n)$ be all pairs of positive integers such that $Q(a,b)$ is an integer. Calculate $\\sum_{i=1}^{n} a_i$."
+        },
+        {
+          "number": 11,
+          "problem": "Let $T_1$ be a triangle with angles $50^\\circ, 60^\\circ, 70^\\circ$. Let $T_2$ be the triangle whose vertices are the intersections of the circumcircle of $T_1$ with the three rays from the circumcenter that are perpendicular to the sides of $T_1$. Define $T_n$ similarly. Let $a_n$ be the smallest angle (in degrees) of $T_n$. Calculate the minimum $n$ such that $60-a_n<\\frac{1}{1000}$."
+        },
+        {
+          "number": 12,
+          "problem": "Let $n$ be the number of $4$-tuples of integers $(x,y,z,w)$ such that $|x|+|y|+|z|+|w|\\le 10$. Find the remainder when $n$ is divided by $1000$."
+        },
+        {
+          "number": 13,
+          "problem": "In $\\triangle ABC$, $AB=2$, $BC=100$, $\\angle B=90^\\circ$. A point $P$ moves along segment $BC$. Let $D$ be the midpoint of $AB$. Let $\\theta$ be the maximum of $\\angle APD$. Calculate $\\frac{1}{\\sin\\theta}$."
+        },
+        {
+          "number": 14,
+          "problem": "How many positive integers not larger than $2006$ can be written as $m(5m+4n)$ for some integers $m, n$?"
+        },
+        {
+          "number": 15,
+          "problem": "A positive integer $A$ can be written as $(a_na_{n-1}\\cdots a_2a_1)_8$. Also, $2A=(a_1a_2\\cdots a_{n-1}a_n)_8$. What is the sum of all possible values of $a_2$?"
+        },
+        {
+          "number": 16,
+          "problem": "Let $S=\\{1,2,3,4,5,6,7,8,9,10,11\\}$. How many non-empty subsets of $S$ are there such that the sum of the elements of the subset is $\\equiv 1 \\pmod 5$?"
+        },
+        {
+          "number": 17,
+          "problem": "A convex hexagon $A_1A_2A_3A_4A_5A_6$ satisfies $A_1A_2+A_1A_6=2$, $A_2A_3=2$ and $A_1A_4=4$. The quadrilateral $A_2A_3A_5A_6$ is a parallelogram, and $\\triangle A_3A_4A_5$ is an equilateral triangle. Let the area of this hexagon be $S$. Find the product of the minimum and the maximum value of $S$."
+        },
+        {
+          "number": 18,
+          "problem": "A sequence $a_n$ satisfies $a_1=1$ and $a_{n+1}=3^{a_n}+1$. Let $b_n$ be the remainder when $a_n$ is divided by $100$. Find\n$$\\sum_{i=2006}^{2015} b_i.$$"
+        },
+        {
+          "number": 19,
+          "problem": "A function $f:[0,6]\\to[-4,4]$ satisfies $f(0)=0$, $f(6)=4$. Also, if $x, y\\ge 0$ and $x+y\\le 6$, then\n$$f(x+y)=\\frac14\\left(f(x)\\cdot\\sqrt{16-f(y)^2}+f(y)\\cdot\\sqrt{16-f(x)^2}\\right).$$\nCalculate $(f(3)+2f(1))^2$."
+        },
+        {
+          "number": 20,
+          "problem": "Let there be a $3\\times 3\\times 3$ cube $ABCD\\text{-}EFGH$ with $A=(0,0,0)$. An ant starts at point $A$, reaches $G$, and returns to $A$. At each lattice point the ant can turn by $90$ degrees or go straight, but it cannot go inside the cube. The ant uses a quickest possible path, and does not return to a point that was visited before. Also, while going to point $G$, the ant does not pass through the inside of $AEHD$ or through $D$, and while heading back, the ant does not pass through the inside of $EFBA$ or through $B$. Let $x$ be the number of paths that the ant can take. Calculate the remainder when $x$ is divided by $1000$."
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In $\\triangle A_1A_2A_3$, $\\angle A_1=30^\\circ$, $\\angle A_2=70^\\circ$, $\\angle A_3=80^\\circ$. Let $B_i$ be the intersection of the circumcircle of $A_1A_2A_3$ and the perpendicular bisector of $A_{i+1}A_{i+2}$ that is closer to $A_i$ (indices are taken modulo $3$). What is the largest angle of $\\triangle B_1B_2B_3$?"
+        },
+        {
+          "number": 2,
+          "problem": "How many positive integers less than $1000$ are there such that $\\frac{\\phi(n)}{n}=\\frac{2}{7}$?"
+        },
+        {
+          "number": 3,
+          "problem": "Let the product of the real roots of $x^3-[2x^2]+[x]-24=0$ be $P$. Calculate the remainder when $P^3$ is divided by $1000$. Note: $[x]$ denotes the smallest integer that is not less than $x$."
+        },
+        {
+          "number": 4,
+          "problem": "How many $8$-tuples $(x_1,x_2,\\ldots,x_8)$ are there such that $\\{x_1,x_2,\\ldots,x_8\\}=\\{1,2,\\ldots,8\\}$, $x_1+x_2+x_3+x_4<x_5+x_6+x_7+x_8$, $x_1<x_2<x_3<x_4$, and $x_5<x_6<x_7<x_8$?"
+        },
+        {
+          "number": 5,
+          "problem": "In $\\triangle ABC$, $\\angle B=75^\\circ$, $\\angle A=60^\\circ$, $AB=8$. If the perpendicular bisector of $BC$ meets the bisector of $\\angle A$ at $D$, calculate $DC^2$."
+        },
+        {
+          "number": 6,
+          "problem": "Find the number of triples $(a,b,c)$ of positive integers such that\n$$\\frac{a^2+b^2-c^2}{ab}+\\frac{b^2+c^2-a^2}{bc}+\\frac{c^2+a^2-b^2}{ca}=2+\\frac{15}{abc}.$$"
+        },
+        {
+          "number": 7,
+          "problem": "A complex number $z$ satisfies $z^{2007}=1$, but $z^n\\neq 1$ for all positive integers $n<2007$. Calculate\n$$\\frac13\\cdot\\prod_{i=1}^{2006}\\left(1+z^i+z^{2i}\\right).$$"
+        },
+        {
+          "number": 8,
+          "problem": "How many $9$-tuples of positive integers $(a_1,a_2,\\ldots,a_9)$ are there such that $a_1\\le a_2\\le\\cdots\\le a_9$, $a_i\\le i$ for $1\\le i\\le 9$, and $a_{k^2}=k^2$ for $k=1,2,3$?"
+        },
+        {
+          "number": 9,
+          "problem": "In quadrilateral $ABCD$, $AB=4$, $BC=6$, $CD=2$, $DA=4$, $\\angle ABC=60^\\circ$. Let $E=AB\\cap CD$. Calculate $5\\cdot DE$."
+        },
+        {
+          "number": 10,
+          "problem": "Find the remainder when the coefficient of $x^{91}$ in $(1+x)^{2007}$ is divided by $91$."
+        },
+        {
+          "number": 11,
+          "problem": "Find the number of polynomials $P(x)$ such that $P(1)\\neq P(-1)$, $\\deg(P)\\le 500$ and\n$$(P(x))^2+2P(-x)=P(x^2)+2$$\nfor all reals $x$."
+        },
+        {
+          "number": 12,
+          "problem": "$401$ people meet at a conference and shake hands with each other. Any two people may shake hands, as long as the following situation does not occur. What is the maximum number of handshakes? Situation: among the $401$ people there exist $x_1,x_2,\\ldots,x_{2n}$ such that $x_i$ and $x_{i+1}$ have shaken hands for all $1\\le i\\le 2n$, where indices are taken modulo $2n$."
+        },
+        {
+          "number": 14,
+          "problem": "For an ordered pair of positive integers $(m,n)$, let\n$$Q(m,n)=\\frac{2m^2}{3mn^2-n^3+1}.$$\nHow many ordered pairs $(m,n)$ are there such that $Q(m,n)\\in\\mathbb{Z}$ and $m\\le 100$?"
+        },
+        {
+          "number": 15,
+          "problem": "Positive reals $x, y, z$ satisfy $x^3+y^3+z^3=1$. What is the minimum of $100-26x^3-27xyz$?"
+        },
+        {
+          "number": 16,
+          "problem": "Points $P_1,P_2,\\ldots,P_6$ lie on a line in this order. Color each point red, orange, yellow, or green, so that for $1\\le i\\le 5$, the points $P_i$ and $P_{i+1}$ have the same color or at least one of the two is red. How many colorings are possible?"
+        },
+        {
+          "number": 17,
+          "problem": "In a parallelogram $ABCD$, $AB=60$, $AD=50$. For a point $X$ on segment $CD$, let $Y=AX\\cap BC$. Let $O_1$ be the center of the $A$-excircle of $\\triangle ABY$, and let $O_2$ be the center of the $A$-excircle of $\\triangle AXD$. If the radii of the excircles with centers $O_1, O_2$ are $40, 60$, calculate $O_1O_2$. Point $O_1$ is on the opposite side of $BC$ from $A$, and $O_2$ is on the opposite side of $CD$ from $A$."
+        },
+        {
+          "number": 18,
+          "problem": "Let $A$ be the set of integers with absolute value not larger than $111$. Define\n$$S=\\{(x,y)\\in A\\times A \\mid x^2-y^2-1\\equiv 0 \\pmod{223}\\}.$$\nAlso, define $a'$ as the remainder when $a$ is divided by $223$. Let $T=\\{(x^2)' \\mid (x,y)\\in S\\}$. Calculate $|T|$."
+        },
+        {
+          "number": 19,
+          "problem": "Find the integer part of the following sum:\n$$\\frac13\\sum_{k=1}^{2007}\\frac{1}{\\sqrt{k}}$$"
+        },
+        {
+          "number": 20,
+          "problem": "There are seven cards, with $1,2,3,4,5,6,7$ written on them. Two players $A, B$ play a game, taking turns, with $A$ first. On a turn, the player picks a card, writes down the number on the card, and returns the card to the deck. If the sum of the numbers written so far is a multiple of $3$, the game ends and the player who moved last wins the game. Let the probability that $A$ wins be $\\frac{p}{q}$, where $(p,q)=1$. Calculate $p-q$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If we expand $\\frac{1}{13}$ in binary, we get $0.\\overline{a_1a_2\\cdots a_r}$, where each $a_i$ is $0$ or $1$. Calculate $r$."
+        },
+        {
+          "number": 2,
+          "problem": "What is the smallest integer $a$ such that $(n!)^2\\cdot a^n>2n!$ holds for all positive integers $n$?"
+        },
+        {
+          "number": 3,
+          "problem": "A non-constant polynomial $f(x)$ satisfies, for all reals $s, t$,\n$$f(s^2+f(t))=(s-2t)^2f(s+2t).$$\nCalculate $|f(10)|$."
+        },
+        {
+          "number": 4,
+          "problem": "$10$ people are sitting in a circle. Define a 'group' as a set of people sitting next to each other. How many ways are there to divide the $10$ people into more than two groups? Each person must be in exactly one group, and every group has at least two people."
+        },
+        {
+          "number": 5,
+          "problem": "Find the maximum integer $N$ such that\n$$\\frac12\\cdot\\frac34\\cdots\\frac{63}{64}<\\frac{1}{4N}.$$"
+        },
+        {
+          "number": 6,
+          "problem": "Find the largest prime $p<300$ such that there exist integers $x, y, u, v$ such that\n$$p=x^2+y^2=u^2+7v^2.$$"
+        },
+        {
+          "number": 7,
+          "problem": "In quadrilateral $ABCD$, which is inscribed in a circle $O$, the tangents to $O$ at $A$ and $C$ and the line $BD$ concur at one point. If $AB=24$, $BC=20$, $CD=15$, calculate $\\frac{61}{100}BD^2$."
+        },
+        {
+          "number": 8,
+          "problem": "For $E=\\{1,2,3,4,5,6,7,8\\}$, how many bijective functions $f:E\\to E$ are there such that for all $n\\in E$, $f(n)-n\\equiv 1\\pmod 2$ and $f(f(n))\\neq n$?"
+        },
+        {
+          "number": 9,
+          "problem": "Let there be a $2\\times 2\\times 5$ rectangular box with a $2\\times 2$ square as its base. Its four side faces are colored in four different colors, so they are distinguishable. We want to fill this box with ten identical $1\\times 1\\times 2$ rectangular blocks. How many ways are there to do so?"
+        },
+        {
+          "number": 10,
+          "problem": "For each positive integer $n$, let $2^{a_n}=3^{b_n}=n$. For how many $n$ does $\\lfloor a_n\\rfloor+\\lfloor b_n\\rfloor=11$ hold?"
+        },
+        {
+          "number": 11,
+          "problem": "Define $[x]$ as the integer that is closest to $x$; if there are two closest integers, take the larger one. For all $n$, let $a_n=[\\sqrt{n}]$ and $b_n=[\\sqrt{a_n}]$. How many of $b_1,b_2,\\ldots,b_{2007}$ are equal to $b_{2008}$?"
+        },
+        {
+          "number": 12,
+          "problem": "Let $ABCDE$ be a pentagon inscribed in a circle. Let $d(P,\\ell)$ be the distance between a point $P$ and a line $\\ell$. If $d(B,AC)=1$, $d(C,BD)=2$, $d(D,CE)=3$, $d(E,AD)=4$ and $AE=16$, what is the length of $AB$?"
+        },
+        {
+          "number": 13,
+          "problem": "$AB$ is a diameter of the circle with center $O$. $G, H$ are the midpoints of $AO, BO$. A point $C$ on circle $O$ satisfies $\\angle ACG=\\angle ABC$ and $AC<BC$. Let $CG$ meet circle $O$ again at $X$, and let $XH$ meet circle $O$ again at $D$. If $CD^2=336$, calculate $AB^2$."
+        },
+        {
+          "number": 14,
+          "problem": "Let $M$ be the maximum area of a quadrilateral $OAPB$ such that $OA\\perp OB$ and $AP+PB=6$. Calculate $(2M-9)^2$."
+        },
+        {
+          "number": 15,
+          "problem": "Points $I_1,I_2,\\ldots,I_8$ are islands. Bridges can be built between $I_8$ and $I_i$ for $1\\le i\\le 7$, and between $I_i$ and $I_{i+1}$ for $1\\le i\\le 7$. How many ways are there to build the minimum possible number of bridges so that all islands are connected?"
+        },
+        {
+          "number": 16,
+          "problem": "In $\\triangle ABC$, $D\\in AC$, $E\\in AB$, $G\\in BC$. The line $\\ell$ passes through $A$ and $\\ell\\parallel BC$. Define $F=BD\\cap CE$, and $H=GD\\cap\\ell$, $K=GF\\cap\\ell$, $I=GE\\cap\\ell$. If $[EBF]:[DFC]:[FBC]=1:2:3$ (areas of the triangles) and $BG=7$, find $AI\\cdot KH$."
+        },
+        {
+          "number": 17,
+          "problem": "Two congruent regular hexagonal pyramids are put together along their base hexagons, forming $P\\text{-}ABCDEF\\text{-}Q$. Consider the edges as roads. How many ways are there to start at $P$, reach $Q$, and head back to $P$? You may not pass through a vertex or an edge you have passed through before."
+        },
+        {
+          "number": 18,
+          "problem": "Find the remainder when the greatest common divisor of $2008!+2^{2008}$ and $2009!-2^{2007}$ is divided by $1000$. You may use the fact that $4019$ is a prime number."
+        },
+        {
+          "number": 19,
+          "problem": "For positive integers $n$, define $f(n)$ as the number of integers $1\\le a\\le n$ such that $(a,n)=(a+1,n)=1$. Find the largest integer $n$ such that $f(n)=45$."
+        },
+        {
+          "number": 20,
+          "problem": "In a regular $36$-gon $A_1A_2\\cdots A_{36}$ inscribed in circle $O$, the circle that is externally tangent to $O$ at $A_{18}$ is tangent to $A_{10}A_{28}$ at $P$. Also, the circle that is externally tangent to $O$ at $A_{30}$ is tangent to $A_{21}A_{23}$ at $Q$. Let $R=A_8P\\cap A_{30}Q$. Calculate $\\angle PRQ$, where $\\angle PRQ\\le 180^\\circ$."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be the number of possible ways for $5$ people to sit on $9$ equally spaced chairs lying on a circle. The chairs are exactly the same as each other. Calculate the remainder when $n$ is divided by $1000$."
+        },
+        {
+          "number": 2,
+          "problem": "For all reals $x$, define\n$$f(x)=\\sum_{i=1}^{20}\\left|x-\\frac{i}{x}\\right|.$$\n$f(x)$ reaches its minimum value $b$ when $x=a$. Calculate $ab$."
+        },
+        {
+          "number": 3,
+          "problem": "In a rectangle $ABCD$, $AB=2$, $AD=10$. Inside this rectangle, draw a semicircle that has $CD$ as its diameter. The tangent to this semicircle from $A$ touches it at $E$ and hits $BC$ at $F$. If $\\tan\\angle EDF=\\frac{q}{p}$, where $p, q$ are relatively prime positive integers, calculate $p+q$."
+        },
+        {
+          "number": 4,
+          "problem": "There are $6$ black balls and $4$ white balls in a bag. Balls are taken out one at a time, without being put back, until all of the black balls have been taken. If the probability that exactly $8$ balls are taken from the bag is $\\frac{q}{p}$, where $p, q$ are relatively prime positive integers, calculate $p+q$."
+        },
+        {
+          "number": 5,
+          "problem": "For different positive integers $m, n$, define $d(m,n)$ as the maximum integer $k$ such that $3^k\\mid m-n$. Find a three-digit number $x$ such that $d(x^2,7)\\ge 7$."
+        },
+        {
+          "number": 6,
+          "problem": "A function $f(x)$ satisfies\n$$f(x)+f\\left(\\frac{1}{1-x}\\right)=\\frac{1}{(1-x)^2}$$\nfor $x\\neq 0,1$. Calculate the sum of all reals $t\\neq 1$ such that $f(t)=\\frac{t^2}{2}$."
+        },
+        {
+          "number": 7,
+          "problem": "Real numbers $a_k, b_k$ ($k=1,\\ldots,5$) satisfy\n$$\\sum_{k=1}^{5}(a_k^2+1)(b_k^2+1)=4\\sum_{k=1}^{5}a_kb_k\\qquad\\text{and}\\qquad 150<\\sum_{k=1}^{5}(a_k+5)(b_k+5)<250.$$\nCalculate the sum of all possible values of\n$$\\sum_{k=1}^{5}(a_k+2)(b_k+2).$$"
+        },
+        {
+          "number": 8,
+          "problem": "Find\n$$\\left\\lfloor\\sum_{k=1}^{17}\\sqrt[3]{1000+k^2}\\right\\rfloor.$$"
+        },
+        {
+          "number": 9,
+          "problem": "Pick $4$ distinct vertices of a regular $30$-gon and form a quadrilateral. How many such quadrilaterals have all four angles less than $120^\\circ$?"
+        },
+        {
+          "number": 10,
+          "problem": "Positive integers $m, n, k$ satisfy $m^2+n^2=k^2$ and $m^2+82n^2=53^4$. Calculate $n$."
+        },
+        {
+          "number": 11,
+          "problem": "How many bijective functions $f:\\{1,2,\\ldots,11\\}\\to\\{1,2,\\ldots,11\\}$ are there such that $n-1\\le f(n)\\le 2n$ for all integers $1\\le n\\le 11$?"
+        },
+        {
+          "number": 12,
+          "problem": "Find the number of $(x,y)\\in\\mathbb{Z}^2$ such that $x(x+5)=y(y-1)(y+1)(y+2)$."
+        },
+        {
+          "number": 13,
+          "problem": "Points $A_1, A_2, A_3, A_4$ lie on a circle in counterclockwise order. Let $H_i$ be the orthocenter of triangle $A_{i+1}A_{i+2}A_{i+3}$ (indices taken modulo $4$). If $H_1H_2=3$, $H_2H_3=4$, $H_3H_4=6$, $H_1H_4=7$, calculate $15(A_1A_3)^2$."
+        },
+        {
+          "number": 14,
+          "problem": "There are four circles, with centers $O_1, O_2, O_3, O_4$. For $i=1,2,3,4$, the circles with centers $O_i$ and $O_{i+1}$ are externally tangent at $K_i$ (indices taken modulo $4$). Let $A=K_1K_3\\cap K_2K_4$. If $\\angle K_4O_1K_1=140^\\circ$, $\\angle K_4O_4K_3=100^\\circ$, $K_1K_2=K_2K_3$ and $K_4K_1=4K_3K_4$, calculate $\\frac{4AK_2}{AK_4}$."
+        },
+        {
+          "number": 15,
+          "problem": "For positive integers $m, k$ and an odd integer $n$, if\n$$m+\\frac1m=6\\left(\\frac{n}{2^k}+\\frac{2^k}{n}\\right),$$\ncalculate $mn$."
+        },
+        {
+          "number": 16,
+          "problem": "In a professional soccer league, the match schedule is created to satisfy the following. Any two teams play each other at most once. Each team plays matches against $12$ teams in total. If two teams play a match against each other, there are $5$ teams that play matches against both of them. If two teams do not play a match against each other, there are $6$ teams that play matches against both of them. Find the number of teams in this soccer league."
+        },
+        {
+          "number": 17,
+          "problem": "In $\\triangle ABC$, $AB=5$, $BC=6$, $CA=7$. Let the incircle of $\\triangle ABC$ touch $BC, CA, AB$ at $X, Y, Z$. If $I$ is the incenter of $\\triangle ABC$ and $P=AI\\cap XY$, $Q=AI\\cap XZ$, calculate $35(PQ)^2$."
+        },
+        {
+          "number": 18,
+          "problem": "On a board, $m$ horizontal lines and $n$ vertical lines are drawn. At each of the $mn$ intersections, put either a black stone or a white stone, so that every rectangle whose sides lie on the horizontal and vertical lines has at least one black stone and at least one white stone on it. Let $P(m,n)$ be the number of such ways. Calculate the remainder when $\\sum_{k=2}^{7}P(k,7)$ is divided by $1000$."
+        },
+        {
+          "number": 19,
+          "problem": "We define the harmonic mean of $a_1,\\ldots,a_k$ as\n$$\\frac{k}{\\sum_{i=1}^{k}\\frac{1}{a_i}}.$$\nIf the harmonic mean of all divisors of $n$ is $3$, calculate $n$."
+        },
+        {
+          "number": 20,
+          "problem": "For polynomials $P_k(x)$ $(k=1,2,3)$, $P_k(x)$ has $k+2$ real roots. Let\n$$A=\\{(x,y,z)\\mid P_1(x)P_2(y)P_3(z)=P_1(y)P_2(z)P_3(x)=P_1(z)P_2(x)P_3(y)=0\\}.$$\nIf $|A|$ is finite, calculate $|A|$."
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Point $D$ is inside an equilateral triangle $ABC$. If $DB^2+DC^2+BC^2=100$ and the area of $\\triangle DBC$ is $5\\sqrt3$, calculate $AD^2$."
+        },
+        {
+          "number": 2,
+          "problem": "Judges $A, B, C, D$ each give $1, 2, 3, 4$ or $5$ points to evaluate an employee. In how many ways can the employee get $13$ points in total?"
+        },
+        {
+          "number": 3,
+          "problem": "Calculate\n$$615^5-5\\cdot 614^5+10\\cdot 613^5-10\\cdot 612^5+5\\cdot 611^5-610^5.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Define $a_0=2009$ and\n$$a_n=\\frac{-2010}{n}\\sum_{k=0}^{n-1}a_k$$\nfor each $n\\ge 1$. Calculate the remainder when the sum\n$$\\sum_{n=1}^{2010}n\\cdot 2^n\\cdot a_n$$\nis divided by $1000$."
+        },
+        {
+          "number": 5,
+          "problem": "Integers $a, b, c, d$ satisfy $a+bd+cd^2+3d^3=0$ and $|a|,|b|,|c|\\le 400$. What is the maximum of $|d|$?"
+        },
+        {
+          "number": 6,
+          "problem": "The equation $x^{11}+11x+1=0$ has $10$ complex solutions $\\alpha_1,\\ldots,\\alpha_{10}$. Define\n$$S=\\left|\\sum_{i=1}^{10}\\alpha_i^{10}\\right|.$$\nCalculate the integer closest to $S$."
+        },
+        {
+          "number": 7,
+          "problem": "For an integer $x$, there exist four integers $a, b, c, d$ such that $a+b+c+d=800$ and $(x-a)^2(x-b)(x-c)(x-d)=420$. Calculate the difference between the maximum and the minimum value of $x$."
+        },
+        {
+          "number": 8,
+          "problem": "In $\\triangle ABC$, $AB=2\\sqrt{26}$, $AC=2\\sqrt2$, $BC=8$. Denote by $X, Y, Z$ the midpoints of $BC, CA, AB$. Let $P, Q, R$ be the circumcenters of $\\triangle AZY$, $\\triangle BXZ$, $\\triangle CYX$. If the circumcenters of $\\triangle XYZ$ and $\\triangle PQR$ are $O_1, O_2$, calculate $O_1O_2^2$."
+        },
+        {
+          "number": 9,
+          "problem": "Define $S=\\{1,2,\\ldots,30\\}$. A subset $A$ of $S$ satisfies $|A|=3$ and\n$$\\sum_{a\\in A}a^7\\equiv\\sum_{b\\in S-A}b^7 \\pmod{31}.$$\nHow many different sets $A$ are there?"
+        },
+        {
+          "number": 10,
+          "problem": "An injective function $f:(0,\\infty)\\to(0,\\infty)$ satisfies $f(x)\\,f\\!\\left(f(x)+\\frac1x\\right)=1$. Calculate $(2f(1)-1)^2$."
+        },
+        {
+          "number": 11,
+          "problem": "How many $4\\times 4$ matrices are there such that all entries are nonnegative integers, and the sum of the entries of each row and of each column is $2$?"
+        },
+        {
+          "number": 12,
+          "problem": "In $\\triangle ABC$, let $D$ be the midpoint of $AB$. A circle passing through both points of trisection of $BC$ and tangent to $AB$ at $D$ meets $CA$ at $P, Q$. If the area of $\\triangle PDQ$ is $\\frac14$ of the area of $\\triangle ABC$ and $CA=8\\sqrt3$, calculate $AB$."
+        },
+        {
+          "number": 13,
+          "problem": "Relatively prime positive integers $p, q$ satisfy\n$$\\frac{p}{q}=\\cos^{10}\\frac{\\pi}{5}+\\cos^{10}\\frac{2\\pi}{5}+\\cos^{10}\\frac{3\\pi}{5}+\\cos^{10}\\frac{4\\pi}{5}.$$\nCalculate $p+q$."
+        },
+        {
+          "number": 14,
+          "problem": "Let $A=\\{1,2,\\ldots,10\\}$. For a bijective function $f:A\\to A$, we define\n$$M_f=\\sum_{k=1}^{10}|f(k)-k|.$$\nLet the maximum of $M_f$ be $M$. Calculate the remainder when the number of bijective functions $f$ with $M_f=M$ is divided by $1000$."
+        },
+        {
+          "number": 15,
+          "problem": "A circle $T_1$ has radius $20$, and a circle $T_2$ has radius $40$. The common external tangents of the two circles meet at $A$, and a common internal tangent of the two circles touches $T_1$ at $P$ and $T_2$ at $Q$. If $AQ=100$, find the length of $PQ$."
+        },
+        {
+          "number": 16,
+          "problem": "For a three-digit prime number $p$, the equation $x^3+y^3=p^2$ has an integer solution. Calculate $p$."
+        },
+        {
+          "number": 17,
+          "problem": "For the three real roots $a, b, c$ $(a<b<c)$ of $x^3-3x+1=0$, calculate $20(a^2+b^2-a-c)$."
+        },
+        {
+          "number": 18,
+          "problem": "For a convex quadrilateral $ABCD$, the circumcenter of $\\triangle ABC$ is $O$. The line $AO$ meets circle $O$ again at $E$. If $\\angle D=90^\\circ$, $\\angle BAE=\\angle CDE$, $AB=4\\sqrt2$ and $AC=CE=5$, calculate $\\sqrt{10}\\,DE$."
+        },
+        {
+          "number": 19,
+          "problem": "$5$ baseball players each put their glove and their bat in a box. Find the number of ways in which the five players can take the equipment so that the following conditions hold: each player takes one bat and one glove; no one takes their own equipment; and for each of the five players, the glove and the bat that the player took belong to different players."
+        },
+        {
+          "number": 20,
+          "problem": "For a positive integer $n$ with $(n,6)=1$, the number of integers among $1\\cdot2\\cdot3,\\ 2\\cdot3\\cdot4,\\ \\ldots,\\ n\\cdot(n+1)\\cdot(n+2)$ that are relatively prime to $n$ is $140$. Find the maximum of such $n$."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "How many ordered pairs of complex numbers $(z,w)$ are there such that\n$$z^2+w^2=z^4+w^4=z^8+w^8?$$"
+        },
+        {
+          "number": 2,
+          "problem": "Find the smallest positive integer $n$ such that for all bijective functions $f:\\{1,2,\\ldots,8\\}\\to\\{1,2,\\ldots,8\\}$, $f^n(x)=x$ for $1\\le x\\le 8$."
+        },
+        {
+          "number": 3,
+          "problem": "Find the remainder when the sum of all integers $k$ such that $1\\le k\\le 449$ and $k^{224}+448\\equiv 0\\pmod{449}$ is divided by $1000$."
+        },
+        {
+          "number": 5,
+          "problem": "In a chess club with $25$ members, each member plays a match against exactly $k$ other members. Find the sum of the positive integers $k$ for which this is possible."
+        },
+        {
+          "number": 6,
+          "problem": "A function $f:\\mathbb{N}\\to\\mathbb{N}\\cup\\{0\\}$ satisfies $f(11)=2$. Also, if $(m,n)=1$, then $f(mn)=f(m)+d(m)f(n)$, where $d(m)$ is the number of positive divisors of $m$. Calculate $f(900)$."
+        },
+        {
+          "number": 7,
+          "problem": "If\n$$\\left(x+\\frac1x+\\sqrt2\\right)^{12}=\\sum_{k=0}^{24}c_kx^{k-12},$$\ncalculate\n$$\\sum_{k=0}^{24}(-1)^kc_k^2.$$"
+        },
+        {
+          "number": 8,
+          "problem": "In quadrilateral $ABCD$, the line through $D$ parallel to $BC$ meets segment $AB$ at $E$. If $AE=10$, $BE=20$, $CD=CE=5\\sqrt2$ and $\\angle BAD=2\\angle CED$, calculate $BD$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $A$ be the set of $7$-digit numbers each of whose digits is $1$ or $2$. What is the maximum of $|S|$ over subsets $S\\subset A$ with the following property? For all distinct $m, n\\in S$, $m+n$ has at least $3$ digits equal to $3$."
+        },
+        {
+          "number": 10,
+          "problem": "For positive reals $a, b, c, d$, let the maximum of\n$$\\frac{ab+4bc+cd}{a^2+b^2+c^2+d^2}$$\nbe $M$. Calculate $64(M-1)^6$."
+        },
+        {
+          "number": 12,
+          "problem": "For a prime $p$, there are $332$ positive integers $k$ such that $k\\le p-2$, $\\left(\\frac{k}{p}\\right)=1$ and $\\left(\\frac{k+1}{p}\\right)=-1$. What is the remainder when $p$ is divided by $1000$? We define $\\left(\\frac{k}{p}\\right)=1$ if $k$ is a quadratic residue modulo $p$, and $\\left(\\frac{k}{p}\\right)=-1$ if $k$ is not a quadratic residue modulo $p$."
+        },
+        {
+          "number": 13,
+          "problem": "In $\\triangle ABC$, $AC=48$, $BC=30$. Let $I, O$ be the incenter and the circumcenter of $\\triangle ABC$. If $D=IO\\cap AC$, calculate $DI^2$."
+        },
+        {
+          "number": 14,
+          "problem": "For integers $a_1,a_2,\\ldots,a_n$, denote by $G(a_1,a_2,\\ldots,a_n)$ the greatest common divisor of $a_1,a_2,\\ldots,a_n$. Over all integers $a_1,a_2,\\ldots,a_{20}$ such that $1000<a_1<a_2<\\cdots<a_{20}$ and\n$$\\sum_{i=1}^{20}a_i=105840,$$\ncalculate the maximum of $G(a_1,a_2,\\ldots,a_{20})$."
+        },
+        {
+          "number": 15,
+          "problem": "For sets $X, Y$, define $X\\times Y=\\{(x,y)\\mid x\\in X,\\ y\\in Y\\}$. How many non-empty subsets $A$ of $\\{0,1\\}\\times\\{0,1,2,3,4,5,6\\}$ are there such that the following is true? If $(a_1,b_1),(a_2,b_2)\\in A$, then $|a_1-a_2|+|b_1-b_2|\\neq 1$."
+        },
+        {
+          "number": 16,
+          "problem": "For all integers $n$, define $a_n=(6n+1)\\frac{\\pi}{18}$. Calculate the remainder when\n$$\\left(\\sum_{n=1}^{60}n\\cos a_n\\right)^2+\\left(\\sum_{n=1}^{60}n\\sin a_n\\right)^2$$\nis divided by $1000$."
+        },
+        {
+          "number": 17,
+          "problem": "A function $f:\\mathbb{N}\\to\\mathbb{N}$ satisfies $f(1)\\neq 2$. Also, $f$ is monotonically increasing and $f(f(n))=5n$ for all positive integers $n$. Calculate the remainder when $f(2011)$ is divided by $1000$."
+        },
+        {
+          "number": 18,
+          "problem": "A bijective function $f:\\{1,2,3,4,5\\}\\to\\{1,2,3,4,5\\}$ is in $A$ if and only if it satisfies $f^k(1)\\neq 1$ for $k=1,2,3,4$. How many pairs of functions $(g,h)$ are there such that $g\\in A$, $h\\in A$ and $g\\circ h\\in A$?"
+        },
+        {
+          "number": 19,
+          "problem": "Positive integers $x, y, z$ satisfy $\\frac{x}{y}+\\frac{y}{z}+\\frac{z}{x}=6$ and $(x,z)=1$. Find the maximum of $x+y+z$."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the number of subsets of $\\{1,2,\\ldots,23\\}$ that have $11$ elements and whose elements sum to $194$."
+        },
+        {
+          "number": 2,
+          "problem": "Find the number of $(x,y)\\in\\mathbb{Z}^2$ such that $|x|,|y|\\le 1000$ and\n$$4x^3-5x^2y+10xy^2+12y^3-108x-81y=0.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Find the smallest integer $n$ such that there exists a function $f:\\{1,2,\\ldots,20\\}\\to\\{1,2,\\ldots,n\\}$ with\n$$f(k+1)<\\frac{f(k)+f(k+2)}{2}\\qquad\\text{for all } k=1,\\ldots,18.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Quadrilateral $ABCD$ is inscribed in a circle $O$, with $AB=24$, $AD=16$ and $\\angle BAC=\\angle DAC$. Let $E=AC\\cap BD$; then $BE=18$. If the line through $D$ perpendicular to $AC$ meets circle $O$ again at $F$, $K=FC\\cap AB$ and $L=AC\\cap DF$, calculate $KL$."
+        },
+        {
+          "number": 5,
+          "problem": "For how many bijective functions $f:\\{1,2,\\ldots,8\\}\\to\\{1,2,\\ldots,8\\}$ is there exactly one $1\\le i\\le 7$ such that $f(i)>f(i+1)$?"
+        },
+        {
+          "number": 6,
+          "problem": "A sequence $x_1,x_2,\\ldots,x_{10}$ consists of four $1$s, three $2$s and three $3$s. Let $z_1=x_1$, and define\n$$z_{n+1}=\\left(1+\\frac1n\\right)^2\\cdot\\frac{z_n\\cdot x_{n+1}}{z_n+x_{n+1}}.$$\nIf the maximum possible value of $z_{10}$ is $\\frac{p}{q}$, where $p, q$ are relatively prime positive integers, calculate $p+q$."
+        },
+        {
+          "number": 7,
+          "problem": "Define $X=\\{1,2,\\ldots,13\\}$, and define $g:X\\to X$ by $g(x)=14-x$. How many functions $f:X\\to X$ are there such that $f\\circ f\\circ f\\equiv g$?"
+        },
+        {
+          "number": 8,
+          "problem": "Three points $A, B, C$ lie on a circle $O$, with $AB=18$, $\\angle ABC=59^\\circ$, $\\angle CAB=3^\\circ$. Points $D, E$ lie on the tangent to $O$ at $A$, with $\\angle DAC<90^\\circ$, $DA=12$, $AE=18$, $DE=30$. Let $K=BD\\cap O$, $L=CE\\cap O$ and $P=KL\\cap DE$. $P$ is also the reflection of $A$ with respect to $E$. Calculate $AP$."
+        },
+        {
+          "number": 9,
+          "problem": "Define $\\{x\\}=x-\\lfloor x\\rfloor$. Calculate\n$$\\sum_{\\substack{1\\le i\\le 2012\\\\ (i,2012)=1}}\\left\\{\\frac{523i}{2012}\\right\\}.$$"
+        },
+        {
+          "number": 10,
+          "problem": "Let $f(x)=x^2-10x+\\frac{p}{2}$. If there are exactly four distinct reals $x$ such that $f\\circ f\\circ f(x)=f(x)$, calculate $p$."
+        },
+        {
+          "number": 11,
+          "problem": "Triangle $ABC$ is inscribed in a circle $O$, and a circle $O'$ is internally tangent to $O$ at $A$. Let $D=AB\\cap O'$, and let $E, F$ be the intersections of $BC$ and $O'$, where $F$ is closer to $C$. Also, the tangent to $O$ at $B$ intersects $DF$ at $K$, and $L=CD\\cap O'$. If $\\angle CFA=38^\\circ$, $\\angle DKB=47^\\circ$, $\\angle CLA=60^\\circ$ and $\\angle CAB=x^\\circ$, calculate $x$."
+        },
+        {
+          "number": 12,
+          "problem": "For positive integers $k$, let\n$$a_k=\\frac{361984!}{k!\\,(361984-k)!}.$$\nWhat is the greatest common divisor of $a_1,a_3,a_5,\\ldots,a_{361983}$?"
+        },
+        {
+          "number": 13,
+          "problem": "$16$ students take a test with $30$ questions. Each student solved at most $15$ problems, and each problem was solved by at least $8$ students. For any two students $A, B$, the number of problems solved by both $A$ and $B$ is a fixed number $n$. What is $n$?"
+        },
+        {
+          "number": 14,
+          "problem": "In $\\triangle ABC$, $\\angle ABC<90^\\circ$, $AB=15$, $BC=27$. Let $M$ be the midpoint of $AC$. Let $\\ell$ be the line through $M$ perpendicular to $BC$. Let the circle with center $A$ passing through $M$ meet $\\ell$ at $P$. Let $O$ be a point at distance $3$ from $BC$. Let the circle with center $O$ passing through $B$ and $M$ meet $\\ell$ at $Q$. $Q$ is on the opposite side of $BC$ from $P$. If $PQ=30$, calculate the area of $\\triangle OPM$."
+        },
+        {
+          "number": 15,
+          "problem": "What is the smallest positive integer $m$ such that\n$$180!\\left(\\frac{1}{181}+\\frac{(-1)^m\\,m!}{m+181}\\right)+\\frac{1}{181}+\\frac{1}{m+181}$$\nis an integer?"
+        },
+        {
+          "number": 16,
+          "problem": "A sequence $a_n$ with $a_1=1$, $a_2=2$ has a positive integer $k$ such that $a_{n+k}=a_n$ for all positive integers $n$. Define $b_n=a_{n+2}-a_{n+1}+a_n$. If $b_{n+1}=\\left(b_n^2+1\\right)/2$ for all positive integers $n$, calculate\n$$\\sum_{i=1}^{60}a_i.$$"
+        },
+        {
+          "number": 17,
+          "problem": "If positive integers $a, b, c$ satisfy\n$$\\frac{a^3}{(b+3)(c+3)}+\\frac{b^3}{(c+3)(a+3)}+\\frac{c^3}{(a+3)(b+3)}=7,$$\ncalculate $a+b+c$."
+        },
+        {
+          "number": 18,
+          "problem": "Find the number of injective functions $f:\\{1,2,\\ldots,7\\}\\to\\{1,2,\\ldots,9\\}$ such that $f(i)\\neq f(j)+1$ whenever $1\\le i<j\\le 7$."
+        },
+        {
+          "number": 19,
+          "problem": "For a point $P$ outside a circle $\\omega$ with center $O$, let $A$ be the intersection of $PO$ and $\\omega$ that is farther from $P$. We have $AP=200$. A line $\\ell$ passing through $P$ but not through $O$ meets $\\omega$ at two points; let the point closer to $P$ be $B$ and the farther one be $C$. The line $\\ell$ meets the circumcircle of $\\triangle ABO$ again at a point $D$ and the circumcircle of $\\triangle ACO$ again at $E$; $E$ lies between $B$ and $C$, and $AD=250$, $AE=90$. Calculate the radius of $\\omega$."
+        },
+        {
+          "number": 20,
+          "problem": "Find the maximum positive integer $a$ such that there exists a positive integer $b$ with $a^{b+2a}=b^{4a}$."
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "We want to choose $8$ people out of $20$ people who are sitting in a circle, without choosing two people who are next to each other. Calculate how many ways are possible."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a, b, c, n$ be integers such that $3^{1024}-2^{1024}=7^a\\times 13^b\\times 97^c\\times n$ and $(n,7\\times 13\\times 97)=1$. Calculate $7a+13b+97c$."
+        },
+        {
+          "number": 3,
+          "problem": "Over all $3$-tuples of reals $(x,y,z)$ such that $x^2+y^2+z^2=1$, let the maximum of $(x^2-y^2)(y^2-z^2)(z^2-x^2)$ be $M$. Calculate $\\frac{1}{M^2}$."
+        },
+        {
+          "number": 4,
+          "problem": "Triangle $ABC$ is inscribed in a circle $O$, with $\\angle AOB=\\angle BOC=20^\\circ$. Let the midpoints of $OA, OB, OC$ be $P, Q, R$, and let $D=AB\\cap OC$. Then $OD=4$. If $x$ is the area of the pentagon $ADRQP$, calculate $x^2$."
+        },
+        {
+          "number": 5,
+          "problem": "Find the remainder when the following expression is divided by $155$:\n$$\\sum_{n=1}^{154}\\sum_{k=1}^{1000}n^k.$$"
+        },
+        {
+          "number": 6,
+          "problem": "Consider positive integers $k$ for which the following holds: there exist sets $A, B$ with $k$ integers as elements such that $\\{a+b\\mid a\\in A,\\ b\\in B\\}=\\{0,1,2,\\ldots,100\\}$. If the maximum of such $k$ is $M$ and the minimum of such $k$ is $m$, calculate $M+m$."
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, let the internal bisector of $\\angle C$ meet $AB$ at $D$. Let the line through $B$ parallel to $CD$ meet $AC$ at $E$. $AD=4$, $BD=6$, $BE=15$. If $BE$ meets the external bisector of $\\angle A$ at $P$, calculate $(PB-AB)^2$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $a, b, c, d$ be nonnegative real numbers such that $a+b-d=-2(c-3)$ and\n$$a^2+c^2+2a(c-3)+bd-12c=0.$$\nCalculate the maximum of $b$."
+        },
+        {
+          "number": 9,
+          "problem": "In an acute triangle $ABC$, $\\angle B=70^\\circ$. Let $D, E, F$ be the feet of the perpendiculars from $A, B, C$ to $BC, CA, AB$. Let $H$ be the foot of the perpendicular from $E$ to $BC$. Let $M$ be the midpoint of $AE$. Let $K=MD\\cap EH$, and let the line through $H$ perpendicular to $AB$ meet $EF$ at $L$. If $\\angle KLH=80^\\circ$ and $DK=50$, calculate $LH$."
+        },
+        {
+          "number": 10,
+          "problem": "A circle $S$ and a point $P(a,b)$ on $S$ satisfy the following conditions: the tangent to $S$ at $P$ passes through the origin, the center of $S$ is on the $x$-axis or in the fourth quadrant, $S$ passes through $(1,0)$ and $(9,0)$, and $b\\ge\\frac95$. For such $P(a,b)$, let $M, m$ be respectively the maximum and the minimum of\n$$\\frac{6a^2+5b^2}{a^3b+b^3a}.$$\nCalculate $36M+27m^2$."
+        },
+        {
+          "number": 11,
+          "problem": "For a positive integer $k$, let $a_k=\\frac{2^{40k}-1}{41}$. Let $S=\\sum_{i=1}^{10}a_i$. Calculate the remainder when $S$ is divided by $41$."
+        },
+        {
+          "number": 12,
+          "problem": "How many $5$-digit numbers are there such that every digit is $1, 2, 3$ or $4$ and no two adjacent digits differ by $1$?"
+        },
+        {
+          "number": 13,
+          "problem": "For two points $A, B$ on circle $O$, the tangents to $O$ at $A, B$ meet at $C$. Points $D, E$ are taken on rays $\\overrightarrow{CA}, \\overrightarrow{BC}$ respectively such that $AD=30$, $BE=60$. Let $P=BA\\cap DE$. If $DE=66$, calculate $DP$."
+        },
+        {
+          "number": 14,
+          "problem": "In a convex heptagon $A_1A_2\\cdots A_7$, we want to draw four diagonals that divide the heptagon into $5$ triangles. Also, we want every triangle to share at least one edge with the heptagon. How many ways are there to do so?"
+        },
+        {
+          "number": 15,
+          "problem": "Positive reals $a, b$ satisfy $(a^2-a+1)(b^2-b+1)=a^2b^2$. Let $M, m$ be the maximum and the minimum of\n$$\\frac{2ab}{a+b-1}.$$\nCalculate $M^2+m^2$."
+        },
+        {
+          "number": 16,
+          "problem": "Find the number of positive integers $n$ such that $\\left\\lfloor\\frac{n^2}{7}\\right\\rfloor$ is a prime number less than $300$."
+        },
+        {
+          "number": 17,
+          "problem": "Find the smallest positive integer $n$ such that the following is true: for any set $A$ of $n$ elements that are larger than $1$ and less than $2013$, there exist $a, b\\in A$, $a\\neq b$, such that $|(a-b)(ab-100)|<10ab$."
+        },
+        {
+          "number": 18,
+          "problem": "If positive integers $x, y$ satisfy $y^2=(x^2-48^2)(x^2-55^2)$, find the remainder when $x+y$ is divided by $1000$."
+        },
+        {
+          "number": 19,
+          "problem": "In an isosceles triangle $AB_1B_2$, $AB_1=AB_2=8$. For $i=1,2$, a line $\\ell_i$ passing through $A$ intersects the circle with center $B_i$ and radius $6$ at $P_i, Q_i$. If the circumradius of $\\triangle AP_1P_2$ is $2$ and $AQ_1=9$, $AQ_2=11$, find the maximum of $Q_1Q_2^2$."
+        },
+        {
+          "number": 20,
+          "problem": "Find the number of $8$-tuples $(a_1,a_2,\\ldots,a_8)$ such that $0<a_1<a_3<a_5<a_7<9$, $0<a_2<a_4<a_6<a_8<9$, and $a_{2i-1}<a_{2i}$ for $i=1,2,3,4$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A polynomial $f(x)$ and reals $a, b, c$ satisfy $f(x)(x-1)^{20}=(x^2+ax+1)^{30}+(x^2+bx+c)^{10}$. Calculate $f(1)+a^2+b^2+c^2$."
+        },
+        {
+          "number": 2,
+          "problem": "We want to fill each entry of a $2\\times 6$ matrix with $1$ or $2$. For $i=1,2,3,4,5,6$, define $c_i$ as the product of the entries in the $i$th column. How many ways are there to fill the entries so that\n$$\\sum_{i=1}^{6}c_i\\equiv 0\\pmod 2?$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a$ be the product of all positive integers that are not multiples of $6$ and not larger than $2014$. What is the largest positive integer $k$ such that $5^k\\mid a$?"
+        },
+        {
+          "number": 4,
+          "problem": "On segment $AB$, take a point $S$ such that $AS=3$, $SB=4$. For a point $X$ such that $\\angle XBS=\\angle AXS$, let $d$ be the distance between $X$ and $AB$. Find the maximum of $d^2$."
+        },
+        {
+          "number": 5,
+          "problem": "How many subsets of the set $\\{1,2,3,\\ldots,8\\}$ contain $4$ consecutive integers?"
+        },
+        {
+          "number": 6,
+          "problem": "A monic polynomial $f(x)$ of degree $4$ satisfies $f(2^n+1)=8^n+1$ for $n=1,2,3,4$. Calculate $f(1)$."
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $AB=5$, $BC=7$, $CA=8$. There are several points that are at distance $3$ from $AB$ and at distance $2$ from $BC$. For all such points, the sum of their distances from $CA$ is $x$. Calculate $x^2$."
+        },
+        {
+          "number": 8,
+          "problem": "Find the largest integer $n$ such that $n$ is not a cube of an integer and $n^2$ is a multiple of $[\\sqrt[3]{n}]^5$."
+        },
+        {
+          "number": 9,
+          "problem": "In $\\triangle ABC$ with incenter $I$, the incircle touches $BC, CA, AB$ at $D, E, F$. Let $J=EF\\cap BC$, with $BJ=100$, $CJ=60$. Let the $A$-excircle touch $BC$ at $K$. The line $IK$ passes through the point $L$ that divides segment $CA$ internally in the ratio $5:3$. If the inradius of $\\triangle ABC$ is $r$, calculate $r^2$."
+        },
+        {
+          "number": 10,
+          "problem": "In a regular $20$-gon with all sides of length $1$, pick $5$ vertices to make a pentagon. How many pentagons have all of their sides longer than $2$? Pentagons that coincide after a rotation are still considered to be different."
+        },
+        {
+          "number": 11,
+          "problem": "Find the least odd positive integer $m$ such that $(m+164)(m^2+164^2)$ is a perfect square."
+        },
+        {
+          "number": 12,
+          "problem": "What is the largest real number $a$ such that\n$$x^{100}-ax^{51}+ax^{49}\\ge 1\\qquad\\text{for all } x>1?$$"
+        },
+        {
+          "number": 13,
+          "problem": "Calculate the maximum perimeter of a hexagon that satisfies the following conditions. The lengths of all sides are positive integers, and all angles of the hexagon are $120^\\circ$. If two sides of the hexagon are parallel, their lengths are the same. If two sides of the hexagon are adjacent, their lengths are different from each other. The area of the hexagon is not larger than $12\\sqrt3$."
+        },
+        {
+          "number": 14,
+          "problem": "Let $f(m)=6^m$. If we simplify\n$$\\sum_{n=1}^{20}\\frac{x^{f(n)}\\left(1-x^{f(20n)}\\right)}{1-x^{f(n)}},$$\nwe get a polynomial with integer coefficients. What is the coefficient of $x^{20!}$?"
+        },
+        {
+          "number": 15,
+          "problem": "A sequence $a_i$ satisfies $0<a_{m+n+k}\\le 3\\max[a_m,a_n,a_k]$ for all $m, n, k\\ge 0$. Calculate the maximum of\n$$\\frac{a_{\\sum_{k=1}^{201}i_k}}{\\max[a_{i_1},\\ldots,a_{i_{201}}]}.$$"
+        },
+        {
+          "number": 16,
+          "problem": "For positive integers $m, n$ $(m<n)$, denote by $[m,n]$ the set of integers that are not less than $m$ and not greater than $n$. We choose $a_1, a_2, a_3, b_1, b_2, b_3$ from the positive integers not greater than $8$. Find how many ways there are to pick them so that $a_1<a_2<a_3$ and no sets among $[a_1,b_1], [a_2,b_2], [a_3,b_3]$ are not subsets of each other."
+        },
+        {
+          "number": 17,
+          "problem": "A polynomial $f(x)$ satisfies $0\\le f(x)\\le 1$ for all $-1\\le x\\le 1$. Find the maximum possible value of the coefficient of $x^6$ in $f(x)$."
+        },
+        {
+          "number": 18,
+          "problem": "In $\\triangle ABC$ with $\\angle A<90^\\circ$, the internal bisector of $\\angle B$ meets $AC$ at $D$, and the internal bisector of $\\angle C$ meets $AB$ at $E$. Let $F$ be the midpoint of $DE$. Also, let $J, K$ be the feet of the perpendiculars from $F$ to $AB, BC$. If $AD=30$, $FJ=12$, $FK=20$, calculate $DE^2$."
+        },
+        {
+          "number": 19,
+          "problem": "Define a sequence $a_n$ as follows: $a_1=1$, and\n$$a_{n+1}=\\frac{1}{2[a_n]-a_n+1}.$$\nIf $a_{2014}=\\frac{q}{p}$, where $p, q$ are relatively prime positive integers, calculate $p+q$."
+        },
+        {
+          "number": 20,
+          "problem": "How many ways are there to tile the following figure (a staircase of unit squares whose rows, from top to bottom, have $1, 2, 3, 4$ squares, aligned on the left) using $1\\times 1$ and $1\\times 2$ tiles?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2014_0_p20_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A real polynomial $f(x)$ of degree $5$ has all of its coefficients nonnegative. If $f(x)=x^6f\\left(\\frac1x\\right)$ for $x\\neq 0$ and $f(2)=10f(1)$, what is the integer closest to $\\frac{f(3)}{f(2)}$?"
+        },
+        {
+          "number": 2,
+          "problem": "Find the number of $10$-tuples $(a_1,a_2,\\ldots,a_{10})$ such that $a_i\\in\\{1,2,3\\}$ for $1\\le i\\le 10$, $a_i<a_{i+1}$ if $i=1,3,5,7,9$, and $a_i>a_{i+1}$ if $i=2,4,6,8$."
+        },
+        {
+          "number": 3,
+          "problem": "Let there be a semicircle with diameter $AB$, and let $C$ lie on arc $AB$. Let $M$ be the midpoint of segment $BC$. A circle is tangent to $BC$ at $M$ and to arc $BC$ at $D$. Let $E=AD\\cap BC$. If $AB=20$, $AC=5$, calculate $CE^2$."
+        },
+        {
+          "number": 4,
+          "problem": "For positive integers $m, n$ such that the following is true, calculate the minimum of $m+n$: there exists a positive integer $k$ such that $k^3-mk^2-nk+2015=0$."
+        },
+        {
+          "number": 5,
+          "problem": "Find the sum of all prime numbers $p$ such that the number of positive divisors of $p^4+119$ is not larger than $20$."
+        },
+        {
+          "number": 6,
+          "problem": "Find the smallest positive integer $n$ such that\n$$\\sum_{k=2}^{2015}(-1)^k\\binom{2015}{k}\\cdot\\left(n\\cdot k^{2015}-1\\right)\\equiv 1\\pmod{2017}.$$\nYou may use the fact that $2017$ is a prime number."
+        },
+        {
+          "number": 7,
+          "problem": "Find the number of $5$-tuples of positive integers $(x_1,x_2,x_3,x_4,x_5)$ such that $x_1=x_5$, $x_i\\neq x_{i+1}$ for $i=1,2,3,4$, and $x_i+x_{i+1}\\le 6$ for $i=1,2,3,4$."
+        },
+        {
+          "number": 8,
+          "problem": "In $\\triangle ABC$, $AB=5$, $BC=12$, $CA=13$. As $P$ moves around the plane, calculate the minimum possible value of $5\\cdot PA\\cdot PB+12\\cdot PB\\cdot PC+13\\cdot PC\\cdot PA$."
+        },
+        {
+          "number": 9,
+          "problem": "Reals $x_1,x_2,\\ldots,x_7$ satisfy $\\sum_{i=1}^{7}x_i=0$ and $\\sum_{i=1}^{7}|x_i|=1$. If the maximum of $\\sum_{i=1}^{7}x_i|x_i|$ is $\\frac{q}{p}$, where $p, q$ are relatively prime positive integers, calculate $p+q$."
+        },
+        {
+          "number": 10,
+          "problem": "Find the number of functions $f:\\{1,2,3,4,5\\}\\to\\{1,2,3,4,5\\}$ such that $f(k+1)\\le f(k)+1$ for $k=1,2,3,4$."
+        },
+        {
+          "number": 11,
+          "problem": "In $\\triangle ABC$, the incircle and the $A$-excircle touch $BC$ at $D, E$. The line $AE$ intersects the incircle at $P, Q$ $(AP<AQ)$, and $PQ=40$, $EQ=5$. Calculate $DQ^2$."
+        },
+        {
+          "number": 12,
+          "problem": "Let $q(n)$ be the number of ways to express $n$ as a sum of positive integers using exactly two different numbers, each of them at least once. For example, since $5=4+1=3+2=3+1+1=2+2+1=2+1+1+1$, we have $q(5)=5$. Find the number of positive integers $n$ such that $n\\le 100$, $n\\equiv 3\\pmod 4$, and $q(n)\\equiv 0\\pmod 2$."
+        },
+        {
+          "number": 13,
+          "problem": "Reals $a, b, c$ satisfy $a^3+2b^3+4c^3=6abc$. If $0\\le a\\le 1$, let the maximum of $4bc-a^2-b-c$ be $m$. Calculate $\\lfloor 32m\\rfloor$."
+        },
+        {
+          "number": 14,
+          "problem": "We want to write $1,2,\\ldots,10$ on the vertices of a $10$-gon, with different numbers on different vertices. Also, numbers on adjacent vertices should be relatively prime to each other. In how many ways can we write down the numbers?"
+        },
+        {
+          "number": 15,
+          "problem": "In $\\triangle ABC$, $\\angle B>90^\\circ$. Let the orthocenter and the circumcenter of $\\triangle ABC$ be $H, O$, with $AO=8$, $AH=12$. Let $D$ be the foot of the perpendicular from $C$ to $AB$, and $E$ the foot of the perpendicular from $B$ to $AC$. If a point $P$ on segment $AE$ satisfies $EP=EO$, and $D, E, O$ are collinear, calculate $HP^2$."
+        },
+        {
+          "number": 16,
+          "problem": "Find the smallest positive integer $n$ such that $n^4+1\\equiv 0\\pmod{274}$."
+        },
+        {
+          "number": 17,
+          "problem": "A sequence $a_n$ satisfies $a_1=a_2=a_3=1$ and $a_na_{n-3}-a_{n-1}a_{n-2}=4^n$ for $n\\ge 4$. Calculate\n$$\\frac{a_{2016}+4a_{2014}}{a_{2015}}.$$"
+        },
+        {
+          "number": 18,
+          "problem": "For a set $S$ of integers, define $S+1=\\{k+1\\mid k\\in S\\}$. How many non-empty subsets $K$ of $\\{1,2,\\ldots,10\\}$ satisfy the following? There exists a set $S$ such that $K=S\\cup(S+1)$."
+        },
+        {
+          "number": 19,
+          "problem": "In $\\triangle ABC$ $(\\angle B<\\angle C)$, let $D, E$ be the points of trisection of $AC$, where $D$ is closer to $C$. Let the circumcircle of $\\triangle BCE$ meet $AB$ at $F$, with $AF=2$. Let $K=EF\\cap BC$, $L=AK\\cap BE$, $M=DL\\cap BC$; then $CM=1$. If $DK$ passes through the midpoint of $AB$, calculate $AK^2$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $S$ be the set of positive integers with more than $4$ positive divisors. Find the sum of all $n\\in S$ such that the following holds: $n<2015$, and if the five smallest divisors of $n$ are $1, a, b, c, d$ $(1<a<b<c<d)$, then $n=12ac+7d^2$."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The cubic equation $x^3-6x^2+(\\sqrt2+8)x-2\\sqrt2=0$ has three roots $\\alpha, \\beta, \\gamma$, where $\\alpha<\\beta<\\gamma$. Calculate $\\alpha^2+\\beta^2+\\gamma^2+2\\alpha\\gamma$."
+        },
+        {
+          "number": 2,
+          "problem": "Find the maximal $k$ which makes the following expression an integer:\n$$\\frac{1000^{2016}-271^{2016}}{3^k}.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Define $P, Q$ as the following sets of points on the coordinate plane:\n$$P=\\{(1,1),(2,1),(4,1),(8,1),(16,1)\\},$$\n$$Q=\\{(1,0),(2,0),(4,0),(8,0),(16,0)\\}.$$\nNow we make a bijection from $P$ to $Q$, and draw the five lines through corresponding points. How many bijections are there such that there are exactly three intersection points of these five lines?"
+        },
+        {
+          "number": 4,
+          "problem": "A triangle $ABC$ satisfies $AB=5\\sqrt2$, $BC=17$, $CA=13$. Take $D, E$ on $BC$ such that $BD=DE=5$ and $EC=7$. Let $O_1, O_2$ be the incircles of triangles $ABE$ and $ADC$. Take $X$ as the intersection of $O_1$ and $O_2$ that is closer to $BC$, and take $Y, Z$ as the points of tangency of $O_1, O_2$ with $BC$. If $R$ is the circumradius of triangle $XYZ$, calculate $(R^2+10)^2$."
+        },
+        {
+          "number": 5,
+          "problem": "Four integers $a, b, c, d$ satisfy the following: $10\\le a,b,c,d\\le 20$, $ab-cd=58$, $ad-bc=110$. Calculate $a+b+c+d$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $n=2^{2016}+73$. Find the remainder when $2^n+1$ is divided by $16^{1025}+1$."
+        },
+        {
+          "number": 7,
+          "problem": "Consider all ways to select an even number of numbers from $\\frac21, \\frac22, \\frac23, \\ldots, \\frac{2}{50}$, and let $N$ be the number of such ways. For each way, multiply the selected numbers, and then add the products over all $N$ cases. Find the result."
+        },
+        {
+          "number": 8,
+          "problem": "Triangle $ABC$ has $\\angle A=30^\\circ$, $BC=60$. Take $P, Q$ on segment $BC$ such that $BP=10$, $BQ=11$. Let $O$ be the circumcircle of $\\triangle ABC$, and let $P'$ be the intersection (other than $P$) of the two circles that pass through $P$ and are tangent to $O$ at $B$ and at $C$, respectively. Define $Q'$ similarly. Let $T=PP'\\cap QQ'$. If $x$ is the area of $\\triangle PQT$, find $x^2$."
+        },
+        {
+          "number": 9,
+          "problem": "An integer $n$ has digit sum $\\frac{1}{22}\\left(-n^2+123n-2016\\right)$. Find $n$."
+        },
+        {
+          "number": 10,
+          "problem": "Find the sum of all primes $p$ satisfying $p\\mid 181^{2p}+181^p+13$."
+        },
+        {
+          "number": 11,
+          "problem": "Let $X=\\{1,2,3,4,\\ldots,12\\}$. Find the remainder when the number of bijections $f:X\\to X$ such that $f(k)$ and $k$ are coprime for all $1\\le k\\le 12$ is divided by $1000$."
+        },
+        {
+          "number": 12,
+          "problem": "A quadrilateral $ABCD$ is inscribed in a circle $O$ whose center lies outside $ABCD$. We know that $\\angle AOB=144^\\circ$ and $\\angle CBD=27^\\circ$. The distance from $O$ to $AC\\cap BD$ is $20$. If $x$ is the distance from the midpoint of $AC$ to the midpoint of $BD$, calculate $x^2$."
+        },
+        {
+          "number": 13,
+          "problem": "Triangle $ABC$ has $BC^2=AB^2+AC\\cdot BC$ and $\\angle ACB=20^\\circ$. Find $\\angle BAC$."
+        },
+        {
+          "number": 14,
+          "problem": "On the coordinate plane, $P(x,y)$ lies inside the rectangle $ABCD$, where $A(0,0)$, $B(63,0)$, $C(63,56)$, $D(0,56)$. Find the minimum of $PA$, where $P$ satisfies the following: $x, y$ are integers, and $PA, PB, PC, PD$ are integers as well."
+        },
+        {
+          "number": 15,
+          "problem": "For all $k$, $a_k$ is an integer such that $0\\le a_k\\le 6$. Find the number of $(a_0,a_1,\\ldots,a_{100})$ such that $2016\\cdot 5^{96}=\\sum_{i=0}^{100}a_i5^i$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $ABCDEF$ be a regular hexagon (equal sides, equal angles). The circle $O_1$ has center $A$ and passes through $B$. The circle $O_2$ has center $D$ and passes through $B$. The circle $O_3$ has center $E$ and passes through $AD\\cap BF$. Let $O_1\\cap O_3=\\{G,H\\}$ and $O_2\\cap O_3=\\{J,K\\}$. If $GH=10$, find $JK^2$."
+        },
+        {
+          "number": 17,
+          "problem": "Find the maximal integer $n$ which satisfies the following: there exist positive integers $x, y$ such that\n$$(x^2+3xy+9y^2)^n=3^{400}(xy)^{398}.$$"
+        },
+        {
+          "number": 18,
+          "problem": "Find the maximal integer $p$ not greater than $1000$ which satisfies the following: there exists a positive integer $q$ such that the cubic equation $x^3-px^2+qx-(p^2-4q+4)=0$ has three roots which are all positive integers."
+        },
+        {
+          "number": 19,
+          "problem": "Find the number of $8$-tuples of sets $(S_1,S_2,\\ldots,S_8)$ which satisfy the following: $S_k\\subseteq\\{1,2,3,\\ldots,20\\}$ for all $1\\le k\\le 8$, and $S_k\\cap S_{k+1}=\\varnothing$ for all $1\\le k\\le 7$."
+        },
+        {
+          "number": 20,
+          "problem": "Quadrilateral $ABCD$ is inscribed in a circle with center $O$, and $E=AB\\cap CD$. Let $M$ be the midpoint of $CD$, and let $F$ be the second intersection of the circumcircles of $BEC$ and $OEM$. If $\\angle OAE=75^\\circ$, $\\angle OFD=25^\\circ$, $\\angle FDA=20^\\circ$, find $\\angle FEC-\\angle DAC$."
+        }
+      ]
+    }
+  ]
+}

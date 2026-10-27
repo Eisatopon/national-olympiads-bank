@@ -334,6 +334,8 @@
     --alr: #9a4f2b; --alr-ink: #6e3519; --alr-tint: #f6ebe4;
     --mdu: #4a6b8a; --mdu-ink: #2f4a63; --mdu-tint: #e8eef4;
     --alr2: #7a5c3e; --alr2-ink: #553f29; --alr2-tint: #f3ece5;
+    --kr1: #2f5d9e; --kr1-ink: #1f3f6e; --kr1-tint: #e7eef8;
+    --krj: #5b4a9e; --krj-ink: #3e3170; --krj-tint: #eeebf7;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -603,6 +605,8 @@
 .f-alr { --f: var(--alr); --f-ink: var(--alr-ink); --f-tint: var(--alr-tint); }
 .f-mdu { --f: var(--mdu); --f-ink: var(--mdu-ink); --f-tint: var(--mdu-tint); }
 .f-alr2 { --f: var(--alr2); --f-ink: var(--alr2-ink); --f-tint: var(--alr2-tint); }
+.f-kr1 { --f: var(--kr1); --f-ink: var(--kr1-ink); --f-tint: var(--kr1-tint); }
+.f-krj { --f: var(--krj); --f-ink: var(--krj-ink); --f-tint: var(--krj-tint); }
 
 /* ==========================================================
    Base
@@ -1153,7 +1157,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261027-georg-mohr-withdrawn';
+const DATA_VERSION = '20261027-korea-kmo-r1-kjmo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1399,6 +1403,8 @@ REGION_OF.grpan = 'europe';
 REGION_OF.alr = 'europe';
 REGION_OF.mdu = 'europe';
 REGION_OF.alr2 = 'europe';
+REGION_OF.kr1 = 'asia';
+REGION_OF.krj = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1423,6 +1429,8 @@ const COUNTRIES = [
     { key: 'in', name: 'India',      flag: '🇮🇳', file: 'India-inmo-problems.json',       kind: 'years' },
     { key: 'kr', name: 'S. Korea KMO', flag: '🇰🇷', file: 'Korea-kmo-problems.json',        kind: 'years' },
     { key: 'kf', name: 'S. Korea FKMO', flag: '🇰🇷', file: 'Korea-fkmo-problems.json', kind: 'years' },
+    { key: 'kr1', name: 'S. Korea KMO Round 1', flag: '🇰🇷', file: 'Korea-kmo-round1-problems.json', kind: 'years', full: "Korean Mathematical Olympiad, First Round" },
+    { key: 'krj', name: 'S. Korea KJMO', flag: '🇰🇷', file: 'Korea-kjmo-problems.json', kind: 'years', full: "Korean Junior Mathematical Olympiad" },
     { key: 'id', name: 'Indonesia', flag: '🇮🇩', file: 'Indonesia-osn-problems.json', kind: 'years' },
     { key: 'br', name: 'Brazil', flag: '🇧🇷', file: 'Brazil-obm-problems.json', kind: 'years' },
     { key: 'br2', name: 'Brazil OBM Level 2', flag: '🇧🇷', file: 'Brazil-obm-n2-problems.json', kind: 'years', full: "Brazilian Mathematical Olympiad (OBM), Level 2 (grades 8-9), final phase" },
