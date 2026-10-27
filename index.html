@@ -333,6 +333,7 @@
     --hil: #3d6b5a; --hil-ink: #24423a; --hil-tint: #e3f0eb;
     --grpan: #1f5fa8; --grpan-ink: #123b6b; --grpan-tint: #e2ecf8;
     --alr: #9a4f2b; --alr-ink: #6e3519; --alr-tint: #f6ebe4;
+    --mdu: #4a6b8a; --mdu-ink: #2f4a63; --mdu-tint: #e8eef4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -601,6 +602,7 @@
 .f-hil { --f: var(--hil); --f-ink: var(--hil-ink); --f-tint: var(--hil-tint); }
 .f-grpan { --f: var(--grpan); --f-ink: var(--grpan-ink); --f-tint: var(--grpan-tint); }
 .f-alr { --f: var(--alr); --f-ink: var(--alr-ink); --f-tint: var(--alr-tint); }
+.f-mdu { --f: var(--mdu); --f-ink: var(--mdu-ink); --f-tint: var(--mdu-tint); }
 
 /* ==========================================================
    Base
@@ -1151,7 +1153,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261027-albania-round3';
+const DATA_VERSION = '20261027-mathematical-duel';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1396,6 +1398,7 @@ REGION_OF.tr1 = 'europe';
 REGION_OF.hil = 'europe';
 REGION_OF.grpan = 'europe';
 REGION_OF.alr = 'europe';
+REGION_OF.mdu = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1606,6 +1609,7 @@ const COUNTRIES = [
     { key: 'bx', name: 'Benelux MO', flag: '🇪🇺', file: 'Benelux-bxmo-problems.json', kind: 'years', scope: 'regional', full: 'Benelux Mathematical Olympiad' },
     { key: 'nmc', name: 'Nordic MC', flag: '🇪🇺', file: 'Nordic-nmc-problems.json', kind: 'years', scope: 'regional', full: 'Nordic Mathematical Contest' },
     { key: 'cps', name: 'CPS Match', flag: '🇪🇺', file: 'Cps-match-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Match', group: 'CPS' },
+    { key: 'mdu', name: 'Mathematical Duel', flag: '🇪🇺', file: 'Mathematical-duel-problems.json', kind: 'years', scope: 'regional', full: "Mathematical Duel (Czech\u2013Polish\u2013Austrian gymnasia), Category A" },
     { key: 'cpsj', name: 'CPS Junior', flag: '🇪🇺', file: 'Cps-junior-problems.json', kind: 'years', scope: 'regional', full: 'Czech-Polish-Slovak Junior Match', group: 'CPS' },
     { key: 'apmc', name: 'Austrian–Polish MC', flag: '🇪🇺', file: 'Austrian-polish-problems.json', kind: 'years', scope: 'regional', full: "Austrian\u2013Polish Mathematics Competition" },
     { key: 'dan', name: 'Danube Competition', flag: '🇪🇺', file: 'Danube-problems.json', kind: 'years', scope: 'regional', group: 'Danube', groupName: 'Danube Competition', sub: 'Senior', full: "Danube Mathematical Competition, Seniors" },
