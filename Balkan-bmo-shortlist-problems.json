@@ -2,6 +2,411 @@
   "competition": "Balkan Mathematical Olympiad Shortlist",
   "years": [
     {
+      "year": 2008,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 1,
+          "problem": "For all positive real numbers $\\alpha_1,\\alpha_2,\\alpha_3$ prove that $$\\frac{1}{2\\nu\\alpha_1+\\alpha_2+\\alpha_3}+\\frac{1}{\\alpha_1+2\\nu\\alpha_2+\\alpha_3}+\\frac{1}{\\alpha_1+\\alpha_2+2\\nu\\alpha_3}>\\frac{2\\nu}{2\\nu+1}\\left(\\frac{1}{\\nu\\alpha_1+\\nu\\alpha_2+\\alpha_3}+\\frac{1}{\\alpha_1+\\nu\\alpha_2+\\nu\\alpha_3}+\\frac{1}{\\nu\\alpha_1+\\alpha_2+\\nu\\alpha_3}\\right),$$ for every positive real number $\\nu$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 2,
+          "problem": "Is there a sequence $a_1,a_2,\\ldots$ of positive real numbers such that $\\sum_{i=1}^{n}a_i\\leq n^2$ and $\\sum_{i=1}^{n}\\frac{1}{a_i}\\leq 2008$ for any positive integer $n$?"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 3,
+          "problem": "Let $(a_m)$ be a sequence satisfying $$a_n\\geq 0,\\quad n=0,1,2,3,\\ldots$$ $$\\exists A>0,\\ a_m-a_{m+1}\\geq Aa_m^2,\\quad m\\geq 0,\\ m\\in\\mathbb{N}.$$ Prove that there exists $B>0$ such that $$a_n\\leq\\frac{B}{n},\\quad n=1,2,3,\\ldots$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 4,
+          "problem": "We consider the set $\\mathbb{C}^{\\nu}=\\{(z_1,z_2,\\ldots,z_\\nu):z_1,z_2,\\ldots,z_\\nu\\in\\mathbb{C}\\}$, $\\nu\\geq 2$, and the function $\\varphi:\\mathbb{C}^{\\nu}\\to\\mathbb{C}^{\\nu}$ mapping every element $(z_1,z_2,\\ldots,z_\\nu)\\in\\mathbb{C}^{\\nu}$ to $$\\varphi(z_1,z_2,\\ldots,z_\\nu)=(z_1-z_2,z_2-z_3,\\ldots,z_\\nu-z_1).$$ We also consider the $\\nu$-tuple $(w_0,w_1,w_2,\\ldots,w_{\\nu-1})\\in\\mathbb{C}^{\\nu}$ of the $\\nu$-th roots of $-1$, where $$w_\\mu=\\cos\\left(\\frac{\\pi+2\\mu\\pi}{\\nu}\\right)+i\\sin\\left(\\frac{\\pi+2\\mu\\pi}{\\nu}\\right),\\quad \\mu=0,1,2,\\ldots,\\nu-1.$$ Let after $\\kappa$, $\\kappa\\in\\mathbb{N}^*$ successive applications of the function $\\varphi$ to the element $(w_0,w_1,w_2,\\ldots,w_{\\nu-1})$, we obtain the element $$\\varphi^{(\\kappa)}(w_0,w_1,w_2,\\ldots,w_{\\nu-1})\\equiv(\\underbrace{\\varphi\\circ\\varphi\\circ\\cdots\\circ\\varphi}_{\\kappa\\text{-times}})(w_0,w_1,w_2,\\ldots,w_{\\nu-1})=(Z_{\\kappa 1},Z_{\\kappa 2},\\ldots,Z_{\\kappa\\nu}).$$ Determine:\n(i) the values of $\\nu$ for which all coordinates of $\\varphi^{(\\kappa)}(w_0,w_1,w_2,\\ldots,w_{\\nu-1})$ have measure less or equal to $1$,\n(ii) for $\\nu=4$, the minimal value of $\\kappa\\in\\mathbb{N}^*$ for which: $$|Z_{\\kappa i}|\\geq 2^{100},\\quad\\text{for every } i=1,2,3,4.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 5,
+          "problem": "Consider an integer $n\\geq 1$, $a_1,a_2,\\ldots,a_n$ real numbers in $[-1,1]$ satisfying $a_1+a_2+\\cdots+a_n=0$ and a function $f:[-1,1]\\to\\mathbb{R}$ such that $$|f(x)-f(y)|\\leq|x-y|$$ for every $x,y$ in $[-1,1]$. Prove that $$\\left|f(x)-\\frac{f(a_1)+f(a_2)+\\cdots+f(a_n)}{n}\\right|\\leq 1$$ for every $x$ in the interval $[-1,1]$.\nFor a given sequence $a_1,a_2,\\ldots,a_n$, find $f$ and $x$ so that equality holds."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 6,
+          "problem": "Prove that if $x$, $y$, $z$ are positive real numbers such that $xy$, $yz$, and $zx$ are lengths of the side of the triangle and $k\\in\\,]-1,1[$ then the inequality $$\\frac{\\sqrt{xy}}{\\sqrt{xz+yz+kxy}}+\\frac{\\sqrt{yz}}{\\sqrt{xy+xz+kyz}}+\\frac{\\sqrt{zx}}{\\sqrt{xy+yz+kzx}}\\geq 2\\sqrt{1-k}$$ is true. In which conditions the equality is hold."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 7,
+          "problem": "Let $x,y,z,t$ be non-negative reals. Show that $$\\sqrt{xy}+\\sqrt{xz}+\\sqrt{xt}+\\sqrt{yz}+\\sqrt{yt}+\\sqrt{zt}\\geq 3\\sqrt[3]{xyz+xyt+xzt+yzt}.$$ Find all cases when equality holds."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 1,
+          "problem": "All $n+3$ offices of University of Somewhere are numbered with numbers $0,1,2,\\ldots,n+1,n+2$, for some $n\\in\\mathbb{N}$. One day, Professor $D$ came up with a polynomial with real coefficients and power $n$. Then, on the door of every office he wrote the value of that polynomial evaluated in the number assigned to that office. On the $i$-th office, for $i\\in\\{0,1,2,\\ldots,n+1\\}$, he wrote $2^i$, and on the $(n+2)$nd office he wrote $2^{n+2}-n-3$.\na) Prove that Professor $D$ made a calculation error.\nb) Assuming that Professor $D$ made a calculation error, what is the smallest number of errors he made? Prove that in this case the errors are uniquely determined, find them and correct them!"
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 2,
+          "problem": "In one of the countries there are $n\\geq 5$ cities operated by two airline companies. Every two cities are operated in both directions by at most one of the companies. The government introduced a restriction that all round trips that a company can offer should have at least six cities. Prove that there are no more than $\\left[\\frac{n^2}{3}\\right]$ flights offered by these companies."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 3,
+          "problem": "Let $n$ be positive integer. The rectangle $ABCD$ with sides $AB=90n+1$ and $BC=90n+5$ is divided into unit squares by lines which are parallel to its sides. Prove that the number of the different lines which pass through at least two vertices of the unit squares is divisible to $4$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 4,
+          "problem": "An array $n\\times n$ is given, consisting of $n^2$ unit squares. A pawn is placed arbitrarily on an unit square. A move of the pawn means a jump from a square of the $k$-th column to any square of the $k$-th row. Show that there exists a sequence of $n^2$ moves of the pawn so that all the unit squares of the array are visited once and, in the end, the pawn returns to the original position."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 1,
+          "problem": "In acute angled triangle $ABC$ we denote by $a,b,c$ the side lengths, by $m_a,m_b,m_c$ the median lengths and by $r_{bc},r_{ca},r_{ab}$ the radii of the circles tangents to two sides and to circumscribed circle of the triangle, respectively. Prove that $$\\frac{m_a^2}{r_{bc}}+\\frac{m_b^2}{r_{ac}}+\\frac{m_c^2}{r_{ab}}\\geq\\frac{27\\sqrt{3}}{8}\\sqrt[3]{abc}.$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 2,
+          "problem": "A non-isosceles acute triangle $ABC$ is given with $AC>BC$ and $H$ the point of intersection of the heights $AZ$ and $CM$. We call point $P$ on $AB$ such that $AM=PM$ and $N$ the midpoint of $AC$. If $O$ the circumcentre of the triangle $ABC$ and $K\\equiv PH\\cap BC$, $X\\equiv ON\\cap MK$, $T\\equiv OM\\cap AC$, prove that the points $M,N,T,X$ are lie on the same circumference."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 3,
+          "problem": "We draw two lines $(\\ell_1)$, $(\\ell_2)$ through the orthocenter $H$ of the triangle $ABC$ such that each one is dividing the triangle into two figures of equal area and equal perimeters. Find the angles of the triangle."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 4,
+          "problem": "A triangle $ABC$ is given with barycentre $G$ and circumcentre $O$. The perpendicular bisectors of $GA$, $GB$ meet at $C_1$, of $GB$, $GC$ meet at $A_1$ and $GC$, $GA$ meet at $B_1$. Prove that $O$ is the barycenter of the triangle $A_1B_1C_1$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 5,
+          "problem": "The circle $k_a$ touches the extensions of sides $AB$ and $BC$, as well as the circumscribed circle of the triangle $ABC$ (from the outside). We denote the intersection of $k_a$ with the circumscribed circle of the triangle $ABC$ by $A'$. Analogously, we define points $B'$ and $C'$. Prove that the lines $AA'$, $BB'$ and $CC'$ intersect in one point."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 6,
+          "problem": "On triangle $ABC$ the $AM$ ($M\\in BC$) is median and $BB_1$ and $CC_1$ ($B_1\\in AC$, $C_1\\in AB$) are altitudes. The straight line $d$ is perpendicular to $AM$ at the point $A$ and intersect the lines $BB_1$ and $CC_1$ at the points $E$ and $F$ respectively. Let denoted with $\\omega$ the circle passing through the points $E$, $M$ and $F$ and with $\\omega_1$ and with $\\omega_2$ the circles that are tangent to segment $EF$ and with $\\omega$ at the arc $EF$ which is not contain the point $M$. If the points $P$ and $Q$ are intersections points for $\\omega_1$ and $\\omega_2$ then prove that the points $P$, $Q$ and $M$ are collinear."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 7,
+          "problem": "In the non-isosceles triangle $ABC$ consider the points $X$ on $[AB]$ and $Y$ on $[AC]$ such that $[BX]=[CY]$. $M$ and $N$ are the midpoints of the segments $[BC]$, respectively $[XY]$, and the straight lines $XY$ and $BC$ meet in $K$. Prove that the circumcircle of triangle $KMN$ contains a point, different from $M$, which is independent of the position of the points $X$ and $Y$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 8,
+          "problem": "Let $P$ be a point in the interior of a triangle $ABC$ and let $d_a,d_b,d_c$ be its distances to $BC,CA,AB$ respectively. Prove that $$\\max(AP,BP,CP)\\geq\\sqrt{d_a^2+d_b^2+d_c^2}.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 1,
+          "problem": "Prove that for every natural number $a$ there exists a natural number that has the number $a$ (the sequence of digits that constitute $a$) at its beginning, and which decreases $a$ times when $a$ is moved from its beginning to its end (any number zeros that appear in the beginning of the number obtained in this way are to be removed).\nFor example, for $a=4$ we have $\\underline{4}10256=4\\cdot 10256\\underline{4}$; for $a=46$ we have $$\\underline{46}0100021743857360295716=46\\cdot 100021743857360295716\\underline{46};$$ for $a=58$ we have $$\\underline{58}0100017244352474564=58\\cdot 100017244352474564\\underline{58}.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 2,
+          "problem": "Let $a$ be a positive integer. The sequence $\\{a_n\\}_{n=1}^{\\infty}$ is defined by $a_1=a$, $a_{k+1}=a_k^2+a_k+a^3$ for every positive integer $k\\geq 1$. Find all values of $a$ for which there exists a positive integer $n$ such that $a_n^2+a^3$ is a $m$-th power, $m\\geq 2$, $m\\in\\mathbb{N}$, of a positive integer."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 3,
+          "problem": "The sequence $(x_n)_{n=1}^{\\infty}$ is given by $$x_{n+1}=x_n+x_{\\lceil n/2\\rceil},\\quad x_1=1.$$ Proof that none of the members of the sequence is divisible by $4$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 4,
+          "problem": "Solve in the prime numbers the equation $$xyz+1=2^{y^2+1}.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 5,
+          "problem": "Let $\\{a_n\\}$ be the sequence with $a_1=0$ and $a_{n+1}=2+a_n$ for odd $n$ and $a_{n+1}=2a_n$ for even $n$. Prove that for each prime $p>3$ the number $$b=\\frac{2^{2p}-1}{3}$$ divides $a_n$ for the infinitely many values of $n$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 6,
+          "problem": "Let $(x_n)$, $n=1,2,3,\\ldots$ be a sequence defined by $x_1=2008$ and $$x_1+x_2+\\cdots+x_{n-1}=\\left(n^2-1\\right)x_n,\\quad\\text{for every } n\\geq 2.$$ Let, also, the sequence $a_n=x_n+\\frac{1}{n}S_n$, $n=1,2,3,\\ldots$ where $S_n=x_1+x_2+\\cdots+x_n$. Determine the values of $n$ for which the terms of the sequence $a_n$ are perfect squares of an integer."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 1,
+          "problem": "Let $N\\in\\mathbb{N}^*$ and $x_k\\in[-1,1]$, $1\\leq k\\leq N$, such that $\\sum_{k=1}^{N}x_k=s$. Find all possible values of $$\\sigma=\\sum_{k=1}^{N}|x_k|.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 2,
+          "problem": "Let $n\\in\\mathbb{N}^*$ and $x_k\\in[-1,1]$, $1\\leq k\\leq 2n$, such that $\\sum_{k=1}^{2n}x_k$ is an odd integer. Prove that $$1\\leq\\sum_{k=1}^{2n}|x_k|\\leq 2n-1.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 3,
+          "problem": "Let $ABCD$ be a square, and points $M\\in(BC)$, $N\\in(CD)$, $P\\in(DA)$, such that $\\angle BAM=x$, $\\angle CMN=2x$, $\\angle DNP=3x$.\ni) Show that, for any $x\\in\\left(0,\\frac{\\pi}{8}\\right)$, such a configuration exists;\nii) Determine the number of angles $x\\in\\left(0,\\frac{\\pi}{8}\\right)$ for which $\\angle APB=4x$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 4,
+          "problem": "Denote by $S(x)$ the sum of the digits of positive integer $x$ written in decimal notation. For $k$ a fixed positive integer, define a sequence $(x_n)_{n\\geq 1}$ by $x_1=1$ and $x_{n+1}=S(kx_n)$ for all positive integers $n$. Prove that $x_n<27\\sqrt{k}$ for all positive integers $n$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 5,
+          "problem": "Find all functions $f:\\mathbb{Z}_+^*\\to\\mathbb{Z}_+^*$ such that $$f\\left(f(m)^2+2f(n)^2\\right)=m^2+2n^2\\quad\\text{for any } m,n\\in\\mathbb{Z}_+^*.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 6,
+          "problem": "Given the monic polynomial $P(x)=x^N+a_{N-1}x^{N-1}+\\cdots+a_1x+a_0\\in\\mathbb{R}[x]$, of even degree $N=2n$, and having all real positive roots $x_i$, $i=1,2,\\ldots,N$, prove that, for any $c\\in\\left[0,\\min_{1\\leq i\\leq N}x_i\\right)$, the following inequality holds: $c+\\sqrt[N]{P(c)}\\leq\\sqrt[N]{a_0}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 7,
+          "problem": "Find all functions $f:\\mathbb{Z}^*\\to\\mathbb{Z}_+$ satisfying both of the following\ni) For every $a,b\\in\\mathbb{Z}^*$ with also $a+b\\in\\mathbb{Z}^*$, $f(a+b)\\geq\\min\\{f(a),f(b)\\}$;\nii) For every $a,b\\in\\mathbb{Z}^*$, $f(ab)=f(a)+f(b)$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 8,
+          "problem": "Let $n\\geq 2$ be a positive integer and $P(X)=c_0X^n+c_1X^{n-1}+\\cdots+c_{n-1}X+c_n$ be a polynomial with integer coefficients, such that $|c_n|$ is a prime number and $$|c_0|+|c_1|+|c_2|+\\cdots+|c_{n-1}|<|c_n|.$$ Prove that the polynomial $P(X)$ is irreducible in the set of polynomials with integer coefficients."
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 9,
+          "problem": "For every positive integer $m$ and for all non-negative real numbers $x,y,z$ denote $$K_m=x(x-y)^m(x-z)^m+y(y-x)^m(y-z)^m+z(z-x)^m(z-y)^m.$$\na) Prove that $K_m\\geq 0$ for every odd positive integer $m$;\nb) Let $M=(x-y)^2(y-z)^2(z-x)^2$. Prove that $K_7+M^2\\cdot K_1\\geq M\\cdot K_2$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 1,
+          "problem": "A rectangle $9\\times 12$ is partitioned into unit squares, and the centers of all the squares, except for the four corner squares and the eight squares adjacent to them, are colored in red. Is it possible to draw a closed broken line that has the following properties:\n1) Has all the $96$ red points as its vertices, and them only;\n2) Has all its edges of length $\\sqrt{13}$;\n3) Has central symmetry?"
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 2,
+          "problem": "Let $A_1,A_2,\\ldots,A_m$ be subsets of the set $\\{1,2,\\ldots,n\\}$, such that the cardinal of each subset $A_i$ ($1\\leq i\\leq m$) is not divisible by $30$, while the cardinal of each of the subsets $A_i\\cap A_j$ ($1\\leq i,j\\leq m$, $i\\neq j$) is divisible by $30$. Prove that $$2m-\\left\\lfloor\\frac{m}{30}\\right\\rfloor\\leq 3n.$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 1,
+          "problem": "In the triangle $ABC$, $\\angle BAC$ is acute, the angle bisector of $\\angle BAC$ meets $BC$ at $D$, $K$ is the foot of the perpendicular from $B$ to $AC$, and $\\angle ADB=45^\\circ$. Point $P$ lies between $K$ and $C$ such that $\\angle KDP=30^\\circ$. Point $Q$ lies on the ray $DP$ such that $DQ=DK$. The perpendicular at $P$ to $AC$ meets $KD$ at $L$. Prove that $PL^2=DQ\\cdot PQ$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 2,
+          "problem": "A convex hexagon $ABCDEF$ is inscribed in a circle. Prove that if $$AB\\cdot CF=2BC\\cdot FA,\\quad CD\\cdot EB=2BE\\cdot BC\\quad\\text{and}\\quad EF\\cdot AD=2FA\\cdot DE$$ then the lines $AD$, $BE$ and $CF$ are concurrent."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 3,
+          "problem": "Let $ABCD$ be a convex quadrilateral, and $P$ be a point in its interior. The projections of $P$ on the sides of the quadrilateral lie on a circle with center $O$. Show that $O$ lies on the line through the midpoints of $AC$ and $BD$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 4,
+          "problem": "In the triangle $ABC$ the points $M$ and $N$ lie on the sides $AB$ and $AC$ respectively, such that line $MN$ is parallel to line $BC$. The segment $BN$ meets the segment $CM$ at the point $P$. The circumcircles of the triangles $BMP$ and $CNP$ have a common point $Q$ (other than $P$). Prove that $\\angle BAQ=\\angle CAP$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 5,
+          "problem": "Let $AB\\Gamma\\Delta$ be a convex quadrilateral and $\\Sigma$ an arbitrary point in its interior. Let also $E$ be the symmetric point of $\\Sigma$ with respect to the middle $K$ of the side $AB$ and let $Z$ be the symmetric point of $\\Sigma$ with respect to the midpoint $\\Lambda$ of the side $\\Gamma\\Delta$. Prove that: $$(AE\\Gamma Z)=(EBZ\\Delta)=(AB\\Gamma\\Delta).$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 6,
+          "problem": "Two unequal circles $(c_1)$, $(c_2)$ are intersected at the points $M$ and $N$. Let $AB$ the common tangent to the two circles, close to point $M$ and $C$, $D$ the symmetric points of $A$ and $B$ with respect to $M$, respectively. The circumcircle of the triangle $DCM$ intersects the circles $(c_1)$, $(c_2)$ at the points $E$ and $Z$ respectively. Prove that the circumcircles of the triangles $MEZ$ and $NEZ$ are equal."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 1,
+          "problem": "Solve in integer numbers the equation $$y^3=8x^6+2x^3y-y^2.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 2,
+          "problem": "Solve in positive integers the equation $$3^x-5^y=z^2.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 3,
+          "problem": "Determine all integers $1\\leq m$, $1\\leq n\\leq 2009$, for which $$\\prod_{i=1}^{n}\\left(i^3+1\\right)=m^2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 1,
+          "problem": "Let $a,b,c$ be positive real numbers. Prove that $$\\frac{a^2b(b-c)}{a+b}+\\frac{b^2c(c-a)}{b+c}+\\frac{c^2a(a-b)}{c+a}\\geq 0.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 2,
+          "problem": "Let the sequence $(a_n)_{n\\in\\mathbb{N}^*}$ is given with $a_1=2$ and $a_{n+1}=a_n^2-a_n+1$. Find the minimum real number $L$ such that for every $k\\in\\mathbb{N}^*$ $$\\sum_{i=1}^{k}\\frac{1}{a_i}<L.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 3,
+          "problem": "Let $a,b,c,d$ be positive real numbers. Prove the inequality $$\\left(\\frac{a}{a+b}\\right)^5+\\left(\\frac{b}{b+c}\\right)^5+\\left(\\frac{c}{c+d}\\right)^5+\\left(\\frac{d}{d+a}\\right)^5\\geq\\frac{1}{8}.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Algebra",
+          "number": 4,
+          "problem": "Let $n>2$ be a positive integer. Consider all numbers $S$ of the form $$S=a_1a_2+a_2a_3+\\cdots+a_{k-1}a_k,$$ with $k>1$, and $a_i$ being positive integers such that $a_1+a_2+\\cdots+a_k=n$. Determine all numbers that can be represented in the given form."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 1,
+          "problem": "In a soccer tournament each team plays exactly one game with all others. The winner gets $3$ points, the loser zero and each team gets $1$ point in case of a draw.\nIt is known that $n$ teams ($n\\geq 3$) took part in a tournament and the final classification is given by an arithmetical progression of points, the last team having only $1$ point.\na) Prove that this is not possible in the Championship of the Republic of Moldova (with $n=12$).\nb) Find all values of $n$ and all configurations when this is possible."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 2,
+          "problem": "A grasshopper jumps on the plane from an integer point (point with all integer coordinates) to another integer point according to the following rules: His first jump is of length $\\sqrt{98}$, his second jump is of length $\\sqrt{149}$, his next jump is of length $\\sqrt{98}$, and so on, alternatively. What is the least possible odd number of moves in which the grasshopper could return to his starting point?"
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 3,
+          "problem": "By a strip of breadth $b$ we mean a closed part of the plane consisting of all points that lie between two parallel lines at distance $b$ from each other. Let $S$ be a finite set of $n$ ($n\\geq 4$) points in the plane, such that any three points from $S$ can be covered by a strip of breadth $1$. Prove that $S$ can be covered by a strip of breadth $2$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 4,
+          "problem": "Integers are written in the cells of a table $2010\\times 2010$. Adding $1$ to all the numbers in a row or in a column is called a move. We say that the table is equilibrium if one can obtain after finitely many moves a table in which all the numbers are equal.\na) Find the largest positive integer $n$, for which there exists an equilibrium table containing the numbers $2^0,2^1,\\ldots,2^n$.\nb) For this $n$, find the maximal number that may be contained in such a table."
+        },
+        {
+          "day": 2,
+          "paper_label": "Combinatorics",
+          "number": 5,
+          "problem": "A train consists of $2010$ wagons containing gold coins, all of the same shape. Any two coins have equal weight provided that they are in the same wagon, and differ in weight if they are in different ones. The weight of a coin is one of the positive reals $m_1<m_2<\\cdots<m_{2010}$. Each wagon is marked by a label with one of the numbers $m_1,m_2,\\ldots,m_{2010}$ (the numbers on different labels are different).\nA controller has a pair of scales (allowing only to compare masses) at his disposal. During each measurement he can use an arbitrary number of coins from any of the wagons. The controller has the task to establish: if all labels show rightly the common weight of the coins in a wagon or if there exists at least one wrong label. What is the least number of measurements that the controller has to perform to accomplish his task?"
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 1,
+          "problem": "Let $ABCDE$ be a pentagon with $\\angle A=\\angle B=\\angle C=\\angle D=120^\\circ$. Prove that $$4AC\\cdot BD\\geq 3AE\\cdot ED.$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 2,
+          "problem": "Consider a cyclic quadrilateral such that the midpoints of its sides form another cyclic quadrilateral. Prove that the area of the smaller circle is less than or equal to half the area of the bigger circle."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 3,
+          "problem": "The incircle of a triangle $A_0B_0C_0$ touches the sides $B_0C_0$, $C_0A_0$, $A_0B_0$ at the points $A$, $B$, $C$, respectively, and the incircle of the triangle $ABC$ with incenter $I$ touches the sides $BC$, $CA$, $AB$ at the points $A_1$, $B_1$, $C_1$, respectively. Let $\\sigma(ABC)$ and $\\sigma(A_1B_1C)$ be the areas of the triangles $ABC$ and $A_1B_1C$ respectively. Show that if $\\sigma(ABC)=2\\sigma(A_1B_1C)$, then the lines $AA_0$, $BB_0$, $IC_1$ pass through a common point."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 4,
+          "problem": "Let $ABC$ be a given triangle and $l$ be a line that meets the lines $BC$, $CA$ and $AB$ in $A_1$, $B_1$ and $C_1$ respectively. Let $A'$ be the midpoint of the segment connecting the projections of $A_1$ onto the lines $AB$ and $AC$. Construct analogously the points $B'$ and $C'$.\n(a) Show that the points $A'$, $B'$ and $C'$ are collinear on some line $l'$.\n(b) Show that if $l$ contains the circumcenter of the triangle $ABC$, then $l'$ contains the center of its Euler circle."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 5,
+          "problem": "Let $ABC$ be an acute-angled triangle. Let $M$ be the middle of $AC$, $CC'$ the height of $ABC$, and $H'$ the point symmetric to the orthocenter of $ABC$ over the line $AB$. Let points $P$, $Q$ and $R$ be orthogonal projections of $C'$ to lines $AH'$, $AC$ and $CB$, respectively, and let $S$ be the center of circumscribed circle of the triangle $PQR$. Prove that the point symmetrical to $M$ over $S$ is on the segment $BH'$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 6,
+          "problem": "In a triangle $ABC$ the excircle at the side $BC$ touches $BC$ in point $D$ and the lines $AB$ and $AC$ in points $E$ and $F$ respectively. Let $P$ be the projection of $D$ on $EF$. Prove that the circumcircle $k$ of the triangle $ABC$ passes through $P$ if and only if $k$ passes through the midpoint $M$ of the segment $EF$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 7,
+          "problem": "A triangle $ABC$ is given. Let $M$ be the midpoint of the side $AC$ of the triangle and $Z$ the image of point $B$ along the line $BM$. The circle with center $M$ and radius $MB$ intersects the lines $BA$ and $BC$ at the points $E$ and $G$ respectively. Let $H$ be the point of intersection of $EG$ with the line $AC$, and $K$ the point of intersection of $HZ$ with the line $EB$. The perpendicular from point $K$ to the line $BH$, intersects the lines $BZ$ and $BH$ at the points $L$ and $N$, respectively.\nIf $P$ is the second point of intersection of the circumscribed circles of the triangles $KZL$ and $BLN$, prove that the lines $BZ$, $KN$ and $HP$ intersect at a common point."
+        },
+        {
+          "day": 3,
+          "paper_label": "Geometry",
+          "number": 8,
+          "problem": "Let $c(O,R)$ be a circle with diameter $AB$ and $C$ a point on it different than $A$ and $B$ such that $\\angle AOC>90^\\circ$. On the radius $OC$ we consider the point $K$ and the circle $(c_1)$ with center $K$ and radius $KC=R_1$. We draw the tangents $AD$ and $AE$ from $A$ to the circle $(c_1)$. Prove that the straight lines $AC$, $BK$ and $DE$ are concurrent."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 1,
+          "problem": "Is it possible to partition the set of all integer numbers into ordered triples in such a way that, for every triple $(a,b,c)$ the number $$\\left|a^3b+b^3c+c^3a\\right|$$ be a perfect square?"
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 2,
+          "problem": "Find all pairs of integers $(x,y)$, such that $x^3=2y^2+1$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Number Theory",
+          "number": 3,
+          "problem": "For a positive integer $n$, let $f(n)$ denote the sum of all positive integers that are not greater than $n$ and not relatively prime to $n$. Show that $f(n+p)\\neq f(n)$ for every positive integer $n$ and every prime $p$."
+        }
+      ]
+    },
+    {
       "year": 2012,
       "problems": [
         {
