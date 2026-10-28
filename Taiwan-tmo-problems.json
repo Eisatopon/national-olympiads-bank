@@ -177,6 +177,56 @@
       ]
     },
     {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a$ be rational and $b,c,d$ be real numbers, and let $f:\\mathbb{R}\\to[-1,1]$ be a function satisfying $$f(x+a+b)-f(x+b)=c\\left[x+2a+[x]-2[x+a]-[b]\\right]+d$$ for each $x$. Show that $f$ is periodic."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Given a line segment $AB$ in the plane, find all possible points $C$ such that in the triangle $ABC$, the altitude from $A$ and the median from $B$ have the same length."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\geq 3$ be an integer. Suppose that $a_1,a_2,\\ldots,a_n$ are real numbers such that $k_i=\\dfrac{a_{i-1}+a_{i+1}}{a_i}$ is a positive integer for all $i$. (Here $a_0=a_n$ and $a_{n+1}=a_1$.) Prove that $$2n\\leq k_1+k_2+\\cdots+k_n\\leq 3n.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $k=2^{2^n}+1$ for some $n\\in\\mathbb{N}$. Show that $k$ is prime if and only if $k$ divides $3^{\\frac{k-1}{2}}+1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $ABCD$ be a tetrahedron. Show that\n\n(a) If $AB=CD$, $AC=BD$ and $AD=BC$, then the triangles $ABC$, $ABD$, $ACD$, $BCD$ are acute.\n\n(b) If the triangles $ABC,ABD,ACD,BCD$ have the same area, then $AB=CD$, $AC=BD$, $AD=BC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Show that every number of the form $2^p3^q$, where $p,q$ are nonnegative integers, divides some number of the form $a_{2k}10^{2k}+a_{2k-2}10^{2k-2}+\\cdots+a_210^2+a_0$, where $a_{2i}\\in\\{1,2,\\ldots,9\\}$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Find all positive integers $k$ for which there exists a function $f:\\mathbb{N}\\to\\mathbb{Z}$ satisfying $f(1997)=1998$ and, for all $a,b$, $$f(ab)=f(a)+f(b)+kf(\\gcd(a,b)).$$"
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $O$ be the circumcenter and $R$ be the circumradius of an acute triangle $ABC$. Let $AO$ meet the circumcircle of $OBC$ again at $D$, $BO$ meet the circumcircle of $OCA$ again at $E$, and $CO$ meet the circumcircle of $OAB$ again at $F$. Show that $$OD\\cdot OE\\cdot OF\\geq 8R^3.$$"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "For $n\\geq k\\geq 3$, let $X=\\{1,2,\\ldots,n\\}$ and let $\\mathcal{F}_k$ be the family of $k$-element subsets of $X$, any two of which have at most $k-2$ elements in common. Show that there exists a subset $M_k$ of $X$ with at least $[\\log_2 n]+1$ elements containing no subset in $\\mathcal{F}_k$."
+        }
+      ]
+    },
+    {
       "year": 1998,
       "problems": [
         {
@@ -278,6 +328,41 @@
           "day": 2,
           "number": 6,
           "problem": "Define a function $f:\\mathbb{N}\\to\\mathbb{N}_0$ by $f(1)=0$ and $$f(n)=\\max_j\\{ f(j)+f(n-j)+j\\}\\quad\\text{for all } n\\ge 2.$$ Determine $f(2000)$."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $A=\\{a_1,a_2,\\ldots,a_n\\}$ be a set of $n\\geq 3$ distinct integers, and let $m$ and $M$ be the minimum and maximum element of $A$, respectively. Suppose that there exists a polynomial $p(x)$ with integer coefficients such that $$m<p(a)<M\\quad\\text{for all } a\\in A,\\text{ and}$$ $$p(m)<p(a)\\quad\\text{for all } a\\in A\\setminus\\{m,M\\}.$$ Prove that $n\\leq 5$ and that there exist two integers $b$ and $c$ such that each element of $A$ is a solution of the equation $p(x)+x^2+bx+c=0$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a_1,a_2,\\ldots,a_{15}$ be positive integers for which the number $a_k^{k+1}-a_k$ is not divisible by $17$ for any $k=1,\\ldots,15$. Show that there are integers $b_1,b_2,\\ldots,b_{15}$ such that\n\n(i) $b_m-b_n$ is not divisible by $17$ for $1\\leq m<n\\leq 15$, and\n\n(ii) each $b_i$ is a product of one or more terms of $(a_i)$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $A_1,A_2,\\ldots,A_n$ be distinct subsets of $S=\\{1,2,\\ldots,n\\}$. Prove that there is an element $x$ of $S$ such that the subsets $A_1\\setminus\\{x\\},\\ldots,A_n\\setminus\\{x\\}$ are also distinct."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\Gamma$ be the circumcircle of a fixed triangle $ABC$, and let $M$ and $N$ be the midpoints of the arcs $BC$ and $CA$, respectively. For any point $X$ on the arc $AB$, let $O_1$ and $O_2$ be the incenters of $\\triangle XAC$ and $\\triangle XBC$, and let the circumcircle of $\\triangle XO_1O_2$ intersect $\\Gamma$ at $X$ and $Q$. Prove that triangles $QNO_1$ and $QMO_2$ are similar, and find all possible locations of point $Q$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $x$ and $y$ be distinct real numbers, and let $f(n)$ be defined by $$f(n)=x^{n-1}+x^{n-2}y+x^{n-3}y^2+\\cdots+y^{n-1},\\quad n\\in\\mathbb{N}.$$ Prove that if $f(m),f(m+1),f(m+2),f(m+3)$ are integers for some $m\\in\\mathbb{N}$, then $f(n)$ is an integer for each $n$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Suppose that $n-1$ items $A_1,A_2,\\ldots,A_{n-1}$ have already been arranged in the increasing order, and that another item $A_n$ is to be inserted to preserve the order. What is the expected number of comparisons necessary to insert $A_n$?"
         }
       ]
     },
