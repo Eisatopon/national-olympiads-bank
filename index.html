@@ -820,7 +820,10 @@ body.lang-el .st-en { display: none; }
 .share-card { position: fixed; left: -10000px; top: 0; width: 760px; padding: 28px 32px 20px; background: #fff; color: #0f2a44; border-top: 6px solid var(--f, #245b86); font: 17px/1.6 var(--serif, Georgia, serif); }
 .share-card .sc-head { font: 700 18px/1.3 var(--sans); margin-bottom: 14px; }
 .share-card .statement img { max-width: 100%; }
-.share-card .sc-foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid #d6dee6; font: 13px/1.3 var(--sans); color: #4a5d70; }
+.share-card .sc-foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; padding-top: 10px; border-top: 1px solid #d6dee6; font: 13px/1.45 var(--sans); color: #4a5d70; }
+.share-card .sc-link { color: #0f2a44; font-weight: 600; }
+.share-card .sc-qr { flex: none; width: 84px; height: 84px; }
+.share-card .sc-qr svg { display: block; width: 84px; height: 84px; }
 .ai-note { margin: 6px 4px 2px; font-size: .75rem; color: var(--muted); }
 .ai-copy { margin-top: 6px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
@@ -1170,7 +1173,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261028-hongkong-prelim';
+const DATA_VERSION = '20261028-share-qr';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3363,7 +3366,6 @@ function shareActionHtml(p) {
         ['Viber', `viber://forward?text=${encodeURIComponent(label + '\n' + url)}`],
         ['Telegram', `https://t.me/share/url?url=${u}&text=${t}`],
         ['LinkedIn', `https://www.linkedin.com/sharing/share-offsite/?url=${u}`],
-        ['Gmail', `https://mail.google.com/mail/?view=cm&fs=1&su=${t}&body=${mail}`],
         ['Email', `mailto:?subject=${t}&body=${mail}`]
     ];
     return `<details class="ai-menu share-menu">
@@ -3426,12 +3428,28 @@ function shareFonts() {
         return css;
     })().catch(e => { shareFontCss = null; return ''; }));
 }
+// QR code generator (lazy, only for the picture): the QR on the card opens the problem, wherever the picture travels.
+let qrLoad = null;
+function loadQr() {
+    return qrLoad || (qrLoad = new Promise((resolve, reject) => {
+        const sc = document.createElement('script');
+        sc.src = 'https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js';
+        sc.onload = () => resolve(window.qrcode); sc.onerror = () => { qrLoad = null; reject(new Error('load')); };
+        document.head.appendChild(sc);
+    }));
+}
+function qrSvg(qrcode, text) {
+    const qr = qrcode(0, 'M');
+    qr.addData(text); qr.make();
+    return qr.createSvgTag({cellSize: 3, margin: 0, scalable: true});
+}
 async function problemImage(p) {
-    const lib = await loadHtmlToImage();
+    const [lib, qrcode] = await Promise.all([loadHtmlToImage(), loadQr().catch(() => null)]);
+    const link = problemLink(p);
     const node = document.createElement('div');
     node.className = 'share-card f-' + p.country;
     node.innerHTML = `<div class="sc-head">${esc(problemLabel(p))}</div><div class="statement">${bodyHtml(p.text, p)}</div>
-        <div class="sc-foot"><b>Pythagoras</b> – World Mathematical Olympiads Bank · eisatopon.github.io/national-olympiads-bank</div>`;
+        <div class="sc-foot"><div class="sc-text"><b>Pythagoras</b> – World Mathematical Olympiads Bank<br>Open this problem: <span class="sc-link">${esc(link.replace(/^https:\/\//, ''))}</span></div>${qrcode ? `<div class="sc-qr">${qrSvg(qrcode, link)}</div>` : ''}</div>`;
     document.body.appendChild(node);
     try {
         await typeset(node);
@@ -3447,13 +3465,16 @@ function shareImage(p) {
     // Phones: the share sheet takes the picture straight to Facebook, Viber, Messenger…
     if (matchMedia('(pointer: coarse)').matches && navigator.canShare && navigator.canShare({files: [new File([''], name, {type: 'image/png'})]})) {
         showToast('Preparing the image…');
-        blob.then(b => navigator.share({files: [new File([b], name, {type: 'image/png'})], title: problemLabel(p), text: problemLink(p)}).catch(e => { if (e.name !== 'AbortError') download(b); }))
+        blob.then(b => navigator.share({files: [new File([b], name, {type: 'image/png'})], title: problemLabel(p), text: `${problemLabel(p)}\n${problemLink(p)}`}).catch(e => { if (e.name !== 'AbortError') download(b); }))
             .catch(() => showToast('Could not create the image.'));
         return;
     }
     try {
         // The ClipboardItem gets the promise at once, so Safari keeps the click as the user gesture.
-        navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
+        // The link goes along as text where the target accepts both (e-mail, chat, documents).
+        const text = new Blob([`${problemLabel(p)}\n${problemLink(p)}`], {type: 'text/plain'});
+        const copy = items => navigator.clipboard.write([new ClipboardItem(items)]);
+        copy({'image/png': blob, 'text/plain': text}).catch(() => copy({'image/png': blob}))
             .then(() => showToast('Image copied — paste it into your post (Ctrl+V).'))
             .catch(() => blob.then(download, () => showToast('Could not create the image.')));
         showToast('Preparing the image…');
