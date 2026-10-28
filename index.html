@@ -337,6 +337,7 @@
     --kr1: #2f5d9e; --kr1-ink: #1f3f6e; --kr1-tint: #e7eef8;
     --krj: #5b4a9e; --krj-ink: #3e3170; --krj-tint: #eeebf7;
     --bds: #3e7d5a; --bds-ink: #28543c; --bds-tint: #e6f2eb;
+    --hkp: #3d7a8c; --hkp-ink: #1f4a57; --hkp-tint: #e3f1f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -609,6 +610,7 @@
 .f-kr1 { --f: var(--kr1); --f-ink: var(--kr1-ink); --f-tint: var(--kr1-tint); }
 .f-krj { --f: var(--krj); --f-ink: var(--krj-ink); --f-tint: var(--krj-tint); }
 .f-bds { --f: var(--bds); --f-ink: var(--bds-ink); --f-tint: var(--bds-tint); }
+.f-hkp { --f: var(--hkp); --f-ink: var(--hkp-ink); --f-tint: var(--hkp-tint); }
 
 /* ==========================================================
    Base
@@ -1168,7 +1170,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261028-greece-emo-1985-1988';
+const DATA_VERSION = '20261028-hongkong-prelim';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1417,6 +1419,7 @@ REGION_OF.alr2 = 'europe';
 REGION_OF.kr1 = 'asia';
 REGION_OF.krj = 'asia';
 REGION_OF.bds = 'asia';
+REGION_OF.hkp = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1508,6 +1511,7 @@ const COUNTRIES = [
     { key: 'det', name: 'Germany TST', flag: '🇩🇪', file: 'Germany-tst-problems.json', kind: 'years', full: "Germany IMO Selection Exams (Auswahlklausuren)" },
     { key: 'hk', name: 'Hong Kong', flag: '🇭🇰', file: 'HongKong-chkmo-problems.json', kind: 'years' },
     { key: 'hkt', name: 'Hong Kong TST', flag: '🇭🇰', file: 'HongKong-tst-problems.json', kind: 'years' },
+    { key: 'hkp', name: 'Hong Kong Preliminary Selection', flag: '🇭🇰', file: 'HongKong-prelim-problems.json', kind: 'years', full: "Hong Kong IMO Preliminary Selection Contest (answer-type paper; 1987-1990 also have a short proof section)" },
     { key: 'ro7', name: 'Romania NMO grade 7', flag: '🇷🇴', file: 'Romania-nmo-g7-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final stage, grade 7" },
     { key: 'ro8', name: 'Romania NMO grade 8', flag: '🇷🇴', file: 'Romania-nmo-g8-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final stage, grade 8" },
     { key: 'ro9', name: 'Romania NMO grade 9', flag: '🇷🇴', file: 'Romania-nmo-g9-problems.json', kind: 'years', full: "Romanian National Mathematical Olympiad, final, grade 9" },

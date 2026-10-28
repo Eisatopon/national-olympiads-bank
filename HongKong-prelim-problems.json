@@ -1,0 +1,2572 @@
+{
+  "competition": "Hong Kong IMO Preliminary Selection Contest",
+  "years": [
+    {
+      "year": 1987,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A trapezium has perpendicular diagonals and altitude 4. If one of the diagonals has length 5, find the area of the trapezium."
+        },
+        {
+          "number": 2,
+          "problem": "If $a, b, c, d, e$ are real numbers such that $a+b+c+d+e=8$ and $a^2+b^2+c^2+d^2+e^2=16$, find the greatest value of $e$."
+        },
+        {
+          "number": 3,
+          "problem": "A $9\\text{ cm}\\times 12\\text{ cm}$ rectangular piece of paper is folded once so that a pair of diagonally opposite vertices coincide. What is the length of the crease?"
+        },
+        {
+          "number": 4,
+          "problem": "If $a, b, c$ are distinct rational roots of $x^3+ax^2+bx+c=0$, find the values of $a, b, c$."
+        },
+        {
+          "number": 5,
+          "problem": "Find a fifth degree polynomial $p(x)$ such that $p(x)+1$ is divisible by $(x-1)^3$ and $p(x)-1$ is divisible by $(x+1)^3$."
+        },
+        {
+          "number": 6,
+          "problem": "If $f(x)f(y)-f(xy)=x+y$ for all real $x$ and $y$, find $f(x)$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $x$ and $y$ be two two-digit natural numbers with $x<y$. The product $xy$ is a four-digit number beginning with 2. If this 2 is deleted, the resulting number is equal to $x+y$. $x=30$ and $y=70$ have this property. Find another pair of $(x, y)$ with this property."
+        },
+        {
+          "number": 8,
+          "problem": "If $n$ is a given non-negative integer, how many distinct non-negative integral solutions are there for each of the following equations?\n\n(a) $x+y=n$\n\n(b) $x+y+z=n$"
+        },
+        {
+          "number": 9,
+          "problem": "Let $\\lambda$ be a constant such that $0<\\lambda<1$.\n\n(a) How many distinct values does $\\cos\\left(\\frac{1}{3}\\sin^{-1}\\lambda\\right)$ have?\n\n(b) Find the product of all these values in terms of $\\lambda$."
+        },
+        {
+          "number": 10,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$. Find in terms of $n$, $$\\left[\\sqrt{1}\\right]+\\left[\\sqrt{2}\\right]+\\left[\\sqrt{3}\\right]+\\cdots+\\left[\\sqrt{n^2-1}\\right],$$ $n=2, 3, \\ldots$."
+        },
+        {
+          "number": 11,
+          "problem": "In the figure, the two circles are of radii 8 cm and 6 cm and their centres are 12 cm apart. Through one of the points of intersection $P$, a line $QR$ is drawn in such a way that the chords $QP$ and $PR$ have equal lengths. Find the length $QP$ in surd form.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1987_p11_fig.png"
+        },
+        {
+          "number": 12,
+          "problem": "Let $f(n)$ be the sum of the first $n$ terms of the sequence $0, 1, 1, 2, 2, 3, 3, 4, \\ldots, a_n, \\ldots$, where $$a_n=\\begin{cases}\\dfrac{n}{2} & n \\text{ is even}\\\\[2mm] \\dfrac{n-1}{2} & n \\text{ is odd}\\end{cases}$$ Express $f(x+y)-f(x-y)$ in terms of $x$ and $y$, where $x$ and $y$ are positive integers and $x>y$."
+        },
+        {
+          "number": 13,
+          "problem": "In the figure, the diameter $AB$ intersects the chord $CD$ at $H$. The length of $AB$ is a two-digit integer. Reversing the digits gives the length of $CD$. The distance from $H$ to the centre $O$ is a positive rational number. Find the length of $AB$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1987_p13_fig.png"
+        },
+        {
+          "number": 14,
+          "problem": "(a) Prove that $\\sqrt{4n+2}$ is not an integer for all natural numbers $n$.\n\n(b) Prove that, for all positive real numbers $x$, $\\dfrac{\\sqrt{x}+\\sqrt{x+1}}{2}<\\sqrt{x+\\dfrac{1}{2}}$.\n\n(c) If $n$ is a positive integer, show that $\\left[\\sqrt{n}+\\sqrt{n+1}\\right]=\\left[\\sqrt{4n+2}\\right]$, where $[x]$ denotes the greatest integer not exceeding $x$."
+        },
+        {
+          "number": 15,
+          "problem": "$GKA$ is an isosceles triangle with base $GK$ of length $2b$. $GA$ and $AK$ each have length $a$. Let $C$ be the midpoint of $AK$ and $z$ the circumcircle of the triangle $GCK$. Let $Y$ be the point on the extension of $AK$ such that if $E$ is the intersection of $YG$ with $z$ then $EY$ is of length $\\frac{a}{2}$. Prove that if $x$ is the length of $EC$ and $y$ is the length of $KY$, then $ay=x^2$ and $xb=y^2$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1987_p15_fig.png"
+        },
+        {
+          "number": 16,
+          "problem": "(a) Show that for any positive integer $n$ and real $\\theta$, $$2\\left(\\sum_{k=1}^{n}\\cos k\\theta\\right)\\sin\\frac{\\theta}{2}=\\sin n\\theta\\cos\\frac{\\theta}{2}+(\\cos n\\theta-1)\\sin\\frac{\\theta}{2}.$$\n\n(b) Let $f$ be a real-valued function defined for all real numbers. $f$ satisfies the following conditions: $$f(xy)=f(x)f(y) \\quad\\text{and}\\quad f(x+y)=f(x)+f(y), \\quad \\text{for all real } x, y.$$ If, for some real number $\\theta$, $f(\\cos n\\theta)$ is a constant for all positive integers $n$, prove that either $f$ is identically zero, or $\\theta$ is an even multiple of $\\pi$."
+        },
+        {
+          "number": 17,
+          "problem": "Let $m$ and $n$ be (fixed) integers greater than 1, $m$ even, and $f$ a real-valued function, defined for all non-negative real numbers, that satisfies the following conditions:\n\n(i) For all $x_1, x_2, \\ldots, x_n$, $$f\\left[\\frac{x_1^m+x_2^m+\\cdots+x_n^m}{n}\\right]=\\frac{[f(x_1)]^m+[f(x_2)]^m+\\cdots+[f(x_n)]^m}{n};$$\n\n(ii) $f(1986)\\ne 1986$;\n\n(iii) $f(1988)\\ne 0$.\n\nProve that $f(1987)=1$."
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The function $f(x)$ is defined for all real $x$. If $f(a+b)=f(ab)$ for all $a, b$ and $f\\left(-\\frac{1}{2}\\right)=-\\frac{1}{2}$, compute $f(1988)$."
+        },
+        {
+          "number": 2,
+          "problem": "Solve $x^{-3x-8}>x^7$, where $x>0$."
+        },
+        {
+          "number": 3,
+          "problem": "In an acute triangle, the length of the segment which connects the feet of two of the altitudes is 24, and the mid-point of this segment is $M$. The length of the side of the triangle not intersected by the segment is 26, and the mid-point of this side is $N$. Find the length of $MN$."
+        },
+        {
+          "number": 4,
+          "problem": "How many real roots does the equation $\\dfrac{x}{1988}=\\sin x$ have?"
+        },
+        {
+          "number": 5,
+          "problem": "Find the prime numbers $p$ and $q$ if it is known that the equation $x^4-px^3+q=0$ has an integral root."
+        },
+        {
+          "number": 6,
+          "problem": "Let $b$ be an integer greater than 1. For any positive integer $n$, let $S_b(n)$ be the sum of the digits in the base $b$ representation of $n$. Let $m$ be a fixed positive integer and $r$ an integer such that $1\\le r<b^m$. If $S_b(r)=x$, find\n\n(a) $S_b(b^m-1-r)$,\n\n(b) $S_b[r(b^m-1)]$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$. Find the non-integral solutions of $x^2-19[x]+88=0$."
+        },
+        {
+          "number": 8,
+          "problem": "Express the area of the inscribed convex octagon (shown in the figure: its sides are, in order, $2, 2, 2, 2, 3, 3, 3, 3$) in the form $r+s\\sqrt{t}$, where $r$, $s$ and $t$ are positive integers.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1988_p8_fig.png"
+        },
+        {
+          "number": 9,
+          "problem": "Let $n$ be a given positive integer. If $x$ and $y$ are positive integers such that $xy=nx+ny$, find the least and greatest possible values of $x$."
+        },
+        {
+          "number": 10,
+          "problem": "Consider the number $\\alpha=k+\\sqrt{k^2-1}$ where $k$ is a fixed positive integer greater than 1. For $n=1, 2, 3, \\ldots$, let $I_n$ be the integral part of $\\alpha^n$. Express $I_{2n}$ in terms of $I_n$."
+        },
+        {
+          "number": 11,
+          "problem": "In the figure, chord $AD$ is bisected by chord $BC$. The radius of the circle is 5 and $BC=6$. Suppose that $AD$ is the only chord starting at $A$ which is bisected by $BC$. Find $\\sin\\angle AOB$, where $O$ is the centre of the circle. (Leave the answer as a fraction.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1988_p11_fig.png"
+        },
+        {
+          "number": 12,
+          "problem": "The sides $a$, $b$, $c$ of a triangle $ABC$ satisfy $a\\ge b\\ge c$ or $a\\le b\\le c$. $D$ and $E$ are the mid-points of $AB$ and $BC$ respectively. The bisectors of $\\angle BAE$ and $\\angle BCD$ meet at $R$. Denote the centroid of $\\triangle ABC$ by $G$.\n\n(a) Prove that $2b^2=c^2+a^2$ if and only if $BDGE$ is a cyclic quadrilateral.\n\n(b) Prove that $AR\\perp CR$ if and only if $2b^2=c^2+a^2$.\n\n(c) Prove that if $2b^2=c^2+a^2$, then $R$ lies on the median from $B$.\n\n(d) Is the converse of (c) true?"
+        },
+        {
+          "number": 13,
+          "problem": "For any integer $n$, $f(n)$ is defined by $$f(n)=\\begin{cases} n-3 & \\text{if } n\\ge 2000\\\\ f(f(n+5)) & \\text{if } n<2000\\end{cases}$$\n\n(a) Find $f(1988)$.\n\n(b) Find all positive integers $n$ such that $f(n)=1997$."
+        },
+        {
+          "number": 14,
+          "problem": "On the circumference of a circle $n$ points are taken. The points are joined pairwise by line segments, dividing the circle into the largest possible number of regions. Denote this number of regions by $A_n$. The first few cases are shown in the figure: $A_2=2$, $A_3=4$, $A_4=8$, $A_5=16$.\n\n(a) Find $A_8$.\n\n(b) Find $A_n$ in terms of $n$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1988_p14_fig.png"
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In numbering the pages of a book, 1989 digits were used. What is the number of pages in the book?"
+        },
+        {
+          "number": 2,
+          "problem": "Find the area of the region consisting of the points $(x, y)$ satisfying both $|x|-|y|\\le 1$ and $|y|\\le 1$."
+        },
+        {
+          "number": 3,
+          "problem": "Find the unit digit of the number $n=1!+2!+3!+\\cdots+1989!$."
+        },
+        {
+          "number": 4,
+          "problem": "Which of the following is/are divisible by 6 for all positive integers $n$?\n\n(a) $n(n+1)(n+2)$\n\n(b) $n(n+1)(2n+1)$\n\n(c) $n(n^2+5)$\n\n(d) $(n+1)^{2k}-(n^{2k}+2n+1)$, where $k$ is a positive integer."
+        },
+        {
+          "number": 5,
+          "problem": "Given a positive integer $n$, find the least and greatest values of $x$ such that $xy=nx+ny$, where $x$ and $y$ are positive integers."
+        },
+        {
+          "number": 6,
+          "problem": "The six-digit number $\\overline{a1989b}$ is divisible by 72. Determine $a$ and $b$."
+        },
+        {
+          "number": 7,
+          "problem": "Consider a triangle $ABC$. $X$, $Y$ and $Z$ are points on the sides $AB$, $BC$ and $CA$ respectively such that $AX:XB=4:5$, $BY:YC=6:7$ and $CZ:ZA=8:9$. If the area of $\\triangle ABC$ is 1989, find the area of $\\triangle XYZ$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $x$, $y$ and $z$ be real numbers. Determine the largest value of $z$ such that $x+y+z=5$ and $xy+yz+zx=3$."
+        },
+        {
+          "number": 9,
+          "problem": "What is the remainder when $1^3+2^3+3^3+4^3+\\cdots+1990^3$ is divided by 7?"
+        },
+        {
+          "number": 10,
+          "problem": "A function $f$ is defined for non-negative integers $n$ and $k$ by $f(0, n)=n+1$, $f(k, 0)=f(k-1, 1)$ and $f(k+1, n+1)=f(k, f(k+1, n))$. Find $f(2, 2)$."
+        },
+        {
+          "number": 11,
+          "problem": "Determine all pairs of real numbers $(x, y)$ such that $x^3+y^3=x^2+y^2$."
+        },
+        {
+          "number": 12,
+          "problem": "Let $a_n=6^n+8^n$. Find the remainder on dividing $a_{1989}$ by 49."
+        },
+        {
+          "number": 13,
+          "problem": "In the figure $ABC$ is an isosceles triangle with a vertical angle of $20^\\circ$. A point $D$ is marked off on $AC$ such that $AD=BC$. Find $\\angle ABD$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1989_p13_fig.png"
+        },
+        {
+          "number": 14,
+          "problem": "Show that the area of a triangle of fixed perimeter is maximum when it is equilateral."
+        },
+        {
+          "number": 15,
+          "problem": "Let $S(n)$ be the sum of the first $n$ terms of the sequence $0, 1, 1, 2, 2, 3, 3, \\ldots$. If $x$ and $y$ are positive integers with $x>y$, show that $S(x+y)-S(x-y)=xy$."
+        },
+        {
+          "number": 16,
+          "problem": "Show that the roots of the equation $a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\\cdots+a_{n-3}x^3+x^2+x+1=0$ with real coefficients cannot be all real."
+        },
+        {
+          "number": 17,
+          "problem": "The sides $BC$, $CA$, $AB$ of $\\triangle ABC$ are produced to $D$, $E$ and $F$ respectively such that $CD=AE=BF$. If $\\triangle DEF$ is equilateral, show that $\\triangle ABC$ is also equilateral."
+        },
+        {
+          "number": 18,
+          "problem": "(a) Let $r_n$ and $R_n$ be respectively the radii of the inscribed circle and the circumscribed circle of a regular $2^n$-sided polygon of perimeter 1. Prove that\n\n(i) $r_{n+1}=\\dfrac{R_n+r_n}{2}$, and\n\n(ii) $R_{n+1}=\\sqrt{R_n\\cdot r_{n+1}}$ for $n\\ge 1$.\n\n(b) Consider the sequences $\\{a_n\\}$ and $\\{b_n\\}$ such that $a_1=0$, $b_1=\\frac{1}{2}$, $a_{n+1}=\\dfrac{a_n+b_n}{2}$ $(n\\ge 1)$ and $b_{n+1}=\\sqrt{a_{n+1}\\cdot b_n}$ $(n\\ge 1)$. Find $\\displaystyle\\lim_{n\\to\\infty}a_n$ and $\\displaystyle\\lim_{n\\to\\infty}b_n$."
+        },
+        {
+          "number": 19,
+          "problem": "The sequence of digits $$12345678910111213141516171819202122\\ldots$$ is obtained by writing the positive integers in order. For any positive integer $n$, if the $10^n$th digit in this sequence is in the part of the sequence in which an $m$-digit number is placed, define $f(n)$ to be $m$. For instance, $f(1)=f(2)=2$ since the 10th and the 100th digits enter the sequence in the placement of the 2-digit numbers 10 and 55, respectively. Find, with proof, $f(1989)$."
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the probability that a randomly chosen positive divisor of $10^{1999}$ is a multiple of $10^{1990}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $P_r$ be a $r$-sided polygon and $P_s$ be a $s$-sided polygon ($r\\ge s\\ge 3$), such that each interior angle of $P_r$ is $\\frac{20}{17}$ times that of $P_s$. What is the largest possible value of $s$?"
+        },
+        {
+          "number": 3,
+          "problem": "Find all positive integers $a$ and $b$ such that $a^2-b^2=1991$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a_1, a_2, \\ldots, a_n, \\ldots$ be a sequence of real numbers such that $a_1=1$, $4a_na_{n+1}=(a_n+a_{n+1}-1)^2$ and $a_n<a_{n+1}$ for $n\\ge 1$. Find $a_n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $N=99\\ldots99$, where the digit 9 occurs 1990 times. Compute the sum of the digits of the number $N^2$."
+        },
+        {
+          "number": 6,
+          "problem": "Assume that $a, b, c, d$ are four real numbers such that $$\\begin{cases} a+4b+9c+16d=1\\\\ 4a+9b+16c+25d=12\\\\ 9a+16b+25c+36d=123\\end{cases}.$$ Find the value of $16a+25b+36c+49d$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $P$ be an interior point of $\\triangle ABC$ and extend lines from the vertices through $P$ to the opposite sides. Let $a$, $b$, $c$ and $d$ denote the lengths of the line segments indicated in the figure. Find the product $abc$ if $a+b+c=43$ and $d=3$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1990_p7_fig.png"
+        },
+        {
+          "number": 8,
+          "problem": "A sequence $x_1, x_2, \\ldots, x_n, \\ldots$ is defined by $x_1=1$ and $x_{n+1}=\\left(1+\\frac{1}{n}\\right)x_n+\\frac{1}{n}$ for any positive integer $n$. Find $x_{1990}$."
+        },
+        {
+          "number": 9,
+          "problem": "The pages of a book are numbered $1, 2, 3, \\ldots$. When the page numbers of the book are added, one of the page numbers was mistakenly added twice, resulting in the incorrect sum of 1990. What was the page number that was added twice?"
+        },
+        {
+          "number": 10,
+          "problem": "Ten people form a circle. Each picks a number and tells it to the two neighbours adjacent to him in the circle. Then each person computes and announces the average of the numbers of his two neighbours. The figure shows the average announced by each person (not the original number the person picked): going round the circle, the announced averages are $1, 2, 3, \\ldots, 10$ in this order. What is the number picked by the person who announced the average 8?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1990_p10_fig.png"
+        },
+        {
+          "number": 11,
+          "problem": "Find the largest positive integer $n$ for which $n!$ can be expressed as the product of $(n-3)$ consecutive positive integers."
+        },
+        {
+          "number": 12,
+          "problem": "Find the remainder when $3^{1990}$ is divided by 41."
+        },
+        {
+          "number": 13,
+          "problem": "In the figure, $AB\\parallel QR$. Show that $PS$ bisects $AB$ and $QR$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1990_p13_fig.png"
+        },
+        {
+          "number": 14,
+          "problem": "Let $a_n$ be the $3^n$-digit number $11\\ldots1$. Show that $a_n$ is divisible by $3^n$."
+        },
+        {
+          "number": 15,
+          "problem": "Let $ABCD$ be a tetrahedron with $AB=3$, $AC=8$, $AD=6$, $BC=7$, $BD=5$ and $CD=4$. Let $d$ be the distance between the mid-points of the edges $AB$ and $CD$. Find $d^2$."
+        },
+        {
+          "number": 16,
+          "problem": "A collection of integers chosen from $1, 2, \\ldots, 1000$ has the property that none of its members is 3 times another. What is the maximum number of members such a collection can have?"
+        },
+        {
+          "number": 17,
+          "problem": "For $n=0, 1, 2, \\ldots$, let $x_n=\\dfrac{a^n+b^n}{2}$, where $a=3+2\\sqrt{2}$ and $b=3-2\\sqrt{2}$. Show that $x_n$ is an integer for each $n$ and find the unit digit of $x_{1990}$."
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$ABCD$ is a cyclic quadrilateral with $AB=25$, $BC=39$, $CD=52$, and $DA=60$. Find the length of the diagonal $BD$."
+        },
+        {
+          "number": 2,
+          "problem": "Determine the unit digit of $1997^{1991}$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $2, 3, 5, 6, 7, 10, 11, \\ldots$ be the increasing sequence of positive integers that are neither the square nor the cube of an integer. Find the 1991st term of this sequence."
+        },
+        {
+          "number": 4,
+          "problem": "Find the number of integral solutions $(x, y)$ satisfying $$\\begin{cases} x\\le y\\le 99\\\\ x+y>99\\end{cases}.$$"
+        },
+        {
+          "number": 5,
+          "problem": "Determine the number of integers from 1 to 1991, both inclusive, which are not divisible by 2, 3 or 5."
+        },
+        {
+          "number": 6,
+          "problem": "The diagonals of the trapezium $ABCD$ (with $AB\\parallel DC$) meet at $E$. The areas of $\\triangle ABE$ and $\\triangle CDE$ are 4 and 9 respectively. Find the area of $ABCD$."
+        },
+        {
+          "number": 7,
+          "problem": "Find the sum of the digits of all the numbers in the sequence $1, 2, 3, \\ldots, 1991$."
+        },
+        {
+          "number": 8,
+          "problem": "A boy wrote down his father's age after his own. To this four-digit number he added 16 times the difference between their ages and obtained 1991. Find the sum of their ages."
+        },
+        {
+          "number": 9,
+          "problem": "In the diagram, the diameter $AD$ of the semicircle has length 3. $B$ and $C$ are points on the semicircle such that $AB=BC=1$. Find the length of the chord $CD$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1991_p9_fig.png"
+        },
+        {
+          "number": 10,
+          "problem": "Let $[x]$ denote the greatest integer less than or equal to $x$, and $\\{x\\}=x-[x]$. Find the nonzero value of $x$ such that $x$, $[x]$ and $\\{x\\}$ are in geometric progression."
+        },
+        {
+          "number": 11,
+          "problem": "Let $N$ be a positive integer satisfying the following properties:\n\n(i) $N$ is a perfect cube.\n\n(ii) None of the last 3 digits of $N$ is zero.\n\n(iii) If the last 3 digits of $N$ are removed, the number so formed is also a perfect cube.\n\nDetermine the maximum possible value of $N$."
+        },
+        {
+          "number": 12,
+          "problem": "A function $f$, defined for all ordered pairs of positive integers, satisfies the following properties: $f(x, x)=x+2$, $f(x, y)=f(y, x)$ and $(x+y)\\cdot f(x, y)=y\\cdot f(x, x+y)$. Calculate $f(9, 7)$."
+        },
+        {
+          "number": 13,
+          "problem": "For any positive integer $n$, let $U_{n+1}=\\dfrac{n(n+1)}{2n-U_n}$. Suppose $U_1=a$. Find $U_n$ in terms of $a$ and $n$."
+        },
+        {
+          "number": 14,
+          "problem": "A flight of stairs consists of ten steps. A boy can climb one or two steps at each time. In how many ways can the boy climb from the bottom to the top of the stairs?"
+        },
+        {
+          "number": 15,
+          "problem": "Let $n$ be the smallest positive integer that is a multiple of 1991 and that has exactly 1991 positive integral divisors, including 1 and itself. Express $n$ as a product of prime factors."
+        },
+        {
+          "number": 16,
+          "problem": "Let $a$, $b$ and $c$ be the lengths of the sides of a triangle and let $p$, $q$, $r$ be respectively the distances from the centroid to the corresponding vertices. Find the ratio $\\dfrac{a^2+b^2+c^2}{p^2+q^2+r^2}$."
+        },
+        {
+          "number": 17,
+          "problem": "Let $a$ be the sum of the digits of $3^{10000}$, when it is written in decimal form, $b$ be the sum of the digits of $a$ and $c$ be the sum of the digits of $b$. Find $c$."
+        },
+        {
+          "number": 18,
+          "problem": "Find the real solutions of the equation $3x^2-[x]=3$, where $[x]$ denotes the greatest integer less than or equal to $x$."
+        },
+        {
+          "number": 19,
+          "problem": "What is the minimum value obtained when an arbitrary number of three different non-zero digits is divided by the sum of its digits?"
+        },
+        {
+          "number": 20,
+          "problem": "An equilateral triangle $ABP$ with side $AB$ of length 3 is placed inside a square $AXYZ$ with side $AX$ of length 6. The triangle is rotated clockwise about $B$ until $BP$ falls on $BX$; it is then rotated about $P$ until $PA$ falls on $XY$, then about $A$, and so on along the sides of the square until $P$, $A$ and $B$ all return to their original positions. Find in terms of $\\pi$, the length of the path traversed by the vertex $P$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1991_p20_fig.png"
+        },
+        {
+          "number": 21,
+          "problem": "On a plane, there are 10 circles. Any pair of them intersect at exactly 2 points but no 3 of them intersect at one common point. Into how many parts do these circles divide the plane?"
+        },
+        {
+          "number": 22,
+          "problem": "The integers $1, 2, \\ldots, n$ are arranged in such a way that if an integer $k$ $(1\\le k\\le n)$ is not the first term, then one of the integers $k+1$ or $k-1$ appears among the terms on the left of $k$. How many different arrangements are there?"
+        },
+        {
+          "number": 23,
+          "problem": "$E$, $F$, $G$ are points on the sides $AB$, $BC$, $CA$ respectively of $\\triangle ABC$ such that $AE:EB=BF:FC=CG:GA=1:3$. Let $K$, $L$, $M$ be the intersection points of lines $AF$ and $CE$, $BG$ and $AF$, and $CE$ and $BG$ respectively. Find the ratio $\\dfrac{\\text{area of }\\triangle KLM}{\\text{area of }\\triangle ABC}$."
+        },
+        {
+          "number": 24,
+          "problem": "Let $[x]$ denote the greatest integer less than or equal to $x$. How many of the first 100 positive integers can be expressed in the form $[2x]+[4x]+[6x]+[8x]$ where $x$ is a real number?"
+        },
+        {
+          "number": 25,
+          "problem": "A collection of $k$ distinct integers is chosen from the integers $1, 2, \\ldots, 1991$. It is required that the difference of any two integers from the collection does not divide the sum of the corresponding integers. Determine the maximum possible value of $k$."
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Given three positive numbers $a$, $b$ and $c$ such that $\\dfrac{a}{b}=\\dfrac{b}{c}=\\dfrac{c}{a}$, find $\\dfrac{a+b+c}{a+b-c}$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a$, $b$ and $c$ be positive numbers satisfying $a+b+c=1$. Find the least value of $\\left(\\dfrac{1}{a}-1\\right)\\left(\\dfrac{1}{b}-1\\right)\\left(\\dfrac{1}{c}-1\\right)$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $a$ and $b$ be real numbers satisfying the equation $$\\log_{10}(1+a^2)-\\log_{10}a-2\\log_{10}2=1-\\log_{10}(100+b^2)+\\log_{10}b.$$ Find the value of $a+b$."
+        },
+        {
+          "number": 4,
+          "problem": "Find the number of positive integral solutions satisfying the equation $\\dfrac{xy}{x+y}=1992$."
+        },
+        {
+          "number": 5,
+          "problem": "Find a positive integer which has exactly 8 factors, and the product of all these 8 factors is 331776."
+        },
+        {
+          "number": 6,
+          "problem": "In the multiplicative magic square $$\\begin{array}{|c|c|c|}\\hline a & b & c\\\\ \\hline d & e & f\\\\ \\hline g & h & i\\\\ \\hline\\end{array}$$ $a, b, c, \\ldots, i$ are positive integers. The product of the three numbers in any row, column or diagonal is equal to a constant $k$, where $k$ is a number between 10000 and 12000. Find the value of $k$."
+        },
+        {
+          "number": 7,
+          "problem": "Express the number 1992 as the sum of positive integers such that the product of these integers is maximal."
+        },
+        {
+          "number": 8,
+          "problem": "A rhombus $PQRS$ is inscribed in a rectangle $ABCD$ so that the vertices $P$, $Q$, $R$ and $S$ lie on the sides $AB$, $BC$, $CD$ and $DA$ respectively. Given that $PB=3$, $BQ=4$, $PR=6$ and $QS=8$, find the perimeter of $ABCD$."
+        },
+        {
+          "number": 9,
+          "problem": "Find the largest value of $a$ such that both roots of the quadratic equation $x^2+ax+6a=0$ are integers."
+        },
+        {
+          "number": 10,
+          "problem": "Find the least number of integers that must be deleted from $1, 2, 3, \\ldots, 1992$ so that none of the remaining integers is the product of two others."
+        },
+        {
+          "number": 11,
+          "problem": "For any two positive numbers $x$ and $y$, let $s$ be the smallest value of $x$, $y$ and $\\dfrac{1}{x}+\\dfrac{1}{y}$. Find the greatest possible value of $s$."
+        },
+        {
+          "number": 12,
+          "problem": "In rectangle $ABCD$, $P$ and $Q$ are points on $AB$ and $BC$ respectively, such that the triangles $APD$, $PBQ$ and $QCD$ have equal area. Find $\\dfrac{AP}{PB}$."
+        },
+        {
+          "number": 13,
+          "problem": "A rectangle $PQRS$ is folded along the diagonal $QS$ such that the planes $QRS$ and $PQS$ are perpendicular to each other. Given that $PQ=4$, $PS=3$. Find $PR$."
+        },
+        {
+          "number": 14,
+          "problem": "In $\\triangle ABC$, $\\angle A-\\angle B=90^\\circ$ and $BC+CA=2AB$. Find $\\cos C$."
+        },
+        {
+          "number": 15,
+          "problem": "For any positive integer $n$, let $a_1, a_2, \\ldots, a_n$ be any positive real numbers whose sum is 17. Define $S_n$ to be the minimum value of $\\displaystyle\\sum_{k=1}^{n}\\sqrt{(2k-1)^2+a_k^2}$. Find the value of $n$ such that $S_n$ is an integer."
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $x$ be a real number and $y=|x-1|+|x-2|+\\cdots+|x-1993|$. Determine the smallest possible value of $y$."
+        },
+        {
+          "number": 2,
+          "problem": "Find a square number with four digits, such that the first (leftmost) digit is equal to the second digit, and the third digit is equal to the fourth digit."
+        },
+        {
+          "number": 3,
+          "problem": "The leftmost digit of a certain positive integer is 4. If this digit is moved to the right of the rightmost digit, then the new number formed is equal to $\\frac{1}{4}$ of the original number. What is the smallest possible value of the original number?"
+        },
+        {
+          "number": 4,
+          "problem": "$ABCD$ is a rectangular court with $AB=30$ m and $BC=40$ m. Four men stand at different positions in the court so that the distance between the two men nearest to each other is maximized. What is this distance?"
+        },
+        {
+          "number": 5,
+          "problem": "In the diagram, $ABCD$ is a unit square. $E$, $F$ are mid-points of $AB$ and $BC$. $AF$ meets $ED$ and $BD$ at $H$ and $K$ respectively. Find the area of the quadrilateral $EHKB$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1993_p5_fig.png"
+        },
+        {
+          "number": 6,
+          "problem": "Find the largest prime number $p$ such that $p^3+p^2+11p+2$ is also prime."
+        },
+        {
+          "number": 7,
+          "problem": "For which natural number $k$ does $\\dfrac{k^2}{1.001^k}$ attain its maximum value?"
+        },
+        {
+          "number": 8,
+          "problem": "For any sequence $A$ of real numbers $a_1, a_2, a_3, \\ldots$, define $\\Delta A$ to be the sequence $a_2-a_1, a_3-a_2, a_4-a_3, \\ldots$, whose $n$th term is $a_{n+1}-a_n$. Suppose that all of the terms of the sequence $\\Delta(\\Delta A)$ are 1, and that $a_{19}=a_{93}=0$. Find $a_1$."
+        },
+        {
+          "number": 9,
+          "problem": "Find the sum of all positive rational numbers that are less than 10 and that have denominator 30 when written in lowest terms."
+        },
+        {
+          "number": 10,
+          "problem": "Given 12 rods of lengths $1, 2, 3, \\ldots, 12$, in how many ways can we choose 3 rods to form a triangle?"
+        },
+        {
+          "number": 11,
+          "problem": "Let $n$ be a natural number. For $1\\le x\\le n$, find the number of solutions of $x^2-[x^2]=(x-[x])^2$, where $[x]$ denotes the greatest integer not exceeding $x$."
+        },
+        {
+          "number": 12,
+          "problem": "A unit square is completely covered by three identical circles. Find the smallest possible diameter of the circles."
+        },
+        {
+          "number": 13,
+          "problem": "Triangle $ABC$ is equilateral. $O$ is a point inside the triangle such that $AO=3$, $BO=4$ and $CO=5$. Find the area of $\\triangle ABC$."
+        },
+        {
+          "number": 14,
+          "problem": "In triangle $ABC$, $A'$, $B'$ and $C'$ are on sides $BC$, $AC$ and $AB$ respectively. Given that $AA'$, $BB'$ and $CC'$ are concurrent at the point $O$. If $\\dfrac{AO}{OA'}+\\dfrac{BO}{OB'}+\\dfrac{CO}{OC'}=k$, find, in terms of $k$, the value of $\\dfrac{AO}{OA'}\\cdot\\dfrac{BO}{OB'}\\cdot\\dfrac{CO}{OC'}$."
+        },
+        {
+          "number": 15,
+          "problem": "Let $a$, $b$, $c$, $d$, $e$ be positive integers such that $a<b<c<d<e$. Find the maximum value of $$\\frac{1}{[a, b]}+\\frac{1}{[b, c]}+\\frac{1}{[c, d]}+\\frac{1}{[d, e]},$$ where $[m, n]$ denotes the L.C.M. of $m$ and $n$."
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a trapezium $ABCD$ where $AB$ is parallel to $DC$, the diagonals intersect at $E$. The area of $\\triangle ABE$ is 72 and the area of $\\triangle CDE$ is 50. What is the area of trapezium $ABCD$?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $P_0(x)=x^3+9x^2+9x+4$. For integers $n\\ge 1$, define $P_n(x)=P_{n-1}(x-n)$. What is the coefficient of $x^2$ in $P_{100}(x)$?"
+        },
+        {
+          "number": 3,
+          "problem": "Find the real number $x$ satisfying $\\sqrt{1+\\sqrt{1+\\sqrt{1+x}}}=x$."
+        },
+        {
+          "number": 4,
+          "problem": "A point $(a, b)$ on the $xy$-plane is integral if both $a$ and $b$ are integers. Determine the number of integral points enclosed by the square (including the boundary) formed by the points $(100, 0)$, $(0, 100)$, $(-100, 0)$ and $(0, -100)$."
+        },
+        {
+          "number": 5,
+          "problem": "$a$, $b$, $c$, $d$, $e$ are real numbers satisfying $a+b+c+d+e=37$ and $2^a+2^b+2^c+2^d+2^e=1024$. What is the greatest possible value of $a$?"
+        },
+        {
+          "number": 6,
+          "problem": "Ten integers, with two of them equal, have the property that when nine of them are added, the distinct possible sums are 86, 87, 88, 89, 90, 91, 92, 93 and 94. Find the integer that occurs twice."
+        },
+        {
+          "number": 7,
+          "problem": "In the figure, $ABC$ is an equilateral triangle. $PE=1$, $PQ=3$ and $AE=CD$. Find $AD$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1994_p7_fig.png"
+        },
+        {
+          "number": 8,
+          "problem": "In the figure, $AC$ is the diameter of a unit circle $ADC$ with $B$ as the centre. Another circle $BED$ touches $AC$ at $B$ and the circle $ADC$ at $D$. A tangent from $A$ to the circle $BED$ meets the circle at $E$ and $BD$ produced at $F$. Find $AF$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hkp_1994_p8_fig.png"
+        },
+        {
+          "number": 9,
+          "problem": "If $f(x)=\\dfrac{9^x}{9^x+3}$, find $f\\left(\\dfrac{1}{1995}\\right)+f\\left(\\dfrac{2}{1995}\\right)+\\cdots+f\\left(\\dfrac{1994}{1995}\\right)$."
+        },
+        {
+          "number": 10,
+          "problem": "Let $x$, $y$, $z$ be positive numbers satisfying the system of equations $$\\begin{cases} x+y=13\\\\ y^2+z^2-yz=25\\\\ x^2+z^2+xz=144\\end{cases}.$$ Find $z$."
+        },
+        {
+          "number": 11,
+          "problem": "What is $x+y+z$ if $x$, $y$, $z$ are integers greater than 1 such that $xy-1$ is divisible by $z$, $yz-1$ is divisible by $x$, and $zx-1$ is divisible by $y$?"
+        },
+        {
+          "number": 12,
+          "problem": "What is the smallest positive integer that can simultaneously be expressed as the sum of 9 consecutive positive integers, the sum of 10 consecutive positive integers, and the sum of 11 consecutive positive integers?"
+        },
+        {
+          "number": 13,
+          "problem": "How many ordered four-tuples of integers $(a, b, c, d)$ with $0<a<b<c<d<100$ satisfy $a+d=b+c$ and $bc-ad=94$?"
+        },
+        {
+          "number": 14,
+          "problem": "Find the largest positive integer $n$ satisfying the following conditions:\n\n(a) $n$ is not divisible by 10;\n\n(b) the number formed by deleting the four rightmost digits from $n^2$ is a perfect square."
+        },
+        {
+          "number": 15,
+          "problem": "$ABCD$ is a rectangle with $AB=1$. Two straight lines, parallel to $AB$ and $BC$ respectively, divide the rectangle into four smaller rectangles such that three of them have areas not less than one and the fourth has area not less than 2. What is the least possible length of $BC$?"
+        },
+        {
+          "number": 16,
+          "problem": "Consider an equilateral triangle $ABC$. Let $S$ be the collection of points $P$ inside the triangle such that the distances from $P$ to the sides of $\\triangle ABC$ can be the lengths of the three sides of some triangle. Find $\\dfrac{\\text{area of }S}{\\text{area of }\\triangle ABC}$."
+        },
+        {
+          "number": 17,
+          "problem": "Let $CH$ be an altitude of $\\triangle ABC$. Let $R$ and $S$ be, respectively, points at which the circles inscribed in triangles $ACH$ and $BCH$ touch $CH$. If $AB=1995$, $AC=1994$ and $BC=1993$, find $RS$."
+        },
+        {
+          "number": 18,
+          "problem": "For positive integers $i$ and $j$, the function $f(i, j)$ is defined by the relations $$f(1, 1)=2,$$ $$f(i+1, j)=2(i+j)+f(i, j) \\quad\\text{and}$$ $$f(i, j+1)=2(i+j-1)+f(i, j).$$ Find $i$ and $j$ such that $f(i, j)=1994$."
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a trapezium $ABCD$, where $AB$ is parallel to $DC$, area of $\\triangle ABC$ : area of $\\triangle ACD=1:3$. If $E$ and $F$ are the mid-points of $BC$ and $DA$ respectively, find the value of the fraction $\\dfrac{\\text{area of }ABEF}{\\text{area of }EFDC}$."
+        },
+        {
+          "number": 2,
+          "problem": "What is the maximum possible area of a quadrilateral that has sides of lengths 1, 4, 7 and 8?"
+        },
+        {
+          "number": 3,
+          "problem": "Suppose there are $n$ numbers $x_1, x_2, \\ldots, x_n$, each of them being 0, 1 or $-2$. If $x_1+x_2+\\cdots+x_n=-5$ and $x_1^2+x_2^2+\\cdots+x_n^2=19$, then what is the value of $x_1^5+x_2^5+\\cdots+x_n^5$?"
+        },
+        {
+          "number": 4,
+          "problem": "A snail crawls along a plane, making a $90^\\circ$ turn after every metre travelled. What is the maximum possible distance between its final and initial positions if the snail has crawled 300 metres, having made 99 left turns and 200 right turns?"
+        },
+        {
+          "number": 5,
+          "problem": "In a quadrilateral $ABDC$, $AB+BC+CD=4$ and area of $ABDC=2$. Find $AD$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $f_1(x)=\\dfrac{2x-1}{x+1}$. Define $f_{k+1}(x)=f_1(f_k(x))$ for $k=1, 2, 3, \\ldots$. Given that $f_{35}(x)$ and $f_5(x)$ are the same, find $f_{28}(\\sqrt{2})$."
+        },
+        {
+          "number": 7,
+          "problem": "The function $f$ satisfies $f(x)+f(y)=f(x+y)-xy-1$ for every real $x$, $y$. If $f(1)=1$, find the negative integer $n$ such that $f(n)=n$."
+        },
+        {
+          "number": 8,
+          "problem": "Find the smallest possible value of $n$ that guarantees the following property: For any set of $n$ integers $a_1, a_2, \\ldots, a_n$, there exist two distinct members whose sum or difference is divisible by 1995."
+        },
+        {
+          "number": 9,
+          "problem": "Of all possible ratios of any two sides of a triangle (including degenerate triangles), denote by $q$ the ratio nearest to the value one. Find the greatest possible value of $|q-1|$."
+        },
+        {
+          "number": 10,
+          "problem": "Let $a$, $b$, $c$ be the distinct roots of the equation $x^3-2x^2-3x-4=0$. Find $$\\frac{a^5-b^5}{a-b}+\\frac{b^5-c^5}{b-c}+\\frac{c^5-a^5}{c-a}.$$"
+        },
+        {
+          "number": 11,
+          "problem": "Find the greatest natural number possessing the property that each of its digits except the first and the last one is less than the arithmetic mean of the two neighbouring digits."
+        },
+        {
+          "number": 12,
+          "problem": "Consider a geometric progression of 5 terms, each a positive integer. The sum of the 5 terms is 211. Denote by $S$ the sum of those terms in the progression which are squares of integers. What is the value of $S$?"
+        },
+        {
+          "number": 13,
+          "problem": "Let $x$, $y$ and $z$ be distinct integers satisfying $$(x-y)(y-z)(z-x)=x+y+z.$$ Find the minimum value of $|x+y+z|$."
+        },
+        {
+          "number": 14,
+          "problem": "Find the smallest positive integer which can be expressed as the sum of distinct positive integers $a$, $b$ and $c$ such that $a+b$, $a+c$ and $b+c$ are perfect squares."
+        },
+        {
+          "number": 15,
+          "problem": "The area of $\\triangle ABC$ is 60. Points $D$ and $E$ trisect side $AC$ ($D$ being nearer $A$). The median to $BC$ intersects $BD$ at $G$ and $BE$ at $H$. Find the area of $\\triangle BGH$."
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $x=\\dfrac{1+\\sqrt{1996}}{2}$, then $4x^3-1999x-1997$ equals\n\n(a) $0$ (b) $1$ (c) $-1$ (d) $2$ (e) $-2$"
+        },
+        {
+          "number": 2,
+          "problem": "By simplifying $\\sqrt{8+2\\sqrt{10+2\\sqrt{5}}}+\\sqrt{8-2\\sqrt{10+2\\sqrt{5}}}$, one obtains\n\n(a) $\\sqrt{10}+\\sqrt{2}$ (b) $2\\sqrt{5}+2$ (c) $4$ (d) $2\\sqrt{5}-2$ (e) $\\sqrt{10}-\\sqrt{2}$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a_n=n^2+n+2$ for $n\\ge 1$, then in the sequence $a_1, a_2, a_3, \\ldots$,\n\n(a) some $a_n$ are prime numbers, but there are only finitely many of them.\n\n(b) there are infinitely many $a_n$ which are prime numbers.\n\n(c) some $a_n$ are perfect squares, but there are only finitely many of them.\n\n(d) there are infinitely many perfect squares.\n\n(e) all $a_n$ are not prime numbers nor perfect squares."
+        },
+        {
+          "number": 4,
+          "problem": "For every positive integer $n$, the number of integral solutions of $x^2+xy+y^2=n$ is a multiple of\n\n(a) $4$ (b) $5$ (c) $6$ (d) $7$ (e) $8$"
+        },
+        {
+          "number": 5,
+          "problem": "If $f(x)=ax^2-c$ satisfies $-4\\le f(1)\\le -1$ and $-1\\le f(2)\\le 5$, then\n\n(a) $7\\le f(3)\\le 26$\n\n(b) $-1\\le f(3)\\le 20$\n\n(c) $-4\\le f(3)\\le 15$\n\n(d) $-\\dfrac{28}{3}\\le f(3)\\le \\dfrac{35}{3}$\n\n(e) $\\dfrac{8}{3}\\le f(3)\\le \\dfrac{13}{3}$"
+        },
+        {
+          "number": 6,
+          "problem": "Let $ABCDEFGHI$ be a regular polygon with 9 sides, $a=AB$, $b=AC$ and $d=AE$, then\n\n(a) $d=\\sqrt{a^2+b^2}$\n\n(b) $b=\\sqrt{ad}$\n\n(c) $d=\\sqrt{a^2+ab+b^2}$\n\n(d) $b=\\dfrac{a+d}{2}$\n\n(e) $d=a+b$"
+        },
+        {
+          "number": 7,
+          "problem": "$ABC$ is a triangle with sides 3, 4 and 5 units. $A'$ is the mirror image of the point $A$ across line $BC$. Similarly $B'$ and $C'$ are mirror images of $B$ and $C$ across lines $CA$ and $AB$ respectively. Find the area of $\\triangle A'B'C'$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $f$ be a function such that $f(x+y^2)=f(x)+2(f(y))^2$ and $f(1)\\ne 0$. Find the value of $f(1996)$."
+        },
+        {
+          "number": 9,
+          "problem": "The integer $P$ is the product formed by multiplying together all the terms of the arithmetic progression $4, 8, 12, \\ldots, 1996$. It is found that (in base 10) $P$ ends with exactly $n$ zeros. Find the value of $n$."
+        },
+        {
+          "number": 10,
+          "problem": "In $\\triangle ABC$, $AB^2+BC^2+CA^2$ is numerically equal to five times the area of $\\triangle ABC$. If $AB=1996$, find the value of $\\cot\\angle A+\\cot\\angle B+\\cot\\angle C$."
+        },
+        {
+          "number": 11,
+          "problem": "For all integers $x$, the function $f(x)$ satisfies $f(x+1)=\\dfrac{1+f(x)}{1-f(x)}$. If $f(1)=2$, find the value of $f(1996)$."
+        },
+        {
+          "number": 12,
+          "problem": "A number is constructed by writing down the positive integers in order starting from 1 until a number of 1996 digits is obtained: $$\\underbrace{123456789101112131415161718192021\\ldots}_{1996\\text{ digits}}.$$ Find the remainder when this number is divided by 9."
+        },
+        {
+          "number": 13,
+          "problem": "Find the number of positive integers $a<100$ such that $a^3+23$ is divisible by 24."
+        },
+        {
+          "number": 14,
+          "problem": "$ABC$ is a triangle in which $2\\angle CBA=\\angle CAB+\\angle ACB$. $P$ is a point inside $\\triangle ABC$ such that $\\angle APB=\\angle BPC=\\angle CPA$. Find the length of $PB$ if $PA=18$ and $PC=8$."
+        },
+        {
+          "number": 15,
+          "problem": "Circles of radii 1 and 2 are externally tangent to each other and are internally tangent to a circle of radius 3. The circle of radius 3 has a chord that is a common external tangent of the other circles. Find the length of this chord."
+        },
+        {
+          "number": 16,
+          "problem": "Find the largest integer $n$ such that $n^2+1996n$ is a perfect square."
+        },
+        {
+          "number": 17,
+          "problem": "Let $a_n=\\dfrac{\\log_{10}(n+1)}{\\log_{10}n}$ for $n=2, 3, \\ldots, 1023$. Suppose $\\displaystyle\\sum_{n=2}^{1023}\\frac{1}{\\log_{a_n}100}=\\frac{p}{q}$, where the positive integers $p$ and $q$ have no common factor greater than 1. Find the value of $p+q$."
+        },
+        {
+          "number": 18,
+          "problem": "Suppose the sum of squares of two numbers is 468 and the sum of their L.C.M. and H.C.F. is 42. Find the sum of these two numbers."
+        },
+        {
+          "number": 19,
+          "problem": "Let $n=2^{19}3^{96}$. Find the number of positive factors of $n^2$ that are less than $n$ and do not divide $n$."
+        },
+        {
+          "number": 20,
+          "problem": "$ABCDEFGH$ is an octagon inscribed in a circle of radius $R$. $AB=BC=CD=DE=1$ and $EF=FG=GH=HA=3$. Find the value of $R^2$ in the form $a+\\sqrt{b}$, where $a$ and $b$ are rational numbers."
+        },
+        {
+          "number": 21,
+          "problem": "Suppose the sequence $a_1, a_2, a_3, \\ldots$ satisfies the relation $a_{n+2}=a_{n+1}-a_n$ and $a_2=2$. If the sum of the first 1996 terms is 2000, then find the sum of the first 2000 terms."
+        },
+        {
+          "number": 22,
+          "problem": "Let $[x]$ represent the greatest integer not exceeding $x$. Find the non-integral solution(s) of the equation $x+\\dfrac{96}{x}=[x]+\\dfrac{96}{[x]}$."
+        },
+        {
+          "number": 23,
+          "problem": "In $\\triangle ABC$, $E$ is the mid-point of side $BC$ and $D$ is a point on side $AC$. If $AC=1$, $\\angle BAC=60^\\circ$, $\\angle ACB=20^\\circ$ and $\\angle DEC=80^\\circ$, find the area of $\\triangle ABC$ plus twice the area of $\\triangle CDE$."
+        },
+        {
+          "number": 24,
+          "problem": "$\\triangle ABC$ is isosceles with $AB=AC$ and altitude $AM=11$. Suppose that there is a point $D$ on $AM$ with $AD=10$ and $\\angle BDC=3\\angle BAC$. Find the perimeter of $\\triangle ABC$."
+        },
+        {
+          "number": 25,
+          "problem": "Let $f(n)$ be the integer closest to $\\sqrt[4]{n}$. Find $\\displaystyle\\sum_{k=1}^{1996}\\frac{1}{f(k)}$."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a$, $b$, $c$ be real numbers such that $\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=2$ and $\\dfrac{1}{a^2}+\\dfrac{1}{b^2}+\\dfrac{1}{c^2}=1$. Find the value of $\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}$."
+        },
+        {
+          "number": 2,
+          "problem": "On a Cartesian plane every point with integral coordinates is called a lattice point. Let $P_n$ be the lattice point $(n, n+3)$ and $f(n)$ be the number of lattice points (excluding the two endpoints) on the line segment joining the origin $O$ and the point $P_n$. Find $f(1)+f(2)+\\cdots+f(1997)$."
+        },
+        {
+          "number": 3,
+          "problem": "A positive integer is said to be 'good' if the digits of the integer can be divided into two groups such that the sum of the digits in one group is equal to the sum in the other. Find the smallest positive integer $n$ such that $n$ and $n+1$ are 'good'."
+        },
+        {
+          "number": 4,
+          "problem": "Let $x$, $y$, $z$ be real numbers such that $x+y+z=5$ and $xy+yz+zx=3$. Find the maximum value of $z$."
+        },
+        {
+          "number": 5,
+          "problem": "Find the number of diagonals that can be drawn in a convex polygon of $n$ $(n\\ge 4)$ sides."
+        },
+        {
+          "number": 6,
+          "problem": "Find the time between 1:00 p.m. and 1:30 p.m., correct to the nearest minute, when the hour hand and minute hand of a clock form an angle of $100^\\circ$."
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $AB=41$ cm, $AC=9$ cm and $BC=40$ cm. Find the radius of the inscribed circle of $\\triangle ABC$."
+        },
+        {
+          "number": 8,
+          "problem": "Two perpendicular chords of a circle are at distances $a$ and $b$ respectively from the centre. These two chords divide the circle into four pieces. Consider the sum of the areas of the largest and the smallest pieces, and the sum of the areas of the other two pieces. Find the distance between these two sums."
+        },
+        {
+          "number": 9,
+          "problem": "How many integers from 1 to 1997 have the sum of their digits divisible by 5?"
+        },
+        {
+          "number": 10,
+          "problem": "The faces of a cube are labelled with different positive integers such that the numbers on any two adjacent faces differ by at least two. Find the minimum value of the sum of all six numbers."
+        },
+        {
+          "number": 11,
+          "problem": "A square whose sides are of integral lengths is cut into 25 smaller squares whose sides are also of integral lengths. Exactly 24 of these smaller squares are unit squares. Find the area of the original square."
+        },
+        {
+          "number": 12,
+          "problem": "Each of the numbers $1, 2, 3, \\ldots, 25$ is written into a $5\\times 5$ table, such that the numbers in each row are in increasing order. Find the maximum value of the sum of the numbers in the third column."
+        },
+        {
+          "number": 13,
+          "problem": "Let $S=1+\\dfrac{1}{\\sqrt{2}}+\\dfrac{1}{\\sqrt{3}}+\\cdots+\\dfrac{1}{\\sqrt{80}}$. Find the integer $n$ such that $n-1<S<n$."
+        },
+        {
+          "number": 14,
+          "problem": "A positive integer $N$ (in base 10) is composed of the digits 0 and 1 only, and is divisible by 2475. Find the smallest possible number of digits of $N$."
+        },
+        {
+          "number": 15,
+          "problem": "20 football teams take part in a tournament. $M$ matches have been played and it is found that\n\n(a) between any two teams at most one match has been played, and\n\n(b) among any three teams at least one match has been played between two of them.\n\nWhat is the smallest possible value of $M$?"
+        },
+        {
+          "number": 16,
+          "problem": "Let $a_n$ be the integer closest to $\\sqrt{n}$. Find $\\dfrac{1}{a_1}+\\dfrac{1}{a_2}+\\dfrac{1}{a_3}+\\cdots+\\dfrac{1}{a_{1997}}$."
+        },
+        {
+          "number": 17,
+          "problem": "$ABCDEF$ is a regular hexagon with $AB=1$. $P$ and $S$ are the midpoints of $AB$ and $ED$ respectively. The circle with $PS$ as diameter cuts the lines $PE$ and $PD$ at $Q$ and $R$ respectively. Find the area of the quadrilateral $QRDE$."
+        },
+        {
+          "number": 18,
+          "problem": "Points $D$ and $E$ are points inside an equilateral triangle $ABC$ such that $DE=1$, $DA=EA=\\sqrt{7}$ and $DB=EC=2$. Find the length of $AB$."
+        },
+        {
+          "number": 19,
+          "problem": "In $\\triangle ABC$, $E$, $F$, $G$ are points on $AB$, $BC$, $CA$ respectively such that $AE:EB=BF:FC=CG:GA=1:3$. $K$, $L$, $M$ are the intersection points of the lines $AF$ and $CE$, $BG$ and $AF$, $CE$ and $BG$, respectively. Suppose the area of $\\triangle ABC$ is 1; find the area of $\\triangle KLM$."
+        },
+        {
+          "number": 20,
+          "problem": "Three lines are drawn through a point in a triangle parallel to its sides. The segments intercepted on these lines by the triangle turn out to have equal lengths. Given the triangle's side lengths $a$, $b$, $c$, find the length of the segments."
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a sequence $\\{a_1, a_2, \\ldots, a_n\\}$, $a_1 = 1$, $4a_n a_{n+1} = (a_n + a_{n+1} - 1)^2$ and $a_{n+1} > a_n$. Find $a_{1998}$."
+        },
+        {
+          "number": 2,
+          "problem": "Given that $H_k = \\dfrac{k(k-1)}{2}\\cos\\dfrac{k(k-1)\\pi}{2}$. Find $H_{19} + H_{20} + \\cdots + H_{98}$."
+        },
+        {
+          "number": 3,
+          "problem": "A book has 30 chapters. The lengths of the chapters are 1, 2, …, 30 pages. Chapter One starts from page 1 of the book, and each chapter starts from a new page. At most how many chapters can start from an odd-numbered page?"
+        },
+        {
+          "number": 4,
+          "problem": "On a square carpet of size $123 \\times 123$, each unit square is coloured red or blue. Each red square not lying on the edge of the carpet has exactly five blue squares among its eight neighbours. Each blue square not lying on the edge of the carpet has exactly four red squares among its eight neighbours. Find the number of red squares on the carpet."
+        },
+        {
+          "number": 5,
+          "problem": "In $\\triangle ABC$, $\\angle C = 90^\\circ$, $\\angle A = 30^\\circ$ and $AB = 1$. Let $\\triangle ABD$, $\\triangle ACE$ and $\\triangle BCF$ be equilateral triangles with $D$, $E$, $F$ lying outside $\\triangle ABC$. Let $DE$ intersect $AB$ at $G$. Find the area of $\\triangle DGF$."
+        },
+        {
+          "number": 6,
+          "problem": "$ABCDEF$ is a regular hexagon. $M$, $N$ are points on the segments $AC$, $CE$ respectively such that $\\dfrac{AM}{AC} = \\dfrac{CN}{CE} = r$. If $B$, $M$, $N$ are collinear, find $r$."
+        },
+        {
+          "number": 7,
+          "problem": "$\\triangle ABC$ is an equilateral triangle and $P$ is a variable point on the same plane such that $\\triangle PAB$, $\\triangle PBC$ and $\\triangle PCA$ are isosceles triangles. In how many different positions can $P$ lie?"
+        },
+        {
+          "number": 8,
+          "problem": "The lengths of the three medians $AD$, $BE$ and $CF$ of $\\triangle ABC$ are 9, 12 and 15 respectively. Find the area of $\\triangle ABC$."
+        },
+        {
+          "number": 9,
+          "problem": "Find the 4-digit number such that, when the order of its digits is reversed, the new value is 4 times the original one."
+        },
+        {
+          "number": 10,
+          "problem": "Determine the number of ordered pairs $(x, y)$, where $x$ and $y$ are integers satisfying the equation $2xy - 5x + y = 55$."
+        },
+        {
+          "number": 11,
+          "problem": "Given that $[x]$ represents the greatest integer not exceeding $x$. Find the last three digits of the integer $\\left[\\dfrac{10^{99}}{10^{33} + 3}\\right]$."
+        },
+        {
+          "number": 12,
+          "problem": "Let $x_0 = 5$ and $x_{n+1} = x_n + \\dfrac{1}{x_n}$ for $n = 0, 1, 2, \\ldots$. Find the integer closest to $x_{1998}$."
+        },
+        {
+          "number": 13,
+          "problem": "At least how many of the '+' signs in the expression $+1 + 2 + 3 + \\cdots + 100$ must be replaced by '−' signs so that its value is 1998?"
+        },
+        {
+          "number": 14,
+          "problem": "Except for the first two terms, each term of the sequence $1000, x, 1000 - x, \\ldots$ is obtained by subtracting the preceding term from the one before that. The last term is the first negative term encountered. What positive integer $x$ produces a sequence of maximum length?"
+        },
+        {
+          "number": 15,
+          "problem": "In $\\triangle ABC$, $\\tan A : \\tan B : \\tan C = 1 : 2 : 3$. Find $\\dfrac{AC}{AB}$."
+        },
+        {
+          "number": 16,
+          "problem": "Find the smallest positive integer $n$ such that $1997^n - 1$ is divisible by $2^{1998}$."
+        },
+        {
+          "number": 17,
+          "problem": "In how many ways can 1998 be expressed as the sum of one or more consecutive integers?"
+        },
+        {
+          "number": 18,
+          "problem": "What is the largest integer $k$ such that $\\dfrac{1001 \\times 1002 \\times \\cdots \\times 1998}{11^k}$ is an integer?"
+        },
+        {
+          "number": 19,
+          "problem": "Find the smallest multiple of 84 whose digits consist entirely of 6's and 7's only."
+        },
+        {
+          "number": 20,
+          "problem": "An $m \\times n \\times p$ rectangular box has half the volume of an $(m + 2) \\times (n + 2) \\times (p + 2)$ rectangular box, where $m$, $n$ and $p$ are integers and $m \\le n \\le p$. What is the largest possible value of $p$?"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $A_k = \\dfrac{19^k + 99^k}{k!}$ for $k = 1, 2, 3, \\ldots$. Find $k$ such that $A_k$ is greatest."
+        },
+        {
+          "number": 2,
+          "problem": "Let $x$, $y$, $z$ be real numbers satisfying $\\dfrac{1}{x} + \\dfrac{1}{y+z} = \\dfrac{1}{2}$, $\\dfrac{1}{y} + \\dfrac{1}{z+x} = \\dfrac{1}{3}$, $\\dfrac{1}{z} + \\dfrac{1}{x+y} = \\dfrac{1}{4}$. Find $x$."
+        },
+        {
+          "number": 3,
+          "problem": "A solid pyramid $VABCD$, with a quadrilateral base $ABCD$, is to be coloured on each of the five faces such that no two faces with a common edge will have the same colour. If five different colours are available, what is the number of ways to colour the pyramid?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $x$, $y$ be integers satisfying $y^2 + 3x^2y^2 = 30x^2 + 517$. Find $3x^2y^2$."
+        },
+        {
+          "number": 5,
+          "problem": "The digits used to number the pages of a book were counted, and the total number of digits used was 2001. Find the number of pages in the book."
+        },
+        {
+          "number": 6,
+          "problem": "There exist integers $n$ with the property that $n!$ may be expressed as the product of $(n-3)$ consecutive integers. For example, $6! = 10 \\times 9 \\times 8$. Find the largest integer satisfying this property."
+        },
+        {
+          "number": 7,
+          "problem": "Find all possible $x$ that satisfy the equation $\\left[\\dfrac{5 + 6x}{8}\\right] = \\dfrac{15x - 7}{5}$. Here $[u]$ denotes the greatest integer less than or equal to $u$."
+        },
+        {
+          "number": 8,
+          "problem": "Determine the number of acute-angled triangles with consecutive integer sides and of perimeter not exceeding 100."
+        },
+        {
+          "number": 9,
+          "problem": "$ABCD$ is a convex quadrilateral with $AD$ parallel to $BC$, $AC$ perpendicular to $BD$, and $AC = 5$. $CF$ is the perpendicular from $C$ to $AD$ and $CF = 4$. Find the area of $ABCD$."
+        },
+        {
+          "number": 10,
+          "problem": "$A$, $B$, $C$ and $D$ are four vertices of a cyclic quadrilateral, $AC$ and $BD$ meet at $E$. If $BC = CD = 4$, $AE = 6$, and $BE$ and $DE$ are integers, find $BD$."
+        },
+        {
+          "number": 11,
+          "problem": "A sequence of integers $a_1, a_2, \\ldots, a_n, \\ldots$ is defined by $a_n = a_{n-1} - a_{n-2}$ for $n \\ge 3$. The sum of the first 1588 terms of the sequence is 1997, and the sum of the first 1997 terms is 1588. Find the sum of the first 1999 terms of the sequence."
+        },
+        {
+          "number": 12,
+          "problem": "Find the integer $n$ satisfying $\\left[\\dfrac{n}{1!}\\right] + \\left[\\dfrac{n}{2!}\\right] + \\cdots + \\left[\\dfrac{n}{10!}\\right] = 1999$. Here $[x]$ denotes the greatest integer less than or equal to $x$."
+        },
+        {
+          "number": 13,
+          "problem": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\dfrac{8}{15} < \\dfrac{n}{n+k} < \\dfrac{7}{13}$?"
+        },
+        {
+          "number": 14,
+          "problem": "The pages of a book are numbered from 1 to $n$. A boy adds up all the page numbers and gets the sum of 1922. It is known that by mistake he adds a certain number twice. What is that number?"
+        },
+        {
+          "number": 15,
+          "problem": "Four consecutive even integers are removed from the sequence of integers $1, 2, \\ldots, n$, and the average of the remaining numbers is 51.5625. Determine the largest integer removed."
+        },
+        {
+          "number": 16,
+          "problem": "The sequence $1, 3, 4, 9, 10, 12, 13, \\ldots$ consists of all those positive integers, listed in increasing order, which are powers of 3 or sums of distinct powers of 3. Find the 200th term of the sequence."
+        },
+        {
+          "number": 17,
+          "problem": "In $\\triangle ABC$, $AB = AC = 12$, $P$ is a point on $BC$ such that $AP = 8$. Find $PB \\cdot PC$."
+        },
+        {
+          "number": 18,
+          "problem": "Let $ABCD$ be a rhombus with $AB = 5$. Suppose $AC \\ge 6 \\ge BD$, determine the maximum value of $AC + BD$."
+        },
+        {
+          "number": 19,
+          "problem": "A square $ABCD$ of side 12 is divided into 144 unit squares. A circle of radius 6 is drawn touching all the four sides of $ABCD$. Find the number of unit squares which lie completely within the circle."
+        },
+        {
+          "number": 20,
+          "problem": "Determine the minimum value of $k$, so that for any $k$ numbers chosen from $1, 2, \\ldots, 91$, there exist two of them, $p$ and $q$, such that $\\dfrac{2}{3} \\le \\dfrac{p}{q} \\le \\dfrac{3}{2}$."
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the sum of all real $x$ satisfying $(2^x - 4)^3 + (4^x - 2)^3 = (4^x + 2^x - 6)^3$."
+        },
+        {
+          "number": 2,
+          "problem": "In how many ways can $30!$ be expressed as the product of two integers $p$ and $q$ such that $0 < \\dfrac{p}{q} < 1$ and $p$, $q$ are relatively prime?"
+        },
+        {
+          "number": 3,
+          "problem": "Find the coefficient of $x^{17}$ in the expansion of $(1 + x^5 + x^7)^{20}$."
+        },
+        {
+          "number": 4,
+          "problem": "If $[x]$ represents the greatest integer less than or equal to $x$, find the sum of $$\\left[\\frac{1 \\times 1999}{2001}\\right] + \\left[\\frac{2 \\times 1999}{2001}\\right] + \\left[\\frac{3 \\times 1999}{2001}\\right] + \\cdots + \\left[\\frac{2000 \\times 1999}{2001}\\right].$$"
+        },
+        {
+          "number": 5,
+          "problem": "If $x$, $y$ are nonzero numbers satisfying $x^2 + xy + y^2 = 0$. Find the value of $$\\left(\\frac{x}{x+y}\\right)^{2001} + \\left(\\frac{y}{x+y}\\right)^{2001}.$$"
+        },
+        {
+          "number": 6,
+          "problem": "For how many real numbers $a$ does the quadratic equation $x^2 + ax + 8a = 0$ have only integral roots?"
+        },
+        {
+          "number": 7,
+          "problem": "Suppose $\\tan\\alpha$ and $\\tan\\beta$ are the roots of $x^2 + \\pi x + \\sqrt{2} = 0$. Evaluate $$\\sin^2(\\alpha + \\beta) + \\pi \\sin(\\alpha + \\beta)\\cos(\\alpha + \\beta) + \\sqrt{2}\\cos^2(\\alpha + \\beta).$$"
+        },
+        {
+          "number": 8,
+          "problem": "2000 lamps are controlled by 2000 switches, numbered $1, 2, 3, \\ldots, 2000$. A click on each switch will either turn the lamp on or off. In the beginning, all the lamps are off. On the first day, all the switches are clicked once. On the second day, all the switches numbered 2 or a multiple of 2 are clicked once. Similarly on the $n$th day, all the switches numbered $n$ or a multiple of $n$ are clicked once, and so on. How many lamps will be on after the operation on the 2000th day?"
+        },
+        {
+          "number": 9,
+          "problem": "Point $B$ is in the exterior of the regular $n$-sided polygon $A_1A_2\\cdots A_n$ and $A_1A_2B$ is an equilateral triangle. Find the largest value of $n$ such that $A_n$, $A_1$ and $B$ are consecutive vertices of a regular polygon."
+        },
+        {
+          "number": 10,
+          "problem": "There are three parallel lines $L_1$, $L_2$ and $L_3$ on the plane, with $L_2$ in between. The distance between $L_1$ and $L_2$ is 4, and the distance between $L_2$ and $L_3$ is 3. $A$, $B$ and $C$ are points on $L_1$, $L_2$ and $L_3$ respectively, such that $\\triangle ABC$ is an equilateral triangle. Find the area of the triangle."
+        },
+        {
+          "number": 11,
+          "problem": "A circle is inscribed in $\\triangle ABC$. $D$, $E$ are points on $AB$ and $AC$ respectively, such that $DE$ is parallel to $BC$ and is tangent to the circle. If the perimeter of $\\triangle ABC$ is $p$, find the maximum length of $DE$."
+        },
+        {
+          "number": 12,
+          "problem": "In $\\triangle ABC$, $BC = 5$, $AC = 12$, $AB = 13$. $D$, $E$ are points on $AB$ and $AC$ respectively such that $DE$ divides $\\triangle ABC$ into two parts of equal area. Find the minimum length of $DE$."
+        },
+        {
+          "number": 13,
+          "problem": "$D$ is a point inside $\\triangle ABC$. $PDS$, $QDT$ and $RDU$ are lines parallel to $BA$, $CA$ and $CB$ respectively such that $P$, $Q$ lie on $BC$, $R$, $S$ lie on $CA$, and $T$, $U$ lie on $AB$. If the areas of $\\triangle TUD$, $\\triangle PQD$ and $\\triangle RSD$ are respectively 8, 128 and 32, find the area of $\\triangle ABC$."
+        },
+        {
+          "number": 14,
+          "problem": "The numbers $x_1, x_2, \\ldots, x_{2000}$ are such that $|x_1 - x_2| + |x_2 - x_3| + \\cdots + |x_{1999} - x_{2000}| = 2000$. Find the largest value of $|y_1 - y_2| + |y_2 - y_3| + \\cdots + |y_{1999} - y_{2000}|$, where $$y_k = \\frac{x_1 + x_2 + \\cdots + x_k}{k}, \\quad \\text{for } k = 1, 2, \\ldots, 2000.$$"
+        },
+        {
+          "number": 15,
+          "problem": "There are $n$ distinct points on a plane. Eight different circles $C_1, C_2, \\ldots, C_8$ are drawn such that $C_1$ passes through one of the points, $C_2$ passes through two of the points, $C_3$ passes through three of the points, and so on. Find the minimum value of $n$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $S$ denote a finite sequence of the letters $a$ and $b$, and $f$ denote a function defined by $f(S) =$ the new sequence formed by changing all “a”s to “a, b” and all “b”s to “b, a”. For example, $f(b, a, a, b) = (b, a, a, b, a, b, b, a)$, and the number of pairs of consecutive “b”s in $f(b, a, a, b)$ is 1. If $f^{(n)}(S)$ denotes $f(f(\\cdots(S)\\cdots))$ ($n$ times), find the number of pairs of consecutive “b”s in $f^{(n)}(a)$."
+        },
+        {
+          "number": 17,
+          "problem": "The circumcircle of the isosceles triangle $ABC$ has $AB$ as a diameter. There is a circle $\\Gamma$ tangent to $BC$ at its midpoint $E$ and tangent to the minor arc $BC$ at $F$. If $AB = 4$, find the length of the tangent from $A$ to $\\Gamma$."
+        },
+        {
+          "number": 18,
+          "problem": "In $\\triangle ABC$, $BC$, $CA$ and $AB$ are divided by $P$, $Q$ and $R$ respectively in the same ratio. $AP$ intersects $BQ$ at $X$, $BQ$ intersects $CR$ at $Y$, and $CR$ intersects $AP$ at $Z$. Each of the areas of $\\triangle ARZ$, $\\triangle BPX$, $\\triangle CQY$ and $\\triangle XYZ$ equals $1\\ \\text{cm}^2$. Find the area of the quadrilateral $PCYX$."
+        },
+        {
+          "number": 19,
+          "problem": "$B$ is a point on the line segment $AC$ such that $AB = 1$ and $BC = 3$. Semicircles $\\Gamma_1$, $\\Gamma_2$, $\\Gamma_3$ are drawn with diameters $AC$, $AB$, $BC$ respectively, and all are on the same side of $AC$. Let $E$ be on $\\Gamma_1$ such that $EB \\perp AC$. Let $U$ on $\\Gamma_2$, $V$ on $\\Gamma_3$ be such that $UV$ is a common tangent to $\\Gamma_2$ and $\\Gamma_3$. Find the ratio of the area of $\\triangle EUV$ over the area of $\\triangle EAC$."
+        },
+        {
+          "number": 20,
+          "problem": "In each of 12 photographs, there are 3 women; the woman in the middle is the mother of the person on her left and is a sister of the person on her right. The women in the middle of the 12 photographs are all different persons. Determine the smallest number of different persons in the photographs."
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $\\underbrace{200120012001\\cdots2001}_{n\\ 2001\\text{'s}}729$ is divisible by 11, find the least possible value of $n$."
+        },
+        {
+          "number": 2,
+          "problem": "A carpenter sells armchairs, bookcases and cabinets. A person buys 8 armchairs, 11 bookcases and 2 cabinets and pays $\\$875$. Another person buys 3 armchairs, 2 bookcases and 5 cabinets and pays $\\$343$. Find the total cost of 1 armchair, 1 bookcase and 1 cabinet."
+        },
+        {
+          "number": 3,
+          "problem": "For any positive integer $n$, let $F(n)$ be the rightmost digit of $n$ in base 10 and let $T_n = F(n^2) - F(n)$, find the sum $T_1 + T_2 + T_3 + \\cdots + T_{2002}$."
+        },
+        {
+          "number": 4,
+          "problem": "Find the last two digits of the integer $2^{2002}(2^{2003} - 1)$ in base 10."
+        },
+        {
+          "number": 5,
+          "problem": "Let $x$, $y$, $z$ be positive numbers satisfying the equations $$x^2 + y^2 - z^2 = \\sqrt{3}\\,xy \\quad \\text{and} \\quad x^2 - y^2 + z^2 = \\sqrt{2}\\,xz.$$ Find the ratio $y : z$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $b$ be a positive number. It is known that the equation $x^6 - 2bx^3 + b^2 - 100 = 0$ has exactly two real roots whose difference is 2. Find the value of $b$."
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $\\angle BAC = 40^\\circ$ and $\\angle ABC = 60^\\circ$. $D$ and $E$ are points on sides $AC$ and $AB$ respectively such that $\\angle CBD = 40^\\circ$ and $\\angle BCE = 70^\\circ$. Let $BD$ intersect $CE$ at $F$ and $AF$ intersect $BC$ at $G$. Find $\\angle GFC$."
+        },
+        {
+          "number": 8,
+          "problem": "$ABCD$ is a square with side length 1 unit. $E$, $F$, $G$ and $H$ are points on $AB$, $BC$, $CD$ and $DA$ respectively such that $AE = BF = CG = DH = \\dfrac{20}{21}$. Find the area of the region bounded by $AF$, $BG$, $CH$ and $DE$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $x$, $y$ be real numbers such that $x^2 + 4y^2 - 4 = 0$. Find the maximum value of $$x^2 + 2xy + 4y^2 + x + 2y.$$"
+        },
+        {
+          "number": 10,
+          "problem": "A certain number of unit cubes are stuck together to form a cuboid. The six faces of the cuboid, none of which is a square, are painted. If $x$ is the number of unit cubes with no face painted, $y$ is the number of unit cubes with exactly 1 face painted and $z$ is the number of unit cubes with exactly 2 faces painted, then $x - y + z = 2002$. Find the volume of the cuboid."
+        },
+        {
+          "number": 11,
+          "problem": "In $\\triangle ABC$, $M$ and $N$ are two points on $BC$ such that $BM < BN$, $BM = NC = 4$ and $MN = 3$. If $\\angle BAM = \\angle MAN = \\angle NAC$, find the length of $AC$."
+        },
+        {
+          "number": 12,
+          "problem": "Find the number of 10-digit positive integers such that\n(a) each digit is either 1 or 2, and\n(b) there exist two consecutive 1's."
+        },
+        {
+          "number": 13,
+          "problem": "Integers $x$ and $y$ satisfy $5 \\times 10^7 > x > y$. Suppose $x - 2001$ and $y - 2001$ are respectively the squares of two consecutive integers and $d$ is the greatest common divisor (or highest common factor) of $x$ and $y$. Find $x$ when $d$ is maximum."
+        },
+        {
+          "number": 14,
+          "problem": "Let $[x]$ be the greatest integer less than or equal to $x$. If $|x + 1| - 1 = \\dfrac{x - [x]}{|x - 1|}$, find the largest possible value of $|x|$."
+        },
+        {
+          "number": 15,
+          "problem": "Find $k$ such that if $P$, $Q$, $R$, $S$ are points on sides $AB$, $BC$, $CD$, $DA$ respectively of a convex quadrilateral $ABCD$ and $$\\frac{AP}{PB} = \\frac{BQ}{QC} = \\frac{CR}{RD} = \\frac{DS}{SA} = k < 1,$$ then the area of $PQRS$ is 52% of the area of $ABCD$."
+        },
+        {
+          "number": 16,
+          "problem": "$(a, b, c, d)$ and $(a', b', c', d')$ are said to be distinct if and only if $a \\ne a'$ or $b \\ne b'$ or $c \\ne c'$ or $d \\ne d'$. Find the number of distinct $(a, b, c, d)$ such that $a$, $b$, $c$, $d$ are integers, $1 \\le a < b < c < d \\le 30$ and $a + d = b + c$."
+        },
+        {
+          "number": 17,
+          "problem": "$p$ is a prime number such that $\\dfrac{1}{p}$, in decimal notation, is a recurring decimal with a period of 7 digits. For example, 4649 is a possible value of $p$ because $\\dfrac{1}{4649} = 0.\\dot{0}00215\\dot{1} = 0.00021510002151\\ldots$. Find another possible value of $p$."
+        },
+        {
+          "number": 18,
+          "problem": "A triangular shape paper has sides of lengths $\\sqrt{2}$, $\\dfrac{4}{3}$, $\\dfrac{\\sqrt{10}}{3}$ units. The paper is folded along a line perpendicular to the side of length $\\dfrac{4}{3}$. Find the largest possible overlapped area."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a positive integer such that no matter how $10^n$ is expressed as the product of two positive integers, at least one of these two integers contains the digit 0. Find the smallest possible value of $n$."
+        },
+        {
+          "number": 2,
+          "problem": "A clock has an hour hand of length 3 and a minute hand of length 4. From 1:00 am to 1:00 pm of the same day, find the number of occurrences when the distance between the tips of the two hands is an integer."
+        },
+        {
+          "number": 3,
+          "problem": "Find the sum of all integers from 1 to 1000 which contain at least one “7” in their digits."
+        },
+        {
+          "number": 4,
+          "problem": "A multiple choice test consists of 100 questions. If a student answers a question correctly, he will get 4 marks; if he answers a question wrongly, he will get $-1$ mark. He will get 0 mark for an unanswered question. Determine the number of different total marks of the test. (A total mark can be negative.)"
+        },
+        {
+          "number": 5,
+          "problem": "A positive integer is said to be a “palindrome” if it reads the same from left to right as from right to left. For example 2002 is a palindrome. Find the sum of all 4-digit palindromes."
+        },
+        {
+          "number": 6,
+          "problem": "Points $A$ and $B$ lie on a plane. A straight line passing through $A$ will divide the plane into 2 regions. A further straight line through $B$ will altogether divide the plane into 4 regions, and so on. If 1002 and 1000 straight lines are drawn passing through $A$ and $B$ respectively, what is the maximum number of regions formed?"
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $X$, $Y$ are points on $BC$ such that $BX = XY = YC$, $M$, $N$ are points on $AC$ such that $AM = MN = NC$. $BM$ and $BN$ intersect $AY$ at $S$ and $R$ respectively. If the area of $\\triangle ABC$ is 1, find the area of $SMNR$."
+        },
+        {
+          "number": 8,
+          "problem": "Given that $0.3010 < \\log 2 < 0.3011$ and $0.4771 < \\log 3 < 0.4772$. Find the leftmost digit of $12^{37}$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $x_1, y_1, x_2, y_2$ be real numbers satisfying the equations $x_1^2 + 5x_2^2 = 10$, $x_2y_1 - x_1y_2 = 5$ and $x_1y_1 + 5x_2y_2 = \\sqrt{105}$. Find the value of $y_1^2 + 5y_2^2$."
+        },
+        {
+          "number": 10,
+          "problem": "How many positive integers less than 500 have exactly 15 positive integer factors?"
+        },
+        {
+          "number": 11,
+          "problem": "Find the 2002nd positive integer that is not the difference of two square integers."
+        },
+        {
+          "number": 12,
+          "problem": "In trapezium $ABCD$, $BC \\perp AB$, $BC \\perp CD$ and $AC \\perp BD$. Given $AB = \\sqrt{11}$ and $AD = \\sqrt{1001}$. Find $BC$."
+        },
+        {
+          "number": 13,
+          "problem": "Let $ABCD$ be a square of side 5, $E$ a point on $BC$ such that $BE = 3$, $EC = 2$. Let $P$ be a variable point on the diagonal $BD$. Determine the length of $PB$ if $PE + PC$ is smallest."
+        },
+        {
+          "number": 14,
+          "problem": "In $\\triangle ABC$, $\\angle ACB = 3\\angle BAC$, $BC = 5$, $AB = 11$. Find $AC$."
+        },
+        {
+          "number": 15,
+          "problem": "In $\\triangle ABC$, $D$, $E$ and $F$ are respectively the midpoints of $AB$, $BC$ and $CA$. Furthermore $AB = 10$, $CD = 9$, $CD \\perp AE$. Find $BF$."
+        },
+        {
+          "number": 16,
+          "problem": "Each face and each vertex of a regular tetrahedron is coloured red or blue. How many different ways of colouring are there? (Two tetrahedrons are said to have the same colouring if we can rotate them suitably so that corresponding faces and vertices are of the same colour.)"
+        },
+        {
+          "number": 17,
+          "problem": "Let $a_0 = 2$ and for $n \\ge 1$, $a_n = \\dfrac{\\sqrt{3}\\,a_{n-1} + 1}{\\sqrt{3} - a_{n-1}}$. Find the value of $a_{2002}$ in the form $p + q\\sqrt{3}$ where $p$ and $q$ are rational numbers."
+        },
+        {
+          "number": 18,
+          "problem": "Let $A_1A_2\\cdots A_{2002}$ be a regular 2002-sided polygon. Each vertex $A_i$ is associated with a positive integer $a_i$ such that the following condition is satisfied: If $j_1, j_2, \\ldots, j_k$ are positive integers such that $k < 500$ and $A_{j_1}A_{j_2}\\cdots A_{j_k}$ is a regular $k$-sided polygon, then the values of $a_{j_1}, a_{j_2}, \\ldots, a_{j_k}$ are all different. Find the smallest possible value of $a_1 + a_2 + \\cdots + a_{2002}$."
+        },
+        {
+          "number": 19,
+          "problem": "There are 5 points on the plane. The following steps are used to construct lines. In step 1, connect all possible pairs of the points; it is found that no two lines are parallel, nor any two lines perpendicular to each other, also no three lines are concurrent. In step 2, perpendicular lines are drawn from each of the five given points to straight lines connecting any two of the other four points. What is the maximum number of points of intersection formed by the lines drawn in step 2, including the 5 given points?"
+        },
+        {
+          "number": 20,
+          "problem": "A rectangular piece of paper has integer side lengths. The paper is folded so that a pair of diagonally opposite vertices coincide, and it is found that the crease is of length 65. Find a possible value of the perimeter of the paper."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $x = \\sqrt[3]{4} + \\sqrt[3]{2} + 1$. Find the value of $\\left(1 + \\dfrac{1}{x}\\right)^3$."
+        },
+        {
+          "number": 2,
+          "problem": "15 students join a summer course. Every day, 3 students are on duty after school to clean the classroom. After the course, it was found that every pair of students have been on duty together exactly once. How many days does the course last for?"
+        },
+        {
+          "number": 3,
+          "problem": "Find the number of pairs of consecutive integers in the set $\\{1000, 1001, 1002, \\ldots, 2000\\}$ such that no carrying is required when the two integers are added."
+        },
+        {
+          "number": 4,
+          "problem": "A positive integer $x$ is called a magic number if, when $x$ is expressed in binary form, it possesses an even number of '1's. For example, the first five magic numbers are 3, 5, 6, 9 and 10. Find, in decimal notation, the sum of the first 2003 magic numbers."
+        },
+        {
+          "number": 5,
+          "problem": "A positive integer $n$ is said to be increasing if, by reversing the digits of $n$, we get an integer larger than $n$. For example, 2003 is increasing because, by reversing the digits of 2003, we get 3002, which is larger than 2003. How many four-digit positive integers are increasing?"
+        },
+        {
+          "number": 6,
+          "problem": "The ratio of the sides of a triangle, which is inscribed in a circle of radius $2\\sqrt{3}$, is $3 : 5 : 7$. Find the area of the triangle."
+        },
+        {
+          "number": 7,
+          "problem": "The number of apples produced by a group of farmers is less than 1000. It is known that they shared the apples in the following way. In turn, each farmer took from the collection of apples either exactly one-half or exactly one-third of the apples remaining in the collection. No apples were cut into pieces. After each farmer had taken his share, the rest was given to charity. Find the greatest number of farmers that could take part in the apple sharing."
+        },
+        {
+          "number": 8,
+          "problem": "Let $a$ and $b$ be positive integers such that $90 < a + b < 99$ and $0.9 < \\dfrac{a}{b} < 0.91$. Find $ab$."
+        },
+        {
+          "number": 9,
+          "problem": "Find an integer $x$ such that $\\left(1 + \\dfrac{1}{x}\\right)^{x+1} = \\left(1 + \\dfrac{1}{2003}\\right)^{2003}$."
+        },
+        {
+          "number": 10,
+          "problem": "Simplify $(\\cos 42^\\circ + \\cos 102^\\circ + \\cos 114^\\circ + \\cos 174^\\circ)^2$ into a rational number."
+        },
+        {
+          "number": 11,
+          "problem": "On a certain planet there are 100 countries. They all agree to form unions, each with a maximum of 50 countries, and that each country will be joining a number of unions, so that every two different countries will belong to a same union. At least how many unions must be formed?"
+        },
+        {
+          "number": 12,
+          "problem": "Find the last two digits of $7 \\times 19 \\times 31 \\times \\cdots \\times 1999$. (Here $7, 19, 31, \\ldots, 1999$ form an arithmetic sequence of common difference 12.)"
+        },
+        {
+          "number": 13,
+          "problem": "$ABCDEFGH$ is a cube in which $ABCD$ is the top face, with vertices $H$, $G$, $F$ and $E$ directly below the vertices $A$, $B$, $C$ and $D$ respectively. A real number is assigned to each vertex. At each vertex, the average of the numbers in the three adjacent vertices is then computed. The averages obtained at $A$, $B$, $C$, $D$, $E$, $F$, $G$, $H$ are 1, 2, 3, 4, 5, 6, 7, 8 respectively. Find the number assigned to vertex $F$."
+        },
+        {
+          "number": 14,
+          "problem": "A regular 201-sided polygon is inscribed inside a circle of center $C$. Triangles are drawn by connecting any three of the 201 vertices of the polygon. How many of these triangles have the point $C$ lying inside the triangle?"
+        },
+        {
+          "number": 15,
+          "problem": "Given a rectangle $ABCD$, $X$ and $Y$ are respectively points on $AB$ and $BC$. Suppose the areas of the triangles $\\triangle AXD$, $\\triangle BXY$ and $\\triangle DYC$ are respectively 5, 4 and 3. Find the area of $\\triangle DXY$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $\\triangle ABC$ be an acute triangle, $BC = 5$. $E$ is a point on $AC$ such that $BE \\perp AC$, $F$ is a point on $AB$ such that $AF = BF$. Moreover, $BE = CF = 4$. Find the area of the triangle."
+        },
+        {
+          "number": 17,
+          "problem": "Given a triangle $\\triangle ABC$, $\\angle ABC = 80^\\circ$, $\\angle ACB = 70^\\circ$ and $BC = 2$. A perpendicular line is drawn from $A$ to $BC$, another perpendicular line drawn from $B$ to $AC$. The two perpendicular lines meet at $H$. Find the length of $AH$."
+        },
+        {
+          "number": 18,
+          "problem": "Let $A$ be a set containing only positive integers, and for any distinct elements $x$ and $y$ in $A$, $|x - y| \\ge \\dfrac{xy}{30}$. Determine at most how many elements $A$ may contain."
+        },
+        {
+          "number": 19,
+          "problem": "A man chooses two positive integers $m$ and $n$. He then defines a positive integer $k$ to be good if a triangle with side lengths $\\log m$, $\\log n$ and $\\log k$ exists. He finds that there are exactly 100 good numbers. Find the maximum possible value of $mn$."
+        },
+        {
+          "number": 20,
+          "problem": "The perimeter of triangle $ABC$, in which $AB < AC$, is 7 times the side length of $BC$. The inscribed circle of the triangle touches $BC$ at $E$, and the diameter $DE$ of the circle is drawn, cutting the median from $A$ to $BC$ at $F$. Find $\\dfrac{DF}{FE}$."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCDEFGH$ be a rectangular cuboid. How many acute-angled triangles are formed by joining any three vertices of the cuboid?"
+        },
+        {
+          "number": 2,
+          "problem": "A collector has $N$ precious stones. If he takes away the three heaviest stones then the total weight of the stones decreases by 35%. From the remaining stones if he takes away the three lightest stones the total weight further decreases by $\\dfrac{5}{13}$. Find $N$."
+        },
+        {
+          "number": 3,
+          "problem": "Denote by $[a]$ the greatest integer less than or equal to $a$. Let $N$ be an integer, $x$ and $y$ be numbers satisfying the simultaneous equations $$\\begin{cases} [x] + 2y = N + 2 \\\\ [y] + 2x = 3 - N \\end{cases}.$$ Find $x$ in terms of $N$."
+        },
+        {
+          "number": 4,
+          "problem": "A palindrome is a positive integer which is the same when reading from the right hand side or from the left hand side, e.g. 2002. Find the largest five-digit palindrome which is divisible by 101."
+        },
+        {
+          "number": 5,
+          "problem": "Evaluate $\\dfrac{3}{1! + 2! + 3!} + \\dfrac{4}{2! + 3! + 4!} + \\cdots + \\dfrac{2004}{2002! + 2003! + 2004!}$."
+        },
+        {
+          "number": 6,
+          "problem": "If $\\dfrac{(a-b)(b-c)(c-a)}{(a+b)(b+c)(c+a)} = \\dfrac{2004}{2005}$, find $\\dfrac{a}{a+b} + \\dfrac{b}{b+c} + \\dfrac{c}{c+a}$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $D$ be a point inside triangle $\\triangle ABC$ such that $AB = DC$, $\\angle DCA = 24^\\circ$, $\\angle DAC = 31^\\circ$ and $\\angle ABC = 55^\\circ$. Find $\\angle DAB$."
+        },
+        {
+          "number": 8,
+          "problem": "It is known that 999973 has exactly three distinct prime factors. Find the sum of these prime factors."
+        },
+        {
+          "number": 9,
+          "problem": "A person picks $n$ different prime numbers less than 150 and finds that they form an arithmetic sequence. What is the greatest possible value of $n$?"
+        },
+        {
+          "number": 10,
+          "problem": "Given a positive integer $n$, let $p(n)$ be the product of the non-zero digits of $n$. For example, $p(7) = 7$, $p(204) = 2 \\times 4 = 8$, etc. Let $S = p(1) + p(2) + \\cdots + p(999)$. What is the largest prime factor of $S$?"
+        },
+        {
+          "number": 11,
+          "problem": "If $$\\begin{cases} A = \\dfrac{1}{1 \\times 2} + \\dfrac{1}{3 \\times 4} + \\cdots + \\dfrac{1}{2003 \\times 2004} \\\\[2mm] B = \\dfrac{1}{1003 \\times 2004} + \\dfrac{1}{1004 \\times 2003} + \\cdots + \\dfrac{1}{2004 \\times 1003} \\end{cases},$$ find $\\dfrac{A}{B}$."
+        },
+        {
+          "number": 12,
+          "problem": "Find the number of 6-digit positive integers $\\overline{abcdef}$ satisfying the following two conditions:\n(a) Each digit is non-zero.\n(b) $a \\times b + c \\times d + e \\times f$ is even."
+        },
+        {
+          "number": 13,
+          "problem": "Find the area enclosed by the graph $x^2 + y^2 = |x| + |y|$ on the $xy$-plane."
+        },
+        {
+          "number": 14,
+          "problem": "Determine the number of ordered pairs of integers $(m, n)$ for which $mn \\ge 0$ and $m^3 + n^3 + 99mn = 33^3$."
+        },
+        {
+          "number": 15,
+          "problem": "A natural number $n$ is said to be lucky if $2^{-n}$ and $2^{-n-1}$ have the same number of significant figures when written in decimal notation. For example, 3 is lucky since $2^{-3} = 0.125$ and $2^{-4} = 0.0625$ have the same number of significant figures. On the other hand $2^{-5} = 0.03125$ has one more significant figure than 0.0625, so 4 is not lucky. Given that $\\log 2 = 0.301$ (correct to 3 significant figures), how many lucky numbers are less than 2004?"
+        },
+        {
+          "number": 16,
+          "problem": "A positive integer $n$ is said to be good if $3n$ is a re-ordering of the digits of $n$ when they are expressed in decimal notation. Find a four-digit good integer which is divisible by 11."
+        },
+        {
+          "number": 17,
+          "problem": "From any $n$-digit ($n > 1$) number $a$, we can obtain a $2n$-digit number $b$ by writing two copies of $a$ one after the other. If $\\dfrac{b}{a^2}$ is an integer, find the value of this integer."
+        },
+        {
+          "number": 18,
+          "problem": "Find the sum of all $x$ such that $0 \\le x \\le 360$ and $\\cos 12x^\\circ = 5\\sin 3x^\\circ + 9\\tan^2 x^\\circ + \\cot^2 x^\\circ$."
+        },
+        {
+          "number": 19,
+          "problem": "$ABC$ and $GBD$ are straight lines. $E$ is a point on $CD$ produced, and $AD$ meets $EG$ at $F$. If $\\angle CAD = \\angle EGD$, $EF = FG$, $AB : BC = 1 : 2$ and $CD : DE = 3 : 2$, find $BD : DF$."
+        },
+        {
+          "number": 20,
+          "problem": "For any positive integer $n$, let $f(n)$ denote the index of the highest power of 2 which divides $n!$, e.g. $f(10) = 8$ since $10! = 2^8 \\times 3^4 \\times 5^2 \\times 7$. Find the value of $f(1) + f(2) + \\cdots + f(1023)$."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\ldots, a_n$ be integers ($n > 1$) satisfying $a_1 + a_2 + \\cdots + a_n = a_1a_2\\cdots a_n = 2005$. Find the smallest possible value of $n$."
+        },
+        {
+          "number": 2,
+          "problem": "$ABC$ is an acute-angled triangle. $D$ is a point on $BC$ such that $BD : DC = 2 : 3$, while $E$ is a point on $AC$ such that $AE : EC = 3 : 4$. $AD$ and $BE$ meet at $F$. Find $\\dfrac{AF}{FD} \\times \\dfrac{BF}{FE}$."
+        },
+        {
+          "number": 3,
+          "problem": "Find the value of $\\dfrac{1}{1 + 1^2 + 1^4} + \\dfrac{2}{1 + 2^2 + 2^4} + \\dfrac{3}{1 + 3^2 + 3^4} + \\cdots + \\dfrac{100}{1 + 100^2 + 100^4}$."
+        },
+        {
+          "number": 4,
+          "problem": "A student is given a budget of $\\$10000$ to produce a rectangular banner for a school function. The length and width (in metres) of the banner must be integers. If each metre in length costs $\\$330$ while each metre in width costs $\\$450$, what is the maximum area (in $\\text{m}^2$) of the banner that can be produced?"
+        },
+        {
+          "number": 5,
+          "problem": "On the $xy$-plane, find the number of triangles whose vertices have integer coordinates $(x, y)$ satisfying $1 \\le x \\le 4$ and $1 \\le y \\le 4$."
+        },
+        {
+          "number": 6,
+          "problem": "If $m$ is a positive integer not exceeding 1000 and the fraction $\\dfrac{m+4}{m^2+7}$ is in its lowest terms, how many possible values of $m$ are there?"
+        },
+        {
+          "number": 7,
+          "problem": "A triangle has two medians of lengths 9 and 12. Find the largest possible area of the triangle. (Note: A median is a line segment joining a vertex of the triangle to the mid-point of the opposite side.)"
+        },
+        {
+          "number": 8,
+          "problem": "Find the smallest positive integer $k$ such that the equation $2xy - 3x - 5y = k$ has an odd number of positive integral solutions."
+        },
+        {
+          "number": 9,
+          "problem": "In $\\triangle ABC$, $\\angle B = 60^\\circ$, $\\angle C = 90^\\circ$ and $AB = 1$. $BCP$, $CAQ$ and $ABR$ are equilateral triangles outside $\\triangle ABC$. $QR$ meets $AB$ at $T$. Find the area of $\\triangle PRT$."
+        },
+        {
+          "number": 10,
+          "problem": "Find the number of triples $(a, b, c)$ of real numbers such that the equation $|ax + by + cz| + |bx + cy + az| + |cx + ay + bz| = |x| + |y| + |z|$ holds for all real numbers $x$, $y$, $z$."
+        },
+        {
+          "number": 11,
+          "problem": "When $n$ fair dice are thrown, the probability of obtaining a sum of 2005 and the probability of obtaining a sum of $S$ are both equal to a positive number $p$. Find the smallest possible value of $S$."
+        },
+        {
+          "number": 12,
+          "problem": "$ABCD$ and $EFGH$ are squares of side length 1, and $AB \\parallel EF$. The overlapped region of the two squares has area $\\dfrac{1}{16}$. Find the minimum distance between the centres of the two squares."
+        },
+        {
+          "number": 13,
+          "problem": "An ant crawls along the edges of a cube with side length 1 unit. Starting from one of the vertices, in each minute the ant travels from one vertex to an adjacent vertex. After crawling for 7 minutes, the ant is at a distance of $\\sqrt{3}$ units from the starting point. Find the number of possible routes the ant has taken."
+        },
+        {
+          "number": 14,
+          "problem": "In a school there are 1000 students, numbered 1 to 1000. A group of 500 students is said to be a ‘good group’ if there exists a student in the group whose number divides the number of another student in the group, and is said to be a ‘bad group’ if otherwise. For instance, the 500 students with numbers 1 to 500 form a ‘good group’ because 13 divides 26 and both students 13 and 26 are in the group. A ‘good student’ is a student who does not belong to any ‘bad group’. Find, among the ‘good students’, the one with the largest student number."
+        },
+        {
+          "number": 15,
+          "problem": "$ABCD$ is a rhombus with $\\angle B = 60^\\circ$. $P$ is a point inside $ABCD$ such that $\\angle APC = 120^\\circ$, $BP = 3$ and $DP = 2$. Find the difference between the lengths of $AP$ and $CP$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $n$ be a positive integer. When $n$ is divided by 902, 802 and 702, the remainders are 602, 502 and 402 respectively. Find the minimum remainder when $n$ is divided by 2005."
+        },
+        {
+          "number": 17,
+          "problem": "5555 children, numbered 1 to 5555, sit around a circle in order. Each child has an integer in hand. The child numbered 1 has the integer 1; the child numbered 12 has the integer 21; the child numbered 123 has the integer 321 and the child numbered 1234 has the integer 4321. It is known that the sum of the integers of any 2005 consecutive children is equal to 2005. What is the integer held by the child numbered 5555?"
+        },
+        {
+          "number": 18,
+          "problem": "If $\\dfrac{a(b-c)}{b(c-a)} = \\dfrac{b(c-a)}{c(b-a)} = r$ and $r > 0$, find $r$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $O$ be the origin, $A_1, A_2, A_3, \\ldots$ be points on the curve $y = \\sqrt{x}$ and $B_1, B_2, B_3, \\ldots$ be points on the positive $x$-axis such that the triangles $OB_1A_1$, $B_1B_2A_2$, $B_2B_3A_3$, $\\ldots$ are all equilateral, with side lengths $l_1, l_2, l_3, \\ldots$ respectively. Find the value of $l_1 + l_2 + l_3 + \\cdots + l_{2005}$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $x$, $y$ be acute angles such that $\\sin y = 2005\\cos(x + y)\\sin x$. Find the greatest possible value of $\\tan y$."
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "There are two positive integers, one of which is a square number. If the sum of the two numbers is 2006 smaller than their product, find the difference between the two numbers."
+        },
+        {
+          "number": 2,
+          "problem": "Find a positive integer $n$ less than 2006 such that $2006n$ is a multiple of $2006 + n$."
+        },
+        {
+          "number": 3,
+          "problem": "If Peter walks along a moving escalator at his normal speed, it takes 40 seconds to finish riding on the escalator. If Peter walks at twice his normal speed, it takes 30 seconds to finish riding on the escalator. How many seconds does it take for Peter to finish riding on the escalator if he stands still on the escalator?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $ABCD$ be a quadrilateral with $BC = CD = DA = 1$, $\\angle DAB = 135^\\circ$ and $\\angle ABC = 75^\\circ$. Find $AB$."
+        },
+        {
+          "number": 5,
+          "problem": "In $\\triangle ABC$, $BC = 4$ and $\\angle BAC = 60^\\circ$. Let $I$ be the incentre of $\\triangle ABC$. The circle passing through $B$, $I$ and $C$ meets the perpendicular bisector of $BC$ at a point $X$ inside $\\triangle ABC$. Find $AX$."
+        },
+        {
+          "number": 6,
+          "problem": "If $x$ is a real number and $-1 \\le x \\le 1$, find the maximum value of $x + \\sqrt{1 - x^2}$."
+        },
+        {
+          "number": 7,
+          "problem": "Given $\\{a_n\\}$ and $\\{b_n\\}$ are arithmetic sequences (i.e. $a_2 - a_1 = a_3 - a_2 = a_4 - a_3 = \\cdots$ and $b_2 - b_1 = b_3 - b_2 = b_4 - b_3 = \\cdots$) such that $(3n + 1)a_n = (2n - 1)b_n$ for all positive integers $n$. If $S_n = a_1 + a_2 + \\cdots + a_n$ and $T_n = b_1 + b_2 + \\cdots + b_n$, find $\\dfrac{S_9}{T_6}$."
+        },
+        {
+          "number": 8,
+          "problem": "$A$, $B$, $G$ are three points on a circle with $\\angle AGB = 48^\\circ$. The chord $AB$ is trisected by points $C$ and $D$ with $C$ closer to $A$. The minor arc $AB$ is trisected by points $E$ and $F$ with $E$ closer to $A$. The lines $EC$ and $FD$ meet at $H$. If $\\angle AHB = x^\\circ$, find $x$."
+        },
+        {
+          "number": 9,
+          "problem": "Investment funds A, B and C claim that they can earn profits of 200%, 300% and 500% respectively in one year. Tommy has $\\$90000$ and plans to invest in these funds. However, he knows that only one of these funds can achieve its claim while the other two will close down. He has thought of an investment plan which can guarantee a profit of at least $\\$n$ in one year. Find the greatest possible value of $n$."
+        },
+        {
+          "number": 10,
+          "problem": "Balls $A$, $B$, $C$, $D$, $E$ are to be put into seven boxes numbered 1 to 7. Each box can contain at most one ball. Furthermore, it is required that the box numbers for balls $A$ and $B$ must be consecutive, and that the box numbers for balls $C$ and $D$ must also be consecutive. In how many different ways can the balls be put into the boxes?"
+        },
+        {
+          "number": 11,
+          "problem": "Two concentric circles have radii 2006 and 2007. $ABC$ is an equilateral triangle inscribed in the smaller circle and $P$ is a point on the circumference of the larger circle. Given that a triangle with side lengths equal to $PA$, $PB$ and $PC$ has area $\\dfrac{a\\sqrt{b}}{c}$, where $a$, $b$, $c$ are positive integers such that $a$ and $c$ are relatively prime and $b$ is not divisible by the square of any prime, find $a + b + c$."
+        },
+        {
+          "number": 12,
+          "problem": "A sphere is placed inside a regular octahedron of side length 6. Find the greatest possible radius of the sphere."
+        },
+        {
+          "number": 13,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$, e.g. $[5.6] = 5$ and $[3] = 3$. How many different integers are there in the sequence $\\left[\\dfrac{1^2}{2006}\\right], \\left[\\dfrac{2^2}{2006}\\right], \\left[\\dfrac{3^2}{2006}\\right], \\ldots, \\left[\\dfrac{2006^2}{2006}\\right]$?"
+        },
+        {
+          "number": 14,
+          "problem": "How many 10-digit positive integers have all 10 digits pairwise distinct and are multiples of 11111?"
+        },
+        {
+          "number": 15,
+          "problem": "Let $A = (0, 0)$, $B = (b, 2)$ and $ABCDEF$ be a convex equilateral hexagon such that $\\angle FAB = 120^\\circ$. Suppose $AB \\parallel ED$, $BC \\parallel FE$, $CD \\parallel AF$, and the $y$-coordinates of $C$, $D$, $E$, $F$ are some permutation of 4, 6, 8, 10. If the area of the hexagon can be written in the form $m\\sqrt{n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime, find $m + n$."
+        },
+        {
+          "number": 16,
+          "problem": "In $\\triangle ABC$, $AB = 33$ cm, $AC = 21$ cm and $BC = x$ cm, where $x$ is an integer. $D$ is a point on the segment $AB$ and $E$ is a point on the segment $AC$ such that $AD = DE = EC = y$ cm, where $y$ is again an integer. Find $x$."
+        },
+        {
+          "number": 17,
+          "problem": "If a square can completely cover a triangle with side lengths 3, 4 and 5, find the smallest possible side length of the square."
+        },
+        {
+          "number": 18,
+          "problem": "For any positive integer $n$, let $f(n) = 70 + n^2$ and $g(n)$ be the H.C.F. of $f(n)$ and $f(n+1)$. Find the greatest possible value of $g(n)$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $a_1, a_2, \\ldots, a_{11}$ be positive integers with $a_1 < a_2 < \\cdots < a_{11}$. If $\\dfrac{1}{a_1}, \\dfrac{1}{a_2}, \\ldots, \\dfrac{1}{a_{11}}$ form an arithmetic sequence (i.e. $\\dfrac{1}{a_2} - \\dfrac{1}{a_1} = \\dfrac{1}{a_3} - \\dfrac{1}{a_2} = \\cdots = \\dfrac{1}{a_{11}} - \\dfrac{1}{a_{10}}$), find the smallest possible value of $a_1$."
+        },
+        {
+          "number": 20,
+          "problem": "2005 children, numbered 1 to 2005, participate in a game. 2005 cards, numbered 2 to 2006, are prepared. Each child is to be distributed one card. It is required that the number on the card given to each child must be a multiple of the number of the child. In how many different ways can the cards be distributed?"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Someone forms an integer by writing the integers from 1 to 82 in ascending order, i.e. $1234567891011\\ldots808182$. Find the sum of the digits of this integer."
+        },
+        {
+          "number": 2,
+          "problem": "Find the smallest positive integer $n$ for which the last three digits of $2007n$ (in decimal notation) are 837."
+        },
+        {
+          "number": 3,
+          "problem": "$ABCD$ is a parallelogram with $\\angle D$ obtuse. $M$, $N$ are the feet of perpendiculars from $D$ to $AB$ and $BC$ respectively. If $DB = DC = 50$ and $DA = 60$, find $DM + DN$."
+        },
+        {
+          "number": 4,
+          "problem": "One day, a truck driver drove through a tunnel and measured the time taken between the moment at which the truck started entering the tunnel and the moment at which the truck left the tunnel completely. The next day a container was added and the length of the truck was increased from 6 m to 12 m. The driver reduced the speed by 20% and measured the time again. He found that the time taken was increased by half. Find the length of the tunnel (in metres)."
+        },
+        {
+          "number": 5,
+          "problem": "$\\triangle ABC$ has area 1. $E$ and $F$ are points on $AB$ and $AC$ respectively such that $EF \\parallel BC$. If $\\triangle AEF$ and $\\triangle EBC$ have equal area, find the area of $\\triangle EFC$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$. If $p$, $q$, $r$ are positive, find the minimum value of: $$\\left[\\frac{p+q}{r}\\right] + \\left[\\frac{q+r}{p}\\right] + \\left[\\frac{r+p}{q}\\right]$$"
+        },
+        {
+          "number": 7,
+          "problem": "Let $n = \\underbrace{999\\ldots999}_{2007\\text{ digits}}$. How many '9's are there in the decimal representation of $n^3$?"
+        },
+        {
+          "number": 8,
+          "problem": "Let $x$, $y$ be nonnegative integers such that $x + 2y$ is a multiple of 5, $x + y$ is a multiple of 3 and $2x + y \\ge 99$. Find the minimum possible value of $7x + 5y$."
+        },
+        {
+          "number": 9,
+          "problem": "The three-digit number $\\overline{abc}$ consists of three non-zero digits. The sum of the other five three-digit numbers formed by rearranging $a$, $b$, $c$ is 2017. Find $\\overline{abc}$."
+        },
+        {
+          "number": 10,
+          "problem": "Find the sum of the greatest odd factor of each of the numbers $2007, 2008, \\ldots, 4012$."
+        },
+        {
+          "number": 11,
+          "problem": "Let $A_1, A_2, \\ldots, A_{11}$ be 11 points on a straight line in order, where $A_1A_{11} = 56$. Given that $A_iA_{i+2} \\le 12$ for $i = 1, 2, \\ldots, 9$ and $A_jA_{j+3} \\ge 17$ for $j = 1, 2, \\ldots, 8$, find $A_2A_7$."
+        },
+        {
+          "number": 12,
+          "problem": "In $\\triangle ABC$, $AB = \\sqrt{5}$, $BC = 1$ and $AC = 2$. $I$ is the incentre of $\\triangle ABC$ and the circumcircle of $\\triangle IBC$ cuts $AB$ at $P$. Find $BP$."
+        },
+        {
+          "number": 13,
+          "problem": "Let $x_1, x_2, x_3, x_4, x_5$ be nonnegative real numbers whose sum is 300. Let $M$ be the maximum of the four numbers $x_1 + x_2$, $x_2 + x_3$, $x_3 + x_4$ and $x_4 + x_5$. Find the least possible value of $M$."
+        },
+        {
+          "number": 14,
+          "problem": "$ABCD$ is a square with side length 9. Let $P$ be a point on $AB$ such that $AP : PB = 7 : 2$. Using $C$ as centre and $CB$ as radius, a quarter circle is drawn inside the square. The tangent from $P$ meets the circle at $E$ and $AD$ at $Q$. The segments $CE$ and $DB$ meet at $K$, while $AK$ and $PQ$ meet at $M$. Find the length of $AM$."
+        },
+        {
+          "number": 15,
+          "problem": "$ABCD$ is a rectangle with $AB = 2$ and $BC = 1$. A point $P$ is randomly selected on $CD$. Find the probability that $\\angle APB$ is the largest among the three interior angles of $\\triangle PAB$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $a$, $b$, $c$ be positive integers such that $ab + bc - ca = 0$ and $a - c = 101$. Find $b$."
+        },
+        {
+          "number": 17,
+          "problem": "A bag contains 15 balls, marked with the 15 numbers $2^0, 2^1, 2^2, \\ldots, 2^{14}$ respectively. Each ball is either red or blue, and there is at least one ball of each colour. Let $a$ be the sum of the numbers on all red balls, $b$ be the sum of the numbers on all blue balls and $d$ be the H.C.F. of $a$ and $b$. Find the greatest possible value of $d$."
+        },
+        {
+          "number": 18,
+          "problem": "Find the sum of all real roots to the equation $3\\tan^2 x + 8\\tan x + 3 = 0$ in the range $0 < x < 2\\pi$."
+        },
+        {
+          "number": 19,
+          "problem": "For $0 \\le x \\le 1$ and positive integer $n$, let $f_0(x) = |1 - 2x|$ and $f_n(x) = f_0(f_{n-1}(x))$. How many solutions are there to the equation $f_{10}(x) = x$ in the range $0 \\le x \\le 1$?"
+        },
+        {
+          "number": 20,
+          "problem": "Determine the number of ordered pairs $(x, y)$ of positive integers satisfying the following equation: $$x\\sqrt{y} + y\\sqrt{x} - \\sqrt{2007x} - \\sqrt{2007y} + \\sqrt{2007xy} = 2007$$"
+        },
+        {
+          "number": 21,
+          "problem": "How many nine-digit positive integers consist of nine pairwise distinct digits and are divisible by 4950?"
+        },
+        {
+          "number": 22,
+          "problem": "Let $S$ be the set of points whose coordinates $x$, $y$ and $z$ are integers that satisfy $0 \\le x \\le 2$, $0 \\le y \\le 3$ and $0 \\le z \\le 4$. Two distinct points are randomly chosen from $S$. Find the probability that the midpoint of the two chosen points also belongs to $S$."
+        },
+        {
+          "number": 23,
+          "problem": "If $x$ is positive, find the minimum value of $\\dfrac{\\sqrt{x^4 + x^2 + 2x + 1} + \\sqrt{x^4 - 2x^3 + 5x^2 - 4x + 1}}{x}$."
+        },
+        {
+          "number": 24,
+          "problem": "A bag contains 999 balls, marked with the 999 numbers $\\dfrac{1}{2}, \\dfrac{1}{3}, \\dfrac{1}{4}, \\ldots, \\dfrac{1}{1000}$ respectively. Each ball is either red or blue, and the number of red balls is a positive even number. Let $S$ denote the product of the numbers on all red balls. Find the sum of all possible values of $S$."
+        },
+        {
+          "number": 25,
+          "problem": "Find the minimum value of $|\\sin x + \\cos x + \\tan x + \\cot x + \\sec x + \\csc x|$ for any real number $x$."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $x$ and $y$ are real numbers such that $$\\frac{x+22}{y}+\\frac{290}{xy}=\\frac{26-y}{x},$$ find $xy$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a$, $b$, $c$ be pairwise distinct positive integers such that $a+b$, $b+c$ and $c+a$ are all square numbers. Find the smallest possible value of $a+b+c$."
+        },
+        {
+          "number": 3,
+          "problem": "In a mathematics competition there are four problems, carrying 1, 2, 3 and 4 marks respectively. For each question, full score is awarded if the answer is correct; otherwise 0 mark will be given. The total score obtained by a contestant is multiplied by a time bonus of 4, 3, 2 or 1 according to the time taken to solve the problems, and a further bonus score of 20 will be added after multiplying by the time bonus if one gets all four problems correct. How many different final scores are possible?"
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\overline{ab}$ denote a two-digit number with tens digit $a$ and unit digit $b$. Find a two-digit number $\\overline{xy}$ satisfying $\\overline{xy}=(x-y)!\\left(\\overline{yx}-3\\right)$."
+        },
+        {
+          "number": 5,
+          "problem": "A parallelogram has its diagonals making an angle of $60^\\circ$ with each other. If two of its sides have lengths 6 and 8, find the area of the parallelogram."
+        },
+        {
+          "number": 6,
+          "problem": "Let $x$ and $y$ be non-negative integers such that $69x+54y\\le 2008$. Find the greatest possible value of $xy$."
+        },
+        {
+          "number": 7,
+          "problem": "If $n$ is a positive integer such that $n^6+206$ is divisible by $n^2+2$, find the sum of all possible values of $n$."
+        },
+        {
+          "number": 8,
+          "problem": "Given that $n!$, in decimal notation, has exactly 57 ending zeros, find the sum of all possible values of $n$."
+        },
+        {
+          "number": 9,
+          "problem": "In $\\triangle ABC$, $D$ is a point on $BC$ such that $AD$ bisects $\\angle BAC$. If $AC=2$, $BD=2$ and $DC=1$, find $\\cos\\angle ABC$."
+        },
+        {
+          "number": 10,
+          "problem": "The non-zero recurring decimal $0.\\dot{x}y\\dot{z}$, where $x$, $y$, $z$ denote digits between 0 and 9 inclusive, is converted to a fraction in lowest terms. How many different possible values may the numerator take?"
+        },
+        {
+          "number": 11,
+          "problem": "In a drawer there are $x$ white gloves and $y$ red gloves with $x>y$ and $x+y\\le 2008$. When two gloves are drawn at random, the probability that the two gloves are of the same colour is exactly one-half. Find the largest possible value of $x$."
+        },
+        {
+          "number": 12,
+          "problem": "In $\\triangle ABC$, $AB=2$, $BC=\\sqrt{3}$ and $\\angle ABC=150^\\circ$. $P$ is a point on the plane such that $\\angle APB=45^\\circ$ and $\\angle BPC=120^\\circ$. Find $BP$."
+        },
+        {
+          "number": 13,
+          "problem": "On the coordinate plane, set $A=(-1,0)$, $B=(1,0)$ and $P=(0,t)$ where $0\\le t\\le 1$. As $t$ varies, $C$ is a variable point such that $P$ is the circumcentre of $\\triangle ABC$. Points which are possible positions of $C$ are coloured red. Find the total area of the red region."
+        },
+        {
+          "number": 14,
+          "problem": "Find the infinite sum of $$\\frac{1^3}{3^1}+\\frac{2^3}{3^2}+\\frac{3^3}{3^3}+\\frac{4^3}{3^4}+\\cdots.$$"
+        },
+        {
+          "number": 15,
+          "problem": "Let $L$ denote the L.C.M. of $1, 2, \\ldots, 20$. How many positive factors of $L$ are divisible by exactly 18 of the 20 numbers $1, 2, \\ldots, 20$?"
+        },
+        {
+          "number": 16,
+          "problem": "$\\triangle ABC$ is equilateral with side length 2. $O$ is a point inside $\\triangle ABC$, and $P$, $Q$, $R$ are points on the plane such that $OAP$, $OBQ$ and $OCR$ are all isosceles triangles (with vertices named in clockwise order) with vertical angles $\\angle OAP$, $\\angle OBQ$ and $\\angle OCR$ equal to $30^\\circ$. Find the area of $\\triangle PQR$."
+        },
+        {
+          "number": 17,
+          "problem": "Let $p$ and $q$ be positive integers such that $$\\frac{72}{487}<\\frac{p}{q}<\\frac{18}{121}.$$ Find the smallest possible value of $q$."
+        },
+        {
+          "number": 18,
+          "problem": "In $\\triangle ABC$, $AB=13$, $BC=14$ and $CA=15$. $P$ is a point inside $\\triangle ABC$ such that $\\angle PAB=\\angle PBC=\\angle PCA$. Find $\\tan\\angle PAB$."
+        },
+        {
+          "number": 19,
+          "problem": "If $\\sqrt{9-8\\sin 50^\\circ}=a+b\\csc 50^\\circ$ where $a$, $b$ are integers, find $ab$."
+        },
+        {
+          "number": 20,
+          "problem": "When $(1+x)^{38}$ is expanded in ascending powers of $x$, $N_1$ of the coefficients leave a remainder of 1 when divided by 3, while $N_2$ of the coefficients leave a remainder of 2 when divided by 3. Find $N_1-N_2$."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the value of $$\\frac{1^4+2009^4+2010^4}{1^2+2009^2+2010^2}.$$"
+        },
+        {
+          "number": 2,
+          "problem": "In pentagon $ABCDE$, $AB=BC=CD=DE$, $\\angle B=96^\\circ$ and $\\angle C=\\angle D=108^\\circ$. Find $\\angle E$."
+        },
+        {
+          "number": 3,
+          "problem": "Grandfather distributed a bag of candies to Donald, Henry and John, who got $70\\%$, $25\\%$ and $5\\%$ respectively. Later Donald gave John 20 candies, and after that Henry and John shared their candies equally. By then Donald had three times as many candies as Henry. The next day Grandfather gave $x$ candies to each of the three persons, and Donald ended up having twice as many candies as Henry. Find $x$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ be an integer greater than 1. If all digits of $9997n$ are odd, find the smallest possible value of $n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $\\{x_n\\}$ be a sequence of positive real numbers. If $x_1=\\frac{3}{2}$ and $$x_{n+1}^2-x_n^2=\\frac{1}{(n+2)^2}-\\frac{1}{n^2}$$ for all positive integers $n$, find $x_1+x_2+\\cdots+x_{2009}$."
+        },
+        {
+          "number": 6,
+          "problem": "In $\\triangle ABC$, $AB=AC=13$ and $BC=10$. $P$ is a point on $BC$ with $BP<PC$, and $H$, $K$ are the orthocentres of $\\triangle APB$ and $\\triangle APC$ respectively. If $HK=2$, find $PC$."
+        },
+        {
+          "number": 7,
+          "problem": "$\\triangle ABC$ is equilateral with side length 4. $D$ is a point on $BC$ such that $BD=1$. If $r$ and $s$ are the radii of the inscribed circles of $\\triangle ADB$ and $\\triangle ADC$ respectively, find $rs$."
+        },
+        {
+          "number": 8,
+          "problem": "$ABCD$ is a square of side length 1. $X$ and $Y$ are points on $BC$ and $CD$ respectively such that $CX=CY=m$. When extended, $AB$ meets $DX$ at $P$; $AD$ meets $BY$ at $Q$; $AX$ meets $DC$ at $R$; $AY$ meets $BC$ at $S$. If $P$, $Q$, $R$, $S$ are collinear, find $m$."
+        },
+        {
+          "number": 9,
+          "problem": "On the coordinate plane a point whose $x$- and $y$-coordinates are both integers is said to be a 'lattice point'. If a lattice point is randomly chosen inside (excluding the boundary) the square with vertices $(0,0)$, $(101,0)$, $(101,101)$ and $(0,101)$, what is the probability that the line segment (excluding the two endpoints) joining $(0,2010)$ and the point chosen contains an even number of lattice points?"
+        },
+        {
+          "number": 10,
+          "problem": "Four mathematicians, two physicists, one chemist and one biologist take part in a table tennis tournament. The eight players are to compete in four pairs by drawing lots. What is the probability that no two mathematicians play against each other?"
+        },
+        {
+          "number": 11,
+          "problem": "Find the value of $$\\tan\\left(\\tan^{-1}\\frac{1}{2}+\\tan^{-1}\\frac{1}{2\\times 2^2}+\\tan^{-1}\\frac{1}{2\\times 3^2}+\\cdots+\\tan^{-1}\\frac{1}{2\\times 2009^2}\\right).$$"
+        },
+        {
+          "number": 12,
+          "problem": "In the cells of an $n\\times n$ chessboard there are altogether 2009 coins. The numbers of coins in any two neighbouring cells (cells sharing a common edge) differ by 1 (some cells may contain no coin). Find the largest possible value of $n$."
+        },
+        {
+          "number": 13,
+          "problem": "$ABCD$ is a trapezium with $AB\\parallel DC$ and $AB>DC$. $E$ is a point on $AB$ such that $AE=DC$. $AC$ meets $DE$ and $DB$ at $F$ and $G$ respectively. Find the value of $\\frac{AB}{CD}$ for which $$\\frac{\\text{Area of }\\triangle DFG}{\\text{Area of trapezium }ABCD}$$ is maximum."
+        },
+        {
+          "number": 14,
+          "problem": "In a quiz, no two people had the same score and the score of each participant is equal to $n+2-2k$ where $n$ is a constant and $k$ is the rank of the participant. If the total score of all participants is 2009, find the smallest possible value of $n$."
+        },
+        {
+          "number": 15,
+          "problem": "Let $[x]$ denote the greatest integer less than or equal to $x$, e.g. $[\\pi]=3$, $[5.31]=5$ and $[2009]=2009$. Evaluate $$\\left[\\sqrt{2009^2+1}+\\sqrt{2009^2+2}+\\cdots+\\sqrt{2009^2+4018}\\right].$$"
+        },
+        {
+          "number": 16,
+          "problem": "Let $f(n)$ denote the number of positive integral solutions of the equation $4x+3y+2z=n$. Find $f(2009)-f(2000)$."
+        },
+        {
+          "number": 17,
+          "problem": "If 6 colours are available, in how many different ways can one paint each face of a cube with one colour so that adjacent faces are painted in different colours? (Two colourings are regarded to be the same if they are identical upon suitable rotation.)"
+        },
+        {
+          "number": 18,
+          "problem": "In $\\triangle ABC$, $\\angle A=90^\\circ$ and $\\angle B=\\angle C=45^\\circ$. $P$ is a point on $BC$ and $Q$, $R$ are the circumcentres of $\\triangle APB$ and $\\triangle APC$ respectively. If $BP=\\sqrt{2}$ and $QR=2$, find $PC$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $x$, $y$, $z$, $w$ be different real numbers and $t$ be a positive real number such that $$x+\\frac{1}{y}=y+\\frac{1}{z}=z+\\frac{1}{w}=w+\\frac{1}{x}=t.$$ Find $t$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $a$, $b$, $c$, $d$ be positive integers such that the least common multiple (L.C.M.) of any three of them is $3^3\\times 7^5$. How many different sets of $(a,b,c,d)$ are possible if the order of the numbers is taken into consideration?"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $f(n)=3n^2-3n+1$. Find the last four digits of $f(1)+f(2)+\\cdots+f(2010)$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. If $n$ is divisible by 2010 and exactly one of the digits of $n$ is even, find the smallest possible value of $n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be an integer greater than 1. If $n$ is greater than 1200 times any one of its prime factors, find the smallest possible value of $n$."
+        },
+        {
+          "number": 4,
+          "problem": "There are 111 balls in a box, each being red, green, blue or white. It is known that if 100 balls are drawn, we can ensure getting balls of all four colours. Find the smallest integer $N$ such that if $N$ balls are drawn, we can ensure getting balls of at least three different colours."
+        },
+        {
+          "number": 5,
+          "problem": "The positive integers $a$, $b$, $c$, $d$ satisfy $a>b>c>d$, $a+b+c+d=2010$ and $a^2-b^2+c^2-d^2=2010$. How many different sets of possible values of $(a,b,c,d)$ are there?"
+        },
+        {
+          "number": 6,
+          "problem": "Let $P(x)$ be a quadratic polynomial with real coefficients such that $P(11)=181$ and $x^2-2x+2\\le P(x)\\le 2x^2-4x+3$ for any real number $x$. Find $P(21)$."
+        },
+        {
+          "number": 7,
+          "problem": "Find the largest integer which cannot be expressed as sum of some of the numbers $135, 136, 137, \\ldots, 144$ (each number may occur many times in the sum or not at all)."
+        },
+        {
+          "number": 8,
+          "problem": "Let $n$ be a positive integer. By removing the last three digits of $n$, one gets the cube root of $n$. Find a possible value of $n$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $p$ and $q$ be integers such that $p+q=2010$. If both roots of the equation $10x^2+px+q=0$ are positive integers, find the sum of all possible values of $p$."
+        },
+        {
+          "number": 10,
+          "problem": "A plane $P$ slices through a cube of side length 2 with a cross section in the shape of a regular hexagon. The inscribed sphere of the cube intersects $P$ in a circle. What is the area of the region inside the regular hexagon but outside the circle?"
+        },
+        {
+          "number": 11,
+          "problem": "Let $ABCD$ be a square of side length 1. $P$ and $Q$ are two points on the plane such that $Q$ is the circumcentre of $\\triangle BPC$ and $D$ is the circumcentre of $\\triangle PQA$. Find the largest possible value of $PQ^2$. Express the answer in the form $a+\\sqrt{b}$ or $a-\\sqrt{b}$, where $a$ and $b$ are rational numbers."
+        },
+        {
+          "number": 12,
+          "problem": "Let $ABCD$ be a square of side length 3. $P$ is a point on the plane such that each of $\\angle APB$, $\\angle BPC$, $\\angle CPD$ and $\\angle DPA$ is at least $60^\\circ$. If each possible position of $P$ is painted red, find the area of the red region."
+        },
+        {
+          "number": 13,
+          "problem": "6 different points are given on the plane, no three of which are collinear. Each pair of points is to be joined by a red line or a blue line subject to the following restriction: if the lines joining $AB$ and $AC$ (where $A$, $B$, $C$ denote the given points) are both red, then the line joining $BC$ is also red. How many different colourings of the lines are possible?"
+        },
+        {
+          "number": 14,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$, e.g. $[\\pi]=3$, $[5.31]=5$ and $[2010]=2010$. Given $f(0)=0$ and $$f(n)=f\\left(\\left[\\frac{n}{2}\\right]\\right)+n-2\\left[\\frac{n}{2}\\right]$$ for any positive integer $n$. If $m$ is a positive integer not exceeding 2010, find the greatest possible value of $f(m)$."
+        },
+        {
+          "number": 15,
+          "problem": "An equiangular hexagon has side lengths 6, 7, 8, 9, 10, 11 (not necessarily in this order). If the area of the hexagon is $k\\sqrt{3}$, find the sum of all possible values of $k$."
+        },
+        {
+          "number": 16,
+          "problem": "On the plane there are two triangles, each with side lengths 18, 24 and 30. If the two triangles do not completely overlap, but share the same circumcircle as well as the same inscribed circle, find the area of the region common to both triangles."
+        },
+        {
+          "number": 17,
+          "problem": "$ABCD$ is a rectangle; $P$ and $Q$ are the mid-points of $AB$ and $BC$ respectively. $AQ$ and $CP$ meet at $R$. If $AC=6$ and $\\angle ARC=150^\\circ$, find the area of $ABCD$."
+        },
+        {
+          "number": 18,
+          "problem": "Let $p$, $q$, $r$, $s$ be the four roots of the equation $2(10x+13)^2(5x+8)(x+1)=1$. If $pq+rs$ is real, find the value of this real number."
+        },
+        {
+          "number": 19,
+          "problem": "If $$a\\circ b=\\frac{\\sqrt{a^2+3ab+b^2-2a-2b+4}}{ab+4},$$ find $((\\cdots((2010\\circ 2009)\\circ 2008)\\circ\\cdots\\circ 2)\\circ 1)$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $x$ be a non-zero real number such that $\\sqrt[5]{x^3+20x}=\\sqrt[3]{x^5-20x}$. Find the product of all possible values of $x$."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the sum of all fractions in lowest terms with value greater than 10 but smaller than 100 and with denominator equal to 3."
+        },
+        {
+          "number": 2,
+          "problem": "For positive integer $n$, let $f(n)$ denote the unit digit of $1+2+3+\\cdots+n$. Find the value of $f(1)+f(2)+\\cdots+f(2011)$."
+        },
+        {
+          "number": 3,
+          "problem": "Find a positive integer $k$ whose product of digits is equal to $\\frac{11k}{4}-199$."
+        },
+        {
+          "number": 4,
+          "problem": "Find a factor of $1464101210001$, such that it lies between $1210000$ and $1220000$."
+        },
+        {
+          "number": 5,
+          "problem": "The 11 letters of 'IMOHKPRELIM' are written on 11 cards (one letter on each card). If three cards are randomly drawn, how many different combinations of the three letters are there? (Order is not considered. For instance 'IMO' and 'IOM' are regarded to be the same combination.)"
+        },
+        {
+          "number": 6,
+          "problem": "The parabola $y=ax^2+bx+c$ has vertex at $\\left(\\frac{1}{4},-\\frac{9}{8}\\right)$. If $a>0$ and $a+b+c$ is an integer, find the minimum possible value of $a$."
+        },
+        {
+          "number": 7,
+          "problem": "Four points are randomly chosen from the vertices of a regular 12-sided polygon. Find the probability that the four chosen points form a rectangle (including square)."
+        },
+        {
+          "number": 8,
+          "problem": "In $\\triangle ABC$, $BC=5$, $AC=4$ and $\\cos(A-B)=\\frac{7}{8}$. Find the value of $\\cos C$."
+        },
+        {
+          "number": 9,
+          "problem": "On the rectangular coordinate plane, a point $P$ is randomly chosen on the line segment joining $(0,-1)$ and $(0,1)$. Another point $Q$ is randomly chosen on the line segment joining $(1,-1)$ and $(1,1)$. Two circles, each with radius 1, are then drawn using $P$ and $Q$ as centres respectively. Find the probability that the two circles intersect."
+        },
+        {
+          "number": 10,
+          "problem": "In $\\triangle ABC$, $AB=9$, $BC=8$ and $AC=7$. The bisector of $\\angle A$ meets $BC$ at $D$. The circle passing through $A$ and touching $BC$ at $D$ cuts $AB$ and $AC$ at $M$ and $N$ respectively. Find $MN$."
+        },
+        {
+          "number": 11,
+          "problem": "The lengths of the three altitudes of a triangle are in the ratio $3:4:6$. If the radius of the inscribed circle of the triangle is 1, find the radius of the circumcircle of the triangle."
+        },
+        {
+          "number": 12,
+          "problem": "$ABCD$ is a square of side length 1. $P$ is a point on $AC$ and the circumcircle of $\\triangle BPC$ cuts $CD$ at $Q$. If the area of $\\triangle CPQ$ is $\\frac{6}{25}$, find $CQ$."
+        },
+        {
+          "number": 13,
+          "problem": "If the eight digits $1, 2, 3, 4, 5, 6, 7, 8$ are randomly permuted, what is the probability that the resulting eight-digit number is divisible by 8?"
+        },
+        {
+          "number": 14,
+          "problem": "2011 cards are arranged in a row on a table. One of the numbers '1', '2' and '3' is printed on each card. It is found that there is at least one card between any two cards labelled '1', at least two cards between any two cards labelled '2', and at least three cards between any two cards labelled '3'. If the smallest and greatest possible numbers of cards labelled '3' are $m$ and $M$ respectively, find the value of $m+M$."
+        },
+        {
+          "number": 15,
+          "problem": "A teacher asked each student of a class to write down the number of classmates with the same surname as his, as well as the number of classmates whose birthday is the same as his. Among the answers received, each of the numbers $0, 1, 2, \\ldots, 10$ has appeared. Find the minimum number of students in the class."
+        },
+        {
+          "number": 16,
+          "problem": "Let $a$, $b$, $c$ be real numbers with $c\\ne 1$. It is known that the two equations $x^2+ax+1=0$ and $x^2+bx+c=0$ have a common real root, and so do the two equations $x^2+x+a=0$ and $x^2+cx+b=0$. Find the value of $a+b+c$."
+        },
+        {
+          "number": 17,
+          "problem": "In $\\triangle ABC$, $AB=2AC$ and $\\angle BAC=112^\\circ$. $P$ and $Q$ are points on $BC$ such that $AB^2+BC\\cdot CP=BC^2$ and $3AC^2+2BC\\cdot CQ=BC^2$. Find $\\angle PAQ$."
+        },
+        {
+          "number": 18,
+          "problem": "How many ways are there to arrange 10 identical red balls, 5 identical green balls and 5 identical blue balls in a row so that no two adjacent balls are of the same colour?"
+        },
+        {
+          "number": 19,
+          "problem": "A bank issues ATM cards to its customers. Each card is associated with a password, which consists of 6 digits with no three consecutive digits being the same. It is known that no two cards have the same password. What is the maximum number of ATM cards the bank has issued?"
+        },
+        {
+          "number": 20,
+          "problem": "Let $(x_1,y_1)$, $(x_2,y_2)$ and $(x_3,y_3)$ be three different real solutions to the system of equations $$\\begin{cases} x^3-5xy^2=21\\\\ y^3-5x^2y=28\\end{cases}.$$ Find the value of $$\\left(11-\\frac{x_1}{y_1}\\right)\\left(11-\\frac{x_2}{y_2}\\right)\\left(11-\\frac{x_3}{y_3}\\right).$$"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ be a two-digit number such that the square of the sum of digits of $n$ is equal to the sum of digits of $n^2$. Find the sum of all possible values of $n$."
+        },
+        {
+          "number": 2,
+          "problem": "A positive integer $n$ is said to be 'good' if $n^2-1$ can be written as the product of three distinct prime numbers. Find the sum of the five smallest 'good' integers."
+        },
+        {
+          "number": 3,
+          "problem": "There are 13 students in a class (one of them being the monitor) and 13 seats in the classroom. Every day, the 13 students line up in random order and then enter the classroom one by one. Except for the monitor, each student will randomly choose an unoccupied seat and sit down. The monitor, however, prefers the seat next to the door and chooses it if possible. What is the probability that the monitor can choose his favourite seat?"
+        },
+        {
+          "number": 4,
+          "problem": "For positive integer $n$, let $D(n)$ be the eventual value obtained when the digits of $n$ (in base 10) are added up recursively until a one-digit number is obtained. For example $D(4)=4$, $D(2012)=D(5)=5$ and $D(1997)=D(26)=D(8)=8$. If $x$ denotes the 2012th Fibonacci number (i.e. the 2012th term of the sequence $1, 1, 2, 3, 5, 8, 13, \\ldots$), find $D(x)$."
+        },
+        {
+          "number": 5,
+          "problem": "In a school there are 300 boys and 300 girls, divided into 5 classes, each with the same number of students. It is known that there are at least 33 boys and 33 girls in each class. A boy and a girl from the same class may form a group to enter a contest, and each student may only belong to one group. What is the maximum number of groups that can be guaranteed to form?"
+        },
+        {
+          "number": 6,
+          "problem": "If $x^3-3\\sqrt{2}x^2+6x-2\\sqrt{2}-8=0$, find the value of $x^5-41x^2+2012$."
+        },
+        {
+          "number": 7,
+          "problem": "Find the smallest positive integer which cannot be expressed in the form $\\frac{2^a-2^b}{2^c-2^d}$ where $a$, $b$, $c$, $d$ are non-negative integers."
+        },
+        {
+          "number": 8,
+          "problem": "Let $f(x)=x^2+12x+30$. Find the largest real root of the equation $f(f(f(x)))=0$."
+        },
+        {
+          "number": 9,
+          "problem": "How many different ways are there to rearrange the letters in the word 'BRILLIANT' so that no two adjacent letters are the same after the rearrangement?"
+        },
+        {
+          "number": 10,
+          "problem": "If $\\frac{\\sin x}{\\sin y}=3$ and $\\frac{\\cos x}{\\cos y}=\\frac{1}{2}$, find $$\\frac{\\sin 2x}{\\sin 2y}+\\frac{\\cos 2x}{\\cos 2y}.$$"
+        },
+        {
+          "number": 11,
+          "problem": "An $n$-digit number $x$ has the following property: if the last digit of $x$ is moved to the front, the result is $2x$. Find the smallest possible value of $n$."
+        },
+        {
+          "number": 12,
+          "problem": "In $\\triangle ABC$, $AB=3$, $BC=4$ and $CA=5$. A circle cuts $AB$ at $C_1$ and $C_2$, cuts $BC$ at $A_1$ and $A_2$, and cuts $CA$ at $B_1$ and $B_2$. If $A_1A_2=B_1B_2=C_1C_2=x$, and that the area of the hexagon formed by the vertices $A_1$, $A_2$, $B_1$, $B_2$, $C_1$ and $C_2$ is 4, find $x$."
+        },
+        {
+          "number": 13,
+          "problem": "$ABCD$ is a convex quadrilateral in which $AC$ and $BD$ meet at $P$. Given $PA=1$, $PB=2$, $PC=6$ and $PD=3$. Let $O$ be the circumcentre of $\\triangle PBC$. If $OA$ is perpendicular to $AD$, find the circumradius of $\\triangle PBC$."
+        },
+        {
+          "number": 14,
+          "problem": "Given $a$, $b$, $c$, $d$ (where $a<b<c<d$) are positive integers not exceeding 2012, and they form an arithmetic sequence in this order. How many different sets of possible values of $(a,b,c,d)$ are there?"
+        },
+        {
+          "number": 15,
+          "problem": "$ABCD$ is a convex quadrilateral and $E$, $F$ are the mid-points of $BC$ and $CD$ respectively. The line segments $AE$, $AF$ and $EF$ divide $ABCD$ into four triangles, whose areas are four consecutive integers. Find the greatest possible area of $\\triangle ABD$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $D$ be a point inside $\\triangle ABC$ such that $\\angle BAD=\\angle BCD$ and $\\angle BDC=90^\\circ$. If $AB=5$, $BC=6$ and $M$ is the midpoint of $AC$, find the length of $DM$."
+        },
+        {
+          "number": 17,
+          "problem": "In $\\triangle ABC$, $\\angle C=90^\\circ$, $\\angle BAC<45^\\circ$ and $AB=7$. $P$ is a point on $AB$ such that $\\angle APC=2\\angle ACP$ and $CP=1$. Find $\\frac{AP}{BP}$."
+        },
+        {
+          "number": 18,
+          "problem": "In how many different ways can we rearrange the twelve integers 1 to 12 on the face of a clock so that the sum of any three adjacent integers after the rearrangement is divisible by 3?"
+        },
+        {
+          "number": 19,
+          "problem": "Find a factor of $100140001$ which lies between 8000 and 9000."
+        },
+        {
+          "number": 20,
+          "problem": "How many different triangles with integer side lengths are there such that the sum of the lengths of any two sides exceeds the length of the third side by at least 5 units, and that the area is numerically twice the perimeter? (Two triangles are regarded to be the same if they are congruent.)"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a$, $b$, $c$, $d$ be positive numbers such that $$\\frac{1}{a^3}=\\frac{512}{b^3}=\\frac{125}{c^3}=\\frac{d}{(a+b+c)^3}.$$ Find $d$."
+        },
+        {
+          "number": 2,
+          "problem": "How many three-digit positive integers are there such that the three digits of every integer, taken from left to right, form an arithmetic sequence?"
+        },
+        {
+          "number": 3,
+          "problem": "Let $$x=\\sqrt{1+\\frac{1}{1^2}+\\frac{1}{2^2}}+\\sqrt{1+\\frac{1}{2^2}+\\frac{1}{3^2}}+\\cdots+\\sqrt{1+\\frac{1}{2012^2}+\\frac{1}{2013^2}}.$$ Find the value of $x-[x]$, where $[x]$ denotes the greatest integer not exceeding $x$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $x$, $y$, $z$ be non-negative numbers such that $x^2+y^2+z^2+x+2y+3z=\\frac{13}{4}$. Find the minimum value of $x+y+z$."
+        },
+        {
+          "number": 5,
+          "problem": "Peter, Paul and David joined a table tennis tournament. On the first day, two of them were randomly chosen to play a game against each other. On each subsequent day, the loser of the game on the previous day would take a rest and the other two persons would play a game against each other. After a certain number of days, it was found that Peter had won 22 games, Paul had won 20 games and David had won 32 games. What was the total number of games that Peter had played?"
+        },
+        {
+          "number": 6,
+          "problem": "The sequence $1, 2, 1, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, \\ldots$ is formed as follows: write down infinitely many '1's, insert a '2' between the first and the second '1's, insert two '2's between the second and the third '1's, insert three '2's between the third and the fourth '1's, and so on. If $a_n$ denotes the $n$-th term of the sequence, find the value of $a_1a_2+a_2a_3+\\cdots+a_{2013}a_{2014}$."
+        },
+        {
+          "number": 7,
+          "problem": "There are $n$ different positive integers, each one not greater than 2013, with the property that the sum of any three of them is divisible by 39. Find the greatest value of $n$."
+        },
+        {
+          "number": 8,
+          "problem": "If $x$ is a real number, find the smallest value of $\\sqrt{x^2+4x+5}+\\sqrt{x^2-8x+25}$."
+        },
+        {
+          "number": 9,
+          "problem": "The equation $9x^3-3x^2-3x-1=0$ has a real root of the form $\\frac{\\sqrt[3]{a}+\\sqrt[3]{b}+1}{c}$, where $a$, $b$, $c$ are positive integers. Find the value of $a+b+c$."
+        },
+        {
+          "number": 10,
+          "problem": "By permuting the digits of 20130518, how many different eight-digit positive odd numbers can be formed?"
+        },
+        {
+          "number": 11,
+          "problem": "Let $\\alpha$, $\\beta$ and $\\gamma$ be the three roots of the equation $8x^3+2012x+2013=0$. Find the value of $(\\alpha+\\beta)^3+(\\beta+\\gamma)^3+(\\gamma+\\alpha)^3$."
+        },
+        {
+          "number": 12,
+          "problem": "$ABCD$ is a square on the rectangular coordinate plane, and $(31,27)$, $(42,43)$, $(60,27)$ and $(46,16)$ are points on its sides $AB$, $BC$, $CD$ and $DA$ respectively. Find the area of $ABCD$."
+        },
+        {
+          "number": 13,
+          "problem": "In $\\triangle ABC$, $AB=8$, $BC=13$ and $CA=15$. Let $H$, $I$, $O$ be the orthocentre, incentre and circumcentre of $\\triangle ABC$ respectively. Find $\\sin\\angle HIO$."
+        },
+        {
+          "number": 14,
+          "problem": "Let $ABCD$ be a convex quadrilateral and $E$ be a point on $CD$ such that the circumcircle of $\\triangle ABE$ is tangent to $CD$. Suppose $AC$ meets $BE$ at $F$, $BD$ meets $AE$ at $G$, and $AC$ meets $BD$ at $H$. If $FG\\parallel CD$, and the areas of $\\triangle ABH$, $\\triangle BCE$ and $\\triangle ADE$ are 2, 3 and 4 respectively, find the area of $\\triangle ABE$."
+        },
+        {
+          "number": 15,
+          "problem": "Let $I$ be the in-centre of $\\triangle ABC$. If $BC=AC+AI$ and $\\angle ABC-\\angle ACB=13^\\circ$, find $\\angle BAC$."
+        },
+        {
+          "number": 16,
+          "problem": "$A$, $B$, $C$, $M$, $N$ are points on the circumference of a circle with $MN$ as a diameter. $A$, $B$ are on the same side of $MN$ and $C$ is on the other side, with $A$ being the mid-point of arc $MN$. $CA$ and $CB$ meet $MN$ at $P$ and $Q$ respectively. If $MN=1$ and $MB=\\frac{12}{13}$, find the greatest length of $PQ$."
+        },
+        {
+          "number": 17,
+          "problem": "How many pairs $(m,n)$ of non-negative integers are there such that $m\\ne n$ and $\\frac{50688}{m+n}$ is an odd positive power of 2?"
+        },
+        {
+          "number": 18,
+          "problem": "A positive integer is said to be 'good' if each digit is 1 or 2 and there is neither four consecutive 1's nor three consecutive 2's. Let $a_n$ denote the number of $n$-digit positive integers that are 'good'. Find the value of $\\frac{a_{10}-a_8-a_5}{a_7+a_6}$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $p$ and $q$ be positive integers. If $\\frac{p}{q}=0.123456789\\ldots$ (i.e. when $\\frac{p}{q}$ is expressed as a decimal the first 9 digits after the decimal point are 1 to 9 in order), find the smallest value of $q$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $a$ and $b$ be real numbers such that $17(a^2+b^2)-30ab-16=0$. Find the maximum value of $\\sqrt{16a^2+4b^2-16ab-12a+6b+9}$."
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $x-y=12$, find the value of $x^3-y^3-36xy$."
+        },
+        {
+          "number": 2,
+          "problem": "If $x$ is a real number, find the minimum value of $$|x+1|+2|x-5|+|2x-7|+\\left|\\frac{x-11}{2}\\right|.$$"
+        },
+        {
+          "number": 3,
+          "problem": "If $x$ and $y$ are real numbers, find the minimum value of $$\\sqrt{4+y^2}+\\sqrt{x^2+y^2-4x-4y+8}+\\sqrt{x^2-8x+17}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $f(x)=ax+b$ where $a$ and $b$ are integers. If $f(f(0))=0$ and $f(f(f(4)))=9$, find the value of $$f(f(f(f(1))))+f(f(f(f(2))))+\\cdots+f(f(f(f(2014)))).$$"
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ and $PQR$ be two triangles. If $\\cos A=\\sin P$, $\\cos B=\\sin Q$ and $\\cos C=\\sin R$, what is the largest angle (in degrees) among the six interior angles of the two triangles?"
+        },
+        {
+          "number": 6,
+          "problem": "Two parallel chords of a circle have lengths 24 and 32 respectively, and the distance between them is 14. What is the length of another parallel chord midway between the two chords?"
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $\\tan\\angle CAB=\\frac{22}{7}$ and the altitude from $A$ to $BC$ divides $BC$ into segments of lengths 3 and 17. Find the area of $\\triangle ABC$."
+        },
+        {
+          "number": 8,
+          "problem": "There are three identical red balls, three identical yellow balls and three identical green balls. In how many different ways can they be split into three groups of three balls each?"
+        },
+        {
+          "number": 9,
+          "problem": "$\\triangle ABC$ is isosceles with $AB=AC$. $P$ is a point inside $\\triangle ABC$ such that $\\angle BCP=30^\\circ$, $\\angle APB=150^\\circ$ and $\\angle CAP=39^\\circ$. Find $\\angle BAP$."
+        },
+        {
+          "number": 10,
+          "problem": "Points $A$ and $C$ lie on the circumference of a circle with radius $\\sqrt{50}$. $B$ is a point inside the circle such that $\\angle ABC=90^\\circ$. If $AB=6$ and $BC=2$, find the distance from $B$ to the centre of the circle."
+        },
+        {
+          "number": 11,
+          "problem": "A sequence $\\{a_1, a_2, \\ldots, a_n\\}$ of positive integers (where $n$ is a positive integer) has the property that the last digit of $a_k$ is the same as the first digit of $a_{k+1}$ (here $k=1,2,\\ldots,n$ and we define $a_{n+1}=a_1$), then the sequence is said to be a 'dragon sequence'. For example, $\\{414\\}$, $\\{208, 82\\}$ and $\\{1, 17, 73, 321\\}$ are all 'dragon sequences'. At least how many two-digit numbers must be chosen at random to ensure that a 'dragon sequence' can be formed among some of the chosen numbers?"
+        },
+        {
+          "number": 12,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$. Find the last two digits of $$\\left[\\frac{1}{3}\\right]+\\left[\\frac{2}{3}\\right]+\\left[\\frac{2^2}{3}\\right]+\\cdots+\\left[\\frac{2^{2014}}{3}\\right].$$"
+        },
+        {
+          "number": 13,
+          "problem": "In $\\triangle ABC$, $AB=13$ and $BC=7$. $D$ and $E$ are points on $AB$ and $AC$ respectively such that $BD=BC$ and $\\angle DEB=\\angle CEB$. Find the product of all possible values of the length of $AE$."
+        },
+        {
+          "number": 14,
+          "problem": "How many sets of integers $(a,b,c)$ satisfy $2\\le a\\le b\\le c$ and $abc=2013\\times 2014$?"
+        },
+        {
+          "number": 15,
+          "problem": "Let $n$ be a positive integer not exceeding 2014 with the property that $x^2+x+1$ is a factor of $x^{2n}+x^n+1$. Find the sum of all possible values of $n$."
+        },
+        {
+          "number": 16,
+          "problem": "Let $a_1, a_2, \\ldots, a_{24}$ be integers with sum 0 and satisfying $|a_i|\\le i$ for all $i$. Find the greatest possible value of $a_1+2a_2+3a_3+\\cdots+24a_{24}$."
+        },
+        {
+          "number": 17,
+          "problem": "Let $[x]$ denote the greatest integer not exceeding $x$. Find the last three digits of $$\\left[\\left(\\sqrt[3]{\\sqrt{5}+2}+\\sqrt[3]{\\sqrt{5}-2}\\right)^{2014}\\right].$$"
+        },
+        {
+          "number": 18,
+          "problem": "There were 36 participants in a party, some of whom shook hands with each other, such that any two participants shook hands with each other at most once. Each participant then recorded the number of handshakes made, and it was found that no two participants with the same number of handshakes made had shaken hands with each other. Find the maximum total number of handshakes in the party. (When two participants shook hands with each other this will be counted as one handshake.)"
+        },
+        {
+          "number": 19,
+          "problem": "Let $A$, $B$, $C$ be points on the same plane with $\\angle ACB=120^\\circ$. There is a sequence of circles $\\omega_0, \\omega_1, \\omega_2, \\ldots$ on the same plane (with corresponding radii $r_0, r_1, r_2, \\ldots$, where $r_0>r_1>r_2>\\cdots$) such that each circle is tangent to both segments $CA$ and $CB$. Furthermore, $\\omega_i$ is tangent to $\\omega_{i-1}$ for all $i\\ge 1$. If $r_0=3$, find the value of $r_0+r_1+r_2+\\cdots$."
+        },
+        {
+          "number": 20,
+          "problem": "In a school there are $n$ students, each with a different student number. Each student number is a positive factor of $60^{60}$, and no student number is equal to the H.C.F. of the numbers of two other students. Find the greatest possible value of $n$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "There are 12 lamps, initially all off, each of which comes with a switch. When a switch is pressed, a lamp which is off will be turned on, and a lamp which is on will be turned off. Now one is allowed to press exactly 5 different switches in each round. What is the minimum number of rounds needed so that all lamps will be turned on?"
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABCD$ be a square of side length 1234. $E$ is a point on $CD$ such that $CEFG$ is a square of side length 567 with $F$, $G$ outside $ABCD$. The circumcircle of $\\triangle ACF$ meets $BC$ again at $H$. Find $CH$."
+        },
+        {
+          "number": 3,
+          "problem": "In $\\triangle ABC$, $\\angle A=54^\\circ$ and $\\angle C=24^\\circ$. $P$ is a point on $AC$ such that $AP=BC$. Find $\\angle CBP$."
+        },
+        {
+          "number": 4,
+          "problem": "Find the remainder when $19^{17^{15^{\\cdot^{\\cdot^{\\cdot^{3^{1}}}}}}}$ is divided by 100."
+        },
+        {
+          "number": 5,
+          "problem": "$ABCD$ is a trapezium with $AB\\parallel CD$, $AB=42$, $BC=20$ and $DA=15$. $P$ is a point on $AB$, and a circle with centre $P$ is tangent to both $BC$ and $AD$. Find $PA\\times PB$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $a$ and $b$ be integers. If $a+b$ is a root of the equation $x^2+ax+b=0$, find the smallest possible value of $ab$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $$f(x)=\\frac{15}{x+1}+\\frac{16}{x^2+1}-\\frac{17}{x^3+1}.$$ Find the value of $$f(\\tan 15^\\circ)+f(\\tan 30^\\circ)+f(\\tan 45^\\circ)+f(\\tan 60^\\circ)+f(\\tan 75^\\circ).$$"
+        },
+        {
+          "number": 8,
+          "problem": "$ABCD$ is a trapezium with $AB\\parallel CD$. $M$ and $N$ are the midpoints of $AB$ and $CD$ respectively. If $AC=6$, $BD=8$ and $MN=4$, find the area of $ABCD$."
+        },
+        {
+          "number": 9,
+          "problem": "Let $k$ be an integer. If the equation $kx^2+(4k-2)x+(4k-7)=0$ has an integral root, find the sum of all possible values of $k$."
+        },
+        {
+          "number": 10,
+          "problem": "$\\triangle ABC$ has area 1 and satisfies $AB>AC$. The internal bisector of $\\angle A$ meets $BC$ at $D$, and $\\triangle DBC'\\sim\\triangle ABC$ where $C'$ is the image of $C$ upon reflection across $AD$. When the perimeter of $\\triangle ABC$ is minimised, find the length of $AB$."
+        },
+        {
+          "number": 11,
+          "problem": "Let $n$ be a positive integer. If the two numbers $(n+1)(2n+15)$ and $n(n+5)$ have exactly the same prime factors, find the greatest possible value of $n$."
+        },
+        {
+          "number": 12,
+          "problem": "Let $f(x)=x^6-x^5-x^3-x^2-x$ and $g(x)=x^4-x^3-x^2-1$. If $a$, $b$, $c$, $d$ are the four roots of the equation $g(x)=0$, find the value of $f(a)+f(b)+f(c)+f(d)$."
+        },
+        {
+          "number": 13,
+          "problem": "Let $k$ be a real number such that $-1<k<1$. The straight line $y=x+k$ meets the curve $y=1-x^2$ at $A$ and $B$. If $C$ denotes the point $(1,0)$, find the greatest possible area of $\\triangle ABC$."
+        },
+        {
+          "number": 14,
+          "problem": "The following is a question in a mathematics test. How many different possible correct answers are there to the question?\n\n\"In each box below fill in a positive integer not exceeding 11 (repetition is allowed) so that the following statement is true: $\\square\\times\\square+\\square\\times\\square+10$ is a multiple of 11.\""
+        },
+        {
+          "number": 15,
+          "problem": "Let $\\lfloor x\\rfloor$ denote the greatest integer less than or equal to $x$. Find the last seven digits (from left to right) of the number $$\\left\\lfloor\\frac{10^{2016}}{10^{672}+2015}\\right\\rfloor.$$"
+        },
+        {
+          "number": 16,
+          "problem": "An arithmetic sequence with 10 terms has common difference $d>0$. If the absolute value of each term is a prime number, find the smallest possible value of $d$."
+        },
+        {
+          "number": 17,
+          "problem": "12 children stand on the circumference of a circle such that the distance between any two adjacent children is the same. The teacher then put on a red hat or a blue hat for each child, such that whenever some children's positions form a regular polygon then their hats are not all of the same colour. In how many different ways can the teacher put on hats for the children?"
+        },
+        {
+          "number": 18,
+          "problem": "Let $f(x)$ be a polynomial of degree 5. If $f(1)=0$, $f(3)=1$, $f(9)=2$, $f(27)=3$, $f(81)=4$ and $f(243)=5$, find the coefficient of $x$ in $f(x)$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $a_1=\\frac{2}{3}$ and $$a_{n+1}=\\frac{a_n}{4}+\\sqrt{\\frac{24a_n+9}{256}}-\\frac{9}{48}$$ for all positive integers $n$. Find the value of $a_1+a_2+a_3+\\cdots$."
+        },
+        {
+          "number": 20,
+          "problem": "Eight couples attend a gathering. They are to be divided into four groups such that each group consists of two men and two women, and that no man may be in the same group as his wife. How many different ways of grouping are there?"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A positive integer $n$ is a square number as well as a multiple of 2016. Find the smallest possible value of $n$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $S$ be the set of all 2016-digit positive integers whose digits are all '2', '0', '1' or '6'. If a positive integer is chosen from $S$ at random, what is the probability that the leftmost digit is smaller than the rightmost digit?"
+        },
+        {
+          "number": 3,
+          "problem": "In a test, a question required students to draw a triangle in which the largest and the smallest interior angles differ by $54^\\circ$, and then compute the sum of any two of the interior angles of the triangle drawn. The sums obtained by two students were $x^\\circ$ and $y^\\circ$ respectively. Find the greatest possible value of $x-y$."
+        },
+        {
+          "number": 4,
+          "problem": "A class of 26 students attempted a test with $n$ questions, each carrying 1 mark. If no two students obtained the same score and no question was correctly answered by more than 3 students, find the smallest possible value of $n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $f(n)=\\left\\lfloor\\frac{4032n}{2017}\\right\\rfloor$, where $\\lfloor x\\rfloor$ denotes the greatest integer less than or equal to $x$. Find the value of $f(1)+f(2)+\\cdots+f(2016)$."
+        },
+        {
+          "number": 6,
+          "problem": "Let $x$ and $y$ be real numbers. Find the smallest possible value of $4x^2+(x+2y-6)^2+16y-23$."
+        },
+        {
+          "number": 7,
+          "problem": "In $\\triangle ABC$, $M$ is the mid-point of $AB$, $D$ is the foot of perpendicular from $A$ to $BC$, and $P$ is a point on $MD$ (suitably extended if necessary) such that $CP$ is perpendicular to $MD$. If $AB=3$, $BD=1$ and $PB=PC$, find the length of $AC$."
+        },
+        {
+          "number": 8,
+          "problem": "Let $a$, $b$, $c$, $d$ be integers with absolute values not exceeding 10. If the two roots to the equation $x^2+ax+b=0$ are $c$ and $d$, while the two roots to the equation $x^2+cx+d=0$ are $a$ and $b$, how many possible sets of values are there for $(a,b,c,d)$?"
+        },
+        {
+          "number": 9,
+          "problem": "Let $Q$ be a polynomial in which all coefficients are non-negative integers. If $Q(1)=4$ and $Q(5)=152$, find the value of $Q(7)$."
+        },
+        {
+          "number": 10,
+          "problem": "How many five-digit positive integers are divisible by 3 and contain at least one '3' in their digits?"
+        },
+        {
+          "number": 11,
+          "problem": "In $\\triangle ABC$, $\\angle B=40^\\circ$ and $AB+BC=2AC$. $K$ and $M$ are the mid-points of $AB$ and $BC$ respectively, while $L$ is a point on $AC$ such that $BL$ bisects $\\angle ABC$. Find $\\angle KLM$."
+        },
+        {
+          "number": 12,
+          "problem": "Find the smallest positive multiple of 2016 whose digits do not contain '2', '0', '1' or '6'."
+        },
+        {
+          "number": 13,
+          "problem": "In a test, the answer sheet is a piece of graph paper with the origin $O$ and both coordinate axes given. The question requires students to mark a point $A$ on the positive $x$-axis, a point $B$ on the positive $y$-axis, a point $C$ vertically above $A$ and a point $D$ on the segment $OA$ so that the following conditions are satisfied: quadrilateral $OACB$ has perimeter 32, the sum of the areas of $\\triangle OBD$ and $\\triangle ACD$ is equal to that of $\\triangle BCD$, and that the lengths of $OD$, $DA$, $AC$, $CB$, $BO$ are all positive integers. How many different sets of correct answers are there to this question?"
+        },
+        {
+          "number": 14,
+          "problem": "If $a^3-3ab^2=11$ and $b^3-3a^2b=13$, find the value of $a^2+b^2$."
+        },
+        {
+          "number": 15,
+          "problem": "We say that three positive integers form a 'perfect group' if they are equal or if they are three consecutive positive integers. In how many ways can we write down 9 positive integers, each not exceeding 10, in ascending order so that they can be divided into 3 'perfect groups'?"
+        },
+        {
+          "number": 16,
+          "problem": "In $\\triangle ABC$, $AB+BC=2AC$ and $\\angle A=\\angle C+90^\\circ$. Find $\\cos B$."
+        },
+        {
+          "number": 17,
+          "problem": "10 boys are seated in a row, and each of them puts on a red, green or blue hat randomly. What is the probability that everyone finds at least one neighbour (another boy sitting on his left or right) who has put on a hat of the same colour as his own?"
+        },
+        {
+          "number": 18,
+          "problem": "In $\\triangle ABC$, $D$ is the mid-point of $BC$ and $M$ is a point on $AD$. The extension of $BM$ meets $AC$ at $N$, and $AB$ is tangent to the circumcircle of $\\triangle BCN$. If $BC=8$ and $BN=6$, find the length of $BM$."
+        },
+        {
+          "number": 19,
+          "problem": "Let $f$ be a quadratic polynomial with integer coefficients. If the values of $f(0)$, $f(3)$ and $f(4)$ are pairwise distinct but all belong to the set $\\{2, 20, 201, 2016\\}$, find the sum of all possible values of $f(1)$."
+        },
+        {
+          "number": 20,
+          "problem": "In $\\triangle ABC$, $P$ and $Q$ are points on $AB$ and $AC$ respectively such that $AP:PB=8:1$ and $AQ:QC=15:1$. $X$ and $Y$ are points on $BC$ such that the circumcircle of $\\triangle APX$ is tangent to both $BC$ and $CA$, while the circumcircle of $\\triangle AQY$ is tangent to both $AB$ and $BC$. Find $\\cos\\angle BAC$."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_0=1$, $a_1=2$ and $a_n=a_{n-2}+(a_{n-1})^2$ for $n>1$. Find the remainder when $a_{2017}$ is divided by 7."
+        },
+        {
+          "number": 2,
+          "problem": "The graph of $x^2(x+y+1)=y^2(x+y+1)$ together with the two coordinate axes divide the $xy$-plane into $n$ regions. Find the value of $n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $$f(n)=\\frac{1}{2^n}+\\frac{1}{3^n}+\\frac{1}{4^n}+\\cdots+\\frac{1}{2017^n}.$$ Find the value of $f(2)+f(3)+f(4)+\\cdots$."
+        },
+        {
+          "number": 4,
+          "problem": "In how many different ways can we put 600 identical balls into 3 identical boxes such that each box contains at least one ball?"
+        },
+        {
+          "number": 5,
+          "problem": "Let $x_1, x_2, \\ldots, x_n$ be positive rational numbers such that $x_1^3+x_2^3+\\cdots+x_n^3=1$. Find the smallest possible value of $n$."
+        },
+        {
+          "number": 6,
+          "problem": "If $b$ is a positive integer not exceeding 200, how many sets of solutions $(a,b)$ are there to the equation $(\\log_b a)^{2017}=\\log_b(a^{2017})$?"
+        },
+        {
+          "number": 7,
+          "problem": "How many sets of positive integers $(x,y,z)$ have the properties that $x\\le y\\le z$, their H.C.F. is 30 and their L.C.M. is 3000?"
+        },
+        {
+          "number": 8,
+          "problem": "Let $f(x)=x^4+x^3+bx^2+100x+c$ and $g(x)=x^3+ax^2+x+10$, where $a$, $b$, $c$ are constants. If the equation $g(x)=0$ has three distinct real roots, each of which is also a root of $f(x)=0$, find the value of $f(1)$."
+        },
+        {
+          "number": 9,
+          "problem": "In quadrilateral $ABCD$, $\\angle BAD=\\angle ADC$ and $\\angle ABD=\\angle BCD$. If $AB=8$, $BD=10$ and $BC=6$, find the length of $CD$."
+        },
+        {
+          "number": 10,
+          "problem": "$ABCD$ is a trapezium with $\\angle DAB=\\angle ABC=90^\\circ$ and $AB=BC=2AD$. $P$ is a point inside the trapezium such that $PA=1$, $PB=2$ and $PC=3$. Find the area of $ABCD$."
+        },
+        {
+          "number": 11,
+          "problem": "Ann and Ben compete in the election for the class club chairman. 8 eligible voters take turns to vote, and the vote count is updated immediately. A candidate wins once he/she leads the other by 4 votes during the process; otherwise there is no winner. If all voters cast a vote to one of Ann or Ben at random, what is the probability for Ann to win?"
+        },
+        {
+          "number": 12,
+          "problem": "Let $d_1, d_2, \\ldots, d_n$ be all the positive factors of $11!$. Find the value of $$\\frac{1}{d_1+\\sqrt{11!}}+\\frac{1}{d_2+\\sqrt{11!}}+\\cdots+\\frac{1}{d_n+\\sqrt{11!}}.$$"
+        },
+        {
+          "number": 13,
+          "problem": "If all roots of the equation $(k^2-1)x^2-6(3k-1)x+72=0$ are positive integers, find the sum of all possible values of the constant $k$."
+        },
+        {
+          "number": 14,
+          "problem": "Let $Q(x)=x^2+ax+b$, where $a$ and $b$ are integers with $|b|\\le 365$. If the equation $[Q(x)]^2=1$ has four positive integral solutions (not necessarily distinct), how many different sets of possible values for $(a,b)$ are there?"
+        },
+        {
+          "number": 15,
+          "problem": "In $\\triangle ABC$, $D$ and $E$ are points on $AB$ and $AC$ respectively. If $AB=33$, $AC=21$, $BC=m$ and $AD=DE=EC=n$ where $m$, $n$ are integers, find the value of $m$."
+        },
+        {
+          "number": 16,
+          "problem": "Some families form teams to join a competition. Each family consists of the father, the mother and not more than five children. There is a prize each for the best father, the best mother and the best child, with the restriction that each family may win at most one prize. It turns out that there are 7770 different possible combinations for the prize winners. What is the total number of children joining the competition?"
+        },
+        {
+          "number": 17,
+          "problem": "In $\\triangle ABC$, $AB=4$ and $AC=6$. The two tangents to the circumcircle of $\\triangle ABC$ at $B$ and $C$ intersect at $D$. If $A$ and $D$ are equidistant from the line $BC$, find the length of $BC$."
+        },
+        {
+          "number": 18,
+          "problem": "On the plane 5 points $X_1, X_2, \\ldots, X_5$ are chosen, and each pair of these points are joined by a blue line. Suppose no two blue lines are parallel or perpendicular to each other. Now for each point $X_i$ ($1\\le i\\le 5$) and each blue line $\\ell$ not passing through $X_i$, a red line is drawn passing through $X_i$ and perpendicular to $\\ell$. What is the maximum number of points of intersection formed by the red lines?"
+        },
+        {
+          "number": 19,
+          "problem": "Let $ABC$ be an acute-angled triangle with incircle $\\omega$ which is tangent to sides $BC$ and $CA$ at $D$ and $E$, respectively. $X$ is a point on the altitude from $A$ to $BC$, and the circle $\\omega'$ with diameter $AX$ is tangent to $\\omega$. Denote by $U$ and $V$, respectively, the points where $CA$ and $AB$ intersect $\\omega'$ again. If $UV=12$, $AX=15$ and $AE=24$, find the value of $BD\\times DC$."
+        },
+        {
+          "number": 20,
+          "problem": "Let $X$ be a randomly chosen subset of $\\{1, 2, \\ldots, 2017\\}$. A positive integer $n$ is said to be 'good' if both $n$ and $n+|X|$ are elements of $X$ (where $|X|$ denotes the number of elements of $X$). Find the expected value of the number of 'good' integers."
+        }
+      ]
+    }
+  ]
+}
