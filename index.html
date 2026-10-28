@@ -810,6 +810,15 @@ body.lang-el .st-en { display: none; }
 .ai-prov button[aria-pressed="true"] { background: #245b86; border-color: #245b86; color: #fff; }
 #aiToast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); max-width: calc(100vw - 32px); padding: 12px 18px; border-radius: 6px; background: #0f2a44; color: #fff; font: 600 .9rem/1.4 var(--sans); box-shadow: 0 8px 24px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 100; }
 #aiToast.show { opacity: 1; transform: translate(-50%, 0); }
+.btn.share { text-decoration: none; }
+.share-nets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--line); }
+.share-nets a { padding: 7px 4px; border: 1px solid var(--line-strong); border-radius: 3px; color: var(--ink); text-align: center; text-decoration: none; font: 600 .78rem/1.2 var(--sans); }
+.share-nets a:hover, .share-nets a:focus-visible { background: #edf3f8; }
+.problem.p-focus { box-shadow: 0 0 0 3px var(--f, #245b86); }
+.share-card { position: fixed; left: -10000px; top: 0; width: 760px; padding: 28px 32px 20px; background: #fff; color: #0f2a44; border-top: 6px solid var(--f, #245b86); font: 17px/1.6 var(--serif, Georgia, serif); }
+.share-card .sc-head { font: 700 18px/1.3 var(--sans); margin-bottom: 14px; }
+.share-card .statement img { max-width: 100%; }
+.share-card .sc-foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid #d6dee6; font: 13px/1.3 var(--sans); color: #4a5d70; }
 .ai-note { margin: 6px 4px 2px; font-size: .75rem; color: var(--muted); }
 .ai-copy { margin-top: 6px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
 .p-id { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
@@ -1159,7 +1168,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261028-korea-fkmo-vietnam-tst-1993';
+const DATA_VERSION = '20261028-share-problem';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2786,6 +2795,7 @@ function problemHtml(p) {
             <span class="p-views" data-views="${p.uid}" title="Views"></span>
             <button type="button" class="btn btn-sm like" data-like="${p.uid}" aria-pressed="${typeof statsLiked !== 'undefined' && statsLiked.has(p.uid)}" aria-label="Like this problem" title="Like"><span class="lh" aria-hidden="true">♥</span><span class="lc"></span></button>
             ${aiActionHtml(p)}
+            ${shareActionHtml(p)}
             <button type="button" class="btn btn-sm add" data-toggle-uid="${p.uid}" aria-pressed="false">
                 <span class="off">${ICON.plus} Add</span>
                 <span class="on">${ICON.check} In my set</span>
@@ -3275,6 +3285,11 @@ async function copyAiPrompt() {
 /* ---------- Link to the current view ----------
    ?c=<row key>&y=<year>&d=<day>&t=<topic>&q=<search> reopens exactly this selection. */
 function viewQuery() {
+    if (typeof focusUid !== 'undefined' && focusUid) {
+        const [k, yr] = focusUid.split('.');
+        if (state.country === k && state.year === +yr && state.day === 'all' && state.topic === 'all' && !state.q.trim()) return 'p=' + focusUid;
+        focusUid = null;
+    }
     const p = new URLSearchParams();
     if (state.tab !== 'national' && !state.country) p.set('s', state.tab);
     if (state.country) p.set('c', state.country);
@@ -3300,7 +3315,13 @@ function readView() {
     if (d && /^\d{1,2}$/.test(d)) state.day = d;
     if (t && t.length < 40) state.topic = t;
     if (q) { state.q = q.slice(0, 120); $('#q').value = state.q; }
-    return !!(c || p.has('y') || d || t || q);
+    const one = p.get('p');
+    if (one && /^[a-z][a-z0-9]*\.\d{4}\.\d{1,2}\.[A-Za-z0-9]{1,4}$/.test(one) && CBY[one.split('.')[0]]) {
+        const [k, yr] = one.split('.');
+        focusUid = one; state.country = k; state.tab = scopeOf(CBY[k]); state.year = +yr; state.day = 'all'; state.topic = 'all'; state.q = '';
+        limit = 500; // the whole year, so the card exists
+    }
+    return !!(c || p.has('y') || d || t || q || focusUid);
 }
 async function copyView() {
     const url = location.origin + location.pathname + (viewQuery() ? '?' + viewQuery() : '');
@@ -3316,6 +3337,140 @@ function showUpdated() {
     // Same text as toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}), without loading Intl at startup.
     const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
     $('#statUpdated').textContent = `Updated ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
+/* ---------- Share one problem ----------
+   Links go through the share worker (workers/share): its page carries the problem's title and statement
+   for link previews and sends people on to ?p=<uid>. */
+const SHARE_URL = 'https://pythagoras.sokkorom.workers.dev/p/';
+function problemLabel(p) {
+    const c = CBY[p.country];
+    return `${c.flag} ${c.name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day ${p.day}` : ''} – Problem ${p.num}`;
+}
+function problemLink(p) { return SHARE_URL + encodeURIComponent(p.uid); }
+function shareActionHtml(p) {
+    const uid = esc(p.uid), url = problemLink(p), label = problemLabel(p), u = encodeURIComponent(url), t = encodeURIComponent(label);
+    const mail = encodeURIComponent(`${label}\n\n${p.text}\n\n${url}`);
+    const nets = [
+        ['X', `https://x.com/intent/post?text=${t}&url=${u}`],
+        ['Facebook', `https://www.facebook.com/sharer/sharer.php?u=${u}`],
+        ['Reddit', `https://www.reddit.com/submit?url=${u}&title=${t}`],
+        ['WhatsApp', `https://wa.me/?text=${encodeURIComponent(label + '\n' + url)}`],
+        ['Viber', `viber://forward?text=${encodeURIComponent(label + '\n' + url)}`],
+        ['Telegram', `https://t.me/share/url?url=${u}&text=${t}`],
+        ['LinkedIn', `https://www.linkedin.com/sharing/share-offsite/?url=${u}`],
+        ['Gmail', `https://mail.google.com/mail/?view=cm&fs=1&su=${t}&body=${mail}`],
+        ['Email', `mailto:?subject=${t}&body=${mail}`]
+    ];
+    return `<details class="ai-menu share-menu">
+        <summary class="btn btn-sm share" aria-label="Share problem ${esc(p.num)}">Share ▾</summary>
+        <div class="ai-options">
+            ${typeof navigator !== 'undefined' && navigator.share ? `<button type="button" class="ai-choice" data-share="native" data-share-uid="${uid}">📤 Share…</button>` : ''}
+            <button type="button" class="ai-choice" data-share="link" data-share-uid="${uid}">🔗 Copy link</button>
+            <button type="button" class="ai-choice" data-share="image" data-share-uid="${uid}">🖼️ Copy as image</button>
+            <button type="button" class="ai-choice" data-share="latex" data-share-uid="${uid}">∑ Copy statement (LaTeX)</button>
+            <div class="share-nets">${nets.map(([n, h]) => `<a href="${esc(h)}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('')}</div>
+        </div>
+    </details>`;
+}
+function showToast(text) {
+    let t = document.getElementById('aiToast');
+    if (!t) { t = document.createElement('div'); t.id = 'aiToast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = text;
+    t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 4000);
+}
+async function copyText(text, done) {
+    try { await navigator.clipboard.writeText(text); showToast(done); }
+    catch (e) { prompt('Copy this:', text); }
+}
+// html-to-image (lazy, only for "Copy as image") draws a clean card: title, typeset statement, figures, bank name.
+let htmlToImageLoad = null;
+function loadHtmlToImage() {
+    return htmlToImageLoad || (htmlToImageLoad = new Promise((resolve, reject) => {
+        const sc = document.createElement('script');
+        sc.src = 'https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js';
+        sc.onload = () => resolve(window.htmlToImage); sc.onerror = () => { htmlToImageLoad = null; reject(new Error('load')); };
+        document.head.appendChild(sc);
+    }));
+}
+// Fonts for the picture, embedded once per visit: the MathJax faces already in use and the Latin/Greek
+// subsets of the page fonts (html-to-image cannot read the cross-origin Google stylesheet itself).
+let shareFontCss = null;
+function dataUrl(url) {
+    return fetch(url).then(r => r.blob()).then(b => new Promise(resolve => { const f = new FileReader(); f.onload = () => resolve(f.result); f.readAsDataURL(b); }));
+}
+async function embedFaces(css, base) {
+    const re = /url\(["']?([^"')]+)["']?\)/g;
+    const urls = [...new Set([...css.matchAll(re)].map(m => m[1]))];
+    const map = new Map(await Promise.all(urls.map(u => { const abs = new URL(u, base).href; return dataUrl(abs).then(d => [u, d], () => [u, abs]); })));
+    return css.replace(re, (m, u) => `url("${map.get(u)}")`);
+}
+function shareFonts() {
+    return shareFontCss || (shareFontCss = (async () => {
+        const used = new Set([...document.fonts].filter(f => f.status === 'loaded').map(f => f.family.replace(/["']/g, '')));
+        let mj = '';
+        for (const sheet of document.styleSheets) {
+            let rules; try { rules = sheet.cssRules; } catch (e) { continue; }
+            for (const r of rules) if (r instanceof CSSFontFaceRule && /^MJX/.test(r.style.getPropertyValue('font-family').replace(/["']/g, '')) && used.has(r.style.getPropertyValue('font-family').replace(/["']/g, ''))) mj += r.cssText + '\n';
+        }
+        let css = await embedFaces(mj, location.href);
+        try {
+            const href = document.querySelector('link[rel="stylesheet"][href*="fonts.googleapis"]').href;
+            const text = await (await fetch(href)).text();
+            css += await embedFaces(text.split(/(?=\/\* )/).filter(b => /^\/\* (latin|greek) \*\//.test(b)).join('\n'), href);
+        } catch (e) { /* the system fonts stand in */ }
+        return css;
+    })().catch(e => { shareFontCss = null; return ''; }));
+}
+async function problemImage(p) {
+    const lib = await loadHtmlToImage();
+    const node = document.createElement('div');
+    node.className = 'share-card f-' + p.country;
+    node.innerHTML = `<div class="sc-head">${esc(problemLabel(p))}</div><div class="statement">${bodyHtml(p.text, p)}</div>
+        <div class="sc-foot"><b>Pythagoras</b> – World Mathematical Olympiads Bank · eisatopon.github.io/national-olympiads-bank</div>`;
+    document.body.appendChild(node);
+    try {
+        await typeset(node);
+        await Promise.all([...node.querySelectorAll('img')].map(img => img.complete ? 0 : new Promise(r => { img.onload = img.onerror = r; })));
+        return await lib.toBlob(node, {pixelRatio: 2, backgroundColor: '#ffffff', fontEmbedCSS: await shareFonts(), style: {position: 'static', left: '0'}});
+    } finally { node.remove(); }
+}
+function shareImage(p) {
+    const name = `${p.uid.replace(/\./g, '-')}.png`;
+    const blob = problemImage(p);
+    blob.catch(() => {});
+    const download = b => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); showToast('Image saved.'); };
+    // Phones: the share sheet takes the picture straight to Facebook, Viber, Messenger…
+    if (matchMedia('(pointer: coarse)').matches && navigator.canShare && navigator.canShare({files: [new File([''], name, {type: 'image/png'})]})) {
+        showToast('Preparing the image…');
+        blob.then(b => navigator.share({files: [new File([b], name, {type: 'image/png'})], title: problemLabel(p), text: problemLink(p)}).catch(e => { if (e.name !== 'AbortError') download(b); }))
+            .catch(() => showToast('Could not create the image.'));
+        return;
+    }
+    try {
+        // The ClipboardItem gets the promise at once, so Safari keeps the click as the user gesture.
+        navigator.clipboard.write([new ClipboardItem({'image/png': blob})])
+            .then(() => showToast('Image copied — paste it into your post (Ctrl+V).'))
+            .catch(() => blob.then(download, () => showToast('Could not create the image.')));
+        showToast('Preparing the image…');
+    } catch (e) { blob.then(download, () => showToast('Could not create the image.')); }
+}
+function shareAction(kind, uid) {
+    const p = byUid.get(uid);
+    if (!p) return;
+    const url = problemLink(p);
+    if (kind === 'native') navigator.share({title: problemLabel(p), text: problemLabel(p), url}).catch(() => {});
+    else if (kind === 'link') copyText(url, 'Link copied — the preview shows this problem.');
+    else if (kind === 'latex') copyText(`${problemLabel(p)}\n\n${p.text}\n\n${url}`, 'Statement copied (LaTeX).');
+    else if (kind === 'image') shareImage(p);
+}
+// ?p=<uid> opens one problem and highlights it.
+let focusUid = null;
+function focusProblem() {
+    const card = focusUid && document.getElementById('p-' + focusUid);
+    if (!card) return;
+    card.classList.add('p-focus');
+    card.scrollIntoView({block: 'start'});
 }
 
 function parseIncoming() {
@@ -3406,6 +3561,7 @@ document.addEventListener('click', e => {
         return;
     }
 
+    if (t.dataset.share) { shareAction(t.dataset.share, t.dataset.shareUid); if (currentMenu) currentMenu.open = false; return; }
     if (t.dataset.aiProvider) { setAiProvider(t.dataset.aiProvider); return; }
     if (t.dataset.askAi) {
         const open = [...(currentMenu?.querySelectorAll('.ai-custom[open] [data-ai-question]') || [])].find(x => x.value.trim());
@@ -3533,6 +3689,7 @@ async function init() {
     // Topics and source notes are attached while each collection is normalised, so wait for them here.
     await Promise.all([metadataReady, manifestReady]);
     await refresh();
+    if (focusUid) { focusProblem(); setTimeout(focusProblem, 1500); }
 
     // Without the manifest the grid needs every collection, so fall back to loading them all.
     const rest = manifest ? [] : COUNTRIES.map(c => c.key).filter(k => !cache.has(k) && !inflight.has(k));
