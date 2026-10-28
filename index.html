@@ -336,6 +336,7 @@
     --alr2: #7a5c3e; --alr2-ink: #553f29; --alr2-tint: #f3ece5;
     --kr1: #2f5d9e; --kr1-ink: #1f3f6e; --kr1-tint: #e7eef8;
     --krj: #5b4a9e; --krj-ink: #3e3170; --krj-tint: #eeebf7;
+    --bds: #3e7d5a; --bds-ink: #28543c; --bds-tint: #e6f2eb;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -607,6 +608,7 @@
 .f-alr2 { --f: var(--alr2); --f-ink: var(--alr2-ink); --f-tint: var(--alr2-tint); }
 .f-kr1 { --f: var(--kr1); --f-ink: var(--kr1-ink); --f-tint: var(--kr1-tint); }
 .f-krj { --f: var(--krj); --f-ink: var(--krj-ink); --f-tint: var(--krj-tint); }
+.f-bds { --f: var(--bds); --f-ink: var(--bds-ink); --f-tint: var(--bds-tint); }
 
 /* ==========================================================
    Base
@@ -1157,7 +1159,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261027-korea-kmo-r1-kjmo';
+const DATA_VERSION = '20261028-bangladesh-2004-2021';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1405,6 +1407,7 @@ REGION_OF.mdu = 'europe';
 REGION_OF.alr2 = 'europe';
 REGION_OF.kr1 = 'asia';
 REGION_OF.krj = 'asia';
+REGION_OF.bds = 'asia';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1575,6 +1578,7 @@ const COUNTRIES = [
     { key: 'alr', name: 'Albania Round 3 (Classes 9–10)', flag: '🇦🇱', file: 'Albania-round3-problems.json', kind: 'years', full: "Albanian Mathematical Olympiad, Round 3 (Classes 9\u201310)" },
     { key: 'alr2', name: 'Albania Round 2 (Classes 9–10)', flag: '🇦🇱', file: 'Albania-round2-problems.json', kind: 'years', full: "Albanian Mathematical Olympiad, Round 2 (Classes 9\u201310)" },
     { key: 'bd', name: 'Bangladesh', flag: '🇧🇩', file: 'Bangladesh-bdmo-problems.json', kind: 'years' },
+    { key: 'bds', name: 'Bangladesh Secondary', flag: '🇧🇩', file: 'Bangladesh-bdmo-secondary-problems.json', kind: 'years', full: "Bangladesh Mathematical Olympiad, National Round (Secondary)" },
     { key: 'put', name: 'Putnam', flag: '🎓', file: 'undergraduate/Putnam-problems.json', kind: 'years', scope: 'undergraduate', full: 'William Lowell Putnam Mathematical Competition' },
     { key: 'imc', name: 'IMC', flag: '🎓', file: 'undergraduate/IMC-1994-2026-review.json', kind: 'years', scope: 'undergraduate', full: 'International Mathematics Competition for University Students' },
     { key: 'smmc', name: 'Simon Marais', flag: '🎓', file: 'undergraduate/Simon-Marais-problems.json', kind: 'years', scope: 'undergraduate', full: 'Simon Marais Mathematics Competition' },
