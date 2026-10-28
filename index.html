@@ -915,7 +915,8 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .footer { background: var(--ink-deep); color: #b9c6d2; font-size: .9rem; }
 .footer .wrap { padding-top: 22px; padding-bottom: 22px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
 .footer a { color: #fff; }
-.footer .thanks { flex-basis: 100%; margin: 0; font-size: .85rem; color: #9fb0bf; }
+.footer .thanks, .footer .independent { flex-basis: 100%; margin: 0; font-size: .85rem; color: #9fb0bf; }
+.footer .independent a { color: inherit; }
 
 /* ---------- Print sheet ---------- */
 #printSheet { position: absolute; left: -10000px; top: 0; width: 720px; font-family: var(--serif); color: #000; background: #fff; }
@@ -929,6 +930,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .provenance summary { cursor: pointer; }
 .provenance p, .provenance ul { margin-top: 8px; }
 .ps-src { font: 9pt var(--sans); color: #555; margin-bottom: 4px; }
+.p-credit { margin: 10px 0 0; font: .74rem/1.45 var(--sans); color: var(--muted); }
 .ps-body .statement { font-size: 12pt; line-height: 1.65; max-width: none; }
 
 /* ==========================================================
@@ -1125,6 +1127,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
     <div class="wrap">
         <span>eisatopon.gr © 2025–<span id="yr">2026</span> – Pythagoras, World Mathematical Olympiads Bank</span>
         <a href="https://github.com/Eisatopon/national-olympiads-bank" target="_blank" rel="noopener">Data on GitHub</a>
+        <p class="independent">Pythagoras is an independent project; it is not affiliated with, endorsed by or supported by any competition organiser. Problems remain the property of their organisers and are reproduced as statements only, without solutions; any organiser may ask for corrections or removal at <a href="mailto:sokkorom@gmail.com">sokkorom@gmail.com</a>.</p>
         <p class="thanks">Warm thanks to Ercole Suppa for generously offering his personal collections of olympiad problems and for his valuable help in completing and checking some of the collections in this bank.</p>
     </div>
 </footer>
@@ -1173,7 +1176,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261028-share-figures';
+const DATA_VERSION = '20261028-credits';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2788,6 +2791,59 @@ async function openRelatedProblem(uid) {
     if (card) { card.tabIndex = -1; card.focus(); card.scrollIntoView({behavior:'smooth',block:'start'}); }
 }
 
+// Source and rights line on every card (owner-approved 28 Oct 2026): who owns the problem, what the bank changed,
+// whether the text was checked against the official paper, and that the bank is independent of the organiser.
+const ORG_OF = (() => {
+    const m = {};
+    const set = (keys, org) => keys.split(' ').forEach(k => { m[k] = org; });
+    set('aime amc12 amc10 ahsme amc8 um ujm us put', 'the Mathematical Association of America (MAA)');
+    set('uk1 uk2 ukt ukf ukg ukj ukmc ukh ukc', 'the United Kingdom Mathematics Trust (UKMT)');
+    set('uka', 'UKMT and the Australian Mathematics Trust');
+    set('au', 'the Australian Mathematics Trust');
+    set('kgca kgbe kgec kgpe kgj kgs', 'Kangourou sans Frontières (KSF)');
+    set('arml', 'ARML');
+    set('hmmt hmmti hmmtg hmmtn', 'HMMT');
+    set('pumac', 'the Princeton University Mathematics Competition (PUMaC)');
+    set('usamts', 'USAMTS (AoPS Initiative)');
+    set('bamo', 'the Bay Area Mathematical Olympiad');
+    set('mpg', 'Math Prize for Girls');
+    set('cmimc', 'CMIMC');
+    set('smt', 'the Stanford Math Tournament');
+    set('bmt', 'the Berkeley Math Tournament');
+    set('omo', 'the Online Math Open');
+    set('duke', 'the Duke Math Meet');
+    set('umd', 'the University of Maryland High School Mathematics Competition');
+    set('elmo', 'ELMO'); set('usemo', 'USEMO');
+    set('imo isl', 'the International Mathematical Olympiad'); set('egmo', 'EGMO'); set('apmo', 'APMO');
+    set('ca caq caco cajm', 'the Canadian Mathematical Society'); set('caeu', 'the CEMC, University of Waterloo');
+    set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
+    set('jp jpp jpj jpjp', 'the Mathematical Olympiad Foundation of Japan');
+    set('tot totj', 'the Tournament of Towns');
+    set('igo igoi igoe', 'the Iranian Geometry Olympiad');
+    set('rum rum8 rum9 rum10', 'the Moscow Mathematical Olympiad (MCCME)');
+    set('dem demo9 demo10', 'Mathematik-Olympiaden e.V.'); set('debw1 de', 'Bildung & Begabung (Bundeswettbewerb Mathematik)');
+    set('inq', 'HBCSE and the Mathematics Teachers\' Association (India)');
+    set('vtrmc', 'Virginia Tech'); set('imc', 'the International Mathematics Competition for University Students');
+    return m;
+})();
+const LANG_NAME = {de: 'German', fr: 'French', es: 'Spanish', pt: 'Portuguese', it: 'Italian', ru: 'Russian', uk: 'Ukrainian', pl: 'Polish',
+    cs: 'Czech', sk: 'Slovak', hu: 'Hungarian', ro: 'Romanian', bg: 'Bulgarian', el: 'Greek', nl: 'Dutch', sv: 'Swedish', no: 'Norwegian',
+    da: 'Danish', fi: 'Finnish', et: 'Estonian', lv: 'Latvian', lt: 'Lithuanian', sl: 'Slovenian', hr: 'Croatian', sr: 'Serbian', sq: 'Albanian',
+    mk: 'Macedonian', tr: 'Turkish', ja: 'Japanese', zh: 'Chinese', ko: 'Korean', vi: 'Vietnamese', fa: 'Persian', he: 'Hebrew', is: 'Icelandic'};
+function creditText(p) {
+    const org = ORG_OF[p.country] || 'the organisers';
+    const meta = typeof collectionMetadata !== 'undefined' && collectionMetadata ? collectionMetadata[CBY[p.country].file] : null;
+    const check = meta?.statement_checks?.[p.uid];
+    const checked = check && typeof sameStatement === 'function' && sameStatement(check, p.text) && /^statement_checked/.test(check.status || '');
+    const lang = checked && check.source_language && check.source_language !== 'en' ? LANG_NAME[check.source_language] || check.source_language : '';
+    return [`Problem © ${org}`, 'statement only (no solutions), typeset in LaTeX' + (lang ? `, translated from ${lang}` : ''),
+        checked ? 'checked against the source paper' : 'text not yet checked against the official paper',
+        'Pythagoras is not affiliated with the organiser'].join(' · ');
+}
+function creditHtml(p, print = false) {
+    return `<p class="${print ? 'ps-src' : 'p-credit'}">${esc(creditText(p))}.</p>`;
+}
+
 function problemHtml(p) {
     const c = CBY[p.country];
     return `
@@ -2810,6 +2866,7 @@ function problemHtml(p) {
             </div>
         </div>
         ${p.textEl ? `<div class="lang-sw" role="group" aria-label="Language of the statement"><button type="button" class="btn btn-sm" data-lang="en">EN</button><button type="button" class="btn btn-sm" data-lang="el">ΕΛ</button></div><div class="statement st-en">${bodyHtml(p.text, p)}</div><div class="statement st-el" lang="el">${bodyHtml(p.textEl, p)}</div>` : `<div class="statement">${bodyHtml(p.text, p)}</div>`}
+        ${creditHtml(p)}
         ${provenanceHtml(p)}
         ${dnaHtml(p)}
     </article>`;
@@ -3037,7 +3094,7 @@ function renderPrintSheet() {
                 <div class="ps-body">
                     ${showSrc ? `<p class="ps-src">${CBY[p.country].name} ${p.year}${p.paperLabel ? `, ${esc(p.paperLabel)}` : p.day ? `, Day ${p.day}` : ''}, Problem ${esc(p.num)}${p.topic ? ` (${esc(p.topic)})` : ''}</p>` : ''}
                     <div class="statement">${bodyHtml(p.text, p)}</div>
-                    ${showSrc ? provenanceHtml(p, true) : ''}
+                    ${creditHtml(p, true)}${showSrc ? provenanceHtml(p, true) : ''}
                     ${$('#solutionSpace').value !== '0' ? `<div class="solution-space" style="height:${Number($('#solutionSpace').value)}mm" aria-label="Space for solution"></div>` : ''}
                 </div>
             </section>`).join('')
