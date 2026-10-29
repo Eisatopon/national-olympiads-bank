@@ -340,6 +340,7 @@
     --hkp: #3d7a8c; --hkp-ink: #1f4a57; --hkp-tint: #e3f1f5;
     --kz9: #2e7d8c; --kz9-ink: #1b4d57; --kz9-tint: #e3f1f3;
     --kz10: #3d6fa8; --kz10-ink: #26456b; --kz10-tint: #e6eef7;
+    --oxmat: #1f3f73; --oxmat-ink: #132a4d; --oxmat-tint: #e5ebf4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -615,6 +616,7 @@
 .f-hkp { --f: var(--hkp); --f-ink: var(--hkp-ink); --f-tint: var(--hkp-tint); }
 .f-kz9 { --f: var(--kz9); --f-ink: var(--kz9-ink); --f-tint: var(--kz9-tint); }
 .f-kz10 { --f: var(--kz10); --f-ink: var(--kz10-ink); --f-tint: var(--kz10-tint); }
+.f-oxmat { --f: var(--oxmat); --f-ink: var(--oxmat-ink); --f-tint: var(--oxmat-tint); }
 
 /* ==========================================================
    Base
@@ -1180,7 +1182,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261029-caucasus-2015';
+const DATA_VERSION = '20261029-oxford-mat';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1432,6 +1434,7 @@ REGION_OF.bds = 'asia';
 REGION_OF.hkp = 'asia';
 REGION_OF.kz9 = 'asia';
 REGION_OF.kz10 = 'asia';
+REGION_OF.oxmat = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1709,6 +1712,7 @@ const COUNTRIES = [
     { key: 'cu', name: 'Cuba', flag: '🇨🇺', file: 'Cuba-mo-problems.json', kind: 'years', full: "Cuban Mathematical Olympiad (Concurso Nacional)" },
     { key: 'co', name: 'Colombia', flag: '🇨🇴', file: 'Colombia-ocm-problems.json', kind: 'years', full: "Colombian Mathematical Olympiad (OCM), national final, higher level" },
     { key: 'grpan', name: 'Greece – Panhellenic Exams', flag: '🇬🇷', file: 'Greece-panhellenic-problems.json', kind: 'years', scope: 'entrance', full: "Greek Panhellenic university entrance exams, Mathematics" },
+    { key: 'oxmat', name: 'UK – Oxford MAT', flag: '🇬🇧', file: 'UK-oxford-mat-problems.json', kind: 'years', scope: 'entrance', full: "Oxford Mathematics Admissions Test (MAT), University of Oxford" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -1866,7 +1870,7 @@ function bodyHtml(text, record) {
         return '';
     });
     // A paragraph made only of answer-choice lines "(A) …" … "(E) …" keeps one choice per line.
-    const isChoices = x => { const ls = x.split('\n').map(l => l.trim()).filter(Boolean); return ls.length > 1 && ls.every(l => /^\([A-E]\)/.test(l)); };
+    const isChoices = x => { const ls = x.split('\n').map(l => l.trim()).filter(Boolean); return ls.length > 1 && ls.every(l => /^\([A-Ea-e]\)/.test(l)); };
     let html = s.split(/\n{2,}/).map(x => x.trim()).filter(Boolean).map(x => isChoices(x)
         ? `<div class="para choices">${x.split('\n').map(l => l.trim()).filter(Boolean).map(l => `<span class="choice">${l}</span>`).join('')}</div>`
         : `<div class="para">${record && record.textEl ? keepLines(x) : x.replace(/\n(?=\s*•)/g, '<br>')}</div>`).join('');
@@ -2825,6 +2829,7 @@ const ORG_OF = (() => {
     set('imo isl', 'the International Mathematical Olympiad'); set('egmo', 'EGMO'); set('apmo', 'APMO');
     set('ca caq caco cajm', 'the Canadian Mathematical Society'); set('caeu', 'the CEMC, University of Waterloo');
     set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
+    set('oxmat', 'the University of Oxford');
     set('jp jpp jpj jpjp', 'the Mathematical Olympiad Foundation of Japan');
     set('tot totj', 'the Tournament of Towns');
     set('igo igoi igoe', 'the Iranian Geometry Olympiad');
