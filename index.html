@@ -1182,7 +1182,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261029-oxford-mat';
+const DATA_VERSION = '20261029-credit-min';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2839,22 +2839,18 @@ const ORG_OF = (() => {
     set('vtrmc', 'Virginia Tech'); set('imc', 'the International Mathematics Competition for University Students');
     return m;
 })();
-const LANG_NAME = {de: 'German', fr: 'French', es: 'Spanish', pt: 'Portuguese', it: 'Italian', ru: 'Russian', uk: 'Ukrainian', pl: 'Polish',
-    cs: 'Czech', sk: 'Slovak', hu: 'Hungarian', ro: 'Romanian', bg: 'Bulgarian', el: 'Greek', nl: 'Dutch', sv: 'Swedish', no: 'Norwegian',
-    da: 'Danish', fi: 'Finnish', et: 'Estonian', lv: 'Latvian', lt: 'Lithuanian', sl: 'Slovenian', hr: 'Croatian', sr: 'Serbian', sq: 'Albanian',
-    mk: 'Macedonian', tr: 'Turkish', ja: 'Japanese', zh: 'Chinese', ko: 'Korean', vi: 'Vietnamese', fa: 'Persian', he: 'Hebrew', is: 'Icelandic'};
 function creditText(p) {
     const org = ORG_OF[p.country] || 'the organisers';
     const meta = typeof collectionMetadata !== 'undefined' && collectionMetadata ? collectionMetadata[CBY[p.country].file] : null;
-    const check = meta?.statement_checks?.[p.uid];
+    const checks = meta?.statement_checks || {};
+    const check = checks[p.uid];
     const checked = check && typeof sameStatement === 'function' && sameStatement(check, p.text) && /^statement_checked/.test(check.status || '');
-    const lang = checked && check.source_language && check.source_language !== 'en' ? LANG_NAME[check.source_language] || check.source_language : '';
-    return [`Problem © ${org}`, 'statement only (no solutions), typeset in LaTeX' + (lang ? `, translated from ${lang}` : ''),
-        checked ? 'checked against the source paper' : 'text not yet checked against the official paper',
-        'Pythagoras is not affiliated with the organiser'].join(' · ');
+    // A row with no source check at all was taken from a later compilation (AoPS, contributed retypesets, …).
+    const compiled = !checked && meta && !Object.values(checks).some(c => /^statement_checked/.test(c?.status || ''));
+    return `© ${org}` + (compiled ? ' · from a later compilation' : '');
 }
 function creditHtml(p, print = false) {
-    return `<p class="${print ? 'ps-src' : 'p-credit'}">${esc(creditText(p))}.</p>`;
+    return `<p class="${print ? 'ps-src' : 'p-credit'}">${esc(creditText(p))}</p>`;
 }
 
 function problemHtml(p) {
