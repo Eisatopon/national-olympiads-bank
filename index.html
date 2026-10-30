@@ -341,6 +341,7 @@
     --kz9: #2e7d8c; --kz9-ink: #1b4d57; --kz9-tint: #e3f1f3;
     --kz10: #3d6fa8; --kz10-ink: #26456b; --kz10-tint: #e6eef7;
     --oxmat: #1f3f73; --oxmat-ink: #132a4d; --oxmat-tint: #e5ebf4;
+    --cypan: #2f7a6b; --cypan-ink: #1c4a41; --cypan-tint: #e3f2ee;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -617,6 +618,7 @@
 .f-kz9 { --f: var(--kz9); --f-ink: var(--kz9-ink); --f-tint: var(--kz9-tint); }
 .f-kz10 { --f: var(--kz10); --f-ink: var(--kz10-ink); --f-tint: var(--kz10-tint); }
 .f-oxmat { --f: var(--oxmat); --f-ink: var(--oxmat-ink); --f-tint: var(--oxmat-tint); }
+.f-cypan { --f: var(--cypan); --f-ink: var(--cypan-ink); --f-tint: var(--cypan-tint); }
 
 /* ==========================================================
    Base
@@ -1183,7 +1185,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261030-credit-once';
+const DATA_VERSION = '20261030-cyprus-pancyprian';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1436,6 +1438,7 @@ REGION_OF.hkp = 'asia';
 REGION_OF.kz9 = 'asia';
 REGION_OF.kz10 = 'asia';
 REGION_OF.oxmat = 'europe';
+REGION_OF.cypan = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1713,6 +1716,7 @@ const COUNTRIES = [
     { key: 'cu', name: 'Cuba', flag: '🇨🇺', file: 'Cuba-mo-problems.json', kind: 'years', full: "Cuban Mathematical Olympiad (Concurso Nacional)" },
     { key: 'co', name: 'Colombia', flag: '🇨🇴', file: 'Colombia-ocm-problems.json', kind: 'years', full: "Colombian Mathematical Olympiad (OCM), national final, higher level" },
     { key: 'grpan', name: 'Greece – Panhellenic Exams', flag: '🇬🇷', file: 'Greece-panhellenic-problems.json', kind: 'years', scope: 'entrance', full: "Greek Panhellenic university entrance exams, Mathematics" },
+    { key: 'cypan', name: 'Cyprus – Pancyprian Exams', flag: '🇨🇾', file: 'Cyprus-pancyprian-exams-problems.json', kind: 'years', scope: 'entrance', full: "Cyprus Pancyprian Examinations, Mathematics (\u039a\u03b1\u03c4\u03b5\u03cd\u03b8\u03c5\u03bd\u03c3\u03b7\u03c2, code 37)" },
     { key: 'oxmat', name: 'UK – Oxford MAT', flag: '🇬🇧', file: 'UK-oxford-mat-problems.json', kind: 'years', scope: 'entrance', full: "Oxford Mathematics Admissions Test (MAT), University of Oxford" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
@@ -2831,6 +2835,7 @@ const ORG_OF = (() => {
     set('ca caq caco cajm', 'the Canadian Mathematical Society'); set('caeu', 'the CEMC, University of Waterloo');
     set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
     set('oxmat', 'the University of Oxford');
+    set('cypan', 'the Cyprus Ministry of Education (Examinations Service)');
     set('jp jpp jpj jpjp', 'the Mathematical Olympiad Foundation of Japan');
     set('tot totj', 'the Tournament of Towns');
     set('igo igoi igoe', 'the Iranian Geometry Olympiad');
