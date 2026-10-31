@@ -1185,7 +1185,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261030-cyprus-pancyprian';
+const DATA_VERSION = '20261031-export-view';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2664,6 +2664,7 @@ function headHtml(count) {
             ${wide || filtersOn() ? '<button type="button" class="btn btn-sm btn-quiet" data-copy-view>Copy link to this view</button>' : ''}
             ${wide ? `<button type="button" class="btn btn-sm" data-all-scope>${state.tab === 'national' ? 'All countries, all years' : 'All competitions, all years'}</button>` : ''}
             ${count && count <= 60 ? `<button type="button" class="btn btn-sm" data-add-all>${ICON.plus} Add all (${count})</button>` : ''}
+            ${count && (state.country || filtersOn()) ? `<button type="button" class="btn btn-sm" data-export-view title="Download every problem of this view as a LaTeX (.tex) file">Export LaTeX (${count})</button>` : ''}
         </div>
     </div>`;
 }
@@ -3164,11 +3165,9 @@ function texCharDecls(tex) {
     const hex = c => c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0');
     return seen.size ? `\\ifPDFTeX\n${[...seen].map(c => `\\DeclareUnicodeCharacter{${hex(c)}}{${TEX_CHARS[c] || `[U+${hex(c)}]`}}`).join('\n')}\n\\fi` : '';
 }
-function buildTex() {
-    const items = getSelected();
-    const showSrc = $('#showSource').checked;
-    const space = Number($('#solutionSpace').value);
-    const title = $('#examTitle').value.trim() || 'Mathematical Olympiads problem set';
+function buildTex(items = getSelected(), title = $('#examTitle').value.trim() || 'Mathematical Olympiads problem set', viewExport = false) {
+    const showSrc = viewExport || $('#showSource').checked;
+    const space = viewExport ? 0 : Number($('#solutionSpace').value);
     const head = String.raw`% Exported from Pythagoras – World Mathematical Olympiads Bank
 % https://eisatopon.github.io/national-olympiads-bank/
 % Compiles with pdfLaTeX, XeLaTeX or LuaLaTeX. Figures: put the PNG files next to this file,
@@ -3197,11 +3196,10 @@ function buildTex() {
     const extra = (doc.includes('\\mathscr') ? '\\usepackage{mathrsfs}\n' : '') + (decls ? decls + '\n' : '');
     return head.replace('\\begin{document}', extra + '\\begin{document}') + doc + '\n\\end{document}\n';
 }
-function exportTex() {
-    if (!getSelected().length) return;
-    const title = $('#examTitle').value.trim() || 'problem-set';
+function exportTex(items = getSelected(), title = $('#examTitle').value.trim() || 'problem-set', viewExport = false) {
+    if (!items.length) return;
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([buildTex()], {type: 'application/x-tex;charset=utf-8'}));
+    a.href = URL.createObjectURL(new Blob([buildTex(items, title, viewExport)], {type: 'application/x-tex;charset=utf-8'}));
     a.download = (title.normalize('NFKD').replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase() || 'problem-set') + '.tex';
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
@@ -3673,6 +3671,12 @@ document.addEventListener('click', e => {
     if (t.dataset.related) { showRelated(t.dataset.related); return; }
     if (t.dataset.openProblem) { openRelatedProblem(t.dataset.openProblem); return; }
     if (t.dataset.toggleUid) { toggleUid(t.dataset.toggleUid); return; }
+    if (t.hasAttribute('data-export-view')) {
+        const [title] = scopeTitle();
+        const topic = state.topic !== 'all' ? ` – ${state.topic}` : '';
+        exportTex(shownUids.map(u => byUid.get(u)).filter(Boolean), title.replace(/^[^\p{L}\p{N}]+/u, '') + topic, true);
+        return;
+    }
     if (t.hasAttribute('data-add-all')) {
         const missing = shownUids.filter(u => !selected.includes(u));
         if (missing.length) changeSelection(() => { selected.push(...missing); }, `${missing.length} problems added to your set.`);
@@ -3705,7 +3709,7 @@ $('#deleteSetBtn').addEventListener('click', deleteCollection);
 ['examTitle','showSource','solutionSpace'].forEach(id => $('#' + id).addEventListener('change', () => { saveOptions(); renderPrintSheet(); }));
 $('#printBtn').addEventListener('click', doPrint);
 $('#shareBtn').addEventListener('click', openShare);
-$('#texBtn').addEventListener('click', exportTex);
+$('#texBtn').addEventListener('click', () => exportTex());
 $('#copyBtn').addEventListener('click', copyLink);
 $('#closeShare').addEventListener('click', () => $('#shareDialog').close());
 $('#clearBtn').addEventListener('click', () => {
