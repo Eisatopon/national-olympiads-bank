@@ -1,0 +1,215 @@
+{
+  "competition": "Pan-American Girls' Mathematical Olympiad (PAGMO)",
+  "years": [
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "We have $n \\ge 2$ tokens numbered from $1$ to $n$. They are placed, not necessarily in order, forming a circle. We start at the token with the number $1$.\n\nOn each turn, if we are at the token with the number $i$, we jump to the token that is $i$ places further ahead, always in the clockwise direction. For example, see the following figure (in the figure, “1ER movimiento” means “1st move” and “2DO movimiento” means “2nd move”).\n\nDetermine all values of $n$ for which it is possible to arrange the tokens so that we visit all of them.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/pagmo_2021_p1_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Consider the isosceles right triangle $ABC$ with $\\angle BAC = 90^\\circ$. Let $\\ell$ be the line through $B$ and the midpoint of side $AC$. Let $\\Gamma$ be the circle with diameter $AB$. The line $\\ell$ and the circle $\\Gamma$ intersect at the point $P$, different from $B$. Show that the circle through the points $A$, $C$ and $P$ is tangent to the line $BC$ at $C$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\mathbb{R}$ be the set of real numbers. Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that the equality\n$$f(x + yf(x + y)) + xf(x) = f(xf(x + y + 1)) + y^2$$\nholds for all real numbers $x, y$.\n\nNote: A function $f : \\mathbb{R} \\to \\mathbb{R}$ is an assignment rule that associates to each real number $z$ a unique real number denoted by $f(z)$. For example, $f(z) = z^2 + 1$ is a function that associates to the number $1$ the value $f(1) = 1^2 + 1 = 2$, and to $-2$ the value $f(-2) = (-2)^2 + 1 = 5$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Lucía multiplies several positive one-digit numbers (possibly repeated) and obtains an integer $n$ greater than $10$. Then she multiplies all the digits of $n$ and obtains an odd number. Determine all possible values of the units digit of $n$.\n\nClarification: The units digit of a number is its rightmost digit. For example, the units digit of $2021$ is $1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Celeste has an unlimited number of candies of each of $n$ different types, labelled type $1$, type $2$, $\\ldots$, type $n$. Initially she takes $m > 0$ candies and places them in a row on a table. Then she repeatedly chooses one of the following operations and performs it (she may not always have both options).\n\n1. She eats a candy of type $k$ and puts two candies in its place: one of type $k - 1$ followed by one of type $k + 1$. We consider type $n + 1$ to be type $1$, and type $0$ to be type $n$.\n\n2. She chooses two adjacent candies of the same type and eats them.\n\nDetermine all positive integers $n$ for which Celeste can leave the table empty after performing a finite number of the above operations, for every value of $m$ and every configuration of candies on the table."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle with incenter $I$ and let $\\Gamma$ be the excircle opposite vertex $A$. Suppose that $\\Gamma$ is tangent to the lines $BC$, $AC$ and $AB$ at the points $A_1$, $B_1$ and $C_1$, respectively. Suppose that the lines $IA_1$, $IB_1$ and $IC_1$ meet $\\Gamma$ again at the points $A_2$, $B_2$ and $C_2$, respectively. Let $M$ be the midpoint of segment $AA_1$. If the lines $A_1B_1$ and $A_2B_2$ meet at $X$ and the lines $A_1C_1$ and $A_2C_2$ meet at $Y$, prove that $MX = MY$.\n\nNotes:\n\n• The incenter of triangle $ABC$ is the center of the circle that is tangent to the segments $BC$, $AB$ and $AC$.\n\n• The excircle of triangle $ABC$ opposite vertex $A$ is the circle that is tangent to segment $BC$, to the extension of segment $AB$ beyond $B$, and to the extension of segment $AC$ beyond $C$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Leticia has a $9 \\times 9$ board. Two cells are called friends if they share a side, or if they are in the same column but at opposite ends, or if they are in the same row but at opposite ends. In this way, each cell has exactly $4$ friend cells. Leticia is going to paint each cell in one of three colors: green, blue or red. Once all the cells are painted, a number is written in each cell according to the following rules:\n\n• If the cell is green, write the number of red friend cells plus twice the number of blue friend cells.\n\n• If the cell is red, write the number of blue friend cells plus twice the number of green friend cells.\n\n• If the cell is blue, write the number of green friend cells plus twice the number of red friend cells.\n\nFind the maximum possible value of the sum of the numbers assigned to the cells that Leticia can obtain, given that she may choose the coloring of the cells of the board."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Find all triples $(p, q, r)$ of positive integers such that $p$ and $q$ are prime numbers (not necessarily distinct), $r$ is even, and\n$$p^3 + q^2 = 4r^2 + 45r + 103.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$. Points $P$ and $Q$ are chosen on segment $BC$ such that $\\angle BAP = \\angle CAQ < \\frac{\\angle BAC}{2}$. $B_1$ is a point on segment $AC$. $BB_1$ meets $AP$ and $AQ$ at $P_1$ and $Q_1$, respectively. The bisectors of $\\angle BAC$ and $\\angle CBB_1$ meet at $M$. If $PQ_1 \\perp AC$ and $QP_1 \\perp AB$, prove that $AQ_1MPB$ is cyclic."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\triangle ABC$ be a triangle with $AB \\ne AC$. Let $O_1$ and $O_2$ be the centers of the circles $\\omega_1$ and $\\omega_2$ with diameters $AB$ and $BC$, respectively. Let $P$ be a point on segment $BC$ such that $AP$ meets $\\omega_1$ at the point $Q$, with $Q \\ne A$. Prove that the points $O_1$, $O_2$ and $Q$ are collinear if and only if $AP$ is the bisector of the angle $\\angle BAC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all positive integers $k$ for which there exist positive integers $a$, $b$, $c$ such that\n$$\\left|(a - b)^3 + (b - c)^3 + (c - a)^3\\right| = 3 \\cdot 2^k.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Ana and Bety play a game taking alternate turns. Initially Ana chooses an odd composite positive integer $n$ such that $2^j < n < 2^{j+1}$ with $2 < j$. On her first turn Bety chooses an odd composite positive integer $n_1$ such that\n$$n_1 \\le \\frac{1^n + 2^n + \\cdots + (n-1)^n}{2(n-1)^{n-1}}.$$\nThen, on her turn, Ana chooses a prime number $p_1$ that divides $n_1$. If the prime Ana chose is $3$, $5$ or $7$, then Ana wins. Otherwise Bety chooses an odd composite positive integer $n_2$ such that\n$$n_2 \\le \\frac{1^{p_1} + 2^{p_1} + \\cdots + (p_1-1)^{p_1}}{2(p_1-1)^{p_1-1}}.$$\nAfter this, on her turn, Ana chooses a prime $p_2$ that divides $n_2$. If $p_2$ is $3$, $5$ or $7$, Ana wins. Otherwise the process repeats. Moreover, Ana wins at any moment if Bety cannot choose an odd composite positive integer in the corresponding range. Bety wins if she manages to play at least $j - 1$ turns. Find which of the two players has a winning strategy."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "An integer $n \\ge 2$ is called tuanis if adding the smallest prime divisor of $n$ and the largest prime divisor of $n$ (these divisors may be equal) gives an odd result. Compute the sum of all tuanis numbers less than or equal to $2023$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In each cell of an $n \\times n$ grid one of the numbers $0$, $1$ or $2$ must be written. Determine all positive integers $n$ for which there is a way to fill the $n \\times n$ grid so that, when the sum of the numbers in each row and in each column is computed, the numbers $1, 2, \\ldots, 2n$ are obtained, in some order."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be an acute triangle and let $D$, $E$ and $F$ be the feet of the altitudes from $A$, $B$ and $C$, respectively. The line $EF$ and the circumcircle of $ABC$ meet at $P$, such that $F$ lies between $E$ and $P$. The lines $BP$ and $DF$ meet at $Q$. Prove that if $ED = EP$, then $CQ$ and $DP$ are parallel."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "In an acute triangle $ABC$, $D$ is a point on segment $BC$. Let $R$ and $S$ be the feet of the perpendiculars from $D$ to $AC$ and $AB$, respectively. The line $DR$ and the circumcircle of $BDS$ meet at $X$, with $X \\ne D$. Similarly, the line $DS$ and the circumcircle of $CDR$ meet at $Y$, with $Y \\ne D$. Prove that if $XY$ is parallel to $RS$, then $D$ is the midpoint of $BC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all pairs of prime numbers $(p, q)$ such that $6pq$ divides $p^3 + q^2 + 38$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $n \\ge 2$ be an integer. Lucía chooses $n$ real numbers $x_1, x_2, \\ldots, x_n$ such that $|x_i - x_j| \\ge 1$ for all $i \\ne j$. Then, in each cell of an $n \\times n$ grid she writes one of these numbers, so that no number is repeated in the same row or the same column. Finally, for each cell, she computes the absolute value of the difference between the number in the cell and the number in the first cell of its row. Determine the smallest value that the sum of the $n^2$ numbers Lucía computed can take."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$, let $\\Gamma$ be its circumcircle and let $D$ be the foot of the altitude from $A$ to $BC$. A point $E$ is taken on segment $BC$ such that $CE = BD$. Let $P$ be the point on $\\Gamma$ diametrically opposite vertex $A$. Prove that $PE$ is perpendicular to $BC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Danielle has an $m \\times n$ board and wants to fill it with pieces made of two or more cells joined diagonally, like the ones shown, without overlapping and without leaving gaps:\n\na) Find all values of $(m, n)$ for which it is possible to fill the board.\n\nb) If it is possible to fill an $m \\times n$ board, find the minimum number of pieces Danielle can use to fill it.\n\nNote: Pieces may be rotated.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/pagmo_2024_p2_fig.png"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $M$ be a nonempty set of positive integers and let $S_M$ be the sum of all the elements of $M$. We define the tlacoyo of $M$ as the sum of the digits of $S_M$. For example, if $M = \\{2, 7, 34\\}$, then $S_M = 2 + 7 + 34 = 43$ and the tlacoyo of the set $M$ is $4 + 3 = 7$.\n\nProve that for every positive integer $n$ there exists a set $M$ of $n$ distinct positive integers such that all its nonempty subsets have the same tlacoyo."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "The $n$-factorial of a positive integer $x$ is the product of all positive integers less than or equal to $x$ that are congruent to $x$ modulo $n$.\n\nFor example, for the number $16$, its $2$-factorial is $16 \\times 14 \\times 12 \\times 10 \\times 8 \\times 6 \\times 4 \\times 2$, its $3$-factorial is $16 \\times 13 \\times 10 \\times 7 \\times 4 \\times 1$ and its $18$-factorial is $16$.\n\nA positive integer is olympic if it has $n$ digits, all different from zero, and it is equal to the sum of the $n$-factorials of its digits. Find all olympic positive integers."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that\n$$f(f(x + y) - f(x)) + f(x)f(y) = f(x^2) - f(x + y)$$\nfor all real numbers $x, y$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle and let $a$, $b$ and $c$ be the lengths of the sides opposite the vertices $A$, $B$ and $C$, respectively. Let $R$ be its circumradius and $r$ its inradius. Suppose that $b + c = 2a$ and $R = 3r$.\n\nThe excircle relative to vertex $A$ meets the circumcircle of $ABC$ at the points $P$ and $Q$. Let $U$ be the midpoint of side $BC$ and let $I$ be the incenter of $ABC$.\n\nProve that $U$ is the centroid of triangle $QIP$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Esmeralda and Sara play a game by choosing numbers. First, Esmeralda chooses a prime number $p$. Then, Sara chooses a positive integer $k$. Esmeralda's goal is to find an infinite set $S$ of positive integers that are multiples of $p^k$ such that exactly the last $k$ digits of all elements of $S$ coincide and are nonzero. For example, exactly the last three digits of $9012\\mathbf{345}$, $5\\mathbf{345}$, $\\mathbf{345}$, $15\\mathbf{345}$ coincide and are nonzero.\n\nProve that Esmeralda can choose a prime $p$ to achieve her goal, regardless of Sara's choice."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a, b$ be integers such that $1 < b < a$. Suppose that\n$$(a^2 - 1)(b^2 - 1)$$\nis a perfect square.\n\n(a) Prove that $a + b$ is composite.\n\n(b) If $a - b$ is prime, prove that $6ab - 3$ is a perfect square."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle with $AB < AC$ and with circumcircle $\\Gamma$. Let $M$ be the midpoint of $BC$. The perpendicular bisector of segment $BC$ intersects line $AB$ at $Y$ and line $AC$ at $X$. Let $\\omega$ be the circumference passing through $B$, $X$, and $M$. The circumferences $\\omega$ and $\\Gamma$ intersect at $Z$, with $Z \\ne B$. Let $N$ be the intersection of line $AZ$ with line $XY$. Show that $N$ is the midpoint of $XY$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be an acute triangle and let $M$ be the midpoint of $AC$. Let $\\Gamma$ be the circumference with center $M$ that passes through $A$. The line $BM$ intersects $\\Gamma$ at $D$ and $E$, where $D$ lies inside $ABC$ and $E$ lies outside $ABC$. Let $r$ be the line perpendicular to $BC$ passing through $B$, and let $F$ be the intersection of $r$ with line $AD$. Prove that line $CF$ is tangent to the circumference $\\omega$ passing through points $B$, $C$, and $E$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Alice and Beatriz play in turns, placing rectangular pieces on a $2025 \\times 2025$ board. Alice plays first. A move consists of placing a piece on the board covering an integer number of cells. It is prohibited to play a piece of the same size as the piece placed by the opponent on the immediately preceding turn. Each piece must have all its sides aligned with the grid of the board, and pieces are not allowed to overlap. There exist infinitely many pieces of each possible size, except for pieces of size $2025 \\times 2025$. A player loses if they cannot make a valid move. Determine whether there exists a winning strategy and, if so, which player has it.\n\nObservation: A piece of size $a \\times b$ is the same as a piece of size $b \\times a$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A strictly increasing sequence of integers $(a_n)_{n \\ge 1}$ is called sertaneja if, for every $n$,\n$$a_{n+1} \\le a_n + 3.$$\nSuppose that in some sertaneja sequence there do not exist indices $i, j, k, l$, pairwise distinct, such that\n$$a_i + a_j + a_k = a_l.$$\nProve that, when each term of this sequence is divided by $3$, there is some remainder ($0$, $1$, or $2$) that does not appear."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be an acute triangle with pairwise distinct side lengths. The perpendicular bisectors of $AB$ and $AC$ intersect segment $BC$ at $P$ and $Q$, respectively, and intersect each other at $O$. If $\\angle BAQ = 2\\angle PAC$, determine $\\angle AOC$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Some squares of a $2025 \\times 2025$ board are colored black so that the following conditions hold:\n\n(i) In every $3 \\times 1$ or $1 \\times 3$ block containing at least two black squares, the third square is also black.\n\n(ii) At least one square of the board is left uncolored.\n\nWhat is the maximum possible number of black squares?"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A positive integer $N$ is called a búcaro number if it can be written in the form\n$$N = \\frac{(a+b)^{n+k}}{a^n \\cdot b^k},$$\nwhere $a, b, n, k$ are positive integers. Find all búcaro numbers."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $a_1, a_2, a_3, a_4, \\ldots$ be a sequence of real numbers such that $0 < a_1 \\le 1 \\le a_2 \\le 3$ and\n$$a_{n+2} = a_n + \\frac{1}{a_{n+1}}$$\nfor all $n \\ge 1$.\n\nFor example, $a_3 = a_1 + \\frac{1}{a_2}$ for $n = 1$, $a_4 = a_2 + \\frac{1}{a_3}$ for $n = 2$, and so on.\n\nProve that $a_n \\le \\frac{3n}{2}$ for all $n \\ge 1$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all integers $n \\ge 2$ such that each of the following numbers divides $n + 1$:\n$$\\gcd(n,1) + \\gcd(n,2),$$\n$$\\gcd(n,2) + \\gcd(n,3),$$\n$$\\gcd(n,3) + \\gcd(n,4),$$\n$$\\vdots$$\n$$\\gcd(n,n-1) + \\gcd(n,n).$$\nHere, $\\gcd(a, b)$ denotes the greatest common divisor of $a$ and $b$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be an acute triangle with $AB < AC$ and circumcircle $\\Gamma$. Let $D$ be the foot of the altitude from $A$ to $BC$. The circle with diameter $AD$ intersects $AB$ at $X \\ne A$ and $\\Gamma$ at $Y \\ne A$. Let $O_1$, $O_2$, and $O_3$ be the circumcenters of triangles $ABC$, $ADX$, and $BXC$, respectively. Prove that triangles $XBY$ and $O_1O_2O_3$ are similar."
+        }
+      ]
+    }
+  ]
+}

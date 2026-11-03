@@ -342,6 +342,7 @@
     --kz10: #3d6fa8; --kz10-ink: #26456b; --kz10-tint: #e6eef7;
     --oxmat: #1f3f73; --oxmat-ink: #132a4d; --oxmat-tint: #e5ebf4;
     --cypan: #2f7a6b; --cypan-ink: #1c4a41; --cypan-tint: #e3f2ee;
+    --pagmo: #b0477a; --pagmo-ink: #6e2a4b; --pagmo-tint: #f6e6ee;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -619,6 +620,7 @@
 .f-kz10 { --f: var(--kz10); --f-ink: var(--kz10-ink); --f-tint: var(--kz10-tint); }
 .f-oxmat { --f: var(--oxmat); --f-ink: var(--oxmat-ink); --f-tint: var(--oxmat-tint); }
 .f-cypan { --f: var(--cypan); --f-ink: var(--cypan-ink); --f-tint: var(--cypan-tint); }
+.f-pagmo { --f: var(--pagmo); --f-ink: var(--pagmo-ink); --f-tint: var(--pagmo-tint); }
 
 /* ==========================================================
    Base
@@ -1186,7 +1188,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261103-macedonia-mmo';
+const DATA_VERSION = '20261103-pagmo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1440,6 +1442,7 @@ REGION_OF.kz9 = 'asia';
 REGION_OF.kz10 = 'asia';
 REGION_OF.oxmat = 'europe';
 REGION_OF.cypan = 'europe';
+REGION_OF.pagmo = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1662,6 +1665,7 @@ const COUNTRIES = [
     { key: 'dan', name: 'Danube Competition', flag: '🇪🇺', file: 'Danube-problems.json', kind: 'years', scope: 'regional', group: 'Danube', groupName: 'Danube Competition', sub: 'Senior', full: "Danube Mathematical Competition, Seniors" },
     { key: 'danj', name: 'Danube Competition Junior', flag: '🇪🇺', file: 'Danube-junior-problems.json', kind: 'years', scope: 'regional', group: 'Danube', groupName: 'Danube Competition', sub: 'Junior', full: "Danube Mathematical Competition, Juniors" },
     { key: 'oim', name: 'Iberoamerican MO', flag: '🌎', file: 'Iberoamerican-oim-problems.json', kind: 'years', scope: 'regional' },
+    { key: 'pagmo', name: 'Pan-American Girls MO', flag: '🌎', file: 'Pan-American-girls-pagmo-problems.json', kind: 'years', scope: 'regional', full: "Pan-American Girls' Mathematical Olympiad (PAGMO)" },
     { key: 'rio', name: 'Rioplatense', flag: '🌎', file: 'Rioplatense-problems.json', kind: 'years', scope: 'regional', full: "Olimp\u00edada Matem\u00e1tica Rioplatense (Level 3)" },
     { key: 'mayo', name: 'Olimpiada de Mayo', flag: '🌎', file: 'Mayo-problems.json', kind: 'years', scope: 'regional', full: "Olimpiada de Mayo (OMA), First and Second Level" },
     { key: 'cono', name: 'Cono Sur MO', flag: '🌎', file: 'Cono-sur-problems.json', kind: 'years', scope: 'regional' },
