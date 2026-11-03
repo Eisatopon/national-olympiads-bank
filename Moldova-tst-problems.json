@@ -1590,6 +1590,71 @@
           "problem": "Let $ABC$ be an acute triangle with circumcircle $\\omega$ and circumcentre $O$. Points $D\\neq B$ and $E\\neq C$ lie on $\\omega$ such that $BD\\perp AC$ and $CE\\perp AB$. Let $CO$ meet $AB$ at $X$, and $BO$ meet $AC$ at $Y$. Prove that the circumcircles of triangles $BXD$ and $CYE$ meet at a point of the line $AO$."
         }
       ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all positive integers $n$ with the following property: for all positive divisors $d$ of $n$, we have $d+1\\mid n$ or $d+1$ is prime."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $A,B,C,D$ be fixed points on a line, in this order. Let $\\omega$ be a variable circle through $C$ and $D$, and suppose it meets the perpendicular bisector of $CD$ at the points $X$ and $Y$. Let $Z$ and $T$ be the other points of intersection of $AX$ and $BY$ with $\\omega$. Prove that $ZT$ passes through a fixed point independent of $\\omega$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\mathbb{Z}_{>0}$ be the set of all positive integers. Determine all subsets $\\mathcal{S}$ of $\\{2^0,2^1,2^2,\\ldots\\}$ for which there exists a function $f:\\mathbb{Z}_{>0}\\to\\mathbb{Z}_{>0}$ such that\n\n$$\\mathcal{S}=\\{f(a+b)-f(a)-f(b)\\mid a,b\\in\\mathbb{Z}_{>0}\\}.$$"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Let $n$ and $T$ be positive integers. James has $4n$ marbles with weights $1,2,\\ldots,4n$. He places them on a balance scale so that both sides have equal weight. Andrew may move a marble from one side of the scale to the other, so that the absolute difference in weights of the two sides remains at most $T$.\n\nFind, in terms of $n$, the minimum positive integer $T$ such that Andrew may make a sequence of moves such that each marble ends up on the opposite side of the scale, regardless of how James initially placed the marbles."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $u,v,w$ be positive reals. Prove that there is a cyclic permutation $(x,y,z)$ of $(u,v,w)$ such that the inequality\n\n$$\\frac{a}{xa+yb+zc}+\\frac{b}{xb+yc+za}+\\frac{c}{xc+ya+zb}\\ge\\frac{3}{x+y+z}$$\n\nholds for all positive real numbers $a$, $b$ and $c$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A rectangular board of dimensions $m\\times n$ with $m,n\\ge 2$ is divided into $1\\times 1$ cells. Initially, $m+n-2$ cells are infected. If in any $2\\times 2$ block there are exactly $3$ infected cells, then the fourth cell in that block becomes infected as well. Is it possible that at some point all the cells become infected?"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $ABC$ be an acute scalene triangle, let $D$ be the orthogonal projection of $A$ on $BC$, and let $M$ and $N$ be the midpoints of $AB$ and $AC$, respectively. Let $P$ and $Q$ be points on the minor arcs $\\overset{\\frown}{AB}$ and $\\overset{\\frown}{AC}$ of the circumcircle of triangle $ABC$, respectively, such that $PQ\\parallel BC$. Show that the circumcircles of triangles $DPQ$ and $DMN$ are tangent if and only if $M$ lies on $PQ$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Let $k$ be a positive integer. Prove that there exist a positive integer $n$ and distinct primes $p_1,p_2,\\ldots,p_k$ such that, if $A(n)$ denotes the number of positive integers less than or equal to $n$ and not divisible by any of $p_1,p_2,\\ldots,p_k$, then\n\n$$\\left|n\\left(1-\\frac{1}{p_1}\\right)\\left(1-\\frac{1}{p_2}\\right)\\cdots\\left(1-\\frac{1}{p_k}\\right)-A(n)\\right|>2^{k-3}.$$"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Prove that for all positive real numbers $x,y,z$ the inequality\n\n$$\\sqrt x+\\sqrt y+\\sqrt z-\\sqrt{xyz}\\le\\sqrt{(x+1)(y+1)(z+1)}$$\n\nholds."
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "Determine all sequences $a_1,a_2,\\ldots$ of positive integers such that for any pair of positive integers $m\\le n$ the arithmetic and geometric means\n\n$$\\frac{a_m+a_{m+1}+\\cdots+a_n}{n-m+1}\\quad\\text{and}\\quad\\left(a_ma_{m+1}\\cdots a_n\\right)^{\\frac{1}{n-m+1}}$$\n\nare both integers."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Let $n$ be a positive integer. A class of $n$ students run $n$ races, in each of which they are ranked with no draws. A student is eligible for a rating $(a,b)$ for positive integers $a$ and $b$ if they come in the top $b$ places in at least $a$ of the races. Their final score is the maximum possible value of $a-b$ across all ratings for which they are eligible. Find the maximum possible sum of all the scores of the $n$ students."
+        },
+        {
+          "day": 3,
+          "number": 12,
+          "problem": "Let $f:\\pi\\to\\mathbb{R}$ be a function from the Euclidean plane $\\pi$ to the real numbers such that $f(A)+f(B)+f(C)=f(O)+f(G)+f(H)$ for any acute triangle $ABC$ with circumcenter $O$, centroid $G$ and orthocenter $H$. Prove that $f$ is constant."
+        }
+      ]
     }
   ]
 }
