@@ -348,6 +348,7 @@
     --robac: #1d4e89; --robac-ink: #112f54; --robac-tint: #e4ecf5;
     --tmua: #5b3f8c; --tmua-ink: #382558; --tmua-tint: #ece6f4;
     --plmat: #a8324a; --plmat-ink: #6b1f2e; --plmat-tint: #f6e4e8;
+    --ita: #2e7d4f; --ita-ink: #1b4d30; --ita-tint: #e3f2e9;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -631,6 +632,7 @@
 .f-robac { --f: var(--robac); --f-ink: var(--robac-ink); --f-tint: var(--robac-tint); }
 .f-tmua { --f: var(--tmua); --f-ink: var(--tmua-ink); --f-tint: var(--tmua-tint); }
 .f-plmat { --f: var(--plmat); --f-ink: var(--plmat-ink); --f-tint: var(--plmat-tint); }
+.f-ita { --f: var(--ita); --f-ink: var(--ita-ink); --f-tint: var(--ita-tint); }
 
 /* ==========================================================
    Base
@@ -1229,7 +1231,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261103-pl-matura';
+const DATA_VERSION = '20261103-ita';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1489,6 +1491,7 @@ REGION_OF.step = 'europe';
 REGION_OF.robac = 'europe';
 REGION_OF.tmua = 'europe';
 REGION_OF.plmat = 'europe';
+REGION_OF.ita = 'americas';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1770,6 +1773,7 @@ const COUNTRIES = [
     { key: 'cypan', name: 'Cyprus – Pancyprian Exams', flag: '🇨🇾', file: 'Cyprus-pancyprian-exams-problems.json', kind: 'years', scope: 'entrance', full: "Cyprus Pancyprian Examinations, Mathematics (\u039a\u03b1\u03c4\u03b5\u03cd\u03b8\u03c5\u03bd\u03c3\u03b7\u03c2, code 37)" },
     { key: 'robac', name: 'Romania – Bacalaureat', flag: '🇷🇴', file: 'Romania-bacalaureat-problems.json', kind: 'years', scope: 'entrance', full: "Romanian Baccalaureate (Bacalaureat), Mathematics M_mate-info" },
     { key: 'plmat', name: 'Poland – Matura', flag: '🇵🇱', file: 'Poland-matura-problems.json', kind: 'years', scope: 'entrance', full: "Polish Matura, Mathematics, extended level (poziom rozszerzony)" },
+    { key: 'ita', name: 'Brazil – ITA', flag: '🇧🇷', file: 'Brazil-ita-problems.json', kind: 'years', scope: 'entrance', full: "ITA entrance examination (Vestibular), Mathematics \u2014 Instituto Tecnol\u00f3gico de Aeron\u00e1utica" },
     { key: 'oxmat', name: 'UK – Oxford MAT', flag: '🇬🇧', file: 'UK-oxford-mat-problems.json', kind: 'years', scope: 'entrance', full: "Oxford Mathematics Admissions Test (MAT), University of Oxford" },
     { key: 'step', name: 'UK – STEP', flag: '🇬🇧', file: 'UK-step-problems.json', kind: 'years', scope: 'entrance', full: "Sixth Term Examination Paper (STEP), University of Cambridge \u2014 STEP I, II, III" },
     { key: 'tmua', name: 'UK – TMUA', flag: '🇬🇧', file: 'UK-tmua-problems.json', kind: 'years', scope: 'entrance', full: "Test of Mathematics for University Admission (TMUA), UAT-UK" },
@@ -2896,6 +2900,7 @@ const ORG_OF = (() => {
     set('robac', 'the Romanian Ministry of Education');
     set('tmua', 'UAT-UK');
     set('plmat', 'the Central Examination Board (CKE), Poland');
+    set('ita', 'the Instituto Tecnológico de Aeronáutica (ITA)');
     set('jeem', 'the Indian Institutes of Technology (JEE Advanced)');
     set('step', 'Cambridge University Press & Assessment');
     set('mk', 'the Union of Mathematicians of Macedonia');
