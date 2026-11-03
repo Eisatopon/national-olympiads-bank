@@ -43,7 +43,11 @@
         },
         {
           "number": 4,
-          "problem": "A $30\\times 30$ square table is covered by blocks of the two types shown in the picture (shape 1: five unit squares, a row of three with one square above its left end and one square below its right end; shape 2: a $2\\times 2$ square), in all possible positions. The blocks do not overlap, do not go outside the table, and the small squares of the blocks lie exactly over the small squares of the table.\n(a) Show that the table may be covered using exactly $100$ blocks of each of the two types.\n(b) Show that if $50$ blocks of shape 2 are placed on the table, then it is possible to place at least one more block of the same type on the table.\n(c) Show that if $28$ blocks of each of the two types are placed on the table, then it is possible to place at least one more of the two blocks on the table.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/mk_1995_p4_fig.png"
+          "problem": "On a square board of size $30\\times 30$, figures of shape $Z$ (in all four possible positions) and figures of shape $K$ (figure: $Z$ on the left, $K$ on the right) are placed. The figures do not overlap, do not go beyond the edges of the board, and the squares of which they are made lie exactly on squares of the board.\n(a) Prove that the board can be covered completely using $100$ figures of each shape.\n(b) Prove that if $50$ figures $Z$ have already been placed on the board, then at least one more such figure can be placed on the board.\n(c) Prove that if $28$ figures of each of the two shapes have already been placed on the board, then at least one more figure of each of the two shapes can be placed on the board.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/mk_1995_p4_fig.png"
+        },
+        {
+          "number": 5,
+          "problem": "Let $a$, $b$, $c$ and $d$ be real numbers with $b\\neq 0$. Determine all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that for all $x,y\\in\\mathbb{R}$ $$f(x+df(y))=ax+by+c.$$"
         }
       ]
     },
@@ -69,6 +73,31 @@
         {
           "number": 5,
           "problem": "Find the greatest $n$ for which there exist $n$ lines in space, passing through a single point, such that any two of them form the same angle."
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine the smallest natural number $n$ such that the sum of the digits of $n$ is divisible by $1997$ and the sum of the digits of $n+1$ is divisible by $1997$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $M$ be a point in the interior of triangle $ABC$, and let $P$, $Q$ and $R$ be the intersection points of $AM$ and $BC$, $BM$ and $AC$, $CM$ and $AB$, respectively. Prove the inequality $$\\frac{AM}{MP}\\cdot\\frac{BM}{MQ}\\cdot\\frac{CM}{MR}\\ge 8.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Determine the number of all triangles whose side lengths are natural numbers less than or equal to $2n$, $n\\in\\mathbb{N}$. Congruent triangles are counted once."
+        },
+        {
+          "number": 4,
+          "problem": "Prove that from any $n$ real numbers one can choose several of them (possibly just one) such that for the sum $S$ of the chosen numbers there exists an integer $P$ with $$(n+1)\\,|S-P|\\le 1.$$"
+        },
+        {
+          "number": 5,
+          "problem": "A $1997\\times 1997$ square grid from which the central $1\\times 1$ square has been removed is given, together with figures $\\Gamma_i$, $i=2,3,\\ldots,1997$, of the shape shown in the figure (the figure shows $\\Gamma_5$). Let $a$ be the number of ways in which the given figure can be covered with the figures $\\Gamma_i$, $i=2,3,\\ldots,1997$. Determine the largest prime $p$ such that $p^3\\mid a$. (The coverings are without overlapping.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/mk_1997_p5_fig.png"
         }
       ]
     },
@@ -186,6 +215,81 @@
         {
           "number": 5,
           "problem": "Let $S$ be a set of $n$ ($n>1$) different permutations of $\\mathbb{Z}$, i.e. bijections $f:\\mathbb{Z}\\to\\mathbb{Z}$, such that:\n(i) if $f,g,h,k\\in S$ and $f\\circ g=h\\circ k$, then $f=h$ and $g=k$;\n(ii) for every $g_1,g_2,\\ldots,g_t\\in S$ with $t>2$ there is a unique pair $(h,k)\\in S^2$ such that $g_1\\circ g_2\\circ\\cdots\\circ g_t=h\\circ k$.\nProve that $6\\mid n$."
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For every natural number $n$, a structure made of $n$ rows of small squares, arranged so that the first row has one square, the second three, $\\ldots$, and the $n$-th row has $2n-1$ squares, as in the figure, will be called a pyramid of height $n$. Prove that a pyramid of height $m$ can be obtained by assembling a certain number of pyramids of height $n$ (without overlapping and without “holes”) if and only if $n\\mid m$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/mk_2003_p1_fig.png"
+        },
+        {
+          "number": 2,
+          "problem": "On the legs $AB$ and $BC$ of an isosceles triangle $ABC$, points $K$ and $L$ are chosen such that $AK+LC=KL$. A line parallel to $BC$ is drawn through the midpoint $M$ of the segment $KL$, and this line meets the base $AC$ at the point $N$. Find the measure of the angle $KNL$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A$ be the set of all $19$-digit numbers whose digits, from left to right, do not increase (for example, in $3321$ they do not increase, while in $3432$ they increase). Prove that:\n(a) there is a number in $A$ divisible by $2003$;\n(b) there exist $3003$ distinct numbers in $A$ such that the sum of any $2003$ of them is divisible by $2003$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a$, $b$, $c$ be positive real numbers and let $k$ be a natural number. Prove that $$\\frac{a^{k+1}}{b^{k}}+\\frac{b^{k+1}}{c^{k}}+\\frac{c^{k+1}}{a^{k}}\\ge\\frac{a^{k}}{b^{k-1}}+\\frac{b^{k}}{c^{k-1}}+\\frac{c^{k}}{a^{k-1}}.$$"
+        },
+        {
+          "number": 5,
+          "problem": "A polynomial $P(x)$ with real coefficients is given. For infinitely many distinct natural numbers $a_1,a_2,\\ldots$ we have $P(a_1)=0$, $P(a_2)=a_1$, $P(a_3)=a_2$, $\\ldots$. What is the largest possible degree of the polynomial $P(x)$?"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Is there a number such that the sum of the digits of its square is\n(a) $80$;\n(b) $81$?"
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that $$f(x+yf(x))=f(xy)+f(x).$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a_1,a_2,\\ldots,a_n,b_1,b_2,\\ldots,b_n$ be positive real numbers such that $$\\sum_{i=1}^{n}a_i=\\sum_{i=1}^{n}b_i.$$ Prove that $$\\sum_{i=1}^{n}\\frac{a_i^2}{a_i+b_i}\\ge\\frac{a_1+a_2+\\cdots+a_n}{2}.$$"
+        },
+        {
+          "number": 4,
+          "problem": "A line $p$ meets the sides $AC$ and $BC$ and the extension of the side $AB$ of $\\triangle ABC$ at the points $Q$, $R$ and $P$, respectively. Let $K$ and $H$ be arbitrary points in the interior of the side $AB$, let $M$ and $N$ be the intersection points of the line $p$ with $KC$ and $HC$, respectively, and let $S$ and $T$ be the intersection points of the segments $AM$ and $BN$ with the segments $QK$ and $RH$, respectively. Prove that the points $S$, $T$ and $P$ are collinear."
+        },
+        {
+          "number": 5,
+          "problem": "A given square is divided into $100\\times 100$ equal small squares. Broken lines are drawn in the square such that:\n(a) each of them consists of segments which are sides of the small squares and lie in the interior of the big square;\n(b) none of them has self-intersection points;\n(c) no two of them have a common point;\n(d) each of them has its endpoints on the sides of the big square.\nProve that, apart from the vertices of the big square, there is at least one more point (on the sides of the big square or in its interior) through which no broken line passes."
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "If $p$ is a prime greater than $3$, prove that $3^p-2^p-1$ is divisible by $42p$."
+        },
+        {
+          "number": 2,
+          "problem": "In the square $ABCT$ the points $K$ and $P$ are the midpoints of the sides $BC$ and $AT$, respectively. On the line $AC$ a point $M$ is chosen such that $A$ lies between $M$ and $C$. The line $MK$ meets the side $AB$ at the point $S$. Prove that $\\angle MPA=\\angle APS$."
+        },
+        {
+          "number": 3,
+          "problem": "Determine all positive real numbers $a$, $b$, $c$ and $d$ such that $$16abcd=(a^2+b^2+c^2+d^2)(abc+bcd+cda+dab)$$ and $$2ab+2cd+ac+ad+bc+bd=8.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Determine all functions $f:\\mathbb{Q}\\to\\mathbb{Q}$ such that $$xf(yz)+yf(z)+z=f\\big(f(x)yz+f(y)z+f(z)\\big)$$ for all $x,y,z\\in\\mathbb{Q}$."
+        },
+        {
+          "number": 5,
+          "problem": "In the plane, $11$ points are given, no three of which are collinear. All pairs of the given points are joined by segments, and each of these segments is coloured in one of three colours: red, yellow and blue. Prove that among the given points there exist three points which are the vertices of a triangle whose sides are all of the same colour or all of different colours."
         }
       ]
     },

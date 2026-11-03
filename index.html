@@ -1138,6 +1138,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <a href="https://github.com/Eisatopon/national-olympiads-bank" target="_blank" rel="noopener">Data on GitHub</a>
         <p class="independent">Pythagoras is an independent project; it is not affiliated with, endorsed by or supported by any competition organiser. Problems remain the property of their organisers and are reproduced as statements only, without solutions; any organiser may ask for corrections or removal at <a href="mailto:sokkorom@gmail.com">sokkorom@gmail.com</a>.</p>
         <p class="thanks">Warm thanks to Ercole Suppa for generously offering his personal collections of olympiad problems and for his valuable help in completing and checking some of the collections in this bank.</p>
+        <p class="thanks">Many thanks to Prof. Mirko Petrushevski, Chairman of the Macedonian Mathematical Olympiad, for kindly providing the Macedonian originals of the missing MMO papers.</p>
     </div>
 </footer>
 
@@ -1185,7 +1186,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261031-print-credit';
+const DATA_VERSION = '20261103-macedonia-mmo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2837,6 +2838,7 @@ const ORG_OF = (() => {
     set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
     set('oxmat', 'the University of Oxford');
     set('cypan', 'the Cyprus Ministry of Education (Examinations Service)');
+    set('mk', 'the Union of Mathematicians of Macedonia');
     set('jp jpp jpj jpjp', 'the Mathematical Olympiad Foundation of Japan');
     set('tot totj', 'the Tournament of Towns');
     set('igo igoi igoe', 'the Iranian Geometry Olympiad');
