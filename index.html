@@ -343,6 +343,8 @@
     --oxmat: #1f3f73; --oxmat-ink: #132a4d; --oxmat-tint: #e5ebf4;
     --cypan: #2f7a6b; --cypan-ink: #1c4a41; --cypan-tint: #e3f2ee;
     --pagmo: #b0477a; --pagmo-ink: #6e2a4b; --pagmo-tint: #f6e6ee;
+    --jeem: #c0582f; --jeem-ink: #7a3519; --jeem-tint: #f8e8e0;
+    --step: #9c4a1a; --step-ink: #5f2c0e; --step-tint: #f6e7dc;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -621,6 +623,8 @@
 .f-oxmat { --f: var(--oxmat); --f-ink: var(--oxmat-ink); --f-tint: var(--oxmat-tint); }
 .f-cypan { --f: var(--cypan); --f-ink: var(--cypan-ink); --f-tint: var(--cypan-tint); }
 .f-pagmo { --f: var(--pagmo); --f-ink: var(--pagmo-ink); --f-tint: var(--pagmo-tint); }
+.f-jeem { --f: var(--jeem); --f-ink: var(--jeem-ink); --f-tint: var(--jeem-tint); }
+.f-step { --f: var(--step); --f-ink: var(--step-ink); --f-tint: var(--step-tint); }
 
 /* ==========================================================
    Base
@@ -1220,7 +1224,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261103-tex-brackets';
+const DATA_VERSION = '20261103-step-jee';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1475,6 +1479,8 @@ REGION_OF.kz10 = 'asia';
 REGION_OF.oxmat = 'europe';
 REGION_OF.cypan = 'europe';
 REGION_OF.pagmo = 'americas';
+REGION_OF.jeem = 'asia';
+REGION_OF.step = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1755,6 +1761,8 @@ const COUNTRIES = [
     { key: 'grpan', name: 'Greece – Panhellenic Exams', flag: '🇬🇷', file: 'Greece-panhellenic-problems.json', kind: 'years', scope: 'entrance', full: "Greek Panhellenic university entrance exams, Mathematics" },
     { key: 'cypan', name: 'Cyprus – Pancyprian Exams', flag: '🇨🇾', file: 'Cyprus-pancyprian-exams-problems.json', kind: 'years', scope: 'entrance', full: "Cyprus Pancyprian Examinations, Mathematics (\u039a\u03b1\u03c4\u03b5\u03cd\u03b8\u03c5\u03bd\u03c3\u03b7\u03c2, code 37)" },
     { key: 'oxmat', name: 'UK – Oxford MAT', flag: '🇬🇧', file: 'UK-oxford-mat-problems.json', kind: 'years', scope: 'entrance', full: "Oxford Mathematics Admissions Test (MAT), University of Oxford" },
+    { key: 'step', name: 'UK – STEP', flag: '🇬🇧', file: 'UK-step-problems.json', kind: 'years', scope: 'entrance', full: "Sixth Term Examination Paper (STEP), University of Cambridge \u2014 STEP I, II, III" },
+    { key: 'jeem', name: 'India – JEE Advanced', flag: '🇮🇳', file: 'India-jee-advanced-problems.json', kind: 'years', scope: 'entrance', full: "JEE Advanced (formerly IIT-JEE), Mathematics part of Papers 1 and 2" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -2874,6 +2882,8 @@ const ORG_OF = (() => {
     set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
     set('oxmat', 'the University of Oxford');
     set('cypan', 'the Cyprus Ministry of Education (Examinations Service)');
+    set('jeem', 'the Indian Institutes of Technology (JEE Advanced)');
+    set('step', 'Cambridge University Press & Assessment');
     set('mk', 'the Union of Mathematicians of Macedonia');
     set('jp jpp jpj jpjp', 'the Mathematical Olympiad Foundation of Japan');
     set('tot totj', 'the Tournament of Towns');
