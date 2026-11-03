@@ -350,6 +350,7 @@
     --plmat: #a8324a; --plmat-ink: #6b1f2e; --plmat-tint: #f6e4e8;
     --ita: #2e7d4f; --ita-ink: #1b4d30; --ita-tint: #e3f2e9;
     --bacfr: #2b4c9b; --bacfr-ink: #1a2f61; --bacfr-tint: #e5eaf6;
+    --itmat: #0f7c6b; --itmat-ink: #09493f; --itmat-tint: #e0f2ef;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -635,6 +636,7 @@
 .f-plmat { --f: var(--plmat); --f-ink: var(--plmat-ink); --f-tint: var(--plmat-tint); }
 .f-ita { --f: var(--ita); --f-ink: var(--ita-ink); --f-tint: var(--ita-tint); }
 .f-bacfr { --f: var(--bacfr); --f-ink: var(--bacfr-ink); --f-tint: var(--bacfr-tint); }
+.f-itmat { --f: var(--itmat); --f-ink: var(--itmat-ink); --f-tint: var(--itmat-tint); }
 
 /* ==========================================================
    Base
@@ -1233,7 +1235,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261103-no-epal';
+const DATA_VERSION = '20261103-maturita';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1495,6 +1497,7 @@ REGION_OF.tmua = 'europe';
 REGION_OF.plmat = 'europe';
 REGION_OF.ita = 'americas';
 REGION_OF.bacfr = 'europe';
+REGION_OF.itmat = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1778,6 +1781,7 @@ const COUNTRIES = [
     { key: 'plmat', name: 'Poland – Matura', flag: '🇵🇱', file: 'Poland-matura-problems.json', kind: 'years', scope: 'entrance', full: "Polish Matura, Mathematics, extended level (poziom rozszerzony)" },
     { key: 'ita', name: 'Brazil – ITA', flag: '🇧🇷', file: 'Brazil-ita-problems.json', kind: 'years', scope: 'entrance', full: "ITA entrance examination (Vestibular), Mathematics \u2014 Instituto Tecnol\u00f3gico de Aeron\u00e1utica" },
     { key: 'bacfr', name: 'France – Baccalauréat', flag: '🇫🇷', file: 'France-baccalaureat-problems.json', kind: 'years', scope: 'entrance', full: "French Baccalaur\u00e9at g\u00e9n\u00e9ral, sp\u00e9cialit\u00e9 Math\u00e9matiques (written exam)" },
+    { key: 'itmat', name: 'Italy – Maturità', flag: '🇮🇹', file: 'Italy-maturita-problems.json', kind: 'years', scope: 'entrance', full: "Italian Esame di Stato (Maturit\u00e0), Liceo Scientifico, second written test: Mathematics" },
     { key: 'oxmat', name: 'UK – Oxford MAT', flag: '🇬🇧', file: 'UK-oxford-mat-problems.json', kind: 'years', scope: 'entrance', full: "Oxford Mathematics Admissions Test (MAT), University of Oxford" },
     { key: 'step', name: 'UK – STEP', flag: '🇬🇧', file: 'UK-step-problems.json', kind: 'years', scope: 'entrance', full: "Sixth Term Examination Paper (STEP), University of Cambridge \u2014 STEP I, II, III" },
     { key: 'tmua', name: 'UK – TMUA', flag: '🇬🇧', file: 'UK-tmua-problems.json', kind: 'years', scope: 'entrance', full: "Test of Mathematics for University Admission (TMUA), UAT-UK" },
@@ -2906,6 +2910,7 @@ const ORG_OF = (() => {
     set('plmat', 'the Central Examination Board (CKE), Poland');
     set('ita', 'the Instituto Tecnológico de Aeronáutica (ITA)');
     set('bacfr', 'the French Ministry of Education');
+    set('itmat', 'the Italian Ministry of Education');
     set('jeem', 'the Indian Institutes of Technology (JEE Advanced)');
     set('step', 'Cambridge University Press & Assessment');
     set('mk', 'the Union of Mathematicians of Macedonia');
