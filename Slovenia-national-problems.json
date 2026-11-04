@@ -484,7 +484,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Show that for every pair $a$, $b$ of real numbers greater than $1$, the inequality $a\\sqrt{b-1}+b\\sqrt{a-1}\\le ab$ holds."
+          "problem": "Prove that for every pair of real numbers $a,b\\ge 1$ the inequality $$a\\sqrt{b-1}+b\\sqrt{a-1}\\le ab$$ holds."
         },
         {
           "number": 2,
@@ -496,7 +496,7 @@
         },
         {
           "number": 4,
-          "problem": "The infinite sequence $a_0, a_1, a_2, \\ldots$ is made by the following rule:\n– given $a_n>0$, solve the equation $x^2-2a_nx+1=0$,\n– choose the root that has greater absolute value,\n– the term $a_{n+1}$ equals the absolute value of this root.\nAt what $a_0$ does the sequence converge?"
+          "problem": "The infinite sequence $a_0, a_1, a_2, \\ldots$ is formed by the following rule:\n– for a given $a_n$, $a_n\\ge 0$, solve the quadratic equation $x^2-2a_nx+1=0$;\n– choose the root with the greater absolute value;\n– $a_{n+1}$ is the absolute value of this root.\nFor which $a_0$ does this sequence converge?"
         }
       ]
     },
@@ -514,6 +514,10 @@
         {
           "number": 3,
           "problem": "Find such real $a$ and $b$ that the absolute value of every root of the equation $z^3+az^2+bz-1=0$ is equal to $1$."
+        },
+        {
+          "number": 4,
+          "problem": "From a point $A$ in the plane we set off and make $n$ steps, $n\\ge 3$. The first step has length $a$, and each further step is $q$ times the previous one, $0<q<1$. After each step we turn left by the angle $2\\pi/n$. At the end we arrive at the point $B$. Compute the distance between the points $A$ and $B$."
         }
       ]
     },
@@ -534,7 +538,7 @@
         },
         {
           "number": 4,
-          "problem": "For a group of towns on both sides of a river it is known that every town is connected by five ferryboats with five (different) towns on the other side of the river (two-way traffic). It is said that town $B$ is connected with $A$ if a ferryboat plies between $A$ and $B$, and that town $B$ is reachable from $A$ if it is possible to arrive from $A$ to $B$ using (some) ferryboat(s) (with eventual changings).\na) Prove that there is the same number of towns on both sides of the river.\nb) A pestilence broke once in the town $M$, so the five ferryboats that were connecting $M$ with the other side of the river, were stopped. Let $A$ and $B$ be two of the five towns on the other side of the river that were connected with $M$ before the pestilence. Prove that the town $B$ was still reachable from $A$.\nc) Prove that in spite of the pestilence every town (except $M$) was reachable from any other town (except $M$)."
+          "problem": "There are towns on both banks of a river. From every town five (two-way) ferry lines lead to five different towns on the opposite bank. We say that town $B$ is connected with town $A$ if a ferry runs between them. We say that town $B$ is reachable from town $A$ if one can get from $A$ to $B$ by ferries only (possibly with changes). It is known that every town is reachable from every other town.\na) Prove that there are equally many towns on both banks of the river.\nb) Plague broke out in town $M$, so the authorities cancelled all five lines that connected $M$ with the opposite bank. Let $A$ and $B$ be any two of the five towns that were connected with $M$ before the epidemic. Prove that town $B$ is still reachable from town $A$.\nc) Prove that, despite the plague, every town (except $M$) is reachable from every other town (except $M$)."
         }
       ]
     },
@@ -543,7 +547,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "How many numbers between $1$ and $1\\,000\\,000$ are divisible by at least one of the numbers $6$, $7$ and $10$?"
+          "problem": "How many numbers between $1$ and $1\\,000\\,000$ (inclusive) are divisible by at least one of the numbers $6$, $7$ and $10$?"
         },
         {
           "number": 2,
@@ -614,7 +618,7 @@
         },
         {
           "number": 3,
-          "problem": "The polynomial $p$ with real coefficients satisfies $p(x)\\ge 0$ for any real $x$. Prove that there exist two polynomials $a$ and $b$ such that $p(x)=a^2(x)+b^2(x)$ for every real $x$."
+          "problem": "For a polynomial $p$ with real coefficients, $p(x)\\ge 0$ holds for every $x\\in\\mathbb{R}$. Prove that there exist polynomials $a$ and $b$ with real coefficients such that $p(x)=a^2(x)+b^2(x)$ for every $x\\in\\mathbb{R}$."
         },
         {
           "number": 4,
@@ -732,19 +736,15 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Find all pairs $(x,y)$ of rational numbers which solve the equation $$\\sqrt{2\\sqrt{3}-3}=\\sqrt{x\\sqrt{3}}-\\sqrt{y\\sqrt{3}}.$$"
+          "problem": "In the finite sequence of real numbers $a_0, a_1, a_2, \\ldots, a_{1991}$ we have $$a_k=\\frac{2a_{k-1}}{1-a_{k-1}^2}\\qquad (k=1,2,3,\\ldots,1991).$$ Determine $a_0$ so that $a_{1991}=1$."
         },
         {
           "number": 2,
-          "problem": "Prove that there are infinitely many terms of the arithmetic sequence $1, 14, 27, 40, \\ldots$ which are written using digit $2$ only."
+          "problem": "Prove that the squares of the sides of a triangle form an arithmetic sequence if and only if the squares of its medians also form an arithmetic sequence."
         },
         {
           "number": 3,
-          "problem": "Find the ratio of the radii of the incircle and the circumcircle of a triangle if for the angles of the triangle the equality $\\cot\\frac{\\alpha}{2}+\\cot\\frac{\\beta}{2}+\\cot\\frac{\\gamma}{2}=8\\sin\\alpha\\sin\\beta\\sin\\gamma$ holds."
-        },
-        {
-          "number": 4,
-          "problem": "Find the number of ordered pairs $(A,B)$ of subsets $A, B\\subseteq\\{1,2,3,\\ldots,n\\}$ such that $A\\cap B=\\emptyset$."
+          "problem": "Let a function $g\\colon\\mathbb{C}\\to\\mathbb{C}$ and complex numbers $a$ and $w$ be given, where $w^3=1$ and $w\\ne 1$. Prove that there exists exactly one function $f\\colon\\mathbb{C}\\to\\mathbb{C}$ such that $f(z)+f(wz+a)=g(z)$ for every $z\\in\\mathbb{C}$. ($\\mathbb{C}$ denotes the set of complex numbers.)"
         }
       ]
     },
@@ -757,7 +757,7 @@
         },
         {
           "number": 2,
-          "problem": "In the chord quadrilateral $ABCD$ let $|BD|=\\frac{|AB|+|AD|}{\\cos\\varphi+\\cos\\vartheta}$, where $\\varphi=\\angle ADB$ and $\\vartheta=\\angle ABD$. Prove that $\\varphi+\\vartheta=90^\\circ$."
+          "problem": "In the cyclic quadrilateral $ABCD$ we have $$|BD|=\\frac{|AB|+|AD|}{\\sin\\varphi+\\sin\\vartheta},$$ where $\\varphi=\\angle ADB$ and $\\vartheta=\\angle ABD$. Prove that $\\varphi+\\vartheta=90^\\circ$."
         },
         {
           "number": 3,
@@ -900,7 +900,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $r_1,r_2,\\ldots,r_m$ be positive rational numbers with sum $1$. Find the maximum value of the function $f:\\mathbb N\\to\\mathbb Z$ defined by $$f(n)=n-\\lfloor r_1n\\rfloor-\\lfloor r_2n\\rfloor-\\cdots-\\lfloor r_mn\\rfloor.$$"
+          "problem": "Let $m$ be a positive integer and $r_1,r_2,\\ldots,r_m$ positive rational numbers with $r_1+r_2+\\cdots+r_m=1$. Define the function $f\\colon\\mathbb N\\to\\mathbb Z$ by $$f(n)=n-\\lfloor r_1n\\rfloor-\\lfloor r_2n\\rfloor-\\cdots-\\lfloor r_mn\\rfloor.$$ Determine the minimum and the maximum of $f$. ($\\lfloor x\\rfloor$ denotes the greatest integer not exceeding $x$.)"
         },
         {
           "number": 2,
