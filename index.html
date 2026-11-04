@@ -1235,7 +1235,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261104-in-their-words';
+const DATA_VERSION = '20261104-orig-lang';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2005,7 +2005,7 @@ function normalizeYears(country, raw) {
                 uid: `${country.key}.${y.year}.${day ?? 0}.${num}`,
                 country: country.key, year: y.year, day, num,
                 paperLabel: p.paper_label || (tests && day ? 'Test ' + day : null), figureAlt: p.figure_alt || null,
-                ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || ''), textEl: p.problem_el ? String(p.problem_el) : null
+                ...topicFields(p.problem, p.category, `${country.key}.${y.year}.${day ?? 0}.${num}`), text: String(p.problem || ''), textEl: (p.problem_el || p.problem_orig) ? String(p.problem_el || p.problem_orig) : null, origLang: p.problem_el ? 'el' : (p.orig_lang || '')
             });
         });
     });
@@ -2232,7 +2232,7 @@ function showSoon(open) {
     renderTabs();
     if (!open) $$('#mxTabs [data-tab]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === state.tab)));
 }
-// Bilingual rows (Greek Panhellenic exams): EN / ΕΛ switch, remembered per visitor.
+// Bilingual records (problem_el, or problem_orig + orig_lang): EN / original-language switch, remembered per visitor ('el' = show the original).
 function setLang(l) {
     document.body.classList.toggle('lang-el', l === 'el');
     try { localStorage.setItem('nob-lang', l); } catch (e) {}
@@ -2958,7 +2958,7 @@ function problemHtml(p) {
             </button>
             </div>
         </div>
-        ${p.textEl ? `<div class="lang-sw" role="group" aria-label="Language of the statement"><button type="button" class="btn btn-sm" data-lang="en">EN</button><button type="button" class="btn btn-sm" data-lang="el">ΕΛ</button></div><div class="statement st-en">${bodyHtml(p.text, p)}</div><div class="statement st-el" lang="el">${bodyHtml(p.textEl, p)}</div>` : `<div class="statement">${bodyHtml(p.text, p)}</div>`}
+        ${p.textEl ? `<div class="lang-sw" role="group" aria-label="Language of the statement"><button type="button" class="btn btn-sm" data-lang="en">EN</button><button type="button" class="btn btn-sm" data-lang="el" title="Original language">${p.origLang === 'el' || !p.origLang ? 'ΕΛ' : esc(p.origLang.toUpperCase())}</button></div><div class="statement st-en">${bodyHtml(p.text, p)}</div><div class="statement st-el" lang="${esc(p.origLang || 'el')}">${bodyHtml(p.textEl, p)}</div>` : `<div class="statement">${bodyHtml(p.text, p)}</div>`}
         ${provenanceHtml(p)}
         ${dnaHtml(p)}
     </article>`;
