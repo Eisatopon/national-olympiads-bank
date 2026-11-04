@@ -695,6 +695,18 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .mx-tabs .soon-tag { font: 600 .68rem/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; background: #facc15; color: #1f2937; padding: 3px 6px; border-radius: 3px; }
 .mx-soon { margin-top: 18px; padding: 28px 22px; border: 1px dashed rgba(255, 255, 255, .35); border-radius: 6px; color: #cfd9e3; text-align: center; }
 .mx-soon[hidden] { display: none; }
+.potd { border: 2px solid var(--ink); border-radius: 16px; padding: 20px 24px 18px; margin: 4px 0 8px;
+    background: linear-gradient(135deg, #fffaf0 0%, #ffffff 55%, #f1f4f7 100%); box-shadow: 0 10px 28px rgba(15, 42, 68, .12); }
+.potd-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.potd-badge { background: var(--ink); color: #fff; font: 800 .82rem/1 var(--sans); letter-spacing: .04em; text-transform: uppercase; padding: 7px 12px; border-radius: 999px; }
+.potd-badge::first-letter { color: var(--star, #facc15); }
+.potd-date { color: var(--muted); font: 600 .9rem/1.2 var(--sans); }
+.potd-src { margin: 12px 0 4px; font: 700 1rem/1.4 var(--sans); color: var(--ink); }
+.potd-topic { display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 999px; background: var(--f-tint, #eef2f6); color: var(--f-ink, var(--ink)); font: 600 .75rem/1.5 var(--sans); }
+.potd-text { font-size: 1.12rem; line-height: 1.65; margin: 10px 0 14px; }
+.potd-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.potd-next { margin-left: auto; color: var(--muted); font: .85rem/1.3 var(--sans); }
+@media (max-width: 640px) { .potd { padding: 16px 14px 14px; border-radius: 12px; } .potd-text { font-size: 1.03rem; } .potd-next { margin-left: 0; width: 100%; } }
 .daily-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 8px; }
 .daily-head h3 { margin: 0; font: 800 1.15rem/1.2 var(--serif); }
 .daily-box > .daily-head:first-child { margin-top: 4px; }
@@ -1190,6 +1202,10 @@ dialog p { color: var(--muted); font-size: .92rem; }
                 <p>This is quite a collection of problems from many different olympiads. Hipparchus will definitely be useful for our students for the next year's olympiad.</p>
                 <footer><span><b>Loa Hellsing</b><br>Project Leader, Swedish Astronomical Olympiad</span><a class="on" href="https://eisatopon.github.io/astronomy-olympiads-bank/">on Hipparchus</a></footer>
             </blockquote>
+            <blockquote>
+                <p>The resource is amazing.</p>
+                <footer><span><b>Alex Bellos</b><br>author and Guardian puzzle columnist</span><a class="on" href="https://eisatopon.github.io/national-olympiads-bank/">on Pythagoras</a></footer>
+            </blockquote>
         </div>
         <p class="praise-fact">🏅 Hipparchus is listed by the IOAA among its <a href="https://ioaastrophysics.org/resources/other-resources" target="_blank" rel="noopener">Other Resources</a></p>
     </div>
@@ -1248,7 +1264,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261104-daily';
+const DATA_VERSION = '20261104-potd-bellos';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3040,13 +3056,31 @@ function dailyCard(e) {
     const c = CBY[e.k];
     return `<article class="problem daily f-${e.k}"><div class="p-head"><div class="p-id"><span class="p-num">${esc(e.n)}</span><span class="p-meta">${c.flag} ${esc(c.name)} ${e.y}${e.pl ? `, ${esc(e.pl)}` : e.d ? `, Day ${e.d}` : ''}</span></div><div class="p-actions"><a class="btn btn-sm" href="?p=${encodeURIComponent(e.u)}">Open</a></div></div><div class="statement">${bodyHtml(String(e.t), {country: e.k})}</div></article>`;
 }
+function potdRecord() {
+    const e = dailyPicks()[0];
+    return {uid: e.u, country: e.k, year: e.y, day: e.d, paperLabel: e.pl, num: e.n, text: String(e.t)};
+}
 function dailyHtml() {
     if (!isHome()) return '';
     if (!dailyPool) { loadDaily(); return ''; }
     if (!dailyPool.length) return '';
     const [first, ...rest] = dailyPicks();
+    const now = Date.now(), left = 864e5 - now % 864e5, h = Math.floor(left / 36e5), m = Math.floor(left % 36e5 / 6e4);
+    const today = new Date(Math.floor(now / 864e5) * 864e5);
+    const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const c = CBY[first.k], topic = (typeof topicFields === 'function' && topicFields(String(first.t), null, first.u).topic) || '';
     return `<section class="daily-box" aria-label="Problem of the day">
-        <div class="daily-head"><h3>★ Problem of the day</h3></div>${dailyCard(first)}
+        <article class="problem potd f-${first.k}">
+            <div class="potd-top"><span class="potd-badge">★ Problem of the day</span><span class="potd-date">${dailySeed === null ? `${today.getUTCDate()} ${MON[today.getUTCMonth()]} ${today.getUTCFullYear()}` : 'Shuffled'}</span></div>
+            <div class="potd-src">${c.flag} ${esc(c.name)} ${first.y}${first.pl ? `, ${esc(first.pl)}` : first.d ? `, Day ${first.d}` : ''} · Problem ${esc(first.n)}${topic ? ` <span class="potd-topic">${esc(topic)}</span>` : ''}</div>
+            <div class="statement potd-text">${bodyHtml(String(first.t), {country: first.k})}</div>
+            <div class="potd-actions">
+                <a class="btn btn-primary btn-sm" href="?p=${encodeURIComponent(first.u)}">Open the problem</a>
+                <button type="button" class="btn btn-sm" data-potd-hint>💡 Get a hint</button>
+                <button type="button" class="btn btn-sm" data-potd-share>Share</button>
+                ${dailySeed === null ? `<span class="potd-next">Next problem in ${h} h ${m} min</span>` : ''}
+            </div>
+        </article>
         <div class="daily-head"><h3>Today's selection from around the world</h3><button type="button" class="btn btn-sm btn-quiet" data-daily-shuffle title="Show another selection">Shuffle</button></div>
         ${rest.map(dailyCard).join('')}
         <div class="daily-head"><h3>All problems, newest first</h3></div>
@@ -3850,6 +3884,19 @@ document.addEventListener('click', e => {
         return;
     }
     if (t.hasAttribute('data-whats-new')) { showWhatsNew(); return; }
+    if (t.hasAttribute('data-potd-hint') && dailyPool) {
+        const prompt = aiPrompt(potdRecord(), aiRequest('hint')), pr = AI_PROVIDERS[aiProvider()];
+        if (pr.paste) { copyText(prompt, `Prompt copied — paste it in ${pr.name}.`); window.open(pr.home, '_blank', 'noopener'); }
+        else { const url = aiUrl(prompt); if (url.includes('?q=')) window.open(url, '_blank', 'noopener'); else copyText(prompt, 'Prompt copied — paste it in the AI chat.'); }
+        return;
+    }
+    if (t.hasAttribute('data-potd-share') && dailyPool) {
+        const r = potdRecord(), url = 'https://pythagoras.sokkorom.workers.dev/p/' + encodeURIComponent(r.uid);
+        const label = `Problem of the day: ${CBY[r.country].name} ${r.year}, Problem ${r.num}`;
+        if (navigator.share) navigator.share({title: label, text: label, url}).catch(() => {});
+        else copyText(url, 'Link to the problem of the day copied.');
+        return;
+    }
     if (t.hasAttribute('data-daily-shuffle')) { dailySeed = Math.floor(Math.random() * 4294967296); renderResults(); return; }
     if (t.hasAttribute('data-export-view')) {
         const [title] = scopeTitle();
