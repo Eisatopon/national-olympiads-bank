@@ -695,6 +695,14 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .mx-tabs .soon-tag { font: 600 .68rem/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; background: #facc15; color: #1f2937; padding: 3px 6px; border-radius: 3px; }
 .mx-soon { margin-top: 18px; padding: 28px 22px; border: 1px dashed rgba(255, 255, 255, .35); border-radius: 6px; color: #cfd9e3; text-align: center; }
 .mx-soon[hidden] { display: none; }
+.linkish { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
+.wn-dlg { max-width: 640px; width: calc(100% - 32px); border: 0; border-radius: 12px; padding: 18px 20px; }
+.wn-dlg::backdrop { background: rgba(0,0,0,.45); }
+.wn-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.wn-head h2 { margin: 0; font: 800 1.3rem/1.2 var(--serif); }
+.wn-list { list-style: none; padding: 0; margin: 12px 0 0; max-height: 65vh; overflow: auto; }
+.wn-list li { padding: 8px 0; border-top: 1px solid var(--line, #e5e7eb); font-size: .92rem; line-height: 1.45; }
+.wn-date { display: inline-block; min-width: 92px; color: var(--muted); font-size: .8rem; }
 .lang-sw { display: inline-flex; gap: 4px; margin: 0 0 8px; }
 .lang-sw .btn { min-width: 40px; }
 body:not(.lang-el) .lang-sw [data-lang="en"], body.lang-el .lang-sw [data-lang="el"] { background: var(--accent); color: #fff; border-color: var(--accent); }
@@ -1061,7 +1069,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
             <div class="stat"><b id="statTotal">—</b><span>problems</span></div>
             <div class="stat"><b>81</b><span>countries</span></div>
             <div class="stat"><b>1894–2026</b><span>years</span></div>
-            <p class="updated" id="statUpdated"></p>
+            <p class="updated"><span id="statUpdated"></span> · <button type="button" class="linkish" data-whats-new>What's new</button></p>
         </div>
     </div>
 
@@ -1237,7 +1245,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261104-evau';
+const DATA_VERSION = '20261104-copy-tex-news';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2742,6 +2750,7 @@ function headHtml(count) {
             ${wide ? `<button type="button" class="btn btn-sm" data-all-scope>${state.tab === 'national' ? 'All countries, all years' : 'All competitions, all years'}</button>` : ''}
             ${count && count <= 60 ? `<button type="button" class="btn btn-sm" data-add-all>${ICON.plus} Add all (${count})</button>` : ''}
             ${count && (state.country || filtersOn()) ? `<button type="button" class="btn btn-sm" data-export-view title="Download every problem of this view as a LaTeX (.tex) file">Export LaTeX (${count})</button>` : ''}
+            ${count && (state.country || filtersOn()) ? `<button type="button" class="btn btn-sm" data-copy-tex title="Copy the LaTeX of every problem of this view to the clipboard">Copy LaTeX (${count})</button>` : ''}
             ${state.country && countryGroup(state.country) ? `<button type="button" class="btn btn-sm" data-export-country title="Download every problem of all ${esc(countryGroup(state.country).name)} competitions as one LaTeX (.tex) file">Export all ${esc(countryGroup(state.country).name)} (LaTeX)</button>` : ''}
         </div>
     </div>`;
@@ -3540,6 +3549,25 @@ function shareActionHtml(p) {
         </div>
     </details>`;
 }
+/* "What's new": the latest additions (metadata/runtime/whats-new.json), each linking to its row. */
+function showWhatsNew() {
+    let dlg = document.getElementById('whatsNew');
+    if (!dlg) {
+        dlg = document.createElement('dialog'); dlg.id = 'whatsNew'; dlg.className = 'wn-dlg';
+        dlg.innerHTML = '<div class="wn-head"><h2>What\'s new</h2><button type="button" class="btn btn-sm btn-quiet" data-wn-close>Close</button></div><ul class="wn-list"><li>Loading…</li></ul>';
+        dlg.addEventListener('click', e => { if (e.target === dlg || e.target.closest('[data-wn-close]')) dlg.close(); });
+        document.body.appendChild(dlg);
+        fetch('./metadata/runtime/whats-new.json?v=' + DATA_VERSION, {cache: 'no-cache'}).then(r => r.json()).then(data => {
+            const fmt = iso => { const d = new Date(iso + 'T00:00:00Z'); return `${d.getUTCDate()} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'][d.getUTCMonth()]} ${d.getUTCFullYear()}`; };
+            dlg.querySelector('.wn-list').innerHTML = (data.entries || []).slice(0, 40).map(e => {
+                const c = CBY[e.key];
+                const link = c ? `?s=${scopeOf(c)}&c=${encodeURIComponent(e.key)}` : '';
+                return `<li><span class="wn-date">${fmt(e.date)}</span> ${c ? `<a href="${link}">${c.flag} ${esc(e.text)}</a>` : esc(e.text)}</li>`;
+            }).join('');
+        }).catch(() => { dlg.querySelector('.wn-list').innerHTML = '<li>Could not load the list.</li>'; });
+    }
+    dlg.showModal();
+}
 function showToast(text) {
     let t = document.getElementById('aiToast');
     if (!t) { t = document.createElement('div'); t.id = 'aiToast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
@@ -3773,6 +3801,14 @@ document.addEventListener('click', e => {
         });
         return;
     }
+    if (t.hasAttribute('data-copy-tex')) {
+        const [title] = scopeTitle();
+        const topic = state.topic !== 'all' ? ` – ${state.topic}` : '';
+        const items = shownUids.map(u => byUid.get(u)).filter(Boolean);
+        if (items.length) copyText(buildTex(items, title.replace(/^[^\p{L}\p{N}]+/u, '') + topic, true), `LaTeX of ${items.length} problem${items.length === 1 ? '' : 's'} copied.`);
+        return;
+    }
+    if (t.hasAttribute('data-whats-new')) { showWhatsNew(); return; }
     if (t.hasAttribute('data-export-view')) {
         const [title] = scopeTitle();
         const topic = state.topic !== 'all' ? ` – ${state.topic}` : '';
