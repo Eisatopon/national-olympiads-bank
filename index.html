@@ -1206,6 +1206,10 @@ dialog p { color: var(--muted); font-size: .92rem; }
                 <p>The resource is amazing.</p>
                 <footer><span><b>Alex Bellos</b><br>author and Guardian puzzle columnist</span><a class="on" href="https://eisatopon.github.io/national-olympiads-bank/">on Pythagoras</a></footer>
             </blockquote>
+            <blockquote>
+                <p>Pythagoras is an invaluable resource for mathematics enthusiasts, problem solvers, and olympiad participants worldwide, offering a remarkable collection of competition problems from across the globe.</p>
+                <footer><span><b>Ercole Suppa</b><br>mathematics teacher, Italy</span><a class="on" href="https://eisatopon.github.io/national-olympiads-bank/">on Pythagoras</a></footer>
+            </blockquote>
         </div>
         <p class="praise-fact">🏅 Hipparchus is listed by the IOAA among its <a href="https://ioaastrophysics.org/resources/other-resources" target="_blank" rel="noopener">Other Resources</a></p>
     </div>
@@ -1264,7 +1268,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261104-rio-1999';
+const DATA_VERSION = '20261104-ercole-quote';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3381,6 +3385,13 @@ function buildTex(items = getSelected(), title = $('#examTitle').value.trim() ||
     const extra = (doc.includes('\\mathscr') ? '\\usepackage{mathrsfs}\n' : '') + (decls ? decls + '\n' : '');
     return head.replace('\\begin{document}', extra + '\\begin{document}') + doc + '\n\\end{document}\n';
 }
+// "Copy LaTeX": only the list of statements, ready to paste into one's own document (Ercole Suppa's request).
+function buildTexList(items) {
+    return '\\begin{enumerate}\n' + items.map(p => {
+        const src = `${CBY[p.country].name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day ${p.day}` : ''}, Problem ${p.num}`;
+        return `% ${src.replace(/[\r\n]+/g, ' ')}\n\\item ` + texStatement(p.text) + '\n';
+    }).join('\n') + '\\end{enumerate}\n';
+}
 function exportTex(items = getSelected(), title = $('#examTitle').value.trim() || 'problem-set', viewExport = false) {
     if (!items.length) return;
     const a = document.createElement('a');
@@ -3891,7 +3902,7 @@ document.addEventListener('click', e => {
         const [title] = scopeTitle();
         const topic = state.topic !== 'all' ? ` – ${state.topic}` : '';
         const items = shownUids.map(u => byUid.get(u)).filter(Boolean);
-        if (items.length) copyText(buildTex(items, title.replace(/^[^\p{L}\p{N}]+/u, '') + topic, true), `LaTeX of ${items.length} problem${items.length === 1 ? '' : 's'} copied.`);
+        if (items.length) copyText(buildTexList(items), `LaTeX of ${items.length} problem${items.length === 1 ? '' : 's'} copied.`);
         return;
     }
     if (t.hasAttribute('data-whats-new')) { showWhatsNew(); return; }
