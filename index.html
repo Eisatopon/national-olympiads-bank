@@ -695,7 +695,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .mx-tabs .soon-tag { font: 600 .68rem/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; background: #facc15; color: #1f2937; padding: 3px 6px; border-radius: 3px; }
 .mx-soon { margin-top: 18px; padding: 28px 22px; border: 1px dashed rgba(255, 255, 255, .35); border-radius: 6px; color: #cfd9e3; text-align: center; }
 .mx-soon[hidden] { display: none; }
-.potd { border: 2px solid var(--ink); border-radius: 16px; padding: 20px 24px 18px; margin: 4px 0 8px;
+.problem.potd { border: 2px solid var(--ink); border-radius: 16px; padding: 20px 24px 18px; margin: 4px 0 8px;
     background: linear-gradient(135deg, #fffaf0 0%, #ffffff 55%, #f1f4f7 100%); box-shadow: 0 10px 28px rgba(15, 42, 68, .12); }
 .potd-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 .potd-badge { background: var(--ink); color: #fff; font: 800 .82rem/1 var(--sans); letter-spacing: .04em; text-transform: uppercase; padding: 7px 12px; border-radius: 999px; }
@@ -706,7 +706,7 @@ svg.i { width: 1em; height: 1em; flex: none; stroke: currentColor; fill: none; s
 .potd-text { font-size: 1.12rem; line-height: 1.65; margin: 10px 0 14px; }
 .potd-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .potd-next { margin-left: auto; color: var(--muted); font: .85rem/1.3 var(--sans); }
-@media (max-width: 640px) { .potd { padding: 16px 14px 14px; border-radius: 12px; } .potd-text { font-size: 1.03rem; } .potd-next { margin-left: 0; width: 100%; } }
+@media (max-width: 640px) { .problem.potd { padding: 16px 14px 14px; border-radius: 12px; } .potd-text { font-size: 1.03rem; } .potd-next { margin-left: 0; width: 100%; } }
 .daily-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 8px; }
 .daily-head h3 { margin: 0; font: 800 1.15rem/1.2 var(--serif); }
 .daily-box > .daily-head:first-child { margin-top: 4px; }
@@ -1264,7 +1264,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261104-potd-fixed';
+const DATA_VERSION = '20261104-potd-border';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
