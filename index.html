@@ -1269,7 +1269,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261105-overleaf-2';
+const DATA_VERSION = '20261105-overleaf-3';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3436,8 +3436,15 @@ function openOverleaf(items, title) {
     const form = document.createElement('form');
     form.method = 'POST'; form.action = 'https://www.overleaf.com/docs'; form.target = '_blank'; form.style.display = 'none';
     const add = (name, value) => { const i = document.createElement('input'); i.type = 'hidden'; i.name = name; i.value = value; form.appendChild(i); };
-    add('encoded_snip[]', encodeURIComponent(tex)); add('snip_name[]', 'main.tex');
-    urls.forEach(u => { add('snip_uri[]', u); add('snip_name[]', u.split('/').pop()); });
+    if (!urls.length) { add('encoded_snip', encodeURIComponent(tex)); add('snip_name', 'main.tex'); }
+    else {
+        // Overleaf does not mix text snippets with file URLs, so the .tex goes as a data: URL next to the figure URLs.
+        const bytes = new TextEncoder().encode(tex); let bin = '';
+        for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
+        const b64 = btoa(bin);
+        add('snip_uri[]', 'data:application/x-tex;base64,' + b64); add('snip_name[]', 'main.tex');
+        urls.forEach(u => { add('snip_uri[]', u); add('snip_name[]', u.split('/').pop()); });
+    }
     add('engine', 'pdflatex'); add('main_document', 'main.tex');
     document.body.appendChild(form); form.submit(); form.remove();
 }
