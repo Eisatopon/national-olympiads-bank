@@ -776,6 +776,7 @@ body.lang-el .st-en { display: none; }
 .cell.on.line { background: rgba(255, 255, 255, .46); }
 .cell.pick { background: var(--accent); }
 .cell.pend::after { background: rgba(255, 255, 255, .06); }
+.cell.nh::after { width: 12px; height: 2px; border-radius: 1px; background: rgba(255, 183, 120, .8); }
 .cell.err::after { background: #ff8a80; width: 6px; height: 6px; }
 /* A country with several competitions: one row, its competitions below it. */
 .rl.cg .cn { flex: 0 0 auto; font: 600 .7rem/1 var(--sans); color: #9fb0c1; border: 1px solid rgba(255, 255, 255, .25); border-radius: 8px; padding: 2px 5px; }
@@ -1096,7 +1097,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
         <div class="mx-tabs" id="mxTabs" role="tablist" aria-label="Sections of the bank"></div>
         <div class="mx-soon" id="mxSoon" role="tabpanel" hidden><h2>🚧 Entrance Exams — under construction</h2><p>University entrance exams in mathematics from around the world will appear here. This section is being prepared.</p></div>
         <div class="mx-head">
-            <p class="mx-help" id="mxHelp">Click a cell to open one country's year. Click a country or a year to see all of it.</p>
+            <p class="mx-help" id="mxHelp">Click a cell to open one country's year. Click a country or a year to see all of it. A dash: not held that year.</p>
             <div class="mx-find" role="search">
                 <label class="sr-only" for="mxFind">Find a country, competition or year in the grid</label>
                 <input type="text" id="mxFind" placeholder="Country, competition or year" enterkeyhint="search" autocomplete="off" spellcheck="false">
@@ -1272,7 +1273,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261105-bellos-link';
+const DATA_VERSION = '20261105-not-held';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2116,6 +2117,11 @@ function loadCountry(key) {
 function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.key))); }
 
 /* ---------- Manifest: counts without downloading the collections ---------- */
+// years in which a competition was not held (manifest "not_held"): the grid shows a dash instead of an empty dot
+function notHeld(key, y) {
+    const m = manifest && manifest.files && CBY[key] && manifest.files[CBY[key].file];
+    return !!(m && m.not_held && m.not_held.includes(y));
+}
 function manifestYears(key) {
     if (key === 'smmc') return {'2017':8,'2018':8,'2019':8,'2020':8,'2021':8,'2022':12,'2023':12,'2024':12,'2025':12};
     if (key === 'vjimc') return {"1991":4,"1992":8,"1993":8,"1994":8,"1995":7,"1996":6,"1997":10,"1998":10,"1999":8,"2000":8,"2001":8,"2002":8,"2003":8,"2004":8,"2005":8,"2006":8,"2007":8,"2008":8,"2009":8,"2010":8,"2011":8,"2012":8,"2013":8,"2014":8,"2015":8,"2016":8,"2017":8,"2018":8,"2019":8,"2022":8,"2024":8,"2025":8,"2026":8};
@@ -2329,8 +2335,13 @@ function paintEntry(id) {
         cell.classList.toggle('pend', !known);
         cell.classList.toggle('on', parts.length > 0);
         cell.disabled = !parts.length;
+        const nhm = parts.length ? [] : e.members.filter(c => notHeld(c.key, y));
+        cell.classList.toggle('nh', nhm.length > 0);
         if (parts.length) {
             cell.title = `${e.name}, ${y}: ` + parts.map(([s, n]) => `${s} ${n}`).join(' · ');
+            cell.setAttribute('aria-label', cell.title);
+        } else if (nhm.length) {
+            cell.title = `${e.name}: not held in ${y}` + (e.members.length > 1 ? ' (' + nhm.map(c => e.sub(c)).join(', ') + ')' : '');
             cell.setAttribute('aria-label', cell.title);
         }
     }
@@ -2608,7 +2619,7 @@ function applyGridMode() {
     const list = useList();
     $('.mx-wrap').hidden = list;
     $('#mxList').hidden = !list;
-    $('#mxHelp').textContent = list ? 'Tap a country to see its competitions and years.' : "Click a cell to open one country's year. Click a country or a year to see all of it.";
+    $('#mxHelp').textContent = list ? 'Tap a country to see its competitions and years.' : "Click a cell to open one country's year. Click a country or a year to see all of it. A dash: not held that year.";
 }
 if (listMq.addEventListener) listMq.addEventListener('change', () => { applyGridMode(); buildMatrix(); paintTab(); });
 
@@ -2637,8 +2648,10 @@ function paintCountry(key) {
         cell.classList.toggle('err', bad);
         cell.classList.toggle('on', n > 0);
         cell.disabled = n === 0;
-        if (n > 0) {
-            cell.title = `${c.name}, ${y}: ${countText(n)}`;
+        const nh = n === 0 && notHeld(key, y);
+        cell.classList.toggle('nh', nh);
+        if (n > 0 || nh) {
+            cell.title = n > 0 ? `${c.name}, ${y}: ${countText(n)}` : `${c.name}: not held in ${y}`;
             cell.setAttribute('aria-label', cell.title);
         }
     }
@@ -3398,7 +3411,6 @@ function buildTex(items = getSelected(), title = $('#examTitle').value.trim() ||
 \usepackage[margin=2.2cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \providecommand{\lt}{<}\providecommand{\gt}{>}
-\providecommand{\overarc}[1]{\overset{\frown}{#1}}\providecommand{\overparen}[1]{\overset{\frown}{#1}}
 \providecommand{\bigtimes}{\mathop{\vcenter{\hbox{\Large$\times$}}}}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
@@ -3417,15 +3429,21 @@ function buildTex(items = getSelected(), title = $('#examTitle').value.trim() ||
     if (hasGreek) doc = doc.replace(/\$\$[\s\S]*?\$\$|\$[^$]*\$|\\\[[\s\S]*?\\\]/g, m => m.replace(/[\u0370-\u03ff\u1f00-\u1fff]+/g, r => `\\text{${r}}`));
     const decls = texCharDecls(doc, hasGreek);
     const greekPkg = hasGreek ? '\\ifPDFTeX\\usepackage[LGR,T1]{fontenc}\\usepackage{textalpha}\\fi\n' : '';
-    const extra = greekPkg + (doc.includes('\\mathscr') ? '\\usepackage{mathrsfs}\n' : '') + (decls ? decls + '\n' : '');
+    doc = texArcs(doc);
+    const extra = greekPkg + (doc.includes('\\mathscr') ? '\\usepackage{mathrsfs}\n' : '') + (doc.includes('\\wideparen') ? '\\usepackage{yhmath}\n' : '') + (decls ? decls + '\n' : '');
     return head.replace('\\begin{document}', extra + '\\begin{document}') + doc + '\n\\end{document}\n';
+}
+// Arcs: \overset{\frown}{AB}, \stackrel{\frown}{AB}, \overarc{AB}, \overparen{AB} -> \wideparen{AB} (package yhmath, Ercole Suppa's suggestion)
+function texArcs(tex) {
+    return tex.replace(/\\(?:overset|stackrel)\s*\{\s*\\frown\s*\}\s*|\\over(?:arc|paren)\s*(?=\{)/g, '\\wideparen');
 }
 // "Copy LaTeX": only the list of statements, ready to paste into one's own document (Ercole Suppa's request).
 function buildTexList(items) {
-    return '\\begin{enumerate}\n' + items.map(p => {
+    const list = texArcs('\\begin{enumerate}\n' + items.map(p => {
         const src = `${CBY[p.country].name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day ${p.day}` : ''}, Problem ${p.num}`;
         return `% ${src.replace(/[\r\n]+/g, ' ')}\n\\item ` + texProblem(p) + '\n';
-    }).join('\n') + '\\end{enumerate}\n';
+    }).join('\n') + '\\end{enumerate}\n');
+    return (list.includes('\\wideparen') ? '% arcs use \\wideparen: add \\usepackage{yhmath} to your preamble\n' : '') + list;
 }
 // A .zip without compression (PNG/JPEG are already compressed): the .tex file and its figures together.
 function zipStore(files) {
