@@ -1269,7 +1269,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261105-greek-fix';
+const DATA_VERSION = '20261105-greek-textalpha';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3359,14 +3359,11 @@ function texProblem(p) {
     if (!p.textEl || texLang === 'en') return texStatement(p.text);
     const greek = p.origLang === 'el' || !p.origLang;
     const orig = texStatement(texLang === 'both' ? String(p.textEl).replace(IMG_RE, '').trim() : p.textEl);
-    // pdfLaTeX cannot take Greek letters inside math; \\text{} sets them in the Greek text font.
-    const origTex = greek ? orig.replace(/(\$\$[\s\S]*?\$\$|\$[^$]*\$|\\\[[\s\S]*?\\\])/g, m => m.replace(/[\u0370-\u03ff\u1f00-\u1fff]/g, c => `\\text{${c}}`)) : orig;
-    const wrapped = greek ? `\\begin{otherlanguage}{greek}\n${origTex}\n\\end{otherlanguage}` : orig;
-    if (texLang === 'orig') return wrapped;
-    return texStatement(p.text) + `\n\n\\medskip\\noindent{\\small\\itshape Original (${greek ? 'Greek' : esc(p.origLang.toUpperCase())}):}\\par\n` + wrapped;
+    if (texLang === 'orig') return orig;
+    return texStatement(p.text) + `\n\n\\medskip\\noindent{\\small\\itshape Original (${greek ? 'Greek' : esc(p.origLang.toUpperCase())}):}\\par\n` + orig;
 }
-function texCharDecls(tex) {
-    const greek = tex.includes('\\begin{otherlanguage}{greek}');
+function texCharDecls(tex, greekProse = false) {
+    const greek = greekProse;
     const seen = new Set([...tex].filter(c => c.codePointAt(0) > 0x17f && !'–—‘’“”…•€™'.includes(c) && !(greek && isGreekChar(c))));
     const hex = c => c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0');
     return seen.size ? `\\ifPDFTeX\n${[...seen].map(c => `\\DeclareUnicodeCharacter{${hex(c)}}{${TEX_CHARS[c] || `[U+${hex(c)}]`}}`).join('\n')}\n\\fi` : '';
@@ -3398,13 +3395,12 @@ function buildTex(items = getSelected(), title = $('#examTitle').value.trim() ||
             texProblem(p) + (space ? `\n\n\\vspace{${space}mm}` : '') + '\n';
     }).join('\n');
     let doc = `\\begin{center}{\\Large\\bfseries ${texText(title)}}\\end{center}\n\n` + body;
-    // With babel greek loaded, Greek letters outside the original-language blocks need the Greek font too.
-    if (doc.includes('\\begin{otherlanguage}{greek}')) doc = doc.split(/(\\begin\{otherlanguage\}\{greek\}[\s\S]*?\\end\{otherlanguage\})/).map((part, i) => i % 2 ? part
-        : part.replace(/(\$\$[\s\S]*?\$\$|\$[^$]*\$|\\\[[\s\S]*?\\\])|([\u0370-\u03ff\u1f00-\u1fff]+)/g, (m, math, run) => math
-            ? math.replace(/[\u0370-\u03ff\u1f00-\u1fff]+/g, r => `\\text{\\foreignlanguage{greek}{${r}}}`)
-            : `\\foreignlanguage{greek}{${run}}`)).join('');
-    const decls = texCharDecls(doc);
-    const greekPkg = doc.includes('\\begin{otherlanguage}{greek}') ? '\\ifPDFTeX\\usepackage[LGR,T1]{fontenc}\\fi\n\\usepackage[greek,english]{babel}\n' : '';
+    // Greek text (originals, Greek words): LGR + textalpha under pdfLaTeX; Greek letters inside math go into \\text{}.
+    // only when a Greek original is exported; otherwise single Greek letters stay math symbols (texCharDecls)
+    const hasGreek = texLang !== 'en' && items.some(p => p.textEl && (p.origLang === 'el' || !p.origLang));
+    if (hasGreek) doc = doc.replace(/\$\$[\s\S]*?\$\$|\$[^$]*\$|\\\[[\s\S]*?\\\]/g, m => m.replace(/[\u0370-\u03ff\u1f00-\u1fff]+/g, r => `\\text{${r}}`));
+    const decls = texCharDecls(doc, hasGreek);
+    const greekPkg = hasGreek ? '\\ifPDFTeX\\usepackage[LGR,T1]{fontenc}\\usepackage{textalpha}\\fi\n' : '';
     const extra = greekPkg + (doc.includes('\\mathscr') ? '\\usepackage{mathrsfs}\n' : '') + (decls ? decls + '\n' : '');
     return head.replace('\\begin{document}', extra + '\\begin{document}') + doc + '\n\\end{document}\n';
 }
