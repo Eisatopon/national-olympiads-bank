@@ -353,6 +353,7 @@
     --itmat: #0f7c6b; --itmat-ink: #09493f; --itmat-tint: #e0f2ef;
     --esevau: #b8862b; --esevau-ink: #6f5018; --esevau-tint: #f7efe0;
     --trj: #7a3f9e; --trj-ink: #4a2460; --trj-tint: #f1e8f7;
+    --bevwo: #3f6e2a; --bevwo-ink: #26431a; --bevwo-tint: #e9f2e4;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -641,6 +642,7 @@
 .f-itmat { --f: var(--itmat); --f-ink: var(--itmat-ink); --f-tint: var(--itmat-tint); }
 .f-esevau { --f: var(--esevau); --f-ink: var(--esevau-ink); --f-tint: var(--esevau-tint); }
 .f-trj { --f: var(--trj); --f-ink: var(--trj-ink); --f-tint: var(--trj-tint); }
+.f-bevwo { --f: var(--bevwo); --f-ink: var(--bevwo-ink); --f-tint: var(--bevwo-tint); }
 
 /* ==========================================================
    Base
@@ -1275,7 +1277,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261105-turkey-junior';
+const DATA_VERSION = '20261105-flanders';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1517,6 +1519,7 @@ REGION_OF.co = 'americas';
 REGION_OF.mdm = 'europe';
 REGION_OF.tr1 = 'europe';
 REGION_OF.trj = 'europe';
+REGION_OF.bevwo = 'europe';
 REGION_OF.hil = 'europe';
 REGION_OF.grpan = 'europe';
 REGION_OF.alr = 'europe';
@@ -1671,6 +1674,7 @@ const COUNTRIES = [
     { key: 'huo', name: 'Hungary OKTV', flag: '🇭🇺', file: 'Hungary-oktv-problems.json', kind: 'years' },
     { key: 'se', name: 'Sweden SMT', flag: '🇸🇪', file: 'Sweden-smt-problems.json', kind: 'years' },
     { key: 'be', name: 'Belgium OMB MAXI', flag: '🇧🇪', file: 'Belgium-omb-maxi-problems.json', kind: 'years' },
+    { key: 'bevwo', name: 'Belgium Flanders MO', flag: '🇧🇪', file: 'Belgium-vwo-problems.json', kind: 'years', full: "Flanders Mathematical Olympiad (Vlaamse Wiskunde Olympiade), final round" },
     { key: 'bem', name: 'Belgium OMB MIDI', flag: '🇧🇪', file: 'Belgium-omb-midi-problems.json', kind: 'years', full: "Belgian Mathematical Olympiad (OMB), MIDI category, final" },
     { key: 'itt', name: 'Italy PreIMO TST', flag: '🇮🇹', file: 'Italy-preimo-tst-problems.json', kind: 'years' },
     { key: 'th', name: 'Thailand TMO', flag: '🇹🇭', file: 'Thailand-tmo-problems.json', kind: 'years' },
@@ -2976,7 +2980,7 @@ const ORG_OF = (() => {
     set('elmo', 'ELMO'); set('usemo', 'USEMO');
     set('imo isl', 'the International Mathematical Olympiad'); set('egmo', 'EGMO'); set('apmo', 'APMO');
     set('ca caq caco cajm', 'the Canadian Mathematical Society'); set('caeu', 'the CEMC, University of Waterloo');
-    set('trj', 'TÜBİTAK'); set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
+    set('trj', 'TÜBİTAK'); set('bevwo', 'the Vlaamse Wiskunde Olympiade (VWO)'); set('gr gra grj', 'the Hellenic Mathematical Society'); set('grpan', 'the Greek Ministry of Education');
     set('oxmat', 'the University of Oxford');
     set('cypan', 'the Cyprus Ministry of Education (Examinations Service)');
     set('robac', 'the Romanian Ministry of Education');
