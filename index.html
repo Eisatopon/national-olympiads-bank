@@ -1268,7 +1268,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261105-mayo';
+const DATA_VERSION = '20261105-tex-zip';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3331,7 +3331,7 @@ function texStatement(text) {
     out = out.split(/\n\s*\n/).map(x => x.trim().replace(/\n(?=\s*(\([A-E]\)|•))/g, '\n\n')).filter(Boolean).join('\n\n');
     figs.forEach(u => {
         const name = u.split('/').pop();
-        out += `\n\n\\begin{center}\\IfFileExists{${name}}{\\includegraphics[width=0.6\\linewidth]{${name}}}{\\url{${u}}}\\end{center}`;
+        out += `\n\n\\begin{center}\\IfFileExists{${name}}{\\includegraphics[width=0.6\\linewidth]{${name}}\\\\[2pt]{\\scriptsize\\url{${u}}}}{\\url{${u}}}\\end{center}`;
     });
     return out;
 }
@@ -3359,8 +3359,8 @@ function buildTex(items = getSelected(), title = $('#examTitle').value.trim() ||
     const space = viewExport ? 0 : Number($('#solutionSpace').value);
     const head = String.raw`% Exported from Pythagoras – World Mathematical Olympiads Bank
 % https://eisatopon.github.io/national-olympiads-bank/
-% Compiles with pdfLaTeX, XeLaTeX or LuaLaTeX. Figures: put the PNG files next to this file,
-% otherwise their web address is printed instead.
+% Compiles with pdfLaTeX, XeLaTeX or LuaLaTeX. The figures come in the same .zip; keep them next to this file
+% (without them their web address is printed instead).
 \documentclass[11pt,a4paper]{article}
 \usepackage{iftex}
 \ifPDFTeX\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\else\usepackage{fontspec}\fi
@@ -3392,13 +3392,47 @@ function buildTexList(items) {
         return `% ${src.replace(/[\r\n]+/g, ' ')}\n\\item ` + texStatement(p.text) + '\n';
     }).join('\n') + '\\end{enumerate}\n';
 }
-function exportTex(items = getSelected(), title = $('#examTitle').value.trim() || 'problem-set', viewExport = false) {
+// A .zip without compression (PNG/JPEG are already compressed): the .tex file and its figures together.
+function zipStore(files) {
+    const crcTable = zipStore.t || (zipStore.t = Array.from({length: 256}, (_, n) => { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; return c >>> 0; }));
+    const crc = b => { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = crcTable[(c ^ b[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
+    const enc = new TextEncoder(), parts = [], central = [];
+    let offset = 0;
+    const u16 = v => [v & 255, (v >>> 8) & 255], u32 = v => [v & 255, (v >>> 8) & 255, (v >>> 16) & 255, (v >>> 24) & 255];
+    files.forEach(f => {
+        const name = enc.encode(f.name), data = f.data, c = crc(data);
+        const head = [...u32(0x04034b50), ...u16(20), ...u16(0x0800), ...u16(0), ...u16(0), ...u16(0x21), ...u32(c), ...u32(data.length), ...u32(data.length), ...u16(name.length), ...u16(0)];
+        parts.push(new Uint8Array(head), name, data);
+        central.push(new Uint8Array([...u32(0x02014b50), ...u16(20), ...u16(20), ...u16(0x0800), ...u16(0), ...u16(0), ...u16(0x21), ...u32(c), ...u32(data.length), ...u32(data.length), ...u16(name.length), ...u16(0), ...u16(0), ...u16(0), ...u16(0), ...u32(0), ...u32(offset)]), name);
+        offset += head.length + name.length + data.length;
+    });
+    const csize = central.reduce((s, b) => s + b.length, 0);
+    const end = new Uint8Array([...u32(0x06054b50), ...u16(0), ...u16(0), ...u16(files.length), ...u16(files.length), ...u32(csize), ...u32(offset), ...u16(0)]);
+    return new Blob([...parts, ...central, end], {type: 'application/zip'});
+}
+async function exportTex(items = getSelected(), title = $('#examTitle').value.trim() || 'problem-set', viewExport = false) {
     if (!items.length) return;
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([buildTex(items, title, viewExport)], {type: 'application/x-tex;charset=utf-8'}));
-    a.download = (title.normalize('NFKD').replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase() || 'problem-set') + '.tex';
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    const base = title.normalize('NFKD').replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase() || 'problem-set';
+    const tex = buildTex(items, title, viewExport);
+    const save = (blob, name) => {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob); a.download = name;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    };
+    // Figures go into a .zip next to the .tex, so they appear in the PDF (the link stays under each figure).
+    const urls = [...new Set(items.flatMap(p => [...String(p.text).matchAll(IMG_RE)].map(m => `${m[1]}.${m[2]}`)))];
+    if (urls.length) {
+        say(`Preparing the LaTeX file with ${urls.length} figure${urls.length === 1 ? '' : 's'}…`);
+        const got = await Promise.all(urls.map(u => fetch(u).then(r => r.ok ? r.arrayBuffer() : null).then(b => b && {name: u.split('/').pop(), data: new Uint8Array(b)}).catch(() => null)));
+        const imgs = got.filter(Boolean);
+        if (imgs.length) {
+            save(zipStore([{name: base + '.tex', data: new TextEncoder().encode(tex)}, ...imgs]), base + '.zip');
+            say(`LaTeX file and ${imgs.length} figure${imgs.length === 1 ? '' : 's'} downloaded (.zip).`);
+            return;
+        }
+    }
+    save(new Blob([tex], {type: 'application/x-tex;charset=utf-8'}), base + '.tex');
     say('LaTeX file downloaded.');
 }
 async function doPrint() {
