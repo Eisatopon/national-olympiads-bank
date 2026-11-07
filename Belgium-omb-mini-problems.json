@@ -1,0 +1,957 @@
+{
+  "competition": "Belgian Mathematical Olympiad (OMB), MINI category, final",
+  "years": [
+    {
+      "year": 1988,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The convex quadrilateral $abcd$ is given, together with an arbitrary point $p$ on the segment $[bc]$. Let $s$ be the point of intersection of the line through $b$ parallel to $ap$ and the line through $c$ parallel to $dp$. Compare the area of triangle $asd$ with that of the original quadrilateral.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_1988_p1_fig.png",
+          "problem_orig": "On donne le quadrilatère convexe $abcd$, et un point $p$ quelconque sur le segment $[bc]$. On appelle $s$ le point d'intersection de la droite parallèle à $ap$ par $b$ et de la droite parallèle à $dp$ par $c$. Comparer l'aire du triangle $asd$ à celle du quadrilatère de départ.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A cube of edge 3 is built from 27 cubic dice of edge 1, some white, the others black. They are arranged so that in each of the six faces of the large cube there is exactly one black square in each horizontal row and in each vertical row. What arrangement must be chosen so that the total number of black dice is as small as possible?",
+          "problem_orig": "On construit un cube d'arête $3$ avec $27$ dés cubiques d'arête $1$, les uns blancs, les autres noirs. On dispose ceux-ci de manière telle que dans chacune des six faces du grand cube il y ait exactement une case noire dans chaque rangée horizontale et dans chaque rangée verticale. Quelle disposition faut-il adopter pour que le nombre total de dés noirs soit le plus petit possible?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Find all triples $(x, y, z)$ of real numbers such that, if the product of the other two is added to any one of the three numbers, the result is always equal to $2$.",
+          "problem_orig": "Trouver tous les triples $(x, y, z)$ de nombres réels tels que, si on ajoute à l'un quelconque des trois nombres le produit des deux autres, le résultat est toujours égal a $2$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Consider the tiling of the plane made of regular convex octagons and squares, in which every side of a square is a side of an octagon. Determine the lines of the plane that are axes of symmetry of the tiling, as well as the points of the plane that are centres of the non-identity rotations mapping the tiling onto itself.",
+          "problem_orig": "On considère le pavage du plan constitué d'octogones convexes réguliers et de carrés, dans lequel tout côté d'un carré est le côté d'un octogone. Déterminer les droites du plan qui sont les axes de symétrie du pavage, ainsi que les points du plan qui sont les centres des rotations non identiques appliquant le pavage sur lui-meme.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A lattice point of the plane $\\mathbb{R}^2$ is a point both of whose coordinates are integers. Does there exist at least one lattice point $(u, v)$ such that the region (boundary included) of the triangle with vertices $(u, v)$, $(1989, 1990)$ and $(1991, 1993)$ contains no fourth lattice point?",
+          "problem_orig": "Un point entier du plan $\\mathbb{R}^2$ est un point dont les deux coordonnées sont entières. Existe-t-il au moins un point entier $(u, v)$ de sorte que la surface (bord compris) du triangle de sommets $(u, v)$, $(1989, 1990)$ et $(1991, 1993)$ ne comprenne pas de quatrième point entier?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A barrel contains $100$ litres of water. $10$ litres are removed, then $10$ litres of wine are added and it is mixed well. After this first operation, $10$ litres of the new contents are removed, $10$ litres of wine are again added, and it is mixed. At least how many times must this operation be repeated for the barrel to contain more wine than water (the very first operation is counted in this number)?",
+          "problem_orig": "Un fût contient $100$ litres d'eau. On en retire $10$ litres, puis on y rajoute $10$ litres de vin et on mélange bien. Après cette première manipulation, on retire $10$ litres du nouveau contenu, on rajoute à nouveau $10$ litres de vin, on mélange. Combien de fois, au minimum, faut-il répéter cette manipulation pour que le fin contienne plus de vin que d'eau (on comptera dans ce nombre la toute première manipulation)?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "A cycle race consists of an outward and a return journey over the same course, whose flat part is $12$ kilometres shorter than the rest. The average speeds of a certain rider, on the outward as well as on the return journey, are $20$ km/h uphill, $36$ km/h on the flat and $48$ km/h downhill. This rider completed the return journey in $7$ minutes more than the outward one. Without the flat sections of road, his round trip would have taken $1$ hour $42$ minutes. Compute the rider's average speed on the outward journey.",
+          "problem_orig": "Une course cycliste comporte un aller et un retour sur un même parcours dont la partie horizontale est plus courte de $12$ kilomètres que le reste. Les vitesses moyennes d'un certain coureur, autant à l'aller qu'au retour, sont de $20$ km/h en montée, de $36$ km/h à plat et de $48$ km/h en descente. Ce coureur a effectué le retour en $7$ minutes de plus qu'à l'aller. Sans les tronçons de route à plat, son aller-retour aurait duré $1$ heure $42$ minutes. On demande de calculer la vitesse moyenne du coureur à l'aller.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "An Indian guards a square territory whose four consecutive vertices we shall call $R, S, T, U$. Starting from a point $I$ of the territory, he walks in a straight line towards the vertex $R$. Having reached the point halfway between $I$ and $R$, at $J$, he heads towards $S$. Again, having covered at $K$ half of the distance $|JS|$, he turns from $K$ towards $T$. Finally, from the midpoint $L$ of $KT$, he heads towards $U$ and ends his round at the point $M$ equidistant from $L$ and $U$.\n(a) Determine the point or points $I$ for which the Indian will end his round where he started it (that is, $I = M$).\n(b) Assuming $I = M$ and the square $RSTU$ of area $100$, compute the area of $IJKL$.\n(c) Another Indian must guard a territory in the shape of a parallelogram with consecutive vertices $R', S', T', U'$, making a round $I', J', K', L'$ defined as before. Find (if possible from your answer to (a)) the point or points $I'$ of departure and arrival of his round.\n(d) Determine (if possible from your answer to (b)) the area of the region enclosed by the round $I', J', K', L'$ of the second Indian, assuming the parallelogram $R'S'T'U'$ has area $100$.",
+          "problem_orig": "Un indien surveille un territoire carré dont nous appellerons $R, S, T, U$ les quatre sommets consécutifs. Partant d'un point $I$ du territoire, il avance en ligne droite vers le sommet $R$. Arrivé à mi-distante de $I$ et de $R$, en $J$, il prend la direction de $S$. A nouveau, ayant accompli en $K$ la moitié de la distante $|JS|$, il bifurque de $K$ vers $T$. Enfin, depuis le milieu $L$ de $KT$, il se dirige vers $U$ et termine sa ronde au point $M$ équidistant de $L$ et $U$.\n(a) Déterminez le ou les points $I$ pour lequel ou lesquels l'indien achèvera sa ronde là où il l'a commencée (c'est-à-dire $I = M$).\n(b) En supposant $I = M$ et le carré $RSTU$ d'aire $100$, calculez l'aire de $IJKL$.\n(c) Un autre indien doit garder un territoire en forme de parallélogramme de sommets consécutifs $R', S', T', U'$ en effectuant une ronde $I', J', K', L'$ définie comme précédemment. Trouvez (si possible à partir de votre réponse en (a)) le point ou les points $I'$ de départ et d'arrivée de sa ronde.\n(d) Déterminez (si possible à partir de votre réponse en (b)) l'aire de la surface enclose par la ronde $I', J', K', L'$ du deuxième indien, en supposant le parallélogramme $R'S'T'U'$ d'aire $100$.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Written in base $10$, a $6$-digit number ends in $5$. By moving the final $5$ in front of the other digits without changing their order, one obtains the representation (still in base $10$) of a number equal to four times the initial number. What is this initial number?",
+          "problem_orig": "Ecrit en base $10$, un nombre de $6$ chiffres se termine par $5$. En déplaçant le $5$ final devant les autres chiffres sans changer l'ordre de ceux-ci, on obtient l'écriture (toujours en base $10$) d'un nombre qui vaut quatre fois le nombre initial. Quel est ce nombre initial?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In the figure, the hexagon $H$ with vertices $r, s, t, u, v, w$ has three axes of symmetry.\nThe lengths of its sides $[rs]$ and $[st]$ are given by $[rs] = 1$ and $[st] = 4$.\n(a) What is the perimeter of the hexagon $H$?\n(b) The lines $ru$, $sv$ and $tw$ meet pairwise in three points forming a triangle $T$. Determine the length of each side of the triangle $T$.\n(c) What is the length $|ru|$?\n(d) What is the area of the triangle $T$?\n(e) What is the area of the hexagon $H$?\n(f) Is there a hexagon in the plane which has at the same time three axes of symmetry, at least one side of length $15$ and at least one other side of length $1990$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_1990_p2_fig.png",
+          "problem_orig": "Dans la figure, l'hexagone $H$ de sommets $r, s, t, u, v, w$ possède trois axes de symétrie.\nLes longueurs de ses côtés $[rs]$ et $[st]$ sont données par $[rs] = 1$ et $[st] = 4$.\n(a) Que vaut le périmètre de l'hexagone $H$?\n(b) Les droites $ru$, $sv$ et $tw$ se coupent deux à deux en trois points formant un triangle $T$. Déterminez la longueur de chaque côté du triangle $T$.\n(c) Que vaut la longueur $|ru|$ ?\n(d) Que mesure l'aire du triangle $T$ ?\n(e) Que mesure l'aire de l'hexagone $H$ ?\n(f) Existe-t-il dans le plan un hexagone qui possède en même temps trois axes de symétrie, au moins un côté de longueur $15$ et au moins un aùtre côté de longueur $1990$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "The layout of the present question 3 consists of a column of text of width $90$ mm (footnote: the stated dimensions are not respected in the present printing) and a square figure of width $37$ mm.\nThe printer may enlarge or reduce the figure (always square) at will, but must then change the width of the text so that the total distance between the margins remains equal to $127$ mm (the rectangle of text is assumed to have constant area). By chance, the heights of the text and of the figure are equal here; will this happen again for another size of the figure? If so, which one?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_1990_p3_fig.png",
+          "problem_orig": "La mise en page de la présente question 3 comporte une colonne de texte de largeur $90$ mm (note : Les dimensions indiquées ne sont pas respectées dans la présent impression.) et une figure carrée de largeur $37$ mm.\nL'imprimeur peut agrandir ou rétrécir à volonté la figure (toujours carrée), mais doit alors modifier la largeur du texte pour que la distance totale entre les marges reste égale à $127$ mm (le rectangle de texte est supposé d'aire constante). Par hasard, les hauteurs du texte et de la figure sont ici égales; cela se produira-t-il encore pour une autre grandeur de la figure? Si oui, laquelle?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "In a trapezium with consecutive vertices $K, L, M, N$, the bases satisfy $KL = 9$ and $MN = 4$. Let $R$ be the midpoint of the side $KN$, and $S$ that of the side $LM$. The lines $KN$ and $LM$ meet at the point $P$.\n(a) The homothety with centre $P$ which maps the segment $NM$ onto the segment $RS$ also maps a certain segment $XY$ onto the segment $KL$. Determine the length $|XY|$. Does the segment $XY$ contain the point of intersection of the diagonals $KM$ and $LN$?\n(b) Are there points $Z, T$ such that a certain homothety $g$ maps both the pair of points $(N, M)$ onto the pair $(Z, T)$ and this pair $(Z, T)$ onto the pair $(K, L)$? If so, compute the length $|ZT|$ and locate the points $Z$ and $T$ with respect to the trapezium $KLMN$.\n(c) Is there a homothety which maps the pair $(X, Y)$ onto the pair $(Z, T)$ and at the same time the pair $(Z, T)$ onto the pair $(R, S)$?",
+          "problem_orig": "Dans un trapèze de sommets consécutifs $K, T, M, N$, les bases satisfont $KL = 9$ et $MN = 4$. Désignons par $R$ le milieu du côté $KN$, et par $S$ celui du côté $LM$. Les droites $KN$ et $LM$ se coupent au point $P$.\n(a) L'homothétie de centre $P$ qui applique le segment $NM$ sur le segment $RS$ applique aussi un certain segment $XY$ sur le segment $KL$. Déterminez la longueur $|XY|$. Le segment $XY$ contient-il le point d'intersection des diagonales $KM$ et $LN$ ?\n(b) Existe-t-il des points $Z, T$ tels qu'une certaine homothétie $g$ applique à la fois le couple de points $(N, M)$ sur le couple $(Z, T)$ et ce couple $(Z, T)$ sur le couple $(K, T)$? Si oui, calculez la longueur $|ZT|$ et situez les points $Z$ et $T$ par rapport au trapèze $KLMN$.\n(c) Existe-t-il une homothétie qui applique le couple $(X, Y)$ sur le couple $(Z, T)$ et en même temps le couple $(Z, T)$ sur le couple $(R, S)$?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "When Anne, Marie and Paul eat in the canteen, each of them orders a steak or a kebab. If Marie chooses the steak, Paul, out of a spirit of contradiction, takes a kebab. One and only one of the two girls orders steak. Paul and Anne do not both take a kebab. Who could have ordered a steak yesterday and a kebab today?",
+          "problem_orig": "Quand Anne, Marie et Paul mangent à la cantine, chacun d'eux commande un steak ou une brochette. Si Marie choisit le steak, Paul, par esprit de contradiction, prend une brochette. Une et une seule des deux jeunes filles commande du steak. Paul et Anne ne prennent pas de brochette simultanément. Qui a pu commander un steak hier et une brochette aujourd'hui?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In a cube, the following $27$ points are marked in green:\n• the vertices;\n• the midpoints of the edges;\n• the centres of the faces;\n• the centre of the cube.\nHow many triples of these green points are collinear (a triple is to be understood as a set of three points whose order does not matter; a triple is collinear if its three points lie on the same line)?",
+          "problem_orig": "Dans un cube, les $27$ points suivants sont marqués en vert:\n• les sommets;\n• les milieux des arêtes;\n• les centres des faces;\n• le centre du cube.\nCombien de triplets de ces points verts sont alignés (par triplet, il faut comprendre un ensemble de trois points dont l'ordre n'a pas d'importante; un triplet est aligné si ses trois points appartiennent à une même droite)",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Consider the $1140$ products $1 \\times 3980, 2 \\times 3980, 3 \\times 3980, \\ldots, 1140 \\times 3980$. How many of these products are divisible by $1140$? Generalise your reasoning so as to give, as a function of the two positive natural numbers $a$ and $b$, the number of products among $1 \\times b, 2 \\times b, 3 \\times b, \\ldots, a \\times b$ that are divisible by $a$.",
+          "problem_orig": "Considérons les $1140$ produits $1 \\times 3980, 2 \\times 3980, 3 \\times 3980, \\ldots, 1140 \\times 3980$. Combien de ces produits sont divisibles par $1140$? Généralisez votre raisonnement afin de donner, en fonction des deux naturels positifs $a$ et $b$, le nombre des produits parmi $1 \\times b, 2 \\times b, 3 \\times b, \\ldots, a \\times b$ qui sont divisibles par $a$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "In a square with consecutive vertices $A, B, C, D$, a variable point $M$ is taken on the diagonal $AC$. The perpendiculars through $M$ to the sides $AB$ and $BC$ meet $AB$ at $P$ and $BC$ at $Q$ respectively. Prove that the perpendicular bisector of the segment $PQ$ passes through a fixed point, independent of the choice of $M$ on $AC$.",
+          "problem_orig": "Dans un carré, de sommets consécutifs $A, B, C, D$, un point variable $M$ est pris sur la diagonale $AC$. Les perpendiculaires aux côtés $AB$ et $BC$ passant par $M$ coupent respectivement, $AB$ en $P$ et $BC$ en $Q$. Démontrez que la médiatrice du segment $PQ$ passe par un point fixe, indépendant du choix de $M$ sur $AC$.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the parallelogram with consecutive vertices $A$, $B$, $C$ and $D$. If $M$ denotes the midpoint of the side $AB$ and $P$ the midpoint of the side $BC$, what is the ratio of the area of the triangle with vertices $D$, $M$, $P$ to the area of the parallelogram?",
+          "problem_orig": "Considérons le parallélogramme de sommets consécutifs $A$, $B$, $C$ et $D$. Si $M$ désigne le milieu du côté $AB$ et $P$ le milieu du côté $BC$, que vaut le rapport de l'aire du triangle de sommets $D$, $M$, $P$ à l'aire du parallélogramme considéré?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "The hare has sworn he will not be caught out again. This time he sets off like a shot, at the same moment as the tortoise, who goes at her stately pace. Having reached the finish, he immediately turns back and, when he meets the tortoise, she is still seven hundred and sixty metres from the finish. And he says: \"My poor friend, do you see that I go twenty times faster than you!\" Readers, I ask you: what distance separates the starting point from the finish?",
+          "problem_orig": "Le lièvre a juré qu'on ne l'y prendrait plus. Cette fois, il part comme un trait, en même temps que la tortue qui va de son train de sénateur. Arrivé au but, il rebrousse aussitôt chemin et, quand il rencontre la tortue, celle-ci est encore à sept cent soixante mètres du but. Et lui de dire: Ma pauvre amie, vois-tu bien que je vais vingt fois plus vite que toi!. Lecteurs, c'est à vous que je demande quelle distance sépare le point de départ du but?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "A point being given in the plane of a circle, take all the chords of the circle determined by the lines through this point. What is the set of midpoints of these chords? Discuss according to the position of the point with respect to the circle.",
+          "problem_orig": "Un point étant donné dans le plan d'un cercle, prenons toutes les cordes du cercle déterminées par les droites passant par ce point. Quel est l'ensemble des milieux de ces cordes? Discuter selon la position du point par rapport au cercle.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Albert and Bertrand play a game with the following three rules:\n($R_1$) each player in turn places a new circular token of diameter $D$ cm on a square surface of side $C$ cm, without moving the tokens already placed and without the new piece touching them;\n($R_2$) the players have an unlimited supply of tokens, all of diameter $D$ cm; on the first turn Albert must place a token, then Bertrand and Albert play alternately;\n($R_3$) the loser is the one who can no longer place a token in accordance with rule ($R_1$).\nDepending on the values of $C$ and $D$, one of the two players can adopt a strategy that will make him win for sure. Who is this player and what is this winning strategy?",
+          "problem_orig": "Albert et Bertrand s'affrontent dans un jeu dont voici les trois règles\n($R_1$) chaque joueur dépose à son tour un nouveau jeton circulaire de diamètre $D$ cm sur une surface carrée de côté $C$ cm, sans déplacer les jetons déjà posés et sans que la nouvelle pièce touche ceux-ci;\n($R_2$) les joueurs disposent d'une réserve illimitée de jetons, tous de diamètre $D$ cm; au premier tour, Albert doit déposer un jeton, ensuite Bertrand et Albert jouent alternativement;\n($R_3$) le perdant est celui qui n'arrive plus à poser de jeton en accord avec la règle ($R_1$).\nSelon les valeurs de $C$ et $D$, un des deux joueurs peut adopter une stratégie qui le fera gagner à coup sûr. Quels sont ce joueur et cette stratégie gagnante?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Does the following sequence of operations always lead to the same result? If so, what is this result?\n(a) Write (in base $10$) a natural number with three non-zero, pairwise distinct digits.\n(b) Create a second number by writing the three digits of the previous number in reverse order.\n(c) Subtract the smaller number from the larger and thus obtain a number.\n(d) Write the digits of this last number in reverse order so as to form a number.\n(e) Add these last two numbers to obtain the result.",
+          "problem_orig": "La suite des opérations suivantes conduit-elle toujours au même résultat? Si oui, quel est ce résultat?\n(a) Ecrire (en base $10$) un nombre entier naturel de trois chiffres non nuls et deux à deux distincts.\n(b) Créer un deuxième nombre en écrivant les trois chiffres du nombre précédent dans l'ordre inverse.\n(c) Retrancher le plus petit nombre du plus grand et déterminer ainsi un nombre.\n(d) Ecrire les chiffres de ce dernier nombre dans l'ordre inverse en vue de former un nombre.\n(e) Additionner ces deux derniers nombres pour obtenir le résultat.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "On a segment of length $a + b$ two adjacent squares of sides $a$ and $b$ respectively are constructed. Dissect the union of these two (solid) squares and reassemble the pieces to form a single square whose area equals $a^2 + b^2$.",
+          "problem_orig": "Sur un segment de longueur $a + b$ sont construits deux carrés juxtaposés de côtés respectifs $a$ et $b$. Disséquer la réunion de ces deux carrés (pleins) et réassembler les morceaux pour former un carré unique doni l'aire égale $a^2 + b^2$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Ten Japanese children occupy the ten places of their classroom. When the day comes to change places, they proceed as follows. On a single sheet of paper, they first draw ten vertical lines of the same length, at the same height, and write a name above each line. To simplify the writing, denote the names by $1, 2, \\ldots, 10$ (first diagram).\nThen they add at random any number of horizontal bars, each joining two adjacent lines, in such a way that no two bars are ever at the same height. For example, see the second diagram.\nEach pupil determines his new place by tracing a path starting from his name, following the vertical lines always going downwards, and each horizontal bar met; the lower end reached indicates which pupil's place he must take (possibly he will not move). In our example (third diagram), pupil $8$ will occupy the place that was that of $7$.\n(a) Is it certain that, for every choice of horizontal bars, two pupils will never be given the same new place?\n(b) Can every permutation of the places be obtained in this way (that is, by a suitable choice of the horizontal bars)?\n(c) What is the smallest natural number $n$ such that every permutation of the $10$ places can be obtained by a choice of at most $n$ horizontal bars?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_1993_p3_fig.png",
+          "problem_orig": "Dix enfants japonais occupent les dix places de leur classe. Lorsqu'est venu le jour de changer de place, ils procèdent de la manière suivante. Sur une seule feuille de papier, ils tracent d'abord dix traits verticaux de même longueur, à la même hauteur et inscriveut un nom au-dessus de chaque trait. Pour simplifier l'écriture, désignons les noms par $1, 2, \\ldots, 10$:\nEnsuite, ils ajoutent au hasard un nombre quelconque de barres horizontales, chacune joignant deux traits adjacents, et cela de telle sorte que deux barres ne soient jamais à la même hauteur. Par exemple,\nTout élève détermine sa nouvelle place en traçant un chemin partant de son nom, empruntant des traits verticaux toujours en descendant, et chacune des barres horizontales rencontrées; l'extrémité inférieure atteinte indique de quel élève il doit prendre la piace (éventuellement, il ne bougera pas). Sur notre exemple, l'élève $8$ occupera la, place qui était celle de $7$.\n(a) Est-il certain que, pour tout choix de barres horizontales, deux élèves ne se verront jamais attribuer la même nouvelle place?\n(b) Toute permutation des places peut-elle être ainsi obtenue (c'est-à-dire par un choix approprié des barres horizontales)?\n(c) Quel est le plus petit nombre naturel $n$ tel que toute permutation des $10$ places puisse être obtenue par choix d'au plus $n$ barres horizontales?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Prove that a line dividing a triangle into two polygons of equal area and equal perimeter passes through the centre of the circle inscribed in the triangle.",
+          "problem_orig": "Démontrer qu'une droite partageant un triangle en deux polygones de même aire et de même périmètre passe par le centre du cercle au triangle.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "How many natural numbers with three distinct non-zero digits (in base $10$) are coprime to $10$?",
+          "problem_orig": "Combien de nombres entiers naturels de trois chiffres non nuls distincts (en base $10$) sont premiers avec $10$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Taking as vertices the points of intersection of the extended sides of a regular hexagon, Jean obtains a new regular hexagon. He then applies the same construction to this new hexagon, and starts again in the same way $\\ldots$ How many times must Jean carry out this construction for the area of the last hexagon constructed to exceed $1994$ times the area of the initial hexagon?",
+          "problem_orig": "En prenant comme sommets les points d'intersection des côtés prolongés d'un hexagone régulier, Jean obtient un nouvel hexagone régulier. Il applique ensuite la même construction à ce nouvel hexagone, et recommence de même $\\ldots$ Combien de fois Jean doit-il effectuer cette construction pour que l'aire du dernier hexagone construit dépasse $1994$ fois l'aire de l'hexagone initial?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Thirty-eight lamps numbered from $1$ to $38$ are arranged in a circle around a central lamp numbered $0$. These lamps form groups of four:\n$$\\{0, 1, 2, 3\\}, \\{0, 3, 4, 5\\}, \\{0, 5, 6, 7\\}, \\{0, 7, 8, 9\\}, \\ldots, \\{0, 35, 36, 37\\}, \\{0, 37, 38, 1\\}$$\nand only two operations can be performed:\n(i) switch off the four lamps of one group;\n(ii) change the state of each of the lamps of one group (that is, a lamp that is on is switched off, one that is off is switched on).\nCan every initial state of the $39$ lamps be transformed by a sequence of such operations into\n(a) the state in which all the lamps are on?\n(b) the state in which only lamp number $0$ is on?",
+          "problem_orig": "Trente-huit lampes numérotées de $1$ à $38$ sont disposées en cercle autour d'une lampe centrale numérotée $0$. Ces lampes forment des groupes de quatre:\n$$\\{0, 1, 2, 3\\}, \\{0, 3, 4, 5\\}, \\{0, 5, 6, 7\\}, \\{0, 7, 8, 9\\}, \\ldots, \\{0, 35, 36, 37\\}, \\{0, 37, 38, 1\\}$$\net deux opérations seulement sont réalisables:\n(i) éteindre les quatre lampes d'un même groupe;\n(ii) changer l'état de chacune des lampes d'un même groupe (c'està-dire, une lampe allumée est éteinte, une éteinte est allumée).\nTout état initial des $39$ lampes est-il transformable par une suite de telles opérations en\n(a) l'état où toutes les lampes sont allumées?\n(b) l'état où seule la lampe numéro $0$ est allumée?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "On a flat square plot of $32$ ares (or $3200$ square metres) whose sides are oriented NW–SE and NE–SW stands a rectangular villa of $16$ metres by $20$ metres, whose four façades face the four cardinal points. The centre of the villa coincides with the centre of the plot. The rest of the plot is laid out as lawn. What fraction of the lawn consists of points from which two façades of the villa are visible?",
+          "problem_orig": "Sur un terrain plat et carré de $32$ area (ou $3200$ mètres carrés) dont les côtés sont orientés NO-SE et NE-SO se trouve une villa rectangulaire de $16$ mètres sur $20$ mètres, dont les quatre façades font face aux quatre points cardinaux. Le centre de la villa coincide avec le centre du terrain. Le reste du terrain est aménagé en pelouse. Quelle fraction de la pelouse est constituée de points d'où sont visibles deux façades de la villa?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine all natural numbers with four distinct digits (in decimal notation) having the following three properties:\n(a) The sum of the number and the reversed number (for example, $123$ reversed gives $321$) is $7216$.\n(b) The sum of the digits is $17$.\n(c) The first and the fourth digit differ by at most $4$.",
+          "problem_orig": "Déterminer tous les nombres naturels de quatre chiffres distincts (en écriture décimale) possédant les trois propriétés suivantes:\n(a) La somme du nombre et du nombre renversé (par exemple, $123$ renversé donne $321$) est $7216$.\n(b) La somme des chiffres est $17$.\n(c) Le premier et le quatrième chiffre diffèrerent de $4$ au plus.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "On a circle, $1995$ blue points and $1994$ red points have been coloured in an arbitrary way. Let $b$ be the number of pairs of neighbouring blue points and $r$ the number of pairs of neighbouring red points. Does the difference $b - r$ always have the same value, whatever the arrangement of the coloured points? If so, what is this value?",
+          "problem_orig": "Sur un cercle, ont été coloriés, de manière quelconque, $1995$ points bleus et $1994$ points rouges. Soit $b$ le nombre de paires de points bleus voisins et $r$ le nombre de paires de points rouges voisins. La différence $b - r$ a-t-elle toujours la même valeur, quelle que soit la disposition des points coloriés? Si oui, quelle est cette valeur?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "A tiler has tiles in the shape of a trapezium which is half of a regular hexagon of side $1$ m. Using such tiles, not cut, is it possible to pave without gaps or overlaps\n(a) a regular hexagonal hall of side $4$ m?\n(b) a regular hexagonal square of side $100$ m?\n(c) a regular hexagonal square whose side measures an arbitrary whole number of metres?",
+          "problem_orig": "Un carreleur dispose de dalles ayant la forme d'un trapèze qui est la moitié d'un hexagone régulier de $1$m de côté. En utilisant de telles dalles, non retaillées, est-il possible de paver sans lacune ni chevauchement\n(a) un hall hexagonal régulier de $4$m de côté ?\n(b) une place hexagonale régulière de $100$m de côté ?\n(c) une place hexagonale régulière dont le côté mesure un nombre entier quelconque de mètres?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "In a triangle $ABC$ with a right angle at $A$, let $D$ be the foot of the altitude perpendicular to the hypotenuse $BC$. The circle with diameter $BD$ is drawn, meeting $AB$ again at $E$, and the circle with diameter $CD$, meeting $AC$ again at $F$. Prove that the line $EF$ is tangent to both circles.",
+          "problem_orig": "Dans un triangle $ABC$, rectangle en $A$, soit $D$ le pied de la hauteur perpendiculaire à l'hypoténuse $BC$. On trace le cercle de diamètre $BD$, qui recoupe $AB$ en $E$, et le cercle de diamètre $CD$, qui recoupe $AC$ en $F$. Démontrer que la droite $EF$ est tangente à ces deux cercles.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle with a right angle at $A$, whose area is $1$. If $A'$, $B'$ and $C'$ are the reflections of $A$, $B$ and $C$, respectively, in the opposite sides, what is the area of the triangle $A'B'C'$?",
+          "problem_orig": "Soit $ABC$ un triangle, rectangle en $A$, dont l'aire vaut $1$. Si $A'$, $B'$ et $C'$ sont les symétriques de $A$, $B$ et $C$, respectivement, par rapport aux côtés opposés, que vaut l'aire du triangle $A'B'C'$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "The keys of Mathieu's calculator are arranged in the usual way:\n$$\\begin{array}{ccc} 7 & 8 & 9 \\\\ 4 & 5 & 6 \\\\ 1 & 2 & 3 \\\\ 0 & & \\end{array}$$\nAll these keys having come loose from their sockets, Mathieu puts them back as follows:\n$$\\begin{array}{ccc} 3 & 6 & 9 \\\\ 2 & 5 & 8 \\\\ 1 & 4 & 7 \\\\ 0 & & \\end{array}$$\nComputing the product of two natural numbers, he obtains $1996$, whereas he expected to obtain a three-digit number. What is this number?",
+          "problem_orig": "Les touches de la calculatrice de Mathieu sont disposées de fàçon classique:\n$$\\begin{array}{ccc} 7 & 8 & 9 \\\\ 4 & 5 & 6 \\\\ 1 & 2 & 3 \\\\ 0 & & \\end{array}$$\nToutes ces touches s'étant, détachées de leurs alvéoles, Mathieu les replace comme suit: En calculant le produit de deux nombres naturels, il obtient\n$$\\begin{array}{ccc} 3 & 6 & 9 \\\\ 2 & 5 & 8 \\\\ 1 & 4 & 7 \\\\ 0 & & \\end{array}$$\n$1996$, alors qu'il s'attendait à obtenir un nombre de trois chiffres. Quel est ce nombre?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "It is known that $1 = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6}$. Is it possible to find a decomposition of $1$ as a sum of different fractions whose numerator is $1$ and whose denominator is a non-zero natural number\n(a) if this sum has $2$ terms?\n(b) if this sum has $4$ terms?\n(c) if this sum has $10$ terms?",
+          "problem_orig": "On sait que $1 = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6}$. Est-il possible de trouver une décomposition de $1$ en somme de fractions différentes, dont le numérateur est $1$ et dont le dénominateur est un entier naturel non nul\n(a) si cette somme compte $2$ termes?\n(b) si cette somme compte $4$ termes?\n(c) si cette somme compte $10$ termes?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Is there a hexagon whose sides have lengths $1$, $2$, $3$, $4$, $5$ and $6$ and whose six interior angles are equal?",
+          "problem_orig": "Existe-t-il un hexagone dont les côtés sont de longueurs $1$, $2$, $3$, $4$, $5$ et $6$ et dont les six angles internes sont égaux?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the plane, construct through a vertex of a regular hexagon a line which divides the interior of the hexagon into two regions, one of which has twice the area of the other.",
+          "problem_orig": "Dans le plan, construire par un sommet d'un hexagone régulier une droite qui partage l'intérieur de l'hexagone en deux régions dont l'une a une aire double de l'autre.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Is the number $1997^4 + 4^{1997}$ prime?",
+          "problem_orig": "Le nombre $1997^4 + 4^{1997}$ est-il premier?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "In Algebristan, a marriage can only be contracted between two adult persons of different sexes. $3/4$ of the adult men are married to $5/7$ of the adult women. Is the proportion of married adults determined by this information? If so, what is this proportion?",
+          "problem_orig": "En Algébristan, un mariage ne peut se contracter qu'entre deux personnes adultes de sexes différents. Les $3/4$ des hommes adultes sont mariés aux $5/7$ des femmes adultes. La proportion des adultes mariés est-elle déterminée par ces informations? Si oui, quelle est sette proportion?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Two regular polygons, one with fifteen sides and the other with sixteen sides, are inscribed in the same circle. Their vertices are all distinct. Prove that one of the arcs of the circle determined by the thirty-one vertices measures less than $1^\\circ$.",
+          "problem_orig": "Deux polygones réguliers, l'un à quinze côtés et l'autre à seize côtes, sont inscrits dans un même cercle. Leurs sommets sont tous distincts. Prouver que l'un des arcs de cercle déterminés par les trente et un sommets a une mesure inférieure à $1^\\circ$.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Mathieu, who has just computed $1 - \\frac{1}{2}$, then $\\frac{1}{2} - \\frac{1}{3}$, then $\\frac{1}{3} - \\frac{1}{4}$, suddenly exclaims: \"Great! So I can compute\n$$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\frac{1}{4 \\times 5} + \\cdots + \\frac{1}{1997 \\times 1998}$$\nwithout any difficulty.\" What is the value of this sum?",
+          "problem_orig": "Mathieu, qui vient de calculer $1 - \\frac{1}{2}$, puis $\\frac{1}{2} - \\frac{1}{3}$, puis $\\frac{1}{3} - \\frac{1}{4}$, s'écrie soudain: Chic! Je sais donc calculer:\n$$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\frac{1}{4 \\times 5} + \\cdots + \\frac{1}{1997 \\times 1998}$$\nsans aucune difficulté. Que vaut cette somme?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A tram line joins Place Albert to Square Baudouin. At the same regular intervals, trams leave from both terminuses, travelling at the same constant speed. Walking along this line, also at constant speed, I notice that I meet a tram every $4$ min and that a tram overtakes me every $12$ min. What time interval separates two tram departures from a terminus?",
+          "problem_orig": "Une ligne de tram joint la placa Albert au square Baudouin. A mêmes intervalles réguliers, des trams partent des deux terminus, roulant à la même vitesse constante. Marchant le long de cette ligne, moi aussi à vitesse constante, je constate que je croise un tram toutes les $4$ min et qu'un tram me dépasse toutes les $12$ min. Quel intervalla de temps sépare deux départs de tram d'un terminus?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Agrad, Béville and Cébourg are three cities located at the vertices of an equilateral triangle of side $200$ km. A perfume manufacturer obtains roses from four producers, Pol, Quentin, Rolf and Samuel, who each supply him with $300$ kg daily. Pol lives in Agrad and Quentin in Béville, while Rolf and Samuel are based in Cébourg. For his transport, this perfumer uses a helicopter which can carry at most $300$ kg of goods; the transport costs are proportional to the distance travelled. Where should the perfumer build his new factory to minimise them?",
+          "problem_orig": "Agrad, Béville et Cébourg sont trois cités qui occupent les sommets d'un triangle équilatéral de $200$ km de côté. Un fabricant de parfum se fournit en roses chez quatre producteurs, Pol, Quentin, Rolf et Samuel, qui lui en procurent quotidiennement $300$ kg chacun. Pol habite Agrad et Quentin Béville, tandis que Rolf et Samuel sont installés à Cébourg. Pour ses transports, ce parfumeur utilise un hélicoptère qui peut transporter au maximum $300$ kg de marchandise; les frais de transport sont proportionnels à la distante à parcourir. Où le parfumeur doit-il construire sa nouvelle usine pour les minimiser?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Two typists must share the typing of a report. The more experienced of the two would take $2$ h to do this work alone, while the other would take $3$ h. They have shared the work so that it is finished as quickly as possible. How long will it take?",
+          "problem_orig": "Deux dactylos doivent se partager la frappe d'un rapport. La plus expérimentée des deux mettrait $2$h pour effectuer seule ce travail, tandis que l'autre mettrait $3$h. Elles se sont partagé le travail de manière qu'il soit achevé le plus rapidement possible. Combien de temps cela demandera-t-il?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Forty pipes are available; their lengths are $2$ m, $4$ m or $6$ m. There are as many $2$ m pipes as $6$ m pipes. What is the total length of the available pipes?",
+          "problem_orig": "Quarante tuyaux sont disponibles; leurs longueurs sont de $2$ m, $4$ m ou $6$ m. Il y a autant de tuyaux de $2$ m que de tuyaux de $6$ m. Quelle est la longueur totale des tuyaux disponibles?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A rectangle whose length is three times its width is covered with a square grid. Along each side, four rows of squares are grey; the other squares are white. There are $544$ grey squares. How many white squares are there?",
+          "problem_orig": "Un rectangle dont la longueur vaut trois fois la largeur est garni d'un quadrillage. Le long de chaque côté, quatre rangées de carrés sont gris; les autres carrés sont blancs. Il y a $544$ carrés gris. Combien y a-t-il de carrés blancs?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "In the trapezium $ABCD$, $AB \\parallel CD$, $AB = 10$ and $CD = 6$; moreover, the height of this trapezium is $h = 4$. If $P$ is the midpoint of $AD$ and $Q$ that of $PB$, what is the area of the triangle $PCQ$?",
+          "problem_orig": "Dans le trapèze $ABCD$, $AB \\parallel CD$, $AB = 10$ et $CD = 6$; en outre, la hauteur de ce trapèze est $h = 4$. Si $P$ est le milieu de $AD$ et $Q$ celui cle $PB$, que vaut l'aire du triangle $PCQ$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "We observe that\n$$\\begin{aligned} 1 + 2 + 1 &= 4 = 2^2, \\\\ 1 + 2 + 3 + 2 + 1 &= 9 = 3^2, \\\\ 1 + 2 + 3 + 4 + 3 + 2 + 1 &= 16 = 4^2, \\end{aligned}$$\nAre the sums constructed in this way all squares of integers? If so, prove it; if not, give an example where this property is not satisfied.",
+          "problem_orig": "Nous observons que\n$$\\begin{aligned} 1 + 2 + 1 &= 4 = 2^2, \\\\ 1 + 2 + 3 + 2 + 1 &= 9 = 3^2, \\\\ 1 + 2 + 3 + 4 + 3 + 2 + 1 &= 16 = 4^2, \\end{aligned}$$\nLes sommes ainsi construites sont-elles toutes des carrés d'entiers? Si oui, le démontrer; si non, indiquer un exemple où cette propriété n'est pas satisfaite.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Alix, Bénédicte and Claude each have a square wooden board whose thickness is $1$ cm. The measures in centimetres of the sides of these boards are odd integers. These three boards are cut into small cubes of edge $1$ cm by saw cuts parallel to their sides. These cubes are then gathered into a single pile and the three friends use them to form as many cubes of edge $2$ cm as possible. When this work is finished, three small unit cubes remain unassembled. Explain why this was predictable.",
+          "problem_orig": "Alix, Bénédiete et Glande disposent chacunc d'une plaque eli bois de forme carrée, dont l'épaisseur, est $1$ cm. Les mesures en centimètres des côtés de ces plaques sont des nombres entiers impairs. Ces trois plaques sont, découpées en petits cubes d'$1$ cm d'arête par des traits de scie parallèles à leurs côtés. Ces cubes sont alors rassemblés en un seul tas et les trois amies les utilisent pour former un maximum de cubes de $2$ cm d'arête. Ce travail terminé, trois petits cubes unitaires restent non assemblés. Expliquer que ceci était prévisible.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "An arbitrary triangle $ABC$ has all its angles acute. Let $D$ be a point of $]AB[$. The circle $\\mathcal{B}_1$ with centre $B$ through $D$ meets $]BC[$ at $E$; the circle $\\mathcal{C}_1$ with centre $C$ through $E$ meets $]CA[$ at $F$; the circle $\\mathcal{A}_1$ with centre $A$ through $F$ meets $]AB[$ at $G$; the circle $\\mathcal{B}_2$ with centre $B$ through $G$ meets $]BC[$ at $H$; the circle $\\mathcal{C}_2$ with centre $C$ through $H$ meets $]CA[$ at $I$.\n(a) Show that the circle $\\mathcal{A}_2$ with centre $A$ through $I$ meets $]AB[$ at $D$.\n(b) In which case(s) does $\\mathcal{A}_1$ pass through $D$?",
+          "problem_orig": "Un triangle quelconque $ABC$ a tous ses angles aigus. Soit $D$ un point de $]AB[$. Le cercle $\\mathcal{B}_1$ de centre $B$ passant par $D$ coupe $]BC[$ en $E$; le cercle $\\mathcal{C}_1$, de centre $C$ passant par $E$ coupe $]CA[$ en $F$; le cercle $\\mathcal{A}_1$ de centre $A$ passant par $F$ coupe $]AB[$ en $G$; le cercle $\\mathcal{B}_2$ de centre $B$ passant par $G$ coupe $]BC[$ en $H$; le cercle $\\mathcal{C}_2$ de centre $C$ passant par $H$ coupe $]CA[$ en $I$.\n(a) Montrer que le cercle $\\mathcal{A}_2$ de centre $A$ passant par $I$ coupe $]AB[$ en $D$.\n(b) Dans quel(s) cas $\\mathcal{A}_1$ passe-t-il par $D$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "In a convex hexagon $ABCDEF$, $AB \\parallel CF$, $CD \\parallel BE$ and $EF \\parallel AD$. Show that the triangles $ACE$ and $BDF$ have the same area.",
+          "problem_orig": "Dans un hexagone convexe $ABCDEF$, $AB \\parallel CF$, $CD \\parallel BE$ et $EF \\parallel AD$. Montrer que les triangles $ACE$ et $BDF$ ont même aire.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "With three distinct non-zero digits, it is possible to form six numbers with two distinct digits. What are these six numbers if their sum is $484$? Does this problem have a unique solution?",
+          "problem_orig": "Avec trois chiffres distincts non nuls, il est possible de former six nombres de deux chiffres distincts. Quels sont ces six nombres si leur somme vaut $484$? Ce problème adimet-il une solution unique?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "My wife and I have three children, among them a pair of twins. The product of the ages (expressed as whole numbers) of the members of the family is $2001$. What is the sum of these ages?",
+          "problem_orig": "Mon épouse et moi avons trois enfants dont une paire de jumeaux. Le produit des âges (exprimés en nombres entiers) des membres de la famille vaut $2001$. Que vaut la somme de ces âges?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "If $n$ is a natural number other than zero, let us agree to denote by the symbol $n!$ the product of the natural numbers from $1$ to $n$ (that is, $1 \\times 2 \\times \\cdots \\times n$). Find the units digit of\n$$1! + 2! + 3! + \\cdots + 2001!$$",
+          "problem_orig": "Si $n$ es un nombre naturel autre que zéro, conenons de représenter par le symbole $n!$ le produit des naturels de $1$ à $n$ (c'est-à-dire $1 \\times 2 \\times \\cdots \\times n$). Trouver le chiffre des unités de\n$$1! + 2! + 3! + \\cdots + 2001!$$",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "(a) The parallelogram $ABCD$ has an area whose measure is $4002$. If $M$ is the midpoint of $BC$ and $N$ the midpoint of $AD$, prove that the area of the quadrilateral $AMCN$ has measure $2001$.\n(b) If $ABCD$ is an arbitrary convex quadrilateral, $M$ the midpoint of $BC$ and $N$ the midpoint of $AD$, is the area of the quadrilateral $AMCN$ still half that of $ABCD$?",
+          "problem_orig": "(a) Le parallélogramme $ABCD$ a une aire dont la mesure vaut $4002$. Si $M$ est le milieu de $BC$ et $N$ le milieu de $AD$, démontrer que l'aire du quadrilatère $AMCN$ a pour mesure $2001$.\n(b) Si $ABCD$ est un quadrilatère convexe quelconque, si $M$ est le milieu de $BC$ et $N$ le milieu de $AD$], l'aire du quadrilatère $AMCN$ vaut-elle encore la moitié de celle de $ABCD$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "(a) Determine the smallest natural number which, added to $1000$, $1231$ and $1715$, gives three numbers having a common divisor greater than $1$.\n(b) Are there natural numbers other than the one found above which have the same property? If so, what is the smallest of them? What are all those that work?",
+          "problem_orig": "(a) Déterminer le plus petit nombre naturel qui, ajouté à $1000$, $1231$ et $1715$, donne trois nombres avant un diviseur commun plus grand que $1$.\n(b) Existe-t-il d'autres naturels que celui trouvé ci-dessus qui possèdent la même propriété? Si oui, quel est le plus petit d'entre eux? Quels sont tous ceux qui conviennent?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Mathilde arranges dominoes of $1$ cm by $2$ cm so as to form the outline of a square, as shown in each of the two figures below.\nThe inner square has an area of $9$ cm$^2$ in the left figure and $16$ cm$^2$ in the right one.\n(a) What will the area of the inner square be if Mathilde uses $20$ dominoes?\n(b) And if she uses $2002$ dominoes?\n(c) With an arbitrary number of dominoes, will Mathilde always be able to form the outline of a square? If not, determine all the numbers for which this is possible.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2002_p1_fig.png",
+          "problem_orig": "Mathilde dispose des dominos de $1$ cm sur $2$ cm de mamière à former le contour d'un carré, comme le montre chacune des deux figures ci-dessous.\nLe carré intérieur a une aire de $9$ cm$^2$ dans la figure de gauche et de $16$ cm$^2$ dans celle de droite.\n(a) Quelle sera l'aire du carré intérieur si Mathilde utilise $20$ dominos?\n(b) Et si elle utilise $2002$ dominos?\n(c) Avec un nombre quelconque de dominos, Mathilde pourra-t-elle toujours former le contour d'un carré? Si non, déterminer tous les nombres pour lesquels cette opération est réalizable.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Two points $B$ and $C$ being fixed in the plane, how many triangles $ABC$ are there having the following two properties:\n• The measures of the angles (in degrees) are integers;\n• The measure of the angle at vertex $B$ is twice that of the angle at vertex $C$?",
+          "problem_orig": "Deux points $B$ et $C$ étant fixés dans le plan, combien existe-t-il de triangles $ABC$ possédant les deux propriétés suivantes:\n• Les measures des angles (en degrés) sont des nombres entiers;\n• L'amplitude de l'angle de sommet $B$ est double de celle de l'angle de sommet $C$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "How many pairs of (distinct) numbers taken from the set $\\{1, 2, 3, \\ldots, 2002\\}$ are there whose sum is an even number?",
+          "problem_orig": "Combien exist-t-il de paires de nombres (distincts) pris dans l'ensemble $\\{1, 2, 3, \\ldots, 2002\\}$ et tels que leur somme est un nombre pair?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "A convex quadrilateral has the following property: all the triangles having as vertices three of the vertices of this quadrilateral have the same perimeter. Does this quadrilateral have a particular shape (trapezium, parallelogram, rectangle, rhombus, square, $\\ldots$)?",
+          "problem_orig": "Un quadrilatère convexe possède la propriété suivante: tous le triangles ayant pour sommets trois des sommets de ce quadrilatère ont le même périmètre. Ce quadrilatère a-t-il une forme particulière (trapèze, parallélogramme, rectangle, losange, carré, $\\ldots$)?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Is it possible to arrange the integers $1, 2, 3, \\ldots, 16$ on\n(a) a line;\n(b) a circle\nso that the sum of any two neighbouring numbers is a perfect square? If so, give an example.",
+          "problem_orig": "Est-il possible de disposer les nombres entiers $1, 2, 3, \\ldots, 16$ sur\n(a) Une droite;\n(b) Un cercle\nDe façon que la somme de deux nombres voisins soit un carré parfait? Si oui, donner un exemple.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In an unbounded square lattice with mesh of side $1$, the distance between two vertices of the lattice is defined as the length of the shortest path between them following the lines of the lattice. Thus, in the figure below, the distance from $O$ to $A$ is $5$ and that from $O$ to $B$ is $4$.\nHow many vertices of the lattice are at\n(a) distance $1$ from $O$?\n(b) distance $10$ from $O$?\n(c) distance $n$ from $O$ (where $n$ is a natural number)?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2003_p2_fig.png",
+          "problem_orig": "Dans un réseau illimité à mailles carrées de côté $1$, on définit la distance entre deux sommets du réseau comme la longueur du plus court chemin qui les sépare en suivant les lignes du réseau. Ainsi, sur la figure ci-dessous, la distance de $O$ à $A$ est $5$ et celle de $O$ à $B$ est $4$.\nCombien y a-t-il de sommets du réseau situés à\n(a) La distance $1$ de $O$?\n(b) La distance $10$ de $O$?\n(c) La distance $n$ de $O$ (où $n$ est un nombre naturel)?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "The set $E = \\{1, 2, 3, \\ldots, 2002, 2003\\}$ is split into two parts $A$ and $B$:\n• $A$ consists of the numbers of $E$ whose digit sum is odd;\n• $B$ consists of the numbers of $E$ whose digit sum is even.\nIf $a$ is the sum of the numbers belonging to $A$ and $b$ is the sum of the numbers belonging to $B$, what is the value of $a - b$?",
+          "problem_orig": "L'ensemble $E = \\{1, 2, 3, \\ldots, 2002, 2003\\}$ est décomposé en deux parties $A$ et $B$:\n• $A$ comprend les nombres de $E$ dont la somme des chiffres est impaire;\n• $B$ comprend les nombres de $E$ dont la somme des chiffres est paire.\nSi $a$ est la somme des nombres appartenant à $A$ et si $b$ est la somme des nombres appartenant à $B$, quelle est la valeur de $a - b$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "$ABC$ is a triangle all of whose angles are acute. The rotation with centre $B$ and angle $+60^\\circ$ (anticlockwise) maps $A$ to $A'$. Under this rotation a point $P$ of $CA'$ is mapped to the point $P'$.\n• Prove that the sum of the distances from $P$ to the vertices of the triangle $ABC$ is equal to $P'A' + P'P + PC$.\n• Explain how to construct $P$ on $CA'$ so that this sum is as small as possible.",
+          "problem_orig": "$ABC$ est un triangle dont tous les angles soni aigus. La rotation de centre $B$ et d'angle $+60^\\circ$ (dans le sens contraine des aiguilles d'une montre) applique $A$ sur $A'$. Par cette rotation un point $P$ de $CA'$ est appliqué sur le point $P'$.\n• Prouver que la somme des distances de $P$ aux sommets du triangle $ABC$ est égale à $P'A' + P'P + PC$.\n• Expliquer comment construire $P$ sur $CA'$ de manière que cette somme soit la plus petite possible.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The code of a padlock is a four-digit number (digits from $0$ to $9$, the number possibly beginning with $0$). Mathieu has forgotten the code but he remembers that this number is less than $2004$ and that its four digits are all different. How many codes must he try to be certain that the padlock opens?",
+          "problem_orig": "Le code d'un cadenas est un nombre à quatre chiffres (de $0$ à $9$, le nombre pouvant commencer par $0$). Mathieu a oublié le code mais il se rappelle que ce nombre est inférieur à $2004$ et que ses quatre chiffres sont tous différents. Combien de codes doit-il essayer pour être certain que le cadenas s'ouvre?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Four different integers $a$, $b$, $c$ and $d$ are such that\n$$(a - 2004)(b - 2004)(c - 2004)(d - 2004) = 4.$$\nWhat is $a + b + c + d$?",
+          "problem_orig": "Quatre nombres entiers différents $a$, $b$, $c$ et $d$ sont tels que\n$$(a - 2004)(b - 2004)(c - 2004)(d - 2004) = 4.$$\nQue vaut $a + b + c + d$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "In the triangle $ABC$, $D$ is the midpoint of $BC$, $E$ is the midpoint of $AD$, $F$ is the midpoint of $BE$ and $G$ is the midpoint of $CF$. Given that the area of the triangle $ABC$ is $1$, compute the area of the triangle $EFG$.",
+          "problem_orig": "Dans le triangle $ABC$, $D$ est le milieu de $BC$, $E$ est le milieu de $AD$, $F$ est le milieu de $BE$ et $G$ est le milieu de $CF$. Sachant que l'aire du triangle $ABC$ vaut $1$, calculer l'aire du triangle $EFG$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "The masses, in kilograms, of five pumpkins are natural numbers, all different. These pumpkins are placed two at a time on a scale. The smallest masses thus obtained are $16$ kg and $18$ kg, while the largest are $26$ kg and $27$ kg.\n(a) Does this information make it possible to determine the mass of each pumpkin?\n(b) If not, how many cases in all are consistent with this information? Give the five masses in each case.",
+          "problem_orig": "Les masses, en kilogrammes, de cinq citrouilles sont des naturels tous différents. On place ces citrouilles deux par deux sur une balance. Les plus petites masses ainsi obtenues sont $16$ kg et $18$ kg, tandis que les plus grandes sont $26$ kg et $27$ kg.\n(a) Ces informations permettent-elles de déterminer la masse de chacune des citrouilles?\n(b) Si non, combien de cas en tout sont cohérents avec ces informations? Donner les cinq masses dans chacun des cas.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Determine all prime numbers with four distinct digits having the following three properties:\n• The number formed by the first two digits and the number formed by the last two digits are prime;\n• The sum of the first two digits is $10$ and the sum of the last two digits is $10$;\n• The units digit and the tens digit are prime.",
+          "problem_orig": "Déterminer tous le nombres premiers de quatre chiffres distincts ayant les trois propriétés suivantes:\n• Le nombre formé des deux premiers chiffres et le nombre formé, des deux derniers chiffres sont premiers;\n• La somme des deux premiers chiffres vaut $10$ et la somme des deux derniers chiffres vaut $10$;\n• Le chiffre des unités et le chiffre des dizaines sont premiers.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A newspaper carries out a survey of its subscribers. It records the sex, the marital status and the occupation of $1000$ readers and obtains the following results: $312$ men, $470$ married people, $525$ students (male or female), $42$ male students, $147$ married students (male or female), $86$ married men and $25$ married male students. My friend claims that there must be an error in these results. Is he right? Justify your answer.",
+          "problem_orig": "Un journal organise un sondage auprès de ses abonnés. Il détermine le sexe, l'état civil et la profession de $1000$ lecteurs et obtient les résultats suivants: $312$ hommes, $470$ personnes mariées, $525$ étudiants ou étudiantes, $42$ étudiants de sexe masculin, $147$ étudiants ou étudiantes mariés, $86$ hommes mariés et $25$ étudiants de sexe masculin mariés. Mon copain affirme qu'il doit y avoir une erreur dans ces résultats. A-t-il raison? Justifiez votre réponse.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "A fraction is such that, multiplied by $5$, it remains smaller than $1$, while, multiplied by $6$, it exceeds $1$. The two terms of this fraction are natural numbers and the numerator is a number with two different digits.\n(a) Show that there are several fractions satisfying these conditions and give an example of such a fraction.\n(b) Among these fractions, which one has the smallest denominator?\n(c) Among these fractions, which one has the largest denominator?",
+          "problem_orig": "Une fraction est telle que, multipliée par $5$, elle reste plus pente que $1$, tandis que, multipliée par $6$, elle dépasse $1$. Les deux termes de cette fraction sont des nombres naturels et le numérateur est un nombre de deux chiffres différents.\n(a) Montrez qu'il existe plusieurs fractions satisfaisant ces conditions et donnez un exemple d'une telle fraction.\n(b) Parmi ces fractions, quelle est celle qui a le plus petit dénominateur?\n(c) Parmi ces fractions, quelle est celle qui a le plus grand dénominateur?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "A circle of radius $5$ is divided into four arcs of equal length by the points $A$, $B$, $C$, $D$. Call $x$, $y$, $z$, $t$ the arcs $\\overset{\\frown}{AB}$, $\\overset{\\frown}{BC}$, $\\overset{\\frown}{CD}$, $\\overset{\\frown}{DA}$.\nLet $x'$ be the reflection of the arc $x$ in the line $AB$, $y'$ the reflection of the arc $y$ in the line $BC$, $z'$ the reflection of the arc $z$ in the line $CD$, $t'$ the reflection of the arc $t$ in the line $DA$.\n(a) What is the area of the figure bounded by $x'yzt$?\n(b) What is the area of the figure bounded by $x'y'z't'$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2005_p4_fig.png",
+          "problem_orig": "Un cercle de rayon $5$ est partagé en quatre arcs de même longueur par les points $A$, $B$, $C$, $D$. Appelons $x$, $y$, $z$, $t$ les arcs $\\overset{\\frown}{AB}$, $\\overset{\\frown}{BC}$, $\\overset{\\frown}{CD}$, $\\overset{\\frown}{DA}$.\nSoit $x'$ l'arc symétrique de $x$ par rapport à la droite $AB$, $y'$ l'arc symétrique de $y$ par rapport à la droite $BC$, $z'$ l'arc symétrique de $z$ par rapport à la droite $CD$, $t'$ l'arc symétrique de $t$ par rapport à la droite $DA$.\n(a) Que vaut l'aire de la figure limitée par $x'yzt$?\n(b) Que vaut l'aire de la figure limitée par $x'y'z't'$?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The natural numbers are written one after another to form the sequence\n$$012345678910111213141516\\ldots$$\n(a) What is the $2006$th digit of this sequence?\n(b) How many digits $0$ are there from the beginning of the sequence up to and including the $2006$th digit?",
+          "problem_orig": "Les nombres naturels sont écrits successivement pour former la suite\n$$012345678910111213141516\\ldots$$\n(a) Quel est le $2006^{\\text{e}}$ chiffre de cette suite ?\n(b) Combien y a-t-il de chiffres $0$ depuis le début de la suite jusqu'au $2006^{\\text{e}}$ chiffre inclus ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Henriette has $2006$ pieces of string, all of the same length. She knots them to one another so as to make a large square net with square meshes: each piece of string becomes a side of a mesh. A small $2 \\times 2$ net is shown below. At each knot, $2$, $3$ or $4$ string ends stick out (drawn dotted). She will have to cut these string ends.\n(a) If she makes a large $15 \\times 15$ net,\n(i) How many pieces of string will she have to use?\n(ii) How many protruding string ends will she have to cut?\n(b) If she makes the largest possible square net with her $2006$ pieces of string, how many protruding string ends will she have to cut?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2006_p2_fig.png",
+          "problem_orig": "Henriette possède $2006$ morceaux de ficelle, tous de même longueur. Elle les noue l'un à l'autre afin de réaliser un grand filet carré à mailles carrées: chaque morceau de ficelle devient un côté d'une maille. Ci-dessous est représenté un petit filet $2 \\times 2$. À chaque nœud, dépassent $2$, $3$ ou $4$ bouts de ficelle (dessinés en pointillés). Il lui faudra couper ces bouts de ficelle.\n(a) Si elle réalise un grand filet $15 \\times 15$,\n(i) Combien de morceaux de ficelle devra-t-elle utiliser ?\n(ii) Combien de bouts de ficelle qui dépassent devra-t-elle couper ?\n(b) Si elle réalise le plus grand filet carré possible avec ses $2006$ morceaux de ficelle, combien de bouts de ficelle qui dépassent devra-t-elle couper ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "The triangle $ABC$ is isosceles with $AB = AC$. The angle $\\angle BAC$ is acute and such that the circle with centre $B$ and radius $BC$ meets $AC$ at $D$ and $AB$ at $E$. If the triangles $BCD$ and $BED$ are symmetric with respect to $BD$,\n(a) What is the measure, in degrees, of the angle $\\angle BAC$? (Justify this answer.)\n(b) Prove that the triangle $AED$ is isosceles.",
+          "problem_orig": "Le triangle $ABC$ est isocèle avec $AB = AC$. L'angle $\\angle BAC$ est aigu et tel que le cercle de ventre $B$ et de rayon $BC$ coupe $AC$ en $D$ et $AB$ en $E$. Si les triangles $BCD$ et $BED$ sont symétriques par rapport à $BD$,\n(a) Que vaut, en degrés, l'amplitude de l'angle $\\angle BAC$? (Justifier cette réponse.)\n(b) Prouver que le triangle $AED$ est isocèle.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "We wish to tile a rectangle using only pieces identical to those drawn below, made of small squares of size $1 \\times 1$. The tiling must leave no hole in the rectangle and no two pieces may overlap.\nIs this tiling possible if the dimensions of the rectangle are\n(a) $4 \\times 6$?\n(b) $4 \\times 5$?\n(c) $3 \\times 7$?\n(d) $m \\times n$ where $m$ and $n$ are natural numbers greater than $2$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2006_p4_fig.png",
+          "problem_orig": "On désire paver un rectangle en utilisant uniquement des pièces identiques à celles dessinées ci-dessous, formées de petits carrés de dimension $1 \\times 1$. Ce pavage doit s'effectuer sans laisser de trou dans le rectangle et sans superposer deux pièces.\nCe pavage est-il possible si les dimensiona du rectangle sont\n(a) $4 \\times 6$ ?\n(b) $4 \\times 5$ ?\n(c) $3 \\times 7$ ?\n(d) $m \\times n$ où $m$ et $n$ sont des naturels supérieurs à $2$ ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In my class, all the mathematics tests are marked out of $20$. My average so far was $12$, but with the $17$ I have just obtained, it has risen to $13$.\n(a) What must my mark be in the next test for my new average to be $14$?\n(b) Can this average of $14$ rise to $17$ if I obtain $20$ in all the following tests? If so, how many perfect tests must I do?",
+          "problem_orig": "Dans ma classe, toutes les interrogations de mathématique sont notées sur $20$. Ma moyenne jusqu'à présent était $12$, mais avec le $17$ que je viens d'obtenir, elle est passée à $13$.\n(a) Quelle doit être ma note à la prochaine interrogation pour que ma nouvelle moyenne soit $14$ ?\n(b) Cette moyenne de $14$ peut-elle passer à $17$ si j'obtiens $20$ à toutes les interrogations suivantes ? Si oui, combien d'interrogations parfaites dois-je faire ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In a railway yard, the installations make it possible to detach two or more of the last wagons of the train and then to reattach them to the first wagons (or to the locomotive, if no wagon has been left) after reversing the order of the detached wagons. For example, the train shown below (first picture: locomotive, c, a, e, f, b, g, d), where the last four wagons are detached, becomes after such a manoeuvre the second train (locomotive, c, a, e, d, g, b, f).\n(a) Sorting the wagons of a train means putting these wagons back in a well-determined order after a certain number of manoeuvres. Is it possible to sort the wagons of the train shown below (third picture: locomotive, c, a, d, b) so as to obtain the order \"a-b-c-d\"? If so, what is the minimum number of manoeuvres needed?\n(b) Is it always possible to sort all the wagons of a train? Explain your answer.\n(c) Is it always possible to sort a train of three wagons in at most one manoeuvre? in at most two manoeuvres? in at most three manoeuvres?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2007_p2_fig.png",
+          "problem_orig": "Dans un centre ferroviaire, les installations permettent de détacher deux ou plusieurs des derniers wagons du train puis de les rattacher aux premiers wagons (ou à la locomotive, si aucun wagon n'a été laissé) après avoir inversé l'ordre des wagons détachés. Par exemple, le train représenté ci-dessous où on détache les quatre derniers wagons devient après une telle manœuvre\n(a) Trier les wagons d'un train consiste à replacer ces wagons dans un ordre bien déterminé après un certain nombre de manœuvres. Est-il possible de trier les wagons du train figuré ci-dessous pour obtenir l'ordre \"a-b-c-d\" ? Si oui, quel est le nombre minimum de manœuvres nécessaires ?\n(b) Est-il toujours possible de trier tous les wagons d'un train ? Expliquer votre réponse.\n(c) Est-il toujours possible de trier un train de trois wagons en au plus une manœuvre ? en au plus deux manœuvres ? en au plus trois manœuvres ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "We denote by $\\overline{ab}$ a number where $a$ is the tens digit and $b$ the units digit. There exist natural numbers $\\overline{ab}$ and $\\overline{cd}$ such that $a$, $b$, $c$, $d$ are non-zero, all different, and $\\overline{ab} \\times \\overline{cd} = \\overline{ba} \\times \\overline{dc}$, for example $21 \\times 36 = 12 \\times 63$.\n(a) Find at least two other examples.\n(b) Determine a general relation linking $a$, $b$, $c$ and $d$ when $\\overline{ab} \\times \\overline{cd} = \\overline{ba} \\times \\overline{dc}$ and show that it gives all the solutions $(a, b, c, d)$.\n(c) How many solutions are there?",
+          "problem_orig": "On désigne par $\\overline{ab}$ un nombre où $a$ est le chiffre des dizaines et $b$ celui des unités. Il existe des nombres naturels $\\overline{ab}$ et $\\overline{cd}$ tels que $a$, $b$, $c$, $d$ sont non nuls, tous différents et $\\overline{ab} \\times \\overline{cd} = \\overline{ba} \\times \\overline{dc}$, par exemple $21 \\times 36 = 12 \\times 63$.\n(a) Trouver au moins deux autres exemples.\n(b) Déterminer une relation générale qui lie $a$, $b$, $c$ et $d$ lorsque $\\overline{ab} \\times \\overline{cd} = \\overline{ba} \\times \\overline{dc}$ et montrer qu'elle fournit toutes les solutions $(a, b, c, d)$.\n(c) Combien y a-t-il de solutions ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "The triangle $ABC$ is right-angled with $\\widehat{ABC}$ measuring $90^\\circ$. The segment $[CP]$ is perpendicular to the line $AC$ and such that $|CP| = |CB|$.\n(a) If the angle $\\widehat{BAC}$ measures $26^\\circ$, is it true that the bisector of the angle $\\widehat{BAC}$ is either parallel or perpendicular to the line $BP$?\n(b) Does this property remain true if the angle $\\widehat{BAC}$ does not measure $26^\\circ$?\n(c) Is the bisector of the angle $\\widehat{BAC}$ always parallel to $BP$? Is it always perpendicular to $BP$?",
+          "problem_orig": "Le triangle $ABC$ est rectangle avec $\\widehat{ABC}$ mesurant $90^\\circ$. Le segment $[CP]$ est perpendiculaire à la droite $AC$ et tel que $|CP| = |CB|$.\n(a) Si l'amplitude de l'angle $\\widehat{BAC}$ vaut $26^\\circ$, est-il vrai que la bissectrice de l'angle $\\widehat{BAC}$ est soit parallèle, soit perpendiculaire à la droite $BP$ ?\n(b) Cette propriété reste-t-elle vraie si l'amplitude de l'angle $\\widehat{BAC}$ ne vaut pas $26^\\circ$ ?\n(c) La bissectrice de l'angle $\\widehat{BAC}$ est-elle toujours parallèle à $BP$ ? est-elle toujours perpendiculaire à $BP$ ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A child has $2008$ matches, all of length $1$. He amuses himself by building gnomons (top row of the figure) or squares (bottom row of the figure).\n(a) With his $2008$ matches, he builds the largest possible gnomon. How many matches does he need, and how many small $1 \\times 1$ squares does this gnomon contain?\n(b) With his $2008$ matches, he builds the largest possible square. How many matches does he need, and how many small $1 \\times 1$ squares does this square contain?\n(c) With his $2008$ matches, he wants first to build a square, then to take it apart and afterwards build a gnomon containing exactly the same number of matches as the square. Is this possible? If so, what is, among these $2008$ matches, the largest number of matches usable for each of these two successive constructions?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2008_p1_fig.png",
+          "problem_orig": "Un enfant possède $2008$ allumettes toutes de longueur $1$. Il s'amuse à construire des gnomons\nou des carrés\n(a) Avec ses $2008$ allumettes, il construit le plus grand gnomon possible. Combien lui faut-il d'allumettes et combien ce gnomon comporte-t-il de petits carrés $1 \\times 1$?\n(b) Avec ses $2008$ allumettes, il construit le plus grand carré possible. Combien lui faut-il d'allumettes et combien ce carré comporte-t-il de petits carrés $1 \\times 1$?\n(c) Avec ses $2008$ allumettes, il souhaite construire d'abord un carré, puis le démonter et ensuite construire un gnomon comportant exactement le même nombre d'allumettes que le carré. Est-ce possible ? Si oui, quel est, parmi ces $2008$ allumettes, le plus grand nombre d'allumettes utilisables pour chacune de ces deux constructions successives ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "The figure below shows a tile made of six small squares of side $1$.\nWe have many identical tiles, which may neither be cut nor overlap. With these tiles,\n(a) is it possible to build a square of side $10$?\n(b) is it possible to build a square of side $6$?\n(c) what is the smallest square that can be built in this way?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2008_p2_fig.png",
+          "problem_orig": "La figure ci-dessous représente une dalle formée de six petits carrés dont le côté mesure $1$.\nOn dispose de nombreuses dalles toutes semblables qui ne peuvent ni être découpées ni se chevaucher. Avec ces dalles,\n(a) est-il possible de construire un carré de côté $10$ ?\n(b) est-il possible de construire un carré de côté $6$ ?\n(c) quel est le plus petit carré qu'il est ainsi possible de construire ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "On the side $CD$ of the square $ABCD$, the equilateral triangle $CDE$ is constructed outwards, then the equilateral triangle $CEF$, the isosceles triangle $CFG$ right-angled at $F$, and the equilateral triangle $CGH$.\n(a) Make an accurate drawing of the figure described above.\n(b) Are the points $A$, $B$ and $H$ collinear? Justify your answer with a proof.",
+          "problem_orig": "Sur le côté $CD$ du carré $ABCD$, on construit vers l'extérieur le triangle équilatéral $CDE$, puis le triangle équilatéral $CEF$, le triangle isocèle $CFG$ rectangle en $F$ et le triangle équilatéral $CGH$.\n(a) Fais un dessin précis de la figure décrite ci-dessus.\n(b) Les points $A$, $B$ et $H$ sont-ils alignés ? Justifie ta réponse par une démonstration.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "In his cave, Ali has found a bag of $n$ gold nuggets weighing $1$ gram, $2$ grams, $3$ grams, $4$ grams, $\\ldots$, $n$ grams. His wife wants exactly half of the total weight of the gold. Without cutting any nugget, Ali must therefore divide them into two parts of equal weight.\n(a) Is this division possible if $n = 12$?\n(b) Is this division possible if $n = 5$?\n(c) Is this division possible if $n = 11$?\n(d) For which values of $n$ is the division possible?",
+          "problem_orig": "Dans sa caverne, Ali a trouvé un sac de $n$ pépites d'or qui pèsent $1$ gramme, $2$ grammes, $3$ grammes, $4$ grammes, $\\ldots$, $n$ grammes. Sa femme veut exactement la moitié du poids total de l'or. Sans couper aucune pépite, Ali doit donc effectuer un partage en deux parts de même poids.\n(a) Ce partage est-il possible si $n = 12$?\n(b) Ce partage est-il possible si $n = 5$?\n(c) Ce partage est-il possible si $n = 11$?\n(d) Pour quelles valeurs de $n$ le partage est-il possible ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$ABCD$ is a trapezium whose base $DC$ is three times as long as the base $AB$. If $M$ is the midpoint of $AD$, what fraction of the area of the trapezium is the area of the triangle $BDM$?",
+          "problem_orig": "$ABCD$ est un trapèze dont la base $DC$ a une longueur triple de la base $AB$. Si $M$ est le milieu de $AD$, à quelle fraction de l'aire du trapèze est égale l'aire du triangle $BDM$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "The sequence of non-zero natural numbers is written in the triangular table\n$$\\begin{array}{ccccccccc} &&&& 1 &&&& \\\\ &&& 2 && 3 &&& \\\\ && 4 && 5 && 6 && \\\\ & 7 && 8 && 9 && 10 & \\\\ 11 && 12 && \\cdots &&&& \\end{array}$$\nWhat is\n(a) the first term of the $2009$th row of the table?\n(b) the last term of the $2009$th row of the table?\n(c) the sum of the terms of the $2009$th row of the table?",
+          "problem_orig": "La suite des entiers naturels non nuls est écrite dans le tableau triangulaire\n$$\\begin{array}{ccccccccc} &&&& 1 &&&& \\\\ &&& 2 && 3 &&& \\\\ && 4 && 5 && 6 && \\\\ & 7 && 8 && 9 && 10 & \\\\ 11 && 12 && \\cdots &&&& \\end{array}$$\nQue vaut\n(a) Le premier terme de la $2009$e ligne du tableau ?\n(b) Le dernier terme de la $2009$e ligne du tableau ?\n(c) La somme des termes de la $2009$e ligne du tableau ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "The triangles $ABC$, $ADE$ and $EFG$ are equilateral. The point $C$ is the midpoint of $AD$ and $D$ that of $EF$.\n(a) What is the ratio of the area of the triangle $ABC$ to that of the triangle $EFG$?\n(b) Let $H$ be the point of intersection of $AB$ and $GE$, and $I$ that of $AB$ and $FG$. Prove that the triangles $AEH$ and $IGH$ are equilateral.\n(c) Justify that the points $B$, $D$ and $G$ are collinear.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2009_p3_fig.png",
+          "problem_orig": "Les triangles $ABC$, $ADE$ et $EFG$ sont équilatéraux. Le point $C$ est le milieu de $AD$ et $D$ celui de $EF$.\n(a) Que vaut le rapport de l'aire du triangle $ABC$ à celle du triangle $EFG$?\n(b) Soit $H$ le point d'intersection de $AB$ et $GE$ et $I$ celui de $AB$ et $FG$. Prouver que les triangles $AEH$ et $IGH$ sont équilatéraux.\n(c) Justifier que les points $B$, $D$ et $G$ sont alignés.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "The digits of a natural number $n$ are permuted in all possible ways. The arithmetic mean of all the numbers thus obtained (including $n$ itself) is equal to $n$.\nWhat are the possible values of $n$\n(a) if $n$ is a $2$-digit number?\n(b) if $n$ is a $3$-digit number?",
+          "problem_orig": "Les chiffres d'un nombre naturel $n$ sont permutés de toutes les manières possibles. La moyenne arithmétique de tous les nombres ainsi obtenus (y compris $n$ lui-même) est égale à $n$.\nQuelles sont les valeurs possibles de $n$\n(a) Si $n$ est un nombre de $2$ chiffres ?\n(b) Si $n$ est un nombre de $3$ chiffres ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the parallelogram $RSTU$, the length of the side $RS$ is twice that of the side $RU$. The point $P$ is the midpoint of the side $RS$.\n(a) Prove that the line $UP$ is the bisector of the angle $\\angle RUT$ and that the line $PT$ is the bisector of the angle $\\angle STU$.\n(b) Is the triangle $TUP$ acute-angled, right-angled or obtuse-angled?",
+          "problem_orig": "Dans le parallélogramme $RSTU$, la longueur du côté $RS$ est double de celle du côté $RU$. Le point $P$ est le milieu du côté $RS$.\n(a) Démontrer que la droite $UP$ est la bissectrice de l'angle $\\angle RUT$ et que la droite $PT$ est la bissectrice de l'angle $\\angle STU$.\n(b) Le triangle $TUP$ est-il acutangle, rectangle ou obtusangle ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A strange calculator has two unusual keys: the key $\\boxed{f}$ and the key $\\boxed{g}$. When the key $\\boxed{f}$ is pressed, the displayed number is doubled. When the key $\\boxed{g}$ is pressed, the displayed number is decreased by three.\n(a) If the initial display is $5$, give a sequence of presses of these two special keys which makes $17$ appear on the display, or show that no such sequence exists.\n(b) If the initial display is $5$, give a sequence of presses of these two special keys which makes $85$ appear on the display, or show that no such sequence exists.\n(c) If the initial display is $5$, give a sequence of presses of these two special keys which makes $36$ appear on the display, or show that no such sequence exists.\n(d) Which are all the natural numbers that can be displayed, starting from $5$, by such a sequence of presses, and why?",
+          "problem_orig": "Une calculatrice étrange possède deux touches inhabituelles : la touche $\\boxed{f}$ et la touche $\\boxed{g}$. Lorsqu'on presse la touche $\\boxed{f}$, le nombre affiché est doublé. Lorsqu'on presse la touche $\\boxed{g}$, le nombre affiché est diminué de trois.\n(a) Si l'affichage initial est $5$, indiquer une suite de pressions de ces deux touches spéciales qui provoque l'affichage de $17$ ou montrer qu'il n'existe pas de telle suite.\n(b) Si l'affichage initial est $5$, indiquer une suite de pressions de ces deux touches spéciales qui provoque l'affichage de $85$ ou montrer qu'il n'existe pas de telle suite.\n(c) Si l'affichage initial est $5$, indiquer une suite de pressions de ces deux touches spéciales qui provoque l'affichage de $36$ ou montrer qu'il n'existe pas de telle suite.\n(d) Quels sont tous les nombres naturels qui peuvent être affichés, en partant de $5$, par une telle suite de pressions, et pourquoi ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle of area $1$.\n(a) On the ray $AB$, let $B'$ be such that $AB' = 2 \\cdot AB$. On the ray $BC$, let $C'$ be such that $BC' = 3 \\cdot BC$. On the ray $CA$, let $A'$ be such that $CA' = 5CA$. What is the area of the triangle $A'B'C'$?\n(b) Let $m$, $n$ and $p$ be three natural numbers greater than $2$. On the ray $AB$, let $B''$ be such that $AB'' = m \\cdot AB$. On the ray $BC$, let $C''$ be such that $BC'' = n \\cdot BC$. On the ray $CA$, let $A''$ be such that $CA'' = p \\cdot CA$. What is the area of the triangle $A''B''C''$?",
+          "problem_orig": "Soit $ABC$ un triangle d'aire $1$.\n(a) Sur la demi-droite $AB$, soit $B'$ tel que $AB' = 2 \\cdot AB$. Sur la demi-droite $BC$, soit $C'$ tel que $BC' = 3 \\cdot BC$. Sur la demi-droite $CA$, soit $A'$ tel que $CA' = 5CA$. Quelle est l'aire du triangle $A'B'C'$ ?\n(b) Soit $m, n$, et $p$ trois nombres naturels supérieurs à $2$. Sur la demi-droite $AB$, soit $B''$ tel que $AB'' = m \\cdot AB$. Sur la demi-droite $BC$, soit $C''$ tel que $BC'' = n \\cdot BC$. Sur la demi-droite $CA$, soit $A''$ tel que $CA'' = p \\cdot CA$. Quelle est l'aire du triangle $A''B''C''$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Two squares are quarrelling.\n• \"As for me, Sir, my side is a whole number of centimetres!\" the large square declares proudly.\n• \"But so is mine!\" the small square replies furiously, before continuing: \"Increase my area by $2100$ cm$^2$ and I shall be your equal!\"\n(a) Give a possible length for the side of the large square.\n(b) Does the problem have a solution if $2100$ is replaced by $2010$? If so, give all the solutions.",
+          "problem_orig": "Deux carrés se disputent.\n• Moi, Monsieur, mon côté est un nombre entier de centimètres! déclare fièrement le grand carré.\n• Mais, moi aussi ! répond rageusement le petit carré avant de poursuivre: Qu'on augmente mon aire de $2100$ cm$^2$ et je serai votre égal!\n(a) Donner une longueur possible du côté du grand carré.\n(b) Le problème admet-il une solution si $2100$ est remplacé par $2010$ ? Si oui, indiquer toutes les solutions.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "On this little island live three populations of ducks: greater scaups, common goldeneyes and red-breasted mergansers; below, only the females will be considered. Every year, in April, the scaups lay $5$ eggs, the goldeneyes $3$ eggs and the mergansers $1$ egg. This year, the number of mergansers is two thirds of the sum of the number of scaups and the number of goldeneyes; moreover, there are $495$ scaups and goldeneyes in total, who have laid $2011$ eggs.\nHow many females of each species are there, before the eggs hatch?",
+          "problem_orig": "Sur cette petite ile vivent trois populations de canards: des fuligules milouinans, des garrots sonneurs et des harles huppés; ci-dessous, il ne sera question que des femelles. Chaque année, en avril, les fuligules pondent $5$ oeufs, les garrots $3$ oeufs et les harles $1$ oeuf. Cette année, le nombre de harles vaut les deux tiers de la somme du nombre de fuligules et du nombre de garrots; en outre, il y a un total de $495$ fuligules et garrots, qui ont pondu $2011$ oeufs.\nCombien y a-t-il de femelles de chaque espèce, avant l'éclosion des oeufs ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "(a) The number $999$ is multiplied by $198$, then all the digits of this product are added. What is their sum?\n(b) The number $9999$ is multiplied by $198$, then all the digits of this product are added. What is their sum?\n(c) The number\n$$\\underbrace{99\\cdots999}_{2011 \\text{ digits } 9}$$\nis multiplied by $198$, then all the digits of this product are added. What is their sum?",
+          "problem_orig": "(a) Le nombre $999$ est multiplié par $198$, puis tous les chiffres de ce produit sont additionnés. Quelle est leur somme ?\n(b) Le nombre $9999$ est multiplié par $198$, puis tous les chiffres de ce produit sont additionnés. Quelle est leur somme ?\n(c) Le nombre\n$$\\underbrace{99\\cdots999}_{2011 \\text{ chiffres } 9}$$\nest multiplié par $198$, puis tous les chiffres de ce produit sont additionnés. Quelle est leur somme ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle.\n(a) The midpoint of the side $BC$ is called $A'$ and that of the side $AC$, $B'$. Compare the areas of the triangles $AA'B$ and $AB'B$. Deduce from this a property of the lines $AB$ and $A'B'$. State in general terms the property thus established.\n(b) Let further $C'$ be the midpoint of $AB$. The parallel to $AA'$ through $C'$ meets $A'B'$ at $P$. Compare the lengths of the sides of the triangle $CPC'$ with the lengths of the medians of the triangle $ABC$.",
+          "problem_orig": "Soit un triangle $ABC$.\n(a) Le milieu du côté $BC$ est nommé $A'$ et celui du côté $AC$, $B'$. Comparer les aires des triangles $AA'B$ et $AB'B$. En déduire une propriété des droites $AB$ et $A'B'$. Énoncer de manière générale la propriété ainsi établie.\n(b) Soit encore $C'$ le milieu de $AB$. La parallèle à $AA'$ menée par $C'$ coupe $A'B'$ en $P$. Comparer les longueurs des côtés du triangle $CPC'$ aux longueurs des médianes du triangle $ABC$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "If $n$ is a non-zero natural number, $n!$ denotes the product $1 \\times 2 \\times 3 \\times \\cdots \\times n$.\n(a) What is $5!$? With how many zeros does the decimal representation of this number end?\n(b) With how many zeros does the decimal representation of $25!$ end?\n(c) Is there a natural number $n$ for which the decimal representation of $n!$ ends in exactly $5$ zeros?\n(d) With how many zeros does the decimal representation of $2011!$ end?",
+          "problem_orig": "Si $n$ est un naturel non nul, $n!$ désigne le produit $1 \\times 2 \\times 3 \\times \\cdots \\times n$.\n(a) Que vaut $5!$? Par combien de zéros se termine l'écriture décimale de ce nombre ?\n(b) Par combien de zéros se termine l'écriture décimale de $25!$?\n(c) Existe-t-il un naturel $n$ pour lequel l'écriture décimale de $n!$ se termine par $5$ zéros exactement ?\n(d) Par combien de zéros se termine l'écriture décimale de $2011!$",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider\n• the sum with $1$ term $1 \\times 1$;\n• the sum with $2$ terms $1 \\times 2 + 2 \\times 1$;\n• the sum with $3$ terms $1 \\times 3 + 2 \\times 2 + 3 \\times 1$;\n• the sum with $4$ terms $1 \\times 4 + 2 \\times 3 + 3 \\times 2 + 4 \\times 1$;\n• the sum with $5$ terms $1 \\times 5 + 2 \\times 4 + 3 \\times 3 + 4 \\times 2 + 5 \\times 1$;\n(a) Write the sum with $9$ terms.\n(b) Is the sum with $2012$ terms an even number or an odd number?\n(c) For which non-zero natural numbers $n$ is the sum with $n$ terms odd?",
+          "problem_orig": "Soit\n• La somme à $1$ terme $1 \\times 1$;\n• La somme à $2$ terme $1 \\times 2 + 2 \\times 1$;\n• La somme à $3$ terme $1 \\times 3 + 2 \\times 2 + 3 \\times 1$;\n• La somme à $4$ terme $1 \\times 4 + 2 \\times 3 + 3 \\times 2 + 4 \\times 1$;\n• La somme à $5$ terme $1 \\times 5 + 2 \\times 4 + 3 \\times 3 + 4 \\times 2 + 5 \\times 1$;\n(a) Écrire la somme à $9$ termes.\n(b) La somme à $2012$ termes est-elle un nombre pair ou un nombre impair?\n(a) Pour quels naturels non nuls $n$ la somme à $n$ termes est-elle impaire?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Let $A$ be a point on a circle with centre $O$ and radius $r$.\n(a) Let $B$ be another point of the circle such that $AB = OA$. The perpendicular to $OB$ through $A$ meets the circle again at $B'$. Is the quadrilateral $OABB'$ (i) a trapezium? (ii) a parallelogram? (iii) a rhombus? (iv) a rectangle? (v) a square? Justify.\n(b) Let $C$ be another point of the circle such that $AC < OA$. The perpendicular to $OC$ through $A$ meets the circle again at $C'$. Is the quadrilateral $OACC'$ (i) a trapezium? (ii) a parallelogram? (iii) a rhombus? (iv) a rectangle? (v) a square? Justify.\n(c) For what measure of the angle $\\angle ACC'$ does the quadrilateral $OACC'$ have area $\\frac{r^2}{2}$?",
+          "problem_orig": "Soit $A$ un point sur un cercle de centre $O$ et de rayon $r$.\n(a) Soit $B$ encore un point du cercle, tel que $AB = OA$. La perpendiculaire à $OB$ par $A$ recoupe le cercle en $B'$. Le quadrilatère $OABB'$ est-il (i) un trapèze ? (ii) un parallélogramme ? (iii) un losange ? (iv) un rectangle ? (v) un carré ? Justifier.\n(b) Soit $C$ encore un point du cercle, tel que $AC < OA$. La perpendiculaire à par $A$ recoupe le cercle en $C'$. Le quadrilatère $OACC'$ est-il (i) un trapèze ? (ii) un parallélogramme ? (iii) un losange ? (iv) un rectangle ? (v) un carré ? Justifier.\n(c) Pour quelle mesure de l'angle $\\angle ACC'$ le quadrilatère $OACC'$ a-t-il une aire de $\\frac{r^2}{2}$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Justin wants to fix five rectangular documents (of arbitrary dimensions), possibly overlapping, partially or totally, to a rectangular metal board by placing magnets, in such a way that each of the documents is held between the board and at least three magnets.\n(a) In the case of the following arrangement of the five documents, what is the minimum number of magnets he must use?\n(b) What is the smallest number of magnets that will make it possible to fix any configuration of five documents? Give an example of a configuration of five documents which requires this minimal number of magnets.\n(c) Is there a configuration of five documents for which the smallest number of magnets required is eight?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2012_p3_fig.png",
+          "problem_orig": "Justin souhaite fixer cinq documents rectangulaires (de dimensions quelconques), éventuellement superposés, partiellement ou totalement, à un tableau métallique rectangulaire en plaçant des aimants, cela de sorte que chacun des documents soit coincé entre le tableau et trois aimants au moins.\n(a) Dans le cas de la disposition suivante des cinq documents, combien d'aimants doit-il utiliser au minimum ?\n(b) Quel est le plus petit nombre d'aimants qui permettra de fixer toute configuration de cinq documents ? Donner un exemple de configuration de cinq documents qui requiert ce nombre minimal d'aimants.\n(c) Existe-t-il une configuration de cinq documents pour laquelle le plus petit nombre d'aimants requis est huit ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Johan, older than Fabrice, notices that by swapping the two digits of his age he obtains Fabrice's age. Fabrice, for his part, observes that the difference between the squares of their ages is the square of a non-zero natural number. What are their respective ages?",
+          "problem_orig": "Johan, plus agé que Fabrice, remarque qu'en permutant les deux chiffres de son age, il obtient celui de Fabrice. Ce dernier, quant à lui, observe que la différence entre les carrés de leurs âges est le carré dun naturel non nul. Quels sont leurs âges respectifs?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A French teacher adopts a new way of marking dictations. He applies the following formula:\n$$\\text{Mark} = 20 \\times \\left(1 - \\frac{40 \\times \\text{Number of mistakes}}{\\text{Number of words in the text}}\\right)$$\n(a) What will the mark be for a dictation with $6$ mistakes in a text of $400$ words?\n(b) Is it possible to obtain a mark of $20$? If so, how? If not, why not?\n(c) Is it possible to obtain a negative mark? If so, how? If not, why not?\n(d) Martin obtained a mark of $12$ for a text of $200$ words. How many mistakes did he make?\n(e) Adeline obtained $16$ and made $4$ mistakes. How many words did the dictation have?",
+          "problem_orig": "Un professeur de français adopte une nouvelle manière d'évaluer les dictées. Il applique la formule suivante :\n$$\\text{Note} = 20 \\times \\left(1 - \\frac{40 \\times \\text{Nombre de fautes}}{\\text{Nombre de mots du texte}}\\right)$$\n(a) Quelle sera la note pour une dictée comportant $6$ fautes dans un texte de $400$ mots ?\n(b) Est-il possible d'obtenir une note de $20$ ? Si oui, comment ? Si non, pourquoi ?\n(c) Est-il possible d'obtenir une note négative ? Si oui, comment ? Si non, pourquoi ?\n(d) Martin a obtenu une note de $12$ pour un texte de $200$ mots. Combien a-t-il fait de fautes ?\n(e) Adeline a obtenu $16$ et a fait $4$ fautes. Combien la dictée comptait-elle de mots ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Four individuals, one and only one of whom has committed a theft, are arrested by the police. They make the following statements:\n• Andrée: \"Benoit is guilty.\"\n• Benoit: \"Lise is guilty.\"\n• Charles: \"I am not guilty.\"\n• Lise: \"Benoit is lying when he says that I am guilty.\"\n(a) Inspector Sylvain believes that only one of these people is telling the truth. Whom does he believe to be guilty?\n(b) Inspector Jean-Paul believes that only one of these people is lying. Whom does he believe to be guilty?",
+          "problem_orig": "Quatre individus, dont un et un seul a commis un vol, sont arrêtés par la police. Ils font les déclarations suivantes :\n• Andrée : « Benoit est coupable. »\n• Benoit : « Lise est coupable. »\n• Charles : « Je ne suis pas coupable. »\n• Lise : « Benoit ment lorsqu'il dit que je suis coupable. »\n(a) L'inspecteur Sylvain croit qu'une seule de ces personnes dit la vérité. Qui croit-il coupable ?\n(b) L'inspecteur Jean-Paul croit qu'une seule de ces personnes ment. Qui croit-il coupable ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "All my maths tests are marked out of $20$. With the $17$ I have just obtained in the last one, my average has gone up from $14$ to $15$.\n(a) How many tests had there already been (before the last one) in the term?\n(b) Can my average go up to $16$ after the next test? If so, what must I obtain in it?\n(c) Can my average go up to $17$ after the next test? If so, what must I obtain in it?\n(d) Can my average go up to $17$ after the next two tests? If so, what must I obtain in them?",
+          "problem_orig": "Toutes mes interros de math sont notées sur $20$. Avec le $17$ que je viens d'avoir à la dernière, ma moyenne est remontée de $14$ à $15$.\n(a) Combien d'interros y avait-il déjà eu (avant la dernière) dans la période ?\n(b) Ma moyenne peut-elle remonter à $16$ après la prochaine interro ? Si oui, combien dois-je y obtenir ?\n(c) Ma moyenne peut-elle remonter à $17$ après la prochaine interro ? Si oui, combien dois-je y obtenir ?\n(d) Ma moyenne peut-elle remonter à $17$ après les deux prochaines interros ? Si oui, combien dois-je y obtenir ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The tank of Claude's moped has a capacity of $6$ L. The fuel to be used is a mixture of unleaded petrol and synthetic oil. At the petrol station in Claude's village there are only two types of petrol-oil mixture: mixture $A$, which contains $7\\%$ oil, and mixture $B$, which contains $2\\%$.\n(a) Claude buys $3$ L of each mixture. What is the percentage of oil in the mixture obtained?\n(b) Claude knows that the ideal mixture for his moped contains $3\\%$ oil. To obtain $6$ L of such a mixture, what quantity of $A$ and what quantity of $B$ must he buy?\n(c) Into his empty tank, Claude has already poured $1$ L of $A$ and $2$ L of $B$. How must he top it up to have a full tank with $3\\%$ oil?",
+          "problem_orig": "Le réservoir de la mobylette de Claude a une capacité de $6$L. Le carburant à utiliser est un mélange d'essence sans plomb et d'huile de synthèse. À la station-service du village de Claude, il n'y a que deux types de mélange essence-huile: le mélange $A$ qui contient $7\\%$ d'huile et le mélange $B$ qui en contient $2\\%$.\n(a) Claude achète $3$L de chaque mélange. Quel est le pourcentage d'huile dans le mélange obtenu ?\n(b) Claude sait que le mélange idéal pour sa mobylette contient $3\\%$ d'huile. Pour obtenir $6$L d'un tel mélange, quelle quantité de $A$ et quelle quantité de $B$ devra-t-il acheter ?\n(c) Dans son réservoir vide, Claude a déjà versé $1$L de $A$ et $2$L de $B$. Comment doit-il compléter pour avoir un plein à $3\\%$ d'huile ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Nicole has done a long division in pencil. To annoy her, Jules roughly erases some digits and replaces them with letters. The operation thus mistreated is shown below (dividend $ABC94$, divisor $23DE$, quotient $12$, remainder $30$).\n(a) Can the units digit of the divisor be $3$? $6$?\n(b) What could Nicole's calculation have been? Justify each replacement of a letter by a digit. If there are several solutions, consider all the possibilities.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2014_p2_fig.png",
+          "problem_orig": "Nicole a effectué une division écrite au crayon. Pour l'ennuyer, Jules gomme grossièrement quelques chiffres et les remplace par des lettres. Ci-dessous se trouve l'opération ainsi maltraitée.\n(a) Le chiffre des unités du diviseur peut-il être $3$? $6$?\n(b) Quel aurait pu être le calcul de Nicole ? Justifier chaque remplacement de lettre par un chiffre. S'il y a plusieurs solutions, envisager toutes les possibilités.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "The diagonals $AC$ and $BD$ of the quadrilateral $ABCD$ meet at $P$, without being perpendicular.\nLet $H$ be the orthocentre of the triangle $ABP$ (that is, the point of intersection of its altitudes), $I$ that of $BCP$, $J$ that of $CDP$ and $K$ that of $DAP$.\n(a) What kind of quadrilateral is it if $H$, $J$ and $P$ are collinear?\n(b) What kind of quadrilateral is it if $H$, $J$ and $P$ are collinear, and also $I$, $K$ and $P$?\n(c) If $ABCD$ is a rectangle, what kind of quadrilateral is $HIJK$?",
+          "problem_orig": "Les diagonales $AC$ et $BD$ du quadrilatère $ABCD$ se coupent en $P$, sans être perpendiculaires.\nSoit $H$ l'orthocentre du triangle $ABP$ (c.-à-d. le point d'intersection de ses hauteurs), $I$ celui de $BCP$, $J$ celui de $CDP$ et $K$ celui de $DAP$.\n(a) Quelle est la nature du quadrilatère si $H$, $J$ et $P$ sont alignés ?\n(b) Quelle est la nature du quadrilatère si $H$, $J$ et $P$ sont alignés, ainsi que $I$, $K$ et $P$?\n(c) Si $ABCD$ est un rectangle, quelle est la nature de $HIJK$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Let $m$, $n$ be two non-zero natural numbers. A hexagon is constructed whose angles are $120^\\circ$ and whose sides measure alternately $m$ and $n$. This hexagon is tiled by equilateral triangles of side $1$, and all the vertices of these triangles are marked.\n(a) Draw the hexagon and the tiling for $m = 4$ and $n = 2$.\n(b) How many points have been marked when $m = 4$ and $n = 2$?\n(c) How many points have been marked when $m = 100$ and $n = 33$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2014_p4_fig.png",
+          "problem_orig": "Soit $m$, $n$ deux naturels non nuls. On construit un hexagone dont les angles sont de $120^\\circ$ et dont les côtés mesurent alternativement $m$ et $n$. Cet hexagone est pavé par des triangles équilatéraux de côté , et tous les sommets de ces triangles sont marqués.\n(a) Dessiner l'hexagone et le pavage pour $m = 4$ et $n = 2$.\n(b) Combien a-t-on marqué de points, lorsque $m = 4$ et $n = 2$?\n(c) Combien a-t-on marqué de points, lorsque $m = 100$ et $n = 33$?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider the number\n$$3ABCD8EFG$$\nwhere each letter represents a digit. The sum of any three consecutive digits of this number is always $18$. Determine all the digits of this number.",
+          "problem_orig": "Soit le nombre\n$$3ABCD8EFG$$\noù chaque lettre représente un chiffre. La somme de trois chiffres consécutifs de ce nombre vaut toujours $18$. Déterminer tous les chiffres de ce nombre.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In the quadrilateral $ABCD$, drawn below not to scale, $\\widehat{ABD} = 10^\\circ$, $\\widehat{DBC} = 50^\\circ$, $\\widehat{DCA} = 20^\\circ$ and $\\widehat{ACB} = 60^\\circ$. What is $\\widehat{CAD}$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2015_p2_fig.png",
+          "problem_orig": "Dans le quadrilatère $ABCD$, dessiné ci-dessous sans respect des mesures $\\widehat{ABD} = 10^\\circ$, $\\widehat{DBC} = 50^\\circ$, $\\widehat{DCA} = 20^\\circ$ et $\\widehat{ACB} = 60^\\circ$. Que vaut $\\widehat{CAD}$ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Four numbers have sum $125$. Increasing the first of them by $4$, decreasing the second by $4$, multiplying the third by $4$ and dividing the last by $4$ gives four equal results. What are the four original numbers?",
+          "problem_orig": "Quatre nombres ont pour somme $125$. Augmenter de $4$ le premier d'entre eux, diminuer de $4$ le second, multiplier par $4$ le troisième et diviser par $4$ le dernier, cela donne quatre résultats égaux. Quels sont les quatre nombres de départ ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Titeuf has put up two bookcases in his bedroom. In the first, he places his school books on three shelves; in the other, he arranges on four shelves the comic books he collects. In the first bookcase there are $M$ books per shelf and in the second $N$ books per shelf. Each of the numbers $M$ and $N$ has two digits, and one digit appears exactly twice among these four digits. Titeuf takes stock of his books. He counts $101$ in all. How many books are there in each bookcase?",
+          "problem_orig": "Titeuf a installé deux bibliothèques dans sa chambre. Dans la première, il place ses livres scolaires sur trois planches; dans l'autre, il classe sur quatre planches les bandes dessinées qu'il collectionne. Dans la première bibliothèque, il y a $M$ livres par planche et dans la seconde $N$ livres par planche. Chacun des nombres $M$ et $N$ est formé de deux chiffres, et un chiffre apparait exactement deux fois parmi ces quatre chiffres. Titeuf fait l'inventaire de ses livres. Il en compte en tout $101$. Combien y a-t-il de livres par bibliothèque ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 5,
+          "problem": "The sequence $(1, 4, 7, 10, \\ldots)$ is obtained by adding $3$ each time to get the successive terms.\n(a) Does the number $1111$ belong to it?\n(b) The number $55$ appears in the sequence. Does it contain other numbers made up only of digits $5$? If so, which are these numbers?\n(c) Let $C$ be a non-zero digit. Does the sequence contain numbers made up only of digits $C$? If so, which are these numbers?",
+          "problem_orig": "La suite $(1, 4, 7, 10, \\ldots)$ s'obtient en ajoutant chaque fois $3$ aux termes successifs.\n(a) Le nombre $1111$ en fait-il partie ?\n(b) Le nombre $55$ apparait dans la suite. Celle-ci contient-elle d'autres nombres composés uniquement de chiffres $5$? Si oui, quels sont ces nombres ?\n(c) Soit $C$ un chiffre non nul. La suite contient-elle des nombres composés uniquement de chiffres $C$? Si oui, quels sont ces nombres ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The trips of the public-clock repairer (always rounded up to the next kilometre) are invoiced as follows: an initial amount of $10$ euros is increased by\n• $0.60$ euro for each kilometre up to the $50$th,\n• $0.50$ euro for each kilometre between the $51$st and the $100$th,\n• $0.40$ euro for each kilometre from the $101$st on;\nin addition, for trips of strictly more than $200$ km, a meal allowance of $70$ euros is due.\n(a) What does a trip of $145$ km cost?\n(b) Write a formula giving the cost of a trip of length $\\ell$ greater than $201$ km.\n(c) Compute the distance corresponding to a cost of $203$ euros.",
+          "problem_orig": "Les déplacements du réparateur dhorloges publiques (toujours arrondis au kilomètre supérieur) sont facturés selon les modalités suivantes : un montant initial de $10$ euro est augmenté de\n• $0,60$ euro pour chaque kilomètre jusqu'au $50$ euro,\n• $0,50$ euro pour chaque kilomètre compris entre le $51$ euro et le $100$ euro\n• $0,40$ euro pour chaque kilomètre à partir du $101$ euro;\nen outre, pour les déplacements de strictement plus de $200$ km, une indemnité de repas de $70$ euro est due.\n(a) Que coute un trajet de $145$ km ?\n(b) Écrire une formule qui fournit le cout d'un trajet de longueur $\\ell$ supérieure à $201$ km.\n(c) Calculer la distance correspondant à un cout de $203$ euro.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "In the drawing opposite, all the circles are internally tangent at the same point and their diameters are the successive non-zero natural numbers.\nWhich consecutive circles determine between them a crescent whose area is equal to $\\frac{43\\pi}{4}$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2016_p2_fig.png",
+          "problem_orig": "Dans le dessin ci-contre, tous les cercles sont tangents intérieurement en un même point et leurs diamètres sont les naturels non nuls successifs.\nQuels sont les cercles consécutifs qui déterminent entre eux un croissant dont l'aire est égale à $\\frac{43\\pi}{4}$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "A circle $\\mathcal{C}$ with centre $O$ has $AB$ as a diameter; $D$ is a point of the circle and $E$ a point of the ray $OB$ such that $\\triangle ODE$ is a triangle isosceles at $D$. The line $DE$ meets the circle again at $C$.\n(a) Construct a figure.\n(b) What are all the positions of $D$ for which $E$ is outside the circle?\n(c) If $\\widehat{COA} = 18^\\circ$, what is $\\widehat{CEA}$?",
+          "problem_orig": "Un cercle $\\mathcal{C}$ centré en $O$ admet $AB$ pour diamètre ; $D$ est un point du cercle et $E$ un point de la demi-droite $OB$ tels que $\\triangle ODE$ est un triangle isocèle en $D$. La droite $DE$ recoupe le cercle en $C$.\n(a) Construire une figure.\n(b) Quelles sont toutes les positions de $D$ pour lesquelles $E$ est extérieur au cercle ?\n(c) Si $\\widehat{COA} = 18^\\circ$, que vaut $\\widehat{CEA}$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "The plane, equipped with an orthonormal coordinate system with origin $O$, is divided into a grid by lines parallel to the coordinate axes passing through all points with integer coordinates. On this grid, starting from $O$ downwards, a spiral line $\\mathcal{L}$ is drawn which turns anticlockwise, as shown opposite.\nFor every point $M$ with integer coordinates, $L(M)$ denotes the length of the portion of $\\mathcal{L}$ from the point $O$ to the point $M$; for example, $L(Q_1) = 4$.\n(a) Let $M$ be a point of the $x$-axis such that $|OM| = 3$. What are the possible values of $L(M)$?\n(b) Express $L(P_1)$, $L(P_2)$, $L(P_3)$ and in general $L(P_i)$, where $P_i = (-i, -i)$ with $i$ natural.\n(c) Express $L(Q_i)$, where $Q_i = (i, i)$ with $i$ natural.\n(d) Compute $L(M)$ when $M = (2015, 2016)$.\n(e) Determine the coordinates of the point $S$ such that $L(S) = 2016$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2016_p4_fig.png",
+          "problem_orig": "Le plan, muni d'un repère orthonormé d'origine $O$, est quadrillé par des droites parallèles aux axes de coordonnées et passant par tous les points à coordonnées entières. Sur ce quadrillage, on dessine, en partant de $O$ vers le bas, une ligne spiralée $\\mathcal{L}$ qui tourne dans le sens opposé à celui des aiguilles d'une montre, comme indiqué ci-contre.\nPour tout point $M$ à coordonnées entières, on note $L(M)$ la longueur de la portion de $\\mathcal{L}$ qui va du point $O$ au point $M$; par exemple, $L(Q_1) = 4$.\n(a) Soit $M$ un point de l'axe des abscisses tel que $|OM| = 3$. Quelles sont les valeurs possibles pour $L(M)$?\n(b) Exprimer $L(P_1)$, $L(P_2)$, $L(P_3)$ et en général $L(P_i)$, où $P_i = (-i, -i)$ avec $i$ naturel.\n(c) Exprimer $L(Q_i)$, où $Q_i = (i, i)$ avec $i$ naturel.\n(d) Calculer $L(M)$ lorsque $M = (2015, 2016)$.\n(e) Déterminer les coordonnées du point $S$ tel que $L(S) = 2016$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 5,
+          "problem": "Mathilde amuses herself by trying to cover completely and without overlap square boards with three types of plates, which she takes from bags each containing one large $5 \\times 5$ plate, one medium $3 \\times 3$ plate and two small $1 \\times 1$ plates. She has made it a rule to use each time the four plates of a bag.\n(a) Is this possible for an $18 \\times 18$ board?\n(b) Is this possible for a $12 \\times 12$ board?\n(c) Is this possible for a $2016 \\times 2016$ board?\n(d) Is this possible for a $24 \\times 24$ board?",
+          "problem_orig": "Mathilde s'amuse à essayer de recouvrir entièrement et sans chevauchement des damiers carrés avec trois types de plaques qu'elle tire de sachets contenant chacun une grande plaque $5 \\times 5$, une moyenne $3 \\times 3$ et deux petites $1 \\times 1$. Elle s'est imposé d'utiliser chaque fois les quatre plaques d'un sachet.\n(a) Est-ce possible pour un damier $18 \\times 18$?\n(b) Est-ce possible pour un damier $12 \\times 12$?\n(c) Est-ce possible pour un damier $2016 \\times 2016$?\n(d) Est-ce possible pour un damier $24 \\times 24$?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCD$ be a square whose side length is $999$. The point $P$ of the side $[BC]$ and the point $Q$ of the side $[CD]$ are such that $|BP| = |DQ| = x$. What must the value of $x$ be for the segments $[AP]$ and $[AQ]$ to divide the square into three parts of equal area?",
+          "problem_orig": "Soit $ABCD$ un carré dont la longueur du côté est $999$. Le point $P$ du côté $[BC]$ et le point $Q$ du côté $CD]$ sont tels que $|BP| = |DQ| = x$. Quelle doit être la valeur de $x$ pour que les segments $[AP]$ et $[AQ]$ partagent le carré en trois parties de même aire ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "A $4 \\times 6$ grid is given (so having $5 \\times 7$ vertices), with its horizontal lines and its vertical lines. Two vertices are neighbours if they are at distance $1$, either on the same horizontal or on the same vertical.\n(a) Is there a colouring of the vertices, each blue or black, with as many blue vertices as black vertices?\n(b) Is there a colouring of the vertices, each blue or black, such that every vertex has a non-zero even number of neighbours coloured black?\n(c) Is there a colouring of the vertices, each blue or black, such that every vertex has an even number of neighbours coloured black and an even number of neighbours coloured blue?",
+          "problem_orig": "Un quadrillage de taille $4 \\times 6$ est donné (ayant donc $5 \\times 7$ sommets), avec ses lignes horizontales et ses lignes verticales. Deux sommets sont voisins sils sont à distance $1$, soit sur une même horizontale, soit sur une même verticale.\n(a) Existe-t-il un coloriage des sommets, chacun en bleu ou en noir, comprenant autant de sommets bleus que de sommets noirs ?\n(b) Existe-t-il un coloriage des sommets, chacun en bleu ou en noir, tel que chaque sommet a un nombre pair non nul de voisins colorés en noir ?\n(c) Existe-t-il un coloriage des sommets, chacun en bleu ou en noir, tel que chaque sommet a un nombre pair de voisins colorés en noir et un nombre pair de voisins colorés en bleu ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Mathilde has in front of her a pile of $n$ tokens. She must repeat a certain number of times the following move, consisting of two steps:\n• Remove one token from one of the piles in front of her (which contains at least two tokens); this token is thrown away for good;\n• Then split into two, in any way, a pile containing at least two tokens (the one from which she has just removed a token, or another one).\nIf she reaches a final arrangement consisting only of piles of $5$ tokens, she wins.\n(a) Will she succeed if $n = 17$?\n(b) Will she succeed if $n = 20$?\n(c) Give a condition on $n$ such that Mathilde can win when this condition is satisfied, and only in that case.",
+          "problem_orig": "Mathilde a devant elle une pile de jetons. Elle doit répéter un certain nombre de fois la manoeuvre suivante, comportant deux étapes :\n• Enlever un jeton à l'une des piles qu'elle a devant elle (et qui contient au moins deux jetons) ; ce jeton est définitivement jeté ;\n• Puis partager en deux, de façon quelconque, une pile contenant au moins deux jetons (celle à laquelle elle vient de retirer un jeton, ou une autre).\nSi elle parvient à une disposition finale ne comportant que des piles de $5$ jetons, elle gagne.\n(a) Y parviendra-t-elle si $n = 17$?\n(b) Y parviendra-t-elle si $n = 20$?\n(c) Donner une condition sur $n$ pour que Mathilde puisse gagner lorsque cette condition est satisfaite, et seulement dans ce cas.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Two circles $\\mathcal{C}$ and $\\mathcal{D}$ with respective centres $C$ and $D$ and the same radius $r$ meet at two distinct points $A$ and $B$. The line $CB$ meets $\\mathcal{C}$ again at $P$. The line $DB$ meets $\\mathcal{D}$ again at $R$.\n(a) Illustrate these data with a diagram.\n(b) Determine the nature of the quadrilateral $ABCD$.\n(c) Show that $A$, $P$ and $R$ are collinear.",
+          "problem_orig": "Deux cercles $\\mathcal{C}$ et $\\mathcal{D}$ de centres respectifs $C$ et $D$ et de même rayon $r$ se coupent en deux points distincts $A$ et $B$. La droite $CB$ recoupe $\\mathcal{C}$ en $P$. La droite $DB$ recoupe $\\mathcal{D}$ en $R$.\n(a) Illustrer ces données par un schéma.\n(b) Déterminer la nature du quadrilatère $ABCD$.\n(c) Montrer que $A$, $P$ et $R$ sont alignés.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 5,
+          "problem": "In a square garden of side $10$ m, divided into a grid of squares of side $1$ m, a square vegetable patch of side $3$ m is to be laid out, its edges lying on lines of the grid.\n(a) How many positions of the vegetable patch are possible?\n(b) For how many of them does the whole made up of the garden and the vegetable patch have an axis of symmetry?\n(c) What does this last number become if the garden has side $11$ m, the vegetable patch remaining $3$ m?",
+          "problem_orig": "Dans un jardin carré de $10$ m de côté, quadrillé en carrés d'$1$ m de côté, doit être implanté un potager carré de $3$ m de côté dont les bords se situeront sur des lignes du quadrillage.\n(a) Combien de positions du potager sont possibles ?\n(b) Pour combien d'entre elles l'ensemble jardin et potager admet-il une symétrie orthogonale ?\n(c) Que devient cette dernière valeur si le jardin mesure $11$ m de côté, le potager restant à $3$ m ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCDEF$ be a regular hexagon inscribed in a circle $\\mathcal{C}$. The edge of a hand spinner is formed by:\n• the arc of the circle centred at $A$, bounded by the midpoints of the sides $[FA]$ and $[AB]$, outside the hexagon;\n• the arc of the circle centred at $B$, bounded by the midpoints of the sides $[AB]$ and $[BC]$, inside the hexagon;\n• and so on, alternating arcs outside and inside the hexagon, until the curve closes up at the midpoint of $[FA]$.\nDetermine the length of the outline of the hand spinner, given that that of the circle $\\mathcal{C}$ is $10$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2018_p1_fig.png",
+          "problem_orig": "Soit $ABCDEF$ un hexagone régulier inscrit à un cercle $\\mathcal{C}$. Le bord d'un hand spinner est formé :\n• De l'arc du cercle centré en $A$, limité aux milieux des côtés $[FA]$ et $[AB]$, extérieur à l'hexagone ;\n• De l'arc du cercle centré en $B$, limité aux milieux des côtés $[AB]$ et $[BC]$, intérieur à l'hexagone ;\n• Et ainsi de suite, en alternant les arcs extérieurs et intérieurs à l'hexagone, jusqu'à ce que la courbe se referme au milieu de $[FA]$.\nDéterminer la longueur du contour du hand spinner, sachant que celle du cercle $\\mathcal{C}$ est de $10$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "Mathilde has, in unlimited quantity, pieces of the two shapes shown opposite, where the small squares have side $1$. She wants to use them to cover rectangles, without overhang, overlap or hole.\n(a) Is this possible in the case of a $15 \\times 9$ rectangle?\n(b) Is this possible in the case of a $15 \\times 10$ rectangle?\n(c) Is this possible in the case of a $15 \\times 987$ rectangle?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2018_p2_fig.png",
+          "problem_orig": "Mathilde dispose, en quantité non limitée, de pièces des deux formes ci-contre, où les petits carrés sont de côté $1$. Elle souhaite en utiliser pour recouvrir des rectangles, sans débordement, ni superposition, ni trou.\n(a) Est-ce possible dans le cas d'un rectangle $15 \\times 9$ ?\n(b) Est-ce possible dans le cas d'un rectangle $15 \\times 10$ ?\n(c) Est-ce possible dans le cas d'un rectangle $15 \\times 987$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be an equilateral triangle of side $8$ and $M$ an arbitrary point of $(BC)$. The circle with centre $B$ through $M$ meets $[AB]$ at $N$ and the circle with centre $C$ through $M$ meets $[AC]$ at $P$.\n(a) If $M$ is the midpoint of $[BC]$, determine the total length of the closed line $ANMP$ formed by two segments and two arcs of circles.\n(b) Show that the total length of $ANMP$ does not depend on the position of the point $M$ on $(BC)$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2018_p3_fig.png",
+          "problem_orig": "Soit un triangle équilatéral $ABC$ de côté $8$ et un point $M$ quelconque de $(BC)$. Le cercle de centre $B$ passant par $M$ coupe $[AB]$ en $N$ et le cercle de centre $C$ passant par $M$ coupe $[AC]$ en $P$.\n(a) Si $M$ est le milieu de $[BC]$, déterminer la longueur totale de la ligne fermée $ANMP$ formée de deux segments et de deux arcs de cercle.\n(b) Montrer que la longueur totale de $ANMP$ ne dépend pas de la position du point $M$ sur $(BC)$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "Below, the notation $\\overline{xy\\ldots z}$ represents the number whose digits are, from left to right, $x$, $y$, $\\ldots$ and $z$; in the case of three digits, therefore, $\\overline{xyz} = 100x + 10y + z$.\nDetermine all three-digit numbers $\\overline{abc}$ such that\n$$\\overline{abc} = \\overline{ab} + \\overline{bc} + \\overline{ca} + \\overline{ba} + \\overline{cb} + \\overline{ac}$$\n(for example, $152$ is not such a number since $\\overline{152} \\neq \\overline{15} + \\overline{52} + \\overline{21} + \\overline{51} + \\overline{25} + \\overline{12}$).",
+          "problem_orig": "Ci-dessous, la notation $\\overline{xy\\ldots z}$ représente le nombre dont les chiffres sont, de gauche à droite, $x$, $y$, $\\ldots$ et $z$; dans le cas de trois chiffres, donc, $\\overline{xyz} = 100x + 10y + z$.\nDéterminer tous les nombres de trois chiffres $\\overline{abc}$ tels que\n$$\\overline{abc} = \\overline{ab} + \\overline{bc} + \\overline{ca} + \\overline{ba} + \\overline{cb} + \\overline{ac}$$\n(par exemple, $\\overline{152}$ n'est pas un tel nombre puisque $\\overline{152} \\neq \\overline{15} + \\overline{52} + \\overline{21} + \\overline{51} + \\overline{25} + \\overline{12}$).",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 5,
+          "problem": "What is the units digit of the sum of the cubes of the natural numbers $1, 2, 3, \\ldots, 2018$?",
+          "problem_orig": "Quel est le chiffre des unités de la somme des cubes des naturels $1, 2, 3, \\ldots, 2018$ ?",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "A trismegistic number is a natural number all of whose digits are distinct and such that the difference between two consecutive digits (the larger minus the smaller) is always at least $3$. Thus, the number $847$ is trismegistic since its three digits are distinct, $8 - 4 \\geq 3$ and $7 - 4 \\geq 3$.\n(a) What is the largest four-digit trismegistic number?\n(b) What is the largest trismegistic number?",
+          "problem_orig": "Un nombre trismégiste est un nombre naturel dont tous les chiffres sont distincts et tel que la différence entre deux chiffres consécutifs (le plus grand moins le plus petit) vaut toujours au moins $3$. Ainsi, le nombre $847$ est trismégiste puisque ses trois chiffres sont distincts, $8 - 4 \\geq 3$ et $7 - 4 \\geq 3$.\n(a) Quel est le plus grand nombre trismégiste à quatre chiffres ?\n(b) Quel est le plus grand nombre trismégiste ?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 2,
+          "problem": "The convex quadrilateral $ABCD$ is a kite: the line $BD$ is an axis of symmetry of the quadrilateral. The lines $AB$ and $CD$ meet at $E$, as in the (inaccurate) figure opposite. The angle $\\angle AED$ measures $20^\\circ$ and the angle $\\angle BAD$ measures $40^\\circ$. If $|AE|$ measures $2019$, what does $|CD|$ measure?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2019_p2_fig.png",
+          "problem_orig": "Le quadrilatère convexe $ABCD$ est un cerf-volant: la droite $BD$ est un axe de symétrie du quadrilatère. Les droites $AB$ et $CD$ se coupent en $E$, comme sur la figure (inexacte) ci-contre. L'angle $\\angle AED$ mesure $20^\\circ$ et l'angle $\\angle BAD$ mesure $40^\\circ$. Si $|AE|$ mesure $2019$, combien mesure $|CD|$?",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 3,
+          "problem": "Dominique has a set of $28$ dominoes, comprising all the combinations of $2$ numbers between $0$ and $6$ (represented by dots). Here are some examples of dominoes (top row of the figure).\nDominique takes $6$ dominoes out of the set and assembles them into $2$ triangles of $3$ dominoes, as in the figure below (bottom row of the figure).\nHer construction respects the following rules:\n• two dominoes may touch at their corners only if the squares in contact contain the same number;\n• the sum of all the numbers of each of the triangles is the same;\n• no number appears more than $2$ times in total on the $6$ dominoes.\nWhich $6$ dominoes can Dominique have taken out? Give all the possible choices.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2019_p3_fig.png",
+          "problem_orig": "Dominique dispose d'un jeu de $28$ dominos, comprenant toutes les combinaisons de $2$ nombres compris entre $0$ et $6$ (représentés par des points). Voici des exemples de dominos :\nDominique sort $6$ dominos du jeu et les assemble en $2$ triangles de $3$ dominos, comme sur la figure ci-dessous :\nSa construction respecte les règles suivantes :\n• deux dominos ne peuvent se toucher par les coins que si les cases en contact contiennent le même nombre;\n• la somme de tous les nombres de chacun des triangles est la même;\n• aucun nombre n'est présent plus de $2$ fois au total sur les $6$ dominos.\nQuels peuvent être les $6$ dominos sortis par Dominique ? Indiquer tous les choix possibles.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 4,
+          "problem": "In an orthonormal coordinate system of the plane, the coordinates of the points $A(7, 5)$, $B(4, 6)$, $C(0, 2)$ and of the variable point $D(k, 0)$ are given. Determine all values of $k$ (not necessarily integers), between $0$ and $7$, for which the area of the quadrilateral $ABCD$ is equal to $23$.",
+          "problem_orig": "Dans un repère orthonormé du plan, on donne les coordonnées des points $A(7, 5)$, $B(4, 6)$, $C(0, 2)$ ainsi que du point variable $D(k, 0)$. Déterminer toutes les valeurs de $k$ (pas nécessairement entières), comprises entre $0$ et $7$, pour lesquelles l'aire du quadrilatère $ABCD$ est égale à $23$.",
+          "orig_lang": "fr"
+        },
+        {
+          "number": 5,
+          "problem": "The nine-key keypad shown opposite (keys $1, 2, 3$ / $4, 5, 6$ / $A, B, C$) is used to enter the entry code of a building, which consists of a letter followed by a three-digit number whose digits may or may not be distinct.\n(a) How many codes begin with $B$?\n(b) How many codes are there?\n(c) How many codes are there without the digit $1$?\n(d) How many codes contain the digit $1$ at least once?\n(e) How many codes have three distinct digits?\n(f) How many codes have exactly two identical digits?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/bemi_2019_p5_fig.png",
+          "problem_orig": "Le clavier de neuf touches représenté ci-contre permet de composer le code d'entrée d'un immeuble, qui est formé d'une lettre suivie d'un nombre à trois chiffres distincts ou non.\n(a) Combien y a-t-il de codes commençant par $B$?\n(b) Combien y a-t-il de codes?\n(c) Combien y a-t-il de codes sans le chiffre $1$?\n(d) Combien y a-t-il de codes comportant au moins une fois le chiffre $1$?\n(e) Combien y a-t-il de codes comportant trois chiffres distincts?\n(f) Combien y a-t-il de codes comportant exactement deux chiffres identiques?",
+          "orig_lang": "fr"
+        }
+      ]
+    }
+  ]
+}
