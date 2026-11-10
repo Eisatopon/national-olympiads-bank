@@ -1487,6 +1487,512 @@
           "proposer": "buratinogigle"
         }
       ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\dots$ be a sequence of real numbers with the following properties:\n\n(i) there exists a positive integer $N$ such that $a_n = 1$ for all $n \\ge N$;\n\n(ii) for all $n \\ge 2$,\n$$a_n \\le a_{n-1} + 2^{-n} a_{2n}.$$\n\nProve that $a_n > 1 - 2^{-n}$ for every positive integer $n$.",
+          "problem_orig": "已知實數數列 $a_1, a_2, \\dots$ 滿足下列性質：\ni. 存在正整數 $N$ 使得 $a_n = 1$ 對所有 $n \\ge N$ 都成立；\nii. 對所有 $n \\ge 2$ 都有\n$$\na_n \\le a_{n-1} + 2^{-n} a_{2n}.\n$$\n證明：$a_n > 1 - 2^{-n}$ 對所有正整數 $n$ 均成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 2,
+          "problem": "Let $\\triangle P_1P_2P_3$ be an equilateral triangle. For every $n \\ge 4$, Xiao Ming may choose $P_n$ to be either the circumcentre or the orthocentre of $\\triangle P_{n-3}P_{n-2}P_{n-1}$. Find all positive integers $n$ for which Xiao Ming can choose $P_4, \\dots, P_n$ suitably so that $P_n$ is the circumcentre of $\\triangle P_1P_2P_3$.",
+          "problem_orig": "$\\Delta P_1 P_2 P_3$ 為一正三角形。對於所有 $n \\ge 4$, 小明可以選擇 $P_n$ 為 $\\Delta P_{n-3} P_{n-2} P_{n-1}$ 的外心或垂心。試求所有的正整數 $n$, 使得小明可以經由適當地選取 $P_4, \\dots, P_n$, 讓 $P_n$ 為 $\\Delta P_1 P_2 P_3$ 的外心。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 3,
+          "problem": "Let $ABCD$ be a parallelogram with $AC = BC$. A point $P$ is chosen on the line $AB$ so that $B$ lies between $A$ and $P$. The circumcircle of triangle $ACD$ meets the segment $PD$ again at $Q$, and the circumcircle of triangle $APQ$ meets the segment $PC$ again at $R$. Prove that the lines $CD$, $AQ$ and $BR$ are concurrent.",
+          "problem_orig": "設 $ABCD$ 為平行四邊形, 其中 $AC = BC$。在直線 $AB$ 上取一點 $P$, 使得 $B$ 介於 $A, P$ 之間。設三角形 $ACD$ 的外接圓與線段 $PD$ 再交於點 $Q$, 而三角形 $APQ$ 的外接圓與線段 $PC$ 再交於點 $R$。\n證明：三直線 $CD, AQ, BR$ 共點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 4,
+          "problem": "Prove that there are only finitely many quadruples $(a, b, c, n)$ of positive integers satisfying\n$$n! = a^{n-1} + b^{n-1} + c^{n-1}.$$",
+          "problem_orig": "證明只有有限多組正整數 $(a, b, c, n)$ 能使等式\n$$\nn! = a^{n-1} + b^{n-1} + c^{n-1}\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 1,
+          "problem": "In triangle $ABC$, let $B'$ and $C'$ be the midpoints of the sides $AC$ and $AB$, respectively, and let $H$ be the foot of the altitude from $A$. Prove that the circumcircles of triangles $AB'C'$, $BC'H$ and $B'CH$ pass through a common point $I$, and that the line $HI$ bisects the segment $B'C'$.",
+          "problem_orig": "三角形 $ABC$ 中，令點 $B'$, $C'$ 分別為邊 $AC$ 及 $AB$ 的中點，而點 $H$ 為通過頂點 $A$ 的高的垂足。證明：三角形 $AB'C'$，$BC'H$ 及 $B'CH$ 的外接圓共於一點 $I$，且直線 $HI$ 平分線段 $B'C'$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 2,
+          "problem": "Find all integers $n \\ge 1$ for which there exists a pair of positive integers $(a, b)$ such that\n$$\\frac{ab + 3b + 8}{a^2 + b + 3} = n$$\nand no cube of a prime divides $a^2 + b + 3$.",
+          "problem_orig": "找出所有整數 $n \\ge 1$ 使得存在正整數對 $(a, b)$ 有\n$$\n\\frac{ab + 3b + 8}{a^2 + b + 3} = n\n$$\n且沒有任何質數的三次方能整除 $a^2 + b + 3$.",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 3,
+          "problem": "Let $n$ be a positive integer and let $a_1, a_2, \\dots, a_n$ be a permutation of $1, 2, \\dots, n$. Determine the minimum value of\n$$\\sum_{i=1}^{n} \\left\\lfloor \\frac{a_i}{i} \\right\\rfloor.$$\n\n(Here $\\lfloor x \\rfloor$ denotes the greatest integer not exceeding the real number $x$.)",
+          "problem_orig": "給定正整數 $n$。設 $a_1, a_2, \\dots, a_n$ 為 $1, 2, \\dots, n$ 的排列。試確定 $\\sum_{i=1}^{n} \\lfloor \\frac{a_i}{i} \\rfloor$ 的最小值。\n\n註：$\\lfloor x \\rfloor$ 是不超過實數 $x$ 的最大整數。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 1,
+          "problem": "Prove that for every subset $A$ of $\\{1, 2, 3, \\dots, 5^{505}\\}$ with exactly $2022$ elements there exist three elements $a, b, c$ of $A$ such that $a < b < c$ and $c + 2a > 3b$.",
+          "problem_orig": "證明：對於 $\\{1, 2, 3, ..., 5^{505}\\}$ 的任一個恰有 $2022$ 個元素的子集 $A$，必存在三個元素 $a, b, c$ 滿足 $a < b < c$ 和 $c + 2a > 3b$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 2,
+          "problem": "Let $H$ be the orthocentre of triangle $ABC$. Let the lines $BH$ and $AC$ meet at $E$, and the lines $CH$ and $AB$ meet at $F$. Let $X$ be an arbitrary point on the line $BC$. The circumcircle of triangle $BEX$ meets the line $AB$ again at $Y$, and the circumcircle of triangle $CFX$ meets the line $AC$ again at $Z$. Prove that the circumcircle of triangle $AYZ$ is tangent to the line $AH$.",
+          "problem_orig": "設三角形 $ABC$ 的垂心為點 $H$。令直線 $BH$, $AC$ 交於點 $E$，且直線 $CH$, $AB$ 交於點 $F$。設點 $X$ 為直線 $BC$ 上任意一點。設三角形 $BEX$ 的外接圓與直線 $AB$ 再交於點 $Y$，且三角形 $CFX$ 的外接圓與直線 $AC$ 再交於點 $Z$。證明三角形 $AYZ$ 的外接圓與直線 $AH$ 相切。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 3,
+          "problem": "A country has $n$ cities. Every two cities are joined by exactly one road, and every road is one-way. A path from city $X$ to city $Y$ is a sequence of one-way roads along which one can travel from $X$ to $Y$ without visiting any city twice. A collection of paths is called independent if no two of its paths use the same road.\n\nFor a city $X$, let $n_X$ be the number of one-way roads leading out of $X$. For two distinct cities $X$ and $Y$, let $N_{XY}$ be the largest possible number of paths from $X$ to $Y$ in an independent collection of paths. Prove that $N_{XY} = N_{YX}$ if and only if $n_X = n_Y$.",
+          "problem_orig": "某國有 $n$ 座城市, 任兩座城市間都有唯一的一條道路, 且都被規定只能單向行駛。一條從城市 $X$ 到城市 $Y$ 的路徑為一系列的單向道路, 使得一個人可以從 $X$ 經由這些道路移動到 $Y$, 且中間不會重複拜訪相同的城市。一組路徑被稱為獨立的, 若且唯若這其中的任兩條路徑都沒有使用相同的道路。\n\n對於一個城市 $X$, 令 $n_X$ 為由 $X$ 向外的單向道路總數。對於兩個相異城市 $X$ 與 $Y$, 令 $N_{XY}$ 為在所有的獨立路徑組中, 從 $X$ 到 $Y$ 路徑數的最大可能值。證明: $N_{XY} = N_{YX}$ 若且唯若 $n_X = n_Y$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 6,
+          "paper_label": "Round 2, Quiz 2",
+          "number": 1,
+          "problem": "Let $\\mathbb{R}^+$ be the set of all positive real numbers. Find all functions $f: \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that\n$$f(x + y^2 f(y)) = f(1 + y f(x)) f(x)$$\nfor all positive real numbers $x, y$.",
+          "problem_orig": "令 $\\mathbb{R}^+$ 為全體正實數所成的集合。找出所有函數 $f: \\mathbb{R}^+ \\to \\mathbb{R}^+$ 使得\n$$\nf(x + y^2 f(y)) = f(1 + y f(x)) f(x)\n$$\n對所有正實數 $x, y$ 恆成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 6,
+          "paper_label": "Round 2, Quiz 2",
+          "number": 2,
+          "problem": "There are $2022$ distinct lattice points in the plane. Let $I$ be the number of pairs of these points whose distance is exactly $1$. Find the maximum possible value of $I$.\n\n(Note: a lattice point is a point whose $x$- and $y$-coordinates are both integers.)",
+          "problem_orig": "平面上有 2022 個相異格子點。令 $I$ 為這些點中，有幾對點之間的距離恰為 1 的點對數量。求 $I$ 的最大可能值。\n\n註：格子點為 $x$ 座標與 $y$ 座標皆為整數的點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 6,
+          "paper_label": "Round 2, Quiz 2",
+          "number": 3,
+          "problem": "Let $O$ and $H$ be the circumcentre and the orthocentre of triangle $ABC$, and suppose that $OH$ is parallel to $BC$. Let $AH$ meet the circumcircle of triangle $ABC$ again at $X$ ($X \\ne A$), and let $XB$ and $XC$ meet $OH$ at $Y$ and $Z$, respectively. Let $P$ be the projection of $Y$ onto $AB$ and $Q$ the projection of $Z$ onto $AC$. Prove that $PQ$ bisects the segment $BC$.",
+          "problem_orig": "設三角形 $ABC$ 的外心為 $O$，垂心為 $H$，並且 $OH$ 與 $BC$ 平行。設 $AH$ 與三角形 $ABC$ 的外接圓再交於點 $X$ ($X \\neq A$)，並設 $XB, XC$ 分別與 $OH$ 交於點 $Y, Z$。令 $P$ 為 $Y$ 對 $AB$ 的投影點，$Q$ 為 $Z$ 對 $AC$ 的投影點。證明 $PQ$ 平分線段 $BC$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 6,
+          "paper_label": "Round 2, Quiz 2",
+          "number": 4,
+          "problem": "Let $p, q$ be coprime positive integers and, for $i = 1, 2, \\dots, q-1$, let $f(i)$ be the remainder of $p \\cdot i$ upon division by $q$. The number $i$ is called large if $f(i)$ is the largest of $f(1), f(2), \\dots, f(i)$, and small if $f(i)$ is the smallest of $f(1), f(2), \\dots, f(i)$. Note that $1$ is both large and small.\n\nLet $a, b$ be given positive integers. Suppose that among $1, 2, \\dots, q-1$ there are $a$ large numbers and $b$ small numbers. Find the smallest possible value of $q$.",
+          "problem_orig": "考慮兩互質的正整數 $p, q$，並且對於 $i = 1, 2, \\dots, q-1$，定義 $f(i)$ 為 $p \\cdot i$ 除以 $q$ 的餘數。若 $f(i)$ 為 $f(1), f(2), \\dots, f(i)$ 之間的最大數，則稱 $i$ 為大數；但若 $f(i)$ 為 $f(1), f(2), \\dots, f(i)$ 之間的最小數，則稱 $i$ 為小數。注意到 1 同時為大數及小數。\n給定兩個正整數 $a, b$。已知在 $1, 2, \\dots, q-1$ 之中有 $a$ 個大數及 $b$ 個小數，試求 $q$ 的最小可能值。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. Let $S$ be the set of points in the coordinate plane whose $x$- and $y$-coordinates are non-negative integers less than $2n$ (so $S$ contains $4n^2$ points). Let $\\mathcal{F}$ be a set of $n^2$ quadrilaterals such that all vertices of each quadrilateral lie in $S$ and every point of $S$ is a vertex of one of the quadrilaterals in $\\mathcal{F}$. Find the largest possible value of the sum of the areas of all $n^2$ quadrilaterals in $\\mathcal{F}$.",
+          "problem_orig": "給定正整數 $n$。設 $S$ 為坐標平面上 $x$ 坐標及 $y$ 坐標皆小於 $2n$ 的非負整數的點所成的集合 (所以 $S$ 共包含 $4n^2$ 個點)。假設 $\\mathcal{F}$ 為 $n^2$ 個四邊形所成的集合, 其中每個四邊形的所有頂點都在 $S$ 內, 並且 $S$ 裡的每個點皆是 $\\mathcal{F}$ 中其中一個四邊形的頂點。試求 $\\mathcal{F}$ 內所有 $n^2$ 個四邊形的面積總和的最大可能值。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 2,
+          "problem": "A non-negative real number is written in each cell of a $100 \\times 100$ chessboard. The board is called balanced if the numbers in each column sum to $1$ and the numbers in each row sum to $1$. Find the largest positive real number $x$ such that in every balanced board one can choose $100$ cells, no two in the same column or the same row, all of whose numbers are at least $x$.",
+          "problem_orig": "在一個 $100 \\times 100$ 格西洋棋盤的每一格內填入一個非負實數。我們稱這個棋盤是平衡的, 若且唯若該棋盤上每一直排的數字總和都是 1, 且每一橫列的數字總和也都是 1。求最大的正實數 $x$, 使得在任何一個平衡棋盤中, 我們都能挑出 100 個格子, 滿足任兩個格子都在不同直排且不同橫列, 並且這些格子裡的數字都不小於 $x$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 3,
+          "problem": "Let $\\omega$ be the circumcircle of triangle $ABC$ and let $\\Omega_A$ be its excircle tangent to the side $BC$. Let $X$ and $Y$ be the intersection points of $\\omega$ and $\\Omega_A$. Let $P$ be the projection of $A$ onto the tangent to $\\Omega_A$ at $X$, and let $Q$ be the projection of $A$ onto the tangent to $\\Omega_A$ at $Y$. The tangent at $P$ to the circumcircle of triangle $APX$ and the tangent at $Q$ to the circumcircle of triangle $AQY$ meet at $R$. Prove that the lines $AR$ and $BC$ are perpendicular.",
+          "problem_orig": "設三角形 $ABC$ 的外接圓為 $\\omega$, 而其切於 $BC$ 邊的旁切圓為 $\\Omega_A$。令 $\\omega$ 與 $\\Omega_A$ 的交點為 $X$ 和 $Y$。設 $P$ 為 $A$ 對 $\\Omega_A$ 在點 $X$ 的切線的投影點, 而 $Q$ 為 $A$ 對 $\\Omega_A$ 在點 $Y$ 的切線的投影點。設三角形 $APX$ 在點 $P$ 的切線, 及三角形 $AQY$ 在點 $Q$ 的切線在點 $R$ 相交。\n證明直線 $AR$ 與 $BC$ 互相垂直。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\dots, a_n$ ($n \\ge 2$) be positive real numbers with $a_1 + a_2 + \\dots + a_n = 1$. Prove that\n$$\\sum_{k=2}^{n} \\frac{a_k}{1 - a_k} (a_1 + a_2 + \\dots + a_{k-1})^2 < \\frac{1}{3}.$$",
+          "problem_orig": "令 $a_1, a_2, \\dots, a_n$ 為滿足 $a_1 + a_2 + \\dots + a_n = 1$ 的正實數 ($n \\ge 2$)。證明：\n$$\n\\sum_{k=2}^{n} \\frac{a_k}{1 - a_k} (a_1 + a_2 + \\dots + a_{k-1})^2 < \\frac{1}{3}\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 2,
+          "problem": "Let $n$ and $k$ be positive integers with $n > k \\ge 1$. There are $2n+1$ students standing in a circle. For each student, his $2k$ neighbours are the $k$ students closest to him on his left and the $k$ students closest to him on his right. Exactly $n+1$ of the students are girls. Prove that there is a girl at least $k$ of whose $2k$ neighbours are girls.",
+          "problem_orig": "令 $n$ 與 $k$ 為滿足 $n > k \\ge 1$ 的正整數。有 $2n+1$ 位學生站成一圈。對於每位學生, 他的 $2k$ 位鄰居, 指的是他左手邊離他最近的 $k$ 位同學與右手邊離他最近的 $k$ 位同學。\n已知學生中恰有 $n+1$ 位女生。證明：存在一個女生, 她的 $2k$ 位鄰居中有至少 $k$ 位女生。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 3,
+          "problem": "Let $H$ and $\\Gamma$ be the orthocentre and the circumcircle of the acute triangle $ABC$, and let $M$ be the midpoint of the side $BC$. A point $D$ is chosen on the minor arc $BC$ of $\\Gamma$ such that $\\angle BAD = \\angle MAC$, and points $E$ on $\\Gamma$ and $F$ on the line $BC$ are chosen such that $DE \\perp AM$ and $DF \\perp BC$. Let $N$ be the intersection of the lines $HF$ and $AM$, and let $R$ be the reflection of $H$ in $N$.\n\nProve that $\\angle AER + \\angle DFR = 180^\\circ$.",
+          "problem_orig": "設 $H, \\Gamma$ 分別為銳角三角形 $ABC$ 的垂心與外接圓, $M$ 為邊 $BC$ 的中點。在 $\\Gamma$ 的劣弧 $BC$ 上取一點 $D$ 使得 $\\angle BAD = \\angle MAC$, 分別在 $\\Gamma$ 及直線 $BC$ 上取兩點 $E, F$ 使得 $DE$ 及 $DF$ 分別垂直於 $AM$ 及 $BC$。令 $N$ 為直線 $HF$ 及 $AM$ 的交點, $R$ 為 $H$ 關於 $N$ 的對稱點。\n\n證明：$\\angle AER + \\angle DFR = 180^\\circ$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 4,
+          "problem": "Let $\\mathbb{N}$ be the set of positive integers and $\\mathbb{N}^2$ the set of ordered pairs of positive integers. Among all functions from $\\mathbb{N}^2$ to $\\mathbb{N}$, define good functions of order $k$, for all non-negative integers $k$, recursively as follows:\n\n(i) The functions $f(a,b) = a$ and $f(a,b) = b$ are good functions of order $0$.\n\n(ii) If $f(a,b)$ and $g(a,b)$ are good functions of orders $p$ and $q$, respectively, then $\\gcd(f(a,b), g(a,b))$ is a good function of order $p+q$, and $f(a,b)\\,g(a,b)$ is a good function of order $p+q+1$.\n\nProve that if, for some positive integer $n \\ge 3$, $f(a,b)$ is a good function of order $k$ with $k \\le \\binom{n}{3}$, then there exist a positive integer $t \\le \\binom{n}{2}$ and $t$ pairs of non-negative integers $(x_1, y_1), \\dots, (x_t, y_t)$ such that\n$$f(a,b) = \\gcd\\left(a^{x_1} b^{y_1}, \\dots, a^{x_t} b^{y_t}\\right).$$",
+          "problem_orig": "設 $\\mathbb{N}$ 代表所有正整數的集合，$\\mathbb{N}^2$ 代表正整數數對的集合。在所有從 $\\mathbb{N}^2$ 到 $\\mathbb{N}$ 的函數中，對於所有非負整數 $k$，我們遞迴定義 $k$ 級好函數如下：\n(i) 函數 $f(a,b) = a$、函數 $f(a,b) = b$ 都是 0 級好函數。\n(ii) 若 $f(a,b), g(a,b)$ 分別為 $p$ 級、$q$ 級好函數，則 $\\text{gcd}(f(a,b), g(a,b))$ 為 $(p+q)$ 級好函數，且 $f(a,b)g(a,b)$ 為 $(p+q+1)$ 級好函數。\n證明：若對於某個正整數 $n \\ge 3$，$f(a,b)$ 是一個 $k$ 級好函數，其中 $k \\le C_3^n$，則存在正整數 $t \\le C_2^n$ 與 $t$ 個非負整數對 $(x_1, y_1), \\dots, (x_t, y_t)$ 使得\n$$\nf(a,b) = \\text{gcd}(a^{x_1}b^{y_1}, \\dots, a^{x_t}b^{y_t})\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 1,
+          "problem": "Let $\\mathbb{R}$ be the set of all real numbers. Determine all injective functions $f: \\mathbb{R} \\to \\mathbb{R}$ such that\n$$(f(a) - f(b))(f(b) - f(c))(f(c) - f(a)) = f(ab^2 + bc^2 + ca^2) - f(a^2b + b^2c + c^2a)$$\nfor all real numbers $a, b, c$.",
+          "problem_orig": "令 $\\mathbb{R}$ 代表所有實數所成的集合。試確定所有單射函數 $f: \\mathbb{R} \\to \\mathbb{R}$ 使得\n$$\n(f(a) - f(b))(f(b) - f(c))(f(c) - f(a)) = f(ab^2 + bc^2 + ca^2) - f(a^2b + b^2c + c^2a)\n$$\n對所有實數 $a, b, c$ 都成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 2,
+          "problem": "Let $m > 1$ be a positive integer. A mouse wants to go from the bottom-left cell $a$ of a $3m \\times 3m$ chessboard to the top-right cell $b$. In each step the mouse moves to the cell immediately to the right of or immediately above its current cell. However, some cells of the board contain glue traps; if the mouse steps onto a glue trap it gets stuck and cannot move any more.\n\nFor a set $X$ of cells of the board, we say that $X$ blocks the mouse if, when glue traps are placed on all cells of $X$, the mouse cannot get from $a$ to $b$. We say that $X$ is minimal if $X$ blocks the mouse but, after any one cell is removed from $X$, it no longer blocks the mouse. Prove that:\n\n(i) every minimal set that blocks the mouse has at most $3m^2$ cells;\n\n(ii) there exists a minimal set that blocks the mouse and has at least $3m^2 - 3m$ cells.",
+          "problem_orig": "令 $m > 1$ 為一正整數。有一隻老鼠要從 $3m \\times 3m$ 西洋棋盤的最左下角格子 $a$ 跳到最右上角格子 $b$。老鼠每一次可以跑到牠所在位子右方一格或是上方一格。然而，棋盤上有一些格子放有黏鼠板，如果老鼠跑到黏鼠板上就會被黏住，無法再移動。\n對於由棋盤上的格子所組成的集合 $X$，我們稱 $X$ 擋住老鼠，若且唯若當 $X$ 的格子都被放有黏鼠板時，老鼠無法從 $a$ 跳到 $b$。我們稱 $X$ 最小，若且唯若 $X$ 擋住老鼠、但移除 $X$ 的任何一格後都不能擋住老鼠。證明：\n(i) 任何能擋住老鼠的最小集合的格數不大於 $3m^2$。\n(ii) 證明存在格數不小於 $3m^2 - 3m$，且能擋住老鼠的最小集合。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 3,
+          "problem": "Determine all integers $n \\ge 3$ with the following property: for every convex $n$-gon all of whose sides have length $1$, an equilateral triangle of side length $1$ can be placed in the region bounded by the $n$-gon.\n\n(Note: the region bounded by a convex polygon consists of its interior and its boundary.)",
+          "problem_orig": "試決定滿足下述性質的所有正整數 $n \\ge 3$：對每一個各邊長皆為 1 的凸 $n$ 邊形，都可以在其圍成的區域中放入一個邊長為 1 的正三角形。\n\n(註：一個凸多邊形所圍成的區域，係指其內部及其邊。)",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 4,
+          "problem": "Let $a_1, a_2, a_3, \\dots$ be an infinite sequence of positive integers such that $a_{n+2m}$ divides $a_n + a_{n+m}$ for all positive integers $n, m$. Prove that the sequence is eventually periodic, that is, there exist positive integers $N$ and $d$ such that $a_n = a_{n+d}$ for all $n > N$.",
+          "problem_orig": "設 $a_1, a_2, a_3, \\dots$ 為無窮正整數數列，且對所有正整數 $n, m$，都有 $a_{n+2m}$ 整除 $a_n + a_{n+m}$ 這個性質。證明這個數列最終有週期性，也就是說，存在正整數 $N$ 和 $d$，使得對於所有 $n > N$，都有 $a_n = a_{n+d}$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 11,
+          "paper_label": "Round 3, Mock IMO, Day 1",
+          "number": 1,
+          "problem": "A quadrilateral $ABCD$ is inscribed in a circle $\\Omega$. The tangent to $\\Omega$ at $D$ meets the rays $BA$ and $BC$ at $E$ and $F$, respectively. A point $T$ is chosen inside triangle $ABC$ so that $TE \\parallel CD$ and $TF \\parallel AD$. Let $K \\ne D$ be the point on the segment $DF$ such that $TD = TK$. Prove that the lines $AC$, $DT$ and $BK$ are concurrent.",
+          "problem_orig": "設四邊形 $ABCD$ 內接於一圓 $\\Omega$。過點 $D$ 與 $\\Omega$ 相切的直線分別交射線 $BA$, $BC$ 於點 $E$, $F$。於三角形 $ABC$ 內部選取一點 $T$ 使得 $TE \\parallel CD$ 且 $TF \\parallel AD$。設點 $K$ 異於 $D$ 且落在線段 $DF$ 上，滿足 $TD = TK$。\n試證：直線 $AC$, $DT$, $BK$ 三線共點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 11,
+          "paper_label": "Round 3, Mock IMO, Day 1",
+          "number": 2,
+          "problem": "Let $n, s, t$ be positive integers and let $A_1, \\dots, A_s, B_1, \\dots, B_t$ be (not necessarily distinct) subsets of $\\{1, 2, \\dots, n\\}$. For any subset $S$ of $\\{1, \\dots, n\\}$, let $f(S)$ be the number of $i \\in \\{1, \\dots, s\\}$ with $S \\subseteq A_i$, and let $g(S)$ be the number of $j \\in \\{1, \\dots, t\\}$ with $S \\subseteq B_j$. Suppose that $f(\\{x, y\\}) = g(\\{x, y\\})$ for all $1 \\le x < y \\le n$. Prove that if $t < n$, then there exists $1 \\le x \\le n$ such that $f(\\{x\\}) \\ge g(\\{x\\})$.",
+          "problem_orig": "令 $n, s, t$ 為三個正整數, 並令 $A_1, \\dots, A_s, B_1, \\dots, B_t$ 為 $\\{1, 2, \\dots, n\\}$ 的子集 (不必然相異)。對於 $\\{1, \\dots, n\\}$ 的任何子集 $S$, 我們定義 $f(S)$ 為滿足 $S \\subseteq A_i$ 的 $i \\in \\{1, \\dots, s\\}$ 的數量; $g(S)$ 為滿足 $S \\subseteq B_j$ 的 $j \\in \\{1, \\dots, t\\}$ 的數量。假設對任意的 $1 \\le x < y \\le n$, $f(\\{x, y\\}) = g(\\{x, y\\})$ 都成立.\n證明：若 $t < n$, 則必存在 $1 \\le x \\le n$ 使得 $f(\\{x\\}) \\ge g(\\{x\\})$.",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 11,
+          "paper_label": "Round 3, Mock IMO, Day 1",
+          "number": 3,
+          "problem": "Find all integers $n \\ge 2$ with the following property: any $n$ pairwise distinct integers whose sum is not divisible by $n$ can be rearranged as $a_1, a_2, \\dots, a_n$ so that $n$ divides $1 \\cdot a_1 + 2 \\cdot a_2 + \\dots + n \\cdot a_n$.",
+          "problem_orig": "找出所有符合後列條件的整數 $n \\ge 2$：所有總和不被 $n$ 整除、兩兩相異的 $n$ 個整數，都可以被重新排列為 $a_1, a_2, \\dots, a_n$，使得 $n$ 整除 $1 \\cdot a_1 + 2 \\cdot a_2 + \\dots + n \\cdot a_n$。",
+          "orig_lang": "zh"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Round 1, Quiz 1",
+          "number": 1,
+          "problem": "Let $x$ and $y$ be positive real numbers such that $x + y = 2$. Prove that\n$$2 + xy(1 + xy) \\ge 2x^y + 2y^x.$$",
+          "problem_orig": "令 $x$ 與 $y$ 為滿足 $x + y = 2$ 的正實數。證明\n$$\n2 + xy(1 + xy) \\geq 2x^y + 2y^x.\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 1,
+          "paper_label": "Round 1, Quiz 1",
+          "number": 2,
+          "problem": "Let $n \\ge 5$ be a positive integer. There are $n$ stars, with values $1$ to $n$, respectively. Anya and Becky play a game. Before the game starts, Anya places the $n$ stars in a row in any order she wishes. Then, starting with Becky, the players alternately take the left-most or the right-most star of the row. After all the stars have been taken, the player with the higher total value of stars wins; if the totals are equal, the game ends in a draw. Find all $n$ for which Becky has a winning strategy.",
+          "problem_orig": "令 $n \\ge 5$ 為一正整數。有價值為 1 到 $n$ 的星星各一枚。安妮亞和貝琪玩一個遊戲。\n在遊戲開始時，安妮亞先將這 $n$ 枚星星依照她想要的順序，在桌面上排成一橫排。\n接著，從貝琪開始，兩個人輪流取走桌面上最左邊或最右邊的一枚星星。當所有星星都被取走時，取得的星星價值總和較高的人獲勝；若總和相同，則兩人平手。試求所有讓貝琪有必勝法的 $n$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 1,
+          "paper_label": "Round 1, Quiz 1",
+          "number": 3,
+          "problem": "Let $ABCDE$ be a convex pentagon such that $\\angle ABC = \\angle AED = 90^\\circ$. Suppose that the midpoint of $CD$ is the circumcentre of triangle $ABE$. Let $O$ be the circumcentre of triangle $ACD$. Prove that the line $AO$ passes through the midpoint of the segment $BE$.",
+          "problem_orig": "設 $ABCDE$ 是一個凸五邊形，使得 $\\angle ABC = \\angle AED = 90^\\circ$。假設 $CD$ 的中點是三角形 $ABE$ 的外接圓心。令 $O$ 是三角形 $ACD$ 的外接圓心。證明直線 $AO$ 通過線段 $BE$ 的中點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 1,
+          "paper_label": "Round 1, Quiz 1",
+          "number": 4,
+          "problem": "Given a prime number $p$, a set is called $p$-good if it consists of exactly three elements $a, b, c$ with $a + b \\equiv c \\pmod p$. Find all primes $p$ such that the set $\\{1, 2, \\dots, p-1\\}$ can be partitioned into several $p$-good sets.",
+          "problem_orig": "給定任一質數 $p$，當一個集合恰包含三個元素 $a, b, c$ 且 $a + b \\equiv c \\pmod p$，則我們稱這個集合為 $p$-good。\n找出所有質數 $p$，使得 $\\{1, 2, \\dots, p-1\\}$ 可以被全部分割成許多 $p$-good 集合。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 1,
+          "problem": "Fix a finite set $S$ of integers. Is there always a polynomial $f(x)$ with integer coefficients such that, for all integers $x$, $f(x)$ is a perfect square if and only if $x \\in S$?",
+          "problem_orig": "給定一個整數的有限集 $S$，是否總是存在一個整係數多項式 $f(x)$，使得對於所有整數 $x$，$f(x)$ 為完全平方數若且唯若 $x \\in S$？",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 2,
+          "problem": "A $k$-set is a set with exactly $k$ elements. For a $6$-set $A$ and a collection $\\mathcal{F}$ of $4$-sets, we say that $A$ is $\\mathcal{F}$-good if exactly three members $B_1, B_2, B_3$ of $\\mathcal{F}$ are subsets of $A$, and furthermore they satisfy\n$$(A \\setminus B_1) \\cup (A \\setminus B_2) \\cup (A \\setminus B_3) = A.$$\nFind all $n \\ge 6$ for which there exists a collection $\\mathcal{F}$ of $4$-subsets of $\\{1, 2, \\dots, n\\}$ such that every $6$-set $A \\subset \\{1, 2, \\dots, n\\}$ is $\\mathcal{F}$-good.",
+          "problem_orig": "一個$k$-集合為恰有$k$個元素的集合。對於一個6-集合$A$，以及一個由若干個4-集合所組成的集合$\\mathcal{F}$，我們稱$A$是$\\mathcal{F}$-好棒 若且唯若$\\mathcal{F}$中僅有三個元素是$A$的子集，且三個子集$B_1, B_2, B_3$滿足\n$$\n(A \\setminus B_1) \\cup (A \\setminus B_2) \\cup (A \\setminus B_3) = A.\n$$\n試求所有滿足以下條件的 $n \\ge 6$：存在由 $\\{1, 2, \\dots, n\\}$ 的若干個 4-子集所構成的集合 $\\mathcal{F}$，使得對於所有 6-集合 $A \\subset \\{1, 2, \\dots, n\\}$，$A$ 都是 $\\mathcal{F}$-好棒。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 3,
+          "problem": "In the quadrilateral $ABCD$, let $AC$ and $BD$ intersect at $E$, let $AB$ and $CD$ intersect at $F$, and let $AD$ and $BC$ intersect at $G$. Let $W, X, Y, Z$ be the reflections of $E$ in $AB$, $BC$, $CD$, $DA$, respectively. Prove that one of the intersection points of the circles $\\odot(FWY)$ and $\\odot(GXZ)$ lies on the line $FG$.",
+          "problem_orig": "已知四邊形 $ABCD$ 中 $AC, BD$ 交於 $E$, $AB, CD$ 交於 $F$, $AD, BC$ 交於 $G$ 且 $W, X, Y, Z$ 分別是 $E$ 對 $AB, BC, CD, DA$ 的對稱點。證明 $\\odot(FWY), \\odot(GXZ)$ 的其中一個交點在 $FG$ 上。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 2,
+          "paper_label": "Round 1, Quiz 2",
+          "number": 4,
+          "problem": "Let $a_1 < a_2 < a_3 < \\dots$ be positive integers such that $a_{k+1}$ divides $2(a_1 + a_2 + \\dots + a_k)$ for every $k \\ge 1$. Suppose that for infinitely many primes $p$ there exists $k$ such that $p$ divides $a_k$. Prove that for every positive integer $n$ there exists $k$ such that $n$ divides $a_k$.",
+          "problem_orig": "令 $a_1 < a_2 < a_3 < \\dots$ 為正整數數列, 其中每個 $k \\ge 1$, $a_{k+1}$ 都整除 $2(a_1 + a_2 + \\dots + a_k)$。假設對於無窮多個質數 $p$, 存在某個 $k$ 使得 $p$ 整除 $a_k$。證明對於每一個正整數 $n$, 都存在某個 $k$ 使得 $n$ 整除 $a_k$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 1,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral with circumcircle $\\omega$ and circumradius $r$, whose diagonals $AC$ and $BD$ intersect at $P$. Suppose that $AD = DP$. Let $S$ be the foot of the perpendicular from $P$ to the line $AB$, and let $Q$ be the point on the line $SP$ such that $PQ = r$ and $S, P, Q$ lie on the line in this order. Let the line through $A$ perpendicular to $CQ$ and the line through $B$ perpendicular to $DQ$ meet at $E$. Prove that $E$ lies on $\\omega$.",
+          "problem_orig": "設圓內接四邊形 $ABCD$ 的外接圓為 $\\omega$, 半徑為 $r$ 且對角線 $AC$ 和 $BD$ 相交於 $P$。\n假設 $AD = DP$, $S$ 為從 $P$ 到 $AB$ 的垂足而點 $Q$ 位於直線 $SP$ 上, 使得 $PQ = r$ 且 $S, P, Q$ 依序位於直線上。令通過 $A$ 且垂直 $CQ$ 的直線與通過 $B$ 垂直於 $DQ$ 的直線相交於 $E$, 證明 $E$ 位於 $\\omega$ 上。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 2,
+          "problem": "Let $\\mathbb{R}_{>0}$ be the set of positive real numbers. Determine all functions $f: \\mathbb{R}_{>0} \\to \\mathbb{R}_{>0}$ such that\n$$x(f(x) + f(y)) \\ge (f(f(x)) + y) f(y)$$\nfor all $x, y \\in \\mathbb{R}_{>0}$.",
+          "problem_orig": "令 $\\mathbb{R}_{>0}$ 為所有正實數所成的集合。試找出所有函數 $f: \\mathbb{R}_{>0} \\to \\mathbb{R}_{>0}$ 滿足：\n$$\nx(f(x) + f(y)) \\geq (f(f(x)) + y)f(y)\n$$\n對任意 $x, y \\in \\mathbb{R}_{>0}$ 均成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 3,
+          "paper_label": "Round 1, Mock IMO, Day 1",
+          "number": 3,
+          "problem": "Frieren and a mimic play a game with $113$ treasure chests. At the beginning, all chests are unlocked and contain no gems. Every year, Frieren adds one gem to one of the unlocked chests, and then the mimic acts according to the following rules:\n\n- if only one chest is unlocked, the mimic unlocks all the chests;\n\n- if more than one chest is unlocked, the mimic locks one of the unlocked chests of its choice.\n\nProve that there exists a constant $C > 0$ such that, no matter how the mimic acts, Frieren can guarantee that at the end of every year the numbers of gems in any two chests differ by at most $C$. (Remark: the mimic is not allowed to eat Frieren.)",
+          "problem_orig": "芙莉蓮與寶箱怪用 $113$ 個寶箱玩一場遊戲。遊戲開始時，所有的寶箱都未上鎖且沒有寶石。每一年，芙莉蓮在其中一個未上鎖的寶箱裡增加一顆寶石，接著寶箱怪依據以下規則行動：\n- 如果只剩一個寶箱未上鎖，則將所有寶箱解鎖；\n- 如果多於一個寶箱未上鎖，則寶箱怪從未上鎖的寶箱中擇一上鎖。\n試證：存在常數 $C > 0$，使得不論寶箱怪如何行動，芙莉蓮都總是能保證在任意年結束時，任兩個寶箱內的寶石數量相差不超過 $C$。（備註：寶箱怪不可以吃掉芙莉蓮。）",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 1,
+          "problem": "Determine all pairs $(a, p)$ of positive integers with $p$ prime such that $p^a + a^4$ is a perfect square.",
+          "problem_orig": "找出所有 $p$ 為質數的正整數數對 $(a, p)$，使得 $p^a + a^4$ 為完全平方數。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 2,
+          "problem": "Let $m$ and $n$ be integers greater than $1$. In each cell of an $m \\times n$ grid lies a coin with its tails side up. A move consists of the following steps, in order:\n\n(1) select a $2 \\times 2$ square in the grid;\n\n(2) flip the coins in its top-left and bottom-right cells;\n\n(3) flip the coin in either its top-right or its bottom-left cell (one of the two).\n\nDetermine all pairs $(m, n)$ for which it is possible that, after finitely many moves, every coin shows heads.",
+          "problem_orig": "令 $m$ 與 $n$ 為大於 1 的正整數。在 $m \\times n$ 方格紙上的每一格都有一枚背面向上的硬幣。每一步，我們依次進行以下動作：\n(1) 選擇一個 $2 \\times 2$ 的區域；\n(2) 將該區域左上角與右下角的硬幣翻面；\n(3) 將該區域左下角與右上角的硬幣擇一翻面。\n\n試求所有 $(m, n)$，使得我們能透過有限步將硬幣全部翻成正面。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 4,
+          "paper_label": "Round 1, Mock IMO, Day 2",
+          "number": 3,
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcircle $\\omega$ and circumcentre $O$. Points $D \\ne B$ and $E \\ne C$ lie on $\\omega$ such that $BD \\perp AC$ and $CE \\perp AB$. Let $CO$ meet $AB$ at $X$, and let $BO$ meet $AC$ at $Y$. Prove that the circumcircles of triangles $BXD$ and $CYE$ have a common point on the line $AO$.",
+          "problem_orig": "設 $\\triangle ABC$ 為銳角三角形，且其外接圓為 $\\omega$，圓心 $O$。令點 $D \\neq B$ 和 $E \\neq C$ 位於 $\\omega$ 上，使得 $BD \\perp AC$ 和 $CE \\perp AB$ 且 $CO$ 與 $AB$ 相交於 $X$，$BO$ 與 $AC$ 相交於 $Y$。證明 $\\triangle BXD$ 和 $\\triangle CYE$ 的外接圓在直線 $AO$ 上有共同交點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 5,
+          "paper_label": "Round 2, Quiz 1",
+          "number": 1,
+          "problem": "Define the Fibonacci numbers by $F_0 = 0$, $F_1 = 1$, $F_2 = 1$ and $F_{n+2} = F_{n+1} + F_n$ for all positive integers $n$. Prove that there exists a positive integer $N$ with the following property: every non-constant arithmetic progression of positive integers of length $N$ contains a term which, when written as a sum of Fibonacci numbers, requires at least $2024$ of them (Fibonacci numbers may be repeated).",
+          "problem_orig": "定義費氏數: $F_0 = 0, F_1 = 1, F_2 = 1$, 且 $F_{n+2} = F_{n+1} + F_n$ 對所有正整數 $n$ 均成立。\n證明存在一個正整數 $N$ 滿足下列性質：對於任意非常數的、長度為 $N$ 的正整數等差數列, 其中必有一項, 當其寫成若干個費氏數之和時, 至少需要 2024 個費氏數 (費氏數可重複)。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 5,
+          "paper_label": "Round 2, Quiz 1",
+          "number": 2,
+          "problem": "Find all functions $f: \\mathbb{N} \\to \\mathbb{N}$ such that, for every set $A$ consisting of exactly $2024$ distinct positive integers, the set\n$$S_A := \\{ f^{(k)}(x) \\mid 1 \\le k \\le 2024,\\ x \\in A \\}$$\nalso consists of exactly $2024$ distinct positive integers.\n\nRemark: $f^{(k)}$ denotes the $k$-th iterate of $f$, that is, $f^{(1)}(x) := f(x)$ and $f^{(n+1)}(x) := f(f^{(n)}(x))$ for all $n \\ge 1$.",
+          "problem_orig": "求所有函數 $f: \\mathbb{N} \\rightarrow \\mathbb{N}$, 使得對於所有由 2024 個相異正整數所成的集合 $A$,\n$$\nS_A := \\{f^{(k)}(x) \\mid 1 \\le k \\le 2024,\\ x \\in A\\}\n$$\n亦為一個由 2024 個相異正整數所成集合。\n\n註：$f^{(k)}$ 表 $f$ 的 $k$ 次疊代。換言之，$f^{(1)}(x) := f(x)$ 且對於所有 $n \\ge 1$，$f^{(n+1)}(x) := f(f^{(n)}(x))$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 5,
+          "paper_label": "Round 2, Quiz 1",
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle with circumcentre $O$. A circle $\\Gamma$ is tangent to $OB$ and $OC$ at $B$ and $C$, respectively. Let $D \\ne B$ be a point on $\\Gamma$ with $CB = CD$, let $E$ be the second intersection of $DO$ with $\\Gamma$, and let $F$ be the second intersection of $EA$ with $\\Gamma$. Let $X$ be a point on the line $AC$ such that $XB \\perp BD$. Prove that one half of $\\angle ADF$ is equal to $\\angle BDX$ or to $\\angle BXD$.",
+          "problem_orig": "令 $ABC$ 為一三角形, 其外心為 $O$。圓 $\\Gamma$ 分別與 $OB$ 和 $OC$ 相切於 $B$ 和 $C$。令 $D$ 為 $\\Gamma$ 上異於 $B$ 的一點, 使得 $CB = CD$。令 $E$ 為 $DO$ 和 $\\Gamma$ 異於 $D$ 的交點, 而 $F$ 為 $EA$ 和 $\\Gamma$ 異於 $D$ 的交點。令 $X$ 為 $AC$ 上一點, 使得 $XB \\perp BD$。證明 $\\angle ADF$ 的一半等於 $\\angle BDX$ 或 $\\angle BXD$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 5,
+          "paper_label": "Round 2, Quiz 1",
+          "number": 4,
+          "problem": "For positive integers $n$ and $k \\ge 2$, define $E_k(n)$ as the greatest exponent $r$ such that $k^r$ divides $n!$. Prove that there are infinitely many $n$ such that $E_{10}(n) > E_9(n)$ and infinitely many $m$ such that $E_{10}(m) < E_9(m)$."
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle and let $BPCQ$ be a parallelogram ($P$ not on $BC$). Let $U$ be the intersection of $CA$ and $BP$, let $V$ be the intersection of $AB$ and $CP$, let $X$ be the second intersection of $CA$ with the circumcircle of triangle $ABQ$, and let $Y$ be the second intersection of $AB$ with the circumcircle of triangle $ACQ$. Prove that $BU = CV$ if and only if the lines $AQ$, $BX$ and $CY$ are concurrent.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/twt_2024_d7_p1_fig.png",
+          "problem_orig": "給定三角形 $ABC$。設 $BPCQ$ 為一平行四邊形 ($P$ 不在 $BC$ 上)。令 $U$ 為 $CA$ 與 $BP$ 的交點，$V$ 為 $AB$ 與 $CP$ 的交點，$X$ 為 $CA$ 與三角形 $ABQ$ 的外接圓異於 $A$ 的交點，$Y$ 為 $AB$ 與三角形 $ACQ$ 的外接圓異於 $A$ 的交點。證明 $\\overline{BU} = \\overline{CV}$ 若且唯若 $AQ, BX, CY$ 三線共點。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. Prove that the inequality\n$$n \\sum_{i=1}^{n} \\sum_{j=1}^{n} \\sum_{k=1}^{n} \\frac{3}{a_i a_j + a_j a_k + a_k a_i} \\ge \\left( \\sum_{j=1}^{n} \\sum_{k=1}^{n} \\frac{2}{a_j + a_k} \\right)^2$$\nholds for all positive real numbers $a_1, a_2, \\dots, a_n$.",
+          "problem_orig": "設 $n$ 為正整數。證明：不等式\n$$\nn \\sum_{i=1}^{n} \\sum_{j=1}^{n} \\sum_{k=1}^{n} \\frac{3}{a_i a_j + a_j a_k + a_k a_i} \\ge \\left( \\sum_{j=1}^{n} \\sum_{k=1}^{n} \\frac{2}{a_j + a_k} \\right)^2\n$$\n對任意正實數 $a_1, a_2, \\dots, a_n$ 均成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 7,
+          "paper_label": "Round 2, Mock IMO, Day 1",
+          "number": 3,
+          "problem": "Let $\\mathbb{N}$ be the set of all positive integers. Find all functions $f: \\mathbb{N} \\to \\mathbb{N}$ such that\n$$m f(m) + (f(f(m)) + n)^2 \\ \\text{ divides } \\ 4m^4 + n^2 f(f(n))^2$$\nfor all positive integers $m, n$.",
+          "problem_orig": "令 $\\mathbb{N}$ 為所有正整數所成集合。找出所有的函數 $f: \\mathbb{N} \\to \\mathbb{N}$ 使得對於所有正整數 $m, n$，都有 $mf(m) + (f(f(m)) + n)^2$ 整除 $4m^4 + n^2 f(f(n))^2$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 8,
+          "paper_label": "Round 2, Mock IMO, Day 2",
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. A strictly increasing arithmetic progression $x_0, x_1, \\dots, x_n$ is called an $n$-sequence if there exist positive integers $a_1, a_2, \\dots, a_n, b_1, b_2, \\dots, b_n$ such that\n$$x_0 = a_1 a_2 a_3 \\cdots a_n,\\quad x_1 = b_1 a_2 a_3 \\cdots a_n,\\quad x_2 = b_1 b_2 a_3 \\cdots a_n,\\quad \\dots,\\quad x_n = b_1 b_2 b_3 \\cdots b_n.$$\nDetermine, in terms of $n$, the smallest possible common difference of an $n$-sequence.",
+          "problem_orig": "令 $n$ 為正整數。我們稱一個嚴格遞增的等差數列 $x_0, x_1, \\dots, x_n$ 為 $n$-數列，若且唯若存在正整數 $a_1, a_2, \\dots, a_n, b_1, b_2, \\dots, b_n$，滿足\n$$\nx_0 = a_1 \\times a_2 \\times a_3 \\times \\dots \\times a_n,\n$$\n$$\nx_1 = b_1 \\times a_2 \\times a_3 \\times \\dots \\times a_n,\n$$\n$$\nx_2 = b_1 \\times b_2 \\times a_3 \\times \\dots \\times a_n,\n$$\n$\\vdots$\n$$\nx_n = b_1 \\times b_2 \\times b_3 \\times \\dots \\times b_n.\n$$\n試求所有 $n$-數列的最小可能公差 (以 $n$ 表示)。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 8,
+          "paper_label": "Round 2, Mock IMO, Day 2",
+          "number": 2,
+          "problem": "Joe has a $1 \\times 46^2$ strip of wood consisting of $46^2$ unit squares, labelled $1$ to $46^2$ in order. Joe saws the strip into $N$ pieces, each consisting of some consecutive unit squares, and, without rotating or flipping them, arranges the pieces into a $46 \\times 46$ square such that, if the square in the $i$-th row and $j$-th column carries the label $a_{ij}$, then $a_{ij} - (i + j - 1)$ is divisible by $46$. Find the smallest possible value of $N$.",
+          "problem_orig": "喬老大有一條 $1 \\times 46^2$ 的棟木板，其上有 $46^2$ 個 $1 \\times 1$ 大小的正方格子，依序編號為 1 至 $46^2$ 號。喬老大將這條木板鋸成 $N$ 段，每一段皆為連續編號的若干個格子，並在**不旋轉或翻面**的情況下，用這 $N$ 段木板排出滿足以下條件的 $46 \\times 46$ 方陣：若位於第 $i$ 列第 $j$ 行格子的編號為 $a_{ij}$，則 $a_{ij} - (i + j - 1)$ 被 46 整除。試求 $N$ 的最小可能值。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 8,
+          "paper_label": "Round 2, Mock IMO, Day 2",
+          "number": 3,
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcircle $\\omega$. A circle $\\Gamma$ is internally tangent to $\\omega$ at $A$ and tangent to $BC$ at $D$. Let $AB$ and $AC$ meet $\\Gamma$ again at $P$ and $Q$, respectively. Let $M$ and $N$ be the points on the line $BC$ such that $B$ is the midpoint of $DM$ and $C$ is the midpoint of $DN$. The lines $MP$ and $NQ$ meet at $K$, and they meet $\\Gamma$ again at $I$ and $J$, respectively. The ray $KA$ meets the circumcircle of triangle $IJK$ again at $X \\ne K$. Prove that $\\angle BXP = \\angle CXQ$.",
+          "problem_orig": "令 $ABC$ 是一個銳角三角形，且其外接圓為 $\\omega$。$\\Gamma$ 內切 $\\omega$ 於點 $A$，同時切 $BC$ 於點 $D$。令 $AB$ 和 $AC$ 分別與 $\\Gamma$ 相交於 $P$ 和 $Q$。令 $M$ 和 $N$ 為在直線 $BC$ 上的點，滿足 $B$ 是 $DM$ 的中點，$C$ 是 $DN$ 的中點。直線 $MP$ 和 $NQ$ 交於 $K$，並且再次與 $\\Gamma$ 分別於 $I$ 和 $J$ 相交。已知射線 $KA$ 與三角形 $IJK$ 的外接圓交於 $X \\neq K$。證明 $\\angle BXP = \\angle CXQ$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 1,
+          "problem": "Let $a_1, a_2, \\dots, a_{123}$ be positive integers such that\n\n- $a_1, a_2, \\dots, a_{123}$ is a permutation of $1, 2, \\dots, 123$, and\n\n- $|a_1 - a_2|, |a_2 - a_3|, \\dots, |a_{122} - a_{123}|$ is a permutation of $1, 2, \\dots, 122$.\n\nProve that $\\max(a_1, a_{123}) \\ge 32$.",
+          "problem_orig": "設 $a_1, a_2, \\dots, a_{123}$ 為滿足下列條件的正整數：\n• $a_1, a_2, \\dots, a_{123}$ 是 $1, 2, \\dots, 123$ 的一種排列\n• $|a_1 - a_2|, |a_2 - a_3|, \\dots, |a_{122} - a_{123}|$ 是 $1, 2, \\dots, 122$ 的一種排列\n證明 $\\max(a_1, a_{123}) \\ge 32$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 2,
+          "problem": "Dexter's laboratory has $2024$ robots, each running a program set up by Dexter. One day his naughty sister Dee Dee breaks in and writes an integer from $\\{1, 2, \\dots, 113\\}$ on the forehead of each robot. Each robot sees the numbers on the foreheads of all the other robots (but not its own) and, according to its program, guesses its own number; the robots guess individually and simultaneously. Find the largest positive integer $k$ such that Dexter can set up the programs so that, however the numbers are written, at least $k$ robots guess their own numbers correctly.",
+          "problem_orig": "德克斯特的實驗室裡有 $2024$ 台機器人，每台有德克斯特各自設定好的程式。某天，他調皮搗蛋的姊姊蒂蒂會闖進實驗室，在每個機器人的額頭上寫下一個在 $\\{1, 2, \\dots, 113\\}$ 內的整數。每台機器人此時偵測到除了它自己以外的所有機器人額頭上的數字，並立即依據其程式，各別且同時猜測自己的數字。\n試求最大正整數 $k$，讓德克斯特存在設定程式的方法，使得不論數字如何分布，都至少有 $k$ 台機器人猜對自己的數字。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 3,
+          "problem": "Let $ABC$ be an acute scalene triangle with orthocentre $H$. Let $\\ell_a$ be the line through the reflection of $B$ in $CH$ and the reflection of $C$ in $BH$. The lines $\\ell_b$ and $\\ell_c$ are defined similarly. Suppose that the lines $\\ell_a$, $\\ell_b$ and $\\ell_c$ determine a triangle. Prove that the orthocentre and the circumcentre of this triangle are collinear with $H$."
+        },
+        {
+          "day": 9,
+          "paper_label": "Round 3, Quiz 1",
+          "number": 4,
+          "problem": "For each positive integer $k$, let $r(k)$ be the number of runs in the base-$2$ representation of $k$, where a run is a maximal block of consecutive equal digits (consecutive $0$s or consecutive $1$s). For example, $(11100100)_2$ has $4$ runs, namely $111$, $00$, $1$, $00$. Also, $r(0) = 0$. Given a positive integer $n$, find all functions $f: \\mathbb{Z} \\to \\mathbb{Z}$ such that\n$$\\sum_{k=0}^{2^n-1} 2^{r(k)} f\\left(k + (-1)^k x\\right) = (-1)^{x+n}$$\nfor all integers $x$."
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 1,
+          "problem": "Prove that there exists a constant $D > 0$ with the following property: for every positive integer $m$ and $N = \\frac{m(m+1)}{2}$ there exist three permutations $a_1, \\dots, a_N$; $b_1, \\dots, b_N$; $c_1, \\dots, c_N$ of $1, 2, \\dots, N$ such that\n$$\\left| \\sqrt{a_k} + \\sqrt{b_k} + \\sqrt{c_k} - 2\\sqrt{N} \\right| < D$$\nfor every $k = 1, 2, \\dots, N$.",
+          "problem_orig": "證明存在常數 $D > 0$ 滿足以下性質：對於所有正整數 $m$ 與 $N = \\frac{m(m+1)}{2}$，存在 $1, 2, \\dots, N$ 的三種排列 $a_1, a_2, \\dots, a_N; b_1, b_2, \\dots, b_N; c_1, c_2, \\dots, c_N$ 使得\n$$\n|\\sqrt{a_k} + \\sqrt{b_k} + \\sqrt{c_k} - 2\\sqrt{N}| < D\n$$\n對所有 $k = 1, 2, \\dots, N$ 均成立。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 2,
+          "problem": "Let $n \\ge 3$ be a positive integer. There are $n$ jujutsu sorcerers from $k$ different schools, labelled $1$ to $n$. When two sorcerers duel, the one with the smaller label wins. Moreover, for every permutation $x_1, x_2, \\dots, x_n$ of $1, 2, \\dots, n$, the winners of the $n-1$ duels between sorcerers $x_1$ and $x_2$, $x_2$ and $x_3$, $\\dots$, $x_{n-1}$ and $x_n$ include at least one sorcerer from each of the $k$ schools. Prove that $n \\ge 2^k$.",
+          "problem_orig": "令 $n \\ge 3$ 為一正整數。有來自 $k$ 間學校的共 $n$ 位咒術師，編號為 1 到 $n$。已知當兩個咒術師對決時，編號小的咒術師會獲勝。此外，對於任何 $\\{1, 2, \\dots, n\\}$ 的重排 $\\{x_1, x_2, \\dots, x_n\\}$，$x_1$ 對 $x_2$ 號、$x_2$ 號對 $x_3$ 號一直到 $x_{n-1}$ 號對 $x_n$ 號咒術師的 $n-1$ 場對決的獲勝者中，包含 $k$ 間學校的人各至少一位。試證 $n \\ge 2^k$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle such that the bisector of $\\angle BAC$, the median from $B$ and the perpendicular bisector of $AB$ pass through a common point $X$. Let $H$ be the orthocentre of $ABC$. Prove that $\\angle BXH = 90^\\circ$.",
+          "problem_orig": "三角形 $ABC$ 的 $\\angle BAC$ 角平分線、過 $B$ 點的中線以及 $AB$ 中垂線三線共點於 $X$。令 $H$ 為 $ABC$ 的垂心。證明 $\\angle BXH = 90^\\circ$。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 10,
+          "paper_label": "Round 3, Quiz 2",
+          "number": 4,
+          "problem": "Suppose that a function $f: \\mathbb{N} \\to \\mathbb{N}$ satisfies\n$$f^{b f(a)}(a+1) = (a+1) f(b)$$\nfor all positive integers $a, b$, where $f^k(n) = f(f(\\cdots f(n) \\cdots))$ denotes the $k$-fold composition of $f$ with itself. Prove that $f(n) = n+1$ for all $n \\in \\mathbb{N}$."
+        },
+        {
+          "day": 12,
+          "paper_label": "Round 3, Mock IMO, Day 2",
+          "number": 1,
+          "problem": "Determine the largest positive integer $L$ for which there exists a sequence $a_1, a_2, \\dots, a_L$ of positive integers such that:\n\n(a) every term of the sequence is at most $2^{2024}$;\n\n(b) there is no block of consecutive terms $a_i, a_{i+1}, \\dots, a_j$ (with $1 \\le i \\le j \\le L$) and choice of signs $s_i, s_{i+1}, \\dots, s_j \\in \\{-1, 1\\}$ for which\n$$s_i a_i + s_{i+1} a_{i+1} + \\dots + s_j a_j = 0.$$",
+          "problem_orig": "試求最大的正整數 $L$ 使得存在正整數數列 $a_1, a_2, \\dots, a_L$ 滿足：\n(a) 數列中的每一項都小於或等於 $2^{2024}$；\n(b) 不存在連續子數列 $a_i, a_{i+1}, \\dots, a_j$ (其中 $1 \\le i \\le j \\le L$) 使得我們可以適當選取 $s_i, s_{i+1}, \\dots, s_j \\in \\{-1, 1\\}$ 讓\n$$\ns_i a_i + s_{i+1} a_{i+1} + \\dots + s_j a_j = 0.\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 12,
+          "paper_label": "Round 3, Mock IMO, Day 2",
+          "number": 2,
+          "problem": "A sequence of integers $a_0, a_1, a_2, \\dots$ is called kawaii if $a_0 = 0$, $a_1 = 1$ and, for every positive integer $n$,\n$$(a_{n+1} - 3a_n + 2a_{n-1})(a_{n+1} - 4a_n + 3a_{n-1}) = 0.$$\nAn integer is called kawaii if it belongs to some kawaii sequence. Suppose that two consecutive positive integers $m$ and $m+1$ are both kawaii (not necessarily belonging to the same kawaii sequence). Prove that $3$ divides $m$ and that $m/3$ is kawaii.",
+          "problem_orig": "如果整數數列 $a_0, a_1, a_2, \\dots$ 符合 $a_0 = 0, a_1 = 1$, 且對於所有正整數 $n$ 有\n$$\n(a_{n+1} - 3a_n + 2a_{n-1})(a_{n+1} - 4a_n + 3a_{n-1}) = 0,\n$$\n則我們稱它為卡哇伊數列。一個整數如果屬於某個卡哇伊數列，則我們稱這個整數為卡哇伊。\n如果連續兩個正整數 $m$ 及 $m+1$ 皆卡哇伊 (不一定要屬於相同的卡哇伊數列)，證明 3 整除 $m$ 且 $m/3$ 也卡哇伊。",
+          "orig_lang": "zh"
+        },
+        {
+          "day": 12,
+          "paper_label": "Round 3, Mock IMO, Day 2",
+          "number": 3,
+          "problem": "Find all positive integers $n$ and all sequences of integers $a_0, a_1, \\dots, a_n$ such that $a_n \\ne 0$ and\n$$f(a_{i-1}) = a_i$$\nfor all $i = 1, 2, \\dots, n$, where $f(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_1 x + a_0$.",
+          "problem_orig": "試決定所有的正整數 $n$ 及整數數列 $a_0, a_1, \\dots, a_n$ 滿足 $a_n \\neq 0$ 且\n$$\nf(a_{i-1}) = a_i\n$$\n對於 $i = 1, 2, \\dots, n$ 皆成立，其中 $f(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_1 x + a_0$。",
+          "orig_lang": "zh"
+        }
+      ]
     }
   ]
 }

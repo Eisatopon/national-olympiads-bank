@@ -495,6 +495,576 @@
           "problem": "A positive integer $n$ is given. If there exist sets $F_1, F_2, \\ldots, F_m$ satisfying the following, prove that $m\\le n$. (For sets $A, B$, $|A|$ is the number of elements of $A$, and $A-B$ is the set of elements that are in $A$ but not in $B$.)\n\n(i) For all $1\\le i\\le m$, $F_i\\subseteq\\{1,2,\\ldots,n\\}$.\n\n(ii) $|F_1|\\le|F_2|\\le\\cdots\\le|F_m|$.\n\n(iii) For all $1\\le i<j\\le m$, $|F_i-F_j|=1$."
         }
       ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Positive real numbers $a_1, a_2, \\ldots$ satisfy both of the following conditions.\n\n(i) For every positive integer $n$, $a_{n+1} = a_1^2 \\times \\cdots \\times a_n^2 - 3$.\n\n(ii) $\\frac{1}{2}\\left(a_1 + \\sqrt{a_2 - 1}\\right)$ is a positive integer.\n\nShow that for every positive integer $n$, $\\frac{1}{2}\\left(a_1 \\times \\cdots \\times a_n + \\sqrt{a_{n+1} - 1}\\right)$ is a positive integer.",
+          "problem_orig": "양의 실수 $a_1, a_2, \\ldots$이 다음 두 조건을 모두 만족한다.\n\n(i) 모든 양의 정수 $n$에 대하여 $a_{n+1} = a_1^2 \\times \\cdots \\times a_n^2 - 3$\n\n(ii) $\\frac{1}{2}\\left(a_1 + \\sqrt{a_2 - 1}\\right)$은 양의 정수\n\n모든 양의 정수 $n$에 대하여 $\\frac{1}{2}\\left(a_1 \\times \\cdots \\times a_n + \\sqrt{a_{n+1} - 1}\\right)$은 양의 정수임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The incircle of a non-isosceles triangle $ABC$ touches the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively, and let $I$ be the incentre. Let $G$ $(\\neq D)$ be the intersection of the line $AD$ with the incircle, let $H$ be the point where the tangent to the incircle at $G$ meets the side $AC$, and let $K$ be the intersection of the lines $IH$ and $AD$. If $L$ is the foot of the perpendicular from $I$ to the line $AD$, show that $IE \\cdot IK = IC \\cdot IL$.",
+          "problem_orig": "이등변삼각형이 아닌 삼각형 $ABC$의 내접원이 변 $BC$, $CA$, $AB$와 접하는 점을 각각 $D$, $E$, $F$라 하고, 내심을 $I$라 하자. 직선 $AD$와 내접원의 교점을 $G(\\neq D)$라 하고, 점 $G$에서의 내접원의 접선이 변 $AC$와 만나는 점을 $H$라 하고, 직선 $IH$와 $AD$의 교점을 $K$라 하자. 점 $I$에서 직선 $AD$에 내린 수선의 발을 $L$이라 할 때, $\\overline{IE} \\cdot \\overline{IK} = \\overline{IC} \\cdot \\overline{IL}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In a competition with $n$ players in total, each player played every other player exactly once, and every game ended in a win or a loss (no draws). For some $k$ $(\\le n)$ players, if they can be lined up in a row so that each player has beaten all the players standing behind him, the set of these $k$ players is called a ranked set. Suppose that for each player of the competition, the set of players who lost to that player is a ranked set. Show that the set of all players can be partitioned into at most $3$ ranked sets.",
+          "problem_orig": "총 $n$명의 선수가 참가한 대회에서, 각각의 선수가 다른 모든 선수와 정확히 한 번씩 경기를 하여 무승부없이 승패를 결정하였다. 어떤 $k(\\le n)$명의 선수에 대하여 각 선수가 자기보다 뒤쪽에 있는 모든 선수에게 이긴 경우가 되도록 한 줄로 세울 수 있으면 그 $k$명의 선수의 집합을 서열이 정해진 집합이라 부르자. 대회에 참가한 각 선수에 대하여 그 선수에게 진 선수들의 집합이 모두 서열이 정해진 집합이라 하자. 이때, 선수 전체의 집합을 서열이 정해진 집합 $3$개 이하로 나눌 수 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all positive integers $n$ for which the value of the following expression is an integer.\n$$\\frac{n(n+2016)(n+2\\cdot 2016)(n+3\\cdot 2016)\\cdots(n+2015\\cdot 2016)}{1\\cdot 2\\cdot 3\\cdot \\cdots \\cdot 2016}$$",
+          "problem_orig": "다음 식의 값이 정수가 되는 모든 양의 정수 $n$을 구하여라.\n$$\\frac{n(n+2016)(n+2\\cdot 2016)(n+3\\cdot 2016)\\cdots(n+2015\\cdot 2016)}{1\\cdot 2\\cdot 3\\cdot \\cdots \\cdot 2016}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that for every positive integer $n$, the following expression can be written as a polynomial in $n$.\n$$\\left[2\\sqrt{1}\\right] + \\left[2\\sqrt{2}\\right] + \\left[2\\sqrt{3}\\right] + \\cdots + \\left[2\\sqrt{n^2}\\right]$$\n(Here, for a real number $x$, $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "양의 정수 $n$에 대하여, 다음 식을 $n$에 대한 다항식으로 표현할 수 있음을 보여라.\n$$\\left[2\\sqrt{1}\\right] + \\left[2\\sqrt{2}\\right] + \\left[2\\sqrt{3}\\right] + \\cdots + \\left[2\\sqrt{n^2}\\right]$$\n(단, 실수 $x$에 대하여 $[x]$는 $x$를 넘지 않는 최대 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A circle $O_1$ touches the sides $AC$ and $BC$ of a triangle $ABC$ at $D$ and $E$ respectively, and a circle $O_2$ containing the circle $O_1$ touches the sides $BC$ and $AB$ at $E$ and $F$ respectively. Let $P$ $(\\neq E)$ be the intersection of the line $DE$ with the circle $O_2$, and let $Q$ be the point where the tangent to $O_2$ at $P$ meets the line $AB$. Let $G$ be the point where the line through $O_1$ parallel to the line $BO_2$ meets the line $BC$, let $K$ be the intersection of the lines $EQ$ and $AC$, let $L$ be the intersection of the lines $KG$ and $EF$, let $N$ $(\\neq E)$ be the intersection of the line $EO_2$ with the circle $O_2$, and let $M$ be the intersection of the lines $LO_2$ and $FN$. If $N$ is the midpoint of the segment $FM$, show that $BG = 2EG$.",
+          "problem_orig": "원 $O_1$이 삼각형 $ABC$의 변 $AC$, $BC$와 각각 점 $D$, $E$에서 접하고, 원 $O_1$을 포함하는 원 $O_2$가 변 $BC$, $AB$와 각각 점 $E$, $F$에서 접한다. 직선 $DE$와 원 $O_2$의 교점 $P(\\neq E)$에서의 원 $O_2$의 접선이 직선 $AB$와 만나는 점을 $Q$라 하자. 점 $O_1$을 지나고 직선 $BO_2$와 평행한 직선이 직선 $BC$와 만나는 점을 $G$, 직선 $EQ$와 $AC$의 교점을 $K$, 직선 $KG$와 $EF$의 교점을 $L$, 직선 $EO_2$와 원 $O_2$의 교점을 $N(\\neq E)$, 직선 $LO_2$와 $FN$의 교점을 $M$이라 하자. 점 $N$이 선분 $FM$의 중점일 때, $\\overline{BG} = 2\\overline{EG}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Positive integers $a_1, a_2, \\ldots, a_9$ satisfy $a_1 + a_2 + \\cdots + a_9 = 90$. Find the maximum value of the following expression.\n$$\\frac{1^{a_1}\\, 2^{a_2} \\cdots 9^{a_9}}{a_1!\\, a_2! \\cdots a_9!}$$\n(Here $n! = 1 \\times \\cdots \\times n$.)",
+          "problem_orig": "양의 정수 $a_1, a_2, \\ldots, a_9$가 $a_1 + a_2 + \\cdots + a_9 = 90$을 만족할 때, 다음 식의 최댓값을 구하여라.\n$$\\frac{1^{a_1}\\, 2^{a_2} \\cdots 9^{a_9}}{a_1!\\, a_2! \\cdots a_9!}$$\n(단, $n! = 1 \\times \\cdots \\times n$)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "In the coordinate plane, a moving point can move $1$ unit to the right or $1$ unit up at each step. Let $N$ be the number of all paths along which this point starts at $(0,0)$ and, after $2n$ moves, arrives at $(n,n)$ without passing through any of the points $(1,0), (2,1), \\ldots, (n, n-1)$. Among these $N$ paths, let $a_k$ be the number of paths in which the $k$-th move is to the right and the $(k+1)$-th move is up. Find the value of\n$$\\frac{1}{N}\\left(a_1 + a_2 + \\cdots + a_{2n-1}\\right).$$",
+          "problem_orig": "좌표평면에서 한 움직이는 점이 오른쪽 또는 위로 $1$씩 움직일 수 있다고 할 때, 이 점이 좌표 $(0,0)$에서 출발하여 $(1,0), (2,1), \\ldots, (n, n-1)$ 어느 점도 거치지 않고 $2n$번 움직여서 좌표 $(n,n)$에 이르는 모든 경로의 개수를 $N$이라 하자. 이러한 $N$개의 경로 중 $k$번째에는 오른쪽으로 움직이고 $k+1$번째에는 위로 움직인 경로의 개수를 $a_k$라 할 때,\n$$\\frac{1}{N}\\left(a_1 + a_2 + \\cdots + a_{2n-1}\\right)$$\n의 값을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all positive integers $n$ and non-negative integers $a_1, \\ldots, a_n$ satisfying the following condition.\n\nFor each $i = 1, \\ldots, n$, exactly $a_i$ of the numbers $a_1, \\ldots, a_n$ are multiples of $i$.\n\nHere, $0$ is a multiple of every integer.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$과 음이 아닌 정수 $a_1, \\ldots, a_n$을 모두 구하여라.\n\n각 $i = 1, \\ldots, n$에 대하여 $a_1, \\ldots, a_n$ 중 $i$의 배수는 정확히 $a_i$개 있다.\n\n단, $0$은 모든 정수의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The incircle of a non-isosceles triangle $ABC$ touches the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively. The perpendicular bisector of the side $BC$ meets the circumcircle of triangle $ABC$ at two points; let $P$ be the one on the same side of the line $BC$ as $A$, and $Q$ the one on the other side. The line through $D$ parallel to the line $AQ$ meets the line $EF$ at $R$ and the line $PQ$ at $T$. Show that the four points $B$, $R$, $C$, $T$ lie on a circle.",
+          "problem_orig": "이등변 삼각형이 아닌 삼각형 $ABC$의 내접원이 변 $BC$, $CA$, $AB$와 만나는 점을 각각 $D$, $E$, $F$라 하자. 변 $BC$의 수직이등분선이 삼각형 $ABC$의 외접원과 만나는 두 점 중 직선 $BC$에 대하여 점 $A$와 같은 쪽에 있는 점을 $P$, 다른 쪽에 있는 점을 $Q$라 하자. 점 $D$를 지나고 직선 $AQ$와 평행한 직선이 직선 $EF$와 만나는 점을 $R$, 직선 $PQ$와 만나는 점을 $T$라 하자. 네 점 $B$, $R$, $C$, $T$가 한 원 위에 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all integers $n > 1$ and integers $a_1, a_2, \\ldots, a_n$ satisfying all three of the following conditions.\n\n(i) $2 < a_1 \\le a_2 \\le \\cdots \\le a_n$\n\n(ii) $a_1, a_2, \\ldots, a_n$ are all divisors of $15^{25} + 1$.\n\n(iii) $2 - \\frac{2}{15^{25}+1} = \\left(1 - \\frac{2}{a_1}\\right) + \\left(1 - \\frac{2}{a_2}\\right) + \\cdots + \\left(1 - \\frac{2}{a_n}\\right)$",
+          "problem_orig": "다음 세 조건을 모두 만족하는 $1$보다 큰 정수 $n$과 정수 $a_1, a_2, \\ldots, a_n$을 모두 구하여라.\n\n(i) $2 < a_1 \\le a_2 \\le \\cdots \\le a_n$\n\n(ii) $a_1, a_2, \\ldots, a_n$은 모두 $15^{25} + 1$의 약수이다.\n\n(iii) $2 - \\frac{2}{15^{25}+1} = \\left(1 - \\frac{2}{a_1}\\right) + \\left(1 - \\frac{2}{a_2}\\right) + \\cdots + \\left(1 - \\frac{2}{a_n}\\right)$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Prove that for positive real numbers $a \\ge b \\ge c \\ge d > 0$ the following inequality holds.\n$$\\frac{b^3}{a} + \\frac{c^3}{b} + \\frac{d^3}{c} + \\frac{a^3}{d} + 3(ab + bc + cd + da) \\ge 4(a^2 + b^2 + c^2 + d^2)$$",
+          "problem_orig": "양의 실수 $a \\ge b \\ge c \\ge d > 0$에 대하여 다음 부등식이 성립함을 보여라.\n$$\\frac{b^3}{a} + \\frac{c^3}{b} + \\frac{d^3}{c} + \\frac{a^3}{d} + 3(ab + bc + cd + da) \\ge 4(a^2 + b^2 + c^2 + d^2)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given a positive integer $n \\ge 2$, show that there exist integers $a$, $b$ satisfying the following condition.\n\nFor every integer $m$, $m^3 + am + b$ is not a multiple of $n$.",
+          "problem_orig": "양의 정수 $n \\ge 2$이 주어졌을 때, 다음 조건을 만족하는 정수 $a$, $b$가 존재함을 보여라.\n\n모든 정수 $m$에 대하여 $m^3 + am + b$는 $n$의 배수가 아니다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $D$, $E$, $F$ be the midpoints of the sides $BC$, $CA$, $AB$ of a non-isosceles acute triangle $ABC$. Let $O_1$ be the circle through the three points $D$, $E$, $F$, and let $N$ be its centre. Let $O_2$ be the circumcircle of triangle $BCN$, and let $P$, $Q$ be the two intersection points of the circles $O_1$ and $O_2$. The circle $O_2$ meets the line $AB$ at $K$ $(\\neq B)$ and the line $AC$ at $L$ $(\\neq C)$. Show that the three lines $EF$, $PQ$, $KL$ are concurrent.",
+          "problem_orig": "이등변삼각형이 아닌 예각삼각형 $ABC$의 변 $BC$, $CA$, $AB$의 중점을 각각 $D$, $E$, $F$라 하자. 세 점 $D$, $E$, $F$를 지나는 원을 $O_1$이라 하고, 그 중심을 $N$이라 하자. 삼각형 $BCN$의 외접원을 $O_2$라 하고, 원 $O_1$과 $O_2$의 두 교점을 $P$, $Q$라 하자. 원 $O_2$가 직선 $AB$와 점 $K(\\neq B)$에서 만나고 직선 $AC$와 점 $L(\\neq C)$에서 만난다. 세 직선 $EF$, $PQ$, $KL$이 한 점에서 만남을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Show that there is no function $f : \\mathbb{R}_{\\ge 0} \\to \\mathbb{R}$ satisfying the following.\n\nFor all non-negative real numbers $x$, $y$: $f(x + y^2) \\ge f(x) + y$.\n\n(Here $\\mathbb{R}_{\\ge 0}$ is the set of all non-negative real numbers and $\\mathbb{R}$ is the set of all real numbers.)",
+          "problem_orig": "다음을 만족하는 함수 $f : \\mathbb{R}_{\\ge 0} \\to \\mathbb{R}$이 존재하지 않음을 보여라.\n\n음이 아닌 모든 실수 $x$, $y$에 대하여 $f(x + y^2) \\ge f(x) + y$\n\n(단, $\\mathbb{R}_{\\ge 0}$은 음이 아닌 실수 전체의 집합이며, $\\mathbb{R}$은 실수 전체의 집합이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "For a positive integer $n$, there is a school with $n$ students in total. For a set $X$ of students of this school, if any two distinct students in $X$ know each other, the set $X$ is called a well-organized set. Show that if the maximum number of students in a well-organized set is $k$, then the number of well-organized sets that can be formed in this school is at most $3^{(n+k)/3}$. Here the empty set and every set consisting of a single student are also well-organized sets.",
+          "problem_orig": "양의 정수 $n$에 대하여, 총 $n$명의 학생이 있는 학교가 있다. 이 학교 학생들로 이루어진 집합 $X$에 대하여, $X$에 속한 임의의 서로 다른 두 학생이 서로 아는 사이이면 그 집합 $X$를 잘 짜인 집합이라 부르자. 잘 짜인 집합의 학생 수의 최댓값이 $k$이면, 이 학교에서 만들 수 있는 잘 짜인 집합의 개수는 $3^{(n+k)/3}$ 이하임을 보여라. 단, 공집합이나 학생 $1$명의 집합 역시 잘 짜인 집합이다.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A quadratic function $f(x)$ satisfies the following condition. Find the value of $\\frac{f(8)-f(2)}{f(2)-f(1)}$.\n\nFor any two distinct real numbers $a$, $b$, if $f(a) = f(b)$ then $f(a^2 - 6b - 1) = f(b^2 + 8)$.",
+          "problem_orig": "이차함수 $f(x)$가 다음 조건을 만족할 때, $\\frac{f(8)-f(2)}{f(2)-f(1)}$의 값을 구하여라.\n\n서로 다른 두 실수 $a$, $b$에 대하여 $f(a) = f(b)$이면 $f(a^2 - 6b - 1) = f(b^2 + 8)$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a positive integer $N$ with at least $4$ divisors, find all $N$ such that the sum of the squares of the four smallest divisors of $N$ equals $N$.",
+          "problem_orig": "약수의 개수가 $4$ 이상인 양의 정수 $N$에 대하여, $N$의 약수 중 가장 작은 네 개를 각각 제곱하여 더한 값이 $N$과 같아지는 $N$을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $M$ be the midpoint of the side $BC$ of a non-isosceles triangle $ABC$, and let $P$ be the point where the perpendicular bisector of the side $BC$ meets the circumcircle of triangle $ABC$, where $A$ and $P$ lie on the same side of $BC$. Let $I$ and $J$ be the incentres of triangles $ABM$ and $AMC$ respectively. If $\\angle BAC = \\alpha$, $\\angle ABC = \\beta$, $\\angle BCA = \\gamma$, find $\\angle IPJ$.",
+          "problem_orig": "이등변삼각형이 아닌 삼각형 $ABC$의 변 $BC$의 중점을 $M$이라 하고, 변 $BC$의 수직이등분선이 삼각형 $ABC$의 외접원과 만나는 점을 $P$라 하자. 이때 $A$와 $P$는 변 $BC$에 대하여 같은 쪽에 있다. 삼각형 $ABM$과 $AMC$의 내심을 각각 $I$, $J$라 하고, $\\angle BAC = \\alpha$, $\\angle ABC = \\beta$, $\\angle BCA = \\gamma$라 할 때, $\\angle IPJ$를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For a positive integer $n$, let $p(n)$ be the number of ordered quadruples $(x, y, z, w)$ of non-negative integers satisfying $x + 2y + 2z + 3w = n$, and let $q(n)$ be the number of ordered quadruples $(a, b, c, d)$ of non-negative integers satisfying all three of the following conditions.\n\n(i) $a + b + c + d = n$\n\n(ii) $a \\ge b \\ge d$\n\n(iii) $a \\ge c \\ge d$\n\nShow that $p(n) = q(n)$ for all $n$.",
+          "problem_orig": "양의 정수 $n$에 대하여, $x + 2y + 2z + 3w = n$을 만족하는 음이 아닌 정수의 순서쌍 $(x, y, z, w)$의 개수를 $p(n)$이라 하고, 다음 세 조건을 모두 만족하는 음이 아닌 정수의 순서쌍 $(a, b, c, d)$의 개수를 $q(n)$이라 하자.\n\n(i) $a + b + c + d = n$\n\n(ii) $a \\ge b \\ge d$\n\n(iii) $a \\ge c \\ge d$\n\n모든 $n$에 대하여 $p(n) = q(n)$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $D$ and $E$ be the reflections of the circumcentre $O$ of a non-isosceles acute triangle $ABC$ in the lines $AB$ and $AC$ respectively. Let $K$, $L$, $M$ be the points other than $A$ where the circumcircle of triangle $ADE$ meets the line $AB$, the line $AC$ and the circumcircle of triangle $ABC$, respectively. Show that the three lines $BC$, $KL$, $AM$ are concurrent.",
+          "problem_orig": "이등변삼각형이 아닌 예각삼각형 $ABC$의 외심 $O$를 직선 $AB$, $AC$에 대하여 선대칭한 점을 각각 $D$, $E$라 하자. 삼각형 $ADE$의 외접원이 직선 $AB$, 직선 $AC$, 삼각형 $ABC$의 외접원과 만나는 점 중 $A$가 아닌 점을 각각 $K$, $L$, $M$이라 하자. 세 직선 $BC$, $KL$, $AM$이 한 점에서 만남을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "As in the figure below, there is a diagram consisting of $9$ small discs $A, B, \\ldots, I$ and $11$ segments. A real number is written on every disc, and on each segment we write the square of the difference of the two real numbers written on the discs at its two ends. Write $0$ on disc $A$ and $1$ on disc $I$. Find the smallest possible value of the sum of the numbers written on all the segments.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/krj_2018_p6_fig.png",
+          "problem_orig": "아래 그림과 같이 $9$개의 작은 원판 $A, B, \\ldots, I$와 $11$개의 선분으로 이루어진 도형이 있다. 모든 원판에 실수를 하나씩 쓰고, 각 선분에는 선분의 양 끝 원판에 적힌 두 실수의 차의 제곱을 적는다. 원판 $A$에는 $0$, 원판 $I$에는 $1$을 쓰자. 이때 모든 선분에 적힌 수의 합이 될 수 있는 값 중 가장 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Find all ordered pairs of integers $(m, n)$ satisfying $7^m = 5^n + 24$.",
+          "problem_orig": "등식 $7^m = 5^n + 24$를 만족하는 정수의 순서쌍 $(m, n)$을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Show that for any set $S$ consisting of $n$ distinct integers, there always exists a function $f : \\{1, 2, \\ldots, n\\} \\to S$ satisfying both of the following conditions. (Here $n$ is an integer, $n \\ge 3$.)\n\n(i) The set $\\{f(1), f(2), \\ldots, f(n)\\}$ equals $S$.\n\n(ii) For all $1 \\le i < j < k \\le n$, $2f(j) \\neq f(i) + f(k)$.",
+          "problem_orig": "서로 다른 $n$개의 정수로 이루어진 집합 $S$에 대하여, 다음 두 조건을 모두 만족하는 함수 $f : \\{1, 2, \\ldots, n\\} \\to S$가 항상 존재함을 보여라. (단, $n$은 $3$ 이상인 정수이다.)\n\n(i) 집합 $\\{f(1), f(2), \\ldots, f(n)\\}$는 $S$와 같다.\n\n(ii) 모든 $1 \\le i < j < k \\le n$에 대하여, $2f(j) \\neq f(i) + f(k)$이다.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In the coordinate plane, a point whose $x$- and $y$-coordinates are both integers is called a lattice point. Each lattice point is coloured with one colour, and at least $5$ colours are used. For two lattice points $(x, y)$ and $(z, w)$, if $x - z$ and $y - w$ are both multiples of $3$, then the two lattice points have the same colour. Show that whichever five distinct colours are chosen, there exists a line passing through lattice points of exactly three of these colours.",
+          "problem_orig": "좌표평면에서 $x$, $y$ 좌표가 모두 정수인 점을 격자점이라 한다. 각 격자점은 한 가지 색으로 색칠되어 있고, 사용된 색의 수는 $5$ 이상이다. 두 격자점 $(x, y)$와 $(z, w)$에 대하여, $x - z$와 $y - w$가 모두 $3$의 배수이면 두 격자점은 같은 색이다. 서로 다른 다섯 개의 색을 임의로 골랐을 때, 이 중 정확히 세 개의 색의 격자점만을 지나는 직선이 존재함을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In an acute triangle $ABC$, the point $D$ on the side $AC$ satisfies $AD = BC$ and $AC^2 - AD^2 = AC \\cdot AD$. Let $E$ be the intersection of the side $AB$ with the line through $D$ parallel to the bisector of the angle at $C$. Show that if $AE = CD$, then $\\angle ADB = 3\\angle BAC$.",
+          "problem_orig": "예각삼각형 $ABC$에서 변 $AC$ 위의 점 $D$는 $\\overline{AD} = \\overline{BC}$와 $\\overline{AC}^2 - \\overline{AD}^2 = \\overline{AC} \\cdot \\overline{AD}$를 만족하는 점이다. 꼭지각 $C$의 이등분선에 평행하고 점 $D$를 지나는 직선과 변 $AB$의 교점을 $E$라 하자. $\\overline{AE} = \\overline{CD}$이면 $\\angle ADB = 3\\angle BAC$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all ordered pairs $(p, q)$ of primes $p$, $q$ $(p \\le q)$ satisfying the following condition.\n\n(Condition) There exists a positive integer $n$ such that $2^n + 3^n + 4^n + \\cdots + (2pq - 1)^n$ is a multiple of $2pq$.",
+          "problem_orig": "다음 조건을 만족하는 소수 $p$, $q$ $(p \\le q)$의 순서쌍 $(p, q)$를 모두 구하여라.\n\n(조건) $2^n + 3^n + 4^n + \\cdots + (2pq - 1)^n$이 $2pq$의 배수가 되는 양의 정수 $n$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "A sequence of positive integers $\\{a_1, a_2, \\ldots\\}$ satisfies the following for every positive integer $n$.\n$$(a_1 + \\cdots + a_n)\\left(\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}\\right) \\le n^2 + 2019$$\nShow that all the $a_i$ are equal.",
+          "problem_orig": "양의 정수의 수열 $\\{a_1, a_2, \\ldots\\}$이 임의의 자연수 $n$에 대하여 다음을 만족한다.\n$$(a_1 + \\cdots + a_n)\\left(\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}\\right) \\le n^2 + 2019$$\n이때, 모든 $a_i$들은 같은 수임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that for every prime $p$ there exist integers $a$, $b$, $c$, $d$ satisfying the following condition.\n\n(Condition) For every integer $n$, $n^4 + 1 - (n^2 + an + b)(n^2 + cn + d)$ is a multiple of $p$.",
+          "problem_orig": "소수 $p$에 대하여 다음 조건을 만족하는 정수 $a$, $b$, $c$, $d$가 존재함을 보여라.\n\n(조건) 모든 정수 $n$에 대하여 $n^4 + 1 - (n^2 + an + b)(n^2 + cn + d)$는 $p$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying both of the following conditions. (Here $\\mathbb{R}$ is the set of all real numbers.)\n\n(1) For all real numbers $x$, $y$: $f(x + f(x) + xy) = 2f(x) + xf(y)$.\n\n(2) For every real number $z$ there exists $x$ with $f(x) = z$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 함수 $f : \\mathbb{R} \\to \\mathbb{R}$을 모두 구하여라. (단, $\\mathbb{R}$은 실수 전체의 집합)\n\n(1) 모든 실수 $x$, $y$에 대하여 $f(x + f(x) + xy) = 2f(x) + xf(y)$이다.\n\n(2) 모든 실수 $z$에 대하여 $f(x) = z$인 $x$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Let $O$ be the circumcentre of an acute triangle $ABC$, and let $D$ be the point where the bisector of angle $A$ meets the side $BC$; suppose that $\\angle ODC = 2\\angle DAO$. The circumcircle of triangle $ABD$ meets the segment $OA$ at $E$ $(\\neq A, O)$ and the line $OD$ at $F$ $(\\neq D)$. Let $X$ be the intersection of the line $DE$ with the segment $AC$, and let $Y$ be the intersection of the bisector of angle $BAF$ with the segment $BE$. Show that $\\frac{AY}{BY} = \\frac{EX}{EO}$.",
+          "problem_orig": "예각삼각형 $ABC$의 외심을 $O$, 각 $A$의 이등분선이 변 $BC$와 만나는 점을 $D$라 할 때, $\\angle ODC = 2\\angle DAO$이다. 삼각형 $ABD$의 외접원이 선분 $OA$, 직선 $OD$와 각각 점 $E(\\neq A, O)$, 점 $F(\\neq D)$에서 만난다. 직선 $DE$와 선분 $AC$의 교점을 $X$라 하고, 각 $BAF$의 이등분선과 선분 $BE$의 교점을 $Y$라 할 때, $\\frac{\\overline{AY}}{\\overline{BY}} = \\frac{\\overline{EX}}{\\overline{EO}}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "There are two airlines $A$, $B$ and finitely many airports, at least $4$. Between any two airports, aircraft of exactly one of the airlines $A$ and $B$ fly in both directions. Each airline wants to make world-tour packages, each consisting of a route that uses only its own aircraft and passes through every airport exactly once. Let $a$ and $b$ be the numbers of different world-tour packages that airlines $A$ and $B$ can make, respectively. Show that $a - b$ is a multiple of $4$.",
+          "problem_orig": "두 개의 항공사 $A$, $B$와 $4$개 이상의 유한 개의 공항이 있다. 임의의 두 공항 간에는 $A$와 $B$ 중 정확히 한 항공사의 항공기가 양 방향으로 다닌다고 하자. 각 항공사는 자사의 항공기만 이용하여 모든 공항을 정확히 한 번씩만 지나는 경로로 구성된 세계 여행 상품을 만들려고 한다. 이때 항공사 $A$, $B$가 만들 수 있는 세계 여행 상품의 종류의 개수를 각각 $a$, $b$라 할 때, $a - b$는 $4$의 배수임을 보여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "An integer $n$ is a number that can be expressed as the sum of an even number of distinct positive integers not exceeding $2000$. Find all positive integers not exceeding $1 + 2 + \\cdots + 2000$ that cannot be values of $n$.",
+          "problem_orig": "정수 $n$은 $2000$ 이하의 서로 다른 양의 정수 짝수 개의 합으로 표현되는 수이다. $1+2+\\cdots+2000$ 이하의 양의 정수 중 $n$의 값이 될 수 없는 것을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "In an acute triangle $ABC$ $(AB < AC)$, let $D$ $(\\neq A)$ be the point where the bisector of the angle at $A$ meets the circumcircle $\\Omega$ of triangle $ABC$, and let $E$ $(\\neq D)$ be the point where the line through $D$ perpendicular to the line $BC$ meets the circle $\\Omega$. Let $F$ $(\\neq E)$ be the point where the circle with centre $A$ passing through $E$ meets the line $DE$, and let $K$ be the circumcentre of triangle $ADF$. Show that the lines $AK$ and $BC$ are perpendicular.",
+          "problem_orig": "예각삼각형 $ABC$ $(\\overline{AB} < \\overline{AC})$의 꼭짓각 $A$의 이등분선이 삼각형 $ABC$의 외접원 $\\Omega$와 만나는 점을 $D(\\neq A)$라 하고, 점 $D$를 지나고 직선 $BC$와 수직인 직선이 원 $\\Omega$와 만나는 점을 $E(\\neq D)$라 하자. 점 $A$가 중심이고 점 $E$를 지나는 원이 직선 $DE$와 만나는 점을 $F(\\neq E)$라 하고 삼각형 $ADF$의 외접원의 중심을 $K$라 할 때, 직선 $AK$와 $BC$가 서로 수직임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "For a string $\\sigma$ formed by arranging the four letters A, B, C, D in a row, define $f_{\\mathrm{AB}}(\\sigma)$ as the sum, over all A's, of the number of B's to the right of that A. Define $f_{\\mathrm{BC}}(\\sigma)$, $f_{\\mathrm{CD}}(\\sigma)$, $f_{\\mathrm{DA}}(\\sigma)$ in the same way. For example, for the string $\\sigma = \\mathrm{ACBDBACDCBAD}$ we have $f_{\\mathrm{AB}}(\\sigma) = 3 + 1 + 0 = 4$, and in the same way $f_{\\mathrm{BC}}(\\sigma) = 4$, $f_{\\mathrm{CD}}(\\sigma) = 6$, $f_{\\mathrm{DA}}(\\sigma) = 3$. For a string $\\sigma$ made using each of A, B, C, D exactly $2020$ times, find the maximum value of $f_{\\mathrm{AB}}(\\sigma) + f_{\\mathrm{BC}}(\\sigma) + f_{\\mathrm{CD}}(\\sigma) + f_{\\mathrm{DA}}(\\sigma)$.",
+          "problem_orig": "네 문자 A, B, C, D를 일렬로 나열하여 만든 문자열 $\\sigma$에 대하여, $f_{\\mathrm{AB}}(\\sigma)$를 각 A마다 A의 오른쪽에 있는 B들의 개수의 합으로 정의하자. 같은 방법으로 $f_{\\mathrm{BC}}(\\sigma)$, $f_{\\mathrm{CD}}(\\sigma)$, $f_{\\mathrm{DA}}(\\sigma)$도 정의하자. 예를 들어, 문자열 $\\sigma = \\mathrm{ACBDBACDCBAD}$이면 $f_{\\mathrm{AB}}(\\sigma) = 3 + 1 + 0 = 4$이고, 같은 방법으로 $f_{\\mathrm{BC}}(\\sigma) = 4$, $f_{\\mathrm{CD}}(\\sigma) = 6$, $f_{\\mathrm{DA}}(\\sigma) = 3$이다. A, B, C, D를 각각 $2020$개씩 사용하여 만든 문자열 $\\sigma$에 대하여 $f_{\\mathrm{AB}}(\\sigma) + f_{\\mathrm{BC}}(\\sigma) + f_{\\mathrm{CD}}(\\sigma) + f_{\\mathrm{DA}}(\\sigma)$의 최댓값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "In an acute triangle $ABC$ $(AB > AC)$, let $D$, $E$, $F$ be the feet of the perpendiculars from the vertices $A$, $B$, $C$ to the opposite sides. Let $P$ be the intersection of the lines $EF$ and $BC$, and let $Q$ be the point on the segment $BD$ such that $\\angle QFD = \\angle EPC$. Let $O$ and $H$ be the circumcentre and orthocentre of triangle $ABC$. Show that if the lines $OH$ and $AQ$ are perpendicular, then the three points $P$, $O$, $H$ are collinear.",
+          "problem_orig": "예각삼각형 $ABC$ $(\\overline{AB} > \\overline{AC})$의 꼭짓점 $A$, $B$, $C$에서 마주보는 변에 내린 수선의 발을 각각 $D$, $E$, $F$라 하자. 점 $P$가 직선 $EF$와 $BC$의 교점이고, 점 $Q$는 선분 $BD$ 위의 점 중에서 $\\angle QFD = \\angle EPC$를 만족하는 점이다. 삼각형 $ABC$의 외심을 $O$, 수심을 $H$라 할 때, 직선 $OH$와 $AQ$가 서로 수직이면 세 점 $P$, $O$, $H$가 한 직선 위에 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "Real numbers $a$, $b$, $c$, $d$, $e$ satisfy all four of the following conditions.\n$$a \\le b \\le c \\le d \\le e, \\quad a + e = 1, \\quad b + c + d = 3, \\quad a^2 + b^2 + c^2 + d^2 + e^2 = 14$$\nFind the largest possible value of $ae$.",
+          "problem_orig": "실수 $a$, $b$, $c$, $d$, $e$가 다음 네 조건을 모두 만족한다.\n$$a \\le b \\le c \\le d \\le e, \\quad a + e = 1, \\quad b + c + d = 3, \\quad a^2 + b^2 + c^2 + d^2 + e^2 = 14$$\n이때 $ae$의 값이 될 수 있는 수 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "For some positive integers $n$, there exist $n$ distinct positive integers $a_1, a_2, \\ldots, a_n$ satisfying both of the following conditions.\n\n(1) $a_1 = 1$, $a_n = 2020$\n\n(2) For every integer $i$ with $2 \\le i \\le n$, $a_i - a_{i-1}$ is $-2$ or $3$.\n\nFind the largest such positive integer $n$.",
+          "problem_orig": "어떤 양의 정수 $n$의 경우에는 다음 두 조건을 모두 만족하는 $n$개의 서로 다른 양의 정수 $a_1, a_2, \\ldots, a_n$이 존재한다.\n\n(1) $a_1 = 1$, $a_n = 2020$\n\n(2) $2$ 이상 $n$ 이하인 모든 정수 $i$에 대하여 $a_i - a_{i-1}$은 $-2$ 또는 $3$이다.\n\n이런 양의 정수 $n$ 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For positive integers $n$, $k$, $r$, let $A(n, k, r)$ be the number of ordered $k$-tuples of integers $(x_1, x_2, \\ldots, x_k)$ satisfying all three of the following conditions.\n\n(i) $x_1 \\ge x_2 \\ge \\cdots \\ge x_k \\ge 0$\n\n(ii) $x_1 + x_2 + \\cdots + x_k = n$\n\n(iii) $x_1 - x_k \\le r$\n\nShow that for positive integers $s$, $t$ with $s, t \\ge 2$,\n$$A(st, s, t) = A(s(t-1), s, t) = A((s-1)t, s, t).$$",
+          "problem_orig": "양의 정수 $n$, $k$, $r$에 대하여 다음 세 조건을 모두 만족하는 정수의 순서쌍 $(x_1, x_2, \\ldots, x_k)$의 개수를 $A(n, k, r)$이라 하자.\n\n(i) $x_1 \\ge x_2 \\ge \\cdots \\ge x_k \\ge 0$\n\n(ii) $x_1 + x_2 + \\cdots + x_k = n$\n\n(iii) $x_1 - x_k \\le r$\n\n$2$ 이상인 양의 정수 $s$, $t$에 대하여, 다음을 보여라.\n$$A(st, s, t) = A(s(t-1), s, t) = A((s-1)t, s, t)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "A sequence $\\{a_n\\}$ all of whose terms are integers satisfies all three of the following conditions.\n\n(i) $a_1 = 2021^{2021}$\n\n(ii) For every positive integer $k$ $(k \\ge 2)$, $0 \\le a_k < k$.\n\n(iii) For every positive integer $k$, $a_1 - a_2 + a_3 - a_4 + \\cdots + (-1)^{k+1} a_k$ is a multiple of $k$.\n\nFind the value of the $2021^{2022}$-th term of the sequence $\\{a_n\\}$.",
+          "problem_orig": "모든 항이 정수인 수열 $\\{a_n\\}$은 다음 세 조건을 모두 만족한다.\n\n(i) $a_1 = 2021^{2021}$\n\n(ii) 양의 정수 $k$ $(k \\ge 2)$에 대하여 $0 \\le a_k < k$이다.\n\n(iii) 양의 정수 $k$에 대하여 $a_1 - a_2 + a_3 - a_4 + \\cdots + (-1)^{k+1} a_k$는 $k$의 배수이다.\n\n수열 $\\{a_n\\}$의 $2021^{2022}$번째 항의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "Let $X$ be the intersection of the two diagonals $AC$ and $BD$ of a quadrilateral $ABCD$ inscribed in a circle $O$. A quadrilateral $AEFB$ is inscribed in the circumcircle of triangle $ABX$, and the lines $EF$ and $AB$ are parallel. Let $G$ $(\\neq X)$ be the intersection of the circumcircle of triangle $CDX$ with the line $FX$, let $P$ be the intersection of the lines $EX$ and $AB$, and let $Q$ be the intersection of the lines $XG$ and $CD$. Let $S$ be the one of the two intersection points of the perpendicular bisector of the segment $EG$ with the circle $O$ that is closer to $A$ than to $B$. Show that the line through $S$ parallel to the line $PQ$ is tangent to the circle $O$.",
+          "problem_orig": "원 $O$에 내접하는 사각형 $ABCD$의 두 대각선 $AC$, $BD$의 교점을 $X$라 하자. 사각형 $AEFB$는 삼각형 $ABX$의 외접원에 내접하고, 직선 $EF$와 $AB$는 평행하다. 삼각형 $CDX$의 외접원과 직선 $FX$의 교점을 $G(\\neq X)$, 직선 $EX$와 $AB$의 교점을 $P$, 직선 $XG$와 $CD$의 교점을 $Q$라 하자. 선분 $EG$의 수직이등분선과 원 $O$의 두 교점 중 $B$보다 $A$에 가까운 점을 $S$라 할 때, 직선 $PQ$에 평행하고 점 $S$를 지나는 직선이 원 $O$에 접함을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "Let $D$ be the intersection of the bisector of the angle at $A$ of an acute triangle $ABC$ $(AB < AC)$ with the perpendicular bisector of the side $BC$. For a point $P$ inside triangle $ABC$, the line $CP$ meets the circumcircle of triangle $ABP$ at $K$ $(\\neq P)$. Show that the following two statements are equivalent.\n\n(i) The points $B$, $D$, $K$ are collinear.\n\n(ii) The intersection of the segments $AD$ and $BC$ lies on the circumcircle of triangle $APC$.",
+          "problem_orig": "예각삼각형 $ABC$ $(\\overline{AB} < \\overline{AC})$의 꼭짓각 $A$의 이등분선과 변 $BC$의 수직이등분선의 교점을 $D$라 하자. 삼각형 $ABC$의 내부의 점 $P$에 대하여 직선 $CP$가 삼각형 $ABP$의 외접원과 점 $K(\\neq P)$에서 만난다. 다음 두 명제가 동치임을 보여라.\n\n(i) 점 $B$, $D$, $K$가 한 직선 위에 있다.\n\n(ii) 선분 $AD$와 $BC$의 교점이 삼각형 $APC$의 외접원 위에 있다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying the following condition. (Here $\\mathbb{R}$ is the set of all real numbers.)\n\nFor all real numbers $x$, $y$: $f\\left(f(x+y) - f(x-y)\\right) = y^2 f(x)$.",
+          "problem_orig": "다음 조건을 만족하는 함수 $f : \\mathbb{R} \\to \\mathbb{R}$을 모두 구하여라. (단, $\\mathbb{R}$은 실수 전체의 집합)\n\n모든 실수 $x$, $y$에 대하여 $f\\left(f(x+y) - f(x-y)\\right) = y^2 f(x)$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "At a gathering there are $4042$ people, paired up into $2021$ pairs in total. For any two distinct people $A$, $B$ of this gathering, if $A$ knows $B$ then $B$ also knows $A$. Let $n$ be a positive integer. Each person at the gathering wants to choose one integer from $-n$ to $n$ inclusive so that all of the following conditions are satisfied. (Several people may choose the same number.)\n\n(i) At most two people choose $0$, and if exactly two do, those two people are a pair.\n\n(ii) Any two people who chose the same number are a pair or do not know each other.\n\n(iii) Any two people whose chosen numbers sum to $0$ are a pair or know each other.\n\nFind the smallest value of $n$ for which such a choice is always possible.",
+          "problem_orig": "어떤 모임에 $4042$명이 모여있고 두 명씩 짝을 이루어 총 $2021$쌍의 짝이 있다. 이 모임에 속하는 서로 다른 두 사람 $A$, $B$에 대하여 $A$가 $B$를 알면 $B$도 $A$를 안다고 한다. $n$은 양의 정수로, 이 모임에 모인 각각의 사람은 다음 조건을 모두 만족하도록 $-n$ 이상 $n$ 이하인 정수 중 하나를 선택하려고 한다. (여러 사람이 같은 수를 선택하는 것도 가능하다.)\n\n(i) $0$을 선택한 사람은 두 명 이하이고, 만약 정확히 두 명이면 그 두 사람은 짝이다.\n\n(ii) 같은 수를 선택한 두 사람은 짝이거나 모르는 사이이다.\n\n(iii) 선택한 수의 합이 $0$인 두 사람은 짝이거나 아는 사이이다.\n\n이와 같은 선택이 항상 가능한 $n$의 값 중 가장 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The incircle of a non-isosceles acute triangle $ABC$ touches the sides $AB$ and $BC$ at $D$ and $E$ respectively. If $I$ is the incentre of triangle $ABC$, show that the intersection of the lines $AI$ and $DE$ lies on the circle with diameter $AC$.",
+          "problem_orig": "이등변삼각형이 아닌 예각삼각형 $ABC$의 내접원이 점 $D$, $E$에서 각각 변 $AB$, $BC$에 접한다. 삼각형 $ABC$의 내심을 $I$라 하면, 직선 $AI$와 $DE$의 교점이 변 $AC$를 지름으로 하는 원 위에 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "For a positive integer $n$ $(\\ge 3)$, find the number of ordered $n$-tuples of integers $(a_1, a_2, \\ldots, a_n)$ satisfying both of the following conditions.\n\n• For every positive integer $i$ with $1 \\le i \\le n$, $1 \\le a_i \\le i$.\n\n• For all positive integers $i$, $j$, $k$ with $1 \\le i < j < k \\le n$, if $a_i = a_j$ then $a_j \\ge a_k$.",
+          "problem_orig": "양의 정수 $n$ $(\\ge 3)$에 대하여 다음 두 조건을 모두 만족하는 정수의 순서쌍 $(a_1, a_2, \\ldots, a_n)$의 개수를 구하여라.\n\n• $1 \\le i \\le n$을 만족하는 양의 정수 $i$에 대하여 $1 \\le a_i \\le i$이다.\n\n• $1 \\le i < j < k \\le n$을 만족하는 양의 정수 $i$, $j$, $k$에 대하여 $a_i = a_j$이면 $a_j \\ge a_k$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "An odd prime $p$ is given. For a positive integer $n$, let $f(n)$ be the remainder when the largest divisor of $n$ that is not a multiple of $p$ is divided by $p$. For example, if $p = 5$ then $f(6) = 1$, $f(35) = 2$, $f(75) = 3$. Integers $a_1, a_2, \\ldots, a_n, \\ldots$ satisfy both of the following conditions.\n\n• $a_1 = 1$\n\n• For every positive integer $n$, $a_{n+1} = a_n + (-1)^{f(n)+1}$.\n\nFind all integers $m$ for which there are infinitely many positive integers $k$ with $m = a_k$.",
+          "problem_orig": "홀수인 소수 $p$가 주어져있다. 양의 정수 $n$에 대하여 $n$의 약수이면서 $p$의 배수가 아닌 수 중 가장 큰 것을 $p$로 나눈 나머지를 $f(n)$이라 하자. 예를 들어, $p = 5$이면 $f(6) = 1$, $f(35) = 2$, $f(75) = 3$이다. 정수 $a_1, a_2, \\ldots, a_n, \\ldots$은 다음 두 조건을 모두 만족한다.\n\n• $a_1 = 1$\n\n• 모든 양의 정수 $n$에 대하여 $a_{n+1} = a_n + (-1)^{f(n)+1}$이다.\n\n이때 $m = a_k$인 양의 정수 $k$가 무한히 많은 정수 $m$을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{N} \\to \\mathbb{N}$ satisfying the following condition. (Here $\\mathbb{N}$ is the set of all positive integers.)\n\n(Condition) For all positive integers $x$, $y$, $\\frac{f(x+y) - f(x)}{f(y)}$ is a positive integer not exceeding $2022^{2022}$.",
+          "problem_orig": "다음 조건을 만족하는 함수 $f : \\mathbb{N} \\to \\mathbb{N}$을 모두 구하여라. (단, $\\mathbb{N}$은 양의 정수 전체의 집합)\n\n(조건) 각 양의 정수 $x$, $y$에 대하여 $\\frac{f(x+y) - f(x)}{f(y)}$는 $2022^{2022}$ 이하의 양의 정수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Real numbers $a_1, a_2, \\ldots, a_n, \\ldots$ satisfy both of the following conditions.\n\n• $a_1 = 2$, $a_2 = 11$\n\n• For every positive integer $n$, $2a_{n+2} = 3a_n + \\sqrt{5\\left(a_n^2 + a_{n+1}^2\\right)}$.\n\nShow that $a_n$ is a rational number for every positive integer $n$.",
+          "problem_orig": "실수 $a_1, a_2, \\ldots, a_n, \\ldots$은 다음 두 조건을 모두 만족한다.\n\n• $a_1 = 2$, $a_2 = 11$\n\n• 모든 양의 정수 $n$에 대하여 $2a_{n+2} = 3a_n + \\sqrt{5\\left(a_n^2 + a_{n+1}^2\\right)}$이다.\n\n모든 양의 정수 $n$에 대하여 $a_n$은 유리수임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In a triangle $ABC$, $AB = AC$. A point $D$ $(\\neq A, C)$ lies on the side $AC$, and a circle $O$ is tangent to the line $BD$ at a point $E$ and tangent to the line $AC$ at the point $C$. The line $AE$ meets the circle $O$ at $F$ $(\\neq E)$, and the line $AC$ meets the circumcircle of triangle $ABF$ at $G$ $(\\neq A)$. Show that the four points $D$, $E$, $F$, $G$ lie on a circle.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = \\overline{AC}$이다. 점 $D$ $(\\neq A, C)$는 변 $AC$ 위의 점이고 원 $O$는 점 $E$에서 직선 $BD$에 접하고 점 $C$에서 직선 $AC$에 접한다. 직선 $AE$와 원 $O$는 점 $F$ $(\\neq E)$에서 만나고, 직선 $AC$와 삼각형 $ABF$의 외접원은 점 $G$ $(\\neq A)$에서 만날 때, 네 점 $D$, $E$, $F$, $G$가 한 원 위에 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "On $n$ cards the integers from $1$ to $n$ are written, one on each card, and the numbers on the cards are all different. Starting from the state where each of $n$ boxes contains one of these cards, we want to put all $n$ cards into one box by repeating the following operation. Find all positive integers $n$ for which this is possible.\n\n(Operation) Choose, among the cards in the boxes, a card with any desired integer $k$ written on it, and move it to another box in which the sum of the numbers written on the cards is a multiple of $k$. (A card is not moved into an empty box.)",
+          "problem_orig": "카드 $n$장에 $1$부터 $n$까지의 정수가 하나씩 적혀 있으며 각 카드에 적힌 수는 모두 다르다. $n$개의 상자에 이 카드가 한 장씩 들어있는 상태에서 시작하여, 다음 시행을 반복하여 $n$장의 카드를 모두 한 상자에 넣으려고 한다. 이것이 가능한 양의 정수 $n$을 모두 구하여라.\n\n(시행) 상자에 들어있는 카드 중 원하는 정수 $k$가 적혀있는 카드를 선택하여, 상자에 들어있는 카드에 적힌 수의 합이 $k$의 배수가 되는 다른 상자로 옮긴다. (단, 빈 상자로는 옮기지 않는다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "Find all ordered pairs $(x, y)$ of rational numbers $x$, $y$ satisfying the following equation.\n$$xy^2 = x^2 + 2x - 3$$",
+          "problem_orig": "다음 등식을 만족하는 유리수 $x$, $y$의 순서쌍 $(x, y)$를 모두 구하여라.\n$$xy^2 = x^2 + 2x - 3$$",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all ordered pairs $(x, y)$ of integers $x$, $y$ satisfying the following equation.\n$$y^2 = x^3 + 2x^2 + 2x + 1$$",
+          "problem_orig": "다음 등식을 만족하는 정수 $x$, $y$의 순서쌍 $(x, y)$를 모두 구하여라.\n$$y^2 = x^3 + 2x^2 + 2x + 1$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "A point $H$ $(\\neq A, B)$ lies on the side $AB$ of a cyclic quadrilateral $ABCD$ $(AD < BC)$. Let $E$ $(\\neq B)$ be the point where the circumcircle of triangle $BCH$ meets the segment $BD$, and let $F$ be the intersection of the lines $HE$ and $AD$. If the circle passing through $C$ and tangent to the line $BD$ at $E$ meets the segment $EF$ at $G$ $(\\neq E, F)$, show that $\\angle DFG = \\angle FCG$.",
+          "problem_orig": "원에 내접하는 사각형 $ABCD$ $(\\overline{AD} < \\overline{BC})$의 변 $AB$ 위에 점 $H$ $(\\neq A, B)$가 있다. 삼각형 $BCH$의 외접원이 선분 $BD$와 만나는 점을 $E$ $(\\neq B)$, 직선 $HE$와 직선 $AD$의 교점을 $F$라 하자. 점 $C$를 지나고 점 $E$에서 직선 $BD$에 접하는 원이 선분 $EF$와 점 $G$ $(\\neq E, F)$에서 만날 때, $\\angle DFG = \\angle FCG$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Positive integers $a_1, a_2, \\ldots, a_{2023}$ satisfy both of the following conditions.\n\n• $a_1 = 5$, $a_2 = 25$\n\n• For the positive integers $n = 1, 2, \\ldots, 2021$, $a_{n+2} = 7a_{n+1} - a_n - 6$.\n\nShow that there exist integers $x$, $y$ such that $a_{2023} = x^2 + y^2$.",
+          "problem_orig": "양의 정수 $a_1, a_2, \\ldots, a_{2023}$은 다음 두 조건을 모두 만족한다.\n\n• $a_1 = 5$, $a_2 = 25$\n\n• 양의 정수 $n = 1, 2, \\ldots, 2021$에 대하여 $a_{n+2} = 7a_{n+1} - a_n - 6$이다.\n\n이때 $a_{2023} = x^2 + y^2$을 만족하는 정수 $x$, $y$가 존재함을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "$2023$ players took part in a tennis tournament, and any two players of the tournament played exactly one match against each other. No match ended in a draw, and no player beat all the other players. A player $A$ is called \"skilled\" if $A$ satisfies the following condition.\n\n(Condition) For each player $B$ who beat $A$, there exists a player $C$ who beat $B$ and lost to $A$.\n\nExactly $N$ $(\\ge 0)$ skilled players appeared in this tournament. Find the smallest possible value of $N$.",
+          "problem_orig": "테니스 대회에 $2023$명의 선수가 참가했고, 대회에 참가한 임의의 두 선수는 정확히 한 번의 경기를 치렀다. 어떤 경기에서도 무승부는 발생하지 않았고, 다른 모든 선수를 이긴 선수는 나오지 않았다. 어떤 선수 $A$가 다음 조건을 만족하면 $A$를 “실력자”라고 하자.\n\n(조건) $A$를 이긴 각각의 선수 $B$에 대하여, $B$를 이기고 $A$에게 진 선수 $C$가 존재한다.\n\n이 대회에서 실력자는 정확히 $N$ $(\\ge 0)$명 나왔다고 한다. 가능한 $N$의 값 중 가장 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "For a positive integer $n$ $(\\ge 5)$, $n$ white stones and $n$ black stones, $2n$ stones in total, are arranged in a row so that, as in the figure below, the first $n$ stones from the left are white and the next $n$ are black.\n\nThe positions of the stones can be changed by repeating the following operation.\n\n(Operation) Choose a positive integer $k$ $(\\le 2n - 5)$ and swap the $k$-th stone and the $(k+5)$-th stone from the left.\n\nWe want, after finitely many operations, the first $n$ stones from the left to be black and the next $n$ to be white. Find all positive integers $n$ for which this is possible.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/krj_2023_p5_fig.png",
+          "problem_orig": "양의 정수 $n$ $(\\ge 5)$에 대하여 $n$개의 흰 돌과 $n$개의 검은 돌, 총 $2n$개의 돌이 일렬로 나열되어 있는데, 아래 그림과 같이 왼쪽에서 처음 $n$개는 흰돌, 그 다음 $n$개는 검은돌이다.\n\n다음 시행을 반복하여 돌의 위치를 바꿀 수 있다.\n\n(시행) 양의 정수 $k$ $(\\le 2n - 5)$를 선택하여 왼쪽에서 $k$-번째 돌과 $(k+5)$-번째 돌을 서로 바꾼다.\n\n유한번의 시행으로 왼쪽에서 처음 $n$개는 검은 돌, 그 다음 $n$개는 흰 돌이 놓여있게 하려고 한다. 가능한 양의 정수 $n$을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find the largest real number $A$ satisfying the following condition.\n\n(Condition) For all positive integers $x$, $y$, $3x^2 + y^2 + 1 \\ge A(x^2 + xy + x)$.",
+          "problem_orig": "다음 조건을 만족하는 가장 큰 실수 $A$를 구하여라.\n\n(조건) 모든 양의 정수 $x$, $y$에 대하여, $3x^2 + y^2 + 1 \\ge A(x^2 + xy + x)$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Find the smallest positive integer $N$ for which there do not exist distinct sets $A$, $B$ satisfying all three of the following conditions. (Here $N$ is not a power of $2$, i.e. $N \\neq 1, 2^1, 2^2, \\ldots$.)\n\n• $A, B \\subseteq \\{1, 2^1, 2^2, 2^3, \\ldots, 2^{2023}\\} \\cup \\{N\\}$\n\n• $A$ and $B$ are non-empty, and $A$ and $B$ have the same number of elements.\n\n• The sum of all elements of $A$ equals the sum of all elements of $B$.",
+          "problem_orig": "다음 세 조건을 모두 만족하는 서로 다른 집합 $A$, $B$가 존재하지 않는 가장 작은 양의 정수 $N$을 구하여라. (단, $N$은 $2$의 거듭제곱꼴이 아니다. 즉, $N \\neq 1, 2^1, 2^2, \\ldots$이다.)\n\n• $A, B \\subseteq \\{1, 2^1, 2^2, 2^3, \\ldots, 2^{2023}\\} \\cup \\{N\\}$\n\n• $A$와 $B$는 공집합이 아니며, $A$와 $B$의 원소의 개수는 같다.\n\n• $A$의 모든 원소의 합과 $B$의 모든 원소의 합이 같다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A red equilateral triangle $T$ with side length $1$ is drawn in the plane. For a positive real number $c$, we want to place three sheets of blue coloured paper, each in the shape of an equilateral triangle with side length $c$, on the plane so as to cover $T$ completely. Find the smallest possible value of $c$. (As in the figure below, the blue sheets may overlap each other or extend beyond $T$. However, folding or tearing the sheets is not allowed.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/krj_2023_p8_fig.png",
+          "problem_orig": "한 변의 길이가 $1$인 빨간색 정삼각형 $T$가 평면 위에 그려져 있다. 양의 실수 $c$에 대하여, 한 변의 길이가 $c$인 정삼각형 모양의 파란색 색종이 세 장을 평면 위에 올려놓아 $T$를 완전히 덮으려고 한다. 가능한 $c$의 값 중 가장 작은 것을 구하여라. (아래 그림과 같이 파란색 색종이들은 서로 겹치거나 $T$를 빠져나와도 상관없다. 단, 색종이를 접거나 찢는 것은 허용하지 않는다.)",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Find all ordered triples $(x, y, z)$ of distinct positive integers $x$, $y$, $z$ satisfying the following equation.\n$$\\frac{1}{x+1} + \\frac{1}{y+2} + \\frac{1}{z+3} = \\frac{1}{2}\\left(\\frac{1}{1} + \\frac{1}{2} + \\frac{1}{3}\\right)$$",
+          "problem_orig": "다음 등식을 만족하는 서로 다른 양의 정수 $x$, $y$, $z$의 순서쌍 $(x, y, z)$를 모두 구하여라.\n$$\\frac{1}{x+1} + \\frac{1}{y+2} + \\frac{1}{z+3} = \\frac{1}{2}\\left(\\frac{1}{1} + \\frac{1}{2} + \\frac{1}{3}\\right)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "There are $99$ distinct points $P_1, P_2, \\ldots, P_{99}$ on a circle $O$. For each point $P_i$, let $n_i$ be the number of points $P_j$ $(\\neq P_i)$ met while moving clockwise along the circle from $P_i$ to the antipodal point of $P_i$. Prove the following inequality.\n$$n_1 + n_2 + \\cdots + n_{99} \\le \\frac{99 \\cdot 98}{2} + 49 = 4900$$\n(Here the antipodal point of $P_i$ on the circle $O$ means the other endpoint of the diameter containing $P_i$; if this point is some $P_j$, it is counted among the points met.)",
+          "problem_orig": "원 $O$ 위에 서로 다른 $99$개의 점 $P_1, P_2, \\ldots, P_{99}$가 있다. 각각의 점 $P_i$에 대하여 $P_i$에서 시작하여 원을 따라 시계 방향으로 돌 때 $P_i$의 대척점까지 이동하는 동안 만나는 점 $P_j$ $(\\neq P_i)$의 개수를 $n_i$라 하자. 다음 부등식을 증명하여라.\n$$n_1 + n_2 + \\cdots + n_{99} \\le \\frac{99 \\cdot 98}{2} + 49 = 4900$$\n(단, 원 $O$에서 점 $P_i$의 대척점이란, $P_i$를 포함하는 지름의 다른 끝점을 의미하고, 이 점이 $P_j$일 경우 만나는 점에 포함된다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In an acute triangle $ABC$, $\\angle A > \\angle C$. The incircle of triangle $ABC$ touches the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively, and take a point $P$ $(\\neq F)$ on the segment $AF$. Let $L$ and $R$ be the two intersection points of the bisector of angle $ABC$ with the circumcircle $O$ of triangle $PEF$, named in order starting from the one closer to $B$. The circle $O$ meets the lines $DF$ and $DR$ at $Q$ $(\\neq F, L)$ and $S$ $(\\neq R)$ respectively, and the line $PS$ meets the segment $BC$ at $T$. Show that the three points $T$, $Q$, $L$ are collinear.",
+          "problem_orig": "예각삼각형 $ABC$에서 $\\angle A > \\angle C$이다. 삼각형 $ABC$의 내접원이 변 $BC$, $CA$, $AB$와 만나는 점을 각각 $D$, $E$, $F$라 하고, 선분 $AF$ 위의 점 $P$ $(\\neq F)$를 잡자. 각 $ABC$의 이등분선과 삼각형 $PEF$의 외접원 $O$가 만나는 두 점 중 $B$에서 가까운 점부터 $L$, $R$이라 하자. 원 $O$가 직선 $DF$, $DR$과 각각 점 $Q$ $(\\neq F, L)$, $S$ $(\\neq R)$에서 만나고, 직선 $PS$와 선분 $BC$가 점 $T$에서 만날 때, 세 점 $T$, $Q$, $L$이 한 직선 위에 있음을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Find the largest positive integer $n$ satisfying the following condition.\n\n(Condition) There exist positive integers $a$, $b$ such that $\\frac{a^n + b^n}{n!}$ is an integer not exceeding $100$.\n\n(Here $n! = 1 \\times 2 \\times \\cdots \\times n$.)",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$의 최댓값을 구하여라.\n\n(조건) $\\frac{a^n + b^n}{n!}$이 $100$ 이하의 정수가 되는 양의 정수 $a$, $b$가 존재한다.\n\n(단, $n! = 1 \\times 2 \\times \\cdots \\times n$)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Triangle $ABC$ is a right triangle with the right angle at $C$. A point $X$ inside triangle $ABC$ satisfies $CA = AX$. Let $D$ be the foot of the perpendicular from $C$ to the segment $AB$, and let $Y$ $(\\neq X)$ be the intersection of the line $DX$ with the circumcircle of triangle $ABX$. Show that $AX = AY$.",
+          "problem_orig": "삼각형 $ABC$는 각 $C$가 직각인 직각삼각형이다. 점 $X$는 $\\overline{CA} = \\overline{AX}$를 만족하는 삼각형 $ABC$ 내부의 점이다. 점 $C$에서 선분 $AB$에 내린 수선의 발을 $D$, 직선 $DX$와 삼각형 $ABX$의 외접원의 교점을 $Y$ $(\\neq X)$라 할 때, $\\overline{AX} = \\overline{AY}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find all ordered pairs $(n, p)$ of a positive integer $n$ and a prime $p$ satisfying the following condition.\n\n(Condition) $2n - 1$ is a divisor of $p - 1$, and $p$ is a divisor of $4n^2 + 7$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$과 소수 $p$의 순서쌍 $(n, p)$를 모두 구하여라.\n\n(조건) $2n - 1$은 $p - 1$의 약수이고 $p$는 $4n^2 + 7$의 약수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "For a positive integer $k$ $(\\le 50)$, let $A_k$ be the number of ordered $2k$-tuples $(a_1, a_2, \\ldots, a_{2k})$ of $2k$ distinct positive integers $a_1, a_2, \\ldots, a_{2k}$ satisfying all three of the following conditions.\n\n• $a_1, a_2, \\ldots, a_{2k} \\le 2 \\times 50$\n\n• For every positive odd integer $i \\le 2k - 1$, $a_i > a_{i+1}$.\n\n• For every positive even integer $i \\le 2k - 2$, $a_i < a_{i+1}$.\n\nShow that $A_1 \\le A_2 \\le \\cdots \\le A_{49}$.",
+          "problem_orig": "양의 정수 $k$ $(\\le 50)$에 대하여 다음 세 조건을 모두 만족하는 $2k$개의 서로 다른 양의 정수 $a_1, a_2, \\ldots, a_{2k}$의 순서쌍 $(a_1, a_2, \\ldots, a_{2k})$의 개수를 $A_k$라 하자.\n\n• $a_1, a_2, \\ldots, a_{2k} \\le 2 \\times 50$\n\n• $2k - 1$ 이하인 양의 홀수 $i$에 대하여 $a_i > a_{i+1}$이다.\n\n• $2k - 2$ 이하인 양의 짝수 $i$에 대하여 $a_i < a_{i+1}$이다.\n\n이때 $A_1 \\le A_2 \\le \\cdots \\le A_{49}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A function $f$ defined on the positive integers and taking integer values satisfies both of the following conditions.\n\n• $f(1) = 1$, $f(2) = -1$\n\n• For each positive integer $n$, $f(n) + f(n+1) + f(n+2) = f\\left(\\left[\\frac{n+2}{3}\\right]\\right)$.\n\nFind the number of positive integers $k \\le 1000$ satisfying $f(3) + f(6) + f(9) + \\cdots + f(3(k-1)) + f(3k) = 5$. (Here $[a]$ denotes the greatest integer not exceeding $a$.)",
+          "problem_orig": "양의 정수에 대하여 정의되고 정수를 함숫값으로 갖는 함수 $f$가 다음 두 조건을 모두 만족한다.\n\n• $f(1) = 1$, $f(2) = -1$\n\n• 각 양의 정수 $n$에 대하여, $f(n) + f(n+1) + f(n+2) = f\\left(\\left[\\frac{n+2}{3}\\right]\\right)$\n\n이때 $f(3) + f(6) + f(9) + \\cdots + f(3(k-1)) + f(3k) = 5$를 만족하는 $1000$ 이하의 양의 정수 $k$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "An acute triangle $ABC$ satisfies $\\angle BAC > \\angle CBA$. A point $P$ $(\\neq A, B)$ on the side $AB$ and a point $Q$ $(\\neq A, C)$ on the side $AC$ are given so that $\\angle APQ + \\angle ACB = 180^\\circ$. Let $D$ $(\\neq B)$ be the point where the line $BQ$ meets the circumcircle of triangle $ABC$, and let $E$ $(\\neq D)$ be the point where the line $CD$ meets the circumcircle of triangle $AQD$. Show that $PQ = QE$.",
+          "problem_orig": "예각삼각형 $ABC$가 $\\angle BAC > \\angle CBA$를 만족한다. 변 $AB$ 위의 점 $P$ $(\\neq A, B)$와 변 $AC$ 위의 점 $Q$ $(\\neq A, C)$가 $\\angle APQ + \\angle ACB = 180^\\circ$를 만족하도록 주어져 있다. 직선 $BQ$가 삼각형 $ABC$의 외접원과 만나는 점을 $D$ $(\\neq B)$라 하고, 직선 $CD$가 삼각형 $AQD$의 외접원과 만나는 점을 $E$ $(\\neq D)$라 하자. 이때 $\\overline{PQ} = \\overline{QE}$임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Show that there is no positive integer $n$ satisfying the following condition.\n\n(Condition) $n \\cdot 4^n + 9$ is a perfect square.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$이 존재하지 않음을 보여라.\n\n(조건) $n \\cdot 4^n + 9$가 완전제곱수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A function $f$ defined on the positive integers and taking real values satisfies both of the following conditions.\n\n• $f(1) = f(2) = 1$\n\n• For every positive integer $n$, $f(n+2) = 2\\sqrt{f(n+1) + f(n)} + f(n) + 1$.\n\nFind the value of $f(2026) - f(2025)$.",
+          "problem_orig": "양의 정수에 대하여 정의되고 실수를 함숫값으로 갖는 함수 $f$가 다음 두 조건을 모두 만족한다.\n\n• $f(1) = f(2) = 1$\n\n• 모든 양의 정수 $n$에 대하여, $f(n+2) = 2\\sqrt{f(n+1) + f(n)} + f(n) + 1$\n\n이때 $f(2026) - f(2025)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "For an even positive integer $n$, there are $5n$ cards. Each card has one of the integers from $1$ to $5n$ written on it, and the numbers on the cards are all different. These $5n$ cards are put into $5$ boxes $B_1, B_2, B_3, B_4, B_5$ so that each box contains exactly $n$ cards. For each integer $k$ $(1 \\le k \\le 5)$, define $x_k$, $y_k$ as follows. (Here $B_6 = B_1$, $B_7 = B_2$.)\n\n• $x_k$ is the number of ordered pairs $(i, j)$ of integers $i$, $j$ $(i < j)$ such that the card with $i$ is in $B_k$ and the card with $j$ is in $B_{k+1}$.\n\n• $y_k$ is the number of ordered pairs $(i, j)$ of integers $i$, $j$ $(i < j)$ such that the card with $i$ is in $B_k$ and the card with $j$ is in $B_{k+2}$.\n\nFor example, if $n = 2$ and $B_1$ contains the cards with $1, 3$, $B_2$ those with $2, 7$, $B_3$ those with $6, 10$, $B_4$ those with $5, 8$, and $B_5$ those with $4, 9$, then $x_1 = 3$, $x_3 = 1$, $y_1 = 4$, $y_5 = 1$. When the cards are placed so that both $x_1 = x_2 = x_3 = x_4 = x_5$ and $y_1 = y_2 = y_3 = y_4 = y_5$ hold, find all possible values of the sum of the numbers written on all the cards in $B_1$.",
+          "problem_orig": "짝수인 양의 정수 $n$에 대하여, $5n$장의 카드가 있다. 각각의 카드에는 $1$부터 $5n$까지의 정수들 중 하나가 적혀 있고, 각 카드에 적힌 숫자는 모두 다르다. $5$개의 상자 $B_1, B_2, B_3, B_4, B_5$에 이 $5n$장의 카드를 넣는데, 각 상자에는 정확히 $n$장의 카드가 들어가도록 한다. 각각의 정수 $k$ $(1 \\le k \\le 5)$에 대하여 $x_k$, $y_k$를 다음과 같이 정의하자. (단, $B_6 = B_1$, $B_7 = B_2$이다.)\n\n• $x_k$는 $i$가 적힌 카드가 $B_k$에 들어있고 $j$가 적힌 카드가 $B_{k+1}$에 들어있는 정수 $i, j$ $(i < j)$의 순서쌍 $(i, j)$의 개수이다.\n\n• $y_k$는 $i$가 적힌 카드가 $B_k$에 들어있고 $j$가 적힌 카드가 $B_{k+2}$에 들어있는 정수 $i, j$ $(i < j)$의 순서쌍 $(i, j)$의 개수이다.\n\n예를 들어, $n = 2$이고 $B_1$에는 $1, 3$, $B_2$에는 $2, 7$, $B_3$에는 $6, 10$, $B_4$에는 $5, 8$, $B_5$에는 $4, 9$가 적힌 카드들이 들어있으면 $x_1 = 3$, $x_3 = 1$, $y_1 = 4$, $y_5 = 1$이다. 조건 $x_1 = x_2 = x_3 = x_4 = x_5$와 $y_1 = y_2 = y_3 = y_4 = y_5$가 모두 성립하도록 카드를 넣었을 때, $B_1$에 들어있는 모든 카드에 적힌 숫자의 합으로 가능한 값을 모두 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "The integers $a_1, a_2, \\ldots, a_{100}$ are distinct positive integers not exceeding $100$, and the integers $b_1, b_2, \\ldots, b_{100}$ are also distinct positive integers not exceeding $100$. Show that the following inequality holds.\n$$\\frac{1}{1 + a_1 + b_1} + \\frac{1}{2 + a_2 + b_2} + \\cdots + \\frac{1}{100 + a_{100} + b_{100}} > \\frac{200}{303}$$",
+          "problem_orig": "정수 $a_1, a_2, \\ldots, a_{100}$은 $100$ 이하의 서로 다른 양의 정수들이고, 정수 $b_1, b_2, \\ldots, b_{100}$ 또한 $100$ 이하의 서로 다른 양의 정수들이다. 이때 다음 부등식이 성립함을 보여라.\n$$\\frac{1}{1 + a_1 + b_1} + \\frac{1}{2 + a_2 + b_2} + \\cdots + \\frac{1}{100 + a_{100} + b_{100}} > \\frac{200}{303}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A set $\\mathcal{P}$ consists of $n$ $(\\ge 3)$ points in the plane, no three of which are collinear. Among the triangles whose vertices are three distinct points of $\\mathcal{P}$, a triangle containing no other point of $\\mathcal{P}$ in its interior is called a \"lonely triangle\". Show that the number of lonely triangles is always at least $\\frac{(n-1)(n-2)}{2}$.",
+          "problem_orig": "집합 $\\mathcal{P}$는 평면 상의 $n$ $(\\ge 3)$개의 점들로 구성되어 있고, 이 점들 중 어떤 세 점도 한 직선 위에 있지 않다. 집합 $\\mathcal{P}$의 서로 다른 세 점을 꼭짓점으로 가지는 삼각형 중, 내부에 $\\mathcal{P}$의 다른 점을 하나도 포함하지 않는 삼각형을 ‘외로운 삼각형’이라고 하자. 외로운 삼각형의 개수가 항상 $\\frac{(n-1)(n-2)}{2}$ 이상임을 보여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Find the largest possible value of a positive integer $n$ satisfying the following condition.\n\n(Condition) There exist positive integers $a$, $b$ such that $\\frac{11}{a} + \\frac{13}{b} + \\frac{17}{n} = 1$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$이 가질 수 있는 가장 큰 값을 구하여라.\n\n(조건) $\\frac{11}{a} + \\frac{13}{b} + \\frac{17}{n} = 1$을 만족하는 양의 정수 $a$, $b$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "A convex quadrilateral $ABCD$ satisfies $\\angle ABC + \\angle CDA > 180^\\circ$. Let $O_1$ be the circumcircle of triangle $ABC$ and $O_2$ the circumcircle of triangle $ADC$. Let $P$, $Q$ be the two points where the tangent to the circle $O_1$ at $B$ meets the circle $O_2$, and let $R$, $S$ be the two points where the tangent to the circle $O_2$ at $D$ meets the circle $O_1$. (Here, with respect to the line $BD$, the points $P$, $R$ lie on the same side as $A$, and the points $Q$, $S$ lie on the same side as $C$.) Show that if the lines $PR$ and $QS$ are parallel, then the line $AC$ passes through the midpoint of the segment $BD$.",
+          "problem_orig": "볼록사각형 $ABCD$가 $\\angle ABC + \\angle CDA > 180^\\circ$를 만족한다. 삼각형 $ABC$의 외접원을 $O_1$, 삼각형 $ADC$의 외접원을 $O_2$라 하고, 점 $B$에서 원 $O_1$에 접하는 직선이 원 $O_2$와 만나는 두 점을 $P$, $Q$, 점 $D$에서 원 $O_2$에 접하는 직선이 원 $O_1$과 만나는 두 점을 $R$, $S$라 하자. (단, 직선 $BD$에 대하여 점 $P$, $R$은 점 $A$와 같은 쪽에 있고, 점 $Q$, $S$는 점 $C$와 같은 쪽에 있다.) 만약 직선 $PR$과 $QS$가 평행하면, 직선 $AC$가 선분 $BD$의 중점을 지남을 보여라.",
+          "orig_lang": "ko"
+        }
+      ]
     }
   ]
 }

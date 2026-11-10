@@ -919,6 +919,506 @@
           "problem": "Quadrilateral $ABCD$ is inscribed in a circle with center $O$, and $E=AB\\cap CD$. Let $M$ be the midpoint of $CD$, and let $F$ be the second intersection of the circumcircles of $BEC$ and $OEM$. If $\\angle OAE=75^\\circ$, $\\angle OFD=25^\\circ$, $\\angle FDA=20^\\circ$, find $\\angle FEC-\\angle DAC$."
         }
       ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the number of subsets $S$ of $\\{1, 2, \\ldots, 10\\}$ satisfying the following condition.\n\n(Condition) The set $\\{1, 2, 3\\} \\cap S$ has exactly $1$ element.",
+          "problem_orig": "다음 조건을 만족하는 집합 $\\{1, 2, \\ldots, 10\\}$의 부분집합 $S$의 개수를 구하여라.\n\n(조건) 집합 $\\{1, 2, 3\\} \\cap S$의 원소의 개수는 $1$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "Positive integers $x$, $y$, $z$ satisfy the equation $x^2 + y^2 + z^2 = 224$. Find the value of $x + y + z$.",
+          "problem_orig": "양의 정수 $x$, $y$, $z$는 등식 $x^2 + y^2 + z^2 = 224$를 만족한다. $x + y + z$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "In a rhombus $ABCD$, for the midpoint $M$ of the side $BC$, $AM = 3$ and $BM = 2$. If $S$ is the area of the rhombus $ABCD$, find the value of $S^2$.",
+          "problem_orig": "마름모 $ABCD$에서 변 $BC$의 중점 $M$에 대하여 $\\overline{AM} = 3$, $\\overline{BM} = 2$이다. 마름모 $ABCD$의 넓이를 $S$라 할 때, $S^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "The curve $y = x^3 + 3x^2 - 6x + 15$ and the line $y = a$ meet at three distinct points $P$, $Q$, $R$. If $PQ = QR$, find the value of the real number $a$.",
+          "problem_orig": "곡선 $y = x^3 + 3x^2 - 6x + 15$와 직선 $y = a$가 서로 다른 세 점 $P$, $Q$, $R$에서 만난다. $\\overline{PQ} = \\overline{QR}$일 때, 실수 $a$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "Find the number of non-empty subsets of $\\{1, 2, 3, 4, 5, 6, 7, 8\\}$ for which the product of the elements is a multiple of $12$.",
+          "problem_orig": "집합 $\\{1, 2, 3, 4, 5, 6, 7, 8\\}$의 공집합이 아닌 부분집합 중 원소의 곱이 $12$의 배수인 것의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "A pentagon $ABCDE$ is inscribed in a circle of radius $10$. If $AB = 1$ and $\\angle BAC = \\angle ACE = \\angle CED = 30^\\circ$, find the value of $(DE)^2$.",
+          "problem_orig": "반지름이 $10$인 원에 내접하는 오각형 $ABCDE$가 있다. $\\overline{AB} = 1$, $\\angle BAC = \\angle ACE = \\angle CED = 30^\\circ$일 때, $(\\overline{DE})^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 7,
+          "problem": "When the polynomial $(x^2 - 1)^5 (x^2 - x + 1)^5$ is expanded, find the coefficient of $x^9$.",
+          "problem_orig": "다항식 $(x^2 - 1)^5 (x^2 - x + 1)^5$을 전개하였을 때, $x^9$의 계수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 8,
+          "problem": "Find the remainder when the integer $\\frac{2^{84} - 1}{(2^7 - 1)(2^8 + 2^4 + 1)}$ is divided by $2^7$.",
+          "problem_orig": "정수 $\\frac{2^{84} - 1}{(2^7 - 1)(2^8 + 2^4 + 1)}$을 $2^7$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 9,
+          "problem": "A polynomial function $f(x)$ satisfies both of the following conditions. Find the value of $\\lim_{x \\to 0} \\frac{x f'(x)}{f(x)}$.\n\n(i) $f(0) = 0$\n\n(ii) $\\lim_{x \\to 0} \\frac{(f'(x))^2}{f(x) f''(x)} = \\frac{23}{22}$",
+          "problem_orig": "다항함수 $f(x)$가 다음 조건을 모두 만족할 때, $\\lim_{x \\to 0} \\frac{x f'(x)}{f(x)}$의 값을 구하여라.\n\n(i) $f(0) = 0$\n\n(ii) $\\lim_{x \\to 0} \\frac{(f'(x))^2}{f(x) f''(x)} = \\frac{23}{22}$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 10,
+          "problem": "Find the number of trapezoids whose four vertices are vertices of a regular $12$-gon $A_1 A_2 \\cdots A_{12}$.",
+          "problem_orig": "정$12$각형 $A_1 A_2 \\cdots A_{12}$의 꼭짓점 중에서 $4$개의 점을 꼭짓점으로 가지는 사다리꼴의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 11,
+          "problem": "The point $B$ divides the segment $AC$ internally in the ratio $3:2$. Let $O$ be the semicircle with diameter $AC$, and among the semicircles with diameters $AB$ and $BC$, let $O_1$ and $O_2$ respectively be those on the same side of $AC$ as $O$. Let $P$ be the intersection of $O$ with the line $\\ell$ through $B$ perpendicular to the segment $AC$, and let $Q$, $R$ be the points where the common external tangent of the semicircles $O_1$, $O_2$ other than $\\ell$ touches $O_1$, $O_2$ respectively. If the areas of triangles $PQR$ and $PAC$ are $X$ and $Y$ respectively, find the value of $\\frac{600X}{Y}$.",
+          "problem_orig": "점 $B$는 선분 $AC$를 $3:2$로 내분하는 점이다. 선분 $AC$를 지름으로 하는 반원을 $O$라 하고 선분 $AB$와 $BC$를 지름으로 하는 반원 중 선분 $AC$에 대하여 $O$와 같은 쪽에 있는 반원을 각각 $O_1$, $O_2$라 하자. 점 $B$를 지나고 선분 $AC$에 수직인 직선 $\\ell$과 $O$의 교점을 $P$라 하고, 반원 $O_1$, $O_2$의 $\\ell$이 아닌 공통외접선이 $O_1$, $O_2$와 접하는 점을 각각 $Q$, $R$이라 하자. 삼각형 $PQR$과 삼각형 $PAC$의 넓이를 각각 $X$, $Y$라 할 때, $\\frac{600X}{Y}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 12,
+          "problem": "Find the number of ordered pairs $(x, y)$ of integers $x$, $y$ satisfying the following equation.\n$$\\frac{x^2 + xy + y^2}{x + 11y} = 11$$",
+          "problem_orig": "다음 등식을 만족하는 정수 $x$, $y$의 순서쌍 $(x, y)$의 개수를 구하여라.\n$$\\frac{x^2 + xy + y^2}{x + 11y} = 11$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 13,
+          "problem": "The incircle $O_1$ of triangle $ABC$ has radius $12$ and touches the sides $AB$, $BC$ at the points $D$, $E$ respectively. The incircle $O_2$ of triangle $DBE$ touches the sides $AB$, $BC$ at the points $F$, $G$ respectively. Let $P$, $Q$ be the two intersection points of the circles $O_1$ and $O_2$, and let $r$ be the radius of the circle $O_2$. If the quadrilateral $PFGQ$ is a rectangle, find the value of $6r^2$.",
+          "problem_orig": "삼각형 $ABC$의 내접원 $O_1$은 반지름이 $12$이고, 변 $AB$, $BC$와 각각 점 $D$, $E$에서 접한다. 삼각형 $DBE$의 내접원 $O_2$는 변 $AB$, $BC$와 각각 점 $F$, $G$에서 접한다. 두 원 $O_1$과 $O_2$의 두 교점을 $P$, $Q$라 하고 원 $O_2$의 반지름을 $r$이라 하자. 사각형 $PFGQ$가 직사각형일 때, $6r^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 14,
+          "problem": "Find the number of ordered pairs $(f, g)$ of functions $f : \\{1, 2, 3\\} \\to \\{1, 2, 3\\}$, $g : \\{1, 2, 3\\} \\to \\{1, 2, 3\\}$ satisfying both of the following conditions.\n\n(i) The function $f$ is a bijection.\n\n(ii) $f(g(n)) = g(f(n))$ for all $n = 1, 2, 3$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 함수 $f : \\{1, 2, 3\\} \\to \\{1, 2, 3\\}$, $g : \\{1, 2, 3\\} \\to \\{1, 2, 3\\}$의 순서쌍 $(f, g)$의 개수를 구하여라.\n\n(i) 함수 $f$는 일대일대응이다.\n\n(ii) 모든 $n = 1, 2, 3$에 대하여 $f(g(n)) = g(f(n))$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 15,
+          "problem": "A function $f(x)$ defined on the set of all real numbers satisfies both of the following conditions.\n\n(i) $f(0) = 0$\n\n(ii) For every positive real number $x$,\n$$f(x) = 1 + 3f\\left(\\left[\\frac{x}{2}\\right]\\right) - 2f\\left(\\left[\\frac{x}{4}\\right]\\right).$$\n\nFind the remainder when the value $f(2^{100} + 2^{99} + 2^{98})$ is divided by $31$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "실수 전체의 집합에서 정의된 함수 $f(x)$가 다음 두 조건을 모두 만족한다.\n\n(i) $f(0) = 0$\n\n(ii) 모든 양의 실수 $x$에 대하여\n$$f(x) = 1 + 3f\\left(\\left[\\frac{x}{2}\\right]\\right) - 2f\\left(\\left[\\frac{x}{4}\\right]\\right)$$\n\n함숫값 $f(2^{100} + 2^{99} + 2^{98})$을 $31$로 나눈 나머지를 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 16,
+          "problem": "Find the remainder when the number of ordered quadruples $(a, b, c, d)$ of integers $a$, $b$, $c$, $d$ satisfying both of the following conditions is divided by $1000$.\n\n(i) $0 \\le a, b, c, d \\le 10$\n\n(ii) $a^2 - b^2 - cd - 1$ is a multiple of $11$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 정수 $a$, $b$, $c$, $d$의 순서쌍 $(a, b, c, d)$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(i) $0 \\le a, b, c, d \\le 10$\n\n(ii) $a^2 - b^2 - cd - 1$은 $11$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 17,
+          "problem": "Let $P$ be the incentre of triangle $ABC$. The point $D$ lies on the extension of the segment $BC$ beyond $C$, and let $Q$ be the incentre of triangle $ACD$. If $6CA = 5BC$, $AB = 10$, $AD = 6$, and the four points $B$, $D$, $Q$, $P$ lie on a circle, find the value of $\\frac{60CD}{BC}$.",
+          "problem_orig": "삼각형 $ABC$의 내심을 $P$라 하자. 점 $D$는 선분 $BC$의 $C$쪽 연장선 위의 점이고 삼각형 $ACD$의 내심을 $Q$라 하자. $6\\overline{CA} = 5\\overline{BC}$, $\\overline{AB} = 10$, $\\overline{AD} = 6$이고 네 점 $B$, $D$, $Q$, $P$가 한 원 위에 있을 때, $\\frac{60\\overline{CD}}{\\overline{BC}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 18,
+          "problem": "For a polynomial $P(x)$ with integer coefficients and integers $a$, $b$, $c$ for which the following equation is an identity, find the remainder when $3b - c$ is divided by $23$.\n$$x^{2023} = (x^3 - x - 1)P(x) + ax^2 + bx + c$$",
+          "problem_orig": "다음 등식이 항등식인 정수 계수 다항식 $P(x)$와 정수 $a$, $b$, $c$에 대하여 $3b - c$를 $23$으로 나눈 나머지를 구하여라.\n$$x^{2023} = (x^3 - x - 1)P(x) + ax^2 + bx + c$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 19,
+          "problem": "For positive integers $x$, $y$, $z$, $a$ satisfying both of the following conditions, find the smallest possible value of $x + y + z + a$.\n\n(i) $x > y > z$\n\n(ii) $(150x - za)(150y - a) < 0$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $x$, $y$, $z$, $a$에 대하여 $x + y + z + a$가 가질 수 있는 값 중 가장 작은 것을 구하여라.\n\n(i) $x > y > z$\n\n(ii) $(150x - za)(150y - a) < 0$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 20,
+          "problem": "Find the number of ordered $7$-tuples $(a_1, a_2, \\ldots, a_7)$ of integers satisfying both of the following conditions.\n\n(i) For $i = 1, 2, 3, 4, 5, 6$, $0 \\le a_i + a_{i+1} \\le 4$.\n\n(ii) $0 \\le a_1 \\le 4$ and $a_7 \\le -8$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 정수의 순서쌍 $(a_1, a_2, \\ldots, a_7)$의 개수를 구하여라.\n\n(i) $i = 1, 2, 3, 4, 5, 6$에 대하여 $0 \\le a_i + a_{i+1} \\le 4$\n\n(ii) $0 \\le a_1 \\le 4$이고 $a_7 \\le -8$",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an acute triangle $ABC$, the points $D$, $E$ lie on the sides $AB$, $BC$ respectively. Let $F$ be the intersection of the segments $AE$ and $CD$. The four points $B$, $E$, $F$, $D$ lie on a circle and $\\angle AFC = 126^\\circ$. If $\\angle BAE + \\angle BCD = a^\\circ$, find the value of $a$.",
+          "problem_orig": "예각삼각형 $ABC$에서 점 $D$, $E$는 각각 변 $AB$, $BC$ 위의 점이다. 선분 $AE$와 $CD$의 교점을 $F$라 할 때, 네 점 $B$, $E$, $F$, $D$는 한 원 위에 있고, $\\angle AFC = 126^\\circ$이다. $\\angle BAE + \\angle BCD = a^\\circ$일 때, $a$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "Find the number of sets $S$ satisfying all three of the following conditions.\n\n(i) $S \\subseteq \\{1, 2, \\ldots, 10\\}$\n\n(ii) $|S \\cap \\{1, 2\\}| = 1$\n\n(iii) The sum of all elements of $S$ is even.",
+          "problem_orig": "다음 세 조건을 모두 만족하는 집합 $S$의 개수를 구하여라.\n\n(i) $S \\subseteq \\{1, 2, \\ldots, 10\\}$\n\n(ii) $|S \\cap \\{1, 2\\}| = 1$\n\n(iii) $S$의 모든 원소의 합은 짝수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "Find the number of positive integers $n \\le 1000$ satisfying the following condition.\n\n(Condition) There exist integers $x$, $y$ satisfying both equations $2x + y = n^2$ and $x + 3y = n$.",
+          "problem_orig": "다음 조건을 만족하는 $1000$ 이하의 양의 정수 $n$의 개수를 구하여라.\n\n(조건) 두 등식 $2x + y = n^2$과 $x + 3y = n$을 모두 만족하는 정수 $x$, $y$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "For real numbers $x$, $y$ satisfying both of the following equations, find the value of $x^2 + y^2$.\n$$x^2 + 10y = 50, \\quad y^2 + 20x = -175$$",
+          "problem_orig": "다음 두 등식을 모두 만족하는 실수 $x$, $y$에 대하여 $x^2 + y^2$의 값을 구하여라.\n$$x^2 + 10y = 50, \\quad y^2 + 20x = -175$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "In a triangle $ABC$ with circumcircle $\\Omega_1$, $AC = BC = 8$ and $\\angle C = 120^\\circ$. A circle $\\Omega_2$ is externally tangent to the circle $\\Omega_1$ at the point $A$ and tangent to the line $BC$ at the point $D$. Let $E$ $(\\neq A)$ be the intersection of the line $AB$ with the circle $\\Omega_2$, and let $S$ be the area of triangle $BDE$. Find the value of $\\left(\\frac{S}{12} - 5\\right)^2$.",
+          "problem_orig": "외접원이 $\\Omega_1$인 삼각형 $ABC$에서 $\\overline{AC} = \\overline{BC} = 8$이고 $\\angle C = 120^\\circ$이다. 원 $\\Omega_2$는 점 $A$에서 원 $\\Omega_1$과 외접하고 직선 $BC$와 점 $D$에서 접한다. 직선 $AB$와 원 $\\Omega_2$의 교점을 $E$ $(\\neq A)$라 하고, 삼각형 $BDE$의 넓이를 $S$라 할 때, $\\left(\\frac{S}{12} - 5\\right)^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "Find the remainder when the following integer is divided by $1000$. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n$$\\left[\\left(10 + 3\\sqrt{11}\\right)^{2024}\\right]$$",
+          "problem_orig": "다음 정수를 $1000$으로 나눈 나머지를 구하여라. (단, $[a]$는 $a$를 넘지 않는 가장 큰 정수)\n$$\\left[\\left(10 + 3\\sqrt{11}\\right)^{2024}\\right]$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 7,
+          "problem": "Find the number of positive real numbers $x \\le 12$ satisfying the following equation. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n$$x^3 + 16x - 8x^2 = \\left[x^3 + 16x\\right] - \\left[8x^2\\right]$$",
+          "problem_orig": "다음 등식을 만족하는 $12$ 이하의 양의 실수 $x$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 가장 큰 정수)\n$$x^3 + 16x - 8x^2 = \\left[x^3 + 16x\\right] - \\left[8x^2\\right]$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 8,
+          "problem": "Find the number of ways to write one of the numbers $1, 2, 3, 4, 5$ at each vertex of a square so that the following condition is satisfied. (Arrangements that coincide after a rotation are counted as one, and the same number may be written several times.)\n\n(Condition) For each side of the square, the product of the two numbers written at its endpoints is even.",
+          "problem_orig": "다음 조건을 만족하도록 정사각형의 각 꼭짓점에 $1, 2, 3, 4, 5$ 중 하나의 수를 적는 경우의 수를 구하여라. (단, 회전하여 같은 것은 한 가지로 세며, 같은 수를 여러 번 적을 수 있다.)\n\n(조건) 정사각형의 각 변의 양 끝점에 적힌 두 수의 곱은 짝수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 9,
+          "problem": "In a quadrilateral $ABCD$ inscribed in a circle of radius $10\\sqrt{7}$, the angle $B$ is obtuse and $AD = 50$. Let $H$ be the foot of the perpendicular from $C$ to the line $AB$, and let $E$ be the intersection of the lines $BD$ and $CH$. If $EH = CH$, find the value of $840\\left(\\frac{BH}{BC}\\right)^2$.",
+          "problem_orig": "반지름이 $10\\sqrt{7}$인 원에 내접하는 사각형 $ABCD$에서 각 $B$가 둔각이고, $\\overline{AD} = 50$이다. 점 $C$에서 직선 $AB$에 내린 수선의 발을 $H$, 직선 $BD$와 $CH$의 교점을 $E$라 하자. $\\overline{EH} = \\overline{CH}$일 때, $840\\left(\\frac{\\overline{BH}}{\\overline{BC}}\\right)^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 10,
+          "problem": "For the polynomial $P(x)$ with real coefficients satisfying the following condition, let $a$ be the coefficient of $x^7$. Find the value of $12a$.\n\n(Condition) For every positive integer $n$,\n$$P(n) = 1^8 + 2^8 + \\cdots + n^8.$$",
+          "problem_orig": "다음 조건을 만족하는 실계수 다항식 $P(x)$에서 $x^7$의 계수를 $a$라 할 때, $12a$의 값을 구하여라.\n\n(조건) 모든 양의 정수 $n$에 대하여\n$$P(n) = 1^8 + 2^8 + \\cdots + n^8$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 11,
+          "problem": "For positive real numbers $a_1, a_2, \\ldots, a_{100}$ satisfying both of the following conditions, find the value of $a_{100}$.\n\n(i) $a_1 = \\frac{9}{2}$, $a_2 = \\frac{5}{3}$, $a_3 = \\frac{4}{5}$\n\n(ii) For every positive integer $n$ with $4 \\le n \\le 100$,\n$$a_n = a_{n-3} + \\frac{3(n-1)(n-2)}{a_{n-1} a_{n-2}}.$$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 실수 $a_1, a_2, \\ldots, a_{100}$에 대하여 $a_{100}$의 값을 구하여라.\n\n(i) $a_1 = \\frac{9}{2}$, $a_2 = \\frac{5}{3}$, $a_3 = \\frac{4}{5}$\n\n(ii) $4$ 이상 $100$ 이하의 양의 정수 $n$에 대하여\n$$a_n = a_{n-3} + \\frac{3(n-1)(n-2)}{a_{n-1} a_{n-2}}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 12,
+          "problem": "There is a figure made by joining twelve $1 \\times 1$ squares as shown below. Find the number of lines passing through at least $2$ of the $20$ vertices of this figure.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2024_p12_fig.png",
+          "problem_orig": "다음과 같이 $1 \\times 1$ 정사각형 $12$개를 붙여서 만든 도형이 있다. 이 도형의 $20$개의 꼭짓점 중에서 $2$개 이상을 지나는 직선의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 13,
+          "problem": "A quadrilateral $ABCD$ has an incircle with centre $I$. If $AI = 8$, $BI = 16$, $CI = 12$, $DI = 6$, find the value of $18 \\cdot \\frac{AB}{CD}$.",
+          "problem_orig": "사각형 $ABCD$가 중심이 $I$인 내접원을 갖는다. $\\overline{AI} = 8$, $\\overline{BI} = 16$, $\\overline{CI} = 12$, $\\overline{DI} = 6$일 때, $18 \\cdot \\frac{\\overline{AB}}{\\overline{CD}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 14,
+          "problem": "The complex number $z$ $(\\neq 1)$ satisfies $z^5 = 1$. For the polynomial\n$$p(x) = x^3 + 2x^2 + 3x + 4,$$\nfind the value of $p(z)p(z^2)p(z^3)p(z^4)$.",
+          "problem_orig": "복소수 $z$ $(\\neq 1)$은 $z^5 = 1$을 만족한다. 다항식\n$$p(x) = x^3 + 2x^2 + 3x + 4$$\n에 대하여 $p(z)p(z^2)p(z^3)p(z^4)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 15,
+          "problem": "For the function $f(x) = 2023 + \\frac{2024}{x}$ defined on the set of all positive real numbers, suppose that\n$$(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{2024 \\text{ times } f})(x) = \\frac{cx + d}{ax + b}.$$\nFind the value of $\\frac{d - 2024^2 a}{4(a - d)}$. (Here $a$, $b$, $c$, $d$ are real numbers.)",
+          "problem_orig": "양의 실수 전체의 집합에서 정의된 함수 $f(x) = 2023 + \\frac{2024}{x}$에 대하여\n$$(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{f\\text{가 } 2024\\text{개}})(x) = \\frac{cx + d}{ax + b}$$\n일 때, $\\frac{d - 2024^2 a}{4(a - d)}$의 값을 구하여라. (단, $a$, $b$, $c$, $d$는 실수)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 16,
+          "problem": "As in the figure below, there is a figure consisting of $7$ segments $AB$, $BC$, $CD$, $DE$, $EF$, $FG$, $GA$ and the $21$ intersection points of these $7$ segments. Find the number of ways to write $1$ or $2$ at each of the $21$ intersection points so that the following condition is satisfied.\n\n(Condition) The sums of the six numbers written on each of the segments $AB$, $BC$, $CD$, $DE$, $EF$, $FG$, $GA$ are all equal.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2024_p16_fig.png",
+          "problem_orig": "다음 그림과 같이 $7$개의 선분 $AB$, $BC$, $CD$, $DE$, $EF$, $FG$, $GA$와 이 $7$개 선분의 교점 $21$개로 구성된 도형이 있다. 다음 조건을 만족하도록 $21$개의 교점 각각에 $1$ 또는 $2$를 적는 방법의 수를 구하여라.\n\n(조건) 각 선분 $AB$, $BC$, $CD$, $DE$, $EF$, $FG$, $GA$ 위에 적힌 여섯 개의 수들의 합이 모두 같다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 17,
+          "problem": "Real numbers $a_1, a_2, \\ldots, a_{2024}$ satisfy both of the following conditions. Find the value of $[1000 - a_{2024}]$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)\n\n(i) $a_1 = 1$\n\n(ii) For all $n = 1, 2, \\ldots, 2023$, $a_n(a_{n+1} - a_n) = 1$.",
+          "problem_orig": "실수 $a_1, a_2, \\ldots, a_{2024}$가 다음 두 조건을 모두 만족할 때, $[1000 - a_{2024}]$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)\n\n(i) $a_1 = 1$\n\n(ii) 모든 $n = 1, 2, \\ldots, 2023$에 대하여 $a_n(a_{n+1} - a_n) = 1$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 18,
+          "problem": "Find the remainder when the number of ordered $15$-tuples $(a_1, a_2, \\ldots, a_{15})$ of distinct positive integers $a_1, a_2, \\ldots, a_{15}$ not exceeding $15$ that satisfy the following equation is divided by $1000$.\n$$|a_1^2 - a_2^2| + |a_2^2 - a_3^2| + \\cdots + |a_{15}^2 - a_1^2| = 458$$",
+          "problem_orig": "다음 식을 만족하는 $15$ 이하의 서로 다른 양의 정수 $a_1, a_2, \\ldots, a_{15}$의 순서쌍 $(a_1, a_2, \\ldots, a_{15})$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n$$|a_1^2 - a_2^2| + |a_2^2 - a_3^2| + \\cdots + |a_{15}^2 - a_1^2| = 458$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 19,
+          "problem": "Find the remainder when the smallest positive integer $n$ satisfying the following condition is divided by $1000$.\n\n(Condition) Every digit of $2024n$ is $0$ or $1$.",
+          "problem_orig": "다음 조건을 만족하는 가장 작은 양의 정수 $n$을 $1000$으로 나눈 나머지를 구하여라.\n\n(조건) $2024n$의 각 자리의 수는 $0$ 또는 $1$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 20,
+          "problem": "In an acute triangle $ABC$, $AB = 15$, $BC = 10$, $CA = 14$. The points $D$, $E$ lie on the sides $AB$, $AC$ respectively, and the segments $CD$ and $BE$ are perpendicular to each other. The lines $DE$ and $BC$ meet at the point $F$, and the segments $CD$ and $BE$ meet at the point $G$. The quadrilateral $AGCF$ is inscribed in a circle $O$; let $P$ $(\\neq A)$ be the intersection of the line $AB$ with the circle $O$. Find the value of $(BP)^2$.",
+          "problem_orig": "예각삼각형 $ABC$에서 $\\overline{AB} = 15$, $\\overline{BC} = 10$, $\\overline{CA} = 14$이다. 점 $D$, $E$는 각각 변 $AB$, $AC$ 위의 점으로 선분 $CD$와 $BE$는 서로 수직이다. 직선 $DE$와 $BC$는 점 $F$에서 만나고 선분 $CD$와 $BE$는 점 $G$에서 만난다. 사각형 $AGCF$가 원 $O$에 내접하고, 직선 $AB$와 원 $O$의 교점을 $P$ $(\\neq A)$라 할 때, $(\\overline{BP})^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a triangle $ABC$ there is a point $D$ on the side $BC$ and a point $F$ on the side $AC$. The lines $AD$ and $BF$ meet at the point $E$. If $BD = 2DC$ and $AE = ED$, find the value of $6\\left(\\frac{BE}{EF} + \\frac{AF}{FC}\\right)$.",
+          "problem_orig": "삼각형 $ABC$의 변 $BC$ 위에 점 $D$, 변 $AC$ 위에 점 $F$가 있다. 직선 $AD$와 $BF$가 점 $E$에서 만난다. $\\overline{BD} = 2\\overline{DC}$이고, $\\overline{AE} = \\overline{ED}$일 때, $6\\left(\\frac{\\overline{BE}}{\\overline{EF}} + \\frac{\\overline{AF}}{\\overline{FC}}\\right)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "Find the remainder when the number of ordered $8$-tuples $(a_1, a_2, \\ldots, a_8)$ of positive integers satisfying all three of the following conditions is divided by $1000$.\n\n(i) For each $i$ $(1 \\le i \\le 7)$, $a_i + a_{i+1}$ is even.\n\n(ii) For each $i$ $(1 \\le i \\le 6)$, $a_i + a_{i+1} + a_{i+2}$ is a multiple of $3$.\n\n(iii) For each $i$ $(1 \\le i \\le 8)$, $a_i \\le 12$.",
+          "problem_orig": "다음 세 조건을 모두 만족하는 양의 정수들의 순서쌍 $(a_1, a_2, \\ldots, a_8)$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(i) 각 $i$ $(1 \\le i \\le 7)$에 대하여, $a_i + a_{i+1}$은 짝수이다.\n\n(ii) 각 $i$ $(1 \\le i \\le 6)$에 대하여, $a_i + a_{i+1} + a_{i+2}$는 $3$의 배수이다.\n\n(iii) 각 $i$ $(1 \\le i \\le 8)$에 대하여, $a_i \\le 12$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "Find the remainder when $1! + 2! + \\cdots + 99! + 100!$ is divided by $100$.",
+          "problem_orig": "$1! + 2! + \\cdots + 99! + 100!$을 $100$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "Find the number of integers $n$ with absolute value at most $10$ satisfying the following condition.\n\n(Condition) There exists a real number $x$ satisfying the inequality $8nx + 16 \\le 16x^2 + n^2 \\le 2n^2$.",
+          "problem_orig": "다음 조건을 만족하는 절댓값이 $10$ 이하인 정수 $n$의 개수를 구하여라.\n\n(조건) 부등식 $8nx + 16 \\le 16x^2 + n^2 \\le 2n^2$을 만족하는 실수 $x$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "Let $P$, $Q$ be the points of tangency of the two tangent lines drawn from a point $A$ outside a circle $\\omega$ to $\\omega$. Let $R$ $(\\neq P)$ be the point where the line through $P$ parallel to $AQ$ meets the circle $\\omega$, and let $S$ $(\\neq R)$ be the point where the line $AR$ meets the circle $\\omega$. If $AP : PR = 2 : 3$ and the area of triangle $ASQ$ is $50$, find the area of the quadrilateral $APRQ$.",
+          "problem_orig": "원 $\\omega$의 외부에 있는 한 점 $A$에서 원 $\\omega$에 그은 두 접선이 원과 접하는 점을 각각 점 $P$, $Q$라 하자. $P$를 지나고 직선 $AQ$와 평행한 직선이 원 $\\omega$와 만나는 점을 $R$ $(\\neq P)$이라 하고, 직선 $AR$이 원 $\\omega$와 만나는 점을 $S$ $(\\neq R)$라 하자. $\\overline{AP} : \\overline{PR} = 2 : 3$이고, 삼각형 $ASQ$의 넓이가 $50$일 때, 사각형 $APRQ$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "For the positive integer $N = {}_{250}C_{1} \\times {}_{250}C_{2} \\times \\cdots \\times {}_{250}C_{248} \\times {}_{250}C_{249}$, find the largest integer $m$ such that $5^m$ divides $N$. (Here, for positive integers $n$, $r$ with $r < n$, ${}_{n}C_{r} = \\frac{n!}{r!(n-r)!}$.)",
+          "problem_orig": "양의 정수 $N = {}_{250}C_{1} \\times {}_{250}C_{2} \\times \\cdots \\times {}_{250}C_{248} \\times {}_{250}C_{249}$에 대하여, $5^m$이 $N$을 나누는 가장 큰 정수 $m$을 구하여라. (단, $r < n$인 양의 정수 $n$, $r$에 대하여, ${}_{n}C_{r} = \\frac{n!}{r!(n-r)!}$)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 7,
+          "problem": "For the sets $A = \\{3, 4, \\ldots, 24\\}$ and $B = \\{1, 2, 3\\}$, find the remainder when the number of functions $f : A \\to B$ satisfying the following condition is divided by $1000$.\n\n(Condition) For any positive integers $x$, $y$ with $x^2 + xy \\in A$ and $y^2 + xy \\in A$, $f(x^2 + xy) + f(y^2 + xy) = 4$.",
+          "problem_orig": "집합 $A = \\{3, 4, \\ldots, 24\\}$와 $B = \\{1, 2, 3\\}$에 대하여, 다음 조건을 만족하는 함수 $f : A \\to B$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(조건) $x^2 + xy \\in A$, $y^2 + xy \\in A$인 임의의 양의 정수 $x$, $y$에 대하여, $f(x^2 + xy) + f(y^2 + xy) = 4$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 8,
+          "problem": "For the set $X = \\{-2, -1, 0, 1, 2\\}$, find the number of functions $f : X \\to X$ satisfying both of the following conditions.\n\n(i) There exists a function $g : X \\to X$ satisfying $g(x) = 2f(x) - x$ for all $x \\in X$.\n\n(ii) $f(-2) + f(0) + f(2) = 0$",
+          "problem_orig": "집합 $X = \\{-2, -1, 0, 1, 2\\}$에 대하여, 다음 두 조건을 모두 만족하는 함수 $f : X \\to X$의 개수를 구하여라.\n\n(i) 모든 $x \\in X$에 대하여 $g(x) = 2f(x) - x$를 만족하는 함수 $g : X \\to X$가 존재한다.\n\n(ii) $f(-2) + f(0) + f(2) = 0$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 9,
+          "problem": "Let $M$, $N$ be the midpoints of the sides $AB$, $CD$ of a rectangle $ABCD$ respectively. The point $P$ on the segment $AC$ satisfies $AP : PC = 1 : 2$. Let $Q$ be the intersection of the lines $BC$ and $PM$. If the area of triangle $AMP$ is $100$, find the area of triangle $PQN$.",
+          "problem_orig": "직사각형 $ABCD$의 변 $AB$, $CD$의 중점을 각각 $M$, $N$이라 하자. 선분 $AC$ 위의 점 $P$가 $\\overline{AP} : \\overline{PC} = 1 : 2$를 만족한다. 직선 $BC$와 $PM$의 교점을 $Q$라 하자. 삼각형 $AMP$의 넓이가 $100$일 때, 삼각형 $PQN$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 10,
+          "problem": "Find the number of ordered pairs $(a, b)$ of positive integers $a$, $b$ not exceeding $36$ satisfying the following condition.\n\n(Condition) $(a + b)^{36} - a^{36} - b^{36}$ is a multiple of $36$.",
+          "problem_orig": "다음 조건을 만족하는 $36$ 이하인 양의 정수 $a$, $b$의 순서쌍 $(a, b)$의 개수를 구하여라.\n\n(조건) $(a + b)^{36} - a^{36} - b^{36}$은 $36$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 11,
+          "problem": "For ordered triples $(x, y, z)$ of distinct non-zero real numbers $x$, $y$, $z$ satisfying both of the following conditions, find the largest possible value of $6(3x + 2y + z)$.\n\n(i) $2x + 2y + 2z = 3$\n\n(ii) $\\frac{1}{xz} + \\frac{x - y}{y - z} = \\frac{1}{yz} + \\frac{y - z}{z - x} = \\frac{1}{xy} + \\frac{z - x}{x - y}$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 $0$이 아닌 서로 다른 실수 $x$, $y$, $z$의 순서쌍 $(x, y, z)$들에 대하여, $6(3x + 2y + z)$가 가질 수 있는 값 중 가장 큰 것을 구하여라.\n\n(i) $2x + 2y + 2z = 3$\n\n(ii) $\\frac{1}{xz} + \\frac{x - y}{y - z} = \\frac{1}{yz} + \\frac{y - z}{z - x} = \\frac{1}{xy} + \\frac{z - x}{x - y}$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 12,
+          "problem": "Find the number of functions $f : \\{1, 2, 3, 4\\} \\to \\{1, 2, 3, 4\\}$ satisfying the following condition. (Here, for a positive integer $k$, $f^{(k)}(x)$ is the function obtained by composing $f$ with itself $k$ times, i.e. $(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{k \\text{ times } f})(x)$.)\n\n(Condition) For all $x \\in \\{1, 2, 3, 4\\}$, $f^{(2025)}(x) = f^{(25)}(x)$.",
+          "problem_orig": "다음 조건을 만족하는 함수 $f : \\{1, 2, 3, 4\\} \\to \\{1, 2, 3, 4\\}$의 개수를 구하여라. (단, 양의 정수 $k$에 대하여 $f^{(k)}(x)$는 $f(x)$를 $k$번 합성한 함수, 즉 $(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{f\\text{가 } k\\text{개}})(x)$)\n\n(조건) 모든 $x \\in \\{1, 2, 3, 4\\}$에 대하여, $f^{(2025)}(x) = f^{(25)}(x)$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 13,
+          "problem": "For positive integers $p$, $q$, there are three mutually disjoint circles $O_1$, $O_2$, $O_3$ with radii $\\sqrt{p}$, $1$, $\\sqrt{q}$ respectively. Let $A$, $B$, $C$ be the centres of the circles $O_1$, $O_2$, $O_3$; the points $A$, $B$, $C$ lie on a line in this order, and $AB = 4$, $BC = 6$. Find the number of ordered pairs $(p, q)$ of positive integers $p$, $q$ for which there exists a point $S$ satisfying both of the following conditions.\n\n(i) The point $S$ lies outside all three circles $O_1$, $O_2$, $O_3$.\n\n(ii) The lengths of the tangents drawn from $S$ to the three circles $O_1$, $O_2$, $O_3$ are all equal.",
+          "problem_orig": "양의 정수 $p$, $q$에 대하여, 반지름이 각각 $\\sqrt{p}$, $1$, $\\sqrt{q}$인 서로 만나지 않는 세 원 $O_1$, $O_2$, $O_3$가 있다. 세 원 $O_1$, $O_2$, $O_3$의 중심을 각각 점 $A$, $B$, $C$라 하면, $A$, $B$, $C$는 일직선상에 순서대로 놓여 있고, $\\overline{AB} = 4$, $\\overline{BC} = 6$이다. 다음 두 조건을 모두 만족하는 점 $S$가 존재하는 양의 정수 $p$, $q$의 순서쌍 $(p, q)$의 개수를 구하여라.\n\n(i) 점 $S$는 세 원 $O_1$, $O_2$, $O_3$ 모두의 바깥에 위치한다.\n\n(ii) 점 $S$에서 세 원 $O_1$, $O_2$, $O_3$에 그은 접선의 길이가 모두 같다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 14,
+          "problem": "Find the number of positive integers $n \\ge 2$ satisfying the following condition.\n\n(Condition) If $p_1, p_2, \\ldots, p_k$ are all the distinct prime factors of $n$, then $(p_1 + 4)(p_2 + 4) \\cdots (p_k + 4)$ is a multiple of $n$.",
+          "problem_orig": "다음 조건을 만족하는 $2$ 이상의 양의 정수 $n$의 개수를 구하여라.\n\n(조건) $p_1, p_2, \\ldots, p_k$가 $n$의 서로 다른 모든 소인수라 할 때, $(p_1 + 4)(p_2 + 4) \\cdots (p_k + 4)$가 $n$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 15,
+          "problem": "A sequence $\\{a_n\\}$ satisfies the following condition.\n\n(Condition) For every positive integer $n$, $a_{n+1} = \\frac{1}{5}\\left(a_n^2 - 50\\right)$.\n\nFind the number of real numbers $a_1$ such that $a_8 = a_1$.",
+          "problem_orig": "수열 $\\{a_n\\}$이 다음 조건을 만족한다.\n\n(조건) 모든 양의 정수 $n$에 대하여, $a_{n+1} = \\frac{1}{5}\\left(a_n^2 - 50\\right)$\n\n이때, $a_8 = a_1$을 만족하는 실수 $a_1$의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 16,
+          "problem": "Among the ordered $5$-tuples $(A_1, A_2, A_3, A_4, A_5)$ of subsets $A_1, A_2, A_3, A_4, A_5$ of the set $\\{1, 2, 3, \\ldots, 10\\}$, find the remainder when the number of those satisfying the following condition is divided by $1000$. (Here $\\varnothing$ is the empty set.)\n\n(Condition) For any integers $i$, $j$, $k$ $(1 \\le i < j < k \\le 5)$, $A_i \\cap A_j \\cap A_k = \\varnothing$.",
+          "problem_orig": "집합 $\\{1, 2, 3, \\ldots, 10\\}$의 부분집합 $A_1, A_2, A_3, A_4, A_5$의 순서쌍 $(A_1, A_2, A_3, A_4, A_5)$ 중에서, 다음 조건을 만족하는 것의 개수를 $1000$으로 나눈 나머지를 구하여라. (단, $\\varnothing$은 공집합)\n\n(조건) 임의의 정수 $i$, $j$, $k$ $(1 \\le i < j < k \\le 5)$에 대하여 $A_i \\cap A_j \\cap A_k = \\varnothing$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 17,
+          "problem": "There is a figure made by joining one hundred $1 \\times 1$ squares as shown below. Among the triangles whose three vertices are among the $121$ points of this figure, find the remainder when the number of right triangles with area $10$ is divided by $1000$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2025_p17_fig.png",
+          "problem_orig": "다음과 같이 $1 \\times 1$ 정사각형 $100$개를 붙여서 만든 도형이 있다. 이 도형의 $121$개의 점 중 세 점을 꼭짓점으로 가지는 삼각형들 중에서, 넓이가 $10$인 직각삼각형의 개수를 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 18,
+          "problem": "Find the sum of all positive integers $k$ satisfying the following condition.\n\n(Condition) There exist odd positive integers $a$, $b$ satisfying $k^2 = a^{2b} + (2b)^4$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $k$를 모두 더한 값을 구하여라.\n\n(조건) $k^2 = a^{2b} + (2b)^4$을 만족하는 홀수인 양의 정수 $a$, $b$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 19,
+          "problem": "In a triangle $ABC$, $\\angle A = 66^\\circ$ and $\\angle B = \\angle C = 57^\\circ$. A point $D$ lies on the extension of the side $AB$ beyond $B$ (that is, $AD > AB$). Let $M$ be the midpoint of the segment $CD$, let $P$ be the point where the line through $A$ parallel to the line $BC$ meets the line $BM$, and let $I$ be the incentre of triangle $ADC$. If $\\angle PDI = 90^\\circ$ and $\\angle BDC = x^\\circ$, find the value of $6x$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle A = 66^\\circ$, $\\angle B = \\angle C = 57^\\circ$이다. 변 $AB$의 점 $B$ 쪽 연장선 위에 점 $D$가 있다. (즉, $\\overline{AD} > \\overline{AB}$이다.) 선분 $CD$의 중점을 $M$이라 하고, 점 $A$를 지나고 직선 $BC$에 평행한 직선이 직선 $BM$과 만나는 점을 $P$라 하며, 삼각형 $ADC$의 내심을 $I$라 하자. $\\angle PDI = 90^\\circ$일 때, $\\angle BDC = x^\\circ$이다. $6x$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 20,
+          "problem": "Real numbers $x_1, x_2, \\ldots, x_6$ satisfy both of the following equations.\n$$\\sum_{i=1}^{6} x_i = 4, \\quad \\sum_{i=1}^{6} x_i^2 = 11$$\nIf $M$ is the maximum value of $6x_1x_2x_3x_4x_5x_6 + \\sum_{i=1}^{6} x_i^3 - \\sum_{i=1}^{6} x_i^4$, find the value of $[M]$. (Here $[a]$ denotes the greatest integer not exceeding $a$.)",
+          "problem_orig": "실수 $x_1, x_2, \\ldots, x_6$가 다음 두 식을 모두 만족한다.\n$$\\sum_{i=1}^{6} x_i = 4, \\quad \\sum_{i=1}^{6} x_i^2 = 11$$\n$6x_1x_2x_3x_4x_5x_6 + \\sum_{i=1}^{6} x_i^3 - \\sum_{i=1}^{6} x_i^4$의 최댓값을 $M$이라 할 때, $[M]$의 값을 구하여라. (단, $[a]$는 $a$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In a square $ABCD$, let $E$ be the midpoint of the side $AB$, $F$ the midpoint of the segment $BD$, $G$ the intersection of the segments $BD$ and $CE$, and $H$ the midpoint of the segment $BG$. If the area of triangle $EBG$ is $18$, find the area of the quadrilateral $CFEH$.",
+          "problem_orig": "정사각형 $ABCD$의 변 $AB$의 중점을 $E$, 선분 $BD$의 중점을 $F$, 선분 $BD$와 $CE$의 교점을 $G$, 선분 $BG$의 중점을 $H$라 하자. 삼각형 $EBG$의 넓이가 $18$일 때, 사각형 $CFEH$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 2,
+          "problem": "There is a figure made by joining nine $1 \\times 1$ squares as shown below. Among the rectangles having $4$ of the $18$ points of this figure as vertices, find the number of those contained in this figure. (The hatched rectangles are examples of rectangles satisfying the condition.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2026_p2_fig.png",
+          "problem_orig": "다음과 같이 $1 \\times 1$ 정사각형 $9$개를 붙여서 만든 도형이 있다. 이 도형의 $18$개의 점 중에서 $4$개를 꼭짓점으로 갖는 직사각형 중, 이 도형에 포함되는 것의 개수를 구하여라. (빗금친 직사각형은 조건을 만족하는 직사각형들의 예시이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 3,
+          "problem": "For integers $x$, $y$ satisfying the equation $x^2 + 3^y = y^3 + 10$, find the maximum value of $x + y$.",
+          "problem_orig": "등식 $x^2 + 3^y = y^3 + 10$을 만족하는 정수 $x$, $y$에 대하여 $x + y$의 최댓값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 4,
+          "problem": "For a positive integer $n$ $(\\ge 2)$, let\n$$f(n) = \\left[n^{\\frac{1}{2}}\\right] + \\left[n^{\\frac{1}{3}}\\right] + \\cdots + \\left[n^{\\frac{1}{n-1}}\\right] + \\left[n^{\\frac{1}{n}}\\right].$$\nFind $f(100)$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "양의 정수 $n$ $(\\ge 2)$에 대하여,\n$$f(n) = \\left[n^{\\frac{1}{2}}\\right] + \\left[n^{\\frac{1}{3}}\\right] + \\cdots + \\left[n^{\\frac{1}{n-1}}\\right] + \\left[n^{\\frac{1}{n}}\\right]$$\n이라 하자. $f(100)$을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 5,
+          "problem": "Let $P$ be a point inside triangle $ABC$. The lines $AP$, $BP$, $CP$ meet the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively, and $BD : DC = 2 : 5$ and $CE : EA = 5 : 4$. The point $D'$ on the side $BC$ and the point $E'$ on the side $CA$ satisfy $BD' : D'C = 5 : 2$ and $CE' : E'A = 4 : 5$ respectively. Let $P'$ be the point where the lines $AD'$ and $BE'$ meet. If the area of triangle $APP'$ is $42$, find the area of triangle $ABC$.",
+          "problem_orig": "점 $P$를 삼각형 $ABC$ 내부의 점이라 하자. 직선 $AP$, $BP$, $CP$가 변 $BC$, $CA$, $AB$와 만나는 점을 각각 $D$, $E$, $F$라 할 때, $\\overline{BD} : \\overline{DC} = 2 : 5$이고 $\\overline{CE} : \\overline{EA} = 5 : 4$이다. 변 $BC$ 위의 점 $D'$과 변 $CA$ 위의 점 $E'$이 각각 $\\overline{BD'} : \\overline{D'C} = 5 : 2$와 $\\overline{CE'} : \\overline{E'A} = 4 : 5$를 만족한다. 직선 $AD'$과 $BE'$이 만나는 점을 $P'$이라 할 때, 삼각형 $APP'$의 넓이가 $42$이다. 삼각형 $ABC$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 6,
+          "problem": "Among the positive integers having exactly $2026$ positive divisors, let $N$ be the second smallest. Find the remainder when $N$ is divided by $1000$.",
+          "problem_orig": "양의 약수의 개수가 $2026$개인 양의 정수 중에서, 두 번째로 작은 수를 $N$이라 하자. $N$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 7,
+          "problem": "Find the remainder when the value of the following expression is divided by $1000$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)\n$$\\sum_{n=1}^{[\\sqrt{2026}]} \\sum_{m=n^2}^{2026} \\frac{1}{[\\sqrt{m}]}$$",
+          "problem_orig": "다음 식의 값을 $1000$으로 나눈 나머지를 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)\n$$\\sum_{n=1}^{[\\sqrt{2026}]} \\sum_{m=n^2}^{2026} \\frac{1}{[\\sqrt{m}]}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 8,
+          "problem": "For the set $S = \\{1, 2, 3, 4, 5, 6\\}$, find the number of functions $f : S \\to S$ satisfying the following condition.\n\n(Condition) For every integer $n \\in S$, there exists a positive integer $k_n \\le 5$ such that $f^{(k_n)}(n) = n$.\n\nHere, for a positive integer $k$, $f^{(k)}(x)$ is the function obtained by composing $f$ with itself $k$ times, i.e. $(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{k \\text{ times } f})(x)$.",
+          "problem_orig": "집합 $S = \\{1, 2, 3, 4, 5, 6\\}$에 대하여, 다음 조건을 만족하는 함수 $f : S \\to S$의 개수를 구하여라.\n\n(조건) 임의의 정수 $n \\in S$에 대하여, $f^{(k_n)}(n) = n$을 만족하는 $5$ 이하의 양의 정수 $k_n$이 존재한다.\n\n단, 양의 정수 $k$에 대하여 $f^{(k)}(x)$는 $f(x)$를 $k$번 합성한 함수, 즉 $(\\underbrace{f \\circ f \\circ \\cdots \\circ f}_{f\\text{가 } k\\text{개}})(x)$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 9,
+          "problem": "In a quadrilateral $ABCD$ the sides $AD$ and $BC$ are parallel, $AB = CD = 9$, and $BC > AD$. A point $P$ on the side $BC$ satisfies $BP = 24$, $PC = 36$. For the circumcircle $\\Gamma_1$ of triangle $ABP$ and the circumcircle $\\Gamma_2$ of triangle $CDP$, suppose that $\\Gamma_1$ and $\\Gamma_2$ meet at a point $Q$ $(\\neq P)$. Let $X$ $(\\neq A)$ be the intersection of $\\Gamma_1$ with the side $AD$, $Y$ $(\\neq D)$ the intersection of $\\Gamma_2$ with the side $AD$, and $Z$ the intersection of the lines $PQ$ and $AD$. Find the value of $18\\frac{XZ}{ZY}$.",
+          "problem_orig": "사각형 $ABCD$의 변 $AD$와 $BC$가 평행하고, $\\overline{AB} = \\overline{CD} = 9$이며, $\\overline{BC} > \\overline{AD}$이다. 변 $BC$ 위의 점 $P$가 $\\overline{BP} = 24$, $\\overline{PC} = 36$을 만족한다. 삼각형 $ABP$의 외접원 $\\Gamma_1$과 삼각형 $CDP$의 외접원 $\\Gamma_2$에 대하여, $\\Gamma_1$과 $\\Gamma_2$가 점 $Q$ $(\\neq P)$에서 만난다고 하자. $\\Gamma_1$과 변 $AD$의 교점이 $X$ $(\\neq A)$, $\\Gamma_2$와 변 $AD$의 교점이 $Y$ $(\\neq D)$이고, 직선 $PQ$와 $AD$의 교점이 $Z$라 할 때, $18\\frac{\\overline{XZ}}{\\overline{ZY}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 10,
+          "problem": "For a positive integer $k$, there is a sequence $\\{a_n\\}$ satisfying both of the following conditions.\n\n(i) $a_1 = 1$ and $a_2 = k$.\n\n(ii) For every positive integer $n$, $a_{n+2} = 1 + \\sum_{i=1}^{n} a_i a_{i+1}$.\n\nFind the number of positive integers $k$ $(\\le 999)$ for which $a_{2026}$ is a multiple of $64$ but not a multiple of $128$.",
+          "problem_orig": "양의 정수 $k$에 대하여, 다음 두 조건을 모두 만족하는 수열 $\\{a_n\\}$이 있다.\n\n(i) $a_1 = 1$이고, $a_2 = k$이다.\n\n(ii) 모든 양의 정수 $n$에 대하여, $a_{n+2} = 1 + \\sum_{i=1}^{n} a_i a_{i+1}$\n\n$a_{2026}$이 $64$의 배수이지만 $128$의 배수는 아니도록 하는 양의 정수 $k$ $(\\le 999)$의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 11,
+          "problem": "For non-negative real numbers $a$, $b$, $c$ satisfying the condition $a + b + c = 3$, let $M$ be the maximum value of $(a - b)^3 + (b - c)^3 + (c - a)^3$. Find the value of $[M^2]$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "조건 $a + b + c = 3$을 만족하는 음이 아닌 실수 $a$, $b$, $c$에 대하여, $(a - b)^3 + (b - c)^3 + (c - a)^3$의 최댓값을 $M$이라 하자. $[M^2]$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 12,
+          "problem": "An ordered $7$-tuple $(a_1, a_2, \\ldots, a_7)$ consisting of distinct positive integers $a_1, a_2, \\ldots, a_7$ not exceeding $7$ is called a lucky tuple. For each lucky tuple $S = (a_1, a_2, \\ldots, a_7)$, let $f(S)$ be the number of $i$ $(1 \\le i \\le 6)$ for which $a_i + a_{i+1}$ is a perfect square. Find the remainder when the sum of the values $f(S)$ over all lucky tuples $S$ is divided by $1000$.",
+          "problem_orig": "서로 다른 $7$ 이하의 양의 정수 $a_1, a_2, \\ldots, a_7$로 이루어진 순서쌍 $(a_1, a_2, \\ldots, a_7)$을 행운의 순서쌍이라고 하자. 각각의 행운의 순서쌍 $S = (a_1, a_2, \\ldots, a_7)$에 대하여, $a_i + a_{i+1}$이 완전제곱수인 정수 $i$ $(1 \\le i \\le 6)$의 개수를 $f(S)$라 하자. 모든 행운의 순서쌍 $S$들에 대하여 $f(S)$의 값들을 모두 합한 값을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 13,
+          "problem": "Let $I$ be the incentre of the triangle $ABC$ with side lengths $AB = 24$, $BC = 18$, $CA = 26$, and let $D$, $E$, $F$ be the points where the incircle touches the sides $BC$, $CA$, $AB$ respectively. Let $\\omega$ be the circle tangent to the line $BC$ at $D$ and passing through $A$, and suppose that the lines $DE$, $DF$ meet the circle $\\omega$ at $P$ $(\\neq D)$, $Q$ $(\\neq D)$ respectively. The circumcircles of triangles $AQF$ and $APE$ meet at a point $R$ $(\\neq A)$, and the circle $\\omega$ meets the side $AC$ at a point $X$ $(\\neq A)$. Find the value of $100\\left(\\frac{AR}{PX}\\right)^2$.",
+          "problem_orig": "세 변의 길이가 $\\overline{AB} = 24$, $\\overline{BC} = 18$, $\\overline{CA} = 26$인 삼각형 $ABC$의 내심을 $I$, 내접원이 변 $BC$, $CA$, $AB$와 접하는 점을 각각 $D$, $E$, $F$라 하자. 점 $D$에서 직선 $BC$에 접하고 점 $A$를 지나는 원을 $\\omega$라 하고, 직선 $DE$, $DF$가 원 $\\omega$와 각각 점 $P$ $(\\neq D)$, $Q$ $(\\neq D)$에서 만난다고 하자. 삼각형 $AQF$의 외접원과 삼각형 $APE$의 외접원이 점 $R$ $(\\neq A)$에서 만나고, 원 $\\omega$는 변 $AC$와 점 $X$ $(\\neq A)$에서 만난다. $100\\left(\\frac{\\overline{AR}}{\\overline{PX}}\\right)^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 14,
+          "problem": "Find the remainder when the number of ordered pairs $(a, b)$ of positive integers $a$, $b$ satisfying both of the following conditions is divided by $1000$.\n\n(i) $1 \\le a \\le 634$, $1 \\le b \\le 634$\n\n(ii) The remainder when $a^b$ is divided by $634$ is $1$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $a$, $b$의 순서쌍 $(a, b)$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(i) $1 \\le a \\le 634$, $1 \\le b \\le 634$\n\n(ii) $a^b$을 $634$로 나눈 나머지는 $1$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 15,
+          "problem": "For real numbers $a$, $b$, $c$ satisfying both conditions $a + b + c = 5$ and $ab + bc + ca = 8$, let $m$ be the minimum value of the following expression. Find the value of $[m]$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)\n$$5(a^2 b + b^2 c + c^2 a) - (a^3 b + b^3 c + c^3 a)$$",
+          "problem_orig": "두 조건 $a + b + c = 5$와 $ab + bc + ca = 8$을 모두 만족하는 실수 $a$, $b$, $c$에 대하여, 다음 식의 최솟값을 $m$이라 하자. $[m]$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)\n$$5(a^2 b + b^2 c + c^2 a) - (a^3 b + b^3 c + c^3 a)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 16,
+          "problem": "Find the number of ordered $30$-tuples $(a_1, a_2, \\ldots, a_{30})$ of positive integers satisfying both of the following conditions.\n\n(i) $1 \\le a_1 \\le a_2 \\le \\cdots \\le a_{30} \\le 30$\n\n(ii) For every positive integer $k$, the number of indices $i$ $(1 \\le i \\le 30)$ with $k \\le a_i \\le k + 1$ is at most $2$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수로 이루어진 순서쌍 $(a_1, a_2, \\ldots, a_{30})$의 개수를 구하여라.\n\n(i) $1 \\le a_1 \\le a_2 \\le \\cdots \\le a_{30} \\le 30$\n\n(ii) 임의의 양의 정수 $k$에 대하여, $k \\le a_i \\le k + 1$인 정수 $i$ $(1 \\le i \\le 30)$의 개수는 $2$개 이하이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 17,
+          "problem": "There is a regular $20$-gon $P$ inscribed in a circle of radius $1$. Let $A$ be the set of all segments that can be formed by joining two of the $20$ vertices of $P$. Find the number of sets $S$ satisfying the following conditions.\n\n(i) $S \\subseteq A$, and $S$ has at least $3$ elements.\n\n(ii) Among any three distinct elements of $S$, there are two segments that are parallel to each other.\n\n(iii) The sum of the lengths of all segments of $S$ is $\\frac{2 + 2\\cos\\left(\\frac{\\pi}{20}\\right)}{\\sin\\left(\\frac{\\pi}{20}\\right)}$.",
+          "problem_orig": "반지름이 $1$인 원에 내접하는 정$20$각형 $P$가 있다. $P$의 $20$개의 꼭짓점 중 두 점을 연결하여 만들 수 있는 선분들을 모두 모은 집합을 $A$라 하자. 다음 조건을 만족하는 집합 $S$의 개수를 구하여라.\n\n(i) $S \\subseteq A$이고, $S$의 원소의 개수는 $3$개 이상이다.\n\n(ii) $S$의 임의의 서로 다른 세 원소에 대하여, 이들 중 서로 평행인 두 선분이 존재한다.\n\n(iii) $S$의 모든 선분의 길이의 합은 $\\frac{2 + 2\\cos\\left(\\frac{\\pi}{20}\\right)}{\\sin\\left(\\frac{\\pi}{20}\\right)}$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 18,
+          "problem": "For positive integers $x$, $y$, $z$ satisfying both of the following conditions, find the maximum value of $10x + y + z$.\n\n(i) $x \\le y \\le z$ and $x + y + z \\le 60$.\n\n(ii) $x^2 + y^2 + z^2 = xyz$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $x$, $y$, $z$에 대하여, $10x + y + z$의 최댓값을 구하여라.\n\n(i) $x \\le y \\le z$이고, $x + y + z \\le 60$이다.\n\n(ii) $x^2 + y^2 + z^2 = xyz$",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 19,
+          "problem": "A convex quadrilateral $ABCD$ satisfies $\\angle ABC = \\angle CDA$, and triangles $ABC$ and $ADC$ are both acute. Let $H$ be the orthocentre of triangle $ABC$ and $K$ the orthocentre of triangle $ADC$, and let $P$, $Q$ be the feet of the perpendiculars from $K$ to the lines $BC$, $AB$ respectively. The lines $HK$ and $PQ$ meet at the point $R$, and the lines $KQ$ and $HP$ meet at the point $S$. If $PR = 28$ and $RQ = 24$, find the value of $6\\frac{SQ}{QK}$.",
+          "problem_orig": "볼록사각형 $ABCD$가 $\\angle ABC = \\angle CDA$를 만족하고, 삼각형 $ABC$와 삼각형 $ADC$가 모두 예각삼각형이라 하자. 삼각형 $ABC$의 수심을 $H$, 삼각형 $ADC$의 수심을 $K$라 하고, $K$에서 직선 $BC$, $AB$에 내린 수선의 발을 각각 $P$, $Q$라 하자. 직선 $HK$와 $PQ$가 점 $R$에서 만나고, 직선 $KQ$와 $HP$가 점 $S$에서 만난다. $\\overline{PR} = 28$, $\\overline{RQ} = 24$일 때, $6\\frac{\\overline{SQ}}{\\overline{QK}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "number": 20,
+          "problem": "The positive integers $a_1, a_3, \\ldots, a_{2023}, a_{2025}$ are distinct odd numbers not exceeding $2025$, and the positive integers $a_2, a_4, \\ldots, a_{2024}, a_{2026}$ are distinct even numbers not exceeding $2026$. If $M$ is the maximum value of the following expression, find the remainder when $M$ is divided by $1000$.\n$$\\sum_{i=1}^{2025} |a_i - a_{i+1}|$$",
+          "problem_orig": "양의 정수 $a_1, a_3, \\ldots, a_{2023}, a_{2025}$는 $2025$ 이하의 서로 다른 홀수이며, 양의 정수 $a_2, a_4, \\ldots, a_{2024}, a_{2026}$은 $2026$ 이하의 서로 다른 짝수이다. 다음 식의 최댓값을 $M$이라 할 때, $M$을 $1000$으로 나눈 나머지를 구하여라.\n$$\\sum_{i=1}^{2025} |a_i - a_{i+1}|$$",
+          "orig_lang": "ko"
+        }
+      ]
     }
   ]
 }
