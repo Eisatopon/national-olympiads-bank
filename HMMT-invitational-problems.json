@@ -1,0 +1,355 @@
+{
+  "competition": "HMMT Invitational Competition (HMIC)",
+  "years": [
+    {
+      "year": 2013,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\mathcal{S}$ be a set of size $n$, and $k$ be a positive integer. For each $1 \\le i \\le kn$, there is a subset $S_i \\subset \\mathcal{S}$ such that $|S_i| = 2$. Furthermore, for each $e \\in \\mathcal{S}$, there are exactly $2k$ values of $i$ such that $e \\in S_i$. Show that it is possible to choose one element from $S_i$ for each $1 \\le i \\le kn$ such that every element of $\\mathcal{S}$ is chosen exactly $k$ times."
+        },
+        {
+          "number": 2,
+          "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that, for all real numbers $x, y$, $$(x - y)(f(x) - f(y)) = f(x - f(y))f(f(x) - y).$$"
+        },
+        {
+          "number": 3,
+          "problem": "Triangle $ABC$ is inscribed in a circle $\\omega$ such that $\\angle A = 60^\\circ$ and $\\angle B = 75^\\circ$. Let the bisector of angle $A$ meet $BC$ and $\\omega$ at $E$ and $D$, respectively. Let the reflections of $A$ across $D$ and $C$ be $D'$ and $C'$, respectively. If the tangent to $\\omega$ at $A$ meets line $BC$ at $P$, and the circumcircle of $APD'$ meets line $AC$ at $F \\neq A$, prove that the circumcircle of $C'FE$ is tangent to $BC$ at $E$."
+        },
+        {
+          "number": 4,
+          "problem": "A subset $U \\subset \\mathbb{R}$ is open if for any $x \\in U$, there exist real numbers $a, b$ such that $x \\in (a, b) \\subset U$. Suppose $S \\subset \\mathbb{R}$ has the property that any open set intersecting $(0, 1)$ also intersects $S$. Let $T$ be a countable collection of open sets containing $S$. Prove that the intersection of all of the sets of $T$ is not a countable subset of $\\mathbb{R}$.\n(A set $\\Gamma$ is countable if there exists a bijective function $f : \\Gamma \\to \\mathbb{Z}$.)"
+        },
+        {
+          "number": 5,
+          "problem": "(a) Given a finite set $X$ of points in the plane, let $f_X(n)$ be the largest possible area of a polygon with at most $n$ vertices, all of which are points of $X$. Prove that if $m, n$ are integers with $m \\ge n > 2$, then $f_X(m) + f_X(n) \\ge f_X(m + 1) + f_X(n - 1)$.\n(b) Let $P_0$ be a 1-by-2 rectangle (including its interior), and inductively define the polygon $P_i$ to be the result of folding $P_{i-1}$ over some line that cuts $P_{i-1}$ into two connected parts. The diameter of a polygon $P_i$ is the maximum distance between two points of $P_i$. Determine the smallest possible diameter of $P_{2013}$.\n(In other words, given a polygon $P_{i-1}$, a fold of $P_{i-1}$ consists of a line $l$ dividing $P_{i-1}$ into two connected parts $A$ and $B$, and the folded polygon $P_i = A \\cup B_l$, where $B_l$ is the reflection of $B$ over the line $l$.)"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Consider a regular $n$-gon with $n > 3$, and call a line acceptable if it passes through the interior of this $n$-gon. Draw $m$ different acceptable lines, so that the $n$-gon is divided into several smaller polygons.\n(a) Prove that there exists an $m$, depending only on $n$, such that any collection of $m$ acceptable lines results in one of the smaller polygons having $3$ or $4$ sides.\n(b) Find the smallest possible $m$ which guarantees that at least one of the smaller polygons will have $3$ or $4$ sides."
+        },
+        {
+          "number": 2,
+          "problem": "$2014$ triangles have non-overlapping interiors contained in a circle of radius $1$. What is the largest possible value of the sum of their areas?"
+        },
+        {
+          "number": 3,
+          "problem": "Fix positive integers $m$ and $n$. Suppose that $a_1, a_2, \\dots, a_m$ are reals, and that pairwise distinct vectors $v_1, \\dots, v_m \\in \\mathbb{R}^n$ satisfy $$\\sum_{j \\neq i} a_j \\frac{v_j - v_i}{\\|v_j - v_i\\|^3} = 0$$ for $i = 1, 2, \\dots, m$. Prove that $$\\sum_{1 \\le i < j \\le m} \\frac{a_i a_j}{\\|v_j - v_i\\|} = 0.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\omega$ be a root of unity and $f$ be a polynomial with integer coefficients. Show that if $|f(\\omega)| = 1$, then $f(\\omega)$ is also a root of unity."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n$ be a positive integer, and let $A$ and $B$ be $n \\times n$ matrices with complex entries such that $A^2 = B^2$. Show that there exists an $n \\times n$ invertible matrix $S$ with complex entries that satisfies $S(AB - BA) = (BA - AB)S$."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $S$ be the set of positive integers $n$ such that the inequality $$\\phi(n) \\cdot \\tau(n) \\ge \\sqrt{\\frac{n^3}{3}}$$ holds, where $\\phi(n)$ is the number of positive integers $k \\le n$ that are relatively prime to $n$, and $\\tau(n)$ is the number of positive divisors of $n$. Prove that $S$ is finite."
+        },
+        {
+          "number": 2,
+          "problem": "Let $m, n$ be positive integers with $m \\ge n$. Let $S$ be the set of pairs $(a, b)$ of relatively prime positive integers such that $a, b \\le m$ and $a + b > m$.\nFor each pair $(a, b) \\in S$, consider the nonnegative integer solution $(u, v)$ to the equation $au - bv = n$ chosen with $v \\ge 0$ minimal, and let $I(a, b)$ denote the (open) interval $(v/a, u/b)$.\nProve that $I(a, b) \\subseteq (0, 1)$ for every $(a, b) \\in S$, and that any fixed irrational number $\\alpha \\in (0, 1)$ lies in $I(a, b)$ for exactly $n$ distinct pairs $(a, b) \\in S$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $M$ be a $2014 \\times 2014$ invertible matrix, and let $\\mathcal{F}(M)$ denote the set of matrices whose rows are a permutation of the rows of $M$. Find the number of matrices $F \\in \\mathcal{F}(M)$ such that $\\det(M + F) \\neq 0$."
+        },
+        {
+          "number": 4,
+          "problem": "Prove that there exists a positive integer $N$ such that for any positive integer $n \\ge N$, there are at least $2015$ non-empty subsets $S$ of $\\{n^2 + 1, n^2 + 2, \\dots, n^2 + 3n\\}$ with the property that the product of the elements of $S$ is a perfect square."
+        },
+        {
+          "number": 5,
+          "problem": "Let $\\omega = e^{2\\pi i/5}$ be a primitive fifth root of unity. Prove that there do not exist integers $a, b, c, d, k$ with $k > 1$ such that $$(a + b\\omega + c\\omega^2 + d\\omega^3)^k = 1 + \\omega.$$"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Theseus starts at the point $(0, 0)$ in the plane. If Theseus is standing at the point $(x, y)$ in the plane, he can step one unit to the north to point $(x, y + 1)$, one unit to the west to point $(x - 1, y)$, one unit to the south to point $(x, y - 1)$, or one unit to the east to point $(x + 1, y)$. After a sequence of more than two such moves, starting with a step one unit to the south (to point $(0, -1)$), Theseus finds himself back at the point $(0, 0)$. He never visited any point other than $(0, 0)$ more than once, and never visited the point $(0, 0)$ except at the start and end of this sequence of moves.\nLet $X$ be the number of times that Theseus took a step one unit to the north, and then a step one unit to the west immediately afterward. Let $Y$ be the number of times that Theseus took a step one unit to the west, and then a step one unit to the north immediately afterward. Prove that $|X - Y| = 1$."
+        },
+        {
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle with circumcenter $O$, orthocenter $H$, and circumcircle $\\Omega$. Let $M$ be the midpoint of $AH$ and $N$ the midpoint of $BH$. Assume the points $M$, $N$, $O$, $H$ are distinct and lie on a circle $\\omega$. Prove that the circles $\\omega$ and $\\Omega$ are internally tangent to each other."
+        },
+        {
+          "number": 3,
+          "problem": "Denote by $\\mathbb{N}$ the positive integers. Let $f : \\mathbb{N} \\to \\mathbb{N}$ be a function such that, for any $w, x, y, z \\in \\mathbb{N}$, $$f(f(f(z)))f(wxf(yf(z))) = z^2 f(xf(y))f(w).$$ Show that $f(n!) \\ge n!$ for every positive integer $n$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $P$ be an odd-degree integer-coefficient polynomial. Suppose that $xP(x) = yP(y)$ for infinitely many pairs $x, y$ of integers with $x \\neq y$. Prove that the equation $P(x) = 0$ has an integer root."
+        },
+        {
+          "number": 5,
+          "problem": "Let $S = \\{a_1, \\dots, a_n\\}$ be a finite set of positive integers of size $n \\ge 1$, and let $T$ be the set of all positive integers that can be expressed as sums of perfect powers (including $1$) of distinct numbers in $S$, meaning $$T = \\left\\{ \\sum_{i=1}^{n} a_i^{e_i} \\mid e_1, e_2, \\dots, e_n \\ge 0 \\right\\}.$$ Show that there is a positive integer $N$ (only depending on $n$) such that $T$ contains no arithmetic progression of length $N$."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Kevin and Yang are playing a game. Yang has $2017 + \\binom{2017}{2}$ cards with their front sides face down on the table. The cards are constructed as follows:\n• For each $1 \\le n \\le 2017$, there is a blue card with $n$ written on the back, and a fraction $\\frac{a_n}{b_n}$ written on the front, where $\\gcd(a_n, b_n) = 1$ and $a_n, b_n > 0$.\n• For each $1 \\le i < j \\le 2017$, there is a red card with $(i, j)$ written on the back, and a fraction $\\frac{a_i + a_j}{b_i + b_j}$ written on the front.\nIt is given no two cards have equal fractions. In a turn Kevin can pick any two cards and Yang tells Kevin which card has the larger fraction on the front. Show that, in fewer than $10000$ turns, Kevin can determine which red card has the largest fraction out of all of the red cards."
+        },
+        {
+          "number": 2,
+          "problem": "Let $S = \\{1, 2, \\dots, n\\}$ for some positive integer $n$, and let $A$ be an $n$-by-$n$ matrix having as entries only ones and zeros. Define an infinite sequence $\\{x_i\\}_{i \\ge 0}$ to be strange if:\n• $x_i \\in S$ for all $i$,\n• $a_{x_k x_{k+1}} = 1$ for all $k$, where $a_{ij}$ denotes the element in the $i^{\\text{th}}$ row and $j^{\\text{th}}$ column of $A$.\nProve that the set of strange sequences is empty if and only if $A$ is nilpotent, i.e. $A^m = 0$ for some integer $m$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $v_1, v_2, \\dots, v_m$ be vectors in $\\mathbb{R}^n$, such that each has a strictly positive first coordinate. Consider the following process. Start with the zero vector $w = (0, 0, \\dots, 0) \\in \\mathbb{R}^n$. Every round, choose an $i$ such that $1 \\le i \\le m$ and $w \\cdot v_i \\le 0$, and then replace $w$ with $w + v_i$.\nShow that there exists a constant $C$ such that regardless of your choice of $i$ at each step, the process is guaranteed to terminate in $C$ rounds. The constant $C$ may depend on the vectors $v_1, \\dots, v_m$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $G$ be a weighted bipartite graph $A \\cup B$, with $|A| = |B| = n$. In other words, each edge in the graph is assigned a positive integer value, called its weight. Also, define the weight of a perfect matching in $G$ to be the sum of the weights of the edges in the matching.\nLet $G'$ be the graph with vertex set $A \\cup B$, and contains the edge $e$ if and only if $e$ is part of some minimum weight perfect matching in $G$.\nShow that all perfect matchings in $G'$ have the same weight."
+        },
+        {
+          "number": 5,
+          "problem": "Let $S$ be the set $\\{-1, 1\\}^n$, that is, $n$-tuples such that each coordinate is either $-1$ or $1$. For $$s = (s_1, s_2, \\dots, s_n), \\ t = (t_1, t_2, \\dots, t_n) \\in \\{-1, 1\\}^n,$$ define $s \\odot t = (s_1 t_1, s_2 t_2, \\dots, s_n t_n)$.\nLet $c$ be a positive constant, and let $f : S \\to \\{-1, 1\\}$ be a function such that there are at least $(1 - c) \\cdot 2^{2n}$ pairs $(s, t)$ with $s, t \\in S$ such that $f(s \\odot t) = f(s)f(t)$. Show that there exists a function $f'$ such that $f'(s \\odot t) = f'(s)f'(t)$ for all $s, t \\in S$ and $f(s) = f'(s)$ for at least $(1 - 10c) \\cdot 2^n$ values of $s \\in S$."
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $m > 1$ be a fixed positive integer. For a nonempty string of base-ten digits $S$, let $c(S)$ be the number of ways to split $S$ into contiguous nonempty strings of digits such that the base-ten number represented by each string is divisible by $m$. These strings are allowed to have leading zeroes.\nIn terms of $m$, what are the possible values that $c(S)$ can take?\nFor example, if $m = 2$, then $c(1234) = 2$ as the splits $1234$ and $12|34$ are valid, while the other six splits are invalid."
+        },
+        {
+          "number": 2,
+          "problem": "Consider a finite set of points $T \\in \\mathbb{R}^n$ contained in the $n$-dimensional unit ball centered at the origin, and let $X$ be the convex hull of $T$. Prove that for all positive integers $k$ and all points $x \\in X$, there exist points $t_1, t_2, \\dots, t_k \\in T$, not necessarily distinct, such that their centroid $$\\frac{t_1 + t_2 + \\cdots + t_k}{k}$$ has Euclidean distance at most $\\frac{1}{\\sqrt{k}}$ from $x$.\n(The $n$-dimensional unit ball centered at the origin is the set of points in $\\mathbb{R}^n$ with Euclidean distance at most $1$ from the origin. The convex hull of a set of points $T \\in \\mathbb{R}^n$ is the smallest set of points $X$ containing $T$ such that each line segment between two points in $X$ lies completely inside $X$.)"
+        },
+        {
+          "number": 3,
+          "problem": "A polygon in the plane (with no self-intersections) is called equitable if every line passing through the origin divides the polygon into two (possibly disconnected) regions of equal area.\nDoes there exist an equitable polygon which is not centrally symmetric about the origin?\n(A polygon is centrally symmetric about the origin if a 180-degree rotation about the origin sends the polygon to itself.)"
+        },
+        {
+          "number": 4,
+          "problem": "Find all functions $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that $$f(x + f(y + xy)) = (y + 1)f(x + 1) - 1$$ for all $x, y \\in \\mathbb{R}^+$.\n($\\mathbb{R}^+$ denotes the set of positive real numbers.)"
+        },
+        {
+          "number": 5,
+          "problem": "Let $G$ be an undirected simple graph. Let $f(G)$ be the number of ways to orient all of the edges of $G$ in one of the two possible directions so that the resulting directed graph has no directed cycles. Show that $f(G)$ is a multiple of $3$ if and only if $G$ has a cycle of odd length."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABC$ be an acute scalene triangle with incenter $I$. Show that the circumcircle of $BIC$ intersects the Euler line of $ABC$ in two distinct points.\n(Recall that the Euler line of a scalene triangle is the line that passes through its circumcenter, centroid, orthocenter, and the nine-point center.)"
+        },
+        {
+          "number": 2,
+          "problem": "Annie has a permutation $(a_1, a_2, \\dots, a_{2019})$ of $S = \\{1, 2, \\dots, 2019\\}$, and Yannick wants to guess her permutation. With each guess Yannick gives Annie an $n$-tuple $(y_1, y_2, \\dots, y_{2019})$ of integers in $S$, and then Annie gives the number of indices $i \\in S$ such that $a_i = y_i$.\n(a) Show that Yannick can always guess Annie's permutation with at most $1200000$ guesses.\n(b) Show that Yannick can always guess Annie's permutation with at most $24000$ guesses."
+        },
+        {
+          "number": 3,
+          "problem": "Do there exist four points $P_i = (x_i, y_i) \\in \\mathbb{R}^2$ $(1 \\le i \\le 4)$ on the plane such that:\n• for all $i = 1, 2, 3, 4$, the inequality $x_i^4 + y_i^4 \\le x_i^3 + y_i^3$ holds, and\n• for all $i \\neq j$, the distance between $P_i$ and $P_j$ is greater than $1$?"
+        },
+        {
+          "number": 4,
+          "problem": "A cactus is a finite simple connected graph where no two cycles share an edge. Show that in a nonempty cactus, there must exist a vertex which is part of at most one cycle."
+        },
+        {
+          "number": 5,
+          "problem": "Let $p = 2017$ be a prime and $\\mathbb{F}_p$ be the integers modulo $p$. A function $f : \\mathbb{Z} \\to \\mathbb{F}_p$ is called good if there is $\\alpha \\in \\mathbb{F}_p$ with $\\alpha \\not\\equiv 0 \\pmod{p}$ such that $$f(x)f(y) = f(x + y) + \\alpha^y f(x - y) \\pmod{p}$$ for all $x, y \\in \\mathbb{Z}$. How many good functions are there that are periodic with minimal period $2016$?"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Sir Alex is coaching a soccer team of $n$ players of distinct heights. He wants to line them up so that for each player $P$, the total number of players that are either to the left of $P$ and taller than $P$ or to the right of $P$ and shorter than $P$ is even. In terms of $n$, how many possible orders are there?"
+        },
+        {
+          "number": 2,
+          "problem": "Some bishops and knights are placed on an infinite chessboard, where each square has side length $1$ unit. Suppose that the following conditions hold:\n• For each bishop, there exists a knight on the same diagonal as that bishop (there may be another piece between the bishop and the knight).\n• For each knight, there exists a bishop that is exactly $\\sqrt{5}$ units away from it.\n• If any piece is removed from the board, then at least one of the above conditions is no longer satisfied.\nIf $n$ is the total number of pieces on the board, find all possible values of $n$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $P_1P_2P_3P_4$ be a tetrahedron in $\\mathbb{R}^3$ and let $O$ be a point equidistant from each of its vertices. Suppose there exists a point $H$ such that for each $i$, the line $P_iH$ is perpendicular to the plane through the other three vertices. Line $P_1H$ intersects the plane through $P_2, P_3, P_4$ at $A$, and contains a point $B \\neq P_1$ such that $OP_1 = OB$. Show that $HB = 3HA$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $C_k = \\frac{1}{k+1}\\binom{2k}{k}$ denote the $k^{\\text{th}}$ Catalan number and $p$ be an odd prime. Prove that exactly half of the numbers in the set $$\\left\\{ \\sum_{k=1}^{p-1} C_k n^k \\;\\middle|\\; n \\in \\{1, 2, \\dots, p - 1\\} \\right\\}$$ are divisible by $p$."
+        },
+        {
+          "number": 5,
+          "problem": "A triangle and a circle are in the same plane. Show that the area of the intersection of the triangle and the circle is at most one third of the area of the triangle plus one half of the area of the circle."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$2021$ people are sitting around a circular table. In one move, you may swap the positions of two people sitting next to each other. Determine the minimum number of moves necessary to make each person end up $1000$ positions to the left of their original position."
+        },
+        {
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. Alice writes $n$ real numbers $a_1, a_2, \\dots, a_n$ in a line (in that order). Every move, she picks one number and replaces it with the average of itself and its neighbors ($a_n$ is not a neighbor of $a_1$, nor vice versa). A number changes sign if it changes from being nonnegative to negative or vice versa. In terms of $n$, determine the maximum number of times that $a_1$ can change sign, across all possible values of $a_1, a_2, \\dots, a_n$ and all possible sequences of moves Alice may make."
+        },
+        {
+          "number": 3,
+          "problem": "Let $A$ be a set of $n \\ge 2$ positive integers, and let $f(x) = \\sum_{a \\in A} x^a$. Prove that there exists a complex number $z$ with $|z| = 1$ and $|f(z)| = \\sqrt{n - 2}$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $A_1A_2A_3A_4$, $B_1B_2B_3B_4$, and $C_1C_2C_3C_4$ be three regular tetrahedra in $3$-dimensional space, no two of which are congruent. Suppose that, for each $i \\in \\{1, 2, 3, 4\\}$, $C_i$ is the midpoint of the line segment $A_iB_i$. Determine whether the four lines $A_1B_1$, $A_2B_2$, $A_3B_3$, and $A_4B_4$ must concur."
+        },
+        {
+          "number": 5,
+          "problem": "In an $n \\times n$ square grid, $n$ squares are marked so that every rectangle composed of exactly $n$ grid squares contains at least one marked square. Determine all possible values of $n$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Is $$\\prod_{k=0}^{\\infty} \\left(1 - \\frac{1}{2022^{k!}}\\right)$$ rational?"
+        },
+        {
+          "number": 2,
+          "problem": "Does there exist a regular pentagon whose vertices lie on the edges of a cube?"
+        },
+        {
+          "number": 3,
+          "problem": "For a nonnegative integer $n$, let $s(n)$ be the sum of the digits of the binary representation of $n$. Prove that $$\\sum_{n=0}^{2^{2022}-1} \\frac{(-1)^{s(n)}}{2022 + n} > 0.$$"
+        },
+        {
+          "number": 4,
+          "problem": "Call a simple graph $G$ quasicolorable if we can color each edge blue, red, green, or white such that\n• for each vertex $v$ of degree $3$ in $G$, the three edges incident to $v$ are either (1) red, green, and blue, or (2) all white,\n• not all edges are white.\nA simple connected graph $G$ has $a$ vertices of degree $4$, $b$ vertices of degree $3$, and no other vertices, where $a$ and $b$ are positive integers. Find the smallest real number $c$ so that the following statement is true: \"If $a/b > c$, then $G$ must be quasicolorable.\""
+        },
+        {
+          "number": 5,
+          "problem": "Let $p$ be a prime and let $\\mathbb{F}_p$ be the set of integers modulo $p$. Call a function $f : \\mathbb{F}_p^2 \\to \\mathbb{F}_p$ quasiperiodic if there exist $a, b \\in \\mathbb{F}_p$, not both zero, so that $f(x + a, y + b) = f(x, y)$ for all $x, y \\in \\mathbb{F}_p$. Find the number of functions $\\mathbb{F}_p^2 \\to \\mathbb{F}_p$ that can be written as the sum of some number of quasiperiodic functions."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\mathbb{Q}^+$ denote the set of positive rational numbers. Find, with proof, all functions $f : \\mathbb{Q}^+ \\to \\mathbb{Q}^+$ such that, for all positive rational numbers $x$ and $y$, we have $$f(x) = f(x + y) + f(x + x^2 f(y)).$$"
+        },
+        {
+          "number": 2,
+          "problem": "A prime number $p$ is mundane if there exist positive integers $a$ and $b$ less than $\\frac{p}{2}$ such that $\\frac{ab - 1}{p}$ is a positive integer. Find, with proof, all prime numbers that are not mundane."
+        },
+        {
+          "number": 3,
+          "problem": "Triangle $ABC$ has incircle $\\omega$ and $A$-excircle $\\omega_A$. Circle $\\gamma_B$ passes through $B$ and is externally tangent to $\\omega$ and $\\omega_A$. Circle $\\gamma_C$ passes through $C$ and is externally tangent to $\\omega$ and $\\omega_A$. If $\\gamma_B$ intersects line $BC$ again at $D$, and $\\gamma_C$ intersects line $BC$ again at $E$, prove that $BD = EC$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $n > 1$ be a positive integer. Claire writes $n$ distinct positive real numbers $x_1, x_2, \\dots, x_n$ in a row on a blackboard. In a move, William can erase a number $x$ and replace it with either $\\frac{1}{x}$ or $x + 1$ at the same location. His goal is to perform a sequence of moves such that after he is done, the numbers are strictly increasing from left to right.\n(a) Prove that there exists a positive constant $A$, independent of $n$, such that William can always reach his goal in at most $An \\log n$ moves.\n(b) Prove that there exists a positive constant $B$, independent of $n$, such that Claire can choose the initial numbers such that William cannot attain his goal in less than $Bn \\log n$ moves."
+        },
+        {
+          "number": 5,
+          "problem": "Let $a_1, a_2, \\dots$ be an infinite sequence of positive integers such that, for all positive integers $m$ and $n$, we have that $a_{m+n}$ divides $a_m a_n - 1$. Prove that there exists an integer $C$ such that, for all positive integers $k > C$, we have $a_k = 1$."
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an empty $100 \\times 100$ grid, $300$ cells are colored blue, $3$ in each row and each column. Compute the largest positive integer $k$ such that you can always recolor $k$ of these blue cells red so that no contiguous $2 \\times 2$ square has four red cells."
+        },
+        {
+          "number": 2,
+          "problem": "Suppose that $a$, $b$, $c$, and $d$ are real numbers such that $a + b + c + d = 8$. Compute the minimum possible value of $$20(a^2 + b^2 + c^2 + d^2) - \\sum_{\\text{sym}} a^3 b,$$ where the sum is over all $12$ symmetric terms."
+        },
+        {
+          "number": 3,
+          "problem": "Let $S$ be a set of nonnegative integers such that\n• there exist two elements $a$ and $b$ in $S$ such that $a, b > 1$ and $\\gcd(a, b) = 1$; and\n• for any (not necessarily distinct) element $x$ and nonzero element $y$ in $S$, both $xy$ and the remainder when $x$ is divided by $y$ are in $S$.\nProve that $S$ contains every nonnegative integer."
+        },
+        {
+          "number": 4,
+          "problem": "Given a positive integer $n$, let $[n] = \\{1, 2, \\dots, n\\}$. Let\n• $a_n$ denote the number of functions $f : [n] \\to [n]$ such that $f(f(i)) \\ge i$ for all $i$; and\n• $b_n$ denote the number of ordered set partitions of $[n]$, i.e., the number of ways to pick an integer $k$ and an ordered $k$-tuple of pairwise disjoint nonempty sets $(A_1, \\dots, A_k)$ whose union is $[n]$.\nProve that $a_n = b_n$."
+        },
+        {
+          "number": 5,
+          "problem": "Let $ABC$ be an acute, scalene triangle with circumcenter $O$ and symmedian point $K$. Let $X$ be the point on the circumcircle of triangle $BOC$ such that $\\angle AXO = 90^\\circ$. Assume that $X \\neq K$. The hyperbola passing through $B$, $C$, $O$, $K$, and $X$ intersects the circumcircle of triangle $ABC$ at points $U$ and $V$, distinct from $B$ and $C$. Prove that $UV$ is the perpendicular bisector of $AX$.\nThe symmedian point of triangle $ABC$ is the intersection of the reflections of $B$-median and $C$-median across the angle bisectors of $\\angle ABC$ and $\\angle ACB$, respectively."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $ABCD$ be a convex quadrilateral. Define parabolas $\\mathcal{P}_A$, $\\mathcal{P}_B$, $\\mathcal{P}_C$, and $\\mathcal{P}_D$ to have directrices $BD$, $CA$, $DB$, and $AC$, and foci $A$, $B$, $C$, and $D$, respectively. Prove that no two of these parabolas intersect more than once.\n(A parabola with directrix $\\ell$ and focus $P$ consists of all points $X$ for which $PX$ equals the distance from $P$ to $\\ell$.)"
+        },
+        {
+          "number": 2,
+          "problem": "Find all polynomials $P$ with real coefficients for which there exists a polynomial $Q$ with real coefficients such that for all real $t$, $$\\cos(P(t)) = Q(\\cos t).$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABCD$ be a parallelogram, and let $O$ be a point inside $ABCD$. Suppose the circumcircles of triangles $OAB$ and $OCD$ intersect at $P \\neq O$, and the circumcircles of triangles $OBC$ and $OAD$ intersect at $Q \\neq O$. Prove $\\angle POQ$ equals one of the angles of quadrilateral $ABCD$."
+        },
+        {
+          "number": 4,
+          "problem": "Determine whether there exist infinitely many pairs of distinct positive integers $m$ and $n$ such that $2^m + n$ divides $2^n + m$."
+        },
+        {
+          "number": 5,
+          "problem": "Compute the smallest positive integer $k > 45$ for which there exists a sequence $a_1, a_2, a_3, \\dots, a_{k-1}$ of positive integers satisfying the following conditions:\n• $a_i = i$ for all integers $1 \\le i \\le 45$,\n• $a_{k-i} = i$ for all integers $1 \\le i \\le 45$, and\n• for any odd integer $1 \\le n \\le k - 45$, the sequence $a_n, a_{n+1}, \\dots, a_{n+44}$ is a permutation of $\\{1, 2, \\dots, 45\\}$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $m$ and $n$ be even positive integers. Suppose we have a tiling of an $m \\times n$ rectangle with $mn/2$ non-overlapping dominoes ($1 \\times 2$ or $2 \\times 1$). Prove there exists another tiling of the rectangle with dominoes that shares no dominoes with the original tiling.\n(Two tilings are said to share a domino if there exists two cells of the rectangle which are covered by a single domino in both tilings.)"
+        },
+        {
+          "number": 2,
+          "problem": "Prove that there exist infinitely many positive integers $n$ such that $n + 100$ divides $3^n - 2^n - 1$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $ABC$ be a scalene triangle with circumcenter $O$ and symmedian point $K$. Points $X$ and $Y$ lie on the interiors of sides $\\overline{AC}$ and $\\overline{AB}$, respectively, such that $XY \\parallel BC$. Suppose that the circumcircles of triangles $AXB$ and $AYC$ meet segment $\\overline{BC}$ at points $D \\neq B$ and $E \\neq C$, respectively. Prove that $D$, $E$, $X$, and $Y$ lie on a circle whose center lies on line $OK$.\n(The symmedian point of triangle $ABC$ is the intersection of the reflections of the $B$-median and $C$-median across the angle bisectors of $\\angle ABC$ and $\\angle ACB$, respectively.)"
+        },
+        {
+          "number": 4,
+          "problem": "Let $n \\ge 4$ be an integer. Alice selects $n$ pairwise distinct points $A_1, A_2, \\dots, A_n$ in the plane. In a single query, Bob selects four pairwise distinct integers $i$, $j$, $k$, and $\\ell$, each between $1$ and $n$, inclusive, and sends them to Alice; Alice then responds \"yes\" if the lines $A_iA_j$ and $A_kA_\\ell$ are parallel or coincide, and \"no\" otherwise. In terms of $n$, determine the minimum number of queries Bob needs to determine whether all $n$ points are collinear, regardless of how the points are positioned."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. Determine, in terms of $n$, the number of ordered $n$-tuples $(a_1, a_2, \\dots, a_n)$ of real numbers such that\n• $0 \\le a_i < 1$ for all $1 \\le i \\le n$, and\n• $a_1 \\cdot 1^k + a_2 \\cdot 2^k + \\cdots + a_n \\cdot n^k$ is an integer for all nonnegative integers $k$."
+        }
+      ]
+    }
+  ]
+}

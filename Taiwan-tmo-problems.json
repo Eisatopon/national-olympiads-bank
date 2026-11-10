@@ -435,6 +435,41 @@
           "problem": "$a_1, a_2, \\ldots, a_{95}$ are positive reals. Show that $$\\sum_{k=1}^{95}a_k \\le 94+ \\prod_{k=1}^{95}\\max\\{1,a_k\\}.$$"
         }
       ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ and $m$ be positive integers. A nursery teacher uses $n \\times m$ square floor mats to make an $n \\times m$ rectangular area, with a baby on each mat. Each baby faces one side of its square. When the teacher claps, all babies simultaneously crawl one mat forward in the direction they face, and then every baby turns $90^\\circ$ clockwise where it is. A baby that crawls out of the $n \\times m$ rectangle cries. If two babies crawl onto the same mat, they bump into each other and both cry.\n\nIt is known that the teacher can choose the initial direction of each baby so that, no matter how many times she claps, no baby ever cries. Find all possible values of $n$ and $m$.",
+          "problem_orig": "令 $n$ 與 $m$ 為正整數。托兒所的老師用 $n \\times m$ 塊正方形巧拼，排成一個 $n \\times m$ 的長方形區域。每塊巧拼上有一個嬰兒，各自面向正方形的某一個邊。老師一拍手，所有嬰兒就同時往其面對的方向前進一塊巧拼，之後所有嬰兒原地順時鐘轉 90 度。若一個嬰兒爬出 $n \\times m$ 的長方形區域，則該嬰兒大哭。若兩個嬰兒前進到相同的巧拼上，他們會對撞然後一起大哭。\n已知老師可以適當安排一開始每個嬰兒的面向，使得不論老師拍多少次手，都沒有嬰兒大哭。\n試求 $n$ 與 $m$ 的所有可能值。",
+          "orig_lang": "zh"
+        },
+        {
+          "number": 2,
+          "problem": "Find all positive integers $n$ satisfying both of the following conditions:\n\n(a) the number of positive divisors of $n$ is not a multiple of $8$;\n\n(b) for all integers $x$,\n$$x^n \\equiv x \\pmod{n}.$$",
+          "problem_orig": "試求所有同時滿足以下兩條件的正整數 $n$:\n(a) $n$ 的正因數個數不是 8 的倍數；\n(b) 對於所有整數 $x$, 有\n$$\nx^n \\equiv x \\mod n.\n$$",
+          "orig_lang": "zh"
+        },
+        {
+          "number": 3,
+          "problem": "In the plane, let $O$ be the centre of a circle $\\Gamma$, and let $A$, $B$ be two points on $\\Gamma$ such that $O$, $A$, $B$ are not collinear. Let $M$ be the midpoint of the segment $AB$, and take points $P$ and $Q$ on the lines $OA$ and $OB$, respectively, such that $P \\ne A$ and $P$, $M$, $Q$ are collinear. Let $X$ be the intersection of the line through $P$ parallel to $AB$ and the line through $Q$ parallel to $OM$, and let $Y$ be the intersection of the line through $X$ parallel to $OA$ and the line through $B$ perpendicular to $OX$. Prove that if $X$ lies on $\\Gamma$, then $Y$ also lies on $\\Gamma$.",
+          "problem_orig": "平面上設點 $O$ 為圓 $\\Gamma$ 的圓心, 另在 $\\Gamma$ 上有兩點 $A$, $B$ 滿足 $O, A, B$ 不共線。設點 $M$ 為線段 $AB$ 的中點, 並分別在直線 $OA$, $OB$ 上取點 $P$, $Q$ 使得 $P \\neq A$ 且 $P, M, Q$ 三點共線。令過 $P$ 與 $AB$ 平行的直線, 和過 $Q$ 與 $OM$ 平行的直線交於點 $X$; 又令過 $X$ 與 $OA$ 平行的直線, 和過 $B$ 與 $OX$ 垂直的直線交於點 $Y$。證明: 若點 $X$ 在圓 $\\Gamma$ 上, 則點 $Y$ 也在圓 $\\Gamma$ 上。",
+          "orig_lang": "zh"
+        },
+        {
+          "number": 4,
+          "problem": "Let $n$ and $k$ be positive integers. Let $A$ be a set of $2n$ distinct points in the plane, no three of which are collinear. Some pairs of points of $A$ are joined by segments, so that there are $n^2 + k$ distinct segments in the plane. Prove that there are at least $\\frac{4}{3}k^{3/2}$ distinct triangles whose vertices all belong to $A$ and whose three sides are all among these segments.",
+          "problem_orig": "令 $n$ 與 $k$ 為正整數。令 $A$ 為由平面上 $2n$ 個相異點所構成的集合，其中任三點不共線。$A$ 中的若干對點之間有連線，使得平面上有 $n^2 + k$ 條相異線段。試證：平面上至少有 $\\frac{4}{3}k^{3/2}$ 個相異三角形，其頂點皆屬於 $A$，且其三邊皆為上述所連線段。",
+          "orig_lang": "zh"
+        },
+        {
+          "number": 5,
+          "problem": "Let $m$ be a positive integer, and let the real numbers $a_1, a_2, \\dots, a_m$ satisfy\n$$\\frac{1}{m}\\sum_{i=1}^{m} a_i = 1, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^2 = 11, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^3 = 1, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^4 = 131.$$\nProve that $m$ is a multiple of $7$.",
+          "problem_orig": "$m$ 為正整數, 且實數 $a_1, a_2, \\dots, a_m$ 滿足\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i = 1,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^2 = 11,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^3 = 1,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^4 = 131.\n$$\n試證明 $m$ 必為 7 的倍數。",
+          "orig_lang": "zh"
+        }
+      ]
     }
   ]
 }

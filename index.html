@@ -360,6 +360,7 @@
     --ygoj: #52618f; --ygoj-ink: #2f3858; --ygoj-tint: #e9ecf4;
     --hn: #1f5f9e; --hn-ink: #123a61; --hn-tint: #e5eef8;
     --tre: #9e2a4f; --tre-ink: #5f1830; --tre-tint: #f7e6ec;
+    --hmic: #5b3f8c; --hmic-ink: #372556; --hmic-tint: #ece6f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -655,6 +656,7 @@
 .f-ygoj { --f: var(--ygoj); --f-ink: var(--ygoj-ink); --f-tint: var(--ygoj-tint); }
 .f-hn { --f: var(--hn); --f-ink: var(--hn-ink); --f-tint: var(--hn-tint); }
 .f-tre { --f: var(--tre); --f-ink: var(--tre-ink); --f-tint: var(--tre-tint); }
+.f-hmic { --f: var(--hmic); --f-ink: var(--hmic-ink); --f-tint: var(--hmic-tint); }
 
 /* ==========================================================
    Base
@@ -1289,7 +1291,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261110-mathnet-1';
+const DATA_VERSION = '20261110-mathnet-3';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1538,6 +1540,7 @@ REGION_OF.bemi = 'europe';
 REGION_OF.pk = 'asia';
 REGION_OF.hn = 'americas';
 REGION_OF.tre = 'europe';
+REGION_OF.hmic = 'americas';
 REGION_OF.hil = 'europe';
 REGION_OF.grpan = 'europe';
 REGION_OF.alr = 'europe';
@@ -1858,6 +1861,7 @@ const COUNTRIES = [
     { key: 'pk', name: 'Pakistan', flag: '🇵🇰', file: 'Pakistan-nmo-problems.json', kind: 'years', full: "Pakistan National Mathematics Olympiad (Abdus Salam School of Mathematical Sciences), Seniors" },
     { key: 'hn', name: 'Honduras', flag: '🇭🇳', file: 'Honduras-ohm-problems.json', kind: 'years', full: "Olimpiada Hondureña de Matemáticas (OHM), national final, top level (Nivel III; Nivel Medio from 2020)" },
     { key: 'tre', name: 'Turkey EGMO TST', flag: '🇹🇷', file: 'Turkey-egmo-tst-problems.json', kind: 'years', full: "Turkey EGMO Team Selection Test" },
+    { key: 'hmic', name: 'HMMT Invitational (HMIC)', flag: '🇺🇸', file: 'HMMT-invitational-problems.json', kind: 'years', scope: 'tournaments', full: "HMMT Invitational Competition (HMIC)", group: 'HMMT', sub: 'Invitational (HMIC)' },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -2990,7 +2994,7 @@ const ORG_OF = (() => {
     set('au', 'the Australian Mathematics Trust');
     set('kgca kgbe kgec kgpe kgj kgs', 'Kangourou sans Frontières (KSF)');
     set('arml', 'ARML');
-    set('hmmt hmmti hmmtg hmmtn', 'HMMT');
+    set('hmmt hmmti hmmtg hmmtn hmic', 'HMMT');
     set('pumac', 'the Princeton University Mathematics Competition (PUMaC)');
     set('usamts', 'USAMTS (AoPS Initiative)');
     set('bamo', 'the Bay Area Mathematical Olympiad');

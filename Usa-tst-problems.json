@@ -2,6 +2,346 @@
   "competition": "USA IMO Team Selection Test (TST)",
   "years": [
     {
+      "year": 2001,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $\\{a_n\\}_{n \\ge 0}$ be a sequence of real numbers such that $a_{n+1} \\ge a_n^2 + \\frac{1}{5}$ for all $n \\ge 0$. Prove that $\\sqrt{a_{n+5}} \\ge a_{n-5}^2$ for all $n \\ge 5$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Express $$\\sum_{k=0}^{n} (-1)^k (n-k)!(n+k)!$$ in closed form."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a set $S$, let $|S|$ denote the number of elements in $S$. Let $A$ be a set of positive integers with $|A| = 2001$. Prove that there exists a set $B$ such that\n(i) $B \\subseteq A$;\n(ii) $|B| \\geq 668$;\n(iii) for any $u, v \\in B$ (not necessarily distinct), $u + v \\notin B$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "There are $51$ senators in a senate. The senate needs to be divided into $n$ committees so that each senator is on one committee. Each senator hates exactly three other senators. (If senator $A$ hates senator $B$, then senator $B$ does not necessarily hate senator $A$.) Find the smallest $n$ such that it is always possible to arrange the committees so that no senator hates another senator on his or her committee."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "In triangle $ABC$, $\\angle B = 2\\angle C$. Let $P$ and $Q$ be points on the perpendicular bisector of segment $BC$ such that rays $AP$ and $AQ$ trisect $\\angle A$. Prove that $PQ < AB$ if and only if $\\angle B$ is obtuse."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $a, b, c$ be positive real numbers such that $$a + b + c \\ge abc.$$ Prove that at least two of the inequalities $$\\frac{2}{a} + \\frac{3}{b} + \\frac{6}{c} \\ge 6, \\quad \\frac{2}{b} + \\frac{3}{c} + \\frac{6}{a} \\ge 6, \\quad \\frac{2}{c} + \\frac{3}{a} + \\frac{6}{b} \\ge 6$$ are true."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $ABCD$ be a convex quadrilateral such that $\\angle ABC = \\angle ADC = 135^\\circ$ and $$AC^2 \\cdot BD^2 = 2 \\cdot AB \\cdot BC \\cdot CD \\cdot DA.$$ Prove that the diagonals of quadrilateral $ABCD$ are perpendicular."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Find all pairs of nonnegative integers $(m, n)$ such that $$(m + n - 5)^2 = 9mn.$$"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $A$ be a finite set of positive integers. Prove that there exists a finite set $B$ of positive integers such that $A \\subseteq B$ and $$\\prod_{x \\in B} x = \\sum_{x \\in B} x^2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For a pair of integers $a$ and $b$, with $0 < a < b < 1000$, the set $S \\subseteq \\{1, 2, \\dots, 2003\\}$ is called a skipping set for $(a, b)$ if for any pair of elements $s_1, s_2 \\in S$, $|s_1 - s_2| \\notin \\{a, b\\}$. Let $f(a, b)$ be the maximum size of a skipping set for $(a, b)$. Determine the maximum and minimum values of $f$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be a triangle and let $P$ be a point in its interior. Lines $PA$, $PB$, and $PC$ intersect sides $BC$, $CA$, and $AB$ at $D$, $E$, and $F$, respectively. Prove that $$[PAF] + [PBD] + [PCE] = \\frac{1}{2}[ABC]$$ if and only if $P$ lies on at least one of the medians of triangle $ABC$. (Here $[XYZ]$ denotes the area of triangle $XYZ$.)"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find all ordered triples of primes $(p, q, r)$ such that $$p \\mid q^r + 1, \\quad q \\mid r^p + 1, \\quad r \\mid p^q + 1.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $\\mathbb{N}$ denote the set of positive integers. Find all functions $f : \\mathbb{N} \\to \\mathbb{N}$ such that $$f(m+n)f(m-n) = f(m^2)$$ for all $m, n \\in \\mathbb{N}$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $a, b, c$ be real numbers in the interval $\\left(0, \\frac{\\pi}{2}\\right)$. Prove that $$\\frac{\\sin a \\sin(a-b) \\sin(a-c)}{\\sin(b+c)} + \\frac{\\sin b \\sin(b-c) \\sin(b-a)}{\\sin(c+a)} + \\frac{\\sin c \\sin(c-a) \\sin(c-b)}{\\sin(a+b)} \\ge 0.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $\\overline{AH_1}$, $\\overline{BH_2}$, and $\\overline{CH_3}$ be the altitudes of an acute scalene triangle $ABC$. The incircle of triangle $ABC$ is tangent to $\\overline{BC}$, $\\overline{CA}$, and $\\overline{AB}$ at $T_1$, $T_2$, and $T_3$, respectively. For $k = 1, 2, 3$, let $P_i$ be the point on line $H_iH_{i+1}$ (where $H_4 = H_1$) such that $H_iT_iP_i$ is an acute isosceles triangle with $H_iT_i = H_iP_i$. Prove that the circumcircles of triangles $T_1P_1T_2$, $T_2P_2T_3$, $T_3P_3T_1$ pass through a common point."
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Suppose $a_1, a_2, \\dots, a_n$ and $b_1, b_2, \\dots, b_n$ are real numbers such that $$(a_1^2 + a_2^2 + \\cdots + a_n^2 - 1)(b_1^2 + b_2^2 + \\cdots + b_n^2 - 1) > (a_1b_1 + a_2b_2 + \\cdots + a_nb_n - 1)^2.$$ Prove that $a_1^2 + a_2^2 + \\cdots + a_n^2 > 1$ and $b_1^2 + b_2^2 + \\cdots + b_n^2 > 1$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n$ be a positive integer. Consider sequences $a_0, a_1, \\dots, a_n$ such that $a_i \\in \\{1, 2, \\dots, n\\}$ for each $i$ and $a_n = a_0$.\n(a) Call such a sequence good if for all $i = 1, 2, \\dots, n$, $a_i - a_{i-1} \\not\\equiv i \\pmod n$. Suppose that $n$ is odd. Find the number of good sequences.\n(b) Call such a sequence great if for all $i = 1, 2, \\dots, n$, $a_i - a_{i-1} \\not\\equiv i, 2i \\pmod n$. Suppose that $n$ is an odd prime. Find the number of great sequences."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "A $2004 \\times 2004$ array of points is drawn. Find the largest integer $n$ such that it is possible to draw a convex $n$-sided polygon whose vertices lie on the points of the array."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle and let $D$ be a point in its interior. Construct a circle $\\omega_1$ passing through $B$ and $D$ and a circle $\\omega_2$ passing through $C$ and $D$ such that the point of intersection of $\\omega_1$ and $\\omega_2$ other than $D$ lies on line $AD$. Denote by $E$ and $F$ the points where $\\omega_1$ and $\\omega_2$ intersect side $BC$, respectively, and by $X$ and $Y$ the intersections of lines $DF$, $AB$ and $DE$, $AC$, respectively. Prove that $XY \\parallel BC$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $A = (0,0,0)$ be the origin in the three-dimensional coordinate space. The weight of a point is the sum of the absolute values of its coordinates. A point is a primitive lattice point if all its coordinates are integers with their greatest common divisor equal to $1$. A square $ABCD$ is called an unbalanced primitive integer square if it has integer side length and the points $B$ and $D$ are primitive lattice points with different weights. Show that there are infinitely many unbalanced primitive integer squares $AB_iC_iD_i$ such that the planes containing the squares are not parallel to each other."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $\\mathbb{N}_0$ and $\\mathbb{Q}$ be the sets of nonnegative integers and rational numbers, respectively. Define the function $f : \\mathbb{N}_0 \\to \\mathbb{Q}$ by $f(0) = 0$ and $$f(3n + k) = -\\frac{3f(n)}{2} + k, \\quad \\text{for } k = 0, 1, 2.$$ Prove that $f$ is one-to-one, and determine its range."
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "A communications network consisting of some terminals is called a $3$-connector if among any three terminals, some two of them can directly communicate with each other. A communications network contains a windmill with $n$ blades if there exist $n$ pairs of terminals $\\{x_1, y_1\\}, \\dots, \\{x_n, y_n\\}$ such that each $x_i$ can directly communicate with the corresponding $y_i$ and there is a hub terminal that can directly communicate with each of the $2n$ terminals $x_1, y_1, \\dots, x_n, y_n$. Determine the minimum value of $f(n)$, in terms of $n$, such that a $3$-connector with $f(n)$ terminals always contains a windmill with $n$ blades."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In acute triangle $ABC$, segments $AD$, $BE$, and $CF$ are its altitudes, and $H$ is its orthocenter. Circle $\\omega$, centered at $O$, passes through $A$ and $H$ and intersects sides $AB$ and $AC$ again at $Q$ and $P$ (other than $A$), respectively. The circumcircle of triangle $OPQ$ is tangent to segment $BC$ at $R$. Prove that $CR/BR = ED/FD$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Find the least real number $k$ with the following property: if the real numbers $x$, $y$, and $z$ are not all positive, then $$k(x^2 - x + 1)(y^2 - y + 1)(z^2 - z + 1) \\geq (xyz)^2 - xyz + 1.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Find, with proof, the least positive integer $d_n$ which cannot be expressed in the form $$\\sum_{i=1}^{n} (-1)^{a_i} 2^{b_i},$$ where $a_i$ and $b_i$ are nonnegative integers for each $i$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a given integer with $n$ greater than $7$, and let $\\mathcal{P}$ be a convex polygon with $n$ sides. Any set of $n-3$ diagonals of $\\mathcal{P}$ that do not intersect in the interior of the polygon determine a triangulation of $\\mathcal{P}$ into $n-2$ triangles. A triangle in the triangulation of $\\mathcal{P}$ is an interior triangle if all of its sides are diagonals of $\\mathcal{P}$. Express, in terms of $n$, the number of triangulations of $\\mathcal{P}$ with exactly two interior triangles, in closed form."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle. Triangles $PAB$ and $QAC$ are constructed outside of triangle $ABC$ such that $AP = AB$ and $AQ = AC$ and $\\angle BAP = \\angle CAQ$. Segments $BQ$ and $CP$ meet at $R$. Let $O$ be the circumcenter of triangle $BCR$. Prove that $AO \\perp PQ$."
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Circles $\\omega_1$ and $\\omega_2$ meet at $P$ and $Q$. Segments $AC$ and $BD$ are chords of $\\omega_1$ and $\\omega_2$ respectively, such that segment $AB$ and ray $CD$ meet at $P$. Ray $BD$ and segment $AC$ meet at $X$. Point $Y$ lies on $\\omega_1$ such that $PY \\parallel BD$. Point $Z$ lies on $\\omega_2$ such that $PZ \\parallel AC$. Prove that points $Q$, $X$, $Y$, $Z$ are collinear."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n$ be a positive integer and let $a_1 \\le a_2 \\le \\dots \\le a_n$ and $b_1 \\le b_2 \\le \\dots \\le b_n$ be two nondecreasing sequences of real numbers such that $$a_1 + \\dots + a_i \\le b_1 + \\dots + b_i \\quad \\text{for every } i = 1, \\dots, n-1$$ and $$a_1 + \\dots + a_n = b_1 + \\dots + b_n.$$ Suppose that for any real number $m$, the number of pairs $(i, j)$ with $a_i - a_j = m$ equals the number of pairs $(k, \\ell)$ with $b_k - b_\\ell = m$. Prove that $a_i = b_i$ for $i = 1, \\dots, n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\theta$ be an angle in the interval $(0, \\pi/2)$. Given that $\\cos \\theta$ is irrational, and that $\\cos k\\theta$ and $\\cos[(k+1)\\theta]$ are both rational for some positive integer $k$, show that $\\theta = \\pi/6$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Determine whether or not there exist positive integers $a$ and $b$ such that $a$ does not divide $b^n - n$ for all positive integers $n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Triangle $ABC$ is inscribed in circle $\\omega$. The tangent lines to $\\omega$ at $B$ and $C$ meet at $T$. Point $S$ lies on ray $BC$ such that $AS \\perp AT$. Points $B_1$ and $C_1$ lie on ray $ST$ (with $C_1$ in between $B_1$ and $S$) such that $B_1T = BT = C_1T$. Prove that triangles $ABC$ and $AB_1C_1$ are similar to each other."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For a polynomial $P(x)$ with integer coefficients, $r(2i - 1)$ (for $i = 1, 2, 3, \\dots, 512$) is the remainder obtained when $P(2i - 1)$ is divided by $1024$. The sequence $$(r(1), r(3), \\dots, r(1023))$$ is called the remainder sequence of $P(x)$. A remainder sequence is called complete if it is a permutation of $(1, 3, 5, \\dots, 1023)$. Prove that there are no more than $2^{35}$ different complete remainder sequences."
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $m$ and $n$ be positive integers. Mr. Fat has a set $S$ containing every rectangular tile with integer side lengths and area a power of $2$. Mr. Fat also has a rectangle $R$ with dimensions $2^m \\times 2^n$ and a $1 \\times 1$ square removed from one of the corners. Mr. Fat wants to choose $m + n$ rectangles from $S$, with respective areas $2^0, 2^1, \\dots, 2^{m+n-1}$, and then tile $R$ with the chosen rectangles. Prove that this can be done in at most $(m+n)!$ ways."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABC$ be an acute triangle. Point $D$ lies on side $BC$. Let $O_B$ and $O_C$ be the circumcenters of triangles $ABD$ and $ACD$, respectively. Suppose that points $B$, $C$, $O_B$, $O_C$ lie on a circle centered at point $X$. Let $H$ be the orthocenter of triangle $ABC$. Prove that $\\angle DAX = \\angle DAH$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For each positive integer $n$, let $c(n)$ be the largest real number such that $$c(n) \\leq \\left| \\frac{f(a) - f(b)}{a - b} \\right|$$ for all triples $(f, a, b)$ such that\n(i) $f$ is a polynomial of degree $n$ taking integers to integers, and\n(ii) $a, b$ are integers with $f(a) \\neq f(b)$.\nFind $c(n)$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABP$, $BCQ$, $CAR$ be three non-overlapping triangles erected outside of acute triangle $ABC$. Let $M$ be the midpoint of segment $AP$. Given that $\\angle PAB = \\angle CQB = 45^\\circ$, $\\angle ABP = \\angle QBC = 75^\\circ$, $\\angle RAC = 105^\\circ$, and $RQ^2 = 6CM^2$, compute $AC^2/AR^2$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all pairs of positive integers $(m, n)$ such that $mn - 1$ divides $(n^2 - n + 1)^2$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $N > M > 1$ be fixed integers. There are $N$ people playing in a chess tournament; each pair of players plays each other once, with no draws. It turns out that for each sequence of $M + 1$ distinct players $P_0, P_1, \\dots, P_M$ such that $P_{i-1}$ beat $P_i$ for each $i = 1, \\dots, M$, player $P_0$ also beat $P_M$. Prove that the players can be numbered $1, 2, \\dots, N$ in such a way that, whenever $a \\ge b + M - 1$, player $a$ beat player $b$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Find all triples $(x, y, z)$ of real numbers that satisfy the system of equations $$\\begin{cases} x^3 = 3x - 12y + 50, \\\\ y^3 = 12y + 3z - 2, \\\\ z^3 = 27z + 27x. \\end{cases}$$"
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Fix a prime number $p > 5$. Let $a, b, c$ be integers no two of which have their difference divisible by $p$. Let $i, j, k$ be nonnegative integers such that $i + j + k$ is divisible by $p-1$. Suppose that for all integers $x$, the quantity $$(x-a)(x-b)(x-c)[(x-a)^i(x-b)^j(x-c)^k - 1]$$ is divisible by $p$. Prove that each of $i, j, k$ must be divisible by $p-1$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Prove that for positive real numbers $x$, $y$, $z$, $$x^3(y^2 + z^2)^2 + y^3(z^2 + x^2)^2 + z^3(x^2 + y^2)^2 \\ge xyz[xy(x+y)^2 + yz(y+z)^2 + zx(z+x)^2].$$"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $P(x)$ be a polynomial with integer coefficients such that $P(0) = 0$ and $$\\gcd(P(0), P(1), P(2), \\dots) = 1.$$ Prove that there are infinitely many positive integers $n$ such that $$\\gcd(P(n) - P(0), P(n+1) - P(1), P(n+2) - P(2), \\dots) = n.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $a, b, c$ be positive reals such that $abc = 1$. Show that $$\\frac{1}{a^5(b+2c)^2} + \\frac{1}{b^5(c+2a)^2} + \\frac{1}{c^5(a+2b)^2} \\ge \\frac{1}{3}.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "In acute triangle $ABC$, denote by $h_a$, $h_b$, $h_c$ the lengths of the altitudes to bases $BC$, $CA$, $AB$, respectively. Point $P$ lies inside the triangle. Prove that $$\\frac{PA}{h_b + h_c} + \\frac{PB}{h_c + h_a} + \\frac{PC}{h_a + h_b} \\ge 1.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $ABC$ be a triangle. Points $M$ and $N$ lie on sides $AC$ and $BC$ respectively such that $MN \\parallel AB$. Points $P$ and $Q$ lie on sides $AB$ and $CB$ respectively such that $PQ \\parallel AC$. The incircle of triangle $CMN$ touches segment $AC$ at $E$. The incircle of triangle $BPQ$ touches segment $AB$ at $F$. Line $EN$ and $AB$ meet at $R$, and lines $FQ$ and $AC$ meet at $S$. Given that $AE = AF$, prove that the incenter of triangle $AEF$ lies on the incircle of triangle $ARS$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Define the sequence $a_1, a_2, a_3, \\dots$ by $a_1 = 1$ and $$a_n = a_{\\lfloor n/2 \\rfloor} + a_{\\lfloor n/3 \\rfloor} + \\dots + a_{\\lfloor n/n \\rfloor} + 1$$ for $n > 1$. Prove that there are infinitely many $n$ such that $$a_n \\equiv n \\pmod{2^{2010}}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $T$ be a finite set of positive integers greater than $1$. A subset $S$ of $T$ is called good if for every $t \\in T$ there exists some $s \\in S$ with $\\gcd(s, t) > 1$. Prove that the number of good subsets of $T$ is odd."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Points $P$ and $Q$ lie inside acute triangle $ABC$ such that $\\angle PAB = \\angle QAC$ and $\\angle PBA = \\angle QBC$. Point $D$ lies on side $BC$. Prove that $$\\angle DPC + \\angle APB = 180^\\circ \\quad \\text{if and only if} \\quad \\angle DQB + \\angle AQC = 180^\\circ.$$"
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $m$, $n$ be positive integers with $m \\ge n$, and let $S$ be the set of all $n$-term sequences of positive integers $(a_1, a_2, \\dots, a_n)$ such that $a_1 + a_2 + \\dots + a_n = m$. Show that $$\\sum_{S} 1^{a_1} 2^{a_2} \\cdots n^{a_n} = \\binom{n}{n} n^m - \\binom{n}{n-1} (n-1)^m + \\cdots + (-1)^{n-2} \\binom{n}{2} 2^m + (-1)^{n-1} \\binom{n}{1}.$$"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Determine whether or not there exists a positive integer $k$ such that $p = 6k + 1$ is a prime and $$\\binom{3k}{k} \\equiv 1 \\pmod{p}.$$"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "In an acute scalene triangle $ABC$, points $D$, $E$, $F$ lie on sides $BC$, $CA$, $AB$, respectively, such that $AD \\perp BC$, $BE \\perp CA$, $CF \\perp AB$. Altitudes $AD$, $BE$, $CF$ meet at orthocenter $H$. Points $P$ and $Q$ lie on segment $EF$ such that $AP \\perp EF$ and $HQ \\perp EF$. Lines $DP$ and $QH$ intersect at point $R$. Compute $HQ/HR$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In the nation of Onewaynia, certain pairs of cities are connected by roads. Every road connects exactly two cities (roads are allowed to cross each other, e.g., via bridges). Some roads have a traffic capacity of $1$ unit and other roads have a traffic capacity of $2$ units. However, on every road, traffic is only allowed to travel in one direction. It is known that for every city, the sum of the capacities of the roads connected to it is always odd. The transportation minister needs to assign a direction to every road. Prove that he can do it in such a way that for every city, the difference between the sum of the capacities of roads entering the city and the sum of the capacities of roads leaving the city is always exactly one."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $p$ be a prime. We say that a sequence of integers $\\{z_n\\}_{n=0}^{\\infty}$ is a $p$-pod if for each $e \\ge 0$, there is an $N \\ge 0$ such that whenever $m \\ge N$, $p^e$ divides the sum $$\\sum_{k=0}^{m} (-1)^k \\binom{m}{k} z_k.$$ Prove that if both sequences $\\{x_n\\}_{n=0}^{\\infty}$ and $\\{y_n\\}_{n=0}^{\\infty}$ are $p$-pods, then the sequence $\\{x_n y_n\\}_{n=0}^{\\infty}$ is a $p$-pod."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find a real number $t$ such that for any set of $120$ points $P_1, \\dots, P_{120}$ on the boundary of a unit square, there exists a point $Q$ on this boundary with $|P_1Q| + |P_2Q| + \\dots + |P_{120}Q| = t$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $c_n$ be a sequence which is defined recursively as follows: $c_0 = 1$, $c_{2n+1} = c_n$ for $n \\ge 0$, and $c_{2n} = c_n + c_{n-2^e}$ for $n > 0$ where $e$ is the maximal nonnegative integer such that $2^e$ divides $n$. Prove that $$\\sum_{i=0}^{2^n-1} c_i = \\frac{1}{n+2} \\binom{2n+2}{n+1}.$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "A polynomial $P(x)$ is called nice if $P(0) = 1$ and the nonzero coefficients of $P(x)$ alternate between $1$ and $-1$ when written in order. Suppose $P(x)$ is nice, and let $m$ and $n$ be two relatively prime positive integers. Show that $$Q(x) = P(x^n) \\cdot \\frac{(x^{mn} - 1)(x - 1)}{(x^m - 1)(x^n - 1)}$$ is nice as well."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $ABC$ be an acute scalene triangle inscribed in circle $\\Omega$. Circle $\\omega$, centered at $O$, passes through $B$ and $C$ and intersects sides $AB$ and $AC$ at $E$ and $D$, respectively. Point $P$ lies on major arc $BAC$ of $\\Omega$. Prove that lines $BD$, $CE$, $OP$ are concurrent if and only if triangles $PBD$ and $PCE$ have the same incenter."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $n \\ge 1$ be an integer, and let $S$ be a set of integer pairs $(a, b)$ with $1 \\le a < b \\le 2^n$. Assume $|S| > n \\cdot 2^{n+1}$. Prove that there exist four integers $a < b < c < d$ such that $S$ contains all three pairs $(a, c)$, $(b, d)$ and $(a, d)$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Determine whether or not there exist two different sets $A$, $B$, each consisting of at most $2011^2$ positive integers, such that every $x$ with $0 < x < 1$ satisfies the following inequality: $$\\left| \\sum_{a \\in A} x^a - \\sum_{b \\in B} x^b \\right| < (1-x)^{2011}.$$"
+        }
+      ]
+    },
+    {
       "year": 2012,
       "problems": [
         {
