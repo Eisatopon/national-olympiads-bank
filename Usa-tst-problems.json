@@ -2,6 +2,41 @@
   "competition": "USA IMO Team Selection Test (TST)",
   "years": [
     {
+      "year": 2000,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a, b, c$ be nonnegative real numbers. Prove that $$\\frac{a+b+c}{3} - \\sqrt[3]{abc} \\leq \\max\\{(\\sqrt{a} - \\sqrt{b})^2, (\\sqrt{b} - \\sqrt{c})^2, (\\sqrt{c} - \\sqrt{a})^2\\}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral and let $E$ and $F$ be the feet of perpendiculars from the intersection of diagonals $AC$ and $BD$ to $AB$ and $CD$, respectively. Prove that $EF$ is perpendicular to the line through the midpoints of $AD$ and $BC$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $p$ be a prime number. For integers $r, s$ such that $rs(r^2 - s^2)$ is not divisible by $p$, let $f(r, s)$ denote the number of integers $n \\in \\{1, 2, \\dots, p - 1\\}$ such that $\\{rn/p\\}$ and $\\{sn/p\\}$ are either both less than $1/2$ or both greater than $1/2$. Prove that there exists $N > 0$ such that for $p \\geq N$ and all $r, s$, $$\\left\\lceil \\frac{p-1}{3} \\right\\rceil \\le f(r, s) \\le \\left\\lfloor \\frac{2(p-1)}{3} \\right\\rfloor.$$"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer. Prove that $$\\binom{n}{0}^{-1} + \\binom{n}{1}^{-1} + \\cdots + \\binom{n}{n}^{-1} = \\frac{n+1}{2^{n+1}} \\left( \\frac{2}{1} + \\frac{2^2}{2} + \\cdots + \\frac{2^{n+1}}{n+1} \\right).$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. A corner is a finite set $S$ of ordered $n$-tuples of positive integers such that if $a_1, a_2, \\dots, a_n, b_1, b_2, \\dots, b_n$ are positive integers with $a_k \\geq b_k$ for $k = 1, 2, \\dots, n$ and $(a_1, a_2, \\dots, a_n) \\in S$, then $(b_1, b_2, \\dots, b_n) \\in S$. Prove that among any infinite collection of corners, there exist two corners, one of which is a subset of the other one."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be a triangle inscribed in a circle of radius $R$, and let $P$ be a point in the interior of triangle $ABC$. Prove that $$\\frac{PA}{BC^2} + \\frac{PB}{CA^2} + \\frac{PC}{AB^2} \\geq \\frac{1}{R}.$$"
+        }
+      ]
+    },
+    {
       "year": 2001,
       "problems": [
         {
@@ -48,6 +83,41 @@
           "day": 3,
           "number": 9,
           "problem": "Let $A$ be a finite set of positive integers. Prove that there exists a finite set $B$ of positive integers such that $A \\subseteq B$ and $$\\prod_{x \\in B} x = \\sum_{x \\in B} x^2.$$"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $ABC$ be a triangle. Prove that $$\\sin\\frac{3A}{2} + \\sin\\frac{3B}{2} + \\sin\\frac{3C}{2} \\leq \\cos\\frac{A-B}{2} + \\cos\\frac{B-C}{2} + \\cos\\frac{C-A}{2}.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $p$ be a prime number greater than $5$. For any integer $x$, define $$f_p(x) = \\sum_{k=1}^{p-1} \\frac{1}{(px+k)^2}.$$ Prove that for all positive integers $x$ and $y$ the numerator of $f_p(x) - f_p(y)$, when written in lowest terms, is divisible by $p^3$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n$ be an integer greater than $2$, and $P_1, P_2, \\dots, P_n$ distinct points in the plane. Let $\\mathcal{S}$ denote the union of all segments $P_1P_2, P_2P_3, \\dots, P_{n-1}P_n$. Determine if it is always possible to find points $A$ and $B$ in $\\mathcal{S}$ such that $P_1P_n \\parallel AB$ (segment $AB$ can lie on line $P_1P_n$) and $P_1P_n = kAB$, where (1) $k = 2.5$; (2) $k = 3$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Let $n$ be a positive integer and let $S$ be a set of $2^n + 1$ elements. Let $f$ be a function from the set of two-element subsets of $S$ to $\\{0, \\dots, 2^{n-1} - 1\\}$. Assume that for any elements $x, y, z$ of $S$, one of $f(\\{x, y\\})$, $f(\\{y, z\\})$, $f(\\{z, x\\})$ is equal to the sum of the other two. Show that there exist $a, b, c$ in $S$ such that $f(\\{a, b\\})$, $f(\\{b, c\\})$, $f(\\{c, a\\})$ are all equal to $0$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Consider the family of nonisosceles triangles $ABC$ satisfying the property $AC^2 + BC^2 = 2AB^2$. Points $M$ and $D$ lie on side $AB$ such that $AM = BM$ and $\\angle ACD = \\angle BCD$. Point $E$ is in the plane such that $D$ is the incenter of triangle $CEM$. Prove that exactly one of the ratios $$\\frac{CE}{EM}, \\quad \\frac{EM}{MC}, \\quad \\frac{MC}{CE}$$ is constant."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Find in explicit form all ordered pairs of positive integers $(m, n)$ such that $mn - 1$ divides $m^2 + n^2$."
         }
       ]
     },
@@ -122,6 +192,41 @@
       ]
     },
     {
+      "year": 2005,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be an integer greater than $1$. For a positive integer $m$, let $S_m = \\{1, 2, \\dots, mn\\}$. Suppose that there exists a $2n$-element set $T$ such that\n(a) each element of $T$ is an $m$-element subset of $S_m$;\n(b) each pair of elements of $T$ shares at most one common element; and\n(c) each element of $S_m$ is contained in exactly two elements of $T$.\nDetermine the maximum possible value of $m$ in terms of $n$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $A_1A_2A_3$ be an acute triangle, and let $O$ and $H$ be its circumcenter and orthocenter, respectively. For $1 \\leq i \\leq 3$, points $P_i$ and $Q_i$ lie on lines $OA_i$ and $A_{i+1}A_{i+2}$ (where $A_{i+3} = A_i$), respectively, such that $OP_iHQ_i$ is a parallelogram. Prove that $$\\frac{OQ_1}{OP_1} + \\frac{OQ_2}{OP_2} + \\frac{OQ_3}{OP_3} \\geq 3.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "We choose random a unitary polynomial of degree $n$ and coefficients in the set $\\{1, 2, \\dots, n!\\}$. Prove that the probability for this polynomial to be special is between $0.71$ and $0.75$, where a polynomial $g$ is called special if for every $k > 1$ in the sequence $g(1), g(2), g(3), \\dots$ there are infinitely many numbers relatively prime with $k$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Consider the polynomials $$f(x) = \\sum_{k=1}^{n} a_k x^k \\quad \\text{and} \\quad g(x) = \\sum_{k=1}^{n} \\frac{a_k}{2^k - 1} x^k,$$ where $a_1, a_2, \\dots, a_n$ are real numbers and $n$ is a positive integer. Show that if $1$ and $2^{n+1}$ are zeros of $g$ then $f$ has a positive zero less than $2^n$."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Find all finite sets $S$ of points in the plane with the following property: for any three distinct points $A$, $B$, and $C$ in $S$, there is a fourth point $D$ in $S$ such that $A$, $B$, $C$, and $D$ are the vertices of a parallelogram (in some order)."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be an acute scalene triangle with $O$ as its circumcenter. Point $P$ lies inside triangle $ABC$ with $\\angle PAB = \\angle PBC$ and $\\angle PAC = \\angle PCB$. Point $Q$ lies on line $BC$ with $QA = QP$. Prove that $\\angle AQP = 2\\angle OQB$."
+        }
+      ]
+    },
+    {
       "year": 2006,
       "problems": [
         {
@@ -188,6 +293,56 @@
           "day": 2,
           "number": 6,
           "problem": "For a polynomial $P(x)$ with integer coefficients, $r(2i - 1)$ (for $i = 1, 2, 3, \\dots, 512$) is the remainder obtained when $P(2i - 1)$ is divided by $1024$. The sequence $$(r(1), r(3), \\dots, r(1023))$$ is called the remainder sequence of $P(x)$. A remainder sequence is called complete if it is a permutation of $(1, 3, 5, \\dots, 1023)$. Prove that there are no more than $2^{35}$ different complete remainder sequences."
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "There is a set of $n$ coins with distinct integer weights $w_1, w_2, \\dots, w_n$. It is known that if any coin with weight $w_k$, $1 \\le k \\le n$, is removed from the set, the remaining coins can be split into two groups of the same weight. (The number of coins in the two groups can be different.) Find all $n$ for which such a set of coins exists."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $P$, $Q$, and $R$ be the points on sides $BC$, $CA$, and $AB$ of an acute triangle $ABC$ such that triangle $PQR$ is equilateral and has minimal area among all such equilateral triangles. Prove that the perpendiculars from $A$ to line $QR$, from $B$ to line $RP$, and from $C$ to line $PQ$ are concurrent."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "For a pair $A = (x_1, y_1)$ and $B = (x_2, y_2)$ of points on the coordinate plane, let $d(A, B) = |x_1 - x_2| + |y_1 - y_2|$. We call a pair $(A, B)$ of (unordered) points harmonic if $1 < d(A, B) \\le 2$. Determine the maximum number of harmonic pairs among $100$ points in the plane."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Prove that for no integer $n$ is $n^7 + 7$ a perfect square."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Two sequences of integers, $a_1, a_2, a_3, \\dots$ and $b_1, b_2, b_3, \\dots$, satisfy the equation $$(a_n - a_{n-1})(a_n - a_{n-2}) + (b_n - b_{n-1})(b_n - b_{n-2}) = 0$$ for each integer $n$ greater than $2$. Prove that there is a positive integer $k$ such that $a_k = a_{k+2008}$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine the smallest positive real number $k$ with the following property. Let $ABCD$ be a convex quadrilateral, and let points $A_1$, $B_1$, $C_1$, and $D_1$ lie on sides $AB$, $BC$, $CD$, and $DA$, respectively. Consider the areas of triangles $AA_1D_1$, $BB_1A_1$, $CC_1B_1$, and $DD_1C_1$; let $S$ be the sum of the two smallest ones, and let $S_1$ be the area of quadrilateral $A_1B_1C_1D_1$. Then we always have $kS_1 \\geq S$."
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $ABC$ be a triangle with $G$ as its centroid. Let $P$ be a variable point on segment $BC$. Points $Q$ and $R$ lie on sides $AC$ and $AB$ respectively, such that $PQ \\parallel AB$ and $PR \\parallel AC$. Prove that, as $P$ varies along segment $BC$, the circumcircle of triangle $AQR$ passes through a fixed point $X$ such that $\\angle BAG = \\angle CAX$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Mr. Fat and Ms. Taf play a game. Mr. Fat chooses a sequence of positive integers $k_1, k_2, \\dots, k_n$. Ms. Taf must guess this sequence of integers. She is allowed to give Mr. Fat a red card and a blue card, each with an integer written on it. Mr. Fat replaces the number on the red card with $k_1$ times the number on the red card plus the number on the blue card, and replaces the number on the blue card with the number originally on the red card. He repeats this process with number $k_2$. (That is, he replaces the number on the red card with $k_2$ times the number now on the red card plus the number now on the blue card, and replaces the number on the blue card with the number that was just placed on the red card.) He then repeats this process with each of the numbers $k_3, \\dots, k_n$, in this order. After he has gone through the sequence of integers, Mr. Fat then gives the cards back to Ms. Taf. How many times must Ms. Taf submit the red and blue cards in order to be able to determine the sequence of integers $k_1, k_2, \\dots, k_n$?"
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $n$ be a positive integer not divisible by the cube of a prime. Given an integer-coefficient polynomial $f(x)$, define its signature modulo $n$ to be the (ordered) sequence $f(1), \\dots, f(n)$ modulo $n$. Of the $n^n$ such $n$-term sequences of integers modulo $n$, how many are the signature of some polynomial $f(x)$?"
         }
       ]
     },
