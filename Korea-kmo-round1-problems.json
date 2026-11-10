@@ -921,6 +921,2036 @@
       ]
     },
     {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "A sequence $\\{a_n\\}$ satisfies, for every positive integer $n$,\n$$(n+2)a_n a_{n+1} + n a_{n+1} a_{n+2} = 2(n+1) a_n a_{n+2}.$$\nIf $a_1 = 100$ and $a_3 = 228$, find the value of $a_{28}$.",
+          "problem_orig": "수열 $\\{a_n\\}$이 모든 양의 정수 $n$에 대하여\n$$(n+2)a_n a_{n+1} + n a_{n+1} a_{n+2} = 2(n+1) a_n a_{n+2}$$\n를 만족한다. $a_1 = 100$, $a_3 = 228$일 때, $a_{28}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "Find the number of ways to divide $8$ students into several groups so that each group has at least $2$ and at most $4$ students.",
+          "problem_orig": "$8$명의 학생을 몇 개의 모둠으로 나눌 때, 각 모둠의 인원이 $2$명 이상 $4$명 이하인 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "In a quadrilateral $ABCD$ inscribed in a circle $O$, $AB = AD$, $\\angle BDC = 15^\\circ$, $\\angle CBD = 45^\\circ$. Let $E$ be the intersection of the lines $AB$ and $CD$, and $F$ the intersection of the lines $AD$ and $BC$. If $BE \\cdot DF = 675$, find the radius of the circle $O$.",
+          "problem_orig": "원 $O$에 내접하는 사각형 $ABCD$에서 $\\overline{AB} = \\overline{AD}$, $\\angle BDC = 15^\\circ$, $\\angle CBD = 45^\\circ$이다. 직선 $AB$와 $CD$의 교점을 $E$, 직선 $AD$와 $BC$의 교점을 $F$라 하자. $\\overline{BE} \\cdot \\overline{DF} = 675$일 때, 원 $O$의 반지름의 길이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "When the three-digit positive integers $N$ satisfying the following condition are listed in decreasing order, find the second number.\n\nFor positive integers $a$, $b$, $c$ less than $10$ with $N = 100a + 10b + c$, the three integers $N$, $10a + b$, $10b + c$ are all prime.",
+          "problem_orig": "다음 조건을 만족하는 세 자리 양의 정수 $N$을 큰 것부터 차례로 나열하였을 때, 두 번째 수를 구하여라.\n\n$10$보다 작은 양의 정수 $a$, $b$, $c$에 대하여 $N = 100a + 10b + c$일 때, 세 정수 $N$, $10a + b$, $10b + c$는 모두 소수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "Find the greatest common divisor of the following numbers.\n$$2^{17} - 2, \\quad 3^{17} - 3, \\quad 4^{17} - 4, \\quad \\ldots, \\quad 31^{17} - 31$$",
+          "problem_orig": "다음 수들의 최대공약수를 구하여라.\n$$2^{17} - 2, \\quad 3^{17} - 3, \\quad 4^{17} - 4, \\quad \\ldots, \\quad 31^{17} - 31$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "Polynomials $f_n(x)$ defined for positive integers $n$ have the following property.\n\nIf $d_1, \\ldots, d_m$ are all the positive divisors of $n$, then $f_{d_1}(x) \\times \\cdots \\times f_{d_m}(x) = x^n - 1$.\n\nIf, for distinct positive integers $a_1, \\ldots, a_k, b_1, \\ldots, b_\\ell$,\n$$\\frac{f_3(x) f_4(x) f_6(x) f_{12}(x) f_{49}(x)}{f_2(x) f_5(x) f_{10}(x) f_{18}(x)} = \\frac{(x^{a_1} - 1) \\cdots (x^{a_k} - 1)}{(x^{b_1} - 1) \\cdots (x^{b_\\ell} - 1)}$$\nholds, find the value of $a_1 + \\cdots + a_k + b_1 + \\cdots + b_\\ell$.",
+          "problem_orig": "양의 정수 $n$에 대하여 정의된 다항식 $f_n(x)$는 다음 성질을 만족한다.\n\n$n$의 모든 양의 약수를 $d_1, \\ldots, d_m$이라 하면 $f_{d_1}(x) \\times \\cdots \\times f_{d_m}(x) = x^n - 1$이다.\n\n서로 다른 양의 정수 $a_1, \\ldots, a_k, b_1, \\ldots, b_\\ell$에 대하여\n$$\\frac{f_3(x) f_4(x) f_6(x) f_{12}(x) f_{49}(x)}{f_2(x) f_5(x) f_{10}(x) f_{18}(x)} = \\frac{(x^{a_1} - 1) \\cdots (x^{a_k} - 1)}{(x^{b_1} - 1) \\cdots (x^{b_\\ell} - 1)}$$\n가 성립할 때, $a_1 + \\cdots + a_k + b_1 + \\cdots + b_\\ell$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "There are one $1 \\times 1$ square tile, six $1 \\times 2$ rectangular tiles, one $1 \\times 3$ rectangular tile and one cross-shaped ($+$) tile, as in the figure below. Find the number of ways to attach all $9$ of these tiles to a $3 \\times 7$ rectangular wall without gaps. (Tiles may be rotated by $90^\\circ$.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2017_e7_fig.png",
+          "problem_orig": "다음 그림과 같은 $1 \\times 1$ 정사각형 모양의 타일 $1$개, $1 \\times 2$ 직사각형 모양의 타일 $6$개, $1 \\times 3$ 직사각형 모양의 타일 $1$개, 그리고 십자$(+)$ 모양의 타일 $1$개가 있다. $3 \\times 7$ 직사각형 모양의 벽에 이 $9$개의 타일을 모두 빈틈없이 붙이는 경우의 수를 구하여라. (단, 타일을 $90^\\circ$ 회전하여 사용할 수 있다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "Let $D$ be the foot of the perpendicular from the vertex $A$ of triangle $ABC$ to the side $BC$, with $AB = 125$, $AC = 150$, $AD = 100$. Let $E$ $(\\neq D)$ be the point where the tangent at $D$ to the circumcircle of triangle $ABD$ meets the circumcircle of triangle $ACD$. For a point $X$ on the segment $CD$, suppose the circumcircle of triangle $ADX$ meets the segment $DE$ at a point $Y$ $(\\neq D)$. If $CX = 30$, find the length of the segment $EY$.",
+          "problem_orig": "삼각형 $ABC$의 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $D$라 할 때, $\\overline{AB} = 125$, $\\overline{AC} = 150$, $\\overline{AD} = 100$이다. 점 $D$에서 삼각형 $ABD$의 외접원의 접선이 삼각형 $ACD$의 외접원과 만나는 점을 $E(\\neq D)$라 하자. 선분 $CD$ 위의 점 $X$에 대하여 삼각형 $ADX$의 외접원이 선분 $DE$와 점 $Y(\\neq D)$에서 만난다고 하자. $\\overline{CX} = 30$일 때, 선분 $EY$의 길이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "For three real numbers $x$, $y$, $z$ satisfying both of the following equations, find the smallest possible value of $x^2 + y^2 + z^2$.\n\n(i) $x + y + z = 2$\n\n(ii) $2xy + yz + zx = -7$",
+          "problem_orig": "다음 두 식을 모두 만족하는 세 실수 $x$, $y$, $z$에 대하여 $x^2 + y^2 + z^2$이 될 수 있는 값 중 가장 작은 것을 구하여라.\n\n(i) $x + y + z = 2$\n\n(ii) $2xy + yz + zx = -7$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "There are $9$ red balls and $9$ blue balls, each with a positive integer not exceeding $9$ written on it, and the numbers on balls of the same colour are all different. Find the number of ways to draw $2$ red balls and $2$ blue balls simultaneously so that all three of the following conditions are satisfied.\n\n(i) The numbers on the drawn balls are all different.\n\n(ii) The difference of the numbers on the $2$ drawn red balls is at least $2$.\n\n(iii) The difference of the numbers on the $2$ drawn blue balls is at least $2$.",
+          "problem_orig": "빨간 공 $9$개와 파란 공 $9$개에 $9$ 이하의 양의 정수가 하나씩 적혀 있으며 같은 색의 공에 적힌 수는 서로 다르다. 다음 세 조건을 모두 만족하도록 빨간 공 $2$개, 파란 공 $2$개를 동시에 뽑는 경우의 수를 구하여라.\n\n(i) 뽑힌 공에 적힌 수는 서로 다르다.\n\n(ii) 뽑힌 빨간 공 $2$개에 적힌 수의 차가 $2$ 이상이다.\n\n(iii) 뽑힌 파란 공 $2$개에 적힌 수의 차가 $2$ 이상이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "The circumradius of an acute triangle $ABC$ is $5$ and the side $AB$ has length $8$. Let $D$ be the foot of the perpendicular from the incentre $I$ of triangle $ABC$ to the side $AC$, let $E$ be the foot of the perpendicular from the point $A$ to the line $BI$, and let $F$ be the foot of the perpendicular from the circumcentre of triangle $ACI$ to the side $AC$. If $DE = 1$ and $EF = a$, find the value of $100a^2$.",
+          "problem_orig": "예각삼각형 $ABC$의 외접원의 반지름이 $5$이고 변 $AB$의 길이는 $8$이다. 삼각형 $ABC$의 내심 $I$에서 변 $AC$에 내린 수선의 발을 $D$, 점 $A$에서 직선 $BI$에 내린 수선의 발을 $E$, 삼각형 $ACI$의 외심에서 변 $AC$에 내린 수선의 발을 $F$라 하자. $\\overline{DE} = 1$이고, $\\overline{EF} = a$일 때, $100a^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "Find the smallest positive integer $n$ satisfying the following condition.\n\nThere exists a positive integer $k$ satisfying $111 \\times 10^k < n^2 < 112 \\times 10^k$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$ 중 가장 작은 것을 구하여라.\n\n$111 \\times 10^k < n^2 < 112 \\times 10^k$을 만족하는 양의 정수 $k$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "A function $f : \\{1, 2, \\ldots, 12\\} \\to \\{1, 2, 3, 4, 5\\}$ satisfies both of the following conditions.\n\n(i) $\\{f(1), f(2), \\ldots, f(12)\\} = \\{1, 2, 3, 4, 5\\}$\n\n(ii) For all $i = 1, 2, \\ldots, 12$, $f(f(f(i))) = f(f(i))$.\n\nFind the smallest possible value of the following expression.\n$$60 \\sum_{i=1}^{12} \\frac{f(f(i))}{f(i)}$$",
+          "problem_orig": "함수 $f : \\{1, 2, \\ldots, 12\\} \\to \\{1, 2, 3, 4, 5\\}$가 다음 두 조건을 모두 만족한다.\n\n(i) $\\{f(1), f(2), \\ldots, f(12)\\} = \\{1, 2, 3, 4, 5\\}$\n\n(ii) 모든 $i = 1, 2, \\ldots, 12$에 대하여 $f(f(f(i))) = f(f(i))$\n\n다음 식이 가질 수 있는 값 중 가장 작은 것을 구하여라.\n$$60 \\sum_{i=1}^{12} \\frac{f(f(i))}{f(i)}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "A convex quadrilateral $ABCD$ is circumscribed about a circle with centre $O$. Let $E$ be the foot of the perpendicular from $C$ to the line $BO$, and $F$ the foot of the perpendicular from $D$ to the line $AO$. If $\\angle A = 110^\\circ$, $\\angle B = 130^\\circ$, $\\angle EFO = 31^\\circ$ and $\\angle C = x^\\circ$, find the value of $x$. (Here $0 < x < 180$.)",
+          "problem_orig": "볼록사각형 $ABCD$가 중심이 $O$인 원에 외접한다. 점 $C$에서 직선 $BO$에 내린 수선의 발을 $E$, 점 $D$에서 직선 $AO$에 내린 수선의 발을 $F$라 하자. $\\angle A = 110^\\circ$, $\\angle B = 130^\\circ$, $\\angle EFO = 31^\\circ$, $\\angle C = x^\\circ$일 때, $x$의 값을 구하여라. (단, $0 < x < 180$)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "There is a spinner divided into $10$ equal parts, as in the figure below. Find the number of all spinners that can be made by colouring each part red or blue. Spinners that coincide after a rotation are counted as one.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2017_e15_fig.png",
+          "problem_orig": "다음 그림과 같이 $10$등분된 회전판이 있다. 각 칸에 빨강색 또는 파랑색을 칠하여 만들 수 있는 모든 회전판의 개수를 구하여라. 단, 회전하여 같은 것은 한 가지로 센다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "Find the sum of all positive integers $n$ for which the value of $n^4 - 17n^3 + 98n^2 - 229n + 187$ is a prime.",
+          "problem_orig": "식 $n^4 - 17n^3 + 98n^2 - 229n + 187$의 값이 소수가 되도록 하는 모든 양의 정수 $n$의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "A sequence $\\{x_n\\}$ satisfies, for every positive integer $n$,\n$$(4 + x_1 + \\cdots + x_n)(x_1 + \\cdots + x_{n+1}) = 1,$$\nand $x_1 = 1$. Find the value of $\\left[\\frac{x_{100}}{x_{101}}\\right]^2$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "수열 $\\{x_n\\}$이 모든 양의 정수 $n$에 대하여\n$$(4 + x_1 + \\cdots + x_n)(x_1 + \\cdots + x_{n+1}) = 1$$\n을 만족하고, $x_1 = 1$이다. $\\left[\\frac{x_{100}}{x_{101}}\\right]^2$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "A set $S$ consisting of $4$ distinct subsets of the set $\\{1, 2, 3, 4\\}$ satisfies the following condition.\n\nIf $\\{A, B\\} \\subset S$, then $\\{A \\cup B, A \\cap B\\} \\subset S$.\n\nFind the number of such sets $S$.",
+          "problem_orig": "집합 $\\{1, 2, 3, 4\\}$의 서로 다른 부분집합 $4$개로 이루어진 집합 $S$가 다음 조건을 만족한다.\n\n$\\{A, B\\} \\subset S$이면 $\\{A \\cup B, A \\cap B\\} \\subset S$\n\n이러한 $S$의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "In a triangle $ABC$, $\\angle A = 45^\\circ$, $\\angle B = 60^\\circ$, $BC = 12$. Let $O$ be the circumcentre of triangle $ABC$, and let $O_1$, $O_2$, $O_3$ be the circumcentres of triangles $OAB$, $OBC$, $OCA$ respectively. If $S$ is the area of triangle $O_1 O_2 O_3$, find the remainder when $(S - 54)^2$ is divided by $1000$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle A = 45^\\circ$, $\\angle B = 60^\\circ$, $\\overline{BC} = 12$이다. 삼각형 $ABC$의 외심을 $O$라 하고 삼각형 $OAB$, $OBC$, $OCA$의 외심을 각각 $O_1$, $O_2$, $O_3$라 하자. 삼각형 $O_1 O_2 O_3$의 넓이를 $S$라 할 때, $(S - 54)^2$의 값을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "Find the number of ordered pairs $(p, q)$ of primes $p$, $q$ satisfying the following condition.\n\n$p^2 + q^2 + 42$ has exactly $9$ positive divisors.",
+          "problem_orig": "다음 조건을 만족하는 소수 $p$, $q$의 순서쌍 $(p, q)$의 개수를 구하여라.\n\n$p^2 + q^2 + 42$의 양의 약수는 $9$개이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "For positive real numbers $a$, $b$, $p$, $q$ such that $(ax - 1)^8 - (x - b)^8 = (x^2 - px + q)^4$ is an identity in $x$, find the value of the following expression.\n$$(a^7 - p)^{12} + (b^2 + q)^{12}$$",
+          "problem_orig": "식 $(ax - 1)^8 - (x - b)^8 = (x^2 - px + q)^4$이 $x$에 대한 항등식이 되도록 하는 양의 실수 $a$, $b$, $p$, $q$에 대하여, 다음 식의 값을 구하여라.\n$$(a^7 - p)^{12} + (b^2 + q)^{12}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "Find the number of ways to divide $8$ students into several groups so that each group has at least $2$ and at most $4$ students.",
+          "problem_orig": "$8$명의 학생을 몇 개의 모둠으로 나눌 때, 각 모둠의 인원이 $2$명 이상 $4$명 이하인 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "In a quadrilateral $ABCD$ inscribed in a circle $O$, $AB = AD$, $\\angle BDC = 15^\\circ$, $\\angle CBD = 45^\\circ$. Let $E$ be the intersection of the lines $AB$ and $CD$, and $F$ the intersection of the lines $AD$ and $BC$. If $BE \\cdot DF = 675$, find the radius of the circle $O$.",
+          "problem_orig": "원 $O$에 내접하는 사각형 $ABCD$에서 $\\overline{AB} = \\overline{AD}$, $\\angle BDC = 15^\\circ$, $\\angle CBD = 45^\\circ$이다. 직선 $AB$와 $CD$의 교점을 $E$, 직선 $AD$와 $BC$의 교점을 $F$라 하자. $\\overline{BE} \\cdot \\overline{DF} = 675$일 때, 원 $O$의 반지름의 길이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "Find the prime $p$ satisfying the following condition.\n\nThere exists an integer $n$ satisfying $n^4 + n^2 + 1 = 211p$.",
+          "problem_orig": "다음 조건을 만족하는 소수 $p$를 구하여라.\n\n$n^4 + n^2 + 1 = 211p$를 만족하는 정수 $n$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "For three real numbers $x$, $y$, $z$ satisfying both of the following equations, find the smallest possible value of $x^2 + y^2 + z^2$.\n\n(i) $x + y + z = 2$\n\n(ii) $2xy + yz + zx = -7$",
+          "problem_orig": "다음 두 식을 모두 만족하는 세 실수 $x$, $y$, $z$에 대하여 $x^2 + y^2 + z^2$이 될 수 있는 값 중 가장 작은 것을 구하여라.\n\n(i) $x + y + z = 2$\n\n(ii) $2xy + yz + zx = -7$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "There are one $1 \\times 1$ square tile, six $1 \\times 2$ rectangular tiles, one $1 \\times 3$ rectangular tile and one cross-shaped ($+$) tile, as in the figure below. Find the number of ways to attach all $9$ of these tiles to a $3 \\times 7$ rectangular wall without gaps. (Tiles may be rotated by $90^\\circ$.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2017_e7_fig.png",
+          "problem_orig": "다음 그림과 같은 $1 \\times 1$ 정사각형 모양의 타일 $1$개, $1 \\times 2$ 직사각형 모양의 타일 $6$개, $1 \\times 3$ 직사각형 모양의 타일 $1$개, 그리고 십자$(+)$ 모양의 타일 $1$개가 있다. $3 \\times 7$ 직사각형 모양의 벽에 이 $9$개의 타일을 모두 빈틈없이 붙이는 경우의 수를 구하여라. (단, 타일을 $90^\\circ$ 회전하여 사용할 수 있다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "Let $D$ be the foot of the perpendicular from the vertex $A$ of triangle $ABC$ to the side $BC$, with $AB = 125$, $AC = 150$, $AD = 100$. Let $E$ $(\\neq D)$ be the point where the tangent at $D$ to the circumcircle of triangle $ABD$ meets the circumcircle of triangle $ACD$. For a point $X$ on the segment $CD$, suppose the circumcircle of triangle $ADX$ meets the segment $DE$ at a point $Y$ $(\\neq D)$. If $CX = 30$, find the length of the segment $EY$.",
+          "problem_orig": "삼각형 $ABC$의 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $D$라 할 때, $\\overline{AB} = 125$, $\\overline{AC} = 150$, $\\overline{AD} = 100$이다. 점 $D$에서 삼각형 $ABD$의 외접원의 접선이 삼각형 $ACD$의 외접원과 만나는 점을 $E(\\neq D)$라 하자. 선분 $CD$ 위의 점 $X$에 대하여 삼각형 $ADX$의 외접원이 선분 $DE$와 점 $Y(\\neq D)$에서 만난다고 하자. $\\overline{CX} = 30$일 때, 선분 $EY$의 길이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "There are $9$ red balls and $9$ blue balls, each with a positive integer not exceeding $9$ written on it, and the numbers on balls of the same colour are all different. Find the number of ways to draw $2$ red balls and $2$ blue balls simultaneously so that all three of the following conditions are satisfied.\n\n(i) The numbers on the drawn balls are all different.\n\n(ii) The difference of the numbers on the $2$ drawn red balls is at least $2$.\n\n(iii) The difference of the numbers on the $2$ drawn blue balls is at least $2$.",
+          "problem_orig": "빨간 공 $9$개와 파란 공 $9$개에 $9$ 이하의 양의 정수가 하나씩 적혀 있으며 같은 색의 공에 적힌 수는 서로 다르다. 다음 세 조건을 모두 만족하도록 빨간 공 $2$개, 파란 공 $2$개를 동시에 뽑는 경우의 수를 구하여라.\n\n(i) 뽑힌 공에 적힌 수는 서로 다르다.\n\n(ii) 뽑힌 빨간 공 $2$개에 적힌 수의 차가 $2$ 이상이다.\n\n(iii) 뽑힌 파란 공 $2$개에 적힌 수의 차가 $2$ 이상이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "Find the greatest common divisor of the following numbers.\n$$2^{17} - 2, \\quad 3^{17} - 3, \\quad 4^{17} - 4, \\quad \\ldots, \\quad 31^{17} - 31$$",
+          "problem_orig": "다음 수들의 최대공약수를 구하여라.\n$$2^{17} - 2, \\quad 3^{17} - 3, \\quad 4^{17} - 4, \\quad \\ldots, \\quad 31^{17} - 31$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "A function $f : \\{1, 2, \\ldots, 12\\} \\to \\{1, 2, 3, 4, 5\\}$ satisfies both of the following conditions.\n\n(i) $\\{f(1), f(2), \\ldots, f(12)\\} = \\{1, 2, 3, 4, 5\\}$\n\n(ii) For all $i = 1, 2, \\ldots, 12$, $f(f(f(i))) = f(f(i))$.\n\nFind the smallest possible value of the following expression.\n$$60 \\sum_{i=1}^{12} \\frac{f(f(i))}{f(i)}$$",
+          "problem_orig": "함수 $f : \\{1, 2, \\ldots, 12\\} \\to \\{1, 2, 3, 4, 5\\}$가 다음 두 조건을 모두 만족한다.\n\n(i) $\\{f(1), f(2), \\ldots, f(12)\\} = \\{1, 2, 3, 4, 5\\}$\n\n(ii) 모든 $i = 1, 2, \\ldots, 12$에 대하여 $f(f(f(i))) = f(f(i))$\n\n다음 식이 가질 수 있는 값 중 가장 작은 것을 구하여라.\n$$60 \\sum_{i=1}^{12} \\frac{f(f(i))}{f(i)}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "The circumradius of an acute triangle $ABC$ is $5$ and the side $AB$ has length $8$. Let $D$ be the foot of the perpendicular from the incentre $I$ of triangle $ABC$ to the side $AC$, let $E$ be the foot of the perpendicular from the point $A$ to the line $BI$, and let $F$ be the foot of the perpendicular from the circumcentre of triangle $ACI$ to the side $AC$. If $DE = 1$ and $EF = a$, find the value of $100a^2$.",
+          "problem_orig": "예각삼각형 $ABC$의 외접원의 반지름이 $5$이고 변 $AB$의 길이는 $8$이다. 삼각형 $ABC$의 내심 $I$에서 변 $AC$에 내린 수선의 발을 $D$, 점 $A$에서 직선 $BI$에 내린 수선의 발을 $E$, 삼각형 $ACI$의 외심에서 변 $AC$에 내린 수선의 발을 $F$라 하자. $\\overline{DE} = 1$이고, $\\overline{EF} = a$일 때, $100a^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "Find the smallest positive integer $n$ satisfying the following condition.\n\nThere exists a positive integer $k$ satisfying $111 \\times 10^k < n^2 < 112 \\times 10^k$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$ 중 가장 작은 것을 구하여라.\n\n$111 \\times 10^k < n^2 < 112 \\times 10^k$을 만족하는 양의 정수 $k$가 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "A sequence $\\{x_n\\}$ satisfies, for every positive integer $n$,\n$$(4 + x_1 + \\cdots + x_n)(x_1 + \\cdots + x_{n+1}) = 1,$$\nand $x_1 = 1$. Find the value of $\\left[\\frac{x_{100}}{x_{101}}\\right]^2$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "수열 $\\{x_n\\}$이 모든 양의 정수 $n$에 대하여\n$$(4 + x_1 + \\cdots + x_n)(x_1 + \\cdots + x_{n+1}) = 1$$\n을 만족하고, $x_1 = 1$이다. $\\left[\\frac{x_{100}}{x_{101}}\\right]^2$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "A quadrilateral $ABCD$ is inscribed in a circle with diameter $AC$. Let $E$ be the midpoint of the side $AD$, let $F$ $(\\neq A)$ be the intersection of the line $AB$ with the circumcircle of triangle $ACE$, and let $J$ $(\\neq E)$ be the intersection of the line $EF$ with the circumcircle of triangle $CDE$. If $CJ = 60$, $BC : AF = 1 : 4$ and $CD : AD = 1 : 6$, find the length of the segment $EF$.",
+          "problem_orig": "사각형 $ABCD$가 지름이 $AC$인 원에 내접한다. 변 $AD$의 중점을 $E$, 직선 $AB$와 삼각형 $ACE$의 외접원의 교점을 $F(\\neq A)$라 하고 직선 $EF$와 삼각형 $CDE$의 외접원의 교점을 $J(\\neq E)$라 하자. $\\overline{CJ} = 60$이고 $\\overline{BC} : \\overline{AF} = 1 : 4$, $\\overline{CD} : \\overline{AD} = 1 : 6$일 때, 선분 $EF$의 길이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "For non-negative integers $n$, $k$, define $a(n, k)$ as follows.\n\n(i) If $nk = 0$, then $a(n, k) = 1$.\n\n(ii) If $nk \\neq 0$, then\n$$a(n, k) = a(n-1, k) + a(n, k-1) + a(n-1, k-1).$$\n\nFind the remainder when $a(2017, 2017)$ is divided by $2017$.",
+          "problem_orig": "음이 아닌 정수 $n$, $k$에 대하여 $a(n, k)$를 다음과 같이 정의하자.\n\n(i) $nk = 0$이면, $a(n, k) = 1$\n\n(ii) $nk \\neq 0$이면,\n$$a(n, k) = a(n-1, k) + a(n, k-1) + a(n-1, k-1)$$\n\n이때 $a(2017, 2017)$을 $2017$로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "Find the number of ordered pairs $(p, q)$ of primes $p$, $q$ satisfying the following condition.\n\n$p^2 + q^2 + 42$ has exactly $9$ positive divisors.",
+          "problem_orig": "다음 조건을 만족하는 소수 $p$, $q$의 순서쌍 $(p, q)$의 개수를 구하여라.\n\n$p^2 + q^2 + 42$의 양의 약수는 $9$개이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "Let $r$ be the positive root of the equation $x^2 - 428x - 1 = 0$. If $a_1 = 1$ and $a_{n+1} = [r a_n]$ for every positive integer $n$, find the remainder when $a_{100}$ is divided by $428$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "방정식 $x^2 - 428x - 1 = 0$의 양의 근을 $r$이라 하자. $a_1 = 1$이고 모든 양의 정수 $n$에 대하여 $a_{n+1} = [r a_n]$이라 할 때, $a_{100}$을 $428$로 나눈 나머지를 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "Find the number of ways to split the positive integers $1, 2, \\ldots, 20$ into two sets $\\{a_1, a_2, \\ldots, a_{10}\\}$, $\\{b_1, b_2, \\ldots, b_{10}\\}$ so that all three of the following conditions are satisfied.\n\n(i) $\\{a_1, \\ldots, a_{10}\\} \\cup \\{b_1, \\ldots, b_{10}\\} = \\{1, 2, \\ldots, 20\\}$\n\n(ii) $a_1 < a_2 < \\cdots < a_{10}$ and $b_1 < b_2 < \\cdots < b_{10}$\n\n(iii) For each $n = 1, 2, \\ldots, 10$, $a_n - b_n$ is $2$ or $3$.",
+          "problem_orig": "양의 정수 $1, 2, \\ldots, 20$을 다음 세 조건을 모두 만족하도록 두 집합 $\\{a_1, a_2, \\ldots, a_{10}\\}$, $\\{b_1, b_2, \\ldots, b_{10}\\}$으로 나누는 방법의 수를 구하여라.\n\n(i) $\\{a_1, \\ldots, a_{10}\\} \\cup \\{b_1, \\ldots, b_{10}\\} = \\{1, 2, \\ldots, 20\\}$\n\n(ii) $a_1 < a_2 < \\cdots < a_{10}$이고 $b_1 < b_2 < \\cdots < b_{10}$\n\n(iii) 각 $n = 1, 2, \\ldots, 10$에 대하여 $a_n - b_n$은 $2$ 또는 $3$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "For a point $D$ on the side $BC$ of a triangle $ABC$, suppose some line parallel to the side $BC$ meets the circumcircle of triangle $ACD$ at a point $P$ inside triangle $ABC$ and a point $Q$ outside it. Let $R$ be the intersection of the line $AP$ with the side $BC$, $S$ $(\\neq Q)$ the intersection of the line $BQ$ with the circumcircle of triangle $ACD$, and $T$ the intersection of the lines $BQ$ and $PD$. If $\\angle BAQ = 145^\\circ$, $\\angle DAS = 16^\\circ$, $\\angle CAQ + \\angle SRB = 136^\\circ$ and $\\angle PTQ = x^\\circ$, find the value of $x$. (Here $0 < x < 180$.)",
+          "problem_orig": "삼각형 $ABC$의 변 $BC$ 위의 점 $D$에 대하여, 변 $BC$와 평행한 어떤 직선이 삼각형 $ACD$의 외접원과 삼각형 $ABC$의 내부의 점 $P$와 외부의 점 $Q$에서 만난다고 하자. 직선 $AP$와 변 $BC$의 교점을 $R$, 직선 $BQ$와 삼각형 $ACD$의 외접원과의 교점을 $S(\\neq Q)$, 직선 $BQ$와 $PD$의 교점을 $T$라 하자. $\\angle BAQ = 145^\\circ$, $\\angle DAS = 16^\\circ$, $\\angle CAQ + \\angle SRB = 136^\\circ$, $\\angle PTQ = x^\\circ$일 때, $x$의 값을 구하여라. (단, $0 < x < 180$)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "Find the remainder when $\\left(19 + 6\\sqrt{10}\\right)^{400} + \\left(19 - 6\\sqrt{10}\\right)^{400}$ is divided by $3^2 \\times 13^2$.",
+          "problem_orig": "$\\left(19 + 6\\sqrt{10}\\right)^{400} + \\left(19 - 6\\sqrt{10}\\right)^{400}$을 $3^2 \\times 13^2$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "For monic polynomials $f(x)$, $g(x)$ of degree $4$ (leading coefficient $1$),\n$$\\{x \\mid x = f(x)\\} = \\{1, 3, 5, 7\\}, \\qquad \\{x \\mid x = g(x)\\} = \\{1, 5, 7, 9\\}.$$\nFind the product of all elements of the set $\\{x \\mid f(x) = g(x)\\}$.",
+          "problem_orig": "최고차항의 계수가 $1$인 $4$차 다항식 $f(x)$, $g(x)$에 대하여\n$$\\{x \\mid x = f(x)\\} = \\{1, 3, 5, 7\\}, \\qquad \\{x \\mid x = g(x)\\} = \\{1, 5, 7, 9\\}$$\n이다. 집합 $\\{x \\mid f(x) = g(x)\\}$의 모든 원소의 곱을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "Two students A and B each choose a three-digit positive integer that is a multiple of $11$. Find the number of ways to choose so that the integer chosen by A and the integer chosen by B have the same tens digit.",
+          "problem_orig": "두 학생 A와 B가 $11$의 배수인 세 자리 양의 정수를 각각 하나씩 고른다. A가 고른 정수와 B가 고른 정수의 십의 자리의 수가 같도록 고르는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "In a right triangle $ABC$ with the right angle at $A$, the sides $AB$ and $AC$ have lengths $3$ and $4$ respectively. Let $D$ be the point where the bisector of angle $B$ meets the side $AC$, and $E$ the point where the bisector of angle $C$ meets the side $AB$. If $x$ is the distance from the point $A$ to the line $DE$, find the value of $145x^2$.",
+          "problem_orig": "각 $A$가 직각인 직각 삼각형 $ABC$의 두 변 $AB$와 $AC$의 길이가 각각 $3$, $4$이다. 각 $B$의 이등분선이 변 $AC$와 만나는 점을 $D$, 각 $C$의 이등분선이 변 $AB$와 만나는 점을 $E$라 하자. 점 $A$에서 직선 $DE$까지의 거리를 $x$라 할 때, $145x^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "For the function $f(n)$ defined as follows, find the value of $f(1) + f(2) + f(3) + \\cdots + f(10)$.\n$$f(n) = \\frac{1}{1+n} + \\frac{2}{2+n} + \\frac{3}{3+n} + \\cdots + \\frac{10}{10+n}$$",
+          "problem_orig": "다음과 같이 정의된 함수 $f(n)$에 대하여 $f(1) + f(2) + f(3) + \\cdots + f(10)$의 값을 구하여라.\n$$f(n) = \\frac{1}{1+n} + \\frac{2}{2+n} + \\frac{3}{3+n} + \\cdots + \\frac{10}{10+n}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "A polynomial $f(x)$ satisfies the following equation for all real numbers $x$. Find the remainder when $f(99)$ is divided by $1000$.\n$$f(f(x)) = f(x)^2 + x^2 + x + 2018$$",
+          "problem_orig": "다항식 $f(x)$가 모든 실수 $x$에 대하여 다음 식을 만족할 때, $f(99)$의 값을 $1000$으로 나눈 나머지를 구하여라.\n$$f(f(x)) = f(x)^2 + x^2 + x + 2018$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "Find the number of ways to divide $8$ students, including two students A and B, into several groups so that A and B are not in the same group and every group has $2$ or $3$ students. (Each student belongs to exactly one group.)",
+          "problem_orig": "두 학생 A와 B가 포함된 $8$명의 학생을 몇 개의 모둠으로 나눌 때, A와 B가 같은 모둠에 속하지 않으면서, 각 모둠의 인원이 $2$명 또는 $3$명이 되도록 나누는 방법의 수를 구하여라. (단, 각 학생은 오직 하나의 모둠에 속한다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "Let $C$ be the semicircle with diameter the segment $AB$ of length $40$, and let $M$ be the midpoint of the segment $AB$. A circle $O_1$ is tangent to the semicircle $C$ and tangent to the segment $AB$ at the point $M$. A circle $O_2$ $(\\neq O_1)$ is tangent to the circle $O_1$, the semicircle $C$ and the segment $AB$. If $S$ is the area of triangle $MO_1O_2$, find the value of $\\sqrt{2S}$. (Here the centres of the circles $O_1$, $O_2$ are the points $O_1$, $O_2$ respectively.)",
+          "problem_orig": "길이가 $40$인 선분 $AB$를 지름으로 하는 반원을 $C$라 하고, 선분 $AB$의 중점을 $M$이라 하자. 원 $O_1$은 반원 $C$에 접하고, 점 $M$에서 선분 $AB$에 접한다. 원 $O_2(\\neq O_1)$는 원 $O_1$, 반원 $C$, 선분 $AB$에 모두 접한다. 삼각형 $MO_1O_2$의 넓이가 $S$일 때, $\\sqrt{2S}$의 값을 구하여라. (단, 원 $O_1$, $O_2$의 중심은 각각 점 $O_1$, $O_2$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "Find the prime $p$ for which the number of positive divisors of $p^2 + 87$ is $9$.",
+          "problem_orig": "$p^2 + 87$의 양의 약수의 개수가 $9$가 되도록 하는 소수 $p$를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "A function $f(x)$ defined on the set of all real numbers satisfies both of the following conditions.\n\n(i) If $1 \\le t < s$, then $f(t) < f(s)$.\n\n(ii) For every real number $t$, $f(2 - t) = f(t)$.\n\nFind the sum of all integers $a$ satisfying the following inequality.\n$$f(-2a^2 + 16a - 17) < f(a^2 - 10a + 35)$$",
+          "problem_orig": "실수 전체의 집합에서 정의된 함수 $f(x)$가 다음 두 조건을 모두 만족한다.\n\n(i) $1 \\le t < s$이면 $f(t) < f(s)$이다.\n\n(ii) 모든 실수 $t$에 대하여 $f(2 - t) = f(t)$이다.\n\n다음 부등식을 만족하는 정수 $a$를 모두 더한 값을 구하여라.\n$$f(-2a^2 + 16a - 17) < f(a^2 - 10a + 35)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "As in the figure, the digits $1, 2, 3, 4, 5, 6, 7, 8$ are written on a board consisting of $36$ cells. Among the $28$ cells with no digit written in them, $6$ are coloured black. Find the number of ways to colour so that each row and each column contains exactly $1$ coloured cell.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2018_e10_fig.png",
+          "problem_orig": "그림과 같이 $36$개의 칸으로 이루어진 판에 $1, 2, 3, 4, 5, 6, 7, 8$의 숫자가 적혀있다. 숫자가 적혀있지 않은 $28$개의 칸 중 $6$개에 검은 색으로 색칠한다. 색칠된 칸이 각 가로줄과 각 세로줄에 $1$개씩만 있도록 색칠하는 방법의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "There is a convex quadrilateral $ABCD$ with area $100$. If $E$ is the intersection of the two diagonals $AC$ and $BD$, then $AE : EC = 2 : 3$. Take the point $P$ so that $ABPC$ is a parallelogram, and the point $Q$ so that $ACQD$ is a parallelogram. Find the area of triangle $APQ$.",
+          "problem_orig": "넓이가 $100$인 볼록사각형 $ABCD$가 있다. 두 대각선 $AC$와 $BD$의 교점을 $E$라 할 때, $\\overline{AE} : \\overline{EC} = 2 : 3$이다. 점 $P$를 사각형 $ABPC$가 평행사변형이 되도록 잡고, 점 $Q$를 사각형 $ACQD$가 평행사변형이 되도록 잡았을 때, 삼각형 $APQ$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "Positive integers $a$, $b$ satisfy the following condition. Find the value of $ab$.\n$$9a^2 - 12ab + 2b^2 + 36b - 162 = 0$$",
+          "problem_orig": "양의 정수 $a$, $b$가 다음 조건을 만족할 때, $ab$의 값을 구하여라.\n$$9a^2 - 12ab + 2b^2 + 36b - 162 = 0$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "Three real numbers $x$, $y$, $z$ satisfy both $x + y + 5z = 4$ and $0 \\le x \\le y \\le z$. If the smallest possible value of $x^2 + 2y^2 + z^2$ is $\\frac{p}{q}$, find the value of $p + q$. (Here $p$, $q$ are coprime positive integers.)",
+          "problem_orig": "세 실수 $x$, $y$, $z$가 $x + y + 5z = 4$, $0 \\le x \\le y \\le z$를 모두 만족한다. $x^2 + 2y^2 + z^2$이 될 수 있는 값 중 가장 작은 것을 $\\frac{p}{q}$라 할 때, $p + q$의 값을 구하여라. (단, $p$, $q$는 서로소인 양의 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "There is a disc divided into $12$ equal parts, as in the figure. Find the number of all discs that can be made by colouring each part red or blue. Discs that coincide after a rotation are counted as one.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2018_e14_fig.png",
+          "problem_orig": "그림과 같이 $12$등분된 원판이 있다. 각 칸을 빨간색 또는 파란색으로 칠하여 만들 수 있는 모든 원판의 개수를 구하여라. 단, 회전하여 같은 것은 한 가지로 센다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "In a triangle $ABC$ with $\\angle B$ acute and $AB < AC$, let $D$ be the foot of the perpendicular from the vertex $A$ to the side $BC$, and $F$ the foot of the perpendicular from the midpoint $E$ of the side $BC$ to the side $AB$. If $AD = 16$, $BD = 12$, $AF = 5$, find the remainder when $AC^2$ is divided by $1000$. (Here the point $F$ lies on the segment $AB$.)",
+          "problem_orig": "각 $B$가 예각이고 $\\overline{AB} < \\overline{AC}$인 삼각형 $ABC$의 꼭짓점 $A$에서 변 $BC$에 내린 수선의 발을 $D$, 변 $BC$의 중점 $E$에서 변 $AB$에 내린 수선의 발을 $F$라 할 때, $\\overline{AD} = 16$, $\\overline{BD} = 12$, $\\overline{AF} = 5$이다. $\\overline{AC}^2$을 $1000$으로 나눈 나머지를 구하여라. (단, 점 $F$는 선분 $AB$ 위에 있다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "Find the positive integer $n$ satisfying the following condition.\n\n$\\sqrt{13^4 + 4n^3}$ is an integer that is not a multiple of $13$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$을 구하여라.\n\n$\\sqrt{13^4 + 4n^3}$은 $13$의 배수가 아닌 정수",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "An acute triangle $ABC$ satisfies $\\angle ABC = 46^\\circ$ and $AB > AC$. Let $O$ be the circumcentre and $H$ the orthocentre of triangle $ABC$; the bisector of $\\angle BAC$ passes through the midpoint of the segment $OH$. If $\\angle OAH = x^\\circ$, find the value of $x$. (Here $0 \\le x < 180$.)",
+          "problem_orig": "예각삼각형 $ABC$가 $\\angle ABC = 46^\\circ$, $\\overline{AB} > \\overline{AC}$를 만족한다. 삼각형 $ABC$의 외심을 $O$, 수심을 $H$라 할 때, $\\angle BAC$의 이등분선이 선분 $OH$의 중점을 지난다. $\\angle OAH = x^\\circ$라 할 때, $x$의 값을 구하여라. (단, $0 \\le x < 180$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "Let $a$ be the largest root of the equation $x^2(x - 5) + 2 = 0$. Find the value of $[a^4]$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "방정식 $x^2(x - 5) + 2 = 0$의 가장 큰 해를 $a$라 할 때, $[a^4]$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "As in the figure, the numbers from $1$ to $80$ are written on a board $R$ consisting of $80$ square cells. Consider the following four kinds of tiles, each made of $4$ cells. Find the number of ways to choose $20$ such tiles and attach them to the board $R$ without gaps.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2018_e19_fig.png",
+          "problem_orig": "그림과 같이 $80$개의 정사각형 모양의 칸으로 이루어진 판 $R$에 $1$에서 $80$까지의 수가 적혀있다. $4$개의 칸으로 만들어진 다음 네 종류의 타일을 생각하자. 이러한 타일 $20$개를 선택하여 판 $R$에 빈틈없이 붙이는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "When a positive integer $k$ and a positive integer $m$ that is not a multiple of $3$ satisfy the following equation, find the value of $k$.\n$$1 - \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{4} + \\cdots + \\frac{1}{53} - \\frac{1}{54} + \\frac{1}{55} = \\frac{3^k \\times m}{28 \\times 29 \\times \\cdots \\times 54 \\times 55}$$",
+          "problem_orig": "양의 정수 $k$와 $3$의 배수가 아닌 양의 정수 $m$이 다음 등식을 만족할 때, $k$의 값을 구하여라.\n$$1 - \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{4} + \\cdots + \\frac{1}{53} - \\frac{1}{54} + \\frac{1}{55} = \\frac{3^k \\times m}{28 \\times 29 \\times \\cdots \\times 54 \\times 55}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "Find the number of five-digit positive integers with tens digit $9$ that are multiples of $11$.",
+          "problem_orig": "십의 자리의 수가 $9$인 다섯 자리 양의 정수 중 $11$의 배수의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "Find the remainder when the integer $\\sqrt{2(20^4 + 18^8 + 344^4)}$ is divided by $1000$.",
+          "problem_orig": "정수 $\\sqrt{2(20^4 + 18^8 + 344^4)}$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "A quadrilateral $ABCD$ whose sides $AB$ and $AD$ have lengths $20$ and $8$ respectively is inscribed in a circle whose centre is the midpoint of the side $AB$. The tangents to this circle at $C$ and at $D$ meet at the point $E$, and the segment $DE$ has length $5$. If $F$ is the intersection of the two diagonals $AC$ and $BD$, find the value of $AF^2$.",
+          "problem_orig": "두 변 $AB$와 $AD$의 길이가 각각 $20$과 $8$인 사각형 $ABCD$가 변 $AB$의 중점이 중심인 원에 내접한다. 이 원의 점 $C$에서의 접선과 점 $D$에서의 접선이 점 $E$에서 만난다고 할 때, 선분 $DE$의 길이는 $5$이다. 두 대각선 $AC$와 $BD$의 교점을 $F$라 할 때, $\\overline{AF}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "When positive integers $m$, $n$ satisfy the following equation, find the value of $m + n$.\n$$4^m - 3^n = 11 \\times 19 \\times 47$$",
+          "problem_orig": "양의 정수 $m$, $n$이 다음 식을 만족할 때 $m + n$의 값을 구하여라.\n$$4^m - 3^n = 11 \\times 19 \\times 47$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "A real number $a$ satisfies the equation $a^2 + 100a - 1 = 0$. The graph of a function $y = f(x)$ is a line with slope $2a$ and rational $y$-intercept. For integers $A$, $B$, $C$ such that the following equation is an identity in $x$, find the value of $A - (B + C)$.\n$$f(f(x - 1)) = Af(x) + Bx + C$$",
+          "problem_orig": "실수 $a$가 등식 $a^2 + 100a - 1 = 0$을 만족한다. 함수 $y = f(x)$의 그래프는 기울기가 $2a$이고 $y$절편이 유리수인 직선이다. 다음 등식이 $x$에 대한 항등식이 되도록 하는 정수 $A$, $B$, $C$에 대하여 $A - (B + C)$의 값을 구하여라.\n$$f(f(x - 1)) = Af(x) + Bx + C$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "Find the number of ways to divide $8$ students, including two students A and B, into several groups so that A and B are not in the same group and every group has $2$ or $3$ students. (Each student belongs to exactly one group.)",
+          "problem_orig": "두 학생 A와 B가 포함된 $8$명의 학생을 몇 개의 모둠으로 나눌 때, A와 B가 같은 모둠에 속하지 않으면서, 각 모둠의 인원이 $2$명 또는 $3$명이 되도록 나누는 방법의 수를 구하여라. (단, 각 학생은 오직 하나의 모둠에 속한다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "A triangle $ABC$ satisfies $\\angle B > \\angle C$ and $\\angle A = 50^\\circ$. Let $D$, $E$, $F$ be the midpoints of the sides $BC$, $CA$, $AB$ respectively. Let $K$ be the point where the line through $B$ perpendicular to the bisector of $\\angle A$ meets the tangent at $D$ to the circumcircle of triangle $DEF$. If $\\angle BKD = 5^\\circ$ and $\\angle B = x^\\circ$, find the value of $x$. (Here $0 \\le x < 180$.)",
+          "problem_orig": "삼각형 $ABC$가 $\\angle B > \\angle C$, $\\angle A = 50^\\circ$를 만족한다. 변 $BC$, $CA$, $AB$의 중점을 각각 $D$, $E$, $F$라 하자. 점 $B$를 지나고 $\\angle A$의 이등분선에 수직인 직선과 점 $D$에서 삼각형 $DEF$의 외접원에 접하는 직선이 만나는 점을 $K$라 하자. $\\angle BKD = 5^\\circ$일 때, $\\angle B = x^\\circ$이다. $x$의 값을 구하여라. (단, $0 \\le x < 180$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "Find the sum of all positive integers $n$ satisfying the following condition.\n\nThe sum of the positive integers less than $n$ that are coprime to $n$ is $4n$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$을 모두 더한 값을 구하여라.\n\n$n$과 서로소인 양의 정수 중 $n$보다 작은 것의 합이 $4n$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "Three real numbers $x$, $y$, $z$ satisfy both $x + y + 5z = 4$ and $0 \\le x \\le y \\le z$. Let $M$ be the largest and $m$ the smallest possible value of $x^2 + 2y^2 + z^2$. If $M - m = \\frac{p}{q}$, find the value of $p + q$. (Here $p$, $q$ are coprime positive integers.)",
+          "problem_orig": "세 실수 $x$, $y$, $z$가 $x + y + 5z = 4$, $0 \\le x \\le y \\le z$를 모두 만족할 때, $x^2 + 2y^2 + z^2$이 될 수 있는 값 중 가장 큰 것을 $M$, 가장 작은 것을 $m$이라 하자. $M - m = \\frac{p}{q}$라 할 때, $p + q$의 값을 구하여라. (단, $p$, $q$는 서로소인 양의 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "Find the sum of all positive integers $m$ satisfying the following condition.\n\n$m^2 - 10m + 10$ is a divisor of $4 \\cdot 5^{m-1}$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $m$을 모두 더한 값을 구하여라.\n\n$m^2 - 10m + 10$은 $4 \\cdot 5^{m-1}$의 약수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "As in the figure, the digits $1, 2, 3, 4, 5, 6, 7, 8$ are written on a board consisting of $36$ cells. Among the $28$ cells with no digit written in them, $6$ are coloured black. Find the number of ways to colour so that each row and each column contains exactly $1$ coloured cell.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2018_e10_fig.png",
+          "problem_orig": "그림과 같이 $36$개의 칸으로 이루어진 판에 $1, 2, 3, 4, 5, 6, 7, 8$의 숫자가 적혀있다. 숫자가 적혀있지 않은 $28$개의 칸 중 $6$개에 검은 색으로 색칠한다. 색칠된 칸이 각 가로줄과 각 세로줄에 $1$개씩만 있도록 색칠하는 방법의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "A rectangle $ABCD$ satisfies $AB = 18$, $BC = 10$. Take the point $P$ on the extension of the side $AD$ beyond $A$ so that $AP = 3$. Let $E$ be the midpoint of the side $AB$ and $Q$ the intersection of the lines $EP$ and $BD$. If $F$ is the midpoint of the side $CD$ and $I$ is the incentre of triangle $PQF$, find the value of $36IE$.",
+          "problem_orig": "직사각형 $ABCD$가 $\\overline{AB} = 18$, $\\overline{BC} = 10$을 만족한다. 변 $AD$의 점 $A$ 쪽 연장선 위에 $\\overline{AP} = 3$이 되도록 점 $P$를 잡자. 변 $AB$의 중점을 $E$라 하고, 직선 $EP$와 직선 $BD$의 교점을 $Q$라 하자. 변 $CD$의 중점을 $F$, 삼각형 $PQF$의 내심을 $I$라고 할 때, $36\\overline{IE}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "Let $a$ be the largest root of the equation $x^2(x - 5) + 2 = 0$. Find the value of $[a^4]$. (Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "방정식 $x^2(x - 5) + 2 = 0$의 가장 큰 해를 $a$라 할 때, $[a^4]$의 값을 구하여라. (단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "Find the number of ways to colour each face of a regular octahedron red or blue. Colourings that coincide after a rotation are counted as one.",
+          "problem_orig": "정팔면체의 각 면을 빨간색 또는 파란색으로 칠하는 방법의 수를 구하여라. 단, 회전하여 같은 것은 한 가지로 센다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "A parallelogram $ABCD$ satisfies $AB = 18$, $AD = 27$. Let $E$ $(\\neq C)$ be the intersection of the circumcircle of triangle $BCD$ with the line $CA$; then $DE = 36$. If $M$ is the midpoint of the segment $BD$, find the remainder when $EM^2 \\times 100$ is divided by $1000$.",
+          "problem_orig": "평행사변형 $ABCD$가 $\\overline{AB} = 18$, $\\overline{AD} = 27$을 만족한다. 삼각형 $BCD$의 외접원과 직선 $CA$의 교점을 $E(\\neq C)$라 할 때, $\\overline{DE} = 36$이다. 선분 $BD$의 중점을 $M$이라 할 때, $\\overline{EM}^2 \\times 100$의 값을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "For the ordered triples $(n, p, q)$ of a positive integer $n$ and primes $p$, $q$ satisfying the following condition, find the sum of all values of $npq$. ($0$ is a perfect square.)\n\n$p^4 - 4q^n$ is a perfect square.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$과 소수 $p$, $q$의 순서쌍 $(n, p, q)$에 대하여 $npq$를 모두 더한 값을 구하여라. (단, $0$은 완전제곱수이다.)\n\n$p^4 - 4q^n$이 완전제곱수가 된다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "In the coordinate plane there is the rectangular region\n$$R = \\{(x, y) \\mid 0 \\le x \\le 8,\\ 0 \\le y \\le 5\\}.$$\nSquare regions $S_{i,j}$ with side length $3$ are defined as follows.\n$$S_{i,j} = \\{(x, y) \\mid i \\le x \\le i + 3,\\ j \\le y \\le j + 3\\}$$\nFind the number of ways to choose $6$ regions $S_{i,j}$ (where $i$, $j$ are integers) so that their union contains $R$.",
+          "problem_orig": "좌표평면에서 직사각형 모양의 영역\n$$R = \\{(x, y) \\mid 0 \\le x \\le 8,\\ 0 \\le y \\le 5\\}$$\n이 있다. 한 변의 길이가 $3$인 정사각형 모양의 영역 $S_{i,j}$를 다음과 같이 정의한다.\n$$S_{i,j} = \\{(x, y) \\mid i \\le x \\le i + 3,\\ j \\le y \\le j + 3\\}$$\n영역 $S_{i,j}$ (단, $i$, $j$는 모두 정수)를 $6$개 선택할 때, 이들의 합집합이 $R$을 포함하도록 선택하는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "Let $O$ be the centre of the circumcircle $\\Omega$ of an acute triangle $ABC$ $(\\angle A < \\angle B,\\ \\angle A < \\angle C)$, and let $P$ be the centre of the circle $\\Gamma$ that is tangent to the line $BC$ at the point $C$ and passes through the point $A$. Let $D$ $(\\neq A)$ be the intersection of the line $AO$ with the circle $\\Gamma$, and $E$ $(\\neq A)$ the intersection of the line $AP$ with the circle $\\Omega$. If $\\angle ACD = 43^\\circ$, $\\angle AEC = 105^\\circ$ and $\\angle OPD = x^\\circ$, find the value of $x$. (Here $0 \\le x < 180$.)",
+          "problem_orig": "예각삼각형 $ABC$ $(\\angle A < \\angle B,\\ \\angle A < \\angle C)$의 외접원 $\\Omega$의 중심을 $O$라 하고, 점 $C$에서 직선 $BC$와 접하고 점 $A$를 지나는 원 $\\Gamma$의 중심을 $P$라 하자. 직선 $AO$와 원 $\\Gamma$의 교점을 $D$ $(\\neq A)$, 직선 $AP$와 원 $\\Omega$의 교점을 $E$ $(\\neq A)$라 하자. $\\angle ACD = 43^\\circ$이고 $\\angle AEC = 105^\\circ$일 때, $\\angle OPD = x^\\circ$이다. $x$의 값을 구하여라. (단, $0 \\le x < 180$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "Find the sum of all integers $n$ satisfying the following condition.\n\nThere exist a prime $p$ and an integer $m$ such that $(n^2 - 5n + 7)(n^2 - 21n + 49) = p^m$.",
+          "problem_orig": "다음 조건을 만족하는 정수 $n$을 모두 더한 값을 구하여라.\n\n$(n^2 - 5n + 7)(n^2 - 21n + 49) = p^m$을 만족하는 소수 $p$와 정수 $m$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "A quadratic polynomial $P(x)$ and a quartic polynomial $Q(x)$ satisfy all four of the following conditions.\n\n(i) For every real number $x$,\n$$P(x)Q(x + 4) = P(x + 8)Q(x).$$\n\n(ii) $P(x) = 0$ has $2$ distinct real roots.\n\n(iii) $Q(x) = 0$ has $4$ distinct real roots.\n\n(iv) The difference of the two roots of $P(x) = 0$ is greater by $8$ than the sum of the four roots of $Q(x) = 0$.\n\nIf $a$ is the smallest possible value of the sum of the squares of the four roots of $Q(x) = 0$, find the value of $10a$.",
+          "problem_orig": "$2$차 다항식 $P(x)$와 $4$차 다항식 $Q(x)$가 다음 네 조건을 모두 만족한다.\n\n(i) 임의의 실수 $x$에 대하여\n$$P(x)Q(x + 4) = P(x + 8)Q(x)$$\n\n(ii) $P(x) = 0$은 서로 다른 $2$개의 실수근을 가진다.\n\n(iii) $Q(x) = 0$은 서로 다른 $4$개의 실수근을 가진다.\n\n(iv) $P(x) = 0$의 두 근의 차가 $Q(x) = 0$의 네 근의 합보다 $8$만큼 크다.\n\n$Q(x) = 0$의 네 근의 제곱의 합이 될 수 있는 값 중 가장 작은 것을 $a$라 할 때, $10a$의 값을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "Two quadratic polynomials $P(x)$ and $Q(x)$ satisfy, for all real numbers $x$,\n$$P(Q(x)) = P(x)Q(x).$$\nIf $Q(2) = 200$, find the value of $Q(5)$.",
+          "problem_orig": "두 이차다항식 $P(x)$와 $Q(x)$가 모든 실수 $x$에 대하여\n$$P(Q(x)) = P(x)Q(x)$$\n을 만족한다. $Q(2) = 200$일 때, $Q(5)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "Among the six-digit integers $\\overline{abcdef}$ obtained by rearranging the digits of the positive integer $123456$, consider those satisfying the following condition. Find the remainder when the sum of the largest and the smallest such number is divided by $1000$.\n\n$\\overline{ab}$ is a multiple of $2$, $\\overline{abc}$ is a multiple of $3$, $\\overline{abcd}$ is a multiple of $4$, $\\overline{abcde}$ is a multiple of $5$, and $\\overline{abcdef}$ is a multiple of $6$.\n\n(For example, $\\overline{abc} = 100a + 10b + c$.)",
+          "problem_orig": "양의 정수 $123456$을 재배열하여 만든 여섯자리 정수 $\\overline{abcdef}$ 중 다음 조건을 만족하는 가장 큰 수와 가장 작은 수의 합을 $1000$으로 나눈 나머지를 구하여라.\n\n$\\overline{ab}$는 $2$의 배수, $\\overline{abc}$는 $3$의 배수, $\\overline{abcd}$는 $4$의 배수, $\\overline{abcde}$는 $5$의 배수, $\\overline{abcdef}$는 $6$의 배수이다.\n\n(예를 들어, $\\overline{abc} = 100a + 10b + c$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "There is a quadrilateral $ABCD$ inscribed in a circle. The lines $AB$ and $CD$ meet at the point $E$, and the lines $BC$ and $AD$ meet at the point $F$. If $AD = 84$, $BC = 28$, $BE = 42$, $CE = 56$, find the remainder when $EF^2$ is divided by $1000$.",
+          "problem_orig": "원에 내접하는 사각형 $ABCD$가 있다. 두 직선 $AB$와 $CD$가 점 $E$에서 만나고 두 직선 $BC$와 $AD$가 점 $F$에서 만난다. $\\overline{AD} = 84$, $\\overline{BC} = 28$, $\\overline{BE} = 42$, $\\overline{CE} = 56$일 때, $\\overline{EF}^2$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "Find the number of ways to divide $9$ students, including two students A and B, into several groups so that A and B are in the same group and every group has $2$ or $3$ students. (Each student belongs to exactly one group.)",
+          "problem_orig": "학생 A와 B가 포함된 $9$명의 학생을 몇 개의 모둠으로 나눌 때, A와 B가 같은 모둠에 속하고 각 모둠의 인원이 $2$명 또는 $3$명인 경우의 수를 구하여라. (단, 각 학생은 오직 하나의 모둠에 속한다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "Three points $A$, $B$, $C$ on the graph of the function $y = x^2$ satisfy all three of the following conditions.\n\n(i) $\\angle BAC = 90^\\circ$\n\n(ii) The $y$-coordinate of the midpoint $M$ of the segment $BC$ equals the $y$-coordinate of the point $A$.\n\n(iii) The $x$-coordinate of the midpoint of the segment $AM$ equals the $x$-coordinate of the point $B$.\n\nIf the $x$-coordinates of the points $A$ and $B$ are $a$ and $b$ respectively, find the value of $144a^2b^2$.",
+          "problem_orig": "함수 $y = x^2$의 그래프 위의 세 점 $A$, $B$, $C$가 다음 세 조건을 모두 만족한다.\n\n(i) $\\angle BAC = 90^\\circ$\n\n(ii) 선분 $BC$의 중점 $M$의 $y$좌표는 점 $A$의 $y$좌표와 같다.\n\n(iii) 선분 $AM$의 중점의 $x$좌표는 점 $B$의 $x$좌표와 같다.\n\n점 $A$와 $B$의 $x$좌표를 각각 $a$, $b$라 할 때, $144a^2b^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "Find the largest positive integer $n$ for which the value of the following expression is an integer.\n$$\\frac{300}{2n + 1} + \\frac{935}{5n + 1}$$",
+          "problem_orig": "다음 식의 값이 정수가 되도록 하는 양의 정수 $n$ 중 가장 큰 것을 구하여라.\n$$\\frac{300}{2n + 1} + \\frac{935}{5n + 1}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "In a quadrilateral $ABCD$, let $O$ be the intersection of the two diagonals; then $\\angle AOB = 30^\\circ$, $AO = 3$, $BO = 5$, $CO = 4$, $DO = 3$. Let $A_1$, $C_1$ be the feet of the perpendiculars from the points $A$, $C$ to the line $BD$, and $B_1$, $D_1$ the feet of the perpendiculars from the points $B$, $D$ to the line $AC$. Let $A_2$, $C_2$ be the feet of the perpendiculars from the points $A_1$, $C_1$ to the line $AC$, and $B_2$, $D_2$ the feet of the perpendiculars from the points $B_1$, $D_1$ to the line $BD$. If $S$ is the area of the quadrilateral $A_2B_2C_2D_2$, find the value of $64S$.",
+          "problem_orig": "사각형 $ABCD$에서 두 대각선의 교점을 $O$라 하면 $\\angle AOB = 30^\\circ$, $\\overline{AO} = 3$, $\\overline{BO} = 5$, $\\overline{CO} = 4$, $\\overline{DO} = 3$이다. 두 점 $A$, $C$에서 직선 $BD$에 내린 수선의 발을 각각 $A_1$, $C_1$, 두 점 $B$, $D$에서 직선 $AC$에 내린 수선의 발을 각각 $B_1$, $D_1$이라 하고 두 점 $A_1$, $C_1$에서 직선 $AC$에 내린 수선의 발을 각각 $A_2$, $C_2$, 두 점 $B_1$, $D_1$에서 직선 $BD$에 내린 수선의 발을 각각 $B_2$, $D_2$라 하자. 사각형 $A_2B_2C_2D_2$의 넓이를 $S$라 할 때, $64S$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "Find the value of the following expression. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n$$\\frac{1}{11}\\left(\\left[\\sqrt[3]{1}\\right] + \\left[\\sqrt[3]{2}\\right] + \\cdots + \\left[\\sqrt[3]{1000}\\right]\\right)$$",
+          "problem_orig": "다음 식의 값을 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대 정수)\n$$\\frac{1}{11}\\left(\\left[\\sqrt[3]{1}\\right] + \\left[\\sqrt[3]{2}\\right] + \\cdots + \\left[\\sqrt[3]{1000}\\right]\\right)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "For a given positive integer $n$, let $a_n$ be the largest possible value of $xy + yz + zx$ when distinct positive integers $x$, $y$, $z$ satisfy $x + y + z = n$. Find the value of the following expression.\n$$a_7 + a_{10} + a_{13} + \\cdots + a_{25} + a_{28}$$",
+          "problem_orig": "주어진 양의 정수 $n$에 대하여 서로 다른 양의 정수 $x$, $y$, $z$가 $x + y + z = n$을 만족할 때, $xy + yz + zx$가 가질 수 있는 값 중 가장 큰 것을 $a_n$이라 하자. 다음 식의 값을 구하여라.\n$$a_7 + a_{10} + a_{13} + \\cdots + a_{25} + a_{28}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "For positive integers $a$, $b$, $c$, $d$, $e$ less than $60$ such that\n$$\\frac{11^7}{60^5} = \\frac{a}{60} + \\frac{b}{60^2} + \\frac{c}{60^3} + \\frac{d}{60^4} + \\frac{e}{60^5}$$\nholds, find the value of $a + b + c + d + e$.",
+          "problem_orig": "$60$보다 작은 양의 정수 $a$, $b$, $c$, $d$, $e$에 대하여\n$$\\frac{11^7}{60^5} = \\frac{a}{60} + \\frac{b}{60^2} + \\frac{c}{60^3} + \\frac{d}{60^4} + \\frac{e}{60^5}$$\n가 성립할 때, $a + b + c + d + e$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "In a parallelogram $ABCD$, $\\angle ABD = 43^\\circ$. Let $E$ and $F$ be the intersections of the bisector of the angle $BAD$ with the lines $BC$ and $CD$ respectively, and let $O$ be the circumcentre of triangle $CEF$. If $\\angle ECO = 31^\\circ$ and $\\angle EBO = x^\\circ$, find the value of $x$. (Here $0 \\le x \\le 180$.)",
+          "problem_orig": "평행사변형 $ABCD$에서 $\\angle ABD = 43^\\circ$이다. 각 $BAD$의 이등분선과 직선 $BC$, $CD$와의 교점을 각각 $E$와 $F$라 하고 삼각형 $CEF$의 외심을 $O$라 하자. $\\angle ECO = 31^\\circ$, $\\angle EBO = x^\\circ$일 때, $x$의 값을 구하여라. (단, $0 \\le x \\le 180$이다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "A square is divided into $8$ equal parts as below. Each part is coloured red or blue. Find the number of squares coloured in this way. (Colourings that coincide after a rotation are counted as one.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2019_e12_fig.png",
+          "problem_orig": "다음과 같이 정사각형을 $8$등분한다. 각 칸을 빨간색 또는 파란색으로 칠한다. 이렇게 색칠된 정사각형의 개수를 구하여라. (단, 회전하여 같은 것은 한 가지로 센다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "For a positive integer $n$, let $a_n$ be the sum of all solutions of the equation\n$$\\sum_{k=1}^{n} |x - k| = \\left(x - \\frac{n+1}{2}\\right)^2 + n - 1.$$\nFind the value of\n$$2(a_1 + a_2 + a_3 + \\cdots + a_{20}).$$",
+          "problem_orig": "양의 정수 $n$에 대하여 방정식\n$$\\sum_{k=1}^{n} |x - k| = \\left(x - \\frac{n+1}{2}\\right)^2 + n - 1$$\n의 해를 모두 더한 값을 $a_n$이라 할 때, 다음의 값을 구하여라.\n$$2(a_1 + a_2 + a_3 + \\cdots + a_{20})$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "Find the sum of all primes that divide the positive integer $160401$.",
+          "problem_orig": "양의 정수 $160401$의 약수가 되는 모든 소수의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "In a triangle $ABC$, $AB = 9$, $BC = 11$, $CA = 10$. Let $D$, $E$, $F$ be the points where the incircle $I$ of triangle $ABC$ meets the sides $BC$, $CA$, $AB$ respectively. Let $P$ be the point where the line through $B$ parallel to the line $AC$ meets the line $EF$, and $Q$ $(\\neq D)$ the point where the line $PD$ meets the circle $I$. If $S$ is the area of triangle $DEQ$, find the value of $\\left(\\frac{11}{8}S\\right)^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = 9$, $\\overline{BC} = 11$, $\\overline{CA} = 10$이다. 삼각형 $ABC$의 내접원 $I$가 변 $BC$, $CA$, $AB$와 만나는 점을 각각 $D$, $E$, $F$라 하고, 점 $B$를 지나고 직선 $AC$와 평행한 직선이 직선 $EF$와 만나는 점을 $P$, 직선 $PD$가 원 $I$와 만나는 점을 $Q(\\neq D)$라 하자. 삼각형 $DEQ$의 넓이를 $S$라 할 때, $\\left(\\frac{11}{8}S\\right)^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "There are $9$ cards, each with one of the integers from $2$ to $10$ written on it, and the numbers on the cards are all different. These cards are put into boxes A, B, C, with $2$, $3$ and $4$ cards respectively. Let $a$ be the product of the numbers on the cards in box A, $b$ the product of the numbers on the cards in box B, and $c$ the product of the numbers on the cards in box C. Find the number of ways to put the cards into the boxes so that the greatest common divisor of $a$, $b$, $c$ is $1$.",
+          "problem_orig": "카드 $9$장에 $2$부터 $10$까지의 정수가 하나씩 적혀 있으며 각 카드에 적힌 수는 모두 다르다. 이 카드를 상자 A, B, C에 각각 $2$장, $3$장, $4$장씩 넣을 때, 상자 A에 있는 카드에 적힌 수의 곱을 $a$, 상자 B에 있는 카드에 적힌 수의 곱을 $b$, 상자 C에 있는 카드에 적힌 수의 곱을 $c$라 하자. $a$, $b$, $c$의 최대공약수가 $1$이 되도록 상자에 넣는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "When real numbers $x$, $y$, $z$ satisfy $x^2 + y^2 + z^2 = 147$, find the difference between the maximum and the minimum of the following expression.\n$$x + y + z - xy - yz - zx$$",
+          "problem_orig": "실수 $x$, $y$, $z$가 $x^2 + y^2 + z^2 = 147$을 만족할 때, 다음 식의 최댓값과 최솟값의 차를 구하여라.\n$$x + y + z - xy - yz - zx$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "Find the remainder when the positive integer $n$ for which the quartic equation $x^4 - 101^2 x^2 + n^2 = 0$ has an integer solution is divided by $1000$.",
+          "problem_orig": "사차방정식 $x^4 - 101^2 x^2 + n^2 = 0$이 정수해를 가지도록 하는 양의 정수 $n$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "A pentagon $ABCDE$ inscribed in a circle $O$ satisfies all three of the following conditions.\n\n(i) The sides $BC$ and $DE$ are parallel.\n\n(ii) $\\angle BAE = 2\\angle CAD$ (where $\\angle CAD < 90^\\circ$).\n\n(iii) The tangents to the circle $O$ at $C$ and $D$ meet at a point $J$, and $\\angle ADB = \\angle AJC$.\n\nIf $BC = 30$ and $DE = 50$, find the value of $CD$.",
+          "problem_orig": "원 $O$에 내접하는 오각형 $ABCDE$가 다음 세 조건을 모두 만족한다.\n\n(i) 변 $BC$와 $DE$가 평행하다.\n\n(ii) $\\angle BAE = 2\\angle CAD$ (단, $\\angle CAD < 90^\\circ$)\n\n(iii) 점 $C$와 $D$에서의 원 $O$의 접선이 점 $J$에서 만나고 $\\angle ADB = \\angle AJC$이다.\n\n$\\overline{BC} = 30$, $\\overline{DE} = 50$일 때, $\\overline{CD}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "Twelve $1 \\times 1$ squares are joined to form a rectangle as below. Find the number of parallelograms whose $4$ vertices are among the $20$ vertices of this figure.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2019_e20_fig.png",
+          "problem_orig": "다음과 같이 $1 \\times 1$ 정사각형 $12$개를 붙여서 직사각형을 만들었다. 이 도형의 $20$개의 꼭짓점 중에서 $4$개의 점을 꼭짓점으로 가지는 평행사변형의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "A sequence $(a_n)$ has $a_1 = \\frac{1}{2}$ and satisfies, for every positive integer $n$,\n$$a_{2n} = \\frac{2}{n} a_n^2, \\qquad a_{2n+1} = \\frac{1}{2} a_{2n} + \\frac{1}{2^{2n+1}}.$$\nFind the remainder when the smallest positive integer $m$ for which $m \\times a_{102}$ is an integer is divided by $1000$.",
+          "problem_orig": "수열 $(a_n)$이 $a_1 = \\frac{1}{2}$이고 모든 양의 정수 $n$에 대해 다음을 만족한다.\n$$a_{2n} = \\frac{2}{n} a_n^2, \\qquad a_{2n+1} = \\frac{1}{2} a_{2n} + \\frac{1}{2^{2n+1}}$$\n이때, $m \\times a_{102}$가 정수가 되는 가장 작은 양의 정수 $m$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "Find the remainder when the number of ordered pairs $(a, b)$ satisfying both of the following conditions is divided by $1000$.\n\n(i) $a, b \\in \\{1, 2, \\ldots, 2019\\}$\n\n(ii) $a(a + b)(a + 2b)$ is a multiple of $2019$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 순서쌍 $(a, b)$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(i) $a, b \\in \\{1, 2, \\ldots, 2019\\}$\n\n(ii) $a(a + b)(a + 2b)$은 $2019$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "In a triangle $ABC$, $AB = 99$, $BC = 44$, $CA = 88$. Let $D$ $(\\neq C)$ be the point where the bisector of angle $C$ meets the circumcircle of triangle $ABC$, and $E$ the intersection of the lines $BD$ and $AC$. Find the value of $CE$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = 99$, $\\overline{BC} = 44$, $\\overline{CA} = 88$이다. 각 $C$의 이등분선이 삼각형 $ABC$의 외접원과 만나는 점을 $D(\\neq C)$라 하고 직선 $BD$와 $AC$의 교점을 $E$라 할 때, $\\overline{CE}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "Find the number of ways to divide $9$ students, including students A, B, C, into several groups so that A and B are in the same group, A and C are in different groups, and every group has $2$ or $3$ students. (Each student belongs to exactly one group.)",
+          "problem_orig": "학생 A, B, C가 포함된 $9$명의 학생을 몇 개의 모둠으로 나눌 때, A와 B는 같은 모둠에 속하고, A와 C는 다른 모둠에 속하고, 각 모둠의 인원이 $2$명 또는 $3$명인 경우의 수를 구하여라. (단, 각 학생은 오직 하나의 모둠에 속한다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "For a given positive integer $n$, let $a_n$ be the positive integer $k \\le n$ that makes the value of the following expression smallest.\n$$9k + \\frac{16n^2}{n + k}$$\nFind the value of the following expression.\n$$a_1 + a_2 + \\cdots + a_{31}$$",
+          "problem_orig": "주어진 양의 정수 $n$에 대하여 $n$ 이하의 양의 정수 $k$ 중 다음 식의 값을 가장 작게 하는 것을 $a_n$이라 하자.\n$$9k + \\frac{16n^2}{n + k}$$\n이때, 다음 식의 값을 구하여라.\n$$a_1 + a_2 + \\cdots + a_{31}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "For the ordered pairs $(p, a)$ of a prime $p$ and an integer $a$ satisfying the following equation, find the maximum value of $p + a$.\n$$14p^3 - ap^2 - ap + 2a - 14 = 16p^2$$",
+          "problem_orig": "다음 식을 만족하는 소수 $p$와 정수 $a$의 순서쌍 $(p, a)$에 대하여 $p + a$의 최댓값을 구하여라.\n$$14p^3 - ap^2 - ap + 2a - 14 = 16p^2$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "In a triangle $ABC$, $AB = 27$ and $AC = 36$. The points $D$ and $E$ lie on the sides $AB$ and $AC$ respectively with $AD = 12$, $AE = 18$. The point $F$ lies on the side $BC$ with $\\frac{BF}{FC} = \\frac{3}{2}$. If $G$ is the intersection of the lines $AF$ and $DE$, find the value of $120\\frac{GF}{GA}$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = 27$, $\\overline{AC} = 36$이다. 점 $D$와 $E$는 각각 변 $AB$와 $AC$ 위의 점으로 $\\overline{AD} = 12$, $\\overline{AE} = 18$이다. 점 $F$는 변 $BC$ 위의 점으로 $\\frac{\\overline{BF}}{\\overline{FC}} = \\frac{3}{2}$이다. 직선 $AF$와 $DE$의 교점을 $G$라 할 때, $120\\frac{\\overline{GF}}{\\overline{GA}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "Ten colours are given. Each face of a regular tetrahedron is coloured with one of the ten colours. Find the number of tetrahedra coloured in this way. (Colourings that coincide after a rotation are counted as one.)",
+          "problem_orig": "열 가지의 색이 주어져 있다. 정사면체의 각 면을 열 가지의 색 중 한 가지로 칠한다. 이렇게 색칠된 정사면체의 개수를 구하여라. (단, 회전하여 같은 것은 한 가지로 센다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "For a positive integer $n$, let $a_n$ be the sum of all solutions of the equation\n$$\\sum_{k=1}^{n} |x - k| = \\left(x - \\frac{n+1}{2}\\right)^2 + n - 1.$$\nFind the value of\n$$2(a_1 + a_2 + a_3 + \\cdots + a_{20}).$$",
+          "problem_orig": "양의 정수 $n$에 대하여 방정식\n$$\\sum_{k=1}^{n} |x - k| = \\left(x - \\frac{n+1}{2}\\right)^2 + n - 1$$\n의 해를 모두 더한 값을 $a_n$이라 할 때, 다음의 값을 구하여라.\n$$2(a_1 + a_2 + a_3 + \\cdots + a_{20})$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "Find the sum of all primes that divide the positive integer $160401$.",
+          "problem_orig": "양의 정수 $160401$의 약수가 되는 모든 소수의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "In an acute triangle $ABC$, $AB = 7$. The point $D$ on the side $AC$ satisfies $AD = 8$, $BD = 8$, $CD = 4$. Let $E$ $(\\neq B)$ be the point where the circumcircle of triangle $ABD$ meets the line $BC$, and $F$ the intersection of the lines $AE$ and $BD$. Find the value of $64\\frac{BF}{FD}$.",
+          "problem_orig": "예각삼각형 $ABC$에서 $\\overline{AB} = 7$이다. 점 $D$는 변 $AC$ 위의 점으로 $\\overline{AD} = 8$, $\\overline{BD} = 8$, $\\overline{CD} = 4$이다. 삼각형 $ABD$의 외접원이 직선 $BC$와 만나는 점을 $E(\\neq B)$라 하고 직선 $AE$와 $BD$의 교점을 $F$라 할 때, $64\\frac{\\overline{BF}}{\\overline{FD}}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "$20$ circles with numbers written in them are arranged as below. Find the number of ways to choose four circles, including the circle numbered $20$, without regard to order, so that no two of the four chosen circles are tangent to each other.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2019_g12_fig.png",
+          "problem_orig": "다음과 같이 수가 적힌 $20$개의 원이 배열되어 있다. 수 $20$이 적힌 원을 포함하여 네 개의 원을 순서를 무시하고 고를 때, 골라진 네 개의 원 중 어느 두 개도 접하지 않게 되는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "Two monic polynomials $P(x)$ and $Q(x)$ with integer coefficients and degree at least $1$ satisfy, for all real numbers $x$,\n$$P(Q(x)) = P(x)Q(x)^2.$$\nFind the number of all real numbers not exceeding $2019$ that can be the value of the following expression.\n$$3P(1) - Q(2)$$",
+          "problem_orig": "최고차항의 계수가 $1$이고 차수가 $1$ 이상인 두 정수계수 다항식 $P(x)$와 $Q(x)$가 모든 실수 $x$에 대하여\n$$P(Q(x)) = P(x)Q(x)^2$$\n을 만족한다. 이때, 다음 식의 값이 될 수 있는 $2019$ 이하의 모든 실수의 개수를 구하여라.\n$$3P(1) - Q(2)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "For integers $m$, $n$ satisfying the equation $m^3 + n^3 + 18mn = 10125$, find the value of $m^2 + n^2$.",
+          "problem_orig": "방정식 $m^3 + n^3 + 18mn = 10125$를 만족하는 정수 $m$, $n$에 대하여 $m^2 + n^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "In a trapezoid $ABCD$, $AC = 70$, $CD = 9$, and the sides $AB$ and $CD$ are parallel. For a point $P$ outside the trapezoid $ABCD$, the circle with diameter the segment $PA$ and the circle with diameter the segment $PC$ meet on the diagonal $BD$. If $PA = 40\\sqrt{2}$ and $PC = 50$, find the value of $AB$.",
+          "problem_orig": "사다리꼴 $ABCD$에서 $\\overline{AC} = 70$, $\\overline{CD} = 9$이고 변 $AB$와 $CD$가 평행하다. 사다리꼴 $ABCD$의 외부에 있는 점 $P$에 대하여, 선분 $PA$가 지름인 원과 선분 $PC$가 지름인 원이 대각선 $BD$ 위에서 만난다. $\\overline{PA} = 40\\sqrt{2}$, $\\overline{PC} = 50$일 때, $\\overline{AB}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "There is a solid made by attaching two square pyramids to a cube, as below. When moving along the edges from the vertex $P$ of this solid to the vertex $Q$, no vertex that has already been passed is passed again. Find the number of all possible paths.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2019_g16_fig.png",
+          "problem_orig": "다음과 같이 정육면체에 두 개의 정사각뿔을 붙여서 만든 입체가 있다. 이 입체의 꼭짓점 $P$에서 꼭짓점 $Q$로 모서리를 따라 이동할 때, 한번 지나간 꼭짓점은 다시 지나가지 않는다. 가능한 모든 경로의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "Positive real numbers $a$, $b$, $c$, $d$ satisfy $a > b$ and $c > d$, and the following two equations.\n$$a^2 + b^2 - ab = c^2 + d^2 - cd = 1, \\qquad (ac - bd)^2 = a^2 - d^2$$\nFind the value of $540a^2$.",
+          "problem_orig": "양의 실수 $a$, $b$, $c$, $d$가 $a > b$와 $c > d$이고 다음 두 등식을 만족한다.\n$$a^2 + b^2 - ab = c^2 + d^2 - cd = 1, \\qquad (ac - bd)^2 = a^2 - d^2$$\n이때, $540a^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "Find the value of the prime $p$ for which there exist positive integers $a$, $b$ satisfying the following equation.\n$$5^6 p^2 (a + 5b + 1) = (5b + 1)^2 (a - 5b - 1)$$",
+          "problem_orig": "다음 방정식을 만족하는 양의 정수 $a$, $b$가 존재하도록 하는 소수 $p$의 값을 구하여라.\n$$5^6 p^2 (a + 5b + 1) = (5b + 1)^2 (a - 5b - 1)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "The circle $\\Omega$ with diameter the segment $AB$ of length $20$ and the circle $\\Gamma$ with centre $A$ and radius $8$ meet at the two points $C$, $D$. A point $X$ on the circle $\\Gamma$ lies inside the circle $\\Omega$, and the points $C$ and $X$ lie on opposite sides of the line $AB$. Let $P$ $(\\neq X)$ be the point where the line $BX$ meets the circle $\\Gamma$, and let $Q$ $(\\neq C)$ and $R$ $(\\neq D)$ be the points where the lines $CX$ and $DX$ meet the circle $\\Omega$ respectively. Let $S$ be the intersection of the line $CP$ with the circle $\\Omega$, and $T$ the intersection of the lines $SR$ and $CQ$. If $DP = DQ$, find the remainder when $25RT^2$ is divided by $1000$.",
+          "problem_orig": "길이가 $20$인 선분 $AB$가 지름인 원 $\\Omega$와 점 $A$를 중심으로 하고 반지름이 $8$인 원 $\\Gamma$가 두 점 $C$, $D$에서 만난다. 원 $\\Gamma$ 위의 점 $X$는 원 $\\Omega$의 내부에 있고, 점 $C$와 $X$는 직선 $AB$에 대하여 서로 반대편에 있다. 직선 $BX$가 원 $\\Gamma$와 만나는 점을 $P(\\neq X)$, 직선 $CX$, $DX$가 원 $\\Omega$와 만나는 점을 각각 $Q(\\neq C)$, $R(\\neq D)$이라 하자. 직선 $CP$와 원 $\\Omega$의 교점을 $S$라 하고 직선 $SR$과 $CQ$의 교점을 $T$라 하자. $\\overline{DP} = \\overline{DQ}$일 때, $25\\overline{RT}^2$을 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "Draw segments joining vertices in the interior of a given figure to divide the figure into several regions. Here distinct segments do not meet in the interior and may meet only at their endpoints. If every region obtained in this way is a triangle, the division is called a triangulation. The figure below is an example of a triangulation of the figure formed by joining two congruent regular hexagons. Find the number of triangulations of this figure.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2019_g20_fig.png",
+          "problem_orig": "주어진 도형의 내부에 꼭짓점을 잇는 선분을 그어 도형을 몇 개의 영역으로 분할한다. 이때, 서로 다른 선분은 내부에서 만나지 않고 끝점에서만 만날 수 있다. 이렇게 나누어진 각각의 영역이 모두 삼각형이 되면 삼각분할이라 한다. 다음 그림은 합동인 정육각형 두 개를 붙인 도형의 삼각분할의 예이다. 이 도형의 삼각분할의 개수를 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "In a triangle $ABC$, $AB = AC$ and $\\angle B = 40^\\circ$. Take the point $D$ on the side $BC$ so that $\\angle ADC = 120^\\circ$, and let $E$ be the intersection of the bisector of angle $C$ with the side $AB$. How many degrees is $\\angle DEC$?",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = \\overline{AC}$이고 $\\angle B = 40^\\circ$이다. 변 $BC$ 위의 점 $D$를 $\\angle ADC = 120^\\circ$가 되도록 잡고, 각 $C$의 이등분선과 변 $AB$의 교점을 $E$라 하자. $\\angle DEC$는 몇 도인가?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "A linear function $y = f(x)$ whose coefficients are all integers satisfies both of the following conditions.\n$$(f \\circ f)(0) = 4^2 - 1$$\n$$(\\overbrace{f \\circ f \\circ \\cdots \\circ f}^{2020 \\text{ times } f})(0) = 4^{2020} - 1$$\nFind the sum of all possible values of $|f(100)|$.",
+          "problem_orig": "계수가 모두 정수인 일차함수 $y = f(x)$가 다음 두 조건을 모두 만족한다.\n$$(f \\circ f)(0) = 4^2 - 1$$\n$$(\\overbrace{f \\circ f \\circ \\cdots \\circ f}^{f\\text{가 } 2020\\text{개}})(0) = 4^{2020} - 1$$\n이때 $|f(100)|$의 값으로 가능한 것 모두의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "Let $M$ be the midpoint of the side $BC$ of a triangle $ABC$, and $D$ the intersection of the perpendicular bisector of the side $BC$ with the side $AC$. If $BD : DA = 1 : 3$, $MD = \\sqrt{2}$ and $AB = 2\\sqrt{11}$, find the value of $BC^2$.",
+          "problem_orig": "삼각형 $ABC$의 변 $BC$의 중점을 $M$이라 하고, 변 $BC$의 수직이등분선과 변 $AC$의 교점을 $D$라 하자. $\\overline{BD} : \\overline{DA} = 1 : 3$, $\\overline{MD} = \\sqrt{2}$, $\\overline{AB} = 2\\sqrt{11}$일 때, $\\overline{BC}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "For a positive integer $n$, let $a_n$ be the integer closest to $\\sqrt{n}$. Find the positive integer $m$ satisfying the following equation.\n$$\\sum_{k=1}^{m(m+1)} a_k = 101m(m+1)$$",
+          "problem_orig": "양의 정수 $n$에 대하여 $\\sqrt{n}$에 가장 가까운 정수를 $a_n$이라 하자. 다음 등식을 만족하는 양의 정수 $m$을 구하여라.\n$$\\sum_{k=1}^{m(m+1)} a_k = 101m(m+1)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "Find the number of ordered quadruples $(A, B, C, D)$ of sets satisfying both of the following conditions.\n\n(1) $A \\subset B \\subset C \\subset D \\subset \\{1, 2, 3, 4\\}$\n\n(2) $B \\neq C$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 집합의 순서쌍 $(A, B, C, D)$의 개수를 구하여라.\n\n(1) $A \\subset B \\subset C \\subset D \\subset \\{1, 2, 3, 4\\}$\n\n(2) $B \\neq C$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "A polynomial $P(x)$ of degree $9$ with real coefficients satisfies $P(k) = \\frac{(k+1)^2}{k}$ for $k = 1, 2, \\ldots, 10$. Find the value of $12P(12)$.",
+          "problem_orig": "실수 계수 $9$차다항식 $P(x)$가 $k = 1, 2, \\ldots, 10$에 대하여 $P(k) = \\frac{(k+1)^2}{k}$를 만족할 때, $12P(12)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "In a rectangle $ABCD$, $AB = 5$ and $BC = 3$. Take the point $E$ on the side $CD$ so that $BA = BE$. If the radius of the incircle of triangle $ABE$ is $a + b\\sqrt{10}$, find the value of $60(a + b)$. (Here $a$, $b$ are rational numbers.)",
+          "problem_orig": "직사각형 $ABCD$에서 $\\overline{AB} = 5$, $\\overline{BC} = 3$이다. 변 $CD$ 위의 점 $E$를 $\\overline{BA} = \\overline{BE}$가 되도록 잡자. 삼각형 $ABE$의 내접원의 반지름을 $a + b\\sqrt{10}$이라 할 때, $60(a + b)$의 값을 구하여라. (단, $a$, $b$는 유리수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "For the ordered pairs $(m, n)$ of positive integers satisfying the following, find the smallest value of $mn$.\n\n$\\frac{mn}{m + n}$ and $\\frac{m^2 + n^2 + mn}{m + n}$ are distinct odd primes.",
+          "problem_orig": "다음을 만족하는 양의 정수의 순서쌍 $(m, n)$에 대하여 $mn$의 최솟값을 구하여라.\n\n$\\frac{mn}{m + n}$과 $\\frac{m^2 + n^2 + mn}{m + n}$은 서로 다른 홀수인 소수",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "When the one-digit numbers $2, 3, 4, 5, 6, 7, 8$ are arranged in a circle, how many arrangements are there in which the product of every two adjacent numbers is even?",
+          "problem_orig": "한자리 수 $2, 3, 4, 5, 6, 7, 8$을 원형으로 배열할 때, 이웃한 두 수의 곱이 모두 짝수가 되도록 배열하는 경우의 수는?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "Find the number of ordered triples $(a, b, c)$ of positive integers not exceeding $9$ for which the equation $\\frac{1}{x - a} + \\frac{1}{x - b} + \\frac{1}{x - c} = 0$ has $2$ distinct solutions.",
+          "problem_orig": "방정식 $\\frac{1}{x - a} + \\frac{1}{x - b} + \\frac{1}{x - c} = 0$이 서로 다른 $2$개의 해를 갖도록 하는 $9$ 이하의 양의 정수의 순서쌍 $(a, b, c)$의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "Take the point $E$ on the diagonal $BD$ of a square $ABCD$ with side length $5$ so that $BE = AB$. If $P$ is the intersection of the line through $B$ perpendicular to the line $AE$ with the line $CE$, find the value of $PA^2 + PB^2$.",
+          "problem_orig": "한 변의 길이가 $5$인 정사각형 $ABCD$의 대각선 $BD$ 위에 $\\overline{BE} = \\overline{AB}$가 되도록 점 $E$를 잡자. 직선 $AE$에 수직이고 점 $B$를 지나는 직선과 직선 $CE$의 교점을 $P$라 할 때, $\\overline{PA}^2 + \\overline{PB}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "For the positive integers $x = 10^{10}$ and $y = 10^6$, find the remainder when the greatest common divisor of $2^x - 2$ and $2^y - 2$ is divided by $1000$.",
+          "problem_orig": "양의 정수 $x = 10^{10}$과 $y = 10^6$에 대하여, $2^x - 2$와 $2^y - 2$의 최대공약수를 $1000$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "For the set $X = \\{1, 2, 3, 4, 5, 6\\}$, find the number of functions $f : X \\to X$ satisfying both of the following conditions.\n\n(1) For every $n \\in X$, $f(1) + f(2) + \\cdots + f(n)$ is even.\n\n(2) Neither $f(1) + f(2) + f(3)$ nor $f(1) + f(2) + \\cdots + f(6)$ is a multiple of $3$.",
+          "problem_orig": "집합 $X = \\{1, 2, 3, 4, 5, 6\\}$에 대하여 다음 두 조건을 모두 만족하는 함수 $f : X \\to X$의 개수를 구하여라.\n\n(1) 모든 $n \\in X$에 대하여, $f(1) + f(2) + \\cdots + f(n)$은 짝수이다.\n\n(2) $f(1) + f(2) + f(3)$과 $f(1) + f(2) + \\cdots + f(6)$은 모두 $3$의 배수가 아니다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "Find the number of ordered pairs $(x, y)$ of integers satisfying both of the following conditions.\n$$y\\left(x^2 + 253\\right) - x\\left(y^2 + 253\\right) = 253, \\qquad x > y$$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 정수의 순서쌍 $(x, y)$의 개수를 구하여라.\n$$y\\left(x^2 + 253\\right) - x\\left(y^2 + 253\\right) = 253, \\qquad x > y$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "Let $H$ be the foot of the perpendicular from the point $A$ of a triangle $ABC$ to $BC$. The line through a point $X$ on the segment $AH$ parallel to $BC$ meets $AB$, $AC$ at $D$, $E$ respectively. The segment $DC$ meets $AH$, $EH$ at $Y$, $Z$ respectively. If $AD = 10$, $DX = 6$, $BH = 9$, $XE = 3$ and $S$ is the area of the quadrilateral $XYZE$, find the value of $70S$.",
+          "problem_orig": "삼각형 $ABC$의 점 $A$에서 $BC$에 내린 수선의 발을 $H$라 하자. 선분 $AH$ 위의 점 $X$를 지나고 $BC$에 평행한 직선이 $AB$, $AC$와 만나는 점을 각각 $D$, $E$라 하자. 선분 $DC$가 $AH$, $EH$와 만나는 점을 각각 $Y$, $Z$라 하자. $\\overline{AD} = 10$, $\\overline{DX} = 6$, $\\overline{BH} = 9$, $\\overline{XE} = 3$이고 사각형 $XYZE$의 넓이를 $S$라 할 때 $70S$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "For positive integers $x$, $y$, find the largest integer value that\n$$\\sqrt{409^2 - x^2} + \\sqrt{y^2 - 15^2}$$\ncan take.",
+          "problem_orig": "양의 정수 $x$, $y$에 대하여\n$$\\sqrt{409^2 - x^2} + \\sqrt{y^2 - 15^2}$$\n이 가질 수 있는 정수 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "There are $6$ distinct spoons. The top ends of the spoons were paired into $3$ pairs and connected with red strings, and the bottom ends were paired into $3$ pairs and connected with blue strings; the result was a single connected loop in which spoons and strings alternate. How many ways are there to connect with strings so that this happens?",
+          "problem_orig": "서로 다른 숟가락 $6$개가 있다. 숟가락의 윗부분 $3$쌍을 짝지어 빨간색 끈으로 연결하고, 아랫부분 $3$쌍을 짝지어 파란색 끈으로 연결했더니 숟가락과 끈이 교대로 있는 하나의 연결된 모양이 되었다고 한다. 이렇게 되도록 끈으로 연결하는 경우의 수는?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "A function $f : \\mathbb{N} \\to \\mathbb{N}$ defined on the set $\\mathbb{N}$ of positive integers satisfies $f(f(n)) = n + 2$ for every positive integer $n$. Find the sum of all positive integers that can be the value of $f(201)$.",
+          "problem_orig": "양의 정수의 집합 $\\mathbb{N}$에서 정의된 함수 $f : \\mathbb{N} \\to \\mathbb{N}$이 모든 양의 정수 $n$에 대하여 $f(f(n)) = n + 2$를 만족한다. $f(201)$의 값이 될 수 있는 모든 양의 정수의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "In an isosceles triangle $ABC$, $AB = AC = 20$ and $BC = 30$. Take the point $D$ on the extension of the segment $AC$ beyond $A$ so that $AD = 60$, and the point $E$ on the extension of the segment $AB$ beyond $B$ so that $BE = 80$. Let $K$ be the point where the line $FG$ joining the midpoint $F$ of the segment $AE$ and the centroid $G$ of triangle $CDE$ meets the bisector of $\\angle DAE$. Find the value of $6GK$.",
+          "problem_orig": "이등변삼각형 $ABC$에서 $\\overline{AB} = \\overline{AC} = 20$, $\\overline{BC} = 30$이다. 선분 $AC$의 $A$쪽 연장선 위에 $\\overline{AD} = 60$이 되도록 점 $D$를 잡고, 선분 $AB$의 $B$쪽 연장선 위에 $\\overline{BE} = 80$이 되도록 점 $E$를 잡자. 선분 $AE$의 중점 $F$와 삼각형 $CDE$의 무게중심 $G$를 연결한 직선 $FG$와 $\\angle DAE$의 이등분선이 만나는 점을 $K$라 할 때, $6\\overline{GK}$의 값 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "Find the sum of all positive integers $n$ satisfying both of the following conditions.\n\n(1) $n = 2^k(p_1 p_2 \\cdots p_m)$ (where the $p_i$ are distinct odd primes, $k \\in \\{0, 1, 2, 3\\}$, $m \\ge 1$)\n\n(2) The sum of all divisors of $n$ is a multiple of $n$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $n$을 모두 더한 값을 구하여라.\n\n(1) $n = 2^k(p_1 p_2 \\cdots p_m)$ (단, $p_i$는 서로 다른 홀수인 소수, $k \\in \\{0, 1, 2, 3\\}$, $m \\ge 1$)\n\n(2) $n$의 모든 약수의 합이 $n$의 배수",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 21,
+          "problem": "For the set $X = \\{1, 2, 3\\}$, find the number of ordered pairs $(f, g)$ of functions satisfying both of the following conditions.\n\n(1) $f$ and $g$ are functions from $X$ to $X$.\n\n(2) $\\{(f \\circ g)(x) \\mid x \\in X\\} = \\{1, 2\\}$",
+          "problem_orig": "집합 $X = \\{1, 2, 3\\}$에 대하여 다음 두 조건을 모두 만족하는 함수의 순서쌍 $(f, g)$의 개수를 구하여라.\n\n(1) $f$와 $g$는 $X$에서 $X$로 가는 함수이다.\n\n(2) $\\{(f \\circ g)(x) \\mid x \\in X\\} = \\{1, 2\\}$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 22,
+          "problem": "When positive real numbers $a$, $b$, $c$, $d$ satisfy both $a \\ge b \\ge c$ and $4(a + b) \\le 9(c + d)$, find the minimum value of $36\\left(\\frac{c}{a} + \\frac{d}{b}\\right)$.",
+          "problem_orig": "양의 실수 $a$, $b$, $c$, $d$가 $a \\ge b \\ge c$와 $4(a + b) \\le 9(c + d)$를 모두 만족할 때, $36\\left(\\frac{c}{a} + \\frac{d}{b}\\right)$의 최솟값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 23,
+          "problem": "In a triangle $ABC$, $\\angle B = 45^\\circ$, $\\angle C = 60^\\circ$, $BC = 20$. Let $D$ $(\\neq B)$ and $E$ $(\\neq C)$ be the points where the circle with diameter the side $BC$ meets the sides $AB$ and $AC$ respectively, and let $P$, $Q$, $R$, $S$ be the midpoints of the segments $BD$, $BE$, $CE$, $CD$ respectively. If the area of the quadrilateral $PQRS$ is $a + b\\sqrt{3}$, find the value of $a + b$. (Here $a$, $b$ are rational numbers.)",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle B = 45^\\circ$, $\\angle C = 60^\\circ$, $\\overline{BC} = 20$이다. 변 $BC$를 지름으로 하는 원이 변 $AB$, $AC$와 만나는 점을 각각 $D(\\neq B)$, $E(\\neq C)$라 하고, 선분 $BD$, $BE$, $CE$, $CD$의 중점을 각각 $P$, $Q$, $R$, $S$라 하자. 사각형 $PQRS$의 넓이를 $a + b\\sqrt{3}$이라 할 때, $a + b$의 값을 구하여라. (단, $a$, $b$는 유리수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 24,
+          "problem": "Find the number of ordered pairs $(x, y)$ of integers satisfying both of the following conditions.\n\n(1) $1 \\le x \\le 1000$, $1 \\le y \\le 1000$\n\n(2) $\\frac{101x^2 - 5y^2}{2020}$ is an integer.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 정수의 순서쌍 $(x, y)$의 개수를 구하여라.\n\n(1) $1 \\le x \\le 1000$, $1 \\le y \\le 1000$\n\n(2) $\\frac{101x^2 - 5y^2}{2020}$은 정수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 25,
+          "problem": "As in the figure, there is a figure consisting of $81$ unit squares. When each of the $100$ points of this figure is coloured with one of the colours red, orange, yellow and blue, find the remainder when the number of colourings satisfying the following condition is divided by $1000$.\n\n(Condition) The four vertices of each unit square are either all of different colours or all of the same colour.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2020_e25_fig.png",
+          "problem_orig": "그림과 같이 $81$개의 단위 정사각형으로 이루어진 도형이 있다. 이 도형 위의 $100$개의 점 각각에 빨강, 주황, 노랑, 파랑 중 하나의 색을 칠할 때, 다음 조건을 만족하는 경우의 수를 $1000$으로 나눈 나머지를 구하여라.\n\n(조건) 각각의 단위 정사각형의 네 꼭지점은 모두 다른색이거나, 모두 같은색이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "In a triangle $ABC$, $AB = AC$ and $\\angle B = 40^\\circ$. Take the point $D$ on the side $BC$ so that $\\angle ADC = 120^\\circ$, and let $E$ be the intersection of the bisector of angle $C$ with the side $AB$. How many degrees is $\\angle DEC$?",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} = \\overline{AC}$이고 $\\angle B = 40^\\circ$이다. 변 $BC$ 위의 점 $D$를 $\\angle ADC = 120^\\circ$가 되도록 잡고, 각 $C$의 이등분선과 변 $AB$의 교점을 $E$라 하자. $\\angle DEC$는 몇 도인가?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "A polynomial $P(x)$ of degree $9$ with real coefficients satisfies $P(k) = \\frac{(k+1)^2}{k}$ for $k = 1, 2, \\ldots, 10$. Find the value of $12P(12)$.",
+          "problem_orig": "실수 계수 $9$차다항식 $P(x)$가 $k = 1, 2, \\ldots, 10$에 대하여 $P(k) = \\frac{(k+1)^2}{k}$를 만족할 때, $12P(12)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "In a rectangle $ABCD$, $AB = 20$ and $BC = 10$. The point $P$ on the side $AB$ satisfies $PD = 20$. When the rectangle $ABCD$ was folded along the segment $CP$, the point $B$ coincided with a point $Q$ inside this rectangle. Find the value of $DQ^2$.",
+          "problem_orig": "직사각형 $ABCD$에서 $\\overline{AB} = 20$, $\\overline{BC} = 10$이다. 점 $P$는 변 $AB$ 위의 점으로 $\\overline{PD} = 20$인 점이다. 선분 $CP$를 따라 사각형 $ABCD$를 접었더니 점 $B$와 이 사각형의 내부의 점 $Q$가 일치했다. 이때 $\\overline{DQ}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "For a positive integer $n$, let $a_n$ be the integer closest to $\\sqrt{n}$. Find the positive integer $m$ satisfying the following equation.\n$$\\sum_{k=1}^{m(m+1)} a_k = 101m(m+1)$$",
+          "problem_orig": "양의 정수 $n$에 대하여 $\\sqrt{n}$에 가장 가까운 정수를 $a_n$이라 하자. 다음 등식을 만족하는 양의 정수 $m$을 구하여라.\n$$\\sum_{k=1}^{m(m+1)} a_k = 101m(m+1)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "When the one-digit numbers $2, 3, 4, 5, 6, 7, 8$ are arranged in a circle, how many arrangements are there in which the product of every two adjacent numbers is even?",
+          "problem_orig": "한자리 수 $2, 3, 4, 5, 6, 7, 8$을 원형으로 배열할 때, 이웃한 두 수의 곱이 모두 짝수가 되도록 배열하는 경우의 수는?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "A sequence $\\{a_n\\}$ satisfies the following.\n$$a_1 = 1, \\quad a_2 = 0, \\quad a_{n+2} = 2(a_{n+1} - a_n) \\quad (n = 1, 2, 3, \\ldots)$$\nFind the remainder when $a_{96}$ is divided by $43$.",
+          "problem_orig": "수열 $\\{a_n\\}$이 다음을 만족한다.\n$$a_1 = 1, \\quad a_2 = 0, \\quad a_{n+2} = 2(a_{n+1} - a_n) \\quad (n = 1, 2, 3, \\ldots)$$\n$a_{96}$을 $43$으로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "In a rectangle $ABCD$, $AB = 5$ and $BC = 3$. Take the point $E$ on the side $CD$ so that $BA = BE$. If the radius of the incircle of triangle $ABE$ is $a + b\\sqrt{10}$, find the value of $60(a + b)$. (Here $a$, $b$ are rational numbers.)",
+          "problem_orig": "직사각형 $ABCD$에서 $\\overline{AB} = 5$, $\\overline{BC} = 3$이다. 변 $CD$ 위의 점 $E$를 $\\overline{BA} = \\overline{BE}$가 되도록 잡자. 삼각형 $ABE$의 내접원의 반지름을 $a + b\\sqrt{10}$이라 할 때, $60(a + b)$의 값을 구하여라. (단, $a$, $b$는 유리수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "For the ordered pairs $(m, n)$ of positive integers satisfying the following, find the smallest value of $mn$.\n\n$\\frac{mn}{m + n}$ and $\\frac{m^2 + n^2 + mn}{m + n}$ are distinct odd primes.",
+          "problem_orig": "다음을 만족하는 양의 정수의 순서쌍 $(m, n)$에 대하여 $mn$의 최솟값을 구하여라.\n\n$\\frac{mn}{m + n}$과 $\\frac{m^2 + n^2 + mn}{m + n}$은 서로 다른 홀수인 소수",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "In the figure below, Gap starts from $A$ and, moving $1$ cell at a time to the right or upward, arrives at $B$; Eul starts from $B$ and, moving $1$ cell at a time to the left or downward, arrives at $A$. Gap and Eul each move at constant speed, and Gap's speed is twice Eul's. Among the $400$ cases in total in which Gap and Eul start at the same time and arrive, find the number of cases in which they move without meeting each other.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2020_g9_fig.png",
+          "problem_orig": "다음 그림에서 갑은 $A$에서 출발해서 오른쪽 혹은 위쪽으로 $1$칸씩 이동하면서 $B$에 도착하고, 을은 $B$에서 출발해서 왼쪽 혹은 아래쪽으로 $1$칸씩 이동하면서 $A$에 도착한다. 갑과 을은 각각 등속력으로 움직이고, 갑의 속력은 을의 $2$배이다. 갑과 을이 동시에 출발해서 도착하는 총 $400$가지의 경우 중, 서로 만나지 않고 이동하는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "For points $P = (p_1, p_2)$, $Q = (q_1, q_2)$, $R = (r_1, r_2)$ belonging to the set $A = \\{(x, y) \\mid (x - 1)(x - 9) \\le y \\le 2x,\\ x, y \\text{ real}\\}$, let $M$ and $m$ be the maximum and minimum values of $\\frac{p_2 + q_2 + r_2}{p_1 + q_1 + r_1}$. Find the value of $M^2 + m^2$.",
+          "problem_orig": "집합 $A = \\{(x, y) \\mid (x - 1)(x - 9) \\le y \\le 2x,\\ x, y\\text{는 실수}\\}$에 속하는 점 $P = (p_1, p_2)$, $Q = (q_1, q_2)$, $R = (r_1, r_2)$에 대하여 $\\frac{p_2 + q_2 + r_2}{p_1 + q_1 + r_1}$의 최댓값을 $M$, 최솟값을 $m$이라 할 때, $M^2 + m^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "The diagonals $AC$ and $BD$ of a quadrilateral $ABCD$ inscribed in a circle meet at the point $E$. If $\\angle ABD = 5^\\circ$, $\\angle AED = \\angle BCD = 50^\\circ$ and $BD = 30$, find the area of the quadrilateral $ABCD$.",
+          "problem_orig": "원에 내접하는 사각형 $ABCD$의 대각선 $AC$와 $BD$가 점 $E$에서 만난다. $\\angle ABD = 5^\\circ$, $\\angle AED = \\angle BCD = 50^\\circ$, $\\overline{BD} = 30$일 때, 사각형 $ABCD$의 넓이를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "For positive integers $x$, $y$ such that the value of the expression $(2x - y)^3 + (2x + 3y)^3$ is a multiple of the prime $941$, find the minimum value of $x + y$.",
+          "problem_orig": "식 $(2x - y)^3 + (2x + 3y)^3$의 값이 소수 $941$의 배수가 되도록 하는 양의 정수 $x$, $y$에 대하여 $x + y$의 최솟값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "For the set $X = \\{1, 2, 3, 4, 5, 6\\}$, find the remainder when the number of functions $f : X \\to X$ satisfying both of the following conditions is divided by $1000$.\n\n(1) For every $n \\in \\{2, 4, 6\\}$, $f(1) + f(2) + \\cdots + f(n)$ is even.\n\n(2) Neither $f(1) + f(2) + f(3)$ nor $f(1) + f(2) + \\cdots + f(6)$ is a multiple of $3$.",
+          "problem_orig": "집합 $X = \\{1, 2, 3, 4, 5, 6\\}$에 대하여 다음 두 조건을 모두 만족하는 함수 $f : X \\to X$의 개수를 $1000$으로 나눈 나머지를 구하여라.\n\n(1) 모든 $n \\in \\{2, 4, 6\\}$에 대하여 $f(1) + f(2) + \\cdots + f(n)$은 짝수이다.\n\n(2) $f(1) + f(2) + f(3)$과 $f(1) + f(2) + \\cdots + f(6)$은 모두 $3$의 배수가 아니다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "Non-zero real numbers $x$, $y$, $z$ satisfy both of the following conditions.\n$$x^2 + 3y^2 + 3xy + yz + 2zx = 0$$\n$$2x^2 + 3xy + 2yz + zx = 0$$\nLet $M$ be the largest and $m$ the smallest value of the expression $\\frac{x^3 + y^3 + z^3}{xyz}$. Find the value of $M - m$.",
+          "problem_orig": "$0$이 아닌 실수 $x$, $y$, $z$가 다음 두 조건을 모두 만족한다.\n$$x^2 + 3y^2 + 3xy + yz + 2zx = 0$$\n$$2x^2 + 3xy + 2yz + zx = 0$$\n식 $\\frac{x^3 + y^3 + z^3}{xyz}$의 값 중 가장 큰 것을 $M$, 가장 작은 것을 $m$이라 할 때, $M - m$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "Let $M$ be the midpoint of the side $BC$ of a triangle $ABC$. Let $D$ $(\\neq A)$ be the point where the circle with centre $M$ passing through the point $A$ meets the side $AC$. If $AM = AD = 5$ and $CD = 3$, find the value of $AB^2$.",
+          "problem_orig": "삼각형 $ABC$의 변 $BC$의 중점을 $M$이라 하자. $M$을 중심으로 하고 점 $A$를 지나는 원이 변 $AC$와 만나는 점을 $D(\\neq A)$라 하자. $\\overline{AM} = \\overline{AD} = 5$, $\\overline{CD} = 3$일 때, $\\overline{AB}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "Find the number of ordered pairs $(a, b)$ of integers satisfying both of the following conditions.\n\n(1) $a \\in \\{1, 2, \\ldots, 12\\}$, $b \\in \\{1, 2, \\ldots, 12\\}$\n\n(2) There exists a positive integer $n$ such that $an + b$ and $12n + 6$ are not coprime.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 정수의 순서쌍 $(a, b)$의 개수를 구하여라.\n\n(1) $a \\in \\{1, 2, \\ldots, 12\\}$, $b \\in \\{1, 2, \\ldots, 12\\}$\n\n(2) $an + b$와 $12n + 6$이 서로소가 아닌 양의 정수 $n$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "For the set $X = \\{1, 2, 3, 4, 5\\}$, find the number of bijections $f : X \\to X$ satisfying the following condition.\n\n(Condition) The number of $x$ with $f(x) > x$ is greater than the number of $x$ with $f(x) < x$.",
+          "problem_orig": "집합 $X = \\{1, 2, 3, 4, 5\\}$에 대하여 다음 조건을 만족하는 일대일대응 $f : X \\to X$의 개수를 구하여라.\n\n(조건) $f(x) > x$인 $x$의 개수가 $f(x) < x$인 $x$의 개수보다 크다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "A function $f : \\mathbb{N} \\to \\mathbb{N}$ defined on the set $\\mathbb{N}$ of positive integers satisfies $f(f(n)) = n + 2$ for every positive integer $n$. Find the sum of all positive integers that can be the value of $f(201)$.",
+          "problem_orig": "양의 정수의 집합 $\\mathbb{N}$에서 정의된 함수 $f : \\mathbb{N} \\to \\mathbb{N}$이 모든 양의 정수 $n$에 대하여 $f(f(n)) = n + 2$를 만족한다. $f(201)$의 값이 될 수 있는 모든 양의 정수의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "The circumcentre $O$ of a triangle $ABC$ and the point $A$ are symmetric with respect to the line $BC$. There is a point $D$ on the side $BC$ with $BD = 2$, $CD = 4$. For the point $X$ on the extension of the segment $DO$ with $OX = 4$ ($O$ lies between $X$ and $D$), let $Y$ $(\\neq D)$ be the point where the circumcircle of triangle $ADX$ meets the line $BC$. Find the value of $AY^2$.",
+          "problem_orig": "삼각형 $ABC$의 외심 $O$와 점 $A$는 직선 $BC$에 대하여 대칭이다. 변 $BC$ 위에 $\\overline{BD} = 2$, $\\overline{CD} = 4$인 점 $D$가 있다. 선분 $DO$의 연장선 위의 점으로 $\\overline{OX} = 4$인 점 $X$에 대하여 ($O$는 $X$와 $D$ 사이에 있음) 삼각형 $ADX$의 외접원이 직선 $BC$와 만나는 점을 $Y(\\neq D)$라 하자. $\\overline{AY}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "The positive real number $x$ is a real number for which $x + \\frac{1}{x}$ is an integer. When $a_n = x^n + x^{-n}$ is defined for every positive integer $n$,\n$$a_{13} + a_9 = 3 \\times 7 \\times 43 \\times 307, \\qquad a_{13} - a_9 = 3 \\times 5 \\times 89 \\times 199.$$\nFind $a_3$.",
+          "problem_orig": "양의 실수 $x$는 $x + \\frac{1}{x}$이 정수가 되는 실수이다. 모든 양의 정수 $n$에 대하여 $a_n = x^n + x^{-n}$으로 정의할 때,\n$$a_{13} + a_9 = 3 \\times 7 \\times 43 \\times 307, \\qquad a_{13} - a_9 = 3 \\times 5 \\times 89 \\times 199$$\n이다. $a_3$을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 21,
+          "problem": "Connecting the $5$ points $(1, 0)$, $(2, 0)$, $(3, 0)$, $(4, 0)$, $(5, 0)$ on the $x$-axis with the $5$ points $(0, 1)$, $(0, 2)$, $(0, 3)$, $(0, 4)$, $(0, 5)$ on the $y$-axis by $5$ broken lines shaped like the letter ㄱ is called a matching. The figure below is an example of such a matching; in this case the number of points where the broken lines meet each other is $4$. Among all $120$ matchings, find the number of those in which the number of points where the broken lines meet each other is $3$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2020_g21_fig.png",
+          "problem_orig": "$x$축 위의 $5$개의 점 $(1, 0)$, $(2, 0)$, $(3, 0)$, $(4, 0)$, $(5, 0)$과 $y$축 위의 $5$개의 점 $(0, 1)$, $(0, 2)$, $(0, 3)$, $(0, 4)$, $(0, 5)$를 ㄱ자 모양의 꺾은선 $5$개로 연결한 것을 맞대응이라고 하자. 다음 그림은 이러한 맞대응의 예이고, 이 경우 꺾은선끼리 만나는 점의 개수는 $4$이다. 이때 총 $120$가지의 맞대응 중, 꺾은선끼리 만나는 점의 개수가 $3$인 것의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 22,
+          "problem": "When positive real numbers $a$, $b$, $c$, $d$ satisfy both $a \\ge b \\ge c$ and $4(a + b) \\le 9(c + d)$, find the minimum value of $36\\left(\\frac{c}{a} + \\frac{d}{b}\\right)$.",
+          "problem_orig": "양의 실수 $a$, $b$, $c$, $d$가 $a \\ge b \\ge c$와 $4(a + b) \\le 9(c + d)$를 모두 만족할 때, $36\\left(\\frac{c}{a} + \\frac{d}{b}\\right)$의 최솟값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 23,
+          "problem": "In a triangle $ABC$, $\\angle A = 90^\\circ$. Let $D$ be the point where the circle $\\Omega$ with diameter the side $AB$ meets the side $BC$, and $E$ the intersection of the tangent to $\\Omega$ at $D$ with the side $AC$. If $CD = 4$, $DE = 3$ and $k$ is the area of triangle $ABC$, find the value of $k^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle A = 90^\\circ$이다. 변 $AB$를 지름으로 하는 원 $\\Omega$가 변 $BC$와 만나는 점을 $D$라 하고, $D$에서의 $\\Omega$의 접선과 변 $AC$의 교점을 $E$라 하자. $\\overline{CD} = 4$, $\\overline{DE} = 3$일 때, 삼각형 $ABC$의 넓이를 $k$라 하자. $k^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 24,
+          "problem": "Find the smallest positive integer $m$ satisfying the following equation. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n$$\\sum_{k=0}^{m} \\left(\\left[\\frac{m + k + 2}{2k + 1}\\right] - \\left[\\frac{m + k + 1}{2k + 1}\\right]\\right) = 9$$",
+          "problem_orig": "다음 등식을 만족하는 양의 정수 $m$ 중 가장 작은 것을 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)\n$$\\sum_{k=0}^{m} \\left(\\left[\\frac{m + k + 2}{2k + 1}\\right] - \\left[\\frac{m + k + 1}{2k + 1}\\right]\\right) = 9$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 25,
+          "problem": "When, in an ordered triple $(a, b, c)$ of positive integers $a$, $b$, $c$, one of the numbers equals the product of the other two, the triple is called a product triple. For example, $(1, 1, 1)$, $(6, 2, 3)$, $(2, 8, 4)$, $(5, 5, 25)$ are all product triples. For the set $X = \\{1, 2, \\ldots, 14\\}$, find the number of bijections $f : X \\to X$ satisfying the following condition.\n\n(Condition) For $a, b, c \\in X$, if $(a, b, c)$ is a product triple, then $(f(a), f(b), f(c))$ is also a product triple.",
+          "problem_orig": "양의 정수 $a$, $b$, $c$의 순서쌍 $(a, b, c)$에서 하나의 수가 다른 두 수의 곱으로 표현될 때, 이를 곱순서쌍이라고 하자. 예를 들어, $(1, 1, 1)$, $(6, 2, 3)$, $(2, 8, 4)$, $(5, 5, 25)$는 모두 곱순서쌍이다. 집합 $X = \\{1, 2, \\ldots, 14\\}$에 대하여 다음 조건을 만족하는 일대일대응 $f : X \\to X$의 개수를 구하여라.\n\n(조건) $a, b, c \\in X$에 대하여, $(a, b, c)$가 곱순서쌍이면 $(f(a), f(b), f(c))$도 곱순서쌍이다.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "Let $a$, $b$, $c$ be the three distinct real roots of the equation $x^3 - 8x^2 + 16x - 6 = 0$. Find the value of\n$$6\\left(\\frac{b^2 + c^2}{a} + \\frac{c^2 + a^2}{b} + \\frac{a^2 + b^2}{c}\\right).$$",
+          "problem_orig": "방정식 $x^3 - 8x^2 + 16x - 6 = 0$의 서로 다른 세 실근을 $a$, $b$, $c$라 할 때,\n$$6\\left(\\frac{b^2 + c^2}{a} + \\frac{c^2 + a^2}{b} + \\frac{a^2 + b^2}{c}\\right)$$\n의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "A monic quadratic polynomial $p(x)$ satisfies $p(1) = 1$. Find the sum of all possible values of the following expression.\n$$\\sum_{n=1}^{101} \\left((-1)^{\\left[\\frac{n+1}{2}\\right] + 1}\\right) p(n)$$\n(Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "최고차항의 계수가 $1$인 이차다항식 $p(x)$가 $p(1) = 1$을 만족한다. 다음 식이 가질 수 있는 모든 값들의 합을 구하여라.\n$$\\sum_{n=1}^{101} \\left((-1)^{\\left[\\frac{n+1}{2}\\right] + 1}\\right) p(n)$$\n(단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "For the function $f(x) = x^2 + x - q$ $(q > 1)$, let $m$ be the smallest and $M$ the largest value of $a$ for which the inequality\n$$a < f(a) < f(f(a))$$\ndoes not hold. If $M - m = 11$, find the value of $q$.",
+          "problem_orig": "함수 $f(x) = x^2 + x - q$ $(q > 1)$에 대하여 부등식\n$$a < f(a) < f(f(a))$$\n가 성립하지 않는 $a$의 값 중 가장 작은 것을 $m$, 가장 큰 것을 $M$이라 하자. $M - m = 11$일 때, $q$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "When the origin $O$ of the coordinate plane and three distinct points $A$, $B$, $C$ on the parabola $y = x^2$ satisfy all four of the following conditions, find the area of the quadrilateral $OABC$.\n\n(i) The $x$-coordinate of the point $A$ is less than $0$.\n\n(ii) $\\angle OAB = 90^\\circ$\n\n(iii) The line $AC$ is parallel to the $x$-axis.\n\n(iv) The $x$-coordinate of the midpoint of the segment $OB$ equals the $x$-coordinate of the point $C$.",
+          "problem_orig": "좌표평면의 원점 $O$와 포물선 $y = x^2$ 위의 서로 다른 세 점 $A$, $B$, $C$가 다음 네 조건을 모두 만족할 때, 사각형 $OABC$의 넓이를 구하여라.\n\n(i) 점 $A$의 $x$좌표는 $0$보다 작다.\n\n(ii) $\\angle OAB = 90^\\circ$\n\n(iii) 직선 $AC$는 $x$축과 평행하다.\n\n(iv) 선분 $OB$의 중점의 $x$좌표와 점 $C$의 $x$좌표는 같다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "In a triangle $ABC$, $\\angle BAC = 60^\\circ$. The point $P$ lies on the side $BC$, and the circumcircle $O_1$ of triangle $ABP$ and the circumcircle $O_2$ of triangle $ACP$ have radii $48$ and $32$ respectively. If $\\sin\\angle ACB = \\alpha$, find the value of $560\\alpha^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle BAC = 60^\\circ$이다. 점 $P$는 변 $BC$ 위의 점으로 삼각형 $ABP$의 외접원 $O_1$과 삼각형 $ACP$의 외접원 $O_2$의 반지름이 각각 $48$과 $32$이다. $\\sin\\angle ACB = \\alpha$라 할 때, $560\\alpha^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "A function $f(x)$ satisfies, for all real numbers $x$ other than $0$ and $1$, the equation\n$$2(x - 1)^4 f\\left(\\frac{1}{1 - x}\\right) + 2x^4 f\\left(1 - \\frac{1}{x}\\right) = 5 + 3f(x).$$\nFind $f(2)$.",
+          "problem_orig": "함수 $f(x)$가 $0$과 $1$을 제외한 모든 실수 $x$에 대하여 등식\n$$2(x - 1)^4 f\\left(\\frac{1}{1 - x}\\right) + 2x^4 f\\left(1 - \\frac{1}{x}\\right) = 5 + 3f(x)$$\n를 만족한다. $f(2)$를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "For a positive integer $m$, let $v(m)$ be the largest integer $k$ such that $3^k$ is a divisor of $m$. Find the number of ordered pairs $(a, b)$ of positive integers satisfying both of the following conditions.\n\n(i) $1 \\le a, b \\le 100$\n\n(ii) $v(a^3 + b^3) - 3 = v(a + b) \\ge 2$",
+          "problem_orig": "양의 정수 $m$에 대하여 $3^k$이 $m$의 약수가 되는 가장 큰 정수 $k$를 $v(m)$이라 하자. 다음 두 조건을 모두 만족하는 양의 정수의 순서쌍 $(a, b)$의 개수를 구하여라.\n\n(i) $1 \\le a, b \\le 100$\n\n(ii) $v(a^3 + b^3) - 3 = v(a + b) \\ge 2$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "Find the number of ordered quadruples $(A, B, C, D)$ of sets satisfying all three of the following conditions.\n\n(i) $A \\subset B \\cap C$\n\n(ii) $B \\cup C \\subset D \\subset \\{1, 2, 3, 4\\}$\n\n(iii) $C \\neq \\varnothing$",
+          "problem_orig": "다음 세 조건을 모두 만족하는 집합의 순서쌍 $(A, B, C, D)$의 개수를 구하여라.\n\n(i) $A \\subset B \\cap C$\n\n(ii) $B \\cup C \\subset D \\subset \\{1, 2, 3, 4\\}$\n\n(iii) $C \\neq \\varnothing$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "When all the positive integers from $1$ to $100$ were added, but with $k$ odd numbers left out, the result was $3775$. How many possible positive integers $k$ are there in total?",
+          "problem_orig": "$1$부터 $100$까지 양의 정수를 모두 더하는데 $k$개의 홀수를 제외하고 더하였더니 그 값이 $3775$가 나왔다. 가능한 양의 정수 $k$는 모두 몇 개인가?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "Among the $6$-letter strings $x_1x_2x_3x_4x_5x_6$ made from the three letters $A$, $B$, $C$, find the number of those satisfying the following condition.\n\n(Condition) There do not exist positive integers $i$, $j$, $k$ with $1 \\le i < j < k \\le 6$ such that $x_i = A$, $x_j = B$, $x_k = C$.",
+          "problem_orig": "세 문자 $A$, $B$, $C$를 사용하여 만든 $6$자리 문자열 $x_1x_2x_3x_4x_5x_6$ 중 다음 조건을 만족하는 것의 개수를 구하여라.\n\n(조건) $x_i = A$, $x_j = B$, $x_k = C$를 만족하는 $1 \\le i < j < k \\le 6$인 양의 정수 $i$, $j$, $k$는 존재하지 않는다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "For a positive integer $n$, let $p_n(x) = \\frac{n}{64}x^2 - \\frac{n}{32}x + 2$ and $T_n = \\{x \\mid p_n(p_n(x)) \\le 2,\\ x \\text{ real}\\}$. Find the number of $n$ satisfying the following condition.\n\n(Condition) For every positive integer $m$, $T_m \\subset T_n$.",
+          "problem_orig": "양의 정수 $n$에 대하여 $p_n(x) = \\frac{n}{64}x^2 - \\frac{n}{32}x + 2$이고 $T_n = \\{x \\mid p_n(p_n(x)) \\le 2,\\ x\\text{는 실수}\\}$이다. 다음 조건을 만족하는 $n$의 개수를 구하여라.\n\n(조건) 모든 양의 정수 $m$에 대하여 $T_m \\subset T_n$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "A sequence $\\{x_n\\}$ satisfies the following.\n$$x_1 = 1, \\qquad \\sum_{i=1}^{k+1} \\sum_{j=1}^{k} x_i x_j = 1 - 4\\sum_{i=1}^{k+1} x_i \\quad (k \\ge 1)$$\nFind the largest positive integer $N$ for which\n$$N|x_{n+2}| \\le |x_{n+1}|$$\nholds for every positive integer $n$.",
+          "problem_orig": "수열 $\\{x_n\\}$이 다음을 만족한다.\n$$x_1 = 1, \\qquad \\sum_{i=1}^{k+1} \\sum_{j=1}^{k} x_i x_j = 1 - 4\\sum_{i=1}^{k+1} x_i \\quad (k \\ge 1)$$\n모든 양의 정수 $n$에 대하여\n$$N|x_{n+2}| \\le |x_{n+1}|$$\n이 성립하는 양의 정수 $N$의 최댓값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "In a triangle $ABC$, $AB > AC$. Let $D$ be the point where the bisector of angle $A$ meets the side $BC$, $M$ the midpoint of the side $BC$, and $H$ the foot of the perpendicular from the point $C$ to the line $AD$. If $MD = 10$ and $MH = 20$, find the value of $(AM)^2 - (AD)^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} > \\overline{AC}$이다. 각 $A$의 이등분선이 변 $BC$와 만나는 점을 $D$, 변 $BC$의 중점을 $M$, 점 $C$에서 직선 $AD$에 내린 수선의 발을 $H$라 하자. $\\overline{MD} = 10$, $\\overline{MH} = 20$일 때, $(\\overline{AM})^2 - (\\overline{AD})^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "Let $D$ $(\\neq B)$ be the point where the circle with centre at the vertex $A$ of an equilateral triangle $ABC$ with side length $3$ and passing through the point $B$ meets the line $AB$. For a point $E$ on the side $CA$, let $F$ be the point where the line $DE$ meets the side $BC$; then the area of triangle $AED$ equals the area of triangle $CEF$. If $a$ is the area of triangle $BFE$, find the value of $32a^2$.",
+          "problem_orig": "한 변의 길이가 $3$인 정삼각형 $ABC$의 꼭짓점 $A$를 중심으로 하고 점 $B$를 지나는 원이 직선 $AB$와 만나는 점을 $D(\\neq B)$라 하자. 변 $CA$ 위의 점 $E$에 대하여 직선 $DE$와 변 $BC$가 만나는 점을 $F$라 할 때, 삼각형 $AED$의 넓이와 삼각형 $CEF$의 넓이가 같다. 삼각형 $BFE$의 넓이를 $a$라 할 때, $32a^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "There is a hexagon $ABCDEF$ inscribed in a circle $O$. The segment $AD$ is a diameter of the circle $O$, and the quadrilateral $BCEF$ is a rectangle. If $AC = 5$, $CE = 6$, $EA = 4$ and $K$ is the sum of the lengths of the six sides of the hexagon $ABCDEF$, find the value of $7K^2$.",
+          "problem_orig": "원 $O$에 내접하는 육각형 $ABCDEF$가 있다. 선분 $AD$가 원 $O$의 지름이고 사각형 $BCEF$는 직사각형이다. $\\overline{AC} = 5$, $\\overline{CE} = 6$, $\\overline{EA} = 4$일 때, 육각형 $ABCDEF$의 여섯 개의 변의 길이의 합을 $K$라 하자. $7K^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "For coprime positive integers $p$, $q$ with\n$$\\frac{p}{q} = \\frac{\\sqrt[3]{3} - \\sqrt[3]{6} + \\sqrt[3]{12}}{7\\sqrt[3]{-1 + \\sqrt[3]{2}}},$$\nfind $p + q$.",
+          "problem_orig": "서로소인 양의 정수 $p$, $q$에 대하여\n$$\\frac{p}{q} = \\frac{\\sqrt[3]{3} - \\sqrt[3]{6} + \\sqrt[3]{12}}{7\\sqrt[3]{-1 + \\sqrt[3]{2}}}$$\n일 때, $p + q$를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "Find the number of ordered triples $(a, b, c)$ of positive integers satisfying both of the following conditions.\n\n(i) $1 \\le a, b, c \\le 115$\n\n(ii) For every positive integer $n$, $115^{115n + a} - 1$ is a multiple of $115^{bn + c} - 1$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수의 순서쌍 $(a, b, c)$의 개수를 구하여라.\n\n(i) $1 \\le a, b, c \\le 115$\n\n(ii) 모든 양의 정수 $n$에 대하여 $115^{115n + a} - 1$은 $115^{bn + c} - 1$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "A non-real complex number $p$ is a root of the quadratic equation $x^2 - ax + b = 0$ ($a$, $b$ real). If $p^5 = 32$, find the value of $(a + 1)^2 + b^2$.",
+          "problem_orig": "실수가 아닌 복소수 $p$가 이차방정식 $x^2 - ax + b = 0$ ($a$, $b$는 실수)의 해이다. $p^5 = 32$일 때, $(a + 1)^2 + b^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "In the figure below, start from the point $A$ and, moving $1$ cell at a time to the right or upward, arrive at $B$. Find the number of ways to move from $A$ to $B$ passing through exactly one of the points $C$, $D$, $E$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2021_e19_fig.png",
+          "problem_orig": "다음 그림에서 점 $A$에서 출발해서 오른쪽 혹은 위쪽으로 $1$칸씩 이동하면서 $B$에 도착한다. 점 $C$, $D$, $E$ 중 정확히 하나만 지나면서 $A$에서 $B$로 이동하는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "There is a regular octagon $P_1P_2P_3P_4P_5P_6P_7P_8$. Among the ways to choose $3$ distinct diagonals, find the number of those satisfying both of the following conditions.\n\n(i) The $3$ diagonals do not meet at one point.\n\n(ii) Among the intersection points formed by the $3$ diagonals, exactly $1$ lies inside the regular octagon.\n\nFor example, in the figures below, the left one does not satisfy condition (i), and the right one satisfies both conditions.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2021_e20_fig.png",
+          "problem_orig": "정팔각형 $P_1P_2P_3P_4P_5P_6P_7P_8$이 있다. 서로 다른 $3$개의 대각선을 선택하는 방법 중 다음 조건을 모두 만족하는 것의 개수를 구하여라.\n\n(i) $3$개의 대각선은 한점에서 만나지 않는다.\n\n(ii) $3$개의 대각선으로 만들어지는 교점 중, 정팔각형의 내부에 있는 것의 개수는 $1$이다.\n\n예를 들어, 아래 왼쪽 그림은 조건 (i)을 만족하지 않고 오른쪽 그림은 두 조건을 모두 만족한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "A monic quadratic polynomial $p(x)$ satisfies $p(1) = 1$. Find the sum of all possible values of the following expression.\n$$\\sum_{n=1}^{101} \\left((-1)^{\\left[\\frac{n+1}{2}\\right] + 1}\\right) p(n)$$\n(Here $[x]$ denotes the greatest integer not exceeding $x$.)",
+          "problem_orig": "최고차항의 계수가 $1$인 이차다항식 $p(x)$가 $p(1) = 1$을 만족한다. 다음 식이 가질 수 있는 모든 값들의 합을 구하여라.\n$$\\sum_{n=1}^{101} \\left((-1)^{\\left[\\frac{n+1}{2}\\right] + 1}\\right) p(n)$$\n(단, $[x]$는 $x$를 넘지 않는 가장 큰 정수)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "For the function $f(x) = x^2 + x - q$ $(q > 1)$, let $m$ be the smallest and $M$ the largest value of $a$ for which the inequality\n$$a < f(a) < f(f(a))$$\ndoes not hold. If $M - m = 11$, find the value of $q$.",
+          "problem_orig": "함수 $f(x) = x^2 + x - q$ $(q > 1)$에 대하여 부등식\n$$a < f(a) < f(f(a))$$\n가 성립하지 않는 $a$의 값 중 가장 작은 것을 $m$, 가장 큰 것을 $M$이라 하자. $M - m = 11$일 때, $q$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "Positive real numbers $a$, $b$, $c$, $d$ satisfy both of the following equations.\n$$abcd = 7, \\qquad a^2 + b^2 + c^2 + d^2 = 20$$\nFind the largest possible value of the expression $ab + bc + cd + da$.",
+          "problem_orig": "양의 실수 $a$, $b$, $c$, $d$가 다음 등식을 모두 만족한다.\n$$abcd = 7, \\qquad a^2 + b^2 + c^2 + d^2 = 20$$\n식 $ab + bc + cd + da$가 가질 수 있는 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "In a triangle $ABC$, $\\angle BAC = 60^\\circ$. The point $P$ lies on the side $BC$, and the circumcircle $O_1$ of triangle $ABP$ and the circumcircle $O_2$ of triangle $ACP$ have radii $48$ and $32$ respectively. If $\\sin\\angle ACB = \\alpha$, find the value of $560\\alpha^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\angle BAC = 60^\\circ$이다. 점 $P$는 변 $BC$ 위의 점으로 삼각형 $ABP$의 외접원 $O_1$과 삼각형 $ACP$의 외접원 $O_2$의 반지름이 각각 $48$과 $32$이다. $\\sin\\angle ACB = \\alpha$라 할 때, $560\\alpha^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "In a triangle $ABC$, let $M$ be the midpoint of the segment $AC$, and let $D$ $(\\neq B)$ be the point where the line $BM$ meets the circumcircle of triangle $ABC$. If $AB = 8$, $BC = 6$, $CD = 4$, find the value of $4(AM + BD)^2$.",
+          "problem_orig": "삼각형 $ABC$에서 선분 $AC$의 중점을 $M$이라 하고, 직선 $BM$이 삼각형 $ABC$의 외접원과 만나는 점을 $D(\\neq B)$라 하자. $\\overline{AB} = 8$, $\\overline{BC} = 6$, $\\overline{CD} = 4$일 때, $4\\left(\\overline{AM} + \\overline{BD}\\right)^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "For a positive integer $m$, let $v(m)$ be the largest integer $k$ such that $3^k$ is a divisor of $m$. Find the number of ordered pairs $(a, b)$ of positive integers satisfying both of the following conditions.\n\n(i) $1 \\le a, b \\le 100$\n\n(ii) $v(a^3 + b^3) - 3 = v(a + b) \\ge 2$",
+          "problem_orig": "양의 정수 $m$에 대하여 $3^k$이 $m$의 약수가 되는 가장 큰 정수 $k$를 $v(m)$이라 하자. 다음 두 조건을 모두 만족하는 양의 정수의 순서쌍 $(a, b)$의 개수를 구하여라.\n\n(i) $1 \\le a, b \\le 100$\n\n(ii) $v(a^3 + b^3) - 3 = v(a + b) \\ge 2$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "Find the sum of all positive integers $n$ satisfying the following condition.\n\n(Condition) The number of divisors of $n^2$ is $\\frac{n}{6}$.",
+          "problem_orig": "다음 조건을 만족하는 모든 양의 정수 $n$의 합을 구하여라.\n\n(조건) $n^2$의 약수의 개수는 $\\frac{n}{6}$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "When all the positive integers from $1$ to $100$ were added, but with $k$ odd numbers left out, the result was $3775$. How many possible positive integers $k$ are there in total?",
+          "problem_orig": "$1$부터 $100$까지 양의 정수를 모두 더하는데 $k$개의 홀수를 제외하고 더하였더니 그 값이 $3775$가 나왔다. 가능한 양의 정수 $k$는 모두 몇 개인가?",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "Among the $6$-letter strings $x_1x_2x_3x_4x_5x_6$ made from the three letters $A$, $B$, $C$, find the number of those satisfying the following condition.\n\n(Condition) There do not exist positive integers $i$, $j$, $k$ with $1 \\le i < j < k \\le 6$ such that $x_i = A$, $x_j = B$, $x_k = C$.",
+          "problem_orig": "세 문자 $A$, $B$, $C$를 사용하여 만든 $6$자리 문자열 $x_1x_2x_3x_4x_5x_6$ 중 다음 조건을 만족하는 것의 개수를 구하여라.\n\n(조건) $x_i = A$, $x_j = B$, $x_k = C$를 만족하는 $1 \\le i < j < k \\le 6$인 양의 정수 $i$, $j$, $k$는 존재하지 않는다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "As below, there is a figure consisting of nine equilateral triangles with side length $1$. When one of the digits $1, 2, 3, 4$ is written at each of the $10$ points of this figure, find the number of ways satisfying the following condition.\n\n(Condition) For each equilateral triangle with side length $1$, the sum of the digits written at its three vertices is a multiple of $3$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2021_g10_fig.png",
+          "problem_orig": "아래 그림과 같이 한변의 길이가 $1$인 정삼각형 $9$개로 이루어진 도형이 있다. 이 도형 위의 $10$개의 점 각각에 $1, 2, 3, 4$ 중 하나의 숫자를 적을 때, 다음 조건을 만족하는 경우의 수를 구하여라.\n\n(조건) 각각의 한변의 길이가 $1$인 정삼각형의 세 꼭짓점에 적힌 숫자의 합은 $3$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "A sequence $\\{x_n\\}$ satisfies the following.\n$$x_1 = 1, \\qquad \\sum_{i=1}^{k+1} \\sum_{j=1}^{k} x_i x_j = 1 - 4\\sum_{i=1}^{k+1} x_i \\quad (k \\ge 1)$$\nFind the largest positive integer $N$ for which\n$$N|x_{n+2}| \\le |x_{n+1}|$$\nholds for every positive integer $n$.",
+          "problem_orig": "수열 $\\{x_n\\}$이 다음을 만족한다.\n$$x_1 = 1, \\qquad \\sum_{i=1}^{k+1} \\sum_{j=1}^{k} x_i x_j = 1 - 4\\sum_{i=1}^{k+1} x_i \\quad (k \\ge 1)$$\n모든 양의 정수 $n$에 대하여\n$$N|x_{n+2}| \\le |x_{n+1}|$$\n이 성립하는 양의 정수 $N$의 최댓값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "Find the remainder when the greatest integer not exceeding $\\left(5 + 2\\sqrt{6}\\right)^{72}$ is divided by $99$.",
+          "problem_orig": "$\\left(5 + 2\\sqrt{6}\\right)^{72}$을 넘지 않는 가장 큰 정수를 $99$로 나눈 나머지를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "Let $D$ $(\\neq B)$ be the point where the circle with centre at the vertex $A$ of an equilateral triangle $ABC$ with side length $3$ and passing through the point $B$ meets the line $AB$. For a point $E$ on the side $CA$, let $F$ be the point where the line $DE$ meets the side $BC$; then the area of triangle $AED$ equals the area of triangle $CEF$. If $a$ is the area of triangle $BFE$, find the value of $32a^2$.",
+          "problem_orig": "한 변의 길이가 $3$인 정삼각형 $ABC$의 꼭짓점 $A$를 중심으로 하고 점 $B$를 지나는 원이 직선 $AB$와 만나는 점을 $D(\\neq B)$라 하자. 변 $CA$ 위의 점 $E$에 대하여 직선 $DE$와 변 $BC$가 만나는 점을 $F$라 할 때, 삼각형 $AED$의 넓이와 삼각형 $CEF$의 넓이가 같다. 삼각형 $BFE$의 넓이를 $a$라 할 때, $32a^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "There is a hexagon $ABCDEF$ inscribed in a circle $O$. The segment $AD$ is a diameter of the circle $O$, and the quadrilateral $BCEF$ is a rectangle. If $AC = 5$, $CE = 6$, $EA = 4$ and $K$ is the sum of the lengths of the six sides of the hexagon $ABCDEF$, find the value of $7K^2$.",
+          "problem_orig": "원 $O$에 내접하는 육각형 $ABCDEF$가 있다. 선분 $AD$가 원 $O$의 지름이고 사각형 $BCEF$는 직사각형이다. $\\overline{AC} = 5$, $\\overline{CE} = 6$, $\\overline{EA} = 4$일 때, 육각형 $ABCDEF$의 여섯 개의 변의 길이의 합을 $K$라 하자. $7K^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "In a triangle $ABC$, $AB > AC$. Let $D$ be the point where the bisector of angle $A$ meets the side $BC$, $M$ the midpoint of the side $BC$, and $H$ the foot of the perpendicular from the point $C$ to the line $AD$. If $MD = 10$ and $MH = 20$, find the value of $(AM)^2 - (AD)^2$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{AB} > \\overline{AC}$이다. 각 $A$의 이등분선이 변 $BC$와 만나는 점을 $D$, 변 $BC$의 중점을 $M$, 점 $C$에서 직선 $AD$에 내린 수선의 발을 $H$라 하자. $\\overline{MD} = 10$, $\\overline{MH} = 20$일 때, $(\\overline{AM})^2 - (\\overline{AD})^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "Find the number of ordered triples $(a, b, c)$ of positive integers satisfying both of the following conditions.\n\n(i) $1 \\le a, b, c \\le 115$\n\n(ii) For every positive integer $n$, $115^{115n + a} - 1$ is a multiple of $115^{bn + c} - 1$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수의 순서쌍 $(a, b, c)$의 개수를 구하여라.\n\n(i) $1 \\le a, b, c \\le 115$\n\n(ii) 모든 양의 정수 $n$에 대하여 $115^{115n + a} - 1$은 $115^{bn + c} - 1$의 배수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "A non-real complex number $p$ is a root of the quadratic equation $x^2 - ax + b = 0$ ($a$, $b$ real). If $p^5 = 32$, find the value of $(a + 1)^2 + b^2$.",
+          "problem_orig": "실수가 아닌 복소수 $p$가 이차방정식 $x^2 - ax + b = 0$ ($a$, $b$는 실수)의 해이다. $p^5 = 32$일 때, $(a + 1)^2 + b^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "For a positive integer $k$ $(\\ge 2)$, let $f(k)$ be the number of ordered pairs $(a, b)$ of positive integers satisfying $a^b = k$. Find the number of ordered pairs $(m, n)$ of positive integers satisfying both of the following conditions.\n\n(i) $2 \\le m, n \\le 100$, and $m$ and $n$ are coprime.\n\n(ii) $f(mn) = f(m) = f(n) \\ge 2$",
+          "problem_orig": "양의 정수 $k$ $(\\ge 2)$에 대하여 $a^b = k$를 만족하는 양의 정수의 순서쌍 $(a, b)$의 개수를 $f(k)$라 하자. 다음 두 조건을 모두 만족하는 양의 정수의 순서쌍 $(m, n)$의 개수를 구하여라.\n\n(i) $2 \\le m, n \\le 100$이고 $m$과 $n$은 서로소이다.\n\n(ii) $f(mn) = f(m) = f(n) \\ge 2$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "There is a regular octagon $P_1P_2P_3P_4P_5P_6P_7P_8$. Among the ways to choose $3$ distinct diagonals, find the number of those satisfying the following condition.\n\n(Condition) Among the intersection points formed by the $3$ diagonals, exactly $1$ lies inside the regular octagon.\n\nFor example, choosing the diagonals as below satisfies the condition.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/kr1_2021_g19_fig.png",
+          "problem_orig": "정팔각형 $P_1P_2P_3P_4P_5P_6P_7P_8$이 있다. 서로 다른 $3$개의 대각선을 선택하는 방법 중 다음 조건을 만족하는 것의 개수를 구하여라.\n\n(조건) $3$개의 대각선으로 만들어지는 교점 중, 정팔각형의 내부에 있는 것의 개수는 $1$이다.\n\n예를 들어, 다음과 같이 대각선을 선택하면 조건을 만족한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "Find the number of functions $f : \\{1, 2, \\ldots, 9\\} \\to \\{1, 2, \\ldots, 9\\}$ satisfying both of the following conditions.\n\n(i) $f(1) \\le f(2) \\le \\cdots \\le f(9)$\n\n(ii) The range of the composite function $f \\circ f$ has $7$ elements.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 함수 $f : \\{1, 2, \\ldots, 9\\} \\to \\{1, 2, \\ldots, 9\\}$의 개수를 구하여라.\n\n(i) $f(1) \\le f(2) \\le \\cdots \\le f(9)$\n\n(ii) 합성함수 $f \\circ f$의 치역의 원소의 개수는 $7$이다.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 1,
+          "problem": "The sum of the largest and the second largest of the real solutions of the equation $x^4 - 4x^3 - a^2x^2 + 16x + 4a^2 - 16 = 0$ in $x$ is $17$. Find the value of the positive real number $a$.",
+          "problem_orig": "$x$에 대한 방정식 $x^4 - 4x^3 - a^2x^2 + 16x + 4a^2 - 16 = 0$의 실수해 중 가장 큰 수와 두 번째로 큰 수의 합이 $17$이다. 양의 실수 $a$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 2,
+          "problem": "Real numbers $a$, $b$, $c$ satisfy both of the following conditions.\n\n(i) $a < b$\n\n(ii) For every real number $x$, $ax^2 + bx + c \\ge 0$.\n\nFind the smallest possible value of the expression $\\frac{11a + b + c}{b - a}$.",
+          "problem_orig": "실수 $a$, $b$, $c$는 다음 두 조건을 모두 만족한다.\n\n(i) $a < b$\n\n(ii) 모든 실수 $x$에 대하여 $ax^2 + bx + c \\ge 0$이다.\n\n식 $\\frac{11a + b + c}{b - a}$가 가질 수 있는 값 중 가장 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 3,
+          "problem": "There are a positive integer $n$ and a polynomial $P(x)$ with integer coefficients and constant term $528$ satisfying the following condition.\n\n(Condition) The equation $P(x) = 2022$ has $n$ distinct integer solutions.\n\nFind the largest possible value of $n$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$과 상수항이 $528$인 정수계수 다항식 $P(x)$가 있다.\n\n(조건) 방정식 $P(x) = 2022$의 서로 다른 정수해의 개수가 $n$이다.\n\n$n$이 가질 수 있는 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 4,
+          "problem": "Find the number of ways to divide $10$ students into at least $2$ groups so that every group has at least $4$ students. (Each student belongs to exactly one group.)",
+          "problem_orig": "$10$명의 학생을 $2$개 이상의 모둠으로 나눌 때, 각 모둠의 인원이 $4$ 이상인 경우의 수를 구하여라. (단, 각 학생은 오직 하나의 모둠에 속한다.)",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 5,
+          "problem": "When $17$ indistinguishable balls are put, all of them, into the distinct boxes $B_1$, $B_2$, $B_3$, $B_4$, $B_5$, find the number of ways to put them so that both of the following conditions are satisfied.\n\n(i) Each box receives at least one ball.\n\n(ii) For all $i = 1, 2, 3, 4, 5$, the number of balls in box $B_i$ plus $i$ is even.",
+          "problem_orig": "서로 구별되지 않는 $17$개의 공을 서로 다른 상자 $B_1$, $B_2$, $B_3$, $B_4$, $B_5$에 남김없이 넣을 때, 다음 두 조건을 모두 만족하도록 넣는 경우의 수를 구하여라.\n\n(i) 각각의 상자에 적어도 한 개의 공을 넣는다.\n\n(ii) 모든 $i = 1, 2, 3, 4, 5$에 대하여 상자 $B_i$에 들어 있는 공의 개수에 $i$를 더한 수는 짝수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 6,
+          "problem": "When the ten numbers $-5, -4, -3, -2, -1, 1, 2, 3, 4, 5$ are arranged in a circle, find the number of arrangements satisfying both of the following conditions. (Arrangements that coincide after a rotation are regarded as the same.)\n\n(i) The product of any two adjacent numbers is negative.\n\n(ii) No two of the four numbers $-4, -2, 2, 4$ are adjacent.",
+          "problem_orig": "열 개의 수 $-5, -4, -3, -2, -1, 1, 2, 3, 4, 5$를 원형으로 배열할 때, 다음 두 조건을 모두 만족하도록 배열하는 경우의 수를 구하여라. (단, 회전하여 일치하는 것은 같은 것으로 본다.)\n\n(i) 이웃한 두 수의 곱은 음수이다.\n\n(ii) 네 개의 수 $-4, -2, 2, 4$ 중 어떤 두 수도 서로 이웃하지 않는다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 7,
+          "problem": "Triangle $ABC$ is a triangle whose circumradius is $10$, with $AB = 2AC$ and $\\cos\\angle BAC = -\\frac{1}{3}$. Let $D$ be the midpoint of the side $AB$, and $x$ the circumradius of triangle $BCD$. Find the value of $3x^2$.",
+          "problem_orig": "삼각형 $ABC$는 외접원의 반지름의 길이가 $10$인 삼각형으로 $\\overline{AB} = 2\\overline{AC}$, $\\cos\\angle BAC = -\\frac{1}{3}$을 만족한다. 변 $AB$의 중점을 $D$라 할 때, 삼각형 $BCD$의 외접원의 반지름의 길이를 $x$라 하자. $3x^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 8,
+          "problem": "A quadrilateral $ABCD$ whose vertices are four points $A$, $B$, $C$, $D$ on the parabola $y = (x - 1)^2$ satisfies both of the following conditions.\n\n(i) The midpoint of the diagonal $AC$ lies on the $y$-axis.\n\n(ii) The diagonal $BD$ is perpendicular to the diagonal $AC$.\n\nIf $k$ is the $x$-coordinate of the midpoint of the segment $BD$, find the value of $100k$.",
+          "problem_orig": "포물선 $y = (x - 1)^2$ 위의 네 점 $A$, $B$, $C$, $D$가 꼭짓점인 사각형 $ABCD$가 다음 두 조건을 모두 만족한다.\n\n(i) 대각선 $AC$의 중점은 $y$-축 위에 있다.\n\n(ii) 대각선 $BD$는 대각선 $AC$에 수직이다.\n\n선분 $BD$의 중점의 $x$-좌표를 $k$라 할 때, $100k$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 9,
+          "problem": "For integers $x$, $y$ satisfying the equation $y^2 - 2xy + x^4 = 2368$, find the largest possible value of $x + y$.",
+          "problem_orig": "등식 $y^2 - 2xy + x^4 = 2368$을 만족하는 정수 $x$, $y$에 대하여, $x + y$가 가질 수 있는 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 10,
+          "problem": "Find the number of ordered pairs $(m, n)$ of three-digit positive integers $m$, $n$ satisfying the following condition.\n\n(Condition) If $G$ is the greatest common divisor and $L$ the least common multiple of $m$, $n$, then $L - G = m + 2n$.",
+          "problem_orig": "다음 조건을 만족하는 세 자리 양의 정수 $m$, $n$의 순서쌍 $(m, n)$의 개수를 구하여라.\n\n(조건) $m$, $n$의 최대공약수를 $G$, 최소공배수를 $L$이라 할 때, $L - G = m + 2n$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 11,
+          "problem": "When a real number $x$ satisfies the following equation, find the value of $72x$.\n$$\\sqrt{x + \\sqrt{x}} - \\sqrt{x - \\sqrt{x}} = \\frac{4}{3}\\sqrt{\\frac{x}{x + \\sqrt{x}}}$$",
+          "problem_orig": "실수 $x$가 다음 식을 만족할 때, $72x$의 값을 구하여라.\n$$\\sqrt{x + \\sqrt{x}} - \\sqrt{x - \\sqrt{x}} = \\frac{4}{3}\\sqrt{\\frac{x}{x + \\sqrt{x}}}$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 12,
+          "problem": "A polynomial $f(x)$ of degree $6$ with real coefficients satisfies both of the following conditions.\n\n(i) $f(0) = 2$\n\n(ii) For $n = 1, 2, 3, 4, 5, 6$,\n$$f\\left(\\frac{1}{n + 1}\\right) = \\left(\\frac{n^2 + n + 1}{n^2 + 2n + 1}\\right)^3.$$\n\nFind the value of $f(1)$.",
+          "problem_orig": "실계수 $6$차 다항식 $f(x)$가 다음 두 조건을 모두 만족한다.\n\n(i) $f(0) = 2$\n\n(ii) $n = 1, 2, 3, 4, 5, 6$에 대하여\n$$f\\left(\\frac{1}{n + 1}\\right) = \\left(\\frac{n^2 + n + 1}{n^2 + 2n + 1}\\right)^3$$\n이다.\n\n$f(1)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 13,
+          "problem": "For a positive integer $n$, let $d(n)$ be the number of positive divisors of $n$ that are at most $5$. Find the value of the following expression.\n$$d(1) + d(2) + \\cdots + d(400)$$",
+          "problem_orig": "양의 정수 $n$에 대하여 $d(n)$을 $n$의 양의 약수 중 $5$ 이하인 것의 개수라 할 때, 다음 식의 값을 구하여라.\n$$d(1) + d(2) + \\cdots + d(400)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 14,
+          "problem": "For the sets $X = \\{1, 2, 3, 4, 5, 6\\}$ and $Y = \\{1, 2, 3\\}$, find the number of functions $f : X \\to Y$ satisfying both of the following conditions.\n\n(i) The number of functions $g : Y \\to X$ satisfying $(f \\circ g)(y) = g(y)$ for all $y \\in Y$ is $8$.\n\n(ii) The number of functions $h : Y \\to X$ satisfying $(f \\circ h)(y) = y$ for all $y \\in Y$ is $8$.",
+          "problem_orig": "집합 $X = \\{1, 2, 3, 4, 5, 6\\}$, $Y = \\{1, 2, 3\\}$에 대하여 다음 두 조건을 모두 만족하는 함수 $f : X \\to Y$의 개수를 구하여라.\n\n(i) 모든 $y \\in Y$에 대하여 $(f \\circ g)(y) = g(y)$를 만족하는 함수 $g : Y \\to X$의 개수는 $8$이다.\n\n(ii) 모든 $y \\in Y$에 대하여 $(f \\circ h)(y) = y$를 만족하는 함수 $h : Y \\to X$의 개수는 $8$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 15,
+          "problem": "The side lengths of triangle $ABC$ are $AB = 30$, $BC = 50$, $CA = 40$. The points $X$, $Y$, $Z$ lie on the sides $AB$, $BC$, $CA$ of triangle $ABC$ respectively and satisfy $AX : BY : CZ = 3 : 5 : 4$. Find the minimum value of the area of triangle $XYZ$.",
+          "problem_orig": "삼각형 $ABC$의 세 변의 길이가 각각 $\\overline{AB} = 30$, $\\overline{BC} = 50$, $\\overline{CA} = 40$이다. 점 $X$, $Y$, $Z$는 각각 삼각형 $ABC$의 변 $AB$, $BC$, $CA$ 위에 있는 점으로 $\\overline{AX} : \\overline{BY} : \\overline{CZ} = 3 : 5 : 4$를 만족한다. 삼각형 $XYZ$의 넓이의 최솟값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 16,
+          "problem": "In a triangle $ABC$, $BC = 30$, $AC = 40$ and $\\angle ACB = 90^\\circ$. The circle with diameter the side $AC$ meets the side $AB$ at the point $D$ $(\\neq A)$. Let $M$ be the midpoint of the side $AC$, $E$ the intersection of the segments $CD$ and $BM$, and $F$ the intersection of the line $AE$ with the side $BC$. Find the value of $25FC$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{BC} = 30$, $\\overline{AC} = 40$, $\\angle ACB = 90^\\circ$이다. 변 $AC$를 지름으로 하는 원이 변 $AB$와 점 $D(\\neq A)$에서 만난다. 변 $AC$의 중점을 $M$, 선분 $CD$와 $BM$의 교점을 $E$, 직선 $AE$와 변 $BC$의 교점을 $F$라 하자. $25\\overline{FC}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 17,
+          "problem": "The circle $\\Omega_1$ with diameter the segment $AB$ of length $4$ is internally tangent to the circle $\\Omega_2$ with diameter the segment $AC$. Moreover, a circle $\\Omega_3$ of radius $1$ is externally tangent to the circle $\\Omega_1$ and internally tangent to the circle $\\Omega_2$. If $O$ is the centre of the circle $\\Omega_3$, the line $OB$ is perpendicular to the line $BC$. If $D$ is a point where the perpendicular bisector of the segment $BC$ meets $\\Omega_2$, find the value of $9CD^2$.",
+          "problem_orig": "길이가 $4$인 선분 $AB$를 지름으로 하는 원 $\\Omega_1$이 선분 $AC$를 지름으로 하는 원 $\\Omega_2$에 내접한다. 또한 반지름이 $1$인 원 $\\Omega_3$이 원 $\\Omega_1$에 외접하고 원 $\\Omega_2$에 내접한다. 원 $\\Omega_3$의 중심을 $O$라 할 때, 직선 $OB$는 직선 $BC$에 수직이다. 선분 $BC$의 수직이등분선이 $\\Omega_2$와 만나는 점을 $D$라 할 때, $9\\overline{CD}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 18,
+          "problem": "The curve $y = x^4 - 35x^3 + 27x^2 + 34x - 11$ and the line $y = 4x - 6$ meet at four distinct points. Find the sum of the $y$-coordinates of these four points.",
+          "problem_orig": "곡선 $y = x^4 - 35x^3 + 27x^2 + 34x - 11$과 직선 $y = 4x - 6$은 서로 다른 네 점에서 만난다. 이 네 점의 $y$ 좌표의 합을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 19,
+          "problem": "A polynomial $f(x)$ satisfies the following condition.\n\n(Condition) $f(0) = 9$, $f(1) = 0$, $f(2) = 1$, $f(3) = 24$\n\nLet $p(x)$ be the one of smallest degree among such polynomials. Find $p(5)$.",
+          "problem_orig": "다항식 $f(x)$는 다음 조건을 만족한다.\n\n(조건) $f(0) = 9$, $f(1) = 0$, $f(2) = 1$, $f(3) = 24$\n\n이러한 다항식 중 차수가 최소인 것을 $p(x)$라 할 때, $p(5)$를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 1,
+          "paper_label": "Euler paper",
+          "number": 20,
+          "problem": "Find the number of positive integers $n$ satisfying both of the following conditions. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n\n(i) $1 \\le n < 44484$\n\n(ii) There exists an integer $m$ satisfying $\\left[\\frac{n}{1011}\\right] = m\\left[\\frac{n}{2022}\\right]$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $n$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)\n\n(i) $1 \\le n < 44484$\n\n(ii) $\\left[\\frac{n}{1011}\\right] = m\\left[\\frac{n}{2022}\\right]$을 만족하는 정수 $m$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 1,
+          "problem": "Real numbers $a$, $b$, $c$ satisfy both of the following conditions.\n\n(i) $a < b$\n\n(ii) For every real number $x$, $ax^2 + bx + c \\ge 0$.\n\nFind the smallest possible value of the expression $\\frac{11a + b + c}{b - a}$.",
+          "problem_orig": "실수 $a$, $b$, $c$는 다음 두 조건을 모두 만족한다.\n\n(i) $a < b$\n\n(ii) 모든 실수 $x$에 대하여 $ax^2 + bx + c \\ge 0$이다.\n\n식 $\\frac{11a + b + c}{b - a}$가 가질 수 있는 값 중 가장 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 2,
+          "problem": "There are a positive integer $n$ and a polynomial $P(x)$ with integer coefficients and constant term $528$ satisfying the following condition.\n\n(Condition) The equation $P(x) = 2022$ has $n$ distinct integer solutions.\n\nFind the largest possible value of $n$.",
+          "problem_orig": "다음 조건을 만족하는 양의 정수 $n$과 상수항이 $528$인 정수계수 다항식 $P(x)$가 있다.\n\n(조건) 방정식 $P(x) = 2022$의 서로 다른 정수해의 개수가 $n$이다.\n\n$n$이 가질 수 있는 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 3,
+          "problem": "Find the number of positive real numbers $x$ satisfying the following condition. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n\n(Condition) The value of $\\left[\\frac{x^3}{900}\\right] - x$ is a non-negative integer not exceeding $29$.",
+          "problem_orig": "다음 조건을 만족하는 양의 실수 $x$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)\n\n(조건) $\\left[\\frac{x^3}{900}\\right] - x$의 값은 $29$ 이하의 음이 아닌 정수이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 4,
+          "problem": "When the seven letters $A$, $A$, $A$, $B$, $B$, $C$, $C$ are all arranged in a row, find the number of arrangements in which $A$ does not appear two or more times in a row.",
+          "problem_orig": "일곱 개의 문자 $A$, $A$, $A$, $B$, $B$, $C$, $C$를 모두 일렬로 나열할 때, $A$가 두 번 이상 연속하여 나타나지 않는 경우의 수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 5,
+          "problem": "Find the number of functions $f : \\{1, 2, 3, 4, 5\\} \\to \\{1, 2, 3, 4, 5\\}$ satisfying the following condition.\n\n(Condition) For a positive integer $i$, if $i + 1$ belongs to the range of $f$, then $i$ also belongs to the range of $f$.",
+          "problem_orig": "다음 조건을 만족하는 함수 $f : \\{1, 2, 3, 4, 5\\} \\to \\{1, 2, 3, 4, 5\\}$의 개수를 구하여라.\n\n(조건) 양의 정수 $i$에 대하여 $i + 1$이 $f$의 치역에 속하면 $i$도 $f$의 치역에 속한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 6,
+          "problem": "Among the vertices of a regular $15$-gon, $6$ are to be coloured red and the remaining $9$ blue. Find the number of colourings satisfying the following condition. (Colourings that coincide after a rotation are counted as one.)\n\n(Condition) There is no regular polygon all of whose vertices are blue.",
+          "problem_orig": "정$15$각형의 각 꼭짓점 중 $6$개는 빨간색, 나머지 $9$개는 파란색으로 색칠하려고 한다. 다음 조건을 만족하도록 색칠하는 경우의 수를 구하여라. (단, 회전하여 같은 것은 한 가지로 센다.)\n\n(조건) 모든 꼭짓점이 파란색인 정다각형은 없다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 7,
+          "problem": "A quadrilateral $ABCD$ whose vertices are four points $A$, $B$, $C$, $D$ on the parabola $y = (x - 1)^2$ satisfies both of the following conditions.\n\n(i) The midpoint of the diagonal $AC$ lies on the $y$-axis.\n\n(ii) The diagonal $BD$ is perpendicular to the diagonal $AC$.\n\nIf $k$ is the $x$-coordinate of the midpoint of the segment $BD$, find the value of $100k$.",
+          "problem_orig": "포물선 $y = (x - 1)^2$ 위의 네 점 $A$, $B$, $C$, $D$가 꼭짓점인 사각형 $ABCD$가 다음 두 조건을 모두 만족한다.\n\n(i) 대각선 $AC$의 중점은 $y$-축 위에 있다.\n\n(ii) 대각선 $BD$는 대각선 $AC$에 수직이다.\n\n선분 $BD$의 중점의 $x$-좌표를 $k$라 할 때, $100k$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 8,
+          "problem": "In a convex quadrilateral $ABCD$, $\\angle BAC = 23^\\circ$, $\\angle DBC = 75^\\circ$, $\\angle BCD = 30^\\circ$. When the intersection of the bisector of $\\angle BAC$ and the bisector of $\\angle BDC$ lies on the side $BC$, $\\angle CAD = x^\\circ$. Find the value of $x$.",
+          "problem_orig": "볼록사각형 $ABCD$에서 $\\angle BAC = 23^\\circ$, $\\angle DBC = 75^\\circ$, $\\angle BCD = 30^\\circ$이다. $\\angle BAC$의 이등분선과 $\\angle BDC$의 이등분선의 교점이 변 $BC$ 위에 있을 때, $\\angle CAD = x^\\circ$이다. $x$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 9,
+          "problem": "For integers $x$, $y$ satisfying the equation $y^2 - 2xy + x^4 = 2368$, find the largest possible value of $x + y$.",
+          "problem_orig": "등식 $y^2 - 2xy + x^4 = 2368$을 만족하는 정수 $x$, $y$에 대하여, $x + y$가 가질 수 있는 값 중 가장 큰 것을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 10,
+          "problem": "Find the number of ordered pairs $(m, n)$ of integers $m$, $n$ satisfying the equation $29m^2 + 34mn + 10n^2 = 170$.",
+          "problem_orig": "방정식 $29m^2 + 34mn + 10n^2 = 170$을 만족하는 정수 $m$, $n$의 순서쌍 $(m, n)$의 개수를 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 11,
+          "problem": "A polynomial $f(x)$ of degree $6$ with real coefficients satisfies both of the following conditions.\n\n(i) $f(0) = 2$\n\n(ii) For $n = 1, 2, 3, 4, 5, 6$,\n$$f\\left(\\frac{1}{n + 1}\\right) = \\left(\\frac{n^2 + n + 1}{n^2 + 2n + 1}\\right)^3.$$\n\nFind the value of $f(1)$.",
+          "problem_orig": "실계수 $6$차 다항식 $f(x)$가 다음 두 조건을 모두 만족한다.\n\n(i) $f(0) = 2$\n\n(ii) $n = 1, 2, 3, 4, 5, 6$에 대하여\n$$f\\left(\\frac{1}{n + 1}\\right) = \\left(\\frac{n^2 + n + 1}{n^2 + 2n + 1}\\right)^3$$\n이다.\n\n$f(1)$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 12,
+          "problem": "Find the number of positive integers $n$ satisfying both of the following conditions. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n\n(i) $n \\le 900$\n\n(ii) $1 \\le \\sqrt{n + 10} - [\\sqrt{n}] \\le 3$",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $n$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)\n\n(i) $n \\le 900$\n\n(ii) $1 \\le \\sqrt{n + 10} - [\\sqrt{n}] \\le 3$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 13,
+          "problem": "For a positive integer $n$, let $d(n)$ be the number of positive divisors of $n$ that are at most $5$. Find the value of the following expression.\n$$d(1) + d(2) + \\cdots + d(400)$$",
+          "problem_orig": "양의 정수 $n$에 대하여 $d(n)$을 $n$의 양의 약수 중 $5$ 이하인 것의 개수라 할 때, 다음 식의 값을 구하여라.\n$$d(1) + d(2) + \\cdots + d(400)$$",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 14,
+          "problem": "For the sets $X = \\{1, 2, 3, 4, 5, 6, 7\\}$ and $Y = \\{1, 2, 3\\}$, find the number of functions $f : X \\to Y$ satisfying both of the following conditions.\n\n(i) The number of functions $g : Y \\to X$ satisfying $(f \\circ g)(y) = g(y)$ for all $y \\in Y$ is $8$.\n\n(ii) The number of functions $h : Y \\to X$ satisfying $(f \\circ h)(y) = y$ for all $y \\in Y$ is $12$.",
+          "problem_orig": "집합 $X = \\{1, 2, 3, 4, 5, 6, 7\\}$, $Y = \\{1, 2, 3\\}$에 대하여 다음 두 조건을 모두 만족하는 함수 $f : X \\to Y$의 개수를 구하여라.\n\n(i) 모든 $y \\in Y$에 대하여 $(f \\circ g)(y) = g(y)$를 만족하는 함수 $g : Y \\to X$의 개수는 $8$이다.\n\n(ii) 모든 $y \\in Y$에 대하여 $(f \\circ h)(y) = y$를 만족하는 함수 $h : Y \\to X$의 개수는 $12$이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 15,
+          "problem": "In a triangle $ABC$, $BC = 30$, $AC = 40$ and $\\angle ACB = 90^\\circ$. The circle with diameter the side $AC$ meets the side $AB$ at the point $D$ $(\\neq A)$. Let $M$ be the midpoint of the side $AC$, $E$ the intersection of the segments $CD$ and $BM$, and $F$ the intersection of the line $AE$ with the side $BC$. Find the value of $25FC$.",
+          "problem_orig": "삼각형 $ABC$에서 $\\overline{BC} = 30$, $\\overline{AC} = 40$, $\\angle ACB = 90^\\circ$이다. 변 $AC$를 지름으로 하는 원이 변 $AB$와 점 $D(\\neq A)$에서 만난다. 변 $AC$의 중점을 $M$, 선분 $CD$와 $BM$의 교점을 $E$, 직선 $AE$와 변 $BC$의 교점을 $F$라 하자. $25\\overline{FC}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 16,
+          "problem": "The circle $\\Omega_1$ with diameter the segment $AB$ of length $4$ is internally tangent to the circle $\\Omega_2$ with diameter the segment $AC$. Moreover, a circle $\\Omega_3$ of radius $1$ is externally tangent to the circle $\\Omega_1$ and internally tangent to the circle $\\Omega_2$. If $O$ is the centre of the circle $\\Omega_3$, the line $OB$ is perpendicular to the line $BC$. If $D$ is a point where the perpendicular bisector of the segment $BC$ meets $\\Omega_2$, find the value of $9CD^2$.",
+          "problem_orig": "길이가 $4$인 선분 $AB$를 지름으로 하는 원 $\\Omega_1$이 선분 $AC$를 지름으로 하는 원 $\\Omega_2$에 내접한다. 또한 반지름이 $1$인 원 $\\Omega_3$이 원 $\\Omega_1$에 외접하고 원 $\\Omega_2$에 내접한다. 원 $\\Omega_3$의 중심을 $O$라 할 때, 직선 $OB$는 직선 $BC$에 수직이다. 선분 $BC$의 수직이등분선이 $\\Omega_2$와 만나는 점을 $D$라 할 때, $9\\overline{CD}^2$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 17,
+          "problem": "The side lengths of triangle $ABC$ are $AB = 4$, $BC = 12$, $AC = 9$. Let $D$ be the midpoint of the side $AB$, and $E$ the point dividing the side $AC$ internally in the ratio $2 : 1$. If $F$ $(\\neq A)$ is the intersection of the line through $A$ parallel to the line $BC$ with the circumcircle of triangle $ADE$, find the value of $30AF$.",
+          "problem_orig": "삼각형 $ABC$의 세 변의 길이가 각각 $\\overline{AB} = 4$, $\\overline{BC} = 12$, $\\overline{AC} = 9$이다. 변 $AB$의 중점을 $D$, 변 $AC$를 $2 : 1$로 내분하는 점을 $E$라 하자. 점 $A$를 지나고 직선 $BC$에 평행한 직선과 삼각형 $ADE$의 외접원의 교점을 $F(\\neq A)$라 할 때, $30\\overline{AF}$의 값을 구하여라.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 18,
+          "problem": "Find the number of positive integers $n$ satisfying both of the following conditions. (Here $[a]$ denotes the greatest integer not exceeding $a$.)\n\n(i) $1 \\le n < 44484$\n\n(ii) There exists an integer $m$ satisfying $\\left[\\frac{n}{1011}\\right] = m\\left[\\frac{n}{2022}\\right]$.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 양의 정수 $n$의 개수를 구하여라. (단, $[a]$는 $a$를 넘지 않는 최대정수)\n\n(i) $1 \\le n < 44484$\n\n(ii) $\\left[\\frac{n}{1011}\\right] = m\\left[\\frac{n}{2022}\\right]$을 만족하는 정수 $m$이 존재한다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 19,
+          "problem": "Find the smallest positive integer $N$ satisfying both of the following conditions.\n\n(i) The sum of the positive divisors of $N$ is even but not a multiple of $4$.\n\n(ii) $N$ has at least $4$ distinct prime factors.",
+          "problem_orig": "다음 두 조건을 모두 만족하는 가장 작은 양의 정수 $N$을 구하여라.\n\n(i) $N$의 양의 약수의 합은 짝수이지만 $4$의 배수는 아니다.\n\n(ii) $N$의 서로 다른 소인수는 $4$개 이상이다.",
+          "orig_lang": "ko"
+        },
+        {
+          "day": 2,
+          "paper_label": "Gauss paper",
+          "number": 20,
+          "problem": "$21^{9508} + 21^5 + 1$ is the product of two primes. Find the smaller of these two primes.",
+          "problem_orig": "$21^{9508} + 21^5 + 1$은 두 소수의 곱이다. 이 두 소수 중 작은 것을 구하여라.",
+          "orig_lang": "ko"
+        }
+      ]
+    },
+    {
       "year": 2023,
       "problems": [
         {
