@@ -2048,6 +2048,76 @@
           "day": 1,
           "number": 4,
           "problem": "Determine the integers $k \\ge 2$ for which the sequence $\\binom{2n}{n} \\pmod{k}$, $n = 0, 1, 2, \\dots$, is eventually periodic."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Given positive integers $k$ and $m$, show that $m$ and $\\binom{n}{k}$ are coprime for infinitely many integers $n \\ge k$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $ABC$ be an acute triangle, and let $M$ be the midpoint of the side $AC$. A circle through $B$ and $M$ meets the sides $AB$ and $BC$ again at $P$ and $Q$, respectively. The reflection $T$ of $B$ across the midpoint of the segment $PQ$ lies on the circle $ABC$. Evaluate the ratio $BT/BM$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "Prove that:\n\na) If $(a_n)_{n \\ge 1}$ is a strictly increasing sequence of positive integers such that $(a_{2n-1} + a_{2n})/a_n$ is constant as $n$ runs through all positive integers, then this constant is an integer greater than or equal to $4$; and\n\nb) Given an integer $N \\ge 4$, there exists a strictly increasing sequence $(a_n)_{n \\ge 1}$ of positive integers such that $(a_{2n-1} + a_{2n})/a_n = N$ for all indices $n$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "a) Given any positive integer $n$, prove that every $n$ points in the closed unit square $[0, 1] \\times [0, 1]$ can be joined by a path of length less than $2\\sqrt{n} + 4$.\n\nb) Prove that there exist $n$ points in the closed unit square $[0, 1] \\times [0, 1]$ that cannot be joined by a path of length less than $\\sqrt{n} - 1$."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Given a positive integer $n$, determine all functions $f$ from the first $n$ positive integers to the positive integers, satisfying the following two conditions:\n\n(1) $\\sum_{k=1}^{n} f(k) = 2n$; and\n\n(2) $\\sum_{k \\in K} f(k) = n$ for no subset $K$ of the first $n$ positive integers."
+        },
+        {
+          "day": 3,
+          "number": 10,
+          "problem": "Given a positive integer $k$ and an integer $a \\equiv 3 \\pmod{8}$, show that $a^m + a + 2$ is divisible by $2^k$ for some positive integer $m$."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Given a positive integer $n$, show that for no set of integers modulo $n$, whose size exceeds $1 + \\sqrt{n+4}$, is it possible that the pairwise sums of unordered pairs be all distinct."
+        },
+        {
+          "day": 3,
+          "number": 12,
+          "problem": "Let $ABCD$ be a convex quadrilateral, and let $P$, $Q$, $R$, and $S$ be points on the sides $AB$, $BC$, $CD$, and $DA$, respectively. Let the line segments $PR$ and $QS$ meet at $O$. Suppose that each of the quadrilaterals $APOS$, $BQOP$, $CROQ$, and $DSOR$ has an incircle. Prove that the lines $AC$, $PQ$, and $RS$ are either concurrent or parallel to each other."
+        },
+        {
+          "day": 4,
+          "number": 13,
+          "problem": "Determine the planar finite configurations $C$ consisting of at least three points, satisfying the following condition: if $x$ and $y$ are distinct points of $C$, then at least one of the two equilateral triangles erected on the segment $xy$ has all three vertices in $C$."
+        },
+        {
+          "day": 4,
+          "number": 14,
+          "problem": "Let $ABC$ be a triangle such that $CA \\ne CB$, and let $D$, $F$, and $G$ be the midpoints of the sides $AB$, $AC$, and $BC$, respectively. A circle $\\gamma$ through $C$ and tangent to $AB$ at $D$ meets the segments $AF$ and $BG$ at $H$ and $I$, respectively. Reflect $H$ and $I$ across $F$ and $G$, respectively, to obtain $H'$ and $I'$, respectively. The line $H'I'$ meets the lines $CD$ and $FG$ at $Q$ and $M$, respectively, and the line $CM$ meets $\\gamma$ again at $P$. Prove that the triangle $CPQ$ is isosceles."
+        },
+        {
+          "day": 4,
+          "number": 15,
+          "problem": "Given a prime $p$, prove that the sum $\\sum_{k=1}^{\\lfloor q/p \\rfloor} k^{p-1}$ is not divisible by $q$ for all but finitely many primes $q$."
+        },
+        {
+          "day": 5,
+          "number": 16,
+          "problem": "Determine the positive integers expressible in the form $\\dfrac{x^2 + y}{xy + 1}$ for at least two pairs $(x, y)$ of positive integers."
+        },
+        {
+          "day": 5,
+          "number": 17,
+          "problem": "Determine all functions $f$ of the set of positive integers into itself such that $f(m) \\ge m$ and $f(m+n)$ divides $f(m) + f(n)$ for all positive integers $m$ and $n$."
+        },
+        {
+          "day": 5,
+          "number": 18,
+          "problem": "A set $S = \\{s_1, \\dots, s_k\\}$ of positive real numbers is polygonal if $k \\ge 3$ and there is a non-degenerate planar $k$-gon whose side lengths are exactly $s_1, \\dots, s_k$; the set $S$ is multipolygonal if in every partition of $S$ into two subsets, each of which has at least three elements, exactly one of these two subsets is polygonal. Fix an integer $n \\ge 7$.\n\na) Does there exist an $n$-element multipolygonal set, removal of whose maximal element leaves a multipolygonal set?\n\nb) Is it possible that every $(n-1)$-element subset of an $n$-element set of positive real numbers be multipolygonal?"
         }
       ]
     },
@@ -2268,6 +2338,36 @@
           "day": 1,
           "number": 4,
           "problem": "Let $m$ and $n$ be two positive integers and let $A_1, \\dots, A_m$ be sets of positive integers such that:\n\n(1) $A_i$ and $A_j$ are disjoint for all distinct indices $i$ and $j$;\n\n(2) $|A_i| = n$, $i = 1, \\dots, m$;\n\n(3) For every index $i$, no element of $A_i$ is divisible by any element of $A_{i+1}$, where indices are taken modulo $m$.\n\nDetermine the maximum number of ordered pairs $(a, b)$, where $a$ and $b$ are elements of different $A_i$'s and $b$ is divisible by $a$."
+        },
+        {
+          "day": 4,
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle, and let $I$ and $O$ be its incenter and circumcenter, respectively. The $A$-excircle touches the lines $AB$, $AC$, $BC$ at $K$, $L$, $M$, respectively. Show that, if the midpoint of the segment $KL$ lies on the circle $ABC$, then $I$, $M$, $O$ are collinear."
+        },
+        {
+          "day": 4,
+          "number": 6,
+          "problem": "Determine all positive integers $n$ for which $n^{n+1} + n - 1$ is the sixth power of an integer."
+        },
+        {
+          "day": 4,
+          "number": 7,
+          "problem": "Alice and Bob are given an integer $n \\ge 2$ and a token to play the following game. Initially, Alice chooses an order of the numbers $1, 2, \\dots, n$, and writes them down in a row, in that order, on a sheet of paper. Next, Bob chooses one of these numbers and places the token on that number. Continuing, Alice moves the token on one of the neighbouring numbers, then Bob moves the token on one of the neighbouring numbers of the current position, and so on and so forth in turns. For each $k$ in the range $1, 2, \\dots, n$, the token may be placed on number $k$ at most $k$ times; Bob's first move is counted. The player who can no longer move the token loses. Determine the values of $n$ for which Alice has a winning strategy."
+        },
+        {
+          "day": 5,
+          "number": 8,
+          "problem": "Determine the largest value the expression $$\\sum_{1 \\le i < j \\le 4} (x_i + x_j) \\sqrt{x_i x_j}$$ may achieve, as $x_1, x_2, x_3, x_4$ run through the non-negative real numbers that add up to $1$. Determine also the $x_i$ at which the maximum is achieved."
+        },
+        {
+          "day": 5,
+          "number": 9,
+          "problem": "Let $ABC$ be an acute triangle such that $AB < AC$. Let $I$ be the incentre of the triangle $ABC$, and let the incircle touch the side $BC$ at $D$. The line $AD$ crosses the circle $ABC$ again at $E$. Let $M$ be the midpoint of the side $BC$, and let $N$ be the midpoint of the circular arc $BAC$. The line $EN$ crosses the circular arc $BIC$ at $P$. Show that the lines $AD$ and $MP$ are parallel."
+        },
+        {
+          "day": 5,
+          "number": 10,
+          "problem": "Given an integer $n \\ge 2$, colour red exactly $n$ cells of an infinite sheet of grid paper. A rectangular grid array is called special if it contains at least two red opposite corner cells; single red cells and 1-row or 1-column grid arrays whose end-cells are both red are special. Given a configuration of exactly $n$ red cells, let $N$ be the largest number of red cells a special rectangular grid array may contain. Determine the least value $N$ may take on over all possible configurations of exactly $n$ red cells."
         }
       ]
     },
@@ -2378,6 +2478,36 @@
           "day": 2,
           "number": 10,
           "problem": "Fix two integers $m \\ge 2$ and $n \\ge 2$. Let $S$ be a set of lattice points in the Cartesian rectangle $[1, m] \\times [1, n]$; a lattice point is a point both of whose coordinates are integers. Prove that if $|S| \\ge m + n + \\left\\lfloor \\frac{1}{4}m + \\frac{1}{4}n - \\frac{1}{2} \\right\\rfloor$, then there exists a circle passing through at least four pairwise distinct points of $S$."
+        },
+        {
+          "day": 3,
+          "number": 11,
+          "problem": "Alice is drawing a shape on a piece of paper. She starts by placing her pencil at the origin, and then draws line segments of length one, alternating between vertical and horizontal segments. Eventually, her pencil returns to the origin, forming a closed, non-self-intersecting shape. Show that the area of this shape is even if and only if its perimeter is a multiple of eight."
+        },
+        {
+          "day": 3,
+          "number": 12,
+          "problem": "Let $ABC$ be a triangle with $AB < AC$ and let $D$ be the other intersection point of the angle bisector of $\\angle A$ with the circumcircle of the triangle $ABC$. Let $E$ and $F$ be points on the sides $AB$ and $AC$ respectively, such that $AE = AF$, and let $P$ be the point of intersection of $AD$ and $EF$. Let $M$ be the midpoint of $BC$. Prove that $AM$ and the circumcircles of the triangles $AEF$ and $PMD$ pass through a common point."
+        },
+        {
+          "day": 3,
+          "number": 13,
+          "problem": "Consider a prime number $p \\ge 11$. We call a triple $a, b, c$ of natural numbers suitable if they give non-zero, pairwise distinct residues modulo $p$. Further, for any natural numbers $a, b, c, k$ we define $$f_k(a,b,c)=a(b-c)^{p-k}+b(c-a)^{p-k}+c(a-b)^{p-k}.$$ Prove that there exist suitable $a, b, c$ for which $p \\mid f_2(a,b,c)$. Furthermore, for each such triple, prove that there exists $k \\ge 3$ for which $p \\nmid f_k(a,b,c)$ and determine the minimal $k$ with this property."
+        },
+        {
+          "day": 4,
+          "number": 14,
+          "problem": "A finite set $\\mathcal{L}$ of coplanar lines, no three of which are concurrent, is called odd if, for every line $\\ell$ in $\\mathcal{L}$, the total number of lines in $\\mathcal{L}$ crossed by $\\ell$ is odd.\n\na) Prove that every finite set of coplanar lines, no three of which are concurrent, extends to an odd set of coplanar lines.\n\nb) Given a positive integer $n$, determine the smallest nonnegative integer $k$ satisfying the following condition: every set of $n$ coplanar lines, no three of which are concurrent, extends to an odd set of $n+k$ coplanar lines."
+        },
+        {
+          "day": 4,
+          "number": 15,
+          "problem": "Fix a nonnegative integer $a_0$ to define a sequence of integers $a_0, a_1, \\ldots$ by letting $a_k$, $k \\ge 1$, be the smallest integer (strictly) greater than $a_{k-1}$ making $a_{k-1}+a_k$ into a perfect square. Let $S$ be the set of positive integers not expressible as the difference of two terms of the sequence $(a_k)_{k \\ge 0}$. Prove that $S$ is finite and determine its size in terms of $a_0$."
+        },
+        {
+          "day": 4,
+          "number": 16,
+          "problem": "Let $ABC$ be a triangle and let its incircle $\\gamma$ touch the sides $BC$, $CA$, $AB$ at $D$, $E$, $F$ respectively. Let $P$ be a point strictly in the interior of $\\gamma$. The segments $PA$, $PB$, $PC$ cross $\\gamma$ at $A_0$, $B_0$, $C_0$ respectively. Let $S_A$, $S_B$, $S_C$ be the centres of the circles $PEF$, $PFD$, $PDE$ respectively and let $T_A$, $T_B$, $T_C$ be the centres of the circles $PB_0C_0$, $PC_0A_0$, $PA_0B_0$ respectively. Prove that $S_AT_A$, $S_BT_B$ and $S_CT_C$ are concurrent."
         }
       ]
     },
