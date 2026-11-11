@@ -319,7 +319,7 @@
         },
         {
           "number": 4,
-          "problem": "Consider an $n\\times n$ array of numbers $(a_{ij})$, $1\\leq i, j\\leq n$. Suppose each row consists of the $n$ numbers $1, 2, 3, \\ldots, n$ in some order and $a_{ij}=a_{ji}$ for $i=1, 2, \\ldots, n$ and $j=1, 2, \\ldots, n$. If $n$ is odd, prove that the numbers $a_{11}, a_{22}, a_{33}, \\ldots, a_{nn}$ are $1, 2, 3, \\ldots, n$ in some order."
+          "problem": "Consider an $n\\times n$ array of numbers:\n$$\\begin{pmatrix} a_{11} & a_{12} & a_{13} & \\cdots & a_{1n}\\\\ a_{21} & a_{22} & a_{23} & \\cdots & a_{2n}\\\\ \\vdots & & & & \\vdots\\\\ a_{n1} & a_{n2} & a_{n3} & \\cdots & a_{nn}\\end{pmatrix}$$\nSuppose each row consists of the $n$ numbers $1, 2, 3, \\ldots, n$ in some order and $a_{ij}=a_{ji}$ for $i=1, 2, \\ldots, n$ and $j=1, 2, \\ldots, n$. If $n$ is odd, prove that the numbers $a_{11}, a_{22}, a_{33}, \\ldots, a_{nn}$ are $1, 2, 3, \\ldots, n$ in some order."
         },
         {
           "number": 5,
@@ -331,7 +331,40 @@
         },
         {
           "number": 7,
-          "problem": "Prove that the product of the first $200$ positive even integers differs from the product of the first $200$ positive odd integers by a multiple of $401$."
+          "problem": "Prove that the product of the first $1000$ positive even integers differs from the product of the first $1000$ positive odd integers by a multiple of $2001$."
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In an acute triangle $ABC$, points $D$, $E$, $F$ are located on the sides $BC$, $CA$, $AB$ respectively such that $$\\dfrac{CD}{CE}=\\dfrac{CA}{CB},\\quad \\dfrac{AE}{AF}=\\dfrac{AB}{AC},\\quad \\dfrac{BF}{BD}=\\dfrac{BC}{BA}.$$ Prove that $AD$, $BE$, $CF$ are the altitudes of $ABC$."
+        },
+        {
+          "number": 2,
+          "problem": "Solve the following equation for real $x$: $$(x^2+x-2)^3+(2x^2-x-1)^3=27(x^2-1)^3.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $a, b, c$ be positive integers such that $a$ divides $b^2$, $b$ divides $c^2$ and $c$ divides $a^2$. Prove that $abc$ divides $(a+b+c)^7$."
+        },
+        {
+          "number": 4,
+          "problem": "Suppose the integers $1, 2, 3, \\ldots, 10$ are split into two disjoint collections $a_1, a_2, a_3, a_4, a_5$ and $b_1, b_2, b_3, b_4, b_5$ such that $$a_1<a_2<a_3<a_4<a_5,$$ $$b_1>b_2>b_3>b_4>b_5.$$\n(i) Show that the larger number in any pair $\\{a_j, b_j\\}$, $1\\leq j\\leq 5$, is at least $6$.\n(ii) Show that $|a_1-b_1|+|a_2-b_2|+|a_3-b_3|+|a_4-b_4|+|a_5-b_5|=25$ for every such partition."
+        },
+        {
+          "number": 5,
+          "problem": "The circumference of a circle is divided into eight arcs by a convex quadrilateral $ABCD$, with four arcs lying inside the quadrilateral and the remaining four lying outside it. The lengths of the arcs lying inside the quadrilateral are denoted by $p$, $q$, $r$, $s$ in counter-clockwise direction starting from some arc. Suppose $p+r=q+s$. Prove that $ABCD$ is a cyclic quadrilateral."
+        },
+        {
+          "number": 6,
+          "problem": "For any natural number $n>1$, prove the inequality: $$\\dfrac{1}{2}<\\dfrac{1}{n^2+1}+\\dfrac{2}{n^2+2}+\\dfrac{3}{n^2+3}+\\cdots+\\dfrac{n}{n^2+n}<\\dfrac{1}{2}+\\dfrac{1}{2n}.$$"
+        },
+        {
+          "number": 7,
+          "problem": "Find all integers $a, b, c, d$ satisfying the following relations:\n(i) $1\\leq a\\leq b\\leq c\\leq d$;\n(ii) $ab+cd=a+b+c+d+3$."
         }
       ]
     },
@@ -770,6 +803,42 @@
           "paper_label": "Mumbai Region",
           "number": 8,
           "problem": "Let $x, y, z$ be positive real numbers such that $2(xy+yz+zx)=xyz$. Prove that $$\\frac{1}{(x-2)(y-2)(z-2)}+\\frac{8}{(x+2)(y+2)(z+2)}\\leq\\frac{1}{32}.$$"
+        },
+        {
+          "day": 5,
+          "number": 1,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABCD$ be a unit square. Draw a quadrant of a circle with $A$ as centre and $B, D$ as end points of the arc. Similarly, draw a quadrant of a circle with $B$ as centre and $A, C$ as end points of the arc. Inscribe a circle $\\Gamma$ touching the arc $AC$ externally, the arc $BD$ internally and also touching the side $AD$. Find the radius of the circle $\\Gamma$."
+        },
+        {
+          "day": 5,
+          "number": 2,
+          "paper_label": "Paper 4",
+          "problem": "Let $a, b, c$ be positive integers such that $a$ divides $b^2$, $b$ divides $c^2$ and $c$ divides $a^2$. Prove that $abc$ divides $(a+b+c)^7$."
+        },
+        {
+          "day": 5,
+          "number": 3,
+          "paper_label": "Paper 4",
+          "problem": "Let $a$ and $b$ be positive real numbers such that $a+b=1$. Prove that $$a^ab^b+a^bb^a\\leq 1.$$"
+        },
+        {
+          "day": 5,
+          "number": 4,
+          "paper_label": "Paper 4",
+          "problem": "Let $X=\\{1, 2, 3, \\ldots, 11\\}$. Find the number of pairs $\\{A, B\\}$ such that $A\\subseteq X$, $B\\subseteq X$, $A\\neq B$ and $A\\cap B=\\{4, 5, 7, 8, 9, 10\\}$."
+        },
+        {
+          "day": 5,
+          "number": 5,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABC$ be a triangle. Let $E$ be a point on the segment $BC$ such that $BE=2EC$. Let $F$ be the mid-point of $AC$. Let $BF$ intersect $AE$ in $Q$. Determine $BQ/QF$."
+        },
+        {
+          "day": 5,
+          "number": 6,
+          "paper_label": "Paper 4",
+          "problem": "Solve the system of equations for positive real numbers: $$\\frac{1}{xy}=\\frac{x}{z}+1,\\quad \\frac{1}{yz}=\\frac{y}{x}+1,\\quad \\frac{1}{zx}=\\frac{z}{y}+1.$$"
         }
       ]
     },
@@ -888,7 +957,7 @@
           "day": 4,
           "paper_label": "Mumbai Region",
           "number": 1,
-          "problem": "Let $ABC$ be an isosceles triangle with $AB=AC$ and let $\\Gamma$ denote its circumcircle. A point $D$ is on the arc $AB$ of $\\Gamma$ not containing $C$ and a point $E$ is on the arc $AC$ of $\\Gamma$ not containing $B$ such that $AD=CE$. Prove that $BE$ is parallel to $AD$."
+          "problem": "Let $ABC$ be an isosceles triangle with $AB=AC$ and let $\\Gamma$ denote its circumcircle. A point $D$ is on arc $AB$ of $\\Gamma$ not containing $C$. A point $E$ is on arc $AC$ of $\\Gamma$ not containing $B$. If $AD=CE$ prove that $BE$ is parallel to $AD$."
         },
         {
           "day": 4,
@@ -900,7 +969,7 @@
           "day": 4,
           "paper_label": "Mumbai Region",
           "number": 3,
-          "problem": "A finite non-empty set $S$ of integers is called $3$-good if the sum of the elements of $S$ is divisible by $3$. Find the number of $3$-good non-empty subsets of $\\{0, 1, 2, \\ldots, 9\\}$."
+          "problem": "A finite non-empty set of integers is called $3$-good if the sum of its elements is divisible by $3$. Find the number of non-empty $3$-good subsets of $\\{0, 1, 2, \\ldots, 9\\}$."
         },
         {
           "day": 4,
@@ -918,7 +987,43 @@
           "day": 4,
           "paper_label": "Mumbai Region",
           "number": 6,
-          "problem": "Let $a, b$ be real numbers and let $P(x)=x^3+ax^2+b$ and $Q(x)=x^3+bx+a$. Suppose that the roots of the equation $P(x)=0$ are the reciprocals of the roots of the equation $Q(x)=0$. Find the greatest common divisor of $P(2013!+1)$ and $Q(2013!+1)$."
+          "problem": "Let $P(x)=x^3+ax^2+b$ and $Q(x)=x^3+bx+a$, where $a, b$ are non-zero real numbers. Suppose that the roots of the equation $P(x)=0$ are the reciprocals of the roots of the equation $Q(x)=0$. Prove that $a$ and $b$ are integers. Find the greatest common divisor of $P(2013!+1)$ and $Q(2013!+1)$."
+        },
+        {
+          "day": 5,
+          "number": 1,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be an acute-angled triangle. The circle $\\Gamma$ with $BC$ as diameter intersects $AB$ and $AC$ again at $P$ and $Q$, respectively. Determine $\\angle BAC$ given that the orthocentre of triangle $APQ$ lies on $\\Gamma$."
+        },
+        {
+          "day": 5,
+          "number": 2,
+          "paper_label": "Paper 1",
+          "problem": "Let $f(x)=x^3+ax^2+bx+c$ and $g(x)=x^3+bx^2+cx+a$, where $a, b, c$ are integers with $c\\neq 0$. Suppose that the following conditions hold:\n(a) $f(1)=0$;\n(b) the roots of $g(x)=0$ are the squares of the roots of $f(x)=0$.\nFind the value of $a^{2013}+b^{2013}+c^{2013}$."
+        },
+        {
+          "day": 5,
+          "number": 3,
+          "paper_label": "Paper 1",
+          "problem": "Find all primes $p$ and $q$ such that $p$ divides $q^2-4$ and $q$ divides $p^2-1$."
+        },
+        {
+          "day": 5,
+          "number": 4,
+          "paper_label": "Paper 1",
+          "problem": "Find the number of $10$-tuples $(a_1, a_2, \\ldots, a_{10})$ of integers such that $|a_1|\\leq 1$ and $$a_1^2+a_2^2+a_3^2+\\cdots+a_{10}^2-a_1a_2-a_2a_3-a_3a_4-\\cdots-a_9a_{10}-a_{10}a_1=2.$$"
+        },
+        {
+          "day": 5,
+          "number": 5,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be a triangle with $\\angle A=90^\\circ$ and $AB=AC$. Let $D$ and $E$ be points on the segment $BC$ such that $BD:DE:EC=3:5:4$. Prove that $\\angle DAE=45^\\circ$."
+        },
+        {
+          "day": 5,
+          "number": 6,
+          "paper_label": "Paper 1",
+          "problem": "Suppose that $m$ and $n$ are integers such that both the quadratic equations $x^2+mx-n=0$ and $x^2-mx+n=0$ have integer roots. Prove that $n$ is divisible by $6$."
         }
       ]
     },
@@ -996,6 +1101,114 @@
           "paper_label": "Mumbai Region",
           "number": 6,
           "problem": "Let $D,E,F$ be the points of contact of the incircle of an acute-angled triangle $ABC$ with $BC,CA,AB$ respectively. Let $I_1,I_2,I_3$ be the incentres of the triangles $AFE, BDF, CED$, respectively. Prove that the lines $I_1D, I_2E, I_3F$ are concurrent."
+        },
+        {
+          "day": 3,
+          "number": 1,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be a triangle and let $AD$ be the perpendicular from $A$ on to $BC$. Let $K, L, M$ be points on $AD$ such that $AK=KL=LM=MD$. Draw lines parallel to $BC$ through $K, L, M$. If the sum of the areas of the shaded regions is equal to the sum of the areas of the unshaded regions, prove that $BD=DC$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/inr_2014_paper1_p1_fig.png"
+        },
+        {
+          "day": 3,
+          "number": 2,
+          "paper_label": "Paper 1",
+          "problem": "Let $a_1, a_2, \\ldots, a_{2n}$ be an arithmetic progression of positive real numbers with common difference $d$. Let\n(i) $a_1^2+a_3^2+\\cdots+a_{2n-1}^2=x$,\n(ii) $a_2^2+a_4^2+\\cdots+a_{2n}^2=y$, and\n(iii) $a_n+a_{n+1}=z$.\nExpress $d$ in terms of $x, y, z, n$."
+        },
+        {
+          "day": 3,
+          "number": 3,
+          "paper_label": "Paper 1",
+          "problem": "Suppose for some positive integers $r$ and $s$, the number $2^r$ is obtained by permuting the digits of the number $2^s$ in decimal expansion. Prove that $r=s$."
+        },
+        {
+          "day": 3,
+          "number": 4,
+          "paper_label": "Paper 1",
+          "problem": "Is it possible to write the numbers $17, 18, 19, \\ldots, 32$ in a $4\\times 4$ grid of unit squares, with one number in each square, such that the product of the numbers in each $2\\times 2$ sub-grids $AMRG$, $GRND$, $MBHR$ and $RHCN$ is divisible by $16$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/inr_2014_paper1_p4_fig.png"
+        },
+        {
+          "day": 3,
+          "number": 5,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be an acute-angled triangle and let $H$ be its ortho-centre. For any point $P$ on the circum-circle of triangle $ABC$, let $Q$ be the point of intersection of the line $BH$ with the line $AP$. Show that there is a unique point $X$ on the circum-circle of $ABC$ such that for every point $P\\neq A, B$, the circum-circle of $HQP$ passes through $X$."
+        },
+        {
+          "day": 3,
+          "number": 6,
+          "paper_label": "Paper 1",
+          "problem": "Let $x_1, x_2, \\ldots, x_{2014}$ be positive real numbers such that $\\sum_{j=1}^{2014}x_j=1$. Determine with proof the smallest constant $K$ such that $$K\\sum_{j=1}^{2014}\\frac{x_j^2}{1-x_j}\\geq 1.$$"
+        },
+        {
+          "day": 4,
+          "number": 1,
+          "paper_label": "Paper 2",
+          "problem": "In an acute-angled triangle $ABC$, $\\angle ABC$ is the largest angle. The perpendicular bisectors of $BC$ and $BA$ intersect $AC$ at $X$ and $Y$ respectively. Prove that circumcentre of triangle $ABC$ is incentre of triangle $BXY$."
+        },
+        {
+          "day": 4,
+          "number": 2,
+          "paper_label": "Paper 2",
+          "problem": "Let $x, y, z$ be positive real numbers. Prove that $$\\frac{y^2+z^2}{x}+\\frac{z^2+x^2}{y}+\\frac{x^2+y^2}{z}\\geq 2(x+y+z).$$"
+        },
+        {
+          "day": 4,
+          "number": 3,
+          "paper_label": "Paper 2",
+          "problem": "Find all pairs of $(x, y)$ of positive integers such that $2x+7y$ divides $7x+2y$."
+        },
+        {
+          "day": 4,
+          "number": 4,
+          "paper_label": "Paper 2",
+          "problem": "For any positive integer $n>1$, let $P(n)$ denote the largest prime not exceeding $n$. Let $N(n)$ denote the next prime larger than $P(n)$. (For example $P(10)=7$ and $N(10)=11$, while $P(11)=11$ and $N(11)=13$.) If $n+1$ is a prime number, prove that the value of the sum $$\\frac{1}{P(2)N(2)}+\\frac{1}{P(3)N(3)}+\\frac{1}{P(4)N(4)}+\\cdots+\\frac{1}{P(n)N(n)}=\\frac{n-1}{2n+2}.$$"
+        },
+        {
+          "day": 4,
+          "number": 5,
+          "paper_label": "Paper 2",
+          "problem": "Let $ABC$ be a triangle with $AB>AC$. Let $P$ be a point on the line $AB$ beyond $A$ such that $AP+PC=AB$. Let $M$ be the mid-point of $BC$ and let $Q$ be the point on the side $AB$ such that $CQ\\perp AM$. Prove that $BQ=2AP$."
+        },
+        {
+          "day": 4,
+          "number": 6,
+          "paper_label": "Paper 2",
+          "problem": "Let $n$ be an odd positive integer and suppose that each square of an $n\\times n$ grid is arbitrarily filled with either by $1$ or by $-1$. Let $r_j$ and $c_k$ denote the product of all numbers in $j$-th row and $k$-th column respectively, $1\\leq j, k\\leq n$. Prove that $$\\sum_{j=1}^{n}r_j+\\sum_{k=1}^{n}c_k\\neq 0.$$"
+        },
+        {
+          "day": 5,
+          "number": 1,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABCD$ be an isosceles trapezium having an incircle; let $AB$ and $CD$ be the parallel sides and let $CE$ be the perpendicular from $C$ on to $AB$. Prove that $CE$ is equal to the geometric mean of $AB$ and $CD$."
+        },
+        {
+          "day": 5,
+          "number": 2,
+          "paper_label": "Paper 4",
+          "problem": "If $x$ and $y$ are positive real numbers, prove that $$4x^4+4y^3+5x^2+y+1\\geq 12xy.$$"
+        },
+        {
+          "day": 5,
+          "number": 3,
+          "paper_label": "Paper 4",
+          "problem": "Determine all pairs $m>n$ of positive integers such that $$1=\\gcd(n+1, m+1)=\\gcd(n+2, m+2)=\\cdots=\\gcd(m, 2m-n).$$"
+        },
+        {
+          "day": 5,
+          "number": 4,
+          "paper_label": "Paper 4",
+          "problem": "What is the minimal area of a right-angled triangle whose inradius is $1$ unit?"
+        },
+        {
+          "day": 5,
+          "number": 5,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABC$ be an acute-angled triangle and let $I$ be its incentre. Let the incircle of triangle $ABC$ touch $BC$ in $D$. The incircle of the triangle $ABD$ touches $AB$ in $E$; the incircle of the triangle $ACD$ touches $BC$ in $F$. Prove that $B, E, I, F$ are concyclic."
+        },
+        {
+          "day": 5,
+          "number": 6,
+          "paper_label": "Paper 4",
+          "problem": "In the adjacent figure, can the numbers $1, 2, 3, 4, \\cdots, 18$ be placed, one on each line segment, such that the sum of the numbers on the three line segments meeting at each point is divisible by $3$?\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/inr_2014_paper4_p6_fig.png"
         }
       ]
     },
@@ -1201,27 +1414,177 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Given are two circles $\\omega_1,\\omega_2$ which intersect at points $X,Y$. Let $P$ be an arbitrary point on $\\omega_1$. Suppose that the lines $PX,PY$ meet $\\omega_2$ again at points $A,B$ respectively. Prove that the circumcircles of all triangles $PAB$ have the same radius."
+          "problem": "Given are two circles $\\omega_1,\\omega_2$ which intersect at points $X,Y$. Let $P$ be an arbitrary point on $\\omega_1$. Suppose that the lines $PX,PY$ meet $\\omega_2$ again at points $A,B$ respectively. Prove that the circumcircles of all triangles $PAB$ have the same radius.",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
         },
         {
           "number": 2,
-          "problem": "Consider a sequence $(a_k)_{k \\ge 1}$ of natural numbers defined as follows: $a_1=a$ and $a_2=b$ with $a,b>1$ and $\\gcd(a,b)=1$ and for all $k>0$, $a_{k+2}=a_{k+1}+a_k$. Prove that for all natural numbers $n$ and $k$, $\\gcd(a_n,a_{n+k}) <\\frac{a_k}{2}$."
+          "problem": "Consider a sequence $(a_k)_{k \\ge 1}$ of natural numbers defined as follows: $a_1=a$ and $a_2=b$ with $a,b>1$ and $\\gcd(a,b)=1$ and for all $k>0$, $a_{k+2}=a_{k+1}+a_k$. Prove that for all natural numbers $n$ and $k$, $\\gcd(a_n,a_{n+k}) <\\frac{a_k}{2}$.",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
         },
         {
           "number": 3,
-          "problem": "Two circles $C_1$ and $C_2$ intersect each other at points $A$ and $B$. Their external common tangent (closer to $B$) touches $C_1$ at $P$ and $C_2$ at $Q$. Let $C$ be the reflection of $B$ in line $PQ$. Prove that $\\angle CAP=\\angle BAQ$."
+          "problem": "Two circles $C_1$ and $C_2$ intersect each other at points $A$ and $B$. Their external common tangent (closer to $B$) touches $C_1$ at $P$ and $C_2$ at $Q$. Let $C$ be the reflection of $B$ in line $PQ$. Prove that $\\angle CAP=\\angle BAQ$.",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
         },
         {
           "number": 4,
-          "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=3$. Determine, with certainty, the largest possible value of the expression $$\\frac{a}{a^3+b^2+c}+\\frac{b}{b^3+c^2+a}+\\frac{c}{c^3+a^2+b}$$"
+          "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=3$. Determine, with certainty, the largest possible value of the expression $$\\frac{a}{a^3+b^2+c}+\\frac{b}{b^3+c^2+a}+\\frac{c}{c^3+a^2+b}$$",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
         },
         {
           "number": 5,
-          "problem": "a.) A 7-tuple $(a_1,a_2,a_3,a_4,b_1,b_2,b_3)$ of pairwise distinct positive integers with no common factor is called a shy tuple if $$a_1^2+a_2^2+a_3^2+a_4^2=b_1^2+b_2^2+b_3^2$$ and for all $1 \\le i<j \\le 4$ and $1 \\le k \\le 3$, $a_i^2+a_j^2 \\not= b_k^2$. Prove that there exists infinitely many shy tuples.\n\nb.) Show that $2016$ can be written as a sum of squares of four distinct natural numbers."
+          "problem": "a.) A 7-tuple $(a_1,a_2,a_3,a_4,b_1,b_2,b_3)$ of pairwise distinct positive integers with no common factor is called a shy tuple if $$a_1^2+a_2^2+a_3^2+a_4^2=b_1^2+b_2^2+b_3^2$$ and for all $1 \\le i<j \\le 4$ and $1 \\le k \\le 3$, $a_i^2+a_j^2 \\not= b_k^2$. Prove that there exists infinitely many shy tuples.\n\nb.) Show that $2016$ can be written as a sum of squares of four distinct natural numbers.",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
         },
         {
           "number": 6,
-          "problem": "A deck of $52$ cards is given. There are four suites each having cards numbered $1,2,\\dots, 13$. The audience chooses some five cards with distinct numbers written on them. The assistant of the magician comes by, looks at the five cards and turns exactly one of them face down and arranges all five cards in some order. Then the magician enters and with an agreement made beforehand with the assistant, he has to determine the face down card (both suite and number). Explain how the trick can be completed."
+          "problem": "A deck of $52$ cards is given. There are four suites each having cards numbered $1,2,\\dots, 13$. The audience chooses some five cards with distinct numbers written on them. The assistant of the magician comes by, looks at the five cards and turns exactly one of them face down and arranges all five cards in some order. Then the magician enters and with an agreement made beforehand with the assistant, he has to determine the face down card (both suite and number). Explain how the trick can be completed.",
+          "paper_label": "Regional paper (not in the HBCSE archive)"
+        },
+        {
+          "day": 1,
+          "number": 1,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be a right-angled triangle with $\\angle B=90^\\circ$. Let $I$ be the incentre of $ABC$. Draw a line perpendicular to $AI$ at $I$. Let it intersect the line $CB$ at $D$. Prove that $CI$ is perpendicular to $AD$ and prove that $ID=\\sqrt{b(b-a)}$ where $BC=a$ and $CA=b$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "paper_label": "Paper 1",
+          "problem": "Let $a, b, c$ be positive real numbers such that $$\\dfrac{a}{1+a}+\\dfrac{b}{1+b}+\\dfrac{c}{1+c}=1.$$ Prove that $abc\\le 1/8$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "paper_label": "Paper 1",
+          "problem": "For any natural number $n$, expressed in base $10$, let $S(n)$ denote the sum of all digits of $n$. Find all natural numbers $n$ such that $n=2S(n)^2$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "paper_label": "Paper 1",
+          "problem": "Find the number of all $6$-digit natural numbers having exactly three odd digits and three even digits."
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "paper_label": "Paper 1",
+          "problem": "Let $ABC$ be a triangle with centroid $G$. Let the circumcircle of triangle $AGB$ intersect the line $BC$ in $X$ different from $B$; and the circumcircle of triangle $AGC$ intersect the line $BC$ in $Y$ different from $C$. Prove that $G$ is the centroid of triangle $AXY$."
+        },
+        {
+          "day": 1,
+          "number": 6,
+          "paper_label": "Paper 1",
+          "problem": "Let $\\langle a_1, a_2, a_3, \\ldots\\rangle$ be a strictly increasing sequence of positive integers in an arithmetic progression. Prove that there is an infinite subsequence of the given sequence whose terms are in a geometric progression."
+        },
+        {
+          "day": 2,
+          "number": 1,
+          "paper_label": "Paper 2",
+          "problem": "Let $ABC$ be a right-angled triangle with $\\angle B=90^\\circ$. Let $I$ be the incentre of $ABC$. Let $AI$ extended intersect $BC$ at $F$. Draw a line perpendicular to $AI$ at $I$. Let it intersect $AC$ at $E$. Prove that $IE=IF$."
+        },
+        {
+          "day": 2,
+          "number": 2,
+          "paper_label": "Paper 2",
+          "problem": "Let $a, b, c$ be positive real numbers such that $$\\dfrac{a}{1+b}+\\dfrac{b}{1+c}+\\dfrac{c}{1+a}=1.$$ Prove that $abc\\le 1/8$."
+        },
+        {
+          "day": 2,
+          "number": 3,
+          "paper_label": "Paper 2",
+          "problem": "For any natural number $n$, expressed in base $10$, let $S(n)$ denote the sum of all digits of $n$. Find all natural numbers $n$ such that $n^3=8S(n)^3+6nS(n)+1$."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "paper_label": "Paper 2",
+          "problem": "How many $6$-digit natural numbers containing only the digits $1, 2, 3$ are there in which $3$ occurs exactly twice and the number is divisible by $9$?"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "paper_label": "Paper 2",
+          "problem": "Let $ABC$ be a right-angled triangle with $\\angle B=90^\\circ$. Let $AD$ be the bisector of $\\angle A$ with $D$ on $BC$. Let the circumcircle of triangle $ACD$ intersect $AB$ again in $E$; and let the circumcircle of triangle $ABD$ intersect $AC$ again in $F$. Let $K$ be the reflection of $E$ in the line $BC$. Prove that $FK=BC$."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "paper_label": "Paper 2",
+          "problem": "Show that the infinite arithmetic progression $\\langle 1, 4, 7, 10, \\ldots\\rangle$ has infinitely many $3$-term subsequences in harmonic progression such that for any two such triples $\\langle a_1, a_2, a_3\\rangle$ and $\\langle b_1, b_2, b_3\\rangle$ in harmonic progression, one has $$\\dfrac{a_1}{b_1}\\neq\\dfrac{a_2}{b_2}.$$"
+        },
+        {
+          "day": 3,
+          "number": 1,
+          "paper_label": "Paper 3",
+          "problem": "Let $ABC$ be a triangle and $D$ be the mid-point of $BC$. Suppose the angle bisector of $\\angle ADC$ is tangent to the circumcircle of triangle $ABD$ at $D$. Prove that $\\angle A=90^\\circ$."
+        },
+        {
+          "day": 3,
+          "number": 2,
+          "paper_label": "Paper 3",
+          "problem": "Let $a, b, c$ be three distinct positive real numbers such that $abc=1$. Prove that $$\\dfrac{a^3}{(a-b)(a-c)}+\\dfrac{b^3}{(b-c)(b-a)}+\\dfrac{c^3}{(c-a)(c-b)}\\ge 3.$$"
+        },
+        {
+          "day": 3,
+          "number": 3,
+          "paper_label": "Paper 3",
+          "problem": "Let $a, b, c, d, e, f$ be positive integers such that $$\\dfrac{a}{b}<\\dfrac{c}{d}<\\dfrac{e}{f}.$$ Suppose $af-be=-1$. Show that $d\\ge b+f$."
+        },
+        {
+          "day": 3,
+          "number": 4,
+          "paper_label": "Paper 3",
+          "problem": "There are $100$ countries participating in an olympiad. Suppose $n$ is a positive integer such that each of the $100$ countries is willing to communicate in exactly $n$ languages. If each set of $20$ countries can communicate in at least one common language, and no language is common to all $100$ countries, what is the minimum possible value of $n$?"
+        },
+        {
+          "day": 3,
+          "number": 5,
+          "paper_label": "Paper 3",
+          "problem": "Let $ABC$ be a right-angled triangle with $\\angle B=90^\\circ$. Let $I$ be the incentre of $ABC$. Extend $AI$ and $CI$; let them intersect $BC$ in $D$ and $AB$ in $E$ respectively. Draw a line perpendicular to $AI$ at $I$ to meet $AC$ in $J$; draw a line perpendicular to $CI$ at $I$ to meet $AC$ in $K$. Suppose $DJ=EK$. Prove that $BA=BC$."
+        },
+        {
+          "day": 3,
+          "number": 6,
+          "paper_label": "Paper 3",
+          "problem": "(a) Given any natural number $N$, prove that there exists a strictly increasing sequence of $N$ positive integers in harmonic progression.\n\n(b) Prove that there cannot exist a strictly increasing infinite sequence of positive integers which is in harmonic progression."
+        },
+        {
+          "day": 4,
+          "number": 1,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABC$ be an isosceles triangle with $AB=AC$. Let $\\Gamma$ be its circumcircle and let $O$ be the centre of $\\Gamma$. Let $CO$ meet $\\Gamma$ in $D$. Draw a line parallel to $AC$ through $D$. Let it intersect $AB$ at $E$. Suppose $AE:EB=2:1$. Prove that $ABC$ is an equilateral triangle."
+        },
+        {
+          "day": 4,
+          "number": 2,
+          "paper_label": "Paper 4",
+          "problem": "Let $a, b, c$ be positive real numbers such that $$\\dfrac{ab}{1+bc}+\\dfrac{bc}{1+ca}+\\dfrac{ca}{1+ab}=1.$$ Prove that $\\dfrac{1}{a^3}+\\dfrac{1}{b^3}+\\dfrac{1}{c^3}\\ge 6\\sqrt{2}$."
+        },
+        {
+          "day": 4,
+          "number": 3,
+          "paper_label": "Paper 4",
+          "problem": "The present ages in years of two brothers $A$ and $B$, and their father $C$ are three distinct positive integers $a$, $b$, and $c$ respectively. Suppose $\\dfrac{b-1}{a-1}$ and $\\dfrac{b+1}{a+1}$ are two consecutive integers, and $\\dfrac{c-1}{b-1}$ and $\\dfrac{c+1}{b+1}$ are two consecutive integers. If $a+b+c\\le 150$ determine $a$, $b$ and $c$."
+        },
+        {
+          "day": 4,
+          "number": 4,
+          "paper_label": "Paper 4",
+          "problem": "A box contains $4032$ answer scripts out of which exactly half have odd number of marks. We choose $2$ scripts randomly and, if the scores on both of them are odd number, we add one mark to one of them, put the script back in the box and keep the other script outside. If both scripts have even scores, we put back one of the scripts and keep the other outside. If there is one script with even score and the other with odd score, we put back the script with the odd score and keep the other script outside. After following this procedure a number of times, there are $3$ scripts left among which there is at least one script each with odd and even scores. Find, with proof, the number of scripts with odd scores among the three left."
+        },
+        {
+          "day": 4,
+          "number": 5,
+          "paper_label": "Paper 4",
+          "problem": "Let $ABC$ be a triangle, $AD$ an altitude and $AE$ a median. Assume $B, D, E, C$ lie in that order on the line $BC$. Suppose the incentre of triangle $ABE$ lies on $AD$ and the incentre of $ADC$ lies on $AE$. Find, with proof, the angles of triangle $ABC$."
+        },
+        {
+          "day": 4,
+          "number": 6,
+          "paper_label": "Paper 4",
+          "problem": "(i) Prove that if an infinite sequence of strictly increasing positive integers in arithmetic progression has one cube then it has infinitely many cubes.\n\n(ii) Find, with justification, an infinite sequence of strictly increasing positive integers in arithmetic progression which does not have any cube."
         }
       ]
     },
@@ -1234,7 +1597,7 @@
         },
         {
           "number": 2,
-          "problem": "Show that the equation $a^3+(a+1)^3+\\ldots+(a+6)^3=b^4+(b+1)^4$ has no solutions in integers $a,b$."
+          "problem": "Show that the equation $$a^3+(a+1)^3+(a+2)^3+(a+3)^3+(a+4)^3+(a+5)^3+(a+6)^3=b^4+(b+1)^4$$ has no solutions in integers $a,b$."
         },
         {
           "number": 3,
@@ -1246,7 +1609,7 @@
         },
         {
           "number": 5,
-          "problem": "Let $\\Omega$ be a circle with a chord $AB$ which is not a diameter. $\\Gamma_{1}$ be a circle on one side of $AB$ such that it is tangent to $AB$ at $C$ and internally tangent to $\\Omega$ at $D$. Likewise, let $\\Gamma_{2}$ be a circle on the other side of $AB$ such that it is tangent to $AB$ at $E$ and internally tangent to $\\Omega$ at $F$. Suppose the line $DC$ intersects $\\Omega$ at $X \\neq D$ and the line $FE$ intersects $\\Omega$ at $Y \\neq F$. Prove that $XY$ is a diameter of $\\Omega$."
+          "problem": "Let $\\Omega$ be a circle with a chord $AB$ which is not a diameter. Let $\\Gamma_{1}$ be a circle on one side of $AB$ such that it is tangent to $AB$ at $C$ and internally tangent to $\\Omega$ at $D$. Likewise, let $\\Gamma_{2}$ be a circle on the other side of $AB$ such that it is tangent to $AB$ at $E$ and internally tangent to $\\Omega$ at $F$. Suppose the line $DC$ intersects $\\Omega$ at $X \\neq D$ and the line $FE$ intersects $\\Omega$ at $Y \\neq F$. Prove that $XY$ is a diameter of $\\Omega$."
         },
         {
           "number": 6,
@@ -1259,27 +1622,69 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $ABC$ be a triangle with integer sides in which $AB<AC$. Let the tangent to the circumcircle of triangle $ABC$ at $A$ intersect the line $BC$ at $D$. Suppose $AD$ is also an integer. Prove that $\\gcd(AB,AC)>1$."
+          "problem": "Let $ABC$ be a triangle with integer sides in which $AB<AC$. Let the tangent to the circumcircle of triangle $ABC$ at $A$ intersect the line $BC$ at $D$. Suppose $AD$ is also an integer. Prove that $\\gcd(AB,AC)>1$.",
+          "paper_label": "Main paper"
         },
         {
           "number": 2,
-          "problem": "Let $n$ be a natural number. Find all real numbers $x$ satisfying the equation $$\\sum^n_{k=1}\\frac{kx^k}{1+x^{2k}}=\\frac{n(n+1)}4.$$"
+          "problem": "Let $n$ be a natural number. Find all real numbers $x$ satisfying the equation $$\\sum^n_{k=1}\\frac{kx^k}{1+x^{2k}}=\\frac{n(n+1)}4.$$",
+          "paper_label": "Main paper"
         },
         {
           "number": 3,
-          "problem": "For a rational number $r$, its period is the length of the smallest repeating block in its decimal expansion. For example, the number $r=0.123123123...$ has period $3$. If $S$ denotes the set of all rational numbers of the form $r=0.\\overline{abcdefgh}$ having period $8$, find the sum of all elements in $S$."
+          "problem": "For a rational number $r$, its period is the length of the smallest repeating block in its decimal expansion. For example, the number $r=0.123123123\\cdots$ has period $3$. If $S$ denotes the set of all rational numbers $r$ of the form $r=0.\\overline{abcdefgh}$ having period $8$, find the sum of all the elements of $S$.",
+          "paper_label": "Main paper"
         },
         {
           "number": 4,
-          "problem": "Find all natural numbers $n$ such that $1+[\\sqrt{2n}]~$ divides $2n$.\n\n( For any real number $x$, $[x]$ denotes the largest integer not exceeding $x$. )"
+          "problem": "Let $E$ denote the set of $25$ points $(m,n)$ in the $xy$-plane, where $m,n$ are natural numbers, $1\\leq m\\leq 5$, $1\\leq n\\leq 5$. Suppose the points of $E$ are arbitrarily coloured using two colours, red and blue. Show that there always exist four points in the set $E$ of the form $(a,b),(a+k,b),(a+k,b+k),(a,b+k)$ for some positive integer $k$ such that at least three of these four points have the same colour. (That is, there always exist four points in the set $E$ which form the vertices of a square and having at least three points of the same colour.)",
+          "paper_label": "Main paper"
         },
         {
           "number": 5,
-          "problem": "Let $E$ denote the set of $25$ points $(m,n)$ in the $xy$-plane, where $m,n$ are natural numbers, $1\\leq m\\leq5,1\\leq n\\leq5$. Suppose the points of $E$ are arbitrarily coloured using two colours, red and blue. Show that there always exist four points in the set $E$ of the form $(a,b),(a+k,b),(a+k,b+k),(a,b+k)$ for some positive integer $k$ such that at least three of these four points have the same colour. (That is, there always exist four points in the set $E$ which form the vertices of a square with sides parallel to the axes and having at least three points of the same colour.)"
+          "problem": "Find all natural numbers $n$ such that $1+[\\sqrt{2n}]~$ divides $2n$.\n\n( For any real number $x$, $[x]$ denotes the largest integer not exceeding $x$. )",
+          "paper_label": "Main paper"
         },
         {
           "number": 6,
-          "problem": "Let $ABC$ be an acute-angled triangle with $AB<AC$. Let $I$ be the incentre of triangle $ABC$, and let $D,E,F$ be the points where the incircle touches the sides $BC,CA,AB,$ respectively. Let $BI,CI$ meet the line $EF$ at $Y,X$ respectively. Further assume that both $X$ and $Y$ are outside the triangle $ABC$. Prove that $\\text{(i)}$ $B,C,Y,X$ are concyclic. $\\text{(ii)}$ $I$ is also the incentre of triangle $DYX$."
+          "problem": "Let $ABC$ be an acute-angled triangle with $AB<AC$. Let $I$ be the incentre of triangle $ABC$, and let $D,E,F$ be the points at which its incircle touches the sides $BC,CA,AB$, respectively. Let $BI$, $CI$ meet the line $EF$ at $Y,X$, respectively. Further assume that both $X$ and $Y$ are outside the triangle $ABC$. Prove that\n\n(i) $B,C,Y,X$ are concyclic; and\n\n(ii) $I$ is also the incentre of triangle $DYX$.",
+          "paper_label": "Main paper"
+        },
+        {
+          "day": 1,
+          "number": 1,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "Let $ABC$ be an acute-angled triangle and let $D$ be an interior point of the line segment $BC$. Let the circumcircle of triangle $ACD$ intersect $AB$ at $E$ ($E$ between $A$ and $B$) and let the circumcircle of triangle $ABD$ intersect $AC$ at $F$ ($F$ between $A$ and $C$). Let $O$ be the circumcentre of triangle $AEF$. Prove that $OD$ bisects $\\angle EDF$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "Find the set of all real values of $a$ for which the real polynomial equation $P(x)=x^2-2ax+b=0$ has real roots given that $P(0)\\cdot P(1)\\cdot P(2)\\neq 0$ and $P(0)$, $P(1)$, $P(2)$ form a geometric progression."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "Show that there are infinitely many $4$-tuples $(a,b,c,d)$ of natural numbers such that $a^3+b^4+c^5=d^7$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "Suppose $100$ points in the plane are coloured using two colours, red and white, such that each red point is the centre of a circle passing through at least three white points. What is the least possible number of white points?"
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "In a cyclic quadrilateral $ABCD$ with circumcentre $O$, the diagonals $AC$ and $BD$ intersect at $X$. Let the circumcircles of triangles $AXD$ and $BXC$ intersect at $Y$. Let the circumcircles of triangles $AXB$ and $CXD$ intersect at $Z$. If $O$ lies inside $ABCD$ and if the points $O$, $X$, $Y$, $Z$ are all distinct, prove that $O$, $X$, $Y$, $Z$ lie on a circle."
+        },
+        {
+          "day": 1,
+          "number": 6,
+          "paper_label": "Kerala and Tamil Nadu Regions",
+          "problem": "Define a sequence $\\langle a_n\\rangle_{n\\geq 1}$ of real numbers by $$a_1=2,\\quad a_{n+1}=\\dfrac{a_n^2+1}{2},\\ \\text{for } n\\geq 1.$$ Prove that $$\\sum_{j=1}^{N}\\dfrac{1}{a_j+1}<1$$ for every natural number $N$."
         }
       ]
     },
@@ -1292,19 +1697,19 @@
         },
         {
           "number": 2,
-          "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=1$. Prove that $$\\frac{a}{a^2+b^3+c^3}+\\frac{b}{b^2+a^3+c^3}+\\frac{c}{c^2+a^3+b^3}\\leq\\frac{1}{5abc}$$"
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\Omega$ and let $G$ be the centroid of triangle $ABC$. Extend $AG$, $BG$ and $CG$ to meet the circle $\\Omega$ again in $A_1$, $B_1$ and $C_1$, respectively. Suppose $\\angle BAC = \\angle A_1 B_1 C_1$, $\\angle ABC = \\angle A_1 C_1 B_1$ and $\\angle ACB = \\angle B_1 A_1 C_1$. Prove that $ABC$ and $A_1 B_1 C_1$ are equilateral triangles."
         },
         {
           "number": 3,
-          "problem": "Let $ABC$ be a triangle with circumcircle $\\Omega$ and let $G$ be the centroid of triangle $ABC$. Extend $AG, BG$ and $CG$ to meet the circle $\\Omega$ again in $A_1, B_1$ and $C_1$. Suppose $\\angle BAC = \\angle A_1 B_1 C_1, \\angle ABC = \\angle A_1 C_1 B_1$ and $\\angle ACB = \\angle B_1 A_1 C_1$. Prove that $ABC$ and $A_1 B_1 C_1$ are equilateral triangles."
+          "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=1$. Prove that $$\\frac{a}{a^2+b^3+c^3}+\\frac{b}{b^2+c^3+a^3}+\\frac{c}{c^2+a^3+b^3}\\leq\\frac{1}{5abc}.$$"
         },
         {
           "number": 4,
-          "problem": "In an acute angled triangle $ABC$, let $H$ be the orthocenter, and let $D,E,F$ be the feet of altitudes from $A,B,C$ to the opposite sides, respectively. Let $L,M,N$ be the midpoints of the segments $AH, EF, BC$ respectively. Let $X,Y$ be the feet of altitudes from $L,N$ on to the line $DF$ respectively. Prove that $XM$ is perpendicular to $MY$."
+          "problem": "Consider the following $3\\times 2$ array formed by using the numbers $1, 2, 3, 4, 5, 6$: $$\\begin{pmatrix} a_{11} & a_{12}\\\\ a_{21} & a_{22}\\\\ a_{31} & a_{32}\\end{pmatrix}=\\begin{pmatrix} 1 & 6\\\\ 2 & 5\\\\ 3 & 4\\end{pmatrix}.$$ Observe that all row sums are equal, but the sum of the squares is not the same for each row. Extend the above array to a $3\\times k$ array $(a_{ij})_{3\\times k}$ for a suitable $k$, adding more columns, using the numbers $7, 8, 9, \\ldots, 3k$ such that $$\\sum_{j=1}^k a_{1j}=\\sum_{j=1}^k a_{2j}=\\sum_{j=1}^k a_{3j}\\quad\\text{and}\\quad\\sum_{j=1}^k a_{1j}^2=\\sum_{j=1}^k a_{2j}^2=\\sum_{j=1}^k a_{3j}^2.$$"
         },
         {
           "number": 5,
-          "problem": "Consider the following $3\\times 2$ array formed by using the numbers $1, 2, 3, 4, 5, 6$: $$\\begin{pmatrix} a_{11} & a_{12}\\\\ a_{21} & a_{22}\\\\ a_{31} & a_{32}\\end{pmatrix}=\\begin{pmatrix} 1 & 6\\\\ 2 & 5\\\\ 3 & 4\\end{pmatrix}.$$ Observe that all row sums are equal, but the sum of the squares is not the same for each row. Extend the above array to a $3\\times k$ array $(a_{ij})_{3\\times k}$ for a suitable $k$, adding more columns, using the numbers $7, 8, 9, \\ldots, 3k$ such that $$\\sum_{j=1}^k a_{1j}=\\sum_{j=1}^k a_{2j}=\\sum_{j=1}^k a_{3j}\\quad\\text{and}\\quad\\sum_{j=1}^k a_{1j}^2=\\sum_{j=1}^k a_{2j}^2=\\sum_{j=1}^k a_{3j}^2.$$"
+          "problem": "In an acute angled triangle $ABC$, let $H$ be the orthocenter, and let $D,E,F$ be the feet of altitudes from $A,B,C$ to the opposite sides, respectively. Let $L,M,N$ be midpoints of segments $AH, EF, BC$, respectively. Let $X,Y$ be feet of altitudes from $L,N$ on to the line $DF$. Prove that $XM$ is perpendicular to $MY$."
         },
         {
           "number": 6,
@@ -1317,27 +1722,69 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $\\mathbb{N}$ be the set of all positive integers and $S=\\left\\{(a, b, c, d) \\in \\mathbb{N}^4: a^2+b^2+c^2=d^2\\right\\}$. Find the largest positive integer $m$ such that $m$ divides $abcd$ for all $(a, b, c, d) \\in S$."
+          "problem": "Let $\\mathbb{N}$ be the set of all positive integers and $S=\\left\\{(a, b, c, d) \\in \\mathbb{N}^4: a^2+b^2+c^2=d^2\\right\\}$. Find the largest positive integer $m$ such that $m$ divides $abcd$ for all $(a, b, c, d) \\in S$.",
+          "paper_label": "Main paper"
         },
         {
           "number": 2,
-          "problem": "Let $\\omega$ be a semicircle with $A B$ as the bounding diameter and let $C D$ be a variable chord of the semicircle of constant length such that $C, D$ lie in the interior of the arc $A B$. Let $E$ be a point on the diameter $A B$ such that $C E$ and $D E$ are equally inclined to the line $A B$. Prove that\n(a) the measure of $\\angle C E D$ is a constant;\n(b) the circumcircle of triangle $C E D$ passes through a fixed point."
+          "problem": "Let $\\omega$ be a semicircle with $A B$ as the bounding diameter and let $C D$ be a variable chord of the semicircle of constant length such that $C, D$ lie in the interior of the arc $A B$. Let $E$ be a point on the diameter $A B$ such that $C E$ and $D E$ are equally inclined to the line $A B$. Prove that\n(a) the measure of $\\angle C E D$ is a constant;\n(b) the circumcircle of triangle $C E D$ passes through a fixed point.",
+          "paper_label": "Main paper"
         },
         {
           "number": 3,
-          "problem": "For any natural number $n$, expressed in base 10 , let $s(n)$ denote the sum of all its digits. Find all natural numbers $m$ and $n$ such that $m<n$ and $$(s(n))^2=m \\text { and }(s(m))^2=n .$$"
+          "problem": "For any natural number $n$, expressed in base 10 , let $s(n)$ denote the sum of all its digits. Find all natural numbers $m$ and $n$ such that $m<n$ and $$(s(n))^2=m \\text { and }(s(m))^2=n .$$",
+          "paper_label": "Main paper"
         },
         {
           "number": 4,
-          "problem": "Let $\\Omega_1, \\Omega_2$ be two intersecting circles with centres $O_1, O_2$ respectively. Let $l$ be a line that intersects $\\Omega_1$ at points $A, C$ and $\\Omega_2$ at points $B, D$ such that $A, B, C, D$ are collinear in that order. Let the perpendicular bisector of segment $A B$ intersect $\\Omega_1$ at points $P, Q$; and the perpendicular bisector of segment $C D$ intersect $\\Omega_2$ at points $R, S$ such that $P, R$ are on the same side of $l$. Prove that the midpoints of $P R, Q S$ and $O_1 O_2$ are collinear."
+          "problem": "Let $\\Omega_1, \\Omega_2$ be two intersecting circles with centres $O_1, O_2$ respectively. Let $l$ be a line that intersects $\\Omega_1$ at points $A, C$ and $\\Omega_2$ at points $B, D$ such that $A, B, C, D$ are collinear in that order. Let the perpendicular bisector of segment $A B$ intersect $\\Omega_1$ at points $P, Q$; and the perpendicular bisector of segment $C D$ intersect $\\Omega_2$ at points $R, S$ such that $P, R$ are on the same side of $l$. Prove that the midpoints of $P R, Q S$ and $O_1 O_2$ are collinear.",
+          "paper_label": "Main paper"
         },
         {
           "number": 5,
-          "problem": "Consider a set of $16$ points arranged in $4 \\times 4$ square grid formation. Prove that if any $7$ of these points are coloured blue, then there exists an isosceles right-angled triangle whose vertices are all blue."
+          "problem": "Let $n>k>1$ be positive integers. Determine all positive real numbers $a_1, a_2, \\ldots, a_n$ which satisfy $$\\sum_{i=1}^n \\sqrt{\\frac{k a_i^k}{(k-1) a_i^k+1}}=\\sum_{i=1}^n a_i=n .$$",
+          "paper_label": "Main paper"
         },
         {
           "number": 6,
-          "problem": "Let $n>k>1$ be positive integers. Determine all positive real numbers $a_1, a_2, \\ldots, a_n$ which satisfy $$\\sum_{i=1}^n \\sqrt{\\frac{k a_i^k}{(k-1) a_i^k+1}}=\\sum_{i=1}^n a_i=n .$$"
+          "problem": "Consider a set of $16$ points arranged in $4 \\times 4$ square grid formation. Prove that if any $7$ of these points are coloured blue, then there exists an isosceles right-angled triangle whose vertices are all blue.",
+          "paper_label": "Main paper"
+        },
+        {
+          "day": 1,
+          "number": 1,
+          "paper_label": "KV and JNV paper",
+          "problem": "Given a triangle $ABC$ with $\\angle ACB=120^\\circ$. The point $L$ is marked on the side $AB$ so that $CL$ is the bisector of $\\angle ACB$. The points $N$ and $K$ are marked on the sides $AC$ and $BC$, respectively, so that $CN+CK=CL$. Prove that the triangle $KLN$ is equilateral."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "paper_label": "KV and JNV paper",
+          "problem": "Given a prime number $p$ such that the number $2p$ is equal to the sum of the squares of some four consecutive positive integers. Prove that $p-7$ is divisible by $36$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "paper_label": "KV and JNV paper",
+          "problem": "Let $f(x)$ be a polynomial with real coefficients of degree $2$. Suppose that for some pairwise distinct real numbers $a$, $b$, $c$ we have $$f(a)=bc;\\ f(b)=ca;\\ f(c)=ab.$$ Determine $f(a+b+c)$ in terms of $a$, $b$, $c$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "paper_label": "KV and JNV paper",
+          "problem": "The set $X$ of $N$ four-digit numbers formed from the digits $1, 2, 3, 4, 5, 6, 7, 8$ satisfies the following condition:\nfor any two different digits from $1, 2, 3, 4, 5, 6, 7, 8$ there exists a number in $X$ which contains both of them.\nDetermine the smallest possible value of $N$."
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "paper_label": "KV and JNV paper",
+          "problem": "The side-lengths $a$, $b$, $c$ of a triangle $ABC$ are positive integers. Let $$T_n=(a+b+c)^{2n}-(a-b+c)^{2n}-(a+b-c)^{2n}+(a-b-c)^{2n}$$ for any positive integer $n$. If $\\dfrac{T_2}{2T_1}=2023$ and $a>b>c$, determine all possible perimeters of the triangle $ABC$."
+        },
+        {
+          "day": 1,
+          "number": 6,
+          "paper_label": "KV and JNV paper",
+          "problem": "The diagonals $AC$ and $BD$ of a cyclic quadrilateral $ABCD$ meet at $P$. The point $Q$ is chosen on the segment $BC$ so that $PQ$ is perpendicular to $AC$. Prove that the line joining the centres of the circumcircles of triangles $APD$ and $BQD$ is parallel to $AD$."
         }
       ]
     },
@@ -1346,11 +1793,11 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Let $n>1$ be a positive integer. Call a rearrangement $a_1,a_2, \\cdots , a_n$ of $1,2, \\cdots , n$ nice if for every $k = 2,3, \\cdots , n$, we have that $a_1 + a_2 + \\cdots + a_k$ is not divisible by $k$.\n(a) If $n>1$ is odd, prove that there is no nice arrangement of $1,2, \\cdots , n$.\n(b) If $n$ is even, find a nice arrangement of $1,2, \\cdots , n$."
+          "problem": "Let $n>1$ be a positive integer. Call a rearrangement $a_1,a_2, \\ldots , a_n$ of $1,2, \\ldots , n$ nice if for every $k = 2,3, \\ldots , n$, we have that $a_1 + a_2 + \\cdots + a_k$ is not divisible by $k$.\n(a) If $n>1$ is odd, prove that there is no nice rearrangement of $1,2, \\ldots , n$.\n(b) If $n$ is even, find a nice rearrangement of $1,2, \\ldots , n$."
         },
         {
           "number": 2,
-          "problem": "For a positive integer $n$, let $R(n)$ be the sum of the remainders when $n$ is divided by $1,2, \\cdots , n$. For example, $R(4) = 0 + 0 + 1 + 0 = 1,$ $R(7) = 0 + 1 + 1 + 3 + 2 + 1 + 0 = 8$. Find all positive integers such that $R(n) = n-1$."
+          "problem": "For a positive integer $n$, let $R(n)$ be the sum of the remainders when $n$ is divided by $1,2, \\ldots , n$. For example, $R(4) = 0 + 0 + 1 + 0 = 1,$ $R(7) = 0 + 1 + 1 + 3 + 2 + 1 + 0 = 8$. Find all positive integers $n$ such that $R(n) = n-1$."
         },
         {
           "number": 3,
@@ -1358,12 +1805,12 @@
         },
         {
           "number": 4,
-          "problem": "Let $ABCD$ be a cyclic quadrilateral such that $AB \\parallel CD$. Let $O$ be the circumcenter of $ABCD$ and $L$ be the point on $AD$ such that $OL$ is perpendicular to $AD$. Prove that\n$$OB\\cdot(AB+CD) = OL\\cdot(AC + BD).$$",
-          "proposer": "Rijul Saini"
+          "problem": "Let $a_1,a_2,a_3,a_4$ be real numbers such that $a_1^2 + a_2^2 + a_3^2 + a_4^2 = 1$. Show that there exist $i,j$ with $1 \\leq i < j \\leq 4$, such that $(a_i - a_j)^2 \\leq \\frac{1}{5}$."
         },
         {
           "number": 5,
-          "problem": "Let $a_1,a_2,a_3,a_4$ be real numbers such that $a_1^2 + a_2^2 + a_3^2 + a_4^2 = 1$. Show that there exist $i,j$ with $1 \\leq i < j \\leq 4$, such that $(a_i - a_j)^2 \\leq \\frac{1}{5}$."
+          "problem": "Let $ABCD$ be a cyclic quadrilateral such that $AB \\parallel CD$. Let $O$ be the circumcenter of $ABCD$ and $L$ be the point on $AD$ such that $OL$ is perpendicular to $AD$. Prove that\n$$OB\\cdot(AB+CD) = OL\\cdot(AC + BD).$$",
+          "proposer": "Rijul Saini"
         },
         {
           "number": 6,
@@ -1377,31 +1824,73 @@
         {
           "number": 1,
           "problem": "(a) Let $n\\geq 3$ be an integer. Find a configuration of $n$ lines in the plane which has exactly\n(i) $n-1$ distinct points of intersection;\n(ii) $n$ distinct points of intersection.\n(b) Give a configuration of $n$ lines that have exactly $n+1$ distinct points of intersection for (i) $n=8$ and (ii) $n=9$.",
-          "proposer": "Prof. C.R. Pranesachar"
+          "proposer": "Prof. C.R. Pranesachar",
+          "paper_label": "Paper 1"
         },
         {
           "number": 2,
           "problem": "Let $a$, $b$, $c$ be distinct non-zero real numbers satisfying $a+\\frac{2}{b}= b+\\frac{2}{c}=c+\\frac{2}{a}$ Determine the value of $|a^2 b+b^2 c+c^2 a|$",
-          "proposer": "Prof. B.J. Venkatachala"
+          "proposer": "Prof. B.J. Venkatachala",
+          "paper_label": "Paper 1"
         },
         {
           "number": 3,
-          "problem": "Prove that there do not exist positive rational numbers $x$ and $y$ such that $x+y+\\frac{1}{x}+\\frac{1}{y}= 2025$"
+          "problem": "Let $\\Omega$ and $\\Gamma$ be circles centred at $O_1$, $O_2$ respectively. Suppose that they intersect in distinct points $A$, $B$. Suppose $O_1$ is outside $\\Gamma$ and $O_2$ is outside $\\Omega$. Let $l$ be a line not passing through $A$ and $B$ that intersects $\\Omega$ at $P$ and $R$ and $\\Gamma$ at $Q$, $S$ so that $P$, $Q$, $R$, $S$ lie on the line in this order. Furthermore, points $O_1$, $B$ lie on one side of $l$ and the points $O_2$, $A$ lie on the other side of $l$. Given that the points $A$, $P$, $Q$, $O_1$ are concyclic and $B$, $R$, $S$, $O_2$ are concyclic as well, prove that $AQ=BR$",
+          "proposer": "Archit Manas and Aadish Jain",
+          "paper_label": "Paper 1"
         },
         {
           "number": 4,
-          "problem": "Let $ABC$ be an acute-angled triangle with $AB<AC$, orthocenter $H$ and circumcircle $\\Omega$. Let $M$ be the midpoint of the minor arc $BC$ of $\\Omega$. Suppose that $MH$ is equal to the radius of $\\Omega$. Prove that $\\angle BAC=60^\\circ$",
-          "proposer": "Rijul Saini"
+          "problem": "Prove that there do not exist positive rational numbers $x$ and $y$ such that $x+y+\\frac{1}{x}+\\frac{1}{y}= 2025$",
+          "paper_label": "Paper 1"
         },
         {
           "number": 5,
-          "problem": "Let $p(x)$ be a nonconstant polynomial with integer coefficients, and let $n\\geq2$ be an integer such that no term of the sequence $p(0), p(p(0)), p(p(p(0))),...$ is divisible by $n$. Show that there exist integers $a$, $b$ such that $0\\leq a<b\\leq n-1$ and $n$ divides $p(b)-p(a)$",
-          "proposer": "Bhavya Tiwari"
+          "problem": "Let $ABC$ be an acute-angled triangle with $AB<AC$, orthocenter $H$ and circumcircle $\\Omega$. Let $M$ be the midpoint of the minor arc $BC$ of $\\Omega$. Suppose that $MH$ is equal to the radius of $\\Omega$. Prove that $\\angle BAC=60^\\circ$",
+          "proposer": "Rijul Saini",
+          "paper_label": "Paper 1"
         },
         {
           "number": 6,
-          "problem": "Let $\\Omega$ and $\\Gamma$ be circles centred at $O_1$, $O_2$ respectively. Suppose that they intersect in distinct points $A$, $B$. Suppose $O_1$ is outside $\\Gamma$ and $O_2$ is outside $\\Omega$. Let $l$ be a line not passing through $A$ and $B$ that intersects $\\Omega$ at $P$ and $R$ and $\\Gamma$ at $Q$, $S$ so that $P$, $Q$, $R$, $S$ lie on the line in this order. Furthermore, points $O_1$, $B$ lie on one side of $l$ and the points $O_2$, $A$ lie on the other side of $l$. Given that the points $A$, $P$, $Q$, $O_1$ are concyclic and $B$, $R$, $S$, $O_2$ are concyclic as well, prove that $AQ=BR$",
-          "proposer": "Archit Manas and Aadish Jain"
+          "problem": "Let $p(x)$ be a nonconstant polynomial with integer coefficients, and let $n\\geq2$ be an integer such that no term of the sequence $p(0), p(p(0)), p(p(p(0))),...$ is divisible by $n$. Show that there exist integers $a$, $b$ such that $0\\leq a<b\\leq n-1$ and $n$ divides $p(b)-p(a)$",
+          "proposer": "Bhavya Tiwari",
+          "paper_label": "Paper 1"
+        },
+        {
+          "day": 1,
+          "number": 1,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "Solve the following system of equations in nonnegative integers $a_1, a_2, \\ldots, a_8$ where $a_i \\neq 1$ for $i=1,\\ldots,8$: $$a_1a_2=a_3+a_4,$$ $$a_3a_4=a_5+a_6,$$ $$a_5a_6=a_7+a_8,$$ $$a_7a_8=a_1+a_2.$$"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "Let $a, b, c$ be positive real numbers satisfying $abc=1$. Prove that $$\\dfrac{2a^2}{a^3+1}+\\dfrac{2b^2}{b^3+1}+\\dfrac{2c^2}{c^3+1}\\leq a^2+b^2+c^2.$$"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "Let $ABCDE$ be a convex pentagon in which $AB=AE$, $CB=CD$, and $\\angle AED=\\angle CDE=90^\\circ$. Let the internal bisectors of $\\angle EAB$ and $\\angle DCB$ intersect at $I$, and let $M$ be the midpoint of $AC$. Prove that $\\angle MIC=\\angle AIB$."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "A frog is initially at $(0,0)$ and it reaches $(n,2)$, $n\\geq 1$, using the following moves in any order several times:\n(i) $R=(1,0)$, that is, if the frog is at $(a,b)$ it goes to $(a+1,b)$;\n(ii) $U=(0,1)$, that is, if the frog is at $(a,b)$ it goes to $(a,b+1)$;\n(iii) $D=(1,1)$, that is, if the frog is at $(a,b)$ it goes to $(a+1,b+1)$.\nIn how many ways can the frog go from $(0,0)$ to $(n,2)$, $n\\geq 1$, using the above steps subject to the condition that steps of the type $UU$, $DD$ are forbidden?\n(For example, for $n=3$, $RDUR$, $DRD$ are admissible paths, while $DDR$, $RUURR$ are not.)"
+        },
+        {
+          "day": 1,
+          "number": 5,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "Let $ABC$ be an acute-angled triangle with $\\angle BAC=60^\\circ$ and $AB<BC<AC$. Let $M, N$ be the midpoints of $AB, AC$ respectively. Suppose $BE, CF$ are altitudes, with $E$ on $CA$ and $F$ on $AB$. Let $X$ be the image of $M$ under reflection in the midpoint of $BF$, and $Y$ be the image of $N$ under reflection in the midpoint of $CE$. Prove that $XY$ bisects $BC$."
+        },
+        {
+          "day": 1,
+          "number": 6,
+          "paper_label": "Paper 2 (KV and NVS paper)",
+          "problem": "Define the sequence $\\langle a_0, a_1, a_2, \\ldots\\rangle$ as follows: $a_0=49$ and $a_n=10^{2^n}a_{n-1}-1$ for $n\\geq 1$. Show that $s(a_n^2)=n^2+n+7$ for all $n\\geq 0$, where $s(m)$ denotes the sum of digits in base $10$ representation of a nonnegative integer $m$."
         }
       ]
     }
