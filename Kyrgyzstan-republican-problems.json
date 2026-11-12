@@ -210,6 +210,53 @@
           "problem": "A class has $20$ pupils. Any two pupils are either friends or are not friends. Friends can copy homework from each other, and pupils who are not friends cannot. The teacher knows that if any single pupil does the homework, then by the next lesson everyone will have done it. Prove that six pupils can be selected so that every other pupil is either a friend of one of these six or a friend of a friend of one of them."
         }
       ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "The sequence $\\{x_n\\}$ is defined recursively:\n$$x_0 = 10;$$\n$$x_n = (n^4 - 6n^2 + 10)\\cdot\\left(\\frac{x_{n-1}}{n^4 - 4n^3 + 8n + 5} + 2\\right);\\quad n \\in N.$$\nFind the value of $x_{13}$.",
+          "problem_orig": "Последовательность $\\{x_n\\}$ задана рекуррентно:\n$$x_0 = 10;$$\n$$x_n = (n^4 - 6n^2 + 10)\\cdot\\left(\\frac{x_{n-1}}{n^4 - 4n^3 + 8n + 5} + 2\\right);\\quad n \\in N.$$\nНайти значение $x_{13}$.",
+          "orig_lang": "ru"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "The real numbers $x, y, z, t$ satisfy the system\n$$\\begin{cases} x^2 + y^2 = 4 \\\\ z^2 + t^2 = 9 \\\\ xt + yz \\geq 6 \\end{cases}$$\nFind the largest possible value of the expression $x + 3y + 3z + 2t$.",
+          "problem_orig": "Действительные числа $x, y, z, t$ удовлетворяют системе\n$$\\begin{cases} x^2 + y^2 = 4 \\\\ z^2 + t^2 = 9 \\\\ xt + yz \\geq 6 \\end{cases}$$\nНайти наибольшее возможное значение выражения $x + 3y + 3z + 2t$.",
+          "orig_lang": "ru"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "The bisectors of angles $A$ and $C$ of triangle $ABC$ meet the circle circumscribed about this triangle at points $L$ and $N$ respectively. The line passing through the incentre of triangle $ABC$ parallel to side $AC$ meets line $LN$ at point $P$. Prove that line $BP$ is tangent to the circle circumscribed about triangle $ABC$.",
+          "problem_orig": "Биссектрисы углов $A$ и $C$ треугольника $ABC$ пересекают окружность, описанную около этого треугольника в точках $L$ и $N$ соответственно. Прямая, проходящая через центр окружности, вписанной в треугольник $ABC$, параллельно стороне $AC$, пересекается с прямой $LN$ в точке $P$. Докажите, что прямая $BP$ касается окружности, описанной около треугольника $ABC$.",
+          "orig_lang": "ru"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Azamat multiplied a five-digit number by the sum of its digits, then multiplied the result by the sum of the digits of that result. The outcome was again a five-digit number. Find all possible original numbers.",
+          "problem_orig": "Азамат умножил пятизначное число на сумму его цифр, затем полученный результат умножил на сумму цифр результата. В итоге снова получилось пятизначное число. Найдите все возможные исходные числа.",
+          "orig_lang": "ru"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Consider the set of points in the plane $Oxy$ given by the equation $x \\cdot \\sin\\sqrt{16 - x^2 - y^2} = 0$. In how many ways can this set be drawn with one continuous line, without lifting the pencil from the paper and without traversing any segment more than once?",
+          "problem_orig": "Рассмотрим множество точек на плоскости $Oxy$, заданное уравнением $x \\cdot \\sin\\sqrt{16 - x^2 - y^2} = 0$. Сколькими способами можно изобразить это множество одной непрерывной линией без отрыва карандаша от бумаги и не проходя ни по одному участку более одного раза?",
+          "orig_lang": "ru"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "On the base $AC$ of an isosceles triangle $ABC$ a point $D$ is chosen. Points $O$ and $Q$ are the centres of the circles circumscribed about triangles $ABD$ and $CBD$ respectively. It is known that $|AC| = 12$ and $\\cos\\angle BDC = \\frac{3}{7}$.\n(a) Prove that $[BO] \\parallel [DQ]$.\n(b) Find the distance between points $O$ and $Q$.",
+          "problem_orig": "На основании $AC$ равнобедренного треугольника $ABC$ выбрана точка $D$. Точки $O$ и $Q$ – центры окружностей, описанных около треугольников $ABD$ и $CBD$ соответственно. Известно, что $|AC| = 12$ и $\\cos\\angle BDC = \\frac{3}{7}$.\nа) Докажите, что $[BO] \\parallel [DQ]$.\nб) Найдите расстояние между точками $O$ и $Q$.",
+          "orig_lang": "ru"
+        }
+      ]
     }
   ]
 }

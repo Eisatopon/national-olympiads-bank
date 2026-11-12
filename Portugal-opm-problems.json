@@ -1065,6 +1065,53 @@
           "problem": "Maria wants to solve a challenge with a deck of cards, each with a different picture. Initially, the cards are randomly distributed into two piles, not necessarily of equal size. Maria's goal is to move all the cards into the same pile.\n\nIn each move, Maria takes the top card of each pile and confronts them. In the rule book there is a table that indicates, for each confrontation of cards, which of the two wins. Both cards are then placed at the bottom of the pile of the winning card, in the order Maria chooses. The challenge ends when all the cards are in a single pile.\n\nShow that it is always possible for Maria to solve the challenge, regardless of the initial distribution of the cards and of the table in the rule book."
         }
       ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Francisca wrote the numbers from $1$ to $2026$ in the first row of a table as in the figure.\n$$\\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\\hline 1&2&3&4&5&6&7&8&9&10&11&12&\\cdots&2025&2026\\\\ \\hline &&&&&&&&&&&&&&\\\\ \\hline\\end{array}$$\nThen Francisca wrote the numbers from $1$ to $2026$ again, in the second row of the table, ordered by increasing sum of their digits and, in case of a tie, by increasing order of the numbers themselves.\nWhich number is in the second row of the $2000$th column?",
+          "problem_orig": "A Francisca escreveu os números de $1$ a $2026$ na primeira linha de uma tabela como na figura.\n$$\\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\\hline 1&2&3&4&5&6&7&8&9&10&11&12&\\cdots&2025&2026\\\\ \\hline &&&&&&&&&&&&&&\\\\ \\hline\\end{array}$$\nDe seguida, a Francisca voltou a escrever os números de $1$ a $2026$, na segunda linha da tabela, ordenados por ordem crescente da soma dos seus algarismos e, em caso de empate, por ordem crescente dos próprios números.\nQue número está na segunda linha da $2000^{\\mathrm{a}}$ coluna?",
+          "orig_lang": "pt"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "In the trapezium $[ABCD]$, with sides $[AB]$ and $[CD]$ parallel, the midpoint $M$ of $[BC]$ satisfies $B\\widehat{A}M = M\\widehat{A}D$.\nShow that $\\overline{AD} = \\overline{AB} + \\overline{CD}$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/pt_2026_p2_fig.png",
+          "problem_orig": "No trapézio $[ABCD]$, com lados $[AB]$ e $[CD]$ paralelos, o ponto médio $M$ de $[BC]$ satisfaz $B\\widehat{A}M = M\\widehat{A}D$.\nMostra que $\\overline{AD} = \\overline{AB} + \\overline{CD}$.",
+          "orig_lang": "pt"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "One wants to connect twelve cities by a network of roads with the following condition: for any three different cities $X$, $Y$ and $Z$ it is possible to go by road from $X$ to $Y$ without passing through $Z$.\nWhat is the largest value of $n$ for which, regardless of how the cities are connected according to this condition, we can guarantee that there is a route by road along at least $n$ cities, in which one city is visited twice, at the beginning and at the end of the route, and each of the other cities of the route is visited only once?",
+          "problem_orig": "Pretende-se ligar doze cidades por uma rede de estradas com a seguinte condição: para quaisquer três cidades diferentes $X$, $Y$ e $Z$ é possível ir por estrada de $X$ até $Y$ sem passar por $Z$.\nQual é o maior valor de $n$ para o qual, independentemente da forma como se ligarem as cidades de acordo com esta condição, podemos garantir que existe um percurso por estrada ao longo de pelo menos $n$ cidades, em que uma cidade é visitada duas vezes, no início e no final do percurso, e cada uma das outras cidades do percurso é visitada apenas uma vez?",
+          "orig_lang": "pt"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Pêro filled each of the cells of the following figure with a positive integer, following two rules:\n• In each of the eight rows, all the numbers are different;\n• Each number that is not in the last row equals the sum of the two numbers immediately below it.\n$$\\begin{array}{c}767 \\\\ 505\\quad 262 \\\\ 339\\quad 166\\quad 96 \\\\ 228\\quad 111\\quad 55\\quad 41 \\\\ 151\\quad 77\\quad 34\\quad 21\\quad 20 \\\\ 96\\quad 55\\quad 22\\quad 12\\quad 9\\quad 11 \\\\ 55\\quad 41\\quad 14\\quad 8\\quad 4\\quad 5\\quad 6 \\\\ 23\\quad 32\\quad 9\\quad 5\\quad 3\\quad 1\\quad 4\\quad 2\\end{array}$$\nIn this way, Pêro wrote $29$ different numbers in the $36$ cells.\nPêro noticed that it was possible to fill the $36$ cells using fewer numbers.\nWhat is the smallest number of different numbers that Pêro can write?",
+          "problem_orig": "O Pêro preencheu cada uma das casas da figura seguinte com um número inteiro positivo, cumprindo duas regras:\n• Em cada uma das oito linhas, todos os números são diferentes;\n• Cada número que não está na última linha é igual à soma dos dois números imediatamente abaixo.\n$$\\begin{array}{c}767 \\\\ 505\\quad 262 \\\\ 339\\quad 166\\quad 96 \\\\ 228\\quad 111\\quad 55\\quad 41 \\\\ 151\\quad 77\\quad 34\\quad 21\\quad 20 \\\\ 96\\quad 55\\quad 22\\quad 12\\quad 9\\quad 11 \\\\ 55\\quad 41\\quad 14\\quad 8\\quad 4\\quad 5\\quad 6 \\\\ 23\\quad 32\\quad 9\\quad 5\\quad 3\\quad 1\\quad 4\\quad 2\\end{array}$$\nDesta forma, o Pêro escreveu $29$ números diferentes nas $36$ casas.\nO Pêro reparou que era possível preencher as $36$ casas usando menos números.\nQual é a menor quantidade de números diferentes que o Pêro pode escrever?",
+          "orig_lang": "pt"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "A set $S$ is called $n$-extremal if it consists of $n$ different integers, and, for each integer $k$ such that $1 \\le k \\le n$, the sum of the $k$ smallest numbers of $S$ or the sum of the $k$ largest numbers of $S$ (or both) is a multiple of $n$.\nDetermine, for each $n$, the smallest number of multiples of $n$ that an $n$-extremal set can contain.",
+          "problem_orig": "Um conjunto $S$ diz-se $n$-extremal se é composto por $n$ números inteiros diferentes, e, para cada inteiro $k$ tal que $1 \\le k \\le n$, a soma dos $k$ menores números de $S$ ou a soma dos $k$ maiores números de $S$ (ou ambas) é um múltiplo de $n$.\nDetermina, para cada $n$, qual é o menor número de múltiplos de $n$ que um conjunto $n$-extremal pode conter.",
+          "orig_lang": "pt"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "In the plane, the $44$ vertices of a convex polygon are marked, and another $2026$ points in the interior of the polygon, in such a way that no line passes through three or more of the $2070$ marked points. Campos gives Melo the following challenge. First, Campos colours each of the $2070$ points green or red. Melo's task is to draw some line segments connecting two green points or two red points, such that no two segments intersect except at endpoints, and such that any two points of the same colour are connected by a path made of segments.\nIn how many ways can Campos colour the points so that it is possible for Melo to solve the challenge?",
+          "problem_orig": "No plano estão assinalados os $44$ vértices de um polígono convexo e outros $2026$ pontos no interior do polígono, de tal maneira que nenhuma reta passa por três ou mais dos $2070$ pontos assinalados. O Campos lança ao Melo o seguinte desafio. Primeiro, o Campos pinta cada um dos $2070$ pontos de verde ou vermelho. A tarefa do Melo é desenhar alguns segmentos de reta a ligar dois pontos verdes ou dois pontos vermelhos, sem que dois segmentos se intersetem fora das extremidades, e de tal forma que quaisquer dois pontos da mesma cor estejam ligados por um caminho formado por segmentos.\nDe quantas maneiras pode o Campos pintar os pontos de tal maneira que seja possível o Melo resolver o desafio?",
+          "orig_lang": "pt"
+        }
+      ]
     }
   ]
 }
