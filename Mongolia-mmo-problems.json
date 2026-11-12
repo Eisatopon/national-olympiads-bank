@@ -164,6 +164,476 @@
           "problem": "Given a quadrilateral $ABCD$ simultaneously inscribed and circumscribed, assume that none of its diagonals or sides is a diameter of the circumscribed circle. Let $P$ be the intersection point of the external bisectors of the angles near $A$ and $B$. Similarly, let $Q$ be the intersection point of the external bisectors of the angles $C$ and $D$. If $J$ and $O$ respectively are the incenter and circumcenter of $ABCD$ prove that $OJ\\perp PQ$."
         }
       ]
+    },
+    {
+      "year": 2015,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 1,
+          "problem": "On the board, $n$ natural numbers, each less than $n$, were written. Prove that if there is exactly one way to choose from the board some numbers whose sum is divisible by $n$, then all the numbers written on the board are equal.",
+          "problem_orig": "Самбарт тус бүр $n$-ээс бага $n$ ширхэг натурал тоог бичсэн байв. Нийлбэр нь $n$-д хуваагддаг хэдэн тоог самбараас цор ганц аргаар сонгож болдог бол самбарт бичигдсэн бүх тоо ижил гэдгийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 2,
+          "problem": "The altitudes $AD$ and $CE$ of an acute triangle $ABC$ meet at $H$. Let $M$ and $N$ be the midpoints of sides $AB$ and $BC$ respectively, and let the rays $MH$ and $NH$ meet the circumcircle $\\omega$ of triangle $ABC$ at points $K$ and $L$ respectively. If the circumcircles of triangles $DHK$ and $EHL$ meet the circle $\\omega$ again at points $P$ and $Q$, prove that the points $D, E, P, Q$ lie on one circle.",
+          "problem_orig": "Хурц өнцөгт $ABC$ гурвалжны $AD$, $CE$ өндрүүд $H$ цэгт огтлолцдог байв. Гурвалжны $AB$, $BC$ талуудын дундаж цэгүүд харгалзан $M$, $N$ бөгөөд $MH$, $NH$ цацрагууд $ABC$ гурвалжныг багтаасан $\\omega$ тойргийг харгалзан $K$, $L$ цэгүүдээр огтолно. $DHK$, $EHL$ гурвалжныг багтаасан тойргууд $\\omega$ тойргийг дахин $P$, $Q$ цэгт огтолдог бол $D$, $E$, $P$, $Q$ цэгүүд нэг тойрог дээр оршихыг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 3,
+          "problem": "Some cells of an $n \\times n$ board are coloured black and the remaining cells are coloured white, such that every black cell has an even number of white neighbouring cells. Prove that all the white cells of the board can be coloured red or blue so that every black cell has as many red neighbouring cells as blue neighbouring cells. (Cells sharing a side are called neighbours.)",
+          "problem_orig": "$n \\times n$ хэмжээтэй хүснэгтийн зарим нүдийг хар өнгөөр, үлдсэн нүднүүдийг цагаан өнгөөр будсан бөгөөд хар нүд бүрийн хөрш цагаан өнгийн нүдний тоо тэгш байв. Хар нүд бүрийн хөрш улаан өнгийн нүдний тоо хөрш хөх өнгийн нүдний тоотой тэнцүү байхаар хүснэгтийн бүх цагаан нүдийг улаан, хөх өнгөөр будаж болохыг батал. (Ерөнхий талтай нүднүүдийг хөрш гэж тооцно.)",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 4,
+          "problem": "Let $p$ be a prime that leaves remainder $1$ when divided by $4$. Prove that there are infinitely many natural numbers $n$ for which $2^n + n^2$ is divisible by $p$.",
+          "problem_orig": "Анхны $p$ тоог 4-т хуваахад 1 үлдэгдэл өгдөг байв. $2^n + n^2$ нийлбэр нь $p$-д хуваагддаг натурал $n$ тоо төгсгөлгүй олон олдоно гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 5,
+          "problem": "Let $x, y, z$ be positive numbers with $x + y + z + xyz = 4$. Prove that $$\\frac{x}{\\sqrt{2y+3z}} + \\frac{y}{\\sqrt{2z+3x}} + \\frac{z}{\\sqrt{2x+3y}} \\ge \\frac{1}{\\sqrt{5}}(x+y+z).$$",
+          "problem_orig": "Хэрэв $x, y, z$ нь $x + y + z + xyz = 4$ байдаг эерэг тоонууд бол $$\\frac{x}{\\sqrt{2y+3z}} + \\frac{y}{\\sqrt{2z+3x}} + \\frac{z}{\\sqrt{2x+3y}} \\ge \\frac{1}{\\sqrt{5}}(x+y+z)$$ тэнцэтгэл биш биелнэ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 6,
+          "problem": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$, and let $K, L, M, N$ be the midpoints of the sides $AB, BC, CD, DA$ respectively. The lines $KM$ and $LN$ do not pass through $O$ and meet at a point $E$. Points $P$ on the segment $KM$ and $Q$ on the segment $LN$ are chosen so that $\\angle KOE = \\angle MOP$ and $\\angle LOE = \\angle NOQ$. Prove that the points $O, P, Q$ lie on one line.",
+          "problem_orig": "$O$ цэгт төвтэй тойрогт багтсан $ABCD$ дөрвөн өнцөгтийн $AB$, $BC$, $CD$, $DA$ талуудын дундаж цэгүүд харгалзан $K$, $L$, $M$, $N$ байг. $KM$, $LN$ шулуунууд $O$ цэгийг дайрдаггүй бөгөөд хоорондоо $E$ цэгт огтлолцоно. $KM$ хэрчим дээр $P$ цэгийг $\\angle KOE = \\angle MOP$ байхаар, $LN$ хэрчим дээр $Q$ цэгийг $\\angle LOE = \\angle NOQ$ байхаар тус тус сонгон авав. $O$, $P$, $Q$ цэгүүд нэг шулуун дээр оршихыг батал.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 1,
+          "problem": "Given the sequence $a_1 = 2+2016,\\ a_2 = 2^2+2016,\\ a_3 = 2^{2^2}+2016,\\ \\dots,\\ a_n=\\underbrace{2^{2^{\\cdot^{\\cdot^{\\cdot^{2}}}}}}_{n}+2016,\\ \\dots$ (a tower of $n$ twos), and a natural number $k$. Prove that if the sequence has at least two terms divisible by $k$, then it has infinitely many.",
+          "problem_orig": "Натурал $k$ тоо ба $a_1 = 2+2016,\\ a_2 = 2^2+2016,\\ a_3 = 2^{2^2}+2016,\\ \\dots,\\ a_n=\\underbrace{2^{2^{\\cdot^{\\cdot^{\\cdot^{2}}}}}}_{n}+2016,\\ \\dots$ гэсэн дараалал өгөгдөв. Энэ дараалалд $k$-д хуваагддаг гишүүн ядаж 2 олддог бол төгсгөлгүй олон олдоно гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 2,
+          "problem": "In a round-robin tournament $52$ students took part. After some number of games, it turned out that for any chosen student, the numbers of games played by the students who have played with him are all different. What is the largest possible number of games that could have been played?",
+          "problem_orig": "Тойргоор тоглосон тэмцээнд 52 сурагч оролцжээ. Хэдэн тоглолтын дараа аль ч сурагчийг сонгон авахад түүнтэй тоглосон сурагчдын тоглолтын тоо ялгаатай байсан бол хамгийн олондоо хэдэн тоглолт явагдсан байсан бэ?",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 3,
+          "problem": "Points $P$ and $Q$ are chosen on side $BC$ of triangle $ABC$ such that $\\angle BAP = \\angle ACB$ and $\\angle CAQ = \\angle ABC$. Point $N$ is taken on line $AP$ such that $AP = PN$, and point $M$ on line $AQ$ such that $AQ = QM$. The lines $BN$ and $CM$ meet at $L$, and $K$ is the midpoint of side $BC$. Prove that $\\angle BAK = \\angle CAL$.",
+          "problem_orig": "$ABC$ гурвалжны $BC$ тал дээр $P$ ба $Q$ цэгүүдийг $\\angle BAP = \\angle ACB$ ба $\\angle CAQ = \\angle ABC$ байхаар сонгон авчээ. $AP$ шулуун дээр $N$ цэгийг $AP = PN$ байхаар, $AQ$ шулуун дээр $M$ цэгийг $AQ = QM$ байхаар авав. $BN$ ба $CM$ шулуунууд $L$ цэгт огтлолцдог бөгөөд $BC$ талын дундаж цэг нь $K$ бол $\\angle BAK = \\angle CAL$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 4,
+          "problem": "Let $a, b, c$ be positive numbers with $a+b+c=3$. Prove that $$\\frac{a+b}{2ab+1}+\\frac{b+c}{2bc+1}+\\frac{c+a}{2ca+1}\\ge 2.$$",
+          "problem_orig": "Эерэг $a, b, c$ тоонуудын хувьд $a+b+c=3$ бол $$\\frac{a+b}{2ab+1}+\\frac{b+c}{2bc+1}+\\frac{c+a}{2ca+1}\\ge 2$$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 5,
+          "problem": "Let $p, q, r$ be distinct odd primes. For a natural number $n$ let $f(n)$ denote the greatest common divisor of $n$ and $pqr$, that is, $f(n) = (n, pqr)$. Find the number of triples $(a, b, c)$ with $1 \\le a, b, c \\le pqr$ for which the values $$f(a),\\ f(b),\\ f(c),\\ f(a+b),\\ f(b+c),\\ f(c+a),\\ f(a+b+c)$$ are all distinct.",
+          "problem_orig": "$p$, $q$, $r$ нь ялгаатай сондгой анхны тоонууд болог. Натурал $n$ тооны хувьд $n$, $pqr$ тоонуудын хамгийн их ерөнхий хуваагчийг $f(n)$, өөрөөр хэлбэл $f(n) = (n, pqr)$ гэж тэмдэглэе. $1 \\le a, b, c \\le pqr$ бөгөөд $$f(a),\\ f(b),\\ f(c),\\ f(a+b),\\ f(b+c),\\ f(c+a),\\ f(a+b+c)$$ утгууд нь бүгд ялгаатай байдаг $(a, b, c)$ гурвалын тоог ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 6,
+          "problem": "Inside a convex quadrilateral $ABCD$ a point $M$ is taken such that $\\angle BMC = \\angle AMD$. Triangles $ABE$ and $CDF$ are constructed externally on the sides $AB$ and $CD$ so that $$\\angle BAE = \\angle DAM,\\quad \\angle ABE = \\angle CBM,\\quad \\angle CDF = \\angle ADM,\\quad \\angle DCF = \\angle BCM.$$ Prove that the points $M, E, F$ lie on one line.",
+          "problem_orig": "$ABCD$ гүдгэр дөрвөн өнцөгтийн дотор $M$ цэгийг $\\angle BMC = \\angle AMD$ байхаар авав. $AB$, $CD$ талууд дээр гадаад байдлаар $ABE$, $CDF$ гурвалжнуудыг $$\\angle BAE = \\angle DAM,\\quad \\angle ABE = \\angle CBM,\\quad \\angle CDF = \\angle ADM,\\quad \\angle DCF = \\angle BCM$$ байхаар авав. Тэгвэл $M$, $E$, $F$ цэгүүд нэг шулуун дээр оршино гэж батал.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 1,
+          "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that for all real numbers $a, b, c$ $$(a-b)f(a+b)+(b-c)f(b+c)+(c-a)f(c+a)=0.$$",
+          "problem_orig": "Дурын бодит $a, b, c$ тоонуудын хувьд $$(a-b)f(a+b)+(b-c)f(b+c)+(c-a)f(c+a)=0$$ байх бүх $f:\\mathbb{R}\\to\\mathbb{R}$ функцийг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 2,
+          "problem": "The tangents at $A$ and $C$ to the circle $\\omega$ circumscribed about a scalene triangle $ABC$ meet at $P$, and $BB'$ is a diameter of $\\omega$. The line $BP$ meets $\\omega$ again at a point $D$ different from $B$. The external bisector of $\\angle ABC$ meets the lines $B'A$ and $B'C$ at $A'$ and $C'$ respectively. Prove that the points $A', B', C', D$ lie on one circle.",
+          "problem_orig": "Элдэв талт $ABC$ гурвалжныг багтаасан $\\omega$ тойргийн $A$, $C$ цэгт татсан шүргэгчүүд $P$ цэгт огтлолцдог бөгөөд $BB'$ нь $\\omega$ тойргийн диаметр байв. $BP$ шулуун нь $\\omega$ тойргийг $B$ цэгээс ялгаатай $D$ цэгт огтолно. $\\angle ABC$ өнцгийн гадаад биссектрис нь $B'A$, $B'C$ шулуунуудтай харгалзан $A'$, $C'$ цэгт огтлолцдог бол $A', B', C', D$ цэгүүд нэг тойрог дээр оршихыг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 3,
+          "problem": "Do there exist natural numbers $a_1, a_2, \\dots, a_{2017}$ such that the product $$\\left(a_1^{2017}+a_2\\right)\\left(a_2^{2017}+a_3\\right)\\dots\\left(a_{2016}^{2017}+a_{2017}\\right)\\left(a_{2017}^{2017}+a_1\\right)$$ is a power of some prime number, with exponent a) $2017\\cdot 2018$, b) $2017\\cdot 2023$?",
+          "problem_orig": "$\\left(a_1^{2017}+a_2\\right)\\left(a_2^{2017}+a_3\\right)\\dots\\left(a_{2016}^{2017}+a_{2017}\\right)\\left(a_{2017}^{2017}+a_1\\right)$ үржвэр нь ямар нэг анхны тооны а) $2017\\cdot 2018$ зэрэгт, б) $2017\\cdot 2023$ зэрэгт байх натурал $a_1, a_2, \\dots, a_{2017}$ тоонууд олдох уу?",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 4,
+          "problem": "At an olympiad 300 students took part, and there were no three students any two of whom know each other. Every student has at most $n$ acquaintances, and for every $m$ with $1\\le m\\le n$ there is at least one student with exactly $m$ acquaintances. Find the greatest possible value of $n$.",
+          "problem_orig": "Олимпиадад $300$ сурагч оролцсон бөгөөд аль ч хоёр нь бие биеэ таньдаг $3$ сурагч олддоггүй байв. Олимпиадад оролцсон сурагч бүрийн танилын тоо $n$-ээс хэтрэхгүй бөгөөд $1 \\le m \\le n$ байх $m$ бүрийн хувьд яг $m$ танилтай ядаж нэг сурагч олддог байжээ. $n$-ийн байж болох хамгийн их утгыг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 5,
+          "problem": "Let $a, b, c$ be positive numbers with $abc=1$. Prove that $$\\frac{1}{a^4+4b^2+7}+\\frac{1}{b^4+4c^2+7}+\\frac{1}{c^4+4a^2+7}\\le\\frac14.$$",
+          "problem_orig": "$a, b, c$ нь $abc=1$ байх эерэг тоонууд бол $$\\frac{1}{a^4+4b^2+7}+\\frac{1}{b^4+4c^2+7}+\\frac{1}{c^4+4a^2+7}\\le\\frac14$$ тэнцэтгэл биш биелэхийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 6,
+          "problem": "Let $I$ be the incenter of triangle $ABC$. Choose a point $D$ on side $BC$ and a point $E$ on the extension of $BC$ beyond $C$ such that $\\dfrac{BD}{DC}=\\dfrac{BE}{EC}$. Let $DH$ be the perpendicular dropped from $D$ to the line $IE$. Prove that $\\angle AHE=\\angle IDE$.",
+          "problem_orig": "$ABC$ гурвалжинд багтсан тойргийн төв $I$ байв. Гурвалжны $BC$ тал дээр $D$ цэгийг, $BC$ талын үргэлжлэл дээр $C$ оройгоос цаана $E$ цэгийг $\\dfrac{BD}{DC}=\\dfrac{BE}{EC}$ байхаар сонгон авчээ. $D$ цэгээс $IE$ шулуун руу буулгасан перпендикуляр нь $DH$ бол $\\angle AHE=\\angle IDE$ байхыг батал.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 1,
+          "problem": "For all real numbers $x, y, z$ with sum $0$, the points $(x, P(x))$, $(y, P(y))$, $(z, P(z))$ of the coordinate plane lie on one line. Find all polynomials $P$ with real coefficients with this property.",
+          "problem_orig": "Нийлбэр нь $0$ байдаг дурын бодит $x, y, z$ тоонуудын хувьд координатын хавтгай дээр орших $(x, P(x)),\\ (y, P(y)),\\ (z, P(z))$ координаттай цэгүүд нэг шулуун дээр оршдог байх бодит коэффициенттэй бүх $P$ олон гишүүнтийг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 2,
+          "problem": "From a point $A$ outside a circle $\\omega$ the tangents $AB$ and $AC$ to the circle are drawn, and a point $P$ is chosen on the extension of the segment $AC$ beyond $C$. The circumcircle of triangle $ABP$ meets $\\omega$ again at a point $E$ different from $B$, and a point $Q$ is taken on the segment $BP$ such that $\\angle PEQ=2\\angle APB$. Prove that $CQ\\perp BP$.",
+          "problem_orig": "$\\omega$ тойргийн гадна орших $A$ цэгээс уг тойрогт $AB$, $AC$ шүргэгчүүд татаад $AC$ хэрчмийн үргэлжлэл дээр $C$ цэгээс цаана $P$ цэгийг сонгон авчээ. $ABP$ гурвалжныг багтаасан тойрог $\\omega$ тойрогтой $B$ цэгээс ялгаатай $E$ цэгт огтлолцох ба $BP$ хэрчим дээр $\\angle PEQ=2\\angle APB$ байхаар $Q$ цэг авав. $CQ\\perp BP$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Grade 12, Day 1",
+          "number": 3,
+          "problem": "For a sequence $\\{a_n\\}_{n\\ge1}$ of natural numbers and a sequence $\\{p_n\\}_{n\\ge1}$ of prime numbers, the conditions $$p_n\\mid a_n \\quad\\text{and}\\quad a_{n+1}=\\frac{a_n}{p_n}\\left(p_n^{1009}-1\\right)$$ hold for all $n\\ge1$. Prove that this sequence has a term $a_n$ divisible by $2018$.",
+          "problem_orig": "Натурал тоон $\\{a_n\\}_{n\\ge1}$ дараалал ба анхны тоон $\\{p_n\\}_{n\\ge1}$ дарааллын хувьд $n\\ge1$ үед $$p_n\\mid a_n \\quad\\text{бөгөөд}\\quad a_{n+1}=\\frac{a_n}{p_n}\\left(p_n^{1009}-1\\right)$$ гэсэн нөхцөлүүд биелдэг байв. Энэ дараалалд $2018$-д хуваагддаг $a_n$ гишүүн олдохыг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 4,
+          "problem": "On the arc $BC$ not containing $A$ of the circle $\\omega$ circumscribed about triangle $ABC$, a point $D$ different from the midpoint of the arc is chosen. The tangent to $\\omega$ at $D$ meets the line $BC$ at $K$. A line through $K$ meets $\\omega$ at $E$ and $F$, and meets the segments $AC$, $AD$, $AB$ at $N$, $M$, $L$ respectively. If $NE=LF$, prove that $ML=MN$.",
+          "problem_orig": "$ABC$ гурвалжныг багтаасан $\\omega$ тойргийн $A$ оройг агуулдаггүй $BC$ нум дээр дунджаас нь ялгаатай $D$ цэгийг сонгож авчээ. $D$ цэгт татсан $\\omega$ тойргийн шүргэгч нь $BC$ шулууныг $K$ цэгт огтолно. $K$ цэгийг дайрсан шулуун $\\omega$ тойргийг $E$, $F$ цэгүүдээр, $AC$, $AD$, $AB$ хэрчмүүдийг харгалзан $N$, $M$, $L$ цэгүүдээр огтолдог байв. $NE=LF$ бол $ML=MN$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 5,
+          "problem": "Polynomials $f(x)$ and $g(x)$ with integer coefficients are given. For every natural number $n$, the greatest common divisor $a_n$ of the numbers $f(n)$ and $g(n)$ is less than $2018$. Prove that there is a constant $k$ such that $a_{n+k}=a_n$ for every $n$, that is, this sequence is periodic.",
+          "problem_orig": "Бүхэл коэффициенттэй $f(x)$, $g(x)$ олон гишүүнтүүд өгөгджээ. Ямар ч натурал $n$ тооны хувьд $f(n)$, $g(n)$ тоонуудын хамгийн их ерөнхий хуваагч $a_n$ нь $2018$-аас бага байв. Дурын $n$-ийн хувьд $a_{n+k}=a_n$ байх тогтмол $k$ тоо олдохыг, өөрөөр хэлбэл энэ дараалал үетэй гэдгийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Grade 12, Day 2",
+          "number": 6,
+          "problem": "A quadruple of integers $(a,b,c,d)$ is called “good” if $ad-bc=2018$. The following $3$ kinds of operations can be applied to good quadruples: $$(a,b,c,d)\\longrightarrow(-c,-d,a,b)$$ $$(a,b,c,d)\\longrightarrow(a,b,c+a,d+b)$$ $$(a,b,c,d)\\longrightarrow(a,b,c-a,d-b)$$ Show that a set of good quadruples, no two of which can be transformed into each other by these operations, has at most $3030$ elements.",
+          "problem_orig": "Бүхэл тоонуудын $(a,b,c,d)$ дөрвөлийг $ad-bc=2018$ байвал “сайн дөрвөл” гэе. Сайн дөрвөлүүдэд дараах $3$ төрлийн үйлдлийг хийж болно. Эдгээр үйлдлүүдийн тусламжтайгаар бие биедээ шилждэггүй сайн дөрвөлүүдийн олонлог хамгийн олондоо $3030$ элементтэй гэж харуул. $$(a,b,c,d)\\longrightarrow(-c,-d,a,b)$$ $$(a,b,c,d)\\longrightarrow(a,b,c+a,d+b)$$ $$(a,b,c,d)\\longrightarrow(a,b,c-a,d-b)$$",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Senior category, Day 1",
+          "number": 1,
+          "problem": "Find all $n\\ge2$ such that every polygon with $2n$ vertices has a diagonal lying entirely inside the polygon that divides it into two polygons with equal numbers of vertices.",
+          "problem_orig": "$2n$ оройтой олон өнцөгт бүрийн хувьд түүнийг тэнцүү тооны оройтой хоёр олон өнцөгтөд хуваадаг, уг олон өнцөгтөд бүхлээрээ багтдаг диагональ татаж чаддаг байх бүх $n\\ge2$ тоог ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Senior category, Day 1",
+          "number": 2,
+          "problem": "A circle through the vertices $A$ and $C$ of triangle $ABC$ meets the segments $AB$ and $BC$ at $M$ and $K$ respectively, both different from $B$. The circumcircle of triangle $BKM$ meets the segment $AK$ at $D$, and the line $BD$ meets the segment $MK$ at $S$ and the segment $AC$ at $L$. A point $T$ is taken on side $AB$ such that $\\angle ALT=\\angle CBL$. Prove that the line $TS$ is parallel to the line $AK$.",
+          "problem_orig": "$ABC$ гурвалжны $A$, $C$ цэгүүдийг дайрсан тойрог $AB$, $BC$ хэрчмүүдийг харгалзан $B$ цэгээс ялгаатай $M$, $K$ цэгүүдэд огтолдог байв. $BKM$ гурвалжныг багтаасан тойрог $AK$ хэрчимтэй $D$ цэгт огтлолцдог ба $BD$ шулуун $MK$ хэрчимтэй $S$ цэгт, $AC$ хэрчимтэй $L$ цэгт огтлолцдог байв. $AB$ тал дээр $T$ цэгийг $\\angle ALT=\\angle CBL$ байхаар авсан бол $TS$ шулуун $AK$ шулуунтай параллель гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 1,
+          "paper_label": "Senior category, Day 1",
+          "number": 3,
+          "problem": "Prove that for every natural number $k\\ge1$ there is a number of the form $$1+2^n+3^n$$ that is divisible by $7^k$.",
+          "problem_orig": "Дурын натурал $k\\ge1$ тооны хувьд $7^k$ тоонд хуваагдах $$1+2^n+3^n$$ хэлбэрийн тоо олдоно гэдгийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Senior category, Day 2",
+          "number": 4,
+          "problem": "Prove that for numbers $0\\le a_1,a_2,\\dots,a_n\\le1$ the inequality $$\\frac{1-a_1a_2\\dots a_n}{n}\\le\\frac{1}{1+a_1+a_2+\\dots+a_n}$$ holds.",
+          "problem_orig": "$0\\le a_1,a_2,\\dots,a_n\\le1$ тоонуудын хувьд $$\\frac{1-a_1a_2\\dots a_n}{n}\\le\\frac{1}{1+a_1+a_2+\\dots+a_n}$$ тэнцэтгэл биш биелэхийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Senior category, Day 2",
+          "number": 5,
+          "problem": "Call a colouring of some cells of a $20\\times20$ table black a “painting”. For a given painting $P$, when the table is divided along the grid lines into rectangles each containing at most two black cells, let $n(P)$ be the smallest possible number of rectangles that contain at most one black cell. Find the greatest value that $n(P)$ can take.",
+          "problem_orig": "$20\\times20$ хүснэгтийн зарим нүдийг хар өнгөөр будахыг “будалт” гэе. Өгөгдсөн $P$ будалтын хувьд хүснэгтээ хоёроос олонгүй тооны хар нүдтэй тэгш өнцөгтүүдэд шугамын дагуу хуваахад нэгээс олонгүй тооны хар нүдтэй тэгш өнцөгтийн тоо хамгийн багадаа $n(P)$ байдаг гэе. $n(P)$ тооны авч болох хамгийн их утгыг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "day": 2,
+          "paper_label": "Senior category, Day 2",
+          "number": 6,
+          "problem": "A quadrilateral $ABCD$ is circumscribed about a circle $\\omega$ with center $I$. The lines $AD$ and $BC$ meet at $Q$, and the lines $AB$ and $CD$ meet at $P$, where $B$ lies on the segment $AP$ and $D$ lies on the segment $AQ$. Let $X$ and $Y$ be the incenters of triangles $PBD$ and $QBD$ respectively. If the lines $PY$ and $QX$ meet at $R$, prove that $RI\\perp BD$.",
+          "problem_orig": "$I$ төвтэй $\\omega$ тойргийг багтаасан $ABCD$ дөрвөн өнцөгт өгөгдөв. $AD$, $BC$ шулуунууд $Q$ цэгт, харин $AB$, $CD$ шулуунууд $P$ цэгт огтлолцдог бөгөөд $B$ цэг $AP$ хэрчим дээр, $D$ цэг $AQ$ хэрчим дээр байв. $PBD$, $QBD$ гурвалжнуудад багтсан тойргийн төвүүдийг харгалзан $X$, $Y$ гэе. $PY$, $QX$ шулуунууд $R$ цэгт огтлолцдог бол $RI\\perp BD$ гэж батал.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For real numbers $1 \\ge d_1 \\ge \\cdots \\ge d_n \\ge 0$ prove the inequality $$\\frac{(1+d_1+d_2+\\cdots+d_n)^2}{n+1} \\ge 2\\cdot\\frac{d_1^2+2d_2^2+\\cdots+nd_n^2}{n}.$$",
+          "problem_orig": "$1 \\ge d_1 \\ge \\cdots \\ge d_n \\ge 0$ байх бодит тоонуудын хувьд $$\\frac{(1+d_1+d_2+\\cdots+d_n)^2}{n+1} \\ge 2\\cdot\\frac{d_1^2+2d_2^2+\\cdots+nd_n^2}{n}$$ тэнцэтгэл биш биелэхийг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 2,
+          "problem": "The diagonals $AC$, $BD$ of the trapezoid $ABCD$, which has an obtuse angle at vertex $D$ and bases $AB$ and $CD$, meet at the point $O$. The line through $O$ parallel to the base $AB$ meets the circumcircle of triangle $BCO$ at the point $P$. If the circumcircles of triangles $ADO$ and $BCO$ meet again at the point $Q$, prove that the line $PQ$ bisects the segment $BC$.",
+          "problem_orig": "$D$ оройдоо мохоо өнцөгтэй, $AB$ ба $CD$ сууриудтай $ABCD$ трапецын $AC$, $BD$ диагоналиуд $O$ цэгт огтлолцоно. $AB$ суурьтай параллель, $O$ цэгийг дайрсан шулуун $BCO$ гурвалжныг багтаасан тойрогтой $P$ цэгт огтлолцоно. Хэрэв $ADO$, $BCO$ гурвалжнуудыг багтаасан тойргууд дахин $Q$ цэгт огтлолцдог бол $PQ$ шулуун $BC$ хэрчмийг хагаслан хуваана гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 3,
+          "problem": "Find the smallest natural number $n$ with the following property: for any real sequence $a_1, a_2, \\ldots, a_{2021}$ with $0 < a_1, a_2, \\ldots, a_{2021} < 2$ and $a_1 + a_2 + \\cdots + a_{2021} = 2021$, there is a real sequence $b_1, b_2, \\ldots, b_n$ with $0 < b_1, b_2, \\ldots, b_n < 2$ and $b_1 + b_2 + \\cdots + b_n = n$ such that some permutation $c_1, c_2, \\ldots, c_{n+2021}$ of the sequence $a_1, a_2, \\ldots, a_{2021}, b_1, b_2, \\ldots, b_n$ satisfies $$\\begin{cases} c_1 + c_2 + \\cdots + c_l \\le l & \\text{for every odd } l \\text{ with } 1 \\le l \\le n + 2021,\\\\ c_1 + c_2 + \\cdots + c_l \\ge l & \\text{for every even } l \\text{ with } 1 \\le l \\le n + 2021. \\end{cases} \\qquad (\\star)$$",
+          "problem_orig": "$0 < a_1, a_2, \\ldots, a_{2021} < 2$ бөгөөд $a_1 + a_2 + \\cdots + a_{2021} = 2021$ байх ямар ч бодит тоон $a_1, a_2, \\ldots, a_{2021}$ дарааллын хувьд $0 < b_1, b_2, \\ldots, b_n < 2$ бөгөөд $b_1 + b_2 + \\cdots + b_n = n$ байх бодит тоон $b_1, b_2, \\ldots, b_n$ дараалал дараах нөхцөлийг хангадаг байхаар олддог байх натурал $n$ тооны хамгийн бага утгыг ол. Үүнд $a_1, a_2, \\ldots, a_{2021}, b_1, b_2, \\ldots, b_n$ дарааллын ямар нэг $c_1, c_2, \\ldots, c_{n+2021}$ сэлгэмлийн хувьд $$\\begin{cases} 1 \\le l \\le n + 2021 \\text{ байх сондгой } l \\text{ бүрийн хувьд} & c_1 + c_2 + \\cdots + c_l \\le l,\\\\ 1 \\le l \\le n + 2021 \\text{ байх тэгш } l \\text{ бүрийн хувьд} & c_1 + c_2 + \\cdots + c_l \\ge l \\end{cases} \\qquad (\\star)$$ байна.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 4,
+          "problem": "A circle of radius $r$ is inscribed in the quadrilateral $ABCD$. Let $J$ and $K$ be the incenters of triangles $ABC$ and $ACD$ respectively, and let $P$ and $Q$ be the circumcenters of triangles $AJK$ and $CJK$ respectively. Prove that $$|PQ| = |AC| - \\frac{S_{AJCK}}{r},$$ where $S_{AJCK}$ denotes the area of the quadrilateral $AJCK$.",
+          "problem_orig": "$ABCD$ дөрвөн өнцөгтөд $r$ радиустай тойрог багтаж байв. $ABC$ ба $ACD$ гурвалжинд багтсан тойргийн төвийг тус тус $J$ ба $K$ гээд $AJK$ ба $CJK$ гурвалжныг багтаасан тойргийн төвийг тус тус $P$ ба $Q$ гэе. Тэгвэл $$|PQ| = |AC| - \\frac{S_{AJCK}}{r}$$ гэж батал. Энд $S_{AJCK}$-аар $AJCK$ дөрвөн өнцөгтийн талбайг тэмдэглэв.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 5,
+          "problem": "For natural numbers $a, b$, a rational number of the form $\\dfrac{a}{b} + \\dfrac{b}{a}$ is called a good number.\n\n(i) Show that every natural number $n \\ge 4$ can be written as a sum of some number of good numbers.\n\n(ii) What is the smallest number of good numbers whose sum can equal $n = 57$?",
+          "problem_orig": "Натурал $a, b$ тоонуудын хувьд $\\dfrac{a}{b} + \\dfrac{b}{a}$ хэлбэртэй бичигдэх рационал тоог сайн тоо гэе.\n\n(i) Дурын натурал $n \\ge 4$ тоог хэдэн ширхэг сайн тооны нийлбэрт тавьж болно гэж харуул.\n\n(ii) $n = 57$ тоог хамгийн цөөндөө хэдэн ширхэг сайн тооны нийлбэрт тавьж болох вэ?",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 6,
+          "problem": "Let $\\alpha, \\beta$ be distinct real numbers. Define the sequence of real numbers $A_1, A_2, \\ldots$ for $n \\ge 1$ by $$A_n = \\frac{\\alpha^n - \\beta^n}{\\alpha - \\beta}.$$ Show that if for some prime $p$ the terms $A_p, A_{p+1}, A_{p+2}$ are integers, then all terms of the sequence are integers.",
+          "problem_orig": "$\\alpha, \\beta$ ялгаатай бодит тоонууд байг. Бодит тоон $A_1, A_2, \\ldots$ дарааллыг $n \\ge 1$ хувьд $$A_n = \\frac{\\alpha^n - \\beta^n}{\\alpha - \\beta}$$ гэж тодорхойлъё. Ямар нэг анхны $p$ тооны хувьд $A_p, A_{p+1}, A_{p+2}$ гишүүд бүхэл тоо байдаг бол дарааллын бүх гишүүн бүхэл гэдгийг үзүүл.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Pairwise distinct points $X, Y, Z$ lie on a circle $\\omega$ in this order clockwise. Three tangents $XA$, $YB$, $ZC$ of equal length are drawn to $\\omega$ in the clockwise direction. The line $XY$ meets the segment $AB$ at the point $M$ and the line $YZ$ meets the segment $BC$ at the point $N$. Prove that $MN$ is a midline of triangle $ABC$.",
+          "problem_orig": "Хос хосоороо ялгаатай $X, Y, Z$ цэгүүд $\\omega$ тойрог дээр цагийн зүүний дагуу энэ дарааллаараа байрлана. $\\omega$ тойрогт цагийн зүүний дагуу хоорондоо тэнцүү урттай $XA$, $YB$, $ZC$ гурван шүргэгч татав. $XY$ шулуун $AB$ хэрчмийг $M$ цэгт, $YZ$ шулуун $BC$ хэрчмийг $N$ цэгт огтолдог бол $MN$ хэрчим $ABC$ гурвалжны дундаж шугам болно гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 2,
+          "problem": "Let $n \\ge 2$. In the exhibition hall of an art gallery, $2n$ people stand in a circle, each holding one painting. Each person has in mind a list ranking all $2n$ paintings present, from the most liked to the least liked. If two neighbouring people each like the painting held by the other more than the painting they themselves hold, they swap their paintings. What is the maximum number of swaps that can take place?",
+          "problem_orig": "$n \\ge 2$ гэе. Уран зургийн галерейн үзэсгэлэнгийн танхимд $2n$ хүн тойрог болон зогссон ба бүгд нэг нэг зураг барьсан байв. Хүн болгоны толгойд тэнд байгаа $2n$ зургийг аль дуртай гаасаа дургүй рүүгээ эрэмбэлэн жагсаасан жагсаалт бий. Зэрэгцэн зогссон хоёр хүн хоёулаа өөрийнхөө барьж байгаа зургаас илүү нөгөөгийнхөө барьсан зурагт дуртай байвал зургуудаа солилцоно. Хамгийн олондоо хэдэн удаа солилцоо хийж болох вэ?",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 3,
+          "problem": "A cubic polynomial with integer coefficients is called good if it has three real roots and all its roots are irrational numbers greater than $0$ and less than $1$.\n\na) Is there a good polynomial whose leading coefficient equals $10$?\n\nb) Is there a good polynomial whose leading coefficient equals $13$?",
+          "problem_orig": "Бүхэл коэффициенттой, гурван зэргийн олон гишүүнтийг гурван бодит язгууртай ба язгуурууд нь бүгд $0$-ээс их $1$-ээс бага иррационал тоо байдаг бол сайн гэе.\n\nа) Ахлах гишүүнийх нь коэффициент $10$-тай тэнцүү байдаг сайн олон гишүүнт олдох уу?\n\nб) Ахлах гишүүнийх нь коэффициент $13$-тай тэнцүү байдаг сайн олон гишүүнт олдох уу?",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 4,
+          "problem": "Let $a, b$ be integers with $|a| \\ge 2$. Show that the sequence $a^1 + b, a^2 + b, \\ldots, a^n + b, \\ldots$ has 2022 consecutive terms that are all composite numbers.",
+          "problem_orig": "$a, b$ бүхэл тоонууд ба $|a| \\ge 2$ гэе. $a^1 + b, a^2 + b, \\ldots, a^n + b, \\ldots$ дараалал бүгд зохиомол тоо байх дараалсан $2022$ гишүүнтэй болохыг харуул.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 5,
+          "problem": "In a non-isosceles triangle $ABC$, points $A_1$ on side $BC$, $B_1$ on side $CA$ and $C_1$ on side $AB$ are taken such that $\\angle B_1AC_1 = \\angle B_1A_1C_1$, $\\angle C_1BA_1 = \\angle C_1B_1A_1$ and $\\angle A_1CB_1 = \\angle A_1C_1B_1$. The circumcircle of triangle $A_1B_1C_1$ meets side $BC$ again at $A_2$, side $CA$ again at $B_2$ and side $AB$ again at $C_2$.\n\nProve that a necessary and sufficient condition for the lines $AA_2$, $BB_2$, $CC_2$ to be concurrent is $\\angle BC_1A_1 = \\angle A_1B_1C$.",
+          "problem_orig": "Адил хажуут биш $ABC$ гурвалжны $BC$ тал дээр $A_1$ цэгийг, $CA$ тал дээр $B_1$ цэгийг, $AB$ тал дээр $C_1$ цэгийг $\\angle B_1AC_1 = \\angle B_1A_1C_1$, $\\angle C_1BA_1 = \\angle C_1B_1A_1$ болон $\\angle A_1CB_1 = \\angle A_1C_1B_1$ байхаар авав. $A_1B_1C_1$ гурвалжныг багтаасан тойрог $BC$ талыг $A_2$ цэгт, $CA$ талыг $B_2$ цэгт, $AB$ талыг $C_2$ цэгт дахин огтолдог байв.\n\n$AA_2$, $BB_2$, $CC_2$ шулуунууд нэг цэгт огтлолцох гарцаагүй бөгөөд хүрэлцээтэй нөхцөл нь $\\angle BC_1A_1 = \\angle A_1B_1C$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 6,
+          "problem": "The 30 students of a class sit in three rows of $10$, $10$, $10$. On the first day of each month the teacher rearranges the students' seats. What is the smallest number of months within which the students can be rearranged so that any two students have sat in the same row in at least one month?",
+          "problem_orig": "$30$ сурагчтай ангийн сурагчид $10$, $10$, $10$-аараа гурван эгнээ болон сууна. Сар бүрийн эхний өдөр багш сурагчдын байрыг сэлгэж суулгадаг. Хамгийн багадаа хэдэн сарын дотор аль ч хоёр сурагч ядаж нэг сар нэг эгнээнд суусан байхаар сэлгэн суулгаж чадах вэ?",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "For any positive numbers $u, v$ prove the inequality $$\\min\\left\\{u, \\frac{100}{v}, v + \\frac{2023}{u}\\right\\} \\le \\sqrt{2123}.$$ Here $\\min X$ denotes the smallest element of the set $X$.",
+          "problem_orig": "Дурын $u, v$ эерэг тоонуудын хувьд $$\\min\\left\\{u, \\frac{100}{v}, v + \\frac{2023}{u}\\right\\} \\le \\sqrt{2123}$$ тэнцэтгэл биш биелэхийг батал. Энд $\\min X$ гэж $X$ олонлогийн хамгийн бага гишүүнийг тэмдэглэнэ.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 2,
+          "problem": "In an acute triangle $ABC$ the altitudes $BD$, $CE$ are drawn. On the segment $BD$ a point $L$ with $AD = DL$ is taken, and on the segment $CE$ a point $K$ with $AE = EK$ is taken. Let $M$ be the midpoint of the segment $KL$. The circumcircle of triangle $ABC$ meets the line $AL$ again at the point $T$ and the line $AK$ again at the point $S$. Prove that the lines $BS$, $CT$, $AM$ are concurrent.",
+          "problem_orig": "Хурц өнцөгт $ABC$ гурвалжны $BD$, $CE$ өндрүүдийг татав. $BD$ хэрчим дээр $AD = DL$ байх $L$ цэгийг, $CE$ хэрчим дээр $AE = EK$ байх $K$ цэгийг авав. $KL$ хэрчмийн дундаж цэгийг $M$ гэе. $ABC$ гурвалжныг багтаасан тойрог $AL$ шулуунтай дахин $T$ цэгт, $AK$ шулуунтай дахин $S$ цэгт огтлолцоно. $BS$, $CT$, $AM$ шулуунууд нэг цэгт огтлолцоно гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 3,
+          "problem": "Five girls and five boys took part in a contest. The girls can be numbered $1, 2, \\ldots, 5$ and the boys likewise $1, 2, \\ldots, 5$ so that for any $1 \\le i, j \\le 5$ the number of children known to both girl number $i$ and boy number $j$ is $|i - j|$. Let $S$ be the larger of the sum of the numbers of children known by the girls and the sum of the numbers of children known by the boys. What is the smallest possible value of $S$? Acquaintance is directed: if child $A$ knows child $B$, child $B$ need not know child $A$, and a child is not considered to know themselves.",
+          "problem_orig": "Тэмцээнд таван охин, таван хөвгүүн оролцов. Дурын $1 \\le i, j \\le 5$ хувьд $i$ дугаартай охин ба $j$ дугаартай хөвгүүн хоёр хоёулаа таньдаг хүүхдийн тоо $|i - j|$ байдаг байхаар охидыг $1, 2, \\ldots, 5$ гэж, хөвгүүдийг мөн адил $1, 2, \\ldots, 5$ гэж дугаарлаж болдог байв. Охидын таньдаг хүүхдийн тооны нийлбэр ба хөвгүүдийн таньдаг хүүхдийн тооны нийлбэр хоёрын аль ихийг $S$ гэвэл $S$ тоо хамгийн багадаа хэд байж болох вэ? Танилын харилцаа чиглэлтэй, өөрөөр хэлбэл $A$ хүүхэд $B$ хүүхдийг таньдаг байлаа гээд $B$ хүүхэд $A$ хүүхдийг таних албагүй, ба хүүхдийг өөртэй нь танил гэж тооцохгүй.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb{R}$ denote the set of all real numbers. Find all functions $f: \\mathbb{R} \\to \\mathbb{R}$ and $h: \\mathbb{R}^2 \\to \\mathbb{R}$ such that for all real numbers $x, y, z$ $$f(x + y - z)^2 = f(xy) + h(x + y + z, xy + yz + zx).$$",
+          "problem_orig": "Бүх бодит тооны олонлогийг $\\mathbb{R}$ гэж тэмдэглэе. Дурын $x, y, z \\in \\mathbb{R}$ бодит тоонуудын хувьд $$f(x + y - z)^2 = f(xy) + h(x + y + z, xy + yz + zx)$$ байдаг бүх $f: \\mathbb{R} \\to \\mathbb{R}$ ба $h: \\mathbb{R}^2 \\to \\mathbb{R}$ функцийг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 5,
+          "problem": "There were some children in a class. Among any six children there are two who are not friends with each other, and for any such non-friend pair that is chosen, there is a child among the remaining four children who is a friend of both of them. What is the maximum number of children in the class?",
+          "problem_orig": "Ангид хэдэн хүүхэд байв. Аль ч зургаан хүүхдийг авахад хоорондоо найз биш хоёр хүүхэд олддог ба дурын ийм найз биш хос сонгоход хоёулантай нь найз хүүхэд үлдсэн дөрвөн хүүхэд дотор байдаг байв. Ангид хамгийн олондоо хэдэн хүүхэд байгаа вэ?",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 6,
+          "problem": "Let $m$ be a natural number. A sequence of natural numbers written around a circle, in which the sum of any $m$ consecutive numbers is a power of $m$, is called a good sequence.\n\n(1) Show that for $n \\ge 2$, from any good sequence of length $m^n$ one can erase $m$ terms so as to obtain a good sequence of length $m^n - m$.\n\n(2) Show that in any good sequence of length $m^2$, some term is written at least $m$ times.",
+          "problem_orig": "$m$ натурал тоо өгөгдөв. Тойрог дээр бичигдсэн, аль ч дэс дараалсан $m$ ширхэг тооны нийлбэр $m$-ийн зэрэгт байдаг натурал тоон дарааллыг сайн дараалал гэе.\n\n(1) $n \\ge 2$ хувьд $m^n$ урттай дурын сайн дарааллын $m$ ширхэг гишүүнийг дарж $m^n - m$ урттай сайн дараалал үүсгэж болно гэж харуул.\n\n(2) $m^2$ урттай дурын сайн дарааллын ямар нэгэн гишүүн ядаж $m$ удаа давтаж бичигдсэн гэж харуул.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Prove that the equation $a! + b! = c^4 + 2024$ has a unique solution $(a, b, c)$ in positive integers with $a \\le b$, and find that solution.",
+          "problem_orig": "$a! + b! = c^4 + 2024$ тэгшитгэл $a \\le b$ байх $(a, b, c)$ натурал тоон цор ганц шийдтэй болохыг баталж шийдийг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 2,
+          "problem": "A triangle whose vertices are three vertices of a given convex pentagon is called big if its area is greater than half of the area of the pentagon. What is the maximum possible number of big triangles in a convex pentagon?",
+          "problem_orig": "Гүдгэр таван өнцөгтийн гурван орой дээр оройтой гурвалжны талбай өгсөн таван өнцөгтийн талбайн хагасаас их бол уг гурвалжныг том гэе. Гүдгэр таван өнцөгтөд том гурвалжин хамгийн олондоо хэд байж болох вэ?",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 3,
+          "problem": "Denote the set of positive real numbers by $\\mathbb{R}^+ = \\{x \\in \\mathbb{R} \\mid x > 0\\}$. Find all functions $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for all $x, y \\in \\mathbb{R}^+$ $$f(x)f(y + f(x)) = f(1 + xy).$$",
+          "problem_orig": "Эерэг бодит тоон олонлогийг $\\mathbb{R}^+ = \\{x \\in \\mathbb{R} \\mid x > 0\\}$ гэж тэмдэглэе. Дурын $x, y \\in \\mathbb{R}^+$ тоонуудын хувьд $$f(x)f(y + f(x)) = f(1 + xy)$$ байдаг бүх $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ функцийг ол.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 4,
+          "problem": "Polynomials $P(x)$ and $Q(x)$ with non-negative coefficients are given. Denote the derivative of $P(x)$ by $P'(x)$. Suppose $P(0) = Q(0) = 0$ and $Q(1) \\le 1 \\le P'(0)$.\n(1) Prove that for every number $0 \\le x \\le 1$ we have $0 \\le Q(x) \\le x \\le P(x)$.\n(2) Prove that for every number $0 \\le x \\le 1$ we have $P(Q(x)) \\le Q(P(x))$.\nYou do not need to find the conditions for equality.",
+          "problem_orig": "Сөрөг биш коэффициенттой $P(x)$ ба $Q(x)$ олон гишүүнтүүд өгөгдөв. $P(x)$-ийн уламжлалыг $P'(x)$ гэе. $P(0) = Q(0) = 0$ ба $Q(1) \\le 1 \\le P'(0)$ байв.\n(1) Дурын $0 \\le x \\le 1$ тооны хувьд $0 \\le Q(x) \\le x \\le P(x)$ байна гэж батал.\n(2) Дурын $0 \\le x \\le 1$ тооны хувьд $P(Q(x)) \\le Q(P(x))$ байна гэж батал.\nТэнцэл биелэх нөхцөлийг олох шаардлагагүй.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 5,
+          "problem": "In an acute triangle $ABC$ the altitudes $BE$ and $CF$ are drawn. The segment $AD$ is a diameter of the circumcircle of triangle $ABC$. Let $M$ be the midpoint of side $BC$. The internal common tangents of the incircles of triangles $BMF$ and $CME$ meet at a point $K$. Prove that the points $K$, $M$, $D$ are collinear.",
+          "problem_orig": "Хурц өнцөгт $ABC$ гурвалжинд $BE$ ба $CF$ өндрүүд татав. $AD$ хэрчим $ABC$ гурвалжныг багтаасан тойргийн диаметр болно. $BC$ талын дундаж цэгийг $M$ гэе. $BMF$ ба $CME$ гурвалжинд багтсан тойргуудын дотоод ерөнхий шүргэгчүүд $K$ цэгт огтлолцдог байв. $K$, $M$, $D$ цэгүүд нэг шулуун дээр оршино гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 6,
+          "problem": "Consider a set $A = \\{a_1, \\ldots, a_n\\}$ of $n \\ge 1$ positive integers. Call the set $A$ good if for any two distinct subsets $X \\ne Y \\subseteq A$ the difference $S(X) - S(Y)$ is not divisible by $2^n$. Here the sum of the elements of a subset $X \\subseteq A$ is denoted $S(X) = \\sum_{a \\in X} a$, and $S(\\emptyset) = 0$. Find the number of good sets all of whose elements are less than $2^n$.",
+          "problem_orig": "$n \\ge 1$ гишүүнтэй натурал тоон $A = \\{a_1, \\ldots, a_n\\}$ олонлогийг авч үзье. Дурын ялгаатай $X \\ne Y \\subseteq A$ дэд олонлогуудын хувьд $S(X) - S(Y)$ ялгавар $2^n$ тоонд хуваагддаггүй бол $A$ олонлогийг сайн гэе. Энд $X \\subseteq A$ дэд олонлогийн гишүүдийн нийлбэрийг $S(X) = \\sum_{a \\in X} a$ гэж тэмдэглэх ба $S(\\emptyset) = 0$ гэж тодорхойлно. Бүх гишүүн нь $2^n$ тооноос бага байдаг сайн олонлогийн тоог ол.",
+          "orig_lang": "mn"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "The number $a_0 = 2^{2025}$ is given. Two players play in turns by the following rule:\nOn the $n$-th turn the player appends to the sequence one of the numbers $a_n = a_{n-1} + 1$ or $a_n = S(a_{n-1})$.\nIf three equal numbers appear in the sequence, or four consecutive terms of the sequence form an arithmetic progression, the game stops and the player who wrote the last number wins. Which player wins with correct play?\nHere $S(n)$ denotes the sum of the digits of the number $n$.",
+          "problem_orig": "$a_0 = 2^{2025}$ тоо өгөгдсөн. Хоёр тоглогч ээлжлэн дараах дүрмээр тоглоно:\n$n$-р ээлжинд тоглогч $a_n = a_{n-1} + 1$ эсвэл $a_n = S(a_{n-1})$ тоонуудын аль нэгийг дараалалд нэмж бичнэ.\nХэрвээ дараалалд гурван ижил тоо гарсан эсвэл дарааллын дараалсан дөрвөн гишүүн арифметик прогресс үүсгэж байвал тоглоомыг зогсоож хамгийн сүүлд тоо бичсэн тоглогч ялагч болно. Зөв тоглоход аль тоглогч хожих вэ?\nЭнд $S(n)$ нь $n$ тооны цифрүүдийн нийлбэр юм.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 2,
+          "problem": "Denote by $\\varphi(n)$ the number of positive integers less than $n$ that are coprime to $n$. For example $\\varphi(6) = |\\{1, 5\\}| = 2$ and $\\varphi(1) = |\\{1\\}| = 1$.\nFor non-negative integers $a, b, c, d$ we have $\\varphi(2^a(2b+1)) = 2^c(2d+1)$. Let $b \\ge 1$.\n(1) Prove that $a \\le c$.\n(2) Prove that $b \\ge 2d + 1$.",
+          "problem_orig": "Натурал $n$ тооноос бага $n$-тэй харилцан анхны натурал тооны тоог $\\varphi(n)$ гэж тэмдэглэе. Жишээлбэл $\\varphi(6) = |\\{1, 5\\}| = 2$ ба $\\varphi(1) = |\\{1\\}| = 1$ байна.\n$a, b, c, d$ сөрөг биш бүхэл тоонуудын хувьд $\\varphi(2^a(2b+1)) = 2^c(2d+1)$ байв. $b \\ge 1$ гэе.\n(1) $a \\le c$ гэж батал.\n(2) $b \\ge 2d + 1$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 3,
+          "problem": "Let $I$ be the incenter of a scalene triangle $ABC$ inscribed in a circle $\\omega$. The line $BI$ meets $\\omega$ again at $M$. Let $I_B$ be the reflection of $I$ in the line $AC$. A point $H$ is chosen on the minor arc $AM$ of $\\omega$ such that $\\angle BHI_B = 90^\\circ$. Let $T$ be the intersection point of the segments $II_B$ and $AC$. The line $HT$ meets $\\omega$ again at $N$. Let $R$ be the intersection point of the segments $MN$ and $AC$. Prove that triangle $IRM$ is isosceles.",
+          "problem_orig": "$\\omega$ тойрогт багтсан элдэв талт $ABC$ гурвалжинд багтсан тойргийн төв $I$ байг. $BI$ шулуун $\\omega$ тойрогтой дахин $M$ цэгт огтлолцдог байг. $I$ цэгийн $AC$ шулууны хувьд тэгш хэмтэй орших цэгийг $I_B$ гэе. $\\omega$ тойргийн $AM$ бага нум дээр $H$ цэгийг $\\angle BHI_B = 90^\\circ$ байхаар сонгов. $II_B$ хэрчим ба $AC$ хэрчмүүдийн огтлолцлын цэгийг $T$ гэе. $HT$ шулуун $\\omega$ тойрогтой дахин $N$ цэгт огтлолцдог байг. $MN$ хэрчим ба $AC$ хэрчмүүдийн огтлолцлын цэгийг $R$ гэе. Тэгвэл $IRM$ гурвалжныг адил хажуут гурвалжин болохыг батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 4,
+          "problem": "Let $H$ be the orthocenter of a triangle $ABC$ with $AB \\ne AC$. A point $T$ is taken on the arc $BC$ of the circumcircle of triangle $ABC$ that does not contain the vertex $A$. The line $l$ through $H$ parallel to side $BC$ meets the line $TB$ at $P$ and the line $TC$ at $Q$. The circumcircles of triangles $PAB$ and $QAC$ meet again at $S$.\nSuppose $\\angle PAQ = 2\\angle BAC$.\n(1) Prove that $S$ lies on the circumcircle of triangle $BHC$.\n(2) Prove that $\\angle PAH = \\angle HAQ$ or $\\angle PAB = \\angle BAH$.",
+          "problem_orig": "$AB \\ne AC$ байх $ABC$ гурвалжны ортотөвийг $H$ гэе. $ABC$ гурвалжныг багтаасан тойргийн $A$ оройг агуулаагүй $BC$ нум дээр $T$ цэг авав. $H$ цэгийг дайрсан $BC$ талтай параллел $l$ шулуун, $TB$ шулуунтай $P$ цэгт, $TC$ шулуунтай $Q$ цэгт огтлолцоно. $PAB$, $QAC$ гурвалжныг багтаасан тойргууд дахин $S$ цэгт огтлолцоно.\n$\\angle PAQ = 2\\angle BAC$ гэе.\n(1) $S$ цэг $BHC$ гурвалжныг багтаасан тойрог дээр оршино гэж батал.\n(2) $\\angle PAH = \\angle HAQ$ эсвэл $\\angle PAB = \\angle BAH$ гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 5,
+          "problem": "Let $t_1, t_2, \\ldots, t_n$ be real numbers, none of which exceeds $2$. Prove that $$\\frac{t_1^3}{t_2^2+4} + \\frac{t_2^3}{t_3^2+4} + \\cdots + \\frac{t_{n-1}^3}{t_n^2+4} + \\frac{t_n^3}{t_1^2+4} \\le n.$$",
+          "problem_orig": "Бүгд 2-оос хэтэрдэггүй $t_1, t_2, \\ldots, t_n \\le 2$ бодит тоонуудын хувьд $$\\frac{t_1^3}{t_2^2+4} + \\frac{t_2^3}{t_3^2+4} + \\cdots + \\frac{t_{n-1}^3}{t_n^2+4} + \\frac{t_n^3}{t_1^2+4} \\le n$$ байна гэж батал.",
+          "orig_lang": "mn"
+        },
+        {
+          "number": 6,
+          "problem": "What is the minimum possible number of digits of a number that is divisible by $10^{2025} + 3$ and is written using two distinct digits?",
+          "problem_orig": "Хоёр өөр цифрээр бичигдэх $10^{2025} + 3$ нийлбэрт хуваагддаг тоо хамгийн багадаа хэдэн оронтой байх вэ?",
+          "orig_lang": "mn"
+        }
+      ]
     }
   ]
 }
