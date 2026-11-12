@@ -519,12 +519,12 @@
         {
           "day": 1,
           "number": 1,
-          "problem": "Given $R, r > 0$, two circles of radii $R$ and $r$ intersect at two points. The line joining the two intersection points is at distance $D$ from the center of one circle and distance $d$ from the center of the other. What is the smallest possible value of $D + d$?"
+          "problem": "Two circles of radii $R$ and $r$ and centers $O$ and $O'$, respectively, intersect at the points $P$ and $P'$. Let $l$ be the line through $P$ and $P'$. Determine, in terms of $R$ and $r$, the smallest value that the sum of the distances from $l$ to $O$ and $O'$ can take."
         },
         {
           "day": 1,
           "number": 2,
-          "problem": "Let $A$ be a set of $n$ nonneg­ative integers. Say $A$ has property $\\mathcal{P}$ if the set $\\{x + y \\mid x, y \\in A\\}$ has $\\binom{n}{2}$ elements. The diameter of $A$ is the largest element minus the smallest element. Let $f(n)$ be the smallest diameter of any set $A$ with property $\\mathcal{P}$. Show that $n^2 \\leq 4f(n) < 4n^3$."
+          "problem": "We say that a set $A \\subset \\mathbb{N}$ satisfies property $P(n)$ if $A$ has $n$ elements and $A + A = \\{x + y \\mid x \\in A \\text{ and } y \\in A\\}$ has $\\frac{n(n+1)}{2}$ elements. Given a finite $A \\subset \\mathbb{N}$, we define the diameter of $A$ as the difference between the largest and the smallest element of $A$. Let $f(n)$ be the smallest diameter that a set $A$ satisfying $P(n)$ can have. Show that $\\frac{n^2}{4} \\le f(n) < n^3$ for all $n \\ge 2$.\n\n(If your exam time has not run out, try to improve this estimate. For example, try to show that $f(p) < 2p^2$ for every prime number $p$.)"
         },
         {
           "day": 1,
@@ -539,7 +539,7 @@
         {
           "day": 2,
           "number": 5,
-          "problem": "Let $f(x) = x^2 - C$ where $C$ is a rational constant. Show that there are only finitely many rationals $x$ such that the sequence $\\{x, f(x), f(f(x)), \\ldots\\}$ is finite (i.e., eventually periodic)."
+          "problem": "Let $c \\in \\mathbb{Q}$ and $f(x) = x^2 + c$. We define $f^0(x) = x$, $f^{n+1}(x) = f(f^n(x))$, $n \\in \\mathbb{N}$. We say that $x \\in \\mathbb{R}$ is pre-periodic if $\\{f^n(x), n \\in \\mathbb{N}\\}$ is finite. Show that $\\{x \\in \\mathbb{Q} \\mid x \\text{ is pre-periodic}\\}$ is finite."
         },
         {
           "day": 2,
