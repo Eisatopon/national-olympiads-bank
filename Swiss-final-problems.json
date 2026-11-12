@@ -1140,6 +1140,51 @@
           "problem": "Let $ABC$ be an acute triangle with $AB = AC$. Let $D$ and $E$ be points on the segments $AB$ and $AC$, respectively. Let $\\omega_1$ be the circle with centre $D$ and radius $DB$, and let $\\omega_2$ be the circle with centre $E$ and radius $EC$. Assume that $\\omega_1$ and $\\omega_2$ intersect twice and let $P$ be the intersection closest to $BC$. Denote by $F \\ne B$ and $G \\ne C$ the intersections of $BC$ with $\\omega_1$ and $\\omega_2$, respectively. Finally, let $DF$ and $EG$ intersect at $Q$, and let the angle bisectors of $\\angle QDP$ and $\\angle PEQ$ intersect at $S$.\nShow that the circumcircles of $SDQ$ and $SEP$ are tangent."
         }
       ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $n$ be a positive integer. Archi and Baldibus are constructing a number on a blackboard, one digit at a time. To start, Archi writes down one of the nine digits from 1 to 9. Then, starting with Baldibus, the two players alternate the following:\n• Baldibus appends one of the ten digits from 0 to 9 to the end of the current number.\n• Archi prepends one of the nine digits from 1 to 9 to the front of the current number.\nArchi wins if, immediately after Archi writes a digit, the number on the board is divisible by $n$. Determine the values of $n$ for which Archi can guarantee a win, no matter what Baldibus does."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $n, k \\ge 2$ and $a_1, a_2, \\dots, a_k$ be positive integers satisfying $n < k < 2n$ and\n$$2^n - 1 \\mid 2^{a_1} + 2^{a_2} + \\cdots + 2^{a_k}.$$\nShow that at least three of $a_1, a_2, \\dots, a_k$ have the same remainder when divided by $n$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $\\Omega$ be a circle with diameter $[AB]$ and $C$ a point on the segment $[AB]$. Let $\\ell_1$ and $\\ell_2$ be two lines, such that the projections of $C$ onto them both lie on $\\Omega$. Let $W$ and $X$ be intersections of the tangent to $\\Omega$ at $A$ with $\\ell_1$ and $\\ell_2$ respectively. Let $Y$ and $Z$ be intersections of the tangent to $\\Omega$ at $B$ with $\\ell_1$ and $\\ell_2$ respectively. Prove that $WZ$, $XY$ and $AB$ concur at a point."
+        },
+        {
+          "day": 1,
+          "number": 4,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all $x, y \\in \\mathbb{R}$,\n$$f(x+y) + f(f(y)x + y) = f(x+2y) + f(y)x.$$"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "We call a strictly increasing sequence $a_1, a_2, \\dots, a_{2026}$ of positive integers indivisible if for all $2 \\le k \\le 2026$, the sum of any $k$ consecutive terms is not divisible by $k$.\nProve that an indivisible sequence exists and determine the smallest possible value of the last term in an indivisible sequence."
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $\\Gamma_1$ and $\\Gamma_2$ be two circles tangent at $T$, such that $\\Gamma_2$ is inside of $\\Gamma_1$. Let $PQ$ be a chord of $\\Gamma_1$, tangent to $\\Gamma_2$ at $C$. Point $A \\ne T$ lies on $\\Gamma_1$ and $AT$ intersects $\\Gamma_2$ at $B \\ne T$. Let line $BC$ intersect $AP$ and $AQ$ at $X$ and $Y$, respectively. Prove that $TB$ bisects the angle $\\angle XTY$."
+        },
+        {
+          "day": 2,
+          "number": 7,
+          "problem": "There are finitely many integers on a board, all of which are at least 2. Pingu repeatedly carries out the following step: first, Pingu chooses an integer $n \\ge 2$ that is coprime to every integer currently on the board. Pingu then replaces each integer $x$ on the board with the unique integer $y \\in \\{1, 2, \\dots, n-1\\}$ such that $xy \\equiv 1 \\pmod{n}$.\nPingu stops as soon as there is a 1 anywhere on the board at the end of a step. If at this point, there is also a number different from 1 on the board, Pingu loses. Otherwise, if all the numbers are 1, Pingu wins. Prove that Pingu can always win, regardless of the starting integers.\nExample: In a step, if Pingu chooses $n = 11$, Pingu replaces $3, 8, 13, 8$ with $4, 7, 6, 7$."
+        },
+        {
+          "day": 2,
+          "number": 8,
+          "problem": "There are 2026 white balls and 2026 black balls arranged in a row in some order. A balanced segment is a non-empty segment of consecutive balls that contains the same number of white balls as black balls. A balanced removal is the operation of selecting a balanced segment $S$, removing all the balls in $S$, and shifting left the balls that were to the right of $S$ so that the remaining balls again form a contiguous row.\nDetermine the smallest positive integer $N$ satisfying the following property: for every starting configuration of balls and for every integer $k$ satisfying $0 \\le k \\le 2026$, there exists a sequence of at most $N$ balanced removals after which there are exactly $2k$ remaining balls."
+        }
+      ]
     }
   ]
 }

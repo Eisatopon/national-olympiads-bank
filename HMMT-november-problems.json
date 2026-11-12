@@ -7230,6 +7230,407 @@
           "problem": "For each of the following properties, compute the smallest positive perfect square $n$ with that property. (Unless otherwise specified, assume all numbers are written in base $10$.)\n1. $n$ contains at least $4$ of the same nonzero digit.\n2. $n$ starts with the same $2$-digit number repeated twice (i.e., $\\underline{abab}$ for digits $a$ and $b$).\n3. $n>2025$ contains $2025$ as a contiguous substring.\n4. $n$ contains $2520$ as a contiguous substring.\n5. The sum of the digits of $n$ is $25$.\n6. When $n$ is written in base $2025$, the sum of its digits is $2025$. (Submit $n$ in base $10$.)\n7. $n>10000$, and the last four digits of $n$ are also a perfect square (possibly with leading $0$s).\n8. $n^2$ has $2025$ positive divisors.\n9. $n$ has two positive divisors that sum to $2025$."
         }
       ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 1,
+          "problem": "Each cell of the following $1 \\times 8$ grid is labeled with a single-digit positive integer such that any two adjacent cells differ by either 3 or 5. Compute the sum of all eight numbers in the grid.\n\n$$\\begin{array}{|c|c|c|c|c|c|c|c|}\\hline 6 & ? & 8 & ? & ? & 7 & ? & 5 \\\\ \\hline\\end{array}$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 2,
+          "problem": "Suppose $m$ and $b$ are positive real numbers such that the line $y = mx + b$ intersects the parabola $y = x^2$ at two points whose $x$-coordinates differ by 4 and whose $y$-coordinates differ by 12. Compute $b$."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 3,
+          "problem": "Eric the monkey has no bananas. Every morning, Eric may optionally go to the supermarket to buy a single bunch of exactly 5 bananas. Eric may only go to the supermarket 3 times. Every night, Eric must eat 1 banana or else he dies. Compute the number of ways Eric may survive for 15 nights."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 4,
+          "problem": "Square $AXYZ$ with area 13 is placed along hypotenuse $\\overline{AC}$ of right triangle $ABC$. Given that the distances from $X$ and $Y$ to $\\overline{BC}$ are 10 and 8 respectively, compute $BC$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_gen_p4_fig.png"
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 5,
+          "problem": "Let $\\alpha$ be the unique real number such that both $\\alpha + \\sqrt{\\frac{11}{12}}$ and $\\alpha^3 + \\sqrt{\\frac{11}{12}}$ are positive and rational. Compute $\\alpha^3 + \\sqrt{\\frac{11}{12}}$."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 6,
+          "problem": "Let $O$ be the circumcenter of an acute triangle $ABC$, and let $D$ and $E$ be points on side $\\overline{BC}$ such that $\\overline{OD}$ is parallel to $\\overline{AB}$ and $\\overline{OE}$ is parallel to $\\overline{AC}$. Given that $BD = 7$, $DE = 6$, and $EC = 5$, compute $AO$."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 7,
+          "problem": "In an $11 \\times 11$ grid of unit squares, rows and columns are indexed consecutively with the integers from 1 to 11. Then, every cell with an even row and column index is deleted. Compute the number of ways to partition the resulting shape into rectangles with integer side lengths."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 8,
+          "problem": "In the diagram, six circles of radius 3 are arranged so that each is tangent to two others. Their tangency points form the vertices of a cyclic hexagon with circumradius 5. Compute the area of this hexagon.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_gen_p8_fig.png"
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 9,
+          "problem": "Let $a_1, a_2, \\dots$ be a sequence of positive integers such that $a_1 = a_2 = \\cdots = a_7 = 1$ and\n$$a_n = a_{n-1} + 10a_{n-7} \\quad \\text{for all } n \\ge 8.$$\nCompute the remainder when $a_{2026}$ is divided by 10000."
+        },
+        {
+          "day": 1,
+          "paper_label": "General Round",
+          "number": 10,
+          "problem": "The country of HMMTland has 100 cities. Engineers propose a tunnel between every pair of cities and randomly assign the distinct construction costs $1, 2, \\dots, \\binom{100}{2}$ to the proposed tunnels, with every assignment equally likely. Each city funds its single cheapest incident tunnel. A tunnel is built if at least one city funds it. If more than one city funds it, it is still built only once. Compute the expected number of connected components in the resulting tunnel system.\n(A connected component is a maximal nonempty set of cities such that every city in the set is reachable from every other city in the set by traveling through built tunnels.)"
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 1,
+          "problem": "Moana is building a square raft by tying four rectangular planks together. All of the planks have integer side lengths, and three of the planks have areas 60, 28, and 49, as shown. Compute the area of the fourth plank.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_thm_p1_fig.png"
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 2,
+          "problem": "Ariel is organizing her collection of human treasures. She can divide her dinglehoppers evenly into groups of 102, and her snarfblatts evenly into groups of 103. When she combines all of her dinglehoppers and snarfblatts, she can divide them evenly into groups of 100. Compute the minimum possible (nonzero) total number of dinglehoppers and snarfblatts in Ariel's collection."
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 3,
+          "problem": "Jasmine is making a new design for a flying carpet. Her first draft is a square, and to construct her $(n+1)$th draft she takes her $n$th draft and, for each polygonal region bounded by segments in her diagram, she connects the midpoints of adjacent sides via line segments. The first, second, and third drafts are shown at right, and contain 1, 5, and 21 polygonal regions respectively. Compute the number of polygonal regions in her 6th draft.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_thm_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 4,
+          "problem": "After some recent incidents, Snow White has decided to start eating apples again. She eats 1 apple on day 1. For each positive integer $n \\ge 2$, she eats $n$ times as many apples on day $n$ as she did on all previous days combined. Compute the number of apples Snow White eats on day 2026."
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 5,
+          "problem": "Rapunzel's hair is getting too long again, so she decides to cut it every day for the next 6 days. At the start of the first day, her hair is 2026 feet long. First, she chooses a positive integer $m$. Then, on the $n^{\\text{th}}$ day, she cuts $\\frac{m}{n}$ feet off her hair, then cuts $\\frac{1}{n+1}$ of her remaining hair length off. Suppose that Rapunzel's hair does not grow back, and that at the end of each of the 6 days, her hair length is an integer number of feet. Compute the smallest possible value of $m$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 6,
+          "problem": "Raya is flying on the dragon Sisu over Kumandra when they spot a small circular island they want to reach. Initially, Raya and Sisu are directly above the point $(0, 0)$. The island consists of all points $(x, y)$ satisfying $(x-4)^2 + (y-6)^2 \\le 1$. Without wind, Sisu can fly at 2 units per hour in any direction. Additionally, the wind blows Sisu in the positive $x$-direction at a constant rate of 1 unit per hour. Compute the minimum amount of time, in hours, before Raya and Sisu can be directly above any point on the island. (Assume that they remain at a constant altitude for the entirety of their flight.)"
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 7,
+          "problem": "Mulan orders 10 soldiers to stand in a line. Each soldier points to one of their neighboring soldiers independently and uniformly at random. Compute the probability that exactly 3 pairs of neighboring soldiers point at each other."
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 8,
+          "problem": "Cinderella's pumpkin carriage consists of two circular wheels and a circular pumpkin, all tangent to a line segment. When on flat ground, the leftmost point of the pumpkin is directly above the rightmost point of the left wheel, and the rightmost point of the pumpkin is directly above the leftmost point of the right wheel. The wheels have radii 3 and 4. Moreover, the height of the carriage is 30. Compute the radius of the pumpkin.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_thm_p8_fig.png"
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 9,
+          "problem": "Compute the unique triple of positive integers $(b, e, \\ell)$ satisfying $be\\ell + \\ell + e = 6886$ and $be + \\ell + \\ell e = 586$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Theme Round",
+          "number": 10,
+          "problem": "Merida paints an equilateral triangle $ABC$ with side length 4 units on her castle wall. She attempts to shoot an arrow at each vertex of this triangle. However, her arrows strike the wall at points $D$, $E$, and $F$, which are 1, 2, and 3 units away from $A$, $B$, and $C$, respectively. Furthermore, the centroid of triangle $DEF$ coincides with the centroid of triangle $ABC$. Compute the maximum possible area of triangle $DEF$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 1,
+          "problem": "Jerry and Sophie are each given a number. They are both told the following information:\n• Their numbers are distinct integers between 2 and 50, inclusive.\n• Jerry's number is an integer power of Sophie's number.\nHowever, neither of them can determine the other's number given this information. Compute the sum of their numbers."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 2,
+          "problem": "Across all positive integers $m$ and $n$, compute the least possible integer value of\n$$(\\sqrt{21} + \\sqrt{55})^2 + (\\sqrt{m} - \\sqrt{n})^2.$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 3,
+          "problem": "Let points $A$ and $D$ lie on parallel lines $\\ell_1$ and $\\ell_2$, respectively, and let points $B$ and $C$ lie between $\\ell_1$ and $\\ell_2$ such that $AB = BC = CD$, and $B$, $C$ are on the same side of $\\overline{AD}$. Suppose the angle between $\\overline{AB}$ and $\\ell_1$ is $20^\\circ$, the angle between $\\overline{CD}$ and $\\ell_2$ is $26^\\circ$, and $\\angle ABD = 84^\\circ$. Compute the degree measure of $\\angle ACD$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_team_p3_fig.png"
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 4,
+          "problem": "Let $F_0, F_1, F_2, \\dots$ be a sequence of positive integers with $F_0 = F_1 = F_2 = \\cdots = F_{2025} = 1$ and $F_i = F_{i-2025} + F_{i-2026}$ for all positive integers $i \\ge 2026$. Compute the number of positive integers $n < 2026$ such that there exists a positive integer $k$ satisfying $F_k = n$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 5,
+          "problem": "A right circular cone with apex $A$ has base radius 1 and height 7. Two perpendicular planes are tangent to the cone's lateral surface along segments $\\overline{AP}$ and $\\overline{AQ}$, where $P$ and $Q$ lie on the base of the cone. Compute $PQ$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 6,
+          "problem": "Given that $a$ and $b$ are integers greater than 1 such that $\\frac{a+b^2}{a^2}$ is an integer, compute the least possible value of $b$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 7,
+          "problem": "Alice has 8 balls labeled $1, 2, 3, \\dots, 8$ and 8 boxes labeled $1, 2, 3, \\dots, 8$. Compute the number of ways for Alice to place exactly 1 ball in every box such that exactly 1 ball is labeled with a strictly higher number than its box."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 8,
+          "problem": "Let $ABC$ be a triangle with $AB = 13$, $BC = 14$, and $CA = 15$. Point $D$ is chosen on segment $\\overline{BC}$. Points $P$ and $Q$ are such that $\\angle PBC = 90^\\circ$, $\\angle QCB = 90^\\circ$, and $APDQ$ is a kite with axis of symmetry $\\overline{PQ}$. Suppose that $D$ is chosen such that $\\angle PAQ$ is maximized. Compute $AD$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 9,
+          "problem": "Let $x$, $y$, and $z$ be real numbers satisfying\n$$x + y - \\sqrt{z^2+1} = -5,$$\n$$y + z - \\sqrt{x^2+1} = 0,$$\n$$z + x - \\sqrt{y^2+1} = 5.$$\nCompute $x + y + z$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Team Round",
+          "number": 10,
+          "problem": "Let $N$ denote the number of ways to tile a $2 \\times 199$ grid with O-tetrominoes, T-tetrominoes, and L-trominoes, shown below. Compute the remainder when $N$ is divided by 128. (The tiles can be rotated, and tilings that differ by rotation or reflection are considered distinct.)\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_team_p10_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 1,
+          "problem": "Each cell of the following $1 \\times 9$ grid is labeled with a single-digit nonnegative integer such that any two adjacent cells have a product that is divisible by 6. Compute the least possible sum of all nine numbers in the grid.\n\n$$\\begin{array}{|c|c|c|c|c|c|c|c|c|}\\hline ? & 6 & 1 & ? & 0 & 2 & ? & ? & 3 \\\\ \\hline\\end{array}$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 2,
+          "problem": "Squares are erected outside of right triangle $ABC$, as shown below. Given that the square along leg $\\overline{AB}$ has perimeter 3, and the square along leg $\\overline{BC}$ has perimeter 5, compute the perimeter of the square along hypotenuse $\\overline{AC}$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_guts_p2_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 3,
+          "problem": "Compute the number of nine-letter strings consisting of three $A$'s, three $B$'s, and three $C$'s such that each $A$ appears directly next to another $A$, each $B$ appears directly next to another $B$, and each $C$ appears directly next to another $C$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 4,
+          "problem": "Compute the greatest 2-digit positive integer $\\underline{ab}$ such that $\\underline{ab} + \\underline{ba}$ is a perfect square."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 5,
+          "problem": "Three quarter-circles of radius 1 are inscribed in a larger quarter-circle, as shown in the diagram. Compute the area of the shaded region.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_guts_p5_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 6,
+          "problem": "Snow White and the seven dwarfs are sitting in a circle facing inward. Initially, Snow White holds a basket containing 100 apples, of which 1 is poisoned and the rest are harmless. Every minute, whoever is holding the basket must choose an apple uniformly and independently at random from the basket and eat it, then pass the basket to the person to their left. This process continues until someone eats the poisoned apple.\nCompute the probability that Snow White does not eat the poisoned apple."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 7,
+          "problem": "Suppose $P(x)$ is a quadratic polynomial with real coefficients for which $P(10) - P(1) - P(9) = 62$ and $P(10) - P(2) - P(8) = 118$. Compute $P(10) - P(3) - P(7)$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 8,
+          "problem": "Jason splits a $5 \\times 5$ square into 25 unit squares and removes 9 of them to form the following hashtag shape:\n\nJason then draws a line segment inside the hashtag. Compute the maximum possible length of such a segment.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_guts_p8_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 9,
+          "problem": "Hannah has 16 colored pencils of different colors and is drawing a tricolor flag with 3 horizontal stripes. The pencils come in 8 pairs of complementary colors. Hannah randomly colors each stripe such that no two stripes have exactly the same color. Compute the probability that no two adjacent stripes have complementary colors."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 10,
+          "problem": "A semicircle with diameter $\\overline{XY}$ is drawn inside of a larger semicircle with diameter $\\overline{XZ}$, as shown below. Furthermore, the larger semicircle is divided by radius $\\overline{OP}$ into two congruent quarter-circles.\n\nSuppose that the two shaded regions shown above have equal area. Given that $XZ = 10$, compute $XY$.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_guts_p10_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 11,
+          "problem": "Mark rolls a fair 6-sided die 6 times and writes down his results in order, creating a 6-digit number. Compute the probability that this number is a multiple of 15."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 12,
+          "problem": "Compute the smallest positive integer $n \\ge 5$ such that\n• $\\binom{n}{0}$ divides $\\binom{n}{1}$,\n• $\\binom{n}{1}$ divides $\\binom{n}{2}$,\n• $\\binom{n}{2}$ divides $\\binom{n}{3}$,\n• $\\binom{n}{3}$ divides $\\binom{n}{4}$,\n• $\\binom{n}{4}$ divides $\\binom{n}{5}$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 13,
+          "problem": "A circular necklace has 20 red beads and 30 green beads. Stella cuts the necklace into two halves, each with an equal number of beads, and takes one of the halves. The beads are arranged such that across all the ways Stella could have cut the necklace, the minimum possible number of red beads in Stella's half is 6, and the minimum possible number of green beads in Stella's half is $N$. Compute the maximum possible value of $N$ across all such arrangements of beads."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 14,
+          "problem": "Suppose $a_1, a_2, a_3, a_4$ is a geometric sequence of real numbers satisfying $a_2 + a_3 = 20$ and $a_1 + a_4 = 26$. Compute $\\sqrt[3]{a_1} + \\sqrt[3]{a_4}$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 15,
+          "problem": "An equilateral hexagon is divided into a square and two rhombi, as shown below. Given that the rhombi have areas 2 and 3, compute the side length of the hexagon.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/hmmt_2026nov_guts_p15_fig.png"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 16,
+          "problem": "Let $N$ be the smallest positive integer divisible by 2026 with the property that for every positive divisor $k$ of $N$, the number of positive divisors of $k$ is also a divisor of $N$. Compute $\\frac{N}{2026}$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 17,
+          "problem": "On Monday, Steve writes a single-digit nonzero multiple of 4 on a blackboard. Each following day, Steve inserts a nonzero digit at any position into the number on the blackboard—possibly at the front, in the middle, or at the end—such that the number on the blackboard remains a multiple of 4. Compute the number of 4-digit numbers that could possibly appear on the blackboard on Thursday."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 18,
+          "problem": "Point $D$ lies on side $\\overline{BC}$ of triangle $ABC$ such that $AB = BD = 14$ and $DC = 9$. Let $T$ be a point on line $AD$ such that $\\angle BCT = 90^\\circ$ and $D$ lies between $A$ and $T$. Compute the minimum possible value of $AT$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 19,
+          "problem": "Let $\\frac{a_1}{a_2}$, $\\frac{b_1}{b_2}$, $\\frac{c_1}{c_2}$, and $\\frac{d_1}{d_2}$ be four positive simplified fractions for which\n$$\\frac{a_1}{a_2} \\cdot \\frac{b_1}{b_2} \\cdot \\frac{c_1}{c_2} = \\frac{d_1}{d_2}.$$\nGiven that $a_1 a_2 = 720$, $b_1 b_2 = 108$, and $c_1 c_2 = 250$, compute the minimum possible value of $d_1 d_2$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 20,
+          "problem": "Let $ABC$ be a triangle with $BC = 8$. Let $\\omega$ be the circle centered at $A$ passing through the midpoint of side $\\overline{BC}$. Suppose that there exist parallel tangent lines to $\\omega$ through $B$ and $C$. Given that the distance from $A$ to $BC$ is 3, compute the radius of $\\omega$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 21,
+          "problem": "Compute the number of 10-letter strings of $A$'s and $B$'s that contain the same number of substrings of the form $ABB$ as substrings of the form $BBA$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 22,
+          "problem": "Compute the sum of the digits in the base 10 representation of\n$$\\left\\lfloor 10^{99} \\cdot \\frac{100\\,008}{700\\,007} \\right\\rfloor.$$\n(Here, $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$.)"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 23,
+          "problem": "Call a set $S$ of positive integers divisorful if for any ordered triple $(a, b, c)$ consisting of not necessarily distinct elements of $S$, $a$ divides $bc$. Compute the least positive integer $n$ such that there exists a divisorful set with exactly 25 elements containing $n$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 24,
+          "problem": "Gregasaurus has a unit square piece of paper with a red dot in one of its corners. A fold consists of the following:\n1. Selecting a line $\\ell$ passing through the interior of the square that divides the square into two regions.\n2. Picking one of the two regions, and reflecting it across $\\ell$.\nGregasaurus folds the square exactly once. Compute the area of the smallest region $R$ such that the red dot must remain in $R$, no matter how Gregasaurus folds the square."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 25,
+          "problem": "Let $p(x)$ be a polynomial of degree at most 6 such that $p(n) = 1 + \\frac{1}{2} + \\frac{1}{3} + \\cdots + \\frac{1}{n}$ for all $n \\in \\{2, 3, 4, 5, 6, 7, 8\\}$. Compute $p(0)$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 26,
+          "problem": "Sophia has a $5 \\times 5$ grid of dots, and selects 10 of them uniformly at random. Given that she selects exactly 2 dots in each row and each column, compute the probability that some 4 selected dots form a rectangle with grid-aligned sides."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 27,
+          "problem": "Crystal writes two 5-digit positive integers in her journal using every digit exactly once (where leading zeros are not allowed). Compute the maximum possible sum of the digits of the absolute difference between her numbers."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 28,
+          "problem": "One hundred players $P_1, P_2, \\dots, P_{100}$ are playing a game. Each player $P_i$ has an unfair coin that lands heads with probability $p_i$. On the $n^{\\text{th}}$ turn of the game, player $P_n$ flips their coin, where indices are taken modulo 100. If it lands heads, the game ends immediately and they win. Otherwise, the game continues with the next player's turn.\nGiven that each player has a $\\frac{1}{100}$ probability of winning and that $p_{100} = \\frac{6}{7}$, compute $p_1$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 29,
+          "problem": "Convex pentagon $BRYAN$ has area 128 with $\\angle A + \\angle B = 180^\\circ$ and side lengths $BR = 2$, $RY = 12$, $YA = 10$, $AN = 11$ and $NB = 11$. Compute $\\sin(\\angle A)$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 30,
+          "problem": "There exists a polynomial $p(x, y)$ with real coefficients and total degree at most 4 such that $p(m, n)$ is the entry in the $m^{\\text{th}}$ row and the $n^{\\text{th}}$ column of the following table.\n\n$$\\begin{array}{|c|c|c|c|}\\hline 4 & 8 & * & ? \\\\ \\hline 3 & 5 & 9 & * \\\\ \\hline 2 & 3 & 5 & 9 \\\\ \\hline 0 & 1 & 2 & 2 \\\\ \\hline\\end{array}$$\n\nCompute $p(4, 4)$, i.e., the top-right entry in the table."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 31,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral, and suppose rays $BA$ and $CD$ meet at $E$ and rays $CB$ and $DA$ meet at $F$. Suppose the inradii of triangles $EDA$, $EBC$, $FAB$, and $FCD$ are 5, 10, 6, and 10, respectively. Compute the area of $ABCD$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 32,
+          "problem": "Mark has a radioactive ball weighing 1 gram. During the $n^{\\text{th}}$ minute, each radioactive ball has a $1/2$ chance of splitting into two radioactive balls, each of weight $2^{-n}$ grams (regardless of the ball's initial weight or when it was initially formed). After 7 minutes, compute the expected value of the total weight in grams of Mark's radioactive balls."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 33,
+          "problem": "The decimal expansion of $1/179$ has a repeating period of length 178. Compute the sum of the squares of the digits in this period."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 34,
+          "problem": "Krad starts with the number 1. On each step, if his number is $n$, he replaces it with a random positive divisor of $6n$. Let $p$ be the probability that after 2026 steps, Krad has the number 48. Estimate $1/p$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 35,
+          "problem": "Sam has a standard $6 \\times 6$ checkerboard with black and white squares. Sam then colors in each white square of the checkerboard with black marker independently with probability $1/2$. Estimate the expected number of contiguous black regions now on Sam's checkerboard.\n(A contiguous black region is a maximal set of black squares satisfying the property that, between any two black squares of the set, there exists a path traversing only through other black squares of the set, where consecutive squares on a path share an edge.)"
+        },
+        {
+          "day": 4,
+          "paper_label": "Guts Round",
+          "number": 36,
+          "problem": "Compute the number of positive integers $N < 10^9$ which satisfy the following two properties:\n• $N$ is not a multiple of 2 or 5.\n• There does not exist a prime $M$ which has the same number of digits as $N$ and differs from $N$ in at most one decimal place."
+        }
+      ]
     }
   ]
 }

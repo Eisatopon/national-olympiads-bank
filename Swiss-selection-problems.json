@@ -1365,6 +1365,71 @@
           "problem": "Find all polynomials $P \\in \\mathbb{Z}[x]$ for which there exists a non-constant polynomial $Q \\in \\mathbb{Z}[x]$ satisfying the following: for all integers $a, b$ we have $P(b - a) \\mid Q(b) - Q(a)$."
         }
       ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Lord Shen and Po are playing a game on a regular 2026-gon. Lord Shen writes a positive real number in red at each vertex, such that the product of the 2026 red numbers (which are not necessarily distinct) is 1.\nThen, Po draws non-intersecting line segments between the vertices of the 2026-gon, in a way that each created region is a triangle. Inside each of these triangles, he writes out the product of the three red numbers written on its vertices in green.\nDetermine the largest real number $c$ such that, no matter the numbers chosen by Lord Shen, Po can make sure that the sum of the green numbers is at least $c$."
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $A, B, X, C$ be points on a circle $\\omega$ in this order, such that $AX > AB, AC$. Let $P, Q \\ne X$ be points on lines $XB$ and $XC$ respectively, such that $AP = AX = AQ$. Let $M$ and $N$ denote the midpoints of $BC$ and $PQ$ respectively. If $S \\ne A$ is the second intersection of $NA$ with $\\omega$, prove that $MN = MS$."
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Heidi is placing Ricola on an empty $2026 \\times 2026$ grid. At each step, Heidi chooses a row or column in which the total number of Ricola is a multiple of 3, chooses an empty cell in this row or column, and places a single Ricola in it. If there is no such row or column, Heidi stops.\nDetermine the maximum number of Ricola that Heidi can place."
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "There is a row of $n \\ge 3$ icebergs, labelled from left to right with the integers 1 to $n$. Pingu starts dancing on one of the icebergs and then moves according to the following rules.\nIf Pingu has just danced on iceberg $k$, he then makes a sequence of $k$ hops to an adjacent iceberg. The first of the $k$ hops is always to the right, unless Pingu is on iceberg $n$, in which case it is to the left. Each of the subsequent $k-1$ hops is in the same direction as the previous hop, unless Pingu is on iceberg 1 or $n$ in which case he changes direction. Pingu dances on the iceberg he lands on after $k$ hops.\nPingu continues hopping and dancing in this manner indefinitely. An iceberg is inevitable if Pingu eventually dances on it, regardless of the iceberg he starts on. Determine all $n \\ge 3$ for which there is exactly one inevitable iceberg.\nExample: If $n = 8$, and Pingu first dances on iceberg 3, then the next four icebergs he dances on are $6, 4, 8$ and $2$, in this order."
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Determine all functions $f : \\mathbb{N} \\to \\mathbb{Z}$ with the following property: for every positive integer $n$ and every positive divisor $a$ of $n$ there exists a positive divisor $b$ of $n$ such that\n$$n \\mid a + f(b).$$"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Determine all functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that for all $x, y \\in \\mathbb{R}$,\n$$f(f(y) - f(x)) + 4f(xy) = f(f(x) + y^2).$$"
+        },
+        {
+          "day": 3,
+          "number": 7,
+          "problem": "Let $n$ be a positive integer. Determine all sequences of integers $1 \\le a_1 \\le \\cdots \\le a_n$ such that\n• each $a_i$ is a power of two, and\n• $(2^{a_1} + 1)(2^{a_2} + 1) \\cdots (2^{a_n} + 1) = 2^{1 + a_1 + \\cdots + a_n} - 1$."
+        },
+        {
+          "day": 3,
+          "number": 8,
+          "problem": "Let $n$ be a positive integer. There is a magical door at Hogwarts with $n$ levers labelled from 1 to $n$. Lever $i$ can either be up or down, and toggling between the two costs $2^{i-1}$ Galleons. Every possible combination of lever positions makes the door lead to a different location. Initially, all the levers are down.\nThe $2^n$ members of Dumbledore's Army are being chased by Voldemort and want to use the magical door to split up so that each person travels to a different location. What is the minimum amount of Galleons they have to spend in total?\nRemark: Dumbledore's Army may send a member through the door before switching any lever."
+        },
+        {
+          "day": 3,
+          "number": 9,
+          "problem": "Let $ABC$ be a triangle with circumcircle $\\Omega$. The tangent to $\\Omega$ at $A$ is called $t$. Let $\\omega_B$ be the circle outside of $ABC$, tangent to $t$ and to $AB$ at $B$. Similarly, let $\\omega_C$ be the circle outside of $ABC$, tangent to $t$ and to $AC$ at $C$. Lastly, let $P$ be the intersection of the two common internal tangents of $\\omega_B$ and $\\omega_C$, and let $\\Gamma$ denote the circumcircle of the triangle $PBC$.\nIf the common tangents to $\\Omega$ and $\\Gamma$ intersect at a point $T$, prove that $A$, $P$ and $T$ are collinear.\nRemark: A common internal tangent $\\ell$ to two circles is tangent to both of them, in such a way that the two circles are not on the same side of $\\ell$."
+        },
+        {
+          "day": 4,
+          "number": 10,
+          "problem": "Let $ABC$ be an acute triangle. Let $I_B$ and $I_C$ be the excenters of triangle $ABC$ opposite $B$ and $C$, respectively. Let $E$ be a point on line $BA$ such that $\\angle EI_BB = 90^\\circ$. Let $F$ be a point on line $CA$ such that $\\angle CI_CF = 90^\\circ$. Let the circle with center $I_B$ and radius $I_BE$ intersect the segment $I_BB$ at $X$. Similarly, let the circle with center $I_C$ and radius $I_CF$ intersect the segment $I_CC$ at $Y$.\nProve that $BY$ is perpendicular to $CX$.\nRemark: The excenter of a triangle $ABC$ opposite vertex $B$ is the center of the circle that is tangent to line segment $AC$, to ray $BA$ beyond $A$, and to ray $BC$ beyond $C$. The excenter opposite $C$ is similarly defined."
+        },
+        {
+          "day": 4,
+          "number": 11,
+          "problem": "Let $f : \\mathbb{Z}_{\\ge 0} \\to \\mathbb{Z}_{\\ge 0}$ be a function that takes on infinitely many values. Assume that for all non-negative integers $m$ and $n$ that satisfy\n$$f(m+n) = \\max\\left\\{f(0),\\ f(1),\\ \\dots,\\ f(m+n)\\right\\},$$\nwe have $f(m+n) = f(m) + f(n)$.\nProve that there exist positive integers $A, B, C$ and $D$ such that for all non-negative $n$ we have $f(An+B) = Cn + D$."
+        },
+        {
+          "day": 4,
+          "number": 12,
+          "problem": "For positive integers $n, k$, we define $0 \\le f_k(n) < 2^k - 1$ to be the remainder of the division of $n$ by $2^k - 1$. We say that a positive integer $n$ is a panda if $f_k(n) \\le f_{k+1}(n)$ for every positive integer $k$.\n(a) Prove that there exist infinitely many pandas.\n(b) Prove that there exists a positive integer $M$ such that the number of pandas less than or equal to $M$ is at most $\\frac{M}{2026^{2026}}$."
+        }
+      ]
     }
   ]
 }
