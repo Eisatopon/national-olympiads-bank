@@ -359,6 +359,7 @@
     --ygo: #4b5e8c; --ygo-ink: #2b3756; --ygo-tint: #e7ebf3;
     --ygoj: #52618f; --ygoj-ink: #2f3858; --ygoj-tint: #e9ecf4;
     --hn: #1f5f9e; --hn-ink: #123a61; --hn-tint: #e5eef8;
+    --baj: #7a4a8c; --baj-ink: #472a54; --baj-tint: #f1e8f5;
     --tre: #9e2a4f; --tre-ink: #5f1830; --tre-tint: #f7e6ec;
     --hmic: #5b3f8c; --hmic-ink: #372556; --hmic-tint: #ece6f5;
     --bwsl: #2a6f97; --bwsl-ink: #19435b; --bwsl-tint: #e3eff6;
@@ -656,6 +657,7 @@
 .f-ygo { --f: var(--ygo); --f-ink: var(--ygo-ink); --f-tint: var(--ygo-tint); }
 .f-ygoj { --f: var(--ygoj); --f-ink: var(--ygoj-ink); --f-tint: var(--ygoj-tint); }
 .f-hn { --f: var(--hn); --f-ink: var(--hn-ink); --f-tint: var(--hn-tint); }
+.f-baj { --f: var(--baj); --f-ink: var(--baj-ink); --f-tint: var(--baj-tint); }
 .f-tre { --f: var(--tre); --f-ink: var(--tre-ink); --f-tint: var(--tre-tint); }
 .f-hmic { --f: var(--hmic); --f-ink: var(--hmic-ink); --f-tint: var(--hmic-tint); }
 .f-bwsl { --f: var(--bwsl); --f-ink: var(--bwsl-ink); --f-tint: var(--bwsl-tint); }
@@ -1293,7 +1295,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261112-saudi-csmo-australia';
+const DATA_VERSION = '20261112-bosnia-junior-moldova-2026';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1541,6 +1543,7 @@ REGION_OF.bevwo = 'europe';
 REGION_OF.bemi = 'europe';
 REGION_OF.pk = 'asia';
 REGION_OF.hn = 'americas';
+REGION_OF.baj = 'europe';
 REGION_OF.tre = 'europe';
 REGION_OF.hmic = 'americas';
 REGION_OF.bwsl = 'europe';
@@ -1866,6 +1869,7 @@ const COUNTRIES = [
     { key: 'tre', name: 'Turkey EGMO TST', flag: '🇹🇷', file: 'Turkey-egmo-tst-problems.json', kind: 'years', full: "Turkey EGMO Team Selection Test" },
     { key: 'hmic', name: 'HMMT Invitational (HMIC)', flag: '🇺🇸', file: 'HMMT-invitational-problems.json', kind: 'years', scope: 'tournaments', full: "HMMT Invitational Competition (HMIC)", group: 'HMMT', sub: 'Invitational (HMIC)' },
     { key: 'bwsl', name: 'Baltic Way Shortlist', flag: '🌊', file: 'Baltic-way-shortlist-problems.json', kind: 'years', scope: 'regional', full: "Baltic Way Mathematical Team Contest, shortlist", group: 'BW', groupName: 'Baltic Way', sub: 'Shortlist' },
+    { key: 'baj', name: 'Bosnia and Herzegovina Junior MO', flag: '🇧🇦', file: 'Bosnia-junior-problems.json', kind: 'years', full: "Junior Mathematical Olympiad of Bosnia and Herzegovina" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
