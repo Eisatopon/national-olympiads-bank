@@ -215,6 +215,107 @@
       ]
     },
     {
+      "year": 2014,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day I",
+          "number": 1,
+          "problem": "Tarik and Sultan are playing the following game. Tarik thinks of a number that is greater than $100$. Then Sultan is telling a number greater than $1$. If Tarik's number is divisible by Sultan's number, Sultan wins, otherwise Tarik subtracts Sultan's number from his number and Sultan tells his next number. Sultan is forbidden to repeat his numbers. If Tarik's number becomes negative, Sultan loses. Does Sultan have a winning strategy?"
+        },
+        {
+          "day": 1,
+          "paper_label": "Day I",
+          "number": 2,
+          "problem": "Define a domino to be an ordered pair of distinct positive integers. A proper sequence of dominoes is a list of distinct dominoes in which the first coordinate of each pair after the first equals the second coordinate of the immediately preceding pair, and in which $(i, j)$ and $(j, i)$ do not both appear for any $i$ and $j$. Let $D_n$ be the set of all dominoes whose coordinates are no larger than $n$. Find the length of the longest proper sequence of dominoes that can be formed using the dominoes of $D_n$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day I",
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle and let $P$ be a point on $BC$. Points $M$ and $N$ lie on $AB$ and $AC$, respectively such that $MN$ is not parallel to $BC$ and $AMPN$ is a parallelogram. Line $MN$ meets the circumcircle of $ABC$ at $R$ and $S$. Prove that the circumcircle of triangle $RPS$ is tangent to $BC$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day I",
+          "number": 4,
+          "problem": "Find all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that\n$$f(n+1) > \\frac{f(n)+f(f(n))}{2}$$\nfor all $n\\in\\mathbb{N}$, where $\\mathbb{N}$ is the set of strictly positive integers."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day II",
+          "number": 5,
+          "problem": "Let $\\Gamma$ be a circle with center $O$ and $AE$ be a diameter. Point $D$ lies on segment $OE$ and point $B$ is the midpoint of one of the arcs $\\widehat{AE}$ of $\\Gamma$. Construct point $C$ such that $ABCD$ is a parallelogram. Lines $EB$ and $CD$ meet at $F$. Line $OF$ meets the minor arc $\\widehat{EB}$ at $I$. Prove that $EI$ bisects $\\angle BEC$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day II",
+          "number": 6,
+          "problem": "Let $S$ be a set of positive real numbers with five elements such that for any distinct $a, b, c$ in $S$, the number $ab+bc+ca$ is rational. Prove that for any $a$ and $b$ in $S$, $\\frac{a}{b}$ is a rational number."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day II",
+          "number": 7,
+          "problem": "Show that it is possible to write a $n\\times n$ array of non-negative numbers (not necessarily distinct) such that the sums of entries on each row and each column are pairwise distinct perfect squares."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day II",
+          "number": 8,
+          "problem": "Aws plays a solitaire game on a fifty-two card deck: whenever two cards of the same color are adjacent, he can remove them. Aws wins the game if he removes all the cards. If Aws starts with the cards in a random order, what is the probability for him to win?"
+        },
+        {
+          "day": 3,
+          "paper_label": "Day III",
+          "number": 9,
+          "problem": "A perfect number is an integer that equals half the sum of its positive divisors. For example, because $2\\cdot 28 = 1+2+4+7+14+28$, $28$ is a perfect number.\n(a) A square-free integer is an integer not divisible by a square of any prime number. Find all square-free integers that are perfect numbers.\n(b) Prove that no perfect square is a perfect number."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day III",
+          "number": 10,
+          "problem": "Determine all functions $f:[0,\\infty)\\to\\mathbb{R}$ such that $f(0)=0$ and\n$$f(x) = 1 + 5f\\left(\\left\\lfloor \\frac{x}{2}\\right\\rfloor\\right) - 6f\\left(\\left\\lfloor \\frac{x}{4}\\right\\rfloor\\right)$$\nfor all $x>0$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day III",
+          "number": 11,
+          "problem": "There are $2015$ coins on a table. For $i=1,2,\\dots,2015$ in succession, one must turn over exactly $i$ coins. Prove that it is always possible either to make all of the coins face up or to make all of the coins face down, but not both."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day III",
+          "number": 12,
+          "problem": "Two circles $\\omega_1$ and $\\omega_2$, with center $O_1$ and $O_2$ respectively, meet at points $A$ and $B$. Let $X$ and $Y$ be points on $\\omega_1$. Lines $XA$ and $YA$ meet $\\omega_2$ at $Z$ and $W$, respectively, such that $A$ lies between $X$ and $Z$ and between $Y$ and $W$. Let $M$ be the midpoint of $O_1O_2$, $S$ be the midpoint of $XA$ and $T$ be the midpoint of $WA$. Prove that $MS=MT$ if and only if $X, Y, Z$ and $W$ are concyclic."
+        },
+        {
+          "day": 4,
+          "paper_label": "Day IV",
+          "number": 13,
+          "problem": "Let $a_1,\\dots,a_n$ be a non increasing sequence of positive real numbers. Prove that\n$$\\sqrt{a_1^2+a_2^2+\\cdots+a_n^2} \\le a_1 + \\frac{a_2}{\\sqrt{2}+1} + \\cdots + \\frac{a_n}{\\sqrt{n}+\\sqrt{n-1}}.$$\nWhen does equality hold?"
+        },
+        {
+          "day": 4,
+          "paper_label": "Day IV",
+          "number": 14,
+          "problem": "In a tournament each player played exactly one game against each of the other players. In each game the winner was awarded $1$ point, the loser got $0$ points, and each of the two players earned $\\frac{1}{2}$ point if the game was a tie. After the completion of the tournament, it was found that exactly half of the points earned by each player were earned in games against the ten players with the least number of points. (In particular, each of the ten lowest scoring players earned half of his points against the other nine of the ten). What was the total number of players in the tournament?"
+        },
+        {
+          "day": 4,
+          "paper_label": "Day IV",
+          "number": 15,
+          "problem": "We are given a lattice and two pebbles $A$ and $B$ that are placed at two lattice points. At each step we are allowed to relocate one of the pebbles to another lattice point with the condition that the distance between pebbles is preserved. Is it possible after finite number of steps to switch positions of the pebbles?"
+        },
+        {
+          "day": 4,
+          "paper_label": "Day IV",
+          "number": 16,
+          "problem": "Points $A_1, B_1, C_1$ lie on the sides $BC$, $AC$ and $AB$ of a triangle $ABC$, respectively, such that $AB_1-AC_1 = CA_1-CB_1 = BC_1-BA_1$. Let $I_A, I_B, I_C$ be the incenters of triangles $AB_1C_1$, $A_1BC_1$ and $A_1B_1C$ respectively. Prove that the circumcenter of triangle $I_AI_BI_C$, is the incenter of triangle $ABC$."
+        }
+      ]
+    },
+    {
       "year": 2015,
       "problems": [
         {
@@ -304,6 +405,155 @@
       ]
     },
     {
+      "year": 2016,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Level 4, Day 1",
+          "number": 1,
+          "problem": "Let $n\\ge 3$ and $x_1, x_2, \\dots, x_n$ be $n$ distinct integers. Prove that\n$$(x_1-x_2)^2+(x_2-x_3)^2+\\dots+(x_n-x_1)^2\\ge 4n-6.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Level 4, Day 1",
+          "number": 2,
+          "problem": "Given a set of $2^{2016}$ cards with the numbers $1, 2, \\dots, 2^{2016}$ written on them. We divide the set of cards into pairs arbitrarily; from each pair, we keep the card with larger number and discard the other. We now again divide the $2^{2015}$ remaining cards into pairs arbitrarily; from each pair, we keep the card with smaller number and discard the other. We now have $2^{2014}$ cards, and again divide these cards into pairs and keep the larger one in each pair. We keep doing this way, alternating between keeping the larger number and keeping the smaller number in each pair, until we have just one card left. Find all possible values of this final card."
+        },
+        {
+          "day": 1,
+          "paper_label": "Level 4, Day 1",
+          "number": 3,
+          "problem": "Given two circles $(O_1)$ and $(O_2)$ intersect at $A$ and $B$. Let $d_1$ and $d_2$ be two lines through $A$ and be symmetric with respect to $AB$. The line $d_1$ cuts $(O_1)$ and $(O_2)$ at $G, E(\\ne A)$, respectively; the line $d_2$ cuts $(O_1)$ and $(O_2)$ at $F, H(\\ne A)$, respectively; such that $E$ is between $A, G$ and $F$ is between $A, H$.\nLet $J$ be the intersection of $EH$ and $FG$. The line $BJ$ cuts $(O_1)$, $(O_2)$ at $K, L(\\ne B)$, respectively. Let $N$ be the intersection of $O_1K$ and $O_2L$. Prove that the circle $(NLK)$ is tangent to $AB$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Level 4, Day 2",
+          "number": 4,
+          "problem": "Let $k$ be a positive integer. Prove that there exist integers $x, y$, neither of which divisible by $7$ such that $x^2+6y^2=7^k$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Level 4, Day 2",
+          "number": 5,
+          "problem": "Let $ABC$ be a triangle inscribed in the circle $(O)$ and $P$ is a point inside the triangle $ABC$. Let $D$ be a point on $(O)$ such that $AD\\perp AP$. The line $CD$ cuts the perpendicular bisector of $BC$ at $M$. The line $AD$ cuts the line passing through $B$ and is perpendicular to $BP$ at $Q$. Let $N$ be the reflection of $Q$ through $M$. Prove that $CN\\perp CP$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Level 4, Day 2",
+          "number": 6,
+          "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ such that\n$$x\\left[f(x+y)-f(x-y)\\right]=4yf(x)$$\nfor any real numbers $x, y$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Level 4, Day 3",
+          "number": 7,
+          "problem": "Define the sequence $a_1, a_2, \\dots$ as follows: $a_1=1$, and for every $n\\ge 2$, $a_n=n-2$ if $a_{n-1}=0$ and $a_n=a_{n-1}-1$, otherwise. Find the number of $1\\le k\\le 2016$ such that there are non-negative integers $r, s$ and a positive integer $n$ satisfying $k=r+s$ and $a_{n+r}=a_n+s$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Level 4, Day 3",
+          "number": 8,
+          "problem": "Find all pairs of polynomials $P(x), Q(x)$ with integer coefficients such that\n$$P(Q(x))=(x-1)(x-2)\\dots(x-9)$$\nfor all real numbers $x$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Level 4, Day 3",
+          "number": 9,
+          "problem": "Let $n\\ge 4$ be a positive integer and there exist $n$ positive integers that are arranged on a circle such that:\n- The product of each pair of two non-adjacent numbers is divisible by $2015\\cdot 2016$.\n- The product of each pair of two adjacent numbers is not divisible by $2015\\cdot 2016$.\nFind the maximum value of $n$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Level 4, Day 4",
+          "number": 10,
+          "problem": "Let $ABC$ be a triangle whose incircle $(I)$ touches $BC, CA, AB$ at $D, E, F$, respectively. The line passing through $A$ and parallel to $BC$ cuts $DE, DF$ at $M, N$, respectively. The circumcircle of triangle $DMN$ cuts $(I)$ again at $L$.\n1. Let $K$ be the intersection of $NE$ and $MF$. Prove that $K$ is the orthocenter of the triangle $DMN$.\n2. b) Prove that $A, K, L$ are collinear."
+        },
+        {
+          "day": 4,
+          "paper_label": "Level 4, Day 4",
+          "number": 11,
+          "problem": "Let $a$ be a positive integer. Find all prime numbers $p$ with the following property: there exist exactly $p$ ordered pairs of integers $(x, y)$, with $0\\le x, y\\le p-1$, such that $p$ divides $y^2-x^3-a^2x$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Level 4, Day 4",
+          "number": 12,
+          "problem": "Find the number of permutations $(a_1, a_2, \\dots, a_{2016})$ of the first $2016$ positive integers satisfing the following two conditions:\n1. $a_{i+1}-a_i\\le 1$ for all $i=1,2,3,\\dots,2015$.\n2. There are exactly two indices $i<j$ with $1\\le i<j\\le 2016$ such that $a_i=i$ and $a_j=j$."
+        },
+        {
+          "day": 5,
+          "paper_label": "Level 4+, Day 1",
+          "number": 13,
+          "problem": "Call a positive integer $N\\ge 2$ \"special\" if for every $k$ such that $2\\le k\\le N$, $N$ can be expressed as a sum of $k$ positive integers that are relatively prime to $N$ (although not necessarily relatively prime to each other). Find all special positive integers."
+        },
+        {
+          "day": 5,
+          "paper_label": "Level 4+, Day 1",
+          "number": 14,
+          "problem": "Given a set of $2^{2016}$ cards with the numbers $1, 2, \\dots, 2^{2016}$ written on them. We divide the set of cards into pairs arbitrarily; from each pair, we keep the card with larger number and discard the other. We now again divide the $2^{2015}$ remaining cards into pairs arbitrarily; from each pair, we keep the card with smaller number and discard the other. We now have $2^{2014}$ cards, and again divide these cards into pairs and keep the larger one in each pair. We keep doing this way, alternating between keeping the larger number and keeping the smaller number in each pair, until we have just one card left. Find all possible values of this final card."
+        },
+        {
+          "day": 5,
+          "paper_label": "Level 4+, Day 1",
+          "number": 15,
+          "problem": "Given triangle $ABC$ inscribed in $(O)$. Two tangents at $B, C$ of $(O)$ intersects at $P$. The bisector of angle $A$ intersects $(P, PB)$ (the circle with center $P$ and radius $PB$) at point $E$ lying inside triangle $ABC$. Let $M, N$ be the midpoints of two arcs $BC$ of $(O)$ such that $M$ and $A$ are on different sides of $BC$. The circle with diameter $BC$ intersects the line segment $EN$ at $F$. Prove that the orthocenter of triangle $EFM$ is belong to $BC$."
+        },
+        {
+          "day": 6,
+          "paper_label": "Level 4+, Day 2",
+          "number": 16,
+          "problem": "Let $ABC$ be a triangle inscribed in the circle $(O)$. The bisector of $\\angle BAC$ cuts the circle $(O)$ again at $D$. Let $DE$ be the diameter of $(O)$. Let $G$ be a point on arc $AB$ which does not contain $C$. The lines $GD$ and $BC$ intersect at $F$. Let $H$ be a point on the line $AG$ such that $FG\\parallel AE$. Prove that the circumcircle of triangle $HAB$ passes through the orthocenter of triangle $HAC$."
+        },
+        {
+          "day": 6,
+          "paper_label": "Level 4+, Day 2",
+          "number": 17,
+          "problem": "Find all functions $f:\\mathbb{R}\\to\\mathbb{R}$ satisfying the conditions:\n1. $f(x+1)\\ge f(x)+1$ for all $x\\in\\mathbb{R}$; (1)\n2. $f(xy)\\ge f(x)f(y)$ for all $x, y\\in\\mathbb{R}$. (2)"
+        },
+        {
+          "day": 6,
+          "paper_label": "Level 4+, Day 2",
+          "number": 18,
+          "problem": "Given two positive integers $r>s$, and let $\\mathcal{F}$ be an infinite family of sets, each of size $r$, no two of which share fewer than $s$ elements. Prove that there exists a set of size $r-1$ that shares at least $s$ elements with each set in $\\mathcal{F}$."
+        },
+        {
+          "day": 7,
+          "paper_label": "Level 4+, Day 3",
+          "number": 19,
+          "problem": "Define the sequence $a_1, a_2, \\dots$ as follows: $a_1=1$, and for every $n\\ge 2$, $a_n=n-2$ if $a_{n-1}=0$ and $a_n=a_{n-1}-1$, otherwise. Find the number of $1\\le k\\le 2016$ such that there are non-negative integers $r, s$ and a positive integer $n$ satisfying $k=r+s$ and $a_{n+r}=a_n+s$."
+        },
+        {
+          "day": 7,
+          "paper_label": "Level 4+, Day 3",
+          "number": 20,
+          "problem": "Let $n\\ge 4$ be a positive integer and there exist $n$ positive integers that are arranged on a circle such that:\n- The product of each pair of two non-adjacent numbers is divisible by $2015\\cdot 2016$.\n- The product of each pair of two adjacent numbers is not divisible by $2015\\cdot 2016$.\nFind the maximum value of $n$."
+        },
+        {
+          "day": 7,
+          "paper_label": "Level 4+, Day 3",
+          "number": 21,
+          "problem": "Let $P\\in\\mathbb{Q}[x]$ be a polynomial of degree $2016$ whose leading coefficient is $1$. A positive integer $m$ is \"nice\" if there exists some positive integer $n$ such that $m=n^3+3n+1$. Suppose that there exist infinitely many positive integers $n$ such that $P(n)$ are nice. Prove that there exists an arithmetic sequence $(n_k)$ of arbitrary length such that $P(n_k)$ are all nice for $k=1,2,3,\\dots$"
+        },
+        {
+          "day": 8,
+          "paper_label": "Level 4+, Day 4",
+          "number": 22,
+          "problem": "On the Cartesian coordinate system $Oxy$, consider a sequence of points $A_n(x_n, y_n)$ in which $(x_n)_{n=1}^{\\infty}$, $(y_n)_{n=1}^{\\infty}$ are two sequences of positive numbers satisfing the following conditions:\n$$x_{n+1}=\\sqrt{\\frac{x_n^2+x_{n+2}^2}{2}},\\quad y_{n+1}=\\left(\\frac{\\sqrt{y_n}+\\sqrt{y_{n+2}}}{2}\\right)^2\\quad \\forall n\\ge 1.$$\nSuppose that $O, A_1, A_{2016}$ belong to a line $d$ and $A_1, A_{2016}$ are distinct. Prove that all the points $A_2, A_3, \\dots, A_{2015}$ lie on one side of $d$."
+        },
+        {
+          "day": 8,
+          "paper_label": "Level 4+, Day 4",
+          "number": 23,
+          "problem": "Let $ABCDEF$ be a convex hexagon with $AB=CD=EF$, $BC=DE=FA$ and $\\angle A+\\angle B=\\angle C+\\angle D=\\angle E+\\angle F$. Prove that all angles of this hexagon are equal."
+        },
+        {
+          "day": 8,
+          "paper_label": "Level 4+, Day 4",
+          "number": 24,
+          "problem": "Find the number of permutations $(a_1, a_2, \\dots, a_{2016})$ of the first $2016$ positive integers satisfing the following two conditions:\n1. $a_{i+1}-a_i\\le 1$ for all $i=1,2,3,\\dots,2015$.\n2. There are exactly $2$ indices $i<j$ such that $a_i=i$ and $a_j=j$."
+        }
+      ]
+    },
+    {
       "year": 2017,
       "problems": [
         {
@@ -381,25 +631,582 @@
       ]
     },
     {
+      "year": 2018,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "problem": "Consider the infinite, strictly increasing sequence of positive integer $(a_n)$ such that\n(i) All terms of sequences are pairwise coprime.\n(ii) The sum $\\frac{1}{\\sqrt{a_1a_2}}+\\frac{1}{\\sqrt{a_2a_3}}+\\frac{1}{\\sqrt{a_3a_4}}+\\cdots$ is unbounded.\nProve that this sequence contains infinitely many primes."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "problem": "Let $n$ be an even positive integer. We fill in a number on each cell of a rectangle table of $n$ columns and multiple rows as following:\n(i) Each row is assigned to some positive integer $a$ and its cells are filled by $0$ or $a$ (in any order);\n(ii) The sum of all numbers in each row is $n$.\nNote that we cannot add any more row to the table such that the conditions $(i)$ and $(ii)$ still hold. Prove that if the number of $0$'s on the table is odd then the maximum odd number on the table is a perfect square."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "problem": "Let $ABCD$ be a convex quadrilateral inscibed in circle $(O)$ such that $DB=DA+DC$. The point $P$ lies on the ray $AC$ such that $AP=BC$. The point $E$ is on $(O)$ such that $BE\\perp AD$. Prove that $DP$ is parallel to the angle bisector of $\\angle BEC$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "problem": "Let $ABC$ be an acute, non isosceles triangle with $M, N, P$ are midpoints of $BC, CA, AB$, respectively. Denote $d_1$ as the line passes through $M$ and perpendicular to the angle bisector of $\\angle BAC$, similarly define for $d_2, d_3$. Suppose that $d_2\\cap d_3=D$, $d_3\\cap d_1=E$, $d_1\\cap d_2=F$. Let $I, H$ be the incenter and orthocenter of triangle $ABC$. Prove that the circumcenter of triangle $DEF$ is the midpoint of segment $IH$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "problem": "Problem about arithmetic and geometric sequence.\n1. For integer $n\\ge 3$, suppose that $0<a_1<a_2<\\dots<a_n$ is a arithmetic sequence and $0<b_1<b_2<\\dots<b_n$ is a geometric sequence with $a_1=b_1$, $a_n=b_n$. Prove that $a_k>b_k$ for all $k=2,3,\\dots,n-1$.\n2. Prove that for every positive integer $n\\ge 3$, there exist an integer arithmetic sequence $(a_n)$ and an integer geometric sequence $(b_n)$ such that\n$$0<b_1<a_1<b_2<a_2<\\cdots<b_n<a_n.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "problem": "Two sets of positive integers $A, B$ are called connected if they are not empty and for all $a\\in A$, $b\\in B$, number $ab+1$ is a perfect square.\n1. Given $A=\\{1,2,3,4\\}$. Prove that there does not exist any set $B$ such that $A, B$ are connected.\n2. Suppose that $A, B$ are connected with $|A|, |B|\\ge 2$. For any $a_1>a_2\\in A$ and $b_1>b_2\\in B$, prove that $a_1b_1>13a_2b_2$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day 3",
+          "number": 7,
+          "problem": "Denote $S$ as the set of prime divisors of all integers of form $2^{n^2+1}-3^n$, $n\\in\\mathbb{Z}^+$. Prove that $S$ and $\\mathcal{P}\\setminus S$ are both contains infinitely many elements ($\\mathcal{P}$ is set of prime numbers)."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day 3",
+          "number": 8,
+          "problem": "A non-empty subset of $\\{1,2,\\dots,n\\}$ is called arabic if arithmetic mean of its elements is an integer. Show that the number of arabic subsets of $\\{1,2,\\dots,n\\}$ has the same parity as $n$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Day 3",
+          "number": 9,
+          "problem": "Consider the function\n$$f(x)=(x-F_1)(x-F_2)\\dots(x-F_{3030})$$\nwith $(F_n)$ is the Fibonacci sequence, which defined as $F_1=1$, $F_2=2$, $F_{n+2}=F_{n+1}+F_n$, $n\\ge 1$. Suppose that on the range $(F_1, F_{3030})$, the function $|f(x)|$ takes on the maximum value at $x=x_0$. Prove that $x_0>2^{2018}$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Day 4",
+          "number": 10,
+          "problem": "Find all functions $f:\\mathbb{Z}^+\\to\\mathbb{Z}^+$ satisfying $f(1)=2$, $f(2)\\ne 4$, and\n$$\\max\\{f(m)+f(n), m+n\\}\\ \\big|\\ \\min\\{2m+2n, f(m+n)+1\\}$$\nfor all $m, n\\in\\mathbb{Z}^+$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Day 4",
+          "number": 11,
+          "problem": "Let $ABC$ be an acute-angled triangle inscribed in circle $(O)$. Let $G$ be a point on the small arc $AC$ of $(O)$ and $(K)$ be a circle passing through $A$ and $G$. Bisector of $\\angle BAC$ cuts $(K)$ again at $P$. The point $E$ is chosen on $(K)$ such that $AE$ is parallel to $BC$. The line $PK$ meets the perpendicular bisector of $BC$ at $F$. Prove that $\\angle EGF=90^\\circ$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Day 4",
+          "number": 12,
+          "problem": "Find all positive integers $k$ such that there exists some permutation of $(1,2,\\dots,1000)$ namely $(a_1,a_2,\\dots,a_{1000})$ and satisfy $|a_i-i|=k$ for all $i=\\overline{1,1000}$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 1,
+          "problem": "Find all functions $f:\\mathbb{Z}^+\\to\\mathbb{Z}^+$ such that\n$$n^3-n^2\\le f(n)\\cdot\\left(f(f(n))\\right)^2\\le n^3+n^2$$\nfor every $n$ is positive integers."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 2,
+          "problem": "Find all pair of integers $(m, n)$ and $m\\ge n$ such that there exist a positive integer $s$ and\n1. Product of all divisor of $sm, sn$ are equal.\n2. Number of divisors of $sm, sn$ are equal."
+        },
+        {
+          "day": 1,
+          "paper_label": "Day 1",
+          "number": 3,
+          "problem": "Let regular hexagon is divided into $6n^2$ regular triangles. Let $2n$ coins are put in different triangles such, that no any two coins lie on the same layer (layer is area between two consecutive parallel lines). Let also triangles are painted like on the chess board.\nProve that exactly $n$ coins lie on black triangles.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/sat_2019_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 4,
+          "problem": "Let $a_0$ be an arbitrary positive integer. Let $(a_n)$ be infinite sequence of positive integers such that for every positive integer $n$, the term $a_n$ is the smallest positive integer such that $a_0+a_1+\\cdots+a_n$ is divisible by $n$. Prove that there exist $N$ such that $a_{n+1}=a_n$ for all $n\\ge N$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 5,
+          "problem": "Let non-constant polynomial $f(x)$ with real coefficients is given with the following property: for any positive integer $n$ and $k$, the value of expression\n$$\\frac{f(n+1)f(n+2)\\dots f(n+k)}{f(1)f(2)\\dots f(k)}\\in\\mathbb{Z}.$$\nProve that $f(x)$ is divisible by $x$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Day 2",
+          "number": 6,
+          "problem": "Let $ABC$ be an acute nonisosceles triangle with incenter $I$ and $(d)$ is an arbitrary line tangent to $(I)$ at $K$. The lines passes through $I$, perpendicular to $IA, IB, IC$ cut $(d)$ at $A_1, B_1, C_1$ respectively. Suppose that $(d)$ cuts $BC, CA, AB$ at $M, N, P$ respectively. The lines through $M, N, P$ and respectively parallel to the internal bisectors of $A, B, C$ in triangle $ABC$ meet each other to define a triange $XYZ$. Prove that three lines $AA_1, BB_1, CC_1$ are concurrent and $IK$ is tangent to the circle $(XYZ)$."
+        }
+      ]
+    },
+    {
       "year": 2021,
       "problems": [
         {
           "day": 1,
-          "paper_label": "Day I",
+          "paper_label": "Test 1",
           "number": 1,
           "problem": "For a non-empty set $T$ denote by $p(T)$ the product of all elements of $T$. Does there exist a set $T$ of $2021$ elements such that for any $a\\in T$ one has that $p(T)-a$ is an odd integer? Consider two cases:\n1) All elements of $T$ are irrational numbers.\n2) At least one element of $T$ is a rational number."
         },
         {
           "day": 1,
-          "paper_label": "Day I",
+          "paper_label": "Test 1",
           "number": 2,
           "problem": "Find all positive integers $n$, such that $n$ is a perfect number and $\\varphi (n)$ is a power of $2$.\n\nNote: a positive integer $n$ is called perfect if the sum of all its positive divisors is equal to $2n$."
         },
         {
           "day": 1,
-          "paper_label": "Day I",
+          "paper_label": "Test 1",
           "number": 3,
           "problem": "Let $ABC$ be a triangle with $AB < AC$, incenter $I$, and $A$ excenter $I_{A}$. The incircle meets $BC$ at $D$. Define $E = AD\\cap BI_{A}$, $F = AD\\cap CI_{A}$. Show that the circumcircles of $\\triangle AID$ and $\\triangle I_{A}EF$ are tangent to each other."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "In a regular $100$-gon, $41$ vertices are colored black and the remaining $59$ vertices are colored white. Prove that there exist $24$ convex quadrilaterals $Q_1, Q_2, \\dots, Q_{24}$ whose corners (vertices of the quadrilateral) are vertices of the $100$-gon, so that\n- the quadrilaterals $Q_1, Q_2, \\dots, Q_{24}$ are pairwise disjoint, and\n- every quadrilateral $Q_i$ has three corners of one color and one corner of the other color."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Let $ABC$ be a non isosceles triangle with incenter $I$ and let the circumcircle of the triangle $ABC$ has radius $R$. Let $AL$ is the external angle bisector of $\\angle BAC$ with $L\\in BC$. Let $K$ is the point on the perpendicular bisector of $BC$ such that $IL\\perp IK$. Prove that $OK=3R$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "Determine all functions $f:\\mathbb{Z}\\to\\mathbb{Z}$ such that\n$$f^{(a^2+b^2)}(a+b)=af(a)+bf(b)$$\nfor every $a,b\\in\\mathbb{Z}$. Here, $f^n$ denotes the $n^{\\text{th}}$ iteration of $f$, i. e. $f^{(0)}(x)=x$ and $f^{(n+1)}(x)=f\\left(f^{(n)}(x)\\right)$ for all $n\\ge 0$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "Let $ABC$ be an isosceles triangle with $BC=CA$, and let $D$ be a point inside the side $AB$ such that $AD<DB$. Let $P$ and $Q$ be two points inside the sides $BC$ and $CA$ respectively, such that $\\angle DPB=\\angle DQA=90^\\circ$. Let the perpendicular bisector of $PQ$ meets the line segment $CQ$ at $E$ and let the circumcircles of triangles $ABC$ and $CPQ$ meet again at point $F$, different from $C$. Suppose that $P, E$ and $F$ are collinear. Prove that $\\angle ACB=90^\\circ$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "The Fibonacci numbers $F_0, F_1, F_2, \\dots$ are defined inductively by $F_0=0, F_1=1$, and $F_{n+1}=F_n+F_{n-1}$ for $n\\ge 1$. Given an integer $n\\ge 2$, determine the smallest size of a set $S$ of integers such that for every $k=2,3,\\dots,n$ there exist $x,y\\in S$, such that $x-y=F_k$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "For a positive integer $n$, let $d(n)$ be the number of positive divisors of $n$, and let $\\varphi(n)$ be the number of positive integers not exceeding $n$ which are coprime with $n$. Prove that that for any number $C$ there exists an integer $n$ for which\n$$\\frac{\\varphi(d(n))}{d(\\varphi(n))}>C.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "Given a positive integer $k$, show that there exists a prime $p$ such that one can choose distinct integers $a_1,a_2,\\dots,a_{k+3}\\in\\{1,2,\\dots,p-1\\}$ such that $p$ divides $a_ia_{i+1}a_{i+2}a_{i+3}-i$ for all $i=1,2,3,\\dots,k$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Suppose that $a,b,c,d$ are positive real numbers satisfying $(a+c)(b+d)=ac+bd$. Find the smallest possible value of\n$$\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{d}+\\frac{d}{a}$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "Let $p$ be an odd prime and let $N=\\frac{1}{4}(p^3-p)-1$. The numbers $1,2,\\dots,N$ are painted arbitrarily in two colors, red and blue. For any positive integer $n\\le N$, denote by $r(n)$ the fraction of integers in $\\{1,2,\\dots,n\\}$ that are red (number of red numbers divided by $n$). Prove that there exists a positive integer $a\\in\\{1,2,\\dots,p-1\\}$ such that $r(n)\\ne\\frac{a}{p}$ for all $n=1,2,\\dots,N$"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 1,
+          "problem": "Let $(a_n)$ be the integer sequence which is defined by $a_1=1$ and\n$$a_{n+1}=a_n^2+n\\cdot a_n,\\ \\forall n\\ge 1.$$\nLet $S$ be the set of all primes $p$ such that there exists an index $i$ such that $p\\mid a_i$. Prove that the set $S$ is an infinite set and it is not equal to the set of all primes."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 2,
+          "problem": "Let $ABCD$ be a quadrilateral inscribed in a circle $\\Omega$. Let the tangent to $\\Omega$ at $D$ intersect the rays $BA$ and $BC$ at points $E$ and $F$, respectively. A point $T$ is chosen inside the triangle $ABC$ so that $TE\\parallel CD$ and $TF\\parallel AD$. Let $K\\ne D$ be a point on the segment $DF$ such that $TD=TK$. Prove that the lines $AC$, $DT$ and $BK$ intersect at one point."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 3,
+          "problem": "Find all non-constant functions $f:\\mathbb{Q}^+\\to\\mathbb{Q}^+$ satisfying the equation\n$$f(ab+bc+ca)=f(a)f(b)+f(b)f(c)+f(c)f(a)$$\nfor all $a,b,c\\in\\mathbb{Q}^+$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "Let $ABCD$ be a parallelogram such that $AC=BC$. A point $P$ is chosen on the extension of the segment $AB$ beyond $B$. The circumcircle of the triangle $ACD$ meets the segment $PD$ again at $Q$, and the circumcircle of the triangle $APQ$ meets the segment $PC$ again at $R$. Prove that the lines $CD$, $AQ$ and $BR$ are concurrent."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Given a positive integer $n$, find the smallest value of\n$$\\left\\lfloor\\frac{a_1}{1}\\right\\rfloor+\\left\\lfloor\\frac{a_2}{2}\\right\\rfloor+\\cdots+\\left\\lfloor\\frac{a_n}{n}\\right\\rfloor$$\nover all permutations $(a_1,a_2,\\dots,a_n)$ of $(1,2,\\dots,n)$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "The kingdom of Anisotropy consists of $n$ cities. For every two cities there exists exactly one direct one-way road between them. We say that a path from $X$ to $Y$ is a sequence of roads such that one can move from $X$ to $Y$ along this sequence without returning to an already visited city. A collection of paths is called diverse if no road belongs to two or more paths in the collection.\nLet $A$ and $B$ be two distinct cities in Anisotropy. Let $N_{AB}$ denote the maximal number of paths in a diverse collection of paths from $A$ to $B$. Similarly, let $N_{BA}$ denote the maximal number of paths in a diverse collection of paths from $B$ to $A$. Prove that the equality $N_{AB}=N_{BA}$ holds if and only if the number of roads going out from $A$ is the same as the number of roads going out from $B$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "For every integer $n\\ge 1$ consider the $n\\times n$ table with entry $\\left\\lfloor\\frac{i\\cdot j}{n+1}\\right\\rfloor$ at the intersection of row $i$ and column $j$, for every $i=1,2,\\dots,n$ and $j=1,2,\\dots,n$. Determine all integers $n\\ge 1$ for which the sum of the $n^2$ entries in the table is equal to $\\frac{n^2(n-1)}{4}$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "Let $n$ and $k$ be two integers with $n>k\\ge 1$. There are $2n+1$ students standing in a circle. Each student $S$ has $2k$ neighbours - namely, the $k$ students closest to $S$ on the right and the $k$ students closest to $S$ on the left. Suppose that $n+1$ of the students are girls, and the other $n$ are boys. Prove that there is a girl with at least $k$ girls among her neighbours."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "Prove that there are only finitely many quadruples $(a,b,c,n)$ of positive integers such that\n$$n!=a^{n-1}+b^{n-1}+c^{n-1}.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "There are a) $2022$, b) $2023$ plates placed around a round table and on each of them there is one coin. Alice and Bob are playing a game that proceeds in rounds indefinitely as follows. In each round, Alice first chooses a plate on which there is at least one coin. Then Bob moves one coin from this plate to one of the two adjacent plates, chosen by him. Determine whether it is possible for Bob to select his moves so that, no matter how Alice selects her moves, there are never more than two coins on any plate."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Find all positive integers $n$ with the following property: the $k$ positive divisors of $n$ have a permutation $(d_1,d_2,\\dots,d_k)$ such that for every $i=1,2,\\dots,k$ the number $d_1+d_2+\\cdots+d_i$ is a perfect square."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "Let $A,B,C,D$ be points on the line $d$ in that order and $AB=CD$. Denote $(P)$ as some circle that passes through $A,B$ with its tangent lines at $A,B$ are $a,b$. Denote $(Q)$ as some circle that passes through $C,D$ with its tangent lines at $C,D$ are $c,d$. Suppose that $a$ cuts $c,d$ at $K,L$ respectively; and $b$ cuts $c,d$ at $M,N$ respectively. Prove that four points $K,L,M,N$ belong to a same circle $(\\omega)$ and the common external tangent lines of circles $(P),(Q)$ meet on $(\\omega)$."
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 1,
+          "problem": "Does there exist a function $f:\\mathbb{Q}\\to\\mathbb{Q}$ satisfying\n$$f(x+y+2f(y))=\\frac{2022}{2023}\\cdot y+f(x)$$\nfor all $x,y\\in\\mathbb{Q}$?"
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 2,
+          "problem": "An acute scalene triangle $ABC$ is inscribed in a circle $k$. The bisector of angle $\\angle ABC$ meets side $BC$ at point $D$. Let $I$ be an arbitrary point on the segment $AD$, and let $H$ be the orthogonal projection of $I$ onto $BC$. Circle $\\omega$ is centered at $I$ and passes through $H$, and $U$ is the internal homothety center of the circles $k$ and $\\omega$. Prove that $U$ lies on a fixed line as $I$ moves on $AD$, and that $AI$ bisects the angle $HAU$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 3,
+          "problem": "Given is an $n\\times n$ board, whose all cells are initially white. Khalid the Painter walks around the board and recolors the visited cells according to the following rules. Each walk of Khalid starts at the bottom-left corner of the board and continues as follows:\n- if he is standing on a white cell, he paints it black and moves one cell up (or walks off the board);\n- if he is standing on a black cell, he paints it white and moves one cell to the right (or walks off the board).\nDetermine the minimum positive integer $s$ with the following property: after exactly $s$ walks all the cells of the board will become white again.\nE.g. for $n=3$ the states of the board after finishing the initial few walks will be the following:\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/sat_2023_p3_fig.png"
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "In an acute-angled triangle $ABC$, point $O$ is the circumcenter and $H$ the orthocenter. Points $B'$ and $C'$ are the reflections of $B$ in line $AC$ and of $C$ in line $AB$, respectively. Point $K$ is the circumcenter of triangle $HB'C'$, point $D$ the midpoint of $KB$, and $S$ the intersection of line $OD$ with the perpendicular to $AB$ at $A$. Prove that $KA=KS$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Denote by $\\mathbb{N}$ the set of positive integers. Find all functions $f:\\mathbb{N}\\to\\mathbb{N}$ such that $x-y$ divides $x^{f(x)}-y^{f(y)}$ for every two coprime integers $x$ and $y$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "Find all positive integers $n\\ge 2$ for which there exist $n$ real numbers\n$$a_1<a_2<\\dots<a_n$$\nand a real number $r>0$ such that the $\\frac{n(n-1)}{2}$ differences $a_j-a_i$ for $1\\le i<j\\le n$ are equal, in some order, to the numbers\n$$r^1,\\ r^2,\\ \\dots,\\ r^{\\frac{n(n-1)}{2}}.$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "Find all positive integers $n$ such that\n$$n!\\ \\Big|\\ \\prod_{\\substack{p<q\\le n\\\\ p,q\\text{ primes}}}(p+q).$$"
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "Let $n>3$ be an integer. Suppose that $n$ children are arranged in a circle, and $n$ coins are distributed between them (some children may have no coins). At every step, a child with at least $2$ coins may give $1$ coin to each of their neighbours on the right and left. Determine all initial distributions of coins from which it is possible that, after a finite number of steps, each child has exactly one coin."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "An acute scalene triangle $ABC$ with $\\angle A=45^\\circ$ is inscribed in a circle $(O)$. Let $AD$ be the altitude and $H$ be the orthocenter of $\\triangle ABC$. Points $R$ and $S$ different from $A$ are taken on the rays $AB$ and $AC$ respectively so that $CA=CR$ and $BA=BS$. Points $X$, $Y$ and $K$ are the midpoints of the segments $BS$, $CR$ and $AH$, respectively. Point $T$ on the line $BC$ such that $AO$ is perpendicular to $TO$, and $I$ is the circumcenter of triangle $DXY$. Prove that\n$$XY\\perp OK\\quad\\text{and}\\quad TH\\perp IK.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "In each square of a garden shaped like $2022\\times 2022$ board, there is initially a tree of height $0$. A gardener and a lumberjack alternate turns playing the following game, with the gardener taking the first turn:\n- The gardener chooses a square in the garden. Each tree on that square and all the surrounding squares (of which there are at most eight) then becomes one unit taller.\n- The lumberjack then chooses four different squares on the board. Each tree of positive height on those squares then becomes one unit shorter.\nWe say that a tree is majestic if its height is at least $10^6$. Determine the largest number $K$ such that the gardener can ensure there are eventually $K$ majestic trees on the board, no matter how the lumberjack plays."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Let $n\\ge 3$ be an integer and let $x_1,x_2,\\dots,x_n$ be real numbers in the interval $[0,1]$. Let $s=x_1+x_2+\\cdots+x_n$, with $s\\ge 3$. Prove that there exist integers $i$ and $j$ with $1\\le i<j\\le n$ such that\n$$2^{j-i}x_ix_j>2^{s-3}.$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "For each $1\\le i\\le 9$ and $T\\in\\mathbb{N}$, define $d_i(T)$ to be the total number of times the digit $i$ appears when all the multiples of $2023$ between $1$ and $T$ inclusive are written out in base $10$. Show that there are infinitely many $T\\in\\mathbb{N}$ such that there are precisely two distinct values among\n$$d_1(T),\\ d_2(T),\\ \\dots,\\ d_9(T).$$"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 1,
+          "problem": "Let $ABCDE$ be a convex pentagon such that $\\angle ABC=\\angle AED=90^\\circ$. Suppose that the midpoint of $CD$ is the circumcentre of triangle $ABE$. Let $O$ be the circumcentre of triangle $ACD$. Prove that line $AO$ bisects the segment $BE$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 2,
+          "problem": "Determine the maximal length $L$ of a sequence $a_1,\\dots,a_L$ of positive integers satisfying both the following properties:\n(i) every term in the sequence is less than or equal to $2^{2023}$,\n(ii) there does not exist a consecutive subsequence $a_i,a_{i+1},\\dots,a_j$ (where $1\\le i\\le j\\le L$) with a choice of signs $s_i,s_{i+1},\\dots,s_j\\in\\{-1,1\\}$ for which\n$$s_ia_i+s_{i+1}a_{i+1}+\\dots+s_ja_j=0.$$"
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 3,
+          "problem": "Let $a_1,a_2,\\dots a_{2023}$ be a permutation of positive integers $1,2,\\dots,2023$ such that\n$$|a_1-a_2|,|a_2-a_3|,\\dots,|a_{2022}-a_{2023}|$$\nis a permutation of $1,2,\\dots,2022$. Prove that $\\max(a_1,a_{2023})\\ge 507$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "Determine all pairs $(a,p)$ of positive integers with $p$ prime such that $p^a+a^4$ is a perfect square."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Let $\\mathbb{R}_{>0}$ be the set of positive real numbers. Determine all functions $f:\\mathbb{R}_{>0}\\to\\mathbb{R}_{>0}$ such that\n$$x(f(x)+f(y))\\ge(f(f(x))+y)f(y),\\ \\forall x,y>0.$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcircle $\\omega$. A circle $\\Gamma$ is internally tangent to $\\omega$ and $A$ and also tangent to $BC$ at $D$. Let $AB$ and $AC$ intersect $\\Gamma$ at $P$ and $Q$ respectively. Let $M$ and $N$ be points on line $BC$ such that $B$ is the midpoint of $DM$ and $C$ is the midpoint of $DN$. Lines $MP$ and $NQ$ meet at $K$ and intersect $\\Gamma$ again at $I$ and $J$ respectively. The ray $KA$ meets the circumcircle of triangle $IJK$ at $X\\ne K$. Prove that $\\angle BXP=\\angle CXQ$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "Let $R$ be the set of real numbers. Let $f:R\\to R$ be a function such that\n$$f(x+y)\\cdot f(x-y)\\ge f(x)^2-f(y)^2$$\nfor every $x,y\\in R$. Assume that the inequality is strict for some $x_0,y_0\\in R$. Prove that $f(x)\\ge 0$ for every $x\\in R$ or $f(x)\\le 0$ for every $x\\in R$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "A sequence of integers $a_0,a_1,a_2,\\dots$ is called kawaii, if $a_0=0,a_1=1$, and, for any positive integer $n$, we have\n$$(a_{n+1}-3a_n+2a_{n-1})(a_{n+1}-4a_n+3a_{n-1})=0$$\nAn integer is called kawaii if it belongs to a kawaii sequence.\nSuppose that two consecutive positive integers $m$ and $m+1$ are both kawaii (not necessarily belonging to the same kawaii sequence). Prove that $3$ divides $m$ and that $\\frac{m}{3}$ is kawaii."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "Let $n\\ge 2$ be a positive integer. Hadi has a $1\\times n^2$ rectangular strip consisting of $n^2$ unit squares, where $i$-th square is labelled with $i$ for all $1\\le i\\le n^2$. He wishes to cut the strip into several pieces, where each piece consists of a number of consecutive unit squares, and then translate (without rotating or flipping) the pieces to obtain a $n\\times n$ square satisfying the following property: if the unit square in the $i$-th row and $j$-th column is labelled with $a_{ij}$, then $a_{ij}-(i+j-1)$ is divisible by $n$.\nDetermine the smallest number of pieces that Hadi needs to make in order to accomplish this task."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "Let $m$ and $n$ be positive integers greater than $1$. In each unit square of an $m\\times n$ grid lies a coin with its tail-side up. A move consists of the following steps:\n1. select a $2\\times 2$ square in the grid;\n2. flip the coins in the top-left and bottom-right unit squares;\n3. flip the coin in either the top-right or bottom-left unit square.\nDetermine all pairs $(m,n)$ for which it is possible that every coin shows a head-side up after a finite number of moves."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Let $ABC$ be an acute-angled triangle with circumcircle $\\omega$ and circumcentre $O$. Points $D\\ne B$ and $E\\ne C$ lie on $\\omega$ such that $BD\\perp AC$ and $CE\\perp AB$. Let $CO$ meet $AB$ at $X$, and $BO$ meet $AC$ at $Y$. Prove that the circumcircles of triangles $BXD$ and $CYE$ have an intersection on line $AO$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "Let $a,b,c,d$ be positive integers satisfying\n$$\\frac{ab}{a+b}+\\frac{cd}{c+d}=\\frac{(a+b)(c+d)}{a+b+c+d}$$\nDetermine all possible values of $a+b+c+d$."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 1,
+          "problem": "Let $P(x)=a_{2025}x^{2025}+a_{2024}x^{2024}+\\cdots+a_1x+a_0$ be the real coefficient polynomial with $a_{2025}=2^{2025}+2025$ and suppose that $P(x)$ has $2025$ real roots (not necessarily distinct) belong to $(0;1)$. It is given that $P(0)$ and $P(1)$ are both integers, find all possible values of $P(1)$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 2,
+          "problem": "Determine all infinite sequences $a_1,a_2,\\dots$ of positive integers such that for any positive integers $n$ and $k$\n$$\\frac{a_n+a_{n+1}+\\cdots+a_{n+k-1}}{k}\\quad\\text{and}\\quad\\sqrt[k]{a_na_{n+1}\\cdots a_{n+k-1}}$$\nare integers."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 3,
+          "problem": "Let $ABC$ be a triangle with incentre $I$ such that $AB<AC<BC$. The second intersections of $AI$, $BI$ and $CI$ with the circumcircle of triangle $ABC$ are $M_A$, $M_B$ and $M_C$, respectively. Lines $AI$ and $BC$ intersect at $D$ and lines $BM_C$ and $CM_B$ intersect at $X$. Suppose the circumcircles of triangles $XM_BM_C$ and $XBC$ intersect again at $S\\ne X$. Lines $BX$ and $CX$ intersect the circumcircle of triangle $SXM_A$ again at $P\\ne X$ and $Q\\ne X$, respectively. Prove that the circumcentre of triangle $SID$ lies on $PQ$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "Let $ABCD$ be a cyclic quadrilateral such that $AC<BD<AD$ and $\\angle DBA<90^\\circ$. Point $E$ lies on the line through $D$ parallel to $AB$ such that $E$ and $C$ lie on opposite sides of line $AD$, and $AC=DE$. Point $F$ lies on the line through $A$ parallel to $CD$ such that $F$ and $C$ lie on opposite sides of line $AD$, and $BD=AF$. Prove that the perpendicular bisectors of segments $BC$ and $EF$ intersect on the circumcircle of $ABCD$."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Let $n$ be a positive integer. There are $2n$ knights sitting at a round table. They consist of $n$ pair of partners, each pair of which wishes to shake hands. A pair can shake hands only with next to each other. Every minute, one pair of adjacent knights swaps places. Find the minimum number of exchanges of adjacent knights such that, regardless of the initial arrangement, every knight can meet her partner and shake hands at some moment."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "Prove that there are infinitely many primes $p$ such that each of them divides an integer of the form $3^n-2$, but does not divide any integer of the form $2^m-3$, where $m$ and $n$ are positive integers."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "The sequence of positive integers $\\{a_n\\}_{n\\ge 1}$ is such that\n$$a_n\\le 1000^{1000^{\\sqrt{\\log_2 n}}},\\ \\forall n=1,2,3,...$$\nIt is known that any number appears in the sequence at most $5000$ times. Prove that there are infinitely many primes, each of which divides at least one member of the sequence."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "Find all non-negative real numbers $c\\ge 0$ such that there exists a function $f:(0,+\\infty)\\to(0,+\\infty)$ with the property\n$$f\\left(y^2f(x)+y+c\\right)=xf(x+y^2)$$\nfor all $x,y>0$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "Let $N$ be a positive integer. Ali and Hadi play a game in which they start by writing the numbers $1,2,\\dots,N$ on a board. They then take turns to make a move, starting with Ali. Each move consists of choosing a pair of integers $(k,n)$, where $k\\ge 0$ and $n$ is one of the integers on the board, and then erasing every integer $s$ on the board such that $2^k\\mid n-s$. The game continues until the board is empty. The player who erases the last integer on the board loses.\nDetermine all values of $N$ for which Ali can ensure that he wins, no matter how Hadi plays."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "Let $n$ be a positive integer. A class of $n$ students run $n$ races, in each of which they are ranked with no draws. A student is eligible for a rating $(a,b)$ for positive integers $a$ and $b$ if they come in the top $b$ places in at least $a$ of the races. Their final score is the maximum possible value of $a-b$ across all ratings for which they are eligible. Find the maximum possible sum of all the scores of the $n$ students."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Let $ABCD$ be a quadrilateral with $AB$ is parallel to $CD$ and $AB<CD$. Lines $AD$ and $BC$ intersect at a point $P$. Point $X\\ne C$ on the circumcircle of triangle $ABC$ is such that $PC=PX$. Point $Y\\ne D$ on the circumcircle of triangle $ABD$ is such that $PD=PY$. Two lines $AX$ and $BY$ intersect at the point $Q$. Prove that $PQ$ is parallel to $AB$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "Find all periodic sequences $a_1\\ a_2,\\dots$ of real numbers such that the following conditions hold for all $n\\ge 1$:\n$$a_{n+2}+a_n^2=a_n+a_{n+1}^2\\quad\\text{and}\\quad|a_{n+1}-a_n|\\le 1.$$"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 1,
+          "problem": "Let $ABC$ be an acute-angled triangle. Let $I_B$, $I_C$ be the excentres of triangle $ABC$ opposite to $B$, $C$ respectively. Let $E$ be a point on the line $AB$ such that $\\angle BI_BE=90^\\circ$, and let $F$ be a point on the line $AC$ such that $\\angle CI_CF=90^\\circ$. The circle with center $I_B$ and radius $I_BE$ intersects the segment $I_BB$ at $X$, and the circle with center $I_C$ and radius $I_CF$ intersects the segment $I_CC$ at $Y$. Prove that $BY$ is perpendicular to $CX$."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 2,
+          "problem": "Tala is placing tulips on a $1000\\times 1000$ grid. Initially, every cell of the grid is empty. At each step, Tala chooses a row (or a column) in which the total number of tulips is a multiple of $3$, chooses an empty cell in this row (or column), and places a tulip in it. If there is no such row or column, Tala stops.\nDetermine the maximum number of tulips that Tala can place."
+        },
+        {
+          "day": 1,
+          "paper_label": "Test 1",
+          "number": 3,
+          "problem": "Determine all integers $n\\ge 2$ such that the polynomial\n$$P(x,y,z)=x^n+y^n+z^n-x^{n-2}yz-xy^{n-2}z-xyz^{n-2}$$\ncan be written as\n$$P(x,y,z)=Q(x,y,z)R(x,y,z),$$\nwith $Q(x,y,z)$, $R(x,y,z)$ are nonconstant polynomials with integer coefficients."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 4,
+          "problem": "Quadratic Solitaire is a single-player game. To start the game, the player chooses two distinct nonzero integers $a$ and $b$ and writes the equation\n$$x^2+ax+b=0$$\non a board. On each turn, if the equation currently written on the board has two distinct nonzero integer solutions $x=u$ and $x=v$, then the player erases the equation and replaces it by one of the equations\n$$x^2+ux+v=0\\ \\text{ or }\\ x^2+vx+u=0$$\nof their choosing. Otherwise, the game ends. Determine all initial choices of $a$ and $b$ such that the quadratic solitaire can be played forever."
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 5,
+          "problem": "Let $n\\ge 2$, and let $P(x)\\in\\mathbb{Z}[x]$ be a monic polynomial of degree $n$ whose coefficients are nonnegative integers. Suppose that $P$ is reciprocal, that is,\n$$x^nP\\left(\\frac{1}{x}\\right)=P(x).$$\nProve that there exist infinitely many pairs of positive integers $(a,b)$ such that\n$$a\\mid P(b)\\quad\\text{and}\\quad b\\mid P(a).$$"
+        },
+        {
+          "day": 2,
+          "paper_label": "Test 2",
+          "number": 6,
+          "problem": "Mohammed is walking on a $45\\times 45$ grid. From any cell, Mohammed can move to any other cell that shares a side with it. Mohammed makes $2024$ moves after which each cell has been visited exactly once. Prove that it is possible to write the numbers from $1$ to $2025$ such that:\n- For any pair of adjacent cells in the same row, the cell containing the larger number was visited earlier.\n- For any pair of adjacent cells in the same column, the cell containing the larger number was visited later."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 7,
+          "problem": "There is a row of $n$ chairs, labelled from left to right with integers $1,2,\\dots,n$, where $n\\ge 3$. Abdulelah initially sits on a chair, and changes the chair he is sitting on according to the following rule:\nIf Abdulelah is sitting in chair $k$, he makes a sequence of $k$ moves to adjacent chairs. The first of the $k$ moves is always to the right, unless Abdulelah is in chair $n$, in which case it is to the left. Each of the following $k-1$ moves is in the same direction as the previous move, unless Abdulelah is in chair $1$ or $n$ (in which he flips direction and continues moving). Then Abdulelah sits in the chair in front of him.\nFor example, if $n=8$ and Abdulelah is sitting in chair $3$, then the next four chairs he will sit in are $6,4,8,2$ in this order.\nAbdulelah continues this way indefinitely. A chair is comfortable if Abdulelah eventually sits on it, regardless of the chair that he was sitting in at the start. Determine all $n\\ge 3$ for which there is exactly one comfortable chair."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 8,
+          "problem": "Let $ABC$ be an acute-angled triangle with $AB<AC$. Let $\\Gamma$ be the circumcircle of triangle $ABC$. The perpendicular from $B$ to $AC$ intersects $\\Gamma$ again at $D\\ne B$. Let $Q$ be the point on $\\Gamma$ such that $Q\\ne B$ and $AB=AQ$. Lines $BQ$ and $AC$ intersect at $R$. Line $DR$ intersects $\\Gamma$ again at $S\\ne D$. Segment $BC$ intersects the circumcircle of triangle $QRS$ at $T$. Lines $TQ$ and $RS$ intersect at $X$. Prove that $CX$ is perpendicular to $AB$."
+        },
+        {
+          "day": 3,
+          "paper_label": "Test 3",
+          "number": 9,
+          "problem": "The sequence of triples of positive integers\n$$(a_0,b_0,c_0),(a_1,b_1,c_1),\\dots,(a_{2026},b_{2026},c_{2026})$$\nsatisfies\n$$(a_{i+1},b_{i+1},c_{i+1})=(a_i+\\gcd(b_i,c_i),\\ b_i+\\gcd(c_i,a_i),\\ c_i+\\gcd(a_i,b_i))$$\nfor $0\\le i\\le 2025$. Determine the smallest possible value of $a_{2026}$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 10,
+          "problem": "Let $n$ and $k$ be positive integers such that $n<k<2n$. Suppose $a_1,a_2,\\dots,a_k$ are positive integers such that\n$$2^{a_1}+2^{a_2}+\\cdots+2^{a_k}$$\nis divisible by $2^n-1$. Show that at least three of $a_1,a_2,\\dots,a_k$ have the same remainder when divided by $n$."
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 11,
+          "problem": "Determine the maximum value $\\lambda\\in\\mathbb{R}^+$ such that, for any non-constant function $f:\\mathbb{R}^+\\to\\mathbb{R}^+$, there exist $a,b\\in\\mathbb{R}^+$ that satisfy\n$$f(a)+f(b)>\\lambda f(\\sqrt{ab}).$$"
+        },
+        {
+          "day": 4,
+          "paper_label": "Test 4",
+          "number": 12,
+          "problem": "Let $ABC$ be a triangle with $\\angle B>\\angle A>\\angle C$. Let $\\Omega$ be the circumcircle of triangle $ABC$. The lines tangent to $\\Omega$ at points $B$ and $C$ intersect at $P$. Lines $BP$ and $AC$ intersect at $E$. Lines $CP$ and $AB$ intersect at $F$. Let $D$ be the reflection of point $A$ on line $EF$. The circumcircles of triangles $DEB$ and $DFC$ intersect again at $Q\\ne D$. Lines $DP$ and $BC$ intersect at $Z$. Prove that three points $A$, $Q$ and $Z$ are collinear."
         }
       ]
     }

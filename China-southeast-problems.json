@@ -518,6 +518,191 @@
           "problem": "Let $m\\ge 2$ and $n\\ge 3$ be given positive integers, and let $$S=\\{(a,b)\\mid a\\in\\{1,2,\\ldots,m\\},\\ b\\in\\{1,2,\\ldots,n\\}\\}.$$ Let $A$ be a subset of $S$ such that there do not exist positive integers $x_1,x_2,y_1,y_2,y_3$ with $x_1<x_2$, $y_1<y_2<y_3$ and $$(x_1,y_1),(x_1,y_2),(x_1,y_3),(x_2,y_2)\\in A.$$ Determine the largest possible number of elements of $A$."
         }
       ]
+    },
+    {
+      "year": 2018,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $c$ be a real number. If there exists $x\\in[1,2]$ such that\n\n$$\\max\\left\\{\\left|x+\\frac{c}{x}\\right|,\\left|x+\\frac{c}{x}+2\\right|\\right\\}\\ge 5,$$\n\nfind the value range of $c$. (Here $\\max\\{a,b\\}$ denotes the greater number of real numbers $a$ and $b$.)"
+        },
+        {
+          "number": 2,
+          "problem": "In the coordinate plane, we call a point a rational point if both of its coordinates are rational numbers, and otherwise we call it an irrational point. Suppose there is a regular pentagon in the plane. Then among its vertices, are there more rational points than irrational points, or more irrational points than rational points? Prove your result."
+        },
+        {
+          "number": 3,
+          "problem": "Acute triangle $ABC$ is inscribed in $\\odot O$, with $AB<AC$. The bisector of $\\angle BAC$ intersects $BC$ at $T$, and $M$ is the midpoint of $AT$. Point $P$ lies inside the triangle, such that $PB\\perp PC$. Construct the line passing through $P$ and perpendicular to $AP$, and let $D,E$ be points on this line (which are different from $P$) such that $BD=BP$ and $CE=CP$. Suppose line $AO$ bisects segment $DE$. Prove that line $AO$ is tangent to the circumcircle of $\\triangle AMP$."
+        },
+        {
+          "number": 4,
+          "problem": "Determine whether there exists a set $A\\subseteq\\mathbb{N}^*$ such that, for any positive integer $n$, $A\\cap\\{n,2n,3n,\\dots,15n\\}$ has exactly one element. Prove your result."
+        },
+        {
+          "number": 5,
+          "problem": "Let $\\{a_n\\}$ be a sequence of nonnegative real numbers. Define\n\n$$X_k=\\sum_{i=1}^{2^k}a_i,\\qquad Y_k=\\sum_{i=1}^{2^k}\\left\\lfloor\\frac{2^k}{i}\\right\\rfloor a_i,\\qquad k=0,1,2,\\dots,$$\n\nwhere $\\lfloor a\\rfloor$ denotes the greatest integer that does not exceed the real number $a$. Prove that for any positive integer $n$,\n\n$$X_n\\le Y_n-\\sum_{i=0}^{n-1}Y_i\\le\\sum_{i=0}^{n}X_i.$$"
+        },
+        {
+          "number": 6,
+          "problem": "In $\\triangle ABC$, $AB=AC$. The center of $\\odot O$ is the midpoint of $BC$. $AB$ and $AC$ are tangent to the circle at $E$ and $F$, respectively. Point $G$ lies on $\\odot O$, such that $AG\\perp EG$. The tangent line to $\\odot O$ at $G$ intersects $AC$ at $K$. Prove that line $BK$ bisects segment $EF$."
+        },
+        {
+          "number": 7,
+          "problem": "There are $24$ people attending a meeting. Each pair of them either shake hands once with each other, or do not. After the meeting, we find that there are totally $216$ pairs of people having shaken hands with each other, and for each pair among them, saying the pair of $P$ and $Q$, at most $10$ out of the remaining $22$ people have shaken hands with exactly one of $P,Q$. A friend circle refers to a set of three people from the meeting, such that every two of them have shaken hands with each other. Find the minimum number of friend circles among these $24$ people."
+        },
+        {
+          "number": 8,
+          "problem": "Let $m$ be a given positive integer. For a positive integer $l$, write\n\n$$A_l=(4l+1)(4l+2)\\cdots(4(5^m+1)l).$$\n\nProve that there exist infinitely many positive integers $l$ such that\n\n$$5^{5^m l}\\mid A_l,\\qquad 5^{5^m l+1}\\nmid A_l.$$\n\nAlso find the minimum of such $l$."
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the maximal real number $k$ such that, for all positive numbers $a,b$, the following inequality holds:\n\n$$(a+b)(ab+1)(b+1)\\ge kab^2.$$"
+        },
+        {
+          "number": 2,
+          "problem": "Two circles $\\Gamma_1,\\Gamma_2$ intersect at $A,B$. Let $C,D$ be two points on $\\Gamma_1$ and $E,F$ be two points on $\\Gamma_2$, such that $A,B$ lie on segments $CE,DF$, respectively, and the two segments do not intersect. Segment $CF$ intersects $\\Gamma_1,\\Gamma_2$ at $K(\\ne C)$ and $L(\\ne F)$, respectively, and segment $DE$ intersects $\\Gamma_1,\\Gamma_2$ at $M(\\ne D)$ and $N(\\ne E)$, respectively. Prove that if the circumcircles of $\\triangle ALM$ and $\\triangle BKN$ are tangent to each other, then these two circles have the same radius."
+        },
+        {
+          "number": 3,
+          "problem": "Function $f:\\mathbb{N}^*\\to\\mathbb{N}^*$ satisfies that for any positive integers $a,b$, $f(ab)$ divides $\\max\\{f(a),f(b)\\}$. Prove or disprove that there exist infinitely many positive integers $k$ such that $f(k)=1$."
+        },
+        {
+          "number": 4,
+          "problem": "For a $2\\times 5$ rectangle on the grid table, placed either vertically or horizontally, we may delete one of the four unit squares on the corner, and call the shape formed by the remaining $9$ squares a flag. Given a $9\\times 18$ table, how many different ways are there if we want to cover the table with $18$ flags?"
+        },
+        {
+          "number": 5,
+          "problem": "A subset $M$ of $S=\\{1928,1929,1930,\\dots,1949\\}$ is called red if the sum of any two different elements in $M$ is not divisible by $4$. Let $x$ be the number of $4$-element red subsets of $S$, and $y$ be the number of $5$-element red subsets of $S$. Compare the sizes of $x,y$, and explain the reason."
+        },
+        {
+          "number": 6,
+          "problem": "Let $a,b,c$ be the side lengths of a given triangle. If $x,y,z$ are positive real numbers such that $x+y+z=1$, find the maximum of\n\n$$axy+byz+czx.$$"
+        },
+        {
+          "number": 7,
+          "problem": "Let $ABCD$ be a given convex quadrilateral on the plane. Prove that there exist four different points $P,Q,R,S$ on the same line, and a square $A'B'C'D'$, such that $P$ lies on lines $AB,A'B'$, $Q$ lies on lines $BC,B'C'$, $R$ lies on lines $CD,C'D'$, and $S$ lies on lines $DA,D'A'$."
+        },
+        {
+          "number": 8,
+          "problem": "For a positive integer $x>1$, define the set\n\n$$S_x=\\{p^\\alpha\\mid p\\text{ is a prime factor of }x,\\ 0\\le\\alpha\\le v_p(x),\\ \\alpha\\equiv v_p(x)\\pmod 2\\}.$$\n\nHere $v_p(x)$ denotes the exponent of $p$ in the standard prime factorization of the positive integer $x$. Let $f(x)$ be the sum of all elements in $S_x$, and additionally define $f(1)=1$. For a given positive integer $m$, suppose a sequence of positive integers $a_1,a_2,\\dots,a_n,\\dots$ satisfies, for any integer $n>m$,\n\n$$a_{n+1}=\\max\\{f(a_n),f(a_{n-1}+1),\\dots,f(a_{n-m}+m)\\}.$$\n\n(1) Prove that there exist constants $A,B$, with $0<A<1$, such that whenever $x$ has at least two different prime factors, $f(x)<Ax+B$.\n(2) Prove that there exists a positive integer $Q$ such that, for any $n\\in\\mathbb{N}^*$, $a_n<Q$."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let\n\n$$f(x)=a(3a+2c)x^2-2b(2a+c)x+b^2+(c+a)^2,\\qquad a,b,c\\in\\mathbb{R},$$\n\nbe a quadratic function such that $f(x)\\le 1$ for all $x\\in\\mathbb{R}$. Find the maximum of $|ab|$."
+        },
+        {
+          "number": 2,
+          "problem": "As illustrated in figure, in $\\triangle ABC$, $AB<AC$, $PB$ and $PC$ are tangent to the circumcircle $O$ of $\\triangle ABC$. Let $R$ be a point on $\\widehat{AC}$, $AR\\parallel BC$, and $Q$ the other intersection of $PR$ and circle $O$. Let $I$ be the incentre of $\\triangle ABC$, $ID\\perp BC$ with foot $D$, and $G$ be the other intersection of $QD$ and circle $O$. Suppose that the line through $I$ and perpendicular to $AI$ intersects $AB$ and $AC$ at points $M$ and $N$, respectively.\n\nProve that $A,G,M,N$ are concyclic.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/csmo_2020_p2_fig.png"
+        },
+        {
+          "number": 3,
+          "problem": "Let\n\n$$f(x)=x^{2020}+\\sum_{i=0}^{2019}c_ix^i,\\qquad c_i\\in\\{-1,0,1\\},$$\n\nbe a polynomial, and let $N$ be the number of positive integer roots of $f(x)$, counted with their multiplicities. Given that $f(x)$ has no negative integer roots, find the maximum value of $N$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $a_1,a_2,\\dots,a_{17}$ be a permutation of $1,2,\\dots,17$, satisfying\n\n$$(a_1-a_2)(a_2-a_3)\\cdots(a_{16}-a_{17})(a_{17}-a_1)=n^{17}.$$\n\nHow large can the positive integer $n$ possibly be?"
+        },
+        {
+          "number": 5,
+          "problem": "Given $I=\\{1,2,\\dots,2020\\}$. Define the Wu set\n\n$$W=\\{w(a,b)=(a+b)+ab\\mid a,b\\in I\\},$$\n\nthe Yue set\n\n$$Y=\\{y(a,b)=(a+b)\\cdot ab\\mid a,b\\in I\\},$$\n\nand the Xizi set $X=W\\cap Y$.\n\nFind the sum of the largest and the smallest elements of the Xizi set $X$."
+        },
+        {
+          "number": 6,
+          "problem": "In a quadrilateral $ABCD$, $\\angle ABC=\\angle ADC<90^\\circ$. The circle with diameter $AC$ is centred at $O$ and intersects $BC$ and $CD$ at points $E$ and $F$ (other than $C$), respectively. Let $M$ be the midpoint of $BD$, and let $AN\\perp BD$ with foot $N$, as shown in Fig. 2.1.\n\nShow that $M,N,E,F$ are concyclic.\n\nhttps://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/images/csmo_2020_p6_fig.png"
+        },
+        {
+          "number": 7,
+          "problem": "For any prime number $p\\ge 3$, show that for all $x\\in\\mathbb{N}$ sufficiently large, one of the integers\n\n$$x+1,\\ x+2,\\ \\dots,\\ x+\\frac{p+3}{2}$$\n\nhas a prime factor larger than $p$."
+        },
+        {
+          "number": 8,
+          "problem": "An inkjet printer is used to print on a paper strip with $1\\times n$ grids. When the nozzle prints on the $i$th ($1\\le i\\le n$) grid, it becomes black; in addition, each of the adjacent grids, the $(i-1)$th and $(i+1)$th grids (if they exist), independently has a probability of $\\frac12$ of becoming black.\n\nLet $T(n)$ be the expected number of prints needed to make all grids black, provided that the optimal strategy is adopted (make as few prints as possible). Find the formula for $T(n)$."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $\\{a_n\\}$ be a decreasing sequence of positive real numbers, such that $a_1=1/2$, and\n\n$$a_n^2(a_{n-1}+1)+a_{n-1}^2(a_n+1)-2a_na_{n-1}(a_na_{n-1}+a_n+1)=0$$\n\nfor $n\\ge 2$.\n\n(1) Find $a_n$, $n\\ge 1$;\n(2) let $S_n=\\sum_{i=1}^{n}a_i$, show that $\\ln\\left(\\frac n2+1\\right)<S_n<\\ln(n+1)$."
+        },
+        {
+          "number": 2,
+          "problem": "In $\\triangle ABC$, $AB=AC>BC$, $O$ and $H$ are the circumcentre and orthocentre of $\\triangle ABC$, respectively. Let $G$ be the midpoint of $AH$, $BE$ be the altitude on $AC$. Prove that if $OE\\parallel BC$, then $H$ is the incentre of $\\triangle GBC$."
+        },
+        {
+          "number": 3,
+          "problem": "Given an odd prime $p$ and a sequence of integers $\\{u_n\\}$, $n\\ge 0$. Define the sequence\n\n$$v_n=\\sum_{i=0}^{n}\\binom{n}{i}p^iu_i,\\qquad n\\ge 1.$$\n\nProve: if there are infinitely many values of $n$ such that $v_n=0$, then for all $n\\ge 0$, $v_n=0$."
+        },
+        {
+          "number": 4,
+          "problem": "There are $n\\ge 5$ points, labeled $1,2,\\dots,n$, arbitrarily arranged on a circle. We call such a permutation $S$. For a permutation, a descending chain is a clockwise sequence of consecutive points (at least two) with descending labels, and it is not a sub chain of any longer descending chains; the pivot of a descending chain is the point with the largest label, and all other points are non-pivots. For example, the clockwise permutation $5,2,4,1,3$ contains two descending chains $5,2$ and $4,1$, where $5,4$ are pivots, $2,1$ are non-pivots. Apply the following operations on $S$: first, find all the descending chains of $S$ and delete all the non-pivots; then, for the remaining points, find all the descending chains and delete all the non-pivots; and so on, until no descending chains can be found. Let $G(S)$ be the number of descending chains that have appeared in the whole process; $A(n)$ be the average of $G(S)$ among all permutations $S$ of $1,2,\\dots,n$.\n\n(1) Find $A(5)$;\n(2) For $n\\ge 6$, prove $\\frac{83}{120}n-\\frac12\\le A(n)\\le\\frac{101}{120}n-\\frac12$."
+        },
+        {
+          "number": 5,
+          "problem": "To celebrate the 43rd anniversary of the restoration of mathematical competitions, a math lover arranges the first $2021$ positive integers $1,2,\\dots,2021$ into a sequence $\\{a_n\\}$, such that any $43$ consecutive numbers add up to a multiple of $43$.\n\n(1) Prove if the two ends of $\\{a_n\\}$ are joined to form a circle, then any $43$ consecutive numbers on the circle also add up to a multiple of $43$.\n(2) Determine the number of all such sequences $\\{a_n\\}$."
+        },
+        {
+          "number": 6,
+          "problem": "In the cyclic quadrilateral $ABCD$, let $E$ be an interior point on $BC$, $F$ be a point on $AE$, and $G$ be a point on the exterior bisector of $\\angle BCD$, such that $EG=FG$, $\\angle EAG=\\frac12\\angle BAD$. Prove: $AB\\cdot AF=AD\\cdot AE$."
+        },
+        {
+          "number": 7,
+          "problem": "Let $a,b,c$ be distinct positive reals. Prove\n\n$$\\frac{ab+bc+ca}{(a+b)(b+c)(c+a)}<\\frac17\\left(\\frac{1}{|a-b|}+\\frac{1}{|b-c|}+\\frac{1}{|c-a|}\\right).$$"
+        },
+        {
+          "number": 8,
+          "problem": "Find all positive integer pairs $\\{a,b\\}$, such that\n\n$$14\\varphi^2(a)-\\varphi(ab)+22\\varphi^2(b)=a^2+b^2,$$\n\nwhere $\\varphi(n)$ represents the number of positive integers less than $n$ and relatively prime to $n$."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Suppose a positive sequence $\\{a_n\\}$ satisfies\n\n$$a_1=1+\\sqrt2$$\n\nand\n\n$$(a_n-a_{n-1})(a_n+a_{n-1}-2\\sqrt n)=2(n-2).$$\n\n(1) Find the general term formula for the sequence $\\{a_n\\}$.\n(2) Find the set of all positive integers $n$ such that $\\lfloor a_n\\rfloor=2022$, where $\\lfloor x\\rfloor$ denotes the greatest integer less than or equal to $x$."
+        },
+        {
+          "number": 2,
+          "problem": "In acute-angled triangle $ABC$, $AB>AC$. $H$ is the orthocenter, and $AM$ is the midline. $BE\\perp AC$ at point $E$, and $CF\\perp AB$ at point $F$. Point $D$ lies on side $BC$, satisfying\n\n$$\\angle CAD=\\angle BAM\\qquad\\text{and}\\qquad\\angle ADH=\\angle MAH.$$\n\nProve that $EF$ bisects segment $AD$."
+        },
+        {
+          "number": 3,
+          "problem": "Let $x_i$ be an integer greater than $1$. Denote by $f(x_i)$ the greatest prime factor of $x_i$. Let\n\n$$x_{i+1}=x_i-f(x_i),$$\n\nwhere $i$ is a natural number.\n\n(1) Prove that for any integer $x_0>1$, there exists a natural number $k(x_0)$ such that $x_{k(x_0)+1}=0$.\n(2) Let $V(x_0)$ denote the number of distinct numbers in\n\n$$f(x_0),\\ f(x_1),\\ \\dots,\\ f(x_{k(x_0)}).$$\n\nFind the greatest number in $V(2),V(3),\\dots,V(781)$ and give reasons.\nNote: Baijuzhou Academy was founded in 1241 AD and has a history of 781 years."
+        },
+        {
+          "number": 4,
+          "problem": "Given integers $m,n\\ge 2$, color each cell of a grid table $S$ of $m$ rows and $n$ columns either red or blue such that the following conditions hold: For any two cells in the same row, if they are both colored red, then the two columns they belong to are such that all cells in one column are colored red, and all cells in the other column are colored blue. Find the number of different coloring methods."
+        },
+        {
+          "number": 5,
+          "problem": "Suppose positive sequences $\\{a_n\\},\\{b_n\\}$ satisfy\n\n$$a_1=b_1=1,\\qquad b_n=a_nb_{n-1}-\\frac14(n-2).$$\n\nFind the minimum value of\n\n$$4\\sqrt{b_1b_2\\cdots b_m}+\\sum_{k=1}^{m}\\frac{1}{a_1a_2\\cdots a_k},$$\n\nwhere $m$ is a given positive integer."
+        },
+        {
+          "number": 6,
+          "problem": "In $\\triangle ABC$, $H$ is the orthocenter. With $H$ as the center, the circle passing through point $A$ intersects sides $AC$ and $AB$ at points $D$ and $E$, respectively, where $D$ and $E$ are different from $A$. The orthocenter of $\\triangle ADE$ is $H'$, and the extension of $AH'$ intersects $DE$ at point $F$. Point $P$ lies inside quadrilateral $BCDE$, satisfying\n\n$$\\angle PDE=\\angle PBC$$\n\n(the vertices are correspondingly ordered). Suppose lines $HH'$ and $PF$ intersect at point $K$. Prove that points $A,H,P,K$ are concyclic."
+        },
+        {
+          "number": 7,
+          "problem": "Suppose $a,b$ are positive integers. Prove that there are no positive integers in the interval\n\n$$\\left(\\frac{b^2}{a^2+ab},\\frac{b^2}{a^2+ab-1}\\right).$$"
+        },
+        {
+          "number": 8,
+          "problem": "Student John plays the following game: take a constant $v$ greater than $1$; for positive integer $m$, the interval between the $m$th round and the $(m+1)$th round is $2^{-m}$ units of time; in the $m$th round, a safety disk area with a radius of $2^{-m+1}$ is taken in the plane (including the boundary, the time to take the disk is negligible); after being taken, the safety disk area will keep the center of the disk unchanged for the rest of the game, with the radius decreasing at a constant rate $v$ until it reaches zero, at which point the safety disk area is removed. If John can completely locate the safety disk area within the existing safety area in a round before the $100$th round (including the $100$th round), find the minimum value of\n\n$$\\frac{1}{v-1},$$\n\nwhere $\\lfloor x\\rfloor$ denotes the greatest integer that does not exceed $x$."
+        }
+      ]
     }
   ]
 }
