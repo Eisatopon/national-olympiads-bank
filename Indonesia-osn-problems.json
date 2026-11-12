@@ -1030,42 +1030,42 @@
     {
      "day": 1,
      "number": 1,
-     "problem": "Find all quadratic polynomials $p(x)$ with rational coefficients such that the set of all roots of $p(x)$ equals the set of all coefficients of $p(x)$."
+     "problem": "For each positive integer $n$, define $f(n)$ as the number of ordered pairs of positive integers $(x, y)$ with $x, y \\le n$ such that the greatest common divisor of the three numbers $x$, $y$ and $n$ equals $1$. Prove that for every composite number $n$,\n$$f(n) \\le n^2 - n,$$\nand determine all positive integers $n$ for which equality holds."
     },
     {
      "day": 1,
      "number": 2,
-     "problem": "(a) Prove there are no positive integers $a, b$ such that $\\dfrac{\\text{lcm}(a,b)}{a+b} = 2025$. (b) Are there positive integers $a, b, c$ such that $\\dfrac{\\text{lcm}(a,b,c)}{a+b+c} = 2025$?"
+     "problem": "Let $ABC$ be an acute triangle with circumcentre $O$. Points $D$ and $E$ lie on the circumcircle of triangle $ABC$ such that $AD$ is perpendicular to $BC$ and $BE$ is perpendicular to $CA$. Segment $CD$ meets the circle with diameter $DO$ at the point $P$, and segment $CE$ meets the circle with diameter $EO$ at the point $Q$. Prove that $OP = OQ$."
     },
     {
      "day": 1,
      "number": 3,
-     "problem": "Fifu and Gian build a sequence: Fifu picks 1 as the first term; then they alternate picking the next term (any positive integer $\\leq n$ on the $n$-th turn). The game ends when the sum $\\geq 2025$; the player who picks the last term wins. Prove Fifu has a winning strategy."
+     "problem": "A $2 \\times 25$ board is given. Labels are given to some of the $1 \\times 1$ squares of the board according to the following rules:\n\n(a) The labels used are consecutive positive integers starting from $1$.\n\n(b) Each square gets at most one label and each label is used exactly once.\n\n(c) The square in the first column of the first row gets the label $1$, and the last label is given to a square in the 25th column.\n\n(d) Two squares with consecutive labels share a side.\n\n(e) Every $2 \\times 2$ square contains an unlabelled square.\n\nProve that the number of labellings whose last label is in the first row equals the number of labellings whose last label is in the second row."
     },
     {
      "day": 1,
      "number": 4,
-     "problem": "Acute triangle $ABC$ with $D, E$ on $AB, AC$ such that $B, C, E, D$ lie on circle $\\Gamma$. $F$ on $\\Gamma$ with $EF \\parallel AB$. $G \\neq F$ on $\\Gamma$ with $A, G, F$ collinear. $H = AB \\cap CG$. $I$ is the midpoint of $BD$, and $J$ on $AB$ with $H$ the midpoint of $AJ$. Prove $CEJI$ is cyclic."
+     "problem": "Let $(a_n)_{n \\ge 1}$ and $(b_n)_{n \\ge 1}$ be sequences of positive real numbers such that $a_1, b_1 < 5$ and for every positive integer $n$,\n$$a_{n+1} = \\frac{b_n + \\sqrt{a_n b_n}}{2} \\quad \\text{and} \\quad b_{n+1} = \\sqrt{\\frac{a_n(a_n + b_n)}{2}}.$$\nProve that\n$$|a_{20} - b_{20}| < \\frac{1}{2025}.$$"
     },
     {
      "day": 2,
      "number": 5,
-     "problem": "Find all functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfying: $f(x + f(y)) = f(x) + f(y)$ for all $x, y$; there exists $x$ with $f(x) = \\frac{1}{2025}$; there is no $x$ with $0 < f(x) < \\frac{1}{2025}$. Determine all possible images of $f$."
+     "problem": "Let $A_1, A_2, A_3, \\ldots, A_n$ be subsets of $X = \\{1, 2, 3, \\ldots, 22\\}$, each with $15$ elements. It is known that for every $B \\subseteq X$ with $10$ elements there exist distinct $i, j \\in \\{1, 2, 3, \\ldots, n\\}$ such that $B \\subseteq A_i \\cap A_j$. Show that $n \\ge 431$."
     },
     {
      "day": 2,
      "number": 6,
-     "problem": "For every positive integer $n$, let $f(n)$ be the number of ordered pairs $(x, y)$ with $x, y \\leq n$ and $\\gcd(x, y, n) = 1$. Prove that for any composite $n$, $f(n) \\leq n^2 - n$, and determine all $n$ with equality."
+     "problem": "Let $\\mathbb{R}^+$ denote the set of all positive real numbers. Determine all functions $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ satisfying\n$$f(x + y) = \\max\\{f(x), y\\} + \\min\\{f(y), x\\}$$\nfor all $x, y \\in \\mathbb{R}^+$."
     },
     {
      "day": 2,
      "number": 7,
-     "problem": "Let $ABC$ be acute with circumcenter $O$. Points $D, E$ on the circumcircle satisfy $AD \\perp BC$ and $BE \\perp CA$. Segment $CD$ meets the circle with diameter $DO$ at $P$; segment $CE$ meets the circle with diameter $EO$ at $Q$. Prove $OP = OQ$."
+     "problem": "A positive integer $n$ is called asri if there exist positive integers $a$ and $b$ such that\n$$n = ab + 20a + 25b.$$\n\n(a) Prove that there is a number that is not asri and is greater than $20^{25}$.\n\n(b) Prove that there are $26$ consecutive asri numbers."
     },
     {
      "day": 2,
      "number": 8,
-     "problem": "A positive integer $n$ is asri if $n = ab + 20a + 25b$ for positive integers $a, b$. (a) Prove there exists a non-asri positive integer greater than 2025. (b) Prove there exist 26 consecutive asri positive integers."
+     "problem": "Let $ABC$ be a triangle in which side $BC$ is longer than side $CA$, and let $M$ be the midpoint of side $AB$. The incircle of triangle $ABC$ touches the sides $BC$, $CA$, $AB$ at the points $D$, $E$, $F$, respectively. Let $G$ be the intersection of lines $DE$ and $AB$, let $O$ be the circumcentre of triangle $FCG$, and let line $OA$ meet the circumcircle of triangle $FOG$ at the point $H$ ($H \\ne O$). If $\\angle OCB = 90^\\circ$, prove that $MH$ is tangent to the circumcircle of triangle $FOG$."
     }
    ]
   },
