@@ -876,6 +876,7 @@ body.lang-el .st-en { display: none; }
 .res-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 
 .yr-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-top: 32px; padding-bottom: 8px; border-bottom: 1px solid var(--line-strong); }
+.gr-head { margin: 22px 0 4px; font: 700 .78rem/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .yr-head .yr { font: 800 1.45rem/1 var(--serif); color: var(--ink); }
 .yr-head .kd { font: 600 1rem/1.2 var(--sans); color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
 
@@ -1306,7 +1307,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261113-mongolia-2011-2014';
+const DATA_VERSION = '20261113-grade-rows-merged';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1894,6 +1895,34 @@ const CBY = Object.fromEntries(COUNTRIES.map(c => [c.key, c]));
 const TABS = [['national', 'National'], ['regional', 'Regional'], ['international', 'International'], ['tournaments', 'Tournaments'], ['kangaroo', 'Kangaroo'], ['amc', 'USA AMC'], ['undergraduate', 'Undergraduate'], ['entrance', 'Entrance Exams']];
 const scopeOf = c => c.scope || 'national';
 const tabRows = () => COUNTRIES.filter(c => scopeOf(c) === state.tab);
+/* One national final split by grade is shown as ONE row (Ercole Suppa's suggestion, 13 Nov 2026).
+   Only the display is merged: every grade keeps its own data file and keys, so problem ids
+   (key.year.day.number), checks, topics, likes and shared ?p= links stay valid.
+   A merged row is a pseudo entry of CBY (not of COUNTRIES) with `parts`, highest grade first;
+   each part gets `merge` (the merged key) and `grade` (its label on the cards). */
+const MERGES = {
+    uafin: { country: 'Ukraine', sub: 'Final round', full: 'Ukrainian Mathematical Olympiad, final (IV stage), grades 9–11', parts: [['ua', 'Grade 11'], ['ua10', 'Grade 10'], ['ua9', 'Grade 9']] },
+    rufin: { country: 'Russia', sub: 'All-Russian final', full: 'All-Russian Olympiad, final stage, grades 9–11', parts: [['ru', 'Grade 11'], ['rug10', 'Grade 10'], ['rug9', 'Grade 9']] },
+    rurfin: { country: 'Russia', sub: 'Regional stage', full: 'All-Russian Olympiad, regional stage, grades 9–11', parts: [['rur', 'Grade 11'], ['rur10', 'Grade 10'], ['rur9', 'Grade 9']] },
+    rumfin: { country: 'Russia', sub: 'Moscow MO', full: 'Moscow Mathematical Olympiad, grades 8–11', parts: [['rum', 'Oldest grade'], ['rum10', 'Grade 10'], ['rum9', 'Grade 9'], ['rum8', 'Grade 8']] },
+    rusfin: { country: 'Russia', sub: 'St. Petersburg MO', full: 'St. Petersburg Mathematical Olympiad, grades 9–11', parts: [['rus', 'Oldest grade'], ['rus10', 'Grade 10'], ['rus9', 'Grade 9']] },
+    rofin: { country: 'Romania', sub: 'NMO final', full: 'Romanian National Mathematical Olympiad, final stage, grades 7–12', parts: [['ro12', 'Grade 12'], ['ro11', 'Grade 11'], ['ro', 'Grade 10'], ['ro9', 'Grade 9'], ['ro8', 'Grade 8'], ['ro7', 'Grade 7']] },
+    hrfin: { country: 'Croatia', sub: 'National competition', full: 'Croatian national competition (Državno natjecanje), A variant, grades 2–4', parts: [['hr', 'Grade 4'], ['hr3', 'Grade 3'], ['hr2', 'Grade 2']] },
+    eefin: { country: 'Estonia', sub: 'Final round', full: 'Estonian Mathematical Olympiad, final round, grades 10–12', parts: [['ee', 'Grade 12'], ['ee11', 'Grade 11'], ['ee10', 'Grade 10']] },
+    kzfin: { country: 'Kazakhstan', sub: 'Final round', full: 'Kazakhstan Mathematical Olympiad, final round, grades 9–11', parts: [['kz', 'Grade 11'], ['kz10', 'Grade 10'], ['kz9', 'Grade 9']] },
+    defin: { country: 'Germany', sub: 'MO final', full: 'German Mathematical Olympiad, final round (Bundesrunde), top grade and grades 9–10', parts: [['dem', 'Top grade'], ['demo10', 'Grade 10'], ['demo9', 'Grade 9']] }
+};
+Object.entries(MERGES).forEach(([k, m]) => {
+    const parts = m.parts.filter(([key]) => CBY[key]);
+    if (!parts.length) return;
+    const first = CBY[parts[0][0]];
+    parts.forEach(([key, grade]) => { CBY[key].merge = k; CBY[key].grade = grade; });
+    CBY[k] = { key: k, name: m.country + ' ' + m.sub, country: m.country, sub: m.sub, full: m.full, flag: first.flag, kind: 'years', scope: first.scope, parts: parts.map(([key]) => key) };
+    REGION_OF[k] = REGION_OF[first.key];
+});
+// The row of a problem in the grid and the results: its merged row when it has one.
+const rowKey = key => (CBY[key] && CBY[key].merge) || key;
+const gradeRank = p => { const c = CBY[p.country]; return c && c.merge ? CBY[c.merge].parts.indexOf(p.country) : 0; };
 
 const ICON = {
     plus:  '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
@@ -2131,6 +2160,16 @@ function loadCountry(key) {
     if (cache.has(key)) return Promise.resolve(cache.get(key));
     if (inflight.has(key)) return inflight.get(key);
     const country = CBY[key];
+    // A merged row loads its grades (each file once) and lists them together, highest grade first.
+    if (country.parts) {
+        const merged = Promise.all(country.parts.map(loadCountry)).then(lists => {
+            const list = lists.flat().sort((a, b) => b.year - a.year || country.parts.indexOf(a.country) - country.parts.indexOf(b.country) || (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0));
+            cache.set(key, list); failed.delete(key); inflight.delete(key); onCountrySettled(key);
+            return list;
+        }).catch(err => { inflight.delete(key); failed.set(key, err.message); onCountrySettled(key); throw err; });
+        inflight.set(key, merged);
+        return merged;
+    }
     // Preserve the original archive, but never offer corrupted records for selection.
     if (country.quarantined) {
         const message = 'This collection is under review because its statements and numbering need repair. It is temporarily excluded from search and problem sets.';
@@ -2176,10 +2215,16 @@ function loadAll() { return Promise.allSettled(COUNTRIES.map(c => loadCountry(c.
 /* ---------- Manifest: counts without downloading the collections ---------- */
 // years in which a competition was not held (manifest "not_held"): the grid shows a dash instead of an empty dot
 function notHeld(key, y) {
+    if (CBY[key] && CBY[key].parts) return CBY[key].parts.every(k => notHeld(k, y));
     const m = manifest && manifest.files && CBY[key] && manifest.files[CBY[key].file];
     return !!(m && m.not_held && m.not_held.includes(y));
 }
 function manifestYears(key) {
+    if (CBY[key] && CBY[key].parts) {
+        const sum = {}; let any = false;
+        CBY[key].parts.forEach(k => { const ys = manifestYears(k); if (!ys) return; any = true; Object.entries(ys).forEach(([y, n]) => { sum[y] = (sum[y] || 0) + n; }); });
+        return any ? sum : null;
+    }
     if (key === 'smmc') return {'2017':8,'2018':8,'2019':8,'2020':8,'2021':8,'2022':12,'2023':12,'2024':12,'2025':12};
     if (key === 'vjimc') return {"1991":4,"1992":8,"1993":8,"1994":8,"1995":7,"1996":6,"1997":10,"1998":10,"1999":8,"2000":8,"2001":8,"2002":8,"2003":8,"2004":8,"2005":8,"2006":8,"2007":8,"2008":8,"2009":8,"2010":8,"2011":8,"2012":8,"2013":8,"2014":8,"2015":8,"2016":8,"2017":8,"2018":8,"2019":8,"2022":8,"2024":8,"2025":8,"2026":8};
     if (key === 'put') return {"1938":13,"1939":14,"1940":15,"1941":14,"1942":11,"1946":12,"1947":12,"1948":12,"1949":12,"1950":12,"1951":14,"1952":14,"1953":14,"1954":14,"1955":14,"1956":14,"1957":14,"1958":28,"1959":14,"1960":14,"1961":14,"1962":12,"1963":12,"1964":12,"1965":12,"1966":12,"1967":12,"1968":12,"1969":12,"1970":12,"1971":12,"1972":12,"1973":12,"1974":12,"1975":12,"1976":12,"1977":12,"1978":12,"1979":12,"1980":12,"1981":12,"1982":12,"1983":12,"1984":12,"1985":12,"1986":12,"1987":12,"1988":12,"1989":12,"1990":12,"1991":12,"1992":12,"1993":12,"1994":12,"1995":12,"1996":12,"1997":12,"1998":12,"1999":12,"2000":12,"2001":12,"2002":12,"2003":12,"2004":12,"2005":12,"2006":12,"2007":12,"2008":12,"2009":12,"2010":12,"2011":12,"2012":12,"2013":12,"2014":12,"2015":12,"2016":12,"2017":12,"2018":12,"2019":12,"2020":12,"2021":12,"2022":12,"2023":12,"2024":12,"2025":12};
@@ -2211,11 +2256,12 @@ function browseTotal() {
 // On the home list ("All problems" without filters) the collections of a year come in a daily
 // order (the same for everyone on a given day), so the page does not always start with Albania.
 function dayRank(key) {
+    key = rowKey(key);
     let h = 2166136261 ^ Math.floor(Date.now() / 864e5);
     for (const ch of key) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
     return h >>> 0;
 }
-function browseRows() { return tabRows().slice().sort((a, b) => dayRank(a.key) - dayRank(b.key)); }
+function browseRows() { return tabRows().slice().sort((a, b) => dayRank(a.key) - dayRank(b.key) || gradeRank({ country: a.key }) - gradeRank({ country: b.key })); }
 function browseCutoff() {
     const rows = browseRows();
     let sum = 0;
@@ -2255,6 +2301,8 @@ let entriesById = new Map(), entryOf = {};
 function gridEntries(list) {
     // National rows group by country flag; in the other tabs only rows sharing a `group` (e.g. HMMT) are grouped.
     const groupKey = c => state.tab === 'national' ? c.flag : (c.group || c.key);
+    const seenMerge = new Set();
+    list = list.flatMap(c => !c.merge ? [c] : seenMerge.has(c.merge) ? [] : (seenMerge.add(c.merge), [CBY[c.merge]]));
     const byFlag = new Map();
     list.forEach(c => { const g = groupKey(c); if (!byFlag.has(g)) byFlag.set(g, []); byFlag.get(g).push(c); });
     return [...byFlag.values()].map(members => {
@@ -2266,7 +2314,7 @@ function gridEntries(list) {
         const subName = c => (n ? c.name.split(' ').slice(n).join(' ').replace(/^—\s*/, '').replace(/\s*\([^)]*\)$/, '') : c.name) || 'National olympiad';
         const names = new Map(members.map(c => [c.key, c.sub || (c.name === name ? 'National olympiad' : subName(c))]));
         // The national olympiad first, then the other finals, junior contests, then the selection tests.
-        const rank = c => names.get(c.key) === 'National olympiad' || c.name === name ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior|Elementary/.test(names.get(c.key)) ? 2 : 1;
+        const rank = c => names.get(c.key) === 'National olympiad' || c.name === name || c.parts ? 0 : /TST/.test(names.get(c.key)) ? 3 : /Junior|Elementary/.test(names.get(c.key)) ? 2 : 1;
         // Grades of the same contest: the highest grade first.
         const gradeKey = c => names.get(c.key).replace(/grade (\d+)/i, (m, d) => 'grade ' + String(100 - d).padStart(3, '0'));
         members = [...members].sort((a, b) => rank(a) - rank(b) || gradeKey(a).localeCompare(gradeKey(b), 'en', { numeric: true }));
@@ -2275,12 +2323,12 @@ function gridEntries(list) {
 }
 
 /* A country with a single competition is shown by the country's name; the competition is in the tooltip and the results title. */
-const countryLabel = c => state.tab !== 'national' ? c.name
+const countryLabel = c => state.tab !== 'national' ? c.name : c.parts ? c.country
     : c.name.replace(/\s+(?:TST|SMT|All-Union|Republican Final|Final V|OMB MAXI|IMONST 2 \(Senior\)|OMAPA \(Level 3\))$/, '').replace(' and Herzegovina', ' & Herzegovina');
 
 /* Country info (i button, pilot): rows whose key has a text in metadata/runtime/country-info.json (loaded on the first click). */
 const COUNTRY_INFO = ['tr', 'ua', 'ru', 'ro'];
-const infoKey = e => state.tab === 'national' ? (e.members.find(c => COUNTRY_INFO.includes(c.key)) || {}).key : undefined;
+const infoKey = e => state.tab === 'national' ? e.members.flatMap(c => c.parts || [c.key]).find(k => COUNTRY_INFO.includes(k)) : undefined;
 const infoBtn = e => { const k = infoKey(e); return k ? `<span class="ci" role="button" data-cinfo="${k}" title="About the competitions of ${esc(e.name || countryLabel(e.members[0]))}" aria-label="About the competitions">i</span>` : ''; };
 
 function buildMatrix() {
@@ -2320,6 +2368,7 @@ function buildMatrix() {
             html += '</div>';
             e.members.forEach(c => {
                 entryOf[c.key] = e;
+                (c.parts || []).forEach(k => { entryOf[k] = e; });
                 html += `<div class="mx-row sub" data-region="${rk}" data-sub="${e.id}" data-lazy${open && ex ? '' : ' hidden'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="nm">${e.sub(c)}</span></button></div>`;
             });
         });
@@ -2356,6 +2405,7 @@ function setLang(l) {
 }
 function paintTab() {
     tabRows().forEach(c => paintCountry(c.key));
+    Object.keys(MERGES).forEach(k => { if (CBY[k] && scopeOf(CBY[k]) === state.tab) paintCountry(k); });
     entriesById.forEach((e, id) => paintEntry(id));
     if (useList()) buildList();
     REGIONS.forEach(([rk]) => paintGroup(rk));
@@ -2518,14 +2568,14 @@ function applyGridFilter() {
                 const e = entriesById.get(r.dataset.cgRow), whole = fits(e.name);
                 let any = whole;
                 $$(`#mx .mx-row[data-sub="${e.id}"]`).forEach(s => {
-                    const ok = whole ? openCountries.has(e.id) : fits(CBY[s.querySelector('.rl').dataset.rl].name);
+                    const ok = whole ? openCountries.has(e.id) : fits(rowNames(s.querySelector('.rl').dataset.rl));
                     s.hidden = !ok; if (ok) any = true;
                 });
                 r.hidden = !any; if (any) n++;
                 r.querySelector('.rl').setAttribute('aria-expanded', String($$(`#mx .mx-row[data-sub="${e.id}"]`).some(s => !s.hidden)));
                 return;
             }
-            const ok = fits(CBY[r.querySelector('.rl').dataset.rl].name);
+            const ok = fits(rowNames(r.querySelector('.rl').dataset.rl));
             r.hidden = !ok; if (ok) n++;
         });
         grpRow.hidden = n === 0;
@@ -2542,6 +2592,7 @@ function applyGridFilter() {
     if (useList()) buildList();
     if (words.length) $('.mx-wrap').scrollTop = 0;
 }
+function rowNames(key) { const c = CBY[key]; return [c.name, ...(c.parts || []).map(k => CBY[k].name)].join(' '); }
 function regionName(rk) { const r = REGIONS.find(([k]) => k === rk); return r ? r[1] : ''; }
 function gotoYear(y) {
     if (y < gridFrom()) setEarly(true);
@@ -2627,7 +2678,7 @@ function buildList() {
             if (!words.length) return [e, null];
             const name = e.members.length > 1 ? e.name : e.members[0].name;
             if (fits(name)) return [e, null];
-            const only = e.members.filter(c => fits(c.name)).map(c => c.key);
+            const only = e.members.filter(c => fits(rowNames(c.key))).map(c => c.key);
             return only.length ? [e, only] : null;
         }).filter(Boolean);
         if (words.length && !entries.length) return;
@@ -2666,13 +2717,14 @@ function showAllListYears(key) {
     if (li) { li.querySelector('.li-b').innerHTML = listItemBody(listEntry(li.dataset.li)); syncList(); }
 }
 function revealListItem(key) {
-    const id = entryOf[key] ? entryOf[key].id : key;
+    const id = entryOf[key] ? entryOf[key].id : rowKey(key);
     if (!$(`#mxList .li[data-li="${id}"]`)) buildList();
     if (!openItems.has(id)) toggleListItem(id, true);
 }
 function syncList() {
-    $$('#mxList .ly').forEach(b => { const on = b.dataset.lc === state.country && +b.dataset.ly === state.year; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
-    $$('#mxList .lc-h').forEach(b => { const on = b.dataset.lc === state.country && state.year === null; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
+    const rk = state.country && rowKey(state.country);
+    $$('#mxList .ly').forEach(b => { const on = b.dataset.lc === rk && +b.dataset.ly === state.year; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
+    $$('#mxList .lc-h').forEach(b => { const on = b.dataset.lc === rk && state.year === null; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', String(on)); });
 }
 function scrollToResults() {
     if (!useList()) return;
@@ -2720,7 +2772,7 @@ function paintCountry(key) {
         }
     }
 }
-function onCountrySettled(key) { paintCountry(key); if (entryOf[key]) paintEntry(entryOf[key].id); paintGroup(regionOf(key)); syncMatrix(); }
+function onCountrySettled(key) { paintCountry(key); if (CBY[key].merge) paintCountry(CBY[key].merge); if (entryOf[key]) paintEntry(entryOf[key].id); paintGroup(regionOf(key)); syncMatrix(); }
 
 function syncMatrix() {
     if (state.country && scopeOf(CBY[state.country]) !== state.tab) setTab(scopeOf(CBY[state.country]), true);
@@ -2728,11 +2780,12 @@ function syncMatrix() {
     if (useList()) syncList();
     if (state.country) revealCountry(state.country);
     $$('#mx .yh').forEach(b => b.classList.toggle('sel', state.country === null && +b.dataset.yh === state.year));
-    $$('#mx .rl').forEach(b => b.classList.toggle('sel', state.year === null && b.dataset.rl === state.country));
+    const rk = state.country && rowKey(state.country);
+    $$('#mx .rl').forEach(b => b.classList.toggle('sel', state.year === null && b.dataset.rl === rk));
     // Touch only the cells whose pick/line state changes, not the whole grid.
     let pickCell = null, lineCells = [];
-    if (state.country && state.year !== null) pickCell = $(`#mx .cell[data-country="${state.country}"][data-year="${state.year}"]`);
-    else if (state.country) lineCells = $$(`#mx .cell[data-country="${state.country}"]`);
+    if (state.country && state.year !== null) pickCell = $(`#mx .cell[data-country="${rk}"][data-year="${state.year}"]`);
+    else if (state.country) lineCells = $$(`#mx .cell[data-country="${rk}"]`);
     else if (state.year !== null) lineCells = $$(`#mx .cell[data-year="${state.year}"]`);
     const lineSet = new Set(lineCells);
     $$('#mx .cell.pick, #mx .cell.line').forEach(c => {
@@ -2794,8 +2847,11 @@ const filtersOn = () => state.day !== 'all' || state.topic !== 'all' || state.q.
 
 function compare(a, b) {
     if (a.year !== b.year) return b.year - a.year;
-    if (a.country !== b.country && browseTotal()) return dayRank(a.country) - dayRank(b.country);
-    if (a.country !== b.country) return CBY[a.country].name.localeCompare(CBY[b.country].name, 'en', { sensitivity: 'base' });
+    const ka = CBY[a.country].merge || a.country, kb = CBY[b.country].merge || b.country;
+    if (ka !== kb && browseTotal()) return dayRank(ka) - dayRank(kb);
+    if (ka !== kb) return CBY[ka].name.localeCompare(CBY[kb].name, 'en', { sensitivity: 'base' });
+    // grades of a merged row: the highest grade first
+    if (a.country !== b.country) return CBY[ka].parts.indexOf(a.country) - CBY[ka].parts.indexOf(b.country);
     if ((a.day || 0) !== (b.day || 0)) return (a.day || 0) - (b.day || 0);
     return (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0);
 }
@@ -2835,8 +2891,9 @@ function syncFilters() {
 const box = () => $('#resultsBox');
 
 function scopeTitle() {
-    if (state.country && state.year !== null) return [`${CBY[state.country].flag} ${CBY[state.country].name} ${state.year}`, CBY[state.country].full || ''];
-    if (state.country) return [`${CBY[state.country].flag} ${CBY[state.country].name}`, CBY[state.country].full ? `${CBY[state.country].full} · All years` : 'All years'];
+    const c = state.country && CBY[state.country], cname = c && (c.merge ? `${CBY[c.merge].name}, ${c.grade}` : c.name);
+    if (state.country && state.year !== null) return [`${c.flag} ${cname} ${state.year}`, c.full || ''];
+    if (state.country) return [`${c.flag} ${cname}`, CBY[state.country].full ? `${CBY[state.country].full} · All years` : 'All years'];
     const nat = state.tab === 'national';
     const tabLabel = (TABS.find(([k]) => k === state.tab) || TABS[0])[1];
     const label = ['kangaroo', 'amc'].includes(state.tab) ? tabLabel : tabLabel.toLowerCase();
@@ -2845,7 +2902,7 @@ function scopeTitle() {
 }
 /* The country group (several rows with the same flag) of a row, for the whole-country LaTeX export; null for a single row. */
 function countryGroup(key) {
-    const e = gridEntries(tabRows()).find(x => x.members.some(c => c.key === key));
+    const e = gridEntries(tabRows()).find(x => x.members.some(c => c.key === key || (c.parts || []).includes(key)));
     return e && e.members.length > 1 ? e : null;
 }
 function headHtml(count) {
@@ -3082,7 +3139,7 @@ function problemHtml(p) {
         <div class="p-head">
             <div class="p-id">
                 <span class="p-num">${esc(p.num)}</span>
-                <span class="p-meta">${c.flag} ${c.name} ${p.year}${p.paperLabel ? `, ${esc(p.paperLabel)}` : p.day ? `, Day ${p.day}` : ''}</span>
+                <span class="p-meta">${c.flag} ${c.merge ? CBY[c.merge].name : c.name} ${p.year}${c.merge ? `, ${c.grade}` : ''}${p.paperLabel ? `${c.merge ? ' ·' : ','} ${esc(p.paperLabel)}` : p.day ? `${c.merge ? ' ·' : ','} Day ${p.day}` : ''}</span>
                 ${p.topic ? `<span class="p-tag">${esc(p.topic)}</span>` : ''}
             </div>
             <div class="p-actions">
@@ -3236,15 +3293,21 @@ function renderResults() {
     // The source line is shown once per competition-year group, not under every card.
     if (singleGroup) {
         if (shown.length) html += creditHtml(shown[0]);
-        html += shown.map(problemHtml).join('');
-    } else {
-        let cur = null;
+        let grade = null;
         shown.forEach(p => {
-            const key = p.country + '|' + p.year;
+            // a merged row (all grades of one final): a small heading for each grade
+            if (CBY[p.country].merge && p.country !== grade) { grade = p.country; html += `<div class="gr-head">${esc(CBY[p.country].grade)}</div>`; }
+            html += problemHtml(p);
+        });
+    } else {
+        let cur = null, grade = null;
+        shown.forEach(p => {
+            const row = CBY[p.country].merge || p.country, key = row + '|' + p.year;
             if (key !== cur) {
-                cur = key;
-                html += `<div class="yr-head"><h3 class="yr">${p.year}</h3><span class="kd">${CBY[p.country].flag} ${CBY[p.country].name}</span><span class="yr-credit">${esc(creditText(p))}</span></div>`;
+                cur = key; grade = null;
+                html += `<div class="yr-head"><h3 class="yr">${p.year}</h3><span class="kd">${CBY[row].flag} ${CBY[row].name}</span><span class="yr-credit">${esc(creditText(p))}</span></div>`;
             }
+            if (CBY[p.country].merge && p.country !== grade) { grade = p.country; html += `<div class="gr-head">${esc(CBY[p.country].grade)}</div>`; }
             html += problemHtml(p);
         });
     }
@@ -3735,7 +3798,7 @@ async function copyAiPrompt() {
 function viewQuery() {
     if (typeof focusUid !== 'undefined' && focusUid) {
         const [k, yr] = focusUid.split('.');
-        if (state.country === k && state.year === +yr && state.day === 'all' && state.topic === 'all' && !state.q.trim()) return 'p=' + focusUid;
+        if (state.country === ((CBY[k] && CBY[k].merge) || k) && state.year === +yr && state.day === 'all' && state.topic === 'all' && !state.q.trim()) return 'p=' + focusUid;
         focusUid = null;
     }
     const p = new URLSearchParams();
@@ -3766,7 +3829,7 @@ function readView() {
     const one = p.get('p');
     if (one && /^[a-z][a-z0-9]*\.\d{4}\.\d{1,2}\.[A-Za-z0-9]{1,4}$/.test(one) && CBY[one.split('.')[0]]) {
         const [k, yr] = one.split('.');
-        focusUid = one; state.country = k; state.tab = scopeOf(CBY[k]); state.year = +yr; state.day = 'all'; state.topic = 'all'; state.q = '';
+        focusUid = one; state.country = CBY[k].merge || k; state.tab = scopeOf(CBY[k]); state.year = +yr; state.day = 'all'; state.topic = 'all'; state.q = '';
         limit = 500; // the whole year, so the card exists
     }
     return !!(c || p.has('y') || d || t || q || focusUid);
@@ -3793,7 +3856,7 @@ function showUpdated() {
 const SHARE_URL = 'https://pythagoras.sokkorom.workers.dev/p/';
 function problemLabel(p) {
     const c = CBY[p.country];
-    return `${c.flag} ${c.name} ${p.year}${p.paperLabel ? `, ${p.paperLabel}` : p.day ? `, Day ${p.day}` : ''} – Problem ${p.num}`;
+    return `${c.flag} ${c.merge ? CBY[c.merge].name : c.name} ${p.year}${c.merge ? `, ${c.grade}` : ''}${p.paperLabel ? `${c.merge ? ' ·' : ','} ${p.paperLabel}` : p.day ? `${c.merge ? ' ·' : ','} Day ${p.day}` : ''} – Problem ${p.num}`;
 }
 function problemLink(p) { return SHARE_URL + encodeURIComponent(p.uid); }
 function shareActionHtml(p) {
@@ -3856,7 +3919,8 @@ function showCountryInfo(key) {
     countryInfoLoad.then(data => {
         const d = data[key];
         if (!d) throw new Error('none');
-        const rows = COUNTRIES.filter(c => c.flag === c0.flag && scopeOf(c) === 'national').map(c => {
+        const seen = new Set();
+        const rows = COUNTRIES.filter(c => c.flag === c0.flag && scopeOf(c) === 'national').map(c => CBY[rowKey(c.key)]).filter(c => !seen.has(c.key) && seen.add(c.key)).map(c => {
             const ys = Object.keys(manifestYears(c.key) || {}).map(Number).filter(y => yearCount(c.key, y) > 0);
             const n = ys.reduce((s, y) => s + yearCount(c.key, y), 0);
             const span = ys.length ? (Math.min(...ys) === Math.max(...ys) ? Math.min(...ys) : `${Math.min(...ys)}–${Math.max(...ys)}`) : '';
@@ -4039,7 +4103,7 @@ document.addEventListener('contextmenu', e => {
     e.preventDefault();
     Promise.all(keys.map(k => loadCountry(k).catch(() => []))).then(() => {
         const items = [];
-        keys.forEach(k => (cache.get(k) || []).filter(p => p.year === y).sort((a, b) => (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0)).forEach(p => items.push(p)));
+        keys.forEach(k => (cache.get(k) || []).filter(p => p.year === y).sort((a, b) => gradeRank(a) - gradeRank(b) || (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0)).forEach(p => items.push(p)));
         if (items.length) copyText(buildTexList(items), `LaTeX of ${items.length} problem${items.length === 1 ? '' : 's'} (${y}) copied.`);
     });
 });
@@ -4115,7 +4179,7 @@ document.addEventListener('click', e => {
             t.disabled = false;
             const items = [];
             // the topic filter and the search box apply to the whole country (e.g. all geometry problems of China)
-            g.members.forEach(c => (cache.get(c.key) || []).filter(p => matchesTopic(p) && matchesQuery(p)).sort((a, b) => a.year - b.year || (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0)).forEach(p => items.push(p)));
+            g.members.forEach(c => (cache.get(c.key) || []).filter(p => matchesTopic(p) && matchesQuery(p)).sort((a, b) => a.year - b.year || gradeRank(a) - gradeRank(b) || (a.day || 0) - (b.day || 0) || (parseFloat(a.num) || 0) - (parseFloat(b.num) || 0)).forEach(p => items.push(p)));
             const topic = state.topic !== 'all' ? ` – ${state.topic}` : '';
             if (items.length) exportTex(items, `${g.name} – all competitions${topic}`, true);
             else say('No problems of this country match the current filters.');
