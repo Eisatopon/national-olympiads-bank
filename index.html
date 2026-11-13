@@ -779,6 +779,15 @@ body.lang-el .st-en { display: none; }
 .yh.sel { color: #fff; background: var(--accent); font-weight: 700; }
 .rl { appearance: none; position: sticky; left: 0; z-index: 2; text-align: left; background: var(--ink); border: 0; padding: 4px 10px 4px 0; color: #eef2f6; font: 600 .86rem/1.2 var(--sans); cursor: pointer; height: 26px; white-space: nowrap; border-radius: 0 3px 3px 0; display: flex; align-items: center; gap: 8px; }
 .rl:hover { color: #fff; }
+.ci { flex: 0 0 auto; display: inline-grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .45); color: #cfe0ee; font: italic 700 .66rem/1 Georgia, serif; cursor: pointer; }
+.ci:hover, .ci:focus-visible { background: var(--accent, #f2c14e); border-color: transparent; color: #111; }
+.mxl .li-h .ci { width: 20px; height: 20px; font-size: .8rem; }
+.ci-dlg { max-width: 560px; }
+.ci-body p { margin: 0 0 .7em; line-height: 1.5; }
+.ci-body h3 { margin: 1em 0 .4em; font-size: .95rem; }
+.ci-rows { margin: 0; padding-left: 1.1em; }
+.ci-rows li { margin: .2em 0; }
+.ci-n, .ci-links { color: var(--muted, #667); font-size: .85em; }
 .rl .nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .rl.sel { color: var(--accent-text); }
 .mx-row[hidden] { display: none; }
@@ -1297,7 +1306,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261113-grade-labels';
+const DATA_VERSION = '20261113-country-info';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -2269,6 +2278,11 @@ function gridEntries(list) {
 const countryLabel = c => state.tab !== 'national' ? c.name
     : c.name.replace(/\s+(?:TST|SMT|All-Union|Republican Final|Final V|OMB MAXI|IMONST 2 \(Senior\)|OMAPA \(Level 3\))$/, '').replace(' and Herzegovina', ' & Herzegovina');
 
+/* Country info (i button, pilot): rows whose key has a text in metadata/runtime/country-info.json (loaded on the first click). */
+const COUNTRY_INFO = ['tr', 'ua', 'ru', 'ro'];
+const infoKey = e => state.tab === 'national' ? (e.members.find(c => COUNTRY_INFO.includes(c.key)) || {}).key : undefined;
+const infoBtn = e => { const k = infoKey(e); return k ? `<span class="ci" role="button" data-cinfo="${k}" title="About the competitions of ${esc(e.name || countryLabel(e.members[0]))}" aria-label="About the competitions">i</span>` : ''; };
+
 function buildMatrix() {
     const mx = $('#mx'), from = gridFrom();
     applyGridMode();
@@ -2294,14 +2308,14 @@ function buildMatrix() {
         entries.forEach(e => {
             if (e.members.length === 1) {
                 const c = e.members[0];
-                html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${countryLabel(c)}</span></button>`;
+                html += `<div class="mx-row" data-region="${rk}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl" data-rl="${c.key}" tabindex="-1" aria-label="${c.name}, all years" title="${c.name}"><span class="flag" aria-hidden="true">${c.flag}</span><span class="nm">${countryLabel(c)}</span>${infoBtn(e)}</button>`;
                 if (open) html += rowCells(c);
                 html += '</div>';
                 return;
             }
             entriesById.set(e.id, e);
             const ex = openCountries.has(e.id);
-            html += `<div class="mx-row mx-cg" data-region="${rk}" data-cg-row="${e.id}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl cg" data-cg="${e.id}" tabindex="-1" aria-expanded="${ex}" aria-label="${e.name}: ${e.members.length} competitions" title="${e.members.map(c => c.name).join(' · ')}"><span class="flag" aria-hidden="true">${e.flag}</span><span class="nm">${e.name}</span><span class="cn" aria-hidden="true">${e.members.length}</span><span class="car" aria-hidden="true">&#9656;</span></button>`;
+            html += `<div class="mx-row mx-cg" data-region="${rk}" data-cg-row="${e.id}"${open ? '' : ' hidden data-lazy'}><button type="button" class="rl cg" data-cg="${e.id}" tabindex="-1" aria-expanded="${ex}" aria-label="${e.name}: ${e.members.length} competitions" title="${e.members.map(c => c.name).join(' · ')}"><span class="flag" aria-hidden="true">${e.flag}</span><span class="nm">${e.name}</span>${infoBtn(e)}<span class="cn" aria-hidden="true">${e.members.length}</span><span class="car" aria-hidden="true">&#9656;</span></button>`;
             if (open) html += groupCells(e);
             html += '</div>';
             e.members.forEach(c => {
@@ -2625,7 +2639,7 @@ function buildList() {
             if (e.members.length > 1) entriesById.set(e.id, e);
             const ex = openItems.has(e.id) || !!only;
             const name = e.members.length > 1 ? e.name : countryLabel(e.members[0]);
-            html += `<div class="li" data-li="${e.id}"><button type="button" class="li-h" data-li-h="${e.id}" aria-expanded="${ex}"><span class="car" aria-hidden="true">&#9656;</span><span class="flag" aria-hidden="true">${(e.members[0]).flag}</span><span>${esc(name)}</span><span class="meta">${listMeta(e)}</span></button>`
+            html += `<div class="li" data-li="${e.id}"><button type="button" class="li-h" data-li-h="${e.id}" aria-expanded="${ex}"><span class="car" aria-hidden="true">&#9656;</span><span class="flag" aria-hidden="true">${(e.members[0]).flag}</span><span>${esc(name)}</span>${infoBtn(e)}<span class="meta">${listMeta(e)}</span></button>`
                 + `<div class="li-b"${ex ? '' : ' hidden'}>${ex ? listItemBody(e, only) : ''}</div></div>`;
         });
     });
@@ -3825,6 +3839,34 @@ function showWhatsNew() {
     }
     dlg.showModal();
 }
+/* Country info dialog: history and format of a country's competitions, then what the bank holds (from the manifest). */
+let countryInfoLoad = null;
+function showCountryInfo(key) {
+    let dlg = document.getElementById('countryInfo');
+    if (!dlg) {
+        dlg = document.createElement('dialog'); dlg.id = 'countryInfo'; dlg.className = 'wn-dlg ci-dlg';
+        dlg.addEventListener('click', e => { if (e.target === dlg || e.target.closest('[data-wn-close]')) dlg.close(); });
+        document.body.appendChild(dlg);
+    }
+    const c0 = CBY[key];
+    const head = t => `<div class="wn-head"><h2>${c0.flag} ${esc(t)}</h2><button type="button" class="btn btn-sm btn-quiet" data-wn-close>Close</button></div>`;
+    dlg.innerHTML = head(countryLabel(c0)) + '<p>Loading…</p>';
+    if (!dlg.open) dlg.showModal();
+    countryInfoLoad = countryInfoLoad || fetch('./metadata/runtime/country-info.json?v=' + DATA_VERSION, {cache: 'no-cache'}).then(r => r.json());
+    countryInfoLoad.then(data => {
+        const d = data[key];
+        if (!d) throw new Error('none');
+        const rows = COUNTRIES.filter(c => c.flag === c0.flag && scopeOf(c) === 'national').map(c => {
+            const ys = Object.keys(manifestYears(c.key) || {}).map(Number).filter(y => yearCount(c.key, y) > 0);
+            const n = ys.reduce((s, y) => s + yearCount(c.key, y), 0);
+            const span = ys.length ? (Math.min(...ys) === Math.max(...ys) ? Math.min(...ys) : `${Math.min(...ys)}–${Math.max(...ys)}`) : '';
+            return `<li><a href="?s=national&c=${encodeURIComponent(c.key)}">${esc(c.full || c.name)}</a>${span ? ` <span class="ci-n">${span} · ${n.toLocaleString('en-US')} problems</span>` : ''}</li>`;
+        }).join('');
+        dlg.innerHTML = head(d.title) + '<div class="ci-body">' + d.paragraphs.map(p => `<p>${esc(p)}</p>`).join('')
+            + `<h3>In the bank</h3><ul class="ci-rows">${rows}</ul>`
+            + ((d.links || []).length ? `<p class="ci-links">Official sources: ${d.links.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>`).join(' · ')}</p>` : '') + '</div>';
+    }).catch(() => { countryInfoLoad = null; dlg.innerHTML = head(countryLabel(c0)) + '<p>Could not load the text.</p>'; });
+}
 function showToast(text) {
     let t = document.getElementById('aiToast');
     if (!t) { t = document.createElement('div'); t.id = 'aiToast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
@@ -4018,6 +4060,8 @@ document.addEventListener('click', e => {
         if (currentMenu) currentMenu.open = false;
         return;
     }
+    const ci = e.target.closest('[data-cinfo]');
+    if (ci) { showCountryInfo(ci.dataset.cinfo); return; }
     const t = e.target.closest('button');
     if (!t) return;
 
