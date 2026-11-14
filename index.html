@@ -324,6 +324,8 @@
     --nlj: #e07b39; --nlj-ink: #7a3d14; --nlj-tint: #fbeadd;
     --nl2: #7a5c3f; --nl2-ink: #4a3522; --nl2-tint: #f1e9e1;
     --nl1: #5f7a3f; --nl1-ink: #384a22; --nl1-tint: #e9f1e1;
+    --no1: #9a4a5f; --no1-ink: #5e2b39; --no1-tint: #f6e6ea;
+    --no2: #3f6f8f; --no2-ink: #254356; --no2-tint: #e4eef4;
     --nzt: #4b5d8f; --nzt-ink: #28345a; --nzt-tint: #e5e9f4;
     --nz1: #3f7a8c; --nz1-ink: #224652; --nz1-tint: #e2eff3;
     --cu: #1f5aa6; --cu-ink: #0f3266; --cu-tint: #e1ebf7;
@@ -626,6 +628,8 @@
 .f-nlj { --f: var(--nlj); --f-ink: var(--nlj-ink); --f-tint: var(--nlj-tint); }
 .f-nl2 { --f: var(--nl2); --f-ink: var(--nl2-ink); --f-tint: var(--nl2-tint); }
 .f-nl1 { --f: var(--nl1); --f-ink: var(--nl1-ink); --f-tint: var(--nl1-tint); }
+.f-no1 { --f: var(--no1); --f-ink: var(--no1-ink); --f-tint: var(--no1-tint); }
+.f-no2 { --f: var(--no2); --f-ink: var(--no2-ink); --f-tint: var(--no2-tint); }
 .f-nzt { --f: var(--nzt); --f-ink: var(--nzt-ink); --f-tint: var(--nzt-tint); }
 .f-nz1 { --f: var(--nz1); --f-ink: var(--nz1-ink); --f-tint: var(--nz1-tint); }
 .f-cu { --f: var(--cu); --f-ink: var(--cu-ink); --f-tint: var(--cu-tint); }
@@ -1313,7 +1317,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261114-nl-first-round';
+const DATA_VERSION = '20261114-norway-abel-rounds';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1551,6 +1555,8 @@ REGION_OF.bem = 'europe';
 REGION_OF.nlj = 'europe';
 REGION_OF.nl2 = 'europe';
 REGION_OF.nl1 = 'europe';
+REGION_OF.no1 = 'europe';
+REGION_OF.no2 = 'europe';
 REGION_OF.nzt = 'oceania';
 REGION_OF.nz1 = 'oceania';
 REGION_OF.cu = 'americas';
@@ -1673,6 +1679,8 @@ const COUNTRIES = [
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
     { key: 'nl2', name: 'Netherlands second round', flag: '🇳🇱', file: 'Netherlands-second-round-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, second round" },
     { key: 'nl1', name: 'Netherlands first round', flag: '🇳🇱', file: 'Netherlands-first-round-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, first round" },
+    { key: 'no1', name: 'Norway first round', flag: '🇳🇴', file: 'Norway-abel-first-round-problems.json', kind: 'years', full: "Niels Henrik Abel mathematics competition, first round" },
+    { key: 'no2', name: 'Norway second round', flag: '🇳🇴', file: 'Norway-abel-second-round-problems.json', kind: 'years', full: "Niels Henrik Abel mathematics competition, second round" },
     { key: 'nlj', name: 'Netherlands Junior MO', flag: '🇳🇱', file: 'Netherlands-jwo-problems.json', kind: 'years', full: "Dutch Junior Mathematical Olympiad (Junior Wiskunde Olympiade), final" },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
