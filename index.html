@@ -322,6 +322,7 @@
     --hr2: #9e5b2b; --hr2-ink: #5f3417; --hr2-tint: #f6e9df;
     --bem: #6b8e23; --bem-ink: #3f5514; --bem-tint: #ecf2df;
     --nlj: #e07b39; --nlj-ink: #7a3d14; --nlj-tint: #fbeadd;
+    --nl2: #7a5c3f; --nl2-ink: #4a3522; --nl2-tint: #f1e9e1;
     --nzt: #4b5d8f; --nzt-ink: #28345a; --nzt-tint: #e5e9f4;
     --nz1: #3f7a8c; --nz1-ink: #224652; --nz1-tint: #e2eff3;
     --cu: #1f5aa6; --cu-ink: #0f3266; --cu-tint: #e1ebf7;
@@ -622,6 +623,7 @@
 .f-hr2 { --f: var(--hr2); --f-ink: var(--hr2-ink); --f-tint: var(--hr2-tint); }
 .f-bem { --f: var(--bem); --f-ink: var(--bem-ink); --f-tint: var(--bem-tint); }
 .f-nlj { --f: var(--nlj); --f-ink: var(--nlj-ink); --f-tint: var(--nlj-tint); }
+.f-nl2 { --f: var(--nl2); --f-ink: var(--nl2-ink); --f-tint: var(--nl2-tint); }
 .f-nzt { --f: var(--nzt); --f-ink: var(--nzt-ink); --f-tint: var(--nzt-tint); }
 .f-nz1 { --f: var(--nz1); --f-ink: var(--nz1-ink); --f-tint: var(--nz1-tint); }
 .f-cu { --f: var(--cu); --f-ink: var(--cu-ink); --f-tint: var(--cu-tint); }
@@ -1309,7 +1311,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261114-nz-round1';
+const DATA_VERSION = '20261114-nl-second-round';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1545,6 +1547,7 @@ REGION_OF.hr3 = 'europe';
 REGION_OF.hr2 = 'europe';
 REGION_OF.bem = 'europe';
 REGION_OF.nlj = 'europe';
+REGION_OF.nl2 = 'europe';
 REGION_OF.nzt = 'oceania';
 REGION_OF.nz1 = 'oceania';
 REGION_OF.cu = 'americas';
@@ -1665,6 +1668,7 @@ const COUNTRIES = [
     { key: 'ukh', name: 'UK Hamilton', flag: '🇬🇧', file: 'Uk-hamilton-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Hamilton paper (UKMT)" },
     { key: 'ukc', name: 'UK Cayley', flag: '🇬🇧', file: 'Uk-cayley-problems.json', kind: 'years', full: "UK Intermediate Mathematical Olympiad, Cayley paper (UKMT)" },
     { key: 'nl', name: 'Netherlands', flag: '🇳🇱', file: 'Netherlands-final-problems.json', kind: 'years' },
+    { key: 'nl2', name: 'Netherlands second round', flag: '🇳🇱', file: 'Netherlands-second-round-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, second round" },
     { key: 'nlj', name: 'Netherlands Junior MO', flag: '🇳🇱', file: 'Netherlands-jwo-problems.json', kind: 'years', full: "Dutch Junior Mathematical Olympiad (Junior Wiskunde Olympiade), final" },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
