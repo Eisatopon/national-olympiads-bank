@@ -437,6 +437,56 @@
       ]
     },
     {
+      "year": 2021,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Find the largest positive integer $K$ with the following property: whenever finitely many closed intervals $A_1,A_2,\\ldots,A_N$, all of length 1, are given ($N$ is an arbitrary positive integer) and their union is $[0,2021]$, we can always find $K$ intervals among $A_1,\\ldots,A_N$ which are pairwise disjoint."
+        },
+        {
+          "number": 2,
+          "problem": "Find all integers $n=2k+1>1$ for which there exists a permutation $a_0,a_1,\\ldots,a_k$ of $\\{0,1,\\ldots,k\\}$ such that\n$$a_1^2-a_0^2\\equiv a_2^2-a_1^2\\equiv\\cdots\\equiv a_k^2-a_{k-1}^2\\pmod n.$$"
+        },
+        {
+          "number": 3,
+          "problem": "Let $n$ be a positive odd integer. The lattice points $C=\\{(i,j):i,j=0,1,\\ldots,2n-1\\}$ of the plane form a $2n\\times 2n$ array. At each point there is a guinea pig, facing one of the four directions: the positive or negative direction of the $x$-axis, or the positive or negative direction of the $y$-axis. Jeff wants to keep $n^2+1$ of the guinea pigs and remove all the others. Then the guinea pigs move as follows: in each round, every guinea pig that has been kept moves simultaneously one unit in the direction it faces, keeping its direction; but if the point $(i,j)$ it should move to is not in $C$, it moves instead to the point $(p,q)\\in C$ such that $p\\equiv i\\pmod{2n}$ and $q\\equiv j\\pmod{2n}$. (For example, if a guinea pig crawls from $(2,0)$ towards $(2,-1)$, it moves to $(2,2n-1)$ instead.) Jeff's goal is that in no round do two of the remaining guinea pigs arrive at the same point, and in no round do two guinea pigs crawl to each other's starting point of that round.\nProve that, whatever the initial directions of the guinea pigs, Jeff can always achieve his goal."
+        },
+        {
+          "number": 4,
+          "problem": "Let $I$ be the incentre of the triangle $ABC$, and let $D$ be the foot of the perpendicular from $I$ to the side $BC$. Let $D'$ be the reflection of $D$ in $I$, and suppose that $AD'=ID'$. The circle $\\Gamma$ with centre $D'$ passes through $A$ and $I$ and meets $AB$ and $AC$ at $X$ and $Y$. Let $Z$ be a point on $\\Gamma$ such that $AZ$ is perpendicular to $BC$.\nProve that the lines $AD$, $D'Z$ and $XY$ are concurrent."
+        },
+        {
+          "number": 5,
+          "problem": "Let $n$ be a given positive integer. A and B play the following game. A chooses a polynomial $P(x)$ with integer coefficients and degree at most $n$, but does not tell B what it is. The goal of B is to determine whether there exists an integer $k$ such that the equation $P(x)=k$ has no integer solution. B may ask questions of the following form: B gives A a constant $c$, and A tells B how many integers $t$ satisfy $P(t)=c$. Each question costs one dollar. What is the minimum amount B must pay to be sure of achieving his goal?"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $x,y,z$ be positive integers whose greatest common divisor is 1 and which have the following properties:\n$$x\\mid yz(x+y+z),\\qquad y\\mid xz(x+y+z),\\qquad z\\mid xy(x+y+z),\\qquad x+y+z\\mid xyz.$$\nProve that $xyz(x+y+z)$ is a perfect square."
+        },
+        {
+          "number": 2,
+          "problem": "Black balls numbered from 1 to 2022, one for each number, are placed in 1011 black boxes, so that each black box contains exactly two black balls. White balls numbered from 1 to 2022, one for each number, are placed in 1011 white boxes, so that each white box contains exactly two white balls. Prove that, however the black and white balls are distributed at the beginning, we can take one ball from each of the 2022 boxes so that the 2022 balls taken contain exactly one ball with each of the numbers from 1 to 2022."
+        },
+        {
+          "number": 3,
+          "problem": "Find all pairs of functions $f,g:\\mathbb R^2\\to\\mathbb R$ such that for all $a,b,c,d\\in\\mathbb R$\n$$|f(a,b)-f(c,d)|+|g(a,b)-g(c,d)|=|a-c|+|b-d|.$$"
+        },
+        {
+          "number": 4,
+          "problem": "On a table there are 2022 baby bottles with a capacity of 200 cc each, and each bottle contains 30 cc of milk. Baby A and Baby B play a game, taking turns; Baby A starts. In each turn, the baby whose turn it is performs one of the following two actions:\n(i) choose a bottle containing more than 100 cc of milk and drink half of the milk in it;\n(ii) choose two bottles, each containing at most 100 cc of milk, pour all the milk of one of them into the other, and throw away the empty bottle.\nThe baby who first cannot perform an action loses the game. Which baby has a winning strategy?"
+        },
+        {
+          "number": 5,
+          "problem": "Let $J$ be the $A$-excentre of the acute triangle $ABC$. Two points $X,Y$ are taken on the circumcircle of the triangle $ACJ$ so that $JX=JY<JC$. A point $P$ is taken on $XY$ so that $PB$ is tangent to the circumcircle of the triangle $ABC$. A point $Q$ is taken on the circumcircle of the triangle $BXY$ so that $BQ$ is parallel to $AC$.\nProve that $\\angle BAP=\\angle QAC$."
+        }
+      ]
+    },
+    {
       "year": 2023,
       "problems": [
         {
@@ -468,6 +518,81 @@
           "problem": "Let $m$ be a positive integer, and let the real numbers $a_1, a_2, \\dots, a_m$ satisfy\n$$\\frac{1}{m}\\sum_{i=1}^{m} a_i = 1, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^2 = 11, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^3 = 1, \\quad \\frac{1}{m}\\sum_{i=1}^{m} a_i^4 = 131.$$\nProve that $m$ is a multiple of $7$.",
           "problem_orig": "$m$ 為正整數, 且實數 $a_1, a_2, \\dots, a_m$ 滿足\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i = 1,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^2 = 11,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^3 = 1,\n$$\n$$\n\\frac{1}{m} \\sum_{i=1}^{m} a_i^4 = 131.\n$$\n試證明 $m$ 必為 7 的倍數。",
           "orig_lang": "zh"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $n$ and $k$ be positive integers. A baby uses $n^2$ blocks to form an $n\\times n$ grid; each block bears a positive integer not greater than $k$. The father passes by and notices that:\n1. each row of the grid, read from left to right, is an arithmetic sequence (with the leftmost number as its first term), and the common differences of the rows are all distinct;\n2. each column of the grid, read from top to bottom, is an arithmetic sequence (with the topmost number as its first term), and the common differences of the columns are all distinct.\nFind the smallest possible value of $k$ (as a function of $n$).\nNote: the common differences may be non-positive."
+        },
+        {
+          "number": 2,
+          "problem": "A positive integer is called superb if it is the least common multiple of $1,2,\\ldots,n$ for some positive integer $n$. Find all superb numbers $x,y,z$ such that $x+y=z$."
+        },
+        {
+          "number": 3,
+          "problem": "Find all functions $f:\\mathbb R\\to\\mathbb R$ such that\n$$2f\\big((x+y)^2\\big)=f(x+y)+\\big(f(x)\\big)^2+(4y-1)f(x)-2y+4y^2$$\nfor all real numbers $x$ and $y$."
+        },
+        {
+          "number": 4,
+          "problem": "Let $O$ be the circumcentre of the triangle $ABC$, and let $E,F$ be points on the segments $CA$ and $AB$ respectively, with $E,F\\ne A$. Let $P$ be a point such that $PB=PF$ and $PC=PE$. The line $OP$ meets $CA$ and $AB$ at the points $Q$ and $R$ respectively. The line through $P$ perpendicular to $EF$ meets $CA$ and $AB$ at the points $S$ and $T$ respectively. Prove that the points $Q,R,S$ and $T$ are concyclic."
+        },
+        {
+          "number": 5,
+          "problem": "A finite collection of triangles in the plane is called intersecting if the interiors of any two triangles of the collection have a non-empty intersection. Prove that for any two finite intersecting collections of triangles in the plane there exists a straight line which meets the interiors of all the triangles of both collections."
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "In the triangle $ABC$, let $I$ be the incentre, $E$ the excentre opposite $A$, and $\\mathcal O$ the circumcircle. Let $A'$ be the point of $\\mathcal O$ diametrically opposite $A$, and let $M$ be the midpoint of the arc $BAC$ of $\\mathcal O$. Let $X$ be the reflection of $A$ in $A'$, and let $Y$ be the reflection of $A$ in $M$. Prove that the points $E,I,X,Y$ are concyclic."
+        },
+        {
+          "number": 2,
+          "problem": "Let $a,b,c,d$ be four positive real numbers such that $abc+abd+acd+bcd=1$. Determine all possible values of\n$$(ab+cd)(ac+bd)(ad+bc).$$"
+        },
+        {
+          "number": 3,
+          "problem": "For any pair of coprime positive integers $a$ and $b$, let $f(a,b)$ be the smallest non-negative integer $k$ such that $b$ divides $a^k+1$. Prove that if $a$ and $b$ are coprime positive integers satisfying\n$$f(a,b)-f(b,a)=2,$$\nthen there exists a prime number $p$ such that $p^2$ divides $a+b$."
+        },
+        {
+          "number": 4,
+          "problem": "Find all positive integers $n$ for which the numbers $1,2,\\ldots,n^2$ can be written in the cells of an $n\\times n$ grid, one number in each cell and each number exactly once, so that:\n• for every positive integer $i$ with $1\\le i<n^2$, the numbers $i$ and $i+1$ are neighbours (two numbers are neighbours if and only if their cells share a common edge);\n• no two of the $n$ numbers $1^2,2^2,\\ldots,n^2$ lie in the same row or in the same column."
+        },
+        {
+          "number": 5,
+          "problem": "Two fixed circles $\\omega$ and $\\Omega$ in the plane meet at two distinct points $A$ and $B$. Let $C$ and $D$ be two fixed points on $\\omega$. Let $P$ be a variable point on $\\omega$, and let the line $PA$ meet $\\Omega$ again at $Q$. Prove that there exists a fixed circle $\\mathcal C$ such that, whatever the position of $P$, the second intersection point $R$ (other than $Q$) of the circumcircles of the triangles $QPC$ and $QBD$ lies on $\\mathcal C$."
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Let $a_1\\le a_2\\le\\cdots\\le a_n$ and $b_1\\le b_2\\le\\cdots\\le b_n$ be real numbers. Prove that for every permutation $\\pi_1,\\pi_2,\\ldots,\\pi_n$ of $1,2,\\ldots,n$\n$$\\sum_{i=1}^n\\min(a_{\\pi_i},b_i)\\le\\sum_{i=1}^n\\min(a_i,b_i).$$\nNote: $\\min(x,y)$ denotes the smaller of the two numbers $x$ and $y$."
+        },
+        {
+          "number": 2,
+          "problem": "The triangle $ABC$ is inscribed in the circle $\\omega$ with centre $O$, and $M$ is the midpoint of the side $BC$. Let $P$ be the midpoint of the chord of $\\omega$ that passes through $M$ and is perpendicular to $AC$, and let $Q$ be the midpoint of the chord of $\\omega$ that passes through $M$ and is perpendicular to $AB$. Prove that $PQ\\perp AO$."
+        },
+        {
+          "number": 3,
+          "problem": "A baby colours 2026 cells of a $2026\\times2026$ sheet of grid paper, each of them red or yellow, so that no two cells of the same colour lie in the same row or in the same column. The father passes by and notices that the uncoloured part of the sheet can be cut along the grid lines into $1\\times2$ pieces. Prove that the largest possible number of red cells is 2025."
+        },
+        {
+          "number": 4,
+          "problem": "Let $\\mathbb Q_{(0,1)}$ denote the set of all rational numbers $q$ with $0<q<1$. At the beginning of a game, a fraction $\\frac ba\\in\\mathbb Q_{(0,1)}$ in lowest terms is written on the blackboard. In each round, for the fraction $\\frac ba$ (in lowest terms) on the blackboard, Ching-Ching first looks for the smallest positive integer $k$ such that $a+k$ and $b+k$ are not coprime:\n• if there is no such $k$, the game ends in that round;\n• otherwise, she replaces the fraction $\\frac ba$ on the blackboard by $\\frac{b+k}{a+k}$ written in lowest terms, and the next round begins.\nFor every $q\\in\\mathbb Q_{(0,1)}$, find all initial numbers $\\frac ba\\in\\mathbb Q_{(0,1)}$ for which the game ends after finitely many rounds with exactly the number $q$ on the blackboard."
+        },
+        {
+          "number": 5,
+          "problem": "Let $S$ be a set of 100 points in the $xy$-coordinate plane. Let $N$ be the number of rectangles whose four vertices are distinct points of $S$ and whose sides are parallel to the coordinate axes. Find the largest possible value of $N$."
         }
       ]
     }
