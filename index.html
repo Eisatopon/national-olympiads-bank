@@ -1042,6 +1042,9 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .provenance p, .provenance ul { margin-top: 8px; }
 .ps-src { font: 9pt var(--sans); color: #555; margin-bottom: 4px; }
 .p-credit { margin: 0 0 10px; font: .74rem/1.45 var(--sans); color: var(--muted); }
+.p-reuse { margin: 10px 0 0; font: .8rem/1.5 var(--sans); color: var(--muted); }
+.p-reuse:empty { display: none; }
+.p-reuse a { color: var(--f-ink, inherit); }
 .yr-credit { margin-left: auto; font: .72rem/1.4 var(--sans); color: var(--muted); }
 .ps-body .statement { font-size: 12pt; line-height: 1.65; max-width: none; }
 
@@ -1329,7 +1332,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261117-malaysia-omk-estonia-open';
+const DATA_VERSION = '20261117-also-appeared';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3066,6 +3069,30 @@ function dnaHtml(p) {
         <button type="button" class="btn btn-sm" data-related="${esc(p.uid)}">Explore related problems</button>
     </details>`;
 }
+/* "Also appeared in" (17 Nov 2026, idea from MathNet's retrieval task): the same or an adapted statement elsewhere in
+   the bank, found by scripts/build_reuse.py (text 12-grams + formulas) and loaded lazily from metadata/runtime/reuse.json. */
+let reusePairs = null, reuseLabels = {}, reuseLoad = null;
+function reuseLabel(uid) {
+    const [key, year, day, num] = uid.split('.'), c = CBY[key];
+    if (!c) return null;
+    const name = c.merge ? `${CBY[c.merge].name} ${year}, ${c.grade}` : `${c.name} ${year}`;
+    const paper = reuseLabels[uid] || (day !== '0' ? 'Day ' + day : '');
+    return `${c.flag} ${esc(name)}${paper ? ', ' + esc(paper) : ''}, Problem ${esc(num)}`;
+}
+function reuseInner(uid) {
+    const links = (reusePairs?.[uid] || []).map(u => [u, reuseLabel(u)]).filter(x => x[1]);
+    return links.length ? 'Also appeared in: ' + links.map(([u, l]) => `<a href="?p=${encodeURIComponent(u)}">${l}</a>`).join(' · ') : '';
+}
+function fillReuse(root) {
+    if (!reusePairs) return;
+    root.querySelectorAll('[data-reuse]:not([data-reuse-done])').forEach(el => { el.innerHTML = reuseInner(el.dataset.reuse); el.dataset.reuseDone = '1'; });
+}
+function reuseHtml(p) {
+    if (reusePairs === null && !reuseLoad) {
+        reuseLoad = fetch('./metadata/runtime/reuse.json?v=' + DATA_VERSION, {cache: 'no-cache'}).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(d => { reuseLabels = d.labels || {}; reusePairs = d.pairs || {}; fillReuse(document); }).catch(() => { reusePairs = {}; });
+    }
+    return reusePairs ? `<div class="p-reuse" data-reuse="${esc(p.uid)}" data-reuse-done="1">${reuseInner(p.uid)}</div>` : `<div class="p-reuse" data-reuse="${esc(p.uid)}"></div>`;
+}
 function relatedProblems(source, candidates) {
     const sourceConcepts = new Set(problemConcepts(source));
     const dna = reviewedDna(source);
@@ -3201,6 +3228,7 @@ function problemHtml(p) {
             </div>
         </div>
         ${p.textEl ? `<div class="lang-sw" role="group" aria-label="Language of the statement"><button type="button" class="btn btn-sm" data-lang="en">EN</button><button type="button" class="btn btn-sm" data-lang="el" title="Original language">${p.origLang === 'el' || !p.origLang ? 'ΕΛ' : esc(p.origLang.toUpperCase())}</button></div><div class="statement st-en">${bodyHtml(p.text, p)}</div><div class="statement st-el" lang="${esc(p.origLang || 'el')}">${bodyHtml(p.textEl, p)}</div>` : `<div class="statement">${bodyHtml(p.text, p)}</div>`}
+        ${reuseHtml(p)}
         ${provenanceHtml(p)}
         ${dnaHtml(p)}
     </article>`;
