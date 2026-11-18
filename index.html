@@ -330,6 +330,7 @@
     --by10: #5e7d2a; --by10-ink: #384b19; --by10-tint: #eaf1df;
     --by9: #8a4a6b; --by9-ink: #532c40; --by9-tint: #f4e6ed;
     --eeo: #4f6d8a; --eeo-ink: #2f4153; --eeo-tint: #e5ecf3;
+    --eeh: #6b5b3e; --eeh-ink: #3f3625; --eeh-tint: #efe9dd;
     --chp: #6a5a8c; --chp-ink: #3f3555; --chp-tint: #ece8f3;
     --uak: #7a5a2f; --uak-ink: #49351b; --uak-tint: #f2ebe0;
     --myo: #2f7a55; --myo-ink: #1b4932; --myo-tint: #e1f1e8;
@@ -641,6 +642,7 @@
 .f-by10 { --f: var(--by10); --f-ink: var(--by10-ink); --f-tint: var(--by10-tint); }
 .f-by9 { --f: var(--by9); --f-ink: var(--by9-ink); --f-tint: var(--by9-tint); }
 .f-eeo { --f: var(--eeo); --f-ink: var(--eeo-ink); --f-tint: var(--eeo-tint); }
+.f-eeh { --f: var(--eeh); --f-ink: var(--eeh-ink); --f-tint: var(--eeh-tint); }
 .f-chp { --f: var(--chp); --f-ink: var(--chp-ink); --f-tint: var(--chp-tint); }
 .f-uak { --f: var(--uak); --f-ink: var(--uak-ink); --f-tint: var(--uak-tint); }
 .f-myo { --f: var(--myo); --f-ink: var(--myo-ink); --f-tint: var(--myo-tint); }
@@ -1334,7 +1336,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261118-estonia-info';
+const DATA_VERSION = '20261118-estonia-1954-1969';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1578,6 +1580,7 @@ REGION_OF.fi1 = 'europe';
 REGION_OF.by10 = 'europe';
 REGION_OF.by9 = 'europe';
 REGION_OF.eeo = 'europe';
+REGION_OF.eeh = 'europe';
 REGION_OF.chp = 'europe';
 REGION_OF.uak = 'europe';
 REGION_OF.myo = 'asia';
@@ -1709,6 +1712,7 @@ const COUNTRIES = [
     { key: 'by10', name: 'Belarus grade 10', flag: '🇧🇾', file: 'Belarus-g10-problems.json', kind: 'years', full: "Belarusian Mathematical Olympiad, final stage, Grade 10" },
     { key: 'by9', name: 'Belarus grade 9', flag: '🇧🇾', file: 'Belarus-g9-problems.json', kind: 'years', full: "Belarusian Mathematical Olympiad, final stage, Grade 9" },
     { key: 'eeo', name: 'Estonia Open Contest', flag: '🇪🇪', file: 'Estonia-open-problems.json', kind: 'years', full: "Estonian Open Mathematics Contest (Lahtine matemaatikavõistlus), senior group" },
+    { key: 'eeh', name: 'Estonia 1954–1969', flag: '🇪🇪', file: 'Estonia-early-problems.json', kind: 'years', full: "Estonian olympiad in exact sciences, mathematics, 1954–1969 (from the 1970 book of Mitt, Prinits and Velsker)" },
     { key: 'chp', name: 'Switzerland preliminary round', flag: '🇨🇭', file: 'Swiss-preliminary-problems.json', kind: 'years', full: "Swiss Mathematical Olympiad, preliminary round (Vorrunde 2004–2020, Second Round from 2021)" },
     { key: 'uak', name: 'Ukraine Kyiv City MO', flag: '🇺🇦', file: 'Ukraine-kyiv-city-problems.json', kind: 'years', full: "Kyiv City Mathematical Olympiad, grades 9–11" },
     { key: 'myo', name: 'Malaysia OMK', flag: '🇲🇾', file: 'Malaysia-omk-problems.json', kind: 'years', full: "Malaysian National Mathematical Olympiad (OMK), final round, senior (Sulung) category" },
