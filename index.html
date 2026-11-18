@@ -380,6 +380,10 @@
     --tre: #9e2a4f; --tre-ink: #5f1830; --tre-tint: #f7e6ec;
     --hmic: #5b3f8c; --hmic-ink: #372556; --hmic-tint: #ece6f5;
     --bwsl: #2a6f97; --bwsl-ink: #19435b; --bwsl-tint: #e3eff6;
+    --uar: #1c7391; --uar-ink: #114557; --uar-tint: #e0eff5;
+    --uar10: #3e6d31; --uar10-ink: #25421d; --uar10-tint: #e6f0e3;
+    --uar9: #8c4d27; --uar9-ink: #542e17; --uar9-tint: #f4e9e2;
+    --uar8: #6b488f; --uar8-ink: #402b56; --uar8-tint: #eee7f5;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -695,6 +699,10 @@
 .f-tre { --f: var(--tre); --f-ink: var(--tre-ink); --f-tint: var(--tre-tint); }
 .f-hmic { --f: var(--hmic); --f-ink: var(--hmic-ink); --f-tint: var(--hmic-tint); }
 .f-bwsl { --f: var(--bwsl); --f-ink: var(--bwsl-ink); --f-tint: var(--bwsl-tint); }
+.f-uar { --f: var(--uar); --f-ink: var(--uar-ink); --f-tint: var(--uar-tint); }
+.f-uar10 { --f: var(--uar10); --f-ink: var(--uar10-ink); --f-tint: var(--uar10-tint); }
+.f-uar9 { --f: var(--uar9); --f-ink: var(--uar9-ink); --f-tint: var(--uar9-tint); }
+.f-uar8 { --f: var(--uar8); --f-ink: var(--uar8-ink); --f-tint: var(--uar8-tint); }
 
 /* ==========================================================
    Base
@@ -1342,7 +1350,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261118-belarus-tst-aops';
+const DATA_VERSION = '20261118-ukraine-regional';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1634,6 +1642,10 @@ REGION_OF.ita = 'americas';
 REGION_OF.bacfr = 'europe';
 REGION_OF.itmat = 'europe';
 REGION_OF.esevau = 'europe';
+REGION_OF.uar = 'europe';
+REGION_OF.uar10 = 'europe';
+REGION_OF.uar9 = 'europe';
+REGION_OF.uar8 = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1951,6 +1963,10 @@ const COUNTRIES = [
     { key: 'bwsl', name: 'Baltic Way Shortlist', flag: '🌊', file: 'Baltic-way-shortlist-problems.json', kind: 'years', scope: 'regional', full: "Baltic Way Mathematical Team Contest, shortlist", group: 'BW', groupName: 'Baltic Way', sub: 'Shortlist' },
     { key: 'baj', name: 'Bosnia and Herzegovina Junior MO', flag: '🇧🇦', file: 'Bosnia-junior-problems.json', kind: 'years', full: "Junior Mathematical Olympiad of Bosnia and Herzegovina" },
     { key: 'trj2', name: 'Turkey Junior Second Round', flag: '🇹🇷', file: 'Turkey-junior-second-round-problems.json', kind: 'years', full: "Turkey National Middle School Mathematical Olympiad, Second Round (TÜBİTAK)" },
+    { key: 'uar', name: 'Ukraine Regional grade 11', flag: '🇺🇦', file: 'Ukraine-regional-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 11" },
+    { key: 'uar10', name: 'Ukraine Regional grade 10', flag: '🇺🇦', file: 'Ukraine-regional-g10-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 10" },
+    { key: 'uar9', name: 'Ukraine Regional grade 9', flag: '🇺🇦', file: 'Ukraine-regional-g9-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 9" },
+    { key: 'uar8', name: 'Ukraine Regional grade 8', flag: '🇺🇦', file: 'Ukraine-regional-g8-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 8" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
@@ -1969,6 +1985,7 @@ const tabRows = () => COUNTRIES.filter(c => scopeOf(c) === state.tab);
    each part gets `merge` (the merged key) and `grade` (its label on the cards). */
 const MERGES = {
     uafin: { country: 'Ukraine', sub: 'Final round', full: 'Ukrainian Mathematical Olympiad, final (IV stage), grades 9–11', parts: [['ua', 'Grade 11'], ['ua10', 'Grade 10'], ['ua9', 'Grade 9']] },
+    uarfin: { country: 'Ukraine', sub: 'Regional stage', full: 'Ukrainian Mathematical Olympiad, III (regional) stage, grades 8–11', parts: [['uar', 'Grade 11'], ['uar10', 'Grade 10'], ['uar9', 'Grade 9'], ['uar8', 'Grade 8']] },
     rufin: { country: 'Russia', sub: 'All-Russian final', full: 'All-Russian Olympiad, final stage, grades 9–11', parts: [['ru', 'Grade 11'], ['rug10', 'Grade 10'], ['rug9', 'Grade 9']] },
     rurfin: { country: 'Russia', sub: 'Regional stage', full: 'All-Russian Olympiad, regional stage, grades 9–11', parts: [['rur', 'Grade 11'], ['rur10', 'Grade 10'], ['rur9', 'Grade 9']] },
     rumfin: { country: 'Russia', sub: 'Moscow MO', full: 'Moscow Mathematical Olympiad, grades 8–11', parts: [['rum', 'Oldest grade'], ['rum10', 'Grade 10'], ['rum9', 'Grade 9'], ['rum8', 'Grade 8']] },
