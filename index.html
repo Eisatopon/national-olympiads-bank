@@ -384,6 +384,7 @@
     --uar10: #3e6d31; --uar10-ink: #25421d; --uar10-tint: #e6f0e3;
     --uar9: #8c4d27; --uar9-ink: #542e17; --uar9-tint: #f4e9e2;
     --uar8: #6b488f; --uar8-ink: #402b56; --uar8-tint: #eee7f5;
+    --byh: #75603a; --byh-ink: #463a23; --byh-tint: #f0eadd;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -703,6 +704,7 @@
 .f-uar10 { --f: var(--uar10); --f-ink: var(--uar10-ink); --f-tint: var(--uar10-tint); }
 .f-uar9 { --f: var(--uar9); --f-ink: var(--uar9-ink); --f-tint: var(--uar9-tint); }
 .f-uar8 { --f: var(--uar8); --f-ink: var(--uar8-ink); --f-tint: var(--uar8-tint); }
+.f-byh { --f: var(--byh); --f-ink: var(--byh-ink); --f-tint: var(--byh-tint); }
 
 /* ==========================================================
    Base
@@ -1350,7 +1352,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261118-ukraine-regional';
+const DATA_VERSION = '20261119-belarus-1951-1959';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1646,6 +1648,7 @@ REGION_OF.uar = 'europe';
 REGION_OF.uar10 = 'europe';
 REGION_OF.uar9 = 'europe';
 REGION_OF.uar8 = 'europe';
+REGION_OF.byh = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1967,6 +1970,7 @@ const COUNTRIES = [
     { key: 'uar10', name: 'Ukraine Regional grade 10', flag: '🇺🇦', file: 'Ukraine-regional-g10-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 10" },
     { key: 'uar9', name: 'Ukraine Regional grade 9', flag: '🇺🇦', file: 'Ukraine-regional-g9-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 9" },
     { key: 'uar8', name: 'Ukraine Regional grade 8', flag: '🇺🇦', file: 'Ukraine-regional-g8-problems.json', kind: 'years', full: "Ukrainian Mathematical Olympiad, III (regional) stage, grade 8" },
+    { key: 'byh', name: 'Belarus 1951–1959', flag: '🇧🇾', file: 'Belarus-early-problems.json', kind: 'years', full: "Belarusian republican school olympiad, grade X, 1951–1959 (from the 1962 book of Shustef, Feldman and Gurevich)" },
     { key: 'um', name: 'USA USAMO',  flag: '🇺🇸', file: 'Usa-usamo-problems.json',        kind: 'years' },
     { key: 'us', name: 'USA TSTST',  flag: '🇺🇸', file: 'Usa-tstst-problems.json',        kind: 'usa' }
 ];
