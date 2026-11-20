@@ -337,6 +337,7 @@
     --myo: #2f7a55; --myo-ink: #1b4932; --myo-tint: #e1f1e8;
     --mm: #b8860b; --mm-ink: #6b4e06; --mm-tint: #f7efd8;
     --mmt: #9a5b13; --mmt-ink: #5c360b; --mmt-tint: #f4e8d9;
+    --mmo: #6e5a9a; --mmo-ink: #41355e; --mmo-tint: #ebe6f4;
     --nzt: #4b5d8f; --nzt-ink: #28345a; --nzt-tint: #e5e9f4;
     --nz1: #3f7a8c; --nz1-ink: #224652; --nz1-tint: #e2eff3;
     --cu: #1f5aa6; --cu-ink: #0f3266; --cu-tint: #e1ebf7;
@@ -658,6 +659,7 @@
 .f-myo { --f: var(--myo); --f-ink: var(--myo-ink); --f-tint: var(--myo-tint); }
 .f-mm { --f: var(--mm); --f-ink: var(--mm-ink); --f-tint: var(--mm-tint); }
 .f-mmt { --f: var(--mmt); --f-ink: var(--mmt-ink); --f-tint: var(--mmt-tint); }
+.f-mmo { --f: var(--mmo); --f-ink: var(--mmo-ink); --f-tint: var(--mmo-tint); }
 .f-nzt { --f: var(--nzt); --f-ink: var(--nzt-ink); --f-tint: var(--nzt-tint); }
 .f-nz1 { --f: var(--nz1); --f-ink: var(--nz1-ink); --f-tint: var(--nz1-tint); }
 .f-cu { --f: var(--cu); --f-ink: var(--cu-ink); --f-tint: var(--cu-tint); }
@@ -1354,7 +1356,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261119-lomonosov-fix';
+const DATA_VERSION = '20261120-myanmar-mmo';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1605,6 +1607,7 @@ REGION_OF.uak = 'europe';
 REGION_OF.myo = 'asia';
 REGION_OF.mm = 'asia';
 REGION_OF.mmt = 'asia';
+REGION_OF.mmo = 'asia';
 REGION_OF.nzt = 'oceania';
 REGION_OF.nz1 = 'oceania';
 REGION_OF.cu = 'americas';
@@ -1745,6 +1748,7 @@ const COUNTRIES = [
     { key: 'myo', name: 'Malaysia OMK', flag: '🇲🇾', file: 'Malaysia-omk-problems.json', kind: 'years', full: "Malaysian National Mathematical Olympiad (OMK), final round, senior (Sulung) category" },
     { key: 'mm', name: 'Myanmar MOMC', flag: '🇲🇲', file: 'Myanmar-momc-problems.json', kind: 'years', full: "Myanmar Open Mathematics Competition, Senior II (Mathematical Society of Myanmar)" },
     { key: 'mmt', name: 'Myanmar TST', flag: '🇲🇲', file: 'Myanmar-tst-problems.json', kind: 'years', full: "Myanmar Team Selection Test (Mathematical Society of Myanmar)" },
+    { key: 'mmo', name: 'Myanmar MO', flag: '🇲🇲', file: 'Myanmar-mmo-problems.json', kind: 'years', full: "Myanmar Mathematical Olympiad, Tenth Standard (Grade 11), Regional and National Rounds (Mathematical Society of Myanmar)" },
     { key: 'nlj', name: 'Netherlands Junior MO', flag: '🇳🇱', file: 'Netherlands-jwo-problems.json', kind: 'years', full: "Dutch Junior Mathematical Olympiad (Junior Wiskunde Olympiade), final" },
     { key: 'nlt', name: 'Netherlands TST', flag: '🇳🇱', file: 'Netherlands-tst-problems.json', kind: 'years' },
     { key: 'nlm', name: 'Netherlands March selection test', flag: '🇳🇱', file: 'Netherlands-march-problems.json', kind: 'years', full: "Dutch Mathematical Olympiad, March selection test (first IMO selection stage)" },
