@@ -1356,7 +1356,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261120-myanmar-mmo';
+const DATA_VERSION = '20261120-share-links';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -3979,7 +3979,7 @@ function showUpdated() {
 /* ---------- Share one problem ----------
    Links go through the share worker (workers/share): its page carries the problem's title and statement
    for link previews and sends people on to ?p=<uid>. */
-const SHARE_URL = 'https://pythagoras.sokkorom.workers.dev/p/';
+const SHARE_URL = 'https://pythagoras.eisatopon.gr/p/';
 function problemLabel(p) {
     const c = CBY[p.country];
     return `${c.flag} ${c.merge ? CBY[c.merge].name : c.name} ${p.year}${c.merge ? `, ${c.grade}` : ''}${p.paperLabel ? `${c.merge ? ' ·' : ','} ${p.paperLabel}` : p.day ? `${c.merge ? ' ·' : ','} Day ${p.day}` : ''} – Problem ${p.num}`;
@@ -4327,7 +4327,7 @@ document.addEventListener('click', e => {
         return;
     }
     if (t.hasAttribute('data-potd-share') && dailyPool) {
-        const r = potdRecord(t.dataset.potdShare), url = 'https://pythagoras.sokkorom.workers.dev/p/' + encodeURIComponent(r.uid);
+        const r = potdRecord(t.dataset.potdShare), url = 'https://pythagoras.eisatopon.gr/p/' + encodeURIComponent(r.uid);
         const label = `${t.dataset.potdShare === 'junior' ? 'Junior problem' : 'Problem'} of the day: ${CBY[r.country].name} ${r.year}, Problem ${r.num}`;
         if (navigator.share) navigator.share({title: label, text: label, url}).catch(() => {});
         else copyText(url, 'Link to the problem of the day copied.');
