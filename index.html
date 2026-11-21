@@ -388,6 +388,7 @@
     --byh: #75603a; --byh-ink: #463a23; --byh-tint: #f0eadd;
     --lomo: #7b3b5a; --lomo-ink: #4a2336; --lomo-tint: #f3e6ec;
     --bgw: #3d6b8c; --bgw-ink: #22405a; --bgw-tint: #e3edf5;
+    --bgs: #5b7f2e; --bgs-ink: #364c1b; --bgs-tint: #ebf2e1;
 }
 .f-gr { --f: var(--gr); --f-ink: var(--gr-ink); --f-tint: var(--gr-tint); }
 .f-ar { --f: var(--ar); --f-ink: var(--ar-ink); --f-tint: var(--ar-tint); }
@@ -711,6 +712,7 @@
 .f-byh { --f: var(--byh); --f-ink: var(--byh-ink); --f-tint: var(--byh-tint); }
 .f-lomo { --f: var(--lomo); --f-ink: var(--lomo-ink); --f-tint: var(--lomo-tint); }
 .f-bgw { --f: var(--bgw); --f-ink: var(--bgw-ink); --f-tint: var(--bgw-tint); }
+.f-bgs { --f: var(--bgs); --f-ink: var(--bgs-ink); --f-tint: var(--bgs-tint); }
 
 /* ==========================================================
    Base
@@ -1362,7 +1364,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261121-bulgaria-winter';
+const DATA_VERSION = '20261121-bulgaria-spring';
 const FIRST = 1894, LAST = 2026;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1662,6 +1664,7 @@ REGION_OF.uar8 = 'europe';
 REGION_OF.byh = 'europe';
 REGION_OF.lomo = 'europe';
 REGION_OF.bgw = 'europe';
+REGION_OF.bgs = 'europe';
 const regionOf = key => REGION_OF[key] || 'other';
 const PAGE = 20;
 const STORAGE_KEY = 'eisatopon-olympiads:set:v1';
@@ -1843,6 +1846,7 @@ const COUNTRIES = [
     { key: 'byt', name: 'Belarus TST', flag: '🇧🇾', file: 'Belarus-tst-problems.json', kind: 'years', full: "Belarus Team Selection Tests (IMO and RMM selection)" },
     { key: 'bgt', name: 'Bulgaria TST', flag: '🇧🇬', file: 'Bulgaria-tst-problems.json', kind: 'years' },
     { key: 'bgw', name: 'Bulgaria Winter MC', flag: '🇧🇬', file: 'Bulgaria-winter-problems.json', kind: 'years', full: 'Bulgarian Winter Mathematical Competition, top grade' },
+    { key: 'bgs', name: 'Bulgaria Spring MC', flag: '🇧🇬', file: 'Bulgaria-spring-problems.json', kind: 'years', full: 'Bulgarian Spring Mathematical Competition, top grade' },
     { key: 'ba', name: 'Bosnia and Herzegovina TST', flag: '🇧🇦', file: 'Bosnia-tst-problems.json', kind: 'years' },
     { key: 'pe', name: 'Peru TST', flag: '🇵🇪', file: 'Peru-tst-problems.json', kind: 'years' },
     { key: 'md', name: 'Moldova TST', flag: '🇲🇩', file: 'Moldova-tst-problems.json', kind: 'years' },
@@ -3223,7 +3227,7 @@ const ORG_OF = (() => {
     set('duke', 'the Duke Math Meet');
     set('umd', 'the University of Maryland High School Mathematics Competition');
     set('lomo', 'Lomonosov Moscow State University');
-    set('bgw', 'the Union of Bulgarian Mathematicians');
+    set('bgw bgs', 'the Union of Bulgarian Mathematicians');
     set('elmo', 'ELMO'); set('usemo', 'USEMO');
     set('imo isl', 'the International Mathematical Olympiad'); set('egmo', 'EGMO'); set('apmo', 'APMO');
     set('ca caq caco cajm', 'the Canadian Mathematical Society'); set('caeu', 'the CEMC, University of Waterloo');
