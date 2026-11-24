@@ -334,6 +334,7 @@
     --eeh: #6b5b3e; --eeh-ink: #3f3625; --eeh-tint: #efe9dd;
     --chp: #6a5a8c; --chp-ink: #3f3555; --chp-tint: #ece8f3;
     --uak: #7a5a2f; --uak-ink: #49351b; --uak-tint: #f2ebe0;
+    --uaif: #5b6b2e; --uaif-ink: #36401b; --uaif-tint: #eef1e1;
     --myo: #2f7a55; --myo-ink: #1b4932; --myo-tint: #e1f1e8;
     --mm: #b8860b; --mm-ink: #6b4e06; --mm-tint: #f7efd8;
     --mmt: #9a5b13; --mmt-ink: #5c360b; --mmt-tint: #f4e8d9;
@@ -661,6 +662,7 @@
 .f-eeh { --f: var(--eeh); --f-ink: var(--eeh-ink); --f-tint: var(--eeh-tint); }
 .f-chp { --f: var(--chp); --f-ink: var(--chp-ink); --f-tint: var(--chp-tint); }
 .f-uak { --f: var(--uak); --f-ink: var(--uak-ink); --f-tint: var(--uak-tint); }
+.f-uaif { --f: var(--uaif); --f-ink: var(--uaif-ink); --f-tint: var(--uaif-tint); }
 .f-myo { --f: var(--myo); --f-ink: var(--myo-ink); --f-tint: var(--myo-tint); }
 .f-mm { --f: var(--mm); --f-ink: var(--mm-ink); --f-tint: var(--mm-tint); }
 .f-mmt { --f: var(--mmt); --f-ink: var(--mmt-ink); --f-tint: var(--mmt-tint); }
@@ -1369,7 +1371,7 @@ dialog p { color: var(--muted); font-size: .92rem; }
    ========================================================== */
 const BASE = 'https://raw.githubusercontent.com/Eisatopon/national-olympiads-bank/main/';
 // Bump on every data change so browsers never mix old and new files.
-const DATA_VERSION = '20261124-peru-onem-levels';
+const DATA_VERSION = '20261124-ukraine-ivano-frankivsk';
 const FIRST = 1894, LAST = 2027;
 const REGIONS = [['europe', 'Europe'], ['asia', 'Asia'], ['americas', 'Americas'], ['africa', 'Africa'], ['oceania', 'Oceania'], ['world', 'World'], ['other', 'Other']];
 const REGION_OF = {
@@ -1617,6 +1619,7 @@ REGION_OF.eeo = 'europe';
 REGION_OF.eeh = 'europe';
 REGION_OF.chp = 'europe';
 REGION_OF.uak = 'europe';
+REGION_OF.uaif = 'europe';
 REGION_OF.myo = 'asia';
 REGION_OF.mm = 'asia';
 REGION_OF.mmt = 'asia';
@@ -1763,6 +1766,7 @@ const COUNTRIES = [
     { key: 'eeh', name: 'Estonia 1954–1969', flag: '🇪🇪', file: 'Estonia-early-problems.json', kind: 'years', full: "Estonian olympiad in exact sciences, mathematics, 1954–1969 (from the 1970 book of Mitt, Prinits and Velsker)" },
     { key: 'chp', name: 'Switzerland preliminary round', flag: '🇨🇭', file: 'Swiss-preliminary-problems.json', kind: 'years', full: "Swiss Mathematical Olympiad, preliminary round (Vorrunde 2004–2020, Second Round from 2021)" },
     { key: 'uak', name: 'Ukraine Kyiv City MO', flag: '🇺🇦', file: 'Ukraine-kyiv-city-problems.json', kind: 'years', full: "Kyiv City Mathematical Olympiad, grades 9–11" },
+    { key: 'uaif', name: 'Ukraine Ivano-Frankivsk regional', flag: '🇺🇦', file: 'Ukraine-ivano-frankivsk-problems.json', kind: 'years', full: "Ivano-Frankivsk regional (III stage) Mathematical Olympiad, grades 8–11" },
     { key: 'myo', name: 'Malaysia OMK', flag: '🇲🇾', file: 'Malaysia-omk-problems.json', kind: 'years', full: "Malaysian National Mathematical Olympiad (OMK), final round, senior (Sulung) category" },
     { key: 'mm', name: 'Myanmar MOMC', flag: '🇲🇲', file: 'Myanmar-momc-problems.json', kind: 'years', full: "Myanmar Open Mathematics Competition, Senior II (Mathematical Society of Myanmar)" },
     { key: 'mmt', name: 'Myanmar TST', flag: '🇲🇲', file: 'Myanmar-tst-problems.json', kind: 'years', full: "Myanmar Team Selection Test (Mathematical Society of Myanmar)" },
