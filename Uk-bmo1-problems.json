@@ -1566,6 +1566,35 @@
           "problem": "There are 1000 lily pads on a pond arranged in a circle and labelled $1, 2, \\dots, 1000$ in order. (The first four lily pads may also be described using the labels 1001, 1002, 1003 and 1004, respectively.) The first $n$ lily pads are each occupied by a frog with the remaining lily pads not occupied. Each minute, exactly one of the frogs makes a move. Suppose the frog is on lily pad $k$. That frog may either (i) swim to lily pad $k+4$ or $k-4$, provided that it is not occupied; or (ii) jump to lily pad $k+3$ or $k-3$, provided that this lily pad is not occupied and the two lily pads jumped over are both occupied. When this happens, the two frogs that were jumped over dive into the pond and don't participate in any further moves. For which values of $n$ is it possible, by a sequence of moves, to end with exactly one frog remaining on the lily pads?"
         }
       ]
+    },
+    {
+      "year": 2027,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "Each of the integers $1, 2, 3, \\ldots, 26$ is coloured either red or blue, and at least two of them are red. The colouring is called snug if the difference between the largest red number and the smallest red number is equal to the number of red numbers.\n\nDetermine, with proof, the number of snug colourings."
+        },
+        {
+          "number": 2,
+          "problem": "Let $m$ and $n$ be positive integers with $m<n$. Henry has a secret list of $n$ non-zero real numbers $a_1, a_2, \\ldots, a_n$, each of which may be positive or negative. George knows $m$ and $n$, but not the list of numbers. George may choose any $m$ of the $n$ positions in the list, and Henry will then tell him the product of the $m$ numbers in those positions. George may do this as many times as he likes.\n\nDetermine, with proof, all pairs $(m,n)$ for which George can be certain to work out which number is in each position of the list, whatever numbers Henry has chosen."
+        },
+        {
+          "number": 3,
+          "problem": "Two circles $\\Gamma$ and $\\Lambda$ lie inside a circle $\\Omega$ and do not meet each other. The circle $\\Gamma$ touches $\\Omega$ at $A$, and the circle $\\Lambda$ touches $\\Omega$ at $B$. A line touches $\\Gamma$ at $D$ and touches $\\Lambda$ at $C$, and the circles $\\Gamma$ and $\\Lambda$ lie on the same side of this line. The centre of $\\Omega$ lies strictly inside quadrilateral $ABCD$.\n\nProve that $ABCD$ is a cyclic quadrilateral."
+        },
+        {
+          "number": 4,
+          "problem": "A sequence $x_1, x_2, x_3, \\ldots$ of real numbers is called Fibonacci-like if $x_{n+2}=x_{n+1}+x_n$ for every positive integer $n$.\n\nKaty chooses three Fibonacci-like sequences $a_1, a_2, \\ldots$ and $b_1, b_2, \\ldots$ and $c_1, c_2, \\ldots$ and, for each positive integer $n$, compares the three numbers $a_n$, $b_n$ and $c_n$. She then writes down a three-letter string made of the letters $a$, $b$ and $c$ in increasing order of these three numbers. For example, if $a_1<b_1<c_1$ then she writes $abc$ for $n=1$, and if $a_2<c_2<b_2$ then she writes $acb$ for $n=2$. If two or more of $a_n$, $b_n$ and $c_n$ are equal, then she writes nothing for that value of $n$.\n\nDetermine, with proof, the largest possible number of different strings that Katy could write down."
+        },
+        {
+          "number": 5,
+          "problem": "A tower has infinitely many floors, numbered $1, 2, 3, \\ldots$ from the bottom. Sam wants to get down to floor $1$. When he is on floor $n\\ge2$, a move consists of choosing a positive factor $d$ of $n$ with $d<n$ and going down $d$ floors, to floor $n-d$.\n\nFor each integer $n\\ge2$, let $t(n)$ be the smallest number of moves in which Sam can get from floor $n$ to floor $1$. We say that floor $n$ is special if $t(m)\\ge t(n)$ for every integer $m>n$. For example, floor $3$ is special, but floor $7$ is not, since $t(7)=4$ and $t(8)=3$.\n\nDetermine all integers $n\\ge2$ for which floor $n$ is special."
+        },
+        {
+          "number": 6,
+          "problem": "Four different points are marked in the plane. An operation consists of choosing one of the four points and a line passing through two of the other three points (the two points may be in the same position), and replacing the chosen point by its reflection in that line. We say that a point is close to a line if the perpendicular distance from the point to the line is less than $\\frac{1}{2026}$.\n\nProve that it is always possible to carry out a finite sequence of operations after which at least one of the four points is close to a line passing through two of the others."
+        }
+      ]
     }
   ]
 }
