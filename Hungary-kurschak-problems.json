@@ -91,7 +91,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "A circle $C$ touches three pairwise disjoint circles whose centres are collinear and none of which contains any of the others. Show that its radius must be larger than the radius of the middle one of the three circles."
+          "problem": "Three circles are given, no two of which have a common interior point, and whose centres are collinear. Prove that if a fourth circle touches all three of them, then its radius cannot be the smallest of the four radii."
         },
         {
           "number": 2,
@@ -125,7 +125,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "$ABCD$ is a convex quadrilateral with $AB+BD=AC+CD$. Prove that $AB<AC$."
+          "problem": "$ABCD$ is a convex quadrilateral in which $AB+BD$ is not greater than $AC+CD$. Prove that the side $AB$ is shorter than the diagonal $AC$."
         },
         {
           "number": 2,
@@ -214,7 +214,7 @@
         },
         {
           "number": 2,
-          "problem": "Let $a_1=1,a_2,a_3,\\dots$ be a sequence of positive integers such that $$a_k<1+a_1+a_2+\\dots+a_{k-1}$$ for all $k>1$. Prove that every positive integer can be expressed as a sum of distinct terms $a_i$."
+          "problem": "Let $a_1=1, a_2, a_3,\\dots$ be an infinite sequence of positive integers such that $$a_k\\le 1+a_1+a_2+\\dots+a_{k-1}$$ for every $k>1$. Prove that every positive integer can be written as a sum of numbers selected from this sequence (or occurs in the sequence itself)."
         },
         {
           "number": 3,
@@ -278,7 +278,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "$ABC$ is an equilateral triangle. $D$ and $D'$ are points on opposite sides of the plane $ABC$ such that the two tetrahedra $ABCD$ and $ABCD'$ are congruent (but not necessarily with the vertices in that order). If the polyhedron with the five vertices $A,B,C,D,D'$ is such that the angle between any two adjacent faces is the same, find $DD'/AB$."
+          "problem": "Two congruent regular triangular pyramids are glued together along their bases. All the dihedral angles of the resulting six-faced solid are equal. Determine the ratio of the distance between the two vertices of degree three (the two apexes) to the distance between two vertices of degree four (two vertices of the common base)."
         },
         {
           "number": 2,
@@ -371,7 +371,7 @@
         },
         {
           "number": 3,
-          "problem": "We are given $64$ cubes, each with five white faces and one black face. One cube is placed on each square of a chessboard, with its edges parallel to the sides of the board. We are allowed to rotate a complete row of cubes about the axis of symmetry running through the cubes, or to rotate a complete column of cubes about the axis of symmetry running through the cubes. Show that by a sequence of such rotations we can always arrange that each cube has its black face uppermost."
+          "problem": "A cube is placed on every square of a chessboard; the faces of the cubes are congruent to the squares. Every cube has a black face (at least one). We want to achieve that only black faces are on top. Prove that this can be achieved if the cubes may be moved only by rotating a complete row or a complete column of cubes together about its longitudinal axis."
         }
       ]
     },
@@ -652,7 +652,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Any two members of a club with $3n+1$ people play ping-pong, tennis or chess with each other. Everyone has exactly $n$ partners with whom he plays ping-pong, $n$ with whom he plays tennis and $n$ with whom he plays chess. Prove that we can choose three members of the club who play three different games amongst each other."
+          "problem": "Prove that three rays starting from one point can contain three face diagonals of a rectangular box (cuboid) if and only if the rays form pairwise acute angles and the sum of these angles is $180^\\circ$."
         },
         {
           "number": 2,
@@ -661,6 +661,29 @@
         {
           "number": 3,
           "problem": "$A$ and $B$ play the following game: they choose randomly $k$ integers from $\\{1,2,\\dots,100\\}$; if their sum is even, $A$ wins, otherwise $B$ wins. For which values of $k$ do $A$ and $B$ have the same chance of winning?"
+        }
+      ]
+    },
+    {
+      "year": 1987,
+      "problems": [
+        {
+          "number": 1,
+          "problem": "$a,b,c,d$ are distinct positive integers satisfying $a+b=cd$ and $ab=c+d$. Determine all such quadruples.",
+          "problem_orig": "$a,b,c,d$ különböző pozitív egész számok, amelyekre teljesül az $a+b=cd$ és az $ab=c+d$ egyenlőség. Határozzuk meg az összes ilyen számnégyest.",
+          "orig_lang": "hu"
+        },
+        {
+          "number": 2,
+          "problem": "Is there a set of points in space that has a point on every plane, but no plane contains infinitely many points of it?",
+          "problem_orig": "Van-e a térben olyan ponthalmaz, amelynek minden síkon van pontja, de egyetlen síkon sincs végtelen sok pontja?",
+          "orig_lang": "hu"
+        },
+        {
+          "number": 3,
+          "problem": "Any two members of a club with $3n+1$ people play tennis, chess or ping-pong with each other. Each member has exactly $n$ tennis partners, $n$ chess partners and $n$ ping-pong partners. Prove that the club has three members who play all three games among themselves.",
+          "problem_orig": "Egy $3n+1$ tagú társaság bármely két tagja vagy teniszezni, vagy sakkozni, vagy pingpongozni szokott egymással. Mindegyiküknek $n$ tenisz-, $n$ sakk- és $n$ pingpongpartnere van. Bizonyítsuk be, hogy van a társaságban három olyan ember, akik egymás között mind a három játékot játsszák.",
+          "orig_lang": "hu"
         }
       ]
     },
@@ -737,7 +760,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "For $n$ given positive reals, define their strange mean as the sum of their squares divided by their sum. Decide which of the following statements holds for $n=2$:\n\na) The strange mean is never smaller than the third power mean.\n\nb) The strange mean is never larger than the third power mean.\n\nc) The strange mean, depending on the given numbers, can be larger or smaller than the third power mean.\n\nWhich statement is valid for $n=3$?"
+          "problem": "For $n$ given positive numbers, call the quotient of the sum of their squares and their sum their strange mean, and call the cube root of the arithmetic mean of their cubes their third power mean. For $n=2$, decide which of the following statements is true.\n\na) The strange mean is never smaller than the third power mean.\n\nb) The strange mean is never larger than the third power mean.\n\nc) The strange mean, depending on the choice of the numbers, can be larger or smaller than the third power mean.\n\nWhich statement is true for $n=3$?"
         },
         {
           "number": 2,
@@ -775,7 +798,7 @@
         },
         {
           "number": 2,
-          "problem": "Prove that if we erase $n-3$ diagonals of a regular $n$-gon, then we may still choose $n-3$ of the remaining diagonals such that no two of them intersect inside the $n$-gon; but it is possible to erase $n-2$ diagonals such that this statement does not hold."
+          "problem": "Prove that if we remove any $n-3$ of the diagonals of a convex $n$-gon, then among the remaining ones we can always choose $n-3$ that do not intersect each other inside the polygon; but it is possible to remove $n-2$ diagonals so that this is no longer true."
         },
         {
           "number": 3,
@@ -830,7 +853,7 @@
         },
         {
           "number": 3,
-          "problem": "Prove that the vertices of any planar graph can be coloured with $3$ colours such that there is no monochromatic cycle."
+          "problem": "Prove that the edges of any planar graph can be coloured with three colours such that the graph contains no monochromatic cycle."
         }
       ]
     },
@@ -864,7 +887,7 @@
         },
         {
           "number": 3,
-          "problem": "We are given more than $2^k$ integers, where $k\\in\\mathbb{N}$. Prove that we can choose $k+2$ of them such that if some of the selected numbers satisfy $$x_1+x_2+\\dots+x_m=y_1+y_2+\\dots+y_m,$$ where $x_1<\\dots<x_m$ and $y_1<\\dots<y_m$, then $x_i=y_i$ for every $1\\le i\\le m$."
+          "problem": "We are given more than $2^k$ distinct integers, where $k$ is an arbitrary natural number. Prove that we can choose $k+2$ of them such that whenever, for some positive integer $m$ and selected numbers $x_1<x_2<\\dots<x_m$ and $y_1<y_2<\\dots<y_m$, $$x_1+x_2+\\dots+x_m=y_1+y_2+\\dots+y_m,$$ then necessarily $x_i=y_i$ for every $1\\le i\\le m$."
         }
       ]
     },
@@ -949,7 +972,7 @@
         },
         {
           "number": 3,
-          "problem": "We have placed some red and blue points along a circle. The following operations are permitted:\n\n(a) we may add a red point somewhere and switch the colours of its neighbours;\n\n(b) we may remove a red point from somewhere and switch the colours of its neighbours (if there are at least $3$ points on the circle).\n\nInitially there are two blue points on the circle. Using a number of these operations, can we reach a state with exactly two red points?"
+          "problem": "We have placed some blue and red points along a circle. The following operations are permitted:\n\n(a) we may insert a new red point somewhere and change the colours of its two neighbours to the opposite colours;\n\n(b) if there are at least three points and at least one of them is red, we may delete a red point and change the colours of its two neighbours to the opposite colours.\n\nInitially there are two points on the circle, both blue. Can we reach, by applying the operations a number of times, a state where there are again exactly two points, both of them red?"
         }
       ]
     },
@@ -966,7 +989,7 @@
         },
         {
           "number": 3,
-          "problem": "We build a tower of $2\\times 1$ dominoes in the following way. First, we place $55$ dominoes on the table so that they cover a $10\\times 11$ rectangle; this is the first storey of the tower. We then build every new level with $55$ dominoes covering the same $10\\times 11$ rectangle. The tower is called stable if for every non-lattice point of the $10\\times 11$ rectangle we can find a domino that has an inner point above it. What is the smallest number of storeys of a stable tower?"
+          "problem": "We build a tower from $2\\times1$ dominoes in the following way. First we arrange $55$ dominoes so that they cover a $10\\times11$ rectangle; this is the first storey of the tower. On it we build further storeys of $55$ dominoes each, taking care that each storey fits exactly onto the previous one. The resulting structure is called stable if above every interior point of the $10\\times11$ rectangle that is not a lattice point there is an interior point of some domino. What is the smallest number of storeys of a stable tower?"
         }
       ]
     },
@@ -975,7 +998,7 @@
       "problems": [
         {
           "number": 1,
-          "problem": "Is there a set $S\\subset\\mathbb{R}^3$ of $2006$ points such that not all its points are coplanar, no three of the points are collinear, and for any $A,B\\in S$ we can find points $C,D\\in S$ for which $AB\\parallel CD$?"
+          "problem": "Is there a set $H$ of $2006$ points in 3-dimensional space with the following properties:\n\n(a) the points of $H$ are not coplanar,\n\n(b) no three points of $H$ are collinear, and\n\n(c) for the line joining any two points of $H$ there is a different line, parallel to it, joining two points of $H$?"
         },
         {
           "number": 2,
@@ -992,15 +1015,15 @@
       "problems": [
         {
           "number": 1,
-          "problem": "We have placed $n>3$ cards around a circle, face down. In one step we may perform the following operation with three consecutive cards: calling the middle one $B$ and the two at the ends $A$ and $C$, we put card $C$ in the place of $A$, and move $A$ and $B$ to the places originally occupied by $B$ and $C$, respectively; meanwhile, we flip the cards $A$ and $B$. Using a number of these steps, is it possible to move each card to its original place, but face up?"
+          "problem": "We have placed $n>3$ cards around a circle, each with its back side visible. In one step we may perform the following rearrangement with three adjacent cards: one of the two outer cards is put in the place of the other outer card, and the remaining two cards are shifted by one place and turned over. Is it possible, by a sequence of such steps, to achieve that every card is back at its original place and shows its front side?"
         },
         {
           "number": 2,
-          "problem": "Prove that if from any $2007$ consecutive terms of an infinite arithmetic progression of integers starting with $2$ one can choose a term relatively prime to all the $2006$ other terms, then also among any $2008$ consecutive terms there is a term relatively prime to the rest."
+          "problem": "Prove that if, among any $2007$ consecutive terms of a (finite or infinite) arithmetic progression of integers starting with $2$, there is one that is relatively prime to the other $2006$, then among any $2008$ consecutive terms there is also one that is relatively prime to the other $2007$."
         },
         {
           "number": 3,
-          "problem": "Prove that any finite set $H$ of lattice points in the plane has a subset $K$ with the following properties:\n\n• any vertical or horizontal line in the plane cuts $K$ in at most $2$ points;\n\n• any point of $H\\setminus K$ is contained in a segment with endpoints in $K$."
+          "problem": "Prove that from any finite set $H$ of lattice points in the plane one can choose a subset $K$ with the following properties:\n\n(a) any axis-parallel (that is, vertical or horizontal) line of the plane meets $K$ in at most $2$ points,\n\n(b) any point of $H\\setminus K$ lies on an axis-parallel segment whose endpoints belong to $K$."
         }
       ]
     },
@@ -1047,7 +1070,7 @@
         },
         {
           "number": 2,
-          "problem": "Consider a triangle $ABC$ with points $A_1$, $A_2$ on side $BC$, $B_1,B_2$ on side $AC$ and $C_1,C_2$ on side $AB$ such that $AC_1<AC_2$, $BA_1<BA_2$, $CB_1<CB_2$. Let the circles $AB_1C_1$ and $AB_2C_2$ meet at $A$ and $A^*$. Similarly, let the circles $BC_1A_1$ and $BC_2A_2$ meet at $B^*\\neq B$, and let the circles $CA_1B_1$ and $CA_2B_2$ meet at $C^*\\neq C$. Prove that the lines $AA^*$, $BB^*$, $CC^*$ are concurrent."
+          "problem": "Points $C_1$ and $C_2$ are given in the interior of side $AB$ of triangle $ABC$, points $A_1$ and $A_2$ in the interior of side $BC$, and points $B_1$ and $B_2$ in the interior of side $CA$, such that $AC_1<AC_2$, $BA_1<BA_2$ and $CB_1<CB_2$. Let $A^*$ be the intersection point, other than $A$, of the circles $AB_1C_1$ and $AB_2C_2$; let $B^*$ be the intersection point, other than $B$, of the circles $BC_1A_1$ and $BC_2A_2$; and let $C^*$ be the intersection point, other than $C$, of the circles $CA_1B_1$ and $CA_2B_2$. Show that the lines $AA^*$, $BB^*$ and $CC^*$ are concurrent."
         },
         {
           "number": 3,
@@ -1098,7 +1121,7 @@
         },
         {
           "number": 2,
-          "problem": "Consider closed polygonal discs $P_1$, $P_2$, $P_3$ with the property that for any three points $A\\in P_1$, $B\\in P_2$, $C\\in P_3$ we have $[\\triangle ABC]\\le 1$, where $[X]$ denotes the area of the polygon $X$.\n\n(a) Prove that $\\min\\{[P_1],[P_2],[P_3]\\}<4$.\n\n(b) Give an example of polygons $P_1,P_2,P_3$ with the above property such that $[P_1]>4$ and $[P_2]>4$."
+          "problem": "Suppose that the closed convex polygonal discs $P_1$, $P_2$ and $P_3$ have the property that, however we choose the points $A\\in P_1$, $B\\in P_2$ and $C\\in P_3$, the area of triangle $ABC$ is at most $1$.\n\n(a) Prove that one of the polygonal discs $P_1$, $P_2$, $P_3$ has area less than $4$.\n\n(b) Show that polygonal discs $P_1$, $P_2$, $P_3$ with the above property can be given such that both $P_1$ and $P_2$ have area greater than $4$."
         },
         {
           "number": 3,
