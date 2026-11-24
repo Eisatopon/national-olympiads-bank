@@ -1157,6 +1157,12 @@ dialog p { color: var(--muted); font-size: .92rem; }
 .praise-fact a { color: var(--star, #facc15); }
 .praise-note { margin: 12px 0 0; font: 400 .78rem/1.4 var(--sans); color: #9fb0bf; }
 .praise + .footer { margin-top: 0; }
+
+.footer .wrap.foot { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding-top: 28px; padding-bottom: 28px; }
+.footer .support-btn { display: inline-block; background: #f59e0b; color: #1a1206 !important; font-weight: 700; font-size: 1rem; text-decoration: none; padding: 11px 26px; border-radius: 999px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+.footer .support-btn:hover { background: #fbbf24; }
+.footer .foot-about { max-width: 780px; margin: 0; font-size: .88rem; line-height: 1.6; color: #b9c6d2; }
+.footer .foot-legal { margin: 0; font-size: .8rem; color: #8fa0b0; }
 </style>
 </head>
 
@@ -1320,10 +1326,10 @@ dialog p { color: var(--muted); font-size: .92rem; }
 </section>
 
 <footer class="footer">
-    <div class="wrap">
-        <span>© 2026 eisatopon.gr – Pythagoras · All rights reserved · <a href="terms.html">Terms of use</a> · <a href="https://ko-fi.com/olympiadproblems" target="_blank" rel="noopener">☕ Support this free project</a></span>
-        <p class="thanks about"><b>About.</b> Pythagoras is created and maintained by Sokratis Romanidis (<a href="https://eisatopon.gr/">eisatopon.gr</a>) as a free resource for students and teachers. Translations, topic tags and source checks are prepared with the help of AI tools, so errors are possible. If you have papers or other material to send us, please write to <a href="mailto:info@eisatopon.gr">info@eisatopon.gr</a>. “All rights reserved” covers the selection, the translations and the code of this site, not the problems themselves, which remain the property of their organisers.</p>
-        <p class="independent">Pythagoras is an independent project; it is not affiliated with, endorsed by or supported by any competition organiser. Problems remain the property of their organisers and are reproduced as statements only, without solutions; any organiser may ask for corrections or removal at <a href="mailto:info@eisatopon.gr">info@eisatopon.gr</a>.</p>
+    <div class="wrap foot">
+        <a class="support-btn" href="https://ko-fi.com/olympiadproblems" target="_blank" rel="noopener">☕ Support this free project</a>
+        <p class="foot-about">Pythagoras is a free, independent resource for students and teachers, created and maintained by Sokratis Romanidis (<a href="https://eisatopon.gr/">eisatopon.gr</a>). It is not affiliated with any competition organiser; the problems remain the property of their organisers and appear as statements only, without solutions. Translations, topic tags and source checks are prepared with the help of AI tools, so errors are possible. Organisers may ask for corrections or removal, and anyone with papers to share may write, at <a href="mailto:info@eisatopon.gr">info@eisatopon.gr</a>.</p>
+        <p class="foot-legal">© 2026 eisatopon.gr – Pythagoras · All rights reserved (the selection, translations and code; not the problems themselves) · <a href="terms.html">Terms of use</a></p>
     </div>
 </footer>
 
