@@ -2,6 +2,100 @@
   "competition": "Pan-African Mathematics Olympiad",
   "years": [
     {
+      "year": 1997,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "For every function $f:\\mathbb{Z}\\to\\mathbb{Z}$ put $\\Delta f(n)=f(n+1)-f(n)$ for all $n\\in\\mathbb{Z}$. Define $\\Delta^p$ recursively by $$\\Delta^0 f(n)=f(n),\\qquad \\Delta^1 f(n)=\\Delta f(n),\\qquad \\Delta^p f(n)=\\Delta\\left(\\Delta^{p-1}f\\right)(n)\\quad (n\\in\\mathbb{Z},\\ p\\ge 1).$$\n\n1) Express $\\Delta^p f(n+1)$ in terms of $\\Delta^p f(n)$ and $\\Delta^{p-1} f(n)$, for $n\\in\\mathbb{Z}$ and $p\\in\\mathbb{N}$.\n\n2) Suppose that $\\Delta^p f(1)=p$ for all $p\\in\\mathbb{N}$.\n\na) Show that $\\Delta^p f(n)=(n+2p-1)\\cdot 2^{n-2}$.\n\nb) Deduce the value of $f(n)$ for all $n\\ge 1$.",
+          "problem_orig": "Pour toute application $f:\\mathbb{Z}\\to\\mathbb{Z}$, on pose $\\Delta f(n)=f(n+1)-f(n)$ $\\forall n\\in\\mathbb{Z}$. On définit $\\Delta^p$ par récurrence par : $$\\Delta^0 f(n)=f(n),\\qquad \\Delta^1 f(n)=\\Delta f(n),\\qquad \\Delta^p f(n)=\\Delta\\left(\\Delta^{p-1}f\\right)(n)\\quad \\forall n\\in\\mathbb{Z},\\ p\\ge 1.$$\n\n1) Exprimer $\\Delta^p f(n+1)$ en fonction de $\\Delta^p f(n)$ et $\\Delta^{p-1} f(n)$ pour $n\\in\\mathbb{Z}$ et $p\\in\\mathbb{N}$.\n\n2) On suppose que $\\Delta^p f(1)=p$ $\\forall p\\in\\mathbb{N}$.\n\na) Montrer que $\\Delta^p f(n)=(n+2p-1)\\cdot 2^{n-2}$.\n\nb) En déduire la valeur de $f(n)$ $\\forall n\\ge 1$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a convex quadrilateral. Consider the points $A'$, $B'$, $C'$, $D'$ such that $$\\overrightarrow{BB'}=\\overrightarrow{AB},\\quad \\overrightarrow{CC'}=\\overrightarrow{BC},\\quad \\overrightarrow{DD'}=\\overrightarrow{CD},\\quad \\overrightarrow{AA'}=\\overrightarrow{DA}.$$ Prove that the area of the quadrilateral $A'B'C'D'$ is five times the area of $ABCD$.",
+          "problem_orig": "Soit $ABCD$ un quadrilatère convexe. On considère les points $A'$, $B'$, $C'$ et $D'$ tels que : $$\\overrightarrow{BB'}=\\overrightarrow{AB},\\quad \\overrightarrow{CC'}=\\overrightarrow{BC},\\quad \\overrightarrow{DD'}=\\overrightarrow{CD}\\quad\\text{et}\\quad \\overrightarrow{AA'}=\\overrightarrow{DA}.$$ Démontrer que l'aire du quadrilatère $A'B'C'D'$ vaut cinq fois celle de $ABCD$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Let $n\\ge 1$ be an integer and let $f_n$ be the real function defined on $\\mathbb{R}_+$ by $$f_n(x)=x^n+x^{n-1}+\\dots+x-1.$$\n\n1) Show that the equation $f_n(x)=0$ has a unique solution.\n\n2) Denote by $u_n$ the solution of $f_n(x)=0$.\n\ni) Check that for all real numbers $a,b$ with $a\\ge b>0$ we have $f_{n+1}(a)>f_n(b)$.\n\nii) Deduce that the sequence $(u_n)_{n\\in\\mathbb{N}^*}$ is strictly decreasing.\n\n3) Show that the sequence $(u_n)_{n\\in\\mathbb{N}^*}$ is convergent.\n\n4) Denote by $\\ell$ the limit of the sequence $(u_n)_{n\\in\\mathbb{N}^*}$.\n\na) Show that $\\dfrac{1}{1-\\ell}\\le 2$.\n\nb) Deduce the value of $\\ell$.",
+          "problem_orig": "Soit $n$ un entier naturel $(n\\ge 1)$ et soit $f_n$ la fonction numérique définie sur $\\mathbb{R}_+$ par : $$f_n(x)=x^n+x^{n-1}+\\dots+x-1.$$\n\n1) Montrer que l'équation $f_n(x)=0$ admet une solution unique.\n\n2) On note $u_n$ la solution de $f_n(x)=0$.\n\ni) Vérifier que pour tous réels $a,b$ avec $a\\ge b>0$ on a $f_{n+1}(a)>f_n(b)$.\n\nii) En déduire que la suite $(u_n)_{n\\in\\mathbb{N}^*}$ est strictement décroissante.\n\n3) Montrer que la suite $(u_n)_{n\\in\\mathbb{N}^*}$ est convergente.\n\n4) On note $\\ell$ la limite de la suite $(u_n)_{n\\in\\mathbb{N}^*}$.\n\na) Montrer que $\\dfrac{1}{1-\\ell}\\le 2$.\n\nb) En déduire la valeur de $\\ell$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Find all $k\\in\\mathbb{Z}$ such that $k^4+k^3+k^2+k+1$ is a perfect square in $\\mathbb{Z}$, that is, of the form $q^2$ with $q\\in\\mathbb{Z}$.",
+          "problem_orig": "Trouver tous les éléments $k$ de $\\mathbb{Z}$ tels que $k^4+k^3+k^2+k+1$ soit un carré parfait dans $\\mathbb{Z}$, c'est-à-dire de la forme $q^2$ où $q\\in\\mathbb{Z}$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Show that the system of equations in the unknowns $(x,y)$ $$\\begin{cases}4x^2+y^2-5xy-10x+6y+7=0\\\\ \\ln(x-y)=\\dfrac12(x-2)\\end{cases}$$ has a unique solution in $\\mathbb{R}\\times\\mathbb{R}$, and find it ($\\ln$ denotes the natural logarithm).",
+          "problem_orig": "Montrer que le système d'équations d'inconnue $(x,y)$ $$\\begin{cases}4x^2+y^2-5xy-10x+6y+7=0\\\\ \\ln(x-y)=\\dfrac12(x-2)\\end{cases}$$ admet une solution unique dans $\\mathbb{R}\\times\\mathbb{R}$ que l'on déterminera, où $\\ln$ désigne la fonction logarithme népérien.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "For $n\\ge 0$ put $u_n=2^n$ and $v_n=2^{u_n}+1$. (Here $a\\mid b$, congruence modulo $n$ and primes have their usual meaning, and $a^{b^c}$ means $a^d$ with $d=b^c$.)\n\n1) Show that for all $n\\ge 0$, $$2^{2^{u_n}}=\\left(2^{u_n}\\right)^{2^{u_n-n}}.$$ Deduce that $2^{v_n}\\equiv 2 \\pmod{v_n}$ for all $n\\ge 0$.\n\n2) Let $k\\ge 1$ be an integer. Show that if $2^k+1$ is prime, then there is $n\\in\\mathbb{N}$ such that $k=2^n$.\n\n3) Let $m,n\\in\\mathbb{N}$ with $m>n$.\n\na) Show that $v_m-1=(v_n-1)^{2^{m-n}}$.\n\nb) Deduce that $v_m\\equiv 2\\pmod{v_n}$.\n\nc) Show that $\\gcd(v_m,v_n)=1$, that is, the only positive integer dividing both $v_m$ and $v_n$ is $1$.",
+          "problem_orig": "Soit $(a,b)\\in\\mathbb{Z}^2$. On rappelle que : (i) $a$ divise $b$ dans $\\mathbb{Z}$ si $\\exists c\\in\\mathbb{Z}$ tel que $b=ac$ ; (ii) $a$ est congru à $b$ modulo $n$, où $n\\in\\mathbb{Z}$, si $n$ divise $b-a$. On écrit dans ce cas $a\\equiv b\\,[n]$ ; (iii) un entier $p\\in\\mathbb{N}$ est dit premier si $p\\ge 2$ et si $\\forall a\\in\\mathbb{N}$ avec $a\\ne 0$, la relation « $a$ divise $p$ » implique $a=1$ ou $a=p$ ; (iv) pour trois entiers naturels $a,b,c$, le nombre $a^{b^c}$ est défini comme étant égal à $a^d$, où $d=b^c$. Dans la suite on posera $u_n=2^{u_n}$ et $v_n=2^{u_n}+1$ pour tout $n\\ge 0$.\n\n1) Montrer que $\\forall n\\ge 0$, on a $$2^{2^{u_n}}=\\left(2^{u_n}\\right)^{2^{u_n-n}}.$$ En déduire que $2^{v_n}\\equiv 2\\,[v_n]$ $\\forall n\\ge 0$.\n\n2) Soit $k$ un entier $\\ge 1$. Montrer que si $2^k+1$ est premier alors il existe $n\\in\\mathbb{N}$ tel que $k=2^n$.\n\n3) Soit $m,n\\in\\mathbb{N}$ avec $m>n$.\n\na) Montrer que $v_m-1=(v_n-1)^{2^{m-n}}$.\n\nb) En déduire que $v_m\\equiv 2\\,[v_n]$.\n\nc) Montrer que $PGCD(v_m,v_n)=1$ c'est-à-dire que le seul nombre entier positif qui divise $v_m$ et $v_n$ est $1$.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "problems": [
+        {
+          "day": 1,
+          "number": 1,
+          "problem": "Let $a,b,c$ be real numbers such that $|a|<1$, $|b|<1$ and $|c|<1$. Prove that $$ab+bc+ca+1>0.$$",
+          "problem_orig": "Soient $a,b,c$ trois nombres réels tels que : $|a|<1$, $|b|<1$ et $|c|<1$. Démontrer que $ab+bc+ca+1>0$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 1,
+          "number": 2,
+          "problem": "Let $ABCD$ be a convex quadrilateral whose diagonals meet at a point $K$. Show that the line through the orthocentres of the triangles $AKD$ and $BKC$ is perpendicular to the line through the centroids of the triangles $AKB$ and $CKD$.",
+          "problem_orig": "Soit $ABCD$ un quadrilatère convexe dont les diagonales se coupent en un point $K$. Montrer que la droite qui passe par les orthocentres des deux triangles $AKD$ et $BKC$ est perpendiculaire à la droite qui passe par les centres de gravité des deux triangles $AKB$ et $CKD$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 1,
+          "number": 3,
+          "problem": "Solve in $\\mathbb{N}\\times\\mathbb{N}$ the equation $$5^x-4^x=y^2.$$",
+          "problem_orig": "Résoudre dans $\\mathbb{N}\\times\\mathbb{N}$ l'équation $5^x-4^x=y^2$.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 4,
+          "problem": "Show that $$\\int_0^{\\pi/2}(\\sin x)^{1998}\\,dx\\cdot\\int_0^{\\pi/2}(\\sin x)^{1999}\\,dx=\\frac{\\pi}{3998}.$$",
+          "problem_orig": "Montrer que $$\\int_0^{\\pi/2}(\\sin x)^{1998}\\,dx\\cdot\\int_0^{\\pi/2}(\\sin x)^{1999}\\,dx=\\frac{\\pi}{3998}.$$",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 5,
+          "problem": "Let $n$ be a natural number. Show that if $2+2\\sqrt{28n^2+1}$ is an integer, then it is a perfect square.",
+          "problem_orig": "Soit $n$ un entier naturel. Montrer que si $2+2\\sqrt{28n^2+1}$ est un entier, alors c'est un carré parfait.",
+          "orig_lang": "fr"
+        },
+        {
+          "day": 2,
+          "number": 6,
+          "problem": "Let $k$ and $n$ be natural numbers with $1\\le k<n$. Consider all sequences of positive integers whose sum is $n$. Find the total number $T(n,k)$ of terms equal to $k$ in all these sequences.\n\nExample: for $n=3$ the sequences are $(1,1,1)$, $(1,2)$, $(2,1)$, $(3)$, so $T(3,1)=5$ and $T(3,2)=2$.",
+          "problem_orig": "Soit $k$ et $n$ deux entiers naturels tels que $1\\le k<n$. On considère toutes les suites d'entiers naturels strictement positifs dont la somme est $n$. Trouver le nombre total $T(n,k)$ de termes égaux à $k$ dans toutes ces suites.\n\nExemple : pour $n=3$, les suites sont $(1,1,1)$ ; $(1,2)$ ; $(2,1)$ ; $(3)$ et donc $T(3,1)=5$ ; $T(3,2)=2$.",
+          "orig_lang": "fr"
+        }
+      ]
+    },
+    {
       "year": 2000,
       "problems": [
         {
